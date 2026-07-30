@@ -87,6 +87,17 @@ else
      --description "VES-TECH Swiss – MAHE Schweisstechnik, dreisprachiger Katalog (DE/FR/IT)"
 fi
 
+# Bei build_type=workflow ignoriert GitHub Pages die CNAME-Datei im Artefakt.
+# Die eigene Domain muss ueber die Pages-Konfiguration gesetzt werden, sonst
+# antwortet sie mit "Site not found". Bei Deployment aus einem Branch waere die
+# Datei allein ausreichend - dieser Unterschied kostet sonst viel Suchzeit.
+if grep -q "^EMIT_CNAME = True" build/core.py 2>/dev/null; then
+  echo "==> Eigene Domain in der Pages-Konfiguration setzen ($DOMAIN)"
+  gh api -X PUT "repos/$OWNER/$REPO/pages" -f "cname=$DOMAIN" >/dev/null 2>&1 \
+    && echo "   cname=$DOMAIN" \
+    || echo "   (bereits gesetzt oder nicht aenderbar)"
+fi
+
 echo "==> GitHub Pages auf den Actions-Workflow umstellen"
 gh api -X POST "repos/$OWNER/$REPO/pages" -f build_type=workflow 2>/dev/null \
   || gh api -X PUT "repos/$OWNER/$REPO/pages" -f build_type=workflow 2>/dev/null \

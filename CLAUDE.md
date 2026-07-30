@@ -72,6 +72,9 @@ Die vollständige Liste steht in [MASTER_PROMPT.md](MASTER_PROMPT.md#14-harte-re
 ## Deploy
 
 Push auf `main` → GitHub Actions baut, prüft und veröffentlicht auf GitHub Pages
-(`.github/workflows/pages.yml`). Eine `CNAME`-Datei wird erst erzeugt, wenn
-`EMIT_CNAME` in `build/core.py` auf `True` steht — vorher würde sie Pages auf
-eine Domain umstellen, die es nicht gibt, und die Seite wäre nicht erreichbar.
+(`.github/workflows/pages.yml`).
+
+Die eigene Domain steht in der **Pages-Konfiguration**, nicht in der Datei
+`CNAME` — beim Actions-Deployment wird die Datei ignoriert. `build/deploy.sh`
+setzt sie automatisch, solange `EMIT_CNAME = True` in `build/core.py` steht.
+Hintergrund in [MASTER_PROMPT.md](MASTER_PROMPT.md#14a-eigene-domain-und-github-pages).

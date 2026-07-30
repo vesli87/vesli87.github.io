@@ -247,6 +247,29 @@ Sprachparität.
 10. Liefert MAHE einen Screenshot mit „Besonderheiten", wird der Text **wortwörtlich**
     in `HL`/`HL_CLEAN`/`PANEL_HL` übernommen, in allen drei Sprachen.
 
+## 14a. Eigene Domain und GitHub Pages
+
+Die Website wird über einen **GitHub-Actions-Workflow** veröffentlicht
+(`build_type: workflow`). Dabei gilt eine Besonderheit, die viel Suchzeit kostet:
+
+> **Die Datei `CNAME` im Repository wird ignoriert.** Sie konfiguriert die
+> eigene Domain nur beim Deployment aus einem Branch. Beim Actions-Deployment
+> muss die Domain in der Pages-Konfiguration stehen, sonst antwortet sie mit
+> „Site not found".
+
+```bash
+gh api -X PUT repos/vesli87/vesli87.github.io/pages -f cname=www.ves-tech.ch
+gh workflow run pages.yml     # danach einmal neu deployen
+```
+
+`build/deploy.sh` erledigt das automatisch, sobald `EMIT_CNAME = True` steht.
+Die `CNAME`-Datei bleibt trotzdem im Build – sie schadet nicht und wäre nötig,
+falls je auf Branch-Deployment zurückgewechselt wird.
+
+Nach dem Setzen der Domain stellt GitHub ein Let's-Encrypt-Zertifikat aus. Das
+dauert einige Minuten bis Stunden; solange schlägt HTTPS fehl. Das ist normal
+und erledigt sich von selbst.
+
 ## 15. Was sich am Code schützen lässt — und was nicht
 
 Eine Website liefert ihren Code an jeden Browser aus, der sie öffnet. HTML, CSS

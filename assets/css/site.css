@@ -255,7 +255,7 @@
   .acccard .im img{width:100%;height:100%;object-fit:contain}
   .acccard .bd{padding:12px 14px}
   .acccard .bd .vt{font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
-  .acccard .bd h4{font-family:'Bodoni Moda',serif;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.01em;margin:3px 0 2px;line-height:1.18}
+  .acccard .bd h3{font-family:'Bodoni Moda',serif;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.01em;margin:3px 0 2px;line-height:1.18}
   .acccard .bd p{color:var(--muted);font-size:12px}
   .noacc{color:var(--muted);font-size:14px}
 
@@ -400,7 +400,7 @@
   .usps{background:var(--paper);padding:34px 0 66px}
   .usprow{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .usp{border-top:3px solid var(--accent);padding-top:16px}
-  .usp h3{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.02em}
+  .usp h2{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.02em}
   .usp p{color:var(--muted);font-size:14px;line-height:1.6;margin-top:7px}
   .trust .lead h2{font-family:'Anton';font-size:28px;line-height:1}
   .trust .dl h3{font-family:'Barlow Condensed';font-weight:700;font-size:19px;text-transform:uppercase;margin:8px 0 6px}
@@ -417,8 +417,8 @@
   .faq summary::-webkit-details-marker{display:none}
   .faq summary::after{content:"+";margin-left:auto;color:var(--accent);font-size:22px;line-height:1;font-weight:700}
   .faq[open] summary::after{content:"–"}
-  .faq summary h3{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:18px;line-height:1.25}
-  .faq summary:hover h3{color:var(--accent)}
+  .faq summary h2,.faq summary h3{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:18px;line-height:1.25}
+  .faq summary:hover h2,.faq summary:hover h3{color:var(--accent)}
   .faq-a{padding:0 20px 20px}
   .faq-a p{color:var(--muted);line-height:1.7;font-size:15px;max-width:72ch}
 
@@ -442,7 +442,7 @@
   .backlink a{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);font-size:15px}
 
   /* -------------------------------------------------------- Anfrageliste */
-  .cart .top h2{font-family:'Anton';font-size:22px;text-transform:uppercase}
+  .cart .top .drawer-title{font-family:'Anton';font-size:22px;text-transform:uppercase}
   .citem .n .qty{display:inline-flex;align-items:center;gap:8px;margin-top:6px}
   .citem .n .qty button{width:24px;height:24px;border:1px solid var(--line);background:var(--panel);border-radius:4px;cursor:pointer;color:var(--white);font-size:14px;line-height:1}
   .citem .n .qty button:hover{border-color:var(--accent);color:var(--accent)}

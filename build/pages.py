@@ -124,7 +124,7 @@ def acc_html(lang, p):
         cards += (
             f'<a class="acccard" href="{e(C.u_prod(lang, a))}">'
             f'<div class="im">{im}</div>'
-            f'<div class="bd"><div class="vt">{e(a["vt"])}</div><h4>{e(a["name"])}</h4>'
+            f'<div class="bd"><div class="vt">{e(a["vt"])}</div><h3>{e(a["name"])}</h3>'
             f'<p>{e(C.pDesc(lang, a))}</p></div></a>'
         )
     return f'<div class="accgrid">{cards}</div>'

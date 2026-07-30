@@ -429,7 +429,7 @@ def header(lang, alts):
 
 def cart_drawer(lang):
     return f"""<aside class="cart" id="cart" aria-label="{e(C.t(lang,'cart_title'))}" aria-hidden="true">
-  <div class="top"><h2>{e(C.t(lang,'cart_title'))}</h2>
+  <div class="top"><p class="drawer-title">{e(C.t(lang,'cart_title'))}</p>
     <button class="x" type="button" data-close="cart" aria-label="✕">✕</button></div>
   <div class="items" id="cartItems"></div>
   <form class="form" id="cartForm" hidden novalidate>
@@ -606,16 +606,19 @@ def cbar(lang, *, crumb_items, h1, desc, chips=""):
 def usp_row(lang):
     items = [("usp_1_h", "usp_1_p"), ("usp_2_h", "usp_2_p"), ("usp_3_h", "usp_3_p")]
     cards = "".join(
-        f'<div class="usp"><h3>{e(C.t(lang, h))}</h3><p>{e(C.t(lang, p))}</p></div>'
+        f'<div class="usp"><h2>{e(C.t(lang, h))}</h2><p>{e(C.t(lang, p))}</p></div>'
         for h, p in items
     )
     return f'<section class="usps"><div class="wrap"><div class="usprow">{cards}</div></div></section>'
 
 
 def faq_block(lang, items, h=None):
+    # Ohne Abschnittsüberschrift folgen die Fragen direkt auf das h1 und sind
+    # damit h2; steht eine h2 davor (Startseite), werden sie zu h3.
+    lv = "h3" if h else "h2"
     rows = "".join(
         f'<details class="faq"{" open" if i == 0 else ""}>'
-        f'<summary><h3>{e(q["q"])}</h3></summary>'
+        f'<summary><{lv}>{e(q["q"])}</{lv}></summary>'
         f'<div class="faq-a"><p>{e(q["a"])}</p></div></details>'
         for i, q in enumerate(items)
     )

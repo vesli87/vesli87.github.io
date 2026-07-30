@@ -142,10 +142,10 @@ def main():
             if not target_exists(href):
                 err(f"{where}: toter Link -> {href}")
 
-        # 7. lokale Bilder
-        for src in re.findall(r'src="(/assets/[^"]+)"', html):
-            if not (ROOT / src.lstrip("/")).exists():
-                err(f"{where}: Bild fehlt {src}")
+        # 7. lokale Assets (Bilder, CSS, JS) – ?v=<hash> vorher abschneiden
+        for src in re.findall(r'(?:src|href)="(/assets/[^"]+)"', html):
+            if not (ROOT / src.split("?")[0].lstrip("/")).exists():
+                err(f"{where}: Asset fehlt {src}")
 
         # 6. Reste der alten SPA
         for bad in ('data-i18n=', 'onclick="goCat', 'onclick="goProd', 'onclick="goView',

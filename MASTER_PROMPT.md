@@ -1,6 +1,7 @@
 # MASTER PROMPT — VES-TECH Swiss (v2)
 
-> **Was das hier ist:** Die verbindliche Beschreibung der Website `www.ves-tech.ch`.
+> **Was das hier ist:** Die verbindliche Beschreibung der Website VES-TECH Swiss
+> (`vesli87.github.io`, später `www.ves-tech.ch`).
 > Wer (Mensch oder KI) an diesem Projekt arbeitet, liest zuerst dieses Dokument und
 > hält sich an die Regeln in Abschnitt 14. Das Dokument lebt **im Repository** und
 > wird bei jeder architektonischen Änderung mitgepflegt.

@@ -24,6 +24,7 @@ import pathlib
 import re
 import subprocess
 import sys
+import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
@@ -67,14 +68,24 @@ def main():
             "keyLocation": key_url,
             "urlList": chunk,
         })
-        r = subprocess.run(
-            ["curl", "-sS", "-X", "POST", ENDPOINT,
-             "-H", "Content-Type: application/json; charset=utf-8",
-             "--max-time", "60", "-w", "\n%{http_code}", "-d", payload],
-            capture_output=True, text=True)
-        code = r.stdout.strip().splitlines()[-1] if r.stdout else "?"
-        # 200 = angenommen, 202 = angenommen, Schlüssel wird noch geprüft
-        ok = code in ("200", "202")
+        # 403 heisst "Schlüssel ungültig". Direkt nach dem ersten Deploy kommt das
+        # auch dann, wenn die Datei erreichbar ist – der Dienst hat sie schlicht
+        # noch nicht geholt. Deshalb ein paar Anläufe mit Pause.
+        for attempt in range(1, 5):
+            r = subprocess.run(
+                ["curl", "-sS", "-X", "POST", ENDPOINT,
+                 "-H", "Content-Type: application/json; charset=utf-8",
+                 "--max-time", "60", "-w", "\n%{http_code}", "-d", payload],
+                capture_output=True, text=True)
+            code = r.stdout.strip().splitlines()[-1] if r.stdout else "?"
+            # 200 = angenommen, 202 = angenommen, Schlüssel wird noch geprüft
+            ok = code in ("200", "202")
+            if ok or code != "403":
+                break
+            if attempt < 4:
+                print(f"  HTTP 403 – Schlüssel noch nicht abgeholt, neuer Versuch in 20 s "
+                      f"({attempt}/3)")
+                time.sleep(20)
         print(f"  {len(chunk)} URLs → HTTP {code} {'ok' if ok else 'FEHLER'}")
         if ok:
             sent += len(chunk)

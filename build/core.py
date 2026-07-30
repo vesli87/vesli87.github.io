@@ -28,7 +28,7 @@ BUILD = ROOT / "build"
 # Konfiguration
 # --------------------------------------------------------------------------
 
-SITE = "https://vesli87.github.io"        # kanonische Domain (ohne Slash am Ende)
+SITE = "https://www.ves-tech.ch"          # kanonische Domain (ohne Slash am Ende)
 
 # Eigene Domain: erst einschalten, wenn ihr DNS auf GitHub Pages zeigt.
 # Liegt CNAME im Repository, stellt GitHub Pages die Auslieferung auf diese
@@ -39,7 +39,7 @@ SITE = "https://vesli87.github.io"        # kanonische Domain (ohne Slash am End
 #   3. python3 build/build.py && python3 build/check.py && git push
 # GitHub Pages leitet danach github.io per 301 auf die eigene Domain um.
 CUSTOM_DOMAIN = "www.ves-tech.ch"
-EMIT_CNAME = False
+EMIT_CNAME = True
 LANGS = ["de", "fr", "it"]
 DEFAULT_LANG = "de"
 

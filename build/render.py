@@ -128,7 +128,9 @@ def ld_org():
         ],
         "areaServed": [{"@type": "Country", "name": "Schweiz"},
                        {"@type": "Country", "name": "Liechtenstein"}],
-        "knowsLanguage": ["de-CH", "fr-CH", "it-CH"],
+        # Sprachen, in denen beraten wird - nicht zu verwechseln mit den
+        # Sprachen der Website (die stehen als inLanguage am WebSite-Knoten).
+        "knowsLanguage": ["de", "cs", "en"],
         "currenciesAccepted": "CHF",
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
         "slogan": C.t("de", "brand_claim"),
@@ -142,7 +144,7 @@ def ld_org():
             "contactType": "sales",
             "telephone": co["phone"],
             "email": co["email"],
-            "availableLanguage": ["German", "French", "Italian"],
+            "availableLanguage": ["German", "Czech", "English"],
             "areaServed": ["CH", "LI"],
         }],
     }

@@ -220,6 +220,7 @@ Tabs mit `role=tab`/`tabpanel` und Pfeiltasten, sichtbarer Fokusring,
 ```bash
 python3 build/build.py      # alle Seiten neu erzeugen
 python3 build/check.py      # QA – muss 0 Fehler melden
+python3 build/audit.py      # Tiefenprüfung (--live prüft zusätzlich das Netz)
 python3 build/images.py     # Bilder holen und optimieren (selten nötig)
 python3 build/icons.py      # Favicons erzeugen (selten nötig)
 python3 -m http.server 8099 # lokal ansehen: http://127.0.0.1:8099/
@@ -228,6 +229,11 @@ python3 -m http.server 8099 # lokal ansehen: http://127.0.0.1:8099/
 `check.py` prüft JSON-LD, tote Links, canonical, hreflang, Titel-/Description-Länge
 und -Dubletten, fehlende Bilder, Tag-Balance, Sitemap-Vollständigkeit und
 Sprachparität.
+
+`audit.py` prüft, was einem Build-Check entgeht, Menschen und Suchmaschinen aber
+auffällt: Überschriftenhierarchie, verwaiste Seiten, NAP-Konsistenz über alle
+Sprachen, deutschen Text der in FR/IT stehen geblieben ist, Alt-Texte,
+Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
 
 ## 14. Harte Regeln beim Erweitern
 

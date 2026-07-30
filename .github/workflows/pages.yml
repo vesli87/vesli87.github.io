@@ -37,6 +37,11 @@ jobs:
       - name: QA
         run: python3 build/check.py
 
+      # Tiefenpruefung: Ueberschriftenebenen, verwaiste Seiten, NAP-Konsistenz,
+      # Uebersetzungsluecken, Alt-Texte, Meta-Dubletten, lang-Attribut.
+      - name: Audit
+        run: python3 build/audit.py
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

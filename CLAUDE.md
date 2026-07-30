@@ -39,12 +39,21 @@ Bearbeitet werden also:
 ```bash
 python3 build/build.py
 python3 build/check.py
+python3 build/audit.py
 ```
 
-`check.py` muss **0 Fehler** melden. Es prüft JSON-LD, tote Links, `canonical`,
-`hreflang`, Titel- und Description-Dubletten, fehlende Bilder, Tag-Balance,
-Vollständigkeit der Sitemap und ob alle drei Sprachen gleich viele Seiten haben.
-Derselbe Check läuft in GitHub Actions und blockiert bei Fehlern den Deploy.
+Beide müssen **0 Fehler** melden und laufen auch in GitHub Actions, wo sie bei
+einem Fehler den Deploy blockieren.
+
+`check.py` prüft die Grundlagen: JSON-LD, tote Links, `canonical`, `hreflang`,
+Titel- und Description-Dubletten, fehlende Bilder, Tag-Balance, Vollständigkeit
+der Sitemap, Sprachparität.
+
+`audit.py` geht tiefer: Überschriftenhierarchie (genau ein `h1`, keine
+übersprungene Ebene), verwaiste Seiten, NAP-Konsistenz über alle Sprachen,
+deutscher Text der in FR/IT stehen geblieben ist, Alt-Texte, Meta-Dubletten pro
+Sprache, `lang`-Attribut. Mit `--live` zusätzlich alle Sitemap-URLs im Netz und
+die Weiterleitungen.
 
 Lokal ansehen:
 

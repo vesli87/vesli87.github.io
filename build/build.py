@@ -423,6 +423,9 @@ def main():
     write("/.nojekyll", "")
     if C.INDEXNOW_KEY:
         write(f"/{C.INDEXNOW_KEY}.txt", C.INDEXNOW_KEY)
+    if C.GOOGLE_VERIFY_FILE:
+        write("/" + C.GOOGLE_VERIFY_FILE,
+              "google-site-verification: " + C.GOOGLE_VERIFY_FILE + "\n")
     (C.DATA / "products.json").write_text(
         json.dumps(products_json(), ensure_ascii=False, indent=1), "utf-8")
 

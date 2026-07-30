@@ -78,6 +78,12 @@ COMPANY = {
 # legt die Datei automatisch an.
 INDEXNOW_KEY = "266e3b91b00779fe333528ec8a2dc352"
 
+# Search Console, Variante "HTML-Datei": Google erwartet unter /<name>.html eine
+# Datei mit genau einer Zeile. Der Build erzeugt sie, damit sie kein spaeterer
+# Deploy verliert - Google prueft sie dauerhaft, nicht nur einmal.
+GOOGLE_VERIFY_FILE = "googlefd8076c76b8bacd3.html"
+
+# Alternative zur Datei: Meta-Tag auf jeder Seite. Nur eines von beidem noetig.
 GOOGLE_SITE_VERIFICATION = ""
 BING_SITE_VERIFICATION = ""
 

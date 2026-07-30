@@ -173,14 +173,13 @@ def page_home(lang):
 <section class="hero">
   <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
        width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
-       alt="{e(C.BRAND)} Schweissanlagen bei {e(C.t(lang,'site_name'))}"
+       alt="{e(C.BRAND)} HyperMIG SX – Schweissanlagen bei {e(C.t(lang,'site_name'))}"
        onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
-  <div class="hero-grad" aria-hidden="true"></div>
-  <div class="wrap hero-cta"><div class="cta-row">
-    <a class="btn pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a>
-    <a class="btn ghost light" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))}</a>
-  </div></div>
 </section>
+<div class="hero-cta"><div class="wrap"><div class="cta-row">
+  <a class="btn pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a>
+  <a class="btn ghost light" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))}</a>
+</div></div></div>
 
 <section class="intro"><div class="wrap">
   <h1>{e(C.t(lang,'home_h1'))}</h1>

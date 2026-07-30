@@ -415,7 +415,11 @@ def main():
     write("/llms.txt", llms_txt())
     write("/llms-full.txt", llms_full())
     write("/site.webmanifest", webmanifest())
-    write("/CNAME", "www.ves-tech.ch\n")
+    cname = OUT / "CNAME"
+    if C.EMIT_CNAME:
+        write("/CNAME", C.CUSTOM_DOMAIN + "\n")
+    elif cname.exists():
+        cname.unlink()          # sonst zeigt Pages weiter auf die tote Domain
     write("/.nojekyll", "")
     (C.DATA / "products.json").write_text(
         json.dumps(products_json(), ensure_ascii=False, indent=1), "utf-8")

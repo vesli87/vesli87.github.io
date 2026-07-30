@@ -29,6 +29,13 @@ BUILD = ROOT / "build"
 # --------------------------------------------------------------------------
 
 SITE = "https://www.ves-tech.ch"          # kanonische Domain (ohne Slash am Ende)
+
+# Eigene Domain: erst einschalten, wenn ihr DNS auf GitHub Pages zeigt.
+# Liegt CNAME im Repository, stellt GitHub Pages die Auslieferung auf diese
+# Domain um – die Vorschau unter <user>.github.io antwortet dann mit 404.
+# Umstellen auf True, sobald  www.ves-tech.ch  auf vesli87.github.io. zeigt.
+CUSTOM_DOMAIN = "www.ves-tech.ch"
+EMIT_CNAME = False
 LANGS = ["de", "fr", "it"]
 DEFAULT_LANG = "de"
 

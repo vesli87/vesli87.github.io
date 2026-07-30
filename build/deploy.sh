@@ -28,6 +28,22 @@ if ! gh auth status >/dev/null 2>&1; then
   exit 1
 fi
 
+# GitHub weist jeden Push zurück, der .github/workflows/ anfasst, solange das
+# Token den Scope "workflow" nicht hat. Beim normalen `gh auth login` fehlt er.
+if ! gh auth status 2>&1 | grep -q "workflow"; then
+  echo
+  echo "Dem gh-Token fehlt der Scope 'workflow'. Ohne ihn lehnt GitHub den Push ab,"
+  echo "weil das Repository .github/workflows/pages.yml enthält."
+  echo "Nötig ist einmalig:  gh auth refresh -h github.com -s workflow"
+  echo
+  printf "Jetzt ausführen? [j/N] "
+  read -r ANSWER
+  case "$ANSWER" in
+    j|J|y|Y) gh auth refresh -h github.com -s workflow ;;
+    *) echo "Abgebrochen."; exit 1 ;;
+  esac
+fi
+
 echo "==> Änderungen committen (falls vorhanden)"
 git add -A
 git diff --cached --quiet || git commit -m "Build: Seiten neu erzeugt"

@@ -56,9 +56,14 @@ COMPANY = {
     "phone": "+41 76 710 91 39",
     "phone_href": "+41767109139",
     "email": "vestechswiss@gmail.com",
-    "hours": "Mo-Fr 07:30-17:30",
-    "hours_schema": [{"days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                      "opens": "07:30", "closes": "17:30"}],
+    "hours": "Mo-Do 07:30-17:00 · Fr 07:30-11:30",
+    # Muss mit dem Google Business Profile uebereinstimmen - Google gleicht
+    # Oeffnungszeiten zwischen Website und Profil ab.
+    "hours_schema": [
+        {"days": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+         "opens": "07:30", "closes": "17:00"},
+        {"days": ["Friday"], "opens": "07:30", "closes": "11:30"},
+    ],
     "lat": 47.4906,      # Bronschhofen (SG), Näherung für LocalBusiness
     "lon": 9.0205,
     "founding_area": ["CH", "LI"],

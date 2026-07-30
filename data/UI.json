@@ -1,6 +1,6 @@
 {
  "de": {
-  "hours": "Mo–Fr 07:30–17:30",
+  "hours": "Mo–Do 07:30–17:00 · Fr 07:30–11:30",
   "search_ph": "Gerät oder Verfahren suchen (z.B. HyperMIG)",
   "search_btn": "Suchen",
   "inquiry": "ANFRAGE",
@@ -90,7 +90,7 @@
   "highlights": "Besonderheiten"
  },
  "fr": {
-  "hours": "Lun–Ven 07:30–17:30",
+  "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
   "search_ph": "Rechercher un appareil ou procédé (ex. HyperMIG)",
   "search_btn": "Rechercher",
   "inquiry": "DEMANDE",
@@ -180,7 +180,7 @@
   "highlights": "Points forts"
  },
  "it": {
-  "hours": "Lun–Ven 07:30–17:30",
+  "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
   "search_ph": "Cerca apparecchio o processo (es. HyperMIG)",
   "search_btn": "Cerca",
   "inquiry": "RICHIESTA",

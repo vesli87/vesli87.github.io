@@ -1,7 +1,7 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-07-30. Quelle: https://www.ves-tech.ch
+Stand: 2026-07-31. Quelle: https://www.ves-tech.ch
 
-VES-TECH Swiss in Bronschhofen (SG, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Adresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, Öffnungszeiten Mo-Fr 07:30-17:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
+VES-TECH Swiss in Bronschhofen (SG, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Adresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, Öffnungszeiten Mo-Do 07:30-17:00 · Fr 07:30-11:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
 ---
 
@@ -456,7 +456,7 @@ Ein MAHE Cleaner leitet über einen mit Elektrolyt getränkten Karbon-Pinsel Str
 Die Theta-Serie deckt den Bereich von etwa 15 mm bis 80 mm Trennschnitt ab: Theta 40 für die leichte Werkstatt am 230-V-Netz, Theta 60 und Theta 120 für den industriellen Einsatz mit HSC-Technologie und Theta 180 als stärkstes Modell. Für CNC-Anlagen gibt es Theta 60 AUT und Theta 120 AUT mit Automations-Schnittstelle.
 
 ### Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?
-Ja. VES-TECH Swiss in Bronschhofen (SG) übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet – erreichbar unter +41 76 710 91 39, Montag bis Freitag von 07:30 bis 17:30 Uhr.
+Ja. VES-TECH Swiss in Bronschhofen (SG) übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet – erreichbar unter +41 76 710 91 39, Montag bis Donnerstag von 07:30 bis 17:00 Uhr und freitags von 07:30 bis 11:30 Uhr.
 
 ### Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?
 EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage – inklusive Konformitätszertifikat.

@@ -1,0 +1,52 @@
+name: Build & Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # Der Build erzeugt alle 247 Seiten neu aus data/*.json.
+      # Die Bilder liegen bereits optimiert im Repo (build/images.py läuft lokal,
+      # weil es Netzzugriff auf mahe-online.de und cwebp braucht).
+      - name: Build
+        env:
+          WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
+        run: python3 build/build.py
+
+      # Bricht den Deploy ab, wenn ein Link tot ist, ein canonical nicht stimmt,
+      # ein JSON-LD kaputt ist oder eine Sprache Seiten fehlen.
+      - name: QA
+        run: python3 build/check.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

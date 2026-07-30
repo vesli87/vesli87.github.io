@@ -1,0 +1,267 @@
+{
+ "mig_hyper": {
+  "de": [
+   "MIG/MAG-Schweissen & MIG-Löten",
+   "HyperForce, HyperRoot, HyperCold",
+   "HyperPuls & HyperSpeedPuls",
+   "Doppelpuls mit WIG-Naht-Optik",
+   "MMA-Elektrode & Fugenhobeln",
+   "WIG Lift Arc",
+   "Digital Synergy geregelt",
+   "Spritzerfreier Lichtbogen",
+   "4-Rollen-Antrieb",
+   "Fernbedienung anschliessbar",
+   "JOB-Modus mit 99 Programmen",
+   "Upgrade-fähig · 100% recycelbar"
+  ],
+  "fr": [
+   "Soudage MIG/MAG & brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "HyperPuls & HyperSpeedPuls",
+   "Double pulsation, aspect TIG",
+   "Électrode MMA & gougeage",
+   "TIG Lift Arc",
+   "Régulation Digital Synergy",
+   "Arc sans projections",
+   "Entraînement 4 galets",
+   "Télécommande raccordable",
+   "Mode JOB, 99 programmes",
+   "Évolutif · 100% recyclable"
+  ],
+  "it": [
+   "Saldatura MIG/MAG & brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "HyperPuls & HyperSpeedPuls",
+   "Doppio impulso, estetica TIG",
+   "Elettrodo MMA & scriccatura",
+   "TIG Lift Arc",
+   "Regolazione Digital Synergy",
+   "Arco senza spruzzi",
+   "Trazione a 4 rulli",
+   "Telecomando collegabile",
+   "Modo JOB, 99 programmi",
+   "Aggiornabile · 100% riciclabile"
+  ]
+ },
+ "mig_std": {
+  "de": [
+   "Stufenlose MIG/MAG-Regelung",
+   "Synergie-Kennlinien",
+   "MMA-Elektrode möglich",
+   "4-Rollen-Antrieb",
+   "Kompakt & fahrbar",
+   "Robust für Werkstatt & Montage"
+  ],
+  "fr": [
+   "Réglage continu MIG/MAG",
+   "Courbes synergiques",
+   "Électrode MMA possible",
+   "Entraînement 4 galets",
+   "Compact & mobile",
+   "Robuste atelier & montage"
+  ],
+  "it": [
+   "Regolazione continua MIG/MAG",
+   "Curve sinergiche",
+   "Elettrodo MMA possibile",
+   "Trazione a 4 rulli",
+   "Compatto & mobile",
+   "Robusto per officina & montaggio"
+  ]
+ },
+ "wig": {
+  "de": [
+   "Hochfrequenz-Impulsschweissen",
+   "HyperSpot Punktschweissen",
+   "ActiveSpot Heftfunktion",
+   "Hyper ARC Active Regelung",
+   "Mix-TIG-Schweissen",
+   "WIG DC & MMA",
+   "Strom-Modulation einstellbar",
+   "Digitale Anzeige",
+   "Fernbedienung",
+   "Synergy-Einstellungen",
+   "JOB-Modus"
+  ],
+  "fr": [
+   "Soudage pulsé haute fréquence",
+   "Pointage HyperSpot",
+   "Fonction ActiveSpot",
+   "Régulation Hyper ARC Active",
+   "Soudage Mix-TIG",
+   "TIG DC & MMA",
+   "Modulation de courant réglable",
+   "Affichage numérique",
+   "Télécommande",
+   "Réglages Synergy",
+   "Mode JOB"
+  ],
+  "it": [
+   "Saldatura pulsata ad alta frequenza",
+   "Puntatura HyperSpot",
+   "Funzione ActiveSpot",
+   "Regolazione Hyper ARC Active",
+   "Saldatura Mix-TIG",
+   "TIG DC & MMA",
+   "Modulazione di corrente regolabile",
+   "Display digitale",
+   "Telecomando",
+   "Impostazioni Synergy",
+   "Modo JOB"
+  ]
+ },
+ "wig_acdc": {
+  "de": [
+   "Hochfrequenz-Impulsschweissen",
+   "HyperSpot Punktschweissen",
+   "ActiveSpot Heftfunktion",
+   "Hyper ARC Active Regelung",
+   "Mix-TIG-Schweissen",
+   "AC/DC – Aluminium & Stahl",
+   "MAHE-MIX-PULSE",
+   "Strom-Modulation einstellbar",
+   "Digitale Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "JOB-Modus"
+  ],
+  "fr": [
+   "Soudage pulsé haute fréquence",
+   "Pointage HyperSpot",
+   "Fonction ActiveSpot",
+   "Régulation Hyper ARC Active",
+   "Soudage Mix-TIG",
+   "AC/DC – aluminium & acier",
+   "MAHE-MIX-PULSE",
+   "Modulation de courant réglable",
+   "Affichage numérique",
+   "Refroidissement eau puissant",
+   "Télécommande",
+   "Mode JOB"
+  ],
+  "it": [
+   "Saldatura pulsata ad alta frequenza",
+   "Puntatura HyperSpot",
+   "Funzione ActiveSpot",
+   "Regolazione Hyper ARC Active",
+   "Saldatura Mix-TIG",
+   "AC/DC – alluminio & acciaio",
+   "MAHE-MIX-PULSE",
+   "Modulazione di corrente regolabile",
+   "Display digitale",
+   "Raffreddamento ad acqua potente",
+   "Telecomando",
+   "Modo JOB"
+  ]
+ },
+ "mma": {
+  "de": [
+   "MMA-Elektrodenschweissen",
+   "WIG Lift Arc (DC)",
+   "Hot-Start – sichere Zündung",
+   "Arc Force – stabiler Lichtbogen",
+   "Anti-Stick – kein Festkleben",
+   "Übertemperaturschutz",
+   "Generatortauglich",
+   "Robust & einfach zu bedienen"
+  ],
+  "fr": [
+   "Soudage à l’électrode MMA",
+   "TIG Lift Arc (DC)",
+   "Hot-Start – amorçage sûr",
+   "Arc Force – arc stable",
+   "Anti-Stick – pas de collage",
+   "Protection surtempérature",
+   "Compatible groupe électrogène",
+   "Robuste & simple"
+  ],
+  "it": [
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc (DC)",
+   "Hot-Start – innesco sicuro",
+   "Arc Force – arco stabile",
+   "Anti-Stick – niente incollaggio",
+   "Protezione sovratemperatura",
+   "Compatibile con generatore",
+   "Robusto & semplice"
+  ]
+ },
+ "plasmatig": {
+  "de": [
+   "Mikroplasma- & Plasma-Schweissen",
+   "Feinste Schweissungen ab geringstem Strom",
+   "Stabiler, gebündelter Plasmastrahl",
+   "Für Feinblech bis Industrie",
+   "HF-Zündung",
+   "Pilotlichtbogen"
+  ],
+  "fr": [
+   "Soudage microplasma & plasma",
+   "Soudures très fines dès un courant minimal",
+   "Jet plasma stable et concentré",
+   "Tôle fine à industrie",
+   "Amorçage HF",
+   "Arc pilote"
+  ],
+  "it": [
+   "Saldatura microplasma & plasma",
+   "Saldature finissime da corrente minima",
+   "Getto plasma stabile e concentrato",
+   "Lamiera fine a industria",
+   "Innesco HF",
+   "Arco pilota"
+  ]
+ },
+ "theta": {
+  "de": [
+   "Plasmaschneiden mit HSC-Technologie",
+   "Sauberer, schneller Trennschnitt",
+   "Pilotlichtbogen – kontaktloses Zünden",
+   "Für alle leitenden Metalle",
+   "Gittertrennen möglich",
+   "Digitale Anzeige",
+   "Übertemperaturschutz",
+   "Hand- oder Automationsbetrieb"
+  ],
+  "fr": [
+   "Découpe plasma technologie HSC",
+   "Coupe nette et rapide",
+   "Arc pilote – amorçage sans contact",
+   "Tous métaux conducteurs",
+   "Découpe de grilles possible",
+   "Affichage numérique",
+   "Protection surtempérature",
+   "Mode manuel ou automation"
+  ],
+  "it": [
+   "Taglio plasma tecnologia HSC",
+   "Taglio netto e veloce",
+   "Arco pilota – innesco senza contatto",
+   "Tutti i metalli conduttivi",
+   "Taglio di grigliati possibile",
+   "Display digitale",
+   "Protezione sovratemperatura",
+   "Modo manuale o automazione"
+  ]
+ },
+ "cleaner": {
+  "de": [
+   "Elektrolytisches Reinigen & Polieren",
+   "Für Chromstahl-Schweissnähte",
+   "Ohne chemische Beize",
+   "Mobil einsetzbar"
+  ],
+  "fr": [
+   "Nettoyage & polissage électrolytiques",
+   "Pour soudures inox",
+   "Sans décapage chimique",
+   "Utilisable en mobilité"
+  ],
+  "it": [
+   "Pulizia & lucidatura elettrolitica",
+   "Per saldature inox",
+   "Senza decapaggio chimico",
+   "Utilizzo mobile"
+  ]
+ }
+}

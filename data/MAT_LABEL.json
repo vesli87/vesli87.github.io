@@ -1,0 +1,17 @@
+{
+ "ST": {
+  "de": "Stahl",
+  "fr": "Acier",
+  "it": "Acciaio"
+ },
+ "SS": {
+  "de": "INOX",
+  "fr": "INOX",
+  "it": "INOX"
+ },
+ "AL": {
+  "de": "Aluminium",
+  "fr": "Aluminium",
+  "it": "Alluminio"
+ }
+}

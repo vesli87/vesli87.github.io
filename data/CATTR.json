@@ -1,0 +1,42 @@
+{
+ "schweissgeraete": {
+  "t": {
+   "fr": "Postes de soudage",
+   "it": "Saldatrici"
+  },
+  "d": {
+   "fr": "MIG/MAG, TIG, MMA et Plasma-TIG – sources haute performance MAHE avec technologie Upgrade.",
+   "it": "MIG/MAG, TIG, MMA e Plasma-TIG – generatori ad alte prestazioni MAHE con tecnologia Upgrade."
+  }
+ },
+ "plasmaschneiden": {
+  "t": {
+   "fr": "Découpe plasma",
+   "it": "Taglio al plasma"
+  },
+  "d": {
+   "fr": "Inverters de découpe plasma Theta, technologie HSC – de 15 à 80 mm, versions manuelle et automation.",
+   "it": "Inverter di taglio plasma Theta, tecnologia HSC – da 15 a 80 mm, versioni manuale e automazione."
+  }
+ },
+ "reinigung": {
+  "t": {
+   "fr": "Appareils de nettoyage",
+   "it": "Apparecchi di pulizia"
+  },
+  "d": {
+   "fr": "Nettoyage et polissage électrolytiques des soudures, marquage du métal et dosage automatique.",
+   "it": "Pulizia e lucidatura elettrolitica delle saldature, marcatura del metallo e dosaggio automatico."
+  }
+ },
+ "zubehoer": {
+  "t": {
+   "fr": "Accessoires",
+   "it": "Accessori"
+  },
+  "d": {
+   "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier – adaptés à chaque série MAHE.",
+   "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina – per ogni serie MAHE."
+  }
+ }
+}

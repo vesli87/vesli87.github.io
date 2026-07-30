@@ -1,0 +1,29 @@
+{
+ "name": "VES-TECH Swiss — MAHE Schweisstechnik",
+ "short_name": "VES-TECH",
+ "description": "MAHE Schweissgeräte, Plasmaschneider und elektrolytische Reinigungssysteme in der Schweiz. Beratung, Service und Automation aus Bronschhofen SG. Preis auf Anfrage.",
+ "start_url": "/",
+ "scope": "/",
+ "display": "standalone",
+ "background_color": "#ECEAE5",
+ "theme_color": "#E0511A",
+ "lang": "de-CH",
+ "icons": [
+  {
+   "src": "/assets/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "/assets/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any"
+  },
+  {
+   "src": "/assets/icons/favicon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}

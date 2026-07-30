@@ -1,0 +1,570 @@
+{
+  "_comment": "Zusatz-Strings für SEO/AEO-Seiten. Ergänzt data/UI.json. Alle Keys müssen in de/fr/it existieren. Schweizer Schreibweise: 'ss' statt 'ß'.",
+  "de": {
+    "locale": "de_CH",
+    "hreflang": "de-CH",
+    "lang_name": "Deutsch",
+    "site_name": "VES-TECH Swiss",
+    "tagline": "MAHE Schweisstechnik, Plasmaschneiden & Automation aus Bronschhofen",
+    "brand_claim": "Offizieller Schweizer Partner für das MAHE-Geräteprogramm.",
+    "skip_link": "Zum Inhalt springen",
+    "nav_home": "Home",
+    "nav_products": "Produkte",
+    "nav_faq": "Häufige Fragen",
+    "nav_impressum": "Impressum",
+    "nav_datenschutz": "Datenschutz",
+    "nav_all_products": "Alle Geräte",
+    "breadcrumb_aria": "Sie sind hier",
+    "menu_aria": "Hauptmenü",
+    "lang_aria": "Sprache wählen",
+    "home_title": "VES-TECH Swiss · MAHE Schweissgeräte, Plasmaschneiden & Reinigung",
+    "home_desc": "MAHE Schweissgeräte, Plasmaschneider und elektrolytische Reinigungssysteme in der Schweiz. Beratung, Service und Automation aus Bronschhofen SG. Preis auf Anfrage.",
+    "home_h1": "MAHE Schweisstechnik für die Schweiz",
+    "all_title": "Alle MAHE Geräte · Schweissen, Plasma, Reinigung, Zubehör",
+    "all_desc": "Das komplette MAHE-Programm bei VES-TECH Swiss: {n} Geräte für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden, elektrolytische Reinigung und Zubehör. Preis auf Anfrage.",
+    "all_h1": "Alle MAHE Geräte",
+    "all_lead": "Das komplette MAHE-Programm – geordnet nach Verfahren. Alle Geräte mit Schweizer Service, Garantieabwicklung und Beratung durch den Techniker.",
+    "cat_title_tpl": "{cat} · MAHE {sub_hint} kaufen in der Schweiz | VES-TECH",
+    "cat_desc_tpl": "{cat} von MAHE bei VES-TECH Swiss: {n} Modelle, {subs}. Beratung, Service und Ersatzteile aus Bronschhofen SG. Preis auf Anfrage.",
+    "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
+    "sub_desc_tpl": "MAHE {sub} – {n} Modelle bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
+    "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
+    "prod_desc_tpl": "MAHE {name} ({vt}): {desc} Technische Daten, passendes Zubehör und Beratung bei VES-TECH Swiss. Preis auf Anfrage.",
+    "prod_intro_tpl": "Der MAHE {name} ist ein {vt}-Gerät aus dem Bereich {cat}. VES-TECH Swiss liefert das Gerät mit Schweizer Service, Inbetriebnahme und Garantieabwicklung.",
+    "verf_title": "MAHE Schweissverfahren · MIS, HyperPuls, HyperCold | VES-TECH",
+    "verf_desc": "Die MAHE-Schweissverfahren erklärt: MIS spritzerfrei, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP – wofür sie eingesetzt werden.",
+    "dl_title": "Downloads · MAHE Katalog, EN 1090 & Sicherheitsdatenblätter",
+    "dl_desc": "MAHE Produktkatalog, EN 1090 Konformitätszertifikat und die Sicherheitsdatenblätter der Elektrolyte R1, RP1, P1, M1 und N1 als PDF.",
+    "kontakt_title": "Kontakt · VES-TECH Swiss, Bronschhofen SG",
+    "kontakt_desc": "VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, info@ves-tech.ch. Beratung, Service und Reparatur für MAHE Schweisstechnik.",
+    "faq_title": "Häufige Fragen zu MAHE Schweisstechnik | VES-TECH Swiss",
+    "faq_desc": "Antworten zu Preisen, Verfahrenswahl, Aluminium schweissen, elektrolytischer Reinigung, Plasmaschneiden, EN 1090 und Service in der Schweiz.",
+    "faq_h1": "Häufige Fragen",
+    "faq_lead": "Die Fragen, die uns Kundinnen und Kunden am häufigsten stellen – kurz und direkt beantwortet.",
+    "search_title": "Suche | VES-TECH Swiss",
+    "search_desc": "Durchsuchen Sie das komplette MAHE-Programm bei VES-TECH Swiss nach Gerät, Verfahren oder technischem Merkmal.",
+    "search_h1": "Suche",
+    "search_lead": "Suchen Sie nach Gerätename, Verfahren (MIG, WIG, Plasma), Werkstoff oder technischem Merkmal.",
+    "search_results_for": "Ergebnisse für",
+    "search_n_results": "{n} Treffer",
+    "search_one_result": "1 Treffer",
+    "search_no_results": "Keine Treffer für",
+    "search_no_results_help": "Prüfen Sie die Schreibweise oder suchen Sie allgemeiner – zum Beispiel nach dem Verfahren statt dem Gerätenamen.",
+    "search_did_you_mean": "Meinten Sie",
+    "search_popular": "Häufig gesucht",
+    "search_all_results": "Alle Ergebnisse anzeigen",
+    "search_group_products": "Geräte",
+    "search_group_cats": "Kategorien",
+    "search_group_procs": "Verfahren",
+    "search_group_dl": "Downloads",
+    "search_clear": "Suche leeren",
+    "search_min_chars": "Mindestens 2 Zeichen eingeben",
+    "search_aria_listbox": "Suchvorschläge",
+    "search_filter_all": "Alle",
+    "search_sort": "Sortierung",
+    "search_sort_rel": "Relevanz",
+    "search_sort_name": "Name A–Z",
+    "impressum_title": "Impressum | VES-TECH Swiss",
+    "impressum_desc": "Impressum und Angaben zum Anbieter: VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Schweiz.",
+    "impressum_h1": "Impressum",
+    "datenschutz_title": "Datenschutzerklärung | VES-TECH Swiss",
+    "datenschutz_desc": "Datenschutzerklärung von VES-TECH Swiss: welche Daten beim Besuch der Website und bei einer Anfrage bearbeitet werden.",
+    "datenschutz_h1": "Datenschutzerklärung",
+    "err404_title": "Seite nicht gefunden | VES-TECH Swiss",
+    "err404_h1": "Seite nicht gefunden",
+    "err404_lead": "Diese Seite existiert nicht (mehr). Nutzen Sie die Suche oder gehen Sie zurück zur Übersicht.",
+    "err404_cta": "Zur Startseite",
+    "form_sending": "Wird gesendet …",
+    "form_success": "Danke – Ihre Anfrage ist eingegangen. Wir melden uns in der Regel innerhalb eines Arbeitstages.",
+    "form_error": "Das Senden hat nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie direkt an info@ves-tech.ch.",
+    "form_required": "Bitte ausfüllen",
+    "form_invalid_mail": "Bitte gültige E-Mail-Adresse eingeben",
+    "form_privacy": "Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage verwendet werden.",
+    "form_company": "Firma",
+    "related_h": "Ähnliche Geräte",
+    "back_to_cat": "Zurück zur Übersicht",
+    "prod_overview": "Auf einen Blick",
+    "spec_h": "Technische Daten",
+    "toc_h": "Inhalt",
+    "updated": "Zuletzt aktualisiert",
+    "reading_context": "MAHE Gerät bei VES-TECH Swiss",
+    "usp_1_h": "Schweizer Service",
+    "usp_1_p": "Inbetriebnahme, Reparatur und Kalibrierung durch den Techniker – nicht durch eine Hotline.",
+    "usp_2_h": "Preis auf Anfrage",
+    "usp_2_p": "Jede Anlage wird konfiguriert. Sie erhalten ein Angebot, das zu Ihrem Werkstoff und Ihrer Blechdicke passt.",
+    "usp_3_h": "EN 1090 Dokumentation",
+    "usp_3_p": "Prüf- und Konformitätspaket für tragende Stahl- und Aluminiumbauten.",
+    "faq": [
+      {
+        "q": "Was kostet ein MAHE Schweissgerät bei VES-TECH Swiss?",
+        "a": "Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (luft- oder wassergekühlt), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung."
+      },
+      {
+        "q": "Welches Schweissverfahren brauche ich für Aluminium?",
+        "a": "Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte, sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen WIG DC und WIG AC/DC?",
+        "a": "WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf – nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl."
+      },
+      {
+        "q": "Wie funktioniert die elektrolytische Schweissnahtreinigung?",
+        "a": "Ein MAHE Cleaner leitet über einen mit Elektrolyt getränkten Karbon-Pinsel Strom in die Schweissnaht. Die Anlauffarben und die Oxidschicht auf Chromstahl werden elektrochemisch entfernt, die Passivschicht baut sich wieder auf. Je nach Elektrolyt wird gereinigt (R1, RP1), poliert (P1), neutralisiert (N1) oder das Metall dauerhaft signiert (M1). Das ist schneller und schonender als Beizen und ohne Säurebad."
+      },
+      {
+        "q": "Welche Blechdicke schneidet ein MAHE Theta Plasmaschneider?",
+        "a": "Die Theta-Serie deckt den Bereich von etwa 15 mm bis 80 mm Trennschnitt ab: Theta 40 für die leichte Werkstatt am 230-V-Netz, Theta 60 und Theta 120 für den industriellen Einsatz mit HSC-Technologie und Theta 180 als stärkstes Modell. Für CNC-Anlagen gibt es Theta 60 AUT und Theta 120 AUT mit Automations-Schnittstelle."
+      },
+      {
+        "q": "Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?",
+        "a": "Ja. VES-TECH Swiss in Bronschhofen (SG) übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet – erreichbar unter +41 76 710 91 39, Montag bis Freitag von 07:30 bis 17:30 Uhr."
+      },
+      {
+        "q": "Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?",
+        "a": "EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage – inklusive Konformitätszertifikat."
+      },
+      {
+        "q": "Wie schnell erhalte ich ein Angebot?",
+        "a": "In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus."
+      },
+      {
+        "q": "Liefert VES-TECH Swiss in die ganze Schweiz?",
+        "a": "Ja, VES-TECH Swiss beliefert die gesamte Schweiz und das Fürstentum Liechtenstein. Der Standort ist Bildfelsstrasse 24, 9552 Bronschhofen im Kanton St. Gallen. Beratung und Anfragen sind auf Deutsch, Französisch und Italienisch möglich."
+      },
+      {
+        "q": "Was ist MIS-Schweissen und HyperPuls bei MAHE?",
+        "a": "MIS ist das spritzerfreie MAHE-Verfahren für den Kurzlichtbogen: Der Materialübergang wird geregelt, dadurch entstehen kaum Spritzer und die Nacharbeit entfällt weitgehend. HyperPuls ist der geregelte Impulslichtbogen für höhere Abschmelzleistung bei kontrolliertem Wärmeeintrag. Ergänzt wird das durch HyperCold (minimaler Verzug), HyperRoot (sichere Wurzel), HyperForce (tiefer Einbrand) und HyperUP (Steignaht)."
+      }
+    ],
+    "impressum_body": [
+      [
+        "Anbieter",
+        "VES-TECH Swiss<br>Bildfelsstrasse 24<br>9552 Bronschhofen<br>Schweiz"
+      ],
+      [
+        "Kontakt",
+        "Telefon: +41 76 710 91 39<br>E-Mail: info@ves-tech.ch<br>Öffnungszeiten: Mo–Fr 07:30–17:30"
+      ],
+      [
+        "Inhalt der Website",
+        "Die Inhalte dieser Website wurden mit Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen. Technische Daten der MAHE-Geräte entsprechen den Angaben des Herstellers und können ohne Vorankündigung ändern. Massgebend ist immer das schriftliche Angebot."
+      ],
+      [
+        "Marken und Bilder",
+        "MAHE ist eine Marke der MAHE GmbH, Deutschland. Produktdaten und Produktbilder stammen vom Hersteller und werden mit dessen Produktinformationen wiedergegeben. Alle übrigen Inhalte, Texte und Gestaltungselemente dieser Website gehören VES-TECH Swiss."
+      ],
+      [
+        "Haftung für Links",
+        "Verweise auf Websites Dritter liegen ausserhalb unseres Verantwortungsbereichs. Für deren Inhalte wird jede Verantwortung abgelehnt."
+      ]
+    ],
+    "datenschutz_body": [
+      [
+        "Verantwortliche Stelle",
+        "VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Schweiz. E-Mail: info@ves-tech.ch, Telefon +41 76 710 91 39."
+      ],
+      [
+        "Welche Daten wir bearbeiten",
+        "Beim Besuch dieser Website werden technisch notwendige Daten verarbeitet (IP-Adresse, Browsertyp, Zeitpunkt des Zugriffs), die vom Hosting-Anbieter zur Auslieferung der Seite benötigt werden. Wenn Sie das Kontaktformular oder die Anfrageliste nutzen, bearbeiten wir die von Ihnen angegebenen Daten – Name, Firma, E-Mail-Adresse, Telefonnummer und Ihre Nachricht – ausschliesslich zur Bearbeitung Ihrer Anfrage."
+      ],
+      [
+        "Rechtsgrundlage und Zweck",
+        "Die Bearbeitung erfolgt gestützt auf das Schweizer Datenschutzgesetz (revDSG) sowie, soweit anwendbar, die DSGVO. Zweck ist die Beantwortung Ihrer Anfrage und die Anbahnung eines Vertragsverhältnisses. Ihre Daten werden nicht zu Werbezwecken an Dritte verkauft."
+      ],
+      [
+        "Formularversand",
+        "Der Versand der Formulare erfolgt über den Dienstleister Web3Forms, der die Nachricht an unsere E-Mail-Adresse weiterleitet. Dabei werden die von Ihnen eingegebenen Daten an diesen Dienst übermittelt."
+      ],
+      [
+        "Speicherung im Browser",
+        "Die Anfrageliste wird lokal in Ihrem Browser gespeichert (localStorage), damit sie beim Seitenwechsel erhalten bleibt. Diese Daten verlassen Ihren Browser erst, wenn Sie die Anfrage absenden. Sie können sie jederzeit über das Leeren der Liste oder der Browserdaten entfernen."
+      ],
+      [
+        "Externe Inhalte",
+        "Diese Website lädt Schriften von Google Fonts sowie Produktbilder von mahe-online.de. Dabei wird die IP-Adresse an die jeweiligen Anbieter übermittelt."
+      ],
+      [
+        "Ihre Rechte",
+        "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Bearbeitung Ihrer Daten. Wenden Sie sich dazu an info@ves-tech.ch."
+      ]
+    ]
+  },
+  "fr": {
+    "locale": "fr_CH",
+    "hreflang": "fr-CH",
+    "lang_name": "Français",
+    "site_name": "VES-TECH Swiss",
+    "tagline": "Soudage MAHE, découpe plasma & automation à Bronschhofen",
+    "brand_claim": "Partenaire suisse officiel de la gamme d'appareils MAHE.",
+    "skip_link": "Aller au contenu",
+    "nav_home": "Accueil",
+    "nav_products": "Produits",
+    "nav_faq": "Questions fréquentes",
+    "nav_impressum": "Mentions légales",
+    "nav_datenschutz": "Protection des données",
+    "nav_all_products": "Tous les appareils",
+    "breadcrumb_aria": "Vous êtes ici",
+    "menu_aria": "Menu principal",
+    "lang_aria": "Choisir la langue",
+    "home_title": "VES-TECH Swiss · Postes de soudage MAHE, plasma & nettoyage",
+    "home_desc": "Postes de soudage MAHE, découpeurs plasma et systèmes de nettoyage électrolytique en Suisse. Conseil, service et automation depuis Bronschhofen SG. Prix sur demande.",
+    "home_h1": "Technique de soudage MAHE pour la Suisse",
+    "all_title": "Tous les appareils MAHE · soudage, plasma, nettoyage, accessoires",
+    "all_desc": "Toute la gamme MAHE chez VES-TECH Swiss : {n} appareils pour MIG/MAG, TIG, MMA, découpe plasma, nettoyage électrolytique et accessoires. Prix sur demande.",
+    "all_h1": "Tous les appareils MAHE",
+    "all_lead": "Toute la gamme MAHE – classée par procédé. Tous les appareils avec service suisse, gestion de la garantie et conseil par le technicien.",
+    "cat_title_tpl": "{cat} · acheter MAHE {sub_hint} en Suisse | VES-TECH",
+    "cat_desc_tpl": "{cat} MAHE chez VES-TECH Swiss : {n} modèles, {subs}. Conseil, service et pièces de rechange depuis Bronschhofen SG. Prix sur demande.",
+    "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
+    "sub_desc_tpl": "MAHE {sub} – {n} modèles chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
+    "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
+    "prod_desc_tpl": "MAHE {name} ({vt}) : {desc} Données techniques, accessoires adaptés et conseil chez VES-TECH Swiss. Prix sur demande.",
+    "prod_intro_tpl": "Le MAHE {name} est un appareil {vt} de la gamme {cat}. VES-TECH Swiss le livre avec service suisse, mise en service et gestion de la garantie.",
+    "verf_title": "Procédés de soudage MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
+    "verf_desc": "Les procédés de soudage MAHE expliqués : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP – et leurs applications.",
+    "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
+    "dl_desc": "Catalogue produits MAHE, certificat de conformité EN 1090 et fiches de données de sécurité des électrolytes R1, RP1, P1, M1 et N1 en PDF.",
+    "kontakt_title": "Contact · VES-TECH Swiss, Bronschhofen SG",
+    "kontakt_desc": "VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen. Téléphone +41 76 710 91 39, info@ves-tech.ch. Conseil, service et réparation pour le soudage MAHE.",
+    "faq_title": "Questions fréquentes sur le soudage MAHE | VES-TECH Swiss",
+    "faq_desc": "Réponses sur les prix, le choix du procédé, le soudage de l'aluminium, le nettoyage électrolytique, la découpe plasma, EN 1090 et le service en Suisse.",
+    "faq_h1": "Questions fréquentes",
+    "faq_lead": "Les questions que nos clientes et clients nous posent le plus souvent – réponses courtes et directes.",
+    "search_title": "Recherche | VES-TECH Swiss",
+    "search_desc": "Recherchez dans toute la gamme MAHE de VES-TECH Swiss par appareil, procédé ou caractéristique technique.",
+    "search_h1": "Recherche",
+    "search_lead": "Cherchez par nom d'appareil, procédé (MIG, TIG, plasma), matériau ou caractéristique technique.",
+    "search_results_for": "Résultats pour",
+    "search_n_results": "{n} résultats",
+    "search_one_result": "1 résultat",
+    "search_no_results": "Aucun résultat pour",
+    "search_no_results_help": "Vérifiez l'orthographe ou élargissez la recherche – par exemple le procédé plutôt que le nom de l'appareil.",
+    "search_did_you_mean": "Vouliez-vous dire",
+    "search_popular": "Recherches fréquentes",
+    "search_all_results": "Voir tous les résultats",
+    "search_group_products": "Appareils",
+    "search_group_cats": "Catégories",
+    "search_group_procs": "Procédés",
+    "search_group_dl": "Téléchargements",
+    "search_clear": "Effacer la recherche",
+    "search_min_chars": "Saisissez au moins 2 caractères",
+    "search_aria_listbox": "Suggestions de recherche",
+    "search_filter_all": "Tous",
+    "search_sort": "Tri",
+    "search_sort_rel": "Pertinence",
+    "search_sort_name": "Nom A–Z",
+    "impressum_title": "Mentions légales | VES-TECH Swiss",
+    "impressum_desc": "Mentions légales et informations sur le fournisseur : VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Suisse.",
+    "impressum_h1": "Mentions légales",
+    "datenschutz_title": "Protection des données | VES-TECH Swiss",
+    "datenschutz_desc": "Déclaration de protection des données de VES-TECH Swiss : quelles données sont traitées lors de la visite du site et d'une demande.",
+    "datenschutz_h1": "Protection des données",
+    "err404_title": "Page introuvable | VES-TECH Swiss",
+    "err404_h1": "Page introuvable",
+    "err404_lead": "Cette page n'existe pas (ou plus). Utilisez la recherche ou revenez à l'aperçu.",
+    "err404_cta": "Vers l'accueil",
+    "form_sending": "Envoi en cours …",
+    "form_success": "Merci – votre demande nous est bien parvenue. Nous répondons en règle générale dans un jour ouvrable.",
+    "form_error": "L'envoi a échoué. Merci de nous appeler ou d'écrire directement à info@ves-tech.ch.",
+    "form_required": "Champ obligatoire",
+    "form_invalid_mail": "Veuillez saisir une adresse e-mail valide",
+    "form_privacy": "J'accepte que mes données soient utilisées pour traiter ma demande.",
+    "form_company": "Entreprise",
+    "related_h": "Appareils similaires",
+    "back_to_cat": "Retour à l'aperçu",
+    "prod_overview": "En bref",
+    "spec_h": "Données techniques",
+    "toc_h": "Sommaire",
+    "updated": "Dernière mise à jour",
+    "reading_context": "Appareil MAHE chez VES-TECH Swiss",
+    "usp_1_h": "Service suisse",
+    "usp_1_p": "Mise en service, réparation et calibrage par le technicien – pas par une hotline.",
+    "usp_2_h": "Prix sur demande",
+    "usp_2_p": "Chaque installation est configurée. Vous recevez une offre adaptée à votre matériau et à votre épaisseur de tôle.",
+    "usp_3_h": "Documentation EN 1090",
+    "usp_3_p": "Dossier de contrôle et de conformité pour les structures porteuses en acier et aluminium.",
+    "faq": [
+      {
+        "q": "Combien coûte un poste de soudage MAHE chez VES-TECH Swiss ?",
+        "a": "Tous les appareils MAHE sont proposés au prix sur demande chez VES-TECH Swiss. La raison : chaque installation est configurée selon le matériau, l'épaisseur de tôle, le refroidissement (air ou eau), la longueur de torche et les accessoires. Vous recevez en règle générale une offre écrite dans un jour ouvrable, service suisse et gestion de la garantie inclus."
+      },
+      {
+        "q": "Quel procédé de soudage pour l'aluminium ?",
+        "a": "Deux voies conviennent pour l'aluminium : le TIG AC/DC (par ex. MAHE HyperTIG AX ou Omega AX) pour les tôles fines et les cordons visibles, et le MIG/MAG avec pulsation ou double pulsation (par ex. MAHE HyperMIG X) pour un taux de dépôt élevé à partir d'environ 2 mm. Le TIG DC pur ne convient pas à l'aluminium, car la couche d'oxyde nécessite l'effet décapant du courant alternatif."
+      },
+      {
+        "q": "Quelle est la différence entre TIG DC et TIG AC/DC ?",
+        "a": "Le TIG DC soude en courant continu et convient à l'acier, l'acier inox, le cuivre et le titane. Le TIG AC/DC travaille en plus en courant alternatif et brise ainsi la couche d'oxyde d'aluminium – seule façon de souder proprement l'aluminium en TIG. Les appareils AC/DC sont donc le choix universel, les DC le choix économique."
+      },
+      {
+        "q": "Comment fonctionne le nettoyage électrolytique des soudures ?",
+        "a": "Un MAHE Cleaner conduit le courant dans le cordon via un pinceau carbone imbibé d'électrolyte. Les colorations et la couche d'oxyde sur l'acier inox sont éliminées par voie électrochimique et la couche passive se reconstitue. Selon l'électrolyte, on nettoie (R1, RP1), polit (P1), neutralise (N1) ou marque durablement le métal (M1). C'est plus rapide et plus doux que le décapage, sans bain d'acide."
+      },
+      {
+        "q": "Quelle épaisseur coupe un découpeur plasma MAHE Theta ?",
+        "a": "La série Theta couvre environ 15 mm à 80 mm de coupe de séparation : Theta 40 pour l'atelier léger sur réseau 230 V, Theta 60 et Theta 120 pour l'usage industriel avec technologie HSC, et Theta 180 comme modèle le plus puissant. Pour les installations CNC, il existe les Theta 60 AUT et Theta 120 AUT avec interface d'automation."
+      },
+      {
+        "q": "VES-TECH Swiss propose-t-il service et réparation en Suisse ?",
+        "a": "Oui. VES-TECH Swiss à Bronschhofen (SG) assure le diagnostic, la réparation, le calibrage et l'automation pour la gamme MAHE. Vous parlez directement au technicien qui travaille aussi sur l'électronique – joignable au +41 76 710 91 39, du lundi au vendredi de 07h30 à 17h30."
+      },
+      {
+        "q": "Que signifie EN 1090 et VES-TECH fournit-il la documentation ?",
+        "a": "EN 1090 est la norme européenne pour l'exécution des structures porteuses en acier et en aluminium. Qui fabrique de tels éléments doit disposer d'un contrôle de production en usine et d'un équipement de soudage contrôlé. VES-TECH Swiss fournit le dossier complet de contrôle et de conformité, adapté à votre installation MAHE – certificat de conformité inclus."
+      },
+      {
+        "q": "En combien de temps reçoit-on une offre ?",
+        "a": "En règle générale dans un jour ouvrable. Vous composez un ensemble de plusieurs appareils via la liste de demande et l'envoyez groupé. Plus le matériau, l'épaisseur de tôle et le lieu d'utilisation sont décrits précisément, plus l'offre est précise."
+      },
+      {
+        "q": "VES-TECH Swiss livre-t-il dans toute la Suisse ?",
+        "a": "Oui, VES-TECH Swiss livre dans toute la Suisse et la Principauté du Liechtenstein. Le site se trouve Bildfelsstrasse 24, 9552 Bronschhofen, canton de Saint-Gall. Le conseil et les demandes sont possibles en allemand, français et italien."
+      },
+      {
+        "q": "Qu'est-ce que le soudage MIS et HyperPuls chez MAHE ?",
+        "a": "MIS est le procédé MAHE sans projections pour l'arc court : le transfert de matière est régulé, il n'y a donc quasiment pas de projections et la reprise devient superflue. HyperPuls est l'arc pulsé régulé pour un taux de dépôt élevé avec apport de chaleur maîtrisé. S'y ajoutent HyperCold (déformation minimale), HyperRoot (racine sûre), HyperForce (pénétration profonde) et HyperUP (soudure montante)."
+      }
+    ],
+    "impressum_body": [
+      [
+        "Fournisseur",
+        "VES-TECH Swiss<br>Bildfelsstrasse 24<br>9552 Bronschhofen<br>Suisse"
+      ],
+      [
+        "Contact",
+        "Téléphone : +41 76 710 91 39<br>E-mail : info@ves-tech.ch<br>Horaires : Lun–Ven 07h30–17h30"
+      ],
+      [
+        "Contenu du site",
+        "Les contenus de ce site ont été établis avec soin. Aucune garantie n'est donnée quant à l'exactitude, l'exhaustivité et l'actualité des contenus. Les données techniques des appareils MAHE correspondent aux indications du fabricant et peuvent changer sans préavis. Seule l'offre écrite fait foi."
+      ],
+      [
+        "Marques et images",
+        "MAHE est une marque de MAHE GmbH, Allemagne. Les données et images produits proviennent du fabricant et sont reprises de ses informations produits. Tous les autres contenus, textes et éléments graphiques de ce site appartiennent à VES-TECH Swiss."
+      ],
+      [
+        "Responsabilité des liens",
+        "Les renvois vers des sites tiers sont hors de notre domaine de responsabilité. Toute responsabilité quant à leurs contenus est déclinée."
+      ]
+    ],
+    "datenschutz_body": [
+      [
+        "Responsable du traitement",
+        "VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Suisse. E-mail : info@ves-tech.ch, téléphone +41 76 710 91 39."
+      ],
+      [
+        "Quelles données nous traitons",
+        "Lors de la visite de ce site, des données techniquement nécessaires sont traitées (adresse IP, type de navigateur, moment de l'accès), requises par l'hébergeur pour livrer la page. Si vous utilisez le formulaire de contact ou la liste de demande, nous traitons les données que vous indiquez – nom, entreprise, adresse e-mail, numéro de téléphone et message – exclusivement pour traiter votre demande."
+      ],
+      [
+        "Base légale et finalité",
+        "Le traitement s'appuie sur la loi suisse sur la protection des données (nLPD) ainsi que, le cas échéant, sur le RGPD. La finalité est de répondre à votre demande et de préparer une relation contractuelle. Vos données ne sont pas vendues à des tiers à des fins publicitaires."
+      ],
+      [
+        "Envoi des formulaires",
+        "L'envoi des formulaires passe par le prestataire Web3Forms, qui transmet le message à notre adresse e-mail. Les données que vous saisissez sont transmises à ce service."
+      ],
+      [
+        "Stockage dans le navigateur",
+        "La liste de demande est enregistrée localement dans votre navigateur (localStorage) afin d'être conservée d'une page à l'autre. Ces données ne quittent votre navigateur qu'au moment de l'envoi. Vous pouvez les supprimer à tout moment en vidant la liste ou les données du navigateur."
+      ],
+      [
+        "Contenus externes",
+        "Ce site charge des polices depuis Google Fonts ainsi que des images produits depuis mahe-online.de. L'adresse IP est alors transmise aux fournisseurs concernés."
+      ],
+      [
+        "Vos droits",
+        "Vous disposez d'un droit d'accès, de rectification, d'effacement et de limitation du traitement de vos données. Adressez-vous à info@ves-tech.ch."
+      ]
+    ]
+  },
+  "it": {
+    "locale": "it_CH",
+    "hreflang": "it-CH",
+    "lang_name": "Italiano",
+    "site_name": "VES-TECH Swiss",
+    "tagline": "Saldatura MAHE, taglio al plasma & automazione da Bronschhofen",
+    "brand_claim": "Partner svizzero ufficiale per la gamma di apparecchi MAHE.",
+    "skip_link": "Vai al contenuto",
+    "nav_home": "Home",
+    "nav_products": "Prodotti",
+    "nav_faq": "Domande frequenti",
+    "nav_impressum": "Note legali",
+    "nav_datenschutz": "Protezione dei dati",
+    "nav_all_products": "Tutti gli apparecchi",
+    "breadcrumb_aria": "Vi trovate qui",
+    "menu_aria": "Menu principale",
+    "lang_aria": "Scegliere la lingua",
+    "home_title": "VES-TECH Swiss · Saldatrici MAHE, plasma & pulizia",
+    "home_desc": "Saldatrici MAHE, inverter per taglio al plasma e sistemi di pulizia elettrolitica in Svizzera. Consulenza, assistenza e automazione da Bronschhofen SG. Prezzo su richiesta.",
+    "home_h1": "Tecnica di saldatura MAHE per la Svizzera",
+    "all_title": "Tutti gli apparecchi MAHE · saldatura, plasma, pulizia, accessori",
+    "all_desc": "L'intera gamma MAHE da VES-TECH Swiss: {n} apparecchi per MIG/MAG, TIG, MMA, taglio al plasma, pulizia elettrolitica e accessori. Prezzo su richiesta.",
+    "all_h1": "Tutti gli apparecchi MAHE",
+    "all_lead": "L'intera gamma MAHE – ordinata per processo. Tutti gli apparecchi con assistenza svizzera, gestione della garanzia e consulenza del tecnico.",
+    "cat_title_tpl": "{cat} · acquistare MAHE {sub_hint} in Svizzera | VES-TECH",
+    "cat_desc_tpl": "{cat} MAHE da VES-TECH Swiss: {n} modelli, {subs}. Consulenza, assistenza e ricambi da Bronschhofen SG. Prezzo su richiesta.",
+    "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
+    "sub_desc_tpl": "MAHE {sub} – {n} modelli da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
+    "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
+    "prod_desc_tpl": "MAHE {name} ({vt}): {desc} Dati tecnici, accessori adatti e consulenza da VES-TECH Swiss. Prezzo su richiesta.",
+    "prod_intro_tpl": "Il MAHE {name} è un apparecchio {vt} della gamma {cat}. VES-TECH Swiss lo fornisce con assistenza svizzera, messa in servizio e gestione della garanzia.",
+    "verf_title": "Processi di saldatura MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
+    "verf_desc": "I processi di saldatura MAHE spiegati: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP – e i loro impieghi.",
+    "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
+    "dl_desc": "Catalogo prodotti MAHE, certificato di conformità EN 1090 e schede di sicurezza degli elettroliti R1, RP1, P1, M1 e N1 in PDF.",
+    "kontakt_title": "Contatto · VES-TECH Swiss, Bronschhofen SG",
+    "kontakt_desc": "VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen. Telefono +41 76 710 91 39, info@ves-tech.ch. Consulenza, assistenza e riparazione per la saldatura MAHE.",
+    "faq_title": "Domande frequenti sulla saldatura MAHE | VES-TECH Swiss",
+    "faq_desc": "Risposte su prezzi, scelta del processo, saldatura dell'alluminio, pulizia elettrolitica, taglio al plasma, EN 1090 e assistenza in Svizzera.",
+    "faq_h1": "Domande frequenti",
+    "faq_lead": "Le domande che clienti e clienti ci pongono più spesso – risposte brevi e dirette.",
+    "search_title": "Ricerca | VES-TECH Swiss",
+    "search_desc": "Cercate nell'intera gamma MAHE di VES-TECH Swiss per apparecchio, processo o caratteristica tecnica.",
+    "search_h1": "Ricerca",
+    "search_lead": "Cercate per nome dell'apparecchio, processo (MIG, TIG, plasma), materiale o caratteristica tecnica.",
+    "search_results_for": "Risultati per",
+    "search_n_results": "{n} risultati",
+    "search_one_result": "1 risultato",
+    "search_no_results": "Nessun risultato per",
+    "search_no_results_help": "Controllate l'ortografia o cercate in modo più generico – ad esempio il processo invece del nome dell'apparecchio.",
+    "search_did_you_mean": "Intendevate",
+    "search_popular": "Ricerche frequenti",
+    "search_all_results": "Mostra tutti i risultati",
+    "search_group_products": "Apparecchi",
+    "search_group_cats": "Categorie",
+    "search_group_procs": "Processi",
+    "search_group_dl": "Download",
+    "search_clear": "Cancella la ricerca",
+    "search_min_chars": "Inserire almeno 2 caratteri",
+    "search_aria_listbox": "Suggerimenti di ricerca",
+    "search_filter_all": "Tutti",
+    "search_sort": "Ordinamento",
+    "search_sort_rel": "Rilevanza",
+    "search_sort_name": "Nome A–Z",
+    "impressum_title": "Note legali | VES-TECH Swiss",
+    "impressum_desc": "Note legali e informazioni sul fornitore: VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Svizzera.",
+    "impressum_h1": "Note legali",
+    "datenschutz_title": "Protezione dei dati | VES-TECH Swiss",
+    "datenschutz_desc": "Informativa sulla protezione dei dati di VES-TECH Swiss: quali dati vengono trattati durante la visita del sito e con una richiesta.",
+    "datenschutz_h1": "Protezione dei dati",
+    "err404_title": "Pagina non trovata | VES-TECH Swiss",
+    "err404_h1": "Pagina non trovata",
+    "err404_lead": "Questa pagina non esiste (più). Usate la ricerca o tornate alla panoramica.",
+    "err404_cta": "Alla pagina iniziale",
+    "form_sending": "Invio in corso …",
+    "form_success": "Grazie – la vostra richiesta è arrivata. Di norma rispondiamo entro un giorno lavorativo.",
+    "form_error": "L'invio non è riuscito. Vi preghiamo di chiamarci o di scrivere direttamente a info@ves-tech.ch.",
+    "form_required": "Campo obbligatorio",
+    "form_invalid_mail": "Inserire un indirizzo e-mail valido",
+    "form_privacy": "Acconsento all'uso dei miei dati per l'elaborazione della richiesta.",
+    "form_company": "Azienda",
+    "related_h": "Apparecchi simili",
+    "back_to_cat": "Torna alla panoramica",
+    "prod_overview": "In sintesi",
+    "spec_h": "Dati tecnici",
+    "toc_h": "Indice",
+    "updated": "Ultimo aggiornamento",
+    "reading_context": "Apparecchio MAHE da VES-TECH Swiss",
+    "usp_1_h": "Assistenza svizzera",
+    "usp_1_p": "Messa in servizio, riparazione e calibrazione dal tecnico – non da una hotline.",
+    "usp_2_h": "Prezzo su richiesta",
+    "usp_2_p": "Ogni impianto viene configurato. Ricevete un'offerta adatta al vostro materiale e allo spessore della lamiera.",
+    "usp_3_h": "Documentazione EN 1090",
+    "usp_3_p": "Pacchetto di controllo e conformità per strutture portanti in acciaio e alluminio.",
+    "faq": [
+      {
+        "q": "Quanto costa una saldatrice MAHE da VES-TECH Swiss?",
+        "a": "Tutti gli apparecchi MAHE sono offerti da VES-TECH Swiss al prezzo su richiesta. Il motivo: ogni impianto viene configurato in base a materiale, spessore della lamiera, raffreddamento (aria o acqua), lunghezza della torcia e accessori. Di norma ricevete un'offerta scritta entro un giorno lavorativo, inclusa assistenza svizzera e gestione della garanzia."
+      },
+      {
+        "q": "Quale processo di saldatura serve per l'alluminio?",
+        "a": "Per l'alluminio ci sono due vie: TIG AC/DC (ad es. MAHE HyperTIG AX o Omega AX) per lamiere sottili e cordoni a vista, e MIG/MAG con impulso o doppio impulso (ad es. MAHE HyperMIG X) per una resa maggiore a partire da circa 2 mm. Il TIG DC puro non è adatto all'alluminio, perché lo strato di ossido richiede l'effetto decapante della corrente alternata."
+      },
+      {
+        "q": "Qual è la differenza tra TIG DC e TIG AC/DC?",
+        "a": "Il TIG DC salda in corrente continua ed è adatto ad acciaio, acciaio inox, rame e titanio. Il TIG AC/DC lavora anche in corrente alternata e rompe così lo strato di ossido dell'alluminio – solo così l'alluminio si salda in TIG in modo pulito. Gli apparecchi AC/DC sono quindi la scelta universale, quelli DC la scelta più economica."
+      },
+      {
+        "q": "Come funziona la pulizia elettrolitica delle saldature?",
+        "a": "Un MAHE Cleaner conduce corrente nel cordone tramite un pennello di carbonio imbevuto di elettrolita. Le colorazioni da calore e lo strato di ossido sull'acciaio inox vengono rimossi per via elettrochimica e lo strato passivo si ricostituisce. A seconda dell'elettrolita si pulisce (R1, RP1), si lucida (P1), si neutralizza (N1) o si marca il metallo in modo permanente (M1). È più rapido e delicato del decapaggio, senza bagno acido."
+      },
+      {
+        "q": "Quale spessore taglia un inverter plasma MAHE Theta?",
+        "a": "La serie Theta copre da circa 15 mm a 80 mm di taglio di separazione: Theta 40 per l'officina leggera su rete 230 V, Theta 60 e Theta 120 per l'impiego industriale con tecnologia HSC e Theta 180 come modello più potente. Per impianti CNC esistono Theta 60 AUT e Theta 120 AUT con interfaccia di automazione."
+      },
+      {
+        "q": "VES-TECH Swiss offre assistenza e riparazione in Svizzera?",
+        "a": "Sì. VES-TECH Swiss a Bronschhofen (SG) si occupa di diagnosi, riparazione, calibrazione e automazione per la gamma MAHE. Parlate direttamente con il tecnico che lavora anche sull'elettronica – raggiungibile al +41 76 710 91 39, dal lunedì al venerdì dalle 07:30 alle 17:30."
+      },
+      {
+        "q": "Cosa significa EN 1090 e VES-TECH fornisce la documentazione?",
+        "a": "EN 1090 è la norma europea per l'esecuzione di strutture portanti in acciaio e alluminio. Chi produce tali componenti necessita di un controllo di produzione in fabbrica e di attrezzature di saldatura verificate. VES-TECH Swiss fornisce il pacchetto completo di controllo e conformità, adattato al vostro impianto MAHE – certificato di conformità incluso."
+      },
+      {
+        "q": "In quanto tempo si riceve un'offerta?",
+        "a": "Di norma entro un giorno lavorativo. Componete un pacchetto di più apparecchi tramite la lista richieste e lo inviate in un'unica soluzione. Più precisamente descrivete materiale, spessore della lamiera e luogo d'impiego, più precisa sarà l'offerta."
+      },
+      {
+        "q": "VES-TECH Swiss consegna in tutta la Svizzera?",
+        "a": "Sì, VES-TECH Swiss consegna in tutta la Svizzera e nel Principato del Liechtenstein. La sede è in Bildfelsstrasse 24, 9552 Bronschhofen, Canton San Gallo. Consulenza e richieste sono possibili in tedesco, francese e italiano."
+      },
+      {
+        "q": "Che cosa sono la saldatura MIS e HyperPuls di MAHE?",
+        "a": "MIS è il processo MAHE senza spruzzi per l'arco corto: il trasferimento del materiale è regolato, quindi non si formano quasi spruzzi e la ripresa diventa superflua. HyperPuls è l'arco pulsato regolato per una resa maggiore con apporto termico controllato. Si aggiungono HyperCold (deformazione minima), HyperRoot (radice sicura), HyperForce (penetrazione profonda) e HyperUP (saldatura in salita)."
+      }
+    ],
+    "impressum_body": [
+      [
+        "Fornitore",
+        "VES-TECH Swiss<br>Bildfelsstrasse 24<br>9552 Bronschhofen<br>Svizzera"
+      ],
+      [
+        "Contatto",
+        "Telefono: +41 76 710 91 39<br>E-mail: info@ves-tech.ch<br>Orari: Lun–Ven 07:30–17:30"
+      ],
+      [
+        "Contenuti del sito",
+        "I contenuti di questo sito sono stati redatti con cura. Non si assume alcuna garanzia per la correttezza, la completezza e l'attualità dei contenuti. I dati tecnici degli apparecchi MAHE corrispondono alle indicazioni del produttore e possono cambiare senza preavviso. Fa sempre fede l'offerta scritta."
+      ],
+      [
+        "Marchi e immagini",
+        "MAHE è un marchio di MAHE GmbH, Germania. Dati e immagini dei prodotti provengono dal produttore e sono ripresi dalle sue informazioni di prodotto. Tutti gli altri contenuti, testi ed elementi grafici di questo sito appartengono a VES-TECH Swiss."
+      ],
+      [
+        "Responsabilità per i link",
+        "I rimandi a siti di terzi sono al di fuori del nostro ambito di responsabilità. Si declina ogni responsabilità per i loro contenuti."
+      ]
+    ],
+    "datenschutz_body": [
+      [
+        "Titolare del trattamento",
+        "VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Svizzera. E-mail: info@ves-tech.ch, telefono +41 76 710 91 39."
+      ],
+      [
+        "Quali dati trattiamo",
+        "Durante la visita di questo sito vengono trattati dati tecnicamente necessari (indirizzo IP, tipo di browser, momento dell'accesso), richiesti dal provider di hosting per la consegna della pagina. Se utilizzate il modulo di contatto o la lista richieste, trattiamo i dati da voi indicati – nome, azienda, indirizzo e-mail, numero di telefono e messaggio – esclusivamente per elaborare la vostra richiesta."
+      ],
+      [
+        "Base giuridica e finalità",
+        "Il trattamento si basa sulla legge svizzera sulla protezione dei dati (nLPD) e, ove applicabile, sul GDPR. La finalità è rispondere alla vostra richiesta e avviare un rapporto contrattuale. I vostri dati non vengono venduti a terzi per scopi pubblicitari."
+      ],
+      [
+        "Invio dei moduli",
+        "L'invio dei moduli avviene tramite il fornitore Web3Forms, che inoltra il messaggio al nostro indirizzo e-mail. I dati da voi inseriti vengono trasmessi a questo servizio."
+      ],
+      [
+        "Memorizzazione nel browser",
+        "La lista richieste viene salvata localmente nel vostro browser (localStorage) affinché resti disponibile cambiando pagina. Questi dati lasciano il browser solo al momento dell'invio. Potete rimuoverli in qualsiasi momento svuotando la lista o i dati del browser."
+      ],
+      [
+        "Contenuti esterni",
+        "Questo sito carica caratteri da Google Fonts e immagini di prodotto da mahe-online.de. In tal caso l'indirizzo IP viene trasmesso ai rispettivi fornitori."
+      ],
+      [
+        "I vostri diritti",
+        "Avete diritto di accesso, rettifica, cancellazione e limitazione del trattamento dei vostri dati. Rivolgetevi a info@ves-tech.ch."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,756 @@
+[
+ {
+  "id": "hypermig-x",
+  "cat": "schweissgeraete",
+  "sub": "MIG / MAG",
+  "vt": "MIG/MAG",
+  "name": "HyperMIG X",
+  "img": "2022/03/Bild-der-Hypers.png",
+  "desc": "Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen.",
+  "specs": {
+   "Verfahren": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
+   "Strombereich": "10 – 420 A",
+   "Netz": "3~ 400 V · 50/60 Hz",
+   "Netzabsicherung": "25 A",
+   "Leerlaufspannung": "76 V",
+   "Einschaltdauer": "45 % @ 400 A · 60 % @ 360 A",
+   "Kühlung": "luft-/wassergekühlt",
+   "Antrieb": "4-Rollen",
+   "Betriebsart": "Synergic / JOB (99)",
+   "Schutzklasse": "IP23",
+   "Gewicht": "bis 103 kg (WWK)"
+  }
+ },
+ {
+  "id": "ecomig",
+  "cat": "schweissgeraete",
+  "sub": "MIG / MAG",
+  "vt": "MIG/MAG",
+  "name": "EcoMIG Digital / Analog",
+  "img": "2023/03/EcoMig-spolu-1.png",
+  "desc": "Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.",
+  "specs": {
+   "Verfahren": "MIG/MAG",
+   "Strombereich": "bis 300 A",
+   "Netz": "3~ 400 V",
+   "Antrieb": "4-Rollen",
+   "Ausführung": "Kompakt/fahrbar",
+   "Bedienung": "Digital oder Analog"
+  }
+ },
+ {
+  "id": "mms",
+  "cat": "schweissgeraete",
+  "sub": "MIG / MAG",
+  "vt": "MIG/MAG",
+  "name": "MMS 2000 / 3000",
+  "img": "2026/03/MMS3000_X_MMS2000-300x202.png",
+  "desc": "Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt.",
+  "specs": {
+   "Verfahren": "MIG/MAG",
+   "Einsatz": "Montage / Werkstatt",
+   "Bauart": "tragbar",
+   "Serie": "MMS 2000 · MMS 3000"
+  }
+ },
+ {
+  "id": "omega-ax",
+  "cat": "schweissgeraete",
+  "sub": "WIG / TIG",
+  "vt": "WIG AC/DC",
+  "name": "Omega AX",
+  "img": "2026/01/Omega220AX-Pro-300x300.png",
+  "desc": "Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.",
+  "specs": {
+   "Verfahren": "WIG AC/DC",
+   "Strombereich": "bis 220 A",
+   "Netz": "1~ 230 V",
+   "Zündung": "HF",
+   "Bauart": "mobil"
+  }
+ },
+ {
+  "id": "beta-dx",
+  "cat": "schweissgeraete",
+  "sub": "WIG / TIG",
+  "vt": "WIG DC",
+  "name": "Beta DX",
+  "img": "2026/01/Beta220DX_Pro-300x300.png",
+  "desc": "Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.",
+  "specs": {
+   "Verfahren": "WIG DC",
+   "Strombereich": "bis 220 A",
+   "Netz": "1~ 230 V",
+   "Bauart": "mobil"
+  }
+ },
+ {
+  "id": "hypertig-ax",
+  "cat": "schweissgeraete",
+  "sub": "WIG / TIG",
+  "vt": "WIG AC/DC",
+  "name": "HyperTIG AX",
+  "img": "2024/06/IMGP5943-226x300.png",
+  "desc": "Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.",
+  "specs": {
+   "Verfahren": "WIG AC/DC",
+   "Strombereich": "bis 350 A",
+   "Netz": "3~ 400 V",
+   "Kühlung": "wassergekühlt (CWK)"
+  }
+ },
+ {
+  "id": "hypertig-dx",
+  "cat": "schweissgeraete",
+  "sub": "WIG / TIG",
+  "vt": "WIG DC",
+  "name": "HyperTIG DX",
+  "img": "2024/06/IMGP5957-229x300.png",
+  "desc": "Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.",
+  "specs": {
+   "Verfahren": "WIG DC",
+   "Strombereich": "bis 400 A",
+   "Netz": "3~ 400 V",
+   "Kühlung": "wassergekühlt"
+  }
+ },
+ {
+  "id": "beta-digital",
+  "cat": "schweissgeraete",
+  "sub": "WIG / TIG",
+  "vt": "WIG",
+  "name": "Beta digital",
+  "img": "2021/04/Beta-Digital-300-261x300.png",
+  "desc": "Mobile digitale WIG-Schweissmaschine mit Programmspeicher.",
+  "specs": {
+   "Verfahren": "WIG DC",
+   "Strombereich": "bis 300 A",
+   "Netz": "3~ 400 V",
+   "Bedienung": "digital"
+  }
+ },
+ {
+  "id": "hypertig-acdc",
+  "cat": "schweissgeraete",
+  "sub": "WIG / TIG",
+  "vt": "WIG AC/DC",
+  "name": "HyperTIG AC/DC",
+  "img": "2020/03/hypertig-ac-dc-cwk-300x300.png",
+  "desc": "Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.",
+  "specs": {
+   "Verfahren": "WIG AC/DC",
+   "Strombereich": "bis 600 A",
+   "Netz": "3~ 400 V",
+   "Kühlung": "wassergekühlt (CWK)"
+  }
+ },
+ {
+  "id": "i-1600",
+  "cat": "schweissgeraete",
+  "sub": "MMA",
+  "vt": "MMA",
+  "name": "i-1600",
+  "img": "2020/03/i-1600-300x300.png",
+  "desc": "Einfach zu bedienender, robuster Elektrodeninverter.",
+  "specs": {
+   "Verfahren": "MMA (Elektrode)",
+   "Netz": "1~ 230 V",
+   "Bauart": "tragbar",
+   "Bedienung": "einfach"
+  }
+ },
+ {
+  "id": "delta",
+  "cat": "schweissgeraete",
+  "sub": "MMA",
+  "vt": "MMA",
+  "name": "Delta",
+  "img": "2019/10/Delta-300x300.png",
+  "desc": "Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.",
+  "specs": {
+   "Verfahren": "MMA · WIG-Lift",
+   "Netz": "230/400 V",
+   "Bauart": "tragbar"
+  }
+ },
+ {
+  "id": "delta-digital",
+  "cat": "schweissgeraete",
+  "sub": "MMA",
+  "vt": "MMA",
+  "name": "Delta Digital",
+  "img": "2019/10/deltadigital-300x300.png",
+  "desc": "Digitaler Multifunktions-Inverter für den Profi.",
+  "specs": {
+   "Verfahren": "MMA · WIG",
+   "Bedienung": "digital",
+   "Speicher": "JOB-Programme"
+  }
+ },
+ {
+  "id": "delta-digital-ds",
+  "cat": "schweissgeraete",
+  "sub": "MMA",
+  "vt": "MMA",
+  "name": "Delta Digital DS",
+  "img": "2020/03/delta-digital-ds-300x300.png",
+  "desc": "Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.",
+  "specs": {
+   "Verfahren": "MMA · Unterwasser",
+   "Bedienung": "digital",
+   "Einsatz": "Diving / Offshore"
+  }
+ },
+ {
+  "id": "plasma-tig",
+  "cat": "schweissgeraete",
+  "sub": "Plasma TIG",
+  "vt": "Plasma TIG",
+  "name": "PlasmaTIG",
+  "img": "2019/10/plasmatig-300x300.png",
+  "desc": "Mikroplasma- und Plasmastromquelle für feinste Schweissungen.",
+  "specs": {
+   "Verfahren": "Plasma / Mikroplasma",
+   "Strombereich": "20 – 400 A",
+   "Einsatz": "Feinblech bis Industrie"
+  }
+ },
+ {
+  "id": "theta-40",
+  "cat": "plasmaschneiden",
+  "sub": "Theta",
+  "vt": "Plasma Cut",
+  "name": "Theta 40",
+  "img": "2020/03/theta-40-300x300.png",
+  "desc": "Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Schneidleistung": "bis 15 mm",
+   "Netz": "1~ 230 V",
+   "Bauart": "tragbar"
+  }
+ },
+ {
+  "id": "theta-60",
+  "cat": "plasmaschneiden",
+  "sub": "Theta",
+  "vt": "Plasma Cut",
+  "name": "Theta 60 HSC",
+  "img": "2020/03/theta-60-hsc-300x300.png",
+  "desc": "Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Schneidleistung": "bis 40 mm",
+   "Technologie": "HSC",
+   "Netz": "3~ 400 V"
+  }
+ },
+ {
+  "id": "theta-120",
+  "cat": "plasmaschneiden",
+  "sub": "Theta",
+  "vt": "Plasma Cut",
+  "name": "Theta 120 HSC",
+  "img": "2020/03/theta-120-hsc-300x300.png",
+  "desc": "Industrieller Plasmaschneidinverter mit HSC-Technologie.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Schneidleistung": "bis 55 mm",
+   "Technologie": "HSC",
+   "Netz": "3~ 400 V"
+  }
+ },
+ {
+  "id": "theta-180",
+  "cat": "plasmaschneiden",
+  "sub": "Theta",
+  "vt": "Plasma Cut",
+  "name": "Theta 180 HSC",
+  "img": "2022/06/IMGP5680-258x300.png",
+  "desc": "Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Schneidleistung": "bis 80 mm",
+   "Technologie": "HSC",
+   "Netz": "3~ 400 V"
+  }
+ },
+ {
+  "id": "minicleaner",
+  "cat": "reinigung",
+  "sub": "Cleaner",
+  "vt": "Cleaner",
+  "name": "MiniReiniger",
+  "img": "2020/03/minicleaner-300x300.png",
+  "desc": "Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.",
+  "specs": {
+   "Verfahren": "Elektrolyt-Reinigung",
+   "Einsatz": "mobil",
+   "Werkstoff": "Chromstahl"
+  }
+ },
+ {
+  "id": "hypercleaner-st",
+  "cat": "reinigung",
+  "sub": "Cleaner",
+  "vt": "Cleaner",
+  "name": "HyperCleaner ST",
+  "img": "2025/07/HyperCleanerST_SET_NEW-300x191.png",
+  "desc": "Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.",
+  "specs": {
+   "Leistung": "1200 W",
+   "Verfahren": "Elektrolyt-Reinigung",
+   "Lieferung": "als Set"
+  }
+ },
+ {
+  "id": "hypercleaner-speed",
+  "cat": "reinigung",
+  "sub": "Cleaner",
+  "vt": "Cleaner",
+  "name": "HyperCleaner ST Speed",
+  "img": "2020/11/HyperCleaner-ST-Plus_SET-300x219.png",
+  "desc": "Leistungsstarker 2500-W-Inverter für schnelle Reinigung.",
+  "specs": {
+   "Leistung": "2500 W",
+   "Verfahren": "Elektrolyt-Reinigung",
+   "Lieferung": "als Set"
+  }
+ },
+ {
+  "id": "hypercleaner-plus",
+  "cat": "reinigung",
+  "sub": "Cleaner",
+  "vt": "Cleaner",
+  "name": "HyperCleaner ST Plus",
+  "img": "2020/11/HyperCleaner-ST-Plus_SET-300x219.png",
+  "desc": "Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.",
+  "specs": {
+   "Leistung": "4000 W",
+   "Verfahren": "Elektrolyt-Reinigung",
+   "Lieferung": "als Set"
+  }
+ },
+ {
+  "id": "hypercleaner-ct200",
+  "cat": "reinigung",
+  "sub": "Cleaner",
+  "vt": "WIG + Cleaner",
+  "name": "HyperCleaner CT 200",
+  "img": "2021/04/HyperCleaner-CT200-SET-300x189.png",
+  "desc": "Kombiniertes WIG-Schweiss- und Reinigungsgerät.",
+  "specs": {
+   "Verfahren": "WIG + Reinigung",
+   "Kombi": "2-in-1",
+   "Lieferung": "als Set"
+  }
+ },
+ {
+  "id": "stt30",
+  "cat": "zubehoer",
+  "sub": "Fahrwagen",
+  "vt": "Fahrwagen",
+  "name": "STT 30",
+  "img": "2020/03/STT30-300x300.png",
+  "desc": "Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.",
+  "specs": {
+   "Für": "i-TIG, Beta, Omega, MMS",
+   "Maße (LxBxH)": "625×600×1050 mm",
+   "Gewicht": "22 kg",
+   "Gasflasche": "ja"
+  }
+ },
+ {
+  "id": "stt35",
+  "cat": "zubehoer",
+  "sub": "Fahrwagen",
+  "vt": "Fahrwagen",
+  "name": "STT 35",
+  "img": "2021/05/STT35-200x300.png",
+  "desc": "Fahrwagen ohne Gasflaschenhalter für MMA und Plasma.",
+  "specs": {
+   "Für": "Delta, Delta Digital, Theta",
+   "Maße (LxBxH)": "700×600×1050 mm",
+   "Gewicht": "21 kg",
+   "Gasflasche": "nein"
+  }
+ },
+ {
+  "id": "mpf02",
+  "cat": "zubehoer",
+  "sub": "Fahrwagen",
+  "vt": "Fahrwagen",
+  "name": "MPF 02",
+  "img": "2023/03/IMGP5689-e1678778035688-219x300.png",
+  "desc": "Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.",
+  "specs": {
+   "Für": "Delta, i-TIG, Beta, Omega, MMS, Theta",
+   "Maße (LxBxH)": "840×450×710 mm",
+   "Gewicht": "21 kg",
+   "Gasflasche": "ja"
+  }
+ },
+ {
+  "id": "mhct01",
+  "cat": "zubehoer",
+  "sub": "Fahrwagen",
+  "vt": "Fahrwagen",
+  "name": "MHCT 01",
+  "img": "2020/09/Fahrwagen-fur-Cleaner-206x300.png",
+  "desc": "Fahrwagen speziell für Reinigungsgeräte.",
+  "specs": {
+   "Für": "HyperCleaner",
+   "Maße (LxBxH)": "380×415×700 mm",
+   "Gewicht": "16 kg"
+  }
+ },
+ {
+  "id": "wk200",
+  "cat": "zubehoer",
+  "sub": "Wasserkühlung",
+  "vt": "Kühlung",
+  "name": "WK 200",
+  "img": "2020/03/wk200-300x300.png",
+  "desc": "Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung.",
+  "specs": {
+   "Typ": "Universalkühler",
+   "Steckdose": "230 V Schuko",
+   "Schutz": "Wassermangel-Abschaltung"
+  }
+ },
+ {
+  "id": "wk300",
+  "cat": "zubehoer",
+  "sub": "Wasserkühlung",
+  "vt": "Kühlung",
+  "name": "WK 300",
+  "img": "2020/03/wk300-300x300.png",
+  "desc": "Wasserkühlgerät für die MMS-3000-Serie.",
+  "specs": {
+   "Für": "MMS 3000 Serie",
+   "Typ": "Wasserkühlgerät"
+  }
+ },
+ {
+  "id": "wk350",
+  "cat": "zubehoer",
+  "sub": "Wasserkühlung",
+  "vt": "Kühlung",
+  "name": "WK 350",
+  "img": "2020/03/wk350-300x300.png",
+  "desc": "Wasserkühlgerät für Beta digital und Omega 400-V-Linie.",
+  "specs": {
+   "Für": "Beta digital · Omega 400 V",
+   "Typ": "Wasserkühlgerät"
+  }
+ },
+ {
+  "id": "dvs410",
+  "cat": "zubehoer",
+  "sub": "Drahtvorschubkoffer",
+  "vt": "Vorschub",
+  "name": "DVS 410",
+  "img": "2022/03/DVS410-320x220.png",
+  "desc": "Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie.",
+  "specs": {
+   "Für": "HyperMIG X",
+   "Bauart": "leicht / tragbar"
+  }
+ },
+ {
+  "id": "dvl420",
+  "cat": "zubehoer",
+  "sub": "Drahtvorschubkoffer",
+  "vt": "Vorschub",
+  "name": "DVL 420",
+  "img": "2024/09/DVL420-300x238.png",
+  "desc": "Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie.",
+  "specs": {
+   "Für": "HyperMIG X",
+   "Gehäuse": "Vollmetall",
+   "Bauart": "horizontal"
+  }
+ },
+ {
+  "id": "frc5",
+  "cat": "zubehoer",
+  "sub": "Fernbedienungen",
+  "vt": "Fernregler",
+  "name": "FRC 5",
+  "img": "2020/03/frc5-300x300.png",
+  "desc": "Fussfernregler für alle MAHE WIG-Geräte.",
+  "specs": {
+   "Typ": "Fussfernregler",
+   "Für": "MAHE WIG"
+  }
+ },
+ {
+  "id": "rc5",
+  "cat": "zubehoer",
+  "sub": "Fernbedienungen",
+  "vt": "Fernregler",
+  "name": "RC 5",
+  "img": "2020/03/rc5-300x300.png",
+  "desc": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+  "specs": {
+   "Typ": "Handfernregler",
+   "Für": "MAHE WIG · MMA"
+  }
+ },
+ {
+  "id": "rc15",
+  "cat": "zubehoer",
+  "sub": "Fernbedienungen",
+  "vt": "Fernregler",
+  "name": "RC 15",
+  "img": "2020/03/rc15-300x300.png",
+  "desc": "Handfernregler mit Up/Down- und Start/Stopp-Taste.",
+  "specs": {
+   "Typ": "Handfernregler",
+   "Funktion": "Up/Down · Start/Stopp"
+  }
+ },
+ {
+  "id": "rc100",
+  "cat": "zubehoer",
+  "sub": "Fernbedienungen",
+  "vt": "Fernregler",
+  "name": "RC 100",
+  "img": "2020/03/rc100-300x300.png",
+  "desc": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+  "specs": {
+   "Typ": "Handfernregler",
+   "Für": "MAHE WIG · MMA"
+  }
+ },
+ {
+  "id": "rc100ds",
+  "cat": "zubehoer",
+  "sub": "Fernbedienungen",
+  "vt": "Fernregler",
+  "name": "RC 100 DS",
+  "img": "2020/03/rc100ds-300x300.png",
+  "desc": "Handfernregler speziell für Delta-Digital-DS-Maschinen.",
+  "specs": {
+   "Typ": "Handfernregler",
+   "Für": "Delta Digital DS"
+  }
+ },
+ {
+  "id": "theta-60-aut",
+  "cat": "plasmaschneiden",
+  "sub": "Theta Automation",
+  "vt": "Plasma AUT",
+  "name": "Theta 60 AUT",
+  "img": "2020/03/theta-120-hsc-300x300.png",
+  "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden · Automation",
+   "Schneidleistung": "bis 40 mm",
+   "Technologie": "HSC",
+   "Schnittstelle": "CNC / Automation"
+  }
+ },
+ {
+  "id": "theta-120-aut",
+  "cat": "plasmaschneiden",
+  "sub": "Theta Automation",
+  "vt": "Plasma AUT",
+  "name": "Theta 120 AUT",
+  "img": "2020/03/theta-120-hsc-300x300.png",
+  "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden · Automation",
+   "Schneidleistung": "bis 55 mm",
+   "Technologie": "HSC",
+   "Schnittstelle": "CNC / Automation"
+  }
+ },
+ {
+  "id": "hcs1",
+  "cat": "reinigung",
+  "sub": "Signiergeräte",
+  "vt": "Signieren",
+  "name": "HCS 1",
+  "img": "2020/12/HCS-1-SET-300x248.png",
+  "desc": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
+  "specs": {
+   "Verfahren": "Elektrolyt-Signieren",
+   "Einsatz": "mobil",
+   "Lieferung": "Set mit Koffer"
+  }
+ },
+ {
+  "id": "mlf100",
+  "cat": "reinigung",
+  "sub": "Dosiersystem",
+  "vt": "Dosierung",
+  "name": "MLF 100",
+  "img": "2026/01/MLF100_A-300x136.png",
+  "desc": "Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+  "specs": {
+   "Funktion": "automatische Dosierung",
+   "Medium": "Reinigungsflüssigkeit",
+   "Einsatz": "HyperCleaner-Serie"
+  }
+ },
+ {
+  "id": "mcu1",
+  "cat": "zubehoer",
+  "sub": "Werkstattausrüstung",
+  "vt": "Kalibrierung",
+  "name": "MCU 1",
+  "img": "2019/10/mcu11-300x300.png",
+  "desc": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.",
+  "specs": {
+   "Funktion": "Kalibrieren / Validieren",
+   "Anzeige": "Volt & Ampere (gross)",
+   "Gewicht": "16,5 kg"
+  }
+ },
+ {
+  "id": "usb2in1",
+  "cat": "zubehoer",
+  "sub": "Werkstattausrüstung",
+  "vt": "Programmierung",
+  "name": "USB 2in1 Programmierer",
+  "img": "2019/10/usb2in1programmer-300x300.png",
+  "desc": "Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software.",
+  "specs": {
+   "Funktion": "Controller-Programmierung",
+   "Schnittstelle": "USB / MAHE",
+   "Software": "inklusive"
+  }
+ },
+ {
+  "id": "r1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Reinigung",
+  "name": "Reinigungselektrolyt Rapid R1",
+  "img": "2022/05/1850002-210x300.png",
+  "desc": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
+  "specs": {
+   "Typ": "Reinigung (Rapid)",
+   "Werkstoff": "Chromstahl",
+   "Gebinde": "0,5 / 1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "R1"
+  }
+ },
+ {
+  "id": "rp1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Reinigung",
+  "name": "Reinigungselektrolyt RP1 Pastös",
+  "img": "2022/05/1851002-210x300.png",
+  "desc": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
+  "specs": {
+   "Typ": "Reinigung (pastös)",
+   "Werkstoff": "Chromstahl",
+   "Gebinde": "0,5 / 1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "RP1"
+  }
+ },
+ {
+  "id": "p1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Polieren",
+  "name": "Polierelektrolyt P1",
+  "img": "2022/05/1852002-210x300.png",
+  "desc": "Elektrolyt zum Elektropolieren und Beizen von Edelstahl.",
+  "specs": {
+   "Typ": "Polieren / Beizen",
+   "Werkstoff": "Edelstahl",
+   "Gebinde": "0,5 / 1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "P1"
+  }
+ },
+ {
+  "id": "n1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Neutralisieren",
+  "name": "Neutralit N1",
+  "img": "2022/05/1855002-210x300.png",
+  "desc": "Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.",
+  "specs": {
+   "Typ": "Neutralisierer",
+   "Anwendung": "nach Reinigung",
+   "Gebinde": "1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "N1"
+  }
+ },
+ {
+  "id": "m1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Signieren",
+  "name": "Signierelektrolyt M1",
+  "img": "2022/05/1853001-127x300.png",
+  "desc": "Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.",
+  "specs": {
+   "Typ": "Signieren",
+   "Anwendung": "Markieren",
+   "Gebinde": "0,1 / 0,5 / 1,0 L",
+   "Sicherheitsdatenblatt": "M1"
+  }
+ },
+ {
+  "id": "elektrodenkabel",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Elektrodenkabel 10 mm²",
+  "img": "2021/06/1801001-300x214.png",
+  "desc": "Elektrodenkabel für Cleaner- und MMA-Geräte.",
+  "specs": {
+   "Querschnitt": "10 mm²",
+   "Längen": "3 / 6 / 10 m",
+   "Farbe": "blau"
+  }
+ },
+ {
+  "id": "massekabel",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 10 mm²",
+  "img": "2021/06/1802001-300x214.png",
+  "desc": "Massekabel mit Klemme für Cleaner- und MMA-Geräte.",
+  "specs": {
+   "Querschnitt": "10 mm²",
+   "Längen": "3 / 6 / 10 m",
+   "Farbe": "schwarz"
+  }
+ },
+ {
+  "id": "mf405w",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MF405W",
+  "img": "2021/05/MIG_Brenner-292x300.png",
+  "desc": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.",
+  "specs": {
+   "Typ": "MIG/MAG wassergekühlt",
+   "Länge": "4 m",
+   "Option": "wahlweise mit Up/Down"
+  }
+ },
+ {
+  "id": "mf240w",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MF240W",
+  "img": "2021/05/MIG_Brenner-292x300.png",
+  "desc": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.",
+  "specs": {
+   "Typ": "MIG/MAG wassergekühlt",
+   "Länge": "4 m",
+   "Option": "wahlweise mit Up/Down"
+  }
+ }
+]

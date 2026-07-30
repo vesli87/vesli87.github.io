@@ -1,0 +1,93 @@
+[
+ {
+  "ic": "mig",
+  "n": {
+   "de": "MIS – Spritzerfrei",
+   "fr": "MIS – sans projections",
+   "it": "MIS – senza spruzzi"
+  },
+  "d": {
+   "de": "Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.",
+   "fr": "Arc quasi sans projections, excellente accroche des flancs et de la racine – peu de reprise.",
+   "it": "Arco quasi senza spruzzi, ottima presa su fianchi e radice – poca ripresa."
+  }
+ },
+ {
+  "ic": "doppelpuls",
+  "n": {
+   "de": "Doppelpuls",
+   "fr": "Double pulsation",
+   "it": "Doppio impulso"
+  },
+  "d": {
+   "de": "Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung – ideal für Aluminium.",
+   "fr": "Arc pulsé automatisé, aspect TIG et cadence réglable – idéal pour l’aluminium.",
+   "it": "Arco pulsato automatizzato, estetica TIG e cadenza regolabile – ideale per l’alluminio."
+  }
+ },
+ {
+  "ic": "puls",
+  "n": {
+   "de": "HyperPuls",
+   "fr": "HyperPuls",
+   "it": "HyperPuls"
+  },
+  "d": {
+   "de": "Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.",
+   "fr": "Arc pulsé dynamique pour plus de productivité : plus rapide, moins de déformation, idéal multipasse.",
+   "it": "Arco pulsato dinamico per più produttività: più veloce, meno deformazione, ideale multipasso."
+  }
+ },
+ {
+  "ic": "synergy",
+  "n": {
+   "de": "HyperForce",
+   "fr": "HyperForce",
+   "it": "HyperForce"
+  },
+  "d": {
+   "de": "Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.",
+   "fr": "Arc puissant et pénétrant, forte pénétration et contrôle parfait du bain.",
+   "it": "Arco potente e penetrante, forte penetrazione e controllo perfetto del bagno."
+  }
+ },
+ {
+  "ic": "h2o",
+  "n": {
+   "de": "HyperCold",
+   "fr": "HyperCold",
+   "it": "HyperCold"
+  },
+  "d": {
+   "de": "Geringste Wärmeeinbringung – ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.",
+   "fr": "Apport de chaleur minimal – idéal pour ponter les jeux et souder la tôle fine sans déformation.",
+   "it": "Minimo apporto termico – ideale per ponti sui giochi e lamiera fine senza deformazioni."
+  }
+ },
+ {
+  "ic": "lift",
+  "n": {
+   "de": "HyperRoot",
+   "fr": "HyperRoot",
+   "it": "HyperRoot"
+  },
+  "d": {
+   "de": "Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite – auch bei grösseren Spalten.",
+   "fr": "Soudage de racine sûr et contrôlé, envers propre – même sur jeux importants.",
+   "it": "Saldatura di radice sicura e controllata, rovescio pulito – anche con giochi ampi."
+  }
+ },
+ {
+  "ic": "auto",
+  "n": {
+   "de": "HyperUP",
+   "fr": "HyperUP",
+   "it": "HyperUP"
+  },
+  "d": {
+   "de": "Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.",
+   "fr": "Soudage en montée (vertical up) optimisé, contrôle stable du bain.",
+   "it": "Saldatura in verticale ascendente ottimizzata, controllo stabile del bagno."
+  }
+ }
+]

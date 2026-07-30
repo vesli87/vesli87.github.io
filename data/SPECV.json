@@ -1,0 +1,218 @@
+{
+ "4-Rollen": {
+  "fr": "4 galets",
+  "it": "4 rulli"
+ },
+ "Chromstahl": {
+  "fr": "acier inox",
+  "it": "acciaio inox"
+ },
+ "Controller-Programmierung": {
+  "fr": "programmation de contrôleur",
+  "it": "programmazione controller"
+ },
+ "Digital oder Analog": {
+  "fr": "numérique ou analogique",
+  "it": "digitale o analogico"
+ },
+ "Elektrolyt-Reinigung": {
+  "fr": "nettoyage électrolytique",
+  "it": "pulizia elettrolitica"
+ },
+ "Elektrolyt-Signieren": {
+  "fr": "marquage électrolytique",
+  "it": "marcatura elettrolitica"
+ },
+ "Feinblech bis Industrie": {
+  "fr": "tôle fine à industrie",
+  "it": "lamiera fine a industria"
+ },
+ "Fussfernregler": {
+  "fr": "commande à pédale",
+  "it": "comando a pedale"
+ },
+ "Handfernregler": {
+  "fr": "télécommande manuelle",
+  "it": "telecomando manuale"
+ },
+ "HyperCleaner-Serie": {
+  "fr": "série HyperCleaner",
+  "it": "serie HyperCleaner"
+ },
+ "JOB-Programme": {
+  "fr": "programmes JOB",
+  "it": "programmi JOB"
+ },
+ "Kalibrieren / Validieren": {
+  "fr": "calibrage / validation",
+  "it": "calibrazione / validazione"
+ },
+ "Kompakt/fahrbar": {
+  "fr": "compact / mobile",
+  "it": "compatto / mobile"
+ },
+ "MIG/MAG · Puls · MMA · WIG": {
+  "fr": "MIG/MAG · pulsé · MMA · TIG",
+  "it": "MIG/MAG · pulsato · MMA · TIG"
+ },
+ "MMA (Elektrode)": {
+  "fr": "MMA (électrode)",
+  "it": "MMA (elettrodo)"
+ },
+ "MMA · Unterwasser": {
+  "fr": "MMA · sous-marin",
+  "it": "MMA · subacqueo"
+ },
+ "MMA · WIG": {
+  "fr": "MMA · TIG",
+  "it": "MMA · TIG"
+ },
+ "MMA · WIG-Lift": {
+  "fr": "MMA · TIG-Lift",
+  "it": "MMA · TIG-Lift"
+ },
+ "Montage / Werkstatt": {
+  "fr": "montage / atelier",
+  "it": "montaggio / officina"
+ },
+ "Plasma / Mikroplasma": {
+  "fr": "plasma / microplasma",
+  "it": "plasma / microplasma"
+ },
+ "Plasmaschneiden": {
+  "fr": "découpe plasma",
+  "it": "taglio al plasma"
+ },
+ "Plasmaschneiden · Automation": {
+  "fr": "découpe plasma · automation",
+  "it": "taglio plasma · automazione"
+ },
+ "Reinigungsflüssigkeit": {
+  "fr": "liquide de nettoyage",
+  "it": "liquido di pulizia"
+ },
+ "Set mit Koffer": {
+  "fr": "kit avec mallette",
+  "it": "set con valigetta"
+ },
+ "Universalkühler": {
+  "fr": "refroidisseur universel",
+  "it": "refrigeratore universale"
+ },
+ "Vollmetall": {
+  "fr": "tout métal",
+  "it": "tutto metallo"
+ },
+ "Volt & Ampere (gross)": {
+  "fr": "Volt & Ampère (grand)",
+  "it": "Volt & Ampere (grande)"
+ },
+ "WIG + Reinigung": {
+  "fr": "TIG + nettoyage",
+  "it": "TIG + pulizia"
+ },
+ "WIG AC/DC": {
+  "fr": "TIG AC/DC",
+  "it": "TIG AC/DC"
+ },
+ "WIG DC": {
+  "fr": "TIG DC",
+  "it": "TIG DC"
+ },
+ "Wasserkühlgerät": {
+  "fr": "refroidisseur à eau",
+  "it": "refrigeratore ad acqua"
+ },
+ "Wassermangel-Abschaltung": {
+  "fr": "coupure manque d’eau",
+  "it": "spegnimento mancanza acqua"
+ },
+ "als Set": {
+  "fr": "en kit",
+  "it": "in set"
+ },
+ "automatische Dosierung": {
+  "fr": "dosage automatique",
+  "it": "dosaggio automatico"
+ },
+ "digital": {
+  "fr": "numérique",
+  "it": "digitale"
+ },
+ "einfach": {
+  "fr": "simple",
+  "it": "semplice"
+ },
+ "horizontal": {
+  "fr": "horizontal",
+  "it": "orizzontale"
+ },
+ "inklusive": {
+  "fr": "inclus",
+  "it": "incluso"
+ },
+ "ja": {
+  "fr": "oui",
+  "it": "sì"
+ },
+ "nein": {
+  "fr": "non",
+  "it": "no"
+ },
+ "leicht / tragbar": {
+  "fr": "léger / portable",
+  "it": "leggero / portatile"
+ },
+ "luft-/wassergekühlt": {
+  "fr": "refroidi air/eau",
+  "it": "raffreddato aria/acqua"
+ },
+ "mobil": {
+  "fr": "mobile",
+  "it": "mobile"
+ },
+ "tragbar": {
+  "fr": "portable",
+  "it": "portatile"
+ },
+ "wassergekühlt": {
+  "fr": "refroidi par eau",
+  "it": "raffreddato ad acqua"
+ },
+ "wassergekühlt (CWK)": {
+  "fr": "refroidi par eau (CWK)",
+  "it": "raffreddato ad acqua (CWK)"
+ },
+ "CNC / Automation": {
+  "fr": "CNC / automation",
+  "it": "CNC / automazione"
+ },
+ "MAHE WIG": {
+  "fr": "MAHE TIG",
+  "it": "MAHE TIG"
+ },
+ "MAHE WIG · MMA": {
+  "fr": "MAHE TIG · MMA",
+  "it": "MAHE TIG · MMA"
+ },
+ "MMS 3000 Serie": {
+  "fr": "série MMS 3000",
+  "it": "serie MMS 3000"
+ },
+ "Montage/Werkstatt": {
+  "fr": "montage / atelier",
+  "it": "montaggio / officina"
+ },
+ "Edelstahl": {
+  "fr": "acier inox",
+  "it": "acciaio inox"
+ },
+ "blau": {
+  "fr": "bleu",
+  "it": "blu"
+ },
+ "schwarz": {
+  "fr": "noir",
+  "it": "nero"
+ }
+}

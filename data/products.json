@@ -1,0 +1,4035 @@
+{
+ "@context": "https://schema.org",
+ "generated": "2026-07-30",
+ "seller": {
+  "name": "VES-TECH Swiss",
+  "url": "https://www.ves-tech.ch/",
+  "email": "info@ves-tech.ch",
+  "telephone": "+41 76 710 91 39",
+  "address": "Bildfelsstrasse 24, 9552 Bronschhofen, Schweiz"
+ },
+ "license": "Produktdaten und Bilder: MAHE GmbH. Wiedergabe durch VES-TECH Swiss als Schweizer Partner.",
+ "count": 52,
+ "products": [
+  {
+   "id": "hypermig-x",
+   "sku": "HYPERMIG-X",
+   "name": "MAHE HyperMIG X",
+   "brand": "MAHE",
+   "type": "MIG/MAG",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MIG / MAG",
+    "fr": "MIG / MAG",
+    "it": "MIG / MAG"
+   },
+   "description": {
+    "de": "Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen.",
+    "fr": "Série pulsée MIG/MAG complète avec HyperForce et soudage sans projections MIS.",
+    "it": "Serie pulsata MIG/MAG completa con HyperForce e saldatura senza spruzzi MIS."
+   },
+   "highlights": {
+    "de": [
+     "MIG/MAG-Schweissen & MIG-Löten",
+     "HyperForce, HyperRoot, HyperCold",
+     "HyperPuls & HyperSpeedPuls",
+     "Doppelpuls mit WIG-Naht-Optik",
+     "MMA-Elektrode & Fugenhobeln",
+     "WIG Lift Arc",
+     "Digital Synergy geregelt",
+     "Spritzerfreier Lichtbogen",
+     "4-Rollen-Antrieb",
+     "Fernbedienung anschliessbar",
+     "JOB-Modus mit 99 Programmen",
+     "Upgrade-fähig · 100% recycelbar"
+    ],
+    "fr": [
+     "Soudage MIG/MAG & brasage MIG",
+     "HyperForce, HyperRoot, HyperCold",
+     "HyperPuls & HyperSpeedPuls",
+     "Double pulsation, aspect TIG",
+     "Électrode MMA & gougeage",
+     "TIG Lift Arc",
+     "Régulation Digital Synergy",
+     "Arc sans projections",
+     "Entraînement 4 galets",
+     "Télécommande raccordable",
+     "Mode JOB, 99 programmes",
+     "Évolutif · 100% recyclable"
+    ],
+    "it": [
+     "Saldatura MIG/MAG & brasatura MIG",
+     "HyperForce, HyperRoot, HyperCold",
+     "HyperPuls & HyperSpeedPuls",
+     "Doppio impulso, estetica TIG",
+     "Elettrodo MMA & scriccatura",
+     "TIG Lift Arc",
+     "Regolazione Digital Synergy",
+     "Arco senza spruzzi",
+     "Trazione a 4 rulli",
+     "Telecomando collegabile",
+     "Modo JOB, 99 programmi",
+     "Aggiornabile · 100% riciclabile"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
+     "Strombereich": "10 – 420 A",
+     "Netz": "3~ 400 V · 50/60 Hz",
+     "Netzabsicherung": "25 A",
+     "Leerlaufspannung": "76 V",
+     "Einschaltdauer": "45 % @ 400 A · 60 % @ 360 A",
+     "Kühlung": "luft-/wassergekühlt",
+     "Antrieb": "4-Rollen",
+     "Betriebsart": "Synergic / JOB (99)",
+     "Schutzklasse": "IP23",
+     "Gewicht": "bis 103 kg (WWK)"
+    },
+    "fr": {
+     "Procédé": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
+     "Plage de courant": "10 – 420 A",
+     "Réseau": "3~ 400 V · 50/60 Hz",
+     "Netzabsicherung": "25 A",
+     "Leerlaufspannung": "76 V",
+     "Einschaltdauer": "45 % @ 400 A · 60 % @ 360 A",
+     "Refroidissement": "refroidi air/eau",
+     "Entraînement": "4 galets",
+     "Mode": "Synergic / JOB (99)",
+     "Schutzklasse": "IP23",
+     "Poids": "jusqu’à 103 kg (WWK)"
+    },
+    "it": {
+     "Processo": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
+     "Gamma di corrente": "10 – 420 A",
+     "Rete": "3~ 400 V · 50/60 Hz",
+     "Netzabsicherung": "25 A",
+     "Leerlaufspannung": "76 V",
+     "Einschaltdauer": "45 % @ 400 A · 60 % @ 360 A",
+     "Raffreddamento": "raffreddato aria/acqua",
+     "Trazione": "4 rulli",
+     "Modalità": "Synergic / JOB (99)",
+     "Schutzklasse": "IP23",
+     "Peso": "fino a 103 kg (WWK)"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/bild-der-hypers-bd9aca-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/hypermig-x/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/hypermig-x/"
+   }
+  },
+  {
+   "id": "ecomig",
+   "sku": "ECOMIG",
+   "name": "MAHE EcoMIG Digital / Analog",
+   "brand": "MAHE",
+   "type": "MIG/MAG",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MIG / MAG",
+    "fr": "MIG / MAG",
+    "it": "MIG / MAG"
+   },
+   "description": {
+    "de": "Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.",
+    "fr": "Poste MIG/MAG à réglage continu, ultra-compact et simple d’utilisation.",
+    "it": "Saldatrice MIG/MAG a regolazione continua, ultracompatta e semplice."
+   },
+   "highlights": {
+    "de": [
+     "Stufenlose MIG/MAG-Regelung",
+     "Synergie-Kennlinien",
+     "MMA-Elektrode möglich",
+     "4-Rollen-Antrieb",
+     "Kompakt & fahrbar",
+     "Robust für Werkstatt & Montage"
+    ],
+    "fr": [
+     "Réglage continu MIG/MAG",
+     "Courbes synergiques",
+     "Électrode MMA possible",
+     "Entraînement 4 galets",
+     "Compact & mobile",
+     "Robuste atelier & montage"
+    ],
+    "it": [
+     "Regolazione continua MIG/MAG",
+     "Curve sinergiche",
+     "Elettrodo MMA possibile",
+     "Trazione a 4 rulli",
+     "Compatto & mobile",
+     "Robusto per officina & montaggio"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MIG/MAG",
+     "Strombereich": "bis 300 A",
+     "Netz": "3~ 400 V",
+     "Antrieb": "4-Rollen",
+     "Ausführung": "Kompakt/fahrbar",
+     "Bedienung": "Digital oder Analog"
+    },
+    "fr": {
+     "Procédé": "MIG/MAG",
+     "Plage de courant": "jusqu’à 300 A",
+     "Réseau": "3~ 400 V",
+     "Entraînement": "4 galets",
+     "Version": "compact / mobile",
+     "Commande": "numérique ou analogique"
+    },
+    "it": {
+     "Processo": "MIG/MAG",
+     "Gamma di corrente": "fino a 300 A",
+     "Rete": "3~ 400 V",
+     "Trazione": "4 rulli",
+     "Versione": "compatto / mobile",
+     "Comando": "digitale o analogico"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/ecomig-spolu-1-d949e6-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/ecomig/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/ecomig/"
+   }
+  },
+  {
+   "id": "mms",
+   "sku": "MMS",
+   "name": "MAHE MMS 2000 / 3000",
+   "brand": "MAHE",
+   "type": "MIG/MAG",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MIG / MAG",
+    "fr": "MIG / MAG",
+    "it": "MIG / MAG"
+   },
+   "description": {
+    "de": "Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt.",
+    "fr": "Poste MIG/MAG mobile et léger pour le montage et l’atelier.",
+    "it": "Saldatrice MIG/MAG mobile e leggera per montaggio e officina."
+   },
+   "highlights": {
+    "de": [
+     "Stufenlose MIG/MAG-Regelung",
+     "Synergie-Kennlinien",
+     "MMA-Elektrode möglich",
+     "4-Rollen-Antrieb",
+     "Kompakt & fahrbar",
+     "Robust für Werkstatt & Montage"
+    ],
+    "fr": [
+     "Réglage continu MIG/MAG",
+     "Courbes synergiques",
+     "Électrode MMA possible",
+     "Entraînement 4 galets",
+     "Compact & mobile",
+     "Robuste atelier & montage"
+    ],
+    "it": [
+     "Regolazione continua MIG/MAG",
+     "Curve sinergiche",
+     "Elettrodo MMA possibile",
+     "Trazione a 4 rulli",
+     "Compatto & mobile",
+     "Robusto per officina & montaggio"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MIG/MAG",
+     "Einsatz": "Montage / Werkstatt",
+     "Bauart": "tragbar",
+     "Serie": "MMS 2000 · MMS 3000"
+    },
+    "fr": {
+     "Procédé": "MIG/MAG",
+     "Application": "montage / atelier",
+     "Type": "portable",
+     "Série": "MMS 2000 · MMS 3000"
+    },
+    "it": {
+     "Processo": "MIG/MAG",
+     "Impiego": "montaggio / officina",
+     "Tipo": "portatile",
+     "Serie": "MMS 2000 · MMS 3000"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mms3000-x-mms2000-71d9a8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/mms/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/mms/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/mms/"
+   }
+  },
+  {
+   "id": "omega-ax",
+   "sku": "OMEGA-AX",
+   "name": "MAHE Omega AX",
+   "brand": "MAHE",
+   "type": "WIG AC/DC",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "WIG / TIG",
+    "fr": "TIG",
+    "it": "TIG"
+   },
+   "description": {
+    "de": "Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.",
+    "fr": "Poste TIG AC/DC mobile pour l’aluminium et l’acier.",
+    "it": "Saldatrice TIG AC/DC mobile per alluminio e acciaio."
+   },
+   "highlights": {
+    "de": [
+     "Hochfrequenz-Impulsschweissen",
+     "HyperSpot Punktschweissen",
+     "ActiveSpot Heftfunktion",
+     "Hyper ARC Active Regelung",
+     "Mix-TIG-Schweissen",
+     "AC/DC – Aluminium & Stahl",
+     "MAHE-MIX-PULSE",
+     "Strom-Modulation einstellbar",
+     "Digitale Anzeige",
+     "Leistungsstarke Wasserkühlung",
+     "Fernbedienung",
+     "JOB-Modus"
+    ],
+    "fr": [
+     "Soudage pulsé haute fréquence",
+     "Pointage HyperSpot",
+     "Fonction ActiveSpot",
+     "Régulation Hyper ARC Active",
+     "Soudage Mix-TIG",
+     "AC/DC – aluminium & acier",
+     "MAHE-MIX-PULSE",
+     "Modulation de courant réglable",
+     "Affichage numérique",
+     "Refroidissement eau puissant",
+     "Télécommande",
+     "Mode JOB"
+    ],
+    "it": [
+     "Saldatura pulsata ad alta frequenza",
+     "Puntatura HyperSpot",
+     "Funzione ActiveSpot",
+     "Regolazione Hyper ARC Active",
+     "Saldatura Mix-TIG",
+     "AC/DC – alluminio & acciaio",
+     "MAHE-MIX-PULSE",
+     "Modulazione di corrente regolabile",
+     "Display digitale",
+     "Raffreddamento ad acqua potente",
+     "Telecomando",
+     "Modo JOB"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG AC/DC",
+     "Strombereich": "bis 220 A",
+     "Netz": "1~ 230 V",
+     "Zündung": "HF",
+     "Bauart": "mobil"
+    },
+    "fr": {
+     "Procédé": "TIG AC/DC",
+     "Plage de courant": "jusqu’à 220 A",
+     "Réseau": "1~ 230 V",
+     "Amorçage": "HF",
+     "Type": "mobile"
+    },
+    "it": {
+     "Processo": "TIG AC/DC",
+     "Gamma di corrente": "fino a 220 A",
+     "Rete": "1~ 230 V",
+     "Innesco": "HF",
+     "Tipo": "mobile"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/omega220ax-pro-1220b7-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/omega-ax/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/omega-ax/"
+   }
+  },
+  {
+   "id": "beta-dx",
+   "sku": "BETA-DX",
+   "name": "MAHE Beta DX",
+   "brand": "MAHE",
+   "type": "WIG DC",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "WIG / TIG",
+    "fr": "TIG",
+    "it": "TIG"
+   },
+   "description": {
+    "de": "Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.",
+    "fr": "Poste TIG DC mobile pour acier et acier inox.",
+    "it": "Saldatrice TIG DC mobile per acciaio e acciaio inox."
+   },
+   "highlights": {
+    "de": [
+     "Hochfrequenz-Impulsschweissen",
+     "HyperSpot Punktschweissen",
+     "ActiveSpot Heftfunktion",
+     "Hyper ARC Active Regelung",
+     "Mix-TIG-Schweissen",
+     "WIG DC & MMA",
+     "Strom-Modulation einstellbar",
+     "Digitale Anzeige",
+     "Fernbedienung",
+     "Synergy-Einstellungen",
+     "JOB-Modus"
+    ],
+    "fr": [
+     "Soudage pulsé haute fréquence",
+     "Pointage HyperSpot",
+     "Fonction ActiveSpot",
+     "Régulation Hyper ARC Active",
+     "Soudage Mix-TIG",
+     "TIG DC & MMA",
+     "Modulation de courant réglable",
+     "Affichage numérique",
+     "Télécommande",
+     "Réglages Synergy",
+     "Mode JOB"
+    ],
+    "it": [
+     "Saldatura pulsata ad alta frequenza",
+     "Puntatura HyperSpot",
+     "Funzione ActiveSpot",
+     "Regolazione Hyper ARC Active",
+     "Saldatura Mix-TIG",
+     "TIG DC & MMA",
+     "Modulazione di corrente regolabile",
+     "Display digitale",
+     "Telecomando",
+     "Impostazioni Synergy",
+     "Modo JOB"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG DC",
+     "Strombereich": "bis 220 A",
+     "Netz": "1~ 230 V",
+     "Bauart": "mobil"
+    },
+    "fr": {
+     "Procédé": "TIG DC",
+     "Plage de courant": "jusqu’à 220 A",
+     "Réseau": "1~ 230 V",
+     "Type": "mobile"
+    },
+    "it": {
+     "Processo": "TIG DC",
+     "Gamma di corrente": "fino a 220 A",
+     "Rete": "1~ 230 V",
+     "Tipo": "mobile"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/beta220dx-pro-739811-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/beta-dx/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/beta-dx/"
+   }
+  },
+  {
+   "id": "hypertig-ax",
+   "sku": "HYPERTIG-AX",
+   "name": "MAHE HyperTIG AX",
+   "brand": "MAHE",
+   "type": "WIG AC/DC",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "WIG / TIG",
+    "fr": "TIG",
+    "it": "TIG"
+   },
+   "description": {
+    "de": "Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.",
+    "fr": "Source TIG AC/DC puissante pour l’usage industriel.",
+    "it": "Generatore TIG AC/DC potente per l’uso industriale."
+   },
+   "highlights": {
+    "de": [
+     "Hochfrequenz-Impulsschweissen",
+     "HyperSpot Punktschweissen",
+     "ActiveSpot Heftfunktion",
+     "Hyper ARC Active Regelung",
+     "Mix-TIG-Schweissen",
+     "AC/DC – Aluminium & Stahl",
+     "MAHE-MIX-PULSE",
+     "Strom-Modulation einstellbar",
+     "Digitale Anzeige",
+     "Leistungsstarke Wasserkühlung",
+     "Fernbedienung",
+     "JOB-Modus"
+    ],
+    "fr": [
+     "Soudage pulsé haute fréquence",
+     "Pointage HyperSpot",
+     "Fonction ActiveSpot",
+     "Régulation Hyper ARC Active",
+     "Soudage Mix-TIG",
+     "AC/DC – aluminium & acier",
+     "MAHE-MIX-PULSE",
+     "Modulation de courant réglable",
+     "Affichage numérique",
+     "Refroidissement eau puissant",
+     "Télécommande",
+     "Mode JOB"
+    ],
+    "it": [
+     "Saldatura pulsata ad alta frequenza",
+     "Puntatura HyperSpot",
+     "Funzione ActiveSpot",
+     "Regolazione Hyper ARC Active",
+     "Saldatura Mix-TIG",
+     "AC/DC – alluminio & acciaio",
+     "MAHE-MIX-PULSE",
+     "Modulazione di corrente regolabile",
+     "Display digitale",
+     "Raffreddamento ad acqua potente",
+     "Telecomando",
+     "Modo JOB"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG AC/DC",
+     "Strombereich": "bis 350 A",
+     "Netz": "3~ 400 V",
+     "Kühlung": "wassergekühlt (CWK)"
+    },
+    "fr": {
+     "Procédé": "TIG AC/DC",
+     "Plage de courant": "jusqu’à 350 A",
+     "Réseau": "3~ 400 V",
+     "Refroidissement": "refroidi par eau (CWK)"
+    },
+    "it": {
+     "Processo": "TIG AC/DC",
+     "Gamma di corrente": "fino a 350 A",
+     "Rete": "3~ 400 V",
+     "Raffreddamento": "raffreddato ad acqua (CWK)"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/imgp5943-0c2fdc-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/hypertig-ax/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/hypertig-ax/"
+   }
+  },
+  {
+   "id": "hypertig-dx",
+   "sku": "HYPERTIG-DX",
+   "name": "MAHE HyperTIG DX",
+   "brand": "MAHE",
+   "type": "WIG DC",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "WIG / TIG",
+    "fr": "TIG",
+    "it": "TIG"
+   },
+   "description": {
+    "de": "Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.",
+    "fr": "Source TIG DC puissante pour un taux de dépôt élevé.",
+    "it": "Generatore TIG DC potente per elevata resa."
+   },
+   "highlights": {
+    "de": [
+     "Hochfrequenz-Impulsschweissen",
+     "HyperSpot Punktschweissen",
+     "ActiveSpot Heftfunktion",
+     "Hyper ARC Active Regelung",
+     "Mix-TIG-Schweissen",
+     "WIG DC & MMA",
+     "Strom-Modulation einstellbar",
+     "Digitale Anzeige",
+     "Fernbedienung",
+     "Synergy-Einstellungen",
+     "JOB-Modus"
+    ],
+    "fr": [
+     "Soudage pulsé haute fréquence",
+     "Pointage HyperSpot",
+     "Fonction ActiveSpot",
+     "Régulation Hyper ARC Active",
+     "Soudage Mix-TIG",
+     "TIG DC & MMA",
+     "Modulation de courant réglable",
+     "Affichage numérique",
+     "Télécommande",
+     "Réglages Synergy",
+     "Mode JOB"
+    ],
+    "it": [
+     "Saldatura pulsata ad alta frequenza",
+     "Puntatura HyperSpot",
+     "Funzione ActiveSpot",
+     "Regolazione Hyper ARC Active",
+     "Saldatura Mix-TIG",
+     "TIG DC & MMA",
+     "Modulazione di corrente regolabile",
+     "Display digitale",
+     "Telecomando",
+     "Impostazioni Synergy",
+     "Modo JOB"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG DC",
+     "Strombereich": "bis 400 A",
+     "Netz": "3~ 400 V",
+     "Kühlung": "wassergekühlt"
+    },
+    "fr": {
+     "Procédé": "TIG DC",
+     "Plage de courant": "jusqu’à 400 A",
+     "Réseau": "3~ 400 V",
+     "Refroidissement": "refroidi par eau"
+    },
+    "it": {
+     "Processo": "TIG DC",
+     "Gamma di corrente": "fino a 400 A",
+     "Rete": "3~ 400 V",
+     "Raffreddamento": "raffreddato ad acqua"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/imgp5957-394c09-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/hypertig-dx/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/hypertig-dx/"
+   }
+  },
+  {
+   "id": "beta-digital",
+   "sku": "BETA-DIGITAL",
+   "name": "MAHE Beta digital",
+   "brand": "MAHE",
+   "type": "WIG",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "WIG / TIG",
+    "fr": "TIG",
+    "it": "TIG"
+   },
+   "description": {
+    "de": "Mobile digitale WIG-Schweissmaschine mit Programmspeicher.",
+    "fr": "Poste TIG numérique mobile avec mémoire de programmes.",
+    "it": "Saldatrice TIG digitale mobile con memoria programmi."
+   },
+   "highlights": {
+    "de": [
+     "Hochfrequenz-Impulsschweissen",
+     "HyperSpot Punktschweissen",
+     "ActiveSpot Heftfunktion",
+     "Hyper ARC Active Regelung",
+     "Mix-TIG-Schweissen",
+     "WIG DC & MMA",
+     "Strom-Modulation einstellbar",
+     "Digitale Anzeige",
+     "Fernbedienung",
+     "Synergy-Einstellungen",
+     "JOB-Modus"
+    ],
+    "fr": [
+     "Soudage pulsé haute fréquence",
+     "Pointage HyperSpot",
+     "Fonction ActiveSpot",
+     "Régulation Hyper ARC Active",
+     "Soudage Mix-TIG",
+     "TIG DC & MMA",
+     "Modulation de courant réglable",
+     "Affichage numérique",
+     "Télécommande",
+     "Réglages Synergy",
+     "Mode JOB"
+    ],
+    "it": [
+     "Saldatura pulsata ad alta frequenza",
+     "Puntatura HyperSpot",
+     "Funzione ActiveSpot",
+     "Regolazione Hyper ARC Active",
+     "Saldatura Mix-TIG",
+     "TIG DC & MMA",
+     "Modulazione di corrente regolabile",
+     "Display digitale",
+     "Telecomando",
+     "Impostazioni Synergy",
+     "Modo JOB"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG DC",
+     "Strombereich": "bis 300 A",
+     "Netz": "3~ 400 V",
+     "Bedienung": "digital"
+    },
+    "fr": {
+     "Procédé": "TIG DC",
+     "Plage de courant": "jusqu’à 300 A",
+     "Réseau": "3~ 400 V",
+     "Commande": "numérique"
+    },
+    "it": {
+     "Processo": "TIG DC",
+     "Gamma di corrente": "fino a 300 A",
+     "Rete": "3~ 400 V",
+     "Comando": "digitale"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/beta-digital-300-47dc7e-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/beta-digital/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/beta-digital/"
+   }
+  },
+  {
+   "id": "hypertig-acdc",
+   "sku": "HYPERTIG-ACDC",
+   "name": "MAHE HyperTIG AC/DC",
+   "brand": "MAHE",
+   "type": "WIG AC/DC",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "WIG / TIG",
+    "fr": "TIG",
+    "it": "TIG"
+   },
+   "description": {
+    "de": "Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.",
+    "fr": "Source AC/DC puissante pour les exigences les plus élevées.",
+    "it": "Generatore AC/DC potente per le massime esigenze."
+   },
+   "highlights": {
+    "de": [
+     "Hochfrequenz-Impulsschweissen",
+     "HyperSpot Punktschweissen",
+     "ActiveSpot Heftfunktion",
+     "Hyper ARC Active Regelung",
+     "Mix-TIG-Schweissen",
+     "AC/DC – Aluminium & Stahl",
+     "MAHE-MIX-PULSE",
+     "Strom-Modulation einstellbar",
+     "Digitale Anzeige",
+     "Leistungsstarke Wasserkühlung",
+     "Fernbedienung",
+     "JOB-Modus"
+    ],
+    "fr": [
+     "Soudage pulsé haute fréquence",
+     "Pointage HyperSpot",
+     "Fonction ActiveSpot",
+     "Régulation Hyper ARC Active",
+     "Soudage Mix-TIG",
+     "AC/DC – aluminium & acier",
+     "MAHE-MIX-PULSE",
+     "Modulation de courant réglable",
+     "Affichage numérique",
+     "Refroidissement eau puissant",
+     "Télécommande",
+     "Mode JOB"
+    ],
+    "it": [
+     "Saldatura pulsata ad alta frequenza",
+     "Puntatura HyperSpot",
+     "Funzione ActiveSpot",
+     "Regolazione Hyper ARC Active",
+     "Saldatura Mix-TIG",
+     "AC/DC – alluminio & acciaio",
+     "MAHE-MIX-PULSE",
+     "Modulazione di corrente regolabile",
+     "Display digitale",
+     "Raffreddamento ad acqua potente",
+     "Telecomando",
+     "Modo JOB"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG AC/DC",
+     "Strombereich": "bis 600 A",
+     "Netz": "3~ 400 V",
+     "Kühlung": "wassergekühlt (CWK)"
+    },
+    "fr": {
+     "Procédé": "TIG AC/DC",
+     "Plage de courant": "jusqu’à 600 A",
+     "Réseau": "3~ 400 V",
+     "Refroidissement": "refroidi par eau (CWK)"
+    },
+    "it": {
+     "Processo": "TIG AC/DC",
+     "Gamma di corrente": "fino a 600 A",
+     "Rete": "3~ 400 V",
+     "Raffreddamento": "raffreddato ad acqua (CWK)"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hypertig-ac-dc-cwk-6cafbb-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/hypertig-acdc/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/hypertig-acdc/"
+   }
+  },
+  {
+   "id": "i-1600",
+   "sku": "I-1600",
+   "name": "MAHE i-1600",
+   "brand": "MAHE",
+   "type": "MMA",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
+   "description": {
+    "de": "Einfach zu bedienender, robuster Elektrodeninverter.",
+    "fr": "Onduleur à électrode robuste et simple d’utilisation.",
+    "it": "Inverter a elettrodo robusto e semplice da usare."
+   },
+   "highlights": {
+    "de": [
+     "MMA-Elektrodenschweissen",
+     "WIG Lift Arc (DC)",
+     "Hot-Start – sichere Zündung",
+     "Arc Force – stabiler Lichtbogen",
+     "Anti-Stick – kein Festkleben",
+     "Übertemperaturschutz",
+     "Generatortauglich",
+     "Robust & einfach zu bedienen"
+    ],
+    "fr": [
+     "Soudage à l’électrode MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – amorçage sûr",
+     "Arc Force – arc stable",
+     "Anti-Stick – pas de collage",
+     "Protection surtempérature",
+     "Compatible groupe électrogène",
+     "Robuste & simple"
+    ],
+    "it": [
+     "Saldatura a elettrodo MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – innesco sicuro",
+     "Arc Force – arco stabile",
+     "Anti-Stick – niente incollaggio",
+     "Protezione sovratemperatura",
+     "Compatibile con generatore",
+     "Robusto & semplice"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MMA (Elektrode)",
+     "Netz": "1~ 230 V",
+     "Bauart": "tragbar",
+     "Bedienung": "einfach"
+    },
+    "fr": {
+     "Procédé": "MMA (électrode)",
+     "Réseau": "1~ 230 V",
+     "Type": "portable",
+     "Commande": "simple"
+    },
+    "it": {
+     "Processo": "MMA (elettrodo)",
+     "Rete": "1~ 230 V",
+     "Tipo": "portatile",
+     "Comando": "semplice"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/i-1600-b54bf1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/i-1600/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/i-1600/"
+   }
+  },
+  {
+   "id": "delta",
+   "sku": "DELTA",
+   "name": "MAHE Delta",
+   "brand": "MAHE",
+   "type": "MMA",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
+   "description": {
+    "de": "Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.",
+    "fr": "Onduleur à électrode multifonction pour atelier et chantier.",
+    "it": "Inverter a elettrodo multifunzione per officina e cantiere."
+   },
+   "highlights": {
+    "de": [
+     "MMA-Elektrodenschweissen",
+     "WIG Lift Arc (DC)",
+     "Hot-Start – sichere Zündung",
+     "Arc Force – stabiler Lichtbogen",
+     "Anti-Stick – kein Festkleben",
+     "Übertemperaturschutz",
+     "Generatortauglich",
+     "Robust & einfach zu bedienen"
+    ],
+    "fr": [
+     "Soudage à l’électrode MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – amorçage sûr",
+     "Arc Force – arc stable",
+     "Anti-Stick – pas de collage",
+     "Protection surtempérature",
+     "Compatible groupe électrogène",
+     "Robuste & simple"
+    ],
+    "it": [
+     "Saldatura a elettrodo MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – innesco sicuro",
+     "Arc Force – arco stabile",
+     "Anti-Stick – niente incollaggio",
+     "Protezione sovratemperatura",
+     "Compatibile con generatore",
+     "Robusto & semplice"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MMA · WIG-Lift",
+     "Netz": "230/400 V",
+     "Bauart": "tragbar"
+    },
+    "fr": {
+     "Procédé": "MMA · TIG-Lift",
+     "Réseau": "230/400 V",
+     "Type": "portable"
+    },
+    "it": {
+     "Processo": "MMA · TIG-Lift",
+     "Rete": "230/400 V",
+     "Tipo": "portatile"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/delta-2b5a06-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/delta/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/delta/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/delta/"
+   }
+  },
+  {
+   "id": "delta-digital",
+   "sku": "DELTA-DIGITAL",
+   "name": "MAHE Delta Digital",
+   "brand": "MAHE",
+   "type": "MMA",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
+   "description": {
+    "de": "Digitaler Multifunktions-Inverter für den Profi.",
+    "fr": "Onduleur multifonction numérique pour les professionnels.",
+    "it": "Inverter multifunzione digitale per professionisti."
+   },
+   "highlights": {
+    "de": [
+     "MMA-Elektrodenschweissen",
+     "WIG Lift Arc (DC)",
+     "Hot-Start – sichere Zündung",
+     "Arc Force – stabiler Lichtbogen",
+     "Anti-Stick – kein Festkleben",
+     "Übertemperaturschutz",
+     "Generatortauglich",
+     "Robust & einfach zu bedienen"
+    ],
+    "fr": [
+     "Soudage à l’électrode MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – amorçage sûr",
+     "Arc Force – arc stable",
+     "Anti-Stick – pas de collage",
+     "Protection surtempérature",
+     "Compatible groupe électrogène",
+     "Robuste & simple"
+    ],
+    "it": [
+     "Saldatura a elettrodo MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – innesco sicuro",
+     "Arc Force – arco stabile",
+     "Anti-Stick – niente incollaggio",
+     "Protezione sovratemperatura",
+     "Compatibile con generatore",
+     "Robusto & semplice"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MMA · WIG",
+     "Bedienung": "digital",
+     "Speicher": "JOB-Programme"
+    },
+    "fr": {
+     "Procédé": "MMA · TIG",
+     "Commande": "numérique",
+     "Mémoire": "programmes JOB"
+    },
+    "it": {
+     "Processo": "MMA · TIG",
+     "Comando": "digitale",
+     "Memoria": "programmi JOB"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/deltadigital-9113a6-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/delta-digital/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/delta-digital/"
+   }
+  },
+  {
+   "id": "delta-digital-ds",
+   "sku": "DELTA-DIGITAL-DS",
+   "name": "MAHE Delta Digital DS",
+   "brand": "MAHE",
+   "type": "MMA",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
+   "description": {
+    "de": "Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.",
+    "fr": "Source multiprocédé conçue pour le soudage sous-marin.",
+    "it": "Generatore multiprocesso per la saldatura subacquea."
+   },
+   "highlights": {
+    "de": [
+     "MMA-Elektrodenschweissen",
+     "WIG Lift Arc (DC)",
+     "Hot-Start – sichere Zündung",
+     "Arc Force – stabiler Lichtbogen",
+     "Anti-Stick – kein Festkleben",
+     "Übertemperaturschutz",
+     "Generatortauglich",
+     "Robust & einfach zu bedienen"
+    ],
+    "fr": [
+     "Soudage à l’électrode MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – amorçage sûr",
+     "Arc Force – arc stable",
+     "Anti-Stick – pas de collage",
+     "Protection surtempérature",
+     "Compatible groupe électrogène",
+     "Robuste & simple"
+    ],
+    "it": [
+     "Saldatura a elettrodo MMA",
+     "TIG Lift Arc (DC)",
+     "Hot-Start – innesco sicuro",
+     "Arc Force – arco stabile",
+     "Anti-Stick – niente incollaggio",
+     "Protezione sovratemperatura",
+     "Compatibile con generatore",
+     "Robusto & semplice"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MMA · Unterwasser",
+     "Bedienung": "digital",
+     "Einsatz": "Diving / Offshore"
+    },
+    "fr": {
+     "Procédé": "MMA · sous-marin",
+     "Commande": "numérique",
+     "Application": "Diving / Offshore"
+    },
+    "it": {
+     "Processo": "MMA · subacqueo",
+     "Comando": "digitale",
+     "Impiego": "Diving / Offshore"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/delta-digital-ds-04fd14-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/delta-digital-ds/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/delta-digital-ds/"
+   }
+  },
+  {
+   "id": "plasma-tig",
+   "sku": "PLASMA-TIG",
+   "name": "MAHE PlasmaTIG",
+   "brand": "MAHE",
+   "type": "Plasma TIG",
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "Plasma TIG",
+    "fr": "Plasma TIG",
+    "it": "Plasma TIG"
+   },
+   "description": {
+    "de": "Mikroplasma- und Plasmastromquelle für feinste Schweissungen.",
+    "fr": "Source microplasma et plasma pour les soudures les plus fines.",
+    "it": "Generatore microplasma e plasma per saldature finissime."
+   },
+   "highlights": {
+    "de": [
+     "Mikroplasma- & Plasma-Schweissen",
+     "Feinste Schweissungen ab geringstem Strom",
+     "Stabiler, gebündelter Plasmastrahl",
+     "Für Feinblech bis Industrie",
+     "HF-Zündung",
+     "Pilotlichtbogen"
+    ],
+    "fr": [
+     "Soudage microplasma & plasma",
+     "Soudures très fines dès un courant minimal",
+     "Jet plasma stable et concentré",
+     "Tôle fine à industrie",
+     "Amorçage HF",
+     "Arc pilote"
+    ],
+    "it": [
+     "Saldatura microplasma & plasma",
+     "Saldature finissime da corrente minima",
+     "Getto plasma stabile e concentrato",
+     "Lamiera fine a industria",
+     "Innesco HF",
+     "Arco pilota"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasma / Mikroplasma",
+     "Strombereich": "20 – 400 A",
+     "Einsatz": "Feinblech bis Industrie"
+    },
+    "fr": {
+     "Procédé": "plasma / microplasma",
+     "Plage de courant": "20 – 400 A",
+     "Application": "tôle fine à industrie"
+    },
+    "it": {
+     "Processo": "plasma / microplasma",
+     "Gamma di corrente": "20 – 400 A",
+     "Impiego": "lamiera fine a industria"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/plasmatig-ff43ab-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/plasma-tig/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/plasma-tig/"
+   }
+  },
+  {
+   "id": "theta-40",
+   "sku": "THETA-40",
+   "name": "MAHE Theta 40",
+   "brand": "MAHE",
+   "type": "Plasma Cut",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta",
+    "fr": "Theta",
+    "it": "Theta"
+   },
+   "description": {
+    "de": "Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.",
+    "fr": "Découpeur plasma léger 230 V pour l’atelier.",
+    "it": "Tagliatrice al plasma leggera 230 V per l’officina."
+   },
+   "highlights": {
+    "de": [
+     "Plasmaschneiden mit HSC-Technologie",
+     "Sauberer, schneller Trennschnitt",
+     "Pilotlichtbogen – kontaktloses Zünden",
+     "Für alle leitenden Metalle",
+     "Gittertrennen möglich",
+     "Digitale Anzeige",
+     "Übertemperaturschutz",
+     "Hand- oder Automationsbetrieb"
+    ],
+    "fr": [
+     "Découpe plasma technologie HSC",
+     "Coupe nette et rapide",
+     "Arc pilote – amorçage sans contact",
+     "Tous métaux conducteurs",
+     "Découpe de grilles possible",
+     "Affichage numérique",
+     "Protection surtempérature",
+     "Mode manuel ou automation"
+    ],
+    "it": [
+     "Taglio plasma tecnologia HSC",
+     "Taglio netto e veloce",
+     "Arco pilota – innesco senza contatto",
+     "Tutti i metalli conduttivi",
+     "Taglio di grigliati possibile",
+     "Display digitale",
+     "Protezione sovratemperatura",
+     "Modo manuale o automazione"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden",
+     "Schneidleistung": "bis 15 mm",
+     "Netz": "1~ 230 V",
+     "Bauart": "tragbar"
+    },
+    "fr": {
+     "Procédé": "découpe plasma",
+     "Capacité de coupe": "jusqu’à 15 mm",
+     "Réseau": "1~ 230 V",
+     "Type": "portable"
+    },
+    "it": {
+     "Processo": "taglio al plasma",
+     "Capacità di taglio": "fino a 15 mm",
+     "Rete": "1~ 230 V",
+     "Tipo": "portatile"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-40-d58c4f-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-40/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-40/"
+   }
+  },
+  {
+   "id": "theta-60",
+   "sku": "THETA-60",
+   "name": "MAHE Theta 60 HSC",
+   "brand": "MAHE",
+   "type": "Plasma Cut",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta",
+    "fr": "Theta",
+    "it": "Theta"
+   },
+   "description": {
+    "de": "Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.",
+    "fr": "Découpeur plasma puissant avec technologie HSC.",
+    "it": "Inverter plasma potente con tecnologia HSC."
+   },
+   "highlights": {
+    "de": [
+     "Plasmaschneiden mit HSC-Technologie",
+     "Sauberer, schneller Trennschnitt",
+     "Pilotlichtbogen – kontaktloses Zünden",
+     "Für alle leitenden Metalle",
+     "Gittertrennen möglich",
+     "Digitale Anzeige",
+     "Übertemperaturschutz",
+     "Hand- oder Automationsbetrieb"
+    ],
+    "fr": [
+     "Découpe plasma technologie HSC",
+     "Coupe nette et rapide",
+     "Arc pilote – amorçage sans contact",
+     "Tous métaux conducteurs",
+     "Découpe de grilles possible",
+     "Affichage numérique",
+     "Protection surtempérature",
+     "Mode manuel ou automation"
+    ],
+    "it": [
+     "Taglio plasma tecnologia HSC",
+     "Taglio netto e veloce",
+     "Arco pilota – innesco senza contatto",
+     "Tutti i metalli conduttivi",
+     "Taglio di grigliati possibile",
+     "Display digitale",
+     "Protezione sovratemperatura",
+     "Modo manuale o automazione"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden",
+     "Schneidleistung": "bis 40 mm",
+     "Technologie": "HSC",
+     "Netz": "3~ 400 V"
+    },
+    "fr": {
+     "Procédé": "découpe plasma",
+     "Capacité de coupe": "jusqu’à 40 mm",
+     "Technologie": "HSC",
+     "Réseau": "3~ 400 V"
+    },
+    "it": {
+     "Processo": "taglio al plasma",
+     "Capacità di taglio": "fino a 40 mm",
+     "Tecnologia": "HSC",
+     "Rete": "3~ 400 V"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-60-hsc-b1f221-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-60/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-60/"
+   }
+  },
+  {
+   "id": "theta-120",
+   "sku": "THETA-120",
+   "name": "MAHE Theta 120 HSC",
+   "brand": "MAHE",
+   "type": "Plasma Cut",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta",
+    "fr": "Theta",
+    "it": "Theta"
+   },
+   "description": {
+    "de": "Industrieller Plasmaschneidinverter mit HSC-Technologie.",
+    "fr": "Découpeur plasma industriel avec technologie HSC.",
+    "it": "Inverter plasma industriale con tecnologia HSC."
+   },
+   "highlights": {
+    "de": [
+     "Plasmaschneiden mit HSC-Technologie",
+     "Sauberer, schneller Trennschnitt",
+     "Pilotlichtbogen – kontaktloses Zünden",
+     "Für alle leitenden Metalle",
+     "Gittertrennen möglich",
+     "Digitale Anzeige",
+     "Übertemperaturschutz",
+     "Hand- oder Automationsbetrieb"
+    ],
+    "fr": [
+     "Découpe plasma technologie HSC",
+     "Coupe nette et rapide",
+     "Arc pilote – amorçage sans contact",
+     "Tous métaux conducteurs",
+     "Découpe de grilles possible",
+     "Affichage numérique",
+     "Protection surtempérature",
+     "Mode manuel ou automation"
+    ],
+    "it": [
+     "Taglio plasma tecnologia HSC",
+     "Taglio netto e veloce",
+     "Arco pilota – innesco senza contatto",
+     "Tutti i metalli conduttivi",
+     "Taglio di grigliati possibile",
+     "Display digitale",
+     "Protezione sovratemperatura",
+     "Modo manuale o automazione"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden",
+     "Schneidleistung": "bis 55 mm",
+     "Technologie": "HSC",
+     "Netz": "3~ 400 V"
+    },
+    "fr": {
+     "Procédé": "découpe plasma",
+     "Capacité de coupe": "jusqu’à 55 mm",
+     "Technologie": "HSC",
+     "Réseau": "3~ 400 V"
+    },
+    "it": {
+     "Processo": "taglio al plasma",
+     "Capacità di taglio": "fino a 55 mm",
+     "Tecnologia": "HSC",
+     "Rete": "3~ 400 V"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-120/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-120/"
+   }
+  },
+  {
+   "id": "theta-180",
+   "sku": "THETA-180",
+   "name": "MAHE Theta 180 HSC",
+   "brand": "MAHE",
+   "type": "Plasma Cut",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta",
+    "fr": "Theta",
+    "it": "Theta"
+   },
+   "description": {
+    "de": "Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.",
+    "fr": "Le découpeur plasma Theta le plus puissant, technologie HSC.",
+    "it": "L’inverter plasma Theta più potente, tecnologia HSC."
+   },
+   "highlights": {
+    "de": [
+     "Plasmaschneiden mit HSC-Technologie",
+     "Sauberer, schneller Trennschnitt",
+     "Pilotlichtbogen – kontaktloses Zünden",
+     "Für alle leitenden Metalle",
+     "Gittertrennen möglich",
+     "Digitale Anzeige",
+     "Übertemperaturschutz",
+     "Hand- oder Automationsbetrieb"
+    ],
+    "fr": [
+     "Découpe plasma technologie HSC",
+     "Coupe nette et rapide",
+     "Arc pilote – amorçage sans contact",
+     "Tous métaux conducteurs",
+     "Découpe de grilles possible",
+     "Affichage numérique",
+     "Protection surtempérature",
+     "Mode manuel ou automation"
+    ],
+    "it": [
+     "Taglio plasma tecnologia HSC",
+     "Taglio netto e veloce",
+     "Arco pilota – innesco senza contatto",
+     "Tutti i metalli conduttivi",
+     "Taglio di grigliati possibile",
+     "Display digitale",
+     "Protezione sovratemperatura",
+     "Modo manuale o automazione"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden",
+     "Schneidleistung": "bis 80 mm",
+     "Technologie": "HSC",
+     "Netz": "3~ 400 V"
+    },
+    "fr": {
+     "Procédé": "découpe plasma",
+     "Capacité de coupe": "jusqu’à 80 mm",
+     "Technologie": "HSC",
+     "Réseau": "3~ 400 V"
+    },
+    "it": {
+     "Processo": "taglio al plasma",
+     "Capacità di taglio": "fino a 80 mm",
+     "Tecnologia": "HSC",
+     "Rete": "3~ 400 V"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/imgp5680-e9d5f8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-180/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-180/"
+   }
+  },
+  {
+   "id": "minicleaner",
+   "sku": "MINICLEANER",
+   "name": "MAHE MiniReiniger",
+   "brand": "MAHE",
+   "type": "Cleaner",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Cleaner",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
+   "description": {
+    "de": "Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.",
+    "fr": "Onduleur économique, spécialement conçu pour la mobilité.",
+    "it": "Inverter economico, ideato per l’uso mobile."
+   },
+   "highlights": {
+    "de": [
+     "Kompakte Inverter-Stromquelle",
+     "MAHE Pinsel-Schutz-System",
+     "Reinigen, Polieren und Markieren",
+     "Synergieprogramm für alle Verfahren",
+     "Umweltfreundlich und sicher reinigen"
+    ],
+    "fr": [
+     "Source inverter compacte",
+     "Système de protection de pinceau MAHE",
+     "Nettoyer, polir et marquer",
+     "Programme synergique pour tous les procédés",
+     "Nettoyage écologique et sûr"
+    ],
+    "it": [
+     "Generatore inverter compatto",
+     "Sistema di protezione pennello MAHE",
+     "Pulire, lucidare e marcare",
+     "Programma sinergico per tutti i processi",
+     "Pulizia ecologica e sicura"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Elektrolyt-Reinigung",
+     "Einsatz": "mobil",
+     "Werkstoff": "Chromstahl"
+    },
+    "fr": {
+     "Procédé": "nettoyage électrolytique",
+     "Application": "mobile",
+     "Matériau": "acier inox"
+    },
+    "it": {
+     "Processo": "pulizia elettrolitica",
+     "Impiego": "mobile",
+     "Materiale": "acciaio inox"
+    }
+   },
+   "materials": [
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/minicleaner-530c59-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/minicleaner/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/minicleaner/"
+   }
+  },
+  {
+   "id": "hypercleaner-st",
+   "sku": "HYPERCLEANER-ST",
+   "name": "MAHE HyperCleaner ST",
+   "brand": "MAHE",
+   "type": "Cleaner",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Cleaner",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
+   "description": {
+    "de": "Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.",
+    "fr": "Onduleur 1200 W puissant pour d’excellents résultats de nettoyage.",
+    "it": "Inverter 1200 W potente per risultati di pulizia eccellenti."
+   },
+   "highlights": {
+    "de": [
+     "Leistungsstarke 1200 Watt Inverter-Stromquelle",
+     "MAHE Pinsel-Schutz-System",
+     "Reinigen, Polieren und Markieren",
+     "Synergieprogramm für alle Verfahren",
+     "Umweltfreundlich und sicher reinigen"
+    ],
+    "fr": [
+     "Source inverter puissante 1200 W",
+     "Système de protection de pinceau MAHE",
+     "Nettoyer, polir et marquer",
+     "Programme synergique pour tous les procédés",
+     "Nettoyage écologique et sûr"
+    ],
+    "it": [
+     "Generatore inverter potente 1200 W",
+     "Sistema di protezione pennello MAHE",
+     "Pulire, lucidare e marcare",
+     "Programma sinergico per tutti i processi",
+     "Pulizia ecologica e sicura"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Leistung": "1200 W",
+     "Verfahren": "Elektrolyt-Reinigung",
+     "Lieferung": "als Set"
+    },
+    "fr": {
+     "Puissance": "1200 W",
+     "Procédé": "nettoyage électrolytique",
+     "Livraison": "en kit"
+    },
+    "it": {
+     "Potenza": "1200 W",
+     "Processo": "pulizia elettrolitica",
+     "Fornitura": "in set"
+    }
+   },
+   "materials": [
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hypercleanerst-set-new-8b4786-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hypercleaner-st/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hypercleaner-st/"
+   }
+  },
+  {
+   "id": "hypercleaner-speed",
+   "sku": "HYPERCLEANER-SPEED",
+   "name": "MAHE HyperCleaner ST Speed",
+   "brand": "MAHE",
+   "type": "Cleaner",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Cleaner",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
+   "description": {
+    "de": "Leistungsstarker 2500-W-Inverter für schnelle Reinigung.",
+    "fr": "Onduleur 2500 W puissant pour un nettoyage rapide.",
+    "it": "Inverter 2500 W potente per una pulizia rapida."
+   },
+   "highlights": {
+    "de": [
+     "Leistungsstarke 2400 Watt Inverter-Stromquelle",
+     "MAHE Pinsel-Schutz-System",
+     "Reinigen, Polieren, Markieren und Galvanisieren",
+     "Synergieprogramme für alle Verfahren",
+     "Umweltfreundlich und sicher reinigen"
+    ],
+    "fr": [
+     "Source inverter puissante 2400 W",
+     "Système de protection de pinceau MAHE",
+     "Nettoyer, polir, marquer et galvaniser",
+     "Programmes synergiques pour tous les procédés",
+     "Nettoyage écologique et sûr"
+    ],
+    "it": [
+     "Generatore inverter potente 2400 W",
+     "Sistema di protezione pennello MAHE",
+     "Pulire, lucidare, marcare e galvanizzare",
+     "Programmi sinergici per tutti i processi",
+     "Pulizia ecologica e sicura"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Leistung": "2500 W",
+     "Verfahren": "Elektrolyt-Reinigung",
+     "Lieferung": "als Set"
+    },
+    "fr": {
+     "Puissance": "2500 W",
+     "Procédé": "nettoyage électrolytique",
+     "Livraison": "en kit"
+    },
+    "it": {
+     "Potenza": "2500 W",
+     "Processo": "pulizia elettrolitica",
+     "Fornitura": "in set"
+    }
+   },
+   "materials": [
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hypercleaner-st-plus-set-6b6be7-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hypercleaner-speed/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hypercleaner-speed/"
+   }
+  },
+  {
+   "id": "hypercleaner-plus",
+   "sku": "HYPERCLEANER-PLUS",
+   "name": "MAHE HyperCleaner ST Plus",
+   "brand": "MAHE",
+   "type": "Cleaner",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Cleaner",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
+   "description": {
+    "de": "Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.",
+    "fr": "Onduleur 4000 W puissant pour l’usage industriel.",
+    "it": "Inverter 4000 W potente per l’uso industriale."
+   },
+   "highlights": {
+    "de": [
+     "Leistungsstarke 4000 Watt Inverter-Stromquelle",
+     "MAHE Pinsel-Schutz-System",
+     "Reinigen, Polieren, Markieren und Galvanisieren",
+     "Synergieprogramme für alle Verfahren",
+     "Umweltfreundlich und sicher reinigen"
+    ],
+    "fr": [
+     "Source inverter puissante 4000 W",
+     "Système de protection de pinceau MAHE",
+     "Nettoyer, polir, marquer et galvaniser",
+     "Programmes synergiques pour tous les procédés",
+     "Nettoyage écologique et sûr"
+    ],
+    "it": [
+     "Generatore inverter potente 4000 W",
+     "Sistema di protezione pennello MAHE",
+     "Pulire, lucidare, marcare e galvanizzare",
+     "Programmi sinergici per tutti i processi",
+     "Pulizia ecologica e sicura"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Leistung": "4000 W",
+     "Verfahren": "Elektrolyt-Reinigung",
+     "Lieferung": "als Set"
+    },
+    "fr": {
+     "Puissance": "4000 W",
+     "Procédé": "nettoyage électrolytique",
+     "Livraison": "en kit"
+    },
+    "it": {
+     "Potenza": "4000 W",
+     "Processo": "pulizia elettrolitica",
+     "Fornitura": "in set"
+    }
+   },
+   "materials": [
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hypercleaner-st-plus-set-6b6be7-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hypercleaner-plus/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hypercleaner-plus/"
+   }
+  },
+  {
+   "id": "hypercleaner-ct200",
+   "sku": "HYPERCLEANER-CT200",
+   "name": "MAHE HyperCleaner CT 200",
+   "brand": "MAHE",
+   "type": "WIG + Cleaner",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Cleaner",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
+   "description": {
+    "de": "Kombiniertes WIG-Schweiss- und Reinigungsgerät.",
+    "fr": "Appareil combiné de soudage TIG et de nettoyage.",
+    "it": "Apparecchio combinato di saldatura TIG e pulizia."
+   },
+   "highlights": {
+    "de": [
+     "Kombigerät: WIG-Schweissen und Reinigen",
+     "MAHE Pinsel-Schutz-System",
+     "Reinigen, Polieren und Markieren",
+     "Synergieprogramm für alle Verfahren",
+     "Umweltfreundlich und sicher reinigen"
+    ],
+    "fr": [
+     "Appareil combiné : soudage TIG et nettoyage",
+     "Système de protection de pinceau MAHE",
+     "Nettoyer, polir et marquer",
+     "Programme synergique pour tous les procédés",
+     "Nettoyage écologique et sûr"
+    ],
+    "it": [
+     "Apparecchio combinato: saldatura TIG e pulizia",
+     "Sistema di protezione pennello MAHE",
+     "Pulire, lucidare e marcare",
+     "Programma sinergico per tutti i processi",
+     "Pulizia ecologica e sicura"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "WIG + Reinigung",
+     "Kombi": "2-in-1",
+     "Lieferung": "als Set"
+    },
+    "fr": {
+     "Procédé": "TIG + nettoyage",
+     "Combi": "2-in-1",
+     "Livraison": "en kit"
+    },
+    "it": {
+     "Processo": "TIG + pulizia",
+     "Combi": "2-in-1",
+     "Fornitura": "in set"
+    }
+   },
+   "materials": [
+    "INOX"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hypercleaner-ct200-set-04fafd-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hypercleaner-ct200/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hypercleaner-ct200/"
+   }
+  },
+  {
+   "id": "stt30",
+   "sku": "STT30",
+   "name": "MAHE STT 30",
+   "brand": "MAHE",
+   "type": "Fahrwagen",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fahrwagen",
+    "fr": "Chariots",
+    "it": "Carrelli"
+   },
+   "description": {
+    "de": "Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.",
+    "fr": "Chariot avec support de bouteille pour appareils TIG et MIG.",
+    "it": "Carrello con supporto bombola per apparecchi TIG e MIG."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "i-TIG, Beta, Omega, MMS",
+     "Maße (LxBxH)": "625×600×1050 mm",
+     "Gewicht": "22 kg",
+     "Gasflasche": "ja"
+    },
+    "fr": {
+     "Pour": "i-TIG, Beta, Omega, MMS",
+     "Dimensions (LxlxH)": "625×600×1050 mm",
+     "Poids": "22 kg",
+     "Bouteille de gaz": "oui"
+    },
+    "it": {
+     "Per": "i-TIG, Beta, Omega, MMS",
+     "Dimensioni (LxPxA)": "625×600×1050 mm",
+     "Peso": "22 kg",
+     "Bombola gas": "sì"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/stt30-b9524e-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/stt30/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/stt30/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/stt30/"
+   }
+  },
+  {
+   "id": "stt35",
+   "sku": "STT35",
+   "name": "MAHE STT 35",
+   "brand": "MAHE",
+   "type": "Fahrwagen",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fahrwagen",
+    "fr": "Chariots",
+    "it": "Carrelli"
+   },
+   "description": {
+    "de": "Fahrwagen ohne Gasflaschenhalter für MMA und Plasma.",
+    "fr": "Chariot sans support de bouteille pour MMA et plasma.",
+    "it": "Carrello senza supporto bombola per MMA e plasma."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "Delta, Delta Digital, Theta",
+     "Maße (LxBxH)": "700×600×1050 mm",
+     "Gewicht": "21 kg",
+     "Gasflasche": "nein"
+    },
+    "fr": {
+     "Pour": "Delta, Delta Digital, Theta",
+     "Dimensions (LxlxH)": "700×600×1050 mm",
+     "Poids": "21 kg",
+     "Bouteille de gaz": "non"
+    },
+    "it": {
+     "Per": "Delta, Delta Digital, Theta",
+     "Dimensioni (LxPxA)": "700×600×1050 mm",
+     "Peso": "21 kg",
+     "Bombola gas": "no"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/stt35-629751-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/stt35/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/stt35/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/stt35/"
+   }
+  },
+  {
+   "id": "mpf02",
+   "sku": "MPF02",
+   "name": "MAHE MPF 02",
+   "brand": "MAHE",
+   "type": "Fahrwagen",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fahrwagen",
+    "fr": "Chariots",
+    "it": "Carrelli"
+   },
+   "description": {
+    "de": "Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.",
+    "fr": "Chariot avec support de bouteille pour tous les appareils portables.",
+    "it": "Carrello con supporto bombola per tutti gli apparecchi portatili."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "Delta, i-TIG, Beta, Omega, MMS, Theta",
+     "Maße (LxBxH)": "840×450×710 mm",
+     "Gewicht": "21 kg",
+     "Gasflasche": "ja"
+    },
+    "fr": {
+     "Pour": "Delta, i-TIG, Beta, Omega, MMS, Theta",
+     "Dimensions (LxlxH)": "840×450×710 mm",
+     "Poids": "21 kg",
+     "Bouteille de gaz": "oui"
+    },
+    "it": {
+     "Per": "Delta, i-TIG, Beta, Omega, MMS, Theta",
+     "Dimensioni (LxPxA)": "840×450×710 mm",
+     "Peso": "21 kg",
+     "Bombola gas": "sì"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/imgp5689-e1678778035688-d84819-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mpf02/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mpf02/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mpf02/"
+   }
+  },
+  {
+   "id": "mhct01",
+   "sku": "MHCT01",
+   "name": "MAHE MHCT 01",
+   "brand": "MAHE",
+   "type": "Fahrwagen",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fahrwagen",
+    "fr": "Chariots",
+    "it": "Carrelli"
+   },
+   "description": {
+    "de": "Fahrwagen speziell für Reinigungsgeräte.",
+    "fr": "Chariot spécialement conçu pour les appareils de nettoyage.",
+    "it": "Carrello specifico per apparecchi di pulizia."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "HyperCleaner",
+     "Maße (LxBxH)": "380×415×700 mm",
+     "Gewicht": "16 kg"
+    },
+    "fr": {
+     "Pour": "HyperCleaner",
+     "Dimensions (LxlxH)": "380×415×700 mm",
+     "Poids": "16 kg"
+    },
+    "it": {
+     "Per": "HyperCleaner",
+     "Dimensioni (LxPxA)": "380×415×700 mm",
+     "Peso": "16 kg"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/fahrwagen-fur-cleaner-b58137-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mhct01/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mhct01/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mhct01/"
+   }
+  },
+  {
+   "id": "wk200",
+   "sku": "WK200",
+   "name": "MAHE WK 200",
+   "brand": "MAHE",
+   "type": "Kühlung",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Wasserkühlung",
+    "fr": "Refroidissement",
+    "it": "Raffreddamento"
+   },
+   "description": {
+    "de": "Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung.",
+    "fr": "Refroidisseur universel avec prise 230 V et coupure manque d’eau.",
+    "it": "Refrigeratore universale con presa 230 V e spegnimento mancanza acqua."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Universalkühler",
+     "Steckdose": "230 V Schuko",
+     "Schutz": "Wassermangel-Abschaltung"
+    },
+    "fr": {
+     "Type": "refroidisseur universel",
+     "Prise": "230 V Schuko",
+     "Protection": "coupure manque d’eau"
+    },
+    "it": {
+     "Tipo": "refrigeratore universale",
+     "Presa": "230 V Schuko",
+     "Protezione": "spegnimento mancanza acqua"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wk200-1d9197-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/wk200/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/wk200/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/wk200/"
+   }
+  },
+  {
+   "id": "wk300",
+   "sku": "WK300",
+   "name": "MAHE WK 300",
+   "brand": "MAHE",
+   "type": "Kühlung",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Wasserkühlung",
+    "fr": "Refroidissement",
+    "it": "Raffreddamento"
+   },
+   "description": {
+    "de": "Wasserkühlgerät für die MMS-3000-Serie.",
+    "fr": "Refroidisseur à eau pour la série MMS 3000.",
+    "it": "Refrigeratore ad acqua per la serie MMS 3000."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "MMS 3000 Serie",
+     "Typ": "Wasserkühlgerät"
+    },
+    "fr": {
+     "Pour": "série MMS 3000",
+     "Type": "refroidisseur à eau"
+    },
+    "it": {
+     "Per": "serie MMS 3000",
+     "Tipo": "refrigeratore ad acqua"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wk300-7d9dd1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/wk300/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/wk300/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/wk300/"
+   }
+  },
+  {
+   "id": "wk350",
+   "sku": "WK350",
+   "name": "MAHE WK 350",
+   "brand": "MAHE",
+   "type": "Kühlung",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Wasserkühlung",
+    "fr": "Refroidissement",
+    "it": "Raffreddamento"
+   },
+   "description": {
+    "de": "Wasserkühlgerät für Beta digital und Omega 400-V-Linie.",
+    "fr": "Refroidisseur à eau pour Beta digital et la ligne Omega 400 V.",
+    "it": "Refrigeratore ad acqua per Beta digital e la linea Omega 400 V."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "Beta digital · Omega 400 V",
+     "Typ": "Wasserkühlgerät"
+    },
+    "fr": {
+     "Pour": "Beta digital · Omega 400 V",
+     "Type": "refroidisseur à eau"
+    },
+    "it": {
+     "Per": "Beta digital · Omega 400 V",
+     "Tipo": "refrigeratore ad acqua"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wk350-d5811b-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/wk350/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/wk350/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/wk350/"
+   }
+  },
+  {
+   "id": "dvs410",
+   "sku": "DVS410",
+   "name": "MAHE DVS 410",
+   "brand": "MAHE",
+   "type": "Vorschub",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Drahtvorschubkoffer",
+    "fr": "Dévidoirs",
+    "it": "Trainafili"
+   },
+   "description": {
+    "de": "Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie.",
+    "fr": "Dévidoir léger pour la série HyperMIG X.",
+    "it": "Trainafilo leggero per la serie HyperMIG X."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "HyperMIG X",
+     "Bauart": "leicht / tragbar"
+    },
+    "fr": {
+     "Pour": "HyperMIG X",
+     "Type": "léger / portable"
+    },
+    "it": {
+     "Per": "HyperMIG X",
+     "Tipo": "leggero / portatile"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/dvs410-027fed-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/dvs410/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/dvs410/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/dvs410/"
+   }
+  },
+  {
+   "id": "dvl420",
+   "sku": "DVL420",
+   "name": "MAHE DVL 420",
+   "brand": "MAHE",
+   "type": "Vorschub",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Drahtvorschubkoffer",
+    "fr": "Dévidoirs",
+    "it": "Trainafili"
+   },
+   "description": {
+    "de": "Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie.",
+    "fr": "Dévidoir horizontal tout métal pour la série HyperMIG X.",
+    "it": "Trainafilo orizzontale tutto metallo per la serie HyperMIG X."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "HyperMIG X",
+     "Gehäuse": "Vollmetall",
+     "Bauart": "horizontal"
+    },
+    "fr": {
+     "Pour": "HyperMIG X",
+     "Boîtier": "tout métal",
+     "Type": "horizontal"
+    },
+    "it": {
+     "Per": "HyperMIG X",
+     "Struttura": "tutto metallo",
+     "Tipo": "orizzontale"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/dvl420-62bc32-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/dvl420/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/dvl420/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/dvl420/"
+   }
+  },
+  {
+   "id": "frc5",
+   "sku": "FRC5",
+   "name": "MAHE FRC 5",
+   "brand": "MAHE",
+   "type": "Fernregler",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fernbedienungen",
+    "fr": "Télécommandes",
+    "it": "Telecomandi"
+   },
+   "description": {
+    "de": "Fussfernregler für alle MAHE WIG-Geräte.",
+    "fr": "Commande à pédale pour tous les appareils TIG MAHE.",
+    "it": "Comando a pedale per tutti gli apparecchi TIG MAHE."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Fussfernregler",
+     "Für": "MAHE WIG"
+    },
+    "fr": {
+     "Type": "commande à pédale",
+     "Pour": "MAHE TIG"
+    },
+    "it": {
+     "Tipo": "comando a pedale",
+     "Per": "MAHE TIG"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/frc5-b96832-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/frc5/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/frc5/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/frc5/"
+   }
+  },
+  {
+   "id": "rc5",
+   "sku": "RC5",
+   "name": "MAHE RC 5",
+   "brand": "MAHE",
+   "type": "Fernregler",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fernbedienungen",
+    "fr": "Télécommandes",
+    "it": "Telecomandi"
+   },
+   "description": {
+    "de": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+    "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
+    "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Handfernregler",
+     "Für": "MAHE WIG · MMA"
+    },
+    "fr": {
+     "Type": "télécommande manuelle",
+     "Pour": "MAHE TIG · MMA"
+    },
+    "it": {
+     "Tipo": "telecomando manuale",
+     "Per": "MAHE TIG · MMA"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/rc5-28ba3f-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/rc5/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/rc5/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/rc5/"
+   }
+  },
+  {
+   "id": "rc15",
+   "sku": "RC15",
+   "name": "MAHE RC 15",
+   "brand": "MAHE",
+   "type": "Fernregler",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fernbedienungen",
+    "fr": "Télécommandes",
+    "it": "Telecomandi"
+   },
+   "description": {
+    "de": "Handfernregler mit Up/Down- und Start/Stopp-Taste.",
+    "fr": "Télécommande manuelle avec touches Up/Down et Start/Stop.",
+    "it": "Telecomando manuale con tasti Up/Down e Start/Stop."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Handfernregler",
+     "Funktion": "Up/Down · Start/Stopp"
+    },
+    "fr": {
+     "Type": "télécommande manuelle",
+     "Fonction": "Up/Down · Start/Stopp"
+    },
+    "it": {
+     "Tipo": "telecomando manuale",
+     "Funzione": "Up/Down · Start/Stopp"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/rc15-9cf0ea-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/rc15/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/rc15/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/rc15/"
+   }
+  },
+  {
+   "id": "rc100",
+   "sku": "RC100",
+   "name": "MAHE RC 100",
+   "brand": "MAHE",
+   "type": "Fernregler",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fernbedienungen",
+    "fr": "Télécommandes",
+    "it": "Telecomandi"
+   },
+   "description": {
+    "de": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+    "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
+    "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Handfernregler",
+     "Für": "MAHE WIG · MMA"
+    },
+    "fr": {
+     "Type": "télécommande manuelle",
+     "Pour": "MAHE TIG · MMA"
+    },
+    "it": {
+     "Tipo": "telecomando manuale",
+     "Per": "MAHE TIG · MMA"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/rc100-3d8e6e-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/rc100/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/rc100/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/rc100/"
+   }
+  },
+  {
+   "id": "rc100ds",
+   "sku": "RC100DS",
+   "name": "MAHE RC 100 DS",
+   "brand": "MAHE",
+   "type": "Fernregler",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Fernbedienungen",
+    "fr": "Télécommandes",
+    "it": "Telecomandi"
+   },
+   "description": {
+    "de": "Handfernregler speziell für Delta-Digital-DS-Maschinen.",
+    "fr": "Télécommande manuelle spéciale pour les machines Delta Digital DS.",
+    "it": "Telecomando manuale specifico per le macchine Delta Digital DS."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Handfernregler",
+     "Für": "Delta Digital DS"
+    },
+    "fr": {
+     "Type": "télécommande manuelle",
+     "Pour": "Delta Digital DS"
+    },
+    "it": {
+     "Tipo": "telecomando manuale",
+     "Per": "Delta Digital DS"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/rc100ds-b37007-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/rc100ds/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/rc100ds/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/rc100ds/"
+   }
+  },
+  {
+   "id": "theta-60-aut",
+   "sku": "THETA-60-AUT",
+   "name": "MAHE Theta 60 AUT",
+   "brand": "MAHE",
+   "type": "Plasma AUT",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta Automation",
+    "fr": "Theta Automation",
+    "it": "Theta Automation"
+   },
+   "description": {
+    "de": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+    "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
+    "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
+   },
+   "highlights": {
+    "de": [
+     "Plasmaschneiden mit HSC-Technologie",
+     "Sauberer, schneller Trennschnitt",
+     "Pilotlichtbogen – kontaktloses Zünden",
+     "Für alle leitenden Metalle",
+     "Gittertrennen möglich",
+     "Digitale Anzeige",
+     "Übertemperaturschutz",
+     "Hand- oder Automationsbetrieb"
+    ],
+    "fr": [
+     "Découpe plasma technologie HSC",
+     "Coupe nette et rapide",
+     "Arc pilote – amorçage sans contact",
+     "Tous métaux conducteurs",
+     "Découpe de grilles possible",
+     "Affichage numérique",
+     "Protection surtempérature",
+     "Mode manuel ou automation"
+    ],
+    "it": [
+     "Taglio plasma tecnologia HSC",
+     "Taglio netto e veloce",
+     "Arco pilota – innesco senza contatto",
+     "Tutti i metalli conduttivi",
+     "Taglio di grigliati possibile",
+     "Display digitale",
+     "Protezione sovratemperatura",
+     "Modo manuale o automazione"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden · Automation",
+     "Schneidleistung": "bis 40 mm",
+     "Technologie": "HSC",
+     "Schnittstelle": "CNC / Automation"
+    },
+    "fr": {
+     "Procédé": "découpe plasma · automation",
+     "Capacité de coupe": "jusqu’à 40 mm",
+     "Technologie": "HSC",
+     "Interface": "CNC / automation"
+    },
+    "it": {
+     "Processo": "taglio plasma · automazione",
+     "Capacità di taglio": "fino a 40 mm",
+     "Tecnologia": "HSC",
+     "Interfaccia": "CNC / automazione"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-60-aut/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-60-aut/"
+   }
+  },
+  {
+   "id": "theta-120-aut",
+   "sku": "THETA-120-AUT",
+   "name": "MAHE Theta 120 AUT",
+   "brand": "MAHE",
+   "type": "Plasma AUT",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta Automation",
+    "fr": "Theta Automation",
+    "it": "Theta Automation"
+   },
+   "description": {
+    "de": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+    "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
+    "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
+   },
+   "highlights": {
+    "de": [
+     "Plasmaschneiden mit HSC-Technologie",
+     "Sauberer, schneller Trennschnitt",
+     "Pilotlichtbogen – kontaktloses Zünden",
+     "Für alle leitenden Metalle",
+     "Gittertrennen möglich",
+     "Digitale Anzeige",
+     "Übertemperaturschutz",
+     "Hand- oder Automationsbetrieb"
+    ],
+    "fr": [
+     "Découpe plasma technologie HSC",
+     "Coupe nette et rapide",
+     "Arc pilote – amorçage sans contact",
+     "Tous métaux conducteurs",
+     "Découpe de grilles possible",
+     "Affichage numérique",
+     "Protection surtempérature",
+     "Mode manuel ou automation"
+    ],
+    "it": [
+     "Taglio plasma tecnologia HSC",
+     "Taglio netto e veloce",
+     "Arco pilota – innesco senza contatto",
+     "Tutti i metalli conduttivi",
+     "Taglio di grigliati possibile",
+     "Display digitale",
+     "Protezione sovratemperatura",
+     "Modo manuale o automazione"
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden · Automation",
+     "Schneidleistung": "bis 55 mm",
+     "Technologie": "HSC",
+     "Schnittstelle": "CNC / Automation"
+    },
+    "fr": {
+     "Procédé": "découpe plasma · automation",
+     "Capacité de coupe": "jusqu’à 55 mm",
+     "Technologie": "HSC",
+     "Interface": "CNC / automation"
+    },
+    "it": {
+     "Processo": "taglio plasma · automazione",
+     "Capacità di taglio": "fino a 55 mm",
+     "Tecnologia": "HSC",
+     "Interfaccia": "CNC / automazione"
+    }
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-120-aut/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-120-aut/"
+   }
+  },
+  {
+   "id": "hcs1",
+   "sku": "HCS1",
+   "name": "MAHE HCS 1",
+   "brand": "MAHE",
+   "type": "Signieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Signiergeräte",
+    "fr": "Marquage",
+    "it": "Marcatura"
+   },
+   "description": {
+    "de": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
+    "fr": "Appareil de marquage électrolytique économique, pour la mobilité.",
+    "it": "Marcatore elettrolitico economico, per l’uso mobile."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Elektrolyt-Signieren",
+     "Einsatz": "mobil",
+     "Lieferung": "Set mit Koffer"
+    },
+    "fr": {
+     "Procédé": "marquage électrolytique",
+     "Application": "mobile",
+     "Livraison": "kit avec mallette"
+    },
+    "it": {
+     "Processo": "marcatura elettrolitica",
+     "Impiego": "mobile",
+     "Fornitura": "set con valigetta"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hcs-1-set-7b79ff-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hcs1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hcs1/"
+   }
+  },
+  {
+   "id": "mlf100",
+   "sku": "MLF100",
+   "name": "MAHE MLF 100",
+   "brand": "MAHE",
+   "type": "Dosierung",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Dosiersystem",
+    "fr": "Dosage",
+    "it": "Dosaggio"
+   },
+   "description": {
+    "de": "Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+    "fr": "Appareil de dosage automatique du liquide de nettoyage.",
+    "it": "Apparecchio per il dosaggio automatico del liquido di pulizia."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Funktion": "automatische Dosierung",
+     "Medium": "Reinigungsflüssigkeit",
+     "Einsatz": "HyperCleaner-Serie"
+    },
+    "fr": {
+     "Fonction": "dosage automatique",
+     "Fluide": "liquide de nettoyage",
+     "Application": "série HyperCleaner"
+    },
+    "it": {
+     "Funzione": "dosaggio automatico",
+     "Fluido": "liquido di pulizia",
+     "Impiego": "serie HyperCleaner"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mlf100-a-9a2566-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/mlf100/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/mlf100/"
+   }
+  },
+  {
+   "id": "mcu1",
+   "sku": "MCU1",
+   "name": "MAHE MCU 1",
+   "brand": "MAHE",
+   "type": "Kalibrierung",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Werkstattausrüstung",
+    "fr": "Équipement atelier",
+    "it": "Attrezzatura officina"
+   },
+   "description": {
+    "de": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.",
+    "fr": "Calibrateur MAHE pour calibrage et validation, grands affichages Volt/Ampère.",
+    "it": "Calibratore MAHE per calibrazione e validazione, ampi display Volt/Ampere."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Funktion": "Kalibrieren / Validieren",
+     "Anzeige": "Volt & Ampere (gross)",
+     "Gewicht": "16,5 kg"
+    },
+    "fr": {
+     "Fonction": "calibrage / validation",
+     "Affichage": "Volt & Ampère (grand)",
+     "Poids": "16,5 kg"
+    },
+    "it": {
+     "Funzione": "calibrazione / validazione",
+     "Display": "Volt & Ampere (grande)",
+     "Peso": "16,5 kg"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mcu11-c46e0f-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mcu1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mcu1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mcu1/"
+   }
+  },
+  {
+   "id": "usb2in1",
+   "sku": "USB2IN1",
+   "name": "MAHE USB 2in1 Programmierer",
+   "brand": "MAHE",
+   "type": "Programmierung",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Werkstattausrüstung",
+    "fr": "Équipement atelier",
+    "it": "Attrezzatura officina"
+   },
+   "description": {
+    "de": "Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software.",
+    "fr": "Programmateur pour micro-contrôleurs et interfaces MAHE, logiciel USB inclus.",
+    "it": "Programmatore per microcontrollori e interfacce MAHE, software USB incluso."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Funktion": "Controller-Programmierung",
+     "Schnittstelle": "USB / MAHE",
+     "Software": "inklusive"
+    },
+    "fr": {
+     "Fonction": "programmation de contrôleur",
+     "Interface": "USB / MAHE",
+     "Logiciel": "inclus"
+    },
+    "it": {
+     "Funzione": "programmazione controller",
+     "Interfaccia": "USB / MAHE",
+     "Software": "incluso"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/usb2in1programmer-eb54f9-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/usb2in1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/usb2in1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/usb2in1/"
+   }
+  },
+  {
+   "id": "r1",
+   "sku": "R1",
+   "name": "MAHE Reinigungselektrolyt Rapid R1",
+   "brand": "MAHE",
+   "type": "Reinigung",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
+    "fr": "Électrolyte de nettoyage rapide pour soudures inox.",
+    "it": "Elettrolita di pulizia rapida per saldature inox."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Reinigung (Rapid)",
+     "Werkstoff": "Chromstahl",
+     "Gebinde": "0,5 / 1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "R1"
+    },
+    "fr": {
+     "Type": "Reinigung (Rapid)",
+     "Matériau": "acier inox",
+     "Conditionnement": "0,5 / 1,0 / 5,0 L",
+     "Fiche de sécurité": "R1"
+    },
+    "it": {
+     "Tipo": "Reinigung (Rapid)",
+     "Materiale": "acciaio inox",
+     "Confezione": "0,5 / 1,0 / 5,0 L",
+     "Scheda di sicurezza": "R1"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1850002-8e2ce8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/r1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/r1/"
+   }
+  },
+  {
+   "id": "rp1",
+   "sku": "RP1",
+   "name": "MAHE Reinigungselektrolyt RP1 Pastös",
+   "brand": "MAHE",
+   "type": "Reinigung",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
+    "fr": "Électrolyte de nettoyage pâteux pour surfaces verticales.",
+    "it": "Elettrolita di pulizia pastoso per superfici verticali."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Reinigung (pastös)",
+     "Werkstoff": "Chromstahl",
+     "Gebinde": "0,5 / 1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "RP1"
+    },
+    "fr": {
+     "Type": "Reinigung (pastös)",
+     "Matériau": "acier inox",
+     "Conditionnement": "0,5 / 1,0 / 5,0 L",
+     "Fiche de sécurité": "RP1"
+    },
+    "it": {
+     "Tipo": "Reinigung (pastös)",
+     "Materiale": "acciaio inox",
+     "Confezione": "0,5 / 1,0 / 5,0 L",
+     "Scheda di sicurezza": "RP1"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1851002-965760-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/rp1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/rp1/"
+   }
+  },
+  {
+   "id": "p1",
+   "sku": "P1",
+   "name": "MAHE Polierelektrolyt P1",
+   "brand": "MAHE",
+   "type": "Polieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Elektrolyt zum Elektropolieren und Beizen von Edelstahl.",
+    "fr": "Électrolyte d’électropolissage et de décapage de l’inox.",
+    "it": "Elettrolita per elettrolucidatura e decapaggio inox."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Polieren / Beizen",
+     "Werkstoff": "Edelstahl",
+     "Gebinde": "0,5 / 1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "P1"
+    },
+    "fr": {
+     "Type": "Polieren / Beizen",
+     "Matériau": "acier inox",
+     "Conditionnement": "0,5 / 1,0 / 5,0 L",
+     "Fiche de sécurité": "P1"
+    },
+    "it": {
+     "Tipo": "Polieren / Beizen",
+     "Materiale": "acciaio inox",
+     "Confezione": "0,5 / 1,0 / 5,0 L",
+     "Scheda di sicurezza": "P1"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1852002-a43991-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/p1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/p1/"
+   }
+  },
+  {
+   "id": "n1",
+   "sku": "N1",
+   "name": "MAHE Neutralit N1",
+   "brand": "MAHE",
+   "type": "Neutralisieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.",
+    "fr": "Neutralisant pour stopper et neutraliser après nettoyage.",
+    "it": "Neutralizzante per arrestare e neutralizzare dopo la pulizia."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Neutralisierer",
+     "Anwendung": "nach Reinigung",
+     "Gebinde": "1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "N1"
+    },
+    "fr": {
+     "Type": "Neutralisierer",
+     "Application": "nach Reinigung",
+     "Conditionnement": "1,0 / 5,0 L",
+     "Fiche de sécurité": "N1"
+    },
+    "it": {
+     "Tipo": "Neutralisierer",
+     "Applicazione": "nach Reinigung",
+     "Confezione": "1,0 / 5,0 L",
+     "Scheda di sicurezza": "N1"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1855002-1c6ae6-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/n1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/n1/"
+   }
+  },
+  {
+   "id": "m1",
+   "sku": "M1",
+   "name": "MAHE Signierelektrolyt M1",
+   "brand": "MAHE",
+   "type": "Signieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.",
+    "fr": "Électrolyte pour le marquage électrochimique du métal.",
+    "it": "Elettrolita per la marcatura elettrochimica del metallo."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Signieren",
+     "Anwendung": "Markieren",
+     "Gebinde": "0,1 / 0,5 / 1,0 L",
+     "Sicherheitsdatenblatt": "M1"
+    },
+    "fr": {
+     "Type": "Signieren",
+     "Application": "Markieren",
+     "Conditionnement": "0,1 / 0,5 / 1,0 L",
+     "Fiche de sécurité": "M1"
+    },
+    "it": {
+     "Tipo": "Signieren",
+     "Applicazione": "Markieren",
+     "Confezione": "0,1 / 0,5 / 1,0 L",
+     "Scheda di sicurezza": "M1"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1853001-160836-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/m1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/m1/"
+   }
+  },
+  {
+   "id": "elektrodenkabel",
+   "sku": "ELEKTRODENKABEL",
+   "name": "MAHE Elektrodenkabel 10 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Elektrodenkabel für Cleaner- und MMA-Geräte.",
+    "fr": "Câble d’électrode pour appareils Cleaner et MMA.",
+    "it": "Cavo elettrodo per apparecchi Cleaner e MMA."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitt": "10 mm²",
+     "Längen": "3 / 6 / 10 m",
+     "Farbe": "blau"
+    },
+    "fr": {
+     "Section": "10 mm²",
+     "Longueurs": "3 / 6 / 10 m",
+     "Couleur": "bleu"
+    },
+    "it": {
+     "Sezione": "10 mm²",
+     "Lunghezze": "3 / 6 / 10 m",
+     "Colore": "blu"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1801001-78aea8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/elektrodenkabel/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/elektrodenkabel/"
+   }
+  },
+  {
+   "id": "massekabel",
+   "sku": "MASSEKABEL",
+   "name": "MAHE Massekabel 10 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel mit Klemme für Cleaner- und MMA-Geräte.",
+    "fr": "Câble de masse avec pince pour Cleaner et MMA.",
+    "it": "Cavo di massa con morsetto per Cleaner e MMA."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitt": "10 mm²",
+     "Längen": "3 / 6 / 10 m",
+     "Farbe": "schwarz"
+    },
+    "fr": {
+     "Section": "10 mm²",
+     "Longueurs": "3 / 6 / 10 m",
+     "Couleur": "noir"
+    },
+    "it": {
+     "Sezione": "10 mm²",
+     "Lunghezze": "3 / 6 / 10 m",
+     "Colore": "nero"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1802001-6105bc-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel/"
+   }
+  },
+  {
+   "id": "mf405w",
+   "sku": "MF405W",
+   "name": "MAHE MF405W",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.",
+    "fr": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.",
+    "it": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "MIG/MAG wassergekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    },
+    "fr": {
+     "Type": "MIG/MAG wassergekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    },
+    "it": {
+     "Tipo": "MIG/MAG wassergekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mf405w/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mf405w/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mf405w/"
+   }
+  },
+  {
+   "id": "mf240w",
+   "sku": "MF240W",
+   "name": "MAHE MF240W",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.",
+    "fr": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.",
+    "it": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "MIG/MAG wassergekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    },
+    "fr": {
+     "Type": "MIG/MAG wassergekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    },
+    "it": {
+     "Tipo": "MIG/MAG wassergekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    }
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mf240w/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mf240w/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mf240w/"
+   }
+  }
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "Antrieb": {
+  "fr": "Entraînement",
+  "it": "Trazione"
+ },
+ "Anzeige": {
+  "fr": "Affichage",
+  "it": "Display"
+ },
+ "Ausführung": {
+  "fr": "Version",
+  "it": "Versione"
+ },
+ "Bauart": {
+  "fr": "Type",
+  "it": "Tipo"
+ },
+ "Bedienung": {
+  "fr": "Commande",
+  "it": "Comando"
+ },
+ "Betriebsart": {
+  "fr": "Mode",
+  "it": "Modalità"
+ },
+ "Doppelpuls": {
+  "fr": "Double pulsation",
+  "it": "Doppio impulso"
+ },
+ "Einsatz": {
+  "fr": "Application",
+  "it": "Impiego"
+ },
+ "Funktion": {
+  "fr": "Fonction",
+  "it": "Funzione"
+ },
+ "Für": {
+  "fr": "Pour",
+  "it": "Per"
+ },
+ "Gasflasche": {
+  "fr": "Bouteille de gaz",
+  "it": "Bombola gas"
+ },
+ "Gehäuse": {
+  "fr": "Boîtier",
+  "it": "Struttura"
+ },
+ "Gewicht": {
+  "fr": "Poids",
+  "it": "Peso"
+ },
+ "Kombi": {
+  "fr": "Combi",
+  "it": "Combi"
+ },
+ "Kühlung": {
+  "fr": "Refroidissement",
+  "it": "Raffreddamento"
+ },
+ "Leistung": {
+  "fr": "Puissance",
+  "it": "Potenza"
+ },
+ "Lieferung": {
+  "fr": "Livraison",
+  "it": "Fornitura"
+ },
+ "Maße (LxBxH)": {
+  "fr": "Dimensions (LxlxH)",
+  "it": "Dimensioni (LxPxA)"
+ },
+ "Medium": {
+  "fr": "Fluide",
+  "it": "Fluido"
+ },
+ "Netz": {
+  "fr": "Réseau",
+  "it": "Rete"
+ },
+ "Schneidleistung": {
+  "fr": "Capacité de coupe",
+  "it": "Capacità di taglio"
+ },
+ "Schnittstelle": {
+  "fr": "Interface",
+  "it": "Interfaccia"
+ },
+ "Schutz": {
+  "fr": "Protection",
+  "it": "Protezione"
+ },
+ "Serie": {
+  "fr": "Série",
+  "it": "Serie"
+ },
+ "Software": {
+  "fr": "Logiciel",
+  "it": "Software"
+ },
+ "Speicher": {
+  "fr": "Mémoire",
+  "it": "Memoria"
+ },
+ "Steckdose": {
+  "fr": "Prise",
+  "it": "Presa"
+ },
+ "Strombereich": {
+  "fr": "Plage de courant",
+  "it": "Gamma di corrente"
+ },
+ "Technologie": {
+  "fr": "Technologie",
+  "it": "Tecnologia"
+ },
+ "Typ": {
+  "fr": "Type",
+  "it": "Tipo"
+ },
+ "Verfahren": {
+  "fr": "Procédé",
+  "it": "Processo"
+ },
+ "Werkstoff": {
+  "fr": "Matériau",
+  "it": "Materiale"
+ },
+ "Zündung": {
+  "fr": "Amorçage",
+  "it": "Innesco"
+ },
+ "Gebinde": {
+  "fr": "Conditionnement",
+  "it": "Confezione"
+ },
+ "Querschnitt": {
+  "fr": "Section",
+  "it": "Sezione"
+ },
+ "Längen": {
+  "fr": "Longueurs",
+  "it": "Lunghezze"
+ },
+ "Farbe": {
+  "fr": "Couleur",
+  "it": "Colore"
+ },
+ "Anwendung": {
+  "fr": "Application",
+  "it": "Applicazione"
+ },
+ "Sicherheitsdatenblatt": {
+  "fr": "Fiche de sécurité",
+  "it": "Scheda di sicurezza"
+ }
+}

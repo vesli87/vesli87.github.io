@@ -1,0 +1,471 @@
+# VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
+Stand: 2026-07-30. Quelle: https://www.ves-tech.ch
+
+VES-TECH Swiss in Bronschhofen (SG, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Adresse: Bildfelsstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail info@ves-tech.ch, Öffnungszeiten Mo-Fr 07:30-17:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
+
+---
+
+## Schweissgeräte
+MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie.
+
+### MAHE HyperMIG X
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/
+Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: HYPERMIG-X · Preis: auf Anfrage (CHF)
+Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen.
+Besonderheiten: MIG/MAG-Schweissen & MIG-Löten; HyperForce, HyperRoot, HyperCold; HyperPuls & HyperSpeedPuls; Doppelpuls mit WIG-Naht-Optik; MMA-Elektrode & Fugenhobeln; WIG Lift Arc; Digital Synergy geregelt; Spritzerfreier Lichtbogen; 4-Rollen-Antrieb; Fernbedienung anschliessbar; JOB-Modus mit 99 Programmen; Upgrade-fähig · 100% recycelbar.
+Technische Daten: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Strombereich: 10 – 420 A; Netz: 3~ 400 V · 50/60 Hz; Netzabsicherung: 25 A; Leerlaufspannung: 76 V; Einschaltdauer: 45 % @ 400 A · 60 % @ 360 A; Kühlung: luft-/wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergic / JOB (99); Schutzklasse: IP23; Gewicht: bis 103 kg (WWK).
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: DVS 410, DVL 420, WK 350.
+
+### MAHE EcoMIG Digital / Analog
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/
+Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: ECOMIG · Preis: auf Anfrage (CHF)
+Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.
+Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
+Technische Daten: Verfahren: MIG/MAG; Strombereich: bis 300 A; Netz: 3~ 400 V; Antrieb: 4-Rollen; Ausführung: Kompakt/fahrbar; Bedienung: Digital oder Analog.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 30, MPF 02, WK 200.
+
+### MAHE MMS 2000 / 3000
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/mms/
+Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: MMS · Preis: auf Anfrage (CHF)
+Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt.
+Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
+Technische Daten: Verfahren: MIG/MAG; Einsatz: Montage / Werkstatt; Bauart: tragbar; Serie: MMS 2000 · MMS 3000.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 30, MPF 02, WK 300.
+
+### MAHE Omega AX
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: OMEGA-AX · Preis: auf Anfrage (CHF)
+Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; AC/DC – Aluminium & Stahl; MAHE-MIX-PULSE; Strom-Modulation einstellbar; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; JOB-Modus.
+Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 220 A; Netz: 1~ 230 V; Zündung: HF; Bauart: mobil.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
+
+### MAHE Beta DX
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DX · Preis: auf Anfrage (CHF)
+Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; WIG DC & MMA; Strom-Modulation einstellbar; Digitale Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Technische Daten: Verfahren: WIG DC; Strombereich: bis 220 A; Netz: 1~ 230 V; Bauart: mobil.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
+
+### MAHE HyperTIG AX
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-AX · Preis: auf Anfrage (CHF)
+Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; AC/DC – Aluminium & Stahl; MAHE-MIX-PULSE; Strom-Modulation einstellbar; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; JOB-Modus.
+Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 350 A; Netz: 3~ 400 V; Kühlung: wassergekühlt (CWK).
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
+
+### MAHE HyperTIG DX
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: HYPERTIG-DX · Preis: auf Anfrage (CHF)
+Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; WIG DC & MMA; Strom-Modulation einstellbar; Digitale Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Technische Daten: Verfahren: WIG DC; Strombereich: bis 400 A; Netz: 3~ 400 V; Kühlung: wassergekühlt.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
+
+### MAHE Beta digital
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
+Mobile digitale WIG-Schweissmaschine mit Programmspeicher.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; WIG DC & MMA; Strom-Modulation einstellbar; Digitale Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Technische Daten: Verfahren: WIG DC; Strombereich: bis 300 A; Netz: 3~ 400 V; Bedienung: digital.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
+
+### MAHE HyperTIG AC/DC
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-ACDC · Preis: auf Anfrage (CHF)
+Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; AC/DC – Aluminium & Stahl; MAHE-MIX-PULSE; Strom-Modulation einstellbar; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; JOB-Modus.
+Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 600 A; Netz: 3~ 400 V; Kühlung: wassergekühlt (CWK).
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
+
+### MAHE i-1600
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/
+Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: I-1600 · Preis: auf Anfrage (CHF)
+Einfach zu bedienender, robuster Elektrodeninverter.
+Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Technische Daten: Verfahren: MMA (Elektrode); Netz: 1~ 230 V; Bauart: tragbar; Bedienung: einfach.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+
+### MAHE Delta
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
+Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA · Preis: auf Anfrage (CHF)
+Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.
+Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Technische Daten: Verfahren: MMA · WIG-Lift; Netz: 230/400 V; Bauart: tragbar.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+
+### MAHE Delta Digital
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
+Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL · Preis: auf Anfrage (CHF)
+Digitaler Multifunktions-Inverter für den Profi.
+Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Technische Daten: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+
+### MAHE Delta Digital DS
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/
+Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL-DS · Preis: auf Anfrage (CHF)
+Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.
+Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Technische Daten: Verfahren: MMA · Unterwasser; Bedienung: digital; Einsatz: Diving / Offshore.
+Werkstoffe: Stahl, INOX.
+Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+
+### MAHE PlasmaTIG
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
+Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
+Mikroplasma- und Plasmastromquelle für feinste Schweissungen.
+Besonderheiten: Mikroplasma- & Plasma-Schweissen; Feinste Schweissungen ab geringstem Strom; Stabiler, gebündelter Plasmastrahl; Für Feinblech bis Industrie; HF-Zündung; Pilotlichtbogen.
+Technische Daten: Verfahren: Plasma / Mikroplasma; Strombereich: 20 – 400 A; Einsatz: Feinblech bis Industrie.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: MPF 02, RC 100.
+
+## Plasmaschneiden
+Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion.
+
+### MAHE Theta 40
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
+Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
+Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.
+Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Netz: 1~ 230 V; Bauart: tragbar.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 35, MPF 02.
+
+### MAHE Theta 60 HSC
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
+Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-60 · Preis: auf Anfrage (CHF)
+Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.
+Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 40 mm; Technologie: HSC; Netz: 3~ 400 V.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 35, MPF 02.
+
+### MAHE Theta 120 HSC
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
+Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-120 · Preis: auf Anfrage (CHF)
+Industrieller Plasmaschneidinverter mit HSC-Technologie.
+Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC; Netz: 3~ 400 V.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 35, MPF 02.
+
+### MAHE Theta 180 HSC
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/
+Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-180 · Preis: auf Anfrage (CHF)
+Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.
+Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 80 mm; Technologie: HSC; Netz: 3~ 400 V.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 35, MPF 02.
+
+### MAHE Theta 60 AUT
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
+Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-60-AUT · Preis: auf Anfrage (CHF)
+Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
+Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Technische Daten: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 40 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 35, MPF 02.
+
+### MAHE Theta 120 AUT
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
+Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-120-AUT · Preis: auf Anfrage (CHF)
+Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
+Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Technische Daten: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: STT 35, MPF 02.
+
+## Reinigungsgeräte
+Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.
+
+### MAHE MiniReiniger
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/
+Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: MINICLEANER · Preis: auf Anfrage (CHF)
+Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.
+Besonderheiten: Kompakte Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Technische Daten: Verfahren: Elektrolyt-Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
+Werkstoffe: INOX.
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+
+### MAHE HyperCleaner ST
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/
+Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-ST · Preis: auf Anfrage (CHF)
+Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.
+Besonderheiten: Leistungsstarke 1200 Watt Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Technische Daten: Leistung: 1200 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Werkstoffe: INOX.
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+
+### MAHE HyperCleaner ST Speed
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/
+Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-SPEED · Preis: auf Anfrage (CHF)
+Leistungsstarker 2500-W-Inverter für schnelle Reinigung.
+Besonderheiten: Leistungsstarke 2400 Watt Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramme für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Technische Daten: Leistung: 2500 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Werkstoffe: INOX.
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+
+### MAHE HyperCleaner ST Plus
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/
+Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-PLUS · Preis: auf Anfrage (CHF)
+Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.
+Besonderheiten: Leistungsstarke 4000 Watt Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramme für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Technische Daten: Leistung: 4000 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Werkstoffe: INOX.
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+
+### MAHE HyperCleaner CT 200
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
+Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERCLEANER-CT200 · Preis: auf Anfrage (CHF)
+Kombiniertes WIG-Schweiss- und Reinigungsgerät.
+Besonderheiten: Kombigerät: WIG-Schweissen und Reinigen; MAHE Pinsel-Schutz-System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Technische Daten: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
+Werkstoffe: INOX.
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+
+### MAHE HCS 1
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/
+Kategorie: Reinigungsgeräte / Signiergeräte · Typ: Signieren · Art.-Nr.: HCS1 · Preis: auf Anfrage (CHF)
+Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.
+Technische Daten: Verfahren: Elektrolyt-Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
+Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
+
+### MAHE MLF 100
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
+Kategorie: Reinigungsgeräte / Dosiersystem · Typ: Dosierung · Art.-Nr.: MLF100 · Preis: auf Anfrage (CHF)
+Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.
+Technische Daten: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
+Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
+
+### MAHE Reinigungselektrolyt Rapid R1
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/
+Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: R1 · Preis: auf Anfrage (CHF)
+Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.
+Technische Daten: Typ: Reinigung (Rapid); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: R1.
+Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+
+### MAHE Reinigungselektrolyt RP1 Pastös
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/
+Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: RP1 · Preis: auf Anfrage (CHF)
+Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.
+Technische Daten: Typ: Reinigung (pastös); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: RP1.
+Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+
+### MAHE Polierelektrolyt P1
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/
+Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Polieren · Art.-Nr.: P1 · Preis: auf Anfrage (CHF)
+Elektrolyt zum Elektropolieren und Beizen von Edelstahl.
+Technische Daten: Typ: Polieren / Beizen; Werkstoff: Edelstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: P1.
+Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+
+### MAHE Neutralit N1
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/
+Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Neutralisieren · Art.-Nr.: N1 · Preis: auf Anfrage (CHF)
+Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.
+Technische Daten: Typ: Neutralisierer; Anwendung: nach Reinigung; Gebinde: 1,0 / 5,0 L; Sicherheitsdatenblatt: N1.
+Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+
+### MAHE Signierelektrolyt M1
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/
+Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Signieren · Art.-Nr.: M1 · Preis: auf Anfrage (CHF)
+Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.
+Technische Daten: Typ: Signieren; Anwendung: Markieren; Gebinde: 0,1 / 0,5 / 1,0 L; Sicherheitsdatenblatt: M1.
+Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+
+## Zubehör
+Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie.
+
+### MAHE STT 30
+URL: https://www.ves-tech.ch/produkte/zubehoer/stt30/
+Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT30 · Preis: auf Anfrage (CHF)
+Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.
+Technische Daten: Für: i-TIG, Beta, Omega, MMS; Maße (LxBxH): 625×600×1050 mm; Gewicht: 22 kg; Gasflasche: ja.
+
+### MAHE STT 35
+URL: https://www.ves-tech.ch/produkte/zubehoer/stt35/
+Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT35 · Preis: auf Anfrage (CHF)
+Fahrwagen ohne Gasflaschenhalter für MMA und Plasma.
+Technische Daten: Für: Delta, Delta Digital, Theta; Maße (LxBxH): 700×600×1050 mm; Gewicht: 21 kg; Gasflasche: nein.
+
+### MAHE MPF 02
+URL: https://www.ves-tech.ch/produkte/zubehoer/mpf02/
+Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: MPF02 · Preis: auf Anfrage (CHF)
+Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.
+Technische Daten: Für: Delta, i-TIG, Beta, Omega, MMS, Theta; Maße (LxBxH): 840×450×710 mm; Gewicht: 21 kg; Gasflasche: ja.
+
+### MAHE MHCT 01
+URL: https://www.ves-tech.ch/produkte/zubehoer/mhct01/
+Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: MHCT01 · Preis: auf Anfrage (CHF)
+Fahrwagen speziell für Reinigungsgeräte.
+Technische Daten: Für: HyperCleaner; Maße (LxBxH): 380×415×700 mm; Gewicht: 16 kg.
+
+### MAHE WK 200
+URL: https://www.ves-tech.ch/produkte/zubehoer/wk200/
+Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK200 · Preis: auf Anfrage (CHF)
+Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung.
+Technische Daten: Typ: Universalkühler; Steckdose: 230 V Schuko; Schutz: Wassermangel-Abschaltung.
+
+### MAHE WK 300
+URL: https://www.ves-tech.ch/produkte/zubehoer/wk300/
+Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK300 · Preis: auf Anfrage (CHF)
+Wasserkühlgerät für die MMS-3000-Serie.
+Technische Daten: Für: MMS 3000 Serie; Typ: Wasserkühlgerät.
+
+### MAHE WK 350
+URL: https://www.ves-tech.ch/produkte/zubehoer/wk350/
+Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK350 · Preis: auf Anfrage (CHF)
+Wasserkühlgerät für Beta digital und Omega 400-V-Linie.
+Technische Daten: Für: Beta digital · Omega 400 V; Typ: Wasserkühlgerät.
+
+### MAHE DVS 410
+URL: https://www.ves-tech.ch/produkte/zubehoer/dvs410/
+Kategorie: Zubehör / Drahtvorschubkoffer · Typ: Vorschub · Art.-Nr.: DVS410 · Preis: auf Anfrage (CHF)
+Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie.
+Technische Daten: Für: HyperMIG X; Bauart: leicht / tragbar.
+
+### MAHE DVL 420
+URL: https://www.ves-tech.ch/produkte/zubehoer/dvl420/
+Kategorie: Zubehör / Drahtvorschubkoffer · Typ: Vorschub · Art.-Nr.: DVL420 · Preis: auf Anfrage (CHF)
+Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie.
+Technische Daten: Für: HyperMIG X; Gehäuse: Vollmetall; Bauart: horizontal.
+
+### MAHE FRC 5
+URL: https://www.ves-tech.ch/produkte/zubehoer/frc5/
+Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: FRC5 · Preis: auf Anfrage (CHF)
+Fussfernregler für alle MAHE WIG-Geräte.
+Technische Daten: Typ: Fussfernregler; Für: MAHE WIG.
+
+### MAHE RC 5
+URL: https://www.ves-tech.ch/produkte/zubehoer/rc5/
+Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC5 · Preis: auf Anfrage (CHF)
+Handfernregler für alle MAHE WIG- und MMA-Geräte.
+Technische Daten: Typ: Handfernregler; Für: MAHE WIG · MMA.
+
+### MAHE RC 15
+URL: https://www.ves-tech.ch/produkte/zubehoer/rc15/
+Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC15 · Preis: auf Anfrage (CHF)
+Handfernregler mit Up/Down- und Start/Stopp-Taste.
+Technische Daten: Typ: Handfernregler; Funktion: Up/Down · Start/Stopp.
+
+### MAHE RC 100
+URL: https://www.ves-tech.ch/produkte/zubehoer/rc100/
+Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC100 · Preis: auf Anfrage (CHF)
+Handfernregler für alle MAHE WIG- und MMA-Geräte.
+Technische Daten: Typ: Handfernregler; Für: MAHE WIG · MMA.
+
+### MAHE RC 100 DS
+URL: https://www.ves-tech.ch/produkte/zubehoer/rc100ds/
+Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC100DS · Preis: auf Anfrage (CHF)
+Handfernregler speziell für Delta-Digital-DS-Maschinen.
+Technische Daten: Typ: Handfernregler; Für: Delta Digital DS.
+
+### MAHE MCU 1
+URL: https://www.ves-tech.ch/produkte/zubehoer/mcu1/
+Kategorie: Zubehör / Werkstattausrüstung · Typ: Kalibrierung · Art.-Nr.: MCU1 · Preis: auf Anfrage (CHF)
+MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.
+Technische Daten: Funktion: Kalibrieren / Validieren; Anzeige: Volt & Ampere (gross); Gewicht: 16,5 kg.
+
+### MAHE USB 2in1 Programmierer
+URL: https://www.ves-tech.ch/produkte/zubehoer/usb2in1/
+Kategorie: Zubehör / Werkstattausrüstung · Typ: Programmierung · Art.-Nr.: USB2IN1 · Preis: auf Anfrage (CHF)
+Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software.
+Technische Daten: Funktion: Controller-Programmierung; Schnittstelle: USB / MAHE; Software: inklusive.
+
+### MAHE Elektrodenkabel 10 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: ELEKTRODENKABEL · Preis: auf Anfrage (CHF)
+Elektrodenkabel für Cleaner- und MMA-Geräte.
+Technische Daten: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: blau.
+
+### MAHE Massekabel 10 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL · Preis: auf Anfrage (CHF)
+Massekabel mit Klemme für Cleaner- und MMA-Geräte.
+Technische Daten: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: schwarz.
+
+### MAHE MF405W
+URL: https://www.ves-tech.ch/produkte/zubehoer/mf405w/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF405W · Preis: auf Anfrage (CHF)
+Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.
+Technische Daten: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
+
+### MAHE MF240W
+URL: https://www.ves-tech.ch/produkte/zubehoer/mf240w/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF240W · Preis: auf Anfrage (CHF)
+Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.
+Technische Daten: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
+
+---
+
+## Schweissverfahren von MAHE
+
+### MIS – Spritzerfrei
+Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.
+
+### Doppelpuls
+Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung – ideal für Aluminium.
+
+### HyperPuls
+Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.
+
+### HyperForce
+Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.
+
+### HyperCold
+Geringste Wärmeeinbringung – ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
+
+### HyperRoot
+Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite – auch bei grösseren Spalten.
+
+### HyperUP
+Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.
+
+---
+
+## Häufige Fragen und Antworten
+
+### Was kostet ein MAHE Schweissgerät bei VES-TECH Swiss?
+Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (luft- oder wassergekühlt), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung.
+
+### Welches Schweissverfahren brauche ich für Aluminium?
+Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte, sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht.
+
+### Was ist der Unterschied zwischen WIG DC und WIG AC/DC?
+WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf – nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl.
+
+### Wie funktioniert die elektrolytische Schweissnahtreinigung?
+Ein MAHE Cleaner leitet über einen mit Elektrolyt getränkten Karbon-Pinsel Strom in die Schweissnaht. Die Anlauffarben und die Oxidschicht auf Chromstahl werden elektrochemisch entfernt, die Passivschicht baut sich wieder auf. Je nach Elektrolyt wird gereinigt (R1, RP1), poliert (P1), neutralisiert (N1) oder das Metall dauerhaft signiert (M1). Das ist schneller und schonender als Beizen und ohne Säurebad.
+
+### Welche Blechdicke schneidet ein MAHE Theta Plasmaschneider?
+Die Theta-Serie deckt den Bereich von etwa 15 mm bis 80 mm Trennschnitt ab: Theta 40 für die leichte Werkstatt am 230-V-Netz, Theta 60 und Theta 120 für den industriellen Einsatz mit HSC-Technologie und Theta 180 als stärkstes Modell. Für CNC-Anlagen gibt es Theta 60 AUT und Theta 120 AUT mit Automations-Schnittstelle.
+
+### Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?
+Ja. VES-TECH Swiss in Bronschhofen (SG) übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet – erreichbar unter +41 76 710 91 39, Montag bis Freitag von 07:30 bis 17:30 Uhr.
+
+### Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?
+EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage – inklusive Konformitätszertifikat.
+
+### Wie schnell erhalte ich ein Angebot?
+In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus.
+
+### Liefert VES-TECH Swiss in die ganze Schweiz?
+Ja, VES-TECH Swiss beliefert die gesamte Schweiz und das Fürstentum Liechtenstein. Der Standort ist Bildfelsstrasse 24, 9552 Bronschhofen im Kanton St. Gallen. Beratung und Anfragen sind auf Deutsch, Französisch und Italienisch möglich.
+
+### Was ist MIS-Schweissen und HyperPuls bei MAHE?
+MIS ist das spritzerfreie MAHE-Verfahren für den Kurzlichtbogen: Der Materialübergang wird geregelt, dadurch entstehen kaum Spritzer und die Nacharbeit entfällt weitgehend. HyperPuls ist der geregelte Impulslichtbogen für höhere Abschmelzleistung bei kontrolliertem Wärmeeintrag. Ergänzt wird das durch HyperCold (minimaler Verzug), HyperRoot (sichere Wurzel), HyperForce (tiefer Einbrand) und HyperUP (Steignaht).

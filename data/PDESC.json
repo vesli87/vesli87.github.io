@@ -1,0 +1,202 @@
+{
+ "hypermig-x": {
+  "fr": "Série pulsée MIG/MAG complète avec HyperForce et soudage sans projections MIS.",
+  "it": "Serie pulsata MIG/MAG completa con HyperForce e saldatura senza spruzzi MIS."
+ },
+ "ecomig": {
+  "fr": "Poste MIG/MAG à réglage continu, ultra-compact et simple d’utilisation.",
+  "it": "Saldatrice MIG/MAG a regolazione continua, ultracompatta e semplice."
+ },
+ "mms": {
+  "fr": "Poste MIG/MAG mobile et léger pour le montage et l’atelier.",
+  "it": "Saldatrice MIG/MAG mobile e leggera per montaggio e officina."
+ },
+ "omega-ax": {
+  "fr": "Poste TIG AC/DC mobile pour l’aluminium et l’acier.",
+  "it": "Saldatrice TIG AC/DC mobile per alluminio e acciaio."
+ },
+ "beta-dx": {
+  "fr": "Poste TIG DC mobile pour acier et acier inox.",
+  "it": "Saldatrice TIG DC mobile per acciaio e acciaio inox."
+ },
+ "hypertig-ax": {
+  "fr": "Source TIG AC/DC puissante pour l’usage industriel.",
+  "it": "Generatore TIG AC/DC potente per l’uso industriale."
+ },
+ "hypertig-dx": {
+  "fr": "Source TIG DC puissante pour un taux de dépôt élevé.",
+  "it": "Generatore TIG DC potente per elevata resa."
+ },
+ "beta-digital": {
+  "fr": "Poste TIG numérique mobile avec mémoire de programmes.",
+  "it": "Saldatrice TIG digitale mobile con memoria programmi."
+ },
+ "hypertig-acdc": {
+  "fr": "Source AC/DC puissante pour les exigences les plus élevées.",
+  "it": "Generatore AC/DC potente per le massime esigenze."
+ },
+ "i-1600": {
+  "fr": "Onduleur à électrode robuste et simple d’utilisation.",
+  "it": "Inverter a elettrodo robusto e semplice da usare."
+ },
+ "delta": {
+  "fr": "Onduleur à électrode multifonction pour atelier et chantier.",
+  "it": "Inverter a elettrodo multifunzione per officina e cantiere."
+ },
+ "delta-digital": {
+  "fr": "Onduleur multifonction numérique pour les professionnels.",
+  "it": "Inverter multifunzione digitale per professionisti."
+ },
+ "delta-digital-ds": {
+  "fr": "Source multiprocédé conçue pour le soudage sous-marin.",
+  "it": "Generatore multiprocesso per la saldatura subacquea."
+ },
+ "plasma-tig": {
+  "fr": "Source microplasma et plasma pour les soudures les plus fines.",
+  "it": "Generatore microplasma e plasma per saldature finissime."
+ },
+ "theta-40": {
+  "fr": "Découpeur plasma léger 230 V pour l’atelier.",
+  "it": "Tagliatrice al plasma leggera 230 V per l’officina."
+ },
+ "theta-60": {
+  "fr": "Découpeur plasma puissant avec technologie HSC.",
+  "it": "Inverter plasma potente con tecnologia HSC."
+ },
+ "theta-120": {
+  "fr": "Découpeur plasma industriel avec technologie HSC.",
+  "it": "Inverter plasma industriale con tecnologia HSC."
+ },
+ "theta-180": {
+  "fr": "Le découpeur plasma Theta le plus puissant, technologie HSC.",
+  "it": "L’inverter plasma Theta più potente, tecnologia HSC."
+ },
+ "minicleaner": {
+  "fr": "Onduleur économique, spécialement conçu pour la mobilité.",
+  "it": "Inverter economico, ideato per l’uso mobile."
+ },
+ "hypercleaner-st": {
+  "fr": "Onduleur 1200 W puissant pour d’excellents résultats de nettoyage.",
+  "it": "Inverter 1200 W potente per risultati di pulizia eccellenti."
+ },
+ "hypercleaner-speed": {
+  "fr": "Onduleur 2500 W puissant pour un nettoyage rapide.",
+  "it": "Inverter 2500 W potente per una pulizia rapida."
+ },
+ "hypercleaner-plus": {
+  "fr": "Onduleur 4000 W puissant pour l’usage industriel.",
+  "it": "Inverter 4000 W potente per l’uso industriale."
+ },
+ "hypercleaner-ct200": {
+  "fr": "Appareil combiné de soudage TIG et de nettoyage.",
+  "it": "Apparecchio combinato di saldatura TIG e pulizia."
+ },
+ "stt30": {
+  "fr": "Chariot avec support de bouteille pour appareils TIG et MIG.",
+  "it": "Carrello con supporto bombola per apparecchi TIG e MIG."
+ },
+ "stt35": {
+  "fr": "Chariot sans support de bouteille pour MMA et plasma.",
+  "it": "Carrello senza supporto bombola per MMA e plasma."
+ },
+ "mpf02": {
+  "fr": "Chariot avec support de bouteille pour tous les appareils portables.",
+  "it": "Carrello con supporto bombola per tutti gli apparecchi portatili."
+ },
+ "mhct01": {
+  "fr": "Chariot spécialement conçu pour les appareils de nettoyage.",
+  "it": "Carrello specifico per apparecchi di pulizia."
+ },
+ "wk200": {
+  "fr": "Refroidisseur universel avec prise 230 V et coupure manque d’eau.",
+  "it": "Refrigeratore universale con presa 230 V e spegnimento mancanza acqua."
+ },
+ "wk300": {
+  "fr": "Refroidisseur à eau pour la série MMS 3000.",
+  "it": "Refrigeratore ad acqua per la serie MMS 3000."
+ },
+ "wk350": {
+  "fr": "Refroidisseur à eau pour Beta digital et la ligne Omega 400 V.",
+  "it": "Refrigeratore ad acqua per Beta digital e la linea Omega 400 V."
+ },
+ "dvs410": {
+  "fr": "Dévidoir léger pour la série HyperMIG X.",
+  "it": "Trainafilo leggero per la serie HyperMIG X."
+ },
+ "dvl420": {
+  "fr": "Dévidoir horizontal tout métal pour la série HyperMIG X.",
+  "it": "Trainafilo orizzontale tutto metallo per la serie HyperMIG X."
+ },
+ "frc5": {
+  "fr": "Commande à pédale pour tous les appareils TIG MAHE.",
+  "it": "Comando a pedale per tutti gli apparecchi TIG MAHE."
+ },
+ "rc5": {
+  "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
+  "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
+ },
+ "rc15": {
+  "fr": "Télécommande manuelle avec touches Up/Down et Start/Stop.",
+  "it": "Telecomando manuale con tasti Up/Down e Start/Stop."
+ },
+ "rc100": {
+  "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
+  "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
+ },
+ "rc100ds": {
+  "fr": "Télécommande manuelle spéciale pour les machines Delta Digital DS.",
+  "it": "Telecomando manuale specifico per le macchine Delta Digital DS."
+ },
+ "theta-60-aut": {
+  "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
+  "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
+ },
+ "theta-120-aut": {
+  "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
+  "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
+ },
+ "hcs1": {
+  "fr": "Appareil de marquage électrolytique économique, pour la mobilité.",
+  "it": "Marcatore elettrolitico economico, per l’uso mobile."
+ },
+ "mlf100": {
+  "fr": "Appareil de dosage automatique du liquide de nettoyage.",
+  "it": "Apparecchio per il dosaggio automatico del liquido di pulizia."
+ },
+ "mcu1": {
+  "fr": "Calibrateur MAHE pour calibrage et validation, grands affichages Volt/Ampère.",
+  "it": "Calibratore MAHE per calibrazione e validazione, ampi display Volt/Ampere."
+ },
+ "usb2in1": {
+  "fr": "Programmateur pour micro-contrôleurs et interfaces MAHE, logiciel USB inclus.",
+  "it": "Programmatore per microcontrollori e interfacce MAHE, software USB incluso."
+ },
+ "r1": {
+  "fr": "Électrolyte de nettoyage rapide pour soudures inox.",
+  "it": "Elettrolita di pulizia rapida per saldature inox."
+ },
+ "rp1": {
+  "fr": "Électrolyte de nettoyage pâteux pour surfaces verticales.",
+  "it": "Elettrolita di pulizia pastoso per superfici verticali."
+ },
+ "p1": {
+  "fr": "Électrolyte d’électropolissage et de décapage de l’inox.",
+  "it": "Elettrolita per elettrolucidatura e decapaggio inox."
+ },
+ "n1": {
+  "fr": "Neutralisant pour stopper et neutraliser après nettoyage.",
+  "it": "Neutralizzante per arrestare e neutralizzare dopo la pulizia."
+ },
+ "m1": {
+  "fr": "Électrolyte pour le marquage électrochimique du métal.",
+  "it": "Elettrolita per la marcatura elettrochimica del metallo."
+ },
+ "elektrodenkabel": {
+  "fr": "Câble d’électrode pour appareils Cleaner et MMA.",
+  "it": "Cavo elettrodo per apparecchi Cleaner e MMA."
+ },
+ "massekabel": {
+  "fr": "Câble de masse avec pince pour Cleaner et MMA.",
+  "it": "Cavo di massa con morsetto per Cleaner e MMA."
+ }
+}

@@ -1,0 +1,51 @@
+[
+ {
+  "id": "schweissgeraete",
+  "t": "Schweissgeräte",
+  "pk": "mig",
+  "d": "MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie.",
+  "subs": [
+   "MIG / MAG",
+   "WIG / TIG",
+   "MMA",
+   "Plasma TIG"
+  ]
+ },
+ {
+  "id": "plasmaschneiden",
+  "t": "Plasmaschneiden",
+  "pk": "plasma",
+  "d": "Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion.",
+  "subs": [
+   "Theta",
+   "Theta Automation"
+  ]
+ },
+ {
+  "id": "reinigung",
+  "t": "Reinigungsgeräte",
+  "pk": "clean",
+  "d": "Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.",
+  "subs": [
+   "Cleaner",
+   "Signiergeräte",
+   "Dosiersystem",
+   "Elektrolyte"
+  ]
+ },
+ {
+  "id": "zubehoer",
+  "t": "Zubehör",
+  "pk": "gear",
+  "d": "Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie.",
+  "subs": [
+   "Fahrwagen",
+   "Wasserkühlung",
+   "Drahtvorschubkoffer",
+   "Fernbedienungen",
+   "Werkstattausrüstung",
+   "Kabel",
+   "Brenner"
+  ]
+ }
+]

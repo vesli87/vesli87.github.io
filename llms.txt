@@ -1,0 +1,109 @@
+# VES-TECH Swiss
+
+> MAHE Schweisstechnik, Plasmaschneiden & Automation aus Bronschhofen. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 52 Geräte, alle zum Preis auf Anfrage.
+
+## Eckdaten
+- Firma: VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen (SG), Schweiz
+- Telefon: +41 76 710 91 39 · E-Mail: info@ves-tech.ch
+- Öffnungszeiten: Mo-Fr 07:30-17:30
+- Liefergebiet: Schweiz und Liechtenstein
+- Sprachen: Deutsch, Französisch, Italienisch
+- Preismodell: Preis auf Anfrage (jede Anlage wird konfiguriert), Währung CHF
+- Leistungen: Verkauf, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, Automation, EN-1090-Konformitätspaket
+
+## Maschinenlesbare Daten
+- [Vollständiger Produktkatalog als JSON](https://www.ves-tech.ch/data/products.json): alle Geräte mit Spezifikationen in DE/FR/IT
+- [Volltext für Sprachmodelle](https://www.ves-tech.ch/llms-full.txt): alle Produktbeschreibungen und technischen Daten als Fliesstext
+- [Sitemap](https://www.ves-tech.ch/sitemap.xml)
+
+## Kategorien
+- [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie. (14 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
+- [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion. (6 Geräte: Theta, Theta Automation)
+- [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
+- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (20 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner)
+
+## Geräte
+### Schweissgeräte
+- [MAHE HyperMIG X](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/): Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen. (MIG/MAG)
+- [MAHE EcoMIG Digital / Analog](https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/): Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung. (MIG/MAG)
+- [MAHE MMS 2000 / 3000](https://www.ves-tech.ch/produkte/schweissgeraete/mms/): Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt. (MIG/MAG)
+- [MAHE Omega AX](https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/): Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl. (WIG AC/DC)
+- [MAHE Beta DX](https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/): Mobile WIG DC Schweissmaschine für Stahl und Chromstahl. (WIG DC)
+- [MAHE HyperTIG AX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/): Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz. (WIG AC/DC)
+- [MAHE HyperTIG DX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/): Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung. (WIG DC)
+- [MAHE Beta digital](https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/): Mobile digitale WIG-Schweissmaschine mit Programmspeicher. (WIG)
+- [MAHE HyperTIG AC/DC](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/): Leistungsstarke AC/DC Stromquelle für höchste Anforderungen. (WIG AC/DC)
+- [MAHE i-1600](https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/): Einfach zu bedienender, robuster Elektrodeninverter. (MMA)
+- [MAHE Delta](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. (MMA)
+- [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
+- [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
+- [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): Mikroplasma- und Plasmastromquelle für feinste Schweissungen. (Plasma TIG)
+
+### Plasmaschneiden
+- [MAHE Theta 40](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/): Leichtes 230-V-Plasmaschneidgerät für die Werkstatt. (Plasma Cut)
+- [MAHE Theta 60 HSC](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/): Leistungsstarker Plasmaschneidinverter mit HSC-Technologie. (Plasma Cut)
+- [MAHE Theta 120 HSC](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/): Industrieller Plasmaschneidinverter mit HSC-Technologie. (Plasma Cut)
+- [MAHE Theta 180 HSC](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/): Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie. (Plasma Cut)
+- [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
+- [MAHE Theta 120 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
+
+### Reinigungsgeräte
+- [MAHE MiniReiniger](https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/): Wirtschaftlicher Inverter, speziell für den mobilen Einsatz. (Cleaner)
+- [MAHE HyperCleaner ST](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/): Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse. (Cleaner)
+- [MAHE HyperCleaner ST Speed](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/): Leistungsstarker 2500-W-Inverter für schnelle Reinigung. (Cleaner)
+- [MAHE HyperCleaner ST Plus](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/): Leistungsstarker 4000-W-Inverter für den Industrieeinsatz. (Cleaner)
+- [MAHE HyperCleaner CT 200](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/): Kombiniertes WIG-Schweiss- und Reinigungsgerät. (WIG + Cleaner)
+- [MAHE HCS 1](https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/): Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz. (Signieren)
+- [MAHE MLF 100](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/): Gerät zur automatischen Dosierung von Reinigungsflüssigkeit. (Dosierung)
+- [MAHE Reinigungselektrolyt Rapid R1](https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/): Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte. (Reinigung)
+- [MAHE Reinigungselektrolyt RP1 Pastös](https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/): Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf. (Reinigung)
+- [MAHE Polierelektrolyt P1](https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/): Elektrolyt zum Elektropolieren und Beizen von Edelstahl. (Polieren)
+- [MAHE Neutralit N1](https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/): Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen. (Neutralisieren)
+- [MAHE Signierelektrolyt M1](https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/): Elektrolyt zum elektrochemischen Signieren und Markieren von Metall. (Signieren)
+
+### Zubehör
+- [MAHE STT 30](https://www.ves-tech.ch/produkte/zubehoer/stt30/): Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte. (Fahrwagen)
+- [MAHE STT 35](https://www.ves-tech.ch/produkte/zubehoer/stt35/): Fahrwagen ohne Gasflaschenhalter für MMA und Plasma. (Fahrwagen)
+- [MAHE MPF 02](https://www.ves-tech.ch/produkte/zubehoer/mpf02/): Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte. (Fahrwagen)
+- [MAHE MHCT 01](https://www.ves-tech.ch/produkte/zubehoer/mhct01/): Fahrwagen speziell für Reinigungsgeräte. (Fahrwagen)
+- [MAHE WK 200](https://www.ves-tech.ch/produkte/zubehoer/wk200/): Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung. (Kühlung)
+- [MAHE WK 300](https://www.ves-tech.ch/produkte/zubehoer/wk300/): Wasserkühlgerät für die MMS-3000-Serie. (Kühlung)
+- [MAHE WK 350](https://www.ves-tech.ch/produkte/zubehoer/wk350/): Wasserkühlgerät für Beta digital und Omega 400-V-Linie. (Kühlung)
+- [MAHE DVS 410](https://www.ves-tech.ch/produkte/zubehoer/dvs410/): Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie. (Vorschub)
+- [MAHE DVL 420](https://www.ves-tech.ch/produkte/zubehoer/dvl420/): Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie. (Vorschub)
+- [MAHE FRC 5](https://www.ves-tech.ch/produkte/zubehoer/frc5/): Fussfernregler für alle MAHE WIG-Geräte. (Fernregler)
+- [MAHE RC 5](https://www.ves-tech.ch/produkte/zubehoer/rc5/): Handfernregler für alle MAHE WIG- und MMA-Geräte. (Fernregler)
+- [MAHE RC 15](https://www.ves-tech.ch/produkte/zubehoer/rc15/): Handfernregler mit Up/Down- und Start/Stopp-Taste. (Fernregler)
+- [MAHE RC 100](https://www.ves-tech.ch/produkte/zubehoer/rc100/): Handfernregler für alle MAHE WIG- und MMA-Geräte. (Fernregler)
+- [MAHE RC 100 DS](https://www.ves-tech.ch/produkte/zubehoer/rc100ds/): Handfernregler speziell für Delta-Digital-DS-Maschinen. (Fernregler)
+- [MAHE MCU 1](https://www.ves-tech.ch/produkte/zubehoer/mcu1/): MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht. (Kalibrierung)
+- [MAHE USB 2in1 Programmierer](https://www.ves-tech.ch/produkte/zubehoer/usb2in1/): Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software. (Programmierung)
+- [MAHE Elektrodenkabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/): Elektrodenkabel für Cleaner- und MMA-Geräte. (Kabel)
+- [MAHE Massekabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel/): Massekabel mit Klemme für Cleaner- und MMA-Geräte. (Kabel)
+- [MAHE MF405W](https://www.ves-tech.ch/produkte/zubehoer/mf405w/): Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie. (Brenner)
+- [MAHE MF240W](https://www.ves-tech.ch/produkte/zubehoer/mf240w/): Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen. (Brenner)
+
+## Verfahren
+- MIS – Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.
+- Doppelpuls: Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung – ideal für Aluminium.
+- HyperPuls: Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.
+- HyperForce: Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.
+- HyperCold: Geringste Wärmeeinbringung – ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
+- HyperRoot: Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite – auch bei grösseren Spalten.
+- HyperUP: Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.
+
+## Häufige Fragen
+- [Was kostet ein MAHE Schweissgerät bei VES-TECH Swiss?](https://www.ves-tech.ch/faq/)
+- [Welches Schweissverfahren brauche ich für Aluminium?](https://www.ves-tech.ch/faq/)
+- [Was ist der Unterschied zwischen WIG DC und WIG AC/DC?](https://www.ves-tech.ch/faq/)
+- [Wie funktioniert die elektrolytische Schweissnahtreinigung?](https://www.ves-tech.ch/faq/)
+- [Welche Blechdicke schneidet ein MAHE Theta Plasmaschneider?](https://www.ves-tech.ch/faq/)
+- [Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?](https://www.ves-tech.ch/faq/)
+- [Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?](https://www.ves-tech.ch/faq/)
+- [Wie schnell erhalte ich ein Angebot?](https://www.ves-tech.ch/faq/)
+- [Liefert VES-TECH Swiss in die ganze Schweiz?](https://www.ves-tech.ch/faq/)
+- [Was ist MIS-Schweissen und HyperPuls bei MAHE?](https://www.ves-tech.ch/faq/)
+
+## Weitere Sprachen
+- Français: https://www.ves-tech.ch/fr/
+- Italiano: https://www.ves-tech.ch/it/

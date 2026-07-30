@@ -1,0 +1,143 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Bild-Pipeline: MAHE-Produktbilder einmalig herunterladen, lokal optimieren
+und ein Manifest mit Abmessungen schreiben.
+
+Warum lokal statt Hotlink auf mahe-online.de?
+  * Ladezeit & Core Web Vitals (LCP) – die Originale sind bis 4 MB gross
+  * Bild-SEO: nur selbst gehostete Bilder können in der Bildersuche ranken
+  * Ausfallsicherheit: die Seite funktioniert auch, wenn mahe-online.de blockt
+
+Ausgabe:
+  assets/img/p/<key>-400.webp    Karten
+  assets/img/p/<key>-1000.webp   Detailseite
+  assets/img/manifest.json       { pfad: {key, w, h} }
+
+Kein PNG-Fallback im Repo: WebP wird von allen relevanten Browsern seit 2020
+unterstützt (Safari 14+). Sollte ein Browser WebP trotzdem nicht dekodieren,
+greift das onerror-Attribut im <img> und lädt das Original von mahe-online.de.
+Ein 800-px-PNG-Fallback hätte das Repo um 18 MB aufgebläht (356 kB pro Bild
+gegenüber 33 kB als WebP).
+
+Aufruf:  python3 build/images.py [--force]
+Benötigt: curl, sips (macOS), cwebp (brew install webp)
+"""
+
+import hashlib
+import json
+import pathlib
+import re
+import subprocess
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import core  # noqa: E402
+
+CACHE = core.BUILD / "cache" / "img"
+OUT = core.ROOT / "assets" / "img" / "p"
+MANIFEST = core.ROOT / "assets" / "img" / "manifest.json"
+
+WEBP_SIZES = [400, 1000]
+UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 VES-TECH-Build/1.0"
+
+
+def key_for(path):
+    """'2022/03/Bild-der-Hypers.png' -> 'bild-der-hypers-1f2a3b'"""
+    stem = pathlib.PurePosixPath(path).stem
+    h = hashlib.md5(path.encode("utf-8")).hexdigest()[:6]
+    return f"{core.slugify(stem)}-{h}"
+
+
+def has(cmd):
+    return subprocess.run(["which", cmd], capture_output=True).returncode == 0
+
+
+def dims(f):
+    r = subprocess.run(["sips", "-g", "pixelWidth", "-g", "pixelHeight", str(f)],
+                       capture_output=True, text=True)
+    w = re.search(r"pixelWidth:\s*(\d+)", r.stdout)
+    h = re.search(r"pixelHeight:\s*(\d+)", r.stdout)
+    return (int(w.group(1)), int(h.group(1))) if w and h else (0, 0)
+
+
+def download(path, dest):
+    url = core.REMOTE_IMG + path
+    r = subprocess.run(["curl", "-sSL", "--max-time", "60", "-A", UA, "-o", str(dest), url],
+                       capture_output=True, text=True)
+    return r.returncode == 0 and dest.exists() and dest.stat().st_size > 500
+
+
+def collect_paths():
+    """Alle eindeutigen Original-Bildpfade (Produkte + Frontpanels)."""
+    s = {core.full_img(p["img"]) for p in core.P}
+    s |= {core.full_img(f["img"]) for f in core.FP.values() if f.get("img")}
+    return sorted(s)
+
+
+def main():
+    force = "--force" in sys.argv
+    if not has("cwebp"):
+        print("!! cwebp fehlt  ->  brew install webp   (WebP wird übersprungen)")
+    CACHE.mkdir(parents=True, exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+
+    manifest = {}
+    if MANIFEST.exists() and not force:
+        try:
+            manifest = json.loads(MANIFEST.read_text("utf-8"))
+        except Exception:
+            manifest = {}
+
+    paths = collect_paths()
+    print(f"{len(paths)} Bilder")
+    ok = fail = skip = 0
+
+    for i, path in enumerate(paths, 1):
+        k = key_for(path)
+        src = CACHE / f"{k}{pathlib.PurePosixPath(path).suffix or '.png'}"
+        done = all((OUT / f"{k}-{s}.webp").exists() for s in WEBP_SIZES)
+        if done and path in manifest and not force:
+            skip += 1
+            continue
+
+        if not src.exists() or force:
+            if not download(path, src):
+                print(f"  [{i:2}/{len(paths)}] FEHLER Download: {path}")
+                fail += 1
+                continue
+
+        w, h = dims(src)
+        if not w:
+            print(f"  [{i:2}/{len(paths)}] FEHLER unlesbar: {path}")
+            fail += 1
+            continue
+
+        # WebP in zwei Grössen – niemals hochskalieren
+        if has("cwebp"):
+            for size in WEBP_SIZES:
+                dst = OUT / f"{k}-{size}.webp"
+                target = min(size, w)
+                subprocess.run(["cwebp", "-quiet", "-q", "82", "-alpha_q", "90",
+                                "-resize", str(target), "0", str(src), "-o", str(dst)],
+                               capture_output=True)
+
+        # Abmessungen der ausgelieferten Grössen (für width/height gegen CLS)
+        manifest[path] = {
+            "key": k,
+            "w": w, "h": h,
+            "ratio": round(h / w, 4) if w else 1.0,
+        }
+        ok += 1
+        print(f"  [{i:2}/{len(paths)}] {path}  {w}×{h}  -> {k}")
+
+    MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), "utf-8")
+    total = sum(f.stat().st_size for f in OUT.glob("*") if f.is_file())
+    print(f"\nfertig: {ok} neu, {skip} übersprungen, {fail} Fehler")
+    print(f"assets/img/p: {len(list(OUT.glob('*')))} Dateien, {total/1024/1024:.1f} MB")
+    if fail:
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()

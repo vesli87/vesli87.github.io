@@ -1,0 +1,54 @@
+{
+ "WIG / TIG": {
+  "fr": "TIG",
+  "it": "TIG"
+ },
+ "Cleaner": {
+  "fr": "Nettoyage",
+  "it": "Pulizia"
+ },
+ "Signiergeräte": {
+  "fr": "Marquage",
+  "it": "Marcatura"
+ },
+ "Dosiersystem": {
+  "fr": "Dosage",
+  "it": "Dosaggio"
+ },
+ "Fahrwagen": {
+  "fr": "Chariots",
+  "it": "Carrelli"
+ },
+ "Wasserkühlung": {
+  "fr": "Refroidissement",
+  "it": "Raffreddamento"
+ },
+ "Drahtvorschubkoffer": {
+  "fr": "Dévidoirs",
+  "it": "Trainafili"
+ },
+ "Fernbedienungen": {
+  "fr": "Télécommandes",
+  "it": "Telecomandi"
+ },
+ "Werkstattausrüstung": {
+  "fr": "Équipement atelier",
+  "it": "Attrezzatura officina"
+ },
+ "Theta Automation": {
+  "fr": "Theta Automation",
+  "it": "Theta Automation"
+ },
+ "Elektrolyte": {
+  "fr": "Électrolytes",
+  "it": "Elettroliti"
+ },
+ "Kabel": {
+  "fr": "Câbles",
+  "it": "Cavi"
+ },
+ "Brenner": {
+  "fr": "Torches",
+  "it": "Torce"
+ }
+}

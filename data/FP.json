@@ -1,0 +1,191 @@
+{
+ "hyper": {
+  "n": "HX – Hyper Front Panel",
+  "big": true,
+  "img": "2022/03/HyperMIG_HX_Frontpanel-300x172.png",
+  "tl": {
+   "de": "Volldigitale Bedienung mit HyperPuls, HyperForce, Doppelpuls und 99 JOB-Programmen.",
+   "fr": "Commande entièrement numérique avec HyperPuls, HyperForce, double pulsation et 99 programmes JOB.",
+   "it": "Comando completamente digitale con HyperPuls, HyperForce, doppio impulso e 99 programmi JOB."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT",
+   "ARC",
+   "BURN"
+  ]
+ },
+ "ecopuls": {
+  "n": "EX – EcoPuls Front Panel",
+  "big": true,
+  "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
+  "tl": {
+   "de": "Digitale Puls-Bedienung mit Impuls, Doppelpuls und JOB-Speicher.",
+   "fr": "Commande numérique pulsée avec impulsion, double pulsation et mémoire JOB.",
+   "it": "Comando digitale pulsato con impulso, doppio impulso e memoria JOB."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT",
+   "ARC"
+  ]
+ },
+ "ecomig": {
+  "n": "EX – EcoMIG Front Panel",
+  "big": true,
+  "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
+  "tl": {
+   "de": "Einfache digitale Synergie-Bedienung für MIG/MAG, MMA und WIG Lift.",
+   "fr": "Commande synergique numérique simple pour MIG/MAG, MMA et TIG Lift.",
+   "it": "Comando sinergico digitale semplice per MIG/MAG, MMA e TIG Lift."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT"
+  ]
+ },
+ "wig": {
+  "n": "WIG DC – Bedienpanel",
+  "big": false,
+  "tl": {
+   "de": "WIG-DC-Panel mit HF-Zündung, HyperSpot, Puls und Slope-Steuerung.",
+   "fr": "Panneau TIG DC avec amorçage HF, HyperSpot, pulsé et slopes.",
+   "it": "Pannello TIG DC con innesco HF, HyperSpot, impulso e slope."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ]
+ },
+ "wig_acdc": {
+  "n": "WIG AC/DC – Bedienpanel",
+  "big": false,
+  "tl": {
+   "de": "AC/DC-Panel mit HF-Zündung, HyperSpot, MAHE-MIX-PULSE und AC-Balance/Frequenz.",
+   "fr": "Panneau AC/DC avec amorçage HF, HyperSpot, MAHE-MIX-PULSE et balance/fréquence AC.",
+   "it": "Pannello AC/DC con innesco HF, HyperSpot, MAHE-MIX-PULSE e balance/frequenza AC."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ]
+ },
+ "mma": {
+  "n": "MMA-Bedienpanel",
+  "big": false,
+  "tl": {
+   "de": "MMA-Panel mit Hot Start, Arc Force und Anti-Stick.",
+   "fr": "Panneau MMA avec Hot Start, Arc Force et Anti-Stick.",
+   "it": "Pannello MMA con Hot Start, Arc Force e Anti-Stick."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MMA_HOT",
+   "MMA_ARC",
+   "MMA_STICK"
+  ]
+ },
+ "theta": {
+  "n": "Plasma-Bedienpanel",
+  "big": false,
+  "tl": {
+   "de": "Plasma-Panel mit Schneidstrom, Luftdruck und Pilotlichtbogen.",
+   "fr": "Panneau plasma avec courant de coupe, pression d’air et arc pilote.",
+   "it": "Pannello plasma con corrente di taglio, pressione aria e arco pilota."
+  },
+  "ctrl": [
+   "THETA_CUR",
+   "THETA_AIR",
+   "THETA_PILOT",
+   "TAKT"
+  ]
+ },
+ "cleaner": {
+  "n": "Cleaner-Bedienpanel",
+  "big": false,
+  "tl": {
+   "de": "Cleaner-Panel mit Leistungsstufen und Betriebsartwahl.",
+   "fr": "Panneau Cleaner avec niveaux de puissance et choix du mode.",
+   "it": "Pannello Cleaner con livelli di potenza e scelta du mode."
+  },
+  "ctrl": [
+   "CL_POWER",
+   "CL_MODE"
+  ]
+ },
+ "steel": {
+  "n": "SX – Steel Front Panel",
+  "big": true,
+  "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
+  "tl": {
+   "de": "Stahl-optimiertes Panel mit HyperCold, HyperRoot und HyperForce.",
+   "fr": "Panneau optimisé acier avec HyperCold, HyperRoot et HyperForce.",
+   "it": "Pannello ottimizzato acciaio con HyperCold, HyperRoot e HyperForce."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT"
+  ]
+ },
+ "steelpuls": {
+  "n": "SX – Steel Puls Front Panel",
+  "big": true,
+  "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
+  "tl": {
+   "de": "Stahl-Puls-Panel mit HyperPuls, HyperUP und HyperForce.",
+   "fr": "Panneau acier pulsé avec HyperPuls, HyperUP et HyperForce.",
+   "it": "Pannello acciaio pulsato con HyperPuls, HyperUP e HyperForce."
+  },
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT",
+   "ARC"
+  ]
+ }
+}

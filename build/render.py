@@ -280,6 +280,12 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
         for l, u in alts.items()
     )
     alt_links += f'\n<link rel="alternate" hreflang="x-default" href="{e(C.abs_url(alts[C.DEFAULT_LANG]))}">'
+    verification = ""
+    if C.GOOGLE_SITE_VERIFICATION:
+        verification += f'<meta name="google-site-verification" content="{e(C.GOOGLE_SITE_VERIFICATION)}">\n'
+    if C.BING_SITE_VERIFICATION:
+        verification += f'<meta name="msvalidate.01" content="{e(C.BING_SITE_VERIFICATION)}">\n'
+    verification = verification.rstrip("\n")
     graph = {"@context": "https://schema.org", "@graph": jsonld_blocks}
     og_image = og_image or f"{C.SITE}/assets/img/hero.jpg"
     return f"""<meta charset="utf-8">
@@ -306,6 +312,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{e(og_image)}">
 <meta name="theme-color" content="#E0511A">
+{verification}
 <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">

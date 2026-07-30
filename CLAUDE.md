@@ -29,6 +29,7 @@ Bearbeitet werden also:
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |
 | Seitentitel, meta description, FAQ, Impressum, Datenschutz | `build/i18n_extra.json` |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |
+| Search-Console-/Bing-Verifizierung | `build/core.py` → `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` |
 | Aussehen | `assets/css/site.css` |
 | Suche, Anfrageliste, Formulare | `assets/js/app.js` |
 | Seitenaufbau / HTML-Struktur | `build/pages.py`, `build/render.py` |

@@ -124,6 +124,9 @@ Neue Bilder: `python3 build/images.py` (braucht Netz und `cwebp`), danach `build
 - `sitemap.xml` mit `xhtml:link`-Alternates (237 URLs); Suche und Rechtstexte
   sind `noindex,follow` und stehen bewusst nicht drin
 - `robots.txt` mit Sitemap-Verweis
+- Verifizierungs-Tags für Google Search Console und Bing Webmaster Tools:
+  Wert in `core.py` eintragen (`GOOGLE_SITE_VERIFICATION`,
+  `BING_SITE_VERIFICATION`), das Tag erscheint dann auf jeder Seite
 - CSS/JS mit `?v=<hash>` — sonst liefern Browser nach einem Deploy die alte Datei
 
 **Preis auf Anfrage im Schema:** Das `Offer` trägt bewusst **kein** `price`-Feld.
@@ -249,7 +252,8 @@ Sprachparität.
 - Web3Forms-Key eintragen (sonst `mailto:`-Fallback)
 - `ves-tech.ch` registrieren (bei nic.ch frei), DNS setzen, Postfach einrichten,
   danach `SITE` + `EMIT_CNAME` + `COMPANY["email"]` umstellen
-- Google Search Console und Bing Webmaster Tools verifizieren, Sitemap einreichen
+- Google Search Console und Bing Webmaster Tools verifizieren (Tag in `core.py`),
+  Sitemap einreichen
 - Google Business Profile für Bronschhofen anlegen (stärkster lokaler SEO-Hebel)
 - Kategorie-Hero-Bilder, Verbrauchsmaterial für Cleaner, Garantieregistrierung
 - Echte Datenblatt-PDFs pro Gerät statt nur Katalog und Zertifikat

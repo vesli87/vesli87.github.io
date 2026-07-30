@@ -64,6 +64,16 @@ COMPANY = {
     "founding_area": ["CH", "LI"],
 }
 
+# Verifizierung der Webmaster-Tools. Beide Dienste bieten eine Meta-Tag-Methode;
+# bei einer <user>.github.io-Adresse ist das der einzige gangbare Weg, weil die
+# DNS-Verifizierung eine eigene Domain voraussetzt.
+#   Google:  Search Console -> Property "URL-Präfix" -> HTML-Tag -> content-Wert
+#   Bing:    Webmaster Tools -> Meta-Tag -> content-Wert
+# Nach dem Eintragen: python3 build/build.py && push. Das Tag steht dann auf jeder
+# Seite; Search Console prüft die Startseite.
+GOOGLE_SITE_VERIFICATION = ""
+BING_SITE_VERIFICATION = ""
+
 BRAND = "MAHE"
 BRAND_URL = "https://mahe-online.de/"
 REMOTE_IMG = "https://mahe-online.de/wp-content/uploads/"

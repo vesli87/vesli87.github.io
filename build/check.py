@@ -67,6 +67,67 @@ def target_exists(href):
     return (ROOT / href.lstrip("/")).exists()
 
 
+# Pflichtfelder je Schema-Typ. Fehlen sie, verliert Google die Rich Results und
+# Antwortmaschinen können die Angaben nicht zuordnen.
+LD_REQUIRED = {
+    "Product":        ["name", "description", "image", "brand", "sku", "offers", "url"],
+    "Offer":          ["availability", "priceCurrency", "url"],
+    "FAQPage":        ["mainEntity"],
+    "BreadcrumbList": ["itemListElement"],
+    "ItemList":       ["itemListElement", "numberOfItems"],
+    "Organization":   ["name", "url", "address", "telephone", "email"],
+    "WebSite":        ["url", "name", "potentialAction"],
+    "WebPage":        ["url", "name", "inLanguage"],
+}
+
+
+def check_ld_node(where, node, types, ids):
+    """Pflichtfelder, aufgelöste @id-Verweise und ein paar inhaltliche Fallen."""
+    for ty in types:
+        for field in LD_REQUIRED.get(ty, []):
+            if field not in node or node[field] in (None, "", [], {}):
+                err(f"{where}: JSON-LD {ty} ohne '{field}'")
+
+    # Verweise wie {"@id": ".../#organization"} müssen im selben Graph landen
+    def refs(v):
+        if isinstance(v, dict):
+            if set(v.keys()) == {"@id"} and v["@id"] not in ids:
+                err(f"{where}: JSON-LD verweist auf unbekanntes @id {v['@id']}")
+            for x in v.values():
+                refs(x)
+        elif isinstance(v, list):
+            for x in v:
+                refs(x)
+    refs({k: v for k, v in node.items() if k != "@id"})
+
+    if "Product" in types:
+        off = node.get("offers") or {}
+        # "Preis auf Anfrage": es darf kein Preis behauptet werden – weder 0 noch leer
+        if "price" in off:
+            err(f"{where}: Product/Offer hat ein price-Feld – die Website führt keine Preise")
+        if not str(node.get("sku", "")).strip():
+            err(f"{where}: Product ohne sku")
+        if isinstance(node.get("image"), list) and not node["image"]:
+            err(f"{where}: Product mit leerer image-Liste")
+        for prop in node.get("additionalProperty", []):
+            if not prop.get("name") or not prop.get("value"):
+                err(f"{where}: PropertyValue ohne name/value")
+
+    if "FAQPage" in types:
+        for q in node.get("mainEntity", []):
+            a = (q.get("acceptedAnswer") or {}).get("text", "")
+            if not q.get("name", "").strip() or not a.strip():
+                err(f"{where}: FAQ-Eintrag ohne Frage oder Antwort")
+            elif len(a) < 80:
+                warn(f"{where}: FAQ-Antwort sehr kurz ({len(a)} Zeichen) – "
+                     f"Antwortmaschinen zitieren lieber vollständige Absätze")
+
+    if "BreadcrumbList" in types:
+        pos = [i.get("position") for i in node.get("itemListElement", [])]
+        if pos != list(range(1, len(pos) + 1)):
+            err(f"{where}: BreadcrumbList mit luecken­hafter position-Folge {pos}")
+
+
 def main():
     pages = sorted(all_pages())
     if len(pages) < 200:
@@ -86,7 +147,7 @@ def main():
             lang = "fr" if p.startswith("/fr/") else "it" if p.startswith("/it/") else "de"
             per_lang[lang] += 1
 
-        # 1. JSON-LD
+        # 1. JSON-LD — parst, hat @context, und die Knoten sind inhaltlich brauchbar
         for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
             try:
                 d = json.loads(m.group(1))
@@ -95,9 +156,14 @@ def main():
                 continue
             if "@context" not in d:
                 err(f"{where}: JSON-LD ohne @context")
-            for node in d.get("@graph", []):
+            graph = d.get("@graph", [])
+            ids = {n["@id"] for n in graph if isinstance(n, dict) and "@id" in n}
+            for node in graph:
                 if "@type" not in node:
                     err(f"{where}: JSON-LD-Knoten ohne @type")
+                    continue
+                types = node["@type"] if isinstance(node["@type"], list) else [node["@type"]]
+                check_ld_node(where, node, types, ids)
 
         # 5. title / description
         mt = re.search(r"<title>(.*?)</title>", html, re.S)

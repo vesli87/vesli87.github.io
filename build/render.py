@@ -480,9 +480,31 @@ def boot_script(lang):
             + ";</script>")
 
 
+def _complete_graph(lang, blocks):
+    """Organization und WebSite gehören in jeden Graph.
+
+    Die Seiten verweisen mit isPartOf/publisher/seller per @id auf diese beiden
+    Knoten. Fehlen sie, zeigt der Verweis ins Leere und die Angaben lassen sich
+    weder Google noch einer Antwortmaschine zuordnen.
+    """
+    have = set()
+    for b in blocks:
+        ty = b.get("@type")
+        for x in (ty if isinstance(ty, list) else [ty]):
+            have.add(x)
+    out = list(blocks)
+    if "Organization" not in have:
+        out.insert(0, ld_org())
+    if "WebSite" not in have:
+        pos = 1 if out and "Organization" in str(out[0].get("@type")) else 0
+        out.insert(pos, ld_website(lang))
+    return out
+
+
 def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
              og_image=None, og_type="website", robots="index,follow,max-image-preview:large",
              extra_head="", body_class=""):
+    jsonld_blocks = _complete_graph(lang, jsonld_blocks)
     return f"""<!DOCTYPE html>
 <html lang="{C.EX[lang]['hreflang']}">
 <head>

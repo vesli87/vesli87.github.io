@@ -468,9 +468,10 @@ def page_faq(lang):
                    h1=C.t(lang, "faq_h1"), desc=C.t(lang, "faq_lead"))
             + '<div class="catalog"><div class="wrap textwrap">'
             + R.faq_block(lang, C.EX[lang]["faq"]) + "</div></div>")
+    # Die FAQPage liefert ld_faq() mitsamt mainEntity. Die WebPage bleibt WebPage –
+    # sonst stuenden zwei FAQPage-Knoten auf der Seite und einer davon ohne Fragen.
     ld = [R.ld_org(), R.ld_faq(lang),
-          R.ld_webpage(lang, url, C.t(lang, "faq_title"), C.t(lang, "faq_desc"),
-                       {"@type": "FAQPage"}),
+          R.ld_webpage(lang, url, C.t(lang, "faq_title"), C.t(lang, "faq_desc")),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "nav_faq"), url)])]
     return url, R.document(lang, title=C.t(lang, "faq_title"), desc=C.t(lang, "faq_desc"),

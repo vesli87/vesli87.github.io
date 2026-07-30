@@ -22,7 +22,7 @@
   (Schweissgeräte, Plasmaschneiden, elektrolytische Reinigung, Zubehör).
   Katalog- und Anfrageseite, **kein** Checkout.
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
-  - Bildfelsstrasse 24, 9552 Bronschhofen (SG), Schweiz
+  - Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz
   - +41 76 710 91 39 · `vestechswiss@gmail.com` · Mo–Fr 07:30–17:30
   - (`info@ves-tech.ch` erst wieder eintragen, wenn die Domain samt Postfach steht)
 - **Keine Preise.** Jedes Gerät zeigt „Preis auf Anfrage". Kundschaft sammelt Geräte

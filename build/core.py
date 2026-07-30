@@ -46,7 +46,7 @@ DEFAULT_LANG = "de"
 COMPANY = {
     "name": "VES-TECH Swiss",
     "legal_name": "VES-TECH Swiss",
-    "street": "Bildfelsstrasse 24",
+    "street": "Bildfeldstrasse 24",
     "zip": "9552",
     "city": "Bronschhofen",
     "region": "SG",

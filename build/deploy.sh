@@ -32,10 +32,38 @@ echo "==> Änderungen committen (falls vorhanden)"
 git add -A
 git diff --cached --quiet || git commit -m "Build: Seiten neu erzeugt"
 
+# Push läuft über HTTPS mit dem OAuth-Token von gh. Der SSH-Weg braucht bei
+# jedem Push die Passphrase und schlägt fehl, wenn der Schlüssel nicht im Agent
+# liegt – das ist bei einem reinen Deploy-Skript nur im Weg.
+echo "==> Git auf HTTPS mit gh-Token umstellen"
+gh auth setup-git
+REMOTE="https://github.com/$OWNER/$REPO.git"
+if git remote get-url origin >/dev/null 2>&1; then
+  git remote set-url origin "$REMOTE"
+else
+  git remote add origin "$REMOTE"
+fi
+
 if gh repo view "$OWNER/$REPO" >/dev/null 2>&1; then
-  echo "==> Repository existiert bereits – pushe nach main"
-  git remote get-url origin >/dev/null 2>&1 || \
-    git remote add origin "https://github.com/$OWNER/$REPO.git"
+  echo "==> Repository existiert bereits – Zustand prüfen"
+  git fetch origin --quiet 2>/dev/null || true
+  if git rev-parse --verify --quiet origin/main >/dev/null; then
+    AHEAD=$(git rev-list --count main..origin/main)
+    if [ "$AHEAD" -gt 0 ]; then
+      echo
+      echo "STOP: origin/main hat $AHEAD Commit(s), die lokal fehlen:"
+      git log --oneline main..origin/main | sed 's/^/    /'
+      echo
+      echo "Ein Push würde diesen Stand verwerfen. Bitte entscheiden:"
+      echo "  a) Fremden Stand übernehmen und darauf aufsetzen:"
+      echo "       git pull --rebase origin main && git push -u origin main"
+      echo "  b) Fremden Stand bewusst verwerfen (nur wenn dort nur ein"
+      echo "     Platzhalter-README liegt):"
+      echo "       git push -u --force-with-lease origin main"
+      exit 1
+    fi
+  fi
+  echo "==> Pushe nach main"
   git push -u origin main
 else
   echo "==> Repository anlegen und pushen"

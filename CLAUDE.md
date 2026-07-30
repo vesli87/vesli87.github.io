@@ -1,7 +1,8 @@
 # CLAUDE.md — Arbeitsanweisung für dieses Repository
 
-Dies ist die Website **VES-TECH Swiss** (`https://www.ves-tech.ch`) — ein
-dreisprachiger Katalog für das MAHE-Schweisstechnik-Programm.
+Dies ist die Website **VES-TECH Swiss** — ein dreisprachiger Katalog für das
+MAHE-Schweisstechnik-Programm. Sie läuft auf `https://vesli87.github.io/`;
+die Domain `www.ves-tech.ch` ist noch nicht registriert.
 
 ## Zuerst lesen
 
@@ -65,5 +66,6 @@ Die vollständige Liste steht in [MASTER_PROMPT.md](MASTER_PROMPT.md#14-harte-re
 ## Deploy
 
 Push auf `main` → GitHub Actions baut, prüft und veröffentlicht auf GitHub Pages
-(`.github/workflows/pages.yml`). Die Datei `CNAME` setzt die Domain
-`www.ves-tech.ch`.
+(`.github/workflows/pages.yml`). Eine `CNAME`-Datei wird erst erzeugt, wenn
+`EMIT_CNAME` in `build/core.py` auf `True` steht — vorher würde sie Pages auf
+eine Domain umstellen, die es nicht gibt, und die Seite wäre nicht erreichbar.

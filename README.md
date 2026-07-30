@@ -4,7 +4,9 @@ Dreisprachiger Katalog (DE / FR / IT) für das MAHE-Schweisstechnik-Programm.
 Statische Website, gebaut aus JSON-Daten mit Python — kein Node, kein Framework,
 kein Bundler.
 
-**Live:** https://www.ves-tech.ch
+**Live:** https://vesli87.github.io/ — die eigene Domain `www.ves-tech.ch` ist
+noch nicht registriert; sobald sie auf GitHub Pages zeigt, genügen zwei Zeilen
+in `build/core.py` (`SITE` und `EMIT_CNAME`).
 
 | | |
 |---|---|

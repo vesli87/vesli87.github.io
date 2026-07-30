@@ -22,13 +22,18 @@
   Katalog- und Anfrageseite, **kein** Checkout.
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
   - Bildfelsstrasse 24, 9552 Bronschhofen (SG), Schweiz
-  - +41 76 710 91 39 · `info@ves-tech.ch` · Mo–Fr 07:30–17:30
+  - +41 76 710 91 39 · `vestechswiss@gmail.com` · Mo–Fr 07:30–17:30
+  - (`info@ves-tech.ch` erst wieder eintragen, wenn die Domain samt Postfach steht)
 - **Keine Preise.** Jedes Gerät zeigt „Preis auf Anfrage". Kundschaft sammelt Geräte
   in der **Anfrageliste** und schickt eine gebündelte Anfrage.
 - **Dreisprachig DE / FR / IT**, Deutsch ist Standard. **Jeder** neue Text existiert in
   allen drei Sprachen. Schweizer Schreibweise: **„ss" statt „ß"** („Schweissen",
   „Wasserkühlung").
-- **Domain:** `https://www.ves-tech.ch` (kanonisch, mit www).
+- **Domain:** aktuell `https://vesli87.github.io` (kanonisch). Die Wunschdomain
+  `www.ves-tech.ch` ist **nicht registriert** (Stand 30.07.2026, geprüft bei
+  nic.ch: kein Eintrag, kein A- und kein MX-Record). Umstellung später:
+  `SITE` und `EMIT_CNAME` in `core.py`, dann Build und Push — GitHub Pages
+  leitet github.io danach per 301 auf die eigene Domain um.
 
 ## 2. Architektur
 
@@ -241,7 +246,8 @@ Sprachparität.
 ## 15. Offene Punkte
 
 - Web3Forms-Key eintragen (sonst `mailto:`-Fallback)
-- DNS für `www.ves-tech.ch` auf GitHub Pages zeigen lassen
+- `ves-tech.ch` registrieren (bei nic.ch frei), DNS setzen, Postfach einrichten,
+  danach `SITE` + `EMIT_CNAME` + `COMPANY["email"]` umstellen
 - Google Search Console und Bing Webmaster Tools verifizieren, Sitemap einreichen
 - Google Business Profile für Bronschhofen anlegen (stärkster lokaler SEO-Hebel)
 - Kategorie-Hero-Bilder, Verbrauchsmaterial für Cleaner, Garantieregistrierung

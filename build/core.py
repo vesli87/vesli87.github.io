@@ -28,12 +28,16 @@ BUILD = ROOT / "build"
 # Konfiguration
 # --------------------------------------------------------------------------
 
-SITE = "https://www.ves-tech.ch"          # kanonische Domain (ohne Slash am Ende)
+SITE = "https://vesli87.github.io"        # kanonische Domain (ohne Slash am Ende)
 
 # Eigene Domain: erst einschalten, wenn ihr DNS auf GitHub Pages zeigt.
 # Liegt CNAME im Repository, stellt GitHub Pages die Auslieferung auf diese
 # Domain um – die Vorschau unter <user>.github.io antwortet dann mit 404.
-# Umstellen auf True, sobald  www.ves-tech.ch  auf vesli87.github.io. zeigt.
+# Sobald www.ves-tech.ch registriert ist und auf vesli87.github.io. zeigt:
+#   1. SITE oben auf "https://www.ves-tech.ch" setzen
+#   2. EMIT_CNAME = True
+#   3. python3 build/build.py && python3 build/check.py && git push
+# GitHub Pages leitet danach github.io per 301 auf die eigene Domain um.
 CUSTOM_DOMAIN = "www.ves-tech.ch"
 EMIT_CNAME = False
 LANGS = ["de", "fr", "it"]
@@ -51,7 +55,7 @@ COMPANY = {
     "country_name": "Schweiz",
     "phone": "+41 76 710 91 39",
     "phone_href": "+41767109139",
-    "email": "info@ves-tech.ch",
+    "email": "vestechswiss@gmail.com",
     "hours": "Mo-Fr 07:30-17:30",
     "hours_schema": [{"days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                       "opens": "07:30", "closes": "17:30"}],

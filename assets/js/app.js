@@ -534,7 +534,7 @@
       body: JSON.stringify({
         access_key: VT.web3formsKey,
         subject: subject,
-        from_name: data.name || 'ves-tech.ch',
+        from_name: data.name || 'VES-TECH Swiss',
         email: data.email,
         phone: data.phone,
         message: body,
@@ -575,7 +575,7 @@
   if (kForm) {
     kForm.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      submitForm(kForm, 'Kontaktanfrage ves-tech.ch');
+      submitForm(kForm, 'Kontaktanfrage VES-TECH Swiss');
     });
   }
 

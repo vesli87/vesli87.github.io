@@ -32,6 +32,18 @@ def _ver(rel):
     return rel + "?v=" + hashlib.md5(f.read_bytes()).hexdigest()[:8]
 
 
+# Hero: dasselbe Bild in drei Breiten. Das Original bleibt als hero.jpg liegen
+# und dient dem onerror-Fallback für Browser ohne WebP.
+HERO_SRCSET = ("/assets/img/hero-640.webp 640w, /assets/img/hero-1000.webp 1000w, "
+               "/assets/img/hero-1536.webp 1536w")
+HERO_SRC = "/assets/img/hero-1536.webp"
+HERO_W, HERO_H = 1536, 1024
+
+# Das Hero ist das LCP-Element der Startseite. Ohne preload findet der Browser
+# es erst, nachdem er CSS geparst hat – mit preload startet der Download sofort.
+HERO_PRELOAD = (f'<link rel="preload" as="image" href="{HERO_SRC}" '
+                f'imagesrcset="{HERO_SRCSET}" imagesizes="100vw" fetchpriority="high">')
+
 CSS_URL = _ver("/assets/css/site.css")
 JS_URL = _ver("/assets/js/app.js")
 
@@ -268,9 +280,17 @@ def ld_webpage(lang, url, title, desc, extra=None):
 # Layout
 # --------------------------------------------------------------------------
 
-FONTS = ("https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700"
-         "&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&family=Inter:wght@400;500;600;700"
-         "&display=swap")
+FONTS_URL = _ver("/assets/fonts/fonts.css")
+
+# Diese beiden Schnitte stehen auf jeder Seite über dem Falz (Anton in der H1,
+# Inter im Fliesstext) – preload startet ihren Download vor dem CSS-Parsing.
+# crossorigin ist bei Schriften auch für dieselbe Herkunft Pflicht.
+FONT_PRELOAD = (
+    '<link rel="preload" as="font" type="font/woff2" crossorigin '
+    'href="/assets/fonts/inter-400-700-latin.woff2">\n'
+    '<link rel="preload" as="font" type="font/woff2" crossorigin '
+    'href="/assets/fonts/anton-400-latin.woff2">'
+)
 
 
 def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
@@ -316,10 +336,8 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{FONTS}" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="{FONTS}"></noscript>
+{FONT_PRELOAD}
+<link rel="stylesheet" href="{FONTS_URL}">
 <link rel="stylesheet" href="{CSS_URL}">
 {extra_head}
 {jsonld(graph)}"""

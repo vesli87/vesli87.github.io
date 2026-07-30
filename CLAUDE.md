@@ -61,6 +61,11 @@ python3 -m http.server 8099
 4. `norm()` in `build/build.py` und `assets/js/app.js` müssen identisch bleiben,
    sonst findet die Suche nichts mehr.
 5. Cleaner-Geräte bekommen **kein** erfundenes Frontpanel.
+6. **Keine Kopierschutz-Massnahmen einbauen** (Rechtsklick-Sperre, Textauswahl
+   sperren, DevTools-Blocker, Verschleierung). Sie sind wirkungslos, schaden der
+   Bedienbarkeit und der Barrierefreiheit — und Inhalt per JavaScript zu
+   verstecken zerstört SEO und AEO. Der Schutz liegt in `LICENSE`, nicht im Code.
+   Begründung in [MASTER_PROMPT.md](MASTER_PROMPT.md#15-was-sich-am-code-schützen-lässt--und-was-nicht).
 
 Die vollständige Liste steht in [MASTER_PROMPT.md](MASTER_PROMPT.md#14-harte-regeln-beim-erweitern).
 

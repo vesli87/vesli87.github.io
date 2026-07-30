@@ -71,6 +71,13 @@ COMPANY = {
 #   Bing:    Webmaster Tools -> Meta-Tag -> content-Wert
 # Nach dem Eintragen: python3 build/build.py && push. Das Tag steht dann auf jeder
 # Seite; Search Console prüft die Startseite.
+# IndexNow: meldet neue und geänderte Seiten sofort an Bing, Yandex, Seznam und
+# Naver, statt auf den nächsten Crawl zu warten. Google unterstützt IndexNow
+# nicht – dort führt der Weg über die Search Console.
+# Der Schlüssel muss unter https://<host>/<key>.txt erreichbar sein; build.py
+# legt die Datei automatisch an.
+INDEXNOW_KEY = "266e3b91b00779fe333528ec8a2dc352"
+
 GOOGLE_SITE_VERIFICATION = ""
 BING_SITE_VERIFICATION = ""
 

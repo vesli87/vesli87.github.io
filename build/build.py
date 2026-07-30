@@ -421,6 +421,8 @@ def main():
     elif cname.exists():
         cname.unlink()          # sonst zeigt Pages weiter auf die tote Domain
     write("/.nojekyll", "")
+    if C.INDEXNOW_KEY:
+        write(f"/{C.INDEXNOW_KEY}.txt", C.INDEXNOW_KEY)
     (C.DATA / "products.json").write_text(
         json.dumps(products_json(), ensure_ascii=False, indent=1), "utf-8")
 

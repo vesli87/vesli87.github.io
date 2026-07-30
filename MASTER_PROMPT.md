@@ -247,7 +247,37 @@ Sprachparität.
 10. Liefert MAHE einen Screenshot mit „Besonderheiten", wird der Text **wortwörtlich**
     in `HL`/`HL_CLEAN`/`PANEL_HL` übernommen, in allen drei Sprachen.
 
-## 15. Offene Punkte
+## 15. Was sich am Code schützen lässt — und was nicht
+
+Eine Website liefert ihren Code an jeden Browser aus, der sie öffnet. HTML, CSS
+und JavaScript **müssen** beim Besucher ankommen, sonst gäbe es nichts
+anzuzeigen. Alles, was so tut, als würde es das verhindern, ist Fassade:
+
+| Massnahme | Wirkung | Preis |
+|---|---|---|
+| Rechtsklick sperren | `Strg+U`, `curl`, DevTools — in Sekunden umgangen | Text nicht markierbar, kaputte Bedienung, Barrierefreiheit weg |
+| Textauswahl sperren | dito | Kundschaft kann Telefonnummer nicht kopieren |
+| DevTools-Blocker | umgangen, sobald JavaScript aus ist | Seite bricht bei manchen Nutzern |
+| JavaScript verschleiern | Aufwand für den Kopierer: Minuten | grösserer Download, schwerer zu warten |
+| Inhalt per JS nachladen | Crawler sehen nichts mehr | **zerstört SEO und AEO vollständig** |
+
+Die letzte Zeile ist der Kern: Sichtbarkeit in Suchmaschinen und Kopierschutz
+sind gegenläufig. Google muss den Text lesen können — und was Google lesen kann,
+kann jeder lesen. Für eine Katalogseite, deren Zweck Auffindbarkeit ist, gewinnt
+die Sichtbarkeit.
+
+**Was tatsächlich schützt:**
+
+1. **Urheberrecht.** `LICENSE` im Repository und der Hinweis im Impressum machen
+   die Rechtslage eindeutig. Das ist der einzige Schutz, der vor Gericht zählt.
+2. **Repository privat stellen.** Dann ist der Quellcode nicht mehr einsehbar —
+   die ausgelieferte Website bleibt es naturgemäss. Setzt GitHub Pro voraus
+   (Pages aus privaten Repositories ist kostenpflichtig).
+3. **Das, was wirklich Wert hat, liegt ohnehin nicht im Code:** die Domain, die
+   Marke, die MAHE-Partnerschaft, die Kundenbeziehungen und der Rang bei Google.
+   Wer die Dateien kopiert, hat davon nichts.
+
+## 16. Offene Punkte
 
 - Web3Forms-Key eintragen (sonst `mailto:`-Fallback)
 - `ves-tech.ch` registrieren (bei nic.ch frei), DNS setzen, Postfach einrichten,

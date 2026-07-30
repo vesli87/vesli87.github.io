@@ -171,8 +171,10 @@ def page_home(lang):
     faq6 = C.EX[lang]["faq"][:6]
     body = f"""
 <section class="hero">
-  <img class="hero-photo" src="/assets/img/hero.jpg" width="1536" height="1024" fetchpriority="high"
-       decoding="async" alt="{e(C.BRAND)} Schweissanlagen bei {e(C.t(lang,'site_name'))}">
+  <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
+       width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
+       alt="{e(C.BRAND)} Schweissanlagen bei {e(C.t(lang,'site_name'))}"
+       onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
   <div class="hero-grad" aria-hidden="true"></div>
   <div class="wrap hero-cta"><div class="cta-row">
     <a class="btn pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a>
@@ -213,7 +215,8 @@ def page_home(lang):
           R.ld_faq_subset(lang, faq6, url)]
     return url, R.document(
         lang, title=C.t(lang, "home_title"), desc=C.t(lang, "home_desc"),
-        url=url, alts=alts, jsonld_blocks=ld, body=body)
+        url=url, alts=alts, jsonld_blocks=ld, body=body,
+        extra_head=R.HERO_PRELOAD)
 
 
 def page_products(lang):

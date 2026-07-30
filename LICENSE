@@ -1,0 +1,39 @@
+Copyright © 2026 VES-TECH Swiss, Bildfelsstrasse 24, 9552 Bronschhofen, Schweiz.
+Alle Rechte vorbehalten. All rights reserved.
+
+WEBSITE-CODE UND GESTALTUNG
+Der Quellcode dieses Repositories (HTML-Generator, CSS, JavaScript, Struktur,
+Texte und Gestaltung) ist urheberrechtlich geschützt und gehört VES-TECH Swiss.
+
+Dieses Repository ist öffentlich einsehbar, damit GitHub Pages die Website
+ausliefern kann. Öffentliche Einsehbarkeit ist KEINE Freigabe zur Nutzung.
+Ohne vorherige schriftliche Zustimmung von VES-TECH Swiss ist insbesondere
+untersagt:
+
+  * das Vervielfältigen, Verbreiten oder Veröffentlichen des Codes oder
+    wesentlicher Teile davon,
+  * das Betreiben einer abgeleiteten oder nachgebauten Website,
+  * die Übernahme der Texte, der Gestaltung oder der Datenstruktur,
+  * die Nutzung für kommerzielle Zwecke jeder Art.
+
+Erlaubt bleibt, was das Urheberrecht ohnehin zulässt: das Betrachten im
+Browser, das Zitieren einzelner Stellen mit Quellenangabe und die technisch
+notwendige Zwischenspeicherung durch Browser, Proxies und Suchmaschinen.
+
+PRODUKTDATEN UND PRODUKTBILDER
+Technische Daten, Produktbeschreibungen und Produktbilder stammen von der
+MAHE GmbH, Deutschland, und sind deren Eigentum. VES-TECH Swiss gibt sie als
+Schweizer Partner wieder. Sie unterliegen den Rechten der MAHE GmbH und dürfen
+ohne deren Zustimmung nicht weiterverwendet werden.
+
+SCHRIFTEN
+Die Schriften unter assets/fonts/ (Anton, Barlow Condensed, Bodoni Moda, Inter)
+stehen unter der SIL Open Font License 1.1 und behalten diese Lizenz. Sie sind
+von dieser Urheberrechtsnotiz ausdrücklich ausgenommen.
+Lizenztext: https://scripts.sil.org/OFL
+
+HAFTUNG
+Die Software wird ohne Gewähr bereitgestellt. VES-TECH Swiss haftet nicht für
+Schäden aus ihrer Nutzung.
+
+Kontakt für Anfragen zur Nutzung: vestechswiss@gmail.com

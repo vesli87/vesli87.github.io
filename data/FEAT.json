@@ -64,7 +64,7 @@
  },
  "synergy": {
   "tile": true,
-  "svg": "<svg viewBox=\"0 0 48 48\"><rect width=\"48\" height=\"48\" rx=\"11\" fill=\"#23457f\"/><path d=\"M13 21 a12 12 0 0 1 20 -3\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M33 11 v7 h-7\" fill=\"none\" stroke=\"#ff5a3c\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M35 27 a12 12 0 0 1 -20 3\" fill=\"none\" stroke=\"#fff\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M15 37 v-7 h7\" fill=\"none\" stroke=\"#ff5a3c\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+  "svg": "<svg viewBox=\"0 0 48 48\"><rect width=\"48\" height=\"48\" rx=\"11\" fill=\"#23457f\"/><text x=\"24\" y=\"29\" text-anchor=\"middle\" font-family=\"'Barlow Condensed',Arial,sans-serif\" font-size=\"20\" font-weight=\"700\" letter-spacing=\"0.5\" fill=\"#fff\">SYN</text><rect x=\"13\" y=\"33\" width=\"22\" height=\"3.5\" rx=\"1.75\" fill=\"#ff5a3c\"/></svg>",
   "de": "Synergie",
   "fr": "Synergie",
   "it": "Sinergia"

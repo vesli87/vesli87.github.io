@@ -346,46 +346,49 @@
    },
    "highlights": {
     "de": [
-     "Hochfrequenz-Impulsschweissen",
-     "HyperSpot Punktschweissen",
-     "ActiveSpot Heftfunktion",
+     "Resonanz Inverter gesteuert durch einen DSP-Controller",
+     "Bis zu 20kHz Impulsschweissen",
+     "ActiveBoost Funktion",
      "Hyper ARC Active Regelung",
-     "Mix-TIG-Schweissen",
-     "AC/DC – Aluminium & Stahl",
-     "MAHE-MIX-PULSE",
-     "Strom-Modulation einstellbar",
-     "Digitale Anzeige",
-     "Leistungsstarke Wasserkühlung",
+     "HyperSpot Schweissen",
+     "Mix TIG Schweissen",
+     "Kalotten Formungsfunktion",
+     "Strom Modulation einstellbar",
+     "5 Speicherplätze für schnellen Zugriff",
      "Fernbedienung",
-     "JOB-Modus"
+     "Einfache Synergy Bedienung",
+     "Automatische Pulseinstellung",
+     "Fernbedienung optional"
     ],
     "fr": [
-     "Soudage pulsé haute fréquence",
-     "Pointage HyperSpot",
-     "Fonction ActiveSpot",
+     "Onduleur à résonance piloté par contrôleur DSP",
+     "Soudage pulsé jusqu'à 20 kHz",
+     "Fonction ActiveBoost",
      "Régulation Hyper ARC Active",
-     "Soudage Mix-TIG",
-     "AC/DC – aluminium & acier",
-     "MAHE-MIX-PULSE",
+     "Soudage HyperSpot",
+     "Soudage Mix TIG",
+     "Fonction de formage de la calotte",
      "Modulation de courant réglable",
-     "Affichage numérique",
-     "Refroidissement eau puissant",
+     "5 emplacements mémoire pour un accès rapide",
      "Télécommande",
-     "Mode JOB"
+     "Commande Synergy simple",
+     "Réglage automatique de la pulsation",
+     "Télécommande en option"
     ],
     "it": [
-     "Saldatura pulsata ad alta frequenza",
-     "Puntatura HyperSpot",
-     "Funzione ActiveSpot",
+     "Inverter a risonanza pilotato da controller DSP",
+     "Saldatura pulsata fino a 20 kHz",
+     "Funzione ActiveBoost",
      "Regolazione Hyper ARC Active",
-     "Saldatura Mix-TIG",
-     "AC/DC – alluminio & acciaio",
-     "MAHE-MIX-PULSE",
+     "Saldatura HyperSpot",
+     "Saldatura Mix TIG",
+     "Funzione di formatura della calotta",
      "Modulazione di corrente regolabile",
-     "Display digitale",
-     "Raffreddamento ad acqua potente",
+     "5 posizioni di memoria per un accesso rapido",
      "Telecomando",
-     "Modo JOB"
+     "Comando Synergy semplice",
+     "Regolazione automatica dell'impulso",
+     "Telecomando opzionale"
     ]
    },
    "specs": {
@@ -559,46 +562,46 @@
    },
    "highlights": {
     "de": [
-     "Hochfrequenz-Impulsschweissen",
+     "Hochfrequenz Impulsschweissen",
      "HyperSpot Punktschweissen",
-     "ActiveSpot Heftfunktion",
+     "ActiveSpot – schnelle Heftfunktion",
      "Hyper ARC Active Regelung",
-     "Mix-TIG-Schweissen",
-     "AC/DC – Aluminium & Stahl",
-     "MAHE-MIX-PULSE",
-     "Strom-Modulation einstellbar",
+     "Mix TIG Schweissen",
+     "Strom Modulation einstellbar",
+     "5 Meter Zuleitungskabel",
      "Digitale Anzeige",
      "Leistungsstarke Wasserkühlung",
      "Fernbedienung",
-     "JOB-Modus"
+     "Synergy Einstellungen",
+     "Job Mode"
     ],
     "fr": [
      "Soudage pulsé haute fréquence",
      "Pointage HyperSpot",
-     "Fonction ActiveSpot",
+     "ActiveSpot – pointage rapide",
      "Régulation Hyper ARC Active",
-     "Soudage Mix-TIG",
-     "AC/DC – aluminium & acier",
-     "MAHE-MIX-PULSE",
+     "Soudage Mix TIG",
      "Modulation de courant réglable",
+     "Câble d'alimentation de 5 mètres",
      "Affichage numérique",
-     "Refroidissement eau puissant",
+     "Refroidissement à eau performant",
      "Télécommande",
-     "Mode JOB"
+     "Réglages Synergy",
+     "Mode Job"
     ],
     "it": [
      "Saldatura pulsata ad alta frequenza",
      "Puntatura HyperSpot",
-     "Funzione ActiveSpot",
+     "ActiveSpot – puntatura rapida",
      "Regolazione Hyper ARC Active",
-     "Saldatura Mix-TIG",
-     "AC/DC – alluminio & acciaio",
-     "MAHE-MIX-PULSE",
+     "Saldatura Mix TIG",
      "Modulazione di corrente regolabile",
+     "Cavo di alimentazione da 5 metri",
      "Display digitale",
      "Raffreddamento ad acqua potente",
      "Telecomando",
-     "Modo JOB"
+     "Impostazioni Synergy",
+     "Modalità Job"
     ]
    },
    "specs": {
@@ -666,43 +669,37 @@
    },
    "highlights": {
     "de": [
-     "Hochfrequenz-Impulsschweissen",
+     "Hochfrequenz Impulsschweissen",
      "HyperSpot Punktschweissen",
-     "ActiveSpot Heftfunktion",
+     "ActiveSpot – schnelle Heftfunktion",
      "Hyper ARC Active Regelung",
-     "Mix-TIG-Schweissen",
-     "WIG DC & MMA",
-     "Strom-Modulation einstellbar",
      "Digitale Anzeige",
+     "Leistungsstarke Wasserkühlung",
      "Fernbedienung",
-     "Synergy-Einstellungen",
-     "JOB-Modus"
+     "Synergy Einstellungen",
+     "Job Mode"
     ],
     "fr": [
      "Soudage pulsé haute fréquence",
      "Pointage HyperSpot",
-     "Fonction ActiveSpot",
+     "ActiveSpot – pointage rapide",
      "Régulation Hyper ARC Active",
-     "Soudage Mix-TIG",
-     "TIG DC & MMA",
-     "Modulation de courant réglable",
      "Affichage numérique",
+     "Refroidissement à eau performant",
      "Télécommande",
      "Réglages Synergy",
-     "Mode JOB"
+     "Mode Job"
     ],
     "it": [
      "Saldatura pulsata ad alta frequenza",
      "Puntatura HyperSpot",
-     "Funzione ActiveSpot",
+     "ActiveSpot – puntatura rapida",
      "Regolazione Hyper ARC Active",
-     "Saldatura Mix-TIG",
-     "TIG DC & MMA",
-     "Modulazione di corrente regolabile",
      "Display digitale",
+     "Raffreddamento ad acqua potente",
      "Telecomando",
      "Impostazioni Synergy",
-     "Modo JOB"
+     "Modalità Job"
     ]
    },
    "specs": {
@@ -872,46 +869,43 @@
    },
    "highlights": {
     "de": [
-     "Hochfrequenz-Impulsschweissen",
+     "Hochfrequenz Impulsschweissen",
      "HyperSpot Punktschweissen",
-     "ActiveSpot Heftfunktion",
      "Hyper ARC Active Regelung",
-     "Mix-TIG-Schweissen",
-     "AC/DC – Aluminium & Stahl",
-     "MAHE-MIX-PULSE",
-     "Strom-Modulation einstellbar",
-     "Digitale Anzeige",
+     "Mix TIG Schweissen",
+     "Strom Modulation einstellbar",
+     "5 Meter Zuleitungskabel",
+     "Digitale Volt und Ampere Anzeige",
      "Leistungsstarke Wasserkühlung",
      "Fernbedienung",
-     "JOB-Modus"
+     "Synergy Einstellungen",
+     "Job Mode"
     ],
     "fr": [
      "Soudage pulsé haute fréquence",
      "Pointage HyperSpot",
-     "Fonction ActiveSpot",
      "Régulation Hyper ARC Active",
-     "Soudage Mix-TIG",
-     "AC/DC – aluminium & acier",
-     "MAHE-MIX-PULSE",
+     "Soudage Mix TIG",
      "Modulation de courant réglable",
-     "Affichage numérique",
-     "Refroidissement eau puissant",
+     "Câble d'alimentation de 5 mètres",
+     "Affichage numérique des volts et ampères",
+     "Refroidissement à eau performant",
      "Télécommande",
-     "Mode JOB"
+     "Réglages Synergy",
+     "Mode Job"
     ],
     "it": [
      "Saldatura pulsata ad alta frequenza",
      "Puntatura HyperSpot",
-     "Funzione ActiveSpot",
      "Regolazione Hyper ARC Active",
-     "Saldatura Mix-TIG",
-     "AC/DC – alluminio & acciaio",
-     "MAHE-MIX-PULSE",
+     "Saldatura Mix TIG",
      "Modulazione di corrente regolabile",
-     "Display digitale",
+     "Cavo di alimentazione da 5 metri",
+     "Display digitale di volt e ampere",
      "Raffreddamento ad acqua potente",
      "Telecomando",
-     "Modo JOB"
+     "Impostazioni Synergy",
+     "Modalità Job"
     ]
    },
    "specs": {
@@ -979,34 +973,31 @@
    },
    "highlights": {
     "de": [
-     "MMA-Elektrodenschweissen",
-     "WIG Lift Arc (DC)",
-     "Hot-Start – sichere Zündung",
-     "Arc Force – stabiler Lichtbogen",
-     "Anti-Stick – kein Festkleben",
-     "Übertemperaturschutz",
-     "Generatortauglich",
-     "Robust & einfach zu bedienen"
+     "Schweisst basische, rutile und CEL Elektroden",
+     "Force Arc",
+     "Anti Stick Funktion",
+     "WIG Lift ARC",
+     "5 Meter Zuleitungskabel",
+     "Arbeitet an langen Versorgungskabeln",
+     "100V Technologie"
     ],
     "fr": [
-     "Soudage à l’électrode MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – amorçage sûr",
-     "Arc Force – arc stable",
-     "Anti-Stick – pas de collage",
-     "Protection surtempérature",
-     "Compatible groupe électrogène",
-     "Robuste & simple"
+     "Soude les électrodes basiques, rutiles et cellulosiques",
+     "Force Arc",
+     "Fonction Anti-Stick",
+     "TIG Lift Arc",
+     "Câble d'alimentation de 5 mètres",
+     "Fonctionne sur de longs câbles d'alimentation",
+     "Technologie 100 V"
     ],
     "it": [
-     "Saldatura a elettrodo MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – innesco sicuro",
-     "Arc Force – arco stabile",
-     "Anti-Stick – niente incollaggio",
-     "Protezione sovratemperatura",
-     "Compatibile con generatore",
-     "Robusto & semplice"
+     "Salda elettrodi basici, rutili e cellulosici",
+     "Force Arc",
+     "Funzione Anti-Stick",
+     "TIG Lift Arc",
+     "Cavo di alimentazione da 5 metri",
+     "Funziona con lunghi cavi di alimentazione",
+     "Tecnologia 100 V"
     ]
    },
    "specs": {
@@ -1346,28 +1337,46 @@
    },
    "highlights": {
     "de": [
-     "Mikroplasma- & Plasma-Schweissen",
-     "Feinste Schweissungen ab geringstem Strom",
-     "Stabiler, gebündelter Plasmastrahl",
-     "Für Feinblech bis Industrie",
-     "HF-Zündung",
-     "Pilotlichtbogen"
+     "Plasma TIG Schweissen",
+     "MMA Elektroden Schweissen",
+     "WIG HF Schweissen",
+     "WIG Lift Arc Schweissen",
+     "Arc Force",
+     "Anti Stick",
+     "Up Slope",
+     "Down Slope",
+     "HF Start on / off",
+     "5 Meter Zuleitungskabel",
+     "Mikroregler für die Gasmenge",
+     "Interface"
     ],
     "fr": [
-     "Soudage microplasma & plasma",
-     "Soudures très fines dès un courant minimal",
-     "Jet plasma stable et concentré",
-     "Tôle fine à industrie",
-     "Amorçage HF",
-     "Arc pilote"
+     "Soudage Plasma TIG",
+     "Soudage à l'électrode MMA",
+     "Soudage TIG avec amorçage HF",
+     "Soudage TIG Lift Arc",
+     "Arc Force",
+     "Anti-Stick",
+     "Up Slope",
+     "Down Slope",
+     "Amorçage HF activable/désactivable",
+     "Câble d'alimentation de 5 mètres",
+     "Microréglage du débit de gaz",
+     "Interface"
     ],
     "it": [
-     "Saldatura microplasma & plasma",
-     "Saldature finissime da corrente minima",
-     "Getto plasma stabile e concentrato",
-     "Lamiera fine a industria",
-     "Innesco HF",
-     "Arco pilota"
+     "Saldatura Plasma TIG",
+     "Saldatura a elettrodo MMA",
+     "Saldatura TIG con innesco HF",
+     "Saldatura TIG Lift Arc",
+     "Arc Force",
+     "Anti-Stick",
+     "Up Slope",
+     "Down Slope",
+     "Innesco HF attivabile/disattivabile",
+     "Cavo di alimentazione da 5 metri",
+     "Microregolazione della portata di gas",
+     "Interfaccia"
     ]
    },
    "specs": {
@@ -1432,34 +1441,37 @@
    },
    "highlights": {
     "de": [
-     "Plasmaschneiden mit HSC-Technologie",
-     "Sauberer, schneller Trennschnitt",
-     "Pilotlichtbogen – kontaktloses Zünden",
-     "Für alle leitenden Metalle",
-     "Gittertrennen möglich",
-     "Digitale Anzeige",
-     "Übertemperaturschutz",
-     "Hand- oder Automationsbetrieb"
+     "Trennschnitt max. 8 mm",
+     "Qualitätsschnitt max. 5 mm",
+     "Stabile Lift Arc Zündung",
+     "Kleiner Brenner für enge Flächen",
+     "Timer für Gesamtzeit",
+     "Timer für Verschleissteil Standzeit",
+     "Lochblech Schneidfunktion",
+     "Integrierter Wasserabscheider",
+     "Integrierte Druckanzeige"
     ],
     "fr": [
-     "Découpe plasma technologie HSC",
-     "Coupe nette et rapide",
-     "Arc pilote – amorçage sans contact",
-     "Tous métaux conducteurs",
-     "Découpe de grilles possible",
-     "Affichage numérique",
-     "Protection surtempérature",
-     "Mode manuel ou automation"
+     "Coupe de séparation jusqu'à 8 mm",
+     "Coupe de qualité jusqu'à 5 mm",
+     "Amorçage Lift Arc stable",
+     "Petite torche pour les zones étroites",
+     "Compteur de temps total",
+     "Compteur de durée de vie des consommables",
+     "Fonction de découpe de tôle perforée",
+     "Séparateur d'eau intégré",
+     "Manomètre intégré"
     ],
     "it": [
-     "Taglio plasma tecnologia HSC",
-     "Taglio netto e veloce",
-     "Arco pilota – innesco senza contatto",
-     "Tutti i metalli conduttivi",
-     "Taglio di grigliati possibile",
-     "Display digitale",
-     "Protezione sovratemperatura",
-     "Modo manuale o automazione"
+     "Taglio di separazione fino a 8 mm",
+     "Taglio di qualità fino a 5 mm",
+     "Innesco Lift Arc stabile",
+     "Torcia piccola per spazi ristretti",
+     "Contatore del tempo totale",
+     "Contatore di durata dei consumabili",
+     "Funzione di taglio per lamiera forata",
+     "Separatore d'acqua integrato",
+     "Manometro integrato"
     ]
    },
    "specs": {
@@ -1527,34 +1539,37 @@
    },
    "highlights": {
     "de": [
-     "Plasmaschneiden mit HSC-Technologie",
-     "Sauberer, schneller Trennschnitt",
-     "Pilotlichtbogen – kontaktloses Zünden",
-     "Für alle leitenden Metalle",
-     "Gittertrennen möglich",
-     "Digitale Anzeige",
-     "Übertemperaturschutz",
-     "Hand- oder Automationsbetrieb"
+     "HSC Technologie",
+     "Niedrige Einsatzkosten",
+     "High Performance Schneiden",
+     "Trennschnitt max. 35 mm",
+     "Qualitätsschnitt max. 25 mm",
+     "Stabile Lift Arc Zündung",
+     "Maximale Produktivität",
+     "Lochblech Schneidfunktion",
+     "Fugenhobeln Funktion"
     ],
     "fr": [
-     "Découpe plasma technologie HSC",
-     "Coupe nette et rapide",
-     "Arc pilote – amorçage sans contact",
-     "Tous métaux conducteurs",
-     "Découpe de grilles possible",
-     "Affichage numérique",
-     "Protection surtempérature",
-     "Mode manuel ou automation"
+     "Technologie HSC",
+     "Faibles coûts d'exploitation",
+     "Découpe haute performance",
+     "Coupe de séparation jusqu'à 35 mm",
+     "Coupe de qualité jusqu'à 25 mm",
+     "Amorçage Lift Arc stable",
+     "Productivité maximale",
+     "Fonction de découpe de tôle perforée",
+     "Fonction gougeage"
     ],
     "it": [
-     "Taglio plasma tecnologia HSC",
-     "Taglio netto e veloce",
-     "Arco pilota – innesco senza contatto",
-     "Tutti i metalli conduttivi",
-     "Taglio di grigliati possibile",
-     "Display digitale",
-     "Protezione sovratemperatura",
-     "Modo manuale o automazione"
+     "Tecnologia HSC",
+     "Bassi costi d'esercizio",
+     "Taglio ad alte prestazioni",
+     "Taglio di separazione fino a 35 mm",
+     "Taglio di qualità fino a 25 mm",
+     "Innesco Lift Arc stabile",
+     "Massima produttività",
+     "Funzione di taglio per lamiera forata",
+     "Funzione scriccatura"
     ]
    },
    "specs": {
@@ -1622,34 +1637,40 @@
    },
    "highlights": {
     "de": [
-     "Plasmaschneiden mit HSC-Technologie",
-     "Sauberer, schneller Trennschnitt",
-     "Pilotlichtbogen – kontaktloses Zünden",
-     "Für alle leitenden Metalle",
-     "Gittertrennen möglich",
-     "Digitale Anzeige",
-     "Übertemperaturschutz",
-     "Hand- oder Automationsbetrieb"
+     "HSC Technologie",
+     "Niedrige Einsatzkosten",
+     "High Performance Schneiden",
+     "Trennschnitt max. 55 mm",
+     "Qualitätsschnitt max. 38 mm",
+     "Stabile Lift Arc Zündung",
+     "Maximale Produktivität",
+     "Option Automaten – Schnittstelle",
+     "Lochblech Schneidfunktion",
+     "Fugenhobeln Funktion"
     ],
     "fr": [
-     "Découpe plasma technologie HSC",
-     "Coupe nette et rapide",
-     "Arc pilote – amorçage sans contact",
-     "Tous métaux conducteurs",
-     "Découpe de grilles possible",
-     "Affichage numérique",
-     "Protection surtempérature",
-     "Mode manuel ou automation"
+     "Technologie HSC",
+     "Faibles coûts d'exploitation",
+     "Découpe haute performance",
+     "Coupe de séparation jusqu'à 55 mm",
+     "Coupe de qualité jusqu'à 38 mm",
+     "Amorçage Lift Arc stable",
+     "Productivité maximale",
+     "Interface d'automate en option",
+     "Fonction de découpe de tôle perforée",
+     "Fonction gougeage"
     ],
     "it": [
-     "Taglio plasma tecnologia HSC",
-     "Taglio netto e veloce",
-     "Arco pilota – innesco senza contatto",
-     "Tutti i metalli conduttivi",
-     "Taglio di grigliati possibile",
-     "Display digitale",
-     "Protezione sovratemperatura",
-     "Modo manuale o automazione"
+     "Tecnologia HSC",
+     "Bassi costi d'esercizio",
+     "Taglio ad alte prestazioni",
+     "Taglio di separazione fino a 55 mm",
+     "Taglio di qualità fino a 38 mm",
+     "Innesco Lift Arc stabile",
+     "Massima produttività",
+     "Interfaccia per automazione opzionale",
+     "Funzione di taglio per lamiera forata",
+     "Funzione scriccatura"
     ]
    },
    "specs": {
@@ -1717,34 +1738,37 @@
    },
    "highlights": {
     "de": [
-     "Plasmaschneiden mit HSC-Technologie",
-     "Sauberer, schneller Trennschnitt",
-     "Pilotlichtbogen – kontaktloses Zünden",
-     "Für alle leitenden Metalle",
-     "Gittertrennen möglich",
+     "HSC Technologie",
+     "Schneiden bis 80 mm",
+     "Fugenhobel Funktion",
+     "Lochblech Schneidfunktion",
+     "Zentralanschluss am Brenner",
+     "5 Meter Zuleitungskabel",
      "Digitale Anzeige",
-     "Übertemperaturschutz",
-     "Hand- oder Automationsbetrieb"
+     "Anzeige für den Maschinenstatus",
+     "Brennerpakete bis 15,2 Meter"
     ],
     "fr": [
-     "Découpe plasma technologie HSC",
-     "Coupe nette et rapide",
-     "Arc pilote – amorçage sans contact",
-     "Tous métaux conducteurs",
-     "Découpe de grilles possible",
+     "Technologie HSC",
+     "Découpe jusqu'à 80 mm",
+     "Fonction gougeage",
+     "Fonction de découpe de tôle perforée",
+     "Raccord central sur la torche",
+     "Câble d'alimentation de 5 mètres",
      "Affichage numérique",
-     "Protection surtempérature",
-     "Mode manuel ou automation"
+     "Affichage de l'état de la machine",
+     "Faisceaux de torche jusqu'à 15,2 mètres"
     ],
     "it": [
-     "Taglio plasma tecnologia HSC",
-     "Taglio netto e veloce",
-     "Arco pilota – innesco senza contatto",
-     "Tutti i metalli conduttivi",
-     "Taglio di grigliati possibile",
+     "Tecnologia HSC",
+     "Taglio fino a 80 mm",
+     "Funzione scriccatura",
+     "Funzione di taglio per lamiera forata",
+     "Attacco centralizzato sulla torcia",
+     "Cavo di alimentazione da 5 metri",
      "Display digitale",
-     "Protezione sovratemperatura",
-     "Modo manuale o automazione"
+     "Indicazione dello stato della macchina",
+     "Pacchetti torcia fino a 15,2 metri"
     ]
    },
    "specs": {
@@ -1812,22 +1836,22 @@
    },
    "highlights": {
     "de": [
-     "Kompakte Inverter-Stromquelle",
-     "MAHE Pinsel-Schutz-System",
+     "Leistungsstarke 200 Watt Inverter Stromquelle",
+     "Mahe Pinsel Schutz System",
      "Reinigen, Polieren und Markieren",
      "Synergieprogramm für alle Verfahren",
      "Umweltfreundlich und sicher reinigen"
     ],
     "fr": [
-     "Source inverter compacte",
-     "Système de protection de pinceau MAHE",
+     "Source de courant onduleur puissante de 200 watts",
+     "Système de protection du pinceau Mahe",
      "Nettoyer, polir et marquer",
      "Programme synergique pour tous les procédés",
      "Nettoyage écologique et sûr"
     ],
     "it": [
-     "Generatore inverter compatto",
-     "Sistema di protezione pennello MAHE",
+     "Generatore inverter potente da 200 watt",
+     "Sistema di protezione del pennello Mahe",
      "Pulire, lucidare e marcare",
      "Programma sinergico per tutti i processi",
      "Pulizia ecologica e sicura"
@@ -1893,22 +1917,22 @@
    },
    "highlights": {
     "de": [
-     "Leistungsstarke 1200 Watt Inverter-Stromquelle",
-     "MAHE Pinsel-Schutz-System",
+     "Leistungsstarke 1200 Watt Inverter Stromquelle",
+     "Mahe Pinsel Schutz System",
      "Reinigen, Polieren und Markieren",
      "Synergieprogramm für alle Verfahren",
      "Umweltfreundlich und sicher reinigen"
     ],
     "fr": [
-     "Source inverter puissante 1200 W",
-     "Système de protection de pinceau MAHE",
+     "Source de courant onduleur puissante de 1200 watts",
+     "Système de protection du pinceau Mahe",
      "Nettoyer, polir et marquer",
      "Programme synergique pour tous les procédés",
      "Nettoyage écologique et sûr"
     ],
     "it": [
-     "Generatore inverter potente 1200 W",
-     "Sistema di protezione pennello MAHE",
+     "Generatore inverter potente da 1200 watt",
+     "Sistema di protezione del pennello Mahe",
      "Pulire, lucidare e marcare",
      "Programma sinergico per tutti i processi",
      "Pulizia ecologica e sicura"
@@ -1974,24 +1998,24 @@
    },
    "highlights": {
     "de": [
-     "Leistungsstarke 2400 Watt Inverter-Stromquelle",
-     "MAHE Pinsel-Schutz-System",
+     "Leistungsstarke 2400 Watt Inverter Stromquelle",
+     "Mahe Pinsel Schutz System",
      "Reinigen, Polieren, Markieren und Galvanisieren",
-     "Synergieprogramme für alle Verfahren",
+     "Synergieprogramm für alle Verfahren",
      "Umweltfreundlich und sicher reinigen"
     ],
     "fr": [
-     "Source inverter puissante 2400 W",
-     "Système de protection de pinceau MAHE",
+     "Source de courant onduleur puissante de 2400 watts",
+     "Système de protection du pinceau Mahe",
      "Nettoyer, polir, marquer et galvaniser",
-     "Programmes synergiques pour tous les procédés",
+     "Programme synergique pour tous les procédés",
      "Nettoyage écologique et sûr"
     ],
     "it": [
-     "Generatore inverter potente 2400 W",
-     "Sistema di protezione pennello MAHE",
+     "Generatore inverter potente da 2400 watt",
+     "Sistema di protezione del pennello Mahe",
      "Pulire, lucidare, marcare e galvanizzare",
-     "Programmi sinergici per tutti i processi",
+     "Programma sinergico per tutti i processi",
      "Pulizia ecologica e sicura"
     ]
    },
@@ -2055,24 +2079,24 @@
    },
    "highlights": {
     "de": [
-     "Leistungsstarke 4000 Watt Inverter-Stromquelle",
-     "MAHE Pinsel-Schutz-System",
+     "Leistungsstarke 3600 Watt Inverter Stromquelle",
+     "Mahe Pinsel Schutz System",
      "Reinigen, Polieren, Markieren und Galvanisieren",
-     "Synergieprogramme für alle Verfahren",
+     "Synergieprogramm für alle Verfahren",
      "Umweltfreundlich und sicher reinigen"
     ],
     "fr": [
-     "Source inverter puissante 4000 W",
-     "Système de protection de pinceau MAHE",
+     "Source de courant onduleur puissante de 3600 watts",
+     "Système de protection du pinceau Mahe",
      "Nettoyer, polir, marquer et galvaniser",
-     "Programmes synergiques pour tous les procédés",
+     "Programme synergique pour tous les procédés",
      "Nettoyage écologique et sûr"
     ],
     "it": [
-     "Generatore inverter potente 4000 W",
-     "Sistema di protezione pennello MAHE",
+     "Generatore inverter potente da 3600 watt",
+     "Sistema di protezione del pennello Mahe",
      "Pulire, lucidare, marcare e galvanizzare",
-     "Programmi sinergici per tutti i processi",
+     "Programma sinergico per tutti i processi",
      "Pulizia ecologica e sicura"
     ]
    },
@@ -2136,24 +2160,24 @@
    },
    "highlights": {
     "de": [
-     "Kombigerät: WIG-Schweissen und Reinigen",
-     "MAHE Pinsel-Schutz-System",
-     "Reinigen, Polieren und Markieren",
-     "Synergieprogramm für alle Verfahren",
+     "Multiprozess WIG und Reinigen",
+     "WIG Schweissen mit 200A",
+     "Reinigen mit 2000 Watt",
+     "Reinigen, Polieren, Markieren und Galvanisieren",
      "Umweltfreundlich und sicher reinigen"
     ],
     "fr": [
-     "Appareil combiné : soudage TIG et nettoyage",
-     "Système de protection de pinceau MAHE",
-     "Nettoyer, polir et marquer",
-     "Programme synergique pour tous les procédés",
+     "Multiprocédé TIG et nettoyage",
+     "Soudage TIG avec 200 A",
+     "Nettoyage avec 2000 watts",
+     "Nettoyer, polir, marquer et galvaniser",
      "Nettoyage écologique et sûr"
     ],
     "it": [
-     "Apparecchio combinato: saldatura TIG e pulizia",
-     "Sistema di protezione pennello MAHE",
-     "Pulire, lucidare e marcare",
-     "Programma sinergico per tutti i processi",
+     "Multiprocesso TIG e pulizia",
+     "Saldatura TIG con 200 A",
+     "Pulizia con 2000 watt",
+     "Pulire, lucidare, marcare e galvanizzare",
      "Pulizia ecologica e sicura"
     ]
    },
@@ -3056,34 +3080,37 @@
    },
    "highlights": {
     "de": [
-     "Plasmaschneiden mit HSC-Technologie",
-     "Sauberer, schneller Trennschnitt",
-     "Pilotlichtbogen – kontaktloses Zünden",
-     "Für alle leitenden Metalle",
-     "Gittertrennen möglich",
-     "Digitale Anzeige",
-     "Übertemperaturschutz",
-     "Hand- oder Automationsbetrieb"
+     "HSC Technologie",
+     "Niedrige Einsatzkosten",
+     "High Performance Schneiden",
+     "Trennschnitt grösser 35 mm",
+     "Qualitätsschnitt grösser 25 mm",
+     "Stabile Lift Arc Zündung",
+     "Maximale Produktivität",
+     "Lochblech Schneidfunktion",
+     "Fugenhobeln Funktion"
     ],
     "fr": [
-     "Découpe plasma technologie HSC",
-     "Coupe nette et rapide",
-     "Arc pilote – amorçage sans contact",
-     "Tous métaux conducteurs",
-     "Découpe de grilles possible",
-     "Affichage numérique",
-     "Protection surtempérature",
-     "Mode manuel ou automation"
+     "Technologie HSC",
+     "Faibles coûts d'exploitation",
+     "Découpe haute performance",
+     "Coupe de séparation supérieure à 35 mm",
+     "Coupe de qualité supérieure à 25 mm",
+     "Amorçage Lift Arc stable",
+     "Productivité maximale",
+     "Fonction de découpe de tôle perforée",
+     "Fonction gougeage"
     ],
     "it": [
-     "Taglio plasma tecnologia HSC",
-     "Taglio netto e veloce",
-     "Arco pilota – innesco senza contatto",
-     "Tutti i metalli conduttivi",
-     "Taglio di grigliati possibile",
-     "Display digitale",
-     "Protezione sovratemperatura",
-     "Modo manuale o automazione"
+     "Tecnologia HSC",
+     "Bassi costi d'esercizio",
+     "Taglio ad alte prestazioni",
+     "Taglio di separazione oltre 35 mm",
+     "Taglio di qualità oltre 25 mm",
+     "Innesco Lift Arc stabile",
+     "Massima produttività",
+     "Funzione di taglio per lamiera forata",
+     "Funzione scriccatura"
     ]
    },
    "specs": {
@@ -3151,34 +3178,40 @@
    },
    "highlights": {
     "de": [
-     "Plasmaschneiden mit HSC-Technologie",
-     "Sauberer, schneller Trennschnitt",
-     "Pilotlichtbogen – kontaktloses Zünden",
-     "Für alle leitenden Metalle",
-     "Gittertrennen möglich",
-     "Digitale Anzeige",
-     "Übertemperaturschutz",
-     "Hand- oder Automationsbetrieb"
+     "HSC Technologie",
+     "Automation-Schnittstelle",
+     "Niedrige Einsatzkosten",
+     "High Performance Schneiden",
+     "Trennschnitt grösser 55 mm",
+     "Qualitätsschnitt grösser 38 mm",
+     "Stabile Lift Arc Zündung",
+     "Maximale Produktivität",
+     "Lochblech Schneidfunktion",
+     "Fugenhobeln Funktion"
     ],
     "fr": [
-     "Découpe plasma technologie HSC",
-     "Coupe nette et rapide",
-     "Arc pilote – amorçage sans contact",
-     "Tous métaux conducteurs",
-     "Découpe de grilles possible",
-     "Affichage numérique",
-     "Protection surtempérature",
-     "Mode manuel ou automation"
+     "Technologie HSC",
+     "Interface d'automation",
+     "Faibles coûts d'exploitation",
+     "Découpe haute performance",
+     "Coupe de séparation supérieure à 55 mm",
+     "Coupe de qualité supérieure à 38 mm",
+     "Amorçage Lift Arc stable",
+     "Productivité maximale",
+     "Fonction de découpe de tôle perforée",
+     "Fonction gougeage"
     ],
     "it": [
-     "Taglio plasma tecnologia HSC",
-     "Taglio netto e veloce",
-     "Arco pilota – innesco senza contatto",
-     "Tutti i metalli conduttivi",
-     "Taglio di grigliati possibile",
-     "Display digitale",
-     "Protezione sovratemperatura",
-     "Modo manuale o automazione"
+     "Tecnologia HSC",
+     "Interfaccia di automazione",
+     "Bassi costi d'esercizio",
+     "Taglio ad alte prestazioni",
+     "Taglio di separazione oltre 55 mm",
+     "Taglio di qualità oltre 38 mm",
+     "Innesco Lift Arc stabile",
+     "Massima produttività",
+     "Funzione di taglio per lamiera forata",
+     "Funzione scriccatura"
     ]
    },
    "specs": {
@@ -3245,9 +3278,24 @@
     "it": "Marcatore elettrolitico economico, per l’uso mobile."
    },
    "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
+    "de": [
+     "Stromquelle zum Markieren",
+     "Tiefschwarz markieren",
+     "Kurzschluss – Schutzsystem",
+     "Geeignet für Schablonen aller Hersteller"
+    ],
+    "fr": [
+     "Source de courant pour le marquage",
+     "Marquage noir profond",
+     "Système de protection contre les courts-circuits",
+     "Compatible avec les pochoirs de tous les fabricants"
+    ],
+    "it": [
+     "Generatore per la marcatura",
+     "Marcatura nero intenso",
+     "Sistema di protezione dai cortocircuiti",
+     "Compatibile con le maschere di tutti i produttori"
+    ]
    },
    "specs": {
     "de": {
@@ -3306,9 +3354,27 @@
     "it": "Apparecchio per il dosaggio automatico del liquido di pulizia."
    },
    "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
+    "de": [
+     "Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+     "Automatischer/Manueller Dosiermodus",
+     "Möglichkeit zum Anschluss eines externen Tanks",
+     "Reinigungs-/Spülmodus",
+     "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
+    ],
+    "fr": [
+     "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
+     "Mode de dosage automatique ou manuel",
+     "Possibilité de raccorder un réservoir externe",
+     "Mode nettoyage et rinçage",
+     "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner."
+    ],
+    "it": [
+     "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
+     "Modalità di dosaggio automatica o manuale",
+     "Possibilità di collegare un serbatoio esterno",
+     "Modalità pulizia e risciacquo",
+     "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner."
+    ]
    },
    "specs": {
     "de": {

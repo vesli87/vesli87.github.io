@@ -93,7 +93,8 @@ Der Sprachumschalter verlinkt **immer** auf dieselbe Seite in der anderen Sprach
 | `PROC.json` | 7 MAHE-Verfahren |
 | `DLS.json` | 7 PDF-Links (⚠ `k` ist **nicht** eindeutig — Katalog und EN 1090 heissen beide `PDF`) |
 | `FEAT.json` | 19 Verfahrens-Icons (blaue Kachel `#23457f`, weisses Piktogramm, orange Akzente) |
-| `HL/HL_CLEAN/PANEL_HL.json` | Besonderheiten (Gerät / Cleaner / Frontpanel) |
+| `HL_DEVICE.json` | **Besonderheiten je Gerät**, wörtlich von mahe-online.de, DE/FR/IT — hat Vorrang vor allem anderen |
+| `HL/HL_CLEAN/PANEL_HL.json` | Besonderheiten als Rückfall (Familie / Cleaner / Frontpanel) |
 | `FP.json`, `CTRL.json`, `PANEL_DRAWN.json` | Fronteingabesysteme, Bedienelemente, gezeichnete Panels |
 | `products.json` | **generiert** — öffentlicher, maschinenlesbarer Katalog |
 | `search-{de,fr,it}.json` | **generiert** — Suchindex fürs Frontend |
@@ -254,7 +255,13 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
 7. Firmendaten nur in `core.py::COMPANY` ändern.
 8. `norm()` in `build.py` und `app.js` müssen identisch bleiben.
 9. Nach jeder Änderung: `build.py` **und** `check.py` — Ziel sind **0 Fehler**.
-10. Liefert MAHE einen Screenshot mit „Besonderheiten", wird der Text **wortwörtlich**
+10. **Besonderheiten kommen von MAHE, nicht von uns.** `build/scrape_mahe.py`
+    holt sie von mahe-online.de und legt sie unter `build/mahe_besonderheiten.json`
+    ab; übernommen werden sie von Hand nach `data/HL_DEVICE.json`, damit kein
+    Text am falschen Gerät landet. Offensichtliche Tippfehler des Herstellers
+    („Relegung", „Syniergie", „Reiningen", „Funkcion") werden korrigiert und `ß`
+    wird zu `ss` — ein fremder Fehler sieht auf unserer Seite aus wie unserer.
+11. Liefert MAHE einen Screenshot mit „Besonderheiten", wird der Text **wortwörtlich**
     in `HL`/`HL_CLEAN`/`PANEL_HL` übernommen, in allen drei Sprachen.
 
 ## 14a. Eigene Domain und GitHub Pages

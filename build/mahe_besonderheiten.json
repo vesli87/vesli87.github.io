@@ -1,0 +1,838 @@
+{
+ "CGK Kompakt gasgekühlt": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "Temperatur kontrollierte Lüfter",
+   "Digital synergy kontrolliert",
+   "Sprizerfreier Lichtbogen",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold und HyperForce",
+   "Zukünftige Upgrade Möglichkeiten",
+   "MMA und Fugenhobeln",
+   "Fernbedienung",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "WIG Lift Arc",
+   "Umweltfreundliches Design, 100% recycelbar."
+  ]
+ },
+ "CWK Kompakt wassergekühlt": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "Temperatur kontrollierte Lüfter",
+   "Wasserpumpen Automatik on/off",
+   "Hochleistungs-Wasserkühlung",
+   "Digital synergy kontrolliert",
+   "Sprizerfreier Lichtbogen",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold und HyperForce",
+   "Zukünftige Upgrade Möglichkeiten",
+   "MMA und Fugenhobeln",
+   "Fernbedienung",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "WIG Lift Arc",
+   "Umweltfreundliches Design, 100% recycelbar."
+  ]
+ },
+ "WGK Gasgekühlt mit Drahtvorschubkoffer": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "Temperatur kontrollierte Lüfter",
+   "Für lange Schlauchpakete ausgelegt",
+   "Digital synergy kontrolliert",
+   "Sprizerfreier Lichtbogen",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold und HyperForce",
+   "MMA und Fugenhobeln",
+   "Fernbedienung",
+   "4-Rollenantrieb",
+   "5 MeterZuleitungskabel",
+   "Zwischenschlauchpakete bis 30 Meter",
+   "WIG Lift Arc",
+   "Umweltfreundliches Design, 100% recycelbar."
+  ]
+ },
+ "WWK Wassergekühlt mit Drahtvorschubkoffer": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "Temperatur kontrollierte Lüfter",
+   "Wasserpumpen Automatik on/off",
+   "Hochleistungs-Wasserkühlung",
+   "Für lange Schlauchpakete ausgelegt",
+   "Digital synergy kontrolliert",
+   "Sprizerfreier Lichtbogen",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold und HyperForce",
+   "MMA und Fugenhobeln",
+   "Fernbedienung",
+   "4-Rollenantrieb",
+   "5 MeterZuleitungskabel",
+   "Zwischenschlauchpakete bis 30 Meter",
+   "WIG Lift Arc",
+   "Umweltfreundliches Design, 100% recycelbar."
+  ]
+ },
+ "EX – EcoMIG Front Panel": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "MIS Schweißen",
+   "MIG Löten",
+   "Hyper Force, Root, Cold",
+   "MMA Elektroden Schweißen",
+   "WIG Lift Arc",
+   "Job Mode 99 Programme"
+  ]
+ },
+ "EX – EcoPuls Front Panel": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "MIS Schweißen",
+   "Impuls Schweißen",
+   "Doppelpuls Schweißen",
+   "MIG Löten",
+   "Hyper Force, Root, Cold",
+   "MMA Elektroden Schweißen",
+   "WIG Lift Arc",
+   "Job Mode 99 Programme"
+  ]
+ },
+ "HX – Hyper Front Panel": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "MIS Schweißen",
+   "Impuls Schweißen",
+   "Doppelpuls Schweißen",
+   "MIG Löten",
+   "Hyper Puls Schweißen",
+   "Hyper Force Schweißen",
+   "Hyper Cold Schweißen",
+   "Hyper Root Schweißen",
+   "HyperUP Schweißen",
+   "MMA Elektoden Schweißen",
+   "WIG Lift Arc und Fugenhobeln",
+   "99 Job Mode Programme"
+  ]
+ },
+ "SX – Steel Front Panel": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "MIS Schweißen",
+   "HyperCold Schweißen",
+   "HyperRoot Schweißen",
+   "HyperForce Schweißen",
+   "WIG Lift Arc Schweißen",
+   "MMA Schweißen"
+  ]
+ },
+ "SX – Steel Puls Front Panel": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "MIS Schweißen",
+   "HyperPuls Schweißen",
+   "HyperCold Schweißen",
+   "HyperRoot Schweißen",
+   "HyperForce Schweißen",
+   "HyperUP Schweißen",
+   "WIG Lift Arc Schweißen",
+   "MMA Schweißen"
+  ]
+ },
+ "Gasgekühlt": {
+  "url": "https://mahe-online.de/cmig/",
+  "items": [
+   "2- und 4-Takt Schweißen",
+   "Punkt und Intervall Schweißen",
+   "Automatische Lichtbogenlängen Regelung",
+   "12 Schweißstufen (C – MIG 3300)",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Hohe Einschaltdauer 40%",
+   "CE Kennzeichen",
+   "S Kennzeichnen",
+   "Einstellbarer Drahtrückbrand",
+   "Digitale Volt und Ampere Anzeige"
+  ]
+ },
+ "Kompakt wassergekühlt": {
+  "url": "https://mahe-online.de/cmig/",
+  "items": [
+   "2- und 4-Takt Schweißen",
+   "Punkt und Intervall Schweißen",
+   "Automatische Lichtbogenlängen Regelung",
+   "30 Schweißstufen",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung"
+  ]
+ },
+ "Wassergekühlt mit Drahtvorschubkoffer": {
+  "url": "https://mahe-online.de/cmig/",
+  "items": [
+   "2- und 4-Takt Schweißen",
+   "Punkt und Intervall Schweißen",
+   "Automatische LichtbogenlängenRegelung",
+   "30 Schweißstufen (C – MIG 4000)",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Separater Drahtvorschubkoffer",
+   "Leistungseinstellung im Drahtvorschubkoffer"
+  ]
+ },
+ "Fronteingabesysteme": {
+  "url": "https://mahe-online.de/cmig/",
+  "items": [
+   "Synergy Bedienung",
+   "Lichtbogenregelung",
+   "Anschleißautomatik",
+   "Einstellbarer Drahtrückbrand",
+   "Punkt und Intervall Schweißen"
+  ]
+ },
+ "MMS 2000C": {
+  "url": "https://mahe-online.de/mms/",
+  "items": [
+   "Sprizerfreier Lichtbogen",
+   "Mobil und leicht, nur 11,5 KG2",
+   "Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Umpolung System",
+   "D200 Spule",
+   "WIG Lift Arc"
+  ]
+ },
+ "MMS 2000P EX": {
+  "url": "https://mahe-online.de/mms/",
+  "items": [
+   "Sprizerfreier Lichtbogen",
+   "Impuls Lichtbogen",
+   "HyperCold/HyperRoot Lichtbogen",
+   "Mobil und leicht, nur 21 KG",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Umpolung System",
+   "D300 Spule",
+   "WIG Lift Arc"
+  ]
+ },
+ "MMS 2400/3000 EX": {
+  "url": "https://mahe-online.de/mms/",
+  "items": [
+   "Spritzerfreier Lichtbogen",
+   "Impuls Lichtbogen",
+   "HyperCold / HyperRoot Lichtbogen",
+   "Mobil und leicht, nur 21 KG",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Umpolung System",
+   "D300 Spule",
+   "WIG Lift Arc"
+  ]
+ },
+ "EcoMIG Light Panel": {
+  "url": "https://mahe-online.de/mms/",
+  "items": [
+   "MIS Schweißen im Synergy Modus"
+  ]
+ },
+ "EcoMIG Front Panel": {
+  "url": "https://mahe-online.de/mms/",
+  "items": [
+   "MIS Schweißen",
+   "Hyper Cold, Root, Force",
+   "WIG Lift Arc",
+   "Elektroden Schweißen",
+   "Job Mode 99 Programme",
+   "MMA Schweißen",
+   "WIG Lift Arc"
+  ]
+ },
+ "EcoPuls Front Panel": {
+  "url": "https://mahe-online.de/mms/",
+  "items": [
+   "MIS Schweißen",
+   "Impuls Schweißen",
+   "Doppelpuls Schweißen",
+   "Hyper Force, Cold, Root",
+   "WIG Lift Arc",
+   "Elektroden Schweißen",
+   "Job Mode 99 Programme",
+   "MMA Schweißen",
+   "WIG Lift Arc"
+  ]
+ },
+ "Beta digital 240 Professional": {
+  "url": "https://mahe-online.de/beta-digital/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper ARC Active Regelung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Ampere Anzeige",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "Beta digital 300 Professional": {
+  "url": "https://mahe-online.de/beta-digital/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper ARC Active Regelung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Ampere Anzeige",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "Professional": {
+  "url": "https://mahe-online.de/beta-digital/",
+  "items": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "MMA Schweißen",
+   "Remote Control"
+  ]
+ },
+ "Synergy": {
+  "url": "https://mahe-online.de/beta-digital/",
+  "items": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc"
+  ]
+ },
+ "Beta digital 200 CWK": {
+  "url": "https://mahe-online.de/beta-omega-cwk-200/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper ARC Active Regelung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "Omega 200 CWK": {
+  "url": "https://mahe-online.de/beta-omega-cwk-200/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper ARC Active Regelung",
+   "Mix TIG Schweißen",
+   "Strom Modular einstellbar",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "Beta digital Professional": {
+  "url": "https://mahe-online.de/beta-omega-cwk-200/",
+  "items": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "MMA Schweißen",
+   "Remote Control"
+  ]
+ },
+ "Omega 200 Professional": {
+  "url": "https://mahe-online.de/beta-omega-cwk-200/",
+  "items": [
+   "Omega Active Arc",
+   "Omega Mix-Tig",
+   "Omega HF Puls",
+   "Omega Low Puls",
+   "Omega Active Boost",
+   "MMA Schweißen",
+   "Remote Control"
+  ]
+ },
+ "i-TIG 1600": {
+  "url": "https://mahe-online.de/i-tig/",
+  "items": [
+   "Einfache Bedienung",
+   "MMA Elektroden Schweißen",
+   "WIG HF Schweißen",
+   "WIG Lift Arc Schweißen",
+   "Arc Force",
+   "Anti Stick",
+   "Up Slope",
+   "Down Slope",
+   "HF Start on / off",
+   "5 Meter Zuleitungskabel"
+  ]
+ },
+ "Delta digital": {
+  "url": "https://mahe-online.de/delta-digital/",
+  "items": [
+   "Schweißt basische, rutile und CEL Elektroden",
+   "Arc Force einstellbar",
+   "Hot Start einstellbar",
+   "Anti Stick Funktion",
+   "Fugenhobeln Funktion",
+   "Einstellbare Leerlaufspannung ab 15V",
+   "Stufenlose Vorwahl der Netzsicherung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Fernbedienung"
+  ]
+ },
+ "Delta": {
+  "url": "https://mahe-online.de/delta/",
+  "items": [
+   "Schweißt basische, rutile und CEL Elektroden",
+   "Force Arc",
+   "Anti Stick Funktion",
+   "5 Meter Zuleitungskabel",
+   "Fernbedienung",
+   "WIG Lift Arc"
+  ]
+ },
+ "i-1600": {
+  "url": "https://mahe-online.de/i-1600/",
+  "items": [
+   "Schweißt basische, rutile und CEL Elektroden",
+   "Force Arc",
+   "Anti Stick Funktion",
+   "WIG Lift ARC",
+   "5 Meter Zuleitungskabel",
+   "Arbeitet an langen Versorgungskabeln",
+   "100V Technologie"
+  ]
+ },
+ "Delta Digital DS": {
+  "url": "https://mahe-online.de/delta-digital-ds/",
+  "items": [
+   "Zum Unter Wasser Schweißen",
+   "15V ocV",
+   "Aktive ocV Überwachung",
+   "Optionaler Notausschalter",
+   "Force Arc",
+   "Anti Stick Funktion",
+   "5 Meter Zuleitungskabel",
+   "Fugenhobeln Funktion",
+   "Umschaltbar CV und CW",
+   "Digitale Volt und Ampere Anzeigen",
+   "Data Hold Funktion",
+   "Mobil"
+  ]
+ },
+ "Plasma TIG": {
+  "url": "https://mahe-online.de/plasma-tig/",
+  "items": [
+   "Plasma TIG Schweißen",
+   "MMA Elektroden Schweißen",
+   "WIG HF Schweißen",
+   "WIG Lift Arc Schweißen",
+   "Arc Force",
+   "Anti Stick",
+   "Up Slope",
+   "Down Slope",
+   "HF Start on / off",
+   "5 Meter Zuleitungskabel",
+   "Mikroregler für die Gasmenge",
+   "Interface"
+  ]
+ },
+ "Gamma": {
+  "url": "https://mahe-online.de/gamma/",
+  "items": [
+   "Fugenhobeln Funktion",
+   "Umschaltbar CV und CW",
+   "Zum UP – Schweißen",
+   "Digitale Volt und Ampere Anzeigen",
+   "Data Hold Funktion",
+   "5 Meter Zuleitungskabel"
+  ]
+ },
+ "Gamma HVS": {
+  "url": "https://mahe-online.de/gamma-hvs/",
+  "items": [
+   "Fugenhobeln Funktion",
+   "100V Technologie",
+   "Umschaltbar CV und CW",
+   "Zum UP – Schweißen",
+   "Digitale Volt und Ampere Anzeigen",
+   "Data Hold Funktion",
+   "5 Meter Zuleitungskabel"
+  ]
+ },
+ "HyperTIG AC/DC CWK": {
+  "url": "https://mahe-online.de/hypertig/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper Spot Punktschweißen",
+   "Hyper ARC Active Regelung",
+   "Mix TIG Schweißen",
+   "Strom Modulation einstellbar",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "HyperTIG DC CWK": {
+  "url": "https://mahe-online.de/hypertig-dc-cwk/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper Spot Punktschweißen",
+   "Hyper ARC Active Relegung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "Omega AX pro": {
+  "url": "https://mahe-online.de/omega-ac-dc-2/",
+  "items": [
+   "Resonanz Inverter gesteuert durch einen DSP-Controller",
+   "Bis zu 20kHz Impulsschweißen",
+   "ActiveBoost Funkcion",
+   "Hyper ARC Active Regelung",
+   "HyperSpot Schweißen",
+   "Mix TIG Schweißen",
+   "Kalotten Formungsfunktion",
+   "Strom Modulation einstellbar",
+   "5 Speicherplätze für schnellen Zugriff",
+   "Fernbedienung"
+  ]
+ },
+ "Omega AX syn": {
+  "url": "https://mahe-online.de/omega-ac-dc-2/",
+  "items": [
+   "Resonanz Inverter gesteuert durch einen DSP-Controller",
+   "Einfache Synergy Bedienung",
+   "ActiveBoost Funktion",
+   "Automatische Pulseinstellung",
+   "Fernbedienung optional"
+  ]
+ },
+ "pro": {
+  "url": "https://mahe-online.de/omega-ac-dc-2/",
+  "items": [
+   "Hyper Arc Active",
+   "Hyper Spot",
+   "AC Mix – Tig",
+   "20Khz Puls",
+   "HF Puls",
+   "LF Puls",
+   "Active Boost",
+   "Fernbedienung"
+  ]
+ },
+ "syn": {
+  "url": "https://mahe-online.de/omega-ac-dc-2/",
+  "items": [
+   "Autopuls",
+   "Active Boost",
+   "Fernbedienung"
+  ]
+ },
+ "Omega CWK 200": {
+  "url": "https://mahe-online.de/omega-cwk-200-2/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "Hyper ARC Active Regelung",
+   "Mix TIG Schweißen",
+   "Strom Modulation einstellbar",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode",
+   "Active Boost System"
+  ]
+ },
+ "Omega Professional": {
+  "url": "https://mahe-online.de/omega-cwk-200-2/",
+  "items": [
+   "Omega Active Arc",
+   "Omega Mix – Tig",
+   "Omega HF Puls",
+   "Omega Low Puls",
+   "Omega Active Boost",
+   "MMA Schweißen",
+   "Remote Control"
+  ]
+ },
+ "HyperCleaner ST Plus": {
+  "url": "https://mahe-online.de/hypercleaner-st-plus/",
+  "items": [
+   "Leistungsstarke 3600 Watt Inverter Stromquelle",
+   "Mahe Pinsel Schutz System",
+   "Reinigen, Polieren, Markieren und Galvanisieren",
+   "Synergie Programme für alle Verfahren",
+   "Umweltfreundlich und sicher reinigen"
+  ]
+ },
+ "HyperCleaner ST Speed": {
+  "url": "https://mahe-online.de/hypercleaner-st-speed/",
+  "items": [
+   "Leistungsstarke 2400 Watt Inverter Stromquelle",
+   "Mahe Pinsel Schutz System",
+   "Reinigen, Polieren, Markieren und Galvanisieren",
+   "Synergie Programme für alle Verfahren",
+   "Umweltfreundlich und sicher reinigen"
+  ]
+ },
+ "HyperCleaner ST": {
+  "url": "https://mahe-online.de/hypercleaner-st/",
+  "items": [
+   "Leistungsstarke 1200 Watt Inverter Stromquelle",
+   "Mahe Pinsel Schutz System",
+   "Reiningen, Polieren und Markieren",
+   "Synergieprogramm für alle Verfahren",
+   "Umweltfreundlich und sicher reinigen"
+  ]
+ },
+ "MiniCleaner": {
+  "url": "https://mahe-online.de/minicleaner/",
+  "items": [
+   "Leistungsstarke 200 Watt Inverter Stromquelle",
+   "Mahe Pinsel Schutz System",
+   "Reiningen, Polieren und Markieren",
+   "Syniergie-Programm für alle Verfahren",
+   "Umweltfreundlich und sicher reinigen"
+  ]
+ },
+ "Theta 40": {
+  "url": "https://mahe-online.de/theta-40/",
+  "items": [
+   "Trennschnitt max. 8 mm",
+   "Qualitätsschnitt max. 5 mm",
+   "Stabile Lift Arc Zündung",
+   "Kleiner Brenner für enge Flächen",
+   "Timer für Gesamtzeit",
+   "Timer für Verschleißteil Standzeit",
+   "Lochblech Schneidfunktion",
+   "Integrierter Wasserabscheider",
+   "Integrierte Druckanzeige"
+  ]
+ },
+ "Theta 60 HSC": {
+  "url": "https://mahe-online.de/theta-60-hsc/",
+  "items": [
+   "HSC Technologie",
+   "Niedrige Einsatzkosten",
+   "High Performance Schneiden",
+   "Trennschnitt max. 35 mm",
+   "Qualitätsschnitt max. 25 mm",
+   "Stabile Lift Arc Zündung",
+   "Maximale Produktivität",
+   "Lochblech Schneidfunktion",
+   "Fugenhobeln Funktion"
+  ]
+ },
+ "Theta 120 HSC": {
+  "url": "https://mahe-online.de/theta-120-hsc/",
+  "items": [
+   "HSC Technologie",
+   "Niedrige Einsatzkosten",
+   "High Performance Schneiden",
+   "Trennschnitt max. 55 mm",
+   "Qualitätsschnitt max. 38 mm",
+   "Stabile Lift Arc Zündung",
+   "Maximale Produktivität",
+   "Option Automaten – Schnittstelle",
+   "Lochblech Schneidfunktion",
+   "Fugenhobeln Funktion"
+  ]
+ },
+ "Wassergekühlt": {
+  "url": "https://mahe-online.de/ecopulse/",
+  "items": [
+   "Spritzerfreier Lichtbogen",
+   "Puls Lichtbogen",
+   "Doppel-Puls Lichtbogen",
+   "Hyper Force Lichtbogen",
+   "MMA Elektroden Schweißen",
+   "Fernbedienung",
+   "4-Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "WIG Lift Arc"
+  ]
+ },
+ "EcoPuls 3000": {
+  "url": "https://mahe-online.de/ecomig/",
+  "items": [
+   "MIS spritzerarm Schweißen",
+   "Impuls und Doppelpuls Schweißen",
+   "Hyper Cold, Root, Force Schweißen",
+   "MMA Elektroden Schweißen",
+   "Temperatur kontrollierte Lüfter",
+   "Digital Synergy kontrolliert",
+   "5 Meter Zuleitungskabel",
+   "D300 Spule",
+   "WIG Lift Arc Schweißen"
+  ]
+ },
+ "HCS 1": {
+  "url": "https://mahe-online.de/hcs-1-signiergerat/",
+  "items": [
+   "Stromquelle zum Markieren",
+   "Tiefschwarz markieren",
+   "Kurzschluss – Schutzsystem",
+   "Geeignet für Schablonen aller Hersteller"
+  ]
+ },
+ "Theta 60 AUT": {
+  "url": "https://mahe-online.de/theta-60-aut/",
+  "items": [
+   "HSC Technologie",
+   "Niedrige Einsatzkosten",
+   "High Performance Schneiden",
+   "Trennschnitt größer 35 mm",
+   "Qualitätsschnitt größer 25 mm",
+   "Stabile Lift Arc Zündung",
+   "Maximale Produktivität",
+   "Lochblech Schneidfunktion",
+   "Fugenhobeln Funktion"
+  ]
+ },
+ "Theta 120 AUT": {
+  "url": "https://mahe-online.de/theta-120-aut/",
+  "items": [
+   "HSC Technologie",
+   "Automation-Schnittstelle",
+   "Niedrige Einsatzkosten",
+   "High Performance Schneiden",
+   "Trennschnitt größer 55 mm",
+   "Qualitätsschnitt größer 38 mm",
+   "Stabile Lift Arc Zündung",
+   "Maximale Produktivität",
+   "Lochblech Schneidfunktion",
+   "Fugenhobeln Funktion"
+  ]
+ },
+ "HyperCleaner CT 200": {
+  "url": "https://mahe-online.de/hypercleaner-ct-200/",
+  "items": [
+   "Multiprozess WIG und Reinigen",
+   "WIG Schweißen mit 200A",
+   "Reiningen mit 2000 Watt",
+   "Reinigen, Polieren, Markieren und Galvanisieren.",
+   "Umweltfreundlich und sicher reinigen"
+  ]
+ },
+ "EcoMIG 3000 Analog Front Panel": {
+  "url": "https://mahe-online.de/d-mig/",
+  "items": [
+   "Punkt und Intervall",
+   "Elektroden Schweißen",
+   "WIG Lift Arc Schweißen",
+   "Elektronische Drossel"
+  ]
+ },
+ "EcoMIG 3000 Digital Front Panel": {
+  "url": "https://mahe-online.de/d-mig/",
+  "items": [
+   "MIS Schweißen",
+   "Punkt und intervall",
+   "Synergiegesteuert",
+   "MMA Schweißen",
+   "WIG Lift Arc Schweißen"
+  ]
+ },
+ "EcoMIG 2000 Digital Front Panel": {
+  "url": "https://mahe-online.de/d-mig/",
+  "items": [
+   "MIS Schweißen",
+   "Synergiegesteuert"
+  ]
+ },
+ "Theta 180 HSC": {
+  "url": "https://mahe-online.de/theta-160/",
+  "items": [
+   "HSC Technologie",
+   "Schneiden bis 80 mm",
+   "Fugenhobel Funktion",
+   "Lochblech Schneidfunktion",
+   "Zentralanschluss am Brenner",
+   "5 Meter Zuleitungskabel",
+   "Digitalanzeige",
+   "Anzeige für den Maschinenstatus",
+   "Brennerpakete bis 15,2 Meter"
+  ]
+ },
+ "HyperTIG DX": {
+  "url": "https://mahe-online.de/hypertig-dx/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "HyperSpot Punktschweißen",
+   "ActiveSpot – schnelle Heftfunktion",
+   "Hyper ARC Active Relegung",
+   "Digitale Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "HyperTIG AX": {
+  "url": "https://mahe-online.de/hypertig-ax/",
+  "items": [
+   "Hochfrequenz Impulsschweißen",
+   "HyperSpot Punktschweißen",
+   "ActiveSpot Schnelle Heftfunktion",
+   "Hyper ARC Active Regelung",
+   "Mix TIG Schweißen",
+   "Strom Modulation einstellbar",
+   "5 Meter Zuleitungskabel",
+   "Digitale Anzeige",
+   "Leistungsstarke Wasserkühlung",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ]
+ },
+ "Beta DX pro": {
+  "url": "https://mahe-online.de/beta-dx/",
+  "items": [
+   "Resonanz Inverter gesteuert durch einen DSP-Controller",
+   "Bis zu 20kHz Impulsschweißen",
+   "ActiveBoost Funkcion",
+   "Hyper ARC Active Regelung",
+   "HyperSpot Schweißen",
+   "5 Speicherplätze für schnellen Zugriff",
+   "Fernbedienung"
+  ]
+ },
+ "Beta DX syn": {
+  "url": "https://mahe-online.de/beta-dx/",
+  "items": [
+   "Resonanz Inverter gesteuert durch einen DSP-Controller",
+   "Einfache Synergy Bedienung",
+   "ActiveBoost Funktion",
+   "Automatische Pulseinstellung",
+   "Fernbedienung optional"
+  ]
+ },
+ "MLF100": {
+  "url": "https://mahe-online.de/mlf100/",
+  "items": [
+   "Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+   "Automatischer/Manueller Dosiermodus",
+   "Möglichkeit zum Anschluss eines externen Tanks",
+   "Reinigungs-/Spülmodus",
+   "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
+  ]
+ }
+}

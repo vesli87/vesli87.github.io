@@ -39,7 +39,7 @@ Passendes Zubehör: STT 30, MPF 02, WK 300.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: OMEGA-AX · Preis: auf Anfrage (CHF)
 Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.
-Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; AC/DC – Aluminium & Stahl; MAHE-MIX-PULSE; Strom-Modulation einstellbar; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; JOB-Modus.
+Besonderheiten: Resonanz Inverter gesteuert durch einen DSP-Controller; Bis zu 20kHz Impulsschweissen; ActiveBoost Funktion; Hyper ARC Active Regelung; HyperSpot Schweissen; Mix TIG Schweissen; Kalotten Formungsfunktion; Strom Modulation einstellbar; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
 Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 220 A; Netz: 1~ 230 V; Zündung: HF; Bauart: mobil.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
@@ -57,7 +57,7 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-AX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.
-Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; AC/DC – Aluminium & Stahl; MAHE-MIX-PULSE; Strom-Modulation einstellbar; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; JOB-Modus.
+Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot – schnelle Heftfunktion; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
 Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 350 A; Netz: 3~ 400 V; Kühlung: wassergekühlt (CWK).
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
@@ -66,7 +66,7 @@ Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: HYPERTIG-DX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.
-Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; WIG DC & MMA; Strom-Modulation einstellbar; Digitale Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot – schnelle Heftfunktion; Hyper ARC Active Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
 Technische Daten: Verfahren: WIG DC; Strombereich: bis 400 A; Netz: 3~ 400 V; Kühlung: wassergekühlt.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
@@ -84,7 +84,7 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-ACDC · Preis: auf Anfrage (CHF)
 Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.
-Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; AC/DC – Aluminium & Stahl; MAHE-MIX-PULSE; Strom-Modulation einstellbar; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; JOB-Modus.
+Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Volt und Ampere Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
 Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 600 A; Netz: 3~ 400 V; Kühlung: wassergekühlt (CWK).
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
@@ -93,7 +93,7 @@ Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: I-1600 · Preis: auf Anfrage (CHF)
 Einfach zu bedienender, robuster Elektrodeninverter.
-Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Force Arc; Anti Stick Funktion; WIG Lift ARC; 5 Meter Zuleitungskabel; Arbeitet an langen Versorgungskabeln; 100V Technologie.
 Technische Daten: Verfahren: MMA (Elektrode); Netz: 1~ 230 V; Bauart: tragbar; Bedienung: einfach.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
@@ -129,7 +129,7 @@ Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
 Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
 Mikroplasma- und Plasmastromquelle für feinste Schweissungen.
-Besonderheiten: Mikroplasma- & Plasma-Schweissen; Feinste Schweissungen ab geringstem Strom; Stabiler, gebündelter Plasmastrahl; Für Feinblech bis Industrie; HF-Zündung; Pilotlichtbogen.
+Besonderheiten: Plasma TIG Schweissen; MMA Elektroden Schweissen; WIG HF Schweissen; WIG Lift Arc Schweissen; Arc Force; Anti Stick; Up Slope; Down Slope; HF Start on / off; 5 Meter Zuleitungskabel; Mikroregler für die Gasmenge; Interface.
 Technische Daten: Verfahren: Plasma / Mikroplasma; Strombereich: 20 – 400 A; Einsatz: Feinblech bis Industrie.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: MPF 02, RC 100.
@@ -141,7 +141,7 @@ Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidl
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
 Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.
-Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift Arc Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für Verschleissteil Standzeit; Lochblech Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige.
 Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Netz: 1~ 230 V; Bauart: tragbar.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
@@ -150,7 +150,7 @@ Passendes Zubehör: STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-60 · Preis: auf Anfrage (CHF)
 Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 35 mm; Qualitätsschnitt max. 25 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
 Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 40 mm; Technologie: HSC; Netz: 3~ 400 V.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
@@ -159,7 +159,7 @@ Passendes Zubehör: STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-120 · Preis: auf Anfrage (CHF)
 Industrieller Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Option Automaten – Schnittstelle; Lochblech Schneidfunktion; Fugenhobeln Funktion.
 Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC; Netz: 3~ 400 V.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
@@ -168,7 +168,7 @@ Passendes Zubehör: STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-180 · Preis: auf Anfrage (CHF)
 Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Besonderheiten: HSC Technologie; Schneiden bis 80 mm; Fugenhobel Funktion; Lochblech Schneidfunktion; Zentralanschluss am Brenner; 5 Meter Zuleitungskabel; Digitale Anzeige; Anzeige für den Maschinenstatus; Brennerpakete bis 15,2 Meter.
 Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 80 mm; Technologie: HSC; Netz: 3~ 400 V.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
@@ -177,7 +177,7 @@ Passendes Zubehör: STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-60-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
-Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt grösser 35 mm; Qualitätsschnitt grösser 25 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
 Technische Daten: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 40 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
@@ -186,7 +186,7 @@ Passendes Zubehör: STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-120-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
-Besonderheiten: Plasmaschneiden mit HSC-Technologie; Sauberer, schneller Trennschnitt; Pilotlichtbogen – kontaktloses Zünden; Für alle leitenden Metalle; Gittertrennen möglich; Digitale Anzeige; Übertemperaturschutz; Hand- oder Automationsbetrieb.
+Besonderheiten: HSC Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt grösser 55 mm; Qualitätsschnitt grösser 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
 Technische Daten: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
@@ -198,7 +198,7 @@ Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: MINICLEANER · Preis: auf Anfrage (CHF)
 Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.
-Besonderheiten: Kompakte Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Besonderheiten: Leistungsstarke 200 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
 Technische Daten: Verfahren: Elektrolyt-Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
@@ -207,7 +207,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-ST · Preis: auf Anfrage (CHF)
 Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.
-Besonderheiten: Leistungsstarke 1200 Watt Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Besonderheiten: Leistungsstarke 1200 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
 Technische Daten: Leistung: 1200 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
@@ -216,7 +216,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-SPEED · Preis: auf Anfrage (CHF)
 Leistungsstarker 2500-W-Inverter für schnelle Reinigung.
-Besonderheiten: Leistungsstarke 2400 Watt Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramme für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Besonderheiten: Leistungsstarke 2400 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
 Technische Daten: Leistung: 2500 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
@@ -225,7 +225,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-PLUS · Preis: auf Anfrage (CHF)
 Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.
-Besonderheiten: Leistungsstarke 4000 Watt Inverter-Stromquelle; MAHE Pinsel-Schutz-System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramme für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Besonderheiten: Leistungsstarke 3600 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
 Technische Daten: Leistung: 4000 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
@@ -234,7 +234,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERCLEANER-CT200 · Preis: auf Anfrage (CHF)
 Kombiniertes WIG-Schweiss- und Reinigungsgerät.
-Besonderheiten: Kombigerät: WIG-Schweissen und Reinigen; MAHE Pinsel-Schutz-System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Besonderheiten: Multiprozess WIG und Reinigen; WIG Schweissen mit 200A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
 Technische Daten: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
@@ -243,6 +243,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/
 Kategorie: Reinigungsgeräte / Signiergeräte · Typ: Signieren · Art.-Nr.: HCS1 · Preis: auf Anfrage (CHF)
 Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.
+Besonderheiten: Stromquelle zum Markieren; Tiefschwarz markieren; Kurzschluss – Schutzsystem; Geeignet für Schablonen aller Hersteller.
 Technische Daten: Verfahren: Elektrolyt-Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
 Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
 
@@ -250,6 +251,7 @@ Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
 Kategorie: Reinigungsgeräte / Dosiersystem · Typ: Dosierung · Art.-Nr.: MLF100 · Preis: auf Anfrage (CHF)
 Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.
+Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.; Automatischer/Manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungs-/Spülmodus; Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten..
 Technische Daten: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
 Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
 

@@ -133,6 +133,7 @@ CTRL      = _load("CTRL")
 FP        = _load("FP")
 PANEL_HL  = _load("PANEL_HL")
 MAT_LABEL = _load("MAT_LABEL")
+HL_DEVICE = _load("HL_DEVICE")   # je Geraet, woertlich von mahe-online.de
 PANEL_SVG_SMALL = _load("PANEL_SVG")
 
 EX = json.loads((BUILD / "i18n_extra.json").read_text("utf-8"))
@@ -207,7 +208,9 @@ def trV(lang, v):
 # --------------------------------------------------------------------------
 
 def deriveFeat(p):
-    s = (p["vt"] + " " + p["name"] + " " + " ".join(p["specs"].values())).lower()
+    dev = HL_DEVICE.get(p["id"], {}).get("de", [])
+    s = (p["vt"] + " " + p["name"] + " " + " ".join(p["specs"].values())
+         + " " + " ".join(dev)).lower()
     f = []
     if re.search(r"mig", s):                       f.append("mig")
     if re.search(r"mma|elektrode", s):             f.append("mma")
@@ -217,7 +220,8 @@ def deriveFeat(p):
     if re.search(r"plasma", s):                    f.append("plasma")
     if re.search(r"wasser|cwk", s):                f.append("h2o")
     if re.search(r"synerg", s):                    f.append("synergy")
-    if re.search(r"digital", s):                   f.append("display")
+    if re.search(r"markier|signier", s):           f.append("mark")
+    if re.search(r"digital|anzeige|display", s):   f.append("display")
     if re.search(r"rollen", s):                    f.append("rollen")
     if re.search(r"automation|cnc", s):            f.append("auto")
     if re.search(r"reinig|cleaner", s):            f.append("clean")
@@ -279,6 +283,16 @@ def relatedAcc(p):
 
 
 def highlightsOf(lang, p):
+    """Besonderheiten eines Geraets.
+
+    Reihenfolge: was MAHE fuer genau dieses Geraet angibt, sonst die Liste der
+    Cleaner-Familie, sonst die Geraetefamilie. Frueher galt nur die Familie -
+    dadurch stand an der Omega AX syn (MAHE: 5 Punkte) derselbe Text wie an der
+    Omega AX pro (10 Punkte) und an allen anderen WIG-AC/DC-Geraeten.
+    """
+    dev = HL_DEVICE.get(p["id"])
+    if dev:
+        return dev.get(lang) or dev["de"]
     if p["cat"] == "reinigung" and p["sub"] == "Cleaner" and p["id"] in HL_CLEAN:
         h = HL_CLEAN[p["id"]]
         return h.get(lang) or h.get("de")

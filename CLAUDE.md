@@ -25,6 +25,7 @@ Bearbeitet werden also:
 | Was du ändern willst | Wo |
 |---|---|
 | Produkt, Spezifikation, Kategorie | `data/P.json`, `data/CATS.json` |
+| Besonderheiten eines Geräts | `data/HL_DEVICE.json` (wörtlich von MAHE, DE/FR/IT) |
 | Übersetzung eines UI-Textes | `data/UI.json` |
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |
 | Seitentitel, meta description, FAQ, Impressum, Datenschutz | `build/i18n_extra.json` |

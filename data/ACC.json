@@ -1,0 +1,266 @@
+{
+ "_": "Passendes Zubehoer je Produkt, abgeleitet aus dem Tab \"Zubehoer\" der jeweiligen MAHE-Geraeteseite. Nicht raten - wer etwas ergaenzt, prueft es dort nach.",
+ "hypermig-x": [
+  "dvs410",
+  "zwischenschlauchpaket",
+  "mf405w",
+  "mf240w",
+  "elektrodenkabel-4m",
+  "massekabel-4m",
+  "drahtvorschubrollen"
+ ],
+ "ecomig": [
+  "mf155",
+  "mf250",
+  "elektrodenkabel-4m",
+  "massekabel-4m",
+  "drahtvorschubrollen"
+ ],
+ "mms": [
+  "stt30",
+  "mpf02",
+  "mf405w",
+  "mf240w",
+  "mf250",
+  "mf155",
+  "elektrodenkabel-4m",
+  "massekabel-4m",
+  "drahtvorschubrollen"
+ ],
+ "omega-ax": [
+  "stt30",
+  "mpf02",
+  "frc5",
+  "rc5",
+  "rc100",
+  "mt260",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "beta-dx": [
+  "stt30",
+  "mpf02",
+  "frc5",
+  "rc5",
+  "rc100",
+  "mt260",
+  "mt170",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "beta-digital": [
+  "wk350",
+  "stt30",
+  "stt35",
+  "mpf02",
+  "frc5",
+  "rc5",
+  "rc100",
+  "mt200w",
+  "mt180w",
+  "mt260",
+  "mt170",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypertig-ax": [
+  "frc5",
+  "rc5",
+  "rc100",
+  "mt200w",
+  "mt180w",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypertig-dx": [
+  "frc5",
+  "rc5",
+  "rc100",
+  "mt200w",
+  "mt180w",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypertig-acdc": [
+  "frc5",
+  "rc5",
+  "rc15",
+  "rc100",
+  "mt200w",
+  "mt180w",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "i-1600": [
+  "mt260v",
+  "mt170v",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "delta": [
+  "rc5",
+  "rc100",
+  "mt260v",
+  "mt170v",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "delta-digital": [
+  "rc5",
+  "rc100",
+  "mt260v",
+  "mt170v",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "delta-digital-ds": [
+  "rc100ds",
+  "mt260v",
+  "mt170v",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "plasma-tig": [
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "theta-40": [
+  "s25",
+  "vtbox-s25",
+  "massekabel-16",
+  "stt35",
+  "mpf02"
+ ],
+ "theta-60": [
+  "pshb65",
+  "vtbox-pshb65",
+  "massekabel-25",
+  "stt35",
+  "mpf02"
+ ],
+ "theta-120": [
+  "pshb125",
+  "vtbox-pshb125",
+  "massekabel-25",
+  "stt35",
+  "mpf02"
+ ],
+ "theta-180": [
+  "pshb160",
+  "vtbox-pshb160",
+  "massekabel-25"
+ ],
+ "theta-60-aut": [
+  "psab65",
+  "massekabel-25"
+ ],
+ "theta-120-aut": [
+  "psab125",
+  "massekabel-25"
+ ],
+ "minicleaner": [
+  "r1",
+  "rp1",
+  "p1",
+  "m1",
+  "n1",
+  "mhct01",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypercleaner-st": [
+  "r1",
+  "rp1",
+  "p1",
+  "m1",
+  "n1",
+  "mhct01",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypercleaner-speed": [
+  "r1",
+  "rp1",
+  "p1",
+  "m1",
+  "n1",
+  "mhct01",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypercleaner-plus": [
+  "r1",
+  "rp1",
+  "p1",
+  "m1",
+  "n1",
+  "mhct01",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hypercleaner-ct200": [
+  "r1",
+  "rp1",
+  "p1",
+  "m1",
+  "n1",
+  "wk200",
+  "stt30",
+  "stt35",
+  "mpf02",
+  "mhct01",
+  "frc5",
+  "rc5",
+  "rc100",
+  "mt200w",
+  "mt180w",
+  "mt260",
+  "mt170",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "hcs1": [
+  "r1",
+  "rp1",
+  "p1",
+  "m1",
+  "n1",
+  "mhct01",
+  "elektrodenkabel-4m",
+  "massekabel-4m"
+ ],
+ "mlf100": [
+  "montagesatz-mlf100",
+  "reinigungspinselstaender"
+ ],
+ "r1": [
+  "hypercleaner-st",
+  "hypercleaner-plus",
+  "minicleaner",
+  "mhct01"
+ ],
+ "rp1": [
+  "hypercleaner-st",
+  "hypercleaner-plus",
+  "minicleaner",
+  "mhct01"
+ ],
+ "p1": [
+  "hypercleaner-st",
+  "hypercleaner-plus",
+  "minicleaner",
+  "mhct01"
+ ],
+ "n1": [
+  "hypercleaner-st",
+  "hypercleaner-plus",
+  "minicleaner",
+  "mhct01"
+ ],
+ "m1": [
+  "hypercleaner-st",
+  "hypercleaner-plus",
+  "minicleaner",
+  "mhct01"
+ ]
+}

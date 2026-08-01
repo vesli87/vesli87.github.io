@@ -591,5 +591,71 @@
   "h": 276,
   "ratio": 0.6174,
   "local": true
+ },
+ "2021/05/DVR.png": {
+  "key": "dvr-f399d9",
+  "w": 158,
+  "h": 228,
+  "ratio": 1.443
+ },
+ "2021/05/ZSW.png": {
+  "key": "zsw-27144f",
+  "w": 238,
+  "h": 203,
+  "ratio": 0.8529
+ },
+ "2021/06/Elektrodenhalter.png": {
+  "key": "elektrodenhalter-0c0a16",
+  "w": 244,
+  "h": 340,
+  "ratio": 1.3934
+ },
+ "2021/06/Masse_Kabel_16qmm.png": {
+  "key": "masse-kabel-16qmm-84051c",
+  "w": 1068,
+  "h": 1031,
+  "ratio": 0.9654
+ },
+ "2021/06/Massekabel.png": {
+  "key": "massekabel-262794",
+  "w": 335,
+  "h": 189,
+  "ratio": 0.5642
+ },
+ "2021/06/PSHB250.png": {
+  "key": "pshb250-86579a",
+  "w": 1243,
+  "h": 1396,
+  "ratio": 1.1231
+ },
+ "2021/06/WIG_Brenner.png": {
+  "key": "wig-brenner-4b3784",
+  "w": 242,
+  "h": 363,
+  "ratio": 1.5
+ },
+ "2022/03/PSHB125.png": {
+  "key": "pshb125-ab85b8",
+  "w": 3120,
+  "h": 4160,
+  "ratio": 1.3333
+ },
+ "2022/05/PSHB_KIT_BOX.png": {
+  "key": "pshb-kit-box-afd0eb",
+  "w": 342,
+  "h": 221,
+  "ratio": 0.6462
+ },
+ "2026/01/IMGP6030_1.png": {
+  "key": "imgp6030-1-8aa671",
+  "w": 1503,
+  "h": 1817,
+  "ratio": 1.2089
+ },
+ "2026/01/IMGP6034_1.png": {
+  "key": "imgp6034-1-2ff594",
+  "w": 1505,
+  "h": 1807,
+  "ratio": 1.2007
  }
 }

@@ -192,11 +192,123 @@
   "it": "Elettrolita per la marcatura elettrochimica del metallo."
  },
  "elektrodenkabel": {
-  "fr": "Câble d’électrode pour appareils Cleaner et MMA.",
-  "it": "Cavo elettrodo per apparecchi Cleaner e MMA."
+  "fr": "Câble d'électrode pour les appareils de nettoyage HyperCleaner.",
+  "it": "Cavo portaelettrodo per gli apparecchi di pulizia HyperCleaner."
  },
  "massekabel": {
-  "fr": "Câble de masse avec pince pour Cleaner et MMA.",
-  "it": "Cavo di massa con morsetto per Cleaner e MMA."
+  "fr": "Câble de masse pour les appareils de nettoyage HyperCleaner.",
+  "it": "Cavo di massa per gli apparecchi di pulizia HyperCleaner."
+ },
+ "mf155": {
+  "fr": "Torche MIG/MAG refroidie au gaz pour EcoMIG et MMS, en 3 ou 4 m de longueur.",
+  "it": "Torcia MIG/MAG raffreddata a gas per EcoMIG e MMS, in lunghezza da 3 o 4 m."
+ },
+ "mf250": {
+  "fr": "Torche MIG/MAG refroidie au gaz de 4 m pour EcoMIG et MMS, au choix avec Up/Down.",
+  "it": "Torcia MIG/MAG raffreddata a gas da 4 m per EcoMIG e MMS, a scelta con Up/Down."
+ },
+ "mt170": {
+  "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX et HyperCleaner CT 200.",
+  "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX e HyperCleaner CT 200."
+ },
+ "mt170v": {
+  "fr": "Torche TIG refroidie au gaz pour Delta, Delta Digital, Delta Digital DS et i-1600, avec vanne de gaz sur la torche.",
+  "it": "Torcia TIG raffreddata a gas per Delta, Delta Digital, Delta Digital DS e i-1600, con valvola del gas sulla torcia."
+ },
+ "mt180w": {
+  "fr": "Torche TIG refroidie à l’eau en 4 ou 8 m pour Beta digital, HyperCleaner CT 200 et la série HyperTIG.",
+  "it": "Torcia TIG raffreddata ad acqua da 4 o 8 m per Beta digital, HyperCleaner CT 200 e la serie HyperTIG."
+ },
+ "mt200w": {
+  "fr": "Torche TIG refroidie à l’eau pour Beta digital, HyperCleaner CT 200 et la série HyperTIG, au choix avec potentiomètre.",
+  "it": "Torcia TIG raffreddata ad acqua per Beta digital, HyperCleaner CT 200 e la serie HyperTIG, a scelta con potenziometro."
+ },
+ "mt260": {
+  "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX, Omega AX et HyperCleaner CT 200.",
+  "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX, Omega AX e HyperCleaner CT 200."
+ },
+ "mt260v": {
+  "fr": "Torche TIG refroidie au gaz avec vanne de gaz sur la torche, en 4 ou 8 m, pour Delta, Delta Digital, Delta Digital DS et i-1600.",
+  "it": "Torcia TIG raffreddata a gas con valvola del gas sulla torcia, da 4 o 8 m, per Delta, Delta Digital, Delta Digital DS e i-1600."
+ },
+ "s25": {
+  "fr": "Torche de coupe plasma de la Theta 40, montée à demeure dans la machine et disponible en 4 mètres.",
+  "it": "Torcia da taglio al plasma della Theta 40, montata fissa nella macchina e disponibile in 4 metri."
+ },
+ "pshb65": {
+  "fr": "Torche de coupe plasma pour la Theta 60 HSC, d’une capacité de coupe jusqu’à 40 mm, disponible en 6 et 12 mètres.",
+  "it": "Torcia da taglio al plasma per la Theta 60 HSC, con capacità di taglio fino a 40 mm, disponibile in 6 e 12 metri."
+ },
+ "pshb125": {
+  "fr": "Torche de coupe plasma pour la Theta 120 HSC, d’une capacité de coupe jusqu’à 55 mm, disponible en 6 et 12 mètres.",
+  "it": "Torcia da taglio al plasma per la Theta 120 HSC, con capacità di taglio fino a 55 mm, disponibile in 6 e 12 metri."
+ },
+ "pshb160": {
+  "fr": "Torche de coupe plasma pour la Theta 180 HSC, d’une capacité de coupe jusqu’à 80 mm, disponible en 6 et 12 mètres.",
+  "it": "Torcia da taglio al plasma per la Theta 180 HSC, con capacità di taglio fino a 80 mm, disponibile in 6 e 12 metri."
+ },
+ "psab65": {
+  "fr": "Torche de coupe plasma pour le découpeur plasma d’automation Theta 60 AUT, disponible en 6 et 12 mètres.",
+  "it": "Torcia da taglio al plasma per l’inverter plasma per automazione Theta 60 AUT, disponibile in 6 e 12 metri."
+ },
+ "psab125": {
+  "fr": "Torche de coupe plasma pour le découpeur plasma d’automation Theta 120 AUT, disponible en 6 et 12 mètres.",
+  "it": "Torcia da taglio al plasma per l’inverter plasma per automazione Theta 120 AUT, disponibile in 6 e 12 metri."
+ },
+ "vtbox-s25": {
+  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma S 25 montée à demeure dans la Theta 40.",
+  "it": "Box di parti di usura per la torcia da taglio al plasma S 25 montata fissa nella Theta 40."
+ },
+ "vtbox-pshb65": {
+  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 65 – contenu identique aux coffrets PSHB 125 et PSHB 160.",
+  "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 65 – dotazione identica ai box PSHB 125 e PSHB 160."
+ },
+ "vtbox-pshb125": {
+  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 125 – contenu identique aux coffrets PSHB 65 et PSHB 160.",
+  "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 125 – dotazione identica ai box PSHB 65 e PSHB 160."
+ },
+ "vtbox-pshb160": {
+  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 160 – contenu identique aux coffrets PSHB 65 et PSHB 125.",
+  "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 160 – dotazione identica ai box PSHB 65 e PSHB 125."
+ },
+ "drahtvorschubrollen": {
+  "fr": "Galets d'entraînement pour les postes MIG/MAG HyperMIG X, EcoMIG et MMS, en versions acier, moletée et aluminium.",
+  "it": "Rulli trainafilo per le saldatrici MIG/MAG HyperMIG X, EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
+ },
+ "zwischenschlauchpaket": {
+  "fr": "Faisceau intermédiaire reliant la source de courant de la série HyperMIG X au dévidoir.",
+  "it": "Fascio intermedio che collega il generatore della serie HyperMIG X al trainafilo."
+ },
+ "montagesatz-mlf100": {
+  "fr": "Kit de fixation pour monter le MLF 100 sur les appareils MAHE HyperCleaner.",
+  "it": "Kit di fissaggio per montare l'MLF 100 sugli apparecchi MAHE HyperCleaner."
+ },
+ "reinigungspinselstaender": {
+  "fr": "Support de brosse avec protection anti-gouttes pour la brosse de nettoyage du MLF 100.",
+  "it": "Supporto per spazzola con protezione antigoccia per la spazzola di pulizia dell'MLF 100."
+ },
+ "elektrodenkabel-4m": {
+  "fr": "Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+  "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
+ },
+ "massekabel-4m": {
+  "fr": "Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+  "it": "Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
+ },
+ "massekabel-16": {
+  "fr": "Câble de masse pour le découpeur plasma Theta 40.",
+  "it": "Cavo di massa per il sistema di taglio al plasma Theta 40."
+ },
+ "massekabel-25": {
+  "fr": "Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180.",
+  "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180."
+ },
+ "mf405w": {
+  "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
+  "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
+ },
+ "mf240w": {
+  "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
+  "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
  }
 }

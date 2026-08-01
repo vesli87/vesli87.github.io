@@ -207,8 +207,8 @@ def ld_product(lang, p):
     d = {
         "@type": "Product",
         "@id": url + "#product",
-        "name": f"{C.BRAND} {p['name']}",
-        "alternateName": p["name"],
+        "name": f"{C.BRAND} {C.pName(lang, p)}",
+        "alternateName": C.pName(lang, p),
         "sku": p["id"].upper(),
         "mpn": p["id"].upper(),
         "url": url,
@@ -600,12 +600,12 @@ def pcard(lang, p):
   <a class="pcard-link" href="{e(url)}">
     <div class="imgbox"><span class="vtag">{e(p['vt'])}</span>
       {img_tag(p['img'], "(max-width:700px) 46vw, (max-width:1000px) 30vw, 280px",
-               alt=f"{C.BRAND} {p['name']} – {C.pDesc(lang, p)}")}</div>
-    <div class="body"><h3>{e(p['name'])}</h3><p>{e(C.pDesc(lang, p))}</p>
+               alt=f"{C.BRAND} {C.pName(lang, p)} – {C.pDesc(lang, p)}")}</div>
+    <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>
       <div class="spec">{specs}</div></div>
   </a>
   <div class="foot"><span class="poa">{e(C.t(lang,'poa'))}</span>
-    <button class="add" type="button" data-add="{e(p['id'])}" data-name="{e(p['name'])}"
+    <button class="add" type="button" data-add="{e(p['id'])}" data-name="{e(C.pName(lang, p))}"
             data-url="{e(url)}" data-img="{e(thumb(p))}">{e(C.t(lang,'inquire'))}</button></div>
 </article>"""
 

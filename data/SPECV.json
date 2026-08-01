@@ -214,5 +214,73 @@
  "schwarz": {
   "fr": "noir",
   "it": "nero"
+ },
+ "MIG/MAG gasgekühlt": {
+  "fr": "MIG/MAG refroidi au gaz",
+  "it": "MIG/MAG raffreddato a gas"
+ },
+ "4 m wahlweise mit Up/Down": {
+  "fr": "4 m au choix avec Up/Down",
+  "it": "4 m a scelta con Up/Down"
+ },
+ "wahlweise mit Up/Down": {
+  "fr": "au choix avec Up/Down",
+  "it": "a scelta con Up/Down"
+ },
+ "WIG gasgekühlt": {
+  "fr": "TIG refroidi au gaz",
+  "it": "TIG raffreddato a gas"
+ },
+ "wahlweise mit Potentiometer": {
+  "fr": "au choix avec potentiomètre",
+  "it": "a scelta con potenziometro"
+ },
+ "Gasventil am Brenner": {
+  "fr": "vanne de gaz sur la torche",
+  "it": "valvola del gas sulla torcia"
+ },
+ "WIG wassergekühlt": {
+  "fr": "TIG refroidi à l’eau",
+  "it": "TIG raffreddato ad acqua"
+ },
+ "Plasmaschneidbrenner": {
+  "fr": "torche de coupe plasma",
+  "it": "torcia da taglio al plasma"
+ },
+ "fest in der Maschine verbaut": {
+  "fr": "montée à demeure dans la machine",
+  "it": "montata fissa nella macchina"
+ },
+ "5x 0,8 mm kurz": {
+  "fr": "5x 0,8 mm court",
+  "it": "5x 0,8 mm corto"
+ },
+ "1x kurz": {
+  "fr": "1x court",
+  "it": "1x corto"
+ },
+ "1x Brennerkappe · 1x Schutzkappe": {
+  "fr": "1x capuchon de torche · 1x capuchon de protection",
+  "it": "1x cappuccio torcia · 1x cappuccio di protezione"
+ },
+ "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)": {
+  "fr": "0,8/1,0 acier (300 A) · 1,0/1,2 acier (350–600 A)",
+  "it": "0,8/1,0 acciaio (300 A) · 1,0/1,2 acciaio (350–600 A)"
+ },
+ "Stromquelle mit Vorschubkoffer": {
+  "fr": "source de courant et dévidoir",
+  "it": "generatore e trainafilo"
+ },
+ "Befestigung": {
+  "fr": "Fixation",
+  "it": "Fissaggio"
+ },
+ "Bürstenständer": {
+  "fr": "Support de brosse",
+  "it": "Supporto per spazzola"
+ },
+ "Tropfschutz": {
+  "fr": "protection anti-gouttes",
+  "it": "protezione antigoccia"
  }
 }

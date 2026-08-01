@@ -1,0 +1,87 @@
+{
+ "_": "Produktnamen, die ein Gattungsbegriff sind, je Sprache. Typenbezeichnungen (MF155, PSHB 65, STT 30) stehen hier NICHT - sie sind in allen Sprachen gleich.",
+ "elektrodenkabel": {
+  "fr": "Câble d’électrode 10 mm²",
+  "it": "Cavo portaelettrodo 10 mm²"
+ },
+ "massekabel": {
+  "fr": "Câble de masse 10 mm²",
+  "it": "Cavo di massa 10 mm²"
+ },
+ "elektrodenkabel-4m": {
+  "fr": "Câble d’électrode 25–90 mm²",
+  "it": "Cavo portaelettrodo 25–90 mm²"
+ },
+ "massekabel-4m": {
+  "fr": "Câble de masse 25–90 mm²",
+  "it": "Cavo di massa 25–90 mm²"
+ },
+ "massekabel-16": {
+  "fr": "Câble de masse 16 mm²",
+  "it": "Cavo di massa 16 mm²"
+ },
+ "massekabel-25": {
+  "fr": "Câble de masse 25 mm²",
+  "it": "Cavo di massa 25 mm²"
+ },
+ "drahtvorschubrollen": {
+  "fr": "Galets d’entraînement",
+  "it": "Rulli trainafilo"
+ },
+ "zwischenschlauchpaket": {
+  "fr": "Faisceau intermédiaire",
+  "it": "Fascio cavi intermedio"
+ },
+ "montagesatz-mlf100": {
+  "fr": "Kit de montage MLF 100",
+  "it": "Kit di montaggio MLF 100"
+ },
+ "reinigungspinselstaender": {
+  "fr": "Support de brosse de nettoyage",
+  "it": "Supporto per pennello di pulizia"
+ },
+ "vtbox-s25": {
+  "fr": "Boîte de pièces d’usure S 25",
+  "it": "Box parti di usura S 25"
+ },
+ "vtbox-pshb65": {
+  "fr": "Boîte de pièces d’usure PSHB 65",
+  "it": "Box parti di usura PSHB 65"
+ },
+ "vtbox-pshb125": {
+  "fr": "Boîte de pièces d’usure PSHB 125",
+  "it": "Box parti di usura PSHB 125"
+ },
+ "vtbox-pshb160": {
+  "fr": "Boîte de pièces d’usure PSHB 160",
+  "it": "Box parti di usura PSHB 160"
+ },
+ "usb2in1": {
+  "fr": "Programmateur USB 2in1",
+  "it": "Programmatore USB 2in1"
+ },
+ "r1": {
+  "fr": "Électrolyte de nettoyage Rapid R1",
+  "it": "Elettrolita di pulizia Rapid R1"
+ },
+ "rp1": {
+  "fr": "Électrolyte de nettoyage RP1 pâteux",
+  "it": "Elettrolita di pulizia RP1 in pasta"
+ },
+ "p1": {
+  "fr": "Électrolyte de polissage P1",
+  "it": "Elettrolita di lucidatura P1"
+ },
+ "n1": {
+  "fr": "Neutralit N1",
+  "it": "Neutralit N1"
+ },
+ "m1": {
+  "fr": "Électrolyte de marquage M1",
+  "it": "Elettrolita di marcatura M1"
+ },
+ "minicleaner": {
+  "fr": "MiniCleaner",
+  "it": "MiniCleaner"
+ }
+}

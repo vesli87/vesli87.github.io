@@ -122,6 +122,7 @@ UI        = _load("UI")          # 88 UI-Keys × de/fr/it
 CATTR     = _load("CATTR")
 SUBTR     = _load("SUBTR")
 PDESC     = _load("PDESC")
+PNAME     = _load("PNAME")     # Gattungsnamen je Sprache
 SPECK     = _load("SPECK")
 SPECV     = _load("SPECV")
 PROC      = _load("PROC")        # 7 Verfahren
@@ -130,6 +131,7 @@ FEAT      = _load("FEAT")        # 19 Verfahrens-Icons
 HL        = _load("HL")
 HL_CLEAN  = _load("HL_CLEAN")
 FP        = _load("FP")
+ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
@@ -191,6 +193,19 @@ def pDesc(lang, p):
     if lang != "de" and p["id"] in PDESC:
         return PDESC[p["id"]][lang]
     return p["desc"]
+
+
+def pName(lang, p):
+    """Produktname in der Sprache der Seite.
+
+    Typenbezeichnungen wie MF155 oder PSHB 65 sind ueberall gleich – sie stehen
+    nicht in PNAME. Gattungsbegriffe wie „Drahtvorschubrollen" schon: sonst
+    steht auf der franzoesischen Seite ein deutscher Titel ueber einem
+    franzoesischen Text.
+    """
+    if lang != DEFAULT_LANG and p["id"] in PNAME:
+        return PNAME[p["id"]][lang]
+    return p["name"]
 
 
 def trK(lang, k):
@@ -350,28 +365,16 @@ def isWater(p):
 
 
 def relatedAcc(p):
-    if p["cat"] == "zubehoer":
-        return []
-    ids = []
-    if p["id"] == "hypermig-x":
-        ids = ["dvs410", "dvl420", "wk350"]
-    elif p["sub"] == "MIG / MAG":
-        ids = ["stt30", "mpf02", "wk300"] if p["id"] == "mms" else ["stt30", "mpf02", "wk200"]
-    elif p["sub"] == "WIG / TIG":
-        ids = ["wk350", "stt30", "mpf02", "frc5"] if isWater(p) else ["stt30", "mpf02", "frc5", "rc5"]
-    elif p["sub"] == "MMA":
-        ids = ["stt35", "mpf02", "rc5", "rc100"]
-    elif p["sub"] == "Plasma TIG":
-        ids = ["mpf02", "rc100"]
-    elif p["cat"] == "plasmaschneiden":
-        ids = ["stt35", "mpf02"]
-    elif p["cat"] == "reinigung" and p["sub"] == "Cleaner":
-        ids = ["r1", "rp1", "p1", "m1", "mhct01", "elektrodenkabel"]
-    elif p["cat"] == "reinigung" and p["sub"] == "Elektrolyte":
-        ids = ["hypercleaner-st", "minicleaner", "mhct01"]
-    elif p["cat"] == "reinigung":
-        ids = ["mhct01", "r1"]
-    return [i for i in ids if i in BY_ID][:6]
+    """Passendes Zubehoer – aus data/ACC.json, nicht geraten.
+
+    Frueher stand hier eine Faustregel je Geraetefamilie („MIG/MAG bekommt
+    Fahrwagen, Flaschenhalter, Kuehler"). Sie traf selten das, was der
+    Hersteller zum Geraet auffuehrt: bei der EcoMIG fehlten beide Brenner, die
+    Kabel und die Vorschubrollen, dafuer stand ein Kuehlgeraet da, das MAHE
+    dort gar nicht nennt. ACC.json bildet den Tab „Zubehoer" der jeweiligen
+    MAHE-Geraeteseite ab.
+    """
+    return [i for i in ACC.get(p["id"], []) if i in BY_ID]
 
 
 def highlightsOf(lang, p):

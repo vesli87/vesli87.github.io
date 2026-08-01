@@ -40,7 +40,7 @@ Technische Daten – HyperMIG CWK:
 *: nur als WWK Variante erhältlich.
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: DVS 410, DVL 420, WK 350.
+Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen.
 
 ### MAHE EcoMIG Digital / Analog
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/
@@ -69,7 +69,7 @@ Technische Daten – EcoMIG Digital:
 | Sicherungsklasse | S | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 30, MPF 02, WK 200.
+Passendes Zubehör: MF155, MF250, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen.
 
 ### MAHE MMS 2000 / 3000
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/mms/
@@ -98,7 +98,7 @@ Technische Daten – MMS:
 | Sicherungsklasse | S | S | S | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 30, MPF 02, WK 300.
+Passendes Zubehör: STT 30, MPF 02, MF405W, MF240W, MF250, MF155, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen.
 
 ### MAHE Omega AX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/
@@ -127,7 +127,7 @@ Technische Daten – Omega AX:
 | Sicherungsklasse | S | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
+Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5, RC 100, MT260, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE Beta DX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/
@@ -156,7 +156,7 @@ Technische Daten – Beta DX:
 | Sicherungsklasse | S | S |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
+Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5, RC 100, MT260, MT170, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperTIG AX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/
@@ -185,7 +185,7 @@ Technische Daten – HyperTIG AX:
 | Sicherungsklasse | S | S | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
+Passendes Zubehör: FRC 5, RC 5, RC 100, MT200W, MT180W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperTIG DX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
@@ -214,7 +214,7 @@ Technische Daten – HyperTIG DX:
 | Sicherungsklasse | S | S | S | S |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
+Passendes Zubehör: FRC 5, RC 5, RC 100, MT200W, MT180W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE Beta digital
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
@@ -262,7 +262,7 @@ Technische Daten – Beta digital SYN:
 | Konformitätszeichen | CE | CE | CE |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
+Passendes Zubehör: WK 350, STT 30, STT 35, MPF 02, FRC 5, RC 5, RC 100, MT200W, MT180W, MT260, MT170, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperTIG AC/DC
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/
@@ -292,7 +292,7 @@ Technische Daten – HyperTIG AC/DC CWK:
 *: Nur für Länder ausserhalb der EU verfügbar.
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
+Passendes Zubehör: FRC 5, RC 5, RC 15, RC 100, MT200W, MT180W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE i-1600
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/
@@ -321,7 +321,7 @@ Technische Daten – i-1600:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+Passendes Zubehör: MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE Delta
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
@@ -350,7 +350,7 @@ Technische Daten – Delta:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+Passendes Zubehör: RC 5, RC 100, MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE Delta Digital
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
@@ -379,7 +379,7 @@ Technische Daten – Delta Digital:
 | Sicherungsklasse | S | S | S | S | S |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+Passendes Zubehör: RC 5, RC 100, MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE Delta Digital DS
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/
@@ -408,7 +408,7 @@ Technische Daten – Delta Digital DS:
 | Sicherungsklasse | S | S | S |
 
 Werkstoffe: Stahl, INOX.
-Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
+Passendes Zubehör: RC 100 DS, MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE PlasmaTIG
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
@@ -437,7 +437,7 @@ Technische Daten – Plasma TIG:
 | Sicherungsklasse | S | S | S | S | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: MPF 02, RC 100.
+Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ## Plasmaschneiden
 Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion.
@@ -471,7 +471,7 @@ Technische Daten – Theta 40:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 35, MPF 02.
+Passendes Zubehör: S 25, Verschleissteilebox S 25, Massekabel 16 mm², STT 35, MPF 02.
 
 ### MAHE Theta 60 HSC
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
@@ -502,7 +502,7 @@ Technische Daten – Theta 60 HSC:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 35, MPF 02.
+Passendes Zubehör: PSHB 65, Verschleissteilebox PSHB 65, Massekabel 25 mm², STT 35, MPF 02.
 
 ### MAHE Theta 120 HSC
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
@@ -533,7 +533,7 @@ Technische Daten – Theta 120 HSC:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 35, MPF 02.
+Passendes Zubehör: PSHB 125, Verschleissteilebox PSHB 125, Massekabel 25 mm², STT 35, MPF 02.
 
 ### MAHE Theta 180 HSC
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/
@@ -563,7 +563,7 @@ Technische Daten – Theta 180 HSC:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 35, MPF 02.
+Passendes Zubehör: PSHB 160, Verschleissteilebox PSHB 160, Massekabel 25 mm².
 
 ### MAHE Theta 60 AUT
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
@@ -594,7 +594,7 @@ Technische Daten – Theta 60 HSC:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 35, MPF 02.
+Passendes Zubehör: PSAB 65, Massekabel 25 mm².
 
 ### MAHE Theta 120 AUT
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
@@ -625,7 +625,7 @@ Technische Daten – Theta 120 HSC:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: STT 35, MPF 02.
+Passendes Zubehör: PSAB 125, Massekabel 25 mm².
 
 ## Reinigungsgeräte
 Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.
@@ -653,7 +653,7 @@ Technische Daten – MiniCleaner:
 | Sicherungsklasse | S |
 
 Werkstoffe: INOX.
-Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperCleaner ST
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/
@@ -679,7 +679,7 @@ Technische Daten – HyperCleaner ST:
 | Sicherungsklasse | S |
 
 Werkstoffe: INOX.
-Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperCleaner ST Speed
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/
@@ -705,7 +705,7 @@ Technische Daten – HyperCleaner STspeed:
 | Sicherungsklasse | S |
 
 Werkstoffe: INOX.
-Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperCleaner ST Plus
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/
@@ -731,7 +731,7 @@ Technische Daten – HyperCleaner STplus:
 | Sicherungsklasse | S |
 
 Werkstoffe: INOX.
-Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HyperCleaner CT 200
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
@@ -757,7 +757,7 @@ Technische Daten – HyperCleaner ST:
 | Sicherungsklasse | S |
 
 Werkstoffe: INOX.
-Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, WK 200, STT 30, STT 35, MPF 02, MHCT 01, FRC 5, RC 5, RC 100, MT200W, MT180W, MT260, MT170, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE HCS 1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/
@@ -782,7 +782,7 @@ Technische Daten – Signiergerät HCS1:
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
-Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
+Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ### MAHE MLF 100
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
@@ -804,42 +804,42 @@ Technische Daten – MLF100:
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
-Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
+Passendes Zubehör: Montagesatz MLF 100, Reinigungspinselständer.
 
 ### MAHE Reinigungselektrolyt Rapid R1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: R1 · Preis: auf Anfrage (CHF)
 Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.
 Ausstattung: Typ: Reinigung (Rapid); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: R1.
-Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ### MAHE Reinigungselektrolyt RP1 Pastös
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: RP1 · Preis: auf Anfrage (CHF)
 Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.
 Ausstattung: Typ: Reinigung (pastös); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: RP1.
-Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ### MAHE Polierelektrolyt P1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Polieren · Art.-Nr.: P1 · Preis: auf Anfrage (CHF)
 Elektrolyt zum Elektropolieren und Beizen von Edelstahl.
 Ausstattung: Typ: Polieren / Beizen; Werkstoff: Edelstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: P1.
-Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ### MAHE Neutralit N1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Neutralisieren · Art.-Nr.: N1 · Preis: auf Anfrage (CHF)
 Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.
 Ausstattung: Typ: Neutralisierer; Anwendung: nach Reinigung; Gebinde: 1,0 / 5,0 L; Sicherheitsdatenblatt: N1.
-Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ### MAHE Signierelektrolyt M1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Signieren · Art.-Nr.: M1 · Preis: auf Anfrage (CHF)
 Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.
 Ausstattung: Typ: Signieren; Anwendung: Markieren; Gebinde: 0,1 / 0,5 / 1,0 L; Sicherheitsdatenblatt: M1.
-Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
+Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ## Zubehör
 Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie.
@@ -943,14 +943,14 @@ Ausstattung: Funktion: Controller-Programmierung; Schnittstelle: USB / MAHE; Sof
 ### MAHE Elektrodenkabel 10 mm²
 URL: https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: ELEKTRODENKABEL · Preis: auf Anfrage (CHF)
-Elektrodenkabel für Cleaner- und MMA-Geräte.
-Ausstattung: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: blau.
+Elektrodenkabel für die HyperCleaner-Reinigungsgeräte.
+Ausstattung: Querschnitt: 10 mm²; Längen: 3 · 6 · 10 m; Für: HyperCleaner.
 
 ### MAHE Massekabel 10 mm²
 URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL · Preis: auf Anfrage (CHF)
-Massekabel mit Klemme für Cleaner- und MMA-Geräte.
-Ausstattung: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: schwarz.
+Massekabel für die HyperCleaner-Reinigungsgeräte.
+Ausstattung: Querschnitt: 10 mm²; Längen: 3 · 6 · 10 m; Für: HyperCleaner.
 
 ### MAHE MF405W
 URL: https://www.ves-tech.ch/produkte/zubehoer/mf405w/
@@ -963,6 +963,162 @@ URL: https://www.ves-tech.ch/produkte/zubehoer/mf240w/
 Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF240W · Preis: auf Anfrage (CHF)
 Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.
 Ausstattung: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
+
+### MAHE MF155
+URL: https://www.ves-tech.ch/produkte/zubehoer/mf155/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF155 · Preis: auf Anfrage (CHF)
+Gasgekühlter MIG/MAG-Brenner für EcoMIG und MMS, in 3 oder 4 m Länge.
+Ausstattung: Typ: MIG/MAG gasgekühlt; Länge: 3 / 4 m; Option: 4 m wahlweise mit Up/Down.
+
+### MAHE MF250
+URL: https://www.ves-tech.ch/produkte/zubehoer/mf250/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF250 · Preis: auf Anfrage (CHF)
+Gasgekühlter MIG/MAG-Brenner in 4 m Länge für EcoMIG und MMS, wahlweise mit Up/Down.
+Ausstattung: Typ: MIG/MAG gasgekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
+
+### MAHE MT170
+URL: https://www.ves-tech.ch/produkte/zubehoer/mt170/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT170 · Preis: auf Anfrage (CHF)
+Gasgekühlter WIG-Brenner für Beta digital, Beta DX und HyperCleaner CT 200.
+Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Option: wahlweise mit Potentiometer.
+
+### MAHE MT170 V
+URL: https://www.ves-tech.ch/produkte/zubehoer/mt170v/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT170V · Preis: auf Anfrage (CHF)
+Gasgekühlter WIG-Brenner für Delta, Delta Digital, Delta Digital DS und i-1600, mit Gasventil am Brenner.
+Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Ausstattung: Gasventil am Brenner.
+
+### MAHE MT180W
+URL: https://www.ves-tech.ch/produkte/zubehoer/mt180w/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT180W · Preis: auf Anfrage (CHF)
+Wassergekühlter WIG-Brenner in 4 oder 8 m Länge für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie.
+Ausstattung: Typ: WIG wassergekühlt; Länge: 4 / 8 m; Option: wahlweise mit Potentiometer.
+
+### MAHE MT200W
+URL: https://www.ves-tech.ch/produkte/zubehoer/mt200w/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT200W · Preis: auf Anfrage (CHF)
+Wassergekühlter WIG-Brenner für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie, wahlweise mit Potentiometer.
+Ausstattung: Typ: WIG wassergekühlt; Länge: 4 / 8 m; Option: wahlweise mit Potentiometer.
+
+### MAHE MT260
+URL: https://www.ves-tech.ch/produkte/zubehoer/mt260/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT260 · Preis: auf Anfrage (CHF)
+Gasgekühlter WIG-Brenner für Beta digital, Beta DX, Omega AX und HyperCleaner CT 200.
+Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Option: wahlweise mit Potentiometer.
+
+### MAHE MT260 V
+URL: https://www.ves-tech.ch/produkte/zubehoer/mt260v/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT260V · Preis: auf Anfrage (CHF)
+Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600.
+Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Ausstattung: Gasventil am Brenner.
+
+### MAHE S 25
+URL: https://www.ves-tech.ch/produkte/zubehoer/s25/
+Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: S25 · Preis: auf Anfrage (CHF)
+Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich.
+Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 40; Länge: 4 m; Montage: fest in der Maschine verbaut.
+
+### MAHE PSHB 65
+URL: https://www.ves-tech.ch/produkte/zubehoer/pshb65/
+Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB65 · Preis: auf Anfrage (CHF)
+Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.
+Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 60 HSC; Längen: 6 / 12 m.
+
+### MAHE PSHB 125
+URL: https://www.ves-tech.ch/produkte/zubehoer/pshb125/
+Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB125 · Preis: auf Anfrage (CHF)
+Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.
+Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 120 HSC; Längen: 6 / 12 m.
+
+### MAHE PSHB 160
+URL: https://www.ves-tech.ch/produkte/zubehoer/pshb160/
+Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB160 · Preis: auf Anfrage (CHF)
+Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.
+Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 180 HSC; Längen: 6 / 12 m.
+
+### MAHE PSAB 65
+URL: https://www.ves-tech.ch/produkte/zubehoer/psab65/
+Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSAB65 · Preis: auf Anfrage (CHF)
+Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in 6 und 12 Meter Länge.
+Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 60 AUT; Längen: 6 / 12 m.
+
+### MAHE PSAB 125
+URL: https://www.ves-tech.ch/produkte/zubehoer/psab125/
+Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSAB125 · Preis: auf Anfrage (CHF)
+Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in 6 und 12 Meter Länge.
+Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 120 AUT; Längen: 6 / 12 m.
+
+### MAHE Verschleissteilebox S 25
+URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-s25/
+Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-S25 · Preis: auf Anfrage (CHF)
+Verschleissteilebox für den fest in der Theta 40 verbauten Plasmaschneidbrenner S 25.
+Ausstattung: Für: S 25; Schneiddüsen: 5x 0,8 mm kurz; Elektrode: 1x kurz; Aussenschutzdüse: 1x; Diffusor: 1x.
+
+### MAHE Verschleissteilebox PSHB 65
+URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/
+Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-PSHB65 · Preis: auf Anfrage (CHF)
+Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.
+Ausstattung: Für: PSHB 65; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; Kappen: 1x Brennerkappe · 1x Schutzkappe.
+
+### MAHE Verschleissteilebox PSHB 125
+URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/
+Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-PSHB125 · Preis: auf Anfrage (CHF)
+Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.
+Ausstattung: Für: PSHB 125; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; Kappen: 1x Brennerkappe · 1x Schutzkappe.
+
+### MAHE Verschleissteilebox PSHB 160
+URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/
+Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-PSHB160 · Preis: auf Anfrage (CHF)
+Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.
+Ausstattung: Für: PSHB 160; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; Kappen: 1x Brennerkappe · 1x Schutzkappe.
+
+### MAHE Drahtvorschubrollen
+URL: https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/
+Kategorie: Zubehör / Verschleissteile · Typ: Vorschubrolle · Art.-Nr.: DRAHTVORSCHUBROLLEN · Preis: auf Anfrage (CHF)
+Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.
+Ausstattung: Für: HyperMIG X · EcoMIG · MMS; Stahl: 0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm; Gerändelt: 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Aluminium: 0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Serienmässig: 0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A).
+
+### MAHE Zwischenschlauchpaket
+URL: https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/
+Kategorie: Zubehör / Schlauchpakete · Typ: Schlauchpaket · Art.-Nr.: ZWISCHENSCHLAUCHPAKET · Preis: auf Anfrage (CHF)
+Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet.
+Ausstattung: Für: HyperMIG X; Verbindet: Stromquelle mit Vorschubkoffer; Längen: 1,2 · 5 · 10 · 15 · 20 m.
+
+### MAHE Montagesatz MLF 100
+URL: https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/
+Kategorie: Zubehör / Cleaner-Zubehör · Typ: Montage · Art.-Nr.: MONTAGESATZ-MLF100 · Preis: auf Anfrage (CHF)
+Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten.
+Ausstattung: Funktion: Befestigung; Für: MLF 100; Montage an: MAHE HyperCleaner.
+
+### MAHE Reinigungspinselständer
+URL: https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/
+Kategorie: Zubehör / Cleaner-Zubehör · Typ: Halterung · Art.-Nr.: REINIGUNGSPINSELSTAENDER · Preis: auf Anfrage (CHF)
+Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.
+Ausstattung: Typ: Bürstenständer; Ausstattung: Tropfschutz; Für: MLF 100.
+
+### MAHE Elektrodenkabel 25–90 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: ELEKTRODENKABEL-4M · Preis: auf Anfrage (CHF)
+Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
+Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
+
+### MAHE Massekabel 25–90 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-4M · Preis: auf Anfrage (CHF)
+Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
+Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
+
+### MAHE Massekabel 16 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-16 · Preis: auf Anfrage (CHF)
+Massekabel für den Plasmaschneider Theta 40.
+Ausstattung: Querschnitt: 16 mm²; Länge: 4 m; Für: Theta 40.
+
+### MAHE Massekabel 25 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-25 · Preis: auf Anfrage (CHF)
+Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.
+Ausstattung: Querschnitt: 25 mm²; Länge: 4 m; Für: Theta 60 · 120 · 180 (HSC / AUT).
 
 ---
 

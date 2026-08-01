@@ -50,5 +50,21 @@
  "Brenner": {
   "fr": "Torches",
   "it": "Torce"
+ },
+ "Plasmabrenner": {
+  "fr": "Torches plasma",
+  "it": "Torce plasma"
+ },
+ "Verschleissteile": {
+  "fr": "Pièces d’usure",
+  "it": "Parti di usura"
+ },
+ "Schlauchpakete": {
+  "fr": "Faisceaux",
+  "it": "Fasci cavi"
+ },
+ "Cleaner-Zubehör": {
+  "fr": "Accessoires nettoyage",
+  "it": "Accessori pulizia"
  }
 }

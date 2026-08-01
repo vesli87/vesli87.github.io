@@ -704,11 +704,11 @@
   "vt": "Kabel",
   "name": "Elektrodenkabel 10 mm²",
   "img": "2021/06/1801001-300x214.png",
-  "desc": "Elektrodenkabel für Cleaner- und MMA-Geräte.",
+  "desc": "Elektrodenkabel für die HyperCleaner-Reinigungsgeräte.",
   "specs": {
    "Querschnitt": "10 mm²",
-   "Längen": "3 / 6 / 10 m",
-   "Farbe": "blau"
+   "Längen": "3 · 6 · 10 m",
+   "Für": "HyperCleaner"
   }
  },
  {
@@ -718,11 +718,11 @@
   "vt": "Kabel",
   "name": "Massekabel 10 mm²",
   "img": "2021/06/1802001-300x214.png",
-  "desc": "Massekabel mit Klemme für Cleaner- und MMA-Geräte.",
+  "desc": "Massekabel für die HyperCleaner-Reinigungsgeräte.",
   "specs": {
    "Querschnitt": "10 mm²",
-   "Längen": "3 / 6 / 10 m",
-   "Farbe": "schwarz"
+   "Längen": "3 · 6 · 10 m",
+   "Für": "HyperCleaner"
   }
  },
  {
@@ -751,6 +751,381 @@
    "Typ": "MIG/MAG wassergekühlt",
    "Länge": "4 m",
    "Option": "wahlweise mit Up/Down"
+  }
+ },
+ {
+  "id": "mf155",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MF155",
+  "img": "2021/05/MIG_Brenner-292x300.png",
+  "desc": "Gasgekühlter MIG/MAG-Brenner für EcoMIG und MMS, in 3 oder 4 m Länge.",
+  "specs": {
+   "Typ": "MIG/MAG gasgekühlt",
+   "Länge": "3 / 4 m",
+   "Option": "4 m wahlweise mit Up/Down"
+  }
+ },
+ {
+  "id": "mf250",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MF250",
+  "img": "2021/05/MIG_Brenner-292x300.png",
+  "desc": "Gasgekühlter MIG/MAG-Brenner in 4 m Länge für EcoMIG und MMS, wahlweise mit Up/Down.",
+  "specs": {
+   "Typ": "MIG/MAG gasgekühlt",
+   "Länge": "4 m",
+   "Option": "wahlweise mit Up/Down"
+  }
+ },
+ {
+  "id": "mt170",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MT170",
+  "img": "2021/06/WIG_Brenner-200x300.png",
+  "desc": "Gasgekühlter WIG-Brenner für Beta digital, Beta DX und HyperCleaner CT 200.",
+  "specs": {
+   "Typ": "WIG gasgekühlt",
+   "Länge": "4 / 8 m",
+   "Option": "wahlweise mit Potentiometer"
+  }
+ },
+ {
+  "id": "mt170v",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MT170 V",
+  "img": "2021/06/WIG_Brenner-200x300.png",
+  "desc": "Gasgekühlter WIG-Brenner für Delta, Delta Digital, Delta Digital DS und i-1600, mit Gasventil am Brenner.",
+  "specs": {
+   "Typ": "WIG gasgekühlt",
+   "Länge": "4 / 8 m",
+   "Ausstattung": "Gasventil am Brenner"
+  }
+ },
+ {
+  "id": "mt180w",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MT180W",
+  "img": "2021/06/WIG_Brenner-200x300.png",
+  "desc": "Wassergekühlter WIG-Brenner in 4 oder 8 m Länge für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie.",
+  "specs": {
+   "Typ": "WIG wassergekühlt",
+   "Länge": "4 / 8 m",
+   "Option": "wahlweise mit Potentiometer"
+  }
+ },
+ {
+  "id": "mt200w",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MT200W",
+  "img": "2021/06/WIG_Brenner-200x300.png",
+  "desc": "Wassergekühlter WIG-Brenner für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie, wahlweise mit Potentiometer.",
+  "specs": {
+   "Typ": "WIG wassergekühlt",
+   "Länge": "4 / 8 m",
+   "Option": "wahlweise mit Potentiometer"
+  }
+ },
+ {
+  "id": "mt260",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MT260",
+  "img": "2021/06/WIG_Brenner-200x300.png",
+  "desc": "Gasgekühlter WIG-Brenner für Beta digital, Beta DX, Omega AX und HyperCleaner CT 200.",
+  "specs": {
+   "Typ": "WIG gasgekühlt",
+   "Länge": "4 / 8 m",
+   "Option": "wahlweise mit Potentiometer"
+  }
+ },
+ {
+  "id": "mt260v",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MT260 V",
+  "img": "2021/06/WIG_Brenner-200x300.png",
+  "desc": "Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600.",
+  "specs": {
+   "Typ": "WIG gasgekühlt",
+   "Länge": "4 / 8 m",
+   "Ausstattung": "Gasventil am Brenner"
+  }
+ },
+ {
+  "id": "s25",
+  "cat": "zubehoer",
+  "sub": "Plasmabrenner",
+  "vt": "Plasmabrenner",
+  "name": "S 25",
+  "img": "2021/06/PSHB250-267x300.png",
+  "desc": "Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich.",
+  "specs": {
+   "Typ": "Plasmaschneidbrenner",
+   "Für": "Theta 40",
+   "Länge": "4 m",
+   "Montage": "fest in der Maschine verbaut"
+  }
+ },
+ {
+  "id": "pshb65",
+  "cat": "zubehoer",
+  "sub": "Plasmabrenner",
+  "vt": "Plasmabrenner",
+  "name": "PSHB 65",
+  "img": "2022/03/PSHB125-225x300.png",
+  "desc": "Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+  "specs": {
+   "Typ": "Plasmaschneidbrenner",
+   "Für": "Theta 60 HSC",
+   "Längen": "6 / 12 m"
+  }
+ },
+ {
+  "id": "pshb125",
+  "cat": "zubehoer",
+  "sub": "Plasmabrenner",
+  "vt": "Plasmabrenner",
+  "name": "PSHB 125",
+  "img": "2022/03/PSHB125-225x300.png",
+  "desc": "Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+  "specs": {
+   "Typ": "Plasmaschneidbrenner",
+   "Für": "Theta 120 HSC",
+   "Längen": "6 / 12 m"
+  }
+ },
+ {
+  "id": "pshb160",
+  "cat": "zubehoer",
+  "sub": "Plasmabrenner",
+  "vt": "Plasmabrenner",
+  "name": "PSHB 160",
+  "img": "2022/03/PSHB125-225x300.png",
+  "desc": "Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+  "specs": {
+   "Typ": "Plasmaschneidbrenner",
+   "Für": "Theta 180 HSC",
+   "Längen": "6 / 12 m"
+  }
+ },
+ {
+  "id": "psab65",
+  "cat": "zubehoer",
+  "sub": "Plasmabrenner",
+  "vt": "Plasmabrenner",
+  "name": "PSAB 65",
+  "img": "2022/03/PSHB125-225x300.png",
+  "desc": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in 6 und 12 Meter Länge.",
+  "specs": {
+   "Typ": "Plasmaschneidbrenner",
+   "Für": "Theta 60 AUT",
+   "Längen": "6 / 12 m"
+  }
+ },
+ {
+  "id": "psab125",
+  "cat": "zubehoer",
+  "sub": "Plasmabrenner",
+  "vt": "Plasmabrenner",
+  "name": "PSAB 125",
+  "img": "2022/03/PSHB125-225x300.png",
+  "desc": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in 6 und 12 Meter Länge.",
+  "specs": {
+   "Typ": "Plasmaschneidbrenner",
+   "Für": "Theta 120 AUT",
+   "Längen": "6 / 12 m"
+  }
+ },
+ {
+  "id": "vtbox-s25",
+  "cat": "zubehoer",
+  "sub": "Verschleissteile",
+  "vt": "Verschleiss",
+  "name": "Verschleissteilebox S 25",
+  "img": "2022/05/PSHB_KIT_BOX-300x194.png",
+  "desc": "Verschleissteilebox für den fest in der Theta 40 verbauten Plasmaschneidbrenner S 25.",
+  "specs": {
+   "Für": "S 25",
+   "Schneiddüsen": "5x 0,8 mm kurz",
+   "Elektrode": "1x kurz",
+   "Aussenschutzdüse": "1x",
+   "Diffusor": "1x"
+  }
+ },
+ {
+  "id": "vtbox-pshb65",
+  "cat": "zubehoer",
+  "sub": "Verschleissteile",
+  "vt": "Verschleiss",
+  "name": "Verschleissteilebox PSHB 65",
+  "img": "2022/05/PSHB_KIT_BOX-300x194.png",
+  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.",
+  "specs": {
+   "Für": "PSHB 65",
+   "Schneiddüsen": "5x",
+   "Elektrode": "1x",
+   "Wirbelring": "1x",
+   "Kappen": "1x Brennerkappe · 1x Schutzkappe"
+  }
+ },
+ {
+  "id": "vtbox-pshb125",
+  "cat": "zubehoer",
+  "sub": "Verschleissteile",
+  "vt": "Verschleiss",
+  "name": "Verschleissteilebox PSHB 125",
+  "img": "2022/05/PSHB_KIT_BOX-300x194.png",
+  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.",
+  "specs": {
+   "Für": "PSHB 125",
+   "Schneiddüsen": "5x",
+   "Elektrode": "1x",
+   "Wirbelring": "1x",
+   "Kappen": "1x Brennerkappe · 1x Schutzkappe"
+  }
+ },
+ {
+  "id": "vtbox-pshb160",
+  "cat": "zubehoer",
+  "sub": "Verschleissteile",
+  "vt": "Verschleiss",
+  "name": "Verschleissteilebox PSHB 160",
+  "img": "2022/05/PSHB_KIT_BOX-300x194.png",
+  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.",
+  "specs": {
+   "Für": "PSHB 160",
+   "Schneiddüsen": "5x",
+   "Elektrode": "1x",
+   "Wirbelring": "1x",
+   "Kappen": "1x Brennerkappe · 1x Schutzkappe"
+  }
+ },
+ {
+  "id": "drahtvorschubrollen",
+  "cat": "zubehoer",
+  "sub": "Verschleissteile",
+  "vt": "Vorschubrolle",
+  "name": "Drahtvorschubrollen",
+  "img": "2021/05/DVR.png",
+  "desc": "Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
+  "specs": {
+   "Für": "HyperMIG X · EcoMIG · MMS",
+   "Stahl": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+   "Gerändelt": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+   "Aluminium": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+   "Serienmässig": "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)"
+  }
+ },
+ {
+  "id": "zwischenschlauchpaket",
+  "cat": "zubehoer",
+  "sub": "Schlauchpakete",
+  "vt": "Schlauchpaket",
+  "name": "Zwischenschlauchpaket",
+  "img": "2021/05/ZSW.png",
+  "desc": "Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet.",
+  "specs": {
+   "Für": "HyperMIG X",
+   "Verbindet": "Stromquelle mit Vorschubkoffer",
+   "Längen": "1,2 · 5 · 10 · 15 · 20 m"
+  }
+ },
+ {
+  "id": "montagesatz-mlf100",
+  "cat": "zubehoer",
+  "sub": "Cleaner-Zubehör",
+  "vt": "Montage",
+  "name": "Montagesatz MLF 100",
+  "img": "2026/01/IMGP6030_1-248x300.png",
+  "desc": "Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten.",
+  "specs": {
+   "Funktion": "Befestigung",
+   "Für": "MLF 100",
+   "Montage an": "MAHE HyperCleaner"
+  }
+ },
+ {
+  "id": "reinigungspinselstaender",
+  "cat": "zubehoer",
+  "sub": "Cleaner-Zubehör",
+  "vt": "Halterung",
+  "name": "Reinigungspinselständer",
+  "img": "2026/01/IMGP6034_1-250x300.png",
+  "desc": "Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.",
+  "specs": {
+   "Typ": "Bürstenständer",
+   "Ausstattung": "Tropfschutz",
+   "Für": "MLF 100"
+  }
+ },
+ {
+  "id": "elektrodenkabel-4m",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Elektrodenkabel 25–90 mm²",
+  "img": "2021/06/Elektrodenhalter-215x300.png",
+  "desc": "Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+  "specs": {
+   "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+   "Länge": "4 m",
+   "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+  }
+ },
+ {
+  "id": "massekabel-4m",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 25–90 mm²",
+  "img": "2021/06/Elektrodenhalter-215x300.png",
+  "desc": "Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+  "specs": {
+   "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+   "Länge": "4 m",
+   "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+  }
+ },
+ {
+  "id": "massekabel-16",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 16 mm²",
+  "img": "2021/06/Masse_Kabel_16qmm-300x290.png",
+  "desc": "Massekabel für den Plasmaschneider Theta 40.",
+  "specs": {
+   "Querschnitt": "16 mm²",
+   "Länge": "4 m",
+   "Für": "Theta 40"
+  }
+ },
+ {
+  "id": "massekabel-25",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 25 mm²",
+  "img": "2021/06/Massekabel-300x169.png",
+  "desc": "Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.",
+  "specs": {
+   "Querschnitt": "25 mm²",
+   "Länge": "4 m",
+   "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
   }
  }
 ]

@@ -121,7 +121,7 @@ def search_index(lang):
         mats = [C.matLabel(lang, m_) for m_ in C.matOf(p)]
         prods.append({
             "i": p["id"],
-            "n": p["name"],
+            "n": C.pName(lang, p),
             "d": C.pDesc(lang, p),
             "v": p["vt"],
             "c": C.catT(lang, cat),
@@ -129,7 +129,7 @@ def search_index(lang):
             "u": C.u_prod(lang, p),
             "g": f"/assets/img/p/{m['key']}-400.webp" if m else C.REMOTE_IMG + C.full_img(p["img"]),
             # Suchtext nach Gewicht getrennt: Name / Typ / Rest
-            "t1": norm(f"{p['name']} {p['id']}"),
+            "t1": norm(f"{C.pName(lang, p)} {p['name']} {p['id']}"),
             "t2": norm(f"{p['vt']} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
             "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)}"),
         })

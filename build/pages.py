@@ -124,7 +124,7 @@ def spec_html(lang, p):
             body += f'<tr><th scope="row">{e(r[0])}</th>{cells}</tr>'
         out.append(
             f'<div class="spectab-scroll" tabindex="0" role="region" '
-            f'aria-label="{e(C.t(lang,"techdata"))} {e(p["name"])}">'
+            f'aria-label="{e(C.t(lang,"techdata"))} {e(C.pName(lang, p))}">'
             f'<table class="spectab">{cap}'
             f'<thead><tr><th scope="col">{e(C.t(lang,"spec_model"))}</th>{head}</tr></thead>'
             f"<tbody>{body}</tbody></table></div>"
@@ -151,12 +151,12 @@ def acc_html(lang, p):
     cards = ""
     for pid in acc:
         a = C.BY_ID[pid]
-        alt = "%s %s" % (C.BRAND, a["name"])
+        alt = "%s %s" % (C.BRAND, C.pName(lang, a))
         im = R.img_tag(a["img"], "(max-width:760px) 40vw, 180px", alt=alt)
         cards += (
             f'<a class="acccard" href="{e(C.u_prod(lang, a))}">'
             f'<div class="im">{im}</div>'
-            f'<div class="bd"><div class="vt">{e(a["vt"])}</div><h3>{e(a["name"])}</h3>'
+            f'<div class="bd"><div class="vt">{e(a["vt"])}</div><h3>{e(C.pName(lang, a))}</h3>'
             f'<p>{e(C.pDesc(lang, a))}</p></div></a>'
         )
     return f'<div class="accgrid">{cards}</div>'
@@ -334,21 +334,22 @@ def page_product(lang, p):
     # Titel muss pro Sprache eindeutig sein: die übersetzte Kategorie sorgt dafür,
     # auch wenn die Unterkategorie in allen drei Sprachen gleich heisst (z. B. "Theta").
     sub_t, cat_t = C.subT(lang, p["sub"]), C.catT(lang, c)
+    nm = C.pName(lang, p)
     suffix = " | " + C.t(lang, "site_name")
     # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
-    for cand in (f"MAHE {p['name']} · {sub_t} – {cat_t}" + suffix,
-                 f"MAHE {p['name']} · {sub_t} – {cat_t}",
-                 f"MAHE {p['name']} · {sub_t}" + suffix,
-                 f"MAHE {p['name']} · {sub_t}"):
+    for cand in (f"MAHE {nm} · {sub_t} – {cat_t}" + suffix,
+                 f"MAHE {nm} · {sub_t} – {cat_t}",
+                 f"MAHE {nm} · {sub_t}" + suffix,
+                 f"MAHE {nm} · {sub_t}"):
         title = cand
         if len(cand) <= 68:
             break
-    desc = clip(C.t(lang, "prod_desc_tpl", name=p["name"], vt=p["vt"], desc=C.pDesc(lang, p)), 165)
+    desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=p["vt"], desc=C.pDesc(lang, p)), 165)
     crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
              (C.t(lang, "nav_products"), C.u_products(lang)),
              (C.catT(lang, c), C.u_cat(lang, p["cat"])),
              (C.subT(lang, p["sub"]), C.u_sub(lang, p["cat"], p["sub"])),
-             (p["name"], None)]
+             (nm, None)]
 
     has_panel = bool(C.fpAssign(p))
     tab1 = C.t(lang, "tab_feat") if has_panel else C.t(lang, "highlights")
@@ -374,7 +375,7 @@ def page_product(lang, p):
   {R.crumbs(lang, crumb)}
   <div class="dgrid">
     <div class="dimg"><span class="vtag">{e(p['vt'])}</span>
-      {R.img_tag(p['img'], "(max-width:900px) 92vw, 520px", alt=f"{C.BRAND} {p['name']} – {C.pDesc(lang, p)}", eager=True, width=560)}</div>
+      {R.img_tag(p['img'], "(max-width:900px) 92vw, 520px", alt=f"{C.BRAND} {nm} – {C.pDesc(lang, p)}", eager=True, width=560)}</div>
     <div class="dinfo">
       <p class="kicker">{e(C.catT(lang, c))} · {C.BRAND}</p>
       <h1>{e(p['name'])}</h1>

@@ -9,7 +9,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Bilder: MAHE GmbH. Wiedergabe durch VES-TECH Swiss als Schweizer Partner.",
- "count": 52,
+ "count": 78,
  "products": [
   {
    "id": "hypermig-x",
@@ -13221,9 +13221,9 @@
     "it": "Cavi"
    },
    "description": {
-    "de": "Elektrodenkabel für Cleaner- und MMA-Geräte.",
-    "fr": "Câble d’électrode pour appareils Cleaner et MMA.",
-    "it": "Cavo elettrodo per apparecchi Cleaner e MMA."
+    "de": "Elektrodenkabel für die HyperCleaner-Reinigungsgeräte.",
+    "fr": "Câble d'électrode pour les appareils de nettoyage HyperCleaner.",
+    "it": "Cavo portaelettrodo per gli apparecchi di pulizia HyperCleaner."
    },
    "highlights": {
     "de": [],
@@ -13233,18 +13233,18 @@
    "specs": {
     "de": {
      "Querschnitt": "10 mm²",
-     "Längen": "3 / 6 / 10 m",
-     "Farbe": "blau"
+     "Längen": "3 · 6 · 10 m",
+     "Für": "HyperCleaner"
     },
     "fr": {
      "Section": "10 mm²",
-     "Longueurs": "3 / 6 / 10 m",
-     "Couleur": "bleu"
+     "Longueurs": "3 · 6 · 10 m",
+     "Pour": "HyperCleaner"
     },
     "it": {
      "Sezione": "10 mm²",
-     "Lunghezze": "3 / 6 / 10 m",
-     "Colore": "blu"
+     "Lunghezze": "3 · 6 · 10 m",
+     "Per": "HyperCleaner"
     }
    },
    "techdata": {
@@ -13287,9 +13287,9 @@
     "it": "Cavi"
    },
    "description": {
-    "de": "Massekabel mit Klemme für Cleaner- und MMA-Geräte.",
-    "fr": "Câble de masse avec pince pour Cleaner et MMA.",
-    "it": "Cavo di massa con morsetto per Cleaner e MMA."
+    "de": "Massekabel für die HyperCleaner-Reinigungsgeräte.",
+    "fr": "Câble de masse pour les appareils de nettoyage HyperCleaner.",
+    "it": "Cavo di massa per gli apparecchi di pulizia HyperCleaner."
    },
    "highlights": {
     "de": [],
@@ -13299,18 +13299,18 @@
    "specs": {
     "de": {
      "Querschnitt": "10 mm²",
-     "Längen": "3 / 6 / 10 m",
-     "Farbe": "schwarz"
+     "Längen": "3 · 6 · 10 m",
+     "Für": "HyperCleaner"
     },
     "fr": {
      "Section": "10 mm²",
-     "Longueurs": "3 / 6 / 10 m",
-     "Couleur": "noir"
+     "Longueurs": "3 · 6 · 10 m",
+     "Pour": "HyperCleaner"
     },
     "it": {
      "Sezione": "10 mm²",
-     "Lunghezze": "3 / 6 / 10 m",
-     "Colore": "nero"
+     "Lunghezze": "3 · 6 · 10 m",
+     "Per": "HyperCleaner"
     }
    },
    "techdata": {
@@ -13354,8 +13354,8 @@
    },
    "description": {
     "de": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.",
-    "fr": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.",
-    "it": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie."
+    "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
    },
    "highlights": {
     "de": [],
@@ -13370,13 +13370,13 @@
     },
     "fr": {
      "Type": "MIG/MAG wassergekühlt",
-     "Länge": "4 m",
-     "Option": "wahlweise mit Up/Down"
+     "Longueur": "4 m",
+     "Option": "au choix avec Up/Down"
     },
     "it": {
      "Tipo": "MIG/MAG wassergekühlt",
-     "Länge": "4 m",
-     "Option": "wahlweise mit Up/Down"
+     "Lunghezza": "4 m",
+     "Opzione": "a scelta con Up/Down"
     }
    },
    "techdata": {
@@ -13420,8 +13420,8 @@
    },
    "description": {
     "de": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.",
-    "fr": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.",
-    "it": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen."
+    "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
    },
    "highlights": {
     "de": [],
@@ -13436,13 +13436,13 @@
     },
     "fr": {
      "Type": "MIG/MAG wassergekühlt",
-     "Länge": "4 m",
-     "Option": "wahlweise mit Up/Down"
+     "Longueur": "4 m",
+     "Option": "au choix avec Up/Down"
     },
     "it": {
      "Tipo": "MIG/MAG wassergekühlt",
-     "Länge": "4 m",
-     "Option": "wahlweise mit Up/Down"
+     "Lunghezza": "4 m",
+     "Opzione": "a scelta con Up/Down"
     }
    },
    "techdata": {
@@ -13466,6 +13466,1755 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mf240w/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mf240w/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/mf240w/"
+   }
+  },
+  {
+   "id": "mf155",
+   "sku": "MF155",
+   "name": "MAHE MF155",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Gasgekühlter MIG/MAG-Brenner für EcoMIG und MMS, in 3 oder 4 m Länge.",
+    "fr": "Torche MIG/MAG refroidie au gaz pour EcoMIG et MMS, en 3 ou 4 m de longueur.",
+    "it": "Torcia MIG/MAG raffreddata a gas per EcoMIG e MMS, in lunghezza da 3 o 4 m."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "MIG/MAG gasgekühlt",
+     "Länge": "3 / 4 m",
+     "Option": "4 m wahlweise mit Up/Down"
+    },
+    "fr": {
+     "Type": "MIG/MAG refroidi au gaz",
+     "Longueur": "3 / 4 m",
+     "Option": "4 m au choix avec Up/Down"
+    },
+    "it": {
+     "Tipo": "MIG/MAG raffreddato a gas",
+     "Lunghezza": "3 / 4 m",
+     "Opzione": "4 m a scelta con Up/Down"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mf155/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mf155/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mf155/"
+   }
+  },
+  {
+   "id": "mf250",
+   "sku": "MF250",
+   "name": "MAHE MF250",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Gasgekühlter MIG/MAG-Brenner in 4 m Länge für EcoMIG und MMS, wahlweise mit Up/Down.",
+    "fr": "Torche MIG/MAG refroidie au gaz de 4 m pour EcoMIG et MMS, au choix avec Up/Down.",
+    "it": "Torcia MIG/MAG raffreddata a gas da 4 m per EcoMIG e MMS, a scelta con Up/Down."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "MIG/MAG gasgekühlt",
+     "Länge": "4 m",
+     "Option": "wahlweise mit Up/Down"
+    },
+    "fr": {
+     "Type": "MIG/MAG refroidi au gaz",
+     "Longueur": "4 m",
+     "Option": "au choix avec Up/Down"
+    },
+    "it": {
+     "Tipo": "MIG/MAG raffreddato a gas",
+     "Lunghezza": "4 m",
+     "Opzione": "a scelta con Up/Down"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mf250/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mf250/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mf250/"
+   }
+  },
+  {
+   "id": "mt170",
+   "sku": "MT170",
+   "name": "MAHE MT170",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Gasgekühlter WIG-Brenner für Beta digital, Beta DX und HyperCleaner CT 200.",
+    "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX et HyperCleaner CT 200.",
+    "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX e HyperCleaner CT 200."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "WIG gasgekühlt",
+     "Länge": "4 / 8 m",
+     "Option": "wahlweise mit Potentiometer"
+    },
+    "fr": {
+     "Type": "TIG refroidi au gaz",
+     "Longueur": "4 / 8 m",
+     "Option": "au choix avec potentiomètre"
+    },
+    "it": {
+     "Tipo": "TIG raffreddato a gas",
+     "Lunghezza": "4 / 8 m",
+     "Opzione": "a scelta con potenziometro"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mt170/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt170/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt170/"
+   }
+  },
+  {
+   "id": "mt170v",
+   "sku": "MT170V",
+   "name": "MAHE MT170 V",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Gasgekühlter WIG-Brenner für Delta, Delta Digital, Delta Digital DS und i-1600, mit Gasventil am Brenner.",
+    "fr": "Torche TIG refroidie au gaz pour Delta, Delta Digital, Delta Digital DS et i-1600, avec vanne de gaz sur la torche.",
+    "it": "Torcia TIG raffreddata a gas per Delta, Delta Digital, Delta Digital DS e i-1600, con valvola del gas sulla torcia."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "WIG gasgekühlt",
+     "Länge": "4 / 8 m",
+     "Ausstattung": "Gasventil am Brenner"
+    },
+    "fr": {
+     "Type": "TIG refroidi au gaz",
+     "Longueur": "4 / 8 m",
+     "Équipement": "vanne de gaz sur la torche"
+    },
+    "it": {
+     "Tipo": "TIG raffreddato a gas",
+     "Lunghezza": "4 / 8 m",
+     "Dotazione": "valvola del gas sulla torcia"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mt170v/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt170v/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt170v/"
+   }
+  },
+  {
+   "id": "mt180w",
+   "sku": "MT180W",
+   "name": "MAHE MT180W",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Wassergekühlter WIG-Brenner in 4 oder 8 m Länge für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie.",
+    "fr": "Torche TIG refroidie à l’eau en 4 ou 8 m pour Beta digital, HyperCleaner CT 200 et la série HyperTIG.",
+    "it": "Torcia TIG raffreddata ad acqua da 4 o 8 m per Beta digital, HyperCleaner CT 200 e la serie HyperTIG."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "WIG wassergekühlt",
+     "Länge": "4 / 8 m",
+     "Option": "wahlweise mit Potentiometer"
+    },
+    "fr": {
+     "Type": "TIG refroidi à l’eau",
+     "Longueur": "4 / 8 m",
+     "Option": "au choix avec potentiomètre"
+    },
+    "it": {
+     "Tipo": "TIG raffreddato ad acqua",
+     "Lunghezza": "4 / 8 m",
+     "Opzione": "a scelta con potenziometro"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mt180w/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt180w/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt180w/"
+   }
+  },
+  {
+   "id": "mt200w",
+   "sku": "MT200W",
+   "name": "MAHE MT200W",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Wassergekühlter WIG-Brenner für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie, wahlweise mit Potentiometer.",
+    "fr": "Torche TIG refroidie à l’eau pour Beta digital, HyperCleaner CT 200 et la série HyperTIG, au choix avec potentiomètre.",
+    "it": "Torcia TIG raffreddata ad acqua per Beta digital, HyperCleaner CT 200 e la serie HyperTIG, a scelta con potenziometro."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "WIG wassergekühlt",
+     "Länge": "4 / 8 m",
+     "Option": "wahlweise mit Potentiometer"
+    },
+    "fr": {
+     "Type": "TIG refroidi à l’eau",
+     "Longueur": "4 / 8 m",
+     "Option": "au choix avec potentiomètre"
+    },
+    "it": {
+     "Tipo": "TIG raffreddato ad acqua",
+     "Lunghezza": "4 / 8 m",
+     "Opzione": "a scelta con potenziometro"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mt200w/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt200w/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt200w/"
+   }
+  },
+  {
+   "id": "mt260",
+   "sku": "MT260",
+   "name": "MAHE MT260",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Gasgekühlter WIG-Brenner für Beta digital, Beta DX, Omega AX und HyperCleaner CT 200.",
+    "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX, Omega AX et HyperCleaner CT 200.",
+    "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX, Omega AX e HyperCleaner CT 200."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "WIG gasgekühlt",
+     "Länge": "4 / 8 m",
+     "Option": "wahlweise mit Potentiometer"
+    },
+    "fr": {
+     "Type": "TIG refroidi au gaz",
+     "Longueur": "4 / 8 m",
+     "Option": "au choix avec potentiomètre"
+    },
+    "it": {
+     "Tipo": "TIG raffreddato a gas",
+     "Lunghezza": "4 / 8 m",
+     "Opzione": "a scelta con potenziometro"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mt260/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt260/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt260/"
+   }
+  },
+  {
+   "id": "mt260v",
+   "sku": "MT260V",
+   "name": "MAHE MT260 V",
+   "brand": "MAHE",
+   "type": "Brenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce"
+   },
+   "description": {
+    "de": "Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600.",
+    "fr": "Torche TIG refroidie au gaz avec vanne de gaz sur la torche, en 4 ou 8 m, pour Delta, Delta Digital, Delta Digital DS et i-1600.",
+    "it": "Torcia TIG raffreddata a gas con valvola del gas sulla torcia, da 4 o 8 m, per Delta, Delta Digital, Delta Digital DS e i-1600."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "WIG gasgekühlt",
+     "Länge": "4 / 8 m",
+     "Ausstattung": "Gasventil am Brenner"
+    },
+    "fr": {
+     "Type": "TIG refroidi au gaz",
+     "Longueur": "4 / 8 m",
+     "Équipement": "vanne de gaz sur la torche"
+    },
+    "it": {
+     "Tipo": "TIG raffreddato a gas",
+     "Lunghezza": "4 / 8 m",
+     "Dotazione": "valvola del gas sulla torcia"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mt260v/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt260v/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt260v/"
+   }
+  },
+  {
+   "id": "s25",
+   "sku": "S25",
+   "name": "MAHE S 25",
+   "brand": "MAHE",
+   "type": "Plasmabrenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Plasmabrenner",
+    "fr": "Torches plasma",
+    "it": "Torce plasma"
+   },
+   "description": {
+    "de": "Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich.",
+    "fr": "Torche de coupe plasma de la Theta 40, montée à demeure dans la machine et disponible en 4 mètres.",
+    "it": "Torcia da taglio al plasma della Theta 40, montata fissa nella macchina e disponibile in 4 metri."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Plasmaschneidbrenner",
+     "Für": "Theta 40",
+     "Länge": "4 m",
+     "Montage": "fest in der Maschine verbaut"
+    },
+    "fr": {
+     "Type": "torche de coupe plasma",
+     "Pour": "Theta 40",
+     "Longueur": "4 m",
+     "Montage": "montée à demeure dans la machine"
+    },
+    "it": {
+     "Tipo": "torcia da taglio al plasma",
+     "Per": "Theta 40",
+     "Lunghezza": "4 m",
+     "Montaggio": "montata fissa nella macchina"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb250-86579a-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/s25/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/s25/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/s25/"
+   }
+  },
+  {
+   "id": "pshb65",
+   "sku": "PSHB65",
+   "name": "MAHE PSHB 65",
+   "brand": "MAHE",
+   "type": "Plasmabrenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Plasmabrenner",
+    "fr": "Torches plasma",
+    "it": "Torce plasma"
+   },
+   "description": {
+    "de": "Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+    "fr": "Torche de coupe plasma pour la Theta 60 HSC, d’une capacité de coupe jusqu’à 40 mm, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per la Theta 60 HSC, con capacità di taglio fino a 40 mm, disponibile in 6 e 12 metri."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Plasmaschneidbrenner",
+     "Für": "Theta 60 HSC",
+     "Längen": "6 / 12 m"
+    },
+    "fr": {
+     "Type": "torche de coupe plasma",
+     "Pour": "Theta 60 HSC",
+     "Longueurs": "6 / 12 m"
+    },
+    "it": {
+     "Tipo": "torcia da taglio al plasma",
+     "Per": "Theta 60 HSC",
+     "Lunghezze": "6 / 12 m"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/pshb65/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/pshb65/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/pshb65/"
+   }
+  },
+  {
+   "id": "pshb125",
+   "sku": "PSHB125",
+   "name": "MAHE PSHB 125",
+   "brand": "MAHE",
+   "type": "Plasmabrenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Plasmabrenner",
+    "fr": "Torches plasma",
+    "it": "Torce plasma"
+   },
+   "description": {
+    "de": "Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+    "fr": "Torche de coupe plasma pour la Theta 120 HSC, d’une capacité de coupe jusqu’à 55 mm, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per la Theta 120 HSC, con capacità di taglio fino a 55 mm, disponibile in 6 e 12 metri."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Plasmaschneidbrenner",
+     "Für": "Theta 120 HSC",
+     "Längen": "6 / 12 m"
+    },
+    "fr": {
+     "Type": "torche de coupe plasma",
+     "Pour": "Theta 120 HSC",
+     "Longueurs": "6 / 12 m"
+    },
+    "it": {
+     "Tipo": "torcia da taglio al plasma",
+     "Per": "Theta 120 HSC",
+     "Lunghezze": "6 / 12 m"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/pshb125/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/pshb125/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/pshb125/"
+   }
+  },
+  {
+   "id": "pshb160",
+   "sku": "PSHB160",
+   "name": "MAHE PSHB 160",
+   "brand": "MAHE",
+   "type": "Plasmabrenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Plasmabrenner",
+    "fr": "Torches plasma",
+    "it": "Torce plasma"
+   },
+   "description": {
+    "de": "Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+    "fr": "Torche de coupe plasma pour la Theta 180 HSC, d’une capacité de coupe jusqu’à 80 mm, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per la Theta 180 HSC, con capacità di taglio fino a 80 mm, disponibile in 6 e 12 metri."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Plasmaschneidbrenner",
+     "Für": "Theta 180 HSC",
+     "Längen": "6 / 12 m"
+    },
+    "fr": {
+     "Type": "torche de coupe plasma",
+     "Pour": "Theta 180 HSC",
+     "Longueurs": "6 / 12 m"
+    },
+    "it": {
+     "Tipo": "torcia da taglio al plasma",
+     "Per": "Theta 180 HSC",
+     "Lunghezze": "6 / 12 m"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/pshb160/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/pshb160/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/pshb160/"
+   }
+  },
+  {
+   "id": "psab65",
+   "sku": "PSAB65",
+   "name": "MAHE PSAB 65",
+   "brand": "MAHE",
+   "type": "Plasmabrenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Plasmabrenner",
+    "fr": "Torches plasma",
+    "it": "Torce plasma"
+   },
+   "description": {
+    "de": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in 6 und 12 Meter Länge.",
+    "fr": "Torche de coupe plasma pour le découpeur plasma d’automation Theta 60 AUT, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per l’inverter plasma per automazione Theta 60 AUT, disponibile in 6 e 12 metri."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Plasmaschneidbrenner",
+     "Für": "Theta 60 AUT",
+     "Längen": "6 / 12 m"
+    },
+    "fr": {
+     "Type": "torche de coupe plasma",
+     "Pour": "Theta 60 AUT",
+     "Longueurs": "6 / 12 m"
+    },
+    "it": {
+     "Tipo": "torcia da taglio al plasma",
+     "Per": "Theta 60 AUT",
+     "Lunghezze": "6 / 12 m"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/psab65/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/psab65/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/psab65/"
+   }
+  },
+  {
+   "id": "psab125",
+   "sku": "PSAB125",
+   "name": "MAHE PSAB 125",
+   "brand": "MAHE",
+   "type": "Plasmabrenner",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Plasmabrenner",
+    "fr": "Torches plasma",
+    "it": "Torce plasma"
+   },
+   "description": {
+    "de": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in 6 und 12 Meter Länge.",
+    "fr": "Torche de coupe plasma pour le découpeur plasma d’automation Theta 120 AUT, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per l’inverter plasma per automazione Theta 120 AUT, disponibile in 6 e 12 metri."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Plasmaschneidbrenner",
+     "Für": "Theta 120 AUT",
+     "Längen": "6 / 12 m"
+    },
+    "fr": {
+     "Type": "torche de coupe plasma",
+     "Pour": "Theta 120 AUT",
+     "Longueurs": "6 / 12 m"
+    },
+    "it": {
+     "Tipo": "torcia da taglio al plasma",
+     "Per": "Theta 120 AUT",
+     "Lunghezze": "6 / 12 m"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/psab125/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/psab125/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/psab125/"
+   }
+  },
+  {
+   "id": "vtbox-s25",
+   "sku": "VTBOX-S25",
+   "name": "MAHE Verschleissteilebox S 25",
+   "brand": "MAHE",
+   "type": "Verschleiss",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Verschleissteile",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
+   "description": {
+    "de": "Verschleissteilebox für den fest in der Theta 40 verbauten Plasmaschneidbrenner S 25.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma S 25 montée à demeure dans la Theta 40.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma S 25 montata fissa nella Theta 40."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "S 25",
+     "Schneiddüsen": "5x 0,8 mm kurz",
+     "Elektrode": "1x kurz",
+     "Aussenschutzdüse": "1x",
+     "Diffusor": "1x"
+    },
+    "fr": {
+     "Pour": "S 25",
+     "Buses de coupe": "5x 0,8 mm court",
+     "Électrode": "1x court",
+     "Buse de protection extérieure": "1x",
+     "Diffuseur": "1x"
+    },
+    "it": {
+     "Per": "S 25",
+     "Ugelli da taglio": "5x 0,8 mm corto",
+     "Elettrodo": "1x corto",
+     "Ugello di protezione esterno": "1x",
+     "Diffusore": "1x"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-s25/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/vtbox-s25/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/vtbox-s25/"
+   }
+  },
+  {
+   "id": "vtbox-pshb65",
+   "sku": "VTBOX-PSHB65",
+   "name": "MAHE Verschleissteilebox PSHB 65",
+   "brand": "MAHE",
+   "type": "Verschleiss",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Verschleissteile",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
+   "description": {
+    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 65 – contenu identique aux coffrets PSHB 125 et PSHB 160.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 65 – dotazione identica ai box PSHB 125 e PSHB 160."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "PSHB 65",
+     "Schneiddüsen": "5x",
+     "Elektrode": "1x",
+     "Wirbelring": "1x",
+     "Kappen": "1x Brennerkappe · 1x Schutzkappe"
+    },
+    "fr": {
+     "Pour": "PSHB 65",
+     "Buses de coupe": "5x",
+     "Électrode": "1x",
+     "Bague de diffusion": "1x",
+     "Capuchons": "1x capuchon de torche · 1x capuchon de protection"
+    },
+    "it": {
+     "Per": "PSHB 65",
+     "Ugelli da taglio": "5x",
+     "Elettrodo": "1x",
+     "Anello diffusore": "1x",
+     "Cappucci": "1x cappuccio torcia · 1x cappuccio di protezione"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/vtbox-pshb65/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/vtbox-pshb65/"
+   }
+  },
+  {
+   "id": "vtbox-pshb125",
+   "sku": "VTBOX-PSHB125",
+   "name": "MAHE Verschleissteilebox PSHB 125",
+   "brand": "MAHE",
+   "type": "Verschleiss",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Verschleissteile",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
+   "description": {
+    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 125 – contenu identique aux coffrets PSHB 65 et PSHB 160.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 125 – dotazione identica ai box PSHB 65 e PSHB 160."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "PSHB 125",
+     "Schneiddüsen": "5x",
+     "Elektrode": "1x",
+     "Wirbelring": "1x",
+     "Kappen": "1x Brennerkappe · 1x Schutzkappe"
+    },
+    "fr": {
+     "Pour": "PSHB 125",
+     "Buses de coupe": "5x",
+     "Électrode": "1x",
+     "Bague de diffusion": "1x",
+     "Capuchons": "1x capuchon de torche · 1x capuchon de protection"
+    },
+    "it": {
+     "Per": "PSHB 125",
+     "Ugelli da taglio": "5x",
+     "Elettrodo": "1x",
+     "Anello diffusore": "1x",
+     "Cappucci": "1x cappuccio torcia · 1x cappuccio di protezione"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/vtbox-pshb125/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/vtbox-pshb125/"
+   }
+  },
+  {
+   "id": "vtbox-pshb160",
+   "sku": "VTBOX-PSHB160",
+   "name": "MAHE Verschleissteilebox PSHB 160",
+   "brand": "MAHE",
+   "type": "Verschleiss",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Verschleissteile",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
+   "description": {
+    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 160 – contenu identique aux coffrets PSHB 65 et PSHB 125.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 160 – dotazione identica ai box PSHB 65 e PSHB 125."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "PSHB 160",
+     "Schneiddüsen": "5x",
+     "Elektrode": "1x",
+     "Wirbelring": "1x",
+     "Kappen": "1x Brennerkappe · 1x Schutzkappe"
+    },
+    "fr": {
+     "Pour": "PSHB 160",
+     "Buses de coupe": "5x",
+     "Électrode": "1x",
+     "Bague de diffusion": "1x",
+     "Capuchons": "1x capuchon de torche · 1x capuchon de protection"
+    },
+    "it": {
+     "Per": "PSHB 160",
+     "Ugelli da taglio": "5x",
+     "Elettrodo": "1x",
+     "Anello diffusore": "1x",
+     "Cappucci": "1x cappuccio torcia · 1x cappuccio di protezione"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/vtbox-pshb160/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/vtbox-pshb160/"
+   }
+  },
+  {
+   "id": "drahtvorschubrollen",
+   "sku": "DRAHTVORSCHUBROLLEN",
+   "name": "MAHE Drahtvorschubrollen",
+   "brand": "MAHE",
+   "type": "Vorschubrolle",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Verschleissteile",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
+   "description": {
+    "de": "Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
+    "fr": "Galets d'entraînement pour les postes MIG/MAG HyperMIG X, EcoMIG et MMS, en versions acier, moletée et aluminium.",
+    "it": "Rulli trainafilo per le saldatrici MIG/MAG HyperMIG X, EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "HyperMIG X · EcoMIG · MMS",
+     "Stahl": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+     "Gerändelt": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+     "Aluminium": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+     "Serienmässig": "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)"
+    },
+    "fr": {
+     "Pour": "HyperMIG X · EcoMIG · MMS",
+     "Acier": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+     "Moleté": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+     "Aluminium": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+     "De série": "0,8/1,0 acier (300 A) · 1,0/1,2 acier (350–600 A)"
+    },
+    "it": {
+     "Per": "HyperMIG X · EcoMIG · MMS",
+     "Acciaio": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+     "Zigrinato": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+     "Alluminio": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
+     "Di serie": "0,8/1,0 acciaio (300 A) · 1,0/1,2 acciaio (350–600 A)"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/dvr-f399d9-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/drahtvorschubrollen/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/drahtvorschubrollen/"
+   }
+  },
+  {
+   "id": "zwischenschlauchpaket",
+   "sku": "ZWISCHENSCHLAUCHPAKET",
+   "name": "MAHE Zwischenschlauchpaket",
+   "brand": "MAHE",
+   "type": "Schlauchpaket",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Schlauchpakete",
+    "fr": "Faisceaux",
+    "it": "Fasci cavi"
+   },
+   "description": {
+    "de": "Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet.",
+    "fr": "Faisceau intermédiaire reliant la source de courant de la série HyperMIG X au dévidoir.",
+    "it": "Fascio intermedio che collega il generatore della serie HyperMIG X al trainafilo."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "HyperMIG X",
+     "Verbindet": "Stromquelle mit Vorschubkoffer",
+     "Längen": "1,2 · 5 · 10 · 15 · 20 m"
+    },
+    "fr": {
+     "Pour": "HyperMIG X",
+     "Relie": "source de courant et dévidoir",
+     "Longueurs": "1,2 · 5 · 10 · 15 · 20 m"
+    },
+    "it": {
+     "Per": "HyperMIG X",
+     "Collega": "generatore e trainafilo",
+     "Lunghezze": "1,2 · 5 · 10 · 15 · 20 m"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/zsw-27144f-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/zwischenschlauchpaket/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/zwischenschlauchpaket/"
+   }
+  },
+  {
+   "id": "montagesatz-mlf100",
+   "sku": "MONTAGESATZ-MLF100",
+   "name": "MAHE Montagesatz MLF 100",
+   "brand": "MAHE",
+   "type": "Montage",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Cleaner-Zubehör",
+    "fr": "Accessoires nettoyage",
+    "it": "Accessori pulizia"
+   },
+   "description": {
+    "de": "Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten.",
+    "fr": "Kit de fixation pour monter le MLF 100 sur les appareils MAHE HyperCleaner.",
+    "it": "Kit di fissaggio per montare l'MLF 100 sugli apparecchi MAHE HyperCleaner."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Funktion": "Befestigung",
+     "Für": "MLF 100",
+     "Montage an": "MAHE HyperCleaner"
+    },
+    "fr": {
+     "Fonction": "Fixation",
+     "Pour": "MLF 100",
+     "Montage sur": "MAHE HyperCleaner"
+    },
+    "it": {
+     "Funzione": "Fissaggio",
+     "Per": "MLF 100",
+     "Montaggio su": "MAHE HyperCleaner"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/imgp6030-1-8aa671-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/montagesatz-mlf100/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/montagesatz-mlf100/"
+   }
+  },
+  {
+   "id": "reinigungspinselstaender",
+   "sku": "REINIGUNGSPINSELSTAENDER",
+   "name": "MAHE Reinigungspinselständer",
+   "brand": "MAHE",
+   "type": "Halterung",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Cleaner-Zubehör",
+    "fr": "Accessoires nettoyage",
+    "it": "Accessori pulizia"
+   },
+   "description": {
+    "de": "Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.",
+    "fr": "Support de brosse avec protection anti-gouttes pour la brosse de nettoyage du MLF 100.",
+    "it": "Supporto per spazzola con protezione antigoccia per la spazzola di pulizia dell'MLF 100."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Bürstenständer",
+     "Ausstattung": "Tropfschutz",
+     "Für": "MLF 100"
+    },
+    "fr": {
+     "Type": "Support de brosse",
+     "Équipement": "protection anti-gouttes",
+     "Pour": "MLF 100"
+    },
+    "it": {
+     "Tipo": "Supporto per spazzola",
+     "Dotazione": "protezione antigoccia",
+     "Per": "MLF 100"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/imgp6034-1-2ff594-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/reinigungspinselstaender/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/reinigungspinselstaender/"
+   }
+  },
+  {
+   "id": "elektrodenkabel-4m",
+   "sku": "ELEKTRODENKABEL-4M",
+   "name": "MAHE Elektrodenkabel 25–90 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+    "fr": "Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+    "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+     "Länge": "4 m",
+     "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "fr": {
+     "Sections": "25 · 35 · 50 · 70 · 90 mm²",
+     "Longueur": "4 m",
+     "Pour": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "it": {
+     "Sezioni": "25 · 35 · 50 · 70 · 90 mm²",
+     "Lunghezza": "4 m",
+     "Per": "HyperMIG X · EcoMIG · MMS · Delta"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/elektrodenkabel-4m/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/elektrodenkabel-4m/"
+   }
+  },
+  {
+   "id": "massekabel-4m",
+   "sku": "MASSEKABEL-4M",
+   "name": "MAHE Massekabel 25–90 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+    "fr": "Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+    "it": "Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+     "Länge": "4 m",
+     "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "fr": {
+     "Sections": "25 · 35 · 50 · 70 · 90 mm²",
+     "Longueur": "4 m",
+     "Pour": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "it": {
+     "Sezioni": "25 · 35 · 50 · 70 · 90 mm²",
+     "Lunghezza": "4 m",
+     "Per": "HyperMIG X · EcoMIG · MMS · Delta"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-4m/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-4m/"
+   }
+  },
+  {
+   "id": "massekabel-16",
+   "sku": "MASSEKABEL-16",
+   "name": "MAHE Massekabel 16 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel für den Plasmaschneider Theta 40.",
+    "fr": "Câble de masse pour le découpeur plasma Theta 40.",
+    "it": "Cavo di massa per il sistema di taglio al plasma Theta 40."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitt": "16 mm²",
+     "Länge": "4 m",
+     "Für": "Theta 40"
+    },
+    "fr": {
+     "Section": "16 mm²",
+     "Longueur": "4 m",
+     "Pour": "Theta 40"
+    },
+    "it": {
+     "Sezione": "16 mm²",
+     "Lunghezza": "4 m",
+     "Per": "Theta 40"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/masse-kabel-16qmm-84051c-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-16/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-16/"
+   }
+  },
+  {
+   "id": "massekabel-25",
+   "sku": "MASSEKABEL-25",
+   "name": "MAHE Massekabel 25 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.",
+    "fr": "Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180.",
+    "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitt": "25 mm²",
+     "Länge": "4 m",
+     "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
+    },
+    "fr": {
+     "Section": "25 mm²",
+     "Longueur": "4 m",
+     "Pour": "Theta 60 · 120 · 180 (HSC / AUT)"
+    },
+    "it": {
+     "Sezione": "25 mm²",
+     "Lunghezza": "4 m",
+     "Per": "Theta 60 · 120 · 180 (HSC / AUT)"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/massekabel-262794-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-25/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-25/"
    }
   }
  ]

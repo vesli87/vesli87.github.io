@@ -89,7 +89,7 @@ def main():
         if not f.exists():
             continue
         for name, items in extract(f.read_text("utf-8", errors="replace")):
-            found.setdefault(name, {"url": u, "items": items})
+            found.setdefault(f"{slug} :: {name}", {"url": u, "items": items})
 
     OUT.write_text(json.dumps(found, ensure_ascii=False, indent=1), "utf-8")
     print(f"{len(found)} Geräte mit Besonderheiten -> {OUT.relative_to(C.ROOT)}\n")

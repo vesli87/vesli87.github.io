@@ -133,7 +133,8 @@ CTRL      = _load("CTRL")
 FP        = _load("FP")
 PANEL_HL  = _load("PANEL_HL")
 MAT_LABEL = _load("MAT_LABEL")
-HL_DEVICE = _load("HL_DEVICE")   # je Geraet, woertlich von mahe-online.de
+HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
+PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")
 
 EX = json.loads((BUILD / "i18n_extra.json").read_text("utf-8"))

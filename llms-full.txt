@@ -30,7 +30,7 @@ Passendes Zubehör: STT 30, MPF 02, WK 200.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/mms/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: MMS · Preis: auf Anfrage (CHF)
 Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt.
-Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
+Besonderheiten: Spritzerfreier Lichtbogen; Mobil und leicht, nur 11,5 kg; Rollenantrieb; 5 Meter Zuleitungskabel; Umpolung System; D200 Spule; WIG Lift Arc; Impuls Lichtbogen; HyperCold / HyperRoot Lichtbogen; Mobil und leicht, nur 21 kg; 4-Rollenantrieb; D300 Spule.
 Technische Daten: Verfahren: MIG/MAG; Einsatz: Montage / Werkstatt; Bauart: tragbar; Serie: MMS 2000 · MMS 3000.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 30, MPF 02, WK 300.
@@ -48,7 +48,7 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DX · Preis: auf Anfrage (CHF)
 Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.
-Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; WIG DC & MMA; Strom-Modulation einstellbar; Digitale Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Besonderheiten: Resonanz Inverter gesteuert durch einen DSP-Controller; Bis zu 20kHz Impulsschweissen; ActiveBoost Funktion; Hyper ARC Active Regelung; HyperSpot Schweissen; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
 Technische Daten: Verfahren: WIG DC; Strombereich: bis 220 A; Netz: 1~ 230 V; Bauart: mobil.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
@@ -75,7 +75,7 @@ Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
 Mobile digitale WIG-Schweissmaschine mit Programmspeicher.
-Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot Heftfunktion; Hyper ARC Active Regelung; Mix-TIG-Schweissen; WIG DC & MMA; Strom-Modulation einstellbar; Digitale Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Besonderheiten: Hochfrequenz Impulsschweissen; Hyper ARC Active Regelung; 5 Meter Zuleitungskabel; Digitale Ampere Anzeige; Fernbedienung; Synergy Einstellungen; Job Mode.
 Technische Daten: Verfahren: WIG DC; Strombereich: bis 300 A; Netz: 3~ 400 V; Bedienung: digital.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
@@ -102,7 +102,7 @@ Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA · Preis: auf Anfrage (CHF)
 Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.
-Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Force Arc; Anti Stick Funktion; 5 Meter Zuleitungskabel; Fernbedienung; WIG Lift Arc.
 Technische Daten: Verfahren: MMA · WIG-Lift; Netz: 230/400 V; Bauart: tragbar.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
@@ -111,7 +111,7 @@ Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL · Preis: auf Anfrage (CHF)
 Digitaler Multifunktions-Inverter für den Profi.
-Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Arc Force einstellbar; Hot Start einstellbar; Anti Stick Funktion; Fugenhobeln Funktion; Einstellbare Leerlaufspannung ab 15V; Stufenlose Vorwahl der Netzsicherung; 5 Meter Zuleitungskabel; Digitale Volt und Ampere Anzeige; Fernbedienung.
 Technische Daten: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
@@ -120,7 +120,7 @@ Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL-DS · Preis: auf Anfrage (CHF)
 Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.
-Besonderheiten: MMA-Elektrodenschweissen; WIG Lift Arc (DC); Hot-Start – sichere Zündung; Arc Force – stabiler Lichtbogen; Anti-Stick – kein Festkleben; Übertemperaturschutz; Generatortauglich; Robust & einfach zu bedienen.
+Besonderheiten: Zum Unter Wasser Schweissen; 15V ocV; Aktive ocV Überwachung; Optionaler Notausschalter; Force Arc; Anti Stick Funktion; 5 Meter Zuleitungskabel; Fugenhobeln Funktion; Umschaltbar CV und CC; Digitale Volt und Ampere Anzeigen; Data Hold Funktion; Mobil.
 Technische Daten: Verfahren: MMA · Unterwasser; Bedienung: digital; Einsatz: Diving / Offshore.
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.

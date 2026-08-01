@@ -631,5 +631,230 @@
    "Telecomando opzionale"
   ],
   "src": "https://mahe-online.de/omega-ac-dc-2/"
+ },
+ "delta": {
+  "de": [
+   "Schweisst basische, rutile und CEL Elektroden",
+   "Force Arc",
+   "Anti Stick Funktion",
+   "5 Meter Zuleitungskabel",
+   "Fernbedienung",
+   "WIG Lift Arc"
+  ],
+  "fr": [
+   "Soude les électrodes basiques, rutiles et cellulosiques",
+   "Force Arc",
+   "Fonction Anti-Stick",
+   "Câble d'alimentation de 5 mètres",
+   "Télécommande",
+   "TIG Lift Arc"
+  ],
+  "it": [
+   "Salda elettrodi basici, rutili e cellulosici",
+   "Force Arc",
+   "Funzione Anti-Stick",
+   "Cavo di alimentazione da 5 metri",
+   "Telecomando",
+   "TIG Lift Arc"
+  ],
+  "src": "https://mahe-online.de/delta/"
+ },
+ "delta-digital": {
+  "de": [
+   "Schweisst basische, rutile und CEL Elektroden",
+   "Arc Force einstellbar",
+   "Hot Start einstellbar",
+   "Anti Stick Funktion",
+   "Fugenhobeln Funktion",
+   "Einstellbare Leerlaufspannung ab 15V",
+   "Stufenlose Vorwahl der Netzsicherung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Volt und Ampere Anzeige",
+   "Fernbedienung"
+  ],
+  "fr": [
+   "Soude les électrodes basiques, rutiles et cellulosiques",
+   "Arc Force réglable",
+   "Hot Start réglable",
+   "Fonction Anti-Stick",
+   "Fonction gougeage",
+   "Tension à vide réglable à partir de 15 V",
+   "Présélection continue du fusible secteur",
+   "Câble d'alimentation de 5 mètres",
+   "Affichage numérique des volts et ampères",
+   "Télécommande"
+  ],
+  "it": [
+   "Salda elettrodi basici, rutili e cellulosici",
+   "Arc Force regolabile",
+   "Hot Start regolabile",
+   "Funzione Anti-Stick",
+   "Funzione scriccatura",
+   "Tensione a vuoto regolabile da 15 V",
+   "Preselezione continua del fusibile di rete",
+   "Cavo di alimentazione da 5 metri",
+   "Display digitale di volt e ampere",
+   "Telecomando"
+  ],
+  "src": "https://mahe-online.de/delta-digital/"
+ },
+ "delta-digital-ds": {
+  "de": [
+   "Zum Unter Wasser Schweissen",
+   "15V ocV",
+   "Aktive ocV Überwachung",
+   "Optionaler Notausschalter",
+   "Force Arc",
+   "Anti Stick Funktion",
+   "5 Meter Zuleitungskabel",
+   "Fugenhobeln Funktion",
+   "Umschaltbar CV und CC",
+   "Digitale Volt und Ampere Anzeigen",
+   "Data Hold Funktion",
+   "Mobil"
+  ],
+  "fr": [
+   "Pour le soudage sous-marin",
+   "Tension à vide 15 V",
+   "Surveillance active de la tension à vide",
+   "Arrêt d'urgence en option",
+   "Force Arc",
+   "Fonction Anti-Stick",
+   "Câble d'alimentation de 5 mètres",
+   "Fonction gougeage",
+   "Commutable CV et CC",
+   "Affichages numériques des volts et ampères",
+   "Fonction Data Hold",
+   "Mobile"
+  ],
+  "it": [
+   "Per la saldatura subacquea",
+   "Tensione a vuoto 15 V",
+   "Monitoraggio attivo della tensione a vuoto",
+   "Arresto di emergenza opzionale",
+   "Force Arc",
+   "Funzione Anti-Stick",
+   "Cavo di alimentazione da 5 metri",
+   "Funzione scriccatura",
+   "Commutabile CV e CC",
+   "Display digitali di volt e ampere",
+   "Funzione Data Hold",
+   "Mobile"
+  ],
+  "src": "https://mahe-online.de/delta-digital-ds/"
+ },
+ "beta-dx": {
+  "de": [
+   "Resonanz Inverter gesteuert durch einen DSP-Controller",
+   "Bis zu 20kHz Impulsschweissen",
+   "ActiveBoost Funktion",
+   "Hyper ARC Active Regelung",
+   "HyperSpot Schweissen",
+   "5 Speicherplätze für schnellen Zugriff",
+   "Fernbedienung",
+   "Einfache Synergy Bedienung",
+   "Automatische Pulseinstellung",
+   "Fernbedienung optional"
+  ],
+  "fr": [
+   "Onduleur à résonance piloté par contrôleur DSP",
+   "Soudage pulsé jusqu'à 20 kHz",
+   "Fonction ActiveBoost",
+   "Régulation Hyper ARC Active",
+   "Soudage HyperSpot",
+   "5 emplacements mémoire pour un accès rapide",
+   "Télécommande",
+   "Commande Synergy simple",
+   "Réglage automatique de la pulsation",
+   "Télécommande en option"
+  ],
+  "it": [
+   "Inverter a risonanza pilotato da controller DSP",
+   "Saldatura pulsata fino a 20 kHz",
+   "Funzione ActiveBoost",
+   "Regolazione Hyper ARC Active",
+   "Saldatura HyperSpot",
+   "5 posizioni di memoria per un accesso rapido",
+   "Telecomando",
+   "Comando Synergy semplice",
+   "Regolazione automatica dell'impulso",
+   "Telecomando opzionale"
+  ],
+  "src": "https://mahe-online.de/beta-dx/"
+ },
+ "beta-digital": {
+  "de": [
+   "Hochfrequenz Impulsschweissen",
+   "Hyper ARC Active Regelung",
+   "5 Meter Zuleitungskabel",
+   "Digitale Ampere Anzeige",
+   "Fernbedienung",
+   "Synergy Einstellungen",
+   "Job Mode"
+  ],
+  "fr": [
+   "Soudage pulsé haute fréquence",
+   "Régulation Hyper ARC Active",
+   "Câble d'alimentation de 5 mètres",
+   "Affichage numérique des ampères",
+   "Télécommande",
+   "Réglages Synergy",
+   "Mode Job"
+  ],
+  "it": [
+   "Saldatura pulsata ad alta frequenza",
+   "Regolazione Hyper ARC Active",
+   "Cavo di alimentazione da 5 metri",
+   "Display digitale degli ampere",
+   "Telecomando",
+   "Impostazioni Synergy",
+   "Modalità Job"
+  ],
+  "src": "https://mahe-online.de/beta-digital/"
+ },
+ "mms": {
+  "de": [
+   "Spritzerfreier Lichtbogen",
+   "Mobil und leicht, nur 11,5 kg",
+   "Rollenantrieb",
+   "5 Meter Zuleitungskabel",
+   "Umpolung System",
+   "D200 Spule",
+   "WIG Lift Arc",
+   "Impuls Lichtbogen",
+   "HyperCold / HyperRoot Lichtbogen",
+   "Mobil und leicht, nur 21 kg",
+   "4-Rollenantrieb",
+   "D300 Spule"
+  ],
+  "fr": [
+   "Arc sans projections",
+   "Mobile et léger, seulement 11,5 kg",
+   "Entraînement à galets",
+   "Câble d'alimentation de 5 mètres",
+   "Système d'inversion de polarité",
+   "Bobine D200",
+   "TIG Lift Arc",
+   "Arc pulsé",
+   "Arc HyperCold / HyperRoot",
+   "Mobile et léger, seulement 21 kg",
+   "Entraînement à 4 galets",
+   "Bobine D300"
+  ],
+  "it": [
+   "Arco senza spruzzi",
+   "Mobile e leggero, solo 11,5 kg",
+   "Trazione a rulli",
+   "Cavo di alimentazione da 5 metri",
+   "Sistema di inversione di polarità",
+   "Bobina D200",
+   "TIG Lift Arc",
+   "Arco pulsato",
+   "Arco HyperCold / HyperRoot",
+   "Mobile e leggero, solo 21 kg",
+   "Trazione a 4 rulli",
+   "Bobina D300"
+  ],
+  "src": "https://mahe-online.de/mms/"
  }
 }

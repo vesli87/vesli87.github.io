@@ -1,0 +1,131 @@
+{
+ "hypermig_ex": [
+  "MIS Schweissen",
+  "Impuls Schweissen",
+  "Doppelpuls Schweissen",
+  "MIG Löten",
+  "Hyper Force, Root, Cold",
+  "MMA Elektroden Schweissen",
+  "WIG Lift Arc",
+  "Job Mode 99 Programme"
+ ],
+ "hypermig_hx": [
+  "MIS Schweissen",
+  "Impuls Schweissen",
+  "Doppelpuls Schweissen",
+  "MIG Löten",
+  "Hyper Puls Schweissen",
+  "Hyper Force Schweissen",
+  "Hyper Cold Schweissen",
+  "Hyper Root Schweissen",
+  "HyperUP Schweissen",
+  "MMA Elektoden Schweissen",
+  "WIG Lift Arc und Fugenhobeln",
+  "99 Job Mode Programme"
+ ],
+ "hypermig_sx": [
+  "MIS Schweissen",
+  "HyperPuls Schweissen",
+  "HyperCold Schweissen",
+  "HyperRoot Schweissen",
+  "HyperForce Schweissen",
+  "HyperUP Schweissen",
+  "WIG Lift Arc Schweissen",
+  "MMA Schweissen"
+ ],
+ "omega_pro": [
+  "Hyper Arc Active",
+  "HyperSpot",
+  "AC Mix – Tig",
+  "20Khz Puls",
+  "HF Puls",
+  "LF Puls",
+  "Active Boost",
+  "Fernbedienung"
+ ],
+ "omega_syn": [
+  "Autopuls",
+  "Active Boost",
+  "Fernbedienung"
+ ],
+ "betadx_pro": [
+  "Hyper Arc Active",
+  "HyperSpot",
+  "20Khz Puls",
+  "HF Puls",
+  "LF Puls",
+  "Active Boost",
+  "Fernbedienung"
+ ],
+ "betadx_syn": [
+  "Autopuls",
+  "Active Boost",
+  "Fernbedienung"
+ ],
+ "betadig_profi": [
+  "Beta TIG Active Arc",
+  "Beta TIG Spot Arc",
+  "Beta TIG HF Puls",
+  "Beta TIG Active Boost",
+  "MMA Schweissen",
+  "Remote Control"
+ ],
+ "betadig_syn": [
+  "Beta TIG Active Boost",
+  "Beta TIG Auto Puls",
+  "Beta TIG Easy Use",
+  "Spot Arc"
+ ],
+ "hypertig_ax": [
+  "Einknopfbedienung",
+  "Übersichtliche Bedienerführung",
+  "Synergische Kennlinien",
+  "Hyper Arc Active Kennlinie serienmässig",
+  "HyperSpot Kennlinie serienmässig",
+  "ActiveSpot Kennlinie serienmässig",
+  "Hochfrequenzpulsen serienmässig",
+  "Fernbedienung Eein / Aus",
+  "HF Start oder Lift Arc Start",
+  "AC Schweissen (WIG und MMA)"
+ ],
+ "hypertig_dx": [
+  "Einknopfbedienung",
+  "Übersichtliche Bedienerführung",
+  "Hyper Arc Active Kennlinie serienmässig",
+  "HyperSpot Kennlinie serienmässig",
+  "ActiveSpot Kennlinie serienmässig",
+  "Hochfrequenzpulsen serienmässig",
+  "Fernbedienung Ein/Aus",
+  "HF Start oder Lift Arc Start",
+  "MMA Schweissen"
+ ],
+ "hypertig_acdc": [
+  "Einknopfbedienung",
+  "Übersichtliche Bedienerführung",
+  "Synergische Kennlinien",
+  "Hyper Arc Active Kennlinie serienmässig",
+  "HyperSpot Kennlinie serienmässig",
+  "Hochfrequenzpulsen serienmässig",
+  "Fernbedienung Eein / Aus",
+  "HF Start oder Lift Arc Start",
+  "DC+ und DC- Schweissen (MMA)",
+  "AC Schweissen (MMA)"
+ ],
+ "ct200_panel": [
+  "Beta TIG Active Arc",
+  "Beta TIG Spot Arc",
+  "Beta TIG HF Puls",
+  "Beta TIG Active Boost",
+  "MMA Schweissen",
+  "Remote Control",
+  "Reinigen, Polieren und Markieren",
+  "Job Mode"
+ ],
+ "ct200_syn": [
+  "Beta TIG Active Boost",
+  "Beta TIG Auto Puls",
+  "Beta TIG Easy Use",
+  "Spot Arc",
+  "Reinigen, Polieren und Markieren"
+ ]
+}

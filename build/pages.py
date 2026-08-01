@@ -73,8 +73,9 @@ def front_html(lang, p):
         out.append(f'<h3 class="fp-section">{e(C.t(lang,"front_h"))}</h3>')
         for pk in panels:
             fp = C.FP[pk]
-            hk = fp.get("hl", pk)   # neue Panels zeigen auf ihre Familie
-            src = C.PANEL_HL.get(hk) or C.PANEL_HL[pk]
+            # MAHE fuehrt Besonderheiten auch je Frontpanel. Wo sie vorliegen,
+            # haben sie Vorrang vor dem Familientext aus PANEL_HL.
+            src = C.PANEL_HL_DEVICE.get(pk) or C.PANEL_HL.get(fp.get("hl", pk)) or C.PANEL_HL[pk]
             ph = src.get(lang) or src["de"]
             if fp.get("img"):
                 media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",

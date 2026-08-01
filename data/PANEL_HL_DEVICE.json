@@ -1,0 +1,417 @@
+{
+ "hypermig_ex": {
+  "de": [
+   "MIS Schweissen",
+   "Impuls Schweissen",
+   "Doppelpuls Schweissen",
+   "MIG Löten",
+   "Hyper Force, Root, Cold",
+   "MMA Elektroden Schweissen",
+   "WIG Lift Arc",
+   "Job Mode 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage pulsé",
+   "Soudage à double pulsation",
+   "Brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Soudage à l'électrode MMA",
+   "TIG Lift Arc",
+   "Mode Job avec 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura pulsata",
+   "Saldatura a doppio impulso",
+   "Brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc",
+   "Modalità Job con 99 programmi"
+  ]
+ },
+ "hypermig_hx": {
+  "de": [
+   "MIS Schweissen",
+   "Impuls Schweissen",
+   "Doppelpuls Schweissen",
+   "MIG Löten",
+   "Hyper Puls Schweissen",
+   "Hyper Force Schweissen",
+   "Hyper Cold Schweissen",
+   "Hyper Root Schweissen",
+   "HyperUP Schweissen",
+   "MMA Elektroden Schweissen",
+   "WIG Lift Arc und Fugenhobeln",
+   "99 Job Mode Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage pulsé",
+   "Soudage à double pulsation",
+   "Brasage MIG",
+   "Soudage HyperPuls",
+   "Soudage HyperForce",
+   "Soudage HyperCold",
+   "Soudage HyperRoot",
+   "Soudage HyperUP",
+   "Soudage à l'électrode MMA",
+   "TIG Lift Arc et gougeage",
+   "99 programmes en mode Job"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura pulsata",
+   "Saldatura a doppio impulso",
+   "Brasatura MIG",
+   "Saldatura HyperPuls",
+   "Saldatura HyperForce",
+   "Saldatura HyperCold",
+   "Saldatura HyperRoot",
+   "Saldatura HyperUP",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc e scriccatura",
+   "99 programmi in modalità Job"
+  ]
+ },
+ "hypermig_sx": {
+  "de": [
+   "MIS Schweissen",
+   "HyperPuls Schweissen",
+   "HyperCold Schweissen",
+   "HyperRoot Schweissen",
+   "HyperForce Schweissen",
+   "HyperUP Schweissen",
+   "WIG Lift Arc Schweissen",
+   "MMA Schweissen"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage HyperPuls",
+   "Soudage HyperCold",
+   "Soudage HyperRoot",
+   "Soudage HyperForce",
+   "Soudage HyperUP",
+   "Soudage TIG Lift Arc",
+   "Soudage MMA"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura HyperPuls",
+   "Saldatura HyperCold",
+   "Saldatura HyperRoot",
+   "Saldatura HyperForce",
+   "Saldatura HyperUP",
+   "Saldatura TIG Lift Arc",
+   "Saldatura MMA"
+  ]
+ },
+ "omega_pro": {
+  "de": [
+   "Hyper Arc Active",
+   "HyperSpot",
+   "AC Mix – Tig",
+   "20Khz Puls",
+   "HF Puls",
+   "LF Puls",
+   "Active Boost",
+   "Fernbedienung"
+  ],
+  "fr": [
+   "Hyper Arc Active",
+   "HyperSpot",
+   "AC Mix TIG",
+   "Pulsation 20 kHz",
+   "Pulsation HF",
+   "Pulsation BF",
+   "Active Boost",
+   "Télécommande"
+  ],
+  "it": [
+   "Hyper Arc Active",
+   "HyperSpot",
+   "AC Mix TIG",
+   "Impulso 20 kHz",
+   "Impulso HF",
+   "Impulso BF",
+   "Active Boost",
+   "Telecomando"
+  ]
+ },
+ "omega_syn": {
+  "de": [
+   "Autopuls",
+   "Active Boost",
+   "Fernbedienung"
+  ],
+  "fr": [
+   "Autopuls",
+   "Active Boost",
+   "Télécommande"
+  ],
+  "it": [
+   "Autopuls",
+   "Active Boost",
+   "Telecomando"
+  ]
+ },
+ "betadx_pro": {
+  "de": [
+   "Hyper Arc Active",
+   "HyperSpot",
+   "20Khz Puls",
+   "HF Puls",
+   "LF Puls",
+   "Active Boost",
+   "Fernbedienung"
+  ],
+  "fr": [
+   "Hyper Arc Active",
+   "HyperSpot",
+   "Pulsation 20 kHz",
+   "Pulsation HF",
+   "Pulsation BF",
+   "Active Boost",
+   "Télécommande"
+  ],
+  "it": [
+   "Hyper Arc Active",
+   "HyperSpot",
+   "Impulso 20 kHz",
+   "Impulso HF",
+   "Impulso BF",
+   "Active Boost",
+   "Telecomando"
+  ]
+ },
+ "betadx_syn": {
+  "de": [
+   "Autopuls",
+   "Active Boost",
+   "Fernbedienung"
+  ],
+  "fr": [
+   "Autopuls",
+   "Active Boost",
+   "Télécommande"
+  ],
+  "it": [
+   "Autopuls",
+   "Active Boost",
+   "Telecomando"
+  ]
+ },
+ "betadig_profi": {
+  "de": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "MMA Schweissen",
+   "Remote Control"
+  ],
+  "fr": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "Soudage MMA",
+   "Télécommande"
+  ],
+  "it": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "Saldatura MMA",
+   "Telecomando"
+  ]
+ },
+ "betadig_syn": {
+  "de": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc"
+  ],
+  "fr": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc"
+  ],
+  "it": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc"
+  ]
+ },
+ "hypertig_ax": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "HyperSpot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein/Aus",
+   "HF Start oder Lift Arc Start",
+   "AC Schweissen (WIG und MMA)"
+  ],
+  "fr": [
+   "Commande à un seul bouton",
+   "Guidage utilisateur clair",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe HyperSpot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande marche/arrêt",
+   "Amorçage HF ou Lift Arc",
+   "Soudage AC (TIG et MMA)"
+  ],
+  "it": [
+   "Comando a una sola manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva HyperSpot di serie",
+   "Curva ActiveSpot di serie",
+   "Impulso ad alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift Arc",
+   "Saldatura AC (TIG e MMA)"
+  ]
+ },
+ "hypertig_dx": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "HyperSpot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein/Aus",
+   "HF Start oder Lift Arc Start",
+   "MMA Schweissen"
+  ],
+  "fr": [
+   "Commande à un seul bouton",
+   "Guidage utilisateur clair",
+   "Courbe Hyper Arc Active de série",
+   "Courbe HyperSpot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande marche/arrêt",
+   "Amorçage HF ou Lift Arc",
+   "Soudage MMA"
+  ],
+  "it": [
+   "Comando a una sola manopola",
+   "Guida operatore chiara",
+   "Curva Hyper Arc Active di serie",
+   "Curva HyperSpot di serie",
+   "Curva ActiveSpot di serie",
+   "Impulso ad alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift Arc",
+   "Saldatura MMA"
+  ]
+ },
+ "hypertig_acdc": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "HyperSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein/Aus",
+   "HF Start oder Lift Arc Start",
+   "DC+ und DC- Schweissen (MMA)",
+   "AC Schweissen (MMA)"
+  ],
+  "fr": [
+   "Commande à un seul bouton",
+   "Guidage utilisateur clair",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe HyperSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande marche/arrêt",
+   "Amorçage HF ou Lift Arc",
+   "Soudage DC+ et DC− (MMA)",
+   "Soudage AC (MMA)"
+  ],
+  "it": [
+   "Comando a una sola manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva HyperSpot di serie",
+   "Impulso ad alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift Arc",
+   "Saldatura DC+ e DC− (MMA)",
+   "Saldatura AC (MMA)"
+  ]
+ },
+ "ct200_panel": {
+  "de": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "MMA Schweissen",
+   "Remote Control",
+   "Reinigen, Polieren und Markieren",
+   "Job Mode"
+  ],
+  "fr": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "Soudage MMA",
+   "Télécommande",
+   "Nettoyer, polir et marquer",
+   "Mode Job"
+  ],
+  "it": [
+   "Beta TIG Active Arc",
+   "Beta TIG Spot Arc",
+   "Beta TIG HF Puls",
+   "Beta TIG Active Boost",
+   "Saldatura MMA",
+   "Telecomando",
+   "Pulire, lucidare e marcare",
+   "Modalità Job"
+  ]
+ },
+ "ct200_syn": {
+  "de": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc",
+   "Reinigen, Polieren und Markieren"
+  ],
+  "fr": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc",
+   "Nettoyer, polir et marquer"
+  ],
+  "it": [
+   "Beta TIG Active Boost",
+   "Beta TIG Auto Puls",
+   "Beta TIG Easy Use",
+   "Spot Arc",
+   "Pulire, lucidare e marcare"
+  ]
+ }
+}

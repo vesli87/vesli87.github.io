@@ -257,28 +257,46 @@
    },
    "highlights": {
     "de": [
-     "Stufenlose MIG/MAG-Regelung",
-     "Synergie-Kennlinien",
-     "MMA-Elektrode möglich",
-     "4-Rollen-Antrieb",
-     "Kompakt & fahrbar",
-     "Robust für Werkstatt & Montage"
+     "Spritzerfreier Lichtbogen",
+     "Mobil und leicht, nur 11,5 kg",
+     "Rollenantrieb",
+     "5 Meter Zuleitungskabel",
+     "Umpolung System",
+     "D200 Spule",
+     "WIG Lift Arc",
+     "Impuls Lichtbogen",
+     "HyperCold / HyperRoot Lichtbogen",
+     "Mobil und leicht, nur 21 kg",
+     "4-Rollenantrieb",
+     "D300 Spule"
     ],
     "fr": [
-     "Réglage continu MIG/MAG",
-     "Courbes synergiques",
-     "Électrode MMA possible",
-     "Entraînement 4 galets",
-     "Compact & mobile",
-     "Robuste atelier & montage"
+     "Arc sans projections",
+     "Mobile et léger, seulement 11,5 kg",
+     "Entraînement à galets",
+     "Câble d'alimentation de 5 mètres",
+     "Système d'inversion de polarité",
+     "Bobine D200",
+     "TIG Lift Arc",
+     "Arc pulsé",
+     "Arc HyperCold / HyperRoot",
+     "Mobile et léger, seulement 21 kg",
+     "Entraînement à 4 galets",
+     "Bobine D300"
     ],
     "it": [
-     "Regolazione continua MIG/MAG",
-     "Curve sinergiche",
-     "Elettrodo MMA possibile",
+     "Arco senza spruzzi",
+     "Mobile e leggero, solo 11,5 kg",
+     "Trazione a rulli",
+     "Cavo di alimentazione da 5 metri",
+     "Sistema di inversione di polarità",
+     "Bobina D200",
+     "TIG Lift Arc",
+     "Arco pulsato",
+     "Arco HyperCold / HyperRoot",
+     "Mobile e leggero, solo 21 kg",
      "Trazione a 4 rulli",
-     "Compatto & mobile",
-     "Robusto per officina & montaggio"
+     "Bobina D300"
     ]
    },
    "specs": {
@@ -459,43 +477,40 @@
    },
    "highlights": {
     "de": [
-     "Hochfrequenz-Impulsschweissen",
-     "HyperSpot Punktschweissen",
-     "ActiveSpot Heftfunktion",
+     "Resonanz Inverter gesteuert durch einen DSP-Controller",
+     "Bis zu 20kHz Impulsschweissen",
+     "ActiveBoost Funktion",
      "Hyper ARC Active Regelung",
-     "Mix-TIG-Schweissen",
-     "WIG DC & MMA",
-     "Strom-Modulation einstellbar",
-     "Digitale Anzeige",
+     "HyperSpot Schweissen",
+     "5 Speicherplätze für schnellen Zugriff",
      "Fernbedienung",
-     "Synergy-Einstellungen",
-     "JOB-Modus"
+     "Einfache Synergy Bedienung",
+     "Automatische Pulseinstellung",
+     "Fernbedienung optional"
     ],
     "fr": [
-     "Soudage pulsé haute fréquence",
-     "Pointage HyperSpot",
-     "Fonction ActiveSpot",
+     "Onduleur à résonance piloté par contrôleur DSP",
+     "Soudage pulsé jusqu'à 20 kHz",
+     "Fonction ActiveBoost",
      "Régulation Hyper ARC Active",
-     "Soudage Mix-TIG",
-     "TIG DC & MMA",
-     "Modulation de courant réglable",
-     "Affichage numérique",
+     "Soudage HyperSpot",
+     "5 emplacements mémoire pour un accès rapide",
      "Télécommande",
-     "Réglages Synergy",
-     "Mode JOB"
+     "Commande Synergy simple",
+     "Réglage automatique de la pulsation",
+     "Télécommande en option"
     ],
     "it": [
-     "Saldatura pulsata ad alta frequenza",
-     "Puntatura HyperSpot",
-     "Funzione ActiveSpot",
+     "Inverter a risonanza pilotato da controller DSP",
+     "Saldatura pulsata fino a 20 kHz",
+     "Funzione ActiveBoost",
      "Regolazione Hyper ARC Active",
-     "Saldatura Mix-TIG",
-     "TIG DC & MMA",
-     "Modulazione di corrente regolabile",
-     "Display digitale",
+     "Saldatura HyperSpot",
+     "5 posizioni di memoria per un accesso rapido",
      "Telecomando",
-     "Impostazioni Synergy",
-     "Modo JOB"
+     "Comando Synergy semplice",
+     "Regolazione automatica dell'impulso",
+     "Telecomando opzionale"
     ]
    },
    "specs": {
@@ -766,43 +781,31 @@
    },
    "highlights": {
     "de": [
-     "Hochfrequenz-Impulsschweissen",
-     "HyperSpot Punktschweissen",
-     "ActiveSpot Heftfunktion",
+     "Hochfrequenz Impulsschweissen",
      "Hyper ARC Active Regelung",
-     "Mix-TIG-Schweissen",
-     "WIG DC & MMA",
-     "Strom-Modulation einstellbar",
-     "Digitale Anzeige",
+     "5 Meter Zuleitungskabel",
+     "Digitale Ampere Anzeige",
      "Fernbedienung",
-     "Synergy-Einstellungen",
-     "JOB-Modus"
+     "Synergy Einstellungen",
+     "Job Mode"
     ],
     "fr": [
      "Soudage pulsé haute fréquence",
-     "Pointage HyperSpot",
-     "Fonction ActiveSpot",
      "Régulation Hyper ARC Active",
-     "Soudage Mix-TIG",
-     "TIG DC & MMA",
-     "Modulation de courant réglable",
-     "Affichage numérique",
+     "Câble d'alimentation de 5 mètres",
+     "Affichage numérique des ampères",
      "Télécommande",
      "Réglages Synergy",
-     "Mode JOB"
+     "Mode Job"
     ],
     "it": [
      "Saldatura pulsata ad alta frequenza",
-     "Puntatura HyperSpot",
-     "Funzione ActiveSpot",
      "Regolazione Hyper ARC Active",
-     "Saldatura Mix-TIG",
-     "TIG DC & MMA",
-     "Modulazione di corrente regolabile",
-     "Display digitale",
+     "Cavo di alimentazione da 5 metri",
+     "Display digitale degli ampere",
      "Telecomando",
      "Impostazioni Synergy",
-     "Modo JOB"
+     "Modalità Job"
     ]
    },
    "specs": {
@@ -1064,34 +1067,28 @@
    },
    "highlights": {
     "de": [
-     "MMA-Elektrodenschweissen",
-     "WIG Lift Arc (DC)",
-     "Hot-Start – sichere Zündung",
-     "Arc Force – stabiler Lichtbogen",
-     "Anti-Stick – kein Festkleben",
-     "Übertemperaturschutz",
-     "Generatortauglich",
-     "Robust & einfach zu bedienen"
+     "Schweisst basische, rutile und CEL Elektroden",
+     "Force Arc",
+     "Anti Stick Funktion",
+     "5 Meter Zuleitungskabel",
+     "Fernbedienung",
+     "WIG Lift Arc"
     ],
     "fr": [
-     "Soudage à l’électrode MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – amorçage sûr",
-     "Arc Force – arc stable",
-     "Anti-Stick – pas de collage",
-     "Protection surtempérature",
-     "Compatible groupe électrogène",
-     "Robuste & simple"
+     "Soude les électrodes basiques, rutiles et cellulosiques",
+     "Force Arc",
+     "Fonction Anti-Stick",
+     "Câble d'alimentation de 5 mètres",
+     "Télécommande",
+     "TIG Lift Arc"
     ],
     "it": [
-     "Saldatura a elettrodo MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – innesco sicuro",
-     "Arc Force – arco stabile",
-     "Anti-Stick – niente incollaggio",
-     "Protezione sovratemperatura",
-     "Compatibile con generatore",
-     "Robusto & semplice"
+     "Salda elettrodi basici, rutili e cellulosici",
+     "Force Arc",
+     "Funzione Anti-Stick",
+     "Cavo di alimentazione da 5 metri",
+     "Telecomando",
+     "TIG Lift Arc"
     ]
    },
    "specs": {
@@ -1155,34 +1152,40 @@
    },
    "highlights": {
     "de": [
-     "MMA-Elektrodenschweissen",
-     "WIG Lift Arc (DC)",
-     "Hot-Start – sichere Zündung",
-     "Arc Force – stabiler Lichtbogen",
-     "Anti-Stick – kein Festkleben",
-     "Übertemperaturschutz",
-     "Generatortauglich",
-     "Robust & einfach zu bedienen"
+     "Schweisst basische, rutile und CEL Elektroden",
+     "Arc Force einstellbar",
+     "Hot Start einstellbar",
+     "Anti Stick Funktion",
+     "Fugenhobeln Funktion",
+     "Einstellbare Leerlaufspannung ab 15V",
+     "Stufenlose Vorwahl der Netzsicherung",
+     "5 Meter Zuleitungskabel",
+     "Digitale Volt und Ampere Anzeige",
+     "Fernbedienung"
     ],
     "fr": [
-     "Soudage à l’électrode MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – amorçage sûr",
-     "Arc Force – arc stable",
-     "Anti-Stick – pas de collage",
-     "Protection surtempérature",
-     "Compatible groupe électrogène",
-     "Robuste & simple"
+     "Soude les électrodes basiques, rutiles et cellulosiques",
+     "Arc Force réglable",
+     "Hot Start réglable",
+     "Fonction Anti-Stick",
+     "Fonction gougeage",
+     "Tension à vide réglable à partir de 15 V",
+     "Présélection continue du fusible secteur",
+     "Câble d'alimentation de 5 mètres",
+     "Affichage numérique des volts et ampères",
+     "Télécommande"
     ],
     "it": [
-     "Saldatura a elettrodo MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – innesco sicuro",
-     "Arc Force – arco stabile",
-     "Anti-Stick – niente incollaggio",
-     "Protezione sovratemperatura",
-     "Compatibile con generatore",
-     "Robusto & semplice"
+     "Salda elettrodi basici, rutili e cellulosici",
+     "Arc Force regolabile",
+     "Hot Start regolabile",
+     "Funzione Anti-Stick",
+     "Funzione scriccatura",
+     "Tensione a vuoto regolabile da 15 V",
+     "Preselezione continua del fusibile di rete",
+     "Cavo di alimentazione da 5 metri",
+     "Display digitale di volt e ampere",
+     "Telecomando"
     ]
    },
    "specs": {
@@ -1246,34 +1249,46 @@
    },
    "highlights": {
     "de": [
-     "MMA-Elektrodenschweissen",
-     "WIG Lift Arc (DC)",
-     "Hot-Start – sichere Zündung",
-     "Arc Force – stabiler Lichtbogen",
-     "Anti-Stick – kein Festkleben",
-     "Übertemperaturschutz",
-     "Generatortauglich",
-     "Robust & einfach zu bedienen"
+     "Zum Unter Wasser Schweissen",
+     "15V ocV",
+     "Aktive ocV Überwachung",
+     "Optionaler Notausschalter",
+     "Force Arc",
+     "Anti Stick Funktion",
+     "5 Meter Zuleitungskabel",
+     "Fugenhobeln Funktion",
+     "Umschaltbar CV und CC",
+     "Digitale Volt und Ampere Anzeigen",
+     "Data Hold Funktion",
+     "Mobil"
     ],
     "fr": [
-     "Soudage à l’électrode MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – amorçage sûr",
-     "Arc Force – arc stable",
-     "Anti-Stick – pas de collage",
-     "Protection surtempérature",
-     "Compatible groupe électrogène",
-     "Robuste & simple"
+     "Pour le soudage sous-marin",
+     "Tension à vide 15 V",
+     "Surveillance active de la tension à vide",
+     "Arrêt d'urgence en option",
+     "Force Arc",
+     "Fonction Anti-Stick",
+     "Câble d'alimentation de 5 mètres",
+     "Fonction gougeage",
+     "Commutable CV et CC",
+     "Affichages numériques des volts et ampères",
+     "Fonction Data Hold",
+     "Mobile"
     ],
     "it": [
-     "Saldatura a elettrodo MMA",
-     "TIG Lift Arc (DC)",
-     "Hot-Start – innesco sicuro",
-     "Arc Force – arco stabile",
-     "Anti-Stick – niente incollaggio",
-     "Protezione sovratemperatura",
-     "Compatibile con generatore",
-     "Robusto & semplice"
+     "Per la saldatura subacquea",
+     "Tensione a vuoto 15 V",
+     "Monitoraggio attivo della tensione a vuoto",
+     "Arresto di emergenza opzionale",
+     "Force Arc",
+     "Funzione Anti-Stick",
+     "Cavo di alimentazione da 5 metri",
+     "Funzione scriccatura",
+     "Commutabile CV e CC",
+     "Display digitali di volt e ampere",
+     "Funzione Data Hold",
+     "Mobile"
     ]
    },
    "specs": {

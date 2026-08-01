@@ -42,6 +42,7 @@ Bearbeitet werden also:
 python3 build/build.py
 python3 build/check.py
 python3 build/audit.py
+python3 build/verify_mahe.py   # Text gegen mahe-online.de
 ```
 
 Beide müssen **0 Fehler** melden und laufen auch in GitHub Actions, wo sie bei

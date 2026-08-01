@@ -268,6 +268,9 @@
   .fp-section{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:18px;margin:26px 0 14px;padding-top:20px;border-top:2px solid var(--line)}
   .fp{margin-bottom:28px;padding-bottom:26px;border-bottom:1px solid var(--line-soft)}
   .fp:last-of-type{border-bottom:0;padding-bottom:0}
+  /* Geraetevariante ueber ihren Panels - MAHE gliedert die MMS so */
+  .fp-variant{font-family:'Anton';font-size:20px;text-transform:uppercase;letter-spacing:.01em;margin:30px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block}
+  .fp-variant:first-of-type{margin-top:4px}
   .fp-title{font-family:'Barlow Condensed';font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:16px}
   .fp-body{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:start}
   .fp-panel{flex:0 0 auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;place-items:center}

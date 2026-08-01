@@ -1,0 +1,8 @@
+{
+ "_": "Frontpanels nach Geraetevariante gruppiert, so wie MAHE sie auf der Produktseite zeigt. Nur fuer Produkte noetig, bei denen der Hersteller nach Varianten gliedert - alle uebrigen stehen flach in build/core.py::PANELS. Ein Panel darf mehrfach vorkommen: bei der MMS haben die 2000P EX und die 2400/3000 EX dieselben zwei Panels, und MAHE fuehrt sie bei beiden auf.",
+ "mms": [
+  ["MMS 2000C", ["mms_light"]],
+  ["MMS 2000P EX", ["mms_ecomig", "mms_ecopuls"]],
+  ["MMS 2400/3000 EX", ["mms_ecomig", "mms_ecopuls"]]
+ ]
+}

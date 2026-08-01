@@ -131,6 +131,7 @@ FEAT      = _load("FEAT")        # 19 Verfahrens-Icons
 HL        = _load("HL")
 HL_CLEAN  = _load("HL_CLEAN")
 FP        = _load("FP")
+FPGRP     = _load("FPGRP")     # Panels nach Geraetevariante, wie bei MAHE
 SYM       = _load("SYM")       # Symbole je Geraet, aus dem MAHE-Katalog 2023
 ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
@@ -443,6 +444,23 @@ PANELS = {
     "hypercleaner-plus": ["cleaner_plus"],
     "hypercleaner-ct200": ["ct200_panel", "ct200_syn"],
 }
+
+
+def fpGroups(p):
+    """Frontpanels des Geraets, gruppiert wie auf der MAHE-Seite.
+
+    [("MMS 2000C", ["mms_light"]), ("MMS 2000P EX", ["mms_ecomig", …]), …]
+
+    Wo MAHE nicht nach Varianten gliedert, steht eine einzige Gruppe ohne
+    Ueberschrift. Ein Panel darf in mehreren Gruppen stehen – die MMS 2000P EX
+    und die 2400/3000 EX haben dieselben zwei, und der Hersteller fuehrt sie
+    bei beiden auf.
+    """
+    g = FPGRP.get(p["id"])
+    if g:
+        return [(name, [k for k in keys if k in FP]) for name, keys in g]
+    keys = PANELS.get(p["id"], [])
+    return [("", keys)] if keys else []
 
 
 def fpAssign(p):

@@ -84,7 +84,16 @@ def front_html(lang, p):
                    + "".join(f"<li>{e(x)}</li>" for x in hl) + "</ul></div>")
     if panels:
         out.append(f'<h3 class="fp-section">{e(C.t(lang,"front_h"))}</h3>')
-        for pk in panels:
+        gruppen = C.fpGroups(p)
+        # Gliedert der Hersteller nach Geraetevarianten, rutschen die
+        # Paneltitel eine Ebene tiefer - sonst stuende die Variante auf
+        # derselben Stufe wie das Panel darunter.
+        mit_variante = any(name for name, _ in gruppen)
+        h_panel, h_bes = ("h5", "h6") if mit_variante else ("h4", "h5")
+        for variante, keys in gruppen:
+          if variante:
+            out.append(f'<h4 class="fp-variant">{e(variante)}</h4>')
+          for pk in keys:
             fp = C.FP[pk]
             # Unter dem Panelfoto steht nur, was MAHE zu genau diesem Panel
             # schreibt. Wo der Hersteller nichts veroeffentlicht, steht auch bei
@@ -100,13 +109,13 @@ def front_html(lang, p):
             bes = ""
             if ph:
                 bes = (f'<div class="fp-right">'
-                       f'<h5 class="besond">{e(C.t(lang,"front_bes"))}</h5>'
+                       f'<{h_bes} class="besond">{e(C.t(lang,"front_bes"))}</{h_bes}>'
                        f'<ul class="besond-list fp-list">'
                        + "".join(f"<li>{e(x)}</li>" for x in ph)
                        + "</ul></div>")
             out.append(
                 f'<div class="fp{"" if ph else " fp-solo"}">'
-                f'<h4 class="fp-title">{e(fp["n"])}</h4>'
+                f'<{h_panel} class="fp-title">{e(fp["n"])}</{h_panel}>'
                 f'<div class="fp-body"><div class="fp-panel">{media}</div>'
                 f"{bes}</div></div>"
             )

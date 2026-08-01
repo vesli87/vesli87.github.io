@@ -1,0 +1,369 @@
+{
+ "_": "Symbole je Geraet, abgelesen aus dem MAHE-Produktkatalog 2023 (Katalog_2023_opt.pdf). Die Gruppen und die Reihenfolge folgen dem Katalog. Wer etwas ergaenzt, schlaegt dort nach - frueher wurden die Symbole aus dem Produkttext geraten, und das ging mehrfach daneben.",
+ "hypermig-x": {
+  "quelle": "S. 5, 8-19",
+  "gruppen": {
+   "mig": [
+    "mis",
+    "puls",
+    "doppelpuls",
+    "hyperpuls",
+    "triarc",
+    "hyperup",
+    "braze"
+   ],
+   "wig": [
+    "lift"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce",
+    "gouging"
+   ]
+  }
+ },
+ "ecomig": {
+  "quelle": "S. 21",
+  "gruppen": {
+   "mig": [
+    "mis"
+   ],
+   "wig": [
+    "lift"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "mms": {
+  "quelle": "S. 23-26",
+  "gruppen": {
+   "mig": [
+    "mis",
+    "puls",
+    "doppelpuls",
+    "coldroot",
+    "braze"
+   ],
+   "wig": [
+    "lift"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "omega-ax": {
+  "quelle": "S. 29, 35-37",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot",
+    "acdc",
+    "mixtig",
+    "boost"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "hypertig-ax": {
+  "quelle": "S. 29, 32, 34",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot",
+    "acdc",
+    "mixtig"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "hypertig-acdc": {
+  "quelle": "S. 29, 32, 34",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot",
+    "acdc",
+    "mixtig"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "hypertig-dx": {
+  "quelle": "S. 39, 40",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "beta-dx": {
+  "quelle": "S. 39, 43",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "beta-digital": {
+  "quelle": "S. 39, 41-43",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot",
+    "boost"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "i-1600": {
+  "quelle": "S. 46",
+  "gruppen": {
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "delta": {
+  "quelle": "S. 46",
+  "gruppen": {
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "delta-digital": {
+  "quelle": "S. 46",
+  "gruppen": {
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "delta-digital-ds": {
+  "quelle": "S. 47",
+  "gruppen": {
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ]
+  }
+ },
+ "theta-40": {
+  "quelle": "S. 49, 50",
+  "gruppen": {
+   "plasma": [
+    "hsc",
+    "gitter"
+   ]
+  }
+ },
+ "theta-60": {
+  "quelle": "S. 49-51",
+  "gruppen": {
+   "plasma": [
+    "hsc",
+    "gitter",
+    "gouging"
+   ]
+  }
+ },
+ "theta-120": {
+  "quelle": "S. 51",
+  "gruppen": {
+   "plasma": [
+    "hsc",
+    "gitter",
+    "gouging"
+   ]
+  }
+ },
+ "theta-180": {
+  "quelle": "S. 51",
+  "gruppen": {
+   "plasma": [
+    "hsc",
+    "gitter",
+    "gouging"
+   ]
+  }
+ },
+ "theta-60-aut": {
+  "quelle": "S. 53",
+  "gruppen": {
+   "plasma": [
+    "hsc",
+    "gitter",
+    "gouging"
+   ]
+  }
+ },
+ "theta-120-aut": {
+  "quelle": "S. 53",
+  "gruppen": {
+   "plasma": [
+    "hsc",
+    "gitter",
+    "gouging"
+   ]
+  }
+ },
+ "hypercleaner-plus": {
+  "quelle": "S. 56",
+  "gruppen": {
+   "reinigen": [
+    "clean",
+    "polieren",
+    "mark",
+    "galv"
+   ]
+  }
+ },
+ "hypercleaner-speed": {
+  "quelle": "S. 56",
+  "gruppen": {
+   "reinigen": [
+    "clean",
+    "polieren",
+    "mark",
+    "galv"
+   ]
+  }
+ },
+ "hypercleaner-st": {
+  "quelle": "S. 57",
+  "gruppen": {
+   "reinigen": [
+    "clean",
+    "polieren",
+    "mark"
+   ]
+  }
+ },
+ "minicleaner": {
+  "quelle": "S. 58",
+  "gruppen": {
+   "reinigen": [
+    "clean",
+    "polieren",
+    "mark"
+   ]
+  }
+ },
+ "hcs1": {
+  "quelle": "S. 58",
+  "gruppen": {
+   "reinigen": [
+    "mark"
+   ]
+  }
+ },
+ "hypercleaner-ct200": {
+  "quelle": "S. 57, 59",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift",
+    "hfpuls",
+    "arcactive",
+    "hyperspot"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
+   ],
+   "reinigen": [
+    "clean",
+    "polieren",
+    "mark"
+   ]
+  }
+ },
+ "r1": {
+  "quelle": "Zweck des Elektrolyts",
+  "gruppen": {
+   "reinigen": [
+    "clean"
+   ]
+  }
+ },
+ "rp1": {
+  "quelle": "Zweck des Elektrolyts",
+  "gruppen": {
+   "reinigen": [
+    "clean"
+   ]
+  }
+ },
+ "p1": {
+  "quelle": "Zweck des Elektrolyts",
+  "gruppen": {
+   "reinigen": [
+    "polieren"
+   ]
+  }
+ },
+ "m1": {
+  "quelle": "Zweck des Elektrolyts",
+  "gruppen": {
+   "reinigen": [
+    "mark"
+   ]
+  }
+ },
+ "n1": {
+  "quelle": "Zweck des Elektrolyts",
+  "gruppen": {
+   "reinigen": [
+    "clean"
+   ]
+  }
+ }
+}

@@ -25,7 +25,8 @@
  "hypercleaner-st": ["hypercleaner-st"],
  "hypercleaner-speed": ["hypercleaner-st-speed"],
  "hypercleaner-plus": ["hypercleaner-st-plus"],
- "hypercleaner-ct200": ["hypercleaner-ct-200"],
+
+ "_ct200": "Der HyperCleaner CT 200 hat bewusst KEINE Tabelle. Die MAHE-Seite /hypercleaner-ct-200/ bindet die Tabelle mit der id 8820 ein - dasselbe Tabellenobjekt wie /hypercleaner-st/, Zeile fuer Zeile identisch, Spaltentitel 'HyperCleaner ST'. Sie nennt 35A Ausgangsstrom und 1225W; das Geraet schweisst laut MAHEs eigener Merkmalsliste mit 200A und reinigt mit 2000 Watt. Die Werte gehoeren also zu einem anderen Geraet. Solange MAHE keine eigenen Daten liefert, steht bei uns lieber keine Tabelle als die falsche.",
  "hcs1": ["hcs-1-signiergerat"],
  "mlf100": ["mlf100"]
 }

@@ -131,6 +131,7 @@ FEAT      = _load("FEAT")        # 19 Verfahrens-Icons
 HL        = _load("HL")
 HL_CLEAN  = _load("HL_CLEAN")
 FP        = _load("FP")
+SYM       = _load("SYM")       # Symbole je Geraet, aus dem MAHE-Katalog 2023
 ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
@@ -314,44 +315,31 @@ def specRest(p):
 # Fachlogik (1:1 aus dem alten JS portiert)
 # --------------------------------------------------------------------------
 
-def deriveFeat(p):
-    dev = HL_DEVICE.get(p["id"], {}).get("de", [])
-    s = (p["vt"] + " " + p["name"] + " " + " ".join(p["specs"].values())
-         + " " + " ".join(dev)).lower()
-    f = []
-    if re.search(r"mig", s):                       f.append("mig")
-    if re.search(r"mma|elektrode", s):             f.append("mma")
-    if re.search(r"wig|tig", s):                   f.append("wig")
-    if re.search(r"doppelpuls", s):                f.append("doppelpuls")
-    elif re.search(r"puls", s):                    f.append("puls")
-    if re.search(r"plasma", s):                    f.append("plasma")
-    if re.search(r"wasser|cwk", s):                f.append("h2o")
-    if re.search(r"synerg", s):                    f.append("synergy")
-    if re.search(r"markier|signier", s):           f.append("mark")
-    if re.search(r"digital|anzeige|display", s):   f.append("display")
-    if re.search(r"rollen", s):                    f.append("rollen")
-    if re.search(r"automation|cnc", s):            f.append("auto")
-    if re.search(r"reinig|cleaner", s):            f.append("clean")
-    if re.search(r"signier", s):                   f.append("mark")
-    if re.search(r"dosier", s):                    f.append("dose")
-    if p["sub"] == "WIG / TIG" and "hf" not in f:  f.append("hf")
-    if p["sub"] in ("WIG / TIG", "MMA") and "lift" not in f:
-        f.append("lift")
-    if p["cat"] == "reinigung":
-        if p["sub"] == "Cleaner":
-            f = ["reinigen", "polieren", "beschriften"]
-        elif p["id"] == "p1":
-            f = ["polieren"]
-        elif p["id"] == "m1" or p["sub"] == "Signiergeräte":
-            f = ["beschriften"]
-        else:
-            f = ["reinigen"]
-    seen, out = set(), []
-    for x in f:
-        if x not in seen:
-            seen.add(x)
-            out.append(x)
-    return out
+def symbolsOf(p):
+    """Symbole des Geraets, gruppiert wie im MAHE-Katalog.
+
+    [("mig", ["mis", "puls", …]), ("wig", ["lift"]), ("elektrode", [ … ])]
+
+    Vorher stand hier deriveFeat: eine Reihe regulaerer Ausdruecke ueber Name,
+    Typ, Merkmalsliste und Besonderheiten. Das Verfahren hat mehr erfunden als
+    getroffen. Ein Befestigungssatz bekam WIG/TIG, weil in „Befestigungssatz"
+    die Zeichenfolge „tig" steckt. Der Delta Digital DS bekam Wasserkuehlung,
+    weil er unter Wasser schweisst. Ein Fahrwagen bekam ein Digitaldisplay,
+    weil in seiner Kompatibilitaetsliste „Beta digital" steht. Und wer
+    Doppelpuls konnte, bekam wegen eines elif nie das Puls-Symbol.
+
+    Jetzt steht in data/SYM.json, was der Hersteller in seinem Katalog zeigt.
+    """
+    e = SYM.get(p["id"])
+    if not e:
+        return []
+    return [(g, [k for k in ids if k in FEAT])
+            for g, ids in e["gruppen"].items() if any(k in FEAT for k in ids)]
+
+
+def featOf(p):
+    """Alle Symbole eines Geraets als flache Liste – fuer Suche und Filter."""
+    return [k for _, ids in symbolsOf(p) for k in ids]
 
 
 def featLabel(lang, k):

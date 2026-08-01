@@ -86,7 +86,12 @@
   "dl_soon": "Dokument im Live-Betrieb verknüpfen",
   "highlights": "Besonderheiten",
   "spec_model": "Modell",
-  "spec_more": "Ausstattung"
+  "spec_more": "Ausstattung",
+  "sym_mig": "MIG",
+  "sym_wig": "WIG",
+  "sym_elektrode": "Elektrode",
+  "sym_plasma": "Plasma",
+  "sym_reinigen": "Reinigen"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -175,7 +180,12 @@
   "dl_soon": "Document à lier en production",
   "highlights": "Points forts",
   "spec_model": "Modèle",
-  "spec_more": "Équipement"
+  "spec_more": "Équipement",
+  "sym_mig": "MIG",
+  "sym_wig": "TIG",
+  "sym_elektrode": "Électrode",
+  "sym_plasma": "Plasma",
+  "sym_reinigen": "Nettoyage"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -264,6 +274,11 @@
   "dl_soon": "Documento da collegare in produzione",
   "highlights": "Punti di forza",
   "spec_model": "Modello",
-  "spec_more": "Dotazione"
+  "spec_more": "Dotazione",
+  "sym_mig": "MIG",
+  "sym_wig": "TIG",
+  "sym_elektrode": "Elettrodo",
+  "sym_plasma": "Plasma",
+  "sym_reinigen": "Pulitura"
  }
 }

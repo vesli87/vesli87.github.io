@@ -117,7 +117,7 @@ def search_index(lang):
             specs_txt += " " + " ".join(" ".join(r) for r in t["rows"])
             specs_txt += " " + " ".join(t["cols"])
         hl = C.highlightsOf(lang, p) or []
-        feats = [C.featLabel(lang, k) for k in C.deriveFeat(p)]
+        feats = [C.featLabel(lang, k) for k in C.featOf(p)]
         mats = [C.matLabel(lang, m_) for m_ in C.matOf(p)]
         prods.append({
             "i": p["id"],

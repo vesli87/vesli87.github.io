@@ -739,23 +739,6 @@ Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERC
 Kombiniertes WIG-Schweiss- und Reinigungsgerät.
 Besonderheiten: Multiprozess WIG und Reinigen; WIG Schweissen mit 200A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
 Ausstattung: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
-
-Technische Daten – HyperCleaner ST:
-
-| Modell | HyperCleaner ST |
-| --- | --- |
-| Netzspannung | 230V, 50/60Hz |
-| Netzabsicherung | 10A |
-| Ausgangsstrom max. | 35A |
-| Ausgangsspannungsbereich | 5 - 35V |
-| Einschaltdauer bei max. Strom @40C | 100% |
-| Leistung max. | 1225W |
-| Masse | 213x133x350mm |
-| Gewicht | 7kg |
-| Schutzklasse | IP23 |
-| Konformitätszeichen | CE |
-| Sicherungsklasse | S |
-
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, WK 200, STT 30, STT 35, MPF 02, MHCT 01, FRC 5, RC 5, RC 100, MT200W, MT180W, MT260, MT170, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 

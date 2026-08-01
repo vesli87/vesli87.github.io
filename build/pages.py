@@ -43,14 +43,27 @@ def dls_for(p):
 
 
 def procs_block(lang, p):
+    # Die Symbole stehen in Gruppen, so wie MAHE sie im Katalog setzt: eine
+    # Kopfzeile (MIG, WIG, Elektrode, Plasma, Reinigen) und darunter die
+    # Kacheln, die das Geraet in dieser Disziplin beherrscht.
     badges = ""
-    for k in C.deriveFeat(p):
-        f = C.FEAT.get(k)
-        if not f:
-            continue
-        badges += (f'<div class="procbadge{" tile" if f.get("tile") else ""}">'
-                   f'<div class="ic" aria-hidden="true">{f["svg"]}</div>'
-                   f'<div class="lb">{e(C.featLabel(lang, k))}</div></div>')
+    for gruppe, keys in C.symbolsOf(p):
+        kacheln = ""
+        for k in keys:
+            f = C.FEAT.get(k)
+            if not f:
+                continue
+            # Die Kachel ist das Bild des Herstellers aus seinem Katalog, nicht
+            # ein Nachbau. Beschriftung steht im Bild und noch einmal als Text
+            # darunter - fuer Suche, Screenreader und kleine Bildschirme.
+            kacheln += (f'<div class="procbadge">'
+                        f'<img class="ic" src="{f["img"]}" width="{f["w"]}" height="{f["h"]}" '
+                        f'alt="" loading="lazy" decoding="async">'
+                        f'<div class="lb">{e(C.featLabel(lang, k))}</div></div>')
+        if kacheln:
+            badges += (f'<div class="symgrp"><span class="symgrp-h">'
+                       f'{e(C.t(lang, "sym_" + gruppe))}</span>'
+                       f'<div class="symrow">{kacheln}</div></div>')
     mats = C.matOf(p)
     chips = ""
     if mats:
@@ -98,10 +111,14 @@ def front_html(lang, p):
                 f"{bes}</div></div>"
             )
     elif not hl:
-        out.append('<div class="featlist">' + "".join(
-            f'<div class="fitem">{C.FEAT[k]["svg"]}<span>{e(C.featLabel(lang, k))}</span></div>'
-            for k in C.deriveFeat(p) if k in C.FEAT
-        ) + "</div>")
+        feats = C.featOf(p)
+        if feats:
+            out.append('<div class="featlist">' + "".join(
+                f'<div class="fitem"><img src="{C.FEAT[k]["img"]}" width="{C.FEAT[k]["w"]}" '
+                f'height="{C.FEAT[k]["h"]}" alt="" loading="lazy" decoding="async">'
+                f'<span>{e(C.featLabel(lang, k))}</span></div>'
+                for k in feats
+            ) + "</div>")
     return "".join(out)
 
 

@@ -222,16 +222,18 @@
   }
 
   /* Verfahren-Symbole */
-  .procs{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 20px}
-  .procbadge{display:flex;flex-direction:column;align-items:center;gap:5px;width:74px}
-  .procbadge .ic{width:100%;aspect-ratio:1.25;background:var(--panel);border:1px solid var(--line);border-radius:7px;display:grid;place-items:center;transition:.15s}
-  .procbadge .ic svg{width:60%;height:60%}
-  .procbadge:hover .ic{border-color:var(--accent);background:var(--panel2)}
+  /* Symbolgruppen wie im MAHE-Katalog: Kopfzeile, darunter die Kacheln */
+  .procs{display:flex;flex-wrap:wrap;gap:10px 18px;margin:6px 0 20px;align-items:flex-start}
+  .symgrp{display:flex;flex-direction:column;gap:7px}
+  .symgrp-h{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.09em;font-size:11.5px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:2px 9px;align-self:flex-start}
+  .symrow{display:flex;flex-wrap:wrap;gap:10px}
+  .procbadge{display:flex;flex-direction:column;align-items:center;gap:5px;width:92px}
+  /* Die Kachel ist das Originalbild aus dem MAHE-Katalog. Sie bringt ihren
+     eigenen grauen Rahmen mit, deshalb hier kein zweiter darum. */
+  .procbadge .ic{width:100%;height:auto;aspect-ratio:1.56;object-fit:contain;border-radius:5px;display:block;transition:.15s}
+  .procbadge:hover .ic{transform:scale(1.06)}
   .procbadge .lb{font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted);text-align:center;line-height:1.1}
-  .procbadge.tile .ic{padding:0;border:0;background:transparent;overflow:hidden;aspect-ratio:1}
-  .procbadge.tile .ic svg{width:100%;height:100%}
-  .fitem svg[viewBox='0 0 48 48']{border-radius:5px}
-  .matchips{display:flex;gap:8px;flex-wrap:wrap;width:100%;margin-top:6px}
+    .matchips{display:flex;gap:8px;flex-wrap:wrap;width:100%;margin-top:6px}
   .matchip{display:inline-flex;align-items:center;gap:7px;border:1.5px solid var(--accent);border-radius:5px;padding:5px 11px 5px 6px;font-family:'Barlow Condensed';font-weight:700;font-size:13.5px;letter-spacing:.03em;color:var(--white)}
   .matchip b{background:var(--accent);color:#111;border-radius:3px;padding:2px 6px;font-size:11px}
   .besond{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:16px;margin-bottom:14px;color:var(--white)}
@@ -257,7 +259,7 @@
 
   .featlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px 26px}
   .featlist .fitem{display:flex;gap:10px;align-items:center;font-size:14.5px;color:var(--white)}
-  .featlist .fitem svg{width:20px;height:20px;flex:0 0 auto}
+  .featlist .fitem img{width:56px;height:auto;flex:0 0 auto;border-radius:4px}
   .panelnote{margin-top:24px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
   .panelnote .pnl{flex:0 0 auto}
   .panelnote .txt h4{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;margin-bottom:6px}

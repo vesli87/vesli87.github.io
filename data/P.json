@@ -1021,13 +1021,29 @@
   "vt": "Vorschubrolle",
   "name": "Drahtvorschubrollen",
   "img": "2022/05/VorchubRolle_SFST4.png",
-  "desc": "Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
+  "desc": "Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
   "specs": {
-   "Für": "HyperMIG X · EcoMIG · MMS",
+   "Für": "EcoMIG · MMS",
    "Stahl": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
    "Gerändelt": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
    "Aluminium": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
-   "Serienmässig": "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)"
+   "Serienmässig": "0,8/1,0 mm Stahl"
+  }
+ },
+ {
+  "id": "drahtvorschubrollen-hyper",
+  "cat": "zubehoer",
+  "sub": "Verschleissteile",
+  "vt": "Vorschubrolle",
+  "name": "Drahtvorschubrollen HyperMIG X",
+  "img": "2022/05/VorchubRolle_SFST4.png",
+  "desc": "Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium.",
+  "specs": {
+   "Für": "HyperMIG X",
+   "Stahl": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+   "Gerändelt": "1,0/1,2 · 1,2/1,6 mm",
+   "Aluminium": "1,0/1,2 · 1,2/1,6 mm",
+   "Serienmässig": "0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A"
   }
  },
  {

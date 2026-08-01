@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE Schweisstechnik, Plasmaschneiden & Automation aus Bronschhofen. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 78 Geräte, alle zum Preis auf Anfrage.
+> MAHE Schweisstechnik, Plasmaschneiden & Automation aus Bronschhofen. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
 
 ## Eckdaten
 - Firma: VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz
@@ -20,7 +20,7 @@
 - [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie. (14 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
 - [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion. (6 Geräte: Theta, Theta Automation)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
-- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (46 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete, Cleaner-Zubehör)
+- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (47 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete, Cleaner-Zubehör)
 
 ## Geräte
 ### Schweissgeräte
@@ -100,7 +100,8 @@
 - [MAHE Verschleissteilebox PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160. (Verschleiss)
 - [MAHE Verschleissteilebox PSHB 125](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160. (Verschleiss)
 - [MAHE Verschleissteilebox PSHB 160](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125. (Verschleiss)
-- [MAHE Drahtvorschubrollen](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/): Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
+- [MAHE Drahtvorschubrollen](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/): Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
+- [MAHE Drahtvorschubrollen HyperMIG X](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/): Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 - [MAHE Montagesatz MLF 100](https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/): Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten. (Montage)
 - [MAHE Reinigungspinselständer](https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/): Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100. (Halterung)

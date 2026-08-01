@@ -282,5 +282,13 @@
  "Tropfschutz": {
   "fr": "protection anti-gouttes",
   "it": "protezione antigoccia"
+ },
+ "0,8/1,0 mm Stahl": {
+  "fr": "0,8/1,0 mm acier",
+  "it": "0,8/1,0 mm acciaio"
+ },
+ "0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A": {
+  "fr": "0,8/1,0 mm acier à 300 A · 1,0/1,2 mm acier à 350–600 A",
+  "it": "0,8/1,0 mm acciaio a 300 A · 1,0/1,2 mm acciaio a 350–600 A"
  }
 }

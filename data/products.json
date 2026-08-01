@@ -9,7 +9,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Bilder: MAHE GmbH. Wiedergabe durch VES-TECH Swiss als Schweizer Partner.",
- "count": 78,
+ "count": 79,
  "products": [
   {
    "id": "hypermig-x",
@@ -14472,9 +14472,9 @@
     "it": "Parti di usura"
    },
    "description": {
-    "de": "Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
-    "fr": "Galets d'entraînement pour les postes MIG/MAG HyperMIG X, EcoMIG et MMS, en versions acier, moletée et aluminium.",
-    "it": "Rulli trainafilo per le saldatrici MIG/MAG HyperMIG X, EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
+    "de": "Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
+    "fr": "Galets d'entraînement pour EcoMIG et MMS, en versions acier, moletée et aluminium.",
+    "it": "Rulli trainafilo per EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
    },
    "highlights": {
     "de": [],
@@ -14483,25 +14483,25 @@
    },
    "specs": {
     "de": {
-     "Für": "HyperMIG X · EcoMIG · MMS",
+     "Für": "EcoMIG · MMS",
      "Stahl": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
      "Gerändelt": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
      "Aluminium": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
-     "Serienmässig": "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)"
+     "Serienmässig": "0,8/1,0 mm Stahl"
     },
     "fr": {
-     "Pour": "HyperMIG X · EcoMIG · MMS",
+     "Pour": "EcoMIG · MMS",
      "Acier": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
      "Moleté": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
      "Aluminium": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
-     "De série": "0,8/1,0 acier (300 A) · 1,0/1,2 acier (350–600 A)"
+     "De série": "0,8/1,0 mm acier"
     },
     "it": {
-     "Per": "HyperMIG X · EcoMIG · MMS",
+     "Per": "EcoMIG · MMS",
      "Acciaio": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
      "Zigrinato": "1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
      "Alluminio": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm",
-     "Di serie": "0,8/1,0 acciaio (300 A) · 1,0/1,2 acciaio (350–600 A)"
+     "Di serie": "0,8/1,0 mm acciaio"
     }
    },
    "techdata": {
@@ -14525,6 +14525,78 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/drahtvorschubrollen/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/drahtvorschubrollen/"
+   }
+  },
+  {
+   "id": "drahtvorschubrollen-hyper",
+   "sku": "DRAHTVORSCHUBROLLEN-HYPER",
+   "name": "MAHE Drahtvorschubrollen HyperMIG X",
+   "brand": "MAHE",
+   "type": "Vorschubrolle",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Verschleissteile",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
+   "description": {
+    "de": "Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium.",
+    "fr": "Galets d'entraînement pour la série HyperMIG X, en versions acier, moletée et aluminium.",
+    "it": "Rulli trainafilo per la serie HyperMIG X, nelle versioni acciaio, zigrinata e alluminio."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Für": "HyperMIG X",
+     "Stahl": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+     "Gerändelt": "1,0/1,2 · 1,2/1,6 mm",
+     "Aluminium": "1,0/1,2 · 1,2/1,6 mm",
+     "Serienmässig": "0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A"
+    },
+    "fr": {
+     "Pour": "HyperMIG X",
+     "Acier": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+     "Moleté": "1,0/1,2 · 1,2/1,6 mm",
+     "Aluminium": "1,0/1,2 · 1,2/1,6 mm",
+     "De série": "0,8/1,0 mm acier à 300 A · 1,0/1,2 mm acier à 350–600 A"
+    },
+    "it": {
+     "Per": "HyperMIG X",
+     "Acciaio": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
+     "Zigrinato": "1,0/1,2 · 1,2/1,6 mm",
+     "Alluminio": "1,0/1,2 · 1,2/1,6 mm",
+     "Di serie": "0,8/1,0 mm acciaio a 300 A · 1,0/1,2 mm acciaio a 350–600 A"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/vorchubrolle-sfst4-8d1221-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/drahtvorschubrollen-hyper/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/drahtvorschubrollen-hyper/"
    }
   },
   {

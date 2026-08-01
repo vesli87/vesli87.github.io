@@ -272,8 +272,8 @@
   "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 160 – dotazione identica ai box PSHB 65 e PSHB 125."
  },
  "drahtvorschubrollen": {
-  "fr": "Galets d'entraînement pour les postes MIG/MAG HyperMIG X, EcoMIG et MMS, en versions acier, moletée et aluminium.",
-  "it": "Rulli trainafilo per le saldatrici MIG/MAG HyperMIG X, EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
+  "fr": "Galets d'entraînement pour EcoMIG et MMS, en versions acier, moletée et aluminium.",
+  "it": "Rulli trainafilo per EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
  },
  "zwischenschlauchpaket": {
   "fr": "Faisceau intermédiaire reliant la source de courant de la série HyperMIG X au dévidoir.",
@@ -310,5 +310,9 @@
  "mf240w": {
   "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
   "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
+ },
+ "drahtvorschubrollen-hyper": {
+  "fr": "Galets d'entraînement pour la série HyperMIG X, en versions acier, moletée et aluminium.",
+  "it": "Rulli trainafilo per la serie HyperMIG X, nelle versioni acciaio, zigrinata e alluminio."
  }
 }

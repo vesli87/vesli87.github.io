@@ -40,7 +40,7 @@ Technische Daten – HyperMIG CWK:
 *: nur als WWK Variante erhältlich.
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen.
+Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.
 
 ### MAHE EcoMIG Digital / Analog
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/
@@ -1058,8 +1058,14 @@ Ausstattung: Für: PSHB 160; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; K
 ### MAHE Drahtvorschubrollen
 URL: https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/
 Kategorie: Zubehör / Verschleissteile · Typ: Vorschubrolle · Art.-Nr.: DRAHTVORSCHUBROLLEN · Preis: auf Anfrage (CHF)
-Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.
-Ausstattung: Für: HyperMIG X · EcoMIG · MMS; Stahl: 0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm; Gerändelt: 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Aluminium: 0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Serienmässig: 0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A).
+Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.
+Ausstattung: Für: EcoMIG · MMS; Stahl: 0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm; Gerändelt: 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Aluminium: 0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Serienmässig: 0,8/1,0 mm Stahl.
+
+### MAHE Drahtvorschubrollen HyperMIG X
+URL: https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/
+Kategorie: Zubehör / Verschleissteile · Typ: Vorschubrolle · Art.-Nr.: DRAHTVORSCHUBROLLEN-HYPER · Preis: auf Anfrage (CHF)
+Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium.
+Ausstattung: Für: HyperMIG X; Stahl: 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm; Gerändelt: 1,0/1,2 · 1,2/1,6 mm; Aluminium: 1,0/1,2 · 1,2/1,6 mm; Serienmässig: 0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A.
 
 ### MAHE Zwischenschlauchpaket
 URL: https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/

@@ -426,7 +426,11 @@ PANELS = {
     "hypertig-acdc":     ["hypertig_acdc"],
     "i-1600":            ["i1600_panel"],
     "delta":             ["delta_panel"],
-    "delta-digital":     ["deltadig"],
+    # Das Panel mit der Uo-Vorwahl 15V/42V/max gehoert an die Delta Digital -
+    # der Katalog nennt auf Seite 46 ausdruecklich "Einstellbare
+    # Leerlaufspannung ab 15V". Frueher stand hier DeltaDigital_1800.png, ein
+    # anderes Panel ohne diese Vorwahl.
+    "delta-digital":     ["deltadig_big"],
     "delta-digital-ds":  ["deltadig_big"],
     "theta-40":          ["theta40_panel"],
     "theta-60":          ["theta_hsc"],

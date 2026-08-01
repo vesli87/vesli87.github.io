@@ -27,7 +27,7 @@
   "sub": "MIG / MAG",
   "vt": "MIG/MAG",
   "name": "EcoMIG Digital / Analog",
-  "img": "2023/03/EcoMig-spolu-1.png",
+  "img": "2023/06/IMG_1279-1.png",
   "desc": "Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.",
   "specs": {
    "Verfahren": "MIG/MAG",
@@ -381,7 +381,7 @@
   "sub": "Fahrwagen",
   "vt": "Fahrwagen",
   "name": "MPF 02",
-  "img": "2023/03/IMGP5689-e1678778035688-219x300.png",
+  "img": "2023/03/IMGP5689.png",
   "desc": "Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.",
   "specs": {
    "Für": "Delta, i-TIG, Beta, Omega, MMS, Theta",
@@ -1020,7 +1020,7 @@
   "sub": "Verschleissteile",
   "vt": "Vorschubrolle",
   "name": "Drahtvorschubrollen",
-  "img": "2021/05/DVR.png",
+  "img": "2022/05/VorchubRolle_SFST4.png",
   "desc": "Drahtvorschubrollen für die MIG/MAG-Anlagen HyperMIG X, EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
   "specs": {
    "Für": "HyperMIG X · EcoMIG · MMS",

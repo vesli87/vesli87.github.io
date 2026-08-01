@@ -177,7 +177,10 @@
   .detail{padding:40px 0 72px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
   .dimg{background:#fff;border-radius:10px;padding:40px;display:grid;place-items:center;aspect-ratio:1;position:relative}
-  .dimg img{width:100%;height:100%;object-fit:contain;background:#fff}
+  /* Nie über die echte Auflösung hinaus vergrössern. Manche Herstellerfotos
+     sind nur gut 200 px breit; auf 520 px gezogen wirkten sie unscharf. Lieber
+     klein und scharf als gross und verwaschen. */
+  .dimg img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
   .dimg .vtag{position:absolute;top:16px;left:16px;background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.08em;padding:5px 11px;border-radius:3px}
   .dinfo .kicker{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;color:var(--accent);font-size:14px;text-transform:uppercase}
   .dinfo h1{font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(30px,4vw,50px);text-transform:uppercase;line-height:1.06;letter-spacing:.015em;margin:10px 0}
@@ -279,7 +282,7 @@
   .acccard{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;transition:.18s}
   .acccard:hover{border-color:var(--accent);transform:translateY(-2px)}
   .acccard .im{background:#fff;aspect-ratio:1.3;display:grid;place-items:center;padding:12px}
-  .acccard .im img{width:100%;height:100%;object-fit:contain}
+  .acccard .im img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
   .acccard .bd{padding:12px 14px}
   .acccard .bd .vt{font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
   .acccard .bd h3{font-family:'Bodoni Moda',serif;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.01em;margin:3px 0 2px;line-height:1.18}

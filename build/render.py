@@ -71,20 +71,33 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
         return (f'<img class="{cls}" src="{e(remote)}" alt="{e(alt)}" '
                 f'referrerpolicy="no-referrer" loading="lazy" decoding="async">')
     k = m["key"]
-    w = width or 400
+    nat = m.get("w") or 1000
+    # images.py skaliert nie hoch: die Datei "-1000.webp" ist bei einer 242 px
+    # breiten Vorlage auch nur 242 px breit. Stand im srcset trotzdem "1000w",
+    # hielt der Browser sie fuer hochaufloesend und zog sie auf die volle
+    # Anzeigebreite – der Brenner MT200W sah dadurch unscharf aus. Deshalb hier
+    # die tatsaechlichen Breiten, und angezeigt wird hoechstens so gross, wie
+    # die Vorlage wirklich ist.
+    w = min(width or 400, nat)
     h = int(round(w * m["ratio"]))
     # Frontpanels kommen direkt vom Hersteller und liegen lokal; Produktbilder
     # stammen von mahe-online.de und behalten dorthin einen Rückfall.
     folder = "panels" if m.get("local") else "p"
+    klein, gross = min(400, nat), min(1000, nat)
     small = f"/assets/img/{folder}/{k}-400.webp"
     large = f"/assets/img/{folder}/{k}-1000.webp"
+    srcset = f"{small} {klein}w"
+    if gross > klein:
+        srcset += f", {large} {gross}w"
+    if nat < (width or 400):
+        sizes = f"{w}px"          # das Bild fuellt den Platz gar nicht aus
     loading = "" if eager else 'loading="lazy" '
     onerror = "" if m.get("local") else (
         "this.onerror=null;this.removeAttribute(&quot;srcset&quot;);"
         "this.src=&quot;" + e(remote) + "&quot;")
     return (
         f'<img class="{cls}" src="{small}" '
-        f'srcset="{small} 400w, {large} 1000w" sizes="{e(sizes)}" '
+        f'srcset="{srcset}" sizes="{e(sizes)}" '
         f'width="{w}" height="{h}" alt="{e(alt)}" '
         f'{loading}decoding="async" referrerpolicy="no-referrer"'
         + (f' onerror="{onerror}"' if onerror else "") + ">"

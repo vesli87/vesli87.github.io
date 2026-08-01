@@ -245,8 +245,12 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
    `tile:true`.
 5. Neue Produkte folgen dem `P`-Schema; Unterkategorie in `CATS` ergänzen und
    Übersetzungen in `SUBTR`/`PDESC`/`SPECK`/`SPECV` nachziehen.
-6. **Cleaner-Geräte bekommen kein erfundenes Frontpanel** — stattdessen die
-   Besonderheiten aus `HL_CLEAN`.
+6. **Frontpanels nie erfinden.** Seit dem 31.07.2026 liegen 41 Panel-Fotos
+   direkt von MAHE vor (`build/panels.py` importiert sie nach
+   `assets/img/panels/`, Zuordnung in `core.py::PANELS`). Wo der Hersteller
+   keines geliefert hat, bleibt der gezeichnete Ersatz aus `PANEL_DRAWN.json`
+   oder es werden nur die Besonderheiten gezeigt. Der frühere Sonderfall
+   „Cleaner bekommen kein Panel“ entfällt — für sie gibt es jetzt echte Fotos.
 7. Firmendaten nur in `core.py::COMPANY` ändern.
 8. `norm()` in `build.py` und `app.js` müssen identisch bleiben.
 9. Nach jeder Änderung: `build.py` **und** `check.py` — Ziel sind **0 Fehler**.

@@ -73,7 +73,9 @@ def front_html(lang, p):
         out.append(f'<h3 class="fp-section">{e(C.t(lang,"front_h"))}</h3>')
         for pk in panels:
             fp = C.FP[pk]
-            ph = C.PANEL_HL[pk].get(lang) or C.PANEL_HL[pk]["de"]
+            hk = fp.get("hl", pk)   # neue Panels zeigen auf ihre Familie
+            src = C.PANEL_HL.get(hk) or C.PANEL_HL[pk]
+            ph = src.get(lang) or src["de"]
             if fp.get("img"):
                 media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",
                                   cls="fp-photo", alt=f"{C.BRAND} {fp['n']}", width=340)

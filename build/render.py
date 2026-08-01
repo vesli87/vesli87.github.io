@@ -73,18 +73,21 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     k = m["key"]
     w = width or 400
     h = int(round(w * m["ratio"]))
-    small = f"/assets/img/p/{k}-400.webp"
-    large = f"/assets/img/p/{k}-1000.webp"
+    # Frontpanels kommen direkt vom Hersteller und liegen lokal; Produktbilder
+    # stammen von mahe-online.de und behalten dorthin einen Rückfall.
+    folder = "panels" if m.get("local") else "p"
+    small = f"/assets/img/{folder}/{k}-400.webp"
+    large = f"/assets/img/{folder}/{k}-1000.webp"
     loading = "" if eager else 'loading="lazy" '
-    # Fällt ein Browser über WebP, lädt onerror das Original von mahe-online.de.
-    onerror = ("this.onerror=null;this.removeAttribute(&quot;srcset&quot;);"
-               "this.src=&quot;" + e(remote) + "&quot;")
+    onerror = "" if m.get("local") else (
+        "this.onerror=null;this.removeAttribute(&quot;srcset&quot;);"
+        "this.src=&quot;" + e(remote) + "&quot;")
     return (
         f'<img class="{cls}" src="{small}" '
         f'srcset="{small} 400w, {large} 1000w" sizes="{e(sizes)}" '
         f'width="{w}" height="{h}" alt="{e(alt)}" '
-        f'{loading}decoding="async" referrerpolicy="no-referrer" '
-        f'onerror="{onerror}">'
+        f'{loading}decoding="async" referrerpolicy="no-referrer"'
+        + (f' onerror="{onerror}"' if onerror else "") + ">"
     )
 
 

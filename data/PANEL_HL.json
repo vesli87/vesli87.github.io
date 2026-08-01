@@ -312,5 +312,816 @@
    "TIG Lift Arc",
    "Saldatura a elettrodo MMA"
   ]
+ },
+ "hypermig_ex": {
+  "de": [
+   "MIS-Schweissen",
+   "Impuls-Schweissen",
+   "Doppelpuls-Schweissen",
+   "MIG-Löten",
+   "HyperForce, HyperRoot, HyperCold",
+   "MMA-Elektrodenschweissen",
+   "WIG Lift Arc",
+   "JOB-Modus · 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage pulsé",
+   "Soudage double pulsation",
+   "Brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Soudage à l’électrode MMA",
+   "TIG Lift Arc",
+   "Mode JOB · 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura a impulsi",
+   "Saldatura doppio impulso",
+   "Brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc",
+   "Modo JOB · 99 programmi"
+  ]
+ },
+ "hypermig_hx": {
+  "de": [
+   "MIS-Schweissen",
+   "Impuls-Schweissen",
+   "Doppelpuls-Schweissen",
+   "MIG-Löten",
+   "HyperPuls-Schweissen",
+   "HyperForce-Schweissen",
+   "HyperCold-Schweissen",
+   "HyperRoot-Schweissen",
+   "HyperUP-Schweissen",
+   "WIG Lift Arc",
+   "MMA-Elektrodenschweissen",
+   "JOB-Modus · 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage pulsé",
+   "Soudage double pulsation",
+   "Brasage MIG",
+   "Soudage HyperPuls",
+   "Soudage HyperForce",
+   "Soudage HyperCold",
+   "Soudage HyperRoot",
+   "Soudage HyperUP",
+   "TIG Lift Arc",
+   "Soudage à l’électrode MMA",
+   "Mode JOB · 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura a impulsi",
+   "Saldatura doppio impulso",
+   "Brasatura MIG",
+   "Saldatura HyperPuls",
+   "Saldatura HyperForce",
+   "Saldatura HyperCold",
+   "Saldatura HyperRoot",
+   "Saldatura HyperUP",
+   "TIG Lift Arc",
+   "Saldatura a elettrodo MMA",
+   "Modo JOB · 99 programmi"
+  ]
+ },
+ "hypermig_sx": {
+  "de": [
+   "MIS-Schweissen",
+   "HyperPuls-Schweissen",
+   "HyperCold-Schweissen",
+   "HyperRoot-Schweissen",
+   "HyperForce-Schweissen",
+   "HyperUP-Schweissen",
+   "WIG Lift Arc",
+   "MMA-Elektrodenschweissen"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage HyperPuls",
+   "Soudage HyperCold",
+   "Soudage HyperRoot",
+   "Soudage HyperForce",
+   "Soudage HyperUP",
+   "TIG Lift Arc",
+   "Soudage à l’électrode MMA"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura HyperPuls",
+   "Saldatura HyperCold",
+   "Saldatura HyperRoot",
+   "Saldatura HyperForce",
+   "Saldatura HyperUP",
+   "TIG Lift Arc",
+   "Saldatura a elettrodo MMA"
+  ]
+ },
+ "ecomig_analog": {
+  "de": [
+   "MIS-Schweissen",
+   "MIG-Löten",
+   "HyperForce, HyperRoot, HyperCold",
+   "MMA-Elektrodenschweissen",
+   "WIG Lift Arc",
+   "JOB-Modus · 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Soudage à l’électrode MMA",
+   "TIG Lift Arc",
+   "Mode JOB · 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc",
+   "Modo JOB · 99 programmi"
+  ]
+ },
+ "ecomig_low": {
+  "de": [
+   "MIS-Schweissen",
+   "MIG-Löten",
+   "HyperForce, HyperRoot, HyperCold",
+   "MMA-Elektrodenschweissen",
+   "WIG Lift Arc",
+   "JOB-Modus · 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Soudage à l’électrode MMA",
+   "TIG Lift Arc",
+   "Mode JOB · 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc",
+   "Modo JOB · 99 programmi"
+  ]
+ },
+ "mms_panel": {
+  "de": [
+   "MIS-Schweissen",
+   "MIG-Löten",
+   "HyperForce, HyperRoot, HyperCold",
+   "MMA-Elektrodenschweissen",
+   "WIG Lift Arc",
+   "JOB-Modus · 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Soudage à l’électrode MMA",
+   "TIG Lift Arc",
+   "Mode JOB · 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc",
+   "Modo JOB · 99 programmi"
+  ]
+ },
+ "omega_pro": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "MAHE-MIX-PULSE (AC)",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "AC-Schweissen (WIG und MMA)"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "MAHE-MIX-PULSE (AC)",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "Soudage AC (TIG et MMA)"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "MAHE-MIX-PULSE (AC)",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "Saldatura AC (TIG e MMA)"
+  ]
+ },
+ "omega_syn": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "MAHE-MIX-PULSE (AC)",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "AC-Schweissen (WIG und MMA)"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "MAHE-MIX-PULSE (AC)",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "Soudage AC (TIG et MMA)"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "MAHE-MIX-PULSE (AC)",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "Saldatura AC (TIG e MMA)"
+  ]
+ },
+ "betadx_pro": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "WIG DC & MMA"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "TIG DC & MMA"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "TIG DC & MMA"
+  ]
+ },
+ "betadx_syn": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "WIG DC & MMA"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "TIG DC & MMA"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "TIG DC & MMA"
+  ]
+ },
+ "betadig_profi": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "WIG DC & MMA"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "TIG DC & MMA"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "TIG DC & MMA"
+  ]
+ },
+ "betadig_syn": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "WIG DC & MMA"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "TIG DC & MMA"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "TIG DC & MMA"
+  ]
+ },
+ "hypertig_ax": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "MAHE-MIX-PULSE (AC)",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "AC-Schweissen (WIG und MMA)"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "MAHE-MIX-PULSE (AC)",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "Soudage AC (TIG et MMA)"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "MAHE-MIX-PULSE (AC)",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "Saldatura AC (TIG e MMA)"
+  ]
+ },
+ "hypertig_dx": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "WIG DC & MMA"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "TIG DC & MMA"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "TIG DC & MMA"
+  ]
+ },
+ "hypertig_acdc": {
+  "de": [
+   "Einknopfbedienung",
+   "Übersichtliche Bedienerführung",
+   "Synergische Kennlinien",
+   "Hyper Arc Active Kennlinie serienmässig",
+   "Hyper Spot Kennlinie serienmässig",
+   "ActiveSpot Kennlinie serienmässig",
+   "Hochfrequenzpulsen serienmässig",
+   "MAHE-MIX-PULSE (AC)",
+   "Fernbedienung Ein / Aus",
+   "HF-Start oder Lift-Arc-Start",
+   "AC-Schweissen (WIG und MMA)"
+  ],
+  "fr": [
+   "Commande à un bouton",
+   "Guidage clair de l’opérateur",
+   "Courbes synergiques",
+   "Courbe Hyper Arc Active de série",
+   "Courbe Hyper Spot de série",
+   "Courbe ActiveSpot de série",
+   "Pulsation haute fréquence de série",
+   "MAHE-MIX-PULSE (AC)",
+   "Télécommande on/off",
+   "Amorçage HF ou Lift-Arc",
+   "Soudage AC (TIG et MMA)"
+  ],
+  "it": [
+   "Comando a una manopola",
+   "Guida operatore chiara",
+   "Curve sinergiche",
+   "Curva Hyper Arc Active di serie",
+   "Curva Hyper Spot di serie",
+   "Curva ActiveSpot di serie",
+   "Pulsazione alta frequenza di serie",
+   "MAHE-MIX-PULSE (AC)",
+   "Telecomando on/off",
+   "Innesco HF o Lift-Arc",
+   "Saldatura AC (TIG e MMA)"
+  ]
+ },
+ "i1600_panel": {
+  "de": [
+   "Prozesswahl: MMA · MMA-CEL · Fugenhobeln · WIG Lift-Arc",
+   "Hot-Start einstellbar",
+   "Arc-Force einstellbar (0–100 %)",
+   "Anti-Stick",
+   "Digitale Anzeige (Delta Digital)",
+   "Fernbedienung anschliessbar"
+  ],
+  "fr": [
+   "Choix du procédé : MMA · MMA-CEL · gougeage · TIG Lift-Arc",
+   "Hot-Start réglable",
+   "Arc-Force réglable (0–100 %)",
+   "Anti-Stick",
+   "Affichage numérique (Delta Digital)",
+   "Télécommande raccordable"
+  ],
+  "it": [
+   "Scelta processo: MMA · MMA-CEL · scriccatura · TIG Lift-Arc",
+   "Hot-Start regolabile",
+   "Arc-Force regolabile (0–100 %)",
+   "Anti-Stick",
+   "Display digitale (Delta Digital)",
+   "Telecomando collegabile"
+  ]
+ },
+ "delta_panel": {
+  "de": [
+   "Prozesswahl: MMA · MMA-CEL · Fugenhobeln · WIG Lift-Arc",
+   "Hot-Start einstellbar",
+   "Arc-Force einstellbar (0–100 %)",
+   "Anti-Stick",
+   "Digitale Anzeige (Delta Digital)",
+   "Fernbedienung anschliessbar"
+  ],
+  "fr": [
+   "Choix du procédé : MMA · MMA-CEL · gougeage · TIG Lift-Arc",
+   "Hot-Start réglable",
+   "Arc-Force réglable (0–100 %)",
+   "Anti-Stick",
+   "Affichage numérique (Delta Digital)",
+   "Télécommande raccordable"
+  ],
+  "it": [
+   "Scelta processo: MMA · MMA-CEL · scriccatura · TIG Lift-Arc",
+   "Hot-Start regolabile",
+   "Arc-Force regolabile (0–100 %)",
+   "Anti-Stick",
+   "Display digitale (Delta Digital)",
+   "Telecomando collegabile"
+  ]
+ },
+ "deltadig": {
+  "de": [
+   "Prozesswahl: MMA · MMA-CEL · Fugenhobeln · WIG Lift-Arc",
+   "Hot-Start einstellbar",
+   "Arc-Force einstellbar (0–100 %)",
+   "Anti-Stick",
+   "Digitale Anzeige (Delta Digital)",
+   "Fernbedienung anschliessbar"
+  ],
+  "fr": [
+   "Choix du procédé : MMA · MMA-CEL · gougeage · TIG Lift-Arc",
+   "Hot-Start réglable",
+   "Arc-Force réglable (0–100 %)",
+   "Anti-Stick",
+   "Affichage numérique (Delta Digital)",
+   "Télécommande raccordable"
+  ],
+  "it": [
+   "Scelta processo: MMA · MMA-CEL · scriccatura · TIG Lift-Arc",
+   "Hot-Start regolabile",
+   "Arc-Force regolabile (0–100 %)",
+   "Anti-Stick",
+   "Display digitale (Delta Digital)",
+   "Telecomando collegabile"
+  ]
+ },
+ "deltadig_big": {
+  "de": [
+   "Prozesswahl: MMA · MMA-CEL · Fugenhobeln · WIG Lift-Arc",
+   "Hot-Start einstellbar",
+   "Arc-Force einstellbar (0–100 %)",
+   "Anti-Stick",
+   "Digitale Anzeige (Delta Digital)",
+   "Fernbedienung anschliessbar"
+  ],
+  "fr": [
+   "Choix du procédé : MMA · MMA-CEL · gougeage · TIG Lift-Arc",
+   "Hot-Start réglable",
+   "Arc-Force réglable (0–100 %)",
+   "Anti-Stick",
+   "Affichage numérique (Delta Digital)",
+   "Télécommande raccordable"
+  ],
+  "it": [
+   "Scelta processo: MMA · MMA-CEL · scriccatura · TIG Lift-Arc",
+   "Hot-Start regolabile",
+   "Arc-Force regolabile (0–100 %)",
+   "Anti-Stick",
+   "Display digitale (Delta Digital)",
+   "Telecomando collegabile"
+  ]
+ },
+ "theta40_panel": {
+  "de": [
+   "Plasmaschneiden mit HSC-Technologie",
+   "Pilotlichtbogen (kontaktlos)",
+   "Schneidstrom stufenlos",
+   "Luftdruck-Regelung",
+   "Gittertrennen möglich",
+   "2-Takt / 4-Takt"
+  ],
+  "fr": [
+   "Découpe plasma technologie HSC",
+   "Arc pilote (sans contact)",
+   "Courant de coupe réglable",
+   "Régulation de la pression d’air",
+   "Découpe de grilles possible",
+   "2 temps / 4 temps"
+  ],
+  "it": [
+   "Taglio plasma tecnologia HSC",
+   "Arco pilota (senza contatto)",
+   "Corrente di taglio regolabile",
+   "Regolazione pressione aria",
+   "Taglio di grigliati possibile",
+   "2 tempi / 4 tempi"
+  ]
+ },
+ "theta_hsc": {
+  "de": [
+   "Plasmaschneiden mit HSC-Technologie",
+   "Pilotlichtbogen (kontaktlos)",
+   "Schneidstrom stufenlos",
+   "Luftdruck-Regelung",
+   "Gittertrennen möglich",
+   "2-Takt / 4-Takt"
+  ],
+  "fr": [
+   "Découpe plasma technologie HSC",
+   "Arc pilote (sans contact)",
+   "Courant de coupe réglable",
+   "Régulation de la pression d’air",
+   "Découpe de grilles possible",
+   "2 temps / 4 temps"
+  ],
+  "it": [
+   "Taglio plasma tecnologia HSC",
+   "Arco pilota (senza contatto)",
+   "Corrente di taglio regolabile",
+   "Regolazione pressione aria",
+   "Taglio di grigliati possibile",
+   "2 tempi / 4 tempi"
+  ]
+ },
+ "mini_panel": {
+  "de": [
+   "Elektrolytisches Reinigen",
+   "Polieren von Schweissnähten",
+   "Signieren (mit Zubehör)",
+   "Leistungsstufen wählbar",
+   "Betriebsart-Wahl"
+  ],
+  "fr": [
+   "Nettoyage électrolytique",
+   "Polissage des soudures",
+   "Marquage (avec accessoire)",
+   "Niveaux de puissance sélectionnables",
+   "Choix du mode"
+  ],
+  "it": [
+   "Pulizia elettrolitica",
+   "Lucidatura delle saldature",
+   "Marcatura (con accessorio)",
+   "Livelli di potenza selezionabili",
+   "Scelta del modo"
+  ]
+ },
+ "cleaner_st": {
+  "de": [
+   "Elektrolytisches Reinigen",
+   "Polieren von Schweissnähten",
+   "Signieren (mit Zubehör)",
+   "Leistungsstufen wählbar",
+   "Betriebsart-Wahl"
+  ],
+  "fr": [
+   "Nettoyage électrolytique",
+   "Polissage des soudures",
+   "Marquage (avec accessoire)",
+   "Niveaux de puissance sélectionnables",
+   "Choix du mode"
+  ],
+  "it": [
+   "Pulizia elettrolitica",
+   "Lucidatura delle saldature",
+   "Marcatura (con accessorio)",
+   "Livelli di potenza selezionabili",
+   "Scelta del modo"
+  ]
+ },
+ "cleaner_plus": {
+  "de": [
+   "Elektrolytisches Reinigen",
+   "Polieren von Schweissnähten",
+   "Signieren (mit Zubehör)",
+   "Leistungsstufen wählbar",
+   "Betriebsart-Wahl"
+  ],
+  "fr": [
+   "Nettoyage électrolytique",
+   "Polissage des soudures",
+   "Marquage (avec accessoire)",
+   "Niveaux de puissance sélectionnables",
+   "Choix du mode"
+  ],
+  "it": [
+   "Pulizia elettrolitica",
+   "Lucidatura delle saldature",
+   "Marcatura (con accessorio)",
+   "Livelli di potenza selezionabili",
+   "Scelta del modo"
+  ]
+ },
+ "ct200_panel": {
+  "de": [
+   "Elektrolytisches Reinigen",
+   "Polieren von Schweissnähten",
+   "Signieren (mit Zubehör)",
+   "Leistungsstufen wählbar",
+   "Betriebsart-Wahl"
+  ],
+  "fr": [
+   "Nettoyage électrolytique",
+   "Polissage des soudures",
+   "Marquage (avec accessoire)",
+   "Niveaux de puissance sélectionnables",
+   "Choix du mode"
+  ],
+  "it": [
+   "Pulizia elettrolitica",
+   "Lucidatura delle saldature",
+   "Marcatura (con accessorio)",
+   "Livelli di potenza selezionabili",
+   "Scelta del modo"
+  ]
+ },
+ "ct200_syn": {
+  "de": [
+   "Elektrolytisches Reinigen",
+   "Polieren von Schweissnähten",
+   "Signieren (mit Zubehör)",
+   "Leistungsstufen wählbar",
+   "Betriebsart-Wahl"
+  ],
+  "fr": [
+   "Nettoyage électrolytique",
+   "Polissage des soudures",
+   "Marquage (avec accessoire)",
+   "Niveaux de puissance sélectionnables",
+   "Choix du mode"
+  ],
+  "it": [
+   "Pulizia elettrolitica",
+   "Lucidatura delle saldature",
+   "Marcatura (con accessorio)",
+   "Livelli di potenza selezionabili",
+   "Scelta del modo"
+  ]
  }
 }

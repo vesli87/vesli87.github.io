@@ -187,5 +187,372 @@
    "TAKT",
    "ARC"
   ]
+ },
+ "hypermig_ex": {
+  "n": "EX – EcoPuls Front Panel",
+  "big": true,
+  "img": "panels/HyperMIG_EX_Frontpanel..png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT",
+   "ARC"
+  ],
+  "hl": "ecopuls"
+ },
+ "hypermig_hx": {
+  "n": "HX – Hyper Front Panel",
+  "big": true,
+  "img": "panels/HyperMIG_HX_Frontpanel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT",
+   "ARC",
+   "BURN"
+  ],
+  "hl": "hyper"
+ },
+ "hypermig_sx": {
+  "n": "SX – Steel Puls Front Panel",
+  "big": true,
+  "img": "panels/HyperMIG_SX_Frontpanel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT",
+   "ARC"
+  ],
+  "hl": "steelpuls"
+ },
+ "ecomig_analog": {
+  "n": "EcoMIG Analog – Bedienpanel",
+  "big": true,
+  "img": "panels/EcoMIG_Analog.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT"
+  ],
+  "hl": "ecomig"
+ },
+ "ecomig_low": {
+  "n": "EcoMIG LowCost – Bedienpanel",
+  "big": true,
+  "img": "panels/EcoMIG-LowCost_Frontpanel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT"
+  ],
+  "hl": "ecomig"
+ },
+ "mms_panel": {
+  "n": "MMS 2000 C – Bedienpanel",
+  "big": true,
+  "img": "panels/MMS2000C_Panel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MENU",
+   "JOB",
+   "MODE",
+   "PROC",
+   "WIRE",
+   "GAS",
+   "TAKT"
+  ],
+  "hl": "ecomig"
+ },
+ "omega_pro": {
+  "n": "Omega AX Pro – Bedienpanel",
+  "big": true,
+  "img": "panels/OmegaAX Pro.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig_acdc"
+ },
+ "omega_syn": {
+  "n": "Omega AX Syn – Bedienpanel",
+  "big": true,
+  "img": "panels/Omega AX SYN.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig_acdc"
+ },
+ "betadx_pro": {
+  "n": "Beta DX Pro – Bedienpanel",
+  "big": true,
+  "img": "panels/BetaDX_Pro_Panel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig"
+ },
+ "betadx_syn": {
+  "n": "Beta DX Syn – Bedienpanel",
+  "big": true,
+  "img": "panels/BetaDX_Syn_Panel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig"
+ },
+ "betadig_profi": {
+  "n": "Beta digital Profi – Bedienpanel",
+  "big": true,
+  "img": "panels/BetaDigital_Profi_Panel.PNG",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig"
+ },
+ "betadig_syn": {
+  "n": "Beta digital Syn – Bedienpanel",
+  "big": true,
+  "img": "panels/BetaDigital_Syn_Panel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig"
+ },
+ "hypertig_ax": {
+  "n": "HyperTIG AX – Bedienpanel",
+  "big": true,
+  "img": "panels/HyperTIG_AX_Frontpanel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig_acdc"
+ },
+ "hypertig_dx": {
+  "n": "HyperTIG DX – Bedienpanel",
+  "big": true,
+  "img": "panels/HyperTIG_DX_Frontpanel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig"
+ },
+ "hypertig_acdc": {
+  "n": "HyperTIG AC/DC – Bedienpanel",
+  "big": true,
+  "img": "panels/HyperTIG_ACDC_Panel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "WIG_HF",
+   "WIG_PULS",
+   "WIG_SLOPE",
+   "WIG_GAS",
+   "TAKT"
+  ],
+  "hl": "wig_acdc"
+ },
+ "i1600_panel": {
+  "n": "i-1600 – Bedienpanel",
+  "big": true,
+  "img": "panels/i_1600.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MMA_HOT",
+   "MMA_ARC",
+   "MMA_STICK"
+  ],
+  "hl": "mma"
+ },
+ "delta_panel": {
+  "n": "Delta – Bedienpanel",
+  "big": true,
+  "img": "panels/Delta1800.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MMA_HOT",
+   "MMA_ARC",
+   "MMA_STICK"
+  ],
+  "hl": "mma"
+ },
+ "deltadig": {
+  "n": "Delta Digital – Bedienpanel",
+  "big": true,
+  "img": "panels/DeltaDigital_1800.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MMA_HOT",
+   "MMA_ARC",
+   "MMA_STICK"
+  ],
+  "hl": "mma"
+ },
+ "deltadig_big": {
+  "n": "Delta Digital DS – Bedienpanel",
+  "big": true,
+  "img": "panels/DeltaDigital_BIG_Panel.png",
+  "ctrl": [
+   "VOLT",
+   "AMP",
+   "MMA_HOT",
+   "MMA_ARC",
+   "MMA_STICK"
+  ],
+  "hl": "mma"
+ },
+ "theta40_panel": {
+  "n": "Theta 40 – Bedienpanel",
+  "big": true,
+  "img": "panels/Theta40_Panel.png",
+  "ctrl": [
+   "THETA_CUR",
+   "THETA_AIR",
+   "THETA_PILOT",
+   "TAKT"
+  ],
+  "hl": "theta"
+ },
+ "theta_hsc": {
+  "n": "Theta HSC – Bedienpanel",
+  "big": true,
+  "img": "panels/ThetaHSC_Panel.png",
+  "ctrl": [
+   "THETA_CUR",
+   "THETA_AIR",
+   "THETA_PILOT",
+   "TAKT"
+  ],
+  "hl": "theta"
+ },
+ "mini_panel": {
+  "n": "MiniReiniger – Bedienpanel",
+  "big": true,
+  "img": "panels/MiniCleaner_Panel.png",
+  "ctrl": [
+   "CL_POWER",
+   "CL_MODE"
+  ],
+  "hl": "cleaner"
+ },
+ "cleaner_st": {
+  "n": "HyperCleaner ST – Bedienpanel",
+  "big": true,
+  "img": "panels/HyperClenaerST_Panel.png",
+  "ctrl": [
+   "CL_POWER",
+   "CL_MODE"
+  ],
+  "hl": "cleaner"
+ },
+ "cleaner_plus": {
+  "n": "HyperCleaner ST Plus – Bedienpanel",
+  "big": true,
+  "img": "panels/HyperCleaner_ST_Plus_Panell.png",
+  "ctrl": [
+   "CL_POWER",
+   "CL_MODE"
+  ],
+  "hl": "cleaner"
+ },
+ "ct200_panel": {
+  "n": "HyperCleaner CT 200 – Bedienpanel",
+  "big": true,
+  "img": "panels/CT200_Panel.png",
+  "ctrl": [
+   "CL_POWER",
+   "CL_MODE"
+  ],
+  "hl": "cleaner"
+ },
+ "ct200_syn": {
+  "n": "CT 200 Syn – Bedienpanel",
+  "big": true,
+  "img": "panels/CT200_Syn_Panel.png",
+  "ctrl": [
+   "CL_POWER",
+   "CL_MODE"
+  ],
+  "hl": "cleaner"
  }
 }

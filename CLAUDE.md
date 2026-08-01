@@ -69,7 +69,9 @@ python3 -m http.server 8099
    `data/products.json`, `data/search-*.json`) nie von Hand editieren.
 4. `norm()` in `build/build.py` und `assets/js/app.js` müssen identisch bleiben,
    sonst findet die Suche nichts mehr.
-5. Cleaner-Geräte bekommen **kein** erfundenes Frontpanel.
+5. Frontpanels sind **Fotos des Herstellers** (`assets/img/panels/`, importiert
+   mit `build/panels.py`). Wo MAHE keines geliefert hat, bleibt der gezeichnete
+   Ersatz — es wird nie eines erfunden. Zuordnung in `build/core.py::PANELS`.
 6. **Keine Kopierschutz-Massnahmen einbauen** (Rechtsklick-Sperre, Textauswahl
    sperren, DevTools-Blocker, Verschleierung). Sie sind wirkungslos, schaden der
    Bedienbarkeit und der Barrierefreiheit — und Inhalt per JavaScript zu

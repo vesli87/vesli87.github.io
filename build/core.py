@@ -312,10 +312,40 @@ def matLabel(lang, m):
     return (d.get(lang) or d.get("de")) if d else m
 
 
+# Frontpanels je Geraet. Die Dateien stammen direkt von MAHE (build/panels.py);
+# wo der Hersteller keines geliefert hat, bleibt der gezeichnete Ersatz oder es
+# werden nur die Besonderheiten gezeigt - erfunden wird nichts.
+PANELS = {
+    "hypermig-x":        ["hypermig_ex", "hypermig_hx", "hypermig_sx"],
+    "ecomig":            ["ecomig_analog", "ecomig_low"],
+    "mms":               ["mms_panel"],
+    "omega-ax":          ["omega_pro", "omega_syn"],
+    "beta-dx":           ["betadx_pro", "betadx_syn"],
+    "beta-digital":      ["betadig_profi", "betadig_syn"],
+    "hypertig-ax":       ["hypertig_ax"],
+    "hypertig-dx":       ["hypertig_dx"],
+    "hypertig-acdc":     ["hypertig_acdc"],
+    "i-1600":            ["i1600_panel"],
+    "delta":             ["delta_panel"],
+    "delta-digital":     ["deltadig"],
+    "delta-digital-ds":  ["deltadig_big"],
+    "theta-40":          ["theta40_panel"],
+    "theta-60":          ["theta_hsc"],
+    "theta-120":         ["theta_hsc"],
+    "theta-180":         ["theta_hsc"],
+    "theta-60-aut":      ["theta_hsc"],
+    "theta-120-aut":     ["theta_hsc"],
+    "minicleaner":       ["mini_panel"],
+    "hypercleaner-st":   ["cleaner_st"],
+    "hypercleaner-plus": ["cleaner_plus"],
+    "hypercleaner-ct200": ["ct200_panel", "ct200_syn"],
+}
+
+
 def fpAssign(p):
-    if p["id"] == "hypermig-x":
-        return ["ecomig", "ecopuls", "hyper", "steel", "steelpuls"]
-    if p["sub"] == "MIG / MAG":       return ["ecomig", "ecopuls"]
+    if p["id"] in PANELS:
+        return PANELS[p["id"]]
+    # Fallback auf die gezeichneten Familienpanels, solange kein Foto vorliegt
     if p["sub"] == "WIG / TIG":       return ["wig_acdc" if re.search(r"ac/dc", p["vt"], re.I) else "wig"]
     if p["sub"] == "Plasma TIG":      return ["wig"]
     if p["sub"] == "MMA":             return ["mma"]

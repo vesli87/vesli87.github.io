@@ -58,6 +58,14 @@ DEV_MULTI = {  # unser Produkt deckt mehrere MAHE-Varianten ab
  "mms":      ["mms :: MMS 2000C", "mms :: MMS 2400/3000 EX"],
 }
 PANEL = {
+ "ecomig_analog": "d-mig :: EcoMIG 3000 Analog Front Panel",
+ "ecomig_low": "d-mig :: EcoMIG 3000 Digital Front Panel",
+ "ecomig_2000": "d-mig :: EcoMIG 2000 Digital Front Panel",
+ "mms_light": "mms :: EcoMIG Light Panel",
+ "mms_ecomig": "mms :: EcoMIG Front Panel",
+ "mms_ecopuls": "mms :: EcoPuls Front Panel",
+ "hypermig_ecomig": "hypermig :: EX – EcoMIG Front Panel",
+ "hypermig_steel": "hypermig :: SX – Steel Front Panel",
  "hypermig_ex": "hypermig :: EX – EcoPuls Front Panel",
  "hypermig_hx": "hypermig :: HX – Hyper Front Panel",
  "hypermig_sx": "hypermig :: SX – Steel Puls Front Panel",
@@ -77,6 +85,7 @@ FIX = [("ß", "ss"), ("Relegung", "Regelung"), ("Syniergie-Programm", "Synergiep
        ("Fernbedienung Eein / Aus", "Fernbedienung Ein/Aus"),
        ("Fernbedienung Ein / Aus", "Fernbedienung Ein/Aus"),
        ("Sprizerfreier", "Spritzerfreier"), ("MMA Elektoden", "MMA Elektroden"),
+       ("Punkt und intervall", "Punkt und Intervall"),
        ("nur 11,5 KG2", "nur 11,5 kg"), ("nur 21 KG", "nur 21 kg"),
        ("Umschaltbar CV und CW", "Umschaltbar CV und CC"),
        ("ActiveSpot Schnelle Heftfunktion", "ActiveSpot – schnelle Heftfunktion"),

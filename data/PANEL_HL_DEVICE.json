@@ -413,5 +413,183 @@
    "Spot Arc",
    "Pulire, lucidare e marcare"
   ]
+ },
+ "ecomig_analog": {
+  "de": [
+   "Punkt und Intervall",
+   "Elektroden Schweissen",
+   "WIG Lift Arc Schweissen",
+   "Elektronische Drossel"
+  ],
+  "fr": [
+   "Point et intervalle",
+   "Soudage à l’électrode",
+   "Soudage TIG Lift Arc",
+   "Self électronique"
+  ],
+  "it": [
+   "Punto e intervallo",
+   "Saldatura ad elettrodo",
+   "Saldatura TIG Lift Arc",
+   "Reattanza elettronica"
+  ]
+ },
+ "ecomig_low": {
+  "de": [
+   "MIS Schweissen",
+   "Punkt und Intervall",
+   "Synergiegesteuert",
+   "MMA Schweissen",
+   "WIG Lift Arc Schweissen"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Point et intervalle",
+   "Commande synergique",
+   "Soudage MMA",
+   "Soudage TIG Lift Arc"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Punto e intervallo",
+   "Comando sinergico",
+   "Saldatura MMA",
+   "Saldatura TIG Lift Arc"
+  ]
+ },
+ "ecomig_2000": {
+  "de": [
+   "MIS Schweissen",
+   "Synergiegesteuert"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Commande synergique"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Comando sinergico"
+  ]
+ },
+ "mms_light": {
+  "de": [
+   "MIS Schweissen im Synergy Modus"
+  ],
+  "fr": [
+   "Soudage MIS en mode Synergy"
+  ],
+  "it": [
+   "Saldatura MIS in modalità Synergy"
+  ]
+ },
+ "mms_ecomig": {
+  "de": [
+   "MIS Schweissen",
+   "Hyper Cold, Root, Force",
+   "WIG Lift Arc",
+   "Elektroden Schweissen",
+   "Job Mode 99 Programme",
+   "MMA Schweissen"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "HyperCold, HyperRoot, HyperForce",
+   "TIG Lift Arc",
+   "Soudage à l'électrode",
+   "Mode Job avec 99 programmes",
+   "Soudage MMA"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "HyperCold, HyperRoot, HyperForce",
+   "TIG Lift Arc",
+   "Saldatura ad elettrodo",
+   "Modalità Job con 99 programmi",
+   "Saldatura MMA"
+  ]
+ },
+ "mms_ecopuls": {
+  "de": [
+   "MIS Schweissen",
+   "Impuls Schweissen",
+   "Doppelpuls Schweissen",
+   "Hyper Force, Cold, Root",
+   "WIG Lift Arc",
+   "Elektroden Schweissen",
+   "Job Mode 99 Programme",
+   "MMA Schweissen"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage pulsé",
+   "Soudage à double pulsation",
+   "HyperForce, HyperCold, HyperRoot",
+   "TIG Lift Arc",
+   "Soudage à l'électrode",
+   "Mode Job avec 99 programmes",
+   "Soudage MMA"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura pulsata",
+   "Saldatura a doppio impulso",
+   "HyperForce, HyperCold, HyperRoot",
+   "TIG Lift Arc",
+   "Saldatura ad elettrodo",
+   "Modalità Job con 99 programmi",
+   "Saldatura MMA"
+  ]
+ },
+ "hypermig_ecomig": {
+  "de": [
+   "MIS Schweissen",
+   "MIG Löten",
+   "Hyper Force, Root, Cold",
+   "MMA Elektroden Schweissen",
+   "WIG Lift Arc",
+   "Job Mode 99 Programme"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Brasage MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Soudage à l'électrode MMA",
+   "TIG Lift Arc",
+   "Mode Job avec 99 programmes"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Brasatura MIG",
+   "HyperForce, HyperRoot, HyperCold",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc",
+   "Modalità Job con 99 programmi"
+  ]
+ },
+ "hypermig_steel": {
+  "de": [
+   "MIS Schweissen",
+   "HyperCold Schweissen",
+   "HyperRoot Schweissen",
+   "HyperForce Schweissen",
+   "WIG Lift Arc Schweissen",
+   "MMA Schweissen"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage HyperCold",
+   "Soudage HyperRoot",
+   "Soudage HyperForce",
+   "Soudage TIG Lift Arc",
+   "Soudage MMA"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura HyperCold",
+   "Saldatura HyperRoot",
+   "Saldatura HyperForce",
+   "Saldatura TIG Lift Arc",
+   "Saldatura MMA"
+  ]
  }
 }

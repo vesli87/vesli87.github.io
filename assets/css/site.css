@@ -269,7 +269,10 @@
   .fp-photo{max-width:340px;width:100%;height:auto;border-radius:6px;display:block;background:#fff}
   .fp-right h5.besond,.fp-ctrls h5.besond{margin-bottom:12px}
   .fp-list{grid-template-columns:1fr !important}
-  .fp-ctrls{margin-top:10px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 22px}
+  /* Panel ohne Herstellertext: nur das Foto, und das soll nicht über die halbe
+     Zeile gezogen werden, als fehlte daneben etwas. */
+  .fp-solo .fp-body{grid-template-columns:auto}
+  .fp-solo .fp-panel{justify-self:start}
   @media(max-width:760px){.fp-body{grid-template-columns:1fr;gap:18px}}
 
   .accgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}

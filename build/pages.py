@@ -73,31 +73,30 @@ def front_html(lang, p):
         out.append(f'<h3 class="fp-section">{e(C.t(lang,"front_h"))}</h3>')
         for pk in panels:
             fp = C.FP[pk]
-            # MAHE fuehrt Besonderheiten auch je Frontpanel. Wo sie vorliegen,
-            # haben sie Vorrang vor dem Familientext aus PANEL_HL.
-            src = C.PANEL_HL_DEVICE.get(pk) or C.PANEL_HL.get(fp.get("hl", pk)) or C.PANEL_HL[pk]
-            ph = src.get(lang) or src["de"]
+            # Unter dem Panelfoto steht nur, was MAHE zu genau diesem Panel
+            # schreibt. Wo der Hersteller nichts veroeffentlicht, steht auch bei
+            # uns nichts – frueher lief das auf einen selbst verfassten Text
+            # hinaus, der bei allen fuenf Theta-Modellen derselbe war.
+            src = C.PANEL_HL_DEVICE.get(pk)
+            ph = (src.get(lang) or src["de"]) if src else []
             if fp.get("img"):
                 media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",
                                   cls="fp-photo", alt=f"{C.BRAND} {fp['n']}", width=340)
             else:
                 media = PANEL_DRAWN["big" if fp.get("big") else "small"]
+            bes = ""
+            if ph:
+                bes = (f'<div class="fp-right">'
+                       f'<h5 class="besond">{e(C.t(lang,"front_bes"))}</h5>'
+                       f'<ul class="besond-list fp-list">'
+                       + "".join(f"<li>{e(x)}</li>" for x in ph)
+                       + "</ul></div>")
             out.append(
-                f'<div class="fp"><h4 class="fp-title">{e(fp["n"])}</h4>'
+                f'<div class="fp{"" if ph else " fp-solo"}">'
+                f'<h4 class="fp-title">{e(fp["n"])}</h4>'
                 f'<div class="fp-body"><div class="fp-panel">{media}</div>'
-                f'<div class="fp-right"><h5 class="besond">{e(C.t(lang,"front_bes"))}</h5>'
-                f'<ul class="besond-list fp-list">'
-                + "".join(f"<li>{e(x)}</li>" for x in ph)
-                + "</ul></div></div></div>"
+                f"{bes}</div></div>"
             )
-        main = C.FP[panels[-1]]
-        out.append(
-            f'<div class="fp-ctrls"><h5 class="besond">{e(C.t(lang,"controls"))}</h5>'
-            f'<ul class="besond-list">'
-            + "".join(f'<li>{e(C.CTRL[c].get(lang) or C.CTRL[c]["de"])}</li>'
-                      for c in main["ctrl"] if c in C.CTRL)
-            + "</ul></div>"
-        )
     elif not hl:
         out.append('<div class="featlist">' + "".join(
             f'<div class="fitem">{C.FEAT[k]["svg"]}<span>{e(C.featLabel(lang, k))}</span></div>'

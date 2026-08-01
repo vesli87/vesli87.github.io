@@ -129,9 +129,7 @@ DLS       = _load("DLS")         # 7 Download-PDFs
 FEAT      = _load("FEAT")        # 19 Verfahrens-Icons
 HL        = _load("HL")
 HL_CLEAN  = _load("HL_CLEAN")
-CTRL      = _load("CTRL")
 FP        = _load("FP")
-PANEL_HL  = _load("PANEL_HL")
 MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
@@ -424,9 +422,11 @@ def matLabel(lang, m):
 # wo der Hersteller keines geliefert hat, bleibt der gezeichnete Ersatz oder es
 # werden nur die Besonderheiten gezeigt - erfunden wird nichts.
 PANELS = {
-    "hypermig-x":        ["hypermig_ex", "hypermig_hx", "hypermig_sx"],
-    "ecomig":            ["ecomig_analog", "ecomig_low"],
-    "mms":               ["mms_panel"],
+    # Reihenfolge wie auf der Herstellerseite
+    "hypermig-x":        ["hypermig_ecomig", "hypermig_ex", "hypermig_hx",
+                          "hypermig_steel", "hypermig_sx"],
+    "ecomig":            ["ecomig_analog", "ecomig_low", "ecomig_2000"],
+    "mms":               ["mms_light", "mms_ecomig", "mms_ecopuls"],
     "omega-ax":          ["omega_pro", "omega_syn"],
     "beta-dx":           ["betadx_pro", "betadx_syn"],
     "beta-digital":      ["betadig_profi", "betadig_syn"],
@@ -451,14 +451,11 @@ PANELS = {
 
 
 def fpAssign(p):
-    if p["id"] in PANELS:
-        return PANELS[p["id"]]
-    # Fallback auf die gezeichneten Familienpanels, solange kein Foto vorliegt
-    if p["sub"] == "WIG / TIG":       return ["wig_acdc" if re.search(r"ac/dc", p["vt"], re.I) else "wig"]
-    if p["sub"] == "Plasma TIG":      return ["wig"]
-    if p["sub"] == "MMA":             return ["mma"]
-    if p["cat"] == "plasmaschneiden": return ["theta"]
-    return []
+    # Frueher fielen Geraete ohne eigenes Panel auf ein gezeichnetes
+    # Familienpanel zurueck. Das hat der PlasmaTIG das Fronteingabesystem der
+    # HyperTIG DX angehaengt – ein anderes Geraet. Wer kein Panel hat, zeigt
+    # keines.
+    return PANELS.get(p["id"], [])
 
 
 def products_of(cat_id, sub=None):

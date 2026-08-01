@@ -832,93 +832,108 @@
    "techdata": {
     "de": [
      {
-      "title": "EcoMIG",
+      "title": "EcoMIG Digital",
       "note": "",
       "columns": [
+       "2000",
        "3000"
       ],
       "rows": [
        {
         "label": "Upgrade",
         "values": {
+         "2000": "–",
          "3000": "–"
         }
        },
        {
         "label": "Netzspannung",
         "values": {
+         "2000": "230V, 50/60Hz",
          "3000": "3x400V, 50/60Hz"
         }
        },
        {
         "label": "Netzabsicherung",
         "values": {
+         "2000": "16A",
          "3000": "16A"
         }
        },
        {
         "label": "Leerlaufspannung",
         "values": {
+         "2000": "55V",
          "3000": "76V"
         }
        },
        {
         "label": "Effektiver Eingangsstrom",
         "values": {
+         "2000": "15A",
          "3000": "12,5A"
         }
        },
        {
         "label": "Schweissstrombereich",
         "values": {
-         "3000": "10 - 300A"
+         "2000": "10 - 200A",
+         "3000": "10-300A"
         }
        },
        {
         "label": "Einschaltdauer bei max. Strom @40C",
         "values": {
-         "3000": "40% / 300A"
+         "2000": "20%/200A",
+         "3000": "30% - 300A"
         }
        },
        {
         "label": "Strom bei 60% ED @40C",
         "values": {
+         "2000": "140A",
          "3000": "240A"
         }
        },
        {
         "label": "Strom bei 100% ED @40C",
         "values": {
+         "2000": "120A",
          "3000": "180A"
         }
        },
        {
         "label": "Masse (HxBxL)",
         "values": {
-         "3000": "860x430x900mm"
+         "2000": "635x400x880mm",
+         "3000": "635x400x880mm"
         }
        },
        {
         "label": "Gewicht",
         "values": {
-         "3000": "48kg"
+         "2000": "32kg",
+         "3000": "34kg"
         }
        },
        {
         "label": "Schutzklasse",
         "values": {
+         "2000": "IP23",
          "3000": "IP23"
         }
        },
        {
         "label": "Konformitätszeichen",
         "values": {
+         "2000": "CE",
          "3000": "CE"
         }
        },
        {
         "label": "Sicherungsklasse",
         "values": {
+         "2000": "S",
          "3000": "S"
         }
        }
@@ -927,93 +942,108 @@
     ],
     "fr": [
      {
-      "title": "EcoMIG",
+      "title": "EcoMIG Digital",
       "note": "",
       "columns": [
+       "2000",
        "3000"
       ],
       "rows": [
        {
         "label": "Upgrade",
         "values": {
+         "2000": "–",
          "3000": "–"
         }
        },
        {
         "label": "Tension secteur",
         "values": {
+         "2000": "230V, 50/60Hz",
          "3000": "3x400V, 50/60Hz"
         }
        },
        {
         "label": "Fusible secteur",
         "values": {
+         "2000": "16A",
          "3000": "16A"
         }
        },
        {
         "label": "Tension à vide",
         "values": {
+         "2000": "55V",
          "3000": "76V"
         }
        },
        {
         "label": "Courant d’entrée effectif",
         "values": {
+         "2000": "15A",
          "3000": "12,5A"
         }
        },
        {
         "label": "Plage de courant de soudage",
         "values": {
-         "3000": "10 - 300A"
+         "2000": "10 - 200A",
+         "3000": "10-300A"
         }
        },
        {
         "label": "Facteur de marche au courant max. @40C",
         "values": {
-         "3000": "40% / 300A"
+         "2000": "20%/200A",
+         "3000": "30% - 300A"
         }
        },
        {
         "label": "Courant à 60% de facteur de marche @40C",
         "values": {
+         "2000": "140A",
          "3000": "240A"
         }
        },
        {
         "label": "Courant à 100% de facteur de marche @40C",
         "values": {
+         "2000": "120A",
          "3000": "180A"
         }
        },
        {
         "label": "Dimensions (H×l×P)",
         "values": {
-         "3000": "860x430x900mm"
+         "2000": "635x400x880mm",
+         "3000": "635x400x880mm"
         }
        },
        {
         "label": "Poids",
         "values": {
-         "3000": "48kg"
+         "2000": "32kg",
+         "3000": "34kg"
         }
        },
        {
         "label": "Indice de protection",
         "values": {
+         "2000": "IP23",
          "3000": "IP23"
         }
        },
        {
         "label": "Marquage de conformité",
         "values": {
+         "2000": "CE",
          "3000": "CE"
         }
        },
        {
         "label": "Classe de sécurité",
         "values": {
+         "2000": "S",
          "3000": "S"
         }
        }
@@ -1022,93 +1052,108 @@
     ],
     "it": [
      {
-      "title": "EcoMIG",
+      "title": "EcoMIG Digital",
       "note": "",
       "columns": [
+       "2000",
        "3000"
       ],
       "rows": [
        {
         "label": "Upgrade",
         "values": {
+         "2000": "–",
          "3000": "–"
         }
        },
        {
         "label": "Tensione di rete",
         "values": {
+         "2000": "230V, 50/60Hz",
          "3000": "3x400V, 50/60Hz"
         }
        },
        {
         "label": "Fusibile di rete",
         "values": {
+         "2000": "16A",
          "3000": "16A"
         }
        },
        {
         "label": "Tensione a vuoto",
         "values": {
+         "2000": "55V",
          "3000": "76V"
         }
        },
        {
         "label": "Corrente d’ingresso effettiva",
         "values": {
+         "2000": "15A",
          "3000": "12,5A"
         }
        },
        {
         "label": "Campo di corrente di saldatura",
         "values": {
-         "3000": "10 - 300A"
+         "2000": "10 - 200A",
+         "3000": "10-300A"
         }
        },
        {
         "label": "Ciclo di lavoro alla corrente max. @40C",
         "values": {
-         "3000": "40% / 300A"
+         "2000": "20%/200A",
+         "3000": "30% - 300A"
         }
        },
        {
         "label": "Corrente al 60% di ciclo di lavoro @40C",
         "values": {
+         "2000": "140A",
          "3000": "240A"
         }
        },
        {
         "label": "Corrente al 100% di ciclo di lavoro @40C",
         "values": {
+         "2000": "120A",
          "3000": "180A"
         }
        },
        {
         "label": "Dimensioni (A×L×P)",
         "values": {
-         "3000": "860x430x900mm"
+         "2000": "635x400x880mm",
+         "3000": "635x400x880mm"
         }
        },
        {
         "label": "Peso",
         "values": {
-         "3000": "48kg"
+         "2000": "32kg",
+         "3000": "34kg"
         }
        },
        {
         "label": "Grado di protezione",
         "values": {
+         "2000": "IP23",
          "3000": "IP23"
         }
        },
        {
         "label": "Marchio di conformità",
         "values": {
+         "2000": "CE",
          "3000": "CE"
         }
        },
        {
         "label": "Classe di sicurezza",
         "values": {
+         "2000": "S",
          "3000": "S"
         }
        }

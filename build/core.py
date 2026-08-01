@@ -490,13 +490,15 @@ def slugify(s):
 SEG = {
     "de": {"root": "",   "products": "produkte", "search": "suche",     "processes": "verfahren",
            "downloads": "downloads", "contact": "kontakt", "faq": "faq",
-           "imprint": "impressum", "privacy": "datenschutz"},
+           "imprint": "impressum", "privacy": "datenschutz", "terms": "agb"},
     "fr": {"root": "fr", "products": "produits", "search": "recherche", "processes": "procedes",
            "downloads": "telechargements", "contact": "contact", "faq": "questions-frequentes",
-           "imprint": "mentions-legales", "privacy": "protection-des-donnees"},
+           "imprint": "mentions-legales", "privacy": "protection-des-donnees",
+           "terms": "conditions-generales"},
     "it": {"root": "it", "products": "prodotti", "search": "ricerca",   "processes": "processi",
            "downloads": "download", "contact": "contatto", "faq": "domande-frequenti",
-           "imprint": "note-legali", "privacy": "protezione-dati"},
+           "imprint": "note-legali", "privacy": "protezione-dati",
+           "terms": "condizioni-generali"},
 }
 
 CAT_SLUG = {

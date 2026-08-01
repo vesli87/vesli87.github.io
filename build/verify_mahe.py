@@ -134,8 +134,12 @@ def specs():
                         bad += 1
                     elif rule != "leer → –":
                         deviations.append(f"{pid}/{key}: {rule}")
-            print(f"  ok   {pid + ' -> ' + key:44} {len(raw['rows']):>2} Zeilen "
-                  f"× {len(cols)} Varianten, {n_cell} Zellen")
+            # Der Seitentitel steht bewusst daneben: der Slug luegt gelegentlich.
+            # mahe-online.de/ecomig/ heisst „EcoPuls" – wer nur auf den Slug
+            # schaut, haengt einem Geraet die Daten eines anderen an.
+            print(f"  ok   {p['name']:26} <- {key:22} "
+                  f"[{raw.get('seite', '?')[:24]:24}] "
+                  f"{len(raw['rows']):>2}×{len(cols)}, {n_cell} Zellen")
     return bad, sorted(set(deviations))
 
 

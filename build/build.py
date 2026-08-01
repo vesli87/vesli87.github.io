@@ -426,8 +426,11 @@ def main():
             u, h = fn(lang)
             write(u, h); entries.append((u, C.alternates("page", key=key), prio, "monthly"))
         u, h = PG.page_search(lang); write(u, h)                       # noindex → nicht in sitemap
-        for kind in ("imprint", "privacy"):
-            u, h = PG.page_legal(lang, kind); write(u, h)              # noindex
+        for kind in ("imprint", "privacy", "terms"):
+            u, h = PG.page_legal(lang, kind)
+            write(u, h)
+            if "noindex" not in PG.LEGAL[kind][2]:
+                entries.append((u, C.alternates("page", key=kind), "0.3", "yearly"))
 
         (C.DATA / f"search-{lang}.json").write_text(
             json.dumps(search_index(lang), ensure_ascii=False, separators=(",", ":")), "utf-8")

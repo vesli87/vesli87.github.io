@@ -1,7 +1,8 @@
 {
  "_": "Produkt -> Tabelle(n) in build/mahe_specs.json. Mehrere Eintraege = mehrere Tabellen, wie MAHE sie auf der Geraeteseite zeigt. Produkte ohne Eintrag behalten die kurze Merkmalsliste aus P.json.",
+ "_achtung": "Der Schluessel ist der MAHE-Seitenslug, nicht der Geraetename - und die beiden decken sich nicht immer. Die Seite mahe-online.de/ecomig/ heisst 'EcoPuls'; das Geraet EcoMIG Digital / Analog steht auf /d-mig/. Vor jeder Zuordnung die H1 der Seite pruefen.",
  "hypermig-x": ["hypermig"],
- "ecomig": ["ecomig"],
+ "ecomig": ["d-mig"],
  "mms": ["mms"],
  "omega-ax": ["omega-ac-dc-2"],
  "beta-dx": ["beta-dx"],

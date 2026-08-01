@@ -1,8 +1,8 @@
 # CLAUDE.md — Arbeitsanweisung für dieses Repository
 
 Dies ist die Website **VES-TECH Swiss** — ein dreisprachiger Katalog für das
-MAHE-Schweisstechnik-Programm. Sie läuft auf `https://vesli87.github.io/`;
-die Domain `www.ves-tech.ch` ist noch nicht registriert.
+MAHE-Schweisstechnik-Programm. Sie läuft unter `https://www.ves-tech.ch/`;
+`vesli87.github.io` leitet per 301 dorthin weiter.
 
 ## Zuerst lesen
 
@@ -31,7 +31,8 @@ Bearbeitet werden also:
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |
 | Übersetzung eines UI-Textes | `data/UI.json` |
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |
-| Seitentitel, meta description, FAQ, Impressum, Datenschutz | `build/i18n_extra.json` |
+| Seitentitel, meta description, FAQ | `build/i18n_extra.json` |
+| AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |
 | Search-Console-/Bing-Verifizierung | `build/core.py` → `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` |
 | Aussehen | `assets/css/site.css` |

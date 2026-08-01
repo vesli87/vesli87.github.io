@@ -25,7 +25,7 @@
    "fr": "Déclaration de conformité",
    "it": "Dichiarazione di conformità"
   },
-  "u": "http://mahe-online.de/welding/pdf/de/Mahe_Konformations_Zertifikat.pdf"
+  "u": "https://mahe-online.de/welding/pdf/de/Mahe_Konformations_Zertifikat.pdf"
  },
  {
   "k": "R1",
@@ -39,7 +39,7 @@
    "fr": "HyClean Rapid R1",
    "it": "HyClean Rapid R1"
   },
-  "u": "http://mahe-online.de/welding/pdf/de/HyCleanRapid_R1_DE.pdf"
+  "u": "https://mahe-online.de/welding/pdf/de/HyCleanRapid_R1_DE.pdf"
  },
  {
   "k": "RP1",
@@ -53,7 +53,7 @@
    "fr": "HyClean RP1",
    "it": "HyClean RP1"
   },
-  "u": "http://mahe-online.de/welding/pdf/de/HyClean_RP1_DE.pdf"
+  "u": "https://mahe-online.de/welding/pdf/de/HyClean_RP1_DE.pdf"
  },
  {
   "k": "P1",
@@ -67,7 +67,7 @@
    "fr": "HyCleanPolish P1",
    "it": "HyCleanPolish P1"
   },
-  "u": "http://mahe-online.de/welding/pdf/de/HyCleanPolish_%20P1_DE.pdf"
+  "u": "https://mahe-online.de/welding/pdf/de/HyCleanPolish_%20P1_DE.pdf"
  },
  {
   "k": "M1",
@@ -81,7 +81,7 @@
    "fr": "Électrolyte de marquage M1",
    "it": "Elettrolita di marcatura M1"
   },
-  "u": "http://mahe-online.de/welding/pdf/de/Signierelektrolyt_M1_DE.pdf"
+  "u": "https://mahe-online.de/welding/pdf/de/Signierelektrolyt_M1_DE.pdf"
  },
  {
   "k": "N1",
@@ -95,6 +95,6 @@
    "fr": "Neutralyt N1",
    "it": "Neutralyt N1"
   },
-  "u": "http://mahe-online.de/welding/pdf/de/Neutralyt_N1_DE.pdf"
+  "u": "https://mahe-online.de/welding/pdf/de/Neutralyt_N1_DE.pdf"
  }
 ]

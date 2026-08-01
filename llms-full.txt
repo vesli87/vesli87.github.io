@@ -49,24 +49,24 @@ Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.
 Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
 Ausstattung: Verfahren: MIG/MAG; Antrieb: 4-Rollen; Ausführung: Kompakt/fahrbar; Bedienung: Digital oder Analog.
 
-Technische Daten – EcoMIG:
+Technische Daten – EcoMIG Digital:
 
-| Modell | 3000 |
-| --- | --- |
-| Upgrade | – |
-| Netzspannung | 3x400V, 50/60Hz |
-| Netzabsicherung | 16A |
-| Leerlaufspannung | 76V |
-| Effektiver Eingangsstrom | 12,5A |
-| Schweissstrombereich | 10 - 300A |
-| Einschaltdauer bei max. Strom @40C | 40% / 300A |
-| Strom bei 60% ED @40C | 240A |
-| Strom bei 100% ED @40C | 180A |
-| Masse (HxBxL) | 860x430x900mm |
-| Gewicht | 48kg |
-| Schutzklasse | IP23 |
-| Konformitätszeichen | CE |
-| Sicherungsklasse | S |
+| Modell | 2000 | 3000 |
+| --- | --- | --- |
+| Upgrade | – | – |
+| Netzspannung | 230V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A | 16A |
+| Leerlaufspannung | 55V | 76V |
+| Effektiver Eingangsstrom | 15A | 12,5A |
+| Schweissstrombereich | 10 - 200A | 10-300A |
+| Einschaltdauer bei max. Strom @40C | 20%/200A | 30% - 300A |
+| Strom bei 60% ED @40C | 140A | 240A |
+| Strom bei 100% ED @40C | 120A | 180A |
+| Masse (HxBxL) | 635x400x880mm | 635x400x880mm |
+| Gewicht | 32kg | 34kg |
+| Schutzklasse | IP23 | IP23 |
+| Konformitätszeichen | CE | CE |
+| Sicherungsklasse | S | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 30, MPF 02, WK 200.

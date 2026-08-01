@@ -540,21 +540,34 @@ def page_search(lang):
                            robots="noindex,follow")
 
 
+# Rechtsseiten: URL-Schluessel -> Text-Praefix in i18n_extra -> nav-Schluessel.
+# Das Impressum darf indexiert werden: es traegt Name, Adresse und Telefonnummer
+# und ist damit ein Beleg fuer die lokale Suche. AGB und Datenschutzerklaerung
+# bleiben noindex – sie gehoeren nicht in die Suchergebnisse.
+LEGAL = {
+    "imprint": ("impressum", "nav_impressum", "index,follow"),
+    "privacy": ("datenschutz", "nav_datenschutz", "noindex,follow"),
+    "terms":   ("agb", "nav_agb", "noindex,follow"),
+}
+
+
 def page_legal(lang, kind):
-    key = "imprint" if kind == "imprint" else "privacy"
-    url, alts = C.u_page(lang, key), C.alternates("page", key=key)
-    tkey = "impressum" if kind == "imprint" else "datenschutz"
-    blocks = C.EX[lang][f"{tkey}_body"]
-    nav = C.t(lang, "nav_impressum") if kind == "imprint" else C.t(lang, "nav_datenschutz")
-    secs = "".join(f"<section><h2>{e(h)}</h2><p>{b}</p></section>" for h, b in blocks)
+    tkey, navkey, robots = LEGAL[kind]
+    url, alts = C.u_page(lang, kind), C.alternates("page", key=kind)
+    nav = C.t(lang, navkey)
+    # Der Text bringt sein eigenes <p>/<ul> mit – Rechtstexte brauchen Listen,
+    # und eine Liste in einem <p> waere kaputtes HTML.
+    secs = "".join(
+        f"<section><h2>{e(h)}</h2>{b if b.lstrip().startswith('<') else '<p>' + b + '</p>'}</section>"
+        for h, b in C.EX[lang][f"{tkey}_body"])
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (nav, None)],
                    h1=C.t(lang, f"{tkey}_h1"), desc="")
             + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')
-    ld = [R.ld_org(), R.ld_webpage(lang, url, C.t(lang, f"{tkey}_title"), C.t(lang, f"{tkey}_desc")),
+    title, desc = C.t(lang, f"{tkey}_title"), C.t(lang, f"{tkey}_desc")
+    ld = [R.ld_org(), R.ld_webpage(lang, url, title, desc),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)), (nav, url)])]
-    return url, R.document(lang, title=C.t(lang, f"{tkey}_title"), desc=C.t(lang, f"{tkey}_desc"),
-                           url=url, alts=alts, jsonld_blocks=ld, body=body,
-                           robots="noindex,follow")
+    return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
+                           jsonld_blocks=ld, body=body, robots=robots)
 
 
 def page_404(lang=C.DEFAULT_LANG):

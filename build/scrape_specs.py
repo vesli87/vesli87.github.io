@@ -32,14 +32,22 @@ Ergebnis: build/mahe_specs.json
     { "hypertig-ax": {
         "table_id": "12146",
         "title": "HyperTIG AX",
+        "seite": "HyperTIG AX",              # H1 der MAHE-Seite
         "columns": [{"key": "240", "title": "250"}, …],
         "rows": [{"model": "Netzabsicherung", "240": "16A", …}, …] } }
 
 Welche Seite zu welchem Produkt gehoert, entscheidet die Zuordnung in
-data/SPECTAB.json — nicht dieses Skript.
+data/SPECMAP.json — nicht dieses Skript.
+
+`seite` steht dort, weil weder der Slug noch der Tabellentitel verlaesslich
+sagen, um welches Geraet es geht: mahe-online.de/ecomig/ heisst „EcoPuls", das
+Geraet EcoMIG Digital / Analog steht auf /d-mig/ — und die Tabelle auf der
+EcoPuls-Seite traegt trotzdem den Titel „EcoMIG". Nur die H1 sagt die Wahrheit,
+und verify_mahe.py zeigt sie neben unserem Produktnamen an.
 """
 
 import base64
+import html as htmlmod
 import json
 import pathlib
 import re
@@ -99,6 +107,9 @@ def main():
     for f in files:
         slug = f.stem
         html = f.read_text("utf-8", errors="replace")
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S)
+        seite = re.sub(r"\s+", " ", htmlmod.unescape(
+            re.sub(r"<[^>]+>", "", m.group(1)))).strip() if m else ""
         cfgs = configs(html)
         if not cfgs:
             if "data-footable_id" in html:
@@ -139,9 +150,9 @@ def main():
 
             key = slug if len(cfgs) == 1 else f"{slug}#{tid}"
             out[key] = {"table_id": tid, "title": str(cfg.get("title", "")).strip(),
-                        "columns": cols, "rows": rows}
+                        "seite": seite, "columns": cols, "rows": rows}
             titles = ", ".join(c["title"] for c in cols)
-            print(f"  {key:26} {len(rows):>2} Zeilen × {len(cols)}: {titles}")
+            print(f"  {key:22} [{seite[:22]:22}] {len(rows):>2} Zeilen × {len(cols)}: {titles}")
 
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1), "utf-8")
     print(f"\n{len(out)} Tabellen -> {OUT.relative_to(C.ROOT)}")

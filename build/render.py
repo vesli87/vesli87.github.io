@@ -495,6 +495,7 @@ def footer(lang):
     <div class="fbar">
       <span>© 2026 {e(C.t(lang,'site_name'))} · Produktdaten &amp; Bilder: MAHE GmbH ·
         <a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a> ·
+        <a href="{e(C.u_page(lang,'terms'))}">{e(C.t(lang,'nav_agb'))}</a> ·
         <a href="{e(C.u_page(lang,'privacy'))}">{e(C.t(lang,'nav_datenschutz'))}</a></span>
     </div>
   </div>

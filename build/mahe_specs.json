@@ -2,6 +2,7 @@
  "beta-digital-synergy": {
   "table_id": "8808",
   "title": "Beta digital SYN",
+  "seite": "",
   "columns": [
    {
     "key": "200",
@@ -100,6 +101,7 @@
  "beta-digital": {
   "table_id": "8806",
   "title": "Beta digital",
+  "seite": "Beta digital",
   "columns": [
    {
     "key": "240",
@@ -186,6 +188,7 @@
  "beta-dx": {
   "table_id": "12264",
   "title": "Beta DX",
+  "seite": "Beta DX",
   "columns": [
    {
     "key": "200",
@@ -272,6 +275,7 @@
  "beta-omega-cwk-200": {
   "table_id": "8807",
   "title": "Beta digital CWK",
+  "seite": "Beta digital / Omega CWK",
   "columns": [
    {
     "key": "200_cwk",
@@ -358,6 +362,7 @@
  "cmig": {
   "table_id": "8802",
   "title": "C-MIG",
+  "seite": "c-MIG",
   "columns": [
    {
     "key": "3000",
@@ -498,6 +503,7 @@
  "d-mig": {
   "table_id": "11359",
   "title": "EcoMIG Digital",
+  "seite": "EcoMIG Digital / Analog",
   "columns": [
    {
     "key": "3000",
@@ -584,6 +590,7 @@
  "delta-digital-ds": {
   "table_id": "8814",
   "title": "Delta Digital DS",
+  "seite": "Delta Digital DS",
   "columns": [
    {
     "key": "4000",
@@ -688,6 +695,7 @@
  "delta-digital": {
   "table_id": "8813",
   "title": "Delta Digital",
+  "seite": "Delta digital",
   "columns": [
    {
     "key": "2000",
@@ -828,6 +836,7 @@
  "delta": {
   "table_id": "8812",
   "title": "Delta",
+  "seite": "Delta",
   "columns": [
    {
     "key": "1800",
@@ -896,6 +905,7 @@
  "ecomig": {
   "table_id": "8784",
   "title": "EcoMIG",
+  "seite": "EcoPuls",
   "columns": [
    {
     "key": "3000",
@@ -964,6 +974,7 @@
  "ecopulse": {
   "table_id": "9614",
   "title": "EcoPulse",
+  "seite": "EcoPuls",
   "columns": [
    {
     "key": "3000",
@@ -1060,6 +1071,7 @@
  "gamma-hvs": {
   "table_id": "8816",
   "title": "Gamma HVS",
+  "seite": "Gamma HVS",
   "columns": [
    {
     "key": "840_hvs",
@@ -1164,6 +1176,7 @@
  "gamma": {
   "table_id": "8815",
   "title": "Gamma",
+  "seite": "Gamma",
   "columns": [
    {
     "key": "840",
@@ -1304,6 +1317,7 @@
  "hcs-1-signiergerat": {
   "table_id": "10209",
   "title": "Signiergerät HCS1",
+  "seite": "HCS 1",
   "columns": [
    {
     "key": "hyper_cleaner_st",
@@ -1360,6 +1374,7 @@
  "hypercleaner-ct-200": {
   "table_id": "8820",
   "title": "HyperCleaner ST",
+  "seite": "HyperCleaner CT 200",
   "columns": [
    {
     "key": "hyper_cleaner_st",
@@ -1416,6 +1431,7 @@
  "hypercleaner-st-plus": {
   "table_id": "8818",
   "title": "HyperCleaner STplus",
+  "seite": "HyperCleaner ST Plus",
   "columns": [
    {
     "key": "hyper_cleaner_st_plus",
@@ -1472,6 +1488,7 @@
  "hypercleaner-st-speed": {
   "table_id": "8819",
   "title": "HyperCleaner STspeed",
+  "seite": "HyperCleaner ST Speed",
   "columns": [
    {
     "key": "hyper_cleaner_st_speed",
@@ -1528,6 +1545,7 @@
  "hypercleaner-st": {
   "table_id": "8820",
   "title": "HyperCleaner ST",
+  "seite": "HyperCleaner ST",
   "columns": [
    {
     "key": "hyper_cleaner_st",
@@ -1584,6 +1602,7 @@
  "hypermig": {
   "table_id": "9183",
   "title": "HyperMIG CWK",
+  "seite": "HyperMIG X",
   "columns": [
    {
     "key": "300",
@@ -1778,6 +1797,7 @@
  "hypertig-ax": {
   "table_id": "12146",
   "title": "HyperTIG AX",
+  "seite": "HyperTIG AX",
   "columns": [
    {
     "key": "240",
@@ -1882,6 +1902,7 @@
  "hypertig-dc-cwk": {
   "table_id": "8805",
   "title": "HyperTIG CWK",
+  "seite": "HyperTIG DC CWK",
   "columns": [
    {
     "key": "240",
@@ -2076,6 +2097,7 @@
  "hypertig-dx": {
   "table_id": "12145",
   "title": "HyperTIG DX",
+  "seite": "HyperTIG DX",
   "columns": [
    {
     "key": "240",
@@ -2198,6 +2220,7 @@
  "hypertig": {
   "table_id": "9192",
   "title": "HyperTIG AC/DC CWK",
+  "seite": "HyperTIG AC/DC CWK",
   "columns": [
    {
     "key": "450",
@@ -2320,6 +2343,7 @@
  "i-1600": {
   "table_id": "8811",
   "title": "i-1600",
+  "seite": "i-1600",
   "columns": [
    {
     "key": "1600",
@@ -2388,6 +2412,7 @@
  "i-tig": {
   "table_id": "8810",
   "title": "i-TIG",
+  "seite": "i-TIG 1600",
   "columns": [
    {
     "key": "i_tig_1600",
@@ -2456,6 +2481,7 @@
  "minicleaner-2": {
   "table_id": "8821",
   "title": "MiniCleaner",
+  "seite": "MiniCleaner",
   "columns": [
    {
     "key": "mini_cleaner",
@@ -2508,6 +2534,7 @@
  "minicleaner": {
   "table_id": "8821",
   "title": "MiniCleaner",
+  "seite": "MiniCleaner",
   "columns": [
    {
     "key": "mini_cleaner",
@@ -2560,6 +2587,7 @@
  "mlf100": {
   "table_id": "12278",
   "title": "MLF100",
+  "seite": "MLF100",
   "columns": [
    {
     "key": "hyper_cleaner_st",
@@ -2604,6 +2632,7 @@
  "mms": {
   "table_id": "8800",
   "title": "MMS",
+  "seite": "Mobile Mig Synergy",
   "columns": [
    {
     "key": "2000_c",
@@ -2726,6 +2755,7 @@
  "omega-ac-dc-2": {
   "table_id": "9186",
   "title": "Omega AX",
+  "seite": "Omega AX",
   "columns": [
    {
     "key": "200",
@@ -2812,6 +2842,7 @@
  "omega-cwk-200-2": {
   "table_id": "8812",
   "title": "Delta",
+  "seite": "Omega CWK",
   "columns": [
    {
     "key": "1800",
@@ -2880,6 +2911,7 @@
  "plasma-tig": {
   "table_id": "8809",
   "title": "Plasma TIG",
+  "seite": "Plasma TIG",
   "columns": [
    {
     "key": "20",
@@ -3020,6 +3052,7 @@
  "theta-120-aut": {
   "table_id": "8824",
   "title": "Theta 120 HSC",
+  "seite": "Theta 120 AUT",
   "columns": [
    {
     "key": "120",
@@ -3096,6 +3129,7 @@
  "theta-120-hsc": {
   "table_id": "8824",
   "title": "Theta 120 HSC",
+  "seite": "Theta 120 HSC",
   "columns": [
    {
     "key": "120",
@@ -3172,6 +3206,7 @@
  "theta-160": {
   "table_id": "11462",
   "title": "Theta 180 HSC",
+  "seite": "Theta 180 HSC",
   "columns": [
    {
     "key": "120",
@@ -3244,6 +3279,7 @@
  "theta-40": {
   "table_id": "8822",
   "title": "Theta 40",
+  "seite": "Theta 40",
   "columns": [
    {
     "key": "40",
@@ -3320,6 +3356,7 @@
  "theta-60-aut": {
   "table_id": "8823",
   "title": "Theta 60 HSC",
+  "seite": "Theta 60 AUT",
   "columns": [
    {
     "key": "60",
@@ -3396,6 +3433,7 @@
  "theta-60-hsc": {
   "table_id": "8823",
   "title": "Theta 60 HSC",
+  "seite": "Theta 60 HSC",
   "columns": [
    {
     "key": "60",

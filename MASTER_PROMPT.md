@@ -86,7 +86,7 @@ Der Sprachumschalter verlinkt **immer** auf dieselbe Seite in der anderen Sprach
 
 | Datei | Inhalt |
 |---|---|
-| `P.json` | 52 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` |
+| `P.json` | 52 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
 | `CATS.json` | 4 Kategorien mit `subs[]` und Icon-Key `pk` |
 | `UI.json` | 88 UI-Strings × de/fr/it |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
@@ -96,6 +96,9 @@ Der Sprachumschalter verlinkt **immer** auf dieselbe Seite in der anderen Sprach
 | `PANEL_HL_DEVICE.json` | **Besonderheiten je Frontpanel**, wörtlich von MAHE aus dem Tab Fronteingabesysteme, DE/FR/IT |
 | `HL_DEVICE.json` | **Besonderheiten je Gerät**, wörtlich von mahe-online.de, DE/FR/IT — hat Vorrang vor allem anderen |
 | `HL/HL_CLEAN/PANEL_HL.json` | Besonderheiten als Rückfall (Familie / Cleaner / Frontpanel) |
+| `SPECMAP.json` | **Technische Daten**: Produkt → Tabelle(n) in `build/mahe_specs.json` |
+| `SPECROW.json` | Zeilenbeschriftungen dieser Tabellen, DE → FR/IT |
+| `SPECNOTE.json` | Fussnoten unter den Tabellen (der Stern in `450*`), DE/FR/IT |
 | `FP.json`, `CTRL.json`, `PANEL_DRAWN.json` | Fronteingabesysteme, Bedienelemente, gezeichnete Panels |
 | `products.json` | **generiert** — öffentlicher, maschinenlesbarer Katalog |
 | `search-{de,fr,it}.json` | **generiert** — Suchindex fürs Frontend |
@@ -264,6 +267,18 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
     wird zu `ss` — ein fremder Fehler sieht auf unserer Seite aus wie unserer.
 11. Liefert MAHE einen Screenshot mit „Besonderheiten", wird der Text **wortwörtlich**
     in `HL`/`HL_CLEAN`/`PANEL_HL` übernommen, in allen drei Sprachen.
+12. **Technische Daten kommen ebenfalls von MAHE** und stehen als Tabelle mit
+    einer Spalte je Modellvariante auf der Seite — genau so, wie der Hersteller
+    sie zeigt. `build/scrape_specs.py` holt sie, `data/SPECMAP.json` ordnet sie
+    einem Produkt zu, `build/verify_mahe.py` vergleicht anschliessend **jede
+    einzelne Zelle** mit der Herstellerseite. Zwei Fallen dabei:
+    * Der Spaltenschlüssel ist nicht die Spaltenüberschrift. Bei der
+      HyperTIG AX heisst die erste Variantenspalte intern `240`, angezeigt
+      wird `250`. Wer nur die AJAX-Daten nimmt, schreibt die falsche
+      Modellnummer an die Spalte.
+    * Die AJAX-Antwort enthält Spalten, die MAHE gar nicht zeigt — Reste
+      früherer Baureihen. Übernommen wird nur, was in der Konfiguration
+      `visible` ist.
 
 ## 14a. Eigene Domain und GitHub Pages
 

@@ -111,7 +111,11 @@ def search_index(lang):
     for p in C.P:
         cat = C.CAT_BY_ID[p["cat"]]
         m = R.MANIFEST.get(C.full_img(p["img"]))
-        specs_txt = " ".join(f"{C.trK(lang, k)} {C.trV(lang, v)}" for k, v in p["specs"].items())
+        specs_txt = " ".join(f"{C.trK(lang, k)} {C.trV(lang, v)}"
+                             for k, v in C.specRest(p).items())
+        for t in C.specTables(lang, p):
+            specs_txt += " " + " ".join(" ".join(r) for r in t["rows"])
+            specs_txt += " " + " ".join(t["cols"])
         hl = C.highlightsOf(lang, p) or []
         feats = [C.featLabel(lang, k) for k in C.deriveFeat(p)]
         mats = [C.matLabel(lang, m_) for m_ in C.matOf(p)]
@@ -178,8 +182,15 @@ def products_json():
             "subcategory": {l: C.subT(l, p["sub"]) for l in C.LANGS},
             "description": {l: C.pDesc(l, p) for l in C.LANGS},
             "highlights": {l: C.highlightsOf(l, p) or [] for l in C.LANGS},
-            "specs": {l: {C.trK(l, k): C.trV(l, v) for k, v in p["specs"].items()}
+            "specs": {l: {C.trK(l, k): C.trV(l, v) for k, v in C.specRest(p).items()}
                       for l in C.LANGS},
+            # Technische Daten wie beim Hersteller: Spalten = Modellvarianten
+            "techdata": {l: [{"title": t["title"], "note": t["note"],
+                              "columns": t["cols"],
+                              "rows": [{"label": r[0],
+                                        "values": dict(zip(t["cols"], r[1:]))}
+                                       for r in t["rows"]]}
+                             for t in C.specTables(l, p)] for l in C.LANGS},
             "materials": [C.matLabel("de", m) for m in C.matOf(p)],
             "price": {"model": "on-request", "currency": "CHF",
                       "note": {l: C.t(l, "poa") for l in C.LANGS}},
@@ -328,8 +339,21 @@ def llms_full():
             hl = C.highlightsOf(L, p)
             if hl:
                 out.append("Besonderheiten: " + "; ".join(hl) + ".")
-            out.append("Technische Daten: " + "; ".join(
-                f"{C.trK(L,k)}: {C.trV(L,v)}" for k, v in p["specs"].items()) + ".")
+            rest = C.specRest(p)
+            if rest:
+                out.append("Ausstattung: " + "; ".join(
+                    f"{C.trK(L,k)}: {C.trV(L,v)}" for k, v in rest.items()) + ".")
+            # Als Markdown-Tabelle – die lesen Sprachmodelle spaltenrichtig,
+            # eine Aufzaehlung wuerde die Varianten vermischen.
+            for t in C.specTables(L, p):
+                head = f" – {t['title']}" if t["title"] else ""
+                out += ["", f"Technische Daten{head}:", "",
+                        "| " + C.t(L, "spec_model") + " | " + " | ".join(t["cols"]) + " |",
+                        "|" + " --- |" * (len(t["cols"]) + 1)]
+                out += ["| " + " | ".join(r) + " |" for r in t["rows"]]
+                if t["note"]:
+                    out.append(f"*: {t['note']}")
+                out.append("")
             mats = C.matOf(p)
             if mats:
                 out.append("Werkstoffe: " + ", ".join(C.matLabel(L, m) for m in mats) + ".")

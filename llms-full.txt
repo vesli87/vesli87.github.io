@@ -13,7 +13,32 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: HYPERMIG-X · Preis: auf Anfrage (CHF)
 Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen.
 Besonderheiten: MIG/MAG-Schweissen & MIG-Löten; HyperForce, HyperRoot, HyperCold; HyperPuls & HyperSpeedPuls; Doppelpuls mit WIG-Naht-Optik; MMA-Elektrode & Fugenhobeln; WIG Lift Arc; Digital Synergy geregelt; Spritzerfreier Lichtbogen; 4-Rollen-Antrieb; Fernbedienung anschliessbar; JOB-Modus mit 99 Programmen; Upgrade-fähig · 100% recycelbar.
-Technische Daten: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Strombereich: 10 – 420 A; Netz: 3~ 400 V · 50/60 Hz; Netzabsicherung: 25 A; Leerlaufspannung: 76 V; Einschaltdauer: 45 % @ 400 A · 60 % @ 360 A; Kühlung: luft-/wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergic / JOB (99); Schutzklasse: IP23; Gewicht: bis 103 kg (WWK).
+Ausstattung: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Kühlung: luft-/wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergic / JOB (99).
+
+Technische Daten – HyperMIG CWK:
+
+| Modell | 300 | 350 | 400 | 450* | 500* | 600* |
+| --- | --- | --- | --- | --- | --- | --- |
+| Upgrade | max 400A | max 400A | – | max 600A | max 600A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 20A | 20A | 20A | 32A | 32A | 32A |
+| Leerlaufspannung | 105V | 105V | 105V | 105V | 105V | 105V |
+| Effektiver Eingangsstrom | 19A | 19A | 19A | 32A | 32A | 32A |
+| Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A | 10 - 450A | 10 - 500A | 10 - 600A |
+| Einschaltdauer bei max. Strom @40C | – | – | 45% / 400A | – | 70% / 500A | 40% / 600A |
+| Strom bei 60% ED @40C | – | 350A | 360A | – | – | 530A |
+| Strom bei 100% ED @40C | 300A | 300A | 300A | 450A | 450A | 450A |
+| Masse CWK/CGK | 930x512x864mm | 930x512x864mm | 930x512x864mm | – | – | – |
+| Masse WWK/WGK | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm |
+| Gewicht CGK | 65kg | 65kg | 65kg | – | – | – |
+| Gewicht CWK | 70kg | 70kg | 70kg | – | – | – |
+| Gewicht WGK | 80kg | 80kg | 80kg | – | – | – |
+| Gewicht WWK | 85kg | 85kg | 85kg | 92kg | 92kg | 92kg |
+| Schutzklasse | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S | S | S |
+*: nur als WWK Variante erhältlich.
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: DVS 410, DVL 420, WK 350.
 
@@ -22,7 +47,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: ECOMIG · Preis: auf Anfrage (CHF)
 Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.
 Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
-Technische Daten: Verfahren: MIG/MAG; Strombereich: bis 300 A; Netz: 3~ 400 V; Antrieb: 4-Rollen; Ausführung: Kompakt/fahrbar; Bedienung: Digital oder Analog.
+Ausstattung: Verfahren: MIG/MAG; Antrieb: 4-Rollen; Ausführung: Kompakt/fahrbar; Bedienung: Digital oder Analog.
+
+Technische Daten – EcoMIG:
+
+| Modell | 3000 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Leerlaufspannung | 76V |
+| Effektiver Eingangsstrom | 12,5A |
+| Schweissstrombereich | 10 - 300A |
+| Einschaltdauer bei max. Strom @40C | 40% / 300A |
+| Strom bei 60% ED @40C | 240A |
+| Strom bei 100% ED @40C | 180A |
+| Masse (HxBxL) | 860x430x900mm |
+| Gewicht | 48kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 30, MPF 02, WK 200.
 
@@ -31,7 +76,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/mms/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: MMS · Preis: auf Anfrage (CHF)
 Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt.
 Besonderheiten: Spritzerfreier Lichtbogen; Mobil und leicht, nur 11,5 kg; Rollenantrieb; 5 Meter Zuleitungskabel; Umpolung System; D200 Spule; WIG Lift Arc; Impuls Lichtbogen; HyperCold / HyperRoot Lichtbogen; Mobil und leicht, nur 21 kg; 4-Rollenantrieb; D300 Spule.
-Technische Daten: Verfahren: MIG/MAG; Einsatz: Montage / Werkstatt; Bauart: tragbar; Serie: MMS 2000 · MMS 3000.
+Ausstattung: Verfahren: MIG/MAG; Einsatz: Montage / Werkstatt; Bauart: tragbar; Serie: MMS 2000 · MMS 3000.
+
+Technische Daten – MMS:
+
+| Modell | 2000C | 2000P | 2400 | 3000 |
+| --- | --- | --- | --- | --- |
+| Upgrade | – | – | max 300A | – |
+| Netzspannung | 230V, 50/60Hz | 230V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A | 16A | 16A | 16A |
+| Leerlaufspannung | 55V | 76V | 76V | 76V |
+| Effektiver Eingangsstrom | 16A | 16A | 11A | 11A |
+| Schweissstrombereich | 10-200A | 10-200A | 10-240A | 10-300A |
+| Einschaltdauer bei max. Strom @40C | 20% / 200A | 25% / 200A | – | 30% / 300A |
+| Strom bei 60% ED @40C | 130A | 140A | 240A | 240A |
+| Strom bei 100% ED @40C | 100A | 120A | 180A | 180A |
+| Masse | 276x200x407mm | 385x295x615mm | 385x295x615mm | 385x295x615mm |
+| Gewicht | 11kg | 21kg | 21kg | 21kg |
+| Schutzklasse | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 30, MPF 02, WK 300.
 
@@ -40,7 +105,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: OMEGA-AX · Preis: auf Anfrage (CHF)
 Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.
 Besonderheiten: Resonanz Inverter gesteuert durch einen DSP-Controller; Bis zu 20kHz Impulsschweissen; ActiveBoost Funktion; Hyper ARC Active Regelung; HyperSpot Schweissen; Mix TIG Schweissen; Kalotten Formungsfunktion; Strom Modulation einstellbar; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
-Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 220 A; Netz: 1~ 230 V; Zündung: HF; Bauart: mobil.
+Ausstattung: Verfahren: WIG AC/DC; Zündung: HF; Bauart: mobil.
+
+Technische Daten – Omega AX:
+
+| Modell | 180 | 220 |
+| --- | --- | --- |
+| Upgrade | 220A | – |
+| Netzspannung | 230V, 50/60Hz | 230V, 50/60Hz |
+| Netzabsicherung | 16A | 16A |
+| Leerlaufspannung | 76V | 76V |
+| Effektiver Eingangsstrom | 16A | 16A |
+| Schweissstrombereich | 4-180A | 4-220A |
+| Einschaltdauer bei max. Strom @40C | 30% / 180A | 20% / 220A |
+| Strom bei 60% ED @40C | 160A | 160A |
+| Strom bei 100% ED @40C | 130A | 130A |
+| Masse | 460x215x285mm | 460x215x285mm |
+| Gewicht | 13,5kg | 13,5kg |
+| Schutzklasse | IP23 | IP23 |
+| Konformitätszeichen | CE | CE |
+| Sicherungsklasse | S | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
 
@@ -49,7 +134,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DX · Preis: auf Anfrage (CHF)
 Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.
 Besonderheiten: Resonanz Inverter gesteuert durch einen DSP-Controller; Bis zu 20kHz Impulsschweissen; ActiveBoost Funktion; Hyper ARC Active Regelung; HyperSpot Schweissen; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
-Technische Daten: Verfahren: WIG DC; Strombereich: bis 220 A; Netz: 1~ 230 V; Bauart: mobil.
+Ausstattung: Verfahren: WIG DC; Bauart: mobil.
+
+Technische Daten – Beta DX:
+
+| Modell | 180 | 220 |
+| --- | --- | --- |
+| Upgrade | 220A | – |
+| Netzspannung | 230V, 50/60Hz | 230V, 50/60Hz |
+| Netzabsicherung | 16A | 16A |
+| Leerlaufspannung | 89V | 89V |
+| Effektiver Eingangsstrom | 16A | 16A |
+| Schweissstrombereich | 4-180A | 4-220A |
+| Einschaltdauer bei max. Strom @40C | 30% / 180A | 20% / 220A |
+| Strom bei 60% ED @40C | 160A | 160A |
+| Strom bei 100% ED @40C | 130A | 130A |
+| Masse | 460x215x285mm | 460x215x285mm |
+| Gewicht | 12,5kg | 12,5kg |
+| Schutzklasse | IP23 | IP23 |
+| Konformitätszeichen | CE | CE |
+| Sicherungsklasse | S | S |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
 
@@ -58,7 +163,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-AX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.
 Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot – schnelle Heftfunktion; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
-Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 350 A; Netz: 3~ 400 V; Kühlung: wassergekühlt (CWK).
+Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
+
+Technische Daten – HyperTIG AX:
+
+| Modell | 250 | 300 | 350 |
+| --- | --- | --- | --- |
+| Upgrade | max 350A | max 350A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A | 20A | 20A |
+| Leerlaufspannung | 42V | 42V | 42V |
+| Effektiver Eingangsstrom | 14A | 19A | 20A |
+| Schweissstrombereich | 4-250A | 4-300A | 4-350A |
+| Einschaltdauer bei max. Strom @40C | 80% | – | 40% / 350A |
+| Strom bei 60% ED @40C | – | 300A | 300A |
+| Strom bei 100% ED @40C | 230A | 230A | 230A |
+| Masse | 930x512x864mm | 930x512x864mm | 930x512x864mm |
+| Gewicht | 82kg | 82kg | 82kg |
+| Schutzklasse | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE |
+| Sicherungsklasse | S | S | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
 
@@ -67,7 +192,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: HYPERTIG-DX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.
 Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot – schnelle Heftfunktion; Hyper ARC Active Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
-Technische Daten: Verfahren: WIG DC; Strombereich: bis 400 A; Netz: 3~ 400 V; Kühlung: wassergekühlt.
+Ausstattung: Verfahren: WIG DC; Kühlung: wassergekühlt.
+
+Technische Daten – HyperTIG DX:
+
+| Modell | 250 | 300 | 350 | 400 |
+| --- | --- | --- | --- | --- |
+| Upgrade | max 400A | max 400A | max 400A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A | 20A | 20A | 20A |
+| Leerlaufspannung | 62V | 62V | 62V | 62V |
+| Effektiver Eingangsstrom | 13A | 18A | 18A | 18A |
+| Schweissstrombereich | 4-250A | 4-300A | 4-350A | 4-400A |
+| Einschaltdauer bei max. Strom @40C | – | – | – | 45% / 400A |
+| Strom bei 60% ED @40C | – | – | 350A | 360A |
+| Strom bei 100% ED @40C | 250A | 300A | 300A | 300A |
+| Masse | 930x512x864mm | 930x512x864mm | 930x512x864mm | 930x512x864mm |
+| Gewicht | 70kg | 70kg | 70kg | 70kg |
+| Schutzklasse | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
 
@@ -76,7 +221,46 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
 Mobile digitale WIG-Schweissmaschine mit Programmspeicher.
 Besonderheiten: Hochfrequenz Impulsschweissen; Hyper ARC Active Regelung; 5 Meter Zuleitungskabel; Digitale Ampere Anzeige; Fernbedienung; Synergy Einstellungen; Job Mode.
-Technische Daten: Verfahren: WIG DC; Strombereich: bis 300 A; Netz: 3~ 400 V; Bedienung: digital.
+Ausstattung: Verfahren: WIG DC; Bedienung: digital.
+
+Technische Daten – Beta digital:
+
+| Modell | 240 | 300 |
+| --- | --- | --- |
+| Upgrade | max 300A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A | 16A |
+| Leerlaufspannung | 80V | 80V |
+| Effektiver Eingangsstrom | 13A | 16A |
+| Schweissstrombereich | 4-240A | 4-300A |
+| Einschaltdauer bei max. Strom @40C | – | 40% / 300A |
+| Strom bei 60% ED @40C | 250A | 250A |
+| Strom bei 100% ED @40C | 200A | 200A |
+| Masse | 293x206x476mm | 293x206x476mm |
+| Gewicht | 18,5kg | 18,5kg |
+| Schutzklasse | IP23 | IP23 |
+| Konformitätszeichen | CE | CE |
+| Sicherungsklasse | S | S |
+
+
+Technische Daten – Beta digital SYN:
+
+| Modell | 200 | 240 | 300 |
+| --- | --- | --- | --- |
+| Upgrade | – | max 300A | – |
+| Netzspannung | 230V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A | 16A | 16A |
+| Leerlaufspannung | 80V | 80V | 80V |
+| Effektiver Eingangsstrom | 16A | 13A | 16A |
+| Schweissstrombereich | 4-200A | 4-240A | 4-300A |
+| Einschaltdauer bei max. Strom @40C | 35% / 200A | – | 40% / 300A |
+| Strom bei 60% ED @40C | 150A | 250A | 250A |
+| Strom bei 100% ED @40C | 120A | 200A | 200A |
+| Masse | 235x170x385mm | 293x206x476mm | 293x206x476mm |
+| Gewicht | 11,5kg | 18,5kg | 18,5kg |
+| Schutzklasse | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5.
 
@@ -85,7 +269,28 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-ACDC · Preis: auf Anfrage (CHF)
 Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.
 Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Volt und Ampere Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
-Technische Daten: Verfahren: WIG AC/DC; Strombereich: bis 600 A; Netz: 3~ 400 V; Kühlung: wassergekühlt (CWK).
+Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
+
+Technische Daten – HyperTIG AC/DC CWK:
+
+| Modell | 450 | 500 | 550* | 600* |
+| --- | --- | --- | --- | --- |
+| Upgrade | max 600A | max 600A | max 600A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 25A | 32A | 32A | 32A |
+| Leerlaufspannung | 90V | 90V | 90V | 90V |
+| Effektiver Eingangsstrom | 29A | 29A | 31A | 31A |
+| Schweissstrombereich | 4-450A | 4-500A | 4-550A | 4-600A |
+| Einschaltdauer bei max. Strom @40C | 80% / 450A | – | 50% / 550A | 40% / 600A |
+| Strom bei 60% ED @40C | – | 500A | 500A | 500A |
+| Strom bei 100% ED @40C | 440A | 440A | 440A | 440A |
+| Masse | 920x760x804mm | 920x760x804mm | 920x760x804mm | 920x760x804mm |
+| Gewicht | 135kg | 135kg | 135kg | 135kg |
+| Schutzklasse | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S |
+*: Nur für Länder ausserhalb der EU verfügbar.
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: WK 350, STT 30, MPF 02, FRC 5.
 
@@ -94,7 +299,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: I-1600 · Preis: auf Anfrage (CHF)
 Einfach zu bedienender, robuster Elektrodeninverter.
 Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Force Arc; Anti Stick Funktion; WIG Lift ARC; 5 Meter Zuleitungskabel; Arbeitet an langen Versorgungskabeln; 100V Technologie.
-Technische Daten: Verfahren: MMA (Elektrode); Netz: 1~ 230 V; Bauart: tragbar; Bedienung: einfach.
+Ausstattung: Verfahren: MMA (Elektrode); Bauart: tragbar; Bedienung: einfach.
+
+Technische Daten – i-1600:
+
+| Modell | 1600 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Leerlaufspannung | 95V |
+| Effektiver Eingangsstrom | 14A |
+| Schweissstrombereich | 15-150A |
+| Einschaltdauer bei max. Strom @40C | 30% / 150A |
+| Strom bei 60% ED @40C | 120A |
+| Strom bei 100% ED @40C | 90A |
+| Masse | 213x133x350mm |
+| Gewicht | 7kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 
@@ -103,7 +328,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA · Preis: auf Anfrage (CHF)
 Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.
 Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Force Arc; Anti Stick Funktion; 5 Meter Zuleitungskabel; Fernbedienung; WIG Lift Arc.
-Technische Daten: Verfahren: MMA · WIG-Lift; Netz: 230/400 V; Bauart: tragbar.
+Ausstattung: Verfahren: MMA · WIG-Lift; Bauart: tragbar.
+
+Technische Daten – Delta:
+
+| Modell | 1800 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Leerlaufspannung | 95V |
+| Effektiver Eingangsstrom | 15A |
+| Schweissstrombereich | 4-160A |
+| Einschaltdauer bei max. Strom @40C | 25% / 160A |
+| Strom bei 60% ED @40C | 120A |
+| Strom bei 100% ED @40C | 100A |
+| Masse | 231x133x350mm |
+| Gewicht | 7kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 
@@ -112,7 +357,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL · Preis: auf Anfrage (CHF)
 Digitaler Multifunktions-Inverter für den Profi.
 Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Arc Force einstellbar; Hot Start einstellbar; Anti Stick Funktion; Fugenhobeln Funktion; Einstellbare Leerlaufspannung ab 15V; Stufenlose Vorwahl der Netzsicherung; 5 Meter Zuleitungskabel; Digitale Volt und Ampere Anzeige; Fernbedienung.
-Technische Daten: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
+Ausstattung: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
+
+Technische Daten – Delta Digital:
+
+| Modell | 2000 | 3000 | 4000 | 5000 | 6000 |
+| --- | --- | --- | --- | --- | --- |
+| Upgrade | – | – | max 600A | max 600A | – |
+| Netzspannung | 230V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 20A | 16A | 25A | 32A | 40A |
+| Leerlaufspannung | 95V | 95V | 95V | 95V | 95V |
+| Effektiver Eingangsstrom | 20A | 16A | 25A | 32A | 37A |
+| Schweissstrombereich | 4-200A | 4-300A | 4-400A | 4-500A | 4-600A |
+| Einschaltdauer bei max. Strom @40C | 30% / 200A | – | – | 50% / 500A | 40% / 600A |
+| Strom bei 60% ED @40C | 150A | 300A | 400A | 450A | 520A |
+| Strom bei 100% ED @40C | 120A | 230A | 300A | 380A | 420A |
+| Masse | 247x180x400mm | 247x180x400mm | 500x220x365mm | 500x220x365mm | 500x220x365mm |
+| Gewicht | 14kg | 14kg | 24kg | 24kg | 24kg |
+| Schutzklasse | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S | S |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 
@@ -121,7 +386,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL-DS · Preis: auf Anfrage (CHF)
 Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.
 Besonderheiten: Zum Unter Wasser Schweissen; 15V ocV; Aktive ocV Überwachung; Optionaler Notausschalter; Force Arc; Anti Stick Funktion; 5 Meter Zuleitungskabel; Fugenhobeln Funktion; Umschaltbar CV und CC; Digitale Volt und Ampere Anzeigen; Data Hold Funktion; Mobil.
-Technische Daten: Verfahren: MMA · Unterwasser; Bedienung: digital; Einsatz: Diving / Offshore.
+Ausstattung: Verfahren: MMA · Unterwasser; Bedienung: digital; Einsatz: Diving / Offshore.
+
+Technische Daten – Delta Digital DS:
+
+| Modell | 4000 | 5000 | 6000 |
+| --- | --- | --- | --- |
+| Upgrade | max 600A | max 600A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 25A | 32A | 40A |
+| Leerlaufspannung | 62V | 62V | 62V |
+| Effektiver Eingangsstrom | 25A | 32A | 37A |
+| Schweissstrombereich | 4-400A | 4-500A | 4-600A |
+| Einschaltdauer bei max. Strom @40C | – | 50% / 500A | 40% / 600A |
+| Strom bei 60% ED @40C | 400A | 450A | 520A |
+| Strom bei 100% ED @40C | 300A | 380A | 420A |
+| Masse | 500x220x365mm | 500x220x365mm | 500x220x365mm |
+| Gewicht | 24kg | 24kg | 24kg |
+| Schutzklasse | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE |
+| Sicherungsklasse | S | S | S |
+
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: STT 35, MPF 02, RC 5, RC 100.
 
@@ -130,7 +415,27 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
 Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
 Mikroplasma- und Plasmastromquelle für feinste Schweissungen.
 Besonderheiten: Plasma TIG Schweissen; MMA Elektroden Schweissen; WIG HF Schweissen; WIG Lift Arc Schweissen; Arc Force; Anti Stick; Up Slope; Down Slope; HF Start on / off; 5 Meter Zuleitungskabel; Mikroregler für die Gasmenge; Interface.
-Technische Daten: Verfahren: Plasma / Mikroplasma; Strombereich: 20 – 400 A; Einsatz: Feinblech bis Industrie.
+Ausstattung: Verfahren: Plasma / Mikroplasma; Einsatz: Feinblech bis Industrie.
+
+Technische Daten – Plasma TIG:
+
+| Modell | 20 | 50 | 150 | 250 | 400 |
+| --- | --- | --- | --- | --- | --- |
+| Upgrade | max 50A | – | – | max 400A | – |
+| Netzspannung | 230V, 50/60Hz | 230V, 50/60Hz | 230V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 10A | 10A | 16A | 16A | 25A |
+| Leerlaufspannung | 80V | 80V | 80V | 80V | 80V |
+| Effektiver Eingangsstrom | 9A | 9A | 16A | 15A | 24,5A |
+| Schweissstrombereich | 0,1-20A | 0,1-50A | 4-200A | 4-250A | 4-300A |
+| Einschaltdauer bei max. Strom @40C | – | – | – | – | 50% / 400A |
+| Strom bei 60% ED @40C | – | – | 150A | – | 360A |
+| Strom bei 100% ED @40C | 20A | 50A | 120A | 250A | 300A |
+| Masse | 920x350x740mm | 920x350x740mm | 920x350x740mm | 920x700x740mm | 920x700x740mm |
+| Gewicht | 53,2kg | 53,2kg | 53,2kg | 120kg | 120kg |
+| Schutzklasse | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: MPF 02, RC 100.
 
@@ -142,7 +447,29 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
 Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.
 Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift Arc Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für Verschleissteil Standzeit; Lochblech Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige.
-Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Netz: 1~ 230 V; Bauart: tragbar.
+Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Bauart: tragbar.
+
+Technische Daten – Theta 40:
+
+| Modell | 40 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Leerlaufspannung | 403V |
+| Effektiver Eingangsstrom | 16A |
+| Schweissstrombereich | 10-30A |
+| Einschaltdauer bei max. Strom @40C | – |
+| Strom bei 60% ED @40C | 30A |
+| Strom bei 100% ED @40C | 23A |
+| Empfohlener Schnitt | < 8mm |
+| Trennschnitt | < 15mm |
+| Masse | 247x173x372mm |
+| Gewicht | 14,2kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
 
@@ -151,7 +478,29 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-60 · Preis: auf Anfrage (CHF)
 Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.
 Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 35 mm; Qualitätsschnitt max. 25 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
-Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 40 mm; Technologie: HSC; Netz: 3~ 400 V.
+Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 40 mm; Technologie: HSC.
+
+Technische Daten – Theta 60 HSC:
+
+| Modell | 60 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Leerlaufspannung | 290V |
+| Effektiver Eingangsstrom | 10A |
+| Schweissstrombereich | 10-60A |
+| Einschaltdauer bei max. Strom @40C | 50% / 60A |
+| Strom bei 60% ED @40C | 55A |
+| Strom bei 100% ED @40C | 42A |
+| Empfohlener Schnitt | < 25mm |
+| Trennschnitt | < 35mm |
+| Masse | 247x173x372mm |
+| Gewicht | 16,5kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
 
@@ -160,7 +509,29 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-120 · Preis: auf Anfrage (CHF)
 Industrieller Plasmaschneidinverter mit HSC-Technologie.
 Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Option Automaten – Schnittstelle; Lochblech Schneidfunktion; Fugenhobeln Funktion.
-Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC; Netz: 3~ 400 V.
+Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC.
+
+Technische Daten – Theta 120 HSC:
+
+| Modell | 120 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 3x400V, 50/60Hz |
+| Netzabsicherung | 32A |
+| Leerlaufspannung | 290V |
+| Effektiver Eingangsstrom | 27A |
+| Schweissstrombereich | 20-120A |
+| Einschaltdauer bei max. Strom @40C | – |
+| Strom bei 60% ED @40C | 120A |
+| Strom bei 100% ED @40C | 93A |
+| Empfohlener Schnitt | < 38mm |
+| Trennschnitt | < 50mm |
+| Masse | 370x270x620mm |
+| Gewicht | 36kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
 
@@ -169,7 +540,28 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-180 · Preis: auf Anfrage (CHF)
 Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.
 Besonderheiten: HSC Technologie; Schneiden bis 80 mm; Fugenhobel Funktion; Lochblech Schneidfunktion; Zentralanschluss am Brenner; 5 Meter Zuleitungskabel; Digitalanzeige; Anzeige für den Maschinenstatus; Brennerpakete bis 15,2 Meter.
-Technische Daten: Verfahren: Plasmaschneiden; Schneidleistung: bis 80 mm; Technologie: HSC; Netz: 3~ 400 V.
+Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 80 mm; Technologie: HSC.
+
+Technische Daten – Theta 180 HSC:
+
+| Modell | 180 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 3x400V, 50/60Hz |
+| Netzabsicherung | 40A |
+| Leerlaufspannung | 290V |
+| Effektiver Eingangsstrom | 40A |
+| Schweissstrombereich | 40-180A |
+| Strom bei 60% ED @40C | 160A |
+| Strom bei 100% ED @40C | 135A |
+| Empfohlener Schnitt | < 50mm |
+| Trennschnitt | < 80mm |
+| Masse | 710x460x710mm |
+| Gewicht | 72kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
 
@@ -178,7 +570,29 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-60-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
 Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt grösser 35 mm; Qualitätsschnitt grösser 25 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
-Technische Daten: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 40 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 40 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+
+Technische Daten – Theta 60 HSC:
+
+| Modell | 60 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 3x400V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Leerlaufspannung | 290V |
+| Effektiver Eingangsstrom | 10A |
+| Schweissstrombereich | 10-60A |
+| Einschaltdauer bei max. Strom @40C | 50% / 60A |
+| Strom bei 60% ED @40C | 55A |
+| Strom bei 100% ED @40C | 42A |
+| Empfohlener Schnitt | < 25mm |
+| Trennschnitt | < 35mm |
+| Masse | 247x173x372mm |
+| Gewicht | 16,5kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
 
@@ -187,7 +601,29 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-120-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
 Besonderheiten: HSC Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt grösser 55 mm; Qualitätsschnitt grösser 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
-Technische Daten: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+
+Technische Daten – Theta 120 HSC:
+
+| Modell | 120 |
+| --- | --- |
+| Upgrade | – |
+| Netzspannung | 3x400V, 50/60Hz |
+| Netzabsicherung | 32A |
+| Leerlaufspannung | 290V |
+| Effektiver Eingangsstrom | 27A |
+| Schweissstrombereich | 20-120A |
+| Einschaltdauer bei max. Strom @40C | – |
+| Strom bei 60% ED @40C | 120A |
+| Strom bei 100% ED @40C | 93A |
+| Empfohlener Schnitt | < 38mm |
+| Trennschnitt | < 50mm |
+| Masse | 370x270x620mm |
+| Gewicht | 36kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: STT 35, MPF 02.
 
@@ -199,7 +635,23 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: MINICLEANER · Preis: auf Anfrage (CHF)
 Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.
 Besonderheiten: Leistungsstarke 200 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Technische Daten: Verfahren: Elektrolyt-Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
+Ausstattung: Verfahren: Elektrolyt-Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
+
+Technische Daten – MiniCleaner:
+
+| Modell | MiniCleaner |
+| --- | --- |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 6A |
+| Ausgangsstrom max. | 20A |
+| Ausgangsspannungsbereich | 5 - 15V |
+| Leistung max. | 180W |
+| Masse | 115x115x220mm |
+| Gewicht | 1,5kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
 
@@ -208,7 +660,24 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-ST · Preis: auf Anfrage (CHF)
 Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.
 Besonderheiten: Leistungsstarke 1200 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Technische Daten: Leistung: 1200 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Ausstattung: Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+
+Technische Daten – HyperCleaner ST:
+
+| Modell | HyperCleaner ST |
+| --- | --- |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 10A |
+| Ausgangsstrom max. | 35A |
+| Ausgangsspannungsbereich | 5 - 35V |
+| Einschaltdauer bei max. Strom @40C | 100% |
+| Leistung max. | 1225W |
+| Masse | 213x133x350mm |
+| Gewicht | 7kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
 
@@ -217,7 +686,24 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-SPEED · Preis: auf Anfrage (CHF)
 Leistungsstarker 2500-W-Inverter für schnelle Reinigung.
 Besonderheiten: Leistungsstarke 2400 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Technische Daten: Leistung: 2500 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Ausstattung: Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+
+Technische Daten – HyperCleaner STspeed:
+
+| Modell | HyperCleaner ST Speed |
+| --- | --- |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Ausgangsstrom max. | 65A |
+| Ausgangsspannungsbereich | 5 - 36V |
+| Einschaltdauer bei max. Strom @40C | 100% |
+| Leistung max. | 2400W |
+| Masse | 315x170x385mm |
+| Gewicht | 17kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
 
@@ -226,7 +712,24 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-PLUS · Preis: auf Anfrage (CHF)
 Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.
 Besonderheiten: Leistungsstarke 3600 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Technische Daten: Leistung: 4000 W; Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Ausstattung: Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+
+Technische Daten – HyperCleaner STplus:
+
+| Modell | HyperCleaner ST Plus |
+| --- | --- |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 16A |
+| Ausgangsstrom max. | 110A |
+| Ausgangsspannungsbereich | 5 - 36V |
+| Einschaltdauer bei max. Strom @40C | 100% |
+| Leistung max. | 4000W |
+| Masse | 315x170x385mm |
+| Gewicht | 17kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
 
@@ -235,7 +738,24 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERCLEANER-CT200 · Preis: auf Anfrage (CHF)
 Kombiniertes WIG-Schweiss- und Reinigungsgerät.
 Besonderheiten: Multiprozess WIG und Reinigen; WIG Schweissen mit 200A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
-Technische Daten: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
+Ausstattung: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
+
+Technische Daten – HyperCleaner ST:
+
+| Modell | HyperCleaner ST |
+| --- | --- |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 10A |
+| Ausgangsstrom max. | 35A |
+| Ausgangsspannungsbereich | 5 - 35V |
+| Einschaltdauer bei max. Strom @40C | 100% |
+| Leistung max. | 1225W |
+| Masse | 213x133x350mm |
+| Gewicht | 7kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, MHCT 01, Elektrodenkabel 10 mm².
 
@@ -244,7 +764,24 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/
 Kategorie: Reinigungsgeräte / Signiergeräte · Typ: Signieren · Art.-Nr.: HCS1 · Preis: auf Anfrage (CHF)
 Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.
 Besonderheiten: Stromquelle zum Markieren; Tiefschwarz markieren; Kurzschluss – Schutzsystem; Geeignet für Schablonen aller Hersteller.
-Technische Daten: Verfahren: Elektrolyt-Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
+Ausstattung: Verfahren: Elektrolyt-Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
+
+Technische Daten – Signiergerät HCS1:
+
+| Modell | HCS1 |
+| --- | --- |
+| Netzspannung | 230V, 50/60Hz |
+| Netzabsicherung | 1,6A |
+| Ausgangsstrom max. | 4A |
+| Leerlauf Ausgangsspannung Uo | 24V AC |
+| Einschaltdauer bei max. Strom @40C | 100% |
+| Leistung max. | 56W |
+| Masse | 220x115x115mm |
+| Gewicht | 2,5kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
 
 ### MAHE MLF 100
@@ -252,42 +789,56 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
 Kategorie: Reinigungsgeräte / Dosiersystem · Typ: Dosierung · Art.-Nr.: MLF100 · Preis: auf Anfrage (CHF)
 Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.
 Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.; Automatischer/Manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungs-/Spülmodus; Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten..
-Technische Daten: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
+Ausstattung: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
+
+Technische Daten – MLF100:
+
+| Modell | MLF100 |
+| --- | --- |
+| Netzspannung | 110V - 230V, 50/60Hz |
+| Eingangsleistung max. | 12W |
+| Fördermenge | 2 - 80 ml/min |
+| Masse | 310x150x190mm |
+| Gewicht | 3,5kg |
+| Schutzklasse | IP23 |
+| Konformitätszeichen | CE |
+| Sicherungsklasse | S |
+
 Passendes Zubehör: MHCT 01, Reinigungselektrolyt Rapid R1.
 
 ### MAHE Reinigungselektrolyt Rapid R1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: R1 · Preis: auf Anfrage (CHF)
 Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.
-Technische Daten: Typ: Reinigung (Rapid); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: R1.
+Ausstattung: Typ: Reinigung (Rapid); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: R1.
 Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
 
 ### MAHE Reinigungselektrolyt RP1 Pastös
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: RP1 · Preis: auf Anfrage (CHF)
 Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.
-Technische Daten: Typ: Reinigung (pastös); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: RP1.
+Ausstattung: Typ: Reinigung (pastös); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: RP1.
 Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
 
 ### MAHE Polierelektrolyt P1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Polieren · Art.-Nr.: P1 · Preis: auf Anfrage (CHF)
 Elektrolyt zum Elektropolieren und Beizen von Edelstahl.
-Technische Daten: Typ: Polieren / Beizen; Werkstoff: Edelstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: P1.
+Ausstattung: Typ: Polieren / Beizen; Werkstoff: Edelstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: P1.
 Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
 
 ### MAHE Neutralit N1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Neutralisieren · Art.-Nr.: N1 · Preis: auf Anfrage (CHF)
 Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.
-Technische Daten: Typ: Neutralisierer; Anwendung: nach Reinigung; Gebinde: 1,0 / 5,0 L; Sicherheitsdatenblatt: N1.
+Ausstattung: Typ: Neutralisierer; Anwendung: nach Reinigung; Gebinde: 1,0 / 5,0 L; Sicherheitsdatenblatt: N1.
 Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
 
 ### MAHE Signierelektrolyt M1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Signieren · Art.-Nr.: M1 · Preis: auf Anfrage (CHF)
 Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.
-Technische Daten: Typ: Signieren; Anwendung: Markieren; Gebinde: 0,1 / 0,5 / 1,0 L; Sicherheitsdatenblatt: M1.
+Ausstattung: Typ: Signieren; Anwendung: Markieren; Gebinde: 0,1 / 0,5 / 1,0 L; Sicherheitsdatenblatt: M1.
 Passendes Zubehör: HyperCleaner ST, MiniReiniger, MHCT 01.
 
 ## Zubehör
@@ -297,121 +848,121 @@ Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattaus
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt30/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT30 · Preis: auf Anfrage (CHF)
 Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.
-Technische Daten: Für: i-TIG, Beta, Omega, MMS; Maße (LxBxH): 625×600×1050 mm; Gewicht: 22 kg; Gasflasche: ja.
+Ausstattung: Für: i-TIG, Beta, Omega, MMS; Maße (LxBxH): 625×600×1050 mm; Gewicht: 22 kg; Gasflasche: ja.
 
 ### MAHE STT 35
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt35/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT35 · Preis: auf Anfrage (CHF)
 Fahrwagen ohne Gasflaschenhalter für MMA und Plasma.
-Technische Daten: Für: Delta, Delta Digital, Theta; Maße (LxBxH): 700×600×1050 mm; Gewicht: 21 kg; Gasflasche: nein.
+Ausstattung: Für: Delta, Delta Digital, Theta; Maße (LxBxH): 700×600×1050 mm; Gewicht: 21 kg; Gasflasche: nein.
 
 ### MAHE MPF 02
 URL: https://www.ves-tech.ch/produkte/zubehoer/mpf02/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: MPF02 · Preis: auf Anfrage (CHF)
 Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.
-Technische Daten: Für: Delta, i-TIG, Beta, Omega, MMS, Theta; Maße (LxBxH): 840×450×710 mm; Gewicht: 21 kg; Gasflasche: ja.
+Ausstattung: Für: Delta, i-TIG, Beta, Omega, MMS, Theta; Maße (LxBxH): 840×450×710 mm; Gewicht: 21 kg; Gasflasche: ja.
 
 ### MAHE MHCT 01
 URL: https://www.ves-tech.ch/produkte/zubehoer/mhct01/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: MHCT01 · Preis: auf Anfrage (CHF)
 Fahrwagen speziell für Reinigungsgeräte.
-Technische Daten: Für: HyperCleaner; Maße (LxBxH): 380×415×700 mm; Gewicht: 16 kg.
+Ausstattung: Für: HyperCleaner; Maße (LxBxH): 380×415×700 mm; Gewicht: 16 kg.
 
 ### MAHE WK 200
 URL: https://www.ves-tech.ch/produkte/zubehoer/wk200/
 Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK200 · Preis: auf Anfrage (CHF)
 Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung.
-Technische Daten: Typ: Universalkühler; Steckdose: 230 V Schuko; Schutz: Wassermangel-Abschaltung.
+Ausstattung: Typ: Universalkühler; Steckdose: 230 V Schuko; Schutz: Wassermangel-Abschaltung.
 
 ### MAHE WK 300
 URL: https://www.ves-tech.ch/produkte/zubehoer/wk300/
 Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK300 · Preis: auf Anfrage (CHF)
 Wasserkühlgerät für die MMS-3000-Serie.
-Technische Daten: Für: MMS 3000 Serie; Typ: Wasserkühlgerät.
+Ausstattung: Für: MMS 3000 Serie; Typ: Wasserkühlgerät.
 
 ### MAHE WK 350
 URL: https://www.ves-tech.ch/produkte/zubehoer/wk350/
 Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK350 · Preis: auf Anfrage (CHF)
 Wasserkühlgerät für Beta digital und Omega 400-V-Linie.
-Technische Daten: Für: Beta digital · Omega 400 V; Typ: Wasserkühlgerät.
+Ausstattung: Für: Beta digital · Omega 400 V; Typ: Wasserkühlgerät.
 
 ### MAHE DVS 410
 URL: https://www.ves-tech.ch/produkte/zubehoer/dvs410/
 Kategorie: Zubehör / Drahtvorschubkoffer · Typ: Vorschub · Art.-Nr.: DVS410 · Preis: auf Anfrage (CHF)
 Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie.
-Technische Daten: Für: HyperMIG X; Bauart: leicht / tragbar.
+Ausstattung: Für: HyperMIG X; Bauart: leicht / tragbar.
 
 ### MAHE DVL 420
 URL: https://www.ves-tech.ch/produkte/zubehoer/dvl420/
 Kategorie: Zubehör / Drahtvorschubkoffer · Typ: Vorschub · Art.-Nr.: DVL420 · Preis: auf Anfrage (CHF)
 Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie.
-Technische Daten: Für: HyperMIG X; Gehäuse: Vollmetall; Bauart: horizontal.
+Ausstattung: Für: HyperMIG X; Gehäuse: Vollmetall; Bauart: horizontal.
 
 ### MAHE FRC 5
 URL: https://www.ves-tech.ch/produkte/zubehoer/frc5/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: FRC5 · Preis: auf Anfrage (CHF)
 Fussfernregler für alle MAHE WIG-Geräte.
-Technische Daten: Typ: Fussfernregler; Für: MAHE WIG.
+Ausstattung: Typ: Fussfernregler; Für: MAHE WIG.
 
 ### MAHE RC 5
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc5/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC5 · Preis: auf Anfrage (CHF)
 Handfernregler für alle MAHE WIG- und MMA-Geräte.
-Technische Daten: Typ: Handfernregler; Für: MAHE WIG · MMA.
+Ausstattung: Typ: Handfernregler; Für: MAHE WIG · MMA.
 
 ### MAHE RC 15
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc15/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC15 · Preis: auf Anfrage (CHF)
 Handfernregler mit Up/Down- und Start/Stopp-Taste.
-Technische Daten: Typ: Handfernregler; Funktion: Up/Down · Start/Stopp.
+Ausstattung: Typ: Handfernregler; Funktion: Up/Down · Start/Stopp.
 
 ### MAHE RC 100
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc100/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC100 · Preis: auf Anfrage (CHF)
 Handfernregler für alle MAHE WIG- und MMA-Geräte.
-Technische Daten: Typ: Handfernregler; Für: MAHE WIG · MMA.
+Ausstattung: Typ: Handfernregler; Für: MAHE WIG · MMA.
 
 ### MAHE RC 100 DS
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc100ds/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC100DS · Preis: auf Anfrage (CHF)
 Handfernregler speziell für Delta-Digital-DS-Maschinen.
-Technische Daten: Typ: Handfernregler; Für: Delta Digital DS.
+Ausstattung: Typ: Handfernregler; Für: Delta Digital DS.
 
 ### MAHE MCU 1
 URL: https://www.ves-tech.ch/produkte/zubehoer/mcu1/
 Kategorie: Zubehör / Werkstattausrüstung · Typ: Kalibrierung · Art.-Nr.: MCU1 · Preis: auf Anfrage (CHF)
 MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.
-Technische Daten: Funktion: Kalibrieren / Validieren; Anzeige: Volt & Ampere (gross); Gewicht: 16,5 kg.
+Ausstattung: Funktion: Kalibrieren / Validieren; Anzeige: Volt & Ampere (gross); Gewicht: 16,5 kg.
 
 ### MAHE USB 2in1 Programmierer
 URL: https://www.ves-tech.ch/produkte/zubehoer/usb2in1/
 Kategorie: Zubehör / Werkstattausrüstung · Typ: Programmierung · Art.-Nr.: USB2IN1 · Preis: auf Anfrage (CHF)
 Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software.
-Technische Daten: Funktion: Controller-Programmierung; Schnittstelle: USB / MAHE; Software: inklusive.
+Ausstattung: Funktion: Controller-Programmierung; Schnittstelle: USB / MAHE; Software: inklusive.
 
 ### MAHE Elektrodenkabel 10 mm²
 URL: https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: ELEKTRODENKABEL · Preis: auf Anfrage (CHF)
 Elektrodenkabel für Cleaner- und MMA-Geräte.
-Technische Daten: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: blau.
+Ausstattung: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: blau.
 
 ### MAHE Massekabel 10 mm²
 URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL · Preis: auf Anfrage (CHF)
 Massekabel mit Klemme für Cleaner- und MMA-Geräte.
-Technische Daten: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: schwarz.
+Ausstattung: Querschnitt: 10 mm²; Längen: 3 / 6 / 10 m; Farbe: schwarz.
 
 ### MAHE MF405W
 URL: https://www.ves-tech.ch/produkte/zubehoer/mf405w/
 Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF405W · Preis: auf Anfrage (CHF)
 Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.
-Technische Daten: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
+Ausstattung: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
 
 ### MAHE MF240W
 URL: https://www.ves-tech.ch/produkte/zubehoer/mf240w/
 Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF240W · Preis: auf Anfrage (CHF)
 Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.
-Technische Daten: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
+Ausstattung: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
 
 ---
 

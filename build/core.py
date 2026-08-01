@@ -136,6 +136,13 @@ MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")
+SPECMAP   = _load("SPECMAP")     # Produkt -> Tabelle(n) bei MAHE
+SPECROW   = _load("SPECROW")     # Zeilenbeschriftung -> fr/it
+SPECNOTE  = _load("SPECNOTE")    # Fussnote unter der Tabelle
+
+# Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
+# (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
+MAHE_SPECS = json.loads((BUILD / "mahe_specs.json").read_text("utf-8"))
 
 EX = json.loads((BUILD / "i18n_extra.json").read_text("utf-8"))
 
@@ -202,6 +209,92 @@ def trV(lang, v):
     if v.startswith("bis "):
         return ("jusqu’à " if lang == "fr" else "fino a ") + v[4:]
     return v
+
+
+# --------------------------------------------------------------------------
+# Technische Daten – die Tabelle von mahe-online.de
+# --------------------------------------------------------------------------
+#
+# Uebernommen wird der Inhalt woertlich. Korrigiert wird nur, was auch bei den
+# Besonderheiten korrigiert wird: Schweizer „ss" statt „ß" und die Tippfehler
+# von MAHE. build/verify_mahe.py haelt beide Listen gegen die Herstellerseite.
+
+SPEC_FIX_K = [("Einschaultdauer", "Einschaltdauer"),
+              ("Nezabsicherung", "Netzabsicherung"),
+              ("Ausgangstrom", "Ausgangsstrom"),
+              ("Ausgangspannungsbereich", "Ausgangsspannungsbereich"),
+              ("Eingangsleistung max", "Eingangsleistung max."),
+              ("Maße", "Masse"), ("ß", "ss")]
+SPEC_FIX_V = [("230V, 60/60Hz", "230V, 50/60Hz"),   # 60/60 Hz gibt es nicht
+              ("50/60 Hz", "50/60Hz"),
+              ("12.5kg", "12,5kg"), ("13.5kg", "13,5kg")]
+SPEC_EMPTY = "–"   # MAHE schreibt "-" oder "---" fuer „gibt es nicht"
+
+
+def _specK(s):
+    s = " ".join(str(s).split())
+    for a, b in SPEC_FIX_K:
+        s = s.replace(a, b)
+    return s
+
+
+def _specV(s):
+    s = " ".join(str(s).split())
+    if s in ("", "-", "--", "---", "—"):
+        return SPEC_EMPTY
+    for a, b in SPEC_FIX_V:
+        s = s.replace(a, b)
+    return s
+
+
+def specTables(lang, p):
+    """Technische Daten des Produkts als Tabellen mit einer Spalte je Variante.
+
+    [{"title": "Beta digital SYN", "cols": ["200","240","300"],
+      "rows": [["Netzspannung", "230V, 50/60Hz", …], …], "note": "…"}]
+    """
+    out = []
+    for key in SPECMAP.get(p["id"], []):
+        t = MAHE_SPECS.get(key)
+        if not t:
+            continue
+        keys = [c["key"] for c in t["columns"]]
+        rows = []
+        for r in t["rows"]:
+            k = _specK(r.get("model", ""))
+            lab = SPECROW.get(k, {}).get(lang, k) if lang != DEFAULT_LANG else k
+            rows.append([lab] + [_specV(r.get(c, "")) for c in keys])
+        note = SPECNOTE.get(key) or {}
+        out.append({"title": t.get("title", ""),
+                    "cols": [c["title"] for c in t["columns"]],
+                    "rows": rows,
+                    "note": note.get(lang) or note.get(DEFAULT_LANG, "")})
+    return out
+
+
+def specRowsDE(p):
+    """Alle deutschen Zeilenbeschriftungen des Produkts – fuer Suche und Filter."""
+    out = []
+    for key in SPECMAP.get(p["id"], []):
+        for r in MAHE_SPECS.get(key, {}).get("rows", []):
+            k = _specK(r.get("model", ""))
+            if k and k not in out:
+                out.append(k)
+    return out
+
+
+def specRest(p):
+    """Die kurze Merkmalsliste aus P.json ohne das, was die Tabelle schon zeigt.
+
+    „Netz" faellt weg, weil die Tabelle „Netzspannung" hat; „Kuehlung" oder
+    „Antrieb" bleiben, die stehen bei MAHE nirgends in der Tabelle.
+    """
+    tab = [k.lower() for k in specRowsDE(p)]
+    if not tab:
+        return p["specs"]
+    return {k: v for k, v in p["specs"].items()
+            if not any(t.startswith(k.lower()) or k.lower().startswith(t)
+                       or t.endswith(k.lower()) for t in tab)}
 
 
 # --------------------------------------------------------------------------

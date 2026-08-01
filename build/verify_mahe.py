@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Wort-für-Wort-Abgleich unserer Besonderheiten mit mahe-online.de.
+Wort-für-Wort-Abgleich unserer Inhalte mit mahe-online.de.
 
     python3 build/verify_mahe.py            # gegen den Cache
-    python3 build/verify_mahe.py --fresh    # Seiten vorher neu laden
+    python3 build/verify_mahe.py --fresh    # Seiten und Tabellen neu laden
 
-Verglichen wird der deutsche Text aus data/HL_DEVICE.json und
-data/PANEL_HL_DEVICE.json mit dem, was auf der Herstellerseite steht.
+Geprüft wird beides:
+
+* die Besonderheiten aus data/HL_DEVICE.json und data/PANEL_HL_DEVICE.json
+* die technischen Daten, also jede Zelle jeder Tabelle, die eine Produktseite
+  zeigt (data/SPECMAP.json → build/mahe_specs.json)
+
 Erlaubt sind nur die bewusst vorgenommenen Korrekturen: Schweizer „ss" statt
 „ß" und die Tippfehler von MAHE (Relegung, Syniergie, Reiningen, Funkcion,
-Eein, Sprizerfreier, Elektoden, „11,5 KG2", „CV und CW").
+Eein, Sprizerfreier, Elektoden, „11,5 KG2", „CV und CW", Einschaultdauer,
+Nezabsicherung, Ausgangstrom, „230V, 60/60Hz").
 
-Jede andere Abweichung ist ein Fehler und wird gemeldet.
+Jede andere Abweichung ist ein Fehler und wird gemeldet. Am Ende steht, an
+welchen Stellen wir bewusst von MAHE abweichen — die Liste soll kurz bleiben.
 """
 
 import json
@@ -95,12 +101,52 @@ def expect(keys):
     return out
 
 
+def specs():
+    """Jede Tabellenzelle gegen MAHE. Rueckgabe: (Fehler, bewusste Abweichungen)."""
+    bad, deviations = 0, []
+    print("\nTECHNISCHE DATEN")
+    for pid in sorted(k for k in C.SPECMAP if not k.startswith("_")):
+        p = C.BY_ID.get(pid)
+        if not p:
+            print(f"  UNBEKANNTES PRODUKT  {pid}")
+            bad += 1
+            continue
+        for key in C.SPECMAP[pid]:
+            raw = C.MAHE_SPECS.get(key)
+            if not raw:
+                print(f"  FEHLT bei MAHE  {pid} -> {key}")
+                bad += 1
+                continue
+            cols = [c["key"] for c in raw["columns"]]
+            n_dev, n_cell = 0, 0
+            for r in raw["rows"]:
+                for src, ours, wo in [(r.get("model", ""), C._specK(r.get("model", "")), "Zeile")] + \
+                                     [(r.get(c, ""), C._specV(r.get(c, "")), "Wert") for c in cols]:
+                    n_cell += 1
+                    if src.strip() == ours:
+                        continue
+                    n_dev += 1
+                    rule = ("leer → –" if ours == C.SPEC_EMPTY and src.strip() in ("", "-", "--", "---")
+                            else next((f"{a} → {b}" for a, b in C.SPEC_FIX_K + C.SPEC_FIX_V
+                                       if a in src), ""))
+                    if not rule:
+                        print(f"  UNERKLAERT  {pid}/{key} {wo}: {src!r} -> {ours!r}")
+                        bad += 1
+                    elif rule != "leer → –":
+                        deviations.append(f"{pid}/{key}: {rule}")
+            print(f"  ok   {pid + ' -> ' + key:44} {len(raw['rows']):>2} Zeilen "
+                  f"× {len(cols)} Varianten, {n_cell} Zellen")
+    return bad, sorted(set(deviations))
+
+
 def main():
     if "--fresh" in sys.argv:
-        print("Seiten neu laden …")
-        subprocess.run([sys.executable, str(C.BUILD / "scrape_mahe.py")],
-                       capture_output=True)
+        print("Seiten und Tabellen neu laden …")
+        for script in ("scrape_mahe.py", "scrape_specs.py"):
+            subprocess.run([sys.executable, str(C.BUILD / script), "--fresh"],
+                           capture_output=True)
         globals()["SRC"] = json.loads((C.BUILD / "mahe_besonderheiten.json").read_text("utf-8"))
+        C.MAHE_SPECS = json.loads((C.BUILD / "mahe_specs.json").read_text("utf-8"))
 
     ours_dev = json.loads((C.DATA / "HL_DEVICE.json").read_text("utf-8"))
     ours_pan = json.loads((C.DATA / "PANEL_HL_DEVICE.json").read_text("utf-8"))
@@ -136,8 +182,15 @@ def main():
         cmp(pk, ours_pan.get(pk, {}).get("de", []), [key])
 
     n = len(DEV) + len(DEV_MULTI) + len(PANEL)
-    print(f"\n{n - bad}/{n} stimmen wörtlich mit mahe-online.de überein")
-    sys.exit(1 if bad else 0)
+    print(f"\n{n - bad}/{n} Besonderheiten stimmen wörtlich mit mahe-online.de überein")
+
+    sbad, deviations = specs()
+    if deviations:
+        print("\nBewusst anders als MAHE:")
+        for d in deviations:
+            print("  " + d)
+    print(f"\n{sbad} Fehler in den technischen Daten")
+    sys.exit(1 if bad or sbad else 0)
 
 
 if __name__ == "__main__":

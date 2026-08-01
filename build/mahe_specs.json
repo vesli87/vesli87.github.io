@@ -1,275 +1,286 @@
 {
  "beta-digital-synergy": {
   "table_id": "8808",
+  "title": "Beta digital SYN",
   "columns": [
-   "200",
-   "240",
-   "300"
+   {
+    "key": "200",
+    "title": "200"
+   },
+   {
+    "key": "240",
+    "title": "240"
+   },
+   {
+    "key": "300",
+    "title": "300"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "200": "-",
     "240": "max 300A",
-    "300": "-",
-    "model": "Upgrade"
+    "300": "-"
    },
    {
+    "model": "Netzspannung",
     "200": "230V, 50/60Hz",
     "240": "3x400V, 50/60Hz",
-    "300": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "300": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "200": "16A",
     "240": "16A",
-    "300": "16A",
-    "model": "Netzabsicherung"
+    "300": "16A"
    },
    {
+    "model": "Leerlaufspannung",
     "200": "80V",
     "240": "80V",
-    "300": "80V",
-    "model": "Leerlaufspannung"
+    "300": "80V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "200": "16A",
     "240": "13A",
-    "300": "16A",
-    "model": "Effektiver Eingangsstrom"
+    "300": "16A"
    },
    {
+    "model": "Schweißstrombereich",
     "200": "4-200A",
     "240": "4-240A",
-    "300": "4-300A",
-    "model": "Schweißstrombereich"
+    "300": "4-300A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "200": "35% / 200A",
     "240": "-",
-    "300": "40% / 300A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "300": "40% / 300A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "200": "150A",
     "240": "250A",
-    "300": "250A",
-    "model": "Strom bei 60% ED @40C"
+    "300": "250A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "200": "120A",
     "240": "200A",
-    "300": "200A",
-    "model": "Strom bei 100% ED @40C"
+    "300": "200A"
    },
    {
+    "model": "Maße",
     "200": "235x170x385mm",
     "240": "293x206x476mm",
-    "300": "293x206x476mm",
-    "model": "Maße"
+    "300": "293x206x476mm"
    },
    {
+    "model": "Gewicht",
     "200": "11,5kg",
     "240": "18,5kg",
-    "300": "18,5kg",
-    "model": "Gewicht"
+    "300": "18,5kg"
    },
    {
+    "model": "Schutzklasse",
     "200": "IP23",
     "240": "IP23",
-    "300": "IP23",
-    "model": "Schutzklasse"
+    "300": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "200": "CE",
     "240": "CE",
-    "300": "CE",
-    "model": "Konformitätszeichen"
+    "300": "CE"
    }
   ]
  },
  "beta-digital": {
   "table_id": "8806",
+  "title": "Beta digital",
   "columns": [
-   "200",
-   "240",
-   "300"
+   {
+    "key": "240",
+    "title": "240"
+   },
+   {
+    "key": "300",
+    "title": "300"
+   }
   ],
   "rows": [
    {
-    "200": "-",
+    "model": "Upgrade",
     "240": "max 300A",
-    "300": "-",
-    "model": "Upgrade"
+    "300": "-"
    },
    {
-    "200": "230V, 50/60Hz",
+    "model": "Netzspannung",
     "240": "3x400V, 50/60Hz",
-    "300": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "300": "3x400V, 50/60Hz"
    },
    {
-    "200": "16A",
+    "model": "Netzabsicherung",
     "240": "16A",
-    "300": "16A",
-    "model": "Netzabsicherung"
+    "300": "16A"
    },
    {
-    "200": "80V",
+    "model": "Leerlaufspannung",
     "240": "80V",
-    "300": "80V",
-    "model": "Leerlaufspannung"
+    "300": "80V"
    },
    {
-    "200": "16A",
+    "model": "Effektiver Eingangsstrom",
     "240": "13A",
-    "300": "16A",
-    "model": "Effektiver Eingangsstrom"
+    "300": "16A"
    },
    {
-    "200": "4-200A",
+    "model": "Schweißstrombereich",
     "240": "4-240A",
-    "300": "4-300A",
-    "model": "Schweißstrombereich"
+    "300": "4-300A"
    },
    {
-    "200": "35% / 200A",
+    "model": "Einschaltdauer bei max. Strom @40C",
     "240": "-",
-    "300": "40% / 300A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "300": "40% / 300A"
    },
    {
-    "200": "150A",
+    "model": "Strom bei 60% ED @40C",
     "240": "250A",
-    "300": "250A",
-    "model": "Strom bei 60% ED @40C"
+    "300": "250A"
    },
    {
-    "200": "120A",
+    "model": "Strom bei 100% ED @40C",
     "240": "200A",
-    "300": "200A",
-    "model": "Strom bei 100% ED @40C"
+    "300": "200A"
    },
    {
-    "200": "235x170x385mm",
+    "model": "Maße",
     "240": "293x206x476mm",
-    "300": "293x206x476mm",
-    "model": "Maße"
+    "300": "293x206x476mm"
    },
    {
-    "200": "11,5kg",
+    "model": "Gewicht",
     "240": "18,5kg",
-    "300": "18,5kg",
-    "model": "Gewicht"
+    "300": "18,5kg"
    },
    {
-    "200": "IP23",
+    "model": "Schutzklasse",
     "240": "IP23",
-    "300": "IP23",
-    "model": "Schutzklasse"
+    "300": "IP23"
    },
    {
-    "200": "CE",
+    "model": "Konformitätszeichen",
     "240": "CE",
-    "300": "CE",
-    "model": "Konformitätszeichen"
+    "300": "CE"
    },
    {
-    "200": "S",
+    "model": "Sicherungsklasse",
     "240": "S",
-    "300": "S",
-    "model": "Sicherungsklasse"
+    "300": "S"
    }
   ]
  },
  "beta-dx": {
   "table_id": "12264",
+  "title": "Beta DX",
   "columns": [
-   "200",
-   "2500",
-   "3000"
+   {
+    "key": "200",
+    "title": "180"
+   },
+   {
+    "key": "2500",
+    "title": "220"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "200": "220A",
-    "2500": "-",
-    "model": "Upgrade"
+    "2500": "-"
    },
    {
+    "model": "Netzspannung",
     "200": "230V, 50/60Hz",
-    "2500": "230V, 50/60Hz",
-    "model": "Netzspannung"
+    "2500": "230V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "200": "16A",
-    "2500": "16A",
-    "3000": "16A",
-    "model": "Netzabsicherung"
+    "2500": "16A"
    },
    {
+    "model": "Leerlaufspannung",
     "200": "89V",
-    "2500": "89V",
-    "model": "Leerlaufspannung"
+    "2500": "89V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "200": "16A",
-    "2500": "16A",
-    "model": "Effektiver Eingangsstrom"
+    "2500": "16A"
    },
    {
+    "model": "Schweißstrombereich",
     "200": "4-180A",
-    "2500": "4-220A",
-    "model": "Schweißstrombereich"
+    "2500": "4-220A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "200": "30% / 180A",
-    "2500": "20% / 220A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "2500": "20% / 220A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "200": "160A",
-    "2500": "160A",
-    "model": "Strom bei 60% ED @40C"
+    "2500": "160A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "200": "130A",
-    "2500": "130A",
-    "model": "Strom bei 100% ED @40C"
+    "2500": "130A"
    },
    {
+    "model": "Maße",
     "200": "460x215x285mm",
-    "2500": "460x215x285mm",
-    "model": "Maße"
+    "2500": "460x215x285mm"
    },
    {
+    "model": "Gewicht",
     "200": "12.5kg",
-    "2500": "12.5kg",
-    "model": "Gewicht"
+    "2500": "12.5kg"
    },
    {
+    "model": "Schutzklasse",
     "200": "IP23",
-    "2500": "IP23",
-    "3000": "IP23",
-    "model": "Schutzklasse"
+    "2500": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "200": "CE",
-    "2500": "CE",
-    "3000": "CE",
-    "model": "Konformitätszeichen"
+    "2500": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "200": "S",
-    "2500": "S",
-    "3000": "S",
-    "model": "Sicherungsklasse"
+    "2500": "S"
    }
   ]
  },
  "beta-omega-cwk-200": {
   "table_id": "8807",
+  "title": "Beta digital CWK",
   "columns": [
-   "200_cwk",
-   "omega_200_cwk"
+   {
+    "key": "200_cwk",
+    "title": "Beta digital 200 CWK"
+   },
+   {
+    "key": "omega_200_cwk",
+    "title": "Omega 200 CWK"
+   }
   ],
   "rows": [
    {
@@ -346,136 +357,138 @@
  },
  "cmig": {
   "table_id": "8802",
+  "title": "C-MIG",
   "columns": [
-   "2500",
-   "3000",
-   "4000",
-   "4000_cwk",
-   "4000_wwk",
-   "5000_wwk"
+   {
+    "key": "3000",
+    "title": "3300"
+   },
+   {
+    "key": "4000",
+    "title": "4000"
+   },
+   {
+    "key": "4000_cwk",
+    "title": "4000 CWK"
+   },
+   {
+    "key": "4000_wwk",
+    "title": "4000 WWK"
+   },
+   {
+    "key": "5000_wwk",
+    "title": "5000 WWK"
+   }
   ],
   "rows": [
    {
-    "2500": "3x400V, 50/60Hz",
+    "model": "Netzspannung",
     "3000": "3x400V, 50/60Hz",
     "4000": "3x400V, 50/60Hz",
-    "model": "Netzspannung",
     "4000_cwk": "3x400V, 50/60Hz",
     "4000_wwk": "3x400V, 50/60Hz",
     "5000_wwk": "3x400V, 50/60Hz"
    },
    {
-    "2500": "10A",
+    "model": "Netzabsicherung",
     "3000": "16A",
     "4000": "25A",
-    "model": "Netzabsicherung",
     "4000_cwk": "25A",
     "4000_wwk": "25A",
     "5000_wwk": "32A"
    },
    {
-    "2500": "34V",
+    "model": "Leerlaufspannung",
     "3000": "38V",
     "4000": "44V",
-    "model": "Leerlaufspannung",
     "4000_cwk": "44V",
     "4000_wwk": "44V",
     "5000_wwk": "48V"
    },
    {
-    "2500": "8,2A",
+    "model": "Effektiver Eingangsstrom",
     "3000": "11A",
     "4000": "21A",
-    "model": "Effektiver Eingangsstrom",
     "4000_cwk": "21A",
     "4000_wwk": "21A",
     "5000_wwk": "30A"
    },
    {
-    "2500": "20-280A",
+    "model": "Schweißstrombereich",
     "3000": "20-330A",
     "4000": "20-400A",
-    "model": "Schweißstrombereich",
     "4000_cwk": "20-400A",
     "4000_wwk": "20-400A",
     "5000_wwk": "20-500A"
    },
    {
-    "2500": "10",
+    "model": "Schweißstufen",
     "3000": "12",
     "4000": "30",
-    "model": "Schweißstufen",
     "4000_cwk": "30",
     "4000_wwk": "30",
     "5000_wwk": "36"
    },
    {
-    "2500": "30% / 280A",
+    "model": "Einschaltdauer bei max. Strom @40C",
     "3000": "35% / 330A",
     "4000": "-",
-    "model": "Einschaltdauer bei max. Strom @40C",
     "4000_cwk": "-",
     "4000_wwk": "-",
     "5000_wwk": "-"
    },
    {
-    "2500": "210A",
+    "model": "Strom bei 60% ED @40C",
     "3000": "250A",
     "4000": "400A",
-    "model": "Strom bei 60% ED @40C",
     "4000_cwk": "400A",
     "4000_wwk": "400A",
     "5000_wwk": "500A"
    },
    {
-    "2500": "150A",
+    "model": "Strom bei 100% ED @40C",
     "3000": "190A",
     "4000": "300A",
-    "model": "Strom bei 100% ED @40C",
     "4000_cwk": "300A",
     "4000_wwk": "300A",
     "5000_wwk": "380A"
    },
    {
+    "model": "Maße",
     "3000": "840x500x900mm",
     "4000": "875x520x804mm",
-    "model": "Maße",
     "4000_cwk": "875x520x804mm",
     "4000_wwk": "1375x520x804mm",
     "5000_wwk": "1375x630x785mm"
    },
    {
-    "2500": "71kg",
+    "model": "Gewicht",
     "3000": "72kg",
     "4000": "139kg",
-    "model": "Gewicht",
     "4000_cwk": "145kg",
     "4000_wwk": "160kg",
     "5000_wwk": "170kg"
    },
    {
-    "2500": "IP23",
+    "model": "Schutzklasse",
     "3000": "IP23",
     "4000": "IP23",
-    "model": "Schutzklasse",
     "4000_cwk": "IP23",
     "4000_wwk": "IP23",
     "5000_wwk": "IP23"
    },
    {
-    "2500": "CE",
+    "model": "Konformitätszeichen",
     "3000": "CE",
     "4000": "CE",
-    "model": "Konformitätszeichen",
     "4000_cwk": "CE",
     "4000_wwk": "CE",
     "5000_wwk": "CE"
    },
    {
-    "2500": "S",
+    "model": "Sicherungsklasse",
     "3000": "S",
     "4000": "S",
-    "model": "Sicherungsklasse",
     "4000_cwk": "S",
     "4000_wwk": "S",
     "5000_wwk": "S"
@@ -484,668 +497,582 @@
  },
  "d-mig": {
   "table_id": "11359",
+  "title": "EcoMIG Digital",
   "columns": [
-   "2000",
-   "3000",
-   "3500",
-   "4000"
+   {
+    "key": "3000",
+    "title": "2000"
+   },
+   {
+    "key": "3500",
+    "title": "3000"
+   }
   ],
   "rows": [
    {
-    "2000": "-",
-    "3000": "-",
     "model": "Upgrade",
-    "3500": "-\t\t\t\t"
+    "3000": "-",
+    "3500": "-"
    },
    {
-    "2000": "230V, 50/60Hz",
-    "3000": "230V, 50/60Hz",
     "model": "Netzspannung",
-    "3500": "3x400V, 50/60Hz\t\t\t\t",
-    "4000": "3x400V, 50/60Hz\t\t\t\t"
+    "3000": "230V, 50/60Hz",
+    "3500": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "3000": "16A",
-    "3500": "16A",
-    "model": "Netzabsicherung"
+    "3500": "16A"
    },
    {
-    "2000": "55V",
-    "3000": "55V",
     "model": "Leerlaufspannung",
-    "3500": "76V",
-    "4000": "76V"
+    "3000": "55V",
+    "3500": "76V"
    },
    {
-    "2000": "15A",
-    "3000": "15A",
     "model": "Effektiver Eingangsstrom",
-    "3500": "12,5A",
-    "4000": "21A"
+    "3000": "15A",
+    "3500": "12,5A"
    },
    {
-    "2000": "10 - 200A",
-    "3000": "10 - 200A",
     "model": "Schweißstrombereich",
-    "3500": "10-300A\t\t\t\t",
-    "4000": "10-400A\t\t\t\t"
+    "3000": "10 - 200A",
+    "3500": "10-300A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "3000": "20%/200A",
-    "3500": "30% - 300A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "3500": "30% - 300A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "3000": "140A",
-    "3500": "240A\t\t\t\t",
-    "model": "Strom bei 60% ED @40C"
+    "3500": "240A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "3000": "120A",
-    "3500": "180A",
-    "model": "Strom bei 100% ED @40C"
+    "3500": "180A"
    },
    {
+    "model": "Maße (HxBxL)",
     "3000": "635x400x880mm",
-    "3500": "635x400x880mm",
-    "model": "Maße (HxBxL)"
+    "3500": "635x400x880mm"
    },
    {
+    "model": "Gewicht",
     "3000": "32kg",
-    "3500": "34kg",
-    "model": "Gewicht"
+    "3500": "34kg"
    },
    {
-    "2000": "IP23",
-    "3000": "IP23",
     "model": "Schutzklasse",
-    "3500": "IP23\t\t\t\t",
-    "4000": "IP23\t\t\t\t"
+    "3000": "IP23",
+    "3500": "IP23"
    },
    {
-    "2000": "CE",
-    "3000": "CE",
     "model": "Konformitätszeichen",
-    "3500": "CE",
-    "4000": "CE"
+    "3000": "CE",
+    "3500": "CE"
    },
    {
-    "2000": "S",
-    "3000": "S",
     "model": "Sicherungsklasse",
-    "3500": "S",
-    "4000": "S"
+    "3000": "S",
+    "3500": "S"
    }
   ]
  },
  "delta-digital-ds": {
   "table_id": "8814",
+  "title": "Delta Digital DS",
   "columns": [
-   "4000",
-   "5000",
-   "6000"
+   {
+    "key": "4000",
+    "title": "4000"
+   },
+   {
+    "key": "5000",
+    "title": "5000"
+   },
+   {
+    "key": "6000",
+    "title": "6000"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "4000": "max 600A",
     "5000": "max 600A",
-    "6000": "-",
-    "model": "Upgrade"
+    "6000": "-"
    },
    {
+    "model": "Netzspannung",
     "4000": "3x400V, 50/60Hz",
     "5000": "3x400V, 50/60Hz",
-    "6000": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "6000": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "4000": "25A",
     "5000": "32A",
-    "6000": "40A",
-    "model": "Netzabsicherung"
+    "6000": "40A"
    },
    {
+    "model": "Leerlaufspannung",
     "4000": "62V",
     "5000": "62V",
-    "6000": "62V",
-    "model": "Leerlaufspannung"
+    "6000": "62V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "4000": "25A",
     "5000": "32A",
-    "6000": "37A",
-    "model": "Effektiver Eingangsstrom"
+    "6000": "37A"
    },
    {
+    "model": "Schweißstrombereich",
     "4000": "4-400A",
     "5000": "4-500A",
-    "6000": "4-600A",
-    "model": "Schweißstrombereich"
+    "6000": "4-600A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "4000": "-",
     "5000": "50% / 500A",
-    "6000": "40% / 600A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "6000": "40% / 600A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "4000": "400A",
     "5000": "450A",
-    "6000": "520A",
-    "model": "Strom bei 60% ED @40C"
+    "6000": "520A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "4000": "300A",
     "5000": "380A",
-    "6000": "420A",
-    "model": "Strom bei 100% ED @40C"
+    "6000": "420A"
    },
    {
+    "model": "Maße",
     "4000": "500x220x365mm",
     "5000": "500x220x365mm",
-    "6000": "500x220x365mm",
-    "model": "Maße"
+    "6000": "500x220x365mm"
    },
    {
+    "model": "Gewicht",
     "4000": "24kg",
     "5000": "24kg",
-    "6000": "24kg",
-    "model": "Gewicht"
+    "6000": "24kg"
    },
    {
+    "model": "Schutzklasse",
     "4000": "IP23",
     "5000": "IP23",
-    "6000": "IP23",
-    "model": "Schutzklasse"
+    "6000": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "4000": "CE",
     "5000": "CE",
-    "6000": "CE",
-    "model": "Konformitätszeichen"
+    "6000": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "4000": "S",
     "5000": "S",
-    "6000": "S",
-    "model": "Sicherungsklasse"
+    "6000": "S"
    }
   ]
  },
  "delta-digital": {
   "table_id": "8813",
+  "title": "Delta Digital",
   "columns": [
-   "1800",
-   "2000",
-   "3000",
-   "4000",
-   "5000",
-   "6000"
+   {
+    "key": "2000",
+    "title": "2000"
+   },
+   {
+    "key": "3000",
+    "title": "3000"
+   },
+   {
+    "key": "4000",
+    "title": "4000"
+   },
+   {
+    "key": "5000",
+    "title": "5000"
+   },
+   {
+    "key": "6000",
+    "title": "6000"
+   }
   ],
   "rows": [
    {
-    "1800": "-",
+    "model": "Upgrade",
     "2000": "-",
     "3000": "-",
     "4000": "max 600A",
     "5000": "max 600A",
-    "6000": "-",
-    "model": "Upgrade"
+    "6000": "-"
    },
    {
-    "1800": "230V, 50/60Hz",
+    "model": "Netzspannung",
     "2000": "230V, 50/60Hz",
     "3000": "3x400V, 50/60Hz",
     "4000": "3x400V, 50/60Hz",
     "5000": "3x400V, 50/60Hz",
-    "6000": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "6000": "3x400V, 50/60Hz"
    },
    {
-    "1800": "16A",
+    "model": "Netzabsicherung",
     "2000": "20A",
     "3000": "16A",
     "4000": "25A",
     "5000": "32A",
-    "6000": "40A",
-    "model": "Netzabsicherung"
+    "6000": "40A"
    },
    {
-    "1800": "95V",
+    "model": "Leerlaufspannung",
     "2000": "95V",
     "3000": "95V",
     "4000": "95V",
     "5000": "95V",
-    "6000": "95V",
-    "model": "Leerlaufspannung"
+    "6000": "95V"
    },
    {
-    "1800": "15A",
+    "model": "Effektiver Eingangsstrom",
     "2000": "20A",
     "3000": "16A",
     "4000": "25A",
     "5000": "32A",
-    "6000": "37A",
-    "model": "Effektiver Eingangsstrom"
+    "6000": "37A"
    },
    {
-    "1800": "4-160A",
+    "model": "Schweißstrombereich",
     "2000": "4-200A",
     "3000": "4-300A",
     "4000": "4-400A",
     "5000": "4-500A",
-    "6000": "4-600A",
-    "model": "Schweißstrombereich"
+    "6000": "4-600A"
    },
    {
-    "1800": "25% / 160A",
+    "model": "Einschaltdauer bei max. Strom @40C",
     "2000": "30% / 200A",
     "3000": "-",
     "4000": "-",
     "5000": "50% / 500A",
-    "6000": "40% / 600A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "6000": "40% / 600A"
    },
    {
-    "1800": "120A",
+    "model": "Strom bei 60% ED @40C",
     "2000": "150A",
     "3000": "300A",
     "4000": "400A",
     "5000": "450A",
-    "6000": "520A",
-    "model": "Strom bei 60% ED @40C"
+    "6000": "520A"
    },
    {
-    "1800": "100A",
+    "model": "Strom bei 100% ED @40C",
     "2000": "120A",
     "3000": "230A",
     "4000": "300A",
     "5000": "380A",
-    "6000": "420A",
-    "model": "Strom bei 100% ED @40C"
+    "6000": "420A"
    },
    {
-    "1800": "213x133x350mm",
+    "model": "Maße",
     "2000": "247x180x400mm",
     "3000": "247x180x400mm",
     "4000": "500x220x365mm",
     "5000": "500x220x365mm",
-    "6000": "500x220x365mm",
-    "model": "Maße"
+    "6000": "500x220x365mm"
    },
    {
-    "1800": "7kg",
+    "model": "Gewicht",
     "2000": "14kg",
     "3000": "14kg",
     "4000": "24kg",
     "5000": "24kg",
-    "6000": "24kg",
-    "model": "Gewicht"
+    "6000": "24kg"
    },
    {
-    "1800": "IP23",
+    "model": "Schutzklasse",
     "2000": "IP23",
     "3000": "IP23",
     "4000": "IP23",
     "5000": "IP23",
-    "6000": "IP23",
-    "model": "Schutzklasse"
+    "6000": "IP23"
    },
    {
-    "1800": "CE",
+    "model": "Konformitätszeichen",
     "2000": "CE",
     "3000": "CE",
     "4000": "CE",
     "5000": "CE",
-    "6000": "CE",
-    "model": "Konformitätszeichen"
+    "6000": "CE"
    },
    {
-    "1800": "S",
+    "model": "Sicherungsklasse",
     "2000": "S",
     "3000": "S",
     "4000": "S",
     "5000": "S",
-    "6000": "S",
-    "model": "Sicherungsklasse"
+    "6000": "S"
    }
   ]
  },
  "delta": {
   "table_id": "8812",
+  "title": "Delta",
   "columns": [
-   "1800",
-   "3000",
-   "4000",
-   "5000"
+   {
+    "key": "1800",
+    "title": "1800"
+   }
   ],
   "rows": [
    {
-    "1800": "-",
-    "3000": "-",
-    "4000": "max 600A",
-    "5000": "max 600A",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "1800": "-"
    },
    {
-    "1800": "230V, 50/60Hz",
-    "3000": "3x400V, 50/60Hz",
-    "4000": "3x400V, 50/60Hz",
-    "5000": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "1800": "230V, 50/60Hz"
    },
    {
-    "1800": "16A",
-    "3000": "16A",
-    "4000": "25A",
-    "5000": "32A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "1800": "16A"
    },
    {
-    "1800": "95V",
-    "3000": "95V",
-    "4000": "95V",
-    "5000": "95V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "1800": "95V"
    },
    {
-    "1800": "15A",
-    "3000": "16A",
-    "4000": "25A",
-    "5000": "32A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "1800": "15A"
    },
    {
-    "1800": "4-160A",
-    "3000": "4-300A",
-    "4000": "4-400A",
-    "5000": "4-500A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "1800": "4-160A"
    },
    {
-    "1800": "25% / 160A",
-    "3000": "-",
-    "4000": "-",
-    "5000": "50% / 500A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "1800": "25% / 160A"
    },
    {
-    "1800": "120A",
-    "3000": "300A",
-    "4000": "400A",
-    "5000": "450A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "1800": "120A"
    },
    {
-    "1800": "100A",
-    "3000": "230A",
-    "4000": "300A",
-    "5000": "380A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "1800": "100A"
    },
    {
-    "1800": "231x133x350mm",
-    "3000": "247x180x400mm",
-    "4000": "500x220x365mm",
-    "5000": "500x220x365mm",
-    "model": "Maße"
+    "model": "Maße",
+    "1800": "231x133x350mm"
    },
    {
-    "1800": "7kg",
-    "3000": "14kg",
-    "4000": "24kg",
-    "5000": "24kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "1800": "7kg"
    },
    {
-    "1800": "IP23",
-    "3000": "IP23",
-    "4000": "IP23",
-    "5000": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "1800": "IP23"
    },
    {
-    "1800": "CE",
-    "3000": "CE",
-    "4000": "CE",
-    "5000": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "1800": "CE"
    },
    {
-    "1800": "S",
-    "3000": "S",
-    "4000": "S",
-    "5000": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "1800": "S"
    }
   ]
  },
  "ecomig": {
   "table_id": "8784",
+  "title": "EcoMIG",
   "columns": [
-   "2000",
-   "3000",
-   "3500",
-   "4000"
+   {
+    "key": "3000",
+    "title": "3000"
+   }
   ],
   "rows": [
    {
-    "2000": "-",
-    "3000": "-",
     "model": "Upgrade",
-    "3500": "max 400A\t\t\t\t"
+    "3000": "-"
    },
    {
-    "2000": "230V, 50/60Hz",
-    "3000": "3x400V, 50/60Hz",
     "model": "Netzspannung",
-    "3500": "3x400V, 50/60Hz\t\t\t\t",
-    "4000": "3x400V, 50/60Hz\t\t\t\t"
+    "3000": "3x400V, 50/60Hz"
    },
    {
-    "2000": "16A",
-    "3000": "16A",
     "model": "Netzabsicherung",
-    "3500": "25A",
-    "4000": "25A"
+    "3000": "16A"
    },
    {
-    "2000": "55V",
-    "3000": "76V",
     "model": "Leerlaufspannung",
-    "3500": "76V",
-    "4000": "76V"
+    "3000": "76V"
    },
    {
-    "2000": "16A",
-    "3000": "12,5A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "3000": "12,5A"
    },
    {
-    "2000": "10 - 200A",
-    "3000": "10 - 300A",
     "model": "Schweißstrombereich",
-    "3500": "10-350A\t\t\t\t",
-    "4000": "10-400A\t\t\t\t"
+    "3000": "10 - 300A"
    },
    {
-    "2000": "20% / 200A",
-    "3000": "40% / 300A",
     "model": "Einschaltdauer bei max. Strom @40C",
-    "3500": null,
-    "4000": "45% / 400A\t\t\t\t"
+    "3000": "40% / 300A"
    },
    {
-    "2000": "140A",
-    "3000": "240A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "3000": "240A"
    },
    {
-    "2000": "120A",
-    "3000": "180A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "3000": "180A"
    },
    {
-    "2000": "860x430x900mm",
-    "3000": "860x430x900mm",
-    "model": "Maße (HxBxL)"
+    "model": "Maße (HxBxL)",
+    "3000": "860x430x900mm"
    },
    {
-    "2000": "40kg",
-    "3000": "48kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "3000": "48kg"
    },
    {
-    "2000": "IP23",
-    "3000": "IP23",
     "model": "Schutzklasse",
-    "3500": "IP23\t\t\t\t",
-    "4000": "IP23\t\t\t\t"
+    "3000": "IP23"
    },
    {
-    "2000": "CE",
-    "3000": "CE",
     "model": "Konformitätszeichen",
-    "3500": "CE",
-    "4000": "CE"
+    "3000": "CE"
    },
    {
-    "2000": "S",
-    "3000": "S",
     "model": "Sicherungsklasse",
-    "3500": "S",
-    "4000": "S"
+    "3000": "S"
    }
   ]
  },
  "ecopulse": {
   "table_id": "9614",
+  "title": "EcoPulse",
   "columns": [
-   "2000",
-   "3000",
-   "3500",
-   "4000"
+   {
+    "key": "3000",
+    "title": "3000"
+   },
+   {
+    "key": "3500",
+    "title": "3500 CWK"
+   }
   ],
   "rows": [
    {
-    "2000": "-",
-    "3000": "-",
     "model": "Upgrade",
-    "3500": "max 400A\t\t\t\t"
+    "3000": "-",
+    "3500": "max 400A"
    },
    {
-    "2000": "230V, 50/60Hz",
-    "3000": "3x400V, 50/60Hz",
     "model": "Netzspannung",
-    "3500": "3x400V, 50/60Hz\t\t\t\t",
-    "4000": "3x400V, 50/60Hz\t\t\t\t"
+    "3000": "3x400V, 50/60Hz",
+    "3500": "3x400V, 50/60Hz"
    },
    {
-    "2000": "16A",
-    "3000": "16A",
     "model": "Netzabsicherung",
-    "3500": "25A",
-    "4000": "25A"
+    "3000": "16A",
+    "3500": "25A"
    },
    {
-    "2000": "55V",
-    "3000": "76V",
     "model": "Leerlaufspannung",
-    "3500": "76V",
-    "4000": "76V"
+    "3000": "76V",
+    "3500": "76V"
    },
    {
-    "2000": "15A",
-    "3000": "12,5A",
     "model": "Effektiver Eingangsstrom",
-    "3500": "20A",
-    "4000": "21A"
+    "3000": "12,5A",
+    "3500": "20A"
    },
    {
-    "2000": "10 - 200A",
-    "3000": "10 - 300A",
     "model": "Schweißstrombereich",
-    "3500": "10-350A\t\t\t\t",
-    "4000": "10-400A\t\t\t\t"
+    "3000": "10 - 300A",
+    "3500": "10-350A"
    },
    {
-    "2000": "20% / 200A",
-    "3000": "40% / 300A",
     "model": "Einschaltdauer bei max. Strom @40C",
-    "3500": null,
-    "4000": "45% / 400A\t\t\t\t"
+    "3000": "40% / 300A",
+    "3500": "None"
    },
    {
-    "2000": "130A",
-    "3000": "240A",
     "model": "Strom bei 60% ED @40C",
-    "3500": "350A\t\t\t\t",
-    "4000": "360A"
+    "3000": "240A",
+    "3500": "350A"
    },
    {
-    "2000": "100A",
-    "3000": "180A",
     "model": "Strom bei 100% ED @40C",
-    "3500": "300A",
-    "4000": "300A"
+    "3000": "180A",
+    "3500": "300A"
    },
    {
-    "2000": "840x500x900mm",
-    "3000": "840x500x900mm",
     "model": "Maße Gasgekühlt (HxBxL)",
-    "3500": "-",
-    "4000": "-"
+    "3000": "840x500x900mm",
+    "3500": "-"
    },
    {
-    "2000": "-",
-    "3000": "920x350x740mm",
     "model": "Maße Wassergekühlt (HxBxL)",
-    "3500": "920x350x740mm\t\t\t\t",
-    "4000": "920x350x740mm\t\t\t\t"
+    "3000": "920x350x740mm",
+    "3500": "920x350x740mm"
    },
    {
-    "2000": "40kg",
+    "model": "Gewicht Gasgekühlt",
     "3000": "48kg",
-    "model": "Gewicht Gasgekühlt ",
-    "3500": "-",
-    "4000": "-"
+    "3500": "-"
    },
    {
-    "2000": "-",
+    "model": "Gewicht Wassergekühlt",
     "3000": "69kg",
-    "model": "Gewicht Wassergekühlt ",
-    "3500": "\t\t\t75kg\t\t\t\t",
-    "4000": "75kg\t\t\t\t"
+    "3500": "75kg"
    },
    {
-    "2000": "IP23",
-    "3000": "IP23",
     "model": "Schutzklasse",
-    "3500": "IP23\t\t\t\t",
-    "4000": "IP23\t\t\t\t"
+    "3000": "IP23",
+    "3500": "IP23"
    },
    {
-    "2000": "CE",
-    "3000": "CE",
     "model": "Konformitätszeichen",
-    "3500": "CE",
-    "4000": "CE"
+    "3000": "CE",
+    "3500": "CE"
    },
    {
-    "2000": "S",
-    "3000": "S",
     "model": "Sicherungsklasse",
-    "3500": "S",
-    "4000": "S"
+    "3000": "S",
+    "3500": "S"
    }
   ]
  },
  "gamma-hvs": {
   "table_id": "8816",
+  "title": "Gamma HVS",
   "columns": [
-   "840_hvs",
-   "1260_hvs",
-   "1680_hvs"
+   {
+    "key": "840_hvs",
+    "title": "840HVS"
+   },
+   {
+    "key": "1260_hvs",
+    "title": "1260HVS"
+   },
+   {
+    "key": "1680_hvs",
+    "title": "1680HVS"
+   }
   ],
   "rows": [
    {
@@ -1236,132 +1163,152 @@
  },
  "gamma": {
   "table_id": "8815",
+  "title": "Gamma",
   "columns": [
-   "840",
-   "1260",
-   "1680",
-   "2100",
-   "2520"
+   {
+    "key": "840",
+    "title": "840"
+   },
+   {
+    "key": "1260",
+    "title": "1260"
+   },
+   {
+    "key": "1680",
+    "title": "1680"
+   },
+   {
+    "key": "2100",
+    "title": "2100"
+   },
+   {
+    "key": "2520",
+    "title": "2520"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "840": "-",
     "1260": "max 1680A",
     "1680": "-",
     "2100": "max 2520A",
-    "2520": "-",
-    "model": "Upgrade"
+    "2520": "-"
    },
    {
+    "model": "Netzspannung",
     "840": "3x400V, 50/60Hz",
     "1260": "3x400V, 50/60Hz",
     "1680": "3x400V, 50/60Hz",
     "2100": "3x400V, 50/60Hz",
-    "2520": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "2520": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "840": "63A",
     "1260": "100A",
     "1680": "150A",
     "2100": "200A",
-    "2520": "200A",
-    "model": "Netzabsicherung"
+    "2520": "200A"
    },
    {
+    "model": "Leerlaufspannung",
     "840": "87V",
     "1260": "87V",
     "1680": "87V",
     "2100": "87V",
-    "2520": "87V",
-    "model": "Leerlaufspannung"
+    "2520": "87V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "840": "53A",
     "1260": "97,5A",
     "1680": "106A",
     "2100": "162A",
-    "2520": "162A",
-    "model": "Effektiver Eingangsstrom"
+    "2520": "162A"
    },
    {
+    "model": "Schweißstrombereich",
     "840": "5-840A",
     "1260": "5-1260A",
     "1680": "5-1680A",
     "2100": "5-2100A",
-    "2520": "5-2520A",
-    "model": "Schweißstrombereich"
+    "2520": "5-2520A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "840": "40% / 840A",
     "1260": "-",
     "1680": "40% / 1680A",
     "2100": "-",
-    "2520": "40% / 2520A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "2520": "40% / 2520A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "840": "720A",
     "1260": "1260A",
     "1680": "1260A",
     "2100": "2100A",
-    "2520": "2100A",
-    "model": "Strom bei 60% ED @40C"
+    "2520": "2100A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "840": "540A",
     "1260": "950A",
     "1680": "950A",
     "2100": "1600A",
-    "2520": "1600A",
-    "model": "Strom bei 100% ED @40C"
+    "2520": "1600A"
    },
    {
+    "model": "Maße",
     "840": "710x230x540mm",
     "1260": "710x480x540mm",
     "1680": "710x480x540mm",
     "2100": "710x740x540mm",
-    "2520": "710x740x540mm",
-    "model": "Maße"
+    "2520": "710x740x540mm"
    },
    {
+    "model": "Gewicht",
     "840": "79,2kg",
     "1260": "114,4kg",
     "1680": "114,4kg",
     "2100": "141,6kg",
-    "2520": "141,6kg",
-    "model": "Gewicht"
+    "2520": "141,6kg"
    },
    {
+    "model": "Schutzklasse",
     "840": "IP23",
     "1260": "IP23",
     "1680": "IP23",
     "2100": "IP23",
-    "2520": "IP23",
-    "model": "Schutzklasse"
+    "2520": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "840": "CE",
     "1260": "CE",
     "1680": "CE",
     "2100": "CE",
-    "2520": "CE",
-    "model": "Konformitätszeichen"
+    "2520": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "840": "S",
     "1260": "S",
     "1680": "S",
     "2100": "S",
-    "2520": "S",
-    "model": "Sicherungsklasse"
+    "2520": "S"
    }
   ]
  },
  "hcs-1-signiergerat": {
   "table_id": "10209",
+  "title": "Signiergerät HCS1",
   "columns": [
-   "hyper_cleaner_st"
+   {
+    "key": "hyper_cleaner_st",
+    "title": "HCS1"
+   }
   ],
   "rows": [
    {
@@ -1412,8 +1359,12 @@
  },
  "hypercleaner-ct-200": {
   "table_id": "8820",
+  "title": "HyperCleaner ST",
   "columns": [
-   "hyper_cleaner_st"
+   {
+    "key": "hyper_cleaner_st",
+    "title": "HyperCleaner ST"
+   }
   ],
   "rows": [
    {
@@ -1464,8 +1415,12 @@
  },
  "hypercleaner-st-plus": {
   "table_id": "8818",
+  "title": "HyperCleaner STplus",
   "columns": [
-   "hyper_cleaner_st_plus"
+   {
+    "key": "hyper_cleaner_st_plus",
+    "title": "HyperCleaner ST Plus"
+   }
   ],
   "rows": [
    {
@@ -1516,8 +1471,12 @@
  },
  "hypercleaner-st-speed": {
   "table_id": "8819",
+  "title": "HyperCleaner STspeed",
   "columns": [
-   "hyper_cleaner_st_speed"
+   {
+    "key": "hyper_cleaner_st_speed",
+    "title": "HyperCleaner ST Speed"
+   }
   ],
   "rows": [
    {
@@ -1568,8 +1527,12 @@
  },
  "hypercleaner-st": {
   "table_id": "8820",
+  "title": "HyperCleaner ST",
   "columns": [
-   "hyper_cleaner_st"
+   {
+    "key": "hyper_cleaner_st",
+    "title": "HyperCleaner ST"
+   }
   ],
   "rows": [
    {
@@ -1620,322 +1583,342 @@
  },
  "hypermig": {
   "table_id": "9183",
+  "title": "HyperMIG CWK",
   "columns": [
-   "300",
-   "350",
-   "400",
-   "450",
-   "500",
-   "600",
-   "550"
+   {
+    "key": "300",
+    "title": "300"
+   },
+   {
+    "key": "350",
+    "title": "350"
+   },
+   {
+    "key": "400",
+    "title": "400"
+   },
+   {
+    "key": "450",
+    "title": "450*"
+   },
+   {
+    "key": "500",
+    "title": "500*"
+   },
+   {
+    "key": "600",
+    "title": "600*"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "300": "max 400A",
     "350": "max 400A",
     "400": "-",
     "450": "max 600A",
     "500": "max 600A",
-    "600": "-",
-    "model": "Upgrade"
+    "600": "-"
    },
    {
+    "model": "Netzspannung",
+    "300": "3x400V, 50/60 Hz",
     "350": "3x400V, 50/60Hz",
     "400": "3x400V, 50/60Hz",
     "450": "3x400V, 50/60Hz",
     "500": "3x400V, 50/60Hz",
-    "550": "3x400V, 50/60Hz",
-    "600": "3x400V, 50/60Hz",
-    "model": "Netzspannung",
-    "300": "3x400V, 50/60 Hz"
+    "600": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "300": "20A",
     "350": "20A",
     "400": "20A",
     "450": "32A",
     "500": "32A",
-    "600": "32A",
-    "model": "Netzabsicherung"
+    "600": "32A"
    },
    {
+    "model": "Leerlaufspannung",
     "300": "105V",
     "350": "105V",
     "400": "105V",
     "450": "105V",
     "500": "105V",
-    "600": "105V",
-    "model": "Leerlaufspannung"
+    "600": "105V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "300": "19A",
     "350": "19A",
     "400": "19A",
     "450": "32A",
     "500": "32A",
-    "600": "32A",
-    "model": "Effektiver Eingangsstrom"
+    "600": "32A"
    },
    {
+    "model": "Schweißstrombereich",
+    "300": "10 - 300A",
     "350": "10 - 350A",
     "400": "10 - 400A",
     "450": "10 - 450A",
     "500": "10 - 500A",
-    "550": "10 - 550A",
-    "600": "10 - 600A",
-    "model": "Schweißstrombereich",
-    "300": "10 - 300A"
+    "600": "10 - 600A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "300": "-",
     "350": "-",
     "400": "45% / 400A",
     "450": "-",
     "500": "70% / 500A",
-    "600": "40% / 600A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "600": "40% / 600A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "300": "-",
     "350": "350A",
     "400": "360A",
     "450": "-",
     "500": "-",
-    "600": "530A",
-    "model": "Strom bei 60% ED @40C"
+    "600": "530A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "300": "300A",
     "350": "300A",
     "400": "300A",
     "450": "450A",
     "500": "450A",
-    "600": "450A",
-    "model": "Strom bei 100% ED @40C"
+    "600": "450A"
    },
    {
+    "model": "Maße CWK/CGK",
     "300": "930x512x864mm",
     "350": "930x512x864mm",
     "400": "930x512x864mm",
     "450": "",
     "500": "",
-    "550": "",
-    "600": "",
-    "model": "Maße CWK/CGK"
+    "600": ""
    },
    {
+    "model": "Maße WWK/WGK",
     "300": "1400x512x864mm",
     "350": "1400x512x864mm",
-    "400": "1400x512x864mm\t\t\t\t",
-    "450": "1400x512x864mm\t\t\t\t",
-    "500": "1400x512x864mm\t\t\t\t",
-    "600": "1400x512x864mm\t\t\t\t",
-    "model": "Maße WWK/WGK"
+    "400": "1400x512x864mm",
+    "450": "1400x512x864mm",
+    "500": "1400x512x864mm",
+    "600": "1400x512x864mm"
    },
    {
+    "model": "Gewicht CGK",
     "300": "65kg",
     "350": "65kg",
     "400": "65kg",
     "450": "",
     "500": "",
-    "600": "",
-    "model": "Gewicht CGK"
+    "600": ""
    },
    {
+    "model": "Gewicht CWK",
     "300": "70kg",
     "350": "70kg",
     "400": "70kg",
     "450": "",
     "500": "",
-    "600": "",
-    "model": "Gewicht CWK"
+    "600": ""
    },
    {
+    "model": "Gewicht WGK",
     "300": "80kg",
     "350": "80kg",
     "400": "80kg",
     "450": "",
     "500": "",
-    "600": "",
-    "model": "Gewicht WGK"
+    "600": ""
    },
    {
+    "model": "Gewicht WWK",
     "300": "85kg",
     "350": "85kg",
     "400": "85kg",
     "450": "92kg",
     "500": "92kg",
-    "600": "92kg",
-    "model": "Gewicht WWK"
+    "600": "92kg"
    },
    {
-    "350": "IP23",
-    "400": "IP23",
-    "450": "IP23",
-    "500": "IP23",
-    "550": "IP23",
-    "600": "IP23",
     "model": "Schutzklasse",
-    "300": "IP23"
-   },
-   {
-    "350": "CE",
-    "400": "CE",
-    "450": "CE",
-    "500": "CE",
-    "550": "CE",
-    "600": "CE",
-    "model": "Konformitätszeichen",
-    "300": "CE"
-   },
-   {
-    "350": "S",
-    "400": "S",
-    "450": "S",
-    "500": "S",
-    "550": "S",
-    "600": "S",
-    "model": "Sicherungsklasse",
-    "300": "S"
-   }
-  ]
- },
- "hypertig-ax": {
-  "table_id": "12146",
-  "columns": [
-   "240",
-   "300",
-   "350",
-   "400",
-   "450",
-   "500",
-   "550",
-   "600"
-  ],
-  "rows": [
-   {
-    "240": "max 350A",
-    "300": "max 350A",
-    "350": "",
-    "model": "Upgrade"
-   },
-   {
-    "240": "3x400V, 50/60Hz",
-    "300": "3x400V, 50/60Hz",
-    "350": "3x400V, 50/60Hz",
-    "400": "3x400V, 50/60Hz",
-    "450": "3x400V, 50/60Hz",
-    "500": "3x400V, 50/60Hz",
-    "550": "3x400V, 50/60Hz",
-    "600": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
-   },
-   {
-    "240": "16A",
-    "300": "20A",
-    "350": "20A",
-    "400": "20A",
-    "model": "Netzabsicherung"
-   },
-   {
-    "240": "42V",
-    "300": "42V",
-    "350": "42V",
-    "model": "Leerlaufspannung"
-   },
-   {
-    "240": "14A",
-    "300": "19A",
-    "350": "20A",
-    "model": "Effektiver Eingangsstrom"
-   },
-   {
-    "240": "4-250A",
-    "300": "4-300A",
-    "350": "4-350A",
-    "400": "4-400A",
-    "model": "Schweißstrombereich"
-   },
-   {
-    "240": "80%",
-    "300": "-",
-    "350": "40% / 350A",
-    "model": "Einschaltdauer bei max. Strom @40C"
-   },
-   {
-    "240": "---",
-    "300": "300A",
-    "350": "300A",
-    "model": "Strom bei 60% ED @40C"
-   },
-   {
-    "240": "230A",
-    "300": "230A",
-    "350": "230A",
-    "model": "Strom bei 100% ED @40C"
-   },
-   {
-    "240": "930x512x864mm",
-    "300": "930x512x864mm",
-    "350": "930x512x864mm",
-    "400": "930x512x864mm",
-    "model": "Maße"
-   },
-   {
-    "240": "82kg",
-    "300": "82kg",
-    "350": "82kg",
-    "model": "Gewicht"
-   },
-   {
-    "240": "IP23",
     "300": "IP23",
     "350": "IP23",
     "400": "IP23",
     "450": "IP23",
     "500": "IP23",
-    "550": "IP23",
-    "600": "IP23",
-    "model": "Schutzklasse"
+    "600": "IP23"
    },
    {
-    "240": "CE",
+    "model": "Konformitätszeichen",
     "300": "CE",
     "350": "CE",
     "400": "CE",
     "450": "CE",
     "500": "CE",
-    "550": "CE",
-    "600": "CE",
-    "model": "Konformitätszeichen"
+    "600": "CE"
    },
    {
-    "240": "S",
+    "model": "Sicherungsklasse",
     "300": "S",
     "350": "S",
     "400": "S",
     "450": "S",
     "500": "S",
-    "550": "S",
-    "600": "S",
-    "model": "Sicherungsklasse"
+    "600": "S"
+   }
+  ]
+ },
+ "hypertig-ax": {
+  "table_id": "12146",
+  "title": "HyperTIG AX",
+  "columns": [
+   {
+    "key": "240",
+    "title": "250"
+   },
+   {
+    "key": "300",
+    "title": "300"
+   },
+   {
+    "key": "350",
+    "title": "350"
+   }
+  ],
+  "rows": [
+   {
+    "model": "Upgrade",
+    "240": "max 350A",
+    "300": "max 350A",
+    "350": ""
+   },
+   {
+    "model": "Netzspannung",
+    "240": "3x400V, 50/60Hz",
+    "300": "3x400V, 50/60Hz",
+    "350": "3x400V, 50/60Hz"
+   },
+   {
+    "model": "Netzabsicherung",
+    "240": "16A",
+    "300": "20A",
+    "350": "20A"
+   },
+   {
+    "model": "Leerlaufspannung",
+    "240": "42V",
+    "300": "42V",
+    "350": "42V"
+   },
+   {
+    "model": "Effektiver Eingangsstrom",
+    "240": "14A",
+    "300": "19A",
+    "350": "20A"
+   },
+   {
+    "model": "Schweißstrombereich",
+    "240": "4-250A",
+    "300": "4-300A",
+    "350": "4-350A"
+   },
+   {
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "240": "80%",
+    "300": "-",
+    "350": "40% / 350A"
+   },
+   {
+    "model": "Strom bei 60% ED @40C",
+    "240": "---",
+    "300": "300A",
+    "350": "300A"
+   },
+   {
+    "model": "Strom bei 100% ED @40C",
+    "240": "230A",
+    "300": "230A",
+    "350": "230A"
+   },
+   {
+    "model": "Maße",
+    "240": "930x512x864mm",
+    "300": "930x512x864mm",
+    "350": "930x512x864mm"
+   },
+   {
+    "model": "Gewicht",
+    "240": "82kg",
+    "300": "82kg",
+    "350": "82kg"
+   },
+   {
+    "model": "Schutzklasse",
+    "240": "IP23",
+    "300": "IP23",
+    "350": "IP23"
+   },
+   {
+    "model": "Konformitätszeichen",
+    "240": "CE",
+    "300": "CE",
+    "350": "CE"
+   },
+   {
+    "model": "Sicherungsklasse",
+    "240": "S",
+    "300": "S",
+    "350": "S"
    }
   ]
  },
  "hypertig-dc-cwk": {
   "table_id": "8805",
+  "title": "HyperTIG CWK",
   "columns": [
-   "240",
-   "300",
-   "350",
-   "400",
-   "450",
-   "500",
-   "550",
-   "600"
+   {
+    "key": "240",
+    "title": "240"
+   },
+   {
+    "key": "300",
+    "title": "300"
+   },
+   {
+    "key": "350",
+    "title": "350"
+   },
+   {
+    "key": "400",
+    "title": "400"
+   },
+   {
+    "key": "450",
+    "title": "450"
+   },
+   {
+    "key": "500",
+    "title": "500"
+   },
+   {
+    "key": "550",
+    "title": "550"
+   },
+   {
+    "key": "600",
+    "title": "600"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "240": "max 400A",
     "300": "max 400A",
     "350": "max 400A",
@@ -1943,10 +1926,10 @@
     "450": "max 600A",
     "500": "max 600A",
     "550": "max 600A",
-    "600": "-",
-    "model": "Upgrade"
+    "600": "-"
    },
    {
+    "model": "Netzspannung",
     "240": "3x400V, 50/60Hz",
     "300": "3x400V, 50/60Hz",
     "350": "3x400V, 50/60Hz",
@@ -1954,10 +1937,10 @@
     "450": "3x400V, 50/60Hz",
     "500": "3x400V, 50/60Hz",
     "550": "3x400V, 50/60Hz",
-    "600": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "600": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "240": "16A",
     "300": "20A",
     "350": "25A",
@@ -1965,10 +1948,10 @@
     "450": "25A",
     "500": "40A",
     "550": "40A",
-    "600": "40A",
-    "model": "Netzabsicherung"
+    "600": "40A"
    },
    {
+    "model": "Leerlaufspannung",
     "240": "90V",
     "300": "90V",
     "350": "90V",
@@ -1976,10 +1959,10 @@
     "450": "90V",
     "500": "90V",
     "550": "90V",
-    "600": "90V",
-    "model": "Leerlaufspannung"
+    "600": "90V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "240": "16A",
     "300": "19A",
     "350": "20A",
@@ -1987,10 +1970,10 @@
     "450": "39A",
     "500": "39A",
     "550": "39A",
-    "600": "39A",
-    "model": "Effektiver Eingangsstrom"
+    "600": "39A"
    },
    {
+    "model": "Schweißstrombereich",
     "240": "4-240A",
     "300": "4-300A",
     "350": "4-350A",
@@ -1998,10 +1981,10 @@
     "450": "4-450A",
     "500": "4-500A",
     "550": "4-550A",
-    "600": "4-600A",
-    "model": "Schweißstrombereich"
+    "600": "4-600A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "240": "-",
     "300": "-",
     "350": "-",
@@ -2009,10 +1992,10 @@
     "450": "80% / 450A",
     "500": "-",
     "550": "50% / 550A",
-    "600": "40% / 600A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "600": "40% / 600A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "240": "240A",
     "300": "300A",
     "350": "350A",
@@ -2020,10 +2003,10 @@
     "450": "-",
     "500": "500A",
     "550": "500A",
-    "600": "500A",
-    "model": "Strom bei 60% ED @40C"
+    "600": "500A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "240": "190A",
     "300": "230A",
     "350": "270A",
@@ -2031,10 +2014,10 @@
     "450": "440A",
     "500": "440A",
     "550": "440A",
-    "600": "440A",
-    "model": "Strom bei 100% ED @40C"
+    "600": "440A"
    },
    {
+    "model": "Maße",
     "240": "875x380x804mm",
     "300": "875x380x804mm",
     "350": "875x380x804mm",
@@ -2042,10 +2025,10 @@
     "450": "920x760x804mm",
     "500": "920x760x804mm",
     "550": "920x760x804mm",
-    "600": "920x760x804mm",
-    "model": "Maße"
+    "600": "920x760x804mm"
    },
    {
+    "model": "Gewicht",
     "240": "78kg",
     "300": "78kg",
     "350": "78kg",
@@ -2053,10 +2036,10 @@
     "450": "120kg",
     "500": "120kg",
     "550": "120kg",
-    "600": "120kg",
-    "model": "Gewicht"
+    "600": "120kg"
    },
    {
+    "model": "Schutzklasse",
     "240": "IP23",
     "300": "IP23",
     "350": "IP23",
@@ -2064,10 +2047,10 @@
     "450": "IP23",
     "500": "IP23",
     "550": "IP23",
-    "600": "IP23",
-    "model": "Schutzklasse"
+    "600": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "240": "CE",
     "300": "CE",
     "350": "CE",
@@ -2075,10 +2058,10 @@
     "450": "CE",
     "500": "CE",
     "550": "CE",
-    "600": "CE",
-    "model": "Konformitätszeichen"
+    "600": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "240": "S",
     "300": "S",
     "350": "S",
@@ -2086,373 +2069,330 @@
     "450": "S",
     "500": "S",
     "550": "S",
-    "600": "S",
-    "model": "Sicherungsklasse"
+    "600": "S"
    }
   ]
  },
  "hypertig-dx": {
   "table_id": "12145",
+  "title": "HyperTIG DX",
   "columns": [
-   "240",
-   "300",
-   "350",
-   "400",
-   "450",
-   "500",
-   "550",
-   "600"
+   {
+    "key": "240",
+    "title": "250"
+   },
+   {
+    "key": "300",
+    "title": "300"
+   },
+   {
+    "key": "350",
+    "title": "350"
+   },
+   {
+    "key": "400",
+    "title": "400"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "240": "max 400A",
     "300": "max 400A",
     "350": "max 400A",
-    "400": "-",
-    "450": "max 600A",
-    "500": "max 600A",
-    "550": "max 600A",
-    "600": "-",
-    "model": "Upgrade"
+    "400": "-"
    },
    {
+    "model": "Netzspannung",
     "240": "3x400V, 50/60Hz",
     "300": "3x400V, 50/60Hz",
     "350": "3x400V, 50/60Hz",
-    "400": "3x400V, 50/60Hz",
-    "450": "3x400V, 50/60Hz",
-    "500": "3x400V, 50/60Hz",
-    "550": "3x400V, 50/60Hz",
-    "600": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "400": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "240": "16A",
     "300": "20A",
     "350": "20A",
-    "400": "20A",
-    "model": "Netzabsicherung"
+    "400": "20A"
    },
    {
+    "model": "Leerlaufspannung",
     "240": "62V",
     "300": "62V",
     "350": "62V",
-    "400": "62V",
-    "model": "Leerlaufspannung"
+    "400": "62V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "240": "13A",
     "300": "18A",
     "350": "18A",
-    "400": "18A",
-    "model": "Effektiver Eingangsstrom"
+    "400": "18A"
    },
    {
+    "model": "Schweißstrombereich",
     "240": "4-250A",
     "300": "4-300A",
     "350": "4-350A",
-    "400": "4-400A",
-    "model": "Schweißstrombereich"
+    "400": "4-400A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "240": "-",
     "300": "-",
     "350": "-",
-    "400": "45% / 400A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "400": "45% / 400A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "240": "---",
     "300": "---",
     "350": "350A",
-    "400": "360A",
-    "model": "Strom bei 60% ED @40C"
+    "400": "360A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "240": "250A",
     "300": "300A",
     "350": "300A",
-    "400": "300A",
-    "model": "Strom bei 100% ED @40C"
+    "400": "300A"
    },
    {
+    "model": "Maße",
     "240": "930x512x864mm",
     "300": "930x512x864mm",
     "350": "930x512x864mm",
-    "400": "930x512x864mm",
-    "model": "Maße"
+    "400": "930x512x864mm"
    },
    {
+    "model": "Gewicht",
     "240": "70kg",
     "300": "70kg",
     "350": "70kg",
-    "400": "70kg",
-    "model": "Gewicht"
+    "400": "70kg"
    },
    {
+    "model": "Schutzklasse",
     "240": "IP23",
     "300": "IP23",
     "350": "IP23",
-    "400": "IP23",
-    "450": "IP23",
-    "500": "IP23",
-    "550": "IP23",
-    "600": "IP23",
-    "model": "Schutzklasse"
+    "400": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "240": "CE",
     "300": "CE",
     "350": "CE",
-    "400": "CE",
-    "450": "CE",
-    "500": "CE",
-    "550": "CE",
-    "600": "CE",
-    "model": "Konformitätszeichen"
+    "400": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "240": "S",
     "300": "S",
     "350": "S",
-    "400": "S",
-    "450": "S",
-    "500": "S",
-    "550": "S",
-    "600": "S",
-    "model": "Sicherungsklasse"
+    "400": "S"
    }
   ]
  },
  "hypertig": {
   "table_id": "9192",
+  "title": "HyperTIG AC/DC CWK",
   "columns": [
-   "250",
-   "300",
-   "350",
-   "450",
-   "500",
-   "550",
-   "600",
-   "400"
+   {
+    "key": "450",
+    "title": "450"
+   },
+   {
+    "key": "500",
+    "title": "500"
+   },
+   {
+    "key": "550",
+    "title": "550*"
+   },
+   {
+    "key": "600",
+    "title": "600*"
+   }
   ],
   "rows": [
    {
-    "250": "max 350A",
-    "300": "max 350A",
-    "350": "max 350A",
+    "model": "Upgrade",
     "450": "max 600A",
     "500": "max 600A",
     "550": "max 600A",
-    "600": "-",
-    "model": "Upgrade"
+    "600": "-"
    },
    {
-    "250": "3x400V, 50/60Hz",
-    "300": "3x400V, 50/60Hz",
-    "350": "3x400V, 50/60Hz",
+    "model": "Netzspannung",
     "450": "3x400V, 50/60Hz",
     "500": "3x400V, 50/60Hz",
     "550": "3x400V, 50/60Hz",
-    "600": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "600": "3x400V, 50/60Hz"
    },
    {
-    "250": "16A",
-    "300": "20A",
-    "350": "20A",
+    "model": "Netzabsicherung",
     "450": "25A",
     "500": "32A",
     "550": "32A",
-    "600": "32A",
-    "model": "Netzabsicherung"
+    "600": "32A"
    },
    {
-    "250": "90V",
-    "300": "90V",
-    "350": "90V",
-    "400": "90V",
+    "model": "Leerlaufspannung",
     "450": "90V",
     "500": "90V",
     "550": "90V",
-    "600": "90V",
-    "model": "Leerlaufspannung"
+    "600": "90V"
    },
    {
-    "250": "16A",
-    "300": "19A",
-    "350": "20A",
+    "model": "Effektiver Eingangsstrom",
     "450": "29A",
     "500": "29A",
     "550": "31A",
-    "600": "31A",
-    "model": "Effektiver Eingangsstrom"
+    "600": "31A"
    },
    {
-    "250": "4-250A",
-    "300": "4-300A",
-    "350": "4-350A",
+    "model": "Schweißstrombereich",
     "450": "4-450A",
     "500": "4-500A",
     "550": "4-550A",
-    "600": "4-600A",
-    "model": "Schweißstrombereich"
+    "600": "4-600A"
    },
    {
-    "250": "80% / 250A",
-    "300": "-",
-    "350": "40% / 350A",
+    "model": "Einschaltdauer bei max. Strom @40C",
     "450": "80% / 450A",
     "500": "-",
     "550": "50% / 550A",
-    "600": "40% / 600A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "600": "40% / 600A"
    },
    {
-    "250": "-",
-    "300": "300A",
-    "350": "300A",
+    "model": "Strom bei 60% ED @40C",
     "450": "-",
     "500": "500A",
     "550": "500A",
-    "600": "500A",
-    "model": "Strom bei 60% ED @40C"
+    "600": "500A"
    },
    {
-    "250": "230A",
-    "300": "230A",
-    "350": "230A",
+    "model": "Strom bei 100% ED @40C",
     "450": "440A",
     "500": "440A",
     "550": "440A",
-    "600": "440A",
-    "model": "Strom bei 100% ED @40C"
+    "600": "440A"
    },
    {
-    "250": "875x380x804mm",
-    "300": "875x380x804mm",
-    "350": "875x380x804mm",
-    "400": "875x380x804mm",
+    "model": "Maße",
     "450": "920x760x804mm",
     "500": "920x760x804mm",
     "550": "920x760x804mm",
-    "600": "920x760x804mm",
-    "model": "Maße"
+    "600": "920x760x804mm"
    },
    {
-    "250": "82kg",
-    "300": "82kg",
-    "350": "82kg",
-    "400": "82kg",
+    "model": "Gewicht",
     "450": "135kg",
     "500": "135kg",
     "550": "135kg",
-    "600": "135kg",
-    "model": "Gewicht"
+    "600": "135kg"
    },
    {
-    "250": "IP23",
-    "300": "IP23",
-    "350": "IP23",
-    "400": "IP23",
+    "model": "Schutzklasse",
     "450": "IP23",
     "500": "IP23",
     "550": "IP23",
-    "600": "IP23",
-    "model": "Schutzklasse"
+    "600": "IP23"
    },
    {
-    "250": "CE",
-    "300": "CE",
-    "350": "CE",
-    "400": "CE",
+    "model": "Konformitätszeichen",
     "450": "CE",
     "500": "CE",
     "550": "CE",
-    "600": "CE",
-    "model": "Konformitätszeichen"
+    "600": "CE"
    },
    {
-    "250": "S",
-    "300": "S",
-    "350": "S",
-    "400": "S",
+    "model": "Sicherungsklasse",
     "450": "S",
     "500": "S",
     "550": "S",
-    "600": "S",
-    "model": "Sicherungsklasse"
+    "600": "S"
    }
   ]
  },
  "i-1600": {
   "table_id": "8811",
+  "title": "i-1600",
   "columns": [
-   "1600"
+   {
+    "key": "1600",
+    "title": "1600"
+   }
   ],
   "rows": [
    {
-    "1600": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "1600": "-"
    },
    {
-    "1600": "230V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "1600": "230V, 50/60Hz"
    },
    {
-    "1600": "16A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "1600": "16A"
    },
    {
-    "1600": "95V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "1600": "95V"
    },
    {
-    "1600": "14A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "1600": "14A"
    },
    {
-    "1600": "15-150A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "1600": "15-150A"
    },
    {
-    "1600": "30% / 150A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "1600": "30% / 150A"
    },
    {
-    "1600": "120A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "1600": "120A"
    },
    {
-    "1600": "90A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "1600": "90A"
    },
    {
-    "1600": "213x133x350mm",
-    "model": "Maße"
+    "model": "Maße",
+    "1600": "213x133x350mm"
    },
    {
-    "1600": "7kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "1600": "7kg"
    },
    {
-    "1600": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "1600": "IP23"
    },
    {
-    "1600": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "1600": "CE"
    },
    {
-    "1600": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "1600": "S"
    }
   ]
  },
  "i-tig": {
   "table_id": "8810",
+  "title": "i-TIG",
   "columns": [
-   "i_tig_1600"
+   {
+    "key": "i_tig_1600",
+    "title": "i-TIG 1600"
+   }
   ],
   "rows": [
    {
@@ -2515,8 +2455,12 @@
  },
  "minicleaner-2": {
   "table_id": "8821",
+  "title": "MiniCleaner",
   "columns": [
-   "mini_cleaner"
+   {
+    "key": "mini_cleaner",
+    "title": "MiniCleaner"
+   }
   ],
   "rows": [
    {
@@ -2563,8 +2507,12 @@
  },
  "minicleaner": {
   "table_id": "8821",
+  "title": "MiniCleaner",
   "columns": [
-   "mini_cleaner"
+   {
+    "key": "mini_cleaner",
+    "title": "MiniCleaner"
+   }
   ],
   "rows": [
    {
@@ -2611,8 +2559,12 @@
  },
  "mlf100": {
   "table_id": "12278",
+  "title": "MLF100",
   "columns": [
-   "hyper_cleaner_st"
+   {
+    "key": "hyper_cleaner_st",
+    "title": "MLF100"
+   }
   ],
   "rows": [
    {
@@ -2651,855 +2603,869 @@
  },
  "mms": {
   "table_id": "8800",
+  "title": "MMS",
   "columns": [
-   "2400",
-   "3000",
-   "2000_p",
-   "2000_c"
+   {
+    "key": "2000_c",
+    "title": "2000C"
+   },
+   {
+    "key": "2000_p",
+    "title": "2000P"
+   },
+   {
+    "key": "2400",
+    "title": "2400"
+   },
+   {
+    "key": "3000",
+    "title": "3000"
+   }
   ],
   "rows": [
    {
-    "2400": "max 300A",
-    "3000": "-",
     "model": "Upgrade",
+    "2000_c": "-",
     "2000_p": "-",
-    "2000_c": "-"
+    "2400": "max 300A",
+    "3000": "-"
    },
    {
-    "2400": "3x400V, 50/60Hz",
-    "3000": "3x400V, 50/60Hz",
     "model": "Netzspannung",
+    "2000_c": "230V, 50/60Hz",
     "2000_p": "230V, 50/60Hz",
-    "2000_c": "230V, 50/60Hz"
+    "2400": "3x400V, 50/60Hz",
+    "3000": "3x400V, 50/60Hz"
    },
    {
-    "2400": "16A",
-    "3000": "16A",
     "model": "Netzabsicherung",
     "2000_c": "16A",
-    "2000_p": "16A"
+    "2000_p": "16A",
+    "2400": "16A",
+    "3000": "16A"
    },
    {
-    "2400": "76V",
-    "3000": "76V",
     "model": "Leerlaufspannung",
+    "2000_c": "55V",
     "2000_p": "76V",
-    "2000_c": "55V"
+    "2400": "76V",
+    "3000": "76V"
    },
    {
-    "2400": "11A",
-    "3000": "11A",
     "model": "Effektiver Eingangsstrom",
     "2000_c": "16A",
-    "2000_p": "16A"
+    "2000_p": "16A",
+    "2400": "11A",
+    "3000": "11A"
    },
    {
-    "2400": "10-240A",
-    "3000": "10-300A",
     "model": "Schweißstrombereich",
+    "2000_c": "10-200A",
     "2000_p": "10-200A",
-    "2000_c": "10-200A"
+    "2400": "10-240A",
+    "3000": "10-300A"
    },
    {
-    "2400": "-",
-    "3000": "30% / 300A",
     "model": "Einschaultdauer bei max. Strom @40C",
+    "2000_c": "20% / 200A",
     "2000_p": "25% / 200A",
-    "2000_c": "20% / 200A"
+    "2400": "-",
+    "3000": "30% / 300A"
    },
    {
-    "2400": "240A",
-    "3000": "240A",
     "model": "Strom bei 60% ED @40C",
     "2000_c": "130A",
-    "2000_p": "140A"
+    "2000_p": "140A",
+    "2400": "240A",
+    "3000": "240A"
    },
    {
-    "2400": "180A",
-    "3000": "180A",
     "model": "Strom bei 100% ED @40C",
     "2000_c": "100A",
-    "2000_p": "120A"
+    "2000_p": "120A",
+    "2400": "180A",
+    "3000": "180A"
    },
    {
-    "2400": "385x295x615mm",
-    "3000": "385x295x615mm",
     "model": "Maße",
     "2000_c": "276x200x407mm",
-    "2000_p": "385x295x615mm"
+    "2000_p": "385x295x615mm",
+    "2400": "385x295x615mm",
+    "3000": "385x295x615mm"
    },
    {
-    "2400": "21kg",
-    "3000": "21kg",
     "model": "Gewicht",
     "2000_c": "11kg",
-    "2000_p": "21kg"
+    "2000_p": "21kg",
+    "2400": "21kg",
+    "3000": "21kg"
    },
    {
-    "2400": "IP23",
-    "3000": "IP23",
     "model": "Schutzklasse",
+    "2000_c": "IP23",
     "2000_p": "IP23",
-    "2000_c": "IP23"
+    "2400": "IP23",
+    "3000": "IP23"
    },
    {
-    "2400": "CE",
-    "3000": "CE",
     "model": "Konformitätszeichen",
+    "2000_c": "CE",
     "2000_p": "CE",
-    "2000_c": "CE"
+    "2400": "CE",
+    "3000": "CE"
    },
    {
-    "2400": "S",
-    "3000": "S",
     "model": "Sicherungsklasse",
+    "2000_c": "S",
     "2000_p": "S",
-    "2000_c": "S"
+    "2400": "S",
+    "3000": "S"
    }
   ]
  },
  "omega-ac-dc-2": {
   "table_id": "9186",
+  "title": "Omega AX",
   "columns": [
-   "200",
-   "2500",
-   "3000"
+   {
+    "key": "200",
+    "title": "180"
+   },
+   {
+    "key": "2500",
+    "title": "220"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "200": "220A",
-    "2500": "-",
-    "model": "Upgrade"
+    "2500": "-"
    },
    {
+    "model": "Netzspannung",
     "200": "230V, 50/60Hz",
-    "2500": "230V, 50/60Hz",
-    "model": "Netzspannung"
+    "2500": "230V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "200": "16A",
-    "2500": "16A",
-    "3000": "16A",
-    "model": "Netzabsicherung"
+    "2500": "16A"
    },
    {
+    "model": "Leerlaufspannung",
     "200": "76V",
-    "2500": "76V",
-    "model": "Leerlaufspannung"
+    "2500": "76V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "200": "16A",
-    "2500": "16A",
-    "model": "Effektiver Eingangsstrom"
+    "2500": "16A"
    },
    {
+    "model": "Schweißstrombereich",
     "200": "4-180A",
-    "2500": "4-220A",
-    "model": "Schweißstrombereich"
+    "2500": "4-220A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "200": "30% / 180A",
-    "2500": "20% / 220A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "2500": "20% / 220A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "200": "160A",
-    "2500": "160A",
-    "model": "Strom bei 60% ED @40C"
+    "2500": "160A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "200": "130A",
-    "2500": "130A",
-    "model": "Strom bei 100% ED @40C"
+    "2500": "130A"
    },
    {
+    "model": "Maße",
     "200": "460x215x285mm",
-    "2500": "460x215x285mm",
-    "model": "Maße"
+    "2500": "460x215x285mm"
    },
    {
+    "model": "Gewicht",
     "200": "13.5kg",
-    "2500": "13.5kg",
-    "model": "Gewicht"
+    "2500": "13.5kg"
    },
    {
+    "model": "Schutzklasse",
     "200": "IP23",
-    "2500": "IP23",
-    "3000": "IP23",
-    "model": "Schutzklasse"
+    "2500": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "200": "CE",
-    "2500": "CE",
-    "3000": "CE",
-    "model": "Konformitätszeichen"
+    "2500": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "200": "S",
-    "2500": "S",
-    "3000": "S",
-    "model": "Sicherungsklasse"
+    "2500": "S"
    }
   ]
  },
  "omega-cwk-200-2": {
   "table_id": "8812",
+  "title": "Delta",
   "columns": [
-   "1800",
-   "3000",
-   "4000",
-   "5000"
+   {
+    "key": "1800",
+    "title": "1800"
+   }
   ],
   "rows": [
    {
-    "1800": "-",
-    "3000": "-",
-    "4000": "max 600A",
-    "5000": "max 600A",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "1800": "-"
    },
    {
-    "1800": "230V, 50/60Hz",
-    "3000": "3x400V, 50/60Hz",
-    "4000": "3x400V, 50/60Hz",
-    "5000": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "1800": "230V, 50/60Hz"
    },
    {
-    "1800": "16A",
-    "3000": "16A",
-    "4000": "25A",
-    "5000": "32A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "1800": "16A"
    },
    {
-    "1800": "95V",
-    "3000": "95V",
-    "4000": "95V",
-    "5000": "95V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "1800": "95V"
    },
    {
-    "1800": "15A",
-    "3000": "16A",
-    "4000": "25A",
-    "5000": "32A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "1800": "15A"
    },
    {
-    "1800": "4-160A",
-    "3000": "4-300A",
-    "4000": "4-400A",
-    "5000": "4-500A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "1800": "4-160A"
    },
    {
-    "1800": "25% / 160A",
-    "3000": "-",
-    "4000": "-",
-    "5000": "50% / 500A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "1800": "25% / 160A"
    },
    {
-    "1800": "120A",
-    "3000": "300A",
-    "4000": "400A",
-    "5000": "450A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "1800": "120A"
    },
    {
-    "1800": "100A",
-    "3000": "230A",
-    "4000": "300A",
-    "5000": "380A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "1800": "100A"
    },
    {
-    "1800": "231x133x350mm",
-    "3000": "247x180x400mm",
-    "4000": "500x220x365mm",
-    "5000": "500x220x365mm",
-    "model": "Maße"
+    "model": "Maße",
+    "1800": "231x133x350mm"
    },
    {
-    "1800": "7kg",
-    "3000": "14kg",
-    "4000": "24kg",
-    "5000": "24kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "1800": "7kg"
    },
    {
-    "1800": "IP23",
-    "3000": "IP23",
-    "4000": "IP23",
-    "5000": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "1800": "IP23"
    },
    {
-    "1800": "CE",
-    "3000": "CE",
-    "4000": "CE",
-    "5000": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "1800": "CE"
    },
    {
-    "1800": "S",
-    "3000": "S",
-    "4000": "S",
-    "5000": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "1800": "S"
    }
   ]
  },
  "plasma-tig": {
   "table_id": "8809",
+  "title": "Plasma TIG",
   "columns": [
-   "20",
-   "50",
-   "150",
-   "250",
-   "400"
+   {
+    "key": "20",
+    "title": "20"
+   },
+   {
+    "key": "50",
+    "title": "50"
+   },
+   {
+    "key": "150",
+    "title": "150"
+   },
+   {
+    "key": "250",
+    "title": "250"
+   },
+   {
+    "key": "400",
+    "title": "400"
+   }
   ],
   "rows": [
    {
+    "model": "Upgrade",
     "20": "max 50A",
     "50": "-",
     "150": "-",
     "250": "max 400A",
-    "400": "-",
-    "model": "Upgrade"
+    "400": "-"
    },
    {
+    "model": "Netzspannung",
     "20": "230V, 50/60Hz",
     "50": "230V, 50/60Hz",
     "150": "230V, 50/60Hz",
     "250": "3x400V, 50/60Hz",
-    "400": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "400": "3x400V, 50/60Hz"
    },
    {
+    "model": "Netzabsicherung",
     "20": "10A",
     "50": "10A",
     "150": "16A",
     "250": "16A",
-    "400": "25A",
-    "model": "Netzabsicherung"
+    "400": "25A"
    },
    {
+    "model": "Leerlaufspannung",
     "20": "80V",
     "50": "80V",
     "150": "80V",
     "250": "80V",
-    "400": "80V",
-    "model": "Leerlaufspannung"
+    "400": "80V"
    },
    {
+    "model": "Effektiver Eingangsstrom",
     "20": "9A",
     "50": "9A",
     "150": "16A",
     "250": "15A",
-    "400": "24,5A",
-    "model": "Effektiver Eingangsstrom"
+    "400": "24,5A"
    },
    {
+    "model": "Schweißstrombereich",
     "20": "0,1-20A",
     "50": "0,1-50A",
     "150": "4-200A",
     "250": "4-250A",
-    "400": "4-300A",
-    "model": "Schweißstrombereich"
+    "400": "4-300A"
    },
    {
+    "model": "Einschaltdauer bei max. Strom @40C",
     "20": "-",
     "50": "-",
     "150": "-",
     "250": "-",
-    "400": "50% / 400A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "400": "50% / 400A"
    },
    {
+    "model": "Strom bei 60% ED @40C",
     "20": "-",
     "50": "-",
     "150": "150A",
     "250": "-",
-    "400": "360A",
-    "model": "Strom bei 60% ED @40C"
+    "400": "360A"
    },
    {
+    "model": "Strom bei 100% ED @40C",
     "20": "20A",
     "50": "50A",
     "150": "120A",
     "250": "250A",
-    "400": "300A",
-    "model": "Strom bei 100% ED @40C"
+    "400": "300A"
    },
    {
+    "model": "Maße",
     "20": "920x350x740mm",
     "50": "920x350x740mm",
     "150": "920x350x740mm",
     "250": "920x700x740mm",
-    "400": "920x700x740mm",
-    "model": "Maße"
+    "400": "920x700x740mm"
    },
    {
+    "model": "Gewicht",
     "20": "53,2kg",
     "50": "53,2kg",
     "150": "53,2kg",
     "250": "120kg",
-    "400": "120kg",
-    "model": "Gewicht"
+    "400": "120kg"
    },
    {
+    "model": "Schutzklasse",
     "20": "IP23",
     "50": "IP23",
     "150": "IP23",
     "250": "IP23",
-    "400": "IP23",
-    "model": "Schutzklasse"
+    "400": "IP23"
    },
    {
+    "model": "Konformitätszeichen",
     "20": "CE",
     "50": "CE",
     "150": "CE",
     "250": "CE",
-    "400": "CE",
-    "model": "Konformitätszeichen"
+    "400": "CE"
    },
    {
+    "model": "Sicherungsklasse",
     "20": "S",
     "50": "S",
     "150": "S",
     "250": "S",
-    "400": "S",
-    "model": "Sicherungsklasse"
+    "400": "S"
    }
   ]
  },
  "theta-120-aut": {
   "table_id": "8824",
+  "title": "Theta 120 HSC",
   "columns": [
-   "120"
+   {
+    "key": "120",
+    "title": "120"
+   }
   ],
   "rows": [
    {
-    "120": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "120": "-"
    },
    {
-    "120": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "120": "3x400V, 50/60Hz"
    },
    {
-    "120": "32A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "120": "32A"
    },
    {
-    "120": "290V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "120": "290V"
    },
    {
-    "120": "27A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "120": "27A"
    },
    {
-    "120": "20-120A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "120": "20-120A"
    },
    {
-    "120": "-",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "120": "-"
    },
    {
-    "120": "120A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "120": "120A"
    },
    {
-    "120": "93A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "120": "93A"
    },
    {
-    "120": "< 38mm",
-    "model": "Empfohlener Schnitt"
+    "model": "Empfohlener Schnitt",
+    "120": "< 38mm"
    },
    {
-    "120": "< 50mm",
-    "model": "Trennschnitt"
+    "model": "Trennschnitt",
+    "120": "< 50mm"
    },
    {
-    "120": "370x270x620mm",
-    "model": "Maße"
+    "model": "Maße",
+    "120": "370x270x620mm"
    },
    {
-    "120": "36kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "120": "36kg"
    },
    {
-    "120": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "120": "IP23"
    },
    {
-    "120": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "120": "CE"
    },
    {
-    "120": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "120": "S"
    }
   ]
  },
  "theta-120-hsc": {
   "table_id": "8824",
+  "title": "Theta 120 HSC",
   "columns": [
-   "120"
+   {
+    "key": "120",
+    "title": "120"
+   }
   ],
   "rows": [
    {
-    "120": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "120": "-"
    },
    {
-    "120": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "120": "3x400V, 50/60Hz"
    },
    {
-    "120": "32A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "120": "32A"
    },
    {
-    "120": "290V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "120": "290V"
    },
    {
-    "120": "27A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "120": "27A"
    },
    {
-    "120": "20-120A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "120": "20-120A"
    },
    {
-    "120": "-",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "120": "-"
    },
    {
-    "120": "120A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "120": "120A"
    },
    {
-    "120": "93A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "120": "93A"
    },
    {
-    "120": "< 38mm",
-    "model": "Empfohlener Schnitt"
+    "model": "Empfohlener Schnitt",
+    "120": "< 38mm"
    },
    {
-    "120": "< 50mm",
-    "model": "Trennschnitt"
+    "model": "Trennschnitt",
+    "120": "< 50mm"
    },
    {
-    "120": "370x270x620mm",
-    "model": "Maße"
+    "model": "Maße",
+    "120": "370x270x620mm"
    },
    {
-    "120": "36kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "120": "36kg"
    },
    {
-    "120": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "120": "IP23"
    },
    {
-    "120": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "120": "CE"
    },
    {
-    "120": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "120": "S"
    }
   ]
  },
  "theta-160": {
   "table_id": "11462",
+  "title": "Theta 180 HSC",
   "columns": [
-   "120"
+   {
+    "key": "120",
+    "title": "180"
+   }
   ],
   "rows": [
    {
-    "120": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "120": "-"
    },
    {
-    "120": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "120": "3x400V, 50/60Hz"
    },
    {
-    "120": "40A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "120": "40A"
    },
    {
-    "120": "290V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "120": "290V"
    },
    {
-    "120": "40A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "120": "40A"
    },
    {
-    "120": "40-180A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "120": "40-180A"
    },
    {
-    "120": "160A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "120": "160A"
    },
    {
-    "120": "135A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "120": "135A"
    },
    {
-    "120": "< 50mm",
-    "model": "Empfohlener Schnitt"
+    "model": "Empfohlener Schnitt",
+    "120": "< 50mm"
    },
    {
-    "120": "< 80mm",
-    "model": "Trennschnitt"
+    "model": "Trennschnitt",
+    "120": "< 80mm"
    },
    {
-    "120": "710x460x710mm",
-    "model": "Maße"
+    "model": "Maße",
+    "120": "710x460x710mm"
    },
    {
-    "120": "72kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "120": "72kg"
    },
    {
-    "120": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "120": "IP23"
    },
    {
-    "120": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "120": "CE"
    },
    {
-    "120": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "120": "S"
    }
   ]
  },
  "theta-40": {
   "table_id": "8822",
+  "title": "Theta 40",
   "columns": [
-   "40"
+   {
+    "key": "40",
+    "title": "40"
+   }
   ],
   "rows": [
    {
-    "40": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "40": "-"
    },
    {
-    "40": "230V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "40": "230V, 50/60Hz"
    },
    {
-    "40": "16A",
-    "model": "Netzabsicherung"
+    "model": "Netzabsicherung",
+    "40": "16A"
    },
    {
-    "40": "403V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "40": "403V"
    },
    {
-    "40": "16A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "40": "16A"
    },
    {
-    "40": "10-30A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "40": "10-30A"
    },
    {
-    "40": "-",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "40": "-"
    },
    {
-    "40": "30A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "40": "30A"
    },
    {
-    "40": "23A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "40": "23A"
    },
    {
-    "40": "< 8mm",
-    "model": "Empfohlener Schnitt"
+    "model": "Empfohlener Schnitt",
+    "40": "< 8mm"
    },
    {
-    "40": "< 15mm",
-    "model": "Trennschnitt"
+    "model": "Trennschnitt",
+    "40": "< 15mm"
    },
    {
-    "40": "247x173x372mm",
-    "model": "Maße"
+    "model": "Maße",
+    "40": "247x173x372mm"
    },
    {
-    "40": "14,2kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "40": "14,2kg"
    },
    {
-    "40": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "40": "IP23"
    },
    {
-    "40": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "40": "CE"
    },
    {
-    "40": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "40": "S"
    }
   ]
  },
  "theta-60-aut": {
   "table_id": "8823",
+  "title": "Theta 60 HSC",
   "columns": [
-   "60"
+   {
+    "key": "60",
+    "title": "60"
+   }
   ],
   "rows": [
    {
-    "60": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "60": "-"
    },
    {
-    "60": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "60": "3x400V, 50/60Hz"
    },
    {
-    "60": "16A",
-    "model": "Nezabsicherung"
+    "model": "Nezabsicherung",
+    "60": "16A"
    },
    {
-    "60": "290V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "60": "290V"
    },
    {
-    "60": "10A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "60": "10A"
    },
    {
-    "60": "10-60A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "60": "10-60A"
    },
    {
-    "60": "50% / 60A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "60": "50% / 60A"
    },
    {
-    "60": "55A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "60": "55A"
    },
    {
-    "60": "42A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "60": "42A"
    },
    {
-    "60": "< 25mm",
-    "model": "Empfohlener Schnitt"
+    "model": "Empfohlener Schnitt",
+    "60": "< 25mm"
    },
    {
-    "60": "< 35mm",
-    "model": "Trennschnitt"
+    "model": "Trennschnitt",
+    "60": "< 35mm"
    },
    {
-    "60": "247x173x372mm",
-    "model": "Maße"
+    "model": "Maße",
+    "60": "247x173x372mm"
    },
    {
-    "60": "16,5kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "60": "16,5kg"
    },
    {
-    "60": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "60": "IP23"
    },
    {
-    "60": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "60": "CE"
    },
    {
-    "60": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "60": "S"
    }
   ]
  },
  "theta-60-hsc": {
   "table_id": "8823",
+  "title": "Theta 60 HSC",
   "columns": [
-   "60"
+   {
+    "key": "60",
+    "title": "60"
+   }
   ],
   "rows": [
    {
-    "60": "-",
-    "model": "Upgrade"
+    "model": "Upgrade",
+    "60": "-"
    },
    {
-    "60": "3x400V, 50/60Hz",
-    "model": "Netzspannung"
+    "model": "Netzspannung",
+    "60": "3x400V, 50/60Hz"
    },
    {
-    "60": "16A",
-    "model": "Nezabsicherung"
+    "model": "Nezabsicherung",
+    "60": "16A"
    },
    {
-    "60": "290V",
-    "model": "Leerlaufspannung"
+    "model": "Leerlaufspannung",
+    "60": "290V"
    },
    {
-    "60": "10A",
-    "model": "Effektiver Eingangsstrom"
+    "model": "Effektiver Eingangsstrom",
+    "60": "10A"
    },
    {
-    "60": "10-60A",
-    "model": "Schweißstrombereich"
+    "model": "Schweißstrombereich",
+    "60": "10-60A"
    },
    {
-    "60": "50% / 60A",
-    "model": "Einschaltdauer bei max. Strom @40C"
+    "model": "Einschaltdauer bei max. Strom @40C",
+    "60": "50% / 60A"
    },
    {
-    "60": "55A",
-    "model": "Strom bei 60% ED @40C"
+    "model": "Strom bei 60% ED @40C",
+    "60": "55A"
    },
    {
-    "60": "42A",
-    "model": "Strom bei 100% ED @40C"
+    "model": "Strom bei 100% ED @40C",
+    "60": "42A"
    },
    {
-    "60": "< 25mm",
-    "model": "Empfohlener Schnitt"
+    "model": "Empfohlener Schnitt",
+    "60": "< 25mm"
    },
    {
-    "60": "< 35mm",
-    "model": "Trennschnitt"
+    "model": "Trennschnitt",
+    "60": "< 35mm"
    },
    {
-    "60": "247x173x372mm",
-    "model": "Maße"
+    "model": "Maße",
+    "60": "247x173x372mm"
    },
    {
-    "60": "16,5kg",
-    "model": "Gewicht"
+    "model": "Gewicht",
+    "60": "16,5kg"
    },
    {
-    "60": "IP23",
-    "model": "Schutzklasse"
+    "model": "Schutzklasse",
+    "60": "IP23"
    },
    {
-    "60": "CE",
-    "model": "Konformitätszeichen"
+    "model": "Konformitätszeichen",
+    "60": "CE"
    },
    {
-    "60": "S",
-    "model": "Sicherungsklasse"
+    "model": "Sicherungsklasse",
+    "60": "S"
    }
   ]
  }

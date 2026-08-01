@@ -193,6 +193,31 @@
   .spectable .r .k{color:var(--muted)}
   .spectable .r .v{font-weight:600}
 
+  /* Technische Daten – eine Spalte je Variante, wie beim Hersteller.
+     Acht Varianten passen auf keinem Telefon nebeneinander: die Tabelle
+     scrollt waagerecht und die Modellspalte bleibt dabei stehen, sonst weiss
+     man nach zwei Wischern nicht mehr, welche Zeile man liest. */
+  .spec-h{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:18px;margin-bottom:14px}
+  .spectab-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+  .spectab-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .spectab{border-collapse:separate;border-spacing:0;width:100%;font-size:14px}
+  .spectab caption{text-align:left;padding:12px 18px;background:var(--panel2);font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:15px;border-bottom:1px solid var(--line)}
+  .spectab th,.spectab td{padding:11px 18px;text-align:left;border-bottom:1px solid var(--line-soft);white-space:nowrap}
+  .spectab tbody tr:last-child th,.spectab tbody tr:last-child td{border-bottom:0}
+  .spectab thead th{background:var(--panel2);font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:14px;border-bottom:1px solid var(--line)}
+  .spectab tbody th{font-weight:400;color:var(--muted);white-space:normal;min-width:14rem}
+  .spectab tbody td{font-weight:600}
+  .spectab tbody tr:nth-child(even) th,.spectab tbody tr:nth-child(even) td{background:var(--panel2)}
+  .spectab th:first-child{position:sticky;left:0;z-index:1;background:var(--panel);border-right:1px solid var(--line)}
+  .spectab thead th:first-child,.spectab tbody tr:nth-child(even) th:first-child{background:var(--panel2)}
+  .spectab-note{margin:10px 2px 0;color:var(--muted);font-size:13px}
+  .spectab-scroll+.spectab-scroll,.spectab-scroll+.spectable,
+  .spectab-note+.spectable,.spectab-note+.spectab-scroll{margin-top:22px}
+  @media(max-width:640px){
+    .spectab th,.spectab td{padding:10px 13px;font-size:13.5px}
+    .spectab tbody th{min-width:11rem}
+  }
+
   /* Verfahren-Symbole */
   .procs{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 20px}
   .procbadge{display:flex;flex-direction:column;align-items:center;gap:5px;width:74px}

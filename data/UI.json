@@ -87,7 +87,9 @@
   "dl_datasheet": "Datenblatt",
   "dl_manual": "Bedienungsanleitung",
   "dl_soon": "Dokument im Live-Betrieb verknüpfen",
-  "highlights": "Besonderheiten"
+  "highlights": "Besonderheiten",
+  "spec_model": "Modell",
+  "spec_more": "Ausstattung"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -177,7 +179,9 @@
   "dl_datasheet": "Fiche technique",
   "dl_manual": "Notice d’utilisation",
   "dl_soon": "Document à lier en production",
-  "highlights": "Points forts"
+  "highlights": "Points forts",
+  "spec_model": "Modèle",
+  "spec_more": "Équipement"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -267,6 +271,8 @@
   "dl_datasheet": "Scheda tecnica",
   "dl_manual": "Manuale d’uso",
   "dl_soon": "Documento da collegare in produzione",
-  "highlights": "Punti di forza"
+  "highlights": "Punti di forza",
+  "spec_model": "Modello",
+  "spec_more": "Dotazione"
  }
 }

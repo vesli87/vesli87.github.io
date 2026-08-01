@@ -3,7 +3,8 @@
 """
 Besonderheiten von mahe-online.de holen und mit unseren Daten vergleichen.
 
-    python3 build/scrape_mahe.py            # holen + vergleichen
+    python3 build/scrape_mahe.py            # fehlende Seiten holen + vergleichen
+    python3 build/scrape_mahe.py --fresh    # alle Seiten neu laden
     python3 build/scrape_mahe.py --report   # nur vergleichen (Cache nutzen)
 
 Hintergrund: Unsere HL-Texte sind nach Gerätefamilie gruppiert (alle WIG AC/DC
@@ -16,24 +17,9 @@ Listen nach build/mahe_besonderheiten.json. Übernommen wird nichts automatisch:
 die Zuordnung Gerät → Liste passiert von Hand, damit kein Text am falschen
 Produkt landet.
 
-Technische Daten (noch offen)
------------------------------
-Die Spezifikationstabellen stehen NICHT im HTML. MAHE nutzt das Plugin
-Ninja Tables; im Markup liegt nur das <table>-Geruest mit
-data-footable_id="<id>", die Daten kommen per AJAX nach:
-
-    https://mahe-online.de/wp-admin/admin-ajax.php
-        ?action=wp_ajax_ninja_tables_public_action
-        &table_id=<id>&target_action=get-all-data
-
-Antwort ist JSON, eine Zeile je Merkmal, mit einer Spalte je Modellvariante:
-
-    {"value": {"model": "Netzabsicherung", "240": "16A", "300": "20A", "350": "20A"}}
-
-Uebernehmen laesst sich das erst, wenn `specs` in data/P.json von einem flachen
-Schluessel-Wert-Paar auf eine Tabelle mit Variantenspalten umgestellt ist. Das
-betrifft spec_html, das JSON-LD (additionalProperty), den Suchindex,
-products.json und llms-full.txt.
+Technische Daten holt build/scrape_specs.py – die Tabellen stehen nicht im
+HTML, sondern kommen per AJAX (Ninja Tables), und die Spaltenueberschriften
+stecken in einem base64-Skript in der Seite.
 """
 
 import json
@@ -94,6 +80,8 @@ def extract(html):
 def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     report_only = "--report" in sys.argv
+    fresh = "--fresh" in sys.argv    # sonst bleibt der Cache stehen und
+    #                                  Änderungen bei MAHE fallen nie auf
 
     urls = [u for u in re.findall(r"<loc>([^<]+)</loc>", fetch(SITEMAP))
             if not any(s in u for s in SKIP)]
@@ -103,7 +91,7 @@ def main():
     for u in urls:
         slug = u.rstrip("/").split("/")[-1] or "home"
         f = CACHE / f"{slug}.html"
-        if not f.exists() and not report_only:
+        if (fresh or not f.exists()) and not report_only:
             fetch(u, f)
         if not f.exists():
             continue

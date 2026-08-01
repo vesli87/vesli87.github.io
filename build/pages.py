@@ -107,12 +107,42 @@ def front_html(lang, p):
 
 
 def spec_html(lang, p):
-    rows = "".join(
-        f'<div class="r"><span class="k">{e(C.trK(lang, k))}</span>'
-        f'<span class="v">{e(C.trV(lang, v))}</span></div>'
-        for k, v in p["specs"].items()
-    )
-    return f'<div class="spectable"><h3>{e(C.t(lang,"techdata"))}</h3>{rows}</div>'
+    """Technische Daten wie bei MAHE: eine Tabelle, eine Spalte je Variante.
+
+    Darunter das, was in der MAHE-Tabelle nicht vorkommt (Verfahren, Kühlung,
+    Antrieb …). Geräte ohne MAHE-Tabelle – Zubehör, Elektrolyte, Kabel –
+    behalten nur diese Liste.
+    """
+    tabs = C.specTables(lang, p)
+    out = [f'<h3 class="spec-h">{e(C.t(lang,"techdata"))}</h3>']
+
+    for t in tabs:
+        cap = f'<caption>{e(t["title"])}</caption>' if len(tabs) > 1 and t["title"] else ""
+        head = "".join(f'<th scope="col">{e(c)}</th>' for c in t["cols"])
+        body = ""
+        for r in t["rows"]:
+            cells = "".join(f"<td>{e(v)}</td>" for v in r[1:])
+            body += f'<tr><th scope="row">{e(r[0])}</th>{cells}</tr>'
+        out.append(
+            f'<div class="spectab-scroll" tabindex="0" role="region" '
+            f'aria-label="{e(C.t(lang,"techdata"))} {e(p["name"])}">'
+            f'<table class="spectab">{cap}'
+            f'<thead><tr><th scope="col">{e(C.t(lang,"spec_model"))}</th>{head}</tr></thead>'
+            f"<tbody>{body}</tbody></table></div>"
+        )
+        if t["note"]:
+            out.append(f'<p class="spectab-note"><span aria-hidden="true">*</span> {e(t["note"])}</p>')
+
+    rest = C.specRest(p)
+    if rest:
+        rows = "".join(
+            f'<div class="r"><span class="k">{e(C.trK(lang, k))}</span>'
+            f'<span class="v">{e(C.trV(lang, v))}</span></div>'
+            for k, v in rest.items()
+        )
+        title = f'<h4>{e(C.t(lang,"spec_more"))}</h4>' if tabs else ""
+        out.append(f'<div class="spectable">{title}{rows}</div>')
+    return "".join(out)
 
 
 def acc_html(lang, p):

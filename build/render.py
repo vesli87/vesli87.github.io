@@ -186,7 +186,23 @@ def ld_product(lang, p):
     cat = C.CAT_BY_ID[p["cat"]]
     url = C.abs_url(C.u_prod(lang, p))
     props = [{"@type": "PropertyValue", "name": C.trK(lang, k), "value": C.trV(lang, v)}
-             for k, v in p["specs"].items()]
+             for k, v in C.specRest(p).items()]
+    # Die MAHE-Tabelle hat eine Spalte je Variante, PropertyValue kennt nur ein
+    # Wertfeld. Also je Zeile die Variante mitschreiben — "Netzabsicherung (300)"
+    # -> "20A". Wo alle Varianten denselben Wert haben (Schutzklasse, CE …),
+    # steht die Zeile einmal ohne Variante statt sechsmal gleich.
+    for t in C.specTables(lang, p):
+        for r in t["rows"]:
+            vals = [v for v in r[1:] if v != C.SPEC_EMPTY]
+            if not vals:
+                continue
+            if len(set(vals)) == 1:
+                props.append({"@type": "PropertyValue", "name": r[0], "value": vals[0]})
+                continue
+            for col, val in zip(t["cols"], r[1:]):
+                if val != C.SPEC_EMPTY:
+                    props.append({"@type": "PropertyValue",
+                                  "name": f"{r[0]} ({col})", "value": val})
     hl = C.highlightsOf(lang, p)
     d = {
         "@type": "Product",

@@ -254,6 +254,26 @@ def main():
     if len(set(per_lang.values())) != 1:
         err(f"Sprachen ungleich gross: {dict(per_lang)}")
 
+    # 11. Technische Daten: jede Zeile der MAHE-Tabellen braucht fr und it,
+    #     sonst steht auf der französischen Seite plötzlich Deutsch.
+    for key in C.SPECMAP:
+        if key.startswith("_"):
+            continue
+        if key not in C.BY_ID:
+            err(f"SPECMAP: Produkt {key} gibt es nicht")
+        for tab in C.SPECMAP[key]:
+            if tab not in C.MAHE_SPECS:
+                err(f"SPECMAP {key}: Tabelle '{tab}' fehlt in build/mahe_specs.json")
+    for p in C.P:
+        for lab in C.specRowsDE(p):
+            tr = C.SPECROW.get(lab)
+            if not tr:
+                err(f"SPECROW: '{lab}' fehlt ({p['id']})")
+            else:
+                for l in C.LANGS:
+                    if l != C.DEFAULT_LANG and not tr.get(l):
+                        err(f"SPECROW '{lab}': Übersetzung {l} fehlt")
+
     # robots / llms
     for need in ("robots.txt", "llms.txt", "llms-full.txt", "site.webmanifest",
                  "data/products.json", "data/search-de.json", "data/search-fr.json",

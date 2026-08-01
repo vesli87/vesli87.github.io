@@ -1,0 +1,13 @@
+{
+ "_": "Fussnoten unter den MAHE-Tabellen, Schluessel wie in build/mahe_specs.json. Der Stern steht in den Spaltentiteln (z. B. 450*).",
+ "hypermig": {
+  "de": "nur als WWK Variante erhältlich.",
+  "fr": "disponible uniquement en version WWK.",
+  "it": "disponibile solo nella variante WWK."
+ },
+ "hypertig": {
+  "de": "Nur für Länder ausserhalb der EU verfügbar.",
+  "fr": "Disponible uniquement pour les pays hors UE.",
+  "it": "Disponibile solo per i paesi al di fuori dell’UE."
+ }
+}

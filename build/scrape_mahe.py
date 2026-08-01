@@ -15,6 +15,25 @@ Das Skript legt build/cache/mahe/<slug>.html ab und schreibt die extrahierten
 Listen nach build/mahe_besonderheiten.json. Übernommen wird nichts automatisch:
 die Zuordnung Gerät → Liste passiert von Hand, damit kein Text am falschen
 Produkt landet.
+
+Technische Daten (noch offen)
+-----------------------------
+Die Spezifikationstabellen stehen NICHT im HTML. MAHE nutzt das Plugin
+Ninja Tables; im Markup liegt nur das <table>-Geruest mit
+data-footable_id="<id>", die Daten kommen per AJAX nach:
+
+    https://mahe-online.de/wp-admin/admin-ajax.php
+        ?action=wp_ajax_ninja_tables_public_action
+        &table_id=<id>&target_action=get-all-data
+
+Antwort ist JSON, eine Zeile je Merkmal, mit einer Spalte je Modellvariante:
+
+    {"value": {"model": "Netzabsicherung", "240": "16A", "300": "20A", "350": "20A"}}
+
+Uebernehmen laesst sich das erst, wenn `specs` in data/P.json von einem flachen
+Schluessel-Wert-Paar auf eine Tabelle mit Variantenspalten umgestellt ist. Das
+betrifft spec_html, das JSON-LD (additionalProperty), den Suchindex,
+products.json und llms-full.txt.
 """
 
 import json

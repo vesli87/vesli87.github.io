@@ -382,5 +382,292 @@
   "w": 2469,
   "h": 1661,
   "ratio": 0.6727
+ },
+ "panels/BetaDX_Pro_Panel.png": {
+  "key": "betadx-pro-panel",
+  "w": 2428,
+  "h": 1535,
+  "ratio": 0.6322,
+  "local": true
+ },
+ "panels/BetaDX_Syn_Panel.png": {
+  "key": "betadx-syn-panel",
+  "w": 2430,
+  "h": 1537,
+  "ratio": 0.6325,
+  "local": true
+ },
+ "panels/BetaDigital_Profi_Panel.PNG": {
+  "key": "betadigital-profi-panel",
+  "w": 1948,
+  "h": 992,
+  "ratio": 0.5092,
+  "local": true
+ },
+ "panels/BetaDigital_Syn_Panel.png": {
+  "key": "betadigital-syn-panel",
+  "w": 2430,
+  "h": 1537,
+  "ratio": 0.6325,
+  "local": true
+ },
+ "panels/CT200_Panel.png": {
+  "key": "ct200-panel",
+  "w": 1949,
+  "h": 993,
+  "ratio": 0.5095,
+  "local": true
+ },
+ "panels/CT200_Syn_Panel.png": {
+  "key": "ct200-syn-panel",
+  "w": 1948,
+  "h": 992,
+  "ratio": 0.5092,
+  "local": true
+ },
+ "panels/Cleaner ST.png": {
+  "key": "cleaner-st",
+  "w": 1158,
+  "h": 818,
+  "ratio": 0.7064,
+  "local": true
+ },
+ "panels/DVS_Panel.png": {
+  "key": "dvs-panel",
+  "w": 2244,
+  "h": 1535,
+  "ratio": 0.684,
+  "local": true
+ },
+ "panels/Delta1800.png": {
+  "key": "delta1800",
+  "w": 741,
+  "h": 436,
+  "ratio": 0.5884,
+  "local": true
+ },
+ "panels/DeltaDigital_1800.png": {
+  "key": "deltadigital-1800",
+  "w": 471,
+  "h": 278,
+  "ratio": 0.5902,
+  "local": true
+ },
+ "panels/DeltaDigital_BIG_Panel.png": {
+  "key": "deltadigital-big-panel",
+  "w": 623,
+  "h": 318,
+  "ratio": 0.5104,
+  "local": true
+ },
+ "panels/EcoMIG-LowCost_Frontpanel.png": {
+  "key": "ecomig-lowcost-frontpanel",
+  "w": 5787,
+  "h": 3727,
+  "ratio": 0.644,
+  "local": true
+ },
+ "panels/EcoMIG_Analog.png": {
+  "key": "ecomig-analog",
+  "w": 2867,
+  "h": 1863,
+  "ratio": 0.6498,
+  "local": true
+ },
+ "panels/EcoPulse_Gross_CAG_Panel.png": {
+  "key": "ecopulse-gross-cag-panel",
+  "w": 6377,
+  "h": 3661,
+  "ratio": 0.5741,
+  "local": true
+ },
+ "panels/EcoPulse_Gross_TIG_Panel.png": {
+  "key": "ecopulse-gross-tig-panel",
+  "w": 6377,
+  "h": 3661,
+  "ratio": 0.5741,
+  "local": true
+ },
+ "panels/EcoPulse_Klein_CAG_Panel.png": {
+  "key": "ecopulse-klein-cag-panel",
+  "w": 4370,
+  "h": 3661,
+  "ratio": 0.8378,
+  "local": true
+ },
+ "panels/EcoPulse_Klein_TIG_Panel.png": {
+  "key": "ecopulse-klein-tig-panel",
+  "w": 4370,
+  "h": 3661,
+  "ratio": 0.8378,
+  "local": true
+ },
+ "panels/HighSpeed_Panel.PNG": {
+  "key": "highspeed-panel",
+  "w": 1473,
+  "h": 850,
+  "ratio": 0.5771,
+  "local": true
+ },
+ "panels/HyperCleaner_ST_Plus_Panell.png": {
+  "key": "hypercleaner-st-plus-panell",
+  "w": 3899,
+  "h": 1988,
+  "ratio": 0.5099,
+  "local": true
+ },
+ "panels/HyperClenaerST_Panel.png": {
+  "key": "hyperclenaerst-panel",
+  "w": 687,
+  "h": 417,
+  "ratio": 0.607,
+  "local": true
+ },
+ "panels/HyperMIG_EX_Frontpanel..png": {
+  "key": "hypermig-ex-frontpanel",
+  "w": 6377,
+  "h": 3661,
+  "ratio": 0.5741,
+  "local": true
+ },
+ "panels/HyperMIG_HX_Frontpanel.png": {
+  "key": "hypermig-hx-frontpanel",
+  "w": 6377,
+  "h": 3661,
+  "ratio": 0.5741,
+  "local": true
+ },
+ "panels/HyperMIG_SX_Frontpanel.png": {
+  "key": "hypermig-sx-frontpanel",
+  "w": 3188,
+  "h": 1830,
+  "ratio": 0.574,
+  "local": true
+ },
+ "panels/HyperTIG_ACDC_Panel.png": {
+  "key": "hypertig-acdc-panel",
+  "w": 3188,
+  "h": 1830,
+  "ratio": 0.574,
+  "local": true
+ },
+ "panels/HyperTIG_AX_Frontpanel.png": {
+  "key": "hypertig-ax-frontpanel",
+  "w": 2787,
+  "h": 1830,
+  "ratio": 0.6566,
+  "local": true
+ },
+ "panels/HyperTIG_DX_Frontpanel.png": {
+  "key": "hypertig-dx-frontpanel",
+  "w": 2787,
+  "h": 1830,
+  "ratio": 0.6566,
+  "local": true
+ },
+ "panels/HyperUp_Panel.png": {
+  "key": "hyperup-panel",
+  "w": 1020,
+  "h": 585,
+  "ratio": 0.5735,
+  "local": true
+ },
+ "panels/Hyper_Panel.png": {
+  "key": "hyper-panel",
+  "w": 3188,
+  "h": 1830,
+  "ratio": 0.574,
+  "local": true
+ },
+ "panels/Hyper_TIG_DC_Panel.PNG": {
+  "key": "hyper-tig-dc-panel",
+  "w": 1020,
+  "h": 585,
+  "ratio": 0.5735,
+  "local": true
+ },
+ "panels/MCU1_Panel.png": {
+  "key": "mcu1-panel",
+  "w": 2369,
+  "h": 1275,
+  "ratio": 0.5382,
+  "local": true
+ },
+ "panels/MMS2000C_Panel.png": {
+  "key": "mms2000c-panel",
+  "w": 2244,
+  "h": 1535,
+  "ratio": 0.684,
+  "local": true
+ },
+ "panels/MiniCleaner_Panel.png": {
+  "key": "minicleaner-panel",
+  "w": 1158,
+  "h": 818,
+  "ratio": 0.7064,
+  "local": true
+ },
+ "panels/Omega AX SYN.png": {
+  "key": "omega-ax-syn",
+  "w": 2430,
+  "h": 1537,
+  "ratio": 0.6325,
+  "local": true
+ },
+ "panels/OmegaAX Pro.png": {
+  "key": "omegaax-pro",
+  "w": 2430,
+  "h": 1537,
+  "ratio": 0.6325,
+  "local": true
+ },
+ "panels/Omega_Profi_Panel.png": {
+  "key": "omega-profi-panel",
+  "w": 1949,
+  "h": 994,
+  "ratio": 0.51,
+  "local": true
+ },
+ "panels/Omega_Syn_Panel.png": {
+  "key": "omega-syn-panel",
+  "w": 1948,
+  "h": 992,
+  "ratio": 0.5092,
+  "local": true
+ },
+ "panels/Theta40_Panel.png": {
+  "key": "theta40-panel",
+  "w": 1949,
+  "h": 993,
+  "ratio": 0.5095,
+  "local": true
+ },
+ "panels/ThetaHSC_Panel.png": {
+  "key": "thetahsc-panel",
+  "w": 1949,
+  "h": 993,
+  "ratio": 0.5095,
+  "local": true
+ },
+ "panels/c-MIG_Panel.png": {
+  "key": "c-mig-panel",
+  "w": 724,
+  "h": 585,
+  "ratio": 0.808,
+  "local": true
+ },
+ "panels/c-MIG_WWK_Panel.png": {
+  "key": "c-mig-wwk-panel",
+  "w": 2185,
+  "h": 1830,
+  "ratio": 0.8375,
+  "local": true
+ },
+ "panels/i_1600.png": {
+  "key": "i-1600",
+  "w": 447,
+  "h": 276,
+  "ratio": 0.6174,
+  "local": true
  }
 }

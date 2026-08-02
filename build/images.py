@@ -86,11 +86,20 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
 
     manifest = {}
-    if MANIFEST.exists() and not force:
+    if MANIFEST.exists():
         try:
             manifest = json.loads(MANIFEST.read_text("utf-8"))
         except Exception:
             manifest = {}
+    if force:
+        # --force baut die Produktbilder neu auf. Die Frontpanels stehen im
+        # selben Manifest, kommen aber nicht aus dem Netz, sondern von
+        # build/panels.py - sie liessen sich hier gar nicht wiederherstellen.
+        # Wurden sie frueher mitgeloescht, suchte die Seite sie anschliessend
+        # unter einer mahe-online.de-Adresse, die es nicht gibt: 32 kaputte
+        # Panelbilder auf der Live-Seite. Deshalb bleiben lokale Eintraege
+        # stehen, auch bei --force.
+        manifest = {k: v for k, v in manifest.items() if v.get("local")}
 
     paths = collect_paths()
     print(f"{len(paths)} Bilder")

@@ -280,7 +280,7 @@ def page_home(lang):
   <p class="more"><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))} →</a></p>
 </div></section>
 """
-    ld = [R.ld_org(), R.ld_website(lang),
+    ld = [R.ld_org(lang), R.ld_website(lang),
           R.ld_webpage(lang, url, C.t(lang, "home_title"), C.t(lang, "home_desc"),
                        {"@type": ["WebPage", "CollectionPage"]}),
           R.ld_faq_subset(lang, faq6, url)]
@@ -307,7 +307,7 @@ def page_products(lang):
           f'<span class="count">{n} {e(C.t(lang,"items"))} · {e(C.t(lang,"poa"))}</span></div>'
         + R.pgrid(lang, C.P) + "</div></div>"
     )
-    ld = [R.ld_org(),
+    ld = [R.ld_org(lang),
           R.ld_webpage(lang, url, title, desc, {"@type": "CollectionPage"}),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "nav_products"), url)]),
@@ -359,7 +359,7 @@ def page_cat(lang, c, sub=None):
           f'<span class="count">{len(items)} {e(C.t(lang,"items"))} · {e(C.t(lang,"poa"))}</span></div>'
         + R.pgrid(lang, items) + "</div></div>"
     )
-    ld = [R.ld_org(),
+    ld = [R.ld_org(lang),
           R.ld_webpage(lang, url, title, desc, {"@type": "CollectionPage"}),
           R.ld_breadcrumb(crumb[:-1] + [(crumb[-1][0], url)]),
           R.ld_itemlist(lang, items, h1)]
@@ -449,7 +449,7 @@ def page_product(lang, p):
   <p class="backlink"><a href="{e(C.u_cat(lang, p['cat']))}">← {e(C.t(lang,'back_to_cat'))}</a></p>
 </div></div>
 """
-    ld = [R.ld_org(), R.ld_product(lang, p),
+    ld = [R.ld_org(lang), R.ld_product(lang, p),
           R.ld_webpage(lang, url, title, desc, {"@type": "ItemPage"}),
           R.ld_breadcrumb(crumb[:-1] + [(p["name"], url)])]
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
@@ -471,7 +471,7 @@ def page_processes(lang):
                                       (C.t(lang, "n_process"), None)],
                    h1=C.t(lang, "verf_h1"), desc=C.t(lang, "verf_sub"))
             + f'<div class="catalog"><div class="wrap"><div class="procgrid">{cards}</div></div></div>')
-    ld = [R.ld_org(), R.ld_webpage(lang, url, C.t(lang, "verf_title"), C.t(lang, "verf_desc")),
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "verf_title"), C.t(lang, "verf_desc")),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "n_process"), url)])]
     return url, R.document(lang, title=C.t(lang, "verf_title"), desc=C.t(lang, "verf_desc"),
@@ -490,7 +490,7 @@ def page_downloads(lang):
                    h1=C.t(lang, "dl_h1"), desc=C.t(lang, "dl_sub"))
             + f'<div class="catalog"><div class="wrap">'
               f'<div class="dlrow" style="max-width:680px">{items}</div></div></div>')
-    ld = [R.ld_org(), R.ld_webpage(lang, url, C.t(lang, "dl_title"), C.t(lang, "dl_desc")),
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "dl_title"), C.t(lang, "dl_desc")),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "n_downloads"), url)])]
     return url, R.document(lang, title=C.t(lang, "dl_title"), desc=C.t(lang, "dl_desc"),
@@ -527,7 +527,7 @@ def page_contact(lang):
     </address>
   </aside>
 </div></div>""")
-    ld = [R.ld_org(),
+    ld = [R.ld_org(lang),
           R.ld_webpage(lang, url, C.t(lang, "kontakt_title"), C.t(lang, "kontakt_desc"),
                        {"@type": "ContactPage"}),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
@@ -545,7 +545,7 @@ def page_faq(lang):
             + R.faq_block(lang, C.EX[lang]["faq"]) + "</div></div>")
     # Die FAQPage liefert ld_faq() mitsamt mainEntity. Die WebPage bleibt WebPage –
     # sonst stuenden zwei FAQPage-Knoten auf der Seite und einer davon ohne Fragen.
-    ld = [R.ld_org(), R.ld_faq(lang),
+    ld = [R.ld_org(lang), R.ld_faq(lang),
           R.ld_webpage(lang, url, C.t(lang, "faq_title"), C.t(lang, "faq_desc")),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "nav_faq"), url)])]
@@ -573,7 +573,7 @@ def page_search(lang):
   <noscript><p class="noacc">{e(C.t(lang,'search_lead'))}
     <a href="{e(C.u_products(lang))}">{e(C.t(lang,'nav_all_products'))}</a></p></noscript>
 </div></div>""")
-    ld = [R.ld_org(), R.ld_webpage(lang, url, C.t(lang, "search_title"), C.t(lang, "search_desc"),
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "search_title"), C.t(lang, "search_desc"),
                                    {"@type": "SearchResultsPage"})]
     return url, R.document(lang, title=C.t(lang, "search_title"), desc=C.t(lang, "search_desc"),
                            url=url, alts=alts, jsonld_blocks=ld, body=body,
@@ -604,7 +604,7 @@ def page_legal(lang, kind):
                    h1=C.t(lang, f"{tkey}_h1"), desc="")
             + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')
     title, desc = C.t(lang, f"{tkey}_title"), C.t(lang, f"{tkey}_desc")
-    ld = [R.ld_org(), R.ld_webpage(lang, url, title, desc),
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, title, desc),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)), (nav, url)])]
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
                            jsonld_blocks=ld, body=body, robots=robots)
@@ -617,5 +617,5 @@ def page_404(lang=C.DEFAULT_LANG):
   <p style="margin-top:24px"><a class="btn pri" href="/">{e(C.t(lang,'err404_cta'))}</a></p>
 </div></div>"""
     return url, R.document(lang, title=C.t(lang, "err404_title"), desc=C.t(lang, "err404_lead"),
-                           url="/", alts=alts, jsonld_blocks=[R.ld_org()], body=body,
+                           url="/", alts=alts, jsonld_blocks=[R.ld_org(lang)], body=body,
                            robots="noindex,follow")

@@ -341,7 +341,8 @@
     "Stand des Dokuments",
     "<p>Diese Allgemeinen Geschäftsbedingungen haben den <strong>Stand vom 1. August 2026</strong>.</p><p>Wir können sie für künftige Verträge ändern. Für einen bereits abgeschlossenen Vertrag gilt immer die Fassung, die bei Vertragsabschluss veröffentlicht war. Die jeweils gültige Fassung steht auf dieser Seite.</p>"
    ]
-  ]
+  ],
+  "org_desc": "VES-TECH Swiss ist der Schweizer Händler für die Schweisstechnik der MAHE GmbH: Schweissgeräte für MIG/MAG, WIG/TIG und Elektrode, Plasmaschneidanlagen und elektrolytische Reinigungs- und Signiergeräte. Dazu Beratung, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung und Schweissautomation. Einzelunternehmen mit Sitz in Bronschhofen im Kanton St. Gallen; geliefert wird in die Schweiz und nach Liechtenstein."
  },
  "fr": {
   "locale": "fr_CH",
@@ -684,7 +685,8 @@
     "Version du document",
     "<p>Les présentes conditions générales sont <strong>dans leur version du 1er août 2026</strong>.</p><p>Nous pouvons les modifier pour les contrats futurs. Pour un contrat déjà conclu, la version publiée au moment de la conclusion fait toujours foi. La version en vigueur figure sur cette page.</p>"
    ]
-  ]
+  ],
+  "org_desc": "VES-TECH Swiss est le revendeur suisse de la technique de soudage de MAHE GmbH : postes à souder MIG/MAG, TIG et électrode, installations de découpe plasma et appareils de nettoyage et de marquage électrolytiques. Avec conseil, mise en service, diagnostic, réparation, calibrage et automation du soudage. Entreprise individuelle sise à Bronschhofen, canton de Saint-Gall; livraison en Suisse et au Liechtenstein."
  },
  "it": {
   "locale": "it_CH",
@@ -1027,6 +1029,7 @@
     "Versione del documento",
     "<p>Le presenti condizioni generali sono <strong>nella versione del 1° agosto 2026</strong>.</p><p>Possiamo modificarle per i contratti futuri. Per un contratto già concluso fa sempre fede la versione pubblicata al momento della conclusione. La versione in vigore si trova su questa pagina.</p>"
    ]
-  ]
+  ],
+  "org_desc": "VES-TECH Swiss è il rivenditore svizzero della tecnica di saldatura di MAHE GmbH: saldatrici MIG/MAG, TIG ed elettrodo, impianti di taglio al plasma e apparecchi elettrolitici di pulitura e marcatura. Con consulenza, messa in servizio, diagnosi, riparazione, calibrazione e automazione della saldatura. Ditta individuale con sede a Bronschhofen, Canton San Gallo; consegna in Svizzera e nel Liechtenstein."
  }
 }

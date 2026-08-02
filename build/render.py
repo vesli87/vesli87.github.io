@@ -116,13 +116,18 @@ def img_abs(path, size=1000):
 # JSON-LD-Bausteine
 # --------------------------------------------------------------------------
 
-def ld_org():
+def ld_org(lang=C.DEFAULT_LANG):
     co = C.COMPANY
     return {
         "@type": ["Organization", "LocalBusiness", "Store"],
         "@id": f"{C.SITE}/#organization",
         "name": co["name"],
         "legalName": co["legal_name"],
+        # Ohne Beschreibung muss sich eine Suchmaschine ihr Bild der Firma aus
+        # dem Seitentext zusammenreimen. Google hat daraus geschlossen, unter
+        # der Adresse stehe kein aktiver Schweizer Firmenauftritt, und auf
+        # Fassadenbauer mit aehnlichem Namen verwiesen.
+        "description": C.t(lang, "org_desc"),
         "url": C.SITE + "/",
         "logo": {"@type": "ImageObject", "url": f"{C.SITE}/assets/icons/logo.png",
                  "width": 512, "height": 512},
@@ -554,7 +559,7 @@ def _complete_graph(lang, blocks):
             have.add(x)
     out = list(blocks)
     if "Organization" not in have:
-        out.insert(0, ld_org())
+        out.insert(0, ld_org(lang))
     if "WebSite" not in have:
         pos = 1 if out and "Organization" in str(out[0].get("@type")) else 0
         out.insert(pos, ld_website(lang))

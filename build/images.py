@@ -110,6 +110,18 @@ def main():
                 fail += 1
                 continue
 
+        # Weissen Rand wegschneiden. Viele Herstellerfotos zeigen die Maschine
+        # klein in einer grossen weissen Flaeche - auf der Seite wirkt sie dann
+        # winzig, obwohl die Datei gross ist. Beim EcoMIG 3000 waren von
+        # 3008x2000 nur 1313x1413 Bild.
+        trimmer = core.BUILD / "trim"
+        if trimmer.exists():
+            geschnitten = CACHE / f"{k}-trim.png"
+            r = subprocess.run([str(trimmer), str(src), str(geschnitten)],
+                               capture_output=True, text=True)
+            if r.returncode == 0 and geschnitten.exists():
+                src = geschnitten
+
         w, h = dims(src)
         if not w:
             print(f"  [{i:2}/{len(paths)}] FEHLER unlesbar: {path}")

@@ -91,7 +91,13 @@
   "sym_wig": "WIG",
   "sym_elektrode": "Elektrode",
   "sym_plasma": "Plasma",
-  "sym_reinigen": "Reinigen"
+  "sym_reinigen": "Reinigen",
+  "v_mig": "MIG/MAG",
+  "v_wig_ac": "WIG AC/DC",
+  "v_wig_dc": "WIG DC",
+  "v_mma": "MMA",
+  "v_plasma": "Plasma",
+  "v_clean": "Reinigen"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -185,7 +191,13 @@
   "sym_wig": "TIG",
   "sym_elektrode": "Électrode",
   "sym_plasma": "Plasma",
-  "sym_reinigen": "Nettoyage"
+  "sym_reinigen": "Nettoyage",
+  "v_mig": "MIG/MAG",
+  "v_wig_ac": "TIG AC/DC",
+  "v_wig_dc": "TIG DC",
+  "v_mma": "MMA",
+  "v_plasma": "Plasma",
+  "v_clean": "Nettoyage"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -279,6 +291,12 @@
   "sym_wig": "TIG",
   "sym_elektrode": "Elettrodo",
   "sym_plasma": "Plasma",
-  "sym_reinigen": "Pulitura"
+  "sym_reinigen": "Pulitura",
+  "v_mig": "MIG/MAG",
+  "v_wig_ac": "TIG AC/DC",
+  "v_wig_dc": "TIG DC",
+  "v_mma": "MMA",
+  "v_plasma": "Plasma",
+  "v_clean": "Pulitura"
  }
 }

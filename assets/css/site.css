@@ -162,7 +162,7 @@
   .pcard:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.35)}
   .pcard .imgbox{background:#fff;aspect-ratio:1;display:grid;place-items:center;padding:18px;position:relative}
   .pcard .imgbox img{width:100%;height:100%;object-fit:contain;background:#fff}
-  .pcard .vtag{position:absolute;top:12px;left:12px;background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.08em;padding:4px 9px;border-radius:3px}
+  .pcard .vtag{position:absolute;top:12px;left:12px;max-width:calc(100% - 24px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.05em;padding:4px 9px;border-radius:3px;line-height:1.35}
   .pcard .body{padding:16px 16px 0;flex:1}
   .pcard h3{font-family:'Bodoni Moda',serif;font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:.01em;line-height:1.18}
   .pcard p{color:var(--muted);font-size:13px;line-height:1.5;margin-top:6px}
@@ -181,7 +181,7 @@
      sind nur gut 200 px breit; auf 520 px gezogen wirkten sie unscharf. Lieber
      klein und scharf als gross und verwaschen. */
   .dimg img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
-  .dimg .vtag{position:absolute;top:16px;left:16px;background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.08em;padding:5px 11px;border-radius:3px}
+  .dimg .vtag{position:absolute;top:16px;left:16px;max-width:calc(100% - 32px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.06em;padding:5px 11px;border-radius:3px;line-height:1.35}
   .dinfo .kicker{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;color:var(--accent);font-size:14px;text-transform:uppercase}
   .dinfo h1{font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(30px,4vw,50px);text-transform:uppercase;line-height:1.06;letter-spacing:.015em;margin:10px 0}
   .dinfo .lead{color:#4A453D;font-size:16px;line-height:1.6;margin-bottom:22px}

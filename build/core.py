@@ -338,6 +338,38 @@ def symbolsOf(p):
             for g, ids in e["gruppen"].items() if any(k in FEAT for k in ids)]
 
 
+def verfahrenOf(lang, p):
+    """Was das Geraet kann - fuer das Etikett auf Karte und Detailseite.
+
+    Frueher stand dort ein einzelnes, von Hand gesetztes Wort. Bei der Beta
+    digital war das "WIG", obwohl sie auch Elektroden schweisst; bei der
+    HyperMIG X "MIG/MAG", obwohl sie zusaetzlich WIG Lift Arc und MMA kann.
+    Wer nur auf die Karte schaut, sah damit weniger, als die Maschine leistet.
+
+    Abgeleitet wird die Liste aus den Katalogsymbolen (data/SYM.json), also aus
+    dem, was der Hersteller dem Geraet ausdruecklich zuschreibt.
+    """
+    grp = dict(symbolsOf(p))
+    # Beherrscht das Geraet nur eine Disziplin, bleibt das von Hand gesetzte
+    # Wort stehen - es ist genauer als die Gruppe. Der HCS 1 signiert, das P1
+    # poliert, das N1 neutralisiert; "Reinigen" waere fuer alle drei zu grob.
+    # Erst ab zwei Disziplinen zaehlt die Vollstaendigkeit mehr als die Nuance.
+    if len(grp) < 2:
+        return [p["vt"]]
+    out = []
+    if "mig" in grp:
+        out.append(t(lang, "v_mig"))
+    if "wig" in grp:
+        out.append(t(lang, "v_wig_ac" if "acdc" in grp["wig"] else "v_wig_dc"))
+    if "elektrode" in grp:
+        out.append(t(lang, "v_mma"))
+    if "plasma" in grp:
+        out.append(t(lang, "v_plasma"))
+    if "reinigen" in grp:
+        out.append(t(lang, "v_clean"))
+    return out or [p["vt"]]
+
+
 def featOf(p):
     """Alle Symbole eines Geraets als flache Liste – fuer Suche und Filter."""
     return [k for _, ids in symbolsOf(p) for k in ids]

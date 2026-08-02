@@ -400,7 +400,7 @@ def page_product(lang, p):
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
   <div class="dgrid">
-    <div class="dimg"><span class="vtag">{e(p['vt'])}</span>
+    <div class="dimg"><span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>
       {R.img_tag(p['img'], "(max-width:900px) 92vw, 520px", alt=f"{C.BRAND} {nm} – {C.pDesc(lang, p)}", eager=True, width=560)}</div>
     <div class="dinfo">
       <p class="kicker">{e(C.catT(lang, c))} · {C.BRAND}</p>

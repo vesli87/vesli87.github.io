@@ -123,7 +123,7 @@ def search_index(lang):
             "i": p["id"],
             "n": C.pName(lang, p),
             "d": C.pDesc(lang, p),
-            "v": p["vt"],
+            "v": " · ".join(C.verfahrenOf(lang, p)),
             "c": C.catT(lang, cat),
             "s": C.subT(lang, p["sub"]),
             "u": C.u_prod(lang, p),

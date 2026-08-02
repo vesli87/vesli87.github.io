@@ -276,6 +276,72 @@
   }
  },
  {
+  "id": "theta-60-aut",
+  "cat": "plasmaschneiden",
+  "sub": "Theta Automation",
+  "vt": "Plasma AUT",
+  "name": "Theta 60 AUT",
+  "img": "2020/03/theta-120-hsc-300x300.png",
+  "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden · Automation",
+   "Schneidleistung": "bis 40 mm",
+   "Technologie": "HSC",
+   "Schnittstelle": "CNC / Automation"
+  }
+ },
+ {
+  "id": "theta-120-aut",
+  "cat": "plasmaschneiden",
+  "sub": "Theta Automation",
+  "vt": "Plasma AUT",
+  "name": "Theta 120 AUT",
+  "img": "2020/03/theta-120-hsc-300x300.png",
+  "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden · Automation",
+   "Schneidleistung": "bis 55 mm",
+   "Technologie": "HSC",
+   "Schnittstelle": "CNC / Automation"
+  }
+ },
+ {
+  "id": "mpt-3001",
+  "cat": "plasmaschneiden",
+  "sub": "Schneidtische",
+  "vt": "Plasma CNC",
+  "name": "MPT 3001",
+  "img": "panels/MPT_Plasmaschneidtisch.png",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Arbeitsbereich": "3000 x 1500 mm",
+   "Stromquelle": "Theta 060 / 120 / 180 HSC",
+   "Schneidstrom": "60 A / 120 A / 180 A",
+   "Steuerung": "MyPlasm CNC",
+   "Dateiformate": "DXF, HPGL/PLT",
+   "Ausführung": "Set mit Stromquelle"
+  }
+ },
+ {
+  "id": "mpt-2501",
+  "cat": "plasmaschneiden",
+  "sub": "Schneidtische",
+  "vt": "Plasma CNC",
+  "name": "MPT 2501",
+  "img": "panels/MPT_Plasmaschneidtisch.png",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Arbeitsbereich": "2500 x 1250 mm",
+   "Stromquelle": "Theta 060 / 120 / 180 HSC",
+   "Schneidstrom": "60 A / 120 A / 180 A",
+   "Steuerung": "MyPlasm CNC",
+   "Dateiformate": "DXF, HPGL/PLT",
+   "Ausführung": "Set mit Stromquelle"
+  }
+ },
+ {
   "id": "minicleaner",
   "cat": "reinigung",
   "sub": "Cleaner",
@@ -343,6 +409,109 @@
    "Verfahren": "WIG + Reinigung",
    "Kombi": "2-in-1",
    "Lieferung": "als Set"
+  }
+ },
+ {
+  "id": "hcs1",
+  "cat": "reinigung",
+  "sub": "Signiergeräte",
+  "vt": "Signieren",
+  "name": "HCS 1",
+  "img": "2020/12/HCS-1-SET-300x248.png",
+  "desc": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
+  "specs": {
+   "Verfahren": "Elektrolyt-Signieren",
+   "Einsatz": "mobil",
+   "Lieferung": "Set mit Koffer"
+  }
+ },
+ {
+  "id": "mlf100",
+  "cat": "reinigung",
+  "sub": "Dosiersystem",
+  "vt": "Dosierung",
+  "name": "MLF 100",
+  "img": "2026/01/MLF100_A-300x136.png",
+  "desc": "Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+  "specs": {
+   "Funktion": "automatische Dosierung",
+   "Medium": "Reinigungsflüssigkeit",
+   "Einsatz": "HyperCleaner-Serie"
+  }
+ },
+ {
+  "id": "r1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Reinigung",
+  "name": "Reinigungselektrolyt Rapid R1",
+  "img": "2022/05/1850002-210x300.png",
+  "desc": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
+  "specs": {
+   "Typ": "Reinigung (Rapid)",
+   "Werkstoff": "Chromstahl",
+   "Gebinde": "0,5 / 1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "R1"
+  }
+ },
+ {
+  "id": "rp1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Reinigung",
+  "name": "Reinigungselektrolyt RP1 Pastös",
+  "img": "2022/05/1851002-210x300.png",
+  "desc": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
+  "specs": {
+   "Typ": "Reinigung (pastös)",
+   "Werkstoff": "Chromstahl",
+   "Gebinde": "0,5 / 1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "RP1"
+  }
+ },
+ {
+  "id": "p1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Polieren",
+  "name": "Polierelektrolyt P1",
+  "img": "2022/05/1852002-210x300.png",
+  "desc": "Elektrolyt zum Elektropolieren und Beizen von Edelstahl.",
+  "specs": {
+   "Typ": "Polieren / Beizen",
+   "Werkstoff": "Edelstahl",
+   "Gebinde": "0,5 / 1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "P1"
+  }
+ },
+ {
+  "id": "n1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Neutralisieren",
+  "name": "Neutralit N1",
+  "img": "2022/05/1855002-210x300.png",
+  "desc": "Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.",
+  "specs": {
+   "Typ": "Neutralisierer",
+   "Anwendung": "nach Reinigung",
+   "Gebinde": "1,0 / 5,0 L",
+   "Sicherheitsdatenblatt": "N1"
+  }
+ },
+ {
+  "id": "m1",
+  "cat": "reinigung",
+  "sub": "Elektrolyte",
+  "vt": "Signieren",
+  "name": "Signierelektrolyt M1",
+  "img": "2022/05/1853001-127x300.png",
+  "desc": "Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.",
+  "specs": {
+   "Typ": "Signieren",
+   "Anwendung": "Markieren",
+   "Gebinde": "0,1 / 0,5 / 1,0 L",
+   "Sicherheitsdatenblatt": "M1"
   }
  },
  {
@@ -537,64 +706,6 @@
   }
  },
  {
-  "id": "theta-60-aut",
-  "cat": "plasmaschneiden",
-  "sub": "Theta Automation",
-  "vt": "Plasma AUT",
-  "name": "Theta 60 AUT",
-  "img": "2020/03/theta-120-hsc-300x300.png",
-  "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
-  "specs": {
-   "Verfahren": "Plasmaschneiden · Automation",
-   "Schneidleistung": "bis 40 mm",
-   "Technologie": "HSC",
-   "Schnittstelle": "CNC / Automation"
-  }
- },
- {
-  "id": "theta-120-aut",
-  "cat": "plasmaschneiden",
-  "sub": "Theta Automation",
-  "vt": "Plasma AUT",
-  "name": "Theta 120 AUT",
-  "img": "2020/03/theta-120-hsc-300x300.png",
-  "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
-  "specs": {
-   "Verfahren": "Plasmaschneiden · Automation",
-   "Schneidleistung": "bis 55 mm",
-   "Technologie": "HSC",
-   "Schnittstelle": "CNC / Automation"
-  }
- },
- {
-  "id": "hcs1",
-  "cat": "reinigung",
-  "sub": "Signiergeräte",
-  "vt": "Signieren",
-  "name": "HCS 1",
-  "img": "2020/12/HCS-1-SET-300x248.png",
-  "desc": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
-  "specs": {
-   "Verfahren": "Elektrolyt-Signieren",
-   "Einsatz": "mobil",
-   "Lieferung": "Set mit Koffer"
-  }
- },
- {
-  "id": "mlf100",
-  "cat": "reinigung",
-  "sub": "Dosiersystem",
-  "vt": "Dosierung",
-  "name": "MLF 100",
-  "img": "2026/01/MLF100_A-300x136.png",
-  "desc": "Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
-  "specs": {
-   "Funktion": "automatische Dosierung",
-   "Medium": "Reinigungsflüssigkeit",
-   "Einsatz": "HyperCleaner-Serie"
-  }
- },
- {
   "id": "mcu1",
   "cat": "zubehoer",
   "sub": "Werkstattausrüstung",
@@ -623,81 +734,6 @@
   }
  },
  {
-  "id": "r1",
-  "cat": "reinigung",
-  "sub": "Elektrolyte",
-  "vt": "Reinigung",
-  "name": "Reinigungselektrolyt Rapid R1",
-  "img": "2022/05/1850002-210x300.png",
-  "desc": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
-  "specs": {
-   "Typ": "Reinigung (Rapid)",
-   "Werkstoff": "Chromstahl",
-   "Gebinde": "0,5 / 1,0 / 5,0 L",
-   "Sicherheitsdatenblatt": "R1"
-  }
- },
- {
-  "id": "rp1",
-  "cat": "reinigung",
-  "sub": "Elektrolyte",
-  "vt": "Reinigung",
-  "name": "Reinigungselektrolyt RP1 Pastös",
-  "img": "2022/05/1851002-210x300.png",
-  "desc": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
-  "specs": {
-   "Typ": "Reinigung (pastös)",
-   "Werkstoff": "Chromstahl",
-   "Gebinde": "0,5 / 1,0 / 5,0 L",
-   "Sicherheitsdatenblatt": "RP1"
-  }
- },
- {
-  "id": "p1",
-  "cat": "reinigung",
-  "sub": "Elektrolyte",
-  "vt": "Polieren",
-  "name": "Polierelektrolyt P1",
-  "img": "2022/05/1852002-210x300.png",
-  "desc": "Elektrolyt zum Elektropolieren und Beizen von Edelstahl.",
-  "specs": {
-   "Typ": "Polieren / Beizen",
-   "Werkstoff": "Edelstahl",
-   "Gebinde": "0,5 / 1,0 / 5,0 L",
-   "Sicherheitsdatenblatt": "P1"
-  }
- },
- {
-  "id": "n1",
-  "cat": "reinigung",
-  "sub": "Elektrolyte",
-  "vt": "Neutralisieren",
-  "name": "Neutralit N1",
-  "img": "2022/05/1855002-210x300.png",
-  "desc": "Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.",
-  "specs": {
-   "Typ": "Neutralisierer",
-   "Anwendung": "nach Reinigung",
-   "Gebinde": "1,0 / 5,0 L",
-   "Sicherheitsdatenblatt": "N1"
-  }
- },
- {
-  "id": "m1",
-  "cat": "reinigung",
-  "sub": "Elektrolyte",
-  "vt": "Signieren",
-  "name": "Signierelektrolyt M1",
-  "img": "2022/05/1853001-127x300.png",
-  "desc": "Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.",
-  "specs": {
-   "Typ": "Signieren",
-   "Anwendung": "Markieren",
-   "Gebinde": "0,1 / 0,5 / 1,0 L",
-   "Sicherheitsdatenblatt": "M1"
-  }
- },
- {
   "id": "elektrodenkabel",
   "cat": "zubehoer",
   "sub": "Kabel",
@@ -723,6 +759,62 @@
    "Querschnitt": "10 mm²",
    "Längen": "3 · 6 · 10 m",
    "Für": "HyperCleaner"
+  }
+ },
+ {
+  "id": "elektrodenkabel-4m",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Elektrodenkabel 25–90 mm²",
+  "img": "2021/06/Elektrodenhalter-215x300.png",
+  "desc": "Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+  "specs": {
+   "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+   "Länge": "4 m",
+   "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+  }
+ },
+ {
+  "id": "massekabel-4m",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 25–90 mm²",
+  "img": "2021/06/Elektrodenhalter-215x300.png",
+  "desc": "Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+  "specs": {
+   "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+   "Länge": "4 m",
+   "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+  }
+ },
+ {
+  "id": "massekabel-16",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 16 mm²",
+  "img": "2021/06/Masse_Kabel_16qmm-300x290.png",
+  "desc": "Massekabel für den Plasmaschneider Theta 40.",
+  "specs": {
+   "Querschnitt": "16 mm²",
+   "Länge": "4 m",
+   "Für": "Theta 40"
+  }
+ },
+ {
+  "id": "massekabel-25",
+  "cat": "zubehoer",
+  "sub": "Kabel",
+  "vt": "Kabel",
+  "name": "Massekabel 25 mm²",
+  "img": "2021/06/Massekabel-300x169.png",
+  "desc": "Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.",
+  "specs": {
+   "Querschnitt": "25 mm²",
+   "Länge": "4 m",
+   "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
   }
  },
  {
@@ -1086,98 +1178,6 @@
    "Typ": "Bürstenständer",
    "Ausstattung": "Tropfschutz",
    "Für": "MLF 100"
-  }
- },
- {
-  "id": "elektrodenkabel-4m",
-  "cat": "zubehoer",
-  "sub": "Kabel",
-  "vt": "Kabel",
-  "name": "Elektrodenkabel 25–90 mm²",
-  "img": "2021/06/Elektrodenhalter-215x300.png",
-  "desc": "Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
-  "specs": {
-   "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
-   "Länge": "4 m",
-   "Für": "HyperMIG X · EcoMIG · MMS · Delta"
-  }
- },
- {
-  "id": "massekabel-4m",
-  "cat": "zubehoer",
-  "sub": "Kabel",
-  "vt": "Kabel",
-  "name": "Massekabel 25–90 mm²",
-  "img": "2021/06/Elektrodenhalter-215x300.png",
-  "desc": "Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
-  "specs": {
-   "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
-   "Länge": "4 m",
-   "Für": "HyperMIG X · EcoMIG · MMS · Delta"
-  }
- },
- {
-  "id": "massekabel-16",
-  "cat": "zubehoer",
-  "sub": "Kabel",
-  "vt": "Kabel",
-  "name": "Massekabel 16 mm²",
-  "img": "2021/06/Masse_Kabel_16qmm-300x290.png",
-  "desc": "Massekabel für den Plasmaschneider Theta 40.",
-  "specs": {
-   "Querschnitt": "16 mm²",
-   "Länge": "4 m",
-   "Für": "Theta 40"
-  }
- },
- {
-  "id": "massekabel-25",
-  "cat": "zubehoer",
-  "sub": "Kabel",
-  "vt": "Kabel",
-  "name": "Massekabel 25 mm²",
-  "img": "2021/06/Massekabel-300x169.png",
-  "desc": "Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.",
-  "specs": {
-   "Querschnitt": "25 mm²",
-   "Länge": "4 m",
-   "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
-  }
- },
- {
-  "id": "mpt-3001",
-  "cat": "plasmaschneiden",
-  "sub": "Schneidtische",
-  "vt": "Plasma CNC",
-  "name": "MPT 3001",
-  "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
-  "specs": {
-   "Verfahren": "Plasmaschneiden",
-   "Arbeitsbereich": "3000 x 1500 mm",
-   "Stromquelle": "Theta 060 / 120 / 180 HSC",
-   "Schneidstrom": "60 A / 120 A / 180 A",
-   "Steuerung": "MyPlasm CNC",
-   "Dateiformate": "DXF, HPGL/PLT",
-   "Ausführung": "Set mit Stromquelle"
-  }
- },
- {
-  "id": "mpt-2501",
-  "cat": "plasmaschneiden",
-  "sub": "Schneidtische",
-  "vt": "Plasma CNC",
-  "name": "MPT 2501",
-  "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
-  "specs": {
-   "Verfahren": "Plasmaschneiden",
-   "Arbeitsbereich": "2500 x 1250 mm",
-   "Stromquelle": "Theta 060 / 120 / 180 HSC",
-   "Schneidstrom": "60 A / 120 A / 180 A",
-   "Steuerung": "MyPlasm CNC",
-   "Dateiformate": "DXF, HPGL/PLT",
-   "Ausführung": "Set mit Stromquelle"
   }
  }
 ]

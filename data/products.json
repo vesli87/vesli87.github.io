@@ -8954,6 +8954,1245 @@
    }
   },
   {
+   "id": "theta-60-aut",
+   "sku": "THETA-60-AUT",
+   "name": "MAHE Theta 60 AUT",
+   "brand": "MAHE",
+   "type": "Plasma AUT",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta Automation",
+    "fr": "Theta Automation",
+    "it": "Theta Automation"
+   },
+   "description": {
+    "de": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+    "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
+    "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
+   },
+   "highlights": {
+    "de": [
+     "HSC Technologie",
+     "Niedrige Einsatzkosten",
+     "High Performance Schneiden",
+     "Trennschnitt grösser 35 mm",
+     "Qualitätsschnitt grösser 25 mm",
+     "Stabile Lift Arc Zündung",
+     "Maximale Produktivität",
+     "Lochblech Schneidfunktion",
+     "Fugenhobeln Funktion"
+    ],
+    "fr": [
+     "Technologie HSC",
+     "Faibles coûts d'exploitation",
+     "Découpe haute performance",
+     "Coupe de séparation supérieure à 35 mm",
+     "Coupe de qualité supérieure à 25 mm",
+     "Amorçage Lift Arc stable",
+     "Productivité maximale",
+     "Fonction de découpe de tôle perforée",
+     "Fonction gougeage"
+    ],
+    "it": [
+     "Tecnologia HSC",
+     "Bassi costi d'esercizio",
+     "Taglio ad alte prestazioni",
+     "Taglio di separazione oltre 35 mm",
+     "Taglio di qualità oltre 25 mm",
+     "Innesco Lift Arc stabile",
+     "Massima produttività",
+     "Funzione di taglio per lamiera forata",
+     "Funzione scriccatura"
+    ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden · Automation",
+     "Schneidleistung": "bis 40 mm",
+     "Technologie": "HSC",
+     "Schnittstelle": "CNC / Automation"
+    },
+    "fr": {
+     "Procédé": "découpe plasma · automation",
+     "Capacité de coupe": "jusqu’à 40 mm",
+     "Technologie": "HSC",
+     "Interface": "CNC / automation"
+    },
+    "it": {
+     "Processo": "taglio plasma · automazione",
+     "Capacità di taglio": "fino a 40 mm",
+     "Tecnologia": "HSC",
+     "Interfaccia": "CNC / automazione"
+    }
+   },
+   "techdata": {
+    "de": [
+     {
+      "title": "Theta 60 HSC",
+      "note": "",
+      "columns": [
+       "60"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "60": "–"
+        }
+       },
+       {
+        "label": "Netzspannung",
+        "values": {
+         "60": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Netzabsicherung",
+        "values": {
+         "60": "16A"
+        }
+       },
+       {
+        "label": "Leerlaufspannung",
+        "values": {
+         "60": "290V"
+        }
+       },
+       {
+        "label": "Effektiver Eingangsstrom",
+        "values": {
+         "60": "10A"
+        }
+       },
+       {
+        "label": "Schweissstrombereich",
+        "values": {
+         "60": "10-60A"
+        }
+       },
+       {
+        "label": "Einschaltdauer bei max. Strom @40C",
+        "values": {
+         "60": "50% / 60A"
+        }
+       },
+       {
+        "label": "Strom bei 60% ED @40C",
+        "values": {
+         "60": "55A"
+        }
+       },
+       {
+        "label": "Strom bei 100% ED @40C",
+        "values": {
+         "60": "42A"
+        }
+       },
+       {
+        "label": "Empfohlener Schnitt",
+        "values": {
+         "60": "< 25mm"
+        }
+       },
+       {
+        "label": "Trennschnitt",
+        "values": {
+         "60": "< 35mm"
+        }
+       },
+       {
+        "label": "Masse",
+        "values": {
+         "60": "247x173x372mm"
+        }
+       },
+       {
+        "label": "Gewicht",
+        "values": {
+         "60": "16,5kg"
+        }
+       },
+       {
+        "label": "Schutzklasse",
+        "values": {
+         "60": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "60": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "60": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "Theta 60 HSC",
+      "note": "",
+      "columns": [
+       "60"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "60": "–"
+        }
+       },
+       {
+        "label": "Tension secteur",
+        "values": {
+         "60": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusible secteur",
+        "values": {
+         "60": "16A"
+        }
+       },
+       {
+        "label": "Tension à vide",
+        "values": {
+         "60": "290V"
+        }
+       },
+       {
+        "label": "Courant d’entrée effectif",
+        "values": {
+         "60": "10A"
+        }
+       },
+       {
+        "label": "Plage de courant de soudage",
+        "values": {
+         "60": "10-60A"
+        }
+       },
+       {
+        "label": "Facteur de marche au courant max. @40C",
+        "values": {
+         "60": "50% / 60A"
+        }
+       },
+       {
+        "label": "Courant à 60% de facteur de marche @40C",
+        "values": {
+         "60": "55A"
+        }
+       },
+       {
+        "label": "Courant à 100% de facteur de marche @40C",
+        "values": {
+         "60": "42A"
+        }
+       },
+       {
+        "label": "Coupe recommandée",
+        "values": {
+         "60": "< 25mm"
+        }
+       },
+       {
+        "label": "Coupe de séparation",
+        "values": {
+         "60": "< 35mm"
+        }
+       },
+       {
+        "label": "Dimensions",
+        "values": {
+         "60": "247x173x372mm"
+        }
+       },
+       {
+        "label": "Poids",
+        "values": {
+         "60": "16,5kg"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "60": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "60": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "60": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "Theta 60 HSC",
+      "note": "",
+      "columns": [
+       "60"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "60": "–"
+        }
+       },
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "60": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusibile di rete",
+        "values": {
+         "60": "16A"
+        }
+       },
+       {
+        "label": "Tensione a vuoto",
+        "values": {
+         "60": "290V"
+        }
+       },
+       {
+        "label": "Corrente d’ingresso effettiva",
+        "values": {
+         "60": "10A"
+        }
+       },
+       {
+        "label": "Campo di corrente di saldatura",
+        "values": {
+         "60": "10-60A"
+        }
+       },
+       {
+        "label": "Ciclo di lavoro alla corrente max. @40C",
+        "values": {
+         "60": "50% / 60A"
+        }
+       },
+       {
+        "label": "Corrente al 60% di ciclo di lavoro @40C",
+        "values": {
+         "60": "55A"
+        }
+       },
+       {
+        "label": "Corrente al 100% di ciclo di lavoro @40C",
+        "values": {
+         "60": "42A"
+        }
+       },
+       {
+        "label": "Taglio consigliato",
+        "values": {
+         "60": "< 25mm"
+        }
+       },
+       {
+        "label": "Taglio di separazione",
+        "values": {
+         "60": "< 35mm"
+        }
+       },
+       {
+        "label": "Dimensioni",
+        "values": {
+         "60": "247x173x372mm"
+        }
+       },
+       {
+        "label": "Peso",
+        "values": {
+         "60": "16,5kg"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "60": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "60": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "60": "S"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-60-aut/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-60-aut/"
+   }
+  },
+  {
+   "id": "theta-120-aut",
+   "sku": "THETA-120-AUT",
+   "name": "MAHE Theta 120 AUT",
+   "brand": "MAHE",
+   "type": "Plasma AUT",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Theta Automation",
+    "fr": "Theta Automation",
+    "it": "Theta Automation"
+   },
+   "description": {
+    "de": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
+    "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
+    "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
+   },
+   "highlights": {
+    "de": [
+     "HSC Technologie",
+     "Automation-Schnittstelle",
+     "Niedrige Einsatzkosten",
+     "High Performance Schneiden",
+     "Trennschnitt grösser 55 mm",
+     "Qualitätsschnitt grösser 38 mm",
+     "Stabile Lift Arc Zündung",
+     "Maximale Produktivität",
+     "Lochblech Schneidfunktion",
+     "Fugenhobeln Funktion"
+    ],
+    "fr": [
+     "Technologie HSC",
+     "Interface d'automation",
+     "Faibles coûts d'exploitation",
+     "Découpe haute performance",
+     "Coupe de séparation supérieure à 55 mm",
+     "Coupe de qualité supérieure à 38 mm",
+     "Amorçage Lift Arc stable",
+     "Productivité maximale",
+     "Fonction de découpe de tôle perforée",
+     "Fonction gougeage"
+    ],
+    "it": [
+     "Tecnologia HSC",
+     "Interfaccia di automazione",
+     "Bassi costi d'esercizio",
+     "Taglio ad alte prestazioni",
+     "Taglio di separazione oltre 55 mm",
+     "Taglio di qualità oltre 38 mm",
+     "Innesco Lift Arc stabile",
+     "Massima produttività",
+     "Funzione di taglio per lamiera forata",
+     "Funzione scriccatura"
+    ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden · Automation",
+     "Schneidleistung": "bis 55 mm",
+     "Technologie": "HSC",
+     "Schnittstelle": "CNC / Automation"
+    },
+    "fr": {
+     "Procédé": "découpe plasma · automation",
+     "Capacité de coupe": "jusqu’à 55 mm",
+     "Technologie": "HSC",
+     "Interface": "CNC / automation"
+    },
+    "it": {
+     "Processo": "taglio plasma · automazione",
+     "Capacità di taglio": "fino a 55 mm",
+     "Tecnologia": "HSC",
+     "Interfaccia": "CNC / automazione"
+    }
+   },
+   "techdata": {
+    "de": [
+     {
+      "title": "Theta 120 HSC",
+      "note": "",
+      "columns": [
+       "120"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "120": "–"
+        }
+       },
+       {
+        "label": "Netzspannung",
+        "values": {
+         "120": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Netzabsicherung",
+        "values": {
+         "120": "32A"
+        }
+       },
+       {
+        "label": "Leerlaufspannung",
+        "values": {
+         "120": "290V"
+        }
+       },
+       {
+        "label": "Effektiver Eingangsstrom",
+        "values": {
+         "120": "27A"
+        }
+       },
+       {
+        "label": "Schweissstrombereich",
+        "values": {
+         "120": "20-120A"
+        }
+       },
+       {
+        "label": "Einschaltdauer bei max. Strom @40C",
+        "values": {
+         "120": "–"
+        }
+       },
+       {
+        "label": "Strom bei 60% ED @40C",
+        "values": {
+         "120": "120A"
+        }
+       },
+       {
+        "label": "Strom bei 100% ED @40C",
+        "values": {
+         "120": "93A"
+        }
+       },
+       {
+        "label": "Empfohlener Schnitt",
+        "values": {
+         "120": "< 38mm"
+        }
+       },
+       {
+        "label": "Trennschnitt",
+        "values": {
+         "120": "< 50mm"
+        }
+       },
+       {
+        "label": "Masse",
+        "values": {
+         "120": "370x270x620mm"
+        }
+       },
+       {
+        "label": "Gewicht",
+        "values": {
+         "120": "36kg"
+        }
+       },
+       {
+        "label": "Schutzklasse",
+        "values": {
+         "120": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "120": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "120": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "Theta 120 HSC",
+      "note": "",
+      "columns": [
+       "120"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "120": "–"
+        }
+       },
+       {
+        "label": "Tension secteur",
+        "values": {
+         "120": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusible secteur",
+        "values": {
+         "120": "32A"
+        }
+       },
+       {
+        "label": "Tension à vide",
+        "values": {
+         "120": "290V"
+        }
+       },
+       {
+        "label": "Courant d’entrée effectif",
+        "values": {
+         "120": "27A"
+        }
+       },
+       {
+        "label": "Plage de courant de soudage",
+        "values": {
+         "120": "20-120A"
+        }
+       },
+       {
+        "label": "Facteur de marche au courant max. @40C",
+        "values": {
+         "120": "–"
+        }
+       },
+       {
+        "label": "Courant à 60% de facteur de marche @40C",
+        "values": {
+         "120": "120A"
+        }
+       },
+       {
+        "label": "Courant à 100% de facteur de marche @40C",
+        "values": {
+         "120": "93A"
+        }
+       },
+       {
+        "label": "Coupe recommandée",
+        "values": {
+         "120": "< 38mm"
+        }
+       },
+       {
+        "label": "Coupe de séparation",
+        "values": {
+         "120": "< 50mm"
+        }
+       },
+       {
+        "label": "Dimensions",
+        "values": {
+         "120": "370x270x620mm"
+        }
+       },
+       {
+        "label": "Poids",
+        "values": {
+         "120": "36kg"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "120": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "120": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "120": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "Theta 120 HSC",
+      "note": "",
+      "columns": [
+       "120"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "120": "–"
+        }
+       },
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "120": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusibile di rete",
+        "values": {
+         "120": "32A"
+        }
+       },
+       {
+        "label": "Tensione a vuoto",
+        "values": {
+         "120": "290V"
+        }
+       },
+       {
+        "label": "Corrente d’ingresso effettiva",
+        "values": {
+         "120": "27A"
+        }
+       },
+       {
+        "label": "Campo di corrente di saldatura",
+        "values": {
+         "120": "20-120A"
+        }
+       },
+       {
+        "label": "Ciclo di lavoro alla corrente max. @40C",
+        "values": {
+         "120": "–"
+        }
+       },
+       {
+        "label": "Corrente al 60% di ciclo di lavoro @40C",
+        "values": {
+         "120": "120A"
+        }
+       },
+       {
+        "label": "Corrente al 100% di ciclo di lavoro @40C",
+        "values": {
+         "120": "93A"
+        }
+       },
+       {
+        "label": "Taglio consigliato",
+        "values": {
+         "120": "< 38mm"
+        }
+       },
+       {
+        "label": "Taglio di separazione",
+        "values": {
+         "120": "< 50mm"
+        }
+       },
+       {
+        "label": "Dimensioni",
+        "values": {
+         "120": "370x270x620mm"
+        }
+       },
+       {
+        "label": "Peso",
+        "values": {
+         "120": "36kg"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "120": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "120": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "120": "S"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-120-aut/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-120-aut/"
+   }
+  },
+  {
+   "id": "mpt-3001",
+   "sku": "MPT-3001",
+   "name": "MAHE MPT 3001",
+   "brand": "MAHE",
+   "type": "Plasma CNC",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Schneidtische",
+    "fr": "Tables de découpe",
+    "it": "Tavoli di taglio"
+   },
+   "description": {
+    "de": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en set avec une source de courant MAHE Theta.",
+    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta."
+   },
+   "highlights": {
+    "de": [
+     "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle",
+     "Arbeitsbereich 3000 x 1500 mm",
+     "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
+     "Schneidstrom 60 A, 120 A oder 180 A",
+     "Steuerung über das MyPlasm CNC System von Proma Elektronika",
+     "Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format",
+     "Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
+     "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
+     "Höhenabtastung des Materials vor jedem Einstich",
+     "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
+     "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
+     "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
+     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
+    ],
+    "fr": [
+     "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
+     "Surface de travail 3000 x 1500 mm",
+     "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
+     "Courant de coupe 60 A, 120 A ou 180 A",
+     "Commande par le système MyPlasm CNC de Proma Elektronika",
+     "Import de dessins 2D aux formats DXF et HPGL/PLT",
+     "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
+     "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
+     "Palpage de la hauteur du matériau avant chaque perçage",
+     "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
+     "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
+     "Console de commande avec ordinateur Windows et écran à la table",
+     "Mise en service et instruction par VES-TECH Swiss"
+    ],
+    "it": [
+     "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
+     "Area di lavoro 3000 x 1500 mm",
+     "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+     "Corrente di taglio 60 A, 120 A o 180 A",
+     "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
+     "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
+     "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
+     "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
+     "Tastatura dell'altezza del materiale prima di ogni sfondamento",
+     "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
+     "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
+     "Console di comando con computer Windows e schermo al tavolo",
+     "Messa in servizio e istruzione a cura di VES-TECH Swiss"
+    ]
+   },
+   "options": {
+    "de": [
+     {
+      "name": "Filteranlage AT 1000",
+      "note": "ohne Anschlusskupplungen"
+     },
+     {
+      "name": "Schutzhaube für Computer und Konsole",
+      "note": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
+     },
+     {
+      "name": "Wasserpflegemittel MWPF 100",
+      "note": "1 kg – für das Wasserbett des Schneidtischs"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 125",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 180",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+     }
+    ],
+    "fr": [
+     {
+      "name": "Installation de filtration AT 1000",
+      "note": "sans raccords"
+     },
+     {
+      "name": "Capot de protection pour l'ordinateur et la console",
+      "note": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
+     },
+     {
+      "name": "Produit d'entretien de l'eau MWPF 100",
+      "note": "1 kg – pour le bac à eau de la table de découpe"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 125",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 125"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 180",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+     }
+    ],
+    "it": [
+     {
+      "name": "Impianto di filtrazione AT 1000",
+      "note": "senza raccordi"
+     },
+     {
+      "name": "Cappa di protezione per computer e console",
+      "note": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
+     },
+     {
+      "name": "Additivo per l'acqua MWPF 100",
+      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 125",
+      "note": "ricambi di usura per la torcia al plasma PSAB 125"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 180",
+      "note": "ricambi di usura per la torcia al plasma PSAB 180"
+     }
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden",
+     "Arbeitsbereich": "3000 x 1500 mm",
+     "Stromquelle": "Theta 060 / 120 / 180 HSC",
+     "Schneidstrom": "60 A / 120 A / 180 A",
+     "Steuerung": "MyPlasm CNC",
+     "Dateiformate": "DXF, HPGL/PLT",
+     "Ausführung": "Set mit Stromquelle"
+    },
+    "fr": {
+     "Procédé": "découpe plasma",
+     "Surface de travail": "3000 x 1500 mm",
+     "Source de courant": "Theta 060 / 120 / 180 HSC",
+     "Courant de coupe": "60 A / 120 A / 180 A",
+     "Commande": "MyPlasm CNC",
+     "Formats de fichiers": "DXF, HPGL/PLT",
+     "Version": "set avec source de courant"
+    },
+    "it": {
+     "Processo": "taglio al plasma",
+     "Area di lavoro": "3000 x 1500 mm",
+     "Generatore": "Theta 060 / 120 / 180 HSC",
+     "Corrente di taglio": "60 A / 120 A / 180 A",
+     "Controllo": "MyPlasm CNC",
+     "Formati file": "DXF, HPGL/PLT",
+     "Versione": "set con generatore"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/panels/mpt-plasmaschneidtisch-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/mpt-3001/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/mpt-3001/"
+   }
+  },
+  {
+   "id": "mpt-2501",
+   "sku": "MPT-2501",
+   "name": "MAHE MPT 2501",
+   "brand": "MAHE",
+   "type": "Plasma CNC",
+   "category": {
+    "de": "Plasmaschneiden",
+    "fr": "Découpe plasma",
+    "it": "Taglio al plasma"
+   },
+   "subcategory": {
+    "de": "Schneidtische",
+    "fr": "Tables de découpe",
+    "it": "Tavoli di taglio"
+   },
+   "description": {
+    "de": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en set avec une source de courant MAHE Theta.",
+    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta."
+   },
+   "highlights": {
+    "de": [
+     "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle",
+     "Arbeitsbereich 2500 x 1250 mm",
+     "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
+     "Schneidstrom 60 A, 120 A oder 180 A",
+     "Steuerung über das MyPlasm CNC System von Proma Elektronika",
+     "Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format",
+     "Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
+     "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
+     "Höhenabtastung des Materials vor jedem Einstich",
+     "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
+     "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
+     "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
+     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
+    ],
+    "fr": [
+     "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
+     "Surface de travail 2500 x 1250 mm",
+     "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
+     "Courant de coupe 60 A, 120 A ou 180 A",
+     "Commande par le système MyPlasm CNC de Proma Elektronika",
+     "Import de dessins 2D aux formats DXF et HPGL/PLT",
+     "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
+     "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
+     "Palpage de la hauteur du matériau avant chaque perçage",
+     "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
+     "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
+     "Console de commande avec ordinateur Windows et écran à la table",
+     "Mise en service et instruction par VES-TECH Swiss"
+    ],
+    "it": [
+     "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
+     "Area di lavoro 2500 x 1250 mm",
+     "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+     "Corrente di taglio 60 A, 120 A o 180 A",
+     "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
+     "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
+     "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
+     "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
+     "Tastatura dell'altezza del materiale prima di ogni sfondamento",
+     "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
+     "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
+     "Console di comando con computer Windows e schermo al tavolo",
+     "Messa in servizio e istruzione a cura di VES-TECH Swiss"
+    ]
+   },
+   "options": {
+    "de": [
+     {
+      "name": "Filteranlage AT 1000",
+      "note": "ohne Anschlusskupplungen"
+     },
+     {
+      "name": "Schutzhaube für Computer und Konsole",
+      "note": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
+     },
+     {
+      "name": "Wasserpflegemittel MWPF 100",
+      "note": "1 kg – für das Wasserbett des Schneidtischs"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 125",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 180",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+     }
+    ],
+    "fr": [
+     {
+      "name": "Installation de filtration AT 1000",
+      "note": "sans raccords"
+     },
+     {
+      "name": "Capot de protection pour l'ordinateur et la console",
+      "note": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
+     },
+     {
+      "name": "Produit d'entretien de l'eau MWPF 100",
+      "note": "1 kg – pour le bac à eau de la table de découpe"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 125",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 125"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 180",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+     }
+    ],
+    "it": [
+     {
+      "name": "Impianto di filtrazione AT 1000",
+      "note": "senza raccordi"
+     },
+     {
+      "name": "Cappa di protezione per computer e console",
+      "note": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
+     },
+     {
+      "name": "Additivo per l'acqua MWPF 100",
+      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 125",
+      "note": "ricambi di usura per la torcia al plasma PSAB 125"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 180",
+      "note": "ricambi di usura per la torcia al plasma PSAB 180"
+     }
+    ]
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Plasmaschneiden",
+     "Arbeitsbereich": "2500 x 1250 mm",
+     "Stromquelle": "Theta 060 / 120 / 180 HSC",
+     "Schneidstrom": "60 A / 120 A / 180 A",
+     "Steuerung": "MyPlasm CNC",
+     "Dateiformate": "DXF, HPGL/PLT",
+     "Ausführung": "Set mit Stromquelle"
+    },
+    "fr": {
+     "Procédé": "découpe plasma",
+     "Surface de travail": "2500 x 1250 mm",
+     "Source de courant": "Theta 060 / 120 / 180 HSC",
+     "Courant de coupe": "60 A / 120 A / 180 A",
+     "Commande": "MyPlasm CNC",
+     "Formats de fichiers": "DXF, HPGL/PLT",
+     "Version": "set avec source de courant"
+    },
+    "it": {
+     "Processo": "taglio al plasma",
+     "Area di lavoro": "2500 x 1250 mm",
+     "Generatore": "Theta 060 / 120 / 180 HSC",
+     "Corrente di taglio": "60 A / 120 A / 180 A",
+     "Controllo": "MyPlasm CNC",
+     "Formati file": "DXF, HPGL/PLT",
+     "Versione": "set con generatore"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/panels/mpt-plasmaschneidtisch-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/",
+    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/mpt-2501/",
+    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/mpt-2501/"
+   }
+  },
+  {
    "id": "minicleaner",
    "sku": "MINICLEANER",
    "name": "MAHE MiniReiniger",
@@ -10294,6 +11533,953 @@
    }
   },
   {
+   "id": "hcs1",
+   "sku": "HCS1",
+   "name": "MAHE HCS 1",
+   "brand": "MAHE",
+   "type": "Signieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Signiergeräte",
+    "fr": "Marquage",
+    "it": "Marcatura"
+   },
+   "description": {
+    "de": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
+    "fr": "Appareil de marquage électrolytique économique, pour la mobilité.",
+    "it": "Marcatore elettrolitico economico, per l’uso mobile."
+   },
+   "highlights": {
+    "de": [
+     "Stromquelle zum Markieren",
+     "Tiefschwarz markieren",
+     "Kurzschluss – Schutzsystem",
+     "Geeignet für Schablonen aller Hersteller"
+    ],
+    "fr": [
+     "Source de courant pour le marquage",
+     "Marquage noir profond",
+     "Système de protection contre les courts-circuits",
+     "Compatible avec les pochoirs de tous les fabricants"
+    ],
+    "it": [
+     "Generatore per la marcatura",
+     "Marcatura nero intenso",
+     "Sistema di protezione dai cortocircuiti",
+     "Compatibile con le maschere di tutti i produttori"
+    ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Elektrolyt-Signieren",
+     "Einsatz": "mobil",
+     "Lieferung": "Set mit Koffer"
+    },
+    "fr": {
+     "Procédé": "marquage électrolytique",
+     "Application": "mobile",
+     "Livraison": "kit avec mallette"
+    },
+    "it": {
+     "Processo": "marcatura elettrolitica",
+     "Impiego": "mobile",
+     "Fornitura": "set con valigetta"
+    }
+   },
+   "techdata": {
+    "de": [
+     {
+      "title": "Signiergerät HCS1",
+      "note": "",
+      "columns": [
+       "HCS1"
+      ],
+      "rows": [
+       {
+        "label": "Netzspannung",
+        "values": {
+         "HCS1": "230V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Netzabsicherung",
+        "values": {
+         "HCS1": "1,6A"
+        }
+       },
+       {
+        "label": "Ausgangsstrom max.",
+        "values": {
+         "HCS1": "4A"
+        }
+       },
+       {
+        "label": "Leerlauf Ausgangsspannung Uo",
+        "values": {
+         "HCS1": "24V AC"
+        }
+       },
+       {
+        "label": "Einschaltdauer bei max. Strom @40C",
+        "values": {
+         "HCS1": "100%"
+        }
+       },
+       {
+        "label": "Leistung max.",
+        "values": {
+         "HCS1": "56W"
+        }
+       },
+       {
+        "label": "Masse",
+        "values": {
+         "HCS1": "220x115x115mm"
+        }
+       },
+       {
+        "label": "Gewicht",
+        "values": {
+         "HCS1": "2,5kg"
+        }
+       },
+       {
+        "label": "Schutzklasse",
+        "values": {
+         "HCS1": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "HCS1": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "HCS1": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "Signiergerät HCS1",
+      "note": "",
+      "columns": [
+       "HCS1"
+      ],
+      "rows": [
+       {
+        "label": "Tension secteur",
+        "values": {
+         "HCS1": "230V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusible secteur",
+        "values": {
+         "HCS1": "1,6A"
+        }
+       },
+       {
+        "label": "Courant de sortie max.",
+        "values": {
+         "HCS1": "4A"
+        }
+       },
+       {
+        "label": "Tension de sortie à vide Uo",
+        "values": {
+         "HCS1": "24V AC"
+        }
+       },
+       {
+        "label": "Facteur de marche au courant max. @40C",
+        "values": {
+         "HCS1": "100%"
+        }
+       },
+       {
+        "label": "Puissance max.",
+        "values": {
+         "HCS1": "56W"
+        }
+       },
+       {
+        "label": "Dimensions",
+        "values": {
+         "HCS1": "220x115x115mm"
+        }
+       },
+       {
+        "label": "Poids",
+        "values": {
+         "HCS1": "2,5kg"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "HCS1": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "HCS1": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "HCS1": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "Signiergerät HCS1",
+      "note": "",
+      "columns": [
+       "HCS1"
+      ],
+      "rows": [
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "HCS1": "230V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusibile di rete",
+        "values": {
+         "HCS1": "1,6A"
+        }
+       },
+       {
+        "label": "Corrente di uscita max.",
+        "values": {
+         "HCS1": "4A"
+        }
+       },
+       {
+        "label": "Tensione di uscita a vuoto Uo",
+        "values": {
+         "HCS1": "24V AC"
+        }
+       },
+       {
+        "label": "Ciclo di lavoro alla corrente max. @40C",
+        "values": {
+         "HCS1": "100%"
+        }
+       },
+       {
+        "label": "Potenza max.",
+        "values": {
+         "HCS1": "56W"
+        }
+       },
+       {
+        "label": "Dimensioni",
+        "values": {
+         "HCS1": "220x115x115mm"
+        }
+       },
+       {
+        "label": "Peso",
+        "values": {
+         "HCS1": "2,5kg"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "HCS1": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "HCS1": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "HCS1": "S"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/hcs-1-set-7b79ff-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hcs1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hcs1/"
+   }
+  },
+  {
+   "id": "mlf100",
+   "sku": "MLF100",
+   "name": "MAHE MLF 100",
+   "brand": "MAHE",
+   "type": "Dosierung",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Dosiersystem",
+    "fr": "Dosage",
+    "it": "Dosaggio"
+   },
+   "description": {
+    "de": "Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+    "fr": "Appareil de dosage automatique du liquide de nettoyage.",
+    "it": "Apparecchio per il dosaggio automatico del liquido di pulizia."
+   },
+   "highlights": {
+    "de": [
+     "Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
+     "Automatischer/Manueller Dosiermodus",
+     "Möglichkeit zum Anschluss eines externen Tanks",
+     "Reinigungs-/Spülmodus",
+     "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
+    ],
+    "fr": [
+     "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
+     "Mode de dosage automatique ou manuel",
+     "Possibilité de raccorder un réservoir externe",
+     "Mode nettoyage et rinçage",
+     "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner."
+    ],
+    "it": [
+     "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
+     "Modalità di dosaggio automatica o manuale",
+     "Possibilità di collegare un serbatoio esterno",
+     "Modalità pulizia e risciacquo",
+     "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner."
+    ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Funktion": "automatische Dosierung",
+     "Medium": "Reinigungsflüssigkeit",
+     "Einsatz": "HyperCleaner-Serie"
+    },
+    "fr": {
+     "Fonction": "dosage automatique",
+     "Fluide": "liquide de nettoyage",
+     "Application": "série HyperCleaner"
+    },
+    "it": {
+     "Funzione": "dosaggio automatico",
+     "Fluido": "liquido di pulizia",
+     "Impiego": "serie HyperCleaner"
+    }
+   },
+   "techdata": {
+    "de": [
+     {
+      "title": "MLF100",
+      "note": "",
+      "columns": [
+       "MLF100"
+      ],
+      "rows": [
+       {
+        "label": "Netzspannung",
+        "values": {
+         "MLF100": "110V - 230V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Eingangsleistung max.",
+        "values": {
+         "MLF100": "12W"
+        }
+       },
+       {
+        "label": "Fördermenge",
+        "values": {
+         "MLF100": "2 - 80 ml/min"
+        }
+       },
+       {
+        "label": "Masse",
+        "values": {
+         "MLF100": "310x150x190mm"
+        }
+       },
+       {
+        "label": "Gewicht",
+        "values": {
+         "MLF100": "3,5kg"
+        }
+       },
+       {
+        "label": "Schutzklasse",
+        "values": {
+         "MLF100": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "MLF100": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "MLF100": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "MLF100",
+      "note": "",
+      "columns": [
+       "MLF100"
+      ],
+      "rows": [
+       {
+        "label": "Tension secteur",
+        "values": {
+         "MLF100": "110V - 230V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Puissance absorbée max.",
+        "values": {
+         "MLF100": "12W"
+        }
+       },
+       {
+        "label": "Débit",
+        "values": {
+         "MLF100": "2 - 80 ml/min"
+        }
+       },
+       {
+        "label": "Dimensions",
+        "values": {
+         "MLF100": "310x150x190mm"
+        }
+       },
+       {
+        "label": "Poids",
+        "values": {
+         "MLF100": "3,5kg"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "MLF100": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "MLF100": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "MLF100": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "MLF100",
+      "note": "",
+      "columns": [
+       "MLF100"
+      ],
+      "rows": [
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "MLF100": "110V - 230V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Potenza assorbita max.",
+        "values": {
+         "MLF100": "12W"
+        }
+       },
+       {
+        "label": "Portata",
+        "values": {
+         "MLF100": "2 - 80 ml/min"
+        }
+       },
+       {
+        "label": "Dimensioni",
+        "values": {
+         "MLF100": "310x150x190mm"
+        }
+       },
+       {
+        "label": "Peso",
+        "values": {
+         "MLF100": "3,5kg"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "MLF100": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "MLF100": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "MLF100": "S"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/mlf100-a-9a2566-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/mlf100/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/mlf100/"
+   }
+  },
+  {
+   "id": "r1",
+   "sku": "R1",
+   "name": "MAHE Reinigungselektrolyt Rapid R1",
+   "brand": "MAHE",
+   "type": "Reinigung",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
+    "fr": "Électrolyte de nettoyage rapide pour soudures inox.",
+    "it": "Elettrolita di pulizia rapida per saldature inox."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Reinigung (Rapid)",
+     "Werkstoff": "Chromstahl",
+     "Gebinde": "0,5 / 1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "R1"
+    },
+    "fr": {
+     "Type": "Reinigung (Rapid)",
+     "Matériau": "acier inox",
+     "Conditionnement": "0,5 / 1,0 / 5,0 L",
+     "Fiche de sécurité": "R1"
+    },
+    "it": {
+     "Tipo": "Reinigung (Rapid)",
+     "Materiale": "acciaio inox",
+     "Confezione": "0,5 / 1,0 / 5,0 L",
+     "Scheda di sicurezza": "R1"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1850002-8e2ce8-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/r1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/r1/"
+   }
+  },
+  {
+   "id": "rp1",
+   "sku": "RP1",
+   "name": "MAHE Reinigungselektrolyt RP1 Pastös",
+   "brand": "MAHE",
+   "type": "Reinigung",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
+    "fr": "Électrolyte de nettoyage pâteux pour surfaces verticales.",
+    "it": "Elettrolita di pulizia pastoso per superfici verticali."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Reinigung (pastös)",
+     "Werkstoff": "Chromstahl",
+     "Gebinde": "0,5 / 1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "RP1"
+    },
+    "fr": {
+     "Type": "Reinigung (pastös)",
+     "Matériau": "acier inox",
+     "Conditionnement": "0,5 / 1,0 / 5,0 L",
+     "Fiche de sécurité": "RP1"
+    },
+    "it": {
+     "Tipo": "Reinigung (pastös)",
+     "Materiale": "acciaio inox",
+     "Confezione": "0,5 / 1,0 / 5,0 L",
+     "Scheda di sicurezza": "RP1"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1851002-965760-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/rp1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/rp1/"
+   }
+  },
+  {
+   "id": "p1",
+   "sku": "P1",
+   "name": "MAHE Polierelektrolyt P1",
+   "brand": "MAHE",
+   "type": "Polieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Elektrolyt zum Elektropolieren und Beizen von Edelstahl.",
+    "fr": "Électrolyte d’électropolissage et de décapage de l’inox.",
+    "it": "Elettrolita per elettrolucidatura e decapaggio inox."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Polieren / Beizen",
+     "Werkstoff": "Edelstahl",
+     "Gebinde": "0,5 / 1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "P1"
+    },
+    "fr": {
+     "Type": "Polieren / Beizen",
+     "Matériau": "acier inox",
+     "Conditionnement": "0,5 / 1,0 / 5,0 L",
+     "Fiche de sécurité": "P1"
+    },
+    "it": {
+     "Tipo": "Polieren / Beizen",
+     "Materiale": "acciaio inox",
+     "Confezione": "0,5 / 1,0 / 5,0 L",
+     "Scheda di sicurezza": "P1"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1852002-a43991-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/p1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/p1/"
+   }
+  },
+  {
+   "id": "n1",
+   "sku": "N1",
+   "name": "MAHE Neutralit N1",
+   "brand": "MAHE",
+   "type": "Neutralisieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.",
+    "fr": "Neutralisant pour stopper et neutraliser après nettoyage.",
+    "it": "Neutralizzante per arrestare e neutralizzare dopo la pulizia."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Neutralisierer",
+     "Anwendung": "nach Reinigung",
+     "Gebinde": "1,0 / 5,0 L",
+     "Sicherheitsdatenblatt": "N1"
+    },
+    "fr": {
+     "Type": "Neutralisierer",
+     "Application": "nach Reinigung",
+     "Conditionnement": "1,0 / 5,0 L",
+     "Fiche de sécurité": "N1"
+    },
+    "it": {
+     "Tipo": "Neutralisierer",
+     "Applicazione": "nach Reinigung",
+     "Confezione": "1,0 / 5,0 L",
+     "Scheda di sicurezza": "N1"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1855002-1c6ae6-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/n1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/n1/"
+   }
+  },
+  {
+   "id": "m1",
+   "sku": "M1",
+   "name": "MAHE Signierelektrolyt M1",
+   "brand": "MAHE",
+   "type": "Signieren",
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia"
+   },
+   "subcategory": {
+    "de": "Elektrolyte",
+    "fr": "Électrolytes",
+    "it": "Elettroliti"
+   },
+   "description": {
+    "de": "Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.",
+    "fr": "Électrolyte pour le marquage électrochimique du métal.",
+    "it": "Elettrolita per la marcatura elettrochimica del metallo."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Typ": "Signieren",
+     "Anwendung": "Markieren",
+     "Gebinde": "0,1 / 0,5 / 1,0 L",
+     "Sicherheitsdatenblatt": "M1"
+    },
+    "fr": {
+     "Type": "Signieren",
+     "Application": "Markieren",
+     "Conditionnement": "0,1 / 0,5 / 1,0 L",
+     "Fiche de sécurité": "M1"
+    },
+    "it": {
+     "Tipo": "Signieren",
+     "Applicazione": "Markieren",
+     "Confezione": "0,1 / 0,5 / 1,0 L",
+     "Scheda di sicurezza": "M1"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/1853001-160836-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/m1/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/m1/"
+   }
+  },
+  {
    "id": "stt30",
    "sku": "STT30",
    "name": "MAHE STT 30",
@@ -11273,1438 +13459,6 @@
    }
   },
   {
-   "id": "theta-60-aut",
-   "sku": "THETA-60-AUT",
-   "name": "MAHE Theta 60 AUT",
-   "brand": "MAHE",
-   "type": "Plasma AUT",
-   "category": {
-    "de": "Plasmaschneiden",
-    "fr": "Découpe plasma",
-    "it": "Taglio al plasma"
-   },
-   "subcategory": {
-    "de": "Theta Automation",
-    "fr": "Theta Automation",
-    "it": "Theta Automation"
-   },
-   "description": {
-    "de": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
-    "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
-    "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
-   },
-   "highlights": {
-    "de": [
-     "HSC Technologie",
-     "Niedrige Einsatzkosten",
-     "High Performance Schneiden",
-     "Trennschnitt grösser 35 mm",
-     "Qualitätsschnitt grösser 25 mm",
-     "Stabile Lift Arc Zündung",
-     "Maximale Produktivität",
-     "Lochblech Schneidfunktion",
-     "Fugenhobeln Funktion"
-    ],
-    "fr": [
-     "Technologie HSC",
-     "Faibles coûts d'exploitation",
-     "Découpe haute performance",
-     "Coupe de séparation supérieure à 35 mm",
-     "Coupe de qualité supérieure à 25 mm",
-     "Amorçage Lift Arc stable",
-     "Productivité maximale",
-     "Fonction de découpe de tôle perforée",
-     "Fonction gougeage"
-    ],
-    "it": [
-     "Tecnologia HSC",
-     "Bassi costi d'esercizio",
-     "Taglio ad alte prestazioni",
-     "Taglio di separazione oltre 35 mm",
-     "Taglio di qualità oltre 25 mm",
-     "Innesco Lift Arc stabile",
-     "Massima produttività",
-     "Funzione di taglio per lamiera forata",
-     "Funzione scriccatura"
-    ]
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Verfahren": "Plasmaschneiden · Automation",
-     "Schneidleistung": "bis 40 mm",
-     "Technologie": "HSC",
-     "Schnittstelle": "CNC / Automation"
-    },
-    "fr": {
-     "Procédé": "découpe plasma · automation",
-     "Capacité de coupe": "jusqu’à 40 mm",
-     "Technologie": "HSC",
-     "Interface": "CNC / automation"
-    },
-    "it": {
-     "Processo": "taglio plasma · automazione",
-     "Capacità di taglio": "fino a 40 mm",
-     "Tecnologia": "HSC",
-     "Interfaccia": "CNC / automazione"
-    }
-   },
-   "techdata": {
-    "de": [
-     {
-      "title": "Theta 60 HSC",
-      "note": "",
-      "columns": [
-       "60"
-      ],
-      "rows": [
-       {
-        "label": "Upgrade",
-        "values": {
-         "60": "–"
-        }
-       },
-       {
-        "label": "Netzspannung",
-        "values": {
-         "60": "3x400V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Netzabsicherung",
-        "values": {
-         "60": "16A"
-        }
-       },
-       {
-        "label": "Leerlaufspannung",
-        "values": {
-         "60": "290V"
-        }
-       },
-       {
-        "label": "Effektiver Eingangsstrom",
-        "values": {
-         "60": "10A"
-        }
-       },
-       {
-        "label": "Schweissstrombereich",
-        "values": {
-         "60": "10-60A"
-        }
-       },
-       {
-        "label": "Einschaltdauer bei max. Strom @40C",
-        "values": {
-         "60": "50% / 60A"
-        }
-       },
-       {
-        "label": "Strom bei 60% ED @40C",
-        "values": {
-         "60": "55A"
-        }
-       },
-       {
-        "label": "Strom bei 100% ED @40C",
-        "values": {
-         "60": "42A"
-        }
-       },
-       {
-        "label": "Empfohlener Schnitt",
-        "values": {
-         "60": "< 25mm"
-        }
-       },
-       {
-        "label": "Trennschnitt",
-        "values": {
-         "60": "< 35mm"
-        }
-       },
-       {
-        "label": "Masse",
-        "values": {
-         "60": "247x173x372mm"
-        }
-       },
-       {
-        "label": "Gewicht",
-        "values": {
-         "60": "16,5kg"
-        }
-       },
-       {
-        "label": "Schutzklasse",
-        "values": {
-         "60": "IP23"
-        }
-       },
-       {
-        "label": "Konformitätszeichen",
-        "values": {
-         "60": "CE"
-        }
-       },
-       {
-        "label": "Sicherungsklasse",
-        "values": {
-         "60": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "fr": [
-     {
-      "title": "Theta 60 HSC",
-      "note": "",
-      "columns": [
-       "60"
-      ],
-      "rows": [
-       {
-        "label": "Upgrade",
-        "values": {
-         "60": "–"
-        }
-       },
-       {
-        "label": "Tension secteur",
-        "values": {
-         "60": "3x400V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Fusible secteur",
-        "values": {
-         "60": "16A"
-        }
-       },
-       {
-        "label": "Tension à vide",
-        "values": {
-         "60": "290V"
-        }
-       },
-       {
-        "label": "Courant d’entrée effectif",
-        "values": {
-         "60": "10A"
-        }
-       },
-       {
-        "label": "Plage de courant de soudage",
-        "values": {
-         "60": "10-60A"
-        }
-       },
-       {
-        "label": "Facteur de marche au courant max. @40C",
-        "values": {
-         "60": "50% / 60A"
-        }
-       },
-       {
-        "label": "Courant à 60% de facteur de marche @40C",
-        "values": {
-         "60": "55A"
-        }
-       },
-       {
-        "label": "Courant à 100% de facteur de marche @40C",
-        "values": {
-         "60": "42A"
-        }
-       },
-       {
-        "label": "Coupe recommandée",
-        "values": {
-         "60": "< 25mm"
-        }
-       },
-       {
-        "label": "Coupe de séparation",
-        "values": {
-         "60": "< 35mm"
-        }
-       },
-       {
-        "label": "Dimensions",
-        "values": {
-         "60": "247x173x372mm"
-        }
-       },
-       {
-        "label": "Poids",
-        "values": {
-         "60": "16,5kg"
-        }
-       },
-       {
-        "label": "Indice de protection",
-        "values": {
-         "60": "IP23"
-        }
-       },
-       {
-        "label": "Marquage de conformité",
-        "values": {
-         "60": "CE"
-        }
-       },
-       {
-        "label": "Classe de sécurité",
-        "values": {
-         "60": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "it": [
-     {
-      "title": "Theta 60 HSC",
-      "note": "",
-      "columns": [
-       "60"
-      ],
-      "rows": [
-       {
-        "label": "Upgrade",
-        "values": {
-         "60": "–"
-        }
-       },
-       {
-        "label": "Tensione di rete",
-        "values": {
-         "60": "3x400V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Fusibile di rete",
-        "values": {
-         "60": "16A"
-        }
-       },
-       {
-        "label": "Tensione a vuoto",
-        "values": {
-         "60": "290V"
-        }
-       },
-       {
-        "label": "Corrente d’ingresso effettiva",
-        "values": {
-         "60": "10A"
-        }
-       },
-       {
-        "label": "Campo di corrente di saldatura",
-        "values": {
-         "60": "10-60A"
-        }
-       },
-       {
-        "label": "Ciclo di lavoro alla corrente max. @40C",
-        "values": {
-         "60": "50% / 60A"
-        }
-       },
-       {
-        "label": "Corrente al 60% di ciclo di lavoro @40C",
-        "values": {
-         "60": "55A"
-        }
-       },
-       {
-        "label": "Corrente al 100% di ciclo di lavoro @40C",
-        "values": {
-         "60": "42A"
-        }
-       },
-       {
-        "label": "Taglio consigliato",
-        "values": {
-         "60": "< 25mm"
-        }
-       },
-       {
-        "label": "Taglio di separazione",
-        "values": {
-         "60": "< 35mm"
-        }
-       },
-       {
-        "label": "Dimensioni",
-        "values": {
-         "60": "247x173x372mm"
-        }
-       },
-       {
-        "label": "Peso",
-        "values": {
-         "60": "16,5kg"
-        }
-       },
-       {
-        "label": "Grado di protezione",
-        "values": {
-         "60": "IP23"
-        }
-       },
-       {
-        "label": "Marchio di conformità",
-        "values": {
-         "60": "CE"
-        }
-       },
-       {
-        "label": "Classe di sicurezza",
-        "values": {
-         "60": "S"
-        }
-       }
-      ]
-     }
-    ]
-   },
-   "materials": [
-    "Stahl",
-    "INOX",
-    "Aluminium"
-   ],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/",
-    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-60-aut/",
-    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-60-aut/"
-   }
-  },
-  {
-   "id": "theta-120-aut",
-   "sku": "THETA-120-AUT",
-   "name": "MAHE Theta 120 AUT",
-   "brand": "MAHE",
-   "type": "Plasma AUT",
-   "category": {
-    "de": "Plasmaschneiden",
-    "fr": "Découpe plasma",
-    "it": "Taglio al plasma"
-   },
-   "subcategory": {
-    "de": "Theta Automation",
-    "fr": "Theta Automation",
-    "it": "Theta Automation"
-   },
-   "description": {
-    "de": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
-    "fr": "Découpeur plasma d’automation, technologie HSC, pour intégration machine.",
-    "it": "Inverter plasma per automazione, tecnologia HSC, per integrazione macchina."
-   },
-   "highlights": {
-    "de": [
-     "HSC Technologie",
-     "Automation-Schnittstelle",
-     "Niedrige Einsatzkosten",
-     "High Performance Schneiden",
-     "Trennschnitt grösser 55 mm",
-     "Qualitätsschnitt grösser 38 mm",
-     "Stabile Lift Arc Zündung",
-     "Maximale Produktivität",
-     "Lochblech Schneidfunktion",
-     "Fugenhobeln Funktion"
-    ],
-    "fr": [
-     "Technologie HSC",
-     "Interface d'automation",
-     "Faibles coûts d'exploitation",
-     "Découpe haute performance",
-     "Coupe de séparation supérieure à 55 mm",
-     "Coupe de qualité supérieure à 38 mm",
-     "Amorçage Lift Arc stable",
-     "Productivité maximale",
-     "Fonction de découpe de tôle perforée",
-     "Fonction gougeage"
-    ],
-    "it": [
-     "Tecnologia HSC",
-     "Interfaccia di automazione",
-     "Bassi costi d'esercizio",
-     "Taglio ad alte prestazioni",
-     "Taglio di separazione oltre 55 mm",
-     "Taglio di qualità oltre 38 mm",
-     "Innesco Lift Arc stabile",
-     "Massima produttività",
-     "Funzione di taglio per lamiera forata",
-     "Funzione scriccatura"
-    ]
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Verfahren": "Plasmaschneiden · Automation",
-     "Schneidleistung": "bis 55 mm",
-     "Technologie": "HSC",
-     "Schnittstelle": "CNC / Automation"
-    },
-    "fr": {
-     "Procédé": "découpe plasma · automation",
-     "Capacité de coupe": "jusqu’à 55 mm",
-     "Technologie": "HSC",
-     "Interface": "CNC / automation"
-    },
-    "it": {
-     "Processo": "taglio plasma · automazione",
-     "Capacità di taglio": "fino a 55 mm",
-     "Tecnologia": "HSC",
-     "Interfaccia": "CNC / automazione"
-    }
-   },
-   "techdata": {
-    "de": [
-     {
-      "title": "Theta 120 HSC",
-      "note": "",
-      "columns": [
-       "120"
-      ],
-      "rows": [
-       {
-        "label": "Upgrade",
-        "values": {
-         "120": "–"
-        }
-       },
-       {
-        "label": "Netzspannung",
-        "values": {
-         "120": "3x400V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Netzabsicherung",
-        "values": {
-         "120": "32A"
-        }
-       },
-       {
-        "label": "Leerlaufspannung",
-        "values": {
-         "120": "290V"
-        }
-       },
-       {
-        "label": "Effektiver Eingangsstrom",
-        "values": {
-         "120": "27A"
-        }
-       },
-       {
-        "label": "Schweissstrombereich",
-        "values": {
-         "120": "20-120A"
-        }
-       },
-       {
-        "label": "Einschaltdauer bei max. Strom @40C",
-        "values": {
-         "120": "–"
-        }
-       },
-       {
-        "label": "Strom bei 60% ED @40C",
-        "values": {
-         "120": "120A"
-        }
-       },
-       {
-        "label": "Strom bei 100% ED @40C",
-        "values": {
-         "120": "93A"
-        }
-       },
-       {
-        "label": "Empfohlener Schnitt",
-        "values": {
-         "120": "< 38mm"
-        }
-       },
-       {
-        "label": "Trennschnitt",
-        "values": {
-         "120": "< 50mm"
-        }
-       },
-       {
-        "label": "Masse",
-        "values": {
-         "120": "370x270x620mm"
-        }
-       },
-       {
-        "label": "Gewicht",
-        "values": {
-         "120": "36kg"
-        }
-       },
-       {
-        "label": "Schutzklasse",
-        "values": {
-         "120": "IP23"
-        }
-       },
-       {
-        "label": "Konformitätszeichen",
-        "values": {
-         "120": "CE"
-        }
-       },
-       {
-        "label": "Sicherungsklasse",
-        "values": {
-         "120": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "fr": [
-     {
-      "title": "Theta 120 HSC",
-      "note": "",
-      "columns": [
-       "120"
-      ],
-      "rows": [
-       {
-        "label": "Upgrade",
-        "values": {
-         "120": "–"
-        }
-       },
-       {
-        "label": "Tension secteur",
-        "values": {
-         "120": "3x400V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Fusible secteur",
-        "values": {
-         "120": "32A"
-        }
-       },
-       {
-        "label": "Tension à vide",
-        "values": {
-         "120": "290V"
-        }
-       },
-       {
-        "label": "Courant d’entrée effectif",
-        "values": {
-         "120": "27A"
-        }
-       },
-       {
-        "label": "Plage de courant de soudage",
-        "values": {
-         "120": "20-120A"
-        }
-       },
-       {
-        "label": "Facteur de marche au courant max. @40C",
-        "values": {
-         "120": "–"
-        }
-       },
-       {
-        "label": "Courant à 60% de facteur de marche @40C",
-        "values": {
-         "120": "120A"
-        }
-       },
-       {
-        "label": "Courant à 100% de facteur de marche @40C",
-        "values": {
-         "120": "93A"
-        }
-       },
-       {
-        "label": "Coupe recommandée",
-        "values": {
-         "120": "< 38mm"
-        }
-       },
-       {
-        "label": "Coupe de séparation",
-        "values": {
-         "120": "< 50mm"
-        }
-       },
-       {
-        "label": "Dimensions",
-        "values": {
-         "120": "370x270x620mm"
-        }
-       },
-       {
-        "label": "Poids",
-        "values": {
-         "120": "36kg"
-        }
-       },
-       {
-        "label": "Indice de protection",
-        "values": {
-         "120": "IP23"
-        }
-       },
-       {
-        "label": "Marquage de conformité",
-        "values": {
-         "120": "CE"
-        }
-       },
-       {
-        "label": "Classe de sécurité",
-        "values": {
-         "120": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "it": [
-     {
-      "title": "Theta 120 HSC",
-      "note": "",
-      "columns": [
-       "120"
-      ],
-      "rows": [
-       {
-        "label": "Upgrade",
-        "values": {
-         "120": "–"
-        }
-       },
-       {
-        "label": "Tensione di rete",
-        "values": {
-         "120": "3x400V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Fusibile di rete",
-        "values": {
-         "120": "32A"
-        }
-       },
-       {
-        "label": "Tensione a vuoto",
-        "values": {
-         "120": "290V"
-        }
-       },
-       {
-        "label": "Corrente d’ingresso effettiva",
-        "values": {
-         "120": "27A"
-        }
-       },
-       {
-        "label": "Campo di corrente di saldatura",
-        "values": {
-         "120": "20-120A"
-        }
-       },
-       {
-        "label": "Ciclo di lavoro alla corrente max. @40C",
-        "values": {
-         "120": "–"
-        }
-       },
-       {
-        "label": "Corrente al 60% di ciclo di lavoro @40C",
-        "values": {
-         "120": "120A"
-        }
-       },
-       {
-        "label": "Corrente al 100% di ciclo di lavoro @40C",
-        "values": {
-         "120": "93A"
-        }
-       },
-       {
-        "label": "Taglio consigliato",
-        "values": {
-         "120": "< 38mm"
-        }
-       },
-       {
-        "label": "Taglio di separazione",
-        "values": {
-         "120": "< 50mm"
-        }
-       },
-       {
-        "label": "Dimensioni",
-        "values": {
-         "120": "370x270x620mm"
-        }
-       },
-       {
-        "label": "Peso",
-        "values": {
-         "120": "36kg"
-        }
-       },
-       {
-        "label": "Grado di protezione",
-        "values": {
-         "120": "IP23"
-        }
-       },
-       {
-        "label": "Marchio di conformità",
-        "values": {
-         "120": "CE"
-        }
-       },
-       {
-        "label": "Classe di sicurezza",
-        "values": {
-         "120": "S"
-        }
-       }
-      ]
-     }
-    ]
-   },
-   "materials": [
-    "Stahl",
-    "INOX",
-    "Aluminium"
-   ],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/",
-    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/theta-120-aut/",
-    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/theta-120-aut/"
-   }
-  },
-  {
-   "id": "hcs1",
-   "sku": "HCS1",
-   "name": "MAHE HCS 1",
-   "brand": "MAHE",
-   "type": "Signieren",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Signiergeräte",
-    "fr": "Marquage",
-    "it": "Marcatura"
-   },
-   "description": {
-    "de": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
-    "fr": "Appareil de marquage électrolytique économique, pour la mobilité.",
-    "it": "Marcatore elettrolitico economico, per l’uso mobile."
-   },
-   "highlights": {
-    "de": [
-     "Stromquelle zum Markieren",
-     "Tiefschwarz markieren",
-     "Kurzschluss – Schutzsystem",
-     "Geeignet für Schablonen aller Hersteller"
-    ],
-    "fr": [
-     "Source de courant pour le marquage",
-     "Marquage noir profond",
-     "Système de protection contre les courts-circuits",
-     "Compatible avec les pochoirs de tous les fabricants"
-    ],
-    "it": [
-     "Generatore per la marcatura",
-     "Marcatura nero intenso",
-     "Sistema di protezione dai cortocircuiti",
-     "Compatibile con le maschere di tutti i produttori"
-    ]
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Verfahren": "Elektrolyt-Signieren",
-     "Einsatz": "mobil",
-     "Lieferung": "Set mit Koffer"
-    },
-    "fr": {
-     "Procédé": "marquage électrolytique",
-     "Application": "mobile",
-     "Livraison": "kit avec mallette"
-    },
-    "it": {
-     "Processo": "marcatura elettrolitica",
-     "Impiego": "mobile",
-     "Fornitura": "set con valigetta"
-    }
-   },
-   "techdata": {
-    "de": [
-     {
-      "title": "Signiergerät HCS1",
-      "note": "",
-      "columns": [
-       "HCS1"
-      ],
-      "rows": [
-       {
-        "label": "Netzspannung",
-        "values": {
-         "HCS1": "230V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Netzabsicherung",
-        "values": {
-         "HCS1": "1,6A"
-        }
-       },
-       {
-        "label": "Ausgangsstrom max.",
-        "values": {
-         "HCS1": "4A"
-        }
-       },
-       {
-        "label": "Leerlauf Ausgangsspannung Uo",
-        "values": {
-         "HCS1": "24V AC"
-        }
-       },
-       {
-        "label": "Einschaltdauer bei max. Strom @40C",
-        "values": {
-         "HCS1": "100%"
-        }
-       },
-       {
-        "label": "Leistung max.",
-        "values": {
-         "HCS1": "56W"
-        }
-       },
-       {
-        "label": "Masse",
-        "values": {
-         "HCS1": "220x115x115mm"
-        }
-       },
-       {
-        "label": "Gewicht",
-        "values": {
-         "HCS1": "2,5kg"
-        }
-       },
-       {
-        "label": "Schutzklasse",
-        "values": {
-         "HCS1": "IP23"
-        }
-       },
-       {
-        "label": "Konformitätszeichen",
-        "values": {
-         "HCS1": "CE"
-        }
-       },
-       {
-        "label": "Sicherungsklasse",
-        "values": {
-         "HCS1": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "fr": [
-     {
-      "title": "Signiergerät HCS1",
-      "note": "",
-      "columns": [
-       "HCS1"
-      ],
-      "rows": [
-       {
-        "label": "Tension secteur",
-        "values": {
-         "HCS1": "230V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Fusible secteur",
-        "values": {
-         "HCS1": "1,6A"
-        }
-       },
-       {
-        "label": "Courant de sortie max.",
-        "values": {
-         "HCS1": "4A"
-        }
-       },
-       {
-        "label": "Tension de sortie à vide Uo",
-        "values": {
-         "HCS1": "24V AC"
-        }
-       },
-       {
-        "label": "Facteur de marche au courant max. @40C",
-        "values": {
-         "HCS1": "100%"
-        }
-       },
-       {
-        "label": "Puissance max.",
-        "values": {
-         "HCS1": "56W"
-        }
-       },
-       {
-        "label": "Dimensions",
-        "values": {
-         "HCS1": "220x115x115mm"
-        }
-       },
-       {
-        "label": "Poids",
-        "values": {
-         "HCS1": "2,5kg"
-        }
-       },
-       {
-        "label": "Indice de protection",
-        "values": {
-         "HCS1": "IP23"
-        }
-       },
-       {
-        "label": "Marquage de conformité",
-        "values": {
-         "HCS1": "CE"
-        }
-       },
-       {
-        "label": "Classe de sécurité",
-        "values": {
-         "HCS1": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "it": [
-     {
-      "title": "Signiergerät HCS1",
-      "note": "",
-      "columns": [
-       "HCS1"
-      ],
-      "rows": [
-       {
-        "label": "Tensione di rete",
-        "values": {
-         "HCS1": "230V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Fusibile di rete",
-        "values": {
-         "HCS1": "1,6A"
-        }
-       },
-       {
-        "label": "Corrente di uscita max.",
-        "values": {
-         "HCS1": "4A"
-        }
-       },
-       {
-        "label": "Tensione di uscita a vuoto Uo",
-        "values": {
-         "HCS1": "24V AC"
-        }
-       },
-       {
-        "label": "Ciclo di lavoro alla corrente max. @40C",
-        "values": {
-         "HCS1": "100%"
-        }
-       },
-       {
-        "label": "Potenza max.",
-        "values": {
-         "HCS1": "56W"
-        }
-       },
-       {
-        "label": "Dimensioni",
-        "values": {
-         "HCS1": "220x115x115mm"
-        }
-       },
-       {
-        "label": "Peso",
-        "values": {
-         "HCS1": "2,5kg"
-        }
-       },
-       {
-        "label": "Grado di protezione",
-        "values": {
-         "HCS1": "IP23"
-        }
-       },
-       {
-        "label": "Marchio di conformità",
-        "values": {
-         "HCS1": "CE"
-        }
-       },
-       {
-        "label": "Classe di sicurezza",
-        "values": {
-         "HCS1": "S"
-        }
-       }
-      ]
-     }
-    ]
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/hcs-1-set-7b79ff-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/hcs1/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/hcs1/"
-   }
-  },
-  {
-   "id": "mlf100",
-   "sku": "MLF100",
-   "name": "MAHE MLF 100",
-   "brand": "MAHE",
-   "type": "Dosierung",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Dosiersystem",
-    "fr": "Dosage",
-    "it": "Dosaggio"
-   },
-   "description": {
-    "de": "Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
-    "fr": "Appareil de dosage automatique du liquide de nettoyage.",
-    "it": "Apparecchio per il dosaggio automatico del liquido di pulizia."
-   },
-   "highlights": {
-    "de": [
-     "Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.",
-     "Automatischer/Manueller Dosiermodus",
-     "Möglichkeit zum Anschluss eines externen Tanks",
-     "Reinigungs-/Spülmodus",
-     "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
-    ],
-    "fr": [
-     "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
-     "Mode de dosage automatique ou manuel",
-     "Possibilité de raccorder un réservoir externe",
-     "Mode nettoyage et rinçage",
-     "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner."
-    ],
-    "it": [
-     "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
-     "Modalità di dosaggio automatica o manuale",
-     "Possibilità di collegare un serbatoio esterno",
-     "Modalità pulizia e risciacquo",
-     "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner."
-    ]
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Funktion": "automatische Dosierung",
-     "Medium": "Reinigungsflüssigkeit",
-     "Einsatz": "HyperCleaner-Serie"
-    },
-    "fr": {
-     "Fonction": "dosage automatique",
-     "Fluide": "liquide de nettoyage",
-     "Application": "série HyperCleaner"
-    },
-    "it": {
-     "Funzione": "dosaggio automatico",
-     "Fluido": "liquido di pulizia",
-     "Impiego": "serie HyperCleaner"
-    }
-   },
-   "techdata": {
-    "de": [
-     {
-      "title": "MLF100",
-      "note": "",
-      "columns": [
-       "MLF100"
-      ],
-      "rows": [
-       {
-        "label": "Netzspannung",
-        "values": {
-         "MLF100": "110V - 230V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Eingangsleistung max.",
-        "values": {
-         "MLF100": "12W"
-        }
-       },
-       {
-        "label": "Fördermenge",
-        "values": {
-         "MLF100": "2 - 80 ml/min"
-        }
-       },
-       {
-        "label": "Masse",
-        "values": {
-         "MLF100": "310x150x190mm"
-        }
-       },
-       {
-        "label": "Gewicht",
-        "values": {
-         "MLF100": "3,5kg"
-        }
-       },
-       {
-        "label": "Schutzklasse",
-        "values": {
-         "MLF100": "IP23"
-        }
-       },
-       {
-        "label": "Konformitätszeichen",
-        "values": {
-         "MLF100": "CE"
-        }
-       },
-       {
-        "label": "Sicherungsklasse",
-        "values": {
-         "MLF100": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "fr": [
-     {
-      "title": "MLF100",
-      "note": "",
-      "columns": [
-       "MLF100"
-      ],
-      "rows": [
-       {
-        "label": "Tension secteur",
-        "values": {
-         "MLF100": "110V - 230V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Puissance absorbée max.",
-        "values": {
-         "MLF100": "12W"
-        }
-       },
-       {
-        "label": "Débit",
-        "values": {
-         "MLF100": "2 - 80 ml/min"
-        }
-       },
-       {
-        "label": "Dimensions",
-        "values": {
-         "MLF100": "310x150x190mm"
-        }
-       },
-       {
-        "label": "Poids",
-        "values": {
-         "MLF100": "3,5kg"
-        }
-       },
-       {
-        "label": "Indice de protection",
-        "values": {
-         "MLF100": "IP23"
-        }
-       },
-       {
-        "label": "Marquage de conformité",
-        "values": {
-         "MLF100": "CE"
-        }
-       },
-       {
-        "label": "Classe de sécurité",
-        "values": {
-         "MLF100": "S"
-        }
-       }
-      ]
-     }
-    ],
-    "it": [
-     {
-      "title": "MLF100",
-      "note": "",
-      "columns": [
-       "MLF100"
-      ],
-      "rows": [
-       {
-        "label": "Tensione di rete",
-        "values": {
-         "MLF100": "110V - 230V, 50/60Hz"
-        }
-       },
-       {
-        "label": "Potenza assorbita max.",
-        "values": {
-         "MLF100": "12W"
-        }
-       },
-       {
-        "label": "Portata",
-        "values": {
-         "MLF100": "2 - 80 ml/min"
-        }
-       },
-       {
-        "label": "Dimensioni",
-        "values": {
-         "MLF100": "310x150x190mm"
-        }
-       },
-       {
-        "label": "Peso",
-        "values": {
-         "MLF100": "3,5kg"
-        }
-       },
-       {
-        "label": "Grado di protezione",
-        "values": {
-         "MLF100": "IP23"
-        }
-       },
-       {
-        "label": "Marchio di conformità",
-        "values": {
-         "MLF100": "CE"
-        }
-       },
-       {
-        "label": "Classe di sicurezza",
-        "values": {
-         "MLF100": "S"
-        }
-       }
-      ]
-     }
-    ]
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/mlf100-a-9a2566-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/mlf100/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/mlf100/"
-   }
-  },
-  {
    "id": "mcu1",
    "sku": "MCU1",
    "name": "MAHE MCU 1",
@@ -12847,376 +13601,6 @@
    }
   },
   {
-   "id": "r1",
-   "sku": "R1",
-   "name": "MAHE Reinigungselektrolyt Rapid R1",
-   "brand": "MAHE",
-   "type": "Reinigung",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Elektrolyte",
-    "fr": "Électrolytes",
-    "it": "Elettroliti"
-   },
-   "description": {
-    "de": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
-    "fr": "Électrolyte de nettoyage rapide pour soudures inox.",
-    "it": "Elettrolita di pulizia rapida per saldature inox."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Reinigung (Rapid)",
-     "Werkstoff": "Chromstahl",
-     "Gebinde": "0,5 / 1,0 / 5,0 L",
-     "Sicherheitsdatenblatt": "R1"
-    },
-    "fr": {
-     "Type": "Reinigung (Rapid)",
-     "Matériau": "acier inox",
-     "Conditionnement": "0,5 / 1,0 / 5,0 L",
-     "Fiche de sécurité": "R1"
-    },
-    "it": {
-     "Tipo": "Reinigung (Rapid)",
-     "Materiale": "acciaio inox",
-     "Confezione": "0,5 / 1,0 / 5,0 L",
-     "Scheda di sicurezza": "R1"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/1850002-8e2ce8-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/r1/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/r1/"
-   }
-  },
-  {
-   "id": "rp1",
-   "sku": "RP1",
-   "name": "MAHE Reinigungselektrolyt RP1 Pastös",
-   "brand": "MAHE",
-   "type": "Reinigung",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Elektrolyte",
-    "fr": "Électrolytes",
-    "it": "Elettroliti"
-   },
-   "description": {
-    "de": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
-    "fr": "Électrolyte de nettoyage pâteux pour surfaces verticales.",
-    "it": "Elettrolita di pulizia pastoso per superfici verticali."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Reinigung (pastös)",
-     "Werkstoff": "Chromstahl",
-     "Gebinde": "0,5 / 1,0 / 5,0 L",
-     "Sicherheitsdatenblatt": "RP1"
-    },
-    "fr": {
-     "Type": "Reinigung (pastös)",
-     "Matériau": "acier inox",
-     "Conditionnement": "0,5 / 1,0 / 5,0 L",
-     "Fiche de sécurité": "RP1"
-    },
-    "it": {
-     "Tipo": "Reinigung (pastös)",
-     "Materiale": "acciaio inox",
-     "Confezione": "0,5 / 1,0 / 5,0 L",
-     "Scheda di sicurezza": "RP1"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/1851002-965760-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/rp1/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/rp1/"
-   }
-  },
-  {
-   "id": "p1",
-   "sku": "P1",
-   "name": "MAHE Polierelektrolyt P1",
-   "brand": "MAHE",
-   "type": "Polieren",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Elektrolyte",
-    "fr": "Électrolytes",
-    "it": "Elettroliti"
-   },
-   "description": {
-    "de": "Elektrolyt zum Elektropolieren und Beizen von Edelstahl.",
-    "fr": "Électrolyte d’électropolissage et de décapage de l’inox.",
-    "it": "Elettrolita per elettrolucidatura e decapaggio inox."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Polieren / Beizen",
-     "Werkstoff": "Edelstahl",
-     "Gebinde": "0,5 / 1,0 / 5,0 L",
-     "Sicherheitsdatenblatt": "P1"
-    },
-    "fr": {
-     "Type": "Polieren / Beizen",
-     "Matériau": "acier inox",
-     "Conditionnement": "0,5 / 1,0 / 5,0 L",
-     "Fiche de sécurité": "P1"
-    },
-    "it": {
-     "Tipo": "Polieren / Beizen",
-     "Materiale": "acciaio inox",
-     "Confezione": "0,5 / 1,0 / 5,0 L",
-     "Scheda di sicurezza": "P1"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/1852002-a43991-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/p1/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/p1/"
-   }
-  },
-  {
-   "id": "n1",
-   "sku": "N1",
-   "name": "MAHE Neutralit N1",
-   "brand": "MAHE",
-   "type": "Neutralisieren",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Elektrolyte",
-    "fr": "Électrolytes",
-    "it": "Elettroliti"
-   },
-   "description": {
-    "de": "Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen.",
-    "fr": "Neutralisant pour stopper et neutraliser après nettoyage.",
-    "it": "Neutralizzante per arrestare e neutralizzare dopo la pulizia."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Neutralisierer",
-     "Anwendung": "nach Reinigung",
-     "Gebinde": "1,0 / 5,0 L",
-     "Sicherheitsdatenblatt": "N1"
-    },
-    "fr": {
-     "Type": "Neutralisierer",
-     "Application": "nach Reinigung",
-     "Conditionnement": "1,0 / 5,0 L",
-     "Fiche de sécurité": "N1"
-    },
-    "it": {
-     "Tipo": "Neutralisierer",
-     "Applicazione": "nach Reinigung",
-     "Confezione": "1,0 / 5,0 L",
-     "Scheda di sicurezza": "N1"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/1855002-1c6ae6-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/n1/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/n1/"
-   }
-  },
-  {
-   "id": "m1",
-   "sku": "M1",
-   "name": "MAHE Signierelektrolyt M1",
-   "brand": "MAHE",
-   "type": "Signieren",
-   "category": {
-    "de": "Reinigungsgeräte",
-    "fr": "Appareils de nettoyage",
-    "it": "Apparecchi di pulizia"
-   },
-   "subcategory": {
-    "de": "Elektrolyte",
-    "fr": "Électrolytes",
-    "it": "Elettroliti"
-   },
-   "description": {
-    "de": "Elektrolyt zum elektrochemischen Signieren und Markieren von Metall.",
-    "fr": "Électrolyte pour le marquage électrochimique du métal.",
-    "it": "Elettrolita per la marcatura elettrochimica del metallo."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Signieren",
-     "Anwendung": "Markieren",
-     "Gebinde": "0,1 / 0,5 / 1,0 L",
-     "Sicherheitsdatenblatt": "M1"
-    },
-    "fr": {
-     "Type": "Signieren",
-     "Application": "Markieren",
-     "Conditionnement": "0,1 / 0,5 / 1,0 L",
-     "Fiche de sécurité": "M1"
-    },
-    "it": {
-     "Tipo": "Signieren",
-     "Applicazione": "Markieren",
-     "Confezione": "0,1 / 0,5 / 1,0 L",
-     "Scheda di sicurezza": "M1"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/1853001-160836-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/",
-    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/m1/",
-    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/m1/"
-   }
-  },
-  {
    "id": "elektrodenkabel",
    "sku": "ELEKTRODENKABEL",
    "name": "MAHE Elektrodenkabel 10 mm²",
@@ -13356,6 +13740,290 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel/"
+   }
+  },
+  {
+   "id": "elektrodenkabel-4m",
+   "sku": "ELEKTRODENKABEL-4M",
+   "name": "MAHE Elektrodenkabel 25–90 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+    "fr": "Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+    "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+     "Länge": "4 m",
+     "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "fr": {
+     "Sections": "25 · 35 · 50 · 70 · 90 mm²",
+     "Longueur": "4 m",
+     "Pour": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "it": {
+     "Sezioni": "25 · 35 · 50 · 70 · 90 mm²",
+     "Lunghezza": "4 m",
+     "Per": "HyperMIG X · EcoMIG · MMS · Delta"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/elektrodenkabel-4m/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/elektrodenkabel-4m/"
+   }
+  },
+  {
+   "id": "massekabel-4m",
+   "sku": "MASSEKABEL-4M",
+   "name": "MAHE Massekabel 25–90 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
+    "fr": "Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+    "it": "Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
+     "Länge": "4 m",
+     "Für": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "fr": {
+     "Sections": "25 · 35 · 50 · 70 · 90 mm²",
+     "Longueur": "4 m",
+     "Pour": "HyperMIG X · EcoMIG · MMS · Delta"
+    },
+    "it": {
+     "Sezioni": "25 · 35 · 50 · 70 · 90 mm²",
+     "Lunghezza": "4 m",
+     "Per": "HyperMIG X · EcoMIG · MMS · Delta"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-4m/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-4m/"
+   }
+  },
+  {
+   "id": "massekabel-16",
+   "sku": "MASSEKABEL-16",
+   "name": "MAHE Massekabel 16 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel für den Plasmaschneider Theta 40.",
+    "fr": "Câble de masse pour le découpeur plasma Theta 40.",
+    "it": "Cavo di massa per il sistema di taglio al plasma Theta 40."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitt": "16 mm²",
+     "Länge": "4 m",
+     "Für": "Theta 40"
+    },
+    "fr": {
+     "Section": "16 mm²",
+     "Longueur": "4 m",
+     "Pour": "Theta 40"
+    },
+    "it": {
+     "Sezione": "16 mm²",
+     "Lunghezza": "4 m",
+     "Per": "Theta 40"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/masse-kabel-16qmm-84051c-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-16/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-16/"
+   }
+  },
+  {
+   "id": "massekabel-25",
+   "sku": "MASSEKABEL-25",
+   "name": "MAHE Massekabel 25 mm²",
+   "brand": "MAHE",
+   "type": "Kabel",
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori"
+   },
+   "subcategory": {
+    "de": "Kabel",
+    "fr": "Câbles",
+    "it": "Cavi"
+   },
+   "description": {
+    "de": "Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.",
+    "fr": "Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180.",
+    "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Querschnitt": "25 mm²",
+     "Länge": "4 m",
+     "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
+    },
+    "fr": {
+     "Section": "25 mm²",
+     "Longueur": "4 m",
+     "Pour": "Theta 60 · 120 · 180 (HSC / AUT)"
+    },
+    "it": {
+     "Sezione": "25 mm²",
+     "Lunghezza": "4 m",
+     "Per": "Theta 60 · 120 · 180 (HSC / AUT)"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": "InStock",
+   "image": "https://www.ves-tech.ch/assets/img/p/massekabel-262794-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-25/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-25/"
    }
   },
   {
@@ -15170,674 +15838,6 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/reinigungspinselstaender/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/reinigungspinselstaender/"
-   }
-  },
-  {
-   "id": "elektrodenkabel-4m",
-   "sku": "ELEKTRODENKABEL-4M",
-   "name": "MAHE Elektrodenkabel 25–90 mm²",
-   "brand": "MAHE",
-   "type": "Kabel",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Kabel",
-    "fr": "Câbles",
-    "it": "Cavi"
-   },
-   "description": {
-    "de": "Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
-    "fr": "Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
-    "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
-     "Länge": "4 m",
-     "Für": "HyperMIG X · EcoMIG · MMS · Delta"
-    },
-    "fr": {
-     "Sections": "25 · 35 · 50 · 70 · 90 mm²",
-     "Longueur": "4 m",
-     "Pour": "HyperMIG X · EcoMIG · MMS · Delta"
-    },
-    "it": {
-     "Sezioni": "25 · 35 · 50 · 70 · 90 mm²",
-     "Lunghezza": "4 m",
-     "Per": "HyperMIG X · EcoMIG · MMS · Delta"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/elektrodenkabel-4m/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/elektrodenkabel-4m/"
-   }
-  },
-  {
-   "id": "massekabel-4m",
-   "sku": "MASSEKABEL-4M",
-   "name": "MAHE Massekabel 25–90 mm²",
-   "brand": "MAHE",
-   "type": "Kabel",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Kabel",
-    "fr": "Câbles",
-    "it": "Cavi"
-   },
-   "description": {
-    "de": "Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.",
-    "fr": "Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
-    "it": "Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
-     "Länge": "4 m",
-     "Für": "HyperMIG X · EcoMIG · MMS · Delta"
-    },
-    "fr": {
-     "Sections": "25 · 35 · 50 · 70 · 90 mm²",
-     "Longueur": "4 m",
-     "Pour": "HyperMIG X · EcoMIG · MMS · Delta"
-    },
-    "it": {
-     "Sezioni": "25 · 35 · 50 · 70 · 90 mm²",
-     "Lunghezza": "4 m",
-     "Per": "HyperMIG X · EcoMIG · MMS · Delta"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-4m/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-4m/"
-   }
-  },
-  {
-   "id": "massekabel-16",
-   "sku": "MASSEKABEL-16",
-   "name": "MAHE Massekabel 16 mm²",
-   "brand": "MAHE",
-   "type": "Kabel",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Kabel",
-    "fr": "Câbles",
-    "it": "Cavi"
-   },
-   "description": {
-    "de": "Massekabel für den Plasmaschneider Theta 40.",
-    "fr": "Câble de masse pour le découpeur plasma Theta 40.",
-    "it": "Cavo di massa per il sistema di taglio al plasma Theta 40."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Querschnitt": "16 mm²",
-     "Länge": "4 m",
-     "Für": "Theta 40"
-    },
-    "fr": {
-     "Section": "16 mm²",
-     "Longueur": "4 m",
-     "Pour": "Theta 40"
-    },
-    "it": {
-     "Sezione": "16 mm²",
-     "Lunghezza": "4 m",
-     "Per": "Theta 40"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/masse-kabel-16qmm-84051c-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-16/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-16/"
-   }
-  },
-  {
-   "id": "massekabel-25",
-   "sku": "MASSEKABEL-25",
-   "name": "MAHE Massekabel 25 mm²",
-   "brand": "MAHE",
-   "type": "Kabel",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Kabel",
-    "fr": "Câbles",
-    "it": "Cavi"
-   },
-   "description": {
-    "de": "Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.",
-    "fr": "Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180.",
-    "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Querschnitt": "25 mm²",
-     "Länge": "4 m",
-     "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
-    },
-    "fr": {
-     "Section": "25 mm²",
-     "Longueur": "4 m",
-     "Pour": "Theta 60 · 120 · 180 (HSC / AUT)"
-    },
-    "it": {
-     "Sezione": "25 mm²",
-     "Lunghezza": "4 m",
-     "Per": "Theta 60 · 120 · 180 (HSC / AUT)"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/massekabel-262794-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-25/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-25/"
-   }
-  },
-  {
-   "id": "mpt-3001",
-   "sku": "MPT-3001",
-   "name": "MAHE MPT 3001",
-   "brand": "MAHE",
-   "type": "Plasma CNC",
-   "category": {
-    "de": "Plasmaschneiden",
-    "fr": "Découpe plasma",
-    "it": "Taglio al plasma"
-   },
-   "subcategory": {
-    "de": "Schneidtische",
-    "fr": "Tables de découpe",
-    "it": "Tavoli di taglio"
-   },
-   "description": {
-    "de": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
-    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en set avec une source de courant MAHE Theta.",
-    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta."
-   },
-   "highlights": {
-    "de": [
-     "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle",
-     "Arbeitsbereich 3000 x 1500 mm",
-     "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
-     "Schneidstrom 60 A, 120 A oder 180 A",
-     "Steuerung über das MyPlasm CNC System von Proma Elektronika",
-     "Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format",
-     "Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
-     "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
-     "Höhenabtastung des Materials vor jedem Einstich",
-     "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
-     "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
-     "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
-    ],
-    "fr": [
-     "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
-     "Surface de travail 3000 x 1500 mm",
-     "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
-     "Courant de coupe 60 A, 120 A ou 180 A",
-     "Commande par le système MyPlasm CNC de Proma Elektronika",
-     "Import de dessins 2D aux formats DXF et HPGL/PLT",
-     "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
-     "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
-     "Palpage de la hauteur du matériau avant chaque perçage",
-     "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
-     "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
-     "Console de commande avec ordinateur Windows et écran à la table",
-     "Mise en service et instruction par VES-TECH Swiss"
-    ],
-    "it": [
-     "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
-     "Area di lavoro 3000 x 1500 mm",
-     "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
-     "Corrente di taglio 60 A, 120 A o 180 A",
-     "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
-     "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
-     "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
-     "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
-     "Tastatura dell'altezza del materiale prima di ogni sfondamento",
-     "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
-     "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
-     "Console di comando con computer Windows e schermo al tavolo",
-     "Messa in servizio e istruzione a cura di VES-TECH Swiss"
-    ]
-   },
-   "options": {
-    "de": [
-     {
-      "name": "Filteranlage AT 1000",
-      "note": "ohne Anschlusskupplungen"
-     },
-     {
-      "name": "Schutzhaube für Computer und Konsole",
-      "note": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
-     },
-     {
-      "name": "Wasserpflegemittel MWPF 100",
-      "note": "1 kg – für das Wasserbett des Schneidtischs"
-     },
-     {
-      "name": "Verschleissteilebox PSAB 125",
-      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
-     },
-     {
-      "name": "Verschleissteilebox PSAB 180",
-      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
-     }
-    ],
-    "fr": [
-     {
-      "name": "Installation de filtration AT 1000",
-      "note": "sans raccords"
-     },
-     {
-      "name": "Capot de protection pour l'ordinateur et la console",
-      "note": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
-     },
-     {
-      "name": "Produit d'entretien de l'eau MWPF 100",
-      "note": "1 kg – pour le bac à eau de la table de découpe"
-     },
-     {
-      "name": "Coffret de pièces d'usure PSAB 125",
-      "note": "pièces d'usure de rechange pour la torche plasma PSAB 125"
-     },
-     {
-      "name": "Coffret de pièces d'usure PSAB 180",
-      "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
-     }
-    ],
-    "it": [
-     {
-      "name": "Impianto di filtrazione AT 1000",
-      "note": "senza raccordi"
-     },
-     {
-      "name": "Cappa di protezione per computer e console",
-      "note": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
-     },
-     {
-      "name": "Additivo per l'acqua MWPF 100",
-      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
-     },
-     {
-      "name": "Box ricambi di usura PSAB 125",
-      "note": "ricambi di usura per la torcia al plasma PSAB 125"
-     },
-     {
-      "name": "Box ricambi di usura PSAB 180",
-      "note": "ricambi di usura per la torcia al plasma PSAB 180"
-     }
-    ]
-   },
-   "specs": {
-    "de": {
-     "Verfahren": "Plasmaschneiden",
-     "Arbeitsbereich": "3000 x 1500 mm",
-     "Stromquelle": "Theta 060 / 120 / 180 HSC",
-     "Schneidstrom": "60 A / 120 A / 180 A",
-     "Steuerung": "MyPlasm CNC",
-     "Dateiformate": "DXF, HPGL/PLT",
-     "Ausführung": "Set mit Stromquelle"
-    },
-    "fr": {
-     "Procédé": "découpe plasma",
-     "Surface de travail": "3000 x 1500 mm",
-     "Source de courant": "Theta 060 / 120 / 180 HSC",
-     "Courant de coupe": "60 A / 120 A / 180 A",
-     "Commande": "MyPlasm CNC",
-     "Formats de fichiers": "DXF, HPGL/PLT",
-     "Version": "set avec source de courant"
-    },
-    "it": {
-     "Processo": "taglio al plasma",
-     "Area di lavoro": "3000 x 1500 mm",
-     "Generatore": "Theta 060 / 120 / 180 HSC",
-     "Corrente di taglio": "60 A / 120 A / 180 A",
-     "Controllo": "MyPlasm CNC",
-     "Formati file": "DXF, HPGL/PLT",
-     "Versione": "set con generatore"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [
-    "Stahl",
-    "INOX",
-    "Aluminium"
-   ],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/panels/mpt-plasmaschneidtisch-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/",
-    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/mpt-3001/",
-    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/mpt-3001/"
-   }
-  },
-  {
-   "id": "mpt-2501",
-   "sku": "MPT-2501",
-   "name": "MAHE MPT 2501",
-   "brand": "MAHE",
-   "type": "Plasma CNC",
-   "category": {
-    "de": "Plasmaschneiden",
-    "fr": "Découpe plasma",
-    "it": "Taglio al plasma"
-   },
-   "subcategory": {
-    "de": "Schneidtische",
-    "fr": "Tables de découpe",
-    "it": "Tavoli di taglio"
-   },
-   "description": {
-    "de": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
-    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en set avec une source de courant MAHE Theta.",
-    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta."
-   },
-   "highlights": {
-    "de": [
-     "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle",
-     "Arbeitsbereich 2500 x 1250 mm",
-     "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
-     "Schneidstrom 60 A, 120 A oder 180 A",
-     "Steuerung über das MyPlasm CNC System von Proma Elektronika",
-     "Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format",
-     "Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
-     "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
-     "Höhenabtastung des Materials vor jedem Einstich",
-     "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
-     "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
-     "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
-    ],
-    "fr": [
-     "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
-     "Surface de travail 2500 x 1250 mm",
-     "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
-     "Courant de coupe 60 A, 120 A ou 180 A",
-     "Commande par le système MyPlasm CNC de Proma Elektronika",
-     "Import de dessins 2D aux formats DXF et HPGL/PLT",
-     "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
-     "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
-     "Palpage de la hauteur du matériau avant chaque perçage",
-     "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
-     "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
-     "Console de commande avec ordinateur Windows et écran à la table",
-     "Mise en service et instruction par VES-TECH Swiss"
-    ],
-    "it": [
-     "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
-     "Area di lavoro 2500 x 1250 mm",
-     "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
-     "Corrente di taglio 60 A, 120 A o 180 A",
-     "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
-     "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
-     "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
-     "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
-     "Tastatura dell'altezza del materiale prima di ogni sfondamento",
-     "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
-     "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
-     "Console di comando con computer Windows e schermo al tavolo",
-     "Messa in servizio e istruzione a cura di VES-TECH Swiss"
-    ]
-   },
-   "options": {
-    "de": [
-     {
-      "name": "Filteranlage AT 1000",
-      "note": "ohne Anschlusskupplungen"
-     },
-     {
-      "name": "Schutzhaube für Computer und Konsole",
-      "note": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
-     },
-     {
-      "name": "Wasserpflegemittel MWPF 100",
-      "note": "1 kg – für das Wasserbett des Schneidtischs"
-     },
-     {
-      "name": "Verschleissteilebox PSAB 125",
-      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
-     },
-     {
-      "name": "Verschleissteilebox PSAB 180",
-      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
-     }
-    ],
-    "fr": [
-     {
-      "name": "Installation de filtration AT 1000",
-      "note": "sans raccords"
-     },
-     {
-      "name": "Capot de protection pour l'ordinateur et la console",
-      "note": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
-     },
-     {
-      "name": "Produit d'entretien de l'eau MWPF 100",
-      "note": "1 kg – pour le bac à eau de la table de découpe"
-     },
-     {
-      "name": "Coffret de pièces d'usure PSAB 125",
-      "note": "pièces d'usure de rechange pour la torche plasma PSAB 125"
-     },
-     {
-      "name": "Coffret de pièces d'usure PSAB 180",
-      "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
-     }
-    ],
-    "it": [
-     {
-      "name": "Impianto di filtrazione AT 1000",
-      "note": "senza raccordi"
-     },
-     {
-      "name": "Cappa di protezione per computer e console",
-      "note": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
-     },
-     {
-      "name": "Additivo per l'acqua MWPF 100",
-      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
-     },
-     {
-      "name": "Box ricambi di usura PSAB 125",
-      "note": "ricambi di usura per la torcia al plasma PSAB 125"
-     },
-     {
-      "name": "Box ricambi di usura PSAB 180",
-      "note": "ricambi di usura per la torcia al plasma PSAB 180"
-     }
-    ]
-   },
-   "specs": {
-    "de": {
-     "Verfahren": "Plasmaschneiden",
-     "Arbeitsbereich": "2500 x 1250 mm",
-     "Stromquelle": "Theta 060 / 120 / 180 HSC",
-     "Schneidstrom": "60 A / 120 A / 180 A",
-     "Steuerung": "MyPlasm CNC",
-     "Dateiformate": "DXF, HPGL/PLT",
-     "Ausführung": "Set mit Stromquelle"
-    },
-    "fr": {
-     "Procédé": "découpe plasma",
-     "Surface de travail": "2500 x 1250 mm",
-     "Source de courant": "Theta 060 / 120 / 180 HSC",
-     "Courant de coupe": "60 A / 120 A / 180 A",
-     "Commande": "MyPlasm CNC",
-     "Formats de fichiers": "DXF, HPGL/PLT",
-     "Version": "set avec source de courant"
-    },
-    "it": {
-     "Processo": "taglio al plasma",
-     "Area di lavoro": "2500 x 1250 mm",
-     "Generatore": "Theta 060 / 120 / 180 HSC",
-     "Corrente di taglio": "60 A / 120 A / 180 A",
-     "Controllo": "MyPlasm CNC",
-     "Formati file": "DXF, HPGL/PLT",
-     "Versione": "set con generatore"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [
-    "Stahl",
-    "INOX",
-    "Aluminium"
-   ],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/panels/mpt-plasmaschneidtisch-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/",
-    "fr": "https://www.ves-tech.ch/fr/produits/decoupe-plasma/mpt-2501/",
-    "it": "https://www.ves-tech.ch/it/prodotti/taglio-plasma/mpt-2501/"
    }
   }
  ]

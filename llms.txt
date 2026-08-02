@@ -84,6 +84,10 @@
 - [MAHE USB 2in1 Programmierer](https://www.ves-tech.ch/produkte/zubehoer/usb2in1/): Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software. (Programmierung)
 - [MAHE Elektrodenkabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/): Elektrodenkabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
 - [MAHE Massekabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel/): Massekabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
+- [MAHE Elektrodenkabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/): Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
+- [MAHE Massekabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/): Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
+- [MAHE Massekabel 16 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/): Massekabel für den Plasmaschneider Theta 40. (Kabel)
+- [MAHE Massekabel 25 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/): Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180. (Kabel)
 - [MAHE MF405W](https://www.ves-tech.ch/produkte/zubehoer/mf405w/): Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie. (Brenner)
 - [MAHE MF240W](https://www.ves-tech.ch/produkte/zubehoer/mf240w/): Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen. (Brenner)
 - [MAHE MF155](https://www.ves-tech.ch/produkte/zubehoer/mf155/): Gasgekühlter MIG/MAG-Brenner für EcoMIG und MMS, in 3 oder 4 m Länge. (Brenner)
@@ -109,10 +113,6 @@
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 - [MAHE Montagesatz MLF 100](https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/): Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten. (Montage)
 - [MAHE Reinigungspinselständer](https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/): Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100. (Halterung)
-- [MAHE Elektrodenkabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/): Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
-- [MAHE Massekabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/): Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
-- [MAHE Massekabel 16 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/): Massekabel für den Plasmaschneider Theta 40. (Kabel)
-- [MAHE Massekabel 25 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/): Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180. (Kabel)
 
 ## Verfahren
 - MIS – Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.

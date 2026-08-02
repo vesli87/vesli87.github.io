@@ -955,6 +955,30 @@ Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL · Preis: auf 
 Massekabel für die HyperCleaner-Reinigungsgeräte.
 Ausstattung: Querschnitt: 10 mm²; Längen: 3 · 6 · 10 m; Für: HyperCleaner.
 
+### MAHE Elektrodenkabel 25–90 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: ELEKTRODENKABEL-4M · Preis: auf Anfrage (CHF)
+Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
+Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
+
+### MAHE Massekabel 25–90 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-4M · Preis: auf Anfrage (CHF)
+Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
+Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
+
+### MAHE Massekabel 16 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-16 · Preis: auf Anfrage (CHF)
+Massekabel für den Plasmaschneider Theta 40.
+Ausstattung: Querschnitt: 16 mm²; Länge: 4 m; Für: Theta 40.
+
+### MAHE Massekabel 25 mm²
+URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/
+Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-25 · Preis: auf Anfrage (CHF)
+Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.
+Ausstattung: Querschnitt: 25 mm²; Länge: 4 m; Für: Theta 60 · 120 · 180 (HSC / AUT).
+
 ### MAHE MF405W
 URL: https://www.ves-tech.ch/produkte/zubehoer/mf405w/
 Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF405W · Preis: auf Anfrage (CHF)
@@ -1104,30 +1128,6 @@ URL: https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/
 Kategorie: Zubehör / Cleaner-Zubehör · Typ: Halterung · Art.-Nr.: REINIGUNGSPINSELSTAENDER · Preis: auf Anfrage (CHF)
 Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.
 Ausstattung: Typ: Bürstenständer; Ausstattung: Tropfschutz; Für: MLF 100.
-
-### MAHE Elektrodenkabel 25–90 mm²
-URL: https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/
-Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: ELEKTRODENKABEL-4M · Preis: auf Anfrage (CHF)
-Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
-Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
-
-### MAHE Massekabel 25–90 mm²
-URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/
-Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-4M · Preis: auf Anfrage (CHF)
-Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
-Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
-
-### MAHE Massekabel 16 mm²
-URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/
-Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-16 · Preis: auf Anfrage (CHF)
-Massekabel für den Plasmaschneider Theta 40.
-Ausstattung: Querschnitt: 16 mm²; Länge: 4 m; Für: Theta 40.
-
-### MAHE Massekabel 25 mm²
-URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/
-Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-25 · Preis: auf Anfrage (CHF)
-Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.
-Ausstattung: Querschnitt: 25 mm²; Länge: 4 m; Für: Theta 60 · 120 · 180 (HSC / AUT).
 
 ---
 

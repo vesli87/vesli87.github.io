@@ -128,10 +128,38 @@ def check_ld_node(where, node, types, ids):
             err(f"{where}: BreadcrumbList mit luecken­hafter position-Folge {pos}")
 
 
+def reihenfolge():
+    """data/P.json muss nach Kategorie und Unterkategorie gruppiert bleiben.
+
+    Die Seite "Alle Geräte" zeigt die Liste in genau dieser Reihenfolge. Wer ein
+    Produkt hinten anhaengt, schiebt es dort ans Ende der ganzen Liste - so
+    standen die beiden Schneidtische hinter dem letzten Verschleissteil, und
+    das Zubehoer lag zwischendrin. Diese Pruefung faengt das beim naechsten
+    Mal ab, bevor es jemand auf der Website sieht.
+    """
+    kat = {c["id"]: i for i, c in enumerate(C.CATS)}
+    sub = {(c["id"], s): j for c in C.CATS for j, s in enumerate(c["subs"])}
+    schluessel = []
+    for p in C.P:
+        k = (p["cat"], p["sub"])
+        if k not in sub:
+            err(f'data/P.json: {p["id"]} hat die Unterkategorie „{p["sub"]}“, '
+                f'die in CATS.json unter {p["cat"]} nicht vorkommt')
+            return
+        schluessel.append((kat[p["cat"]], sub[k], p["id"]))
+    for (a, b, ida), (c_, d, idb) in zip(schluessel, schluessel[1:]):
+        if (a, b) > (c_, d):
+            err(f"data/P.json ist nicht nach Kategorie/Unterkategorie sortiert: "
+                f"{idb} steht hinter {ida}, gehoert aber davor")
+            return
+
+
 def main():
     pages = sorted(all_pages())
     if len(pages) < 200:
         err(f"nur {len(pages)} Seiten gefunden – Build unvollständig?")
+
+    reihenfolge()
 
     titles, descs = collections.Counter(), collections.Counter()
     per_lang = collections.Counter()

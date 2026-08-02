@@ -102,7 +102,9 @@
   "addr_shop": "Werkstatt",
   "addr_shop_note": "bei unserem Partner",
   "hours_lbl": "Telefonisch erreichbar",
-  "addr_shop_hint": "Besuch in der Werkstatt nach Vereinbarung"
+  "addr_shop_hint": "Besuch in der Werkstatt nach Vereinbarung",
+  "tab_opt": "Optionen",
+  "opt_note": "Optionen und Zusatzleistungen werden mit der Anfrage konfiguriert."
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -207,7 +209,9 @@
   "addr_shop": "Atelier",
   "addr_shop_note": "chez notre partenaire",
   "hours_lbl": "Joignable par téléphone",
-  "addr_shop_hint": "Visite à l'atelier sur rendez-vous"
+  "addr_shop_hint": "Visite à l'atelier sur rendez-vous",
+  "tab_opt": "Options",
+  "opt_note": "Les options et prestations complémentaires sont configurées avec la demande."
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -312,6 +316,8 @@
   "addr_shop": "Officina",
   "addr_shop_note": "presso il nostro partner",
   "hours_lbl": "Raggiungibile per telefono",
-  "addr_shop_hint": "Visita in officina su appuntamento"
+  "addr_shop_hint": "Visita in officina su appuntamento",
+  "tab_opt": "Opzioni",
+  "opt_note": "Le opzioni e le prestazioni aggiuntive vengono configurate con la richiesta."
  }
 }

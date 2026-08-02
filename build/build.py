@@ -183,6 +183,8 @@ def products_json():
             "subcategory": {l: C.subT(l, p["sub"]) for l in C.LANGS},
             "description": {l: C.pDesc(l, p) for l in C.LANGS},
             "highlights": {l: C.highlightsOf(l, p) or [] for l in C.LANGS},
+            "options": {l: [{"name": o["t"], "note": o.get("s", "")}
+                            for o in C.optionsOf(l, p)] for l in C.LANGS},
             "specs": {l: {C.trK(l, k): C.trV(l, v) for k, v in C.specRest(p).items()}
                       for l in C.LANGS},
             # Technische Daten wie beim Hersteller: Spalten = Modellvarianten
@@ -347,6 +349,10 @@ def llms_full():
             hl = C.highlightsOf(L, p)
             if hl:
                 out.append("Besonderheiten: " + "; ".join(hl) + ".")
+            opt = C.optionsOf(L, p)
+            if opt:
+                out.append("Optionen: " + "; ".join(
+                    o["t"] + (f" ({o['s']})" if o.get("s") else "") for o in opt) + ".")
             rest = C.specRest(p)
             if rest:
                 out.append("Ausstattung: " + "; ".join(

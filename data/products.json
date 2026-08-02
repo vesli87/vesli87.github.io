@@ -76,6 +76,11 @@
      "Aggiornabile · 100% riciclabile"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
@@ -809,6 +814,11 @@
      "Robusto per officina & montaggio"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "MIG/MAG",
@@ -1247,6 +1257,11 @@
      "Trazione a 4 rulli",
      "Bobina D300"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -1780,6 +1795,11 @@
      "Telecomando opzionale"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "WIG AC/DC",
@@ -2209,6 +2229,11 @@
      "Regolazione automatica dell'impulso",
      "Telecomando opzionale"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -2641,6 +2666,11 @@
      "Impostazioni Synergy",
      "Modalità Job"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -3110,6 +3140,11 @@
      "Impostazioni Synergy",
      "Modalità Job"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -3617,6 +3652,11 @@
      "Impostazioni Synergy",
      "Modalità Job"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -4392,6 +4432,11 @@
      "Modalità Job"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "WIG AC/DC",
@@ -4900,6 +4945,11 @@
      "Tecnologia 100 V"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "MMA (Elektrode)",
@@ -5271,6 +5321,11 @@
      "Telecomando",
      "TIG Lift Arc"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -5652,6 +5707,11 @@
      "Display digitale di volt e ampere",
      "Telecomando"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -6223,6 +6283,11 @@
      "Mobile"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "MMA · Unterwasser",
@@ -6702,6 +6767,11 @@
      "Microregolazione della portata di gas",
      "Interfaccia"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -7262,6 +7332,11 @@
      "Manometro integrato"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Plasmaschneiden",
@@ -7679,6 +7754,11 @@
      "Funzione di taglio per lamiera forata",
      "Funzione scriccatura"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -8101,6 +8181,11 @@
      "Funzione scriccatura"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Plasmaschneiden",
@@ -8519,6 +8604,11 @@
      "Pacchetti torcia fino a 15,2 metri"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Plasmaschneiden",
@@ -8907,6 +8997,11 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Elektrolyt-Reinigung",
@@ -9202,6 +9297,11 @@
      "Programma sinergico per tutti i processi",
      "Pulizia ecologica e sicura"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -9514,6 +9614,11 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Elektrolyt-Reinigung",
@@ -9824,6 +9929,11 @@
      "Programma sinergico per tutti i processi",
      "Pulizia ecologica e sicura"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -10136,6 +10246,11 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "WIG + Reinigung",
@@ -10200,6 +10315,11 @@
     "it": "Carrello con supporto bombola per apparecchi TIG e MIG."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -10273,6 +10393,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "Delta, Delta Digital, Theta",
@@ -10338,6 +10463,11 @@
     "it": "Carrello con supporto bombola per tutti gli apparecchi portatili."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -10411,6 +10541,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "HyperCleaner",
@@ -10473,6 +10608,11 @@
     "it": "Refrigeratore universale con presa 230 V e spegnimento mancanza acqua."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -10543,6 +10683,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "MMS 3000 Serie",
@@ -10602,6 +10747,11 @@
     "it": "Refrigeratore ad acqua per Beta digital e la linea Omega 400 V."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -10669,6 +10819,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "HyperMIG X",
@@ -10728,6 +10883,11 @@
     "it": "Trainafilo orizzontale tutto metallo per la serie HyperMIG X."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -10798,6 +10958,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Fussfernregler",
@@ -10857,6 +11022,11 @@
     "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -10924,6 +11094,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Handfernregler",
@@ -10987,6 +11162,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Handfernregler",
@@ -11046,6 +11226,11 @@
     "it": "Telecomando manuale specifico per le macchine Delta Digital DS."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -11142,6 +11327,11 @@
      "Funzione di taglio per lamiera forata",
      "Funzione scriccatura"
     ]
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
    },
    "specs": {
     "de": {
@@ -11567,6 +11757,11 @@
      "Funzione scriccatura"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Plasmaschneiden · Automation",
@@ -11973,6 +12168,11 @@
      "Compatibile con le maschere di tutti i produttori"
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Verfahren": "Elektrolyt-Signieren",
@@ -12285,6 +12485,11 @@
      "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner."
     ]
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Funktion": "automatische Dosierung",
@@ -12525,6 +12730,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Funktion": "Kalibrieren / Validieren",
@@ -12591,6 +12801,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Funktion": "Controller-Programmierung",
@@ -12653,6 +12868,11 @@
     "it": "Elettrolita di pulizia rapida per saldature inox."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -12726,6 +12946,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Reinigung (pastös)",
@@ -12791,6 +13016,11 @@
     "it": "Elettrolita per elettrolucidatura e decapaggio inox."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -12864,6 +13094,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Neutralisierer",
@@ -12929,6 +13164,11 @@
     "it": "Elettrolita per la marcatura elettrochimica del metallo."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13002,6 +13242,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Querschnitt": "10 mm²",
@@ -13064,6 +13309,11 @@
     "it": "Cavo di massa per gli apparecchi di pulizia HyperCleaner."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13134,6 +13384,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "MIG/MAG wassergekühlt",
@@ -13196,6 +13451,11 @@
     "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13266,6 +13526,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "MIG/MAG gasgekühlt",
@@ -13328,6 +13593,11 @@
     "it": "Torcia MIG/MAG raffreddata a gas da 4 m per EcoMIG e MMS, a scelta con Up/Down."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13398,6 +13668,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "WIG gasgekühlt",
@@ -13460,6 +13735,11 @@
     "it": "Torcia TIG raffreddata a gas per Delta, Delta Digital, Delta Digital DS e i-1600, con valvola del gas sulla torcia."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13530,6 +13810,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "WIG wassergekühlt",
@@ -13592,6 +13877,11 @@
     "it": "Torcia TIG raffreddata ad acqua per Beta digital, HyperCleaner CT 200 e la serie HyperTIG, a scelta con potenziometro."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13662,6 +13952,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "WIG gasgekühlt",
@@ -13728,6 +14023,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "WIG gasgekühlt",
@@ -13790,6 +14090,11 @@
     "it": "Torcia da taglio al plasma della Theta 40, montata fissa nella macchina e disponibile in 4 metri."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13863,6 +14168,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Plasmaschneidbrenner",
@@ -13925,6 +14235,11 @@
     "it": "Torcia da taglio al plasma per la Theta 120 HSC, con capacità di taglio fino a 55 mm, disponibile in 6 e 12 metri."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -13995,6 +14310,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Plasmaschneidbrenner",
@@ -14057,6 +14377,11 @@
     "it": "Torcia da taglio al plasma per l’inverter plasma per automazione Theta 60 AUT, disponibile in 6 e 12 metri."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -14127,6 +14452,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Plasmaschneidbrenner",
@@ -14189,6 +14519,11 @@
     "it": "Box di parti di usura per la torcia da taglio al plasma S 25 montata fissa nella Theta 40."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -14265,6 +14600,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "PSHB 65",
@@ -14333,6 +14673,11 @@
     "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 125 – dotazione identica ai box PSHB 65 e PSHB 160."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -14409,6 +14754,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "PSHB 160",
@@ -14477,6 +14827,11 @@
     "it": "Rulli trainafilo per EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -14553,6 +14908,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "HyperMIG X",
@@ -14625,6 +14985,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Für": "HyperMIG X",
@@ -14687,6 +15052,11 @@
     "it": "Kit di fissaggio per montare l'MLF 100 sugli apparecchi MAHE HyperCleaner."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -14757,6 +15127,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Typ": "Bürstenständer",
@@ -14819,6 +15194,11 @@
     "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -14889,6 +15269,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Querschnitte": "25 · 35 · 50 · 70 · 90 mm²",
@@ -14955,6 +15340,11 @@
     "fr": [],
     "it": []
    },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
    "specs": {
     "de": {
      "Querschnitt": "16 mm²",
@@ -15017,6 +15407,11 @@
     "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180."
    },
    "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
     "de": [],
     "fr": [],
     "it": []
@@ -15096,7 +15491,6 @@
      "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
      "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
      "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Optional: Filteranlage AT 1000, Schutzhaube für Computer und Konsole, Wasserpflegemittel MWPF 100, Verschleissteilebox PSAB 125 oder PSAB 180",
      "Inbetriebnahme und Einweisung vor Ort oder online"
     ],
     "fr": [
@@ -15112,7 +15506,6 @@
      "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
      "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
      "Console de commande avec ordinateur Windows et écran à la table",
-     "En option : installation de filtration AT 1000, capot de protection pour l'ordinateur et la console, produit d'entretien de l'eau MWPF 100, coffret de pièces d'usure PSAB 125 ou PSAB 180",
      "Mise en service et instruction sur site ou en ligne"
     ],
     "it": [
@@ -15128,8 +15521,111 @@
      "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
      "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
      "Console di comando con computer Windows e schermo al tavolo",
-     "Opzionale: impianto di filtrazione AT 1000, cappa di protezione per computer e console, additivo per l'acqua MWPF 100, box ricambi di usura PSAB 125 o PSAB 180",
      "Messa in servizio e istruzione in loco o online"
+    ]
+   },
+   "options": {
+    "de": [
+     {
+      "name": "Filteranlage AT 1000",
+      "note": "ohne Anschlusskupplungen"
+     },
+     {
+      "name": "Schutzhaube für Computer und Konsole",
+      "note": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
+     },
+     {
+      "name": "Wasserpflegemittel MWPF 100",
+      "note": "1 kg – für das Wasserbett des Schneidtischs"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 125",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 180",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+     },
+     {
+      "name": "Inbetriebnahme und Einweisung vor Ort",
+      "note": "Aufbau, Einrichten und Einweisung an Ihrer Anlage"
+     },
+     {
+      "name": "Einweisung online",
+      "note": "stundenweise, für Nachschulungen und Fragen im laufenden Betrieb"
+     },
+     {
+      "name": "Anlieferung",
+      "note": "Transport und Abladen nach Absprache"
+     }
+    ],
+    "fr": [
+     {
+      "name": "Installation de filtration AT 1000",
+      "note": "sans raccords"
+     },
+     {
+      "name": "Capot de protection pour l'ordinateur et la console",
+      "note": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
+     },
+     {
+      "name": "Produit d'entretien de l'eau MWPF 100",
+      "note": "1 kg – pour le bac à eau de la table de découpe"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 125",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 125"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 180",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+     },
+     {
+      "name": "Mise en service et instruction sur site",
+      "note": "montage, réglage et instruction sur votre installation"
+     },
+     {
+      "name": "Instruction en ligne",
+      "note": "à l'heure, pour les formations complémentaires et les questions en cours d'exploitation"
+     },
+     {
+      "name": "Livraison",
+      "note": "transport et déchargement selon accord"
+     }
+    ],
+    "it": [
+     {
+      "name": "Impianto di filtrazione AT 1000",
+      "note": "senza raccordi"
+     },
+     {
+      "name": "Cappa di protezione per computer e console",
+      "note": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
+     },
+     {
+      "name": "Additivo per l'acqua MWPF 100",
+      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 125",
+      "note": "ricambi di usura per la torcia al plasma PSAB 125"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 180",
+      "note": "ricambi di usura per la torcia al plasma PSAB 180"
+     },
+     {
+      "name": "Messa in servizio e istruzione in loco",
+      "note": "montaggio, regolazione e istruzione sul Vostro impianto"
+     },
+     {
+      "name": "Istruzione online",
+      "note": "a ore, per formazioni successive e domande durante l'esercizio"
+     },
+     {
+      "name": "Consegna",
+      "note": "trasporto e scarico secondo accordi"
+     }
     ]
    },
    "specs": {
@@ -15223,7 +15719,6 @@
      "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
      "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
      "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Optional: Filteranlage AT 1000, Schutzhaube für Computer und Konsole, Wasserpflegemittel MWPF 100, Verschleissteilebox PSAB 125 oder PSAB 180",
      "Inbetriebnahme und Einweisung vor Ort oder online"
     ],
     "fr": [
@@ -15239,7 +15734,6 @@
      "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
      "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
      "Console de commande avec ordinateur Windows et écran à la table",
-     "En option : installation de filtration AT 1000, capot de protection pour l'ordinateur et la console, produit d'entretien de l'eau MWPF 100, coffret de pièces d'usure PSAB 125 ou PSAB 180",
      "Mise en service et instruction sur site ou en ligne"
     ],
     "it": [
@@ -15255,8 +15749,111 @@
      "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
      "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
      "Console di comando con computer Windows e schermo al tavolo",
-     "Opzionale: impianto di filtrazione AT 1000, cappa di protezione per computer e console, additivo per l'acqua MWPF 100, box ricambi di usura PSAB 125 o PSAB 180",
      "Messa in servizio e istruzione in loco o online"
+    ]
+   },
+   "options": {
+    "de": [
+     {
+      "name": "Filteranlage AT 1000",
+      "note": "ohne Anschlusskupplungen"
+     },
+     {
+      "name": "Schutzhaube für Computer und Konsole",
+      "note": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
+     },
+     {
+      "name": "Wasserpflegemittel MWPF 100",
+      "note": "1 kg – für das Wasserbett des Schneidtischs"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 125",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
+     },
+     {
+      "name": "Verschleissteilebox PSAB 180",
+      "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+     },
+     {
+      "name": "Inbetriebnahme und Einweisung vor Ort",
+      "note": "Aufbau, Einrichten und Einweisung an Ihrer Anlage"
+     },
+     {
+      "name": "Einweisung online",
+      "note": "stundenweise, für Nachschulungen und Fragen im laufenden Betrieb"
+     },
+     {
+      "name": "Anlieferung",
+      "note": "Transport und Abladen nach Absprache"
+     }
+    ],
+    "fr": [
+     {
+      "name": "Installation de filtration AT 1000",
+      "note": "sans raccords"
+     },
+     {
+      "name": "Capot de protection pour l'ordinateur et la console",
+      "note": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
+     },
+     {
+      "name": "Produit d'entretien de l'eau MWPF 100",
+      "note": "1 kg – pour le bac à eau de la table de découpe"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 125",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 125"
+     },
+     {
+      "name": "Coffret de pièces d'usure PSAB 180",
+      "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+     },
+     {
+      "name": "Mise en service et instruction sur site",
+      "note": "montage, réglage et instruction sur votre installation"
+     },
+     {
+      "name": "Instruction en ligne",
+      "note": "à l'heure, pour les formations complémentaires et les questions en cours d'exploitation"
+     },
+     {
+      "name": "Livraison",
+      "note": "transport et déchargement selon accord"
+     }
+    ],
+    "it": [
+     {
+      "name": "Impianto di filtrazione AT 1000",
+      "note": "senza raccordi"
+     },
+     {
+      "name": "Cappa di protezione per computer e console",
+      "note": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
+     },
+     {
+      "name": "Additivo per l'acqua MWPF 100",
+      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 125",
+      "note": "ricambi di usura per la torcia al plasma PSAB 125"
+     },
+     {
+      "name": "Box ricambi di usura PSAB 180",
+      "note": "ricambi di usura per la torcia al plasma PSAB 180"
+     },
+     {
+      "name": "Messa in servizio e istruzione in loco",
+      "note": "montaggio, regolazione e istruzione sul Vostro impianto"
+     },
+     {
+      "name": "Istruzione online",
+      "note": "a ore, per formazioni successive e domande durante l'esercizio"
+     },
+     {
+      "name": "Consegna",
+      "note": "trasporto e scarico secondo accordi"
+     }
     ]
    },
    "specs": {

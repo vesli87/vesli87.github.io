@@ -1,0 +1,31 @@
+{
+ "_kommentar": "Zusatzbilder unter dem Hauptbild der Produktseite. Je Eintrag: img = Schluessel wie in P.json, dazu die Bildunterschrift in de/fr/it. Der Alt-Text entsteht aus der Bildunterschrift, deshalb muss sie beschreiben, was zu sehen ist - nicht nur 'Screenshot'. Die MyPlasm-Bilder stammen aus dem Softwarehandbuch von Proma Elektronika (MyPlasmCNCen.pdf, v1.2). Die Quelle steht in der Bildunterschrift; eine schriftliche Freigabe von Proma sollte nachgeholt werden.",
+ "mpt-3001": [
+  {
+   "img": "panels/MyPlasm_Markieren.png",
+   "de": "MyPlasm CNC: Markieren und Anreissen im Hauptfenster. Die Markierbahnen liegen auf einer eigenen Layerfarbe und werden mit eigener Geschwindigkeit gefahren; links die Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit. Quelle: Handbuch Proma Elektronika",
+   "fr": "MyPlasm CNC : marquage et traçage dans la fenêtre principale. Les parcours de marquage sont attribués à une couleur de calque dédiée et exécutés à leur propre vitesse ; à gauche les paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage. Source : manuel Proma Elektronika",
+   "it": "MyPlasm CNC: marcatura e tracciatura nella finestra principale. I percorsi di marcatura sono assegnati a un colore di livello dedicato ed eseguiti con velocità propria; a sinistra i parametri di taglio con altezza di taglio, tensione nominale THC, altezza e tempo di sfondamento. Fonte: manuale Proma Elektronika"
+  },
+  {
+   "img": "panels/MyPlasm_Schnittablauf.png",
+   "de": "Ablauf eines Schnitts: Abtasten der Materialhöhe (Z=0), Zünden auf Übergangshöhe h1, Einstechen auf Einstichhöhe h2 für die Einstichzeit t0, Schneiden auf Höhe h3 und danach Höhenregelung h4 über die Lichtbogenspannung (THC). Quelle: Handbuch Proma Elektronika",
+   "fr": "Déroulement d'une coupe : palpage de la hauteur du matériau (Z=0), amorçage à la hauteur de transfert h1, perçage à la hauteur h2 pendant le temps t0, coupe à la hauteur h3, puis régulation de hauteur h4 par la tension d'arc (THC). Source : manuel Proma Elektronika",
+   "it": "Svolgimento di un taglio: tastatura dell'altezza del materiale (Z=0), innesco all'altezza di trasferimento h1, sfondamento all'altezza h2 per il tempo t0, taglio all'altezza h3 e successiva regolazione dell'altezza h4 sulla tensione d'arco (THC). Fonte: manuale Proma Elektronika"
+  }
+ ],
+ "mpt-2501": [
+  {
+   "img": "panels/MyPlasm_Markieren.png",
+   "de": "MyPlasm CNC: Markieren und Anreissen im Hauptfenster. Die Markierbahnen liegen auf einer eigenen Layerfarbe und werden mit eigener Geschwindigkeit gefahren; links die Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit. Quelle: Handbuch Proma Elektronika",
+   "fr": "MyPlasm CNC : marquage et traçage dans la fenêtre principale. Les parcours de marquage sont attribués à une couleur de calque dédiée et exécutés à leur propre vitesse ; à gauche les paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage. Source : manuel Proma Elektronika",
+   "it": "MyPlasm CNC: marcatura e tracciatura nella finestra principale. I percorsi di marcatura sono assegnati a un colore di livello dedicato ed eseguiti con velocità propria; a sinistra i parametri di taglio con altezza di taglio, tensione nominale THC, altezza e tempo di sfondamento. Fonte: manuale Proma Elektronika"
+  },
+  {
+   "img": "panels/MyPlasm_Schnittablauf.png",
+   "de": "Ablauf eines Schnitts: Abtasten der Materialhöhe (Z=0), Zünden auf Übergangshöhe h1, Einstechen auf Einstichhöhe h2 für die Einstichzeit t0, Schneiden auf Höhe h3 und danach Höhenregelung h4 über die Lichtbogenspannung (THC). Quelle: Handbuch Proma Elektronika",
+   "fr": "Déroulement d'une coupe : palpage de la hauteur du matériau (Z=0), amorçage à la hauteur de transfert h1, perçage à la hauteur h2 pendant le temps t0, coupe à la hauteur h3, puis régulation de hauteur h4 par la tension d'arc (THC). Source : manuel Proma Elektronika",
+   "it": "Svolgimento di un taglio: tastatura dell'altezza del materiale (Z=0), innesco all'altezza di trasferimento h1, sfondamento all'altezza h2 per il tempo t0, taglio all'altezza h3 e successiva regolazione dell'altezza h4 sulla tensione d'arco (THC). Fonte: manuale Proma Elektronika"
+  }
+ ]
+}

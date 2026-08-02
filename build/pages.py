@@ -184,6 +184,44 @@ def spec_html(lang, p):
     return "".join(out)
 
 
+def gal_html(lang, p):
+    """Zusatzbilder unter dem Hauptbild.
+
+    Die Bildunterschrift ist zugleich der Alt-Text: ein Bild, das erklaert
+    werden muss, braucht die Erklaerung auch fuer Screenreader und fuer die
+    Bildersuche.
+    """
+    gal = C.galleryOf(lang, p)
+    if not gal:
+        return ""
+    items = ""
+    for g in gal:
+        items += (f'<figure class="galitem">'
+                  + R.img_tag(g["img"], "(max-width:900px) 92vw, 520px",
+                              cls="galimg", alt=g["cap"], width=560)
+                  + (f'<figcaption>{e(g["cap"])}</figcaption>' if g["cap"] else "")
+                  + "</figure>")
+    return f'<div class="dgal">{items}</div>'
+
+
+def opt_html(lang, p):
+    """Optionen als eigene Liste - nicht als Aufzaehlungspunkt unter den
+    Besonderheiten. Was im Lieferumfang steckt und was dazubestellt wird, darf
+    eine Kundschaft nicht erst aus einem Fliesstext heraussuchen muessen."""
+    opts = C.optionsOf(lang, p)
+    if not opts:
+        return ""
+    rows = ""
+    for o in opts:
+        t = o.get("t") if isinstance(o, dict) else str(o)
+        sub = o.get("s") if isinstance(o, dict) else ""
+        rows += (f'<li><span class="ot">{e(t)}</span>'
+                 + (f'<span class="os">{e(sub)}</span>' if sub else "") + "</li>")
+    return (f'<h3 class="opth">{e(C.t(lang,"tab_opt"))}</h3>'
+            f'<ul class="optlist">{rows}</ul>'
+            f'<p class="optnote">{e(C.t(lang,"opt_note"))}</p>')
+
+
 def acc_html(lang, p):
     acc = C.relatedAcc(p)
     if not acc:
@@ -393,8 +431,10 @@ def page_product(lang, p):
 
     has_panel = bool(C.fpAssign(p))
     tab1 = C.t(lang, "tab_feat") if has_panel else C.t(lang, "highlights")
-    tabs = [("feat", tab1), ("tech", C.t(lang, "tab_tech")),
-            ("acc", C.t(lang, "tab_acc")), ("dl", C.t(lang, "tab_dl"))]
+    tabs = [("feat", tab1), ("tech", C.t(lang, "tab_tech"))]
+    if C.optionsOf(lang, p):
+        tabs.append(("opt", C.t(lang, "tab_opt")))
+    tabs += [("acc", C.t(lang, "tab_acc")), ("dl", C.t(lang, "tab_dl"))]
     tabbar = "".join(
         f'<button class="tabbtn{" active" if i == 0 else ""}" type="button" role="tab" '
         f'id="tb-{k}" aria-controls="tab-{k}" aria-selected="{"true" if i == 0 else "false"}" '
@@ -402,6 +442,7 @@ def page_product(lang, p):
     panes = {
         "feat": front_html(lang, p),
         "tech": spec_html(lang, p),
+        "opt": opt_html(lang, p),
         "acc": acc_html(lang, p),
         "dl": dl_html(lang, p),
     }
@@ -414,8 +455,11 @@ def page_product(lang, p):
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
   <div class="dgrid">
-    <div class="dimg"><span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>
+    <div class="dcol">
+      <div class="dimg"><span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>
       {R.img_tag(p['img'], "(max-width:900px) 92vw, 520px", alt=f"{C.BRAND} {nm} – {C.pDesc(lang, p)}", eager=True, width=560)}</div>
+      {gal_html(lang, p)}
+    </div>
     <div class="dinfo">
       <p class="kicker">{e(C.catT(lang, c))} · {C.BRAND}</p>
       <h1>{e(p['name'])}</h1>

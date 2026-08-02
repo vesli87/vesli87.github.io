@@ -153,6 +153,8 @@ SYM       = _load("SYM")       # Symbole je Geraet, aus dem MAHE-Katalog 2023
 ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
+OPT       = _load("OPT")         # Optionen je Geraet, aus der MAHE-Preisliste
+GALLERY   = _load("GALLERY")     # Zusatzbilder unter dem Hauptbild
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")
 SPECMAP   = _load("SPECMAP")     # Produkt -> Tabelle(n) bei MAHE
@@ -432,6 +434,29 @@ def hlVariants(lang, p):
     Elektrode und WIG. Eine gemeinsame Liste waere fuer zwei der drei falsch.
     """
     return [(v["n"], v["img"], v.get(lang) or v["de"]) for v in HL_VAR.get(p["id"], [])]
+
+
+def optionsOf(lang, p):
+    """Optionen und Zusatzleistungen eines Geraets.
+
+    Steht bewusst neben den Besonderheiten und nicht darin: was zum Geraet
+    gehoert und was dazubestellt wird, sind zwei verschiedene Aussagen. Preise
+    stehen hier nie - die Anfrage klaert sie.
+    """
+    e = OPT.get(p["id"])
+    if not e:
+        return []
+    return e.get(lang) or e.get("de") or []
+
+
+def galleryOf(lang, p):
+    """Zusatzbilder unter dem Hauptbild, mit Bildunterschrift in der Sprache."""
+    out = []
+    for g in GALLERY.get(p["id"], []):
+        if not isinstance(g, dict) or not g.get("img"):
+            continue
+        out.append({"img": g["img"], "cap": g.get(lang) or g.get("de") or ""})
+    return out
 
 
 def highlightsOf(lang, p):

@@ -182,6 +182,22 @@
      klein und scharf als gross und verwaschen. */
   .dimg img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
   .dimg .vtag{position:absolute;top:16px;left:16px;max-width:calc(100% - 32px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.06em;padding:5px 11px;border-radius:3px;line-height:1.35}
+  /* Zusatzbilder unter dem Hauptbild: eine Bedienoberfläche oder ein
+     Detailfoto trägt oft mehr zur Kaufentscheidung bei als das Gerätefoto.
+     Sie stehen deshalb gleichwertig darunter, nicht als Briefmarken daneben. */
+  .dcol{display:grid;gap:18px}
+  .dgal{display:grid;gap:18px}
+  .galitem{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px}
+  .galitem .galimg{display:block;width:100%;height:auto;border-radius:6px}
+  .galitem figcaption{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.5}
+  /* Optionen: Bezeichnung und Zusatz getrennt, damit die Liste beim Überfliegen
+     lesbar bleibt. Preise stehen hier nie – die klärt die Anfrage. */
+  .opth{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:18px;margin-bottom:14px}
+  .optlist{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .optlist li{background:#fff;padding:14px 18px;display:grid;gap:3px}
+  .optlist .ot{font-weight:600;color:var(--ink)}
+  .optlist .os{color:var(--muted);font-size:13.5px;line-height:1.5}
+  .optnote{margin-top:14px;color:var(--muted);font-size:13px}
   .dinfo .kicker{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;color:var(--accent);font-size:14px;text-transform:uppercase}
   .dinfo h1{font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(30px,4vw,50px);text-transform:uppercase;line-height:1.06;letter-spacing:.015em;margin:10px 0}
   .dinfo .lead{color:#4A453D;font-size:16px;line-height:1.6;margin-bottom:22px}

@@ -5,7 +5,7 @@
   "hreflang": "de-CH",
   "lang_name": "Deutsch",
   "site_name": "VES-TECH Swiss",
-  "tagline": "MAHE Schweisstechnik, Plasmaschneiden & Automation aus Bronschhofen",
+  "tagline": "MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR",
   "brand_claim": "Offizieller Schweizer Partner für das MAHE-Geräteprogramm.",
   "skip_link": "Zum Inhalt springen",
   "nav_home": "Home",
@@ -18,14 +18,14 @@
   "menu_aria": "Hauptmenü",
   "lang_aria": "Sprache wählen",
   "home_title": "VES-TECH Swiss · MAHE Schweissgeräte, Plasmaschneiden & Reinigung",
-  "home_desc": "MAHE Schweissgeräte, Plasmaschneider und elektrolytische Reinigungssysteme in der Schweiz. Beratung, Service und Automation aus Bronschhofen SG. Preis auf Anfrage.",
+  "home_desc": "MAHE Schweissgeräte, Plasmaschneider und elektrolytische Reinigungssysteme in der Schweiz. Beratung, Service und Automation aus Herisau AR. Preis auf Anfrage.",
   "home_h1": "MAHE Schweisstechnik für die Schweiz",
   "all_title": "Alle MAHE Geräte · Schweissen, Plasma, Reinigung, Zubehör",
   "all_desc": "Das komplette MAHE-Programm bei VES-TECH Swiss: {n} Geräte für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden, elektrolytische Reinigung und Zubehör. Preis auf Anfrage.",
   "all_h1": "Alle MAHE Geräte",
   "all_lead": "Das komplette MAHE-Programm – geordnet nach Verfahren. Alle Geräte mit Schweizer Service, Garantieabwicklung und Beratung durch den Techniker.",
   "cat_title_tpl": "{cat} · MAHE {sub_hint} kaufen in der Schweiz | VES-TECH",
-  "cat_desc_tpl": "{cat} von MAHE bei VES-TECH Swiss: {n} Modelle, {subs}. Beratung, Service und Ersatzteile aus Bronschhofen SG. Preis auf Anfrage.",
+  "cat_desc_tpl": "{cat} von MAHE bei VES-TECH Swiss: {n} Modelle, {subs}. Beratung, Service und Ersatzteile aus Herisau AR. Preis auf Anfrage.",
   "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
   "sub_desc_tpl": "MAHE {sub} – {n} Modelle bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
   "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
@@ -35,8 +35,8 @@
   "verf_desc": "Die MAHE-Schweissverfahren erklärt: MIS spritzerfrei, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP – wofür sie eingesetzt werden.",
   "dl_title": "Downloads · MAHE Katalog, EN 1090 & Sicherheitsdatenblätter",
   "dl_desc": "MAHE Produktkatalog, EN 1090 Konformitätszertifikat und die Sicherheitsdatenblätter der Elektrolyte R1, RP1, P1, M1 und N1 als PDF.",
-  "kontakt_title": "Kontakt · VES-TECH Swiss, Bronschhofen SG",
-  "kontakt_desc": "VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, vestechswiss@gmail.com. Beratung, Service und Reparatur für MAHE Schweisstechnik.",
+  "kontakt_title": "Kontakt · VES-TECH Swiss, Werkstatt Herisau AR",
+  "kontakt_desc": "VES-TECH Swiss, Werkstatt St. Gallerstrasse 49, 9100 Herisau AR. Telefon +41 76 710 91 39, vestechswiss@gmail.com. Beratung, Service und Reparatur für MAHE Schweisstechnik.",
   "faq_title": "Häufige Fragen zu MAHE Schweisstechnik | VES-TECH Swiss",
   "faq_desc": "Antworten zu Preisen, Verfahrenswahl, Aluminium schweissen, elektrolytischer Reinigung, Plasmaschneiden, EN 1090 und Service in der Schweiz.",
   "faq_h1": "Häufige Fragen",
@@ -117,7 +117,7 @@
    },
    {
     "q": "Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?",
-    "a": "Ja. VES-TECH Swiss in Bronschhofen (SG) übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet – erreichbar unter +41 76 710 91 39, Montag bis Donnerstag von 07:30 bis 17:00 Uhr und freitags von 07:30 bis 11:30 Uhr."
+    "a": "Ja. Die Werkstatt in Herisau AR – bei unserer Partnerfirma Schweisstechnik Scherrer AG – übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39."
    },
    {
     "q": "Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?",
@@ -129,7 +129,7 @@
    },
    {
     "q": "Liefert VES-TECH Swiss in die ganze Schweiz?",
-    "a": "Ja, VES-TECH Swiss beliefert die gesamte Schweiz und das Fürstentum Liechtenstein. Der Standort ist Bildfeldstrasse 24, 9552 Bronschhofen im Kanton St. Gallen. Diese Website steht auf Deutsch, Französisch und Italienisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch."
+    "a": "Ja, VES-TECH Swiss beliefert die gesamte Schweiz und das Fürstentum Liechtenstein. Geräte übergeben und abgeholt werden in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch und Italienisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch."
    },
    {
     "q": "Was ist MIS-Schweissen und HyperPuls bei MAHE?",
@@ -143,7 +143,7 @@
    ],
    [
     "Kontakt und Erreichbarkeit",
-    "<p>Telefon: <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>E-Mail: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Website: <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Öffnungszeiten: Mo–Do 07:30–17:00 · Fr 07:30–11:30</p><p>Beratung auf Deutsch, Tschechisch und Englisch.</p>"
+    "<p>Telefon: <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>E-Mail: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Website: <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Telefonisch erreichbar: Mo–Do 07:30–17:00 · Fr 07:30–11:30. Besuch in der Werkstatt in Herisau nach Vereinbarung.</p><p>Beratung auf Deutsch, Tschechisch und Englisch.</p>"
    ],
    [
     "Rechtliche Grundlage dieser Angaben",
@@ -342,14 +342,14 @@
     "<p>Diese Allgemeinen Geschäftsbedingungen haben den <strong>Stand vom 1. August 2026</strong>.</p><p>Wir können sie für künftige Verträge ändern. Für einen bereits abgeschlossenen Vertrag gilt immer die Fassung, die bei Vertragsabschluss veröffentlicht war. Die jeweils gültige Fassung steht auf dieser Seite.</p>"
    ]
   ],
-  "org_desc": "VES-TECH Swiss ist der Schweizer Händler für die Schweisstechnik der MAHE GmbH: Schweissgeräte für MIG/MAG, WIG/TIG und Elektrode, Plasmaschneidanlagen und elektrolytische Reinigungs- und Signiergeräte. Dazu Beratung, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung und Schweissautomation. Einzelunternehmen mit Sitz in Bronschhofen im Kanton St. Gallen; geliefert wird in die Schweiz und nach Liechtenstein."
+  "org_desc": "VES-TECH Swiss ist der Schweizer Händler für die Schweisstechnik der MAHE GmbH: Schweissgeräte für MIG/MAG, WIG/TIG und Elektrode, Plasmaschneidanlagen und elektrolytische Reinigungs- und Signiergeräte. Dazu Beratung, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung und Schweissautomation. Werkstatt und Warenannahme in Herisau AR bei der Partnerfirma Schweisstechnik Scherrer AG; Sitz und Rechnungsadresse in Bronschhofen SG. Geliefert wird in die Schweiz und nach Liechtenstein."
  },
  "fr": {
   "locale": "fr_CH",
   "hreflang": "fr-CH",
   "lang_name": "Français",
   "site_name": "VES-TECH Swiss",
-  "tagline": "Soudage MAHE, découpe plasma & automation à Bronschhofen",
+  "tagline": "Soudage MAHE, découpe plasma & automation à Herisau AR",
   "brand_claim": "Partenaire suisse officiel de la gamme d'appareils MAHE.",
   "skip_link": "Aller au contenu",
   "nav_home": "Accueil",
@@ -362,14 +362,14 @@
   "menu_aria": "Menu principal",
   "lang_aria": "Choisir la langue",
   "home_title": "VES-TECH Swiss · Postes de soudage MAHE, plasma & nettoyage",
-  "home_desc": "Postes de soudage MAHE, découpeurs plasma et systèmes de nettoyage électrolytique en Suisse. Conseil, service et automation depuis Bronschhofen SG. Prix sur demande.",
+  "home_desc": "Postes de soudage MAHE, découpeurs plasma et systèmes de nettoyage électrolytique en Suisse. Conseil, service et automation depuis Herisau AR. Prix sur demande.",
   "home_h1": "Technique de soudage MAHE pour la Suisse",
   "all_title": "Tous les appareils MAHE · soudage, plasma, nettoyage, accessoires",
   "all_desc": "Toute la gamme MAHE chez VES-TECH Swiss : {n} appareils pour MIG/MAG, TIG, MMA, découpe plasma, nettoyage électrolytique et accessoires. Prix sur demande.",
   "all_h1": "Tous les appareils MAHE",
   "all_lead": "Toute la gamme MAHE – classée par procédé. Tous les appareils avec service suisse, gestion de la garantie et conseil par le technicien.",
   "cat_title_tpl": "{cat} · acheter MAHE {sub_hint} en Suisse | VES-TECH",
-  "cat_desc_tpl": "{cat} MAHE chez VES-TECH Swiss : {n} modèles, {subs}. Conseil, service et pièces de rechange depuis Bronschhofen SG. Prix sur demande.",
+  "cat_desc_tpl": "{cat} MAHE chez VES-TECH Swiss : {n} modèles, {subs}. Conseil, service et pièces de rechange depuis Herisau AR. Prix sur demande.",
   "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
   "sub_desc_tpl": "MAHE {sub} – {n} modèles chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
   "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
@@ -379,8 +379,8 @@
   "verf_desc": "Les procédés de soudage MAHE expliqués : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP – et leurs applications.",
   "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
   "dl_desc": "Catalogue produits MAHE, certificat de conformité EN 1090 et fiches de données de sécurité des électrolytes R1, RP1, P1, M1 et N1 en PDF.",
-  "kontakt_title": "Contact · VES-TECH Swiss, Bronschhofen SG",
-  "kontakt_desc": "VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen. Téléphone +41 76 710 91 39, vestechswiss@gmail.com. Conseil, service et réparation pour le soudage MAHE.",
+  "kontakt_title": "Contact · VES-TECH Swiss, atelier Herisau AR",
+  "kontakt_desc": "VES-TECH Swiss, atelier St. Gallerstrasse 49, 9100 Herisau AR. Téléphone +41 76 710 91 39, vestechswiss@gmail.com. Conseil, service et réparation pour le soudage MAHE.",
   "faq_title": "Questions fréquentes sur le soudage MAHE | VES-TECH Swiss",
   "faq_desc": "Réponses sur les prix, le choix du procédé, le soudage de l'aluminium, le nettoyage électrolytique, la découpe plasma, EN 1090 et le service en Suisse.",
   "faq_h1": "Questions fréquentes",
@@ -461,7 +461,7 @@
    },
    {
     "q": "VES-TECH Swiss propose-t-il service et réparation en Suisse ?",
-    "a": "Oui. VES-TECH Swiss à Bronschhofen (SG) assure le diagnostic, la réparation, le calibrage et l'automation pour la gamme MAHE. Vous parlez directement au technicien qui travaille aussi sur l'électronique – joignable au +41 76 710 91 39, du lundi au jeudi de 07h30 à 17h00 et le vendredi de 07h30 à 11h30."
+    "a": "Oui. L'atelier à Herisau AR – chez notre entreprise partenaire Schweisstechnik Scherrer AG – assure le diagnostic, la réparation, le calibrage et l'automation pour la gamme MAHE. Vous parlez directement au technicien qui travaille aussi sur l'électronique, joignable au +41 76 710 91 39."
    },
    {
     "q": "Que signifie EN 1090 et VES-TECH fournit-il la documentation ?",
@@ -473,7 +473,7 @@
    },
    {
     "q": "VES-TECH Swiss livre-t-il dans toute la Suisse ?",
-    "a": "Oui, VES-TECH Swiss livre dans toute la Suisse et la Principauté du Liechtenstein. Le site se trouve Bildfeldstrasse 24, 9552 Bronschhofen, canton de Saint-Gall. Ce site est disponible en allemand, français et italien ; le conseil personnel se fait en allemand, tchèque et anglais."
+    "a": "Oui, VES-TECH Swiss livre dans toute la Suisse et la Principauté du Liechtenstein. La remise et l'enlèvement des appareils se font à l'atelier, St. Gallerstrasse 49, 9100 Herisau (Appenzell Rhodes-Extérieures); le siège et l'adresse de facturation sont à Bronschhofen SG. Ce site est disponible en allemand, français et italien ; le conseil personnel se fait en allemand, tchèque et anglais."
    },
    {
     "q": "Qu'est-ce que le soudage MIS et HyperPuls chez MAHE ?",
@@ -487,7 +487,7 @@
    ],
    [
     "Contact et disponibilité",
-    "<p>Téléphone : <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>E-mail : <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Site web : <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Heures d’ouverture : Lun–Jeu 07h30–17h00 · Ven 07h30–11h30</p><p>Conseil en allemand, en tchèque et en anglais.</p>"
+    "<p>Téléphone : <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>E-mail : <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Site web : <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Joignable par téléphone : Lun–Jeu 07h30–17h00 · Ven 07h30–11h30. Visite à l'atelier de Herisau sur rendez-vous.</p><p>Conseil en allemand, en tchèque et en anglais.</p>"
    ],
    [
     "Base légale de ces indications",
@@ -686,14 +686,14 @@
     "<p>Les présentes conditions générales sont <strong>dans leur version du 1er août 2026</strong>.</p><p>Nous pouvons les modifier pour les contrats futurs. Pour un contrat déjà conclu, la version publiée au moment de la conclusion fait toujours foi. La version en vigueur figure sur cette page.</p>"
    ]
   ],
-  "org_desc": "VES-TECH Swiss est le revendeur suisse de la technique de soudage de MAHE GmbH : postes à souder MIG/MAG, TIG et électrode, installations de découpe plasma et appareils de nettoyage et de marquage électrolytiques. Avec conseil, mise en service, diagnostic, réparation, calibrage et automation du soudage. Entreprise individuelle sise à Bronschhofen, canton de Saint-Gall; livraison en Suisse et au Liechtenstein."
+  "org_desc": "VES-TECH Swiss est le revendeur suisse de la technique de soudage de MAHE GmbH : postes à souder MIG/MAG, TIG et électrode, installations de découpe plasma et appareils de nettoyage et de marquage électrolytiques. Avec conseil, mise en service, diagnostic, réparation, calibrage et automation du soudage. Atelier et réception des marchandises à Herisau AR chez l'entreprise partenaire Schweisstechnik Scherrer AG; siège et adresse de facturation à Bronschhofen SG. Livraison en Suisse et au Liechtenstein."
  },
  "it": {
   "locale": "it_CH",
   "hreflang": "it-CH",
   "lang_name": "Italiano",
   "site_name": "VES-TECH Swiss",
-  "tagline": "Saldatura MAHE, taglio al plasma & automazione da Bronschhofen",
+  "tagline": "Saldatura MAHE, taglio al plasma & automazione a Herisau AR",
   "brand_claim": "Partner svizzero ufficiale per la gamma di apparecchi MAHE.",
   "skip_link": "Vai al contenuto",
   "nav_home": "Home",
@@ -706,14 +706,14 @@
   "menu_aria": "Menu principale",
   "lang_aria": "Scegliere la lingua",
   "home_title": "VES-TECH Swiss · Saldatrici MAHE, plasma & pulizia",
-  "home_desc": "Saldatrici MAHE, inverter per taglio al plasma e sistemi di pulizia elettrolitica in Svizzera. Consulenza, assistenza e automazione da Bronschhofen SG. Prezzo su richiesta.",
+  "home_desc": "Saldatrici MAHE, inverter per taglio al plasma e sistemi di pulizia elettrolitica in Svizzera. Consulenza, assistenza e automazione da Herisau AR. Prezzo su richiesta.",
   "home_h1": "Tecnica di saldatura MAHE per la Svizzera",
   "all_title": "Tutti gli apparecchi MAHE · saldatura, plasma, pulizia, accessori",
   "all_desc": "L'intera gamma MAHE da VES-TECH Swiss: {n} apparecchi per MIG/MAG, TIG, MMA, taglio al plasma, pulizia elettrolitica e accessori. Prezzo su richiesta.",
   "all_h1": "Tutti gli apparecchi MAHE",
   "all_lead": "L'intera gamma MAHE – ordinata per processo. Tutti gli apparecchi con assistenza svizzera, gestione della garanzia e consulenza del tecnico.",
   "cat_title_tpl": "{cat} · acquistare MAHE {sub_hint} in Svizzera | VES-TECH",
-  "cat_desc_tpl": "{cat} MAHE da VES-TECH Swiss: {n} modelli, {subs}. Consulenza, assistenza e ricambi da Bronschhofen SG. Prezzo su richiesta.",
+  "cat_desc_tpl": "{cat} MAHE da VES-TECH Swiss: {n} modelli, {subs}. Consulenza, assistenza e ricambi da Herisau AR. Prezzo su richiesta.",
   "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
   "sub_desc_tpl": "MAHE {sub} – {n} modelli da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
   "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
@@ -723,8 +723,8 @@
   "verf_desc": "I processi di saldatura MAHE spiegati: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP – e i loro impieghi.",
   "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
   "dl_desc": "Catalogo prodotti MAHE, certificato di conformità EN 1090 e schede di sicurezza degli elettroliti R1, RP1, P1, M1 e N1 in PDF.",
-  "kontakt_title": "Contatto · VES-TECH Swiss, Bronschhofen SG",
-  "kontakt_desc": "VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen. Telefono +41 76 710 91 39, vestechswiss@gmail.com. Consulenza, assistenza e riparazione per la saldatura MAHE.",
+  "kontakt_title": "Contatto · VES-TECH Swiss, officina Herisau AR",
+  "kontakt_desc": "VES-TECH Swiss, officina St. Gallerstrasse 49, 9100 Herisau AR. Telefono +41 76 710 91 39, vestechswiss@gmail.com. Consulenza, assistenza e riparazione per la saldatura MAHE.",
   "faq_title": "Domande frequenti sulla saldatura MAHE | VES-TECH Swiss",
   "faq_desc": "Risposte su prezzi, scelta del processo, saldatura dell'alluminio, pulizia elettrolitica, taglio al plasma, EN 1090 e assistenza in Svizzera.",
   "faq_h1": "Domande frequenti",
@@ -805,7 +805,7 @@
    },
    {
     "q": "VES-TECH Swiss offre assistenza e riparazione in Svizzera?",
-    "a": "Sì. VES-TECH Swiss a Bronschhofen (SG) si occupa di diagnosi, riparazione, calibrazione e automazione per la gamma MAHE. Parlate direttamente con il tecnico che lavora anche sull'elettronica – raggiungibile al +41 76 710 91 39, dal lunedì al giovedì dalle 07:30 alle 17:00 e il venerdì dalle 07:30 alle 11:30."
+    "a": "Sì. L'officina a Herisau AR – presso la nostra azienda partner Schweisstechnik Scherrer AG – si occupa di diagnosi, riparazione, calibrazione e automazione per la gamma MAHE. Parlate direttamente con il tecnico che lavora anche sull'elettronica, raggiungibile al +41 76 710 91 39."
    },
    {
     "q": "Cosa significa EN 1090 e VES-TECH fornisce la documentazione?",
@@ -817,7 +817,7 @@
    },
    {
     "q": "VES-TECH Swiss consegna in tutta la Svizzera?",
-    "a": "Sì, VES-TECH Swiss consegna in tutta la Svizzera e nel Principato del Liechtenstein. La sede è in Bildfeldstrasse 24, 9552 Bronschhofen, Canton San Gallo. Questo sito è disponibile in tedesco, francese e italiano; la consulenza personale avviene in tedesco, ceco e inglese."
+    "a": "Sì, VES-TECH Swiss consegna in tutta la Svizzera e nel Principato del Liechtenstein. La consegna e il ritiro degli apparecchi avvengono in officina, St. Gallerstrasse 49, 9100 Herisau (Appenzello Esterno); sede e indirizzo di fatturazione sono a Bronschhofen SG. Questo sito è disponibile in tedesco, francese e italiano; la consulenza personale avviene in tedesco, ceco e inglese."
    },
    {
     "q": "Che cosa sono la saldatura MIS e HyperPuls di MAHE?",
@@ -831,7 +831,7 @@
    ],
    [
     "Contatto e reperibilità",
-    "<p>Telefono: <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>E-mail: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Sito web: <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Orari: Lun–Gio 07:30–17:00 · Ven 07:30–11:30</p><p>Consulenza in tedesco, ceco e inglese.</p>"
+    "<p>Telefono: <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>E-mail: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Sito web: <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Raggiungibile per telefono: Lun–Gio 07:30–17:00 · Ven 07:30–11:30. Visita in officina a Herisau su appuntamento.</p><p>Consulenza in tedesco, ceco e inglese.</p>"
    ],
    [
     "Base legale di queste indicazioni",
@@ -1030,6 +1030,6 @@
     "<p>Le presenti condizioni generali sono <strong>nella versione del 1° agosto 2026</strong>.</p><p>Possiamo modificarle per i contratti futuri. Per un contratto già concluso fa sempre fede la versione pubblicata al momento della conclusione. La versione in vigore si trova su questa pagina.</p>"
    ]
   ],
-  "org_desc": "VES-TECH Swiss è il rivenditore svizzero della tecnica di saldatura di MAHE GmbH: saldatrici MIG/MAG, TIG ed elettrodo, impianti di taglio al plasma e apparecchi elettrolitici di pulitura e marcatura. Con consulenza, messa in servizio, diagnosi, riparazione, calibrazione e automazione della saldatura. Ditta individuale con sede a Bronschhofen, Canton San Gallo; consegna in Svizzera e nel Liechtenstein."
+  "org_desc": "VES-TECH Swiss è il rivenditore svizzero della tecnica di saldatura di MAHE GmbH: saldatrici MIG/MAG, TIG ed elettrodo, impianti di taglio al plasma e apparecchi elettrolitici di pulitura e marcatura. Con consulenza, messa in servizio, diagnosi, riparazione, calibrazione e automazione della saldatura. Officina e accettazione merci a Herisau AR presso l'azienda partner Schweisstechnik Scherrer AG; sede e indirizzo di fatturazione a Bronschhofen SG. Consegna in Svizzera e nel Liechtenstein."
  }
 }

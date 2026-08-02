@@ -149,10 +149,11 @@ def ld_org(lang=C.DEFAULT_LANG):
             "addressCountry": "CH",
         },
         "geo": {"@type": "GeoCoordinates", "latitude": vis["lat"], "longitude": vis["lon"]},
-        "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": h["days"],
-             "opens": h["opens"], "closes": h["closes"]} for h in co["hours_schema"]
-        ],
+        # Kein openingHoursSpecification: die Zeiten unten sind die telefonische
+        # Erreichbarkeit des Inhabers, nicht die Oeffnungszeiten der Werkstatt in
+        # Herisau. Als Oeffnungszeiten am LocalBusiness ausgegeben, wuerden sie
+        # mit dem Google-Unternehmensprofil kollidieren, sobald dort andere
+        # Zeiten stehen. Sie gehoeren an den ContactPoint - da stimmen sie.
         "areaServed": [{"@type": "Country", "name": "Schweiz"},
                        {"@type": "Country", "name": "Liechtenstein"}],
         # Sprachen, in denen beraten wird - nicht zu verwechseln mit den
@@ -173,6 +174,10 @@ def ld_org(lang=C.DEFAULT_LANG):
             "email": co["email"],
             "availableLanguage": ["German", "Czech", "English"],
             "areaServed": ["CH", "LI"],
+            "hoursAvailable": [
+                {"@type": "OpeningHoursSpecification", "dayOfWeek": h["days"],
+                 "opens": h["opens"], "closes": h["closes"]} for h in co["hours_schema"]
+            ],
         }],
     }
 
@@ -361,8 +366,10 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 <link rel="canonical" href="{e(C.abs_url(url))}">
 {alt_links}
 <meta name="author" content="{e(C.COMPANY['name'])}">
-<meta name="geo.region" content="CH-{C.COMPANY['region']}">
-<meta name="geo.placename" content="{e(C.COMPANY['city'])}">
+<meta name="geo.region" content="CH-{C.WORKSHOP['region']}">
+<meta name="geo.placename" content="{e(C.WORKSHOP['city'])}">
+<meta name="geo.position" content="{C.WORKSHOP['lat']};{C.WORKSHOP['lon']}">
+<meta name="ICBM" content="{C.WORKSHOP['lat']}, {C.WORKSHOP['lon']}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{e(C.t(lang,'site_name'))}">
 <meta property="og:locale" content="{C.EX[lang]['locale']}">

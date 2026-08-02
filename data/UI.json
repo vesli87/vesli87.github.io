@@ -54,7 +54,7 @@
   "k_desc": "Ein Gerät, das streikt, oder ein Prozess, der schneller laufen soll? Beschreiben Sie kurz Ihre Situation – Sie erhalten eine ehrliche Ersteinschätzung.",
   "k_tel": "Telefon",
   "k_msg": "Ihre Nachricht",
-  "foot_brand": "Schweisstechnik & Automation aus Bronschhofen. Verkauf, Service und Automation für das MAHE-Geräteprogramm – aus einer Hand.",
+  "foot_brand": "Schweisstechnik & Automation aus Herisau AR. Verkauf, Service und Automation für das MAHE-Geräteprogramm – aus einer Hand.",
   "foot_products": "Produkte",
   "foot_service": "Service",
   "foot_diag": "Diagnose & Reparatur",
@@ -100,7 +100,9 @@
   "v_clean": "Reinigen",
   "addr_bill": "Rechnungsadresse",
   "addr_shop": "Werkstatt",
-  "addr_shop_note": "bei unserem Partner"
+  "addr_shop_note": "bei unserem Partner",
+  "hours_lbl": "Telefonisch erreichbar",
+  "addr_shop_hint": "Besuch in der Werkstatt nach Vereinbarung"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -157,7 +159,7 @@
   "k_desc": "Un appareil en panne ou un procédé à accélérer ? Décrivez brièvement votre situation – vous recevrez une première estimation honnête.",
   "k_tel": "Téléphone",
   "k_msg": "Votre message",
-  "foot_brand": "Soudage & automation à Bronschhofen. Vente, service et automation pour la gamme MAHE – d’une seule main.",
+  "foot_brand": "Soudage & automation à Herisau AR. Vente, service et automation pour la gamme MAHE – d’une seule main.",
   "foot_products": "Produits",
   "foot_service": "Service",
   "foot_diag": "Diagnostic & réparation",
@@ -203,7 +205,9 @@
   "v_clean": "Nettoyage",
   "addr_bill": "Adresse de facturation",
   "addr_shop": "Atelier",
-  "addr_shop_note": "chez notre partenaire"
+  "addr_shop_note": "chez notre partenaire",
+  "hours_lbl": "Joignable par téléphone",
+  "addr_shop_hint": "Visite à l'atelier sur rendez-vous"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -260,7 +264,7 @@
   "k_desc": "Un apparecchio in avaria o un processo da velocizzare? Descrivete brevemente la situazione – riceverete una prima valutazione onesta.",
   "k_tel": "Telefono",
   "k_msg": "Il vostro messaggio",
-  "foot_brand": "Saldatura & automazione a Bronschhofen. Vendita, assistenza e automazione per la gamma MAHE – da un unico interlocutore.",
+  "foot_brand": "Saldatura & automazione a Herisau AR. Vendita, assistenza e automazione per la gamma MAHE – da un unico interlocutore.",
   "foot_products": "Prodotti",
   "foot_service": "Assistenza",
   "foot_diag": "Diagnosi & riparazione",
@@ -306,6 +310,8 @@
   "v_clean": "Pulitura",
   "addr_bill": "Indirizzo di fatturazione",
   "addr_shop": "Officina",
-  "addr_shop_note": "presso il nostro partner"
+  "addr_shop_note": "presso il nostro partner",
+  "hours_lbl": "Raggiungibile per telefono",
+  "addr_shop_hint": "Visita in officina su appuntamento"
  }
 }

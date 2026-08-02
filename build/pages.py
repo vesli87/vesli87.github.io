@@ -523,7 +523,7 @@ def page_contact(lang):
     <address>
       <a class="accent" href="tel:{co['phone_href']}">{e(co['phone'])}</a><br>
       <a class="accent" href="mailto:{co['email']}">{co['email']}</a><br><br>
-      {e(C.t(lang,'hours'))}
+      {e(C.t(lang,'hours_lbl'))}:<br>{e(C.t(lang,'hours'))}
     </address>
     <div class="korte">
       <div>
@@ -534,7 +534,8 @@ def page_contact(lang):
         <span class="kot">{e(C.t(lang,'addr_shop'))}</span>
         <address>{e(ws['street'])}<br>{ws['zip']} {e(ws['city'])}<br>{e(ws['country_name'])}</address>
         <p class="kohint">{e(C.t(lang,'addr_shop_note'))}
-          <a href="{ws['partner_url']}" rel="noopener nofollow" target="_blank">{e(ws['partner'])}</a></p>
+          <a href="{ws['partner_url']}" rel="noopener nofollow" target="_blank">{e(ws['partner'])}</a><br>
+          {e(C.t(lang,'addr_shop_hint'))}</p>
       </div>
     </div>
   </aside>

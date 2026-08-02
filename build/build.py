@@ -272,10 +272,14 @@ def llms_txt():
         f"{len(C.P)} Geräte, alle zum Preis auf Anfrage.",
         "",
         "## Eckdaten",
-        f"- Firma: {C.COMPANY['name']}, {C.COMPANY['street']}, {C.COMPANY['zip']} "
+        f"- Firma: {C.COMPANY['name']}",
+        f"- Werkstatt und Warenannahme: {C.WORKSHOP['street']}, {C.WORKSHOP['zip']} "
+        f"{C.WORKSHOP['city']} ({C.WORKSHOP['region']}), {C.WORKSHOP['country_name']} "
+        f"– bei der Partnerfirma {C.WORKSHOP['partner']}, Besuch nach Vereinbarung",
+        f"- Sitz und Rechnungsadresse: {C.COMPANY['street']}, {C.COMPANY['zip']} "
         f"{C.COMPANY['city']} ({C.COMPANY['region']}), {C.COMPANY['country_name']}",
         f"- Telefon: {C.COMPANY['phone']} · E-Mail: {C.COMPANY['email']}",
-        f"- Öffnungszeiten: {C.COMPANY['hours']}",
+        f"- Telefonisch erreichbar: {C.COMPANY['hours']}",
         "- Liefergebiet: Schweiz und Liechtenstein",
         "- Sprachen: Deutsch, Französisch, Italienisch",
         "- Preismodell: Preis auf Anfrage (jede Anlage wird konfiguriert), Währung CHF",
@@ -320,11 +324,14 @@ def llms_full():
     out = [f"# {C.COMPANY['name']} — vollständiger Produkt- und Wissensauszug",
            f"Stand: {TODAY}. Quelle: {C.SITE}",
            "",
-           f"{C.COMPANY['name']} in {C.COMPANY['city']} ({C.COMPANY['region']}, "
-           f"{C.COMPANY['country_name']}) ist der Schweizer Partner für das MAHE-Geräteprogramm. "
-           f"Adresse: {C.COMPANY['street']}, {C.COMPANY['zip']} {C.COMPANY['city']}. "
+           f"{C.COMPANY['name']} in {C.WORKSHOP['city']} ({C.WORKSHOP['region']}, "
+           f"{C.WORKSHOP['country_name']}) ist der Schweizer Partner für das MAHE-Geräteprogramm. "
+           f"Werkstatt und Warenannahme: {C.WORKSHOP['street']}, {C.WORKSHOP['zip']} "
+           f"{C.WORKSHOP['city']}, bei der Partnerfirma {C.WORKSHOP['partner']}, Besuch nach "
+           f"Vereinbarung. Sitz und Rechnungsadresse: {C.COMPANY['street']}, "
+           f"{C.COMPANY['zip']} {C.COMPANY['city']}. "
            f"Telefon {C.COMPANY['phone']}, E-Mail {C.COMPANY['email']}, "
-           f"Öffnungszeiten {C.COMPANY['hours']}. Alle Geräte werden zum Preis auf Anfrage "
+           f"telefonisch erreichbar {C.COMPANY['hours']}. Alle Geräte werden zum Preis auf Anfrage "
            f"angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör "
            f"konfiguriert wird.",
            "", "---", ""]

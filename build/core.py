@@ -350,6 +350,9 @@ def verfahrenOf(lang, p):
     Abgeleitet wird die Liste aus den Katalogsymbolen (data/SYM.json), also aus
     dem, was der Hersteller dem Geraet ausdruecklich zuschreibt.
     """
+    e = SYM.get(p["id"]) or {}
+    if e.get("etikett"):
+        return e["etikett"]          # wo die Ableitung zu grob waere
     grp = dict(symbolsOf(p))
     # Beherrscht das Geraet nur eine Disziplin, bleibt das von Hand gesetzte
     # Wort stehen - es ist genauer als die Gruppe. Der HCS 1 signiert, das P1
@@ -360,7 +363,12 @@ def verfahrenOf(lang, p):
     out = []
     if "mig" in grp:
         out.append(t(lang, "v_mig"))
-    if "wig" in grp:
+    # Lift Arc allein macht noch keine WIG-Maschine. Die i-1600 und die Delta
+    # 1800 koennen den Lichtbogen per Lift zuenden - das ist eine Zusatz-
+    # funktion, kein zweites Verfahren. "WIG DC" auf der Karte verspricht dem
+    # Kunden eine WIG-Anlage. Erst mit HF-Zuendung, Pulsen oder AC/DC zaehlt
+    # WIG als eigene Disziplin; das Symbol Lift Arc steht weiterhin am Geraet.
+    if "wig" in grp and set(grp["wig"]) - {"lift"}:
         out.append(t(lang, "v_wig_ac" if "acdc" in grp["wig"] else "v_wig_dc"))
     if "elektrode" in grp:
         out.append(t(lang, "v_mma"))

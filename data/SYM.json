@@ -378,6 +378,10 @@
  },
  "plasma-tig": {
   "quelle": "mahe-online.de, Besonderheiten + mahe-online.de",
+  "etikett": [
+   "Plasma TIG",
+   "MMA"
+  ],
   "gruppen": {
    "wig": [
     "hf",

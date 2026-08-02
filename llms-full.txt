@@ -218,7 +218,7 @@ Passendes Zubehör: FRC 5, RC 5, RC 100, MT200W, MT180W, Elektrodenkabel 25–90
 
 ### MAHE Beta digital
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
-Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
+Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
 Mobile digitale WIG-Schweissmaschine mit Programmspeicher.
 Besonderheiten: Hochfrequenz Impulsschweissen; Hyper ARC Active Regelung; 5 Meter Zuleitungskabel; Digitale Ampere Anzeige; Fernbedienung; Synergy Einstellungen; Job Mode.
 Ausstattung: Verfahren: WIG DC; Bedienung: digital.

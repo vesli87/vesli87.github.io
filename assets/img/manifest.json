@@ -683,12 +683,5 @@
   "h": 1033,
   "ratio": 0.5366,
   "local": true
- },
- "panels/MyPlasm_Hauptfenster.png": {
-  "key": "myplasm-hauptfenster",
-  "w": 2580,
-  "h": 1932,
-  "ratio": 0.7488,
-  "local": true
  }
 }

@@ -128,14 +128,15 @@
   }
  },
  "beta-dx": {
-  "quelle": "S. 39, 43",
+  "quelle": "S. 39, 43 + mahe-online.de",
   "gruppen": {
    "wig": [
     "hf",
     "lift",
     "hfpuls",
     "arcactive",
-    "hyperspot"
+    "hyperspot",
+    "boost"
    ],
    "elektrode": [
     "antistick",
@@ -161,8 +162,11 @@
   }
  },
  "i-1600": {
-  "quelle": "S. 46",
+  "quelle": "S. 46 + mahe-online.de",
   "gruppen": {
+   "wig": [
+    "lift"
+   ],
    "elektrode": [
     "antistick",
     "arcforce"
@@ -170,8 +174,11 @@
   }
  },
  "delta": {
-  "quelle": "S. 46",
+  "quelle": "S. 46 + mahe-online.de",
   "gruppen": {
+   "wig": [
+    "lift"
+   ],
    "elektrode": [
     "antistick",
     "arcforce"
@@ -179,20 +186,22 @@
   }
  },
  "delta-digital": {
-  "quelle": "S. 46",
+  "quelle": "S. 46 + mahe-online.de",
   "gruppen": {
    "elektrode": [
     "antistick",
-    "arcforce"
+    "arcforce",
+    "gouging"
    ]
   }
  },
  "delta-digital-ds": {
-  "quelle": "S. 47",
+  "quelle": "S. 47 + mahe-online.de",
   "gruppen": {
    "elektrode": [
     "antistick",
-    "arcforce"
+    "arcforce",
+    "gouging"
    ]
   }
  },
@@ -306,7 +315,7 @@
   }
  },
  "hypercleaner-ct200": {
-  "quelle": "S. 57, 59",
+  "quelle": "S. 57, 59 + mahe-online.de",
   "gruppen": {
    "wig": [
     "hf",
@@ -322,7 +331,8 @@
    "reinigen": [
     "clean",
     "polieren",
-    "mark"
+    "mark",
+    "galv"
    ]
   }
  },
@@ -363,6 +373,19 @@
   "gruppen": {
    "reinigen": [
     "clean"
+   ]
+  }
+ },
+ "plasma-tig": {
+  "quelle": "mahe-online.de, Besonderheiten + mahe-online.de",
+  "gruppen": {
+   "wig": [
+    "hf",
+    "lift"
+   ],
+   "elektrode": [
+    "antistick",
+    "arcforce"
    ]
   }
  }

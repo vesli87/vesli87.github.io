@@ -323,7 +323,7 @@ Technische Daten – i-1600:
 Werkstoffe: Stahl, INOX.
 Passendes Zubehör: MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
-### MAHE Delta
+### MAHE Delta 1800
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA · Preis: auf Anfrage (CHF)
 Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.

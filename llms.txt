@@ -34,7 +34,7 @@
 - [MAHE Beta digital](https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/): Mobile digitale WIG-Schweissmaschine mit Programmspeicher. (WIG)
 - [MAHE HyperTIG AC/DC](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/): Leistungsstarke AC/DC Stromquelle für höchste Anforderungen. (WIG AC/DC)
 - [MAHE i-1600](https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/): Einfach zu bedienender, robuster Elektrodeninverter. (MMA)
-- [MAHE Delta](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. (MMA)
+- [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. (MMA)
 - [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
 - [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
 - [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): Mikroplasma- und Plasmastromquelle für feinste Schweissungen. (Plasma TIG)

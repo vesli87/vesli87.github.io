@@ -677,11 +677,11 @@
   "ratio": 0.5881,
   "local": true
  },
- "panels/MyPlasm_Markieren.png": {
-  "key": "myplasm-markieren",
-  "w": 1925,
-  "h": 1033,
-  "ratio": 0.5366,
+ "panels/MPT_MyPlasm_System.png": {
+  "key": "mpt-myplasm-system",
+  "w": 4800,
+  "h": 2700,
+  "ratio": 0.5625,
   "local": true
  }
 }

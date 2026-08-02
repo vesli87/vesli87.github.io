@@ -2,18 +2,18 @@
  "_kommentar": "Zusatzbilder unter dem Hauptbild der Produktseite. Je Eintrag: img = Schluessel wie in P.json, dazu die Bildunterschrift in de/fr/it. Der Alt-Text entsteht aus der Bildunterschrift, deshalb muss sie beschreiben, was zu sehen ist - nicht nur 'Screenshot'. Die MyPlasm-Bilder stammen aus dem Softwarehandbuch von Proma Elektronika (MyPlasmCNCen.pdf, v1.2). Die Quelle steht in der Bildunterschrift; eine schriftliche Freigabe von Proma sollte nachgeholt werden.",
  "mpt-3001": [
   {
-   "img": "panels/MyPlasm_Markieren.png",
-   "de": "MyPlasm CNC: Markieren und Anreissen im Hauptfenster. Die Markierbahnen liegen auf einer eigenen Layerfarbe und werden mit eigener Geschwindigkeit gefahren; links die Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit. Quelle: Handbuch Proma Elektronika",
-   "fr": "MyPlasm CNC : marquage et traçage dans la fenêtre principale. Les parcours de marquage sont attribués à une couleur de calque dédiée et exécutés à leur propre vitesse ; à gauche les paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage. Source : manuel Proma Elektronika",
-   "it": "MyPlasm CNC: marcatura e tracciatura nella finestra principale. I percorsi di marcatura sono assegnati a un colore di livello dedicato ed eseguiti con velocità propria; a sinistra i parametri di taglio con altezza di taglio, tensione nominale THC, altezza e tempo di sfondamento. Fonte: manuale Proma Elektronika"
+   "img": "panels/MPT_MyPlasm_System.png",
+   "de": "MAHE MPT mit der Steuerung MyPlasm CNC: links die Maschine mit Bedienkonsole, rechts das Hauptfenster der Software – Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit, dazu die Bahnanalyse mit Zahl der Einstiche, Schnittlänge und geschätzter Schneidzeit.",
+   "fr": "MAHE MPT avec la commande MyPlasm CNC : à gauche la machine et sa console, à droite la fenêtre principale du logiciel – paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage, ainsi que l'analyse des parcours avec le nombre de perçages, la longueur de coupe et le temps estimé.",
+   "it": "MAHE MPT con il controllo MyPlasm CNC: a sinistra la macchina con la console, a destra la finestra principale del software – parametri di taglio con altezza di taglio, tensione nominale THC, altezza e tempo di sfondamento, oltre all'analisi dei percorsi con numero di sfondamenti, lunghezza di taglio e tempo stimato."
   }
  ],
  "mpt-2501": [
   {
-   "img": "panels/MyPlasm_Markieren.png",
-   "de": "MyPlasm CNC: Markieren und Anreissen im Hauptfenster. Die Markierbahnen liegen auf einer eigenen Layerfarbe und werden mit eigener Geschwindigkeit gefahren; links die Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit. Quelle: Handbuch Proma Elektronika",
-   "fr": "MyPlasm CNC : marquage et traçage dans la fenêtre principale. Les parcours de marquage sont attribués à une couleur de calque dédiée et exécutés à leur propre vitesse ; à gauche les paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage. Source : manuel Proma Elektronika",
-   "it": "MyPlasm CNC: marcatura e tracciatura nella finestra principale. I percorsi di marcatura sono assegnati a un colore di livello dedicato ed eseguiti con velocità propria; a sinistra i parametri di taglio con altezza di taglio, tensione nominale THC, altezza e tempo di sfondamento. Fonte: manuale Proma Elektronika"
+   "img": "panels/MPT_MyPlasm_System.png",
+   "de": "MAHE MPT mit der Steuerung MyPlasm CNC: links die Maschine mit Bedienkonsole, rechts das Hauptfenster der Software – Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit, dazu die Bahnanalyse mit Zahl der Einstiche, Schnittlänge und geschätzter Schneidzeit.",
+   "fr": "MAHE MPT avec la commande MyPlasm CNC : à gauche la machine et sa console, à droite la fenêtre principale du logiciel – paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage, ainsi que l'analyse des parcours avec le nombre de perçages, la longueur de coupe et le temps estimé.",
+   "it": "MAHE MPT con il controllo MyPlasm CNC: a sinistra la macchina con la console, a destra la finestra principale del software – parametri di taglio con altezza di taglio, tensione nominale THC, altezza e tempo di sfondamento, oltre all'analisi dei percorsi con numero di sfondamenti, lunghezza di taglio e tempo stimato."
   }
  ]
 }

@@ -450,12 +450,22 @@ def optionsOf(lang, p):
 
 
 def galleryOf(lang, p):
-    """Zusatzbilder unter dem Hauptbild, mit Bildunterschrift in der Sprache."""
+    """Zusatzbilder unter dem Hauptbild.
+
+    alt beschreibt das Bild und ist Pflicht - ohne Alt-Text ist ein Bild fuer
+    Screenreader und fuer die Bildersuche nicht vorhanden. cap ist die sichtbare
+    Bildunterschrift und freiwillig: manche Bilder erklaeren sich selbst und
+    wollen keinen Absatz darunter.
+    """
     out = []
     for g in GALLERY.get(p["id"], []):
         if not isinstance(g, dict) or not g.get("img"):
             continue
-        out.append({"img": g["img"], "cap": g.get(lang) or g.get("de") or ""})
+        a = g.get("alt") or {}
+        cap = g.get("cap") or {}
+        out.append({"img": g["img"],
+                    "alt": a.get(lang) or a.get("de") or "",
+                    "cap": cap.get(lang) or cap.get("de") or ""})
     return out
 
 

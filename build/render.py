@@ -90,12 +90,19 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     # Frontpanels kommen direkt vom Hersteller und liegen lokal; Produktbilder
     # stammen von mahe-online.de und behalten dorthin einen Rückfall.
     folder = "panels" if m.get("local") else "p"
-    klein, gross = min(400, nat), min(1000, nat)
-    small = f"/assets/img/{folder}/{k}-400.webp"
-    large = f"/assets/img/{folder}/{k}-1000.webp"
-    srcset = f"{small} {klein}w"
-    if gross > klein:
-        srcset += f", {large} {gross}w"
+    # Welche Breiten es wirklich gibt, steht im Manifest. Frueher standen hier
+    # fest 400 und 1000; bei einer 4800 px breiten Vorlage blieb das Bild
+    # dadurch auf 1000 px stehen und wirkte auf feinen Bildschirmen weich.
+    # Ohne Eintrag im Manifest gilt weiter das alte Paar 400/1000, wobei die
+    # 1000er Datei bei schmaleren Vorlagen nur so breit ist wie die Vorlage.
+    # Sie einfach wegzulassen, sobald 1000 > nat ist, haette 160 Seiten die
+    # groessere Stufe genommen - gemessen an einem Vorher/Nachher-Vergleich
+    # aller 348 Seiten.
+    stufen = m.get("sizes") or ([400] + ([1000] if nat > 400 else []))
+    small = f"/assets/img/{folder}/{k}-{stufen[0]}.webp"
+    srcset = ", ".join(f"/assets/img/{folder}/{k}-{s}.webp {min(s, nat)}w"
+                       for s in stufen)
+    klein = min(stufen[0], nat)
     if nat < (width or 400):
         sizes = f"{w}px"          # das Bild fuellt den Platz gar nicht aus
     loading = "" if eager else 'loading="lazy" '

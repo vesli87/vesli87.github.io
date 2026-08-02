@@ -25,7 +25,11 @@ import core as C  # noqa: E402
 
 OUT = C.ROOT / "assets" / "img" / "panels"
 MANIFEST = C.ROOT / "assets" / "img" / "manifest.json"
-SIZES = [400, 1000]
+# 1600 und 2000 nur, wenn die Vorlage wirklich so breit ist - hochskalieren
+# macht Bilder nicht schaerfer, nur groesser. Welche Stufen entstanden sind,
+# steht danach im Manifest, damit render.img_tag kein Bild ins srcset
+# schreibt, das es nicht gibt.
+SIZES = [400, 1000, 1600, 2000]
 
 
 def dims(f):
@@ -62,13 +66,16 @@ def main():
         if not w:
             print(f"  unlesbar: {f.name}")
             continue
-        for s in SIZES:
+        stufen = [s for s in SIZES if s <= w] or [SIZES[0]]
+        for s in stufen:
             dst = OUT / f"{k}-{s}.webp"
-            subprocess.run(["cwebp", "-quiet", "-q", "84", "-alpha_q", "90",
-                            "-resize", str(min(s, w)), "0", str(f), "-o", str(dst)],
+            subprocess.run(["cwebp", "-quiet", "-q", "86", "-alpha_q", "90",
+                            "-sharp_yuv", "-resize", str(min(s, w)), "0",
+                            str(f), "-o", str(dst)],
                            capture_output=True)
         manifest[f"panels/{f.name}"] = {"key": k, "w": w, "h": h,
-                                        "ratio": round(h / w, 4), "local": True}
+                                        "ratio": round(h / w, 4), "local": True,
+                                        "sizes": stufen}
         print(f"  {f.name:44} {w}×{h}  ->  {k}")
 
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=1), "utf-8")

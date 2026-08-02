@@ -199,7 +199,7 @@ def media_html(lang, p, nm):
              "alt": f"{C.BRAND} {nm} – {C.pDesc(lang, p)}"}
     bilder = [haupt]
     for g in C.galleryOf(lang, p):
-        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["cap"]})
+        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"]})
 
     vtag = f'<span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>'
     if len(bilder) == 1:

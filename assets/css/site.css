@@ -101,8 +101,8 @@
   .hero-slide.light .hero-txt p{color:#4A453D}
   .hero-txt .hk{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.16em;
     text-transform:uppercase;font-size:clamp(11px,1.1vw,14px);color:var(--accent)}
-  .hero-txt h2{font-family:'Anton';text-transform:uppercase;line-height:1.02;
-    font-size:clamp(19px,2.9vw,44px);margin:.35em 0 .3em}
+  .hero-txt h2{font-family:'DM Serif Display',serif;font-weight:400;text-transform:uppercase;
+    line-height:1.06;letter-spacing:.005em;font-size:clamp(18px,2.6vw,40px);margin:.35em 0 .3em;overflow-wrap:break-word}
   .hero-txt p{color:#CFCBC3;font-size:clamp(11px,1.15vw,16px);line-height:1.5;margin-bottom:1em}
   .hero-txt .btn{font-size:clamp(11px,1vw,14px);padding:.7em 1.2em}
   .hero-dots{position:absolute;z-index:3;bottom:clamp(10px,1.6vw,20px);left:50%;
@@ -114,7 +114,11 @@
   .hdot.active{background:var(--accent)}
   .hdot:hover{background:rgba(125,125,125,.9)}
   @media (max-width:640px){
-    .hero-txt{max-width:52%}
+    /* Auf dem Handy bleibt neben der Maschine wenig Platz. Der Untertitel
+       entfaellt, und die Ueberschrift wird kleiner - "CNC-Plasmaschneidtisch"
+       passt sonst in keine Spalte dieser Breite. */
+    .hero-txt{max-width:56%}
+    .hero-txt h2{font-size:clamp(13px,3.4vw,22px);letter-spacing:0}
     .hero-txt p{display:none}
   }
   .hero-cta{background:#0E1013;padding:0 0 clamp(20px,3vw,34px)}
@@ -129,7 +133,7 @@
   .hero .inner{position:relative;z-index:2;padding:66px 0}
   .eyebrow{display:flex;align-items:center;gap:16px;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.22em;color:var(--accent);font-size:15px;margin-bottom:24px}
   .eyebrow::before{content:"";width:52px;height:3px;background:var(--accent)}
-  .hero h1{font-family:'Anton';font-size:clamp(40px,6.2vw,82px);line-height:.94;text-transform:uppercase;max-width:15ch}
+  .hero h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(34px,5.2vw,68px);line-height:1.02;text-transform:uppercase;letter-spacing:.005em;max-width:15ch}
   .hero h1 .o{color:var(--accent)}
   .hero p.lead{margin-top:26px;font-size:clamp(16px,1.5vw,19px);color:#CFCBC3;max-width:56ch;line-height:1.6}
   .cta-row{display:flex;gap:14px;flex-wrap:wrap}
@@ -155,7 +159,7 @@
   /* Programm cards */
   .programm{background:var(--paper);color:var(--ink);padding:82px 0}
   .p-eyebrow{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.2em;color:var(--accent);font-size:15px;margin-bottom:20px}
-  .programm h2{font-family:'Anton';font-size:clamp(34px,5vw,60px);line-height:.98;max-width:16ch}
+  .programm h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(24px,4.6vw,52px);line-height:1.06;letter-spacing:.005em;max-width:16ch;overflow-wrap:break-word}
   .programm .sub{margin-top:20px;font-size:18px;color:#3A3A3A;max-width:62ch;line-height:1.55}
   .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#D8D8D3;margin-top:48px;border:1px solid #D8D8D3}
   .cat{background:var(--paper);padding:28px 24px 24px;cursor:pointer;position:relative;transition:.2s;display:flex;flex-direction:column;min-height:250px}
@@ -172,7 +176,7 @@
   /* Trust */
   .trust{background:var(--bg2);border-top:1px solid var(--line);padding:52px 0}
   .trust .row{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:22px;align-items:center}
-  .trust .lead h3{font-family:'Anton';font-size:28px;line-height:1}
+  .trust .lead h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:26px;line-height:1.12}
   .trust .lead p{color:var(--muted);margin-top:10px;font-size:14px;line-height:1.6;max-width:44ch}
   .trust .dl{border:1px solid var(--line);border-radius:6px;padding:20px;cursor:pointer;transition:.2s}
   .trust .dl:hover{border-color:var(--accent);background:var(--panel)}
@@ -185,7 +189,7 @@
   .crumbs{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:14px;flex-wrap:wrap}
   .crumbs span.sep{color:var(--muted-2)}
   .crumbs a{cursor:pointer;color:var(--accent)}
-  .cbar h1{font-family:'Anton';font-size:clamp(30px,4.4vw,52px);text-transform:uppercase;line-height:1}
+  .cbar h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(21px,5.4vw,46px);text-transform:uppercase;letter-spacing:.01em;line-height:1.08;overflow-wrap:break-word}
   .cbar .desc{color:var(--muted);margin-top:10px;max-width:60ch;font-size:15px;line-height:1.55}
   .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
   .chip{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.04em;font-size:14px;text-transform:uppercase;padding:9px 16px;border:1px solid var(--line);border-radius:40px;background:var(--panel);color:var(--muted);cursor:pointer;transition:.15s}
@@ -203,7 +207,7 @@
   .pcard .imgbox img{width:100%;height:100%;object-fit:contain;background:#fff}
   .pcard .vtag{position:absolute;top:12px;left:12px;max-width:calc(100% - 24px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.05em;padding:4px 9px;border-radius:3px;line-height:1.35}
   .pcard .body{padding:16px 16px 0;flex:1}
-  .pcard h3{font-family:'Bodoni Moda',serif;font-weight:700;font-size:19px;text-transform:uppercase;letter-spacing:.01em;line-height:1.18}
+  .pcard h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:19px;text-transform:uppercase;letter-spacing:.015em;line-height:1.18;overflow-wrap:break-word}
   .pcard p{color:var(--muted);font-size:13px;line-height:1.5;margin-top:6px}
   .pcard .spec{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
   .pcard .spec span{font-size:11px;background:var(--panel2);border:1px solid var(--line);border-radius:3px;padding:3px 8px;color:var(--muted)}
@@ -281,10 +285,10 @@
   .optlist .os{color:var(--muted);font-size:13.5px;line-height:1.5}
   .optnote{margin-top:14px;color:var(--muted);font-size:13px}
   .dinfo .kicker{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.14em;color:var(--accent);font-size:14px;text-transform:uppercase}
-  .dinfo h1{font-family:'Bodoni Moda',serif;font-weight:700;font-size:clamp(30px,4vw,50px);text-transform:uppercase;line-height:1.06;letter-spacing:.015em;margin:10px 0}
+  .dinfo h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(23px,4.4vw,47px);text-transform:uppercase;line-height:1.08;letter-spacing:.015em;margin:10px 0;overflow-wrap:break-word}
   .dinfo .lead{color:#4A453D;font-size:16px;line-height:1.6;margin-bottom:22px}
   .poa-box{display:flex;align-items:center;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:18px 20px;margin-bottom:22px}
-  .poa-box .p{font-family:'Anton';font-size:22px;text-transform:uppercase;color:var(--accent)}
+  .poa-box .p{font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;text-transform:uppercase;letter-spacing:.01em;color:var(--accent)}
   .poa-box .s{color:var(--muted);font-size:13px}
   .dactions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
   .spectable{border:1px solid var(--line);border-radius:8px;overflow:hidden}
@@ -373,7 +377,7 @@
   .fp{margin-bottom:28px;padding-bottom:26px;border-bottom:1px solid var(--line-soft)}
   .fp:last-of-type{border-bottom:0;padding-bottom:0}
   /* Geraetevariante ueber ihren Panels - MAHE gliedert die MMS so */
-  .fp-variant{font-family:'Anton';font-size:20px;text-transform:uppercase;letter-spacing:.01em;margin:30px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block}
+  .fp-variant{font-family:'DM Serif Display',serif;font-weight:400;font-size:20px;text-transform:uppercase;letter-spacing:.02em;margin:30px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--accent);display:inline-block}
   .fp-variant:first-of-type{margin-top:4px}
   .fp-title{font-family:'Barlow Condensed';font-weight:700;font-size:22px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:16px}
   .fp-body{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:start}
@@ -394,7 +398,7 @@
   .acccard .im img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
   .acccard .bd{padding:12px 14px}
   .acccard .bd .vt{font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
-  .acccard .bd h3{font-family:'Bodoni Moda',serif;font-weight:700;font-size:16px;text-transform:uppercase;letter-spacing:.01em;margin:3px 0 2px;line-height:1.18}
+  .acccard .bd h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:16px;text-transform:uppercase;letter-spacing:.015em;margin:3px 0 2px;line-height:1.18}
   .acccard .bd p{color:var(--muted);font-size:12px}
   .noacc{color:var(--muted);font-size:14px}
 
@@ -411,7 +415,7 @@
   .cart{position:fixed;top:0;right:0;height:100%;width:min(440px,96vw);background:var(--bg2);z-index:80;transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column;box-shadow:-30px 0 60px rgba(0,0,0,.5)}
   .cart.open{transform:none}
   .cart .top{display:flex;align-items:center;justify-content:space-between;padding:22px 24px;border-bottom:1px solid var(--line)}
-  .cart .top h3{font-family:'Anton';font-size:22px;text-transform:uppercase}
+  .cart .top h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;text-transform:uppercase;letter-spacing:.01em}
   .cart .x{background:none;border:0;color:var(--white);font-size:24px;cursor:pointer}
   .cart .x:hover{color:var(--accent)}
   .cart .items{flex:1;overflow-y:auto;padding:8px 0}
@@ -419,7 +423,7 @@
   .citem .th{width:56px;height:56px;background:#fff;border-radius:4px;flex:0 0 auto;display:grid;place-items:center;padding:5px}
   .citem .th img{width:100%;height:100%;object-fit:contain}
   .citem .n{flex:1}
-  .citem .n b{font-family:'Bodoni Moda',serif;font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:.01em}
+  .citem .n b{font-family:'DM Serif Display',serif;font-weight:400;font-size:15px;text-transform:uppercase;letter-spacing:.015em}
   .citem .n span{display:block;color:var(--muted);font-size:12px}
   .citem .rm{background:none;border:0;color:var(--muted-2);cursor:pointer;font-size:18px}
   .citem .rm:hover{color:var(--accent)}
@@ -531,14 +535,14 @@
 
   /* --------------------------------------------------------- Startseite */
   .intro{background:var(--paper);padding:64px 0 10px}
-  .intro h1{font-family:'Anton';font-size:clamp(30px,4.6vw,54px);text-transform:uppercase;line-height:1;max-width:18ch}
+  .intro h1{font-family:'DM Serif Display',serif;font-weight:400;font-size:clamp(22px,5.2vw,48px);text-transform:uppercase;letter-spacing:.01em;line-height:1.08;max-width:18ch;overflow-wrap:break-word}
   .intro .lead{margin-top:18px;font-size:18px;line-height:1.6;color:#3A3A3A;max-width:64ch}
   .usps{background:var(--paper);padding:34px 0 66px}
   .usprow{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
   .usp{border-top:3px solid var(--accent);padding-top:16px}
   .usp h2{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.02em}
   .usp p{color:var(--muted);font-size:14px;line-height:1.6;margin-top:7px}
-  .trust .lead h2{font-family:'Anton';font-size:28px;line-height:1}
+  .trust .lead h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:26px;line-height:1.12}
   .trust .dl h3{font-family:'Barlow Condensed';font-weight:700;font-size:19px;text-transform:uppercase;margin:8px 0 6px}
   .trust .dl{display:block}
   .faqsec{background:var(--bg);padding:64px 0}
@@ -578,7 +582,7 @@
   .backlink a{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);font-size:15px}
 
   /* -------------------------------------------------------- Anfrageliste */
-  .cart .top .drawer-title{font-family:'Anton';font-size:22px;text-transform:uppercase}
+  .cart .top .drawer-title{font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;text-transform:uppercase;letter-spacing:.01em}
   .citem .n .qty{display:inline-flex;align-items:center;gap:8px;margin-top:6px}
   .citem .n .qty button{width:24px;height:24px;border:1px solid var(--line);background:var(--panel);border-radius:4px;cursor:pointer;color:var(--white);font-size:14px;line-height:1}
   .citem .n .qty button:hover{border-color:var(--accent);color:var(--accent)}

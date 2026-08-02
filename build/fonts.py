@@ -16,8 +16,8 @@ Es werden nur die Subsets `latin` und `latin-ext` geladen; Kyrillisch, Griechisc
 und Vietnamesisch braucht eine deutsch/französisch/italienische Website nicht.
 
 Aufruf:  python3 build/fonts.py
-Lizenz:  Anton, Barlow Condensed, Bodoni Moda und Inter stehen unter der
-         SIL Open Font License 1.1 und dürfen selbst gehostet werden.
+Lizenz:  Anton, Barlow Condensed, DM Serif Display und Inter stehen unter
+         der SIL Open Font License 1.1 und dürfen selbst gehostet werden.
 """
 
 import pathlib
@@ -28,14 +28,15 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
 
-# Inter und Bodoni Moda werden als variable Schrift angefordert (wght@400..700
-# statt einzelner Schnitte): eine Datei deckt alle Hilfsgewichte ab, statt vier
-# nahezu gleich grosse Dateien zu laden. Anton hat nur einen Schnitt, Barlow
-# Condensed bietet Google nicht als variable Schrift an – beide bleiben statisch.
+# Inter wird als variable Schrift angefordert (wght@400..700 statt einzelner
+# Schnitte): eine Datei deckt alle Hilfsgewichte ab, statt vier nahezu gleich
+# grosse Dateien zu laden. Anton und DM Serif Display haben nur einen Schnitt,
+# Barlow Condensed bietet Google nicht als variable Schrift an – die bleiben
+# statisch.
 GOOGLE_CSS = ("https://fonts.googleapis.com/css2"
               "?family=Anton"
               "&family=Barlow+Condensed:wght@600;700"
-              "&family=Bodoni+Moda:opsz,wght@6..96,600..700"
+              "&family=DM+Serif+Display"
               "&family=Inter:wght@400..700"
               "&display=swap")
 

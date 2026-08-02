@@ -193,6 +193,51 @@
     });
   }
 
+  /* ============================== Galerie =============================== */
+  /* Hauptbild mit Miniaturen darunter. Der Zustand steht in den Klassen, nicht
+     in einer Variablen - so bleibt die Seite auch dann richtig, wenn sie aus
+     dem Cache mit bereits gesetzter Auswahl zurueckkommt. */
+  $$('[data-gal]').forEach(function (gal) {
+    var slides = $$('.galslide', gal);
+    var thumbs = $$('.galthumb', gal);
+    if (slides.length < 2) return;
+
+    function zeige(n) {
+      n = (n + slides.length) % slides.length;
+      slides.forEach(function (s, i) { s.classList.toggle('active', i === n); });
+      thumbs.forEach(function (b, i) {
+        var on = i === n;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      // Erst beim Anzeigen laden - das Hauptbild bleibt das einzige, das der
+      // Browser sofort holt.
+      var img = slides[n].querySelector('img');
+      if (img && img.getAttribute('loading') === 'lazy') { img.removeAttribute('loading'); }
+    }
+    function aktiv() {
+      for (var i = 0; i < slides.length; i++) {
+        if (slides[i].classList.contains('active')) return i;
+      }
+      return 0;
+    }
+
+    gal.addEventListener('click', function (ev) {
+      var t = ev.target.closest('.galthumb');
+      if (t) { zeige(parseInt(t.getAttribute('data-i'), 10) || 0); return; }
+      var nav = ev.target.closest('.galnav');
+      if (nav) { zeige(aktiv() + (parseInt(nav.getAttribute('data-step'), 10) || 1)); }
+    });
+
+    gal.addEventListener('keydown', function (ev) {
+      if (ev.key !== 'ArrowRight' && ev.key !== 'ArrowLeft') return;
+      if (!ev.target.closest('.galthumb')) return;
+      ev.preventDefault();
+      var n = (aktiv() + (ev.key === 'ArrowRight' ? 1 : -1) + slides.length) % slides.length;
+      zeige(n); thumbs[n].focus();
+    });
+  });
+
   /* ================================ Suche =============================== */
   /* Normalisierung muss exakt build/build.py::norm entsprechen. */
   function norm(s) {

@@ -3,67 +3,139 @@
  "mpt-3001": {
   "src": "MAHE Preisliste 2026 V11, S. 67 – Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
   "de": [
-   {"t": "Filteranlage AT 1000", "s": "ohne Anschlusskupplungen"},
-   {"t": "Schutzhaube für Computer und Konsole", "s": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"},
-   {"t": "Wasserpflegemittel MWPF 100", "s": "1 kg – für das Wasserbett des Schneidtischs"},
-   {"t": "Verschleissteilebox PSAB 125", "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"},
-   {"t": "Verschleissteilebox PSAB 180", "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"},
-   {"t": "Inbetriebnahme und Einweisung vor Ort", "s": "Aufbau, Einrichten und Einweisung an Ihrer Anlage"},
-   {"t": "Einweisung online", "s": "stundenweise, für Nachschulungen und Fragen im laufenden Betrieb"},
-   {"t": "Anlieferung", "s": "Transport und Abladen nach Absprache"}
+   {
+    "t": "Filteranlage AT 1000",
+    "s": "ohne Anschlusskupplungen"
+   },
+   {
+    "t": "Schutzhaube für Computer und Konsole",
+    "s": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
+   },
+   {
+    "t": "Wasserpflegemittel MWPF 100",
+    "s": "1 kg – für das Wasserbett des Schneidtischs"
+   },
+   {
+    "t": "Verschleissteilebox PSAB 125",
+    "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
+   },
+   {
+    "t": "Verschleissteilebox PSAB 180",
+    "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+   }
   ],
   "fr": [
-   {"t": "Installation de filtration AT 1000", "s": "sans raccords"},
-   {"t": "Capot de protection pour l'ordinateur et la console", "s": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"},
-   {"t": "Produit d'entretien de l'eau MWPF 100", "s": "1 kg – pour le bac à eau de la table de découpe"},
-   {"t": "Coffret de pièces d'usure PSAB 125", "s": "pièces d'usure de rechange pour la torche plasma PSAB 125"},
-   {"t": "Coffret de pièces d'usure PSAB 180", "s": "pièces d'usure de rechange pour la torche plasma PSAB 180"},
-   {"t": "Mise en service et instruction sur site", "s": "montage, réglage et instruction sur votre installation"},
-   {"t": "Instruction en ligne", "s": "à l'heure, pour les formations complémentaires et les questions en cours d'exploitation"},
-   {"t": "Livraison", "s": "transport et déchargement selon accord"}
+   {
+    "t": "Installation de filtration AT 1000",
+    "s": "sans raccords"
+   },
+   {
+    "t": "Capot de protection pour l'ordinateur et la console",
+    "s": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
+   },
+   {
+    "t": "Produit d'entretien de l'eau MWPF 100",
+    "s": "1 kg – pour le bac à eau de la table de découpe"
+   },
+   {
+    "t": "Coffret de pièces d'usure PSAB 125",
+    "s": "pièces d'usure de rechange pour la torche plasma PSAB 125"
+   },
+   {
+    "t": "Coffret de pièces d'usure PSAB 180",
+    "s": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+   }
   ],
   "it": [
-   {"t": "Impianto di filtrazione AT 1000", "s": "senza raccordi"},
-   {"t": "Cappa di protezione per computer e console", "s": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"},
-   {"t": "Additivo per l'acqua MWPF 100", "s": "1 kg – per la vasca ad acqua del tavolo di taglio"},
-   {"t": "Box ricambi di usura PSAB 125", "s": "ricambi di usura per la torcia al plasma PSAB 125"},
-   {"t": "Box ricambi di usura PSAB 180", "s": "ricambi di usura per la torcia al plasma PSAB 180"},
-   {"t": "Messa in servizio e istruzione in loco", "s": "montaggio, regolazione e istruzione sul Vostro impianto"},
-   {"t": "Istruzione online", "s": "a ore, per formazioni successive e domande durante l'esercizio"},
-   {"t": "Consegna", "s": "trasporto e scarico secondo accordi"}
+   {
+    "t": "Impianto di filtrazione AT 1000",
+    "s": "senza raccordi"
+   },
+   {
+    "t": "Cappa di protezione per computer e console",
+    "s": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
+   },
+   {
+    "t": "Additivo per l'acqua MWPF 100",
+    "s": "1 kg – per la vasca ad acqua del tavolo di taglio"
+   },
+   {
+    "t": "Box ricambi di usura PSAB 125",
+    "s": "ricambi di usura per la torcia al plasma PSAB 125"
+   },
+   {
+    "t": "Box ricambi di usura PSAB 180",
+    "s": "ricambi di usura per la torcia al plasma PSAB 180"
+   }
   ]
  },
  "mpt-2501": {
   "src": "MAHE Preisliste 2026 V11, S. 67 – Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
   "de": [
-   {"t": "Filteranlage AT 1000", "s": "ohne Anschlusskupplungen"},
-   {"t": "Schutzhaube für Computer und Konsole", "s": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"},
-   {"t": "Wasserpflegemittel MWPF 100", "s": "1 kg – für das Wasserbett des Schneidtischs"},
-   {"t": "Verschleissteilebox PSAB 125", "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"},
-   {"t": "Verschleissteilebox PSAB 180", "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"},
-   {"t": "Inbetriebnahme und Einweisung vor Ort", "s": "Aufbau, Einrichten und Einweisung an Ihrer Anlage"},
-   {"t": "Einweisung online", "s": "stundenweise, für Nachschulungen und Fragen im laufenden Betrieb"},
-   {"t": "Anlieferung", "s": "Transport und Abladen nach Absprache"}
+   {
+    "t": "Filteranlage AT 1000",
+    "s": "ohne Anschlusskupplungen"
+   },
+   {
+    "t": "Schutzhaube für Computer und Konsole",
+    "s": "schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel"
+   },
+   {
+    "t": "Wasserpflegemittel MWPF 100",
+    "s": "1 kg – für das Wasserbett des Schneidtischs"
+   },
+   {
+    "t": "Verschleissteilebox PSAB 125",
+    "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 125"
+   },
+   {
+    "t": "Verschleissteilebox PSAB 180",
+    "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+   }
   ],
   "fr": [
-   {"t": "Installation de filtration AT 1000", "s": "sans raccords"},
-   {"t": "Capot de protection pour l'ordinateur et la console", "s": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"},
-   {"t": "Produit d'entretien de l'eau MWPF 100", "s": "1 kg – pour le bac à eau de la table de découpe"},
-   {"t": "Coffret de pièces d'usure PSAB 125", "s": "pièces d'usure de rechange pour la torche plasma PSAB 125"},
-   {"t": "Coffret de pièces d'usure PSAB 180", "s": "pièces d'usure de rechange pour la torche plasma PSAB 180"},
-   {"t": "Mise en service et instruction sur site", "s": "montage, réglage et instruction sur votre installation"},
-   {"t": "Instruction en ligne", "s": "à l'heure, pour les formations complémentaires et les questions en cours d'exploitation"},
-   {"t": "Livraison", "s": "transport et déchargement selon accord"}
+   {
+    "t": "Installation de filtration AT 1000",
+    "s": "sans raccords"
+   },
+   {
+    "t": "Capot de protection pour l'ordinateur et la console",
+    "s": "protège le poste de commande et l'écran de la poussière et des particules d'abrasion"
+   },
+   {
+    "t": "Produit d'entretien de l'eau MWPF 100",
+    "s": "1 kg – pour le bac à eau de la table de découpe"
+   },
+   {
+    "t": "Coffret de pièces d'usure PSAB 125",
+    "s": "pièces d'usure de rechange pour la torche plasma PSAB 125"
+   },
+   {
+    "t": "Coffret de pièces d'usure PSAB 180",
+    "s": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+   }
   ],
   "it": [
-   {"t": "Impianto di filtrazione AT 1000", "s": "senza raccordi"},
-   {"t": "Cappa di protezione per computer e console", "s": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"},
-   {"t": "Additivo per l'acqua MWPF 100", "s": "1 kg – per la vasca ad acqua del tavolo di taglio"},
-   {"t": "Box ricambi di usura PSAB 125", "s": "ricambi di usura per la torcia al plasma PSAB 125"},
-   {"t": "Box ricambi di usura PSAB 180", "s": "ricambi di usura per la torcia al plasma PSAB 180"},
-   {"t": "Messa in servizio e istruzione in loco", "s": "montaggio, regolazione e istruzione sul Vostro impianto"},
-   {"t": "Istruzione online", "s": "a ore, per formazioni successive e domande durante l'esercizio"},
-   {"t": "Consegna", "s": "trasporto e scarico secondo accordi"}
+   {
+    "t": "Impianto di filtrazione AT 1000",
+    "s": "senza raccordi"
+   },
+   {
+    "t": "Cappa di protezione per computer e console",
+    "s": "protegge la postazione di comando e lo schermo da polvere e particelle di molatura"
+   },
+   {
+    "t": "Additivo per l'acqua MWPF 100",
+    "s": "1 kg – per la vasca ad acqua del tavolo di taglio"
+   },
+   {
+    "t": "Box ricambi di usura PSAB 125",
+    "s": "ricambi di usura per la torcia al plasma PSAB 125"
+   },
+   {
+    "t": "Box ricambi di usura PSAB 180",
+    "s": "ricambi di usura per la torcia al plasma PSAB 180"
+   }
   ]
  }
 }

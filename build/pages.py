@@ -184,24 +184,61 @@ def spec_html(lang, p):
     return "".join(out)
 
 
-def gal_html(lang, p):
-    """Zusatzbilder unter dem Hauptbild.
+def media_html(lang, p, nm):
+    """Hauptbild mit Miniaturen darunter.
 
-    Die Bildunterschrift ist zugleich der Alt-Text: ein Bild, das erklaert
-    werden muss, braucht die Erklaerung auch fuer Screenreader und fuer die
-    Bildersuche.
+    Ein Klick auf eine Miniatur zeigt das Bild gross - so, wie es Kundschaft von
+    jedem Shop kennt. Vorher standen die Zusatzbilder untereinander; das drueckte
+    die technischen Daten weit nach unten und niemand sah das Detail gross.
+
+    Ohne JavaScript bleibt alles lesbar: dann sind schlicht alle Bilder
+    untereinander sichtbar (siehe noscript-Regel in der Seite).
     """
-    gal = C.galleryOf(lang, p)
-    if not gal:
-        return ""
-    items = ""
-    for g in gal:
-        items += (f'<figure class="galitem">'
-                  + R.img_tag(g["img"], "(max-width:900px) 92vw, 520px",
-                              cls="galimg", alt=g["cap"], width=560)
-                  + (f'<figcaption>{e(g["cap"])}</figcaption>' if g["cap"] else "")
-                  + "</figure>")
-    return f'<div class="dgal">{items}</div>'
+    haupt = {"img": p["img"],
+             "cap": "",
+             "alt": f"{C.BRAND} {nm} – {C.pDesc(lang, p)}"}
+    bilder = [haupt]
+    for g in C.galleryOf(lang, p):
+        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["cap"]})
+
+    vtag = f'<span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>'
+    if len(bilder) == 1:
+        return ('<div class="dimg">' + vtag
+                + R.img_tag(p["img"], "(max-width:900px) 92vw, 520px",
+                            alt=haupt["alt"], eager=True, width=560)
+                + "</div>")
+
+    slides = ""
+    for i, b in enumerate(bilder):
+        slides += (f'<figure class="galslide{" active" if i == 0 else ""}" '
+                   f'id="gs-{e(p["id"])}-{i}">'
+                   + R.img_tag(b["img"], "(max-width:900px) 92vw, 520px",
+                               alt=b["alt"], eager=(i == 0), width=560)
+                   + (f'<figcaption>{e(b["cap"])}</figcaption>' if b["cap"] else "")
+                   + "</figure>")
+
+    thumbs = ""
+    for i, b in enumerate(bilder):
+        # Der Miniaturstreifen ist eine Auswahl, keine Navigation: deshalb
+        # tablist/tab und nicht Links.
+        thumbs += (f'<button class="galthumb{" active" if i == 0 else ""}" type="button" '
+                   f'role="tab" aria-selected="{"true" if i == 0 else "false"}" '
+                   f'aria-controls="gs-{e(p["id"])}-{i}" data-i="{i}" '
+                   f'title="{e(b["alt"][:110])}">'
+                   + R.img_tag(b["img"], "84px", alt="", width=84)
+                   + "</button>")
+
+    return (f'<div class="dmedia" data-gal>'
+            f'<div class="dimg">{vtag}'
+            f'<button class="galnav prev" type="button" data-step="-1" '
+            f'aria-label="{e(C.t(lang, "gal_prev"))}">‹</button>'
+            f'<div class="galstage">{slides}</div>'
+            f'<button class="galnav next" type="button" data-step="1" '
+            f'aria-label="{e(C.t(lang, "gal_next"))}">›</button>'
+            f'</div>'
+            f'<div class="galthumbs" role="tablist" '
+            f'aria-label="{e(C.t(lang, "gal_label"))}">{thumbs}</div>'
+            f'</div>')
 
 
 def opt_html(lang, p):
@@ -455,11 +492,7 @@ def page_product(lang, p):
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
   <div class="dgrid">
-    <div class="dcol">
-      <div class="dimg"><span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>
-      {R.img_tag(p['img'], "(max-width:900px) 92vw, 520px", alt=f"{C.BRAND} {nm} – {C.pDesc(lang, p)}", eager=True, width=560)}</div>
-      {gal_html(lang, p)}
-    </div>
+    {media_html(lang, p, nm)}
     <div class="dinfo">
       <p class="kicker">{e(C.catT(lang, c))} · {C.BRAND}</p>
       <h1>{e(p['name'])}</h1>
@@ -488,7 +521,9 @@ def page_product(lang, p):
     <div class="tabbar" role="tablist" aria-label="{e(p['name'])}">{tabbar}</div>
     {panehtml}
   </div>
-  <noscript><style>.tabpane{{display:block!important}}.tabbar{{display:none}}</style></noscript>
+  <noscript><style>.tabpane{{display:block!important}}.tabbar{{display:none}}
+    .galslide{{display:grid!important;place-items:center;gap:12px;margin-bottom:18px}}
+    .dimg{{aspect-ratio:auto}}.galnav,.galthumbs{{display:none}}</style></noscript>
 
   <p class="backlink"><a href="{e(C.u_cat(lang, p['cat']))}">← {e(C.t(lang,'back_to_cat'))}</a></p>
 </div></div>

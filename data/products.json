@@ -15491,7 +15491,7 @@
      "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
      "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
      "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Inbetriebnahme und Einweisung vor Ort oder online"
+     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
     ],
     "fr": [
      "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
@@ -15506,7 +15506,7 @@
      "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
      "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
      "Console de commande avec ordinateur Windows et écran à la table",
-     "Mise en service et instruction sur site ou en ligne"
+     "Mise en service et instruction par VES-TECH Swiss"
     ],
     "it": [
      "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
@@ -15521,7 +15521,7 @@
      "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
      "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
      "Console di comando con computer Windows e schermo al tavolo",
-     "Messa in servizio e istruzione in loco o online"
+     "Messa in servizio e istruzione a cura di VES-TECH Swiss"
     ]
    },
    "options": {
@@ -15545,18 +15545,6 @@
      {
       "name": "Verschleissteilebox PSAB 180",
       "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
-     },
-     {
-      "name": "Inbetriebnahme und Einweisung vor Ort",
-      "note": "Aufbau, Einrichten und Einweisung an Ihrer Anlage"
-     },
-     {
-      "name": "Einweisung online",
-      "note": "stundenweise, für Nachschulungen und Fragen im laufenden Betrieb"
-     },
-     {
-      "name": "Anlieferung",
-      "note": "Transport und Abladen nach Absprache"
      }
     ],
     "fr": [
@@ -15579,18 +15567,6 @@
      {
       "name": "Coffret de pièces d'usure PSAB 180",
       "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
-     },
-     {
-      "name": "Mise en service et instruction sur site",
-      "note": "montage, réglage et instruction sur votre installation"
-     },
-     {
-      "name": "Instruction en ligne",
-      "note": "à l'heure, pour les formations complémentaires et les questions en cours d'exploitation"
-     },
-     {
-      "name": "Livraison",
-      "note": "transport et déchargement selon accord"
      }
     ],
     "it": [
@@ -15613,18 +15589,6 @@
      {
       "name": "Box ricambi di usura PSAB 180",
       "note": "ricambi di usura per la torcia al plasma PSAB 180"
-     },
-     {
-      "name": "Messa in servizio e istruzione in loco",
-      "note": "montaggio, regolazione e istruzione sul Vostro impianto"
-     },
-     {
-      "name": "Istruzione online",
-      "note": "a ore, per formazioni successive e domande durante l'esercizio"
-     },
-     {
-      "name": "Consegna",
-      "note": "trasporto e scarico secondo accordi"
      }
     ]
    },
@@ -15719,7 +15683,7 @@
      "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
      "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
      "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Inbetriebnahme und Einweisung vor Ort oder online"
+     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
     ],
     "fr": [
      "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
@@ -15734,7 +15698,7 @@
      "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
      "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
      "Console de commande avec ordinateur Windows et écran à la table",
-     "Mise en service et instruction sur site ou en ligne"
+     "Mise en service et instruction par VES-TECH Swiss"
     ],
     "it": [
      "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
@@ -15749,7 +15713,7 @@
      "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
      "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
      "Console di comando con computer Windows e schermo al tavolo",
-     "Messa in servizio e istruzione in loco o online"
+     "Messa in servizio e istruzione a cura di VES-TECH Swiss"
     ]
    },
    "options": {
@@ -15773,18 +15737,6 @@
      {
       "name": "Verschleissteilebox PSAB 180",
       "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
-     },
-     {
-      "name": "Inbetriebnahme und Einweisung vor Ort",
-      "note": "Aufbau, Einrichten und Einweisung an Ihrer Anlage"
-     },
-     {
-      "name": "Einweisung online",
-      "note": "stundenweise, für Nachschulungen und Fragen im laufenden Betrieb"
-     },
-     {
-      "name": "Anlieferung",
-      "note": "Transport und Abladen nach Absprache"
      }
     ],
     "fr": [
@@ -15807,18 +15759,6 @@
      {
       "name": "Coffret de pièces d'usure PSAB 180",
       "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
-     },
-     {
-      "name": "Mise en service et instruction sur site",
-      "note": "montage, réglage et instruction sur votre installation"
-     },
-     {
-      "name": "Instruction en ligne",
-      "note": "à l'heure, pour les formations complémentaires et les questions en cours d'exploitation"
-     },
-     {
-      "name": "Livraison",
-      "note": "transport et déchargement selon accord"
      }
     ],
     "it": [
@@ -15841,18 +15781,6 @@
      {
       "name": "Box ricambi di usura PSAB 180",
       "note": "ricambi di usura per la torcia al plasma PSAB 180"
-     },
-     {
-      "name": "Messa in servizio e istruzione in loco",
-      "note": "montaggio, regolazione e istruzione sul Vostro impianto"
-     },
-     {
-      "name": "Istruzione online",
-      "note": "a ore, per formazioni successive e domande durante l'esercizio"
-     },
-     {
-      "name": "Consegna",
-      "note": "trasporto e scarico secondo accordi"
      }
     ]
    },

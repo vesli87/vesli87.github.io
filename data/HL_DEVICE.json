@@ -871,7 +871,7 @@
    "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
    "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
    "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-   "Inbetriebnahme und Einweisung vor Ort oder online"
+   "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
   ],
   "fr": [
    "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
@@ -886,7 +886,7 @@
    "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
    "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
    "Console de commande avec ordinateur Windows et écran à la table",
-   "Mise en service et instruction sur site ou en ligne"
+   "Mise en service et instruction par VES-TECH Swiss"
   ],
   "it": [
    "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
@@ -901,7 +901,7 @@
    "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
    "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
    "Console di comando con computer Windows e schermo al tavolo",
-   "Messa in servizio e istruzione in loco o online"
+   "Messa in servizio e istruzione a cura di VES-TECH Swiss"
   ],
   "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 3001 - 3015, Set-Nrn. 1721.300.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE."
  },
@@ -919,7 +919,7 @@
    "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
    "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
    "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-   "Inbetriebnahme und Einweisung vor Ort oder online"
+   "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
   ],
   "fr": [
    "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
@@ -934,7 +934,7 @@
    "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
    "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
    "Console de commande avec ordinateur Windows et écran à la table",
-   "Mise en service et instruction sur site ou en ligne"
+   "Mise en service et instruction par VES-TECH Swiss"
   ],
   "it": [
    "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
@@ -949,7 +949,7 @@
    "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
    "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
    "Console di comando con computer Windows e schermo al tavolo",
-   "Messa in servizio e istruzione in loco o online"
+   "Messa in servizio e istruzione a cura di VES-TECH Swiss"
   ],
   "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE."
  }

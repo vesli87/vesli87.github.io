@@ -182,14 +182,27 @@
      klein und scharf als gross und verwaschen. */
   .dimg img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
   .dimg .vtag{position:absolute;top:16px;left:16px;max-width:calc(100% - 32px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.06em;padding:5px 11px;border-radius:3px;line-height:1.35}
-  /* Zusatzbilder unter dem Hauptbild: eine Bedienoberfläche oder ein
-     Detailfoto trägt oft mehr zur Kaufentscheidung bei als das Gerätefoto.
-     Sie stehen deshalb gleichwertig darunter, nicht als Briefmarken daneben. */
-  .dcol{display:grid;gap:18px}
-  .dgal{display:grid;gap:18px}
-  .galitem{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px}
-  .galitem .galimg{display:block;width:100%;height:auto;border-radius:6px}
-  .galitem figcaption{margin-top:10px;color:var(--muted);font-size:13px;line-height:1.5}
+  /* Bildbereich: ein grosses Bild, darunter der Miniaturstreifen. Ein Klick auf
+     eine Miniatur tauscht das grosse Bild – dieselbe Bedienung wie in jedem
+     Shop, und ohne JavaScript stehen einfach alle Bilder untereinander. */
+  .dmedia{display:grid;gap:14px}
+  .galstage{width:100%;display:grid;place-items:center}
+  .galslide{display:none;margin:0;width:100%}
+  .galslide.active{display:grid;place-items:center;gap:12px}
+  .galslide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
+  .galslide figcaption{color:var(--muted);font-size:12.5px;line-height:1.5;text-align:left;width:100%}
+  .galnav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;
+    border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);
+    font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center;padding:0}
+  .galnav:hover{background:#fff;border-color:var(--accent);color:var(--accent)}
+  .galnav.prev{left:10px}
+  .galnav.next{right:10px}
+  .galthumbs{display:flex;flex-wrap:wrap;gap:10px}
+  .galthumb{width:84px;height:84px;padding:6px;background:#fff;border:1px solid var(--line);
+    border-radius:8px;cursor:pointer;display:grid;place-items:center;overflow:hidden}
+  .galthumb img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+  .galthumb.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+  .galthumb:hover{border-color:var(--accent)}
   /* Optionen: Bezeichnung und Zusatz getrennt, damit die Liste beim Überfliegen
      lesbar bleibt. Preise stehen hier nie – die klärt die Anfrage. */
   .opth{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:18px;margin-bottom:14px}

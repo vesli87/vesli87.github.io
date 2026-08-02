@@ -44,6 +44,13 @@ HERO_W, HERO_H = 1536, 1024
 HERO_PRELOAD = (f'<link rel="preload" as="image" href="{HERO_SRC}" '
                 f'imagesrcset="{HERO_SRCSET}" imagesizes="100vw" fetchpriority="high">')
 
+# Zweite Herofolie: der Plasmaschneidtisch, freigestellt auf demselben Dunkel
+# wie das Band. Sie wird NICHT vorgeladen - das erste Bild bleibt das LCP-
+# Element, die zweite Folie holt der Browser erst, wenn sie an die Reihe kommt.
+HERO2_SRCSET = ("/assets/img/hero-mpt-640.webp 640w, /assets/img/hero-mpt-1000.webp 1000w, "
+                "/assets/img/hero-mpt-1536.webp 1536w")
+HERO2_SRC = "/assets/img/hero-mpt-1536.webp"
+
 CSS_URL = _ver("/assets/css/site.css")
 JS_URL = _ver("/assets/js/app.js")
 

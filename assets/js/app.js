@@ -193,6 +193,53 @@
     });
   }
 
+  /* =============================== Hero ================================= */
+  /* Wechselbild alle 5 Sekunden. Drei Dinge, die ein Karussell sonst falsch
+     macht: Es laeuft weiter, waehrend jemand liest (deshalb Pause bei Hover und
+     Tastaturfokus), es laeuft im Hintergrundtab weiter (deshalb der
+     visibilitychange-Handler), und es ignoriert Menschen, die Bewegung
+     ausdruecklich abbestellt haben (deshalb prefers-reduced-motion). */
+  (function () {
+    var hero = $('[data-hero]');
+    if (!hero) return;
+    var slides = $$('.hero-slide', hero);
+    var dots = $$('.hdot', hero);
+    if (slides.length < 2) return;
+
+    var ruhig = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var i = 0, timer = null, INTERVALL = 5000;
+
+    function zeige(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+      dots.forEach(function (d, k) {
+        d.classList.toggle('active', k === i);
+        d.setAttribute('aria-selected', k === i ? 'true' : 'false');
+      });
+      var img = slides[i].querySelector('img');
+      if (img && img.getAttribute('loading') === 'lazy') img.removeAttribute('loading');
+    }
+    function start() {
+      if (ruhig || timer || document.hidden) return;
+      timer = setInterval(function () { zeige(i + 1); }, INTERVALL);
+    }
+    function stopp() { clearInterval(timer); timer = null; }
+
+    hero.addEventListener('click', function (ev) {
+      var d = ev.target.closest('.hdot');
+      if (!d) return;
+      stopp(); zeige(parseInt(d.getAttribute('data-i'), 10) || 0); start();
+    });
+    hero.addEventListener('mouseenter', stopp);
+    hero.addEventListener('mouseleave', start);
+    hero.addEventListener('focusin', stopp);
+    hero.addEventListener('focusout', start);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { stopp(); } else { start(); }
+    });
+    start();
+  }());
+
   /* ============================== Galerie =============================== */
   /* Hauptbild mit Miniaturen darunter. Der Zustand steht in den Klassen, nicht
      in einer Variablen - so bleibt die Seite auch dann richtig, wenn sie aus

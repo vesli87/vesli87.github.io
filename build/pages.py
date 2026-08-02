@@ -317,11 +317,34 @@ def page_home(lang):
         )
     faq6 = C.EX[lang]["faq"][:6]
     body = f"""
-<section class="hero">
-  <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
-       width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
-       alt="{e(C.BRAND)} HyperMIG SX – Schweissanlagen bei {e(C.t(lang,'site_name'))}"
-       onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
+<section class="hero" data-hero aria-roledescription="carousel"
+         aria-label="{e(C.t(lang,'site_name'))}">
+  <div class="hero-slide active" role="group" aria-roledescription="slide"
+       aria-label="{e(C.t(lang,'hero_slide', n=1, m=2))}">
+    <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
+         width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
+         alt="{e(C.BRAND)} HyperMIG SX – Schweissanlagen bei {e(C.t(lang,'site_name'))}"
+         onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
+  </div>
+  <div class="hero-slide" role="group" aria-roledescription="slide"
+       aria-label="{e(C.t(lang,'hero_slide', n=2, m=2))}">
+    <img class="hero-photo" src="{R.HERO2_SRC}" srcset="{R.HERO2_SRCSET}" sizes="100vw"
+         width="{R.HERO_W}" height="{R.HERO_H}" loading="lazy" decoding="async"
+         alt="{e(C.BRAND)} MPT – CNC-Plasmaschneidtisch mit Bedienkonsole"
+         onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero-mpt.jpg'">
+    <div class="hero-txt">
+      <span class="hk">{e(C.t(lang,'hero2_kicker'))}</span>
+      <h2>{e(C.t(lang,'hero2_title'))}</h2>
+      <p>{e(C.t(lang,'hero2_sub'))}</p>
+      <a class="btn pri" href="{e(C.u_prod(lang, C.BY_ID['mpt-3001']))}">{e(C.t(lang,'hero2_cta'))}</a>
+    </div>
+  </div>
+  <div class="hero-dots" role="tablist" aria-label="{e(C.t(lang,'gal_label'))}">
+    <button class="hdot active" type="button" role="tab" aria-selected="true" data-i="0"
+            aria-label="{e(C.t(lang,'hero_slide', n=1, m=2))}"></button>
+    <button class="hdot" type="button" role="tab" aria-selected="false" data-i="1"
+            aria-label="{e(C.t(lang,'hero_slide', n=2, m=2))}"></button>
+  </div>
 </section>
 <div class="hero-cta"><div class="wrap"><div class="cta-row">
   <a class="btn pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a>

@@ -107,7 +107,12 @@
   "opt_note": "Optionen und Zusatzleistungen werden mit der Anfrage konfiguriert.",
   "gal_prev": "Vorheriges Bild",
   "gal_next": "Nächstes Bild",
-  "gal_label": "Weitere Bilder"
+  "gal_label": "Weitere Bilder",
+  "hero2_kicker": "Neu im Programm",
+  "hero2_title": "MAHE MPT — CNC-Plasmaschneidtisch",
+  "hero2_sub": "3000 × 1500 mm oder 2500 × 1250 mm · Theta 060 / 120 / 180 HSC · MyPlasm CNC",
+  "hero2_cta": "Zum Schneidtisch",
+  "hero_slide": "Bild {n} von {m}"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -217,7 +222,12 @@
   "opt_note": "Les options et prestations complémentaires sont configurées avec la demande.",
   "gal_prev": "Image précédente",
   "gal_next": "Image suivante",
-  "gal_label": "Autres images"
+  "gal_label": "Autres images",
+  "hero2_kicker": "Nouveau dans la gamme",
+  "hero2_title": "MAHE MPT — table de découpe plasma CNC",
+  "hero2_sub": "3000 × 1500 mm ou 2500 × 1250 mm · Theta 060 / 120 / 180 HSC · MyPlasm CNC",
+  "hero2_cta": "Voir la table de découpe",
+  "hero_slide": "Image {n} sur {m}"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -327,6 +337,11 @@
   "opt_note": "Le opzioni e le prestazioni aggiuntive vengono configurate con la richiesta.",
   "gal_prev": "Immagine precedente",
   "gal_next": "Immagine successiva",
-  "gal_label": "Altre immagini"
+  "gal_label": "Altre immagini",
+  "hero2_kicker": "Nuovo in gamma",
+  "hero2_title": "MAHE MPT — tavolo di taglio al plasma CNC",
+  "hero2_sub": "3000 × 1500 mm o 2500 × 1250 mm · Theta 060 / 120 / 180 HSC · MyPlasm CNC",
+  "hero2_cta": "Vai al tavolo di taglio",
+  "hero_slide": "Immagine {n} di {m}"
  }
 }

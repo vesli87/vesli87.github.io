@@ -78,7 +78,21 @@ def front_html(lang, p):
     panels = C.fpAssign(p)
     hl = C.highlightsOf(lang, p)
     out = []
-    if hl:
+    varianten = C.hlVariants(lang, p)
+    if varianten:
+        # Der Hersteller stellt die Ausfuehrungen nebeneinander, jede mit Bild
+        # und eigener Liste. Genau so hier – eine gemeinsame Liste wuerde die
+        # schwaecheren Ausfuehrungen zu gut aussehen lassen.
+        out.append(f'<h3 class="besond">{e(C.t(lang, "highlights"))}</h3>'
+                   '<div class="varianten">')
+        for name, img, items in varianten:
+            bild = R.img_tag(img, "(max-width:760px) 90vw, 260px", cls="var-img",
+                             alt=f"{C.BRAND} {name}", width=260)
+            out.append(f'<div class="variante"><h4 class="var-t">{e(name)}</h4>{bild}'
+                       '<ul class="besond-list var-list">'
+                       + "".join(f"<li>{e(x)}</li>" for x in items) + "</ul></div>")
+        out.append("</div>")
+    elif hl:
         out.append('<div class="fp-highlights"><h3 class="besond">'
                    + e(C.t(lang, "highlights")) + '</h3><ul class="besond-list">'
                    + "".join(f"<li>{e(x)}</li>" for x in hl) + "</ul></div>")

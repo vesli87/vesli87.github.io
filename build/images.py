@@ -72,6 +72,9 @@ def collect_paths():
     """Alle eindeutigen Original-Bildpfade (Produkte + Frontpanels)."""
     s = {core.full_img(p["img"]) for p in core.P}
     s |= {core.full_img(f["img"]) for f in core.FP.values() if f.get("img")}
+    # Geraeteausfuehrungen bringen eigene Bilder mit (data/HL_VAR.json)
+    s |= {core.full_img(v["img"]) for lst in core.HL_VAR.values()
+          if isinstance(lst, list) for v in lst if v.get("img")}
     return sorted(s)
 
 

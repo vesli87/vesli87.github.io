@@ -131,7 +131,8 @@ FEAT      = _load("FEAT")        # 19 Verfahrens-Icons
 HL        = _load("HL")
 HL_CLEAN  = _load("HL_CLEAN")
 FP        = _load("FP")
-FPGRP     = _load("FPGRP")     # Panels nach Geraetevariante, wie bei MAHE
+FPGRP     = _load("FPGRP")
+HL_VAR    = _load("HL_VAR")    # Geraetevarianten mit eigenem Bild und eigener Liste     # Panels nach Geraetevariante, wie bei MAHE
 SYM       = _load("SYM")       # Symbole je Geraet, aus dem MAHE-Katalog 2023
 ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
@@ -396,6 +397,17 @@ def relatedAcc(p):
     MAHE-Geraeteseite ab.
     """
     return [i for i in ACC.get(p["id"], []) if i in BY_ID]
+
+
+def hlVariants(lang, p):
+    """Ausfuehrungen eines Geraets, jede mit Bild und eigenen Besonderheiten.
+
+    Die EcoMIG buendelt drei Maschinen. MAHE stellt sie nebeneinander, und die
+    Listen unterscheiden sich: die Analog kennt weder Synergiesteuerung noch
+    digitale Anzeigen, die 2000 Digital weder Intervallschweissen noch
+    Elektrode und WIG. Eine gemeinsame Liste waere fuer zwei der drei falsch.
+    """
+    return [(v["n"], v["img"], v.get(lang) or v["de"]) for v in HL_VAR.get(p["id"], [])]
 
 
 def highlightsOf(lang, p):

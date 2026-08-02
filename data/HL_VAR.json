@@ -1,0 +1,101 @@
+{
+ "_": "Geraetevarianten mit eigenem Bild und eigener Besonderheitenliste, woertlich von mahe-online.de. Nur fuer Produkte, die mehrere Ausfuehrungen buendeln und bei denen der Hersteller sie einzeln auffuehrt. Schweizer \"ss\" statt \"ß\" ist die einzige Aenderung.",
+ "ecomig": [
+  {
+   "n": "EcoMIG 3000 Digital",
+   "img": "2023/03/IMGP5826.png",
+   "de": [
+    "Spritzerfreier Lichtbogen",
+    "Synergiegesteuert",
+    "Digitale Anzeigen",
+    "Intervall Schweissen",
+    "4-Rollenantrieb",
+    "3 Meter Zuleitungskabel",
+    "D300 Spule",
+    "Elektroden Schweissen",
+    "WIG Lift Arc"
+   ],
+   "fr": [
+    "Arc sans projections",
+    "Commande synergique",
+    "Affichages numériques",
+    "Soudage par intervalles",
+    "Entraînement à 4 galets",
+    "Câble d’alimentation de 3 mètres",
+    "Bobine D300",
+    "Soudage à l’électrode",
+    "TIG Lift Arc"
+   ],
+   "it": [
+    "Arco senza spruzzi",
+    "Comando sinergico",
+    "Display digitali",
+    "Saldatura a intervalli",
+    "Trazione a 4 rulli",
+    "Cavo di alimentazione da 3 metri",
+    "Bobina D300",
+    "Saldatura ad elettrodo",
+    "TIG Lift Arc"
+   ]
+  },
+  {
+   "n": "EcoMIG 2000 Digital",
+   "img": "2023/06/IMG_1279-1.png",
+   "de": [
+    "Spritzerfreier Lichtbogen",
+    "Synergiegesteuert",
+    "Digitale Anzeigen",
+    "4-Rollenantrieb",
+    "3 Meter Zuleitungskabel",
+    "D300 Spule"
+   ],
+   "fr": [
+    "Arc sans projections",
+    "Commande synergique",
+    "Affichages numériques",
+    "Entraînement à 4 galets",
+    "Câble d’alimentation de 3 mètres",
+    "Bobine D300"
+   ],
+   "it": [
+    "Arco senza spruzzi",
+    "Comando sinergico",
+    "Display digitali",
+    "Trazione a 4 rulli",
+    "Cavo di alimentazione da 3 metri",
+    "Bobina D300"
+   ]
+  },
+  {
+   "n": "EcoMIG 3000 Analog",
+   "img": "2023/03/analog.png",
+   "de": [
+    "Spritzerfreier Lichtbogen",
+    "Intervall Schweissen",
+    "4-Rollenantrieb",
+    "3 Meter Zuleitungskabel",
+    "D300 Spule",
+    "Elektroden Schweissen",
+    "WIG Lift Arc"
+   ],
+   "fr": [
+    "Arc sans projections",
+    "Soudage par intervalles",
+    "Entraînement à 4 galets",
+    "Câble d’alimentation de 3 mètres",
+    "Bobine D300",
+    "Soudage à l’électrode",
+    "TIG Lift Arc"
+   ],
+   "it": [
+    "Arco senza spruzzi",
+    "Saldatura a intervalli",
+    "Trazione a 4 rulli",
+    "Cavo di alimentazione da 3 metri",
+    "Bobina D300",
+    "Saldatura ad elettrodo",
+    "TIG Lift Arc"
+   ]
+  }
+ ]
+}

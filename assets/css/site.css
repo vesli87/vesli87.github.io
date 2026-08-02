@@ -265,6 +265,12 @@
   .panelnote .txt h4{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:16px;margin-bottom:6px}
   .panelnote .txt p{color:var(--muted);font-size:13.5px;line-height:1.55;max-width:52ch}
 
+  /* Geraeteausfuehrungen nebeneinander, wie beim Hersteller */
+  .varianten{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;margin-bottom:8px}
+  .variante{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:18px 20px 20px}
+  .var-t{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.03em;font-size:17px;margin-bottom:12px}
+  .var-img{width:100%;height:auto;border-radius:6px;background:#fff;margin-bottom:14px}
+  .var-list{grid-template-columns:1fr !important}
   .fp-section{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:18px;margin:26px 0 14px;padding-top:20px;border-top:2px solid var(--line)}
   .fp{margin-bottom:28px;padding-bottom:26px;border-bottom:1px solid var(--line-soft)}
   .fp:last-of-type{border-bottom:0;padding-bottom:0}

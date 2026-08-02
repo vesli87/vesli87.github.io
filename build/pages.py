@@ -321,22 +321,26 @@ def page_home(lang):
          aria-label="{e(C.t(lang,'site_name'))}">
   <div class="hero-slide active" role="group" aria-roledescription="slide"
        aria-label="{e(C.t(lang,'hero_slide', n=1, m=2))}">
-    <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
-         width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
-         alt="{e(C.BRAND)} HyperMIG SX – Schweissanlagen bei {e(C.t(lang,'site_name'))}"
-         onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
+    <div class="hero-inner">
+      <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
+           width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
+           alt="{e(C.BRAND)} HyperMIG SX – Schweissanlagen bei {e(C.t(lang,'site_name'))}"
+           onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
+    </div>
   </div>
-  <div class="hero-slide" role="group" aria-roledescription="slide"
+  <div class="hero-slide light" role="group" aria-roledescription="slide"
        aria-label="{e(C.t(lang,'hero_slide', n=2, m=2))}">
-    <img class="hero-photo" src="{R.HERO2_SRC}" srcset="{R.HERO2_SRCSET}" sizes="100vw"
-         width="{R.HERO_W}" height="{R.HERO_H}" loading="lazy" decoding="async"
-         alt="{e(C.BRAND)} MPT – CNC-Plasmaschneidtisch mit Bedienkonsole"
-         onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero-mpt.jpg'">
-    <div class="hero-txt">
-      <span class="hk">{e(C.t(lang,'hero2_kicker'))}</span>
-      <h2>{e(C.t(lang,'hero2_title'))}</h2>
-      <p>{e(C.t(lang,'hero2_sub'))}</p>
-      <a class="btn pri" href="{e(C.u_prod(lang, C.BY_ID['mpt-3001']))}">{e(C.t(lang,'hero2_cta'))}</a>
+    <div class="hero-inner">
+      <img class="hero-photo" src="{R.HERO2_SRC}" srcset="{R.HERO2_SRCSET}" sizes="100vw"
+           width="{R.HERO_W}" height="{R.HERO_H}" loading="lazy" decoding="async"
+           alt="{e(C.BRAND)} MPT – CNC-Plasmaschneidtisch mit Bedienkonsole"
+           onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero-mpt.jpg'">
+      <div class="hero-txt">
+        <span class="hk">{e(C.t(lang,'hero2_kicker'))}</span>
+        <h2>{e(C.t(lang,'hero2_title'))}</h2>
+        <p>{e(C.t(lang,'hero2_sub'))}</p>
+        <a class="btn pri" href="{e(C.u_prod(lang, C.BY_ID['mpt-3001']))}">{e(C.t(lang,'hero2_cta'))}</a>
+      </div>
     </div>
   </div>
   <div class="hero-dots" role="tablist" aria-label="{e(C.t(lang,'gal_label'))}">

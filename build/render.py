@@ -48,7 +48,7 @@ HERO_PRELOAD = (f'<link rel="preload" as="image" href="{HERO_SRC}" '
 # wie das Band. Sie wird NICHT vorgeladen - das erste Bild bleibt das LCP-
 # Element, die zweite Folie holt der Browser erst, wenn sie an die Reihe kommt.
 HERO2_SRCSET = ("/assets/img/hero-mpt-640.webp 640w, /assets/img/hero-mpt-1000.webp 1000w, "
-                "/assets/img/hero-mpt-1536.webp 1536w")
+                "/assets/img/hero-mpt-1536.webp 1536w, /assets/img/hero-mpt-2048.webp 2048w")
 HERO2_SRC = "/assets/img/hero-mpt-1536.webp"
 
 CSS_URL = _ver("/assets/css/site.css")

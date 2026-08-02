@@ -230,8 +230,10 @@
       if (!d) return;
       stopp(); zeige(parseInt(d.getAttribute('data-i'), 10) || 0); start();
     });
-    hero.addEventListener('mouseenter', stopp);
-    hero.addEventListener('mouseleave', start);
+    /* Kein Pausieren beim blossen Ueberfahren: das Hero fuellt den halben
+       Bildschirm, der Zeiger liegt fast immer irgendwo darauf - das Karussell
+       stand dann still und wechselte nie. Pausiert wird nur, wo jemand gezielt
+       bedient: Tastaturfokus. */
     hero.addEventListener('focusin', stopp);
     hero.addEventListener('focusout', start);
     document.addEventListener('visibilitychange', function () {

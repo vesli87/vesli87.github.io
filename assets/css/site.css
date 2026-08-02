@@ -77,18 +77,24 @@
 
   /* Hero */
   /* Hero als Wechselbild. Die Folien liegen uebereinander, damit beim Wechsel
-     nichts springt; die Hoehe gibt die erste Folie vor. Ohne JavaScript bleibt
-     die erste Folie stehen - sie ist das LCP-Bild und wird vorgeladen. */
-  .hero{background:#0E1013;display:grid;justify-items:center;position:relative;overflow:hidden}
-  .hero-slide{grid-area:1/1;width:100%;max-width:1536px;position:relative;opacity:0;
-    visibility:hidden;transition:opacity .6s ease}
+     nichts springt; die Hoehe gibt die erste Folie vor. Jede Folie faerbt das
+     ganze Band – sonst saesse die helle Folie als weisser Streifen in einem
+     dunklen Rahmen. Ohne JavaScript bleibt die erste Folie stehen, sie ist das
+     LCP-Bild und wird vorgeladen. */
+  .hero{background:#0E1013;display:grid;position:relative;overflow:hidden}
+  .hero-slide{grid-area:1/1;width:100%;display:grid;justify-items:center;background:#0E1013;
+    opacity:0;visibility:hidden;transition:opacity .6s ease}
+  .hero-slide.light{background:#fff}
   .hero-slide.active{opacity:1;visibility:visible}
+  .hero-inner{position:relative;width:100%;max-width:1536px}
   .hero-photo{display:block;width:100%;height:auto}
   .hero-txt{position:absolute;left:clamp(16px,4vw,56px);top:50%;transform:translateY(-50%);
     max-width:min(33%,430px);color:#fff;z-index:2}
   /* Der Textblock muss links von der Maschine bleiben - im Banner beginnt
      sie bei 40 % der Breite. Laenger gesetzt, lief die Zeile in den
      Bildschirm der Bedienkonsole hinein. */
+  .hero-slide.light .hero-txt{color:var(--ink)}
+  .hero-slide.light .hero-txt p{color:#4A453D}
   .hero-txt .hk{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.16em;
     text-transform:uppercase;font-size:clamp(11px,1.1vw,14px);color:var(--accent)}
   .hero-txt h2{font-family:'Anton';text-transform:uppercase;line-height:1.02;
@@ -97,10 +103,12 @@
   .hero-txt .btn{font-size:clamp(11px,1vw,14px);padding:.7em 1.2em}
   .hero-dots{position:absolute;z-index:3;bottom:clamp(10px,1.6vw,20px);left:50%;
     transform:translateX(-50%);display:flex;gap:9px}
+  /* Neutrales Grau: die Punkte muessen auf der dunklen wie auf der hellen
+     Folie sichtbar bleiben. */
   .hdot{width:34px;height:5px;border-radius:3px;border:0;padding:0;cursor:pointer;
-    background:rgba(255,255,255,.34);transition:background .2s}
+    background:rgba(125,125,125,.55);transition:background .2s}
   .hdot.active{background:var(--accent)}
-  .hdot:hover{background:rgba(255,255,255,.7)}
+  .hdot:hover{background:rgba(125,125,125,.9)}
   @media (max-width:640px){
     .hero-txt{max-width:52%}
     .hero-txt p{display:none}

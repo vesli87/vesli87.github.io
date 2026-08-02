@@ -15,10 +15,11 @@
   "id": "plasmaschneiden",
   "t": "Plasmaschneiden",
   "pk": "plasma",
-  "d": "Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion.",
+  "d": "Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.",
   "subs": [
    "Theta",
-   "Theta Automation"
+   "Theta Automation",
+   "Schneidtische"
   ]
  },
  {

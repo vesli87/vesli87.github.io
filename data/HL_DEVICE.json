@@ -856,5 +856,107 @@
    "Bobina D300"
   ],
   "src": "https://mahe-online.de/mms/"
+ },
+ "mpt-3001": {
+  "de": [
+   "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle",
+   "Arbeitsbereich 3000 x 1500 mm",
+   "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
+   "Schneidstrom 60 A, 120 A oder 180 A",
+   "Steuerung über das MyPlasm CNC System von Proma Elektronika",
+   "Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format",
+   "Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
+   "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
+   "Höhenabtastung des Materials vor jedem Einstich",
+   "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
+   "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
+   "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
+   "Optional: Filteranlage AT 1000, Schutzhaube für Computer und Konsole, Wasserpflegemittel MWPF 100, Verschleissteilebox PSAB 125 oder PSAB 180",
+   "Inbetriebnahme und Einweisung vor Ort oder online"
+  ],
+  "fr": [
+   "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
+   "Surface de travail 3000 x 1500 mm",
+   "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
+   "Courant de coupe 60 A, 120 A ou 180 A",
+   "Commande par le système MyPlasm CNC de Proma Elektronika",
+   "Import de dessins 2D aux formats DXF et HPGL/PLT",
+   "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
+   "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
+   "Palpage de la hauteur du matériau avant chaque perçage",
+   "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
+   "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
+   "Console de commande avec ordinateur Windows et écran à la table",
+   "En option : installation de filtration AT 1000, capot de protection pour l'ordinateur et la console, produit d'entretien de l'eau MWPF 100, coffret de pièces d'usure PSAB 125 ou PSAB 180",
+   "Mise en service et instruction sur site ou en ligne"
+  ],
+  "it": [
+   "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
+   "Area di lavoro 3000 x 1500 mm",
+   "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+   "Corrente di taglio 60 A, 120 A o 180 A",
+   "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
+   "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
+   "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
+   "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
+   "Tastatura dell'altezza del materiale prima di ogni sfondamento",
+   "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
+   "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
+   "Console di comando con computer Windows e schermo al tavolo",
+   "Opzionale: impianto di filtrazione AT 1000, cappa di protezione per computer e console, additivo per l'acqua MWPF 100, box ricambi di usura PSAB 125 o PSAB 180",
+   "Messa in servizio e istruzione in loco o online"
+  ],
+  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 3001 - 3015, Set-Nrn. 1721.300.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE."
+ },
+ "mpt-2501": {
+  "de": [
+   "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle",
+   "Arbeitsbereich 2500 x 1250 mm",
+   "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
+   "Schneidstrom 60 A, 120 A oder 180 A",
+   "Steuerung über das MyPlasm CNC System von Proma Elektronika",
+   "Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format",
+   "Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
+   "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
+   "Höhenabtastung des Materials vor jedem Einstich",
+   "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
+   "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
+   "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
+   "Optional: Filteranlage AT 1000, Schutzhaube für Computer und Konsole, Wasserpflegemittel MWPF 100, Verschleissteilebox PSAB 125 oder PSAB 180",
+   "Inbetriebnahme und Einweisung vor Ort oder online"
+  ],
+  "fr": [
+   "Table de découpe plasma CNC professionnelle, livrée en set avec une source de courant MAHE Theta",
+   "Surface de travail 2500 x 1250 mm",
+   "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
+   "Courant de coupe 60 A, 120 A ou 180 A",
+   "Commande par le système MyPlasm CNC de Proma Elektronika",
+   "Import de dessins 2D aux formats DXF et HPGL/PLT",
+   "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
+   "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
+   "Palpage de la hauteur du matériau avant chaque perçage",
+   "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
+   "Marquage et traçage à vitesse propre, attribués par une couleur de calque dédiée",
+   "Console de commande avec ordinateur Windows et écran à la table",
+   "En option : installation de filtration AT 1000, capot de protection pour l'ordinateur et la console, produit d'entretien de l'eau MWPF 100, coffret de pièces d'usure PSAB 125 ou PSAB 180",
+   "Mise en service et instruction sur site ou en ligne"
+  ],
+  "it": [
+   "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
+   "Area di lavoro 2500 x 1250 mm",
+   "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+   "Corrente di taglio 60 A, 120 A o 180 A",
+   "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
+   "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
+   "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
+   "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
+   "Tastatura dell'altezza del materiale prima di ogni sfondamento",
+   "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
+   "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
+   "Console di comando con computer Windows e schermo al tavolo",
+   "Opzionale: impianto di filtrazione AT 1000, cappa di protezione per computer e console, additivo per l'acqua MWPF 100, box ricambi di usura PSAB 125 o PSAB 180",
+   "Messa in servizio e istruzione in loco o online"
+  ],
+  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE."
  }
 }

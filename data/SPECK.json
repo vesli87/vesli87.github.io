@@ -1,15 +1,35 @@
 {
+ "Aluminium": {
+  "fr": "Aluminium",
+  "it": "Alluminio"
+ },
  "Antrieb": {
   "fr": "Entraînement",
   "it": "Trazione"
+ },
+ "Anwendung": {
+  "fr": "Application",
+  "it": "Applicazione"
  },
  "Anzeige": {
   "fr": "Affichage",
   "it": "Display"
  },
+ "Arbeitsbereich": {
+  "fr": "Surface de travail",
+  "it": "Area di lavoro"
+ },
  "Ausführung": {
   "fr": "Version",
   "it": "Versione"
+ },
+ "Aussenschutzdüse": {
+  "fr": "Buse de protection extérieure",
+  "it": "Ugello di protezione esterno"
+ },
+ "Ausstattung": {
+  "fr": "Équipement",
+  "it": "Dotazione"
  },
  "Bauart": {
   "fr": "Type",
@@ -23,6 +43,14 @@
   "fr": "Mode",
   "it": "Modalità"
  },
+ "Dateiformate": {
+  "fr": "Formats de fichiers",
+  "it": "Formati file"
+ },
+ "Diffusor": {
+  "fr": "Diffuseur",
+  "it": "Diffusore"
+ },
  "Doppelpuls": {
   "fr": "Double pulsation",
   "it": "Doppio impulso"
@@ -30,6 +58,14 @@
  "Einsatz": {
   "fr": "Application",
   "it": "Impiego"
+ },
+ "Elektrode": {
+  "fr": "Électrode",
+  "it": "Elettrodo"
+ },
+ "Farbe": {
+  "fr": "Couleur",
+  "it": "Colore"
  },
  "Funktion": {
   "fr": "Fonction",
@@ -43,13 +79,25 @@
   "fr": "Bouteille de gaz",
   "it": "Bombola gas"
  },
+ "Gebinde": {
+  "fr": "Conditionnement",
+  "it": "Confezione"
+ },
  "Gehäuse": {
   "fr": "Boîtier",
   "it": "Struttura"
  },
+ "Gerändelt": {
+  "fr": "Moleté",
+  "it": "Zigrinato"
+ },
  "Gewicht": {
   "fr": "Poids",
   "it": "Peso"
+ },
+ "Kappen": {
+  "fr": "Capuchons",
+  "it": "Cappucci"
  },
  "Kombi": {
   "fr": "Combi",
@@ -67,6 +115,14 @@
   "fr": "Livraison",
   "it": "Fornitura"
  },
+ "Länge": {
+  "fr": "Longueur",
+  "it": "Lunghezza"
+ },
+ "Längen": {
+  "fr": "Longueurs",
+  "it": "Lunghezze"
+ },
  "Maße (LxBxH)": {
   "fr": "Dimensions (LxlxH)",
   "it": "Dimensioni (LxPxA)"
@@ -75,13 +131,41 @@
   "fr": "Fluide",
   "it": "Fluido"
  },
+ "Montage": {
+  "fr": "Montage",
+  "it": "Montaggio"
+ },
+ "Montage an": {
+  "fr": "Montage sur",
+  "it": "Montaggio su"
+ },
  "Netz": {
   "fr": "Réseau",
   "it": "Rete"
  },
+ "Option": {
+  "fr": "Option",
+  "it": "Opzione"
+ },
+ "Querschnitt": {
+  "fr": "Section",
+  "it": "Sezione"
+ },
+ "Querschnitte": {
+  "fr": "Sections",
+  "it": "Sezioni"
+ },
+ "Schneiddüsen": {
+  "fr": "Buses de coupe",
+  "it": "Ugelli da taglio"
+ },
  "Schneidleistung": {
   "fr": "Capacité de coupe",
   "it": "Capacità di taglio"
+ },
+ "Schneidstrom": {
+  "fr": "Courant de coupe",
+  "it": "Corrente di taglio"
  },
  "Schnittstelle": {
   "fr": "Interface",
@@ -95,6 +179,14 @@
   "fr": "Série",
   "it": "Serie"
  },
+ "Serienmässig": {
+  "fr": "De série",
+  "it": "Di serie"
+ },
+ "Sicherheitsdatenblatt": {
+  "fr": "Fiche de sécurité",
+  "it": "Scheda di sicurezza"
+ },
  "Software": {
   "fr": "Logiciel",
   "it": "Software"
@@ -103,13 +195,25 @@
   "fr": "Mémoire",
   "it": "Memoria"
  },
+ "Stahl": {
+  "fr": "Acier",
+  "it": "Acciaio"
+ },
  "Steckdose": {
   "fr": "Prise",
   "it": "Presa"
  },
+ "Steuerung": {
+  "fr": "Commande",
+  "it": "Controllo"
+ },
  "Strombereich": {
   "fr": "Plage de courant",
   "it": "Gamma di corrente"
+ },
+ "Stromquelle": {
+  "fr": "Source de courant",
+  "it": "Generatore"
  },
  "Technologie": {
   "fr": "Technologie",
@@ -119,6 +223,10 @@
   "fr": "Type",
   "it": "Tipo"
  },
+ "Verbindet": {
+  "fr": "Relie",
+  "it": "Collega"
+ },
  "Verfahren": {
   "fr": "Procédé",
   "it": "Processo"
@@ -127,100 +235,12 @@
   "fr": "Matériau",
   "it": "Materiale"
  },
- "Zündung": {
-  "fr": "Amorçage",
-  "it": "Innesco"
- },
- "Gebinde": {
-  "fr": "Conditionnement",
-  "it": "Confezione"
- },
- "Querschnitt": {
-  "fr": "Section",
-  "it": "Sezione"
- },
- "Längen": {
-  "fr": "Longueurs",
-  "it": "Lunghezze"
- },
- "Farbe": {
-  "fr": "Couleur",
-  "it": "Colore"
- },
- "Anwendung": {
-  "fr": "Application",
-  "it": "Applicazione"
- },
- "Sicherheitsdatenblatt": {
-  "fr": "Fiche de sécurité",
-  "it": "Scheda di sicurezza"
- },
- "Länge": {
-  "fr": "Longueur",
-  "it": "Lunghezza"
- },
- "Option": {
-  "fr": "Option",
-  "it": "Opzione"
- },
- "Ausstattung": {
-  "fr": "Équipement",
-  "it": "Dotazione"
- },
- "Montage": {
-  "fr": "Montage",
-  "it": "Montaggio"
- },
- "Schneiddüsen": {
-  "fr": "Buses de coupe",
-  "it": "Ugelli da taglio"
- },
- "Elektrode": {
-  "fr": "Électrode",
-  "it": "Elettrodo"
- },
- "Aussenschutzdüse": {
-  "fr": "Buse de protection extérieure",
-  "it": "Ugello di protezione esterno"
- },
- "Diffusor": {
-  "fr": "Diffuseur",
-  "it": "Diffusore"
- },
  "Wirbelring": {
   "fr": "Bague de diffusion",
   "it": "Anello diffusore"
  },
- "Kappen": {
-  "fr": "Capuchons",
-  "it": "Cappucci"
- },
- "Stahl": {
-  "fr": "Acier",
-  "it": "Acciaio"
- },
- "Gerändelt": {
-  "fr": "Moleté",
-  "it": "Zigrinato"
- },
- "Aluminium": {
-  "fr": "Aluminium",
-  "it": "Alluminio"
- },
- "Serienmässig": {
-  "fr": "De série",
-  "it": "Di serie"
- },
- "Verbindet": {
-  "fr": "Relie",
-  "it": "Collega"
- },
- "Montage an": {
-  "fr": "Montage sur",
-  "it": "Montaggio su"
- },
- "Querschnitte": {
-  "fr": "Sections",
-  "it": "Sezioni"
+ "Zündung": {
+  "fr": "Amorçage",
+  "it": "Innesco"
  }
 }

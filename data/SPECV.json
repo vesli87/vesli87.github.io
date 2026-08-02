@@ -1,7 +1,47 @@
 {
+ "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)": {
+  "fr": "0,8/1,0 acier (300 A) · 1,0/1,2 acier (350–600 A)",
+  "it": "0,8/1,0 acciaio (300 A) · 1,0/1,2 acciaio (350–600 A)"
+ },
+ "0,8/1,0 mm Stahl": {
+  "fr": "0,8/1,0 mm acier",
+  "it": "0,8/1,0 mm acciaio"
+ },
+ "0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A": {
+  "fr": "0,8/1,0 mm acier à 300 A · 1,0/1,2 mm acier à 350–600 A",
+  "it": "0,8/1,0 mm acciaio a 300 A · 1,0/1,2 mm acciaio a 350–600 A"
+ },
+ "1x Brennerkappe · 1x Schutzkappe": {
+  "fr": "1x capuchon de torche · 1x capuchon de protection",
+  "it": "1x cappuccio torcia · 1x cappuccio di protezione"
+ },
+ "1x kurz": {
+  "fr": "1x court",
+  "it": "1x corto"
+ },
+ "4 m wahlweise mit Up/Down": {
+  "fr": "4 m au choix avec Up/Down",
+  "it": "4 m a scelta con Up/Down"
+ },
  "4-Rollen": {
   "fr": "4 galets",
   "it": "4 rulli"
+ },
+ "5x 0,8 mm kurz": {
+  "fr": "5x 0,8 mm court",
+  "it": "5x 0,8 mm corto"
+ },
+ "Befestigung": {
+  "fr": "Fixation",
+  "it": "Fissaggio"
+ },
+ "Bürstenständer": {
+  "fr": "Support de brosse",
+  "it": "Supporto per spazzola"
+ },
+ "CNC / Automation": {
+  "fr": "CNC / automation",
+  "it": "CNC / automazione"
  },
  "Chromstahl": {
   "fr": "acier inox",
@@ -14,6 +54,10 @@
  "Digital oder Analog": {
   "fr": "numérique ou analogique",
   "it": "digitale o analogico"
+ },
+ "Edelstahl": {
+  "fr": "acier inox",
+  "it": "acciaio inox"
  },
  "Elektrolyt-Reinigung": {
   "fr": "nettoyage électrolytique",
@@ -30,6 +74,10 @@
  "Fussfernregler": {
   "fr": "commande à pédale",
   "it": "comando a pedale"
+ },
+ "Gasventil am Brenner": {
+  "fr": "vanne de gaz sur la torche",
+  "it": "valvola del gas sulla torcia"
  },
  "Handfernregler": {
   "fr": "télécommande manuelle",
@@ -51,6 +99,18 @@
   "fr": "compact / mobile",
   "it": "compatto / mobile"
  },
+ "MAHE WIG": {
+  "fr": "MAHE TIG",
+  "it": "MAHE TIG"
+ },
+ "MAHE WIG · MMA": {
+  "fr": "MAHE TIG · MMA",
+  "it": "MAHE TIG · MMA"
+ },
+ "MIG/MAG gasgekühlt": {
+  "fr": "MIG/MAG refroidi au gaz",
+  "it": "MIG/MAG raffreddato a gas"
+ },
  "MIG/MAG · Puls · MMA · WIG": {
   "fr": "MIG/MAG · pulsé · MMA · TIG",
   "it": "MIG/MAG · pulsato · MMA · TIG"
@@ -71,13 +131,25 @@
   "fr": "MMA · TIG-Lift",
   "it": "MMA · TIG-Lift"
  },
+ "MMS 3000 Serie": {
+  "fr": "série MMS 3000",
+  "it": "serie MMS 3000"
+ },
  "Montage / Werkstatt": {
+  "fr": "montage / atelier",
+  "it": "montaggio / officina"
+ },
+ "Montage/Werkstatt": {
   "fr": "montage / atelier",
   "it": "montaggio / officina"
  },
  "Plasma / Mikroplasma": {
   "fr": "plasma / microplasma",
   "it": "plasma / microplasma"
+ },
+ "Plasmaschneidbrenner": {
+  "fr": "torche de coupe plasma",
+  "it": "torcia da taglio al plasma"
  },
  "Plasmaschneiden": {
   "fr": "découpe plasma",
@@ -94,6 +166,18 @@
  "Set mit Koffer": {
   "fr": "kit avec mallette",
   "it": "set con valigetta"
+ },
+ "Set mit Stromquelle": {
+  "fr": "set avec source de courant",
+  "it": "set con generatore"
+ },
+ "Stromquelle mit Vorschubkoffer": {
+  "fr": "source de courant et dévidoir",
+  "it": "generatore e trainafilo"
+ },
+ "Tropfschutz": {
+  "fr": "protection anti-gouttes",
+  "it": "protezione antigoccia"
  },
  "Universalkühler": {
   "fr": "refroidisseur universel",
@@ -119,6 +203,14 @@
   "fr": "TIG DC",
   "it": "TIG DC"
  },
+ "WIG gasgekühlt": {
+  "fr": "TIG refroidi au gaz",
+  "it": "TIG raffreddato a gas"
+ },
+ "WIG wassergekühlt": {
+  "fr": "TIG refroidi à l’eau",
+  "it": "TIG raffreddato ad acqua"
+ },
  "Wasserkühlgerät": {
   "fr": "refroidisseur à eau",
   "it": "refrigeratore ad acqua"
@@ -135,6 +227,10 @@
   "fr": "dosage automatique",
   "it": "dosaggio automatico"
  },
+ "blau": {
+  "fr": "bleu",
+  "it": "blu"
+ },
  "digital": {
   "fr": "numérique",
   "it": "digitale"
@@ -142,6 +238,10 @@
  "einfach": {
   "fr": "simple",
   "it": "semplice"
+ },
+ "fest in der Maschine verbaut": {
+  "fr": "montée à demeure dans la machine",
+  "it": "montata fissa nella macchina"
  },
  "horizontal": {
   "fr": "horizontal",
@@ -155,10 +255,6 @@
   "fr": "oui",
   "it": "sì"
  },
- "nein": {
-  "fr": "non",
-  "it": "no"
- },
  "leicht / tragbar": {
   "fr": "léger / portable",
   "it": "leggero / portatile"
@@ -171,9 +267,25 @@
   "fr": "mobile",
   "it": "mobile"
  },
+ "nein": {
+  "fr": "non",
+  "it": "no"
+ },
+ "schwarz": {
+  "fr": "noir",
+  "it": "nero"
+ },
  "tragbar": {
   "fr": "portable",
   "it": "portatile"
+ },
+ "wahlweise mit Potentiometer": {
+  "fr": "au choix avec potentiomètre",
+  "it": "a scelta con potenziometro"
+ },
+ "wahlweise mit Up/Down": {
+  "fr": "au choix avec Up/Down",
+  "it": "a scelta con Up/Down"
  },
  "wassergekühlt": {
   "fr": "refroidi par eau",
@@ -182,113 +294,5 @@
  "wassergekühlt (CWK)": {
   "fr": "refroidi par eau (CWK)",
   "it": "raffreddato ad acqua (CWK)"
- },
- "CNC / Automation": {
-  "fr": "CNC / automation",
-  "it": "CNC / automazione"
- },
- "MAHE WIG": {
-  "fr": "MAHE TIG",
-  "it": "MAHE TIG"
- },
- "MAHE WIG · MMA": {
-  "fr": "MAHE TIG · MMA",
-  "it": "MAHE TIG · MMA"
- },
- "MMS 3000 Serie": {
-  "fr": "série MMS 3000",
-  "it": "serie MMS 3000"
- },
- "Montage/Werkstatt": {
-  "fr": "montage / atelier",
-  "it": "montaggio / officina"
- },
- "Edelstahl": {
-  "fr": "acier inox",
-  "it": "acciaio inox"
- },
- "blau": {
-  "fr": "bleu",
-  "it": "blu"
- },
- "schwarz": {
-  "fr": "noir",
-  "it": "nero"
- },
- "MIG/MAG gasgekühlt": {
-  "fr": "MIG/MAG refroidi au gaz",
-  "it": "MIG/MAG raffreddato a gas"
- },
- "4 m wahlweise mit Up/Down": {
-  "fr": "4 m au choix avec Up/Down",
-  "it": "4 m a scelta con Up/Down"
- },
- "wahlweise mit Up/Down": {
-  "fr": "au choix avec Up/Down",
-  "it": "a scelta con Up/Down"
- },
- "WIG gasgekühlt": {
-  "fr": "TIG refroidi au gaz",
-  "it": "TIG raffreddato a gas"
- },
- "wahlweise mit Potentiometer": {
-  "fr": "au choix avec potentiomètre",
-  "it": "a scelta con potenziometro"
- },
- "Gasventil am Brenner": {
-  "fr": "vanne de gaz sur la torche",
-  "it": "valvola del gas sulla torcia"
- },
- "WIG wassergekühlt": {
-  "fr": "TIG refroidi à l’eau",
-  "it": "TIG raffreddato ad acqua"
- },
- "Plasmaschneidbrenner": {
-  "fr": "torche de coupe plasma",
-  "it": "torcia da taglio al plasma"
- },
- "fest in der Maschine verbaut": {
-  "fr": "montée à demeure dans la machine",
-  "it": "montata fissa nella macchina"
- },
- "5x 0,8 mm kurz": {
-  "fr": "5x 0,8 mm court",
-  "it": "5x 0,8 mm corto"
- },
- "1x kurz": {
-  "fr": "1x court",
-  "it": "1x corto"
- },
- "1x Brennerkappe · 1x Schutzkappe": {
-  "fr": "1x capuchon de torche · 1x capuchon de protection",
-  "it": "1x cappuccio torcia · 1x cappuccio di protezione"
- },
- "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)": {
-  "fr": "0,8/1,0 acier (300 A) · 1,0/1,2 acier (350–600 A)",
-  "it": "0,8/1,0 acciaio (300 A) · 1,0/1,2 acciaio (350–600 A)"
- },
- "Stromquelle mit Vorschubkoffer": {
-  "fr": "source de courant et dévidoir",
-  "it": "generatore e trainafilo"
- },
- "Befestigung": {
-  "fr": "Fixation",
-  "it": "Fissaggio"
- },
- "Bürstenständer": {
-  "fr": "Support de brosse",
-  "it": "Supporto per spazzola"
- },
- "Tropfschutz": {
-  "fr": "protection anti-gouttes",
-  "it": "protezione antigoccia"
- },
- "0,8/1,0 mm Stahl": {
-  "fr": "0,8/1,0 mm acier",
-  "it": "0,8/1,0 mm acciaio"
- },
- "0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A": {
-  "fr": "0,8/1,0 mm acier à 300 A · 1,0/1,2 mm acier à 350–600 A",
-  "it": "0,8/1,0 mm acciaio a 300 A · 1,0/1,2 mm acciaio a 350–600 A"
  }
 }

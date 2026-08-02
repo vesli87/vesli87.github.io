@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
+> MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 81 Geräte, alle zum Preis auf Anfrage.
 
 ## Eckdaten
 - Firma: VES-TECH Swiss
@@ -20,7 +20,7 @@
 
 ## Kategorien
 - [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie. (14 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
-- [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion. (6 Geräte: Theta, Theta Automation)
+- [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
 - [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (47 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete, Cleaner-Zubehör)
 
@@ -48,6 +48,8 @@
 - [MAHE Theta 180 HSC](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/): Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie. (Plasma Cut)
 - [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
 - [MAHE Theta 120 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
+- [MAHE MPT 3001](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/): Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle. (Plasma CNC)
+- [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/): Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle. (Plasma CNC)
 
 ### Reinigungsgeräte
 - [MAHE MiniReiniger](https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/): Wirtschaftlicher Inverter, speziell für den mobilen Einsatz. (Cleaner)

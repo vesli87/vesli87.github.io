@@ -1143,5 +1143,41 @@
    "Länge": "4 m",
    "Für": "Theta 60 · 120 · 180 (HSC / AUT)"
   }
+ },
+ {
+  "id": "mpt-3001",
+  "cat": "plasmaschneiden",
+  "sub": "Schneidtische",
+  "vt": "Plasma CNC",
+  "name": "MPT 3001",
+  "img": "panels/MPT_Plasmaschneidtisch.png",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Arbeitsbereich": "3000 x 1500 mm",
+   "Stromquelle": "Theta 060 / 120 / 180 HSC",
+   "Schneidstrom": "60 A / 120 A / 180 A",
+   "Steuerung": "MyPlasm CNC",
+   "Dateiformate": "DXF, HPGL/PLT",
+   "Ausführung": "Set mit Stromquelle"
+  }
+ },
+ {
+  "id": "mpt-2501",
+  "cat": "plasmaschneiden",
+  "sub": "Schneidtische",
+  "vt": "Plasma CNC",
+  "name": "MPT 2501",
+  "img": "panels/MPT_Plasmaschneidtisch.png",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "specs": {
+   "Verfahren": "Plasmaschneiden",
+   "Arbeitsbereich": "2500 x 1250 mm",
+   "Stromquelle": "Theta 060 / 120 / 180 HSC",
+   "Schneidstrom": "60 A / 120 A / 180 A",
+   "Steuerung": "MyPlasm CNC",
+   "Dateiformate": "DXF, HPGL/PLT",
+   "Ausführung": "Set mit Stromquelle"
+  }
  }
 ]

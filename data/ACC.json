@@ -262,5 +262,15 @@
   "hypercleaner-plus",
   "minicleaner",
   "mhct01"
+ ],
+ "mpt-3001": [
+  "theta-60",
+  "theta-120",
+  "theta-180"
+ ],
+ "mpt-2501": [
+  "theta-60",
+  "theta-120",
+  "theta-180"
  ]
 }

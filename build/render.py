@@ -104,12 +104,22 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     )
 
 
+def img_folder(m):
+    """Herstellerbilder liegen unter p/, selbst gelieferte unter panels/.
+
+    Stand nur img_tag richtig, zeigten og:image, das Product-Bild im JSON-LD,
+    das Bild in der Anfrageliste und das Suchergebnisbild eines lokalen Bildes
+    auf assets/img/p/, wo nichts liegt – ohne dass check.py etwas meldete.
+    """
+    return "panels" if m.get("local") else "p"
+
+
 def img_abs(path, size=1000):
     """Absolute URL des lokalen Bildes – für og:image und JSON-LD."""
     m = MANIFEST.get(C.full_img(path))
     if not m:
         return C.REMOTE_IMG + C.full_img(path)
-    return f"{C.SITE}/assets/img/p/{m['key']}-{size}.webp"
+    return f"{C.SITE}/assets/img/{img_folder(m)}/{m['key']}-{size}.webp"
 
 
 # --------------------------------------------------------------------------
@@ -622,7 +632,8 @@ def crumbs(lang, items):
 def thumb(p):
     """Kleines WebP für Anfrageliste und Suchvorschläge."""
     m = MANIFEST.get(C.full_img(p["img"]))
-    return f"/assets/img/p/{m['key']}-400.webp" if m else C.REMOTE_IMG + C.full_img(p["img"])
+    return (f"/assets/img/{img_folder(m)}/{m['key']}-400.webp" if m
+            else C.REMOTE_IMG + C.full_img(p["img"]))
 
 
 def pcard(lang, p):

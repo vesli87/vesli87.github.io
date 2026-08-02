@@ -669,5 +669,12 @@
   "h": 276,
   "ratio": 0.6174,
   "local": true
+ },
+ "panels/MPT_Plasmaschneidtisch.png": {
+  "key": "mpt-plasmaschneidtisch",
+  "w": 3003,
+  "h": 1766,
+  "ratio": 0.5881,
+  "local": true
  }
 }

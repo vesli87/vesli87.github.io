@@ -314,5 +314,13 @@
  "drahtvorschubrollen-hyper": {
   "fr": "Galets d'entraînement pour la série HyperMIG X, en versions acier, moletée et aluminium.",
   "it": "Rulli trainafilo per la serie HyperMIG X, nelle versioni acciaio, zigrinata e alluminio."
+ },
+ "mpt-3001": {
+  "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en set avec une source de courant MAHE Theta.",
+  "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta."
+ },
+ "mpt-2501": {
+  "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en set avec une source de courant MAHE Theta.",
+  "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta."
  }
 }

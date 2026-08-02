@@ -440,7 +440,7 @@ Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ## Plasmaschneiden
-Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Hand- und Automationsversion.
+Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.
 
 ### MAHE Theta 40
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
@@ -626,6 +626,24 @@ Technische Daten – Theta 120 HSC:
 
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: PSAB 125, Massekabel 25 mm².
+
+### MAHE MPT 3001
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/
+Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-3001 · Preis: auf Anfrage (CHF)
+Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.
+Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle; Arbeitsbereich 3000 x 1500 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das MyPlasm CNC System von Proma Elektronika; Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format; Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Optional: Filteranlage AT 1000, Schutzhaube für Computer und Konsole, Wasserpflegemittel MWPF 100, Verschleissteilebox PSAB 125 oder PSAB 180; Inbetriebnahme und Einweisung vor Ort oder online.
+Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 3000 x 1500 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
+
+### MAHE MPT 2501
+URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/
+Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-2501 · Preis: auf Anfrage (CHF)
+Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.
+Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle; Arbeitsbereich 2500 x 1250 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das MyPlasm CNC System von Proma Elektronika; Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format; Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Optional: Filteranlage AT 1000, Schutzhaube für Computer und Konsole, Wasserpflegemittel MWPF 100, Verschleissteilebox PSAB 125 oder PSAB 180; Inbetriebnahme und Einweisung vor Ort oder online.
+Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 2500 x 1250 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
 
 ## Reinigungsgeräte
 Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.

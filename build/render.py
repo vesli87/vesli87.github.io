@@ -566,7 +566,8 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
            "search_no_results_help", "search_did_you_mean", "search_all_results",
            "search_group_products", "search_group_cats", "search_group_procs",
            "search_group_dl", "search_min_chars", "form_sending", "form_success",
-           "form_error", "form_required", "form_invalid_mail", "search_popular"]
+           "form_error", "form_required", "form_invalid_mail", "search_popular",
+           "lupe_open", "lupe_close", "lupe_in", "lupe_out"]
 
 
 def boot_script(lang):

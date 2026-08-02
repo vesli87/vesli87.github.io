@@ -112,7 +112,11 @@
   "hero2_title": "MAHE MPT — CNC-Plasmaschneidtisch",
   "hero2_sub": "3000 × 1500 mm oder 2500 × 1250 mm · Theta 060 / 120 / 180 HSC · MyPlasm CNC",
   "hero2_cta": "Zum Schneidtisch",
-  "hero_slide": "Bild {n} von {m}"
+  "hero_slide": "Bild {n} von {m}",
+  "lupe_open": "Bild vergrössern",
+  "lupe_close": "Schliessen",
+  "lupe_in": "Näher heran",
+  "lupe_out": "Ganzes Bild"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -227,7 +231,11 @@
   "hero2_title": "MAHE MPT — table de découpe plasma CNC",
   "hero2_sub": "3000 × 1500 mm ou 2500 × 1250 mm · Theta 060 / 120 / 180 HSC · MyPlasm CNC",
   "hero2_cta": "Voir la table de découpe",
-  "hero_slide": "Image {n} sur {m}"
+  "hero_slide": "Image {n} sur {m}",
+  "lupe_open": "Agrandir l'image",
+  "lupe_close": "Fermer",
+  "lupe_in": "Zoomer",
+  "lupe_out": "Image entière"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -342,6 +350,10 @@
   "hero2_title": "MAHE MPT — tavolo di taglio al plasma CNC",
   "hero2_sub": "3000 × 1500 mm o 2500 × 1250 mm · Theta 060 / 120 / 180 HSC · MyPlasm CNC",
   "hero2_cta": "Vai al tavolo di taglio",
-  "hero_slide": "Immagine {n} di {m}"
+  "hero_slide": "Immagine {n} di {m}",
+  "lupe_open": "Ingrandisci l'immagine",
+  "lupe_close": "Chiudi",
+  "lupe_in": "Ingrandisci",
+  "lupe_out": "Immagine intera"
  }
 }

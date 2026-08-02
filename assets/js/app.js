@@ -193,6 +193,131 @@
     });
   }
 
+  /* ================================ Lupe ================================ */
+  /* Bilder mit .zoomable lassen sich bildschirmfuellend ansehen. Gebraucht wird
+     das dort, wo es auf Details ankommt: Verarbeitung der Maschine, Beschriftung
+     eines Frontpanels. Das Overlay entsteht erst beim ersten Klick - wer nie
+     zoomt, laedt auch nichts nach. */
+  (function () {
+    var bilder = $$('.zoomable');
+    if (!bilder.length) return;
+
+    // Groesste Datei aus dem srcset. Die Anzeige nimmt je nach Platz eine
+    // kleine Stufe; in der Lupe wollen wir immer die groesste.
+    function gross(img) {
+      var beste = img.currentSrc || img.src, breite = 0;
+      (img.getAttribute('srcset') || '').split(',').forEach(function (teil) {
+        var st = teil.trim().split(/\s+/);
+        var w = parseInt((st[1] || '').replace('w', ''), 10) || 0;
+        if (st[0] && w >= breite) { breite = w; beste = st[0]; }
+      });
+      return beste;
+    }
+
+    // Hinweiszeichen auf die Container setzen, in denen ein zoombares Bild sitzt.
+    bilder.forEach(function (img) {
+      var box = img.closest('.dimg') || img.closest('.fp-panel');
+      if (box && !box.querySelector('.lupe-hint')) {
+        var s = document.createElement('span');
+        s.className = 'lupe-hint';
+        s.setAttribute('aria-hidden', 'true');
+        s.textContent = '\u2315';                 // Lupenzeichen
+        box.appendChild(s);
+      }
+      img.setAttribute('title', t('lupe_open', 'Bild vergrössern'));
+    });
+
+    var box, buehne, bild, txt, vor, zurueck, zuletzt = null, gruppe = [], idx = 0;
+
+    function bauen() {
+      box = document.createElement('div');
+      box.className = 'lupe';
+      box.setAttribute('role', 'dialog');
+      box.setAttribute('aria-modal', 'true');
+      box.hidden = true;
+      box.innerHTML =
+        '<div class="lupe-kopf">' +
+          '<button class="lupe-btn" type="button" data-lupe="zoom" aria-label="' +
+            esc(t('lupe_in', 'Näher heran')) + '">+</button>' +
+          '<button class="lupe-btn" type="button" data-lupe="zu" aria-label="' +
+            esc(t('lupe_close', 'Schliessen')) + '">\u2715</button>' +
+        '</div>' +
+        '<div class="lupe-buehne"><img alt=""></div>' +
+        '<div class="lupe-fuss">' +
+          '<button class="lupe-nav" type="button" data-lupe="-1" aria-label="&#8249;">\u2039</button>' +
+          '<span class="lupe-txt"></span>' +
+          '<button class="lupe-nav" type="button" data-lupe="1" aria-label="&#8250;">\u203a</button>' +
+        '</div>';
+      document.body.appendChild(box);
+      buehne = $('.lupe-buehne', box);
+      bild = $('img', buehne);
+      txt = $('.lupe-txt', box);
+      zurueck = $('[data-lupe="-1"]', box);
+      vor = $('[data-lupe="1"]', box);
+
+      box.addEventListener('click', function (ev) {
+        var b = ev.target.closest('[data-lupe]');
+        if (b) {
+          var v = b.getAttribute('data-lupe');
+          if (v === 'zu') { schliessen(); }
+          else if (v === 'zoom') { box.classList.toggle('gross'); }
+          else { zeigen(idx + parseInt(v, 10)); }
+          return;
+        }
+        if (ev.target === bild) { box.classList.toggle('gross'); return; }
+        if (ev.target === buehne || ev.target === box) schliessen();
+      });
+    }
+
+    function zeigen(n) {
+      idx = (n + gruppe.length) % gruppe.length;
+      var q = gruppe[idx];
+      box.classList.remove('gross');
+      bild.src = gross(q);
+      bild.alt = q.getAttribute('alt') || '';
+      txt.textContent = q.getAttribute('alt') || '';
+      var mehr = gruppe.length > 1;
+      zurueck.hidden = !mehr;
+      vor.hidden = !mehr;
+    }
+
+    function oeffnen(img) {
+      if (!box) bauen();
+      // Gruppe: die Bilder derselben Galerie, sonst alle zoombaren der Seite.
+      var gal = img.closest('[data-gal]');
+      gruppe = gal ? $$('.zoomable', gal) : bilder;
+      if (gruppe.indexOf(img) < 0) gruppe = [img];
+      zuletzt = document.activeElement;
+      box.hidden = false;
+      document.body.classList.add('lupe-offen');
+      zeigen(gruppe.indexOf(img));
+      $('[data-lupe="zu"]', box).focus();
+    }
+
+    function schliessen() {
+      if (!box || box.hidden) return;
+      box.hidden = true;
+      box.classList.remove('gross');
+      bild.removeAttribute('src');
+      document.body.classList.remove('lupe-offen');
+      if (zuletzt && zuletzt.focus) zuletzt.focus();
+    }
+
+    document.addEventListener('click', function (ev) {
+      var img = ev.target.closest('.zoomable');
+      if (!img) return;
+      ev.preventDefault();
+      oeffnen(img);
+    });
+
+    document.addEventListener('keydown', function (ev) {
+      if (!box || box.hidden) return;
+      if (ev.key === 'Escape') { ev.preventDefault(); schliessen(); }
+      else if (ev.key === 'ArrowRight' && gruppe.length > 1) { ev.preventDefault(); zeigen(idx + 1); }
+      else if (ev.key === 'ArrowLeft' && gruppe.length > 1) { ev.preventDefault(); zeigen(idx - 1); }
+    });
+  }());
+
   /* =============================== Hero ================================= */
   /* Wechselbild alle 5 Sekunden. Drei Dinge, die ein Karussell sonst falsch
      macht: Es laeuft weiter, waehrend jemand liest (deshalb Pause bei Hover und

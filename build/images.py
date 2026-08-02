@@ -38,7 +38,10 @@ CACHE = core.BUILD / "cache" / "img"
 OUT = core.ROOT / "assets" / "img" / "p"
 MANIFEST = core.ROOT / "assets" / "img" / "manifest.json"
 
-WEBP_SIZES = [400, 1000]
+# 1600 und 2000 nur, wenn die Vorlage so breit ist. Sie sind fuer die
+# Lupe da: dort wird das Bild bildschirmfuellend gezeigt, und 1000 px
+# reichen dafuer auf einem heutigen Monitor nicht.
+WEBP_SIZES = [400, 1000, 1600, 2000]
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 VES-TECH-Build/1.0"
 
 
@@ -108,7 +111,13 @@ def main():
     for i, path in enumerate(paths, 1):
         k = key_for(path)
         src = CACHE / f"{k}{pathlib.PurePosixPath(path).suffix or '.png'}"
-        done = all((OUT / f"{k}-{s}.webp").exists() for s in WEBP_SIZES)
+        # "fertig" ist ein Bild erst, wenn genau die Stufen dastehen, die zu
+        # seiner Breite passen - sonst blieben Bilder nach dem Erweitern der
+        # Stufenliste auf den alten zwei Groessen stehen.
+        vor = manifest.get(path) or {}
+        soll = [x for x in WEBP_SIZES if x <= (vor.get("w") or 0)] or [WEBP_SIZES[0]]
+        done = (vor.get("sizes") == soll
+                and all((OUT / f"{k}-{x}.webp").exists() for x in soll))
         if done and path in manifest and not force:
             skip += 1
             continue
@@ -138,12 +147,13 @@ def main():
             continue
 
         # WebP in zwei Grössen – niemals hochskalieren
+        stufen = [s_ for s_ in WEBP_SIZES if s_ <= w] or [WEBP_SIZES[0]]
         if has("cwebp"):
-            for size in WEBP_SIZES:
+            for size in stufen:
                 dst = OUT / f"{k}-{size}.webp"
-                target = min(size, w)
                 subprocess.run(["cwebp", "-quiet", "-q", "82", "-alpha_q", "90",
-                                "-resize", str(target), "0", str(src), "-o", str(dst)],
+                                "-sharp_yuv", "-resize", str(min(size, w)), "0",
+                                str(src), "-o", str(dst)],
                                capture_output=True)
 
         # Abmessungen der ausgelieferten Grössen (für width/height gegen CLS)
@@ -151,6 +161,7 @@ def main():
             "key": k,
             "w": w, "h": h,
             "ratio": round(h / w, 4) if w else 1.0,
+            "sizes": stufen,
         }
         ok += 1
         print(f"  [{i:2}/{len(paths)}] {path}  {w}×{h}  -> {k}")

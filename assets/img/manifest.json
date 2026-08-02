@@ -3,672 +3,1154 @@
   "key": "delta-2b5a06",
   "w": 1136,
   "h": 1376,
-  "ratio": 1.2113
+  "ratio": 1.2113,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2019/10/deltadigital.png": {
   "key": "deltadigital-9113a6",
   "w": 1298,
   "h": 1500,
-  "ratio": 1.1556
+  "ratio": 1.1556,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2019/10/mcu11.png": {
   "key": "mcu11-c46e0f",
   "w": 1040,
   "h": 1472,
-  "ratio": 1.4154
+  "ratio": 1.4154,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2019/10/plasmatig.png": {
   "key": "plasmatig-ff43ab",
   "w": 1118,
   "h": 1484,
-  "ratio": 1.3274
+  "ratio": 1.3274,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2019/10/usb2in1programmer.png": {
   "key": "usb2in1programmer-eb54f9",
   "w": 1416,
   "h": 694,
-  "ratio": 0.4901
+  "ratio": 0.4901,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/STT30.png": {
   "key": "stt30-b9524e",
   "w": 802,
   "h": 1322,
-  "ratio": 1.6484
+  "ratio": 1.6484,
+  "sizes": [
+   400
+  ]
  },
  "2020/03/delta-digital-ds.png": {
   "key": "delta-digital-ds-04fd14",
   "w": 1376,
   "h": 1500,
-  "ratio": 1.0901
+  "ratio": 1.0901,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/frc5.png": {
   "key": "frc5-b96832",
   "w": 1246,
   "h": 852,
-  "ratio": 0.6838
+  "ratio": 0.6838,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/hypertig-ac-dc-cwk.png": {
   "key": "hypertig-ac-dc-cwk-6cafbb",
   "w": 1152,
   "h": 1480,
-  "ratio": 1.2847
+  "ratio": 1.2847,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/i-1600.png": {
   "key": "i-1600-b54bf1",
   "w": 1062,
   "h": 1314,
-  "ratio": 1.2373
+  "ratio": 1.2373,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/minicleaner.png": {
   "key": "minicleaner-530c59",
   "w": 1438,
   "h": 1452,
-  "ratio": 1.0097
+  "ratio": 1.0097,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/rc100.png": {
   "key": "rc100-3d8e6e",
   "w": 518,
   "h": 1272,
-  "ratio": 2.4556
+  "ratio": 2.4556,
+  "sizes": [
+   400
+  ]
  },
  "2020/03/rc100ds.png": {
   "key": "rc100ds-b37007",
   "w": 536,
   "h": 1348,
-  "ratio": 2.5149
+  "ratio": 2.5149,
+  "sizes": [
+   400
+  ]
  },
  "2020/03/rc15.png": {
   "key": "rc15-9cf0ea",
   "w": 518,
   "h": 1224,
-  "ratio": 2.3629
+  "ratio": 2.3629,
+  "sizes": [
+   400
+  ]
  },
  "2020/03/rc5.png": {
   "key": "rc5-28ba3f",
   "w": 762,
   "h": 822,
-  "ratio": 1.0787
+  "ratio": 1.0787,
+  "sizes": [
+   400
+  ]
  },
  "2020/03/theta-120-hsc.png": {
   "key": "theta-120-hsc-ea8bb1",
   "w": 1268,
   "h": 1470,
-  "ratio": 1.1593
+  "ratio": 1.1593,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/theta-40.png": {
   "key": "theta-40-d58c4f",
   "w": 1500,
   "h": 960,
-  "ratio": 0.64
+  "ratio": 0.64,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/theta-60-hsc.png": {
   "key": "theta-60-hsc-b1f221",
   "w": 1036,
   "h": 1288,
-  "ratio": 1.2432
+  "ratio": 1.2432,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/wk200.png": {
   "key": "wk200-1d9197",
   "w": 862,
   "h": 848,
-  "ratio": 0.9838
+  "ratio": 0.9838,
+  "sizes": [
+   400
+  ]
  },
  "2020/03/wk300.png": {
   "key": "wk300-7d9dd1",
   "w": 1044,
   "h": 954,
-  "ratio": 0.9138
+  "ratio": 0.9138,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/03/wk350.png": {
   "key": "wk350-d5811b",
   "w": 862,
   "h": 848,
-  "ratio": 0.9838
+  "ratio": 0.9838,
+  "sizes": [
+   400
+  ]
  },
  "2020/09/Fahrwagen-fur-Cleaner.png": {
   "key": "fahrwagen-fur-cleaner-b58137",
   "w": 1036,
   "h": 1510,
-  "ratio": 1.4575
+  "ratio": 1.4575,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/11/HyperCleaner-ST-Plus_SET.png": {
   "key": "hypercleaner-st-plus-set-6b6be7",
   "w": 1117,
   "h": 815,
-  "ratio": 0.7296
+  "ratio": 0.7296,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2020/12/HCS-1-SET.png": {
   "key": "hcs-1-set-7b79ff",
   "w": 1287,
   "h": 1062,
-  "ratio": 0.8252
+  "ratio": 0.8252,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2021/04/Beta-Digital-300.png": {
   "key": "beta-digital-300-47dc7e",
   "w": 1024,
   "h": 1177,
-  "ratio": 1.1494
+  "ratio": 1.1494,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2021/04/HyperCleaner-CT200-SET.png": {
   "key": "hypercleaner-ct200-set-04fafd",
   "w": 1202,
   "h": 759,
-  "ratio": 0.6314
+  "ratio": 0.6314,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2021/05/MIG_Brenner.png": {
   "key": "mig-brenner-456028",
   "w": 460,
   "h": 428,
-  "ratio": 0.9304
+  "ratio": 0.9304,
+  "sizes": [
+   400
+  ]
  },
  "2021/05/STT35.png": {
   "key": "stt35-629751",
   "w": 1529,
   "h": 2291,
-  "ratio": 1.4984
+  "ratio": 1.4984,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2021/05/ZSW.png": {
   "key": "zsw-27144f",
   "w": 238,
   "h": 203,
-  "ratio": 0.8529
+  "ratio": 0.8529,
+  "sizes": [
+   400
+  ]
  },
  "2021/06/1801001.png": {
   "key": "1801001-78aea8",
   "w": 4386,
   "h": 2102,
-  "ratio": 0.4793
+  "ratio": 0.4793,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2021/06/1802001.png": {
   "key": "1802001-6105bc",
   "w": 4686,
   "h": 2074,
-  "ratio": 0.4426
+  "ratio": 0.4426,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2021/06/Elektrodenhalter.png": {
   "key": "elektrodenhalter-0c0a16",
   "w": 472,
   "h": 602,
-  "ratio": 1.2754
+  "ratio": 1.2754,
+  "sizes": [
+   400
+  ]
  },
  "2021/06/Masse_Kabel_16qmm.png": {
   "key": "masse-kabel-16qmm-84051c",
   "w": 1068,
   "h": 1031,
-  "ratio": 0.9654
+  "ratio": 0.9654,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2021/06/Massekabel.png": {
   "key": "massekabel-262794",
   "w": 434,
   "h": 296,
-  "ratio": 0.682
+  "ratio": 0.682,
+  "sizes": [
+   400
+  ]
  },
  "2021/06/PSHB250.png": {
   "key": "pshb250-86579a",
   "w": 1243,
   "h": 1396,
-  "ratio": 1.1231
+  "ratio": 1.1231,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2021/06/WIG_Brenner.png": {
   "key": "wig-brenner-4b3784",
   "w": 242,
   "h": 363,
-  "ratio": 1.5
+  "ratio": 1.5,
+  "sizes": [
+   400
+  ]
  },
  "2022/03/Bild-der-Hypers.png": {
   "key": "bild-der-hypers-bd9aca",
   "w": 1378,
   "h": 1246,
-  "ratio": 0.9042
+  "ratio": 0.9042,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2022/03/DVS410.png": {
   "key": "dvs410-027fed",
   "w": 3236,
   "h": 2478,
-  "ratio": 0.7658
+  "ratio": 0.7658,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2022/03/HyperMIG_EX_Frontpanel..png": {
   "key": "hypermig-ex-frontpanel-daecfe",
   "w": 6377,
   "h": 3661,
-  "ratio": 0.5741
+  "ratio": 0.5741,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2022/03/HyperMIG_HX_Frontpanel.png": {
   "key": "hypermig-hx-frontpanel-03a7d8",
   "w": 6377,
   "h": 3661,
-  "ratio": 0.5741
+  "ratio": 0.5741,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2022/03/PSHB125.png": {
   "key": "pshb125-ab85b8",
   "w": 3306,
   "h": 7928,
-  "ratio": 2.3981
+  "ratio": 2.3981,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2022/05/1850002.png": {
   "key": "1850002-8e2ce8",
   "w": 792,
   "h": 2362,
-  "ratio": 2.9823
+  "ratio": 2.9823,
+  "sizes": [
+   400
+  ]
  },
  "2022/05/1851002.png": {
   "key": "1851002-965760",
   "w": 790,
   "h": 2362,
-  "ratio": 2.9899
+  "ratio": 2.9899,
+  "sizes": [
+   400
+  ]
  },
  "2022/05/1852002.png": {
   "key": "1852002-a43991",
   "w": 816,
   "h": 2362,
-  "ratio": 2.8946
+  "ratio": 2.8946,
+  "sizes": [
+   400
+  ]
  },
  "2022/05/1853001.png": {
   "key": "1853001-160836",
   "w": 1490,
   "h": 3780,
-  "ratio": 2.5369
+  "ratio": 2.5369,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2022/05/1855002.png": {
   "key": "1855002-1c6ae6",
   "w": 770,
   "h": 2316,
-  "ratio": 3.0078
+  "ratio": 3.0078,
+  "sizes": [
+   400
+  ]
  },
  "2022/05/PSHB_KIT_BOX.png": {
   "key": "pshb-kit-box-afd0eb",
   "w": 342,
   "h": 221,
-  "ratio": 0.6462
+  "ratio": 0.6462,
+  "sizes": [
+   400
+  ]
  },
  "2022/05/VorchubRolle_SFST4.png": {
   "key": "vorchubrolle-sfst4-8d1221",
   "w": 1716,
   "h": 1080,
-  "ratio": 0.6294
+  "ratio": 0.6294,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "2022/06/IMGP5680.png": {
   "key": "imgp5680-e9d5f8",
   "w": 2714,
   "h": 3358,
-  "ratio": 1.2373
+  "ratio": 1.2373,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2023/01/HyperMIG_SX_Frontpanel.png": {
   "key": "hypermig-sx-frontpanel-afcdc4",
   "w": 3188,
   "h": 1830,
-  "ratio": 0.574
+  "ratio": 0.574,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2023/03/IMGP5689.png": {
   "key": "imgp5689-6b1086",
   "w": 2118,
   "h": 2690,
-  "ratio": 1.2701
+  "ratio": 1.2701,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2023/03/IMGP5826.png": {
   "key": "imgp5826-c39465",
   "w": 2626,
   "h": 2826,
-  "ratio": 1.0762
+  "ratio": 1.0762,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2023/03/analog.png": {
   "key": "analog-8456e7",
   "w": 536,
   "h": 586,
-  "ratio": 1.0933
+  "ratio": 1.0933,
+  "sizes": [
+   400
+  ]
  },
  "2023/06/IMG_1279-1.png": {
   "key": "img-1279-1-d711ce",
   "w": 6546,
   "h": 6914,
-  "ratio": 1.0562
+  "ratio": 1.0562,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2024/06/IMGP5943.png": {
   "key": "imgp5943-0c2fdc",
   "w": 1397,
   "h": 1851,
-  "ratio": 1.325
+  "ratio": 1.325,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2024/06/IMGP5957.png": {
   "key": "imgp5957-394c09",
   "w": 1423,
   "h": 1861,
-  "ratio": 1.3078
+  "ratio": 1.3078,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2024/09/DVL420.png": {
   "key": "dvl420-62bc32",
   "w": 1181,
   "h": 936,
-  "ratio": 0.7925
+  "ratio": 0.7925,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2025/07/HyperCleanerST_SET_NEW.png": {
   "key": "hypercleanerst-set-new-8b4786",
   "w": 1146,
   "h": 728,
-  "ratio": 0.6353
+  "ratio": 0.6353,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2026/01/Beta220DX_Pro.png": {
   "key": "beta220dx-pro-739811",
   "w": 2982,
   "h": 3048,
-  "ratio": 1.0221
+  "ratio": 1.0221,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2026/01/IMGP6030_1.png": {
   "key": "imgp6030-1-8aa671",
   "w": 3006,
   "h": 3504,
-  "ratio": 1.1657
+  "ratio": 1.1657,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2026/01/IMGP6034_1.png": {
   "key": "imgp6034-1-2ff594",
   "w": 1505,
   "h": 1807,
-  "ratio": 1.2007
+  "ratio": 1.2007,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "2026/01/MLF100_A.png": {
   "key": "mlf100-a-9a2566",
   "w": 3066,
   "h": 1344,
-  "ratio": 0.4384
+  "ratio": 0.4384,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2026/01/Omega220AX-Pro.png": {
   "key": "omega220ax-pro-1220b7",
   "w": 2982,
   "h": 3048,
-  "ratio": 1.0221
+  "ratio": 1.0221,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "2026/03/MMS3000_X_MMS2000.png": {
   "key": "mms3000-x-mms2000-71d9a8",
   "w": 2469,
   "h": 1661,
-  "ratio": 0.6727
+  "ratio": 0.6727,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/BetaDX_Pro_Panel.png": {
   "key": "betadx-pro-panel",
   "w": 2428,
   "h": 1535,
   "ratio": 0.6322,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/BetaDX_Syn_Panel.png": {
   "key": "betadx-syn-panel",
   "w": 2430,
   "h": 1537,
   "ratio": 0.6325,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/BetaDigital_Profi_Panel.PNG": {
   "key": "betadigital-profi-panel",
   "w": 1948,
   "h": 992,
   "ratio": 0.5092,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/BetaDigital_Syn_Panel.png": {
   "key": "betadigital-syn-panel",
   "w": 2430,
   "h": 1537,
   "ratio": 0.6325,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/CT200_Panel.png": {
   "key": "ct200-panel",
   "w": 1949,
   "h": 993,
   "ratio": 0.5095,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/CT200_Syn_Panel.png": {
   "key": "ct200-syn-panel",
   "w": 1948,
   "h": 992,
   "ratio": 0.5092,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/Cleaner ST.png": {
   "key": "cleaner-st",
   "w": 1158,
   "h": 818,
   "ratio": 0.7064,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "panels/DVS_Panel.png": {
   "key": "dvs-panel",
   "w": 2244,
   "h": 1535,
   "ratio": 0.684,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/Delta1800.png": {
   "key": "delta1800",
   "w": 741,
   "h": 436,
   "ratio": 0.5884,
-  "local": true
+  "local": true,
+  "sizes": [
+   400
+  ]
  },
  "panels/DeltaDigital_1800.png": {
   "key": "deltadigital-1800",
   "w": 471,
   "h": 278,
   "ratio": 0.5902,
-  "local": true
+  "local": true,
+  "sizes": [
+   400
+  ]
  },
  "panels/DeltaDigital_BIG_Panel.png": {
   "key": "deltadigital-big-panel",
   "w": 623,
   "h": 318,
   "ratio": 0.5104,
-  "local": true
+  "local": true,
+  "sizes": [
+   400
+  ]
  },
  "panels/EcoMIG-LowCost_Frontpanel.png": {
   "key": "ecomig-lowcost-frontpanel",
   "w": 5787,
   "h": 3727,
   "ratio": 0.644,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/EcoMIG_Analog.png": {
   "key": "ecomig-analog",
   "w": 2867,
   "h": 1863,
   "ratio": 0.6498,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/EcoPulse_Gross_CAG_Panel.png": {
   "key": "ecopulse-gross-cag-panel",
   "w": 6377,
   "h": 3661,
   "ratio": 0.5741,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/EcoPulse_Gross_TIG_Panel.png": {
   "key": "ecopulse-gross-tig-panel",
   "w": 6377,
   "h": 3661,
   "ratio": 0.5741,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/EcoPulse_Klein_CAG_Panel.png": {
   "key": "ecopulse-klein-cag-panel",
   "w": 4370,
   "h": 3661,
   "ratio": 0.8378,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/EcoPulse_Klein_TIG_Panel.png": {
   "key": "ecopulse-klein-tig-panel",
   "w": 4370,
   "h": 3661,
   "ratio": 0.8378,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HighSpeed_Panel.PNG": {
   "key": "highspeed-panel",
   "w": 1473,
   "h": 850,
   "ratio": 0.5771,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "panels/HyperCleaner_ST_Plus_Panell.png": {
   "key": "hypercleaner-st-plus-panell",
   "w": 3899,
   "h": 1988,
   "ratio": 0.5099,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperClenaerST_Panel.png": {
   "key": "hyperclenaerst-panel",
   "w": 687,
   "h": 417,
   "ratio": 0.607,
-  "local": true
+  "local": true,
+  "sizes": [
+   400
+  ]
  },
  "panels/HyperMIG_EX_Frontpanel..png": {
   "key": "hypermig-ex-frontpanel",
   "w": 6377,
   "h": 3661,
   "ratio": 0.5741,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperMIG_HX_Frontpanel.png": {
   "key": "hypermig-hx-frontpanel",
   "w": 6377,
   "h": 3661,
   "ratio": 0.5741,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperMIG_SX_Frontpanel.png": {
   "key": "hypermig-sx-frontpanel",
   "w": 3188,
   "h": 1830,
   "ratio": 0.574,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperTIG_ACDC_Panel.png": {
   "key": "hypertig-acdc-panel",
   "w": 3188,
   "h": 1830,
   "ratio": 0.574,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperTIG_AX_Frontpanel.png": {
   "key": "hypertig-ax-frontpanel",
   "w": 2787,
   "h": 1830,
   "ratio": 0.6566,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperTIG_DX_Frontpanel.png": {
   "key": "hypertig-dx-frontpanel",
   "w": 2787,
   "h": 1830,
   "ratio": 0.6566,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/HyperUp_Panel.png": {
   "key": "hyperup-panel",
   "w": 1020,
   "h": 585,
   "ratio": 0.5735,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "panels/Hyper_Panel.png": {
   "key": "hyper-panel",
   "w": 3188,
   "h": 1830,
   "ratio": 0.574,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/Hyper_TIG_DC_Panel.PNG": {
   "key": "hyper-tig-dc-panel",
   "w": 1020,
   "h": 585,
   "ratio": 0.5735,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "panels/MCU1_Panel.png": {
   "key": "mcu1-panel",
   "w": 2369,
   "h": 1275,
   "ratio": 0.5382,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/MMS2000C_Panel.png": {
   "key": "mms2000c-panel",
   "w": 2244,
   "h": 1535,
   "ratio": 0.684,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/MiniCleaner_Panel.png": {
   "key": "minicleaner-panel",
   "w": 1158,
   "h": 818,
   "ratio": 0.7064,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000
+  ]
  },
  "panels/Omega AX SYN.png": {
   "key": "omega-ax-syn",
   "w": 2430,
   "h": 1537,
   "ratio": 0.6325,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/OmegaAX Pro.png": {
   "key": "omegaax-pro",
   "w": 2430,
   "h": 1537,
   "ratio": 0.6325,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/Omega_Profi_Panel.png": {
   "key": "omega-profi-panel",
   "w": 1949,
   "h": 994,
   "ratio": 0.51,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/Omega_Syn_Panel.png": {
   "key": "omega-syn-panel",
   "w": 1948,
   "h": 992,
   "ratio": 0.5092,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/Theta40_Panel.png": {
   "key": "theta40-panel",
   "w": 1949,
   "h": 993,
   "ratio": 0.5095,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/ThetaHSC_Panel.png": {
   "key": "thetahsc-panel",
   "w": 1949,
   "h": 993,
   "ratio": 0.5095,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600
+  ]
  },
  "panels/c-MIG_Panel.png": {
   "key": "c-mig-panel",
   "w": 724,
   "h": 585,
   "ratio": 0.808,
-  "local": true
+  "local": true,
+  "sizes": [
+   400
+  ]
  },
  "panels/c-MIG_WWK_Panel.png": {
   "key": "c-mig-wwk-panel",
   "w": 2185,
   "h": 1830,
   "ratio": 0.8375,
-  "local": true
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   2000
+  ]
  },
  "panels/i_1600.png": {
   "key": "i-1600",
   "w": 447,
   "h": 276,
   "ratio": 0.6174,
-  "local": true
+  "local": true,
+  "sizes": [
+   400
+  ]
  },
  "panels/MPT_Plasmaschneidtisch.png": {
   "key": "mpt-plasmaschneidtisch",

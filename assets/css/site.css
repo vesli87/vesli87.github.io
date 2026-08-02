@@ -242,6 +242,36 @@
   .galthumb img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
   .galthumb.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
   .galthumb:hover{border-color:var(--accent)}
+  /* Lupe. Anklickbare Bilder tragen die Klasse .zoomable; das kleine Zeichen
+     oben rechts sagt, dass sich das Bild vergroessern laesst - ohne Hinweis
+     probiert es niemand aus. */
+  .zoomable{cursor:zoom-in}
+  .dimg .lupe-hint,.fp-panel .lupe-hint{position:absolute;right:12px;top:12px;z-index:2;
+    width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.9);
+    border:1px solid var(--line);display:grid;place-items:center;color:var(--ink);
+    font-size:15px;pointer-events:none}
+  .fp-panel{position:relative}
+  .lupe{position:fixed;inset:0;z-index:9000;background:rgba(12,13,15,.94);
+    display:grid;grid-template-rows:auto 1fr auto;gap:10px;padding:14px}
+  .lupe[hidden]{display:none}
+  .lupe-kopf{display:flex;justify-content:flex-end;gap:8px}
+  .lupe-btn{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
+    background:rgba(255,255,255,.08);color:#fff;font-size:19px;line-height:1;cursor:pointer;
+    display:grid;place-items:center;padding:0}
+  .lupe-btn:hover{background:rgba(255,255,255,.2);border-color:#fff}
+  .lupe-buehne{overflow:auto;display:grid;place-items:center}
+  .lupe-buehne img{max-width:100%;max-height:100%;width:auto;height:auto;
+    object-fit:contain;cursor:zoom-in;background:#fff;border-radius:6px}
+  .lupe.gross .lupe-buehne{place-items:start}
+  .lupe.gross .lupe-buehne img{max-width:none;max-height:none;cursor:zoom-out}
+  .lupe-fuss{display:flex;align-items:center;justify-content:center;gap:14px;color:#CFCBC3;
+    font-size:13px;min-height:34px;text-align:center}
+  .lupe-nav{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
+    background:rgba(255,255,255,.08);color:#fff;font-size:22px;line-height:1;cursor:pointer;
+    display:grid;place-items:center;padding:0;flex:0 0 auto}
+  .lupe-nav:hover{background:rgba(255,255,255,.2);border-color:#fff}
+  .lupe-txt{max-width:70ch}
+  body.lupe-offen{overflow:hidden}
   /* Optionen: Bezeichnung und Zusatz getrennt, damit die Liste beim Überfliegen
      lesbar bleibt. Preise stehen hier nie – die klärt die Anfrage. */
   .opth{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:18px;margin-bottom:14px}

@@ -86,7 +86,7 @@ def front_html(lang, p):
         out.append(f'<h3 class="besond">{e(C.t(lang, "highlights"))}</h3>'
                    '<div class="varianten">')
         for name, img, items in varianten:
-            bild = R.img_tag(img, "(max-width:760px) 90vw, 260px", cls="var-img",
+            bild = R.img_tag(img, "(max-width:760px) 90vw, 260px", cls="var-img zoomable",
                              alt=f"{C.BRAND} {name}", width=260)
             out.append(f'<div class="variante"><h4 class="var-t">{e(name)}</h4>{bild}'
                        '<ul class="besond-list var-list">'
@@ -117,7 +117,8 @@ def front_html(lang, p):
             ph = (src.get(lang) or src["de"]) if src else []
             if fp.get("img"):
                 media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",
-                                  cls="fp-photo", alt=f"{C.BRAND} {fp['n']}", width=340)
+                                  cls="fp-photo zoomable",
+                                  alt=f"{C.BRAND} {fp['n']}", width=340)
             else:
                 media = PANEL_DRAWN["big" if fp.get("big") else "small"]
             bes = ""
@@ -204,7 +205,7 @@ def media_html(lang, p, nm):
     vtag = f'<span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>'
     if len(bilder) == 1:
         return ('<div class="dimg">' + vtag
-                + R.img_tag(p["img"], "(max-width:900px) 92vw, 520px",
+                + R.img_tag(p["img"], "(max-width:900px) 92vw, 520px", cls="zoomable",
                             alt=haupt["alt"], eager=True, width=560)
                 + "</div>")
 
@@ -212,7 +213,7 @@ def media_html(lang, p, nm):
     for i, b in enumerate(bilder):
         slides += (f'<figure class="galslide{" active" if i == 0 else ""}" '
                    f'id="gs-{e(p["id"])}-{i}">'
-                   + R.img_tag(b["img"], "(max-width:900px) 92vw, 520px",
+                   + R.img_tag(b["img"], "(max-width:900px) 92vw, 520px", cls="zoomable",
                                alt=b["alt"], eager=(i == 0), width=560)
                    + (f'<figcaption>{e(b["cap"])}</figcaption>' if b["cap"] else "")
                    + "</figure>")

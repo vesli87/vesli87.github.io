@@ -81,6 +81,8 @@ WORKSHOP = {
     "region": "AR",
     "region_name": "Appenzell Ausserrhoden",
     "country_name": "Schweiz",
+    "lat": 47.3861,     # Herisau (AR), Naeherung fuer LocalBusiness
+    "lon": 9.2792,
 }
 
 # Verifizierung der Webmaster-Tools. Beide Dienste bieten eine Meta-Tag-Methode;

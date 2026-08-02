@@ -118,6 +118,7 @@ def img_abs(path, size=1000):
 
 def ld_org(lang=C.DEFAULT_LANG):
     co = C.COMPANY
+    vis = C.WORKSHOP
     return {
         "@type": ["Organization", "LocalBusiness", "Store"],
         "@id": f"{C.SITE}/#organization",
@@ -134,15 +135,20 @@ def ld_org(lang=C.DEFAULT_LANG):
         "image": f"{C.SITE}/assets/img/hero.jpg",
         "telephone": co["phone"],
         "email": co["email"],
+        # Besucheradresse, nicht Rechnungsadresse: hier wird Kundschaft
+        # empfangen, und genau diese Anschrift steht im Google-
+        # Unternehmensprofil. Weichen Profil und Website voneinander ab,
+        # bestaetigt Google den Eintrag nicht. Die Rechnungsadresse in
+        # Bronschhofen steht im Impressum und auf der Kontaktseite.
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": co["street"],
-            "postalCode": co["zip"],
-            "addressLocality": co["city"],
-            "addressRegion": co["region"],
-            "addressCountry": co["country"],
+            "streetAddress": vis["street"],
+            "postalCode": vis["zip"],
+            "addressLocality": vis["city"],
+            "addressRegion": vis["region"],
+            "addressCountry": "CH",
         },
-        "geo": {"@type": "GeoCoordinates", "latitude": co["lat"], "longitude": co["lon"]},
+        "geo": {"@type": "GeoCoordinates", "latitude": vis["lat"], "longitude": vis["lon"]},
         "openingHoursSpecification": [
             {"@type": "OpeningHoursSpecification", "dayOfWeek": h["days"],
              "opens": h["opens"], "closes": h["closes"]} for h in co["hours_schema"]
@@ -160,21 +166,6 @@ def ld_org(lang=C.DEFAULT_LANG):
             "Plasmaschneiden", "Elektrolytische Schweissnahtreinigung",
             "Schweissautomation", "EN 1090", "MAHE Schweissgeräte",
         ],
-        # Gearbeitet wird bei der Partnerfirma in Herisau, nicht an der
-        # Firmenadresse. Ohne diesen Knoten faehrt jemand mit einem defekten
-        # Geraet nach Bronschhofen und steht vor der falschen Tuer.
-        "hasPOS": [{
-            "@type": "Place",
-            "name": f"{co['name']} – Werkstatt bei {C.WORKSHOP['partner']}",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": C.WORKSHOP["street"],
-                "postalCode": C.WORKSHOP["zip"],
-                "addressLocality": C.WORKSHOP["city"],
-                "addressRegion": C.WORKSHOP["region"],
-                "addressCountry": "CH",
-            },
-        }],
         "contactPoint": [{
             "@type": "ContactPoint",
             "contactType": "sales",
@@ -446,10 +437,11 @@ def mega(lang):
 
 def header(lang, alts):
     co = C.COMPANY
+    vis = C.WORKSHOP
     return f"""<a class="skip" href="#main">{e(C.t(lang,'skip_link'))}</a>
 <div class="util"><div class="wrap">
   <div class="l"><a href="tel:{co['phone_href']}">{e(co['phone'])}</a>
-    <span>{e(co['city'])} · {co['region']}</span><span>{e(C.t(lang,'hours'))}</span></div>
+    <span>{e(vis['city'])} · {vis['region']}</span></div>
   <nav class="langs" aria-label="{e(C.t(lang,'lang_aria'))}">{lang_switch(lang, alts)}</nav>
 </div></div>
 
@@ -501,6 +493,7 @@ def cart_drawer(lang):
 
 def footer(lang):
     co = C.COMPANY
+    vis = C.WORKSHOP
     prod = "".join(f'<li><a href="{e(C.u_cat(lang, c["id"]))}">{e(C.catT(lang, c))}</a></li>'
                    for c in C.CATS)
     return f"""<footer>
@@ -519,7 +512,7 @@ def footer(lang):
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>
       </ul></div>
       <div><h2 class="fh">{e(C.t(lang,'site_name'))}</h2><ul>
-        <li><a href="{e(C.u_page(lang,'contact'))}">{e(co['street'])}, {co['zip']} {e(co['city'])}</a></li>
+        <li><a href="{e(C.u_page(lang,'contact'))}">{e(vis['street'])}, {vis['zip']} {e(vis['city'])}</a></li>
         <li><a href="tel:{co['phone_href']}">{e(co['phone'])}</a></li>
         <li><a href="mailto:{co['email']}">{co['email']}</a></li>
         <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_contact'))}</a></li>

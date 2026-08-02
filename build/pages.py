@@ -498,6 +498,7 @@ def page_downloads(lang):
 
 
 def page_contact(lang):
+    ws = C.WORKSHOP
     url, alts = C.u_page(lang, "contact"), C.alternates("page", key="contact")
     co = C.COMPANY
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
@@ -520,11 +521,22 @@ def page_contact(lang):
   <aside class="kinfo">
     <h2>{e(C.t(lang,'site_name'))}</h2>
     <address>
-      {e(co['street'])}<br>{co['zip']} {e(co['city'])}<br>{e(co['country_name'])}<br><br>
       <a class="accent" href="tel:{co['phone_href']}">{e(co['phone'])}</a><br>
       <a class="accent" href="mailto:{co['email']}">{co['email']}</a><br><br>
       {e(C.t(lang,'hours'))}
     </address>
+    <div class="korte">
+      <div>
+        <span class="kot">{e(C.t(lang,'addr_bill'))}</span>
+        <address>{e(co['street'])}<br>{co['zip']} {e(co['city'])}<br>{e(co['country_name'])}</address>
+      </div>
+      <div>
+        <span class="kot">{e(C.t(lang,'addr_shop'))}</span>
+        <address>{e(ws['street'])}<br>{ws['zip']} {e(ws['city'])}<br>{e(ws['country_name'])}</address>
+        <p class="kohint">{e(C.t(lang,'addr_shop_note'))}
+          <a href="{ws['partner_url']}" rel="noopener nofollow" target="_blank">{e(ws['partner'])}</a></p>
+      </div>
+    </div>
   </aside>
 </div></div>""")
     ld = [R.ld_org(lang),

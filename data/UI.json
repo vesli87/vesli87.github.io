@@ -97,7 +97,10 @@
   "v_wig_dc": "WIG DC",
   "v_mma": "MMA",
   "v_plasma": "Plasma",
-  "v_clean": "Reinigen"
+  "v_clean": "Reinigen",
+  "addr_bill": "Rechnungsadresse",
+  "addr_shop": "Werkstatt",
+  "addr_shop_note": "bei unserem Partner"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -197,7 +200,10 @@
   "v_wig_dc": "TIG DC",
   "v_mma": "MMA",
   "v_plasma": "Plasma",
-  "v_clean": "Nettoyage"
+  "v_clean": "Nettoyage",
+  "addr_bill": "Adresse de facturation",
+  "addr_shop": "Atelier",
+  "addr_shop_note": "chez notre partenaire"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -297,6 +303,9 @@
   "v_wig_dc": "TIG DC",
   "v_mma": "MMA",
   "v_plasma": "Plasma",
-  "v_clean": "Pulitura"
+  "v_clean": "Pulitura",
+  "addr_bill": "Indirizzo di fatturazione",
+  "addr_shop": "Officina",
+  "addr_shop_note": "presso il nostro partner"
  }
 }

@@ -69,6 +69,20 @@ COMPANY = {
     "founding_area": ["CH", "LI"],
 }
 
+# Die Werkstatt sitzt nicht an der Firmenadresse. Bildfeldstrasse ist die
+# Rechnungsadresse; gearbeitet wird bei der Partnerfirma in Herisau. Beides
+# gehoert auf die Seite - wer ein Geraet bringt, faehrt sonst falsch.
+WORKSHOP = {
+    "partner": "Schweisstechnik Scherrer AG",
+    "partner_url": "https://schweisstechnik-scherrer.ch/",
+    "street": "St. Gallerstrasse 49",
+    "zip": "9100",
+    "city": "Herisau",
+    "region": "AR",
+    "region_name": "Appenzell Ausserrhoden",
+    "country_name": "Schweiz",
+}
+
 # Verifizierung der Webmaster-Tools. Beide Dienste bieten eine Meta-Tag-Methode;
 # bei einer <user>.github.io-Adresse ist das der einzige gangbare Weg, weil die
 # DNS-Verifizierung eine eigene Domain voraussetzt.

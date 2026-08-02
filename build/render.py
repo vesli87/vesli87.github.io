@@ -160,6 +160,21 @@ def ld_org(lang=C.DEFAULT_LANG):
             "Plasmaschneiden", "Elektrolytische Schweissnahtreinigung",
             "Schweissautomation", "EN 1090", "MAHE Schweissgeräte",
         ],
+        # Gearbeitet wird bei der Partnerfirma in Herisau, nicht an der
+        # Firmenadresse. Ohne diesen Knoten faehrt jemand mit einem defekten
+        # Geraet nach Bronschhofen und steht vor der falschen Tuer.
+        "hasPOS": [{
+            "@type": "Place",
+            "name": f"{co['name']} – Werkstatt bei {C.WORKSHOP['partner']}",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": C.WORKSHOP["street"],
+                "postalCode": C.WORKSHOP["zip"],
+                "addressLocality": C.WORKSHOP["city"],
+                "addressRegion": C.WORKSHOP["region"],
+                "addressCountry": "CH",
+            },
+        }],
         "contactPoint": [{
             "@type": "ContactPoint",
             "contactType": "sales",

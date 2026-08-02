@@ -93,7 +93,11 @@
   /* Der Textblock muss links von der Maschine bleiben - im Banner beginnt
      sie bei 40 % der Breite. Laenger gesetzt, lief die Zeile in den
      Bildschirm der Bedienkonsole hinein. */
-  .hero-slide.light .hero-txt{color:var(--ink)}
+  /* Auf der hellen Folie steht die Schrift oben links: dort ist im Bild die
+     einzige freie Flaeche - links unten steht die Maschine, rechts das
+     Softwarefenster. Mittig gesetzt liefe der Text ueber den Bildschirm. */
+  .hero-slide.light .hero-txt{color:var(--ink);top:clamp(14px,7%,90px);transform:none;
+    max-width:min(31%,400px)}
   .hero-slide.light .hero-txt p{color:#4A453D}
   .hero-txt .hk{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.16em;
     text-transform:uppercase;font-size:clamp(11px,1.1vw,14px);color:var(--accent)}

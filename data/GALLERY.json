@@ -2,6 +2,12 @@
  "_kommentar": "Zusatzbilder unter dem Hauptbild der Produktseite. Je Eintrag: img = Schluessel wie in P.json, dazu die Bildunterschrift in de/fr/it. Der Alt-Text entsteht aus der Bildunterschrift, deshalb muss sie beschreiben, was zu sehen ist - nicht nur 'Screenshot'. Die MyPlasm-Bilder stammen aus dem Softwarehandbuch von Proma Elektronika (MyPlasmCNCen.pdf, v1.2). Die Quelle steht in der Bildunterschrift; eine schriftliche Freigabe von Proma sollte nachgeholt werden.",
  "mpt-3001": [
   {
+   "img": "panels/MyPlasm_Hauptfenster.png",
+   "de": "MyPlasm CNC: das Hauptfenster mit der Bahnanalyse. Links die Schneidparameter, oben rechts die Auswertung des geladenen Teils – Zahl der Einstiche, Schnittlänge und geschätzte Schneidzeit; die Farben der Bahnen zeigen, wo die volle Schneidgeschwindigkeit gehalten werden kann.",
+   "fr": "MyPlasm CNC : la fenêtre principale avec l'analyse des parcours. À gauche les paramètres de coupe, en haut à droite l'évaluation de la pièce chargée – nombre de perçages, longueur de coupe et temps estimé ; la couleur des parcours indique où la vitesse de coupe complète peut être tenue.",
+   "it": "MyPlasm CNC: la finestra principale con l'analisi dei percorsi. A sinistra i parametri di taglio, in alto a destra la valutazione del pezzo caricato – numero di sfondamenti, lunghezza di taglio e tempo stimato; il colore dei percorsi indica dove è possibile mantenere la piena velocità di taglio."
+  },
+  {
    "img": "panels/MyPlasm_Markieren.png",
    "de": "MyPlasm CNC: Markieren und Anreissen im Hauptfenster. Die Markierbahnen liegen auf einer eigenen Layerfarbe und werden mit eigener Geschwindigkeit gefahren; links die Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit. Quelle: Handbuch Proma Elektronika",
    "fr": "MyPlasm CNC : marquage et traçage dans la fenêtre principale. Les parcours de marquage sont attribués à une couleur de calque dédiée et exécutés à leur propre vitesse ; à gauche les paramètres de coupe avec hauteur de coupe, tension de consigne THC, hauteur et temps de perçage. Source : manuel Proma Elektronika",
@@ -15,6 +21,12 @@
   }
  ],
  "mpt-2501": [
+  {
+   "img": "panels/MyPlasm_Hauptfenster.png",
+   "de": "MyPlasm CNC: das Hauptfenster mit der Bahnanalyse. Links die Schneidparameter, oben rechts die Auswertung des geladenen Teils – Zahl der Einstiche, Schnittlänge und geschätzte Schneidzeit; die Farben der Bahnen zeigen, wo die volle Schneidgeschwindigkeit gehalten werden kann.",
+   "fr": "MyPlasm CNC : la fenêtre principale avec l'analyse des parcours. À gauche les paramètres de coupe, en haut à droite l'évaluation de la pièce chargée – nombre de perçages, longueur de coupe et temps estimé ; la couleur des parcours indique où la vitesse de coupe complète peut être tenue.",
+   "it": "MyPlasm CNC: la finestra principale con l'analisi dei percorsi. A sinistra i parametri di taglio, in alto a destra la valutazione del pezzo caricato – numero di sfondamenti, lunghezza di taglio e tempo stimato; il colore dei percorsi indica dove è possibile mantenere la piena velocità di taglio."
+  },
   {
    "img": "panels/MyPlasm_Markieren.png",
    "de": "MyPlasm CNC: Markieren und Anreissen im Hauptfenster. Die Markierbahnen liegen auf einer eigenen Layerfarbe und werden mit eigener Geschwindigkeit gefahren; links die Schneidparameter mit Schnitthöhe, THC-Sollspannung, Einstichhöhe und Einstichzeit. Quelle: Handbuch Proma Elektronika",

@@ -154,6 +154,7 @@ ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
 OPT       = _load("OPT")         # Optionen je Geraet, aus der MAHE-Preisliste
+DLDEV     = _load("DLDEV")       # Anleitungen/Datenblaetter je Geraet bei MAHE
 GALLERY   = _load("GALLERY")     # Zusatzbilder unter dem Hauptbild
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")

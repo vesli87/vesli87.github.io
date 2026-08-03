@@ -25,8 +25,14 @@ DL_SDS = {d["k"]: d for d in C.DLS if d["k"] != "PDF"}     # R1, RP1, P1, M1, N1
 # --------------------------------------------------------------------------
 
 def dls_for(p):
-    """Für das Produkt relevante PDFs – Sicherheitsdatenblätter zuerst."""
-    out = []
+    """Für das Produkt relevante PDFs.
+
+    Zuerst das, was zu genau diesem Gerät gehört: Bedienungsanleitung und
+    technisches Datenblatt beim Hersteller. Danach erst das Allgemeine -
+    Sicherheitsdatenblätter, EN-1090-Zertifikat, Katalog. Wer eine Anleitung
+    sucht, soll sie nicht unter drei generischen PDFs hervorkramen müssen.
+    """
+    out = list(C.DLDEV.get(p["id"], []))
     if p["sub"] == "Elektrolyte" and p["id"].upper() in DL_SDS:
         out.append(DL_SDS[p["id"].upper()])
     if p["cat"] == "reinigung" and p["sub"] == "Cleaner":

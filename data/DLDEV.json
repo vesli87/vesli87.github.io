@@ -1,0 +1,953 @@
+{
+ "_kommentar": "Bedienungsanleitungen und technische Datenblaetter je Geraet, verlinkt auf mahe-online.de. Erzeugt aus dem Seitencache mit build/scrape_dls.py - nicht von Hand pflegen, sondern das Skript neu laufen lassen.",
+ "beta-digital": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/12/Beta_digital_200_2500_3000_11.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Beta digital Pro",
+    "fr": "Fiche technique Beta digital Pro",
+    "it": "Scheda tecnica Beta digital Pro"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Beta_digital.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Beta digital Syn",
+    "fr": "Fiche technique Beta digital Syn",
+    "it": "Scheda tecnica Beta digital Syn"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Beta_digital_SYN.pdf"
+  }
+ ],
+ "beta-dx": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/Beta_DX_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Beta DX pro",
+    "fr": "Fiche technique Beta DX pro",
+    "it": "Scheda tecnica Beta DX pro"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/Beta-DX-pro-Technisches-Datenblatt.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Beta DX syn",
+    "fr": "Fiche technique Beta DX syn",
+    "it": "Scheda tecnica Beta DX syn"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/Beta-DX-syn-Technisches-Datenblatt.pdf"
+  }
+ ],
+ "delta": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Delta_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Delta.pdf"
+  }
+ ],
+ "delta-digital": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Delta_Digital_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Delta_digital.pdf"
+  }
+ ],
+ "delta-digital-ds": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2024/03/Delta_Digital_DS_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Delta_digital_DS.pdf"
+  }
+ ],
+ "ecomig": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/03/EcoMIG_12_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/07/EcoMIG_Digital_Analog_Web_V2.pdf"
+  }
+ ],
+ "hcs1": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung Signiergerät HCS 1",
+    "fr": "Mode d'emploi Signiergerät HCS 1",
+    "it": "Istruzioni per l'uso Signiergerät HCS 1"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/MiniMarker-HCS1_DE_EN.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Signiergerät HCS1",
+    "fr": "Fiche technique Signiergerät HCS1",
+    "it": "Scheda tecnica Signiergerät HCS1"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Mini-Marker-HCS1.pdf"
+  }
+ ],
+ "hypercleaner-ct200": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleanerCT200_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperCleaner CT 200",
+    "fr": "Fiche technique HyperCleaner CT 200",
+    "it": "Scheda tecnica HyperCleaner CT 200"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner_CT200.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperCleaner CT 200 Synergy",
+    "fr": "Fiche technique HyperCleaner CT 200 Synergy",
+    "it": "Scheda tecnica HyperCleaner CT 200 Synergy"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner_CT200_SYN.pdf"
+  }
+ ],
+ "hypercleaner-plus": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/HyperCleaner-STSpeed_STPlus_25_DE_EN_ES.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner_ST_Plus.pdf"
+  }
+ ],
+ "hypercleaner-speed": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/HyperCleaner-STSpeed_STPlus_25_DE_EN_ES.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner_ST_Speed.pdf"
+  }
+ ],
+ "hypercleaner-st": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner-ST_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner_ST.pdf"
+  }
+ ],
+ "hypermig-x": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/01/HyperMIG_X_13_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperMIG X CWK",
+    "fr": "Fiche technique HyperMIG X CWK",
+    "it": "Scheda tecnica HyperMIG X CWK"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_CWK.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperMIG X CGK",
+    "fr": "Fiche technique HyperMIG X CGK",
+    "it": "Scheda tecnica HyperMIG X CGK"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_CGK.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperMIG X WWK",
+    "fr": "Fiche technique HyperMIG X WWK",
+    "it": "Scheda tecnica HyperMIG X WWK"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_WWK.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperMIG X WGK",
+    "fr": "Fiche technique HyperMIG X WGK",
+    "it": "Scheda tecnica HyperMIG X WGK"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_WGK.pdf"
+  }
+ ],
+ "hypertig-acdc": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/12/HyperTIG_DC_ACDC_25_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/12/HyperTIG_ACDC_CWK.pdf"
+  }
+ ],
+ "hypertig-ax": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2024/06/HyperTIG_X_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2024/06/HyperTIG-AX-Technisches-Datenblatt.pdf"
+  }
+ ],
+ "hypertig-dx": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2024/06/HyperTIG_X_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2024/06/HyperTIG-DX-Technisches-Datenblatt.pdf"
+  }
+ ],
+ "i-1600": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/i_1600_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/i-1600.pdf"
+  }
+ ],
+ "minicleaner": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2025/04/MiniCleaner_1.2_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Mini_Cleaner.pdf"
+  }
+ ],
+ "mlf100": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/MLF100_Feeder_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/01/MLF100_DE.pdf"
+  }
+ ],
+ "mms": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung MMS 2000C",
+    "fr": "Mode d'emploi MMS 2000C",
+    "it": "Istruzioni per l'uso MMS 2000C"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/MMS2000C_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung MMS 2000P/3000",
+    "fr": "Mode d'emploi MMS 2000P/3000",
+    "it": "Istruzioni per l'uso MMS 2000P/3000"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/03/MMS2000-MMS3000_41_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt MMS 2000C",
+    "fr": "Fiche technique MMS 2000C",
+    "it": "Scheda tecnica MMS 2000C"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/MMS2000C.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt MMS2000P",
+    "fr": "Fiche technique MMS2000P",
+    "it": "Scheda tecnica MMS2000P"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/03/MMS2000PEX_Datenblatt.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt MMS 3000",
+    "fr": "Fiche technique MMS 3000",
+    "it": "Scheda tecnica MMS 3000"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/03/MMS3000EX_Datenblatt.pdf"
+  }
+ ],
+ "omega-ax": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/07/Omega_AX_14_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Omega AX pro",
+    "fr": "Fiche technique Omega AX pro",
+    "it": "Scheda tecnica Omega AX pro"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/03/OMEGA_AX_PRO_Datenblatt.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt Omega AX syn",
+    "fr": "Fiche technique Omega AX syn",
+    "it": "Scheda tecnica Omega AX syn"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/03/OMEGA_AX_SYN_Datenblatt.pdf"
+  }
+ ],
+ "plasma-tig": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2024/01/PlasmaTIG-CWK_11.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Plasma_TIG.pdf"
+  }
+ ],
+ "theta-120": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_HSC_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_120_HSC.pdf"
+  }
+ ],
+ "theta-120-aut": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_HSC_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_120_HSC.pdf"
+  }
+ ],
+ "theta-180": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_180_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/09/Theta_180_HSC.pdf"
+  }
+ ],
+ "theta-40": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta40_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_40.pdf"
+  }
+ ],
+ "theta-60": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_HSC_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_60_HSC.pdf"
+  }
+ ],
+ "theta-60-aut": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung",
+    "fr": "Mode d'emploi",
+    "it": "Istruzioni per l'uso"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_HSC_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt",
+    "fr": "Fiche technique",
+    "it": "Scheda tecnica"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_60_HSC.pdf"
+  }
+ ]
+}

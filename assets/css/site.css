@@ -209,8 +209,15 @@
   .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
   .pcard{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;transition:.2s}
   .pcard:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.35)}
-  .pcard .imgbox{background:#fff;aspect-ratio:1;display:grid;place-items:center;padding:18px;position:relative}
-  .pcard .imgbox img{width:100%;height:100%;object-fit:contain;background:#fff}
+  /* Das Seitenverhaeltnis kommt aus padding-bottom, nicht aus aspect-ratio:
+     Prozentwerte im padding beziehen sich auf die BREITE und werden von jedem
+     Browser gleich aufgeloest. Bei aspect-ratio entsteht die Hoehe erst aus
+     dem Verhaeltnis - eine Prozenthoehe des Bildes darin loest Chrome auf,
+     WebKit auf dem iPhone nicht. Dort behielt das Bild seine natuerliche
+     Groesse und lief aus der Karte heraus, quer ueber den Geraetenamen. */
+  .pcard .imgbox{background:#fff;position:relative;height:0;padding:0 0 100%;overflow:hidden}
+  .pcard .imgbox img{position:absolute;top:18px;left:18px;width:calc(100% - 36px);
+    height:calc(100% - 36px);object-fit:scale-down;background:#fff}
   .pcard .vtag{position:absolute;top:12px;left:12px;max-width:calc(100% - 24px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.05em;padding:4px 9px;border-radius:3px;line-height:1.35}
   .pcard .body{padding:16px 16px 0;flex:1}
   .pcard h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:19px;text-transform:uppercase;letter-spacing:.015em;line-height:1.18;overflow-wrap:break-word}
@@ -225,20 +232,23 @@
   /* Product detail */
   .detail{padding:40px 0 72px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
-  .dimg{background:#fff;border-radius:10px;padding:40px;display:grid;place-items:center;aspect-ratio:1;position:relative}
+  .dimg{background:#fff;border-radius:10px;position:relative;height:0;padding:0 0 100%;overflow:hidden}
   /* Nie über die echte Auflösung hinaus vergrössern. Manche Herstellerfotos
      sind nur gut 200 px breit; auf 520 px gezogen wirkten sie unscharf. Lieber
      klein und scharf als gross und verwaschen. */
-  .dimg img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
+  .dimg > img{position:absolute;top:40px;left:40px;width:calc(100% - 80px);
+    height:calc(100% - 80px);object-fit:scale-down;background:#fff}
   .dimg .vtag{position:absolute;top:16px;left:16px;max-width:calc(100% - 32px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.06em;padding:5px 11px;border-radius:3px;line-height:1.35}
   /* Bildbereich: ein grosses Bild, darunter der Miniaturstreifen. Ein Klick auf
      eine Miniatur tauscht das grosse Bild – dieselbe Bedienung wie in jedem
      Shop, und ohne JavaScript stehen einfach alle Bilder untereinander. */
   .dmedia{display:grid;gap:14px}
-  .galstage{width:100%;display:grid;place-items:center}
+  /* Die Buehne fuellt den Rahmen absolut aus - damit hat sie eine feste
+     Hoehe, und die Prozentangaben der Bilder darin gehen wieder auf. */
+  .galstage{position:absolute;inset:40px;display:grid;place-items:center}
   .galslide{display:none;margin:0;width:100%}
   .galslide.active{display:grid;place-items:center;gap:12px}
-  .galslide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff}
+  .galslide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:scale-down;background:#fff}
   .galslide figcaption{color:var(--muted);font-size:12.5px;line-height:1.5;text-align:left;width:100%}
   .galnav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;
     border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);
@@ -406,9 +416,9 @@
      blieb bei 261 - die Kacheln standen ungleich hoch und der Fahrwagen wirkte
      verloren. Absolut gesetzt gilt wieder das Seitenverhaeltnis, und jedes
      Bild bekommt gleich viel Flaeche. */
-  .acccard .im{background:#fff;aspect-ratio:1.15;padding:12px;position:relative;overflow:hidden}
-  .acccard .im img{position:absolute;inset:12px;margin:auto;
-    max-width:calc(100% - 24px);max-height:calc(100% - 24px);width:auto;height:auto;object-fit:contain}
+  .acccard .im{background:#fff;position:relative;height:0;padding:0 0 87%;overflow:hidden}
+  .acccard .im img{position:absolute;top:12px;left:12px;width:calc(100% - 24px);
+    height:calc(100% - 24px);object-fit:scale-down}
   .acccard .bd{padding:12px 14px}
   .acccard .bd .vt{font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
   .acccard .bd h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:16px;text-transform:uppercase;letter-spacing:.015em;margin:3px 0 2px;line-height:1.18}

@@ -127,7 +127,7 @@ def search_index(lang):
             "c": C.catT(lang, cat),
             "s": C.subT(lang, p["sub"]),
             "u": C.u_prod(lang, p),
-            "g": (f"/assets/img/{R.img_folder(m)}/{m['key']}-400.webp" if m
+            "g": (f"/assets/img/{R.img_folder(m)}/{m['key']}-{R.img_step(m, 400)}.webp" if m
                   else C.REMOTE_IMG + C.full_img(p["img"])),
             # Suchtext nach Gewicht getrennt: Name / Typ / Rest
             "t1": norm(f"{C.pName(lang, p)} {p['name']} {p['id']}"),

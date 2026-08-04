@@ -66,11 +66,15 @@ def main():
         if not w:
             print(f"  unlesbar: {f.name}")
             continue
-        stufen = [s for s in SIZES if s <= w] or [SIZES[0]]
+        stufen = []
+        for nenn in SIZES:
+            ziel = min(nenn, w)
+            if ziel not in stufen:
+                stufen.append(ziel)
         for s in stufen:
             dst = OUT / f"{k}-{s}.webp"
             subprocess.run(["cwebp", "-quiet", "-q", "86", "-alpha_q", "90",
-                            "-sharp_yuv", "-resize", str(min(s, w)), "0",
+                            "-sharp_yuv", "-resize", str(s), "0",
                             str(f), "-o", str(dst)],
                            capture_output=True)
         manifest[f"panels/{f.name}"] = {"key": k, "w": w, "h": h,

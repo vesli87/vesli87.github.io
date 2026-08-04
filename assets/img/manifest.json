@@ -6,7 +6,8 @@
   "ratio": 1.2113,
   "sizes": [
    400,
-   1000
+   1000,
+   1136
   ]
  },
  "2019/10/deltadigital.png": {
@@ -16,7 +17,8 @@
   "ratio": 1.1556,
   "sizes": [
    400,
-   1000
+   1000,
+   1298
   ]
  },
  "2019/10/mcu11.png": {
@@ -26,7 +28,8 @@
   "ratio": 1.4154,
   "sizes": [
    400,
-   1000
+   1000,
+   1040
   ]
  },
  "2019/10/plasmatig.png": {
@@ -36,7 +39,8 @@
   "ratio": 1.3274,
   "sizes": [
    400,
-   1000
+   1000,
+   1118
   ]
  },
  "2019/10/usb2in1programmer.png": {
@@ -46,7 +50,8 @@
   "ratio": 0.4901,
   "sizes": [
    400,
-   1000
+   1000,
+   1416
   ]
  },
  "2020/03/STT30.png": {
@@ -55,7 +60,8 @@
   "h": 1322,
   "ratio": 1.6484,
   "sizes": [
-   400
+   400,
+   802
   ]
  },
  "2020/03/delta-digital-ds.png": {
@@ -65,7 +71,8 @@
   "ratio": 1.0901,
   "sizes": [
    400,
-   1000
+   1000,
+   1376
   ]
  },
  "2020/03/frc5.png": {
@@ -75,7 +82,8 @@
   "ratio": 0.6838,
   "sizes": [
    400,
-   1000
+   1000,
+   1246
   ]
  },
  "2020/03/hypertig-ac-dc-cwk.png": {
@@ -85,7 +93,8 @@
   "ratio": 1.2847,
   "sizes": [
    400,
-   1000
+   1000,
+   1152
   ]
  },
  "2020/03/i-1600.png": {
@@ -95,7 +104,8 @@
   "ratio": 1.2373,
   "sizes": [
    400,
-   1000
+   1000,
+   1062
   ]
  },
  "2020/03/minicleaner.png": {
@@ -105,7 +115,8 @@
   "ratio": 1.0097,
   "sizes": [
    400,
-   1000
+   1000,
+   1438
   ]
  },
  "2020/03/rc100.png": {
@@ -114,7 +125,8 @@
   "h": 1272,
   "ratio": 2.4556,
   "sizes": [
-   400
+   400,
+   518
   ]
  },
  "2020/03/rc100ds.png": {
@@ -123,7 +135,8 @@
   "h": 1348,
   "ratio": 2.5149,
   "sizes": [
-   400
+   400,
+   536
   ]
  },
  "2020/03/rc15.png": {
@@ -132,7 +145,8 @@
   "h": 1224,
   "ratio": 2.3629,
   "sizes": [
-   400
+   400,
+   518
   ]
  },
  "2020/03/rc5.png": {
@@ -141,7 +155,8 @@
   "h": 822,
   "ratio": 1.0787,
   "sizes": [
-   400
+   400,
+   762
   ]
  },
  "2020/03/theta-120-hsc.png": {
@@ -151,7 +166,8 @@
   "ratio": 1.1593,
   "sizes": [
    400,
-   1000
+   1000,
+   1268
   ]
  },
  "2020/03/theta-40.png": {
@@ -161,7 +177,8 @@
   "ratio": 0.64,
   "sizes": [
    400,
-   1000
+   1000,
+   1500
   ]
  },
  "2020/03/theta-60-hsc.png": {
@@ -171,7 +188,8 @@
   "ratio": 1.2432,
   "sizes": [
    400,
-   1000
+   1000,
+   1036
   ]
  },
  "2020/03/wk200.png": {
@@ -180,7 +198,8 @@
   "h": 848,
   "ratio": 0.9838,
   "sizes": [
-   400
+   400,
+   862
   ]
  },
  "2020/03/wk300.png": {
@@ -190,7 +209,8 @@
   "ratio": 0.9138,
   "sizes": [
    400,
-   1000
+   1000,
+   1044
   ]
  },
  "2020/03/wk350.png": {
@@ -199,7 +219,8 @@
   "h": 848,
   "ratio": 0.9838,
   "sizes": [
-   400
+   400,
+   862
   ]
  },
  "2020/09/Fahrwagen-fur-Cleaner.png": {
@@ -209,7 +230,8 @@
   "ratio": 1.4575,
   "sizes": [
    400,
-   1000
+   1000,
+   1036
   ]
  },
  "2020/11/HyperCleaner-ST-Plus_SET.png": {
@@ -219,7 +241,8 @@
   "ratio": 0.7296,
   "sizes": [
    400,
-   1000
+   1000,
+   1117
   ]
  },
  "2020/12/HCS-1-SET.png": {
@@ -229,7 +252,8 @@
   "ratio": 0.8252,
   "sizes": [
    400,
-   1000
+   1000,
+   1287
   ]
  },
  "2021/04/Beta-Digital-300.png": {
@@ -239,7 +263,8 @@
   "ratio": 1.1494,
   "sizes": [
    400,
-   1000
+   1000,
+   1024
   ]
  },
  "2021/04/HyperCleaner-CT200-SET.png": {
@@ -249,7 +274,8 @@
   "ratio": 0.6314,
   "sizes": [
    400,
-   1000
+   1000,
+   1202
   ]
  },
  "2021/05/MIG_Brenner.png": {
@@ -258,7 +284,8 @@
   "h": 428,
   "ratio": 0.9304,
   "sizes": [
-   400
+   400,
+   460
   ]
  },
  "2021/05/STT35.png": {
@@ -268,7 +295,8 @@
   "ratio": 1.4984,
   "sizes": [
    400,
-   1000
+   1000,
+   1529
   ]
  },
  "2021/05/ZSW.png": {
@@ -277,7 +305,7 @@
   "h": 203,
   "ratio": 0.8529,
   "sizes": [
-   400
+   238
   ]
  },
  "2021/06/1801001.png": {
@@ -310,17 +338,8 @@
   "h": 602,
   "ratio": 1.2754,
   "sizes": [
-   400
-  ]
- },
- "2021/06/Masse_Kabel_16qmm.png": {
-  "key": "masse-kabel-16qmm-84051c",
-  "w": 1068,
-  "h": 1031,
-  "ratio": 0.9654,
-  "sizes": [
    400,
-   1000
+   472
   ]
  },
  "2021/06/Massekabel.png": {
@@ -329,17 +348,8 @@
   "h": 296,
   "ratio": 0.682,
   "sizes": [
-   400
-  ]
- },
- "2021/06/PSHB250.png": {
-  "key": "pshb250-86579a",
-  "w": 1243,
-  "h": 1396,
-  "ratio": 1.1231,
-  "sizes": [
    400,
-   1000
+   434
   ]
  },
  "2021/06/WIG_Brenner.png": {
@@ -348,7 +358,7 @@
   "h": 363,
   "ratio": 1.5,
   "sizes": [
-   400
+   242
   ]
  },
  "2022/03/Bild-der-Hypers.png": {
@@ -358,7 +368,8 @@
   "ratio": 0.9042,
   "sizes": [
    400,
-   1000
+   1000,
+   1378
   ]
  },
  "2022/03/DVS410.png": {
@@ -415,7 +426,8 @@
   "h": 2362,
   "ratio": 2.9823,
   "sizes": [
-   400
+   400,
+   792
   ]
  },
  "2022/05/1851002.png": {
@@ -424,7 +436,8 @@
   "h": 2362,
   "ratio": 2.9899,
   "sizes": [
-   400
+   400,
+   790
   ]
  },
  "2022/05/1852002.png": {
@@ -433,7 +446,8 @@
   "h": 2362,
   "ratio": 2.8946,
   "sizes": [
-   400
+   400,
+   816
   ]
  },
  "2022/05/1853001.png": {
@@ -443,7 +457,8 @@
   "ratio": 2.5369,
   "sizes": [
    400,
-   1000
+   1000,
+   1490
   ]
  },
  "2022/05/1855002.png": {
@@ -452,7 +467,8 @@
   "h": 2316,
   "ratio": 3.0078,
   "sizes": [
-   400
+   400,
+   770
   ]
  },
  "2022/05/PSHB_KIT_BOX.png": {
@@ -461,7 +477,7 @@
   "h": 221,
   "ratio": 0.6462,
   "sizes": [
-   400
+   342
   ]
  },
  "2022/05/VorchubRolle_SFST4.png": {
@@ -472,7 +488,8 @@
   "sizes": [
    400,
    1000,
-   1600
+   1600,
+   1716
   ]
  },
  "2022/06/IMGP5680.png": {
@@ -529,7 +546,8 @@
   "h": 586,
   "ratio": 1.0933,
   "sizes": [
-   400
+   400,
+   536
   ]
  },
  "2023/06/IMG_1279-1.png": {
@@ -551,7 +569,8 @@
   "ratio": 1.325,
   "sizes": [
    400,
-   1000
+   1000,
+   1397
   ]
  },
  "2024/06/IMGP5957.png": {
@@ -561,7 +580,8 @@
   "ratio": 1.3078,
   "sizes": [
    400,
-   1000
+   1000,
+   1423
   ]
  },
  "2024/09/DVL420.png": {
@@ -571,7 +591,8 @@
   "ratio": 0.7925,
   "sizes": [
    400,
-   1000
+   1000,
+   1181
   ]
  },
  "2025/07/HyperCleanerST_SET_NEW.png": {
@@ -581,7 +602,8 @@
   "ratio": 0.6353,
   "sizes": [
    400,
-   1000
+   1000,
+   1146
   ]
  },
  "2026/01/Beta220DX_Pro.png": {
@@ -615,7 +637,8 @@
   "ratio": 1.2007,
   "sizes": [
    400,
-   1000
+   1000,
+   1505
   ]
  },
  "2026/01/MLF100_A.png": {
@@ -689,7 +712,8 @@
   "sizes": [
    400,
    1000,
-   1600
+   1600,
+   1948
   ]
  },
  "panels/BetaDigital_Syn_Panel.png": {
@@ -714,7 +738,8 @@
   "sizes": [
    400,
    1000,
-   1600
+   1600,
+   1949
   ]
  },
  "panels/CT200_Syn_Panel.png": {
@@ -726,31 +751,8 @@
   "sizes": [
    400,
    1000,
-   1600
-  ]
- },
- "panels/Cleaner ST.png": {
-  "key": "cleaner-st",
-  "w": 1158,
-  "h": 818,
-  "ratio": 0.7064,
-  "local": true,
-  "sizes": [
-   400,
-   1000
-  ]
- },
- "panels/DVS_Panel.png": {
-  "key": "dvs-panel",
-  "w": 2244,
-  "h": 1535,
-  "ratio": 0.684,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
    1600,
-   2000
+   1948
   ]
  },
  "panels/Delta1800.png": {
@@ -760,7 +762,8 @@
   "ratio": 0.5884,
   "local": true,
   "sizes": [
-   400
+   400,
+   741
   ]
  },
  "panels/DeltaDigital_1800.png": {
@@ -770,7 +773,8 @@
   "ratio": 0.5902,
   "local": true,
   "sizes": [
-   400
+   400,
+   471
   ]
  },
  "panels/DeltaDigital_BIG_Panel.png": {
@@ -780,7 +784,8 @@
   "ratio": 0.5104,
   "local": true,
   "sizes": [
-   400
+   400,
+   623
   ]
  },
  "panels/EcoMIG-LowCost_Frontpanel.png": {
@@ -809,69 +814,6 @@
    2000
   ]
  },
- "panels/EcoPulse_Gross_CAG_Panel.png": {
-  "key": "ecopulse-gross-cag-panel",
-  "w": 6377,
-  "h": 3661,
-  "ratio": 0.5741,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
- "panels/EcoPulse_Gross_TIG_Panel.png": {
-  "key": "ecopulse-gross-tig-panel",
-  "w": 6377,
-  "h": 3661,
-  "ratio": 0.5741,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
- "panels/EcoPulse_Klein_CAG_Panel.png": {
-  "key": "ecopulse-klein-cag-panel",
-  "w": 4370,
-  "h": 3661,
-  "ratio": 0.8378,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
- "panels/EcoPulse_Klein_TIG_Panel.png": {
-  "key": "ecopulse-klein-tig-panel",
-  "w": 4370,
-  "h": 3661,
-  "ratio": 0.8378,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
- "panels/HighSpeed_Panel.PNG": {
-  "key": "highspeed-panel",
-  "w": 1473,
-  "h": 850,
-  "ratio": 0.5771,
-  "local": true,
-  "sizes": [
-   400,
-   1000
-  ]
- },
  "panels/HyperCleaner_ST_Plus_Panell.png": {
   "key": "hypercleaner-st-plus-panell",
   "w": 3899,
@@ -892,7 +834,8 @@
   "ratio": 0.607,
   "local": true,
   "sizes": [
-   400
+   400,
+   687
   ]
  },
  "panels/HyperMIG_EX_Frontpanel..png": {
@@ -973,54 +916,6 @@
    2000
   ]
  },
- "panels/HyperUp_Panel.png": {
-  "key": "hyperup-panel",
-  "w": 1020,
-  "h": 585,
-  "ratio": 0.5735,
-  "local": true,
-  "sizes": [
-   400,
-   1000
-  ]
- },
- "panels/Hyper_Panel.png": {
-  "key": "hyper-panel",
-  "w": 3188,
-  "h": 1830,
-  "ratio": 0.574,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
- "panels/Hyper_TIG_DC_Panel.PNG": {
-  "key": "hyper-tig-dc-panel",
-  "w": 1020,
-  "h": 585,
-  "ratio": 0.5735,
-  "local": true,
-  "sizes": [
-   400,
-   1000
-  ]
- },
- "panels/MCU1_Panel.png": {
-  "key": "mcu1-panel",
-  "w": 2369,
-  "h": 1275,
-  "ratio": 0.5382,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
  "panels/MMS2000C_Panel.png": {
   "key": "mms2000c-panel",
   "w": 2244,
@@ -1042,7 +937,8 @@
   "local": true,
   "sizes": [
    400,
-   1000
+   1000,
+   1158
   ]
  },
  "panels/Omega AX SYN.png": {
@@ -1071,30 +967,6 @@
    2000
   ]
  },
- "panels/Omega_Profi_Panel.png": {
-  "key": "omega-profi-panel",
-  "w": 1949,
-  "h": 994,
-  "ratio": 0.51,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600
-  ]
- },
- "panels/Omega_Syn_Panel.png": {
-  "key": "omega-syn-panel",
-  "w": 1948,
-  "h": 992,
-  "ratio": 0.5092,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600
-  ]
- },
  "panels/Theta40_Panel.png": {
   "key": "theta40-panel",
   "w": 1949,
@@ -1104,7 +976,8 @@
   "sizes": [
    400,
    1000,
-   1600
+   1600,
+   1949
   ]
  },
  "panels/ThetaHSC_Panel.png": {
@@ -1116,30 +989,8 @@
   "sizes": [
    400,
    1000,
-   1600
-  ]
- },
- "panels/c-MIG_Panel.png": {
-  "key": "c-mig-panel",
-  "w": 724,
-  "h": 585,
-  "ratio": 0.808,
-  "local": true,
-  "sizes": [
-   400
-  ]
- },
- "panels/c-MIG_WWK_Panel.png": {
-  "key": "c-mig-wwk-panel",
-  "w": 2185,
-  "h": 1830,
-  "ratio": 0.8375,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
    1600,
-   2000
+   1949
   ]
  },
  "panels/i_1600.png": {
@@ -1149,7 +1000,8 @@
   "ratio": 0.6174,
   "local": true,
   "sizes": [
-   400
+   400,
+   447
   ]
  },
  "panels/MPT_Plasmaschneidtisch.png": {

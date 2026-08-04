@@ -118,6 +118,19 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     )
 
 
+def img_step(m, wunsch):
+    """Die vorhandene Stufe, die dem Wunsch am naechsten kommt.
+
+    Seit die Dateien nach ihrer echten Breite heissen, gibt es zu einer 792 px
+    breiten Vorlage kein "-1000.webp" mehr. Wer die Groesse fest verdrahtet,
+    verlinkt ins Leere - genau das taten og:image, das Bild im JSON-LD, die
+    Anfrageliste und das Suchergebnisbild.
+    """
+    stufen = m.get("sizes") or ([400] + ([1000] if (m.get("w") or 0) > 400 else []))
+    passend = [x for x in stufen if x <= wunsch]
+    return max(passend) if passend else min(stufen)
+
+
 def img_folder(m):
     """Herstellerbilder liegen unter p/, selbst gelieferte unter panels/.
 
@@ -133,7 +146,7 @@ def img_abs(path, size=1000):
     m = MANIFEST.get(C.full_img(path))
     if not m:
         return C.REMOTE_IMG + C.full_img(path)
-    return f"{C.SITE}/assets/img/{img_folder(m)}/{m['key']}-{size}.webp"
+    return f"{C.SITE}/assets/img/{img_folder(m)}/{m['key']}-{img_step(m, size)}.webp"
 
 
 # --------------------------------------------------------------------------
@@ -649,7 +662,7 @@ def crumbs(lang, items):
 def thumb(p):
     """Kleines WebP für Anfrageliste und Suchvorschläge."""
     m = MANIFEST.get(C.full_img(p["img"]))
-    return (f"/assets/img/{img_folder(m)}/{m['key']}-400.webp" if m
+    return (f"/assets/img/{img_folder(m)}/{m['key']}-{img_step(m, 400)}.webp" if m
             else C.REMOTE_IMG + C.full_img(p["img"]))
 
 

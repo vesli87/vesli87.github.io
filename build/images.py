@@ -119,7 +119,12 @@ def main():
         # seiner Breite passen - sonst blieben Bilder nach dem Erweitern der
         # Stufenliste auf den alten zwei Groessen stehen.
         vor = manifest.get(path) or {}
-        soll = [x for x in WEBP_SIZES if x <= (vor.get("w") or 0)] or [WEBP_SIZES[0]]
+        wv = vor.get("w") or 0
+        soll = []
+        for nenn in WEBP_SIZES:
+            ziel = min(nenn, wv)
+            if ziel and ziel not in soll:
+                soll.append(ziel)
         done = (vor.get("sizes") == soll
                 and all((OUT / f"{k}-{x}.webp").exists() for x in soll))
         if done and path in manifest and not force:
@@ -151,12 +156,19 @@ def main():
             continue
 
         # WebP in zwei Grössen – niemals hochskalieren
-        stufen = [s_ for s_ in WEBP_SIZES if s_ <= w] or [WEBP_SIZES[0]]
+        # Dateiname = tatsaechliche Breite. Ist die Vorlage 862 px breit, gibt es
+        # 400 und 862 - nicht nur 400, wie es eine Liste "alle Stufen <= Breite"
+        # ergaebe. Genau daran waren 21 Bilder auf 400 px stehengeblieben.
+        stufen = []
+        for nenn in WEBP_SIZES:
+            ziel = min(nenn, w)
+            if ziel not in stufen:
+                stufen.append(ziel)
         if has("cwebp"):
             for size in stufen:
                 dst = OUT / f"{k}-{size}.webp"
                 subprocess.run(["cwebp", "-quiet", "-q", "82", "-alpha_q", "90",
-                                "-sharp_yuv", "-resize", str(min(size, w)), "0",
+                                "-sharp_yuv", "-resize", str(size), "0",
                                 str(src), "-o", str(dst)],
                                capture_output=True)
 

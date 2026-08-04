@@ -6,7 +6,11 @@
     --paper:#FFFFFF;--ink:#141416;--ok:#1E9E52;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
+  /* Ohne text-size-adjust vergroessert Safari auf dem iPhone die Schrift in
+     Bloecken, die es fuer zu schmal haelt - mal 17, mal 22 px, je Absatz
+     verschieden. Am Rechner faellt das nie auf, auf dem Telefon sieht die
+     Seite dadurch zerrissen aus. */
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
   body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--white);-webkit-font-smoothing:antialiased}
   .disp{font-family:'Anton',sans-serif;text-transform:uppercase;line-height:.96}
   .cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.02em}
@@ -36,7 +40,7 @@
   .logo .flag::before{width:13px;height:4px;top:12px;left:7.5px}
   .logo .flag::after{width:4px;height:13px;top:7.5px;left:12px}
   .hsearch{flex:1;max-width:420px;display:flex;border:2px solid var(--ink);border-radius:3px;overflow:hidden}
-  .hsearch input{flex:1;border:0;padding:10px 14px;font:inherit;font-size:14px;min-width:0}
+  .hsearch input{flex:1;border:0;padding:10px 14px;font:inherit;font-size:16px;min-width:0}
   .hsearch input:focus{outline:none}
   .hsearch button{border:0;background:var(--ink);color:#fff;padding:0 16px;cursor:pointer;font-weight:600;font-size:13px}
   .hsearch button:hover{background:var(--accent)}
@@ -110,7 +114,9 @@
   /* Neutrales Grau: die Punkte muessen auf der dunklen wie auf der hellen
      Folie sichtbar bleiben. */
   .hdot{width:34px;height:5px;border-radius:3px;border:0;padding:0;cursor:pointer;
-    background:rgba(125,125,125,.55);transition:background .2s}
+    background:rgba(125,125,125,.55);transition:background .2s;position:relative}
+  /* Tippflaeche 44 px hoch, sichtbar bleibt der schmale Balken. */
+  .hdot::after{content:'';position:absolute;left:0;right:0;top:-20px;bottom:-20px}
   .hdot.active{background:var(--accent)}
   .hdot:hover{background:rgba(125,125,125,.9)}
   @media (max-width:640px){
@@ -394,8 +400,15 @@
   .accgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}
   .acccard{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;transition:.18s}
   .acccard:hover{border-color:var(--accent);transform:translateY(-2px)}
-  .acccard .im{background:#fff;aspect-ratio:1.3;display:grid;place-items:center;padding:12px}
-  .acccard .im img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+  /* Das Bild darf die Hoehe des Rahmens nicht bestimmen. Stand es im Fluss,
+     wuchs der Rahmen auf die natuerliche Hoehe des Bildes: eine schlanke
+     Elektrolytflasche riss ihn auf 508 px auf, der breite Fahrwagen daneben
+     blieb bei 261 - die Kacheln standen ungleich hoch und der Fahrwagen wirkte
+     verloren. Absolut gesetzt gilt wieder das Seitenverhaeltnis, und jedes
+     Bild bekommt gleich viel Flaeche. */
+  .acccard .im{background:#fff;aspect-ratio:1.15;padding:12px;position:relative;overflow:hidden}
+  .acccard .im img{position:absolute;inset:12px;margin:auto;
+    max-width:calc(100% - 24px);max-height:calc(100% - 24px);width:auto;height:auto;object-fit:contain}
   .acccard .bd{padding:12px 14px}
   .acccard .bd .vt{font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
   .acccard .bd h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:16px;text-transform:uppercase;letter-spacing:.015em;margin:3px 0 2px;line-height:1.18}
@@ -430,7 +443,7 @@
   .cart .empty{padding:50px 24px;text-align:center;color:var(--muted)}
   .cart .form{border-top:1px solid var(--line);padding:18px 24px}
   .cart .form label{display:block;font-size:12px;color:var(--muted);margin:8px 0 4px;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-  .cart .form input,.cart .form textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:10px 12px;color:var(--white);font:inherit;font-size:14px}
+  .cart .form input,.cart .form textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:10px 12px;color:var(--white);font:inherit;font-size:16px}
   .cart .form input:focus,.cart .form textarea:focus{outline:none;border-color:var(--accent)}
   .cart .send{width:100%;margin-top:14px;background:var(--accent);color:#111;border:0;border-radius:5px;padding:14px;font-family:'Barlow Condensed';font-weight:700;font-size:16px;letter-spacing:.06em;text-transform:uppercase;cursor:pointer}
   .cart .send:hover{background:var(--accent-2)}
@@ -591,7 +604,7 @@
 
   /* ---------------------------------------------------------- Formulare */
   .form label{display:block;font-size:12px;color:var(--muted);margin:12px 0 5px;font-family:'Barlow Condensed';font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-  .form input,.form textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:11px 13px;color:var(--white);font:inherit;font-size:15px}
+  .form input,.form textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:11px 13px;color:var(--white);font:inherit;font-size:16px}
   .form input:focus,.form textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(224,81,26,.12)}
   .form [aria-invalid="true"]{border-color:#C0392B;background:#fff6f5}
   .ferr{color:#C0392B;font-size:12.5px;margin-top:5px}

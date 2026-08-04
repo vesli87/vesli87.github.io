@@ -78,6 +78,10 @@ def collect_paths():
     # Geraeteausfuehrungen bringen eigene Bilder mit (data/HL_VAR.json)
     s |= {core.full_img(v["img"]) for lst in core.HL_VAR.values()
           if isinstance(lst, list) for v in lst if v.get("img")}
+    # Zusatzbilder der Galerie: sie haengen an keinem Produktfeld, wuerden also
+    # bei --force aus dem Manifest fallen und live fehlen.
+    s |= {core.full_img(g["img"]) for lst in core.GALLERY.values()
+          if isinstance(lst, list) for g in lst if g.get("img")}
     return sorted(s)
 
 

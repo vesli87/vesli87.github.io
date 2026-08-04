@@ -19,5 +19,23 @@
     "it": "Tavolo di taglio al plasma MAHE MPT con console di comando e la finestra principale del controllo MyPlasm CNC"
    }
   }
+ ],
+ "mlf100": [
+  {
+   "img": "2026/01/IMGP6030_1-248x300.png",
+   "alt": {
+    "de": "Montagesatz zur Befestigung des MAHE MLF 100 an einem HyperCleaner",
+    "fr": "Kit de fixation pour monter le MAHE MLF 100 sur un HyperCleaner",
+    "it": "Kit di fissaggio per montare il MAHE MLF 100 su un HyperCleaner"
+   }
+  },
+  {
+   "img": "2026/01/IMGP6034_1-250x300.png",
+   "alt": {
+    "de": "Reinigungspinselständer mit Tropfschutz für den MAHE MLF 100",
+    "fr": "Support de pinceau de nettoyage avec protection anti-gouttes pour le MAHE MLF 100",
+    "it": "Supporto per pennello di pulizia con protezione antigoccia per il MAHE MLF 100"
+   }
+  }
  ]
 }

@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 81 Geräte, alle zum Preis auf Anfrage.
+> MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 77 Geräte, alle zum Preis auf Anfrage.
 
 ## Eckdaten
 - Firma: VES-TECH Swiss
@@ -22,7 +22,7 @@
 - [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie. (14 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
 - [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
-- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (47 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete, Cleaner-Zubehör)
+- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (43 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
 
 ## Geräte
 ### Schweissgeräte
@@ -86,7 +86,6 @@
 - [MAHE Massekabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel/): Massekabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
 - [MAHE Elektrodenkabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/): Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
 - [MAHE Massekabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/): Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
-- [MAHE Massekabel 16 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/): Massekabel für den Plasmaschneider Theta 40. (Kabel)
 - [MAHE Massekabel 25 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/): Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180. (Kabel)
 - [MAHE MF405W](https://www.ves-tech.ch/produkte/zubehoer/mf405w/): Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie. (Brenner)
 - [MAHE MF240W](https://www.ves-tech.ch/produkte/zubehoer/mf240w/): Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen. (Brenner)
@@ -98,7 +97,6 @@
 - [MAHE MT200W](https://www.ves-tech.ch/produkte/zubehoer/mt200w/): Wassergekühlter WIG-Brenner für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie, wahlweise mit Potentiometer. (Brenner)
 - [MAHE MT260](https://www.ves-tech.ch/produkte/zubehoer/mt260/): Gasgekühlter WIG-Brenner für Beta digital, Beta DX, Omega AX und HyperCleaner CT 200. (Brenner)
 - [MAHE MT260 V](https://www.ves-tech.ch/produkte/zubehoer/mt260v/): Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600. (Brenner)
-- [MAHE S 25](https://www.ves-tech.ch/produkte/zubehoer/s25/): Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich. (Plasmabrenner)
 - [MAHE PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/pshb65/): Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge. (Plasmabrenner)
 - [MAHE PSHB 125](https://www.ves-tech.ch/produkte/zubehoer/pshb125/): Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge. (Plasmabrenner)
 - [MAHE PSHB 160](https://www.ves-tech.ch/produkte/zubehoer/pshb160/): Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge. (Plasmabrenner)
@@ -111,8 +109,6 @@
 - [MAHE Drahtvorschubrollen](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/): Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Drahtvorschubrollen HyperMIG X](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/): Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
-- [MAHE Montagesatz MLF 100](https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/): Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten. (Montage)
-- [MAHE Reinigungspinselständer](https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/): Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100. (Halterung)
 
 ## Verfahren
 - MIS – Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.

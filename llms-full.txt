@@ -446,7 +446,7 @@ Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidl
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
 Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.
-Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift Arc Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für Verschleissteil Standzeit; Lochblech Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige.
+Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift Arc Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für Verschleissteil Standzeit; Lochblech Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige; Plasmaschneidbrenner S 25 in 4 m fest verbaut; Massekabel 16 mm², 4 m, gehört zum Lieferumfang.
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Bauart: tragbar.
 
 Technische Daten – Theta 40:
@@ -471,7 +471,7 @@ Technische Daten – Theta 40:
 | Sicherungsklasse | S |
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: S 25, Verschleissteilebox S 25, Massekabel 16 mm², STT 35, MPF 02.
+Passendes Zubehör: Verschleissteilebox S 25, STT 35, MPF 02.
 
 ### MAHE Theta 60 HSC
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
@@ -791,7 +791,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
 Kategorie: Reinigungsgeräte / Dosiersystem · Typ: Dosierung · Art.-Nr.: MLF100 · Preis: auf Anfrage (CHF)
 Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.
-Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.; Automatischer/Manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungs-/Spülmodus; Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten..
+Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.; Automatischer/Manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungs-/Spülmodus; Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten.; Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten; Mit Reinigungspinselständer mit Tropfschutz.
 Ausstattung: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
 
 Technische Daten – MLF100:
@@ -807,7 +807,6 @@ Technische Daten – MLF100:
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
-Passendes Zubehör: Montagesatz MLF 100, Reinigungspinselständer.
 
 ### MAHE Reinigungselektrolyt Rapid R1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/
@@ -967,12 +966,6 @@ Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-4M · Preis: a
 Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
 Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
 
-### MAHE Massekabel 16 mm²
-URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/
-Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-16 · Preis: auf Anfrage (CHF)
-Massekabel für den Plasmaschneider Theta 40.
-Ausstattung: Querschnitt: 16 mm²; Länge: 4 m; Für: Theta 40.
-
 ### MAHE Massekabel 25 mm²
 URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-25 · Preis: auf Anfrage (CHF)
@@ -1038,12 +1031,6 @@ URL: https://www.ves-tech.ch/produkte/zubehoer/mt260v/
 Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MT260V · Preis: auf Anfrage (CHF)
 Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600.
 Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Ausstattung: Gasventil am Brenner.
-
-### MAHE S 25
-URL: https://www.ves-tech.ch/produkte/zubehoer/s25/
-Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: S25 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich.
-Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 40; Länge: 4 m; Montage: fest in der Maschine verbaut.
 
 ### MAHE PSHB 65
 URL: https://www.ves-tech.ch/produkte/zubehoer/pshb65/
@@ -1116,18 +1103,6 @@ URL: https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/
 Kategorie: Zubehör / Schlauchpakete · Typ: Schlauchpaket · Art.-Nr.: ZWISCHENSCHLAUCHPAKET · Preis: auf Anfrage (CHF)
 Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet.
 Ausstattung: Für: HyperMIG X; Verbindet: Stromquelle mit Vorschubkoffer; Längen: 1,2 · 5 · 10 · 15 · 20 m.
-
-### MAHE Montagesatz MLF 100
-URL: https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/
-Kategorie: Zubehör / Cleaner-Zubehör · Typ: Montage · Art.-Nr.: MONTAGESATZ-MLF100 · Preis: auf Anfrage (CHF)
-Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten.
-Ausstattung: Funktion: Befestigung; Für: MLF 100; Montage an: MAHE HyperCleaner.
-
-### MAHE Reinigungspinselständer
-URL: https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/
-Kategorie: Zubehör / Cleaner-Zubehör · Typ: Halterung · Art.-Nr.: REINIGUNGSPINSELSTAENDER · Preis: auf Anfrage (CHF)
-Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.
-Ausstattung: Typ: Bürstenständer; Ausstattung: Tropfschutz; Für: MLF 100.
 
 ---
 

@@ -125,9 +125,7 @@
   "massekabel-4m"
  ],
  "theta-40": [
-  "s25",
   "vtbox-s25",
-  "massekabel-16",
   "stt35",
   "mpf02"
  ],
@@ -228,10 +226,6 @@
   "mhct01",
   "elektrodenkabel-4m",
   "massekabel-4m"
- ],
- "mlf100": [
-  "montagesatz-mlf100",
-  "reinigungspinselstaender"
  ],
  "r1": [
   "hypercleaner-st",

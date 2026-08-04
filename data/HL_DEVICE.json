@@ -26,22 +26,28 @@
    "Automatischer/Manueller Dosiermodus",
    "Möglichkeit zum Anschluss eines externen Tanks",
    "Reinigungs-/Spülmodus",
-   "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
+   "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten.",
+   "Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten",
+   "Mit Reinigungspinselständer mit Tropfschutz"
   ],
-  "src": "https://mahe-online.de/mlf100/",
+  "src": "https://mahe-online.de/mlf100/ · Montagesatz und Pinselstaender fuehrt MAHE dort im Zubehoer-Reiter des MLF 100; in der Preisliste 2026 haben sie keine Artikelnummer, sind also nicht einzeln bestellbar, sondern gehoeren zum Geraet.",
   "fr": [
    "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
    "Mode de dosage automatique ou manuel",
    "Possibilité de raccorder un réservoir externe",
    "Mode nettoyage et rinçage",
-   "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner."
+   "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner.",
+   "Avec kit de fixation pour le montage sur les appareils MAHE HyperCleaner",
+   "Avec support de pinceau de nettoyage et protection anti-gouttes"
   ],
   "it": [
    "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
    "Modalità di dosaggio automatica o manuale",
    "Possibilità di collegare un serbatoio esterno",
    "Modalità pulizia e risciacquo",
-   "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner."
+   "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner.",
+   "Con kit di fissaggio per il montaggio sugli apparecchi MAHE HyperCleaner",
+   "Con supporto per pennello di pulizia con protezione antigoccia"
   ]
  },
  "minicleaner": {
@@ -372,9 +378,11 @@
    "Timer für Verschleissteil Standzeit",
    "Lochblech Schneidfunktion",
    "Integrierter Wasserabscheider",
-   "Integrierte Druckanzeige"
+   "Integrierte Druckanzeige",
+   "Plasmaschneidbrenner S 25 in 4 m fest verbaut",
+   "Massekabel 16 mm², 4 m, gehört zum Lieferumfang"
   ],
-  "src": "https://mahe-online.de/theta-40/",
+  "src": "https://mahe-online.de/theta-40/ · Brenner S 25 und Massekabel 16 mm2 fuehrt MAHE nur im Zubehoer-Reiter der Theta 40; in der Preisliste 2026 haben sie keine Artikelnummer, und MAHE schreibt zum S 25 selbst, er sei fest in der Maschine verbaut. Die Geraetezeile 1700.040.0 lautet 'Theta 40 mit Brenner S25 in 4 Meter ... mit Massekabel'.",
   "fr": [
    "Coupe de séparation jusqu'à 8 mm",
    "Coupe de qualité jusqu'à 5 mm",
@@ -384,7 +392,9 @@
    "Compteur de durée de vie des consommables",
    "Fonction de découpe de tôle perforée",
    "Séparateur d'eau intégré",
-   "Manomètre intégré"
+   "Manomètre intégré",
+   "Torche de découpe plasma S 25 de 4 m, montée à demeure",
+   "Câble de masse 16 mm², 4 m, compris dans la livraison"
   ],
   "it": [
    "Taglio di separazione fino a 8 mm",
@@ -395,7 +405,9 @@
    "Contatore di durata dei consumabili",
    "Funzione di taglio per lamiera forata",
    "Separatore d'acqua integrato",
-   "Manometro integrato"
+   "Manometro integrato",
+   "Torcia da taglio al plasma S 25 da 4 m, montata in modo fisso",
+   "Cavo di massa 16 mm², 4 m, compreso nella fornitura"
   ]
  },
  "theta-60": {

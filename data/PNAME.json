@@ -16,10 +16,6 @@
   "fr": "Câble de masse 25–90 mm²",
   "it": "Cavo di massa 25–90 mm²"
  },
- "massekabel-16": {
-  "fr": "Câble de masse 16 mm²",
-  "it": "Cavo di massa 16 mm²"
- },
  "massekabel-25": {
   "fr": "Câble de masse 25 mm²",
   "it": "Cavo di massa 25 mm²"
@@ -31,14 +27,6 @@
  "zwischenschlauchpaket": {
   "fr": "Faisceau intermédiaire",
   "it": "Fascio cavi intermedio"
- },
- "montagesatz-mlf100": {
-  "fr": "Kit de montage MLF 100",
-  "it": "Kit di montaggio MLF 100"
- },
- "reinigungspinselstaender": {
-  "fr": "Support de brosse de nettoyage",
-  "it": "Supporto per pennello di pulizia"
  },
  "vtbox-s25": {
   "fr": "Boîte de pièces d’usure S 25",

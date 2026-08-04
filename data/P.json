@@ -790,20 +790,6 @@
   }
  },
  {
-  "id": "massekabel-16",
-  "cat": "zubehoer",
-  "sub": "Kabel",
-  "vt": "Kabel",
-  "name": "Massekabel 16 mm²",
-  "img": "2021/06/Masse_Kabel_16qmm-300x290.png",
-  "desc": "Massekabel für den Plasmaschneider Theta 40.",
-  "specs": {
-   "Querschnitt": "16 mm²",
-   "Länge": "4 m",
-   "Für": "Theta 40"
-  }
- },
- {
   "id": "massekabel-25",
   "cat": "zubehoer",
   "sub": "Kabel",
@@ -955,21 +941,6 @@
    "Typ": "WIG gasgekühlt",
    "Länge": "4 / 8 m",
    "Ausstattung": "Gasventil am Brenner"
-  }
- },
- {
-  "id": "s25",
-  "cat": "zubehoer",
-  "sub": "Plasmabrenner",
-  "vt": "Plasmabrenner",
-  "name": "S 25",
-  "img": "2021/06/PSHB250-267x300.png",
-  "desc": "Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich.",
-  "specs": {
-   "Typ": "Plasmaschneidbrenner",
-   "Für": "Theta 40",
-   "Länge": "4 m",
-   "Montage": "fest in der Maschine verbaut"
   }
  },
  {
@@ -1150,34 +1121,6 @@
    "Für": "HyperMIG X",
    "Verbindet": "Stromquelle mit Vorschubkoffer",
    "Längen": "1,2 · 5 · 10 · 15 · 20 m"
-  }
- },
- {
-  "id": "montagesatz-mlf100",
-  "cat": "zubehoer",
-  "sub": "Cleaner-Zubehör",
-  "vt": "Montage",
-  "name": "Montagesatz MLF 100",
-  "img": "2026/01/IMGP6030_1-248x300.png",
-  "desc": "Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten.",
-  "specs": {
-   "Funktion": "Befestigung",
-   "Für": "MLF 100",
-   "Montage an": "MAHE HyperCleaner"
-  }
- },
- {
-  "id": "reinigungspinselstaender",
-  "cat": "zubehoer",
-  "sub": "Cleaner-Zubehör",
-  "vt": "Halterung",
-  "name": "Reinigungspinselständer",
-  "img": "2026/01/IMGP6034_1-250x300.png",
-  "desc": "Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.",
-  "specs": {
-   "Typ": "Bürstenständer",
-   "Ausstattung": "Tropfschutz",
-   "Für": "MLF 100"
   }
  }
 ]

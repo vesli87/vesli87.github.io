@@ -9,7 +9,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Bilder: MAHE GmbH. Wiedergabe durch VES-TECH Swiss als Schweizer Partner.",
- "count": 81,
+ "count": 77,
  "products": [
   {
    "id": "hypermig-x",
@@ -7307,7 +7307,9 @@
      "Timer für Verschleissteil Standzeit",
      "Lochblech Schneidfunktion",
      "Integrierter Wasserabscheider",
-     "Integrierte Druckanzeige"
+     "Integrierte Druckanzeige",
+     "Plasmaschneidbrenner S 25 in 4 m fest verbaut",
+     "Massekabel 16 mm², 4 m, gehört zum Lieferumfang"
     ],
     "fr": [
      "Coupe de séparation jusqu'à 8 mm",
@@ -7318,7 +7320,9 @@
      "Compteur de durée de vie des consommables",
      "Fonction de découpe de tôle perforée",
      "Séparateur d'eau intégré",
-     "Manomètre intégré"
+     "Manomètre intégré",
+     "Torche de découpe plasma S 25 de 4 m, montée à demeure",
+     "Câble de masse 16 mm², 4 m, compris dans la livraison"
     ],
     "it": [
      "Taglio di separazione fino a 8 mm",
@@ -7329,7 +7333,9 @@
      "Contatore di durata dei consumabili",
      "Funzione di taglio per lamiera forata",
      "Separatore d'acqua integrato",
-     "Manometro integrato"
+     "Manometro integrato",
+     "Torcia da taglio al plasma S 25 da 4 m, montata in modo fisso",
+     "Cavo di massa 16 mm², 4 m, compreso nella fornitura"
     ]
    },
    "options": {
@@ -11873,21 +11879,27 @@
      "Automatischer/Manueller Dosiermodus",
      "Möglichkeit zum Anschluss eines externen Tanks",
      "Reinigungs-/Spülmodus",
-     "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
+     "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten.",
+     "Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten",
+     "Mit Reinigungspinselständer mit Tropfschutz"
     ],
     "fr": [
      "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
      "Mode de dosage automatique ou manuel",
      "Possibilité de raccorder un réservoir externe",
      "Mode nettoyage et rinçage",
-     "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner."
+     "Compatible avec tous les appareils de nettoyage Mahe HyperCleaner.",
+     "Avec kit de fixation pour le montage sur les appareils MAHE HyperCleaner",
+     "Avec support de pinceau de nettoyage et protection anti-gouttes"
     ],
     "it": [
      "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
      "Modalità di dosaggio automatica o manuale",
      "Possibilità di collegare un serbatoio esterno",
      "Modalità pulizia e risciacquo",
-     "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner."
+     "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner.",
+     "Con kit di fissaggio per il montaggio sugli apparecchi MAHE HyperCleaner",
+     "Con supporto per pennello di pulizia con protezione antigoccia"
     ]
    },
    "options": {
@@ -13885,77 +13897,6 @@
    }
   },
   {
-   "id": "massekabel-16",
-   "sku": "MASSEKABEL-16",
-   "name": "MAHE Massekabel 16 mm²",
-   "brand": "MAHE",
-   "type": "Kabel",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Kabel",
-    "fr": "Câbles",
-    "it": "Cavi"
-   },
-   "description": {
-    "de": "Massekabel für den Plasmaschneider Theta 40.",
-    "fr": "Câble de masse pour le découpeur plasma Theta 40.",
-    "it": "Cavo di massa per il sistema di taglio al plasma Theta 40."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Querschnitt": "16 mm²",
-     "Länge": "4 m",
-     "Für": "Theta 40"
-    },
-    "fr": {
-     "Section": "16 mm²",
-     "Longueur": "4 m",
-     "Pour": "Theta 40"
-    },
-    "it": {
-     "Sezione": "16 mm²",
-     "Lunghezza": "4 m",
-     "Per": "Theta 40"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/masse-kabel-16qmm-84051c-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-16/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-16/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-16/"
-   }
-  },
-  {
    "id": "massekabel-25",
    "sku": "MASSEKABEL-25",
    "name": "MAHE Massekabel 25 mm²",
@@ -14734,80 +14675,6 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt260v/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mt260v/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/mt260v/"
-   }
-  },
-  {
-   "id": "s25",
-   "sku": "S25",
-   "name": "MAHE S 25",
-   "brand": "MAHE",
-   "type": "Plasmabrenner",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Plasmabrenner",
-    "fr": "Torches plasma",
-    "it": "Torce plasma"
-   },
-   "description": {
-    "de": "Plasmaschneidbrenner der Theta 40, fest in der Maschine verbaut und in 4 Meter Länge erhältlich.",
-    "fr": "Torche de coupe plasma de la Theta 40, montée à demeure dans la machine et disponible en 4 mètres.",
-    "it": "Torcia da taglio al plasma della Theta 40, montata fissa nella macchina e disponibile in 4 metri."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Plasmaschneidbrenner",
-     "Für": "Theta 40",
-     "Länge": "4 m",
-     "Montage": "fest in der Maschine verbaut"
-    },
-    "fr": {
-     "Type": "torche de coupe plasma",
-     "Pour": "Theta 40",
-     "Longueur": "4 m",
-     "Montage": "montée à demeure dans la machine"
-    },
-    "it": {
-     "Tipo": "torcia da taglio al plasma",
-     "Per": "Theta 40",
-     "Lunghezza": "4 m",
-     "Montaggio": "montata fissa nella macchina"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/pshb250-86579a-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/s25/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/s25/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/s25/"
    }
   },
   {
@@ -15696,148 +15563,6 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/zwischenschlauchpaket/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/zwischenschlauchpaket/"
-   }
-  },
-  {
-   "id": "montagesatz-mlf100",
-   "sku": "MONTAGESATZ-MLF100",
-   "name": "MAHE Montagesatz MLF 100",
-   "brand": "MAHE",
-   "type": "Montage",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Cleaner-Zubehör",
-    "fr": "Accessoires nettoyage",
-    "it": "Accessori pulizia"
-   },
-   "description": {
-    "de": "Befestigungssatz für die Montage des MLF 100 an MAHE-HyperCleaner-Geräten.",
-    "fr": "Kit de fixation pour monter le MLF 100 sur les appareils MAHE HyperCleaner.",
-    "it": "Kit di fissaggio per montare l'MLF 100 sugli apparecchi MAHE HyperCleaner."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Funktion": "Befestigung",
-     "Für": "MLF 100",
-     "Montage an": "MAHE HyperCleaner"
-    },
-    "fr": {
-     "Fonction": "Fixation",
-     "Pour": "MLF 100",
-     "Montage sur": "MAHE HyperCleaner"
-    },
-    "it": {
-     "Funzione": "Fissaggio",
-     "Per": "MLF 100",
-     "Montaggio su": "MAHE HyperCleaner"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/imgp6030-1-8aa671-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/montagesatz-mlf100/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/montagesatz-mlf100/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/montagesatz-mlf100/"
-   }
-  },
-  {
-   "id": "reinigungspinselstaender",
-   "sku": "REINIGUNGSPINSELSTAENDER",
-   "name": "MAHE Reinigungspinselständer",
-   "brand": "MAHE",
-   "type": "Halterung",
-   "category": {
-    "de": "Zubehör",
-    "fr": "Accessoires",
-    "it": "Accessori"
-   },
-   "subcategory": {
-    "de": "Cleaner-Zubehör",
-    "fr": "Accessoires nettoyage",
-    "it": "Accessori pulizia"
-   },
-   "description": {
-    "de": "Bürstenständer mit Tropfschutz für die Reinigungsbürste des MLF 100.",
-    "fr": "Support de brosse avec protection anti-gouttes pour la brosse de nettoyage du MLF 100.",
-    "it": "Supporto per spazzola con protezione antigoccia per la spazzola di pulizia dell'MLF 100."
-   },
-   "highlights": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "options": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "specs": {
-    "de": {
-     "Typ": "Bürstenständer",
-     "Ausstattung": "Tropfschutz",
-     "Für": "MLF 100"
-    },
-    "fr": {
-     "Type": "Support de brosse",
-     "Équipement": "protection anti-gouttes",
-     "Pour": "MLF 100"
-    },
-    "it": {
-     "Tipo": "Supporto per spazzola",
-     "Dotazione": "protezione antigoccia",
-     "Per": "MLF 100"
-    }
-   },
-   "techdata": {
-    "de": [],
-    "fr": [],
-    "it": []
-   },
-   "materials": [],
-   "price": {
-    "model": "on-request",
-    "currency": "CHF",
-    "note": {
-     "de": "Preis auf Anfrage",
-     "fr": "Prix sur demande",
-     "it": "Prezzo su richiesta"
-    }
-   },
-   "availability": "InStock",
-   "image": "https://www.ves-tech.ch/assets/img/p/imgp6034-1-2ff594-1000.webp",
-   "url": {
-    "de": "https://www.ves-tech.ch/produkte/zubehoer/reinigungspinselstaender/",
-    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/reinigungspinselstaender/",
-    "it": "https://www.ves-tech.ch/it/prodotti/accessori/reinigungspinselstaender/"
    }
   }
  ]

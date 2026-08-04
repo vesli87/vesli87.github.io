@@ -208,9 +208,12 @@ def media_html(lang, p, nm):
     for g in C.galleryOf(lang, p):
         bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"]})
 
-    vtag = f'<span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>'
+    # Über dem Foto lag früher ein Etikett mit den Schweissverfahren. Es stand im
+    # Markup vor dem Bild und wurde davon verdeckt - sichtbar blieb nur ein
+    # schwarzer Winkel in der Ecke. Die Verfahren stehen in den technischen
+    # Daten und in der Merkmalsliste; auf dem Bild braucht es sie nicht.
     if len(bilder) == 1:
-        return ('<div class="dimg">' + vtag
+        return ('<div class="dimg">'
                 + R.img_tag(p["img"], "(max-width:900px) 92vw, 520px", cls="zoomable",
                             alt=haupt["alt"], eager=True, width=560)
                 + "</div>")
@@ -236,7 +239,7 @@ def media_html(lang, p, nm):
                    + "</button>")
 
     return (f'<div class="dmedia" data-gal>'
-            f'<div class="dimg">{vtag}'
+            f'<div class="dimg">'
             f'<button class="galnav prev" type="button" data-step="-1" '
             f'aria-label="{e(C.t(lang, "gal_prev"))}">‹</button>'
             f'<div class="galstage">{slides}</div>'

@@ -217,8 +217,11 @@
      Groesse und lief aus der Karte heraus, quer ueber den Geraetenamen. */
   .pcard .imgbox{background:#fff;position:relative;height:0;padding:0 0 100%;overflow:hidden}
   .pcard .imgbox img{position:absolute;top:18px;left:18px;width:calc(100% - 36px);
-    height:calc(100% - 36px);object-fit:scale-down;background:#fff}
-  .pcard .vtag{position:absolute;top:12px;left:12px;max-width:calc(100% - 24px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:11px;letter-spacing:.05em;padding:4px 9px;border-radius:3px;line-height:1.35}
+    height:calc(100% - 36px);object-fit:scale-down}
+  /* Hier stand einmal ein Verfahrensetikett quer über dem Foto. Es lag im
+     Markup vor dem Bild, beide absolut positioniert - also deckte das Bild es
+     zu, und stehen blieb nur ein schwarzer Winkel in der Ecke. Das Etikett ist
+     entfernt: dieselben Angaben stehen ohnehin in den Merkmalen darunter. */
   .pcard .body{padding:16px 16px 0;flex:1}
   .pcard h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:19px;text-transform:uppercase;letter-spacing:.015em;line-height:1.18;overflow-wrap:break-word}
   .pcard p{color:var(--muted);font-size:13px;line-height:1.5;margin-top:6px}
@@ -238,7 +241,6 @@
      klein und scharf als gross und verwaschen. */
   .dimg > img{position:absolute;top:40px;left:40px;width:calc(100% - 80px);
     height:calc(100% - 80px);object-fit:scale-down;background:#fff}
-  .dimg .vtag{position:absolute;top:16px;left:16px;max-width:calc(100% - 32px);background:var(--ink);color:#fff;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.06em;padding:5px 11px;border-radius:3px;line-height:1.35}
   /* Bildbereich: ein grosses Bild, darunter der Miniaturstreifen. Ein Klick auf
      eine Miniatur tauscht das grosse Bild – dieselbe Bedienung wie in jedem
      Shop, und ohne JavaScript stehen einfach alle Bilder untereinander. */

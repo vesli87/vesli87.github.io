@@ -650,7 +650,7 @@
         if (res.products.length) {
           html += '<div class="pgrid">' + res.products.map(function (p) {
             return '<article class="pcard"><a class="pcard-link" href="' + esc(p.u) + '">' +
-              '<div class="imgbox"><span class="vtag">' + esc(p.v) + '</span>' +
+              '<div class="imgbox">' +
               '<img src="' + esc(p.g) + '" alt="' + esc(p.n) + '" width="280" height="280" loading="lazy" decoding="async"></div>' +
               '<div class="body"><h3>' + mark(p.n, q) + '</h3><p>' + mark(p.d, q) + '</p>' +
               '<div class="spec"><span>' + esc(p.c) + '</span><span>' + esc(p.s) + '</span></div></div></a>' +

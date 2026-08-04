@@ -672,7 +672,7 @@ def pcard(lang, p):
     url = C.u_prod(lang, p)
     return f"""<article class="pcard">
   <a class="pcard-link" href="{e(url)}">
-    <div class="imgbox"><span class="vtag">{e(" · ".join(C.verfahrenOf(lang, p)))}</span>
+    <div class="imgbox">
       {img_tag(p['img'], "(max-width:700px) 46vw, (max-width:1000px) 30vw, 280px",
                alt=f"{C.BRAND} {C.pName(lang, p)} – {C.pDesc(lang, p)}")}</div>
     <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>

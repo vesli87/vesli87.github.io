@@ -126,12 +126,17 @@ Neue Bilder: `python3 build/images.py` (braucht Netz und `cwebp`), danach `build
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, `Product` mit `Offer`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (237 URLs); Suche und Rechtstexte
+- `sitemap.xml` mit `xhtml:link`-Alternates (327 URLs); Suche und Rechtstexte
   sind `noindex,follow` und stehen bewusst nicht drin
 - `robots.txt` mit Sitemap-Verweis
 - Verifizierungs-Tags für Google Search Console und Bing Webmaster Tools:
   Wert in `core.py` eintragen (`GOOGLE_SITE_VERIFICATION`,
-  `BING_SITE_VERIFICATION`), das Tag erscheint dann auf jeder Seite
+  `BING_SITE_VERIFICATION`), das Tag erscheint dann auf jeder Seite.
+  **Vorzuziehen ist der DNS-Weg** — ein TXT-Eintrag in der Zone bei Infomaniak.
+  Er verifiziert die ganze Domain auf einmal, mit und ohne `www`, überlebt jeden
+  Umbau am Generator und hängt nicht daran, dass ein Tag im `<head>` stehen
+  bleibt. Die beiden Felder bleiben dann leer und im `<head>` steht kein
+  Verifizierungs-Tag — das ist der gewollte Zustand, kein Versehen.
 - CSS/JS mit `?v=<hash>` — sonst liefern Browser nach einem Deploy die alte Datei
 
 **Preis auf Anfrage im Schema:** Das `Offer` trägt bewusst **kein** `price`-Feld.
@@ -338,8 +343,15 @@ die Sichtbarkeit.
 - Web3Forms-Key eintragen (sonst `mailto:`-Fallback)
 - `ves-tech.ch` registrieren (bei nic.ch frei), DNS setzen, Postfach einrichten,
   danach `SITE` + `EMIT_CNAME` + `COMPANY["email"]` umstellen
-- Google Search Console und Bing Webmaster Tools verifizieren (Tag in `core.py`),
-  Sitemap einreichen
+- Google Search Console und Bing Webmaster Tools verifizieren, Sitemap einreichen.
+  Weg: Domain-Property in der Search Console anlegen, den TXT-Eintrag im
+  Infomaniak-Manager **zusätzlich** zum bestehenden SPF-Eintrag setzen (mehrere
+  TXT-Records am Zonenapex sind erlaubt — den SPF dabei nicht überschreiben),
+  danach in den Bing Webmaster Tools „Import aus Google Search Console“ wählen;
+  eine zweite Verifizierung entfällt. Das ist zugleich die einzige Besucher-
+  messung, die ohne Änderung an der Datenschutzerklärung auskommt: sie zählt
+  bei Google und Bing, nicht auf dem Gerät der Besucher. Die Zusage
+  „keine Analyse- oder Statistikwerkzeuge“ bleibt damit wahr.
 - Google Business Profile für Bronschhofen anlegen (stärkster lokaler SEO-Hebel)
 - Kategorie-Hero-Bilder, Verbrauchsmaterial für Cleaner, Garantieregistrierung
 - Echte Datenblatt-PDFs pro Gerät statt nur Katalog und Zertifikat

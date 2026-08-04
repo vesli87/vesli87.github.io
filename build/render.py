@@ -185,6 +185,7 @@ def ld_org(lang=C.DEFAULT_LANG):
         "knowsLanguage": ["de", "cs", "en"],
         "currenciesAccepted": "CHF",
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
+        "founder": {"@type": "Person", "name": co["owner"]},
         "slogan": C.t("de", "brand_claim"),
         "knowsAbout": [
             "MIG/MAG-Schweissen", "WIG/TIG-Schweissen", "MMA-Elektrodenschweissen",
@@ -543,6 +544,7 @@ def footer(lang):
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>
       </ul></div>
       <div><h2 class="fh">{e(C.t(lang,'site_name'))}</h2><ul>
+        <li class="owner">{e(co['owner'])}</li>
         <li><a href="{e(C.u_page(lang,'contact'))}">{e(vis['street'])}, {vis['zip']} {e(vis['city'])}</a></li>
         <li><a href="tel:{co['phone_href']}">{e(co['phone'])}</a></li>
         <li><a href="mailto:{co['email']}">{co['email']}</a></li>

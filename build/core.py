@@ -56,6 +56,10 @@ COMPANY = {
     "phone": "+41 76 710 91 39",
     "phone_href": "+41767109139",
     "email": "vestechswiss@gmail.com",
+    # Einzelunternehmen: das Geschaeft laeuft auf den Namen des Inhabers.
+    # Er gehoert deshalb nicht nur ins Impressum, sondern ueberall dorthin,
+    # wo die Firma als Anbieterin auftritt (UWG Art. 3 Abs. 1 lit. s).
+    "owner": "Martin Veselovsky",
     "hours": "Mo-Do 07:30-17:00 · Fr 07:30-11:30",
     # Muss mit dem Google Business Profile uebereinstimmen - Google gleicht
     # Oeffnungszeiten zwischen Website und Profil ab.

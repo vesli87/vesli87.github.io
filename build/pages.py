@@ -634,6 +634,7 @@ def page_contact(lang):
   <aside class="kinfo">
     <h2>{e(C.t(lang,'site_name'))}</h2>
     <address>
+      {e(co['owner'])}<br><br>
       <a class="accent" href="tel:{co['phone_href']}">{e(co['phone'])}</a><br>
       <a class="accent" href="mailto:{co['email']}">{co['email']}</a><br><br>
       {e(C.t(lang,'hours_lbl'))}:<br>{e(C.t(lang,'hours'))}

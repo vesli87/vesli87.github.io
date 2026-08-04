@@ -444,6 +444,7 @@
   .fcols h5{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.12em;color:var(--muted-2);font-size:13px;text-transform:uppercase;margin-bottom:12px}
   .fcols ul{list-style:none;line-height:2}
   .fcols a{color:var(--muted);font-size:14px;cursor:pointer}
+  .fcols li.owner{color:var(--muted);font-size:14px}
   .fcols a:hover{color:var(--white)}
   .fbar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted-2);font-size:12.5px}
   .fbar .soc{display:flex;gap:10px}

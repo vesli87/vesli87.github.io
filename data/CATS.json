@@ -3,7 +3,7 @@
   "id": "schweissgeraete",
   "t": "Schweissgeräte",
   "pk": "mig",
-  "d": "MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie.",
+  "d": "Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG.",
   "subs": [
    "MIG / MAG",
    "WIG / TIG",
@@ -15,7 +15,7 @@
   "id": "plasmaschneiden",
   "t": "Plasmaschneiden",
   "pk": "plasma",
-  "d": "Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.",
+  "d": "Theta Plasmaschneidinverter mit HSC-Technologie, von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.",
   "subs": [
    "Theta",
    "Theta Automation",
@@ -38,7 +38,7 @@
   "id": "zubehoer",
   "t": "Zubehör",
   "pk": "gear",
-  "d": "Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie.",
+  "d": "Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie.",
   "subs": [
    "Fahrwagen",
    "Wasserkühlung",

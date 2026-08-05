@@ -117,7 +117,7 @@
    "ActiveSpot Heftfunktion",
    "Hyper ARC Active Regelung",
    "Mix-TIG-Schweissen",
-   "AC/DC – Aluminium & Stahl",
+   "AC/DC: Aluminium & Stahl",
    "MAHE-MIX-PULSE",
    "Strom-Modulation einstellbar",
    "Digitale Anzeige",
@@ -131,7 +131,7 @@
    "Fonction ActiveSpot",
    "Régulation Hyper ARC Active",
    "Soudage Mix-TIG",
-   "AC/DC – aluminium & acier",
+   "AC/DC: aluminium & acier",
    "MAHE-MIX-PULSE",
    "Modulation de courant réglable",
    "Affichage numérique",
@@ -145,7 +145,7 @@
    "Funzione ActiveSpot",
    "Regolazione Hyper ARC Active",
    "Saldatura Mix-TIG",
-   "AC/DC – alluminio & acciaio",
+   "AC/DC: alluminio & acciaio",
    "MAHE-MIX-PULSE",
    "Modulazione di corrente regolabile",
    "Display digitale",
@@ -158,9 +158,9 @@
   "de": [
    "MMA-Elektrodenschweissen",
    "WIG Lift Arc (DC)",
-   "Hot-Start – sichere Zündung",
-   "Arc Force – stabiler Lichtbogen",
-   "Anti-Stick – kein Festkleben",
+   "Hot-Start: sichere Zündung",
+   "Arc Force: stabiler Lichtbogen",
+   "Anti-Stick: kein Festkleben",
    "Übertemperaturschutz",
    "Generatortauglich",
    "Robust & einfach zu bedienen"
@@ -168,9 +168,9 @@
   "fr": [
    "Soudage à l’électrode MMA",
    "TIG Lift Arc (DC)",
-   "Hot-Start – amorçage sûr",
-   "Arc Force – arc stable",
-   "Anti-Stick – pas de collage",
+   "Hot-Start: amorçage sûr",
+   "Arc Force: arc stable",
+   "Anti-Stick: pas de collage",
    "Protection surtempérature",
    "Compatible groupe électrogène",
    "Robuste & simple"
@@ -178,9 +178,9 @@
   "it": [
    "Saldatura a elettrodo MMA",
    "TIG Lift Arc (DC)",
-   "Hot-Start – innesco sicuro",
-   "Arc Force – arco stabile",
-   "Anti-Stick – niente incollaggio",
+   "Hot-Start: innesco sicuro",
+   "Arc Force: arco stabile",
+   "Anti-Stick: niente incollaggio",
    "Protezione sovratemperatura",
    "Compatibile con generatore",
    "Robusto & semplice"
@@ -216,7 +216,7 @@
   "de": [
    "Plasmaschneiden mit HSC-Technologie",
    "Sauberer, schneller Trennschnitt",
-   "Pilotlichtbogen – kontaktloses Zünden",
+   "Pilotlichtbogen: kontaktloses Zünden",
    "Für alle leitenden Metalle",
    "Gittertrennen möglich",
    "Digitale Anzeige",
@@ -226,7 +226,7 @@
   "fr": [
    "Découpe plasma technologie HSC",
    "Coupe nette et rapide",
-   "Arc pilote – amorçage sans contact",
+   "Arc pilote: amorçage sans contact",
    "Tous métaux conducteurs",
    "Découpe de grilles possible",
    "Affichage numérique",
@@ -236,7 +236,7 @@
   "it": [
    "Taglio plasma tecnologia HSC",
    "Taglio netto e veloce",
-   "Arco pilota – innesco senza contatto",
+   "Arco pilota: innesco senza contatto",
    "Tutti i metalli conduttivi",
    "Taglio di grigliati possibile",
    "Display digitale",

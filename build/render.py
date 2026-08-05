@@ -674,7 +674,7 @@ def pcard(lang, p):
   <a class="pcard-link" href="{e(url)}">
     <div class="imgbox">
       {img_tag(p['img'], "(max-width:700px) 46vw, (max-width:1000px) 30vw, 280px",
-               alt=f"{C.BRAND} {C.pName(lang, p)} – {C.pDesc(lang, p)}")}</div>
+               alt=f"{C.BRAND} {C.pName(lang, p)}: {C.pDesc(lang, p)}")}</div>
     <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>
       <div class="spec">{specs}</div></div>
   </a>

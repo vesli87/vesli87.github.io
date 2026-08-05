@@ -19,10 +19,10 @@
 - [Sitemap](https://www.ves-tech.ch/sitemap.xml)
 
 ## Kategorien
-- [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie. (14 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
-- [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
+- [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG. (14 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
+- [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie, von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
-- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie. (43 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
+- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie. (43 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
 
 ## Geräte
 ### Schweissgeräte
@@ -48,8 +48,8 @@
 - [MAHE Theta 180 HSC](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/): Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie. (Plasma Cut)
 - [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
 - [MAHE Theta 120 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
-- [MAHE MPT 3001](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/): Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle. (Plasma CNC)
-- [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/): Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle. (Plasma CNC)
+- [MAHE MPT 3001](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/): Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle. (Plasma CNC)
+- [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/): Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle. (Plasma CNC)
 
 ### Reinigungsgeräte
 - [MAHE MiniReiniger](https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/): Wirtschaftlicher Inverter, speziell für den mobilen Einsatz. (Cleaner)
@@ -80,7 +80,7 @@
 - [MAHE RC 15](https://www.ves-tech.ch/produkte/zubehoer/rc15/): Handfernregler mit Up/Down- und Start/Stopp-Taste. (Fernregler)
 - [MAHE RC 100](https://www.ves-tech.ch/produkte/zubehoer/rc100/): Handfernregler für alle MAHE WIG- und MMA-Geräte. (Fernregler)
 - [MAHE RC 100 DS](https://www.ves-tech.ch/produkte/zubehoer/rc100ds/): Handfernregler speziell für Delta-Digital-DS-Maschinen. (Fernregler)
-- [MAHE MCU 1](https://www.ves-tech.ch/produkte/zubehoer/mcu1/): MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht. (Kalibrierung)
+- [MAHE MCU 1](https://www.ves-tech.ch/produkte/zubehoer/mcu1/): MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht. (Kalibrierung)
 - [MAHE USB 2in1 Programmierer](https://www.ves-tech.ch/produkte/zubehoer/usb2in1/): Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software. (Programmierung)
 - [MAHE Elektrodenkabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/): Elektrodenkabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
 - [MAHE Massekabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel/): Massekabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
@@ -103,20 +103,20 @@
 - [MAHE PSAB 65](https://www.ves-tech.ch/produkte/zubehoer/psab65/): Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in 6 und 12 Meter Länge. (Plasmabrenner)
 - [MAHE PSAB 125](https://www.ves-tech.ch/produkte/zubehoer/psab125/): Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in 6 und 12 Meter Länge. (Plasmabrenner)
 - [MAHE Verschleissteilebox S 25](https://www.ves-tech.ch/produkte/zubehoer/vtbox-s25/): Verschleissteilebox für den fest in der Theta 40 verbauten Plasmaschneidbrenner S 25. (Verschleiss)
-- [MAHE Verschleissteilebox PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160. (Verschleiss)
-- [MAHE Verschleissteilebox PSHB 125](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160. (Verschleiss)
-- [MAHE Verschleissteilebox PSHB 160](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125. (Verschleiss)
+- [MAHE Verschleissteilebox PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 65, gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160. (Verschleiss)
+- [MAHE Verschleissteilebox PSHB 125](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 125, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160. (Verschleiss)
+- [MAHE Verschleissteilebox PSHB 160](https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/): Verschleissteilebox für den Plasmaschneidbrenner PSHB 160, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125. (Verschleiss)
 - [MAHE Drahtvorschubrollen](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/): Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Drahtvorschubrollen HyperMIG X](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/): Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 
 ## Verfahren
-- MIS – Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.
-- Doppelpuls: Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung – ideal für Aluminium.
+- MIS: Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung, dadurch wenig Nacharbeit.
+- Doppelpuls: Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
 - HyperPuls: Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.
 - HyperForce: Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.
-- HyperCold: Geringste Wärmeeinbringung – ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
-- HyperRoot: Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite – auch bei grösseren Spalten.
+- HyperCold: Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
+- HyperRoot: Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite, auch bei grösseren Spalten.
 - HyperUP: Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.
 
 ## Häufige Fragen

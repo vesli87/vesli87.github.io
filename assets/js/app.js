@@ -740,7 +740,7 @@
       (data.phone ? '\nTelefon: ' + data.phone : '') +
       (extraBody ? '\n\n' + extraBody : '') +
       (data.message ? '\n\nNachricht:\n' + data.message : '') +
-      '\n\n— gesendet über ' + location.origin + location.pathname + ' (' + (VT.lang || 'de') + ')';
+      '\n\nGesendet über ' + location.origin + location.pathname + ' (' + (VT.lang || 'de') + ')';
 
     if (!VT.web3formsKey) { mailtoFallback(subject, body); return; }
 

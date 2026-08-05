@@ -1,6 +1,6 @@
 {
  "@context": "https://schema.org",
- "generated": "2026-08-04",
+ "generated": "2026-08-05",
  "seller": {
   "name": "VES-TECH Swiss",
   "url": "https://www.ves-tech.ch/",
@@ -2627,7 +2627,7 @@
     "de": [
      "Hochfrequenz Impulsschweissen",
      "HyperSpot Punktschweissen",
-     "ActiveSpot – schnelle Heftfunktion",
+     "ActiveSpot: schnelle Heftfunktion",
      "Hyper ARC Active Regelung",
      "Mix TIG Schweissen",
      "Strom Modulation einstellbar",
@@ -2641,7 +2641,7 @@
     "fr": [
      "Soudage pulsé haute fréquence",
      "Pointage HyperSpot",
-     "ActiveSpot – pointage rapide",
+     "ActiveSpot: pointage rapide",
      "Régulation Hyper ARC Active",
      "Soudage Mix TIG",
      "Modulation de courant réglable",
@@ -2655,7 +2655,7 @@
     "it": [
      "Saldatura pulsata ad alta frequenza",
      "Puntatura HyperSpot",
-     "ActiveSpot – puntatura rapida",
+     "ActiveSpot: puntatura rapida",
      "Regolazione Hyper ARC Active",
      "Saldatura Mix TIG",
      "Modulazione di corrente regolabile",
@@ -3110,7 +3110,7 @@
     "de": [
      "Hochfrequenz Impulsschweissen",
      "HyperSpot Punktschweissen",
-     "ActiveSpot – schnelle Heftfunktion",
+     "ActiveSpot: schnelle Heftfunktion",
      "Hyper ARC Active Regelung",
      "Digitale Anzeige",
      "Leistungsstarke Wasserkühlung",
@@ -3121,7 +3121,7 @@
     "fr": [
      "Soudage pulsé haute fréquence",
      "Pointage HyperSpot",
-     "ActiveSpot – pointage rapide",
+     "ActiveSpot: pointage rapide",
      "Régulation Hyper ARC Active",
      "Affichage numérique",
      "Refroidissement à eau performant",
@@ -3132,7 +3132,7 @@
     "it": [
      "Saldatura pulsata ad alta frequenza",
      "Puntatura HyperSpot",
-     "ActiveSpot – puntatura rapida",
+     "ActiveSpot: puntatura rapida",
      "Regolazione Hyper ARC Active",
      "Display digitale",
      "Raffreddamento ad acqua potente",
@@ -8158,7 +8158,7 @@
      "Qualitätsschnitt max. 38 mm",
      "Stabile Lift Arc Zündung",
      "Maximale Produktivität",
-     "Option Automaten – Schnittstelle",
+     "Option Automaten: Schnittstelle",
      "Lochblech Schneidfunktion",
      "Fugenhobeln Funktion"
     ],
@@ -9831,7 +9831,7 @@
     "it": "Tavoli di taglio"
    },
    "description": {
-    "de": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+    "de": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.",
     "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en set avec une source de courant MAHE Theta.",
     "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta."
    },
@@ -9894,7 +9894,7 @@
      },
      {
       "name": "Wasserpflegemittel MWPF 100",
-      "note": "1 kg – für das Wasserbett des Schneidtischs"
+      "note": "1 kg für das Wasserbett des Schneidtischs"
      },
      {
       "name": "Verschleissteilebox PSAB 125",
@@ -9916,7 +9916,7 @@
      },
      {
       "name": "Produit d'entretien de l'eau MWPF 100",
-      "note": "1 kg – pour le bac à eau de la table de découpe"
+      "note": "1 kg pour le bac à eau de la table de découpe"
      },
      {
       "name": "Coffret de pièces d'usure PSAB 125",
@@ -9938,7 +9938,7 @@
      },
      {
       "name": "Additivo per l'acqua MWPF 100",
-      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
+      "note": "1 kg per la vasca ad acqua del tavolo di taglio"
      },
      {
       "name": "Box ricambi di usura PSAB 125",
@@ -10023,7 +10023,7 @@
     "it": "Tavoli di taglio"
    },
    "description": {
-    "de": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+    "de": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.",
     "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en set avec une source de courant MAHE Theta.",
     "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta."
    },
@@ -10086,7 +10086,7 @@
      },
      {
       "name": "Wasserpflegemittel MWPF 100",
-      "note": "1 kg – für das Wasserbett des Schneidtischs"
+      "note": "1 kg für das Wasserbett des Schneidtischs"
      },
      {
       "name": "Verschleissteilebox PSAB 125",
@@ -10108,7 +10108,7 @@
      },
      {
       "name": "Produit d'entretien de l'eau MWPF 100",
-      "note": "1 kg – pour le bac à eau de la table de découpe"
+      "note": "1 kg pour le bac à eau de la table de découpe"
      },
      {
       "name": "Coffret de pièces d'usure PSAB 125",
@@ -10130,7 +10130,7 @@
      },
      {
       "name": "Additivo per l'acqua MWPF 100",
-      "note": "1 kg – per la vasca ad acqua del tavolo di taglio"
+      "note": "1 kg per la vasca ad acqua del tavolo di taglio"
      },
      {
       "name": "Box ricambi di usura PSAB 125",
@@ -11563,7 +11563,7 @@
     "de": [
      "Stromquelle zum Markieren",
      "Tiefschwarz markieren",
-     "Kurzschluss – Schutzsystem",
+     "Kurzschluss: Schutzsystem",
      "Geeignet für Schablonen aller Hersteller"
     ],
     "fr": [
@@ -13487,7 +13487,7 @@
     "it": "Attrezzatura officina"
    },
    "description": {
-    "de": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.",
+    "de": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht.",
     "fr": "Calibrateur MAHE pour calibrage et validation, grands affichages Volt/Ampère.",
     "it": "Calibratore MAHE per calibrazione e validazione, ampi display Volt/Ampere."
    },
@@ -15126,9 +15126,9 @@
     "it": "Parti di usura"
    },
    "description": {
-    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.",
-    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 65 – contenu identique aux coffrets PSHB 125 et PSHB 160.",
-    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 65 – dotazione identica ai box PSHB 125 e PSHB 160."
+    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 65, gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 65, contenu identique aux coffrets PSHB 125 et PSHB 160.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 65, dotazione identica ai box PSHB 125 e PSHB 160."
    },
    "highlights": {
     "de": [],
@@ -15203,9 +15203,9 @@
     "it": "Parti di usura"
    },
    "description": {
-    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.",
-    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 125 – contenu identique aux coffrets PSHB 65 et PSHB 160.",
-    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 125 – dotazione identica ai box PSHB 65 e PSHB 160."
+    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 125, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 125, contenu identique aux coffrets PSHB 65 et PSHB 160.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 125, dotazione identica ai box PSHB 65 e PSHB 160."
    },
    "highlights": {
     "de": [],
@@ -15280,9 +15280,9 @@
     "it": "Parti di usura"
    },
    "description": {
-    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.",
-    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 160 – contenu identique aux coffrets PSHB 65 et PSHB 125.",
-    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 160 – dotazione identica ai box PSHB 65 e PSHB 125."
+    "de": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 160, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.",
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 160, contenu identique aux coffrets PSHB 65 et PSHB 125.",
+    "it": "Box di parti di usura per la torcia da taglio al plasma PSHB 160, dotazione identica ai box PSHB 65 e PSHB 125."
    },
    "highlights": {
     "de": [],

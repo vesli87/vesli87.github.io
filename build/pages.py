@@ -203,7 +203,7 @@ def media_html(lang, p, nm):
     """
     haupt = {"img": p["img"],
              "cap": "",
-             "alt": f"{C.BRAND} {nm} – {C.pDesc(lang, p)}"}
+             "alt": f"{C.BRAND} {nm}: {C.pDesc(lang, p)}"}
     bilder = [haupt]
     for g in C.galleryOf(lang, p):
         bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"]})
@@ -334,7 +334,7 @@ def page_home(lang):
     <div class="hero-inner">
       <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
            width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
-           alt="{e(C.BRAND)} HyperMIG SX – Schweissanlagen bei {e(C.t(lang,'site_name'))}"
+           alt="{e(C.BRAND)} HyperMIG SX: Schweissanlagen bei {e(C.t(lang,'site_name'))}"
            onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
     </div>
   </div>
@@ -343,7 +343,7 @@ def page_home(lang):
     <div class="hero-inner">
       <img class="hero-photo" src="{R.HERO2_SRC}" srcset="{R.HERO2_SRCSET}" sizes="100vw"
            width="{R.HERO_W}" height="{R.HERO_H}" loading="lazy" decoding="async"
-           alt="{e(C.BRAND)} MPT – CNC-Plasmaschneidtisch mit Bedienkonsole"
+           alt="{e(C.BRAND)} MPT: CNC-Plasmaschneidtisch mit Bedienkonsole"
            onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero-mpt.jpg'">
       <div class="hero-txt">
         <span class="hk">{e(C.t(lang,'hero2_kicker'))}</span>
@@ -489,8 +489,8 @@ def page_product(lang, p):
     nm = C.pName(lang, p)
     suffix = " | " + C.t(lang, "site_name")
     # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
-    for cand in (f"MAHE {nm} · {sub_t} – {cat_t}" + suffix,
-                 f"MAHE {nm} · {sub_t} – {cat_t}",
+    for cand in (f"MAHE {nm} · {sub_t} · {cat_t}" + suffix,
+                 f"MAHE {nm} · {sub_t} · {cat_t}",
                  f"MAHE {nm} · {sub_t}" + suffix,
                  f"MAHE {nm} · {sub_t}"):
         title = cand

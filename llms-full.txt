@@ -1,12 +1,12 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-08-04. Quelle: https://www.ves-tech.ch
+Stand: 2026-08-05. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss in Herisau (AR, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, telefonisch erreichbar Mo-Do 07:30-17:00 · Fr 07:30-11:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
 ---
 
 ## Schweissgeräte
-MIG/MAG, WIG/TIG, MMA und Plasma-TIG – Hochleistungsstromquellen von MAHE mit Upgrade-Technologie.
+Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG.
 
 ### MAHE HyperMIG X
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/
@@ -162,7 +162,7 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5, RC 100, MT260, MT170, Elektrode
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-AX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.
-Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot – schnelle Heftfunktion; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
+Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
 Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
 
 Technische Daten – HyperTIG AX:
@@ -191,7 +191,7 @@ Passendes Zubehör: FRC 5, RC 5, RC 100, MT200W, MT180W, Elektrodenkabel 25–90
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: HYPERTIG-DX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.
-Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot – schnelle Heftfunktion; Hyper ARC Active Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
+Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper ARC Active Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
 Ausstattung: Verfahren: WIG DC; Kühlung: wassergekühlt.
 
 Technische Daten – HyperTIG DX:
@@ -440,7 +440,7 @@ Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ## Plasmaschneiden
-Theta Plasmaschneidinverter mit HSC-Technologie – von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.
+Theta Plasmaschneidinverter mit HSC-Technologie, von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.
 
 ### MAHE Theta 40
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
@@ -508,7 +508,7 @@ Passendes Zubehör: PSHB 65, Verschleissteilebox PSHB 65, Massekabel 25 mm², ST
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-120 · Preis: auf Anfrage (CHF)
 Industrieller Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Option Automaten – Schnittstelle; Lochblech Schneidfunktion; Fugenhobeln Funktion.
+Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Option Automaten: Schnittstelle; Lochblech Schneidfunktion; Fugenhobeln Funktion.
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC.
 
 Technische Daten – Theta 120 HSC:
@@ -630,9 +630,9 @@ Passendes Zubehör: PSAB 125, Massekabel 25 mm².
 ### MAHE MPT 3001
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/
 Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-3001 · Preis: auf Anfrage (CHF)
-Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.
+Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.
 Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle; Arbeitsbereich 3000 x 1500 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das MyPlasm CNC System von Proma Elektronika; Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format; Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
-Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg – für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
+Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
 Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 3000 x 1500 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
@@ -640,9 +640,9 @@ Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
 ### MAHE MPT 2501
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/
 Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-2501 · Preis: auf Anfrage (CHF)
-Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.
+Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.
 Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle; Arbeitsbereich 2500 x 1250 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das MyPlasm CNC System von Proma Elektronika; Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format; Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
-Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg – für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
+Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
 Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 2500 x 1250 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
@@ -766,7 +766,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/
 Kategorie: Reinigungsgeräte / Signiergeräte · Typ: Signieren · Art.-Nr.: HCS1 · Preis: auf Anfrage (CHF)
 Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.
-Besonderheiten: Stromquelle zum Markieren; Tiefschwarz markieren; Kurzschluss – Schutzsystem; Geeignet für Schablonen aller Hersteller.
+Besonderheiten: Stromquelle zum Markieren; Tiefschwarz markieren; Kurzschluss: Schutzsystem; Geeignet für Schablonen aller Hersteller.
 Ausstattung: Verfahren: Elektrolyt-Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
 
 Technische Daten – Signiergerät HCS1:
@@ -844,7 +844,7 @@ Ausstattung: Typ: Signieren; Anwendung: Markieren; Gebinde: 0,1 / 0,5 / 1,0 L; S
 Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ## Zubehör
-Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung – abgestimmt auf jede MAHE-Serie.
+Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie.
 
 ### MAHE STT 30
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt30/
@@ -933,7 +933,7 @@ Ausstattung: Typ: Handfernregler; Für: Delta Digital DS.
 ### MAHE MCU 1
 URL: https://www.ves-tech.ch/produkte/zubehoer/mcu1/
 Kategorie: Zubehör / Werkstattausrüstung · Typ: Kalibrierung · Art.-Nr.: MCU1 · Preis: auf Anfrage (CHF)
-MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.
+MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht.
 Ausstattung: Funktion: Kalibrieren / Validieren; Anzeige: Volt & Ampere (gross); Gewicht: 16,5 kg.
 
 ### MAHE USB 2in1 Programmierer
@@ -1071,19 +1071,19 @@ Ausstattung: Für: S 25; Schneiddüsen: 5x 0,8 mm kurz; Elektrode: 1x kurz; Auss
 ### MAHE Verschleissteilebox PSHB 65
 URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/
 Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-PSHB65 · Preis: auf Anfrage (CHF)
-Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.
+Verschleissteilebox für den Plasmaschneidbrenner PSHB 65, gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.
 Ausstattung: Für: PSHB 65; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; Kappen: 1x Brennerkappe · 1x Schutzkappe.
 
 ### MAHE Verschleissteilebox PSHB 125
 URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/
 Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-PSHB125 · Preis: auf Anfrage (CHF)
-Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.
+Verschleissteilebox für den Plasmaschneidbrenner PSHB 125, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.
 Ausstattung: Für: PSHB 125; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; Kappen: 1x Brennerkappe · 1x Schutzkappe.
 
 ### MAHE Verschleissteilebox PSHB 160
 URL: https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/
 Kategorie: Zubehör / Verschleissteile · Typ: Verschleiss · Art.-Nr.: VTBOX-PSHB160 · Preis: auf Anfrage (CHF)
-Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.
+Verschleissteilebox für den Plasmaschneidbrenner PSHB 160, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.
 Ausstattung: Für: PSHB 160; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; Kappen: 1x Brennerkappe · 1x Schutzkappe.
 
 ### MAHE Drahtvorschubrollen
@@ -1108,11 +1108,11 @@ Ausstattung: Für: HyperMIG X; Verbindet: Stromquelle mit Vorschubkoffer; Länge
 
 ## Schweissverfahren von MAHE
 
-### MIS – Spritzerfrei
-Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.
+### MIS: Spritzerfrei
+Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung, dadurch wenig Nacharbeit.
 
 ### Doppelpuls
-Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung – ideal für Aluminium.
+Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
 
 ### HyperPuls
 Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.
@@ -1121,10 +1121,10 @@ Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, wen
 Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.
 
 ### HyperCold
-Geringste Wärmeeinbringung – ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
+Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
 
 ### HyperRoot
-Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite – auch bei grösseren Spalten.
+Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite, auch bei grösseren Spalten.
 
 ### HyperUP
 Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.
@@ -1140,7 +1140,7 @@ Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der
 Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte, sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht.
 
 ### Was ist der Unterschied zwischen WIG DC und WIG AC/DC?
-WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf – nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl.
+WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf. Nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl.
 
 ### Wie funktioniert die elektrolytische Schweissnahtreinigung?
 Ein MAHE Cleaner leitet über einen mit Elektrolyt getränkten Karbon-Pinsel Strom in die Schweissnaht. Die Anlauffarben und die Oxidschicht auf Chromstahl werden elektrochemisch entfernt, die Passivschicht baut sich wieder auf. Je nach Elektrolyt wird gereinigt (R1, RP1), poliert (P1), neutralisiert (N1) oder das Metall dauerhaft signiert (M1). Das ist schneller und schonender als Beizen und ohne Säurebad.
@@ -1149,10 +1149,10 @@ Ein MAHE Cleaner leitet über einen mit Elektrolyt getränkten Karbon-Pinsel Str
 Die Theta-Serie deckt den Bereich von etwa 15 mm bis 80 mm Trennschnitt ab: Theta 40 für die leichte Werkstatt am 230-V-Netz, Theta 60 und Theta 120 für den industriellen Einsatz mit HSC-Technologie und Theta 180 als stärkstes Modell. Für CNC-Anlagen gibt es Theta 60 AUT und Theta 120 AUT mit Automations-Schnittstelle.
 
 ### Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?
-Ja. Die Werkstatt in Herisau AR – bei unserer Partnerfirma Schweisstechnik Scherrer AG – übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39.
+Ja. Die Werkstatt in Herisau AR, bei unserer Partnerfirma Schweisstechnik Scherrer AG, übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39.
 
 ### Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?
-EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage – inklusive Konformitätszertifikat.
+EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat.
 
 ### Wie schnell erhalte ich ein Angebot?
 In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus.

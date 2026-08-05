@@ -1,6 +1,6 @@
 {
  "hyper": {
-  "n": "HX – Hyper Front Panel",
+  "n": "HX: Hyper Front Panel",
   "big": true,
   "img": "2022/03/HyperMIG_HX_Frontpanel-300x172.png",
   "tl": {
@@ -10,7 +10,7 @@
   }
  },
  "ecopuls": {
-  "n": "EX – EcoPuls Front Panel",
+  "n": "EX: EcoPuls Front Panel",
   "big": true,
   "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
   "tl": {
@@ -20,7 +20,7 @@
   }
  },
  "ecomig": {
-  "n": "EX – EcoMIG Front Panel",
+  "n": "EX: EcoMIG Front Panel",
   "big": true,
   "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
   "tl": {
@@ -30,7 +30,7 @@
   }
  },
  "wig": {
-  "n": "WIG DC – Bedienpanel",
+  "n": "WIG DC: Bedienpanel",
   "big": false,
   "tl": {
    "de": "WIG-DC-Panel mit HF-Zündung, HyperSpot, Puls und Slope-Steuerung.",
@@ -39,7 +39,7 @@
   }
  },
  "wig_acdc": {
-  "n": "WIG AC/DC – Bedienpanel",
+  "n": "WIG AC/DC: Bedienpanel",
   "big": false,
   "tl": {
    "de": "AC/DC-Panel mit HF-Zündung, HyperSpot, MAHE-MIX-PULSE und AC-Balance/Frequenz.",
@@ -75,7 +75,7 @@
   }
  },
  "steel": {
-  "n": "SX – Steel Front Panel",
+  "n": "SX: Steel Front Panel",
   "big": true,
   "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
   "tl": {
@@ -85,7 +85,7 @@
   }
  },
  "steelpuls": {
-  "n": "SX – Steel Puls Front Panel",
+  "n": "SX: Steel Puls Front Panel",
   "big": true,
   "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
   "tl": {
@@ -95,7 +95,7 @@
   }
  },
  "hypermig_ex": {
-  "n": "EX – EcoPuls Front Panel",
+  "n": "EX: EcoPuls Front Panel",
   "big": true,
   "img": "panels/HyperMIG_EX_Frontpanel..png",
   "ctrl": [
@@ -112,7 +112,7 @@
   ]
  },
  "hypermig_hx": {
-  "n": "HX – Hyper Front Panel",
+  "n": "HX: Hyper Front Panel",
   "big": true,
   "img": "panels/HyperMIG_HX_Frontpanel.png",
   "ctrl": [
@@ -130,7 +130,7 @@
   ]
  },
  "hypermig_sx": {
-  "n": "SX – Steel Puls Front Panel",
+  "n": "SX: Steel Puls Front Panel",
   "big": true,
   "img": "panels/HyperMIG_SX_Frontpanel.png",
   "ctrl": [
@@ -157,12 +157,12 @@
   "img": "panels/EcoMIG-LowCost_Frontpanel.png"
  },
  "mms_panel": {
-  "n": "MMS 2000 C – Bedienpanel",
+  "n": "MMS 2000 C: Bedienpanel",
   "big": true,
   "img": "panels/MMS2000C_Panel.png"
  },
  "omega_pro": {
-  "n": "Omega AX Pro – Bedienpanel",
+  "n": "Omega AX Pro: Bedienpanel",
   "big": true,
   "img": "panels/OmegaAX Pro.png",
   "ctrl": [
@@ -176,7 +176,7 @@
   ]
  },
  "omega_syn": {
-  "n": "Omega AX Syn – Bedienpanel",
+  "n": "Omega AX Syn: Bedienpanel",
   "big": true,
   "img": "panels/Omega AX SYN.png",
   "ctrl": [
@@ -190,7 +190,7 @@
   ]
  },
  "betadx_pro": {
-  "n": "Beta DX Pro – Bedienpanel",
+  "n": "Beta DX Pro: Bedienpanel",
   "big": true,
   "img": "panels/BetaDX_Pro_Panel.png",
   "ctrl": [
@@ -204,7 +204,7 @@
   ]
  },
  "betadx_syn": {
-  "n": "Beta DX Syn – Bedienpanel",
+  "n": "Beta DX Syn: Bedienpanel",
   "big": true,
   "img": "panels/BetaDX_Syn_Panel.png",
   "ctrl": [
@@ -218,7 +218,7 @@
   ]
  },
  "betadig_profi": {
-  "n": "Beta digital Profi – Bedienpanel",
+  "n": "Beta digital Profi: Bedienpanel",
   "big": true,
   "img": "panels/BetaDigital_Profi_Panel.PNG",
   "ctrl": [
@@ -232,7 +232,7 @@
   ]
  },
  "betadig_syn": {
-  "n": "Beta digital Syn – Bedienpanel",
+  "n": "Beta digital Syn: Bedienpanel",
   "big": true,
   "img": "panels/BetaDigital_Syn_Panel.png",
   "ctrl": [
@@ -246,7 +246,7 @@
   ]
  },
  "hypertig_ax": {
-  "n": "HyperTIG AX – Bedienpanel",
+  "n": "HyperTIG AX: Bedienpanel",
   "big": true,
   "img": "panels/HyperTIG_AX_Frontpanel.png",
   "ctrl": [
@@ -260,7 +260,7 @@
   ]
  },
  "hypertig_dx": {
-  "n": "HyperTIG DX – Bedienpanel",
+  "n": "HyperTIG DX: Bedienpanel",
   "big": true,
   "img": "panels/HyperTIG_DX_Frontpanel.png",
   "ctrl": [
@@ -274,7 +274,7 @@
   ]
  },
  "hypertig_acdc": {
-  "n": "HyperTIG AC/DC – Bedienpanel",
+  "n": "HyperTIG AC/DC: Bedienpanel",
   "big": true,
   "img": "panels/HyperTIG_ACDC_Panel.png",
   "ctrl": [
@@ -288,52 +288,52 @@
   ]
  },
  "i1600_panel": {
-  "n": "i-1600 – Bedienpanel",
+  "n": "i-1600: Bedienpanel",
   "big": true,
   "img": "panels/i_1600.png"
  },
  "delta_panel": {
-  "n": "Delta – Bedienpanel",
+  "n": "Delta: Bedienpanel",
   "big": true,
   "img": "panels/Delta1800.png"
  },
  "deltadig": {
-  "n": "Delta Digital – Bedienpanel",
+  "n": "Delta Digital: Bedienpanel",
   "big": true,
   "img": "panels/DeltaDigital_1800.png"
  },
  "deltadig_big": {
-  "n": "Delta Digital – Bedienpanel",
+  "n": "Delta Digital: Bedienpanel",
   "big": true,
   "img": "panels/DeltaDigital_BIG_Panel.png"
  },
  "theta40_panel": {
-  "n": "Theta 40 – Bedienpanel",
+  "n": "Theta 40: Bedienpanel",
   "big": true,
   "img": "panels/Theta40_Panel.png"
  },
  "theta_hsc": {
-  "n": "Theta HSC – Bedienpanel",
+  "n": "Theta HSC: Bedienpanel",
   "big": true,
   "img": "panels/ThetaHSC_Panel.png"
  },
  "mini_panel": {
-  "n": "MiniReiniger – Bedienpanel",
+  "n": "MiniReiniger: Bedienpanel",
   "big": true,
   "img": "panels/MiniCleaner_Panel.png"
  },
  "cleaner_st": {
-  "n": "HyperCleaner ST – Bedienpanel",
+  "n": "HyperCleaner ST: Bedienpanel",
   "big": true,
   "img": "panels/HyperClenaerST_Panel.png"
  },
  "cleaner_plus": {
-  "n": "HyperCleaner ST Plus – Bedienpanel",
+  "n": "HyperCleaner ST Plus: Bedienpanel",
   "big": true,
   "img": "panels/HyperCleaner_ST_Plus_Panell.png"
  },
  "ct200_panel": {
-  "n": "HyperCleaner CT 200 – Bedienpanel",
+  "n": "HyperCleaner CT 200: Bedienpanel",
   "big": true,
   "img": "panels/CT200_Panel.png",
   "ctrl": [
@@ -342,7 +342,7 @@
   ]
  },
  "ct200_syn": {
-  "n": "CT 200 Syn – Bedienpanel",
+  "n": "CT 200 Syn: Bedienpanel",
   "big": true,
   "img": "panels/CT200_Syn_Panel.png",
   "ctrl": [
@@ -371,12 +371,12 @@
   "img": "panels/HyperMIG_EX_Frontpanel..png"
  },
  "hypermig_ecomig": {
-  "n": "EX – EcoMIG Front Panel",
+  "n": "EX: EcoMIG Front Panel",
   "big": true,
   "img": "panels/HyperMIG_EX_Frontpanel..png"
  },
  "hypermig_steel": {
-  "n": "SX – Steel Front Panel",
+  "n": "SX: Steel Front Panel",
   "big": true,
   "img": "panels/HyperMIG_SX_Frontpanel.png"
  }

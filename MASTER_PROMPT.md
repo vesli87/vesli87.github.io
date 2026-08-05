@@ -251,6 +251,16 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
    der nächste Build überschreibt es.
 2. **Keine Preise.** Immer „Preis auf Anfrage", kein `price` im JSON-LD.
 3. **Jeder neue Text in DE + FR + IT**, Schweizer „ss".
+3a. **Kein Gedankenstrich im sichtbaren Text.** Wo „… und Automation – vom
+   Techniker …" stand, steht jetzt ein Komma, ein Doppelpunkt, eine Klammer oder
+   ein eigener Satz. In der Schriftgrösse des Fliesstextes wirkt der Strich auf
+   dem Telefon wie ein Trennstrich mitten im Satz. Bei Aufzählungen der Form
+   „Begriff – Erklärung" steht der Doppelpunkt („Hot-Start: sichere Zündung"),
+   in Überschriften der Mittelpunkt („MAHE MPT · CNC-Plasmaschneidtisch").
+   **Bis-Striche bleiben:** „10 – 420 A", „25–90 mm²", „Mo–Do 07:30–17:00",
+   „Name A–Z", „Ziff. 2–4 UWG" — das sind Messwerte, Zeiten und Verweise, kein
+   Satzzeichen. Ebenso bleibt `core.py::SPEC_EMPTY`: ein „–" in einer
+   Tabellenzelle heisst „gibt es an diesem Modell nicht".
 4. Neue Prozess-Icons im Stil blaue Kachel `#23457f` + weisses Piktogramm,
    `tile:true`.
 5. Neue Produkte folgen dem `P`-Schema; Unterkategorie in `CATS` ergänzen und

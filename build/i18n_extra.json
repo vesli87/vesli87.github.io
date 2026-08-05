@@ -23,16 +23,16 @@
   "all_title": "Alle MAHE Geräte · Schweissen, Plasma, Reinigung, Zubehör",
   "all_desc": "Das komplette MAHE-Programm bei VES-TECH Swiss: {n} Geräte für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden, elektrolytische Reinigung und Zubehör. Preis auf Anfrage.",
   "all_h1": "Alle MAHE Geräte",
-  "all_lead": "Das komplette MAHE-Programm – geordnet nach Verfahren. Alle Geräte mit Schweizer Service, Garantieabwicklung und Beratung durch den Techniker.",
+  "all_lead": "Das komplette MAHE-Programm, geordnet nach Verfahren. Alle Geräte mit Schweizer Service, Garantieabwicklung und Beratung durch den Techniker.",
   "cat_title_tpl": "{cat} · MAHE {sub_hint} kaufen in der Schweiz | VES-TECH",
   "cat_desc_tpl": "{cat} von MAHE bei VES-TECH Swiss: {n} Modelle, {subs}. Beratung, Service und Ersatzteile aus Herisau AR. Preis auf Anfrage.",
   "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
-  "sub_desc_tpl": "MAHE {sub} – {n} Modelle bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
-  "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
+  "sub_desc_tpl": "MAHE {sub}: {n} Modelle bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
+  "prod_title_tpl": "MAHE {name} · {sub} · {cat}",
   "prod_desc_tpl": "MAHE {name} ({vt}): {desc} Technische Daten, passendes Zubehör und Beratung bei VES-TECH Swiss. Preis auf Anfrage.",
   "prod_intro_tpl": "Der MAHE {name} ist ein {vt}-Gerät aus dem Bereich {cat}. VES-TECH Swiss liefert das Gerät mit Schweizer Service, Inbetriebnahme und Garantieabwicklung.",
   "verf_title": "MAHE Schweissverfahren · MIS, HyperPuls, HyperCold | VES-TECH",
-  "verf_desc": "Die MAHE-Schweissverfahren erklärt: MIS spritzerfrei, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP – wofür sie eingesetzt werden.",
+  "verf_desc": "Die MAHE-Schweissverfahren erklärt: MIS spritzerfrei, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP und wofür sie eingesetzt werden.",
   "dl_title": "Downloads · MAHE Katalog, EN 1090 & Sicherheitsdatenblätter",
   "dl_desc": "MAHE Produktkatalog, EN 1090 Konformitätszertifikat und die Sicherheitsdatenblätter der Elektrolyte R1, RP1, P1, M1 und N1 als PDF.",
   "kontakt_title": "Kontakt · VES-TECH Swiss, Werkstatt Herisau AR",
@@ -40,7 +40,7 @@
   "faq_title": "Häufige Fragen zu MAHE Schweisstechnik | VES-TECH Swiss",
   "faq_desc": "Antworten zu Preisen, Verfahrenswahl, Aluminium schweissen, elektrolytischer Reinigung, Plasmaschneiden, EN 1090 und Service in der Schweiz.",
   "faq_h1": "Häufige Fragen",
-  "faq_lead": "Die Fragen, die uns Kundinnen und Kunden am häufigsten stellen – kurz und direkt beantwortet.",
+  "faq_lead": "Die Fragen, die uns Kundinnen und Kunden am häufigsten stellen, kurz und direkt beantwortet.",
   "search_title": "Suche | VES-TECH Swiss",
   "search_desc": "Durchsuchen Sie das komplette MAHE-Programm bei VES-TECH Swiss nach Gerät, Verfahren oder technischem Merkmal.",
   "search_h1": "Suche",
@@ -49,7 +49,7 @@
   "search_n_results": "{n} Treffer",
   "search_one_result": "1 Treffer",
   "search_no_results": "Keine Treffer für",
-  "search_no_results_help": "Prüfen Sie die Schreibweise oder suchen Sie allgemeiner – zum Beispiel nach dem Verfahren statt dem Gerätenamen.",
+  "search_no_results_help": "Prüfen Sie die Schreibweise oder suchen Sie allgemeiner, zum Beispiel nach dem Verfahren statt dem Gerätenamen.",
   "search_did_you_mean": "Meinten Sie",
   "search_popular": "Häufig gesucht",
   "search_all_results": "Alle Ergebnisse anzeigen",
@@ -67,7 +67,7 @@
   "impressum_title": "Impressum | VES-TECH Swiss",
   "impressum_desc": "Impressum von VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen SG: Inhaber, Kontakt, Handelsregister, Mehrwertsteuer, Haftung und Urheberrecht.",
   "impressum_h1": "Impressum",
-  "datenschutz_title": "Datenschutzerklärung — ohne Cookies, ohne Tracking",
+  "datenschutz_title": "Datenschutzerklärung ohne Cookies und ohne Tracking",
   "datenschutz_desc": "Wie VES-TECH Swiss Personendaten bearbeitet: Server-Logs, Formulardaten, Anfrageliste. Ohne Cookies, ohne Tracking. Nach revidiertem DSG und DSGVO.",
   "datenschutz_h1": "Datenschutzerklärung",
   "err404_title": "Seite nicht gefunden | VES-TECH Swiss",
@@ -75,7 +75,7 @@
   "err404_lead": "Diese Seite existiert nicht (mehr). Nutzen Sie die Suche oder gehen Sie zurück zur Übersicht.",
   "err404_cta": "Zur Startseite",
   "form_sending": "Wird gesendet …",
-  "form_success": "Danke – Ihre Anfrage ist eingegangen. Wir melden uns in der Regel innerhalb eines Arbeitstages.",
+  "form_success": "Danke, Ihre Anfrage ist eingegangen. Wir melden uns in der Regel innerhalb eines Arbeitstages.",
   "form_error": "Das Senden hat nicht geklappt. Bitte rufen Sie uns an oder schreiben Sie direkt an vestechswiss@gmail.com.",
   "form_required": "Bitte ausfüllen",
   "form_invalid_mail": "Bitte gültige E-Mail-Adresse eingeben",
@@ -89,7 +89,7 @@
   "updated": "Zuletzt aktualisiert",
   "reading_context": "MAHE Gerät bei VES-TECH Swiss",
   "usp_1_h": "Schweizer Service",
-  "usp_1_p": "Inbetriebnahme, Reparatur und Kalibrierung durch den Techniker – nicht durch eine Hotline.",
+  "usp_1_p": "Inbetriebnahme, Reparatur und Kalibrierung durch den Techniker, nicht durch eine Hotline.",
   "usp_2_h": "Preis auf Anfrage",
   "usp_2_p": "Jede Anlage wird konfiguriert. Sie erhalten ein Angebot, das zu Ihrem Werkstoff und Ihrer Blechdicke passt.",
   "usp_3_h": "EN 1090 Dokumentation",
@@ -105,7 +105,7 @@
    },
    {
     "q": "Was ist der Unterschied zwischen WIG DC und WIG AC/DC?",
-    "a": "WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf – nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl."
+    "a": "WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf. Nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl."
    },
    {
     "q": "Wie funktioniert die elektrolytische Schweissnahtreinigung?",
@@ -117,11 +117,11 @@
    },
    {
     "q": "Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?",
-    "a": "Ja. Die Werkstatt in Herisau AR – bei unserer Partnerfirma Schweisstechnik Scherrer AG – übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39."
+    "a": "Ja. Die Werkstatt in Herisau AR, bei unserer Partnerfirma Schweisstechnik Scherrer AG, übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39."
    },
    {
     "q": "Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?",
-    "a": "EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage – inklusive Konformitätszertifikat."
+    "a": "EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat."
    },
    {
     "q": "Wie schnell erhalte ich ein Angebot?",
@@ -147,7 +147,7 @@
    ],
    [
     "Rechtliche Grundlage dieser Angaben",
-    "<p>Die Schweiz kennt keine allgemeine Impressumspflicht für Websites. Wer aber im elektronischen Geschäftsverkehr Waren oder Leistungen anbietet, muss klar und vollständig angeben, wer er ist und wie man ihn erreicht – einschliesslich der Adresse der elektronischen Post (Art. 3 Abs. 1 lit. s Ziff. 1 UWG). Diese Angaben stehen oben.</p><p>Die weiteren Pflichten von Art. 3 Abs. 1 lit. s Ziff. 2–4 UWG betreffen den Ablauf einer Bestellung: Hinweis auf die technischen Schritte zum Vertragsschluss, Korrektur von Eingabefehlern, Bestätigung der Bestellung. Sie setzen einen Bestellvorgang voraus. Einen solchen gibt es auf dieser Website nicht.</p>"
+    "<p>Die Schweiz kennt keine allgemeine Impressumspflicht für Websites. Wer aber im elektronischen Geschäftsverkehr Waren oder Leistungen anbietet, muss klar und vollständig angeben, wer er ist und wie man ihn erreicht, einschliesslich der Adresse der elektronischen Post (Art. 3 Abs. 1 lit. s Ziff. 1 UWG). Diese Angaben stehen oben.</p><p>Die weiteren Pflichten von Art. 3 Abs. 1 lit. s Ziff. 2–4 UWG betreffen den Ablauf einer Bestellung: Hinweis auf die technischen Schritte zum Vertragsschluss, Korrektur von Eingabefehlern, Bestätigung der Bestellung. Sie setzen einen Bestellvorgang voraus. Einen solchen gibt es auf dieser Website nicht.</p>"
    ],
    [
     "Handelsregister und UID",
@@ -201,7 +201,7 @@
    ],
    [
     "Geltungsbereich und anwendbares Recht",
-    "<p>Diese Erklärung gilt für die Website <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in allen drei Sprachfassungen — Deutsch, Französisch und Italienisch — sowie für Anfragen, die uns über diese Website erreichen.</p><p>Massgebend ist das <strong>Schweizer Datenschutzgesetz</strong> (DSG) in der revidierten Fassung, in Kraft seit 1. September 2023. Das DSG spricht vom „Bearbeiten“ von Personendaten. Diesen Begriff verwenden wir hier durchgehend; er umfasst jeden Umgang mit Daten, vom Erheben bis zum Löschen.</p><p>Unser Liefergebiet umfasst neben der Schweiz auch Liechtenstein, das zum Europäischen Wirtschaftsraum gehört. Soweit wir dort Personen ansprechen, gilt zusätzlich die europäische Datenschutz-Grundverordnung (DSGVO). Die beiden Regelwerke sind nicht deckungsgleich. Wo sie auseinandergehen, ist es im Text vermerkt.</p>"
+    "<p>Diese Erklärung gilt für die Website <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in allen drei Sprachfassungen (Deutsch, Französisch und Italienisch) sowie für Anfragen, die uns über diese Website erreichen.</p><p>Massgebend ist das <strong>Schweizer Datenschutzgesetz</strong> (DSG) in der revidierten Fassung, in Kraft seit 1. September 2023. Das DSG spricht vom „Bearbeiten“ von Personendaten. Diesen Begriff verwenden wir hier durchgehend; er umfasst jeden Umgang mit Daten, vom Erheben bis zum Löschen.</p><p>Unser Liefergebiet umfasst neben der Schweiz auch Liechtenstein, das zum Europäischen Wirtschaftsraum gehört. Soweit wir dort Personen ansprechen, gilt zusätzlich die europäische Datenschutz-Grundverordnung (DSGVO). Die beiden Regelwerke sind nicht deckungsgleich. Wo sie auseinandergehen, ist es im Text vermerkt.</p>"
    ],
    [
     "Was diese Website nicht tut",
@@ -217,7 +217,7 @@
    ],
    [
     "Kontaktformular und Anfrage",
-    "<p>Wenn Sie uns über ein Formular schreiben oder eine Anfrageliste absenden, bearbeiten wir die Angaben, die Sie eingeben:</p><ul><li>Name oder Firma;</li><li>E-Mail-Adresse;</li><li>Telefonnummer — dieses Feld gibt es nur im Kontaktformular, und es ist freiwillig;</li><li>Ihre Nachricht;</li><li>bei der Anfrageliste zusätzlich die von Ihnen gewählten Geräte mit Stückzahl und der Adresse der jeweiligen Produktseite;</li><li>die Seite und die Sprachfassung, von der die Anfrage ausgeht.</li></ul><p>Im Kontaktformular sind Name, E-Mail-Adresse und Nachricht Pflichtfelder. Im Formular der Anfrageliste sind es nur Name und E-Mail-Adresse; die Nachricht ist dort freiwillig. Ohne die Pflichtangaben können wir nicht antworten. Alles Weitere ist freiwillig.</p><p>Eine so gesendete Anfrage ist <strong>unverbindlich</strong>. Sie ist weder eine Bestellung noch ein Vertragsantrag — sie ist aber der erste Schritt zu einem möglichen Vertrag.</p><p>Was aus einer Anfrage vertraglich folgt, regeln die <a href=\"/agb/\">Allgemeinen Geschäftsbedingungen</a>.</p>"
+    "<p>Wenn Sie uns über ein Formular schreiben oder eine Anfrageliste absenden, bearbeiten wir die Angaben, die Sie eingeben:</p><ul><li>Name oder Firma;</li><li>E-Mail-Adresse;</li><li>Telefonnummer, dieses Feld gibt es nur im Kontaktformular und ist freiwillig;</li><li>Ihre Nachricht;</li><li>bei der Anfrageliste zusätzlich die von Ihnen gewählten Geräte mit Stückzahl und der Adresse der jeweiligen Produktseite;</li><li>die Seite und die Sprachfassung, von der die Anfrage ausgeht.</li></ul><p>Im Kontaktformular sind Name, E-Mail-Adresse und Nachricht Pflichtfelder. Im Formular der Anfrageliste sind es nur Name und E-Mail-Adresse; die Nachricht ist dort freiwillig. Ohne die Pflichtangaben können wir nicht antworten. Alles Weitere ist freiwillig.</p><p>Eine so gesendete Anfrage ist <strong>unverbindlich</strong>. Sie ist weder eine Bestellung noch ein Vertragsantrag, aber der erste Schritt zu einem möglichen Vertrag.</p><p>Was aus einer Anfrage vertraglich folgt, regeln die <a href=\"/agb/\">Allgemeinen Geschäftsbedingungen</a>.</p>"
    ],
    [
     "Versand Ihrer Anfrage",
@@ -229,7 +229,7 @@
    ],
    [
     "Zwecke der Bearbeitung",
-    "<p>Wir bearbeiten Ihre Angaben ausschliesslich, um</p><ul><li>Ihre Anfrage zu beantworten und ein Angebot zu erstellen;</li><li>einen Auftrag abzuwickeln, wenn aus Ihrer Anfrage ausserhalb der Website ein Kauf wird — Lieferung, Rechnung, Gewährleistung;</li><li>gesetzliche Pflichten zu erfüllen, namentlich die Aufbewahrung der Buchungsbelege;</li><li>Betrieb und Sicherheit der Website zu gewährleisten.</li></ul><p>Wir verkaufen keine Personendaten und geben sie nicht zu Werbezwecken weiter. Ohne Ihr Einverständnis erhalten Sie von uns weder Newsletter noch Werbung.</p>"
+    "<p>Wir bearbeiten Ihre Angaben ausschliesslich, um</p><ul><li>Ihre Anfrage zu beantworten und ein Angebot zu erstellen;</li><li>einen Auftrag abzuwickeln, wenn aus Ihrer Anfrage ausserhalb der Website ein Kauf wird: Lieferung, Rechnung, Gewährleistung;</li><li>gesetzliche Pflichten zu erfüllen, namentlich die Aufbewahrung der Buchungsbelege;</li><li>Betrieb und Sicherheit der Website zu gewährleisten.</li></ul><p>Wir verkaufen keine Personendaten und geben sie nicht zu Werbezwecken weiter. Ohne Ihr Einverständnis erhalten Sie von uns weder Newsletter noch Werbung.</p>"
    ],
    [
     "Rechtliche Einordnung",
@@ -237,7 +237,7 @@
    ],
    [
     "Bekanntgabe an Dritte",
-    "<p>Wir geben Personendaten nur weiter, soweit es für den genannten Zweck nötig ist oder das Gesetz es verlangt. Empfänger können sein:</p><ul><li>die genannten technischen Dienstleister — GitHub für das Hosting, Google für das geschäftliche E-Mail-Konto;</li><li>die MAHE GmbH in Deutschland als Herstellerin, wenn eine technische Rückfrage oder ein Garantiefall Ihre Angaben erfordert; übermittelt werden dann nur Ihre Kontaktangaben und die Gerätedaten;</li><li>das Transportunternehmen, wenn eine Lieferung zustande kommt;</li><li>unsere Treuhandstelle sowie Steuer- und Strafverfolgungsbehörden, soweit gesetzliche Pflichten es verlangen.</li></ul><p>Eine Weitergabe zu Werbezwecken oder ein Verkauf von Daten findet nicht statt.</p>"
+    "<p>Wir geben Personendaten nur weiter, soweit es für den genannten Zweck nötig ist oder das Gesetz es verlangt. Empfänger können sein:</p><ul><li>die genannten technischen Dienstleister: GitHub für das Hosting, Google für das geschäftliche E-Mail-Konto;</li><li>die MAHE GmbH in Deutschland als Herstellerin, wenn eine technische Rückfrage oder ein Garantiefall Ihre Angaben erfordert; übermittelt werden dann nur Ihre Kontaktangaben und die Gerätedaten;</li><li>das Transportunternehmen, wenn eine Lieferung zustande kommt;</li><li>unsere Treuhandstelle sowie Steuer- und Strafverfolgungsbehörden, soweit gesetzliche Pflichten es verlangen.</li></ul><p>Eine Weitergabe zu Werbezwecken oder ein Verkauf von Daten findet nicht statt.</p>"
    ],
    [
     "Bekanntgabe ins Ausland",
@@ -245,7 +245,7 @@
    ],
    [
     "Google Search Console",
-    "<p>Damit die Website in der Google-Suche erscheint, ist sie bei der Google Search Console angemeldet. Der Nachweis, dass die Website uns gehört, erfolgt über eine Bestätigungsdatei im Stammverzeichnis. Es wird dafür kein Skript geladen und es werden keine Daten über Sie erhoben.</p><p>In den Auswertungen dieses Dienstes sehen wir nur zusammengefasste Zahlen — Suchbegriffe, aufgerufene Seiten, Land und Gerätetyp — ohne Bezug zu einzelnen Personen.</p>"
+    "<p>Damit die Website in der Google-Suche erscheint, ist sie bei der Google Search Console angemeldet. Der Nachweis, dass die Website uns gehört, erfolgt über eine Bestätigungsdatei im Stammverzeichnis. Es wird dafür kein Skript geladen und es werden keine Daten über Sie erhoben.</p><p>In den Auswertungen dieses Dienstes sehen wir nur zusammengefasste Zahlen (Suchbegriffe, aufgerufene Seiten, Land und Gerätetyp) ohne Bezug zu einzelnen Personen.</p>"
    ],
    [
     "Inhalte der Herstellerin (mahe-online.de)",
@@ -261,7 +261,7 @@
    ],
    [
     "Ihre Rechte",
-    "<p>Nach dem Schweizer Datenschutzgesetz stehen Ihnen folgende Rechte zu:</p><ul><li><strong>Auskunft</strong> (Art. 25 DSG): Sie können erfahren, ob und welche Personendaten wir über Sie bearbeiten. Die Auskunft ist in der Regel kostenlos und wird in der Regel innert 30 Tagen erteilt.</li><li><strong>Berichtigung</strong> (Art. 32 Abs. 1 DSG): Unrichtige Daten berichtigen wir.</li><li><strong>Löschung, Bearbeitungs- und Bekanntgabeverbot:</strong> Sie können verlangen, dass wir eine Bearbeitung unterlassen, keine Daten an Dritte bekanntgeben oder Ihre Daten löschen — soweit keine gesetzliche Aufbewahrungspflicht entgegensteht. Wir kommen einem solchen Begehren formlos nach. Das Gesetz sieht diese Ansprüche als Klagerechte vor (Art. 32 Abs. 2 DSG in Verbindung mit Art. 28 ff. ZGB); Sie müssen aber nicht klagen, um sie bei uns durchzusetzen.</li><li><strong>Datenherausgabe und -übertragung</strong> (Art. 28 DSG): Daten, die Sie uns bekanntgegeben haben und die wir automatisiert bearbeiten, geben wir Ihnen in einem gängigen elektronischen Format heraus oder übertragen sie auf Wunsch an eine andere Stelle.</li></ul><p>Unterstehen Sie der DSGVO, kommen deren Rechte nach Art. 15 bis 21 hinzu: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch.</p><p>Ein formloses Schreiben genügt: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> oder an die oben genannte Adresse. Damit wir keine Auskunft an die falsche Person erteilen, müssen wir Ihre Identität in geeigneter Weise prüfen.</p>"
+    "<p>Nach dem Schweizer Datenschutzgesetz stehen Ihnen folgende Rechte zu:</p><ul><li><strong>Auskunft</strong> (Art. 25 DSG): Sie können erfahren, ob und welche Personendaten wir über Sie bearbeiten. Die Auskunft ist in der Regel kostenlos und wird in der Regel innert 30 Tagen erteilt.</li><li><strong>Berichtigung</strong> (Art. 32 Abs. 1 DSG): Unrichtige Daten berichtigen wir.</li><li><strong>Löschung, Bearbeitungs- und Bekanntgabeverbot:</strong> Sie können verlangen, dass wir eine Bearbeitung unterlassen, keine Daten an Dritte bekanntgeben oder Ihre Daten löschen, soweit keine gesetzliche Aufbewahrungspflicht entgegensteht. Wir kommen einem solchen Begehren formlos nach. Das Gesetz sieht diese Ansprüche als Klagerechte vor (Art. 32 Abs. 2 DSG in Verbindung mit Art. 28 ff. ZGB); Sie müssen aber nicht klagen, um sie bei uns durchzusetzen.</li><li><strong>Datenherausgabe und -übertragung</strong> (Art. 28 DSG): Daten, die Sie uns bekanntgegeben haben und die wir automatisiert bearbeiten, geben wir Ihnen in einem gängigen elektronischen Format heraus oder übertragen sie auf Wunsch an eine andere Stelle.</li></ul><p>Unterstehen Sie der DSGVO, kommen deren Rechte nach Art. 15 bis 21 hinzu: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch.</p><p>Ein formloses Schreiben genügt: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> oder an die oben genannte Adresse. Damit wir keine Auskunft an die falsche Person erteilen, müssen wir Ihre Identität in geeigneter Weise prüfen.</p>"
    ],
    [
     "Anzeige beim EDÖB und Rechtsweg",
@@ -299,7 +299,7 @@
    ],
    [
     "Lieferung, Lieferfrist und Gefahrübergang",
-    "<p>Wir liefern in die Schweiz und nach Liechtenstein. Lieferungen an andere Adressen bedürfen einer besonderen Vereinbarung.</p><p><strong>Versandkosten werden separat nach Angebot verrechnet.</strong> Sie richten sich nach Gewicht, Volumen und Zielort und sind im schriftlichen Angebot ausgewiesen. Abholung am Sitz von VES-TECH Swiss ist nach Absprache möglich.</p><p>Lieferfristen beruhen auf den Angaben des Herstellers und sind Richtwerte, soweit das Angebot sie nicht ausdrücklich als verbindlich bezeichnet. Verzögert sich eine Lieferung, informieren wir den Kunden und nennen einen neuen Termin. Wird auch dieser um mehr als 30 Tage überschritten, kann der Kunde nach schriftlicher Nachfristansetzung vom Vertrag zurücktreten. Bereits geleistete Zahlungen werden zurückerstattet.</p><p>Wird die Lieferung durch Umstände verunmöglicht oder erheblich erschwert, die wir nicht zu vertreten haben – namentlich Lieferunfähigkeit des Herstellers, Betriebs- oder Transportstörungen, behördliche Anordnungen, Naturereignisse oder Arbeitskampf –, verlängert sich die Lieferfrist um die Dauer der Behinderung. Dauert sie länger als drei Monate, können beide Parteien vom Vertrag zurücktreten; bereits geleistete Zahlungen werden zurückerstattet. Weitergehende Ansprüche bestehen nicht, soweit uns kein Verschulden trifft. Art. 100 Abs. 1 OR bleibt vorbehalten.</p><p>Teillieferungen sind zulässig, wenn sie für den Kunden zumutbar sind.</p><p><strong>Nutzen und Gefahr gehen erst mit der Übergabe der Ware an den Kunden oder an eine von ihm bezeichnete Person über</strong> – auch beim Versand. Damit weichen wir bewusst zugunsten des Kunden von der dispositiven Regel in Art. 185 OR ab. Transportschäden gehen bis zur Übergabe zu unseren Lasten. Sichtbare Transportschäden vermerkt der Kunde bei der Übernahme auf dem Ablieferungsbeleg und meldet sie uns umgehend, damit wir sie gegenüber dem Transporteur geltend machen können.</p>"
+    "<p>Wir liefern in die Schweiz und nach Liechtenstein. Lieferungen an andere Adressen bedürfen einer besonderen Vereinbarung.</p><p><strong>Versandkosten werden separat nach Angebot verrechnet.</strong> Sie richten sich nach Gewicht, Volumen und Zielort und sind im schriftlichen Angebot ausgewiesen. Abholung am Sitz von VES-TECH Swiss ist nach Absprache möglich.</p><p>Lieferfristen beruhen auf den Angaben des Herstellers und sind Richtwerte, soweit das Angebot sie nicht ausdrücklich als verbindlich bezeichnet. Verzögert sich eine Lieferung, informieren wir den Kunden und nennen einen neuen Termin. Wird auch dieser um mehr als 30 Tage überschritten, kann der Kunde nach schriftlicher Nachfristansetzung vom Vertrag zurücktreten. Bereits geleistete Zahlungen werden zurückerstattet.</p><p>Wird die Lieferung durch Umstände verunmöglicht oder erheblich erschwert, die wir nicht zu vertreten haben (namentlich Lieferunfähigkeit des Herstellers, Betriebs- oder Transportstörungen, behördliche Anordnungen, Naturereignisse oder Arbeitskampf), verlängert sich die Lieferfrist um die Dauer der Behinderung. Dauert sie länger als drei Monate, können beide Parteien vom Vertrag zurücktreten; bereits geleistete Zahlungen werden zurückerstattet. Weitergehende Ansprüche bestehen nicht, soweit uns kein Verschulden trifft. Art. 100 Abs. 1 OR bleibt vorbehalten.</p><p>Teillieferungen sind zulässig, wenn sie für den Kunden zumutbar sind.</p><p><strong>Nutzen und Gefahr gehen erst mit der Übergabe der Ware an den Kunden oder an eine von ihm bezeichnete Person über</strong>, auch beim Versand. Damit weichen wir bewusst zugunsten des Kunden von der dispositiven Regel in Art. 185 OR ab. Transportschäden gehen bis zur Übergabe zu unseren Lasten. Sichtbare Transportschäden vermerkt der Kunde bei der Übernahme auf dem Ablieferungsbeleg und meldet sie uns umgehend, damit wir sie gegenüber dem Transporteur geltend machen können.</p>"
    ],
    [
     "Eigentumsvorbehalt",
@@ -311,7 +311,7 @@
    ],
    [
     "Gewährleistung",
-    "<p>Wir leisten Gewähr dafür, dass die gelieferte Ware keine Mängel aufweist, die ihren Wert oder ihre Tauglichkeit zum vorausgesetzten Gebrauch aufheben oder erheblich mindern, und dass sie die zugesicherten Eigenschaften hat (Art. 197 OR).</p><p>Die Gewährleistungsfrist beträgt <strong>24 Monate ab Ablieferung</strong>. Das ist die gesetzliche Frist von Art. 210 Abs. 1 OR; wir verkürzen sie nicht.</p><p>Bei einem gerechtfertigten Mangel beheben wir diesen gegenüber Unternehmen nach unserer Wahl durch Reparatur oder durch Ersatzlieferung, in Absprache mit dem Hersteller MAHE. Gelingt dies nicht innert angemessener Frist oder scheitert es zweimal, stehen dem Kunden die gesetzlichen Rechte zu, namentlich Wandelung oder Minderung nach Art. 205 OR und bei Gattungsware Ersatzlieferung nach Art. 206 OR.</p><p>Gegenüber Konsumentinnen und Konsumenten gilt dieser Vorrang der Nachbesserung nicht. Ihnen steht das Wahlrecht nach Art. 205 OR von Anfang an zu; sie können eine Reparatur oder eine Ersatzlieferung annehmen, müssen es aber nicht.</p><p>Von der Gewährleistung nicht erfasst sind:</p><ul><li>Verschleissteile, die bestimmungsgemäss abgenutzt werden – etwa Düsen, Elektroden, Kontaktrohre, Schleifmittel, Bürsten, Filze, Dichtungen, Schläuche und verbrauchte Elektrolyte;</li><li>Schäden durch unsachgemässe Verwendung, Überlastung, falsche Netzspannung, fehlende oder mangelhafte Wartung sowie Nichtbeachtung der Betriebsanleitung;</li><li>Schäden durch Eingriffe des Kunden oder Dritter, insbesondere durch Reparaturen ausserhalb unseres Service oder des Herstellerservice, und durch den Einsatz nicht freigegebener Ersatz- oder Zubehörteile;</li><li>Schäden durch äussere Einwirkung, etwa Sturz, Feuchtigkeit, Frost, Chemikalien oder Überspannung;</li><li>normale optische Veränderungen wie Kratzer und Verfärbungen ohne Einfluss auf die Funktion.</li></ul><p>Gegenüber Konsumentinnen und Konsumenten gelten diese Ausschlüsse nur so weit, als sie die zwingenden Gewährleistungsrechte nicht aushöhlen (Art. 210 OR, Art. 8 UWG). Eine Herstellergarantie von MAHE tritt, falls vorhanden, neben die gesetzliche Gewährleistung und schränkt sie nicht ein. Die Abwicklung mit dem Hersteller übernehmen wir für den Kunden.</p>"
+    "<p>Wir leisten Gewähr dafür, dass die gelieferte Ware keine Mängel aufweist, die ihren Wert oder ihre Tauglichkeit zum vorausgesetzten Gebrauch aufheben oder erheblich mindern, und dass sie die zugesicherten Eigenschaften hat (Art. 197 OR).</p><p>Die Gewährleistungsfrist beträgt <strong>24 Monate ab Ablieferung</strong>. Das ist die gesetzliche Frist von Art. 210 Abs. 1 OR; wir verkürzen sie nicht.</p><p>Bei einem gerechtfertigten Mangel beheben wir diesen gegenüber Unternehmen nach unserer Wahl durch Reparatur oder durch Ersatzlieferung, in Absprache mit dem Hersteller MAHE. Gelingt dies nicht innert angemessener Frist oder scheitert es zweimal, stehen dem Kunden die gesetzlichen Rechte zu, namentlich Wandelung oder Minderung nach Art. 205 OR und bei Gattungsware Ersatzlieferung nach Art. 206 OR.</p><p>Gegenüber Konsumentinnen und Konsumenten gilt dieser Vorrang der Nachbesserung nicht. Ihnen steht das Wahlrecht nach Art. 205 OR von Anfang an zu; sie können eine Reparatur oder eine Ersatzlieferung annehmen, müssen es aber nicht.</p><p>Von der Gewährleistung nicht erfasst sind:</p><ul><li>Verschleissteile, die bestimmungsgemäss abgenutzt werden, etwa Düsen, Elektroden, Kontaktrohre, Schleifmittel, Bürsten, Filze, Dichtungen, Schläuche und verbrauchte Elektrolyte;</li><li>Schäden durch unsachgemässe Verwendung, Überlastung, falsche Netzspannung, fehlende oder mangelhafte Wartung sowie Nichtbeachtung der Betriebsanleitung;</li><li>Schäden durch Eingriffe des Kunden oder Dritter, insbesondere durch Reparaturen ausserhalb unseres Service oder des Herstellerservice, und durch den Einsatz nicht freigegebener Ersatz- oder Zubehörteile;</li><li>Schäden durch äussere Einwirkung, etwa Sturz, Feuchtigkeit, Frost, Chemikalien oder Überspannung;</li><li>normale optische Veränderungen wie Kratzer und Verfärbungen ohne Einfluss auf die Funktion.</li></ul><p>Gegenüber Konsumentinnen und Konsumenten gelten diese Ausschlüsse nur so weit, als sie die zwingenden Gewährleistungsrechte nicht aushöhlen (Art. 210 OR, Art. 8 UWG). Eine Herstellergarantie von MAHE tritt, falls vorhanden, neben die gesetzliche Gewährleistung und schränkt sie nicht ein. Die Abwicklung mit dem Hersteller übernehmen wir für den Kunden.</p>"
    ],
    [
     "Haftung und Produktesicherheit",
@@ -367,16 +367,16 @@
   "all_title": "Tous les appareils MAHE · soudage, plasma, nettoyage, accessoires",
   "all_desc": "Toute la gamme MAHE chez VES-TECH Swiss : {n} appareils pour MIG/MAG, TIG, MMA, découpe plasma, nettoyage électrolytique et accessoires. Prix sur demande.",
   "all_h1": "Tous les appareils MAHE",
-  "all_lead": "Toute la gamme MAHE – classée par procédé. Tous les appareils avec service suisse, gestion de la garantie et conseil par le technicien.",
+  "all_lead": "Toute la gamme MAHE, classée par procédé. Tous les appareils avec service suisse, gestion de la garantie et conseil par le technicien.",
   "cat_title_tpl": "{cat} · acheter MAHE {sub_hint} en Suisse | VES-TECH",
   "cat_desc_tpl": "{cat} MAHE chez VES-TECH Swiss : {n} modèles, {subs}. Conseil, service et pièces de rechange depuis Herisau AR. Prix sur demande.",
   "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
-  "sub_desc_tpl": "MAHE {sub} – {n} modèles chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
-  "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
+  "sub_desc_tpl": "MAHE {sub}: {n} modèles chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
+  "prod_title_tpl": "MAHE {name} · {sub} · {cat}",
   "prod_desc_tpl": "MAHE {name} ({vt}) : {desc} Données techniques, accessoires adaptés et conseil chez VES-TECH Swiss. Prix sur demande.",
   "prod_intro_tpl": "Le MAHE {name} est un appareil {vt} de la gamme {cat}. VES-TECH Swiss le livre avec service suisse, mise en service et gestion de la garantie.",
   "verf_title": "Procédés de soudage MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
-  "verf_desc": "Les procédés de soudage MAHE expliqués : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP – et leurs applications.",
+  "verf_desc": "Les procédés de soudage MAHE expliqués : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP et leurs applications.",
   "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
   "dl_desc": "Catalogue produits MAHE, certificat de conformité EN 1090 et fiches de données de sécurité des électrolytes R1, RP1, P1, M1 et N1 en PDF.",
   "kontakt_title": "Contact · VES-TECH Swiss, atelier Herisau AR",
@@ -384,7 +384,7 @@
   "faq_title": "Questions fréquentes sur le soudage MAHE | VES-TECH Swiss",
   "faq_desc": "Réponses sur les prix, le choix du procédé, le soudage de l'aluminium, le nettoyage électrolytique, la découpe plasma, EN 1090 et le service en Suisse.",
   "faq_h1": "Questions fréquentes",
-  "faq_lead": "Les questions que nos clientes et clients nous posent le plus souvent – réponses courtes et directes.",
+  "faq_lead": "Les questions que nos clientes et clients nous posent le plus souvent, réponses courtes et directes.",
   "search_title": "Recherche | VES-TECH Swiss",
   "search_desc": "Recherchez dans toute la gamme MAHE de VES-TECH Swiss par appareil, procédé ou caractéristique technique.",
   "search_h1": "Recherche",
@@ -393,7 +393,7 @@
   "search_n_results": "{n} résultats",
   "search_one_result": "1 résultat",
   "search_no_results": "Aucun résultat pour",
-  "search_no_results_help": "Vérifiez l'orthographe ou élargissez la recherche – par exemple le procédé plutôt que le nom de l'appareil.",
+  "search_no_results_help": "Vérifiez l'orthographe ou élargissez la recherche, par exemple le procédé plutôt que le nom de l'appareil.",
   "search_did_you_mean": "Vouliez-vous dire",
   "search_popular": "Recherches fréquentes",
   "search_all_results": "Voir tous les résultats",
@@ -411,7 +411,7 @@
   "impressum_title": "Mentions légales | VES-TECH Swiss",
   "impressum_desc": "Mentions légales de VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen SG : titulaire, contact, registre du commerce, TVA et responsabilité.",
   "impressum_h1": "Mentions légales",
-  "datenschutz_title": "Protection des données — sans cookies, sans traçage",
+  "datenschutz_title": "Protection des données sans cookies ni traçage",
   "datenschutz_desc": "Comment VES-TECH Swiss traite les données personnelles: journaux du serveur, formulaires, liste de demande. Sans cookies ni traçage. nLPD et RGPD.",
   "datenschutz_h1": "Déclaration de protection des données",
   "err404_title": "Page introuvable | VES-TECH Swiss",
@@ -419,7 +419,7 @@
   "err404_lead": "Cette page n'existe pas (ou plus). Utilisez la recherche ou revenez à l'aperçu.",
   "err404_cta": "Vers l'accueil",
   "form_sending": "Envoi en cours …",
-  "form_success": "Merci – votre demande nous est bien parvenue. Nous répondons en règle générale dans un jour ouvrable.",
+  "form_success": "Merci, votre demande nous est bien parvenue. Nous répondons en règle générale dans un jour ouvrable.",
   "form_error": "L'envoi a échoué. Merci de nous appeler ou d'écrire directement à vestechswiss@gmail.com.",
   "form_required": "Champ obligatoire",
   "form_invalid_mail": "Veuillez saisir une adresse e-mail valide",
@@ -433,7 +433,7 @@
   "updated": "Dernière mise à jour",
   "reading_context": "Appareil MAHE chez VES-TECH Swiss",
   "usp_1_h": "Service suisse",
-  "usp_1_p": "Mise en service, réparation et calibrage par le technicien – pas par une hotline.",
+  "usp_1_p": "Mise en service, réparation et calibrage par le technicien, pas par une hotline.",
   "usp_2_h": "Prix sur demande",
   "usp_2_p": "Chaque installation est configurée. Vous recevez une offre adaptée à votre matériau et à votre épaisseur de tôle.",
   "usp_3_h": "Documentation EN 1090",
@@ -449,7 +449,7 @@
    },
    {
     "q": "Quelle est la différence entre TIG DC et TIG AC/DC ?",
-    "a": "Le TIG DC soude en courant continu et convient à l'acier, l'acier inox, le cuivre et le titane. Le TIG AC/DC travaille en plus en courant alternatif et brise ainsi la couche d'oxyde d'aluminium – seule façon de souder proprement l'aluminium en TIG. Les appareils AC/DC sont donc le choix universel, les DC le choix économique."
+    "a": "Le TIG DC soude en courant continu et convient à l'acier, l'acier inox, le cuivre et le titane. Le TIG AC/DC travaille en plus en courant alternatif et brise ainsi la couche d'oxyde d'aluminium. C'est la seule façon de souder proprement l'aluminium en TIG. Les appareils AC/DC sont donc le choix universel, les DC le choix économique."
    },
    {
     "q": "Comment fonctionne le nettoyage électrolytique des soudures ?",
@@ -461,11 +461,11 @@
    },
    {
     "q": "VES-TECH Swiss propose-t-il service et réparation en Suisse ?",
-    "a": "Oui. L'atelier à Herisau AR – chez notre entreprise partenaire Schweisstechnik Scherrer AG – assure le diagnostic, la réparation, le calibrage et l'automation pour la gamme MAHE. Vous parlez directement au technicien qui travaille aussi sur l'électronique, joignable au +41 76 710 91 39."
+    "a": "Oui. L'atelier à Herisau AR, chez notre entreprise partenaire Schweisstechnik Scherrer AG, assure le diagnostic, la réparation, le calibrage et l'automation pour la gamme MAHE. Vous parlez directement au technicien qui travaille aussi sur l'électronique, joignable au +41 76 710 91 39."
    },
    {
     "q": "Que signifie EN 1090 et VES-TECH fournit-il la documentation ?",
-    "a": "EN 1090 est la norme européenne pour l'exécution des structures porteuses en acier et en aluminium. Qui fabrique de tels éléments doit disposer d'un contrôle de production en usine et d'un équipement de soudage contrôlé. VES-TECH Swiss fournit le dossier complet de contrôle et de conformité, adapté à votre installation MAHE – certificat de conformité inclus."
+    "a": "EN 1090 est la norme européenne pour l'exécution des structures porteuses en acier et en aluminium. Qui fabrique de tels éléments doit disposer d'un contrôle de production en usine et d'un équipement de soudage contrôlé. VES-TECH Swiss fournit le dossier complet de contrôle et de conformité, adapté à votre installation MAHE, certificat de conformité inclus."
    },
    {
     "q": "En combien de temps reçoit-on une offre ?",
@@ -491,7 +491,7 @@
    ],
    [
     "Base légale de ces indications",
-    "<p>La Suisse ne connaît pas d’obligation générale de mentions légales pour les sites web. Mais quiconque propose des marchandises ou des prestations dans le commerce électronique doit indiquer de manière claire et complète qui il est et comment le joindre – y compris son adresse de courrier électronique (art. 3 al. 1 let. s ch. 1 LCD). Ces indications figurent ci-dessus.</p><p>Les autres obligations de l’art. 3 al. 1 let. s ch. 2 à 4 LCD concernent le déroulement d’une commande : indication des étapes techniques menant au contrat, correction des erreurs de saisie, confirmation de la commande. Elles supposent un processus de commande. Il n’y en a pas sur ce site.</p>"
+    "<p>La Suisse ne connaît pas d’obligation générale de mentions légales pour les sites web. Mais quiconque propose des marchandises ou des prestations dans le commerce électronique doit indiquer de manière claire et complète qui il est et comment le joindre, y compris son adresse de courrier électronique (art. 3 al. 1 let. s ch. 1 LCD). Ces indications figurent ci-dessus.</p><p>Les autres obligations de l’art. 3 al. 1 let. s ch. 2 à 4 LCD concernent le déroulement d’une commande : indication des étapes techniques menant au contrat, correction des erreurs de saisie, confirmation de la commande. Elles supposent un processus de commande. Il n’y en a pas sur ce site.</p>"
    ],
    [
     "Registre du commerce et IDE",
@@ -545,7 +545,7 @@
    ],
    [
     "Champ d'application et droit applicable",
-    "<p>La présente déclaration s'applique au site <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> dans ses trois versions linguistiques — allemande, française et italienne — ainsi qu'aux demandes qui nous parviennent par ce site.</p><p>Le droit déterminant est la <strong>loi fédérale sur la protection des données</strong> (LPD) dans sa version révisée, en vigueur depuis le 1er septembre 2023. La LPD parle du «traitement» de données personnelles. Nous employons ce terme tout au long du texte; il recouvre toute opération sur des données, de la collecte à l'effacement.</p><p>Notre zone de livraison comprend, outre la Suisse, le Liechtenstein, qui fait partie de l'Espace économique européen. Dans la mesure où nous nous adressons à des personnes qui s'y trouvent, le règlement général européen sur la protection des données (RGPD) s'applique en plus. Les deux textes ne se recouvrent pas entièrement. Là où ils divergent, cela est signalé.</p>"
+    "<p>La présente déclaration s'applique au site <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> dans ses trois versions linguistiques (allemande, française et italienne) ainsi qu'aux demandes qui nous parviennent par ce site.</p><p>Le droit déterminant est la <strong>loi fédérale sur la protection des données</strong> (LPD) dans sa version révisée, en vigueur depuis le 1er septembre 2023. La LPD parle du «traitement» de données personnelles. Nous employons ce terme tout au long du texte; il recouvre toute opération sur des données, de la collecte à l'effacement.</p><p>Notre zone de livraison comprend, outre la Suisse, le Liechtenstein, qui fait partie de l'Espace économique européen. Dans la mesure où nous nous adressons à des personnes qui s'y trouvent, le règlement général européen sur la protection des données (RGPD) s'applique en plus. Les deux textes ne se recouvrent pas entièrement. Là où ils divergent, cela est signalé.</p>"
    ],
    [
     "Ce que ce site ne fait pas",
@@ -561,7 +561,7 @@
    ],
    [
     "Formulaire de contact et demande",
-    "<p>Lorsque vous nous écrivez au moyen d'un formulaire ou que vous envoyez une liste de demande, nous traitons les indications que vous saisissez:</p><ul><li>le nom ou la raison sociale;</li><li>l'adresse de courriel;</li><li>le numéro de téléphone — ce champ n'existe que dans le formulaire de contact et il est facultatif;</li><li>votre message;</li><li>pour la liste de demande, en outre les appareils que vous avez choisis, avec la quantité et l'adresse de la page produit correspondante;</li><li>la page et la version linguistique depuis laquelle la demande est envoyée.</li></ul><p>Dans le formulaire de contact, le nom, l'adresse de courriel et le message sont obligatoires. Dans le formulaire de la liste de demande, seuls le nom et l'adresse de courriel le sont; le message y est facultatif. Sans les indications obligatoires, nous ne pouvons pas répondre. Tout le reste est facultatif.</p><p>Une demande envoyée de cette manière est <strong>sans engagement</strong>. Elle n'est ni une commande ni une offre de contrat — mais elle constitue le premier pas vers un contrat possible.</p><p>Ce qui découle contractuellement d’une demande est réglé par les <a href=\"/fr/conditions-generales/\">conditions générales</a>.</p>"
+    "<p>Lorsque vous nous écrivez au moyen d'un formulaire ou que vous envoyez une liste de demande, nous traitons les indications que vous saisissez:</p><ul><li>le nom ou la raison sociale;</li><li>l'adresse de courriel;</li><li>le numéro de téléphone, ce champ n'existe que dans le formulaire de contact et il est facultatif;</li><li>votre message;</li><li>pour la liste de demande, en outre les appareils que vous avez choisis, avec la quantité et l'adresse de la page produit correspondante;</li><li>la page et la version linguistique depuis laquelle la demande est envoyée.</li></ul><p>Dans le formulaire de contact, le nom, l'adresse de courriel et le message sont obligatoires. Dans le formulaire de la liste de demande, seuls le nom et l'adresse de courriel le sont; le message y est facultatif. Sans les indications obligatoires, nous ne pouvons pas répondre. Tout le reste est facultatif.</p><p>Une demande envoyée de cette manière est <strong>sans engagement</strong>. Elle n'est ni une commande ni une offre de contrat, mais elle constitue le premier pas vers un contrat possible.</p><p>Ce qui découle contractuellement d’une demande est réglé par les <a href=\"/fr/conditions-generales/\">conditions générales</a>.</p>"
    ],
    [
     "Envoi de votre demande",
@@ -573,7 +573,7 @@
    ],
    [
     "Finalités du traitement",
-    "<p>Nous traitons vos indications exclusivement pour</p><ul><li>répondre à votre demande et établir une offre;</li><li>exécuter une commande, si votre demande aboutit à un achat conclu en dehors du site — livraison, facture, garantie;</li><li>remplir des obligations légales, notamment la conservation des pièces comptables;</li><li>assurer l'exploitation et la sécurité du site.</li></ul><p>Nous ne vendons pas de données personnelles et ne les transmettons pas à des fins publicitaires. Sans votre accord, vous ne recevez de notre part ni bulletin d'information ni publicité.</p>"
+    "<p>Nous traitons vos indications exclusivement pour</p><ul><li>répondre à votre demande et établir une offre;</li><li>exécuter une commande, si votre demande aboutit à un achat conclu en dehors du site : livraison, facture, garantie;</li><li>remplir des obligations légales, notamment la conservation des pièces comptables;</li><li>assurer l'exploitation et la sécurité du site.</li></ul><p>Nous ne vendons pas de données personnelles et ne les transmettons pas à des fins publicitaires. Sans votre accord, vous ne recevez de notre part ni bulletin d'information ni publicité.</p>"
    ],
    [
     "Base juridique",
@@ -581,7 +581,7 @@
    ],
    [
     "Communication à des tiers",
-    "<p>Nous ne communiquons des données personnelles que dans la mesure nécessaire à la finalité indiquée ou lorsque la loi l'exige. Les destinataires peuvent être:</p><ul><li>les prestataires techniques mentionnés — GitHub pour l'hébergement, Google pour le compte de messagerie professionnel;</li><li>MAHE GmbH en Allemagne, en tant que fabricant, lorsqu'une question technique ou un cas de garantie exige vos indications; seules vos coordonnées et les données de l'appareil sont alors transmises;</li><li>l'entreprise de transport, si une livraison a lieu;</li><li>notre fiduciaire ainsi que les autorités fiscales et de poursuite pénale, dans la mesure où des obligations légales l'exigent.</li></ul><p>Aucune transmission à des fins publicitaires ni aucune vente de données n'a lieu.</p>"
+    "<p>Nous ne communiquons des données personnelles que dans la mesure nécessaire à la finalité indiquée ou lorsque la loi l'exige. Les destinataires peuvent être:</p><ul><li>les prestataires techniques mentionnés : GitHub pour l'hébergement, Google pour le compte de messagerie professionnel;</li><li>MAHE GmbH en Allemagne, en tant que fabricant, lorsqu'une question technique ou un cas de garantie exige vos indications; seules vos coordonnées et les données de l'appareil sont alors transmises;</li><li>l'entreprise de transport, si une livraison a lieu;</li><li>notre fiduciaire ainsi que les autorités fiscales et de poursuite pénale, dans la mesure où des obligations légales l'exigent.</li></ul><p>Aucune transmission à des fins publicitaires ni aucune vente de données n'a lieu.</p>"
    ],
    [
     "Communication à l'étranger",
@@ -589,7 +589,7 @@
    ],
    [
     "Google Search Console",
-    "<p>Pour que le site apparaisse dans la recherche Google, il est annoncé à la Google Search Console. La preuve que le site nous appartient est apportée par un fichier de confirmation placé à la racine. Aucun script n'est chargé à cette fin et aucune donnée vous concernant n'est collectée.</p><p>Dans les évaluations de ce service, nous ne voyons que des chiffres agrégés — termes de recherche, pages appelées, pays et type d'appareil — sans lien avec des personnes déterminées.</p>"
+    "<p>Pour que le site apparaisse dans la recherche Google, il est annoncé à la Google Search Console. La preuve que le site nous appartient est apportée par un fichier de confirmation placé à la racine. Aucun script n'est chargé à cette fin et aucune donnée vous concernant n'est collectée.</p><p>Dans les évaluations de ce service, nous ne voyons que des chiffres agrégés (termes de recherche, pages appelées, pays et type d'appareil) sans lien avec des personnes déterminées.</p>"
    ],
    [
     "Contenus du fabricant (mahe-online.de)",
@@ -605,7 +605,7 @@
    ],
    [
     "Vos droits",
-    "<p>La loi suisse sur la protection des données vous confère les droits suivants:</p><ul><li><strong>Accès</strong> (art. 25 LPD): vous pouvez savoir si nous traitons des données vous concernant et lesquelles. Le renseignement est en règle générale gratuit et fourni en règle générale dans les 30 jours.</li><li><strong>Rectification</strong> (art. 32 al. 1 LPD): nous rectifions les données inexactes.</li><li><strong>Effacement, interdiction de traiter et de communiquer:</strong> vous pouvez exiger que nous nous abstenions d'un traitement, que nous ne communiquions pas de données à des tiers ou que nous effacions vos données — pour autant qu'aucune obligation légale de conservation ne s'y oppose. Nous donnons suite à une telle demande sans formalité. La loi conçoit ces prétentions comme des droits d'action (art. 32 al. 2 LPD en relation avec les art. 28 ss CC); vous n'avez toutefois pas besoin d'agir en justice pour les faire valoir auprès de nous.</li><li><strong>Remise et transfert des données</strong> (art. 28 LPD): les données que vous nous avez communiquées et que nous traitons de manière automatisée, nous vous les remettons dans un format électronique courant ou les transférons sur demande à un autre organisme.</li></ul><p>Si vous êtes soumis au RGPD, s'y ajoutent les droits de ses art. 15 à 21: accès, rectification, effacement, limitation du traitement, portabilité des données et opposition.</p><p>Un courrier sans formalité suffit: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> ou l'adresse indiquée plus haut. Afin de ne pas renseigner la mauvaise personne, nous devons vérifier votre identité de manière appropriée.</p>"
+    "<p>La loi suisse sur la protection des données vous confère les droits suivants:</p><ul><li><strong>Accès</strong> (art. 25 LPD): vous pouvez savoir si nous traitons des données vous concernant et lesquelles. Le renseignement est en règle générale gratuit et fourni en règle générale dans les 30 jours.</li><li><strong>Rectification</strong> (art. 32 al. 1 LPD): nous rectifions les données inexactes.</li><li><strong>Effacement, interdiction de traiter et de communiquer:</strong> vous pouvez exiger que nous nous abstenions d'un traitement, que nous ne communiquions pas de données à des tiers ou que nous effacions vos données, pour autant qu'aucune obligation légale de conservation ne s'y oppose. Nous donnons suite à une telle demande sans formalité. La loi conçoit ces prétentions comme des droits d'action (art. 32 al. 2 LPD en relation avec les art. 28 ss CC); vous n'avez toutefois pas besoin d'agir en justice pour les faire valoir auprès de nous.</li><li><strong>Remise et transfert des données</strong> (art. 28 LPD): les données que vous nous avez communiquées et que nous traitons de manière automatisée, nous vous les remettons dans un format électronique courant ou les transférons sur demande à un autre organisme.</li></ul><p>Si vous êtes soumis au RGPD, s'y ajoutent les droits de ses art. 15 à 21: accès, rectification, effacement, limitation du traitement, portabilité des données et opposition.</p><p>Un courrier sans formalité suffit: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> ou l'adresse indiquée plus haut. Afin de ne pas renseigner la mauvaise personne, nous devons vérifier votre identité de manière appropriée.</p>"
    ],
    [
     "Dénonciation au PFPDT et voies de droit",
@@ -643,7 +643,7 @@
    ],
    [
     "Livraison, délai de livraison et transfert des risques",
-    "<p>Nous livrons en Suisse et au Liechtenstein. Les livraisons à d'autres adresses requièrent une convention particulière.</p><p><strong>Les frais d'expédition sont facturés séparément selon l'offre.</strong> Ils dépendent du poids, du volume et du lieu de destination et sont indiqués dans l'offre écrite. L'enlèvement au siège de VES-TECH Swiss est possible après entente.</p><p>Les délais de livraison reposent sur les indications du fabricant et sont indicatifs, sauf si l'offre les qualifie expressément de contraignants. En cas de retard, nous informons le client et lui indiquons une nouvelle date. Si celle-ci est à son tour dépassée de plus de 30 jours, le client peut résilier le contrat après avoir fixé par écrit un délai supplémentaire. Les paiements déjà effectués sont remboursés.</p><p>Si la livraison est rendue impossible ou notablement plus difficile par des circonstances qui ne nous sont pas imputables – notamment l'incapacité de livrer du fabricant, des perturbations d'exploitation ou de transport, des mesures des autorités, des événements naturels ou des conflits du travail –, le délai de livraison est prolongé de la durée de l'empêchement. Si celui-ci dure plus de trois mois, chaque partie peut résilier le contrat ; les paiements déjà effectués sont remboursés. Aucune prétention supplémentaire n'existe, pour autant qu'aucune faute ne nous soit imputable. L'art. 100 al. 1 CO demeure réservé.</p><p>Les livraisons partielles sont admises lorsqu'elles sont raisonnablement exigibles du client.</p><p><strong>Les profits et les risques ne passent au client, ou à la personne qu'il a désignée, qu'à la remise de la marchandise</strong> – y compris en cas d'expédition. Nous dérogeons ainsi sciemment, en faveur du client, à la règle dispositive de l'art. 185 CO. Les dommages de transport sont à notre charge jusqu'à la remise. Le client mentionne les dommages de transport visibles sur le bulletin de livraison lors de la réception et nous les annonce sans délai, afin que nous puissions les faire valoir auprès du transporteur.</p>"
+    "<p>Nous livrons en Suisse et au Liechtenstein. Les livraisons à d'autres adresses requièrent une convention particulière.</p><p><strong>Les frais d'expédition sont facturés séparément selon l'offre.</strong> Ils dépendent du poids, du volume et du lieu de destination et sont indiqués dans l'offre écrite. L'enlèvement au siège de VES-TECH Swiss est possible après entente.</p><p>Les délais de livraison reposent sur les indications du fabricant et sont indicatifs, sauf si l'offre les qualifie expressément de contraignants. En cas de retard, nous informons le client et lui indiquons une nouvelle date. Si celle-ci est à son tour dépassée de plus de 30 jours, le client peut résilier le contrat après avoir fixé par écrit un délai supplémentaire. Les paiements déjà effectués sont remboursés.</p><p>Si la livraison est rendue impossible ou notablement plus difficile par des circonstances qui ne nous sont pas imputables (notamment l'incapacité de livrer du fabricant, des perturbations d'exploitation ou de transport, des mesures des autorités, des événements naturels ou des conflits du travail), le délai de livraison est prolongé de la durée de l'empêchement. Si celui-ci dure plus de trois mois, chaque partie peut résilier le contrat ; les paiements déjà effectués sont remboursés. Aucune prétention supplémentaire n'existe, pour autant qu'aucune faute ne nous soit imputable. L'art. 100 al. 1 CO demeure réservé.</p><p>Les livraisons partielles sont admises lorsqu'elles sont raisonnablement exigibles du client.</p><p><strong>Les profits et les risques ne passent au client, ou à la personne qu'il a désignée, qu'à la remise de la marchandise</strong>, y compris en cas d'expédition. Nous dérogeons ainsi sciemment, en faveur du client, à la règle dispositive de l'art. 185 CO. Les dommages de transport sont à notre charge jusqu'à la remise. Le client mentionne les dommages de transport visibles sur le bulletin de livraison lors de la réception et nous les annonce sans délai, afin que nous puissions les faire valoir auprès du transporteur.</p>"
    ],
    [
     "Réserve de propriété",
@@ -655,7 +655,7 @@
    ],
    [
     "Garantie",
-    "<p>Nous garantissons que la marchandise livrée est exempte de défauts qui en suppriment ou en diminuent notablement la valeur ou l'utilité prévue, et qu'elle possède les qualités promises (art. 197 CO).</p><p>Le délai de garantie est de <strong>24 mois dès la livraison</strong>. Il correspond au délai légal de l'art. 210 al. 1 CO ; nous ne le raccourcissons pas.</p><p>En présence d'un défaut justifié, nous y remédions à l'égard des entreprises, à notre choix, par réparation ou par livraison de remplacement, en accord avec le fabricant MAHE. Si cela n'aboutit pas dans un délai raisonnable ou échoue à deux reprises, le client dispose des droits légaux, notamment la résiliation ou la réduction du prix selon l'art. 205 CO et, pour les choses de genre, la livraison de remplacement selon l'art. 206 CO.</p><p>Cette priorité de la réparation ne vaut pas à l'égard des consommatrices et consommateurs. Le droit d'option de l'art. 205 CO leur appartient dès le départ ; ils peuvent accepter une réparation ou une livraison de remplacement, mais n'y sont pas tenus.</p><p>Ne sont pas couverts par la garantie :</p><ul><li>les pièces d'usure qui s'usent conformément à leur destination – notamment buses, électrodes, tubes contact, abrasifs, brosses, feutres, joints, tuyaux et électrolytes consommés ;</li><li>les dommages dus à une utilisation inappropriée, à une surcharge, à une tension de réseau incorrecte, à un entretien absent ou insuffisant ainsi qu'au non-respect de la notice d'utilisation ;</li><li>les dommages dus à des interventions du client ou de tiers, en particulier à des réparations effectuées hors de notre service ou de celui du fabricant, et à l'utilisation de pièces de rechange ou d'accessoires non homologués ;</li><li>les dommages dus à une influence extérieure, par exemple chute, humidité, gel, produits chimiques ou surtension ;</li><li>les altérations visuelles normales telles que rayures et décolorations sans incidence sur le fonctionnement.</li></ul><p>À l'égard des consommatrices et consommateurs, ces exclusions ne valent que dans la mesure où elles ne vident pas de leur substance les droits de garantie impératifs (art. 210 CO, art. 8 LCD). Une garantie du fabricant MAHE, si elle existe, s'ajoute à la garantie légale et ne la restreint pas. Nous nous chargeons des démarches auprès du fabricant pour le client.</p>"
+    "<p>Nous garantissons que la marchandise livrée est exempte de défauts qui en suppriment ou en diminuent notablement la valeur ou l'utilité prévue, et qu'elle possède les qualités promises (art. 197 CO).</p><p>Le délai de garantie est de <strong>24 mois dès la livraison</strong>. Il correspond au délai légal de l'art. 210 al. 1 CO ; nous ne le raccourcissons pas.</p><p>En présence d'un défaut justifié, nous y remédions à l'égard des entreprises, à notre choix, par réparation ou par livraison de remplacement, en accord avec le fabricant MAHE. Si cela n'aboutit pas dans un délai raisonnable ou échoue à deux reprises, le client dispose des droits légaux, notamment la résiliation ou la réduction du prix selon l'art. 205 CO et, pour les choses de genre, la livraison de remplacement selon l'art. 206 CO.</p><p>Cette priorité de la réparation ne vaut pas à l'égard des consommatrices et consommateurs. Le droit d'option de l'art. 205 CO leur appartient dès le départ ; ils peuvent accepter une réparation ou une livraison de remplacement, mais n'y sont pas tenus.</p><p>Ne sont pas couverts par la garantie :</p><ul><li>les pièces d'usure qui s'usent conformément à leur destination, notamment buses, électrodes, tubes contact, abrasifs, brosses, feutres, joints, tuyaux et électrolytes consommés ;</li><li>les dommages dus à une utilisation inappropriée, à une surcharge, à une tension de réseau incorrecte, à un entretien absent ou insuffisant ainsi qu'au non-respect de la notice d'utilisation ;</li><li>les dommages dus à des interventions du client ou de tiers, en particulier à des réparations effectuées hors de notre service ou de celui du fabricant, et à l'utilisation de pièces de rechange ou d'accessoires non homologués ;</li><li>les dommages dus à une influence extérieure, par exemple chute, humidité, gel, produits chimiques ou surtension ;</li><li>les altérations visuelles normales telles que rayures et décolorations sans incidence sur le fonctionnement.</li></ul><p>À l'égard des consommatrices et consommateurs, ces exclusions ne valent que dans la mesure où elles ne vident pas de leur substance les droits de garantie impératifs (art. 210 CO, art. 8 LCD). Une garantie du fabricant MAHE, si elle existe, s'ajoute à la garantie légale et ne la restreint pas. Nous nous chargeons des démarches auprès du fabricant pour le client.</p>"
    ],
    [
     "Responsabilité et sécurité des produits",
@@ -711,16 +711,16 @@
   "all_title": "Tutti gli apparecchi MAHE · saldatura, plasma, pulizia, accessori",
   "all_desc": "L'intera gamma MAHE da VES-TECH Swiss: {n} apparecchi per MIG/MAG, TIG, MMA, taglio al plasma, pulizia elettrolitica e accessori. Prezzo su richiesta.",
   "all_h1": "Tutti gli apparecchi MAHE",
-  "all_lead": "L'intera gamma MAHE – ordinata per processo. Tutti gli apparecchi con assistenza svizzera, gestione della garanzia e consulenza del tecnico.",
+  "all_lead": "L'intera gamma MAHE, ordinata per processo. Tutti gli apparecchi con assistenza svizzera, gestione della garanzia e consulenza del tecnico.",
   "cat_title_tpl": "{cat} · acquistare MAHE {sub_hint} in Svizzera | VES-TECH",
   "cat_desc_tpl": "{cat} MAHE da VES-TECH Swiss: {n} modelli, {subs}. Consulenza, assistenza e ricambi da Herisau AR. Prezzo su richiesta.",
   "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
-  "sub_desc_tpl": "MAHE {sub} – {n} modelli da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
-  "prod_title_tpl": "MAHE {name} · {sub} – {cat}",
+  "sub_desc_tpl": "MAHE {sub}: {n} modelli da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
+  "prod_title_tpl": "MAHE {name} · {sub} · {cat}",
   "prod_desc_tpl": "MAHE {name} ({vt}): {desc} Dati tecnici, accessori adatti e consulenza da VES-TECH Swiss. Prezzo su richiesta.",
   "prod_intro_tpl": "Il MAHE {name} è un apparecchio {vt} della gamma {cat}. VES-TECH Swiss lo fornisce con assistenza svizzera, messa in servizio e gestione della garanzia.",
   "verf_title": "Processi di saldatura MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
-  "verf_desc": "I processi di saldatura MAHE spiegati: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP – e i loro impieghi.",
+  "verf_desc": "I processi di saldatura MAHE spiegati: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP e i loro impieghi.",
   "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
   "dl_desc": "Catalogo prodotti MAHE, certificato di conformità EN 1090 e schede di sicurezza degli elettroliti R1, RP1, P1, M1 e N1 in PDF.",
   "kontakt_title": "Contatto · VES-TECH Swiss, officina Herisau AR",
@@ -728,7 +728,7 @@
   "faq_title": "Domande frequenti sulla saldatura MAHE | VES-TECH Swiss",
   "faq_desc": "Risposte su prezzi, scelta del processo, saldatura dell'alluminio, pulizia elettrolitica, taglio al plasma, EN 1090 e assistenza in Svizzera.",
   "faq_h1": "Domande frequenti",
-  "faq_lead": "Le domande che clienti e clienti ci pongono più spesso – risposte brevi e dirette.",
+  "faq_lead": "Le domande che clienti e clienti ci pongono più spesso, risposte brevi e dirette.",
   "search_title": "Ricerca | VES-TECH Swiss",
   "search_desc": "Cercate nell'intera gamma MAHE di VES-TECH Swiss per apparecchio, processo o caratteristica tecnica.",
   "search_h1": "Ricerca",
@@ -737,7 +737,7 @@
   "search_n_results": "{n} risultati",
   "search_one_result": "1 risultato",
   "search_no_results": "Nessun risultato per",
-  "search_no_results_help": "Controllate l'ortografia o cercate in modo più generico – ad esempio il processo invece del nome dell'apparecchio.",
+  "search_no_results_help": "Controllate l'ortografia o cercate in modo più generico, ad esempio il processo invece del nome dell'apparecchio.",
   "search_did_you_mean": "Intendevate",
   "search_popular": "Ricerche frequenti",
   "search_all_results": "Mostra tutti i risultati",
@@ -755,7 +755,7 @@
   "impressum_title": "Note legali | VES-TECH Swiss",
   "impressum_desc": "Note legali di VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen SG: titolare, contatto, registro di commercio, IVA e responsabilità.",
   "impressum_h1": "Note legali",
-  "datenschutz_title": "Protezione dei dati — senza cookie, senza tracciamento",
+  "datenschutz_title": "Protezione dei dati senza cookie né tracciamento",
   "datenschutz_desc": "Come VES-TECH Swiss tratta i dati personali: log del server, moduli, lista di richiesta. Senza cookie e senza tracciamento. Secondo nLPD e RGPD.",
   "datenschutz_h1": "Informativa sulla protezione dei dati",
   "err404_title": "Pagina non trovata | VES-TECH Swiss",
@@ -763,7 +763,7 @@
   "err404_lead": "Questa pagina non esiste (più). Usate la ricerca o tornate alla panoramica.",
   "err404_cta": "Alla pagina iniziale",
   "form_sending": "Invio in corso …",
-  "form_success": "Grazie – la vostra richiesta è arrivata. Di norma rispondiamo entro un giorno lavorativo.",
+  "form_success": "Grazie, la vostra richiesta è arrivata. Di norma rispondiamo entro un giorno lavorativo.",
   "form_error": "L'invio non è riuscito. Vi preghiamo di chiamarci o di scrivere direttamente a vestechswiss@gmail.com.",
   "form_required": "Campo obbligatorio",
   "form_invalid_mail": "Inserire un indirizzo e-mail valido",
@@ -777,7 +777,7 @@
   "updated": "Ultimo aggiornamento",
   "reading_context": "Apparecchio MAHE da VES-TECH Swiss",
   "usp_1_h": "Assistenza svizzera",
-  "usp_1_p": "Messa in servizio, riparazione e calibrazione dal tecnico – non da una hotline.",
+  "usp_1_p": "Messa in servizio, riparazione e calibrazione dal tecnico, non da una hotline.",
   "usp_2_h": "Prezzo su richiesta",
   "usp_2_p": "Ogni impianto viene configurato. Ricevete un'offerta adatta al vostro materiale e allo spessore della lamiera.",
   "usp_3_h": "Documentazione EN 1090",
@@ -793,7 +793,7 @@
    },
    {
     "q": "Qual è la differenza tra TIG DC e TIG AC/DC?",
-    "a": "Il TIG DC salda in corrente continua ed è adatto ad acciaio, acciaio inox, rame e titanio. Il TIG AC/DC lavora anche in corrente alternata e rompe così lo strato di ossido dell'alluminio – solo così l'alluminio si salda in TIG in modo pulito. Gli apparecchi AC/DC sono quindi la scelta universale, quelli DC la scelta più economica."
+    "a": "Il TIG DC salda in corrente continua ed è adatto ad acciaio, acciaio inox, rame e titanio. Il TIG AC/DC lavora anche in corrente alternata e rompe così lo strato di ossido dell'alluminio. Solo così l'alluminio si salda in TIG in modo pulito. Gli apparecchi AC/DC sono quindi la scelta universale, quelli DC la scelta più economica."
    },
    {
     "q": "Come funziona la pulizia elettrolitica delle saldature?",
@@ -805,11 +805,11 @@
    },
    {
     "q": "VES-TECH Swiss offre assistenza e riparazione in Svizzera?",
-    "a": "Sì. L'officina a Herisau AR – presso la nostra azienda partner Schweisstechnik Scherrer AG – si occupa di diagnosi, riparazione, calibrazione e automazione per la gamma MAHE. Parlate direttamente con il tecnico che lavora anche sull'elettronica, raggiungibile al +41 76 710 91 39."
+    "a": "Sì. L'officina a Herisau AR, presso la nostra azienda partner Schweisstechnik Scherrer AG, si occupa di diagnosi, riparazione, calibrazione e automazione per la gamma MAHE. Parlate direttamente con il tecnico che lavora anche sull'elettronica, raggiungibile al +41 76 710 91 39."
    },
    {
     "q": "Cosa significa EN 1090 e VES-TECH fornisce la documentazione?",
-    "a": "EN 1090 è la norma europea per l'esecuzione di strutture portanti in acciaio e alluminio. Chi produce tali componenti necessita di un controllo di produzione in fabbrica e di attrezzature di saldatura verificate. VES-TECH Swiss fornisce il pacchetto completo di controllo e conformità, adattato al vostro impianto MAHE – certificato di conformità incluso."
+    "a": "EN 1090 è la norma europea per l'esecuzione di strutture portanti in acciaio e alluminio. Chi produce tali componenti necessita di un controllo di produzione in fabbrica e di attrezzature di saldatura verificate. VES-TECH Swiss fornisce il pacchetto completo di controllo e conformità, adattato al vostro impianto MAHE, certificato di conformità incluso."
    },
    {
     "q": "In quanto tempo si riceve un'offerta?",
@@ -835,7 +835,7 @@
    ],
    [
     "Base legale di queste indicazioni",
-    "<p>La Svizzera non conosce un obbligo generale di note legali per i siti web. Chi però offre merci o prestazioni nel commercio elettronico deve indicare in modo chiaro e completo chi è e come lo si raggiunge – compreso l’indirizzo di posta elettronica (art. 3 cpv. 1 lett. s n. 1 LCSl). Queste indicazioni figurano sopra.</p><p>Gli altri obblighi dell’art. 3 cpv. 1 lett. s n. 2–4 LCSl riguardano lo svolgimento di un’ordinazione: indicazione delle fasi tecniche che portano al contratto, correzione degli errori di immissione, conferma dell’ordinazione. Presuppongono una procedura di ordinazione, che su questo sito non esiste.</p>"
+    "<p>La Svizzera non conosce un obbligo generale di note legali per i siti web. Chi però offre merci o prestazioni nel commercio elettronico deve indicare in modo chiaro e completo chi è e come lo si raggiunge, compreso l’indirizzo di posta elettronica (art. 3 cpv. 1 lett. s n. 1 LCSl). Queste indicazioni figurano sopra.</p><p>Gli altri obblighi dell’art. 3 cpv. 1 lett. s n. 2–4 LCSl riguardano lo svolgimento di un’ordinazione: indicazione delle fasi tecniche che portano al contratto, correzione degli errori di immissione, conferma dell’ordinazione. Presuppongono una procedura di ordinazione, che su questo sito non esiste.</p>"
    ],
    [
     "Registro di commercio e IDI",
@@ -889,7 +889,7 @@
    ],
    [
     "Campo d'applicazione e diritto applicabile",
-    "<p>La presente informativa vale per il sito <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in tutte e tre le versioni linguistiche — tedesca, francese e italiana — nonché per le richieste che ci pervengono tramite questo sito.</p><p>È determinante la <strong>legge federale sulla protezione dei dati</strong> (LPD) nella versione riveduta, in vigore dal 1° settembre 2023. La LPD parla di «trattamento» di dati personali. Utilizziamo questo termine in tutto il testo; esso comprende ogni operazione sui dati, dalla raccolta alla cancellazione.</p><p>La nostra zona di fornitura comprende, oltre alla Svizzera, anche il Liechtenstein, che fa parte dello Spazio economico europeo. Nella misura in cui ci rivolgiamo a persone che vi si trovano, si applica in aggiunta il regolamento generale europeo sulla protezione dei dati (RGPD). I due testi non coincidono. Dove divergono, lo segnaliamo.</p>"
+    "<p>La presente informativa vale per il sito <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in tutte e tre le versioni linguistiche (tedesca, francese e italiana) nonché per le richieste che ci pervengono tramite questo sito.</p><p>È determinante la <strong>legge federale sulla protezione dei dati</strong> (LPD) nella versione riveduta, in vigore dal 1° settembre 2023. La LPD parla di «trattamento» di dati personali. Utilizziamo questo termine in tutto il testo; esso comprende ogni operazione sui dati, dalla raccolta alla cancellazione.</p><p>La nostra zona di fornitura comprende, oltre alla Svizzera, anche il Liechtenstein, che fa parte dello Spazio economico europeo. Nella misura in cui ci rivolgiamo a persone che vi si trovano, si applica in aggiunta il regolamento generale europeo sulla protezione dei dati (RGPD). I due testi non coincidono. Dove divergono, lo segnaliamo.</p>"
    ],
    [
     "Che cosa questo sito non fa",
@@ -905,7 +905,7 @@
    ],
    [
     "Modulo di contatto e richiesta",
-    "<p>Quando ci scrive tramite un modulo o invia una lista di richiesta, trattiamo le indicazioni che inserisce:</p><ul><li>il nome o la ditta;</li><li>l'indirizzo e-mail;</li><li>il numero di telefono — questo campo esiste solo nel modulo di contatto ed è facoltativo;</li><li>il Suo messaggio;</li><li>per la lista di richiesta, in aggiunta gli apparecchi da Lei scelti, con la quantità e l'indirizzo della relativa pagina di prodotto;</li><li>la pagina e la versione linguistica da cui parte la richiesta.</li></ul><p>Nel modulo di contatto sono obbligatori il nome, l'indirizzo e-mail e il messaggio. Nel modulo della lista di richiesta lo sono soltanto il nome e l'indirizzo e-mail; il messaggio vi è facoltativo. Senza le indicazioni obbligatorie non possiamo rispondere. Tutto il resto è facoltativo.</p><p>Una richiesta inviata in questo modo è <strong>senza impegno</strong>. Non è né un'ordinazione né una proposta contrattuale — è però il primo passo verso un possibile contratto.</p><p>Ciò che deriva contrattualmente da una richiesta è disciplinato dalle <a href=\"/it/condizioni-generali/\">condizioni generali</a>.</p>"
+    "<p>Quando ci scrive tramite un modulo o invia una lista di richiesta, trattiamo le indicazioni che inserisce:</p><ul><li>il nome o la ditta;</li><li>l'indirizzo e-mail;</li><li>il numero di telefono, questo campo esiste solo nel modulo di contatto ed è facoltativo;</li><li>il Suo messaggio;</li><li>per la lista di richiesta, in aggiunta gli apparecchi da Lei scelti, con la quantità e l'indirizzo della relativa pagina di prodotto;</li><li>la pagina e la versione linguistica da cui parte la richiesta.</li></ul><p>Nel modulo di contatto sono obbligatori il nome, l'indirizzo e-mail e il messaggio. Nel modulo della lista di richiesta lo sono soltanto il nome e l'indirizzo e-mail; il messaggio vi è facoltativo. Senza le indicazioni obbligatorie non possiamo rispondere. Tutto il resto è facoltativo.</p><p>Una richiesta inviata in questo modo è <strong>senza impegno</strong>. Non è né un'ordinazione né una proposta contrattuale, ma il primo passo verso un possibile contratto.</p><p>Ciò che deriva contrattualmente da una richiesta è disciplinato dalle <a href=\"/it/condizioni-generali/\">condizioni generali</a>.</p>"
    ],
    [
     "Invio della Sua richiesta",
@@ -917,7 +917,7 @@
    ],
    [
     "Scopi del trattamento",
-    "<p>Trattiamo le Sue indicazioni esclusivamente per</p><ul><li>rispondere alla Sua richiesta e allestire un'offerta;</li><li>eseguire un ordine, se dalla Sua richiesta nasce un acquisto concluso al di fuori del sito — fornitura, fattura, garanzia;</li><li>adempiere obblighi legali, in particolare la conservazione dei documenti contabili;</li><li>garantire l'esercizio e la sicurezza del sito.</li></ul><p>Non vendiamo dati personali e non li trasmettiamo a scopi pubblicitari. Senza il Suo consenso non riceverà da noi né newsletter né pubblicità.</p>"
+    "<p>Trattiamo le Sue indicazioni esclusivamente per</p><ul><li>rispondere alla Sua richiesta e allestire un'offerta;</li><li>eseguire un ordine, se dalla Sua richiesta nasce un acquisto concluso al di fuori del sito: fornitura, fattura, garanzia;</li><li>adempiere obblighi legali, in particolare la conservazione dei documenti contabili;</li><li>garantire l'esercizio e la sicurezza del sito.</li></ul><p>Non vendiamo dati personali e non li trasmettiamo a scopi pubblicitari. Senza il Suo consenso non riceverà da noi né newsletter né pubblicità.</p>"
    ],
    [
     "Base giuridica",
@@ -925,7 +925,7 @@
    ],
    [
     "Comunicazione a terzi",
-    "<p>Comunichiamo dati personali soltanto nella misura necessaria allo scopo indicato o richiesta dalla legge. I destinatari possono essere:</p><ul><li>i fornitori tecnici menzionati — GitHub per l'hosting, Google per l'account di posta aziendale;</li><li>MAHE GmbH in Germania, in qualità di fabbricante, quando una domanda tecnica o un caso di garanzia richiede le Sue indicazioni; in tal caso vengono trasmessi soltanto i Suoi recapiti e i dati dell'apparecchio;</li><li>l'impresa di trasporto, se ha luogo una fornitura;</li><li>il nostro fiduciario nonché le autorità fiscali e di perseguimento penale, nella misura in cui obblighi legali lo esigono.</li></ul><p>Non avviene alcuna trasmissione a scopi pubblicitari né alcuna vendita di dati.</p>"
+    "<p>Comunichiamo dati personali soltanto nella misura necessaria allo scopo indicato o richiesta dalla legge. I destinatari possono essere:</p><ul><li>i fornitori tecnici menzionati: GitHub per l'hosting, Google per l'account di posta aziendale;</li><li>MAHE GmbH in Germania, in qualità di fabbricante, quando una domanda tecnica o un caso di garanzia richiede le Sue indicazioni; in tal caso vengono trasmessi soltanto i Suoi recapiti e i dati dell'apparecchio;</li><li>l'impresa di trasporto, se ha luogo una fornitura;</li><li>il nostro fiduciario nonché le autorità fiscali e di perseguimento penale, nella misura in cui obblighi legali lo esigono.</li></ul><p>Non avviene alcuna trasmissione a scopi pubblicitari né alcuna vendita di dati.</p>"
    ],
    [
     "Comunicazione all'estero",
@@ -933,7 +933,7 @@
    ],
    [
     "Google Search Console",
-    "<p>Affinché il sito compaia nella ricerca Google, esso è registrato presso la Google Search Console. La prova che il sito ci appartiene è fornita da un file di conferma nella directory principale. A tal fine non viene caricato alcuno script e non vengono raccolti dati che La riguardano.</p><p>Nelle valutazioni di questo servizio vediamo soltanto cifre aggregate — termini di ricerca, pagine richiamate, Paese e tipo di apparecchio — senza riferimento a singole persone.</p>"
+    "<p>Affinché il sito compaia nella ricerca Google, esso è registrato presso la Google Search Console. La prova che il sito ci appartiene è fornita da un file di conferma nella directory principale. A tal fine non viene caricato alcuno script e non vengono raccolti dati che La riguardano.</p><p>Nelle valutazioni di questo servizio vediamo soltanto cifre aggregate (termini di ricerca, pagine richiamate, Paese e tipo di apparecchio) senza riferimento a singole persone.</p>"
    ],
    [
     "Contenuti del fabbricante (mahe-online.de)",
@@ -949,7 +949,7 @@
    ],
    [
     "I Suoi diritti",
-    "<p>La legge svizzera sulla protezione dei dati Le conferisce i diritti seguenti:</p><ul><li><strong>Accesso</strong> (art. 25 LPD): può sapere se e quali dati personali trattiamo sul Suo conto. L'informazione è di regola gratuita e viene fornita di regola entro 30 giorni.</li><li><strong>Rettifica</strong> (art. 32 cpv. 1 LPD): rettifichiamo i dati inesatti.</li><li><strong>Cancellazione, divieto di trattamento e di comunicazione:</strong> può esigere che ci asteniamo da un trattamento, che non comunichiamo dati a terzi o che cancelliamo i Suoi dati — sempre che non vi si opponga un obbligo legale di conservazione. Diamo seguito a una simile domanda senza formalità. La legge configura queste pretese come diritti d'azione (art. 32 cpv. 2 LPD in combinato disposto con gli art. 28 segg. CC); non deve però agire in giudizio per farli valere presso di noi.</li><li><strong>Consegna e trasmissione dei dati</strong> (art. 28 LPD): i dati che ci ha comunicato e che trattiamo in modo automatizzato glieli consegniamo in un formato elettronico corrente oppure, su richiesta, li trasmettiamo a un altro organismo.</li></ul><p>Se è soggetto al RGPD, si aggiungono i diritti previsti dai suoi art. 15-21: accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati e opposizione.</p><p>È sufficiente uno scritto informale: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> oppure l'indirizzo indicato sopra. Per non fornire informazioni alla persona sbagliata, dobbiamo verificare la Sua identità in modo appropriato.</p>"
+    "<p>La legge svizzera sulla protezione dei dati Le conferisce i diritti seguenti:</p><ul><li><strong>Accesso</strong> (art. 25 LPD): può sapere se e quali dati personali trattiamo sul Suo conto. L'informazione è di regola gratuita e viene fornita di regola entro 30 giorni.</li><li><strong>Rettifica</strong> (art. 32 cpv. 1 LPD): rettifichiamo i dati inesatti.</li><li><strong>Cancellazione, divieto di trattamento e di comunicazione:</strong> può esigere che ci asteniamo da un trattamento, che non comunichiamo dati a terzi o che cancelliamo i Suoi dati, sempre che non vi si opponga un obbligo legale di conservazione. Diamo seguito a una simile domanda senza formalità. La legge configura queste pretese come diritti d'azione (art. 32 cpv. 2 LPD in combinato disposto con gli art. 28 segg. CC); non deve però agire in giudizio per farli valere presso di noi.</li><li><strong>Consegna e trasmissione dei dati</strong> (art. 28 LPD): i dati che ci ha comunicato e che trattiamo in modo automatizzato glieli consegniamo in un formato elettronico corrente oppure, su richiesta, li trasmettiamo a un altro organismo.</li></ul><p>Se è soggetto al RGPD, si aggiungono i diritti previsti dai suoi art. 15-21: accesso, rettifica, cancellazione, limitazione del trattamento, portabilità dei dati e opposizione.</p><p>È sufficiente uno scritto informale: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> oppure l'indirizzo indicato sopra. Per non fornire informazioni alla persona sbagliata, dobbiamo verificare la Sua identità in modo appropriato.</p>"
    ],
    [
     "Denuncia all'IFPDT e vie legali",
@@ -987,7 +987,7 @@
    ],
    [
     "Consegna, termine di consegna e trasferimento del rischio",
-    "<p>Forniamo in Svizzera e nel Liechtenstein. Le forniture ad altri indirizzi richiedono un accordo particolare.</p><p><strong>Le spese di spedizione sono fatturate separatamente secondo l'offerta.</strong> Dipendono da peso, volume e luogo di destinazione e sono indicate nell'offerta scritta. Il ritiro presso la sede di VES-TECH Swiss è possibile previo accordo.</p><p>I termini di consegna si basano sulle indicazioni del fabbricante e sono orientativi, salvo che l'offerta li qualifichi espressamente come vincolanti. In caso di ritardo informiamo il cliente e indichiamo una nuova data. Se anche questa viene superata di oltre 30 giorni, il cliente può recedere dal contratto dopo aver fissato per iscritto un termine suppletorio. I pagamenti già effettuati vengono rimborsati.</p><p>Se la fornitura è resa impossibile o notevolmente più difficile da circostanze a noi non imputabili – segnatamente l'incapacità di fornire del fabbricante, perturbazioni d'esercizio o di trasporto, provvedimenti delle autorità, eventi naturali o conflitti di lavoro –, il termine di consegna è prorogato per la durata dell'impedimento. Se questo dura più di tre mesi, entrambe le parti possono recedere dal contratto; i pagamenti già effettuati vengono rimborsati. Non sussistono pretese ulteriori, purché non ci sia imputabile alcuna colpa. Resta riservato l'art. 100 cpv. 1 CO.</p><p>Le forniture parziali sono ammesse se ragionevolmente esigibili dal cliente.</p><p><strong>Utili e rischi passano al cliente, o alla persona da lui designata, soltanto con la consegna della merce</strong> – anche in caso di spedizione. Deroghiamo così consapevolmente, a favore del cliente, alla regola dispositiva dell'art. 185 CO. I danni di trasporto sono a nostro carico fino alla consegna. Il cliente annota i danni di trasporto visibili sulla bolla di consegna al momento del ricevimento e ce li segnala immediatamente, affinché possiamo farli valere nei confronti del trasportatore.</p>"
+    "<p>Forniamo in Svizzera e nel Liechtenstein. Le forniture ad altri indirizzi richiedono un accordo particolare.</p><p><strong>Le spese di spedizione sono fatturate separatamente secondo l'offerta.</strong> Dipendono da peso, volume e luogo di destinazione e sono indicate nell'offerta scritta. Il ritiro presso la sede di VES-TECH Swiss è possibile previo accordo.</p><p>I termini di consegna si basano sulle indicazioni del fabbricante e sono orientativi, salvo che l'offerta li qualifichi espressamente come vincolanti. In caso di ritardo informiamo il cliente e indichiamo una nuova data. Se anche questa viene superata di oltre 30 giorni, il cliente può recedere dal contratto dopo aver fissato per iscritto un termine suppletorio. I pagamenti già effettuati vengono rimborsati.</p><p>Se la fornitura è resa impossibile o notevolmente più difficile da circostanze a noi non imputabili (segnatamente l'incapacità di fornire del fabbricante, perturbazioni d'esercizio o di trasporto, provvedimenti delle autorità, eventi naturali o conflitti di lavoro), il termine di consegna è prorogato per la durata dell'impedimento. Se questo dura più di tre mesi, entrambe le parti possono recedere dal contratto; i pagamenti già effettuati vengono rimborsati. Non sussistono pretese ulteriori, purché non ci sia imputabile alcuna colpa. Resta riservato l'art. 100 cpv. 1 CO.</p><p>Le forniture parziali sono ammesse se ragionevolmente esigibili dal cliente.</p><p><strong>Utili e rischi passano al cliente, o alla persona da lui designata, soltanto con la consegna della merce</strong>, anche in caso di spedizione. Deroghiamo così consapevolmente, a favore del cliente, alla regola dispositiva dell'art. 185 CO. I danni di trasporto sono a nostro carico fino alla consegna. Il cliente annota i danni di trasporto visibili sulla bolla di consegna al momento del ricevimento e ce li segnala immediatamente, affinché possiamo farli valere nei confronti del trasportatore.</p>"
    ],
    [
     "Riserva della proprietà",
@@ -999,7 +999,7 @@
    ],
    [
     "Garanzia",
-    "<p>Garantiamo che la merce fornita non presenta difetti che ne annullino o ne diminuiscano notevolmente il valore o l'idoneità all'uso previsto, e che possiede le qualità promesse (art. 197 CO).</p><p>Il termine di garanzia è di <strong>24 mesi dalla consegna</strong>. Corrisponde al termine legale dell'art. 210 cpv. 1 CO; non lo riduciamo.</p><p>In presenza di un difetto giustificato vi poniamo rimedio, nei confronti delle imprese e a nostra scelta, mediante riparazione o fornitura sostitutiva, d'intesa con il fabbricante MAHE. Se ciò non riesce entro un termine adeguato o fallisce due volte, il cliente dispone dei diritti legali, segnatamente la risoluzione o la riduzione del prezzo secondo l'art. 205 CO e, per le cose generiche, la fornitura sostitutiva secondo l'art. 206 CO.</p><p>Nei confronti delle consumatrici e dei consumatori questa priorità della riparazione non vale. Il diritto di scelta secondo l'art. 205 CO spetta loro fin dall'inizio; possono accettare una riparazione o una fornitura sostitutiva, ma non vi sono tenuti.</p><p>Non sono coperti dalla garanzia:</p><ul><li>i pezzi soggetti a usura che si consumano conformemente alla loro destinazione – ad esempio ugelli, elettrodi, tubetti di contatto, abrasivi, spazzole, feltri, guarnizioni, tubi flessibili ed elettroliti esauriti;</li><li>i danni dovuti a uso improprio, sovraccarico, tensione di rete errata, manutenzione mancante o insufficiente nonché inosservanza delle istruzioni per l'uso;</li><li>i danni dovuti a interventi del cliente o di terzi, in particolare a riparazioni eseguite al di fuori del nostro servizio o di quello del fabbricante, e all'impiego di pezzi di ricambio o accessori non omologati;</li><li>i danni dovuti a influssi esterni, ad esempio caduta, umidità, gelo, prodotti chimici o sovratensione;</li><li>le normali alterazioni estetiche quali graffi e scoloriture senza incidenza sul funzionamento.</li></ul><p>Nei confronti delle consumatrici e dei consumatori tali esclusioni valgono solo nella misura in cui non svuotano i diritti di garanzia imperativi (art. 210 CO, art. 8 LCSl). Un'eventuale garanzia del fabbricante MAHE si aggiunge alla garanzia legale e non la limita. Le pratiche con il fabbricante le sbrighiamo noi per il cliente.</p>"
+    "<p>Garantiamo che la merce fornita non presenta difetti che ne annullino o ne diminuiscano notevolmente il valore o l'idoneità all'uso previsto, e che possiede le qualità promesse (art. 197 CO).</p><p>Il termine di garanzia è di <strong>24 mesi dalla consegna</strong>. Corrisponde al termine legale dell'art. 210 cpv. 1 CO; non lo riduciamo.</p><p>In presenza di un difetto giustificato vi poniamo rimedio, nei confronti delle imprese e a nostra scelta, mediante riparazione o fornitura sostitutiva, d'intesa con il fabbricante MAHE. Se ciò non riesce entro un termine adeguato o fallisce due volte, il cliente dispone dei diritti legali, segnatamente la risoluzione o la riduzione del prezzo secondo l'art. 205 CO e, per le cose generiche, la fornitura sostitutiva secondo l'art. 206 CO.</p><p>Nei confronti delle consumatrici e dei consumatori questa priorità della riparazione non vale. Il diritto di scelta secondo l'art. 205 CO spetta loro fin dall'inizio; possono accettare una riparazione o una fornitura sostitutiva, ma non vi sono tenuti.</p><p>Non sono coperti dalla garanzia:</p><ul><li>i pezzi soggetti a usura che si consumano conformemente alla loro destinazione, ad esempio ugelli, elettrodi, tubetti di contatto, abrasivi, spazzole, feltri, guarnizioni, tubi flessibili ed elettroliti esauriti;</li><li>i danni dovuti a uso improprio, sovraccarico, tensione di rete errata, manutenzione mancante o insufficiente nonché inosservanza delle istruzioni per l'uso;</li><li>i danni dovuti a interventi del cliente o di terzi, in particolare a riparazioni eseguite al di fuori del nostro servizio o di quello del fabbricante, e all'impiego di pezzi di ricambio o accessori non omologati;</li><li>i danni dovuti a influssi esterni, ad esempio caduta, umidità, gelo, prodotti chimici o sovratensione;</li><li>le normali alterazioni estetiche quali graffi e scoloriture senza incidenza sul funzionamento.</li></ul><p>Nei confronti delle consumatrici e dei consumatori tali esclusioni valgono solo nella misura in cui non svuotano i diritti di garanzia imperativi (art. 210 CO, art. 8 LCSl). Un'eventuale garanzia del fabbricante MAHE si aggiunge alla garanzia legale e non la limita. Le pratiche con il fabbricante le sbrighiamo noi per il cliente.</p>"
    ],
    [
     "Responsabilità e sicurezza dei prodotti",

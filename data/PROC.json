@@ -2,14 +2,14 @@
  {
   "ic": "mig",
   "n": {
-   "de": "MIS – Spritzerfrei",
-   "fr": "MIS – sans projections",
-   "it": "MIS – senza spruzzi"
+   "de": "MIS: Spritzerfrei",
+   "fr": "MIS: sans projections",
+   "it": "MIS: senza spruzzi"
   },
   "d": {
-   "de": "Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung – wenig Nacharbeit.",
-   "fr": "Arc quasi sans projections, excellente accroche des flancs et de la racine – peu de reprise.",
-   "it": "Arco quasi senza spruzzi, ottima presa su fianchi e radice – poca ripresa."
+   "de": "Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung, dadurch wenig Nacharbeit.",
+   "fr": "Arc quasi sans projections, excellente accroche des flancs et de la racine, donc peu de reprise.",
+   "it": "Arco quasi senza spruzzi, ottima presa su fianchi e radice, quindi poca ripresa."
   }
  },
  {
@@ -20,9 +20,9 @@
    "it": "Doppio impulso"
   },
   "d": {
-   "de": "Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung – ideal für Aluminium.",
-   "fr": "Arc pulsé automatisé, aspect TIG et cadence réglable – idéal pour l’aluminium.",
-   "it": "Arco pulsato automatizzato, estetica TIG e cadenza regolabile – ideale per l’alluminio."
+   "de": "Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.",
+   "fr": "Arc pulsé automatisé, aspect TIG et cadence réglable, idéal pour l’aluminium.",
+   "it": "Arco pulsato automatizzato, estetica TIG e cadenza regolabile, ideale per l’alluminio."
   }
  },
  {
@@ -59,9 +59,9 @@
    "it": "HyperCold"
   },
   "d": {
-   "de": "Geringste Wärmeeinbringung – ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.",
-   "fr": "Apport de chaleur minimal – idéal pour ponter les jeux et souder la tôle fine sans déformation.",
-   "it": "Minimo apporto termico – ideale per ponti sui giochi e lamiera fine senza deformazioni."
+   "de": "Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.",
+   "fr": "Apport de chaleur minimal, idéal pour ponter les jeux et souder la tôle fine sans déformation.",
+   "it": "Minimo apporto termico, ideale per ponti sui giochi e lamiera fine senza deformazioni."
   }
  },
  {
@@ -72,9 +72,9 @@
    "it": "HyperRoot"
   },
   "d": {
-   "de": "Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite – auch bei grösseren Spalten.",
-   "fr": "Soudage de racine sûr et contrôlé, envers propre – même sur jeux importants.",
-   "it": "Saldatura di radice sicura e controllata, rovescio pulito – anche con giochi ampi."
+   "de": "Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite, auch bei grösseren Spalten.",
+   "fr": "Soudage de racine sûr et contrôlé, envers propre, même sur jeux importants.",
+   "it": "Saldatura di radice sicura e controllata, rovescio pulito, anche con giochi ampi."
   }
  },
  {

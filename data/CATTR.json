@@ -5,8 +5,8 @@
    "it": "Saldatrici"
   },
   "d": {
-   "fr": "MIG/MAG, TIG, MMA et Plasma-TIG – sources haute performance MAHE avec technologie Upgrade.",
-   "it": "MIG/MAG, TIG, MMA e Plasma-TIG – generatori ad alte prestazioni MAHE con tecnologia Upgrade."
+   "fr": "Sources haute performance MAHE avec technologie Upgrade pour MIG/MAG, TIG, MMA et Plasma-TIG.",
+   "it": "Generatori ad alte prestazioni MAHE con tecnologia Upgrade per MIG/MAG, TIG, MMA e Plasma-TIG."
   }
  },
  "plasmaschneiden": {
@@ -15,8 +15,8 @@
    "it": "Taglio al plasma"
   },
   "d": {
-   "fr": "Inverters de découpe plasma Theta à technologie HSC – de 15 à 80 mm de capacité de coupe, en version manuelle, en version automation et en table de découpe CNC MPT.",
-   "it": "Inverter di taglio al plasma Theta con tecnologia HSC – da 15 a 80 mm di capacità di taglio, in versione manuale, per automazione e come tavolo di taglio CNC MPT."
+   "fr": "Inverters de découpe plasma Theta à technologie HSC, de 15 à 80 mm de capacité de coupe, en version manuelle, en version automation et en table de découpe CNC MPT.",
+   "it": "Inverter di taglio al plasma Theta con tecnologia HSC, da 15 a 80 mm di capacità di taglio, in versione manuale, per automazione e come tavolo di taglio CNC MPT."
   }
  },
  "reinigung": {
@@ -35,8 +35,8 @@
    "it": "Accessori"
   },
   "d": {
-   "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier – adaptés à chaque série MAHE.",
-   "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina – per ogni serie MAHE."
+   "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier, adaptés à chaque série MAHE.",
+   "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina, per ogni serie MAHE."
   }
  }
 }

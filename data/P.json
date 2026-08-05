@@ -312,7 +312,7 @@
   "vt": "Plasma CNC",
   "name": "MPT 3001",
   "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
    "Arbeitsbereich": "3000 x 1500 mm",
@@ -330,7 +330,7 @@
   "vt": "Plasma CNC",
   "name": "MPT 2501",
   "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich – geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
    "Arbeitsbereich": "2500 x 1250 mm",
@@ -712,7 +712,7 @@
   "vt": "Kalibrierung",
   "name": "MCU 1",
   "img": "2019/10/mcu11-300x300.png",
-  "desc": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten – grosse Volt-/Ampere-Anzeigen, leicht.",
+  "desc": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht.",
   "specs": {
    "Funktion": "Kalibrieren / Validieren",
    "Anzeige": "Volt & Ampere (gross)",
@@ -1036,7 +1036,7 @@
   "vt": "Verschleiss",
   "name": "Verschleissteilebox PSHB 65",
   "img": "2022/05/PSHB_KIT_BOX-300x194.png",
-  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 65 – gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.",
+  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 65, gleiche Bestückung wie die Boxen für PSHB 125 und PSHB 160.",
   "specs": {
    "Für": "PSHB 65",
    "Schneiddüsen": "5x",
@@ -1052,7 +1052,7 @@
   "vt": "Verschleiss",
   "name": "Verschleissteilebox PSHB 125",
   "img": "2022/05/PSHB_KIT_BOX-300x194.png",
-  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 125 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.",
+  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 125, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 160.",
   "specs": {
    "Für": "PSHB 125",
    "Schneiddüsen": "5x",
@@ -1068,7 +1068,7 @@
   "vt": "Verschleiss",
   "name": "Verschleissteilebox PSHB 160",
   "img": "2022/05/PSHB_KIT_BOX-300x194.png",
-  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 160 – gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.",
+  "desc": "Verschleissteilebox für den Plasmaschneidbrenner PSHB 160, gleiche Bestückung wie die Boxen für PSHB 65 und PSHB 125.",
   "specs": {
    "Für": "PSHB 160",
    "Schneiddüsen": "5x",

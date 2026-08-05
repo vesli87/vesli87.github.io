@@ -399,6 +399,30 @@ Sekunden später mit 200. `audit.py` fasst deshalb bei 5xx und 429 zweimal nach
 und fragt mit sechs statt zwölf Verbindungen. Wer einen 503-Bericht eines
 Crawlers bekommt, prüft die URL zuerst einzeln, bevor er etwas ändert.
 
+**Eine einzige gedrosselte Seite erzeugt im Bericht vier rote Punkte.** Am
+05.08.2026 gemessen: `5XX page` 1, `5XX page in sitemap` 1, `Indexable page
+became non-indexable` 1 und `Hreflang to redirect or broken page` **2** — die
+beiden anderen Sprachfassungen, die per hreflang auf die gedrosselte Seite
+zeigen. Es sieht nach vier Fehlern aus und ist einer, und der ist keiner.
+Gegenprobe: alle 345 hreflang-Ziele einzeln abgefragt, alle 200.
+
+**Externe Links immer auf das Endziel setzen, nie auf eine Weiterleitung.**
+Zwei Fälle sind am 05.08.2026 aufgefallen und behoben:
+
+| Link | leitete um auf | stand auf |
+|---|---|---|
+| `schweisstechnik-scherrer.ch` (301) | `www.schweisstechnik-scherrer.ch` | 6 Seiten |
+| `edoeb.admin.ch` (302) | `edoeb.admin.ch/de` | 3 Datenschutzseiten |
+
+Der zweite ist jetzt pro Sprache gesetzt (`/de`, `/fr`, `/it`) — das ist auch für
+Lesende besser, sie landen in ihrer Sprache. Prüfen lässt sich das so:
+
+```bash
+grep -rho 'href="https\?://[^"]*"' --include=index.html . | sed 's/href="//;s/"$//' \
+  | grep -v ves-tech.ch | sort -u \
+  | while read u; do echo "$(curl -sS -o /dev/null -w '%{http_code}' "$u")  $u"; done | grep -v '^2'
+```
+
 **Dasselbe gilt für mahe-online.de.** Ein Ahrefs-Lauf meldete 45 externe 4xx —
 alles Bedienungsanleitungen und Datenblätter beim Hersteller, alle mit
 `429 Too many requests`. Einzeln und mit Pause abgefragt antworteten am

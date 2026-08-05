@@ -78,7 +78,10 @@ COMPANY = {
 # gehoert auf die Seite - wer ein Geraet bringt, faehrt sonst falsch.
 WORKSHOP = {
     "partner": "Schweisstechnik Scherrer AG",
-    "partner_url": "https://schweisstechnik-scherrer.ch/",
+    # Mit www: ohne leitet die Partnerseite per 301 dorthin um. Ein Link auf
+    # eine Weiterleitung kostet einen Umweg und wird von Pruefwerkzeugen
+    # gemeldet - hier steht deshalb gleich das Ziel.
+    "partner_url": "https://www.schweisstechnik-scherrer.ch/",
     "street": "St. Gallerstrasse 49",
     "zip": "9100",
     "city": "Herisau",

@@ -537,8 +537,19 @@ def cart_drawer(lang):
 
 
 def footer(lang):
-    co = C.COMPANY
-    vis = C.WORKSHOP
+    """Fusszeile.
+
+    Hier stand einmal eine vierte Spalte mit Inhabername, Werkstattadresse,
+    Telefon und E-Mail - auf jeder der 333 Seiten. Diese Angaben gehoeren ins
+    Impressum, nicht unter jede Produktseite. Rechtlich reicht das: UWG Art. 3
+    Abs. 1 lit. s verlangt klare und vollstaendige Angaben und einen leicht
+    erreichbaren Weg dorthin, nicht deren Wiederholung auf jeder Seite. Das
+    Impressum ist von hier aus zweimal verlinkt.
+
+    Verloren geht dadurch nichts: die Telefonnummer steht in der obersten
+    Leiste jeder Seite, die vollstaendige Anschrift im JSON-LD jeder Seite
+    (LocalBusiness), und sichtbar auf Kontakt- und Impressumseite.
+    """
     prod = "".join(f'<li><a href="{e(C.u_cat(lang, c["id"]))}">{e(C.catT(lang, c))}</a></li>'
                    for c in C.CATS)
     return f"""<footer>
@@ -555,13 +566,8 @@ def footer(lang):
         <li><a href="{e(C.u_page(lang,'processes'))}">{e(C.t(lang,'n_process'))}</a></li>
         <li><a href="{e(C.u_page(lang,'downloads'))}">{e(C.t(lang,'n_downloads'))}</a></li>
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>
-      </ul></div>
-      <div><h2 class="fh">{e(C.t(lang,'site_name'))}</h2><ul>
-        <li class="owner">{e(co['owner'])}</li>
-        <li><a href="{e(C.u_page(lang,'contact'))}">{e(vis['street'])}, {vis['zip']} {e(vis['city'])}</a></li>
-        <li><a href="tel:{co['phone_href']}">{e(co['phone'])}</a></li>
-        <li><a href="mailto:{co['email']}">{co['email']}</a></li>
         <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_contact'))}</a></li>
+        <li><a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a></li>
       </ul></div>
     </div>
     <div class="fbar">

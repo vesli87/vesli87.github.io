@@ -34,7 +34,7 @@ TODAY = datetime.date.today().isoformat()
 
 # Verzeichnisse, die der Build vollständig verwaltet (werden vorher geleert)
 MANAGED_DIRS = ["produkte", "fr", "it", "verfahren", "downloads", "kontakt",
-                "faq", "suche", "impressum", "datenschutz"]
+                "faq", "suche", "impressum", "datenschutz", "service"]
 
 written = []
 
@@ -439,6 +439,15 @@ def main():
                               (PG.page_faq, "faq", "0.7")]:
             u, h = fn(lang)
             write(u, h); entries.append((u, C.alternates("page", key=key), prio, "monthly"))
+        # Servicebereich: Uebersicht und drei Unterseiten. Hohe Prioritaet -
+        # das ist die Leistung, die es nur hier gibt, und bisher hatte sie
+        # keine eigene Seite.
+        u, h = PG.page_service(lang)
+        write(u, h); entries.append((u, C.alternates("service"), "0.8", "monthly"))
+        for skey in C.SERVICE_KEYS:
+            u, h = PG.page_service(lang, skey)
+            write(u, h)
+            entries.append((u, C.alternates("service", key=skey), "0.8", "monthly"))
         u, h = PG.page_search(lang); write(u, h)                       # noindex → nicht in sitemap
         for kind in ("imprint", "privacy", "terms"):
             u, h = PG.page_legal(lang, kind)

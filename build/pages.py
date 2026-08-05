@@ -720,6 +720,74 @@ LEGAL = {
     "terms":   ("agb", "nav_agb", "noindex,follow"),
 }
 
+# Servicebereich: Uebersicht plus drei Unterseiten. Schluessel -> (Textpraefix,
+# Beschriftung in UI.json). Die Aufteilung ist keine Kosmetik: "Schweissgeraet
+# reparieren", "Schweissgeraet kalibrieren" und "Schweissautomation" sind drei
+# verschiedene Suchen, und eine Seite kann nur fuer eine davon die beste
+# Antwort sein. Vorher zeigten alle drei Links auf die Kontaktseite.
+SERVICE = {
+    "repair": ("svc_repair", "foot_diag"),
+    "calib":  ("svc_calib",  "foot_calib"),
+    "auto":   ("svc_auto",   "foot_auto"),
+}
+
+
+def page_service(lang, key=None):
+    """key=None -> Uebersicht, sonst repair|calib|auto."""
+    heim = (C.t(lang, "nav_home"), C.u_home(lang))
+    hub_nav, hub_url = C.t(lang, "foot_service"), C.u_service(lang)
+
+    if key is None:
+        url, alts = hub_url, C.alternates("service")
+        praefix, nav = "svc", hub_nav
+        krumen = [heim, (hub_nav, None)]
+        krumen_ld = [heim, (hub_nav, url)]
+        karten = "".join(
+            f'<a class="usp" href="{e(C.u_service(lang, k))}">'
+            f'<h2>{e(h)}</h2><p>{e(p)}</p></a>'
+            for k, h, p in C.EX[lang]["svc_items"])
+        inhalt = (f'<section class="usps"><div class="wrap">'
+                  f'<div class="usprow">{karten}</div></div></section>')
+    else:
+        praefix, navkey = SERVICE[key]
+        nav = C.t(lang, navkey)
+        url, alts = C.u_service(lang, key), C.alternates("service", key=key)
+        krumen = [heim, (hub_nav, hub_url), (nav, None)]
+        krumen_ld = [heim, (hub_nav, hub_url), (nav, url)]
+        # Der Text bringt sein eigenes <p>/<ul> mit, wie bei den Rechtstexten.
+        inhalt = ('<div class="catalog"><div class="wrap textwrap legal">'
+                  + "".join(f"<section><h2>{e(h)}</h2>{b}</section>"
+                            for h, b in C.EX[lang][f"{praefix}_body"])
+                  + "</div></div>")
+
+    title, desc = C.t(lang, f"{praefix}_title"), C.t(lang, f"{praefix}_desc")
+    body = (R.cbar(lang, crumb_items=krumen, h1=C.t(lang, f"{praefix}_h1"),
+                   desc=C.t(lang, f"{praefix}_lead"))
+            + inhalt)
+
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, title, desc),
+          R.ld_breadcrumb(krumen_ld)]
+    # Eine Dienstleistung ist kein Produkt: Service statt Product, und ohne
+    # Preis - hier gilt dieselbe Regel wie im Katalog.
+    ld.append({
+        "@type": "Service",
+        "@id": C.abs_url(url) + "#service",
+        "name": C.t(lang, f"{praefix}_h1"),
+        "description": desc,
+        "serviceType": nav,
+        "provider": {"@id": f"{C.SITE}/#organization"},
+        "areaServed": [{"@type": "Country", "name": "Schweiz"},
+                       {"@type": "Country", "name": "Liechtenstein"}],
+        "availableChannel": {
+            "@type": "ServiceChannel",
+            "serviceUrl": C.abs_url(url),
+            "servicePhone": C.COMPANY["phone"],
+            "serviceLocation": {"@id": f"{C.SITE}/#organization"},
+        },
+    })
+    return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
+                           jsonld_blocks=ld, body=body)
+
 
 def page_legal(lang, kind):
     tkey, navkey, robots = LEGAL[kind]

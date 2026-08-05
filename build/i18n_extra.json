@@ -342,7 +342,98 @@
     "<p>Diese Allgemeinen Geschäftsbedingungen haben den <strong>Stand vom 1. August 2026</strong>.</p><p>Wir können sie für künftige Verträge ändern. Für einen bereits abgeschlossenen Vertrag gilt immer die Fassung, die bei Vertragsabschluss veröffentlicht war. Die jeweils gültige Fassung steht auf dieser Seite.</p>"
    ]
   ],
-  "org_desc": "VES-TECH Swiss ist der Schweizer Händler für die Schweisstechnik und die Schneidtechnik der MAHE GmbH: Schweissgeräte für MIG/MAG, WIG/TIG und Elektrode, Plasmaschneidanlagen, CNC-Schneidtische und elektrolytische Geräte zum Reinigen und Signieren. Dazu Beratung, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung und Schweissautomation. Werkstatt und Warenannahme in Herisau AR bei der Partnerfirma Schweisstechnik Scherrer AG; Sitz und Rechnungsadresse in Bronschhofen SG. Geliefert wird in die Schweiz und nach Liechtenstein."
+  "org_desc": "VES-TECH Swiss ist der Schweizer Händler für die Schweisstechnik und die Schneidtechnik der MAHE GmbH: Schweissgeräte für MIG/MAG, WIG/TIG und Elektrode, Plasmaschneidanlagen, CNC-Schneidtische und elektrolytische Geräte zum Reinigen und Signieren. Dazu Beratung, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung und Schweissautomation. Werkstatt und Warenannahme in Herisau AR bei der Partnerfirma Schweisstechnik Scherrer AG; Sitz und Rechnungsadresse in Bronschhofen SG. Geliefert wird in die Schweiz und nach Liechtenstein.",
+  "svc_title": "Service · Reparatur, Kalibrierung und Automation | VES-TECH",
+  "svc_desc": "Reparatur, Kalibrierung nach EN 60974-14 und Automation für Schweissanlagen und Plasmaschneidanlagen. Werkstatt in Herisau AR, Beratung durch den Techniker.",
+  "svc_h1": "Service aus der Werkstatt in Herisau",
+  "svc_lead": "Diagnose, Reparatur, Kalibrierung und Automation für Schweissanlagen und Plasmaschneidanlagen. Sie sprechen mit dem Techniker, der das Gerät auch öffnet.",
+  "svc_items": [
+   [
+    "repair",
+    "Diagnose und Reparatur",
+    "Fehlersuche bis auf die Elektronik, nicht nur Baugruppentausch."
+   ],
+   [
+    "calib",
+    "Kalibrierung nach EN 60974-14",
+    "Mit Protokoll, für die werkseigene Produktionskontrolle nach EN 1090."
+   ],
+   [
+    "auto",
+    "Automation",
+    "Theta Automation und CNC-Plasmaschneidtische mit MyPlasm CNC."
+   ]
+  ],
+  "svc_repair_title": "Schweissgerät reparieren lassen · Werkstatt Herisau AR",
+  "svc_repair_desc": "Reparatur von Schweissgeräten und Plasmaschneidern in der Werkstatt in Herisau AR. Fehlersuche bis auf die Elektronik, Ersatzteile über den Hersteller MAHE.",
+  "svc_repair_h1": "Schweissgerät reparieren lassen",
+  "svc_repair_lead": "Ein Gerät, das streikt, kommt nach Absprache in die Werkstatt in Herisau AR. Sie erfahren, was es ist, bevor etwas gemacht wird.",
+  "svc_repair_body": [
+   [
+    "Was in der Werkstatt passiert",
+    "<p>Am Anfang steht die Messung, nicht der Teiletausch. Ein Gerät wird geöffnet, unter Last gemessen und der Fehler eingegrenzt: Netzteil, Leistungsteil, Steuerung, Drahtvorschub, Kühlung oder Brenner. Erst wenn klar ist, was defekt ist, wird darüber gesprochen, was zu tun ist.</p><p>Das ist der Unterschied zu einer Hotline: hier arbeitet jemand an der Elektronik selbst. Eine defekte Baugruppe ist damit nicht automatisch ein Fall für ein neues Gerät.</p>"
+   ],
+   [
+    "Welche Geräte",
+    "<p>Das gesamte MAHE-Programm: Schweissgeräte für MIG/MAG, WIG und Elektrode, Plasma-TIG, Theta Plasmaschneider, HyperCleaner Reinigungsgeräte, Schneidtische und das Zubehör dazu. Ersatzteile kommen vom Hersteller.</p><p>Bringen Sie das Gerät bitte so, wie es benutzt wird: mit Brenner, Schlauchpaket und Massekabel. Viele Fehler sitzen nicht im Gerät, sondern in der Leitung davor.</p>"
+   ],
+   [
+    "Wie es abläuft",
+    "<ul><li>Anrufen oder schreiben und den Fehler beschreiben: was passiert, wann, bei welcher Einstellung.</li><li>Gerät nach Absprache nach Herisau bringen oder schicken.</li><li>Befund, dann entscheiden Sie.</li></ul><p>Bei Geräten in der Gewährleistung wickeln wir den Fall mit MAHE ab; Sie müssen sich nicht mit dem Hersteller auseinandersetzen.</p>"
+   ],
+   [
+    "Wo",
+    "<p>Die Werkstatt ist bei unserer Partnerfirma Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Bitte nur nach vorheriger Absprache vorbeibringen. Geliefert und abgeholt wird in der ganzen Schweiz und in Liechtenstein.</p>"
+   ]
+  ],
+  "svc_calib_title": "Schweissgerät kalibrieren nach EN 60974-14 | VES-TECH",
+  "svc_calib_desc": "Kalibrierung von Schweissstromquellen nach EN 60974-14 mit Protokoll. Für Betriebe mit werkseigener Produktionskontrolle nach EN 1090.",
+  "svc_calib_h1": "Schweissgeräte kalibrieren nach EN 60974-14",
+  "svc_calib_lead": "Wer nach EN 1090 fertigt, muss nachweisen, dass die Schweissausrüstung das tut, was ihre Anzeige behauptet. Genau dafür ist die Kalibrierung da.",
+  "svc_calib_body": [
+   [
+    "Was gemessen wird",
+    "<p>Kalibrieren heisst: die Anzeige des Geräts gegen einen Messwert halten. Geprüft werden die Grössen, mit denen tatsächlich geschweisst wird: Schweissstrom und Schweissspannung, bei Drahtgeräten zusätzlich die Drahtvorschubgeschwindigkeit, jeweils über den Bereich, in dem das Gerät im Betrieb läuft.</p><p>Abweichungen werden festgehalten. Liegt das Gerät ausserhalb, wird es eingestellt, soweit es die Bauart zulässt, und danach erneut gemessen.</p>"
+   ],
+   [
+    "Warum ein Betrieb das braucht",
+    "<p>EN 1090 verlangt für tragende Bauten aus Stahl und Aluminium eine werkseigene Produktionskontrolle. Dazu gehört, dass die Schweissausrüstung geprüft und in Ordnung ist. Im Audit ist das eine der Fragen, die zuverlässig kommen, und ein Protokoll beantwortet sie schneller als jede Erklärung.</p><p>Die zugehörige Norm ist EN 60974-14. Sie beschreibt, wie Lichtbogenschweisseinrichtungen kalibriert, validiert und auf gleichbleibende Werte geprüft werden.</p>"
+   ],
+   [
+    "Was Sie bekommen",
+    "<p>Ein Kalibrierprotokoll mit den gemessenen Werten, den Sollwerten und dem Datum. Das Protokoll gehört in Ihre Unterlagen zur werkseigenen Produktionskontrolle.</p><p>Ehrlich dazugesagt: Wir sind keine nach ISO 17025 akkreditierte Kalibrierstelle. Für die werkseigene Produktionskontrolle wird das in aller Regel nicht verlangt. Ob Ihre Zertifizierungsstelle mehr sehen will, sagt Ihnen diese Stelle. Fragen Sie im Zweifel dort nach, bevor Sie den Termin machen.</p>"
+   ],
+   [
+    "Wie oft",
+    "<p>In der Praxis wird jährlich kalibriert. Massgebend ist, was in Ihrer eigenen Verfahrensanweisung steht, und was Ihre Zertifizierungsstelle verlangt. Nach einer Reparatur am Leistungsteil ist eine erneute Kalibrierung ohnehin sinnvoll.</p>"
+   ],
+   [
+    "Termin",
+    "<p>Kalibriert wird in der Werkstatt in Herisau AR, nach Vereinbarung. Mehrere Geräte an einem Termin sind sinnvoll: dann steht die Messung einmal und läuft durch. Rufen Sie an: <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+   ]
+  ],
+  "svc_auto_title": "Schweissautomation und Schneidautomation | VES-TECH Swiss",
+  "svc_auto_desc": "Automation mit MAHE: Theta Automationsstromquellen und CNC-Plasmaschneidtische MPT mit MyPlasm CNC. Aufbau, Inbetriebnahme und Einweisung.",
+  "svc_auto_h1": "Schweissautomation und Schneidautomation",
+  "svc_auto_lead": "Wenn dieselbe Naht oder derselbe Zuschnitt hundertmal gleich werden soll, macht das keine Hand. Dafür gibt es die Automationsvarianten des MAHE-Programms.",
+  "svc_auto_body": [
+   [
+    "Plasmaschneiden mit CNC",
+    "<p>Die Schneidtische MPT 3001 und MPT 2501 arbeiten mit dem System MyPlasm CNC und einer MAHE Theta Stromquelle. Der Tisch gibt es in mehreren Arbeitsbereichen; welcher passt, hängt vom Blechformat ab, das bei Ihnen wirklich durchläuft.</p><p>Die Bahnen entstehen aus Zeichnungen im DXF-Format oder im HPGL/PLT-Format; Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und die Schneidreihenfolge erzeugt die Software.</p>"
+   ],
+   [
+    "Automationsstromquellen",
+    "<p>Die Theta 60 aut und Theta 120 aut sind auf den Betrieb an einer Maschine ausgelegt und haben die passende Schnittstelle. Sie sind die Stromquelle hinter einem Portal, einem Roboter oder einem Schneidtisch.</p>"
+   ],
+   [
+    "Aufbau, Inbetriebnahme und Einweisung",
+    "<p>Aufgebaut, in Betrieb genommen und eingewiesen wird von derselben Person, die die Geräte auch repariert. Das ist bei einer Anlage, die aus Stromquelle, Steuerung, PC und Tisch besteht, kein Nebenaspekt: die Fehlersuche beginnt sonst mit der Frage, wer wofür zuständig ist.</p>"
+   ],
+   [
+    "Was zuerst zu klären ist",
+    "<ul><li>Werkstoff und Blechdicke, die tatsächlich geschnitten werden.</li><li>Grösstes Blechformat.</li><li>Platz in der Halle, Absaugung oder Wasserbett.</li><li>Netzanschluss und Druckluft.</li></ul><p>Beschreiben Sie das kurz, daraus wird ein Vorschlag, kein Katalogblatt.</p>"
+   ]
+  ]
  },
  "fr": {
   "locale": "fr_CH",
@@ -686,7 +777,98 @@
     "<p>Les présentes conditions générales sont <strong>dans leur version du 1er août 2026</strong>.</p><p>Nous pouvons les modifier pour les contrats futurs. Pour un contrat déjà conclu, la version publiée au moment de la conclusion fait toujours foi. La version en vigueur figure sur cette page.</p>"
    ]
   ],
-  "org_desc": "VES-TECH Swiss est le revendeur suisse de la technique de soudage et de découpe de MAHE GmbH : postes à souder MIG/MAG, TIG et électrode, installations de découpe plasma, tables de découpe CNC et appareils de nettoyage et de marquage électrolytiques. Avec conseil, mise en service, diagnostic, réparation, calibrage et automation du soudage. Atelier et réception des marchandises à Herisau AR chez l'entreprise partenaire Schweisstechnik Scherrer AG; siège et adresse de facturation à Bronschhofen SG. Livraison en Suisse et au Liechtenstein."
+  "org_desc": "VES-TECH Swiss est le revendeur suisse de la technique de soudage et de découpe de MAHE GmbH : postes à souder MIG/MAG, TIG et électrode, installations de découpe plasma, tables de découpe CNC et appareils de nettoyage et de marquage électrolytiques. Avec conseil, mise en service, diagnostic, réparation, calibrage et automation du soudage. Atelier et réception des marchandises à Herisau AR chez l'entreprise partenaire Schweisstechnik Scherrer AG; siège et adresse de facturation à Bronschhofen SG. Livraison en Suisse et au Liechtenstein.",
+  "svc_title": "Service · réparation, calibrage et automation | VES-TECH",
+  "svc_desc": "Réparation, calibrage selon EN 60974-14 et automation pour installations de soudage et de découpe plasma. Atelier à Herisau AR.",
+  "svc_h1": "Service depuis l’atelier de Herisau",
+  "svc_lead": "Diagnostic, réparation, calibrage et automation pour installations de soudage et de découpe plasma. Vous parlez au technicien qui ouvre aussi l’appareil.",
+  "svc_items": [
+   [
+    "repair",
+    "Diagnostic et réparation",
+    "Recherche de panne jusqu’à l’électronique, pas seulement l’échange de modules."
+   ],
+   [
+    "calib",
+    "Calibrage selon EN 60974-14",
+    "Avec procès-verbal, pour le contrôle de production en usine selon EN 1090."
+   ],
+   [
+    "auto",
+    "Automation",
+    "Theta Automation et tables de découpe plasma CNC avec MyPlasm CNC."
+   ]
+  ],
+  "svc_repair_title": "Faire réparer un poste à souder · atelier Herisau AR",
+  "svc_repair_desc": "Réparation de postes à souder et de découpeurs plasma à l’atelier de Herisau AR. Recherche de panne jusqu’à l’électronique, pièces par le fabricant MAHE.",
+  "svc_repair_h1": "Faire réparer un poste à souder",
+  "svc_repair_lead": "Un appareil en panne arrive après entente à l’atelier de Herisau AR. Vous savez ce qu’il a avant que quoi que ce soit soit entrepris.",
+  "svc_repair_body": [
+   [
+    "Ce qui se passe à l’atelier",
+    "<p>Au départ il y a la mesure, pas le remplacement de pièces. L’appareil est ouvert, mesuré en charge et la panne est circonscrite : alimentation, étage de puissance, commande, dévidoir, refroidissement ou torche. On ne parle de ce qu’il faut faire qu’une fois le défaut identifié.</p><p>C’est la différence avec une hotline : ici quelqu’un travaille lui-même sur l’électronique. Un module défectueux ne signifie donc pas automatiquement un appareil neuf.</p>"
+   ],
+   [
+    "Quels appareils",
+    "<p>Toute la gamme MAHE : postes MIG/MAG, TIG et électrode, Plasma-TIG, découpeurs plasma Theta, appareils de nettoyage HyperCleaner, tables de découpe et les accessoires. Les pièces viennent du fabricant.</p><p>Apportez l’appareil tel qu’il est utilisé : avec torche, faisceau et câble de masse. Beaucoup de pannes ne sont pas dans l’appareil mais dans ce qui le précède.</p>"
+   ],
+   [
+    "Comment cela se déroule",
+    "<ul><li>Téléphonez ou écrivez et décrivez la panne : ce qui se passe, quand, à quel réglage.</li><li>Apportez ou envoyez l’appareil à Herisau après entente.</li><li>Constat, puis c’est vous qui décidez.</li></ul><p>Pour un appareil sous garantie, nous traitons le cas avec MAHE ; vous n’avez pas à discuter avec le fabricant.</p>"
+   ],
+   [
+    "Où",
+    "<p>L’atelier se trouve chez notre entreprise partenaire Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Uniquement après entente préalable. Livraison et enlèvement dans toute la Suisse et au Liechtenstein.</p>"
+   ]
+  ],
+  "svc_calib_title": "Calibrage de postes à souder selon EN 60974-14 | VES-TECH",
+  "svc_calib_desc": "Calibrage de sources de courant de soudage selon EN 60974-14 avec procès-verbal. Pour les entreprises soumises au contrôle de production en usine EN 1090.",
+  "svc_calib_h1": "Calibrer un poste à souder selon EN 60974-14",
+  "svc_calib_lead": "Qui fabrique selon EN 1090 doit prouver que l’équipement de soudage fait ce que son affichage annonce. C’est précisément à cela que sert le calibrage.",
+  "svc_calib_body": [
+   [
+    "Ce qui est mesuré",
+    "<p>Calibrer, c’est confronter l’affichage de l’appareil à une valeur mesurée. Sont contrôlées les grandeurs avec lesquelles on soude réellement : courant et tension de soudage, et pour les postes à fil la vitesse de dévidage, sur la plage utilisée en production.</p><p>Les écarts sont consignés. Si l’appareil sort de la plage, il est réglé dans la mesure où sa construction le permet, puis mesuré à nouveau.</p>"
+   ],
+   [
+    "Pourquoi une entreprise en a besoin",
+    "<p>EN 1090 exige un contrôle de production en usine pour les structures porteuses en acier et en aluminium. Cela comprend un équipement de soudage contrôlé et en ordre. Lors d’un audit, c’est une des questions qui viennent à coup sûr, et un procès-verbal y répond plus vite que n’importe quelle explication.</p><p>La norme correspondante est EN 60974-14. Elle décrit comment les installations de soudage à l’arc sont calibrées, validées et vérifiées quant à la constance de leurs valeurs.</p>"
+   ],
+   [
+    "Ce que vous recevez",
+    "<p>Un procès-verbal de calibrage avec les valeurs mesurées, les valeurs de consigne et la date. Il a sa place dans votre dossier de contrôle de production en usine.</p><p>Dit franchement : nous ne sommes pas un service de calibrage accrédité ISO 17025. Pour le contrôle de production en usine, cela n’est en règle générale pas exigé. Si votre organisme de certification en demande davantage, c’est lui qui vous le dira. En cas de doute, renseignez-vous avant de fixer le rendez-vous.</p>"
+   ],
+   [
+    "À quelle fréquence",
+    "<p>En pratique on calibre chaque année. Ce qui compte, c’est ce que dit votre propre instruction de travail et ce qu’exige votre organisme de certification. Après une réparation sur l’étage de puissance, un nouveau calibrage est de toute façon judicieux.</p>"
+   ],
+   [
+    "Rendez-vous",
+    "<p>Le calibrage a lieu à l’atelier de Herisau AR, sur rendez-vous. Plusieurs appareils le même jour sont judicieux : la mesure est installée une fois et tout défile. Appelez : <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+   ]
+  ],
+  "svc_auto_title": "Automation du soudage et de la découpe | VES-TECH Swiss",
+  "svc_auto_desc": "Automation avec MAHE : sources Theta Automation et tables de découpe plasma CNC MPT avec MyPlasm CNC. Montage, mise en service et instruction.",
+  "svc_auto_h1": "Automation du soudage et de la découpe",
+  "svc_auto_lead": "Quand le même cordon ou la même découpe doit être identique cent fois, la main n’y suffit pas. C’est à cela que servent les versions automation de la gamme MAHE.",
+  "svc_auto_body": [
+   [
+    "Découpe plasma avec CNC",
+    "<p>Les tables MPT 3001 et MPT 2501 fonctionnent avec le système MyPlasm CNC et une source MAHE Theta. La table existe en plusieurs surfaces de travail ; laquelle convient dépend du format de tôle qui passe réellement chez vous.</p><p>Les trajectoires proviennent de dessins DXF ou HPGL/PLT ; correction de saignée, entrées et sorties et ordre de coupe sont générés par le logiciel.</p>"
+   ],
+   [
+    "Sources pour automation",
+    "<p>Les Theta 60 aut et Theta 120 aut sont conçues pour fonctionner sur une machine et disposent de l’interface correspondante. Elles sont la source derrière un portique, un robot ou une table de découpe.</p>"
+   ],
+   [
+    "Montage, mise en service et instruction",
+    "<p>Le montage, la mise en service et l’instruction sont assurés par la même personne qui répare aussi les appareils. Pour une installation composée d’une source, d’une commande, d’un PC et d’une table, ce n’est pas un détail : sinon la recherche de panne commence par la question de savoir qui est responsable de quoi.</p>"
+   ],
+   [
+    "Ce qu’il faut clarifier d’abord",
+    "<ul><li>Matériau et épaisseur réellement découpés.</li><li>Plus grand format de tôle.</li><li>Place dans l’atelier, aspiration ou bac à eau.</li><li>Raccordement au réseau et air comprimé.</li></ul><p>Décrivez-le brièvement, il en sortira une proposition, pas une fiche de catalogue.</p>"
+   ]
+  ]
  },
  "it": {
   "locale": "it_CH",
@@ -1030,6 +1212,97 @@
     "<p>Le presenti condizioni generali sono <strong>nella versione del 1° agosto 2026</strong>.</p><p>Possiamo modificarle per i contratti futuri. Per un contratto già concluso fa sempre fede la versione pubblicata al momento della conclusione. La versione in vigore si trova su questa pagina.</p>"
    ]
   ],
-  "org_desc": "VES-TECH Swiss è il rivenditore svizzero della tecnica di saldatura e di taglio di MAHE GmbH: saldatrici MIG/MAG, TIG ed elettrodo, impianti di taglio al plasma, tavoli di taglio CNC e apparecchi elettrolitici di pulitura e marcatura. Con consulenza, messa in servizio, diagnosi, riparazione, calibrazione e automazione della saldatura. Officina e accettazione merci a Herisau AR presso l'azienda partner Schweisstechnik Scherrer AG; sede e indirizzo di fatturazione a Bronschhofen SG. Consegna in Svizzera e nel Liechtenstein."
+  "org_desc": "VES-TECH Swiss è il rivenditore svizzero della tecnica di saldatura e di taglio di MAHE GmbH: saldatrici MIG/MAG, TIG ed elettrodo, impianti di taglio al plasma, tavoli di taglio CNC e apparecchi elettrolitici di pulitura e marcatura. Con consulenza, messa in servizio, diagnosi, riparazione, calibrazione e automazione della saldatura. Officina e accettazione merci a Herisau AR presso l'azienda partner Schweisstechnik Scherrer AG; sede e indirizzo di fatturazione a Bronschhofen SG. Consegna in Svizzera e nel Liechtenstein.",
+  "svc_title": "Assistenza · riparazione, calibrazione e automazione | VES-TECH",
+  "svc_desc": "Riparazione, calibrazione secondo EN 60974-14 e automazione per impianti di saldatura e taglio al plasma. Officina a Herisau AR.",
+  "svc_h1": "Assistenza dall’officina di Herisau",
+  "svc_lead": "Diagnosi, riparazione, calibrazione e automazione per impianti di saldatura e di taglio al plasma. Parlate con il tecnico che apre anche l’apparecchio.",
+  "svc_items": [
+   [
+    "repair",
+    "Diagnosi e riparazione",
+    "Ricerca guasti fino all’elettronica, non solo sostituzione di moduli."
+   ],
+   [
+    "calib",
+    "Calibrazione secondo EN 60974-14",
+    "Con verbale, per il controllo di produzione in fabbrica secondo EN 1090."
+   ],
+   [
+    "auto",
+    "Automazione",
+    "Theta Automation e tavoli di taglio al plasma CNC con MyPlasm CNC."
+   ]
+  ],
+  "svc_repair_title": "Far riparare una saldatrice · officina Herisau AR",
+  "svc_repair_desc": "Riparazione di saldatrici e inverter per taglio al plasma nell’officina di Herisau AR. Ricerca guasti fino all’elettronica, ricambi dal fabbricante MAHE.",
+  "svc_repair_h1": "Far riparare una saldatrice",
+  "svc_repair_lead": "Un apparecchio in avaria arriva su appuntamento nell’officina di Herisau AR. Sapete di che si tratta prima che venga fatto qualcosa.",
+  "svc_repair_body": [
+   [
+    "Cosa succede in officina",
+    "<p>All’inizio c’è la misura, non la sostituzione di pezzi. L’apparecchio viene aperto, misurato sotto carico e il guasto viene circoscritto: alimentazione, stadio di potenza, comando, trainafilo, raffreddamento o torcia. Solo quando è chiaro cosa è guasto si parla di cosa fare.</p><p>È la differenza rispetto a una hotline: qui qualcuno lavora davvero sull’elettronica. Un modulo guasto non significa quindi automaticamente un apparecchio nuovo.</p>"
+   ],
+   [
+    "Quali apparecchi",
+    "<p>L’intera gamma MAHE: saldatrici MIG/MAG, TIG ed elettrodo, Plasma-TIG, inverter Theta per taglio al plasma, apparecchi di pulitura HyperCleaner, tavoli di taglio e i relativi accessori. I ricambi arrivano dal fabbricante.</p><p>Portate l’apparecchio come viene usato: con torcia, fascio cavi e cavo di massa. Molti guasti non sono nell’apparecchio, ma in ciò che sta prima.</p>"
+   ],
+   [
+    "Come si svolge",
+    "<ul><li>Telefonate o scrivete e descrivete il guasto: cosa succede, quando, con quale impostazione.</li><li>Portate o spedite l’apparecchio a Herisau previo accordo.</li><li>Referto, poi decidete voi.</li></ul><p>Per apparecchi in garanzia sbrighiamo noi la pratica con MAHE; non dovete trattare con il fabbricante.</p>"
+   ],
+   [
+    "Dove",
+    "<p>L’officina si trova presso la nostra azienda partner Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Solo previo accordo. Consegna e ritiro in tutta la Svizzera e nel Liechtenstein.</p>"
+   ]
+  ],
+  "svc_calib_title": "Calibrazione saldatrici secondo EN 60974-14 | VES-TECH",
+  "svc_calib_desc": "Calibrazione di generatori di saldatura secondo EN 60974-14 con verbale. Per aziende con controllo di produzione in fabbrica secondo EN 1090.",
+  "svc_calib_h1": "Calibrare una saldatrice secondo EN 60974-14",
+  "svc_calib_lead": "Chi produce secondo EN 1090 deve dimostrare che l’attrezzatura di saldatura fa quello che il suo display afferma. La calibrazione serve esattamente a questo.",
+  "svc_calib_body": [
+   [
+    "Cosa viene misurato",
+    "<p>Calibrare significa confrontare l’indicazione dell’apparecchio con un valore misurato. Si controllano le grandezze con cui si salda davvero: corrente e tensione di saldatura, negli apparecchi a filo anche la velocità di avanzamento del filo, sull’intervallo effettivamente usato.</p><p>Gli scostamenti vengono registrati. Se l’apparecchio è fuori campo, viene regolato per quanto la costruzione lo consente e poi misurato di nuovo.</p>"
+   ],
+   [
+    "Perché un’azienda ne ha bisogno",
+    "<p>La EN 1090 richiede, per strutture portanti in acciaio e alluminio, un controllo di produzione in fabbrica. Ne fa parte un’attrezzatura di saldatura verificata e in ordine. In un audit è una delle domande che arrivano puntualmente, e un verbale risponde più in fretta di qualsiasi spiegazione.</p><p>La norma di riferimento è la EN 60974-14. Descrive come gli impianti di saldatura ad arco vengono calibrati, validati e verificati quanto alla costanza dei valori.</p>"
+   ],
+   [
+    "Cosa ricevete",
+    "<p>Un verbale di calibrazione con i valori misurati, i valori nominali e la data. Il verbale va nella documentazione del vostro controllo di produzione in fabbrica.</p><p>Detto francamente: non siamo un centro di calibrazione accreditato ISO 17025. Per il controllo di produzione in fabbrica di norma non viene richiesto. Se il vostro organismo di certificazione vuole di più, sarà lui a dirvelo. Nel dubbio informatevi prima di fissare l’appuntamento.</p>"
+   ],
+   [
+    "Ogni quanto",
+    "<p>In pratica si calibra ogni anno. Fa fede quanto scritto nella vostra istruzione di lavoro e quanto richiede il vostro organismo di certificazione. Dopo una riparazione allo stadio di potenza una nuova calibrazione è comunque sensata.</p>"
+   ],
+   [
+    "Appuntamento",
+    "<p>Si calibra nell’officina di Herisau AR, su appuntamento. Più apparecchi nello stesso giorno sono sensati: la misura viene allestita una volta sola e poi scorre. Telefonate: <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+   ]
+  ],
+  "svc_auto_title": "Automazione di saldatura e taglio | VES-TECH Swiss",
+  "svc_auto_desc": "Automazione con MAHE: generatori Theta Automation e tavoli di taglio al plasma CNC MPT con MyPlasm CNC. Montaggio, messa in servizio e istruzione.",
+  "svc_auto_h1": "Automazione di saldatura e taglio",
+  "svc_auto_lead": "Quando lo stesso cordone o lo stesso taglio deve venire uguale cento volte, la mano non basta. A questo servono le versioni per automazione della gamma MAHE.",
+  "svc_auto_body": [
+   [
+    "Taglio al plasma con CNC",
+    "<p>I tavoli MPT 3001 e MPT 2501 lavorano con il sistema MyPlasm CNC e un generatore MAHE Theta. Il tavolo esiste in più aree di lavoro; quale sia quella giusta dipende dal formato di lamiera che passa realmente da voi.</p><p>Le traiettorie nascono da disegni DXF o HPGL/PLT; correzione del solco, entrate e uscite e sequenza di taglio li genera il software.</p>"
+   ],
+   [
+    "Generatori per automazione",
+    "<p>Theta 60 aut e Theta 120 aut sono concepite per funzionare su una macchina e dispongono dell’interfaccia adatta. Sono il generatore dietro un portale, un robot o un tavolo di taglio.</p>"
+   ],
+   [
+    "Montaggio, messa in servizio e istruzione",
+    "<p>Montaggio, messa in servizio e istruzione li fa la stessa persona che ripara anche gli apparecchi. In un impianto fatto di generatore, comando, PC e tavolo non è un dettaglio: altrimenti la ricerca del guasto comincia dalla domanda di chi sia responsabile di cosa.</p>"
+   ],
+   [
+    "Cosa chiarire per primo",
+    "<ul><li>Materiale e spessore realmente tagliati.</li><li>Formato di lamiera più grande.</li><li>Spazio in officina, aspirazione o vasca ad acqua.</li><li>Allacciamento alla rete e aria compressa.</li></ul><p>Descrivetelo brevemente, ne nascerà una proposta, non una scheda di catalogo.</p>"
+   ]
+  ]
  }
 }

@@ -608,16 +608,31 @@ def slugify(s):
 SEG = {
     "de": {"root": "",   "products": "produkte", "search": "suche",     "processes": "verfahren",
            "downloads": "downloads", "contact": "kontakt", "faq": "faq",
+           "service": "service",
            "imprint": "impressum", "privacy": "datenschutz", "terms": "agb"},
     "fr": {"root": "fr", "products": "produits", "search": "recherche", "processes": "procedes",
            "downloads": "telechargements", "contact": "contact", "faq": "questions-frequentes",
+           "service": "service",
            "imprint": "mentions-legales", "privacy": "protection-des-donnees",
            "terms": "conditions-generales"},
     "it": {"root": "it", "products": "prodotti", "search": "ricerca",   "processes": "processi",
            "downloads": "download", "contact": "contatto", "faq": "domande-frequenti",
+           "service": "assistenza",
            "imprint": "note-legali", "privacy": "protezione-dati",
            "terms": "condizioni-generali"},
 }
+
+# Unterseiten des Servicebereichs, je auf eigener URL. Wer „Schweissgeraet
+# kalibrieren" sucht, sucht etwas anderes als wer „Schweissgeraet reparieren"
+# sucht - eine Seite kann nur fuer eine Absicht die beste Antwort sein.
+# Vorher zeigten alle drei Servicelinks der Fusszeile auf /kontakt/; damit gab
+# es zu keinem dieser Begriffe eine Seite, die davon handelt.
+SERVICE_SEG = {
+    "de": {"repair": "reparatur",  "calib": "kalibrierung", "auto": "automation"},
+    "fr": {"repair": "reparation", "calib": "calibrage",    "auto": "automation"},
+    "it": {"repair": "riparazione", "calib": "calibrazione", "auto": "automazione"},
+}
+SERVICE_KEYS = ("repair", "calib", "auto")
 
 CAT_SLUG = {
     "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici"},
@@ -661,13 +676,19 @@ def u_page(lang, key):
     return _j(SEG[lang]["root"], SEG[lang][key])
 
 
+def u_service(lang, key=None):
+    """/service/ und /service/<reparatur|kalibrierung|automation>/"""
+    return _j(SEG[lang]["root"], SEG[lang]["service"],
+              SERVICE_SEG[lang][key] if key else None)
+
+
 def abs_url(path):
     return SITE + path
 
 
 # Für den Sprachumschalter: dieselbe Seite in allen Sprachen
 def alternates(kind, **kw):
-    """kind: home|products|cat|sub|prod|page  -> {lang: path}"""
+    """kind: home|products|cat|sub|prod|page|service  -> {lang: path}"""
     out = {}
     for l in LANGS:
         if kind == "home":       out[l] = u_home(l)
@@ -676,4 +697,5 @@ def alternates(kind, **kw):
         elif kind == "sub":      out[l] = u_sub(l, kw["cat_id"], kw["sub"])
         elif kind == "prod":     out[l] = u_prod(l, kw["p"])
         elif kind == "page":     out[l] = u_page(l, kw["key"])
+        elif kind == "service":  out[l] = u_service(l, kw.get("key"))
     return out

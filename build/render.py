@@ -559,10 +559,10 @@ def footer(lang):
         <p>{e(C.t(lang,'foot_brand'))}</p></div>
       <div><h2 class="fh">{e(C.t(lang,'foot_products'))}</h2><ul>{prod}
         <li><a href="{e(C.u_products(lang))}">{e(C.t(lang,'nav_all_products'))}</a></li></ul></div>
-      <div><h2 class="fh">{e(C.t(lang,'foot_service'))}</h2><ul>
-        <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_diag'))}</a></li>
-        <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_calib'))}</a></li>
-        <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_auto'))}</a></li>
+      <div><h2 class="fh"><a href="{e(C.u_service(lang))}">{e(C.t(lang,'foot_service'))}</a></h2><ul>
+        <li><a href="{e(C.u_service(lang,'repair'))}">{e(C.t(lang,'foot_diag'))}</a></li>
+        <li><a href="{e(C.u_service(lang,'calib'))}">{e(C.t(lang,'foot_calib'))}</a></li>
+        <li><a href="{e(C.u_service(lang,'auto'))}">{e(C.t(lang,'foot_auto'))}</a></li>
         <li><a href="{e(C.u_page(lang,'processes'))}">{e(C.t(lang,'n_process'))}</a></li>
         <li><a href="{e(C.u_page(lang,'downloads'))}">{e(C.t(lang,'n_downloads'))}</a></li>
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>

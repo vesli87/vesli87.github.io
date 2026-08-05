@@ -413,7 +413,7 @@ Passendes Zubehör: RC 100 DS, MT260 V, MT170 V, Elektrodenkabel 25–90 mm², M
 ### MAHE PlasmaTIG
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
 Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
-Mikroplasma- und Plasmastromquelle für feinste Schweissungen.
+Stromquelle für Mikroplasma und Plasma, für feinste Schweissungen.
 Besonderheiten: Plasma TIG Schweissen; MMA Elektroden Schweissen; WIG HF Schweissen; WIG Lift Arc Schweissen; Arc Force; Anti Stick; Up Slope; Down Slope; HF Start on / off; 5 Meter Zuleitungskabel; Mikroregler für die Gasmenge; Interface.
 Ausstattung: Verfahren: Plasma / Mikroplasma; Einsatz: Feinblech bis Industrie.
 
@@ -756,7 +756,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 ### MAHE HyperCleaner CT 200
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERCLEANER-CT200 · Preis: auf Anfrage (CHF)
-Kombiniertes WIG-Schweiss- und Reinigungsgerät.
+Kombiniertes Gerät zum WIG-Schweissen und Reinigen.
 Besonderheiten: Multiprozess WIG und Reinigen; WIG Schweissen mit 200A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
 Ausstattung: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
 Werkstoffe: INOX.
@@ -849,7 +849,7 @@ Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattaus
 ### MAHE STT 30
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt30/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT30 · Preis: auf Anfrage (CHF)
-Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.
+Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte.
 Ausstattung: Für: i-TIG, Beta, Omega, MMS; Maße (LxBxH): 625×600×1050 mm; Gewicht: 22 kg; Gasflasche: ja.
 
 ### MAHE STT 35
@@ -909,19 +909,19 @@ Ausstattung: Typ: Fussfernregler; Für: MAHE WIG.
 ### MAHE RC 5
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc5/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC5 · Preis: auf Anfrage (CHF)
-Handfernregler für alle MAHE WIG- und MMA-Geräte.
+Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.
 Ausstattung: Typ: Handfernregler; Für: MAHE WIG · MMA.
 
 ### MAHE RC 15
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc15/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC15 · Preis: auf Anfrage (CHF)
-Handfernregler mit Up/Down- und Start/Stopp-Taste.
+Handfernregler mit Up/Down-Taste und Start/Stopp-Taste.
 Ausstattung: Typ: Handfernregler; Funktion: Up/Down · Start/Stopp.
 
 ### MAHE RC 100
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc100/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC100 · Preis: auf Anfrage (CHF)
-Handfernregler für alle MAHE WIG- und MMA-Geräte.
+Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.
 Ausstattung: Typ: Handfernregler; Für: MAHE WIG · MMA.
 
 ### MAHE RC 100 DS
@@ -933,7 +933,7 @@ Ausstattung: Typ: Handfernregler; Für: Delta Digital DS.
 ### MAHE MCU 1
 URL: https://www.ves-tech.ch/produkte/zubehoer/mcu1/
 Kategorie: Zubehör / Werkstattausrüstung · Typ: Kalibrierung · Art.-Nr.: MCU1 · Preis: auf Anfrage (CHF)
-MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht.
+MAHE Kalibriergerät zum Kalibrieren und Validieren, mit grossen Volt-/Ampere-Anzeigen, leicht.
 Ausstattung: Funktion: Kalibrieren / Validieren; Anzeige: Volt & Ampere (gross); Gewicht: 16,5 kg.
 
 ### MAHE USB 2in1 Programmierer
@@ -1109,7 +1109,7 @@ Ausstattung: Für: HyperMIG X; Verbindet: Stromquelle mit Vorschubkoffer; Länge
 ## Schweissverfahren von MAHE
 
 ### MIS: Spritzerfrei
-Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung, dadurch wenig Nacharbeit.
+Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.
 
 ### Doppelpuls
 Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
@@ -1134,7 +1134,7 @@ Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkont
 ## Häufige Fragen und Antworten
 
 ### Was kostet ein MAHE Schweissgerät bei VES-TECH Swiss?
-Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (luft- oder wassergekühlt), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung.
+Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (mit Luft oder mit Wasser), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung.
 
 ### Welches Schweissverfahren brauche ich für Aluminium?
 Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte, sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht.
@@ -1152,7 +1152,7 @@ Die Theta-Serie deckt den Bereich von etwa 15 mm bis 80 mm Trennschnitt ab: Thet
 Ja. Die Werkstatt in Herisau AR, bei unserer Partnerfirma Schweisstechnik Scherrer AG, übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39.
 
 ### Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?
-EN 1090 ist die europäische Norm für die Ausführung von tragenden Stahl- und Aluminiumtragwerken. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Prüf- und Konformitätspaket, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat.
+EN 1090 ist die europäische Norm für die Ausführung von tragenden Tragwerken aus Stahl und Aluminium. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Paket für Prüfung und Konformität, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat.
 
 ### Wie schnell erhalte ich ein Angebot?
 In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus.

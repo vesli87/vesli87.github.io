@@ -39,7 +39,7 @@
 - [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. (MMA)
 - [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
 - [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
-- [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): Mikroplasma- und Plasmastromquelle für feinste Schweissungen. (Plasma TIG)
+- [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): Stromquelle für Mikroplasma und Plasma, für feinste Schweissungen. (Plasma TIG)
 
 ### Plasmaschneiden
 - [MAHE Theta 40](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/): Leichtes 230-V-Plasmaschneidgerät für die Werkstatt. (Plasma Cut)
@@ -56,7 +56,7 @@
 - [MAHE HyperCleaner ST](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/): Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse. (Cleaner)
 - [MAHE HyperCleaner ST Speed](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/): Leistungsstarker 2500-W-Inverter für schnelle Reinigung. (Cleaner)
 - [MAHE HyperCleaner ST Plus](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/): Leistungsstarker 4000-W-Inverter für den Industrieeinsatz. (Cleaner)
-- [MAHE HyperCleaner CT 200](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/): Kombiniertes WIG-Schweiss- und Reinigungsgerät. (WIG + Cleaner)
+- [MAHE HyperCleaner CT 200](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/): Kombiniertes Gerät zum WIG-Schweissen und Reinigen. (WIG + Cleaner)
 - [MAHE HCS 1](https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/): Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz. (Signieren)
 - [MAHE MLF 100](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/): Gerät zur automatischen Dosierung von Reinigungsflüssigkeit. (Dosierung)
 - [MAHE Reinigungselektrolyt Rapid R1](https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/): Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte. (Reinigung)
@@ -66,7 +66,7 @@
 - [MAHE Signierelektrolyt M1](https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/): Elektrolyt zum elektrochemischen Signieren und Markieren von Metall. (Signieren)
 
 ### Zubehör
-- [MAHE STT 30](https://www.ves-tech.ch/produkte/zubehoer/stt30/): Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte. (Fahrwagen)
+- [MAHE STT 30](https://www.ves-tech.ch/produkte/zubehoer/stt30/): Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte. (Fahrwagen)
 - [MAHE STT 35](https://www.ves-tech.ch/produkte/zubehoer/stt35/): Fahrwagen ohne Gasflaschenhalter für MMA und Plasma. (Fahrwagen)
 - [MAHE MPF 02](https://www.ves-tech.ch/produkte/zubehoer/mpf02/): Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte. (Fahrwagen)
 - [MAHE MHCT 01](https://www.ves-tech.ch/produkte/zubehoer/mhct01/): Fahrwagen speziell für Reinigungsgeräte. (Fahrwagen)
@@ -76,11 +76,11 @@
 - [MAHE DVS 410](https://www.ves-tech.ch/produkte/zubehoer/dvs410/): Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie. (Vorschub)
 - [MAHE DVL 420](https://www.ves-tech.ch/produkte/zubehoer/dvl420/): Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie. (Vorschub)
 - [MAHE FRC 5](https://www.ves-tech.ch/produkte/zubehoer/frc5/): Fussfernregler für alle MAHE WIG-Geräte. (Fernregler)
-- [MAHE RC 5](https://www.ves-tech.ch/produkte/zubehoer/rc5/): Handfernregler für alle MAHE WIG- und MMA-Geräte. (Fernregler)
-- [MAHE RC 15](https://www.ves-tech.ch/produkte/zubehoer/rc15/): Handfernregler mit Up/Down- und Start/Stopp-Taste. (Fernregler)
-- [MAHE RC 100](https://www.ves-tech.ch/produkte/zubehoer/rc100/): Handfernregler für alle MAHE WIG- und MMA-Geräte. (Fernregler)
+- [MAHE RC 5](https://www.ves-tech.ch/produkte/zubehoer/rc5/): Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte. (Fernregler)
+- [MAHE RC 15](https://www.ves-tech.ch/produkte/zubehoer/rc15/): Handfernregler mit Up/Down-Taste und Start/Stopp-Taste. (Fernregler)
+- [MAHE RC 100](https://www.ves-tech.ch/produkte/zubehoer/rc100/): Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte. (Fernregler)
 - [MAHE RC 100 DS](https://www.ves-tech.ch/produkte/zubehoer/rc100ds/): Handfernregler speziell für Delta-Digital-DS-Maschinen. (Fernregler)
-- [MAHE MCU 1](https://www.ves-tech.ch/produkte/zubehoer/mcu1/): MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht. (Kalibrierung)
+- [MAHE MCU 1](https://www.ves-tech.ch/produkte/zubehoer/mcu1/): MAHE Kalibriergerät zum Kalibrieren und Validieren, mit grossen Volt-/Ampere-Anzeigen, leicht. (Kalibrierung)
 - [MAHE USB 2in1 Programmierer](https://www.ves-tech.ch/produkte/zubehoer/usb2in1/): Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software. (Programmierung)
 - [MAHE Elektrodenkabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/): Elektrodenkabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
 - [MAHE Massekabel 10 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel/): Massekabel für die HyperCleaner-Reinigungsgeräte. (Kabel)
@@ -111,7 +111,7 @@
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 
 ## Verfahren
-- MIS: Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Flanken- und Wurzelerfassung, dadurch wenig Nacharbeit.
+- MIS: Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.
 - Doppelpuls: Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
 - HyperPuls: Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.
 - HyperForce: Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.

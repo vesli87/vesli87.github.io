@@ -261,6 +261,24 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
    „Name A–Z", „Ziff. 2–4 UWG" — das sind Messwerte, Zeiten und Verweise, kein
    Satzzeichen. Ebenso bleibt `core.py::SPEC_EMPTY`: ein „–" in einer
    Tabellenzelle heisst „gibt es an diesem Modell nicht".
+3b. **Kein hängender Bindestrich** (Ergänzungsstrich) in eigenen Texten. Aus
+   „MAHE-Schweiss-, Schneid-, Reinigungs- und Automationssysteme" wurde „Alle
+   Anlagen von MAHE zum Schweissen, Schneiden, Reinigen und Automatisieren";
+   aus „Prüf- und Konformitätspaket" wurde „Paket für Prüfung und Konformität".
+   Ausgeschrieben steht dasselbe da, nur ruhiger. **Normale
+   Kompositum-Bindestriche bleiben** — `VES-TECH`, „E-Mail",
+   „CNC-Plasmaschneidtisch", „MAHE-Geräteprogramm": ohne sie wäre es falsches
+   Deutsch. Nicht angefasst werden ausserdem `HL*.json` und
+   `PANEL_HL_DEVICE.json` (wörtlich von MAHE, `verify_mahe.py` gleicht sie ab),
+   der amtliche Name „Eidgenössischer Datenschutz- und
+   Öffentlichkeitsbeauftragter" und „DC+ und DC- Schweissen" — Letzteres ist
+   die Polarität, kein Bindestrich.
+3c. **MAHE ist mehr als Schweisstechnik.** Der Hersteller baut auch
+   Schneidtechnik (Plasma, CNC-Schneidtische), elektrolytische Reinigung und
+   Automation. Wo die Firma oder das Programm als Ganzes beschrieben wird —
+   `home_h1`, `hero_lead`, `org_desc`, `tagline`, `kontakt_desc` — werden alle
+   vier genannt. „Händler für MAHE-Schweisstechnik" verkauft das eigene
+   Programm unter Wert.
 4. Neue Prozess-Icons im Stil blaue Kachel `#23457f` + weisses Piktogramm,
    `tile:true`.
 5. Neue Produkte folgen dem `P`-Schema; Unterkategorie in `CATS` ergänzen und

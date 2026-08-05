@@ -208,7 +208,7 @@
   "vt": "Plasma TIG",
   "name": "PlasmaTIG",
   "img": "2019/10/plasmatig-300x300.png",
-  "desc": "Mikroplasma- und Plasmastromquelle für feinste Schweissungen.",
+  "desc": "Stromquelle für Mikroplasma und Plasma, für feinste Schweissungen.",
   "specs": {
    "Verfahren": "Plasma / Mikroplasma",
    "Strombereich": "20 – 400 A",
@@ -404,7 +404,7 @@
   "vt": "WIG + Cleaner",
   "name": "HyperCleaner CT 200",
   "img": "2021/04/HyperCleaner-CT200-SET-300x189.png",
-  "desc": "Kombiniertes WIG-Schweiss- und Reinigungsgerät.",
+  "desc": "Kombiniertes Gerät zum WIG-Schweissen und Reinigen.",
   "specs": {
    "Verfahren": "WIG + Reinigung",
    "Kombi": "2-in-1",
@@ -521,7 +521,7 @@
   "vt": "Fahrwagen",
   "name": "STT 30",
   "img": "2020/03/STT30-300x300.png",
-  "desc": "Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.",
+  "desc": "Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte.",
   "specs": {
    "Für": "i-TIG, Beta, Omega, MMS",
    "Maße (LxBxH)": "625×600×1050 mm",
@@ -660,7 +660,7 @@
   "vt": "Fernregler",
   "name": "RC 5",
   "img": "2020/03/rc5-300x300.png",
-  "desc": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+  "desc": "Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.",
   "specs": {
    "Typ": "Handfernregler",
    "Für": "MAHE WIG · MMA"
@@ -673,7 +673,7 @@
   "vt": "Fernregler",
   "name": "RC 15",
   "img": "2020/03/rc15-300x300.png",
-  "desc": "Handfernregler mit Up/Down- und Start/Stopp-Taste.",
+  "desc": "Handfernregler mit Up/Down-Taste und Start/Stopp-Taste.",
   "specs": {
    "Typ": "Handfernregler",
    "Funktion": "Up/Down · Start/Stopp"
@@ -686,7 +686,7 @@
   "vt": "Fernregler",
   "name": "RC 100",
   "img": "2020/03/rc100-300x300.png",
-  "desc": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+  "desc": "Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.",
   "specs": {
    "Typ": "Handfernregler",
    "Für": "MAHE WIG · MMA"
@@ -712,7 +712,7 @@
   "vt": "Kalibrierung",
   "name": "MCU 1",
   "img": "2019/10/mcu11-300x300.png",
-  "desc": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht.",
+  "desc": "MAHE Kalibriergerät zum Kalibrieren und Validieren, mit grossen Volt-/Ampere-Anzeigen, leicht.",
   "specs": {
    "Funktion": "Kalibrieren / Validieren",
    "Anzeige": "Volt & Ampere (gross)",

@@ -6720,7 +6720,7 @@
     "it": "Plasma TIG"
    },
    "description": {
-    "de": "Mikroplasma- und Plasmastromquelle für feinste Schweissungen.",
+    "de": "Stromquelle für Mikroplasma und Plasma, für feinste Schweissungen.",
     "fr": "Source microplasma et plasma pour les soudures les plus fines.",
     "it": "Generatore microplasma e plasma per saldature finissime."
    },
@@ -11464,7 +11464,7 @@
     "it": "Pulizia"
    },
    "description": {
-    "de": "Kombiniertes WIG-Schweiss- und Reinigungsgerät.",
+    "de": "Kombiniertes Gerät zum WIG-Schweissen und Reinigen.",
     "fr": "Appareil combiné de soudage TIG et de nettoyage.",
     "it": "Apparecchio combinato di saldatura TIG e pulizia."
    },
@@ -12508,7 +12508,7 @@
     "it": "Carrelli"
    },
    "description": {
-    "de": "Fahrwagen mit Gasflaschenhalter für WIG- und MIG-Geräte.",
+    "de": "Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte.",
     "fr": "Chariot avec support de bouteille pour appareils TIG et MIG.",
     "it": "Carrello con supporto bombola per apparecchi TIG e MIG."
    },
@@ -13215,7 +13215,7 @@
     "it": "Telecomandi"
    },
    "description": {
-    "de": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+    "de": "Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.",
     "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
     "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
    },
@@ -13283,7 +13283,7 @@
     "it": "Telecomandi"
    },
    "description": {
-    "de": "Handfernregler mit Up/Down- und Start/Stopp-Taste.",
+    "de": "Handfernregler mit Up/Down-Taste und Start/Stopp-Taste.",
     "fr": "Télécommande manuelle avec touches Up/Down et Start/Stop.",
     "it": "Telecomando manuale con tasti Up/Down e Start/Stop."
    },
@@ -13351,7 +13351,7 @@
     "it": "Telecomandi"
    },
    "description": {
-    "de": "Handfernregler für alle MAHE WIG- und MMA-Geräte.",
+    "de": "Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.",
     "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
     "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
    },
@@ -13487,7 +13487,7 @@
     "it": "Attrezzatura officina"
    },
    "description": {
-    "de": "MAHE Kalibriergerät für Kalibrier- und Validierarbeiten, mit grossen Volt-/Ampere-Anzeigen, leicht.",
+    "de": "MAHE Kalibriergerät zum Kalibrieren und Validieren, mit grossen Volt-/Ampere-Anzeigen, leicht.",
     "fr": "Calibrateur MAHE pour calibrage et validation, grands affichages Volt/Ampère.",
     "it": "Calibratore MAHE per calibrazione e validazione, ampi display Volt/Ampere."
    },

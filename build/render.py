@@ -54,6 +54,48 @@ HERO2_SRC = "/assets/img/hero-mpt-1536.webp"
 CSS_URL = _ver("/assets/css/site.css")
 JS_URL = _ver("/assets/js/app.js")
 
+# --------------------------------------------------------------------------
+# Sicherheit im <head>
+#
+# GitHub Pages laesst keine eigenen HTTP-Kopfzeilen zu. Was per <meta> geht,
+# steht hier; was nur als Kopfzeile ginge (X-Frame-Options,
+# X-Content-Type-Options, HSTS), geht auf dieser Plattform gar nicht.
+#
+# Die Richtlinie ist so eng, wie es die Seite zulaesst. Gemessen am 05.08.2026:
+# alle Ressourcen kommen von der eigenen Domain, ausser den Herstellerbildern
+# von mahe-online.de (Rueckfall im onerror des Bildes) und dem Formulardienst
+# api.web3forms.com.
+#
+# 'unsafe-inline' steht bewusst und nicht aus Bequemlichkeit drin:
+#   * script  - 306 Seiten tragen ein onerror-Attribut am Bild. Ereignis-
+#               Attribute lassen sich nicht per Hash erlauben. Wer sie
+#               loswerden will, verlegt den Rueckfall nach app.js; dann kann
+#               'unsafe-inline' weg und die Richtlinie wird deutlich schaerfer.
+#   * style   - die <noscript>-Bloecke und wenige style="…"-Attribute.
+# Auch mit 'unsafe-inline' bringt die Richtlinie etwas: kein fremdes Skript
+# laesst sich nachladen, nichts an eine fremde Adresse senden (connect-src),
+# kein <base> unterschieben, keine Plugins, kein fremdes Formularziel.
+CSP = "; ".join([
+    "default-src 'self'",
+    "base-uri 'self'",
+    "object-src 'none'",
+    "frame-src 'none'",
+    "img-src 'self' https://mahe-online.de",
+    "script-src 'self' 'unsafe-inline'",
+    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self'",
+    "connect-src 'self' https://api.web3forms.com",
+    "form-action 'self'",
+    "upgrade-insecure-requests",
+])
+
+SECURITY_META = (
+    f'<meta http-equiv="Content-Security-Policy" content="{CSP}">\n'
+    # Beim Klick auf ein Herstellerdokument erfaehrt mahe-online.de sonst,
+    # von welcher Unterseite aus verlinkt wurde. Der Domainname genuegt.
+    '<meta name="referrer" content="strict-origin-when-cross-origin">'
+)
+
 
 # --------------------------------------------------------------------------
 # Kleine Helfer
@@ -401,6 +443,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
     og_image = og_image or f"{C.SITE}/assets/img/hero.jpg"
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{SECURITY_META}
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="{e(robots)}">

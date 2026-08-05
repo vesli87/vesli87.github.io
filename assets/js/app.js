@@ -13,6 +13,18 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var t = function (k, d) { return T[k] || d || k; };
 
+  /* Adressen aus dem localStorage sind nicht vertrauenswuerdig: dort schreibt
+     zwar normalerweise nur diese Seite, aber ein href="javascript:…" waere
+     anklickbarer Schadcode, und esc() allein verhindert das nicht - es
+     maskiert Anfuehrungszeichen, nicht das Schema. Erlaubt ist deshalb nur,
+     was diese Seite selbst erzeugt: ein eigener Pfad oder https. */
+  function safeUrl(u) {
+    u = String(u == null ? '' : u).trim();
+    if (/^\/[^\/]/.test(u)) return u;
+    if (/^https:\/\//i.test(u)) return u;
+    return '#';
+  }
+
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -82,13 +94,13 @@
     if (form) form.hidden = false;
     box.innerHTML = cart.map(function (x) {
       return '<div class="citem">' +
-        '<a class="th" href="' + esc(x.url || '#') + '">' +
-        (x.img ? '<img src="' + esc(x.img) + '" alt="" width="60" height="60" loading="lazy">' : '') +
+        '<a class="th" href="' + esc(safeUrl(x.url)) + '">' +
+        (x.img ? '<img src="' + esc(safeUrl(x.img)) + '" alt="" width="60" height="60" loading="lazy">' : '') +
         '</a>' +
-        '<div class="n"><a href="' + esc(x.url || '#') + '"><b>' + esc(x.name) + '</b></a>' +
+        '<div class="n"><a href="' + esc(safeUrl(x.url)) + '"><b>' + esc(x.name) + '</b></a>' +
         '<span>' + esc(t('poa')) + '</span>' +
         '<span class="qty"><button type="button" data-qty="-" data-id="' + esc(x.id) + '" aria-label="−">−</button>' +
-        '<output>' + (x.qty || 1) + '</output>' +
+        '<output>' + (Math.max(1, Math.min(99, parseInt(x.qty, 10) || 1))) + '</output>' +
         '<button type="button" data-qty="+" data-id="' + esc(x.id) + '" aria-label="+">+</button></span></div>' +
         '<button class="rm" type="button" data-rm="' + esc(x.id) + '" aria-label="✕">✕</button></div>';
     }).join('');

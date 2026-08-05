@@ -464,6 +464,62 @@ die Sichtbarkeit.
    Marke, die MAHE-Partnerschaft, die Kundenbeziehungen und der Rang bei Google.
    Wer die Dateien kopiert, hat davon nichts.
 
+### 15a. Sicherheitsstand (geprüft am 05.08.2026)
+
+Kopierschutz ist das eine, Sicherheit das andere — und dort lässt sich wirklich
+etwas tun. Stand nach der Prüfung:
+
+**Gut, weil die Bauart es hergibt.** Kein Server, keine Datenbank, kein
+Anmelden, kein Node und kein Paket aus dem Netz. Damit fallen die häufigsten
+Einfallstore weg: SQL-Injection, Rechteausweitung, verwundbare Abhängigkeiten,
+kompromittierte npm-Pakete. Der gesamte Bestand wird beim Build erzeugt und
+liegt statisch da.
+
+**Geprüft und in Ordnung:**
+
+| Punkt | Befund |
+|---|---|
+| Zugangsdaten in der Git-Historie | keine, nie eine `.env` eingecheckt |
+| GITHUB_TOKEN im Workflow | `contents: read`, Standard auf `read` |
+| Fremde GitHub-Actions | nur offizielle `actions/*` |
+| SPF | `v=spf1 -all` — die Domain versendet keine Mail |
+| DMARC | `v=DMARC1; p=reject` — schärfste Stufe |
+| `target="_blank"` | alle 579 mit `rel="noopener"` |
+| XSS über `?q=` | `esc()` vor dem Hervorheben, Überschrift als `textContent` |
+
+**Behoben am 05.08.2026:**
+
+- **Content-Security-Policy** als `<meta>` (siehe `render.py::CSP`) und
+  `<meta name="referrer" content="strict-origin-when-cross-origin">`.
+- **Anfrageliste gehärtet.** Die Liste liegt im `localStorage` und wurde per
+  `innerHTML` gezeichnet. `esc()` maskiert Anführungszeichen, aber nicht das
+  Schema — ein `href="javascript:…"` wäre anklickbarer Schadcode geblieben.
+  Neu prüft `safeUrl()` in `app.js`, dass eine Adresse ein eigener Pfad oder
+  `https` ist, sonst wird `#` daraus. Die Menge geht als `parseInt` ins HTML,
+  nicht als Zeichenkette. Gegenprobe mit manipuliertem `localStorage`:
+  0 eingeschleuste Skripte.
+- Das letzte `style="…"`-Attribut ist in eine Klasse gewandert.
+
+**Was auf GitHub Pages nicht geht.** Eigene HTTP-Kopfzeilen lassen sich dort
+nicht setzen. Es fehlen deshalb dauerhaft `X-Frame-Options`,
+`X-Content-Type-Options` und `HSTS`; `frame-ancestors` wirkt im `<meta>` nicht.
+Praktisch heisst das: die Seite lässt sich in einen fremden Rahmen setzen. Für
+einen Katalog ohne Anmeldung ist das hinnehmbar. Wer es abstellen will, braucht
+ein Hosting mit eigenen Kopfzeilen (z. B. Infomaniak oder Cloudflare davor).
+
+**Zwei offene Punkte, bewusst nicht erledigt:**
+
+1. **`'unsafe-inline'` in der CSP.** 306 Seiten tragen ein `onerror`-Attribut am
+   Bild (Rückfall auf mahe-online.de). Ereignis-Attribute lassen sich nicht per
+   Hash erlauben. Wer den Rückfall nach `app.js` verlegt — ein
+   `error`-Lauscher in der Aufsetzphase —, kann `'unsafe-inline'` streichen und
+   die Richtlinie wird deutlich schärfer.
+2. **CAA-Eintrag fehlt.** Ohne ihn darf jede Zertifizierungsstelle ein
+   Zertifikat für `ves-tech.ch` ausstellen. Mit einem CAA-Eintrag nur noch die
+   eingetragene. Bei Infomaniak in der DNS-Zone:
+   `ves-tech.ch. CAA 0 issue "letsencrypt.org"` (GitHub Pages nutzt Let's
+   Encrypt). Prüfen: `dig +short CAA ves-tech.ch`.
+
 ## 16. Offene Punkte
 
 - Web3Forms-Key eintragen (sonst `mailto:`-Fallback)

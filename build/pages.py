@@ -611,7 +611,7 @@ def page_downloads(lang):
                                       (C.t(lang, "n_downloads"), None)],
                    h1=C.t(lang, "dl_h1"), desc=C.t(lang, "dl_sub"))
             + f'<div class="catalog"><div class="wrap">'
-              f'<div class="dlrow" style="max-width:680px">{items}</div></div></div>')
+              f'<div class="dlrow dlrow-weit">{items}</div></div></div>')
     ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "dl_title"), C.t(lang, "dl_desc")),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "n_downloads"), url)])]

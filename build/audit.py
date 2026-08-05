@@ -25,6 +25,7 @@ import pathlib
 import re
 import subprocess
 import sys
+import time
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
@@ -153,18 +154,39 @@ def main():
         urls = re.findall(r"<loc>([^<]+)</loc>", (ROOT / "sitemap.xml").read_text("utf-8"))
 
         def head(u):
-            r = subprocess.run(["curl", "-sS", "-o", "/dev/null", "--max-time", "25",
-                                "-w", "%{http_code}", u], capture_output=True, text=True)
-            return u, r.stdout.strip()
+            """Eine URL abfragen, bei 5xx/429 nachfassen.
 
-        with cf.ThreadPoolExecutor(max_workers=12) as ex:
+            GitHub Pages drosselt paralleles Crawlen mit 503. Das ist keine
+            kaputte Seite: dieselbe URL antwortet Sekunden spaeter mit 200.
+            Ohne diese Wiederholung meldete die Pruefung zufaellige Seiten als
+            Fehler - und ein Werkzeug, das mal meckert und mal nicht, liest
+            irgendwann niemand mehr. Ein echter Ausfall haelt drei Versuche
+            mit wachsender Pause durch.
+            """
+            code = ""
+            for versuch in range(3):
+                r = subprocess.run(["curl", "-sS", "-o", "/dev/null", "--max-time", "25",
+                                    "-w", "%{http_code}", u], capture_output=True, text=True)
+                code = r.stdout.strip()
+                if not (code.startswith("5") or code == "429"):
+                    return u, code
+                time.sleep(1.5 * (versuch + 1))
+            return u, code
+
+        # Weniger gleichzeitige Anfragen: die Drosselung faengt erst darueber an.
+        with cf.ThreadPoolExecutor(max_workers=6) as ex:
             for u, code in ex.map(head, urls):
                 if code != "200":
                     bad(u.replace(C.SITE, ""), f"live HTTP {code}")
 
+        # http muss auf https umleiten. Bis zum 05.08.2026 stand hier "200":
+        # in der Pages-Konfiguration war "Enforce HTTPS" aus, jede Seite war
+        # also auch unverschluesselt erreichbar. Ahrefs crawlte daraufhin die
+        # http-Fassung, und die Datenschutzerklaerung behauptete zu Unrecht,
+        # es werde ausschliesslich ueber HTTPS ausgeliefert.
         for u, want in [("https://ves-tech.ch/", "301"),
                         ("https://vesli87.github.io/faq/", "301"),
-                        ("http://www.ves-tech.ch/", "200")]:
+                        ("http://www.ves-tech.ch/", "301")]:
             r = subprocess.run(["curl", "-sS", "-o", "/dev/null", "--max-time", "25",
                                 "-w", "%{http_code}", u], capture_output=True, text=True)
             if r.stdout.strip() != want:

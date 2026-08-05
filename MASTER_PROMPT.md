@@ -22,19 +22,34 @@
   (Schweissgeräte, Plasmaschneiden, elektrolytische Reinigung, Zubehör).
   Katalog- und Anfrageseite, **kein** Checkout.
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
-  - Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz
-  - +41 76 710 91 39 · `vestechswiss@gmail.com` · Mo–Fr 07:30–17:30
-  - (`info@ves-tech.ch` erst wieder eintragen, wenn die Domain samt Postfach steht)
+  - Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau (AR) — bei der
+    Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung.
+    Das ist die **Besucheradresse**: sie steht im JSON-LD, in `geo.*` und im
+    Google-Unternehmensprofil, und die drei müssen übereinstimmen
+    (Quelle: `build/core.py::WORKSHOP`).
+  - Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz —
+    nur im Impressum, in AGB/Datenschutz und auf der Kontaktseite
+  - +41 76 710 91 39 · `info@ves-tech.ch` · telefonisch erreichbar
+    Mo–Do 07:30–17:00 · Fr 07:30–11:30
+  - Die Zeiten sind **Telefonzeiten**, keine Öffnungszeiten: sie stehen als
+    `hoursAvailable` am ContactPoint, **nicht** als `openingHoursSpecification`
+    am LocalBusiness — sonst kollidieren sie mit dem Unternehmensprofil.
 - **Keine Preise.** Jedes Gerät zeigt „Preis auf Anfrage". Kundschaft sammelt Geräte
   in der **Anfrageliste** und schickt eine gebündelte Anfrage.
 - **Dreisprachig DE / FR / IT**, Deutsch ist Standard. **Jeder** neue Text existiert in
   allen drei Sprachen. Schweizer Schreibweise: **„ss" statt „ß"** („Schweissen",
   „Wasserkühlung").
-- **Domain:** aktuell `https://vesli87.github.io` (kanonisch). Die Wunschdomain
-  `www.ves-tech.ch` ist **nicht registriert** (Stand 30.07.2026, geprüft bei
-  nic.ch: kein Eintrag, kein A- und kein MX-Record). Umstellung später:
-  `SITE` und `EMIT_CNAME` in `core.py`, dann Build und Push — GitHub Pages
-  leitet github.io danach per 301 auf die eigene Domain um.
+- **Domain:** `https://www.ves-tech.ch` (kanonisch), registriert bei Infomaniak,
+  DNS-Zone ebenfalls dort (ns11/ns12.infomaniak.ch), A-Records auf GitHub Pages.
+  `vesli87.github.io` leitet per 301 dorthin um. Gesetzt über `SITE` und
+  `EMIT_CNAME` in `core.py`; die eigene Domain steht in der Pages-Konfiguration,
+  nicht in der Datei `CNAME` (siehe 14a).
+- **E-Mail:** `info@ves-tech.ch`. Das Postfach liegt bei Infomaniak; die Adresse
+  funktioniert nur, solange in der DNS-Zone ein **MX-Eintrag** steht. Ohne MX
+  fällt ein sendender Server auf den A-Record zurück — und der zeigt auf GitHub
+  Pages, das keine Mail annimmt. Vor jeder Änderung an der Adresse prüfen:
+  `dig +short MX ves-tech.ch`. Ebenso muss der SPF-TXT-Eintrag den Mailserver
+  erlauben; `v=spf1 -all` bedeutet „diese Domain versendet keine Mail".
 
 ## 2. Architektur
 
@@ -335,6 +350,27 @@ falls je auf Branch-Deployment zurückgewechselt wird.
 Nach dem Setzen der Domain stellt GitHub ein Let's-Encrypt-Zertifikat aus. Das
 dauert einige Minuten bis Stunden; solange schlägt HTTPS fehl. Das ist normal
 und erledigt sich von selbst.
+
+**Danach muss „Enforce HTTPS" eingeschaltet werden — es geht nicht von selbst
+an.** Bis zum 05.08.2026 stand `https_enforced: false`, obwohl das Zertifikat
+längst `approved` war. Folge: jede Seite war zusätzlich unverschlüsselt über
+`http://` erreichbar, Crawler nahmen diese Fassung (Ahrefs meldete darüber eine
+503), und die Datenschutzerklärung behauptete zu Unrecht, es werde
+ausschliesslich über HTTPS ausgeliefert.
+
+```bash
+gh api repos/vesli87/vesli87.github.io/pages --jq '.https_enforced'
+echo '{"https_enforced": true}' | gh api -X PUT repos/vesli87/vesli87.github.io/pages --input -
+```
+
+Danach leitet `http://www.ves-tech.ch/…` mit 301 auf `https://…` um.
+`audit.py --live` prüft genau das.
+
+**Zur 503 selbst:** GitHub Pages drosselt schnelles paralleles Crawlen mit
+`503 Service unavailable`. Das ist keine kaputte Seite — dieselbe URL antwortet
+Sekunden später mit 200. `audit.py` fasst deshalb bei 5xx und 429 zweimal nach
+und fragt mit sechs statt zwölf Verbindungen. Wer einen 503-Bericht eines
+Crawlers bekommt, prüft die URL zuerst einzeln, bevor er etwas ändert.
 
 ## 15. Was sich am Code schützen lässt — und was nicht
 

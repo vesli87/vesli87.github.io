@@ -301,7 +301,13 @@ def dl_html(lang, p):
 
 
 def clip(s, n):
-    """Kürzt eine meta description an der Wortgrenze – Google schneidet ~160 Zeichen ab."""
+    """Kürzt eine meta description an der Wortgrenze.
+
+    Google schneidet den Ausschnitt nach Pixelbreite ab, in der Praxis bei
+    etwa 155 bis 160 Zeichen. Der Aufrufwert stand auf 165 - damit lagen 179
+    von 345 Seiten darüber und wurden in der Anzeige abgeschnitten. 155 lässt
+    Luft: das angehängte " …" kommt noch dazu.
+    """
     s = " ".join(s.split())
     if len(s) <= n:
         return s
@@ -406,7 +412,7 @@ def page_products(lang):
     url, alts = C.u_products(lang), C.alternates("products")
     n = len(C.P)
     title = C.t(lang, "all_title")
-    desc = clip(C.t(lang, "all_desc", n=n), 165)
+    desc = clip(C.t(lang, "all_desc", n=n), 155)
     chips = '<div class="chips">' + "".join(
         f'<a class="chip" href="{e(C.u_cat(lang, c["id"]))}">{e(C.catT(lang, c))}</a>'
         for c in C.CATS) + "</div>"
@@ -436,7 +442,7 @@ def page_cat(lang, c, sub=None):
         items = C.products_of(cid, sub)
         h1 = f"{C.subT(lang, sub)} · {C.BRAND}"
         title = C.t(lang, "sub_title_tpl", sub=C.subT(lang, sub), cat=C.catT(lang, c))
-        desc = clip(C.t(lang, "sub_desc_tpl", sub=C.subT(lang, sub), n=len(items)), 165)
+        desc = clip(C.t(lang, "sub_desc_tpl", sub=C.subT(lang, sub), n=len(items)), 155)
         lead = C.catD(lang, c)
         crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
                  (C.t(lang, "nav_products"), C.u_products(lang)),
@@ -450,7 +456,7 @@ def page_cat(lang, c, sub=None):
         subs_txt = ", ".join(C.subT(lang, s) for s in c["subs"])
         title = C.t(lang, "cat_title_tpl", cat=C.catT(lang, c),
                     sub_hint=C.subT(lang, c["subs"][0]))
-        desc = clip(C.t(lang, "cat_desc_tpl", cat=C.catT(lang, c), n=len(items), subs=subs_txt), 165)
+        desc = clip(C.t(lang, "cat_desc_tpl", cat=C.catT(lang, c), n=len(items), subs=subs_txt), 155)
         lead = C.catD(lang, c)
         crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
                  (C.t(lang, "nav_products"), C.u_products(lang)),
@@ -496,7 +502,7 @@ def page_product(lang, p):
         title = cand
         if len(cand) <= 68:
             break
-    desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=p["vt"], desc=C.pDesc(lang, p)), 165)
+    desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=p["vt"], desc=C.pDesc(lang, p)), 155)
     crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
              (C.t(lang, "nav_products"), C.u_products(lang)),
              (C.catT(lang, c), C.u_cat(lang, p["cat"])),
@@ -778,11 +784,28 @@ def page_service(lang, key=None):
         "provider": {"@id": f"{C.SITE}/#organization"},
         "areaServed": [{"@type": "Country", "name": "Schweiz"},
                        {"@type": "Country", "name": "Liechtenstein"}],
+        # serviceLocation erwartet einen Place. Ein blosser @id-Verweis auf den
+        # Organization-Knoten liess Validatoren den Typ nicht erkennen; und
+        # sachlich richtig ist ohnehin die Werkstatt in Herisau, nicht die
+        # Rechnungsadresse in Bronschhofen - dort wird gearbeitet.
         "availableChannel": {
             "@type": "ServiceChannel",
             "serviceUrl": C.abs_url(url),
             "servicePhone": C.COMPANY["phone"],
-            "serviceLocation": {"@id": f"{C.SITE}/#organization"},
+            "serviceLocation": {
+                "@type": "Place",
+                "name": f"{C.COMPANY['name']} · {C.t(lang, 'foot_service')}",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": C.WORKSHOP["street"],
+                    "postalCode": C.WORKSHOP["zip"],
+                    "addressLocality": C.WORKSHOP["city"],
+                    "addressRegion": C.WORKSHOP["region"],
+                    "addressCountry": "CH",
+                },
+                "geo": {"@type": "GeoCoordinates",
+                        "latitude": C.WORKSHOP["lat"], "longitude": C.WORKSHOP["lon"]},
+            },
         },
     })
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,

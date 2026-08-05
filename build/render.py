@@ -286,18 +286,21 @@ def ld_product(lang, p):
         "category": f"{C.catT(lang, cat)} > {C.subT(lang, p['sub'])}",
         "inLanguage": C.EX[lang]["hreflang"],
         "additionalProperty": props,
-        # Preis auf Anfrage: bewusst KEIN price-Feld. Ein erfundener Preis wäre
-        # falsch; Google akzeptiert das Offer ohne Preis (Warnung statt Fehler).
-        "offers": {
-            "@type": "Offer",
-            "url": url,
-            "availability": "https://schema.org/InStock",
-            "priceCurrency": "CHF",
-            "availableDeliveryMethod": "https://schema.org/OnSitePickup",
-            "areaServed": ["CH", "LI"],
-            "seller": {"@id": f"{C.SITE}/#organization"},
-            "description": C.t(lang, "poa"),
-        },
+        # Preis auf Anfrage: bewusst KEIN price-Feld, und deshalb seit dem
+        # 05.08.2026 auch KEIN offers-Knoten mehr.
+        #
+        # Hier stand ein Offer mit priceCurrency "CHF", aber ohne price. Eine
+        # Waehrung ohne Betrag ist kein Angebot, sondern ein halbes: jeder
+        # Validator meldet das fehlende Pflichtfeld, und Google zeigt ein Offer
+        # ohne Preis ohnehin nicht an. Der Knoten kostete also 231 Fehlermeldungen
+        # und brachte nichts. Ein erfundener Preis kaeme nicht in Frage - die
+        # Regel "keine Preise" ist der Kern dieses Katalogs.
+        #
+        # Was das Angebot ausmacht, steht weiterhin da: sichtbar "Preis auf
+        # Anfrage" auf jeder Seite, das Liefergebiet CH/LI am Organization-
+        # Knoten, und die Anfrageliste als Weg zum Angebot. Ein "seller" waere
+        # hier uebrigens falsch - das ist eine Eigenschaft von Offer, nicht
+        # von Product.
     }
     if hl:
         d["additionalProperty"] = props + [

@@ -97,6 +97,16 @@ Kategorie-Slugs sind **pro Sprache übersetzt** (`schweissgeraete` / `postes-de-
 übersetzt man nicht). Definiert in `core.py::SEG` und `core.py::CAT_SLUG`.
 Der Sprachumschalter verlinkt **immer** auf dieselbe Seite in der anderen Sprache.
 
+⚠ **Unterkategorie und Produkt können dieselbe URL beanspruchen.** Die
+Unterkategorie „Plasma TIG" ergibt den Slug `plasma-tig` — genau wie das Produkt
+mit der ID `plasma-tig`. Beide wollten `/produkte/schweissgeraete/plasma-tig/`;
+geschrieben wurde die zuletzt erzeugte Seite (das Produkt), die Kategorieseite
+verschwand still, und die URL stand **zweimal in der sitemap**. Seit dem
+05.08.2026 lässt `build.py` die Kategorieseite in so einem Fall aus — die
+Unterkategorie enthält ohnehin nur dieses eine Gerät, und die Produkt-URL ist
+verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
+`<loc>`-Einträge jetzt als Fehler.
+
 ## 4. Datenmodell (`data/`)
 
 | Datei | Inhalt |
@@ -154,9 +164,26 @@ Neue Bilder: `python3 build/images.py` (braucht Netz und `cwebp`), danach `build
   Verifizierungs-Tag — das ist der gewollte Zustand, kein Versehen.
 - CSS/JS mit `?v=<hash>` — sonst liefern Browser nach einem Deploy die alte Datei
 
-**Preis auf Anfrage im Schema:** Das `Offer` trägt bewusst **kein** `price`-Feld.
-Ein erfundener Preis wäre falsch. Google zeigt dafür eine Warnung statt eines
-Fehlers — das ist der korrekte Kompromiss. Niemals `"price": "0"` schreiben.
+**Preis auf Anfrage im Schema:** Der `Product`-Knoten trägt **gar keinen
+`offers`-Knoten**. Bis zum 05.08.2026 stand dort ein `Offer` mit
+`priceCurrency: "CHF"`, aber ohne `price`. Eine Währung ohne Betrag ist kein
+Angebot, sondern ein halbes: Ahrefs meldete auf **231 Seiten** einen
+schema.org-Validierungsfehler, und Google zeigt ein Offer ohne Preis ohnehin
+nicht an. Der Knoten kostete also 231 Fehlermeldungen und brachte nichts.
+
+Ein erfundener Preis kommt nicht in Frage — die Regel „keine Preise" ist der
+Kern dieses Katalogs. Niemals `"price": "0"` schreiben. `check.py` erzwingt
+beides: kein `offers` und kein `price` am Produkt.
+
+Was das Angebot ausmacht, steht weiterhin da: sichtbar „Preis auf Anfrage" auf
+jeder Seite, das Liefergebiet CH/LI am `Organization`-Knoten, und die
+Anfrageliste als Weg zum Angebot. `seller` gehört **nicht** an `Product` —
+das ist eine Eigenschaft von `Offer`.
+
+**Länge der `meta description`:** `pages.py::clip` kürzt auf **155** Zeichen.
+Der Wert stand auf 165; damit lagen 179 von 345 Seiten über der Grenze, ab der
+Google abschneidet (pixelabhängig, in der Praxis 155–160 Zeichen). Auch
+handgeschriebene Beschreibungen in `i18n_extra.json` bleiben darunter.
 
 ## 7. AEO / AIO (Antwortmaschinen)
 
@@ -371,6 +398,17 @@ Danach leitet `http://www.ves-tech.ch/…` mit 301 auf `https://…` um.
 Sekunden später mit 200. `audit.py` fasst deshalb bei 5xx und 429 zweimal nach
 und fragt mit sechs statt zwölf Verbindungen. Wer einen 503-Bericht eines
 Crawlers bekommt, prüft die URL zuerst einzeln, bevor er etwas ändert.
+
+**Dasselbe gilt für mahe-online.de.** Ein Ahrefs-Lauf meldete 45 externe 4xx —
+alles Bedienungsanleitungen und Datenblätter beim Hersteller, alle mit
+`429 Too many requests`. Einzeln und mit Pause abgefragt antworteten am
+05.08.2026 **alle 64** verlinkten MAHE-Dokumente mit 200. Prüfskript:
+
+```bash
+grep -rho 'href="\(https://mahe-online\.de[^"]*\)"' --include=index.html . \
+  | sed 's/href="//;s/"$//' | sort -u \
+  | while read u; do echo "$(curl -sIL -o /dev/null -w '%{http_code}' "$u")  $u"; sleep 0.4; done
+```
 
 ## 15. Was sich am Code schützen lässt — und was nicht
 

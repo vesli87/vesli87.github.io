@@ -423,11 +423,23 @@ def main():
     for lang in C.LANGS:
         u, h = PG.page_home(lang);      write(u, h); entries.append((u, C.alternates("home"), "1.0", "weekly"))
         u, h = PG.page_products(lang);  write(u, h); entries.append((u, C.alternates("products"), "0.9", "weekly"))
+        # Produkt-URLs vorab, um Zusammenstoesse mit Unterkategorien zu erkennen.
+        prod_urls = {C.u_prod(lang, p) for p in C.P}
         for c in C.CATS:
             u, h = PG.page_cat(lang, c)
             write(u, h); entries.append((u, C.alternates("cat", cat_id=c["id"]), "0.8", "weekly"))
             for s in c["subs"]:
                 u, h = PG.page_cat(lang, c, s)
+                # Die Unterkategorie "Plasma TIG" ergibt denselben Slug wie das
+                # Produkt "plasma-tig" - beide wollten /produkte/schweissgeraete/
+                # plasma-tig/. Geschrieben wurde zuletzt das Produkt, die
+                # Kategorieseite ging verloren, und die URL stand zweimal in der
+                # sitemap. Die Unterkategorie enthaelt genau dieses eine Geraet;
+                # die Produktseite zeigt also ohnehin alles, was es dazu gibt.
+                # Deshalb faellt hier die Kategorieseite aus, statt die
+                # Produkt-URL zu aendern - die ist verlinkt und indexiert.
+                if u in prod_urls:
+                    continue
                 write(u, h)
                 entries.append((u, C.alternates("sub", cat_id=c["id"], sub=s), "0.7", "monthly"))
         for p in C.P:

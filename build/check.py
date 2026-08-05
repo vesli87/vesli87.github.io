@@ -70,7 +70,11 @@ def target_exists(href):
 # Pflichtfelder je Schema-Typ. Fehlen sie, verliert Google die Rich Results und
 # Antwortmaschinen können die Angaben nicht zuordnen.
 LD_REQUIRED = {
-    "Product":        ["name", "description", "image", "brand", "sku", "offers", "url"],
+    # Product ohne "offers": seit dem 05.08.2026 gibt es hier keinen
+    # Offer-Knoten mehr. Er trug priceCurrency ohne price, und eine Waehrung
+    # ohne Betrag ist kein Angebot - jeder Validator meldete das fehlende
+    # Pflichtfeld, auf 231 Seiten. Siehe render.py::ld_product.
+    "Product":        ["name", "description", "image", "brand", "sku", "url"],
     "Offer":          ["availability", "priceCurrency", "url"],
     "FAQPage":        ["mainEntity"],
     "BreadcrumbList": ["itemListElement"],
@@ -101,10 +105,14 @@ def check_ld_node(where, node, types, ids):
     refs({k: v for k, v in node.items() if k != "@id"})
 
     if "Product" in types:
-        off = node.get("offers") or {}
-        # "Preis auf Anfrage": es darf kein Preis behauptet werden – weder 0 noch leer
-        if "price" in off:
-            err(f"{where}: Product/Offer hat ein price-Feld – die Website führt keine Preise")
+        # "Preis auf Anfrage": es darf kein Preis behauptet werden – weder 0
+        # noch leer. Und es darf gar kein Offer geben: ohne price ist er
+        # unvollstaendig, mit price waere er gelogen.
+        if "offers" in node:
+            err(f"{where}: Product hat wieder ein offers – ohne Preis ist das ein "
+                f"unvollstaendiger Offer, mit Preis ein falscher")
+        if "price" in node:
+            err(f"{where}: Product hat ein price-Feld – die Website führt keine Preise")
         if not str(node.get("sku", "")).strip():
             err(f"{where}: Product ohne sku")
         if isinstance(node.get("image"), list) and not node["image"]:
@@ -269,6 +277,14 @@ def main():
         rel = loc.replace(C.SITE, "")
         if not target_exists(rel):
             err(f"sitemap: {loc} existiert nicht")
+    # Doppelte URLs. Sie entstehen nicht durch Tippfehler, sondern wenn zwei
+    # Seitenarten denselben Pfad beanspruchen - so geschehen bei der
+    # Unterkategorie "Plasma TIG" und dem Produkt "plasma-tig". Geschrieben
+    # wird dann nur die zuletzt erzeugte Seite, die andere ist still
+    # verschwunden. Genau das soll hier auffallen.
+    for loc, n in collections.Counter(locs).items():
+        if n > 1:
+            err(f"sitemap: {loc} steht {n}× drin - zwei Seiten mit derselben URL?")
     smset = {l.replace(C.SITE, "") for l in locs}
     noindex = set()
     for f in pages:

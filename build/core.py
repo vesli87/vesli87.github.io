@@ -92,6 +92,27 @@ WORKSHOP = {
     "lon": 9.2792,
 }
 
+# Kartenverweis auf die Werkstatt. Steht als hasMap im LocalBusiness.
+MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
+           + WORKSHOP["street"].replace(" ", "+") + ",+"
+           + WORKSHOP["zip"] + "+" + WORKSHOP["city"])
+
+# sameAs verknuepft die Website mit denselben Profilen anderswo. Genau das
+# braucht Google, um zu erkennen, dass Unternehmensprofil, Verzeichniseintrag
+# und Website dieselbe Firma sind - der wichtigste Hebel fuer die lokale
+# Sichtbarkeit in der Schweiz.
+#
+# Die Liste bleibt leer, bis die Profile wirklich bestehen. Ein erfundener
+# Verweis waere schlimmer als keiner: Google prueft, ob dort dieselbe Firma
+# mit derselben Adresse steht.
+#
+# Sobald angelegt, hier eintragen (in dieser Reihenfolge sinnvoll):
+#   1. Google-Unternehmensprofil  (maps.app.goo.gl/... oder die Maps-URL)
+#   2. local.ch     3. search.ch     4. moneyhouse.ch
+#   5. svs.ch-Firmenmitglieder     6. LinkedIn
+# Danach: python3 build/build.py && push. Der Knoten erscheint automatisch.
+SAMEAS = []
+
 # Verifizierung der Webmaster-Tools. Beide Dienste bieten eine Meta-Tag-Methode;
 # bei einer <user>.github.io-Adresse ist das der einzige gangbare Weg, weil die
 # DNS-Verifizierung eine eigene Domain voraussetzt.

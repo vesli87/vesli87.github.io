@@ -239,6 +239,11 @@ def ld_org(lang=C.DEFAULT_LANG):
         # Sprachen der Website (die stehen als inLanguage am WebSite-Knoten).
         "knowsLanguage": ["de", "cs", "en"],
         "currenciesAccepted": "CHF",
+        # Karte zur Werkstatt. Google verknuepft damit Website und Ort; wer die
+        # Seite auf dem Telefon liest, kommt mit einem Tippen zur Navigation.
+        "hasMap": C.MAP_URL,
+        # Leer, solange es keine Profile gibt - siehe core.py::SAMEAS.
+        **({"sameAs": C.SAMEAS} if C.SAMEAS else {}),
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
         "founder": {"@type": "Person", "name": co["owner"]},
         "slogan": C.t("de", "brand_claim"),

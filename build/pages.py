@@ -348,7 +348,7 @@ def page_home(lang):
        aria-label="{e(C.t(lang,'hero_slide', n=2, m=2))}">
     <div class="hero-inner">
       <img class="hero-photo" src="{R.HERO2_SRC}" srcset="{R.HERO2_SRCSET}" sizes="100vw"
-           width="{R.HERO_W}" height="{R.HERO_H}" loading="lazy" decoding="async"
+           width="{R.HERO2_W}" height="{R.HERO2_H}" loading="lazy" decoding="async"
            alt="{e(C.BRAND)} MPT: CNC-Plasmaschneidtisch mit Bedienkonsole"
            onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero-mpt.jpg'">
       <div class="hero-txt">

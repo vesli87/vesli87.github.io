@@ -32,12 +32,32 @@ def _ver(rel):
     return rel + "?v=" + hashlib.md5(f.read_bytes()).hexdigest()[:8]
 
 
-# Hero: dasselbe Bild in drei Breiten. Das Original bleibt als hero.jpg liegen
-# und dient dem onerror-Fallback für Browser ohne WebP.
-HERO_SRCSET = ("/assets/img/hero-640.webp 640w, /assets/img/hero-1000.webp 1000w, "
-               "/assets/img/hero-1536.webp 1536w")
-HERO_SRC = "/assets/img/hero-1536.webp"
-HERO_W, HERO_H = 1536, 1024
+# Herobilder: Breiten und Masse kommen aus assets/img/hero-manifest.json,
+# erzeugt von build/hero.py. Fest verdrahtet waren sie vorher zweimal falsch:
+#
+#   * im srcset stand fuer hero-mpt eine Stufe "2048w", obwohl die Vorlage nur
+#     1536 px breit ist - die Datei war hochgerechnet. Ein Browser auf einem
+#     feinen Bildschirm waehlte genau diese Stufe und zog ein weiches Bild auf
+#     die volle Breite. Deshalb wirkte die zweite Folie unscharf.
+#   * width/height standen fest auf 1536x1024 fuer beide Folien. Ein Bild in
+#     einem anderen Seitenverhaeltnis haette die Seite beim Umschalten
+#     springen lassen.
+#
+# Beides kann jetzt nicht mehr auseinanderlaufen: was hier steht, steht auch
+# als Datei auf der Platte. Neues Bild einspielen:
+#     python3 build/hero.py hero-mpt <datei>
+HERO_MANIFEST = json.loads((C.ROOT / "assets/img/hero-manifest.json").read_text("utf-8"))
+
+
+def _hero(name):
+    """(srcset, groesste Datei, Breite, Hoehe) fuer eine Herofolie."""
+    m = HERO_MANIFEST[name]
+    stufen = m["sizes"]
+    srcset = ", ".join(f"/assets/img/{name}-{s}.webp {s}w" for s in stufen)
+    return srcset, f"/assets/img/{name}-{stufen[-1]}.webp", m["w"], m["h"]
+
+
+HERO_SRCSET, HERO_SRC, HERO_W, HERO_H = _hero("hero")
 
 # Das Hero ist das LCP-Element der Startseite. Ohne preload findet der Browser
 # es erst, nachdem er CSS geparst hat – mit preload startet der Download sofort.
@@ -47,9 +67,7 @@ HERO_PRELOAD = (f'<link rel="preload" as="image" href="{HERO_SRC}" '
 # Zweite Herofolie: der Plasmaschneidtisch, freigestellt auf demselben Dunkel
 # wie das Band. Sie wird NICHT vorgeladen - das erste Bild bleibt das LCP-
 # Element, die zweite Folie holt der Browser erst, wenn sie an die Reihe kommt.
-HERO2_SRCSET = ("/assets/img/hero-mpt-640.webp 640w, /assets/img/hero-mpt-1000.webp 1000w, "
-                "/assets/img/hero-mpt-1536.webp 1536w, /assets/img/hero-mpt-2048.webp 2048w")
-HERO2_SRC = "/assets/img/hero-mpt-1536.webp"
+HERO2_SRCSET, HERO2_SRC, HERO2_W, HERO2_H = _hero("hero-mpt")
 
 CSS_URL = _ver("/assets/css/site.css")
 JS_URL = _ver("/assets/js/app.js")

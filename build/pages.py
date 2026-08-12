@@ -485,8 +485,16 @@ def page_cat(lang, c, sub=None):
         items = C.products_of(cid)
         h1 = C.catT(lang, c)
         subs_txt = ", ".join(C.subT(lang, s) for s in c["subs"])
+        # Wie bei den Produkten: von der ausfuehrlichsten Variante abwaerts,
+        # bis der Titel unter 68 Zeichen bleibt. Ohne diese Stufe war
+        # "Apparecchi di pulizia · acquistare MAHE Pulizia in Svizzera |
+        # VES-TECH" 70 Zeichen lang - Google haette hinten abgeschnitten. Die
+        # kurze Fassung laesst den Hinweis auf die erste Unterkategorie weg;
+        # er steht ohnehin als Chip auf der Seite.
         title = C.t(lang, "cat_title_tpl", cat=C.catT(lang, c),
                     sub_hint=C.subT(lang, c["subs"][0]))
+        if len(title) > 68:
+            title = C.t(lang, "cat_title_tpl_kurz", cat=C.catT(lang, c))
         desc = clip(C.t(lang, "cat_desc_tpl", cat=C.catT(lang, c), n=len(items), subs=subs_txt), 155)
         lead = C.catD(lang, c)
         crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),

@@ -16,7 +16,11 @@
    "sku": "HYPERMIG-X",
    "name": "MAHE HyperMIG X",
    "brand": "MAHE",
-   "type": "MIG/MAG",
+   "type": {
+    "de": "MIG/MAG",
+    "fr": "MIG/MAG",
+    "it": "MIG/MAG"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -759,7 +763,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/bild-der-hypers-bd9aca-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/",
@@ -772,7 +783,11 @@
    "sku": "ECOMIG",
    "name": "MAHE EcoMIG Digital / Analog",
    "brand": "MAHE",
-   "type": "MIG/MAG",
+   "type": {
+    "de": "MIG/MAG",
+    "fr": "MIG/MAG",
+    "it": "MIG/MAG"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -1185,7 +1200,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/imgp5826-c39465-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/",
@@ -1198,7 +1220,11 @@
    "sku": "MMS",
    "name": "MAHE MMS 2000 / 3000",
    "brand": "MAHE",
-   "type": "MIG/MAG",
+   "type": {
+    "de": "MIG/MAG",
+    "fr": "MIG/MAG",
+    "it": "MIG/MAG"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -1719,7 +1745,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mms3000-x-mms2000-71d9a8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/mms/",
@@ -1732,7 +1765,11 @@
    "sku": "OMEGA-AX",
    "name": "MAHE Omega AX",
    "brand": "MAHE",
-   "type": "WIG AC/DC",
+   "type": {
+    "de": "WIG AC/DC",
+    "fr": "TIG AC/DC",
+    "it": "TIG AC/DC"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -2163,7 +2200,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/omega220ax-pro-1220b7-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/",
@@ -2176,7 +2220,11 @@
    "sku": "BETA-DX",
    "name": "MAHE Beta DX",
    "brand": "MAHE",
-   "type": "WIG DC",
+   "type": {
+    "de": "WIG DC",
+    "fr": "TIG DC",
+    "it": "TIG DC"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -2594,7 +2642,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/beta220dx-pro-739811-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/",
@@ -2607,7 +2662,11 @@
    "sku": "HYPERTIG-AX",
    "name": "MAHE HyperTIG AX",
    "brand": "MAHE",
-   "type": "WIG AC/DC",
+   "type": {
+    "de": "WIG AC/DC",
+    "fr": "TIG AC/DC",
+    "it": "TIG AC/DC"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -3077,7 +3136,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/imgp5943-0c2fdc-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/",
@@ -3090,7 +3156,11 @@
    "sku": "HYPERTIG-DX",
    "name": "MAHE HyperTIG DX",
    "brand": "MAHE",
-   "type": "WIG DC",
+   "type": {
+    "de": "WIG DC",
+    "fr": "TIG DC",
+    "it": "TIG DC"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -3595,7 +3665,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/imgp5957-394c09-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/",
@@ -3608,7 +3685,11 @@
    "sku": "BETA-DIGITAL",
    "name": "MAHE Beta digital",
    "brand": "MAHE",
-   "type": "WIG DC",
+   "type": {
+    "de": "WIG DC",
+    "fr": "TIG DC",
+    "it": "TIG DC"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -4362,7 +4443,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/beta-digital-300-47dc7e-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/",
@@ -4375,7 +4463,11 @@
    "sku": "HYPERTIG-ACDC",
    "name": "MAHE HyperTIG AC/DC",
    "brand": "MAHE",
-   "type": "WIG AC/DC",
+   "type": {
+    "de": "WIG AC/DC",
+    "fr": "TIG AC/DC",
+    "it": "TIG AC/DC"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -4887,7 +4979,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/hypertig-ac-dc-cwk-6cafbb-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/",
@@ -4900,7 +4999,11 @@
    "sku": "I-1600",
    "name": "MAHE i-1600",
    "brand": "MAHE",
-   "type": "MMA",
+   "type": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -5267,7 +5370,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/i-1600-b54bf1-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/",
@@ -5280,7 +5390,11 @@
    "sku": "DELTA",
    "name": "MAHE Delta 1800",
    "brand": "MAHE",
-   "type": "MMA",
+   "type": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -5641,7 +5755,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/delta-2b5a06-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/delta/",
@@ -5654,7 +5775,11 @@
    "sku": "DELTA-DIGITAL",
    "name": "MAHE Delta Digital",
    "brand": "MAHE",
-   "type": "MMA",
+   "type": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -6210,7 +6335,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/deltadigital-9113a6-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/",
@@ -6223,7 +6355,11 @@
    "sku": "DELTA-DIGITAL-DS",
    "name": "MAHE Delta Digital DS",
    "brand": "MAHE",
-   "type": "MMA",
+   "type": {
+    "de": "MMA",
+    "fr": "MMA",
+    "it": "MMA"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -6695,7 +6831,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/delta-digital-ds-04fd14-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/",
@@ -6708,7 +6851,11 @@
    "sku": "PLASMA-TIG",
    "name": "MAHE PlasmaTIG",
    "brand": "MAHE",
-   "type": "Plasma TIG",
+   "type": {
+    "de": "Plasma TIG",
+    "fr": "Plasma TIG",
+    "it": "Plasma TIG"
+   },
    "category": {
     "de": "Schweissgeräte",
     "fr": "Postes de soudage",
@@ -7268,7 +7415,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/plasmatig-ff43ab-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/",
@@ -7281,7 +7435,11 @@
    "sku": "THETA-40",
    "name": "MAHE Theta 40",
    "brand": "MAHE",
-   "type": "Plasma Cut",
+   "type": {
+    "de": "Plasma Cut",
+    "fr": "Plasma Cut",
+    "it": "Plasma Cut"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -7697,7 +7855,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/theta-40-d58c4f-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/",
@@ -7710,7 +7875,11 @@
    "sku": "THETA-60",
    "name": "MAHE Theta 60 HSC",
    "brand": "MAHE",
-   "type": "Plasma Cut",
+   "type": {
+    "de": "Plasma Cut",
+    "fr": "Plasma Cut",
+    "it": "Plasma Cut"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -8120,7 +8289,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/theta-60-hsc-b1f221-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/",
@@ -8133,7 +8309,11 @@
    "sku": "THETA-120",
    "name": "MAHE Theta 120 HSC",
    "brand": "MAHE",
-   "type": "Plasma Cut",
+   "type": {
+    "de": "Plasma Cut",
+    "fr": "Plasma Cut",
+    "it": "Plasma Cut"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -8546,7 +8726,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/",
@@ -8559,7 +8746,11 @@
    "sku": "THETA-180",
    "name": "MAHE Theta 180 HSC",
    "brand": "MAHE",
-   "type": "Plasma Cut",
+   "type": {
+    "de": "Plasma Cut",
+    "fr": "Plasma Cut",
+    "it": "Plasma Cut"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -8951,7 +9142,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/imgp5680-e9d5f8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/",
@@ -8964,7 +9162,11 @@
    "sku": "THETA-60-AUT",
    "name": "MAHE Theta 60 AUT",
    "brand": "MAHE",
-   "type": "Plasma AUT",
+   "type": {
+    "de": "Plasma AUT",
+    "fr": "Plasma AUT",
+    "it": "Plasma AUT"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -9377,7 +9579,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/",
@@ -9390,7 +9599,11 @@
    "sku": "THETA-120-AUT",
    "name": "MAHE Theta 120 AUT",
    "brand": "MAHE",
-   "type": "Plasma AUT",
+   "type": {
+    "de": "Plasma AUT",
+    "fr": "Plasma AUT",
+    "it": "Plasma AUT"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -9806,7 +10019,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/theta-120-hsc-ea8bb1-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/",
@@ -9819,7 +10039,11 @@
    "sku": "MPT-3001",
    "name": "MAHE MPT 3001",
    "brand": "MAHE",
-   "type": "Plasma CNC",
+   "type": {
+    "de": "Plasma CNC",
+    "fr": "Plasma CNC",
+    "it": "Plasma CNC"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -9998,7 +10222,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/panels/mpt-plasmaschneidtisch-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/",
@@ -10011,7 +10242,11 @@
    "sku": "MPT-2501",
    "name": "MAHE MPT 2501",
    "brand": "MAHE",
-   "type": "Plasma CNC",
+   "type": {
+    "de": "Plasma CNC",
+    "fr": "Plasma CNC",
+    "it": "Plasma CNC"
+   },
    "category": {
     "de": "Plasmaschneiden",
     "fr": "Découpe plasma",
@@ -10190,7 +10425,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/panels/mpt-plasmaschneidtisch-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/",
@@ -10203,7 +10445,11 @@
    "sku": "MINICLEANER",
    "name": "MAHE MiniReiniger",
    "brand": "MAHE",
-   "type": "Cleaner",
+   "type": {
+    "de": "Cleaner",
+    "fr": "Cleaner",
+    "it": "Cleaner"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -10491,7 +10737,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/minicleaner-530c59-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/",
@@ -10504,7 +10757,11 @@
    "sku": "HYPERCLEANER-ST",
    "name": "MAHE HyperCleaner ST",
    "brand": "MAHE",
-   "type": "Cleaner",
+   "type": {
+    "de": "Cleaner",
+    "fr": "Cleaner",
+    "it": "Cleaner"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -10807,7 +11064,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/hypercleanerst-set-new-8b4786-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/",
@@ -10820,7 +11084,11 @@
    "sku": "HYPERCLEANER-SPEED",
    "name": "MAHE HyperCleaner ST Speed",
    "brand": "MAHE",
-   "type": "Cleaner",
+   "type": {
+    "de": "Cleaner",
+    "fr": "Cleaner",
+    "it": "Cleaner"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -11123,7 +11391,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/hypercleaner-st-plus-set-6b6be7-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/",
@@ -11136,7 +11411,11 @@
    "sku": "HYPERCLEANER-PLUS",
    "name": "MAHE HyperCleaner ST Plus",
    "brand": "MAHE",
-   "type": "Cleaner",
+   "type": {
+    "de": "Cleaner",
+    "fr": "Cleaner",
+    "it": "Cleaner"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -11439,7 +11718,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/hypercleaner-st-plus-set-6b6be7-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/",
@@ -11452,7 +11738,11 @@
    "sku": "HYPERCLEANER-CT200",
    "name": "MAHE HyperCleaner CT 200",
    "brand": "MAHE",
-   "type": "WIG + Cleaner",
+   "type": {
+    "de": "WIG + Cleaner",
+    "fr": "TIG + Cleaner",
+    "it": "TIG + Cleaner"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -11530,7 +11820,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/hypercleaner-ct200-set-04fafd-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/",
@@ -11543,7 +11840,11 @@
    "sku": "HCS1",
    "name": "MAHE HCS 1",
    "brand": "MAHE",
-   "type": "Signieren",
+   "type": {
+    "de": "Signieren",
+    "fr": "Marquage",
+    "it": "Marcatura"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -11844,7 +12145,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/hcs-1-set-7b79ff-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/",
@@ -11857,7 +12165,11 @@
    "sku": "MLF100",
    "name": "MAHE MLF 100",
    "brand": "MAHE",
-   "type": "Dosierung",
+   "type": {
+    "de": "Dosierung",
+    "fr": "Dosage",
+    "it": "Dosaggio"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -12113,7 +12425,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mlf100-a-9a2566-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/",
@@ -12126,7 +12445,11 @@
    "sku": "R1",
    "name": "MAHE Reinigungselektrolyt Rapid R1",
    "brand": "MAHE",
-   "type": "Reinigung",
+   "type": {
+    "de": "Reinigung",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -12187,7 +12510,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1850002-8e2ce8-792.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/",
@@ -12200,7 +12530,11 @@
    "sku": "RP1",
    "name": "MAHE Reinigungselektrolyt RP1 Pastös",
    "brand": "MAHE",
-   "type": "Reinigung",
+   "type": {
+    "de": "Reinigung",
+    "fr": "Nettoyage",
+    "it": "Pulizia"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -12261,7 +12595,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1851002-965760-790.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/",
@@ -12274,7 +12615,11 @@
    "sku": "P1",
    "name": "MAHE Polierelektrolyt P1",
    "brand": "MAHE",
-   "type": "Polieren",
+   "type": {
+    "de": "Polieren",
+    "fr": "Polissage",
+    "it": "Lucidatura"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -12335,7 +12680,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1852002-a43991-816.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/",
@@ -12348,7 +12700,11 @@
    "sku": "N1",
    "name": "MAHE Neutralit N1",
    "brand": "MAHE",
-   "type": "Neutralisieren",
+   "type": {
+    "de": "Neutralisieren",
+    "fr": "Neutralisation",
+    "it": "Neutralizzazione"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -12409,7 +12765,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1855002-1c6ae6-770.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/",
@@ -12422,7 +12785,11 @@
    "sku": "M1",
    "name": "MAHE Signierelektrolyt M1",
    "brand": "MAHE",
-   "type": "Signieren",
+   "type": {
+    "de": "Signieren",
+    "fr": "Marquage",
+    "it": "Marcatura"
+   },
    "category": {
     "de": "Reinigungsgeräte",
     "fr": "Appareils de nettoyage",
@@ -12483,7 +12850,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1853001-160836-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/",
@@ -12496,7 +12870,11 @@
    "sku": "STT30",
    "name": "MAHE STT 30",
    "brand": "MAHE",
-   "type": "Fahrwagen",
+   "type": {
+    "de": "Fahrwagen",
+    "fr": "Chariot",
+    "it": "Carrello"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12557,7 +12935,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/stt30-b9524e-802.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/stt30/",
@@ -12570,7 +12955,11 @@
    "sku": "STT35",
    "name": "MAHE STT 35",
    "brand": "MAHE",
-   "type": "Fahrwagen",
+   "type": {
+    "de": "Fahrwagen",
+    "fr": "Chariot",
+    "it": "Carrello"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12631,7 +13020,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/stt35-629751-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/stt35/",
@@ -12644,7 +13040,11 @@
    "sku": "MPF02",
    "name": "MAHE MPF 02",
    "brand": "MAHE",
-   "type": "Fahrwagen",
+   "type": {
+    "de": "Fahrwagen",
+    "fr": "Chariot",
+    "it": "Carrello"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12705,7 +13105,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/imgp5689-6b1086-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mpf02/",
@@ -12718,7 +13125,11 @@
    "sku": "MHCT01",
    "name": "MAHE MHCT 01",
    "brand": "MAHE",
-   "type": "Fahrwagen",
+   "type": {
+    "de": "Fahrwagen",
+    "fr": "Chariot",
+    "it": "Carrello"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12776,7 +13187,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/fahrwagen-fur-cleaner-b58137-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mhct01/",
@@ -12789,7 +13207,11 @@
    "sku": "WK200",
    "name": "MAHE WK 200",
    "brand": "MAHE",
-   "type": "Kühlung",
+   "type": {
+    "de": "Kühlung",
+    "fr": "Refroidissement",
+    "it": "Raffreddamento"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12847,7 +13269,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wk200-1d9197-862.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/wk200/",
@@ -12860,7 +13289,11 @@
    "sku": "WK300",
    "name": "MAHE WK 300",
    "brand": "MAHE",
-   "type": "Kühlung",
+   "type": {
+    "de": "Kühlung",
+    "fr": "Refroidissement",
+    "it": "Raffreddamento"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12915,7 +13348,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wk300-7d9dd1-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/wk300/",
@@ -12928,7 +13368,11 @@
    "sku": "WK350",
    "name": "MAHE WK 350",
    "brand": "MAHE",
-   "type": "Kühlung",
+   "type": {
+    "de": "Kühlung",
+    "fr": "Refroidissement",
+    "it": "Raffreddamento"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -12983,7 +13427,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wk350-d5811b-862.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/wk350/",
@@ -12996,7 +13447,11 @@
    "sku": "DVS410",
    "name": "MAHE DVS 410",
    "brand": "MAHE",
-   "type": "Vorschub",
+   "type": {
+    "de": "Vorschub",
+    "fr": "Dévidoir",
+    "it": "Trainafilo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13051,7 +13506,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/dvs410-027fed-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/dvs410/",
@@ -13064,7 +13526,11 @@
    "sku": "DVL420",
    "name": "MAHE DVL 420",
    "brand": "MAHE",
-   "type": "Vorschub",
+   "type": {
+    "de": "Vorschub",
+    "fr": "Dévidoir",
+    "it": "Trainafilo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13122,7 +13588,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/dvl420-62bc32-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/dvl420/",
@@ -13135,7 +13608,11 @@
    "sku": "FRC5",
    "name": "MAHE FRC 5",
    "brand": "MAHE",
-   "type": "Fernregler",
+   "type": {
+    "de": "Fernregler",
+    "fr": "Télécommande",
+    "it": "Telecomando"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13190,7 +13667,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/frc5-b96832-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/frc5/",
@@ -13203,7 +13687,11 @@
    "sku": "RC5",
    "name": "MAHE RC 5",
    "brand": "MAHE",
-   "type": "Fernregler",
+   "type": {
+    "de": "Fernregler",
+    "fr": "Télécommande",
+    "it": "Telecomando"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13258,7 +13746,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/rc5-28ba3f-762.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/rc5/",
@@ -13271,7 +13766,11 @@
    "sku": "RC15",
    "name": "MAHE RC 15",
    "brand": "MAHE",
-   "type": "Fernregler",
+   "type": {
+    "de": "Fernregler",
+    "fr": "Télécommande",
+    "it": "Telecomando"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13326,7 +13825,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/rc15-9cf0ea-518.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/rc15/",
@@ -13339,7 +13845,11 @@
    "sku": "RC100",
    "name": "MAHE RC 100",
    "brand": "MAHE",
-   "type": "Fernregler",
+   "type": {
+    "de": "Fernregler",
+    "fr": "Télécommande",
+    "it": "Telecomando"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13394,7 +13904,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/rc100-3d8e6e-518.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/rc100/",
@@ -13407,7 +13924,11 @@
    "sku": "RC100DS",
    "name": "MAHE RC 100 DS",
    "brand": "MAHE",
-   "type": "Fernregler",
+   "type": {
+    "de": "Fernregler",
+    "fr": "Télécommande",
+    "it": "Telecomando"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13462,7 +13983,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/rc100ds-b37007-536.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/rc100ds/",
@@ -13475,7 +14003,11 @@
    "sku": "MCU1",
    "name": "MAHE MCU 1",
    "brand": "MAHE",
-   "type": "Kalibrierung",
+   "type": {
+    "de": "Kalibrierung",
+    "fr": "Calibrage",
+    "it": "Calibrazione"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13533,7 +14065,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mcu11-c46e0f-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mcu1/",
@@ -13546,7 +14085,11 @@
    "sku": "USB2IN1",
    "name": "MAHE USB 2in1 Programmierer",
    "brand": "MAHE",
-   "type": "Programmierung",
+   "type": {
+    "de": "Programmierung",
+    "fr": "Programmation",
+    "it": "Programmazione"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13604,7 +14147,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/usb2in1programmer-eb54f9-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/usb2in1/",
@@ -13617,7 +14167,11 @@
    "sku": "ELEKTRODENKABEL",
    "name": "MAHE Elektrodenkabel 10 mm²",
    "brand": "MAHE",
-   "type": "Kabel",
+   "type": {
+    "de": "Kabel",
+    "fr": "Câble",
+    "it": "Cavo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13675,7 +14229,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1801001-78aea8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel/",
@@ -13688,7 +14249,11 @@
    "sku": "MASSEKABEL",
    "name": "MAHE Massekabel 10 mm²",
    "brand": "MAHE",
-   "type": "Kabel",
+   "type": {
+    "de": "Kabel",
+    "fr": "Câble",
+    "it": "Cavo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13746,7 +14311,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/1802001-6105bc-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel/",
@@ -13759,7 +14331,11 @@
    "sku": "ELEKTRODENKABEL-4M",
    "name": "MAHE Elektrodenkabel 25–90 mm²",
    "brand": "MAHE",
-   "type": "Kabel",
+   "type": {
+    "de": "Kabel",
+    "fr": "Câble",
+    "it": "Cavo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13817,7 +14393,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-472.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/",
@@ -13830,7 +14413,11 @@
    "sku": "MASSEKABEL-4M",
    "name": "MAHE Massekabel 25–90 mm²",
    "brand": "MAHE",
-   "type": "Kabel",
+   "type": {
+    "de": "Kabel",
+    "fr": "Câble",
+    "it": "Cavo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13888,7 +14475,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/elektrodenhalter-0c0a16-472.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/",
@@ -13901,7 +14495,11 @@
    "sku": "MASSEKABEL-25",
    "name": "MAHE Massekabel 25 mm²",
    "brand": "MAHE",
-   "type": "Kabel",
+   "type": {
+    "de": "Kabel",
+    "fr": "Câble",
+    "it": "Cavo"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -13959,7 +14557,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/massekabel-262794-434.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/",
@@ -13972,7 +14577,11 @@
    "sku": "MF405W",
    "name": "MAHE MF405W",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14030,7 +14639,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-460.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mf405w/",
@@ -14043,7 +14659,11 @@
    "sku": "MF240W",
    "name": "MAHE MF240W",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14101,7 +14721,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-460.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mf240w/",
@@ -14114,7 +14741,11 @@
    "sku": "MF155",
    "name": "MAHE MF155",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14172,7 +14803,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-460.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mf155/",
@@ -14185,7 +14823,11 @@
    "sku": "MF250",
    "name": "MAHE MF250",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14243,7 +14885,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/mig-brenner-456028-460.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mf250/",
@@ -14256,7 +14905,11 @@
    "sku": "MT170",
    "name": "MAHE MT170",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14314,7 +14967,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-242.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt170/",
@@ -14327,7 +14987,11 @@
    "sku": "MT170V",
    "name": "MAHE MT170 V",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14385,7 +15049,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-242.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt170v/",
@@ -14398,7 +15069,11 @@
    "sku": "MT180W",
    "name": "MAHE MT180W",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14456,7 +15131,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-242.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt180w/",
@@ -14469,7 +15151,11 @@
    "sku": "MT200W",
    "name": "MAHE MT200W",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14527,7 +15213,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-242.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt200w/",
@@ -14540,7 +15233,11 @@
    "sku": "MT260",
    "name": "MAHE MT260",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14598,7 +15295,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-242.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt260/",
@@ -14611,7 +15315,11 @@
    "sku": "MT260V",
    "name": "MAHE MT260 V",
    "brand": "MAHE",
-   "type": "Brenner",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14669,7 +15377,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/wig-brenner-4b3784-242.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/mt260v/",
@@ -14682,7 +15397,11 @@
    "sku": "PSHB65",
    "name": "MAHE PSHB 65",
    "brand": "MAHE",
-   "type": "Plasmabrenner",
+   "type": {
+    "de": "Plasmabrenner",
+    "fr": "Torche plasma",
+    "it": "Torcia plasma"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14740,7 +15459,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/pshb65/",
@@ -14753,7 +15479,11 @@
    "sku": "PSHB125",
    "name": "MAHE PSHB 125",
    "brand": "MAHE",
-   "type": "Plasmabrenner",
+   "type": {
+    "de": "Plasmabrenner",
+    "fr": "Torche plasma",
+    "it": "Torcia plasma"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14811,7 +15541,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/pshb125/",
@@ -14824,7 +15561,11 @@
    "sku": "PSHB160",
    "name": "MAHE PSHB 160",
    "brand": "MAHE",
-   "type": "Plasmabrenner",
+   "type": {
+    "de": "Plasmabrenner",
+    "fr": "Torche plasma",
+    "it": "Torcia plasma"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14882,7 +15623,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/pshb160/",
@@ -14895,7 +15643,11 @@
    "sku": "PSAB65",
    "name": "MAHE PSAB 65",
    "brand": "MAHE",
-   "type": "Plasmabrenner",
+   "type": {
+    "de": "Plasmabrenner",
+    "fr": "Torche plasma",
+    "it": "Torcia plasma"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -14953,7 +15705,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/psab65/",
@@ -14966,7 +15725,11 @@
    "sku": "PSAB125",
    "name": "MAHE PSAB 125",
    "brand": "MAHE",
-   "type": "Plasmabrenner",
+   "type": {
+    "de": "Plasmabrenner",
+    "fr": "Torche plasma",
+    "it": "Torcia plasma"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15024,7 +15787,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb125-ab85b8-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/psab125/",
@@ -15037,7 +15807,11 @@
    "sku": "VTBOX-S25",
    "name": "MAHE Verschleissteilebox S 25",
    "brand": "MAHE",
-   "type": "Verschleiss",
+   "type": {
+    "de": "Verschleiss",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15101,7 +15875,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-342.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-s25/",
@@ -15114,7 +15895,11 @@
    "sku": "VTBOX-PSHB65",
    "name": "MAHE Verschleissteilebox PSHB 65",
    "brand": "MAHE",
-   "type": "Verschleiss",
+   "type": {
+    "de": "Verschleiss",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15178,7 +15963,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-342.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb65/",
@@ -15191,7 +15983,11 @@
    "sku": "VTBOX-PSHB125",
    "name": "MAHE Verschleissteilebox PSHB 125",
    "brand": "MAHE",
-   "type": "Verschleiss",
+   "type": {
+    "de": "Verschleiss",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15255,7 +16051,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-342.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb125/",
@@ -15268,7 +16071,11 @@
    "sku": "VTBOX-PSHB160",
    "name": "MAHE Verschleissteilebox PSHB 160",
    "brand": "MAHE",
-   "type": "Verschleiss",
+   "type": {
+    "de": "Verschleiss",
+    "fr": "Pièces d’usure",
+    "it": "Parti di usura"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15332,7 +16139,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/pshb-kit-box-afd0eb-342.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/vtbox-pshb160/",
@@ -15345,7 +16159,11 @@
    "sku": "DRAHTVORSCHUBROLLEN",
    "name": "MAHE Drahtvorschubrollen",
    "brand": "MAHE",
-   "type": "Vorschubrolle",
+   "type": {
+    "de": "Vorschubrolle",
+    "fr": "Galet d’entraînement",
+    "it": "Rullo di traino"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15409,7 +16227,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/vorchubrolle-sfst4-8d1221-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/",
@@ -15422,7 +16247,11 @@
    "sku": "DRAHTVORSCHUBROLLEN-HYPER",
    "name": "MAHE Drahtvorschubrollen HyperMIG X",
    "brand": "MAHE",
-   "type": "Vorschubrolle",
+   "type": {
+    "de": "Vorschubrolle",
+    "fr": "Galet d’entraînement",
+    "it": "Rullo di traino"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15486,7 +16315,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/vorchubrolle-sfst4-8d1221-1000.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/",
@@ -15499,7 +16335,11 @@
    "sku": "ZWISCHENSCHLAUCHPAKET",
    "name": "MAHE Zwischenschlauchpaket",
    "brand": "MAHE",
-   "type": "Schlauchpaket",
+   "type": {
+    "de": "Schlauchpaket",
+    "fr": "Faisceau",
+    "it": "Fascio cavi"
+   },
    "category": {
     "de": "Zubehör",
     "fr": "Accessoires",
@@ -15557,7 +16397,14 @@
      "it": "Prezzo su richiesta"
     }
    },
-   "availability": "InStock",
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
    "image": "https://www.ves-tech.ch/assets/img/p/zsw-27144f-238.webp",
    "url": {
     "de": "https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/",

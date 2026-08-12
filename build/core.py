@@ -177,6 +177,7 @@ PK        = _load("PK")          # Kategorie-Icons
 UI        = _load("UI")          # 88 UI-Keys × de/fr/it
 CATTR     = _load("CATTR")
 SUBTR     = _load("SUBTR")
+VTTR      = _load("VTTR")      # Geraetetypen (Feld vt) je Sprache
 PDESC     = _load("PDESC")
 PNAME     = _load("PNAME")     # Gattungsnamen je Sprache
 SPECK     = _load("SPECK")
@@ -250,6 +251,23 @@ def subT(lang, name):
     if lang != "de" and name in SUBTR:
         return SUBTR[name][lang]
     return name
+
+
+def vtT(lang, vt):
+    """Der Geraetetyp (Feld vt) in der Sprache der Seite.
+
+    Bis zum 12.08.2026 wurde vt ueberall roh ausgegeben. Es steht sichtbar auf
+    jeder Zubehoerkarte, in der meta description jeder Produktseite, im
+    Einleitungssatz, im Suchindex, in products.json und in llms.txt - auf 114
+    der 154 franzoesischen und italienischen Produktseiten stand dadurch ein
+    deutsches Wort, bis hinein ins Google-Snippet.
+
+    Uebersetzungen in data/VTTR.json. Was dort fehlt, bleibt unveraendert
+    stehen; check.py meldet fehlende Eintraege.
+    """
+    if lang != "de" and vt in VTTR:
+        return VTTR[vt][lang]
+    return vt
 
 
 def pDesc(lang, p):
@@ -419,7 +437,7 @@ def verfahrenOf(lang, p):
     # poliert, das N1 neutralisiert; "Reinigen" waere fuer alle drei zu grob.
     # Erst ab zwei Disziplinen zaehlt die Vollstaendigkeit mehr als die Nuance.
     if len(grp) < 2:
-        return [p["vt"]]
+        return [vtT(lang, p["vt"])]
     out = []
     if "mig" in grp:
         out.append(t(lang, "v_mig"))
@@ -436,7 +454,7 @@ def verfahrenOf(lang, p):
         out.append(t(lang, "v_plasma"))
     if "reinigen" in grp:
         out.append(t(lang, "v_clean"))
-    return out or [p["vt"]]
+    return out or [vtT(lang, p["vt"])]
 
 
 def featOf(p):

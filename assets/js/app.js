@@ -791,11 +791,17 @@
       phone: (f.querySelector('[name=phone]') || {}).value || '',
       message: (f.querySelector('[name=message]') || {}).value || ''
     };
-    var body = 'Name / Firma: ' + data.name + '\nE-Mail: ' + data.email +
-      (data.phone ? '\nTelefon: ' + data.phone : '') +
+    /* Der Mailtext folgt der Sprache der Seite. Vorher war er fest deutsch:
+       wer im Tessin 'Invia richiesta' klickte, bekam einen Entwurf mit
+       'Name / Firma', 'Nachricht' und 'Gewuenschte Geraete'. Der Kasten
+       darum herum war laengst uebersetzt - nur der Text darin nicht. */
+    var body = t('mail_f_name') + ': ' + data.name +
+      '\n' + t('mail_f_mail') + ': ' + data.email +
+      (data.phone ? '\n' + t('mail_f_tel') + ': ' + data.phone : '') +
       (extraBody ? '\n\n' + extraBody : '') +
-      (data.message ? '\n\nNachricht:\n' + data.message : '') +
-      '\n\nGesendet über ' + location.origin + location.pathname + ' (' + (VT.lang || 'de') + ')';
+      (data.message ? '\n\n' + t('mail_f_msg') + ':\n' + data.message : '') +
+      '\n\n' + t('mail_f_sent') + ' ' + location.origin + location.pathname +
+      ' (' + (VT.lang || 'de') + ')';
 
     if (!VT.web3formsKey) { mailtoFallback(f, subject, body); return; }
 
@@ -841,15 +847,16 @@
         return '- ' + x.name + ' × ' + (x.qty || 1) +
           (x.url ? '  (' + location.origin + x.url + ')' : '');
       }).join('\n');
-      submitForm(cartForm, 'Anfrage VES-TECH (' + cart.length + ' Artikel)',
-        'Gewünschte Geräte:\n' + lines);
+      submitForm(cartForm,
+        t('mail_s_cart') + ' (' + cart.length + ' ' + t('mail_s_item') + ')',
+        t('mail_f_dev') + ':\n' + lines);
     });
   }
   var kForm = $('#kontaktForm');
   if (kForm) {
     kForm.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      submitForm(kForm, 'Kontaktanfrage VES-TECH Swiss');
+      submitForm(kForm, t('mail_s_kont'));
     });
   }
 

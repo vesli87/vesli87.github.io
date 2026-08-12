@@ -152,6 +152,72 @@ def specs():
     return bad, sorted(set(deviations))
 
 
+# Besonderheiten, die bewusst nicht woertlich mit mahe-online.de uebereinstimmen.
+#
+# Warum es diese Liste ueberhaupt gibt: fuer die technischen Daten kennt specs()
+# seit jeher den Unterschied zwischen "unerklaert" (Fehler) und "bewusst anders"
+# (Hinweis). Fuer die Besonderheiten gab es das nicht - jede gewollte Abweichung
+# zaehlte als Fehler. Das Skript endete deshalb dauerhaft mit Rueckgabewert 1,
+# waehrend die letzte Zeile "0 Fehler in den technischen Daten" meldete. Wer nur
+# die letzte Zeile liest, haelt den Lauf fuer sauber; wer den Rueckgabewert
+# auswertet, kann das Skript nicht als Tor benutzen - es sagt immer nein.
+# Genau davor warnt CLAUDE.md, das verlangt, verify_mahe.py nach jeder Aenderung
+# laufen zu lassen.
+#
+# Was hier steht, ist erlaubt. Alles andere ist weiterhin ein Fehler: taucht bei
+# einem Geraet ein neuer Unterschied auf, weil MAHE seinen Text geaendert hat
+# oder bei uns etwas verrutscht ist, faellt das Skript wieder durch.
+#
+# Die Eintraege muessen exakt stimmen - fehlt oder aendert sich eine Zeile,
+# greift die Ausnahme nicht mehr.
+BEWUSST = {
+    # Fuenfmal derselbe Grund: der Gedankenstrich ist auf Wunsch des Inhabers
+    # ueberall aus den Texten verschwunden; MAHE schreibt ihn, wir schreiben
+    # einen Doppelpunkt. Inhaltlich identisch.
+    "hcs1": {
+        "fehlt": ["Kurzschluss – Schutzsystem"],
+        "zuviel": ["Kurzschluss: Schutzsystem"],
+        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
+    },
+    "hypertig-ax": {
+        "fehlt": ["ActiveSpot – schnelle Heftfunktion"],
+        "zuviel": ["ActiveSpot: schnelle Heftfunktion"],
+        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
+    },
+    "hypertig-dx": {
+        "fehlt": ["ActiveSpot – schnelle Heftfunktion"],
+        "zuviel": ["ActiveSpot: schnelle Heftfunktion"],
+        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
+    },
+    "theta-120": {
+        "fehlt": ["Option Automaten – Schnittstelle"],
+        "zuviel": ["Option Automaten: Schnittstelle"],
+        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
+    },
+    "omega_pro": {
+        "fehlt": ["AC Mix – Tig"],
+        "zuviel": ["AC Mix: Tig"],
+        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
+    },
+    # Zwei Geraete tragen Punkte, die auf mahe-online.de nicht stehen. Beide
+    # stammen aus der MAHE Preisliste 2026 V11 und beschreiben den
+    # Lieferumfang. Sie sind Zusagen an den Kunden - wenn MAHE den Umfang
+    # aendert, muessen sie hier raus.
+    "mlf100": {
+        "fehlt": [],
+        "zuviel": ["Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten",
+                   "Mit Reinigungspinselständer mit Tropfschutz"],
+        "grund": "Lieferumfang aus der Preisliste, steht nicht auf der Website",
+    },
+    "theta-40": {
+        "fehlt": [],
+        "zuviel": ["Plasmaschneidbrenner S 25 in 4 m fest verbaut",
+                   "Massekabel 16 mm², 4 m, gehört zum Lieferumfang"],
+        "grund": "Lieferumfang aus der Preisliste, steht nicht auf der Website",
+    },
+}
+
+
 def main():
     if "--fresh" in sys.argv:
         print("Seiten und Tabellen neu laden …")
@@ -164,6 +230,7 @@ def main():
     ours_dev = json.loads((C.DATA / "HL_DEVICE.json").read_text("utf-8"))
     ours_pan = json.loads((C.DATA / "PANEL_HL_DEVICE.json").read_text("utf-8"))
     bad = 0
+    gewollt = []
 
     def cmp(label, ours, keys):
         nonlocal bad
@@ -176,14 +243,20 @@ def main():
         if ours == soll:
             print(f"  ok   {label:22} {len(soll):>2} Punkte")
             return
+        fehlt = [x for x in soll if x not in ours]
+        zuviel = [x for x in ours if x not in soll]
+        erlaubt = BEWUSST.get(label)
+        if erlaubt and sorted(fehlt) == sorted(erlaubt.get("fehlt", [])) \
+                  and sorted(zuviel) == sorted(erlaubt.get("zuviel", [])):
+            gewollt.append(f"{label}: {erlaubt['grund']}")
+            print(f"  ok*  {label:22} {len(ours):>2} Punkte  (bewusst anders)")
+            return
         bad += 1
         print(f"  ABWEICHUNG  {label}")
-        for x in soll:
-            if x not in ours:
-                print(f"       fehlt bei uns : {x}")
-        for x in ours:
-            if x not in soll:
-                print(f"       zu viel bei uns: {x}")
+        for x in fehlt:
+            print(f"       fehlt bei uns : {x}")
+        for x in zuviel:
+            print(f"       zu viel bei uns: {x}")
 
     print("GERÄTE")
     for pid, key in sorted(DEV.items()):
@@ -195,14 +268,23 @@ def main():
         cmp(pk, ours_pan.get(pk, {}).get("de", []), [key])
 
     n = len(DEV) + len(DEV_MULTI) + len(PANEL)
-    print(f"\n{n - bad}/{n} Besonderheiten stimmen wörtlich mit mahe-online.de überein")
+    print(f"\n{n - bad - len(gewollt)}/{n} Besonderheiten stimmen wörtlich mit "
+          f"mahe-online.de überein, {len(gewollt)} bewusst anders, {bad} abweichend")
+    if gewollt:
+        print("\nBewusst anders bei den Besonderheiten:")
+        for g in gewollt:
+            print("  " + g)
 
     sbad, deviations = specs()
     if deviations:
-        print("\nBewusst anders als MAHE:")
+        print("\nBewusst anders bei den technischen Daten:")
         for d in deviations:
             print("  " + d)
-    print(f"\n{sbad} Fehler in den technischen Daten")
+    # Die Schlusszeile nennt beide Zahlen. Vorher stand hier nur die zweite -
+    # wer sie las, hielt einen Lauf mit sieben abweichenden Besonderheiten fuer
+    # sauber, obwohl das Skript mit 1 endete.
+    print(f"\n{bad} Fehler bei den Besonderheiten, "
+          f"{sbad} Fehler in den technischen Daten")
     sys.exit(1 if bad or sbad else 0)
 
 

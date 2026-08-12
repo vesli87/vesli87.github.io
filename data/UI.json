@@ -123,7 +123,17 @@
   "mail_open": "Mailprogramm öffnen",
   "mail_copied": "Kopiert",
   "mail_copy_manual": "Bitte von Hand markieren und kopieren",
-  "ref_h": "Was Kunden sagen"
+  "ref_h": "Was Kunden sagen",
+  "footer_credit": "Produktdaten und Herstellerbilder: MAHE GmbH",
+  "mail_f_name": "Name / Firma",
+  "mail_f_mail": "E-Mail",
+  "mail_f_tel": "Telefon",
+  "mail_f_msg": "Nachricht",
+  "mail_f_sent": "Gesendet über",
+  "mail_f_dev": "Gewünschte Geräte",
+  "mail_s_cart": "Anfrage VES-TECH",
+  "mail_s_item": "Artikel",
+  "mail_s_kont": "Kontaktanfrage VES-TECH Swiss"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -249,7 +259,17 @@
   "mail_open": "Ouvrir la messagerie",
   "mail_copied": "Copié",
   "mail_copy_manual": "Veuillez sélectionner et copier à la main",
-  "ref_h": "Ce que disent les clients"
+  "ref_h": "Ce que disent les clients",
+  "footer_credit": "Données produits et images du fabricant : MAHE GmbH",
+  "mail_f_name": "Nom / entreprise",
+  "mail_f_mail": "E-mail",
+  "mail_f_tel": "Téléphone",
+  "mail_f_msg": "Message",
+  "mail_f_sent": "Envoyé via",
+  "mail_f_dev": "Appareils souhaités",
+  "mail_s_cart": "Demande VES-TECH",
+  "mail_s_item": "articles",
+  "mail_s_kont": "Demande de contact VES-TECH Swiss"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -375,6 +395,16 @@
   "mail_open": "Apri il programma di posta",
   "mail_copied": "Copiato",
   "mail_copy_manual": "Selezionate e copiate a mano",
-  "ref_h": "Cosa dicono i clienti"
+  "ref_h": "Cosa dicono i clienti",
+  "footer_credit": "Dati prodotto e immagini del produttore: MAHE GmbH",
+  "mail_f_name": "Nome / azienda",
+  "mail_f_mail": "E-mail",
+  "mail_f_tel": "Telefono",
+  "mail_f_msg": "Messaggio",
+  "mail_f_sent": "Inviato tramite",
+  "mail_f_dev": "Apparecchi desiderati",
+  "mail_s_cart": "Richiesta VES-TECH",
+  "mail_s_item": "articoli",
+  "mail_s_kont": "Richiesta di contatto VES-TECH Swiss"
  }
 }

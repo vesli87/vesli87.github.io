@@ -251,7 +251,12 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     klein = min(stufen[0], nat)
     if nat < (width or 400):
         sizes = f"{w}px"          # das Bild fuellt den Platz gar nicht aus
-    loading = "" if eager else 'loading="lazy" '
+    # Das eager geladene Bild ist auf Produktseiten das LCP-Element. Ohne
+    # fetchpriority stuft der Browser Bilder anfangs niedrig ein und hebt sie
+    # erst nach dem Layout an - die schwerste und sichtbarste Datei startet
+    # damit hinter Schriften und CSS. Das Hero der Startseite bekommt diese
+    # Auszeichnung seit jeher (render.py::HERO_PRELOAD), das Produktbild nicht.
+    loading = 'fetchpriority="high" ' if eager else 'loading="lazy" '
     # Rueckfall auf das Herstellerbild, falls die lokale Kopie fehlt: nur die
     # Adresse steht am Bild, das Verhalten liegt in app.js (bildRueckfall).
     # Frueher stand hier ein onerror-Attribut - 1530 Stueck ueber die Seite
@@ -744,7 +749,7 @@ def footer(lang):
       </ul></div>
     </div>
     <div class="fbar">
-      <span>© 2026 {e(C.t(lang,'site_name'))} · Produktdaten &amp; Bilder: MAHE GmbH ·
+      <span>© 2026 {e(C.t(lang,'site_name'))} · {e(C.t(lang,'footer_credit'))} ·
         <a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a> ·
         <a href="{e(C.u_page(lang,'terms'))}">{e(C.t(lang,'nav_agb'))}</a> ·
         <a href="{e(C.u_page(lang,'privacy'))}">{e(C.t(lang,'nav_datenschutz'))}</a></span>
@@ -763,7 +768,14 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
            "form_error", "form_required", "form_invalid_mail", "search_popular",
            "lupe_open", "lupe_close", "lupe_in", "lupe_out",
              "mail_h", "mail_p", "mail_copy", "mail_open", "mail_copied",
-             "mail_copy_manual"]
+             "mail_copy_manual",
+             # Bausteine der Anfrage-Mail. Ohne sie schrieb app.js den Text
+             # in jeder Sprache auf Deutsch: ein Kunde aus der Romandie
+             # klickte "Envoyer la demande" und bekam einen Entwurf mit
+             # "Anfrage VES-TECH" und "Gewuenschte Geraete".
+             "mail_f_name", "mail_f_mail", "mail_f_tel", "mail_f_msg",
+             "mail_f_sent", "mail_f_dev", "mail_s_cart", "mail_s_item",
+             "mail_s_kont"]
 
 
 def boot_json(lang):

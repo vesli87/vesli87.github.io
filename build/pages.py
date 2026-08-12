@@ -13,6 +13,26 @@ from render import e      # noqa: E402
 
 PANEL_DRAWN = json.loads((C.DATA / "PANEL_DRAWN.json").read_text("utf-8"))
 
+# Wie breit das Hauptbild einer Produktseite wirklich wird.
+#
+# Vorher stand hier "(max-width:900px) 92vw, 520px" - beide Zahlen falsch:
+#
+#   * Der Umbruch liegt nicht bei 900 px. .dgrid wird laut site.css:574 erst
+#     ab 1000 px einspaltig. Zwischen 901 und 1000 px stand das Bild also
+#     ueber die volle Breite, waehrend sizes 520 px versprach.
+#   * 92vw stimmt nie. Der Rahmen .dimg sitzt in .wrap (28 px Polster je
+#     Seite), und das Bild darin ist noch einmal 40 px eingerueckt
+#     (site.css:265: top/left 40px, width calc(100% - 80px)). Der Schlitz ist
+#     also 100vw - 136px; auf einem 375-px-Telefon 239 px, nicht 345.
+#
+# Nachgemessen am 12.08.2026: bei 1440 px sind es 510 px, bei 375 px 239 px -
+# beides deckt sich mit der Formel unten. Der Fehler kostete auf Telefonen mit
+# dreifacher Pixeldichte eine Stufe zu viel: 163 kB statt 79 kB fuer das
+# LCP-Element, bei jedem Aufruf.
+DIMG_SIZES = ("(max-width:1000px) calc(100vw - 136px), "
+              "(max-width:1280px) calc((100vw - 100px) / 2 - 80px), "
+              "510px")
+
 # Achtung: DLS[].k ist NICHT eindeutig – Produktkatalog und EN-1090-Zertifikat
 # tragen beide "PDF". Deshalb wird hier über den Titel identifiziert.
 DL_CATALOG = next(d for d in C.DLS if "Produktkatalog" in d["t"]["de"])
@@ -214,7 +234,7 @@ def media_html(lang, p, nm):
     # Daten und in der Merkmalsliste; auf dem Bild braucht es sie nicht.
     if len(bilder) == 1:
         return ('<div class="dimg">'
-                + R.img_tag(p["img"], "(max-width:900px) 92vw, 520px", cls="zoomable",
+                + R.img_tag(p["img"], DIMG_SIZES, cls="zoomable",
                             alt=haupt["alt"], eager=True, width=560)
                 + "</div>")
 
@@ -222,7 +242,7 @@ def media_html(lang, p, nm):
     for i, b in enumerate(bilder):
         slides += (f'<figure class="galslide{" active" if i == 0 else ""}" '
                    f'id="gs-{e(p["id"])}-{i}">'
-                   + R.img_tag(b["img"], "(max-width:900px) 92vw, 520px", cls="zoomable",
+                   + R.img_tag(b["img"], DIMG_SIZES, cls="zoomable",
                                alt=b["alt"], eager=(i == 0), width=560)
                    + (f'<figcaption>{e(b["cap"])}</figcaption>' if b["cap"] else "")
                    + "</figure>")
@@ -281,7 +301,7 @@ def acc_html(lang, p):
         cards += (
             f'<a class="acccard" href="{e(C.u_prod(lang, a))}">'
             f'<div class="im">{im}</div>'
-            f'<div class="bd"><div class="vt">{e(a["vt"])}</div><h3>{e(C.pName(lang, a))}</h3>'
+            f'<div class="bd"><div class="vt">{e(C.vtT(lang, a["vt"]))}</div><h3>{e(C.pName(lang, a))}</h3>'
             f'<p>{e(C.pDesc(lang, a))}</p></div></a>'
         )
     return f'<div class="accgrid">{cards}</div>'
@@ -541,7 +561,8 @@ def page_product(lang, p):
         title = cand
         if len(cand) <= 68:
             break
-    desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=p["vt"], desc=C.pDesc(lang, p)), 155)
+    desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=C.vtT(lang, p["vt"]),
+                       desc=C.pDesc(lang, p)), 155)
     crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
              (C.t(lang, "nav_products"), C.u_products(lang)),
              (C.catT(lang, c), C.u_cat(lang, p["cat"])),
@@ -595,7 +616,7 @@ def page_product(lang, p):
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'consult'))}</a>
       </div>
-      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=p['name'], vt=p['vt'], cat=C.catT(lang,c)))}</p>
+      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=p['name'], vt=C.vtT(lang, p['vt']), cat=C.catT(lang,c)))}</p>
     </div>
   </div>
 

@@ -131,7 +131,7 @@ def search_index(lang):
                   else C.REMOTE_IMG + C.full_img(p["img"])),
             # Suchtext nach Gewicht getrennt: Name / Typ / Rest
             "t1": norm(f"{C.pName(lang, p)} {p['name']} {p['id']}"),
-            "t2": norm(f"{p['vt']} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
+            "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
             "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)}"),
         })
     cats = []
@@ -178,7 +178,7 @@ def products_json():
             "sku": p["id"].upper(),
             "name": f"{C.BRAND} {p['name']}",
             "brand": C.BRAND,
-            "type": p["vt"],
+            "type": {l: C.vtT(l, p["vt"]) for l in C.LANGS},
             "category": {l: C.catT(l, cat) for l in C.LANGS},
             "subcategory": {l: C.subT(l, p["sub"]) for l in C.LANGS},
             "description": {l: C.pDesc(l, p) for l in C.LANGS},
@@ -197,7 +197,15 @@ def products_json():
             "materials": [C.matLabel("de", m) for m in C.matOf(p)],
             "price": {"model": "on-request", "currency": "CHF",
                       "note": {l: C.t(l, "poa") for l in C.LANGS}},
-            "availability": "InStock",
+            # Nicht "InStock". Diese Datei ist der Katalog fuer Antwort-
+            # maschinen - was hier steht, geben sie weiter. "InStock" ist ein
+            # Begriff aus schema.org und heisst: liegt am Lager. VES-TECH
+            # bestellt bei MAHE, sobald eine Anfrage kommt; auf jeder
+            # Produktseite steht deshalb "Verfuegbarkeit: Auf Anfrage". Die
+            # Datei behauptete das Gegenteil, in derselben Form wie ein Haendler
+            # mit vollem Lager. Jetzt sagt sie dasselbe wie die Seite.
+            "availability": {"model": "on-request",
+                             "note": {l: C.t(l, "avail_val") for l in C.LANGS}},
             "image": R.img_abs(p["img"], 1000),
             "url": {l: C.abs_url(C.u_prod(l, p)) for l in C.LANGS},
         })
@@ -307,7 +315,7 @@ def llms_txt():
         lines.append(f"### {C.catT(L,c)}")
         for p in C.products_of(c["id"]):
             lines.append(f"- [{C.BRAND} {p['name']}]({C.abs_url(C.u_prod(L, p))}): "
-                         f"{C.pDesc(L,p)} ({p['vt']})")
+                         f"{C.pDesc(L,p)} ({C.vtT(L, p['vt'])})")
         lines.append("")
     lines += ["## Verfahren"]
     for pr in C.PROC:
@@ -343,7 +351,7 @@ def llms_full():
         for p in C.products_of(c["id"]):
             out.append(f"### {C.BRAND} {p['name']}")
             out.append(f"URL: {C.abs_url(C.u_prod(L, p))}")
-            out.append(f"Kategorie: {C.catT(L,c)} / {C.subT(L, p['sub'])} · Typ: {p['vt']} "
+            out.append(f"Kategorie: {C.catT(L,c)} / {C.subT(L, p['sub'])} · Typ: {C.vtT(L, p['vt'])} "
                        f"· Art.-Nr.: {p['id'].upper()} · Preis: auf Anfrage (CHF)")
             out.append(C.pDesc(L, p))
             hl = C.highlightsOf(L, p)

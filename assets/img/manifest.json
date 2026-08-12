@@ -1006,22 +1006,9 @@
  },
  "panels/MPT_Plasmaschneidtisch.png": {
   "key": "mpt-plasmaschneidtisch",
-  "w": 3003,
-  "h": 1766,
-  "ratio": 0.5881,
-  "local": true,
-  "sizes": [
-   400,
-   1000,
-   1600,
-   2000
-  ]
- },
- "panels/MPT_MyPlasm_System.png": {
-  "key": "mpt-myplasm-system",
-  "w": 4800,
-  "h": 2700,
-  "ratio": 0.5625,
+  "w": 3344,
+  "h": 1882,
+  "ratio": 0.5628,
   "local": true,
   "sizes": [
    400,

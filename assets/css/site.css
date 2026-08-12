@@ -86,7 +86,14 @@
      dunklen Rahmen. Ohne JavaScript bleibt die erste Folie stehen, sie ist das
      LCP-Bild und wird vorgeladen. */
   .hero{background:#0E1013;display:grid;position:relative;overflow:hidden}
-  .hero-slide{grid-area:1/1;width:100%;display:grid;justify-items:center;background:#0E1013;
+  /* align-content:center — die beiden Folien haben verschiedene Seiten-
+     verhältnisse: 3:2 beim Schweisser, 16:9 beim Schneidtisch. Das Band ist so
+     hoch wie die höhere Folie; die flachere hätte sonst unten einen leeren
+     Streifen von 147 px stehen (gemessen bei 1440 px Fensterbreite). Zentriert
+     verteilt sich der Rest auf beide Seiten und liest sich als Rand, nicht als
+     Loch. */
+  .hero-slide{grid-area:1/1;width:100%;display:grid;justify-items:center;
+    align-content:center;background:#0E1013;
     opacity:0;visibility:hidden;transition:opacity .6s ease}
   .hero-slide.light{background:#fff}
   .hero-slide.active{opacity:1;visibility:visible}
@@ -97,12 +104,25 @@
   /* Der Textblock muss links von der Maschine bleiben - im Banner beginnt
      sie bei 40 % der Breite. Laenger gesetzt, lief die Zeile in den
      Bildschirm der Bedienkonsole hinein. */
-  /* Auf der hellen Folie steht die Schrift oben links: dort ist im Bild die
-     einzige freie Flaeche - links unten steht die Maschine, rechts das
-     Softwarefenster. Mittig gesetzt liefe der Text ueber den Bildschirm. */
+  /* Auf der hellen Folie steht die Schrift oben links.
+     Das war beim frueheren Bild unproblematisch: dort lag links oben eine
+     weisse Flaeche. Das Foto vom 05.08.2026 ist dagegen randlos - der
+     Bedienbildschirm reicht bis nach oben links, und dunkle Schrift darauf
+     war nicht mehr zu lesen.
+     Deshalb eine Lesbarkeitsschicht: ein weicher heller Verlauf, der nur die
+     obere linke Ecke aufhellt und nach rechts und unten schnell verschwindet.
+     Die Maschine, der Bildschirm und die Funken bleiben sichtbar. */
+  @media (min-width:641px){
+    .hero-slide.light .hero-inner::before{content:"";position:absolute;inset:0;z-index:1;
+      pointer-events:none;
+      background:
+        linear-gradient(105deg, rgba(255,255,255,.96) 0%, rgba(255,255,255,.88) 18%,
+                        rgba(255,255,255,.45) 34%, rgba(255,255,255,0) 48%),
+        linear-gradient(to bottom, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 62%)}
+  }
   .hero-slide.light .hero-txt{color:var(--ink);top:clamp(14px,7%,90px);transform:none;
     max-width:min(31%,400px)}
-  .hero-slide.light .hero-txt p{color:#4A453D}
+  .hero-slide.light .hero-txt p{color:#3A352E}
   .hero-txt .hk{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.16em;
     text-transform:uppercase;font-size:clamp(11px,1.1vw,14px);color:var(--accent)}
   .hero-txt h2{font-family:'DM Serif Display',serif;font-weight:400;text-transform:uppercase;
@@ -126,6 +146,12 @@
     .hero-txt{max-width:56%}
     .hero-txt h2{font-size:clamp(13px,3.4vw,22px);letter-spacing:0}
     .hero-txt p{display:none}
+    /* Der Verlauf von oben deckt auf dieser Breite fast das ganze Bild zu -
+       die Maschine war dann gar nicht mehr zu sehen. Auf dem Handy steht
+       deshalb nur eine kleine Flaeche direkt hinter der Schrift. */
+    .hero-slide.light .hero-txt{background:rgba(255,255,255,.86);
+      padding:10px 12px 12px;border-radius:8px;
+      backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
   }
   .hero-cta{background:#0E1013;padding:0 0 clamp(20px,3vw,34px)}
   .hero-cta .eyebrow{margin-bottom:18px}

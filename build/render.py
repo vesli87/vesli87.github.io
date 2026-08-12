@@ -50,11 +50,18 @@ HERO_MANIFEST = json.loads((C.ROOT / "assets/img/hero-manifest.json").read_text(
 
 
 def _hero(name):
-    """(srcset, groesste Datei, Breite, Hoehe) fuer eine Herofolie."""
+    """(srcset, groesste Datei, Breite, Hoehe) fuer eine Herofolie.
+
+    Mit ?v=<hash> wie bei CSS und JS. Die Dateinamen der Herobilder aendern
+    sich beim Austausch nicht - ohne diesen Anhang sah ein wiederkehrender
+    Besucher noch tagelang das alte Bild aus seinem Zwischenspeicher. Bei den
+    Produktbildern waere derselbe Anhang unnoetig: die heissen nach dem Inhalt
+    ihrer Vorlage und aendern sich ohnehin mit.
+    """
     m = HERO_MANIFEST[name]
     stufen = m["sizes"]
-    srcset = ", ".join(f"/assets/img/{name}-{s}.webp {s}w" for s in stufen)
-    return srcset, f"/assets/img/{name}-{stufen[-1]}.webp", m["w"], m["h"]
+    srcset = ", ".join(_ver(f"/assets/img/{name}-{s}.webp") + f" {s}w" for s in stufen)
+    return (srcset, _ver(f"/assets/img/{name}-{stufen[-1]}.webp"), m["w"], m["h"])
 
 
 HERO_SRCSET, HERO_SRC, HERO_W, HERO_H = _hero("hero")
@@ -64,9 +71,16 @@ HERO_SRCSET, HERO_SRC, HERO_W, HERO_H = _hero("hero")
 HERO_PRELOAD = (f'<link rel="preload" as="image" href="{HERO_SRC}" '
                 f'imagesrcset="{HERO_SRCSET}" imagesizes="100vw" fetchpriority="high">')
 
-# Zweite Herofolie: der Plasmaschneidtisch, freigestellt auf demselben Dunkel
-# wie das Band. Sie wird NICHT vorgeladen - das erste Bild bleibt das LCP-
-# Element, die zweite Folie holt der Browser erst, wenn sie an die Reihe kommt.
+# Zweite Herofolie: der Plasmaschneidtisch. Sie wird NICHT vorgeladen - das
+# erste Bild bleibt das LCP-Element.
+#
+# Sie stand aber auch auf loading="lazy", und das war falsch: die Folie liegt
+# uebereinander mit der ersten und ist mit visibility:hidden ausgeblendet.
+# Ein Browser holt ein solches Bild ueberhaupt nicht - gemessen am 05.08.2026
+# war es nach sieben Sekunden noch immer nicht geladen. Nach dem Umschalten
+# bei Sekunde 5 sah man also erst eine weisse Flaeche, bis 137 kB nachgeladen
+# waren. Jetzt: loading="eager" mit fetchpriority="low" - der Browser holt es,
+# aber erst wenn das Wichtige durch ist.
 HERO2_SRCSET, HERO2_SRC, HERO2_W, HERO2_H = _hero("hero-mpt")
 
 CSS_URL = _ver("/assets/css/site.css")

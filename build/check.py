@@ -136,6 +136,32 @@ def check_ld_node(where, node, types, ids):
             err(f"{where}: BreadcrumbList mit luecken­hafter position-Folge {pos}")
 
 
+def referenzen():
+    """Kundenstimmen: keine ohne schriftliche Freigabe, keine ohne Firma.
+
+    Eine Referenz namentlich zu nennen ist eine Bearbeitung von Personendaten
+    (revDSG); ohne Zustimmung hat sie auf der Seite nichts verloren. Und eine
+    erfundene Stimme waere eine irrefuehrende Angabe nach UWG Art. 3 Abs. 1
+    lit. b. Dieser Waechter kann das Erfinden nicht verhindern - er stellt
+    aber sicher, dass jeder Eintrag die Freigabe ausdruecklich behauptet.
+    """
+    for i, r in enumerate(C.REF.get("refs", [])):
+        wo = f"data/REF.json[{i}]"
+        if not r.get("firma"):
+            err(f"{wo}: Referenz ohne Firma")
+        if not r.get("freigabe"):
+            err(f"{wo}: Referenz ohne 'freigabe': true - wird nicht ausgegeben")
+        txt = r.get("text") or {}
+        if not txt.get("de"):
+            err(f"{wo}: Referenz ohne deutschen Text")
+        for l in ("fr", "it"):
+            if not txt.get(l):
+                warn(f"{wo}: Referenz ohne {l.upper()}-Fassung")
+        g = r.get("geraet")
+        if g and g not in C.BY_ID:
+            err(f"{wo}: Referenz nennt unbekanntes Geraet {g!r}")
+
+
 def reihenfolge():
     """data/P.json muss nach Kategorie und Unterkategorie gruppiert bleiben.
 
@@ -167,6 +193,7 @@ def main():
     if len(pages) < 200:
         err(f"nur {len(pages)} Seiten gefunden – Build unvollständig?")
 
+    referenzen()
     reihenfolge()
 
     titles, descs = collections.Counter(), collections.Counter()

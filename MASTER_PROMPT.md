@@ -29,7 +29,7 @@
     (Quelle: `build/core.py::WORKSHOP`).
   - Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz —
     nur im Impressum, in AGB/Datenschutz und auf der Kontaktseite
-  - +41 76 710 91 39 · `info@ves-tech.ch` · telefonisch erreichbar
+  - +41 76 710 91 39 · `vestechswiss@gmail.com` · telefonisch erreichbar
     Mo–Do 07:30–17:00 · Fr 07:30–11:30
   - Die Zeiten sind **Telefonzeiten**, keine Öffnungszeiten: sie stehen als
     `hoursAvailable` am ContactPoint, **nicht** als `openingHoursSpecification`
@@ -44,12 +44,15 @@
   `vesli87.github.io` leitet per 301 dorthin um. Gesetzt über `SITE` und
   `EMIT_CNAME` in `core.py`; die eigene Domain steht in der Pages-Konfiguration,
   nicht in der Datei `CNAME` (siehe 14a).
-- **E-Mail:** `info@ves-tech.ch`. Das Postfach liegt bei Infomaniak; die Adresse
-  funktioniert nur, solange in der DNS-Zone ein **MX-Eintrag** steht. Ohne MX
-  fällt ein sendender Server auf den A-Record zurück — und der zeigt auf GitHub
-  Pages, das keine Mail annimmt. Vor jeder Änderung an der Adresse prüfen:
-  `dig +short MX ves-tech.ch`. Ebenso muss der SPF-TXT-Eintrag den Mailserver
-  erlauben; `v=spf1 -all` bedeutet „diese Domain versendet keine Mail".
+- **E-Mail:** `vestechswiss@gmail.com`. Entscheidung des Inhabers vom
+  05.08.2026. Eine Adresse `info@ves-tech.ch` war vorbereitet und wurde wieder
+  verworfen; sie hätte ein Postfach bei Infomaniak und einen **MX-Eintrag** in
+  der DNS-Zone gebraucht. Ohne MX fällt ein sendender Server auf den A-Record
+  zurück, und der zeigt auf GitHub Pages, das keine Mail annimmt. Wer die
+  Adresse eines Tages doch umstellt, prüft zuerst `dig +short MX ves-tech.ch`
+  und setzt den SPF-Eintrag von `v=spf1 -all` auf den Mailserver um — der
+  jetzige Wert bedeutet „diese Domain versendet keine Mail", was zur
+  Gmail-Adresse passt.
 
 ## 2. Architektur
 
@@ -522,9 +525,13 @@ ein Hosting mit eigenen Kopfzeilen (z. B. Infomaniak oder Cloudflare davor).
 
 ## 16. Offene Punkte
 
-- Web3Forms-Key eintragen (sonst `mailto:`-Fallback)
-- `ves-tech.ch` registrieren (bei nic.ch frei), DNS setzen, Postfach einrichten,
-  danach `SITE` + `EMIT_CNAME` + `COMPANY["email"]` umstellen
+- **Web3Forms-Key eintragen.** Bis dahin gehen Anfragen über das Mailprogramm.
+  Seit dem 05.08.2026 ist dieser Rückfall brauchbar: statt nur `mailto:`
+  aufzurufen und „Mailprogramm geöffnet“ zu melden, bleibt die fertige Anfrage
+  mit Adresse und Kopierknopf sichtbar stehen. Damit geht nichts mehr verloren,
+  wenn kein Mailkonto eingerichtet ist. Ersetzt aber keinen echten Versand:
+  Konto auf web3forms.com, Schlüssel nach `build/config.local.json` als
+  `{"web3forms_key": "…"}` — die Datei steht in `.gitignore`.
 - Google Search Console und Bing Webmaster Tools verifizieren, Sitemap einreichen.
   Weg: Domain-Property in der Search Console anlegen, den TXT-Eintrag im
   Infomaniak-Manager **zusätzlich** zum bestehenden SPF-Eintrag setzen (mehrere
@@ -535,5 +542,17 @@ ein Hosting mit eigenen Kopfzeilen (z. B. Infomaniak oder Cloudflare davor).
   bei Google und Bing, nicht auf dem Gerät der Besucher. Die Zusage
   „keine Analyse- oder Statistikwerkzeuge“ bleibt damit wahr.
 - Google Business Profile für Bronschhofen anlegen (stärkster lokaler SEO-Hebel)
-- Kategorie-Hero-Bilder, Verbrauchsmaterial für Cleaner, Garantieregistrierung
-- Echte Datenblatt-PDFs pro Gerät statt nur Katalog und Zertifikat
+- Kategorie-Hero-Bilder (die vier Kategorieseiten zeigen nur Text),
+  Verbrauchsmaterial für Cleaner, Garantieregistrierung
+- **Echte Kundenstimmen.** `data/REF.json` ist vorbereitet und leer; der Block
+  auf der Startseite und die `Review`-Auszeichnung erscheinen erst, wenn dort
+  ein Eintrag mit `"freigabe": true` steht. Erfundene Referenzen kommen nicht
+  hinein — die Begründung steht in der Datei. Nach einer erledigten Reparatur
+  kurz fragen, ob man zwei Sätze zitieren darf.
+- **CAA-Eintrag** in der DNS-Zone (siehe 15a)
+- **`'unsafe-inline'` aus der CSP** — dafür den Bildrückfall aus dem
+  `onerror`-Attribut nach `app.js` verlegen (siehe 15a)
+
+Erledigt und deshalb gestrichen: eigene Domain samt DNS, Datenblatt-PDFs je
+Gerät (64 Dokumente für 27 Geräte in `data/DLDEV.json`), erzwungenes HTTPS,
+Servicebereich mit eigenen Seiten.

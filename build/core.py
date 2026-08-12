@@ -189,6 +189,7 @@ PANEL_SVG_SMALL = _load("PANEL_SVG")
 SPECMAP   = _load("SPECMAP")     # Produkt -> Tabelle(n) bei MAHE
 SPECROW   = _load("SPECROW")     # Zeilenbeschriftung -> fr/it
 SPECNOTE  = _load("SPECNOTE")    # Fussnote unter der Tabelle
+REF       = _load("REF")         # echte Kundenstimmen, siehe data/REF.json
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
@@ -476,6 +477,30 @@ def optionsOf(lang, p):
     if not e:
         return []
     return e.get(lang) or e.get("de") or []
+
+
+def referenzen(lang, geraet=None):
+    """Kundenstimmen mit vorliegender Freigabe.
+
+    Ohne "freigabe": true faellt ein Eintrag heraus - eine Firma namentlich zu
+    nennen ist eine Bearbeitung von Personendaten, und ohne Zustimmung hat sie
+    auf der Seite nichts verloren. Erfundene Stimmen gibt es hier ohnehin
+    nicht; die Begruendung steht in data/REF.json.
+    """
+    out = []
+    for r in REF.get("refs", []):
+        if not r.get("freigabe"):
+            continue
+        if geraet and r.get("geraet") != geraet:
+            continue
+        txt = (r.get("text") or {})
+        satz = txt.get(lang) or txt.get("de")
+        if not satz or not r.get("firma"):
+            continue
+        out.append({"firma": r["firma"], "ort": r.get("ort", ""),
+                    "person": r.get("person", ""), "rolle": r.get("rolle", ""),
+                    "text": satz, "geraet": r.get("geraet"), "datum": r.get("datum", "")})
+    return out
 
 
 def galleryOf(lang, p):

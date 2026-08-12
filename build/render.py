@@ -420,14 +420,29 @@ def ld_webpage(lang, url, title, desc, extra=None):
 
 FONTS_URL = _ver("/assets/fonts/fonts.css")
 
-# Diese beiden Schnitte stehen auf jeder Seite über dem Falz (Anton in der H1,
-# Inter im Fliesstext) – preload startet ihren Download vor dem CSS-Parsing.
-# crossorigin ist bei Schriften auch für dieselbe Herkunft Pflicht.
+# Diese vier Schnitte stehen auf jeder Seite über dem Falz – preload startet
+# ihren Download vor dem CSS-Parsing. crossorigin ist bei Schriften auch für
+# dieselbe Herkunft Pflicht.
+#
+#   Inter            Fliesstext
+#   Anton            Wortmarke VES-TECH
+#   DM Serif Display die H1 jeder Seite. Sie stand bis zum 05.08.2026 nicht
+#                    hier - der grösste Text der Seite wurde also erst nach dem
+#                    CSS neu gezeichnet.
+#   Barlow Cond. 700 Navigation, Schaltflächen, Tabellenköpfe; mit 66 Stellen
+#                    die meistbenutzte Familie im Stylesheet.
+#
+# Nur die latin-Schnitte: latin-ext holt der Browser dank unicode-range
+# ohnehin nur, wenn ein Zeichen daraus vorkommt.
 FONT_PRELOAD = (
     '<link rel="preload" as="font" type="font/woff2" crossorigin '
     'href="/assets/fonts/inter-400-700-latin.woff2">\n'
     '<link rel="preload" as="font" type="font/woff2" crossorigin '
-    'href="/assets/fonts/anton-400-latin.woff2">'
+    'href="/assets/fonts/anton-400-latin.woff2">\n'
+    '<link rel="preload" as="font" type="font/woff2" crossorigin '
+    'href="/assets/fonts/dm-serif-display-400-latin.woff2">\n'
+    '<link rel="preload" as="font" type="font/woff2" crossorigin '
+    'href="/assets/fonts/barlow-condensed-700-latin.woff2">'
 )
 
 
@@ -639,7 +654,9 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
            "search_group_products", "search_group_cats", "search_group_procs",
            "search_group_dl", "search_min_chars", "form_sending", "form_success",
            "form_error", "form_required", "form_invalid_mail", "search_popular",
-           "lupe_open", "lupe_close", "lupe_in", "lupe_out"]
+           "lupe_open", "lupe_close", "lupe_in", "lupe_out",
+             "mail_h", "mail_p", "mail_copy", "mail_open", "mail_copied",
+             "mail_copy_manual"]
 
 
 def boot_script(lang):
@@ -761,6 +778,47 @@ def usp_row(lang):
         for h, p in items
     )
     return f'<section class="usps"><div class="wrap"><div class="usprow">{cards}</div></div></section>'
+
+
+def ref_block(lang, geraet=None):
+    """Kundenstimmen. Gibt es keine mit Freigabe, kommt gar nichts - ein
+    leerer Kasten mit der Ueberschrift "Referenzen" waere schlimmer als
+    nichts, weil er die Luecke betont."""
+    refs = C.referenzen(lang, geraet)
+    if not refs:
+        return ""
+    karten = ""
+    for x in refs:
+        wer = ", ".join(p for p in (x["person"], x["rolle"]) if p)
+        karten += (
+            f'<figure class="refcard">'
+            f'<blockquote><p>{e(x["text"])}</p></blockquote>'
+            f'<figcaption><b>{e(x["firma"])}</b>'
+            + (f'<span>{e(x["ort"])}</span>' if x["ort"] else "")
+            + (f'<span>{e(wer)}</span>' if wer else "")
+            + "</figcaption></figure>")
+    return (f'<section class="refs"><div class="wrap">'
+            f'<h2 class="refs-h">{e(C.t(lang, "ref_h"))}</h2>'
+            f'<div class="refrow">{karten}</div></div></section>')
+
+
+def ld_reviews(lang):
+    """Review-Knoten am Organization - nur fuer Stimmen mit Freigabe.
+
+    Ohne echte Eintraege wird gar nichts ausgegeben. Eine erfundene
+    Review-Auszeichnung waere Spam im Sinne der Google-Richtlinien und
+    zugleich eine irrefuehrende Angabe nach UWG Art. 3 Abs. 1 lit. b.
+    """
+    refs = C.referenzen(lang)
+    if not refs:
+        return []
+    return [{
+        "@type": "Review",
+        "itemReviewed": {"@id": f"{C.SITE}/#organization"},
+        "author": {"@type": "Organization", "name": x["firma"]},
+        "reviewBody": x["text"],
+        **({"datePublished": x["datum"]} if x["datum"] else {}),
+    } for x in refs]
 
 
 def faq_block(lang, items, h=None):

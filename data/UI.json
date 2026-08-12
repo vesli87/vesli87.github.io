@@ -116,7 +116,14 @@
   "lupe_open": "Bild vergrössern",
   "lupe_close": "Schliessen",
   "lupe_in": "Näher heran",
-  "lupe_out": "Ganzes Bild"
+  "lupe_out": "Ganzes Bild",
+  "mail_h": "Anfrage bereit zum Senden",
+  "mail_p": "Ihr Mailprogramm sollte sich geöffnet haben. Falls nicht: Text kopieren und an diese Adresse senden.",
+  "mail_copy": "Text kopieren",
+  "mail_open": "Mailprogramm öffnen",
+  "mail_copied": "Kopiert",
+  "mail_copy_manual": "Bitte von Hand markieren und kopieren",
+  "ref_h": "Was Kunden sagen"
  },
  "fr": {
   "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -235,7 +242,14 @@
   "lupe_open": "Agrandir l'image",
   "lupe_close": "Fermer",
   "lupe_in": "Zoomer",
-  "lupe_out": "Image entière"
+  "lupe_out": "Image entière",
+  "mail_h": "Demande prête à être envoyée",
+  "mail_p": "Votre programme de messagerie devrait s’être ouvert. Sinon : copiez le texte et envoyez-le à cette adresse.",
+  "mail_copy": "Copier le texte",
+  "mail_open": "Ouvrir la messagerie",
+  "mail_copied": "Copié",
+  "mail_copy_manual": "Veuillez sélectionner et copier à la main",
+  "ref_h": "Ce que disent les clients"
  },
  "it": {
   "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -354,6 +368,13 @@
   "lupe_open": "Ingrandisci l'immagine",
   "lupe_close": "Chiudi",
   "lupe_in": "Ingrandisci",
-  "lupe_out": "Immagine intera"
+  "lupe_out": "Immagine intera",
+  "mail_h": "Richiesta pronta per l’invio",
+  "mail_p": "Il programma di posta dovrebbe essersi aperto. In caso contrario: copiate il testo e inviatelo a questo indirizzo.",
+  "mail_copy": "Copia il testo",
+  "mail_open": "Apri il programma di posta",
+  "mail_copied": "Copiato",
+  "mail_copy_manual": "Selezionate e copiate a mano",
+  "ref_h": "Cosa dicono i clienti"
  }
 }

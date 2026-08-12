@@ -477,6 +477,63 @@
   .fcols ul{list-style:none;line-height:2}
   .fcols a{color:var(--muted);font-size:14px;cursor:pointer}
   .fcols a:hover{color:var(--white)}
+
+  /* Rückfall, wenn kein Formulardienst eingerichtet ist: die fertige Anfrage
+     bleibt sichtbar stehen, statt mit mailto: ins Leere zu greifen. */
+  .mfall{margin-top:18px;padding:16px;border:1px solid var(--accent);border-radius:8px;background:var(--panel)}
+  .mfall-h{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:16px;color:var(--white)}
+  .mfall-p{color:var(--muted);font-size:14px;line-height:1.6;margin-top:6px}
+  .mfall-a{margin-top:10px;font-size:16px}
+  .mfall-a a{color:var(--accent);font-weight:700}
+  .mfall-t{width:100%;margin-top:12px;padding:10px;font-size:16px;line-height:1.5;
+    border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--white);
+    font-family:inherit;resize:vertical}
+  .mfall-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .mfall-copy,.mfall-open{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;
+    letter-spacing:.05em;font-size:14px;padding:11px 18px;border-radius:6px;cursor:pointer;
+    border:1px solid var(--accent);text-decoration:none;display:inline-block}
+  .mfall-copy{background:var(--accent);color:#111}
+  .mfall-open{background:transparent;color:var(--accent)}
+  .mfall-copy:hover{filter:brightness(1.08)}
+  .mfall-open:hover{background:var(--accent);color:#111}
+
+  /* Druck: eine Produktseite wird ausgedruckt, um die technischen Daten in die
+     Werkstatt oder in eine Offerte zu nehmen. Navigation, Schubladen, Suche und
+     Fusszeile haben auf Papier nichts verloren; Links bekommen ihre Adresse
+     dazu, sonst zeigt das Blatt unterstrichene Wörter ohne Ziel. */
+  @media print{
+    header,.topbar,.mega,.cart,.scrim,footer,.toast,.lupe,.galnav,.galthumbs,
+    .searchbar,.tabbar,.usps,.hero,.hero2,.mfall,.pcard .foot,.add,.crumbs{display:none!important}
+    *{background:#fff!important;color:#000!important;box-shadow:none!important}
+    body{font-size:11pt;line-height:1.45}
+    .wrap{max-width:100%;padding:0}
+    .tabpane{display:block!important;page-break-inside:auto}
+    h1{font-size:20pt;margin-bottom:6pt}
+    h2,h3{page-break-after:avoid}
+    table{page-break-inside:auto;width:100%;border-collapse:collapse}
+    tr{page-break-inside:avoid}
+    th,td{border:1px solid #999;padding:4pt 6pt}
+    img{max-width:60mm;height:auto;page-break-inside:avoid}
+    a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444!important}
+    a[href^="/"]::after{content:" (www.ves-tech.ch" attr(href) ")";font-size:8pt;color:#444!important}
+    .dimg,.dmedia{max-width:70mm}
+  }
+
+
+  /* Kundenstimmen. Erscheinen nur, wenn in data/REF.json echte Eintraege mit
+     Freigabe stehen - siehe dort, warum nichts erfunden wird. */
+  .refs{background:var(--bg2);border-top:1px solid var(--line);padding:52px 0}
+  .refs-h{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;
+    letter-spacing:.08em;font-size:15px;color:var(--muted-2);margin-bottom:22px}
+  .refrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+  .refcard{border-left:3px solid var(--accent);padding-left:18px}
+  .refcard blockquote p{font-family:'DM Serif Display',serif;font-weight:400;
+    font-size:19px;line-height:1.45;color:var(--white)}
+  .refcard figcaption{margin-top:12px;font-size:13.5px;color:var(--muted)}
+  .refcard figcaption b{display:block;color:var(--white);font-family:'Barlow Condensed';
+    font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:15px}
+  .refcard figcaption span{display:block}
+
   .fbar{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted-2);font-size:12.5px}
   .fbar .soc{display:flex;gap:10px}
   .fbar .soc a{width:34px;height:34px;border:1px solid var(--line);border-radius:4px;display:grid;place-items:center;color:var(--muted);font-family:'Barlow Condensed';font-weight:700;font-size:12px}

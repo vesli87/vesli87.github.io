@@ -732,10 +732,48 @@
     return ok;
   }
 
-  function mailtoFallback(subject, body) {
-    window.location.href = 'mailto:' + VT.mailto +
+  /* Ohne Web3Forms-Schluessel geht die Anfrage ueber das Mailprogramm. Frueher
+     wurde nur mailto: aufgerufen und "Mailprogramm geoeffnet" gemeldet - auch
+     dann, wenn gar keines eingerichtet ist. Auf einem Rechner ohne Mailkonto
+     passierte also nichts, und die Anfrage war weg.
+
+     Jetzt bleibt der fertige Text sichtbar stehen, mit Adresse und Kopierknopf.
+     Damit geht keine Anfrage mehr verloren, auch wenn mailto: ins Leere greift. */
+  function mailtoFallback(f, subject, body) {
+    var link = 'mailto:' + VT.mailto +
       '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    toast(t('opened_mail'));
+    try { window.location.href = link; } catch (e) { /* egal, der Kasten bleibt */ }
+
+    var box = f ? f.querySelector('.mfall') : null;
+    if (!box && f) {
+      box = document.createElement('div');
+      box.className = 'mfall';
+      f.appendChild(box);
+    }
+    if (!box) { toast(t('opened_mail')); return; }
+    box.innerHTML =
+      '<p class="mfall-h">' + esc(t('mail_h', 'Anfrage bereit zum Senden')) + '</p>' +
+      '<p class="mfall-p">' + esc(t('mail_p', 'Ihr Mailprogramm sollte sich geoeffnet haben. ' +
+        'Falls nicht: Text kopieren und an folgende Adresse senden.')) + '</p>' +
+      '<p class="mfall-a"><a href="mailto:' + esc(VT.mailto) + '">' + esc(VT.mailto) + '</a></p>' +
+      '<textarea class="mfall-t" rows="8" readonly></textarea>' +
+      '<div class="mfall-btns">' +
+        '<button type="button" class="mfall-copy">' + esc(t('mail_copy', 'Text kopieren')) + '</button>' +
+        '<a class="mfall-open" href="' + esc(link) + '">' + esc(t('mail_open', 'Mailprogramm oeffnen')) + '</a>' +
+      '</div>';
+    box.querySelector('.mfall-t').value = body;
+    box.querySelector('.mfall-copy').addEventListener('click', function () {
+      var ta = box.querySelector('.mfall-t');
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      if (navigator.clipboard && !ok) {
+        navigator.clipboard.writeText(body).then(function () { toast(t('mail_copied', 'Kopiert')); });
+      } else {
+        toast(t(ok ? 'mail_copied' : 'mail_copy_manual', ok ? 'Kopiert' : 'Bitte von Hand markieren'));
+      }
+    });
+    box.scrollIntoView({ block: 'nearest' });
   }
 
   function submitForm(f, subject, extraBody) {
@@ -754,7 +792,7 @@
       (data.message ? '\n\nNachricht:\n' + data.message : '') +
       '\n\nGesendet über ' + location.origin + location.pathname + ' (' + (VT.lang || 'de') + ')';
 
-    if (!VT.web3formsKey) { mailtoFallback(subject, body); return; }
+    if (!VT.web3formsKey) { mailtoFallback(f, subject, body); return; }
 
     btn.disabled = true;
     if (status) { status.className = 'fstatus'; status.textContent = t('form_sending'); }
@@ -785,7 +823,7 @@
     }).catch(function () {
       btn.disabled = false;
       if (status) { status.className = 'fstatus err'; status.textContent = t('form_error'); }
-      mailtoFallback(subject, body);
+      mailtoFallback(f, subject, body);
     });
   }
 

@@ -377,6 +377,7 @@ def page_home(lang):
 </div></section>
 
 {R.usp_row(lang)}
+{R.ref_block(lang)}
 
 <section class="programm"><div class="wrap">
   <p class="p-eyebrow">{e(C.t(lang,'prog_eyebrow'))}</p>
@@ -398,7 +399,7 @@ def page_home(lang):
   <p class="more"><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))} →</a></p>
 </div></section>
 """
-    ld = [R.ld_org(lang), R.ld_website(lang),
+    ld = R.ld_reviews(lang) + [R.ld_org(lang), R.ld_website(lang),
           R.ld_webpage(lang, url, C.t(lang, "home_title"), C.t(lang, "home_desc"),
                        {"@type": ["WebPage", "CollectionPage"]}),
           R.ld_faq_subset(lang, faq6, url)]

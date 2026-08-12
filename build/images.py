@@ -164,10 +164,27 @@ def main():
             ziel = min(nenn, w)
             if ziel not in stufen:
                 stufen.append(ziel)
+        # Qualitaet nach Groesse der Vorlage. Bei einem 242 px breiten
+        # Herstellerfoto ist jeder Bildpunkt kostbar - und die Datei ist mit
+        # 3 kB ohnehin winzig, ein paar Kilobyte mehr fallen nicht auf. Bei
+        # einer 3000 px breiten Vorlage waere dieselbe Qualitaet reine
+        # Verschwendung: dort traegt die Aufloesung die Schaerfe.
+        #
+        # Gemessen am 05.08.2026: 16 der 86 Bilder auf der Website reichen nur
+        # fuer einen 1x-Bildschirm, weil MAHE keine groesseren Vorlagen hat.
+        # Aus denen wird mit dieser Staffel wenigstens das Letzte herausgeholt.
+        def guete(breite):
+            # Nur bei wirklich kleinen Vorlagen lohnt die hoehere Guete: dort
+            # traegt jeder Bildpunkt, und die Datei bleibt trotzdem winzig.
+            # Bei 800 px war der Unterschied zwischen 82 und 88 kaum zu sehen,
+            # kostete aber 18 kB pro Datei - gemessen am 05.08.2026.
+            return "92" if breite < 600 else "82"
+
         if has("cwebp"):
+            q = guete(w)
             for size in stufen:
                 dst = OUT / f"{k}-{size}.webp"
-                subprocess.run(["cwebp", "-quiet", "-q", "82", "-alpha_q", "90",
+                subprocess.run(["cwebp", "-quiet", "-q", q, "-alpha_q", "90",
                                 "-sharp_yuv", "-resize", str(size), "0",
                                 str(src), "-o", str(dst)],
                                capture_output=True)

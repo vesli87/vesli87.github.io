@@ -319,6 +319,70 @@ def clip(s, n):
 # Seiten
 # --------------------------------------------------------------------------
 
+def hero_folien(lang):
+    """Die Folien des Bandes, gesteuert von core.HERO_SLIDES.
+
+    Frueher standen beide Folien fest im Markup, samt zweier Punkte darunter.
+    Eine Folie wegzunehmen hiess: drei Stellen aendern und hoffen, dass die
+    Punkte dazu passen. Jetzt entscheidet eine Liste, und alles andere folgt -
+    auch die Zaehlung "Folie 1 von 2" in der Beschriftung fuer Screenreader.
+    """
+    n = len(C.HERO_SLIDES)
+    aus = []
+    for k, name in enumerate(C.HERO_SLIDES):
+        srcset, src, w, h = R._hero(name)
+        hell = " light" if name != "hero" else ""
+        aktiv = " active" if k == 0 else ""
+        # Die erste Folie ist das LCP-Element und wird vorgeladen; jede weitere
+        # holt der Browser mit niedriger Prioritaet, aber sie muss geholt
+        # werden: unter visibility:hidden wuerde loading="lazy" gar nichts tun.
+        prio = ('fetchpriority="high"' if k == 0
+                else 'loading="eager" fetchpriority="low"')
+        alt_txt = (f"{C.BRAND} HyperMIG SX: Schweissanlagen bei {C.t(lang,'site_name')}"
+                   if name == "hero"
+                   else f"{C.BRAND} MPT: CNC-Plasmaschneidtisch mit Bedienkonsole")
+        txt = ""
+        if name == "hero-mpt":
+            txt = (f'<div class="hero-txt">'
+                   f'<span class="hk">{e(C.t(lang,"hero2_kicker"))}</span>'
+                   f'<h2>{e(C.t(lang,"hero2_title"))}</h2>'
+                   f'<p>{e(C.t(lang,"hero2_sub"))}</p>'
+                   f'<a class="btn pri" href="{e(C.u_prod(lang, C.BY_ID["mpt-3001"]))}">'
+                   f'{e(C.t(lang,"hero2_cta"))}</a></div>')
+        aus.append(
+            f'<div class="hero-slide{hell}{aktiv}" role="group" '
+            f'aria-roledescription="slide" '
+            f'aria-label="{e(C.t(lang, "hero_slide", n=k+1, m=n))}">'
+            f'<div class="hero-inner">'
+            f'<img class="hero-photo" src="{src}" srcset="{srcset}" sizes="100vw" '
+            f'width="{w}" height="{h}" {prio} decoding="async" '
+            f'alt="{e(alt_txt)}" '
+            f'onerror="this.onerror=null;this.removeAttribute(&#39;srcset&#39;);'
+            f'this.src=&#39;/assets/img/{name}.jpg&#39;">'
+            f'{txt}</div></div>')
+    return "".join(aus)
+
+
+def hero_band(lang):
+    """Das Band. Bei nur einer Folie ohne Punkte und ohne data-hero - das
+    Skript steigt bei weniger als zwei Folien ohnehin aus, aber ohne die
+    Auszeichnung als Karussell liest ein Screenreader es gar nicht erst als
+    solches vor."""
+    n = len(C.HERO_SLIDES)
+    if n < 2:
+        return (f'<section class="hero">{hero_folien(lang)}</section>')
+    punkte = "".join(
+        f'<button class="hdot{" active" if k == 0 else ""}" type="button" role="tab" '
+        f'aria-selected="{"true" if k == 0 else "false"}" data-i="{k}" '
+        f'aria-label="{e(C.t(lang, "hero_slide", n=k+1, m=n))}"></button>'
+        for k in range(n))
+    return (f'<section class="hero" data-hero aria-roledescription="carousel" '
+            f'aria-label="{e(C.t(lang,"site_name"))}">'
+            f'{hero_folien(lang)}'
+            f'<div class="hero-dots" role="tablist" '
+            f'aria-label="{e(C.t(lang,"gal_label"))}">{punkte}</div></section>')
+
+
 def page_home(lang):
     url, alts = C.u_home(lang), C.alternates("home")
     cards = ""
@@ -333,40 +397,7 @@ def page_home(lang):
         )
     faq6 = C.EX[lang]["faq"][:6]
     body = f"""
-<section class="hero" data-hero aria-roledescription="carousel"
-         aria-label="{e(C.t(lang,'site_name'))}">
-  <div class="hero-slide active" role="group" aria-roledescription="slide"
-       aria-label="{e(C.t(lang,'hero_slide', n=1, m=2))}">
-    <div class="hero-inner">
-      <img class="hero-photo" src="{R.HERO_SRC}" srcset="{R.HERO_SRCSET}" sizes="100vw"
-           width="{R.HERO_W}" height="{R.HERO_H}" fetchpriority="high" decoding="async"
-           alt="{e(C.BRAND)} HyperMIG SX: Schweissanlagen bei {e(C.t(lang,'site_name'))}"
-           onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero.jpg'">
-    </div>
-  </div>
-  <div class="hero-slide light" role="group" aria-roledescription="slide"
-       aria-label="{e(C.t(lang,'hero_slide', n=2, m=2))}">
-    <div class="hero-inner">
-      <img class="hero-photo" src="{R.HERO2_SRC}" srcset="{R.HERO2_SRCSET}" sizes="100vw"
-           width="{R.HERO2_W}" height="{R.HERO2_H}" loading="eager" fetchpriority="low"
-           decoding="async"
-           alt="{e(C.BRAND)} MPT: CNC-Plasmaschneidtisch mit Bedienkonsole"
-           onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/assets/img/hero-mpt.jpg'">
-      <div class="hero-txt">
-        <span class="hk">{e(C.t(lang,'hero2_kicker'))}</span>
-        <h2>{e(C.t(lang,'hero2_title'))}</h2>
-        <p>{e(C.t(lang,'hero2_sub'))}</p>
-        <a class="btn pri" href="{e(C.u_prod(lang, C.BY_ID['mpt-3001']))}">{e(C.t(lang,'hero2_cta'))}</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero-dots" role="tablist" aria-label="{e(C.t(lang,'gal_label'))}">
-    <button class="hdot active" type="button" role="tab" aria-selected="true" data-i="0"
-            aria-label="{e(C.t(lang,'hero_slide', n=1, m=2))}"></button>
-    <button class="hdot" type="button" role="tab" aria-selected="false" data-i="1"
-            aria-label="{e(C.t(lang,'hero_slide', n=2, m=2))}"></button>
-  </div>
-</section>
+{hero_band(lang)}
 <div class="hero-cta"><div class="wrap"><div class="cta-row">
   <a class="btn pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a>
   <a class="btn ghost light" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))}</a>

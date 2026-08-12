@@ -92,6 +92,17 @@ WORKSHOP = {
     "lon": 9.2792,
 }
 
+# Welche Folien das Band auf der Startseite zeigt, in dieser Reihenfolge.
+#
+# Eine einzelne Folie ist kein Karussell: dann entfallen die Punkte darunter,
+# das Umschalten und der Zeitgeber. Zwei oder mehr, und alles kommt zurueck -
+# ohne dass am Markup etwas geaendert werden muesste.
+#
+# 05.08.2026: Die MPT-Folie ist auf Wunsch des Inhabers heraus. Das gelieferte
+# Bild ueberzeugte ihn nicht. Wieder aufnehmen heisst: "hero-mpt" hier wieder
+# eintragen, ein neues Bild mit build/hero.py einspielen, bauen, pushen.
+HERO_SLIDES = ["hero"]
+
 # Kartenverweis auf die Werkstatt. Steht als hasMap im LocalBusiness.
 MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
            + WORKSHOP["street"].replace(" ", "+") + ",+"

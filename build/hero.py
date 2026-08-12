@@ -78,11 +78,17 @@ def erzeuge(name, quelle):
         print(f"  ACHTUNG: nur {w} px breit. Das Band ist bis 1536 px breit -")
         print("  das Bild wird auf grossen Bildschirmen sichtbar weich.")
 
-    # Rueckfall fuer Browser ohne WebP: dieselbe Vorlage als JPEG, ungestreckt.
+    # Rueckfall fuer Browser ohne WebP: dieselbe Vorlage als JPEG.
+    # Ist die Vorlage schon ein JPEG, wird sie kopiert statt neu kodiert - sonst
+    # entsteht eine zweite Generation mit sichtbarem Qualitaetsverlust, und das
+    # bei einer Datei, die niemand mehr als Vorlage hat.
     jpg = OUT / f"{name}.jpg"
-    subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "82",
-                    str(quelle), "--out", str(jpg)],
-                   capture_output=True, check=True)
+    if quelle.suffix.lower() in (".jpg", ".jpeg"):
+        shutil.copyfile(quelle, jpg)
+    else:
+        subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "88",
+                        str(quelle), "--out", str(jpg)],
+                       capture_output=True, check=True)
 
     gemacht = []
     for stufe in STUFEN:

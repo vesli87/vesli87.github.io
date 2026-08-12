@@ -98,10 +98,11 @@ WORKSHOP = {
 # das Umschalten und der Zeitgeber. Zwei oder mehr, und alles kommt zurueck -
 # ohne dass am Markup etwas geaendert werden muesste.
 #
-# 05.08.2026: Die MPT-Folie ist auf Wunsch des Inhabers heraus. Das gelieferte
-# Bild ueberzeugte ihn nicht. Wieder aufnehmen heisst: "hero-mpt" hier wieder
-# eintragen, ein neues Bild mit build/hero.py einspielen, bauen, pushen.
-HERO_SLIDES = ["hero"]
+# Verlauf: Am 05.08.2026 war die MPT-Folie kurz heraus, weil das damals
+# gelieferte Bild mit 1672 px zu klein war und auf feinen Bildschirmen weich
+# wirkte. Mit der Fassung 3344 x 1882 px ist sie wieder drin - jetzt entsteht
+# auch die 2048er Stufe, und damit reicht es fuer die doppelte Punktdichte.
+HERO_SLIDES = ["hero", "hero-mpt"]
 
 # Kartenverweis auf die Werkstatt. Steht als hasMap im LocalBusiness.
 MAP_URL = ("https://www.google.com/maps/search/?api=1&query="

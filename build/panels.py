@@ -25,11 +25,20 @@ import core as C  # noqa: E402
 
 OUT = C.ROOT / "assets" / "img" / "panels"
 MANIFEST = C.ROOT / "assets" / "img" / "manifest.json"
-# 1600 und 2000 nur, wenn die Vorlage wirklich so breit ist - hochskalieren
-# macht Bilder nicht schaerfer, nur groesser. Welche Stufen entstanden sind,
-# steht danach im Manifest, damit render.img_tag kein Bild ins srcset
-# schreibt, das es nicht gibt.
-SIZES = [400, 1000, 1600, 2000]
+# Jede Stufe nur, wenn die Vorlage wirklich so breit ist - hochskalieren macht
+# Bilder nicht schaerfer, nur groesser. Welche Stufen entstanden sind, steht
+# danach im Manifest, damit render.img_tag kein Bild ins srcset schreibt, das
+# es nicht gibt.
+#
+# 3000 kam am 12.08.2026 dazu, fuer die Lupe. Sie nimmt die groesste Stufe des
+# srcset (app.js::gross) und zeigt das Bild auf Wunsch in seiner natuerlichen
+# Groesse. Bei 2000 px war dort Schluss, obwohl die MPT-Vorlage 3344 px breit
+# ist - auf einem feinen Bildschirm wurde das Bild in der Lupe also weich, und
+# genau dort schaut jemand die Maschine und den Monitor genau an.
+# In die normale Auswahl geraet die Stufe nicht: der Bildschlitz ist hoechstens
+# 534 px breit, bei doppelter Punktdichte also 1068 - der Browser nimmt die
+# 1600er. Die 3000er laedt nur, wer die Lupe oeffnet.
+SIZES = [400, 1000, 1600, 2000, 3000]
 
 
 def dims(f):

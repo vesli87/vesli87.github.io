@@ -261,22 +261,65 @@
   /* Product detail */
   .detail{padding:40px 0 72px}
   .dgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
-  .dimg{background:#fff;border-radius:10px;position:relative;height:0;padding:0 0 100%;overflow:hidden}
+  /* Der Rahmen folgt dem Bild, nicht das Bild dem Rahmen.
+
+     Bis zum 12.08.2026 war .dimg fest quadratisch und das Bild wurde
+     hineingerechnet. Über alle 77 Produktbilder gemessen blieb der Rahmen im
+     Schnitt zu 31 % leer, beim Plasmaschneidtisch MPT zu 56 %, bei den
+     Elektrolytflaschen bis 67 % - ein 16:9-Bild bekam oben und unten je einen
+     weissen Balken von rund 145 px.
+
+     Der naheliegende Weg war, den Rahmen vom Bild wachsen zu lassen
+     (height:auto). Er war falsch: ein <img> mit width:auto reserviert vor dem
+     Laden keinen Platz. Mit einem absichtlich gebremsten Server nachgemessen
+     stand der Rahmen bei 56 px und sprang beim Eintreffen des Bildes auf 357 -
+     die ganze Seite darunter ruckte um 301 px.
+
+     Deshalb trägt der Rahmen ein festes Verhältnis, das der Build aus dem
+     Manifest wählt (render.py::dimg_klasse) und das als Klasse schon im HTML
+     steht: die Höhe ist bekannt, bevor das Bild da ist. Das Bild darin füllt
+     höchstens 90 % in beiden Richtungen; passt der Eimer, berührt es beide
+     Grenzen zugleich - kein Balken, kein Sprung. Verschnitt jetzt 10 % statt
+     31 %. Hohe Bilder (die Flaschen stehen 1:3) laufen bewusst in .ar-hoch und
+     behalten Luft an den Seiten: ein Rahmen in ihrem echten Verhältnis wäre bei
+     590 px Breite 1770 px hoch. */
+  .dimg{background:#fff;border-radius:10px;position:relative;overflow:hidden;
+    display:grid;place-items:center;aspect-ratio:1/1}
+  /* Der Eimer kommt aus dem Build (render.py::dimg_klasse) und steht schon im
+     HTML - dadurch kennt der Browser die Rahmenhöhe, bevor das Bild da ist. */
+  .dimg.ar-weit{aspect-ratio:25/11}
+  .dimg.ar-kino{aspect-ratio:16/9}
+  .dimg.ar-quer{aspect-ratio:3/2}
+  .dimg.ar-foto{aspect-ratio:4/3}
+  .dimg.ar-fast{aspect-ratio:8/7}
+  .dimg.ar-hoch{aspect-ratio:5/6}
   /* Nie über die echte Auflösung hinaus vergrössern. Manche Herstellerfotos
      sind nur gut 200 px breit; auf 520 px gezogen wirkten sie unscharf. Lieber
-     klein und scharf als gross und verwaschen. */
-  .dimg > img{position:absolute;top:40px;left:40px;width:calc(100% - 80px);
-    height:calc(100% - 80px);object-fit:scale-down;background:#fff}
+     klein und scharf als gross und verwaschen. Dafür sorgt width:auto: das
+     Bild nimmt die Anzeigegrösse aus seinen width/height-Attributen, die
+     render.img_tag auf die echte Vorlagenbreite deckelt, und max-width/
+     max-height halten es innerhalb des Rahmens. */
+  .dimg > img{display:block;max-width:90%;max-height:90%;
+    width:auto;height:auto;background:#fff}
   /* Bildbereich: ein grosses Bild, darunter der Miniaturstreifen. Ein Klick auf
      eine Miniatur tauscht das grosse Bild – dieselbe Bedienung wie in jedem
      Shop, und ohne JavaScript stehen einfach alle Bilder untereinander. */
   .dmedia{display:grid;gap:14px}
-  /* Die Buehne fuellt den Rahmen absolut aus - damit hat sie eine feste
-     Hoehe, und die Prozentangaben der Bilder darin gehen wieder auf. */
-  .galstage{position:absolute;inset:40px;display:grid;place-items:center}
+  /* Die Bühne füllt den Rahmen absolut aus. Der Rahmen hat sein Verhältnis
+     aus der Klasse, also eine feste Höhe - die Prozentangaben der Bilder darin
+     gehen damit auf. */
+  /* Die Bühne lag absolut im Rahmen - das ging nur, solange der Rahmen eine
+     feste Höhe hatte. Jetzt steht sie im Fluss, und alle Folien liegen in
+     derselben Rasterzelle übereinander: die Bühne ist so hoch wie die höchste
+     Folie, der Rahmen wächst mit, und beim Umschalten springt nichts. */
+  .galstage{position:absolute;inset:0;display:grid;place-items:center}
+  /* display:none für die inaktiven Folien, nicht visibility:hidden: so liegt
+     nur eine Folie im Raster, und ohne JavaScript genügt ein display:grid in
+     der noscript-Regel, um alle untereinander zu stellen. Die Höhe des Rahmens
+     hängt ohnehin nicht an den Folien, sondern am Verhältnis seiner Klasse. */
   .galslide{display:none;margin:0;width:100%}
   .galslide.active{display:grid;place-items:center;gap:12px}
-  .galslide img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:scale-down;background:#fff}
+  .galslide img{max-width:90%;max-height:90%;width:auto;height:auto;background:#fff}
   .galslide figcaption{color:var(--muted);font-size:12.5px;line-height:1.5;text-align:left;width:100%}
   .galnav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;
     border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);

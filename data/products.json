@@ -12483,13 +12483,13 @@
      "Sicherheitsdatenblatt": "R1"
     },
     "fr": {
-     "Type": "Reinigung (Rapid)",
+     "Type": "Nettoyage (Rapid)",
      "Matériau": "acier inox",
      "Conditionnement": "0,5 / 1,0 / 5,0 L",
      "Fiche de sécurité": "R1"
     },
     "it": {
-     "Tipo": "Reinigung (Rapid)",
+     "Tipo": "Pulizia (Rapid)",
      "Materiale": "acciaio inox",
      "Confezione": "0,5 / 1,0 / 5,0 L",
      "Scheda di sicurezza": "R1"
@@ -12568,13 +12568,13 @@
      "Sicherheitsdatenblatt": "RP1"
     },
     "fr": {
-     "Type": "Reinigung (pastös)",
+     "Type": "Nettoyage (pâteux)",
      "Matériau": "acier inox",
      "Conditionnement": "0,5 / 1,0 / 5,0 L",
      "Fiche de sécurité": "RP1"
     },
     "it": {
-     "Tipo": "Reinigung (pastös)",
+     "Tipo": "Pulizia (pastoso)",
      "Materiale": "acciaio inox",
      "Confezione": "0,5 / 1,0 / 5,0 L",
      "Scheda di sicurezza": "RP1"
@@ -12653,13 +12653,13 @@
      "Sicherheitsdatenblatt": "P1"
     },
     "fr": {
-     "Type": "Polieren / Beizen",
+     "Type": "Polissage / décapage",
      "Matériau": "acier inox",
      "Conditionnement": "0,5 / 1,0 / 5,0 L",
      "Fiche de sécurité": "P1"
     },
     "it": {
-     "Tipo": "Polieren / Beizen",
+     "Tipo": "Lucidatura / decapaggio",
      "Materiale": "acciaio inox",
      "Confezione": "0,5 / 1,0 / 5,0 L",
      "Scheda di sicurezza": "P1"
@@ -12738,14 +12738,14 @@
      "Sicherheitsdatenblatt": "N1"
     },
     "fr": {
-     "Type": "Neutralisierer",
-     "Application": "nach Reinigung",
+     "Type": "Neutralisant",
+     "Application": "après nettoyage",
      "Conditionnement": "1,0 / 5,0 L",
      "Fiche de sécurité": "N1"
     },
     "it": {
-     "Tipo": "Neutralisierer",
-     "Applicazione": "nach Reinigung",
+     "Tipo": "Neutralizzante",
+     "Applicazione": "dopo la pulizia",
      "Confezione": "1,0 / 5,0 L",
      "Scheda di sicurezza": "N1"
     }
@@ -12823,14 +12823,14 @@
      "Sicherheitsdatenblatt": "M1"
     },
     "fr": {
-     "Type": "Signieren",
-     "Application": "Markieren",
+     "Type": "Marquage électrolytique",
+     "Application": "Marquage",
      "Conditionnement": "0,1 / 0,5 / 1,0 L",
      "Fiche de sécurité": "M1"
     },
     "it": {
-     "Tipo": "Signieren",
-     "Applicazione": "Markieren",
+     "Tipo": "Marcatura elettrolitica",
+     "Applicazione": "Marcatura",
      "Confezione": "0,1 / 0,5 / 1,0 L",
      "Scheda di sicurezza": "M1"
     }
@@ -14614,12 +14614,12 @@
      "Option": "wahlweise mit Up/Down"
     },
     "fr": {
-     "Type": "MIG/MAG wassergekühlt",
+     "Type": "MIG/MAG refroidi par eau",
      "Longueur": "4 m",
      "Option": "au choix avec Up/Down"
     },
     "it": {
-     "Tipo": "MIG/MAG wassergekühlt",
+     "Tipo": "MIG/MAG raffreddato ad acqua",
      "Lunghezza": "4 m",
      "Opzione": "a scelta con Up/Down"
     }
@@ -14696,12 +14696,12 @@
      "Option": "wahlweise mit Up/Down"
     },
     "fr": {
-     "Type": "MIG/MAG wassergekühlt",
+     "Type": "MIG/MAG refroidi par eau",
      "Longueur": "4 m",
      "Option": "au choix avec Up/Down"
     },
     "it": {
-     "Tipo": "MIG/MAG wassergekühlt",
+     "Tipo": "MIG/MAG raffreddato ad acqua",
      "Lunghezza": "4 m",
      "Opzione": "a scelta con Up/Down"
     }

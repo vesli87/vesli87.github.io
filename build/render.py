@@ -118,10 +118,15 @@ JS_URL = _ver("/assets/js/app.js")
 # laufen, das es irgendwie ins HTML schafft. Ohne es laeuft nur, was exakt
 # einem hinterlegten Hash entspricht. Ein eingeschleuster <script>-Block ist
 # damit wirkungslos, auch wenn er im Markup landet.
+# Ohne JavaScript gibt es kein Umschalten - dann sollen alle Folien
+# untereinander stehen und die Reiter offen sein. Die Zeichenkette wird per
+# sha256 in der CSP jeder Produktseite erlaubt (siehe csp()); wer sie aendert,
+# aendert damit auch den Hash. Ein zusaetzliches Leerzeichen genuegt, und der
+# Browser wendet den Block nicht mehr an.
 NOSCRIPT_CSS = (".tabpane{display:block!important}.tabbar{display:none}\n"
                 "    .galslide{display:grid!important;place-items:center;"
                 "gap:12px;margin-bottom:18px}\n"
-                "    .dimg{aspect-ratio:auto}.galnav,.galthumbs{display:none}")
+                "    .galnav,.galthumbs{display:none}")
 
 # Der Bildrueckfall. Fehlt die lokale Kopie eines Herstellerbildes, laedt das
 # Bild stattdessen das Original von mahe-online.de; die Adresse steht als
@@ -214,6 +219,48 @@ def jsonld(obj):
     return ('<script type="application/ld+json">'
             + json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
             + "</script>")
+
+
+# Welches Seitenverhaeltnis der Bildrahmen einer Produktseite bekommt.
+#
+# Der Rahmen war bis zum 12.08.2026 immer quadratisch; gemessen ueber alle 77
+# Produktbilder blieb er dadurch im Schnitt zu 31 % leer, beim MPT zu 56 %.
+# Ihn stattdessen vom Bild wachsen zu lassen (height:auto) war der erste
+# Versuch und ein Rueckschritt: ein <img> mit width:auto reserviert vor dem
+# Laden keinen Platz. Nachgemessen mit einem absichtlich gebremsten Server:
+# der Rahmen stand bei 56 px - nur das Polster - und sprang beim Eintreffen des
+# Bildes auf 357 px. Die ganze Seite darunter ruckte um 301 px. Genau das misst
+# Google als Layoutverschiebung.
+#
+# Deshalb traegt der Rahmen ein festes Verhaeltnis, das der Build aus dem
+# Manifest waehlt. Es steht im Stylesheet als Klasse - ein style-Attribut ginge
+# nicht, die Richtlinie erlaubt keine Inline-Stile. Das Bild darin fuellt
+# hoechstens 90 % in beiden Richtungen, also bleibt ringsum Luft, und bei
+# passendem Eimer beruehrt es beide Grenzen zugleich: kein Balken, kein Sprung.
+#
+# Verschnitt im Rahmen mit diesen sieben Eimern: 10 % im Schnitt statt 31 %.
+# Hohe Bilder (die Elektrolytflaschen stehen 1:3) laufen bewusst in "hoch" und
+# behalten Luft an den Seiten - ein Rahmen in ihrem echten Verhaeltnis waere
+# bei 590 px Breite 1770 px hoch.
+DIMG_EIMER = [
+    (0.47, "ar-weit"),      # 25/11 - Massekabel, MLF 100
+    (0.62, "ar-kino"),      # 16/9  - MPT 3001 und 2501
+    (0.72, "ar-quer"),      # 3/2
+    (0.80, "ar-foto"),      # 4/3
+    (0.94, "ar-fast"),      # 8/7
+    (1.10, ""),             # 1/1   - Vorgabe im Stylesheet
+]
+
+
+def dimg_klasse(path):
+    m = MANIFEST.get(C.full_img(path))
+    if not m:
+        return ""
+    ratio = m.get("ratio") or 1.0
+    for grenze, klasse in DIMG_EIMER:
+        if ratio <= grenze:
+            return (" " + klasse) if klasse else ""
+    return " ar-hoch"        # 5/6
 
 
 def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
@@ -774,7 +821,7 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
              # klickte "Envoyer la demande" und bekam einen Entwurf mit
              # "Anfrage VES-TECH" und "Gewuenschte Geraete".
              "mail_f_name", "mail_f_mail", "mail_f_tel", "mail_f_msg",
-             "mail_f_sent", "mail_f_dev", "mail_s_cart", "mail_s_item",
+             "mail_f_sent", "mail_f_dev", "mail_s_cart", "mail_s_item", "mail_s_item1",
              "mail_s_kont"]
 
 

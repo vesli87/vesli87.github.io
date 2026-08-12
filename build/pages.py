@@ -29,9 +29,23 @@ PANEL_DRAWN = json.loads((C.DATA / "PANEL_DRAWN.json").read_text("utf-8"))
 # beides deckt sich mit der Formel unten. Der Fehler kostete auf Telefonen mit
 # dreifacher Pixeldichte eine Stufe zu viel: 163 kB statt 79 kB fuer das
 # LCP-Element, bei jedem Aufruf.
-DIMG_SIZES = ("(max-width:1000px) calc(100vw - 136px), "
-              "(max-width:1280px) calc((100vw - 100px) / 2 - 80px), "
-              "510px")
+# Wie breit das Bild auf der Produktseite wirklich wird.
+#
+# Drei Deckel wirken zusammen:
+#   * die Spalte - Fensterbreite minus 28 px Aussenpolster je Seite, ab 1000 px
+#     zweispaltig mit 44 px Abstand, hoechstens 1280 px breit;
+#   * der Rahmen - das Bild fuellt hoechstens 90 % davon (site.css: .dimg > img);
+#   * das width-Attribut, das render.img_tag auf hoechstens 560 setzt.
+#
+# Ohne den dritten Deckel versprach sizes bei 900 px Fensterbreite 788 px; ein
+# Telefon mit dreifacher Punktdichte rechnete 2364 und griff zur 3000er Stufe -
+# 373 kB fuer ein Bild, das nie breiter als 560 px erscheint. 90 % der Spalte
+# erreichen die 560 px bei 678 px Fensterbreite, darum dort der Umbruch.
+# Ausgerechnet statt mit min(): das versteht auch ein aelterer Browser.
+DIMG_SIZES = ("(max-width:678px) calc(90vw - 51px), "
+              "(max-width:1000px) 560px, "
+              "(max-width:1280px) calc((90vw - 90px) / 2), "
+              "531px")
 
 # Achtung: DLS[].k ist NICHT eindeutig – Produktkatalog und EN-1090-Zertifikat
 # tragen beide "PDF". Deshalb wird hier über den Titel identifiziert.
@@ -233,7 +247,7 @@ def media_html(lang, p, nm):
     # schwarzer Winkel in der Ecke. Die Verfahren stehen in den technischen
     # Daten und in der Merkmalsliste; auf dem Bild braucht es sie nicht.
     if len(bilder) == 1:
-        return ('<div class="dimg">'
+        return (f'<div class="dimg{R.dimg_klasse(p["img"])}">'
                 + R.img_tag(p["img"], DIMG_SIZES, cls="zoomable",
                             alt=haupt["alt"], eager=True, width=560)
                 + "</div>")
@@ -259,7 +273,7 @@ def media_html(lang, p, nm):
                    + "</button>")
 
     return (f'<div class="dmedia" data-gal>'
-            f'<div class="dimg">'
+            f'<div class="dimg{R.dimg_klasse(bilder[0]["img"])}">'
             f'<button class="galnav prev" type="button" data-step="-1" '
             f'aria-label="{e(C.t(lang, "gal_prev"))}">‹</button>'
             f'<div class="galstage">{slides}</div>'
@@ -551,6 +565,12 @@ def page_product(lang, p):
     # Titel muss pro Sprache eindeutig sein: die übersetzte Kategorie sorgt dafür,
     # auch wenn die Unterkategorie in allen drei Sprachen gleich heisst (z. B. "Theta").
     sub_t, cat_t = C.subT(lang, p["sub"]), C.catT(lang, c)
+    # nm ist der uebersetzte Name. Er gehoert ueberall hin, wo der Name
+    # sichtbar wird - bis zum 12.08.2026 nahmen H1, Einleitungssatz,
+    # Breadcrumb im JSON-LD, die Beschriftung der Reiter und der Knopf
+    # "Zur Anfrageliste" stattdessen p['name'], also die deutsche Fassung.
+    # Auf 36 FR/IT-Seiten stand dadurch im Titel "Boite de pieces d'usure
+    # PSHB 125" und in der Ueberschrift "Verschleissteilebox PSHB 125".
     nm = C.pName(lang, p)
     suffix = " | " + C.t(lang, "site_name")
     # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
@@ -598,7 +618,7 @@ def page_product(lang, p):
     {media_html(lang, p, nm)}
     <div class="dinfo">
       <p class="kicker">{e(C.catT(lang, c))} · {C.BRAND}</p>
-      <h1>{e(p['name'])}</h1>
+      <h1>{e(nm)}</h1>
       <p class="lead">{e(C.pDesc(lang, p))}</p>
       {procs_block(lang, p)}
       <div class="pmeta">
@@ -612,16 +632,16 @@ def page_product(lang, p):
       <div class="poa-box"><span class="p">{e(C.t(lang,'poa'))}</span>
         <span class="s">{e(C.t(lang,'poa_sub'))}</span></div>
       <div class="dactions">
-        <button class="btn pri" type="button" data-add="{e(p['id'])}" data-name="{e(p['name'])}"
+        <button class="btn pri" type="button" data-add="{e(p['id'])}" data-name="{e(nm)}"
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'consult'))}</a>
       </div>
-      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=p['name'], vt=C.vtT(lang, p['vt']), cat=C.catT(lang,c)))}</p>
+      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=nm, vt=C.vtT(lang, p['vt']), cat=C.catT(lang,c)))}</p>
     </div>
   </div>
 
   <div class="tabs">
-    <div class="tabbar" role="tablist" aria-label="{e(p['name'])}">{tabbar}</div>
+    <div class="tabbar" role="tablist" aria-label="{e(nm)}">{tabbar}</div>
     {panehtml}
   </div>
   <noscript><style>{R.NOSCRIPT_CSS}</style></noscript>
@@ -631,7 +651,7 @@ def page_product(lang, p):
 """
     ld = [R.ld_org(lang), R.ld_product(lang, p),
           R.ld_webpage(lang, url, title, desc, {"@type": "ItemPage"}),
-          R.ld_breadcrumb(crumb[:-1] + [(p["name"], url)])]
+          R.ld_breadcrumb(crumb[:-1] + [(nm, url)])]
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
                            jsonld_blocks=ld, body=body, og_type="product",
                            og_image=R.img_abs(p["img"], 1000))

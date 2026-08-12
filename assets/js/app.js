@@ -847,8 +847,10 @@
         return '- ' + x.name + ' × ' + (x.qty || 1) +
           (x.url ? '  (' + location.origin + x.url + ')' : '');
       }).join('\n');
+      /* Einzahl und Mehrzahl: "1 articles" wollen wir niemandem schicken. */
       submitForm(cartForm,
-        t('mail_s_cart') + ' (' + cart.length + ' ' + t('mail_s_item') + ')',
+        t('mail_s_cart') + ' (' + cart.length + ' ' +
+          t(cart.length === 1 ? 'mail_s_item1' : 'mail_s_item') + ')',
         t('mail_f_dev') + ':\n' + lines);
     });
   }

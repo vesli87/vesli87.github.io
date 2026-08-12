@@ -294,5 +294,37 @@
  "wassergekühlt (CWK)": {
   "fr": "refroidi par eau (CWK)",
   "it": "raffreddato ad acqua (CWK)"
+ },
+ "MIG/MAG wassergekühlt": {
+  "fr": "MIG/MAG refroidi par eau",
+  "it": "MIG/MAG raffreddato ad acqua"
+ },
+ "Reinigung (Rapid)": {
+  "fr": "Nettoyage (Rapid)",
+  "it": "Pulizia (Rapid)"
+ },
+ "Reinigung (pastös)": {
+  "fr": "Nettoyage (pâteux)",
+  "it": "Pulizia (pastoso)"
+ },
+ "Polieren / Beizen": {
+  "fr": "Polissage / décapage",
+  "it": "Lucidatura / decapaggio"
+ },
+ "Neutralisierer": {
+  "fr": "Neutralisant",
+  "it": "Neutralizzante"
+ },
+ "nach Reinigung": {
+  "fr": "après nettoyage",
+  "it": "dopo la pulizia"
+ },
+ "Signieren": {
+  "fr": "Marquage électrolytique",
+  "it": "Marcatura elettrolitica"
+ },
+ "Markieren": {
+  "fr": "Marquage",
+  "it": "Marcatura"
  }
 }

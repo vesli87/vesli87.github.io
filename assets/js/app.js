@@ -37,6 +37,11 @@
     };
   }
 
+  /* Der Bildrueckfall (fehlende lokale Kopie -> Original von mahe-online.de)
+     steht bewusst nicht hier, sondern als kurzes Skript im <head>, siehe
+     render.py::IMG_FALLBACK_JS. Von hier aus waere er zu spaet: dieses Skript
+     laeuft mit defer, und ein error-Ereignis feuert nur ein einziges Mal. */
+
   /* ---------------------------------------------------------------- Toast */
   var toastTimer;
   function toast(msg) {

@@ -11,6 +11,7 @@ JavaScript ist reine Anreicherung: Suche mit Autocomplete, Anfrageliste,
 Schubladen, Formularversand.
 """
 
+import base64
 import hashlib
 import html
 import json
@@ -93,40 +94,111 @@ JS_URL = _ver("/assets/js/app.js")
 # steht hier; was nur als Kopfzeile ginge (X-Frame-Options,
 # X-Content-Type-Options, HSTS), geht auf dieser Plattform gar nicht.
 #
-# Die Richtlinie ist so eng, wie es die Seite zulaesst. Gemessen am 05.08.2026:
+# Die Richtlinie ist so eng, wie es die Seite zulaesst. Gemessen am 12.08.2026:
 # alle Ressourcen kommen von der eigenen Domain, ausser den Herstellerbildern
-# von mahe-online.de (Rueckfall im onerror des Bildes) und dem Formulardienst
-# api.web3forms.com.
+# von mahe-online.de (Rueckfall, wenn eine lokale Kopie fehlt) und dem
+# Formulardienst api.web3forms.com.
 #
-# 'unsafe-inline' steht bewusst und nicht aus Bequemlichkeit drin:
-#   * script  - 306 Seiten tragen ein onerror-Attribut am Bild. Ereignis-
-#               Attribute lassen sich nicht per Hash erlauben. Wer sie
-#               loswerden will, verlegt den Rueckfall nach app.js; dann kann
-#               'unsafe-inline' weg und die Richtlinie wird deutlich schaerfer.
-#   * style   - die <noscript>-Bloecke und wenige style="…"-Attribute.
-# Auch mit 'unsafe-inline' bringt die Richtlinie etwas: kein fremdes Skript
-# laesst sich nachladen, nichts an eine fremde Adresse senden (connect-src),
-# kein <base> unterschieben, keine Plugins, kein fremdes Formularziel.
-CSP = "; ".join([
-    "default-src 'self'",
-    "base-uri 'self'",
-    "object-src 'none'",
-    "frame-src 'none'",
-    "img-src 'self' https://mahe-online.de",
-    "script-src 'self' 'unsafe-inline'",
-    "style-src 'self' 'unsafe-inline'",
-    "font-src 'self'",
-    "connect-src 'self' https://api.web3forms.com",
-    "form-action 'self'",
-    "upgrade-insecure-requests",
-])
+# Seit dem 12.08.2026 kommt die Richtlinie ohne 'unsafe-inline' aus - weder
+# fuer Skripte noch fuer Stile. Das war vorher nicht moeglich und hat drei
+# Aenderungen gebraucht:
+#
+#   1. Die 1530 onerror-Attribute an den Bildern sind weg. Der Rueckfall steht
+#      jetzt als data-fb="…" am Bild, und app.js hoert einmal zentral auf
+#      error-Ereignisse. Ereignisattribute lassen sich grundsaetzlich nicht
+#      per Hash erlauben - solange auch nur eines im HTML stand, war
+#      script-src 'unsafe-inline' unvermeidlich.
+#   2. window.VT haengt nur an der Sprache, nicht an der Seite. Es gibt also
+#      genau drei verschiedene Startskripte, und jede Seite traegt den Hash
+#      ihres eigenen.
+#   3. Der <noscript>-Block der Produktseiten ist eine einzige, feste
+#      Zeichenkette (NOSCRIPT_CSS) - ein Hash deckt alle 231 Seiten ab.
+#
+# Der Gewinn ist nicht theoretisch: mit 'unsafe-inline' darf jedes Skript
+# laufen, das es irgendwie ins HTML schafft. Ohne es laeuft nur, was exakt
+# einem hinterlegten Hash entspricht. Ein eingeschleuster <script>-Block ist
+# damit wirkungslos, auch wenn er im Markup landet.
+NOSCRIPT_CSS = (".tabpane{display:block!important}.tabbar{display:none}\n"
+                "    .galslide{display:grid!important;place-items:center;"
+                "gap:12px;margin-bottom:18px}\n"
+                "    .dimg{aspect-ratio:auto}.galnav,.galthumbs{display:none}")
 
-SECURITY_META = (
-    f'<meta http-equiv="Content-Security-Policy" content="{CSP}">\n'
-    # Beim Klick auf ein Herstellerdokument erfaehrt mahe-online.de sonst,
-    # von welcher Unterseite aus verlinkt wurde. Der Domainname genuegt.
-    '<meta name="referrer" content="strict-origin-when-cross-origin">'
+# Der Bildrueckfall. Fehlt die lokale Kopie eines Herstellerbildes, laedt das
+# Bild stattdessen das Original von mahe-online.de; die Adresse steht als
+# data-fb am <img>.
+#
+# Warum das hier im <head> steht und nicht in app.js:
+#
+# error-Ereignisse feuern genau einmal. app.js laeuft mit defer, also erst
+# nachdem der Parser das Dokument gelesen hat - bis dahin koennen Bilder
+# laengst gescheitert sein, und ihr Ereignis ist dann verloren. Der naechste
+# Gedanke waere, gescheiterte Bilder beim Start nachzuschlagen: complete ===
+# true und naturalWidth === 0 gilt als kaputt. Am 12.08.2026 gemessen: dieses
+# Paar ist nicht verlaesslich. Bei decoding="async" meldet der Browser fuer
+# voellig intakte Bilder complete === true, waehrend naturalWidth noch 0 ist -
+# auch noch bei window.load. Das Hauptbild jeder Produktseite wurde dadurch
+# faelschlich als kaputt eingestuft und gegen das Bild von mahe-online.de
+# getauscht, obwohl die lokale Kopie mit 200 ausgeliefert wurde. Jeder
+# Besucher haette Bilder von einem fremden Server geholt, langsamer und mit
+# seiner IP-Adresse.
+#
+# Im <head>, vor dem ersten <img>, entfaellt das Raten: kein error-Ereignis
+# kann mehr verloren gehen, und es wird nur zurueckgefallen, wenn wirklich
+# eines gefeuert hat. Ereignisse steigen bei Ressourcen nicht auf, wohl aber
+# in der Erfassungsphase - daher das true.
+#
+# Kosten, damit niemand eine Ersparnis hineinliest: die 1530 onerror-Attribute
+# waren rund 230 kB, ihr Ersatz data-fb ist kleiner - aber dieses Skript und
+# die beiden Hashes in der Richtlinie kommen auf jeder der 347 Seiten dazu.
+# Unterm Strich ist die Website 33 kB groesser als vorher. Bezahlt wird damit
+# eine Richtlinie ohne 'unsafe-inline'; das ist es wert, eine Ersparnis ist es
+# nicht.
+IMG_FALLBACK_JS = (
+    'addEventListener("error",function(e){var t=e.target;'
+    'if(t&&t.tagName==="IMG"&&t.dataset.fb&&!t.dataset.fbDone){'
+    't.dataset.fbDone="1";t.removeAttribute("srcset");t.removeAttribute("sizes");'
+    't.src=t.dataset.fb}},true)'
 )
+
+
+def sri_hash(text):
+    """Der CSP-Hash einer Inline-Zeichenkette: sha256, base64, in Anfuehrung.
+
+    Gehasht wird genau der Text zwischen den Tags - kein Zeichen mehr, keines
+    weniger. Ein zusaetzliches Leerzeichen im HTML macht den Hash ungueltig
+    und das Skript stumm; deshalb entstehen Skript und Hash in dieser Datei
+    aus derselben Zeichenkette.
+    """
+    d = hashlib.sha256(text.encode("utf-8")).digest()
+    return "'sha256-" + base64.b64encode(d).decode("ascii") + "'"
+
+
+def csp(lang):
+    return "; ".join([
+        "default-src 'self'",
+        "base-uri 'self'",
+        "object-src 'none'",
+        "frame-src 'none'",
+        "img-src 'self' https://mahe-online.de",
+        f"script-src 'self' {sri_hash(IMG_FALLBACK_JS)} {sri_hash(boot_json(lang))}",
+        f"style-src 'self' {sri_hash(NOSCRIPT_CSS)}",
+        "font-src 'self'",
+        "connect-src 'self' https://api.web3forms.com",
+        "form-action 'self'",
+        # frame-ancestors steht bewusst nicht hier: per <meta> ignorieren es
+        # alle Browser und melden es als Warnung in der Konsole. Gegen
+        # Einbetten in fremde Seiten hilft auf GitHub Pages nichts.
+        "upgrade-insecure-requests",
+    ])
+
+
+def security_meta(lang):
+    return (
+        f'<meta http-equiv="Content-Security-Policy" content="{e(csp(lang))}">\n'
+        # Beim Klick auf ein Herstellerdokument erfaehrt mahe-online.de sonst,
+        # von welcher Unterseite aus verlinkt wurde. Der Domainname genuegt.
+        '<meta name="referrer" content="strict-origin-when-cross-origin">'
+    )
 
 
 # --------------------------------------------------------------------------
@@ -180,15 +252,17 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     if nat < (width or 400):
         sizes = f"{w}px"          # das Bild fuellt den Platz gar nicht aus
     loading = "" if eager else 'loading="lazy" '
-    onerror = "" if m.get("local") else (
-        "this.onerror=null;this.removeAttribute(&quot;srcset&quot;);"
-        "this.src=&quot;" + e(remote) + "&quot;")
+    # Rueckfall auf das Herstellerbild, falls die lokale Kopie fehlt: nur die
+    # Adresse steht am Bild, das Verhalten liegt in app.js (bildRueckfall).
+    # Frueher stand hier ein onerror-Attribut - 1530 Stueck ueber die Seite
+    # verteilt, rund 230 kB, und sie zwangen die CSP zu 'unsafe-inline'.
+    fb = "" if m.get("local") else f' data-fb="{e(remote)}"'
     return (
         f'<img class="{cls}" src="{small}" '
         f'srcset="{srcset}" sizes="{e(sizes)}" '
         f'width="{w}" height="{h}" alt="{e(alt)}" '
         f'{loading}decoding="async" referrerpolicy="no-referrer"'
-        + (f' onerror="{onerror}"' if onerror else "") + ">"
+        + fb + ">"
     )
 
 
@@ -495,7 +569,8 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
     og_image = og_image or f"{C.SITE}/assets/img/hero.jpg"
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{SECURITY_META}
+{security_meta(lang)}
+<script>{IMG_FALLBACK_JS}</script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="{e(robots)}">
@@ -691,7 +766,13 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
              "mail_copy_manual"]
 
 
-def boot_script(lang):
+def boot_json(lang):
+    """Der Inhalt des Startskripts - ohne die <script>-Tags.
+
+    Getrennt von boot_script, weil csp() genau diese Zeichenkette hasht. Beide
+    muessen dasselbe liefern, sonst passt der Hash nicht und der Browser
+    verweigert das Skript: keine Suche, keine Anfrageliste, keine Formulare.
+    """
     cfg = {
         "lang": lang,
         "hreflang": C.EX[lang]["hreflang"],
@@ -702,8 +783,12 @@ def boot_script(lang):
         "mailto": C.COMPANY["email"],
         "i18n": {k: C.t(lang, k) for k in JS_KEYS},
     }
-    return ('<script>window.VT=' + json.dumps(cfg, ensure_ascii=False, separators=(",", ":"))
-            + ";</script>")
+    return ("window.VT=" + json.dumps(cfg, ensure_ascii=False, separators=(",", ":"))
+            + ";")
+
+
+def boot_script(lang):
+    return "<script>" + boot_json(lang) + "</script>"
 
 
 def _complete_graph(lang, blocks):

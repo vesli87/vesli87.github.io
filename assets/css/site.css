@@ -701,6 +701,10 @@
   .prod-intro{color:var(--muted);font-size:14px;line-height:1.65;margin-top:22px;max-width:62ch}
   .backlink{margin-top:34px}
   .backlink a{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);font-size:15px}
+  /* War ein style="margin-top:24px" auf der 404-Seite - das letzte
+     style-Attribut im ganzen Web. Ohne es kommt die CSP ohne
+     style-src 'unsafe-inline' aus. */
+  .cta-zeile{margin-top:24px}
 
   /* -------------------------------------------------------- Anfrageliste */
   .cart .top .drawer-title{font-family:'DM Serif Display',serif;font-weight:400;font-size:21px;text-transform:uppercase;letter-spacing:.01em}

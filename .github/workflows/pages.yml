@@ -42,6 +42,33 @@ jobs:
       - name: Audit
         run: python3 build/audit.py
 
+      # Nur ausliefern, was zur Website gehoert.
+      #
+      # Bisher ging das ganze Repository ins Artefakt: build/*.py, die Rohdaten
+      # unter data/, die Dokumentation - und build/source-snapshot.html, 438 kB
+      # alter Prototyp aus der Zeit vor dem Generator, unter der echten Domain
+      # abrufbar. Geheim ist davon nichts, das Repository ist oeffentlich. Aber
+      # eine veraltete Kopie der Seite unter www.ves-tech.ch ist eine Seite,
+      # die eine Suchmaschine finden und gegen die echten Seiten stellen kann;
+      # robots.txt verbietet nur das Crawlen, nicht das Indexieren.
+      #
+      # Geloescht wird im Runner, nie im Repository. Was hier verschwindet,
+      # wird nach dem Build ohnehin nicht mehr gebraucht.
+      - name: Artefakt auf die Website eingrenzen
+        run: |
+          set -eu
+          rm -rf build .github
+          rm -f CLAUDE.md MASTER_PROMPT.md README.md
+          # data/ enthaelt die Quelldaten des Generators. Oeffentlich gehoeren
+          # nur die erzeugten Dateien: products.json ist der Katalog fuer
+          # Antwortmaschinen (verlinkt in robots.txt und llms.txt), die
+          # search-*.json braucht die Suche im Browser.
+          find data -name '*.json' \
+            ! -name 'products.json' ! -name 'search-*.json' -delete
+          find data -type d -empty -delete
+          echo "Ausgeliefert wird aus data/:"
+          ls -1 data/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

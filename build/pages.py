@@ -356,9 +356,7 @@ def hero_folien(lang):
             f'<div class="hero-inner">'
             f'<img class="hero-photo" src="{src}" srcset="{srcset}" sizes="100vw" '
             f'width="{w}" height="{h}" {prio} decoding="async" '
-            f'alt="{e(alt_txt)}" '
-            f'onerror="this.onerror=null;this.removeAttribute(&#39;srcset&#39;);'
-            f'this.src=&#39;/assets/img/{name}.jpg&#39;">'
+            f'alt="{e(alt_txt)}" data-fb="/assets/img/{name}.jpg">'
             f'{txt}</div></div>')
     return "".join(aus)
 
@@ -597,9 +595,7 @@ def page_product(lang, p):
     <div class="tabbar" role="tablist" aria-label="{e(p['name'])}">{tabbar}</div>
     {panehtml}
   </div>
-  <noscript><style>.tabpane{{display:block!important}}.tabbar{{display:none}}
-    .galslide{{display:grid!important;place-items:center;gap:12px;margin-bottom:18px}}
-    .dimg{{aspect-ratio:auto}}.galnav,.galthumbs{{display:none}}</style></noscript>
+  <noscript><style>{R.NOSCRIPT_CSS}</style></noscript>
 
   <p class="backlink"><a href="{e(C.u_cat(lang, p['cat']))}">← {e(C.t(lang,'back_to_cat'))}</a></p>
 </div></div>
@@ -868,7 +864,7 @@ def page_404(lang=C.DEFAULT_LANG):
     url, alts = "/404.html", C.alternates("home")
     body = f"""<div class="cbar"><div class="wrap">
   <h1>{e(C.t(lang,'err404_h1'))}</h1><p class="desc">{e(C.t(lang,'err404_lead'))}</p>
-  <p style="margin-top:24px"><a class="btn pri" href="/">{e(C.t(lang,'err404_cta'))}</a></p>
+  <p class="cta-zeile"><a class="btn pri" href="/">{e(C.t(lang,'err404_cta'))}</a></p>
 </div></div>"""
     return url, R.document(lang, title=C.t(lang, "err404_title"), desc=C.t(lang, "err404_lead"),
                            url="/", alts=alts, jsonld_blocks=[R.ld_org(lang)], body=body,

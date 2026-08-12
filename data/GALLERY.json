@@ -1,25 +1,5 @@
 {
  "_kommentar": "Zusatzbilder unter dem Hauptbild der Produktseite. Je Eintrag: img = Schluessel wie in P.json, alt = Bildbeschreibung je Sprache (Pflicht, wird nicht angezeigt, ist aber fuer Screenreader und die Bildersuche noetig), cap = sichtbare Bildunterschrift je Sprache (freiwillig - fehlt sie, steht unter dem Bild nichts).",
- "mpt-3001": [
-  {
-   "img": "panels/MPT_MyPlasm_System.png",
-   "alt": {
-    "de": "MAHE MPT Plasmaschneidtisch mit Bedienkonsole und dem Hauptfenster der Steuerung MyPlasm CNC",
-    "fr": "Table de découpe plasma MAHE MPT avec console de commande et la fenêtre principale de la commande MyPlasm CNC",
-    "it": "Tavolo di taglio al plasma MAHE MPT con console di comando e la finestra principale del controllo MyPlasm CNC"
-   }
-  }
- ],
- "mpt-2501": [
-  {
-   "img": "panels/MPT_MyPlasm_System.png",
-   "alt": {
-    "de": "MAHE MPT Plasmaschneidtisch mit Bedienkonsole und dem Hauptfenster der Steuerung MyPlasm CNC",
-    "fr": "Table de découpe plasma MAHE MPT avec console de commande et la fenêtre principale de la commande MyPlasm CNC",
-    "it": "Tavolo di taglio al plasma MAHE MPT con console di comando e la finestra principale del controllo MyPlasm CNC"
-   }
-  }
- ],
  "mlf100": [
   {
    "img": "2026/01/IMGP6030_1-248x300.png",

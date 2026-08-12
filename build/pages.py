@@ -273,7 +273,7 @@ def media_html(lang, p, nm):
                    + "</button>")
 
     return (f'<div class="dmedia" data-gal>'
-            f'<div class="dimg{R.dimg_klasse(bilder[0]["img"])}">'
+            f'<div class="dimg{R.dimg_klasse(*[b["img"] for b in bilder])}">'
             f'<button class="galnav prev" type="button" data-step="-1" '
             f'aria-label="{e(C.t(lang, "gal_prev"))}">‹</button>'
             f'<div class="galstage">{slides}</div>'

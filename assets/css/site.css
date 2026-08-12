@@ -299,8 +299,17 @@
      Bild nimmt die Anzeigegrösse aus seinen width/height-Attributen, die
      render.img_tag auf die echte Vorlagenbreite deckelt, und max-width/
      max-height halten es innerhalb des Rahmens. */
-  .dimg > img{display:block;max-width:90%;max-height:90%;
-    width:auto;height:auto;background:#fff}
+  /* Absolut im Rahmen, nicht im Fluss: nur so loesen sich die Prozentangaben
+     auf. Der Rahmen bekommt seine Hoehe aus aspect-ratio, und dagegen rechnet
+     ein max-height:90% im Fluss nicht - gemessen am 12.08.2026 auf der Seite
+     des R1: das Bild wurde 769 px hoch in einem 383 px hohen Rahmen und die
+     Flasche unten abgeschnitten. Fuer ein absolut gesetztes Element ist die
+     Hoehe des Rahmens dagegen bestimmt, die 90 % gehen auf.
+     object-fit:scale-down vergroessert nie ueber die echte Aufloesung hinaus -
+     manche Herstellerfotos sind nur gut 200 px breit und wirkten frueher auf
+     520 px gezogen unscharf. */
+  .dimg > img{position:absolute;top:5%;left:5%;width:90%;height:90%;
+    object-fit:scale-down;background:#fff}
   /* Bildbereich: ein grosses Bild, darunter der Miniaturstreifen. Ein Klick auf
      eine Miniatur tauscht das grosse Bild – dieselbe Bedienung wie in jedem
      Shop, und ohne JavaScript stehen einfach alle Bilder untereinander. */
@@ -312,14 +321,15 @@
      feste Höhe hatte. Jetzt steht sie im Fluss, und alle Folien liegen in
      derselben Rasterzelle übereinander: die Bühne ist so hoch wie die höchste
      Folie, der Rahmen wächst mit, und beim Umschalten springt nichts. */
-  .galstage{position:absolute;inset:0;display:grid;place-items:center}
+  .galstage{position:absolute;inset:5%;display:grid;place-items:center}
   /* display:none für die inaktiven Folien, nicht visibility:hidden: so liegt
      nur eine Folie im Raster, und ohne JavaScript genügt ein display:grid in
      der noscript-Regel, um alle untereinander zu stellen. Die Höhe des Rahmens
      hängt ohnehin nicht an den Folien, sondern am Verhältnis seiner Klasse. */
   .galslide{display:none;margin:0;width:100%}
-  .galslide.active{display:grid;place-items:center;gap:12px}
-  .galslide img{max-width:90%;max-height:90%;width:auto;height:auto;background:#fff}
+  .galslide.active{display:grid;place-items:center;gap:12px;height:100%}
+  .galslide img{max-width:100%;max-height:100%;width:auto;height:auto;
+    object-fit:scale-down;background:#fff}
   .galslide figcaption{color:var(--muted);font-size:12.5px;line-height:1.5;text-align:left;width:100%}
   .galnav{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:38px;height:38px;
     border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.92);color:var(--ink);

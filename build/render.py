@@ -252,11 +252,20 @@ DIMG_EIMER = [
 ]
 
 
-def dimg_klasse(path):
-    m = MANIFEST.get(C.full_img(path))
-    if not m:
+def dimg_klasse(*pfade):
+    """Der Eimer fuer einen Rahmen. Bei mehreren Bildern zaehlt das hoechste.
+
+    Eine Galerie hat einen Rahmen fuer alle Folien. Waehlt man ihn nach der
+    ersten, werden die anderen abgeschnitten - beim MLF 100 gemessen: die
+    beiden Hochformate wurden 619 und 638 px hoch in einem 260 px hohen
+    Rahmen. Also bestimmt die hoechste Folie, und die breite bekommt Luft
+    darueber und darunter.
+    """
+    verhaeltnisse = [m["ratio"] for m in (MANIFEST.get(C.full_img(p)) for p in pfade)
+                     if m and m.get("ratio")]
+    if not verhaeltnisse:
         return ""
-    ratio = m.get("ratio") or 1.0
+    ratio = max(verhaeltnisse)
     for grenze, klasse in DIMG_EIMER:
         if ratio <= grenze:
             return (" " + klasse) if klasse else ""

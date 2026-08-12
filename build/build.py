@@ -505,6 +505,26 @@ def main():
     print(f"✓ data/products.json  ({len(C.P)} Produkte × {len(C.LANGS)} Sprachen)")
     print(f"✓ llms.txt / llms-full.txt / robots.txt / sitemap.xml")
 
+    # Ohne Schluessel geht keine Anfrage ueber den Formulardienst. Die Seite
+    # bleibt bedienbar - app.js oeffnet stattdessen einen Kasten mit dem
+    # fertigen Text und der Adresse -, aber der Besucher braucht dann ein
+    # eingerichtetes Mailprogramm. Am 12.08.2026 nachgemessen: mit Schluessel
+    # geht ein POST an api.web3forms.com/submit mit allen Feldern raus, ohne
+    # Schluessel greift der Rueckfall. Es fehlt also wirklich nur der Wert.
+    #
+    # Kein Fehler, sondern ein Hinweis: der Build soll deswegen nicht
+    # abbrechen. Aber er soll es bei jedem Lauf sagen, hier und im Protokoll
+    # von GitHub Actions - sonst faellt es niemandem mehr auf.
+    if not C.web3forms_key():
+        print("\n! Kein Web3Forms-Schluessel gesetzt: die Formulare fallen auf "
+              "mailto zurueck.\n"
+              "  Schluessel holen auf https://web3forms.com (Adresse eingeben, "
+              "er kommt per Mail),\n"
+              "  dann entweder\n"
+              "      gh secret set WEB3FORMS_KEY        (fuer den Deploy)\n"
+              "  oder build/config.local.json anlegen:  "
+              '{"web3forms_key": "…"}   (nur lokal, nicht im Git)')
+
 
 if __name__ == "__main__":
     main()

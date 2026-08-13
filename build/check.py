@@ -188,6 +188,10 @@ def reihenfolge():
             return
 
 
+# Gesammelte hreflang-Gruppen; nach dem Durchlauf gegeneinander geprueft.
+hreflang_gruppen = {}
+
+
 def main():
     pages = sorted(all_pages())
     if len(pages) < 200:
@@ -265,6 +269,14 @@ def main():
             for _, href in alts:
                 if not target_exists(href.replace(C.SITE, "")):
                     err(f"{where}: hreflang-Ziel fehlt {href}")
+            # Fuer die Gegenprobe nach dem Durchlauf merken. Suchmaschinen
+            # werten eine Sprachgruppe nur aus, wenn jede Seite sich selbst
+            # nennt und alle einander nennen; fehlt eine Richtung, verwirft
+            # Google die Gruppe stillschweigend. Der Ahrefs-Bericht vom
+            # 13.08.2026 meldete genau diese Klasse - dort war es eine
+            # Drosselung waehrend eines Deploys, aber ein echter Fehler waere
+            # bisher nur von aussen aufgefallen.
+            hreflang_gruppen[C.SITE + p] = {c: h for c, h in alts if c != "x-default"}
 
         # 2. interne Links
         for href in re.findall(r'href="(/[^"#]*)"', html):
@@ -352,7 +364,20 @@ def main():
         if not (ROOT / need).exists():
             err(f"Datei fehlt: {need}")
 
+    # Gegenprobe: Selbstverweis und Wechselseitigkeit
+    for url, gruppe in hreflang_gruppen.items():
+        if url not in gruppe.values():
+            err(f"{url}: nennt sich selbst nicht im hreflang")
+        for code, ziel in gruppe.items():
+            andere = hreflang_gruppen.get(ziel)
+            if andere is None:
+                err(f"{url}: hreflang {code} -> {ziel} ist keine indexierbare Seite")
+            elif url not in andere.values():
+                err(f"{url}: hreflang {code} -> {ziel} kommt nicht zurueck")
+
     print(f"{len(pages)} Seiten geprüft  ·  {dict(per_lang)}")
+    print(f"hreflang: {len(hreflang_gruppen)} Gruppen, Selbstverweis und "
+          f"Wechselseitigkeit geprüft")
     for w in warnings[:25]:
         print("  WARN " + w)
     if len(warnings) > 25:

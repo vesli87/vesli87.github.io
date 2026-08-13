@@ -86,6 +86,21 @@ def main():
                             "-sharp_yuv", "-resize", str(s), "0",
                             str(f), "-o", str(dst)],
                            capture_output=True)
+        # Stufen aufraeumen, die es zu einer frueheren, groesseren Vorlage
+        # einmal gab. Ohne das bleiben sie mit dem ALTEN Bildinhalt liegen:
+        # am 13.08.2026 loeste eine 1672 px breite Vorlage die 3344 px breite
+        # ab, und -2000.webp sowie -3000.webp standen weiter im Verzeichnis,
+        # zeigten noch das alte Motiv und wurden mit ausgeliefert. hero.py
+        # macht das seit jeher richtig; hier fehlte es.
+        for veraltet in OUT.glob(f"{k}-*.webp"):
+            try:
+                breite = int(veraltet.stem.rsplit("-", 1)[1])
+            except (IndexError, ValueError):
+                continue
+            if breite not in stufen:
+                veraltet.unlink()
+                print(f"    entfernt: {veraltet.name} (Stufe gibt es nicht mehr)")
+
         manifest[f"panels/{f.name}"] = {"key": k, "w": w, "h": h,
                                         "ratio": round(h / w, 4), "local": True,
                                         "sizes": stufen}

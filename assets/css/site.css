@@ -126,8 +126,15 @@
                         rgba(255,255,255,.45) 34%, rgba(255,255,255,0) 48%),
         linear-gradient(to bottom, rgba(255,255,255,.55) 0%, rgba(255,255,255,0) 62%)}
   }
+  /* Die Obergrenze war 400 px und passte nicht zur Schriftgroesse. Die waechst
+     mit clamp(18px,2.6vw,40px) bis 40 px, die Spalte hoerte aber schon bei
+     400 px auf: ab rund 1540 px Fensterbreite war "PLASMASCHNEIDTISCH" mit
+     419 px breiter als seine Spalte und wurde mitten im Wort umbrochen.
+     440 px fasst das laengste Wort auch bei voller Schriftgroesse. Der
+     Textblock endet damit bei 496 px und bleibt weit links von der Maschine,
+     die im Bild erst bei 40 % der Breite beginnt. */
   .hero-slide.light .hero-txt{color:var(--ink);top:clamp(14px,7%,90px);transform:none;
-    max-width:min(31%,400px)}
+    max-width:min(31%,440px)}
   .hero-slide.light .hero-txt p{color:#3A352E}
   .hero-txt .hk{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.16em;
     text-transform:uppercase;font-size:clamp(11px,1.1vw,14px);color:var(--accent)}
@@ -155,8 +162,14 @@
     /* Der Verlauf von oben deckt auf dieser Breite fast das ganze Bild zu -
        die Maschine war dann gar nicht mehr zu sehen. Auf dem Handy steht
        deshalb nur eine kleine Flaeche direkt hinter der Schrift. */
+    /* max-width gehoert hierher und nicht in die Regel ".hero-txt" oben:
+       ".hero-slide.light .hero-txt" ist spezifischer und hat die dort
+       gemeinte Breite von 56 % ueberstimmt. Auf dem Handy blieb die Spalte
+       deshalb bei 31 % - auf einem 375-px-Bildschirm sind das 116 px, in die
+       kein einziges Wort der Ueberschrift passt. Sie wurde dort seit jeher
+       mitten im Wort umbrochen. */
     .hero-slide.light .hero-txt{background:rgba(255,255,255,.86);
-      padding:10px 12px 12px;border-radius:8px;
+      padding:10px 12px 12px;border-radius:8px;max-width:56%;
       backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px)}
   }
   .hero-cta{background:#0E1013;padding:0 0 clamp(20px,3vw,34px)}

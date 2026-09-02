@@ -156,7 +156,10 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "favicon.svg").write_text(FAVICON_SVG, "utf-8")
     made = ["favicon.svg"]
-    for name, size in [("icon-192.png", 192), ("icon-512.png", 512),
+    # 96 und 192 sind Vielfache von 48 - genau das verlangt Google fuer das
+    # Zeichen in den Suchergebnissen. Die ICO deckt 48 ab; mit einer groesseren
+    # PNG-Fassung hat der Abholer die beste Vorlage zur Auswahl.
+    for name, size in [("icon-96.png", 96), ("icon-192.png", 192), ("icon-512.png", 512),
                        ("apple-touch-icon.png", 180), ("logo.png", 512),
                        ("og-fallback.png", 512)]:
         write_png(OUT / name, size, size, monogram_icon(size))

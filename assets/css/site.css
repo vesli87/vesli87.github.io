@@ -607,11 +607,20 @@
     body{font-size:11pt;line-height:1.45}
     .wrap{max-width:100%;padding:0}
     .tabpane{display:block!important;page-break-inside:auto}
-    h1{font-size:20pt;margin-bottom:6pt}
+    /* Die Klassenselektoren muessen mit: ".cbar h1", ".dinfo h1" und
+       ".intro h1" sind spezifischer als ein blosses "h1" und haben diese
+       Regel bisher ueberstimmt. Auf Papier blieb damit die Bildschirm-
+       groesse stehen - und die haengt an vw, was gegen die Seitenbreite
+       aufloest statt gegen die gemeinte Punktgroesse. */
+    h1,.cbar h1,.dinfo h1,.intro h1{font-size:20pt;margin-bottom:6pt}
     h2,h3{page-break-after:avoid}
     table{page-break-inside:auto;width:100%;border-collapse:collapse}
     tr{page-break-inside:avoid}
-    th,td{border:1px solid #999;padding:4pt 6pt}
+    /* Ebenso hier: ".spectab th" schlaegt "th". Die Datenblatt-Tabelle -
+       der Grund, warum es diese Druckregeln ueberhaupt gibt - wurde auf
+       Papier mit der Bildschirmpolsterung gesetzt und dadurch breiter als
+       das Blatt. */
+    th,td,.spectab th,.spectab td{border:1px solid #999;padding:4pt 6pt}
     img{max-width:60mm;height:auto;page-break-inside:avoid}
     a[href^="http"]::after{content:" (" attr(href) ")";font-size:8pt;color:#444!important}
     a[href^="/"]::after{content:" (www.ves-tech.ch" attr(href) ")";font-size:8pt;color:#444!important}

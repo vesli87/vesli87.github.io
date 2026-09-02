@@ -1,6 +1,6 @@
 Contact: mailto:vestechswiss@gmail.com
 Contact: tel:+41767109139
-Expires: 2027-09-02T00:00:00.000Z
+Expires: 2027-09-03T00:00:00.000Z
 Preferred-Languages: de, en, cs
 Canonical: https://www.ves-tech.ch/.well-known/security.txt
 Policy: https://www.ves-tech.ch/impressum/

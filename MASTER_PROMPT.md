@@ -307,7 +307,13 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
    ein eigener Satz. In der Schriftgrösse des Fliesstextes wirkt der Strich auf
    dem Telefon wie ein Trennstrich mitten im Satz. Bei Aufzählungen der Form
    „Begriff – Erklärung" steht der Doppelpunkt („Hot-Start: sichere Zündung"),
-   in Überschriften der Mittelpunkt („MAHE MPT · CNC-Plasmaschneidtisch").
+   in Überschriften der Mittelpunkt („3000 × 1500 mm · Theta 060 · MyPlasm CNC").
+   **Ausnahme, vom Inhaber am 03.09.2026 entschieden:** in der Überschrift der
+   zweiten Startseiten-Folie steht kein Mittelpunkt mehr. Sie heisst „MAHE MPT
+   Plasmaschneidtisch CNC" — dieselbe Reihenfolge wie in FR und IT („table de
+   découpe plasma CNC", „tavolo di taglio al plasma CNC"). So braucht sie
+   weder Mittelpunkt noch Bindestrich und bleibt trotzdem richtiges Deutsch;
+   die Zwischenfassung „CNC Plasmaschneidtisch" verstiess gegen 3b.
    **Bis-Striche bleiben:** „10 – 420 A", „25–90 mm²", „Mo–Do 07:30–17:00",
    „Name A–Z", „Ziff. 2–4 UWG" — das sind Messwerte, Zeiten und Verweise, kein
    Satzzeichen. Ebenso bleibt `core.py::SPEC_EMPTY`: ein „–" in einer

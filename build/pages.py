@@ -13,22 +13,6 @@ from render import e      # noqa: E402
 
 PANEL_DRAWN = json.loads((C.DATA / "PANEL_DRAWN.json").read_text("utf-8"))
 
-# Wie breit das Hauptbild einer Produktseite wirklich wird.
-#
-# Vorher stand hier "(max-width:900px) 92vw, 520px" - beide Zahlen falsch:
-#
-#   * Der Umbruch liegt nicht bei 900 px. .dgrid wird laut site.css:574 erst
-#     ab 1000 px einspaltig. Zwischen 901 und 1000 px stand das Bild also
-#     ueber die volle Breite, waehrend sizes 520 px versprach.
-#   * 92vw stimmt nie. Der Rahmen .dimg sitzt in .wrap (28 px Polster je
-#     Seite), und das Bild darin ist noch einmal 40 px eingerueckt
-#     (site.css:265: top/left 40px, width calc(100% - 80px)). Der Schlitz ist
-#     also 100vw - 136px; auf einem 375-px-Telefon 239 px, nicht 345.
-#
-# Nachgemessen am 12.08.2026: bei 1440 px sind es 510 px, bei 375 px 239 px -
-# beides deckt sich mit der Formel unten. Der Fehler kostete auf Telefonen mit
-# dreifacher Pixeldichte eine Stufe zu viel: 163 kB statt 79 kB fuer das
-# LCP-Element, bei jedem Aufruf.
 # Wie breit das Bild auf der Produktseite wirklich wird.
 #
 # Drei Deckel wirken zusammen:
@@ -907,6 +891,43 @@ def page_legal(lang, kind):
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)), (nav, url)])]
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
                            jsonld_blocks=ld, body=body, robots=robots)
+
+
+def page_about(lang):
+    """Die Seite ueber das Unternehmen.
+
+    Warum es sie gibt: die Search Console zeigte am 14.08.2026 bei 518
+    Impressionen eine mittlere Position von 41 - die Website wird gefunden,
+    aber weit hinten. Fuer ein junges Einzelunternehmen fehlt Google vor allem
+    das, was es "wer steht dahinter" nennt: eine Seite, die Inhaber, Werkstatt,
+    Herstellerprogramm und Pruefverfahren an einer Stelle nennt und mit dem
+    Impressum, der Kontaktseite und den Serviceseiten zusammenhaengt.
+
+    Alles darauf ist nachpruefbar. Erfundene Kundenstimmen stehen bewusst nicht
+    da - sie waeren nach UWG Art. 3 Abs. 1 lit. b irrefuehrend und liessen sich
+    von jeder interessierten Person widerlegen.
+    """
+    url, alts = C.u_page(lang, "about"), C.alternates("page", key="about")
+    nav = C.t(lang, "nav_about")
+    werte = dict(
+        owner=C.COMPANY["owner"], street=C.COMPANY["street"], zip=C.COMPANY["zip"],
+        city=C.COMPANY["city"], region_name=C.COMPANY["region_name"],
+        hours=C.COMPANY["hours"], partner=C.WORKSHOP["partner"],
+        ws_street=C.WORKSHOP["street"], ws_zip=C.WORKSHOP["zip"],
+        ws_city=C.WORKSHOP["city"], ws_region_name=C.WORKSHOP["region_name"],
+        url_kalib=C.u_service(lang, "calib"),
+    )
+    secs = "".join(
+        f"<section><h2>{e(h)}</h2>{b.format(**werte)}</section>"
+        for h, b in C.EX[lang]["about_body"])
+    body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (nav, None)],
+                   h1=C.t(lang, "about_h1"), desc=C.t(lang, "about_lead"))
+            + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')
+    title, desc = C.t(lang, "about_title"), C.t(lang, "about_desc")
+    ld = [R.ld_org(lang), *R.ld_about(lang, url, title, desc),
+          R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)), (nav, url)])]
+    return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
+                           jsonld_blocks=ld, body=body)
 
 
 def page_404(lang=C.DEFAULT_LANG):

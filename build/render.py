@@ -564,6 +564,37 @@ def ld_faq_subset(lang, items, url):
     }
 
 
+def ld_about(lang, url, title, desc):
+    """AboutPage samt Person des Inhabers.
+
+    Google braucht bei einem Einzelunternehmen einen Anhaltspunkt, wer hinter
+    der Firma steht. Der Person-Knoten haengt als founder am Organization-
+    Knoten und traegt dieselbe Adresse - so ist die Verbindung explizit statt
+    nur im Fliesstext.
+    """
+    person = {
+        "@type": "Person",
+        "@id": f"{C.SITE}/#inhaber",
+        "name": C.COMPANY["owner"],
+        "jobTitle": C.t(lang, "about_role"),
+        "worksFor": {"@id": f"{C.SITE}/#organization"},
+        "knowsLanguage": ["de", "cs", "en"],
+        "workLocation": {
+            "@type": "Place",
+            "name": C.WORKSHOP["partner"],
+            "address": {"@type": "PostalAddress",
+                        "streetAddress": C.WORKSHOP["street"],
+                        "postalCode": C.WORKSHOP["zip"],
+                        "addressLocality": C.WORKSHOP["city"],
+                        "addressRegion": C.WORKSHOP["region"],
+                        "addressCountry": "CH"},
+        },
+    }
+    seite = ld_webpage(lang, url, title, desc,
+                       extra={"@type": "AboutPage", "mainEntity": {"@id": f"{C.SITE}/#organization"}})
+    return [seite, person]
+
+
 def ld_webpage(lang, url, title, desc, extra=None):
     d = {
         "@type": "WebPage",
@@ -699,6 +730,7 @@ def mega(lang):
         (C.t(lang, "n_process"),   C.u_page(lang, "processes")),
         (C.t(lang, "n_downloads"), C.u_page(lang, "downloads")),
         (C.t(lang, "nav_faq"),     C.u_page(lang, "faq")),
+        (C.t(lang, "nav_about"),   C.u_page(lang, "about")),
         (C.t(lang, "n_contact"),   C.u_page(lang, "contact")),
     ]:
         blocks.append(
@@ -800,6 +832,7 @@ def footer(lang):
         <li><a href="{e(C.u_page(lang,'processes'))}">{e(C.t(lang,'n_process'))}</a></li>
         <li><a href="{e(C.u_page(lang,'downloads'))}">{e(C.t(lang,'n_downloads'))}</a></li>
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>
+        <li><a href="{e(C.u_page(lang,'about'))}">{e(C.t(lang,'nav_about'))}</a></li>
         <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_contact'))}</a></li>
         <li><a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a></li>
       </ul></div>

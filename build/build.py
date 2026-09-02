@@ -34,7 +34,7 @@ TODAY = datetime.date.today().isoformat()
 
 # Verzeichnisse, die der Build vollständig verwaltet (werden vorher geleert)
 MANAGED_DIRS = ["produkte", "fr", "it", "verfahren", "downloads", "kontakt",
-                "faq", "suche", "impressum", "datenschutz", "service"]
+                "faq", "suche", "impressum", "datenschutz", "service", "ueber-uns"]
 
 written = []
 
@@ -456,7 +456,11 @@ def main():
         for fn, key, prio in [(PG.page_processes, "processes", "0.6"),
                               (PG.page_downloads, "downloads", "0.5"),
                               (PG.page_contact, "contact", "0.7"),
-                              (PG.page_faq, "faq", "0.7")]:
+                              (PG.page_faq, "faq", "0.7"),
+                              # Wer steht dahinter: bei einem Einzelunternehmen
+                              # eine der wichtigsten Seiten ueberhaupt, und sie
+                              # fehlte bis zum 14.08.2026.
+                              (PG.page_about, "about", "0.7")]:
             u, h = fn(lang)
             write(u, h); entries.append((u, C.alternates("page", key=key), prio, "monthly"))
         # Servicebereich: Uebersicht und drei Unterseiten. Hohe Prioritaet -
@@ -503,6 +507,22 @@ def main():
     print(f"✓ {len(html_pages)} HTML-Seiten, {len(entries)} in der sitemap")
     print(f"✓ Suchindex: {', '.join('search-%s.json' % l for l in C.LANGS)}")
     print(f"✓ data/products.json  ({len(C.P)} Produkte × {len(C.LANGS)} Sprachen)")
+    # security.txt nach RFC 9116. Der Standardweg, eine Sicherheitsmeldung
+    # anzunehmen: wer eine Luecke findet, sucht genau dort. Ohne die Datei
+    # landet ein Hinweis im besten Fall im Kontaktformular, im schlechteren
+    # gar nicht. Das Ablaufdatum ist Pflicht und darf laut RFC hoechstens ein
+    # Jahr in der Zukunft liegen - deshalb wird es bei jedem Build neu
+    # gesetzt und kann nicht veralten.
+    ablauf = (datetime.date.today() + datetime.timedelta(days=365)).isoformat()
+    sec = (f"Contact: mailto:{C.COMPANY['email']}\n"
+           f"Contact: tel:{C.COMPANY['phone_href']}\n"
+           f"Expires: {ablauf}T00:00:00.000Z\n"
+           "Preferred-Languages: de, en, cs\n"
+           f"Canonical: {C.SITE}/.well-known/security.txt\n"
+           f"Policy: {C.SITE}/{C.SEG['de']['imprint']}/\n")
+    write("/.well-known/security.txt", sec)
+    print(f"✓ .well-known/security.txt  (gueltig bis {ablauf})")
+
     print(f"✓ llms.txt / llms-full.txt / robots.txt / sitemap.xml")
 
     # Ohne Schluessel geht keine Anfrage ueber den Formulardienst. Die Seite

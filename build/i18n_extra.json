@@ -434,7 +434,39 @@
     "Was zuerst zu klären ist",
     "<ul><li>Werkstoff und Blechdicke, die tatsächlich geschnitten werden.</li><li>Grösstes Blechformat.</li><li>Platz in der Halle, Absaugung oder Wasserbett.</li><li>Netzanschluss und Druckluft.</li></ul><p>Beschreiben Sie das kurz, daraus wird ein Vorschlag, kein Katalogblatt.</p>"
    ]
-  ]
+  ],
+  "about_title": "Über VES-TECH Swiss · Werkstatt Herisau, MAHE-Programm",
+  "about_desc": "Einzelunternehmen von Martin Veselovsky: MAHE-Schweiss- und Schneidtechnik, Werkstatt in Herisau AR, Kalibrierung nach EN 60974-14, Beratung auf Deutsch, Tschechisch und Englisch.",
+  "about_h1": "Wer hinter VES-TECH Swiss steht",
+  "about_lead": "Ein Einzelunternehmen, eine Werkstatt, ein Herstellerprogramm. Wer hier anruft, spricht mit der Person, die das Gerät danach auch in der Hand hat.",
+  "about_body": [
+   [
+    "Das Unternehmen",
+    "<p>VES-TECH Swiss ist ein Einzelunternehmen von {owner} mit Sitz an der {street}, {zip} {city} ({region_name}). Es führt das Schweiss- und Schneidtechnikprogramm der MAHE GmbH in der Schweiz und im Fürstentum Liechtenstein und betreut die Geräte über den Verkauf hinaus: Inbetriebnahme, Wartung, Reparatur, Kalibrierung.</p><p>Einzelunternehmen heisst: es gibt keine Abteilung, an die weiterverbunden wird. Der Inhaber haftet mit seinem Namen, und dieser Name steht deshalb im Impressum, in den AGB und auf jeder Rechnung.</p>"
+   ],
+   [
+    "Die Werkstatt in Herisau",
+    "<p>Gearbeitet wird nicht an der Firmenadresse, sondern in der Werkstatt an der {ws_street}, {ws_zip} {ws_city} ({ws_region_name}) – bei der {partner}. Dort stehen Prüfplätze, Messmittel und der Platz, den ein Schneidtisch oder eine 400-Ampere-Anlage braucht.</p><p>Diese Trennung steht hier ausdrücklich, weil sie für die Kundschaft zählt: wer ein Gerät bringt, fährt nach Herisau, nicht nach Bronschhofen. Beide Adressen stehen deshalb auch im Impressum und auf der Kontaktseite.</p>"
+   ],
+   [
+    "Warum MAHE",
+    "<p>MAHE baut Schweiss- und Schneidtechnik in Kreuztal-Kredenbach in Deutschland: MIG/MAG, WIG, Elektrode, Plasmaschneiden von Hand bis zum CNC-Tisch, dazu die Reinigungs- und Signiertechnik. Das Programm ist überschaubar und die Geräte sind reparierbar – beides Gründe, es zu führen.</p><p>Ersatzteile kommen vom Hersteller, die Garantieabwicklung läuft über ihn. Was auf den Produktseiten steht, gibt die Angaben des Herstellers wieder; die Herkunft jeder technischen Angabe lässt sich gegen dessen Unterlagen prüfen.</p>"
+   ],
+   [
+    "Was gemessen und dokumentiert wird",
+    "<p>Schweissstromquellen werden nach EN 60974-14 kalibriert. Wer nach EN 1090 fertigt oder nach ISO 3834 arbeitet, braucht den Nachweis, dass die Anlage das liefert, was am Display steht – und zwar mit Datum, Messwerten und Unterschrift.</p><p>Was dabei gemessen wird und wie oft es nötig ist, steht auf der <a href=\"{url_kalib}\">Seite zur Kalibrierung</a>. Reparaturen und Automationsprojekte haben ebenfalls eigene Seiten.</p>"
+   ],
+   [
+    "Sprachen und Erreichbarkeit",
+    "<p>Beratung auf Deutsch, Tschechisch und Englisch. Telefonisch {hours}. Besuch in der Werkstatt nach Vereinbarung – so ist sichergestellt, dass jemand da ist und das Gerät nicht vor verschlossener Tür steht.</p>"
+   ],
+   [
+    "Was hier bewusst nicht steht",
+    "<p>Auf dieser Website stehen keine erfundenen Kundenstimmen und keine Logos von Firmen, die nie zugestimmt haben. Referenzen erscheinen erst, wenn die Kundschaft der Nennung schriftlich zugestimmt hat. Bis dahin muss diese Seite mit dem auskommen, was nachprüfbar ist: Adresse, Werkstatt, Herstellerprogramm, Prüfverfahren.</p>"
+   ]
+  ],
+  "nav_about": "Über uns",
+  "about_role": "Inhaber"
  },
  "fr": {
   "locale": "fr_CH",
@@ -870,7 +902,39 @@
     "Ce qu’il faut clarifier d’abord",
     "<ul><li>Matériau et épaisseur réellement découpés.</li><li>Plus grand format de tôle.</li><li>Place dans l’atelier, aspiration ou bac à eau.</li><li>Raccordement au réseau et air comprimé.</li></ul><p>Décrivez-le brièvement, il en sortira une proposition, pas une fiche de catalogue.</p>"
    ]
-  ]
+  ],
+  "about_title": "À propos de VES-TECH Swiss · atelier Herisau, gamme MAHE",
+  "about_desc": "Entreprise individuelle de Martin Veselovsky : technique de soudage et de découpe MAHE, atelier à Herisau AR, calibrage selon EN 60974-14, conseil en allemand, tchèque et anglais.",
+  "about_h1": "Qui se trouve derrière VES-TECH Swiss",
+  "about_lead": "Une entreprise individuelle, un atelier, une gamme du fabricant. Qui appelle ici parle à la personne qui aura ensuite l’appareil entre les mains.",
+  "about_body": [
+   [
+    "L’entreprise",
+    "<p>VES-TECH Swiss est une entreprise individuelle de {owner}, sise {street}, {zip} {city} ({region_name}). Elle représente la gamme de technique de soudage et de découpe de MAHE GmbH en Suisse et au Liechtenstein, et suit les appareils au-delà de la vente : mise en service, entretien, réparation, calibrage.</p><p>Entreprise individuelle signifie qu’il n’y a pas de service auquel on vous renvoie. Le titulaire répond en son nom, et ce nom figure donc dans les mentions légales, dans les conditions générales et sur chaque facture.</p>"
+   ],
+   [
+    "L’atelier de Herisau",
+    "<p>Le travail ne se fait pas à l’adresse de l’entreprise, mais à l’atelier {ws_street}, {ws_zip} {ws_city} ({ws_region_name}) – chez {partner}. On y trouve les postes de contrôle, les instruments de mesure et la place qu’exigent une table de découpe ou une installation de 400 ampères.</p><p>Cette séparation est indiquée expressément, parce qu’elle compte pour la clientèle : qui apporte un appareil se rend à Herisau, non à Bronschhofen. Les deux adresses figurent aussi dans les mentions légales et sur la page de contact.</p>"
+   ],
+   [
+    "Pourquoi MAHE",
+    "<p>MAHE construit de la technique de soudage et de découpe à Kreuztal-Kredenbach, en Allemagne : MIG/MAG, TIG, électrode, découpe plasma de la main jusqu’à la table CNC, ainsi que la technique de nettoyage et de marquage. La gamme reste lisible et les appareils sont réparables – deux raisons de la représenter.</p><p>Les pièces viennent du fabricant, la garantie passe par lui. Ce qui figure sur les pages produits reprend ses indications ; l’origine de chaque donnée technique se vérifie sur ses documents.</p>"
+   ],
+   [
+    "Ce qui est mesuré et documenté",
+    "<p>Les sources de courant de soudage sont calibrées selon EN 60974-14. Qui fabrique selon EN 1090 ou travaille selon ISO 3834 a besoin de la preuve que l’installation délivre ce qu’affiche l’écran – avec date, valeurs mesurées et signature.</p><p>Ce qui est mesuré et à quelle fréquence figure sur la <a href=\"{url_kalib}\">page consacrée au calibrage</a>. Les réparations et les projets d’automation ont également leurs propres pages.</p>"
+   ],
+   [
+    "Langues et disponibilité",
+    "<p>Conseil en allemand, en tchèque et en anglais. Par téléphone {hours}. Visite à l’atelier sur rendez-vous – ainsi quelqu’un est présent et l’appareil ne reste pas devant une porte fermée.</p>"
+   ],
+   [
+    "Ce qui, volontairement, ne figure pas ici",
+    "<p>Ce site ne contient ni témoignages inventés ni logos d’entreprises qui n’ont jamais donné leur accord. Les références paraîtront lorsque la clientèle aura consenti par écrit à être citée. D’ici là, cette page se limite à ce qui est vérifiable : adresse, atelier, gamme du fabricant, procédures de contrôle.</p>"
+   ]
+  ],
+  "nav_about": "À propos",
+  "about_role": "Titulaire"
  },
  "it": {
   "locale": "it_CH",
@@ -1306,6 +1370,38 @@
     "Cosa chiarire per primo",
     "<ul><li>Materiale e spessore realmente tagliati.</li><li>Formato di lamiera più grande.</li><li>Spazio in officina, aspirazione o vasca ad acqua.</li><li>Allacciamento alla rete e aria compressa.</li></ul><p>Descrivetelo brevemente, ne nascerà una proposta, non una scheda di catalogo.</p>"
    ]
-  ]
+  ],
+  "about_title": "Chi siamo · VES-TECH Swiss, officina Herisau, gamma MAHE",
+  "about_desc": "Ditta individuale di Martin Veselovsky: tecnica di saldatura e taglio MAHE, officina a Herisau AR, calibrazione secondo EN 60974-14, consulenza in tedesco, ceco e inglese.",
+  "about_h1": "Chi c’è dietro VES-TECH Swiss",
+  "about_lead": "Una ditta individuale, un’officina, una gamma del fabbricante. Chi telefona parla con la persona che avrà poi l’apparecchio fra le mani.",
+  "about_body": [
+   [
+    "L’impresa",
+    "<p>VES-TECH Swiss è una ditta individuale di {owner}, con sede in {street}, {zip} {city} ({region_name}). Rappresenta la gamma di tecnica di saldatura e taglio di MAHE GmbH in Svizzera e nel Liechtenstein e segue gli apparecchi oltre la vendita: messa in servizio, manutenzione, riparazione, calibrazione.</p><p>Ditta individuale significa che non esiste un reparto a cui rimandare. Il titolare risponde con il proprio nome, e questo nome compare quindi nelle note legali, nelle condizioni generali e su ogni fattura.</p>"
+   ],
+   [
+    "L’officina di Herisau",
+    "<p>Il lavoro non si svolge all’indirizzo dell’impresa, ma nell’officina in {ws_street}, {ws_zip} {ws_city} ({ws_region_name}) – presso {partner}. Lì ci sono i banchi di prova, gli strumenti di misura e lo spazio che richiedono un tavolo di taglio o un impianto da 400 ampere.</p><p>Questa distinzione è indicata espressamente perché conta per il cliente: chi porta un apparecchio va a Herisau, non a Bronschhofen. Entrambi gli indirizzi figurano anche nelle note legali e nella pagina dei contatti.</p>"
+   ],
+   [
+    "Perché MAHE",
+    "<p>MAHE costruisce tecnica di saldatura e taglio a Kreuztal-Kredenbach, in Germania: MIG/MAG, TIG, elettrodo, taglio al plasma dalla torcia manuale al tavolo CNC, oltre alla tecnica di pulizia e marcatura. La gamma resta leggibile e gli apparecchi sono riparabili: due ragioni per rappresentarla.</p><p>I ricambi provengono dal fabbricante, la garanzia passa da lui. Quanto riportato nelle pagine di prodotto riprende le sue indicazioni; l’origine di ogni dato tecnico è verificabile sui suoi documenti.</p>"
+   ],
+   [
+    "Che cosa viene misurato e documentato",
+    "<p>Le sorgenti di corrente per saldatura vengono calibrate secondo EN 60974-14. Chi produce secondo EN 1090 o lavora secondo ISO 3834 ha bisogno della prova che l’impianto eroghi quanto indicato sul display – con data, valori misurati e firma.</p><p>Che cosa viene misurato e con quale frequenza è descritto nella <a href=\"{url_kalib}\">pagina sulla calibrazione</a>. Riparazioni e progetti di automazione hanno pagine proprie.</p>"
+   ],
+   [
+    "Lingue e reperibilità",
+    "<p>Consulenza in tedesco, ceco e inglese. Per telefono {hours}. Visita in officina su appuntamento – così qualcuno è presente e l’apparecchio non resta davanti a una porta chiusa.</p>"
+   ],
+   [
+    "Che cosa qui volutamente non si trova",
+    "<p>Su questo sito non ci sono testimonianze inventate né loghi di aziende che non hanno mai dato il consenso. Le referenze compariranno quando la clientela avrà acconsentito per iscritto a essere citata. Fino ad allora questa pagina si limita a ciò che è verificabile: indirizzo, officina, gamma del fabbricante, procedure di controllo.</p>"
+   ]
+  ],
+  "nav_about": "Chi siamo",
+  "about_role": "Titolare"
  }
 }

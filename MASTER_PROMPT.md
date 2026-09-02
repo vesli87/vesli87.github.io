@@ -145,6 +145,12 @@ Das `onerror`-Attribut lädt im Notfall wieder vom Hersteller.
 
 Neue Bilder: `python3 build/images.py` (braucht Netz und `cwebp`), danach `build.py`.
 
+Neues Herobild: `python3 build/hero.py hero <datei>` (braucht `cwebp`, und für
+eine Vorlage, die kein JPEG ist, zusätzlich `Pillow` für den JPEG-Rückfall).
+Beides meldet sich mit einem Satz, wenn es fehlt. `build.py`, `check.py` und
+`audit.py` kommen weiterhin mit der Standardbibliothek aus — nur die
+Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
+
 ## 6. SEO
 
 - `<title>` und `meta description` pro Seite einzigartig, Titel ≤ 68 Zeichen

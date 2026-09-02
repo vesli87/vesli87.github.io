@@ -84,17 +84,25 @@ def erzeuge(name, quelle):
     # bei einer Datei, die niemand mehr als Vorlage hat.
     #
     # Kodiert wird mit Pillow, nicht mit sips. sips mit formatOptions 88 machte
-    # aus einer 1536-px-Vorlage 364 kB; Pillow mit Qualitaet 82, progressiv und
-    # optimierten Huffman-Tabellen kommt bei derselben Vorlage auf 209 kB - und
-    # ist dabei naeher am Original, nicht weiter weg (PSNR 52.7 statt 49.8 dB).
-    # Der Grund ist die Quantisierungstabelle: die Vorlage stammt selbst aus
-    # einem JPEG, und Qualitaet 82 trifft deren Tabelle fast genau, sodass beim
-    # zweiten Kodieren kaum neue Rundungsfehler entstehen.
+    # aus der Vorlage hero-HyperMIG-ohne-Punkte.png 364 kB; Pillow mit Qualitaet
+    # 82, progressiv und optimierten Huffman-Tabellen kommt auf 209 kB - und ist
+    # dabei naeher am Original, nicht weiter weg: PSNR ueber alle drei Kanaele
+    # 49.97 gegen 47.32 dB. Der Grund ist die Quantisierungstabelle: die Vorlage
+    # stammt selbst aus einem JPEG, und Qualitaet 82 trifft deren Tabelle fast
+    # genau, sodass beim zweiten Kodieren kaum neue Rundungsfehler entstehen.
     jpg = OUT / f"{name}.jpg"
     if quelle.suffix.lower() in (".jpg", ".jpeg"):
         shutil.copyfile(quelle, jpg)
     else:
-        from PIL import Image
+        # Wie beim cwebp-Test weiter oben: fehlt die Voraussetzung, soll hier
+        # ein Satz stehen und kein Traceback. Der Fallstrick dabei ist der
+        # Name - importiert wird "PIL", installiert wird "Pillow".
+        try:
+            from PIL import Image
+        except ImportError:
+            sys.exit("Pillow fehlt  ->  pip3 install --user Pillow\n"
+                     "(nur noetig, wenn die Vorlage kein JPEG ist - ein JPEG "
+                     "wird unveraendert kopiert.)")
         Image.open(quelle).convert("RGB").save(
             jpg, "JPEG", quality=82, optimize=True, progressive=True)
 

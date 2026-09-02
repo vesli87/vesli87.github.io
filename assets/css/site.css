@@ -511,6 +511,7 @@
   .acccard .bd h3{font-family:'DM Serif Display',serif;font-weight:400;font-size:16px;text-transform:uppercase;letter-spacing:.015em;margin:3px 0 2px;line-height:1.18}
   .acccard .bd p{color:var(--muted);font-size:12px}
   .noacc{color:var(--muted);font-size:14px}
+  .fitsnote{color:var(--muted);font-size:14px;margin:0 0 14px;max-width:66ch}
 
   .dlrow{display:flex;flex-direction:column;gap:10px;max-width:520px}
   /* Downloadseite: breiter als die Liste auf der Produktseite. Stand als

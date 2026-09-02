@@ -299,12 +299,10 @@ def opt_html(lang, p):
             f'<p class="optnote">{e(C.t(lang,"opt_note"))}</p>')
 
 
-def acc_html(lang, p):
-    acc = C.relatedAcc(p)
-    if not acc:
-        return f'<p class="noacc">{e(C.t(lang,"no_acc"))}</p>'
+def karten(lang, ids):
+    """Ein Raster aus Produktkarten – fuer beide Richtungen der Zuordnung."""
     cards = ""
-    for pid in acc:
+    for pid in ids:
         a = C.BY_ID[pid]
         alt = "%s %s" % (C.BRAND, C.pName(lang, a))
         im = R.img_tag(a["img"], "(max-width:760px) 40vw, 180px", alt=alt)
@@ -315,6 +313,25 @@ def acc_html(lang, p):
             f'<p>{e(C.pDesc(lang, a))}</p></div></a>'
         )
     return f'<div class="accgrid">{cards}</div>'
+
+
+def acc_html(lang, p):
+    """Der Reiter an vierter Stelle – je nachdem, was das Produkt ist.
+
+    Ein Geraet fuehrt sein Zubehoer auf. Ein Zubehoerteil fuehrt umgekehrt die
+    Geraete auf, an die es gehoert; frueher stand dort auf 43 Seiten nur der
+    Hinweis, es sei kein Zubehoer hinterlegt.
+    """
+    acc = C.relatedAcc(p)
+    if acc:
+        return karten(lang, acc)
+    zu = C.geraeteZu(p)
+    if zu:
+        return (f'<p class="fitsnote">{e(C.t(lang,"fits_note"))}</p>'
+                + karten(lang, zu))
+    # Weder das eine noch das andere: der Reiter entfaellt. Der Satz, der hier
+    # stand, war auf einem Ersatzkabel ausserdem falsch - es ist kein Geraet.
+    return ""
 
 
 def dl_html(lang, p):
@@ -590,11 +607,12 @@ def page_product(lang, p):
     tabs = [("feat", tab1), ("tech", C.t(lang, "tab_tech"))]
     if C.optionsOf(lang, p):
         tabs.append(("opt", C.t(lang, "tab_opt")))
-    tabs += [("acc", C.t(lang, "tab_acc")), ("dl", C.t(lang, "tab_dl"))]
-    tabbar = "".join(
-        f'<button class="tabbtn{" active" if i == 0 else ""}" type="button" role="tab" '
-        f'id="tb-{k}" aria-controls="tab-{k}" aria-selected="{"true" if i == 0 else "false"}" '
-        f'data-tab="{k}">{e(n)}</button>' for i, (k, n) in enumerate(tabs))
+    # Der Reiter heisst nach dem, was er zeigt: beim Geraet das Zubehoer,
+    # beim Zubehoerteil die Geraete, an die es gehoert.
+    acc_titel = (C.t(lang, "tab_acc") if C.relatedAcc(p)
+                 else C.t(lang, "tab_fits") if C.geraeteZu(p)
+                 else C.t(lang, "tab_acc"))
+    tabs += [("acc", acc_titel), ("dl", C.t(lang, "tab_dl"))]
     panes = {
         "feat": front_html(lang, p),
         "tech": spec_html(lang, p),
@@ -602,6 +620,20 @@ def page_product(lang, p):
         "acc": acc_html(lang, p),
         "dl": dl_html(lang, p),
     }
+    # Reiter ohne Inhalt gar nicht erst anlegen.
+    #
+    # Am 14.08.2026 nachgezaehlt: auf 48 der 77 Produktseiten war die
+    # Fronteingabe leer - der Hersteller veroeffentlicht zu diesen Geraeten
+    # keine Besonderheiten. Der Reiter stand trotzdem da, war der zuerst
+    # geoeffnete, und wer die Seite aufrief, sah als Erstes eine leere Flaeche.
+    # Fuer eine Suchmaschine war der erste Inhaltsblock jeder zweiten
+    # Produktseite leer und auf allen gleich - das half beim Eindruck, diese
+    # Seiten seien untereinander austauschbar, nicht.
+    tabs = [(k, n) for k, n in tabs if (panes.get(k) or "").strip()]
+    tabbar = "".join(
+        f'<button class="tabbtn{" active" if i == 0 else ""}" type="button" role="tab" '
+        f'id="tb-{k}" aria-controls="tab-{k}" aria-selected="{"true" if i == 0 else "false"}" '
+        f'data-tab="{k}">{e(n)}</button>' for i, (k, n) in enumerate(tabs))
     panehtml = "".join(
         f'<section class="tabpane{" active" if i == 0 else ""}" id="tab-{k}" role="tabpanel" '
         f'aria-labelledby="tb-{k}"><h2 class="sr-only">{e(n)}</h2>{panes[k]}</section>'
@@ -632,7 +664,7 @@ def page_product(lang, p):
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'consult'))}</a>
       </div>
-      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=nm, vt=C.vtT(lang, p['vt']), cat=C.catT(lang,c)))}</p>
+      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=nm))}</p>
     </div>
   </div>
 

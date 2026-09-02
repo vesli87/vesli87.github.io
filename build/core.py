@@ -485,6 +485,34 @@ def relatedAcc(p):
     return [i for i in ACC.get(p["id"], []) if i in BY_ID]
 
 
+_ZUGEHOER = None
+
+
+def geraeteZu(p):
+    """Die Umkehrung: zu welchen Geraeten gehoert dieses Zubehoerteil.
+
+    ACC.json steht nur in einer Richtung im Repository - vom Geraet zum Teil.
+    Auf der Seite des Teils selbst stand an derselben Stelle deshalb der Satz
+    „Fuer dieses Geraet ist kein spezifisches Zubehoer hinterlegt", also nichts.
+    Das betraf 43 Seiten. Dabei ist die Angabe vorhanden und stammt vom
+    Hersteller: 37 der 43 Teile fuehrt MAHE bei mindestens einem Geraet auf.
+
+    Wer nach einem Brenner oder einem Kabel sucht, will genau das wissen -
+    passt es an meine Maschine. Und die Seite bekommt einen Inhalt, den keine
+    zweite Seite in derselben Zusammenstellung hat.
+    """
+    global _ZUGEHOER
+    if _ZUGEHOER is None:
+        _ZUGEHOER = {}
+        for geraet, teile in ACC.items():
+            if geraet not in BY_ID:
+                continue
+            for teil in teile:
+                if teil in BY_ID and teil != geraet:
+                    _ZUGEHOER.setdefault(teil, []).append(geraet)
+    return _ZUGEHOER.get(p["id"], [])
+
+
 def hlVariants(lang, p):
     """Ausfuehrungen eines Geraets, jede mit Bild und eigenen Besonderheiten.
 

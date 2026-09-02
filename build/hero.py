@@ -82,13 +82,21 @@ def erzeuge(name, quelle):
     # Ist die Vorlage schon ein JPEG, wird sie kopiert statt neu kodiert - sonst
     # entsteht eine zweite Generation mit sichtbarem Qualitaetsverlust, und das
     # bei einer Datei, die niemand mehr als Vorlage hat.
+    #
+    # Kodiert wird mit Pillow, nicht mit sips. sips mit formatOptions 88 machte
+    # aus einer 1536-px-Vorlage 364 kB; Pillow mit Qualitaet 82, progressiv und
+    # optimierten Huffman-Tabellen kommt bei derselben Vorlage auf 209 kB - und
+    # ist dabei naeher am Original, nicht weiter weg (PSNR 52.7 statt 49.8 dB).
+    # Der Grund ist die Quantisierungstabelle: die Vorlage stammt selbst aus
+    # einem JPEG, und Qualitaet 82 trifft deren Tabelle fast genau, sodass beim
+    # zweiten Kodieren kaum neue Rundungsfehler entstehen.
     jpg = OUT / f"{name}.jpg"
     if quelle.suffix.lower() in (".jpg", ".jpeg"):
         shutil.copyfile(quelle, jpg)
     else:
-        subprocess.run(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "88",
-                        str(quelle), "--out", str(jpg)],
-                       capture_output=True, check=True)
+        from PIL import Image
+        Image.open(quelle).convert("RGB").save(
+            jpg, "JPEG", quality=82, optimize=True, progressive=True)
 
     gemacht = []
     for stufe in STUFEN:

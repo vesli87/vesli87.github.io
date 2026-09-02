@@ -466,7 +466,9 @@
    ]
   ],
   "nav_about": "Über uns",
-  "about_role": "Inhaber"
+  "about_role": "Inhaber",
+  "redirect_title": "Seite umgezogen",
+  "redirect_text": "Diese Seite ist umgezogen. Weiter zu:"
  },
  "fr": {
   "locale": "fr_CH",
@@ -934,7 +936,9 @@
    ]
   ],
   "nav_about": "À propos",
-  "about_role": "Titulaire"
+  "about_role": "Titulaire",
+  "redirect_title": "Page déplacée",
+  "redirect_text": "Cette page a été déplacée. Continuer vers :"
  },
  "it": {
   "locale": "it_CH",
@@ -1402,6 +1406,8 @@
    ]
   ],
   "nav_about": "Chi siamo",
-  "about_role": "Titolare"
+  "about_role": "Titolare",
+  "redirect_title": "Pagina spostata",
+  "redirect_text": "Questa pagina è stata spostata. Continua verso:"
  }
 }

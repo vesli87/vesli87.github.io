@@ -18,10 +18,12 @@ Alles ist idempotent: der Build kann jederzeit neu laufen.
 """
 
 import datetime
+import hashlib
 import json
 import pathlib
 import re
 import shutil
+import subprocess
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -226,7 +228,158 @@ def products_json():
 # sitemap / robots / llms
 # --------------------------------------------------------------------------
 
-def sitemap(entries):
+# Adressen, die es einmal gab und heute nicht mehr.
+#
+# Am 04.08.2026 verschwanden fuenf Seiten je Sprache aus der Sitemap, ohne dass
+# an ihre Stelle etwas trat. Google hatte sieben davon bereits gecrawlt und
+# meldet sie seither unter "Nicht gefunden (404)". Eine 404 ist kein Beinbruch,
+# aber sie verschenkt: wer dort landet, ist weg, und was die Seite an Ansehen
+# gesammelt hatte, verfaellt.
+#
+# GitHub Pages kennt keine serverseitige Umleitung. Der Weg, den Google fuer
+# statische Angebote ausdruecklich nennt, ist eine Seite mit meta-refresh auf
+# 0 Sekunden und einem canonical auf das Ziel; sie wird wie eine dauerhafte
+# Umleitung gewertet. Kein noindex - das wuerde verhindern, dass die Adresse
+# mit dem Ziel zusammengefuehrt wird.
+#
+# Das Ziel ist jeweils die Seite, auf der die Auskunft heute steht - nicht
+# blind die Startseite. Eine Umleitung auf etwas Unpassendes wertet Google als
+# "soft 404" und behandelt sie wie den Fehler, den sie ersetzen sollte.
+WEGGEFALLEN = [
+    ({"de": "/produkte/zubehoer/s25/",
+      "fr": "/fr/produits/accessoires/s25/",
+      "it": "/it/prodotti/accessori/s25/"},
+     lambda l: C.u_sub(l, "zubehoer", "Plasmabrenner"),
+     "Der S 25 ist fest in der Theta 40 verbaut; die Plasmabrenner stehen jetzt zusammen"),
+
+    ({"de": "/produkte/zubehoer/massekabel-16/",
+      "fr": "/fr/produits/accessoires/massekabel-16/",
+      "it": "/it/prodotti/accessori/massekabel-16/"},
+     lambda l: C.u_prod(l, C.BY_ID["massekabel"]),
+     "Die 16-mm2-Ausfuehrung steht bei den Massekabeln"),
+
+    ({"de": "/produkte/zubehoer/montagesatz-mlf100/",
+      "fr": "/fr/produits/accessoires/montagesatz-mlf100/",
+      "it": "/it/prodotti/accessori/montagesatz-mlf100/"},
+     lambda l: C.u_prod(l, C.BY_ID["mlf100"]),
+     "Der Montagesatz gehoert zum Lieferumfang des MLF 100 und steht dort"),
+
+    ({"de": "/produkte/zubehoer/reinigungspinselstaender/",
+      "fr": "/fr/produits/accessoires/reinigungspinselstaender/",
+      "it": "/it/prodotti/accessori/reinigungspinselstaender/"},
+     lambda l: C.u_prod(l, C.BY_ID["mlf100"]),
+     "Der Pinselstaender gehoert zum Lieferumfang des MLF 100"),
+
+    ({"de": "/produkte/zubehoer/cleaner-zubehoer/",
+      "fr": "/fr/produits/accessoires/accessoires-nettoyage/",
+      "it": "/it/prodotti/accessori/accessori-pulizia/"},
+     lambda l: C.u_cat(l, "reinigung"),
+     "Die Unterkategorie ist aufgeloest; die Geraete stehen bei der Reinigungstechnik"),
+]
+
+
+def umleitungen():
+    """Schreibt fuer jede weggefallene Adresse eine Umleitungsseite."""
+    n = 0
+    for alte, ziel, grund in WEGGEFALLEN:
+        for lang, pfad in alte.items():
+            z = C.abs_url(ziel(lang))
+            html = (f'<!doctype html>\n<html lang="{C.EX[lang]["hreflang"]}">\n<head>\n'
+                    f'<meta charset="utf-8">\n'
+                    f'<meta name="vt-umleitung" content="{z}">\n'
+                    f'<meta http-equiv="refresh" content="0; url={z}">\n'
+                    f'<link rel="canonical" href="{z}">\n'
+                    f'<title>{C.t(lang, "redirect_title")}</title>\n'
+                    # Kein noindex: die Adresse soll mit dem Ziel zusammengefuehrt
+                    # werden, nicht verschwinden. meta-refresh und canonical sagen
+                    # Google, wohin; ein noindex daneben wuerde dem widersprechen.
+                    f'</head>\n<body>\n'
+                    f'<p>{C.t(lang, "redirect_text")} <a href="{z}">{z}</a></p>\n'
+                    f'<!-- {grund} -->\n</body>\n</html>\n')
+            write(pfad, html)
+            n += 1
+    return n
+
+
+# Wann sich eine Seite wirklich zuletzt geaendert hat.
+#
+# Bis zum 14.08.2026 trug jede der 339 Adressen in der Sitemap das Datum des
+# letzten Builds - also taeglich dasselbe, fuer alle. Eine Suchmaschine lernt
+# daraus schnell, dass die Angabe nichts bedeutet, und ignoriert sie. Genau
+# dann faellt der einzige Hinweis weg, mit dem sich sagen laesst, welche von
+# 339 Adressen sich lohnt: bei "Gefunden - zurzeit nicht indexiert" (am
+# 14.08.2026 waren das 199 Seiten) entscheidet der Crawler selbst, und ohne
+# Anhaltspunkt entscheidet er gegen die meisten.
+#
+# Jetzt merkt sich der Build je Adresse den Inhalt und das Datum. Aendert sich
+# der Inhalt, wird das Datum neu gesetzt; sonst bleibt es stehen. Der Stand
+# liegt in build/lastmod.json und gehoert ins Repository - sonst faengt jeder
+# Rechner und jeder CI-Lauf wieder bei heute an.
+#
+# Zwei Feinheiten:
+#   * Die ?v=-Anhaengsel an CSS und JS werden vor dem Vergleich entfernt. Sonst
+#     galten nach jeder Stiländerung alle 339 Seiten als geaendert.
+#   * Beim ersten Lauf gibt es noch keinen Stand. Statt alles auf heute zu
+#     setzen, kommt das Datum dann aus der Versionsgeschichte - das letzte Mal,
+#     als die erzeugte Datei sich wirklich geaendert hat.
+LASTMOD_DATEI = C.BUILD / "lastmod.json"
+_VERSIONSANHANG = re.compile(r"\?v=[0-9a-f]{6,}")
+
+
+def _inhaltskennung(pfad):
+    f = OUT / (pfad.strip("/") + "/index.html" if pfad.endswith("/") else pfad.lstrip("/"))
+    if pfad == "/":
+        f = OUT / "index.html"
+    if not f.exists():
+        return None
+    roh = _VERSIONSANHANG.sub("", f.read_text("utf-8"))
+    return hashlib.sha256(roh.encode("utf-8")).hexdigest()[:16]
+
+
+def _datum_aus_git(pfad):
+    f = OUT / (pfad.strip("/") + "/index.html" if pfad.endswith("/") else pfad.lstrip("/"))
+    if pfad == "/":
+        f = OUT / "index.html"
+    try:
+        r = subprocess.run(["git", "log", "-1", "--format=%ad", "--date=short", "--", str(f)],
+                           capture_output=True, text=True, cwd=str(C.ROOT), timeout=20)
+        d = r.stdout.strip()
+        return d if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) else TODAY
+    except Exception:
+        return TODAY
+
+
+def lastmod_pflegen(pfade):
+    """Liefert {pfad: datum} und schreibt den Stand fort."""
+    alt = {}
+    if LASTMOD_DATEI.exists():
+        try:
+            alt = json.loads(LASTMOD_DATEI.read_text("utf-8"))
+        except Exception:
+            alt = {}
+    erststart = not alt
+    neu, geaendert = {}, 0
+    for pfad in pfade:
+        kennung = _inhaltskennung(pfad)
+        if kennung is None:
+            neu[pfad] = {"h": "", "d": TODAY}
+            continue
+        vorher = alt.get(pfad)
+        if vorher and vorher.get("h") == kennung:
+            neu[pfad] = vorher                      # unveraendert: Datum bleibt
+        elif vorher:
+            neu[pfad] = {"h": kennung, "d": TODAY}  # wirklich geaendert
+            geaendert += 1
+        else:
+            datum = _datum_aus_git(pfad) if erststart else TODAY
+            neu[pfad] = {"h": kennung, "d": datum}
+            geaendert += 0 if erststart else 1
+    LASTMOD_DATEI.write_text(json.dumps(neu, ensure_ascii=False, indent=1,
+                                        sort_keys=True) + "\n", "utf-8")
+    return {k: v["d"] for k, v in neu.items()}, geaendert, erststart
+
+
+def sitemap(entries, daten):
     """entries: [(path, alts|None, prio, changefreq)]"""
     rows = []
     for path, alts, prio, freq in entries:
@@ -238,7 +391,7 @@ def sitemap(entries):
             )
             alt += (f'<xhtml:link rel="alternate" hreflang="x-default" '
                     f'href="{C.abs_url(alts[C.DEFAULT_LANG])}"/>')
-        rows.append(f"<url><loc>{C.abs_url(path)}</loc><lastmod>{TODAY}</lastmod>"
+        rows.append(f"<url><loc>{C.abs_url(path)}</loc><lastmod>{daten.get(path, TODAY)}</lastmod>"
                     f"<changefreq>{freq}</changefreq><priority>{prio}</priority>{alt}</url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
@@ -484,7 +637,12 @@ def main():
 
     u, h = PG.page_404(); write(u, h)
 
-    write("/sitemap.xml", sitemap(entries))
+    stand, geaendert, erst = lastmod_pflegen([e[0] for e in entries])
+    write("/sitemap.xml", sitemap(entries, stand))
+    if erst:
+        print(f"\u2713 sitemap: lastmod je Seite, erstmalig aus der Versionsgeschichte")
+    else:
+        print(f"\u2713 sitemap: lastmod je Seite, {geaendert} Seiten heute geaendert")
     write("/robots.txt", robots())
     write("/llms.txt", llms_txt())
     write("/llms-full.txt", llms_full())
@@ -500,6 +658,8 @@ def main():
     if C.GOOGLE_VERIFY_FILE:
         write("/" + C.GOOGLE_VERIFY_FILE,
               "google-site-verification: " + C.GOOGLE_VERIFY_FILE + "\n")
+    n_um = umleitungen()
+    print(f"\u2713 {n_um} Umleitungen fuer weggefallene Adressen")
     (C.DATA / "products.json").write_text(
         json.dumps(products_json(), ensure_ascii=False, indent=1), "utf-8")
 

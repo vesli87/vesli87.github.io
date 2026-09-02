@@ -43,6 +43,12 @@ def all_pages():
     for f in ROOT.rglob("index.html"):
         if "build" in f.parts or "node_modules" in f.parts:
             continue
+        # Umleitungsseiten sind keine Seiten im Sinne dieser Pruefung: sie haben
+        # absichtlich kein canonical auf sich selbst, keine hreflang-Gruppe und
+        # kein JSON-LD. Sie stehen an Adressen, die es einmal gab, und schicken
+        # weiter. Erkennbar an der Markierung, die build.py::umleitungen setzt.
+        if '<meta name="vt-umleitung"' in f.read_text("utf-8")[:400]:
+            continue
         yield f
     p404 = ROOT / "404.html"
     if p404.exists():

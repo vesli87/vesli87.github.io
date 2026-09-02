@@ -46,6 +46,11 @@ def pages():
     for f in sorted(ROOT.rglob("index.html")):
         if "build" in f.parts:
             continue
+        # Umleitungsseiten haben absichtlich keine Ueberschrift, kein JSON-LD
+        # und keine Sprachgruppe - sie schicken nur weiter. Markierung setzt
+        # build.py::umleitungen.
+        if '<meta name="vt-umleitung"' in f.read_text("utf-8")[:400]:
+            continue
         d = str(f.relative_to(ROOT).parent).replace("\\", "/")
         yield ("/" if d == "." else "/" + d + "/"), f
 

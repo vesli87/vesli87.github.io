@@ -645,12 +645,25 @@ FONT_PRELOAD = (
 
 
 def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
-         og_type="website", robots="index,follow,max-image-preview:large", extra_head=""):
-    alt_links = "\n".join(
-        f'<link rel="alternate" hreflang="{C.EX[l]["hreflang"]}" href="{e(C.abs_url(u))}">'
-        for l, u in alts.items()
-    )
-    alt_links += f'\n<link rel="alternate" hreflang="x-default" href="{e(C.abs_url(alts[C.DEFAULT_LANG]))}">'
+         og_type="website", robots="index,follow,max-image-preview:large", extra_head="",
+         adressierbar=True):
+    """adressierbar=False fuer die Fehlerseite.
+
+    Die 404-Seite wird auf GitHub Pages fuer JEDE unbekannte Adresse
+    ausgeliefert. Trug sie ein canonical, sagte damit jede vertippte Adresse
+    von sich, sie sei die Startseite - zusammen mit einem noindex daneben, was
+    Google ausdruecklich als widerspruechlich bezeichnet: das eine verlangt
+    Zusammenfuehrung, das andere Nichtaufnahme. Dasselbe galt fuer die
+    hreflang-Verweise und og:url. Der HTTP-Status 404 wiegt schwerer als
+    beides, aber ein Signal, das dem Status widerspricht, gehoert nicht dorthin.
+    """
+    alt_links = ""
+    if adressierbar:
+        alt_links = "\n".join(
+            f'<link rel="alternate" hreflang="{C.EX[l]["hreflang"]}" href="{e(C.abs_url(u))}">'
+            for l, u in alts.items()
+        )
+        alt_links += f'\n<link rel="alternate" hreflang="x-default" href="{e(C.abs_url(alts[C.DEFAULT_LANG]))}">'
     verification = ""
     if C.GOOGLE_SITE_VERIFICATION:
         verification += f'<meta name="google-site-verification" content="{e(C.GOOGLE_SITE_VERIFICATION)}">\n'
@@ -666,7 +679,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="{e(robots)}">
-<link rel="canonical" href="{e(C.abs_url(url))}">
+{f'<link rel="canonical" href="{e(C.abs_url(url))}">' if adressierbar else ""}
 {alt_links}
 <meta name="author" content="{e(C.COMPANY['name'])}">
 <meta name="geo.region" content="CH-{C.WORKSHOP['region']}">
@@ -679,7 +692,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 {"".join(f'<meta property="og:locale:alternate" content="{C.EX[l]["locale"]}">' for l in C.LANGS if l != lang)}
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
-<meta property="og:url" content="{e(C.abs_url(url))}">
+{f'<meta property="og:url" content="{e(C.abs_url(url))}">' if adressierbar else ""}
 <meta property="og:image" content="{e(og_image)}">
 <meta property="og:image:alt" content="{e(title)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -920,13 +933,14 @@ def _complete_graph(lang, blocks):
 
 def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
              og_image=None, og_type="website", robots="index,follow,max-image-preview:large",
-             extra_head="", body_class=""):
+             extra_head="", body_class="", adressierbar=True):
     jsonld_blocks = _complete_graph(lang, jsonld_blocks)
     return f"""<!DOCTYPE html>
 <html lang="{C.EX[lang]['hreflang']}">
 <head>
 {head(lang, title=title, desc=desc, url=url, alts=alts, jsonld_blocks=jsonld_blocks,
-      og_image=og_image, og_type=og_type, robots=robots, extra_head=extra_head)}
+      og_image=og_image, og_type=og_type, robots=robots, extra_head=extra_head,
+      adressierbar=adressierbar)}
 </head>
 <body{f' class="{body_class}"' if body_class else ''}>
 {header(lang, alts)}

@@ -953,4 +953,4 @@ def page_404(lang=C.DEFAULT_LANG):
 </div></div>"""
     return url, R.document(lang, title=C.t(lang, "err404_title"), desc=C.t(lang, "err404_lead"),
                            url="/", alts=alts, jsonld_blocks=[R.ld_org(lang)], body=body,
-                           robots="noindex,follow")
+                           robots="noindex,follow", adressierbar=False)

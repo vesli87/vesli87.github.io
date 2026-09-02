@@ -258,10 +258,17 @@ def main():
 
         # 3. canonical
         mc = re.search(r'<link rel="canonical" href="([^"]+)"', html)
-        if not mc:
+        if p == "/404.html":
+            # Die Fehlerseite traegt bewusst weder canonical noch hreflang:
+            # sie wird fuer jede unbekannte Adresse ausgeliefert und wuerde
+            # sonst von jeder vertippten Adresse behaupten, sie sei die
+            # Startseite - im Widerspruch zum noindex daneben.
+            if mc:
+                err(f"{where}: hat ein canonical, sollte keines haben")
+        elif not mc:
             err(f"{where}: kein canonical")
         else:
-            want = C.SITE + (p if p != "/404.html" else "/")
+            want = C.SITE + p
             if mc.group(1) != want:
                 err(f"{where}: canonical {mc.group(1)} != {want}")
 

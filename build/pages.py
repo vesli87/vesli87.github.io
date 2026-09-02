@@ -33,6 +33,18 @@ DIMG_SIZES = ("(max-width:678px) calc(90vw - 51px), "
 
 # Achtung: DLS[].k ist NICHT eindeutig – Produktkatalog und EN-1090-Zertifikat
 # tragen beide "PDF". Deshalb wird hier über den Titel identifiziert.
+# Ausgehende Verweise auf den Hersteller und auf die Partnerwerkstatt tragen
+# bewusst KEIN nofollow.
+#
+# nofollow ist fuer bezahlte Verweise und fuer Inhalte gedacht, fuer die man
+# nicht geradesteht - Gaestebuecher, Kommentare. Hier ist beides nicht der
+# Fall: mahe-online.de ist der Hersteller, dessen Programm diese Website
+# fuehrt, und die Schweisstechnik Scherrer AG ist die Firma, in deren
+# Werkstatt gearbeitet wird. Genau diese beiden Verbindungen soll eine
+# Suchmaschine erkennen. Mit nofollow stand auf jeder dieser 582 Stellen das
+# Gegenteil: bitte nicht zuordnen.
+#
+# noopener bleibt - das ist Sicherheit und hat mit Bewertung nichts zu tun.
 DL_CATALOG = next(d for d in C.DLS if "Produktkatalog" in d["t"]["de"])
 DL_EN1090 = next(d for d in C.DLS if "1090" in d["t"]["de"])
 DL_SDS = {d["k"]: d for d in C.DLS if d["k"] != "PDF"}     # R1, RP1, P1, M1, N1
@@ -309,7 +321,7 @@ def dl_html(lang, p):
     items = ""
     for d in dls_for(p):
         items += (
-            f'<a class="dlitem" href="{e(d["u"])}" target="_blank" rel="noopener nofollow">'
+            f'<a class="dlitem" href="{e(d["u"])}" target="_blank" rel="noopener">'
             f'<div class="ico">{e(d["k"])}</div>'
             f'<div class="nm">{e(d["t"].get(lang) or d["t"]["de"])}'
             f'<span>{e(d["s"].get(lang) or d["s"]["de"])}</span></div>'
@@ -665,7 +677,7 @@ def page_processes(lang):
 def page_downloads(lang):
     url, alts = C.u_page(lang, "downloads"), C.alternates("page", key="downloads")
     items = "".join(
-        f'<a class="dlitem" href="{e(d["u"])}" target="_blank" rel="noopener nofollow">'
+        f'<a class="dlitem" href="{e(d["u"])}" target="_blank" rel="noopener">'
         f'<div class="ico">{e(d["k"])}</div><div class="nm">{e(d["t"].get(lang) or d["t"]["de"])}'
         f'<span>{e(d["s"].get(lang) or d["s"]["de"])}</span></div>'
         f'<span class="arw" aria-hidden="true">↓</span></a>' for d in C.DLS)
@@ -719,7 +731,7 @@ def page_contact(lang):
         <span class="kot">{e(C.t(lang,'addr_shop'))}</span>
         <address>{e(ws['street'])}<br>{ws['zip']} {e(ws['city'])}<br>{e(ws['country_name'])}</address>
         <p class="kohint">{e(C.t(lang,'addr_shop_note'))}
-          <a href="{ws['partner_url']}" rel="noopener nofollow" target="_blank">{e(ws['partner'])}</a><br>
+          <a href="{ws['partner_url']}" rel="noopener" target="_blank">{e(ws['partner'])}</a><br>
           {e(C.t(lang,'addr_shop_hint'))}</p>
       </div>
     </div>

@@ -752,7 +752,9 @@ def header(lang, alts):
     return f"""<a class="skip" href="#main">{e(C.t(lang,'skip_link'))}</a>
 <div class="util"><div class="wrap">
   <div class="l"><a href="tel:{co['phone_href']}">{e(co['phone'])}</a>
-    <span>{e(vis['city'])} · {vis['region']}</span></div>
+    <a class="adr" href="{e(C.u_page(lang,'contact'))}">
+      <span class="adr-str">{e(vis['street'])},</span>
+      <span class="adr-ort">{vis['zip']} {e(vis['city'])}</span></a></div>
   <nav class="langs" aria-label="{e(C.t(lang,'lang_aria'))}">{lang_switch(lang, alts)}</nav>
 </div></div>
 

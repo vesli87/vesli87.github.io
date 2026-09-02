@@ -25,6 +25,12 @@
   .util .wrap{display:flex;justify-content:space-between;align-items:center;height:38px;gap:16px}
   .util .l{display:flex;gap:22px;align-items:center}
   .util a:hover{color:var(--white)}
+  /* Die Besucheradresse steht auf jeder Seite. Das ist kein Schmuck: Google
+     gleicht die sichtbare Anschrift mit dem Unternehmensprofil und den
+     Verzeichniseintraegen ab, und diese drei muessen zeichengleich sein.
+     Auf schmalen Bildschirmen entfaellt nur die Strasse, Postleitzahl und Ort
+     bleiben - vorher verschwand die Angabe dort ganz. */
+  .util .adr{display:inline-flex;gap:5px;white-space:nowrap}
   .langs{display:flex;gap:2px}
   .langs button{background:none;border:0;color:var(--muted);font:inherit;font-size:12px;padding:3px 8px;cursor:pointer;border-radius:2px}
   .langs button[aria-pressed="true"]{background:var(--accent);color:#fff;font-weight:600}
@@ -830,7 +836,7 @@
     .hsearch input{padding:12px 14px;font-size:16px}   /* 16px verhindert Zoom in iOS */
     .sugg{left:0;right:0;top:calc(100% + 6px);position:absolute;max-height:64vh}
     /* Util-Bar: auf 375px passen Telefon, Ort und Zeiten nicht nebeneinander */
-    .util .l span:last-child{display:none}
+    .util .adr-str{display:none}
     .util .l{gap:14px}
     .util .wrap{height:34px}
     .util a,.util span{white-space:nowrap}

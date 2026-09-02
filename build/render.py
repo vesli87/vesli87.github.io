@@ -688,6 +688,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 <meta name="twitter:image" content="{e(og_image)}">
 <meta name="theme-color" content="#E0511A">
 {verification}
+<link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">

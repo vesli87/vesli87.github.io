@@ -928,6 +928,9 @@ def page_about(lang):
         ws_street=C.WORKSHOP["street"], ws_zip=C.WORKSHOP["zip"],
         ws_city=C.WORKSHOP["city"], ws_region_name=C.WORKSHOP["region_name"],
         url_kalib=C.u_service(lang, "calib"),
+        # Das EN-1090-Zertifikat des Herstellers, damit die Aussage
+        # "professionelle Geraete" nicht bloss behauptet dasteht.
+        url_dl=DL_EN1090["u"],
     )
     secs = "".join(
         f"<section><h2>{e(h)}</h2>{b.format(**werte)}</section>"

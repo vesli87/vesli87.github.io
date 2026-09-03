@@ -313,7 +313,19 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
    Plasmaschneidtisch CNC" — dieselbe Reihenfolge wie in FR und IT („table de
    découpe plasma CNC", „tavolo di taglio al plasma CNC"). So braucht sie
    weder Mittelpunkt noch Bindestrich und bleibt trotzdem richtiges Deutsch;
-   die Zwischenfassung „CNC Plasmaschneidtisch" verstiess gegen 3b.
+   die Zwischenfassung „CNC Plasmaschneidtisch" verstiess gegen 3b. Ebenso
+   entfiel der Mittelpunkt in `trust_h3` („EN 1090 geprüft & dokumentiert").
+   Der Mittelpunkt bleibt dort, wo er zwei Angaben trennt, die sonst
+   ineinanderlaufen: im Untertitel der Folie und im Muster „Kategorie · MAHE"
+   der Kategorieüberschriften (53 Stellen).
+3a-bis. **Kein Schlusspunkt in Überschriften und Schauzeilen.** Vom Inhaber am
+   03.09.2026 durchgehend entschieden. Betroffen waren `prog_h2` („Direkt zum
+   richtigen Verfahren"), `k_h1` („Direkter Draht zum Techniker") und ihre FR-
+   und IT-Fassungen. Im Banner `assets/img/hero.jpg` gilt dasselbe: dort sind
+   die Punkte aus „Leistung Präzision Qualität", aus „Für professionelle
+   Ergebnisse" und aus dem Claim „MAHE WIR SCHWEISSEN QUALITÄT" herausretuschiert.
+   Fliesstext behält seine Satzzeichen — die Regel gilt für Überschriften,
+   Schauzeilen und Bildtexte, nicht für Sätze.
    **Bis-Striche bleiben:** „10 – 420 A", „25–90 mm²", „Mo–Do 07:30–17:00",
    „Name A–Z", „Ziff. 2–4 UWG" — das sind Messwerte, Zeiten und Verweise, kein
    Satzzeichen. Ebenso bleibt `core.py::SPEC_EMPTY`: ein „–" in einer

@@ -443,11 +443,17 @@ def ld_website(lang):
         "description": C.t(lang, "home_desc"),
         "inLanguage": [C.EX[l]["hreflang"] for l in C.LANGS],
         "publisher": {"@id": f"{C.SITE}/#organization"},
+        # Kein "query-input" mehr. Das Feld steht in Googles Anleitung zur
+        # Sitelinks-Suchbox, aber nicht im Vokabular von schema.org - dort
+        # kommt es kein einziges Mal vor. Auf 349 Seiten war es damit ein
+        # Validierungsfehler. Google hat die Sitelinks-Suchbox 2023
+        # abgeschafft, das Feld bringt also auch nichts mehr ein. Die
+        # SearchAction selbst bleibt: mit target und urlTemplate sagt sie
+        # gueltig, wo die Suche dieser Website liegt.
         "potentialAction": {
             "@type": "SearchAction",
             "target": {"@type": "EntryPoint",
                        "urlTemplate": f"{C.SITE}{C.u_page(lang, 'search')}?q={{search_term_string}}"},
-            "query-input": "required name=search_term_string",
         },
     }
 
@@ -498,7 +504,13 @@ def ld_product(lang, p):
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
         "manufacturer": {"@type": "Organization", "name": "MAHE GmbH", "url": C.BRAND_URL},
         "category": f"{C.catT(lang, cat)} > {C.subT(lang, p['sub'])}",
-        "inLanguage": C.EX[lang]["hreflang"],
+        # Kein inLanguage. schema.org fuehrt die Eigenschaft nur auf
+        # CreativeWork, Event, BroadcastService, LinkRole, PronounceableText,
+        # CommunicateAction und WriteAction; Product erbt allein von Thing und
+        # kennt sie nicht. Auf 231 Seiten war das ein Validierungsfehler, den
+        # Ahrefs am 03.09.2026 gemeldet hat. Die Sprache der Seite steht
+        # ohnehin im lang-Attribut, in den hreflang-Angaben und am
+        # ItemPage-Knoten im selben Graphen.
         "additionalProperty": props,
         # Preis auf Anfrage: bewusst KEIN price-Feld, und deshalb seit dem
         # 05.08.2026 auch KEIN offers-Knoten mehr.

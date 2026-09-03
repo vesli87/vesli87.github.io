@@ -354,12 +354,26 @@ def clip(s, n):
     etwa 155 bis 160 Zeichen. Der Aufrufwert stand auf 165 - damit lagen 179
     von 345 Seiten darüber und wurden in der Anzeige abgeschnitten. 155 lässt
     Luft: das angehängte " …" kommt noch dazu.
+
+    Gemessen wird am **maskierten** Text, nicht am rohen. Vorher wurde vor dem
+    Maskieren gekürzt: aus einem Apostroph wurde danach `&#x27;`, aus einem
+    Zeichen also sechs. Bei „Câble d'électrode" wuchs die fertige Angabe so auf
+    161 Zeichen, obwohl hier 155 gezählt worden waren. Ahrefs hat das am
+    03.09.2026 als „Meta-Beschreibung zu lang" gemeldet.
     """
     s = " ".join(s.split())
-    if len(s) <= n:
+    if len(e(s)) <= n:
         return s
-    cut = s[:n]
-    return cut[:cut.rfind(" ")].rstrip(" ,.;:–-") + " …"
+    # So weit zurueckgehen, bis auch die maskierte Fassung passt.
+    grenze = n
+    while grenze > 40:
+        cut = s[:grenze]
+        leer = cut.rfind(" ")
+        gekuerzt = (cut[:leer] if leer > 0 else cut).rstrip(" ,.;:–-") + " …"
+        if len(e(gekuerzt)) <= n:
+            return gekuerzt
+        grenze -= 4
+    return s[:grenze]
 
 
 # --------------------------------------------------------------------------

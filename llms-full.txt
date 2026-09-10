@@ -1117,7 +1117,7 @@ Ausstattung: Verfahren: Mikroplasma · WIG, geglättet und gepulst; Schweissstro
 URL: https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/
 Kategorie: Occasion / Mikroplasma · Typ: Mikroplasma · Art.-Nr.: PLASMAFIX-50S · Preis: auf Anfrage (CHF)
 Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten – Folien von 0,01 mm, Drahtgitter und kleine Armaturen.
-Ausstattung: Verfahren: Mikroplasma, geglättet und gepulst; Einstellbereich Strom: 0,05 – 50 A; Dauerstrom bei 100 % ED: 50 A; Pulsfrequenz: 1 Hz – 10 kHz; Leerlaufspannung: 106 V; Schweisskabel-Querschnitt: 16 mm²; Netzanschluss: 3~ 380 V · 50/60 Hz; Dauerleistung: 3,5 kVA; Netzstrom bei 380 V: 5,3 A; Leistungsfaktor cos φ: 0,94; Netzabsicherung: 10 A; Netzkabel: 4 × 1,5 mm²; Schutzart: IP 21; Gewicht: 98 kg; Abmessungen L × B × H: 645 × 545 × 520 mm.
+Ausstattung: Verfahren: Mikroplasma, geglättet und gepulst; Einstellbereich Strom: 0,05 – 50 A; Dauerstrom bei 100 % ED: 50 A; Pulsfrequenz: 1 Hz – 10 kHz; Leerlaufspannung: 106 V; Schweisskabel-Querschnitt: 16 mm²; Netzanschluss: 3~ 208 – 460 V · 50/60 Hz; Dauerleistung: 3,5 kVA; Netzstrom bei 380 V: 5,3 A; Leistungsfaktor cos φ: 0,94; Netzabsicherung: 10 A; Netzkabel: 4 × 1,5 mm²; Schutzart: IP 21; Gewicht: 98 kg; Abmessungen L × B × H: 645 × 545 × 520 mm.
 
 ---
 

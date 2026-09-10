@@ -168,6 +168,59 @@ def referenzen():
             err(f"{wo}: Referenz nennt unbekanntes Geraet {g!r}")
 
 
+def bildverweise():
+    """Jeder Bildverweis auf die eigene Domain muss eine Datei treffen.
+
+    check.py prueft seit jeher die <img>-Tags. Bilder stehen aber auch dort,
+    wo kein <img> ist: in og:image und twitter:image, als Product.image im
+    JSON-LD, als data-img an der Anfrageliste, als "image" in products.json
+    und als "g" in den drei Suchindizes. Diese Stellen bauen ihre Adresse
+    ueber render.img_abs, nicht ueber img_tag.
+
+    Am 10.09.2026 gingen genau sie kaputt: die Rubrik Occasion brachte einen
+    dritten Bildordner, img_tag wurde nachgezogen, img_folder nicht. 50
+    Adressen zeigten auf assets/img/panels/plasmafix-… , alle live 404 - und
+    kein Pruefer merkte es, weil auf den Seiten selbst die <img>-Tags stimmten.
+    """
+    def aufloesen(u):
+        if "ves-tech.ch/assets/img/" in u:
+            u = u.split("ves-tech.ch")[-1]
+        if not u.startswith("/assets/img/"):
+            return None
+        return C.ROOT / u.split("?")[0].lstrip("/")
+
+    def pruef(u, wo):
+        f = aufloesen(u)
+        if f is not None and not f.exists():
+            err(f"{wo}: Bildverweis zeigt ins Leere - {u}")
+
+    for f in all_pages():
+        t = f.read_text("utf-8")
+        wo = path_of(f)
+        for m in re.finditer(
+                r'(?:property|name)="(?:og:image|twitter:image)" content="([^"]+)"', t):
+            pruef(m.group(1), wo)
+        for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', t, re.S):
+            for u in re.findall(r'"(https://www\.ves-tech\.ch/assets/img/[^"]+)"', m.group(1)):
+                pruef(u, wo)
+        for u in re.findall(r'data-img="([^"]+)"', t):
+            pruef(u, wo)
+
+    pj = C.ROOT / "data/products.json"
+    if pj.exists():
+        for e in (json.loads(pj.read_text("utf-8")).get("products") or []):
+            for k in ("image", "g"):
+                if e.get(k):
+                    pruef(e[k], "data/products.json")
+    for l in C.LANGS:
+        sf = C.ROOT / f"data/search-{l}.json"
+        if not sf.exists():
+            continue
+        for e in json.loads(sf.read_text("utf-8")):
+            if isinstance(e, dict) and e.get("g"):
+                pruef(e["g"], f"data/search-{l}.json")
+
+
 def fremdmarken():
     """Auf der Seite eines Fremdfabrikats darf die eigene Hausmarke nicht stehen.
 
@@ -197,12 +250,36 @@ def fremdmarken():
         kern = t[i:j] if i >= 0 and j > i else t
         if C.BRAND in kern:
             err(f"{url}: '{C.BRAND}' steht im Inhalt einer {marke}-Seite")
-        for feld, muster in (("title", r"<title>(.*?)</title>"),
-                             ("description", r'<meta name="description" content="([^"]*)"'),
-                             ("og:title", r'<meta property="og:title" content="([^"]*)"')):
-            m = _re.search(muster, t, _re.S)
-            if m and C.BRAND in m.group(1):
+        # Der ganze <head>, nicht drei ausgesuchte Felder. Geprueft wurde
+        # zuerst nur title/description/og:title - og:description,
+        # twitter:description und das JSON-LD blieben aussen vor, obwohl
+        # dieselbe Vorlage sie fuellt.
+        kopf = t[:t.find("</head>")] if "</head>" in t else t
+        for feld, muster in (
+                ("title", r"<title>(.*?)</title>"),
+                ("description", r'<meta name="description" content="([^"]*)"'),
+                ("og:title", r'<meta property="og:title" content="([^"]*)"'),
+                ("og:description", r'<meta property="og:description" content="([^"]*)"'),
+                ("twitter:title", r'<meta name="twitter:title" content="([^"]*)"'),
+                ("twitter:description", r'<meta name="twitter:description" content="([^"]*)"')):
+            m = _re.search(muster, kopf, _re.S)
+            if m and m.group(1) and C.BRAND in m.group(1):
                 err(f"{url}: '{C.BRAND}' steht im {feld} einer {marke}-Seite")
+        # JSON-LD: jeder Knoten ausser Organization/LocalBusiness/Store und
+        # WebSite - dort gehoert MAHE hin, das ist die Marke des Haendlers.
+        for m in _re.finditer(r'<script type="application/ld\+json">(.*?)</script>', t, _re.S):
+            try:
+                d = json.loads(m.group(1))
+            except Exception:
+                continue
+            for knoten in (d.get("@graph") or [d]):
+                typ = knoten.get("@type")
+                typen = typ if isinstance(typ, list) else [typ]
+                if {"Organization", "LocalBusiness", "Store", "WebSite"} & set(typen):
+                    continue
+                if C.BRAND in json.dumps(knoten, ensure_ascii=False):
+                    err(f"{url}: '{C.BRAND}' im JSON-LD-Knoten "
+                        f"{'/'.join(str(x) for x in typen)} einer {marke}-Seite")
 
     # Kategorie- und Unterkategorieseiten, die kein MAHE fuehren
     for c in C.CATS:
@@ -230,6 +307,14 @@ def fremdmarken():
                 if any(n in s for n in namen) and C.BRAND in s:
                     err(f"data/products.json: '{C.BRAND}' bei einem Fremdfabrikat "
                         f"({eintrag.get('name')})")
+        for l in C.LANGS:
+            sf = C.ROOT / f"data/search-{l}.json"
+            if not sf.exists():
+                continue
+            for e in _json.loads(sf.read_text("utf-8")):
+                s = _json.dumps(e, ensure_ascii=False)
+                if any(n in s for n in namen) and C.BRAND in s:
+                    err(f"data/search-{l}.json: '{C.BRAND}' bei einem Fremdfabrikat")
         for datei in ("llms.txt", "llms-full.txt"):
             f = C.ROOT / datei
             if not f.exists():
@@ -243,29 +328,7 @@ def fremdmarken():
         if marke == C.BRAND:
             continue
         for lang in C.LANGS:
-            f = C.ROOT / C.u_prod(lang, p).strip("/") / "index.html"
-            if not f.exists():
-                err(f"{p['id']}: Seite fehlt - {f}")
-                continue
-            t = f.read_text("utf-8")
-            i = t.find('<div class="detail">')
-            j = t.find("<footer")
-            kern = t[i:j] if i >= 0 and j > i else t
-            if C.BRAND in kern:
-                err(f"{C.u_prod(lang, p)}: '{C.BRAND}' steht im Inhalt einer "
-                    f"{marke}-Seite")
-            # Kopf mitpruefen. Beim ersten Bauen stand im <title> "MAHE
-            # PlasmaFix 51", weil die Vorlage in i18n_extra.json die Marke
-            # fest enthielt - im Inhalt war da laengst alles richtig.
-            import re as _re
-            for feld, muster in (("title", r"<title>(.*?)</title>"),
-                                 ("description",
-                                  r'<meta name="description" content="([^"]*)"'),
-                                 ("og:title", r'<meta property="og:title" content="([^"]*)"')):
-                m = _re.search(muster, t, _re.S)
-                if m and C.BRAND in m.group(1):
-                    err(f"{C.u_prod(lang, p)}: '{C.BRAND}' steht im {feld} einer "
-                        f"{marke}-Seite")
+            _pruefe(C.u_prod(lang, p), marke, p["id"])
 
 
 def reihenfolge():
@@ -305,6 +368,7 @@ def main():
 
     referenzen()
     fremdmarken()
+    bildverweise()
     reihenfolge()
 
     titles, descs = collections.Counter(), collections.Counter()

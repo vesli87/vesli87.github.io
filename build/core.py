@@ -165,9 +165,16 @@ REMOTE_IMG = "https://mahe-online.de/wp-content/uploads/"
 # Herkunft im Sinne von Art. 3 Abs. 1 lit. b UWG.
 #
 # Ohne "brand" am Produkt bleibt alles wie bisher: MAHE.
+# "url" nur, wenn die Adresse nachweislich antwortet und wirklich zu dieser
+# Marke gehoert. Bei Oerlikon steht deshalb keine: oerlikon-welding.com loest
+# nicht mehr auf (am 10.09.2026 geprueft, keine Antwort), und oerlikon.com ist
+# heute die Oerlikon Group der Oberflaechentechnik - eine andere Firma. Das
+# Schweissgeschaeft ging an Air Liquide Welding und von dort weiter. Ein
+# Verweis dorthin waere schlimmer als keiner. schema.org verlangt url weder an
+# Brand noch an Organization; ein name genuegt.
 MARKEN = {
     "Oerlikon": {
-        "url": "https://www.oerlikon-welding.com/",
+        "url": None,
         "hersteller": "Oerlikon, Schweissindustrie Oerlikon Bührle AG / Air Liquide Welding",
     },
 }
@@ -190,6 +197,22 @@ def pHersteller(p):
 
 def istMahe(p):
     return p.get("brand", BRAND) == BRAND
+
+
+def markeMitPraeposition(lang, p):
+    """„von MAHE", „d’Oerlikon", „di Oerlikon" - die Praeposition mitgeliefert.
+
+    Im Franzoesischen verschmilzt „de" vor einem Vokal zu „d’". In der Vorlage
+    stand „de {marke}", und daraus wurde „de Oerlikon" - falsches Franzoesisch.
+    Die Elision haengt am Wort, nicht am Satz, also gehoert sie hierher und
+    nicht in die Vorlage.
+    """
+    m = pBrand(p)
+    if lang == "fr":
+        return ("d’" + m) if m[:1].lower() in "aeiouyh" else ("de " + m)
+    if lang == "it":
+        return "di " + m
+    return "von " + m
 
 
 def catBrand(cid):

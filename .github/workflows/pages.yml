@@ -133,7 +133,10 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
         with:
-          fetch-depth: 2
+          # Die ganze Vorgeschichte: der Vergleichspunkt ist der Stand VOR dem
+          # Push, nicht der vorletzte Commit. Bei einem Push mit drei Commits
+          # sah "HEAD^" nur den letzten.
+          fetch-depth: 0
 
       - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065  # v5
         with:
@@ -141,15 +144,54 @@ jobs:
 
       - name: Geaenderte Seiten an IndexNow melden
         continue-on-error: true
+        env:
+          VORHER: ${{ github.event.before }}
         run: |
           set -eu
-          git diff --name-only HEAD^ HEAD -- '*.html' > /tmp/roh.txt || : > /tmp/roh.txt
-          # Dateipfad -> Adresse:  produkte/x/index.html -> /produkte/x/
-          # 404.html bleibt draussen, die Seite gehoert in keinen Index.
-          sed -e '/^404\.html$/d' -e 's#index\.html$##' -e 's#^#/#' /tmp/roh.txt \
-            | sort -u > /tmp/pfade.txt
+          # Gemeldet wird, was sich WIRKLICH geaendert hat - nicht, welche
+          # Dateien der Build angefasst hat.
+          #
+          # Vorher stand hier "git diff --name-only HEAD^ HEAD -- '*.html'".
+          # Der Build schreibt aber jede Seite neu, sobald sich der ?v=-Stempel
+          # von site.css aendert, und das tut er bei jeder CSS-Zeile. Beim Lauf
+          # vom 03.09.2026 meldete der Schritt deshalb "348 Seiten geaendert"
+          # und schickte den ganzen Katalog - genau das Gegenteil dessen, wofuer
+          # er gebaut wurde.
+          #
+          # build/lastmod.json weiss es besser: dort steht je Seite eine
+          # Inhaltskennung, und die aendert sich nur bei echtem Inhalt. Genau
+          # diese Datei traegt auch das lastmod der Sitemap.
+          python3 - <<'PY' > /tmp/pfade.txt
+          import json, os, subprocess, sys
+          def hole(ref):
+              r = subprocess.run(["git", "show", f"{ref}:build/lastmod.json"],
+                                 capture_output=True, text=True)
+              if r.returncode != 0:
+                  return None
+              try:
+                  return json.loads(r.stdout)
+              except Exception:
+                  return None
+          vorher = os.environ.get("VORHER", "")
+          alt = None
+          # Erst die Push-Basis, dann HEAD^ als Rueckfall (workflow_dispatch,
+          # erster Commit, force-push mit unbekanntem Vorher).
+          for ref in (vorher, "HEAD^"):
+              if ref and set(ref) != {"0"}:
+                  alt = hole(ref)
+                  if alt is not None:
+                      break
+          neu = json.load(open("build/lastmod.json"))
+          if alt is None:
+              print("__ALLE__", file=sys.stderr)
+              sys.exit(0)
+          for pfad, wert in sorted(neu.items()):
+              vor = alt.get(pfad)
+              if vor is None or vor.get("h") != wert.get("h"):
+                  print(pfad)
+          PY
           n=$(wc -l < /tmp/pfade.txt | tr -d ' ')
-          echo "Von diesem Push geaendert: $n Seiten"
+          echo "Inhaltlich geaendert: $n Seiten"
           if [ "$n" -eq 0 ]; then
             echo "Nichts zu melden."
           elif [ "$n" -gt 250 ]; then

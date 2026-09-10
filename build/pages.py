@@ -712,7 +712,8 @@ def page_product(lang, p):
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'consult'))}</a>
       </div>
-      <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p)))}</p>
+      <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
+                                       de_marke=C.markeMitPraeposition(lang, p)))}</p>
     </div>
   </div>
 

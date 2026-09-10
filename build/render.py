@@ -291,10 +291,8 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     h = int(round(w * m["ratio"]))
     # Frontpanels kommen direkt vom Hersteller und liegen lokal; Produktbilder
     # stammen von mahe-online.de und behalten dorthin einen Rückfall.
-    # Woher das Bild kommt, steht im Manifest. "p" sind die Produktbilder
-    # von mahe-online.de, "panels" die Frontpanel-Fotos des Herstellers,
-    # "occasion" die eigenen Aufnahmen der Gebrauchtmaschinen.
-    folder = m.get("folder") or ("panels" if m.get("local") else "p")
+    # Eine Quelle fuer den Ordner - siehe img_folder().
+    folder = img_folder(m)
     # Welche Breiten es wirklich gibt, steht im Manifest. Frueher standen hier
     # fest 400 und 1000; bei einer 4800 px breiten Vorlage blieb das Bild
     # dadurch auf 1000 px stehen und wirkte auf feinen Bildschirmen weich.
@@ -349,8 +347,19 @@ def img_folder(m):
     Stand nur img_tag richtig, zeigten og:image, das Product-Bild im JSON-LD,
     das Bild in der Anfrageliste und das Suchergebnisbild eines lokalen Bildes
     auf assets/img/p/, wo nichts liegt – ohne dass check.py etwas meldete.
+
+    Am 10.09.2026 ist genau das noch einmal passiert. Mit der Rubrik Occasion
+    kam ein dritter Ordner dazu, und der Ordner steht seither im Manifest.
+    Nachgezogen wurde nur img_tag - hier blieb "panels" fest stehen. Ergebnis:
+    50 Verweise auf assets/img/panels/plasmafix-… , alle live 404, verteilt
+    auf og:image, twitter:image, das Product-Bild im JSON-LD, die Vorschau in
+    der Anfrageliste, products.json und die drei Suchindizes.
+
+    Deshalb ist diese Funktion jetzt die einzige Stelle, die den Ordner
+    bestimmt; img_tag fragt sie ebenfalls. Zwei Stellen, die dasselbe
+    entscheiden, laufen frueher oder spaeter auseinander.
     """
-    return "panels" if m.get("local") else "p"
+    return m.get("folder") or ("panels" if m.get("local") else "p")
 
 
 def img_abs(path, size=1000):
@@ -504,8 +513,13 @@ def ld_product(lang, p):
         "url": url,
         "description": C.pDesc(lang, p),
         "image": [img_abs(p["img"], 1000)],
-        "brand": {"@type": "Brand", "name": C.pBrand(p), "url": C.pBrandUrl(p)},
-        "manufacturer": {"@type": "Organization", "name": C.pHersteller(p), "url": C.pBrandUrl(p)},
+        # url nur, wenn eine geprueft erreichbare hinterlegt ist - siehe
+        # core.py::MARKEN. Ein toter Verweis im JSON-LD ist schlechter als
+        # keiner: eine Suchmaschine folgt ihm und findet nichts.
+        "brand": {"@type": "Brand", "name": C.pBrand(p),
+                  **({"url": C.pBrandUrl(p)} if C.pBrandUrl(p) else {})},
+        "manufacturer": {"@type": "Organization", "name": C.pHersteller(p),
+                         **({"url": C.pBrandUrl(p)} if C.pBrandUrl(p) else {})},
         "category": f"{C.catT(lang, cat)} > {C.subT(lang, p['sub'])}",
         # Kein inLanguage. schema.org fuehrt die Eigenschaft nur auf
         # CreativeWork, Event, BroadcastService, LinkRole, PronounceableText,

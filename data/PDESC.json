@@ -306,5 +306,13 @@
  "mpt-2501": {
   "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en set avec une source de courant MAHE Theta.",
   "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta."
+ },
+ "plasmafix-51": {
+  "fr": "Installation microplasma pour soudage manuel et automatique, de 0,08 à 50 A, commande LCD et amorçage HF intégré.",
+  "it": "Impianto microplasma per saldatura manuale e automatica, da 0,08 a 50 A, comando LCD e innesco HF integrato."
+ },
+ "plasmafix-50s": {
+  "fr": "Source de courant microplasma à partir de 0,05 A pour les travaux les plus fins – feuilles de 0,01 mm, grillages et petite robinetterie.",
+  "it": "Generatore microplasma da 0,05 A per i lavori più fini – lamierini da 0,01 mm, reti metalliche e piccola rubinetteria."
  }
 }

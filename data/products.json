@@ -1,6 +1,6 @@
 {
  "@context": "https://schema.org",
- "generated": "2026-09-03",
+ "generated": "2026-09-10",
  "seller": {
   "name": "VES-TECH Swiss",
   "url": "https://www.ves-tech.ch/",
@@ -9,7 +9,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Bilder: MAHE GmbH. Wiedergabe durch VES-TECH Swiss als Schweizer Partner.",
- "count": 77,
+ "count": 79,
  "products": [
   {
    "id": "hypermig-x",
@@ -16410,6 +16410,239 @@
     "de": "https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/",
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/zwischenschlauchpaket/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/zwischenschlauchpaket/"
+   }
+  },
+  {
+   "id": "plasmafix-51",
+   "sku": "PLASMAFIX-51",
+   "name": "MAHE PlasmaFix 51",
+   "brand": "MAHE",
+   "type": {
+    "de": "Mikroplasma",
+    "fr": "Microplasma",
+    "it": "Microplasma"
+   },
+   "category": {
+    "de": "Occasion",
+    "fr": "Occasion",
+    "it": "Occasioni"
+   },
+   "subcategory": {
+    "de": "Mikroplasma",
+    "fr": "Microplasma",
+    "it": "Microplasma"
+   },
+   "description": {
+    "de": "Mikroplasma-Anlage für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
+    "fr": "Installation microplasma pour soudage manuel et automatique, de 0,08 à 50 A, commande LCD et amorçage HF intégré.",
+    "it": "Impianto microplasma per saldatura manuale e automatica, da 0,08 a 50 A, comando LCD e innesco HF integrato."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Mikroplasma · WIG, geglättet und gepulst",
+     "Schweissstrom Plasma": "0,08 – 50 A bei 100 % ED",
+     "Schweissstrom WIG": "0,8 – 50 A bei 60 % ED",
+     "Pulsfrequenz": "1 Hz – 10 kHz",
+     "Leerlaufspannung": "106 V",
+     "Netzanschluss": "3~ 230/400/440 V · 50/60 Hz",
+     "Leistungsfaktor cos φ": "0,91",
+     "Primärstrom": "6 A bei 400 V",
+     "Bedienung": "Tasten und Codes, LCD-Anzeige",
+     "Zündung": "Hochfrequenz, eingebaut",
+     "Kühlung": "über Kühlgerät",
+     "Schutzart": "IP 23",
+     "Gewicht": "95 kg",
+     "Abmessungen L × B × H": "650 × 360 × 750 mm"
+    },
+    "fr": {
+     "Procédé": "Microplasma · TIG, lissé et pulsé",
+     "Courant de soudage plasma": "0,08 – 50 A à 100 % de facteur de marche",
+     "Courant de soudage TIG": "0,8 – 50 A à 60 % de facteur de marche",
+     "Fréquence de pulsation": "1 Hz – 10 kHz",
+     "Tension à vide": "106 V",
+     "Raccordement réseau": "3~ 230/400/440 V · 50/60 Hz",
+     "Facteur de puissance cos φ": "0,91",
+     "Courant primaire": "6 A sous 400 V",
+     "Commande": "Touches et codes, afficheur LCD",
+     "Amorçage": "Haute fréquence, intégrée",
+     "Refroidissement": "par groupe de refroidissement",
+     "Indice de protection": "IP 23",
+     "Poids": "95 kg",
+     "Dimensions L × l × H": "650 × 360 × 750 mm"
+    },
+    "it": {
+     "Processo": "Microplasma · TIG, livellato e pulsato",
+     "Corrente di saldatura plasma": "0,08 – 50 A al 100 % del ciclo di lavoro",
+     "Corrente di saldatura TIG": "0,8 – 50 A al 60 % del ciclo di lavoro",
+     "Frequenza di pulsazione": "1 Hz – 10 kHz",
+     "Tensione a vuoto": "106 V",
+     "Allacciamento alla rete": "3~ 230/400/440 V · 50/60 Hz",
+     "Fattore di potenza cos φ": "0,91",
+     "Corrente primaria": "6 A a 400 V",
+     "Comando": "Tasti e codici, display LCD",
+     "Innesco": "Alta frequenza, integrata",
+     "Raffreddamento": "tramite gruppo di raffreddamento",
+     "Grado di protezione": "IP 23",
+     "Peso": "95 kg",
+     "Dimensioni L × P × A": "650 × 360 × 750 mm"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/panels/plasmafix-51-cde03c-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/occasion/plasmafix-51/",
+    "fr": "https://www.ves-tech.ch/fr/produits/occasion/plasmafix-51/",
+    "it": "https://www.ves-tech.ch/it/prodotti/occasioni/plasmafix-51/"
+   }
+  },
+  {
+   "id": "plasmafix-50s",
+   "sku": "PLASMAFIX-50S",
+   "name": "MAHE PlasmaFix 50 S",
+   "brand": "MAHE",
+   "type": {
+    "de": "Mikroplasma",
+    "fr": "Microplasma",
+    "it": "Microplasma"
+   },
+   "category": {
+    "de": "Occasion",
+    "fr": "Occasion",
+    "it": "Occasioni"
+   },
+   "subcategory": {
+    "de": "Mikroplasma",
+    "fr": "Microplasma",
+    "it": "Microplasma"
+   },
+   "description": {
+    "de": "Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten – Folien von 0,01 mm, Drahtgitter und kleine Armaturen.",
+    "fr": "Source de courant microplasma à partir de 0,05 A pour les travaux les plus fins – feuilles de 0,01 mm, grillages et petite robinetterie.",
+    "it": "Generatore microplasma da 0,05 A per i lavori più fini – lamierini da 0,01 mm, reti metalliche e piccola rubinetteria."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Mikroplasma, geglättet und gepulst",
+     "Einstellbereich Strom": "0,05 – 50 A",
+     "Dauerstrom bei 100 % ED": "50 A",
+     "Pulsfrequenz": "1 Hz – 10 kHz",
+     "Leerlaufspannung": "106 V",
+     "Schweisskabel-Querschnitt": "16 mm²",
+     "Netzanschluss": "3~ 380 V · 50/60 Hz",
+     "Dauerleistung": "3,5 kVA",
+     "Netzstrom bei 380 V": "5,3 A",
+     "Leistungsfaktor cos φ": "0,94",
+     "Netzabsicherung": "10 A",
+     "Netzkabel": "4 × 1,5 mm²",
+     "Schutzart": "IP 21",
+     "Gewicht": "98 kg",
+     "Abmessungen L × B × H": "645 × 545 × 520 mm"
+    },
+    "fr": {
+     "Procédé": "Microplasma, lissé et pulsé",
+     "Plage de réglage du courant": "0,05 – 50 A",
+     "Courant permanent à 100 % de facteur de marche": "50 A",
+     "Fréquence de pulsation": "1 Hz – 10 kHz",
+     "Tension à vide": "106 V",
+     "Section du câble de soudage": "16 mm²",
+     "Raccordement réseau": "3~ 380 V · 50/60 Hz",
+     "Puissance permanente": "3,5 kVA",
+     "Courant réseau à 380 V": "5,3 A",
+     "Facteur de puissance cos φ": "0,94",
+     "Protection réseau": "10 A",
+     "Câble d’alimentation": "4 × 1,5 mm²",
+     "Indice de protection": "IP 21",
+     "Poids": "98 kg",
+     "Dimensions L × l × H": "645 × 545 × 520 mm"
+    },
+    "it": {
+     "Processo": "Microplasma, livellato e pulsato",
+     "Campo di regolazione della corrente": "0,05 – 50 A",
+     "Corrente continua al 100 % del ciclo di lavoro": "50 A",
+     "Frequenza di pulsazione": "1 Hz – 10 kHz",
+     "Tensione a vuoto": "106 V",
+     "Sezione del cavo di saldatura": "16 mm²",
+     "Allacciamento alla rete": "3~ 380 V · 50/60 Hz",
+     "Potenza continua": "3,5 kVA",
+     "Corrente di rete a 380 V": "5,3 A",
+     "Fattore di potenza cos φ": "0,94",
+     "Protezione di rete": "10 A",
+     "Cavo di alimentazione": "4 × 1,5 mm²",
+     "Grado di protezione": "IP 21",
+     "Peso": "98 kg",
+     "Dimensioni L × P × A": "645 × 545 × 520 mm"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/panels/plasmafix-50s-4f39d6-1000.webp",
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/",
+    "fr": "https://www.ves-tech.ch/fr/produits/occasion/plasmafix-50s/",
+    "it": "https://www.ves-tech.ch/it/prodotti/occasioni/plasmafix-50s/"
    }
   }
  ]

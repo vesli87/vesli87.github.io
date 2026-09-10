@@ -38,5 +38,15 @@
    "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier, adaptés à chaque série MAHE.",
    "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina, per ogni serie MAHE."
   }
+ },
+ "occasion": {
+  "t": {
+   "fr": "Occasion",
+   "it": "Occasioni"
+  },
+  "d": {
+   "fr": "Machines d’occasion de notre propre atelier : contrôlées, prêtes à l’emploi et accompagnées de la documentation d’origine du fabricant.",
+   "it": "Macchine usate dalla nostra officina: controllate, pronte all’uso e corredate della documentazione originale del costruttore."
+  }
  }
 }

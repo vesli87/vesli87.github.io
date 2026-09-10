@@ -1,0 +1,13 @@
+{
+ "_kommentar": "Bildunterschrift zum Hauptbild eines Produkts. Noetig, wo das Bild mehr oder etwas anderes zeigt als das Geraet allein - sonst behauptet die Seite stillschweigend etwas Falsches.",
+ "plasmafix-51": {
+  "de": "Aufnahme aus der Werkstatt: in der Mitte die PlasmaFix 51, links und rechts zwei PlasmaFix P+T.",
+  "fr": "Vue de l’atelier : au centre la PlasmaFix 51, à gauche et à droite deux PlasmaFix P+T.",
+  "it": "Ripresa in officina: al centro la PlasmaFix 51, a sinistra e a destra due PlasmaFix P+T."
+ },
+ "plasmafix-50s": {
+  "de": "Herstellerabbildung aus dem Originalprospekt, mit Kühlgerät und Fahrwagen. Sie zeigt das Modell, nicht die angebotene Maschine.",
+  "fr": "Illustration du fabricant tirée de la brochure d’origine, avec groupe de refroidissement et chariot. Elle montre le modèle, pas la machine proposée.",
+  "it": "Illustrazione del costruttore dal prospetto originale, con gruppo di raffreddamento e carrello. Mostra il modello, non la macchina offerta."
+ }
+}

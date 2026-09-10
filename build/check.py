@@ -168,6 +168,82 @@ def referenzen():
             err(f"{wo}: Referenz nennt unbekanntes Geraet {g!r}")
 
 
+def fremdmarken():
+    """Auf der Seite eines Fremdfabrikats darf die eigene Hausmarke nicht stehen.
+
+    Der Generator war bis zum 10.09.2026 reiner MAHE-Katalog und setzte "MAHE"
+    an 16 Stellen vor jeden Produktnamen - fuenfzehn davon im Quelltext, die
+    sechzehnte im Einleitungssatz in build/i18n_extra.json. Mit der Rubrik
+    Occasion kamen gebrauchte Oerlikon-Anlagen dazu; beim ersten Bauen stand
+    auf jeder ihrer Seiten "PlasmaFix 51 von MAHE".
+
+    Das ist keine Formsache. Wer ein Fremdfabrikat unter der Marke anbietet,
+    deren Programm er sonst fuehrt, taeuscht ueber die betriebliche Herkunft
+    der Ware - UWG Art. 3 Abs. 1 lit. b. Kopf, Menue und Fusszeile bleiben
+    aussen vor: dass VES-TECH das MAHE-Programm fuehrt, gehoert dorthin.
+    """
+    import re as _re
+
+    def _pruefe(url, marke, wo):
+        f = C.ROOT / url.strip("/") / "index.html"
+        if not f.exists():
+            err(f"{wo}: Seite fehlt - {f}")
+            return
+        t = f.read_text("utf-8")
+        i = t.find('<div class="detail">')
+        if i < 0:
+            i = t.find('<div class="cbar">')
+        j = t.find("<footer")
+        kern = t[i:j] if i >= 0 and j > i else t
+        if C.BRAND in kern:
+            err(f"{url}: '{C.BRAND}' steht im Inhalt einer {marke}-Seite")
+        for feld, muster in (("title", r"<title>(.*?)</title>"),
+                             ("description", r'<meta name="description" content="([^"]*)"'),
+                             ("og:title", r'<meta property="og:title" content="([^"]*)"')):
+            m = _re.search(muster, t, _re.S)
+            if m and C.BRAND in m.group(1):
+                err(f"{url}: '{C.BRAND}' steht im {feld} einer {marke}-Seite")
+
+    # Kategorie- und Unterkategorieseiten, die kein MAHE fuehren
+    for c in C.CATS:
+        marke = C.catBrand(c["id"]) or "fremde"
+        if marke == C.BRAND:
+            continue
+        for lang in C.LANGS:
+            _pruefe(C.u_cat(lang, c["id"]), marke, c["id"])
+            for s in c["subs"]:
+                _pruefe(C.u_sub(lang, c["id"], s), marke, f'{c["id"]}/{s}')
+
+    for p in C.P:
+        marke = C.pBrand(p)
+        if marke == C.BRAND:
+            continue
+        for lang in C.LANGS:
+            f = C.ROOT / C.u_prod(lang, p).strip("/") / "index.html"
+            if not f.exists():
+                err(f"{p['id']}: Seite fehlt - {f}")
+                continue
+            t = f.read_text("utf-8")
+            i = t.find('<div class="detail">')
+            j = t.find("<footer")
+            kern = t[i:j] if i >= 0 and j > i else t
+            if C.BRAND in kern:
+                err(f"{C.u_prod(lang, p)}: '{C.BRAND}' steht im Inhalt einer "
+                    f"{marke}-Seite")
+            # Kopf mitpruefen. Beim ersten Bauen stand im <title> "MAHE
+            # PlasmaFix 51", weil die Vorlage in i18n_extra.json die Marke
+            # fest enthielt - im Inhalt war da laengst alles richtig.
+            import re as _re
+            for feld, muster in (("title", r"<title>(.*?)</title>"),
+                                 ("description",
+                                  r'<meta name="description" content="([^"]*)"'),
+                                 ("og:title", r'<meta property="og:title" content="([^"]*)"')):
+                m = _re.search(muster, t, _re.S)
+                if m and C.BRAND in m.group(1):
+                    err(f"{C.u_prod(lang, p)}: '{C.BRAND}' steht im {feld} einer "
+                        f"{marke}-Seite")
+
+
 def reihenfolge():
     """data/P.json muss nach Kategorie und Unterkategorie gruppiert bleiben.
 
@@ -204,6 +280,7 @@ def main():
         err(f"nur {len(pages)} Seiten gefunden – Build unvollständig?")
 
     referenzen()
+    fremdmarken()
     reihenfolge()
 
     titles, descs = collections.Counter(), collections.Counter()

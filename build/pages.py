@@ -62,14 +62,18 @@ def dls_for(p):
     Sicherheitsdatenblätter, EN-1090-Zertifikat, Katalog. Wer eine Anleitung
     sucht, soll sie nicht unter drei generischen PDFs hervorkramen müssen.
     """
-    out = list(C.DLDEV.get(p["id"], []))
+    out = list(C.DLDEV.get(p["id"], [])) + list(C.DLOCC.get(p["id"], []))
     if p["sub"] == "Elektrolyte" and p["id"].upper() in DL_SDS:
         out.append(DL_SDS[p["id"].upper()])
     if p["cat"] == "reinigung" and p["sub"] == "Cleaner":
         out += [DL_SDS[k] for k in ("R1", "RP1", "P1", "M1", "N1") if k in DL_SDS]
     if p["cat"] == "schweissgeraete":
         out.append(DL_EN1090)
-    out.append(DL_CATALOG)
+    # Der MAHE-Produktkatalog gehoert nur zu MAHE-Geraeten. Bei einer
+    # gebrauchten Oerlikon-Anlage haette er dort nichts verloren - er fuehrt
+    # ein anderes Programm eines anderen Herstellers.
+    if C.istMahe(p):
+        out.append(DL_CATALOG)
     seen, res = set(), []
     for d in out:
         if d["u"] not in seen:
@@ -123,7 +127,7 @@ def front_html(lang, p):
                    '<div class="varianten">')
         for name, img, items in varianten:
             bild = R.img_tag(img, "(max-width:760px) 90vw, 260px", cls="var-img zoomable",
-                             alt=f"{C.BRAND} {name}", width=260)
+                             alt=f"{C.pBrand(p)} {name}", width=260)
             out.append(f'<div class="variante"><h4 class="var-t">{e(name)}</h4>{bild}'
                        '<ul class="besond-list var-list">'
                        + "".join(f"<li>{e(x)}</li>" for x in items) + "</ul></div>")
@@ -154,7 +158,7 @@ def front_html(lang, p):
             if fp.get("img"):
                 media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",
                                   cls="fp-photo zoomable",
-                                  alt=f"{C.BRAND} {fp['n']}", width=340)
+                                  alt=f"{C.pBrand(p)} {fp['n']}", width=340)
             else:
                 media = PANEL_DRAWN["big" if fp.get("big") else "small"]
             bes = ""
@@ -231,9 +235,12 @@ def media_html(lang, p, nm):
     Ohne JavaScript bleibt alles lesbar: dann sind schlicht alle Bilder
     untereinander sichtbar (siehe noscript-Regel in der Seite).
     """
+    # Zeigt das Bild nicht schlicht das Geraet allein, steht darunter, was
+    # es wirklich zeigt - siehe data/IMGCAP.json. Ohne Eintrag bleibt es leer.
+    bu = C.IMGCAP.get(p["id"]) or {}
     haupt = {"img": p["img"],
-             "cap": "",
-             "alt": f"{C.BRAND} {nm}: {C.pDesc(lang, p)}"}
+             "cap": bu.get(lang) or bu.get("de") or "",
+             "alt": f"{C.pBrand(p)} {nm}: {C.pDesc(lang, p)}"}
     bilder = [haupt]
     for g in C.galleryOf(lang, p):
         bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"]})
@@ -243,10 +250,17 @@ def media_html(lang, p, nm):
     # schwarzer Winkel in der Ecke. Die Verfahren stehen in den technischen
     # Daten und in der Merkmalsliste; auf dem Bild braucht es sie nicht.
     if len(bilder) == 1:
-        return (f'<div class="dimg{R.dimg_klasse(p["img"])}">'
-                + R.img_tag(p["img"], DIMG_SIZES, cls="zoomable",
-                            alt=haupt["alt"], eager=True, width=560)
-                + "</div>")
+        rahmen = (f'<div class="dimg{R.dimg_klasse(p["img"])}">'
+                  + R.img_tag(p["img"], DIMG_SIZES, cls="zoomable",
+                              alt=haupt["alt"], eager=True, width=560)
+                  + "</div>")
+        # Ohne Diaschau gab es hier bisher keine Bildunterschrift. Bei einem
+        # Bild, das etwas anderes zeigt als das Geraet allein, muss sie
+        # trotzdem darunter stehen.
+        if haupt["cap"]:
+            return (f'<figure class="dimg-fig">{rahmen}'
+                    f'<figcaption>{e(haupt["cap"])}</figcaption></figure>')
+        return rahmen
 
     slides = ""
     for i, b in enumerate(bilder):
@@ -304,7 +318,7 @@ def karten(lang, ids):
     cards = ""
     for pid in ids:
         a = C.BY_ID[pid]
-        alt = "%s %s" % (C.BRAND, C.pName(lang, a))
+        alt = "%s %s" % (C.pBrand(a), C.pName(lang, a))
         im = R.img_tag(a["img"], "(max-width:760px) 40vw, 180px", alt=alt)
         cards += (
             f'<a class="acccard" href="{e(C.u_prod(lang, a))}">'
@@ -532,9 +546,16 @@ def page_cat(lang, c, sub=None):
         url = C.u_sub(lang, cid, sub)
         alts = C.alternates("sub", cat_id=cid, sub=sub)
         items = C.products_of(cid, sub)
-        h1 = f"{C.subT(lang, sub)} · {C.BRAND}"
-        title = C.t(lang, "sub_title_tpl", sub=C.subT(lang, sub), cat=C.catT(lang, c))
-        desc = clip(C.t(lang, "sub_desc_tpl", sub=C.subT(lang, sub), n=len(items)), 155)
+        marke = C.catBrand(cid)
+        h1 = f"{C.subT(lang, sub)} · {marke}" if marke else C.subT(lang, sub)
+        # Die MAHE-Vorlagen tragen den Markennamen im Titel. Fuer eine
+        # Kategorie mit Fremdfabrikaten gibt es eigene - sonst stuende ueber
+        # den gebrauchten Oerlikon-Anlagen "MAHE Mikroplasma kaufen".
+        occ = cid == "occasion"
+        title = C.t(lang, "sub_title_occ" if occ else "sub_title_tpl",
+                    sub=C.subT(lang, sub), cat=C.catT(lang, c), n=len(items))
+        desc = clip(C.t(lang, "sub_desc_occ" if occ else "sub_desc_tpl",
+                        sub=C.subT(lang, sub), n=len(items)), 155)
         lead = C.catD(lang, c)
         crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
                  (C.t(lang, "nav_products"), C.u_products(lang)),
@@ -552,11 +573,18 @@ def page_cat(lang, c, sub=None):
         # VES-TECH" 70 Zeichen lang - Google haette hinten abgeschnitten. Die
         # kurze Fassung laesst den Hinweis auf die erste Unterkategorie weg;
         # er steht ohnehin als Chip auf der Seite.
-        title = C.t(lang, "cat_title_tpl", cat=C.catT(lang, c),
-                    sub_hint=C.subT(lang, c["subs"][0]))
-        if len(title) > 68:
-            title = C.t(lang, "cat_title_tpl_kurz", cat=C.catT(lang, c))
-        desc = clip(C.t(lang, "cat_desc_tpl", cat=C.catT(lang, c), n=len(items), subs=subs_txt), 155)
+        occ = cid == "occasion"
+        if occ:
+            title = C.t(lang, "cat_title_occ", cat=C.catT(lang, c))
+            desc = clip(C.t(lang, "cat_desc_occ", cat=C.catT(lang, c),
+                            n=len(items), subs=subs_txt), 155)
+        else:
+            title = C.t(lang, "cat_title_tpl", cat=C.catT(lang, c),
+                        sub_hint=C.subT(lang, c["subs"][0]))
+            if len(title) > 68:
+                title = C.t(lang, "cat_title_tpl_kurz", cat=C.catT(lang, c))
+            desc = clip(C.t(lang, "cat_desc_tpl", cat=C.catT(lang, c),
+                            n=len(items), subs=subs_txt), 155)
         lead = C.catD(lang, c)
         crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
                  (C.t(lang, "nav_products"), C.u_products(lang)),
@@ -601,21 +629,27 @@ def page_product(lang, p):
     nm = C.pName(lang, p)
     suffix = " | " + C.t(lang, "site_name")
     # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
-    for cand in (f"MAHE {nm} · {sub_t} · {cat_t}" + suffix,
-                 f"MAHE {nm} · {sub_t} · {cat_t}",
-                 f"MAHE {nm} · {sub_t}" + suffix,
-                 f"MAHE {nm} · {sub_t}"):
+    mk = C.pBrand(p)
+    for cand in (f"{mk} {nm} · {sub_t} · {cat_t}" + suffix,
+                 f"{mk} {nm} · {sub_t} · {cat_t}",
+                 f"{mk} {nm} · {sub_t}" + suffix,
+                 f"{mk} {nm} · {sub_t}"):
         title = cand
         if len(cand) <= 68:
             break
     desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=C.vtT(lang, p["vt"]),
-                       desc=C.pDesc(lang, p)), 155)
+                       marke=C.pBrand(p), desc=C.pDesc(lang, p)), 155)
     crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
              (C.t(lang, "nav_products"), C.u_products(lang)),
              (C.catT(lang, c), C.u_cat(lang, p["cat"])),
              (C.subT(lang, p["sub"]), C.u_sub(lang, p["cat"], p["sub"])),
              (nm, None)]
 
+    # Gebrauchtmaschinen bekommen einen eigenen Einleitungssatz. Der normale
+    # verspricht die Abwicklung der Garantie - die gibt es bei einer
+    # gebrauchten Anlage nicht, und ein Versprechen, das niemand einloesen
+    # kann, waere eine Taeuschung ueber die Beschaffenheit.
+    intro_key = "prod_intro_occ_tpl" if p["cat"] == "occasion" else "prod_intro_tpl"
     has_panel = bool(C.fpAssign(p))
     tab1 = C.t(lang, "tab_feat") if has_panel else C.t(lang, "highlights")
     tabs = [("feat", tab1), ("tech", C.t(lang, "tab_tech"))]
@@ -659,7 +693,7 @@ def page_product(lang, p):
   <div class="dgrid">
     {media_html(lang, p, nm)}
     <div class="dinfo">
-      <p class="kicker">{e(C.catT(lang, c))} · {C.BRAND}</p>
+      <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
       <h1>{e(nm)}</h1>
       <p class="lead">{e(C.pDesc(lang, p))}</p>
       {procs_block(lang, p)}
@@ -667,7 +701,7 @@ def page_product(lang, p):
         <div class="m"><span class="lab">{e(C.t(lang,'availability'))}</span>
           <span class="val ok">{e(C.t(lang,'avail_val'))}</span></div>
         <div class="m"><span class="lab">{e(C.t(lang,'brand'))}</span>
-          <span class="val">{C.BRAND}</span></div>
+          <span class="val">{e(C.pBrand(p))}</span></div>
         <div class="m"><span class="lab">{e(C.t(lang,'artno'))}</span>
           <span class="val">{e(p['id'].upper())}</span></div>
       </div>
@@ -678,7 +712,7 @@ def page_product(lang, p):
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'consult'))}</a>
       </div>
-      <p class="prod-intro">{e(C.t(lang,'prod_intro_tpl', name=nm))}</p>
+      <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p)))}</p>
     </div>
   </div>
 

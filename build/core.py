@@ -150,7 +150,57 @@ BING_SITE_VERIFICATION = ""
 
 BRAND = "MAHE"
 BRAND_URL = "https://mahe-online.de/"
+HERSTELLER = "MAHE GmbH"
 REMOTE_IMG = "https://mahe-online.de/wp-content/uploads/"
+
+# Die Marke steht nicht mehr fest im Code, sondern am Produkt.
+#
+# Der Katalog war bis zum 10.09.2026 reiner MAHE-Katalog, und "MAHE" stand an
+# 15 Stellen hart im Quelltext: vor jedem Produktnamen, in jedem Alt-Text, im
+# JSON-LD als brand UND als manufacturer, im Feld "Marke" und in der
+# Unterkategorie-Ueberschrift. Mit der Rubrik Occasion kamen gebrauchte
+# Mikroplasma-Anlagen von Oerlikon dazu. Liefe das ueber dieselben Stellen,
+# stuende auf jeder dieser Seiten "MAHE Plasmafix 51" - sachlich falsch, und
+# auf einer Verkaufsseite ist das eine Taeuschung ueber die betriebliche
+# Herkunft im Sinne von Art. 3 Abs. 1 lit. b UWG.
+#
+# Ohne "brand" am Produkt bleibt alles wie bisher: MAHE.
+MARKEN = {
+    "Oerlikon": {
+        "url": "https://www.oerlikon-welding.com/",
+        "hersteller": "Oerlikon, Schweissindustrie Oerlikon Bührle AG / Air Liquide Welding",
+    },
+}
+
+
+def pBrand(p):
+    """Die Marke dieses Produkts."""
+    return p.get("brand", BRAND)
+
+
+def pBrandUrl(p):
+    m = p.get("brand")
+    return MARKEN[m]["url"] if m in MARKEN else BRAND_URL
+
+
+def pHersteller(p):
+    m = p.get("brand")
+    return MARKEN[m]["hersteller"] if m in MARKEN else HERSTELLER
+
+
+def istMahe(p):
+    return p.get("brand", BRAND) == BRAND
+
+
+def catBrand(cid):
+    """Die Marke einer Kategorie - fuer die Ueberschrift „Sub · Marke".
+
+    Fuehrt eine Kategorie nur eine Marke, steht sie in der Ueberschrift. Fuehrt
+    sie mehrere (in der Rubrik Occasion kann das jederzeit vorkommen), steht
+    dort nichts von einer Marke, denn dann waere jede Angabe falsch.
+    """
+    marken = {pBrand(p) for p in P if p["cat"] == cid}
+    return marken.pop() if len(marken) == 1 else ""
 
 # Web3Forms-Key: wird aus build/config.local.json oder aus der Umgebung gelesen.
 # Ohne Key fallen die Formulare automatisch auf mailto: zurück.
@@ -196,6 +246,8 @@ MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
 OPT       = _load("OPT")         # Optionen je Geraet, aus der MAHE-Preisliste
 DLDEV     = _load("DLDEV")       # Anleitungen/Datenblaetter je Geraet bei MAHE
+DLOCC     = _load("DLOCC")       # Prospekte der Occasion-Maschinen, lokal gehostet
+IMGCAP    = _load("IMGCAP")      # Bildunterschrift zum Hauptbild, wo noetig
 GALLERY   = _load("GALLERY")     # Zusatzbilder unter dem Hauptbild
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")
@@ -749,6 +801,7 @@ CAT_SLUG = {
     "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma"},
     "reinigung":       {"de": "reinigungsgeraete", "fr": "nettoyage",       "it": "pulizia"},
     "zubehoer":        {"de": "zubehoer",        "fr": "accessoires",       "it": "accessori"},
+    "occasion":        {"de": "occasion",        "fr": "occasion",          "it": "occasioni"},
 }
 
 # Sub-Slug pro Sprache aus dem übersetzten Namen

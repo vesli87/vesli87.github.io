@@ -1,0 +1,35 @@
+{
+ "_kommentar": "Prospekte zu den Occasion-Maschinen. Anders als DLDEV.json wird diese Datei von Hand gepflegt: die Unterlagen stammen nicht von mahe-online.de, sondern liegen unter assets/dl/ auf der eigenen Domain. Es sind die Originalprospekte der Hersteller, weitergegeben zum Geraet, das verkauft wird - so wie ein Haendler das Datenblatt zur Maschine mitgibt.",
+ "plasmafix-51": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Prospekt PlasmaFix 51",
+    "fr": "Brochure PlasmaFix 51",
+    "it": "Prospetto PlasmaFix 51"
+   },
+   "s": {
+    "de": "Originalunterlage Oerlikon · Air Liquide Welding, 10 Seiten",
+    "fr": "Document d’origine Oerlikon · Air Liquide Welding, 10 pages",
+    "it": "Documento originale Oerlikon · Air Liquide Welding, 10 pagine"
+   },
+   "u": "/assets/dl/oerlikon-plasmafix-51-prospekt.pdf"
+  }
+ ],
+ "plasmafix-50s": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Prospekt PlasmaFix 50 S",
+    "fr": "Brochure PlasmaFix 50 S",
+    "it": "Prospetto PlasmaFix 50 S"
+   },
+   "s": {
+    "de": "Originalunterlage Schweissindustrie Oerlikon Bührle AG, 4 Seiten",
+    "fr": "Document d’origine Schweissindustrie Oerlikon Bührle AG, 4 pages",
+    "it": "Documento originale Schweissindustrie Oerlikon Bührle AG, 4 pagine"
+   },
+   "u": "/assets/dl/oerlikon-plasmafix-50s-prospekt.pdf"
+  }
+ ]
+}

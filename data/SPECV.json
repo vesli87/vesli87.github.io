@@ -326,5 +326,37 @@
  "Markieren": {
   "fr": "Marquage",
   "it": "Marcatura"
+ },
+ "0,08 – 50 A bei 100 % ED": {
+  "fr": "0,08 – 50 A à 100 % de facteur de marche",
+  "it": "0,08 – 50 A al 100 % del ciclo di lavoro"
+ },
+ "0,8 – 50 A bei 60 % ED": {
+  "fr": "0,8 – 50 A à 60 % de facteur de marche",
+  "it": "0,8 – 50 A al 60 % del ciclo di lavoro"
+ },
+ "6 A bei 400 V": {
+  "fr": "6 A sous 400 V",
+  "it": "6 A a 400 V"
+ },
+ "Hochfrequenz, eingebaut": {
+  "fr": "Haute fréquence, intégrée",
+  "it": "Alta frequenza, integrata"
+ },
+ "über Kühlgerät": {
+  "fr": "par groupe de refroidissement",
+  "it": "tramite gruppo di raffreddamento"
+ },
+ "Tasten und Codes, LCD-Anzeige": {
+  "fr": "Touches et codes, afficheur LCD",
+  "it": "Tasti e codici, display LCD"
+ },
+ "Mikroplasma · WIG, geglättet und gepulst": {
+  "fr": "Microplasma · TIG, lissé et pulsé",
+  "it": "Microplasma · TIG, livellato e pulsato"
+ },
+ "Mikroplasma, geglättet und gepulst": {
+  "fr": "Microplasma, lissé et pulsé",
+  "it": "Microplasma, livellato e pulsato"
  }
 }

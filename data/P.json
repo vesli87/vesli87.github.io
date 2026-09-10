@@ -1122,5 +1122,58 @@
    "Verbindet": "Stromquelle mit Vorschubkoffer",
    "Längen": "1,2 · 5 · 10 · 15 · 20 m"
   }
+ },
+ {
+  "id": "plasmafix-51",
+  "cat": "occasion",
+  "sub": "Mikroplasma",
+  "vt": "Mikroplasma",
+  "brand": "Oerlikon",
+  "name": "PlasmaFix 51",
+  "img": "occasion/plasmafix-51.png",
+  "desc": "Mikroplasma-Anlage für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
+  "specs": {
+   "Verfahren": "Mikroplasma · WIG, geglättet und gepulst",
+   "Schweissstrom Plasma": "0,08 – 50 A bei 100 % ED",
+   "Schweissstrom WIG": "0,8 – 50 A bei 60 % ED",
+   "Pulsfrequenz": "1 Hz – 10 kHz",
+   "Leerlaufspannung": "106 V",
+   "Netzanschluss": "3~ 230/400/440 V · 50/60 Hz",
+   "Leistungsfaktor cos φ": "0,91",
+   "Primärstrom": "6 A bei 400 V",
+   "Bedienung": "Tasten und Codes, LCD-Anzeige",
+   "Zündung": "Hochfrequenz, eingebaut",
+   "Kühlung": "über Kühlgerät",
+   "Schutzart": "IP 23",
+   "Gewicht": "95 kg",
+   "Abmessungen L × B × H": "650 × 360 × 750 mm"
+  }
+ },
+ {
+  "id": "plasmafix-50s",
+  "cat": "occasion",
+  "sub": "Mikroplasma",
+  "vt": "Mikroplasma",
+  "brand": "Oerlikon",
+  "name": "PlasmaFix 50 S",
+  "img": "occasion/plasmafix-50s.png",
+  "desc": "Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten – Folien von 0,01 mm, Drahtgitter und kleine Armaturen.",
+  "specs": {
+   "Verfahren": "Mikroplasma, geglättet und gepulst",
+   "Einstellbereich Strom": "0,05 – 50 A",
+   "Dauerstrom bei 100 % ED": "50 A",
+   "Pulsfrequenz": "1 Hz – 10 kHz",
+   "Leerlaufspannung": "106 V",
+   "Schweisskabel-Querschnitt": "16 mm²",
+   "Netzanschluss": "3~ 380 V · 50/60 Hz",
+   "Dauerleistung": "3,5 kVA",
+   "Netzstrom bei 380 V": "5,3 A",
+   "Leistungsfaktor cos φ": "0,94",
+   "Netzabsicherung": "10 A",
+   "Netzkabel": "4 × 1,5 mm²",
+   "Schutzart": "IP 21",
+   "Gewicht": "98 kg",
+   "Abmessungen L × B × H": "645 × 545 × 520 mm"
+  }
  }
 ]

@@ -291,7 +291,10 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     h = int(round(w * m["ratio"]))
     # Frontpanels kommen direkt vom Hersteller und liegen lokal; Produktbilder
     # stammen von mahe-online.de und behalten dorthin einen Rückfall.
-    folder = "panels" if m.get("local") else "p"
+    # Woher das Bild kommt, steht im Manifest. "p" sind die Produktbilder
+    # von mahe-online.de, "panels" die Frontpanel-Fotos des Herstellers,
+    # "occasion" die eigenen Aufnahmen der Gebrauchtmaschinen.
+    folder = m.get("folder") or ("panels" if m.get("local") else "p")
     # Welche Breiten es wirklich gibt, steht im Manifest. Frueher standen hier
     # fest 400 und 1000; bei einer 4800 px breiten Vorlage blieb das Bild
     # dadurch auf 1000 px stehen und wirkte auf feinen Bildschirmen weich.
@@ -494,15 +497,15 @@ def ld_product(lang, p):
     d = {
         "@type": "Product",
         "@id": url + "#product",
-        "name": f"{C.BRAND} {C.pName(lang, p)}",
+        "name": f"{C.pBrand(p)} {C.pName(lang, p)}",
         "alternateName": C.pName(lang, p),
         "sku": p["id"].upper(),
         "mpn": p["id"].upper(),
         "url": url,
         "description": C.pDesc(lang, p),
         "image": [img_abs(p["img"], 1000)],
-        "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
-        "manufacturer": {"@type": "Organization", "name": "MAHE GmbH", "url": C.BRAND_URL},
+        "brand": {"@type": "Brand", "name": C.pBrand(p), "url": C.pBrandUrl(p)},
+        "manufacturer": {"@type": "Organization", "name": C.pHersteller(p), "url": C.pBrandUrl(p)},
         "category": f"{C.catT(lang, cat)} > {C.subT(lang, p['sub'])}",
         # Kein inLanguage. schema.org fuehrt die Eigenschaft nur auf
         # CreativeWork, Event, BroadcastService, LinkRole, PronounceableText,
@@ -543,7 +546,7 @@ def ld_itemlist(lang, products, name):
         "itemListElement": [
             {"@type": "ListItem", "position": i + 1,
              "url": C.abs_url(C.u_prod(lang, p)),
-             "name": f"{C.BRAND} {p['name']}"}
+             "name": f"{C.pBrand(p)} {p['name']}"}
             for i, p in enumerate(products)
         ],
     }
@@ -997,7 +1000,7 @@ def pcard(lang, p):
   <a class="pcard-link" href="{e(url)}">
     <div class="imgbox">
       {img_tag(p['img'], "(max-width:700px) 46vw, (max-width:1000px) 30vw, 280px",
-               alt=f"{C.BRAND} {C.pName(lang, p)}: {C.pDesc(lang, p)}")}</div>
+               alt=f"{C.pBrand(p)} {C.pName(lang, p)}: {C.pDesc(lang, p)}")}</div>
     <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>
       <div class="spec">{specs}</div></div>
   </a>

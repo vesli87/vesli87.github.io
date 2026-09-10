@@ -242,5 +242,69 @@
  "Zündung": {
   "fr": "Amorçage",
   "it": "Innesco"
+ },
+ "Abmessungen L × B × H": {
+  "fr": "Dimensions L × l × H",
+  "it": "Dimensioni L × P × A"
+ },
+ "Dauerleistung": {
+  "fr": "Puissance permanente",
+  "it": "Potenza continua"
+ },
+ "Dauerstrom bei 100 % ED": {
+  "fr": "Courant permanent à 100 % de facteur de marche",
+  "it": "Corrente continua al 100 % del ciclo di lavoro"
+ },
+ "Einstellbereich Strom": {
+  "fr": "Plage de réglage du courant",
+  "it": "Campo di regolazione della corrente"
+ },
+ "Leerlaufspannung": {
+  "fr": "Tension à vide",
+  "it": "Tensione a vuoto"
+ },
+ "Leistungsfaktor cos φ": {
+  "fr": "Facteur de puissance cos φ",
+  "it": "Fattore di potenza cos φ"
+ },
+ "Netzabsicherung": {
+  "fr": "Protection réseau",
+  "it": "Protezione di rete"
+ },
+ "Netzanschluss": {
+  "fr": "Raccordement réseau",
+  "it": "Allacciamento alla rete"
+ },
+ "Netzkabel": {
+  "fr": "Câble d’alimentation",
+  "it": "Cavo di alimentazione"
+ },
+ "Netzstrom bei 380 V": {
+  "fr": "Courant réseau à 380 V",
+  "it": "Corrente di rete a 380 V"
+ },
+ "Primärstrom": {
+  "fr": "Courant primaire",
+  "it": "Corrente primaria"
+ },
+ "Pulsfrequenz": {
+  "fr": "Fréquence de pulsation",
+  "it": "Frequenza di pulsazione"
+ },
+ "Schutzart": {
+  "fr": "Indice de protection",
+  "it": "Grado di protezione"
+ },
+ "Schweisskabel-Querschnitt": {
+  "fr": "Section du câble de soudage",
+  "it": "Sezione del cavo di saldatura"
+ },
+ "Schweissstrom Plasma": {
+  "fr": "Courant de soudage plasma",
+  "it": "Corrente di saldatura plasma"
+ },
+ "Schweissstrom WIG": {
+  "fr": "Courant de soudage TIG",
+  "it": "Corrente di saldatura TIG"
  }
 }

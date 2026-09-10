@@ -20,7 +20,7 @@
     "home_title": "VES-TECH Swiss · MAHE Schweissgeräte, Plasmaschneiden & Reinigung",
     "home_desc": "MAHE Schweissgeräte, Plasmaschneider und elektrolytische Reinigungssysteme in der Schweiz. Beratung, Service und Automation aus Herisau AR. Preis auf Anfrage.",
     "home_h1": "MAHE Schweisstechnik und Schneidtechnik für die Schweiz",
-    "all_title": "Alle MAHE Geräte · Schweissen, Plasma, Reinigung, Zubehör",
+    "all_title": "Alle Geräte · MAHE Programm und Occasionen | VES-TECH Swiss",
     "all_desc": "Das komplette MAHE-Programm bei VES-TECH Swiss: {n} Geräte für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden, elektrolytische Reinigung und Zubehör. Preis auf Anfrage.",
     "all_h1": "Alle MAHE Geräte",
     "all_lead": "Das komplette MAHE-Programm, geordnet nach Verfahren. Alle Geräte mit Schweizer Service, Garantieabwicklung und Beratung durch den Techniker.",
@@ -29,9 +29,9 @@
     "cat_desc_tpl": "{cat} von MAHE bei VES-TECH Swiss: {n} Modelle, {subs}. Beratung, Service und Ersatzteile aus Herisau AR. Preis auf Anfrage.",
     "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
     "sub_desc_tpl": "MAHE {sub}: {n} Modelle bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
-    "prod_title_tpl": "MAHE {name} · {sub} · {cat}",
-    "prod_desc_tpl": "MAHE {name} ({vt}): {desc} Technische Daten, passendes Zubehör und Beratung bei VES-TECH Swiss. Preis auf Anfrage.",
-    "prod_intro_tpl": "{name} von MAHE. VES-TECH Swiss liefert in die ganze Schweiz und nach Liechtenstein, nimmt in Betrieb, wartet und repariert in der Werkstatt in Herisau und wickelt die Garantie ab.",
+    "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
+    "prod_desc_tpl": "{marke} {name} ({vt}): {desc} Technische Daten, passendes Zubehör und Beratung bei VES-TECH Swiss. Preis auf Anfrage.",
+    "prod_intro_tpl": "{name} von {marke}. VES-TECH Swiss liefert in die ganze Schweiz und nach Liechtenstein, nimmt in Betrieb, wartet und repariert in der Werkstatt in Herisau und wickelt die Garantie ab.",
     "verf_title": "MAHE Schweissverfahren · MIS, HyperPuls, HyperCold | VES-TECH Swiss",
     "verf_desc": "Die MAHE-Schweissverfahren erklärt: MIS spritzerfrei, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP und wofür sie eingesetzt werden.",
     "dl_title": "Downloads · MAHE Katalog, EN 1090 & Sicherheitsdatenblätter",
@@ -176,7 +176,7 @@
       ],
       [
         "Marken und Bildrechte",
-        "<p>MAHE ist eine Marke der MAHE GmbH, Deutschland. Das Markenrecht gibt dem Inhaber das ausschliessliche Recht, die Marke zu gebrauchen und darüber zu verfügen (Art. 13 MSchG). Wir verwenden Marke, Typenbezeichnungen und Produktbilder als Händler, um die von uns vertriebene Originalware zu kennzeichnen.</p><p>Produktfotos und Abbildungen der Frontpanels stammen vom Hersteller und geben dessen Produktinformationen wieder. Alle weiteren auf dieser Website genannten Marken gehören ihren jeweiligen Inhabern.</p><p>Einzelne Abbildungen sind eigene Darstellungen von VES-TECH Swiss und stammen nicht vom Hersteller: die Ansicht des CNC-Plasmaschneidtisches MPT auf der Startseite und auf den Geräteseiten MPT 3001 und MPT 2501. Sie zeigt das Gerät in einer nachgestellten Umgebung. Der abgebildete Bildschirminhalt ist eine Darstellung und nicht die Bedienoberfläche der Steuerung; das Gerät wird über das MyPlasm CNC System von Proma Elektronika bedient. Verbindlich sind allein die technischen Daten und die Angaben des Herstellers.</p>"
+        "<p>MAHE ist eine Marke der MAHE GmbH, Deutschland. Das Markenrecht gibt dem Inhaber das ausschliessliche Recht, die Marke zu gebrauchen und darüber zu verfügen (Art. 13 MSchG). Wir verwenden Marke, Typenbezeichnungen und Produktbilder als Händler, um die von uns vertriebene Originalware zu kennzeichnen.</p><p>Produktfotos und Abbildungen der Frontpanels stammen vom Hersteller und geben dessen Produktinformationen wieder. Alle weiteren auf dieser Website genannten Marken gehören ihren jeweiligen Inhabern.</p><p>Einzelne Abbildungen sind eigene Darstellungen von VES-TECH Swiss und stammen nicht vom Hersteller: die Ansicht des CNC-Plasmaschneidtisches MPT auf der Startseite und auf den Geräteseiten MPT 3001 und MPT 2501. Sie zeigt das Gerät in einer nachgestellten Umgebung. Der abgebildete Bildschirminhalt ist eine Darstellung und nicht die Bedienoberfläche der Steuerung; das Gerät wird über das MyPlasm CNC System von Proma Elektronika bedient. Verbindlich sind allein die technischen Daten und die Angaben des Herstellers.</p><p>Seit dem 10.09.2026 führt die Website unter „Occasion“ auch gebrauchte Anlagen anderer Hersteller. <strong>PLASMAFIX</strong> ist eine Marke der Schweissindustrie Oerlikon Bührle AG beziehungsweise ihrer Rechtsnachfolger (Air Liquide Welding, SAF); <strong>NERTAMATIC</strong> und <strong>REFRISAF</strong> ebenso. Wir verwenden diese Bezeichnungen, um die gebrauchten Originalgeräte zu benennen, die wir verkaufen. Die dort verlinkten Prospekte sind die unveränderten Originalunterlagen der Hersteller und werden zum jeweiligen Gerät weitergegeben.</p>"
       ],
       [
         "Urheberrecht an unseren Inhalten",
@@ -468,7 +468,12 @@
     "nav_about": "Über uns",
     "about_role": "Inhaber",
     "redirect_title": "Seite umgezogen",
-    "redirect_text": "Diese Seite ist umgezogen. Weiter zu:"
+    "redirect_text": "Diese Seite ist umgezogen. Weiter zu:",
+    "prod_intro_occ_tpl": "{name} von {marke}, gebraucht. Die Anlage steht in der Werkstatt in Herisau, wird vor der Übergabe geprüft und im vorgeführten Zustand verkauft. Besichtigung nach Vereinbarung.",
+    "cat_title_occ": "{cat} · gebrauchte Anlagen kaufen in der Schweiz | VES-TECH Swiss",
+    "cat_desc_occ": "Gebrauchte Anlagen bei VES-TECH Swiss: {n} Maschinen, {subs}. Geprüft in der Werkstatt in Herisau AR, mit Originalunterlagen. Preis auf Anfrage.",
+    "sub_title_occ": "{sub} Occasion · {n} gebrauchte Anlagen | VES-TECH Swiss",
+    "sub_desc_occ": "{sub} gebraucht: {n} Anlagen bei VES-TECH Swiss. Technische Daten, Originalprospekt und Besichtigung nach Vereinbarung. Preis auf Anfrage."
   },
   "fr": {
     "locale": "fr_CH",
@@ -490,7 +495,7 @@
     "home_title": "VES-TECH Swiss · Postes de soudage MAHE, plasma & nettoyage",
     "home_desc": "Postes de soudage MAHE, découpeurs plasma et systèmes de nettoyage électrolytique en Suisse. Conseil, service et automation depuis Herisau AR. Prix sur demande.",
     "home_h1": "Technique de soudage et de découpe MAHE pour la Suisse",
-    "all_title": "Tous les appareils MAHE · soudage, plasma, nettoyage, accessoires",
+    "all_title": "Tous les appareils · gamme MAHE et occasions | VES-TECH Swiss",
     "all_desc": "Toute la gamme MAHE chez VES-TECH Swiss : {n} appareils pour MIG/MAG, TIG, MMA, découpe plasma, nettoyage électrolytique et accessoires. Prix sur demande.",
     "all_h1": "Tous les appareils MAHE",
     "all_lead": "Toute la gamme MAHE, classée par procédé. Tous les appareils avec service suisse, gestion de la garantie et conseil par le technicien.",
@@ -499,9 +504,9 @@
     "cat_desc_tpl": "{cat} MAHE chez VES-TECH Swiss : {n} modèles, {subs}. Conseil, service et pièces de rechange depuis Herisau AR. Prix sur demande.",
     "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
     "sub_desc_tpl": "MAHE {sub}: {n} modèles chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
-    "prod_title_tpl": "MAHE {name} · {sub} · {cat}",
-    "prod_desc_tpl": "MAHE {name} ({vt}) : {desc} Données techniques, accessoires adaptés et conseil chez VES-TECH Swiss. Prix sur demande.",
-    "prod_intro_tpl": "{name} de MAHE. VES-TECH Swiss livre dans toute la Suisse et au Liechtenstein, assure la mise en service, l’entretien et les réparations à l’atelier de Herisau et gère la garantie.",
+    "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
+    "prod_desc_tpl": "{marke} {name} ({vt}) : {desc} Données techniques, accessoires adaptés et conseil chez VES-TECH Swiss. Prix sur demande.",
+    "prod_intro_tpl": "{name} de {marke}. VES-TECH Swiss livre dans toute la Suisse et au Liechtenstein, assure la mise en service, l’entretien et les réparations à l’atelier de Herisau et gère la garantie.",
     "verf_title": "Procédés de soudage MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
     "verf_desc": "Les procédés de soudage MAHE expliqués : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP et leurs applications.",
     "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
@@ -646,7 +651,7 @@
       ],
       [
         "Marques et droits sur les images",
-        "<p>MAHE est une marque de MAHE GmbH, Allemagne. Le droit des marques confère au titulaire le droit exclusif d’utiliser la marque et d’en disposer (art. 13 LPM). En tant que revendeur, nous utilisons la marque, les désignations de type et les photos de produits pour désigner la marchandise d’origine que nous distribuons.</p><p>Les photos de produits et les illustrations des faces avant proviennent du fabricant et reprennent ses informations produits. Toutes les autres marques citées sur ce site appartiennent à leurs titulaires respectifs.</p><p>Certaines illustrations sont des représentations propres à VES-TECH Swiss et ne proviennent pas du fabricant : la vue de la table de découpe plasma CNC MPT sur la page d’accueil et sur les pages MPT 3001 et MPT 2501. Elle montre l’appareil dans un environnement reconstitué. Le contenu d’écran représenté est une illustration et non l’interface de la commande ; l’appareil se pilote avec le système MyPlasm CNC de Proma Elektronika. Seules les données techniques et les indications du fabricant font foi.</p>"
+        "<p>MAHE est une marque de MAHE GmbH, Allemagne. Le droit des marques confère au titulaire le droit exclusif d’utiliser la marque et d’en disposer (art. 13 LPM). En tant que revendeur, nous utilisons la marque, les désignations de type et les photos de produits pour désigner la marchandise d’origine que nous distribuons.</p><p>Les photos de produits et les illustrations des faces avant proviennent du fabricant et reprennent ses informations produits. Toutes les autres marques citées sur ce site appartiennent à leurs titulaires respectifs.</p><p>Certaines illustrations sont des représentations propres à VES-TECH Swiss et ne proviennent pas du fabricant : la vue de la table de découpe plasma CNC MPT sur la page d’accueil et sur les pages MPT 3001 et MPT 2501. Elle montre l’appareil dans un environnement reconstitué. Le contenu d’écran représenté est une illustration et non l’interface de la commande ; l’appareil se pilote avec le système MyPlasm CNC de Proma Elektronika. Seules les données techniques et les indications du fabricant font foi.</p><p>Depuis le 10.09.2026, le site présente aussi, sous « Occasion », des machines d’occasion d’autres fabricants. <strong>PLASMAFIX</strong> est une marque de Schweissindustrie Oerlikon Bührle AG, respectivement de ses ayants droit (Air Liquide Welding, SAF) ; il en va de même pour <strong>NERTAMATIC</strong> et <strong>REFRISAF</strong>. Nous utilisons ces désignations pour nommer les appareils d’origine d’occasion que nous vendons. Les brochures qui y sont liées sont les documents d’origine des fabricants, non modifiés, remis avec l’appareil concerné.</p>"
       ],
       [
         "Droit d’auteur sur nos contenus",
@@ -938,7 +943,12 @@
     "nav_about": "À propos",
     "about_role": "Titulaire",
     "redirect_title": "Page déplacée",
-    "redirect_text": "Cette page a été déplacée. Continuer vers :"
+    "redirect_text": "Cette page a été déplacée. Continuer vers :",
+    "prod_intro_occ_tpl": "{name} de {marke}, d’occasion. La machine se trouve à l’atelier de Herisau, elle est contrôlée avant la remise et vendue dans l’état présenté. Visite sur rendez-vous.",
+    "cat_title_occ": "{cat} · machines d’occasion en Suisse | VES-TECH Swiss",
+    "cat_desc_occ": "Machines d’occasion chez VES-TECH Swiss : {n} machines, {subs}. Contrôlées à l’atelier de Herisau AR, avec la documentation d’origine. Prix sur demande.",
+    "sub_title_occ": "{sub} occasion · {n} machines d’occasion | VES-TECH Swiss",
+    "sub_desc_occ": "{sub} d’occasion : {n} machines chez VES-TECH Swiss. Données techniques, brochure d’origine et visite sur rendez-vous. Prix sur demande."
   },
   "it": {
     "locale": "it_CH",
@@ -960,7 +970,7 @@
     "home_title": "VES-TECH Swiss · Saldatrici MAHE, plasma & pulizia",
     "home_desc": "Saldatrici MAHE, inverter per taglio al plasma e pulizia elettrolitica in Svizzera. Consulenza, assistenza e automazione da Herisau AR. Prezzo su richiesta.",
     "home_h1": "Tecnica di saldatura e di taglio MAHE per la Svizzera",
-    "all_title": "Tutti gli apparecchi MAHE · saldatura, plasma, pulizia, accessori",
+    "all_title": "Tutti gli apparecchi · gamma MAHE e usato | VES-TECH Swiss",
     "all_desc": "L'intera gamma MAHE da VES-TECH Swiss: {n} apparecchi per MIG/MAG, TIG, MMA, taglio al plasma, pulizia elettrolitica e accessori. Prezzo su richiesta.",
     "all_h1": "Tutti gli apparecchi MAHE",
     "all_lead": "L'intera gamma MAHE, ordinata per processo. Tutti gli apparecchi con assistenza svizzera, gestione della garanzia e consulenza del tecnico.",
@@ -969,9 +979,9 @@
     "cat_desc_tpl": "{cat} MAHE da VES-TECH Swiss: {n} modelli, {subs}. Consulenza, assistenza e ricambi da Herisau AR. Prezzo su richiesta.",
     "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
     "sub_desc_tpl": "MAHE {sub}: {n} modelli da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
-    "prod_title_tpl": "MAHE {name} · {sub} · {cat}",
-    "prod_desc_tpl": "MAHE {name} ({vt}): {desc} Dati tecnici, accessori adatti e consulenza da VES-TECH Swiss. Prezzo su richiesta.",
-    "prod_intro_tpl": "{name} di MAHE. VES-TECH Swiss fornisce in tutta la Svizzera e nel Liechtenstein, esegue la messa in servizio, la manutenzione e le riparazioni nell’officina di Herisau e gestisce la garanzia.",
+    "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
+    "prod_desc_tpl": "{marke} {name} ({vt}): {desc} Dati tecnici, accessori adatti e consulenza da VES-TECH Swiss. Prezzo su richiesta.",
+    "prod_intro_tpl": "{name} di {marke}. VES-TECH Swiss fornisce in tutta la Svizzera e nel Liechtenstein, esegue la messa in servizio, la manutenzione e le riparazioni nell’officina di Herisau e gestisce la garanzia.",
     "verf_title": "Processi di saldatura MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
     "verf_desc": "I processi di saldatura MAHE spiegati: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP e i loro impieghi.",
     "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
@@ -1116,7 +1126,7 @@
       ],
       [
         "Marchi e diritti sulle immagini",
-        "<p>MAHE è un marchio di MAHE GmbH, Germania. Il diritto dei marchi conferisce al titolare il diritto esclusivo di usare il marchio e di disporne (art. 13 LPM). Come rivenditori utilizziamo marchio, denominazioni di tipo e immagini dei prodotti per contraddistinguere la merce originale che distribuiamo.</p><p>Le foto dei prodotti e le immagini dei pannelli frontali provengono dal fabbricante e ne riproducono le informazioni di prodotto. Tutti gli altri marchi citati su questo sito appartengono ai rispettivi titolari.</p><p>Alcune immagini sono rappresentazioni proprie di VES-TECH Swiss e non provengono dal fabbricante: la veduta del tavolo di taglio al plasma CNC MPT sulla pagina iniziale e sulle pagine MPT 3001 e MPT 2501. Mostra l’apparecchio in un ambiente ricostruito. Il contenuto dello schermo raffigurato è una rappresentazione e non l’interfaccia del comando; l’apparecchio si comanda con il sistema MyPlasm CNC di Proma Elektronika. Fanno fede unicamente i dati tecnici e le indicazioni del fabbricante.</p>"
+        "<p>MAHE è un marchio di MAHE GmbH, Germania. Il diritto dei marchi conferisce al titolare il diritto esclusivo di usare il marchio e di disporne (art. 13 LPM). Come rivenditori utilizziamo marchio, denominazioni di tipo e immagini dei prodotti per contraddistinguere la merce originale che distribuiamo.</p><p>Le foto dei prodotti e le immagini dei pannelli frontali provengono dal fabbricante e ne riproducono le informazioni di prodotto. Tutti gli altri marchi citati su questo sito appartengono ai rispettivi titolari.</p><p>Alcune immagini sono rappresentazioni proprie di VES-TECH Swiss e non provengono dal fabbricante: la veduta del tavolo di taglio al plasma CNC MPT sulla pagina iniziale e sulle pagine MPT 3001 e MPT 2501. Mostra l’apparecchio in un ambiente ricostruito. Il contenuto dello schermo raffigurato è una rappresentazione e non l’interfaccia del comando; l’apparecchio si comanda con il sistema MyPlasm CNC di Proma Elektronika. Fanno fede unicamente i dati tecnici e le indicazioni del fabbricante.</p><p>Dal 10.09.2026 il sito presenta anche, alla voce «Occasioni», macchine usate di altri costruttori. <strong>PLASMAFIX</strong> è un marchio di Schweissindustrie Oerlikon Bührle AG, rispettivamente dei suoi aventi causa (Air Liquide Welding, SAF); lo stesso vale per <strong>NERTAMATIC</strong> e <strong>REFRISAF</strong>. Usiamo queste denominazioni per indicare gli apparecchi originali usati che vendiamo. I prospetti collegati sono i documenti originali dei costruttori, non modificati, consegnati insieme all’apparecchio.</p>"
       ],
       [
         "Diritto d’autore sui nostri contenuti",
@@ -1408,6 +1418,11 @@
     "nav_about": "Chi siamo",
     "about_role": "Titolare",
     "redirect_title": "Pagina spostata",
-    "redirect_text": "Questa pagina è stata spostata. Continua verso:"
+    "redirect_text": "Questa pagina è stata spostata. Continua verso:",
+    "prod_intro_occ_tpl": "{name} di {marke}, usata. La macchina si trova nell’officina di Herisau, viene controllata prima della consegna e venduta nello stato presentato. Visione su appuntamento.",
+    "cat_title_occ": "{cat} · macchine usate in Svizzera | VES-TECH Swiss",
+    "cat_desc_occ": "Macchine usate da VES-TECH Swiss: {n} macchine, {subs}. Controllate nell’officina di Herisau AR, con documentazione originale. Prezzo su richiesta.",
+    "sub_title_occ": "{sub} usato · {n} macchine d’occasione | VES-TECH Swiss",
+    "sub_desc_occ": "{sub} usato: {n} macchine da VES-TECH Swiss. Dati tecnici, prospetto originale e visione su appuntamento. Prezzo su richiesta."
   }
 }

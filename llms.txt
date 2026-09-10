@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 77 Geräte, alle zum Preis auf Anfrage.
+> MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
 
 ## Eckdaten
 - Firma: VES-TECH Swiss
@@ -23,6 +23,7 @@
 - [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta Plasmaschneidinverter mit HSC-Technologie, von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
 - [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie. (43 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
+- [Occasion](https://www.ves-tech.ch/produkte/occasion/): Gebrauchte Anlagen aus der eigenen Werkstatt: geprüft, betriebsbereit und mit den Originalunterlagen des Herstellers. (2 Geräte: Mikroplasma)
 
 ## Geräte
 ### Schweissgeräte
@@ -109,6 +110,10 @@
 - [MAHE Drahtvorschubrollen](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/): Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Drahtvorschubrollen HyperMIG X](https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/): Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium. (Vorschubrolle)
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
+
+### Occasion
+- [MAHE PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. (Mikroplasma)
+- [MAHE PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten – Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
 
 ## Verfahren
 - MIS: Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.

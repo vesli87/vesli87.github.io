@@ -178,8 +178,8 @@ def products_json():
         out.append({
             "id": p["id"],
             "sku": p["id"].upper(),
-            "name": f"{C.BRAND} {p['name']}",
-            "brand": C.BRAND,
+            "name": f"{C.pBrand(p)} {p['name']}",
+            "brand": C.pBrand(p),
             "type": {l: C.vtT(l, p["vt"]) for l in C.LANGS},
             "category": {l: C.catT(l, cat) for l in C.LANGS},
             "subcategory": {l: C.subT(l, p["sub"]) for l in C.LANGS},
@@ -467,7 +467,7 @@ def llms_txt():
     for c in C.CATS:
         lines.append(f"### {C.catT(L,c)}")
         for p in C.products_of(c["id"]):
-            lines.append(f"- [{C.BRAND} {p['name']}]({C.abs_url(C.u_prod(L, p))}): "
+            lines.append(f"- [{C.pBrand(p)} {p['name']}]({C.abs_url(C.u_prod(L, p))}): "
                          f"{C.pDesc(L,p)} ({C.vtT(L, p['vt'])})")
         lines.append("")
     lines += ["## Verfahren"]
@@ -502,7 +502,7 @@ def llms_full():
     for c in C.CATS:
         out += [f"## {C.catT(L,c)}", C.catD(L, c), ""]
         for p in C.products_of(c["id"]):
-            out.append(f"### {C.BRAND} {p['name']}")
+            out.append(f"### {C.pBrand(p)} {p['name']}")
             out.append(f"URL: {C.abs_url(C.u_prod(L, p))}")
             out.append(f"Kategorie: {C.catT(L,c)} / {C.subT(L, p['sub'])} · Typ: {C.vtT(L, p['vt'])} "
                        f"· Art.-Nr.: {p['id'].upper()} · Preis: auf Anfrage (CHF)")

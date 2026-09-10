@@ -214,6 +214,30 @@ def fremdmarken():
             for s in c["subs"]:
                 _pruefe(C.u_sub(lang, c["id"], s), marke, f'{c["id"]}/{s}')
 
+    # Die erzeugten Datendateien mitpruefen. Sie sind kein Beiwerk: Antwort-
+    # maschinen lesen products.json und llms.txt direkt, robots.txt verweist
+    # ausdruecklich darauf. Beim ersten Bauen der Rubrik Occasion stand dort
+    # "MAHE PlasmaFix 51" und "brand": "MAHE" - im HTML war da laengst alles
+    # richtig, weil dieser Waechter nur Seiten ansah.
+    fremd = [x for x in C.P if C.pBrand(x) != C.BRAND]
+    if fremd:
+        import json as _json
+        namen = {x["name"] for x in fremd}
+        pj = C.ROOT / "data/products.json"
+        if pj.exists():
+            for eintrag in (_json.loads(pj.read_text("utf-8")).get("products") or []):
+                s = _json.dumps(eintrag, ensure_ascii=False)
+                if any(n in s for n in namen) and C.BRAND in s:
+                    err(f"data/products.json: '{C.BRAND}' bei einem Fremdfabrikat "
+                        f"({eintrag.get('name')})")
+        for datei in ("llms.txt", "llms-full.txt"):
+            f = C.ROOT / datei
+            if not f.exists():
+                continue
+            for zeile in f.read_text("utf-8").splitlines():
+                if any(n in zeile for n in namen) and C.BRAND in zeile:
+                    err(f"{datei}: '{C.BRAND}' bei einem Fremdfabrikat - {zeile.strip()[:70]}")
+
     for p in C.P:
         marke = C.pBrand(p)
         if marke == C.BRAND:

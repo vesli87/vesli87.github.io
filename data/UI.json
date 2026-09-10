@@ -19,7 +19,7 @@
     "hero_cta2": "MAHE Systeme ansehen",
     "prog_eyebrow": "GERÄTEPROGRAMM",
     "prog_h2": "Direkt zum richtigen Verfahren",
-    "prog_sub": "Alle Anlagen von MAHE zum Schweissen, Schneiden, Reinigen und Automatisieren in einer klaren Übersicht, geordnet nach Verfahren, so wie es der Schweisser im Kopf hat – dazu geprüfte Occasionen. Preise auf Anfrage.",
+    "prog_sub": "Alle Anlagen von MAHE zum Schweissen, Schneiden, Reinigen und Automatisieren in einer klaren Übersicht, geordnet nach Verfahren, so wie es der Schweisser im Kopf hat, dazu geprüfte Occasionen. Preise auf Anfrage.",
     "card_open": "Programm öffnen →",
     "devices": "Geräte",
     "trust_h3": "EN 1090 geprüft & dokumentiert",
@@ -136,7 +136,7 @@
     "mail_s_kont": "Kontaktanfrage VES-TECH Swiss",
     "mail_s_item1": "Artikel",
     "tab_fits": "Passt zu",
-    "fits_note": "MAHE führt dieses Teil bei den folgenden Geräten auf. Passt es zu Ihrer Maschine nicht eindeutig, fragen Sie bitte nach — wir prüfen es vor der Lieferung."
+    "fits_note": "MAHE führt dieses Teil bei den folgenden Geräten auf. Passt es zu Ihrer Maschine nicht eindeutig, fragen Sie bitte nach: wir prüfen es vor der Lieferung."
   },
   "fr": {
     "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -158,7 +158,7 @@
     "hero_cta2": "Voir les systèmes MAHE",
     "prog_eyebrow": "GAMME D’APPAREILS",
     "prog_h2": "Directement au bon procédé",
-    "prog_sub": "Tous les systèmes MAHE de soudage, découpe, nettoyage et automation dans une vue claire, classés par procédé, comme le soudeur les a en tête – et des machines d’occasion contrôlées. Prix sur demande.",
+    "prog_sub": "Tous les systèmes MAHE de soudage, découpe, nettoyage et automation dans une vue claire, classés par procédé, comme le soudeur les a en tête, ainsi que des machines d’occasion contrôlées. Prix sur demande.",
     "card_open": "Ouvrir la gamme →",
     "devices": "appareils",
     "trust_h3": "EN 1090 contrôlé & documenté",
@@ -275,7 +275,7 @@
     "mail_s_kont": "Demande de contact VES-TECH Swiss",
     "mail_s_item1": "article",
     "tab_fits": "Compatible avec",
-    "fits_note": "MAHE indique cette pièce pour les appareils suivants. Si la compatibilité avec votre machine n'est pas évidente, demandez-nous — nous la vérifions avant la livraison."
+    "fits_note": "MAHE indique cette pièce pour les appareils suivants. Si la compatibilité avec votre machine n’est pas évidente, demandez-nous : nous la vérifions avant la livraison."
   },
   "it": {
     "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -297,7 +297,7 @@
     "hero_cta2": "Vedi i sistemi MAHE",
     "prog_eyebrow": "GAMMA APPARECCHI",
     "prog_h2": "Direttamente al processo giusto",
-    "prog_sub": "Tutti i sistemi MAHE di saldatura, taglio, pulizia e automazione in una panoramica chiara, ordinati per processo, come li ha in mente il saldatore – e macchine usate controllate. Prezzi su richiesta.",
+    "prog_sub": "Tutti i sistemi MAHE di saldatura, taglio, pulizia e automazione in una panoramica chiara, ordinati per processo, come li ha in mente il saldatore, e in più macchine usate controllate. Prezzi su richiesta.",
     "card_open": "Apri la gamma →",
     "devices": "apparecchi",
     "trust_h3": "EN 1090 controllato & documentato",
@@ -414,6 +414,6 @@
     "mail_s_kont": "Richiesta di contatto VES-TECH Swiss",
     "mail_s_item1": "articolo",
     "tab_fits": "Compatibile con",
-    "fits_note": "MAHE indica questo componente per i seguenti apparecchi. Se la compatibilità con la vostra macchina non è chiara, chiedeteci — la verifichiamo prima della consegna."
+    "fits_note": "MAHE indica questo componente per i seguenti apparecchi. Se la compatibilità con la vostra macchina non è chiara, chiedeteci: la verifichiamo prima della consegna."
   }
 }

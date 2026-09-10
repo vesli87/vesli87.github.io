@@ -113,7 +113,7 @@
 
 ### Occasion
 - [Oerlikon PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. (Mikroplasma)
-- [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten – Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
+- [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
 
 ## Verfahren
 - MIS: Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.

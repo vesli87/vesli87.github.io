@@ -68,7 +68,7 @@ SYNONYMS = {
     # Werkstoffe
     "alu": ["aluminium", "alu"],
     "aluminium": ["alu"],
-    "inox": ["chromstahl", "edelstahl", "vа", "va", "rostfrei", "v2a", "v4a"],
+    "inox": ["chromstahl", "edelstahl", "va", "rostfrei", "v2a", "v4a"],
     "chromstahl": ["inox", "edelstahl"],
     "edelstahl": ["inox", "chromstahl"],
     "stahl": ["baustahl", "eisen"],
@@ -108,7 +108,34 @@ def norm(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+def _synonyme_pruefen(syn):
+    """Ein Tippfehler in der Synonymtabelle vergiftet die ganze Suche.
+
+    In der Zeile fuer "inox" stand "vа" - das a war ein kyrillisches U+0430.
+    norm() wirft alles ausserhalb [a-z0-9] weg, uebrig blieb das Synonym "v".
+    Damit galt jedes Geraet mit einem "V" im Namen als Edelstahl-Treffer: die
+    Suche nach "inox" lieferte 52 von 79 Geraeten, und ganz oben standen
+    Verschleissteilkisten und die Brenner MT260 V und MT170 V. Gerade "inox"
+    ist das Wort, das ein franzoesischer oder italienischer Kunde eingibt.
+
+    Zwei Regeln fangen das ab: kein Synonym darf nach der Normalisierung
+    kuerzer als zwei Zeichen sein, und keine Quellzeichenkette darf Zeichen
+    ausserhalb des lateinischen Schriftsystems tragen.
+    """
+    erlaubt = set("abcdefghijklmnopqrstuvwxyz0123456789 -/.äöüßàâéèêîïôùûçœ")
+    for wort, liste in syn.items():
+        for eintrag in [wort] + list(liste):
+            fremd = {c for c in eintrag.lower() if c not in erlaubt}
+            if fremd:
+                sys.exit(f"Synonym {eintrag!r}: fremde Zeichen "
+                         f"{sorted((c, hex(ord(c))) for c in fremd)} - Tippfehler?")
+            if len(norm(eintrag)) < 2:
+                sys.exit(f"Synonym {eintrag!r} normalisiert zu {norm(eintrag)!r} - "
+                         f"zu kurz, das wuerde die Suche fluten.")
+
+
 def search_index(lang):
+    _synonyme_pruefen(SYNONYMS)
     prods = []
     for p in C.P:
         cat = C.CAT_BY_ID[p["cat"]]

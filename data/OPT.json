@@ -1,7 +1,7 @@
 {
  "_kommentar": "Optionen und Zusatzleistungen je Geraet, woertlich aus der MAHE-Preisliste. Nie mit Preisen. Je Eintrag: t = Bezeichnung, s = Zusatz (darf fehlen).",
  "mpt-3001": {
-  "src": "MAHE Preisliste 2026 V11, S. 67 – Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
+  "src": "MAHE Preisliste 2026 V11, S. 67, Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
   "de": [
    {
     "t": "Filteranlage AT 1000",
@@ -70,7 +70,7 @@
   ]
  },
  "mpt-2501": {
-  "src": "MAHE Preisliste 2026 V11, S. 67 – Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
+  "src": "MAHE Preisliste 2026 V11, S. 67, Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
   "de": [
    {
     "t": "Filteranlage AT 1000",

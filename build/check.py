@@ -19,6 +19,7 @@ Exit-Code 1, sobald ein Fehler auftritt (Warnungen brechen nicht ab).
 """
 
 import collections
+import html
 import json
 import pathlib
 import re
@@ -166,6 +167,33 @@ def referenzen():
         g = r.get("geraet")
         if g and g not in C.BY_ID:
             err(f"{wo}: Referenz nennt unbekanntes Geraet {g!r}")
+
+
+def gedankenstriche():
+    """Regel 3a: kein Gedankenstrich im sichtbaren Text.
+
+    Der Inhaber hat sie am 03.09.2026 entschieden und dafuer sogar das
+    Herobild retuschieren lassen. Trotzdem standen am 10.09.2026 wieder 144
+    Gedankenstriche auf 129 der 377 Seiten - allein der Hinweis "Passt zu"
+    brachte drei davon auf je 37 Seiten. Eine Regel, die niemand nachmisst,
+    haelt keine zwei Wochen.
+
+    Erlaubt bleibt der Bis-Strich zwischen Messwerten, Zeiten und Verweisen
+    ("10 - 420 A", "Mo-Do", "Ziff. 2-4 UWG") - dort ist der Strich kein
+    Satzzeichen, sondern Teil der Angabe.
+    """
+    ged = re.compile(r"(?<=\S)\s[\u2013\u2014]\s(?=\S)")
+    bis = re.compile(r"\d\s*[\u2013\u2014]\s*\d"
+                     r"|\d\s*(?:Hz|kHz|A|V|W|mm|kg|mm\u00b2|\u00b0C)\s*[\u2013\u2014]\s*\d")
+    for f in all_pages():
+        roh = f.read_text("utf-8")
+        ohne = re.sub(r"<(script|style|noscript)[^>]*>.*?</\1>", " ", roh, flags=re.S)
+        text = html.unescape(re.sub(r"<[^>]+>", " ", ohne))
+        for m in ged.finditer(bis.sub(" ", text)):
+            i = m.start()
+            stelle = " ".join(text[max(0, i - 40):i + 40].split())
+            err(f"{path_of(f)}: Gedankenstrich im sichtbaren Text (Regel 3a) - "
+                f"…{stelle}…")
 
 
 def bildverweise():
@@ -369,6 +397,7 @@ def main():
     referenzen()
     fremdmarken()
     bildverweise()
+    gedankenstriche()
     reihenfolge()
 
     titles, descs = collections.Counter(), collections.Counter()

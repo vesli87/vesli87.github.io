@@ -454,7 +454,14 @@ def hero_band(lang):
             f'aria-label="{e(C.t(lang,"site_name"))}">'
             f'{hero_folien(lang)}'
             f'<div class="hero-dots" role="tablist" '
-            f'aria-label="{e(C.t(lang,"gal_label"))}">{punkte}</div></section>')
+            f'aria-label="{e(C.t(lang,"gal_label"))}">{punkte}</div>'
+            # WCAG 2.2.2: Inhalt, der sich von selbst bewegt und laenger als
+            # fuenf Sekunden laeuft, braucht eine Moeglichkeit zum Anhalten.
+            # Die Punkte schalten nur um, sie halten nicht an.
+            f'<button class="hpause" type="button" data-hpause '
+            f'aria-label="{e(C.t(lang,"slide_pause"))}">'
+            f'<span aria-hidden="true">❙❙</span></button>'
+            f'</section>')
 
 
 def page_home(lang):

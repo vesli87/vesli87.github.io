@@ -349,7 +349,7 @@
     if (slides.length < 2) return;
 
     var ruhig = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    var i = 0, timer = null, INTERVALL = 5000;
+    var i = 0, timer = null, INTERVALL = 5000, angehalten = false;
 
     function zeige(n) {
       i = (n + slides.length) % slides.length;
@@ -362,7 +362,7 @@
       if (img && img.getAttribute('loading') === 'lazy') img.removeAttribute('loading');
     }
     function start() {
-      if (ruhig || timer || document.hidden) return;
+      if (ruhig || timer || document.hidden || angehalten) return;
       timer = setInterval(function () { zeige(i + 1); }, INTERVALL);
     }
     function stopp() { clearInterval(timer); timer = null; }
@@ -377,7 +377,27 @@
        stand dann still und wechselte nie. Pausiert wird nur, wo jemand gezielt
        bedient: Tastaturfokus. */
     hero.addEventListener('focusin', stopp);
-    hero.addEventListener('focusout', start);
+    hero.addEventListener('focusout', function () { if (!angehalten) start(); });
+
+    /* WCAG 2.2.2: was sich von selbst bewegt und laenger als fuenf Sekunden
+       laeuft, muss sich anhalten lassen. Die Punkte schalten nur um. Der
+       Knopf merkt sich den Wunsch: einmal angehalten, startet auch der
+       Fokuswechsel das Karussell nicht wieder. */
+    var pauseKnopf = hero.querySelector('[data-hpause]');
+    if (pauseKnopf) {
+      var beschriftung = {
+        pause: pauseKnopf.getAttribute('aria-label'),
+        weiter: T.slide_play || pauseKnopf.getAttribute('aria-label')
+      };
+      pauseKnopf.addEventListener('click', function () {
+        angehalten = !angehalten;
+        if (angehalten) { stopp(); } else { start(); }
+        pauseKnopf.setAttribute('aria-pressed', angehalten ? 'true' : 'false');
+        pauseKnopf.setAttribute('aria-label', angehalten ? beschriftung.weiter : beschriftung.pause);
+        pauseKnopf.firstElementChild.textContent = angehalten ? '\u25B6' : '\u2759\u2759';
+      });
+      pauseKnopf.setAttribute('aria-pressed', 'false');
+    }
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) { stopp(); } else { start(); }
     });

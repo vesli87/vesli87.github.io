@@ -899,6 +899,7 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
            "search_group_dl", "search_min_chars", "form_sending", "form_success",
            "form_error", "form_required", "form_invalid_mail", "search_popular",
            "lupe_open", "lupe_close", "lupe_in", "lupe_out",
+           "slide_pause", "slide_play",
              "mail_h", "mail_p", "mail_copy", "mail_open", "mail_copied",
              "mail_copy_manual",
              # Bausteine der Anfrage-Mail. Ohne sie schrieb app.js den Text

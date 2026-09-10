@@ -123,10 +123,6 @@
   "fr": "Longueurs",
   "it": "Lunghezze"
  },
- "Maße (LxBxH)": {
-  "fr": "Dimensions (LxlxH)",
-  "it": "Dimensioni (LxPxA)"
- },
  "Medium": {
   "fr": "Fluide",
   "it": "Fluido"
@@ -306,5 +302,9 @@
  "Schweissstrom WIG": {
   "fr": "Courant de soudage TIG",
   "it": "Corrente di saldatura TIG"
+ },
+ "Masse (LxBxH)": {
+  "fr": "Dimensions (LxlxH)",
+  "it": "Dimensioni (LxPxA)"
  }
 }

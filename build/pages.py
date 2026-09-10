@@ -158,7 +158,7 @@ def front_html(lang, p):
             if fp.get("img"):
                 media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",
                                   cls="fp-photo zoomable",
-                                  alt=f"{C.pBrand(p)} {fp['n']}", width=340)
+                                  alt=f"{C.pBrand(p)} {C.fpName(lang, fp)}", width=340)
             else:
                 media = PANEL_DRAWN["big" if fp.get("big") else "small"]
             bes = ""
@@ -170,7 +170,7 @@ def front_html(lang, p):
                        + "</ul></div>")
             out.append(
                 f'<div class="fp{"" if ph else " fp-solo"}">'
-                f'<{h_panel} class="fp-title">{e(fp["n"])}</{h_panel}>'
+                f'<{h_panel} class="fp-title">{e(C.fpName(lang, fp))}</{h_panel}>'
                 f'<div class="fp-body"><div class="fp-panel">{media}</div>'
                 f"{bes}</div></div>"
             )
@@ -413,9 +413,10 @@ def hero_folien(lang):
         # werden: unter visibility:hidden wuerde loading="lazy" gar nichts tun.
         prio = ('fetchpriority="high"' if k == 0
                 else 'loading="eager" fetchpriority="low"')
-        alt_txt = (f"{C.BRAND} HyperMIG SX: Schweissanlagen bei {C.t(lang,'site_name')}"
-                   if name == "hero"
-                   else f"{C.BRAND} MPT: CNC-Plasmaschneidtisch mit Bedienkonsole")
+        # Der Alt-Text stand in allen drei Sprachfassungen auf Deutsch. Er ist
+        # das, was ein Screenreader vorliest und was in der Bildersuche zaehlt.
+        alt_txt = C.t(lang, "hero_alt" if name == "hero" else "hero2_alt",
+                      marke=C.BRAND, site=C.t(lang, "site_name"))
         txt = ""
         if name == "hero-mpt":
             txt = (f'<div class="hero-txt">'
@@ -706,7 +707,7 @@ def page_product(lang, p):
           <span class="val">{e(p['id'].upper())}</span></div>
       </div>
       <div class="poa-box"><span class="p">{e(C.t(lang,'poa'))}</span>
-        <span class="s">{e(C.t(lang,'poa_sub'))}</span></div>
+        <span class="s">{e(C.t(lang, 'poa_sub_occ' if p["cat"] == "occasion" else 'poa_sub'))}</span></div>
       <div class="dactions">
         <button class="btn pri" type="button" data-add="{e(p['id'])}" data-name="{e(nm)}"
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
@@ -806,11 +807,11 @@ def page_contact(lang):
     <div class="korte">
       <div>
         <span class="kot">{e(C.t(lang,'addr_bill'))}</span>
-        <address>{e(co['street'])}<br>{co['zip']} {e(co['city'])}<br>{e(co['country_name'])}</address>
+        <address>{e(co['street'])}<br>{co['zip']} {e(co['city'])}<br>{e(C.land(lang))}</address>
       </div>
       <div>
         <span class="kot">{e(C.t(lang,'addr_shop'))}</span>
-        <address>{e(ws['street'])}<br>{ws['zip']} {e(ws['city'])}<br>{e(ws['country_name'])}</address>
+        <address>{e(ws['street'])}<br>{ws['zip']} {e(ws['city'])}<br>{e(C.land(lang))}</address>
         <p class="kohint">{e(C.t(lang,'addr_shop_note'))}
           <a href="{ws['partner_url']}" rel="noopener" target="_blank">{e(ws['partner'])}</a><br>
           {e(C.t(lang,'addr_shop_hint'))}</p>
@@ -1005,7 +1006,7 @@ def page_about(lang):
     werte = dict(
         owner=C.COMPANY["owner"], street=C.COMPANY["street"], zip=C.COMPANY["zip"],
         city=C.COMPANY["city"], region_name=C.COMPANY["region_name"],
-        hours=C.COMPANY["hours"], partner=C.WORKSHOP["partner"],
+        hours=C.zeiten(lang), partner=C.WORKSHOP["partner"],
         ws_street=C.WORKSHOP["street"], ws_zip=C.WORKSHOP["zip"],
         ws_city=C.WORKSHOP["city"], ws_region_name=C.WORKSHOP["region_name"],
         url_kalib=C.u_service(lang, "calib"),

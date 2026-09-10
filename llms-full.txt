@@ -850,25 +850,25 @@ Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattaus
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt30/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT30 · Preis: auf Anfrage (CHF)
 Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte.
-Ausstattung: Für: i-TIG, Beta, Omega, MMS; Maße (LxBxH): 625×600×1050 mm; Gewicht: 22 kg; Gasflasche: ja.
+Ausstattung: Für: i-TIG, Beta, Omega, MMS; Masse (LxBxH): 625×600×1050 mm; Gewicht: 22 kg; Gasflasche: ja.
 
 ### MAHE STT 35
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt35/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: STT35 · Preis: auf Anfrage (CHF)
 Fahrwagen ohne Gasflaschenhalter für MMA und Plasma.
-Ausstattung: Für: Delta, Delta Digital, Theta; Maße (LxBxH): 700×600×1050 mm; Gewicht: 21 kg; Gasflasche: nein.
+Ausstattung: Für: Delta, Delta Digital, Theta; Masse (LxBxH): 700×600×1050 mm; Gewicht: 21 kg; Gasflasche: nein.
 
 ### MAHE MPF 02
 URL: https://www.ves-tech.ch/produkte/zubehoer/mpf02/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: MPF02 · Preis: auf Anfrage (CHF)
 Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.
-Ausstattung: Für: Delta, i-TIG, Beta, Omega, MMS, Theta; Maße (LxBxH): 840×450×710 mm; Gewicht: 21 kg; Gasflasche: ja.
+Ausstattung: Für: Delta, i-TIG, Beta, Omega, MMS, Theta; Masse (LxBxH): 840×450×710 mm; Gewicht: 21 kg; Gasflasche: ja.
 
 ### MAHE MHCT 01
 URL: https://www.ves-tech.ch/produkte/zubehoer/mhct01/
 Kategorie: Zubehör / Fahrwagen · Typ: Fahrwagen · Art.-Nr.: MHCT01 · Preis: auf Anfrage (CHF)
 Fahrwagen speziell für Reinigungsgeräte.
-Ausstattung: Für: HyperCleaner; Maße (LxBxH): 380×415×700 mm; Gewicht: 16 kg.
+Ausstattung: Für: HyperCleaner; Masse (LxBxH): 380×415×700 mm; Gewicht: 16 kg.
 
 ### MAHE WK 200
 URL: https://www.ves-tech.ch/produkte/zubehoer/wk200/

@@ -412,7 +412,7 @@ def ld_org(lang=C.DEFAULT_LANG):
         # Herisau. Als Oeffnungszeiten am LocalBusiness ausgegeben, wuerden sie
         # mit dem Google-Unternehmensprofil kollidieren, sobald dort andere
         # Zeiten stehen. Sie gehoeren an den ContactPoint - da stimmen sie.
-        "areaServed": [{"@type": "Country", "name": "Schweiz"},
+        "areaServed": [{"@type": "Country", "name": C.land(lang)},
                        {"@type": "Country", "name": "Liechtenstein"}],
         # Sprachen, in denen beraten wird - nicht zu verwechseln mit den
         # Sprachen der Website (die stehen als inLanguage am WebSite-Knoten).
@@ -425,12 +425,8 @@ def ld_org(lang=C.DEFAULT_LANG):
         **({"sameAs": C.SAMEAS} if C.SAMEAS else {}),
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
         "founder": {"@type": "Person", "name": co["owner"]},
-        "slogan": C.t("de", "brand_claim"),
-        "knowsAbout": [
-            "MIG/MAG-Schweissen", "WIG/TIG-Schweissen", "MMA-Elektrodenschweissen",
-            "Plasmaschneiden", "Elektrolytische Schweissnahtreinigung",
-            "Schweissautomation", "EN 1090", "MAHE Schweissgeräte",
-        ],
+        "slogan": C.t(lang, "brand_claim"),
+        "knowsAbout": C.kannAbout(lang),
         "contactPoint": [{
             "@type": "ContactPoint",
             "contactType": "sales",

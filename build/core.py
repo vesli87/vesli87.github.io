@@ -199,6 +199,70 @@ def istMahe(p):
     return p.get("brand", BRAND) == BRAND
 
 
+# Sprachfassungen von Angaben, die in COMPANY/WORKSHOP nur auf Deutsch stehen.
+#
+# Bis zum 10.09.2026 stand auf der franzoesischen und der italienischen
+# Kontaktseite als Land "Schweiz" und auf "Ueber uns" die Zeit "Mo-Do
+# 07:30-17:00 · Fr 07:30-11:30" - deutsche Wochentagskuerzel mitten im
+# franzoesischen Satz. Im Italienischen ist "Fr" ausserdem missverstaendlich:
+# es liest sich als Abkuerzung fuer Franken, nicht fuer Freitag.
+LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera"}
+ZEITEN = {
+    "de": "Mo-Do 07:30-17:00 · Fr 07:30-11:30",
+    "fr": "lu-je 07:30-17:00 · ve 07:30-11:30",
+    "it": "lu-gio 07:30-17:00 · ven 07:30-11:30",
+}
+
+
+# Fachgebiete fuer knowsAbout im JSON-LD. Standen bis zum 10.09.2026 auch auf
+# den 240 franzoesischen und italienischen Seiten auf Deutsch - eine Maschine
+# liest daraus, die Firma koenne "MIG/MAG-Schweissen", nicht "soudage MIG/MAG".
+KANN = {
+    "de": ["MIG/MAG-Schweissen", "WIG/TIG-Schweissen", "MMA-Elektrodenschweissen",
+           "Plasmaschneiden", "Elektrolytische Schweissnahtreinigung",
+           "Schweissautomation", "EN 1090", "MAHE Schweissgeräte"],
+    "fr": ["Soudage MIG/MAG", "Soudage TIG", "Soudage à l’électrode enrobée",
+           "Découpe plasma", "Nettoyage électrolytique des cordons",
+           "Automation de soudage", "EN 1090", "Postes de soudage MAHE"],
+    "it": ["Saldatura MIG/MAG", "Saldatura TIG", "Saldatura a elettrodo",
+           "Taglio al plasma", "Pulizia elettrolitica dei cordoni",
+           "Automazione di saldatura", "EN 1090", "Saldatrici MAHE"],
+}
+
+
+def kannAbout(lang):
+    return KANN.get(lang, KANN["de"])
+
+
+def land(lang):
+    return LAND.get(lang, LAND["de"])
+
+
+def zeiten(lang):
+    return ZEITEN.get(lang, ZEITEN["de"])
+
+
+# Panelnamen: das Modell bleibt, uebersetzt wird nur das Gattungswort.
+# "EX: EcoPuls Front Panel" heisst beim Hersteller so und bleibt; aber
+# "Bedienpanel" ist unser eigenes Wort und stand auf 40 FR- und IT-Seiten.
+PANELWORT = {"fr": "panneau de commande", "it": "pannello di comando"}
+
+
+def fpName(lang, fp):
+    n = fp["n"]
+    wort = PANELWORT.get(lang)
+    if not wort or "Bedienpanel" not in n:
+        return n
+    if n.endswith(": Bedienpanel"):
+        modell = n[: -len(": Bedienpanel")]
+        trenner = " : " if lang == "fr" else ": "
+        return f"{modell}{trenner}{wort}"
+    if n.endswith("-Bedienpanel"):
+        modell = n[: -len("-Bedienpanel")]
+        return f"{wort[0].upper()}{wort[1:]} {modell}"
+    return n.replace("Bedienpanel", wort)
+
+
 def markeMitPraeposition(lang, p):
     """„von MAHE", „d’Oerlikon", „di Oerlikon" - die Praeposition mitgeliefert.
 

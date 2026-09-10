@@ -524,7 +524,7 @@
   "desc": "Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte.",
   "specs": {
    "Für": "i-TIG, Beta, Omega, MMS",
-   "Maße (LxBxH)": "625×600×1050 mm",
+   "Masse (LxBxH)": "625×600×1050 mm",
    "Gewicht": "22 kg",
    "Gasflasche": "ja"
   }
@@ -539,7 +539,7 @@
   "desc": "Fahrwagen ohne Gasflaschenhalter für MMA und Plasma.",
   "specs": {
    "Für": "Delta, Delta Digital, Theta",
-   "Maße (LxBxH)": "700×600×1050 mm",
+   "Masse (LxBxH)": "700×600×1050 mm",
    "Gewicht": "21 kg",
    "Gasflasche": "nein"
   }
@@ -554,7 +554,7 @@
   "desc": "Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte.",
   "specs": {
    "Für": "Delta, i-TIG, Beta, Omega, MMS, Theta",
-   "Maße (LxBxH)": "840×450×710 mm",
+   "Masse (LxBxH)": "840×450×710 mm",
    "Gewicht": "21 kg",
    "Gasflasche": "ja"
   }
@@ -569,7 +569,7 @@
   "desc": "Fahrwagen speziell für Reinigungsgeräte.",
   "specs": {
    "Für": "HyperCleaner",
-   "Maße (LxBxH)": "380×415×700 mm",
+   "Masse (LxBxH)": "380×415×700 mm",
    "Gewicht": "16 kg"
   }
  },

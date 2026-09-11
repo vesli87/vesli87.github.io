@@ -517,6 +517,10 @@ def ld_product(lang, p):
         "manufacturer": {"@type": "Organization", "name": C.pHersteller(p),
                          **({"url": C.pBrandUrl(p)} if C.pBrandUrl(p) else {})},
         "category": f"{C.catT(lang, cat)} > {C.subT(lang, p['sub'])}",
+        # Der Zustand gehoert an das Produkt, nicht in einen offers-Knoten -
+        # den gibt es hier bewusst nicht. schema.org erlaubt itemCondition an
+        # Product, Offer, Demand und MerchantReturnPolicy.
+        **({"itemCondition": C.zustandLD(p)} if C.zustandLD(p) else {}),
         # Kein inLanguage. schema.org fuehrt die Eigenschaft nur auf
         # CreativeWork, Event, BroadcastService, LinkRole, PronounceableText,
         # CommunicateAction und WriteAction; Product erbt allein von Thing und

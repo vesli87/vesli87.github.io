@@ -1,7 +1,7 @@
 {
  "/": {
-  "d": "2026-09-10",
-  "h": "d828ce6b9eaf46b7"
+  "d": "2026-09-11",
+  "h": "c400e62cf594ab7b"
  },
  "/downloads/": {
   "d": "2026-09-10",
@@ -12,8 +12,8 @@
   "h": "0ad3e891b02ee6d3"
  },
  "/fr/": {
-  "d": "2026-09-10",
-  "h": "442abc9ee0a519b7"
+  "d": "2026-09-11",
+  "h": "82502300efd1912a"
  },
  "/fr/a-propos/": {
   "d": "2026-09-10",
@@ -52,28 +52,28 @@
   "h": "881b712ec2963182"
  },
  "/fr/produits/accessoires/drahtvorschubrollen-hyper/": {
-  "d": "2026-09-10",
-  "h": "354d20c675fc259a"
+  "d": "2026-09-11",
+  "h": "48a23ec0888d5753"
  },
  "/fr/produits/accessoires/drahtvorschubrollen/": {
-  "d": "2026-09-10",
-  "h": "2d0a8f5c078d2024"
+  "d": "2026-09-11",
+  "h": "e3da0ceac72af698"
  },
  "/fr/produits/accessoires/dvl420/": {
-  "d": "2026-09-10",
-  "h": "0b74a3805a305e2d"
+  "d": "2026-09-11",
+  "h": "d70a2b72f01db7f9"
  },
  "/fr/produits/accessoires/dvs410/": {
-  "d": "2026-09-10",
-  "h": "cc63425fdc08f405"
+  "d": "2026-09-11",
+  "h": "b3c6b7bae6f7938d"
  },
  "/fr/produits/accessoires/elektrodenkabel-4m/": {
-  "d": "2026-09-10",
-  "h": "3d3a1810b19a6464"
+  "d": "2026-09-11",
+  "h": "467a94a6a40ab0ae"
  },
  "/fr/produits/accessoires/elektrodenkabel/": {
-  "d": "2026-09-10",
-  "h": "7b693dbdd9fe2986"
+  "d": "2026-09-11",
+  "h": "e84f87e6f50ea425"
  },
  "/fr/produits/accessoires/equipement-atelier/": {
   "d": "2026-09-10",
@@ -84,124 +84,124 @@
   "h": "7a020d97c0101b70"
  },
  "/fr/produits/accessoires/frc5/": {
-  "d": "2026-09-10",
-  "h": "cd0932d8c1949b1d"
+  "d": "2026-09-11",
+  "h": "3ae9acffa5ea2f7f"
  },
  "/fr/produits/accessoires/massekabel-25/": {
-  "d": "2026-09-10",
-  "h": "f27dc70dc9d7372d"
+  "d": "2026-09-11",
+  "h": "3e1a9df6eeb7d9c2"
  },
  "/fr/produits/accessoires/massekabel-4m/": {
-  "d": "2026-09-10",
-  "h": "a89c76ed58b91aa7"
+  "d": "2026-09-11",
+  "h": "6e4a48d007838302"
  },
  "/fr/produits/accessoires/massekabel/": {
-  "d": "2026-09-10",
-  "h": "742b4a26a3559ae4"
+  "d": "2026-09-11",
+  "h": "b0dfa964d31385ed"
  },
  "/fr/produits/accessoires/mcu1/": {
-  "d": "2026-09-10",
-  "h": "ad77a75988ab2aa0"
+  "d": "2026-09-11",
+  "h": "0c6f6f0ab105d913"
  },
  "/fr/produits/accessoires/mf155/": {
-  "d": "2026-09-10",
-  "h": "f5a5c6a2f64ae728"
+  "d": "2026-09-11",
+  "h": "b7127cd3e1f1fb2b"
  },
  "/fr/produits/accessoires/mf240w/": {
-  "d": "2026-09-10",
-  "h": "ec170a20ead46c00"
+  "d": "2026-09-11",
+  "h": "44d22a3667ff0db3"
  },
  "/fr/produits/accessoires/mf250/": {
-  "d": "2026-09-10",
-  "h": "b69b355362fe5ebf"
+  "d": "2026-09-11",
+  "h": "61839849fc83e481"
  },
  "/fr/produits/accessoires/mf405w/": {
-  "d": "2026-09-10",
-  "h": "cd458ecaac91614f"
+  "d": "2026-09-11",
+  "h": "164bff0b650b3199"
  },
  "/fr/produits/accessoires/mhct01/": {
-  "d": "2026-09-10",
-  "h": "98e2803d1c7a8565"
+  "d": "2026-09-11",
+  "h": "9478b37f045a57a2"
  },
  "/fr/produits/accessoires/mpf02/": {
-  "d": "2026-09-10",
-  "h": "ca7c3767306d8cad"
+  "d": "2026-09-11",
+  "h": "877e250d0f8fcabc"
  },
  "/fr/produits/accessoires/mt170/": {
-  "d": "2026-09-10",
-  "h": "9bba5da1401499f9"
+  "d": "2026-09-11",
+  "h": "05d47ca4d04e66e5"
  },
  "/fr/produits/accessoires/mt170v/": {
-  "d": "2026-09-10",
-  "h": "7726f381d26e7517"
+  "d": "2026-09-11",
+  "h": "ba0a5891aa78a634"
  },
  "/fr/produits/accessoires/mt180w/": {
-  "d": "2026-09-10",
-  "h": "561a73d1e40aec98"
+  "d": "2026-09-11",
+  "h": "88a257daa48b1b73"
  },
  "/fr/produits/accessoires/mt200w/": {
-  "d": "2026-09-10",
-  "h": "1d3943c34afef937"
+  "d": "2026-09-11",
+  "h": "cdc2fe468d1cecee"
  },
  "/fr/produits/accessoires/mt260/": {
-  "d": "2026-09-10",
-  "h": "549698c27cfecf8d"
+  "d": "2026-09-11",
+  "h": "09141fa57b2bf516"
  },
  "/fr/produits/accessoires/mt260v/": {
-  "d": "2026-09-10",
-  "h": "8d973f111bb9c532"
+  "d": "2026-09-11",
+  "h": "da944dc3c387e7e9"
  },
  "/fr/produits/accessoires/pieces-dusure/": {
   "d": "2026-09-10",
   "h": "bd895f54ab860112"
  },
  "/fr/produits/accessoires/psab125/": {
-  "d": "2026-09-10",
-  "h": "b89f2104c0daba8f"
+  "d": "2026-09-11",
+  "h": "2c75ad384e4bf799"
  },
  "/fr/produits/accessoires/psab65/": {
-  "d": "2026-09-10",
-  "h": "bbe8414cf89c1e96"
+  "d": "2026-09-11",
+  "h": "5bfe8b46bc2a791d"
  },
  "/fr/produits/accessoires/pshb125/": {
-  "d": "2026-09-10",
-  "h": "b6b8bb5a5c0246bf"
+  "d": "2026-09-11",
+  "h": "47d36623dc4646f2"
  },
  "/fr/produits/accessoires/pshb160/": {
-  "d": "2026-09-10",
-  "h": "19e7802301bda590"
+  "d": "2026-09-11",
+  "h": "65d7ace0eb3911f7"
  },
  "/fr/produits/accessoires/pshb65/": {
-  "d": "2026-09-10",
-  "h": "f28e853e5dc1c74d"
+  "d": "2026-09-11",
+  "h": "e4dcd43ff252adaa"
  },
  "/fr/produits/accessoires/rc100/": {
-  "d": "2026-09-10",
-  "h": "bc99460b1b986e76"
+  "d": "2026-09-11",
+  "h": "62386f7b551ae297"
  },
  "/fr/produits/accessoires/rc100ds/": {
-  "d": "2026-09-10",
-  "h": "1cfd2666ec8ab1d0"
+  "d": "2026-09-11",
+  "h": "989170d2ce5f7663"
  },
  "/fr/produits/accessoires/rc15/": {
-  "d": "2026-09-10",
-  "h": "127daba32dcaee4d"
+  "d": "2026-09-11",
+  "h": "9a7e378e52d189ad"
  },
  "/fr/produits/accessoires/rc5/": {
-  "d": "2026-09-10",
-  "h": "329d6c8afdf6357d"
+  "d": "2026-09-11",
+  "h": "bf81ecea98b1a115"
  },
  "/fr/produits/accessoires/refroidissement/": {
   "d": "2026-09-10",
   "h": "9e33f42ee2eb5d2c"
  },
  "/fr/produits/accessoires/stt30/": {
-  "d": "2026-09-10",
-  "h": "a931de88e58df240"
+  "d": "2026-09-11",
+  "h": "a014599351bb2a94"
  },
  "/fr/produits/accessoires/stt35/": {
-  "d": "2026-09-10",
-  "h": "6bfd5e8afc451129"
+  "d": "2026-09-11",
+  "h": "a9288e7acd068cbf"
  },
  "/fr/produits/accessoires/telecommandes/": {
   "d": "2026-09-10",
@@ -216,80 +216,80 @@
   "h": "81f10d34864c79ca"
  },
  "/fr/produits/accessoires/usb2in1/": {
-  "d": "2026-09-10",
-  "h": "7bf6bd13d9c7833d"
+  "d": "2026-09-11",
+  "h": "c19743f23e52ff18"
  },
  "/fr/produits/accessoires/vtbox-pshb125/": {
-  "d": "2026-09-10",
-  "h": "059b671fa83efb51"
+  "d": "2026-09-11",
+  "h": "ff32ef12cb5810ff"
  },
  "/fr/produits/accessoires/vtbox-pshb160/": {
-  "d": "2026-09-10",
-  "h": "1605b0a5258bfc6e"
+  "d": "2026-09-11",
+  "h": "137d129503bb807f"
  },
  "/fr/produits/accessoires/vtbox-pshb65/": {
-  "d": "2026-09-10",
-  "h": "3302638692dc38d1"
+  "d": "2026-09-11",
+  "h": "099e605387a08dc2"
  },
  "/fr/produits/accessoires/vtbox-s25/": {
-  "d": "2026-09-10",
-  "h": "ffae0a3b25b7adf7"
+  "d": "2026-09-11",
+  "h": "9ec17ddae616f76e"
  },
  "/fr/produits/accessoires/wk200/": {
-  "d": "2026-09-10",
-  "h": "6ed096fc5a44f0fd"
+  "d": "2026-09-11",
+  "h": "bc840bd98278b740"
  },
  "/fr/produits/accessoires/wk300/": {
-  "d": "2026-09-10",
-  "h": "88f06551126a0750"
+  "d": "2026-09-11",
+  "h": "3d4e21b03f08bc44"
  },
  "/fr/produits/accessoires/wk350/": {
-  "d": "2026-09-10",
-  "h": "5be90383b0f03c1e"
+  "d": "2026-09-11",
+  "h": "a5698ee5af7e4d07"
  },
  "/fr/produits/accessoires/zwischenschlauchpaket/": {
-  "d": "2026-09-10",
-  "h": "262831baffd294bc"
+  "d": "2026-09-11",
+  "h": "45f82014f76237d7"
  },
  "/fr/produits/decoupe-plasma/": {
   "d": "2026-09-10",
   "h": "c13881169354ea4d"
  },
  "/fr/produits/decoupe-plasma/mpt-2501/": {
-  "d": "2026-09-10",
-  "h": "660bbed877476cc6"
+  "d": "2026-09-11",
+  "h": "bb85582a61e281a5"
  },
  "/fr/produits/decoupe-plasma/mpt-3001/": {
-  "d": "2026-09-10",
-  "h": "ebf0b04ebddefa53"
+  "d": "2026-09-11",
+  "h": "bdaa26513835add4"
  },
  "/fr/produits/decoupe-plasma/tables-de-decoupe/": {
   "d": "2026-09-10",
   "h": "0b2ad1561f215e78"
  },
  "/fr/produits/decoupe-plasma/theta-120-aut/": {
-  "d": "2026-09-10",
-  "h": "7750629565fd5fb7"
+  "d": "2026-09-11",
+  "h": "3756c5040a37c3f0"
  },
  "/fr/produits/decoupe-plasma/theta-120/": {
-  "d": "2026-09-10",
-  "h": "fc6e59304639ecf3"
+  "d": "2026-09-11",
+  "h": "fda670b372e25b62"
  },
  "/fr/produits/decoupe-plasma/theta-180/": {
-  "d": "2026-09-10",
-  "h": "eaf5a417d506b76e"
+  "d": "2026-09-11",
+  "h": "2804c1f09a5e6a68"
  },
  "/fr/produits/decoupe-plasma/theta-40/": {
-  "d": "2026-09-10",
-  "h": "d3493d83b018aaa9"
+  "d": "2026-09-11",
+  "h": "e8ed1edc79214e93"
  },
  "/fr/produits/decoupe-plasma/theta-60-aut/": {
-  "d": "2026-09-10",
-  "h": "92516e861cb68e81"
+  "d": "2026-09-11",
+  "h": "a0127be75efd74da"
  },
  "/fr/produits/decoupe-plasma/theta-60/": {
-  "d": "2026-09-10",
-  "h": "937ea2429ef2d557"
+  "d": "2026-09-11",
+  "h": "6e3545df11a21398"
  },
  "/fr/produits/decoupe-plasma/theta-automation/": {
   "d": "2026-09-10",
@@ -312,124 +312,124 @@
   "h": "fef2f1f8247ba84c"
  },
  "/fr/produits/nettoyage/hcs1/": {
-  "d": "2026-09-10",
-  "h": "0ec44242b296abd8"
+  "d": "2026-09-11",
+  "h": "bee440aa1870b444"
  },
  "/fr/produits/nettoyage/hypercleaner-ct200/": {
-  "d": "2026-09-10",
-  "h": "0d5ecc5c61c8c503"
+  "d": "2026-09-11",
+  "h": "7697d5b35eab5b29"
  },
  "/fr/produits/nettoyage/hypercleaner-plus/": {
-  "d": "2026-09-10",
-  "h": "30a53dfdac9e4b6e"
+  "d": "2026-09-11",
+  "h": "1c7f4d5875f819d9"
  },
  "/fr/produits/nettoyage/hypercleaner-speed/": {
-  "d": "2026-09-10",
-  "h": "d13f109d2f67908e"
+  "d": "2026-09-11",
+  "h": "707ea871ef6bd4de"
  },
  "/fr/produits/nettoyage/hypercleaner-st/": {
-  "d": "2026-09-10",
-  "h": "84e9fa916f903267"
+  "d": "2026-09-11",
+  "h": "c2c92a729374df09"
  },
  "/fr/produits/nettoyage/m1/": {
-  "d": "2026-09-10",
-  "h": "4827ba706ffdef13"
+  "d": "2026-09-11",
+  "h": "732b2c666cec5e01"
  },
  "/fr/produits/nettoyage/marquage/": {
   "d": "2026-09-10",
   "h": "3217a431aef80f8b"
  },
  "/fr/produits/nettoyage/minicleaner/": {
-  "d": "2026-09-10",
-  "h": "5278ba0391b33427"
+  "d": "2026-09-11",
+  "h": "e246dd5814f432ee"
  },
  "/fr/produits/nettoyage/mlf100/": {
-  "d": "2026-09-10",
-  "h": "d2b7e010a2362726"
+  "d": "2026-09-11",
+  "h": "7f2f703aa3fa12f7"
  },
  "/fr/produits/nettoyage/n1/": {
-  "d": "2026-09-10",
-  "h": "1c4425104f5e6439"
+  "d": "2026-09-11",
+  "h": "3708660c4e6acb59"
  },
  "/fr/produits/nettoyage/nettoyage/": {
   "d": "2026-09-10",
   "h": "2315edaea0fbfeaa"
  },
  "/fr/produits/nettoyage/p1/": {
-  "d": "2026-09-10",
-  "h": "b6cc80ab550444a5"
+  "d": "2026-09-11",
+  "h": "72a9727a12410ccf"
  },
  "/fr/produits/nettoyage/r1/": {
-  "d": "2026-09-10",
-  "h": "c004c10d27ca1b28"
+  "d": "2026-09-11",
+  "h": "3350037aaa51b505"
  },
  "/fr/produits/nettoyage/rp1/": {
-  "d": "2026-09-10",
-  "h": "6f88b65d9a7232cc"
+  "d": "2026-09-11",
+  "h": "325e529ef97fc556"
  },
  "/fr/produits/occasion/": {
-  "d": "2026-09-10",
-  "h": "9c2d0775fcc9930a"
+  "d": "2026-09-11",
+  "h": "673a6f6dbe564bad"
  },
  "/fr/produits/occasion/microplasma/": {
-  "d": "2026-09-10",
-  "h": "7d556dc642f111ce"
+  "d": "2026-09-11",
+  "h": "10613af5376fc09a"
  },
  "/fr/produits/occasion/plasmafix-50s/": {
-  "d": "2026-09-10",
-  "h": "13d9a7b5a460c5f3"
+  "d": "2026-09-11",
+  "h": "869bdd2ee710071a"
  },
  "/fr/produits/occasion/plasmafix-51/": {
-  "d": "2026-09-10",
-  "h": "cec4e4cdbe66670c"
+  "d": "2026-09-11",
+  "h": "4a452b37f0ab989c"
  },
  "/fr/produits/postes-de-soudage/": {
   "d": "2026-09-10",
   "h": "599ddcf73819cc18"
  },
  "/fr/produits/postes-de-soudage/beta-digital/": {
-  "d": "2026-09-10",
-  "h": "4f3e30c75ed3bde6"
+  "d": "2026-09-11",
+  "h": "50871b8aca5ed7cb"
  },
  "/fr/produits/postes-de-soudage/beta-dx/": {
-  "d": "2026-09-10",
-  "h": "db57d6e207a1da16"
+  "d": "2026-09-11",
+  "h": "e49c4b2f674f62d6"
  },
  "/fr/produits/postes-de-soudage/delta-digital-ds/": {
-  "d": "2026-09-10",
-  "h": "e2b69c929a92aed1"
+  "d": "2026-09-11",
+  "h": "c24b66fca7879db7"
  },
  "/fr/produits/postes-de-soudage/delta-digital/": {
-  "d": "2026-09-10",
-  "h": "b0a264806898e13a"
+  "d": "2026-09-11",
+  "h": "6f2860f1b9083912"
  },
  "/fr/produits/postes-de-soudage/delta/": {
-  "d": "2026-09-10",
-  "h": "ac6880d2b6af7888"
+  "d": "2026-09-11",
+  "h": "d90e44f4de61b971"
  },
  "/fr/produits/postes-de-soudage/ecomig/": {
-  "d": "2026-09-10",
-  "h": "8a46518458130f2c"
+  "d": "2026-09-11",
+  "h": "1b3d953d4088c6fb"
  },
  "/fr/produits/postes-de-soudage/hypermig-x/": {
-  "d": "2026-09-10",
-  "h": "4ef2b5ae5532076c"
+  "d": "2026-09-11",
+  "h": "5917d8c5cab58f2e"
  },
  "/fr/produits/postes-de-soudage/hypertig-acdc/": {
-  "d": "2026-09-10",
-  "h": "a8bbdcd39c0cb108"
+  "d": "2026-09-11",
+  "h": "cd989230b6dbedf0"
  },
  "/fr/produits/postes-de-soudage/hypertig-ax/": {
-  "d": "2026-09-10",
-  "h": "e76df95fbb96139c"
+  "d": "2026-09-11",
+  "h": "09a308d52bf74129"
  },
  "/fr/produits/postes-de-soudage/hypertig-dx/": {
-  "d": "2026-09-10",
-  "h": "c8cbab433dece20d"
+  "d": "2026-09-11",
+  "h": "0d7cfb76da4ad3e5"
  },
  "/fr/produits/postes-de-soudage/i-1600/": {
-  "d": "2026-09-10",
-  "h": "bd1658df1b0c5df3"
+  "d": "2026-09-11",
+  "h": "7cd16fb475f933c6"
  },
  "/fr/produits/postes-de-soudage/mig-mag/": {
   "d": "2026-09-10",
@@ -440,16 +440,16 @@
   "h": "3db2c583fe8b4031"
  },
  "/fr/produits/postes-de-soudage/mms/": {
-  "d": "2026-09-10",
-  "h": "1366441fb73cefd7"
+  "d": "2026-09-11",
+  "h": "bc8f26d0f41b3b27"
  },
  "/fr/produits/postes-de-soudage/omega-ax/": {
-  "d": "2026-09-10",
-  "h": "564a97cd1f291462"
+  "d": "2026-09-11",
+  "h": "9fe36b2d769dbee6"
  },
  "/fr/produits/postes-de-soudage/plasma-tig/": {
-  "d": "2026-09-10",
-  "h": "b29c5ffc04c5f6ab"
+  "d": "2026-09-11",
+  "h": "1728da17869fe36a"
  },
  "/fr/produits/postes-de-soudage/tig/": {
   "d": "2026-09-10",
@@ -484,8 +484,8 @@
   "h": "b9e385997c3a1541"
  },
  "/it/": {
-  "d": "2026-09-10",
-  "h": "ad8db4e2b389c488"
+  "d": "2026-09-11",
+  "h": "43a7bf5a8771b532"
  },
  "/it/assistenza/": {
   "d": "2026-09-10",
@@ -548,152 +548,152 @@
   "h": "cfa5e1fef261fe6a"
  },
  "/it/prodotti/accessori/drahtvorschubrollen-hyper/": {
-  "d": "2026-09-10",
-  "h": "3a653d1fe32af6c9"
+  "d": "2026-09-11",
+  "h": "f65405659674de99"
  },
  "/it/prodotti/accessori/drahtvorschubrollen/": {
-  "d": "2026-09-10",
-  "h": "85c5f07a7429514b"
+  "d": "2026-09-11",
+  "h": "37e5e761bc3fecba"
  },
  "/it/prodotti/accessori/dvl420/": {
-  "d": "2026-09-10",
-  "h": "547fd77b48091dc3"
+  "d": "2026-09-11",
+  "h": "56d3411a915d73fb"
  },
  "/it/prodotti/accessori/dvs410/": {
-  "d": "2026-09-10",
-  "h": "d600cd72e22cd607"
+  "d": "2026-09-11",
+  "h": "c53f35b2881743c7"
  },
  "/it/prodotti/accessori/elektrodenkabel-4m/": {
-  "d": "2026-09-10",
-  "h": "0cc24635b5cf05dd"
+  "d": "2026-09-11",
+  "h": "9784ff268f56f5f3"
  },
  "/it/prodotti/accessori/elektrodenkabel/": {
-  "d": "2026-09-10",
-  "h": "8cfc7754d2501666"
+  "d": "2026-09-11",
+  "h": "87d027fef4fa2b70"
  },
  "/it/prodotti/accessori/fasci-cavi/": {
   "d": "2026-09-10",
   "h": "ab0023d5b5f1cb1a"
  },
  "/it/prodotti/accessori/frc5/": {
-  "d": "2026-09-10",
-  "h": "7686cf4e8c63e6c1"
+  "d": "2026-09-11",
+  "h": "d00810f07dbd1d21"
  },
  "/it/prodotti/accessori/massekabel-25/": {
-  "d": "2026-09-10",
-  "h": "d76f4aae47e2df94"
+  "d": "2026-09-11",
+  "h": "2cebcac60c249a6a"
  },
  "/it/prodotti/accessori/massekabel-4m/": {
-  "d": "2026-09-10",
-  "h": "314489265d03b197"
+  "d": "2026-09-11",
+  "h": "4b1b8336e1d18d45"
  },
  "/it/prodotti/accessori/massekabel/": {
-  "d": "2026-09-10",
-  "h": "ad245daa86fff3b1"
+  "d": "2026-09-11",
+  "h": "14e98acc19551192"
  },
  "/it/prodotti/accessori/mcu1/": {
-  "d": "2026-09-10",
-  "h": "b5b15d79a779e68e"
+  "d": "2026-09-11",
+  "h": "00898effefef1e4a"
  },
  "/it/prodotti/accessori/mf155/": {
-  "d": "2026-09-10",
-  "h": "00d8619ee4ed7b85"
+  "d": "2026-09-11",
+  "h": "1892a9b6c3ea9d72"
  },
  "/it/prodotti/accessori/mf240w/": {
-  "d": "2026-09-10",
-  "h": "6698fd4698916907"
+  "d": "2026-09-11",
+  "h": "8f55ad431927ea48"
  },
  "/it/prodotti/accessori/mf250/": {
-  "d": "2026-09-10",
-  "h": "4a7013a5e16a1355"
+  "d": "2026-09-11",
+  "h": "37d076c6de243f8f"
  },
  "/it/prodotti/accessori/mf405w/": {
-  "d": "2026-09-10",
-  "h": "37818b7e2004edae"
+  "d": "2026-09-11",
+  "h": "ac35f59d997076b7"
  },
  "/it/prodotti/accessori/mhct01/": {
-  "d": "2026-09-10",
-  "h": "ba422bfb25c9128b"
+  "d": "2026-09-11",
+  "h": "e65ecd5fe3c8a45f"
  },
  "/it/prodotti/accessori/mpf02/": {
-  "d": "2026-09-10",
-  "h": "29b2e0631228dd9b"
+  "d": "2026-09-11",
+  "h": "f834f9638eb5ba2b"
  },
  "/it/prodotti/accessori/mt170/": {
-  "d": "2026-09-10",
-  "h": "610f1e073e1d981f"
+  "d": "2026-09-11",
+  "h": "3158f4ce48fa6260"
  },
  "/it/prodotti/accessori/mt170v/": {
-  "d": "2026-09-10",
-  "h": "e64814150317435b"
+  "d": "2026-09-11",
+  "h": "8079fcfc6ff46964"
  },
  "/it/prodotti/accessori/mt180w/": {
-  "d": "2026-09-10",
-  "h": "d72673d1bc03d488"
+  "d": "2026-09-11",
+  "h": "692564eaf4cd7dfa"
  },
  "/it/prodotti/accessori/mt200w/": {
-  "d": "2026-09-10",
-  "h": "ffa0a1d01f9c7622"
+  "d": "2026-09-11",
+  "h": "100b866463e7d71d"
  },
  "/it/prodotti/accessori/mt260/": {
-  "d": "2026-09-10",
-  "h": "e13fdcce3b0cd050"
+  "d": "2026-09-11",
+  "h": "6e800af267efeff9"
  },
  "/it/prodotti/accessori/mt260v/": {
-  "d": "2026-09-10",
-  "h": "9163ff7378dd8002"
+  "d": "2026-09-11",
+  "h": "48266dc8a69adbe1"
  },
  "/it/prodotti/accessori/parti-di-usura/": {
   "d": "2026-09-10",
   "h": "b713f73efd607e3e"
  },
  "/it/prodotti/accessori/psab125/": {
-  "d": "2026-09-10",
-  "h": "93144f410fc2f935"
+  "d": "2026-09-11",
+  "h": "e62e7eea008bd189"
  },
  "/it/prodotti/accessori/psab65/": {
-  "d": "2026-09-10",
-  "h": "83a36225e36968b4"
+  "d": "2026-09-11",
+  "h": "48163de2ace22a0f"
  },
  "/it/prodotti/accessori/pshb125/": {
-  "d": "2026-09-10",
-  "h": "814dc0c247590fa7"
+  "d": "2026-09-11",
+  "h": "e8ec06aaeee9d8f1"
  },
  "/it/prodotti/accessori/pshb160/": {
-  "d": "2026-09-10",
-  "h": "e140682ca31ee094"
+  "d": "2026-09-11",
+  "h": "ee601beb1008a4eb"
  },
  "/it/prodotti/accessori/pshb65/": {
-  "d": "2026-09-10",
-  "h": "942f83a1cc843f7e"
+  "d": "2026-09-11",
+  "h": "551d3594705c9161"
  },
  "/it/prodotti/accessori/raffreddamento/": {
   "d": "2026-09-10",
   "h": "b01f6d50e707fede"
  },
  "/it/prodotti/accessori/rc100/": {
-  "d": "2026-09-10",
-  "h": "3b20663e095085c5"
+  "d": "2026-09-11",
+  "h": "18b114abd47e8cd3"
  },
  "/it/prodotti/accessori/rc100ds/": {
-  "d": "2026-09-10",
-  "h": "1de1a25320408e82"
+  "d": "2026-09-11",
+  "h": "add3139a8f8b5f90"
  },
  "/it/prodotti/accessori/rc15/": {
-  "d": "2026-09-10",
-  "h": "77c4fc23e7332085"
+  "d": "2026-09-11",
+  "h": "e805e3d7e9ba0eec"
  },
  "/it/prodotti/accessori/rc5/": {
-  "d": "2026-09-10",
-  "h": "cc93e79f8f971fb0"
+  "d": "2026-09-11",
+  "h": "4f36f99774f6945e"
  },
  "/it/prodotti/accessori/stt30/": {
-  "d": "2026-09-10",
-  "h": "e838075b36618335"
+  "d": "2026-09-11",
+  "h": "c52411d7073e57eb"
  },
  "/it/prodotti/accessori/stt35/": {
-  "d": "2026-09-10",
-  "h": "0423b36373962625"
+  "d": "2026-09-11",
+  "h": "de14b098f67a89e6"
  },
  "/it/prodotti/accessori/telecomandi/": {
   "d": "2026-09-10",
@@ -712,56 +712,56 @@
   "h": "e90845fa934703bc"
  },
  "/it/prodotti/accessori/usb2in1/": {
-  "d": "2026-09-10",
-  "h": "ba3b2271b8251d63"
+  "d": "2026-09-11",
+  "h": "bab793af94b68da3"
  },
  "/it/prodotti/accessori/vtbox-pshb125/": {
-  "d": "2026-09-10",
-  "h": "b36a038baf9afe39"
+  "d": "2026-09-11",
+  "h": "7ab546df9458930a"
  },
  "/it/prodotti/accessori/vtbox-pshb160/": {
-  "d": "2026-09-10",
-  "h": "98cbe64b914433c6"
+  "d": "2026-09-11",
+  "h": "54b17a627cd2a740"
  },
  "/it/prodotti/accessori/vtbox-pshb65/": {
-  "d": "2026-09-10",
-  "h": "4f26af55f1ea615a"
+  "d": "2026-09-11",
+  "h": "1ce265bf1c0683bf"
  },
  "/it/prodotti/accessori/vtbox-s25/": {
-  "d": "2026-09-10",
-  "h": "4e3abd9433e9d974"
+  "d": "2026-09-11",
+  "h": "1a00c7ca9f8ba937"
  },
  "/it/prodotti/accessori/wk200/": {
-  "d": "2026-09-10",
-  "h": "5a3e41700e220799"
+  "d": "2026-09-11",
+  "h": "c60d21cc00bea410"
  },
  "/it/prodotti/accessori/wk300/": {
-  "d": "2026-09-10",
-  "h": "a5d2193793ef27d2"
+  "d": "2026-09-11",
+  "h": "f2b56d82fcf8be97"
  },
  "/it/prodotti/accessori/wk350/": {
-  "d": "2026-09-10",
-  "h": "d656a5196964975d"
+  "d": "2026-09-11",
+  "h": "d989d4fde018b4f8"
  },
  "/it/prodotti/accessori/zwischenschlauchpaket/": {
-  "d": "2026-09-10",
-  "h": "9d788bb1f7c80ce9"
+  "d": "2026-09-11",
+  "h": "af080031f80f8f77"
  },
  "/it/prodotti/occasioni/": {
-  "d": "2026-09-10",
-  "h": "201c05da3d0f45e3"
+  "d": "2026-09-11",
+  "h": "e1dce3780f1c7e45"
  },
  "/it/prodotti/occasioni/microplasma/": {
-  "d": "2026-09-10",
-  "h": "c0f65a72d888164d"
+  "d": "2026-09-11",
+  "h": "b766818456c5b14f"
  },
  "/it/prodotti/occasioni/plasmafix-50s/": {
-  "d": "2026-09-10",
-  "h": "6465c1579dbc5f68"
+  "d": "2026-09-11",
+  "h": "440159e91e0a8ab5"
  },
  "/it/prodotti/occasioni/plasmafix-51/": {
-  "d": "2026-09-10",
-  "h": "58cf94fee5d30ec2"
+  "d": "2026-09-11",
+  "h": "17ab86bbfa9598fb"
  },
  "/it/prodotti/pulizia/": {
   "d": "2026-09-10",
@@ -776,108 +776,108 @@
   "h": "52d7cf665381a5ca"
  },
  "/it/prodotti/pulizia/hcs1/": {
-  "d": "2026-09-10",
-  "h": "2e46deedb8ee3bb9"
+  "d": "2026-09-11",
+  "h": "82f87b4053012994"
  },
  "/it/prodotti/pulizia/hypercleaner-ct200/": {
-  "d": "2026-09-10",
-  "h": "64922e57c201e861"
+  "d": "2026-09-11",
+  "h": "3d1597632f6c2b82"
  },
  "/it/prodotti/pulizia/hypercleaner-plus/": {
-  "d": "2026-09-10",
-  "h": "f4bf9167e8985df9"
+  "d": "2026-09-11",
+  "h": "a5bb2667bfcfecdf"
  },
  "/it/prodotti/pulizia/hypercleaner-speed/": {
-  "d": "2026-09-10",
-  "h": "3bfaf2d90b4402e0"
+  "d": "2026-09-11",
+  "h": "289f15349dd114f5"
  },
  "/it/prodotti/pulizia/hypercleaner-st/": {
-  "d": "2026-09-10",
-  "h": "14fff88ba082de45"
+  "d": "2026-09-11",
+  "h": "9b4061b98110e6cb"
  },
  "/it/prodotti/pulizia/m1/": {
-  "d": "2026-09-10",
-  "h": "dd0c043f9c4cefe3"
+  "d": "2026-09-11",
+  "h": "68c4cd93db86dbe6"
  },
  "/it/prodotti/pulizia/marcatura/": {
   "d": "2026-09-10",
   "h": "3111952806c6fab2"
  },
  "/it/prodotti/pulizia/minicleaner/": {
-  "d": "2026-09-10",
-  "h": "d2aabea7adc4f132"
+  "d": "2026-09-11",
+  "h": "c57874649a30753a"
  },
  "/it/prodotti/pulizia/mlf100/": {
-  "d": "2026-09-10",
-  "h": "ae86d47ff233ef5e"
+  "d": "2026-09-11",
+  "h": "89040e419760488a"
  },
  "/it/prodotti/pulizia/n1/": {
-  "d": "2026-09-10",
-  "h": "31a002292abd2e34"
+  "d": "2026-09-11",
+  "h": "bcce837285d3bf8c"
  },
  "/it/prodotti/pulizia/p1/": {
-  "d": "2026-09-10",
-  "h": "f34837e60397e0c8"
+  "d": "2026-09-11",
+  "h": "52a6175c511dbb03"
  },
  "/it/prodotti/pulizia/pulizia/": {
   "d": "2026-09-10",
   "h": "c44e82c12de0854c"
  },
  "/it/prodotti/pulizia/r1/": {
-  "d": "2026-09-10",
-  "h": "e72ebe199dc587d8"
+  "d": "2026-09-11",
+  "h": "56d74f5808f2f48d"
  },
  "/it/prodotti/pulizia/rp1/": {
-  "d": "2026-09-10",
-  "h": "bf2f816640c39458"
+  "d": "2026-09-11",
+  "h": "b3a8d48611b5fc07"
  },
  "/it/prodotti/saldatrici/": {
   "d": "2026-09-10",
   "h": "f5237f41ff4053c7"
  },
  "/it/prodotti/saldatrici/beta-digital/": {
-  "d": "2026-09-10",
-  "h": "c0c4ac094459cf62"
+  "d": "2026-09-11",
+  "h": "02700994101e9846"
  },
  "/it/prodotti/saldatrici/beta-dx/": {
-  "d": "2026-09-10",
-  "h": "39da8186783a5f30"
+  "d": "2026-09-11",
+  "h": "a45f89ae19bd4cfa"
  },
  "/it/prodotti/saldatrici/delta-digital-ds/": {
-  "d": "2026-09-10",
-  "h": "fd433aad08a13a17"
+  "d": "2026-09-11",
+  "h": "e743a551d0cb3821"
  },
  "/it/prodotti/saldatrici/delta-digital/": {
-  "d": "2026-09-10",
-  "h": "e6deb9bd64892c12"
+  "d": "2026-09-11",
+  "h": "6711035e1d6b6e3f"
  },
  "/it/prodotti/saldatrici/delta/": {
-  "d": "2026-09-10",
-  "h": "9250f75f7cecc4e4"
+  "d": "2026-09-11",
+  "h": "b6be017c7d22e180"
  },
  "/it/prodotti/saldatrici/ecomig/": {
-  "d": "2026-09-10",
-  "h": "eeb5727c138ca7f5"
+  "d": "2026-09-11",
+  "h": "e91809df733c93a8"
  },
  "/it/prodotti/saldatrici/hypermig-x/": {
-  "d": "2026-09-10",
-  "h": "ea754c03c8f39017"
+  "d": "2026-09-11",
+  "h": "148fba84a6b3e767"
  },
  "/it/prodotti/saldatrici/hypertig-acdc/": {
-  "d": "2026-09-10",
-  "h": "77f8c95074deabb4"
+  "d": "2026-09-11",
+  "h": "ed988115214348c0"
  },
  "/it/prodotti/saldatrici/hypertig-ax/": {
-  "d": "2026-09-10",
-  "h": "dcfd59e09e9770e8"
+  "d": "2026-09-11",
+  "h": "f13a5b6a152c0ae7"
  },
  "/it/prodotti/saldatrici/hypertig-dx/": {
-  "d": "2026-09-10",
-  "h": "46bcfb20fae2b139"
+  "d": "2026-09-11",
+  "h": "a9796e1e3d61144b"
  },
  "/it/prodotti/saldatrici/i-1600/": {
-  "d": "2026-09-10",
-  "h": "f1a51b6ec9c50255"
+  "d": "2026-09-11",
+  "h": "ec01a24a5fc133d7"
  },
  "/it/prodotti/saldatrici/mig-mag/": {
   "d": "2026-09-10",
@@ -888,16 +888,16 @@
   "h": "204f425ff8e1f5f9"
  },
  "/it/prodotti/saldatrici/mms/": {
-  "d": "2026-09-10",
-  "h": "e3c7138bea0beec3"
+  "d": "2026-09-11",
+  "h": "21e2981d768903fa"
  },
  "/it/prodotti/saldatrici/omega-ax/": {
-  "d": "2026-09-10",
-  "h": "be7beb721f8a2d79"
+  "d": "2026-09-11",
+  "h": "ea6e6f886aad05c0"
  },
  "/it/prodotti/saldatrici/plasma-tig/": {
-  "d": "2026-09-10",
-  "h": "2f82cac78ceb64a5"
+  "d": "2026-09-11",
+  "h": "12ba750339b8752e"
  },
  "/it/prodotti/saldatrici/tig/": {
   "d": "2026-09-10",
@@ -908,40 +908,40 @@
   "h": "9eb46439c3d279a2"
  },
  "/it/prodotti/taglio-plasma/mpt-2501/": {
-  "d": "2026-09-10",
-  "h": "505be647136b25ab"
+  "d": "2026-09-11",
+  "h": "ecf777717be53c94"
  },
  "/it/prodotti/taglio-plasma/mpt-3001/": {
-  "d": "2026-09-10",
-  "h": "72e105bf2e8ba301"
+  "d": "2026-09-11",
+  "h": "eda73d8fee792abc"
  },
  "/it/prodotti/taglio-plasma/tavoli-di-taglio/": {
   "d": "2026-09-10",
   "h": "4cd2c5a0245bc20c"
  },
  "/it/prodotti/taglio-plasma/theta-120-aut/": {
-  "d": "2026-09-10",
-  "h": "facc74ea35d32379"
+  "d": "2026-09-11",
+  "h": "567a04555dcd4b29"
  },
  "/it/prodotti/taglio-plasma/theta-120/": {
-  "d": "2026-09-10",
-  "h": "1e80ecca5347b202"
+  "d": "2026-09-11",
+  "h": "675af36394858b9c"
  },
  "/it/prodotti/taglio-plasma/theta-180/": {
-  "d": "2026-09-10",
-  "h": "934032920fbb70a2"
+  "d": "2026-09-11",
+  "h": "1c7e717b5e823ea2"
  },
  "/it/prodotti/taglio-plasma/theta-40/": {
-  "d": "2026-09-10",
-  "h": "d6ba524175622f46"
+  "d": "2026-09-11",
+  "h": "b3e04e0cc0f7bc38"
  },
  "/it/prodotti/taglio-plasma/theta-60-aut/": {
-  "d": "2026-09-10",
-  "h": "9c4c35da3f3aa244"
+  "d": "2026-09-11",
+  "h": "50b22e704647435a"
  },
  "/it/prodotti/taglio-plasma/theta-60/": {
-  "d": "2026-09-10",
-  "h": "1b7b7bea4f592052"
+  "d": "2026-09-11",
+  "h": "910227d6fdb480f5"
  },
  "/it/prodotti/taglio-plasma/theta-automation/": {
   "d": "2026-09-10",
@@ -960,60 +960,60 @@
   "h": "40ce2bd70aec632c"
  },
  "/produkte/occasion/": {
-  "d": "2026-09-10",
-  "h": "f1fd7c0c1fddaef6"
+  "d": "2026-09-11",
+  "h": "88fbecae34b46f89"
  },
  "/produkte/occasion/mikroplasma/": {
-  "d": "2026-09-10",
-  "h": "9557d8ee2cfa70a6"
+  "d": "2026-09-11",
+  "h": "a70fc14be5207ab6"
  },
  "/produkte/occasion/plasmafix-50s/": {
-  "d": "2026-09-10",
-  "h": "b2b84e58f358de4a"
+  "d": "2026-09-11",
+  "h": "59672532eae65b9d"
  },
  "/produkte/occasion/plasmafix-51/": {
-  "d": "2026-09-10",
-  "h": "48e0b2ceddec9f7a"
+  "d": "2026-09-11",
+  "h": "a8260ffebdb6668a"
  },
  "/produkte/plasmaschneiden/": {
   "d": "2026-09-10",
   "h": "65291182e76fec7c"
  },
  "/produkte/plasmaschneiden/mpt-2501/": {
-  "d": "2026-09-10",
-  "h": "3f41f139b35f3f39"
+  "d": "2026-09-11",
+  "h": "fa0d8e34ac9c45a7"
  },
  "/produkte/plasmaschneiden/mpt-3001/": {
-  "d": "2026-09-10",
-  "h": "0e5280e2e314e7ee"
+  "d": "2026-09-11",
+  "h": "294d6e775fb10f07"
  },
  "/produkte/plasmaschneiden/schneidtische/": {
   "d": "2026-09-10",
   "h": "1c566d18985ed11a"
  },
  "/produkte/plasmaschneiden/theta-120-aut/": {
-  "d": "2026-09-10",
-  "h": "34cc691e2b137de0"
+  "d": "2026-09-11",
+  "h": "2da6a2efdf7fe42a"
  },
  "/produkte/plasmaschneiden/theta-120/": {
-  "d": "2026-09-10",
-  "h": "3d1acb9e53b94be0"
+  "d": "2026-09-11",
+  "h": "edbf2b2516a15767"
  },
  "/produkte/plasmaschneiden/theta-180/": {
-  "d": "2026-09-10",
-  "h": "ae6174595c502b05"
+  "d": "2026-09-11",
+  "h": "88f2819d172dcf56"
  },
  "/produkte/plasmaschneiden/theta-40/": {
-  "d": "2026-09-10",
-  "h": "d661e7046e64b8a0"
+  "d": "2026-09-11",
+  "h": "059dbd13cb42f35e"
  },
  "/produkte/plasmaschneiden/theta-60-aut/": {
-  "d": "2026-09-10",
-  "h": "b6e2778cf57678f3"
+  "d": "2026-09-11",
+  "h": "c77ca22efb0eb3b5"
  },
  "/produkte/plasmaschneiden/theta-60/": {
-  "d": "2026-09-10",
-  "h": "133979b51354908f"
+  "d": "2026-09-11",
+  "h": "46a6664d6be7959b"
  },
  "/produkte/plasmaschneiden/theta-automation/": {
   "d": "2026-09-10",
@@ -1040,52 +1040,52 @@
   "h": "4f1e5743eb8b8a0a"
  },
  "/produkte/reinigungsgeraete/hcs1/": {
-  "d": "2026-09-10",
-  "h": "a6bb1d8f62077d63"
+  "d": "2026-09-11",
+  "h": "7852ccecfcf7a039"
  },
  "/produkte/reinigungsgeraete/hypercleaner-ct200/": {
-  "d": "2026-09-10",
-  "h": "add2801ce130e701"
+  "d": "2026-09-11",
+  "h": "a9a79ee20e9255c7"
  },
  "/produkte/reinigungsgeraete/hypercleaner-plus/": {
-  "d": "2026-09-10",
-  "h": "6d1fa5364af5bac1"
+  "d": "2026-09-11",
+  "h": "0666e6152eaa67b3"
  },
  "/produkte/reinigungsgeraete/hypercleaner-speed/": {
-  "d": "2026-09-10",
-  "h": "0ff6652586664d5e"
+  "d": "2026-09-11",
+  "h": "b78acd0313658f92"
  },
  "/produkte/reinigungsgeraete/hypercleaner-st/": {
-  "d": "2026-09-10",
-  "h": "1df850aba6fd01e6"
+  "d": "2026-09-11",
+  "h": "2618f1190c63d1e4"
  },
  "/produkte/reinigungsgeraete/m1/": {
-  "d": "2026-09-10",
-  "h": "de78174228f93fa2"
+  "d": "2026-09-11",
+  "h": "26042841f942cd9d"
  },
  "/produkte/reinigungsgeraete/minicleaner/": {
-  "d": "2026-09-10",
-  "h": "3b53fbfc604a7591"
+  "d": "2026-09-11",
+  "h": "89955c11b64e7e95"
  },
  "/produkte/reinigungsgeraete/mlf100/": {
-  "d": "2026-09-10",
-  "h": "67001598a57249f9"
+  "d": "2026-09-11",
+  "h": "1f7780f41c1bda59"
  },
  "/produkte/reinigungsgeraete/n1/": {
-  "d": "2026-09-10",
-  "h": "d1231075ce5e2c03"
+  "d": "2026-09-11",
+  "h": "da4f111c000c3aff"
  },
  "/produkte/reinigungsgeraete/p1/": {
-  "d": "2026-09-10",
-  "h": "063eb0135453bcc5"
+  "d": "2026-09-11",
+  "h": "0d75ede901bad74f"
  },
  "/produkte/reinigungsgeraete/r1/": {
-  "d": "2026-09-10",
-  "h": "3a41fdf2a1d057ea"
+  "d": "2026-09-11",
+  "h": "cdf5121e279ab5e9"
  },
  "/produkte/reinigungsgeraete/rp1/": {
-  "d": "2026-09-10",
-  "h": "e2f7cf5358a90105"
+  "d": "2026-09-11",
+  "h": "e9bb5212eea5db33"
  },
  "/produkte/reinigungsgeraete/signiergeraete/": {
   "d": "2026-09-10",
@@ -1096,48 +1096,48 @@
   "h": "7aed12d8c6506c68"
  },
  "/produkte/schweissgeraete/beta-digital/": {
-  "d": "2026-09-10",
-  "h": "25aef2792a0fc184"
+  "d": "2026-09-11",
+  "h": "36f92eab0bfdb1fb"
  },
  "/produkte/schweissgeraete/beta-dx/": {
-  "d": "2026-09-10",
-  "h": "aa36c18dda78f244"
+  "d": "2026-09-11",
+  "h": "30d185791ce5968f"
  },
  "/produkte/schweissgeraete/delta-digital-ds/": {
-  "d": "2026-09-10",
-  "h": "b1cf999782e497c8"
+  "d": "2026-09-11",
+  "h": "65045aeda7d8c857"
  },
  "/produkte/schweissgeraete/delta-digital/": {
-  "d": "2026-09-10",
-  "h": "72af05a8e325e031"
+  "d": "2026-09-11",
+  "h": "a248b984e710eb67"
  },
  "/produkte/schweissgeraete/delta/": {
-  "d": "2026-09-10",
-  "h": "755da5f55b4d3897"
+  "d": "2026-09-11",
+  "h": "8f3e0373e37a23e3"
  },
  "/produkte/schweissgeraete/ecomig/": {
-  "d": "2026-09-10",
-  "h": "96e1200318da407c"
+  "d": "2026-09-11",
+  "h": "e9022ea7173aa71b"
  },
  "/produkte/schweissgeraete/hypermig-x/": {
-  "d": "2026-09-10",
-  "h": "ccb82746a6eb0c34"
+  "d": "2026-09-11",
+  "h": "edf735d861efbef6"
  },
  "/produkte/schweissgeraete/hypertig-acdc/": {
-  "d": "2026-09-10",
-  "h": "6573edba9bb78126"
+  "d": "2026-09-11",
+  "h": "b94e89712d9676fe"
  },
  "/produkte/schweissgeraete/hypertig-ax/": {
-  "d": "2026-09-10",
-  "h": "137e3a6d5d597f37"
+  "d": "2026-09-11",
+  "h": "b214ffc92c439064"
  },
  "/produkte/schweissgeraete/hypertig-dx/": {
-  "d": "2026-09-10",
-  "h": "d326ceb6ce554efc"
+  "d": "2026-09-11",
+  "h": "7346bc64e8264ebc"
  },
  "/produkte/schweissgeraete/i-1600/": {
-  "d": "2026-09-10",
-  "h": "dad6ae112ebe885a"
+  "d": "2026-09-11",
+  "h": "7affb44fbd744608"
  },
  "/produkte/schweissgeraete/mig-mag/": {
   "d": "2026-09-10",
@@ -1148,16 +1148,16 @@
   "h": "0f8c21f38c02d07b"
  },
  "/produkte/schweissgeraete/mms/": {
-  "d": "2026-09-10",
-  "h": "0c398c2f009b12e3"
+  "d": "2026-09-11",
+  "h": "8fd670bc7cdf8852"
  },
  "/produkte/schweissgeraete/omega-ax/": {
-  "d": "2026-09-10",
-  "h": "fe232ba71d268b39"
+  "d": "2026-09-11",
+  "h": "764c518235edb2cf"
  },
  "/produkte/schweissgeraete/plasma-tig/": {
-  "d": "2026-09-10",
-  "h": "7387a9d3fc7e9616"
+  "d": "2026-09-11",
+  "h": "3b413899fcd274c9"
  },
  "/produkte/schweissgeraete/wig-tig/": {
   "d": "2026-09-10",
@@ -1176,28 +1176,28 @@
   "h": "eac58bc27f349b7e"
  },
  "/produkte/zubehoer/drahtvorschubrollen-hyper/": {
-  "d": "2026-09-10",
-  "h": "4d65487aa66d3964"
+  "d": "2026-09-11",
+  "h": "632018d1b6475f1c"
  },
  "/produkte/zubehoer/drahtvorschubrollen/": {
-  "d": "2026-09-10",
-  "h": "edc0109d76cfc3c8"
+  "d": "2026-09-11",
+  "h": "e7bd21693ac94c39"
  },
  "/produkte/zubehoer/dvl420/": {
-  "d": "2026-09-10",
-  "h": "33ad1ab26be6e7cd"
+  "d": "2026-09-11",
+  "h": "cc516180d89cd786"
  },
  "/produkte/zubehoer/dvs410/": {
-  "d": "2026-09-10",
-  "h": "21f3d288c79e7433"
+  "d": "2026-09-11",
+  "h": "c55876155ed48a97"
  },
  "/produkte/zubehoer/elektrodenkabel-4m/": {
-  "d": "2026-09-10",
-  "h": "f3c7f3228fb94ae3"
+  "d": "2026-09-11",
+  "h": "d80051123fe5a0dc"
  },
  "/produkte/zubehoer/elektrodenkabel/": {
-  "d": "2026-09-10",
-  "h": "9cf5825efcc8c6bc"
+  "d": "2026-09-11",
+  "h": "1684acc777d2688c"
  },
  "/produkte/zubehoer/fahrwagen/": {
   "d": "2026-09-10",
@@ -1208,152 +1208,152 @@
   "h": "f1e2764948569d67"
  },
  "/produkte/zubehoer/frc5/": {
-  "d": "2026-09-10",
-  "h": "7db3cbd07479842d"
+  "d": "2026-09-11",
+  "h": "3e07f26c0439ad26"
  },
  "/produkte/zubehoer/kabel/": {
   "d": "2026-09-10",
   "h": "4607976dcaabdd90"
  },
  "/produkte/zubehoer/massekabel-25/": {
-  "d": "2026-09-10",
-  "h": "e8d06fb063de4701"
+  "d": "2026-09-11",
+  "h": "d7e2a16df4466f6d"
  },
  "/produkte/zubehoer/massekabel-4m/": {
-  "d": "2026-09-10",
-  "h": "a656630796ffea5e"
+  "d": "2026-09-11",
+  "h": "bb6787ae1513ea38"
  },
  "/produkte/zubehoer/massekabel/": {
-  "d": "2026-09-10",
-  "h": "6ce5f576d53d29cc"
+  "d": "2026-09-11",
+  "h": "ffe5fe1d07abf285"
  },
  "/produkte/zubehoer/mcu1/": {
-  "d": "2026-09-10",
-  "h": "3f9f3d39815f393c"
+  "d": "2026-09-11",
+  "h": "dbf5f5736ac19f1c"
  },
  "/produkte/zubehoer/mf155/": {
-  "d": "2026-09-10",
-  "h": "d2e470ad661d6a03"
+  "d": "2026-09-11",
+  "h": "9e51957ad4bdec18"
  },
  "/produkte/zubehoer/mf240w/": {
-  "d": "2026-09-10",
-  "h": "6f6a44eae713fcb9"
+  "d": "2026-09-11",
+  "h": "9ffc770fe1e2b550"
  },
  "/produkte/zubehoer/mf250/": {
-  "d": "2026-09-10",
-  "h": "10426a1da577e60e"
+  "d": "2026-09-11",
+  "h": "62edf896f0c974c1"
  },
  "/produkte/zubehoer/mf405w/": {
-  "d": "2026-09-10",
-  "h": "d9afc7dae7b1c6fc"
+  "d": "2026-09-11",
+  "h": "3aceefd0d2efd65c"
  },
  "/produkte/zubehoer/mhct01/": {
-  "d": "2026-09-10",
-  "h": "18d3557104a54884"
+  "d": "2026-09-11",
+  "h": "af293f044ec8db33"
  },
  "/produkte/zubehoer/mpf02/": {
-  "d": "2026-09-10",
-  "h": "da13754c7fe1d49d"
+  "d": "2026-09-11",
+  "h": "1a7d5344c2f4e840"
  },
  "/produkte/zubehoer/mt170/": {
-  "d": "2026-09-10",
-  "h": "a995d14ef51f91a7"
+  "d": "2026-09-11",
+  "h": "90fd6ad40eb4d0c0"
  },
  "/produkte/zubehoer/mt170v/": {
-  "d": "2026-09-10",
-  "h": "85259b526a7c4400"
+  "d": "2026-09-11",
+  "h": "ac8c42f787fe569b"
  },
  "/produkte/zubehoer/mt180w/": {
-  "d": "2026-09-10",
-  "h": "03537d3061fcecae"
+  "d": "2026-09-11",
+  "h": "d7fcdd674157bafa"
  },
  "/produkte/zubehoer/mt200w/": {
-  "d": "2026-09-10",
-  "h": "fda2482ee57cb15b"
+  "d": "2026-09-11",
+  "h": "0ae53498c1a5f7d6"
  },
  "/produkte/zubehoer/mt260/": {
-  "d": "2026-09-10",
-  "h": "5e4449c3ca9ebfac"
+  "d": "2026-09-11",
+  "h": "ac599d72c72d4d5d"
  },
  "/produkte/zubehoer/mt260v/": {
-  "d": "2026-09-10",
-  "h": "ed1f3864f99d242f"
+  "d": "2026-09-11",
+  "h": "1cd7aeac0698670f"
  },
  "/produkte/zubehoer/plasmabrenner/": {
   "d": "2026-09-10",
   "h": "1e28c8b7bdd1a055"
  },
  "/produkte/zubehoer/psab125/": {
-  "d": "2026-09-10",
-  "h": "6d2437a89e5a993b"
+  "d": "2026-09-11",
+  "h": "b1ee3d8f0e1870ff"
  },
  "/produkte/zubehoer/psab65/": {
-  "d": "2026-09-10",
-  "h": "c9d71e54835c97c5"
+  "d": "2026-09-11",
+  "h": "54c09bfc36ac709c"
  },
  "/produkte/zubehoer/pshb125/": {
-  "d": "2026-09-10",
-  "h": "171e6809f00db132"
+  "d": "2026-09-11",
+  "h": "60db6276eae5599a"
  },
  "/produkte/zubehoer/pshb160/": {
-  "d": "2026-09-10",
-  "h": "ae14aaca1155f5fd"
+  "d": "2026-09-11",
+  "h": "3e3543b6571c8589"
  },
  "/produkte/zubehoer/pshb65/": {
-  "d": "2026-09-10",
-  "h": "4c68b24b5a9388dd"
+  "d": "2026-09-11",
+  "h": "e0638b84c62fd818"
  },
  "/produkte/zubehoer/rc100/": {
-  "d": "2026-09-10",
-  "h": "7ef2e24758191ed1"
+  "d": "2026-09-11",
+  "h": "97c6391b2e5c95c7"
  },
  "/produkte/zubehoer/rc100ds/": {
-  "d": "2026-09-10",
-  "h": "5c9d369521152181"
+  "d": "2026-09-11",
+  "h": "87f463e08e5eb299"
  },
  "/produkte/zubehoer/rc15/": {
-  "d": "2026-09-10",
-  "h": "c0a214006efeab5d"
+  "d": "2026-09-11",
+  "h": "233c1c199ee85764"
  },
  "/produkte/zubehoer/rc5/": {
-  "d": "2026-09-10",
-  "h": "09b94fc3f420542c"
+  "d": "2026-09-11",
+  "h": "e6bb22e9cc9b114b"
  },
  "/produkte/zubehoer/schlauchpakete/": {
   "d": "2026-09-10",
   "h": "b9684f3ebb086cb4"
  },
  "/produkte/zubehoer/stt30/": {
-  "d": "2026-09-10",
-  "h": "01e86f83c7c1ed98"
+  "d": "2026-09-11",
+  "h": "1910d602dec289cd"
  },
  "/produkte/zubehoer/stt35/": {
-  "d": "2026-09-10",
-  "h": "9e7350e77f692466"
+  "d": "2026-09-11",
+  "h": "a62a60671553f5d1"
  },
  "/produkte/zubehoer/usb2in1/": {
-  "d": "2026-09-10",
-  "h": "957e770f1e3e0b33"
+  "d": "2026-09-11",
+  "h": "7d5d289fd85b3eee"
  },
  "/produkte/zubehoer/verschleissteile/": {
   "d": "2026-09-10",
   "h": "3bcfe451e2f74268"
  },
  "/produkte/zubehoer/vtbox-pshb125/": {
-  "d": "2026-09-10",
-  "h": "1cd62af9426b1e6c"
+  "d": "2026-09-11",
+  "h": "a7e9aa09b05575f0"
  },
  "/produkte/zubehoer/vtbox-pshb160/": {
-  "d": "2026-09-10",
-  "h": "2740f4146f56dee7"
+  "d": "2026-09-11",
+  "h": "3333d846aa0d2e86"
  },
  "/produkte/zubehoer/vtbox-pshb65/": {
-  "d": "2026-09-10",
-  "h": "9026ce07b1187a16"
+  "d": "2026-09-11",
+  "h": "3b67bc05f8f74966"
  },
  "/produkte/zubehoer/vtbox-s25/": {
-  "d": "2026-09-10",
-  "h": "b6905c1a9dbcc571"
+  "d": "2026-09-11",
+  "h": "cdfe7a8e1fbfcd2e"
  },
  "/produkte/zubehoer/wasserkuehlung/": {
   "d": "2026-09-10",
@@ -1364,20 +1364,20 @@
   "h": "ff5bd50f4ec6257c"
  },
  "/produkte/zubehoer/wk200/": {
-  "d": "2026-09-10",
-  "h": "7df6a865403b7a35"
+  "d": "2026-09-11",
+  "h": "24ade3c671bd8d40"
  },
  "/produkte/zubehoer/wk300/": {
-  "d": "2026-09-10",
-  "h": "fbc4ce9d0b1065e3"
+  "d": "2026-09-11",
+  "h": "98726bbe3a982f37"
  },
  "/produkte/zubehoer/wk350/": {
-  "d": "2026-09-10",
-  "h": "81ae97fa2664bde9"
+  "d": "2026-09-11",
+  "h": "9d40c116176baa0a"
  },
  "/produkte/zubehoer/zwischenschlauchpaket/": {
-  "d": "2026-09-10",
-  "h": "c7784f3c711418a4"
+  "d": "2026-09-11",
+  "h": "23fd1a8b5e9a2d74"
  },
  "/service/": {
   "d": "2026-09-10",

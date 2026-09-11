@@ -263,6 +263,28 @@ def fpName(lang, fp):
     return n.replace("Bedienpanel", wort)
 
 
+# schema.org kennt vier Zustaende am Produkt. "refurbished" ist der richtige
+# fuer eine Anlage, die komplett revidiert wurde - "used" waere zu wenig, es
+# sagt nur, dass sie gebraucht ist.
+ZUSTAND_LD = {
+    "refurbished": "https://schema.org/RefurbishedCondition",
+    "used": "https://schema.org/UsedCondition",
+    "new": "https://schema.org/NewCondition",
+}
+
+
+def zustandText(lang, p):
+    z = ZUSTAND.get(p["id"])
+    return (z.get(lang) or z.get("de")) if z else ""
+
+
+def zustandLD(p):
+    z = ZUSTAND.get(p["id"])
+    if z:
+        return ZUSTAND_LD.get(z.get("grad", "used"), ZUSTAND_LD["used"])
+    return ZUSTAND_LD["used"] if p["cat"] == "occasion" else None
+
+
 def markeMitPraeposition(lang, p):
     """„von MAHE", „d’Oerlikon", „di Oerlikon" - die Praeposition mitgeliefert.
 
@@ -335,6 +357,7 @@ OPT       = _load("OPT")         # Optionen je Geraet, aus der MAHE-Preisliste
 DLDEV     = _load("DLDEV")       # Anleitungen/Datenblaetter je Geraet bei MAHE
 DLOCC     = _load("DLOCC")       # Prospekte der Occasion-Maschinen, lokal gehostet
 IMGCAP    = _load("IMGCAP")      # Bildunterschrift zum Hauptbild, wo noetig
+ZUSTAND   = _load("ZUSTAND")     # Zustand einer Occasion-Maschine
 GALLERY   = _load("GALLERY")     # Zusatzbilder unter dem Hauptbild
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")

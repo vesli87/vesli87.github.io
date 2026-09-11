@@ -141,7 +141,8 @@
     "hero2_alt": "{marke} MPT: CNC-Plasmaschneidtisch mit Bedienkonsole",
     "poa_sub_occ": "Individuelles Angebot. Gebrauchtmaschine, Verkauf im vorgeführten Zustand.",
     "slide_pause": "Diaschau anhalten",
-    "slide_play": "Diaschau fortsetzen"
+    "slide_play": "Diaschau fortsetzen",
+    "zustand_h": "Zustand:"
   },
   "fr": {
     "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -285,7 +286,8 @@
     "hero2_alt": "{marke} MPT : table de découpe plasma CNC avec pupitre de commande",
     "poa_sub_occ": "Offre personnalisée. Machine d’occasion, vendue dans l’état présenté.",
     "slide_pause": "Arrêter le diaporama",
-    "slide_play": "Reprendre le diaporama"
+    "slide_play": "Reprendre le diaporama",
+    "zustand_h": "État :"
   },
   "it": {
     "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -429,6 +431,7 @@
     "hero2_alt": "{marke} MPT: tavolo di taglio al plasma CNC con console di comando",
     "poa_sub_occ": "Offerta personalizzata. Macchina usata, venduta nello stato presentato.",
     "slide_pause": "Ferma la presentazione",
-    "slide_play": "Riprendi la presentazione"
+    "slide_play": "Riprendi la presentazione",
+    "zustand_h": "Stato:"
   }
 }

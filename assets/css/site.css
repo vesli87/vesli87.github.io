@@ -842,6 +842,15 @@
   .pcard-link{display:flex;flex-direction:column;flex:1}
   .fp-highlights{margin-bottom:8px}
   .prod-intro{color:var(--muted);font-size:14px;line-height:1.65;margin-top:22px;max-width:62ch}
+  /* Was an der Gebrauchtmaschine gemacht wurde. Steht bewusst hervorgehoben
+     unter der Einleitung: fuer den Kaeufer ist es die Angabe, die ueber den
+     Kauf entscheidet. Der linke Balken in der Markenfarbe, nicht der ganze
+     Kasten - der wuerde neben dem Preisfeld darueber zu laut. */
+  .zustand{margin:14px 0 0;padding:12px 16px;background:var(--panel2);
+    border-left:4px solid var(--accent);border-radius:0 6px 6px 0;
+    font-size:14px;line-height:1.55;color:var(--ink);max-width:62ch}
+  .zustand b{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--accent-ink);margin-right:6px}
   .backlink{margin-top:34px}
   .backlink a{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-ink);font-size:15px}
   /* War ein style="margin-top:24px" auf der 404-Seite - das letzte

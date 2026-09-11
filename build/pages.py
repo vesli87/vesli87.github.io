@@ -658,6 +658,14 @@ def page_product(lang, p):
     # gebrauchten Anlage nicht, und ein Versprechen, das niemand einloesen
     # kann, waere eine Taeuschung ueber die Beschaffenheit.
     intro_key = "prod_intro_occ_tpl" if p["cat"] == "occasion" else "prod_intro_tpl"
+    # Was an einer Gebrauchtmaschine gemacht wurde, ist die wichtigste Angabe
+    # auf der Seite - wichtiger als jede technische Zeile. Sie steht deshalb
+    # nicht im Fliesstext, sondern als eigener Block direkt unter der
+    # Einleitung, und zusaetzlich als itemCondition im JSON-LD.
+    zt = C.zustandText(lang, p)
+    zustand_block = (
+        f'<p class="zustand"><b>{e(C.t(lang, "zustand_h"))}</b> {e(zt)}</p>'
+        if zt else "")
     has_panel = bool(C.fpAssign(p))
     tab1 = C.t(lang, "tab_feat") if has_panel else C.t(lang, "highlights")
     tabs = [("feat", tab1), ("tech", C.t(lang, "tab_tech"))]
@@ -722,6 +730,7 @@ def page_product(lang, p):
       </div>
       <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
                                        de_marke=C.markeMitPraeposition(lang, p)))}</p>
+      {zustand_block}
     </div>
   </div>
 

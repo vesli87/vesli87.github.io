@@ -1131,7 +1131,7 @@
   "brand": "Oerlikon",
   "name": "PlasmaFix 51",
   "img": "occasion/plasmafix-51.png",
-  "desc": "Mikroplasma-Anlage (Microplasma) für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
+  "desc": "Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar.",
   "specs": {
    "Verfahren": "Mikroplasma · WIG, geglättet und gepulst",
    "Schweissstrom Plasma": "0,08 – 50 A bei 100 % ED",
@@ -1147,7 +1147,12 @@
    "Schutzart": "IP 23",
    "Gewicht": "95 kg",
    "Abmessungen L × B × H": "650 × 360 × 750 mm"
-  }
+  },
+  "aka": [
+   "PlasmaFix P+T",
+   "PlasmaFix 51 P+T",
+   "NERTAMATIC 51"
+  ]
  },
  {
   "id": "plasmafix-50s",

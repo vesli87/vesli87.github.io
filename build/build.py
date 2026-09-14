@@ -65,6 +65,16 @@ SYNONYMS = {
     "mag": ["mig"],
     "mma": ["elektrode", "elektroden", "stabelektrode", "e-hand", "hand"],
     "plasma": ["schneiden", "schneider", "trennen", "cut"],
+    # Mikroplasma ist Schweissen, nicht Schneiden - eine eigene Gruppe. Die
+    # Schreibweisen gehen quer durch die Sprachen: Mikroplasma (DE),
+    # Microplasma (FR/IT/EN), und wer die Occasion sucht, tippt "oerlikon"
+    # oder "plasmafix". Alle vier muessen aufeinander zeigen.
+    "mikroplasma": ["microplasma", "plasmafix", "oerlikon", "mikro plasma", "micro plasma"],
+    "microplasma": ["mikroplasma", "plasmafix", "oerlikon"],
+    "plasmafix": ["mikroplasma", "microplasma", "oerlikon", "nertamatic"],
+    "oerlikon": ["plasmafix", "mikroplasma", "microplasma", "occasion", "saf-fro"],
+    "occasion": ["gebraucht", "occasionen", "usato", "revidiert", "generalüberholt"],
+    "gebraucht": ["occasion", "revidiert", "generalüberholt"],
     # Werkstoffe
     "alu": ["aluminium", "alu"],
     "aluminium": ["alu"],
@@ -159,7 +169,11 @@ def search_index(lang):
             "g": (f"/assets/img/{R.img_folder(m)}/{m['key']}-{R.img_step(m, 400)}.webp" if m
                   else C.REMOTE_IMG + C.full_img(p["img"])),
             # Suchtext nach Gewicht getrennt: Name / Typ / Rest
-            "t1": norm(f"{C.pName(lang, p)} {p['name']} {p['id']}"),
+            # Marke und Zweitnamen gehoeren in den Namen-Text: "oerlikon plasmafix"
+            # oder "p+t" muss das Geraet mit vollem Gewicht treffen, nicht nur
+            # ueber die Beschreibung.
+            "t1": norm(f"{C.pBrand(p)} {C.pName(lang, p)} {p['name']} {p['id']} "
+                       f"{' '.join(p.get('aka', []))}"),
             "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
             "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)}"),
         })
@@ -468,6 +482,11 @@ def llms_txt():
         f"Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, "
         f"elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. "
         f"{len(C.P)} Geräte, alle zum Preis auf Anfrage.",
+        # Eigene Zeile: der Waechter check.py::fremdmarken duldet kein "MAHE"
+        # in einer Zeile, die ein Fremdfabrikat nennt - zu Recht.
+        f"> Dazu generalüberholte Occasionen aus der eigenen Werkstatt, derzeit "
+        f"{', '.join(C.pBrand(x) + ' ' + x['name'] for x in C.P if x['cat'] == 'occasion')} "
+        f"(Mikroplasma-Schweissanlagen, Oerlikon).",
         "",
         "## Eckdaten",
         f"- Firma: {C.COMPANY['name']}",
@@ -481,7 +500,7 @@ def llms_txt():
         "- Liefergebiet: Schweiz und Liechtenstein",
         "- Sprachen: Deutsch, Französisch, Italienisch",
         "- Preismodell: Preis auf Anfrage (jede Anlage wird konfiguriert), Währung CHF",
-        "- Leistungen: Verkauf, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, "
+        "- Leistungen: Verkauf (neu und Occasion), Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, "
         "Automation, EN-1090-Konformitätspaket",
         "",
         "## Maschinenlesbare Daten",

@@ -142,7 +142,8 @@
     "poa_sub_occ": "Individuelles Angebot. Gebrauchtmaschine, Verkauf im vorgeführten Zustand.",
     "slide_pause": "Diaschau anhalten",
     "slide_play": "Diaschau fortsetzen",
-    "zustand_h": "Zustand:"
+    "zustand_h": "Zustand:",
+    "occ_aktuell": "Aktuell: {liste}."
   },
   "fr": {
     "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -287,7 +288,8 @@
     "poa_sub_occ": "Offre personnalisée. Machine d’occasion, vendue dans l’état présenté.",
     "slide_pause": "Arrêter le diaporama",
     "slide_play": "Reprendre le diaporama",
-    "zustand_h": "État :"
+    "zustand_h": "État :",
+    "occ_aktuell": "Actuellement : {liste}."
   },
   "it": {
     "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -432,6 +434,7 @@
     "poa_sub_occ": "Offerta personalizzata. Macchina usata, venduta nello stato presentato.",
     "slide_pause": "Ferma la presentazione",
     "slide_play": "Riprendi la presentazione",
-    "zustand_h": "Stato:"
+    "zustand_h": "Stato:",
+    "occ_aktuell": "Attualmente: {liste}."
   }
 }

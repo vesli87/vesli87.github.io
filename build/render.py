@@ -503,7 +503,10 @@ def ld_product(lang, p):
         "@type": "Product",
         "@id": url + "#product",
         "name": f"{C.pBrand(p)} {C.pName(lang, p)}",
-        "alternateName": C.pName(lang, p),
+        # Weitere Namen, unter denen das Geraet gesucht wird - bei der Occasion
+        # etwa "PlasmaFix P+T" oder die Bezeichnung der Stromquelle im Prospekt.
+        "alternateName": ([C.pName(lang, p)] + list(p.get("aka", []))
+                          if p.get("aka") else C.pName(lang, p)),
         "sku": p["id"].upper(),
         "mpn": p["id"].upper(),
         "url": url,

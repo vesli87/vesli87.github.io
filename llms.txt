@@ -1,6 +1,7 @@
 # VES-TECH Swiss
 
 > MAHE Schweisstechnik, Plasmaschneiden & Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
+> Dazu generalüberholte Occasionen aus der eigenen Werkstatt, derzeit Oerlikon PlasmaFix 51, Oerlikon PlasmaFix 50 S (Mikroplasma-Schweissanlagen, Oerlikon).
 
 ## Eckdaten
 - Firma: VES-TECH Swiss
@@ -11,7 +12,7 @@
 - Liefergebiet: Schweiz und Liechtenstein
 - Sprachen: Deutsch, Französisch, Italienisch
 - Preismodell: Preis auf Anfrage (jede Anlage wird konfiguriert), Währung CHF
-- Leistungen: Verkauf, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, Automation, EN-1090-Konformitätspaket
+- Leistungen: Verkauf (neu und Occasion), Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, Automation, EN-1090-Konformitätspaket
 
 ## Maschinenlesbare Daten
 - [Vollständiger Produktkatalog als JSON](https://www.ves-tech.ch/data/products.json): alle Geräte mit Spezifikationen in DE/FR/IT
@@ -112,7 +113,7 @@
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 
 ### Occasion
-- [Oerlikon PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage (Microplasma) für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. (Mikroplasma)
+- [Oerlikon PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar. (Mikroplasma)
 - [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle (Microplasma) ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
 
 ## Verfahren

@@ -220,13 +220,19 @@ ZEITEN = {
 KANN = {
     "de": ["MIG/MAG-Schweissen", "WIG/TIG-Schweissen", "MMA-Elektrodenschweissen",
            "Plasmaschneiden", "Elektrolytische Schweissnahtreinigung",
-           "Schweissautomation", "EN 1090", "MAHE Schweissgeräte"],
+           "Schweissautomation", "EN 1090", "MAHE Schweissgeräte",
+           "Mikroplasma-Schweissen", "Gebrauchte Schweissanlagen (Occasion)",
+           "Oerlikon PlasmaFix"],
     "fr": ["Soudage MIG/MAG", "Soudage TIG", "Soudage à l’électrode enrobée",
            "Découpe plasma", "Nettoyage électrolytique des cordons",
-           "Automation de soudage", "EN 1090", "Postes de soudage MAHE"],
+           "Automation de soudage", "EN 1090", "Postes de soudage MAHE",
+           "Soudage microplasma", "Postes de soudage d’occasion",
+           "Oerlikon PlasmaFix"],
     "it": ["Saldatura MIG/MAG", "Saldatura TIG", "Saldatura a elettrodo",
            "Taglio al plasma", "Pulizia elettrolitica dei cordoni",
-           "Automazione di saldatura", "EN 1090", "Saldatrici MAHE"],
+           "Automazione di saldatura", "EN 1090", "Saldatrici MAHE",
+           "Saldatura microplasma", "Saldatrici usate (occasioni)",
+           "Oerlikon PlasmaFix"],
 }
 
 

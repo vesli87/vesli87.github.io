@@ -1,6 +1,6 @@
 {
  "@context": "https://schema.org",
- "generated": "2026-09-11",
+ "generated": "2026-09-14",
  "seller": {
   "name": "VES-TECH Swiss",
   "url": "https://www.ves-tech.ch/",
@@ -16433,7 +16433,7 @@
     "it": "Microplasma"
    },
    "description": {
-    "de": "Mikroplasma-Anlage für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
+    "de": "Mikroplasma-Anlage (Microplasma) für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
     "fr": "Installation microplasma pour soudage manuel et automatique, de 0,08 à 50 A, commande LCD et amorçage HF intégré.",
     "it": "Impianto microplasma per saldatura manuale e automatica, da 0,08 a 50 A, comando LCD e innesco HF integrato."
    },
@@ -16548,7 +16548,7 @@
     "it": "Microplasma"
    },
    "description": {
-    "de": "Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen.",
+    "de": "Mikroplasma-Stromquelle (Microplasma) ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen.",
     "fr": "Source de courant microplasma à partir de 0,05 A pour les travaux les plus fins : feuilles de 0,01 mm, grillages et petite robinetterie.",
     "it": "Generatore microplasma da 0,05 A per i lavori più fini: lamierini da 0,01 mm, reti metalliche e piccola rubinetteria."
    },

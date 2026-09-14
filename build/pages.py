@@ -638,15 +638,28 @@ def page_product(lang, p):
     suffix = " | " + C.t(lang, "site_name")
     # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
     mk = C.pBrand(p)
-    for cand in (f"{mk} {nm} · {sub_t} · {cat_t}" + suffix,
-                 f"{mk} {nm} · {sub_t} · {cat_t}",
-                 f"{mk} {nm} · {sub_t}" + suffix,
-                 f"{mk} {nm} · {sub_t}"):
-        title = cand
-        if len(cand) <= 68:
-            break
-    desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=C.vtT(lang, p["vt"]),
-                       marke=C.pBrand(p), desc=C.pDesc(lang, p)), 155)
+    if p["cat"] == "occasion":
+        # Eine Gebrauchtmaschine sucht niemand als "PlasmaFix 51 · Mikroplasma
+        # · Occasion". Gesucht wird "oerlikon plasmafix 51 zu verkaufen" oder
+        # "gebraucht kaufen" - und genau diese Woerter fehlten im Titel und in
+        # der Beschreibung. Am 14.09.2026 mit einer solchen Suche nachgesehen:
+        # die Seite stand nicht unter den ersten drei, ein Mitbewerber mit
+        # genau dieser Wortwahl schon.
+        title = C.t(lang, "prod_title_occ", marke=mk, name=nm, sub=sub_t)
+        if len(title) > 68:
+            title = C.t(lang, "prod_title_occ_kurz", marke=mk, name=nm)
+        desc = clip(C.t(lang, "prod_desc_occ", marke=mk, name=nm, sub=sub_t,
+                        desc=C.pDesc(lang, p)), 155)
+    else:
+        for cand in (f"{mk} {nm} · {sub_t} · {cat_t}" + suffix,
+                     f"{mk} {nm} · {sub_t} · {cat_t}",
+                     f"{mk} {nm} · {sub_t}" + suffix,
+                     f"{mk} {nm} · {sub_t}"):
+            title = cand
+            if len(cand) <= 68:
+                break
+        desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=C.vtT(lang, p["vt"]),
+                        marke=C.pBrand(p), desc=C.pDesc(lang, p)), 155)
     crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
              (C.t(lang, "nav_products"), C.u_products(lang)),
              (C.catT(lang, c), C.u_cat(lang, p["cat"])),

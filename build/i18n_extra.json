@@ -469,11 +469,14 @@
     "about_role": "Inhaber",
     "redirect_title": "Seite umgezogen",
     "redirect_text": "Diese Seite ist umgezogen. Weiter zu:",
-    "prod_intro_occ_tpl": "{name} {de_marke}, gebraucht und generalüberholt. Die Anlage steht in der Werkstatt in Herisau, wird vor der Übergabe geprüft und im vorgeführten Zustand verkauft. Besichtigung nach Vereinbarung.",
+    "prod_intro_occ_tpl": "{name} {de_marke}, gebraucht, generalüberholt und zu verkaufen. Die Anlage steht in der Werkstatt in Herisau, wird vor der Übergabe geprüft und im vorgeführten Zustand verkauft. Besichtigung nach Vereinbarung.",
     "cat_title_occ": "{cat} · gebrauchte Anlagen kaufen in der Schweiz | VES-TECH Swiss",
     "cat_desc_occ": "Gebrauchte Anlagen bei VES-TECH Swiss: {n} Maschinen, {subs}. Geprüft in der Werkstatt in Herisau AR, mit Originalunterlagen. Preis auf Anfrage.",
     "sub_title_occ": "{sub} Occasion · {n} gebrauchte Anlagen | VES-TECH Swiss",
-    "sub_desc_occ": "{sub} gebraucht: {n} Anlagen bei VES-TECH Swiss. Technische Daten, Originalprospekt und Besichtigung nach Vereinbarung. Preis auf Anfrage."
+    "sub_desc_occ": "{sub} gebraucht: {n} Anlagen bei VES-TECH Swiss. Technische Daten, Originalprospekt und Besichtigung nach Vereinbarung. Preis auf Anfrage.",
+    "prod_title_occ": "{marke} {name} gebraucht zu verkaufen · {sub} | VES-TECH Swiss",
+    "prod_title_occ_kurz": "{marke} {name} gebraucht zu verkaufen | VES-TECH Swiss",
+    "prod_desc_occ": "{marke} {name} zu verkaufen: {sub}-Anlage (Microplasma), gebraucht und generalüberholt, Werkstatt Herisau AR. {desc} Preis auf Anfrage."
   },
   "fr": {
     "locale": "fr_CH",
@@ -944,11 +947,14 @@
     "about_role": "Titulaire",
     "redirect_title": "Page déplacée",
     "redirect_text": "Cette page a été déplacée. Continuer vers :",
-    "prod_intro_occ_tpl": "{name} {de_marke}, d’occasion et entièrement révisée. La machine se trouve à l’atelier de Herisau, elle est contrôlée avant la remise et vendue dans l’état présenté. Visite sur rendez-vous.",
+    "prod_intro_occ_tpl": "{name} {de_marke}, d’occasion, entièrement révisée et à vendre. La machine se trouve à l’atelier de Herisau, elle est contrôlée avant la remise et vendue dans l’état présenté. Visite sur rendez-vous.",
     "cat_title_occ": "{cat} · machines d’occasion en Suisse | VES-TECH Swiss",
     "cat_desc_occ": "Machines d’occasion chez VES-TECH Swiss : {n} machines, {subs}. Contrôlées à l’atelier de Herisau AR, avec la documentation d’origine. Prix sur demande.",
     "sub_title_occ": "{sub} occasion · {n} machines d’occasion | VES-TECH Swiss",
-    "sub_desc_occ": "{sub} d’occasion : {n} machines chez VES-TECH Swiss. Données techniques, brochure d’origine et visite sur rendez-vous. Prix sur demande."
+    "sub_desc_occ": "{sub} d’occasion : {n} machines chez VES-TECH Swiss. Données techniques, brochure d’origine et visite sur rendez-vous. Prix sur demande.",
+    "prod_title_occ": "{marke} {name} d’occasion à vendre · {sub} | VES-TECH Swiss",
+    "prod_title_occ_kurz": "{marke} {name} d’occasion à vendre | VES-TECH Swiss",
+    "prod_desc_occ": "{marke} {name} à vendre : installation {sub}, d’occasion et entièrement révisée, atelier de Herisau AR. {desc} Prix sur demande."
   },
   "it": {
     "locale": "it_CH",
@@ -1419,10 +1425,13 @@
     "about_role": "Titolare",
     "redirect_title": "Pagina spostata",
     "redirect_text": "Questa pagina è stata spostata. Continua verso:",
-    "prod_intro_occ_tpl": "{name} {de_marke}, usata e completamente revisionata. La macchina si trova nell’officina di Herisau, viene controllata prima della consegna e venduta nello stato presentato. Visione su appuntamento.",
+    "prod_intro_occ_tpl": "{name} {de_marke}, usata, completamente revisionata e in vendita. La macchina si trova nell’officina di Herisau, viene controllata prima della consegna e venduta nello stato presentato. Visione su appuntamento.",
     "cat_title_occ": "{cat} · macchine usate in Svizzera | VES-TECH Swiss",
     "cat_desc_occ": "Macchine usate da VES-TECH Swiss: {n} macchine, {subs}. Controllate nell’officina di Herisau AR, con documentazione originale. Prezzo su richiesta.",
     "sub_title_occ": "{sub} usato · {n} macchine d’occasione | VES-TECH Swiss",
-    "sub_desc_occ": "{sub} usato: {n} macchine da VES-TECH Swiss. Dati tecnici, prospetto originale e visione su appuntamento. Prezzo su richiesta."
+    "sub_desc_occ": "{sub} usato: {n} macchine da VES-TECH Swiss. Dati tecnici, prospetto originale e visione su appuntamento. Prezzo su richiesta.",
+    "prod_title_occ": "{marke} {name} usato in vendita · {sub} | VES-TECH Swiss",
+    "prod_title_occ_kurz": "{marke} {name} usato in vendita | VES-TECH Swiss",
+    "prod_desc_occ": "{marke} {name} in vendita: impianto {sub}, usato e completamente revisionato, officina di Herisau AR. {desc} Prezzo su richiesta."
   }
 }

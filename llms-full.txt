@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-09-11. Quelle: https://www.ves-tech.ch
+Stand: 2026-09-14. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss in Herisau (AR, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, telefonisch erreichbar Mo-Do 07:30-17:00 · Fr 07:30-11:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -1110,13 +1110,13 @@ Gebrauchte Anlagen aus der eigenen Werkstatt: generalüberholt, komplett revidie
 ### Oerlikon PlasmaFix 51
 URL: https://www.ves-tech.ch/produkte/occasion/plasmafix-51/
 Kategorie: Occasion / Mikroplasma · Typ: Mikroplasma · Art.-Nr.: PLASMAFIX-51 · Preis: auf Anfrage (CHF)
-Mikroplasma-Anlage für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.
+Mikroplasma-Anlage (Microplasma) für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.
 Ausstattung: Verfahren: Mikroplasma · WIG, geglättet und gepulst; Schweissstrom Plasma: 0,08 – 50 A bei 100 % ED; Schweissstrom WIG: 0,8 – 50 A bei 60 % ED; Pulsfrequenz: 1 Hz – 10 kHz; Leerlaufspannung: 106 V; Netzanschluss: 3~ 230/400/440 V · 50/60 Hz; Leistungsfaktor cos φ: 0,91; Primärstrom: 6 A bei 400 V; Bedienung: Tasten und Codes, LCD-Anzeige; Zündung: Hochfrequenz, eingebaut; Kühlung: über Kühlgerät; Schutzart: IP 23; Gewicht: 95 kg; Abmessungen L × B × H: 650 × 360 × 750 mm.
 
 ### Oerlikon PlasmaFix 50 S
 URL: https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/
 Kategorie: Occasion / Mikroplasma · Typ: Mikroplasma · Art.-Nr.: PLASMAFIX-50S · Preis: auf Anfrage (CHF)
-Mikroplasma-Stromquelle ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen.
+Mikroplasma-Stromquelle (Microplasma) ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen.
 Ausstattung: Verfahren: Mikroplasma, geglättet und gepulst; Einstellbereich Strom: 0,05 – 50 A; Dauerstrom bei 100 % ED: 50 A; Pulsfrequenz: 1 Hz – 10 kHz; Leerlaufspannung: 106 V; Schweisskabel-Querschnitt: 16 mm²; Netzanschluss: 3~ 208 – 460 V · 50/60 Hz; Dauerleistung: 3,5 kVA; Netzstrom bei 380 V: 5,3 A; Leistungsfaktor cos φ: 0,94; Netzabsicherung: 10 A; Netzkabel: 4 × 1,5 mm²; Schutzart: IP 21; Gewicht: 98 kg; Abmessungen L × B × H: 645 × 545 × 520 mm.
 
 ---

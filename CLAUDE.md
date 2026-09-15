@@ -27,6 +27,7 @@ Bearbeitet werden also:
 | Produkt, Merkmalsliste, Kategorie | `data/P.json`, `data/CATS.json` |
 | Besonderheiten eines Geräts | `data/HL_DEVICE.json` (wörtlich von MAHE, DE/FR/IT) |
 | Besonderheiten eines Frontpanels | `data/PANEL_HL_DEVICE.json` (ebenso) |
+| Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |
 | Übersetzung eines UI-Textes | `data/UI.json` |

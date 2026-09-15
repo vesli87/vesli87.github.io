@@ -128,6 +128,10 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 | `SPECROW.json` | Zeilenbeschriftungen dieser Tabellen, DE → FR/IT |
 | `SPECNOTE.json` | Fussnoten unter den Tabellen (der Stern in `450*`), DE/FR/IT |
 | `FP.json`, `CTRL.json`, `PANEL_DRAWN.json` | Fronteingabesysteme, Bedienelemente, gezeichnete Panels |
+| `ZUSTAND.json` | **Zustand einer Occasion** (Grad + Text DE/FR/IT), sichtbar auf der Seite und als `itemCondition` |
+| `OCCTEXT.json` | **Beschreibung und Fragen einer Occasion**, DE/FR/IT: Abschnitte unter den Reitern, Fragen zusätzlich als `FAQPage` |
+| `VERWANDT.json` | Verwandte Produkte (Neugerät ↔ Occasion derselben Technik), Karten unter der Detailseite |
+| `DLOCC.json`, `IMGCAP.json` | Prospekte der Occasionen (lokal unter `assets/dl/`), Bildunterschrift zum Hauptbild |
 | `products.json` | **generiert** — öffentlicher, maschinenlesbarer Katalog |
 | `search-{de,fr,it}.json` | **generiert** — Suchindex fürs Frontend |
 
@@ -153,7 +157,7 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
 
 ## 6. SEO
 
-- `<title>` und `meta description` pro Seite einzigartig, Titel ≤ 68 Zeichen
+- `<title>` und `meta description` pro Seite einzigartig, Titel ≤ 68 Zeichen (Occasion ≤ 70, damit das Verfahren im Titel bleibt; `check.py` prüft 70)
 - `canonical` auf jeder Seite, absolut
 - `hreflang` de-CH / fr-CH / it-CH + `x-default` — gegenseitig verlinkt
 - Open Graph + Twitter Card, `og:image` = Produktbild bzw. Hero

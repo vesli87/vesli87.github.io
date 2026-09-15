@@ -291,6 +291,33 @@ def zustandLD(p):
     return ZUSTAND_LD["used"] if p["cat"] == "occasion" else None
 
 
+def occText(lang, p):
+    """Abschnitte und Fragen zu einer Occasion, aus data/OCCTEXT.json.
+
+    Eine Gebrauchtmaschine mit 250 Woertern Text steht in der Suche hinter
+    jeder Galerieseite eines Mitbewerbers, die das Geraet wenigstens
+    beschreibt. Am 15.09.2026 nachgesehen: fuer "oerlikon mikroplasma" lag
+    eine Bildergalerie mit 60 Woertern auf Platz fuenf, die eigene Seite mit
+    Datenblatt und Zustand tauchte gar nicht auf. Was der Kaeufer wissen will
+    (wofuer die Anlage gebaut ist, was P+T bedeutet, was dazugehoert, was
+    revidiert wurde), stand nirgends. Jetzt steht es unter den Reitern, in
+    drei Sprachen, mit den Fragen zusaetzlich als FAQPage im JSON-LD.
+    """
+    d = OCCTEXT.get(p["id"])
+    if not d:
+        return None
+    return d.get(lang) or d.get("de")
+
+
+def verwandt(p):
+    """Produkte, die unter der Detailseite als Karten stehen (VERWANDT.json).
+
+    Nur Kennungen, die es im Katalog gibt: ein Tippfehler in der Datei darf
+    keine tote Karte erzeugen.
+    """
+    return [k for k in VERWANDT.get(p["id"], []) if k in BY_ID]
+
+
 def markeMitPraeposition(lang, p):
     """„von MAHE", „d’Oerlikon", „di Oerlikon" - die Praeposition mitgeliefert.
 
@@ -364,6 +391,8 @@ DLDEV     = _load("DLDEV")       # Anleitungen/Datenblaetter je Geraet bei MAHE
 DLOCC     = _load("DLOCC")       # Prospekte der Occasion-Maschinen, lokal gehostet
 IMGCAP    = _load("IMGCAP")      # Bildunterschrift zum Hauptbild, wo noetig
 ZUSTAND   = _load("ZUSTAND")     # Zustand einer Occasion-Maschine
+OCCTEXT   = _load("OCCTEXT")     # Beschreibung und Fragen zu einer Occasion, DE/FR/IT
+VERWANDT  = _load("VERWANDT")    # Neugeraet <-> Occasion derselben Technik
 GALLERY   = _load("GALLERY")     # Zusatzbilder unter dem Hauptbild
 PANEL_HL_DEVICE = _load("PANEL_HL_DEVICE")  # je Frontpanel, ebenso
 PANEL_SVG_SMALL = _load("PANEL_SVG")

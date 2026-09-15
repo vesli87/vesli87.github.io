@@ -851,6 +851,17 @@
     font-size:14px;line-height:1.55;color:var(--ink);max-width:62ch}
   .zustand b{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.04em;
     text-transform:uppercase;color:var(--accent-ink);margin-right:6px}
+  /* Beschreibung und Fragen einer Occasion unter den Reitern (data/OCCTEXT.json).
+     Lesbreite wie die FAQ-Liste; die h2 im Stil der Abschnittstitel, die
+     Absaetze wie der Einleitungstext der Produktseite, nur in Volltonfarbe. */
+  .otext{max-width:80ch;margin-top:40px}
+  .otext h2{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:22px;margin:34px 0 12px}
+  .otext h2:first-child{margin-top:0}
+  .otext p{font-size:15px;line-height:1.7;margin:0 0 14px}
+  .otext .faqlist{margin-top:8px}
+  .verwandt{margin-top:40px}
+  .verwandt .sec-h{margin-top:0}
+  .verwandt .accgrid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
   .backlink{margin-top:34px}
   .backlink a{font-family:'Barlow Condensed';font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-ink);font-size:15px}
   /* War ein style="margin-top:24px" auf der 404-Seite - das letzte

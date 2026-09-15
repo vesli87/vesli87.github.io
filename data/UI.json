@@ -143,7 +143,9 @@
     "slide_pause": "Diaschau anhalten",
     "slide_play": "Diaschau fortsetzen",
     "zustand_h": "Zustand:",
-    "occ_aktuell": "Aktuell: {liste}."
+    "occ_aktuell": "Aktuell: {liste}.",
+    "occ_faq_h": "Fragen zur Anlage",
+    "verwandt_h": "Ebenfalls interessant"
   },
   "fr": {
     "hours": "Lun–Jeu 07h30–17h00 · Ven 07h30–11h30",
@@ -289,7 +291,9 @@
     "slide_pause": "Arrêter le diaporama",
     "slide_play": "Reprendre le diaporama",
     "zustand_h": "État :",
-    "occ_aktuell": "Actuellement : {liste}."
+    "occ_aktuell": "Actuellement : {liste}.",
+    "occ_faq_h": "Questions sur la machine",
+    "verwandt_h": "Également intéressant"
   },
   "it": {
     "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -435,6 +439,8 @@
     "slide_pause": "Ferma la presentazione",
     "slide_play": "Riprendi la presentazione",
     "zustand_h": "Stato:",
-    "occ_aktuell": "Attualmente: {liste}."
+    "occ_aktuell": "Attualmente: {liste}.",
+    "occ_faq_h": "Domande sulla macchina",
+    "verwandt_h": "Può interessare anche"
   }
 }

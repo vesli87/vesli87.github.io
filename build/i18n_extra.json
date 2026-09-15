@@ -39,7 +39,7 @@
     "kontakt_title": "Kontakt · VES-TECH Swiss, Werkstatt Herisau AR",
     "kontakt_desc": "VES-TECH Swiss, Werkstatt St. Gallerstrasse 49, 9100 Herisau AR. Telefon +41 76 710 91 39. Service und Reparatur für MAHE Schweisstechnik und Schneidtechnik.",
     "faq_title": "Häufige Fragen zu MAHE Schweisstechnik | VES-TECH Swiss",
-    "faq_desc": "Antworten zu Preisen, Verfahrenswahl, Aluminium schweissen, elektrolytischer Reinigung, Plasmaschneiden, EN 1090 und Service in der Schweiz.",
+    "faq_desc": "Antworten zu Preisen, Verfahrenswahl, Aluminium schweissen, elektrolytischer Reinigung, Plasmaschneiden, Occasionen, EN 1090 und Service in der Schweiz.",
     "faq_h1": "Häufige Fragen",
     "faq_lead": "Die Fragen, die uns Kundinnen und Kunden am häufigsten stellen, kurz und direkt beantwortet.",
     "search_title": "Suche | VES-TECH Swiss",
@@ -135,6 +135,14 @@
       {
         "q": "Was ist MIS-Schweissen und HyperPuls bei MAHE?",
         "a": "MIS ist das spritzerfreie MAHE-Verfahren für den Kurzlichtbogen: Der Materialübergang wird geregelt, dadurch entstehen kaum Spritzer und die Nacharbeit entfällt weitgehend. HyperPuls ist der geregelte Impulslichtbogen für höhere Abschmelzleistung bei kontrolliertem Wärmeeintrag. Ergänzt wird das durch HyperCold (minimaler Verzug), HyperRoot (sichere Wurzel), HyperForce (tiefer Einbrand) und HyperUP (Steignaht)."
+      },
+      {
+        "q": "Verkauft VES-TECH Swiss auch gebrauchte Schweissanlagen?",
+        "a": "Ja. Unter Occasion stehen generalüberholte Anlagen aus der eigenen Werkstatt in Herisau, derzeit Mikroplasma-Anlagen Oerlikon PlasmaFix 51 und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft und kann nach Vereinbarung besichtigt werden. Preis auf Anfrage."
+      },
+      {
+        "q": "Was ist Mikroplasma-Schweissen und welche Geräte gibt es dafür?",
+        "a": "Mikroplasma (Microplasma) ist Plasmaschweissen für dünnste Werkstoffe ab etwa 0,05 mm: Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon bei einem Bruchteil eines Ampere stabil. Neu bietet VES-TECH die MAHE PlasmaTIG, gebraucht und generalüberholt die Oerlikon PlasmaFix 51 (Ausführungen 51 und P+T) und die Oerlikon PlasmaFix 50 S."
       }
     ],
     "impressum_body": [
@@ -474,7 +482,7 @@
     "cat_desc_occ": "Gebrauchte Anlagen bei VES-TECH Swiss: {n} Maschinen, {subs}. Geprüft in der Werkstatt in Herisau AR, mit Originalunterlagen. Preis auf Anfrage.",
     "sub_title_occ": "{sub} Occasion · {n} gebrauchte Anlagen | VES-TECH Swiss",
     "sub_desc_occ": "{sub} gebraucht: {n} Anlagen bei VES-TECH Swiss. Technische Daten, Originalprospekt und Besichtigung nach Vereinbarung. Preis auf Anfrage.",
-    "prod_title_occ": "{marke} {name} gebraucht zu verkaufen · {sub} | VES-TECH Swiss",
+    "prod_title_occ": "{marke} {name} {sub} gebraucht kaufen | VES-TECH Swiss",
     "prod_title_occ_kurz": "{marke} {name} gebraucht zu verkaufen | VES-TECH Swiss",
     "prod_desc_occ": "{marke} {name} zu verkaufen: {sub}-Anlage (Microplasma), gebraucht und generalüberholt, Werkstatt Herisau AR. {desc} Preis auf Anfrage."
   },
@@ -517,7 +525,7 @@
     "kontakt_title": "Contact · VES-TECH Swiss, atelier Herisau AR",
     "kontakt_desc": "VES-TECH Swiss, atelier St. Gallerstrasse 49, 9100 Herisau AR. Téléphone +41 76 710 91 39. Conseil, service et réparation pour le soudage et la découpe MAHE.",
     "faq_title": "Questions fréquentes sur le soudage MAHE | VES-TECH Swiss",
-    "faq_desc": "Réponses sur les prix, le choix du procédé, le soudage de l'aluminium, le nettoyage électrolytique, la découpe plasma, EN 1090 et le service en Suisse.",
+    "faq_desc": "Réponses sur les prix, le choix du procédé, l'aluminium, le nettoyage électrolytique, la découpe plasma, les occasions, EN 1090 et le service en Suisse.",
     "faq_h1": "Questions fréquentes",
     "faq_lead": "Les questions que nos clientes et clients nous posent le plus souvent, réponses courtes et directes.",
     "search_title": "Recherche | VES-TECH Swiss",
@@ -613,6 +621,14 @@
       {
         "q": "Qu'est-ce que le soudage MIS et HyperPuls chez MAHE ?",
         "a": "MIS est le procédé MAHE sans projections pour l'arc court : le transfert de matière est régulé, il n'y a donc quasiment pas de projections et la reprise devient superflue. HyperPuls est l'arc pulsé régulé pour un taux de dépôt élevé avec apport de chaleur maîtrisé. S'y ajoutent HyperCold (déformation minimale), HyperRoot (racine sûre), HyperForce (pénétration profonde) et HyperUP (soudure montante)."
+      },
+      {
+        "q": "VES-TECH Swiss vend-elle aussi des machines à souder d’occasion ?",
+        "a": "Oui. Sous Occasion se trouvent des machines entièrement révisées dans notre propre atelier de Herisau, actuellement les installations microplasma Oerlikon PlasmaFix 51 et Oerlikon PlasmaFix 50 S. Chaque machine est contrôlée avant la remise et peut être visitée sur rendez-vous. Prix sur demande."
+      },
+      {
+        "q": "Qu’est-ce que le soudage microplasma et quelles machines existent pour cela ?",
+        "a": "Le microplasma est le soudage plasma des matériaux les plus minces, dès 0,05 mm environ : l’arc est étranglé dans une buse refroidie et reste ainsi stable dès une fraction d’ampère. En neuf, VES-TECH propose la MAHE PlasmaTIG ; en occasion révisée, la Oerlikon PlasmaFix 51 (versions 51 et P+T) et la Oerlikon PlasmaFix 50 S."
       }
     ],
     "impressum_body": [
@@ -952,7 +968,7 @@
     "cat_desc_occ": "Machines d’occasion chez VES-TECH Swiss : {n} machines, {subs}. Contrôlées à l’atelier de Herisau AR, avec la documentation d’origine. Prix sur demande.",
     "sub_title_occ": "{sub} occasion · {n} machines d’occasion | VES-TECH Swiss",
     "sub_desc_occ": "{sub} d’occasion : {n} machines chez VES-TECH Swiss. Données techniques, brochure d’origine et visite sur rendez-vous. Prix sur demande.",
-    "prod_title_occ": "{marke} {name} d’occasion à vendre · {sub} | VES-TECH Swiss",
+    "prod_title_occ": "{marke} {name} {sub} occasion à vendre | VES-TECH Swiss",
     "prod_title_occ_kurz": "{marke} {name} d’occasion à vendre | VES-TECH Swiss",
     "prod_desc_occ": "{marke} {name} à vendre : installation {sub}, d’occasion et entièrement révisée, atelier de Herisau AR. {desc} Prix sur demande."
   },
@@ -995,7 +1011,7 @@
     "kontakt_title": "Contatto · VES-TECH Swiss, officina Herisau AR",
     "kontakt_desc": "VES-TECH Swiss, officina St. Gallerstrasse 49, 9100 Herisau AR. Telefono +41 76 710 91 39. Consulenza, assistenza e riparazione per saldatura e taglio MAHE.",
     "faq_title": "Domande frequenti sulla saldatura MAHE | VES-TECH Swiss",
-    "faq_desc": "Risposte su prezzi, scelta del processo, saldatura dell'alluminio, pulizia elettrolitica, taglio al plasma, EN 1090 e assistenza in Svizzera.",
+    "faq_desc": "Risposte su prezzi, scelta del processo, saldatura dell'alluminio, pulizia elettrolitica, taglio al plasma, occasioni, EN 1090 e assistenza in Svizzera.",
     "faq_h1": "Domande frequenti",
     "faq_lead": "Le domande che i clienti ci pongono più spesso, risposte brevi e dirette.",
     "search_title": "Ricerca | VES-TECH Swiss",
@@ -1091,6 +1107,14 @@
       {
         "q": "Che cosa sono la saldatura MIS e HyperPuls di MAHE?",
         "a": "MIS è il processo MAHE senza spruzzi per l'arco corto: il trasferimento del materiale è regolato, quindi non si formano quasi spruzzi e la ripresa diventa superflua. HyperPuls è l'arco pulsato regolato per una resa maggiore con apporto termico controllato. Si aggiungono HyperCold (deformazione minima), HyperRoot (radice sicura), HyperForce (penetrazione profonda) e HyperUP (saldatura in salita)."
+      },
+      {
+        "q": "VES-TECH Swiss vende anche saldatrici usate?",
+        "a": "Sì. Sotto Occasioni si trovano macchine completamente revisionate nella nostra officina di Herisau, attualmente gli impianti microplasma Oerlikon PlasmaFix 51 e Oerlikon PlasmaFix 50 S. Ogni macchina viene controllata prima della consegna e può essere visitata su appuntamento. Prezzo su richiesta."
+      },
+      {
+        "q": "Che cos’è la saldatura microplasma e quali macchine esistono?",
+        "a": "Il microplasma è la saldatura al plasma dei materiali più sottili, da circa 0,05 mm: l’arco viene strozzato in un ugello raffreddato e resta così stabile già con una frazione di ampere. Nuova, VES-TECH offre la MAHE PlasmaTIG; usata e revisionata, la Oerlikon PlasmaFix 51 (versioni 51 e P+T) e la Oerlikon PlasmaFix 50 S."
       }
     ],
     "impressum_body": [
@@ -1430,7 +1454,7 @@
     "cat_desc_occ": "Macchine usate da VES-TECH Swiss: {n} macchine, {subs}. Controllate nell’officina di Herisau AR, con documentazione originale. Prezzo su richiesta.",
     "sub_title_occ": "{sub} usato · {n} macchine d’occasione | VES-TECH Swiss",
     "sub_desc_occ": "{sub} usato: {n} macchine da VES-TECH Swiss. Dati tecnici, prospetto originale e visione su appuntamento. Prezzo su richiesta.",
-    "prod_title_occ": "{marke} {name} usato in vendita · {sub} | VES-TECH Swiss",
+    "prod_title_occ": "{marke} {name} {sub} usato in vendita | VES-TECH Swiss",
     "prod_title_occ_kurz": "{marke} {name} usato in vendita | VES-TECH Swiss",
     "prod_desc_occ": "{marke} {name} in vendita: impianto {sub}, usato e completamente revisionato, officina di Herisau AR. {desc} Prezzo su richiesta."
   }

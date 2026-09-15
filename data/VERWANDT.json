@@ -1,0 +1,6 @@
+{
+  "_kommentar": "Verwandte Produkte, die unter der Detailseite als Karten stehen (Abschnitt 'Ebenfalls interessant'). Verbindet Neugeraet und Occasion derselben Technik in beide Richtungen: Wer die gebrauchte Oerlikon sucht, sieht die neue MAHE; wer die neue MAHE ansieht, erfaehrt von der Occasion. Fuer Suchmaschinen entsteht daraus ein Themenverbund Mikroplasma.",
+  "plasma-tig": ["plasmafix-51", "plasmafix-50s"],
+  "plasmafix-51": ["plasma-tig", "plasmafix-50s"],
+  "plasmafix-50s": ["plasma-tig", "plasmafix-51"]
+}

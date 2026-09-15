@@ -276,7 +276,24 @@ def fremdmarken():
             i = t.find('<div class="cbar">')
         j = t.find("<footer")
         kern = t[i:j] if i >= 0 and j > i else t
-        if C.BRAND in kern:
+        # Der Abschnitt "Ebenfalls interessant" (data/VERWANDT.json) zeigt
+        # unter der Occasion das neue MAHE-Geraet derselben Technik - als
+        # eigene Karte mit eigenem Namen, nicht als Zuschreibung. Er wird
+        # hier ausgenommen, alles davor und danach bleibt geprueft. Sollte
+        # in der Karte selbst "MAHE PlasmaFix" stehen, faengt es die
+        # Pruefung der Kartentitel weiter unten.
+        v = kern.find('<div class="verwandt">')
+        if v >= 0:
+            w = kern.find('<p class="backlink">', v)
+            kern_ohne = kern[:v] + (kern[w:] if w > v else "")
+            for n in namen:
+                for m in _re.finditer(_re.escape(n), kern[v:w if w > v else None]):
+                    davor = kern[v:v + m.start()].rstrip()
+                    if davor.endswith(C.BRAND):
+                        err(f"{url}: '{C.BRAND} {n}' im Abschnitt Verwandtes")
+        else:
+            kern_ohne = kern
+        if C.BRAND in kern_ohne:
             err(f"{url}: '{C.BRAND}' steht im Inhalt einer {marke}-Seite")
         # Der ganze <head>, nicht drei ausgesuchte Felder. Geprueft wurde
         # zuerst nur title/description/og:title - og:description,
@@ -343,12 +360,34 @@ def fremdmarken():
                 s = _json.dumps(e, ensure_ascii=False)
                 if any(n in s for n in namen) and C.BRAND in s:
                     err(f"data/search-{l}.json: '{C.BRAND}' bei einem Fremdfabrikat")
+        # Eine Zeile, die einen Fremdnamen und MAHE nennt, war bisher immer
+        # ein Fehler. Seit dem 15.09.2026 vergleicht eine Antwort der FAQ das
+        # neue MAHE-Geraet mit der gebrauchten Oerlikon in einem Satz - und
+        # das ist keine Verwechslung, solange jeder Fremdname seine eigene
+        # Marke direkt vor sich traegt ("Oerlikon PlasmaFix 51"). Fehlt sie
+        # auch nur einmal, bleibt es ein Fehler: dann ist nicht mehr zu
+        # sehen, wessen Geraet gemeint ist.
+        marke_von = {x["name"]: C.pBrand(x) for x in fremd}
+
+        def zugeordnet(zeile):
+            for n, m in marke_von.items():
+                start = 0
+                while True:
+                    i = zeile.find(n, start)
+                    if i < 0:
+                        break
+                    if not zeile[:i].rstrip().endswith(m):
+                        return False
+                    start = i + len(n)
+            return True
+
         for datei in ("llms.txt", "llms-full.txt"):
             f = C.ROOT / datei
             if not f.exists():
                 continue
             for zeile in f.read_text("utf-8").splitlines():
-                if any(n in zeile for n in namen) and C.BRAND in zeile:
+                if (any(n in zeile for n in namen) and C.BRAND in zeile
+                        and not zugeordnet(zeile)):
                     err(f"{datei}: '{C.BRAND}' bei einem Fremdfabrikat - {zeile.strip()[:70]}")
 
     for p in C.P:

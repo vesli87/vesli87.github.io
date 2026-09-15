@@ -313,17 +313,33 @@ def opt_html(lang, p):
             f'<p class="optnote">{e(C.t(lang,"opt_note"))}</p>')
 
 
-def karten(lang, ids):
-    """Ein Raster aus Produktkarten – fuer beide Richtungen der Zuordnung."""
+def karten(lang, ids, mit_marke=False):
+    """Ein Raster aus Produktkarten – fuer beide Richtungen der Zuordnung.
+
+    mit_marke: die Kennzeile nennt auch bei MAHE die Marke. Gebraucht im
+    Abschnitt "Ebenfalls interessant", wo das neue MAHE-Geraet neben der
+    gebrauchten Oerlikon steht - dort ist "MAHE · Plasma TIG" gegen
+    "Occasion · Mikroplasma" genau der Unterschied, der zaehlt.
+    """
     cards = ""
     for pid in ids:
         a = C.BY_ID[pid]
         alt = "%s %s" % (C.pBrand(a), C.pName(lang, a))
         im = R.img_tag(a["img"], "(max-width:760px) 40vw, 180px", alt=alt)
+        # Im MAHE-Katalog heisst die Karte nach dem Geraet. Eine Fremdmarke
+        # traegt ihren Namen, und eine Occasion sagt in der Kennzeile, dass
+        # sie gebraucht ist - sonst stuende neben dem neuen MAHE-Geraet eine
+        # Karte, die wie ein zweites Neugeraet aussieht.
+        titel = C.pName(lang, a) if C.istMahe(a) else f"{C.pBrand(a)} {C.pName(lang, a)}"
+        kennzeile = C.vtT(lang, a["vt"])
+        if a["cat"] == "occasion":
+            kennzeile = f"{C.catT(lang, C.CAT_BY_ID['occasion'])} · {kennzeile}"
+        elif mit_marke:
+            kennzeile = f"{C.pBrand(a)} · {kennzeile}"
         cards += (
             f'<a class="acccard" href="{e(C.u_prod(lang, a))}">'
             f'<div class="im">{im}</div>'
-            f'<div class="bd"><div class="vt">{e(C.vtT(lang, a["vt"]))}</div><h3>{e(C.pName(lang, a))}</h3>'
+            f'<div class="bd"><div class="vt">{e(kennzeile)}</div><h3>{e(titel)}</h3>'
             f'<p>{e(C.pDesc(lang, a))}</p></div></a>'
         )
     return f'<div class="accgrid">{cards}</div>'
@@ -346,6 +362,35 @@ def acc_html(lang, p):
     # Weder das eine noch das andere: der Reiter entfaellt. Der Satz, der hier
     # stand, war auf einem Ersatzkabel ausserdem falsch - es ist kein Geraet.
     return ""
+
+
+def occ_text_html(lang, p):
+    """Beschreibung und Fragen einer Occasion (data/OCCTEXT.json).
+
+    Sichtbar unter den Reitern, nicht in einem Reiter: Wer die Seite liest,
+    soll den Text sehen, ohne zu klicken. Die Fragen werden mit faq_block
+    gesetzt (h2-Abschnitt, h3-Fragen) und stehen zusaetzlich als FAQPage im
+    JSON-LD.
+    """
+    ot = C.occText(lang, p)
+    if not ot:
+        return ""
+    teile = "".join(
+        f'<h2>{e(a["h"])}</h2>' + "".join(f"<p>{e(x)}</p>" for x in a["p"])
+        for a in ot.get("abschnitte", []))
+    fragen = (R.faq_block(lang, ot["faq"], h=C.t(lang, "occ_faq_h"))
+              if ot.get("faq") else "")
+    return f'<div class="otext">{teile}{fragen}</div>'
+
+
+def verwandt_html(lang, p):
+    """Karten zu verwandten Produkten (data/VERWANDT.json), z. B. das neue
+    MAHE-Geraet unter der Occasion derselben Technik und umgekehrt."""
+    ids = C.verwandt(p)
+    if not ids:
+        return ""
+    return (f'<div class="verwandt"><h2 class="sec-h">{e(C.t(lang, "verwandt_h"))}</h2>'
+            f'{karten(lang, ids, mit_marke=True)}</div>')
 
 
 def dl_html(lang, p):
@@ -661,8 +706,15 @@ def page_product(lang, p):
         # der Beschreibung. Am 14.09.2026 mit einer solchen Suche nachgesehen:
         # die Seite stand nicht unter den ersten drei, ein Mitbewerber mit
         # genau dieser Wortwahl schon.
+        #
+        # Am 15.09.2026 noch einmal nachgesehen, diesmal mit "oerlikon
+        # mikroplasma": das Verfahren war aus dem Titel gefallen, weil die
+        # lange Vorlage ("... zu verkaufen · Mikroplasma | ...") ueber 68
+        # Zeichen kam und die kurze Stufe es nicht mehr enthielt. Fuer genau
+        # das gesuchte Wort war der Titel damit blind. Die Vorlage nennt das
+        # Verfahren jetzt vor dem Kaufwort; die Grenze ist die von check.py.
         title = C.t(lang, "prod_title_occ", marke=mk, name=nm, sub=sub_t)
-        if len(title) > 68:
+        if len(title) > 70:
             title = C.t(lang, "prod_title_occ_kurz", marke=mk, name=nm)
         desc = clip(C.t(lang, "prod_desc_occ", marke=mk, name=nm, sub=sub_t,
                         desc=C.pDesc(lang, p)), 155)
@@ -732,6 +784,11 @@ def page_product(lang, p):
         f'aria-labelledby="tb-{k}"><h2 class="sr-only">{e(n)}</h2>{panes[k]}</section>'
         for i, (k, n) in enumerate(tabs))
 
+    # Bei MAHE steht die Marke im Kicker, die Ueberschrift ist der Gerätename;
+    # so ist der ganze Katalog gebaut. Eine Fremdmarke traegt sie in der h1,
+    # denn "PlasmaFix 51" allein sagt nicht, wessen Anlage das ist, und
+    # gesucht wird "oerlikon plasmafix 51" und nie das Wort allein.
+    h1 = nm if C.istMahe(p) else f"{mk} {nm}"
     body = f"""
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
@@ -739,7 +796,7 @@ def page_product(lang, p):
     {media_html(lang, p, nm)}
     <div class="dinfo">
       <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
-      <h1>{e(nm)}</h1>
+      <h1>{e(h1)}</h1>
       <p class="lead">{e(C.pDesc(lang, p))}</p>
       {procs_block(lang, p)}
       <div class="pmeta">
@@ -768,13 +825,24 @@ def page_product(lang, p):
     {panehtml}
   </div>
   <noscript><style>{R.NOSCRIPT_CSS}</style></noscript>
+  {occ_text_html(lang, p)}
+  {verwandt_html(lang, p)}
 
   <p class="backlink"><a href="{e(C.u_cat(lang, p['cat']))}">← {e(C.t(lang,'back_to_cat'))}</a></p>
 </div></div>
 """
+    # primaryImageOfPage war auf jeder Produktseite das Titelbild der
+    # Startseite - die Vorlage fuer alle WebPage-Knoten kennt nur dieses.
+    # Auf einer Produktseite ist das Hauptbild das Produktfoto.
     ld = [R.ld_org(lang), R.ld_product(lang, p),
-          R.ld_webpage(lang, url, title, desc, {"@type": "ItemPage"}),
+          R.ld_webpage(lang, url, title, desc, {
+              "@type": "ItemPage",
+              "primaryImageOfPage": {"@type": "ImageObject",
+                                     "url": R.img_abs(p["img"], 1000)}}),
           R.ld_breadcrumb(crumb[:-1] + [(nm, url)])]
+    ot = C.occText(lang, p)
+    if ot and ot.get("faq"):
+        ld.append(R.ld_faq_subset(lang, ot["faq"], url))
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
                            jsonld_blocks=ld, body=body, og_type="product",
                            og_image=R.img_abs(p["img"], 1000))

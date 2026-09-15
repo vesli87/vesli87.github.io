@@ -1,0 +1,148 @@
+{
+  "_kommentar": "Beschreibung einer Occasion-Maschine unter den Reitern: Abschnitte (h2 + Absaetze) und Fragen mit Antworten (FAQPage im JSON-LD). Quellen: der Herstellerprospekt (assets/dl/) und die Angaben des Inhabers zur Revision. Was hier steht, behauptet die Website gegenueber dem Kaeufer. Nichts eintragen, was nicht belegt ist.",
+  "plasmafix-51": {
+    "de": {
+      "abschnitte": [
+        {"h": "Wofür die PlasmaFix 51 gebaut ist",
+         "p": ["Mikroplasma, international Microplasma geschrieben, ist Plasmaschweissen für die dünnsten Werkstoffe. Der Lichtbogen wird in einer wassergekühlten Düse eingeschnürt und bleibt dadurch auch bei einem Bruchteil eines Ampere stabil, wo ein freier WIG-Lichtbogen längst abreisst. Der Wärmeeintrag ist klein und eng begrenzt, das Werkstück verzieht sich kaum, und die Naht braucht meist keine Nacharbeit.",
+               "Die PlasmaFix 51 schweisst ab 0,08 A. Ihr Bereich sind Folien und Bleche ab 0,06 mm bis etwa 1 mm; darüber ist WIG das passendere Verfahren. Typische Arbeiten: Kapillarrohre, Membranen, Faltenbälge, Thermoelemente, Drahtgewebe und Siebe, Filter, Kleinteile der Mess- und Medizintechnik, Wärmetauscher, Schmuck. Geeignet für rostfreien Stahl, Nickel- und Kupfer-Nickel-Legierungen, Titan, Tantal, Zirkonium, Silber und Gold. Aluminium und seine Legierungen lassen sich mit dem Verfahren nicht schweissen."]},
+        {"h": "Ausführung 51 und Ausführung P+T",
+         "p": ["Beide Ausführungen gehören zur Baureihe 51, die der Hersteller SAF unter dem Namen NERTAMATIC 51 führte. P+T steht für Plasma + TIG und benennt, was die Baureihe kann: Sie schweisst im Mikroplasma-Verfahren mit 0,08 bis 50 A oder als feines WIG-Gerät mit 0,8 bis 50 A, jeweils geglättet oder gepulst mit 1 Hz bis 10 kHz. Die Bedienung erfolgt über Tasten und eine LCD-Anzeige, 100 Schweissprogramme lassen sich speichern, die Hochfrequenzzündung ist eingebaut."]},
+        {"h": "Was zu einer kompletten Anlage gehört",
+         "p": ["Eine komplette Mikroplasma-Anlage dieser Baureihe besteht aus der Stromquelle, einem wassergekühlten Brenner SP 45 für Hand- oder Maschinenschweissen, dem Kühlgerät REFRISAF 51 und zwei Druckminderern mit Durchflussmesser für Plasma- und Schutzgas. Als Plasmagas dient reines Argon; als Ring- und Schutzgas je nach Werkstoff Argon mit 5 % Wasserstoff oder Helium. Was bei den drei angebotenen Anlagen jeweils mitgeliefert wird, hält das schriftliche Angebot fest. Verschleissteile wie Düsen und Elektroden für die PlasmaFix 51 sind im Fachhandel weiterhin erhältlich."]},
+        {"h": "Warum eine Occasion aus der eigenen Werkstatt",
+         "p": ["Alle drei Anlagen wurden in der Werkstatt in Herisau komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt. Jede Anlage wird vor der Übergabe geprüft und läuft bei der Besichtigung vor. Die Beratung kommt vom Techniker, der die Anlagen selbst revidiert hat. Welche Gewährleistungsfrist für die jeweilige Anlage gilt, steht im schriftlichen Angebot; die Grundlage dafür sind unsere AGB."]}
+      ],
+      "faq": [
+        {"q": "Was ist Mikroplasma-Schweissen?",
+         "a": "Eine Variante des Plasmaschweissens für sehr dünne Werkstoffe. Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon ab etwa 0,1 A stabil. Der Wärmeeintrag ist klein, das Werkstück verzieht sich kaum. International wird das Verfahren Microplasma geschrieben."},
+        {"q": "Welche Blechdicken schweisst die Oerlikon PlasmaFix 51?",
+         "a": "Folien und Bleche ab 0,06 mm bis etwa 1 mm, zum Beispiel rostfreien Stahl, Nickellegierungen, Titan, Tantal, Silber oder Gold. Für Aluminium ist das Verfahren nicht geeignet, für dickere Bleche ist WIG die bessere Wahl."},
+        {"q": "Was bedeutet P+T bei der PlasmaFix?",
+         "a": "Plasma + TIG. Die Anlage schweisst im Mikroplasma-Verfahren mit 0,08 bis 50 A und als WIG-Gerät mit 0,8 bis 50 A, jeweils geglättet oder gepulst bis 10 kHz."},
+        {"q": "Was wurde bei der Generalüberholung gemacht?",
+         "a": "Alle drei Anlagen wurden komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt. Vor der Übergabe wird jede Anlage geprüft und vorgeführt."},
+        {"q": "Kann ich die Anlage vor dem Kauf ansehen?",
+         "a": "Ja. Besichtigung und Vorführung in der Werkstatt in Herisau AR nach Vereinbarung, Termin per Telefon oder über das Kontaktformular."},
+        {"q": "Gibt es auf eine Occasion eine Garantie?",
+         "a": "Eine Herstellergarantie besteht bei einer gebrauchten Anlage nicht. Die gesetzliche Gewährleistung gilt; welche Frist für die jeweilige Anlage vereinbart ist, hält das schriftliche Angebot fest. Einzelheiten stehen in den AGB."}
+      ]
+    },
+    "fr": {
+      "abschnitte": [
+        {"h": "À quoi sert la PlasmaFix 51",
+         "p": ["Le microplasma est le soudage plasma des matériaux les plus minces. L’arc est étranglé dans une buse refroidie à l’eau et reste ainsi stable même à une fraction d’ampère, là où un arc TIG libre s’est éteint depuis longtemps. L’apport de chaleur est faible et localisé, la pièce ne se déforme pratiquement pas et le cordon ne demande généralement aucune reprise.",
+               "La PlasmaFix 51 soude à partir de 0,08 A. Son domaine, ce sont les feuilles et tôles de 0,06 mm à 1 mm environ ; au-delà, le TIG convient mieux. Travaux typiques : tubes capillaires, membranes, soufflets, thermocouples, toiles et tamis métalliques, filtres, petites pièces de mesure et de technique médicale, échangeurs de chaleur, bijouterie. Convient à l’acier inoxydable, aux alliages de nickel et de cupronickel, au titane, au tantale, au zirconium, à l’argent et à l’or. L’aluminium et ses alliages ne se soudent pas avec ce procédé."]},
+        {"h": "Version 51 et version P+T",
+         "p": ["Les deux versions appartiennent à la série 51, que le fabricant SAF commercialisait sous le nom de NERTAMATIC 51. P+T signifie Plasma + TIG et désigne ce que la série sait faire : souder en microplasma de 0,08 à 50 A ou en TIG fin de 0,8 à 50 A, en courant lisse ou pulsé de 1 Hz à 10 kHz. La commande se fait par touches et écran LCD, 100 programmes de soudage peuvent être mémorisés, l’amorçage haute fréquence est intégré."]},
+        {"h": "Ce qui compose une installation complète",
+         "p": ["Une installation microplasma complète de cette série comprend la source de courant, une torche SP 45 refroidie à l’eau pour le soudage manuel ou automatique, le groupe de refroidissement REFRISAF 51 et deux détendeurs-débitmètres pour le gaz plasma et le gaz de protection. Le gaz plasma est de l’argon pur ; le gaz annulaire et de protection est, selon le matériau, de l’argon à 5 % d’hydrogène ou de l’hélium. Ce qui est livré avec chacune des trois machines proposées figure dans l’offre écrite. Les pièces d’usure comme les buses et les électrodes pour la PlasmaFix 51 restent disponibles dans le commerce spécialisé."]},
+        {"h": "Pourquoi une occasion de notre propre atelier",
+         "p": ["Les trois machines ont été entièrement révisées dans l’atelier de Herisau ; le refroidissement par eau, pompe et tuyaux compris, a été remplacé. Chaque machine est contrôlée avant la remise et fonctionne lors de la visite. Le conseil vient du technicien qui a révisé les machines lui-même. Le délai de garantie applicable à chaque machine figure dans l’offre écrite ; nos CG en sont la base."]}
+      ],
+      "faq": [
+        {"q": "Qu’est-ce que le soudage microplasma ?",
+         "a": "Une variante du soudage plasma pour les matériaux très minces. L’arc est étranglé dans une buse refroidie et reste ainsi stable dès 0,1 A environ. L’apport de chaleur est faible, la pièce ne se déforme pratiquement pas."},
+        {"q": "Quelles épaisseurs la Oerlikon PlasmaFix 51 soude-t-elle ?",
+         "a": "Des feuilles et tôles de 0,06 mm à 1 mm environ, par exemple en acier inoxydable, alliages de nickel, titane, tantale, argent ou or. Le procédé ne convient pas à l’aluminium ; pour les tôles plus épaisses, le TIG est le meilleur choix."},
+        {"q": "Que signifie P+T sur la PlasmaFix ?",
+         "a": "Plasma + TIG. La machine soude en microplasma de 0,08 à 50 A et en TIG de 0,8 à 50 A, en courant lisse ou pulsé jusqu’à 10 kHz."},
+        {"q": "Qu’a-t-on fait lors de la révision générale ?",
+         "a": "Les trois machines ont été entièrement révisées ; le refroidissement par eau, pompe et tuyaux compris, a été remplacé. Avant la remise, chaque machine est contrôlée et présentée en fonctionnement."},
+        {"q": "Puis-je voir la machine avant l’achat ?",
+         "a": "Oui. Visite et démonstration à l’atelier de Herisau AR sur rendez-vous, par téléphone ou via le formulaire de contact."},
+        {"q": "Y a-t-il une garantie sur une occasion ?",
+         "a": "Il n’y a pas de garantie du fabricant sur une machine d’occasion. La garantie légale s’applique ; le délai convenu pour chaque machine figure dans l’offre écrite. Les détails sont dans les CG."}
+      ]
+    },
+    "it": {
+      "abschnitte": [
+        {"h": "A cosa serve la PlasmaFix 51",
+         "p": ["Il microplasma è la saldatura al plasma dei materiali più sottili. L’arco viene strozzato in un ugello raffreddato ad acqua e resta così stabile anche con una frazione di ampere, dove un arco TIG libero si è spento da tempo. L’apporto termico è ridotto e localizzato, il pezzo non si deforma quasi e il cordone di solito non richiede ripresa.",
+               "La PlasmaFix 51 salda a partire da 0,08 A. Il suo campo sono fogli e lamiere da 0,06 mm a circa 1 mm; oltre è più adatto il TIG. Lavori tipici: tubi capillari, membrane, soffietti, termocoppie, reti e setacci metallici, filtri, minuteria per strumenti di misura e tecnica medicale, scambiatori di calore, gioielleria. Adatta ad acciaio inossidabile, leghe di nichel e cupronichel, titanio, tantalio, zirconio, argento e oro. L’alluminio e le sue leghe non si saldano con questo procedimento."]},
+        {"h": "Versione 51 e versione P+T",
+         "p": ["Entrambe le versioni appartengono alla serie 51, che il costruttore SAF commercializzava con il nome NERTAMATIC 51. P+T sta per Plasma + TIG e indica ciò che la serie sa fare: salda in microplasma da 0,08 a 50 A oppure in TIG fine da 0,8 a 50 A, in corrente continua o pulsata da 1 Hz a 10 kHz. I comandi sono a tasti con display LCD, si possono memorizzare 100 programmi di saldatura, l’innesco ad alta frequenza è integrato."]},
+        {"h": "Di cosa si compone un impianto completo",
+         "p": ["Un impianto microplasma completo di questa serie comprende il generatore, una torcia SP 45 raffreddata ad acqua per saldatura manuale o automatica, il gruppo di raffreddamento REFRISAF 51 e due riduttori di pressione con flussometro per gas plasma e gas di protezione. Il gas plasma è argon puro; il gas anulare e di protezione è, a seconda del materiale, argon con il 5 % di idrogeno oppure elio. Cosa viene fornito con ciascuna delle tre macchine offerte è indicato nell’offerta scritta. Le parti di consumo come ugelli ed elettrodi per la PlasmaFix 51 sono ancora reperibili nel commercio specializzato."]},
+        {"h": "Perché un’occasione dalla nostra officina",
+         "p": ["Le tre macchine sono state completamente revisionate nell’officina di Herisau; il raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito. Ogni macchina viene controllata prima della consegna e funziona durante la visita. La consulenza viene dal tecnico che ha revisionato le macchine di persona. Il termine di garanzia applicabile a ciascuna macchina è indicato nell’offerta scritta; la base sono le nostre CG."]}
+      ],
+      "faq": [
+        {"q": "Che cos’è la saldatura microplasma?",
+         "a": "Una variante della saldatura al plasma per materiali molto sottili. L’arco viene strozzato in un ugello raffreddato e resta così stabile già da circa 0,1 A. L’apporto termico è ridotto, il pezzo non si deforma quasi."},
+        {"q": "Quali spessori salda la Oerlikon PlasmaFix 51?",
+         "a": "Fogli e lamiere da 0,06 mm a circa 1 mm, per esempio acciaio inossidabile, leghe di nichel, titanio, tantalio, argento o oro. Il procedimento non è adatto all’alluminio; per lamiere più spesse il TIG è la scelta migliore."},
+        {"q": "Cosa significa P+T sulla PlasmaFix?",
+         "a": "Plasma + TIG. La macchina salda in microplasma da 0,08 a 50 A e in TIG da 0,8 a 50 A, in corrente continua o pulsata fino a 10 kHz."},
+        {"q": "Cosa è stato fatto nella revisione generale?",
+         "a": "Le tre macchine sono state completamente revisionate; il raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito. Prima della consegna ogni macchina viene controllata e mostrata in funzione."},
+        {"q": "Posso vedere la macchina prima dell’acquisto?",
+         "a": "Sì. Visita e dimostrazione nell’officina di Herisau AR su appuntamento, per telefono o tramite il modulo di contatto."},
+        {"q": "C’è una garanzia su un’occasione?",
+         "a": "Su una macchina usata non c’è garanzia del costruttore. Vale la garanzia legale; il termine concordato per ciascuna macchina è indicato nell’offerta scritta. I dettagli sono nelle CG."}
+      ]
+    }
+  },
+  "plasmafix-50s": {
+    "de": {
+      "abschnitte": [
+        {"h": "Wofür die PlasmaFix 50 S gebaut ist",
+         "p": ["Die PlasmaFix 50 S ist eine Mikroplasma-Stromquelle (Microplasma) für feinste Arbeiten: Sie schweisst ab 0,05 A Folien von 0,01 mm, Drahtgitter und kleine Armaturen, geglättet oder gepulst mit 1 Hz bis 10 kHz. Wie bei jeder Mikroplasma-Anlage wird der Lichtbogen in einer wassergekühlten Düse eingeschnürt; er bleibt dadurch bei kleinsten Strömen stabil und bringt nur wenig Wärme ins Werkstück."]},
+        {"h": "Warum eine Occasion aus der eigenen Werkstatt",
+         "p": ["Die Anlage wurde in der Werkstatt in Herisau komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt. Sie wird vor der Übergabe geprüft und läuft bei der Besichtigung vor. Die Beratung kommt vom Techniker, der die Anlage selbst revidiert hat. Welche Gewährleistungsfrist gilt, steht im schriftlichen Angebot; die Grundlage dafür sind unsere AGB."]}
+      ],
+      "faq": [
+        {"q": "Was ist Mikroplasma-Schweissen?",
+         "a": "Eine Variante des Plasmaschweissens für sehr dünne Werkstoffe. Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon ab etwa 0,1 A stabil. Der Wärmeeintrag ist klein, das Werkstück verzieht sich kaum. International wird das Verfahren Microplasma geschrieben."},
+        {"q": "Welche Arbeiten eignen sich für die PlasmaFix 50 S?",
+         "a": "Feinste Arbeiten ab 0,05 A: Folien von 0,01 mm, Drahtgitter, kleine Armaturen und Präzisionsteile. Für Aluminium ist das Verfahren nicht geeignet."},
+        {"q": "Was wurde bei der Generalüberholung gemacht?",
+         "a": "Die Anlage wurde komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt. Vor der Übergabe wird sie geprüft und vorgeführt."},
+        {"q": "Kann ich die Anlage vor dem Kauf ansehen?",
+         "a": "Ja. Besichtigung und Vorführung in der Werkstatt in Herisau AR nach Vereinbarung, Termin per Telefon oder über das Kontaktformular."},
+        {"q": "Gibt es auf eine Occasion eine Garantie?",
+         "a": "Eine Herstellergarantie besteht bei einer gebrauchten Anlage nicht. Die gesetzliche Gewährleistung gilt; welche Frist vereinbart ist, hält das schriftliche Angebot fest. Einzelheiten stehen in den AGB."}
+      ]
+    },
+    "fr": {
+      "abschnitte": [
+        {"h": "À quoi sert la PlasmaFix 50 S",
+         "p": ["La PlasmaFix 50 S est une source de courant microplasma pour les travaux les plus fins : elle soude dès 0,05 A des feuilles de 0,01 mm, des grillages métalliques et de petites robinetteries, en courant lisse ou pulsé de 1 Hz à 10 kHz. Comme sur toute installation microplasma, l’arc est étranglé dans une buse refroidie à l’eau ; il reste ainsi stable aux courants les plus faibles et n’apporte que peu de chaleur à la pièce."]},
+        {"h": "Pourquoi une occasion de notre propre atelier",
+         "p": ["La machine a été entièrement révisée dans l’atelier de Herisau ; le refroidissement par eau, pompe et tuyaux compris, a été remplacé. Elle est contrôlée avant la remise et fonctionne lors de la visite. Le conseil vient du technicien qui l’a révisée lui-même. Le délai de garantie applicable figure dans l’offre écrite ; nos CG en sont la base."]}
+      ],
+      "faq": [
+        {"q": "Qu’est-ce que le soudage microplasma ?",
+         "a": "Une variante du soudage plasma pour les matériaux très minces. L’arc est étranglé dans une buse refroidie et reste ainsi stable dès 0,1 A environ. L’apport de chaleur est faible, la pièce ne se déforme pratiquement pas."},
+        {"q": "Quels travaux conviennent à la PlasmaFix 50 S ?",
+         "a": "Les travaux les plus fins à partir de 0,05 A : feuilles de 0,01 mm, grillages métalliques, petites robinetteries et pièces de précision. Le procédé ne convient pas à l’aluminium."},
+        {"q": "Qu’a-t-on fait lors de la révision générale ?",
+         "a": "La machine a été entièrement révisée ; le refroidissement par eau, pompe et tuyaux compris, a été remplacé. Avant la remise, elle est contrôlée et présentée en fonctionnement."},
+        {"q": "Puis-je voir la machine avant l’achat ?",
+         "a": "Oui. Visite et démonstration à l’atelier de Herisau AR sur rendez-vous, par téléphone ou via le formulaire de contact."},
+        {"q": "Y a-t-il une garantie sur une occasion ?",
+         "a": "Il n’y a pas de garantie du fabricant sur une machine d’occasion. La garantie légale s’applique ; le délai convenu figure dans l’offre écrite. Les détails sont dans les CG."}
+      ]
+    },
+    "it": {
+      "abschnitte": [
+        {"h": "A cosa serve la PlasmaFix 50 S",
+         "p": ["La PlasmaFix 50 S è un generatore microplasma per i lavori più fini: salda da 0,05 A fogli da 0,01 mm, reti metalliche e piccole rubinetterie, in corrente continua o pulsata da 1 Hz a 10 kHz. Come in ogni impianto microplasma, l’arco viene strozzato in un ugello raffreddato ad acqua; resta così stabile alle correnti più basse e porta poco calore nel pezzo."]},
+        {"h": "Perché un’occasione dalla nostra officina",
+         "p": ["La macchina è stata completamente revisionata nell’officina di Herisau; il raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito. Viene controllata prima della consegna e funziona durante la visita. La consulenza viene dal tecnico che l’ha revisionata di persona. Il termine di garanzia applicabile è indicato nell’offerta scritta; la base sono le nostre CG."]}
+      ],
+      "faq": [
+        {"q": "Che cos’è la saldatura microplasma?",
+         "a": "Una variante della saldatura al plasma per materiali molto sottili. L’arco viene strozzato in un ugello raffreddato e resta così stabile già da circa 0,1 A. L’apporto termico è ridotto, il pezzo non si deforma quasi."},
+        {"q": "Quali lavori sono adatti alla PlasmaFix 50 S?",
+         "a": "I lavori più fini a partire da 0,05 A: fogli da 0,01 mm, reti metalliche, piccole rubinetterie e minuteria di precisione. Il procedimento non è adatto all’alluminio."},
+        {"q": "Cosa è stato fatto nella revisione generale?",
+         "a": "La macchina è stata completamente revisionata; il raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito. Prima della consegna viene controllata e mostrata in funzione."},
+        {"q": "Posso vedere la macchina prima dell’acquisto?",
+         "a": "Sì. Visita e dimostrazione nell’officina di Herisau AR su appuntamento, per telefono o tramite il modulo di contatto."},
+        {"q": "C’è una garanzia su un’occasione?",
+         "a": "Su una macchina usata non c’è garanzia del costruttore. Vale la garanzia legale; il termine concordato è indicato nell’offerta scritta. I dettagli sono nelle CG."}
+      ]
+    }
+  }
+}

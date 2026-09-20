@@ -2,8 +2,10 @@
 
 Diese Website ist der Auftritt von VES-TECH Swiss, einem Einzelunternehmen in
 der Schweiz. Sie besteht aus vorgerenderten HTML-Dateien auf GitHub Pages – es
-gibt keine Datenbank, keine Anmeldung, keine Sitzungen und keine
-serverseitige Verarbeitung.
+gibt keine eigene Datenbank, keine Kundenanmeldung und keine Kundensitzungen.
+Formularnachrichten werden bei aktivierter Konfiguration durch Web3Forms
+verarbeitet; optionale Webstatistik durch Cloudflare. Details stehen in der
+Datenschutzerklärung der Website.
 
 ## Eine Lücke melden
 

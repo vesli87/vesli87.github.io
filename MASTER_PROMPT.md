@@ -524,12 +524,12 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - Google Search Console ist für `https://www.ves-tech.ch/` eingerichtet, mit
   erfolgreicher Sitemap. Kontometriken und konkrete Audit-Ergebnisse gehören
   ausschliesslich in lokale `reports/`, nicht ins öffentliche Repository.
-- Bing wurde mit dem Firmenkonto hinzugefügt. Verifizierung erfolgt per
-  `BING_SITE_VERIFICATION`; nach Veröffentlichung Tag und Sitemap prüfen.
+- Bing wurde mit dem Firmenkonto hinzugefügt und verifiziert; die Sitemap wurde
+  eingereicht. `BING_SITE_VERIFICATION` erhalten, damit der Nachweis gültig bleibt.
 - Web3Forms wurde auf dem Firmenkonto aktiviert. Der Formularkey liegt lokal
   in `config.local.json` und als `WEB3FORMS_KEY` in GitHub Actions. Das kostenlose
   Kontingent ist im Dashboard zu kontrollieren; keine automatischen Bezahl-Upgrades.
-- Cloudflare Web Analytics ist vorbereitet und muss nach jedem Integrationswechsel
+- Cloudflare Web Analytics ist live geprüft und muss nach jedem Integrationswechsel
   auf dem Live-Web geprüft werden. Es zählt nur zustimmende, nicht blockierte
   Browser auf den zugelassenen Seiten. Keine automatisierte Conversion-Zählung.
 - Für lokale Auffindbarkeit vorhandenes Google-Unternehmensprofil und reale

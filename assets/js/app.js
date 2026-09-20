@@ -1005,6 +1005,11 @@
           saveCart();
           var confirmation = $('#cartStatus');
           if (confirmation) confirmation.textContent = t('form_success');
+          // Disabling the send button can move focus to body before the
+          // response arrives. Keep the completed dialog keyboard-accessible.
+          if (!cart.length && activePanel === 'cart') {
+            var close = $('[data-close="cart"]'); if (close) close.focus();
+          }
         }
         toast(t('form_success'));
       } else {

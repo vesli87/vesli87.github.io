@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-09-15. Quelle: https://www.ves-tech.ch
+Stand: 2026-09-20. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss in Herisau (AR, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, telefonisch erreichbar Mo-Do 07:30-17:00 · Fr 07:30-11:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -7,6 +7,13 @@ VES-TECH Swiss in Herisau (AR, Schweiz) ist der Schweizer Partner für das MAHE-
 
 ## Schweissgeräte
 Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG.
+
+### Welches Schweissgerät passt zu Ihrer Arbeit?
+Quelle: https://www.ves-tech.ch/produkte/schweissgeraete/
+Eine sinnvolle Auswahl beginnt beim Werkstück: Nennen Sie VES-TECH Swiss den Werkstoff, die Materialdicke und das gewünschte Verfahren. Im Katalog sind MIG/MAG, WIG/TIG, MMA und Plasma TIG getrennt aufgeführt. Vergleichen Sie danach die technischen Daten der konkreten Modellvariante.
+- Werkstoff und Ergebnis: Beschreiben Sie Stahl, Edelstahl oder Aluminium, die Verbindung und die Anforderungen an die Naht. Ein Gerätename allein beantwortet noch nicht, welche Ausstattung für diese Aufgabe nötig ist.
+- Netzanschluss und Arbeitsdauer: Prüfen Sie Netzspannung, Absicherung und Einschaltdauer in der jeweiligen Datentabelle. Teilen Sie mit, ob das Gerät stationär oder auf wechselnden Arbeitsplätzen eingesetzt wird.
+- Komplette Konfiguration: Geben Sie vorhandene Brenner, Kühlung und Zubehör an. VES-TECH klärt die Kombination und erstellt ein Angebot für die gewünschte Anlage; Preis und Liefertermin werden auf Anfrage bestätigt.
 
 ### MAHE HyperMIG X
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/
@@ -442,6 +449,13 @@ Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 ## Plasmaschneiden
 Theta Plasmaschneidinverter mit HSC-Technologie, von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.
 
+### Plasmaschneider oder CNC-Schneidtisch auswählen
+Quelle: https://www.ves-tech.ch/produkte/plasmaschneiden/
+Für eine passende Anfrage unterscheidet VES-TECH Swiss zwischen manuellem Plasmaschneiden, einer Stromquelle für Automation und einem kompletten CNC-Schneidtisch. Die Theta-Geräte und die MPT-Tische sind deshalb in eigenen Unterkategorien aufgeführt.
+- Material und Schnittaufgabe: Nennen Sie Material, typische Dicke und maximale Dicke. Geben Sie an, welche Schnittqualität und Stückzahl benötigt werden; eine maximale Trennleistung ist nicht automatisch die gewünschte Produktionsleistung.
+- Manuell oder automatisiert: Bei einer vorhandenen Anlage sind Brenner, Maschinensteuerung und Schnittstellen wichtig. Nennen Sie deren genaue Bezeichnungen, damit die Kombination geprüft werden kann.
+- Aufstellort und Betrieb: Für einen Schneidtisch sind Blechformat, verfügbarer Platz und die Versorgung am Aufstellort relevant. Besprechen Sie auch den Umgang mit Schneidrauch und die Inbetriebnahme, bevor Sie eine Konfiguration festlegen.
+
 ### MAHE Theta 40
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
@@ -650,6 +664,13 @@ Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
 ## Reinigungsgeräte
 Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.
 
+### Reinigen, Signieren oder Verbrauchsmaterial ergänzen?
+Quelle: https://www.ves-tech.ch/produkte/reinigungsgeraete/
+Beginnen Sie die Auswahl mit dem gewünschten Arbeitsschritt. VES-TECH Swiss führt elektrolytische Cleaner, Signiergeräte, ein Dosiersystem und Elektrolyte in getrennten Bereichen. Gerät und Verbrauchsmaterial müssen zum vorgesehenen Verfahren passen.
+- Oberfläche und Aufgabe: Beschreiben Sie Werkstoff, Oberflächenzustand und das gewünschte Ergebnis. Ein Foto der Naht oder einer Beispielmarkierung hilft bei der Rückfrage.
+- Vorhandenes Gerät: Für Bürsten, Elektrolyte und Ergänzungen benötigen wir die genaue Gerätebezeichnung. Prüfen Sie die Anleitung und die Unterlagen zum jeweiligen Mittel; eine ähnliche Produktbezeichnung belegt keine Austauschbarkeit.
+- Umfang der Anfrage: Nennen Sie die typische Einsatzdauer und ob ein einzelnes Gerät oder eine komplette Ausstattung gesucht wird. So lassen sich Lieferumfang, Optionen und Verbrauchsmaterial im Angebot sauber unterscheiden.
+
 ### MAHE MiniReiniger
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: MINICLEANER · Preis: auf Anfrage (CHF)
@@ -845,6 +866,13 @@ Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01
 
 ## Zubehör
 Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie.
+
+### Zubehör ohne Fehlbestellung anfragen
+Quelle: https://www.ves-tech.ch/produkte/zubehoer/
+Bei Brennern, Kabeln, Kühlung und Verschleissteilen ist die genaue Zuordnung wichtiger als ein ähnliches Foto. VES-TECH Swiss zeigt auf den Produktseiten bekannte Zuordnungen; lassen Sie die gewünschte Kombination vor einer Bestellung bestätigen.
+- Gerät eindeutig benennen: Senden Sie Hersteller, Modell und vorhandene Artikelnummer. Bei älteren Anlagen hilft zusätzlich die Seriennummer bei der Zuordnung.
+- Ausführung beschreiben: Nennen Sie Anschluss, Kühlungsart und gewünschte Länge, soweit bekannt. Bei einem Ersatzteil sind die Bezeichnung auf dem Teil und ein Foto des Anschlusses hilfreich.
+- Zusammengehörige Teile bündeln: Legen Sie alle gewünschten Positionen in die Anfrageliste und ergänzen Sie die Mengen. Eine gemeinsame Anfrage erleichtert die Prüfung von Kompatibilität und Lieferumfang.
 
 ### MAHE STT 30
 URL: https://www.ves-tech.ch/produkte/zubehoer/stt30/
@@ -1106,6 +1134,13 @@ Ausstattung: Für: HyperMIG X; Verbindet: Stromquelle mit Vorschubkoffer; Länge
 
 ## Occasion
 Gebrauchte Anlagen aus der eigenen Werkstatt: generalüberholt, komplett revidiert und mit ersetzter Wasserkühlung, dazu die Originalunterlagen des Herstellers.
+
+### Was Sie bei einer Mikroplasma-Occasion klären sollten
+Quelle: https://www.ves-tech.ch/produkte/occasion/
+Die angebotenen Oerlikon PlasmaFix-Anlagen sind gebrauchte Mikroplasma-Schweissanlagen. Mikroplasma-Schweissen ist vom Plasmaschneiden zu unterscheiden. Massgeblich sind die Beschreibung, der dokumentierte Zustand und der Lieferumfang der konkreten Anlage.
+- Zustand und Ausstattung: Lesen Sie den Zustandsblock und die Beschreibung auf der Geräteseite. Fragen Sie nach den enthaltenen Komponenten und den ausgeführten Arbeiten; Angaben einer Anlage gelten nicht automatisch für eine andere.
+- Eigene Anwendung: Nennen Sie Werkstoff, Materialdicke und die Aufgabe, für die Sie die Anlage einsetzen möchten. VES-TECH kann damit die passende Konfiguration und offene Fragen mit Ihnen klären.
+- Verfügbarkeit und Übergabe: Preis, Verfügbarkeit und Übergabe werden individuell bestätigt. Ein Besuch in der Werkstatt in Herisau erfolgt nach Vereinbarung. Die Konditionen einer Occasion ergeben sich aus dem konkreten Angebot.
 
 ### Oerlikon PlasmaFix 51
 URL: https://www.ves-tech.ch/produkte/occasion/plasmafix-51/

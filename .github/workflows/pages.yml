@@ -17,8 +17,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -34,7 +32,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      # Der Build erzeugt alle 247 Seiten neu aus data/*.json.
+      # Der Build erzeugt alle Inhaltsseiten neu aus data/*.json.
       # Die Bilder liegen bereits optimiert im Repo (build/images.py läuft lokal,
       # weil es Netzzugriff auf mahe-online.de und cwebp braucht).
       - name: Build
@@ -52,59 +50,26 @@ jobs:
       - name: Audit
         run: python3 build/audit.py
 
-      # Nur ausliefern, was zur Website gehoert.
-      #
-      # Bisher ging das ganze Repository ins Artefakt: build/*.py, die Rohdaten
-      # unter data/, die Dokumentation - und build/source-snapshot.html, 438 kB
-      # alter Prototyp aus der Zeit vor dem Generator, unter der echten Domain
-      # abrufbar. Geheim ist davon nichts, das Repository ist oeffentlich. Aber
-      # eine veraltete Kopie der Seite unter www.ves-tech.ch ist eine Seite,
-      # die eine Suchmaschine finden und gegen die echten Seiten stellen kann;
-      # robots.txt verbietet nur das Crawlen, nicht das Indexieren.
-      #
-      # Geloescht wird im Runner, nie im Repository. Was hier verschwindet,
-      # wird nach dem Build ohnehin nicht mehr gebraucht.
-      - name: Artefakt auf die Website eingrenzen
-        run: |
-          set -eu
-          # Die Kommentare aus site.css gehoeren ins Repository, nicht auf die
-          # Leitung. Sie machen 21 % der Datei aus; ausgeliefert sind das
-          # 15.8 kB gzip statt 9.5 kB. Geprueft, dass dabei keine Regel
-          # verlorengeht: 550 Regeln vorher, 550 nachher, zeichengleich.
-          # Der ?v=-Stempel im HTML ist ein Cache-Brecher und keine Pruefsumme,
-          # er darf abweichen; ein integrity-Attribut gibt es nicht.
-          python3 - <<'PY'
-          import re, pathlib
-          p = pathlib.Path("assets/css/site.css")
-          t = p.read_text("utf-8")
-          def regeln(x):
-              x = re.sub(r"/\*.*?\*/", "", x, flags=re.S)
-              return [" ".join(r.split()) for r in re.findall(r"[^{}]+\{[^{}]*\}", x)]
-          vorher = regeln(t)
-          k = re.sub(r"/\*.*?\*/", "", t, flags=re.S)
-          k = re.sub(r"[ \t]+\n", "\n", k)
-          k = re.sub(r"\n{2,}", "\n", k).strip() + "\n"
-          assert regeln(k) == vorher, "CSS-Regeln haben sich veraendert - nicht ausliefern"
-          p.write_text(k, "utf-8")
-          print(f"site.css: {len(t)/1024:.1f} -> {len(k)/1024:.1f} kB, {len(vorher)} Regeln unveraendert")
-          PY
-          rm -rf build .github
-          rm -f CLAUDE.md MASTER_PROMPT.md README.md SECURITY.md
-          # data/ enthaelt die Quelldaten des Generators. Oeffentlich gehoeren
-          # nur die erzeugten Dateien: products.json ist der Katalog fuer
-          # Antwortmaschinen (verlinkt in robots.txt und llms.txt), die
-          # search-*.json braucht die Suche im Browser.
-          find data -name '*.json' \
-            ! -name 'products.json' ! -name 'search-*.json' -delete
-          find data -type d -empty -delete
-          echo "Ausgeliefert wird aus data/:"
-          ls -1 data/
+      - name: Manufacturer data regression check
+        run: python3 build/verify_mahe.py
+
+      - name: Frontend regression tests
+        run: node --test build/test_frontend.mjs
+
+      - name: Generator regression tests
+        run: python3 -m unittest discover -s build -p 'test_*.py'
+
+      - name: Package public files only
+        run: python3 build/package_site.py --output "$RUNNER_TEMP/site"
 
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa  # v3
         with:
-          path: .
+          path: ${{ runner.temp }}/site
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -119,10 +84,9 @@ jobs:
   # Website meldet sich selbst. Google beteiligt sich daran nicht.
   #
   # Gemeldet wird nur, was dieser Push wirklich geaendert hat - nicht jedes Mal
-  # der ganze Katalog. Wer bei jedem Deploy 339 unveraenderte Adressen meldet,
-  # entwertet das Signal genauso wie eine Sitemap, in der jeden Tag alles neu
-  # ist. Ab 250 geaenderten Seiten lohnt die Einzelmeldung nicht mehr, dann
-  # geht die Sitemap als Ganzes raus.
+  # der ganze Katalog. Auch geloeschte Adressen werden gemeldet, damit der
+  # Crawler ihre Weiterleitung oder den neuen 404-Status abholen kann.
+  # indexnow.py teilt grosse Mengen in die erlaubten Protokoll-Batches auf.
   #
   # Der Schritt laeuft NACH dem Deploy: vorher stuenden die neuen Seiten noch
   # gar nicht im Netz und der Dienst holte sich die alte Fassung. Schlaegt er
@@ -163,6 +127,8 @@ jobs:
           # diese Datei traegt auch das lastmod der Sitemap.
           python3 - <<'PY' > /tmp/pfade.txt
           import json, os, subprocess, sys
+          sys.path.insert(0, "build")
+          from indexnow import changed_paths
           def hole(ref):
               r = subprocess.run(["git", "show", f"{ref}:build/lastmod.json"],
                                  capture_output=True, text=True)
@@ -183,20 +149,17 @@ jobs:
                       break
           neu = json.load(open("build/lastmod.json"))
           if alt is None:
-              print("__ALLE__", file=sys.stderr)
+              print("__ALLE__")
               sys.exit(0)
-          for pfad, wert in sorted(neu.items()):
-              vor = alt.get(pfad)
-              if vor is None or vor.get("h") != wert.get("h"):
-                  print(pfad)
+          for pfad in changed_paths(alt, neu):
+              print(pfad)
           PY
           n=$(wc -l < /tmp/pfade.txt | tr -d ' ')
           echo "Inhaltlich geaendert: $n Seiten"
-          if [ "$n" -eq 0 ]; then
-            echo "Nichts zu melden."
-          elif [ "$n" -gt 250 ]; then
-            echo "Mehr als 250 Seiten - die ganze Sitemap geht raus."
+          if [ "$(cat /tmp/pfade.txt)" = "__ALLE__" ]; then
             python3 build/indexnow.py
+          elif [ "$n" -eq 0 ]; then
+            echo "Nichts zu melden."
           else
             sed -n '1,40p' /tmp/pfade.txt
             xargs -a /tmp/pfade.txt python3 build/indexnow.py

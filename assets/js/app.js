@@ -20,6 +20,7 @@
      was diese Seite selbst erzeugt: ein eigener Pfad oder https. */
   function safeUrl(u) {
     u = String(u == null ? '' : u).trim();
+    if (/[\\\u0000-\u001f\u007f]/.test(u)) return '#';
     if (/^\/[^\/]/.test(u)) return u;
     if (/^https:\/\//i.test(u)) return u;
     return '#';
@@ -65,24 +66,59 @@
 
   /* ============================ Anfrageliste ============================ */
   var CART_KEY = 'vt.cart.v1';
-  var cart = store.get(CART_KEY, []);
-  if (!Array.isArray(cart)) cart = [];
+  function quantity(q) { return Math.max(1, Math.min(99, parseInt(q, 10) || 1)); }
+  function cleanCart(value) {
+    var result = [];
+    if (!Array.isArray(value)) return result;
+    value.slice(0, 200).forEach(function (item) {
+      if (!item || typeof item !== 'object' || typeof item.id !== 'string' ||
+          !/^[a-z0-9-]{1,100}$/.test(item.id) || typeof item.name !== 'string') return;
+      var hit = result.filter(function (x) { return x.id === item.id; })[0];
+      if (hit) { hit.qty = quantity(hit.qty + quantity(item.qty)); return; }
+      var url = safeUrl(item.url);
+      if (url.charAt(0) !== '/') url = '#';
+      result.push({ id: item.id, name: item.name.slice(0, 200), url: url,
+        img: safeUrl(item.img), qty: quantity(item.qty) });
+    });
+    return result;
+  }
+  var cart = cleanCart(store.get(CART_KEY, []));
+  // Track removals during an in-flight inquiry. A product removed and added
+  // again is a new selection, even when its product ID is unchanged.
+  var cartRevision = {};
+
+  window.addEventListener('storage', function (ev) {
+    if (ev.key === CART_KEY || ev.key === null) {
+      // Use the event snapshot, not the latest storage value: several rapid
+      // changes can already be queued, including removal followed by re-add.
+      var next = [];
+      try { next = cleanCart(JSON.parse(ev.newValue)); } catch (err) { /* invalid entries are discarded */ }
+      cart.forEach(function (item) {
+        if (!next.some(function (x) { return x.id === item.id; })) {
+          cartRevision[item.id] = (cartRevision[item.id] || 0) + 1;
+        }
+      });
+      cart = next; renderCart();
+    }
+  });
 
   function saveCart() { store.set(CART_KEY, cart); renderCart(); }
 
   function addCart(item) {
+    var status = $('#cartStatus'); if (status) status.textContent = '';
     var hit = null;
     for (var i = 0; i < cart.length; i++) if (cart[i].id === item.id) hit = cart[i];
-    if (hit) { hit.qty = (hit.qty || 1) + 1; toast(t('already')); }
+    if (hit) { hit.qty = quantity(hit.qty + 1); toast(t('already')); }
     else { cart.push({ id: item.id, name: item.name, url: item.url, img: item.img, qty: 1 }); toast(t('added')); }
     saveCart();
   }
   function rmCart(id) {
+    cartRevision[id] = (cartRevision[id] || 0) + 1;
     cart = cart.filter(function (x) { return x.id !== id; });
     saveCart();
   }
   function setQty(id, q) {
-    cart.forEach(function (x) { if (x.id === id) x.qty = Math.max(1, Math.min(99, q)); });
+    cart.forEach(function (x) { if (x.id === id) x.qty = quantity(q); });
     saveCart();
   }
 
@@ -91,9 +127,16 @@
     $$('#cnt').forEach(function (el) { el.textContent = count; });
     var box = $('#cartItems'), form = $('#cartForm');
     if (!box) return;
+    var focused = document.activeElement;
+    var focusedId = focused && focused.getAttribute &&
+      (focused.getAttribute('data-id') || focused.getAttribute('data-rm'));
+    var focusedAction = focusedId && focused.getAttribute('data-qty');
     if (!cart.length) {
       box.innerHTML = '<div class="empty">' + esc(t('cart_empty')) + '</div>';
       if (form) form.hidden = true;
+      if (activePanel === 'cart' && (focusedId || (form && form.contains(focused)))) {
+        var close = $('[data-close="cart"]'); if (close) close.focus();
+      }
       return;
     }
     if (form) form.hidden = false;
@@ -104,11 +147,19 @@
         '</a>' +
         '<div class="n"><a href="' + esc(safeUrl(x.url)) + '"><b>' + esc(x.name) + '</b></a>' +
         '<span>' + esc(t('poa')) + '</span>' +
-        '<span class="qty"><button type="button" data-qty="-" data-id="' + esc(x.id) + '" aria-label="−">−</button>' +
+        '<span class="qty"><button type="button" data-qty="-" data-id="' + esc(x.id) + '" aria-label="' + esc(t('qty_less') + ': ' + x.name) + '"' + (x.qty === 1 ? ' disabled' : '') + '>−</button>' +
         '<output>' + (Math.max(1, Math.min(99, parseInt(x.qty, 10) || 1))) + '</output>' +
-        '<button type="button" data-qty="+" data-id="' + esc(x.id) + '" aria-label="+">+</button></span></div>' +
-        '<button class="rm" type="button" data-rm="' + esc(x.id) + '" aria-label="✕">✕</button></div>';
+        '<button type="button" data-qty="+" data-id="' + esc(x.id) + '" aria-label="' + esc(t('qty_more') + ': ' + x.name) + '"' + (x.qty === 99 ? ' disabled' : '') + '>+</button></span></div>' +
+        '<button class="rm" type="button" data-rm="' + esc(x.id) + '" aria-label="' + esc(t('cart_remove') + ': ' + x.name) + '">✕</button></div>';
     }).join('');
+    if (focusedId && activePanel === 'cart') {
+      var next = $$('button', box).filter(function (button) {
+        return !button.disabled && (focusedAction
+          ? button.getAttribute('data-id') === focusedId && button.getAttribute('data-qty') === focusedAction
+          : button.getAttribute('data-rm') === focusedId);
+      })[0] || $('button:not(:disabled)', box) || $('[data-close="cart"]');
+      if (next) next.focus();
+    }
   }
 
   document.addEventListener('click', function (ev) {
@@ -135,22 +186,56 @@
   });
 
   /* ============================== Schubladen ============================ */
-  var lastFocus = null;
+  var lastFocus = null, activePanel = null;
+
+  function trapFocus(ev, el) {
+    if (ev.key !== 'Tab') return;
+    var items = $$('a[href],button,input,textarea,select,[tabindex="0"]', el)
+      .filter(function (x) { return !x.disabled && x.getClientRects().length; });
+    if (!items.length) { ev.preventDefault(); el.focus(); return; }
+    var first = items[0], last = items[items.length - 1];
+    if (ev.shiftKey && (document.activeElement === first || !el.contains(document.activeElement))) {
+      ev.preventDefault(); last.focus();
+    } else if (!ev.shiftKey && (document.activeElement === last || !el.contains(document.activeElement))) {
+      ev.preventDefault(); first.focus();
+    }
+  }
+
+  function panelBackground(inert) {
+    $$('.skip,.util,header,main,footer,.analytics-consent,.analytics-settings').forEach(function (el) { el.inert = inert; });
+  }
 
   function openPanel(which) {
     var el = $('#' + which); if (!el) return;
+    if (activePanel === which) { closePanel(which); return; }
+    if (activePanel) closePanel(activePanel);
     lastFocus = document.activeElement;
+    activePanel = which;
+    el.inert = false;
     el.classList.add('open'); el.setAttribute('aria-hidden', 'false');
+    panelBackground(true);
     $('#scrim').classList.add('open');
     document.body.style.overflow = 'hidden';
     var btn = $('[data-open="' + which + '"]');
     if (btn) btn.setAttribute('aria-expanded', 'true');
-    if (which === 'cart') renderCart();
+    if (which === 'cart') {
+      renderCart();
+      loadIndex().then(function (idx) {
+        if (!idx) return;
+        cart.forEach(function (item) {
+          var p = idx.products.filter(function (x) { return x.i === item.id; })[0];
+          if (p) { item.name = p.n; item.url = p.u; item.img = p.g; }
+        });
+        saveCart();
+      });
+    }
     var f = el.querySelector('a,button,input');
     if (f) f.focus();
   }
   function closePanel(which) {
     var el = $('#' + which); if (!el) return;
+    if (activePanel !== which) return;
+    activePanel = null;
     el.classList.remove('open'); el.setAttribute('aria-hidden', 'true');
     var btn = $('[data-open="' + which + '"]');
     if (btn) btn.setAttribute('aria-expanded', 'false');
@@ -158,7 +243,9 @@
       $('#scrim').classList.remove('open');
       document.body.style.overflow = '';
     }
+    panelBackground(false);
     if (lastFocus && lastFocus.focus) lastFocus.focus();
+    el.inert = true;
   }
   function closeAll() { closePanel('mega'); closePanel('cart'); }
 
@@ -173,6 +260,7 @@
     }
   });
   document.addEventListener('keydown', function (ev) {
+    if (activePanel) trapFocus(ev, $('#' + activePanel));
     if (ev.key === 'Escape') { closeAll(); closeSuggest(); }
   });
 
@@ -194,18 +282,21 @@
         var on = x.getAttribute('data-tab') === name;
         x.classList.toggle('active', on);
         x.setAttribute('aria-selected', on ? 'true' : 'false');
+        x.tabIndex = on ? 0 : -1;
       });
       $$('.tabpane').forEach(function (p) {
         p.classList.toggle('active', p.id === 'tab-' + name);
       });
     });
     tabbar.addEventListener('keydown', function (ev) {
-      if (ev.key !== 'ArrowRight' && ev.key !== 'ArrowLeft') return;
+      if (['ArrowRight', 'ArrowLeft', 'Home', 'End'].indexOf(ev.key) < 0) return;
       var btns = $$('.tabbtn', tabbar);
       var i = btns.indexOf(document.activeElement);
       if (i < 0) return;
       ev.preventDefault();
       var n = (i + (ev.key === 'ArrowRight' ? 1 : -1) + btns.length) % btns.length;
+      if (ev.key === 'Home') n = 0;
+      if (ev.key === 'End') n = btns.length - 1;
       btns[n].focus(); btns[n].click();
     });
   }
@@ -242,6 +333,12 @@
         box.appendChild(s);
       }
       img.setAttribute('title', t('lupe_open', 'Bild vergrössern'));
+      img.setAttribute('role', 'button');
+      img.tabIndex = 0;
+      img.setAttribute('aria-label', t('lupe_open') + ': ' + img.alt);
+      img.addEventListener('keydown', function (ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); oeffnen(img); }
+      });
     });
 
     var box, buehne, bild, txt, vor, zurueck, zuletzt = null, gruppe = [], idx = 0;
@@ -251,6 +348,7 @@
       box.className = 'lupe';
       box.setAttribute('role', 'dialog');
       box.setAttribute('aria-modal', 'true');
+      box.setAttribute('aria-label', t('lupe_open'));
       box.hidden = true;
       box.innerHTML =
         '<div class="lupe-kopf">' +
@@ -261,9 +359,9 @@
         '</div>' +
         '<div class="lupe-buehne"><img alt=""></div>' +
         '<div class="lupe-fuss">' +
-          '<button class="lupe-nav" type="button" data-lupe="-1" aria-label="&#8249;">\u2039</button>' +
+          '<button class="lupe-nav" type="button" data-lupe="-1" aria-label="' + esc(t('gal_prev')) + '">\u2039</button>' +
           '<span class="lupe-txt"></span>' +
-          '<button class="lupe-nav" type="button" data-lupe="1" aria-label="&#8250;">\u203a</button>' +
+          '<button class="lupe-nav" type="button" data-lupe="1" aria-label="' + esc(t('gal_next')) + '">\u203a</button>' +
         '</div>';
       document.body.appendChild(box);
       buehne = $('.lupe-buehne', box);
@@ -306,6 +404,7 @@
       if (gruppe.indexOf(img) < 0) gruppe = [img];
       zuletzt = document.activeElement;
       box.hidden = false;
+      panelBackground(true);
       document.body.classList.add('lupe-offen');
       zeigen(gruppe.indexOf(img));
       $('[data-lupe="zu"]', box).focus();
@@ -317,6 +416,7 @@
       box.classList.remove('gross');
       bild.removeAttribute('src');
       document.body.classList.remove('lupe-offen');
+      panelBackground(false);
       if (zuletzt && zuletzt.focus) zuletzt.focus();
     }
 
@@ -329,6 +429,7 @@
 
     document.addEventListener('keydown', function (ev) {
       if (!box || box.hidden) return;
+      trapFocus(ev, box);
       if (ev.key === 'Escape') { ev.preventDefault(); schliessen(); }
       else if (ev.key === 'ArrowRight' && gruppe.length > 1) { ev.preventDefault(); zeigen(idx + 1); }
       else if (ev.key === 'ArrowLeft' && gruppe.length > 1) { ev.preventDefault(); zeigen(idx - 1); }
@@ -348,7 +449,8 @@
     var dots = $$('.hdot', hero);
     if (slides.length < 2) return;
 
-    var ruhig = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var motion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
+    var ruhig = motion && motion.matches;
     var i = 0, timer = null, INTERVALL = 5000, angehalten = false;
 
     function zeige(n) {
@@ -362,7 +464,7 @@
       if (img && img.getAttribute('loading') === 'lazy') img.removeAttribute('loading');
     }
     function start() {
-      if (ruhig || timer || document.hidden || angehalten) return;
+      if (ruhig || timer || document.hidden || angehalten || hero.contains(document.activeElement)) return;
       timer = setInterval(function () { zeige(i + 1); }, INTERVALL);
     }
     function stopp() { clearInterval(timer); timer = null; }
@@ -377,7 +479,10 @@
        stand dann still und wechselte nie. Pausiert wird nur, wo jemand gezielt
        bedient: Tastaturfokus. */
     hero.addEventListener('focusin', stopp);
-    hero.addEventListener('focusout', function () { if (!angehalten) start(); });
+    hero.addEventListener('focusout', function () { setTimeout(start, 0); });
+    if (motion && motion.addEventListener) motion.addEventListener('change', function (ev) {
+      ruhig = ev.matches; if (ruhig) stopp(); else start();
+    });
 
     /* WCAG 2.2.2: was sich von selbst bewegt und laenger als fuenf Sekunden
        laeuft, muss sich anhalten lassen. Die Punkte schalten nur um. Der
@@ -420,6 +525,7 @@
         var on = i === n;
         b.classList.toggle('active', on);
         b.setAttribute('aria-selected', on ? 'true' : 'false');
+        b.tabIndex = on ? 0 : -1;
       });
       // Erst beim Anzeigen laden - das Hauptbild bleibt das einzige, das der
       // Browser sofort holt.
@@ -441,10 +547,12 @@
     });
 
     gal.addEventListener('keydown', function (ev) {
-      if (ev.key !== 'ArrowRight' && ev.key !== 'ArrowLeft') return;
+      if (['ArrowRight', 'ArrowLeft', 'Home', 'End'].indexOf(ev.key) < 0) return;
       if (!ev.target.closest('.galthumb')) return;
       ev.preventDefault();
       var n = (aktiv() + (ev.key === 'ArrowRight' ? 1 : -1) + slides.length) % slides.length;
+      if (ev.key === 'Home') n = 0;
+      if (ev.key === 'End') n = slides.length - 1;
       zeige(n); thumbs[n].focus();
     });
   });
@@ -481,13 +589,27 @@
   }
 
   var IDX = null, idxLoading = null;
+  function request(url, options, timeout) {
+    var controller = new AbortController();
+    var timer = setTimeout(function () { controller.abort(); }, timeout);
+    options = options || {};
+    options.signal = controller.signal;
+    return fetch(url, options).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }).then(function (data) { clearTimeout(timer); return data; }, function (err) {
+      clearTimeout(timer); throw err;
+    });
+  }
   function loadIndex() {
     if (IDX) return Promise.resolve(IDX);
     if (idxLoading) return idxLoading;
-    idxLoading = fetch(VT.searchIndex, { credentials: 'same-origin' })
-      .then(function (r) { return r.json(); })
-      .then(function (j) { IDX = j; return j; })
-      .catch(function () { return null; });
+    idxLoading = request(VT.searchIndex, { credentials: 'same-origin' }, 10000)
+      .then(function (j) {
+        if (!j || !Array.isArray(j.products)) throw new Error('Invalid search index');
+        IDX = j; return j;
+      })
+      .catch(function () { idxLoading = null; return null; });
     return idxLoading;
   }
 
@@ -570,20 +692,21 @@
   }
 
   function mark(text, q) {
-    var qs = toks(q).filter(function (x) { return x.length > 1; });
-    var html = esc(text);
-    qs.forEach(function (x) {
-      html = html.replace(new RegExp('(' + x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'ig'),
-        '<mark>$1</mark>');
-    });
-    return html;
+    var qs = toks(q).filter(function (x) { return x.length > 1; })
+      .sort(function (a, b) { return b.length - a.length; });
+    if (!qs.length) return esc(text);
+    // Match plain text once, then escape each fragment. Matching already
+    // escaped HTML corrupted entities and even the <mark> tags themselves.
+    return String(text || '').split(new RegExp('(' + qs.join('|') + ')', 'ig'))
+      .map(function (part, i) { return i % 2 ? '<mark>' + esc(part) + '</mark>' : esc(part); }).join('');
   }
 
   /* ------------------------------------------------- Autocomplete-Dropdown */
   var input = $('#q'), sugg = $('#sugg'), form = $('#searchForm');
-  var sIdx = -1, sItems = [];
+  var sIdx = -1, sItems = [], suggestVersion = 0;
 
   function closeSuggest() {
+    suggestVersion++;
     if (!sugg) return;
     sugg.hidden = true; sugg.innerHTML = ''; sIdx = -1; sItems = [];
     if (input) { input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); }
@@ -640,9 +763,18 @@
     var run = debounce(function () {
       var q = input.value.trim();
       if (q.length < 2) { closeSuggest(); return; }
-      loadIndex().then(function () { renderSuggest(search(q)); });
+      var version = ++suggestVersion;
+      loadIndex().then(function (idx) {
+        if (version !== suggestVersion || input.value.trim() !== q || document.activeElement !== input) return;
+        if (!idx) {
+          sugg.innerHTML = '<p class="sempty" role="status">' + esc(t('search_unavailable')) + '</p>';
+          sugg.hidden = false; input.setAttribute('aria-expanded', 'true'); return;
+        }
+        renderSuggest(search(q));
+      });
     }, 110);
-    input.addEventListener('input', run);
+    input.addEventListener('input', function () { closeSuggest(); run(); });
+    input.addEventListener('blur', function () { suggestVersion++; });
     input.addEventListener('focus', function () { loadIndex(); });
     input.addEventListener('keydown', function (ev) {
       if (sugg.hidden) return;
@@ -668,7 +800,7 @@
 
     if (!q) {
       loadIndex().then(function (idx) {
-        if (!idx) return;
+        if (!idx) { srBox.innerHTML = '<p class="noacc" role="status">' + esc(t('search_unavailable')) + '</p>'; return; }
         srBox.innerHTML = '<div class="chips">' + (idx.popular || []).map(function (x) {
           return '<a class="chip" href="' + esc(VT.searchUrl) + '?q=' + encodeURIComponent(x) + '">' + esc(x) + '</a>';
         }).join('') + '</div>';
@@ -677,7 +809,7 @@
     } else {
       document.title = q + ' · ' + document.title;
       loadIndex().then(function (idx) {
-        if (!idx) { srBox.innerHTML = '<p class="noacc">' + esc(t('form_error')) + '</p>'; return; }
+        if (!idx) { srBox.innerHTML = '<p class="noacc" role="status">' + esc(t('search_unavailable')) + '</p>'; return; }
         var res = search(q);
         var total = res.products.length;
         $('#srTitle').textContent = t('search_results_for') + ' “' + q + '”';
@@ -764,10 +896,12 @@
 
      Jetzt bleibt der fertige Text sichtbar stehen, mit Adresse und Kopierknopf.
      Damit geht keine Anfrage mehr verloren, auch wenn mailto: ins Leere greift. */
-  function mailtoFallback(f, subject, body) {
+  function mailtoFallback(f, subject, body, openMail) {
     var link = 'mailto:' + VT.mailto +
       '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    try { window.location.href = link; } catch (e) { /* egal, der Kasten bleibt */ }
+    if (openMail) {
+      try { window.location.href = link; } catch (e) { /* der Kasten bleibt */ }
+    }
 
     var box = f ? f.querySelector('.mfall') : null;
     if (!box && f) {
@@ -781,7 +915,7 @@
       '<p class="mfall-p">' + esc(t('mail_p', 'Ihr Mailprogramm sollte sich geoeffnet haben. ' +
         'Falls nicht: Text kopieren und an folgende Adresse senden.')) + '</p>' +
       '<p class="mfall-a"><a href="mailto:' + esc(VT.mailto) + '">' + esc(VT.mailto) + '</a></p>' +
-      '<textarea class="mfall-t" rows="8" readonly></textarea>' +
+      '<textarea class="mfall-t" rows="8" readonly aria-label="' + esc(t('mail_h')) + '"></textarea>' +
       '<div class="mfall-btns">' +
         '<button type="button" class="mfall-copy">' + esc(t('mail_copy', 'Text kopieren')) + '</button>' +
         '<a class="mfall-open" href="' + esc(link) + '">' + esc(t('mail_open', 'Mailprogramm oeffnen')) + '</a>' +
@@ -793,7 +927,8 @@
       var ok = false;
       try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
       if (navigator.clipboard && !ok) {
-        navigator.clipboard.writeText(body).then(function () { toast(t('mail_copied', 'Kopiert')); });
+        navigator.clipboard.writeText(body).then(function () { toast(t('mail_copied', 'Kopiert')); })
+          .catch(function () { toast(t('mail_copy_manual')); });
       } else {
         toast(t(ok ? 'mail_copied' : 'mail_copy_manual', ok ? 'Kopiert' : 'Bitte von Hand markieren'));
       }
@@ -801,7 +936,9 @@
     box.scrollIntoView({ block: 'nearest' });
   }
 
-  function submitForm(f, subject, extraBody) {
+  function submitForm(f, subject, extraBody, submittedCart) {
+    if (f.dataset.sending === 'true') return;
+    if ((f.querySelector('[name=botcheck]') || {}).checked) return;
     if (!validate(f)) return;
     var btn = f.querySelector('button[type=submit]');
     var status = $('.fstatus', f);
@@ -823,12 +960,13 @@
       '\n\n' + t('mail_f_sent') + ' ' + location.origin + location.pathname +
       ' (' + (VT.lang || 'de') + ')';
 
-    if (!VT.web3formsKey) { mailtoFallback(f, subject, body); return; }
+    if (!VT.web3formsKey) { mailtoFallback(f, subject, body, true); return; }
 
+    f.dataset.sending = 'true';
     btn.disabled = true;
     if (status) { status.className = 'fstatus'; status.textContent = t('form_sending'); }
 
-    fetch('https://api.web3forms.com/submit', {
+    request('https://api.web3forms.com/submit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
@@ -841,20 +979,43 @@
         botcheck: (f.querySelector('[name=botcheck]') || {}).checked || false,
         replyto: data.email
       })
-    }).then(function (r) { return r.json(); }).then(function (j) {
+    }, 15000).then(function (j) {
+      f.dataset.sending = 'false';
       btn.disabled = false;
-      if (j && j.success) {
+      if (j && j.success === true) {
         if (status) { status.className = 'fstatus ok'; status.textContent = t('form_success'); }
-        f.reset();
-        if (f.id === 'cartForm') { cart = []; saveCart(); }
+        // The submitted snapshot succeeded. Preserve any new draft the
+        // customer has started while waiting for the response.
+        var unchanged = Object.keys(data).every(function (name) {
+          return ((f.querySelector('[name=' + name + ']') || {}).value || '') === data[name];
+        });
+        if (unchanged) f.reset();
+        var fallback = f.querySelector('.mfall');
+        if (fallback) fallback.remove();
+        if (f.id === 'cartForm' && submittedCart) {
+          // Remove only quantities included in this request. Products added
+          // while the request was in flight must stay in the list.
+          cart = cart.reduce(function (out, item) {
+            var sent = submittedCart.filter(function (x) { return x.id === item.id; })[0];
+            var sameSelection = sent && (sent.revision || 0) === (cartRevision[item.id] || 0);
+            var remaining = item.qty - (sameSelection ? sent.qty : 0);
+            if (remaining > 0) out.push(Object.assign({}, item, { qty: remaining }));
+            return out;
+          }, []);
+          saveCart();
+          var confirmation = $('#cartStatus');
+          if (confirmation) confirmation.textContent = t('form_success');
+        }
         toast(t('form_success'));
       } else {
         if (status) { status.className = 'fstatus err'; status.textContent = t('form_error'); }
+        mailtoFallback(f, subject, body, false);
       }
     }).catch(function () {
+      f.dataset.sending = 'false';
       btn.disabled = false;
       if (status) { status.className = 'fstatus err'; status.textContent = t('form_error'); }
-      mailtoFallback(f, subject, body);
+      mailtoFallback(f, subject, body, false);
     });
   }
 
@@ -863,19 +1024,38 @@
     cartForm.addEventListener('submit', function (ev) {
       ev.preventDefault();
       if (!cart.length) { toast(t('cart_empty')); return; }
-      var lines = cart.map(function (x) {
+      var submitted = cart.map(function (x) {
+        return Object.assign({}, x, { revision: cartRevision[x.id] || 0 });
+      });
+      var lines = submitted.map(function (x) {
         return '- ' + x.name + ' × ' + (x.qty || 1) +
-          (x.url ? '  (' + location.origin + x.url + ')' : '');
+          (x.url.charAt(0) === '/' ? '  (' + (VT.siteUrl || location.origin) + x.url + ')' : '');
       }).join('\n');
       /* Einzahl und Mehrzahl: "1 articles" wollen wir niemandem schicken. */
       submitForm(cartForm,
         t('mail_s_cart') + ' (' + cart.length + ' ' +
           t(cart.length === 1 ? 'mail_s_item1' : 'mail_s_item') + ')',
-        t('mail_f_dev') + ':\n' + lines);
+        t('mail_f_dev') + ':\n' + lines, submitted);
     });
   }
   var kForm = $('#kontaktForm');
   if (kForm) {
+    var productId = new URLSearchParams(location.search).get('product');
+    if (productId && /^[a-z0-9-]{1,100}$/.test(productId)) {
+      // Carry the selected product into the contact form without storing
+      // personal form fields in a URL or in localStorage.
+      $$('.langs a').forEach(function (a) {
+        var target = new URL(a.href); target.searchParams.set('product', productId); a.href = target.href;
+      });
+      loadIndex().then(function (idx) {
+        var p = idx && idx.products.filter(function (x) { return x.i === productId; })[0];
+        var message = kForm.querySelector('[name=message]');
+        if (p && message && !message.value) {
+          message.value = t('consult_product').replace('{name}', p.n) + '\n' +
+            (VT.siteUrl || location.origin) + p.u + '\n\n';
+        }
+      });
+    }
     kForm.addEventListener('submit', function (ev) {
       ev.preventDefault();
       submitForm(kForm, t('mail_s_kont'));

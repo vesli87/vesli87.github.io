@@ -13,7 +13,7 @@ mitgepflegt.
 
 ## Das Wichtigste in Kürze
 
-Die 247 HTML-Seiten im Repository sind **generiert**. Sie werden nie von Hand
+Die 360 Inhaltsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
 bearbeitet — der nächste Build überschreibt jede Änderung.
 
 ```
@@ -36,20 +36,24 @@ Bearbeitet werden also:
 | AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |
 | Search-Console-/Bing-Verifizierung | `build/core.py` → `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` |
+| Auswahlhilfen je Kategorie | `data/BUYING_GUIDE.json` |
+| Statistik und Zustimmung | `assets/js/analytics.js`, `build/config.public.json` |
 | Aussehen | `assets/css/site.css` |
 | Suche, Anfrageliste, Formulare | `assets/js/app.js` |
 | Seitenaufbau / HTML-Struktur | `build/pages.py`, `build/render.py` |
 
-## Nach jeder Änderung — immer beides
+## Vor dem Veröffentlichen
 
 ```bash
 python3 build/build.py
 python3 build/check.py
 python3 build/audit.py
-python3 build/verify_mahe.py   # Text gegen mahe-online.de
+python3 build/verify_mahe.py   # gegen gespeicherte Herstellerdaten
+node --test build/test_frontend.mjs
+python3 -m unittest discover -s build -p 'test_*.py'
 ```
 
-Beide müssen **0 Fehler** melden und laufen auch in GitHub Actions, wo sie bei
+Alle Prüfungen müssen **0 Fehler** melden und laufen auch in GitHub Actions, wo sie bei
 einem Fehler den Deploy blockieren.
 
 `check.py` prüft die Grundlagen: JSON-LD, tote Links, `canonical`, `hreflang`,

@@ -33,6 +33,13 @@ ENDPOINT = "https://api.indexnow.org/IndexNow"
 BATCH = 10000          # Obergrenze des Protokolls pro Anfrage
 
 
+def changed_paths(previous, current):
+    """Include removals, so crawlers can discover a new redirect or 404 too."""
+    return [path for path in sorted(previous.keys() | current.keys())
+            if path not in previous or path not in current
+            or previous[path].get("h") != current[path].get("h")]
+
+
 def sitemap_urls():
     sm = C.ROOT / "sitemap.xml"
     if not sm.exists():
@@ -92,6 +99,8 @@ def main():
 
     print(f"\n{sent}/{len(urls)} URLs an Bing, Yandex, Seznam und Naver gemeldet.")
     print("Google beteiligt sich nicht an IndexNow – dort die Search Console nutzen.")
+    if sent != len(urls):
+        sys.exit(1)
 
 
 if __name__ == "__main__":

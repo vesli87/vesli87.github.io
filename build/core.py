@@ -146,7 +146,7 @@ GOOGLE_VERIFY_FILE = "googlefd8076c76b8bacd3.html"
 
 # Alternative zur Datei: Meta-Tag auf jeder Seite. Nur eines von beidem noetig.
 GOOGLE_SITE_VERIFICATION = ""
-BING_SITE_VERIFICATION = ""
+BING_SITE_VERIFICATION = "34CAE7C088828A1A6D1AD9507A4BAE23"
 
 BRAND = "MAHE"
 BRAND_URL = "https://mahe-online.de/"
@@ -346,14 +346,34 @@ def catBrand(cid):
 
 # Web3Forms-Key: wird aus build/config.local.json oder aus der Umgebung gelesen.
 # Ohne Key fallen die Formulare automatisch auf mailto: zurück.
+def setting(name, env):
+    value = os.environ.get(env)
+    if value:
+        return value.strip()
+    for p in (BUILD / "config.local.json", BUILD / "config.public.json"):
+        if p.exists():
+            try:
+                config = json.loads(p.read_text("utf-8"))
+                if name not in config:
+                    continue
+                value = config[name] or ""
+                if not isinstance(value, str):
+                    raise ValueError(f"{name} must be a string")
+                return value.strip()
+            except (ValueError, AttributeError) as exc:
+                raise ValueError(f"Invalid {p.name}: {exc}") from exc
+    return ""
+
+
 def web3forms_key():
-    p = BUILD / "config.local.json"
-    if p.exists():
-        try:
-            return (json.loads(p.read_text("utf-8")).get("web3forms_key") or "").strip()
-        except Exception:
-            pass
-    return (os.environ.get("WEB3FORMS_KEY") or "").strip()
+    return setting("web3forms_key", "WEB3FORMS_KEY")
+
+
+def cloudflare_analytics_token():
+    token = setting("cloudflare_analytics_token", "CLOUDFLARE_ANALYTICS_TOKEN")
+    if token and not re.fullmatch(r"[a-fA-F0-9]{32}", token):
+        raise ValueError("CLOUDFLARE_ANALYTICS_TOKEN must be the 32-character Web Analytics beacon token, not an API credential")
+    return token
 
 
 # --------------------------------------------------------------------------
@@ -400,6 +420,7 @@ SPECMAP   = _load("SPECMAP")     # Produkt -> Tabelle(n) bei MAHE
 SPECROW   = _load("SPECROW")     # Zeilenbeschriftung -> fr/it
 SPECNOTE  = _load("SPECNOTE")    # Fussnote unter der Tabelle
 REF       = _load("REF")         # echte Kundenstimmen, siehe data/REF.json
+BUYING_GUIDE = _load("BUYING_GUIDE")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).

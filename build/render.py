@@ -126,7 +126,8 @@ JS_URL = _ver("/assets/js/app.js")
 NOSCRIPT_CSS = (".tabpane{display:block!important}.tabbar{display:none}\n"
                 "    .galslide{display:grid!important;place-items:center;"
                 "gap:12px;margin-bottom:18px}\n"
-                "    .galnav,.galthumbs{display:none}")
+                "    .galnav,.galthumbs{display:none}\n"
+                ".form,.basket,.burger,[data-add]{display:none!important}")
 
 # Der Bildrueckfall. Fehlt die lokale Kopie eines Herstellerbildes, laedt das
 # Bild stattdessen das Original von mahe-online.de; die Adresse steht als
@@ -179,16 +180,19 @@ def sri_hash(text):
 
 
 def csp(lang):
+    analytics = bool(C.cloudflare_analytics_token())
     return "; ".join([
         "default-src 'self'",
         "base-uri 'self'",
         "object-src 'none'",
         "frame-src 'none'",
         "img-src 'self' https://mahe-online.de",
-        f"script-src 'self' {sri_hash(IMG_FALLBACK_JS)} {sri_hash(boot_json(lang))}",
+        f"script-src 'self' {sri_hash(IMG_FALLBACK_JS)} {sri_hash(boot_json(lang))}"
+        + (" https://static.cloudflareinsights.com" if analytics else ""),
         f"style-src 'self' {sri_hash(NOSCRIPT_CSS)}",
         "font-src 'self'",
-        "connect-src 'self' https://api.web3forms.com",
+        "connect-src 'self' https://api.web3forms.com"
+        + (" https://cloudflareinsights.com" if analytics else ""),
         "form-action 'self'",
         # frame-ancestors steht bewusst nicht hier: per <meta> ignorieren es
         # alle Browser und melden es als Warnung in der Konsole. Gegen
@@ -217,7 +221,7 @@ def e(s):
 
 def jsonld(obj):
     return ('<script type="application/ld+json">'
-            + json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+            + json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
             + "</script>")
 
 
@@ -508,7 +512,8 @@ def ld_product(lang, p):
         "alternateName": ([C.pName(lang, p)] + list(p.get("aka", []))
                           if p.get("aka") else C.pName(lang, p)),
         "sku": p["id"].upper(),
-        "mpn": p["id"].upper(),
+        # Our URL slug is an internal SKU, not a manufacturer's part number.
+        **({"mpn": p["mpn"]} if p.get("mpn") else {}),
         "url": url,
         "description": C.pDesc(lang, p),
         "image": [img_abs(p["img"], 1000)],
@@ -563,7 +568,7 @@ def ld_itemlist(lang, products, name):
         "itemListElement": [
             {"@type": "ListItem", "position": i + 1,
              "url": C.abs_url(C.u_prod(lang, p)),
-             "name": f"{C.pBrand(p)} {p['name']}"}
+             "name": f"{C.pBrand(p)} {C.pName(lang, p)}"}
             for i, p in enumerate(products)
         ],
     }
@@ -749,10 +754,9 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 def lang_switch(lang, alts):
     out = []
     for l in C.LANGS:
-        cur = "true" if l == lang else "false"
         out.append(f'<a href="{e(alts[l])}" hreflang="{C.EX[l]["hreflang"]}" '
                    f'aria-current="{ "true" if l==lang else "false" }" '
-                   f'data-lang="{l}" aria-pressed="{cur}" '
+                   f'data-lang="{l}" '
                    f'title="{e(C.EX[l]["lang_name"])}">{l.upper()}</a>')
     return "".join(out)
 
@@ -785,9 +789,9 @@ def mega(lang):
             f'<div class="mgroup"><a class="mlink" href="{e(url)}">'
             f'<span>{e(name)}</span><span class="chev" aria-hidden="true">→</span></a></div>'
         )
-    return f"""<aside class="mega" id="mega" aria-label="{e(C.t(lang,'menu_aria'))}" aria-hidden="true">
+    return f"""<aside class="mega" id="mega" role="dialog" aria-modal="true" tabindex="-1" inert aria-label="{e(C.t(lang,'menu_aria'))}" aria-hidden="true">
   <div class="top"><span class="t">{e(C.t(lang,'menu_title'))}</span>
-    <button class="x" type="button" data-close="mega" aria-label="✕">✕</button></div>
+    <button class="x" type="button" data-close="mega" aria-label="{e(C.t(lang,'lupe_close'))}">✕</button></div>
   <nav class="scroll" id="megaScroll" aria-label="{e(C.t(lang,'menu_aria'))}">{"".join(blocks)}</nav>
   <div class="foot"><a class="pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'m_inquire'))}</a>
     <a href="{e(C.u_products(lang))}">{e(C.t(lang,'m_all'))}</a></div>
@@ -819,11 +823,11 @@ def header(lang, alts):
       <div class="sugg" id="sugg" role="listbox" aria-label="{e(C.t(lang,'search_aria_listbox'))}" hidden></div>
     </form>
     <div class="hactions">
-      <button class="basket" type="button" data-open="cart" aria-label="{e(C.t(lang,'cart_title'))}">
+      <button class="basket" type="button" data-open="cart" aria-controls="cart" aria-expanded="false" aria-label="{e(C.t(lang,'cart_title'))}">
         <span aria-hidden="true">▤</span><span class="txt">{e(C.t(lang,'inquiry'))}</span>
         <span class="cnt" id="cnt">0</span></button>
       <button class="burger" type="button" data-open="mega" aria-label="{e(C.t(lang,'menu_aria'))}"
-              aria-expanded="false"><span></span><span></span><span></span></button>
+              aria-controls="mega" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -833,11 +837,12 @@ def header(lang, alts):
 
 
 def cart_drawer(lang):
-    return f"""<aside class="cart" id="cart" aria-label="{e(C.t(lang,'cart_title'))}" aria-hidden="true">
+    return f"""<aside class="cart" id="cart" role="dialog" aria-modal="true" tabindex="-1" inert aria-label="{e(C.t(lang,'cart_title'))}" aria-hidden="true">
   <div class="top"><p class="drawer-title">{e(C.t(lang,'cart_title'))}</p>
-    <button class="x" type="button" data-close="cart" aria-label="✕">✕</button></div>
+    <button class="x" type="button" data-close="cart" aria-label="{e(C.t(lang,'lupe_close'))}">✕</button></div>
+  <p id="cartStatus" class="fstatus" role="status" aria-live="polite"></p>
   <div class="items" id="cartItems"></div>
-  <form class="form" id="cartForm" hidden novalidate>
+  <form class="form" id="cartForm" method="post" hidden novalidate>
     <label for="cName">{e(C.t(lang,'f_name'))}</label>
     <input id="cName" name="name" type="text" required autocomplete="organization"
            placeholder="Max Muster · Muster AG">
@@ -846,6 +851,7 @@ def cart_drawer(lang):
     <label for="cMsg">{e(C.t(lang,'f_msg'))}</label>
     <textarea id="cMsg" name="message" rows="2" placeholder="…"></textarea>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    {form_note(lang)}
     <button class="send" type="submit">{e(C.t(lang,'f_send'))}</button>
     <p class="fstatus" role="status" aria-live="polite"></p>
   </form>
@@ -898,7 +904,15 @@ def footer(lang):
 <div class="toast" id="toast" role="status" aria-live="polite"></div>"""
 
 
+def form_note(lang):
+    key = "form_note_direct" if C.web3forms_key() else "form_note_mail"
+    return (f'<p class="form-note">{e(C.t(lang, key))} '
+            f'<a href="{e(C.u_page(lang, "privacy"))}">{e(C.t(lang, "nav_datenschutz"))}</a></p>')
+
+
 JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "opened_mail",
+           "qty_less", "qty_more", "cart_remove", "consult_product", "search_unavailable",
+           "gal_prev", "gal_next",
            "no_hits", "items", "c_search", "dl_soon", "to_inquiry", "f_send",
            "search_results_for", "search_n_results", "search_one_result", "search_no_results",
            "search_no_results_help", "search_did_you_mean", "search_all_results",
@@ -927,6 +941,7 @@ def boot_json(lang):
     """
     cfg = {
         "lang": lang,
+        "siteUrl": C.SITE,
         "hreflang": C.EX[lang]["hreflang"],
         "searchIndex": f"/data/search-{lang}.json",
         "searchUrl": C.u_page(lang, "search"),
@@ -935,12 +950,31 @@ def boot_json(lang):
         "mailto": C.COMPANY["email"],
         "i18n": {k: C.t(lang, k) for k in JS_KEYS},
     }
-    return ("window.VT=" + json.dumps(cfg, ensure_ascii=False, separators=(",", ":"))
+    return ("window.VT=" + json.dumps(cfg, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
             + ";")
 
 
 def boot_script(lang):
     return "<script>" + boot_json(lang) + "</script>"
+
+
+def analytics_html(lang):
+    token = C.cloudflare_analytics_token()
+    if not token:
+        return ""
+    return f'''<section class="analytics-consent" id="analyticsConsent" hidden
+        aria-label="{e(C.t(lang, 'analytics_title'))}" data-token="{e(token)}"
+        data-host="{e(C.CUSTOM_DOMAIN)}">
+      <p><strong>{e(C.t(lang, 'analytics_title'))}</strong></p>
+      <p>{e(C.t(lang, 'analytics_text'))}
+        <a href="{e(C.u_page(lang, 'privacy'))}">{e(C.t(lang, 'nav_datenschutz'))}</a></p>
+      <div class="consent-actions">
+        <button type="button" data-consent="denied">{e(C.t(lang, 'analytics_decline'))}</button>
+        <button type="button" data-consent="granted">{e(C.t(lang, 'analytics_accept'))}</button>
+      </div>
+    </section>
+    <button class="analytics-settings" type="button" id="analyticsSettings" hidden>{e(C.t(lang, 'analytics_settings'))}</button>
+    <script src="{_ver('/assets/js/analytics.js')}" defer></script>'''
 
 
 def _complete_graph(lang, blocks):
@@ -974,6 +1008,7 @@ def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
 {head(lang, title=title, desc=desc, url=url, alts=alts, jsonld_blocks=jsonld_blocks,
       og_image=og_image, og_type=og_type, robots=robots, extra_head=extra_head,
       adressierbar=adressierbar)}
+<noscript><style>{NOSCRIPT_CSS}</style></noscript>
 </head>
 <body{f' class="{body_class}"' if body_class else ''}>
 {header(lang, alts)}
@@ -981,6 +1016,7 @@ def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
 {body}
 </main>
 {footer(lang)}
+{analytics_html(lang)}
 {boot_script(lang)}
 <script src="{JS_URL}" defer></script>
 </body>

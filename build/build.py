@@ -36,7 +36,7 @@ TODAY = datetime.date.today().isoformat()
 
 # Verzeichnisse, die der Build vollständig verwaltet (werden vorher geleert)
 MANAGED_DIRS = ["produkte", "fr", "it", "verfahren", "downloads", "kontakt",
-                "faq", "suche", "impressum", "datenschutz", "service", "ueber-uns"]
+                "faq", "suche", "impressum", "datenschutz", "agb", "service", "ueber-uns"]
 
 written = []
 
@@ -227,6 +227,7 @@ def products_json():
             "id": p["id"],
             "sku": p["id"].upper(),
             "name": f"{C.pBrand(p)} {p['name']}",
+            "names": {l: f"{C.pBrand(p)} {C.pName(l, p)}" for l in C.LANGS},
             "brand": C.pBrand(p),
             "type": {l: C.vtT(l, p["vt"]) for l in C.LANGS},
             "category": {l: C.catT(l, cat) for l in C.LANGS},
@@ -257,16 +258,17 @@ def products_json():
             "availability": {"model": "on-request",
                              "note": {l: C.t(l, "avail_val") for l in C.LANGS}},
             "image": R.img_abs(p["img"], 1000),
+            "condition": C.zustandLD(p) or None,
             "url": {l: C.abs_url(C.u_prod(l, p)) for l in C.LANGS},
         })
     return {
-        "@context": "https://schema.org",
+        "schema_version": 1,
         "generated": TODAY,
         "seller": {"name": C.COMPANY["name"], "url": C.SITE + "/",
                    "email": C.COMPANY["email"], "telephone": C.COMPANY["phone"],
                    "address": f"{C.COMPANY['street']}, {C.COMPANY['zip']} {C.COMPANY['city']}, "
                               f"{C.COMPANY['country_name']}"},
-        "license": "Produktdaten und Bilder: MAHE GmbH. Wiedergabe durch VES-TECH Swiss als Schweizer Partner.",
+        "license": "Produktdaten und Herstellerbilder: jeweiliger Hersteller. Eigene Inhalte: VES-TECH Swiss. Rechte siehe Impressum.",
         "count": len(out),
         "products": out,
     }
@@ -554,6 +556,10 @@ def llms_full():
            "", "---", ""]
     for c in C.CATS:
         out += [f"## {C.catT(L,c)}", C.catD(L, c), ""]
+        guide = C.BUYING_GUIDE[c['id']][L]
+        out += [f"### {guide['title']}", f"Quelle: {C.abs_url(C.u_cat(L, c['id']))}", guide['intro']]
+        out += [f"- {h}: {text}" for h, text in guide['criteria']]
+        out.append("")
         for p in C.products_of(c["id"]):
             out.append(f"### {C.pBrand(p)} {p['name']}")
             out.append(f"URL: {C.abs_url(C.u_prod(L, p))}")
@@ -627,6 +633,10 @@ def webmanifest():
 # --------------------------------------------------------------------------
 
 def main():
+    # Validate configuration before deleting any generated pages.
+    C.cloudflare_analytics_token()
+    C.web3forms_key()
+    written.clear()
     for d in MANAGED_DIRS:
         p = OUT / d
         if p.exists():

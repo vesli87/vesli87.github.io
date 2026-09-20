@@ -68,8 +68,8 @@
     "impressum_title": "Impressum | VES-TECH Swiss",
     "impressum_desc": "Impressum von VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen SG: Inhaber, Kontakt, Handelsregister, Mehrwertsteuer, Haftung und Urheberrecht.",
     "impressum_h1": "Impressum",
-    "datenschutz_title": "Datenschutzerklärung ohne Cookies und ohne Tracking",
-    "datenschutz_desc": "Wie VES-TECH Swiss Personendaten bearbeitet: Server-Logs, Formulardaten, Anfrageliste. Ohne Cookies, ohne Tracking. Nach revidiertem DSG und DSGVO.",
+    "datenschutz_title": "Datenschutz · Daten und Einstellungen | VES-TECH Swiss",
+    "datenschutz_desc": "Informationen zu Hosting, Anfragen, lokaler Anfrageliste und optionaler Webstatistik bei VES-TECH Swiss. So verwalten Sie Ihre Einstellungen.",
     "datenschutz_h1": "Datenschutzerklärung",
     "err404_title": "Seite nicht gefunden | VES-TECH Swiss",
     "err404_h1": "Seite nicht gefunden",
@@ -196,7 +196,7 @@
       ],
       [
         "Datenschutz und Anfrageliste",
-        "<p>Wie wir mit Daten umgehen, steht in der <a href=\"/datenschutz/\">Datenschutzerklärung</a>.</p><p>Diese Website setzt keine Cookies und verwendet keine Dienste zur Analyse oder zum Tracking. Eine Einwilligung ist deshalb nicht einzuholen; ein Cookie-Banner gibt es nicht.</p><p>Ihre Anfrageliste speichert Ihr Browser lokal auf Ihrem Gerät (localStorage). Diese Daten verlassen Ihren Browser erst, wenn Sie die Anfrage absenden. Sie können sie jederzeit über die Anfrageliste oder die Einstellungen Ihres Browsers löschen. Über diese Speicherung informieren wir Sie nach Art. 45c lit. b FMG.</p>"
+        "{runtime_summary}"
       ],
       [
         "Stand dieser Angaben",
@@ -213,8 +213,8 @@
         "<p>Diese Erklärung gilt für die Website <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in allen drei Sprachfassungen (Deutsch, Französisch und Italienisch) sowie für Anfragen, die uns über diese Website erreichen.</p><p>Massgebend ist das <strong>Schweizer Datenschutzgesetz</strong> (DSG) in der revidierten Fassung, in Kraft seit 1. September 2023. Das DSG spricht vom „Bearbeiten“ von Personendaten. Diesen Begriff verwenden wir hier durchgehend; er umfasst jeden Umgang mit Daten, vom Erheben bis zum Löschen.</p><p>Unser Liefergebiet umfasst neben der Schweiz auch Liechtenstein, das zum Europäischen Wirtschaftsraum gehört. Soweit wir dort Personen ansprechen, gilt zusätzlich die europäische Datenschutz-Grundverordnung (DSGVO). Die beiden Regelwerke sind nicht deckungsgleich. Wo sie auseinandergehen, ist es im Text vermerkt.</p>"
       ],
       [
-        "Was diese Website nicht tut",
-        "<p>Diese Website kommt ohne die üblichen Beobachtungswerkzeuge aus. Deshalb finden Sie hier auch kein Einwilligungsbanner: Wir setzen keine Cookies, und die einzige Angabe, die auf Ihrem Gerät bleibt, legen Sie selbst dort ab.</p><ul><li><strong>Keine Cookies.</strong> Weder eigene noch fremde.</li><li><strong>Keine Werkzeuge für Analyse oder Statistik.</strong> Kein Google Analytics, kein vergleichbarer Dienst.</li><li><strong>Kein Tracking, keine Werbe-Pixel, kein Profiling.</strong> Wir erstellen keine Nutzungsprofile und verfolgen Ihr Verhalten nicht über mehrere Seiten oder Sitzungen hinweg.</li><li><strong>Keine Suchprotokolle.</strong> Die Suche läuft vollständig in Ihrem Browser. Der Suchindex wird einmal von dieser Website geladen; was Sie danach eingeben, bleibt auf Ihrem Gerät und erreicht uns nicht.</li><li><strong>Keine automatisierte Einzelentscheidung.</strong> Über Ihre Anfrage entscheidet ein Mensch.</li><li><strong>Keine eingebetteten Fremdinhalte.</strong> Keine Google Fonts, kein CDN, keine Landkarten, keine Videos, keine Social-Media-Plugins. Die Schriften werden mit der Website selbst ausgeliefert.</li></ul><p>Unsere eigenen Seiten werden ausschliesslich verschlüsselt über HTTPS/TLS ausgeliefert.</p>"
+        "Website und lokale Speicherung",
+        "{runtime_privacy}"
       ],
       [
         "Hosting und Server-Logdaten",
@@ -230,7 +230,7 @@
       ],
       [
         "Versand Ihrer Anfrage",
-        "<p>Diese Website versendet Ihre Anfrage nicht selbst und übergibt sie keinem Formulardienst. Beim Absenden öffnet sich Ihr eigenes E-Mail-Programm mit vorbereitetem Text (mailto). Sie sehen, was darin steht, und entscheiden selbst, ob Sie die Nachricht abschicken. Sie geht dann direkt an uns, ohne Zwischenstelle.</p><p>Der Weg Ihrer Nachricht richtet sich damit nach Ihrem eigenen E-Mail-Anbieter. Sollten wir künftig einen Versanddienstleister einsetzen, nennen wir ihn an dieser Stelle, bevor er zum Einsatz kommt.</p>"
+        "{runtime_delivery}"
       ],
       [
         "E-Mail und Telefon",
@@ -336,7 +336,7 @@
       ],
       [
         "Datenschutz",
-        "<p>Wir bearbeiten Personendaten nur, soweit das für die Beantwortung von Anfragen, die Abwicklung von Verträgen und die Buchhaltung nötig ist.</p><p>Die Website setzt keine Cookies, kein Tracking und keine Analysewerkzeuge ein. Die Anfrageliste wird im Browser des Besuchers gespeichert. Beim Absenden öffnet sich sein eigenes E-Mail-Programm mit vorbereitetem Text; die Nachricht geht danach direkt an uns, ohne Zwischenstelle. Gehostet wird die Website auf GitHub Pages (USA).</p><p>Einzelheiten dazu, welche Daten anfallen, an wen sie gehen und welche Rechte bestehen, stehen in der <a href=\"/datenschutz/\">Datenschutzerklärung</a>.</p>"
+        "{runtime_summary}"
       ],
       [
         "Anwendbares Recht und Gerichtsstand",
@@ -484,7 +484,27 @@
     "sub_desc_occ": "{sub} gebraucht: {n} Anlagen bei VES-TECH Swiss. Technische Daten, Originalprospekt und Besichtigung nach Vereinbarung. Preis auf Anfrage.",
     "prod_title_occ": "{marke} {name} {sub} gebraucht kaufen | VES-TECH Swiss",
     "prod_title_occ_kurz": "{marke} {name} gebraucht zu verkaufen | VES-TECH Swiss",
-    "prod_desc_occ": "{marke} {name} zu verkaufen: {sub}-Anlage (Microplasma), gebraucht und generalüberholt, Werkstatt Herisau AR. {desc} Preis auf Anfrage."
+    "prod_desc_occ": "{marke} {name} zu verkaufen: {sub}-Anlage (Microplasma), gebraucht und generalüberholt, Werkstatt Herisau AR. {desc} Preis auf Anfrage.",
+    "qty_less": "Menge verringern",
+    "qty_more": "Menge erhöhen",
+    "cart_remove": "Aus Anfrageliste entfernen",
+    "consult_product": "Ich wünsche eine Beratung zu {name}.",
+    "search_unavailable": "Die Suche ist vorübergehend nicht verfügbar. Versuchen Sie es erneut oder öffnen Sie den Produktkatalog.",
+    "form_note_mail": "Dieser Schritt bereitet eine E-Mail vor. Bitte senden Sie diese anschliessend in Ihrem Mailprogramm ab.",
+    "form_note_direct": "Ihre Anfrage wird über Web3Forms an uns übermittelt.",
+    "form_nojs": "Für das Formular ist JavaScript nötig. Sie erreichen uns direkt per E-Mail:",
+    "mail_p": "Der Versand ist noch nicht bestätigt. Kopieren Sie den Text oder öffnen Sie Ihr Mailprogramm und senden Sie die Anfrage an die folgende Adresse.",
+    "analytics_title": "Optionale Webstatistik",
+    "analytics_text": "Mit Ihrer Zustimmung misst Cloudflare Web Analytics Seitenaufrufe und Ladezeiten, ohne Analyse-Cookies. Ihre Formularangaben werden nicht an die Webstatistik übergeben. Sie können Ihre Auswahl jederzeit ändern.",
+    "analytics_decline": "Ablehnen",
+    "analytics_accept": "Zustimmen",
+    "analytics_settings": "Statistik-Einstellungen",
+    "privacy_runtime": "<p>Die Website verwendet keine Werbe-Cookies und erstellt keine persönlichen Nutzungsprofile. Schriften und Produktbilder werden lokal ausgeliefert; externe Herstellerbilder können als Ersatz geladen werden, wenn eine lokale Datei fehlt.</p><p>Die Anfrageliste bleibt im localStorage Ihres Browsers. Formularangaben werden nicht dort gespeichert. Die Suche verarbeitet Begriffe im Browser; beim Öffnen einer Ergebnisseite steht der Suchbegriff in der URL und kann in den Server-Logs des Hosters erscheinen.</p>",
+    "privacy_analytics_on": "Cloudflare Web Analytics wird erst nach Ihrer Zustimmung geladen und misst Seitenaufrufe sowie Ladezeiten. Cloudflare erhält die dafür erforderlichen technischen Anfragen Ihres Browsers. Das Analyseskript verwendet keine Cookies. Ihre Auswahl wird für höchstens 180 Tage lokal gespeichert. Über «Statistik-Einstellungen» können Sie ablehnen oder Ihre Zustimmung widerrufen. Bereits erhobene Daten werden dadurch nicht rückwirkend gelöscht. Suchseiten und Aufrufe mit URL-Parametern sind von unserer Messung ausgeschlossen. Die Statistik erhält keine Formularinhalte.",
+    "privacy_analytics_off": "Auf dieser Website ist derzeit keine Webstatistik aktiviert.",
+    "privacy_delivery_mail": "<p>Das Formular bereitet einen E-Mail-Entwurf vor. Sie versenden ihn selbst über Ihr Mailprogramm. Ohne Versand erhalten wir keine Anfrage. Falls kein Mailprogramm eingerichtet ist, können Sie den vorbereiteten Text kopieren und selbst per E-Mail senden.</p>",
+    "privacy_delivery_direct": "<p>Beim Absenden übermittelt Ihr Browser Name, E-Mail-Adresse, Telefonnummer (falls angegeben), Nachricht und gewählte Produkte an <a href=\"https://web3forms.com/privacy\">Web3Forms</a>, damit der Dienst die Anfrage per E-Mail an uns zustellt. Bei einem Fehler bleibt der Text zum Kopieren verfügbar. Wenn Sie den E-Mail-Ersatz verwenden, versenden Sie die Nachricht über Ihr eigenes Mailprogramm. Web3Forms speichert eingereichte Nachrichten in seinem Dashboard gemäss der eingestellten Aufbewahrungsdauer von bis zu drei Jahren. Die zugestellten E-Mails verbleiben zusätzlich in unserem Postfach.</p>",
+    "privacy_summary": "<p>Wir bearbeiten Ihre Angaben zur Beantwortung von Anfragen, für Verträge und die Buchhaltung. Die Anfrageliste wird lokal im Browser gespeichert. Der aktuelle Versandweg und die optionalen Webstatistiken sind in der <a href=\"{privacy_url}\">Datenschutzerklärung</a> beschrieben. Die Website wird auf GitHub Pages gehostet.</p>"
   },
   "fr": {
     "locale": "fr_CH",
@@ -554,8 +574,8 @@
     "impressum_title": "Mentions légales | VES-TECH Swiss",
     "impressum_desc": "Mentions légales de VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen SG : titulaire, contact, registre du commerce, TVA et responsabilité.",
     "impressum_h1": "Mentions légales",
-    "datenschutz_title": "Protection des données sans cookies ni traçage",
-    "datenschutz_desc": "Comment VES-TECH Swiss traite les données personnelles: journaux du serveur, formulaires, liste de demande. Sans cookies ni traçage. nLPD et RGPD.",
+    "datenschutz_title": "Protection des données et préférences | VES-TECH Swiss",
+    "datenschutz_desc": "Informations sur l’hébergement, les demandes, la liste locale et les statistiques facultatives de VES-TECH Swiss. Gérez vos préférences.",
     "datenschutz_h1": "Déclaration de protection des données",
     "err404_title": "Page introuvable | VES-TECH Swiss",
     "err404_h1": "Page introuvable",
@@ -682,7 +702,7 @@
       ],
       [
         "Protection des données et liste de demande",
-        "<p>La manière dont nous traitons les données est décrite dans la <a href=\"/fr/protection-des-donnees/\">déclaration de protection des données</a>.</p><p>Ce site n’utilise ni cookies, ni services d’analyse ou de suivi. Aucun consentement n’est donc à recueillir et il n’y a pas de bandeau cookies.</p><p>Votre liste de demande est enregistrée localement par votre navigateur, sur votre appareil (localStorage). Ces données ne quittent votre navigateur qu’au moment où vous envoyez la demande. Vous pouvez les effacer en tout temps via la liste de demande ou les réglages de votre navigateur. Nous vous informons de cet enregistrement conformément à l’art. 45c let. b LTC.</p>"
+        "{runtime_summary}"
       ],
       [
         "État de ces indications",
@@ -699,8 +719,8 @@
         "<p>La présente déclaration s'applique au site <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> dans ses trois versions linguistiques (allemande, française et italienne) ainsi qu'aux demandes qui nous parviennent par ce site.</p><p>Le droit déterminant est la <strong>loi fédérale sur la protection des données</strong> (LPD) dans sa version révisée, en vigueur depuis le 1er septembre 2023. La LPD parle du «traitement» de données personnelles. Nous employons ce terme tout au long du texte; il recouvre toute opération sur des données, de la collecte à l'effacement.</p><p>Notre zone de livraison comprend, outre la Suisse, le Liechtenstein, qui fait partie de l'Espace économique européen. Dans la mesure où nous nous adressons à des personnes qui s'y trouvent, le règlement général européen sur la protection des données (RGPD) s'applique en plus. Les deux textes ne se recouvrent pas entièrement. Là où ils divergent, cela est signalé.</p>"
       ],
       [
-        "Ce que ce site ne fait pas",
-        "<p>Ce site se passe des outils d'observation habituels. C'est pourquoi vous n'y trouverez pas non plus de bandeau de consentement: nous n'utilisons pas de cookies, et la seule donnée qui reste sur votre appareil, c'est vous qui l'y déposez.</p><ul><li><strong>Pas de cookies.</strong> Ni les nôtres, ni ceux de tiers.</li><li><strong>Pas d'outil d'analyse ni de statistique.</strong> Pas de Google Analytics, ni de service comparable.</li><li><strong>Pas de traçage, pas de pixel publicitaire, pas de profilage.</strong> Nous n'établissons aucun profil d'utilisation et ne suivons pas votre comportement d'une page ou d'une session à l'autre.</li><li><strong>Pas de journal des recherches.</strong> La recherche s'exécute entièrement dans votre navigateur. L'index est chargé une fois depuis ce site; ce que vous saisissez ensuite reste sur votre appareil et ne nous parvient pas.</li><li><strong>Pas de décision individuelle automatisée.</strong> C'est un être humain qui traite votre demande.</li><li><strong>Pas de contenu externe intégré.</strong> Pas de Google Fonts, pas de CDN, pas de cartes, pas de vidéos, pas de modules de réseaux sociaux. Les polices sont livrées avec le site lui-même.</li></ul><p>Nos propres pages sont livrées exclusivement de manière chiffrée, par HTTPS/TLS.</p>"
+        "Site et stockage local",
+        "{runtime_privacy}"
       ],
       [
         "Hébergement et journaux du serveur",
@@ -716,7 +736,7 @@
       ],
       [
         "Envoi de votre demande",
-        "<p>Ce site n'envoie pas lui-même votre demande et ne la confie à aucun service de formulaires. Lorsque vous validez l'envoi, votre propre programme de courrier s'ouvre avec un texte préparé (mailto). Vous voyez ce qu'il contient et décidez vous-même de l'expédier ou non. Le message nous parvient alors directement, sans intermédiaire.</p><p>Le trajet de votre message dépend donc de votre propre fournisseur de messagerie. Si nous devions à l'avenir recourir à un prestataire d'envoi, nous le nommerons ici avant qu'il ne soit mis en service.</p>"
+        "{runtime_delivery}"
       ],
       [
         "Courriel et téléphone",
@@ -822,7 +842,7 @@
       ],
       [
         "Protection des données",
-        "<p>Nous traitons les données personnelles uniquement dans la mesure nécessaire au traitement des demandes, à l'exécution des contrats et à la comptabilité.</p><p>Le site n'utilise ni cookies, ni traçage, ni outils d'analyse. La liste de demande est enregistrée dans le navigateur du visiteur. Lors de l'envoi, son propre logiciel de messagerie s'ouvre avec un texte préparé ; le message nous parvient ensuite directement, sans intermédiaire. Le site est hébergé sur GitHub Pages (États-Unis).</p><p>Les détails sur les données recueillies, leurs destinataires et les droits existants figurent dans la <a href=\"/fr/protection-des-donnees/\">déclaration de protection des données</a>.</p>"
+        "{runtime_summary}"
       ],
       [
         "Droit applicable et for",
@@ -970,7 +990,27 @@
     "sub_desc_occ": "{sub} d’occasion : {n} machines chez VES-TECH Swiss. Données techniques, brochure d’origine et visite sur rendez-vous. Prix sur demande.",
     "prod_title_occ": "{marke} {name} {sub} occasion à vendre | VES-TECH Swiss",
     "prod_title_occ_kurz": "{marke} {name} d’occasion à vendre | VES-TECH Swiss",
-    "prod_desc_occ": "{marke} {name} à vendre : installation {sub}, d’occasion et entièrement révisée, atelier de Herisau AR. {desc} Prix sur demande."
+    "prod_desc_occ": "{marke} {name} à vendre : installation {sub}, d’occasion et entièrement révisée, atelier de Herisau AR. {desc} Prix sur demande.",
+    "qty_less": "Réduire la quantité",
+    "qty_more": "Augmenter la quantité",
+    "cart_remove": "Retirer de la demande",
+    "consult_product": "Je souhaite un conseil concernant {name}.",
+    "search_unavailable": "La recherche est temporairement indisponible. Réessayez ou ouvrez le catalogue.",
+    "form_note_mail": "Cette étape prépare un e-mail. Envoyez-le ensuite depuis votre messagerie.",
+    "form_note_direct": "Votre demande nous est transmise via Web3Forms.",
+    "form_nojs": "Le formulaire nécessite JavaScript. Contactez-nous directement par e-mail :",
+    "mail_p": "L’envoi n’est pas encore confirmé. Copiez le texte ou ouvrez votre messagerie et envoyez la demande à l’adresse suivante.",
+    "analytics_title": "Statistiques facultatives",
+    "analytics_text": "Avec votre accord, Cloudflare Web Analytics mesure les pages vues et les temps de chargement, sans cookies d’analyse. Les données de vos formulaires ne sont pas transmises aux statistiques. Vous pouvez modifier votre choix à tout moment.",
+    "analytics_decline": "Refuser",
+    "analytics_accept": "Accepter",
+    "analytics_settings": "Préférences statistiques",
+    "privacy_runtime": "<p>Le site n’utilise pas de cookies publicitaires et ne crée pas de profils personnels d’utilisation. Les polices et images sont hébergées localement ; une image du fabricant peut être chargée en remplacement d’un fichier local manquant.</p><p>La liste de demandes reste dans le localStorage du navigateur. Les données des formulaires n’y sont pas enregistrées. La recherche traite les termes dans le navigateur ; à l’ouverture d’une page de résultats, le terme figure dans l’URL et peut apparaître dans les journaux du serveur de l’hébergeur.</p>",
+    "privacy_analytics_on": "Cloudflare Web Analytics n’est chargé qu’après votre accord et mesure les pages vues ainsi que les temps de chargement. Cloudflare reçoit les requêtes techniques nécessaires de votre navigateur. Le script n’utilise pas de cookies. Votre choix est conservé localement pendant 180 jours au maximum. Les « Préférences statistiques » permettent de refuser ou de retirer votre accord. Les données déjà collectées ne sont pas effacées rétroactivement. Les pages de recherche et les visites avec paramètres d’URL sont exclues de notre mesure. Les statistiques ne reçoivent pas le contenu des formulaires.",
+    "privacy_analytics_off": "Aucune statistique web n’est actuellement activée sur ce site.",
+    "privacy_delivery_mail": "<p>Le formulaire prépare un brouillon d’e-mail. Vous l’envoyez depuis votre propre messagerie. Sans cet envoi, nous ne recevons pas de demande. Si aucune messagerie n’est configurée, copiez le texte préparé et envoyez-le vous-même par e-mail.</p>",
+    "privacy_delivery_direct": "<p>Lors de l’envoi, le navigateur transmet votre nom, adresse e-mail, téléphone (si indiqué), message et produits sélectionnés à <a href=\"https://web3forms.com/privacy\">Web3Forms</a> pour que le service nous livre la demande par e-mail. En cas d’erreur, le texte reste disponible pour être copié. Si vous utilisez la solution de remplacement par e-mail, vous envoyez le message depuis votre propre messagerie. Web3Forms conserve les messages reçus dans son tableau de bord selon la durée configurée, jusqu’à trois ans. Les e-mails livrés restent également dans notre boîte de réception.</p>",
+    "privacy_summary": "<p>Nous traitons vos données pour répondre aux demandes, exécuter les contrats et tenir la comptabilité. La liste de demandes est conservée localement dans le navigateur. Le mode d’envoi actuel et les statistiques facultatives sont décrits dans la <a href=\"{privacy_url}\">déclaration de protection des données</a>. Le site est hébergé sur GitHub Pages.</p>"
   },
   "it": {
     "locale": "it_CH",
@@ -1040,8 +1080,8 @@
     "impressum_title": "Note legali | VES-TECH Swiss",
     "impressum_desc": "Note legali di VES-TECH Swiss, Bildfeldstrasse 24, 9552 Bronschhofen SG: titolare, contatto, registro di commercio, IVA e responsabilità.",
     "impressum_h1": "Note legali",
-    "datenschutz_title": "Protezione dei dati senza cookie né tracciamento",
-    "datenschutz_desc": "Come VES-TECH Swiss tratta i dati personali: log del server, moduli, lista di richiesta. Senza cookie e senza tracciamento. Secondo nLPD e RGPD.",
+    "datenschutz_title": "Protezione dei dati e preferenze | VES-TECH Swiss",
+    "datenschutz_desc": "Informazioni su hosting, richieste, lista locale e statistiche facoltative di VES-TECH Swiss. Gestite le vostre preferenze.",
     "datenschutz_h1": "Informativa sulla protezione dei dati",
     "err404_title": "Pagina non trovata | VES-TECH Swiss",
     "err404_h1": "Pagina non trovata",
@@ -1168,7 +1208,7 @@
       ],
       [
         "Protezione dei dati e lista richieste",
-        "<p>Come trattiamo i dati è descritto nell’<a href=\"/it/protezione-dati/\">informativa sulla protezione dei dati</a>.</p><p>Questo sito non utilizza cookie né servizi di analisi o di tracciamento. Non occorre quindi alcun consenso e non vi è alcun banner sui cookie.</p><p>La vostra lista richieste viene salvata localmente dal vostro browser, sul vostro dispositivo (localStorage). Questi dati lasciano il browser solo nel momento in cui inviate la richiesta. Potete cancellarli in ogni momento dalla lista richieste o dalle impostazioni del browser. Vi informiamo di questa memorizzazione ai sensi dell’art. 45c lett. b LTC.</p>"
+        "{runtime_summary}"
       ],
       [
         "Stato di queste indicazioni",
@@ -1185,8 +1225,8 @@
         "<p>La presente informativa vale per il sito <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in tutte e tre le versioni linguistiche (tedesca, francese e italiana) nonché per le richieste che ci pervengono tramite questo sito.</p><p>È determinante la <strong>legge federale sulla protezione dei dati</strong> (LPD) nella versione riveduta, in vigore dal 1° settembre 2023. La LPD parla di «trattamento» di dati personali. Utilizziamo questo termine in tutto il testo; esso comprende ogni operazione sui dati, dalla raccolta alla cancellazione.</p><p>La nostra zona di fornitura comprende, oltre alla Svizzera, anche il Liechtenstein, che fa parte dello Spazio economico europeo. Nella misura in cui ci rivolgiamo a persone che vi si trovano, si applica in aggiunta il regolamento generale europeo sulla protezione dei dati (RGPD). I due testi non coincidono. Dove divergono, lo segnaliamo.</p>"
       ],
       [
-        "Che cosa questo sito non fa",
-        "<p>Questo sito fa a meno dei consueti strumenti di osservazione. Per questo non troverà nemmeno un banner di consenso: non utilizziamo cookie, e l'unico dato che rimane sul Suo apparecchio è quello che vi deposita Lei stesso.</p><ul><li><strong>Nessun cookie.</strong> Né propri né di terzi.</li><li><strong>Nessuno strumento di analisi o di statistica.</strong> Nessun Google Analytics, nessun servizio analogo.</li><li><strong>Nessun tracciamento, nessun pixel pubblicitario, nessuna profilazione.</strong> Non creiamo profili d'uso e non seguiamo il Suo comportamento attraverso più pagine o sessioni.</li><li><strong>Nessun registro delle ricerche.</strong> La ricerca funziona interamente nel Suo browser. L'indice viene caricato una sola volta da questo sito; quanto digita in seguito resta sul Suo apparecchio e non ci raggiunge.</li><li><strong>Nessuna decisione individuale automatizzata.</strong> Sulla Sua richiesta decide una persona.</li><li><strong>Nessun contenuto esterno incorporato.</strong> Nessun Google Fonts, nessuna CDN, nessuna cartina, nessun video, nessun plugin di social media. I caratteri sono forniti con il sito stesso.</li></ul><p>Le nostre pagine sono trasmesse esclusivamente in forma cifrata, tramite HTTPS/TLS.</p>"
+        "Sito e memorizzazione locale",
+        "{runtime_privacy}"
       ],
       [
         "Hosting e file di log del server",
@@ -1202,7 +1242,7 @@
       ],
       [
         "Invio della Sua richiesta",
-        "<p>Questo sito non invia esso stesso la Sua richiesta e non la affida ad alcun servizio di moduli. Al momento dell'invio si apre il Suo programma di posta elettronica con un testo già preparato (mailto). Vede che cosa contiene e decide Lei stesso se spedirlo. Il messaggio ci perviene allora direttamente, senza intermediari.</p><p>Il percorso del Suo messaggio dipende quindi dal Suo fornitore di posta elettronica. Qualora in futuro ricorressimo a un fornitore per l'invio, lo indicheremo in questo punto prima che venga impiegato.</p>"
+        "{runtime_delivery}"
       ],
       [
         "E-mail e telefono",
@@ -1308,7 +1348,7 @@
       ],
       [
         "Protezione dei dati",
-        "<p>Trattiamo dati personali soltanto nella misura necessaria per rispondere alle richieste, eseguire i contratti e tenere la contabilità.</p><p>Il sito non impiega cookie, né tracciamento, né strumenti di analisi. La lista richieste è memorizzata nel browser del visitatore. All'invio si apre il suo programma di posta elettronica con un testo già preparato; il messaggio ci perviene poi direttamente, senza intermediari. Il sito è ospitato su GitHub Pages (USA).</p><p>I dettagli su quali dati vengono raccolti, a chi sono trasmessi e quali diritti sussistono figurano nell'<a href=\"/it/protezione-dati/\">informativa sulla protezione dei dati</a>.</p>"
+        "{runtime_summary}"
       ],
       [
         "Diritto applicabile e foro competente",
@@ -1456,6 +1496,26 @@
     "sub_desc_occ": "{sub} usato: {n} macchine da VES-TECH Swiss. Dati tecnici, prospetto originale e visione su appuntamento. Prezzo su richiesta.",
     "prod_title_occ": "{marke} {name} {sub} usato in vendita | VES-TECH Swiss",
     "prod_title_occ_kurz": "{marke} {name} usato in vendita | VES-TECH Swiss",
-    "prod_desc_occ": "{marke} {name} in vendita: impianto {sub}, usato e completamente revisionato, officina di Herisau AR. {desc} Prezzo su richiesta."
+    "prod_desc_occ": "{marke} {name} in vendita: impianto {sub}, usato e completamente revisionato, officina di Herisau AR. {desc} Prezzo su richiesta.",
+    "qty_less": "Ridurre la quantità",
+    "qty_more": "Aumentare la quantità",
+    "cart_remove": "Rimuovere dalla richiesta",
+    "consult_product": "Desidero una consulenza su {name}.",
+    "search_unavailable": "La ricerca non è disponibile al momento. Riprovare oppure aprire il catalogo.",
+    "form_note_mail": "Questo passaggio prepara un’e-mail. Inviatela poi dal vostro programma di posta.",
+    "form_note_direct": "La vostra richiesta ci viene trasmessa tramite Web3Forms.",
+    "form_nojs": "Il modulo richiede JavaScript. Contattateci direttamente via e-mail:",
+    "mail_p": "L’invio non è ancora confermato. Copiate il testo oppure aprite il programma di posta e inviate la richiesta all’indirizzo seguente.",
+    "analytics_title": "Statistiche facoltative",
+    "analytics_text": "Con il vostro consenso, Cloudflare Web Analytics misura le pagine viste e i tempi di caricamento, senza cookie di analisi. I dati dei moduli non vengono trasmessi alle statistiche. Potete modificare la scelta in qualsiasi momento.",
+    "analytics_decline": "Rifiutare",
+    "analytics_accept": "Accettare",
+    "analytics_settings": "Preferenze statistiche",
+    "privacy_runtime": "<p>Il sito non utilizza cookie pubblicitari e non crea profili personali di utilizzo. Caratteri e immagini sono ospitati localmente; un’immagine del fabbricante può sostituire un file locale mancante.</p><p>La lista richieste resta nel localStorage del browser. I dati dei moduli non vengono salvati in questa memoria. La ricerca elabora i termini nel browser; aprendo una pagina di risultati, il termine compare nell’URL e può figurare nei log del server del fornitore di hosting.</p>",
+    "privacy_analytics_on": "Cloudflare Web Analytics viene caricato solo dopo il vostro consenso e misura le pagine viste e i tempi di caricamento. Cloudflare riceve le richieste tecniche necessarie dal browser. Lo script non utilizza cookie. La scelta viene salvata localmente per un massimo di 180 giorni. Le «Preferenze statistiche» permettono di rifiutare o revocare il consenso. I dati già raccolti non vengono cancellati retroattivamente. Le pagine di ricerca e le visite con parametri URL sono escluse dalla nostra misurazione. Le statistiche non ricevono il contenuto dei moduli.",
+    "privacy_analytics_off": "Al momento non sono attive statistiche web su questo sito.",
+    "privacy_delivery_mail": "<p>Il modulo prepara una bozza e-mail. La inviate dal vostro programma di posta. Senza questo invio non riceviamo la richiesta. Se non è configurato un programma di posta, copiate il testo preparato e inviatelo voi stessi via e-mail.</p>",
+    "privacy_delivery_direct": "<p>All’invio, il browser trasmette nome, indirizzo e-mail, telefono (se indicato), messaggio e prodotti selezionati a <a href=\"https://web3forms.com/privacy\">Web3Forms</a>, che ci recapita la richiesta via e-mail. In caso di errore il testo resta disponibile per essere copiato. Se utilizzate l’alternativa e-mail, inviate il messaggio dal vostro programma di posta. Web3Forms conserva i messaggi ricevuti nella sua dashboard secondo il periodo configurato, fino a tre anni. Le e-mail recapitate rimangono anche nella nostra casella di posta.</p>",
+    "privacy_summary": "<p>Trattiamo i vostri dati per rispondere alle richieste, eseguire i contratti e tenere la contabilità. La lista richieste viene salvata localmente nel browser. La modalità di invio attuale e le statistiche facoltative sono descritte nell’<a href=\"{privacy_url}\">informativa sulla protezione dei dati</a>. Il sito è ospitato su GitHub Pages.</p>"
   }
 }

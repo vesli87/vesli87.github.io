@@ -1,0 +1,87 @@
+{
+  "schweissgeraete": {
+    "de": {
+      "title": "Welches Schweissgerät passt zu Ihrer Arbeit?",
+      "intro": "Eine sinnvolle Auswahl beginnt beim Werkstück: Nennen Sie VES-TECH Swiss den Werkstoff, die Materialdicke und das gewünschte Verfahren. Im Katalog sind MIG/MAG, WIG/TIG, MMA und Plasma TIG getrennt aufgeführt. Vergleichen Sie danach die technischen Daten der konkreten Modellvariante.",
+      "criteria": [["Werkstoff und Ergebnis", "Beschreiben Sie Stahl, Edelstahl oder Aluminium, die Verbindung und die Anforderungen an die Naht. Ein Gerätename allein beantwortet noch nicht, welche Ausstattung für diese Aufgabe nötig ist."], ["Netzanschluss und Arbeitsdauer", "Prüfen Sie Netzspannung, Absicherung und Einschaltdauer in der jeweiligen Datentabelle. Teilen Sie mit, ob das Gerät stationär oder auf wechselnden Arbeitsplätzen eingesetzt wird."], ["Komplette Konfiguration", "Geben Sie vorhandene Brenner, Kühlung und Zubehör an. VES-TECH klärt die Kombination und erstellt ein Angebot für die gewünschte Anlage; Preis und Liefertermin werden auf Anfrage bestätigt."]]
+    },
+    "fr": {
+      "title": "Quel poste de soudage choisir pour votre travail ?",
+      "intro": "Le choix commence par la pièce : indiquez à VES-TECH Swiss le matériau, son épaisseur et le procédé souhaité. Le catalogue distingue MIG/MAG, TIG, MMA et Plasma TIG. Comparez ensuite les caractéristiques de la variante exacte du modèle.",
+      "criteria": [["Matériau et résultat", "Précisez acier, inox ou aluminium, le type d’assemblage et les exigences du cordon. Le nom du poste ne suffit pas pour déterminer l’équipement nécessaire."], ["Alimentation et durée de travail", "Vérifiez la tension, la protection du réseau et le facteur de marche dans le tableau du modèle. Indiquez si le poste sera fixe ou déplacé entre plusieurs lieux de travail."], ["Configuration complète", "Indiquez les torches, le refroidissement et les accessoires déjà disponibles. VES-TECH vérifie la combinaison et établit une offre pour l’installation souhaitée ; prix et délai sont confirmés sur demande."]]
+    },
+    "it": {
+      "title": "Quale saldatrice scegliere per il vostro lavoro?",
+      "intro": "La scelta inizia dal pezzo: indicate a VES-TECH Swiss materiale, spessore e processo desiderato. Il catalogo distingue MIG/MAG, TIG, MMA e Plasma TIG. Confrontate poi i dati tecnici della variante esatta del modello.",
+      "criteria": [["Materiale e risultato", "Precisate acciaio, inox o alluminio, il tipo di giunto e i requisiti del cordone. Il nome della saldatrice non basta a stabilire l’attrezzatura necessaria."], ["Alimentazione e durata del lavoro", "Verificate tensione, protezione della rete e ciclo di lavoro nella tabella del modello. Indicate se la macchina sarà fissa oppure utilizzata in luoghi diversi."], ["Configurazione completa", "Indicate torce, raffreddamento e accessori già disponibili. VES-TECH verifica la combinazione e prepara un’offerta per l’impianto desiderato; prezzo e tempi sono confermati su richiesta."]]
+    }
+  },
+  "plasmaschneiden": {
+    "de": {
+      "title": "Plasmaschneider oder CNC-Schneidtisch auswählen",
+      "intro": "Für eine passende Anfrage unterscheidet VES-TECH Swiss zwischen manuellem Plasmaschneiden, einer Stromquelle für Automation und einem kompletten CNC-Schneidtisch. Die Theta-Geräte und die MPT-Tische sind deshalb in eigenen Unterkategorien aufgeführt.",
+      "criteria": [["Material und Schnittaufgabe", "Nennen Sie Material, typische Dicke und maximale Dicke. Geben Sie an, welche Schnittqualität und Stückzahl benötigt werden; eine maximale Trennleistung ist nicht automatisch die gewünschte Produktionsleistung."], ["Manuell oder automatisiert", "Bei einer vorhandenen Anlage sind Brenner, Maschinensteuerung und Schnittstellen wichtig. Nennen Sie deren genaue Bezeichnungen, damit die Kombination geprüft werden kann."], ["Aufstellort und Betrieb", "Für einen Schneidtisch sind Blechformat, verfügbarer Platz und die Versorgung am Aufstellort relevant. Besprechen Sie auch den Umgang mit Schneidrauch und die Inbetriebnahme, bevor Sie eine Konfiguration festlegen."]]
+    },
+    "fr": {
+      "title": "Choisir un découpeur plasma ou une table CNC",
+      "intro": "Pour votre demande, VES-TECH Swiss distingue la découpe plasma manuelle, une source destinée à l’automatisation et une table CNC complète. Les appareils Theta et les tables MPT sont donc présentés dans des sous-catégories distinctes.",
+      "criteria": [["Matériau et coupe", "Indiquez le matériau, l’épaisseur habituelle et l’épaisseur maximale. Précisez la qualité de coupe et la quantité requises ; la capacité maximale de séparation ne correspond pas forcément aux besoins de production."], ["Manuel ou automatisé", "Pour une installation existante, la torche, la commande et les interfaces sont importantes. Donnez leurs références exactes afin de vérifier leur compatibilité."], ["Implantation et utilisation", "Pour une table, le format des tôles, la place disponible et les alimentations sont déterminants. Discutez également de la gestion des fumées de découpe et de la mise en service avant de fixer la configuration."]]
+    },
+    "it": {
+      "title": "Scegliere un tagliatore plasma o un tavolo CNC",
+      "intro": "Per la richiesta, VES-TECH Swiss distingue il taglio plasma manuale, una sorgente per l’automazione e un tavolo CNC completo. Gli apparecchi Theta e i tavoli MPT sono quindi presentati in sottocategorie separate.",
+      "criteria": [["Materiale e taglio", "Indicate materiale, spessore abituale e massimo. Precisate qualità di taglio e quantità richieste; la capacità massima di separazione non corrisponde necessariamente alle esigenze produttive."], ["Manuale o automatizzato", "Per un impianto esistente contano torcia, controllo macchina e interfacce. Fornite i riferimenti esatti per verificarne la compatibilità."], ["Installazione e utilizzo", "Per un tavolo contano formato delle lamiere, spazio disponibile e alimentazioni. Discutete anche la gestione dei fumi di taglio e la messa in servizio prima di definire la configurazione."]]
+    }
+  },
+  "reinigung": {
+    "de": {
+      "title": "Reinigen, Signieren oder Verbrauchsmaterial ergänzen?",
+      "intro": "Beginnen Sie die Auswahl mit dem gewünschten Arbeitsschritt. VES-TECH Swiss führt elektrolytische Cleaner, Signiergeräte, ein Dosiersystem und Elektrolyte in getrennten Bereichen. Gerät und Verbrauchsmaterial müssen zum vorgesehenen Verfahren passen.",
+      "criteria": [["Oberfläche und Aufgabe", "Beschreiben Sie Werkstoff, Oberflächenzustand und das gewünschte Ergebnis. Ein Foto der Naht oder einer Beispielmarkierung hilft bei der Rückfrage."], ["Vorhandenes Gerät", "Für Bürsten, Elektrolyte und Ergänzungen benötigen wir die genaue Gerätebezeichnung. Prüfen Sie die Anleitung und die Unterlagen zum jeweiligen Mittel; eine ähnliche Produktbezeichnung belegt keine Austauschbarkeit."], ["Umfang der Anfrage", "Nennen Sie die typische Einsatzdauer und ob ein einzelnes Gerät oder eine komplette Ausstattung gesucht wird. So lassen sich Lieferumfang, Optionen und Verbrauchsmaterial im Angebot sauber unterscheiden."]]
+    },
+    "fr": {
+      "title": "Nettoyer, marquer ou compléter les consommables ?",
+      "intro": "Commencez par l’opération souhaitée. VES-TECH Swiss présente séparément les appareils de nettoyage électrolytique, les appareils de marquage, le dosage et les électrolytes. Appareil et consommable doivent correspondre au procédé prévu.",
+      "criteria": [["Surface et tâche", "Décrivez le matériau, l’état de surface et le résultat souhaité. Une photo du cordon ou d’un exemple de marquage facilite les échanges."], ["Appareil existant", "Pour les brosses, électrolytes et compléments, nous avons besoin du modèle exact. Consultez la notice et les documents du produit ; des noms similaires ne prouvent pas leur interchangeabilité."], ["Étendue de la demande", "Indiquez la durée habituelle d’utilisation et si vous recherchez un appareil seul ou un équipement complet. L’offre pourra ainsi distinguer contenu de livraison, options et consommables."]]
+    },
+    "it": {
+      "title": "Pulire, marcare oppure integrare i consumabili?",
+      "intro": "Partite dall’operazione desiderata. VES-TECH Swiss presenta separatamente pulitori elettrolitici, marcatrici, dosaggio ed elettroliti. Apparecchio e consumabile devono corrispondere al processo previsto.",
+      "criteria": [["Superficie e operazione", "Descrivete materiale, stato della superficie e risultato desiderato. Una foto del cordone o di un esempio di marcatura facilita il confronto."], ["Apparecchio esistente", "Per spazzole, elettroliti e integrazioni serve il modello esatto. Consultate il manuale e la documentazione del prodotto; nomi simili non ne dimostrano l’intercambiabilità."], ["Contenuto della richiesta", "Indicate la durata abituale di utilizzo e se cercate il solo apparecchio o una dotazione completa. L’offerta potrà distinguere fornitura, opzioni e consumabili."]]
+    }
+  },
+  "zubehoer": {
+    "de": {
+      "title": "Zubehör ohne Fehlbestellung anfragen",
+      "intro": "Bei Brennern, Kabeln, Kühlung und Verschleissteilen ist die genaue Zuordnung wichtiger als ein ähnliches Foto. VES-TECH Swiss zeigt auf den Produktseiten bekannte Zuordnungen; lassen Sie die gewünschte Kombination vor einer Bestellung bestätigen.",
+      "criteria": [["Gerät eindeutig benennen", "Senden Sie Hersteller, Modell und vorhandene Artikelnummer. Bei älteren Anlagen hilft zusätzlich die Seriennummer bei der Zuordnung."], ["Ausführung beschreiben", "Nennen Sie Anschluss, Kühlungsart und gewünschte Länge, soweit bekannt. Bei einem Ersatzteil sind die Bezeichnung auf dem Teil und ein Foto des Anschlusses hilfreich."], ["Zusammengehörige Teile bündeln", "Legen Sie alle gewünschten Positionen in die Anfrageliste und ergänzen Sie die Mengen. Eine gemeinsame Anfrage erleichtert die Prüfung von Kompatibilität und Lieferumfang."]]
+    },
+    "fr": {
+      "title": "Demander les bons accessoires dès le départ",
+      "intro": "Pour les torches, câbles, refroidisseurs et pièces d’usure, la référence exacte compte davantage qu’une photo ressemblante. VES-TECH Swiss présente les correspondances connues sur les fiches produits ; faites confirmer la combinaison avant de commander.",
+      "criteria": [["Identifier l’appareil", "Indiquez fabricant, modèle et référence existante. Sur une installation ancienne, le numéro de série aide aussi à identifier les pièces."], ["Décrire la version", "Précisez raccordement, type de refroidissement et longueur souhaitée, si connus. Pour une pièce de rechange, son marquage et une photo du raccordement sont utiles."], ["Regrouper les pièces", "Ajoutez toutes les positions à la liste de demandes et indiquez les quantités. Une demande commune facilite la vérification de la compatibilité et du contenu de livraison."]]
+    },
+    "it": {
+      "title": "Richiedere gli accessori corretti fin dall’inizio",
+      "intro": "Per torce, cavi, raffreddamento e parti d’usura conta più il riferimento esatto che una foto simile. VES-TECH Swiss mostra gli abbinamenti noti nelle schede prodotto; fate confermare la combinazione prima di ordinare.",
+      "criteria": [["Identificare l’apparecchio", "Indicate fabbricante, modello e codice articolo esistente. Per un impianto datato aiuta anche il numero di serie."], ["Descrivere la versione", "Precisate attacco, tipo di raffreddamento e lunghezza desiderata, se noti. Per un ricambio sono utili la sigla sul pezzo e una foto dell’attacco."], ["Raggruppare i componenti", "Aggiungete tutte le posizioni alla lista richieste e indicate le quantità. Una richiesta unica facilita la verifica di compatibilità e contenuto della fornitura."]]
+    }
+  },
+  "occasion": {
+    "de": {
+      "title": "Was Sie bei einer Mikroplasma-Occasion klären sollten",
+      "intro": "Die angebotenen Oerlikon PlasmaFix-Anlagen sind gebrauchte Mikroplasma-Schweissanlagen. Mikroplasma-Schweissen ist vom Plasmaschneiden zu unterscheiden. Massgeblich sind die Beschreibung, der dokumentierte Zustand und der Lieferumfang der konkreten Anlage.",
+      "criteria": [["Zustand und Ausstattung", "Lesen Sie den Zustandsblock und die Beschreibung auf der Geräteseite. Fragen Sie nach den enthaltenen Komponenten und den ausgeführten Arbeiten; Angaben einer Anlage gelten nicht automatisch für eine andere."], ["Eigene Anwendung", "Nennen Sie Werkstoff, Materialdicke und die Aufgabe, für die Sie die Anlage einsetzen möchten. VES-TECH kann damit die passende Konfiguration und offene Fragen mit Ihnen klären."], ["Verfügbarkeit und Übergabe", "Preis, Verfügbarkeit und Übergabe werden individuell bestätigt. Ein Besuch in der Werkstatt in Herisau erfolgt nach Vereinbarung. Die Konditionen einer Occasion ergeben sich aus dem konkreten Angebot."]]
+    },
+    "fr": {
+      "title": "Que vérifier pour une installation microplasma d’occasion ?",
+      "intro": "Les installations Oerlikon PlasmaFix proposées sont des équipements de soudage microplasma d’occasion. Le soudage microplasma se distingue de la découpe plasma. La description, l’état documenté et le contenu de livraison de chaque installation font référence.",
+      "criteria": [["État et équipement", "Lisez le bloc consacré à l’état et la description de l’appareil. Demandez les composants inclus et les travaux effectués ; les indications d’une installation ne s’appliquent pas automatiquement à une autre."], ["Votre application", "Indiquez matériau, épaisseur et travail envisagé. VES-TECH peut ainsi clarifier avec vous la configuration et les questions encore ouvertes."], ["Disponibilité et remise", "Prix, disponibilité et remise sont confirmés individuellement. Une visite à l’atelier de Herisau se fait sur rendez-vous. Les conditions de l’occasion figurent dans l’offre correspondante."]]
+    },
+    "it": {
+      "title": "Cosa verificare per un impianto microplasma usato?",
+      "intro": "Gli impianti Oerlikon PlasmaFix proposti sono attrezzature usate per la saldatura microplasma. La saldatura microplasma è distinta dal taglio plasma. Fanno riferimento descrizione, stato documentato e contenuto della fornitura di ogni singolo impianto.",
+      "criteria": [["Stato e dotazione", "Leggete la sezione sullo stato e la descrizione della macchina. Chiedete quali componenti sono inclusi e quali lavori sono stati eseguiti; i dati di un impianto non valgono automaticamente per un altro."], ["La vostra applicazione", "Indicate materiale, spessore e lavoro previsto. VES-TECH potrà chiarire con voi configurazione e questioni ancora aperte."], ["Disponibilità e consegna", "Prezzo, disponibilità e consegna vengono confermati individualmente. Una visita all’officina di Herisau richiede un appuntamento. Le condizioni dell’usato risultano dall’offerta specifica."]]
+    }
+  }
+}

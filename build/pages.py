@@ -265,7 +265,8 @@ def media_html(lang, p, nm):
     slides = ""
     for i, b in enumerate(bilder):
         slides += (f'<figure class="galslide{" active" if i == 0 else ""}" '
-                   f'id="gs-{e(p["id"])}-{i}">'
+                   f'id="gs-{e(p["id"])}-{i}" role="tabpanel" '
+                   f'aria-labelledby="gt-{e(p["id"])}-{i}">'
                    + R.img_tag(b["img"], DIMG_SIZES, cls="zoomable",
                                alt=b["alt"], eager=(i == 0), width=560)
                    + (f'<figcaption>{e(b["cap"])}</figcaption>' if b["cap"] else "")
@@ -277,6 +278,7 @@ def media_html(lang, p, nm):
         # tablist/tab und nicht Links.
         thumbs += (f'<button class="galthumb{" active" if i == 0 else ""}" type="button" '
                    f'role="tab" aria-selected="{"true" if i == 0 else "false"}" '
+                   f'id="gt-{e(p["id"])}-{i}" tabindex="{0 if i == 0 else -1}" '
                    f'aria-controls="gs-{e(p["id"])}-{i}" data-i="{i}" '
                    f'title="{e(b["alt"][:110])}">'
                    + R.img_tag(b["img"], "84px", alt="", width=84)
@@ -609,6 +611,14 @@ def page_products(lang):
                            jsonld_blocks=ld, body=body)
 
 
+def buying_guide(lang, cid):
+    guide = C.BUYING_GUIDE[cid][lang]
+    criteria = ''.join(f'<dt>{e(title)}</dt><dd>{e(text)}</dd>' for title, text in guide['criteria'])
+    return (f'<section class="buying-guide"><h2>{e(guide["title"])}</h2>'
+            f'<p>{e(guide["intro"])}</p><dl>{criteria}</dl>'
+            f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
+
+
 def page_cat(lang, c, sub=None):
     cid = c["id"]
     if sub:
@@ -672,7 +682,8 @@ def page_cat(lang, c, sub=None):
         + '<div class="catalog"><div class="wrap">'
         + f'<div class="cathead"><h2>{e(C.subT(lang, sub) if sub else C.t(lang,"sec_all"))}</h2>'
           f'<span class="count">{len(items)} {e(C.t(lang,"items"))} · {e(C.t(lang,"poa"))}</span></div>'
-        + R.pgrid(lang, items) + "</div></div>"
+        + R.pgrid(lang, items)
+        + (buying_guide(lang, cid) if not sub else '') + "</div></div>"
     )
     ld = [R.ld_org(lang),
           R.ld_webpage(lang, url, title, desc, {"@type": "CollectionPage"}),
@@ -778,7 +789,7 @@ def page_product(lang, p):
     tabbar = "".join(
         f'<button class="tabbtn{" active" if i == 0 else ""}" type="button" role="tab" '
         f'id="tb-{k}" aria-controls="tab-{k}" aria-selected="{"true" if i == 0 else "false"}" '
-        f'data-tab="{k}">{e(n)}</button>' for i, (k, n) in enumerate(tabs))
+        f'tabindex="{0 if i == 0 else -1}" data-tab="{k}">{e(n)}</button>' for i, (k, n) in enumerate(tabs))
     panehtml = "".join(
         f'<section class="tabpane{" active" if i == 0 else ""}" id="tab-{k}" role="tabpanel" '
         f'aria-labelledby="tb-{k}"><h2 class="sr-only">{e(n)}</h2>{panes[k]}</section>'
@@ -812,7 +823,7 @@ def page_product(lang, p):
       <div class="dactions">
         <button class="btn pri" type="button" data-add="{e(p['id'])}" data-name="{e(nm)}"
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
-        <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'consult'))}</a>
+        <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'consult'))}</a>
       </div>
       <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
                                        de_marke=C.markeMitPraeposition(lang, p)))}</p>
@@ -824,7 +835,6 @@ def page_product(lang, p):
     <div class="tabbar" role="tablist" aria-label="{e(nm)}">{tabbar}</div>
     {panehtml}
   </div>
-  <noscript><style>{R.NOSCRIPT_CSS}</style></noscript>
   {occ_text_html(lang, p)}
   {verwandt_html(lang, p)}
 
@@ -837,6 +847,7 @@ def page_product(lang, p):
     ld = [R.ld_org(lang), R.ld_product(lang, p),
           R.ld_webpage(lang, url, title, desc, {
               "@type": "ItemPage",
+              "mainEntity": {"@id": C.abs_url(url) + "#product"},
               "primaryImageOfPage": {"@type": "ImageObject",
                                      "url": R.img_abs(p["img"], 1000)}}),
           R.ld_breadcrumb(crumb[:-1] + [(nm, url)])]
@@ -896,7 +907,7 @@ def page_contact(lang):
                                       (C.t(lang, "n_contact"), None)],
                    h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"))
             + f"""<div class="catalog"><div class="wrap kontaktwrap">
-  <form class="form kform" id="kontaktForm" novalidate>
+  <form class="form kform" id="kontaktForm" method="post" novalidate>
     <label for="kName">{e(C.t(lang,'f_name'))}</label>
     <input id="kName" name="name" type="text" required autocomplete="organization">
     <label for="kMail">{e(C.t(lang,'f_mail'))}</label>
@@ -906,9 +917,11 @@ def page_contact(lang):
     <label for="kMsg">{e(C.t(lang,'k_msg'))}</label>
     <textarea id="kMsg" name="message" rows="5" required></textarea>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    {R.form_note(lang)}
     <button class="send" type="submit">{e(C.t(lang,'f_send'))}</button>
     <p class="fstatus" role="status" aria-live="polite"></p>
   </form>
+  <noscript><p>{e(C.t(lang,'form_nojs'))} <a href="mailto:{e(co['email'])}">{e(co['email'])}</a></p></noscript>
   <aside class="kinfo">
     <h2>{e(C.t(lang,'site_name'))}</h2>
     <address>
@@ -1087,9 +1100,17 @@ def page_legal(lang, kind):
     nav = C.t(lang, navkey)
     # Der Text bringt sein eigenes <p>/<ul> mit – Rechtstexte brauchen Listen,
     # und eine Liste in einem <p> waere kaputtes HTML.
+    runtime = C.t(lang, 'privacy_runtime')
+    runtime += '<p>' + e(C.t(lang, 'privacy_analytics_on' if C.cloudflare_analytics_token() else 'privacy_analytics_off')) + '</p>'
+    delivery = C.t(lang, 'privacy_delivery_direct' if C.web3forms_key() else 'privacy_delivery_mail')
+    def body_text(body):
+        return (body.replace('{runtime_privacy}', runtime)
+                .replace('{runtime_delivery}', delivery)
+                .replace('{runtime_summary}', C.t(lang, 'privacy_summary'))
+                .replace('{privacy_url}', C.u_page(lang, 'privacy')))
     secs = "".join(
         f"<section><h2>{e(h)}</h2>{b if b.lstrip().startswith('<') else '<p>' + b + '</p>'}</section>"
-        for h, b in C.EX[lang][f"{tkey}_body"])
+        for h, b in ((h, body_text(b)) for h, b in C.EX[lang][f"{tkey}_body"]))
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (nav, None)],
                    h1=C.t(lang, f"{tkey}_h1"), desc="")
             + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')

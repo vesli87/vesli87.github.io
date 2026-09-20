@@ -1,7 +1,7 @@
 # MASTER PROMPT — VES-TECH Swiss (v2)
 
 > **Was das hier ist:** Die verbindliche Beschreibung der Website VES-TECH Swiss
-> (`vesli87.github.io`, später `www.ves-tech.ch`).
+> (`https://www.ves-tech.ch`).
 > Wer (Mensch oder KI) an diesem Projekt arbeitet, liest zuerst dieses Dokument und
 > hält sich an die Regeln in Abschnitt 14. Das Dokument lebt **im Repository** und
 > wird bei jeder architektonischen Änderung mitgepflegt.
@@ -10,7 +10,7 @@
 > (`ves-tech-eshop.html`, ~440 kB, eine URL für die ganze Seite). Das war für eine
 > Vorschau in Ordnung, für eine echte Website aber nicht: Suchmaschinen und
 > Antwortmaschinen sahen genau **eine** Seite ohne Inhalt. v2 erzeugt daraus
-> **247 echte, vorgerenderte Seiten** in DE/FR/IT. Der alte Stand liegt unverändert
+> **360 echte, vorgerenderte Inhaltsseiten** in DE/FR/IT. Der alte Stand liegt unverändert
 > unter `build/source-snapshot.html`, die alte Fassung dieses Dokuments unter
 > `build/MASTER_PROMPT_v1.md`.
 
@@ -66,12 +66,12 @@ build/i18n_extra.json ← SEO-/AEO-Texte, FAQ, Rechtstexte (von Hand gepflegt)
         └─ build/build.py    schreibt alles raus
         │
         ▼
-247 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
+360 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
     + data/products.json + data/search-{de,fr,it}.json
 ```
 
-**Kein Framework, kein Node, kein Bundler.** Der Build läuft mit der Python-3-Version,
-die auf jedem Mac vorinstalliert ist. Ausgeliefert wird reines HTML/CSS/JS.
+**Kein Framework und kein Bundler.** Der Generator benötigt Python 3.9 oder neuer.
+Node.js 22 oder neuer wird nur für die Frontend-Regressionstests verwendet. Ausgeliefert wird reines HTML/CSS/JS.
 
 **Vorgerendert, nicht client-side.** Jede Seite enthält ihren vollständigen Text im
 HTML. Das ist die Grundlage für SEO **und** AEO: Crawler und Antwortmaschinen lesen
@@ -114,8 +114,8 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 
 | Datei | Inhalt |
 |---|---|
-| `P.json` | 52 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
-| `CATS.json` | 4 Kategorien mit `subs[]` und Icon-Key `pk` |
+| `P.json` | 79 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
+| `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
 | `UI.json` | 88 UI-Strings × de/fr/it |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
 | `PROC.json` | 7 MAHE-Verfahren |
@@ -143,8 +143,8 @@ Die Fachlogik aus v1 ist 1:1 nach `core.py` portiert: `deriveFeat`, `matOf`,
 `build/images.py` lädt die Originale **einmalig** von `mahe-online.de`, skaliert sie
 und legt sie als WebP ins Repo (`assets/img/p/<key>-400.webp` und `-1000.webp`,
 zusammen 2,2 MB für 51 Bilder). Gründe: Ladezeit (Originale sind bis 4 MB),
-Bild-SEO (nur selbst gehostete Bilder ranken) und Ausfallsicherheit.
-Das `onerror`-Attribut lädt im Notfall wieder vom Hersteller.
+kontrollierbare Bild-URLs und Bildgrössen und Ausfallsicherheit.
+Ein CSP-freigegebener Error-Listener lädt im Notfall wieder vom Hersteller.
 `assets/img/manifest.json` hält die Abmessungen für `width`/`height` (gegen CLS).
 
 Neue Bilder: `python3 build/images.py` (braucht Netz und `cwebp`), danach `build.py`.
@@ -162,9 +162,9 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
 - `hreflang` de-CH / fr-CH / it-CH + `x-default` — gegenseitig verlinkt
 - Open Graph + Twitter Card, `og:image` = Produktbild bzw. Hero
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
-  `WebSite` mit `SearchAction`, `BreadcrumbList`, `Product` mit `Offer`,
+  `WebSite` mit `SearchAction`, `BreadcrumbList`, `Product` ohne erfundene Angebote,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (327 URLs); Suche und Rechtstexte
+- `sitemap.xml` mit `xhtml:link`-Alternates (351 URLs); Suche und Rechtstexte
   sind `noindex,follow` und stehen bewusst nicht drin
 - `robots.txt` mit Sitemap-Verweis
 - Verifizierungs-Tags für Google Search Console und Bing Webmaster Tools:
@@ -204,7 +204,7 @@ Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auft
 
 - **`/llms.txt`** — kompakte Landkarte der Website im llms.txt-Format
 - **`/llms-full.txt`** — der komplette zitierfähige Inhalt in einer Datei:
-  alle 52 Geräte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
+  alle 79 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
   dazu die 7 Verfahren und alle 10 FAQ-Antworten
 - **`/data/products.json`** — maschinenlesbarer Katalog, dreisprachig, mit
   Verkäuferangaben und Lizenzhinweis
@@ -238,7 +238,9 @@ Index wird beim ersten Tastendruck geladen (`data/search-<lang>.json`, ~45 kB).
 
 `localStorage` unter `vt.cart.v1`, mit `try/catch` abgesichert (private Fenster
 werfen). Menge pro Position, Persistenz über Seitenwechsel, Zähler im Header.
-Absenden leert die Liste.
+Erfolgreiches direktes Absenden entfernt nur die tatsächlich abgesendeten Mengen.
+Während des Versands hinzugefügte Mengen bleiben erhalten. Bei Fehlern und beim
+E-Mail-Entwurf bleibt die Liste erhalten. Defekte Speichereinträge werden verworfen.
 
 > v1 verbot `localStorage` — das war eine Einschränkung der Artefakt-Vorschau.
 > Auf einer echten Website ist die Speicherung funktional notwendig und in der
@@ -269,9 +271,10 @@ Fliesstext **Inter**, grosse Display-Überschriften **Anton**.
 Bewusst dunkel bleiben: gezeichnete Bedienpanels, blaue Reinigungs-Kacheln,
 Anfrage-Button, Toast.
 
-**Kein Cookie-Banner.** Die Website setzt keine Tracking-Cookies; die Anfrageliste
-im `localStorage` ist technisch notwendig. Sobald Analytics dazukommt, braucht es
-einen Banner mit echter Ablehnen-Option.
+**Optionale Statistik mit Zustimmung.** Cloudflare Web Analytics lädt erst nach
+aktiver Zustimmung, mit gleichwertiger Ablehnen-Option und dauerhaft erreichbaren
+Statistik-Einstellungen. Die Zustimmung läuft nach 180 Tagen ab. Die Anfrageliste
+und die Statistik-Auswahl liegen getrennt in localStorage. Details: README.md.
 
 ## 12. Barrierefreiheit
 
@@ -495,92 +498,66 @@ die Sichtbarkeit.
    Marke, die MAHE-Partnerschaft, die Kundenbeziehungen und der Rang bei Google.
    Wer die Dateien kopiert, hat davon nichts.
 
-### 15a. Sicherheitsstand (geprüft am 05.08.2026)
+### 15a. Sicherheitsstand (20.09.2026)
 
-Kopierschutz ist das eine, Sicherheit das andere — und dort lässt sich wirklich
-etwas tun. Stand nach der Prüfung:
+Statisches HTML ohne eigene Datenbank und ohne Kundenkonto. Der Browser versendet
+Kontaktangaben bei aktivierter Konfiguration an Web3Forms. Cloudflare Web Analytics
+ist ein separater, zustimmungspflichtiger Browserdienst. Details und Grenzen
+stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](README.md).
 
-**Gut, weil die Bauart es hergibt.** Kein Server, keine Datenbank, kein
-Anmelden, kein Node und kein Paket aus dem Netz. Damit fallen die häufigsten
-Einfallstore weg: SQL-Injection, Rechteausweitung, verwundbare Abhängigkeiten,
-kompromittierte npm-Pakete. Der gesamte Bestand wird beim Build erzeugt und
-liegt statisch da.
+- CSP ohne `unsafe-inline`; erlaubte Inline-Bootdaten und Styles sind gehasht.
+  Der Bildrückfall verwendet einen Error-Listener, keine Ereignisattribute.
+- Script-JSON maskiert `<`, damit auch eine Zeichenfolge `</script>` keine
+  zusätzlichen HTML-Elemente öffnen kann.
+- Persistierte Anfragelisten werden validiert; Mengen sind ganzzahlig von 1 bis 99.
+  Suchtreffer werden als Text maskiert, bevor sichere Hervorhebungen entstehen.
+- GitHub Actions hat standardmässig nur Leserechte; Schreibrechte für Pages und
+  OIDC erhält ausschliesslich der Deploy-Job. Öffentliche Dateien werden separat
+  zusammengestellt. Private Konfiguration und Berichte werden nicht veröffentlicht.
+- GitHub Pages erlaubt keine eigenen Sicherheitsheader. Ein späterer Proxy muss
+  HTTPS, DNS und erreichbare Crawler erhalten; nicht blind Namenserver umstellen.
+- CAA mit allen tatsächlich verwendeten Zertifikatsdiensten abstimmen. Keine
+  pauschale Einschränkung auf eine CA vor einer Hosting-/Proxy-Entscheidung.
 
-**Geprüft und in Ordnung:**
+## 16. Betrieb und weitere Inhalte
 
-| Punkt | Befund |
-|---|---|
-| Zugangsdaten in der Git-Historie | keine, nie eine `.env` eingecheckt |
-| GITHUB_TOKEN im Workflow | `contents: read`, Standard auf `read` |
-| Fremde GitHub-Actions | nur offizielle `actions/*` |
-| SPF | `v=spf1 -all` — die Domain versendet keine Mail |
-| DMARC | `v=DMARC1; p=reject` — schärfste Stufe |
-| `target="_blank"` | alle 579 mit `rel="noopener"` |
-| XSS über `?q=` | `esc()` vor dem Hervorheben, Überschrift als `textContent` |
+- Google Search Console ist für `https://www.ves-tech.ch/` eingerichtet, mit
+  erfolgreicher Sitemap. Kontometriken und konkrete Audit-Ergebnisse gehören
+  ausschliesslich in lokale `reports/`, nicht ins öffentliche Repository.
+- Bing wurde mit dem Firmenkonto hinzugefügt. Verifizierung erfolgt per
+  `BING_SITE_VERIFICATION`; nach Veröffentlichung Tag und Sitemap prüfen.
+- Web3Forms wurde auf dem Firmenkonto aktiviert. Der Formularkey liegt lokal
+  in `config.local.json` und als `WEB3FORMS_KEY` in GitHub Actions. Das kostenlose
+  Kontingent ist im Dashboard zu kontrollieren; keine automatischen Bezahl-Upgrades.
+- Cloudflare Web Analytics ist vorbereitet und muss nach jedem Integrationswechsel
+  auf dem Live-Web geprüft werden. Es zählt nur zustimmende, nicht blockierte
+  Browser auf den zugelassenen Seiten. Keine automatisierte Conversion-Zählung.
+- Für lokale Auffindbarkeit vorhandenes Google-Unternehmensprofil und reale
+  Werkstatt-/Besucherangaben abgleichen. Kein doppeltes Profil und kein erfundener Standort.
+- **Echte Kundenstimmen:** `data/REF.json` ist vorbereitet und leer; Anzeige und
+  Review-Auszeichnung erst mit dokumentierter Freigabe. Keine erfundenen Referenzen.
+- Nächste Inhalte: reale Reparaturbeispiele, Originalfotos und konkrete Fragen aus
+  Kundenkontakten. Keine Massenproduktion nahezu identischer Orts- oder Produktseiten.
 
-**Behoben am 05.08.2026:**
+## 17. Erweiterungen vom 20.09.2026
 
-- **Content-Security-Policy** als `<meta>` (siehe `render.py::CSP`) und
-  `<meta name="referrer" content="strict-origin-when-cross-origin">`.
-- **Anfrageliste gehärtet.** Die Liste liegt im `localStorage` und wurde per
-  `innerHTML` gezeichnet. `esc()` maskiert Anführungszeichen, aber nicht das
-  Schema — ein `href="javascript:…"` wäre anklickbarer Schadcode geblieben.
-  Neu prüft `safeUrl()` in `app.js`, dass eine Adresse ein eigener Pfad oder
-  `https` ist, sonst wird `#` daraus. Die Menge geht als `parseInt` ins HTML,
-  nicht als Zeichenkette. Gegenprobe mit manipuliertem `localStorage`:
-  0 eingeschleuste Skripte.
-- Das letzte `style="…"`-Attribut ist in eine Klasse gewandert.
-
-**Was auf GitHub Pages nicht geht.** Eigene HTTP-Kopfzeilen lassen sich dort
-nicht setzen. Es fehlen deshalb dauerhaft `X-Frame-Options`,
-`X-Content-Type-Options` und `HSTS`; `frame-ancestors` wirkt im `<meta>` nicht.
-Praktisch heisst das: die Seite lässt sich in einen fremden Rahmen setzen. Für
-einen Katalog ohne Anmeldung ist das hinnehmbar. Wer es abstellen will, braucht
-ein Hosting mit eigenen Kopfzeilen (z. B. Infomaniak oder Cloudflare davor).
-
-**Zwei offene Punkte, bewusst nicht erledigt:**
-
-1. **`'unsafe-inline'` in der CSP.** 306 Seiten tragen ein `onerror`-Attribut am
-   Bild (Rückfall auf mahe-online.de). Ereignis-Attribute lassen sich nicht per
-   Hash erlauben. Wer den Rückfall nach `app.js` verlegt — ein
-   `error`-Lauscher in der Aufsetzphase —, kann `'unsafe-inline'` streichen und
-   die Richtlinie wird deutlich schärfer.
-2. **CAA-Eintrag fehlt.** Ohne ihn darf jede Zertifizierungsstelle ein
-   Zertifikat für `ves-tech.ch` ausstellen. Mit einem CAA-Eintrag nur noch die
-   eingetragene. Bei Infomaniak in der DNS-Zone:
-   `ves-tech.ch. CAA 0 issue "letsencrypt.org"` (GitHub Pages nutzt Let's
-   Encrypt). Prüfen: `dig +short CAA ves-tech.ch`.
-
-## 16. Offene Punkte
-
-- **Web3Forms-Key eintragen.** Bis dahin gehen Anfragen über das Mailprogramm.
-  Seit dem 05.08.2026 ist dieser Rückfall brauchbar: statt nur `mailto:`
-  aufzurufen und „Mailprogramm geöffnet“ zu melden, bleibt die fertige Anfrage
-  mit Adresse und Kopierknopf sichtbar stehen. Damit geht nichts mehr verloren,
-  wenn kein Mailkonto eingerichtet ist. Ersetzt aber keinen echten Versand:
-  Konto auf web3forms.com, Schlüssel nach `build/config.local.json` als
-  `{"web3forms_key": "…"}` — die Datei steht in `.gitignore`.
-- Google Search Console und Bing Webmaster Tools verifizieren, Sitemap einreichen.
-  Weg: Domain-Property in der Search Console anlegen, den TXT-Eintrag im
-  Infomaniak-Manager **zusätzlich** zum bestehenden SPF-Eintrag setzen (mehrere
-  TXT-Records am Zonenapex sind erlaubt — den SPF dabei nicht überschreiben),
-  danach in den Bing Webmaster Tools „Import aus Google Search Console“ wählen;
-  eine zweite Verifizierung entfällt. Das ist zugleich die einzige Besucher-
-  messung, die ohne Änderung an der Datenschutzerklärung auskommt: sie zählt
-  bei Google und Bing, nicht auf dem Gerät der Besucher. Die Zusage
-  „keine Analyse- oder Statistikwerkzeuge“ bleibt damit wahr.
-- Google Business Profile für Bronschhofen anlegen (stärkster lokaler SEO-Hebel)
-- Kategorie-Hero-Bilder (die vier Kategorieseiten zeigen nur Text),
-  Verbrauchsmaterial für Cleaner, Garantieregistrierung
-- **Echte Kundenstimmen.** `data/REF.json` ist vorbereitet und leer; der Block
-  auf der Startseite und die `Review`-Auszeichnung erscheinen erst, wenn dort
-  ein Eintrag mit `"freigabe": true` steht. Erfundene Referenzen kommen nicht
-  hinein — die Begründung steht in der Datei. Nach einer erledigten Reparatur
-  kurz fragen, ob man zwei Sätze zitieren darf.
-- **CAA-Eintrag** in der DNS-Zone (siehe 15a)
-- **`'unsafe-inline'` aus der CSP** — dafür den Bildrückfall aus dem
-  `onerror`-Attribut nach `app.js` verlegen (siehe 15a)
-
-Erledigt und deshalb gestrichen: eigene Domain samt DNS, Datenblatt-PDFs je
-Gerät (64 Dokumente für 27 Geräte in `data/DLDEV.json`), erzwungenes HTTPS,
-Servicebereich mit eigenen Seiten.
+- `data/BUYING_GUIDE.json`: eigene, dreisprachige Auswahlhilfen für alle fünf
+  Hauptkategorien. Im sichtbaren HTML und in der deutschen `llms-full.txt`-Fassung.
+- `Product.mpn` nur bei tatsächlich hinterlegter Hersteller-Artikelnummer.
+  Eine interne Produkt-ID ist kein MPN. Keine erfundenen Ratings für Rich Results.
+- `data/products.json` hat ein eigenes versioniertes Format und kein irreführendes
+  schema.org-`@context`. Namen und Occasion-Zustand werden mit ausgeliefert.
+- Bing-Verifizierung erfolgt aktuell per `msvalidate.01` aus `core.py`; Tag erhalten.
+- Cloudflare-Beacon-Konfiguration ist öffentlich, administrative API-Tokens sind
+  niemals Bestandteil des Projekts. Keine DNS-Umstellung durch diese Integration.
+- `build/package_site.py` baut das öffentliche Artefakt aus einer Positivliste.
+  Quellcode-Repository ist öffentlich; Berichte mit Kontodaten bleiben unter
+  `reports/` und werden weder committet noch ausgeliefert.
+- Dialoge sperren den Hintergrund, halten den Tastaturfokus und geben ihn zurück.
+  Formulare begrenzen Laufzeiten, vermeiden doppelte Anfragen und erhalten
+  Kundeneingaben bei Fehlern. Suchen können nach einem Netzwerkfehler erneut laden.
+- Ohne Web3Forms-Key ist ein E-Mail-Entwurf kein abgeschickter Kundenkontakt.
+  Die Oberfläche und die technischen Datenschutzhinweise sagen das ausdrücklich.
+- `llms.txt` ist eine Zusatzdatei. Laut [Google](https://developers.google.com/search/docs/appearance/ai-features)
+  benötigen AI Overviews/AI Mode keine speziellen KI-Dateien oder Schema-Typen.
+  Hilfreiche Inhalte, Indexierbarkeit, belegte Aussagen und interne Links haben Vorrang.

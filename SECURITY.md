@@ -34,14 +34,20 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   ohne `www` leiten per 301 auf die kanonische Adresse um.
 * **`referrer` auf `strict-origin-when-cross-origin`** – beim Klick auf ein
   Herstellerdokument erfährt die Gegenseite nur den Domainnamen.
-* **Keine Cookies, keine Zählpixel, keine fremden Schriften.** Alles kommt von
-  der eigenen Domain; Ausnahmen sind der Formulardienst `api.web3forms.com`
-  (`connect-src`) und Herstellerbilder von `mahe-online.de` (`img-src`), beide
-  ausdrücklich in der Richtlinie genannt.
+* **Keine Analyse-Cookies und keine fremden Schriften.** Optionales Cloudflare
+  Web Analytics lädt erst nach Zustimmung von `static.cloudflareinsights.com`
+  und übermittelt Messdaten an `cloudflareinsights.com`. Ablehnen und Widerruf
+  sind möglich. Der Formulardienst `api.web3forms.com` und Herstellerbilder
+  von `mahe-online.de` sind ebenfalls ausdrücklich in der CSP genannt.
+* **Datensparsame Formulare.** Persönliche Angaben werden nicht in localStorage
+  gespeichert. Ohne Versandkonfiguration entstehen nur E-Mail-Entwürfe. Fehler
+  führen zu keiner automatischen Wiederholung und löschen die Eingaben nicht.
 * **Aktionen im Deploy sind auf Commit-Hashes festgenagelt**, nicht auf
   Etiketten – siehe [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
-* **Der Deploy liefert nur die Website aus.** Build-Quellen, Rohdaten und
-  Dokumentation werden vor dem Hochladen aus dem Artefakt entfernt.
+* **Der Deploy liefert nur die Website aus.** Eine Positivliste kopiert die
+  öffentlichen Dateien in ein separates Artefakt. Build-Quellen, Rohdaten,
+  Konfiguration und private Berichte sind ausgeschlossen. Das GitHub-Repository
+  selbst ist öffentlich; dort dürfen keine vertraulichen Berichte eingecheckt werden.
 
 ## Was hier bewusst nicht gilt
 
@@ -56,7 +62,7 @@ Sprachen: Deutsch, Englisch, Tschechisch.
 
 ## Was der Betreiber noch tun muss
 
-* **CAA-Eintrag im DNS** setzen, damit nur die vorgesehene Stelle Zertifikate
-  für die Domain ausstellen darf:
-  `ves-tech.ch. CAA 0 issue "letsencrypt.org"`
+* **CAA vor Änderungen abstimmen.** Zulässige Zertifizierungsstellen müssen zum
+  tatsächlichen Hosting und einem eventuell späteren Cloudflare-Proxy passen.
+  Ein ungeprüfter restriktiver Eintrag kann die Zertifikatserneuerung verhindern.
 * **Zwei-Faktor-Anmeldung** für das GitHub-Konto, über das veröffentlicht wird.

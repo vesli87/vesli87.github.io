@@ -21,6 +21,10 @@ cd "$(dirname "$0")/.."
 echo "==> Build und QA"
 python3 build/build.py
 python3 build/check.py
+python3 build/audit.py
+python3 build/verify_mahe.py
+node --test build/test_frontend.mjs
+python3 -m unittest discover -s build -p 'test_*.py'
 
 echo "==> Anmeldung prüfen"
 if ! gh auth status >/dev/null 2>&1; then
@@ -113,4 +117,4 @@ echo
 echo "Eigene Domain ($DOMAIN) – DNS beim Registrar setzen:"
 echo "  CNAME  www   ->  $OWNER.github.io."
 echo "  A      @     ->  185.199.108.153 185.199.109.153 185.199.110.153 185.199.111.153"
-echo "Die Datei CNAME im Repository setzt die Domain in GitHub Pages automatisch."
+echo "Bei Actions-Deployment wird die Domain über die Pages-Konfiguration gesetzt, nicht über CNAME."

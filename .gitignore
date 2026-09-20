@@ -4,3 +4,8 @@ build/config.local.json
 .DS_Store
 *.log
 .claude/settings.local.json
+
+# Private analytics, account findings and local audit deliverables
+reports/
+__pycache__/
+*.pyc

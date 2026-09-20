@@ -561,3 +561,23 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - `llms.txt` ist eine Zusatzdatei. Laut [Google](https://developers.google.com/search/docs/appearance/ai-features)
   benötigen AI Overviews/AI Mode keine speziellen KI-Dateien oder Schema-Typen.
   Hilfreiche Inhalte, Indexierbarkeit, belegte Aussagen und interne Links haben Vorrang.
+
+
+## 18. Sicherheits- und Wiederherstellungsprüfung (20.09.2026)
+
+- Skripte werden mit CSP-Hashes und SRI an ihre tatsächlichen Bytes gebunden.
+  `strict-dynamic` vertraut nur diesen Startpunkten; die Cloudflare-Adresse im
+  vertrauenswürdigen Loader bleibt fest. Keine fremden Skript-URLs aus Benutzereingaben.
+- Die 404-Seite setzt `no-referrer`. Statistik lädt nur bei passendem Canonical
+  und niemals auf unbekannten Pfaden. Formular-POSTs senden keinen Referrer.
+- `build/security_check.py` gehört zu den verbindlichen Prüfungen vor jedem Deploy.
+- `build/package_site.py` validiert Dateitypen und Pfade vor dem Kopieren, folgt
+  keinen Symlinks und überschreibt keine vorhandenen Deployment-Verzeichnisse.
+- GitHub: CodeQL, Secret Scanning/Push Protection, Dependabot, nur offizielle
+  Actions mit vollständigem SHA; `main` gegen Löschen/Force-Push geschützt.
+- `build/backup.py`: lokale Quell-/Git-/Release-Sicherung oder ausdrücklich
+  öffentlicher Release-Modus. SHA-256, Pfadkontrolle und reale Wiederherstellung
+  gehören zur Prüfung. CI bewahrt öffentliche Release-Archive 90 Tage auf.
+- Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
+  Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
+  unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.

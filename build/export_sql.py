@@ -27,6 +27,7 @@ import pathlib
 import sqlite3
 import subprocess
 import sys
+import tempfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
@@ -191,29 +192,38 @@ def fuellen(db):
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__.strip().splitlines()[2].strip())
-    ziel = pathlib.Path(sys.argv[1])
+    # The caller deliberately chooses the export directory; it need not be
+    # inside the repository. Never follow a final symlink or truncate a device.
+    ziel = pathlib.Path(sys.argv[1]).expanduser().absolute()
+    if ziel.is_symlink() or (ziel.exists() and not ziel.is_file()):
+        sys.exit(f"Exportziel muss eine normale Datei sein: {ziel}")
 
-    if ziel.suffix in (".sqlite", ".db", ".sqlite3"):
+    # Build beside the destination, then replace atomically. A failed export
+    # must not destroy the previous SQL dump or SQLite database.
+    with tempfile.TemporaryDirectory(prefix=".ves-tech-export-", dir=ziel.parent) as temp:
+        datei = pathlib.Path(temp) / "catalog"
+        binary = ziel.suffix.lower() in (".sqlite", ".db", ".sqlite3")
+        db = sqlite3.connect(datei if binary else ":memory:")
+        try:
+            fuellen(db)
+            if not binary:
+                with datei.open("w", encoding="utf-8") as f:
+                    f.write("-- VES-TECH Swiss - Katalog als SQL\n"
+                            "-- Erzeugt von build/export_sql.py aus data/*.json.\n"
+                            "-- Massgeblich sind die JSON-Dateien, nicht dieser Dump.\n"
+                            "-- Einlesen:  sqlite3 katalog.sqlite < katalog.sql\n\n")
+                    for zeile in db.iterdump():
+                        f.write(zeile + "\n")
+            n = db.execute("SELECT count(*) FROM produkt").fetchone()[0]
+            z = sum(db.execute(f"SELECT count(*) FROM {t}").fetchone()[0]
+                    for t in ("produkt_text", "produkt_technik", "produkt_besonderheit",
+                              "produkt_option", "produkt_dokument", "produkt_bild",
+                              "oberflaechentext"))
+        finally:
+            db.close()
         if ziel.exists():
-            ziel.unlink()
-        db = sqlite3.connect(ziel)
-        fuellen(db)
-    else:
-        db = sqlite3.connect(":memory:")
-        fuellen(db)
-        with ziel.open("w", encoding="utf-8") as f:
-            f.write("-- VES-TECH Swiss - Katalog als SQL\n"
-                    "-- Erzeugt von build/export_sql.py aus data/*.json.\n"
-                    "-- Massgeblich sind die JSON-Dateien, nicht dieser Dump.\n"
-                    "-- Einlesen:  sqlite3 katalog.sqlite < katalog.sql\n\n")
-            for zeile in db.iterdump():
-                f.write(zeile + "\n")
-
-    n = db.execute("SELECT count(*) FROM produkt").fetchone()[0]
-    z = sum(db.execute(f"SELECT count(*) FROM {t}").fetchone()[0]
-            for t in ("produkt_text", "produkt_technik", "produkt_besonderheit",
-                      "produkt_option", "produkt_dokument", "produkt_bild",
-                      "oberflaechentext"))
+            datei.chmod(ziel.stat().st_mode & 0o777)
+        datei.replace(ziel)
     print(f"{ziel.name}: {n} Produkte, {z} uebersetzte Zeilen, "
           f"{ziel.stat().st_size/1024:.0f} kB")
 

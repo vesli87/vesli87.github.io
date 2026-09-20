@@ -25,6 +25,7 @@ python3 build/audit.py
 python3 build/verify_mahe.py
 node --test build/test_frontend.mjs
 python3 -m unittest discover -s build -p 'test_*.py'
+python3 build/security_check.py
 
 echo "==> Anmeldung prüfen"
 if ! gh auth status >/dev/null 2>&1; then

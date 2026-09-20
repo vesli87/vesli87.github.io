@@ -51,6 +51,7 @@ python3 build/audit.py
 python3 build/verify_mahe.py   # gegen gespeicherte Herstellerdaten
 node --test build/test_frontend.mjs
 python3 -m unittest discover -s build -p 'test_*.py'
+python3 build/security_check.py
 ```
 
 Alle Prüfungen müssen **0 Fehler** melden und laufen auch in GitHub Actions, wo sie bei
@@ -100,3 +101,7 @@ Die eigene Domain steht in der **Pages-Konfiguration**, nicht in der Datei
 `CNAME` — beim Actions-Deployment wird die Datei ignoriert. `build/deploy.sh`
 setzt sie automatisch, solange `EMIT_CNAME = True` in `build/core.py` steht.
 Hintergrund in [MASTER_PROMPT.md](MASTER_PROMPT.md#14a-eigene-domain-und-github-pages).
+
+Sicherung und Wiederherstellung: [BACKUP.md](BACKUP.md). Der volle lokale Backupordner
+darf niemals als öffentliches Artefakt hochgeladen werden. Nur `--public-only`
+ist für GitHub-Artefakte vorgesehen. Sicherheit: [SECURITY.md](SECURITY.md).

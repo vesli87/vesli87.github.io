@@ -178,9 +178,42 @@ test('failed delivery keeps fields and cart, shows a copyable draft, and never a
     assert.equal(context.location.href, '');
   }
 });
+test('personal form data uses the explicit POST body, no referrer, and no persistent storage', async () => {
+  let destination, options;
+  const { api, context, storage } = app({ fetch: async (url, init) => {
+    destination = url; options = init;
+    return { ok: true, json: async () => ({ success: true }) };
+  } });
+  context.window.VT.web3formsKey = 'test';
+  context.location.search = '?private=confidential';
+  const f = form(); f.id = 'kontaktForm';
+  f.fields.name = 'Private customer';
+  f.fields.message = '<script>alert("message stays plain data")</script>';
+  api.submitForm(f, 'Contact inquiry', '');
+  for (let i=0; i<10; i++) await Promise.resolve();
+  assert.equal(destination, 'https://api.web3forms.com/submit');
+  assert.equal(options.method, 'POST');
+  assert.equal(options.referrerPolicy, 'no-referrer');
+  const payload = JSON.parse(options.body);
+  assert.equal(payload.replyto, f.fields.email);
+  assert.match(payload.message, /<script>alert/);
+  assert.doesNotMatch(payload.message, /private=confidential/);
+  assert.doesNotMatch(JSON.stringify([...storage]), /Private customer|test@example\.invalid|message stays plain data/);
+});
+test('the honeypot prevents a filled trap from issuing any request or draft', () => {
+  let calls = 0;
+  const { api, context } = app({ fetch: () => { calls++; throw new Error('must not send'); } });
+  context.window.VT.web3formsKey = 'test';
+  const f = form(); f.fields.botcheck = true;
+  api.submitForm(f, 'Contact inquiry', '');
+  assert.equal(calls, 0);
+  assert.equal(f.fallback, undefined);
+  assert.equal(f.resetCalled, undefined);
+});
 
 const analyticsSource = readFileSync(new URL('../assets/js/analytics.js', import.meta.url), 'utf8');
 function analytics({ saved, hostname = 'www.ves-tech.ch', search = '', hash = '',
+  pathname = '/', canonical = 'https://www.ves-tech.ch/',
   referrer = '', searchPage = false, dnt = false, gpc = false } = {}) {
   const appended = [], events = {}, listeners = {};
   let reloads = 0;
@@ -190,9 +223,10 @@ function analytics({ saved, hostname = 'www.ves-tech.ch', search = '', hash = ''
   vm.runInNewContext(analyticsSource, { URL, Date,
     document: { referrer, getElementById: id => id === 'analyticsConsent' ? panel
       : id === 'analyticsSettings' ? settings : searchPage ? {} : null,
+      querySelector: selector => selector === 'link[rel="canonical"]' && canonical ? { href: canonical } : null,
       createElement: () => ({ dataset: {} }), body: { appendChild: x => appended.push(x) } },
     localStorage: { getItem: () => JSON.stringify(saved), setItem: (_, value) => { saved = JSON.parse(value); } },
-    location: { hostname, search, hash, reload: () => { reloads++; } },
+    location: { hostname, origin: 'https://' + hostname, pathname, search, hash, reload: () => { reloads++; } },
     navigator: { doNotTrack: dnt ? '1' : '0', globalPrivacyControl: gpc },
     window: { addEventListener: (name, fn) => { listeners[name] = fn; } },
   });
@@ -248,4 +282,14 @@ test('analytics synchronizes a choice made in another open tab', () => {
   assert.equal(a.appended.length, 1);
   a.externalChoice({ value: 'denied', at: Date.now() });
   assert.equal(a.reloads(), 1);
+});
+test('analytics never records unrecognised paths served through the 404 page', () => {
+  for (const options of [
+    { pathname: '/contact/john@example.invalid/', canonical: null },
+    { pathname: '/contact/john@example.invalid/' },
+    { canonical: 'https://unrelated.invalid/' },
+    { canonical: 'not a URL' },
+  ]) assert.equal(analytics({ saved: granted(), ...options }).appended.length, 0);
+  assert.equal(analytics({ saved: granted(), pathname: '/fr/contact/',
+    canonical: 'https://www.ves-tech.ch/fr/contact/' }).appended.length, 1);
 });

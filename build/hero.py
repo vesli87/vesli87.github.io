@@ -65,10 +65,30 @@ def lade_manifest():
     return {}
 
 
+def ausgabe_pruefen(path):
+    """Generated files must stay in the real repository image directory."""
+    for entry in (path, *path.parents):
+        if entry == ROOT:
+            break
+        if entry.is_symlink():
+            sys.exit(f"Verknuepfung als Ausgabe nicht erlaubt: {entry}")
+    if path.exists() and not path.is_file():
+        sys.exit(f"Ausgabe ist keine normale Datei: {path}")
+
+
 def erzeuge(name, quelle):
-    quelle = pathlib.Path(quelle).expanduser()
-    if not quelle.exists():
+    # main() also checks the name. Keep the boundary here for imported use.
+    if name not in NAMEN:
+        sys.exit(f"Unbekanntes Herobild: {name}")
+    # Absolute input paths cannot be mistaken for sips/cwebp command options.
+    # External files and explicitly selected input symlinks remain supported.
+    quelle = pathlib.Path(quelle).expanduser().resolve()
+    if not quelle.is_file():
         sys.exit(f"Vorlage nicht gefunden: {quelle}")
+    for path in [MANIFEST, OUT / f"{name}.jpg"] + [
+            OUT / filename for size in STUFEN
+            for filename in (f"{name}-{size}.webp", f"_{name}-{size}.png")]:
+        ausgabe_pruefen(path)
     if not shutil.which("cwebp"):
         sys.exit("cwebp fehlt  ->  brew install webp")
 
@@ -92,7 +112,8 @@ def erzeuge(name, quelle):
     # genau, sodass beim zweiten Kodieren kaum neue Rundungsfehler entstehen.
     jpg = OUT / f"{name}.jpg"
     if quelle.suffix.lower() in (".jpg", ".jpeg"):
-        shutil.copyfile(quelle, jpg)
+        if quelle != jpg.resolve():
+            shutil.copyfile(quelle, jpg)
     else:
         # Wie beim cwebp-Test weiter oben: fehlt die Voraussetzung, soll hier
         # ein Satz stehen und kein Traceback. Der Fallstrick dabei ist der

@@ -179,19 +179,36 @@ def sri_hash(text):
     return "'sha256-" + base64.b64encode(d).decode("ascii") + "'"
 
 
+def script_integrity(relative):
+    """Pin local executable bytes independently of the URL/cache version."""
+    digest = hashlib.sha256((C.ROOT / relative.lstrip('/')).read_bytes()).digest()
+    return 'sha256-' + base64.b64encode(digest).decode('ascii')
+
+
 def csp(lang):
     analytics = bool(C.cloudflare_analytics_token())
+    scripts = [sri_hash(IMG_FALLBACK_JS), sri_hash(boot_json(lang)),
+               "'" + script_integrity('assets/js/app.js') + "'"]
+    if analytics:
+        scripts.append("'" + script_integrity('assets/js/analytics.js') + "'")
     return "; ".join([
-        "default-src 'self'",
-        "base-uri 'self'",
+        "default-src 'none'",
+        "base-uri 'none'",
         "object-src 'none'",
         "frame-src 'none'",
+        "worker-src 'none'",
+        "media-src 'none'",
+        "manifest-src 'self'",
         "img-src 'self' https://mahe-online.de",
-        f"script-src 'self' {sri_hash(IMG_FALLBACK_JS)} {sri_hash(boot_json(lang))}"
+        # Modern browsers trust only these hashes and scripts loaded by them.
+        # Host sources are a compatibility fallback for older CSP versions.
+        "script-src 'self' 'strict-dynamic' " + " ".join(scripts)
         + (" https://static.cloudflareinsights.com" if analytics else ""),
+        "script-src-attr 'none'",
         f"style-src 'self' {sri_hash(NOSCRIPT_CSS)}",
+        "style-src-attr 'none'",
         "font-src 'self'",
-        "connect-src 'self' https://api.web3forms.com"
+        "connect-src 'self'" + (" https://api.web3forms.com" if C.web3forms_key() else "")
         + (" https://cloudflareinsights.com" if analytics else ""),
         "form-action 'self'",
         # frame-ancestors steht bewusst nicht hier: per <meta> ignorieren es
@@ -201,12 +218,12 @@ def csp(lang):
     ])
 
 
-def security_meta(lang):
+def security_meta(lang, *, adressierbar=True):
     return (
         f'<meta http-equiv="Content-Security-Policy" content="{e(csp(lang))}">\n'
         # Beim Klick auf ein Herstellerdokument erfaehrt mahe-online.de sonst,
         # von welcher Unterseite aus verlinkt wurde. Der Domainname genuegt.
-        '<meta name="referrer" content="strict-origin-when-cross-origin">'
+        f'<meta name="referrer" content="{"strict-origin-when-cross-origin" if adressierbar else "no-referrer"}">'
     )
 
 
@@ -711,7 +728,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
     og_image = og_image or f"{C.SITE}/assets/img/hero.jpg"
     return f"""<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-{security_meta(lang)}
+{security_meta(lang, adressierbar=adressierbar)}
 <script>{IMG_FALLBACK_JS}</script>
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
@@ -974,7 +991,7 @@ def analytics_html(lang):
       </div>
     </section>
     <button class="analytics-settings" type="button" id="analyticsSettings" hidden>{e(C.t(lang, 'analytics_settings'))}</button>
-    <script src="{_ver('/assets/js/analytics.js')}" defer></script>'''
+    <script src="{_ver('/assets/js/analytics.js')}" integrity="{script_integrity('assets/js/analytics.js')}" defer></script>'''
 
 
 def _complete_graph(lang, blocks):
@@ -1018,7 +1035,7 @@ def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
 {footer(lang)}
 {analytics_html(lang)}
 {boot_script(lang)}
-<script src="{JS_URL}" defer></script>
+<script src="{JS_URL}" integrity="{script_integrity('assets/js/app.js')}" defer></script>
 </body>
 </html>
 """

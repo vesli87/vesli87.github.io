@@ -22,6 +22,13 @@
     if (loaded) return;
     // Exclude search results and parameterised forms from the beacon.
     if (location.search || location.hash || document.getElementById('srResults')) return;
+    // GitHub serves 404.html at any unknown path. Such a path can contain
+    // private data; only measure the exact published, canonical page URL.
+    try {
+      var canonical = document.querySelector('link[rel="canonical"]');
+      var page = canonical && new URL(canonical.href);
+      if (!page || page.origin !== location.origin || page.pathname !== location.pathname) return;
+    } catch (err) { return; }
     // The beacon also sees the referrer. Exclude parameterised referring URLs.
     try {
       var referrer = document.referrer && new URL(document.referrer);

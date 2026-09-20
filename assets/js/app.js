@@ -968,6 +968,7 @@
 
     request('https://api.web3forms.com/submit', {
       method: 'POST',
+      referrerPolicy: 'no-referrer',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
       body: JSON.stringify({
         access_key: VT.web3formsKey,

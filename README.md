@@ -21,6 +21,7 @@ Statische Website aus JSON und Python, ohne Framework oder Bundler.
 python3 build/build.py
 python3 build/check.py
 python3 build/audit.py
+python3 build/security_check.py
 python3 build/verify_mahe.py
 node --test build/test_frontend.mjs
 python3 -m unittest discover -s build -p 'test_*.py'
@@ -85,6 +86,10 @@ Herstellerdaten-Abgleich und Regressionstests müssen bestehen.
 `build/package_site.py` kopiert nur öffentliche Dateien in ein separates Artefakt;
 Build-Quellen, Rohdaten, lokale Konfiguration und Berichte werden nicht hochgeladen.
 Der Quellcode selbst liegt in einem öffentlichen GitHub-Repository.
+Pull Requests werden ebenfalls geprüft, veröffentlichen jedoch nichts.
+Jeder Produktionsbuild erstellt zusätzlich eine 90 Tage aufbewahrte öffentliche
+Release-Sicherung und testet deren Wiederherstellung vor dem Deploy.
+Lokale Projektsicherung und Wiederherstellung: [BACKUP.md](BACKUP.md).
 Nach dem Deploy meldet IndexNow geänderte URLs; Google verwendet die Sitemap.
 
 ## Weiterarbeiten
@@ -94,3 +99,8 @@ Nach dem Deploy meldet IndexNow geänderte URLs; Google verwendet die Sitemap.
 [SECURITY.md](SECURITY.md) erläutert technische Schutzmassnahmen und Grenzen.
 
 Produktdaten und Herstellerbilder bleiben Eigentum der jeweiligen Rechteinhaber.
+
+Sicherheit und Betrieb: CSP/SRI und öffentliche Dateigrenzen werden in CI geprüft.
+CodeQL, Secret Scanning/Push Protection und Dependabot unterstützen die Kontrolle;
+`main` ist gegen Löschung und Force-Push geschützt. Details und verbleibende
+Plattform-/Kontogrenzen stehen in [SECURITY.md](SECURITY.md).

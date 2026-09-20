@@ -19,6 +19,7 @@ import pathlib
 import re
 import subprocess
 import sys
+import tempfile
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
@@ -53,20 +54,46 @@ def key_for(name):
     return C.slugify(pathlib.PurePosixPath(name).stem)
 
 
+def ausgabe_pruefen(path):
+    for entry in (path, *path.parents):
+        if entry == C.ROOT:
+            break
+        if entry.is_symlink():
+            sys.exit(f"Verknuepfung als Ausgabe nicht erlaubt: {entry}")
+    if path.exists() and not path.is_file():
+        sys.exit(f"Ausgabe ist keine normale Datei: {path}")
+
+
 def main():
     if len(sys.argv) < 2:
         print(__doc__)
         sys.exit(1)
-    src = pathlib.Path(sys.argv[1]).expanduser()
+    src = pathlib.Path(sys.argv[1]).expanduser().resolve()
     if not src.is_dir():
         print(f"Ordner nicht gefunden: {src}")
         sys.exit(1)
 
-    OUT.mkdir(parents=True, exist_ok=True)
+    ausgabe_pruefen(MANIFEST)
+    if OUT.is_symlink():
+        sys.exit(f"Verknuepfung als Ausgabe nicht erlaubt: {OUT}")
     manifest = json.loads(MANIFEST.read_text("utf-8")) if MANIFEST.exists() else {}
 
     files = sorted(f for f in src.iterdir()
                    if f.suffix.lower() in (".png", ".jpg", ".jpeg"))
+    # Manufacturer filenames are not output paths. Reject ambiguous slugs
+    # instead of silently making two manifest entries point at the last image.
+    keys = {value['key']: name for name, value in manifest.items()
+            if name.startswith('panels/')}
+    for f in files:
+        if f.is_symlink() or not f.is_file():
+            sys.exit(f"Vorlage ist keine normale Datei: {f}")
+        k = key_for(f.name)
+        if not k or (k in keys and keys[k] != f"panels/{f.name}"):
+            sys.exit(f"Nicht eindeutiger Bildname: {f.name}")
+        keys[k] = f"panels/{f.name}"
+        for target in OUT.glob(f"{k}-*.webp"):
+            ausgabe_pruefen(target)
+    OUT.mkdir(parents=True, exist_ok=True)
     print(f"{len(files)} Dateien in {src.name}\n")
 
     for f in files:
@@ -81,11 +108,18 @@ def main():
             if ziel not in stufen:
                 stufen.append(ziel)
         for s in stufen:
-            dst = OUT / f"{k}-{s}.webp"
-            subprocess.run(["cwebp", "-quiet", "-q", "86", "-alpha_q", "90",
-                            "-sharp_yuv", "-resize", str(s), "0",
-                            str(f), "-o", str(dst)],
-                           capture_output=True)
+            ausgabe_pruefen(OUT / f"{k}-{s}.webp")
+        # Only replace existing images once every size of this input succeeded.
+        # Failed conversions must not publish partial files or delete old sizes.
+        with tempfile.TemporaryDirectory(prefix=".panels-", dir=OUT) as temp:
+            for s in stufen:
+                dst = pathlib.Path(temp) / f"{k}-{s}.webp"
+                subprocess.run(["cwebp", "-quiet", "-q", "86", "-alpha_q", "90",
+                                "-sharp_yuv", "-resize", str(s), "0",
+                                str(f), "-o", str(dst)],
+                               capture_output=True, check=True)
+            for s in stufen:
+                (pathlib.Path(temp) / f"{k}-{s}.webp").replace(OUT / f"{k}-{s}.webp")
         # Stufen aufraeumen, die es zu einer frueheren, groesseren Vorlage
         # einmal gab. Ohne das bleiben sie mit dem ALTEN Bildinhalt liegen:
         # am 13.08.2026 loeste eine 1672 px breite Vorlage die 3344 px breite

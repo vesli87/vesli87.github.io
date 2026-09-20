@@ -47,9 +47,13 @@ ASSET_TYPES = {
 def safe_name(name):
     if not isinstance(name, str) or not name or '\\' in name or ':' in name:
         raise ValueError('Unsafe archive path')
+    if len(name) > 4096:
+        raise ValueError('Archive path is too long')
     if any(ord(char) < 32 or ord(char) == 127 for char in name):
         raise ValueError('Control character in path')
     parts = name.split('/')
+    if any(len(part.encode('utf-8')) > 255 for part in parts):
+        raise ValueError('Archive path component is too long')
     if name.startswith('/') or any(part in ('', '.', '..') for part in parts):
         raise ValueError('Absolute or traversing archive path')
     if any(part.endswith((' ', '.')) for part in parts):
@@ -78,7 +82,7 @@ def public_path(name):
     if name in PUBLIC_FILES:
         return True
     if len(path.parts) == 1:
-        return bool(re.fullmatch(r'(?:google[a-zA-Z0-9]+\.html|[a-zA-Z0-9-]{8,128}\.txt)', name))
+        return bool(re.fullmatch(r'(?:google[a-zA-Z0-9]{1,128}\.html|[a-zA-Z0-9-]{8,128}\.txt)', name))
     if path.parts[0] in PUBLIC_DIRS:
         return path.name == 'index.html' and not any(part.startswith('.') for part in path.parts)
     if any(part.startswith('.') or re.search(r'(?:^|[._-])(backup|secret|credentials|private)(?:[._-]|$)', part, re.I)

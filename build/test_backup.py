@@ -11,6 +11,12 @@ import backup as B
 
 
 class BackupTests(unittest.TestCase):
+    def test_oversized_archive_paths_are_rejected_before_matching(self):
+        for name in ('google' * 1000 + '.html', 'assets/img/' + 'x' * 256 + '.webp',
+                     '/'.join(['short'] * 1000)):
+            with self.subTest(name_length=len(name)), self.assertRaisesRegex(ValueError, 'too long'):
+                B.public_path(name)
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory()
         self.base = Path(self.temporary.name).resolve()

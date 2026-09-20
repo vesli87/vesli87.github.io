@@ -493,14 +493,14 @@ def hero_band(lang):
     if n < 2:
         return (f'<section class="hero">{hero_folien(lang)}</section>')
     punkte = "".join(
-        f'<button class="hdot{" active" if k == 0 else ""}" type="button" role="tab" '
-        f'aria-selected="{"true" if k == 0 else "false"}" data-i="{k}" '
+        f'<button class="hdot{" active" if k == 0 else ""}" type="button" '
+        f'aria-pressed="{"true" if k == 0 else "false"}" data-i="{k}" '
         f'aria-label="{e(C.t(lang, "hero_slide", n=k+1, m=n))}"></button>'
         for k in range(n))
     return (f'<section class="hero" data-hero aria-roledescription="carousel" '
             f'aria-label="{e(C.t(lang,"site_name"))}">'
             f'{hero_folien(lang)}'
-            f'<div class="hero-dots" role="tablist" '
+            f'<div class="hero-dots" role="group" '
             f'aria-label="{e(C.t(lang,"gal_label"))}">{punkte}</div>'
             # WCAG 2.2.2: Inhalt, der sich von selbst bewegt und laenger als
             # fuenf Sekunden laeuft, braucht eine Moeglichkeit zum Anhalten.
@@ -911,7 +911,7 @@ def page_contact(lang):
     <label for="kName">{e(C.t(lang,'f_name'))}</label>
     <input id="kName" name="name" type="text" required autocomplete="organization">
     <label for="kMail">{e(C.t(lang,'f_mail'))}</label>
-    <input id="kMail" name="email" type="email" required autocomplete="email">
+    <input id="kMail" name="email" type="email" required autocomplete="email" autocapitalize="none" spellcheck="false">
     <label for="kTel">{e(C.t(lang,'k_tel'))}</label>
     <input id="kTel" name="phone" type="tel" autocomplete="tel" placeholder="+41 …">
     <label for="kMsg">{e(C.t(lang,'k_msg'))}</label>
@@ -982,7 +982,7 @@ def page_search(lang):
             + f"""<div class="catalog"><div class="wrap">
   <form class="bigsearch" role="search" action="{e(url)}" method="get" id="pageSearchForm">
     <input id="pq" name="q" type="search" placeholder="{e(C.t(lang,'search_ph'))}"
-           aria-label="{e(C.t(lang,'c_search'))}" spellcheck="false">
+           aria-label="{e(C.t(lang,'c_search'))}" spellcheck="false" autocapitalize="none" enterkeyhint="search">
     <button type="submit">{e(C.t(lang,'search_btn'))}</button>
   </form>
   <div class="cathead"><h2 id="srTitle">{e(C.t(lang,'search_h1'))}</h2>

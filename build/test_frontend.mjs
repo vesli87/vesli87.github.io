@@ -6,17 +6,19 @@ import { test } from 'node:test';
 import { execFileSync } from 'node:child_process';
 
 const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8');
-function app({ stored = [], fetch = async () => ({ ok: true, json: async () => ({ products: [] }) }) } = {}) {
+function app({ stored = [], fetch = async () => ({ ok: true, json: async () => ({ products: [] }) }), prepare } = {}) {
   const elements = new Map();
+  const collections = new Map();
   const events = {};
   const windowEvents = {};
   const timers = new Map();
+  const intervals = new Map();
   const storage = new Map([['vt.cart.v1', JSON.stringify(stored)]]);
   const created = [];
   const location = { search: '', pathname: '/kontakt/', origin: 'https://www.ves-tech.ch', href: '' };
   const document = {
     querySelector: selector => elements.get(selector) || null,
-    querySelectorAll: () => [],
+    querySelectorAll: selector => collections.get(selector) || [],
     addEventListener: (type, fn) => { (events[type] ||= []).push(fn); },
     createElement() {
       const textarea = { value: '', select() {} };
@@ -31,14 +33,17 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
     AbortController, navigator: {}, location,
     localStorage: { getItem: k => storage.get(k) ?? null, setItem: (k,v) => storage.set(k,v) },
     setTimeout: fn => { const id = Symbol(); timers.set(id, fn); return id; },
-    clearTimeout: id => timers.delete(id), setInterval: () => 1, clearInterval: () => {},
+    clearTimeout: id => timers.delete(id),
+    setInterval: fn => { const id = Symbol(); intervals.set(id, fn); return id; },
+    clearInterval: id => intervals.delete(id),
     window: { VT: {}, location, addEventListener: (type, fn) => { windowEvents[type] = fn; } },
   });
+  if (prepare) prepare(context, elements, collections);
   vm.runInContext(source.replace(/\}\)\(\);\s*$/, `
     window.test = { cleanCart, quantity, safeUrl, mark, norm, loadIndex, submitForm, addCart, rmCart,
       readCart: () => cart, setCart: value => { cart = value; } };
   })();`), context);
-  return { api: context.window.test, context, elements, timers, storage, events, windowEvents, created };
+  return { api: context.window.test, context, elements, timers, intervals, storage, events, windowEvents, created };
 }
 const item = { id: 'beta-dx', name: 'Beta DX', url: '/produkte/schweissgeraete/beta-dx/', img: '', qty: 1 };
 
@@ -292,4 +297,166 @@ test('analytics never records unrecognised paths served through the 404 page', (
   ]) assert.equal(analytics({ saved: granted(), ...options }).appended.length, 0);
   assert.equal(analytics({ saved: granted(), pathname: '/fr/contact/',
     canonical: 'https://www.ves-tech.ch/fr/contact/' }).appended.length, 1);
+});
+
+function uiNode(document, attributes = {}) {
+  const classes = new Set(), events = {}, children = new Map();
+  return { attributes, events, children, style: {}, isConnected: true,
+    classList: {
+      add: value => classes.add(value), remove: value => classes.delete(value),
+      contains: value => classes.has(value),
+      toggle(value, on = !classes.has(value)) { if (on) classes.add(value); else classes.delete(value); return on; },
+    },
+    setAttribute(name, value) { attributes[name] = String(value); },
+    getAttribute: name => attributes[name] ?? null,
+    removeAttribute(name) { delete attributes[name]; },
+    querySelector: selector => children.get(selector) || null,
+    querySelectorAll: () => [],
+    closest: () => null,
+    addEventListener: (name, fn) => { events[name] = fn; },
+    focus(options) { this.focusOptions = options; document.activeElement = this; },
+  };
+}
+test('a drawer opened without pointer focus restores its actual button without scrolling', () => {
+  let opener, closer, previous, panel;
+  const { context, events } = app({ prepare(context, elements) {
+    const doc = context.document;
+    previous = uiNode(doc); doc.activeElement = previous;
+    opener = uiNode(doc, { 'data-open': 'mega' });
+    opener.closest = selector => selector === '[data-open]' ? opener : null;
+    closer = uiNode(doc, { 'data-close': 'mega' });
+    closer.closest = selector => selector === '[data-close]' ? closer : null;
+    panel = uiNode(doc); panel.children.set('a,button,input', closer);
+    elements.set('#mega', panel); elements.set('#scrim', uiNode(doc));
+    elements.set('[data-open="mega"]', opener);
+    doc.body.style = {};
+  } });
+  // Safari may leave an earlier field/body active after tapping the opener.
+  events.click.forEach(fn => fn({ target: opener, preventDefault() {} }));
+  assert.equal(context.document.activeElement, closer);
+  events.click.forEach(fn => fn({ target: closer, preventDefault() {} }));
+  assert.equal(context.document.activeElement, opener);
+  assert.notEqual(context.document.activeElement, previous);
+  assert.equal(opener.focusOptions.preventScroll, true);
+  assert.equal(panel.inert, true);
+});
+test('image zoom communicates zoom-out, resets between images, and restores the touched image', () => {
+  let small, second, previous, box, zoom, close, next, stage, large;
+  const { context, events } = app({ prepare(context, elements, collections) {
+    const doc = context.document;
+    context.window.VT.i18n = { lupe_in: 'Enlarge', lupe_out: 'Reduce', lupe_open: 'Open image' };
+    previous = uiNode(doc); doc.activeElement = previous;
+    small = uiNode(doc, { srcset: '/small.webp 400w, /large.webp 1000w', alt: 'First machine' });
+    small.src = '/small.webp'; small.alt = 'First machine';
+    small.closest = selector => selector === '.zoomable' ? small : null;
+    second = uiNode(doc, { srcset: '/second.webp 1000w', alt: 'Second machine' });
+    second.src = '/second.webp'; second.alt = 'Second machine';
+    collections.set('.zoomable', [small, second]);
+    box = uiNode(doc); stage = uiNode(doc); large = uiNode(doc);
+    stage.children.set('img', large);
+    box.children.set('.lupe-buehne', stage); box.children.set('.lupe-txt', uiNode(doc));
+    zoom = uiNode(doc, { 'data-lupe': 'zoom' }); close = uiNode(doc, { 'data-lupe': 'zu' });
+    next = uiNode(doc, { 'data-lupe': '1' });
+    for (const button of [zoom, close, next, uiNode(doc, { 'data-lupe': '-1' })]) {
+      button.closest = selector => selector === '[data-lupe]' ? button : null;
+      box.children.set('[data-lupe="' + button.getAttribute('data-lupe') + '"]', button);
+    }
+    doc.createElement = () => box;
+    doc.body.classList = uiNode(doc).classList; doc.body.appendChild = () => {};
+  } });
+  events.click.forEach(fn => fn({ target: small, preventDefault() {} }));
+  assert.equal(large.src, '/large.webp');
+  assert.equal(zoom.textContent, '+');
+  assert.equal(zoom.getAttribute('aria-label'), 'Enlarge');
+  box.events.click({ target: zoom });
+  assert.equal(box.classList.contains('gross'), true);
+  assert.equal(zoom.textContent, '−');
+  assert.equal(zoom.getAttribute('aria-label'), 'Reduce');
+  assert.equal(zoom.getAttribute('aria-pressed'), 'true');
+  stage.scrollLeft = 100; stage.scrollTop = 80;
+  box.events.click({ target: next });
+  assert.equal(large.src, '/second.webp');
+  assert.equal(box.classList.contains('gross'), false);
+  assert.equal(zoom.getAttribute('aria-label'), 'Enlarge');
+  assert.equal(zoom.getAttribute('aria-pressed'), 'false');
+  assert.equal(stage.scrollLeft, 0); assert.equal(stage.scrollTop, 0);
+  box.events.click({ target: close });
+  assert.equal(context.document.activeElement, small);
+  assert.notEqual(context.document.activeElement, previous);
+  assert.equal(small.focusOptions.preventScroll, true);
+});
+
+test('explicit carousel play resumes while its button retains keyboard or touch focus', () => {
+  let hero, pause, dots;
+  const { context, intervals } = app({ prepare(context, elements) {
+    const doc = context.document;
+    hero = uiNode(doc); pause = uiNode(doc, { 'aria-label': 'Pause' });
+    pause.firstElementChild = {};
+    const slides = [uiNode(doc), uiNode(doc)];
+    dots = [uiNode(doc), uiNode(doc)];
+    hero.querySelectorAll = selector => selector === '.hero-slide' ? slides : selector === '.hdot' ? dots : [];
+    hero.children.set('[data-hpause]', pause);
+    hero.contains = node => node === pause || dots.includes(node);
+    elements.set('[data-hero]', hero);
+  } });
+  assert.equal(intervals.size, 1);
+  context.document.activeElement = pause;
+  hero.events.focusin();
+  pause.events.click();
+  assert.equal(intervals.size, 0);
+  assert.equal(pause.getAttribute('aria-pressed'), 'true');
+  pause.events.click();
+  assert.equal(intervals.size, 1);
+  assert.equal(pause.getAttribute('aria-pressed'), 'false');
+  [...intervals.values()][0]();
+  assert.equal(dots[1].getAttribute('aria-pressed'), 'true');
+  assert.equal(dots[0].getAttribute('aria-pressed'), 'false');
+});
+
+function visualViewportApp({ embedded = false } = {}) {
+  const properties = new Map(), frames = [], viewportEvents = {};
+  const viewport = { height: 812, offsetTop: 0, scale: 1,
+    addEventListener: (name, fn) => { viewportEvents[name] = fn; } };
+  const instance = app({ prepare(context) {
+    context.window.visualViewport = viewport;
+    context.window.top = embedded ? {} : context.window;
+    context.window.requestAnimationFrame = fn => { frames.push(fn); return frames.length; };
+    context.document.documentElement = { style: { setProperty: (name, value) => properties.set(name, value) } };
+  } });
+  return { ...instance, viewport, properties, frames, viewportEvents,
+    flush() { const callbacks = frames.splice(0); callbacks.forEach(fn => fn()); } };
+}
+test('fixed overlays follow the software keyboard, visual pan, orientation and page restore', () => {
+  const a = visualViewportApp();
+  assert.equal(a.properties.get('--vt-viewport-height'), '812px');
+  assert.equal(a.properties.get('--vt-viewport-top'), '0px');
+  a.viewport.height = 390.7; a.viewport.offsetTop = 42;
+  a.viewportEvents.resize(); a.viewportEvents.scroll();
+  assert.equal(a.frames.length, 1); // resize and pan share one animation frame
+  a.flush();
+  assert.equal(a.properties.get('--vt-viewport-height'), '390px');
+  assert.equal(a.properties.get('--vt-viewport-top'), '42px');
+  a.viewport.height = 812; a.viewport.offsetTop = 0; a.viewportEvents.resize(); a.flush();
+  assert.equal(a.properties.get('--vt-viewport-height'), '812px');
+  assert.equal(a.properties.get('--vt-viewport-top'), '0px');
+  a.viewport.height = 375; a.viewportEvents.resize(); a.flush(); // landscape
+  assert.equal(a.properties.get('--vt-viewport-height'), '375px');
+  a.viewport.height = 844; a.windowEvents.pageshow(); a.flush(); // browser back/forward cache
+  assert.equal(a.properties.get('--vt-viewport-height'), '844px');
+});
+test('viewport measurements leave native pinch zoom and embedded pages alone', () => {
+  const a = visualViewportApp();
+  a.viewport.scale = 2; a.viewport.height = 250; a.viewport.offsetTop = 150;
+  a.viewportEvents.resize(); a.viewportEvents.scroll(); a.flush();
+  assert.equal(a.properties.get('--vt-viewport-height'), '812px');
+  assert.equal(a.properties.get('--vt-viewport-top'), '0px');
+  a.viewport.scale = 1; a.viewport.height = 430; a.viewport.offsetTop = -3;
+  a.viewportEvents.resize(); a.flush();
+  assert.equal(a.properties.get('--vt-viewport-height'), '430px');
+  assert.equal(a.properties.get('--vt-viewport-top'), '0px');
+  a.viewport.height = NaN; a.viewportEvents.resize(); a.flush();
+  assert.equal(a.properties.get('--vt-viewport-height'), '430px');
+  const embedded = visualViewportApp({ embedded: true });
+  assert.equal(embedded.properties.size, 0);
+  assert.equal(Object.keys(embedded.viewportEvents).length, 0);
 });

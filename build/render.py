@@ -727,7 +727,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
     graph = {"@context": "https://schema.org", "@graph": jsonld_blocks}
     og_image = og_image or f"{C.SITE}/assets/img/hero.jpg"
     return f"""<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
 {security_meta(lang, adressierbar=adressierbar)}
 <script>{IMG_FALLBACK_JS}</script>
 <title>{e(title)}</title>
@@ -835,7 +835,8 @@ def header(lang, alts):
           id="searchForm" autocomplete="off">
       <input id="q" name="q" type="search" placeholder="{e(C.t(lang,'search_ph'))}"
              aria-label="{e(C.t(lang,'c_search'))}" role="combobox" aria-expanded="false"
-             aria-controls="sugg" aria-autocomplete="list" spellcheck="false">
+             aria-controls="sugg" aria-autocomplete="list" spellcheck="false"
+             autocapitalize="none" enterkeyhint="search">
       <button type="submit">{e(C.t(lang,'search_btn'))}</button>
       <div class="sugg" id="sugg" role="listbox" aria-label="{e(C.t(lang,'search_aria_listbox'))}" hidden></div>
     </form>
@@ -864,7 +865,7 @@ def cart_drawer(lang):
     <input id="cName" name="name" type="text" required autocomplete="organization"
            placeholder="Max Muster · Muster AG">
     <label for="cMail">{e(C.t(lang,'f_mail'))}</label>
-    <input id="cMail" name="email" type="email" required autocomplete="email" placeholder="max@firma.ch">
+    <input id="cMail" name="email" type="email" required autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="max@firma.ch">
     <label for="cMsg">{e(C.t(lang,'f_msg'))}</label>
     <textarea id="cMsg" name="message" rows="2" placeholder="…"></textarea>
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">

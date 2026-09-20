@@ -38,6 +38,36 @@
     };
   }
 
+  /* Software keyboards can shrink only the visual viewport (not 100dvh).
+     These measurements affect fixed overlays only, never the page layout.
+     Preserve native pinch zoom instead of resizing a dialog on each pinch. */
+  (function () {
+    var viewport = window.visualViewport;
+    if (!viewport || !viewport.addEventListener || (window.top && window.top !== window)) return;
+    var pending = false, lastHeight = '', lastTop = '';
+    function measure() {
+      pending = false;
+      if (!Number.isFinite(viewport.scale) || Math.abs(viewport.scale - 1) > 0.01 ||
+          !Number.isFinite(viewport.height) || viewport.height <= 0 ||
+          !Number.isFinite(viewport.offsetTop)) return;
+      var height = Math.floor(viewport.height) + 'px';
+      var top = Math.max(0, Math.round(viewport.offsetTop)) + 'px';
+      var style = document.documentElement.style;
+      if (height !== lastHeight) { style.setProperty('--vt-viewport-height', height); lastHeight = height; }
+      if (top !== lastTop) { style.setProperty('--vt-viewport-top', top); lastTop = top; }
+    }
+    function schedule() {
+      if (pending) return;
+      pending = true;
+      if (window.requestAnimationFrame) window.requestAnimationFrame(measure);
+      else setTimeout(measure, 16);
+    }
+    viewport.addEventListener('resize', schedule);
+    viewport.addEventListener('scroll', schedule);
+    window.addEventListener('pageshow', schedule);
+    measure();
+  }());
+
   /* Der Bildrueckfall (fehlende lokale Kopie -> Original von mahe-online.de)
      steht bewusst nicht hier, sondern als kurzes Skript im <head>, siehe
      render.py::IMG_FALLBACK_JS. Von hier aus waere er zu spaet: dieses Skript
@@ -188,6 +218,13 @@
   /* ============================== Schubladen ============================ */
   var lastFocus = null, activePanel = null;
 
+  function restoreFocus(el) {
+    if (!el || !el.focus || el.isConnected === false) return;
+    // Closing a fixed dialog must not jump the document or reopen a text
+    // keyboard because Safari kept an earlier input focused on pointer click.
+    el.focus({ preventScroll: true });
+  }
+
   function trapFocus(ev, el) {
     if (ev.key !== 'Tab') return;
     var items = $$('a[href],button,input,textarea,select,[tabindex="0"]', el)
@@ -205,11 +242,11 @@
     $$('.skip,.util,header,main,footer,.analytics-consent,.analytics-settings').forEach(function (el) { el.inert = inert; });
   }
 
-  function openPanel(which) {
+  function openPanel(which, trigger) {
     var el = $('#' + which); if (!el) return;
     if (activePanel === which) { closePanel(which); return; }
     if (activePanel) closePanel(activePanel);
-    lastFocus = document.activeElement;
+    lastFocus = trigger || document.activeElement;
     activePanel = which;
     el.inert = false;
     el.classList.add('open'); el.setAttribute('aria-hidden', 'false');
@@ -244,14 +281,14 @@
       document.body.style.overflow = '';
     }
     panelBackground(false);
-    if (lastFocus && lastFocus.focus) lastFocus.focus();
+    restoreFocus(lastFocus);
     el.inert = true;
   }
   function closeAll() { closePanel('mega'); closePanel('cart'); }
 
   document.addEventListener('click', function (ev) {
     var o = ev.target.closest('[data-open]');
-    if (o) { ev.preventDefault(); openPanel(o.getAttribute('data-open')); return; }
+    if (o) { ev.preventDefault(); openPanel(o.getAttribute('data-open'), o); return; }
     var c = ev.target.closest('[data-close]');
     if (c) {
       ev.preventDefault();
@@ -353,7 +390,7 @@
       box.innerHTML =
         '<div class="lupe-kopf">' +
           '<button class="lupe-btn" type="button" data-lupe="zoom" aria-label="' +
-            esc(t('lupe_in', 'Näher heran')) + '">+</button>' +
+            esc(t('lupe_in', 'Näher heran')) + '" aria-pressed="false">+</button>' +
           '<button class="lupe-btn" type="button" data-lupe="zu" aria-label="' +
             esc(t('lupe_close', 'Schliessen')) + '">\u2715</button>' +
         '</div>' +
@@ -375,19 +412,28 @@
         if (b) {
           var v = b.getAttribute('data-lupe');
           if (v === 'zu') { schliessen(); }
-          else if (v === 'zoom') { box.classList.toggle('gross'); }
+          else if (v === 'zoom') { setZoom(!box.classList.contains('gross')); }
           else { zeigen(idx + parseInt(v, 10)); }
           return;
         }
-        if (ev.target === bild) { box.classList.toggle('gross'); return; }
+        if (ev.target === bild) { setZoom(!box.classList.contains('gross')); return; }
         if (ev.target === buehne || ev.target === box) schliessen();
       });
+    }
+
+    function setZoom(enlarged) {
+      box.classList.toggle('gross', enlarged);
+      var button = $('[data-lupe="zoom"]', box);
+      button.textContent = enlarged ? '\u2212' : '+';
+      button.setAttribute('aria-label', enlarged ? t('lupe_out', 'Weniger nah') : t('lupe_in', 'Näher heran'));
+      button.setAttribute('aria-pressed', enlarged ? 'true' : 'false');
+      if (!enlarged) { buehne.scrollLeft = 0; buehne.scrollTop = 0; }
     }
 
     function zeigen(n) {
       idx = (n + gruppe.length) % gruppe.length;
       var q = gruppe[idx];
-      box.classList.remove('gross');
+      setZoom(false);
       bild.src = gross(q);
       bild.alt = q.getAttribute('alt') || '';
       txt.textContent = q.getAttribute('alt') || '';
@@ -402,7 +448,7 @@
       var gal = img.closest('[data-gal]');
       gruppe = gal ? $$('.zoomable', gal) : bilder;
       if (gruppe.indexOf(img) < 0) gruppe = [img];
-      zuletzt = document.activeElement;
+      zuletzt = img;
       box.hidden = false;
       panelBackground(true);
       document.body.classList.add('lupe-offen');
@@ -417,7 +463,7 @@
       bild.removeAttribute('src');
       document.body.classList.remove('lupe-offen');
       panelBackground(false);
-      if (zuletzt && zuletzt.focus) zuletzt.focus();
+      restoreFocus(zuletzt);
     }
 
     document.addEventListener('click', function (ev) {
@@ -458,13 +504,13 @@
       slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
       dots.forEach(function (d, k) {
         d.classList.toggle('active', k === i);
-        d.setAttribute('aria-selected', k === i ? 'true' : 'false');
+        d.setAttribute('aria-pressed', k === i ? 'true' : 'false');
       });
       var img = slides[i].querySelector('img');
       if (img && img.getAttribute('loading') === 'lazy') img.removeAttribute('loading');
     }
-    function start() {
-      if (ruhig || timer || document.hidden || angehalten || hero.contains(document.activeElement)) return;
+    function start(explicit) {
+      if (ruhig || timer || document.hidden || angehalten || (!explicit && hero.contains(document.activeElement))) return;
       timer = setInterval(function () { zeige(i + 1); }, INTERVALL);
     }
     function stopp() { clearInterval(timer); timer = null; }
@@ -496,7 +542,7 @@
       };
       pauseKnopf.addEventListener('click', function () {
         angehalten = !angehalten;
-        if (angehalten) { stopp(); } else { start(); }
+        if (angehalten) { stopp(); } else { start(true); }
         pauseKnopf.setAttribute('aria-pressed', angehalten ? 'true' : 'false');
         pauseKnopf.setAttribute('aria-label', angehalten ? beschriftung.weiter : beschriftung.pause);
         pauseKnopf.firstElementChild.textContent = angehalten ? '\u25B6' : '\u2759\u2759';

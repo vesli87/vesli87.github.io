@@ -179,6 +179,21 @@ def specs():
 # Die Eintraege muessen exakt stimmen - fehlt oder aendert sich eine Zeile,
 # greift die Ausnahme nicht mehr.
 BEWUSST = {
+    # Both current HSC/AUT pages link this datasheet: page 2 explicitly lists
+    # Trennschnitt < 35mm and Empfohlener Schnitt < 25mm. The page bullets
+    # disagree (HSC: max.; AUT: ueber). Preserve their raw snapshots and use
+    # the precise, mode-specific table values for the published highlights.
+    # https://mahe-online.de/wp-content/uploads/2022/07/Theta_60_HSC.pdf
+    "theta-60": {
+        "fehlt": ["Trennschnitt max. 35 mm", "Qualitätsschnitt max. 25 mm"],
+        "zuviel": ["Trennschnitt < 35 mm", "Empfohlener Schnitt < 25 mm"],
+        "grund": "Schnittarten und Grenzwerte gemäss aktuell verlinktem MAHE-Datenblatt Theta 60 HSC, Seite 2",
+    },
+    "theta-60-aut": {
+        "fehlt": ["Trennschnitt über 35 mm", "Qualitätsschnitt über 25 mm"],
+        "zuviel": ["Trennschnitt < 35 mm", "Empfohlener Schnitt < 25 mm"],
+        "grund": "Schnittarten und Grenzwerte gemäss demselben auf der AUT-Seite verlinkten MAHE-Datenblatt, Seite 2",
+    },
     # The current product-page bullet conflicts with MAHE's datasheet and
     # operating manual. Keep the raw source, but publish the documented maximum.
     # Manual: section 7.2, printed page 15 / PDF page 16 (4000 W, 30% polishing).

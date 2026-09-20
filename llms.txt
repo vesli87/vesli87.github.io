@@ -99,7 +99,7 @@
 - [MAHE MT200W](https://www.ves-tech.ch/produkte/zubehoer/mt200w/): Wassergekühlter WIG-Brenner für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie, wahlweise mit Potentiometer. (Brenner)
 - [MAHE MT260](https://www.ves-tech.ch/produkte/zubehoer/mt260/): Gasgekühlter WIG-Brenner für Beta digital, Beta DX, Omega AX und HyperCleaner CT 200. (Brenner)
 - [MAHE MT260 V](https://www.ves-tech.ch/produkte/zubehoer/mt260v/): Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600. (Brenner)
-- [MAHE PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/pshb65/): Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern. (Plasmabrenner)
+- [MAHE PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/pshb65/): Plasmaschneidbrenner für die Theta 60 HSC, erhältlich in Längen von 6 und 12 Metern. (Plasmabrenner)
 - [MAHE PSHB 125](https://www.ves-tech.ch/produkte/zubehoer/pshb125/): Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern. (Plasmabrenner)
 - [MAHE PSHB 160](https://www.ves-tech.ch/produkte/zubehoer/pshb160/): Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern. (Plasmabrenner)
 - [MAHE PSAB 65](https://www.ves-tech.ch/produkte/zubehoer/psab65/): Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in Längen von 6 und 12 Metern. (Plasmabrenner)

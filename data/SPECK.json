@@ -315,5 +315,13 @@
  "Einschaltdauer": {
   "fr": "Facteur de marche",
   "it": "Ciclo di lavoro"
+ },
+ "Trennschnitt": {
+  "fr": "Coupe de séparation",
+  "it": "Taglio di separazione"
+ },
+ "Empfohlener Schnitt": {
+  "fr": "Coupe recommandée",
+  "it": "Taglio consigliato"
  }
 }

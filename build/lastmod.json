@@ -33,11 +33,11 @@
  },
  "/fr/produits/": {
   "d": "2026-09-21",
-  "h": "e6f6f6adeb37f564"
+  "h": "f677b42c46cfe18f"
  },
  "/fr/produits/accessoires/": {
   "d": "2026-09-21",
-  "h": "d6f7e12604880403"
+  "h": "9106bc48d05a663d"
  },
  "/fr/produits/accessoires/cables/": {
   "d": "2026-09-21",
@@ -173,7 +173,7 @@
  },
  "/fr/produits/accessoires/pshb65/": {
   "d": "2026-09-21",
-  "h": "3424ab1921929c02"
+  "h": "faaffddb00886fd4"
  },
  "/fr/produits/accessoires/rc100/": {
   "d": "2026-09-21",
@@ -209,7 +209,7 @@
  },
  "/fr/produits/accessoires/torches-plasma/": {
   "d": "2026-09-21",
-  "h": "b44fed9109c13728"
+  "h": "ee7f780be245914b"
  },
  "/fr/produits/accessoires/torches/": {
   "d": "2026-09-21",
@@ -253,7 +253,7 @@
  },
  "/fr/produits/decoupe-plasma/": {
   "d": "2026-09-21",
-  "h": "e3390c005a2794b0"
+  "h": "84c4d730f8b5df91"
  },
  "/fr/produits/decoupe-plasma/mpt-2501/": {
   "d": "2026-09-21",
@@ -285,19 +285,19 @@
  },
  "/fr/produits/decoupe-plasma/theta-60-aut/": {
   "d": "2026-09-21",
-  "h": "8feaf270eb2e22e2"
+  "h": "1e40ec86ec90f032"
  },
  "/fr/produits/decoupe-plasma/theta-60/": {
   "d": "2026-09-21",
-  "h": "ece8b05920b36636"
+  "h": "243e8f3ffec64564"
  },
  "/fr/produits/decoupe-plasma/theta-automation/": {
   "d": "2026-09-21",
-  "h": "715bec4018c0ac11"
+  "h": "d2be4988dade3416"
  },
  "/fr/produits/decoupe-plasma/theta/": {
   "d": "2026-09-21",
-  "h": "a25bd1385b2d7389"
+  "h": "082198755784f20c"
  },
  "/fr/produits/nettoyage/": {
   "d": "2026-09-21",
@@ -529,11 +529,11 @@
  },
  "/it/prodotti/": {
   "d": "2026-09-21",
-  "h": "62c8c2c41295b502"
+  "h": "a89811ded43c7236"
  },
  "/it/prodotti/accessori/": {
   "d": "2026-09-21",
-  "h": "6029c7984c7a2c4d"
+  "h": "ec980ede39aa8274"
  },
  "/it/prodotti/accessori/attrezzatura-officina/": {
   "d": "2026-09-21",
@@ -665,7 +665,7 @@
  },
  "/it/prodotti/accessori/pshb65/": {
   "d": "2026-09-21",
-  "h": "9e9e7ea86fb0cae5"
+  "h": "bcc5b65eefdcdf25"
  },
  "/it/prodotti/accessori/raffreddamento/": {
   "d": "2026-09-21",
@@ -701,7 +701,7 @@
  },
  "/it/prodotti/accessori/torce-plasma/": {
   "d": "2026-09-21",
-  "h": "8624706093267fe7"
+  "h": "85ddda9f0c3b0216"
  },
  "/it/prodotti/accessori/torce/": {
   "d": "2026-09-21",
@@ -905,7 +905,7 @@
  },
  "/it/prodotti/taglio-plasma/": {
   "d": "2026-09-21",
-  "h": "53e764777272f39b"
+  "h": "bfe8310b9cce9684"
  },
  "/it/prodotti/taglio-plasma/mpt-2501/": {
   "d": "2026-09-21",
@@ -937,19 +937,19 @@
  },
  "/it/prodotti/taglio-plasma/theta-60-aut/": {
   "d": "2026-09-21",
-  "h": "ec449da33a9412a4"
+  "h": "98eda4a85354bfa7"
  },
  "/it/prodotti/taglio-plasma/theta-60/": {
   "d": "2026-09-21",
-  "h": "691f9b4e92a343e4"
+  "h": "53c540cd0f92b950"
  },
  "/it/prodotti/taglio-plasma/theta-automation/": {
   "d": "2026-09-21",
-  "h": "c4526318c2b5c9ab"
+  "h": "8f9e4e3ec47a6c70"
  },
  "/it/prodotti/taglio-plasma/theta/": {
   "d": "2026-09-21",
-  "h": "346622c38f59c6d3"
+  "h": "6a8ac59364eda26e"
  },
  "/kontakt/": {
   "d": "2026-09-21",
@@ -957,7 +957,7 @@
  },
  "/produkte/": {
   "d": "2026-09-21",
-  "h": "cba2addcc93ad356"
+  "h": "b92895e3c69480b0"
  },
  "/produkte/occasion/": {
   "d": "2026-09-21",
@@ -977,7 +977,7 @@
  },
  "/produkte/plasmaschneiden/": {
   "d": "2026-09-21",
-  "h": "82c075c32f93fac9"
+  "h": "94e28afc3fedc9a0"
  },
  "/produkte/plasmaschneiden/mpt-2501/": {
   "d": "2026-09-21",
@@ -1009,19 +1009,19 @@
  },
  "/produkte/plasmaschneiden/theta-60-aut/": {
   "d": "2026-09-21",
-  "h": "b9ab817b8797b568"
+  "h": "2928059803e79891"
  },
  "/produkte/plasmaschneiden/theta-60/": {
   "d": "2026-09-21",
-  "h": "02e895e1f349e09a"
+  "h": "5ae877e9541dd9d3"
  },
  "/produkte/plasmaschneiden/theta-automation/": {
   "d": "2026-09-21",
-  "h": "e52fe694055fbe88"
+  "h": "490332f1b242b0de"
  },
  "/produkte/plasmaschneiden/theta/": {
   "d": "2026-09-21",
-  "h": "9e3e9397e133f24c"
+  "h": "3ff52d34d772ca64"
  },
  "/produkte/reinigungsgeraete/": {
   "d": "2026-09-21",
@@ -1165,7 +1165,7 @@
  },
  "/produkte/zubehoer/": {
   "d": "2026-09-21",
-  "h": "59567d9db70f46e3"
+  "h": "4677bf5e36946413"
  },
  "/produkte/zubehoer/brenner/": {
   "d": "2026-09-21",
@@ -1281,7 +1281,7 @@
  },
  "/produkte/zubehoer/plasmabrenner/": {
   "d": "2026-09-21",
-  "h": "77190862104fcd3f"
+  "h": "b9f1194339ba1127"
  },
  "/produkte/zubehoer/psab125/": {
   "d": "2026-09-21",
@@ -1301,7 +1301,7 @@
  },
  "/produkte/zubehoer/pshb65/": {
   "d": "2026-09-21",
-  "h": "71d3438ea92b6a45"
+  "h": "4461337b0d6ee320"
  },
  "/produkte/zubehoer/rc100/": {
   "d": "2026-09-21",

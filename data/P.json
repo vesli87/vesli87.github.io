@@ -240,7 +240,8 @@
   "desc": "Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
-   "Schneidleistung": "bis 40 mm",
+   "Trennschnitt": "< 35 mm",
+   "Empfohlener Schnitt": "< 25 mm",
    "Technologie": "HSC",
    "Netz": "3~ 400 V"
   }
@@ -285,7 +286,8 @@
   "desc": "Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.",
   "specs": {
    "Verfahren": "Plasmaschneiden · Automation",
-   "Schneidleistung": "bis 40 mm",
+   "Trennschnitt": "< 35 mm",
+   "Empfohlener Schnitt": "< 25 mm",
    "Technologie": "HSC",
    "Schnittstelle": "CNC / Automation"
   }
@@ -950,7 +952,7 @@
   "vt": "Plasmabrenner",
   "name": "PSHB 65",
   "img": "2022/03/PSHB125-225x300.png",
-  "desc": "Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.",
+  "desc": "Plasmaschneidbrenner für die Theta 60 HSC, erhältlich in Längen von 6 und 12 Metern.",
   "specs": {
    "Typ": "Plasmaschneidbrenner",
    "Für": "Theta 60 HSC",

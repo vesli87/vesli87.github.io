@@ -1,6 +1,7 @@
 """Regression checks for deployment, optional integrations and SEO data."""
 import json
 import pathlib
+import re
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -58,6 +59,37 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual(R.jsonld({'name': payload}).count('</script>'), 1)
         with patch.dict(C.COMPANY, email=payload):
             self.assertNotIn('</script>', R.boot_json('de'))
+
+    def test_theta_cut_limits_keep_their_meaning_in_html_and_jsonld(self):
+        # The manufacturer's current datasheet distinguishes strict limits for
+        # separation/recommended cuts. A dropped or reversed '<' changes the
+        # specification; check the rendered card, page and parsed JSON-LD.
+        labels = {
+            'de': ('Trennschnitt', 'Empfohlener Schnitt'),
+            'fr': ('Coupe de séparation', 'Coupe recommandée'),
+            'it': ('Taglio di separazione', 'Taglio consigliato'),
+        }
+        for lang, names in labels.items():
+            for pid in ('theta-60', 'theta-60-aut'):
+                with self.subTest(lang=lang, product=pid):
+                    product = C.BY_ID[pid]
+                    page = PG.page_product(lang, product)[1]
+                    card = R.pcard(lang, product)
+                    for name, limit in zip(names, ('35', '25')):
+                        self.assertIn(f'{name} &lt; {limit} mm', page)
+                        self.assertIn(f'&lt; {limit} mm', card)
+                    scripts = re.findall(
+                        r'<script type="application/ld\+json">(.*?)</script>',
+                        page, re.S)
+                    self.assertTrue(scripts)
+                    nodes = [node for script in scripts
+                             for node in json.loads(script).get('@graph', [])]
+                    data = next(node for node in nodes if node.get('@type') == 'Product')
+                    props = {p['name']: p['value'] for p in data['additionalProperty']}
+                    for name, limit in zip(names, ('35', '25')):
+                        self.assertEqual(props[name].replace(' ', ''), '<' + limit + 'mm')
+                    self.assertTrue(any('\\u003c' in script for script in scripts))
+                    self.assertTrue(all('<' not in script for script in scripts))
 
     def test_analytics_and_privacy_follow_configuration(self):
         for lang in C.LANGS:

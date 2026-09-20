@@ -491,8 +491,8 @@ Passendes Zubehör: Verschleissteilebox S 25, STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-60 · Preis: auf Anfrage (CHF)
 Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt max. 35 mm; Qualitätsschnitt max. 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
-Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 40 mm; Technologie: HSC.
+Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt < 35 mm; Empfohlener Schnitt < 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Ausstattung: Verfahren: Plasmaschneiden; Technologie: HSC.
 
 Technische Daten – Theta 60 HSC:
 
@@ -583,8 +583,8 @@ Passendes Zubehör: PSHB 160, Verschleissteilebox PSHB 160, Massekabel 25 mm².
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-60-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
-Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt über 35 mm; Qualitätsschnitt über 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
-Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 40 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
+Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt < 35 mm; Empfohlener Schnitt < 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Ausstattung: Verfahren: Plasmaschneiden · Automation; Technologie: HSC; Schnittstelle: CNC / Automation.
 
 Technische Daten – Theta 60 HSC:
 
@@ -1065,7 +1065,7 @@ Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Ausstattung: Gasventil am Br
 ### MAHE PSHB 65
 URL: https://www.ves-tech.ch/produkte/zubehoer/pshb65/
 Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB65 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.
+Plasmaschneidbrenner für die Theta 60 HSC, erhältlich in Längen von 6 und 12 Metern.
 Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 60 HSC; Längen: 6 / 12 m.
 
 ### MAHE PSHB 125

@@ -138,6 +138,13 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 Die Fachlogik aus v1 ist 1:1 nach `core.py` portiert: `deriveFeat`, `matOf`,
 `highlightsOf`, `fpAssign`, `relatedAcc`, `isWater`, `trK`, `trV`.
 
+Bei Theta 60 HSC und AUT folgen Kurzmerkmale und Besonderheiten dem auf beiden
+Herstellerseiten verlinkten [MAHE-Datenblatt, Seite 2](https://mahe-online.de/wp-content/uploads/2022/07/Theta_60_HSC.pdf):
+Trennschnitt **< 35 mm**, empfohlener Schnitt **< 25 mm**. Die widersprüchlichen
+40-mm-Kurzangaben sowie «max.»/«über» aus Herstellertexten werden nicht als
+zusätzliche Leistung übernommen; die eng begrenzten Abweichungen stehen in
+`verify_mahe.py::BEWUSST`. Die importierte technische Tabelle bleibt unverändert.
+
 ## 5. Bilder
 
 `build/images.py` lädt die Originale **einmalig** von `mahe-online.de`, skaliert sie

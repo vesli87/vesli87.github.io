@@ -126,6 +126,7 @@ test('one form submission only, preserving additions made while sending', async 
   assert.equal(api.readCart()[0].qty, 1);
   assert.equal(f.button.disabled, false);
   assert.equal(f.resetCalled, true);
+  assert.equal(f.status.textContent, '');
   assert.equal(f.dataset.sending, 'false');
 });
 test('successful delivery preserves a new draft and products re-added during sending', async () => {

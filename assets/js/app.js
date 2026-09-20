@@ -993,6 +993,9 @@
         var fallback = f.querySelector('.mfall');
         if (fallback) fallback.remove();
         if (f.id === 'cartForm' && submittedCart) {
+          // The persistent confirmation lives outside the form, which may
+          // be hidden and reopened for a new selection later on this page.
+          if (status) { status.textContent = ''; status.className = 'fstatus'; }
           // Remove only quantities included in this request. Products added
           // while the request was in flight must stay in the list.
           cart = cart.reduce(function (out, item) {

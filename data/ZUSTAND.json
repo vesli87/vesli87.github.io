@@ -3,13 +3,13 @@
  "plasmafix-51": {
   "grad": "refurbished",
   "de": "Generalüberholt, drei Anlagen verfügbar (Ausführungen 51 und P+T). Alle sind komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt.",
-  "fr": "Entièrement révisées, trois machines disponibles (versions 51 et P+T). Toutes ont été remises en état ; le refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
-  "it": "Completamente revisionate, tre macchine disponibili (versioni 51 e P+T). Tutte sono state ripristinate; il raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito."
+  "fr": "Entièrement révisées, trois machines disponibles (versions 51 et P+T). Toutes ont été remises en état ; le système de refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
+  "it": "Completamente revisionate, tre macchine disponibili (versioni 51 e P+T). Tutte sono state ripristinate; il sistema di raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito."
  },
  "plasmafix-50s": {
   "grad": "refurbished",
   "de": "Generalüberholt. Die Anlage ist komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt.",
-  "fr": "Entièrement révisée. La machine a été complètement remise en état ; le refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
-  "it": "Completamente revisionata. La macchina è stata interamente ripristinata; il raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito."
+  "fr": "Entièrement révisée. La machine a été complètement remise en état ; le système de refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
+  "it": "Completamente revisionata. La macchina è stata interamente ripristinata; il sistema di raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito."
  }
 }

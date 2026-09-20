@@ -6,7 +6,7 @@
   "vt": "MIG/MAG",
   "name": "HyperMIG X",
   "img": "2022/03/Bild-der-Hypers.png",
-  "desc": "Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen.",
+  "desc": "Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und spritzerfreiem MIS-Schweissen.",
   "specs": {
    "Verfahren": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
    "Strombereich": "10 – 420 A",
@@ -28,7 +28,7 @@
   "vt": "MIG/MAG",
   "name": "EcoMIG Digital / Analog",
   "img": "2023/03/IMGP5826.png",
-  "desc": "Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.",
+  "desc": "Ultrakompakte MIG/MAG-Schweissinverter mit stufenloser Regelung und einfacher Bedienung.",
   "specs": {
    "Verfahren": "MIG/MAG",
    "Strombereich": "bis 300 A",
@@ -60,7 +60,7 @@
   "vt": "WIG AC/DC",
   "name": "Omega AX",
   "img": "2026/01/Omega220AX-Pro-300x300.png",
-  "desc": "Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.",
+  "desc": "Mobile AC/DC-WIG-Schweissmaschine für Aluminium und Stahl.",
   "specs": {
    "Verfahren": "WIG AC/DC",
    "Strombereich": "bis 220 A",
@@ -76,7 +76,7 @@
   "vt": "WIG DC",
   "name": "Beta DX",
   "img": "2026/01/Beta220DX_Pro-300x300.png",
-  "desc": "Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.",
+  "desc": "Mobile WIG-DC-Schweissmaschine für Stahl und Chromstahl.",
   "specs": {
    "Verfahren": "WIG DC",
    "Strombereich": "bis 220 A",
@@ -91,7 +91,7 @@
   "vt": "WIG AC/DC",
   "name": "HyperTIG AX",
   "img": "2024/06/IMGP5943-226x300.png",
-  "desc": "Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.",
+  "desc": "Leistungsstarke WIG-AC/DC-Stromquelle für den industriellen Einsatz.",
   "specs": {
    "Verfahren": "WIG AC/DC",
    "Strombereich": "bis 350 A",
@@ -106,7 +106,7 @@
   "vt": "WIG DC",
   "name": "HyperTIG DX",
   "img": "2024/06/IMGP5957-229x300.png",
-  "desc": "Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.",
+  "desc": "Leistungsstarke WIG-DC-Stromquelle für hohe Abschmelzleistung.",
   "specs": {
    "Verfahren": "WIG DC",
    "Strombereich": "bis 400 A",
@@ -136,7 +136,7 @@
   "vt": "WIG AC/DC",
   "name": "HyperTIG AC/DC",
   "img": "2020/03/hypertig-ac-dc-cwk-300x300.png",
-  "desc": "Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.",
+  "desc": "Leistungsstarke AC/DC-Stromquelle für höchste Anforderungen.",
   "specs": {
    "Verfahren": "WIG AC/DC",
    "Strombereich": "bis 600 A",
@@ -208,7 +208,7 @@
   "vt": "Plasma TIG",
   "name": "PlasmaTIG",
   "img": "2019/10/plasmatig-300x300.png",
-  "desc": "Stromquelle für Mikroplasma und Plasma, für feinste Schweissungen.",
+  "desc": "Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen.",
   "specs": {
    "Verfahren": "Plasma / Mikroplasma",
    "Strombereich": "20 – 400 A",
@@ -312,7 +312,7 @@
   "vt": "Plasma CNC",
   "name": "MPT 3001",
   "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 3000 x 1500 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
    "Arbeitsbereich": "3000 x 1500 mm",
@@ -330,7 +330,7 @@
   "vt": "Plasma CNC",
   "name": "MPT 2501",
   "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.",
+  "desc": "Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 2500 x 1250 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
    "Arbeitsbereich": "2500 x 1250 mm",
@@ -376,9 +376,9 @@
   "vt": "Cleaner",
   "name": "HyperCleaner ST Speed",
   "img": "2020/11/HyperCleaner-ST-Plus_SET-300x219.png",
-  "desc": "Leistungsstarker 2500-W-Inverter für schnelle Reinigung.",
+  "desc": "Leistungsstarker Inverter mit bis zu 2400 W beim Polieren (100 % Einschaltdauer).",
   "specs": {
-   "Leistung": "2500 W",
+   "Leistung": "2400 W",
    "Verfahren": "Elektrolyt-Reinigung",
    "Lieferung": "als Set"
   }
@@ -390,7 +390,7 @@
   "vt": "Cleaner",
   "name": "HyperCleaner ST Plus",
   "img": "2020/11/HyperCleaner-ST-Plus_SET-300x219.png",
-  "desc": "Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.",
+  "desc": "Leistungsstarker Inverter mit bis zu 4000 W beim Polieren (30 % Einschaltdauer).",
   "specs": {
    "Leistung": "4000 W",
    "Verfahren": "Elektrolyt-Reinigung",
@@ -418,7 +418,7 @@
   "vt": "Signieren",
   "name": "HCS 1",
   "img": "2020/12/HCS-1-SET-300x248.png",
-  "desc": "Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
+  "desc": "Wirtschaftliches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.",
   "specs": {
    "Verfahren": "Elektrolyt-Signieren",
    "Einsatz": "mobil",
@@ -446,7 +446,7 @@
   "vt": "Reinigung",
   "name": "Reinigungselektrolyt Rapid R1",
   "img": "2022/05/1850002-210x300.png",
-  "desc": "Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.",
+  "desc": "Schnell wirkender Reinigungselektrolyt für Chromstahl-Schweissnähte.",
   "specs": {
    "Typ": "Reinigung (Rapid)",
    "Werkstoff": "Chromstahl",
@@ -461,7 +461,7 @@
   "vt": "Reinigung",
   "name": "Reinigungselektrolyt RP1 Pastös",
   "img": "2022/05/1851002-210x300.png",
-  "desc": "Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.",
+  "desc": "Pastöser Reinigungselektrolyt für senkrechte Flächen und Überkopfarbeiten.",
   "specs": {
    "Typ": "Reinigung (pastös)",
    "Werkstoff": "Chromstahl",
@@ -607,7 +607,7 @@
   "vt": "Kühlung",
   "name": "WK 350",
   "img": "2020/03/wk350-300x300.png",
-  "desc": "Wasserkühlgerät für Beta digital und Omega 400-V-Linie.",
+  "desc": "Wasserkühlgerät für Beta digital und die 400-V-Baureihe Omega.",
   "specs": {
    "Für": "Beta digital · Omega 400 V",
    "Typ": "Wasserkühlgerät"
@@ -647,7 +647,7 @@
   "vt": "Fernregler",
   "name": "FRC 5",
   "img": "2020/03/frc5-300x300.png",
-  "desc": "Fussfernregler für alle MAHE WIG-Geräte.",
+  "desc": "Fussfernregler für alle WIG-Geräte von MAHE.",
   "specs": {
    "Typ": "Fussfernregler",
    "Für": "MAHE WIG"
@@ -660,7 +660,7 @@
   "vt": "Fernregler",
   "name": "RC 5",
   "img": "2020/03/rc5-300x300.png",
-  "desc": "Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.",
+  "desc": "Handfernregler für alle WIG-Geräte und MMA-Geräte von MAHE.",
   "specs": {
    "Typ": "Handfernregler",
    "Für": "MAHE WIG · MMA"
@@ -686,7 +686,7 @@
   "vt": "Fernregler",
   "name": "RC 100",
   "img": "2020/03/rc100-300x300.png",
-  "desc": "Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.",
+  "desc": "Handfernregler für alle WIG-Geräte und MMA-Geräte von MAHE.",
   "specs": {
    "Typ": "Handfernregler",
    "Für": "MAHE WIG · MMA"
@@ -712,7 +712,7 @@
   "vt": "Kalibrierung",
   "name": "MCU 1",
   "img": "2019/10/mcu11-300x300.png",
-  "desc": "MAHE Kalibriergerät zum Kalibrieren und Validieren, mit grossen Volt-/Ampere-Anzeigen, leicht.",
+  "desc": "Leichtes MAHE-Kalibriergerät zum Kalibrieren und Validieren mit grossen Anzeigen für Spannung und Stromstärke.",
   "specs": {
    "Funktion": "Kalibrieren / Validieren",
    "Anzeige": "Volt & Ampere (gross)",
@@ -726,7 +726,7 @@
   "vt": "Programmierung",
   "name": "USB 2in1 Programmierer",
   "img": "2019/10/usb2in1programmer-300x300.png",
-  "desc": "Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software.",
+  "desc": "Programmiergerät für Mikrocontroller und MAHE-Schnittstellen, inklusive USB-Software.",
   "specs": {
    "Funktion": "Controller-Programmierung",
    "Schnittstelle": "USB / MAHE",
@@ -810,7 +810,7 @@
   "vt": "Brenner",
   "name": "MF405W",
   "img": "2021/05/MIG_Brenner-292x300.png",
-  "desc": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.",
+  "desc": "Wassergekühlter MIG/MAG-Brenner für die HyperMIG-X-Serie.",
   "specs": {
    "Typ": "MIG/MAG wassergekühlt",
    "Länge": "4 m",
@@ -950,7 +950,7 @@
   "vt": "Plasmabrenner",
   "name": "PSHB 65",
   "img": "2022/03/PSHB125-225x300.png",
-  "desc": "Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+  "desc": "Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.",
   "specs": {
    "Typ": "Plasmaschneidbrenner",
    "Für": "Theta 60 HSC",
@@ -964,7 +964,7 @@
   "vt": "Plasmabrenner",
   "name": "PSHB 125",
   "img": "2022/03/PSHB125-225x300.png",
-  "desc": "Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+  "desc": "Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.",
   "specs": {
    "Typ": "Plasmaschneidbrenner",
    "Für": "Theta 120 HSC",
@@ -978,7 +978,7 @@
   "vt": "Plasmabrenner",
   "name": "PSHB 160",
   "img": "2022/03/PSHB125-225x300.png",
-  "desc": "Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.",
+  "desc": "Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.",
   "specs": {
    "Typ": "Plasmaschneidbrenner",
    "Für": "Theta 180 HSC",
@@ -992,7 +992,7 @@
   "vt": "Plasmabrenner",
   "name": "PSAB 65",
   "img": "2022/03/PSHB125-225x300.png",
-  "desc": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in 6 und 12 Meter Länge.",
+  "desc": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in Längen von 6 und 12 Metern.",
   "specs": {
    "Typ": "Plasmaschneidbrenner",
    "Für": "Theta 60 AUT",
@@ -1006,7 +1006,7 @@
   "vt": "Plasmabrenner",
   "name": "PSAB 125",
   "img": "2022/03/PSHB125-225x300.png",
-  "desc": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in 6 und 12 Meter Länge.",
+  "desc": "Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in Längen von 6 und 12 Metern.",
   "specs": {
    "Typ": "Plasmaschneidbrenner",
    "Für": "Theta 120 AUT",
@@ -1084,7 +1084,7 @@
   "vt": "Vorschubrolle",
   "name": "Drahtvorschubrollen",
   "img": "2022/05/VorchubRolle_SFST4.png",
-  "desc": "Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.",
+  "desc": "Drahtvorschubrollen für EcoMIG und MMS, mit Ausführungen für Stahl und Aluminium sowie gerändelten Varianten.",
   "specs": {
    "Für": "EcoMIG · MMS",
    "Stahl": "0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
@@ -1100,7 +1100,7 @@
   "vt": "Vorschubrolle",
   "name": "Drahtvorschubrollen HyperMIG X",
   "img": "2022/05/VorchubRolle_SFST4.png",
-  "desc": "Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium.",
+  "desc": "Drahtvorschubrollen für die HyperMIG-X-Serie, mit Ausführungen für Stahl und Aluminium sowie gerändelten Varianten.",
   "specs": {
    "Für": "HyperMIG X",
    "Stahl": "0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm",
@@ -1131,7 +1131,7 @@
   "brand": "Oerlikon",
   "name": "PlasmaFix 51",
   "img": "occasion/plasmafix-51.png",
-  "desc": "Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar.",
+  "desc": "Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar.",
   "specs": {
    "Verfahren": "Mikroplasma · WIG, geglättet und gepulst",
    "Schweissstrom Plasma": "0,08 – 50 A bei 100 % ED",

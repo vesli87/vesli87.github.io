@@ -1,0 +1,112 @@
+{
+  "MIG / MAG": {
+    "de": "mig-mag",
+    "fr": "mig-mag",
+    "it": "mig-mag"
+  },
+  "WIG / TIG": {
+    "de": "wig-tig",
+    "fr": "tig",
+    "it": "tig"
+  },
+  "MMA": {
+    "de": "mma",
+    "fr": "mma",
+    "it": "mma"
+  },
+  "Plasma TIG": {
+    "de": "plasma-tig",
+    "fr": "plasma-tig",
+    "it": "plasma-tig"
+  },
+  "Theta": {
+    "de": "theta",
+    "fr": "theta",
+    "it": "theta"
+  },
+  "Theta Automation": {
+    "de": "theta-automation",
+    "fr": "theta-automation",
+    "it": "theta-automation"
+  },
+  "Schneidtische": {
+    "de": "schneidtische",
+    "fr": "tables-de-decoupe",
+    "it": "tavoli-di-taglio"
+  },
+  "Cleaner": {
+    "de": "cleaner",
+    "fr": "nettoyage",
+    "it": "pulizia"
+  },
+  "Signiergeräte": {
+    "de": "signiergeraete",
+    "fr": "marquage",
+    "it": "marcatura"
+  },
+  "Dosiersystem": {
+    "de": "dosiersystem",
+    "fr": "dosage",
+    "it": "dosaggio"
+  },
+  "Elektrolyte": {
+    "de": "elektrolyte",
+    "fr": "electrolytes",
+    "it": "elettroliti"
+  },
+  "Fahrwagen": {
+    "de": "fahrwagen",
+    "fr": "chariots",
+    "it": "carrelli"
+  },
+  "Wasserkühlung": {
+    "de": "wasserkuehlung",
+    "fr": "refroidissement",
+    "it": "raffreddamento"
+  },
+  "Drahtvorschubkoffer": {
+    "de": "drahtvorschubkoffer",
+    "fr": "devidoirs",
+    "it": "trainafili"
+  },
+  "Fernbedienungen": {
+    "de": "fernbedienungen",
+    "fr": "telecommandes",
+    "it": "telecomandi"
+  },
+  "Werkstattausrüstung": {
+    "de": "werkstattausruestung",
+    "fr": "equipement-atelier",
+    "it": "attrezzatura-officina"
+  },
+  "Kabel": {
+    "de": "kabel",
+    "fr": "cables",
+    "it": "cavi"
+  },
+  "Brenner": {
+    "de": "brenner",
+    "fr": "torches",
+    "it": "torce"
+  },
+  "Plasmabrenner": {
+    "de": "plasmabrenner",
+    "fr": "torches-plasma",
+    "it": "torce-plasma"
+  },
+  "Verschleissteile": {
+    "de": "verschleissteile",
+    "fr": "pieces-dusure",
+    "it": "parti-di-usura"
+  },
+  "Schlauchpakete": {
+    "de": "schlauchpakete",
+    "fr": "faisceaux",
+    "it": "fasci-cavi"
+  },
+  "Mikroplasma": {
+    "de": "mikroplasma",
+    "fr": "microplasma",
+    "it": "microplasma"
+  }
+}

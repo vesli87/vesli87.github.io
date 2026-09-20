@@ -26,11 +26,11 @@
  },
  "Plasmabrenner": {
   "fr": "Torche plasma",
-  "it": "Torcia plasma"
+  "it": "Torcia al plasma"
  },
  "Schlauchpaket": {
   "fr": "Faisceau",
-  "it": "Fascio cavi"
+  "it": "Fascio di cavi"
  },
  "Kabel": {
   "fr": "Câble",
@@ -77,11 +77,11 @@
   "it": "TIG AC/DC"
  },
  "WIG + Cleaner": {
-  "fr": "TIG + Cleaner",
+  "fr": "TIG + nettoyage",
   "it": "TIG + Cleaner"
  },
  "Plasma Cut": {
-  "fr": "Plasma Cut",
+  "fr": "Découpe plasma",
   "it": "Plasma Cut"
  },
  "Plasma AUT": {
@@ -97,7 +97,7 @@
   "it": "Plasma TIG"
  },
  "Cleaner": {
-  "fr": "Cleaner",
+  "fr": "Nettoyage",
   "it": "Cleaner"
  },
  "Reinigung": {
@@ -121,7 +121,7 @@
   "it": "Dosaggio"
  },
  "Kalibrierung": {
-  "fr": "Calibrage",
+  "fr": "Étalonnage",
   "it": "Calibrazione"
  },
  "Programmierung": {

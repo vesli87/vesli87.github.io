@@ -32,8 +32,8 @@
   "it": "Telecomandi"
  },
  "Werkstattausrüstung": {
-  "fr": "Équipement atelier",
-  "it": "Attrezzatura officina"
+  "fr": "Équipement d’atelier",
+  "it": "Attrezzatura d’officina"
  },
  "Theta Automation": {
   "fr": "Theta Automation",
@@ -53,7 +53,7 @@
  },
  "Plasmabrenner": {
   "fr": "Torches plasma",
-  "it": "Torce plasma"
+  "it": "Torce al plasma"
  },
  "Verschleissteile": {
   "fr": "Pièces d’usure",
@@ -61,7 +61,7 @@
  },
  "Schlauchpakete": {
   "fr": "Faisceaux",
-  "it": "Fasci cavi"
+  "it": "Fasci di cavi"
  },
  "Schneidtische": {
   "fr": "Tables de découpe",

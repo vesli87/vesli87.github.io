@@ -1,13 +1,23 @@
 {
  "_": "Fussnoten unter den MAHE-Tabellen, Schluessel wie in build/mahe_specs.json. Der Stern steht in den Spaltentiteln (z. B. 450*).",
  "hypermig": {
-  "de": "nur als WWK Variante erhältlich.",
-  "fr": "disponible uniquement en version WWK.",
-  "it": "disponibile solo nella variante WWK."
+  "de": "Nur als WWK-Variante erhältlich.",
+  "fr": "Disponible uniquement en version WWK.",
+  "it": "Disponibile solo nella variante WWK."
  },
  "hypertig": {
   "de": "Nur für Länder ausserhalb der EU verfügbar.",
   "fr": "Disponible uniquement pour les pays hors UE.",
   "it": "Disponibile solo per i paesi al di fuori dell’UE."
+ },
+ "hypercleaner-st-speed": {
+  "de": "Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.1 (gedruckte Seite 15): Polieren max. 2400 W bei 100 % Einschaltdauer; Reinigen max. 1100 W bei 100 % Einschaltdauer. Die 2400 W bezeichnen die maximale Leistung beim Polieren.",
+  "fr": "Puissance selon le mode, d’après le manuel d’utilisation, section 7.1 (page imprimée 15) : polissage, max. 2400 W à un facteur de marche de 100 % ; nettoyage, max. 1100 W à un facteur de marche de 100 %. Les 2400 W correspondent à la puissance maximale en polissage.",
+  "it": "Potenza in base alla modalità, secondo il manuale d’uso, sezione 7.1 (pagina stampata 15): lucidatura, max. 2400 W con ciclo di lavoro del 100 %; pulizia, max. 1100 W con ciclo di lavoro del 100 %. I 2400 W indicano la potenza massima in lucidatura."
+ },
+ "hypercleaner-st-plus": {
+  "de": "Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.2 (gedruckte Seite 15): Polieren max. 4000 W bei 30 % Einschaltdauer; Reinigen max. 1800 W bei 100 % Einschaltdauer. Die 4000 W sind keine Dauerleistung im Reinigungsbetrieb.",
+  "fr": "Puissance selon le mode, d’après le manuel d’utilisation, section 7.2 (page imprimée 15) : polissage, max. 4000 W à un facteur de marche de 30 % ; nettoyage, max. 1800 W à un facteur de marche de 100 %. Les 4000 W ne correspondent pas à une puissance continue de nettoyage.",
+  "it": "Potenza in base alla modalità, secondo il manuale d’uso, sezione 7.2 (pagina stampata 15): lucidatura, max. 4000 W con ciclo di lavoro del 30 %; pulizia, max. 1800 W con ciclo di lavoro del 100 %. I 4000 W non indicano la potenza continua di pulizia."
  }
 }

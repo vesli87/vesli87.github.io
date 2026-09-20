@@ -7,12 +7,12 @@
    "Doppelpuls mit WIG-Naht-Optik",
    "MMA-Elektrode & Fugenhobeln",
    "WIG Lift Arc",
-   "Digital Synergy geregelt",
+   "Digitale Synergy-Regelung",
    "Spritzerfreier Lichtbogen",
    "4-Rollen-Antrieb",
    "Fernbedienung anschliessbar",
    "JOB-Modus mit 99 Programmen",
-   "Upgrade-fähig · 100% recycelbar"
+   "Upgradefähig · 100 % recycelbar"
   ],
   "fr": [
    "Soudage MIG/MAG & brasage MIG",
@@ -23,10 +23,10 @@
    "TIG Lift Arc",
    "Régulation Digital Synergy",
    "Arc sans projections",
-   "Entraînement 4 galets",
+   "Entraînement à 4 galets",
    "Télécommande raccordable",
    "Mode JOB, 99 programmes",
-   "Évolutif · 100% recyclable"
+   "Évolutif · 100 % recyclable"
   ],
   "it": [
    "Saldatura MIG/MAG & brasatura MIG",
@@ -37,9 +37,9 @@
    "TIG Lift Arc",
    "Regolazione Digital Synergy",
    "Arco senza spruzzi",
-   "Trazione a 4 rulli",
+   "Trainafilo a 4 rulli",
    "Telecomando collegabile",
-   "Modo JOB, 99 programmi",
+   "Modalità JOB, 99 programmi",
    "Aggiornabile · 100% riciclabile"
   ]
  },
@@ -55,16 +55,16 @@
   "fr": [
    "Réglage continu MIG/MAG",
    "Courbes synergiques",
-   "Électrode MMA possible",
-   "Entraînement 4 galets",
+   "Soudage à l’électrode MMA possible",
+   "Entraînement à 4 galets",
    "Compact & mobile",
-   "Robuste atelier & montage"
+   "Robuste pour l’atelier et le montage"
   ],
   "it": [
    "Regolazione continua MIG/MAG",
    "Curve sinergiche",
-   "Elettrodo MMA possibile",
-   "Trazione a 4 rulli",
+   "Possibilità di saldatura a elettrodo MMA",
+   "Trainafilo a 4 rulli",
    "Compatto & mobile",
    "Robusto per officina & montaggio"
   ]
@@ -72,12 +72,12 @@
  "wig": {
   "de": [
    "Hochfrequenz-Impulsschweissen",
-   "HyperSpot Punktschweissen",
-   "ActiveSpot Heftfunktion",
-   "Hyper ARC Active Regelung",
+   "HyperSpot-Punktschweissen",
+   "ActiveSpot-Heftfunktion",
+   "Hyper-ARC-Active-Regelung",
    "Mix-TIG-Schweissen",
    "WIG DC & MMA",
-   "Strom-Modulation einstellbar",
+   "Strommodulation einstellbar",
    "Digitale Anzeige",
    "Fernbedienung",
    "Synergy-Einstellungen",
@@ -107,19 +107,19 @@
    "Display digitale",
    "Telecomando",
    "Impostazioni Synergy",
-   "Modo JOB"
+   "Modalità JOB"
   ]
  },
  "wig_acdc": {
   "de": [
    "Hochfrequenz-Impulsschweissen",
-   "HyperSpot Punktschweissen",
-   "ActiveSpot Heftfunktion",
-   "Hyper ARC Active Regelung",
+   "HyperSpot-Punktschweissen",
+   "ActiveSpot-Heftfunktion",
+   "Hyper-ARC-Active-Regelung",
    "Mix-TIG-Schweissen",
    "AC/DC: Aluminium & Stahl",
    "MAHE-MIX-PULSE",
-   "Strom-Modulation einstellbar",
+   "Strommodulation einstellbar",
    "Digitale Anzeige",
    "Leistungsstarke Wasserkühlung",
    "Fernbedienung",
@@ -131,11 +131,11 @@
    "Fonction ActiveSpot",
    "Régulation Hyper ARC Active",
    "Soudage Mix-TIG",
-   "AC/DC: aluminium & acier",
+   "AC/DC : aluminium & acier",
    "MAHE-MIX-PULSE",
    "Modulation de courant réglable",
    "Affichage numérique",
-   "Refroidissement eau puissant",
+   "Refroidissement à eau puissant",
    "Télécommande",
    "Mode JOB"
   ],
@@ -151,7 +151,7 @@
    "Display digitale",
    "Raffreddamento ad acqua potente",
    "Telecomando",
-   "Modo JOB"
+   "Modalità JOB"
   ]
  },
  "mma": {
@@ -168,11 +168,11 @@
   "fr": [
    "Soudage à l’électrode MMA",
    "TIG Lift Arc (DC)",
-   "Hot-Start: amorçage sûr",
-   "Arc Force: arc stable",
-   "Anti-Stick: pas de collage",
-   "Protection surtempérature",
-   "Compatible groupe électrogène",
+   "Hot-Start : amorçage sûr",
+   "Arc Force : arc stable",
+   "Anti-Stick : pas de collage",
+   "Protection contre la surchauffe",
+   "Compatible avec un groupe électrogène",
    "Robuste & simple"
   ],
   "it": [
@@ -181,17 +181,17 @@
    "Hot-Start: innesco sicuro",
    "Arc Force: arco stabile",
    "Anti-Stick: niente incollaggio",
-   "Protezione sovratemperatura",
+   "Protezione contro il surriscaldamento",
    "Compatibile con generatore",
    "Robusto & semplice"
   ]
  },
  "plasmatig": {
   "de": [
-   "Mikroplasma- & Plasma-Schweissen",
+   "Mikroplasmaschweissen und Plasmaschweissen",
    "Feinste Schweissungen ab geringstem Strom",
    "Stabiler, gebündelter Plasmastrahl",
-   "Für Feinblech bis Industrie",
+   "Für Anwendungen vom Feinblech bis zum industriellen Einsatz",
    "HF-Zündung",
    "Pilotlichtbogen"
   ],
@@ -199,15 +199,15 @@
    "Soudage microplasma & plasma",
    "Soudures très fines dès un courant minimal",
    "Jet plasma stable et concentré",
-   "Tôle fine à industrie",
+   "De la tôle fine aux applications industrielles",
    "Amorçage HF",
    "Arc pilote"
   ],
   "it": [
    "Saldatura microplasma & plasma",
-   "Saldature finissime da corrente minima",
+   "Saldature finissime a partire da correnti minime",
    "Getto plasma stabile e concentrato",
-   "Lamiera fine a industria",
+   "Dalle lamiere sottili alle applicazioni industriali",
    "Innesco HF",
    "Arco pilota"
   ]
@@ -224,24 +224,24 @@
    "Hand- oder Automationsbetrieb"
   ],
   "fr": [
-   "Découpe plasma technologie HSC",
+   "Découpe plasma avec technologie HSC",
    "Coupe nette et rapide",
-   "Arc pilote: amorçage sans contact",
-   "Tous métaux conducteurs",
+   "Arc pilote : amorçage sans contact",
+   "Tous les métaux conducteurs",
    "Découpe de grilles possible",
    "Affichage numérique",
-   "Protection surtempérature",
-   "Mode manuel ou automation"
+   "Protection contre la surchauffe",
+   "Mode manuel ou automatisé"
   ],
   "it": [
-   "Taglio plasma tecnologia HSC",
+   "Taglio al plasma con tecnologia HSC",
    "Taglio netto e veloce",
    "Arco pilota: innesco senza contatto",
    "Tutti i metalli conduttivi",
-   "Taglio di grigliati possibile",
+   "Possibilità di tagliare grigliati",
    "Display digitale",
-   "Protezione sovratemperatura",
-   "Modo manuale o automazione"
+   "Protezione contro il surriscaldamento",
+   "Modalità manuale o automatizzata"
   ]
  },
  "cleaner": {
@@ -253,12 +253,12 @@
   ],
   "fr": [
    "Nettoyage & polissage électrolytiques",
-   "Pour soudures inox",
+   "Pour les soudures sur inox",
    "Sans décapage chimique",
    "Utilisable en mobilité"
   ],
   "it": [
-   "Pulizia & lucidatura elettrolitica",
+   "Pulizia e lucidatura elettrolitiche",
    "Per saldature inox",
    "Senza decapaggio chimico",
    "Utilizzo mobile"

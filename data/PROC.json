@@ -3,13 +3,13 @@
   "ic": "mig",
   "n": {
    "de": "MIS: Spritzerfrei",
-   "fr": "MIS: sans projections",
+   "fr": "MIS : sans projections",
    "it": "MIS: senza spruzzi"
   },
   "d": {
    "de": "Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.",
-   "fr": "Arc quasi sans projections, excellente accroche des flancs et de la racine, donc peu de reprise.",
-   "it": "Arco quasi senza spruzzi, ottima presa su fianchi e radice, quindi poca ripresa."
+   "fr": "Arc presque sans projections, avec une très bonne fusion des flancs et de la racine, ce qui limite les reprises.",
+   "it": "Arco quasi senza spruzzi, con ottima fusione dei fianchi e della radice del giunto, per ridurre le rilavorazioni."
   }
  },
  {
@@ -21,8 +21,8 @@
   },
   "d": {
    "de": "Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.",
-   "fr": "Arc pulsé automatisé, aspect TIG et cadence réglable, idéal pour l’aluminium.",
-   "it": "Arco pulsato automatizzato, estetica TIG e cadenza regolabile, ideale per l’alluminio."
+   "fr": "Arc pulsé automatisé avec un cordon d’aspect TIG et des ondulations réglables, idéal pour l’aluminium.",
+   "it": "Arco pulsato automatizzato, cordone dall’aspetto TIG e ondulazione regolabile, ideale per l’alluminio."
   }
  },
  {
@@ -33,9 +33,9 @@
    "it": "HyperPuls"
   },
   "d": {
-   "de": "Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.",
-   "fr": "Arc pulsé dynamique pour plus de productivité : plus rapide, moins de déformation, idéal multipasse.",
-   "it": "Arco pulsato dinamico per più produttività: più veloce, meno deformazione, ideale multipasso."
+   "de": "Dynamischer Impulslichtbogen für höhere Produktivität: schnelleres Schweissen und weniger Verzug, ideal für mehrlagige Schweissnähte.",
+   "fr": "Arc pulsé dynamique pour une productivité accrue : soudage plus rapide, moins de déformation, idéal pour le soudage multipasse.",
+   "it": "Arco pulsato dinamico per una maggiore produttività: saldatura più veloce, minori deformazioni, ideale per la saldatura multipassata."
   }
  },
  {
@@ -46,8 +46,8 @@
    "it": "HyperForce"
   },
   "d": {
-   "de": "Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.",
-   "fr": "Arc puissant et pénétrant, forte pénétration et contrôle parfait du bain.",
+   "de": "Druckvoller Lichtbogen mit tiefem Einbrand und präziser Kontrolle des Schweissbades.",
+   "fr": "Arc puissant et pénétrant, avec une pénétration profonde et une parfaite maîtrise du bain de fusion.",
    "it": "Arco potente e penetrante, forte penetrazione e controllo perfetto del bagno."
   }
  },
@@ -60,8 +60,8 @@
   },
   "d": {
    "de": "Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.",
-   "fr": "Apport de chaleur minimal, idéal pour ponter les jeux et souder la tôle fine sans déformation.",
-   "it": "Minimo apporto termico, ideale per ponti sui giochi e lamiera fine senza deformazioni."
+   "fr": "Apport de chaleur minimal, idéal pour combler les jeux et souder les tôles fines avec peu de déformation.",
+   "it": "Apporto termico minimo, ideale per compensare gli spazi tra i lembi e saldare lamiere sottili con deformazioni ridotte."
   }
  },
  {
@@ -73,8 +73,8 @@
   },
   "d": {
    "de": "Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite, auch bei grösseren Spalten.",
-   "fr": "Soudage de racine sûr et contrôlé, envers propre, même sur jeux importants.",
-   "it": "Saldatura di radice sicura e controllata, rovescio pulito, anche con giochi ampi."
+   "fr": "Soudage de la racine sûr et contrôlé, avec un envers du cordon propre, même en présence de jeux importants.",
+   "it": "Saldatura della radice sicura e controllata, con rovescio pulito, anche in presenza di ampi spazi tra i lembi."
   }
  },
  {
@@ -86,7 +86,7 @@
   },
   "d": {
    "de": "Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.",
-   "fr": "Soudage en montée (vertical up) optimisé, contrôle stable du bain.",
+   "fr": "Soudage vertical montant optimisé, avec une maîtrise stable du bain de fusion.",
    "it": "Saldatura in verticale ascendente ottimizzata, controllo stabile del bagno."
   }
  }

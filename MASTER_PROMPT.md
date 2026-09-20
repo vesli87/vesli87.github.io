@@ -581,3 +581,32 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
   Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
   unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.
+
+## 19. Sprachpflege und stabile Adressen (21.09.2026)
+
+- Vollständige Sprachprüfung der gepflegten DE-, FR- und IT-Texte: Produktbeschreibungen,
+  Merkmale, Auswahlhilfen, Dienstleistungen, FAQ, Formulare und Rechtstexte.
+  Sprachkorrekturen sind keine neue rechtliche Prüfung oder Zusage technischer Eigenschaften.
+- Die deutsche Einleitung beginnt mit «VES-TECH Swiss ist Ihr Schweizer Händler
+  für MAHE.»; kein Doppelpunkt unmittelbar nach MAHE. Alle vier Bereiche
+  Schweissen, Schneiden, Reinigen und Automation bleiben sichtbar.
+- `build/mahe_copy_edits.json` dokumentiert einzeln geprüfte, vollständige
+  Herstellerformulierungen vor und nach der sprachlichen Korrektur. Der Abgleich
+  akzeptiert ausschliesslich diese konkreten Zuordnungen; technische Zahlen,
+  Modelle und ungeprüfte neue Herstellerangaben werden nicht pauschal normalisiert.
+- Die 66 veröffentlichten Sprachadressen der 22 Unterkategorien stehen in
+  `build/subcategory_slugs.json`. Sichtbare Bezeichnungen in `SUBTR` dürfen
+  verbessert werden, ohne Links, Canonicals oder Sitemap-Adressen zu ändern.
+  Neue Unterkategorien nach Veröffentlichung ebenfalls in der Karte festhalten.
+- `core.SEARCH_POPULAR` ist die gemeinsame Quelle für Suchvorschläge im HTML
+  und im Suchindex. Fachbegriffe und Regionen werden pro Sprache ausgegeben;
+  Strassennamen, Modellbezeichnungen und Artikelnummern bleiben erhalten.
+- Der Dokumentenimport übersetzt das allgemeine Wort «Signiergerät» in
+  HCS-Titeln, damit ein erneuter Import keine deutschen Textreste zurückbringt.
+- Die ausdrücklich gewählten MPT-Heroüberschriften aus §14.3a bleiben erhalten.
+- HyperCleaner ST Speed: 2400 W beim Polieren (100 % Einschaltdauer), ST Plus:
+  4000 W beim Polieren (30 %). Grundlage ist die MAHE-Betriebsanleitung
+  `HyperCleaner-STSpeed_STPlus_25_DE_EN_ES.pdf`, §7.1/7.2, gedruckte Seite 15.
+  `SPECNOTE` erläutert die getrennten Reinigungsleistungen. Die widersprechende
+  3600-W-Webodräžka des Plus wird als präzise `BEWUSST`-Ausnahme dokumentiert;
+  diese sachliche Korrektur ist kein Teil der sprachlichen Normalisierung.

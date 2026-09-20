@@ -5,7 +5,7 @@
    "it": "Saldatrici"
   },
   "d": {
-   "fr": "Sources haute performance MAHE avec technologie Upgrade pour MIG/MAG, TIG, MMA et Plasma-TIG.",
+   "fr": "Sources de courant haute performance MAHE avec technologie Upgrade pour MIG/MAG, TIG, MMA et Plasma-TIG.",
    "it": "Generatori ad alte prestazioni MAHE con tecnologia Upgrade per MIG/MAG, TIG, MMA e Plasma-TIG."
   }
  },
@@ -15,8 +15,8 @@
    "it": "Taglio al plasma"
   },
   "d": {
-   "fr": "Inverters de découpe plasma Theta à technologie HSC, de 15 à 80 mm de capacité de coupe, en version manuelle, en version automation et en table de découpe CNC MPT.",
-   "it": "Inverter di taglio al plasma Theta con tecnologia HSC, da 15 a 80 mm di capacità di taglio, in versione manuale, per automazione e come tavolo di taglio CNC MPT."
+   "fr": "Découpeurs plasma à onduleur Theta avec technologie HSC, offrant une capacité de coupe de 15 à 80 mm, en version manuelle, en version pour l’automatisation ou intégrés à une table de découpe CNC MPT.",
+   "it": "Inverter Theta per il taglio al plasma con tecnologia HSC e capacità di taglio da 15 a 80 mm, per uso manuale o automatizzato e in combinazione con i tavoli di taglio CNC MPT."
   }
  },
  "reinigung": {
@@ -26,7 +26,7 @@
   },
   "d": {
    "fr": "Nettoyage et polissage électrolytiques des soudures, marquage du métal et dosage automatique.",
-   "it": "Pulizia e lucidatura elettrolitica delle saldature, marcatura del metallo e dosaggio automatico."
+   "it": "Pulizia e lucidatura elettrolitiche delle saldature, marcatura del metallo e dosaggio automatico."
   }
  },
  "zubehoer": {
@@ -36,7 +36,7 @@
   },
   "d": {
    "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier, adaptés à chaque série MAHE.",
-   "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina, per ogni serie MAHE."
+   "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina per ogni serie MAHE."
   }
  },
  "occasion": {
@@ -45,8 +45,8 @@
    "it": "Occasioni"
   },
   "d": {
-   "fr": "Machines d’occasion de notre propre atelier : entièrement révisées, remises en état et avec refroidissement par eau remplacé, accompagnées de la documentation d’origine du fabricant.",
-   "it": "Macchine usate dalla nostra officina: completamente revisionate, ripristinate e con raffreddamento ad acqua sostituito, corredate della documentazione originale del costruttore."
+   "fr": "Machines d’occasion de notre propre atelier : entièrement révisées et remises en état, avec système de refroidissement par eau remplacé et documentation d’origine du fabricant.",
+   "it": "Macchine usate provenienti dalla nostra officina: completamente revisionate e ripristinate, con il sistema di raffreddamento ad acqua sostituito e corredate della documentazione originale del costruttore."
   }
  }
 }

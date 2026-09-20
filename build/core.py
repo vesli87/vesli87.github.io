@@ -208,9 +208,19 @@ def istMahe(p):
 # es liest sich als Abkuerzung fuer Franken, nicht fuer Freitag.
 LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera"}
 ZEITEN = {
-    "de": "Mo-Do 07:30-17:00 · Fr 07:30-11:30",
-    "fr": "lu-je 07:30-17:00 · ve 07:30-11:30",
-    "it": "lu-gio 07:30-17:00 · ven 07:30-11:30",
+    "de": "Mo–Do 07:30–17:00 · Fr 07:30–11:30",
+    "fr": "lun.–jeu. 07h30–17h00 · ven. 07h30–11h30",
+    "it": "lun.–gio. 07:30–17:00 · ven. 07:30–11:30",
+}
+REGION_NAMES = {
+    "SG": {"de": "St. Gallen", "fr": "Saint-Gall", "it": "San Gallo"},
+    "AR": {"de": "Appenzell Ausserrhoden", "fr": "Appenzell Rhodes-Extérieures",
+           "it": "Appenzello Esterno"},
+}
+SEARCH_POPULAR = {
+    "de": ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma"],
+    "fr": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Chariot", "Plasma"],
+    "it": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Carrello", "Plasma"],
 }
 
 
@@ -220,17 +230,17 @@ ZEITEN = {
 KANN = {
     "de": ["MIG/MAG-Schweissen", "WIG/TIG-Schweissen", "MMA-Elektrodenschweissen",
            "Plasmaschneiden", "Elektrolytische Schweissnahtreinigung",
-           "Schweissautomation", "EN 1090", "MAHE Schweissgeräte",
+           "Schweissautomation", "EN 1090", "MAHE-Schweissgeräte",
            "Mikroplasma-Schweissen", "Gebrauchte Schweissanlagen (Occasion)",
            "Oerlikon PlasmaFix"],
     "fr": ["Soudage MIG/MAG", "Soudage TIG", "Soudage à l’électrode enrobée",
            "Découpe plasma", "Nettoyage électrolytique des cordons",
-           "Automation de soudage", "EN 1090", "Postes de soudage MAHE",
+           "Automatisation du soudage", "EN 1090", "Postes de soudage MAHE",
            "Soudage microplasma", "Postes de soudage d’occasion",
            "Oerlikon PlasmaFix"],
     "it": ["Saldatura MIG/MAG", "Saldatura TIG", "Saldatura a elettrodo",
            "Taglio al plasma", "Pulizia elettrolitica dei cordoni",
-           "Automazione di saldatura", "EN 1090", "Saldatrici MAHE",
+           "Automazione della saldatura", "EN 1090", "Saldatrici MAHE",
            "Saldatura microplasma", "Saldatrici usate (occasioni)",
            "Oerlikon PlasmaFix"],
 }
@@ -246,6 +256,10 @@ def land(lang):
 
 def zeiten(lang):
     return ZEITEN.get(lang, ZEITEN["de"])
+
+
+def regionName(lang, code):
+    return REGION_NAMES.get(code, {}).get(lang, code)
 
 
 # Panelnamen: das Modell bleibt, uebersetzt wird nur das Gattungswort.
@@ -508,16 +522,14 @@ def pName(lang, p):
 
 
 def trK(lang, k):
-    if lang != "de" and k in SPECK:
-        return SPECK[k][lang]
-    return k
+    return SPECK.get(k, {}).get(lang, k)
 
 
 def trV(lang, v):
+    if v in SPECV and lang in SPECV[v]:
+        return SPECV[v][lang]
     if lang == "de":
         return v
-    if v in SPECV:
-        return SPECV[v][lang]
     if v.startswith("bis "):
         return ("jusqu’à " if lang == "fr" else "fino a ") + v[4:]
     return v
@@ -574,7 +586,7 @@ def specTables(lang, p):
         rows = []
         for r in t["rows"]:
             k = _specK(r.get("model", ""))
-            lab = SPECROW.get(k, {}).get(lang, k) if lang != DEFAULT_LANG else k
+            lab = SPECROW.get(k, {}).get(lang, k)
             rows.append([lab] + [_specV(r.get(c, "")) for c in keys])
         note = SPECNOTE.get(key) or {}
         out.append({"title": t.get("title", ""),
@@ -971,8 +983,13 @@ CAT_SLUG = {
 }
 
 # Sub-Slug pro Sprache aus dem übersetzten Namen
+# URLs are identifiers, not editable display labels. Preserve the published
+# routes when a translation gains a preposition or punctuation correction.
+SUBCATEGORY_SLUGS = json.loads((BUILD / "subcategory_slugs.json").read_text("utf-8"))
+
+
 def sub_slug(lang, sub):
-    return slugify(subT(lang, sub))
+    return SUBCATEGORY_SLUGS.get(sub, {}).get(lang) or slugify(subT(lang, sub))
 
 
 def _j(*parts):

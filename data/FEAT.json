@@ -78,7 +78,7 @@
   "h": 240,
   "de": "Doppelpuls",
   "fr": "Double pulsation",
-  "it": "Doppio pulsato"
+  "it": "Doppio impulso"
  },
  "galv": {
   "img": "/assets/img/sym/galv.webp",
@@ -134,7 +134,7 @@
   "h": 240,
   "de": "HyperPuls",
   "fr": "Arc HyperPulse",
-  "it": "Arco HyperPulse"
+  "it": "Arco HyperPuls"
  },
  "hyperspot": {
   "img": "/assets/img/sym/hyperspot.webp",
@@ -149,7 +149,7 @@
   "w": 277,
   "h": 240,
   "de": "Steignahtschweissen",
-  "fr": "Soudage en montante",
+  "fr": "Soudage en position montante",
   "it": "Saldatura in verticale"
  },
  "lfpuls": {

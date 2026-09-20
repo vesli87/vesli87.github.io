@@ -8,11 +8,11 @@
     "Spritzerfreier Lichtbogen",
     "Synergiegesteuert",
     "Digitale Anzeigen",
-    "Intervall Schweissen",
+    "Intervallschweissen",
     "4-Rollenantrieb",
-    "3 Meter Zuleitungskabel",
-    "D300 Spule",
-    "Elektroden Schweissen",
+    "Zuleitungskabel mit 3 Metern Länge",
+    "D300-Spule",
+    "Elektrodenschweissen",
     "WIG Lift Arc"
    ],
    "fr": [
@@ -31,10 +31,10 @@
     "Comando sinergico",
     "Display digitali",
     "Saldatura a intervalli",
-    "Trazione a 4 rulli",
+    "Trainafilo a 4 rulli",
     "Cavo di alimentazione da 3 metri",
     "Bobina D300",
-    "Saldatura ad elettrodo",
+    "Saldatura a elettrodo",
     "TIG Lift Arc"
    ]
   },
@@ -46,8 +46,8 @@
     "Synergiegesteuert",
     "Digitale Anzeigen",
     "4-Rollenantrieb",
-    "3 Meter Zuleitungskabel",
-    "D300 Spule"
+    "Zuleitungskabel mit 3 Metern Länge",
+    "D300-Spule"
    ],
    "fr": [
     "Arc sans projections",
@@ -61,7 +61,7 @@
     "Arco senza spruzzi",
     "Comando sinergico",
     "Display digitali",
-    "Trazione a 4 rulli",
+    "Trainafilo a 4 rulli",
     "Cavo di alimentazione da 3 metri",
     "Bobina D300"
    ]
@@ -71,11 +71,11 @@
    "img": "2023/03/analog.png",
    "de": [
     "Spritzerfreier Lichtbogen",
-    "Intervall Schweissen",
+    "Intervallschweissen",
     "4-Rollenantrieb",
-    "3 Meter Zuleitungskabel",
-    "D300 Spule",
-    "Elektroden Schweissen",
+    "Zuleitungskabel mit 3 Metern Länge",
+    "D300-Spule",
+    "Elektrodenschweissen",
     "WIG Lift Arc"
    ],
    "fr": [
@@ -90,10 +90,10 @@
    "it": [
     "Arco senza spruzzi",
     "Saldatura a intervalli",
-    "Trazione a 4 rulli",
+    "Trainafilo a 4 rulli",
     "Cavo di alimentazione da 3 metri",
     "Bobina D300",
-    "Saldatura ad elettrodo",
+    "Saldatura a elettrodo",
     "TIG Lift Arc"
    ]
   }

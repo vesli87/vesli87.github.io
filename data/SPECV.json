@@ -40,7 +40,7 @@
   "it": "Supporto per spazzola"
  },
  "CNC / Automation": {
-  "fr": "CNC / automation",
+  "fr": "CNC / automatisation",
   "it": "CNC / automazione"
  },
  "Chromstahl": {
@@ -49,11 +49,12 @@
  },
  "Controller-Programmierung": {
   "fr": "programmation de contrôleur",
-  "it": "programmazione controller"
+  "it": "programmazione del controller"
  },
  "Digital oder Analog": {
   "fr": "numérique ou analogique",
-  "it": "digitale o analogico"
+  "it": "digitale o analogico",
+  "de": "digital oder analog"
  },
  "Edelstahl": {
   "fr": "acier inox",
@@ -61,15 +62,18 @@
  },
  "Elektrolyt-Reinigung": {
   "fr": "nettoyage électrolytique",
-  "it": "pulizia elettrolitica"
+  "it": "pulizia elettrolitica",
+  "de": "Elektrolytische Reinigung"
  },
  "Elektrolyt-Signieren": {
   "fr": "marquage électrolytique",
-  "it": "marcatura elettrolitica"
+  "it": "marcatura elettrolitica",
+  "de": "Elektrolytisches Signieren"
  },
  "Feinblech bis Industrie": {
-  "fr": "tôle fine à industrie",
-  "it": "lamiera fine a industria"
+  "fr": "de la tôle fine aux applications industrielles",
+  "it": "dalle lamiere sottili alle applicazioni industriali",
+  "de": "Feinblech und Industrieanwendungen"
  },
  "Fussfernregler": {
   "fr": "commande à pédale",
@@ -92,12 +96,13 @@
   "it": "programmi JOB"
  },
  "Kalibrieren / Validieren": {
-  "fr": "calibrage / validation",
+  "fr": "étalonnage / validation",
   "it": "calibrazione / validazione"
  },
  "Kompakt/fahrbar": {
   "fr": "compact / mobile",
-  "it": "compatto / mobile"
+  "it": "compatto / mobile",
+  "de": "kompakt / fahrbar"
  },
  "MAHE WIG": {
   "fr": "MAHE TIG",
@@ -133,7 +138,8 @@
  },
  "MMS 3000 Serie": {
   "fr": "série MMS 3000",
-  "it": "serie MMS 3000"
+  "it": "serie MMS 3000",
+  "de": "MMS-3000-Serie"
  },
  "Montage / Werkstatt": {
   "fr": "montage / atelier",
@@ -156,8 +162,8 @@
   "it": "taglio al plasma"
  },
  "Plasmaschneiden · Automation": {
-  "fr": "découpe plasma · automation",
-  "it": "taglio plasma · automazione"
+  "fr": "découpe plasma · automatisation",
+  "it": "taglio al plasma · automazione"
  },
  "Reinigungsflüssigkeit": {
   "fr": "liquide de nettoyage",
@@ -168,7 +174,7 @@
   "it": "set con valigetta"
  },
  "Set mit Stromquelle": {
-  "fr": "set avec source de courant",
+  "fr": "ensemble avec source de courant",
   "it": "set con generatore"
  },
  "Stromquelle mit Vorschubkoffer": {
@@ -185,10 +191,10 @@
  },
  "Vollmetall": {
   "fr": "tout métal",
-  "it": "tutto metallo"
+  "it": "interamente in metallo"
  },
  "Volt & Ampere (gross)": {
-  "fr": "Volt & Ampère (grand)",
+  "fr": "tension et courant (grands afficheurs)",
   "it": "Volt & Ampere (grande)"
  },
  "WIG + Reinigung": {
@@ -216,8 +222,8 @@
   "it": "refrigeratore ad acqua"
  },
  "Wassermangel-Abschaltung": {
-  "fr": "coupure manque d’eau",
-  "it": "spegnimento mancanza acqua"
+  "fr": "arrêt en cas de manque d’eau",
+  "it": "spegnimento in caso di mancanza d’acqua"
  },
  "als Set": {
   "fr": "en kit",
@@ -260,8 +266,9 @@
   "it": "leggero / portatile"
  },
  "luft-/wassergekühlt": {
-  "fr": "refroidi air/eau",
-  "it": "raffreddato aria/acqua"
+  "fr": "refroidi par air/eau",
+  "it": "raffreddato ad aria/acqua",
+  "de": "luftgekühlt oder wassergekühlt"
  },
  "mobil": {
   "fr": "mobile",
@@ -352,15 +359,32 @@
   "it": "Tasti e codici, display LCD"
  },
  "Mikroplasma · WIG, geglättet und gepulst": {
-  "fr": "Microplasma · TIG, lissé et pulsé",
+  "fr": "Microplasma · TIG, en courant lisse et pulsé",
   "it": "Microplasma · TIG, livellato e pulsato"
  },
  "Mikroplasma, geglättet und gepulst": {
-  "fr": "Microplasma, lissé et pulsé",
+  "fr": "Microplasma, en courant lisse et pulsé",
   "it": "Microplasma, livellato e pulsato"
  },
  "3~ 208 – 460 V · 50/60 Hz": {
   "fr": "3~ 208 – 460 V · 50/60 Hz",
   "it": "3~ 208 – 460 V · 50/60 Hz"
+ },
+ "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG": {
+  "fr": "MIG/MAG · HyperPuls · double pulsation · MMA · TIG",
+  "it": "MIG/MAG · HyperPuls · doppio impulso · MMA · TIG"
+ },
+ "Synergic / JOB (99)": {
+  "de": "Synergie / JOB (99)",
+  "fr": "Synergique / JOB (99)",
+  "it": "Sinergico / JOB (99)"
+ },
+ "Diving / Offshore": {
+  "fr": "Plongée / offshore",
+  "it": "Immersioni / offshore"
+ },
+ "Up/Down · Start/Stopp": {
+  "fr": "Up/Down · Start/Stop",
+  "it": "Up/Down · Start/Stop"
  }
 }

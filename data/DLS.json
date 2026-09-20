@@ -3,7 +3,7 @@
   "k": "PDF",
   "t": {
    "de": "Produktkatalog 2023",
-   "fr": "Catalogue produits 2023",
+   "fr": "Catalogue des produits 2023",
    "it": "Catalogo prodotti 2023"
   },
   "s": {
@@ -16,7 +16,7 @@
  {
   "k": "PDF",
   "t": {
-   "de": "EN 1090 Konformitätszertifikat",
+   "de": "Konformitätszertifikat nach EN 1090",
    "fr": "Certificat de conformité EN 1090",
    "it": "Certificato di conformità EN 1090"
   },
@@ -31,7 +31,7 @@
   "k": "R1",
   "t": {
    "de": "Sicherheitsdatenblatt Reinigungselektrolyt R1",
-   "fr": "Fiche de sécurité électrolyte R1",
+   "fr": "Fiche de données de sécurité de l’électrolyte R1",
    "it": "Scheda di sicurezza elettrolita R1"
   },
   "s": {
@@ -45,7 +45,7 @@
   "k": "RP1",
   "t": {
    "de": "Sicherheitsdatenblatt Reinigungselektrolyt RP1",
-   "fr": "Fiche de sécurité électrolyte RP1",
+   "fr": "Fiche de données de sécurité de l’électrolyte RP1",
    "it": "Scheda di sicurezza elettrolita RP1"
   },
   "s": {
@@ -59,7 +59,7 @@
   "k": "P1",
   "t": {
    "de": "Sicherheitsdatenblatt Polierelektrolyt P1",
-   "fr": "Fiche de sécurité électrolyte P1",
+   "fr": "Fiche de données de sécurité de l’électrolyte P1",
    "it": "Scheda di sicurezza elettrolita P1"
   },
   "s": {
@@ -73,7 +73,7 @@
   "k": "M1",
   "t": {
    "de": "Sicherheitsdatenblatt Signierelektrolyt M1",
-   "fr": "Fiche de sécurité électrolyte M1",
+   "fr": "Fiche de données de sécurité de l’électrolyte M1",
    "it": "Scheda di sicurezza elettrolita M1"
   },
   "s": {
@@ -87,7 +87,7 @@
   "k": "N1",
   "t": {
    "de": "Sicherheitsdatenblatt Neutralisierer N1",
-   "fr": "Fiche de sécurité neutralisant N1",
+   "fr": "Fiche de données de sécurité du neutralisant N1",
    "it": "Scheda di sicurezza neutralizzante N1"
   },
   "s": {

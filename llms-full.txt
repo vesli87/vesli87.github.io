@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-09-20. Quelle: https://www.ves-tech.ch
+Stand: 2026-09-21. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss in Herisau (AR, Schweiz) ist der Schweizer Partner für das MAHE-Geräteprogramm. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, telefonisch erreichbar Mo-Do 07:30-17:00 · Fr 07:30-11:30. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -18,9 +18,9 @@ Eine sinnvolle Auswahl beginnt beim Werkstück: Nennen Sie VES-TECH Swiss den We
 ### MAHE HyperMIG X
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: HYPERMIG-X · Preis: auf Anfrage (CHF)
-Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und MIS spritzerfreiem Schweissen.
-Besonderheiten: MIG/MAG-Schweissen & MIG-Löten; HyperForce, HyperRoot, HyperCold; HyperPuls & HyperSpeedPuls; Doppelpuls mit WIG-Naht-Optik; MMA-Elektrode & Fugenhobeln; WIG Lift Arc; Digital Synergy geregelt; Spritzerfreier Lichtbogen; 4-Rollen-Antrieb; Fernbedienung anschliessbar; JOB-Modus mit 99 Programmen; Upgrade-fähig · 100% recycelbar.
-Ausstattung: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Kühlung: luft-/wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergic / JOB (99).
+Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und spritzerfreiem MIS-Schweissen.
+Besonderheiten: MIG/MAG-Schweissen & MIG-Löten; HyperForce, HyperRoot, HyperCold; HyperPuls & HyperSpeedPuls; Doppelpuls mit WIG-Naht-Optik; MMA-Elektrode & Fugenhobeln; WIG Lift Arc; Digitale Synergy-Regelung; Spritzerfreier Lichtbogen; 4-Rollen-Antrieb; Fernbedienung anschliessbar; JOB-Modus mit 99 Programmen; Upgradefähig · 100 % recycelbar.
+Ausstattung: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Kühlung: luftgekühlt oder wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergie / JOB (99).
 
 Technische Daten – HyperMIG CWK:
 
@@ -32,19 +32,19 @@ Technische Daten – HyperMIG CWK:
 | Leerlaufspannung | 105V | 105V | 105V | 105V | 105V | 105V |
 | Effektiver Eingangsstrom | 19A | 19A | 19A | 32A | 32A | 32A |
 | Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A | 10 - 450A | 10 - 500A | 10 - 600A |
-| Einschaltdauer bei max. Strom @40C | – | – | 45% / 400A | – | 70% / 500A | 40% / 600A |
-| Strom bei 60% ED @40C | – | 350A | 360A | – | – | 530A |
-| Strom bei 100% ED @40C | 300A | 300A | 300A | 450A | 450A | 450A |
+| Einschaltdauer bei max. Strom (40 °C) | – | – | 45% / 400A | – | 70% / 500A | 40% / 600A |
+| Strom bei 60 % ED (40 °C) | – | 350A | 360A | – | – | 530A |
+| Strom bei 100 % ED (40 °C) | 300A | 300A | 300A | 450A | 450A | 450A |
 | Masse CWK/CGK | 930x512x864mm | 930x512x864mm | 930x512x864mm | – | – | – |
 | Masse WWK/WGK | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm |
 | Gewicht CGK | 65kg | 65kg | 65kg | – | – | – |
 | Gewicht CWK | 70kg | 70kg | 70kg | – | – | – |
 | Gewicht WGK | 80kg | 80kg | 80kg | – | – | – |
 | Gewicht WWK | 85kg | 85kg | 85kg | 92kg | 92kg | 92kg |
-| Schutzklasse | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S | S | S |
-*: nur als WWK Variante erhältlich.
+*: Nur als WWK-Variante erhältlich.
 
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.
@@ -52,9 +52,9 @@ Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenka
 ### MAHE EcoMIG Digital / Analog
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: ECOMIG · Preis: auf Anfrage (CHF)
-Ultrakompakte, stufenlose MIG/MAG-Schweissinverter für einfache Bedienung.
+Ultrakompakte MIG/MAG-Schweissinverter mit stufenloser Regelung und einfacher Bedienung.
 Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
-Ausstattung: Verfahren: MIG/MAG; Antrieb: 4-Rollen; Ausführung: Kompakt/fahrbar; Bedienung: Digital oder Analog.
+Ausstattung: Verfahren: MIG/MAG; Antrieb: 4-Rollen; Ausführung: kompakt / fahrbar; Bedienung: digital oder analog.
 
 Technische Daten – EcoMIG Digital:
 
@@ -66,12 +66,12 @@ Technische Daten – EcoMIG Digital:
 | Leerlaufspannung | 55V | 76V |
 | Effektiver Eingangsstrom | 15A | 12,5A |
 | Schweissstrombereich | 10 - 200A | 10-300A |
-| Einschaltdauer bei max. Strom @40C | 20%/200A | 30% - 300A |
-| Strom bei 60% ED @40C | 140A | 240A |
-| Strom bei 100% ED @40C | 120A | 180A |
+| Einschaltdauer bei max. Strom (40 °C) | 20%/200A | 30% - 300A |
+| Strom bei 60 % ED (40 °C) | 140A | 240A |
+| Strom bei 100 % ED (40 °C) | 120A | 180A |
 | Masse (HxBxL) | 635x400x880mm | 635x400x880mm |
 | Gewicht | 32kg | 34kg |
-| Schutzklasse | IP23 | IP23 |
+| Schutzart | IP23 | IP23 |
 | Konformitätszeichen | CE | CE |
 | Sicherungsklasse | S | S |
 
@@ -82,7 +82,7 @@ Passendes Zubehör: MF155, MF250, Elektrodenkabel 25–90 mm², Massekabel 25–
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/mms/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: MMS · Preis: auf Anfrage (CHF)
 Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt.
-Besonderheiten: Spritzerfreier Lichtbogen; Mobil und leicht, nur 11,5 kg; Rollenantrieb; 5 Meter Zuleitungskabel; Umpolung System; D200 Spule; WIG Lift Arc; Impuls Lichtbogen; HyperCold / HyperRoot Lichtbogen; Mobil und leicht, nur 21 kg; 4-Rollenantrieb; D300 Spule.
+Besonderheiten: Spritzerfreier Lichtbogen; Mobil und leicht, nur 11,5 kg; Rollenantrieb; Zuleitungskabel mit 5 Metern Länge; Umpolsystem; D200-Spule; WIG Lift Arc; Impulslichtbogen; Lichtbogen mit HyperCold / HyperRoot; Mobil und leicht, nur 21 kg; 4-Rollenantrieb; D300-Spule.
 Ausstattung: Verfahren: MIG/MAG; Einsatz: Montage / Werkstatt; Bauart: tragbar; Serie: MMS 2000 · MMS 3000.
 
 Technische Daten – MMS:
@@ -95,12 +95,12 @@ Technische Daten – MMS:
 | Leerlaufspannung | 55V | 76V | 76V | 76V |
 | Effektiver Eingangsstrom | 16A | 16A | 11A | 11A |
 | Schweissstrombereich | 10-200A | 10-200A | 10-240A | 10-300A |
-| Einschaltdauer bei max. Strom @40C | 20% / 200A | 25% / 200A | – | 30% / 300A |
-| Strom bei 60% ED @40C | 130A | 140A | 240A | 240A |
-| Strom bei 100% ED @40C | 100A | 120A | 180A | 180A |
+| Einschaltdauer bei max. Strom (40 °C) | 20% / 200A | 25% / 200A | – | 30% / 300A |
+| Strom bei 60 % ED (40 °C) | 130A | 140A | 240A | 240A |
+| Strom bei 100 % ED (40 °C) | 100A | 120A | 180A | 180A |
 | Masse | 276x200x407mm | 385x295x615mm | 385x295x615mm | 385x295x615mm |
 | Gewicht | 11kg | 21kg | 21kg | 21kg |
-| Schutzklasse | IP23 | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S |
 
@@ -110,8 +110,8 @@ Passendes Zubehör: STT 30, MPF 02, MF405W, MF240W, MF250, MF155, Elektrodenkabe
 ### MAHE Omega AX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: OMEGA-AX · Preis: auf Anfrage (CHF)
-Mobile AC/DC WIG-Schweissmaschine für Aluminium und Stahl.
-Besonderheiten: Resonanz Inverter gesteuert durch einen DSP-Controller; Bis zu 20kHz Impulsschweissen; ActiveBoost Funktion; Hyper ARC Active Regelung; HyperSpot Schweissen; Mix TIG Schweissen; Kalotten Formungsfunktion; Strom Modulation einstellbar; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
+Mobile AC/DC-WIG-Schweissmaschine für Aluminium und Stahl.
+Besonderheiten: Resonanzinverter mit DSP-Steuerung; Impulsschweissen mit bis zu 20 kHz; ActiveBoost-Funktion; Hyper-ARC-Active-Regelung; HyperSpot-Schweissen; Mix-TIG-Schweissen; Funktion zur Kalottenformung; Strommodulation einstellbar; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy-Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
 Ausstattung: Verfahren: WIG AC/DC; Zündung: HF; Bauart: mobil.
 
 Technische Daten – Omega AX:
@@ -124,12 +124,12 @@ Technische Daten – Omega AX:
 | Leerlaufspannung | 76V | 76V |
 | Effektiver Eingangsstrom | 16A | 16A |
 | Schweissstrombereich | 4-180A | 4-220A |
-| Einschaltdauer bei max. Strom @40C | 30% / 180A | 20% / 220A |
-| Strom bei 60% ED @40C | 160A | 160A |
-| Strom bei 100% ED @40C | 130A | 130A |
+| Einschaltdauer bei max. Strom (40 °C) | 30% / 180A | 20% / 220A |
+| Strom bei 60 % ED (40 °C) | 160A | 160A |
+| Strom bei 100 % ED (40 °C) | 130A | 130A |
 | Masse | 460x215x285mm | 460x215x285mm |
 | Gewicht | 13,5kg | 13,5kg |
-| Schutzklasse | IP23 | IP23 |
+| Schutzart | IP23 | IP23 |
 | Konformitätszeichen | CE | CE |
 | Sicherungsklasse | S | S |
 
@@ -139,8 +139,8 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5, RC 100, MT260, Elektrodenkabel 
 ### MAHE Beta DX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DX · Preis: auf Anfrage (CHF)
-Mobile WIG DC Schweissmaschine für Stahl und Chromstahl.
-Besonderheiten: Resonanz Inverter gesteuert durch einen DSP-Controller; Bis zu 20kHz Impulsschweissen; ActiveBoost Funktion; Hyper ARC Active Regelung; HyperSpot Schweissen; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
+Mobile WIG-DC-Schweissmaschine für Stahl und Chromstahl.
+Besonderheiten: Resonanzinverter mit DSP-Steuerung; Impulsschweissen mit bis zu 20 kHz; ActiveBoost-Funktion; Hyper-ARC-Active-Regelung; HyperSpot-Schweissen; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy-Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
 Ausstattung: Verfahren: WIG DC; Bauart: mobil.
 
 Technische Daten – Beta DX:
@@ -153,12 +153,12 @@ Technische Daten – Beta DX:
 | Leerlaufspannung | 89V | 89V |
 | Effektiver Eingangsstrom | 16A | 16A |
 | Schweissstrombereich | 4-180A | 4-220A |
-| Einschaltdauer bei max. Strom @40C | 30% / 180A | 20% / 220A |
-| Strom bei 60% ED @40C | 160A | 160A |
-| Strom bei 100% ED @40C | 130A | 130A |
+| Einschaltdauer bei max. Strom (40 °C) | 30% / 180A | 20% / 220A |
+| Strom bei 60 % ED (40 °C) | 160A | 160A |
+| Strom bei 100 % ED (40 °C) | 130A | 130A |
 | Masse | 460x215x285mm | 460x215x285mm |
 | Gewicht | 12,5kg | 12,5kg |
-| Schutzklasse | IP23 | IP23 |
+| Schutzart | IP23 | IP23 |
 | Konformitätszeichen | CE | CE |
 | Sicherungsklasse | S | S |
 
@@ -168,8 +168,8 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5, RC 100, MT260, MT170, Elektrode
 ### MAHE HyperTIG AX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-AX · Preis: auf Anfrage (CHF)
-Leistungsstarke WIG AC/DC Stromquelle für den industriellen Einsatz.
-Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
+Leistungsstarke WIG-AC/DC-Stromquelle für den industriellen Einsatz.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot-Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper-ARC-Active-Regelung; Mix-TIG-Schweissen; Strommodulation einstellbar; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
 Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
 
 Technische Daten – HyperTIG AX:
@@ -182,12 +182,12 @@ Technische Daten – HyperTIG AX:
 | Leerlaufspannung | 42V | 42V | 42V |
 | Effektiver Eingangsstrom | 14A | 19A | 20A |
 | Schweissstrombereich | 4-250A | 4-300A | 4-350A |
-| Einschaltdauer bei max. Strom @40C | 80% | – | 40% / 350A |
-| Strom bei 60% ED @40C | – | 300A | 300A |
-| Strom bei 100% ED @40C | 230A | 230A | 230A |
+| Einschaltdauer bei max. Strom (40 °C) | 80% | – | 40% / 350A |
+| Strom bei 60 % ED (40 °C) | – | 300A | 300A |
+| Strom bei 100 % ED (40 °C) | 230A | 230A | 230A |
 | Masse | 930x512x864mm | 930x512x864mm | 930x512x864mm |
 | Gewicht | 82kg | 82kg | 82kg |
-| Schutzklasse | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE |
 | Sicherungsklasse | S | S | S |
 
@@ -197,8 +197,8 @@ Passendes Zubehör: FRC 5, RC 5, RC 100, MT200W, MT180W, Elektrodenkabel 25–90
 ### MAHE HyperTIG DX
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: HYPERTIG-DX · Preis: auf Anfrage (CHF)
-Leistungsstarke WIG DC Stromquelle für hohe Abschmelzleistung.
-Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper ARC Active Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
+Leistungsstarke WIG-DC-Stromquelle für hohe Abschmelzleistung.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot-Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper-ARC-Active-Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
 Ausstattung: Verfahren: WIG DC; Kühlung: wassergekühlt.
 
 Technische Daten – HyperTIG DX:
@@ -211,12 +211,12 @@ Technische Daten – HyperTIG DX:
 | Leerlaufspannung | 62V | 62V | 62V | 62V |
 | Effektiver Eingangsstrom | 13A | 18A | 18A | 18A |
 | Schweissstrombereich | 4-250A | 4-300A | 4-350A | 4-400A |
-| Einschaltdauer bei max. Strom @40C | – | – | – | 45% / 400A |
-| Strom bei 60% ED @40C | – | – | 350A | 360A |
-| Strom bei 100% ED @40C | 250A | 300A | 300A | 300A |
+| Einschaltdauer bei max. Strom (40 °C) | – | – | – | 45% / 400A |
+| Strom bei 60 % ED (40 °C) | – | – | 350A | 360A |
+| Strom bei 100 % ED (40 °C) | 250A | 300A | 300A | 300A |
 | Masse | 930x512x864mm | 930x512x864mm | 930x512x864mm | 930x512x864mm |
 | Gewicht | 70kg | 70kg | 70kg | 70kg |
-| Schutzklasse | IP23 | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S |
 
@@ -227,7 +227,7 @@ Passendes Zubehör: FRC 5, RC 5, RC 100, MT200W, MT180W, Elektrodenkabel 25–90
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
 Mobile digitale WIG-Schweissmaschine mit Programmspeicher.
-Besonderheiten: Hochfrequenz Impulsschweissen; Hyper ARC Active Regelung; 5 Meter Zuleitungskabel; Digitale Ampere Anzeige; Fernbedienung; Synergy Einstellungen; Job Mode.
+Besonderheiten: Hochfrequenz-Impulsschweissen; Hyper-ARC-Active-Regelung; Zuleitungskabel mit 5 Metern Länge; Digitale Ampere-Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
 Ausstattung: Verfahren: WIG DC; Bedienung: digital.
 
 Technische Daten – Beta digital:
@@ -240,12 +240,12 @@ Technische Daten – Beta digital:
 | Leerlaufspannung | 80V | 80V |
 | Effektiver Eingangsstrom | 13A | 16A |
 | Schweissstrombereich | 4-240A | 4-300A |
-| Einschaltdauer bei max. Strom @40C | – | 40% / 300A |
-| Strom bei 60% ED @40C | 250A | 250A |
-| Strom bei 100% ED @40C | 200A | 200A |
+| Einschaltdauer bei max. Strom (40 °C) | – | 40% / 300A |
+| Strom bei 60 % ED (40 °C) | 250A | 250A |
+| Strom bei 100 % ED (40 °C) | 200A | 200A |
 | Masse | 293x206x476mm | 293x206x476mm |
 | Gewicht | 18,5kg | 18,5kg |
-| Schutzklasse | IP23 | IP23 |
+| Schutzart | IP23 | IP23 |
 | Konformitätszeichen | CE | CE |
 | Sicherungsklasse | S | S |
 
@@ -260,12 +260,12 @@ Technische Daten – Beta digital SYN:
 | Leerlaufspannung | 80V | 80V | 80V |
 | Effektiver Eingangsstrom | 16A | 13A | 16A |
 | Schweissstrombereich | 4-200A | 4-240A | 4-300A |
-| Einschaltdauer bei max. Strom @40C | 35% / 200A | – | 40% / 300A |
-| Strom bei 60% ED @40C | 150A | 250A | 250A |
-| Strom bei 100% ED @40C | 120A | 200A | 200A |
+| Einschaltdauer bei max. Strom (40 °C) | 35% / 200A | – | 40% / 300A |
+| Strom bei 60 % ED (40 °C) | 150A | 250A | 250A |
+| Strom bei 100 % ED (40 °C) | 120A | 200A | 200A |
 | Masse | 235x170x385mm | 293x206x476mm | 293x206x476mm |
 | Gewicht | 11,5kg | 18,5kg | 18,5kg |
-| Schutzklasse | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE |
 
 Werkstoffe: Stahl, INOX.
@@ -274,8 +274,8 @@ Passendes Zubehör: WK 350, STT 30, STT 35, MPF 02, FRC 5, RC 5, RC 100, MT200W,
 ### MAHE HyperTIG AC/DC
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-ACDC · Preis: auf Anfrage (CHF)
-Leistungsstarke AC/DC Stromquelle für höchste Anforderungen.
-Besonderheiten: Hochfrequenz Impulsschweissen; HyperSpot Punktschweissen; Hyper ARC Active Regelung; Mix TIG Schweissen; Strom Modulation einstellbar; 5 Meter Zuleitungskabel; Digitale Volt und Ampere Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy Einstellungen; Job Mode.
+Leistungsstarke AC/DC-Stromquelle für höchste Anforderungen.
+Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot-Punktschweissen; Hyper-ARC-Active-Regelung; Mix-TIG-Schweissen; Strommodulation einstellbar; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige für Volt und Ampere; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
 Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
 
 Technische Daten – HyperTIG AC/DC CWK:
@@ -288,12 +288,12 @@ Technische Daten – HyperTIG AC/DC CWK:
 | Leerlaufspannung | 90V | 90V | 90V | 90V |
 | Effektiver Eingangsstrom | 29A | 29A | 31A | 31A |
 | Schweissstrombereich | 4-450A | 4-500A | 4-550A | 4-600A |
-| Einschaltdauer bei max. Strom @40C | 80% / 450A | – | 50% / 550A | 40% / 600A |
-| Strom bei 60% ED @40C | – | 500A | 500A | 500A |
-| Strom bei 100% ED @40C | 440A | 440A | 440A | 440A |
+| Einschaltdauer bei max. Strom (40 °C) | 80% / 450A | – | 50% / 550A | 40% / 600A |
+| Strom bei 60 % ED (40 °C) | – | 500A | 500A | 500A |
+| Strom bei 100 % ED (40 °C) | 440A | 440A | 440A | 440A |
 | Masse | 920x760x804mm | 920x760x804mm | 920x760x804mm | 920x760x804mm |
 | Gewicht | 135kg | 135kg | 135kg | 135kg |
-| Schutzklasse | IP23 | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S |
 *: Nur für Länder ausserhalb der EU verfügbar.
@@ -305,7 +305,7 @@ Passendes Zubehör: FRC 5, RC 5, RC 15, RC 100, MT200W, MT180W, Elektrodenkabel 
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: I-1600 · Preis: auf Anfrage (CHF)
 Einfach zu bedienender, robuster Elektrodeninverter.
-Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Force Arc; Anti Stick Funktion; WIG Lift ARC; 5 Meter Zuleitungskabel; Arbeitet an langen Versorgungskabeln; 100V Technologie.
+Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Force Arc; Anti-Stick-Funktion; WIG Lift ARC; Zuleitungskabel mit 5 Metern Länge; Arbeitet an langen Versorgungskabeln; 100-V-Technologie.
 Ausstattung: Verfahren: MMA (Elektrode); Bauart: tragbar; Bedienung: einfach.
 
 Technische Daten – i-1600:
@@ -318,12 +318,12 @@ Technische Daten – i-1600:
 | Leerlaufspannung | 95V |
 | Effektiver Eingangsstrom | 14A |
 | Schweissstrombereich | 15-150A |
-| Einschaltdauer bei max. Strom @40C | 30% / 150A |
-| Strom bei 60% ED @40C | 120A |
-| Strom bei 100% ED @40C | 90A |
+| Einschaltdauer bei max. Strom (40 °C) | 30% / 150A |
+| Strom bei 60 % ED (40 °C) | 120A |
+| Strom bei 100 % ED (40 °C) | 90A |
 | Masse | 213x133x350mm |
 | Gewicht | 7kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -334,7 +334,7 @@ Passendes Zubehör: MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 2
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA · Preis: auf Anfrage (CHF)
 Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.
-Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Force Arc; Anti Stick Funktion; 5 Meter Zuleitungskabel; Fernbedienung; WIG Lift Arc.
+Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Force Arc; Anti-Stick-Funktion; Zuleitungskabel mit 5 Metern Länge; Fernbedienung; WIG Lift Arc.
 Ausstattung: Verfahren: MMA · WIG-Lift; Bauart: tragbar.
 
 Technische Daten – Delta:
@@ -347,12 +347,12 @@ Technische Daten – Delta:
 | Leerlaufspannung | 95V |
 | Effektiver Eingangsstrom | 15A |
 | Schweissstrombereich | 4-160A |
-| Einschaltdauer bei max. Strom @40C | 25% / 160A |
-| Strom bei 60% ED @40C | 120A |
-| Strom bei 100% ED @40C | 100A |
+| Einschaltdauer bei max. Strom (40 °C) | 25% / 160A |
+| Strom bei 60 % ED (40 °C) | 120A |
+| Strom bei 100 % ED (40 °C) | 100A |
 | Masse | 231x133x350mm |
 | Gewicht | 7kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -363,7 +363,7 @@ Passendes Zubehör: RC 5, RC 100, MT260 V, MT170 V, Elektrodenkabel 25–90 mm²
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL · Preis: auf Anfrage (CHF)
 Digitaler Multifunktions-Inverter für den Profi.
-Besonderheiten: Schweisst basische, rutile und CEL Elektroden; Arc Force einstellbar; Hot Start einstellbar; Anti Stick Funktion; Fugenhobeln Funktion; Einstellbare Leerlaufspannung ab 15V; Stufenlose Vorwahl der Netzsicherung; 5 Meter Zuleitungskabel; Digitale Volt und Ampere Anzeige; Fernbedienung.
+Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Arc Force einstellbar; Hot Start einstellbar; Anti-Stick-Funktion; Funktion zum Fugenhobeln; Einstellbare Leerlaufspannung ab 15 V; Stufenlose Vorwahl der Netzsicherung; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige für Volt und Ampere; Fernbedienung.
 Ausstattung: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
 
 Technische Daten – Delta Digital:
@@ -376,12 +376,12 @@ Technische Daten – Delta Digital:
 | Leerlaufspannung | 95V | 95V | 95V | 95V | 95V |
 | Effektiver Eingangsstrom | 20A | 16A | 25A | 32A | 37A |
 | Schweissstrombereich | 4-200A | 4-300A | 4-400A | 4-500A | 4-600A |
-| Einschaltdauer bei max. Strom @40C | 30% / 200A | – | – | 50% / 500A | 40% / 600A |
-| Strom bei 60% ED @40C | 150A | 300A | 400A | 450A | 520A |
-| Strom bei 100% ED @40C | 120A | 230A | 300A | 380A | 420A |
+| Einschaltdauer bei max. Strom (40 °C) | 30% / 200A | – | – | 50% / 500A | 40% / 600A |
+| Strom bei 60 % ED (40 °C) | 150A | 300A | 400A | 450A | 520A |
+| Strom bei 100 % ED (40 °C) | 120A | 230A | 300A | 380A | 420A |
 | Masse | 247x180x400mm | 247x180x400mm | 500x220x365mm | 500x220x365mm | 500x220x365mm |
 | Gewicht | 14kg | 14kg | 24kg | 24kg | 24kg |
-| Schutzklasse | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S | S |
 
@@ -392,7 +392,7 @@ Passendes Zubehör: RC 5, RC 100, MT260 V, MT170 V, Elektrodenkabel 25–90 mm²
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL-DS · Preis: auf Anfrage (CHF)
 Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.
-Besonderheiten: Zum Unter Wasser Schweissen; 15V ocV; Aktive ocV Überwachung; Optionaler Notausschalter; Force Arc; Anti Stick Funktion; 5 Meter Zuleitungskabel; Fugenhobeln Funktion; Umschaltbar CV und CC; Digitale Volt und Ampere Anzeigen; Data Hold Funktion; Mobil.
+Besonderheiten: Zum Unterwasserschweissen; 15 V OCV; Aktive OCV-Überwachung; Optionaler Notausschalter; Force Arc; Anti-Stick-Funktion; Zuleitungskabel mit 5 Metern Länge; Funktion zum Fugenhobeln; Zwischen CV und CC umschaltbar; Digitale Anzeigen für Volt und Ampere; Data-Hold-Funktion; Mobil.
 Ausstattung: Verfahren: MMA · Unterwasser; Bedienung: digital; Einsatz: Diving / Offshore.
 
 Technische Daten – Delta Digital DS:
@@ -405,12 +405,12 @@ Technische Daten – Delta Digital DS:
 | Leerlaufspannung | 62V | 62V | 62V |
 | Effektiver Eingangsstrom | 25A | 32A | 37A |
 | Schweissstrombereich | 4-400A | 4-500A | 4-600A |
-| Einschaltdauer bei max. Strom @40C | – | 50% / 500A | 40% / 600A |
-| Strom bei 60% ED @40C | 400A | 450A | 520A |
-| Strom bei 100% ED @40C | 300A | 380A | 420A |
+| Einschaltdauer bei max. Strom (40 °C) | – | 50% / 500A | 40% / 600A |
+| Strom bei 60 % ED (40 °C) | 400A | 450A | 520A |
+| Strom bei 100 % ED (40 °C) | 300A | 380A | 420A |
 | Masse | 500x220x365mm | 500x220x365mm | 500x220x365mm |
 | Gewicht | 24kg | 24kg | 24kg |
-| Schutzklasse | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE |
 | Sicherungsklasse | S | S | S |
 
@@ -420,9 +420,9 @@ Passendes Zubehör: RC 100 DS, MT260 V, MT170 V, Elektrodenkabel 25–90 mm², M
 ### MAHE PlasmaTIG
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
 Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
-Stromquelle für Mikroplasma und Plasma, für feinste Schweissungen.
-Besonderheiten: Plasma TIG Schweissen; MMA Elektroden Schweissen; WIG HF Schweissen; WIG Lift Arc Schweissen; Arc Force; Anti Stick; Up Slope; Down Slope; HF Start on / off; 5 Meter Zuleitungskabel; Mikroregler für die Gasmenge; Interface.
-Ausstattung: Verfahren: Plasma / Mikroplasma; Einsatz: Feinblech bis Industrie.
+Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen.
+Besonderheiten: Plasma-TIG-Schweissen; MMA-Elektrodenschweissen; WIG-HF-Schweissen; WIG-Lift-Arc-Schweissen; Arc Force; Anti Stick; Up Slope; Down Slope; HF Start on / off; Zuleitungskabel mit 5 Metern Länge; Mikroregler für die Gasmenge; Interface.
+Ausstattung: Verfahren: Plasma / Mikroplasma; Einsatz: Feinblech und Industrieanwendungen.
 
 Technische Daten – Plasma TIG:
 
@@ -434,12 +434,12 @@ Technische Daten – Plasma TIG:
 | Leerlaufspannung | 80V | 80V | 80V | 80V | 80V |
 | Effektiver Eingangsstrom | 9A | 9A | 16A | 15A | 24,5A |
 | Schweissstrombereich | 0,1-20A | 0,1-50A | 4-200A | 4-250A | 4-300A |
-| Einschaltdauer bei max. Strom @40C | – | – | – | – | 50% / 400A |
-| Strom bei 60% ED @40C | – | – | 150A | – | 360A |
-| Strom bei 100% ED @40C | 20A | 50A | 120A | 250A | 300A |
+| Einschaltdauer bei max. Strom (40 °C) | – | – | – | – | 50% / 400A |
+| Strom bei 60 % ED (40 °C) | – | – | 150A | – | 360A |
+| Strom bei 100 % ED (40 °C) | 20A | 50A | 120A | 250A | 300A |
 | Masse | 920x350x740mm | 920x350x740mm | 920x350x740mm | 920x700x740mm | 920x700x740mm |
 | Gewicht | 53,2kg | 53,2kg | 53,2kg | 120kg | 120kg |
-| Schutzklasse | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Schutzart | IP23 | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S | S |
 
@@ -447,7 +447,7 @@ Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
 ## Plasmaschneiden
-Theta Plasmaschneidinverter mit HSC-Technologie, von 15 mm bis 80 mm Schneidleistung, als Handgerät, als Automationsversion und als CNC-Schneidtisch MPT.
+Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT.
 
 ### Plasmaschneider oder CNC-Schneidtisch auswählen
 Quelle: https://www.ves-tech.ch/produkte/plasmaschneiden/
@@ -460,7 +460,7 @@ Für eine passende Anfrage unterscheidet VES-TECH Swiss zwischen manuellem Plasm
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
 Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.
-Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift Arc Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für Verschleissteil Standzeit; Lochblech Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige; Plasmaschneidbrenner S 25 in 4 m fest verbaut; Massekabel 16 mm², 4 m, gehört zum Lieferumfang.
+Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift-Arc-Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für die Standzeit der Verschleissteile; Lochblech-Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige; Plasmaschneidbrenner S 25 in 4 m fest verbaut; Massekabel 16 mm², 4 m, gehört zum Lieferumfang.
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Bauart: tragbar.
 
 Technische Daten – Theta 40:
@@ -473,14 +473,14 @@ Technische Daten – Theta 40:
 | Leerlaufspannung | 403V |
 | Effektiver Eingangsstrom | 16A |
 | Schweissstrombereich | 10-30A |
-| Einschaltdauer bei max. Strom @40C | – |
-| Strom bei 60% ED @40C | 30A |
-| Strom bei 100% ED @40C | 23A |
+| Einschaltdauer bei max. Strom (40 °C) | – |
+| Strom bei 60 % ED (40 °C) | 30A |
+| Strom bei 100 % ED (40 °C) | 23A |
 | Empfohlener Schnitt | < 8mm |
 | Trennschnitt | < 15mm |
 | Masse | 247x173x372mm |
 | Gewicht | 14,2kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -491,7 +491,7 @@ Passendes Zubehör: Verschleissteilebox S 25, STT 35, MPF 02.
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-60 · Preis: auf Anfrage (CHF)
 Leistungsstarker Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 35 mm; Qualitätsschnitt max. 25 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
+Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt max. 35 mm; Qualitätsschnitt max. 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 40 mm; Technologie: HSC.
 
 Technische Daten – Theta 60 HSC:
@@ -504,14 +504,14 @@ Technische Daten – Theta 60 HSC:
 | Leerlaufspannung | 290V |
 | Effektiver Eingangsstrom | 10A |
 | Schweissstrombereich | 10-60A |
-| Einschaltdauer bei max. Strom @40C | 50% / 60A |
-| Strom bei 60% ED @40C | 55A |
-| Strom bei 100% ED @40C | 42A |
+| Einschaltdauer bei max. Strom (40 °C) | 50% / 60A |
+| Strom bei 60 % ED (40 °C) | 55A |
+| Strom bei 100 % ED (40 °C) | 42A |
 | Empfohlener Schnitt | < 25mm |
 | Trennschnitt | < 35mm |
 | Masse | 247x173x372mm |
 | Gewicht | 16,5kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -522,7 +522,7 @@ Passendes Zubehör: PSHB 65, Verschleissteilebox PSHB 65, Massekabel 25 mm², ST
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-120 · Preis: auf Anfrage (CHF)
 Industrieller Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Option Automaten: Schnittstelle; Lochblech Schneidfunktion; Fugenhobeln Funktion.
+Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Optionale Schnittstelle für die Automation; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC.
 
 Technische Daten – Theta 120 HSC:
@@ -535,14 +535,14 @@ Technische Daten – Theta 120 HSC:
 | Leerlaufspannung | 290V |
 | Effektiver Eingangsstrom | 27A |
 | Schweissstrombereich | 20-120A |
-| Einschaltdauer bei max. Strom @40C | – |
-| Strom bei 60% ED @40C | 120A |
-| Strom bei 100% ED @40C | 93A |
+| Einschaltdauer bei max. Strom (40 °C) | – |
+| Strom bei 60 % ED (40 °C) | 120A |
+| Strom bei 100 % ED (40 °C) | 93A |
 | Empfohlener Schnitt | < 38mm |
 | Trennschnitt | < 50mm |
 | Masse | 370x270x620mm |
 | Gewicht | 36kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -553,7 +553,7 @@ Passendes Zubehör: PSHB 125, Verschleissteilebox PSHB 125, Massekabel 25 mm², 
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-180 · Preis: auf Anfrage (CHF)
 Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.
-Besonderheiten: HSC Technologie; Schneiden bis 80 mm; Fugenhobel Funktion; Lochblech Schneidfunktion; Zentralanschluss am Brenner; 5 Meter Zuleitungskabel; Digitalanzeige; Anzeige für den Maschinenstatus; Brennerpakete bis 15,2 Meter.
+Besonderheiten: HSC-Technologie; Schneiden bis 80 mm; Funktion zum Fugenhobeln; Lochblech-Schneidfunktion; Zentralanschluss am Brenner; Zuleitungskabel mit 5 Metern Länge; Digitalanzeige; Anzeige für den Maschinenstatus; Brennerpakete mit einer Länge von bis zu 15,2 Metern.
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 80 mm; Technologie: HSC.
 
 Technische Daten – Theta 180 HSC:
@@ -566,13 +566,13 @@ Technische Daten – Theta 180 HSC:
 | Leerlaufspannung | 290V |
 | Effektiver Eingangsstrom | 40A |
 | Schweissstrombereich | 40-180A |
-| Strom bei 60% ED @40C | 160A |
-| Strom bei 100% ED @40C | 135A |
+| Strom bei 60 % ED (40 °C) | 160A |
+| Strom bei 100 % ED (40 °C) | 135A |
 | Empfohlener Schnitt | < 50mm |
 | Trennschnitt | < 80mm |
 | Masse | 710x460x710mm |
 | Gewicht | 72kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -583,7 +583,7 @@ Passendes Zubehör: PSHB 160, Verschleissteilebox PSHB 160, Massekabel 25 mm².
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-60-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
-Besonderheiten: HSC Technologie; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt grösser 35 mm; Qualitätsschnitt grösser 25 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
+Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt über 35 mm; Qualitätsschnitt über 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
 Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 40 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
 
 Technische Daten – Theta 60 HSC:
@@ -596,14 +596,14 @@ Technische Daten – Theta 60 HSC:
 | Leerlaufspannung | 290V |
 | Effektiver Eingangsstrom | 10A |
 | Schweissstrombereich | 10-60A |
-| Einschaltdauer bei max. Strom @40C | 50% / 60A |
-| Strom bei 60% ED @40C | 55A |
-| Strom bei 100% ED @40C | 42A |
+| Einschaltdauer bei max. Strom (40 °C) | 50% / 60A |
+| Strom bei 60 % ED (40 °C) | 55A |
+| Strom bei 100 % ED (40 °C) | 42A |
 | Empfohlener Schnitt | < 25mm |
 | Trennschnitt | < 35mm |
 | Masse | 247x173x372mm |
 | Gewicht | 16,5kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -614,7 +614,7 @@ Passendes Zubehör: PSAB 65, Massekabel 25 mm².
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-120-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
-Besonderheiten: HSC Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High Performance Schneiden; Trennschnitt grösser 55 mm; Qualitätsschnitt grösser 38 mm; Stabile Lift Arc Zündung; Maximale Produktivität; Lochblech Schneidfunktion; Fugenhobeln Funktion.
+Besonderheiten: HSC-Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt über 55 mm; Qualitätsschnitt über 38 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
 Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
 
 Technische Daten – Theta 120 HSC:
@@ -627,14 +627,14 @@ Technische Daten – Theta 120 HSC:
 | Leerlaufspannung | 290V |
 | Effektiver Eingangsstrom | 27A |
 | Schweissstrombereich | 20-120A |
-| Einschaltdauer bei max. Strom @40C | – |
-| Strom bei 60% ED @40C | 120A |
-| Strom bei 100% ED @40C | 93A |
+| Einschaltdauer bei max. Strom (40 °C) | – |
+| Strom bei 60 % ED (40 °C) | 120A |
+| Strom bei 100 % ED (40 °C) | 93A |
 | Empfohlener Schnitt | < 38mm |
 | Trennschnitt | < 50mm |
 | Masse | 370x270x620mm |
 | Gewicht | 36kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -644,8 +644,8 @@ Passendes Zubehör: PSAB 125, Massekabel 25 mm².
 ### MAHE MPT 3001
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/
 Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-3001 · Preis: auf Anfrage (CHF)
-Professioneller CNC-Plasmaschneidtisch mit 3000 x 1500 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.
-Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle; Arbeitsbereich 3000 x 1500 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das MyPlasm CNC System von Proma Elektronika; Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format; Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
+Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 3000 x 1500 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.
+Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie; Arbeitsbereich 3000 x 1500 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das System MyPlasm CNC von Proma Elektronika; Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format; Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
 Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
 Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 3000 x 1500 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
 Werkstoffe: Stahl, INOX, Aluminium.
@@ -654,8 +654,8 @@ Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
 ### MAHE MPT 2501
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/
 Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-2501 · Preis: auf Anfrage (CHF)
-Professioneller CNC-Plasmaschneidtisch mit 2500 x 1250 mm Arbeitsbereich, geliefert als Set mit einer MAHE Theta Stromquelle.
-Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer MAHE Theta Stromquelle; Arbeitsbereich 2500 x 1250 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das MyPlasm CNC System von Proma Elektronika; Import von 2D-Zeichnungen im DXF- und im HPGL/PLT-Format; Schnittfugenkorrektur, Ein- und Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
+Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 2500 x 1250 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.
+Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie; Arbeitsbereich 2500 x 1250 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das System MyPlasm CNC von Proma Elektronika; Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format; Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
 Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
 Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 2500 x 1250 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
 Werkstoffe: Stahl, INOX, Aluminium.
@@ -675,8 +675,8 @@ Beginnen Sie die Auswahl mit dem gewünschten Arbeitsschritt. VES-TECH Swiss fü
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: MINICLEANER · Preis: auf Anfrage (CHF)
 Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.
-Besonderheiten: Leistungsstarke 200 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Ausstattung: Verfahren: Elektrolyt-Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
+Besonderheiten: Leistungsstarke 200-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Ausstattung: Verfahren: Elektrolytische Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
 
 Technische Daten – MiniCleaner:
 
@@ -689,7 +689,7 @@ Technische Daten – MiniCleaner:
 | Leistung max. | 180W |
 | Masse | 115x115x220mm |
 | Gewicht | 1,5kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -700,8 +700,8 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-ST · Preis: auf Anfrage (CHF)
 Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.
-Besonderheiten: Leistungsstarke 1200 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Ausstattung: Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Besonderheiten: Leistungsstarke 1200-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Ausstattung: Verfahren: Elektrolytische Reinigung; Lieferung: als Set.
 
 Technische Daten – HyperCleaner ST:
 
@@ -711,11 +711,11 @@ Technische Daten – HyperCleaner ST:
 | Netzabsicherung | 10A |
 | Ausgangsstrom max. | 35A |
 | Ausgangsspannungsbereich | 5 - 35V |
-| Einschaltdauer bei max. Strom @40C | 100% |
+| Einschaltdauer bei max. Strom (40 °C) | 100% |
 | Leistung max. | 1225W |
 | Masse | 213x133x350mm |
 | Gewicht | 7kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -725,9 +725,9 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 ### MAHE HyperCleaner ST Speed
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-SPEED · Preis: auf Anfrage (CHF)
-Leistungsstarker 2500-W-Inverter für schnelle Reinigung.
-Besonderheiten: Leistungsstarke 2400 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Ausstattung: Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Leistungsstarker Inverter mit bis zu 2400 W beim Polieren (100 % Einschaltdauer).
+Besonderheiten: Leistungsstarke 2400-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Ausstattung: Verfahren: Elektrolytische Reinigung; Lieferung: als Set.
 
 Technische Daten – HyperCleaner STspeed:
 
@@ -737,13 +737,14 @@ Technische Daten – HyperCleaner STspeed:
 | Netzabsicherung | 16A |
 | Ausgangsstrom max. | 65A |
 | Ausgangsspannungsbereich | 5 - 36V |
-| Einschaltdauer bei max. Strom @40C | 100% |
+| Einschaltdauer bei max. Strom (40 °C) | 100% |
 | Leistung max. | 2400W |
 | Masse | 315x170x385mm |
 | Gewicht | 17kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
+*: Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.1 (gedruckte Seite 15): Polieren max. 2400 W bei 100 % Einschaltdauer; Reinigen max. 1100 W bei 100 % Einschaltdauer. Die 2400 W bezeichnen die maximale Leistung beim Polieren.
 
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
@@ -751,9 +752,9 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 ### MAHE HyperCleaner ST Plus
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-PLUS · Preis: auf Anfrage (CHF)
-Leistungsstarker 4000-W-Inverter für den Industrieeinsatz.
-Besonderheiten: Leistungsstarke 3600 Watt Inverter Stromquelle; Mahe Pinsel Schutz System; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
-Ausstattung: Verfahren: Elektrolyt-Reinigung; Lieferung: als Set.
+Leistungsstarker Inverter mit bis zu 4000 W beim Polieren (30 % Einschaltdauer).
+Besonderheiten: Leistungsstarke 4000-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Ausstattung: Verfahren: Elektrolytische Reinigung; Lieferung: als Set.
 
 Technische Daten – HyperCleaner STplus:
 
@@ -763,13 +764,14 @@ Technische Daten – HyperCleaner STplus:
 | Netzabsicherung | 16A |
 | Ausgangsstrom max. | 110A |
 | Ausgangsspannungsbereich | 5 - 36V |
-| Einschaltdauer bei max. Strom @40C | 100% |
+| Einschaltdauer bei max. Strom (40 °C) | 100% |
 | Leistung max. | 4000W |
 | Masse | 315x170x385mm |
 | Gewicht | 17kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
+*: Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.2 (gedruckte Seite 15): Polieren max. 4000 W bei 30 % Einschaltdauer; Reinigen max. 1800 W bei 100 % Einschaltdauer. Die 4000 W sind keine Dauerleistung im Reinigungsbetrieb.
 
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, MHCT 01, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
@@ -778,7 +780,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERCLEANER-CT200 · Preis: auf Anfrage (CHF)
 Kombiniertes Gerät zum WIG-Schweissen und Reinigen.
-Besonderheiten: Multiprozess WIG und Reinigen; WIG Schweissen mit 200A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
+Besonderheiten: Multiprozess: WIG-Schweissen und Reinigen; WIG-Schweissen mit 200 A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
 Ausstattung: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, WK 200, STT 30, STT 35, MPF 02, MHCT 01, FRC 5, RC 5, RC 100, MT200W, MT180W, MT260, MT170, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
@@ -786,9 +788,9 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 ### MAHE HCS 1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/
 Kategorie: Reinigungsgeräte / Signiergeräte · Typ: Signieren · Art.-Nr.: HCS1 · Preis: auf Anfrage (CHF)
-Ökonomisches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.
-Besonderheiten: Stromquelle zum Markieren; Tiefschwarz markieren; Kurzschluss: Schutzsystem; Geeignet für Schablonen aller Hersteller.
-Ausstattung: Verfahren: Elektrolyt-Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
+Wirtschaftliches elektrolytisches Signiergerät, speziell für den mobilen Einsatz.
+Besonderheiten: Stromquelle zum Markieren; Tiefschwarz markieren; Kurzschlussschutzsystem; Geeignet für Schablonen aller Hersteller.
+Ausstattung: Verfahren: Elektrolytisches Signieren; Einsatz: mobil; Lieferung: Set mit Koffer.
 
 Technische Daten – Signiergerät HCS1:
 
@@ -797,12 +799,12 @@ Technische Daten – Signiergerät HCS1:
 | Netzspannung | 230V, 50/60Hz |
 | Netzabsicherung | 1,6A |
 | Ausgangsstrom max. | 4A |
-| Leerlauf Ausgangsspannung Uo | 24V AC |
-| Einschaltdauer bei max. Strom @40C | 100% |
+| Leerlauf-Ausgangsspannung Uo | 24V AC |
+| Einschaltdauer bei max. Strom (40 °C) | 100% |
 | Leistung max. | 56W |
 | Masse | 220x115x115mm |
 | Gewicht | 2,5kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -812,7 +814,7 @@ Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Past
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
 Kategorie: Reinigungsgeräte / Dosiersystem · Typ: Dosierung · Art.-Nr.: MLF100 · Preis: auf Anfrage (CHF)
 Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.
-Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.; Automatischer/Manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungs-/Spülmodus; Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten.; Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten; Mit Reinigungspinselständer mit Tropfschutz.
+Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit; Automatischer oder manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungsmodus und Spülmodus; Kompatibel mit allen MAHE-HyperCleaner-Reinigungsgeräten; Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten; Mit Reinigungspinselständer mit Tropfschutz.
 Ausstattung: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
 
 Technische Daten – MLF100:
@@ -824,7 +826,7 @@ Technische Daten – MLF100:
 | Fördermenge | 2 - 80 ml/min |
 | Masse | 310x150x190mm |
 | Gewicht | 3,5kg |
-| Schutzklasse | IP23 |
+| Schutzart | IP23 |
 | Konformitätszeichen | CE |
 | Sicherungsklasse | S |
 
@@ -832,14 +834,14 @@ Technische Daten – MLF100:
 ### MAHE Reinigungselektrolyt Rapid R1
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: R1 · Preis: auf Anfrage (CHF)
-Schnelles Reinigungselektrolyt für Chromstahl-Schweissnähte.
+Schnell wirkender Reinigungselektrolyt für Chromstahl-Schweissnähte.
 Ausstattung: Typ: Reinigung (Rapid); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: R1.
 Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
 ### MAHE Reinigungselektrolyt RP1 Pastös
 URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/rp1/
 Kategorie: Reinigungsgeräte / Elektrolyte · Typ: Reinigung · Art.-Nr.: RP1 · Preis: auf Anfrage (CHF)
-Pastöses Reinigungselektrolyt für senkrechte Flächen und Überkopf.
+Pastöser Reinigungselektrolyt für senkrechte Flächen und Überkopfarbeiten.
 Ausstattung: Typ: Reinigung (pastös); Werkstoff: Chromstahl; Gebinde: 0,5 / 1,0 / 5,0 L; Sicherheitsdatenblatt: RP1.
 Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
 
@@ -908,12 +910,12 @@ Ausstattung: Typ: Universalkühler; Steckdose: 230 V Schuko; Schutz: Wassermange
 URL: https://www.ves-tech.ch/produkte/zubehoer/wk300/
 Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK300 · Preis: auf Anfrage (CHF)
 Wasserkühlgerät für die MMS-3000-Serie.
-Ausstattung: Für: MMS 3000 Serie; Typ: Wasserkühlgerät.
+Ausstattung: Für: MMS-3000-Serie; Typ: Wasserkühlgerät.
 
 ### MAHE WK 350
 URL: https://www.ves-tech.ch/produkte/zubehoer/wk350/
 Kategorie: Zubehör / Wasserkühlung · Typ: Kühlung · Art.-Nr.: WK350 · Preis: auf Anfrage (CHF)
-Wasserkühlgerät für Beta digital und Omega 400-V-Linie.
+Wasserkühlgerät für Beta digital und die 400-V-Baureihe Omega.
 Ausstattung: Für: Beta digital · Omega 400 V; Typ: Wasserkühlgerät.
 
 ### MAHE DVS 410
@@ -931,13 +933,13 @@ Ausstattung: Für: HyperMIG X; Gehäuse: Vollmetall; Bauart: horizontal.
 ### MAHE FRC 5
 URL: https://www.ves-tech.ch/produkte/zubehoer/frc5/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: FRC5 · Preis: auf Anfrage (CHF)
-Fussfernregler für alle MAHE WIG-Geräte.
+Fussfernregler für alle WIG-Geräte von MAHE.
 Ausstattung: Typ: Fussfernregler; Für: MAHE WIG.
 
 ### MAHE RC 5
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc5/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC5 · Preis: auf Anfrage (CHF)
-Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.
+Handfernregler für alle WIG-Geräte und MMA-Geräte von MAHE.
 Ausstattung: Typ: Handfernregler; Für: MAHE WIG · MMA.
 
 ### MAHE RC 15
@@ -949,7 +951,7 @@ Ausstattung: Typ: Handfernregler; Funktion: Up/Down · Start/Stopp.
 ### MAHE RC 100
 URL: https://www.ves-tech.ch/produkte/zubehoer/rc100/
 Kategorie: Zubehör / Fernbedienungen · Typ: Fernregler · Art.-Nr.: RC100 · Preis: auf Anfrage (CHF)
-Handfernregler für alle MAHE WIG-Geräte und MMA-Geräte.
+Handfernregler für alle WIG-Geräte und MMA-Geräte von MAHE.
 Ausstattung: Typ: Handfernregler; Für: MAHE WIG · MMA.
 
 ### MAHE RC 100 DS
@@ -961,13 +963,13 @@ Ausstattung: Typ: Handfernregler; Für: Delta Digital DS.
 ### MAHE MCU 1
 URL: https://www.ves-tech.ch/produkte/zubehoer/mcu1/
 Kategorie: Zubehör / Werkstattausrüstung · Typ: Kalibrierung · Art.-Nr.: MCU1 · Preis: auf Anfrage (CHF)
-MAHE Kalibriergerät zum Kalibrieren und Validieren, mit grossen Volt-/Ampere-Anzeigen, leicht.
+Leichtes MAHE-Kalibriergerät zum Kalibrieren und Validieren mit grossen Anzeigen für Spannung und Stromstärke.
 Ausstattung: Funktion: Kalibrieren / Validieren; Anzeige: Volt & Ampere (gross); Gewicht: 16,5 kg.
 
 ### MAHE USB 2in1 Programmierer
 URL: https://www.ves-tech.ch/produkte/zubehoer/usb2in1/
 Kategorie: Zubehör / Werkstattausrüstung · Typ: Programmierung · Art.-Nr.: USB2IN1 · Preis: auf Anfrage (CHF)
-Programmiergerät für Micro-Controller und MAHE-Schnittstellen, inkl. USB-Software.
+Programmiergerät für Mikrocontroller und MAHE-Schnittstellen, inklusive USB-Software.
 Ausstattung: Funktion: Controller-Programmierung; Schnittstelle: USB / MAHE; Software: inklusive.
 
 ### MAHE Elektrodenkabel 10 mm²
@@ -1003,7 +1005,7 @@ Ausstattung: Querschnitt: 25 mm²; Länge: 4 m; Für: Theta 60 · 120 · 180 (HS
 ### MAHE MF405W
 URL: https://www.ves-tech.ch/produkte/zubehoer/mf405w/
 Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MF405W · Preis: auf Anfrage (CHF)
-Wassergekühlter MIG/MAG-Brenner für die HyperMIG X Serie.
+Wassergekühlter MIG/MAG-Brenner für die HyperMIG-X-Serie.
 Ausstattung: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
 
 ### MAHE MF240W
@@ -1063,31 +1065,31 @@ Ausstattung: Typ: WIG gasgekühlt; Länge: 4 / 8 m; Ausstattung: Gasventil am Br
 ### MAHE PSHB 65
 URL: https://www.ves-tech.ch/produkte/zubehoer/pshb65/
 Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB65 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.
+Plasmaschneidbrenner für die Theta 60 HSC mit bis zu 40 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.
 Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 60 HSC; Längen: 6 / 12 m.
 
 ### MAHE PSHB 125
 URL: https://www.ves-tech.ch/produkte/zubehoer/pshb125/
 Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB125 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.
+Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.
 Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 120 HSC; Längen: 6 / 12 m.
 
 ### MAHE PSHB 160
 URL: https://www.ves-tech.ch/produkte/zubehoer/pshb160/
 Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSHB160 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in 6 und 12 Meter Länge.
+Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern.
 Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 180 HSC; Längen: 6 / 12 m.
 
 ### MAHE PSAB 65
 URL: https://www.ves-tech.ch/produkte/zubehoer/psab65/
 Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSAB65 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in 6 und 12 Meter Länge.
+Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in Längen von 6 und 12 Metern.
 Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 60 AUT; Längen: 6 / 12 m.
 
 ### MAHE PSAB 125
 URL: https://www.ves-tech.ch/produkte/zubehoer/psab125/
 Kategorie: Zubehör / Plasmabrenner · Typ: Plasmabrenner · Art.-Nr.: PSAB125 · Preis: auf Anfrage (CHF)
-Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in 6 und 12 Meter Länge.
+Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in Längen von 6 und 12 Metern.
 Ausstattung: Typ: Plasmaschneidbrenner; Für: Theta 120 AUT; Längen: 6 / 12 m.
 
 ### MAHE Verschleissteilebox S 25
@@ -1117,13 +1119,13 @@ Ausstattung: Für: PSHB 160; Schneiddüsen: 5x; Elektrode: 1x; Wirbelring: 1x; K
 ### MAHE Drahtvorschubrollen
 URL: https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen/
 Kategorie: Zubehör / Verschleissteile · Typ: Vorschubrolle · Art.-Nr.: DRAHTVORSCHUBROLLEN · Preis: auf Anfrage (CHF)
-Drahtvorschubrollen für EcoMIG und MMS, in Ausführungen für Stahl, gerändelt und Aluminium.
+Drahtvorschubrollen für EcoMIG und MMS, mit Ausführungen für Stahl und Aluminium sowie gerändelten Varianten.
 Ausstattung: Für: EcoMIG · MMS; Stahl: 0,6/0,8 · 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm; Gerändelt: 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Aluminium: 0,8/1,0 · 1,0/1,2 · 1,2/1,6 · 1,6/2,4 mm; Serienmässig: 0,8/1,0 mm Stahl.
 
 ### MAHE Drahtvorschubrollen HyperMIG X
 URL: https://www.ves-tech.ch/produkte/zubehoer/drahtvorschubrollen-hyper/
 Kategorie: Zubehör / Verschleissteile · Typ: Vorschubrolle · Art.-Nr.: DRAHTVORSCHUBROLLEN-HYPER · Preis: auf Anfrage (CHF)
-Drahtvorschubrollen für die HyperMIG X Serie, in Ausführungen für Stahl, gerändelt und Aluminium.
+Drahtvorschubrollen für die HyperMIG-X-Serie, mit Ausführungen für Stahl und Aluminium sowie gerändelten Varianten.
 Ausstattung: Für: HyperMIG X; Stahl: 0,8/1,0 · 1,0/1,2 · 1,2/1,6 mm; Gerändelt: 1,0/1,2 · 1,2/1,6 mm; Aluminium: 1,0/1,2 · 1,2/1,6 mm; Serienmässig: 0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A.
 
 ### MAHE Zwischenschlauchpaket
@@ -1145,7 +1147,7 @@ Die angebotenen Oerlikon PlasmaFix-Anlagen sind gebrauchte Mikroplasma-Schweissa
 ### Oerlikon PlasmaFix 51
 URL: https://www.ves-tech.ch/produkte/occasion/plasmafix-51/
 Kategorie: Occasion / Mikroplasma · Typ: Mikroplasma · Art.-Nr.: PLASMAFIX-51 · Preis: auf Anfrage (CHF)
-Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für Hand- und Maschinenschweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar.
+Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar.
 Ausstattung: Verfahren: Mikroplasma · WIG, geglättet und gepulst; Schweissstrom Plasma: 0,08 – 50 A bei 100 % ED; Schweissstrom WIG: 0,8 – 50 A bei 60 % ED; Pulsfrequenz: 1 Hz – 10 kHz; Leerlaufspannung: 106 V; Netzanschluss: 3~ 230/400/440 V · 50/60 Hz; Leistungsfaktor cos φ: 0,91; Primärstrom: 6 A bei 400 V; Bedienung: Tasten und Codes, LCD-Anzeige; Zündung: Hochfrequenz, eingebaut; Kühlung: über Kühlgerät; Schutzart: IP 23; Gewicht: 95 kg; Abmessungen L × B × H: 650 × 360 × 750 mm.
 
 ### Oerlikon PlasmaFix 50 S
@@ -1165,10 +1167,10 @@ Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel
 Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
 
 ### HyperPuls
-Dynamischer Impulslichtbogen für mehr Produktivität: schneller schweissen, weniger Verzug, ideal für Mehrlagen.
+Dynamischer Impulslichtbogen für höhere Produktivität: schnelleres Schweissen und weniger Verzug, ideal für mehrlagige Schweissnähte.
 
 ### HyperForce
-Tief eindringender, druckvoller Lichtbogen mit tiefem Einbrand und perfekter Schweissbadkontrolle.
+Druckvoller Lichtbogen mit tiefem Einbrand und präziser Kontrolle des Schweissbades.
 
 ### HyperCold
 Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
@@ -1183,38 +1185,38 @@ Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkont
 
 ## Häufige Fragen und Antworten
 
-### Was kostet ein MAHE Schweissgerät bei VES-TECH Swiss?
+### Was kostet ein MAHE-Schweissgerät bei VES-TECH Swiss?
 Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (mit Luft oder mit Wasser), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung.
 
 ### Welches Schweissverfahren brauche ich für Aluminium?
-Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte, sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht.
+Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht.
 
 ### Was ist der Unterschied zwischen WIG DC und WIG AC/DC?
 WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf. Nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl.
 
 ### Wie funktioniert die elektrolytische Schweissnahtreinigung?
-Ein MAHE Cleaner leitet über einen mit Elektrolyt getränkten Karbon-Pinsel Strom in die Schweissnaht. Die Anlauffarben und die Oxidschicht auf Chromstahl werden elektrochemisch entfernt, die Passivschicht baut sich wieder auf. Je nach Elektrolyt wird gereinigt (R1, RP1), poliert (P1), neutralisiert (N1) oder das Metall dauerhaft signiert (M1). Das ist schneller und schonender als Beizen und ohne Säurebad.
+Ein MAHE-Cleaner leitet über einen mit Elektrolyt getränkten Karbonpinsel Strom in die Schweissnaht. Die Anlauffarben und die Oxidschicht auf Chromstahl werden elektrochemisch entfernt, die Passivschicht baut sich wieder auf. Je nach Elektrolyt wird gereinigt (R1, RP1), poliert (P1), neutralisiert (N1) oder das Metall dauerhaft signiert (M1). Das ist schneller und schonender als Beizen und ohne Säurebad.
 
-### Welche Blechdicke schneidet ein MAHE Theta Plasmaschneider?
+### Welche Blechdicke schneidet ein MAHE-Theta-Plasmaschneider?
 Die Theta-Serie deckt den Bereich von etwa 15 mm bis 80 mm Trennschnitt ab: Theta 40 für die leichte Werkstatt am 230-V-Netz, Theta 60 und Theta 120 für den industriellen Einsatz mit HSC-Technologie und Theta 180 als stärkstes Modell. Für CNC-Anlagen gibt es Theta 60 AUT und Theta 120 AUT mit Automations-Schnittstelle.
 
 ### Bietet VES-TECH Swiss Service und Reparatur in der Schweiz an?
 Ja. Die Werkstatt in Herisau AR, bei unserer Partnerfirma Schweisstechnik Scherrer AG, übernimmt Diagnose, Reparatur, Kalibrierung und Automation für das MAHE-Geräteprogramm. Sie sprechen direkt mit dem Techniker, der auch an der Elektronik arbeitet, erreichbar unter +41 76 710 91 39.
 
-### Was bedeutet EN 1090 und liefert VES-TECH die Dokumentation?
-EN 1090 ist die europäische Norm für die Ausführung von tragenden Tragwerken aus Stahl und Aluminium. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Paket für Prüfung und Konformität, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat.
+### Was bedeutet EN 1090 und welche Dokumentation liefert VES-TECH?
+EN 1090 ist die europäische Norm für die Ausführung von Tragwerken aus Stahl und Aluminium. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Paket für Prüfung und Konformität, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat.
 
 ### Wie schnell erhalte ich ein Angebot?
 In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus.
 
 ### Liefert VES-TECH Swiss in die ganze Schweiz?
-Ja, VES-TECH Swiss beliefert die gesamte Schweiz und das Fürstentum Liechtenstein. Geräte übergeben und abgeholt werden in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch und Italienisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch.
+Ja, VES-TECH Swiss beliefert die gesamte Schweiz und das Fürstentum Liechtenstein. Die Übergabe und Abholung der Geräte erfolgt in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch und Italienisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch.
 
-### Was ist MIS-Schweissen und HyperPuls bei MAHE?
+### Was sind MIS-Schweissen und HyperPuls bei MAHE?
 MIS ist das spritzerfreie MAHE-Verfahren für den Kurzlichtbogen: Der Materialübergang wird geregelt, dadurch entstehen kaum Spritzer und die Nacharbeit entfällt weitgehend. HyperPuls ist der geregelte Impulslichtbogen für höhere Abschmelzleistung bei kontrolliertem Wärmeeintrag. Ergänzt wird das durch HyperCold (minimaler Verzug), HyperRoot (sichere Wurzel), HyperForce (tiefer Einbrand) und HyperUP (Steignaht).
 
 ### Verkauft VES-TECH Swiss auch gebrauchte Schweissanlagen?
 Ja. Unter Occasion stehen generalüberholte Anlagen aus der eigenen Werkstatt in Herisau, derzeit Mikroplasma-Anlagen Oerlikon PlasmaFix 51 und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft und kann nach Vereinbarung besichtigt werden. Preis auf Anfrage.
 
 ### Was ist Mikroplasma-Schweissen und welche Geräte gibt es dafür?
-Mikroplasma (Microplasma) ist Plasmaschweissen für dünnste Werkstoffe ab etwa 0,05 mm: Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon bei einem Bruchteil eines Ampere stabil. Neu bietet VES-TECH die MAHE PlasmaTIG, gebraucht und generalüberholt die Oerlikon PlasmaFix 51 (Ausführungen 51 und P+T) und die Oerlikon PlasmaFix 50 S.
+Mikroplasma (Microplasma) ist Plasmaschweissen für dünnste Werkstoffe ab etwa 0,05 mm: Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon bei einem Bruchteil eines Amperes stabil. VES-TECH bietet die MAHE PlasmaTIG als Neugerät an. Als generalüberholte Occasionen sind die Oerlikon PlasmaFix 51 (Ausführungen 51 und P+T) und die Oerlikon PlasmaFix 50 S im Programm.

@@ -973,7 +973,7 @@ def page_faq(lang):
 
 def page_search(lang):
     url, alts = C.u_page(lang, "search"), C.alternates("page", key="search")
-    popular = ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma"]
+    popular = C.SEARCH_POPULAR[lang]
     chips = "".join(f'<a class="chip" href="{e(url)}?q={e(x)}">{e(x)}</a>' for x in popular)
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
                                       (C.t(lang, "c_search"), None)],
@@ -1064,7 +1064,7 @@ def page_service(lang, key=None):
         "description": desc,
         "serviceType": nav,
         "provider": {"@id": f"{C.SITE}/#organization"},
-        "areaServed": [{"@type": "Country", "name": "Schweiz"},
+        "areaServed": [{"@type": "Country", "name": C.land(lang)},
                        {"@type": "Country", "name": "Liechtenstein"}],
         # serviceLocation erwartet einen Place. Ein blosser @id-Verweis auf den
         # Organization-Knoten liess Validatoren den Typ nicht erkennen; und
@@ -1139,10 +1139,10 @@ def page_about(lang):
     nav = C.t(lang, "nav_about")
     werte = dict(
         owner=C.COMPANY["owner"], street=C.COMPANY["street"], zip=C.COMPANY["zip"],
-        city=C.COMPANY["city"], region_name=C.COMPANY["region_name"],
+        city=C.COMPANY["city"], region_name=C.regionName(lang, C.COMPANY["region"]),
         hours=C.zeiten(lang), partner=C.WORKSHOP["partner"],
         ws_street=C.WORKSHOP["street"], ws_zip=C.WORKSHOP["zip"],
-        ws_city=C.WORKSHOP["city"], ws_region_name=C.WORKSHOP["region_name"],
+        ws_city=C.WORKSHOP["city"], ws_region_name=C.regionName(lang, C.WORKSHOP["region"]),
         url_kalib=C.u_service(lang, "calib"),
         # Das EN-1090-Zertifikat des Herstellers, damit die Aussage
         # "professionelle Geraete" nicht bloss behauptet dasteht.

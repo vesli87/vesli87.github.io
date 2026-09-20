@@ -11,9 +11,35 @@ import render as R
 import build as B
 from package_site import package
 from indexnow import changed_paths
+from scrape_dls import localized_title
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_copy_changes_do_not_rename_published_subcategory_routes(self):
+        with patch.dict(C.SUBTR['Werkstattausrüstung'], fr='Un nouveau libellé', it='Un nuovo nome'):
+            self.assertEqual(C.u_sub('fr', 'zubehoer', 'Werkstattausrüstung'),
+                             '/fr/produits/accessoires/equipement-atelier/')
+            self.assertEqual(C.u_sub('it', 'zubehoer', 'Werkstattausrüstung'),
+                             '/it/prodotti/accessori/attrezzatura-officina/')
+
+    def test_search_suggestions_are_localized_before_javascript_runs(self):
+        for lang, wanted, unwanted in [('fr', 'Chariot', 'Fahrwagen'),
+                                        ('it', 'Carrello', 'Fahrwagen')]:
+            page = PG.page_search(lang)[1]
+            self.assertIn('>' + wanted + '</a>', page)
+            self.assertNotIn('>' + unwanted + '</a>', page)
+            self.assertIn(wanted, B.search_index(lang)['popular'])
+
+    def test_reimported_document_titles_translate_generic_words_not_models(self):
+        self.assertEqual(localized_title('fr', 'anleitung', 'Signiergerät HCS 1'),
+                         "Mode d'emploi de l’appareil de marquage HCS 1")
+        self.assertEqual(localized_title('it', 'datenblatt', 'Signiergerät HCS1'),
+                         'Scheda tecnica della marcatrice HCS1')
+        self.assertEqual(localized_title('de', 'datenblatt', 'Signiergerät HCS1'),
+                         'Technisches Datenblatt Signiergerät HCS1')
+        self.assertEqual(localized_title('fr', 'datenblatt', 'HyperMIG X CWK'),
+                         'Fiche technique HyperMIG X CWK')
+
     def test_no_invented_manufacturer_numbers(self):
         for p in C.P:
             data = R.ld_product('de', p)

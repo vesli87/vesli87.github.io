@@ -34,7 +34,7 @@
   "big": false,
   "tl": {
    "de": "WIG-DC-Panel mit HF-Zündung, HyperSpot, Puls und Slope-Steuerung.",
-   "fr": "Panneau TIG DC avec amorçage HF, HyperSpot, pulsé et slopes.",
+   "fr": "Panneau TIG DC avec amorçage HF, HyperSpot, mode pulsé et rampes de montée et de descente du courant.",
    "it": "Pannello TIG DC con innesco HF, HyperSpot, impulso e slope."
   }
  },
@@ -43,8 +43,8 @@
   "big": false,
   "tl": {
    "de": "AC/DC-Panel mit HF-Zündung, HyperSpot, MAHE-MIX-PULSE und AC-Balance/Frequenz.",
-   "fr": "Panneau AC/DC avec amorçage HF, HyperSpot, MAHE-MIX-PULSE et balance/fréquence AC.",
-   "it": "Pannello AC/DC con innesco HF, HyperSpot, MAHE-MIX-PULSE e balance/frequenza AC."
+   "fr": "Panneau AC/DC avec amorçage HF, HyperSpot, MAHE-MIX-PULSE et réglage de la balance et de la fréquence AC.",
+   "it": "Pannello AC/DC con innesco HF, HyperSpot, MAHE-MIX-PULSE e bilanciamento/frequenza AC."
   }
  },
  "mma": {
@@ -62,7 +62,7 @@
   "tl": {
    "de": "Plasma-Panel mit Schneidstrom, Luftdruck und Pilotlichtbogen.",
    "fr": "Panneau plasma avec courant de coupe, pression d’air et arc pilote.",
-   "it": "Pannello plasma con corrente di taglio, pressione aria e arco pilota."
+   "it": "Pannello plasma con corrente di taglio, pressione dell’aria e arco pilota."
   }
  },
  "cleaner": {
@@ -71,7 +71,7 @@
   "tl": {
    "de": "Cleaner-Panel mit Leistungsstufen und Betriebsartwahl.",
    "fr": "Panneau Cleaner avec niveaux de puissance et choix du mode.",
-   "it": "Pannello Cleaner con livelli di potenza e scelta du mode."
+   "it": "Pannello Cleaner con livelli di potenza e selezione della modalità di funzionamento."
   }
  },
  "steel": {
@@ -80,8 +80,8 @@
   "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
   "tl": {
    "de": "Stahl-optimiertes Panel mit HyperCold, HyperRoot und HyperForce.",
-   "fr": "Panneau optimisé acier avec HyperCold, HyperRoot et HyperForce.",
-   "it": "Pannello ottimizzato acciaio con HyperCold, HyperRoot e HyperForce."
+   "fr": "Panneau optimisé pour l’acier avec HyperCold, HyperRoot et HyperForce.",
+   "it": "Pannello ottimizzato per l’acciaio con HyperCold, HyperRoot e HyperForce."
   }
  },
  "steelpuls": {
@@ -90,8 +90,8 @@
   "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
   "tl": {
    "de": "Stahl-Puls-Panel mit HyperPuls, HyperUP und HyperForce.",
-   "fr": "Panneau acier pulsé avec HyperPuls, HyperUP et HyperForce.",
-   "it": "Pannello acciaio pulsato con HyperPuls, HyperUP e HyperForce."
+   "fr": "Panneau pour le soudage pulsé de l’acier avec HyperPuls, HyperUP et HyperForce.",
+   "it": "Pannello per la saldatura pulsata dell’acciaio con HyperPuls, HyperUP e HyperForce."
   }
  },
  "hypermig_ex": {

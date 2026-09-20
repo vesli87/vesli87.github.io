@@ -25,13 +25,14 @@ Bearbeitet werden also:
 | Was du ändern willst | Wo |
 |---|---|
 | Produkt, Merkmalsliste, Kategorie | `data/P.json`, `data/CATS.json` |
-| Besonderheiten eines Geräts | `data/HL_DEVICE.json` (wörtlich von MAHE, DE/FR/IT) |
+| Besonderheiten eines Geräts | `data/HL_DEVICE.json` (Herstellerangaben, DE/FR/IT; dokumentierte Sprachkorrekturen in `build/mahe_copy_edits.json`) |
 | Besonderheiten eines Frontpanels | `data/PANEL_HL_DEVICE.json` (ebenso) |
 | Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |
 | Übersetzung eines UI-Textes | `data/UI.json` |
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |
+| Bestehende Unterkategorie-URLs | `build/subcategory_slugs.json`; bei Textkorrekturen unverändert lassen |
 | Seitentitel, meta description, FAQ | `build/i18n_extra.json` |
 | AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |

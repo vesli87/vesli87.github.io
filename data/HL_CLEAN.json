@@ -2,21 +2,21 @@
  "minicleaner": {
   "de": [
    "Kompakte Inverter-Stromquelle",
-   "MAHE Pinsel-Schutz-System",
+   "MAHE-Pinselschutzsystem",
    "Reinigen, Polieren und Markieren",
    "Synergieprogramm für alle Verfahren",
    "Umweltfreundlich und sicher reinigen"
   ],
   "fr": [
-   "Source inverter compacte",
-   "Système de protection de pinceau MAHE",
+   "Source de courant compacte à onduleur",
+   "Système de protection du pinceau MAHE",
    "Nettoyer, polir et marquer",
    "Programme synergique pour tous les procédés",
    "Nettoyage écologique et sûr"
   ],
   "it": [
    "Generatore inverter compatto",
-   "Sistema di protezione pennello MAHE",
+   "Sistema di protezione del pennello MAHE",
    "Pulire, lucidare e marcare",
    "Programma sinergico per tutti i processi",
    "Pulizia ecologica e sicura"
@@ -24,22 +24,22 @@
  },
  "hypercleaner-st": {
   "de": [
-   "Leistungsstarke 1200 Watt Inverter-Stromquelle",
-   "MAHE Pinsel-Schutz-System",
+   "Leistungsstarke 1200-Watt-Inverter-Stromquelle",
+   "MAHE-Pinselschutzsystem",
    "Reinigen, Polieren und Markieren",
    "Synergieprogramm für alle Verfahren",
    "Umweltfreundlich und sicher reinigen"
   ],
   "fr": [
-   "Source inverter puissante 1200 W",
-   "Système de protection de pinceau MAHE",
+   "Source de courant puissante à onduleur de 1200 W",
+   "Système de protection du pinceau MAHE",
    "Nettoyer, polir et marquer",
    "Programme synergique pour tous les procédés",
    "Nettoyage écologique et sûr"
   ],
   "it": [
-   "Generatore inverter potente 1200 W",
-   "Sistema di protezione pennello MAHE",
+   "Potente generatore inverter da 1200 W",
+   "Sistema di protezione del pennello MAHE",
    "Pulire, lucidare e marcare",
    "Programma sinergico per tutti i processi",
    "Pulizia ecologica e sicura"
@@ -47,22 +47,22 @@
  },
  "hypercleaner-speed": {
   "de": [
-   "Leistungsstarke 2400 Watt Inverter-Stromquelle",
-   "MAHE Pinsel-Schutz-System",
+   "Leistungsstarke 2400-Watt-Inverter-Stromquelle",
+   "MAHE-Pinselschutzsystem",
    "Reinigen, Polieren, Markieren und Galvanisieren",
    "Synergieprogramme für alle Verfahren",
    "Umweltfreundlich und sicher reinigen"
   ],
   "fr": [
-   "Source inverter puissante 2400 W",
-   "Système de protection de pinceau MAHE",
+   "Source de courant puissante à onduleur de 2400 W",
+   "Système de protection du pinceau MAHE",
    "Nettoyer, polir, marquer et galvaniser",
    "Programmes synergiques pour tous les procédés",
    "Nettoyage écologique et sûr"
   ],
   "it": [
-   "Generatore inverter potente 2400 W",
-   "Sistema di protezione pennello MAHE",
+   "Potente generatore inverter da 2400 W",
+   "Sistema di protezione del pennello MAHE",
    "Pulire, lucidare, marcare e galvanizzare",
    "Programmi sinergici per tutti i processi",
    "Pulizia ecologica e sicura"
@@ -70,22 +70,22 @@
  },
  "hypercleaner-plus": {
   "de": [
-   "Leistungsstarke 4000 Watt Inverter-Stromquelle",
-   "MAHE Pinsel-Schutz-System",
+   "Leistungsstarke 4000-Watt-Inverter-Stromquelle",
+   "MAHE-Pinselschutzsystem",
    "Reinigen, Polieren, Markieren und Galvanisieren",
    "Synergieprogramme für alle Verfahren",
    "Umweltfreundlich und sicher reinigen"
   ],
   "fr": [
-   "Source inverter puissante 4000 W",
-   "Système de protection de pinceau MAHE",
+   "Source de courant puissante à onduleur de 4000 W",
+   "Système de protection du pinceau MAHE",
    "Nettoyer, polir, marquer et galvaniser",
    "Programmes synergiques pour tous les procédés",
    "Nettoyage écologique et sûr"
   ],
   "it": [
-   "Generatore inverter potente 4000 W",
-   "Sistema di protezione pennello MAHE",
+   "Potente generatore inverter da 4000 W",
+   "Sistema di protezione del pennello MAHE",
    "Pulire, lucidare, marcare e galvanizzare",
    "Programmi sinergici per tutti i processi",
    "Pulizia ecologica e sicura"
@@ -94,21 +94,21 @@
  "hypercleaner-ct200": {
   "de": [
    "Kombigerät: WIG-Schweissen und Reinigen",
-   "MAHE Pinsel-Schutz-System",
+   "MAHE-Pinselschutzsystem",
    "Reinigen, Polieren und Markieren",
    "Synergieprogramm für alle Verfahren",
    "Umweltfreundlich und sicher reinigen"
   ],
   "fr": [
    "Appareil combiné : soudage TIG et nettoyage",
-   "Système de protection de pinceau MAHE",
+   "Système de protection du pinceau MAHE",
    "Nettoyer, polir et marquer",
    "Programme synergique pour tous les procédés",
    "Nettoyage écologique et sûr"
   ],
   "it": [
    "Apparecchio combinato: saldatura TIG e pulizia",
-   "Sistema di protezione pennello MAHE",
+   "Sistema di protezione del pennello MAHE",
    "Pulire, lucidare e marcare",
    "Programma sinergico per tutti i processi",
    "Pulizia ecologica e sicura"

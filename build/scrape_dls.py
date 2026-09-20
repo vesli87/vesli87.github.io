@@ -84,6 +84,17 @@ def art_und_zusatz(titel):
     return None, t
 
 
+def localized_title(lang, kind, suffix):
+    """Translate generic title words with the required article; retain the model."""
+    title = ART[kind][lang]
+    if suffix.startswith("Signiergerät ") and lang in ("fr", "it"):
+        model = suffix[len("Signiergerät "):]
+        connector = {"fr": " de l’appareil de marquage ",
+                     "it": " della marcatrice "}[lang]
+        return title + connector + model
+    return title + (" " + suffix if suffix else "")
+
+
 def sammeln():
     out, ohne = {}, []
     for pid, seite in sorted(SEITE.items()):
@@ -107,7 +118,7 @@ def sammeln():
             gesehen.add(u)
             eintraege.append({
                 "k": "PDF",
-                "t": {l: (ART[art][l] + (" " + zusatz if zusatz else ""))
+                "t": {l: localized_title(l, art, zusatz)
                       for l in ("de", "fr", "it")},
                 "s": dict(UNTER),
                 "u": u,

@@ -210,11 +210,7 @@ def search_index(lang):
         # Die Vorschlaege standen fuer alle drei Sprachen auf Deutsch. "Fahrwagen"
         # sucht in Frankreich niemand, und "WIG" heisst dort TIG - der Vorschlag
         # widersprach sogar dem Einleitungstext der Suchseite daneben.
-        "popular": {
-            "de": ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma"],
-            "fr": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Chariot", "Plasma"],
-            "it": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Carrello", "Plasma"],
-        }[lang],
+        "popular": C.SEARCH_POPULAR[lang],
     }
 
 

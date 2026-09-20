@@ -17,6 +17,10 @@ Erlaubt sind nur die bewusst vorgenommenen Korrekturen: Schweizer „ss" statt
 Eein, Sprizerfreier, Elektoden, „11,5 KG2", „CV und CW", Einschaultdauer,
 Nezabsicherung, Ausgangstrom, „230V, 60/60Hz").
 
+Zusätzlich sind die einzeln geprüften Rechtschreib- und Grammatikkorrekturen
+aus mahe_copy_edits.json erlaubt. Die Zuordnung gilt nur für den vollständigen
+Text; Zahlenwerte, Modellnamen und technische Aussagen werden nicht verallgemeinert.
+
 Jede andere Abweichung ist ein Fehler und wird gemeldet. Am Ende steht, an
 welchen Stellen wir bewusst von MAHE abweichen — die Liste soll kurz bleiben.
 """
@@ -31,6 +35,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
 
 SRC = json.loads((C.BUILD / "mahe_besonderheiten.json").read_text("utf-8"))
+COPY_EDITS = json.loads((C.BUILD / "mahe_copy_edits.json").read_text("utf-8"))
 
 # Zuordnung unserer Schlüssel auf die Einträge der Herstellerseite
 DEV = {
@@ -97,7 +102,10 @@ FIX = [("ß", "ss"), ("Relegung", "Regelung"), ("Syniergie-Programm", "Synergiep
 def norm(s):
     for a, b in FIX:
         s = s.replace(a, b)
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    # Exact, reviewed spelling changes only: do not normalize arbitrary words,
+    # numbers or units away. An unlisted manufacturer change still fails.
+    return COPY_EDITS.get(s, s)
 
 
 def expect(keys):
@@ -171,14 +179,19 @@ def specs():
 # Die Eintraege muessen exakt stimmen - fehlt oder aendert sich eine Zeile,
 # greift die Ausnahme nicht mehr.
 BEWUSST = {
-    # Fuenfmal derselbe Grund: der Gedankenstrich ist auf Wunsch des Inhabers
+    # The current product-page bullet conflicts with MAHE's datasheet and
+    # operating manual. Keep the raw source, but publish the documented maximum.
+    # Manual: section 7.2, printed page 15 / PDF page 16 (4000 W, 30% polishing).
+    # https://mahe-online.de/wp-content/uploads/2026/01/HyperCleaner-STSpeed_STPlus_25_DE_EN_ES.pdf
+    # https://mahe-online.de/wp-content/uploads/2022/07/HyperCleaner_ST_Plus.pdf
+    "hypercleaner-plus": {
+        "fehlt": ["Leistungsstarke 3600-Watt-Inverter-Stromquelle"],
+        "zuviel": ["Leistungsstarke 4000-Watt-Inverter-Stromquelle"],
+        "grund": "4000 W beim Polieren gemäss MAHE-Datenblatt und Betriebsanleitung; Betriebsarten in SPECNOTE erläutert",
+    },
+    # Zweimal derselbe Grund: der Gedankenstrich ist auf Wunsch des Inhabers
     # ueberall aus den Texten verschwunden; MAHE schreibt ihn, wir schreiben
     # einen Doppelpunkt. Inhaltlich identisch.
-    "hcs1": {
-        "fehlt": ["Kurzschluss – Schutzsystem"],
-        "zuviel": ["Kurzschluss: Schutzsystem"],
-        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
-    },
     "hypertig-ax": {
         "fehlt": ["ActiveSpot – schnelle Heftfunktion"],
         "zuviel": ["ActiveSpot: schnelle Heftfunktion"],
@@ -187,16 +200,6 @@ BEWUSST = {
     "hypertig-dx": {
         "fehlt": ["ActiveSpot – schnelle Heftfunktion"],
         "zuviel": ["ActiveSpot: schnelle Heftfunktion"],
-        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
-    },
-    "theta-120": {
-        "fehlt": ["Option Automaten – Schnittstelle"],
-        "zuviel": ["Option Automaten: Schnittstelle"],
-        "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
-    },
-    "omega_pro": {
-        "fehlt": ["AC Mix – Tig"],
-        "zuviel": ["AC Mix: Tig"],
         "grund": "Gedankenstrich durch Doppelpunkt ersetzt",
     },
     # Zwei Geraete tragen Punkte, die auf mahe-online.de nicht stehen. Beide
@@ -268,8 +271,9 @@ def main():
         cmp(pk, ours_pan.get(pk, {}).get("de", []), [key])
 
     n = len(DEV) + len(DEV_MULTI) + len(PANEL)
-    print(f"\n{n - bad - len(gewollt)}/{n} Besonderheiten stimmen wörtlich mit "
-          f"mahe-online.de überein, {len(gewollt)} bewusst anders, {bad} abweichend")
+    print(f"\n{n - bad - len(gewollt)}/{n} Besonderheiten stimmen nach dokumentierten "
+          f"Sprachkorrekturen mit mahe-online.de überein, "
+          f"{len(gewollt)} bewusst anders, {bad} abweichend")
     if gewollt:
         print("\nBewusst anders bei den Besonderheiten:")
         for g in gewollt:

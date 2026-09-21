@@ -1,0 +1,873 @@
+{
+  "schweissgeraete": {
+    "MIG / MAG": {
+      "de": {
+        "intro": "Hier wählen Sie zwischen tragbaren MMS-Geräten, kompakten EcoMIG-Ausführungen und der Puls-Serie HyperMIG X.",
+        "criteria": [
+          [
+            "Einsatz und Bedienung",
+            "MMS ist für Montage und Werkstatt vorgesehen. EcoMIG bietet digitale oder analoge Bedienung; HyperMIG X umfasst Puls- und Doppelpuls-Verfahren."
+          ],
+          [
+            "Ausführung festlegen",
+            "Nennen Sie Werkstoff, Draht und Einsatzstrom. Netzanschluss, Einschaltdauer, Kühlung und Vorschubkoffer werden für die konkrete Geräteausführung geprüft."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Comparez les appareils portables MMS, les versions compactes EcoMIG et la série pulsée HyperMIG X.",
+        "criteria": [
+          [
+            "Utilisation et commande",
+            "MMS convient aux travaux de montage et d’atelier. EcoMIG propose une commande numérique ou analogique ; HyperMIG X comprend les procédés pulsé et double pulsé."
+          ],
+          [
+            "Préciser la version",
+            "Indiquez le matériau, le fil et le courant utilisé. Le raccordement, le facteur de marche, le refroidissement et le dévidoir sont à vérifier pour la version choisie."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Confrontate gli apparecchi portatili MMS, le versioni compatte EcoMIG e la serie pulsata HyperMIG X.",
+        "criteria": [
+          [
+            "Impiego e comandi",
+            "MMS è destinato al montaggio e all’officina. EcoMIG offre comandi digitali o analogici; HyperMIG X comprende processi pulsati e a doppio impulso."
+          ],
+          [
+            "Definire la versione",
+            "Indicate materiale, filo e corrente utilizzata. Collegamento elettrico, ciclo di lavoro, raffreddamento e trainafilo vanno verificati per la versione scelta."
+          ]
+        ]
+      }
+    },
+    "WIG / TIG": {
+      "de": {
+        "intro": "Die WIG-Auswahl umfasst mobile 230-V-Geräte und wassergekühlte Industrieausführungen mit AC/DC oder DC.",
+        "criteria": [
+          [
+            "Werkstoff und Stromart",
+            "Omega AX und HyperTIG AX sind AC/DC-Geräte. Beta DX und HyperTIG DX arbeiten mit DC. Nennen Sie die Werkstoffe, bevor Sie eine Baureihe auswählen."
+          ],
+          [
+            "Anschluss und Kühlung",
+            "Omega AX und Beta DX sind mit 230 V angegeben, HyperTIG AX und DX mit 400 V. Brenner, Kühlung und Einschaltdauer gehören zur Auswahl der konkreten Ausführung."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "La sélection TIG comprend des appareils mobiles de 230 V et des versions industrielles refroidies à l’eau, en AC/DC ou DC.",
+        "criteria": [
+          [
+            "Matériau et type de courant",
+            "Omega AX et HyperTIG AX fonctionnent en AC/DC. Beta DX et HyperTIG DX fonctionnent en DC. Précisez les matériaux avant de choisir la série."
+          ],
+          [
+            "Alimentation et refroidissement",
+            "Omega AX et Beta DX sont indiqués pour 230 V, HyperTIG AX et DX pour 400 V. La torche, le refroidissement et le facteur de marche dépendent de la version retenue."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "La gamma TIG comprende apparecchi mobili da 230 V e versioni industriali raffreddate ad acqua, AC/DC o DC.",
+        "criteria": [
+          [
+            "Materiale e tipo di corrente",
+            "Omega AX e HyperTIG AX sono AC/DC. Beta DX e HyperTIG DX lavorano in DC. Specificate i materiali prima di scegliere la serie."
+          ],
+          [
+            "Alimentazione e raffreddamento",
+            "Omega AX e Beta DX sono indicati per 230 V, HyperTIG AX e DX per 400 V. Torcia, raffreddamento e ciclo di lavoro fanno parte della scelta della versione."
+          ]
+        ]
+      }
+    },
+    "MMA": {
+      "de": {
+        "intro": "Vom tragbaren i-1600 bis zu den Delta-Ausführungen unterscheiden sich Anschluss, Bedienung und vorgesehener Einsatz.",
+        "criteria": [
+          [
+            "Funktionen auswählen",
+            "i-1600 ist ein einfacher Elektrodeninverter. Delta bietet zusätzlich WIG-Lift; Delta Digital verfügt über digitale Bedienung und JOB-Programme."
+          ],
+          [
+            "Einsatz eindeutig benennen",
+            "Delta Digital DS ist eine eigene Ausführung für den Unterwassereinsatz. Geben Sie bei Anfragen die vollständige Modellbezeichnung und den vorgesehenen Einsatz an."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Du portable i-1600 aux versions Delta, le raccordement, la commande et l’usage prévu diffèrent.",
+        "criteria": [
+          [
+            "Choisir les fonctions",
+            "i-1600 est un onduleur à électrode simple. Delta propose aussi le TIG Lift ; Delta Digital dispose d’une commande numérique et de programmes JOB."
+          ],
+          [
+            "Préciser l’utilisation",
+            "Delta Digital DS est une version spécifique destinée au soudage sous l’eau. Pour une demande, indiquez la désignation complète du modèle et l’utilisation prévue."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Dal portatile i-1600 alle versioni Delta, cambiano alimentazione, comandi e impiego previsto.",
+        "criteria": [
+          [
+            "Scegliere le funzioni",
+            "i-1600 è un semplice inverter a elettrodo. Delta offre anche TIG Lift; Delta Digital dispone di comandi digitali e programmi JOB."
+          ],
+          [
+            "Specificare l’impiego",
+            "Delta Digital DS è una versione specifica per la saldatura subacquea. Nella richiesta indicate il nome completo del modello e l’impiego previsto."
+          ]
+        ]
+      }
+    }
+  },
+  "plasmaschneiden": {
+    "Theta": {
+      "de": {
+        "intro": "Die Theta-Reihe umfasst das tragbare 230-V-Gerät Theta 40 und HSC-Geräte mit 400-V-Anschluss.",
+        "criteria": [
+          [
+            "Schnittarten unterscheiden",
+            "Bei Theta 60 HSC nennt das Datenblatt einen Trennschnitt unter 35 mm und einen empfohlenen Schnitt unter 25 mm. Diese Werte beschreiben unterschiedliche Schnittarten."
+          ],
+          [
+            "Versorgung und Werkstück",
+            "Nennen Sie Werkstoff, Blechdicke und gewünschte Schnittqualität. Prüfen Sie für die ausgewählte Theta-Ausführung Netzanschluss und Druckluftversorgung anhand der Geräteunterlagen."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "La gamme Theta comprend le portable Theta 40 de 230 V et des appareils HSC alimentés en 400 V.",
+        "criteria": [
+          [
+            "Distinguer les types de coupe",
+            "Pour Theta 60 HSC, la fiche indique une coupe de séparation inférieure à 35 mm et une coupe recommandée inférieure à 25 mm. Ces valeurs correspondent à des types de coupe différents."
+          ],
+          [
+            "Alimentation et pièce",
+            "Indiquez le matériau, l’épaisseur et la qualité de coupe souhaitée. Vérifiez l’alimentation électrique et l’air comprimé dans les documents de la version Theta choisie."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "La gamma Theta comprende il portatile Theta 40 da 230 V e apparecchi HSC con alimentazione a 400 V.",
+        "criteria": [
+          [
+            "Distinguere i tipi di taglio",
+            "Per Theta 60 HSC la scheda indica un taglio di separazione inferiore a 35 mm e un taglio consigliato inferiore a 25 mm. Sono valori riferiti a tipi di taglio diversi."
+          ],
+          [
+            "Alimentazione e pezzo",
+            "Indicate materiale, spessore e qualità di taglio desiderata. Verificate alimentazione elettrica e aria compressa nei documenti della versione Theta scelta."
+          ]
+        ]
+      }
+    },
+    "Theta Automation": {
+      "de": {
+        "intro": "Theta 60 AUT und Theta 120 AUT sind für den Einbau in automatisierte Schneidanlagen vorgesehen.",
+        "criteria": [
+          [
+            "Maschinenanschluss klären",
+            "Nennen Sie Schneidtisch oder Anlage und die vorhandene Steuerung. Die Bezeichnung AUT ersetzt nicht die Prüfung der Schnittstellen und des vorgesehenen Anschlusses."
+          ],
+          [
+            "Passenden Brenner zuordnen",
+            "PSAB 65 ist für Theta 60 AUT, PSAB 125 für Theta 120 AUT geführt. Beide sind in 6 oder 12 m erhältlich; geben Sie Modell und benötigte Länge an."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Theta 60 AUT et Theta 120 AUT sont destinés à l’intégration dans des installations de découpe automatisées.",
+        "criteria": [
+          [
+            "Préciser le raccordement machine",
+            "Indiquez la table ou l’installation et la commande existante. La désignation AUT ne remplace pas la vérification des interfaces et du raccordement prévu."
+          ],
+          [
+            "Associer la torche",
+            "PSAB 65 est référencée pour Theta 60 AUT, PSAB 125 pour Theta 120 AUT. Les deux existent en 6 ou 12 m ; précisez le modèle et la longueur nécessaire."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Theta 60 AUT e Theta 120 AUT sono destinati all’integrazione in impianti di taglio automatizzati.",
+        "criteria": [
+          [
+            "Definire il collegamento alla macchina",
+            "Indicate tavolo o impianto e controllo esistente. La sigla AUT non sostituisce la verifica delle interfacce e del collegamento previsto."
+          ],
+          [
+            "Abbinare la torcia",
+            "PSAB 65 è indicata per Theta 60 AUT, PSAB 125 per Theta 120 AUT. Entrambe sono disponibili da 6 o 12 m; specificate modello e lunghezza necessaria."
+          ]
+        ]
+      }
+    },
+    "Schneidtische": {
+      "de": {
+        "intro": "MPT 3001 und MPT 2501 unterscheiden sich im Arbeitsbereich und werden mit einer Theta-Stromquelle angeboten.",
+        "criteria": [
+          [
+            "Blechformat vergleichen",
+            "MPT 3001 bietet 3000 × 1500 mm, MPT 2501 bietet 2500 × 1250 mm Arbeitsbereich. Entscheidend ist das grösste tatsächlich zu bearbeitende Blechformat."
+          ],
+          [
+            "Konfiguration vorbereiten",
+            "Beide Modelle nutzen MyPlasm CNC und unterstützen DXF sowie HPGL/PLT. Nennen Sie Werkstoff, Blechdicke, verfügbare Fläche, Netzanschluss und Druckluft für die Zusammenstellung des Sets."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "MPT 3001 et MPT 2501 se distinguent par leur zone de travail et sont proposés avec une source Theta.",
+        "criteria": [
+          [
+            "Comparer les formats",
+            "MPT 3001 offre 3000 × 1500 mm de zone de travail, MPT 2501 offre 2500 × 1250 mm. Retenez le plus grand format de tôle réellement à traiter."
+          ],
+          [
+            "Préparer la configuration",
+            "Les deux utilisent MyPlasm CNC et acceptent DXF ainsi que HPGL/PLT. Précisez matériau, épaisseur, espace disponible, alimentation et air comprimé pour composer l’ensemble."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "MPT 3001 e MPT 2501 si distinguono per l’area di lavoro e sono proposti con un generatore Theta.",
+        "criteria": [
+          [
+            "Confrontare i formati",
+            "MPT 3001 offre un’area di 3000 × 1500 mm, MPT 2501 di 2500 × 1250 mm. Considerate il formato massimo della lamiera da lavorare effettivamente."
+          ],
+          [
+            "Preparare la configurazione",
+            "Entrambi utilizzano MyPlasm CNC e supportano DXF e HPGL/PLT. Specificate materiale, spessore, spazio disponibile, alimentazione e aria compressa per definire il set."
+          ]
+        ]
+      }
+    }
+  },
+  "reinigung": {
+    "Cleaner": {
+      "de": {
+        "intro": "Cleaner unterscheiden sich nach Reinigungsaufgabe, Mobilität und zusätzlichen Verfahren wie Polieren oder WIG-Schweissen.",
+        "criteria": [
+          [
+            "Betriebsarten vergleichen",
+            "ST Speed erreicht beim Polieren maximal 2400 W bei 100 % Einschaltdauer, ST Plus maximal 4000 W bei 30 %. Diese Polierwerte sind keine Dauerleistungen beim Reinigen."
+          ],
+          [
+            "Aufgabe und Ausstattung",
+            "MiniReiniger ist für mobilen Einsatz geführt; CT 200 kombiniert WIG und Reinigung. Nennen Sie Werkstoff, Oberflächenzustand und vorhandenes Zubehör, damit Gerät, Mittel und Lieferumfang zusammenpassen."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Les nettoyeurs diffèrent par la tâche, la mobilité et les procédés supplémentaires, comme le polissage ou le TIG.",
+        "criteria": [
+          [
+            "Comparer les modes",
+            "En polissage, ST Speed atteint au maximum 2400 W à un facteur de marche de 100 %, ST Plus 4000 W à 30 %. Ces valeurs ne sont pas des puissances continues de nettoyage."
+          ],
+          [
+            "Tâche et équipement",
+            "MiniReiniger est destiné à l’usage mobile ; CT 200 combine TIG et nettoyage. Précisez matériau, état de surface et accessoires existants pour vérifier appareil, produits et contenu de livraison."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "I pulitori si distinguono per compito, mobilità e processi aggiuntivi, come lucidatura o TIG.",
+        "criteria": [
+          [
+            "Confrontare le modalità",
+            "In lucidatura ST Speed raggiunge al massimo 2400 W con ciclo di lavoro del 100 %, ST Plus 4000 W al 30 %. Non sono potenze continue di pulizia."
+          ],
+          [
+            "Compito e dotazione",
+            "MiniReiniger è destinato all’uso mobile; CT 200 combina TIG e pulizia. Indicate materiale, stato della superficie e accessori esistenti per verificare apparecchio, prodotti e fornitura."
+          ]
+        ]
+      }
+    },
+    "Signiergeräte": {
+      "de": {
+        "intro": "HCS 1 ist ein elektrolytisches Signiergerät für mobilen Einsatz und wird als Set mit Koffer geführt.",
+        "criteria": [
+          [
+            "Markierung beschreiben",
+            "Geben Sie Werkstoff und gewünschte Markierung an. Ein Beispiel oder Foto hilft, den vorgesehenen Einsatz des Signiergeräts zu klären."
+          ],
+          [
+            "Gerät und Mittel abstimmen",
+            "M1 ist als Signierelektrolyt geführt. Prüfen Sie das passende Mittel und den benötigten Set-Inhalt anhand der Geräteunterlagen; Reinigungs- und Polierelektrolyte haben andere Aufgaben."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "HCS 1 est un appareil de marquage électrolytique mobile, référencé en ensemble avec mallette.",
+        "criteria": [
+          [
+            "Décrire le marquage",
+            "Indiquez le matériau et le marquage souhaité. Un exemple ou une photo aide à préciser l’utilisation prévue de l’appareil."
+          ],
+          [
+            "Associer appareil et produit",
+            "M1 est référencé comme électrolyte de marquage. Vérifiez le produit adapté et le contenu nécessaire de l’ensemble dans les documents de l’appareil ; les électrolytes de nettoyage et de polissage ont d’autres fonctions."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "HCS 1 è un apparecchio mobile per marcatura elettrolitica, proposto in set con valigetta.",
+        "criteria": [
+          [
+            "Descrivere la marcatura",
+            "Indicate materiale e marcatura desiderata. Un esempio o una foto aiuta a precisare l’impiego previsto dell’apparecchio."
+          ],
+          [
+            "Abbinare apparecchio e prodotto",
+            "M1 è indicato come elettrolita di marcatura. Verificate prodotto adatto e contenuto necessario del set nei documenti dell’apparecchio; gli elettroliti per pulizia e lucidatura hanno funzioni diverse."
+          ]
+        ]
+      }
+    },
+    "Dosiersystem": {
+      "de": {
+        "intro": "MLF 100 dosiert Reinigungsflüssigkeit automatisch und ergänzt die Ausstattung der HyperCleaner-Serie.",
+        "criteria": [
+          [
+            "Vorhandenes Gerät nennen",
+            "Geben Sie die genaue HyperCleaner-Ausführung und das verwendete Reinigungsmittel an. Das Dosiersystem übernimmt die Flüssigkeitszufuhr, nicht die Funktion der Reinigungsstromquelle."
+          ],
+          [
+            "Lieferumfang klären",
+            "Nennen Sie bereits vorhandene Komponenten und die gewünschte Ergänzung. Anschlüsse und Lieferumfang werden anhand der Geräteunterlagen und des konkreten Angebots abgeglichen."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "MLF 100 dose automatiquement le liquide de nettoyage et complète l’équipement de la série HyperCleaner.",
+        "criteria": [
+          [
+            "Préciser l’appareil existant",
+            "Indiquez la version exacte d’HyperCleaner et le produit utilisé. Le système assure l’alimentation en liquide, pas la fonction de la source de courant de nettoyage."
+          ],
+          [
+            "Définir la livraison",
+            "Précisez les composants déjà présents et le complément recherché. Les raccordements et le contenu de livraison sont à vérifier à partir des documents et de l’offre précise."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "MLF 100 dosa automaticamente il liquido di pulizia e completa la dotazione della serie HyperCleaner.",
+        "criteria": [
+          [
+            "Specificare l’apparecchio esistente",
+            "Indicate la versione esatta di HyperCleaner e il prodotto utilizzato. Il sistema alimenta il liquido e non svolge la funzione del generatore di pulizia."
+          ],
+          [
+            "Definire la fornitura",
+            "Specificate i componenti già presenti e l’integrazione desiderata. Collegamenti e contenuto della fornitura vengono verificati in base ai documenti e all’offerta specifica."
+          ]
+        ]
+      }
+    },
+    "Elektrolyte": {
+      "de": {
+        "intro": "Die Elektrolyte sind nach Aufgabe getrennt: Reinigen, Polieren, Neutralisieren oder Signieren.",
+        "criteria": [
+          [
+            "Mittel nach Aufgabe auswählen",
+            "R1 und das pastöse RP1 dienen der Reinigung, P1 dem Polieren und Beizen, N1 dem Neutralisieren und M1 dem Signieren. Ähnliche Namen bedeuten keine Austauschbarkeit."
+          ],
+          [
+            "Gebinde und Unterlagen",
+            "Nennen Sie Gerät, Werkstoff und gewünschte Gebindegrösse. Die angebotenen Grössen stehen beim Produkt; vor der Verwendung gelten dessen Anleitung und Sicherheitsdatenblatt."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Les électrolytes sont classés par fonction : nettoyer, polir, neutraliser ou marquer.",
+        "criteria": [
+          [
+            "Choisir selon la fonction",
+            "R1 et RP1 pâteux servent au nettoyage, P1 au polissage et au décapage, N1 à la neutralisation et M1 au marquage. Des noms proches ne prouvent pas l’interchangeabilité."
+          ],
+          [
+            "Conditionnement et documents",
+            "Indiquez l’appareil, le matériau et le conditionnement souhaité. Les volumes figurent sur chaque produit ; consultez sa notice et sa fiche de données de sécurité avant utilisation."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Gli elettroliti sono distinti per funzione: pulizia, lucidatura, neutralizzazione o marcatura.",
+        "criteria": [
+          [
+            "Scegliere in base alla funzione",
+            "R1 e RP1 pastoso servono alla pulizia, P1 alla lucidatura e al decapaggio, N1 alla neutralizzazione e M1 alla marcatura. Nomi simili non dimostrano intercambiabilità."
+          ],
+          [
+            "Confezione e documenti",
+            "Indicate apparecchio, materiale e confezione desiderata. I formati sono riportati sul prodotto; prima dell’uso consultate istruzioni e scheda di sicurezza."
+          ]
+        ]
+      }
+    }
+  },
+  "zubehoer": {
+    "Fahrwagen": {
+      "de": {
+        "intro": "Die Fahrwagen unterscheiden sich durch Gerätezuordnung, Abmessungen und Gasflaschenhalter.",
+        "criteria": [
+          [
+            "Gasflasche und Platzbedarf",
+            "MPF 02 hat einen Gasflaschenhalter und misst 840 × 450 × 710 mm. STT 35 ohne Halter misst 700 × 600 × 1050 mm; beide wiegen 21 kg."
+          ],
+          [
+            "Komplette Ausstattung angeben",
+            "Nennen Sie Gerät, Kühlgerät und mitzuführendes Zubehör. MHCT 01 ist für HyperCleaner geführt; die passende Aufstellung wird anhand der vollständigen Ausrüstung geprüft."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Les chariots diffèrent par les appareils prévus, les dimensions et le support de bouteille.",
+        "criteria": [
+          [
+            "Bouteille et encombrement",
+            "MPF 02 possède un support de bouteille et mesure 840 × 450 × 710 mm. STT 35, sans support, mesure 700 × 600 × 1050 mm ; les deux pèsent 21 kg."
+          ],
+          [
+            "Préciser tout l’équipement",
+            "Indiquez l’appareil, le refroidisseur et les accessoires à transporter. MHCT 01 est référencé pour HyperCleaner ; la disposition adaptée se vérifie avec l’équipement complet."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "I carrelli si distinguono per apparecchi previsti, dimensioni e supporto per bombola.",
+        "criteria": [
+          [
+            "Bombola e ingombro",
+            "MPF 02 dispone di supporto per bombola e misura 840 × 450 × 710 mm. STT 35, senza supporto, misura 700 × 600 × 1050 mm; entrambi pesano 21 kg."
+          ],
+          [
+            "Indicare tutta la dotazione",
+            "Specificate apparecchio, refrigeratore e accessori da trasportare. MHCT 01 è indicato per HyperCleaner; la disposizione va verificata considerando l’attrezzatura completa."
+          ]
+        ]
+      }
+    },
+    "Wasserkühlung": {
+      "de": {
+        "intro": "WK 200, WK 300 und WK 350 sind für unterschiedliche Anschlüsse und Gerätezuordnungen geführt.",
+        "criteria": [
+          [
+            "Baureihe zuordnen",
+            "WK 300 ist für MMS 3000 angegeben, WK 350 für Beta digital und die 400-V-Baureihe Omega. Nennen Sie die vollständige Gerätebezeichnung statt nur den Seriennamen."
+          ],
+          [
+            "Anschlüsse dokumentieren",
+            "WK 200 ist mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung beschrieben. Für die Auswahl werden die vorhandenen elektrischen Anschlüsse und Kühlanschlüsse anhand von Unterlagen oder Fotos geprüft."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "WK 200, WK 300 et WK 350 sont référencés pour des raccordements et des appareils différents.",
+        "criteria": [
+          [
+            "Identifier la série",
+            "WK 300 est indiqué pour MMS 3000, WK 350 pour Beta digital et la série Omega de 400 V. Donnez la désignation complète de l’appareil, pas seulement le nom de la série."
+          ],
+          [
+            "Documenter les raccordements",
+            "WK 200 est décrit avec une prise Schuko de 230 V et un arrêt en cas de manque d’eau. Les raccordements électriques et de refroidissement existants sont à vérifier sur documents ou photos."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "WK 200, WK 300 e WK 350 sono indicati per collegamenti e apparecchi differenti.",
+        "criteria": [
+          [
+            "Identificare la serie",
+            "WK 300 è indicato per MMS 3000, WK 350 per Beta digital e la serie Omega da 400 V. Fornite la denominazione completa dell’apparecchio, non soltanto la serie."
+          ],
+          [
+            "Documentare i collegamenti",
+            "WK 200 è descritto con presa Schuko da 230 V e arresto per mancanza d’acqua. Collegamenti elettrici e di raffreddamento esistenti vanno verificati mediante documenti o foto."
+          ]
+        ]
+      }
+    },
+    "Drahtvorschubkoffer": {
+      "de": {
+        "intro": "DVS 410 und DVL 420 sind Drahtvorschubkoffer für die HyperMIG-X-Serie.",
+        "criteria": [
+          [
+            "Bauform vergleichen",
+            "DVS 410 ist als leichter, tragbarer Vorschubkoffer beschrieben. DVL 420 besitzt ein Vollmetallgehäuse und eine horizontale Bauform."
+          ],
+          [
+            "Verbindung zur Stromquelle",
+            "Geben Sie die genaue HyperMIG-X-Ausführung und das vorhandene Zwischenschlauchpaket an. Die benötigte Verbindungslänge gehört zur Zusammenstellung von Stromquelle und Vorschubkoffer."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "DVS 410 et DVL 420 sont des dévidoirs séparés pour la série HyperMIG X.",
+        "criteria": [
+          [
+            "Comparer les constructions",
+            "DVS 410 est décrit comme léger et portable. DVL 420 possède un boîtier entièrement métallique et une construction horizontale."
+          ],
+          [
+            "Liaison avec le générateur",
+            "Indiquez la version exacte d’HyperMIG X et le faisceau intermédiaire existant. La longueur de liaison nécessaire fait partie de la configuration du générateur et du dévidoir."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "DVS 410 e DVL 420 sono trainafili separati per la serie HyperMIG X.",
+        "criteria": [
+          [
+            "Confrontare le costruzioni",
+            "DVS 410 è descritto come leggero e portatile. DVL 420 ha un involucro interamente metallico e una struttura orizzontale."
+          ],
+          [
+            "Collegamento al generatore",
+            "Indicate la versione esatta di HyperMIG X e il fascio intermedio esistente. La lunghezza necessaria del collegamento fa parte della configurazione di generatore e trainafilo."
+          ]
+        ]
+      }
+    },
+    "Fernbedienungen": {
+      "de": {
+        "intro": "Fussbedienung, Handbedienung und gerätespezifische Funktionen sind die wichtigsten Unterschiede dieser Fernregler.",
+        "criteria": [
+          [
+            "Bedienfunktion auswählen",
+            "FRC 5 ist ein Fussfernregler. RC 15 bietet Up/Down und Start/Stopp; RC 100 DS ist ausdrücklich für Delta Digital DS geführt."
+          ],
+          [
+            "RC 5 und RC 100 abklären",
+            "Beide sind als Handfernregler für MAHE WIG und MMA beschrieben. Für die Auswahl brauchen wir das genaue Gerätemodell und die Anschlussunterlagen oder ein Foto des Anschlusses."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Commande au pied, commande manuelle et fonctions propres à l’appareil distinguent ces commandes à distance.",
+        "criteria": [
+          [
+            "Choisir la fonction",
+            "FRC 5 est une commande au pied. RC 15 propose Up/Down et Start/Stopp ; RC 100 DS est expressément référencée pour Delta Digital DS."
+          ],
+          [
+            "Vérifier RC 5 et RC 100",
+            "Les deux sont décrites comme commandes manuelles pour le TIG et le MMA MAHE. Pour choisir, fournissez le modèle exact et les documents de raccordement ou une photo du connecteur."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Comando a pedale, comando manuale e funzioni specifiche dell’apparecchio distinguono questi telecomandi.",
+        "criteria": [
+          [
+            "Scegliere la funzione",
+            "FRC 5 è un comando a pedale. RC 15 offre Up/Down e Start/Stopp; RC 100 DS è espressamente indicato per Delta Digital DS."
+          ],
+          [
+            "Verificare RC 5 e RC 100",
+            "Entrambi sono descritti come comandi manuali per TIG e MMA MAHE. Per scegliere servono il modello esatto e i documenti del collegamento o una foto del connettore."
+          ]
+        ]
+      }
+    },
+    "Werkstattausrüstung": {
+      "de": {
+        "intro": "MCU 1 und USB 2in1 erfüllen unterschiedliche Aufgaben: Messprüfung oder Programmierung.",
+        "criteria": [
+          [
+            "Messwerte prüfen",
+            "MCU 1 ist ein Kalibriergerät zum Kalibrieren und Validieren mit grossen Spannungs- und Stromanzeigen. Nennen Sie Gerät und benötigte Prüfung, um den Einsatz abzuklären."
+          ],
+          [
+            "Programmierung abklären",
+            "USB 2in1 ist für Mikrocontroller und MAHE-Schnittstellen beschrieben, inklusive USB-Software. Geben Sie Steuerung und Softwarestand an; eine USB-Verbindung allein belegt keine Unterstützung."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "MCU 1 et USB 2in1 remplissent des tâches distinctes : vérification des mesures ou programmation.",
+        "criteria": [
+          [
+            "Vérifier les mesures",
+            "MCU 1 est un appareil d’étalonnage et de validation avec de grands affichages de tension et de courant. Précisez l’appareil et le contrôle nécessaire pour clarifier son utilisation."
+          ],
+          [
+            "Préciser la programmation",
+            "USB 2in1 est décrit pour les microcontrôleurs et interfaces MAHE, avec logiciel USB. Indiquez la commande et la version logicielle ; une connexion USB seule ne prouve pas la prise en charge."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "MCU 1 e USB 2in1 svolgono compiti diversi: verifica delle misure o programmazione.",
+        "criteria": [
+          [
+            "Verificare le misure",
+            "MCU 1 è un apparecchio per calibrazione e validazione con grandi indicatori di tensione e corrente. Indicate apparecchio e verifica richiesta per chiarirne l’impiego."
+          ],
+          [
+            "Precisare la programmazione",
+            "USB 2in1 è descritto per microcontrollori e interfacce MAHE, con software USB incluso. Indicate controllo e versione software; la sola connessione USB non dimostra il supporto."
+          ]
+        ]
+      }
+    },
+    "Kabel": {
+      "de": {
+        "intro": "Elektroden- und Massekabel sind nach Gerätefamilie, Querschnitt und Länge getrennt aufgeführt.",
+        "criteria": [
+          [
+            "Gerätefamilie unterscheiden",
+            "Für HyperCleaner sind 10-mm²-Kabel in 3, 6 oder 10 m geführt. Die 4-m-Kabel für Schweissanlagen haben andere Querschnitte; Theta-Massekabel sind separat aufgeführt."
+          ],
+          [
+            "Bestehende Verbindung zeigen",
+            "Nennen Sie das genaue Gerät, Kabelart, Länge und vorhandenen Anschluss. Ein Foto und die Geräteunterlagen helfen, die passende Ausführung zu bestätigen."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Les câbles d’électrode et de masse sont classés par famille d’appareils, section et longueur.",
+        "criteria": [
+          [
+            "Distinguer les familles",
+            "Pour HyperCleaner, des câbles de 10 mm² sont proposés en 3, 6 ou 10 m. Les câbles de 4 m pour postes de soudage ont d’autres sections ; les câbles de masse Theta sont listés séparément."
+          ],
+          [
+            "Montrer la connexion existante",
+            "Précisez l’appareil exact, le type de câble, la longueur et le connecteur existant. Une photo et les documents de l’appareil aident à confirmer la version adaptée."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "I cavi portaelettrodo e di massa sono distinti per famiglia di apparecchi, sezione e lunghezza.",
+        "criteria": [
+          [
+            "Distinguere le famiglie",
+            "Per HyperCleaner sono indicati cavi da 10 mm² nelle lunghezze 3, 6 o 10 m. I cavi da 4 m per saldatrici hanno altre sezioni; i cavi di massa Theta sono elencati separatamente."
+          ],
+          [
+            "Mostrare il collegamento esistente",
+            "Specificate apparecchio esatto, tipo di cavo, lunghezza e connettore esistente. Una foto e i documenti dell’apparecchio aiutano a confermare la versione adatta."
+          ]
+        ]
+      }
+    },
+    "Brenner": {
+      "de": {
+        "intro": "Die Brennerauswahl trennt MIG/MAG und WIG sowie gasgekühlte und wassergekühlte Ausführungen.",
+        "criteria": [
+          [
+            "Verfahren und Kühlung",
+            "MF155 ist ein gasgekühlter MIG/MAG-Brenner, MF405W wassergekühlt. Bei WIG unterscheiden sich Ausführungen mit Gasventil am Brenner und solche mit weiteren Bedienoptionen."
+          ],
+          [
+            "Länge und Bedienung angeben",
+            "Nennen Sie Geräteausführung, Kühlung, gewünschte Länge sowie Up/Down oder Potentiometer, falls benötigt. Nicht jede angebotene Option gilt für jeden Brenner oder jede Länge."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "La sélection distingue MIG/MAG et TIG, ainsi que les versions refroidies au gaz ou à l’eau.",
+        "criteria": [
+          [
+            "Procédé et refroidissement",
+            "MF155 est une torche MIG/MAG refroidie au gaz, MF405W à l’eau. En TIG, les versions avec vanne de gaz sur la torche se distinguent de celles dotées d’autres options de commande."
+          ],
+          [
+            "Préciser longueur et commande",
+            "Indiquez la version du poste, le refroidissement, la longueur et les fonctions Up/Down ou potentiomètre si nécessaires. Toutes les options ne concernent pas chaque torche ou longueur."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "La selezione distingue MIG/MAG e TIG, oltre alle versioni raffreddate a gas o ad acqua.",
+        "criteria": [
+          [
+            "Processo e raffreddamento",
+            "MF155 è una torcia MIG/MAG raffreddata a gas, MF405W ad acqua. Nel TIG le versioni con valvola del gas sulla torcia si distinguono da quelle con altre opzioni di comando."
+          ],
+          [
+            "Specificare lunghezza e comandi",
+            "Indicate versione della saldatrice, raffreddamento, lunghezza e funzioni Up/Down o potenziometro, se necessarie. Non tutte le opzioni valgono per ogni torcia o lunghezza."
+          ]
+        ]
+      }
+    },
+    "Plasmabrenner": {
+      "de": {
+        "intro": "PSHB-Brenner sind den Theta-HSC-Geräten zugeordnet, PSAB-Brenner den AUT-Ausführungen.",
+        "criteria": [
+          [
+            "Gerät und Brenner paaren",
+            "PSHB 65 gehört zu Theta 60 HSC, PSHB 125 zu Theta 120 HSC und PSHB 160 zu Theta 180 HSC. Für Theta 60 AUT und 120 AUT sind PSAB 65 beziehungsweise PSAB 125 geführt."
+          ],
+          [
+            "Ausführung bestätigen",
+            "Die aufgeführten Brenner sind in 6 oder 12 m erhältlich. Nennen Sie die vollständige Theta-Bezeichnung, den vorhandenen Brenner und die benötigte Länge."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Les torches PSHB sont associées aux appareils Theta HSC, les torches PSAB aux versions AUT.",
+        "criteria": [
+          [
+            "Associer appareil et torche",
+            "PSHB 65 correspond à Theta 60 HSC, PSHB 125 à Theta 120 HSC et PSHB 160 à Theta 180 HSC. Pour Theta 60 AUT et 120 AUT, les références sont respectivement PSAB 65 et PSAB 125."
+          ],
+          [
+            "Confirmer la version",
+            "Les torches présentées existent en 6 ou 12 m. Précisez la désignation complète de Theta, la torche existante et la longueur nécessaire."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Le torce PSHB sono associate agli apparecchi Theta HSC, le PSAB alle versioni AUT.",
+        "criteria": [
+          [
+            "Abbinare apparecchio e torcia",
+            "PSHB 65 corrisponde a Theta 60 HSC, PSHB 125 a Theta 120 HSC e PSHB 160 a Theta 180 HSC. Per Theta 60 AUT e 120 AUT sono indicate rispettivamente PSAB 65 e PSAB 125."
+          ],
+          [
+            "Confermare la versione",
+            "Le torce presentate sono disponibili da 6 o 12 m. Specificate la denominazione completa di Theta, la torcia esistente e la lunghezza necessaria."
+          ]
+        ]
+      }
+    },
+    "Verschleissteile": {
+      "de": {
+        "intro": "Hier finden Sie Brenner-Verschleissteileboxen und Drahtvorschubrollen für unterschiedliche MAHE-Gerätefamilien.",
+        "criteria": [
+          [
+            "Brennerbezeichnung verwenden",
+            "Die Box S 25 ist dem fest eingebauten Brenner der Theta 40 zugeordnet. Wählen Sie PSHB-Boxen nach der Brennerkennung; gleiche Stückzahlen beweisen keine Austauschbarkeit der Teile."
+          ],
+          [
+            "Draht und Vorschub angeben",
+            "Vorschubrollen für EcoMIG/MMS und HyperMIG X sind getrennt geführt. Nennen Sie Gerätefamilie, Drahtwerkstoff und Drahtdurchmesser sowie die vorhandene Rollenausführung."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Vous trouverez ici des boîtes de pièces d’usure pour torches et des galets de dévidage pour différentes familles MAHE.",
+        "criteria": [
+          [
+            "Utiliser la référence de torche",
+            "La boîte S 25 correspond à la torche intégrée à Theta 40. Choisissez les boîtes PSHB selon la référence de torche ; des quantités identiques ne prouvent pas l’interchangeabilité des pièces."
+          ],
+          [
+            "Préciser fil et dévidoir",
+            "Les galets EcoMIG/MMS et HyperMIG X sont listés séparément. Indiquez la famille d’appareils, le matériau et le diamètre du fil ainsi que les galets déjà installés."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Qui trovate scatole di ricambi per torce e rulli trainafilo per differenti famiglie MAHE.",
+        "criteria": [
+          [
+            "Usare la sigla della torcia",
+            "La scatola S 25 è associata alla torcia integrata in Theta 40. Scegliete le scatole PSHB in base alla sigla della torcia; quantità uguali non dimostrano intercambiabilità dei pezzi."
+          ],
+          [
+            "Specificare filo e trainafilo",
+            "I rulli per EcoMIG/MMS e HyperMIG X sono elencati separatamente. Indicate famiglia dell’apparecchio, materiale e diametro del filo e versione dei rulli già installati."
+          ]
+        ]
+      }
+    },
+    "Schlauchpakete": {
+      "de": {
+        "intro": "Das Zwischenschlauchpaket verbindet die HyperMIG-X-Stromquelle mit dem separaten Drahtvorschubkoffer.",
+        "criteria": [
+          [
+            "Verbindungsweg bestimmen",
+            "Angeboten werden 1,2 m, 5 m, 10 m, 15 m und 20 m. Ermitteln Sie den benötigten Weg zwischen Stromquelle und Vorschubkoffer, nicht nur den Abstand zum Werkstück."
+          ],
+          [
+            "Vorhandene Ausführung klären",
+            "Nennen Sie Stromquelle, Vorschubkoffer und Kühlung sowie die vorhandenen Anschlüsse. Das Zwischenschlauchpaket ist vom Brenner-Schlauchpaket zu unterscheiden."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Le faisceau intermédiaire relie la source HyperMIG X au dévidoir séparé.",
+        "criteria": [
+          [
+            "Déterminer le trajet",
+            "Les longueurs proposées sont 1,2 m, 5 m, 10 m, 15 m et 20 m. Déterminez le trajet nécessaire entre générateur et dévidoir, pas seulement la distance jusqu’à la pièce."
+          ],
+          [
+            "Préciser l’équipement existant",
+            "Indiquez générateur, dévidoir, refroidissement et raccordements existants. Le faisceau intermédiaire se distingue du faisceau de la torche."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Il fascio intermedio collega il generatore HyperMIG X al trainafilo separato.",
+        "criteria": [
+          [
+            "Determinare il percorso",
+            "Le lunghezze proposte sono 1,2 m, 5 m, 10 m, 15 m e 20 m. Definite il percorso necessario tra generatore e trainafilo, non soltanto la distanza dal pezzo."
+          ],
+          [
+            "Precisare la dotazione esistente",
+            "Indicate generatore, trainafilo, raffreddamento e collegamenti esistenti. Il fascio intermedio va distinto dal fascio della torcia."
+          ]
+        ]
+      }
+    }
+  },
+  "occasion": {
+    "Mikroplasma": {
+      "de": {
+        "intro": "Die revidierten PlasmaFix-Anlagen unterscheiden sich nach Baureihe, Bedienung und dokumentiertem Strombereich.",
+        "criteria": [
+          [
+            "Modelle anhand der Unterlagen vergleichen",
+            "PlasmaFix 51 beginnt im Mikroplasma-Betrieb bei 0,08 A, PlasmaFix 50 S bei 0,05 A. Die Baureihe 51 ist mit LCD-Bedienung beschrieben; beachten Sie die Unterlagen zur konkreten Ausführung 51 oder P+T."
+          ],
+          [
+            "Anlage und Lieferumfang ansehen",
+            "Zustand, Fotos und Originalunterlagen stehen auf den Produktseiten. Nennen Sie gewünschte Ausführung und Ausstattung; Besichtigung erfolgt nach Vereinbarung, der genaue Lieferumfang steht im Angebot."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Les installations PlasmaFix révisées diffèrent par la série, la commande et la plage de courant documentée.",
+        "criteria": [
+          [
+            "Comparer à partir des documents",
+            "PlasmaFix 51 commence à 0,08 A en microplasma, PlasmaFix 50 S à 0,05 A. La série 51 est décrite avec une commande LCD ; consultez les documents de la version précise, 51 ou P+T."
+          ],
+          [
+            "Examiner la machine et la livraison",
+            "État, photos et documents d’origine figurent sur les pages produits. Précisez version et équipement souhaités ; la visite se fait sur rendez-vous et le contenu exact de livraison figure dans l’offre."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Gli impianti PlasmaFix revisionati si distinguono per serie, comandi e intervallo di corrente documentato.",
+        "criteria": [
+          [
+            "Confrontare tramite i documenti",
+            "PlasmaFix 51 parte da 0,08 A in microplasma, PlasmaFix 50 S da 0,05 A. La serie 51 è descritta con comandi LCD; consultate i documenti della versione precisa, 51 o P+T."
+          ],
+          [
+            "Esaminare macchina e fornitura",
+            "Stato, foto e documenti originali sono nelle pagine dei prodotti. Indicate versione e dotazione desiderate; la visita è su appuntamento e il contenuto esatto della fornitura figura nell’offerta."
+          ]
+        ]
+      }
+    }
+  }
+}

@@ -36,7 +36,8 @@ aktualisiert diese aus dem Netz. Änderungen an Herstellerdaten vor Übernahme p
 
 ## Struktur
 
-- `data/`: gepflegte Produktdaten, Übersetzungen und `BUYING_GUIDE.json`.
+- `data/`: gepflegte Produktdaten, Übersetzungen, `BUYING_GUIDE.json` für
+  Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 21 eigenständige Unterkategorien.
 - `build/core.py`, `render.py`, `pages.py`, `build.py`: Generator.
 - `assets/css/site.css`, `assets/js/app.js`, `assets/js/analytics.js`: Frontend.
 - `produkte/`, `fr/`, `it/` und andere Seiten: generiert, nicht von Hand ändern.
@@ -104,6 +105,12 @@ Kontometriken, Kampagnenberichte und die private Verkaufsliste liegen nur unter
 `reports/`; sie gehören weder in Git noch in das öffentliche Websitepaket.
 
 ## SEO und AEO
+
+Alle 63 Sprachfassungen der eigenständigen Unterkategorien erhalten eine eigene
+Einleitung und konkrete Auswahlkriterien aus `SUBCATEGORY_GUIDES.json`. Die
+Plasma-TIG-URL bleibt die vorhandene Produktseite, ohne zusätzliche Dublette.
+Startseite, Unternehmensseite und Verfahrensübersicht verlinken passende
+Service- und Mikroplasma-Seiten direkt im sichtbaren Hauptinhalt.
 
 Inhalte und Auswahlhilfen stehen bereits im HTML. Produktdaten enthalten keine
 erfundenen Hersteller-Artikelnummern, Preise oder Bewertungen. Ohne ein echtes

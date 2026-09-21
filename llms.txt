@@ -24,7 +24,7 @@
 - [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
 - [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie. (43 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
-- [Occasion](https://www.ves-tech.ch/produkte/occasion/): Gebrauchte Anlagen aus der eigenen Werkstatt: generalüberholt, komplett revidiert und mit ersetzter Wasserkühlung, dazu die Originalunterlagen des Herstellers. (2 Geräte: Mikroplasma)
+- [Occasion](https://www.ves-tech.ch/produkte/occasion/): In Herisau generalüberholte Gebrauchtanlagen: komplett revidiert, mit ersetzter Wasserkühlung und Originalunterlagen des Herstellers. (2 Geräte: Mikroplasma)
 
 ## Geräte
 ### Schweissgeräte

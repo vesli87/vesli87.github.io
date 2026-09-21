@@ -16,6 +16,7 @@ import hashlib
 import html
 import json
 import pathlib
+import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
@@ -1110,12 +1111,25 @@ def cbar(lang, *, crumb_items, h1, desc, chips=""):
 </div></div>"""
 
 
-def usp_row(lang):
+def usp_row(lang, service_links=False):
     items = [("usp_1_h", "usp_1_p"), ("usp_2_h", "usp_2_p"), ("usp_3_h", "usp_3_p")]
-    cards = "".join(
-        f'<div class="usp"><h2>{e(C.t(lang, h))}</h2><p>{e(C.t(lang, p))}</p></div>'
-        for h, p in items
-    )
+    cards = ""
+    for heading_key, paragraph_key in items:
+        heading, paragraph = e(C.t(lang, heading_key)), e(C.t(lang, paragraph_key))
+        if service_links and heading_key == "usp_1_h":
+            heading = f'<a href="{e(C.u_service(lang))}">{heading}</a>'
+            # Link only named existing terms, never reinterpret copy as HTML.
+            terms = C.t(lang, "usp_service_terms")
+            targets = {terms[key].casefold(): C.u_service(lang, key)
+                       for key in ("repair", "calib")}
+            pattern = re.compile(r'(?<!\w)(' + '|'.join(
+                re.escape(terms[key]) for key in ("repair", "calib")) + r')(?!\w)', re.I)
+            parts = pattern.split(C.t(lang, paragraph_key))
+            paragraph = ''.join(
+                f'<a href="{e(targets[part.casefold()])}">{e(part)}</a>'
+                if index % 2 else e(part)
+                for index, part in enumerate(parts))
+        cards += f'<div class="usp"><h2>{heading}</h2><p>{paragraph}</p></div>'
     return f'<section class="usps"><div class="wrap"><div class="usprow">{cards}</div></div></section>'
 
 

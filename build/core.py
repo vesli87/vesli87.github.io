@@ -449,6 +449,7 @@ SPECROW   = _load("SPECROW")     # Zeilenbeschriftung -> fr/it
 SPECNOTE  = _load("SPECNOTE")    # Fussnote unter der Tabelle
 REF       = _load("REF")         # echte Kundenstimmen, siehe data/REF.json
 BUYING_GUIDE = _load("BUYING_GUIDE")
+SUBCATEGORY_GUIDES = _load("SUBCATEGORY_GUIDES")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).

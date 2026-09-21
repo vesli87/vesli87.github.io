@@ -4,6 +4,7 @@ import pathlib
 import re
 import tempfile
 import unittest
+from html.parser import HTMLParser
 from unittest.mock import patch
 
 import core as C
@@ -13,6 +14,37 @@ import build as B
 from package_site import package
 from indexnow import changed_paths
 from scrape_dls import localized_title
+
+
+class MainLinks(HTMLParser):
+    """Links already available in the main HTML, outside closed UI."""
+    void = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+            'link', 'meta', 'param', 'source', 'track', 'wbr'}
+
+    def __init__(self, page):
+        super().__init__()
+        self.stack = []
+        self.links = []
+        self.feed(page)
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        nodes = self.stack + [(tag, attrs)]
+        hidden = any('hidden' in a or
+                     set(a.get('class', '').split()) & {'mega', 'cart', 'lupe'} or
+                     ('tabpane' in a.get('class', '').split() and
+                      'active' not in a.get('class', '').split())
+                     for _, a in nodes)
+        if tag == 'a' and any(t == 'main' for t, _ in nodes) and not hidden:
+            self.links.append(attrs.get('href'))
+        if tag not in self.void:
+            self.stack.append((tag, attrs))
+
+    def handle_endtag(self, tag):
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                self.stack = self.stack[:index]
+                break
 
 
 class GeneratorTests(unittest.TestCase):
@@ -256,6 +288,82 @@ class GeneratorTests(unittest.TestCase):
         self.assertNotIn('@context', data)  # custom JSON is not schema.org JSON-LD
         for product in data['products']:
             self.assertEqual(set(product['names']), set(C.LANGS))
+
+    def test_all_standalone_subcategories_have_specific_visible_guides(self):
+        product_urls = {C.u_prod(lang, product) for lang in C.LANGS for product in C.P}
+        expected = {(cat['id'], sub) for cat in C.CATS for sub in cat['subs']
+                    if all(C.u_sub(lang, cat['id'], sub) not in product_urls
+                           for lang in C.LANGS)}
+        actual = {(cid, sub) for cid, subs in C.SUBCATEGORY_GUIDES.items() for sub in subs}
+        self.assertEqual(actual, expected)
+        self.assertEqual(len(expected), 21)
+        self.assertNotIn(('schweissgeraete', 'Plasma TIG'), actual)
+        intros = {lang: set() for lang in C.LANGS}
+        rendered = 0
+        for cid, sub in sorted(expected):
+            translations = C.SUBCATEGORY_GUIDES[cid][sub]
+            self.assertEqual(set(translations), set(C.LANGS))
+            for lang, guide in translations.items():
+                with self.subTest(category=cid, subcategory=sub, lang=lang):
+                    self.assertTrue(guide['intro'].strip())
+                    self.assertNotEqual(guide['intro'], C.catD(lang, C.CAT_BY_ID[cid]))
+                    self.assertNotIn(guide['intro'], intros[lang])
+                    intros[lang].add(guide['intro'])
+                    self.assertIn(len(guide['criteria']), (2, 3))
+                    url, page = PG.page_cat(lang, C.CAT_BY_ID[cid], sub)
+                    self.assertEqual(url, C.u_sub(lang, cid, sub))
+                    main = page.split('<main id="main">', 1)[1].split('</main>', 1)[0]
+                    self.assertIn(R.e(guide['intro']), main)
+                    self.assertIn('class="buying-guide"', main)
+                    for title, text in guide['criteria']:
+                        self.assertTrue(title.strip() and text.strip())
+                        self.assertIn(f'<dt>{R.e(title)}</dt><dd>{R.e(text)}</dd>', main)
+                    self.assertIn(C.u_page(lang, 'contact'), MainLinks(page).links)
+                    rendered += 1
+        self.assertEqual(rendered, 63)
+        self.assertEqual(len(set().union(*intros.values())), 63)
+
+    def test_subcategory_copy_is_text_not_executable_markup(self):
+        payload = '<img src=x onerror="alert(1)"> & "quoted"'
+        for lang in C.LANGS:
+            with patch.dict(C.SUBCATEGORY_GUIDES['occasion']['Mikroplasma'][lang],
+                            intro=payload, criteria=[[payload, payload], ['Second', 'Criterion']]):
+                page = PG.page_cat(lang, C.CAT_BY_ID['occasion'], 'Mikroplasma')[1]
+                self.assertNotIn(payload, page)
+                self.assertGreaterEqual(page.count(R.e(payload)), 3)
+
+    def test_service_and_microplasma_links_are_in_main_content(self):
+        for lang in C.LANGS:
+            with self.subTest(lang=lang):
+                home = MainLinks(PG.page_home(lang)[1]).links
+                self.assertIn(C.u_service(lang), home)
+                self.assertIn(C.u_service(lang, 'repair'), home)
+                self.assertIn(C.u_service(lang, 'calib'), home)
+                about = MainLinks(PG.page_about(lang)[1]).links
+                for key in ('repair', 'calib', 'auto'):
+                    self.assertIn(C.u_service(lang, key), about)
+                processes = MainLinks(PG.page_processes(lang)[1]).links
+                self.assertIn(C.u_service(lang, 'auto'), processes)
+                self.assertIn(C.u_service(lang, 'calib'), processes)
+                self.assertIn(C.u_sub(lang, 'occasion', 'Mikroplasma'), processes)
+
+    def test_context_links_escape_copy_and_preserve_localized_terms(self):
+        payload = '<img src=x onerror="alert(1)"> & '
+        for lang in C.LANGS:
+            original = C.t(lang, 'usp_1_p')
+            terms = C.t(lang, 'usp_service_terms')
+            with patch.dict(C.EX[lang], usp_1_p=payload + original):
+                row = R.usp_row(lang, service_links=True)
+                self.assertNotIn(payload, row)
+                self.assertIn(R.e(payload), row)
+                for key in ('repair', 'calib'):
+                    self.assertIn(f'href="{C.u_service(lang, key)}">{R.e(terms[key])}</a>', row)
+            with patch.dict(C.EX[lang], process_followup_service=payload + '{automation} {calibration}'):
+                followup = PG.process_followup(lang)
+                self.assertNotIn(payload, followup)
+                self.assertIn(R.e(payload), followup)
+                self.assertIn('href="' + C.u_service(lang, 'auto') + '"', followup)
+                self.assertIn('href="' + C.u_service(lang, 'calib') + '"', followup)
 
     def test_deployment_excludes_sources_and_private_reports(self):
         with tempfile.TemporaryDirectory() as tmp:

@@ -689,7 +689,7 @@ def main():
             u, h = PG.page_cat(lang, c)
             write(u, h); entries.append((u, C.alternates("cat", cat_id=c["id"]), "0.8", "weekly"))
             for s in c["subs"]:
-                u, h = PG.page_cat(lang, c, s)
+                u = C.u_sub(lang, c["id"], s)
                 # Die Unterkategorie "Plasma TIG" ergibt denselben Slug wie das
                 # Produkt "plasma-tig" - beide wollten /produkte/schweissgeraete/
                 # plasma-tig/. Geschrieben wurde zuletzt das Produkt, die
@@ -700,6 +700,7 @@ def main():
                 # Produkt-URL zu aendern - die ist verlinkt und indexiert.
                 if u in prod_urls:
                     continue
+                u, h = PG.page_cat(lang, c, s)
                 write(u, h)
                 entries.append((u, C.alternates("sub", cat_id=c["id"], sub=s), "0.7", "monthly"))
         for p in C.P:

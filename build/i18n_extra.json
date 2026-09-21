@@ -23,7 +23,12 @@
     "all_title": "Alle Geräte · MAHE-Programm und Occasionen | VES-TECH Swiss",
     "all_desc": "{n} Geräte bei VES-TECH Swiss: das MAHE-Programm für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden und elektrolytische Reinigung, dazu Occasionen. Preis auf Anfrage.",
     "all_h1": "Alle Geräte",
-    "all_lead": "Das MAHE-Programm, übersichtlich nach Verfahren geordnet, ergänzt durch geprüfte Occasionen aus der eigenen Werkstatt. Mit Schweizer Service und persönlicher Beratung durch den Techniker.",
+    "all_lead": "Das MAHE-Programm, übersichtlich nach Verfahren geordnet, ergänzt durch geprüfte Occasionen. Mit Schweizer Service und persönlicher Beratung durch den Techniker.",
+    "subcategory_guide_title": "Worauf es bei der Auswahl ankommt",
+    "process_followup_title": "Vom Verfahren zur Anwendung",
+    "process_followup_service": "Für die Umsetzung im Betrieb finden Sie Informationen zur {automation} und zur {calibration} Ihrer Schweissausrüstung.",
+    "process_followup_micro": "Oerlikon-Occasionen für {microplasma} finden Sie in einer separaten Übersicht.",
+    "usp_service_terms": {"repair": "Reparatur", "calib": "Kalibrierung"},
     "cat_title_tpl": "{cat} · MAHE {sub_hint} kaufen in der Schweiz | VES-TECH Swiss",
     "cat_title_tpl_kurz": "{cat} · MAHE kaufen in der Schweiz | VES-TECH Swiss",
     "cat_desc_tpl": "{cat} von MAHE bei VES-TECH Swiss: {n} Modelle, {subs}. Beratung, Service und Ersatzteile aus Herisau AR. Preis auf Anfrage.",
@@ -31,7 +36,7 @@
     "sub_desc_tpl": "MAHE {sub}: {n} Modelle bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
     "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
     "prod_desc_tpl": "{marke} {name} ({vt}): {desc} Technische Daten, passendes Zubehör und Beratung bei VES-TECH Swiss. Preis auf Anfrage.",
-    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss liefert in die ganze Schweiz und nach Liechtenstein. Wir übernehmen Inbetriebnahme, Wartung, Reparaturen in unserer Werkstatt in Herisau und die Garantieabwicklung.",
+    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss liefert in die ganze Schweiz und nach Liechtenstein. Wir übernehmen Inbetriebnahme, Wartung, Reparaturen in der Partnerwerkstatt in Herisau und die Garantieabwicklung.",
     "verf_title": "MAHE-Schweissverfahren · MIS, HyperPuls, HyperCold | VES-TECH Swiss",
     "verf_desc": "MAHE-Schweissverfahren verständlich erklärt: MIS, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP mit ihren Einsatzbereichen.",
     "dl_title": "Downloads · MAHE-Katalog, EN 1090 & Sicherheitsdatenblätter",
@@ -138,7 +143,7 @@
       },
       {
         "q": "Verkauft VES-TECH Swiss auch gebrauchte Schweissanlagen?",
-        "a": "Ja. Unter Occasion stehen generalüberholte Anlagen aus der eigenen Werkstatt in Herisau, derzeit Mikroplasma-Anlagen Oerlikon PlasmaFix 51 und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft und kann nach Vereinbarung besichtigt werden. Preis auf Anfrage."
+        "a": "Ja. Unter Occasion stehen generalüberholte Anlagen, derzeit Mikroplasma-Anlagen Oerlikon PlasmaFix 51 und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft. Eine Besichtigung in der Partnerwerkstatt in Herisau ist nach Vereinbarung möglich. Preis auf Anfrage."
       },
       {
         "q": "Was ist Mikroplasma-Schweissen und welche Geräte gibt es dafür?",
@@ -376,7 +381,7 @@
     "svc_repair_title": "Schweissgerät reparieren lassen · Werkstatt Herisau AR",
     "svc_repair_desc": "Reparatur von Schweissgeräten und Plasmaschneidern in der Werkstatt in Herisau AR. Fehlersuche bis auf die Elektronik, Ersatzteile über den Hersteller MAHE.",
     "svc_repair_h1": "Schweissgerät reparieren lassen",
-    "svc_repair_lead": "Defekte Geräte nehmen wir nach Absprache in unserer Werkstatt in Herisau AR entgegen. Vor der Reparatur informieren wir Sie über den Befund und besprechen das weitere Vorgehen.",
+    "svc_repair_lead": "Defekte Geräte nehmen wir nach Absprache in der Partnerwerkstatt in Herisau AR entgegen. Vor der Reparatur informieren wir Sie über den Befund und besprechen das weitere Vorgehen.",
     "svc_repair_body": [
       [
         "Was in der Werkstatt passiert",
@@ -418,7 +423,7 @@
       ],
       [
         "Termin",
-        "<p>Die Kalibrierung erfolgt nach Vereinbarung in unserer Werkstatt in Herisau AR. Mehrere Geräte lassen sich in einem gemeinsamen Termin effizient prüfen. Zur Terminvereinbarung erreichen Sie uns unter <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+        "<p>Die Kalibrierung erfolgt nach Vereinbarung in der Partnerwerkstatt in Herisau AR. Mehrere Geräte lassen sich in einem gemeinsamen Termin effizient prüfen. Zur Terminvereinbarung erreichen Sie uns unter <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
       ]
     ],
     "svc_auto_title": "Schweissautomation und Schneidautomation | VES-TECH Swiss",
@@ -454,7 +459,7 @@
       ],
       [
         "Die Werkstatt in Herisau",
-        "<p>Unsere Werkstatt befindet sich an der {ws_street}, {ws_zip} {ws_city} ({ws_region_name}), bei der {partner}. Dort stehen Prüfplätze, Messmittel und ausreichend Platz für Schneidtische und 400-Ampere-Anlagen zur Verfügung.</p><p>Bitte bringen Sie Geräte nach vorheriger Absprache in die Werkstatt in Herisau. Der Unternehmenssitz und die Rechnungsadresse befinden sich in Bronschhofen. Beide Adressen sind auf der Kontaktseite und im Impressum aufgeführt.</p>"
+        "<p>Die Partnerwerkstatt befindet sich an der {ws_street}, {ws_zip} {ws_city} ({ws_region_name}), bei der {partner}. Dort stehen Prüfplätze, Messmittel und ausreichend Platz für Schneidtische und 400-Ampere-Anlagen zur Verfügung.</p><p>Bitte bringen Sie Geräte nach vorheriger Absprache in die Werkstatt in Herisau. Der Unternehmenssitz und die Rechnungsadresse befinden sich in Bronschhofen. Beide Adressen sind auf der Kontaktseite und im Impressum aufgeführt.</p>"
       ],
       [
         "Warum MAHE",
@@ -462,7 +467,7 @@
       ],
       [
         "Was gemessen und dokumentiert wird",
-        "<p>Schweissstromquellen werden nach EN 60974-14 kalibriert. Wer nach EN 1090 fertigt oder nach ISO 3834 arbeitet, braucht den Nachweis, dass die Anlage die angezeigten Werte tatsächlich liefert. Der Nachweis enthält Datum, Messwerte und Unterschrift.</p><p>Was dabei gemessen wird und wie oft es nötig ist, steht auf der <a href=\"{url_kalib}\">Seite zur Kalibrierung</a>. Reparaturen und Automationsprojekte haben ebenfalls eigene Seiten.</p>"
+        "<p>Schweissstromquellen werden nach EN 60974-14 kalibriert. Wer nach EN 1090 fertigt oder nach ISO 3834 arbeitet, braucht den Nachweis, dass die Anlage die angezeigten Werte tatsächlich liefert. Der Nachweis enthält Datum, Messwerte und Unterschrift.</p><p>Was dabei gemessen wird und wie oft es nötig ist, steht auf der <a href=\"{url_kalib}\">Seite zur Kalibrierung</a>. <a href=\"{url_repair}\">Reparaturen</a> und <a href=\"{url_automation}\">Automationsprojekte</a> haben ebenfalls eigene Seiten.</p>"
       ],
       [
         "Sprachen und Erreichbarkeit",
@@ -470,7 +475,7 @@
       ],
       [
         "Kundenreferenzen",
-        "<p>Kundenreferenzen und Firmenlogos veröffentlichen wir nur mit schriftlicher Zustimmung der betreffenden Kunden. Informationen zu unserem Unternehmen, unserer Werkstatt und den angebotenen Leistungen finden Sie auf diesen Seiten.</p>"
+        "<p>Kundenreferenzen und Firmenlogos veröffentlichen wir nur mit schriftlicher Zustimmung der betreffenden Kunden. Informationen zu unserem Unternehmen, der Partnerwerkstatt und den angebotenen Leistungen finden Sie auf diesen Seiten.</p>"
       ]
     ],
     "nav_about": "Über uns",
@@ -533,7 +538,12 @@
     "all_title": "Tous les appareils · gamme MAHE et occasions | VES-TECH Swiss",
     "all_desc": "{n} appareils chez VES-TECH Swiss : gamme MAHE pour MIG/MAG, TIG, MMA, découpe plasma et nettoyage électrolytique, et machines d’occasion. Prix sur demande.",
     "all_h1": "Tous les appareils",
-    "all_lead": "Toute la gamme MAHE, classée par procédé, ainsi que des machines d’occasion contrôlées de notre atelier. Service en Suisse et conseil direct du technicien.",
+    "all_lead": "Toute la gamme MAHE, classée par procédé, ainsi que des machines d’occasion contrôlées. Service en Suisse et conseil direct du technicien.",
+    "subcategory_guide_title": "Les points à vérifier pour choisir",
+    "process_followup_title": "Du procédé à l’application",
+    "process_followup_service": "Pour la mise en œuvre dans votre atelier, consultez les informations sur l’{automation} et l’{calibration} de votre équipement de soudage.",
+    "process_followup_micro": "Les appareils Oerlikon d’occasion pour le {microplasma} sont regroupés dans une présentation séparée.",
+    "usp_service_terms": {"repair": "réparation", "calib": "étalonnage"},
     "cat_title_tpl": "{cat} · acheter MAHE {sub_hint} en Suisse | VES-TECH Swiss",
     "cat_title_tpl_kurz": "{cat} · acheter MAHE en Suisse | VES-TECH Swiss",
     "cat_desc_tpl": "{cat} MAHE chez VES-TECH Swiss : {n} modèles, {subs}. Conseil, service et pièces de rechange depuis Herisau AR. Prix sur demande.",
@@ -541,7 +551,7 @@
     "sub_desc_tpl": "MAHE {sub} : {n} modèles chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
     "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
     "prod_desc_tpl": "{marke} {name} ({vt}) : {desc} Données techniques, accessoires adaptés et conseil chez VES-TECH Swiss. Prix sur demande.",
-    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss livre dans toute la Suisse et au Liechtenstein, assure la mise en service, l’entretien et les réparations à l’atelier de Herisau et gère la garantie.",
+    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss livre dans toute la Suisse et au Liechtenstein, assure la mise en service, l’entretien et les réparations à l’atelier partenaire de Herisau et gère la garantie.",
     "verf_title": "Procédés de soudage MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
     "verf_desc": "Découvrez les procédés de soudage MAHE et leurs applications : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP.",
     "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
@@ -648,7 +658,7 @@
       },
       {
         "q": "VES-TECH Swiss vend-elle aussi des machines à souder d’occasion ?",
-        "a": "Oui. La rubrique Occasion présente des machines entièrement révisées dans notre propre atelier de Herisau, actuellement les installations microplasma Oerlikon PlasmaFix 51 et Oerlikon PlasmaFix 50 S. Chaque machine est contrôlée avant la remise et peut être vue sur rendez-vous. Prix sur demande."
+        "a": "Oui. La rubrique Occasion présente des machines entièrement révisées, actuellement les installations microplasma Oerlikon PlasmaFix 51 et Oerlikon PlasmaFix 50 S. Chaque machine est contrôlée avant la remise. Une présentation de la machine dans l’atelier partenaire à Herisau est possible sur rendez-vous. Prix sur demande."
       },
       {
         "q": "Qu’est-ce que le soudage microplasma et quels appareils permettent de le pratiquer ?",
@@ -972,7 +982,7 @@
       ],
       [
         "Ce qui est mesuré et documenté",
-        "<p>Les sources de courant de soudage sont étalonnées selon EN 60974-14. Les entreprises qui fabriquent selon EN 1090 ou travaillent selon ISO 3834 doivent pouvoir démontrer que les valeurs délivrées par l’installation correspondent aux valeurs affichées, à l’aide d’un document daté et signé contenant les mesures.</p><p>La <a href=\"{url_kalib}\">page consacrée à l’étalonnage</a> précise les grandeurs mesurées et la fréquence des contrôles. Les réparations et les projets d’automatisation disposent également de pages dédiées.</p>"
+        "<p>Les sources de courant de soudage sont étalonnées selon EN 60974-14. Les entreprises qui fabriquent selon EN 1090 ou travaillent selon ISO 3834 doivent pouvoir démontrer que les valeurs délivrées par l’installation correspondent aux valeurs affichées, à l’aide d’un document daté et signé contenant les mesures.</p><p>La <a href=\"{url_kalib}\">page consacrée à l’étalonnage</a> précise les grandeurs mesurées et la fréquence des contrôles. Les <a href=\"{url_repair}\">réparations</a> et les <a href=\"{url_automation}\">projets d’automatisation</a> disposent également de pages dédiées.</p>"
       ],
       [
         "Langues et disponibilité",
@@ -1043,7 +1053,12 @@
     "all_title": "Tutti gli apparecchi · gamma MAHE e usato | VES-TECH Swiss",
     "all_desc": "{n} apparecchi da VES-TECH Swiss: la gamma MAHE per MIG/MAG, TIG, MMA, taglio al plasma e pulizia elettrolitica, più macchine usate. Prezzo su richiesta.",
     "all_h1": "Tutti gli apparecchi",
-    "all_lead": "L’intera gamma MAHE, organizzata per processo, insieme alle macchine usate controllate nella nostra officina. Assistenza svizzera e consulenza diretta del tecnico.",
+    "all_lead": "L’intera gamma MAHE, organizzata per processo, insieme alle macchine usate controllate. Assistenza in Svizzera e consulenza diretta del tecnico.",
+    "subcategory_guide_title": "Cosa valutare nella scelta",
+    "process_followup_title": "Dal processo all’applicazione",
+    "process_followup_service": "Per l’impiego in produzione trovate informazioni sull’{automation} e sulla {calibration} dell’attrezzatura di saldatura.",
+    "process_followup_micro": "Gli apparecchi Oerlikon d’occasione per il {microplasma} sono raccolti in una panoramica separata.",
+    "usp_service_terms": {"repair": "riparazione", "calib": "calibrazione"},
     "cat_title_tpl": "{cat} · acquistare MAHE {sub_hint} in Svizzera | VES-TECH Swiss",
     "cat_title_tpl_kurz": "{cat} · acquistare MAHE in Svizzera | VES-TECH Swiss",
     "cat_desc_tpl": "{cat} MAHE da VES-TECH Swiss: {n} modelli, {subs}. Consulenza, assistenza e ricambi da Herisau AR. Prezzo su richiesta.",
@@ -1051,7 +1066,7 @@
     "sub_desc_tpl": "MAHE {sub}: {n} modelli da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
     "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
     "prod_desc_tpl": "{marke} {name} ({vt}): {desc} Dati tecnici, accessori adatti e consulenza da VES-TECH Swiss. Prezzo su richiesta.",
-    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss consegna in tutta la Svizzera e nel Liechtenstein, esegue la messa in servizio, la manutenzione e le riparazioni nell’officina di Herisau e gestisce la garanzia.",
+    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss consegna in tutta la Svizzera e nel Liechtenstein, esegue la messa in servizio, la manutenzione e le riparazioni nell’officina partner di Herisau e gestisce la garanzia.",
     "verf_title": "Processi di saldatura MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
     "verf_desc": "I processi di saldatura MAHE e i loro impieghi: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP.",
     "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
@@ -1158,7 +1173,7 @@
       },
       {
         "q": "VES-TECH Swiss vende anche saldatrici usate?",
-        "a": "Sì. Sotto Occasioni si trovano macchine completamente revisionate nella nostra officina di Herisau, attualmente gli impianti microplasma Oerlikon PlasmaFix 51 e Oerlikon PlasmaFix 50 S. Ogni macchina viene controllata prima della consegna e può essere visionata su appuntamento. Prezzo su richiesta."
+        "a": "Sì. Nella sezione Occasioni si trovano macchine completamente revisionate, attualmente gli impianti microplasma Oerlikon PlasmaFix 51 e Oerlikon PlasmaFix 50 S. Ogni macchina viene controllata prima della consegna. È possibile visionarla su appuntamento presso l’officina partner a Herisau. Prezzo su richiesta."
       },
       {
         "q": "Che cos’è la saldatura microplasma e quali macchine esistono?",
@@ -1482,7 +1497,7 @@
       ],
       [
         "Che cosa viene misurato e documentato",
-        "<p>Le sorgenti di corrente per saldatura vengono calibrate secondo EN 60974-14. Chi produce secondo EN 1090 o lavora secondo ISO 3834 ha bisogno della prova che l’impianto eroghi quanto indicato sul display, con data, valori misurati e firma.</p><p>Che cosa viene misurato e con quale frequenza è descritto nella <a href=\"{url_kalib}\">pagina sulla calibrazione</a>. Riparazioni e progetti di automazione hanno pagine proprie.</p>"
+        "<p>Le sorgenti di corrente per saldatura vengono calibrate secondo EN 60974-14. Chi produce secondo EN 1090 o lavora secondo ISO 3834 ha bisogno della prova che l’impianto eroghi quanto indicato sul display, con data, valori misurati e firma.</p><p>Che cosa viene misurato e con quale frequenza è descritto nella <a href=\"{url_kalib}\">pagina sulla calibrazione</a>. <a href=\"{url_repair}\">Riparazioni</a> e <a href=\"{url_automation}\">progetti di automazione</a> hanno pagine proprie.</p>"
       ],
       [
         "Lingue e reperibilità",

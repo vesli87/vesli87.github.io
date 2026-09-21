@@ -552,7 +552,7 @@ def page_home(lang):
   <p class="lead">{e(C.t(lang,'hero_lead'))}</p>
 </div></section>
 
-{R.usp_row(lang)}
+{R.usp_row(lang, service_links=True)}
 {R.ref_block(lang)}
 
 <section class="programm"><div class="wrap">
@@ -619,6 +619,15 @@ def buying_guide(lang, cid):
             f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
 
 
+def subcategory_guide(lang, cid, sub):
+    guide = C.SUBCATEGORY_GUIDES[cid][sub][lang]
+    criteria = ''.join(f'<dt>{e(title)}</dt><dd>{e(text)}</dd>'
+                       for title, text in guide['criteria'])
+    return (f'<section class="buying-guide"><h2>{e(C.t(lang, "subcategory_guide_title"))}</h2>'
+            f'<dl>{criteria}</dl>'
+            f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
+
+
 def page_cat(lang, c, sub=None):
     cid = c["id"]
     if sub:
@@ -635,7 +644,7 @@ def page_cat(lang, c, sub=None):
                     sub=C.subT(lang, sub), cat=C.catT(lang, c), n=len(items))
         desc = clip(C.t(lang, "sub_desc_occ" if occ else "sub_desc_tpl",
                         sub=C.subT(lang, sub), n=len(items)), 155)
-        lead = C.catD(lang, c)
+        lead = C.SUBCATEGORY_GUIDES[cid][sub][lang]['intro']
         crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
                  (C.t(lang, "nav_products"), C.u_products(lang)),
                  (C.catT(lang, c), C.u_cat(lang, cid)),
@@ -683,7 +692,7 @@ def page_cat(lang, c, sub=None):
         + f'<div class="cathead"><h2>{e(C.subT(lang, sub) if sub else C.t(lang,"sec_all"))}</h2>'
           f'<span class="count">{len(items)} {e(C.t(lang,"items"))} · {e(C.t(lang,"poa"))}</span></div>'
         + R.pgrid(lang, items)
-        + (buying_guide(lang, cid) if not sub else '') + "</div></div>"
+        + (subcategory_guide(lang, cid, sub) if sub else buying_guide(lang, cid)) + "</div></div>"
     )
     ld = [R.ld_org(lang),
           R.ld_webpage(lang, url, title, desc, {"@type": "CollectionPage"}),
@@ -859,6 +868,28 @@ def page_product(lang, p):
                            og_image=R.img_abs(p["img"], 1000))
 
 
+def process_followup(lang):
+    """Context after the MAHE procedures; Oerlikon stays a separate topic."""
+    def label(key):
+        text = C.t(lang, key)
+        return text if lang == 'de' else text.lower()
+
+    links = {
+        'automation': (C.u_service(lang, 'auto'), label('foot_auto')),
+        'calibration': (C.u_service(lang, 'calib'), label('foot_calib')),
+        'microplasma': (C.u_sub(lang, 'occasion', 'Mikroplasma'),
+                       C.subT(lang, 'Mikroplasma') if lang == 'de'
+                       else C.subT(lang, 'Mikroplasma').lower()),
+    }
+    replacements = {key: f'<a href="{e(url)}">{e(text)}</a>'
+                    for key, (url, text) in links.items()}
+    # Escape every literal text fragment; only these fixed links add markup.
+    service = e(C.t(lang, 'process_followup_service')).format_map(replacements)
+    micro = e(C.t(lang, 'process_followup_micro')).format_map(replacements)
+    return (f'<section class="buying-guide"><h2>{e(C.t(lang, "process_followup_title"))}</h2>'
+            f'<p>{service}</p><p>{micro}</p></section>')
+
+
 def page_processes(lang):
     url, alts = C.u_page(lang, "processes"), C.alternates("page", key="processes")
     cards = ""
@@ -872,7 +903,8 @@ def page_processes(lang):
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
                                       (C.t(lang, "n_process"), None)],
                    h1=C.t(lang, "verf_h1"), desc=C.t(lang, "verf_sub"))
-            + f'<div class="catalog"><div class="wrap"><div class="procgrid">{cards}</div></div></div>')
+            + f'<div class="catalog"><div class="wrap"><div class="procgrid">{cards}</div>'
+            + process_followup(lang) + '</div></div>')
     ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "verf_title"), C.t(lang, "verf_desc")),
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "n_process"), url)])]
@@ -1151,6 +1183,8 @@ def page_about(lang):
         ws_street=C.WORKSHOP["street"], ws_zip=C.WORKSHOP["zip"],
         ws_city=C.WORKSHOP["city"], ws_region_name=C.regionName(lang, C.WORKSHOP["region"]),
         url_kalib=C.u_service(lang, "calib"),
+        url_repair=C.u_service(lang, "repair"),
+        url_automation=C.u_service(lang, "auto"),
         # Das EN-1090-Zertifikat des Herstellers, damit die Aussage
         # "professionelle Geraete" nicht bloss behauptet dasteht.
         url_dl=DL_EN1090["u"],

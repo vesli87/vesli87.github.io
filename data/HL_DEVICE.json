@@ -875,7 +875,7 @@
    "Arbeitsbereich 3000 x 1500 mm",
    "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
    "Schneidstrom 60 A, 120 A oder 180 A",
-   "Steuerung über das System MyPlasm CNC von Proma Elektronika",
+   "Steuerung über das System CNC von MAHE",
    "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
    "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
    "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
@@ -890,7 +890,7 @@
    "Surface de travail 3000 x 1500 mm",
    "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
    "Courant de coupe 60 A, 120 A ou 180 A",
-   "Commande par le système MyPlasm CNC de Proma Elektronika",
+   "Commande par le système CNC de MAHE",
    "Import de dessins 2D aux formats DXF et HPGL/PLT",
    "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
    "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
@@ -905,7 +905,7 @@
    "Area di lavoro 3000 x 1500 mm",
    "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
    "Corrente di taglio 60 A, 120 A o 180 A",
-   "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
+   "Controllo tramite il sistema CNC di MAHE",
    "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
    "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
    "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
@@ -915,7 +915,7 @@
    "Console di comando con computer Windows e schermo sul tavolo",
    "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
   ],
-  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 3001 - 3015, Set-Nrn. 1721.300.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE."
+  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 3001 - 3015, Set-Nrn. 1721.300.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT)."
  },
  "mpt-2501": {
   "de": [
@@ -923,7 +923,7 @@
    "Arbeitsbereich 2500 x 1250 mm",
    "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
    "Schneidstrom 60 A, 120 A oder 180 A",
-   "Steuerung über das System MyPlasm CNC von Proma Elektronika",
+   "Steuerung über das System CNC von MAHE",
    "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
    "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
    "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
@@ -938,7 +938,7 @@
    "Surface de travail 2500 x 1250 mm",
    "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
    "Courant de coupe 60 A, 120 A ou 180 A",
-   "Commande par le système MyPlasm CNC de Proma Elektronika",
+   "Commande par le système CNC de MAHE",
    "Import de dessins 2D aux formats DXF et HPGL/PLT",
    "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
    "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
@@ -953,7 +953,7 @@
    "Area di lavoro 2500 x 1250 mm",
    "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
    "Corrente di taglio 60 A, 120 A o 180 A",
-   "Controllo tramite il sistema MyPlasm CNC di Proma Elektronika",
+   "Controllo tramite il sistema CNC di MAHE",
    "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
    "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
    "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
@@ -963,6 +963,6 @@
    "Console di comando con computer Windows e schermo sul tavolo",
    "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
   ],
-  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE."
+  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT)."
  }
 }

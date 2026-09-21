@@ -149,6 +149,11 @@ Trennschnitt **< 35 mm**, empfohlener Schnitt **< 25 mm**. Die widersprüchliche
 zusätzliche Leistung übernommen; die eng begrenzten Abweichungen stehen in
 `verify_mahe.py::BEWUSST`. Die importierte technische Tabelle bleibt unverändert.
 
+Bei MPT 3001 und MPT 2501 lautet der Steuerungspunkt in der Merkmalsliste
+seit dem 21.09.2026 auf ausdrückliche Vorgabe des Inhabers «Steuerung über das
+System CNC von MAHE», mit entsprechender FR-/IT-Fassung. Die Herkunft dieser
+gezielten Textkorrektur ist in `HL_DEVICE.json::src` dokumentiert.
+
 ## 5. Bilder
 
 `build/images.py` lädt die Originale **einmalig** von `mahe-online.de`, skaliert sie

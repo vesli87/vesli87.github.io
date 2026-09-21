@@ -10,7 +10,7 @@ Statische Website aus JSON und Python, ohne Framework oder Bundler.
 | Katalog | 79 Produkte, 5 Kategorien, 3 Sprachen |
 | Seiten | 360 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
 | Sitemap | 351 indexierbare URLs mit Sprachalternativen |
-| Suche | Lokaler Suchindex mit Synonymen und Tippfehlertoleranz |
+| Suche | Lokaler Suchindex mit Produkten, Dienstleistungen, Synonymen und Tippfehlertoleranz |
 | SEO | Individuelle Metadaten, canonical, hreflang, JSON-LD, Sitemap, IndexNow |
 | Beratung | Auswahlhilfen je Hauptkategorie, produktbezogenes Kontaktformular, Anfrageliste |
 | Statistik | Ahrefs für Produktinteresse und bestätigte Anfragen; Cloudflare für Ladezeiten, beide nach Zustimmung |
@@ -23,7 +23,7 @@ python3 build/check.py
 python3 build/audit.py
 python3 build/security_check.py
 python3 build/verify_mahe.py
-node --test build/test_frontend.mjs
+node --test build/test_*.mjs
 python3 -m unittest discover -s build -p 'test_*.py'
 python3 -m http.server 8099 --bind 127.0.0.1
 ```
@@ -70,8 +70,10 @@ Browserblockern und bewussten Ausschlüssen ist die Statistik keine Vollzählung
 Ahrefs erhält nur geprüfte kanonische Seitenadressen, bekannte Produkt-IDs und
 feste Ereigniswerte. Vier UTM-Werte müssen gemeinsam einem Eintrag in
 `data/ANALYTICS_CAMPAIGNS.json` entsprechen. Unbekannte Parameter, Fragmente,
-Suchseiten und unsichere Referrer verhindern das Laden. `?product=` ist nur für
-bekannte Produkte auf der Kontaktseite erlaubt und wird nicht als URL übertragen.
+Suchseiten und unsichere Referrer verhindern das Laden. `?product=` mit optionalem `option=` ist nur für bekannte Produktkombinationen
+auf der Kontaktseite erlaubt. `?service=` akzeptiert nur die vier bekannten
+Dienstleistungen. Diese Parameter werden nicht als URL übertragen, Optionen
+werden nicht an die Analytik gesendet.
 Cloudflare behält die vollständige Query-Sperre, da sein Beacon keine gemeinsame
 URL-Bereinigung unterstützt. Beide Zahlenreihen deshalb getrennt auswerten.
 
@@ -151,3 +153,28 @@ Sicherheit und Betrieb: CSP/SRI und öffentliche Dateigrenzen werden in CI gepr�
 CodeQL, Secret Scanning/Push Protection und Dependabot unterstützen die Kontrolle;
 `main` ist gegen Löschung und Force-Push geschützt. Details und verbleibende
 Plattform-/Kontogrenzen stehen in [SECURITY.md](SECURITY.md).
+
+## Präzise Anfragen und Occasionen
+
+`data/INQUIRY_OPTIONS.json` enthält ausschliesslich belegte Varianten und
+identifizierte Einzelgeräte. Der vorgerenderte, übersetzte Laufzeitkatalog ist
+unabhängig vom Suchindex und von der Statistik. Der Produktkontext einer Anfrage
+bleibt erhalten, wenn die Suche ausfällt oder der Besucher Statistik ablehnt.
+Freitext wird nicht mit automatisch eingefügtem Produkttext überschrieben.
+
+Die funktionale Anfrageliste verwendet `vt.cart.v2`: Produkt-ID, Options-ID und
+Menge, ohne Namen oder Kontaktdaten. Bekannte Einträge aus v1 werden migriert;
+Namen, Bilder und Links werden aus dem aktuellen Katalog neu abgeleitet. Zwei
+Varianten bleiben getrennte Positionen; ein identifiziertes Einzelgerät lässt
+sich höchstens einmal anfragen. Die Auswahl ist keine Reservierung.
+
+Die Verfügbarkeit der PlasmaFix-51-Geräte steht mit Bestätigungsdatum separat in
+`INQUIRY_OPTIONS.json`. Foto-Positionen dienen der Identifikation, nicht als
+Erfindung separater Detailfotos oder Zustandsnachweise. Bei einem Verkauf die
+verifizierte Verfügbarkeit und nötigenfalls die angebotenen Optionen aktualisieren.
+
+Optionale Angaben zu Werkstoff, Anschluss, Fehlerbild oder Termin bleiben nur
+im Formular und in der geschäftlichen Nachricht. Nach bestätigter Übermittlung
+erscheint eine lokale kopierbare Zusammenfassung; sie ist keine zusätzliche
+E-Mail-Bestätigung. Varianten, Gerätepositionen und Formulardetails werden nicht
+an Ahrefs oder Cloudflare gesendet.

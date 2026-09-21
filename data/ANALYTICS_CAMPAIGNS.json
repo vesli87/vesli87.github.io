@@ -148,5 +148,17 @@
   "medium": "organic_social",
   "campaign": "occasion-microplasma-2026",
   "content": "day07-microplasma"
+ },
+ "linkedin-day08-sammelanfrage": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "day08-sammelanfrage-de"
+ },
+ "linkedin-day10-diagnostic-fr": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "day10-diagnostic-fr"
  }
 }

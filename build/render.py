@@ -867,17 +867,20 @@ def cart_drawer(lang):
   <div class="items" id="cartItems"></div>
   <form class="form" id="cartForm" action="{e(C.u_page(lang,'contact'))}" method="post" hidden novalidate>
     <label for="cName">{e(C.t(lang,'f_name'))}</label>
-    <input id="cName" name="name" type="text" required autocomplete="organization"
+    <input id="cName" name="name" type="text" required autocomplete="organization" maxlength="120"
            placeholder="Max Muster · Muster AG">
     <label for="cMail">{e(C.t(lang,'f_mail'))}</label>
-    <input id="cMail" name="email" type="email" required autocomplete="email" autocapitalize="none" spellcheck="false" placeholder="max@firma.ch">
+    <input id="cMail" name="email" type="email" required autocomplete="email" maxlength="254" autocapitalize="none" spellcheck="false" placeholder="max@firma.ch">
     <label for="cMsg">{e(C.t(lang,'f_msg'))}</label>
-    <textarea id="cMsg" name="message" rows="2" placeholder="…"></textarea>
+    <textarea id="cMsg" name="message" rows="2" maxlength="5000" placeholder="{e(C.t(lang,'inquiry_message_hint'))}"></textarea>
+    {inquiry_qualification(lang, 'c')}
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    {inquiry_next_steps(lang)}
     {form_note(lang)}
     <button class="send" type="submit">{e(C.t(lang,'f_send'))}</button>
     <p class="fstatus" role="status" aria-live="polite"></p>
   </form>
+  {inquiry_summary(lang, 'cartForm')}
 </aside>"""
 
 
@@ -933,6 +936,89 @@ def form_note(lang):
             f'<a href="{e(C.u_page(lang, "privacy"))}">{e(C.t(lang, "nav_datenschutz"))}</a></p>')
 
 
+def inquiry_qualification(lang, prefix):
+    fields = [("timeframe", "general", "text", 300),
+              ("material", "equipment", "text", 300),
+              ("thickness", "equipment", "text", 300),
+              ("power", "equipment", "text", 300),
+              ("existing_model", "accessory repair", "text", 300),
+              ("fault", "repair", "textarea", 1000),
+              ("device_count", "calib", "number", 5),
+              ("application", "auto", "textarea", 300)]
+    rows = []
+    for name, group, kind, limit in fields:
+        fid = f"{prefix}-{name}"
+        label = C.t(lang, "inquiry_field_" + name)
+        attrs = f'id="{fid}" name="{name}" maxlength="{limit}" disabled'
+        if kind == "textarea":
+            control = f'<textarea {attrs} rows="3"></textarea>'
+        elif kind == "number":
+            control = f'<input {attrs} type="number" min="1" max="9999" step="1" inputmode="numeric">'
+        else:
+            control = f'<input {attrs} type="text">'
+        rows.append(f'<div data-qualification="{group}" hidden><label for="{fid}">{e(label)}</label>{control}</div>')
+    return (f'<details class="inquiry-details"><summary>{e(C.t(lang,"inquiry_details_title"))}</summary>'
+            f'<p class="form-note">{e(C.t(lang,"inquiry_details_note"))}</p>{"".join(rows)}</details>')
+
+
+def inquiry_next_steps(lang):
+    return f'<p class="inquiry-next">{e(C.t(lang, "inquiry_next_steps"))}</p>'
+
+
+def inquiry_summary(lang, form_id):
+    return (f'<section class="inquiry-summary" data-inquiry-summary="{form_id}" '
+            f'aria-label="{e(C.t(lang,"inquiry_summary_title"))}" tabindex="-1" hidden></section>')
+
+
+def inquiry_catalog(lang):
+    choices = C.inquiry_options()
+    return {p["id"]: {"n": C.pName(lang, p), "u": C.u_prod(lang, p), "g": thumb(p), "c": p["cat"],
+                       "kind": choices.get(p["id"], {}).get("kind", ""),
+                       "options": [{"id": opt["id"], "n": opt["label"][lang], "d": opt["description"][lang]}
+                                   for opt in choices.get(p["id"], {}).get("options", [])]}
+            for p in C.P}
+
+
+def inquiry_product_choices(lang, p):
+    row = C.inquiry_options().get(p["id"])
+    if not row:
+        return ""
+    label = C.t(lang, "inquiry_unit_label" if row["kind"] == "unit" else "inquiry_variant_label")
+    options = "".join(f'<option value="{e(opt["id"])}">{e(opt["label"][lang])}</option>' for opt in row["options"])
+    compare = ""
+    if row["kind"] == "variant":
+        compare = (f'<details class="option-details"><summary>{e(C.t(lang,"inquiry_compare"))}</summary><dl>'
+                   + "".join(f'<dt>{e(opt["label"][lang])}</dt><dd>{e(opt["description"][lang])}</dd>' for opt in row["options"])
+                   + '</dl></details>')
+    return (f'<div class="inquiry-choice"><label for="inquiryOption">{e(label)}</label>'
+            f'<select id="inquiryOption" data-inquiry-option><option value="">{e(C.t(lang,"inquiry_option_unsure"))}</option>'
+            f'{options}</select>{compare}</div>')
+
+
+def inquiry_unit_cards(lang, p):
+    row = C.inquiry_options().get(p["id"], {})
+    if row.get("kind") != "unit":
+        return ""
+    cards = []
+    for opt in row["options"]:
+        href = C.u_page(lang, 'contact') + '?product=' + p['id'] + '&option=' + opt['id']
+        cards.append(f'<article class="inquiry-unit"><h3>{e(opt["label"][lang])}</h3>'
+                     f'<p>{e(opt["description"][lang])}</p><a class="btn ghost" '
+                     f'data-product-consult="{e(p["id"])}" data-option="{e(opt["id"])}" '
+                     f'href="{e(href)}">{e(C.t(lang,"inquiry_unit_consult"))}</a></article>')
+    return (f'<section class="inquiry-units"><h2>{e(C.t(lang,"inquiry_units_title"))}</h2>'
+            f'<p>{e(C.t(lang,"inquiry_units_note"))}</p><div class="inquiry-unit-grid">{"".join(cards)}</div></section>')
+
+
+def inquiry_availability(lang, p):
+    stock = C.inquiry_options().get(p["id"], {}).get("availability")
+    if not stock:
+        return e(C.t(lang, 'avail_val'))
+    import datetime
+    date = datetime.date.fromisoformat(stock["confirmed_on"])
+    return e(C.t(lang, 'inquiry_stock_confirmed', n=stock['count'], date=date.strftime('%d.%m.%Y')))
+
+
 JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "opened_mail",
            "qty_less", "qty_more", "cart_remove", "consult_product", "search_unavailable",
            "gal_prev", "gal_next",
@@ -954,6 +1040,10 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
              "mail_f_sent", "mail_f_dev", "mail_s_cart", "mail_s_item", "mail_s_item1",
              "mail_s_kont"]
 
+JS_KEYS += ["inquiry_product", "inquiry_service", "inquiry_option_unsure", "inquiry_context_invalid",
+            "inquiry_summary_title", "inquiry_summary_note", "inquiry_summary_copy", "inquiry_summary_copied",
+            "inquiry_summary_copy_manual", "inquiry_details_title", "form_too_long", "form_invalid_count", "search_group_services"]
+
 
 def boot_json(lang):
     """Der Inhalt des Startskripts - ohne die <script>-Tags.
@@ -969,11 +1059,14 @@ def boot_json(lang):
         "searchIndex": f"/data/search-{lang}.json",
         "searchUrl": C.u_page(lang, "search"),
         "productsUrl": C.u_products(lang),
+        "inquiryCatalog": inquiry_catalog(lang),
+        "inquiryServices": C.inquiry_services(lang),
         "web3formsKey": C.web3forms_key(),
         "mailto": C.COMPANY["email"],
         "analytics": {
             "paths": C.analytics_paths(),
             "products": {p["id"]: p["cat"] for p in C.P},
+            "inquiryOptions": {pid: [opt["id"] for opt in row["options"]] for pid, row in C.inquiry_options().items()},
             "campaigns": C.analytics_campaigns(),
             "contactPath": C.u_page(lang, "contact"),
             "servicePaths": {C.u_service(lang): "overview",

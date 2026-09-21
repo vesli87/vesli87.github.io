@@ -50,7 +50,7 @@ python3 build/build.py
 python3 build/check.py
 python3 build/audit.py
 python3 build/verify_mahe.py   # gegen gespeicherte Herstellerdaten
-node --test build/test_frontend.mjs
+node --test build/test_*.mjs
 python3 -m unittest discover -s build -p 'test_*.py'
 python3 build/security_check.py
 ```

@@ -24,9 +24,11 @@
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
   - Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau (AR) — bei der
     Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung.
-    Das ist die **Besucheradresse**: sie steht im JSON-LD, in `geo.*` und im
-    Google-Unternehmensprofil, und die drei müssen übereinstimmen
-    (Quelle: `build/core.py::WORKSHOP`).
+    Das ist die **Besucheradresse nach Vereinbarung** im JSON-LD und in
+    `geo.*` (Quelle: `build/core.py::WORKSHOP`). Das Google-Unternehmensprofil
+    muss die tatsächlich bestätigte Betriebsform und Adresse abbilden; die
+    Partnerwerkstatt nicht automatisch als eigene Niederlassung eintragen.
+    Für die laufende Verifizierung hat der Inhaber Bronschhofen bestätigt.
   - Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz —
     nur im Impressum, in AGB/Datenschutz und auf der Kontaktseite
   - +41 76 710 91 39 · `vestechswiss@gmail.com` · telefonisch erreichbar
@@ -245,11 +247,11 @@ Index wird beim ersten Tastendruck geladen (`data/search-<lang>.json`, ~45 kB).
 - „Meinten Sie …?" aus dem Vokabular des Index
 - Dropdown mit Tastatursteuerung (↑/↓/Enter/Esc), `role=combobox` + `role=listbox`,
   Trefferhervorhebung; `/` fokussiert das Suchfeld
-- Ergebnisseite `/suche/?q=…` mit Geräten, Kategorien, Verfahren und Downloads
+- Ergebnisseite `/suche/?q=…` mit Geräten, Dienstleistungen, Kategorien, Verfahren und Downloads
 
 ## 9. Anfrageliste
 
-`localStorage` unter `vt.cart.v1`, mit `try/catch` abgesichert (private Fenster
+`localStorage` unter `vt.cart.v2` (Migration bekannter `vt.cart.v1`-Einträge), mit `try/catch` abgesichert (private Fenster
 werfen). Menge pro Position, Persistenz über Seitenwechsel, Zähler im Header.
 Erfolgreiches direktes Absenden entfernt nur die tatsächlich abgesendeten Mengen.
 Während des Versands hinzugefügte Mengen bleiben erhalten. Bei Fehlern und beim
@@ -628,3 +630,28 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
   `SPECNOTE` erläutert die getrennten Reinigungsleistungen. Die widersprechende
   3600-W-Webodräžka des Plus wird als präzise `BEWUSST`-Ausnahme dokumentiert;
   diese sachliche Korrektur ist kein Teil der sprachlichen Normalisierung.
+
+## 20. Produktwahl und Geschäftsanfragen (21.09.2026)
+
+- `data/INQUIRY_OPTIONS.json`: belegte MMS-/EcoMIG-Varianten und drei
+  identifizierte PlasmaFix-51-Geräte, mit DE/FR/IT-Beschriftung und getrenntem
+  datiertem Verfügbarkeitsnachweis. Keine Preise, Reservierungen oder erfundenen
+  Hersteller-Artikelnummern. Zentrale Validierung in `core.inquiry_options()`.
+- `window.VT.inquiryCatalog` ist der feste aktuelle Katalog für die funktionale
+  Anfrageliste und den direkten Kontakt. Kein Suchindex-Fetch und keine Statistik
+  nötig, um Produkt, Variante, Einzelgerät und deren sichere URL zu erhalten.
+- `vt.cart.v2` speichert nur ID, Options-ID und Menge. Namen und URLs stammen aus
+  dem aktuellen Katalog. Alte v1-Positionen werden geprüft und migriert.
+  Varianten bleiben getrennt; ein konkretes Einzelgerät hat höchstens Menge 1.
+- Kontakt-URLs erlauben ein bekanntes Produkt mit optionalem `option` oder eine
+  bekannte `service`-Kennung. Sichtbarer Kontext und Geschäftsnachricht bleiben
+  von Analytics unabhängig. Freitext wird nicht überschrieben.
+- Der Suchindex enthält zusätzlich `services`; Python/JS verwenden dieselbe
+  Normalisierung. Exakte Servicenamen müssen zu den echten Serviceseiten führen.
+- Kleine optionale Qualifizierungsfelder ergänzen das Formular. Keine Kontakte
+  oder Freitexte in URL, Analytics oder localStorage. Erfolgszusammenfassungen
+  existieren nur lokal nach bestätigtem Versand.
+- `node --test build/test_*.mjs` umfasst Frontend und Query-Datenschutzregressionen;
+  `test_inquiry.py` prüft Register, sichere Ausgabe und Servicerouten.
+- Produkt-/Kategoriezahlen bezeichnen Katalogeinträge, nicht Lagerbestand.
+  Die MPT-Illustration erhält eine sichtbare Bildunterschrift.

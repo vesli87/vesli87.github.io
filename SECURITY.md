@@ -147,3 +147,14 @@ Technische Referenzen: [GitHub Secret Scanning](https://docs.github.com/en/code-
 [Domain-Verifizierung](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages),
 [CSP und Skript-Hashes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/script-src),
 [Grenze von frame-ancestors in Meta-Tags](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Content-Security-Policy/frame-ancestors).
+
+## Validierter Anfragekontext (21.09.2026)
+
+Die funktionale Anfrageliste speichert in v2 nur Produkt-ID, Options-ID und Menge.
+Gespeicherte Bezeichnungen, Bilder und URLs werden nicht vertraut, sondern aus
+dem aktuellen vorgerenderten Katalog abgeleitet. Unbekannte Produkte/Optionen
+werden verworfen oder im Kontakt sichtbar als ungültig gekennzeichnet.
+Formulardaten und lokale Erfolgszusammenfassungen bleiben ausserhalb von
+localStorage und Analytics. Analytics akzeptiert nur bekannte Produkt-/Options-
+oder Serviceparameter auf der Kontaktseite und sendet deren kanonische URL ohne
+Query. Der gewählte Varianten-/Geräteschlüssel wird nicht gemessen.

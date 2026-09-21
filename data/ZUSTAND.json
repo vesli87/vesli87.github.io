@@ -2,9 +2,9 @@
  "_kommentar": "Zustand einer Occasion-Maschine, vom Inhaber angegeben. Steht sichtbar auf der Produktseite und als itemCondition im JSON-LD. Wer hier etwas eintraegt, behauptet es gegenueber dem Kaeufer - also nur, was wirklich gemacht wurde.",
  "plasmafix-51": {
   "grad": "refurbished",
-  "de": "Generalüberholt, drei Anlagen verfügbar (Ausführungen 51 und P+T). Alle sind komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt.",
-  "fr": "Entièrement révisées, trois machines disponibles (versions 51 et P+T). Toutes ont été remises en état ; le système de refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
-  "it": "Completamente revisionate, tre macchine disponibili (versioni 51 e P+T). Tutte sono state ripristinate; il sistema di raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito."
+  "de": "Generalüberholt (Ausführungen 51 und P+T). Alle sind komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt.",
+  "fr": "Entièrement révisées (versions 51 et P+T). Toutes ont été remises en état ; le système de refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
+  "it": "Completamente revisionate (versioni 51 e P+T). Tutte sono state ripristinate; il sistema di raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito."
  },
  "plasmafix-50s": {
   "grad": "refurbished",

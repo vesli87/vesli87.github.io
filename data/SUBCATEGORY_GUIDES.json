@@ -218,6 +218,10 @@
           [
             "Konfiguration vorbereiten",
             "Beide Modelle nutzen MyPlasm CNC und unterstützen DXF sowie HPGL/PLT. Nennen Sie Werkstoff, Blechdicke, verfügbare Fläche, Netzanschluss und Druckluft für die Zusammenstellung des Sets."
+          ],
+          [
+            "Welche Teile fertigen Sie?",
+            "Nennen Sie die gewünschte Masshaltigkeit und die Stückzahlen und halten Sie eine Beispielzeichnung bereit. Damit lassen sich Schnittaufgabe und benötigter Anlagenumfang vor dem Angebot klären."
           ]
         ]
       },
@@ -231,6 +235,10 @@
           [
             "Préparer la configuration",
             "Les deux utilisent MyPlasm CNC et acceptent DXF ainsi que HPGL/PLT. Précisez matériau, épaisseur, espace disponible, alimentation et air comprimé pour composer l’ensemble."
+          ],
+          [
+            "Quelles pièces fabriquez-vous ?",
+            "Précisez les tolérances dimensionnelles souhaitées et les quantités, et préparez un exemple de plan. Ces éléments permettent de définir la tâche de découpe et les équipements nécessaires avant l’offre."
           ]
         ]
       },
@@ -244,6 +252,10 @@
           [
             "Preparare la configurazione",
             "Entrambi utilizzano MyPlasm CNC e supportano DXF e HPGL/PLT. Specificate materiale, spessore, spazio disponibile, alimentazione e aria compressa per definire il set."
+          ],
+          [
+            "Quali pezzi producete?",
+            "Indicate le tolleranze dimensionali richieste e le quantità e preparate un disegno di esempio. Questi dati aiutano a definire il lavoro di taglio e le attrezzature necessarie prima dell’offerta."
           ]
         ]
       }
@@ -261,6 +273,10 @@
           [
             "Aufgabe und Ausstattung",
             "MiniReiniger ist für mobilen Einsatz geführt; CT 200 kombiniert WIG und Reinigung. Nennen Sie Werkstoff, Oberflächenzustand und vorhandenes Zubehör, damit Gerät, Mittel und Lieferumfang zusammenpassen."
+          ],
+          [
+            "Wie sieht die Naht aus?",
+            "Ein Foto der Naht und die Angabe des verwendeten Schweissverfahrens helfen bei der Beratung. Beschreiben Sie, ob Anlauffarben entfernt, die Oberfläche poliert oder eine Markierung erstellt werden soll."
           ]
         ]
       },
@@ -274,6 +290,10 @@
           [
             "Tâche et équipement",
             "MiniReiniger est destiné à l’usage mobile ; CT 200 combine TIG et nettoyage. Précisez matériau, état de surface et accessoires existants pour vérifier appareil, produits et contenu de livraison."
+          ],
+          [
+            "Quel est l’état du cordon ?",
+            "Une photo du cordon et le procédé de soudage utilisé facilitent le conseil. Précisez si vous souhaitez éliminer les colorations thermiques, polir la surface ou réaliser un marquage."
           ]
         ]
       },
@@ -287,6 +307,10 @@
           [
             "Compito e dotazione",
             "MiniReiniger è destinato all’uso mobile; CT 200 combina TIG e pulizia. Indicate materiale, stato della superficie e accessori esistenti per verificare apparecchio, prodotti e fornitura."
+          ],
+          [
+            "Qual è lo stato del cordone?",
+            "Una foto del cordone e l’indicazione del processo di saldatura utilizzato aiutano nella consulenza. Precisate se volete eliminare le colorazioni termiche, lucidare la superficie o realizzare una marcatura."
           ]
         ]
       }
@@ -714,6 +738,10 @@
           [
             "Ausführung bestätigen",
             "Die aufgeführten Brenner sind in 6 oder 12 m erhältlich. Nennen Sie die vollständige Theta-Bezeichnung, den vorhandenen Brenner und die benötigte Länge."
+          ],
+          [
+            "Welcher Anschluss ist vorhanden?",
+            "Für einen Ersatzbrenner helfen ein Foto des Typenschilds sowie Angaben zum Anschluss und zur Teilenummer. Ein ähnlich aussehender Stecker belegt noch nicht, dass der Brenner zu Ihrer Anlage passt."
           ]
         ]
       },
@@ -727,6 +755,10 @@
           [
             "Confirmer la version",
             "Les torches présentées existent en 6 ou 12 m. Précisez la désignation complète de Theta, la torche existante et la longueur nécessaire."
+          ],
+          [
+            "Quel raccordement est présent ?",
+            "Pour une torche de remplacement, une photo de la plaque signalétique, les indications de raccordement et la référence de la pièce sont utiles. Un connecteur d’aspect similaire ne suffit pas à établir la compatibilité avec votre installation."
           ]
         ]
       },
@@ -740,6 +772,10 @@
           [
             "Confermare la versione",
             "Le torce presentate sono disponibili da 6 o 12 m. Specificate la denominazione completa di Theta, la torcia esistente e la lunghezza necessaria."
+          ],
+          [
+            "Quale collegamento è presente?",
+            "Per una torcia di ricambio sono utili una foto della targhetta, i dati del collegamento e il riferimento del componente. Un connettore dall’aspetto simile non dimostra la compatibilità con il vostro impianto."
           ]
         ]
       }

@@ -59,7 +59,7 @@ jobs:
         run: python3 build/verify_mahe.py
 
       - name: Frontend regression tests
-        run: node --test build/test_frontend.mjs
+        run: node --test build/test_*.mjs
 
       - name: Generator regression tests
         run: python3 -m unittest discover -s build -p 'test_*.py'

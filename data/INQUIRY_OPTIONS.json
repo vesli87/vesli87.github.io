@@ -1,0 +1,138 @@
+{
+  "mms": {
+    "kind": "variant",
+    "options": [
+      {
+        "id": "mms-2000c",
+        "label": {
+          "de": "MMS 2000C",
+          "fr": "MMS 2000C",
+          "it": "MMS 2000C"
+        },
+        "description": {
+          "de": "230 V, 10 bis 200 A laut technischer Tabelle.",
+          "fr": "230 V, de 10 à 200 A selon le tableau technique.",
+          "it": "230 V, da 10 a 200 A secondo la tabella tecnica."
+        }
+      },
+      {
+        "id": "mms-2000p-ex",
+        "label": {
+          "de": "MMS 2000P EX",
+          "fr": "MMS 2000P EX",
+          "it": "MMS 2000P EX"
+        },
+        "description": {
+          "de": "230 V, 10 bis 200 A; EX-Ausführung mit Impulslichtbogen.",
+          "fr": "230 V, de 10 à 200 A ; version EX avec arc pulsé.",
+          "it": "230 V, da 10 a 200 A; versione EX con arco pulsato."
+        }
+      },
+      {
+        "id": "mms-3000-ex",
+        "label": {
+          "de": "MMS 3000 EX",
+          "fr": "MMS 3000 EX",
+          "it": "MMS 3000 EX"
+        },
+        "description": {
+          "de": "3~ 400 V, 10 bis 300 A; EX-Ausführung mit Impulslichtbogen.",
+          "fr": "3~ 400 V, de 10 à 300 A ; version EX avec arc pulsé.",
+          "it": "3~ 400 V, da 10 a 300 A; versione EX con arco pulsato."
+        }
+      }
+    ]
+  },
+  "ecomig": {
+    "kind": "variant",
+    "options": [
+      {
+        "id": "ecomig-2000-digital",
+        "label": {
+          "de": "EcoMIG 2000 Digital",
+          "fr": "EcoMIG 2000 Digital",
+          "it": "EcoMIG 2000 Digital"
+        },
+        "description": {
+          "de": "Digitale Anzeigen und Synergiebedienung; die Tabelle nennt 230 V und 10 bis 200 A.",
+          "fr": "Affichage numérique et commande synergique ; le tableau indique 230 V et de 10 à 200 A.",
+          "it": "Display digitali e controllo sinergico; la tabella indica 230 V e da 10 a 200 A."
+        }
+      },
+      {
+        "id": "ecomig-3000-digital",
+        "label": {
+          "de": "EcoMIG 3000 Digital",
+          "fr": "EcoMIG 3000 Digital",
+          "it": "EcoMIG 3000 Digital"
+        },
+        "description": {
+          "de": "Digitale Anzeigen und Synergiebedienung; die Tabelle nennt 3~ 400 V und 10 bis 300 A.",
+          "fr": "Affichage numérique et commande synergique ; le tableau indique 3~ 400 V et de 10 à 300 A.",
+          "it": "Display digitali e controllo sinergico; la tabella indica 3~ 400 V e da 10 a 300 A."
+        }
+      },
+      {
+        "id": "ecomig-3000-analog",
+        "label": {
+          "de": "EcoMIG 3000 Analog",
+          "fr": "EcoMIG 3000 Analog",
+          "it": "EcoMIG 3000 Analog"
+        },
+        "description": {
+          "de": "Analoge Bedienung; vom Hersteller mit Intervallschweissen und WIG Lift Arc beschrieben.",
+          "fr": "Commande analogique ; le fabricant indique le soudage intermittent et le TIG Lift Arc.",
+          "it": "Comandi analogici; il costruttore indica la saldatura intermittente e il TIG Lift Arc."
+        }
+      }
+    ]
+  },
+  "plasmafix-51": {
+    "kind": "unit",
+    "availability": {
+      "confirmed_on": "2026-09-21",
+      "count": 3
+    },
+    "options": [
+      {
+        "id": "unit-left",
+        "label": {
+          "de": "Links: Oerlikon PlasmaFix P+T",
+          "fr": "À gauche : Oerlikon PlasmaFix P+T",
+          "it": "A sinistra: Oerlikon PlasmaFix P+T"
+        },
+        "description": {
+          "de": "Linke Anlage auf dem gemeinsamen Foto. Den konkreten Lieferumfang bestätigen wir im schriftlichen Angebot.",
+          "fr": "Machine à gauche sur la photo de groupe. Le contenu exact de la livraison sera confirmé dans l’offre écrite.",
+          "it": "Macchina a sinistra nella foto di gruppo. La dotazione esatta sarà confermata nell’offerta scritta."
+        }
+      },
+      {
+        "id": "unit-centre",
+        "label": {
+          "de": "Mitte: SAF-FRO PlasmaFix 51",
+          "fr": "Au centre : SAF-FRO PlasmaFix 51",
+          "it": "Al centro: SAF-FRO PlasmaFix 51"
+        },
+        "description": {
+          "de": "Mittlere Anlage auf dem gemeinsamen Foto. Den konkreten Lieferumfang bestätigen wir im schriftlichen Angebot.",
+          "fr": "Machine au centre sur la photo de groupe. Le contenu exact de la livraison sera confirmé dans l’offre écrite.",
+          "it": "Macchina al centro nella foto di gruppo. La dotazione esatta sarà confermata nell’offerta scritta."
+        }
+      },
+      {
+        "id": "unit-right",
+        "label": {
+          "de": "Rechts: Oerlikon PlasmaFix P+T",
+          "fr": "À droite : Oerlikon PlasmaFix P+T",
+          "it": "A destra: Oerlikon PlasmaFix P+T"
+        },
+        "description": {
+          "de": "Rechte Anlage auf dem gemeinsamen Foto. Den konkreten Lieferumfang bestätigen wir im schriftlichen Angebot.",
+          "fr": "Machine à droite sur la photo de groupe. Le contenu exact de la livraison sera confirmé dans l’offre écrite.",
+          "it": "Macchina a destra nella foto di gruppo. La dotazione esatta sarà confermata nell’offerta scritta."
+        }
+      }
+    ]
+  }
+}

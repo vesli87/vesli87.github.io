@@ -6,6 +6,14 @@ import { test } from 'node:test';
 import { execFileSync } from 'node:child_process';
 
 const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8');
+const inquiryCatalogFixture = {
+  'beta-dx': { n: 'Beta DX', u: '/produkte/schweissgeraete/beta-dx/', c: 'schweissgeraete', options: [] },
+  mms: { n: 'MMS 2000 / 3000', u: '/produkte/schweissgeraete/mms/', c: 'schweissgeraete', kind: 'variant',
+    options: [{ id: 'mms-2000c', n: 'MMS 2000 C' }, { id: 'mms-3000-ex', n: 'MMS 3000 EX' }] },
+  'plasmafix-51': { n: 'PlasmaFix 51', u: '/produkte/occasion/plasmafix-51/', c: 'occasion', kind: 'unit',
+    options: [{ id: 'unit-left', n: 'Left unit' }, { id: 'unit-centre', n: 'Centre unit' }, { id: 'unit-right', n: 'Right unit' }] },
+  massekabel: { n: 'Massekabel', u: '/produkte/zubehoer/massekabel/', c: 'zubehoer', options: [] }
+};
 function app({ stored = [], fetch = async () => ({ ok: true, json: async () => ({ products: [] }) }), prepare } = {}) {
   const elements = new Map();
   const collections = new Map();
@@ -32,16 +40,21 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
   };
   const context = vm.createContext({ document, console, fetch, URL, URLSearchParams,
     AbortController, navigator: {}, location,
-    localStorage: { getItem: k => storage.get(k) ?? null, setItem: (k,v) => storage.set(k,v) },
+    localStorage: { getItem: k => storage.get(k) ?? null, setItem: (k,v) => storage.set(k,v), removeItem: k => storage.delete(k) },
     setTimeout: fn => { const id = Symbol(); timers.set(id, fn); return id; },
     clearTimeout: id => timers.delete(id),
     setInterval: fn => { const id = Symbol(); intervals.set(id, fn); return id; },
     clearInterval: id => intervals.delete(id),
-    window: { VT: {}, location, addEventListener: (type, fn) => { windowEvents[type] = fn; } },
+    window: { VT: { inquiryCatalog: structuredClone(inquiryCatalogFixture),
+      inquiryServices: { repair: { n: 'Reparatur', u: '/service/reparatur/' }, calib: { n: 'Kalibrierung', u: '/service/kalibrierung/' } } },
+      location, addEventListener: (type, fn) => { windowEvents[type] = fn; } },
   });
   if (prepare) prepare(context, elements, collections);
   vm.runInContext(source.replace(/\}\)\(\);\s*$/, `
     window.test = { cleanCart, quantity, safeUrl, mark, norm, loadIndex, submitForm, addCart, rmCart,
+      rowKey, setQty, setOption, itemLines, productChoice, updateProductLinks,
+      search, setIndex: value => { IDX = value; }, readContactContext, contactBody, renderContactContext,
+      updateQualifications, qualificationGroups, snapshotFields, qualificationBody,
       readCart: () => cart, setCart: value => { cart = value; } };
   })();`), context);
   return { api: context.window.test, context, elements, timers, intervals, storage, events, windowEvents, created };
@@ -157,9 +170,9 @@ test('cart updates from another tab preserve removal and re-addition during deli
   context.window.VT.web3formsKey = 'test';
   const f = form();
   api.submitForm(f, 'Test', '', [{ ...item }]);
-  windowEvents.storage({ key: 'vt.cart.v1', newValue: '[]' });
+  windowEvents.storage({ key: 'vt.cart.v2', newValue: '[]' });
   assert.equal(api.readCart().length, 0);
-  windowEvents.storage({ key: 'vt.cart.v1', newValue: JSON.stringify([item]) });
+  windowEvents.storage({ key: 'vt.cart.v2', newValue: JSON.stringify([item]) });
   resolve({ ok: true, json: async () => ({ success: true }) });
   for (let i=0; i<10; i++) await Promise.resolve();
   assert.equal(api.readCart().length, 1);
@@ -742,4 +755,247 @@ test('viewport measurements leave native pinch zoom and embedded pages alone', (
   const embedded = visualViewportApp({ embedded: true });
   assert.equal(embedded.properties.size, 0);
   assert.equal(Object.keys(embedded.viewportEvents).length, 0);
+});
+
+function inquiryForm(id = 'kontaktForm') {
+  const values = { name: 'Test customer', email: 'test@example.invalid', phone: '', message: 'Please advise',
+    timeframe: '', material: '', thickness: '', power: '', existing_model: '', fault: '', device_count: '', application: '' };
+  const fields = Object.fromEntries(Object.entries(values).map(([name, value]) => [name, {
+    id: id + '-' + name, name, value, type: name === 'email' ? 'email' : 'text', disabled: false, attrs: {},
+    nextElementSibling: { classList: { contains: cls => cls === 'ferr' } },
+    setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute(k) { delete this.attrs[k]; }, focus() { this.focused = true; }
+  }]));
+  const groups = { timeframe: 'general', material: 'equipment', thickness: 'equipment', power: 'equipment',
+    existing_model: 'accessory repair', fault: 'repair', device_count: 'calib', application: 'auto' };
+  const wrappers = Object.entries(groups).map(([name, group]) => ({
+    hidden: true, getAttribute: () => group, querySelectorAll: () => [fields[name]]
+  }));
+  const labels = Object.values(fields).map(field => ({ getAttribute: () => field.id, textContent: field.name }));
+  return {
+    id, dataset: {}, fields, wrappers, labels, handlers: {}, button: { disabled: false }, status: {}, contextBox: {},
+    addEventListener(type, fn) { this.handlers[type] = fn; }, appendChild(node) { this.fallback = node; },
+    reset() { this.resetCalled = true; Object.values(fields).forEach(field => { field.value = ''; }); },
+    querySelector(s) {
+      if (s === 'button[type=submit]') return this.button;
+      if (s === '.fstatus') return this.status;
+      if (s === '.mfall') return this.fallback || null;
+      if (s === '[data-inquiry-context]') return this.contextBox;
+      if (s === '[aria-invalid]') return Object.values(fields).find(field => field.attrs['aria-invalid']);
+      const name = s.match(/^\[name=(\w+)\]$/)?.[1];
+      return name === 'botcheck' ? { checked: false } : fields[name] || null;
+    },
+    querySelectorAll(s) {
+      if (s === '[required]') return [fields.name, fields.email, ...(id === 'kontaktForm' ? [fields.message] : [])];
+      if (s === '[aria-invalid]') return Object.values(fields).filter(field => field.attrs['aria-invalid']);
+      if (s === 'label') return labels;
+      if (s === '[data-qualification]') return wrappers;
+      return [];
+    }
+  };
+}
+const flush = async () => { for (let i = 0; i < 15; i++) await Promise.resolve(); };
+
+test('cart v1 migrates IDs and quantities only; unknown products and forged choices are rejected', () => {
+  const { api, storage } = app({ stored: [
+    { ...item, name: '<script>untrusted</script>', url: 'https://evil.invalid', img: 'https://evil.invalid', qty: 3 },
+    { id: 'unknown', name: 'Unknown', qty: 1 },
+    { id: 'mms', option: 'unit-left', qty: 1 }
+  ] });
+  assert.equal(api.readCart().length, 1);
+  assert.equal(api.readCart()[0].qty, 3);
+  assert.deepEqual(Object.keys(api.readCart()[0]).sort(), ['id', 'option', 'qty']);
+  assert.equal(storage.has('vt.cart.v1'), false);
+  assert.doesNotMatch(storage.get('vt.cart.v2'), /untrusted|evil|Unknown/);
+  assert.match(api.itemLines(api.readCart()), /Beta DX.*https:\/\/www\.ves-tech\.ch\/produkte/);
+  api.addCart({ id: 'constructor' });
+  api.addCart({ id: 'mms', option: 'not-a-real-option' });
+  assert.equal(api.readCart().length, 1);
+});
+test('existing v2 storage is authoritative and old-tab v1 changes cannot restore stale rows', () => {
+  const { api, windowEvents } = app({ stored: [item], prepare(c) {
+    const original = c.localStorage.getItem;
+    c.localStorage.getItem = key => key === 'vt.cart.v2' ? '[]' : original(key);
+  } });
+  assert.equal(api.readCart().length, 0);
+  windowEvents.storage({ key: 'vt.cart.v1', newValue: JSON.stringify([item]) });
+  assert.equal(api.readCart().length, 0);
+});
+test('different variants remain distinct and selected physical units never exceed one', () => {
+  const { api } = app();
+  api.addCart({ id: 'mms', option: 'mms-2000c' });
+  api.addCart({ id: 'mms', option: 'mms-3000-ex' });
+  api.addCart({ id: 'mms', option: 'mms-2000c' });
+  api.addCart({ id: 'plasmafix-51', option: 'unit-left' });
+  api.addCart({ id: 'plasmafix-51', option: 'unit-left' });
+  api.setQty('plasmafix-51::unit-left', 99);
+  assert.equal(api.readCart().length, 3);
+  assert.equal(api.readCart()[0].qty, 2);
+  assert.equal(api.readCart()[1].qty, 1);
+  assert.equal(api.readCart()[2].qty, 1);
+  assert.match(api.itemLines(api.readCart()), /MMS 2000 C × 2/);
+  assert.match(api.itemLines(api.readCart()), /MMS 3000 EX × 1/);
+  assert.match(api.itemLines(api.readCart()), /Left unit × 1/);
+});
+test('changing or re-adding a variant during delivery preserves the new selection', async () => {
+  let resolve;
+  const { api, context } = app({ fetch: () => new Promise(r => { resolve = r; }) });
+  context.window.VT.web3formsKey = 'offline';
+  api.addCart({ id: 'mms', option: 'mms-2000c' });
+  const submitted = api.readCart().map(x => ({ ...x }));
+  const f = form();
+  api.submitForm(f, 'Test', api.itemLines(submitted), submitted);
+  api.setOption('mms::mms-2000c', 'mms-3000-ex');
+  api.addCart({ id: 'mms', option: 'mms-2000c' });
+  resolve({ ok: true, json: async () => ({ success: true }) }); await flush();
+  assert.equal(api.readCart().length, 2);
+  assert.equal(api.readCart().find(x => x.option === 'mms-2000c').qty, 1);
+  assert.equal(api.readCart().find(x => x.option === 'mms-3000-ex').qty, 1);
+});
+test('an option can be changed to advice or merged, without accepting foreign options', () => {
+  const { api } = app();
+  api.addCart({ id: 'mms', option: 'mms-2000c' });
+  api.addCart({ id: 'mms', option: 'mms-3000-ex' });
+  api.setOption('mms::mms-3000-ex', 'mms-2000c');
+  assert.equal(api.readCart().length, 1); assert.equal(api.readCart()[0].qty, 2);
+  api.setOption('mms::mms-2000c', 'unit-left');
+  assert.equal(api.readCart()[0].option, 'mms-2000c');
+  api.setOption('mms::mms-2000c', '');
+  assert.equal(api.rowKey(api.readCart()[0]), 'mms');
+  assert.equal(api.readCart()[0].qty, 2);
+});
+test('product context is available immediately without search or analytics and never edits a draft', async () => {
+  for (const path of ['/kontakt/', '/fr/contact/', '/it/contatto/']) {
+    const f = inquiryForm(); f.fields.message.value = 'Already typing before anything loads';
+    const calls = [];
+    const { context } = app({ prepare(c, elements) {
+      c.location.pathname = path; c.location.search = '?product=plasmafix-51&option=unit-centre';
+      c.window.VT.web3formsKey = 'offline'; elements.set('#kontaktForm', f);
+    }, fetch: (url, init) => { calls.push({ url, body: JSON.parse(init.body) }); return new Promise(() => {}); } });
+    assert.equal(calls.length, 0, 'No search fetch is necessary');
+    assert.equal(context.window.VTAnalytics, undefined);
+    assert.match(f.contextBox.innerHTML, /PlasmaFix 51/);
+    assert.match(f.contextBox.innerHTML, /unit-centre" selected/);
+    assert.equal(f.fields.message.value, 'Already typing before anything loads');
+    f.handlers.submit({ preventDefault() {} });
+    assert.equal(calls.length, 1); assert.equal(calls[0].url, 'https://api.web3forms.com/submit');
+    assert.match(calls[0].body.message, /PlasmaFix 51 · Centre unit × 1/);
+    assert.match(calls[0].body.message, /Already typing/);
+  }
+});
+test('unknown, duplicate and conflicting context parameters never become trusted selections', () => {
+  for (const query of ['?product=unknown', '?product=mms&product=plasmafix-51', '?product=mms&service=repair', '?service=unknown']) {
+    const f = inquiryForm();
+    const { api } = app({ prepare(c, elements) { c.location.search = query; elements.set('#kontaktForm', f); } });
+    assert.equal(api.contactBody(), '');
+    assert.match(f.contextBox.innerHTML, /inquiry_context_invalid/);
+  }
+  const f = inquiryForm();
+  const warning = { remove() { this.removed = true; } };
+  const { api, events } = app({ prepare(c, elements) {
+    c.location.search = '?product=mms&option=unit-left'; elements.set('#kontaktForm', f);
+    elements.set('#kontaktForm .inquiry-context-warning', warning);
+  } });
+  assert.match(api.contactBody(), /MMS 2000 \/ 3000/);
+  assert.doesNotMatch(api.contactBody(), /unit-left|Left unit/);
+  assert.match(f.contextBox.innerHTML, /inquiry_context_invalid/);
+  events.change.forEach(fn => fn({ target: { value: 'mms-3000-ex', hasAttribute: name => name === 'data-contact-option' } }));
+  assert.match(api.contactBody(), /MMS 3000 EX/);
+  assert.equal(warning.removed, true, 'Correcting the choice clears the warning without replacing the focused selector');
+});
+test('service context reaches the message and language links while customer fields stay untouched', () => {
+  const f = inquiryForm(); const link = { href: 'https://www.ves-tech.ch/fr/contact/' };
+  const { api } = app({ prepare(c, elements, collections) {
+    c.location.search = '?service=repair'; elements.set('#kontaktForm', f); collections.set('.langs a', [link]);
+  } });
+  assert.match(api.contactBody(), /Reparatur\nhttps:\/\/www\.ves-tech\.ch\/service\/reparatur\//);
+  assert.equal(link.href, 'https://www.ves-tech.ch/fr/contact/?service=repair');
+  assert.equal(f.fields.message.value, 'Please advise');
+  assert.equal(f.fields.fault.disabled, false);
+  assert.equal(f.fields.existing_model.disabled, false);
+  assert.equal(f.fields.material.disabled, true);
+});
+test('product controls use registered choices and language switching preserves a selected option', () => {
+  const link = { href: 'https://www.ves-tech.ch/fr/contact/', getAttribute: key => key === 'data-product-consult' ? 'mms' : null,
+    closest: () => ({ getAttribute: () => 'mms', querySelector: () => ({ value: 'mms-3000-ex' }) }) };
+  const { api } = app({ prepare(c, els, collections) { collections.set('[data-product-consult]', [link]); } });
+  assert.equal(new URL(link.href).searchParams.get('option'), 'mms-3000-ex');
+  const bad = { getAttribute: () => 'unit-left', closest: () => null };
+  assert.equal(api.productChoice(bad, 'mms'), null);
+  const f = inquiryForm(); const languageLink = { href: 'https://www.ves-tech.ch/it/contatto/' };
+  app({ prepare(c, els, collections) {
+    c.location.search = '?product=mms&option=mms-2000c'; els.set('#kontaktForm', f); collections.set('.langs a', [languageLink]);
+  } });
+  assert.equal(new URL(languageLink.href).searchParams.get('option'), 'mms-2000c');
+});
+test('qualification groups use the whole cart, retain hidden drafts and exclude irrelevant fields from messages', () => {
+  const f = inquiryForm('cartForm'); f.fields.material.value = 'Steel'; f.fields.existing_model.value = 'Existing model'; f.fields.fault.value = 'Private repair note';
+  const { api } = app();
+  api.addCart({ id: 'mms' }); api.addCart({ id: 'massekabel' });
+  api.updateQualifications(f);
+  assert.equal(f.fields.material.disabled, false); assert.equal(f.fields.existing_model.disabled, false);
+  assert.equal(f.fields.fault.disabled, true);
+  assert.doesNotMatch(api.qualificationBody(f, api.snapshotFields(f)), /Private repair note/);
+  api.rmCart('mms'); api.updateQualifications(f);
+  assert.equal(f.fields.material.disabled, true); assert.equal(f.fields.material.value, 'Steel');
+});
+test('confirmed summary uses the accepted snapshot as plain text and preserves a newer qualified draft', async () => {
+  let resolve; const f = inquiryForm(); const textarea = { value: '', select() { this.selected = true; } }; const copy = { addEventListener(type, fn) { this[type] = fn; } };
+  const summary = { hidden: true, querySelector: s => s === '.inquiry-summary-text' ? textarea : copy };
+  const { api, context, elements, storage } = app({ fetch: () => new Promise(r => { resolve = r; }) });
+  context.window.VT.web3formsKey = 'offline';
+  elements.set('[data-inquiry-summary="kontaktForm"]', summary);
+  f.fields.message.value = '<img src=x onerror=alert(1)> accepted text';
+  f.fields.timeframe.value = 'Original timeframe';
+  api.submitForm(f, 'Test', '');
+  assert.equal(summary.hidden, true);
+  f.fields.timeframe.value = 'New timeframe while waiting';
+  resolve({ ok: true, json: async () => ({ success: true }) }); await flush();
+  assert.equal(f.resetCalled, undefined); assert.equal(f.fields.timeframe.value, 'New timeframe while waiting');
+  assert.equal(summary.hidden, false); assert.match(textarea.value, /Original timeframe/);
+  assert.doesNotMatch(textarea.value, /New timeframe/);
+  assert.match(textarea.value, /<img src=x onerror/); assert.doesNotMatch(summary.innerHTML, /<img src=x/);
+  assert.doesNotMatch(JSON.stringify([...storage]), /accepted text|timeframe|test@example/);
+  let copied;
+  context.navigator.clipboard = { writeText: async text => { copied = text; } };
+  copy.click(); await flush();
+  assert.equal(copied, textarea.value, 'Copy uses only the accepted snapshot');
+  context.navigator.clipboard.writeText = () => { throw Error('clipboard restricted'); };
+  copy.click();
+  assert.equal(textarea.selected, true, 'A restricted clipboard still exposes selectable plain text');
+});
+test('failure never exposes a success summary; optional summary errors never turn success into failure', async () => {
+  for (const accepted of [false, true]) {
+    const f = form(); f.id = 'kontaktForm'; const summary = { hidden: true, querySelector() { throw Error('broken optional display'); } };
+    const { api, context, elements } = app({ fetch: async () => ({ ok: true, json: async () => ({ success: accepted }) }) });
+    context.window.VT.web3formsKey = 'offline'; elements.set('[data-inquiry-summary="kontaktForm"]', summary);
+    api.submitForm(f, 'Test', ''); await flush();
+    assert.equal(summary.hidden, true);
+    assert.equal(f.status.className, accepted ? 'fstatus ok' : 'fstatus err');
+    assert.equal(f.fallback === undefined, accepted);
+  }
+});
+test('oversized fields and invalid optional device counts are rejected before any request', () => {
+  for (const [name, value] of [['name', 'x'.repeat(121)], ['message', 'x'.repeat(5001)], ['fault', 'x'.repeat(1001)],
+    ['device_count', '-1'], ['device_count', '1.5'], ['device_count', '10000']]) {
+    const f = inquiryForm(); f.fields[name].value = value;
+    const { api, context } = app({ fetch: () => { throw Error('must not request'); } }); context.window.VT.web3formsKey = 'offline';
+    api.submitForm(f, 'Test', '');
+    assert.equal(f.fields[name].attrs['aria-invalid'], 'true');
+    assert.equal(f.dataset.sending, undefined);
+  }
+});
+test('current generated service search data resolves the seven failed queries and preserves product lookup', () => {
+  const data = JSON.parse(execFileSync('python3', ['-c',
+    "import sys,json;sys.path.insert(0,'build');from build import search_index;print(json.dumps({l:search_index(l) for l in ['de','fr','it']}))"], { encoding: 'utf8' }));
+  for (const [lang, queries] of Object.entries({ de: [['Reparatur', 'repair'], ['Kalibrierung', 'calib'], ['Service', 'overview']],
+    fr: [['réparation', 'repair'], ['étalonnage', 'calib']], it: [['riparazione', 'repair'], ['calibrazione', 'calib']] })) {
+    const { api } = app(); api.setIndex(data[lang]);
+    for (const [query, expectedService] of queries) {
+      const result = api.search(query);
+      assert.ok(result.services.length, lang + ' ' + query);
+      assert.equal(result.suggestion, null);
+      assert.ok(result.services.some(x => x.i === expectedService), lang + ' ' + query + ' must find ' + expectedService);
+    }
+    assert.equal(api.search('PlasmaFix 51').products[0].i, 'plasmafix-51');
+  }
 });

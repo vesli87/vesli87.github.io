@@ -76,8 +76,21 @@
     var keys = [], values = {};
     url.searchParams.forEach(function (value, name) { keys.push(name); values[name] = value; });
     if (!keys.length) return { campaign: null, product: '' };
-    if (keys.length === 1 && keys[0] === 'product' && url.pathname === config.contactPath && knownProduct(values.product)) {
-      return { campaign: null, product: values.product };
+    if (url.pathname === config.contactPath) {
+      var productOnly = keys.length === 1 && keys[0] === 'product';
+      var productOption = keys.length === 2 && keys.filter(function (k) { return k === 'product'; }).length === 1 &&
+        keys.filter(function (k) { return k === 'option'; }).length === 1;
+      if (knownProduct(values.product) && (productOnly || productOption)) {
+        var options = (config.inquiryOptions || {})[values.product];
+        if (productOnly || (Array.isArray(options) && options.indexOf(values.option) >= 0)) {
+          // Choices are only validated here. Their IDs and full query URLs are not measured.
+          return { campaign: null, product: values.product };
+        }
+        return null;
+      }
+      if (keys.length === 1 && keys[0] === 'service' && Object.keys(services).some(function (path) {
+        return services[path] === values.service;
+      })) return { campaign: null, product: '', service: values.service };
     }
     var fields = ['source', 'medium', 'campaign', 'content'], tuple = {};
     if (keys.length !== fields.length || !fields.every(function (field) {
@@ -93,7 +106,12 @@
     try {
       var url = new URL(document.referrer);
       if (!/^https?:$/.test(url.protocol) || url.username || url.password || url.hash) return false;
-      if (url.origin === location.origin) return publicPath(url.pathname) && !!safeQuery(url);
+      if (url.origin === location.origin) {
+        // The SDK sends document.referrer verbatim. Its page URL override does
+        // not remove inquiry choices from a previous page's URL.
+        if (url.searchParams.has('option') || url.searchParams.has('service')) return false;
+        return publicPath(url.pathname) && !!safeQuery(url);
+      }
       return url.pathname === '/' && !url.search;
     } catch (err) { return false; }
   }
@@ -113,7 +131,7 @@
       });
       pageLocation = measured.href;
       productId = entry.product || productInPath(canonical.pathname);
-      service = owns(services, canonical.pathname) ? services[canonical.pathname] : '';
+      service = entry.service || (owns(services, canonical.pathname) ? services[canonical.pathname] : '');
       return true;
     } catch (err) { return false; }
   }

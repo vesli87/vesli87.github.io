@@ -814,14 +814,14 @@ def page_product(lang, p):
   {R.crumbs(lang, crumb)}
   <div class="dgrid">
     {media_html(lang, p, nm)}
-    <div class="dinfo">
+    <div class="dinfo" data-inquiry-product="{e(p['id'])}">
       <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
       <h1>{e(h1)}</h1>
       <p class="lead">{e(C.pDesc(lang, p))}</p>
       {procs_block(lang, p)}
       <div class="pmeta">
         <div class="m"><span class="lab">{e(C.t(lang,'availability'))}</span>
-          <span class="val ok">{e(C.t(lang,'avail_val'))}</span></div>
+          <span class="val ok">{R.inquiry_availability(lang, p)}</span></div>
         <div class="m"><span class="lab">{e(C.t(lang,'brand'))}</span>
           <span class="val">{e(C.pBrand(p))}</span></div>
         <div class="m"><span class="lab">{e(C.t(lang,'artno'))}</span>
@@ -829,10 +829,11 @@ def page_product(lang, p):
       </div>
       <div class="poa-box"><span class="p">{e(C.t(lang,'poa'))}</span>
         <span class="s">{e(C.t(lang, 'poa_sub_occ' if p["cat"] == "occasion" else 'poa_sub'))}</span></div>
+{R.inquiry_product_choices(lang, p)}
       <div class="dactions">
         <button class="btn pri" type="button" data-add="{e(p['id'])}" data-name="{e(nm)}"
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
-        <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'consult'))}</a>
+        <a class="btn ghost" data-product-consult="{e(p['id'])}" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'consult'))}</a>
       </div>
       <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
                                        de_marke=C.markeMitPraeposition(lang, p)))}</p>
@@ -840,6 +841,7 @@ def page_product(lang, p):
     </div>
   </div>
 
+{R.inquiry_unit_cards(lang, p)}
   <div class="tabs">
     <div class="tabbar" role="tablist" aria-label="{e(nm)}">{tabbar}</div>
     {panehtml}
@@ -939,21 +941,27 @@ def page_contact(lang):
                                       (C.t(lang, "n_contact"), None)],
                    h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"))
             + f"""<div class="catalog"><div class="wrap kontaktwrap">
+  <div class="contact-main">
   <form class="form kform" id="kontaktForm" action="{e(C.u_page(lang,'contact'))}" method="post" novalidate>
+    <div class="inquiry-context" data-inquiry-context hidden></div>
     <label for="kName">{e(C.t(lang,'f_name'))}</label>
-    <input id="kName" name="name" type="text" required autocomplete="organization">
+    <input id="kName" name="name" type="text" required autocomplete="organization" maxlength="120">
     <label for="kMail">{e(C.t(lang,'f_mail'))}</label>
-    <input id="kMail" name="email" type="email" required autocomplete="email" autocapitalize="none" spellcheck="false">
+    <input id="kMail" name="email" type="email" required autocomplete="email" maxlength="254" autocapitalize="none" spellcheck="false">
     <label for="kTel">{e(C.t(lang,'k_tel'))}</label>
-    <input id="kTel" name="phone" type="tel" autocomplete="tel" placeholder="+41 …">
+    <input id="kTel" name="phone" type="tel" autocomplete="tel" maxlength="80" placeholder="+41 …">
     <label for="kMsg">{e(C.t(lang,'k_msg'))}</label>
-    <textarea id="kMsg" name="message" rows="5" required></textarea>
+    <textarea id="kMsg" name="message" rows="5" maxlength="5000" required></textarea>
+    {R.inquiry_qualification(lang, 'k')}
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    {R.inquiry_next_steps(lang)}
     {R.form_note(lang)}
     <button class="send" type="submit">{e(C.t(lang,'f_send'))}</button>
     <p class="fstatus" role="status" aria-live="polite"></p>
   </form>
+  {R.inquiry_summary(lang, 'kontaktForm')}
   <noscript><p>{e(C.t(lang,'form_nojs'))} <a href="mailto:{e(co['email'])}">{e(co['email'])}</a></p></noscript>
+  </div>
   <aside class="kinfo">
     <h2>{e(C.t(lang,'site_name'))}</h2>
     <address>
@@ -1083,7 +1091,10 @@ def page_service(lang, key=None):
     title, desc = C.t(lang, f"{praefix}_title"), C.t(lang, f"{praefix}_desc")
     body = (R.cbar(lang, crumb_items=krumen, h1=C.t(lang, f"{praefix}_h1"),
                    desc=C.t(lang, f"{praefix}_lead"))
-            + inhalt)
+            + inhalt
+            + f'<section class="service-inquiry wrap"><h2>{e(C.t(lang,"inquiry_service_cta_title"))}</h2>'
+              f'<p>{e(C.t(lang,"inquiry_service_cta_note"))}</p>'
+              f'<a class="btn pri" href="{e(C.u_page(lang,"contact"))}?service={e(key or "overview")}">{e(C.t(lang,"inquiry_service_cta"))}</a></section>')
 
     ld = [R.ld_org(lang), R.ld_webpage(lang, url, title, desc),
           R.ld_breadcrumb(krumen_ld)]

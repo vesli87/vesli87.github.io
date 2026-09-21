@@ -15,6 +15,7 @@ Kein externes Paket nötig – läuft mit der system-Python 3.9.
 """
 
 import json
+import datetime
 import os
 import pathlib
 import re
@@ -218,9 +219,9 @@ REGION_NAMES = {
            "it": "Appenzello Esterno"},
 }
 SEARCH_POPULAR = {
-    "de": ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma"],
-    "fr": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Chariot", "Plasma"],
-    "it": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Carrello", "Plasma"],
+    "de": ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma", "Reparatur"],
+    "fr": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Chariot", "Plasma", "Réparation"],
+    "it": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Carrello", "Plasma", "Riparazione"],
 }
 
 
@@ -413,6 +414,7 @@ def _load(name):
 P         = _load("P")           # 52 Produkte
 CATS      = _load("CATS")        # 4 Kategorien
 ANALYTICS_CAMPAIGNS = _load("ANALYTICS_CAMPAIGNS")
+INQUIRY_OPTIONS = _load("INQUIRY_OPTIONS")
 PK        = _load("PK")          # Kategorie-Icons
 UI        = _load("UI")          # 88 UI-Keys × de/fr/it
 CATTR     = _load("CATTR")
@@ -988,6 +990,47 @@ SERVICE_SEG = {
     "it": {"repair": "riparazione", "calib": "calibrazione", "auto": "automazione"},
 }
 SERVICE_KEYS = ("repair", "calib", "auto")
+
+
+def inquiry_options():
+    """Reviewed public choices; never infer a stock item or manufacturer code."""
+    known = {p["id"] for p in P}
+    out = {}
+    for product_id, row in INQUIRY_OPTIONS.items():
+        if product_id.startswith("_"):
+            continue
+        if product_id not in known or not isinstance(row, dict) or row.get("kind") not in {"variant", "unit"}:
+            raise ValueError("Unknown inquiry product or choice kind")
+        options = row.get("options")
+        if not isinstance(options, list) or not 1 <= len(options) <= 20:
+            raise ValueError("Inquiry choices must be a small explicit list")
+        if "availability" in row:
+            stock = row["availability"]
+            if (row["kind"] != "unit" or not isinstance(stock, dict)
+                    or set(stock) != {"count", "confirmed_on"}
+                    or type(stock["count"]) is not int or not 0 <= stock["count"] <= len(options)):
+                raise ValueError("Unit availability needs an explicit bounded count")
+            datetime.date.fromisoformat(stock["confirmed_on"])
+        seen = set()
+        for option in options:
+            oid = option.get("id") if isinstance(option, dict) else None
+            if not isinstance(oid, str) or not re.fullmatch(r"[a-z0-9-]{1,60}", oid) or oid in seen:
+                raise ValueError("Invalid or duplicate inquiry choice")
+            seen.add(oid)
+            for field in ("label", "description"):
+                values = option.get(field)
+                if not isinstance(values, dict) or set(values) != set(LANGS):
+                    raise ValueError("Inquiry choice must be translated in every language")
+                if any(not isinstance(v, str) or not v.strip() or len(v) > 700 for v in values.values()):
+                    raise ValueError("Invalid inquiry choice text")
+        out[product_id] = row
+    return out
+
+
+def inquiry_services(lang):
+    names = {"overview": "foot_service", "repair": "foot_diag", "calib": "foot_calib", "auto": "foot_auto"}
+    return {key: {"n": t(lang, label), "u": u_service(lang, None if key == "overview" else key)}
+            for key, label in names.items()}
 
 
 def analytics_campaigns():

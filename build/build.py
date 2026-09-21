@@ -194,9 +194,17 @@ def search_index(lang):
             "u": d["u"], "t1": norm(d["t"].get(lang) or d["t"]["de"]),
             "t3": norm(d["s"].get(lang) or d["s"]["de"])} for d in C.DLS]
 
+    services = []
+    for key, service in C.inquiry_services(lang).items():
+        prefix = "svc" if key == "overview" else PG.SERVICE[key][0]
+        desc = C.t(lang, f"{prefix}_lead")
+        services.append({"i": key, "n": service["n"], "d": desc, "u": service["u"],
+                         "t1": norm(service["n"] + " " + C.t(lang, f"{prefix}_h1")),
+                         "t2": norm(C.t(lang, "foot_service")), "t3": norm(desc)})
+
     # Vokabular für "Meinten Sie …"
     vocab = set()
-    for it in prods + cats + procs + dls:
+    for it in prods + cats + procs + dls + services:
         for f in ("t1", "t2", "t3"):
             for w in it.get(f, "").split():
                 if len(w) >= 3:
@@ -204,7 +212,7 @@ def search_index(lang):
 
     return {
         "lang": lang, "generated": TODAY,
-        "products": prods, "cats": cats, "procs": procs, "dls": dls,
+        "products": prods, "cats": cats, "procs": procs, "dls": dls, "services": services,
         "syn": {norm(k): [norm(x) for x in v] for k, v in SYNONYMS.items()},
         "vocab": sorted(vocab),
         # Die Vorschlaege standen fuer alle drei Sprachen auf Deutsch. "Fahrwagen"

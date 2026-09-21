@@ -113,7 +113,7 @@
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 
 ### Occasion
-- [Oerlikon PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. Drei Anlagen verfügbar. (Mikroplasma)
+- [Oerlikon PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. (Mikroplasma)
 - [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle (Microplasma) ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
 
 ## Verfahren

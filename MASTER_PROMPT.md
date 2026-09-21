@@ -230,6 +230,12 @@ Der Wert stand auf 165; damit lagen 179 von 345 Seiten über der Grenze, ab der
 Google abschneidet (pixelabhängig, in der Praxis 155–160 Zeichen). Auch
 handgeschriebene Beschreibungen in `i18n_extra.json` bleiben darunter.
 
+Die Occasion-Beschreibungen (`prod_desc_occ`) sind eigenständige, vollständige
+Kurztexte für DE/FR/IT: Modell, Mikroplasma, Revision, Herisau und Kontakt auf
+Anfrage. Sie hängen keine lange Produktbeschreibung an, die mitten im Satz
+abgeschnitten würde. Das verbessert die Suchvorschau, ist aber keine Zusage
+für Crawling oder Indexierung durch eine Suchmaschine.
+
 ## 7. AEO / AIO (Antwortmaschinen)
 
 Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auftauchen:

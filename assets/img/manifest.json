@@ -1041,5 +1041,18 @@
    447
   ],
   "w": 447
+ },
+ "panels/Theta Display.png": {
+  "key": "theta-display",
+  "w": 1774,
+  "h": 887,
+  "ratio": 0.5,
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   1774
+  ]
  }
 }

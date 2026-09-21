@@ -160,6 +160,14 @@ Ein CSP-freigegebener Error-Listener lädt im Notfall wieder vom Hersteller.
 
 Neue Bilder: `python3 build/images.py` (braucht Netz und `cwebp`), danach `build.py`.
 
+Das gemeinsame Theta-HSC-Bedienpanel verwendet seit dem 21.09.2026 die vom
+Inhaber bereitgestellte und zur Veröffentlichung ausgewählte Grafik
+`Theta Display.png` (1774 × 887 px). `data/FP.json::theta_hsc` verweist auf diesen
+Import aus `build/panels.py`; er gilt für Theta 60/120/180 HSC und Theta 60/120 AUT.
+Das Motiv bleibt unverändert, die WebP-Stufen sind 400, 1000, 1600 und 1774 px.
+Der neue Dateiname verhindert alte Bilder aus dem Browsercache; Theta 40 behält
+sein eigenes Panel. Die gelieferte Grafik ist keine neue technische Spezifikation.
+
 Neues Herobild: `python3 build/hero.py hero <datei>` (braucht `cwebp`, und für
 eine Vorlage, die kein JPEG ist, zusätzlich `Pillow` für den JPEG-Rückfall).
 Beides meldet sich mit einem Satz, wenn es fehlt. `build.py`, `check.py` und

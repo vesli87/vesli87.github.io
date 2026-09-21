@@ -23,9 +23,15 @@ class SecurityParser(HTMLParser):
         self.current = None
         self.errors = []
         self.referrer = None
+        self.lang = None
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == 'html':
+            self.lang = next((lang for lang in C.LANGS if C.EX[lang]['hreflang'] == attrs.get('lang')), None)
+        if any(value.startswith(('AhrefsAnalytics-event-', 'AhrefsAnalytics-prop-'))
+               for value in attrs.get('class', '').split()):
+            self.errors.append('Unreviewed automatic analytics class')
         if any(key.startswith('on') or key == 'style' for key in attrs):
             self.errors.append('Inline event/style attribute')
         if tag in ('base', 'iframe', 'object', 'embed'):
@@ -48,6 +54,8 @@ class SecurityParser(HTMLParser):
             action = attrs.get('action', '')
             if action and (not action.startswith('/') or action.startswith('//') or '\\' in action):
                 self.errors.append('Unexpected form destination')
+            if attrs.get('role') != 'search' and (not self.lang or action != C.u_page(self.lang, 'contact')):
+                self.errors.append('Personal form must use explicit localized contact action')
         for key in ('src', 'href', 'action'):
             value = attrs.get(key, '').strip()
             if value.lower().startswith(('javascript:', 'vbscript:')):

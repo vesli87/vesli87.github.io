@@ -186,7 +186,9 @@ def script_integrity(relative):
 
 
 def csp(lang):
-    analytics = bool(C.cloudflare_analytics_token())
+    cloudflare = bool(C.cloudflare_analytics_token())
+    ahrefs = bool(C.ahrefs_analytics_key())
+    analytics = cloudflare or ahrefs
     scripts = [sri_hash(IMG_FALLBACK_JS), sri_hash(boot_json(lang)),
                "'" + script_integrity('assets/js/app.js') + "'"]
     if analytics:
@@ -203,13 +205,15 @@ def csp(lang):
         # Modern browsers trust only these hashes and scripts loaded by them.
         # Host sources are a compatibility fallback for older CSP versions.
         "script-src 'self' 'strict-dynamic' " + " ".join(scripts)
-        + (" https://static.cloudflareinsights.com" if analytics else ""),
+        + (" https://static.cloudflareinsights.com" if cloudflare else "")
+        + (" https://analytics.ahrefs.com" if ahrefs else ""),
         "script-src-attr 'none'",
         f"style-src 'self' {sri_hash(NOSCRIPT_CSS)}",
         "style-src-attr 'none'",
         "font-src 'self'",
         "connect-src 'self'" + (" https://api.web3forms.com" if C.web3forms_key() else "")
-        + (" https://cloudflareinsights.com" if analytics else ""),
+        + (" https://cloudflareinsights.com" if cloudflare else "")
+        + (" https://analytics.ahrefs.com" if ahrefs else ""),
         "form-action 'self'",
         # frame-ancestors steht bewusst nicht hier: per <meta> ignorieren es
         # alle Browser und melden es als Warnung in der Konsole. Gegen
@@ -860,7 +864,7 @@ def cart_drawer(lang):
     <button class="x" type="button" data-close="cart" aria-label="{e(C.t(lang,'lupe_close'))}">✕</button></div>
   <p id="cartStatus" class="fstatus" role="status" aria-live="polite"></p>
   <div class="items" id="cartItems"></div>
-  <form class="form" id="cartForm" method="post" hidden novalidate>
+  <form class="form" id="cartForm" action="{e(C.u_page(lang,'contact'))}" method="post" hidden novalidate>
     <label for="cName">{e(C.t(lang,'f_name'))}</label>
     <input id="cName" name="name" type="text" required autocomplete="organization"
            placeholder="Max Muster · Muster AG">
@@ -966,6 +970,14 @@ def boot_json(lang):
         "productsUrl": C.u_products(lang),
         "web3formsKey": C.web3forms_key(),
         "mailto": C.COMPANY["email"],
+        "analytics": {
+            "paths": C.analytics_paths(),
+            "products": {p["id"]: p["cat"] for p in C.P},
+            "campaigns": C.analytics_campaigns(),
+            "contactPath": C.u_page(lang, "contact"),
+            "servicePaths": {C.u_service(lang): "overview",
+                             **{C.u_service(lang, key): key for key in C.SERVICE_KEYS}},
+        },
         "i18n": {k: C.t(lang, k) for k in JS_KEYS},
     }
     return ("window.VT=" + json.dumps(cfg, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
@@ -978,13 +990,16 @@ def boot_script(lang):
 
 def analytics_html(lang):
     token = C.cloudflare_analytics_token()
-    if not token:
+    ahrefs = C.ahrefs_analytics_key()
+    if not (token or ahrefs):
         return ""
+    provider = "both" if token and ahrefs else "cloudflare" if token else "ahrefs"
     return f'''<section class="analytics-consent" id="analyticsConsent" hidden
         aria-label="{e(C.t(lang, 'analytics_title'))}" data-token="{e(token)}"
+        data-ahrefs-key="{e(ahrefs)}"
         data-host="{e(C.CUSTOM_DOMAIN)}">
       <p><strong>{e(C.t(lang, 'analytics_title'))}</strong></p>
-      <p>{e(C.t(lang, 'analytics_text'))}
+      <p>{e(C.t(lang, 'analytics_text_' + provider))}
         <a href="{e(C.u_page(lang, 'privacy'))}">{e(C.t(lang, 'nav_datenschutz'))}</a></p>
       <div class="consent-actions">
         <button type="button" data-consent="denied">{e(C.t(lang, 'analytics_decline'))}</button>

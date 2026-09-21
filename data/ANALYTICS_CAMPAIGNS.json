@@ -1,0 +1,152 @@
+{
+ "linkedin-mahe-programm-2026": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "profil-de"
+ },
+ "linkedin-occasion-microplasma-2026": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "occasion-microplasma-2026",
+  "content": "profil-de"
+ },
+ "linkedin-service-2026": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "profil-de"
+ },
+ "facebook-mahe-programm-2026": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "profil-de"
+ },
+ "facebook-occasion-microplasma-2026": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "occasion-microplasma-2026",
+  "content": "profil-de"
+ },
+ "facebook-service-2026": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "profil-de"
+ },
+ "instagram-mahe-programm-2026": {
+  "source": "instagram",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "profil-de"
+ },
+ "instagram-occasion-microplasma-2026": {
+  "source": "instagram",
+  "medium": "organic_social",
+  "campaign": "occasion-microplasma-2026",
+  "content": "profil-de"
+ },
+ "instagram-service-2026": {
+  "source": "instagram",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "profil-de"
+ },
+ "tiktok-mahe-programm-2026": {
+  "source": "tiktok",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "profil-de"
+ },
+ "tiktok-occasion-microplasma-2026": {
+  "source": "tiktok",
+  "medium": "organic_social",
+  "campaign": "occasion-microplasma-2026",
+  "content": "profil-de"
+ },
+ "tiktok-service-2026": {
+  "source": "tiktok",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "profil-de"
+ },
+ "google_business-mahe-programm-2026": {
+  "source": "google_business",
+  "medium": "local_listing",
+  "campaign": "mahe-programm-2026",
+  "content": "profil-de"
+ },
+ "google_business-occasion-microplasma-2026": {
+  "source": "google_business",
+  "medium": "local_listing",
+  "campaign": "occasion-microplasma-2026",
+  "content": "profil-de"
+ },
+ "google_business-service-2026": {
+  "source": "google_business",
+  "medium": "local_listing",
+  "campaign": "service-2026",
+  "content": "profil-de"
+ },
+ "youtube-mahe-programm-2026": {
+  "source": "youtube",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "profil-de"
+ },
+ "youtube-occasion-microplasma-2026": {
+  "source": "youtube",
+  "medium": "organic_social",
+  "campaign": "occasion-microplasma-2026",
+  "content": "profil-de"
+ },
+ "youtube-service-2026": {
+  "source": "youtube",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "profil-de"
+ },
+ "linkedin-day01-servicediagnose": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "day01-servicediagnose"
+ },
+ "linkedin-day02-hypermig": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "day02-hypermig"
+ },
+ "linkedin-day03-reinigung": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "day03-reinigung"
+ },
+ "linkedin-day04-cnc": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "day04-cnc"
+ },
+ "linkedin-day05-kalibrierung": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "service-2026",
+  "content": "day05-kalibrierung"
+ },
+ "linkedin-day06-plasma": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "day06-plasma"
+ },
+ "linkedin-day07-microplasma": {
+  "source": "linkedin",
+  "medium": "organic_social",
+  "campaign": "occasion-microplasma-2026",
+  "content": "day07-microplasma"
+ }
+}

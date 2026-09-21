@@ -24,10 +24,23 @@ class SecurityTests(unittest.TestCase):
 
     def test_404_hides_unknown_path_and_inactive_integrations_are_denied(self):
         self.assertIn('content="no-referrer"', R.security_meta('de', adressierbar=False))
-        with patch.object(C, 'web3forms_key', return_value=''), patch.object(C, 'cloudflare_analytics_token', return_value=''):
+        with patch.object(C, 'web3forms_key', return_value=''), \
+                patch.object(C, 'cloudflare_analytics_token', return_value=''), \
+                patch.object(C, 'ahrefs_analytics_key', return_value=''):
             policy = R.csp('de')
             self.assertNotIn('web3forms.com', policy)
             self.assertNotIn('cloudflareinsights.com', policy)
+            self.assertNotIn('ahrefs.com', policy)
+
+    def test_form_targets_and_automatic_analytics_classes_are_bounded(self):
+        doc = R.document('de', title='Test', desc='Test', url='/',
+                         alts={lang: '/' for lang in C.LANGS}, jsonld_blocks=[], body='<h1>Test</h1>')
+        self.assertEqual(inspect_html(doc), [])
+        for target in ('', '?email=private@example.com', '/kontakt/?email=private@example.com', '/fr/contact/'):
+            changed = doc.replace('action="/kontakt/" method="post"', f'action="{target}" method="post"')
+            self.assertIn('Personal form must use explicit localized contact action', inspect_html(changed))
+        injected = doc.replace('<h1>', '<h1 class="AhrefsAnalytics-event-unreviewed">')
+        self.assertIn('Unreviewed automatic analytics class', inspect_html(injected))
 
     def test_packaging_rejects_linked_directory_before_copy(self):
         with tempfile.TemporaryDirectory() as tmp:

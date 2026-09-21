@@ -278,10 +278,14 @@ Fliesstext **Inter**, grosse Display-Überschriften **Anton**.
 Bewusst dunkel bleiben: gezeichnete Bedienpanels, blaue Reinigungs-Kacheln,
 Anfrage-Button, Toast.
 
-**Optionale Statistik mit Zustimmung.** Cloudflare Web Analytics lädt erst nach
+**Optionale Statistik mit Zustimmung.** Ahrefs und Cloudflare Web Analytics laden erst nach
 aktiver Zustimmung, mit gleichwertiger Ablehnen-Option und dauerhaft erreichbaren
 Statistik-Einstellungen. Die Zustimmung läuft nach 180 Tagen ab. Die Anfrageliste
-und die Statistik-Auswahl liegen getrennt in localStorage. Details: README.md.
+und die Statistik-Auswahl liegen getrennt in localStorage. Ahrefs misst den Weg
+von Produktauswahl bis bestätigtem Formularversand, Cloudflare Ladezeiten.
+Die neue Zustimmung ist v2; ein früherer Cloudflare-Grant gilt dafür nicht.
+Registrierte Kampagnen werden maximal 24 Stunden in sessionStorage zugeordnet.
+Details, Ereignisdefinitionen, SDK-Prüfsumme und Datenschutzgrenzen: README.md.
 
 ## 12. Barrierefreiheit
 
@@ -508,8 +512,8 @@ die Sichtbarkeit.
 ### 15a. Sicherheitsstand (20.09.2026)
 
 Statisches HTML ohne eigene Datenbank und ohne Kundenkonto. Der Browser versendet
-Kontaktangaben bei aktivierter Konfiguration an Web3Forms. Cloudflare Web Analytics
-ist ein separater, zustimmungspflichtiger Browserdienst. Details und Grenzen
+Kontaktangaben bei aktivierter Konfiguration an Web3Forms. Ahrefs und Cloudflare Web Analytics
+sind separate, zustimmungspflichtige Browserdienste. Details und Grenzen
 stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](README.md).
 
 - CSP ohne `unsafe-inline`; erlaubte Inline-Bootdaten und Styles sind gehasht.
@@ -538,7 +542,8 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
   Kontingent ist im Dashboard zu kontrollieren; keine automatischen Bezahl-Upgrades.
 - Cloudflare Web Analytics ist live geprüft und muss nach jedem Integrationswechsel
   auf dem Live-Web geprüft werden. Es zählt nur zustimmende, nicht blockierte
-  Browser auf den zugelassenen Seiten. Keine automatisierte Conversion-Zählung.
+  Browser auf den zugelassenen Seiten. Ahrefs zählt `inquiry_success` ausschliesslich
+  nach bestätigtem Web3Forms-Versand; keine automatische Verkaufszählung.
 - Für lokale Auffindbarkeit vorhandenes Google-Unternehmensprofil und reale
   Werkstatt-/Besucherangaben abgleichen. Kein doppeltes Profil und kein erfundener Standort.
 - **Echte Kundenstimmen:** `data/REF.json` ist vorbereitet und leer; Anzeige und

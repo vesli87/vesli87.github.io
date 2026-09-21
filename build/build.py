@@ -630,7 +630,8 @@ def webmanifest():
 
 def main():
     # Validate configuration before deleting any generated pages.
-    C.cloudflare_analytics_token()
+    C.analytics_enabled()
+    C.analytics_campaigns()
     C.web3forms_key()
     written.clear()
     for d in MANAGED_DIRS:

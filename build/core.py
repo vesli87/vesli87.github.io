@@ -390,6 +390,19 @@ def cloudflare_analytics_token():
     return token
 
 
+def ahrefs_analytics_key():
+    key = setting("ahrefs_analytics_key", "AHREFS_ANALYTICS_KEY")
+    if key and not re.fullmatch(r"[A-Za-z0-9_-]{22}", key):
+        raise ValueError("AHREFS_ANALYTICS_KEY must be the 22-character public Web Analytics site key, not an API credential")
+    return key
+
+
+def analytics_enabled():
+    # Validate both providers even when the first one is already enabled.
+    cloudflare, ahrefs = cloudflare_analytics_token(), ahrefs_analytics_key()
+    return bool(cloudflare or ahrefs)
+
+
 # --------------------------------------------------------------------------
 # Daten laden
 # --------------------------------------------------------------------------
@@ -399,6 +412,7 @@ def _load(name):
 
 P         = _load("P")           # 52 Produkte
 CATS      = _load("CATS")        # 4 Kategorien
+ANALYTICS_CAMPAIGNS = _load("ANALYTICS_CAMPAIGNS")
 PK        = _load("PK")          # Kategorie-Icons
 UI        = _load("UI")          # 88 UI-Keys × de/fr/it
 CATTR     = _load("CATTR")
@@ -974,6 +988,34 @@ SERVICE_SEG = {
 }
 SERVICE_KEYS = ("repair", "calib", "auto")
 
+
+def analytics_campaigns():
+    """Finite reviewed tuples, never customer input or arbitrary URL values."""
+    sources = {"linkedin", "facebook", "instagram", "tiktok", "google_business", "youtube"}
+    campaigns = {"mahe-programm-2026", "occasion-microplasma-2026", "service-2026"}
+    data = ANALYTICS_CAMPAIGNS
+    if not isinstance(data, dict) or len(data) > 100:
+        raise ValueError("Analytics campaigns must be a small registry")
+    seen = set()
+    for key, row in data.items():
+        if not isinstance(key, str) or not re.fullmatch(r"[a-z0-9_-]{1,80}", key):
+            raise ValueError("Invalid analytics campaign ID")
+        if not isinstance(row, dict) or set(row) != {"source", "medium", "campaign", "content"}:
+            raise ValueError("Analytics campaign must contain exactly source, medium, campaign, content")
+        if any(not isinstance(value, str) or not re.fullmatch(r"[a-z0-9_-]{1,80}", value)
+               for value in row.values()):
+            raise ValueError("Analytics campaign values must be static public labels")
+        if row["source"] not in sources or row["campaign"] not in campaigns:
+            raise ValueError("Unknown analytics source or campaign")
+        medium = "local_listing" if row["source"] == "google_business" else "organic_social"
+        if row["medium"] != medium:
+            raise ValueError("Analytics source and medium do not match")
+        identity = tuple(row[field] for field in ("source", "medium", "campaign", "content"))
+        if identity in seen:
+            raise ValueError("Duplicate analytics campaign tuple")
+        seen.add(identity)
+    return data
+
 CAT_SLUG = {
     "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici"},
     "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma"},
@@ -1026,6 +1068,20 @@ def u_service(lang, key=None):
     """/service/ und /service/<reparatur|kalibrierung|automation>/"""
     return _j(SEG[lang]["root"], SEG[lang]["service"],
               SERVICE_SEG[lang][key] if key else None)
+
+
+def analytics_paths():
+    """Known canonical routes, never a wildcard accepting arbitrary 404 paths."""
+    paths = set()
+    for lang in LANGS:
+        paths.add(u_home(lang))
+        paths.update(u_page(lang, key) for key in SEG[lang] if key != "root")
+        paths.update(u_prod(lang, p) for p in P)
+        paths.update(u_service(lang, key) for key in SERVICE_KEYS)
+        for cat in CATS:
+            paths.add(u_cat(lang, cat["id"]))
+            paths.update(u_sub(lang, cat["id"], sub) for sub in cat["subs"])
+    return sorted(paths)
 
 
 def abs_url(path):

@@ -94,13 +94,26 @@ class GeneratorTests(unittest.TestCase):
     def test_analytics_and_privacy_follow_configuration(self):
         for lang in C.LANGS:
             for token in ('', '0' * 32):
-                with patch.object(C, 'cloudflare_analytics_token', return_value=token):
-                    self.assertEqual(bool(R.analytics_html(lang)), bool(token))
-                    self.assertEqual('https://static.cloudflareinsights.com' in R.csp(lang), bool(token))
-                    self.assertNotIn("'unsafe-inline'", R.csp(lang))
-                    html = PG.page_legal(lang, 'privacy')[1]
-                    self.assertNotIn('{runtime_', html)
-                    self.assertIn(C.t(lang, 'privacy_analytics_on' if token else 'privacy_analytics_off'), html)
+                for ahrefs in ('', 'a' * 22):
+                    with patch.object(C, 'cloudflare_analytics_token', return_value=token), \
+                            patch.object(C, 'ahrefs_analytics_key', return_value=ahrefs):
+                        enabled = bool(token or ahrefs)
+                        self.assertEqual(C.analytics_enabled(), enabled)
+                        panel, policy = R.analytics_html(lang), R.csp(lang)
+                        self.assertEqual(bool(panel), enabled)
+                        self.assertEqual('https://static.cloudflareinsights.com' in policy, bool(token))
+                        self.assertEqual('https://analytics.ahrefs.com' in policy, bool(ahrefs))
+                        self.assertNotIn("'unsafe-inline'", policy)
+                        if enabled:
+                            self.assertIn('data-ahrefs-key="' + ahrefs + '"', panel)
+                            provider = 'both' if token and ahrefs else 'cloudflare' if token else 'ahrefs'
+                            self.assertIn(R.e(C.t(lang, 'analytics_text_' + provider)), panel)
+                            self.assertIn("'" + R.script_integrity('assets/js/analytics.js') + "'", policy)
+                        html = PG.page_legal(lang, 'privacy')[1]
+                        self.assertNotIn('{runtime_', html)
+                        self.assertIn(R.e(C.t(lang, 'privacy_analytics_common' if enabled else 'privacy_analytics_off')), html)
+                        for provider, active in [('cloudflare', token), ('ahrefs', ahrefs)]:
+                            self.assertEqual(R.e(C.t(lang, 'privacy_analytics_' + provider)) in html, bool(active))
             for key in ('', 'test'):
                 with patch.object(C, 'web3forms_key', return_value=key):
                     self.assertIn(C.t(lang, 'privacy_delivery_direct' if key else 'privacy_delivery_mail'),
@@ -117,6 +130,66 @@ class GeneratorTests(unittest.TestCase):
             with patch.dict('os.environ', {'CLOUDFLARE_ANALYTICS_TOKEN': 'not-a-beacon-token'}):
                 with self.assertRaises(ValueError):
                     C.cloudflare_analytics_token()
+
+    def test_ahrefs_configuration_rejects_credentials_and_preserves_precedence(self):
+        with tempfile.TemporaryDirectory() as tmp, patch.object(C, 'BUILD', pathlib.Path(tmp)):
+            public = C.BUILD / 'config.public.json'
+            local = C.BUILD / 'config.local.json'
+            public.write_text(json.dumps({'ahrefs_analytics_key': 'a' * 22}))
+            with patch.dict('os.environ', {'AHREFS_ANALYTICS_KEY': ''}):
+                self.assertEqual(C.ahrefs_analytics_key(), 'a' * 22)
+                local.write_text(json.dumps({'ahrefs_analytics_key': ''}))
+                self.assertEqual(C.ahrefs_analytics_key(), '')
+            with patch.dict('os.environ', {'AHREFS_ANALYTICS_KEY': 'b' * 22}):
+                self.assertEqual(C.ahrefs_analytics_key(), 'b' * 22)
+            for invalid in ('api-credential-must-not-be-used-here', '<script>', 'a' * 21, 'a' * 23):
+                with patch.dict('os.environ', {'AHREFS_ANALYTICS_KEY': invalid}), self.assertRaises(ValueError):
+                    C.ahrefs_analytics_key()
+        with patch.object(C, 'cloudflare_analytics_token', return_value='a' * 32), \
+                patch.object(C, 'ahrefs_analytics_key', side_effect=ValueError('invalid')):
+            with self.assertRaises(ValueError):
+                C.analytics_enabled()
+
+    def test_analytics_boot_contains_only_known_public_dimensions(self):
+        for lang in C.LANGS:
+            cfg = json.loads(R.boot_json(lang).removeprefix('window.VT=').removesuffix(';'))['analytics']
+            self.assertEqual(cfg['products'], {p['id']: p['cat'] for p in C.P})
+            self.assertEqual(cfg['campaigns'], C.analytics_campaigns())
+            self.assertEqual(cfg['contactPath'], C.u_page(lang, 'contact'))
+            self.assertEqual(cfg['servicePaths'][C.u_service(lang)], 'overview')
+            for key in C.SERVICE_KEYS:
+                self.assertEqual(cfg['servicePaths'][C.u_service(lang, key)], key)
+            self.assertNotIn('/404.html', cfg['paths'])
+            self.assertNotIn('/unknown/customer-name/', cfg['paths'])
+            self.assertEqual(len(cfg['paths']), len(set(cfg['paths'])))
+            for route_lang in C.LANGS:
+                # Reviewed campaign tuples must work throughout the catalogue,
+                # including the priority occasion and every service route.
+                for product in C.P:
+                    self.assertIn(C.u_prod(route_lang, product), cfg['paths'])
+                self.assertIn(C.u_prod(route_lang, C.BY_ID['plasmafix-51']), cfg['paths'])
+                for key in (None,) + C.SERVICE_KEYS:
+                    self.assertIn(C.u_service(route_lang, key), cfg['paths'])
+            for path in cfg['paths']:
+                self.assertTrue((C.ROOT / path.lstrip('/') / 'index.html').exists(), path)
+
+    def test_campaign_registry_rejects_free_text_and_mixed_sources(self):
+        valid = {'source': 'linkedin', 'medium': 'organic_social',
+                 'campaign': 'service-2026', 'content': 'profil-de'}
+        for change in ({'content': 'person@example.com'}, {'source': 'unreviewed'},
+                       {'medium': 'local_listing'}, {'message': 'customer text'}):
+            with patch.object(C, 'ANALYTICS_CAMPAIGNS', {'test': {**valid, **change}}):
+                with self.assertRaises(ValueError):
+                    C.analytics_campaigns()
+        with patch.object(C, 'ANALYTICS_CAMPAIGNS', {'a': valid, 'b': valid}):
+            with self.assertRaises(ValueError):
+                C.analytics_campaigns()
+
+    def test_personal_forms_have_clean_localized_post_destinations(self):
+        for lang in C.LANGS:
+            expected = 'action="' + C.u_page(lang, 'contact') + '" method="post"'
+            self.assertIn(expected, R.cart_drawer(lang))
+            self.assertIn(expected, PG.page_contact(lang)[1])
 
     def test_guides_and_catalog_are_complete(self):
         self.assertEqual(set(C.BUYING_GUIDE), set(C.CAT_BY_ID))

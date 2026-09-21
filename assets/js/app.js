@@ -13,6 +13,34 @@
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var t = function (k, d) { return T[k] || d || k; };
 
+  function track(name, props) {
+    try {
+      return !!(window.VTAnalytics && window.VTAnalytics.track(name, props));
+    } catch (err) { return false; }
+  }
+  function inquiryProperties(f, items) {
+    var props = { form_type: f.id === 'cartForm' ? 'cart' : 'contact' };
+    if (items && items.length) {
+      props.product_count = items.length === 1 ? '1' : items.length <= 3 ? '2-3' : '4+';
+      if (items.length === 1) props.product_id = items[0].id;
+    }
+    return props;
+  }
+  function attributionText() {
+    try {
+      var values = window.VTAnalytics && window.VTAnalytics.attribution();
+      if (!values || !values.source) return '';
+      var lines = [];
+      ['source', 'medium', 'campaign', 'content', 'landing', 'product_id'].forEach(function (key) {
+        var value = values[key];
+        if (typeof value === 'string' && value && value.length <= 512 && !/[\r\n]/.test(value)) {
+          lines.push(key + ': ' + value);
+        }
+      });
+      return lines.length ? '\n\nWebsite context:\n' + lines.join('\n') : '';
+    } catch (err) { return ''; }
+  }
+
   /* Adressen aus dem localStorage sind nicht vertrauenswuerdig: dort schreibt
      zwar normalerweise nur diese Seite, aber ein href="javascript:…" waere
      anklickbarer Schadcode, und esc() allein verhindert das nicht - es
@@ -138,9 +166,11 @@
     var status = $('#cartStatus'); if (status) status.textContent = '';
     var hit = null;
     for (var i = 0; i < cart.length; i++) if (cart[i].id === item.id) hit = cart[i];
+    var previousQuantity = hit ? hit.qty : 0;
     if (hit) { hit.qty = quantity(hit.qty + 1); toast(t('already')); }
     else { cart.push({ id: item.id, name: item.name, url: item.url, img: item.img, qty: 1 }); toast(t('added')); }
     saveCart();
+    if (!hit || hit.qty !== previousQuantity) track('inquiry_add', { product_id: item.id });
   }
   function rmCart(id) {
     cartRevision[id] = (cartRevision[id] || 0) + 1;
@@ -257,6 +287,7 @@
     if (btn) btn.setAttribute('aria-expanded', 'true');
     if (which === 'cart') {
       renderCart();
+      track('inquiry_open', inquiryProperties({ id: 'cartForm' }, cart));
       loadIndex().then(function (idx) {
         if (!idx) return;
         cart.forEach(function (item) {
@@ -964,9 +995,15 @@
       '<textarea class="mfall-t" rows="8" readonly aria-label="' + esc(t('mail_h')) + '"></textarea>' +
       '<div class="mfall-btns">' +
         '<button type="button" class="mfall-copy">' + esc(t('mail_copy', 'Text kopieren')) + '</button>' +
-        '<a class="mfall-open" href="' + esc(link) + '">' + esc(t('mail_open', 'Mailprogramm oeffnen')) + '</a>' +
+        '<button type="button" class="mfall-open">' + esc(t('mail_open', 'Mailprogramm oeffnen')) + '</button>' +
       '</div>';
     box.querySelector('.mfall-t').value = body;
+    box.querySelector('.mfall-open').addEventListener('click', function () {
+      track('contact_email', inquiryProperties(f));
+      // The personal draft belongs only in the mail app, never in a DOM href
+      // that an analytics provider's automatic link listener could capture.
+      try { window.location.href = link; } catch (err) { /* copyable text remains */ }
+    });
     box.querySelector('.mfall-copy').addEventListener('click', function () {
       var ta = box.querySelector('.mfall-t');
       ta.select();
@@ -1004,8 +1041,10 @@
       (extraBody ? '\n\n' + extraBody : '') +
       (data.message ? '\n\n' + t('mail_f_msg') + ':\n' + data.message : '') +
       '\n\n' + t('mail_f_sent') + ' ' + location.origin + location.pathname +
-      ' (' + (VT.lang || 'de') + ')';
+      ' (' + (VT.lang || 'de') + ')' + attributionText();
 
+    var measurement = inquiryProperties(f, submittedCart);
+    track('inquiry_submit', measurement);
     if (!VT.web3formsKey) { mailtoFallback(f, subject, body, true); return; }
 
     f.dataset.sending = 'true';
@@ -1030,13 +1069,16 @@
       f.dataset.sending = 'false';
       btn.disabled = false;
       if (j && j.success === true) {
+        // Count the accepted request once, not the send click or both success
+        // messages. Optional tracking cannot change the delivery result.
+        track('inquiry_success', measurement);
         if (status) { status.className = 'fstatus ok'; status.textContent = t('form_success'); }
         // The submitted snapshot succeeded. Preserve any new draft the
         // customer has started while waiting for the response.
         var unchanged = Object.keys(data).every(function (name) {
           return ((f.querySelector('[name=' + name + ']') || {}).value || '') === data[name];
         });
-        if (unchanged) f.reset();
+        if (unchanged) { f.reset(); delete f.dataset.analyticsStarted; }
         var fallback = f.querySelector('.mfall');
         if (fallback) fallback.remove();
         if (f.id === 'cartForm' && submittedCart) {
@@ -1063,16 +1105,24 @@
         }
         toast(t('form_success'));
       } else {
+        track('inquiry_error', Object.assign({}, measurement, { reason: 'rejected' }));
         if (status) { status.className = 'fstatus err'; status.textContent = t('form_error'); }
         mailtoFallback(f, subject, body, false);
       }
     }).catch(function () {
+      track('inquiry_error', Object.assign({}, measurement, { reason: 'network' }));
       f.dataset.sending = 'false';
       btn.disabled = false;
       if (status) { status.className = 'fstatus err'; status.textContent = t('form_error'); }
       mailtoFallback(f, subject, body, false);
     });
   }
+
+  document.addEventListener('input', function (event) {
+    var f = event.target.closest && event.target.closest('form');
+    if (!f || (f.id !== 'cartForm' && f.id !== 'kontaktForm') || f.dataset.analyticsStarted) return;
+    if (track('inquiry_start', inquiryProperties(f))) f.dataset.analyticsStarted = 'true';
+  });
 
   var cartForm = $('#cartForm');
   if (cartForm) {

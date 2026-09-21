@@ -907,7 +907,7 @@ def page_contact(lang):
                                       (C.t(lang, "n_contact"), None)],
                    h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"))
             + f"""<div class="catalog"><div class="wrap kontaktwrap">
-  <form class="form kform" id="kontaktForm" method="post" novalidate>
+  <form class="form kform" id="kontaktForm" action="{e(C.u_page(lang,'contact'))}" method="post" novalidate>
     <label for="kName">{e(C.t(lang,'f_name'))}</label>
     <input id="kName" name="name" type="text" required autocomplete="organization">
     <label for="kMail">{e(C.t(lang,'f_mail'))}</label>
@@ -1101,7 +1101,14 @@ def page_legal(lang, kind):
     # Der Text bringt sein eigenes <p>/<ul> mit – Rechtstexte brauchen Listen,
     # und eine Liste in einem <p> waere kaputtes HTML.
     runtime = C.t(lang, 'privacy_runtime')
-    runtime += '<p>' + e(C.t(lang, 'privacy_analytics_on' if C.cloudflare_analytics_token() else 'privacy_analytics_off')) + '</p>'
+    if C.analytics_enabled():
+        runtime += '<p>' + e(C.t(lang, 'privacy_analytics_common')) + '</p>'
+        if C.cloudflare_analytics_token():
+            runtime += '<p>' + e(C.t(lang, 'privacy_analytics_cloudflare')) + '</p>'
+        if C.ahrefs_analytics_key():
+            runtime += '<p>' + e(C.t(lang, 'privacy_analytics_ahrefs')) + '</p>'
+    else:
+        runtime += '<p>' + e(C.t(lang, 'privacy_analytics_off')) + '</p>'
     delivery = C.t(lang, 'privacy_delivery_direct' if C.web3forms_key() else 'privacy_delivery_mail')
     def body_text(body):
         return (body.replace('{runtime_privacy}', runtime)

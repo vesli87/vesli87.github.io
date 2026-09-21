@@ -4,7 +4,7 @@ Diese Website ist der Auftritt von VES-TECH Swiss, einem Einzelunternehmen in
 der Schweiz. Sie besteht aus vorgerenderten HTML-Dateien auf GitHub Pages – es
 gibt keine eigene Datenbank, keine Kundenanmeldung und keine Kundensitzungen.
 Formularnachrichten werden bei aktivierter Konfiguration durch Web3Forms
-verarbeitet; optionale Webstatistik durch Cloudflare. Details stehen in der
+verarbeitet; optionale Webstatistik durch Ahrefs und Cloudflare. Details stehen in der
 Datenschutzerklärung der Website.
 
 ## Eine Lücke melden
@@ -27,7 +27,8 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   Stile. Jedes Inline-Skript, beide lokale JavaScript-Dateien und jeder `<style>`-Block
   sind per `sha256` in der Richtlinie derselben Seite erlaubt. Lokale Skripte
   tragen zusätzlich `integrity`; moderne Browser verwenden `strict-dynamic`.
-  Der vertrauenswürdige Statistik-Loader lädt ausschliesslich die feste Cloudflare-Adresse.
+  Der vertrauenswürdige Statistik-Loader lädt ausschliesslich feste Anbieteradressen.
+  Der geprüfte Ahrefs-Tracker ist zusätzlich durch SRI auf seine Bytes begrenzt.
   Erzeugt in [`build/render.py`](build/render.py) (`csp`, `sri_hash`).
 * **Keine Ereignisattribute im HTML.** `onerror`, `onclick` und Verwandte gibt
   es nicht – sie liessen sich nicht per Hash erlauben und hätten
@@ -39,16 +40,25 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   ohne `www` leiten per 301 auf die kanonische Adresse um.
 * **`referrer` auf `strict-origin-when-cross-origin`** – beim Klick auf ein
   Herstellerdokument erfährt die Gegenseite nur den Domainnamen.
-* **Keine Analyse-Cookies und keine fremden Schriften.** Optionales Cloudflare
+* **Optionale Statistik und keine fremden Schriften.** Cloudflare
   Web Analytics lädt erst nach Zustimmung von `static.cloudflareinsights.com`
   und übermittelt Messdaten an `cloudflareinsights.com`. Ablehnen und Widerruf
-  sind möglich. Der Formulardienst `api.web3forms.com` und Herstellerbilder
+  sind möglich. Ahrefs lädt nach derselben neuen Zustimmung von
+  `analytics.ahrefs.com`. Der Loader prüft URL, Referrer, GPC/DNT, bekannte
+  Produkt-IDs und vollständige registrierte Kampagnenkombinationen. Suchtexte,
+  Kundennamen, E-Mail-Adressen und Nachrichtentexte sind keine Analytics-Properties.
+  Eigene Kampagnenzuordnung liegt höchstens 24 Stunden in sessionStorage;
+  bei Widerruf wird sie entfernt. Der Formulardienst `api.web3forms.com` und Herstellerbilder
   von `mahe-online.de` sind ebenfalls ausdrücklich in der CSP genannt. Auf
   unbekannten 404-Pfaden wird keine Statistik geladen; die Fehlerseite sendet
   keinen Referrer. Formular-POSTs verwenden ebenfalls `no-referrer`.
 * **Datensparsame Formulare.** Persönliche Angaben werden nicht in localStorage
   gespeichert. Ohne Versandkonfiguration entstehen nur E-Mail-Entwürfe. Fehler
   führen zu keiner automatischen Wiederholung und löschen die Eingaben nicht.
+  E-Mail-Entwürfe mit personenbezogenem Inhalt stehen nicht in Linkattributen.
+  Capture-Listener schirmen sensible Linkziele vor automatischer Analytics ab;
+  explizite Formularziele enthalten keine Parameter. Die automatische
+  Formularmessung ist unterbunden, nur bestätigter Versand zählt als Erfolg.
 * **Aktionen im Deploy sind auf Commit-Hashes festgenagelt**, nicht auf
   Etiketten – siehe [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 * **Der Deploy liefert nur die Website aus.** Eine Positivliste kopiert die

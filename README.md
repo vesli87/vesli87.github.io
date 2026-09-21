@@ -13,7 +13,7 @@ Statische Website aus JSON und Python, ohne Framework oder Bundler.
 | Suche | Lokaler Suchindex mit Synonymen und Tippfehlertoleranz |
 | SEO | Individuelle Metadaten, canonical, hreflang, JSON-LD, Sitemap, IndexNow |
 | Beratung | Auswahlhilfen je Hauptkategorie, produktbezogenes Kontaktformular, Anfrageliste |
-| Statistik | Optionales Cloudflare Web Analytics nach Zustimmung |
+| Statistik | Ahrefs für Produktinteresse und bestätigte Anfragen; Cloudflare für Ladezeiten, beide nach Zustimmung |
 
 ## Entwickeln und prüfen
 
@@ -56,18 +56,52 @@ Persönliche Formularangaben werden nicht in localStorage gespeichert.
 Der Web3Forms-Formularkey steht technisch im ausgelieferten Frontend und ist kein
 privater API-Schlüssel. Administrative Zugangsdaten gehören niemals hierher.
 
-`cloudflare_analytics_token` ist der öffentliche Beacon-Token, kein Cloudflare
-API-Token. Er steht in `build/config.public.json`, damit der automatische Build
-nicht die Integration entfernt. Optional überschreibt ihn
-`CLOUDFLARE_ANALYTICS_TOKEN`. Statistik lädt ausschliesslich auf der Produktionsdomain
-und nach Zustimmung. Ablehnen und Widerrufen sind möglich. Suchseiten, URLs und
-Referrer mit Parametern sowie GPC/DNT werden berücksichtigt. Keine Kontaktinhalte
-werden als Statistik-Ereignisse verschickt. Auswahl gilt höchstens 180 Tage.
-Wegen Zustimmung, Browserblockern und Ausschlüssen ist dies keine Vollzählung.
+`cloudflare_analytics_token` und `ahrefs_analytics_key` sind öffentliche
+Websitekennungen, keine administrativen API-Schlüssel. Sie stehen in
+`build/config.public.json`; optional überschreiben `CLOUDFLARE_ANALYTICS_TOKEN`
+und `AHREFS_ANALYTICS_KEY` die Werte. Statistik lädt ausschliesslich auf der
+Produktionsdomain und nach Zustimmung. Die Auswahl gilt höchstens 180 Tage.
+Die neue Zustimmung `vt.analytics.consent.v2` erklärt beide Anbieter. Eine alte
+Cloudflare-Zustimmung wird nicht übernommen, eine gültige Ablehnung bleibt gültig.
+Ablehnen, Widerruf, DNT und GPC werden berücksichtigt. Wegen Zustimmung,
+Browserblockern und bewussten Ausschlüssen ist die Statistik keine Vollzählung.
 
-Web Analytics misst Besuche und Ladezeiten. Es ersetzt keine Messung bestätigter
-Kundenanfragen. Cloudflare DNS, Proxy und Sicherheitsanalysen sind eine separate
-Integration und werden durch den Beacon nicht eingeschaltet.
+Ahrefs erhält nur geprüfte kanonische Seitenadressen, bekannte Produkt-IDs und
+feste Ereigniswerte. Vier UTM-Werte müssen gemeinsam einem Eintrag in
+`data/ANALYTICS_CAMPAIGNS.json` entsprechen. Unbekannte Parameter, Fragmente,
+Suchseiten und unsichere Referrer verhindern das Laden. `?product=` ist nur für
+bekannte Produkte auf der Kontaktseite erlaubt und wird nicht als URL übertragen.
+Cloudflare behält die vollständige Query-Sperre, da sein Beacon keine gemeinsame
+URL-Bereinigung unterstützt. Beide Zahlenreihen deshalb getrennt auswerten.
+
+Der Browser merkt sich nach Zustimmung den ersten bekannten Kampagnenkontakt
+und die bereinigte Einstiegsseite in `sessionStorage`, höchstens 24 Stunden.
+Kein Besucherprofil und keine eigene Personenkennung. Beim Versand wird dieser
+Kontext der geschäftlichen Anfrage beigefügt. Name, E-Mail, Telefonnummer und
+Freitext gehen ausschliesslich an den Versanddienst, nicht in Analytics-Properties.
+Ein Mailentwurf liegt nicht mehr als automatisch messbares `href` im DOM.
+
+Die Ereignisse `product_view`, `inquiry_add`, `inquiry_open`, `inquiry_start`,
+`inquiry_submit`, `inquiry_success`, `inquiry_error`, `contact_email`,
+`contact_phone`, `product_consult` und `download_click` müssen in Ahrefs als
+gleichnamige Custom Events eingerichtet sein. `inquiry_success` entsteht nur
+nach `success === true` von Web3Forms, einmal pro erfolgreichem Versand.
+Ein Klick, Mailentwurf oder Versandversuch ist keine bestätigte Anfrage.
+Auch eine bestätigte Anfrage ist noch kein qualifizierter Lead oder Verkauf.
+Angebote und tatsächliche Aufträge werden separat privat geführt.
+
+Ahrefs wird mit geprüfter SRI-Prüfsumme geladen. Ändert der Anbieter den Tracker,
+bleibt diese Messung bis zur erneuten Prüfung aus; Formulare funktionieren weiter.
+Bei Updates Datenschutzgrenzen und tatsächlich gesendete SDK-Payloads erneut
+testen, nicht lediglich die Prüfsumme ersetzen. Automatische Linkmessung ist
+auf bekannte eigene Pfade begrenzt, automatische Formularmessung deaktiviert.
+Vor Zustimmung werden keine Interaktionen gepuffert. Nach Zustimmung ist die
+kurze Lade-Warteschlange auf 30 Ereignisse begrenzt.
+
+Cloudflare misst insbesondere Ladezeiten. Cloudflare DNS, Proxy und
+Sicherheitsanalysen sind separate Integrationen und werden nicht eingeschaltet.
+Kontometriken, Kampagnenberichte und die private Verkaufsliste liegen nur unter
+`reports/`; sie gehören weder in Git noch in das öffentliche Websitepaket.
 
 ## SEO und AEO
 

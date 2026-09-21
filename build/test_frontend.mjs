@@ -23,7 +23,8 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
     createElement() {
       const textarea = { value: '', select() {} };
       const copy = { addEventListener() {} };
-      const element = { querySelector: s => s === '.mfall-t' ? textarea : s === '.mfall-copy' ? copy : null,
+      const open = { addEventListener(type, fn) { this[type] = fn; } };
+      const element = { querySelector: s => s === '.mfall-t' ? textarea : s === '.mfall-copy' ? copy : s === '.mfall-open' ? open : null,
         scrollIntoView() {}, remove() { this.removed = true; } };
       created.push(element); return element;
     },
@@ -217,26 +218,55 @@ test('the honeypot prevents a filled trap from issuing any request or draft', ()
 });
 
 const analyticsSource = readFileSync(new URL('../assets/js/analytics.js', import.meta.url), 'utf8');
-function analytics({ saved, hostname = 'www.ves-tech.ch', search = '', hash = '',
+function analytics({ saved, oldSaved, hostname = 'www.ves-tech.ch', search = '', hash = '',
   pathname = '/', canonical = 'https://www.ves-tech.ch/',
-  referrer = '', searchPage = false, dnt = false, gpc = false } = {}) {
-  const appended = [], events = {}, listeners = {};
-  let reloads = 0;
-  const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch', token: 'a'.repeat(32) },
+  referrer = '', searchPage = false, dnt = false, gpc = false, ahrefs = false,
+  cloudflare = true, session = new Map(), storageThrows = false, config = {} } = {}) {
+  const appended = [], events = {}, listeners = {}, documentEvents = {}, sent = [];
+  let reloads = 0, timeOffset = 0;
+  const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch',
+    token: cloudflare ? 'a'.repeat(32) : '', ahrefsKey: ahrefs ? 'audit-public-key' : '' },
     addEventListener: (name, fn) => { events[name] = fn; }, querySelector: () => ({ focus() {} }) };
   const settings = { hidden: true, addEventListener() {}, focus() {} };
-  vm.runInNewContext(analyticsSource, { URL, Date,
-    document: { referrer, getElementById: id => id === 'analyticsConsent' ? panel
+  const analyticsConfig = { products: { 'beta-dx': 'schweissgeraete', 'hypermig-x': 'schweissgeraete' },
+    campaigns: { launch: { source: 'linkedin', medium: 'organic_social', campaign: 'machines', content: 'day01' } },
+    contactPath: '/kontakt/', servicePaths: { '/service/reparatur/': 'repair' },
+    paths: ['/', '/produkte/', '/kontakt/', '/produkte/schweissgeraete/beta-dx/'], ...config };
+  const context = { URL, Date: { now: () => Date.now() + timeOffset },
+    document: { referrer, visibilityState: 'visible', getElementById: id => id === 'analyticsConsent' ? panel
       : id === 'analyticsSettings' ? settings : searchPage ? {} : null,
       querySelector: selector => selector === 'link[rel="canonical"]' && canonical ? { href: canonical } : null,
-      createElement: () => ({ dataset: {} }), body: { appendChild: x => appended.push(x) } },
-    localStorage: { getItem: () => JSON.stringify(saved), setItem: (_, value) => { saved = JSON.parse(value); } },
+      addEventListener: (type, fn, capture) => { (documentEvents[type] ||= []).push({ fn, capture }); },
+      createElement: () => ({ dataset: {}, attrs: {}, setAttribute(k, v) { this.attrs[k] = v; } }),
+      body: { appendChild: x => appended.push(x) } },
+    localStorage: { getItem: key => { if (storageThrows) throw Error('unavailable');
+      return JSON.stringify((key.endsWith('.v1') ? oldSaved : saved) ?? null); },
+      setItem: (_, value) => { if (storageThrows) throw Error('unavailable'); saved = JSON.parse(value); } },
+    sessionStorage: { getItem: key => session.get(key) || null,
+      setItem: (key, value) => session.set(key, value), removeItem: key => session.delete(key) },
     location: { hostname, origin: 'https://' + hostname, pathname, search, hash, reload: () => { reloads++; } },
     navigator: { doNotTrack: dnt ? '1' : '0', globalPrivacyControl: gpc },
-    window: { addEventListener: (name, fn) => { listeners[name] = fn; } },
-  });
-  return { appended, panel, settings, listeners, reloads: () => reloads,
-    externalChoice(value) { saved = value; listeners.storage({ key: 'vt.analytics.consent.v1' }); },
+    window: { VT: { lang: 'de', analytics: analyticsConfig }, addEventListener: (name, fn) => { listeners[name] = fn; } },
+  };
+  vm.runInNewContext(analyticsSource, context);
+  return { appended, panel, settings, listeners, documentEvents, context, sent, session,
+    api: context.window.VTAnalytics, reloads: () => reloads,
+    load() { context.window.AhrefsAnalytics = { sendEvent(name, options) { sent.push({ name, props: options.props }); } };
+      appended.find(script => script.src.includes('ahrefs')).onload(); },
+    link(href, type = 'click', button = 0) {
+      const anchor = { getAttribute: () => href };
+      const event = { type, button, target: { closest: () => anchor }, defaultPrevented: false, stopped: false,
+        preventDefault() { this.defaultPrevented = true; }, stopImmediatePropagation() { this.stopped = true; } };
+      for (const handler of documentEvents[type] || []) { if (!event.stopped) handler.fn(event); }
+      // Simulates the SDK target listener after document capture.
+      if (context.window.AhrefsAnalytics && !event.stopped && !event.defaultPrevented) {
+        sent.push({ name: 'x-link-click', props: { href } });
+      }
+      return event;
+    },
+    advance(days) { timeOffset += days * 86400000; },
+    replaceChoice(value) { saved = value; },
+    externalChoice(value) { saved = value; listeners.storage({ key: 'vt.analytics.consent.v2' }); },
     choose(value) { events.click({ target: { closest: () => ({ dataset: { consent: value } }) } }); } };
 }
 const granted = () => ({ value: 'granted', at: Date.now() - 1000 });
@@ -257,7 +287,9 @@ test('analytics loads only once after consent and revocation reloads', () => {
   assert.equal(JSON.parse(a.appended[0].dataset.cfBeacon).spa, false);
   a.choose('denied'); assert.equal(a.reloads(), 1);
   const b = analytics({ saved: granted() });
-  b.listeners.storage({ key: 'vt.analytics.consent.v1' });
+  b.externalChoice(granted());
+  assert.equal(b.reloads(), 0);
+  b.externalChoice({ value: 'denied', at: Date.now() });
   assert.equal(b.reloads(), 1);
 });
 test('analytics excludes previews, search, URL parameters and sensitive referrers', () => {
@@ -297,6 +329,257 @@ test('analytics never records unrecognised paths served through the 404 page', (
   ]) assert.equal(analytics({ saved: granted(), ...options }).appended.length, 0);
   assert.equal(analytics({ saved: granted(), pathname: '/fr/contact/',
     canonical: 'https://www.ves-tech.ch/fr/contact/' }).appended.length, 1);
+});
+
+const campaignQuery = '?utm_source=linkedin&utm_medium=organic_social&utm_campaign=machines&utm_content=day01';
+const ahrefsOptions = { ahrefs: true, cloudflare: false };
+test('v2 does not reuse a Cloudflare-only grant and preserves a valid previous refusal', () => {
+  const a = analytics({ ...ahrefsOptions, oldSaved: granted() });
+  assert.equal(a.appended.length, 0);
+  assert.equal(a.panel.hidden, false);
+  assert.deepEqual(Object.keys(a.api.attribution()), []);
+  assert.equal(a.session.size, 0);
+  const b = analytics({ ...ahrefsOptions, oldSaved: { value: 'denied', at: Date.now() } });
+  assert.equal(b.appended.length, 0);
+  assert.equal(b.panel.hidden, true);
+});
+test('Ahrefs gets one explicit pageview, a safe campaign URL and no automatic history tracking', () => {
+  const a = analytics({ ...ahrefsOptions, search: campaignQuery });
+  a.api.track('inquiry_open'); // Never replay a pre-consent action.
+  a.choose('granted'); a.choose('granted');
+  assert.equal(a.appended.length, 1);
+  const script = a.appended[0];
+  assert.equal(script.integrity, 'sha384-W1wjYK8T9Gz7xq6XpVAitAMIbyk3r/jlMxGQAdL3M058ajAAUoV9TVg2+zPMr3jR');
+  assert.equal(script.crossOrigin, 'anonymous');
+  assert.equal(script.attrs['data-no-pageview-auto'], 'true');
+  assert.equal(script.attrs['data-no-pageview-on-load'], 'true');
+  assert.equal(script.attrs['data-page-location'], 'https://www.ves-tech.ch/' + campaignQuery);
+  a.api.track('inquiry_add', { product_id: 'beta-dx', email: 'private@example.invalid' });
+  assert.equal(a.sent.length, 0);
+  a.load(); script.onload();
+  assert.deepEqual(a.sent.map(x => x.name), ['pageview', 'inquiry_add']);
+  assert.equal(a.sent[1].props.product_id, 'beta-dx');
+  assert.equal(a.sent[1].props.campaign, 'machines');
+  assert.doesNotMatch(JSON.stringify(a.sent), /private@example|email/);
+});
+test('campaigns require an exact tuple and product queries require a real product on contact only', () => {
+  for (const search of [campaignQuery + '&email=private@example.invalid', campaignQuery + '&utm_source=linkedin',
+    campaignQuery.replace('day01', 'private-customer'), campaignQuery.replace('&utm_content=day01', ''),
+    '?utm_source=linkedin', '?fbclid=private', '?product=unknown', '?product=beta-dx&product=beta-dx']) {
+    assert.equal(analytics({ ...ahrefsOptions, saved: granted(), search }).appended.length, 0, search);
+  }
+  const contact = analytics({ ...ahrefsOptions, saved: granted(), pathname: '/kontakt/',
+    canonical: 'https://www.ves-tech.ch/kontakt/', search: '?product=beta-dx' });
+  assert.equal(contact.appended.length, 1);
+  assert.equal(contact.appended[0].attrs['data-page-location'], 'https://www.ves-tech.ch/kontakt/');
+  contact.load(); contact.api.track('inquiry_success', { form_type: 'contact' });
+  assert.equal(contact.sent.at(-1).props.product_id, 'beta-dx');
+  assert.equal(analytics({ ...ahrefsOptions, saved: granted(), search: '?product=beta-dx' }).appended.length, 0);
+});
+test('private referrers cannot reach the SDK even with a safe canonical URL', () => {
+  for (const referrer of ['https://external.invalid/customer/private-name/', 'https://external.invalid/?email=private',
+    'https://user:password@external.invalid/', 'https://www.ves-tech.ch/private/customer/',
+    'https://www.ves-tech.ch/suche/?q=private', 'https://www.ves-tech.ch/produkte/private-customer/beta-dx/',
+    'https://www.ves-tech.ch/' + campaignQuery + '&unknown=x']) {
+    assert.equal(analytics({ ...ahrefsOptions, saved: granted(), referrer }).appended.length, 0, referrer);
+  }
+  for (const referrer of ['https://www.linkedin.com/', 'https://www.ves-tech.ch/' + campaignQuery]) {
+    assert.equal(analytics({ ...ahrefsOptions, saved: granted(), referrer }).appended.length, 1);
+  }
+});
+test('capture guards keep dynamic email drafts, search queries and non-HTTP URLs out of automatic events', () => {
+  const a = analytics({ ...ahrefsOptions, saved: granted() }); a.load(); a.sent.length = 0;
+  const privateDraft = 'mailto:vestechswiss@gmail.com?body=private-person%40example.invalid';
+  for (const [href, type, button] of [[privateDraft, 'click', 0], [privateDraft, 'auxclick', 1],
+    ['/suche/?q=private-person', 'click', 0], ['#private-person', 'click', 0],
+    ['/private/person/', 'click', 0], ['https://external.invalid/private/person/', 'click', 0],
+    ['tel:+41767109139', 'click', 0], ['custom:private-person', 'click', 0],
+    ['https://user:password@example.invalid/', 'click', 0]]) {
+    const e = a.link(href, type, button);
+    assert.equal(e.stopped, true); assert.equal(e.defaultPrevented, false);
+  }
+  assert.equal(a.sent.filter(x => x.name === 'contact_email').length, 2);
+  assert.equal(a.sent.filter(x => x.name === 'contact_phone').length, 1);
+  assert.equal(a.sent.filter(x => x.name === 'x-link-click').length, 0);
+  assert.doesNotMatch(JSON.stringify(a.sent), /private-person|password|41767109139|body=/);
+  a.link('/produkte/');
+  assert.equal(a.sent.at(-1).name, 'x-link-click');
+  a.link('/kontakt/?product=beta-dx');
+  assert.equal(a.sent.at(-1).name, 'product_consult');
+  assert.equal(a.sent.at(-1).props.product_id, 'beta-dx');
+  a.link('https://mahe-online.de/manual.pdf?token=private-person');
+  assert.equal(a.sent.at(-1).name, 'download_click');
+  assert.equal(a.sent.at(-1).props.document_type, 'pdf');
+});
+test('form capture disables automatic form events without stopping the application handler', () => {
+  const a = analytics({ ...ahrefsOptions, saved: granted() });
+  for (const id of ['cartForm', 'kontaktForm']) {
+    let prevented = false;
+    const event = { target: { id }, preventDefault() { prevented = true; },
+      stopPropagation() { assert.fail('must not stop app submit'); },
+      stopImmediatePropagation() { assert.fail('must not stop app submit'); } };
+    a.documentEvents.submit[0].fn(event);
+    assert.equal(prevented, true);
+  }
+});
+test('first-touch attribution is consent-only, session-scoped, expires after 24h and clears on withdrawal', () => {
+  const session = new Map();
+  const a = analytics({ ...ahrefsOptions, search: campaignQuery, session });
+  assert.equal(session.size, 0); assert.deepEqual(Object.keys(a.api.attribution()), []);
+  a.choose('granted');
+  const first = a.api.attribution();
+  assert.equal(first.source, 'linkedin'); assert.equal(first.landing, 'https://www.ves-tech.ch/');
+  assert.doesNotMatch(JSON.stringify([...session]), /utm_|visitor|email/);
+  const b = analytics({ ...ahrefsOptions, saved: granted(), session, pathname: '/kontakt/',
+    canonical: 'https://www.ves-tech.ch/kontakt/' });
+  assert.equal(b.api.attribution().source, 'linkedin');
+  b.advance(2);
+  assert.equal(b.api.attribution().source, 'direct_unknown');
+  assert.equal(b.api.attribution().landing, 'https://www.ves-tech.ch/kontakt/');
+  b.choose('denied'); assert.equal(session.size, 0);
+  assert.deepEqual(Object.keys(b.api.attribution()), []);
+});
+test('tampered session attribution and private landing URLs are discarded', () => {
+  const key = 'vt.analytics.attribution.v1';
+  const session = new Map([[key, JSON.stringify({ at: Date.now(), data: { source: 'private@example.invalid',
+    medium: 'organic_social', campaign: 'machines', content: 'day01', landing: 'https://www.ves-tech.ch/private/person/' } })]]);
+  const a = analytics({ ...ahrefsOptions, saved: granted(), session });
+  assert.equal(a.api.attribution().source, 'direct_unknown');
+  assert.doesNotMatch(JSON.stringify([...session]), /private|person/);
+});
+test('natural referrers produce only specific approved source enums', () => {
+  for (const [referrer, source] of [['https://www.google.ch/', 'google'], ['https://www.bing.com/', 'bing'],
+    ['https://duckduckgo.com/', 'duckduckgo'], ['https://www.linkedin.com/', 'linkedin'],
+    ['https://l.instagram.com/', 'instagram'], ['https://www.google.com.private.invalid/', 'direct_unknown']]) {
+    const a = analytics({ ...ahrefsOptions, saved: granted(), referrer });
+    assert.equal(a.api.attribution().source, source);
+  }
+});
+test('queue is bounded, contains only post-consent actions and is discarded on revocation or load failure', () => {
+  const a = analytics({ ...ahrefsOptions });
+  assert.equal(a.api.track('inquiry_open'), false);
+  a.choose('granted');
+  for (let i=0;i<40;i++) a.api.track('inquiry_add', { product_id: 'beta-dx' });
+  a.load();
+  assert.equal(a.sent.filter(x => x.name === 'inquiry_add').length, 30);
+  const b = analytics({ ...ahrefsOptions, saved: granted() });
+  b.api.track('inquiry_success', { form_type: 'cart' }); b.choose('denied'); b.load();
+  assert.equal(b.sent.length, 0);
+  const c = analytics({ ...ahrefsOptions, saved: granted() });
+  c.api.track('inquiry_open'); c.appended[0].onerror();
+  assert.equal(c.api.track('inquiry_open'), false); c.load();
+  assert.equal(c.sent.filter(x => x.name === 'inquiry_open').length, 0);
+});
+test('privacy signals and changed page URLs block both custom and automatic link events', () => {
+  for (const signal of ['globalPrivacyControl', 'doNotTrack']) {
+    const a = analytics({ ...ahrefsOptions, saved: granted() }); a.load(); a.sent.length = 0;
+    a.context.navigator[signal] = signal === 'doNotTrack' ? '1' : true;
+    assert.equal(a.api.track('inquiry_success'), false);
+    assert.equal(a.link('/produkte/').stopped, true); assert.equal(a.sent.length, 0);
+    assert.deepEqual(Object.keys(a.api.attribution()), []);
+  }
+  const b = analytics({ ...ahrefsOptions, saved: granted() }); b.load(); b.sent.length = 0;
+  b.context.location.search = '?email=private@example.invalid';
+  b.api.track('inquiry_success'); assert.equal(b.link('/produkte/').stopped, true);
+  assert.equal(b.sent.length, 0);
+});
+test('page restore revalidates expiry and a repeated grant in another tab does not reload a draft', () => {
+  const a = analytics({ ...ahrefsOptions, saved: granted() });
+  a.externalChoice(granted()); assert.equal(a.reloads(), 0);
+  a.advance(181); a.listeners.pageshow({ persisted: true });
+  assert.equal(a.reloads(), 1); assert.equal(a.session.size, 0);
+  const b = analytics({ ...ahrefsOptions, saved: granted() });
+  b.replaceChoice({ value: 'denied', at: Date.now() }); b.listeners.pageshow({ persisted: true });
+  assert.equal(b.reloads(), 1);
+});
+test('tracking uses a single accepted submission, never a fallback, error or double click', async () => {
+  for (const result of [{ success: true }, { success: false }, { success: 'true' }]) {
+    const measured = []; let finish;
+    const { api, context } = app({ stored: [item], fetch: () => new Promise(resolve => { finish = resolve; }),
+      prepare(context) { context.window.VTAnalytics = { track(name, props) { measured.push({ name, props }); return true; },
+        attribution: () => ({}) }; } });
+    context.window.VT.web3formsKey = 'test';
+    const f = form(); api.submitForm(f, 'Test', '', [item]); api.submitForm(f, 'Test', '', [item]);
+    finish({ ok: true, json: async () => result });
+    for (let i=0;i<10;i++) await Promise.resolve();
+    assert.equal(measured.filter(x => x.name === 'inquiry_submit').length, 1);
+    assert.equal(measured.filter(x => x.name === 'inquiry_success').length, result.success === true ? 1 : 0);
+    assert.equal(measured.filter(x => x.name === 'inquiry_error').length, result.success === true ? 0 : 1);
+    assert.doesNotMatch(JSON.stringify(measured), /test@example|Test only/);
+  }
+  const measured = [];
+  const { api } = app({ prepare(context) { context.window.VTAnalytics = { track(name) { measured.push(name); return true; }, attribution: () => ({}) }; } });
+  const f = form(); api.submitForm(f, 'Draft', '', [item]);
+  assert.deepEqual(measured, ['inquiry_submit']);
+  assert.doesNotMatch(f.fallback.innerHTML, /href="mailto:[^"]*\?/);
+  f.fallback.querySelector('.mfall-open').click();
+  assert.deepEqual(measured, ['inquiry_submit', 'contact_email']);
+});
+test('analytics exceptions cannot turn successful delivery into an error and metadata stays out of form fields', async () => {
+  let payload;
+  const { api, context } = app({ fetch: async (_, options) => { payload = JSON.parse(options.body);
+    return { ok: true, json: async () => ({ success: true }) }; }, prepare(context) {
+    context.window.VTAnalytics = { track() { throw Error('tracker blocked'); }, attribution: () => ({
+      source: 'linkedin', medium: 'organic_social', campaign: 'machines', content: 'day01',
+      landing: 'https://www.ves-tech.ch/', unexpected: 'must-not-copy' }) };
+  } });
+  context.window.VT.web3formsKey = 'test';
+  const f = form(); api.submitForm(f, 'Test', '', [item]);
+  for (let i=0;i<10;i++) await Promise.resolve();
+  assert.equal(f.resetCalled, true); assert.equal(f.fallback, undefined);
+  assert.match(payload.message, /Website context:\nsource: linkedin/);
+  assert.doesNotMatch(payload.message, /must-not-copy/);
+  assert.equal(f.fields.message, 'Test only');
+});
+test('invalid input and the honeypot never produce submit or success measurements', () => {
+  const measured = [];
+  const { api, context } = app({ fetch: () => assert.fail('invalid form must not send'), prepare(context) {
+    context.window.VTAnalytics = { track(name) { measured.push(name); return true; }, attribution: () => ({}) };
+  } });
+  context.window.VT.web3formsKey = 'test';
+  const f = form();
+  const badEmail = { id: 'cMail', type: 'email', value: 'not-an-email', setAttribute() {},
+    nextElementSibling: { id: 'cMail-err', classList: { contains: () => true } } };
+  f.querySelectorAll = selector => selector === '[required]' ? [badEmail] : [];
+  api.submitForm(f, 'Invalid', '', [item]);
+  f.fields.botcheck = true; api.submitForm(f, 'Bot', '', [item]);
+  assert.deepEqual(measured, []);
+});
+test('transport rejection records an error without success and keeps the customer draft', async () => {
+  const measured = [];
+  const { api, context } = app({ fetch: async () => { throw Error('network blocked'); }, prepare(context) {
+    context.window.VTAnalytics = { track(name, props) { measured.push({ name, props }); return true; }, attribution: () => ({}) };
+  } });
+  context.window.VT.web3formsKey = 'test'; const f = form(); api.submitForm(f, 'Inquiry', '', [item]);
+  for (let i=0;i<10;i++) await Promise.resolve();
+  assert.deepEqual(measured.map(x => x.name), ['inquiry_submit', 'inquiry_error']);
+  assert.equal(measured.at(-1).props.reason, 'network');
+  assert.equal(f.resetCalled, undefined); assert.ok(f.fallback);
+});
+test('first form interaction is counted once and never reads field values', () => {
+  const measured = [];
+  const { events } = app({ prepare(context) {
+    context.window.VTAnalytics = { track(name, props) { measured.push({ name, props }); return true; } };
+  } });
+  const f = { id: 'kontaktForm', dataset: {} };
+  const event = { target: { closest: () => f, get value() { assert.fail('analytics must not read input value'); } } };
+  for (let i=0;i<3;i++) events.input[0](event);
+  assert.deepEqual(measured.map(x => x.name), ['inquiry_start']);
+  assert.equal(measured[0].props.form_type, 'contact');
+});
+test('storage denial leaves analytics optional and a page-level opt-in cannot crash', () => {
+  const a = analytics({ ...ahrefsOptions, storageThrows: true });
+  assert.equal(a.appended.length, 0); a.choose('granted'); a.load();
+  assert.equal(a.sent.filter(x => x.name === 'pageview').length, 1);
+  a.choose('denied'); assert.equal(a.reloads(), 1); assert.equal(a.session.size, 0);
+});
+test('multi-product success is not falsely attributed to the currently viewed product', () => {
+  const a = analytics({ ...ahrefsOptions, saved: granted(), pathname: '/produkte/schweissgeraete/beta-dx/',
+    canonical: 'https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/' }); a.load();
+  a.api.track('inquiry_success', { form_type: 'cart', product_count: '2-3', email: 'private@example.invalid' });
+  assert.equal(a.sent.at(-1).props.product_id, undefined);
+  assert.equal(a.sent.at(-1).props.product_count, '2-3');
+  assert.equal(a.sent.filter(x => x.name === 'product_view').length, 1);
 });
 
 function uiNode(document, attributes = {}) {

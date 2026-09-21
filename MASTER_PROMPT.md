@@ -168,6 +168,15 @@ Das Motiv bleibt unverändert, die WebP-Stufen sind 400, 1000, 1600 und 1774 px.
 Der neue Dateiname verhindert alte Bilder aus dem Browsercache; Theta 40 behält
 sein eigenes Panel. Die gelieferte Grafik ist keine neue technische Spezifikation.
 
+Für die Reinigungstechnik wurden am selben Tag vier weitere vom Inhaber
+bereitgestellte Grafiken importiert: `HyperCleaner CT200 FrontPanel.png`,
+`HyperCleaner CT200 SYN FrontPanel.png`, `Hypercleaner ST Speed FrontPanel.png`
+und `MLF100 Frontpanel.png`. CT 200 behält zwei getrennte Panelabbildungen;
+ST Speed und MLF 100 erhalten erstmals eine eigene Zuordnung in `core.PANELS`.
+Die Namen und Alternativtexte werden über `fpName()` in DE/FR/IT ausgegeben.
+Die Grafiken werden nicht hochskaliert und begründen keine neuen technischen
+Leistungsangaben. MiniReiniger, ST und ST Plus behalten ihre eigenen Panels.
+
 Neues Herobild: `python3 build/hero.py hero <datei>` (braucht `cwebp`, und für
 eine Vorlage, die kein JPEG ist, zusätzlich `Pillow` für den JPEG-Rückfall).
 Beides meldet sich mit einem Satz, wenn es fehlt. `build.py`, `check.py` und

@@ -903,8 +903,10 @@ PANELS = {
     "theta-120-aut":     ["theta_hsc"],
     "minicleaner":       ["mini_panel"],
     "hypercleaner-st":   ["cleaner_st"],
+    "hypercleaner-speed": ["cleaner_speed"],
     "hypercleaner-plus": ["cleaner_plus"],
     "hypercleaner-ct200": ["ct200_panel", "ct200_syn"],
+    "mlf100":            ["mlf100_panel"],
 }
 
 

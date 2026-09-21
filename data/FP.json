@@ -327,6 +327,11 @@
   "big": true,
   "img": "panels/HyperClenaerST_Panel.png"
  },
+ "cleaner_speed": {
+  "n": "HyperCleaner ST Speed: Bedienpanel",
+  "big": true,
+  "img": "panels/Hypercleaner ST Speed FrontPanel.png"
+ },
  "cleaner_plus": {
   "n": "HyperCleaner ST Plus: Bedienpanel",
   "big": true,
@@ -335,7 +340,7 @@
  "ct200_panel": {
   "n": "HyperCleaner CT 200: Bedienpanel",
   "big": true,
-  "img": "panels/CT200_Panel.png",
+  "img": "panels/HyperCleaner CT200 FrontPanel.png",
   "ctrl": [
    "CL_POWER",
    "CL_MODE"
@@ -344,11 +349,16 @@
  "ct200_syn": {
   "n": "CT 200 Syn: Bedienpanel",
   "big": true,
-  "img": "panels/CT200_Syn_Panel.png",
+  "img": "panels/HyperCleaner CT200 SYN FrontPanel.png",
   "ctrl": [
    "CL_POWER",
    "CL_MODE"
   ]
+ },
+ "mlf100_panel": {
+  "n": "MLF 100: Bedienpanel",
+  "big": true,
+  "img": "panels/MLF100 Frontpanel.png"
  },
  "ecomig_2000": {
   "n": "EcoMIG 2000 Digital Front Panel",

@@ -1054,5 +1054,56 @@
    1600,
    1774
   ]
+ },
+ "panels/HyperCleaner CT200 FrontPanel.png": {
+  "key": "hypercleaner-ct200-frontpanel",
+  "w": 1774,
+  "h": 887,
+  "ratio": 0.5,
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   1774
+  ]
+ },
+ "panels/HyperCleaner CT200 SYN FrontPanel.png": {
+  "key": "hypercleaner-ct200-syn-frontpanel",
+  "w": 1774,
+  "h": 887,
+  "ratio": 0.5,
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   1774
+  ]
+ },
+ "panels/Hypercleaner ST Speed FrontPanel.png": {
+  "key": "hypercleaner-st-speed-frontpanel",
+  "w": 1774,
+  "h": 887,
+  "ratio": 0.5,
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1600,
+   1774
+  ]
+ },
+ "panels/MLF100 Frontpanel.png": {
+  "key": "mlf100-frontpanel",
+  "w": 1459,
+  "h": 1078,
+  "ratio": 0.7389,
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1459
+  ]
  }
 }

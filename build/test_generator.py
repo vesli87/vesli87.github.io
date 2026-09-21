@@ -91,6 +91,59 @@ class GeneratorTests(unittest.TestCase):
                     self.assertTrue(any('\\u003c' in script for script in scripts))
                     self.assertTrue(all('<' not in script for script in scripts))
 
+    def test_lastmod_ignores_runtime_changes_but_keeps_indexable_content(self):
+        base = '''<head><title>PlasmaFix 51</title>
+<meta name="description" content="Gebrauchtes Mikroplasmageraet">
+<meta http-equiv="Content-Security-Policy" content="script-src 'sha256-old'">
+<link rel="canonical" href="https://www.ves-tech.ch/produkte/occasion/plasmafix-51/">
+<link rel="alternate" hreflang="fr-CH" href="/fr/produits/occasion/plasmafix-51/">
+<link rel="stylesheet" href="/assets/css/site.css?v=12345678">
+<script>window.VT={"analytics":{"campaigns":{"old":{}}}};</script>
+<script type="application/ld+json">{"name":"PlasmaFix 51","description":"Literal <meta http-equiv='Content-Security-Policy' content='keep'>"}</script>
+<script src="/assets/js/app.js?v=12345678" integrity="sha256-old"></script>
+</head><main><h1>PlasmaFix 51</h1><p>Gepruefte Occasion</p>
+<a href="/kontakt/">Beratung</a><img src="/assets/img/device.webp"></main>'''
+        runtime = base.replace('12345678', 'abcdef12').replace('sha256-old', 'sha256-new')
+        runtime = runtime.replace('"campaigns":{"old":{}}', '"campaigns":{"new":{}}')
+        self.assertEqual(B._inhalt_fuer_lastmod(base), B._inhalt_fuer_lastmod(runtime))
+        # Each SEO/content change must remain visible to lastmod independently.
+        changes = [
+            ('<title>PlasmaFix 51', '<title>PlasmaFix 51 Occasion'),
+            ('content="Gebrauchtes Mikroplasmageraet"', 'content="Geprueftes Mikroplasmageraet"'),
+            ('https://www.ves-tech.ch/produkte/occasion/plasmafix-51/', 'https://www.ves-tech.ch/produkte/'),
+            ('https://www.ves-tech.ch/produkte/occasion/plasmafix-51/', 'https://www.ves-tech.ch/produkte/occasion/plasmafix-51/?v=12345678'),
+            ('hreflang="fr-CH"', 'hreflang="it-CH"'),
+            ('"name":"PlasmaFix 51"', '"name":"PlasmaFix 51 Occasion"'),
+            ("content='keep'", "content='changed'"),
+            ('Gepruefte Occasion', 'Drei gepruefte Occasionen'),
+            ('href="/kontakt/"', 'href="/service/"'),
+            ('/assets/img/device.webp', '/assets/img/other.webp'),
+            ('/assets/js/app.js', '/assets/js/replacement.js'),
+            ('window.VT={"analytics":{"campaigns":{"old":{}}}};', 'window.VT={};customLogic();'),
+        ]
+        for before, after in changes:
+            with self.subTest(change=before):
+                self.assertIn(before, base)
+                self.assertNotEqual(B._inhalt_fuer_lastmod(base), B._inhalt_fuer_lastmod(base.replace(before, after)))
+
+    def test_lastmod_keeps_existing_date_for_runtime_only_update(self):
+        with tempfile.TemporaryDirectory() as tmp, \
+                patch.object(B, 'OUT', pathlib.Path(tmp)), \
+                patch.object(B, 'LASTMOD_DATEI', pathlib.Path(tmp) / 'lastmod.json'), \
+                patch.object(B, '_datum_aus_git', return_value='2026-09-19'):
+            page = pathlib.Path(tmp) / 'index.html'
+            page.write_text('<h1>Product</h1><script>window.VT={"campaigns":1};</script>')
+            with patch.object(B, 'TODAY', '2026-09-20'):
+                dates, _, _ = B.lastmod_pflegen(['/'])
+            self.assertEqual(dates['/'], '2026-09-19')
+            page.write_text('<h1>Product</h1><script>window.VT={"campaigns":2};</script>')
+            with patch.object(B, 'TODAY', '2026-09-21'):
+                dates, changed, first = B.lastmod_pflegen(['/'])
+                self.assertEqual((dates['/'], changed, first), ('2026-09-19', 0, False))
+                page.write_text('<h1>Updated product</h1><script>window.VT={"campaigns":2};</script>')
+                dates, changed, _ = B.lastmod_pflegen(['/'])
+                self.assertEqual((dates['/'], changed), ('2026-09-21', 1))
+
     def test_analytics_and_privacy_follow_configuration(self):
         for lang in C.LANGS:
             for token in ('', '0' * 32):

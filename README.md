@@ -113,6 +113,12 @@ verfügbar; das verhindert die normale Indexierung nicht.
 keine Zusage auf KI-Zitate oder Rankings. Der JSON-Katalog ist ein eigenes Format
 (`schema_version`), das JSON-LD steht auf den HTML-Seiten.
 
+Die Sitemap enthält 351 indexierbare URLs; Suche, Datenschutz und AGB bleiben
+ausgeschlossen, das Impressum ist indexierbar. `lastmod` bleibt bei reinen
+Änderungen an CSP/SRI, Asset-Versionsnummern und der Laufzeitkonfiguration stabil.
+Inhalte, SEO-Metadaten, JSON-LD, Navigation und geänderte Asset-Pfade werden
+weiterhin als Seitenänderung erkannt.
+
 ## Veröffentlichen
 
 Push auf `main` startet `.github/workflows/pages.yml`. Build, Seitenprüfungen,

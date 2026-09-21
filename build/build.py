@@ -363,13 +363,52 @@ def umleitungen():
 # Rechner und jeder CI-Lauf wieder bei heute an.
 #
 # Zwei Feinheiten:
-#   * Die ?v=-Anhaengsel an CSS und JS werden vor dem Vergleich entfernt. Sonst
-#     galten nach jeder Stiländerung alle 339 Seiten als geaendert.
+#   * Asset-Versionen, CSP/SRI und die Laufzeitkonfiguration window.VT werden
+#     vor dem Vergleich entfernt. Reine Technik-/Analytics-Updates aendern
+#     keinen redaktionellen Stand. JSON-LD, Metadaten, Navigation und sichtbarer
+#     Inhalt bleiben Teil des Vergleichs.
 #   * Beim ersten Lauf gibt es noch keinen Stand. Statt alles auf heute zu
 #     setzen, kommt das Datum dann aus der Versionsgeschichte - das letzte Mal,
 #     als die erzeugte Datei sich wirklich geaendert hat.
 LASTMOD_DATEI = C.BUILD / "lastmod.json"
 _VERSIONSANHANG = re.compile(r"\?v=[0-9a-f]{6,}")
+_SCRIPT_BLOCK = re.compile(r"(<script\b[^>]*>)(.*?)(</script\s*>)", re.I | re.S)
+_HTML_TAG = re.compile(r"<[a-zA-Z][^>]*>")
+
+
+def _inhalt_fuer_lastmod(roh):
+    """Ignore runtime bookkeeping, retaining crawlable content and JSON-LD."""
+    def tag(text):
+        if re.match(r"<meta\b", text, re.I) and re.search(
+                r'''\bhttp-equiv\s*=\s*["']Content-Security-Policy["']''', text, re.I):
+            return ""
+        text = re.sub(r'''\s+integrity\s*=\s*(?:"[^"]*"|'[^']*')''', "", text, flags=re.I)
+        # Only cache-busting on local asset references is disposable. A query
+        # change on a canonical, alternate or navigation URL still counts.
+        return re.sub(r'''(\b(?:src|href)\s*=\s*)(["'])(/assets/[^"']*)\2''',
+                      lambda m: m.group(1) + m.group(2) + _VERSIONSANHANG.sub("", m.group(3)) + m.group(2),
+                      text, flags=re.I)
+
+    def html_part(text):
+        return _HTML_TAG.sub(lambda match: tag(match.group()), text)
+
+    parts, start = [], 0
+    for match in _SCRIPT_BLOCK.finditer(roh):
+        parts.append(html_part(roh[start:match.start()]))
+        opening, body, closing = match.groups()
+        # Never rewrite structured data, including strings containing markup.
+        jsonld = re.search(r'''\btype\s*=\s*["']application/ld\+json["']''', opening, re.I)
+        boot = None if jsonld else re.fullmatch(r"\s*window\.VT=(\{.*\});\s*", body, re.S)
+        if boot:
+            try:
+                if isinstance(json.loads(boot.group(1)), dict):
+                    body = "window.VT={};"
+            except ValueError:
+                pass  # Unexpected executable content must still count.
+        parts.extend((tag(opening), body, closing))
+        start = match.end()
+    parts.append(html_part(roh[start:]))
+    return "".join(parts)
 
 
 def _inhaltskennung(pfad):
@@ -378,7 +417,7 @@ def _inhaltskennung(pfad):
         f = OUT / "index.html"
     if not f.exists():
         return None
-    roh = _VERSIONSANHANG.sub("", f.read_text("utf-8"))
+    roh = _inhalt_fuer_lastmod(f.read_text("utf-8"))
     return hashlib.sha256(roh.encode("utf-8")).hexdigest()[:16]
 
 

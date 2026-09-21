@@ -171,8 +171,12 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, `Product` ohne erfundene Angebote,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (351 URLs); Suche und Rechtstexte
-  sind `noindex,follow` und stehen bewusst nicht drin
+- `sitemap.xml` mit `xhtml:link`-Alternates (351 URLs); Suche, Datenschutz und AGB
+  sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
+- `lastmod` folgt dem Inhalt jeder Seite. Asset-Versionsnummern, CSP/SRI und die
+  reine Laufzeitkonfiguration `window.VT` ändern das Datum nicht. Sichtbarer
+  Inhalt, Metadaten, canonical/hreflang, JSON-LD, Navigation und Asset-Pfade
+  bleiben relevant. Bestehende Daten werden nicht künstlich zurückgesetzt.
 - `robots.txt` mit Sitemap-Verweis
 - Verifizierungs-Tags für Google Search Console und Bing Webmaster Tools:
   Wert in `core.py` eintragen (`GOOGLE_SITE_VERIFICATION`,

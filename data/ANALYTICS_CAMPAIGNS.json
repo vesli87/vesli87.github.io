@@ -160,5 +160,53 @@
   "medium": "organic_social",
   "campaign": "service-2026",
   "content": "day10-diagnostic-fr"
+ },
+ "facebook-startbeitrag-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "startbeitrag-de"
+ },
+ "facebook-hypertig-ax-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "hypertig-ax-de"
+ },
+ "facebook-omega-ax-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "omega-ax-de"
+ },
+ "facebook-beta-dx-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "beta-dx-de"
+ },
+ "facebook-hypercleaner-st-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "hypercleaner-st-de"
+ },
+ "facebook-mikroplasma-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "mikroplasma-de"
+ },
+ "facebook-service-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "service-de"
+ },
+ "facebook-anfrageliste-de": {
+  "source": "facebook",
+  "medium": "organic_social",
+  "campaign": "mahe-programm-2026",
+  "content": "anfrageliste-de"
  }
 }

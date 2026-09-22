@@ -74,8 +74,15 @@ Suchseiten und unsichere Referrer verhindern das Laden. `?product=` mit optional
 auf der Kontaktseite erlaubt. `?service=` akzeptiert nur die vier bekannten
 Dienstleistungen. Diese Parameter werden nicht als URL übertragen, Optionen
 werden nicht an die Analytik gesendet.
+Ein einzelner `fbclid`-Parameter wird nach Zustimmung vor dem Laden von Ahrefs
+aus der aktuellen Browseradresse entfernt. Sein Wert wird weder gespeichert noch
+übertragen. Alle übrigen Parameter müssen weiterhin der geprüften Kombination
+entsprechen; doppelte `fbclid`-Werte und Referrer mit dieser Kennung bleiben
+ausgeschlossen. Die ursprüngliche URL kann weiterhin im normalen HTTP-Zugriff
+des Webservers stehen; die Bereinigung betrifft die optionale Browseranalytik.
 Cloudflare behält die vollständige Query-Sperre, da sein Beacon keine gemeinsame
-URL-Bereinigung unterstützt. Beide Zahlenreihen deshalb getrennt auswerten.
+URL-Bereinigung unterstützt. Das gilt auch für Einstiege mit entferntem `fbclid`.
+Beide Zahlenreihen deshalb getrennt auswerten.
 
 Der Browser merkt sich nach Zustimmung den ersten bekannten Kampagnenkontakt
 und die bereinigte Einstiegsseite in `sessionStorage`, höchstens 24 Stunden.

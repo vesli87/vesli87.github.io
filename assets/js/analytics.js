@@ -15,6 +15,7 @@
   var choice = null, loaded = false, ready = false, failed = false, queue = [];
   var canonical = null, pageLocation = '', entry = null, touch = null;
   var productId = '', service = '', handlersInstalled = false, pageRecorded = false;
+  var discardedClickId = false;
   var language = ['de', 'fr', 'it'].indexOf(VT.lang) >= 0 ? VT.lang : 'de';
   var names = ['product_view', 'inquiry_add', 'inquiry_open', 'inquiry_start',
     'inquiry_submit', 'inquiry_success', 'inquiry_error', 'contact_email',
@@ -123,8 +124,22 @@
       var current = new URL(location.origin + location.pathname + (location.search || '') + (location.hash || ''));
       if (!canonical || canonical.origin !== location.origin || canonical.pathname !== current.pathname ||
           canonical.search || canonical.hash || canonical.username || canonical.password) return false;
+      var clickIds = current.searchParams.getAll('fbclid');
+      if (clickIds.length) {
+        // Discard this one known transport parameter, never measure its value.
+        // All remaining parameters still have to pass the exact public registry.
+        if (clickIds.length !== 1 || loaded || !approved()) return false;
+        current.searchParams.delete('fbclid');
+      }
       entry = safeQuery(current);
       if (!entry || !referrerSafe()) return false;
+      if (clickIds.length) {
+        if (!window.history || typeof window.history.replaceState !== 'function') return false;
+        window.history.replaceState(window.history.state, '', current.href);
+        // No provider can load if the browser refused to clean the current URL.
+        if (location.search !== current.search) return false;
+        discardedClickId = true;
+      }
       var measured = new URL(canonical.href);
       if (entry.campaign) ['source', 'medium', 'campaign', 'content'].forEach(function (field) {
         measured.searchParams.set('utm_' + field, entry.campaign[field]);
@@ -287,7 +302,9 @@
       // Cloudflare has no shared URL override: keep its query exclusions.
       var safeRef = true;
       try { safeRef = !document.referrer || !new URL(document.referrer).search; } catch (err) { safeRef = false; }
-      if (!location.search && !location.hash && safeRef) {
+      // Keep this entry excluded even after fbclid removal: performance entries
+      // can retain the original navigation URL, outside the beacon's control.
+      if (!discardedClickId && !location.search && !location.hash && safeRef) {
         var beacon = document.createElement('script');
         beacon.type = 'module';
         beacon.src = 'https://static.cloudflareinsights.com/beacon.min.js';

@@ -65,6 +65,12 @@ Organization-Knoten. Es gibt keine eingebetteten Feeds, Social-SDKs oder
 zusaetzlichen Trackingaufrufe. Private Profile und noch nicht bestaetigte
 TikTok- oder Verzeichniseintraege werden nicht verlinkt.
 
+Facebook-Kampagnen verwenden ausschliesslich die festen Vierer-Kombinationen in
+`data/ANALYTICS_CAMPAIGNS.json`. Ein einzelner `fbclid` wird nach Zustimmung vor
+Ahrefs aus der aktuellen URL entfernt und weder gespeichert noch gemessen.
+Unbekannte weitere Parameter und unsichere Referrer bleiben ausgeschlossen;
+Cloudflare misst diesen Einstieg weiterhin nicht. Es wird kein Meta Pixel geladen.
+
 ## 2. Architektur
 
 ```

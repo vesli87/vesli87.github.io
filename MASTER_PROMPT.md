@@ -56,13 +56,14 @@
   jetzige Wert bedeutet „diese Domain versendet keine Mail", was zur
   Gmail-Adresse passt.
 
-Die bestaetigten Firmenprofile auf Instagram (`vestechswiss`) und LinkedIn
-(`ves-tech-swiss`) werden seit dem 22.09.2026 zentral in
+Die bestaetigten Firmenprofile auf Instagram (`vestechswiss`), LinkedIn
+(`ves-tech-swiss`) und Facebook (`https://www.facebook.com/profile.php?id=61594862482139`)
+werden seit dem 22.09.2026 zentral in
 `core.py::SOCIAL_PROFILES` gepflegt. Die URLs erscheinen in DE/FR/IT als
 lesbare Textlinks unter der Firmenmarke im Footer und als `sameAs` am
 Organization-Knoten. Es gibt keine eingebetteten Feeds, Social-SDKs oder
 zusaetzlichen Trackingaufrufe. Private Profile und noch nicht bestaetigte
-Facebook-, TikTok- oder Verzeichniseintraege werden nicht verlinkt.
+TikTok- oder Verzeichniseintraege werden nicht verlinkt.
 
 ## 2. Architektur
 

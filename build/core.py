@@ -117,6 +117,7 @@ MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
 SOCIAL_PROFILES = (
     ("Instagram", "https://www.instagram.com/vestechswiss/"),
     ("LinkedIn", "https://www.linkedin.com/company/ves-tech-swiss/"),
+    ("Facebook", "https://www.facebook.com/profile.php?id=61594862482139"),
 )
 SAMEAS = [url for _, url in SOCIAL_PROFILES]
 

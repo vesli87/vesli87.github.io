@@ -447,7 +447,7 @@ def ld_org(lang=C.DEFAULT_LANG):
         # Karte zur Werkstatt. Google verknuepft damit Website und Ort; wer die
         # Seite auf dem Telefon liest, kommt mit einem Tippen zur Navigation.
         "hasMap": C.MAP_URL,
-        # Leer, solange es keine Profile gibt - siehe core.py::SAMEAS.
+        # Nur verifizierte Firmenprofile - siehe core.py::SOCIAL_PROFILES.
         **({"sameAs": C.SAMEAS} if C.SAMEAS else {}),
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
         "founder": {"@type": "Person", "name": co["owner"]},
@@ -900,11 +900,16 @@ def footer(lang):
     """
     prod = "".join(f'<li><a href="{e(C.u_cat(lang, c["id"]))}">{e(C.catT(lang, c))}</a></li>'
                    for c in C.CATS)
+    social = "".join(
+        f'<li><a href="{e(url)}" rel="me noreferrer">'
+        f'{e(name)} · {e(C.COMPANY["name"])}</a></li>'
+        for name, url in C.SOCIAL_PROFILES)
     return f"""<footer>
   <div class="wrap">
     <div class="fcols">
       <div class="brand"><div class="name">VES<i>-</i>TECH</div>
-        <p>{e(C.t(lang,'foot_brand'))}</p></div>
+        <p>{e(C.t(lang,'foot_brand'))}</p>
+        <ul>{social}</ul></div>
       <div><h2 class="fh">{e(C.t(lang,'foot_products'))}</h2><ul>{prod}
         <li><a href="{e(C.u_products(lang))}">{e(C.t(lang,'nav_all_products'))}</a></li></ul></div>
       <div><h2 class="fh"><a href="{e(C.u_service(lang))}">{e(C.t(lang,'foot_service'))}</a></h2><ul>

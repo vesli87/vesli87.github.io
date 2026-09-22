@@ -217,7 +217,7 @@
           ],
           [
             "Konfiguration vorbereiten",
-            "Beide Modelle nutzen MyPlasm CNC und unterstützen DXF sowie HPGL/PLT. Nennen Sie Werkstoff, Blechdicke, verfügbare Fläche, Netzanschluss und Druckluft für die Zusammenstellung des Sets."
+            "Beide Modelle nutzen das System CNC von MAHE und unterstützen DXF sowie HPGL/PLT. Nennen Sie Werkstoff, Blechdicke, verfügbare Fläche, Netzanschluss und Druckluft für die Zusammenstellung des Sets."
           ],
           [
             "Welche Teile fertigen Sie?",
@@ -234,7 +234,7 @@
           ],
           [
             "Préparer la configuration",
-            "Les deux utilisent MyPlasm CNC et acceptent DXF ainsi que HPGL/PLT. Précisez matériau, épaisseur, espace disponible, alimentation et air comprimé pour composer l’ensemble."
+            "Les deux utilisent le système CNC de MAHE et acceptent DXF ainsi que HPGL/PLT. Précisez matériau, épaisseur, espace disponible, alimentation et air comprimé pour composer l’ensemble."
           ],
           [
             "Quelles pièces fabriquez-vous ?",
@@ -251,7 +251,7 @@
           ],
           [
             "Preparare la configurazione",
-            "Entrambi utilizzano MyPlasm CNC e supportano DXF e HPGL/PLT. Specificate materiale, spessore, spazio disponibile, alimentazione e aria compressa per definire il set."
+            "Entrambi utilizzano il sistema CNC di MAHE e supportano DXF e HPGL/PLT. Specificate materiale, spessore, spazio disponibile, alimentazione e aria compressa per definire il set."
           ],
           [
             "Quali pezzi producete?",
@@ -873,6 +873,10 @@
             "PlasmaFix 51 beginnt im Mikroplasma-Betrieb bei 0,08 A, PlasmaFix 50 S bei 0,05 A. Die Baureihe 51 ist mit LCD-Bedienung beschrieben; beachten Sie die Unterlagen zur konkreten Ausführung 51 oder P+T."
           ],
           [
+            "Konkretes Gerät auswählen",
+            "Auf der Produktseite PlasmaFix 51 zeigt das gemeinsame Foto links und rechts Oerlikon PlasmaFix P+T, in der Mitte SAF-FRO PlasmaFix 51. Wählen Sie das gewünschte Gerät nach seiner Position; die Auswahl ist keine Reservierung."
+          ],
+          [
             "Anlage und Lieferumfang ansehen",
             "Zustand, Fotos und Originalunterlagen stehen auf den Produktseiten. Nennen Sie gewünschte Ausführung und Ausstattung; Besichtigung erfolgt nach Vereinbarung, der genaue Lieferumfang steht im Angebot."
           ]
@@ -886,6 +890,10 @@
             "PlasmaFix 51 commence à 0,08 A en microplasma, PlasmaFix 50 S à 0,05 A. La série 51 est décrite avec une commande LCD ; consultez les documents de la version précise, 51 ou P+T."
           ],
           [
+            "Choisir un appareil précis",
+            "Sur la page produit PlasmaFix 51, la photo de groupe montre Oerlikon PlasmaFix P+T à gauche et à droite, et SAF-FRO PlasmaFix 51 au centre. Choisissez l’appareil selon sa position ; cette sélection ne constitue pas une réservation."
+          ],
+          [
             "Examiner la machine et la livraison",
             "État, photos et documents d’origine figurent sur les pages produits. Précisez version et équipement souhaités ; la visite se fait sur rendez-vous et le contenu exact de livraison figure dans l’offre."
           ]
@@ -897,6 +905,10 @@
           [
             "Confrontare tramite i documenti",
             "PlasmaFix 51 parte da 0,08 A in microplasma, PlasmaFix 50 S da 0,05 A. La serie 51 è descritta con comandi LCD; consultate i documenti della versione precisa, 51 o P+T."
+          ],
+          [
+            "Scegliere un apparecchio preciso",
+            "Nella pagina del prodotto PlasmaFix 51, la foto di gruppo mostra Oerlikon PlasmaFix P+T a sinistra e a destra, e SAF-FRO PlasmaFix 51 al centro. Scegliete l’apparecchio in base alla posizione; la selezione non costituisce una prenotazione."
           ],
           [
             "Esaminare macchina e fornitura",

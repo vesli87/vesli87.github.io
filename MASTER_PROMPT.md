@@ -56,6 +56,14 @@
   jetzige Wert bedeutet „diese Domain versendet keine Mail", was zur
   Gmail-Adresse passt.
 
+Die bestaetigten Firmenprofile auf Instagram (`vestechswiss`) und LinkedIn
+(`ves-tech-swiss`) werden seit dem 22.09.2026 zentral in
+`core.py::SOCIAL_PROFILES` gepflegt. Die URLs erscheinen in DE/FR/IT als
+lesbare Textlinks unter der Firmenmarke im Footer und als `sameAs` am
+Organization-Knoten. Es gibt keine eingebetteten Feeds, Social-SDKs oder
+zusaetzlichen Trackingaufrufe. Private Profile und noch nicht bestaetigte
+Facebook-, TikTok- oder Verzeichniseintraege werden nicht verlinkt.
+
 ## 2. Architektur
 
 ```
@@ -153,6 +161,17 @@ Bei MPT 3001 und MPT 2501 lautet der Steuerungspunkt in der Merkmalsliste
 seit dem 21.09.2026 auf ausdrückliche Vorgabe des Inhabers «Steuerung über das
 System CNC von MAHE», mit entsprechender FR-/IT-Fassung. Die Herkunft dieser
 gezielten Textkorrektur ist in `HL_DEVICE.json::src` dokumentiert.
+Seit dem 22.09.2026 verwendet auch die Auswahlhilfe fuer Schneidtische in
+`SUBCATEGORY_GUIDES.json` diese vom Inhaber gewuenschte Bezeichnung; die
+weiteren technischen Angaben bleiben unveraendert.
+
+Die Occasion-Auswahlhilfe bezeichnet die PlasmaFix-Anlagen nicht pauschal
+als Oerlikon. Bei Mikroplasma erklaert ein eigenes Auswahlkriterium die
+Positionen im gemeinsamen Foto auf der PlasmaFix-51-Produktseite:
+Oerlikon PlasmaFix P+T links/rechts, SAF-FRO PlasmaFix 51 in der Mitte.
+Quelle sind `IMGCAP.json` und `INQUIRY_OPTIONS.json`. Daraus wird keine
+aktuelle Stueckzahl oder Reservierung abgeleitet; die Verfuegbarkeit bleibt
+ausschliesslich im datierten Verfuegbarkeitsfeld gepflegt.
 
 ## 5. Bilder
 

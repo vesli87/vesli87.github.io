@@ -110,21 +110,15 @@ MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
            + WORKSHOP["street"].replace(" ", "+") + ",+"
            + WORKSHOP["zip"] + "+" + WORKSHOP["city"])
 
-# sameAs verknuepft die Website mit denselben Profilen anderswo. Genau das
-# braucht Google, um zu erkennen, dass Unternehmensprofil, Verzeichniseintrag
-# und Website dieselbe Firma sind - der wichtigste Hebel fuer die lokale
-# Sichtbarkeit in der Schweiz.
-#
-# Die Liste bleibt leer, bis die Profile wirklich bestehen. Ein erfundener
-# Verweis waere schlimmer als keiner: Google prueft, ob dort dieselbe Firma
-# mit derselben Adresse steht.
-#
-# Sobald angelegt, hier eintragen (in dieser Reihenfolge sinnvoll):
-#   1. Google-Unternehmensprofil  (maps.app.goo.gl/... oder die Maps-URL)
-#   2. local.ch     3. search.ch     4. moneyhouse.ch
-#   5. svs.ch-Firmenmitglieder     6. LinkedIn
-# Danach: python3 build/build.py && push. Der Knoten erscheint automatisch.
-SAMEAS = []
+# Verifizierte Firmenprofile, am 22.09.2026 im jeweiligen Firmenkonto bestaetigt.
+# Dieselben URLs erscheinen als normale Footerlinks und als Organization.sameAs.
+# Nur tatsaechlich bestehende Firmenprofile aufnehmen, keine privaten Konten
+# oder noch unbestaetigten Eintraege. Die Links laden keine Social-Media-Embeds.
+SOCIAL_PROFILES = (
+    ("Instagram", "https://www.instagram.com/vestechswiss/"),
+    ("LinkedIn", "https://www.linkedin.com/company/ves-tech-swiss/"),
+)
+SAMEAS = [url for _, url in SOCIAL_PROFILES]
 
 # Verifizierung der Webmaster-Tools. Beide Dienste bieten eine Meta-Tag-Methode;
 # bei einer <user>.github.io-Adresse ist das der einzige gangbare Weg, weil die

@@ -14,6 +14,7 @@ import build as B
 from package_site import package
 from indexnow import changed_paths
 from scrape_dls import localized_title
+from check import foreign_names_assigned
 
 
 class MainLinks(HTMLParser):
@@ -48,6 +49,20 @@ class MainLinks(HTMLParser):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_foreign_brand_guard_accepts_reviewed_units_but_rejects_mahe_mixups(self):
+        products = [p for p in C.P if C.pBrand(p) != C.BRAND]
+        choices = C.inquiry_options()
+        self.assertTrue(foreign_names_assigned(
+            'MAHE PlasmaTIG und SAF-FRO PlasmaFix 51', products, choices))
+        self.assertTrue(foreign_names_assigned(
+            'MAHE PlasmaTIG und Oerlikon PlasmaFix 50 S', products, choices))
+        for line in ('MAHE PlasmaFix 51', 'MAHE PlasmaTIG und PlasmaFix 51',
+                     'MAHE PlasmaTIG und Unbekannt PlasmaFix 51',
+                     'SAF-FRO PlasmaFix 51 und MAHE PlasmaFix 51'):
+            self.assertFalse(foreign_names_assigned(line, products, choices), line)
+        self.assertFalse(foreign_names_assigned(
+            'MAHE PlasmaTIG und SAF-FRO PlasmaFix 51', products, {}))
+
     def test_copy_changes_do_not_rename_published_subcategory_routes(self):
         with patch.dict(C.SUBTR['Werkstattausrüstung'], fr='Un nouveau libellé', it='Un nuovo nome'):
             self.assertEqual(C.u_sub('fr', 'zubehoer', 'Werkstattausrüstung'),

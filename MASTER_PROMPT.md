@@ -702,3 +702,22 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
   `test_inquiry.py` prüft Register, sichere Ausgabe und Servicerouten.
 - Produkt-/Kategoriezahlen bezeichnen Katalogeinträge, nicht Lagerbestand.
   Die MPT-Illustration erhält eine sichtbare Bildunterschrift.
+
+
+## 21. Marketing und Occasion-Bezeichnungen (22.09.2026)
+
+- Verifizierte Firmenprofile werden zentral über `SOCIAL_PROFILES` in
+  `build/core.py` geführt; Fusszeile und `Organization.sameAs` verwenden
+  dieselben URLs. Keine externen Social-Media-Embeds.
+- Die Fusszeile nennt das ganze MAHE-Programm: Schweissen, Schneiden, Reinigen
+  und Automatisieren. Service am Partnerstandort Herisau AR nach Vereinbarung.
+- Occasion-Kacheln nennen Katalog-Modellreihen ohne pauschale Herstellermarke
+  oder Lagerzusage. Die drei Geräte bei PlasmaFix 51 / P+T sind links und rechts
+  Oerlikon PlasmaFix P+T, in der Mitte SAF-FRO PlasmaFix 51. Einstiegstexte und
+  FAQs müssen diese Unterscheidung in DE/FR/IT erhalten.
+- Produktanfragen verwenden die bestehenden Einzelgeräte-Options-IDs; sie
+  stellen keine Reservierung dar. MPT-Auswahlhilfen nennen gemäss der
+  ausdrücklichen Korrektur des Inhabers das System CNC von MAHE.
+- Die Fremdmarkenprüfung akzeptiert zusätzlich vollständig zugeordnete Namen
+  aus geprüften Einzelgeräte-Beschriftungen. MAHE bleibt als Ausnahme verboten;
+  fehlende und unbekannte Herstellerzuordnungen werden weiterhin abgewiesen.

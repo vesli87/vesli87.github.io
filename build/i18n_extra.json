@@ -18,7 +18,7 @@
     "menu_aria": "Hauptmenü",
     "lang_aria": "Sprache wählen",
     "home_title": "VES-TECH Swiss · MAHE-Schweissgeräte, Plasmaschneiden & Reinigung",
-    "home_desc": "MAHE-Schweissgeräte, Plasmaschneider und Reinigung in der Schweiz, dazu generalüberholte Occasionen wie Oerlikon PlasmaFix Mikroplasma. Service aus Herisau AR.",
+    "home_desc": "MAHE für Schweissen, Plasmaschneiden, Reinigung und Automation in der Schweiz. Revidierte PlasmaFix-Occasionen und Service in Herisau AR nach Vereinbarung.",
     "home_h1": "MAHE-Technik zum Schweissen, Schneiden, Reinigen und Automatisieren",
     "all_title": "Alle Geräte · MAHE-Programm und Occasionen | VES-TECH Swiss",
     "all_desc": "{n} Geräte bei VES-TECH Swiss: das MAHE-Programm für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden und elektrolytische Reinigung, dazu Occasionen. Preis auf Anfrage.",
@@ -27,7 +27,7 @@
     "subcategory_guide_title": "Worauf es bei der Auswahl ankommt",
     "process_followup_title": "Vom Verfahren zur Anwendung",
     "process_followup_service": "Für die Umsetzung im Betrieb finden Sie Informationen zur {automation} und zur {calibration} Ihrer Schweissausrüstung.",
-    "process_followup_micro": "Oerlikon-Occasionen für {microplasma} finden Sie in einer separaten Übersicht.",
+    "process_followup_micro": "PlasmaFix-Occasionen für {microplasma} finden Sie in einer separaten Übersicht.",
     "usp_service_terms": {
       "repair": "Reparatur",
       "calib": "Kalibrierung"
@@ -146,11 +146,11 @@
       },
       {
         "q": "Verkauft VES-TECH Swiss auch gebrauchte Schweissanlagen?",
-        "a": "Ja. Unter Occasion stehen generalüberholte Anlagen, derzeit Mikroplasma-Anlagen Oerlikon PlasmaFix 51 und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft. Eine Besichtigung in der Partnerwerkstatt in Herisau ist nach Vereinbarung möglich. Preis auf Anfrage."
+        "a": "Ja. Unter Occasion stehen generalüberholte Anlagen, darunter Mikroplasma-Anlagen SAF-FRO PlasmaFix 51, Oerlikon PlasmaFix P+T und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft. Eine Besichtigung in der Partnerwerkstatt in Herisau ist nach Vereinbarung möglich. Preis auf Anfrage."
       },
       {
         "q": "Was ist Mikroplasma-Schweissen und welche Geräte gibt es dafür?",
-        "a": "Mikroplasma (Microplasma) ist Plasmaschweissen für dünnste Werkstoffe ab etwa 0,05 mm: Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon bei einem Bruchteil eines Amperes stabil. VES-TECH bietet die MAHE PlasmaTIG als Neugerät an. Als generalüberholte Occasionen sind die Oerlikon PlasmaFix 51 (Ausführungen 51 und P+T) und die Oerlikon PlasmaFix 50 S im Programm."
+        "a": "Mikroplasma (Microplasma) ist Plasmaschweissen für dünnste Werkstoffe ab etwa 0,05 mm: Der Lichtbogen wird in einer gekühlten Düse eingeschnürt und bleibt so schon bei einem Bruchteil eines Amperes stabil. VES-TECH bietet die MAHE PlasmaTIG als Neugerät an. Als generalüberholte Occasionen sind die SAF-FRO PlasmaFix 51, die Oerlikon PlasmaFix P+T und die Oerlikon PlasmaFix 50 S im Programm."
       }
     ],
     "impressum_body": [
@@ -570,7 +570,7 @@
     "menu_aria": "Menu principal",
     "lang_aria": "Choisir la langue",
     "home_title": "VES-TECH Swiss · Postes de soudage MAHE, plasma & nettoyage",
-    "home_desc": "Équipements MAHE de soudage, découpe plasma et nettoyage en Suisse, et occasions microplasma Oerlikon PlasmaFix révisées. Service à Herisau AR.",
+    "home_desc": "MAHE en Suisse : soudage, découpe plasma, nettoyage et automatisation. Occasions PlasmaFix révisées et service à Herisau AR sur rendez-vous.",
     "home_h1": "Soudage, découpe, nettoyage et automatisation MAHE en Suisse",
     "all_title": "Tous les appareils · gamme MAHE et occasions | VES-TECH Swiss",
     "all_desc": "{n} appareils chez VES-TECH Swiss : gamme MAHE pour MIG/MAG, TIG, MMA, découpe plasma et nettoyage électrolytique, et machines d’occasion. Prix sur demande.",
@@ -579,7 +579,7 @@
     "subcategory_guide_title": "Les points à vérifier pour choisir",
     "process_followup_title": "Du procédé à l’application",
     "process_followup_service": "Pour la mise en œuvre dans votre atelier, consultez les informations sur l’{automation} et l’{calibration} de votre équipement de soudage.",
-    "process_followup_micro": "Les appareils Oerlikon d’occasion pour le {microplasma} sont regroupés dans une présentation séparée.",
+    "process_followup_micro": "Les appareils PlasmaFix d’occasion pour le {microplasma} sont regroupés dans une présentation séparée.",
     "usp_service_terms": {
       "repair": "réparation",
       "calib": "étalonnage"
@@ -698,11 +698,11 @@
       },
       {
         "q": "VES-TECH Swiss vend-elle aussi des machines à souder d’occasion ?",
-        "a": "Oui. La rubrique Occasion présente des machines entièrement révisées, actuellement les installations microplasma Oerlikon PlasmaFix 51 et Oerlikon PlasmaFix 50 S. Chaque machine est contrôlée avant la remise. Une présentation de la machine dans l’atelier partenaire à Herisau est possible sur rendez-vous. Prix sur demande."
+        "a": "Oui. La rubrique Occasion présente des machines entièrement révisées, notamment les installations microplasma SAF-FRO PlasmaFix 51, Oerlikon PlasmaFix P+T et Oerlikon PlasmaFix 50 S. Chaque machine est contrôlée avant la remise. Une présentation de la machine dans l’atelier partenaire à Herisau est possible sur rendez-vous. Prix sur demande."
       },
       {
         "q": "Qu’est-ce que le soudage microplasma et quels appareils permettent de le pratiquer ?",
-        "a": "Le microplasma est le soudage plasma des matériaux les plus minces, dès 0,05 mm environ : l’arc est étranglé dans une buse refroidie et reste ainsi stable dès une fraction d’ampère. Pour un appareil neuf, VES-TECH propose la MAHE PlasmaTIG ; pour une machine d’occasion révisée, l’Oerlikon PlasmaFix 51 (versions 51 et P+T) et l’Oerlikon PlasmaFix 50 S."
+        "a": "Le microplasma est le soudage plasma des matériaux les plus minces, dès 0,05 mm environ : l’arc est étranglé dans une buse refroidie et reste ainsi stable dès une fraction d’ampère. Pour un appareil neuf, VES-TECH propose la MAHE PlasmaTIG ; pour une machine d’occasion révisée, la SAF-FRO PlasmaFix 51, l’Oerlikon PlasmaFix P+T et l’Oerlikon PlasmaFix 50 S."
       }
     ],
     "impressum_body": [
@@ -1122,7 +1122,7 @@
     "menu_aria": "Menu principale",
     "lang_aria": "Scegli la lingua",
     "home_title": "VES-TECH Swiss · Saldatrici MAHE, plasma & pulizia",
-    "home_desc": "Saldatrici MAHE, taglio al plasma e pulizia in Svizzera, oltre a macchine usate revisionate come gli impianti microplasma Oerlikon PlasmaFix. Assistenza da Herisau AR.",
+    "home_desc": "MAHE in Svizzera: saldatura, taglio al plasma, pulizia e automazione. PlasmaFix usate revisionate e assistenza a Herisau AR su appuntamento.",
     "home_h1": "Tecnologie MAHE per saldatura, taglio, pulizia e automazione in Svizzera",
     "all_title": "Tutti gli apparecchi · gamma MAHE e usato | VES-TECH Swiss",
     "all_desc": "{n} apparecchi da VES-TECH Swiss: la gamma MAHE per MIG/MAG, TIG, MMA, taglio al plasma e pulizia elettrolitica, più macchine usate. Prezzo su richiesta.",
@@ -1131,7 +1131,7 @@
     "subcategory_guide_title": "Cosa valutare nella scelta",
     "process_followup_title": "Dal processo all’applicazione",
     "process_followup_service": "Per l’impiego in produzione trovate informazioni sull’{automation} e sulla {calibration} dell’attrezzatura di saldatura.",
-    "process_followup_micro": "Gli apparecchi Oerlikon d’occasione per il {microplasma} sono raccolti in una panoramica separata.",
+    "process_followup_micro": "Gli apparecchi PlasmaFix d’occasione per il {microplasma} sono raccolti in una panoramica separata.",
     "usp_service_terms": {
       "repair": "riparazione",
       "calib": "calibrazione"
@@ -1250,11 +1250,11 @@
       },
       {
         "q": "VES-TECH Swiss vende anche saldatrici usate?",
-        "a": "Sì. Nella sezione Occasioni si trovano macchine completamente revisionate, attualmente gli impianti microplasma Oerlikon PlasmaFix 51 e Oerlikon PlasmaFix 50 S. Ogni macchina viene controllata prima della consegna. È possibile visionarla su appuntamento presso l’officina partner a Herisau. Prezzo su richiesta."
+        "a": "Sì. Nella sezione Occasioni si trovano macchine completamente revisionate, tra cui gli impianti microplasma SAF-FRO PlasmaFix 51, Oerlikon PlasmaFix P+T e Oerlikon PlasmaFix 50 S. Ogni macchina viene controllata prima della consegna. È possibile visionarla su appuntamento presso l’officina partner a Herisau. Prezzo su richiesta."
       },
       {
         "q": "Che cos’è la saldatura microplasma e quali macchine esistono?",
-        "a": "Il microplasma è la saldatura al plasma dei materiali più sottili, da circa 0,05 mm: l’arco viene strozzato in un ugello raffreddato e resta così stabile già con una frazione di ampere. VES-TECH offre la MAHE PlasmaTIG come macchina nuova e la Oerlikon PlasmaFix 51 (versioni 51 e P+T) e la Oerlikon PlasmaFix 50 S come macchine usate e revisionate."
+        "a": "Il microplasma è la saldatura al plasma dei materiali più sottili, da circa 0,05 mm: l’arco viene strozzato in un ugello raffreddato e resta così stabile già con una frazione di ampere. VES-TECH offre la MAHE PlasmaTIG come macchina nuova e la SAF-FRO PlasmaFix 51, la Oerlikon PlasmaFix P+T e la Oerlikon PlasmaFix 50 S come macchine usate e revisionate."
       }
     ],
     "impressum_body": [

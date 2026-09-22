@@ -54,7 +54,7 @@
     "k_desc": "Benötigen Sie eine Reparatur oder möchten Sie einen Arbeitsprozess verbessern? Beschreiben Sie uns Ihre Situation. Sie erhalten eine erste fachliche Einschätzung.",
     "k_tel": "Telefon",
     "k_msg": "Ihre Nachricht",
-    "foot_brand": "Schweisstechnik & Automation aus Herisau AR. Verkauf, Service und Automation für das MAHE-Geräteprogramm, alles aus einer Hand.",
+    "foot_brand": "MAHE zum Schweissen, Schneiden, Reinigen und Automatisieren. Service in der Partnerwerkstatt in Herisau AR nach Vereinbarung.",
     "foot_products": "Produkte",
     "foot_service": "Service",
     "foot_diag": "Diagnose & Reparatur",
@@ -143,7 +143,7 @@
     "slide_pause": "Diaschau anhalten",
     "slide_play": "Diaschau fortsetzen",
     "zustand_h": "Zustand:",
-    "occ_aktuell": "Aktuell: {liste}.",
+    "occ_aktuell": "Im Katalog: {liste}.",
     "occ_faq_h": "Fragen zur Anlage",
     "verwandt_h": "Ebenfalls interessant"
   },
@@ -202,7 +202,7 @@
     "k_desc": "Un appareil à réparer ou un processus à améliorer ? Décrivez brièvement votre situation. Vous recevrez une première évaluation technique.",
     "k_tel": "Téléphone",
     "k_msg": "Votre message",
-    "foot_brand": "Soudage et automatisation à Herisau AR. Un interlocuteur unique pour la vente, le service et l’automatisation de la gamme MAHE.",
+    "foot_brand": "Gamme MAHE pour le soudage, la découpe, le nettoyage et l’automatisation. Service dans l’atelier partenaire à Herisau AR, sur rendez-vous.",
     "foot_products": "Produits",
     "foot_service": "Service",
     "foot_diag": "Diagnostic & réparation",
@@ -291,7 +291,7 @@
     "slide_pause": "Arrêter le diaporama",
     "slide_play": "Reprendre le diaporama",
     "zustand_h": "État :",
-    "occ_aktuell": "Actuellement : {liste}.",
+    "occ_aktuell": "Au catalogue : {liste}.",
     "occ_faq_h": "Questions sur la machine",
     "verwandt_h": "À découvrir également"
   },
@@ -350,7 +350,7 @@
     "k_desc": "Avete un apparecchio da riparare o un processo da migliorare? Descrivete brevemente la situazione. Riceverete una prima valutazione tecnica.",
     "k_tel": "Telefono",
     "k_msg": "Il vostro messaggio",
-    "foot_brand": "Saldatura & automazione a Herisau AR. Vendita, assistenza e automazione per la gamma MAHE, da un unico interlocutore.",
+    "foot_brand": "Gamma MAHE per saldatura, taglio, pulizia e automazione. Assistenza nell’officina partner a Herisau AR, su appuntamento.",
     "foot_products": "Prodotti",
     "foot_service": "Assistenza",
     "foot_diag": "Diagnosi & riparazione",
@@ -439,7 +439,7 @@
     "slide_pause": "Ferma la presentazione",
     "slide_play": "Riprendi la presentazione",
     "zustand_h": "Stato:",
-    "occ_aktuell": "Attualmente: {liste}.",
+    "occ_aktuell": "A catalogo: {liste}.",
     "occ_faq_h": "Domande sulla macchina",
     "verwandt_h": "Può interessare anche"
   }

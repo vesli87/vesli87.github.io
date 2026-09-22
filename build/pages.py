@@ -512,16 +512,14 @@ def hero_band(lang):
 
 
 def kachel_zusatz(lang, c):
-    """Bei der Occasion-Kachel: die Geraete, die gerade da sind - aus den Daten.
+    """Occasion-Modellreihen aus dem Katalog, keine aktuelle Lagerzusage.
 
-    Die Startseite ist die staerkste Seite der Domain, und sie sprach bis zum
-    14.09.2026 ausschliesslich von MAHE. Wer "oerlikon plasmafix" sucht, fand
-    die Marke nirgends auf ihr. Die Namen kommen aus P.json; faellt eine
-    Maschine weg oder kommt eine dazu, stimmt die Kachel von selbst.
+    Eine Modellreihe kann Einzelgeraete verschiedener Hersteller umfassen.
+    Deshalb hier keine pauschale Marke aus dem Katalogeintrag voranstellen.
     """
     if c["id"] != "occasion":
         return ""
-    namen = [f"{C.pBrand(p)} {C.pName(lang, p)}" for p in C.P if p["cat"] == "occasion"]
+    namen = [C.pName(lang, p) for p in C.P if p["cat"] == "occasion"]
     if not namen:
         return ""
     return " " + e(C.t(lang, "occ_aktuell", liste=", ".join(namen)))

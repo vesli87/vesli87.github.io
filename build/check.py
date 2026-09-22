@@ -249,6 +249,34 @@ def bildverweise():
                 pruef(e["g"], f"data/search-{l}.json")
 
 
+def foreign_names_assigned(line, products, choices):
+    """Require the catalogue brand or an explicitly reviewed unit label."""
+    brands = {p["name"]: {C.pBrand(p)} for p in products}
+    for product in products:
+        row = choices.get(product["id"], {})
+        if row.get("kind") != "unit":
+            continue
+        name = product["name"]
+        for option in row.get("options", []):
+            for label in option.get("label", {}).values():
+                # Unit labels are reviewed as "Position: Brand Model".
+                machine = label.partition(":")[2].strip()
+                if machine.endswith(" " + name):
+                    brand = machine[:-len(name)].strip()
+                    if brand and brand != C.BRAND:
+                        brands[name].add(brand)
+    for name, allowed in brands.items():
+        start = 0
+        while True:
+            index = line.find(name, start)
+            if index < 0:
+                break
+            if not any(line[:index].rstrip().endswith(brand) for brand in allowed):
+                return False
+            start = index + len(name)
+    return True
+
+
 def fremdmarken():
     """Auf der Seite eines Fremdfabrikats darf die eigene Hausmarke nicht stehen.
 
@@ -360,26 +388,11 @@ def fremdmarken():
                 s = _json.dumps(e, ensure_ascii=False)
                 if any(n in s for n in namen) and C.BRAND in s:
                     err(f"data/search-{l}.json: '{C.BRAND}' bei einem Fremdfabrikat")
-        # Eine Zeile, die einen Fremdnamen und MAHE nennt, war bisher immer
-        # ein Fehler. Seit dem 15.09.2026 vergleicht eine Antwort der FAQ das
-        # neue MAHE-Geraet mit der gebrauchten Oerlikon in einem Satz - und
-        # das ist keine Verwechslung, solange jeder Fremdname seine eigene
-        # Marke direkt vor sich traegt ("Oerlikon PlasmaFix 51"). Fehlt sie
-        # auch nur einmal, bleibt es ein Fehler: dann ist nicht mehr zu
-        # sehen, wessen Geraet gemeint ist.
-        marke_von = {x["name"]: C.pBrand(x) for x in fremd}
-
-        def zugeordnet(zeile):
-            for n, m in marke_von.items():
-                start = 0
-                while True:
-                    i = zeile.find(n, start)
-                    if i < 0:
-                        break
-                    if not zeile[:i].rstrip().endswith(m):
-                        return False
-                    start = i + len(n)
-            return True
+        # Comparisons may mention MAHE and a foreign product on one line,
+        # provided each model has its own reviewed brand directly before it.
+        # A catalogue family can include explicitly identified SAF-FRO units
+        # as well as Oerlikon; never accept MAHE as a unit-brand exception.
+        choices = C.inquiry_options()
 
         for datei in ("llms.txt", "llms-full.txt"):
             f = C.ROOT / datei
@@ -387,7 +400,7 @@ def fremdmarken():
                 continue
             for zeile in f.read_text("utf-8").splitlines():
                 if (any(n in zeile for n in namen) and C.BRAND in zeile
-                        and not zugeordnet(zeile)):
+                        and not foreign_names_assigned(zeile, fremd, choices)):
                     err(f"{datei}: '{C.BRAND}' bei einem Fremdfabrikat - {zeile.strip()[:70]}")
 
     for p in C.P:

@@ -65,6 +65,13 @@ Organization-Knoten. Es gibt keine eingebetteten Feeds, Social-SDKs oder
 zusaetzlichen Trackingaufrufe. Private Profile und noch nicht bestaetigte
 TikTok- oder Verzeichniseintraege werden nicht verlinkt.
 
+Der vom Inhaber bestaetigte WhatsApp-Geschaeftskontakt steht zentral in
+`COMPANY.whatsapp_href`. Kontaktseite und Footer verlinken ihn in DE/FR/IT als
+normalen externen Link ohne vorbefuellten Text, Einbettung oder Referrer.
+`contact_whatsapp` misst nach Statistik-Zustimmung ausschliesslich den Klick,
+nicht Nachrichtentext, Telefonnummer, Versand oder Antwort. Die automatische
+Messung externer Linkziele bleibt gesperrt.
+
 Facebook-Kampagnen verwenden ausschliesslich die festen Vierer-Kombinationen in
 `data/ANALYTICS_CAMPAIGNS.json`. Ein einzelner `fbclid` wird nach Zustimmung vor
 Ahrefs aus der aktuellen URL entfernt und weder gespeichert noch gemessen.
@@ -220,6 +227,10 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
 - `canonical` auf jeder Seite, absolut
 - `hreflang` de-CH / fr-CH / it-CH + `x-default` — gegenseitig verlinkt
 - Open Graph + Twitter Card, `og:image` = Produktbild bzw. Hero
+  Kategorie und Unterkategorie verwenden die erste vorhandene Produktabbildung
+  ihrer gefilterten Katalogliste, auch als `CollectionPage.primaryImageOfPage`.
+  So erscheint bei Plasma kein allgemeines HyperMIG-Banner. Kataloguebersicht
+  und allgemeine Serviceseiten behalten das gemeinsame Firmenmotiv.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, `Product` ohne erfundene Angebote,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`

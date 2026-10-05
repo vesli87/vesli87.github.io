@@ -632,6 +632,11 @@
   .fcols ul{list-style:none;line-height:2}
   .fcols a{color:var(--muted);font-size:14px;cursor:pointer}
   .fcols a:hover{color:var(--white)}
+  .fcols .whatsapp-link{display:inline-flex;align-items:center;min-height:44px;text-decoration:underline;text-underline-offset:.2em}
+  .contact-direct{margin-bottom:24px;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+  .contact-direct h2{font-family:'Barlow Condensed';font-size:24px;line-height:1.2}
+  .contact-direct p{margin:8px 0 16px;color:var(--muted);font-size:14px;line-height:1.6}
+  .contact-direct .whatsapp-link{min-height:44px;max-width:100%;white-space:normal;overflow-wrap:anywhere;text-align:center}
 
   /* Rückfall, wenn kein Formulardienst eingerichtet ist: die fertige Anfrage
      bleibt sichtbar stehen, statt mit mailto: ins Leere zu greifen. */

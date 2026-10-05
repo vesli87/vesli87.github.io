@@ -93,10 +93,16 @@ Ein Mailentwurf liegt nicht mehr als automatisch messbares `href` im DOM.
 
 Die Ereignisse `product_view`, `inquiry_add`, `inquiry_open`, `inquiry_start`,
 `inquiry_submit`, `inquiry_success`, `inquiry_error`, `contact_email`,
-`contact_phone`, `product_consult` und `download_click` müssen in Ahrefs als
+`contact_phone`, `contact_whatsapp`, `product_consult` und `download_click` müssen in Ahrefs als
 gleichnamige Custom Events eingerichtet sein. `inquiry_success` entsteht nur
 nach `success === true` von Web3Forms, einmal pro erfolgreichem Versand.
 Ein Klick, Mailentwurf oder Versandversuch ist keine bestätigte Anfrage.
+`contact_whatsapp` zählt nur den Klick auf den festen Geschäftskontakt aus
+`COMPANY.whatsapp_href`, nach Statistik-Zustimmung. Telefonnummer, Linkziel und
+Nachrichtentext werden dabei nicht übertragen. Der normale externe Link öffnet
+WhatsApp auch ohne Statistik; er enthält keinen vorbefüllten Text und übermittelt
+keinen Referrer. Die automatische externe Linkmessung bleibt gesperrt.
+Ein WhatsApp-Klick bestätigt weder eine gesendete Nachricht noch eine Antwort.
 Auch eine bestätigte Anfrage ist noch kein qualifizierter Lead oder Verkauf.
 Angebote und tatsächliche Aufträge werden separat privat geführt.
 

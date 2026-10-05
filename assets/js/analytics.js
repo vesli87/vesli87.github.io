@@ -19,7 +19,7 @@
   var language = ['de', 'fr', 'it'].indexOf(VT.lang) >= 0 ? VT.lang : 'de';
   var names = ['product_view', 'inquiry_add', 'inquiry_open', 'inquiry_start',
     'inquiry_submit', 'inquiry_success', 'inquiry_error', 'contact_email',
-    'contact_phone', 'product_consult', 'download_click'];
+    'contact_phone', 'contact_whatsapp', 'product_consult', 'download_click'];
 
   function owns(object, name) { return Object.prototype.hasOwnProperty.call(object, name); }
   function recent(at, age) {
@@ -233,15 +233,22 @@
   }
   window.VTAnalytics = { track: track, attribution: attribution };
 
+  function businessWhatsApp(url) {
+    // Count only the configured business contact. Message text, arbitrary
+    // numbers and other WhatsApp URLs never enter the analytics payload.
+    return url && typeof config.whatsappUrl === 'string' &&
+      /^https:\/\/wa\.me\/[1-9][0-9]{6,14}$/.test(config.whatsappUrl) &&
+      url.href === config.whatsappUrl;
+  }
   function captureLink(event) {
     var target = event.target, anchor = target && target.closest && target.closest('a[href]');
     if (!anchor) return;
     var url;
     try { url = new URL(anchor.getAttribute('href'), location.origin + location.pathname); } catch (err) { url = null; }
-    if (event.type === 'auxclick' && event.button !== 1) return;
-    if (!event.defaultPrevented && url) {
+    if (!event.defaultPrevented && url && (event.type !== 'auxclick' || event.button === 1)) {
       if (url.protocol === 'mailto:') track('contact_email');
       else if (url.protocol === 'tel:') track('contact_phone');
+      else if (businessWhatsApp(url)) track('contact_whatsapp');
       else if (/^https?:$/.test(url.protocol)) {
         var query = url.origin === location.origin && safeQuery(url);
         if (url.pathname === config.contactPath && query && query.product) track('product_consult', { product_id: query.product });

@@ -56,6 +56,8 @@ COMPANY = {
     "country_name": "Schweiz",
     "phone": "+41 76 710 91 39",
     "phone_href": "+41767109139",
+    # Vom Inhaber bestaetigter Geschaeftskontakt; kein vorbefuellter Nachrichtentext.
+    "whatsapp_href": "https://wa.me/41767109139",
     "email": "vestechswiss@gmail.com",
     # Einzelunternehmen: das Geschaeft laeuft auf den Namen des Inhabers.
     # Er gehoert deshalb nicht nur ins Impressum, sondern ueberall dorthin,

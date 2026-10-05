@@ -245,6 +245,10 @@
         "<p>Unser geschäftliches Postfach ist ein Konto bei Google Mail. Anfragen, die uns per E-Mail erreichen, liegen deshalb auf Servern der Google LLC in den USA.</p><p>Unverschlüsselte E-Mail ist wie eine Postkarte. Senden Sie uns keine besonders schützenswerten Personendaten per E-Mail. Für Vertrauliches rufen Sie besser an.</p><p>Bei einem Anruf sehen wir Ihre Rufnummer, sofern Sie sie nicht unterdrücken. Wir zeichnen keine Gespräche auf.</p>"
       ],
       [
+        "Kontakt über WhatsApp",
+        "<p>Über den Kontaktlink können Sie WhatsApp als externen Dienst öffnen. Dort gelten die Nutzungsbedingungen und die <a href=\"https://www.whatsapp.com/legal/privacy-policy\" rel=\"noopener noreferrer\" referrerpolicy=\"no-referrer\">Datenschutzrichtlinie von WhatsApp</a>. Auf dieser Website ist kein WhatsApp-Chat eingebettet. Der Link enthält keinen vorbefüllten Nachrichtentext.</p><p>Nur nach Ihrer Zustimmung zur optionalen Statistik erfassen wir den Klick auf unseren WhatsApp-Kontakt. Telefonnummern und Nachrichteninhalte werden dabei nicht an die Webstatistik übermittelt. Ein Klick bestätigt weder den Versand noch den Eingang einer Anfrage.</p>"
+      ],
+      [
         "Zwecke der Bearbeitung",
         "<p>Wir bearbeiten Ihre Angaben ausschliesslich, um</p><ul><li>Ihre Anfrage zu beantworten und ein Angebot zu erstellen;</li><li>einen Auftrag abzuwickeln, wenn aus Ihrer Anfrage ausserhalb der Website ein Kauf wird: Lieferung, Rechnung, Gewährleistung;</li><li>gesetzliche Pflichten zu erfüllen, namentlich die Aufbewahrung der Buchungsbelege;</li><li>Betrieb und Sicherheit der Website zu gewährleisten.</li></ul><p>Wir verkaufen keine Personendaten und geben sie nicht zu Werbezwecken weiter. Ohne Ihr Einverständnis erhalten Sie von uns weder Newsletter noch Werbung.</p>"
       ],
@@ -550,7 +554,10 @@
     "inquiry_service_cta": "Dienstleistung anfragen",
     "form_too_long": "Bitte auf höchstens {n} Zeichen kürzen.",
     "search_group_services": "Dienstleistungen",
-    "form_invalid_count": "Bitte eine ganze Zahl von 1 bis 9999 eingeben."
+    "form_invalid_count": "Bitte eine ganze Zahl von 1 bis 9999 eingeben.",
+    "whatsapp_title": "Kontakt über WhatsApp",
+    "whatsapp_action": "Auf WhatsApp schreiben",
+    "whatsapp_note": "Öffnet WhatsApp. Sie entscheiden dort, welche Angaben Sie uns senden."
   },
   "fr": {
     "locale": "fr_CH",
@@ -795,6 +802,10 @@
       [
         "Courriel et téléphone",
         "<p>Notre boîte professionnelle est un compte Google Mail. Les demandes qui nous parviennent par courriel se trouvent donc sur des serveurs de Google LLC aux États-Unis.</p><p>Un courriel non chiffré est comme une carte postale. Ne nous envoyez pas de données personnelles sensibles par courriel. Pour ce qui est confidentiel, appelez-nous plutôt.</p><p>Lors d'un appel, nous voyons votre numéro, sauf si vous le masquez. Nous n'enregistrons aucune conversation.</p>"
+      ],
+      [
+        "Contact par WhatsApp",
+        "<p>Le lien de contact permet d’ouvrir WhatsApp, un service externe. Les conditions d’utilisation et la <a href=\"https://www.whatsapp.com/legal/privacy-policy\" rel=\"noopener noreferrer\" referrerpolicy=\"no-referrer\">politique de confidentialité de WhatsApp</a> s’y appliquent. Aucun chat WhatsApp n’est intégré à ce site et le lien ne contient aucun message prérempli.</p><p>Le clic sur notre contact WhatsApp n’est enregistré qu’après votre accord aux statistiques facultatives. Aucun numéro de téléphone ni contenu de message n’est transmis aux statistiques du site. Un clic ne confirme ni l’envoi ni la réception d’une demande.</p>"
       ],
       [
         "Finalités du traitement",
@@ -1102,7 +1113,10 @@
     "inquiry_service_cta": "Demander cette prestation",
     "form_too_long": "Veuillez limiter le texte à {n} caractères.",
     "search_group_services": "Prestations",
-    "form_invalid_count": "Veuillez saisir un nombre entier de 1 à 9999."
+    "form_invalid_count": "Veuillez saisir un nombre entier de 1 à 9999.",
+    "whatsapp_title": "Contact par WhatsApp",
+    "whatsapp_action": "Nous écrire sur WhatsApp",
+    "whatsapp_note": "Ouvre WhatsApp. Vous y choisissez les informations à nous envoyer."
   },
   "it": {
     "locale": "it_CH",
@@ -1347,6 +1361,10 @@
       [
         "E-mail e telefono",
         "<p>La nostra casella aziendale è un account Google Mail. Le richieste che ci pervengono per e-mail si trovano quindi su server di Google LLC negli Stati Uniti.</p><p>Un'e-mail non cifrata è come una cartolina. Non ci invii dati personali degni di particolare protezione per e-mail. Per questioni riservate è meglio telefonare.</p><p>In caso di chiamata vediamo il Suo numero, salvo che lo nasconda. Non registriamo alcuna conversazione.</p>"
+      ],
+      [
+        "Contatto tramite WhatsApp",
+        "<p>Il collegamento di contatto permette di aprire WhatsApp, un servizio esterno. Vi si applicano le condizioni d’uso e l’<a href=\"https://www.whatsapp.com/legal/privacy-policy\" rel=\"noopener noreferrer\" referrerpolicy=\"no-referrer\">informativa sulla privacy di WhatsApp</a>. Questo sito non integra una chat WhatsApp e il collegamento non contiene messaggi precompilati.</p><p>Il clic sul nostro contatto WhatsApp viene conteggiato solo con il vostro consenso alle statistiche facoltative. Numeri di telefono e contenuti dei messaggi non vengono trasmessi alle statistiche del sito. Un clic non conferma né l’invio né la ricezione di una richiesta.</p>"
       ],
       [
         "Scopi del trattamento",
@@ -1654,6 +1672,9 @@
     "inquiry_service_cta": "Richiedi il servizio",
     "form_too_long": "Limitate il testo a un massimo di {n} caratteri.",
     "search_group_services": "Servizi",
-    "form_invalid_count": "Inserite un numero intero da 1 a 9999."
+    "form_invalid_count": "Inserite un numero intero da 1 a 9999.",
+    "whatsapp_title": "Contatto tramite WhatsApp",
+    "whatsapp_action": "Scriveteci su WhatsApp",
+    "whatsapp_note": "Apre WhatsApp. Scegliete quali informazioni inviarci."
   }
 }

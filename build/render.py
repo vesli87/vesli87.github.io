@@ -884,6 +884,14 @@ def cart_drawer(lang):
 </aside>"""
 
 
+def whatsapp_link(lang, *, button=False):
+    """Normaler externer Kontaktlink, ohne SDK, Nachricht oder Referrer."""
+    style = 'btn pri whatsapp-link' if button else 'whatsapp-link'
+    return (f'<a class="{style}" href="{e(C.COMPANY["whatsapp_href"])}" '
+            f'rel="noopener noreferrer" referrerpolicy="no-referrer">'
+            f'{e(C.t(lang, "whatsapp_action"))}</a>')
+
+
 def footer(lang):
     """Fusszeile.
 
@@ -921,6 +929,7 @@ def footer(lang):
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>
         <li><a href="{e(C.u_page(lang,'about'))}">{e(C.t(lang,'nav_about'))}</a></li>
         <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_contact'))}</a></li>
+        <li>{whatsapp_link(lang)}</li>
         <li><a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a></li>
       </ul></div>
     </div>
@@ -1074,6 +1083,7 @@ def boot_json(lang):
             "inquiryOptions": {pid: [opt["id"] for opt in row["options"]] for pid, row in C.inquiry_options().items()},
             "campaigns": C.analytics_campaigns(),
             "contactPath": C.u_page(lang, "contact"),
+            "whatsappUrl": C.COMPANY["whatsapp_href"],
             "servicePaths": {C.u_service(lang): "overview",
                              **{C.u_service(lang, key): key for key in C.SERVICE_KEYS}},
         },

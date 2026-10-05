@@ -692,12 +692,19 @@ def page_cat(lang, c, sub=None):
         + R.pgrid(lang, items)
         + (subcategory_guide(lang, cid, sub) if sub else buying_guide(lang, cid)) + "</div></div>"
     )
+    # Die Vorschau muss zur gefilterten Kategorie passen: das allgemeine
+    # HyperMIG-Herobild ist z. B. fuer Plasma oder Reinigung irrefuehrend.
+    # Die bestehende Katalogreihenfolge macht die Auswahl sprachunabhaengig.
+    preview = next((R.img_abs(p["img"], 1000) for p in items if p.get("img")), None)
+    page_type = {"@type": "CollectionPage"}
+    if preview:
+        page_type["primaryImageOfPage"] = {"@type": "ImageObject", "url": preview}
     ld = [R.ld_org(lang),
-          R.ld_webpage(lang, url, title, desc, {"@type": "CollectionPage"}),
+          R.ld_webpage(lang, url, title, desc, page_type),
           R.ld_breadcrumb(crumb[:-1] + [(crumb[-1][0], url)]),
           R.ld_itemlist(lang, items, h1)]
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
-                           jsonld_blocks=ld, body=body)
+                           jsonld_blocks=ld, body=body, og_image=preview)
 
 
 def page_product(lang, p):
@@ -940,6 +947,11 @@ def page_contact(lang):
                    h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"))
             + f"""<div class="catalog"><div class="wrap kontaktwrap">
   <div class="contact-main">
+  <section class="contact-direct" aria-labelledby="whatsappHeading">
+    <h2 id="whatsappHeading">{e(C.t(lang,'whatsapp_title'))}</h2>
+    <p>{e(C.t(lang,'whatsapp_note'))}</p>
+    {R.whatsapp_link(lang, button=True)}
+  </section>
   <form class="form kform" id="kontaktForm" action="{e(C.u_page(lang,'contact'))}" method="post" novalidate>
     <div class="inquiry-context" data-inquiry-context hidden></div>
     <label for="kName">{e(C.t(lang,'f_name'))}</label>

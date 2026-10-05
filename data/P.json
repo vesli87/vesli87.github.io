@@ -1130,10 +1130,10 @@
   "cat": "occasion",
   "sub": "Mikroplasma",
   "vt": "Mikroplasma",
-  "brand": "Oerlikon",
-  "name": "PlasmaFix 51",
+  "brand": "SAF-FRO / Oerlikon",
+  "name": "PlasmaFix 51 / P+T",
   "img": "occasion/plasmafix-51.png",
-  "desc": "Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
+  "desc": "SAF-FRO PlasmaFix 51 und Oerlikon PlasmaFix P+T: revidierte Mikroplasma-Anlagen. Auswahl nach Position im Foto; Preis und aktuelle Verfügbarkeit auf Anfrage.",
   "specs": {
    "Verfahren": "Mikroplasma · WIG, geglättet und gepulst",
    "Schweissstrom Plasma": "0,08 – 50 A bei 100 % ED",
@@ -1154,6 +1154,16 @@
    "PlasmaFix P+T",
    "PlasmaFix 51 P+T",
    "NERTAMATIC 51"
+  ],
+  "models": [
+   {
+    "brand": "SAF-FRO",
+    "name": "PlasmaFix 51"
+   },
+   {
+    "brand": "Oerlikon",
+    "name": "PlasmaFix P+T"
+   }
   ]
  },
  {

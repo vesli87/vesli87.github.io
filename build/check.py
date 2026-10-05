@@ -253,6 +253,8 @@ def foreign_names_assigned(line, products, choices):
     """Require the catalogue brand or an explicitly reviewed unit label."""
     brands = {p["name"]: {C.pBrand(p)} for p in products}
     for product in products:
+        for model in product.get("models", []):
+            brands.setdefault(model["name"], set()).add(model["brand"])
         row = choices.get(product["id"], {})
         if row.get("kind") != "unit":
             continue

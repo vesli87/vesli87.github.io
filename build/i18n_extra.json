@@ -545,7 +545,7 @@
     "inquiry_unit_label": "Gewünschtes Gerät (optional)",
     "inquiry_variant_label": "Gewünschte Ausführung (optional)",
     "inquiry_compare": "Ausführungen im Überblick",
-    "inquiry_units_title": "PlasmaFix 51 zur Auswahl",
+    "inquiry_units_title": "PlasmaFix-Anlage auswählen",
     "inquiry_units_note": "Wählen Sie anhand der Position auf dem gemeinsamen Foto. Wir bestätigen den aktuellen Zustand, die konkrete Ausstattung und die Verfügbarkeit des gewünschten Geräts in der Offerte. Die Auswahl ist keine Reservierung.",
     "inquiry_unit_consult": "Dieses Gerät anfragen",
     "inquiry_stock_confirmed": "Verfügbare Geräte: {n} · Bestätigt am {date}",
@@ -557,7 +557,9 @@
     "form_invalid_count": "Bitte eine ganze Zahl von 1 bis 9999 eingeben.",
     "whatsapp_title": "Kontakt über WhatsApp",
     "whatsapp_action": "Auf WhatsApp schreiben",
-    "whatsapp_note": "Öffnet WhatsApp. Sie entscheiden dort, welche Angaben Sie uns senden."
+    "whatsapp_note": "Öffnet WhatsApp. Sie entscheiden dort, welche Angaben Sie uns senden.",
+    "prod_intro_occ_models": "Wählen Sie die gewünschte Anlage anhand ihrer Position auf dem Foto: links und rechts Oerlikon PlasmaFix P+T, in der Mitte SAF-FRO PlasmaFix 51. Die Auswahl ist keine Reservierung. Aktuellen Zustand, Lieferumfang und Verfügbarkeit bestätigen wir für das konkrete Gerät.",
+    "prod_title_occ_models_suffix": "Occasionen"
   },
   "fr": {
     "locale": "fr_CH",
@@ -1104,7 +1106,7 @@
     "inquiry_unit_label": "Appareil souhaité (facultatif)",
     "inquiry_variant_label": "Version souhaitée (facultatif)",
     "inquiry_compare": "Aperçu des versions",
-    "inquiry_units_title": "PlasmaFix 51 au choix",
+    "inquiry_units_title": "Choisir une installation PlasmaFix",
     "inquiry_units_note": "Choisissez selon la position sur la photo de groupe. Nous confirmerons dans l’offre l’état actuel, l’équipement exact et la disponibilité de l’appareil souhaité. La sélection ne constitue pas une réservation.",
     "inquiry_unit_consult": "Demander cet appareil",
     "inquiry_stock_confirmed": "Appareils disponibles : {n} · Disponibilité confirmée le {date}",
@@ -1116,7 +1118,9 @@
     "form_invalid_count": "Veuillez saisir un nombre entier de 1 à 9999.",
     "whatsapp_title": "Contact par WhatsApp",
     "whatsapp_action": "Nous écrire sur WhatsApp",
-    "whatsapp_note": "Ouvre WhatsApp. Vous y choisissez les informations à nous envoyer."
+    "whatsapp_note": "Ouvre WhatsApp. Vous y choisissez les informations à nous envoyer.",
+    "prod_intro_occ_models": "Choisissez la machine selon sa position sur la photo : Oerlikon PlasmaFix P+T à gauche et à droite, SAF-FRO PlasmaFix 51 au centre. La sélection ne constitue pas une réservation. Nous confirmons l’état actuel, la fourniture et la disponibilité pour la machine choisie.",
+    "prod_title_occ_models_suffix": "Occasions"
   },
   "it": {
     "locale": "it_CH",
@@ -1663,7 +1667,7 @@
     "inquiry_unit_label": "Apparecchio desiderato (facoltativo)",
     "inquiry_variant_label": "Versione desiderata (facoltativo)",
     "inquiry_compare": "Panoramica delle versioni",
-    "inquiry_units_title": "PlasmaFix 51 tra cui scegliere",
+    "inquiry_units_title": "Scegliere un impianto PlasmaFix",
     "inquiry_units_note": "Scegliete in base alla posizione nella foto di gruppo. Nell’offerta confermeremo lo stato attuale, la dotazione esatta e la disponibilità dell’apparecchio desiderato. La selezione non costituisce una prenotazione.",
     "inquiry_unit_consult": "Richiedi questo apparecchio",
     "inquiry_stock_confirmed": "Apparecchi disponibili: {n} · Disponibilità confermata il {date}",
@@ -1675,6 +1679,8 @@
     "form_invalid_count": "Inserite un numero intero da 1 a 9999.",
     "whatsapp_title": "Contatto tramite WhatsApp",
     "whatsapp_action": "Scriveteci su WhatsApp",
-    "whatsapp_note": "Apre WhatsApp. Scegliete quali informazioni inviarci."
+    "whatsapp_note": "Apre WhatsApp. Scegliete quali informazioni inviarci.",
+    "prod_intro_occ_models": "Scegliete la macchina in base alla posizione nella foto: Oerlikon PlasmaFix P+T a sinistra e a destra, SAF-FRO PlasmaFix 51 al centro. La selezione non costituisce una prenotazione. Confermiamo lo stato attuale, la dotazione e la disponibilità per la macchina scelta.",
+    "prod_title_occ_models_suffix": "Usato"
   }
 }

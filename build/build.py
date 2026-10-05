@@ -160,7 +160,7 @@ def search_index(lang):
         mats = [C.matLabel(lang, m_) for m_ in C.matOf(p)]
         prods.append({
             "i": p["id"],
-            "n": C.pName(lang, p),
+            "n": C.pFullName(lang, p) if p.get("models") else C.pName(lang, p),
             "d": C.pDesc(lang, p),
             "v": " · ".join(C.verfahrenOf(lang, p)),
             "c": C.catT(lang, cat),
@@ -172,7 +172,7 @@ def search_index(lang):
             # Marke und Zweitnamen gehoeren in den Namen-Text: "oerlikon plasmafix"
             # oder "p+t" muss das Geraet mit vollem Gewicht treffen, nicht nur
             # ueber die Beschreibung.
-            "t1": norm(f"{C.pBrand(p)} {C.pName(lang, p)} {p['name']} {p['id']} "
+            "t1": norm(f"{C.pFullName(lang, p)} {p['name']} {p['id']} "
                        f"{' '.join(p.get('aka', []))}"),
             "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
             "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)}"),
@@ -230,8 +230,9 @@ def products_json():
         out.append({
             "id": p["id"],
             "sku": p["id"].upper(),
-            "name": f"{C.pBrand(p)} {p['name']}",
-            "names": {l: f"{C.pBrand(p)} {C.pName(l, p)}" for l in C.LANGS},
+            "name": C.pFullName("de", p),
+            "names": {l: C.pFullName(l, p) for l in C.LANGS},
+            **({"models": p["models"]} if p.get("models") else {}),
             "brand": C.pBrand(p),
             "type": {l: C.vtT(l, p["vt"]) for l in C.LANGS},
             "category": {l: C.catT(l, cat) for l in C.LANGS},
@@ -529,9 +530,9 @@ def llms_txt():
         f"{len(C.P)} Geräte, alle zum Preis auf Anfrage.",
         # Eigene Zeile: der Waechter check.py::fremdmarken duldet kein "MAHE"
         # in einer Zeile, die ein Fremdfabrikat nennt - zu Recht.
-        f"> Dazu generalüberholte Occasionen aus der eigenen Werkstatt, derzeit "
-        f"{', '.join(C.pBrand(x) + ' ' + x['name'] for x in C.P if x['cat'] == 'occasion')} "
-        f"(Mikroplasma-Schweissanlagen, Oerlikon).",
+        f"> Dazu generalüberholte Occasionen aus der Partnerwerkstatt: "
+        f"{', '.join(C.pFullName('de', x) for x in C.P if x['cat'] == 'occasion')} "
+        f"(Mikroplasma-Schweissanlagen von SAF-FRO und Oerlikon). Verfügbarkeit auf Anfrage.",
         "",
         "## Eckdaten",
         f"- Firma: {C.COMPANY['name']}",
@@ -565,7 +566,7 @@ def llms_txt():
     for c in C.CATS:
         lines.append(f"### {C.catT(L,c)}")
         for p in C.products_of(c["id"]):
-            lines.append(f"- [{C.pBrand(p)} {p['name']}]({C.abs_url(C.u_prod(L, p))}): "
+            lines.append(f"- [{C.pFullName(L, p)}]({C.abs_url(C.u_prod(L, p))}): "
                          f"{C.pDesc(L,p)} ({C.vtT(L, p['vt'])})")
         lines.append("")
     lines += ["## Verfahren"]
@@ -604,7 +605,7 @@ def llms_full():
         out += [f"- {h}: {text}" for h, text in guide['criteria']]
         out.append("")
         for p in C.products_of(c["id"]):
-            out.append(f"### {C.pBrand(p)} {p['name']}")
+            out.append(f"### {C.pFullName(L, p)}")
             out.append(f"URL: {C.abs_url(C.u_prod(L, p))}")
             out.append(f"Kategorie: {C.catT(L,c)} / {C.subT(L, p['sub'])} · Typ: {C.vtT(L, p['vt'])} "
                        f"· Art.-Nr.: {p['id'].upper()} · Preis: auf Anfrage (CHF)")

@@ -16871,13 +16871,23 @@
   {
    "id": "plasmafix-51",
    "sku": "PLASMAFIX-51",
-   "name": "Oerlikon PlasmaFix 51",
+   "name": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T",
    "names": {
-    "de": "Oerlikon PlasmaFix 51",
-    "fr": "Oerlikon PlasmaFix 51",
-    "it": "Oerlikon PlasmaFix 51"
+    "de": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T",
+    "fr": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T",
+    "it": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T"
    },
-   "brand": "Oerlikon",
+   "models": [
+    {
+     "brand": "SAF-FRO",
+     "name": "PlasmaFix 51"
+    },
+    {
+     "brand": "Oerlikon",
+     "name": "PlasmaFix P+T"
+    }
+   ],
+   "brand": "SAF-FRO / Oerlikon",
    "type": {
     "de": "Mikroplasma",
     "fr": "Microplasma",
@@ -16894,9 +16904,9 @@
     "it": "Microplasma"
    },
    "description": {
-    "de": "Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung.",
-    "fr": "Installation microplasma de la série PlasmaFix 51 / P+T pour soudage manuel et automatique, de 0,08 à 50 A, commande LCD et amorçage HF intégré.",
-    "it": "Impianto microplasma della serie PlasmaFix 51 / P+T per saldatura manuale e automatica, da 0,08 a 50 A, comando LCD e innesco HF integrato."
+    "de": "SAF-FRO PlasmaFix 51 und Oerlikon PlasmaFix P+T: revidierte Mikroplasma-Anlagen. Auswahl nach Position im Foto; Preis und aktuelle Verfügbarkeit auf Anfrage.",
+    "fr": "SAF-FRO PlasmaFix 51 et Oerlikon PlasmaFix P+T : installations microplasma révisées. Choix selon la position sur la photo ; prix et disponibilité sur demande.",
+    "it": "SAF-FRO PlasmaFix 51 e Oerlikon PlasmaFix P+T: impianti microplasma revisionati. Scelta in base alla posizione nella foto; prezzo e disponibilità su richiesta."
    },
    "highlights": {
     "de": [],

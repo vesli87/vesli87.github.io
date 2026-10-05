@@ -240,7 +240,7 @@ def media_html(lang, p, nm):
     bu = C.IMGCAP.get(p["id"]) or {}
     haupt = {"img": p["img"],
              "cap": bu.get(lang) or bu.get("de") or "",
-             "alt": f"{C.pBrand(p)} {nm}: {C.pDesc(lang, p)}"}
+             "alt": f"{C.pFullName(lang, p)}: {C.pDesc(lang, p)}"}
     bilder = [haupt]
     for g in C.galleryOf(lang, p):
         bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"]})
@@ -326,13 +326,13 @@ def karten(lang, ids, mit_marke=False):
     cards = ""
     for pid in ids:
         a = C.BY_ID[pid]
-        alt = "%s %s" % (C.pBrand(a), C.pName(lang, a))
+        alt = C.pFullName(lang, a)
         im = R.img_tag(a["img"], "(max-width:760px) 40vw, 180px", alt=alt)
         # Im MAHE-Katalog heisst die Karte nach dem Geraet. Eine Fremdmarke
         # traegt ihren Namen, und eine Occasion sagt in der Kennzeile, dass
         # sie gebraucht ist - sonst stuende neben dem neuen MAHE-Geraet eine
         # Karte, die wie ein zweites Neugeraet aussieht.
-        titel = C.pName(lang, a) if C.istMahe(a) else f"{C.pBrand(a)} {C.pName(lang, a)}"
+        titel = C.pName(lang, a) if C.istMahe(a) else C.pFullName(lang, a)
         kennzeile = C.vtT(lang, a["vt"])
         if a["cat"] == "occasion":
             kennzeile = f"{C.catT(lang, C.CAT_BY_ID['occasion'])} · {kennzeile}"
@@ -724,7 +724,11 @@ def page_product(lang, p):
     suffix = " | " + C.t(lang, "site_name")
     # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
     mk = C.pBrand(p)
-    if p["cat"] == "occasion":
+    if p.get("models"):
+        # A shared occasion listing is not one Oerlikon PlasmaFix 51.
+        title = f"{C.pFullName(lang, p)} · {C.t(lang, 'prod_title_occ_models_suffix')}"
+        desc = clip(C.pDesc(lang, p), 155)
+    elif p["cat"] == "occasion":
         # Eine Gebrauchtmaschine sucht niemand als "PlasmaFix 51 · Mikroplasma
         # · Occasion". Gesucht wird "oerlikon plasmafix 51 zu verkaufen" oder
         # "gebraucht kaufen" - und genau diese Woerter fehlten im Titel und in
@@ -764,6 +768,8 @@ def page_product(lang, p):
     # gebrauchten Anlage nicht, und ein Versprechen, das niemand einloesen
     # kann, waere eine Taeuschung ueber die Beschaffenheit.
     intro_key = "prod_intro_occ_tpl" if p["cat"] == "occasion" else "prod_intro_tpl"
+    if p.get("models"):
+        intro_key = "prod_intro_occ_models"
     # Was an einer Gebrauchtmaschine gemacht wurde, ist die wichtigste Angabe
     # auf der Seite - wichtiger als jede technische Zeile. Sie steht deshalb
     # nicht im Fliesstext, sondern als eigener Block direkt unter der
@@ -813,7 +819,7 @@ def page_product(lang, p):
     # so ist der ganze Katalog gebaut. Eine Fremdmarke traegt sie in der h1,
     # denn "PlasmaFix 51" allein sagt nicht, wessen Anlage das ist, und
     # gesucht wird "oerlikon plasmafix 51" und nie das Wort allein.
-    h1 = nm if C.istMahe(p) else f"{mk} {nm}"
+    h1 = nm if C.istMahe(p) else C.pFullName(lang, p)
     body = f"""
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}

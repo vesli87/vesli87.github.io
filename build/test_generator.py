@@ -49,6 +49,42 @@ class MainLinks(HTMLParser):
 
 
 class GeneratorTests(unittest.TestCase):
+    def test_combined_plasmafix_listing_preserves_distinct_brand_model_pairs(self):
+        product = C.BY_ID['plasmafix-51']
+        expected = 'SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T'
+        for lang in C.LANGS:
+            with self.subTest(lang=lang):
+                url, page = PG.page_product(lang, product)
+                self.assertEqual(url, C.u_prod(lang, product))
+                self.assertIn('<h1>' + expected + '</h1>', page)
+                self.assertIn('<title>' + expected + ' · ', page)
+                self.assertNotIn('Oerlikon PlasmaFix 51', page)
+                self.assertIn('SAF-FRO PlasmaFix 51', C.pDesc(lang, product))
+                self.assertIn('Oerlikon PlasmaFix P+T', C.pDesc(lang, product))
+                self.assertIn(C.t(lang, 'prod_intro_occ_models'), page)
+                self.assertNotIn('href="None"', page)
+                search = next(row for row in B.search_index(lang)['products']
+                              if row['i'] == product['id'])
+                self.assertEqual(search['n'], expected)
+                self.assertIn('saf fro plasmafix 51', search['t1'])
+                self.assertIn('oerlikon plasmafix p t', search['t1'])
+                schema = R.ld_product(lang, product)
+                self.assertEqual(schema['name'], expected)
+                self.assertEqual(schema['brand'], [{'@type':'Brand','name':'SAF-FRO'}, {'@type':'Brand','name':'Oerlikon'}])
+                self.assertEqual([(m['brand']['name'],m['name']) for m in schema['model']],
+                                 [('SAF-FRO','PlasmaFix 51'),('Oerlikon','PlasmaFix P+T')])
+                self.assertNotIn('manufacturer', schema)
+                self.assertNotIn('offers', schema)
+                self.assertNotIn('availability', schema)
+        self.assertEqual(C.inquiry_options()['plasmafix-51']['availability'],
+                         {'confirmed_on':'2026-09-21','count':3})
+        self.assertEqual([o['id'] for o in C.inquiry_options()['plasmafix-51']['options']],
+                         ['unit-left','unit-centre','unit-right'])
+        # Ordinary catalogue products retain their original single-brand data.
+        other = R.ld_product('de', C.BY_ID['hypermig-x'])
+        self.assertEqual(other['brand']['name'], 'MAHE')
+        self.assertIn('manufacturer', other)
+
     def test_foreign_brand_guard_accepts_reviewed_units_but_rejects_mahe_mixups(self):
         products = [p for p in C.P if C.pBrand(p) != C.BRAND]
         choices = C.inquiry_options()
@@ -58,9 +94,11 @@ class GeneratorTests(unittest.TestCase):
             'MAHE PlasmaTIG und Oerlikon PlasmaFix 50 S', products, choices))
         for line in ('MAHE PlasmaFix 51', 'MAHE PlasmaTIG und PlasmaFix 51',
                      'MAHE PlasmaTIG und Unbekannt PlasmaFix 51',
-                     'SAF-FRO PlasmaFix 51 und MAHE PlasmaFix 51'):
+                     'SAF-FRO PlasmaFix 51 und MAHE PlasmaFix 51',
+                     'Oerlikon PlasmaFix 51', 'SAF-FRO PlasmaFix P+T'):
             self.assertFalse(foreign_names_assigned(line, products, choices), line)
-        self.assertFalse(foreign_names_assigned(
+        # Paired source model data remains authoritative without optional choices.
+        self.assertTrue(foreign_names_assigned(
             'MAHE PlasmaTIG und SAF-FRO PlasmaFix 51', products, {}))
 
     def test_copy_changes_do_not_rename_published_subcategory_routes(self):
@@ -99,7 +137,7 @@ class GeneratorTests(unittest.TestCase):
         for lang in C.LANGS:
             items = R.ld_itemlist(lang, C.P, 'Test')['itemListElement']
             self.assertEqual([i['name'] for i in items],
-                             [f"{C.pBrand(p)} {C.pName(lang, p)}" for p in C.P])
+                             [C.pFullName(lang, p) for p in C.P])
 
     def test_script_data_cannot_close_script_element(self):
         payload = '</script><script>alert(1)</script>'

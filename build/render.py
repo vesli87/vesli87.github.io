@@ -528,7 +528,7 @@ def ld_product(lang, p):
     d = {
         "@type": "Product",
         "@id": url + "#product",
-        "name": f"{C.pBrand(p)} {C.pName(lang, p)}",
+        "name": C.pFullName(lang, p),
         # Weitere Namen, unter denen das Geraet gesucht wird - bei der Occasion
         # etwa "PlasmaFix P+T" oder die Bezeichnung der Stromquelle im Prospekt.
         "alternateName": ([C.pName(lang, p)] + list(p.get("aka", []))
@@ -575,6 +575,15 @@ def ld_product(lang, p):
         # hier uebrigens falsch - das ist eine Eigenschaft von Offer, nicht
         # von Product.
     }
+    if p.get("models"):
+        # Preserve the two verified brand/model pairs. Do not imply one
+        # manufacturer or an available three-machine bundle.
+        d["brand"] = [{"@type": "Brand", "name": b}
+                      for b in dict.fromkeys(m["brand"] for m in p["models"])]
+        d["model"] = [{"@type": "ProductModel", "name": m["name"],
+                       "brand": {"@type": "Brand", "name": m["brand"]}}
+                      for m in p["models"]]
+        d.pop("manufacturer", None)
     if hl:
         d["additionalProperty"] = props + [
             {"@type": "PropertyValue", "name": C.t(lang, "highlights"), "value": x} for x in hl
@@ -590,7 +599,7 @@ def ld_itemlist(lang, products, name):
         "itemListElement": [
             {"@type": "ListItem", "position": i + 1,
              "url": C.abs_url(C.u_prod(lang, p)),
-             "name": f"{C.pBrand(p)} {C.pName(lang, p)}"}
+             "name": C.pFullName(lang, p)}
             for i, p in enumerate(products)
         ],
     }
@@ -1196,7 +1205,7 @@ def pcard(lang, p):
   <a class="pcard-link" href="{e(url)}">
     <div class="imgbox">
       {img_tag(p['img'], "(max-width:700px) 46vw, (max-width:1000px) 30vw, 280px",
-               alt=f"{C.pBrand(p)} {C.pName(lang, p)}: {C.pDesc(lang, p)}")}</div>
+               alt=f"{C.pFullName(lang, p)}: {C.pDesc(lang, p)}")}</div>
     <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>
       <div class="spec">{specs}</div></div>
   </a>

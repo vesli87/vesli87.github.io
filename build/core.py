@@ -184,6 +184,8 @@ def pBrand(p):
 
 
 def pBrandUrl(p):
+    if p.get("models"):
+        return None
     m = p.get("brand")
     return MARKEN[m]["url"] if m in MARKEN else BRAND_URL
 
@@ -533,6 +535,13 @@ def pName(lang, p):
     if lang != DEFAULT_LANG and p["id"] in PNAME:
         return PNAME[p["id"]][lang]
     return p["name"]
+
+
+def pFullName(lang, p):
+    """Keep each reviewed brand paired with its model in a shared listing."""
+    if p.get("models"):
+        return " / ".join(f"{m['brand']} {m['name']}" for m in p["models"])
+    return f"{pBrand(p)} {pName(lang, p)}"
 
 
 def trK(lang, k):

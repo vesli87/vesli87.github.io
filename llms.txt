@@ -1,7 +1,7 @@
 # VES-TECH Swiss
 
 > MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
-> Dazu generalüberholte Occasionen aus der eigenen Werkstatt, derzeit Oerlikon PlasmaFix 51, Oerlikon PlasmaFix 50 S (Mikroplasma-Schweissanlagen, Oerlikon).
+> Dazu generalüberholte Occasionen aus der Partnerwerkstatt: SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T, Oerlikon PlasmaFix 50 S (Mikroplasma-Schweissanlagen von SAF-FRO und Oerlikon). Verfügbarkeit auf Anfrage.
 
 ## Eckdaten
 - Firma: VES-TECH Swiss
@@ -113,7 +113,7 @@
 - [MAHE Zwischenschlauchpaket](https://www.ves-tech.ch/produkte/zubehoer/zwischenschlauchpaket/): Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet. (Schlauchpaket)
 
 ### Occasion
-- [Oerlikon PlasmaFix 51](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): Mikroplasma-Anlage (Microplasma) der Baureihe PlasmaFix 51 / P+T für manuelles und maschinelles Schweissen, 0,08 bis 50 A, mit LCD-Bedienung und eingebauter HF-Zündung. (Mikroplasma)
+- [SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/): SAF-FRO PlasmaFix 51 und Oerlikon PlasmaFix P+T: revidierte Mikroplasma-Anlagen. Auswahl nach Position im Foto; Preis und aktuelle Verfügbarkeit auf Anfrage. (Mikroplasma)
 - [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle (Microplasma) ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
 
 ## Verfahren

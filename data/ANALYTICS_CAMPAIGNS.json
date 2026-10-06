@@ -334,5 +334,17 @@
     "medium": "organic_social",
     "campaign": "mahe-programm-2026",
     "content": "continuation-20261011-hypertig-dx-job-de"
+  },
+  "facebook-daily-20261013-beta-dx-de": {
+    "source": "facebook",
+    "medium": "organic_social",
+    "campaign": "mahe-programm-2026",
+    "content": "daily-20261013-beta-dx-de"
+  },
+  "linkedin-daily-20261013-beta-dx-de": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "mahe-programm-2026",
+    "content": "daily-20261013-beta-dx-de"
   }
 }

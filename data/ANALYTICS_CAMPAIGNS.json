@@ -346,5 +346,17 @@
     "medium": "organic_social",
     "campaign": "mahe-programm-2026",
     "content": "daily-20261013-beta-dx-de"
+  },
+  "facebook-daily-20261014-pshb125-verschleissteile-de": {
+    "source": "facebook",
+    "medium": "organic_social",
+    "campaign": "mahe-programm-2026",
+    "content": "daily-20261014-pshb125-verschleissteile-de"
+  },
+  "linkedin-daily-20261014-pshb125-verschleissteile-de": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "mahe-programm-2026",
+    "content": "daily-20261014-pshb125-verschleissteile-de"
   }
 }

@@ -98,7 +98,7 @@ def procs_block(lang, p):
             # darunter - fuer Suche, Screenreader und kleine Bildschirme.
             kacheln += (f'<div class="procbadge">'
                         f'<img class="ic" src="{f["img"]}" width="{f["w"]}" height="{f["h"]}" '
-                        f'alt="" loading="lazy" decoding="async">'
+                        f'alt="{e(C.featLabel(lang, k))}" aria-hidden="true" loading="lazy" decoding="async">'
                         f'<div class="lb">{e(C.featLabel(lang, k))}</div></div>')
         if kacheln:
             badges += (f'<div class="symgrp"><span class="symgrp-h">'
@@ -179,7 +179,7 @@ def front_html(lang, p):
         if feats:
             out.append('<div class="featlist">' + "".join(
                 f'<div class="fitem"><img src="{C.FEAT[k]["img"]}" width="{C.FEAT[k]["w"]}" '
-                f'height="{C.FEAT[k]["h"]}" alt="" loading="lazy" decoding="async">'
+                f'height="{C.FEAT[k]["h"]}" alt="{e(C.featLabel(lang, k))}" aria-hidden="true" loading="lazy" decoding="async">'
                 f'<span>{e(C.featLabel(lang, k))}</span></div>'
                 for k in feats
             ) + "</div>")

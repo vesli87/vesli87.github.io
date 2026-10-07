@@ -262,6 +262,14 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
   Verifizierungs-Tag — das ist der gewollte Zustand, kein Versehen.
 - CSS/JS mit `?v=<hash>` — sonst liefern Browser nach einem Deploy die alte Datei
 
+**Verfahrenssymbole und Bildlinks (07.10.2026):** Die Herstellerkacheln in
+`procs_block()` und der Merkmalsliste erhalten den korrekten lokalisierten
+Alternativtext aus `featLabel()`. Weil derselbe Text unmittelbar daneben steht,
+bleiben diese nicht interaktiven Bilder mit `aria-hidden="true"` fuer
+Screenreader ausgeblendet. So entfaellt Bings Hinweis auf leere Bildtexte,
+ohne die Beschriftung doppelt vorzulesen. Separate Bildlinks in der Anfrageliste
+haben einen zugaenglichen Namen aus Produkt und gegebenenfalls Variante.
+
 **Preis auf Anfrage und strukturierte Daten (07.10.2026):** Der Katalog gibt
 bewusst keine `Product`-Rich-Result-Auszeichnung mehr aus. Google verlangt fuer
 [Product-Snippets](https://developers.google.com/search/docs/appearance/structured-data/product-snippet)

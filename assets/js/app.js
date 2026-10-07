@@ -366,7 +366,7 @@
     box.innerHTML = cart.map(function (x) {
       var p = catalogProduct(x.id), key = rowKey(x), label = itemLabel(x);
       return '<div class="citem">' +
-        '<a class="th" href="' + esc(p.u) + '">' +
+        '<a class="th" href="' + esc(p.u) + '" aria-label="' + esc(label) + '">' +
         (p.g ? '<img src="' + esc(safeUrl(p.g)) + '" alt="" width="60" height="60" loading="lazy">' : '') +
         '</a>' +
         '<div class="n"><a href="' + esc(p.u) + '"><b>' + esc(label) + '</b></a>' +

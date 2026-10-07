@@ -74,6 +74,25 @@ test('cart quantities are integers, bounded, and duplicate rows merge', () => {
   assert.equal(api.quantity(-10), 1);
   assert.equal(api.quantity('broken'), 1);
 });
+test('cart thumbnail links expose the current product and variant name, even without an image', () => {
+  const box = { innerHTML: '' };
+  const { api } = app({ stored: [item, { id: 'mms', option: 'mms-2000c', qty: 1 }], prepare(c, elements) {
+    elements.set('#cartItems', box);
+    c.window.VT.inquiryCatalog['beta-dx'].g = '/assets/img/beta-dx.webp';
+    c.window.VT.inquiryCatalog.mms.n = 'Appareil MMS';
+    c.window.VT.inquiryCatalog.mms.options[0].n = '2000 "C" & <test>';
+  } });
+  const links = () => [...box.innerHTML.matchAll(/<a class="th"[^>]*>[\s\S]*?<\/a>/g)].map(match => match[0]);
+  assert.equal(links().length, 2);
+  assert.match(links()[0], /aria-label="Beta DX"/);
+  assert.match(links()[0], /<img[^>]+alt=""/);
+  assert.match(links()[1], /aria-label="Appareil MMS · 2000 &quot;C&quot; &amp; &lt;test&gt;"/);
+  assert.doesNotMatch(links()[1], /<img/);
+  api.setOption('mms::mms-2000c', 'mms-3000-ex');
+  assert.match(links()[1], /aria-label="Appareil MMS · MMS 3000 EX"/);
+  assert.match(links()[1], /href="\/produkte\/schweissgeraete\/mms\/"/);
+  assert.doesNotMatch(links()[1], /2000|&quot;C&quot;/);
+});
 test('URLs reject script, protocol-relative and backslash destinations', () => {
   const { api } = app();
   for (const url of ['javascript:alert(1)', '//evil.invalid', '/\\evil.invalid', '/a\nb']) {

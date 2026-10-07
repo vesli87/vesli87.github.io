@@ -243,7 +243,7 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
   So erscheint bei Plasma kein allgemeines HyperMIG-Banner. Kataloguebersicht
   und allgemeine Serviceseiten behalten das gemeinsame Firmenmotiv.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
-  `WebSite` mit `SearchAction`, `BreadcrumbList`, `Product` ohne erfundene Angebote,
+  `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
 - `sitemap.xml` mit `xhtml:link`-Alternates (351 URLs); Suche, Datenschutz und AGB
   sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
@@ -262,21 +262,42 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
   Verifizierungs-Tag — das ist der gewollte Zustand, kein Versehen.
 - CSS/JS mit `?v=<hash>` — sonst liefern Browser nach einem Deploy die alte Datei
 
-**Preis auf Anfrage im Schema:** Der `Product`-Knoten trägt **gar keinen
-`offers`-Knoten**. Bis zum 05.08.2026 stand dort ein `Offer` mit
-`priceCurrency: "CHF"`, aber ohne `price`. Eine Währung ohne Betrag ist kein
-Angebot, sondern ein halbes: Ahrefs meldete auf **231 Seiten** einen
-schema.org-Validierungsfehler, und Google zeigt ein Offer ohne Preis ohnehin
-nicht an. Der Knoten kostete also 231 Fehlermeldungen und brachte nichts.
+**Preis auf Anfrage und strukturierte Daten (07.10.2026):** Der Katalog gibt
+bewusst keine `Product`-Rich-Result-Auszeichnung mehr aus. Google verlangt fuer
+[Product-Snippets](https://developers.google.com/search/docs/appearance/structured-data/product-snippet)
+neben dem Namen mindestens ein echtes Angebot oder geeignete Bewertungen;
+ein `Offer` braucht einen tatsaechlichen Preis. Der bisherige `Product` ohne
+Angebot war deshalb fuer diese Google-Erweiterung unvollstaendig, auch wenn
+schema.org allein kein solches Pflichtfeld verlangt. Niemals einen Preis von
+0, eine Platzhalter-Offerte oder erfundene Bewertungen einsetzen.
 
-Ein erfundener Preis kommt nicht in Frage — die Regel „keine Preise" ist der
-Kern dieses Katalogs. Niemals `"price": "0"` schreiben. `check.py` erzwingt
-beides: kein `offers` und kein `price` am Produkt.
+`render.py::ld_catalog_item()` beschreibt den Katalogeintrag jetzt als
+[`Thing`](https://schema.org/Thing). Die vorhandene `ItemPage.mainEntity`
+verweist weiterhin auf dessen stabile Kennung `Produkt-URL#product`;
+`mainEntityOfPage` verweist zurueck auf `Produkt-URL#webpage`. Der Fragmentname
+`#product` ist eine Kennung, kein Schema-Typ. Erhalten bleiben Name,
+Alternativnamen, Beschreibung, URL und Originalfoto. Die echte interne
+Referenz steht als `identifier` mit `PropertyValue.propertyID: "VES-TECH"`;
+nur bei hinterlegter Hersteller-Artikelnummer kommt ein zweiter Identifier
+mit `propertyID: "MPN"` hinzu.
 
-Was das Angebot ausmacht, steht weiterhin da: sichtbar „Preis auf Anfrage" auf
-jeder Seite, das Liefergebiet CH/LI am `Organization`-Knoten, und die
-Anfrageliste als Weg zum Angebot. `seller` gehört **nicht** an `Product` —
-das ist eine Eigenschaft von `Offer`.
+Produktbezogene Eigenschaften wie `brand`, `manufacturer`, `model`, `sku`,
+`mpn`, `category`, `itemCondition` und `additionalProperty` gehoeren nicht an
+den allgemeinen `Thing`-Typ und werden dort nicht ausgegeben. Ebenso wenig
+bleiben versteckte `ProductModel`-Untertypen oder Preis-/Bewertungsobjekte im
+Graphen. `check.py` prueft diese Grenze auch in verschachtelten Objekten.
+`inLanguage` bleibt an der `ItemPage`, nicht am `Thing`.
+
+Dies ist ein bewusster Verzicht auf Product-Rich-Results, keine Ersatzmethode
+fuer deren Freischaltung. Technische Tabellen, Besonderheiten, Marken und
+Modellzuordnung, Occasion-Zustand, „Preis auf Anfrage“ und die Anfrageliste
+bleiben im sichtbaren HTML und im eigenstaendig versionierten
+`data/products.json` erhalten. Dessen `price.model: "on-request"` ist kein
+Schema.org-Angebot und kein numerischer Verkaufspreis. Liefergebiet CH/LI
+bleibt am `Organization`-Knoten. Normale Indexierung wird durch eine fehlende
+Product-Rich-Result-Berechtigung nicht gesperrt; die Umstellung verspricht
+keine Indexierung oder Rankings. Historische Search-Console-Meldungen koennen
+bis zum erneuten Crawlen und Verarbeiten bestehen bleiben.
 
 **Länge der `meta description`:** `pages.py::clip` kürzt auf **155** Zeichen.
 Der Wert stand auf 165; damit lagen 179 von 345 Seiten über der Grenze, ab der
@@ -639,8 +660,10 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 
 - `data/BUYING_GUIDE.json`: eigene, dreisprachige Auswahlhilfen für alle fünf
   Hauptkategorien. Im sichtbaren HTML und in der deutschen `llms-full.txt`-Fassung.
-- `Product.mpn` nur bei tatsächlich hinterlegter Hersteller-Artikelnummer.
-  Eine interne Produkt-ID ist kein MPN. Keine erfundenen Ratings für Rich Results.
+- Hersteller-Artikelnummern nur bei tatsächlich hinterlegtem Originalwert.
+  Eine interne Produkt-ID ist kein MPN. Seit dem 07.10.2026 stehen belegte
+  Nummern als `Thing.identifier` statt `Product.mpn` im neutralen Katalogmarkup.
+  Keine erfundenen Ratings für Rich Results.
 - `data/products.json` hat ein eigenes versioniertes Format und kein irreführendes
   schema.org-`@context`. Namen und Occasion-Zustand werden mit ausgeliefert.
 - Bing-Verifizierung erfolgt aktuell per `msvalidate.01` aus `core.py`; Tag erhalten.
@@ -740,7 +763,7 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
   `build/pshb_social_card.mjs` erzeugt SVG und PNG aus dem Originalfoto und
   `data/SOCIAL_CARDS.json`, prüft unveränderte Bildpixel und sichtbaren Bildinhalt.
   `render.product_social_image()` wählt nur diese Vorschau aus; Galerie,
-  `Product.image` und `ItemPage.primaryImageOfPage` bleiben Originalfotos.
+  `Thing.image` und `ItemPage.primaryImageOfPage` bleiben Originalfotos.
 
 - Verifizierte Firmenprofile werden zentral über `SOCIAL_PROFILES` in
   `build/core.py` geführt; Fusszeile und `Organization.sameAs` verwenden

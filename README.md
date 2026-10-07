@@ -131,6 +131,13 @@ Inhalte und Auswahlhilfen stehen bereits im HTML. Produktdaten enthalten keine
 erfundenen Hersteller-Artikelnummern, Preise oder Bewertungen. Ohne ein echtes
 Angebot oder geeignete Bewertungen sind Google-Produkt-Rich-Results nicht
 verfügbar; das verhindert die normale Indexierung nicht.
+Seit dem 07.10.2026 gibt der Katalog deshalb bewusst keine `Product`-Auszeichnung
+aus. Eine `ItemPage` verweist auf einen neutralen `Thing` mit Namen,
+Beschreibung, Originalfoto und echter Katalogreferenz. Technische Daten,
+Marken-/Modellzuordnung und Zustand bleiben im sichtbaren HTML und im
+JSON-Katalog erhalten. Dies entfernt die unvollständige Product-Deklaration,
+verspricht aber keine Indexierung oder Rich Results; historische Google-Meldungen
+aktualisieren sich erst nach erneutem Crawlen und Verarbeiten.
 `llms.txt`, `llms-full.txt` und `data/products.json` sind zusätzliche Datenzugänge,
 keine Zusage auf KI-Zitate oder Rankings. Der JSON-Katalog ist ein eigenes Format
 (`schema_version`), das JSON-LD steht auf den HTML-Seiten.

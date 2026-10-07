@@ -791,7 +791,7 @@ def page_product(lang, p):
     # Was an einer Gebrauchtmaschine gemacht wurde, ist die wichtigste Angabe
     # auf der Seite - wichtiger als jede technische Zeile. Sie steht deshalb
     # nicht im Fliesstext, sondern als eigener Block direkt unter der
-    # Einleitung, und zusaetzlich als itemCondition im JSON-LD.
+    # Einleitung, und zusaetzlich als condition im oeffentlichen Produktkatalog.
     zt = C.zustandText(lang, p)
     zustand_block = (
         f'<p class="zustand"><b>{e(C.t(lang, "zustand_h"))}</b> {e(zt)}</p>'
@@ -886,7 +886,7 @@ def page_product(lang, p):
     # primaryImageOfPage war auf jeder Produktseite das Titelbild der
     # Startseite - die Vorlage fuer alle WebPage-Knoten kennt nur dieses.
     # Auf einer Produktseite ist das Hauptbild das Produktfoto.
-    ld = [R.ld_org(lang), R.ld_product(lang, p),
+    ld = [R.ld_org(lang), R.ld_catalog_item(lang, p),
           R.ld_webpage(lang, url, title, desc, {
               "@type": "ItemPage",
               "mainEntity": {"@id": C.abs_url(url) + "#product"},

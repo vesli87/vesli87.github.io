@@ -370,7 +370,7 @@ def img_step(m, wunsch):
 def img_folder(m):
     """Herstellerbilder liegen unter p/, selbst gelieferte unter panels/.
 
-    Stand nur img_tag richtig, zeigten og:image, das Product-Bild im JSON-LD,
+    Stand nur img_tag richtig, zeigten og:image, das Katalogbild im JSON-LD,
     das Bild in der Anfrageliste und das Suchergebnisbild eines lokalen Bildes
     auf assets/img/p/, wo nichts liegt – ohne dass check.py etwas meldete.
 
@@ -378,7 +378,7 @@ def img_folder(m):
     kam ein dritter Ordner dazu, und der Ordner steht seither im Manifest.
     Nachgezogen wurde nur img_tag - hier blieb "panels" fest stehen. Ergebnis:
     50 Verweise auf assets/img/panels/plasmafix-… , alle live 404, verteilt
-    auf og:image, twitter:image, das Product-Bild im JSON-LD, die Vorschau in
+    auf og:image, twitter:image, das Katalogbild im JSON-LD, die Vorschau in
     der Anfrageliste, products.json und die drei Suchindizes.
 
     Deshalb ist diese Funktion jetzt die einzige Stelle, die den Ordner
@@ -514,92 +514,33 @@ def ld_breadcrumb(items):
     }
 
 
-def ld_product(lang, p):
-    cat = C.CAT_BY_ID[p["cat"]]
+def ld_catalog_item(lang, p):
+    """Neutral identity for a quote-only catalogue, without Product eligibility.
+
+    Google requires an actual offer or qualifying review for Product snippets.
+    This catalogue has neither. ItemPage/Thing preserve the item identity;
+    complete specifications, brands, models and condition remain in visible
+    HTML and the versioned public data/products.json catalogue.
+    """
     url = C.abs_url(C.u_prod(lang, p))
-    props = [{"@type": "PropertyValue", "name": C.trK(lang, k), "value": C.trV(lang, v)}
-             for k, v in C.specRest(p).items()]
-    # Die MAHE-Tabelle hat eine Spalte je Variante, PropertyValue kennt nur ein
-    # Wertfeld. Also je Zeile die Variante mitschreiben — "Netzabsicherung (300)"
-    # -> "20A". Wo alle Varianten denselben Wert haben (Schutzklasse, CE …),
-    # steht die Zeile einmal ohne Variante statt sechsmal gleich.
-    for t in C.specTables(lang, p):
-        for r in t["rows"]:
-            vals = [v for v in r[1:] if v != C.SPEC_EMPTY]
-            if not vals:
-                continue
-            if len(set(vals)) == 1:
-                props.append({"@type": "PropertyValue", "name": r[0], "value": vals[0]})
-                continue
-            for col, val in zip(t["cols"], r[1:]):
-                if val != C.SPEC_EMPTY:
-                    props.append({"@type": "PropertyValue",
-                                  "name": f"{r[0]} ({col})", "value": val})
-    hl = C.highlightsOf(lang, p)
-    d = {
-        "@type": "Product",
+    identifiers = [{"@type": "PropertyValue", "propertyID": "VES-TECH",
+                    "value": p["id"].upper()}]
+    if p.get("mpn"):
+        identifiers.append({"@type": "PropertyValue", "propertyID": "MPN",
+                            "value": p["mpn"]})
+    return {
+        "@type": "Thing",
+        # Keep the stable identifier; the fragment does not declare a type.
         "@id": url + "#product",
         "name": C.pFullName(lang, p),
-        # Weitere Namen, unter denen das Geraet gesucht wird - bei der Occasion
-        # etwa "PlasmaFix P+T" oder die Bezeichnung der Stromquelle im Prospekt.
         "alternateName": ([C.pName(lang, p)] + list(p.get("aka", []))
                           if p.get("aka") else C.pName(lang, p)),
-        "sku": p["id"].upper(),
-        # Our URL slug is an internal SKU, not a manufacturer's part number.
-        **({"mpn": p["mpn"]} if p.get("mpn") else {}),
         "url": url,
         "description": C.pDesc(lang, p),
         "image": [img_abs(p["img"], 1000)],
-        # url nur, wenn eine geprueft erreichbare hinterlegt ist - siehe
-        # core.py::MARKEN. Ein toter Verweis im JSON-LD ist schlechter als
-        # keiner: eine Suchmaschine folgt ihm und findet nichts.
-        "brand": {"@type": "Brand", "name": C.pBrand(p),
-                  **({"url": C.pBrandUrl(p)} if C.pBrandUrl(p) else {})},
-        "manufacturer": {"@type": "Organization", "name": C.pHersteller(p),
-                         **({"url": C.pBrandUrl(p)} if C.pBrandUrl(p) else {})},
-        "category": f"{C.catT(lang, cat)} > {C.subT(lang, p['sub'])}",
-        # Der Zustand gehoert an das Produkt, nicht in einen offers-Knoten -
-        # den gibt es hier bewusst nicht. schema.org erlaubt itemCondition an
-        # Product, Offer, Demand und MerchantReturnPolicy.
-        **({"itemCondition": C.zustandLD(p)} if C.zustandLD(p) else {}),
-        # Kein inLanguage. schema.org fuehrt die Eigenschaft nur auf
-        # CreativeWork, Event, BroadcastService, LinkRole, PronounceableText,
-        # CommunicateAction und WriteAction; Product erbt allein von Thing und
-        # kennt sie nicht. Auf 231 Seiten war das ein Validierungsfehler, den
-        # Ahrefs am 03.09.2026 gemeldet hat. Die Sprache der Seite steht
-        # ohnehin im lang-Attribut, in den hreflang-Angaben und am
-        # ItemPage-Knoten im selben Graphen.
-        "additionalProperty": props,
-        # Preis auf Anfrage: bewusst KEIN price-Feld, und deshalb seit dem
-        # 05.08.2026 auch KEIN offers-Knoten mehr.
-        #
-        # Hier stand ein Offer mit priceCurrency "CHF", aber ohne price. Eine
-        # Waehrung ohne Betrag ist kein Angebot, sondern ein halbes: jeder
-        # Validator meldet das fehlende Pflichtfeld, und Google zeigt ein Offer
-        # ohne Preis ohnehin nicht an. Der Knoten kostete also 231 Fehlermeldungen
-        # und brachte nichts. Ein erfundener Preis kaeme nicht in Frage - die
-        # Regel "keine Preise" ist der Kern dieses Katalogs.
-        #
-        # Was das Angebot ausmacht, steht weiterhin da: sichtbar "Preis auf
-        # Anfrage" auf jeder Seite, das Liefergebiet CH/LI am Organization-
-        # Knoten, und die Anfrageliste als Weg zum Angebot. Ein "seller" waere
-        # hier uebrigens falsch - das ist eine Eigenschaft von Offer, nicht
-        # von Product.
+        "identifier": identifiers if len(identifiers) > 1 else identifiers[0],
+        "mainEntityOfPage": {"@id": url + "#webpage"},
     }
-    if p.get("models"):
-        # Preserve the two verified brand/model pairs. Do not imply one
-        # manufacturer or an available three-machine bundle.
-        d["brand"] = [{"@type": "Brand", "name": b}
-                      for b in dict.fromkeys(m["brand"] for m in p["models"])]
-        d["model"] = [{"@type": "ProductModel", "name": m["name"],
-                       "brand": {"@type": "Brand", "name": m["brand"]}}
-                      for m in p["models"]]
-        d.pop("manufacturer", None)
-    if hl:
-        d["additionalProperty"] = props + [
-            {"@type": "PropertyValue", "name": C.t(lang, "highlights"), "value": x} for x in hl
-        ]
-    return d
 
 
 def ld_itemlist(lang, products, name):

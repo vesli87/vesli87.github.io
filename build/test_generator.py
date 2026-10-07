@@ -52,6 +52,10 @@ class GeneratorTests(unittest.TestCase):
     def test_combined_plasmafix_listing_preserves_distinct_brand_model_pairs(self):
         product = C.BY_ID['plasmafix-51']
         expected = 'SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T'
+        catalogue = {row['id']: row for row in B.products_json()['products']}
+        self.assertEqual([(m['brand'], m['name'])
+                          for m in catalogue[product['id']]['models']],
+                         [('SAF-FRO', 'PlasmaFix 51'), ('Oerlikon', 'PlasmaFix P+T')])
         for lang in C.LANGS:
             with self.subTest(lang=lang):
                 url, page = PG.page_product(lang, product)
@@ -68,11 +72,14 @@ class GeneratorTests(unittest.TestCase):
                 self.assertEqual(search['n'], expected)
                 self.assertIn('saf fro plasmafix 51', search['t1'])
                 self.assertIn('oerlikon plasmafix p t', search['t1'])
-                schema = R.ld_product(lang, product)
+                schema = R.ld_catalog_item(lang, product)
                 self.assertEqual(schema['name'], expected)
-                self.assertEqual(schema['brand'], [{'@type':'Brand','name':'SAF-FRO'}, {'@type':'Brand','name':'Oerlikon'}])
-                self.assertEqual([(m['brand']['name'],m['name']) for m in schema['model']],
-                                 [('SAF-FRO','PlasmaFix 51'),('Oerlikon','PlasmaFix P+T')])
+                self.assertEqual(schema['@type'], 'Thing')
+                self.assertEqual(catalogue[product['id']]['names'][lang], expected)
+                self.assertIn('SAF-FRO PlasmaFix 51', schema['description'])
+                self.assertIn('Oerlikon PlasmaFix P+T', schema['description'])
+                self.assertNotIn('brand', schema)
+                self.assertNotIn('model', schema)
                 self.assertNotIn('manufacturer', schema)
                 self.assertNotIn('offers', schema)
                 self.assertNotIn('availability', schema)
@@ -81,9 +88,10 @@ class GeneratorTests(unittest.TestCase):
         self.assertEqual([o['id'] for o in C.inquiry_options()['plasmafix-51']['options']],
                          ['unit-left','unit-centre','unit-right'])
         # Ordinary catalogue products retain their original single-brand data.
-        other = R.ld_product('de', C.BY_ID['hypermig-x'])
-        self.assertEqual(other['brand']['name'], 'MAHE')
-        self.assertIn('manufacturer', other)
+        other = R.ld_catalog_item('de', C.BY_ID['hypermig-x'])
+        self.assertEqual(other['name'], 'MAHE HyperMIG X')
+        self.assertEqual(catalogue['hypermig-x']['brand'], 'MAHE')
+        self.assertNotIn('manufacturer', other)
 
     def test_foreign_brand_guard_accepts_reviewed_units_but_rejects_mahe_mixups(self):
         products = [p for p in C.P if C.pBrand(p) != C.BRAND]
@@ -127,11 +135,70 @@ class GeneratorTests(unittest.TestCase):
                          'Fiche technique HyperMIG X CWK')
 
     def test_no_invented_manufacturer_numbers(self):
-        for p in C.P:
-            data = R.ld_product('de', p)
-            self.assertEqual(data.get('mpn'), p.get('mpn'))
+        # Exercise both absent and explicitly supplied source MPNs, even when
+        # the current catalogue has no real manufacturer article numbers.
+        source_with_mpn = dict(C.BY_ID['hypermig-x'], mpn='verified-test-mpn')
+        for p in [*C.P, source_with_mpn]:
+            data = R.ld_catalog_item('de', p)
+            identifiers = data['identifier']
+            if isinstance(identifiers, dict):
+                identifiers = [identifiers]
+            self.assertTrue(all(i['@type'] == 'PropertyValue' for i in identifiers))
+            actual = {i['propertyID']: i['value'] for i in identifiers}
+            expected = {'VES-TECH': p['id'].upper()}
+            if p.get('mpn'):
+                expected['MPN'] = p['mpn']
+            self.assertEqual(actual, expected)
+            self.assertEqual(len(identifiers), len(expected))
+            self.assertNotIn('mpn', data)
+            self.assertNotIn('sku', data)
             self.assertNotIn('offers', data)
             self.assertNotIn('price', data)
+
+    def test_quote_only_catalogue_pages_keep_neutral_identity_without_product_snippets(self):
+        def walk(value):
+            if isinstance(value, dict):
+                yield value
+                for child in value.values():
+                    yield from walk(child)
+            elif isinstance(value, list):
+                for child in value:
+                    yield from walk(child)
+
+        forbidden = {'Product', 'ProductModel', 'IndividualProduct', 'ProductGroup',
+                     'SomeProducts', 'Offer', 'AggregateOffer', 'Review', 'AggregateRating'}
+        allowed = {'@type', '@id', 'name', 'alternateName', 'description', 'url',
+                   'image', 'identifier', 'mainEntityOfPage'}
+        for lang in C.LANGS:
+            for product in C.P:
+                with self.subTest(lang=lang, product=product['id']):
+                    url, page = PG.page_product(lang, product)
+                    scripts = re.findall(r'<script type="application/ld\+json">(.*?)</script>',
+                                         page, re.S)
+                    graph = [node for script in scripts
+                             for node in json.loads(script)['@graph']]
+                    for node in walk(graph):
+                        types = node.get('@type', [])
+                        if isinstance(types, str):
+                            types = [types]
+                        normalized = {t.rsplit('/', 1)[-1] for t in types}
+                        self.assertFalse(normalized & forbidden, node)
+                    item_id = C.abs_url(url) + '#product'
+                    items = [n for n in graph if n.get('@id') == item_id]
+                    self.assertEqual(len(items), 1)
+                    item = items[0]
+                    self.assertEqual(item['@type'], 'Thing')
+                    self.assertFalse(set(item) - allowed)
+                    self.assertEqual(item['name'], C.pFullName(lang, product))
+                    self.assertEqual(item['description'], C.pDesc(lang, product))
+                    self.assertEqual(item['url'], C.abs_url(url))
+                    self.assertEqual(item['image'], [R.img_abs(product['img'], 1000)])
+                    pages = [n for n in graph if n.get('@type') == 'ItemPage']
+                    self.assertEqual(len(pages), 1)
+                    self.assertEqual(pages[0]['mainEntity'], {'@id': item_id})
+                    self.assertEqual(item['mainEntityOfPage'], {'@id': pages[0]['@id']})
+                    self.assertEqual(pages[0]['inLanguage'], C.EX[lang]['hreflang'])
+                    self.assertEqual(pages[0]['primaryImageOfPage']['url'], item['image'][0])
 
     def test_localized_itemlist_names(self):
         for lang in C.LANGS:
@@ -142,13 +209,23 @@ class GeneratorTests(unittest.TestCase):
     def test_script_data_cannot_close_script_element(self):
         payload = '</script><script>alert(1)</script>'
         self.assertEqual(R.jsonld({'name': payload}).count('</script>'), 1)
+        with patch.object(C, 'pDesc', return_value=payload):
+            item = R.ld_catalog_item('de', C.BY_ID['theta-60'])
+            serialized = R.jsonld(item)
+            self.assertEqual(serialized.count('</script>'), 1)
+            self.assertNotIn(payload, serialized)
+            self.assertIn('\\u003c', serialized)
+            parsed = json.loads(serialized.split('>', 1)[1].rsplit('</script>', 1)[0])
+            self.assertEqual(parsed['description'], payload)
         with patch.dict(C.COMPANY, email=payload):
             self.assertNotIn('</script>', R.boot_json('de'))
 
-    def test_theta_cut_limits_keep_their_meaning_in_html_and_jsonld(self):
+    def test_theta_cut_limits_keep_their_meaning_in_html_and_public_catalogue(self):
         # The manufacturer's current datasheet distinguishes strict limits for
         # separation/recommended cuts. A dropped or reversed '<' changes the
-        # specification; check the rendered card, page and parsed JSON-LD.
+        # specification; check the rendered card, page and public catalogue.
+        # Product-specific properties do not belong on neutral Thing markup.
+        catalogue = {row['id']: row for row in B.products_json()['products']}
         labels = {
             'de': ('Trennschnitt', 'Empfohlener Schnitt'),
             'fr': ('Coupe de séparation', 'Coupe recommandée'),
@@ -163,18 +240,14 @@ class GeneratorTests(unittest.TestCase):
                     for name, limit in zip(names, ('35', '25')):
                         self.assertIn(f'{name} &lt; {limit} mm', page)
                         self.assertIn(f'&lt; {limit} mm', card)
-                    scripts = re.findall(
-                        r'<script type="application/ld\+json">(.*?)</script>',
-                        page, re.S)
-                    self.assertTrue(scripts)
-                    nodes = [node for script in scripts
-                             for node in json.loads(script).get('@graph', [])]
-                    data = next(node for node in nodes if node.get('@type') == 'Product')
-                    props = {p['name']: p['value'] for p in data['additionalProperty']}
+                    data = catalogue[pid]
+                    rows = [row for table in data['techdata'][lang] for row in table['rows']]
                     for name, limit in zip(names, ('35', '25')):
-                        self.assertEqual(props[name].replace(' ', ''), '<' + limit + 'mm')
-                    self.assertTrue(any('\\u003c' in script for script in scripts))
-                    self.assertTrue(all('<' not in script for script in scripts))
+                        values = [value for row in rows if row['label'] == name
+                                  for value in row['values'].values()]
+                        self.assertTrue(values)
+                        self.assertTrue(all(v.replace(' ', '') == '<' + limit + 'mm' for v in values))
+                        self.assertIn(f'{name} < {limit} mm', data['highlights'][lang])
 
     def test_lastmod_ignores_runtime_changes_but_keeps_indexable_content(self):
         base = '''<head><title>PlasmaFix 51</title>

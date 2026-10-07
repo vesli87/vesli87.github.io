@@ -74,15 +74,10 @@ def target_exists(href):
     return (ROOT / href.lstrip("/")).exists()
 
 
-# Pflichtfelder je Schema-Typ. Fehlen sie, verliert Google die Rich Results und
-# Antwortmaschinen können die Angaben nicht zuordnen.
+# Required fields for this site's emitted metadata. Google rich-result
+# eligibility is a separate contract; quote-only items deliberately opt out.
 LD_REQUIRED = {
-    # Product ohne "offers": seit dem 05.08.2026 gibt es hier keinen
-    # Offer-Knoten mehr. Er trug priceCurrency ohne price, und eine Waehrung
-    # ohne Betrag ist kein Angebot - jeder Validator meldete das fehlende
-    # Pflichtfeld, auf 231 Seiten. Siehe render.py::ld_product.
-    "Product":        ["name", "description", "image", "brand", "sku", "url"],
-    "Offer":          ["availability", "priceCurrency", "url"],
+    "ItemPage":       ["url", "name", "inLanguage", "mainEntity", "primaryImageOfPage"],
     "FAQPage":        ["mainEntity"],
     "BreadcrumbList": ["itemListElement"],
     "ItemList":       ["itemListElement", "numberOfItems"],
@@ -90,6 +85,60 @@ LD_REQUIRED = {
     "WebSite":        ["url", "name", "potentialAction"],
     "WebPage":        ["url", "name", "inLanguage"],
 }
+
+
+CATALOG_THING_FIELDS = {
+    "@type", "@id", "name", "alternateName", "description", "url", "image",
+    "identifier", "mainEntityOfPage",
+}
+UNSUPPORTED_COMMERCE_TYPES = {
+    "Product", "ProductModel", "IndividualProduct", "ProductGroup", "SomeProducts",
+    "Offer", "AggregateOffer", "Review", "AggregateRating",
+}
+
+
+def schema_type_name(value):
+    """Recognise both compact names and explicit Schema.org type URLs."""
+    if not isinstance(value, str):
+        return ""
+    for prefix in ("https://schema.org/", "http://schema.org/", "schema:"):
+        if value.startswith(prefix):
+            return value[len(prefix):]
+    return value
+
+
+def check_catalog_markup(where, value):
+    """Catch unsupported commerce claims at every depth, including subtypes."""
+    if isinstance(value, list):
+        for child in value:
+            check_catalog_markup(where, child)
+    elif isinstance(value, dict):
+        for field in ("@type", "additionalType"):
+            declared = value.get(field, [])
+            declared = declared if isinstance(declared, list) else [declared]
+            unsupported = {schema_type_name(t) for t in declared} & UNSUPPORTED_COMMERCE_TYPES
+            if unsupported:
+                err(f"{where}: JSON-LD {', '.join(sorted(unsupported))} passt nicht "
+                    "zum Katalog ohne veroeffentlichte Preise/Bewertungen")
+        types = value.get("@type", [])
+        types = types if isinstance(types, list) else [types]
+        if "Thing" in {schema_type_name(t) for t in types}:
+            extra = set(value) - CATALOG_THING_FIELDS
+            if extra:
+                err(f"{where}: Katalog-Thing mit unpassenden Feldern {sorted(extra)}")
+            for key in ("@id", "name", "description", "url", "image", "identifier", "mainEntityOfPage"):
+                if not value.get(key):
+                    err(f"{where}: Katalog-Thing ohne {key}")
+            identifiers = value.get("identifier", [])
+            identifiers = identifiers if isinstance(identifiers, list) else [identifiers]
+            for identifier in identifiers:
+                if (not isinstance(identifier, dict)
+                        or identifier.get("@type") != "PropertyValue"
+                        or identifier.get("propertyID") not in ("VES-TECH", "MPN")
+                        or not identifier.get("value")):
+                    err(f"{where}: Katalog-Thing mit ungueltiger Referenz")
+        for child in value.values():
+            check_catalog_markup(where, child)
 
 
 def check_ld_node(where, node, types, ids):
@@ -110,23 +159,6 @@ def check_ld_node(where, node, types, ids):
             for x in v:
                 refs(x)
     refs({k: v for k, v in node.items() if k != "@id"})
-
-    if "Product" in types:
-        # "Preis auf Anfrage": es darf kein Preis behauptet werden – weder 0
-        # noch leer. Und es darf gar kein Offer geben: ohne price ist er
-        # unvollstaendig, mit price waere er gelogen.
-        if "offers" in node:
-            err(f"{where}: Product hat wieder ein offers – ohne Preis ist das ein "
-                f"unvollstaendiger Offer, mit Preis ein falscher")
-        if "price" in node:
-            err(f"{where}: Product hat ein price-Feld – die Website führt keine Preise")
-        if not str(node.get("sku", "")).strip():
-            err(f"{where}: Product ohne sku")
-        if isinstance(node.get("image"), list) and not node["image"]:
-            err(f"{where}: Product mit leerer image-Liste")
-        for prop in node.get("additionalProperty", []):
-            if not prop.get("name") or not prop.get("value"):
-                err(f"{where}: PropertyValue ohne name/value")
 
     if "FAQPage" in types:
         for q in node.get("mainEntity", []):
@@ -477,6 +509,7 @@ def main():
                 continue
             if "@context" not in d:
                 err(f"{where}: JSON-LD ohne @context")
+            check_catalog_markup(where, d)
             graph = d.get("@graph", [])
             ids = {n["@id"] for n in graph if isinstance(n, dict) and "@id" in n}
             for node in graph:

@@ -49,7 +49,10 @@ class SocialPreviewTests(unittest.TestCase):
                 self.assertEqual(struct.unpack('>II', png[16:24]), (1200, 630))
                 blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
                 graph = [item for block in blocks for item in json.loads(block)['@graph']]
-                self.assertEqual(next(item for item in graph if item.get('@type') == 'Product')['image'], [original])
+                identity = C.abs_url(C.u_prod(lang, product)) + '#product'
+                item = next(node for node in graph if node.get('@id') == identity)
+                self.assertEqual(item['@type'], 'Thing')
+                self.assertEqual(item['image'], [original])
                 self.assertEqual(next(item for item in graph if item.get('@type') == 'ItemPage')['primaryImageOfPage']['url'], original)
                 body = html.split('<body', 1)[1]
                 self.assertIn(urlsplit(original).path, body)

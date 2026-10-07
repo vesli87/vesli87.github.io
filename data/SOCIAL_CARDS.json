@@ -1,0 +1,7 @@
+{
+  "pshb125": {
+    "de": {"type": "Plasmabrenner", "photo_note": "Herstellerfoto: PSHB"},
+    "fr": {"type": "Torche plasma", "photo_note": "Photo du fabricant : PSHB"},
+    "it": {"type": "Torcia plasma", "photo_note": "Foto del produttore: PSHB"}
+  }
+}

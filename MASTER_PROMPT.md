@@ -724,6 +724,13 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 
 ## 21. Marketing und Occasion-Bezeichnungen (22.09.2026)
 
+- PSHB 125 hat sprachbezogene 1200 × 630 Open-Graph-/Twitter-Karten unter
+  `assets/img/social/`, damit die ganze schmale Brennerfotografie sichtbar bleibt.
+  `build/pshb_social_card.mjs` erzeugt SVG und PNG aus dem Originalfoto und
+  `data/SOCIAL_CARDS.json`, prüft unveränderte Bildpixel und sichtbaren Bildinhalt.
+  `render.product_social_image()` wählt nur diese Vorschau aus; Galerie,
+  `Product.image` und `ItemPage.primaryImageOfPage` bleiben Originalfotos.
+
 - Verifizierte Firmenprofile werden zentral über `SOCIAL_PROFILES` in
   `build/core.py` geführt; Fusszeile und `Organization.sameAs` verwenden
   dieselben URLs. Keine externen Social-Media-Embeds.

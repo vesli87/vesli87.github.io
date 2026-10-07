@@ -878,7 +878,7 @@ def page_product(lang, p):
         ld.append(R.ld_faq_subset(lang, ot["faq"], url))
     return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
                            jsonld_blocks=ld, body=body, og_type="product",
-                           og_image=R.img_abs(p["img"], 1000))
+                           og_image=R.product_social_image(lang, p))
 
 
 def process_followup(lang):

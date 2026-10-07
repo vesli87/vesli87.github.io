@@ -143,6 +143,13 @@ weiterhin als Seitenänderung erkannt.
 
 ## Veröffentlichen
 
+PSHB-125-Linkvorschauen verwenden eine eigene 1200 × 630 Karte pro Sprache,
+damit soziale Netzwerke den Kopf der schmalen Brennerfotografie nicht abschneiden.
+`node build/pshb_social_card.mjs` erzeugt die SVG-/PNG-Karten aus dem unveränderten
+Herstellerfoto und `data/SOCIAL_CARDS.json`; dafür ist Sharp erforderlich.
+Nach dem visuellen Prüfen werden die PNGs mitgespeichert. Produktgalerie und
+JSON-LD verwenden weiterhin das ursprüngliche Foto.
+
 Push auf `main` startet `.github/workflows/pages.yml`. Build, Seitenprüfungen,
 Herstellerdaten-Abgleich und Regressionstests müssen bestehen.
 `build/package_site.py` kopiert nur öffentliche Dateien in ein separates Artefakt;

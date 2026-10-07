@@ -396,6 +396,17 @@ def img_abs(path, size=1000):
     return f"{C.SITE}/assets/img/{img_folder(m)}/{m['key']}-{img_step(m, size)}.webp"
 
 
+def product_social_image(lang, p):
+    """Landscape share card only: keep catalogue and schema photos original.
+
+    The tall PSHB photograph lost its torch head in native link previews.
+    Its reviewed card contains the complete original photo without cropping.
+    """
+    if p['id'] == 'pshb125':
+        return C.SITE + _ver(f'/assets/img/social/pshb125-{lang}.png')
+    return img_abs(p['img'], 1000)
+
+
 # --------------------------------------------------------------------------
 # JSON-LD-Bausteine
 # --------------------------------------------------------------------------

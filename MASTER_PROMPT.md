@@ -165,7 +165,7 @@ Die Fachlogik aus v1 ist 1:1 nach `core.py` portiert: `deriveFeat`, `matOf`,
 `highlightsOf`, `fpAssign`, `relatedAcc`, `isWater`, `trK`, `trV`.
 
 Seit dem 07.10.2026 verlinken WK 300 und DVL 420 direkt unter ihrer
-Produktbeschreibung auf die zugehoerige Geraetefamilie, sprachgleich und ohne
+Produktbeschreibung auf die zugehoerige Geraetefamilie, sichtbar unterstrichen, sprachgleich und ohne
 einen Reiter oeffnen zu muessen (`pages.py::accessory_context_html`). Grundlage
 sind `P.json` und die Auswahlhinweise in `SUBCATEGORY_GUIDES.json`: Beim WK 300
 bleibt die Zuordnung ausdruecklich auf **MMS 3000** begrenzt, obwohl die

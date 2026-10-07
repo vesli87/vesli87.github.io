@@ -807,7 +807,7 @@
     color:var(--accent-ink);font-size:15px;display:inline-block;margin-top:10px}
   .usp h2{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:20px;letter-spacing:.02em}
   .usp p{color:var(--muted);font-size:14px;line-height:1.6;margin-top:7px}
-  .usp p a,.buying-guide p a{text-decoration:underline;text-underline-offset:.18em}
+  .usp p a,.buying-guide p a,.accessory-context a{text-decoration:underline;text-underline-offset:.18em}
   .usp h2 a::after{content:' →';color:var(--accent-ink)}
   .trust .lead h2{font-family:'DM Serif Display',serif;font-weight:400;font-size:26px;line-height:1.12}
   .trust .dl h3{font-family:'Barlow Condensed';font-weight:700;font-size:19px;text-transform:uppercase;margin:8px 0 6px}

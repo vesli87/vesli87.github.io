@@ -15011,8 +15011,8 @@
    },
    "description": {
     "de": "Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen.",
-    "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
-    "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
+    "fr": "Torche MIG/MAG refroidie à l’eau pour les classes de puissance inférieures.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua per le classi di potenza inferiori."
    },
    "highlights": {
     "de": [],

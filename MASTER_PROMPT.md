@@ -164,6 +164,17 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 Die Fachlogik aus v1 ist 1:1 nach `core.py` portiert: `deriveFeat`, `matOf`,
 `highlightsOf`, `fpAssign`, `relatedAcc`, `isWater`, `trK`, `trV`.
 
+Seit dem 07.10.2026 verlinken WK 300 und DVL 420 direkt unter ihrer
+Produktbeschreibung auf die zugehoerige Geraetefamilie, sprachgleich und ohne
+einen Reiter oeffnen zu muessen (`pages.py::accessory_context_html`). Grundlage
+sind `P.json` und die Auswahlhinweise in `SUBCATEGORY_GUIDES.json`: Beim WK 300
+bleibt die Zuordnung ausdruecklich auf **MMS 3000** begrenzt, obwohl die
+verlinkte MMS-Seite auch MMS 2000 beschreibt. Beim DVL 420 werden die genaue
+HyperMIG-X-Ausfuehrung und das Zwischenschlauchpaket erfragt. Dies erweitert
+**nicht** die Kompatibilitaetsliste `ACC.json`. Die FR-/IT-Beschreibung des
+MF240W entspricht wieder dem vorhandenen deutschen Text «fuer kleinere
+Leistungsklassen»; Stromwerte oder Einschaltdauern werden nicht ergaenzt.
+
 Bei Theta 60 HSC und AUT folgen Kurzmerkmale und Besonderheiten dem auf beiden
 Herstellerseiten verlinkten [MAHE-Datenblatt, Seite 2](https://mahe-online.de/wp-content/uploads/2022/07/Theta_60_HSC.pdf):
 Trennschnitt **< 35 mm**, empfohlener Schnitt **< 25 mm**. Die widersprüchlichen

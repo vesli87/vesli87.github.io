@@ -400,6 +400,27 @@ class GeneratorTests(unittest.TestCase):
                 self.assertIn(C.u_service(lang, 'calib'), processes)
                 self.assertIn(C.u_sub(lang, 'occasion', 'Mikroplasma'), processes)
 
+    def test_accessory_family_links_remain_visible_and_qualified(self):
+        for lang in C.LANGS:
+            for pid, target in [('wk300', 'mms'), ('dvl420', 'hypermig-x')]:
+                with self.subTest(lang=lang, product=pid):
+                    product = C.BY_ID[pid]
+                    url, page = PG.page_product(lang, product)
+                    self.assertEqual(url, C.u_prod(lang, product))
+                    self.assertIn(C.u_prod(lang, C.BY_ID[target]), MainLinks(page).links)
+                    context = PG.accessory_context_html(lang, product)
+                    if pid == 'wk300':
+                        self.assertIn('MMS-3000' if lang == 'de' else 'MMS 3000', context)
+                    # A contextual link must not broaden ACC's compatibility list.
+                    self.assertNotIn(pid, C.relatedAcc(C.BY_ID[target]))
+                    payload = '<img src=x onerror="alert(1)"> & {device}'
+                    with patch.dict(C.EX[lang], {f'accessory_context_{pid}': payload}):
+                        escaped = PG.accessory_context_html(lang, product)
+                        self.assertNotIn('<img', escaped)
+                        self.assertIn('&lt;img', escaped)
+                        self.assertIn('href="' + C.u_prod(lang, C.BY_ID[target]) + '"', escaped)
+            self.assertEqual(PG.accessory_context_html(lang, C.BY_ID['mf240w']), '')
+
     def test_context_links_escape_copy_and_preserve_localized_terms(self):
         payload = '<img src=x onerror="alert(1)"> & '
         for lang in C.LANGS:

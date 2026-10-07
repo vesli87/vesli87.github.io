@@ -347,6 +347,24 @@ def karten(lang, ids, mit_marke=False):
     return f'<div class="accgrid">{cards}</div>'
 
 
+def accessory_context_html(lang, p):
+    """Qualified family links, not new compatibility entries in ACC.json.
+
+    P.json names MMS 3000 for WK 300 and HyperMIG X for DVL 420.
+    SUBCATEGORY_GUIDES.json explains the configuration details to supply.
+    The MMS destination also covers MMS 2000, so retain the 3000 qualifier.
+    """
+    related = {"wk300": "mms", "dvl420": "hypermig-x"}
+    device_id = related.get(p["id"])
+    if not device_id:
+        return ""
+    device = C.BY_ID[device_id]
+    link = (f'<a href="{e(C.u_prod(lang, device))}">'
+            f'{e(C.pName(lang, device))}</a>')
+    text = e(C.t(lang, f'accessory_context_{p["id"]}')).format(device=link)
+    return f'<p class="prod-intro accessory-context">{text}</p>'
+
+
 def acc_html(lang, p):
     """Der Reiter an vierter Stelle – je nachdem, was das Produkt ist.
 
@@ -820,6 +838,8 @@ def page_product(lang, p):
     # denn "PlasmaFix 51" allein sagt nicht, wessen Anlage das ist, und
     # gesucht wird "oerlikon plasmafix 51" und nie das Wort allein.
     h1 = nm if C.istMahe(p) else C.pFullName(lang, p)
+    context = accessory_context_html(lang, p)
+    context = f"\n      {context}" if context else ""
     body = f"""
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
@@ -828,7 +848,7 @@ def page_product(lang, p):
     <div class="dinfo" data-inquiry-product="{e(p['id'])}">
       <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
       <h1>{e(h1)}</h1>
-      <p class="lead">{e(C.pDesc(lang, p))}</p>
+      <p class="lead">{e(C.pDesc(lang, p))}</p>{context}
       {procs_block(lang, p)}
       <div class="pmeta">
         <div class="m"><span class="lab">{e(C.t(lang,'availability'))}</span>

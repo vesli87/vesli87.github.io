@@ -270,6 +270,12 @@ Screenreader ausgeblendet. So entfaellt Bings Hinweis auf leere Bildtexte,
 ohne die Beschriftung doppelt vorzulesen. Separate Bildlinks in der Anfrageliste
 haben einen zugaenglichen Namen aus Produkt und gegebenenfalls Variante.
 
+Die Miniaturen der MLF-100-Bildergalerie verwenden seit dem 08.10.2026 den
+vollstaendigen lokalisierten Alternativtext des zugehoerigen Bildes. Sie sind
+funktionale Tab-Auswahlelemente und nicht dekorativ; ihr Name haengt deshalb
+nicht nur vom gekuerzten Maus-Tooltip ab. Tab-/Panel-Zuordnung, Pfeiltasten und
+sichtbare Bilder bleiben unveraendert.
+
 **Preis auf Anfrage und strukturierte Daten (07.10.2026):** Der Katalog gibt
 bewusst keine `Product`-Rich-Result-Auszeichnung mehr aus. Google verlangt fuer
 [Product-Snippets](https://developers.google.com/search/docs/appearance/structured-data/product-snippet)

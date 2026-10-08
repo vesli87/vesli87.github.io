@@ -275,13 +275,14 @@ def media_html(lang, p, nm):
     thumbs = ""
     for i, b in enumerate(bilder):
         # Der Miniaturstreifen ist eine Auswahl, keine Navigation: deshalb
-        # tablist/tab und nicht Links.
+        # tablist/tab und nicht Links. Das Bild benennt die Auswahl selbst;
+        # der gekuerzte title bleibt nur der zusaetzliche Maus-Tooltip.
         thumbs += (f'<button class="galthumb{" active" if i == 0 else ""}" type="button" '
                    f'role="tab" aria-selected="{"true" if i == 0 else "false"}" '
                    f'id="gt-{e(p["id"])}-{i}" tabindex="{0 if i == 0 else -1}" '
                    f'aria-controls="gs-{e(p["id"])}-{i}" data-i="{i}" '
                    f'title="{e(b["alt"][:110])}">'
-                   + R.img_tag(b["img"], "84px", alt="", width=84)
+                   + R.img_tag(b["img"], "84px", alt=b["alt"], width=84)
                    + "</button>")
 
     return (f'<div class="dmedia" data-gal>'

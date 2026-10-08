@@ -30,6 +30,15 @@
   Exklusivität oder Herstellerbeauftragung; Lieferort und Ablauf werden je
   Auftrag vereinbart. Technische Herstellerangaben und Marken bleiben erhalten.
   Öffentliche Texte enthalten keine private Korrespondenz.
+  Auch Preisabsätze, Service-Metadaten und Gewährleistungsabläufe dürfen
+  keinen eigenen Import oder eine direkte Liefervereinbarung mit MAHE
+  voraussetzen. Verfügbarkeit von Ersatzteilen und Abwicklung mit dem
+  Lieferanten werden im Einzelfall geklärt; VES-TECH Swiss bleibt der
+  Ansprechpartner. Die Preisbindung, vereinbarte Kostenübernahme und
+  gesetzlichen Kundenrechte bleiben unverändert. Die Datenschutzerklärung
+  nennt Schweisstechnik Scherrer AG als Empfänger nur für die erforderlichen
+  Angaben zur angefragten Beschaffung, Lieferung oder Serviceabwicklung.
+  AGB und Datenschutzerklärung tragen den Stand 08.10.2026.
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
   - Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau (AR) — bei der
     Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung.

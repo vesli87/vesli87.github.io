@@ -18,9 +18,18 @@
 
 ## 1. Produkt und Geschäftskontext
 
-- **Site:** „VES-TECH Swiss" — Schweizer Partner für das deutsche **MAHE**-Geräteprogramm
+- **Site:** „VES-TECH Swiss" — Beratung und Verkauf von Geräten aus dem deutschen **MAHE**-Geräteprogramm
   (Schweissgeräte, Plasmaschneiden, elektrolytische Reinigung, Zubehör).
   Katalog- und Anfrageseite, **kein** Checkout.
+- **Geschäftsrolle (08.10.2026):** Die Beschaffung von MAHE-Neugeräten erfolgt
+  über Schweisstechnik Scherrer AG. VES-TECH Swiss wird weder als offizieller,
+  autorisierter oder exklusiver MAHE-Partner noch als Landesvertretung oder
+  Direktimporteur bezeichnet. Beratung und Verkauf von MAHE-Geräten sind die
+  sachliche Beschreibung. Die separat bestätigte Partnerwerkstatt in Herisau
+  bleibt bestehen. Kundschaft und Leistungen in CH/LI begründen keine
+  Exklusivität oder Herstellerbeauftragung; Lieferort und Ablauf werden je
+  Auftrag vereinbart. Technische Herstellerangaben und Marken bleiben erhalten.
+  Öffentliche Texte enthalten keine private Korrespondenz.
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
   - Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau (AR) — bei der
     Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung.
@@ -625,7 +634,7 @@ die Sichtbarkeit.
    die ausgelieferte Website bleibt es naturgemäss. Setzt GitHub Pro voraus
    (Pages aus privaten Repositories ist kostenpflichtig).
 3. **Das, was wirklich Wert hat, liegt ohnehin nicht im Code:** die Domain, die
-   Marke, die MAHE-Partnerschaft, die Kundenbeziehungen und der Rang bei Google.
+   Marke, die Geschäfts- und Kundenbeziehungen und der Rang bei Google.
    Wer die Dateien kopiert, hat davon nichts.
 
 ### 15a. Sicherheitsstand (20.09.2026)
@@ -720,8 +729,8 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - Vollständige Sprachprüfung der gepflegten DE-, FR- und IT-Texte: Produktbeschreibungen,
   Merkmale, Auswahlhilfen, Dienstleistungen, FAQ, Formulare und Rechtstexte.
   Sprachkorrekturen sind keine neue rechtliche Prüfung oder Zusage technischer Eigenschaften.
-- Die deutsche Einleitung beginnt mit «VES-TECH Swiss ist Ihr Schweizer Händler
-  für MAHE.»; kein Doppelpunkt unmittelbar nach MAHE. Alle vier Bereiche
+- Die deutsche Einleitung beginnt mit «VES-TECH Swiss bietet Beratung und Verkauf
+  von MAHE-Geräten.»; kein Doppelpunkt unmittelbar nach MAHE. Alle vier Bereiche
   Schweissen, Schneiden, Reinigen und Automation bleiben sichtbar.
 - `build/mahe_copy_edits.json` dokumentiert einzeln geprüfte, vollständige
   Herstellerformulierungen vor und nach der sprachlichen Korrektur. Der Abgleich

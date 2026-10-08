@@ -524,9 +524,9 @@ def llms_txt():
     lines = [
         f"# {C.COMPANY['name']}",
         "",
-        f"> {C.t(L,'tagline')}. Schweizer Partner für das deutsche MAHE-Geräteprogramm: "
-        f"Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, "
-        f"elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. "
+        f"> {C.t(L,'tagline')}. {C.t(L,'brand_claim')} "
+        f"Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, CNC-Schneidtische, "
+        f"elektrolytische Reinigungs- und Signiergeräte, Automation sowie Zubehör. "
         f"{len(C.P)} Geräte, alle zum Preis auf Anfrage.",
         # Eigene Zeile: der Waechter check.py::fremdmarken duldet kein "MAHE"
         # in einer Zeile, die ein Fremdfabrikat nennt - zu Recht.
@@ -544,6 +544,7 @@ def llms_txt():
         f"- Telefon: {C.COMPANY['phone']} · E-Mail: {C.COMPANY['email']}",
         f"- Telefonisch erreichbar: {C.COMPANY['hours']}",
         "- Liefergebiet: Schweiz und Liechtenstein",
+        "- MAHE-Neugeräte: Beschaffung über Schweisstechnik Scherrer AG; Lieferung nach Absprache",
         "- Sprachen: Deutsch, Französisch, Italienisch",
         "- Preismodell: Preis auf Anfrage (jede Anlage wird konfiguriert), Währung CHF",
         "- Leistungen: Verkauf (neu und Occasion), Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, "
@@ -587,8 +588,8 @@ def llms_full():
     out = [f"# {C.COMPANY['name']} — vollständiger Produkt- und Wissensauszug",
            f"Stand: {TODAY}. Quelle: {C.SITE}",
            "",
-           f"{C.COMPANY['name']} in {C.WORKSHOP['city']} ({C.WORKSHOP['region']}, "
-           f"{C.WORKSHOP['country_name']}) ist der Schweizer Partner für das MAHE-Geräteprogramm. "
+           f"{C.COMPANY['name']} bietet Beratung und Verkauf von MAHE-Geräten. "
+           f"Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG. "
            f"Werkstatt und Warenannahme: {C.WORKSHOP['street']}, {C.WORKSHOP['zip']} "
            f"{C.WORKSHOP['city']}, bei der Partnerfirma {C.WORKSHOP['partner']}, Besuch nach "
            f"Vereinbarung. Sitz und Rechnungsadresse: {C.COMPANY['street']}, "

@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Schweizer Partner für das deutsche MAHE-Geräteprogramm: Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, elektrolytische Reinigungs- und Signiergeräte sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
+> MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Beratung und Verkauf von MAHE-Geräten. Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, CNC-Schneidtische, elektrolytische Reinigungs- und Signiergeräte, Automation sowie Zubehör. 79 Geräte, alle zum Preis auf Anfrage.
 > Dazu generalüberholte Occasionen aus der Partnerwerkstatt: SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T, Oerlikon PlasmaFix 50 S (Mikroplasma-Schweissanlagen von SAF-FRO und Oerlikon). Verfügbarkeit auf Anfrage.
 
 ## Eckdaten
@@ -10,6 +10,7 @@
 - Telefon: +41 76 710 91 39 · E-Mail: vestechswiss@gmail.com
 - Telefonisch erreichbar: Mo-Do 07:30-17:00 · Fr 07:30-11:30
 - Liefergebiet: Schweiz und Liechtenstein
+- MAHE-Neugeräte: Beschaffung über Schweisstechnik Scherrer AG; Lieferung nach Absprache
 - Sprachen: Deutsch, Französisch, Italienisch
 - Preismodell: Preis auf Anfrage (jede Anlage wird konfiguriert), Währung CHF
 - Leistungen: Verkauf (neu und Occasion), Inbetriebnahme, Diagnose, Reparatur, Kalibrierung, Automation, EN-1090-Konformitätspaket

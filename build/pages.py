@@ -110,7 +110,45 @@ def procs_block(lang, p):
         chips = ('<div class="matchips">' + "".join(
             f'<span class="matchip"><b>{m}</b>{e(C.matLabel(lang, m))}</span>' for m in mats
         ) + "</div>")
-    return f'<div class="procs">{badges}{chips}</div>'
+    scope = ''
+    if p['id'] == 'hypermig-x':
+        copy = C.HYPERMIG_CWK[lang]
+        scope = (f'<p class="symbol-scope">{e(copy["summary_note"])} '
+                 f'<a href="#hypermig-cwk">{e(copy["summary_link"])}</a></p>')
+    return f'<div class="procs">{badges}{chips}{scope}</div>'
+
+
+def cwk_benefits(lang):
+    guide = C.HYPERMIG_CWK
+    copy = guide[lang]
+    symbols = ''
+    for key in guide['symbols']:
+        feature = C.FEAT[key]
+        label = C.featLabel(lang, key)
+        symbols += (f'<li class="mahe-symbol-card" data-mahe-symbol="{e(key)}">'
+                    f'<img src="{e(feature["img"])}" width="{feature["w"]}" height="{feature["h"]}" '
+                    f'alt="{e(label)}" aria-hidden="true" loading="lazy" decoding="async">'
+                    f'<div><h5>{e(label)}</h5><p>{e(copy["symbol_notes"][key])}</p></div></li>')
+    benefits = ''.join(f'<div><dt>{e(title)}</dt><dd>{e(text)}</dd></div>'
+                       for title, text in copy['benefits'])
+    rows = ''
+    for row in guide['matrix']:
+        label = C.featLabel(lang, row['feature']) if row.get('feature') else copy['mma_label']
+        cells = ''.join(f'<td class="cwk-{state}">{e(copy["status"][state])}</td>' for state in row['states'])
+        rows += f'<tr data-cwk-feature="{e(row["id"])}"><th scope="row">{e(label)}</th>{cells}</tr>'
+    return (f'<section class="mahe-cwk" id="hypermig-cwk"><h3>{e(copy["title"])}</h3>'
+            f'<p class="cwk-intro">{e(copy["intro"])}</p><h4>{e(copy["symbols_title"])}</h4>'
+            f'<ul class="mahe-symbol-grid">{symbols}</ul><h4>{e(copy["benefits_title"])}</h4>'
+            f'<dl class="cwk-benefits">{benefits}</dl><h4>{e(copy["matrix_title"])}</h4>'
+            f'<p class="cwk-scroll-hint" id="cwk-scroll-hint">{e(copy["scroll_hint"])}</p>'
+            f'<div class="spectab-scroll cwk-compare" tabindex="0" role="region" '
+            f'aria-label="{e(copy["matrix_title"])}" aria-describedby="cwk-scroll-hint">'
+            f'<table class="spectab"><caption class="sr-only">{e(copy["matrix_title"])}</caption>'
+            f'<thead><tr><th scope="col">{e(copy["matrix_label"])}</th>'
+            '<th scope="col">X CWK</th><th scope="col">HX CWK</th><th scope="col">EX CWK</th><th scope="col">SX CWK</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div><p class="cwk-note">{e(copy["matrix_note"])}</p>'
+            f'<p class="cwk-note">{e(copy["scope_note"])}</p><p class="cwk-tech-note">{e(copy["technical_note"])}</p>'
+            f'<p><a href="{e(guide["source"]["url"])}">{e(copy["source_label"])}</a></p></section>')
 
 
 def front_html(lang, p):
@@ -119,7 +157,9 @@ def front_html(lang, p):
     hl = C.highlightsOf(lang, p)
     out = []
     varianten = C.hlVariants(lang, p)
-    if varianten:
+    if p['id'] == 'hypermig-x':
+        out.append(cwk_benefits(lang))
+    elif varianten:
         # Der Hersteller stellt die Ausfuehrungen nebeneinander, jede mit Bild
         # und eigener Liste. Genau so hier – eine gemeinsame Liste wuerde die
         # schwaecheren Ausfuehrungen zu gut aussehen lassen.
@@ -226,6 +266,8 @@ def spec_html(lang, p):
         )
         if t["note"]:
             out.append(f'<p class="spectab-note"><span aria-hidden="true">*</span> {e(t["note"])}</p>')
+        if t.get('source'):
+            out.append(f'<p class="spectab-note"><a href="{e(t["source"])}">{e(C.HYPERMIG_CWK[lang]["source_label"])}</a></p>')
 
     rest = C.specRest(p)
     if rest:

@@ -119,6 +119,8 @@ def sammeln():
                 zusatz = 'HyperMIG X / HX TWIN'
             elif pid == 'hypermig-twin' and u.endswith('/HyperMIG_X_TWIN_10_DE.pdf'):
                 zusatz = 'HyperMIG HX TWIN'
+            elif pid == 'hypermig-x' and u.endswith('/HyperMIG_HX_EX_SX_CWK.pdf'):
+                zusatz = 'HyperMIG X / HX / EX / SX CWK'
             if u in gesehen:
                 continue
             gesehen.add(u)

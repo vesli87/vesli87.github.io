@@ -1,15 +1,15 @@
 {
  "_": "Symbole je Geraet, abgelesen aus dem MAHE-Produktkatalog 2023 (Katalog_2023_opt.pdf). Die Gruppen und die Reihenfolge folgen dem Katalog. Wer etwas ergaenzt, schlaegt dort nach - frueher wurden die Symbole aus dem Produkttext geraten, und das ging mehrfach daneben.",
  "hypermig-x": {
-  "quelle": "S. 5, 8-19",
+  "quelle": "CWK-Datenblatt 08/2026 S. 1/3/5/7 (Varianten und Optionen separat erklärt); zusätzliche WIG/MMA-Symbole gemäss Katalog 2023 S. 5, 8-19.",
   "gruppen": {
    "mig": [
     "mis",
     "puls",
     "doppelpuls",
-    "hyperpuls",
-    "triarc",
     "hyperup",
+    "coldrootforce",
+    "hyperpuls",
     "braze"
    ],
    "wig": [
@@ -401,6 +401,7 @@
     "puls",
     "doppelpuls",
     "hyperpuls",
+    "coldrootforce",
     "hyperup",
     "braze"
    ],

@@ -24,8 +24,18 @@
   "h": 240
  },
  "braze": {
-  "w": 373,
-  "h": 240
+  "w": 296,
+  "h": 188,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   36.6,
+   759.2,
+   110.7,
+   806.4
+  ],
+  "file": "cwk-2026-braze.webp"
  },
  "clean": {
   "w": 375,
@@ -36,8 +46,18 @@
   "h": 240
  },
  "doppelpuls": {
-  "w": 289,
-  "h": 240
+  "w": 300,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   213.6,
+   704.0,
+   288.8,
+   751.4
+  ],
+  "file": "cwk-2026-doppelpuls.webp"
  },
  "galv": {
   "w": 371,
@@ -64,16 +84,36 @@
   "h": 240
  },
  "hyperpuls": {
-  "w": 289,
-  "h": 240
+  "w": 303,
+  "h": 190,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   481.8,
+   704.7,
+   557.6,
+   752.4
+  ],
+  "file": "cwk-2026-hyperpuls.webp"
  },
  "hyperspot": {
   "w": 375,
   "h": 240
  },
  "hyperup": {
-  "w": 277,
-  "h": 240
+  "w": 299,
+  "h": 190,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   304.3,
+   704.3,
+   379.3,
+   752.0
+  ],
+  "file": "cwk-2026-hyperup.webp"
  },
  "lfpuls": {
   "w": 373,
@@ -88,8 +128,18 @@
   "h": 240
  },
  "mis": {
-  "w": 372,
-  "h": 240
+  "w": 301,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   36.5,
+   704.8,
+   111.8,
+   752.2
+  ],
+  "file": "cwk-2026-mis.webp"
  },
  "mixtig": {
   "w": 374,
@@ -100,11 +150,91 @@
   "h": 240
  },
  "puls": {
-  "w": 289,
-  "h": 240
+  "w": 301,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   126.0,
+   705.1,
+   201.1,
+   752.5
+  ],
+  "file": "cwk-2026-puls.webp"
  },
  "triarc": {
   "w": 373,
   "h": 240
+ },
+ "coldrootforce": {
+  "w": 293,
+  "h": 187,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   395.8,
+   705.0,
+   469.2,
+   751.8
+  ],
+  "file": "cwk-2026-coldrootforce.webp"
+ },
+ "speedcontrol": {
+  "w": 293,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   125.4,
+   758.9,
+   198.8,
+   806.4
+  ],
+  "file": "cwk-2026-speedcontrol.webp"
+ },
+ "fourroll": {
+  "w": 294,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   215.0,
+   758.9,
+   288.5,
+   806.4
+  ],
+  "file": "cwk-2026-fourroll.webp"
+ },
+ "remote": {
+  "w": 300,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   303.1,
+   758.8,
+   378.1,
+   806.4
+  ],
+  "file": "cwk-2026-remote.webp"
+ },
+ "spool15": {
+  "w": 294,
+  "h": 189,
+  "source": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+  "source_sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+  "page": 1,
+  "box": [
+   394.6,
+   758.9,
+   468.1,
+   806.4
+  ],
+  "file": "cwk-2026-spool15.webp"
  }
 }

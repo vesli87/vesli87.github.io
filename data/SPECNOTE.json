@@ -1,9 +1,9 @@
 {
  "_": "Fussnoten unter den MAHE-Tabellen, Schluessel wie in build/mahe_specs.json. Der Stern steht in den Spaltentiteln (z. B. 450*).",
  "hypermig": {
-  "de": "Nur als WWK-Variante erhältlich.",
-  "fr": "Disponible uniquement en version WWK.",
-  "it": "Disponibile solo nella variante WWK."
+  "de": "Allgemeine HyperMIG-X-Tabelle der MAHE-Webseite. Für CWK X/HX/SX und EX gelten die getrennten Tabellen aus dem aktuellen CWK-Datenblatt oben. Mit * markierte Stromstufen sind nur als WWK erhältlich.",
+  "fr": "Tableau général HyperMIG X du site MAHE. Pour CWK X/HX/SX et EX, consultez les tableaux séparés de la fiche CWK actuelle ci-dessus. Les courants marqués d’un * sont disponibles uniquement en WWK.",
+  "it": "Tabella generale HyperMIG X del sito MAHE. Per CWK X/HX/SX ed EX valgono le tabelle separate della scheda CWK attuale riportate sopra. Le correnti contrassegnate con * sono disponibili solo in versione WWK."
  },
  "hypertig": {
   "de": "Nur für Länder ausserhalb der EU verfügbar.",
@@ -24,5 +24,15 @@
   "de": "Modelle 300, 350 und 400 gemäss MAHE-Tabelle. Ein Strich bedeutet: In dieser Tabellenzelle veröffentlicht MAHE keinen Wert. Freischaltungen, Draht-/Gasausrüstung und Panel werden für die konkrete Anlage bestätigt. Herstellerabbildung der Anlage: HX-Ausführung; das neue grafische X-Panel ist separat dargestellt.",
   "fr": "Modèles 300, 350 et 400 selon le tableau MAHE. Un tiret indique que MAHE ne publie aucune valeur dans cette cellule. Activations, équipement fil/gaz et panneau sont confirmés pour le poste choisi. L’illustration du fabricant montre la version HX ; le nouveau panneau graphique X est présenté séparément.",
   "it": "Modelli 300, 350 e 400 secondo la tabella MAHE. Un trattino indica che MAHE non pubblica un valore nella cella. Abilitazioni, dotazione filo/gas e pannello vengono confermati per la macchina scelta. L’immagine del produttore mostra la versione HX; il nuovo pannello grafico X è presentato separatamente."
+ },
+ "hypermig-cwk-x-hx-sx": {
+  "de": "CWK-Modelle X, HX und SX gemäss identischen Tabellen auf den PDF-Seiten 2, 4 und 8. Ein Strich bedeutet, dass diese Tabellenzelle keinen Wert nennt. Die Verfahrensausstattung ist getrennt von den elektrischen Daten zu wählen.",
+  "fr": "Modèles CWK X, HX et SX selon les tableaux identiques des pages PDF 2, 4 et 8. Un tiret indique une cellule sans valeur publiée. L’équipement en procédés est à choisir séparément des caractéristiques électriques.",
+  "it": "Modelli CWK X, HX e SX secondo le tabelle identiche delle pagine PDF 2, 4 e 8. Un trattino indica una cella senza valore pubblicato. La dotazione dei procedimenti va scelta separatamente dai dati elettrici."
+ },
+ "hypermig-cwk-ex": {
+  "de": "EX CWK gemäss PDF-Seite 6. Die Optionssterne für Verfahren stehen im Ausstattungsvergleich. Die Gewichtszeile des Originals nennt keine Einheit und wird hier bis zur Klärung nicht als technische Gewichtsangabe übernommen.",
+  "fr": "EX CWK selon la page PDF 6. Les astérisques d’option des procédés figurent dans le comparatif d’équipement. La ligne de poids de l’original n’indique aucune unité et n’est pas reprise ici comme donnée de poids avant clarification.",
+  "it": "EX CWK secondo la pagina PDF 6. Gli asterischi di opzione dei procedimenti figurano nel confronto della dotazione. La riga del peso nell’originale non indica un’unità e non viene ripresa come dato di peso prima del chiarimento."
  }
 }

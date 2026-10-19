@@ -457,11 +457,15 @@ BUYING_GUIDE = _load("BUYING_GUIDE")
 SUBCATEGORY_GUIDES = _load("SUBCATEGORY_GUIDES")
 PRODUCT_GUIDES = _load("PRODUCT_GUIDES")
 PANEL_GUIDES = _load("PANEL_GUIDES")
+HYPERMIG_CWK = _load("HYPERMIG_CWK")
 GUIDE_LINKS = _load("GUIDE_LINKS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
 MAHE_SPECS = json.loads((BUILD / "mahe_specs.json").read_text("utf-8"))
+# Separately reviewed PDF tables survive refreshes of the HTML/AJAX scraper.
+MAHE_CWK_SPECS = json.loads((BUILD / "mahe_cwk_specs.json").read_text("utf-8"))
+MAHE_SPECS.update(MAHE_CWK_SPECS)
 
 EX = json.loads((BUILD / "i18n_extra.json").read_text("utf-8"))
 
@@ -615,13 +619,17 @@ def specTables(lang, p):
         keys = [c["key"] for c in t["columns"]]
         rows = []
         for r in t["rows"]:
+            if r.get('model') in t.get('unconfirmed_rows', []):
+                continue
             k = _specK(r.get("model", ""))
             lab = SPECROW.get(k, {}).get(lang, k)
             rows.append([lab] + [_specV(r.get(c, "")) for c in keys])
         note = SPECNOTE.get(key) or {}
-        out.append({"title": t.get("title", ""),
+        title = HYPERMIG_CWK[lang]['general_table_title'] if key == 'hypermig' else t.get('title', '')
+        out.append({"title": title,
                     "cols": [c["title"] for c in t["columns"]],
                     "rows": rows,
+                    "source": t.get('source', {}).get('url', ''),
                     "note": note.get(lang) or note.get(DEFAULT_LANG, "")})
     return out
 
@@ -849,6 +857,8 @@ def highlightsOf(lang, p):
     dadurch stand an der Omega AX syn (MAHE: 5 Punkte) derselbe Text wie an der
     Omega AX pro (10 Punkte) und an allen anderen WIG-AC/DC-Geraeten.
     """
+    if p['id'] == 'hypermig-x':
+        return HYPERMIG_CWK[lang]['family_highlights']
     dev = HL_DEVICE.get(p["id"])
     if dev:
         return dev.get(lang) or dev["de"]
@@ -959,6 +969,20 @@ def panel_text(lang, p):
         if guide:
             out.extend([guide['intro'], guide['note']])
             out.extend(text for pair in guide['sections'] for text in pair)
+    return ' '.join(out)
+
+
+def cwk_text(lang, p):
+    if p['id'] != 'hypermig-x':
+        return ''
+    copy = HYPERMIG_CWK[lang]
+    out = [copy['title'], copy['intro'], copy['matrix_note'], copy['scope_note'], copy['technical_note']]
+    for key in HYPERMIG_CWK['symbols']:
+        out.extend([featLabel(lang, key), copy['symbol_notes'][key]])
+    out.extend(text for pair in copy['benefits'] for text in pair)
+    for row in HYPERMIG_CWK['matrix']:
+        out.append(featLabel(lang, row['feature']) if row.get('feature') else copy['mma_label'])
+        out.extend(f'{variant} {copy["status"][state]}' for variant, state in zip(('X', 'HX', 'EX', 'SX'), row['states']))
     return ' '.join(out)
 
 
@@ -1177,6 +1201,36 @@ def validate_editorial_guides():
             targets = [editorial_target(lang, ref)[1] for ref in refs]
             if len(targets) != len(set(targets)):
                 raise ValueError('Duplicate editorial link destination')
+
+    if set(HYPERMIG_CWK) != {'source', 'symbols', 'matrix', *LANGS}:
+        raise ValueError('Incomplete CWK source/language structure')
+    if len(HYPERMIG_CWK['symbols']) != 11 or len(set(HYPERMIG_CWK['symbols'])) != 11 or any(
+            key not in FEAT for key in HYPERMIG_CWK['symbols']):
+        raise ValueError('CWK needs the eleven distinct manufacturer symbols')
+    states = {'listed', 'option', 'not_listed'}
+    if len({row['id'] for row in HYPERMIG_CWK['matrix']}) != len(HYPERMIG_CWK['matrix']):
+        raise ValueError('Duplicate CWK matrix row')
+    for row in HYPERMIG_CWK['matrix']:
+        if len(row['states']) != 4 or set(row['states']) - states or row.get('feature', 'mis') not in FEAT:
+            raise ValueError('Invalid CWK availability matrix')
+    cwk_strings = {'title', 'intro', 'symbols_title', 'benefits_title', 'matrix_title',
+                   'matrix_label', 'mma_label', 'matrix_note', 'scope_note', 'technical_note',
+                   'source_label', 'scroll_hint', 'summary_note', 'summary_link', 'general_table_title'}
+    for lang in LANGS:
+        copy = HYPERMIG_CWK[lang]
+        if set(copy) != cwk_strings | {'symbol_notes', 'status', 'benefits', 'family_highlights'}:
+            raise ValueError(f'Incomplete CWK language: {lang}')
+        if set(copy['symbol_notes']) != set(HYPERMIG_CWK['symbols']) or set(copy['status']) != states:
+            raise ValueError(f'Incomplete CWK symbols/status translation: {lang}')
+        for key in cwk_strings:
+            if not isinstance(copy[key], str) or not copy[key].strip():
+                raise ValueError(f'Empty CWK text: {lang}/{key}')
+        if any(not isinstance(value, str) or not value.strip()
+               for value in [*copy['symbol_notes'].values(), *copy['status'].values(), *copy['family_highlights']]):
+            raise ValueError(f'Empty CWK description: {lang}')
+        if not copy['benefits'] or any(len(pair) != 2 or any(not text.strip() for text in pair)
+                                       for pair in copy['benefits']):
+            raise ValueError(f'Incomplete CWK benefits: {lang}')
 
     for key, guide in PANEL_GUIDES.items():
         if key not in FP or set(guide) != {'sources', *LANGS}:

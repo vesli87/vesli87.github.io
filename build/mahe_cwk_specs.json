@@ -1,0 +1,279 @@
+{
+ "hypermig-cwk-x-hx-sx": {
+  "table_id": "PDF-CWK-X-HX-SX",
+  "title": "HyperMIG X / HX / SX CWK",
+  "seite": "HyperMIG X / HX / SX CWK",
+  "columns": [
+   {
+    "key": "300",
+    "title": "300"
+   },
+   {
+    "key": "350",
+    "title": "350"
+   },
+   {
+    "key": "400",
+    "title": "400"
+   }
+  ],
+  "rows": [
+   {
+    "model": "Upgrade",
+    "300": "max 400A",
+    "350": "max 400A",
+    "400": "-"
+   },
+   {
+    "model": "Netzspannung",
+    "300": "3x400V, 50/60Hz",
+    "350": "3x400V, 50/60Hz",
+    "400": "3x400V, 50/60Hz"
+   },
+   {
+    "model": "Netzabsicherung (träge)",
+    "300": "20A",
+    "350": "20A",
+    "400": "20A"
+   },
+   {
+    "model": "Leerlaufspannung",
+    "300": "105V",
+    "350": "105V",
+    "400": "105V"
+   },
+   {
+    "model": "Effektiver Eingangsstrom",
+    "300": "19A",
+    "350": "19A",
+    "400": "19A"
+   },
+   {
+    "model": "Schweißstrombereich",
+    "300": "10 - 300A",
+    "350": "10 - 350A",
+    "400": "10 - 400A"
+   },
+   {
+    "model": "Einschaltdauer bei max. Strom @40°C",
+    "300": "",
+    "350": "",
+    "400": "45% / 400A"
+   },
+   {
+    "model": "Strom bei 60% ED @40°C",
+    "300": "",
+    "350": "350A",
+    "400": "360A"
+   },
+   {
+    "model": "Strom bei 100% ED @40°C",
+    "300": "300A",
+    "350": "300A",
+    "400": "300A"
+   },
+   {
+    "model": "Effektivität",
+    "300": "86%",
+    "350": "86%",
+    "400": "86%"
+   },
+   {
+    "model": "Leistungsaufnahme im Leerlaufz.",
+    "300": "43W",
+    "350": "43W",
+    "400": "43W"
+   },
+   {
+    "model": "Leistungsfaktor",
+    "300": "0.95",
+    "350": "0.95",
+    "400": "0.95"
+   },
+   {
+    "model": "Empf. Generatorleistung",
+    "300": "17kVA",
+    "350": "21kVA",
+    "400": "25kVA"
+   },
+   {
+    "model": "Maße CWK (HxBxL)",
+    "300": "930x512x864mm",
+    "350": "930x512x864mm",
+    "400": "930x512x864mm"
+   },
+   {
+    "model": "Gewicht CWK",
+    "300": "70kg",
+    "350": "70kg",
+    "400": "70kg"
+   },
+   {
+    "model": "Schutzklasse",
+    "300": "IP23",
+    "350": "IP23",
+    "400": "IP23"
+   },
+   {
+    "model": "Konformitätszeichen",
+    "300": "CE",
+    "350": "CE",
+    "400": "CE"
+   },
+   {
+    "model": "Sicherungsklasse",
+    "300": "S",
+    "350": "S",
+    "400": "S"
+   }
+  ],
+  "source": {
+   "url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+   "sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+   "pages": [
+    2,
+    4,
+    8
+   ]
+  }
+ },
+ "hypermig-cwk-ex": {
+  "table_id": "PDF-CWK-EX",
+  "title": "HyperMIG EX CWK",
+  "seite": "HyperMIG EX CWK",
+  "columns": [
+   {
+    "key": "300",
+    "title": "300"
+   },
+   {
+    "key": "350",
+    "title": "350"
+   },
+   {
+    "key": "400",
+    "title": "400"
+   }
+  ],
+  "rows": [
+   {
+    "model": "Upgrade",
+    "300": "-",
+    "350": "max 400A",
+    "400": "-"
+   },
+   {
+    "model": "Netzspannung",
+    "300": "3x400V, 50/60Hz",
+    "350": "3x400V, 50/60Hz",
+    "400": "3x400V, 50/60Hz"
+   },
+   {
+    "model": "Netzabsicherung (träge)",
+    "300": "16A",
+    "350": "25A",
+    "400": "25A"
+   },
+   {
+    "model": "Leerlaufspannung",
+    "300": "105V",
+    "350": "105V",
+    "400": "105V"
+   },
+   {
+    "model": "Effektiver Eingangsstrom",
+    "300": "12,5A",
+    "350": "19A",
+    "400": "19A"
+   },
+   {
+    "model": "Schweißstrombereich",
+    "300": "10 - 300A",
+    "350": "10 - 350A",
+    "400": "10 - 400A"
+   },
+   {
+    "model": "Einschaltdauer bei max. Strom @40°C",
+    "300": "40% / 300A",
+    "350": "",
+    "400": "45% / 400A"
+   },
+   {
+    "model": "Strom bei 60% ED @40°C",
+    "300": "240A",
+    "350": "350A",
+    "400": "360A"
+   },
+   {
+    "model": "Strom bei 100% ED @40°C",
+    "300": "180A",
+    "350": "300A",
+    "400": "300A"
+   },
+   {
+    "model": "Effektivität",
+    "300": "86%",
+    "350": "87%",
+    "400": "87%"
+   },
+   {
+    "model": "Leistungsaufnahme im Leerlaufz.",
+    "300": "20W",
+    "350": "43W",
+    "400": "43W"
+   },
+   {
+    "model": "Leistungsfaktor",
+    "300": "0,73",
+    "350": "0,95",
+    "400": "0,95"
+   },
+   {
+    "model": "Empf. Generatorleistung",
+    "300": "22kVA",
+    "350": "21kVA",
+    "400": "25kVA"
+   },
+   {
+    "model": "Maße CWK (HxBxL)",
+    "300": "930x512x864mm",
+    "350": "930x512x864mm",
+    "400": "930x512x864mm"
+   },
+   {
+    "model": "Gewicht CWK",
+    "300": "61",
+    "350": "70",
+    "400": "70"
+   },
+   {
+    "model": "Schutzklasse",
+    "300": "IP23",
+    "350": "IP23",
+    "400": "IP23"
+   },
+   {
+    "model": "Konformitätszeichen",
+    "300": "CE",
+    "350": "CE",
+    "400": "CE"
+   },
+   {
+    "model": "Sicherungsklasse",
+    "300": "S",
+    "350": "S",
+    "400": "S"
+   }
+  ],
+  "source": {
+   "url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+   "sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+   "pages": [
+    6
+   ]
+  },
+  "unconfirmed_rows": [
+   "Gewicht CWK"
+  ]
+ }
+}

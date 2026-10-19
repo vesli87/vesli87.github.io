@@ -24,11 +24,61 @@ HyperMIG X umfasst kompakte und getrennte Ausführungen mit Luft- oder Wasserkü
 - Für zwei vorbereitete Schweissdrähte vergleichen Sie die separate HyperMIG-TWIN-Ausführung. Für wiederkehrende Aufgaben bietet das grafische X-Panel 99 JOB-Speicher; verfügbare Verfahren und Optionen werden für die konkrete Anlage bestätigt.
 Weiterführend: [MAHE HyperMIG TWIN](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/)
 Weiterführend: [Verfahren](https://www.ves-tech.ch/verfahren/)
-Besonderheiten: MIG/MAG-Schweissen & MIG-Löten; HyperForce, HyperRoot, HyperCold; HyperPuls & HyperSpeedPuls; Doppelpuls mit WIG-Naht-Optik; MMA-Elektrode & Fugenhobeln; WIG Lift Arc; Digitale Synergy-Regelung; Spritzerfreier Lichtbogen; 4-Rollen-Antrieb; Fernbedienung anschliessbar; JOB-Modus mit 99 Programmen; Upgradefähig · 100 % recycelbar.
+Besonderheiten: Digitale Synergiesteuerung; 4-Rollenantrieb und Anschlussmöglichkeit für eine Fernbedienung; Pulsverfahren und Hyper-Programme je nach Panel und Freischaltung; CWK mit Wasserkühlung und automatischer Wasserpumpensteuerung; Getrennte CWK-Daten für X/HX/SX und EX; Ausführung im Angebot festlegen.
 Fronteingabesysteme: X: Grafisches Bedienpanel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten HyperPuls-Schweissen HyperForce-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperUP-Schweissen MMA-Elektrodenschweissen WIG Lift Arc und Fugenhobeln 99 Programme im JOB-Modus Das grafische X-Bedienpanel verbindet einen Farb-Grafikbildschirm mit vier Funktionstasten und einem zentralen Dreh-/Drücksteller. MAHE führt es für HyperMIG X und HyperMIG TWIN auf. Die Bildschirmführung bündelt Programmauswahl, Schweisswerte und JOB-Verwaltung; die Beschriftung über den Tasten zeigt die jeweilige Funktion. Ausstattung gezielt festlegen: Die MAHE-Produktseite nennt den möglichen Funktionsumfang des Panels; die Anleitung bezeichnet Doppelpuls als Option. Verfügbare Verfahren und Freischaltungen werden deshalb für die gewählte Geräteausführung im Angebot bestätigt. Eine Nachrüstung bestehender EX-, SX- oder HX-Anlagen ist anhand von Modell, Seriennummer und Softwarestand zu prüfen. Programm und aktiver Drahtvorschub Die Informationsleiste zeigt Benutzer, Drahtwerkstoff, Schutzgas und Drahtdurchmesser sowie Datum und Uhrzeit. Bei mehreren installierten Drahtvorschüben wird der aktive Vorschub angezeigt. Das unterstützt die Kontrolle, ob Programm und eingelegter Draht zum Auftrag passen. Vier MIG-Einstellungen auf einen Blick Die obere Einstellleiste enthält Lichtbogenlängenkorrektur, Materialdicke in mm, Drahtgeschwindigkeit in m/min und Lichtbogendynamik. Drehen verändert den gewählten Wert, Drücken wechselt zum nächsten Parameter. Lichtbogenlängenkorrektur und Materialdicke stehen im manuellen MIG-Modus gemäss Anleitung nicht zur Verfügung. Sollwerte, Messwerte und HOLD Die Hauptanzeige stellt Spannung in V und Strom in A gross dar. Vor dem Schweissen zeigt sie die Sollwerte, während des Schweissens die aktuellen Messwerte. Danach bleiben die letzten Messwerte als HOLD sichtbar, bis das Panel bedient oder ein neuer Schweissvorgang gestartet wird. Betriebsarten und Vorbereitung Über die Betriebsartenleiste werden 2-Takt, 4-Takt sowie Punkt- und Intervallbetrieb gewählt. Manueller Drahteinzug und Gastest sind dort ebenfalls erreichbar. Für die synergische Programmauswahl werden Drahtwerkstoff, Drahtdurchmesser und Schutzgas festgelegt. Verfahren und Feinabstimmung Die Verfahrensauswahl umfasst die für die konkrete Anlage verfügbaren MIG/MAG-, Puls- und Hyper-Verfahren sowie MMA, WIG Lift Arc und Kohlelichtbogenfugenhobeln. MENU erschliesst verfahrensabhängige Parameter wie Gasvor- und Gasnachströmzeit, Startverhalten und Kraterfüllung. Bei freigeschaltetem Doppelpuls gehören Frequenz und Amplitude dazu. 99 JOB-Speicher für wiederkehrende Arbeiten Schweisseinstellungen lassen sich in 99 internen Speicherplätzen ablegen, aufrufen und bearbeiten. Eine passende Kombination aus Draht, Gas und Parametern kann so wiederverwendet werden. Die Anleitung weist ausdrücklich darauf hin, dass die Schweissbetriebsart, etwa 2-Takt oder 4-Takt, nicht im JOB gespeichert wird und separat gewählt werden muss. Bis zu acht Benutzerprofile Die Anleitung beschreibt bis zu acht Benutzer mit eigenen Einstellungen. Hinzu kommen die Sprachauswahl, Datum und Uhrzeit sowie die Anzeige von Einschalt- und Lichtbogenzeit. Softwarestatus und Seriennummer sind im entsprechenden Menü abrufbar. Die abgebildeten Werte richtig lesen 14,4 V, 45 A, 0,8 mm und 1,7 m/min zeigen einen beispielhaften Einstellzustand. Ebenso bezeichnet Fe-Sg2(mix18) Ø 1,0 mm das im Bild gewählte Draht-/Gasprogramm. Daraus ergeben sich weder Leistungsgrenzen der Maschine noch eine allgemeingültige Schweissempfehlung; massgeblich sind Modell, Werkstoff, Nahtaufgabe und erprobte Parameter. HX: Hyper Front Panel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten HyperPuls-Schweissen HyperForce-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperUP-Schweissen MMA-Elektrodenschweissen WIG Lift Arc und Fugenhobeln 99 Programme im JOB-Modus EX: EcoMIG Front Panel MIS-Schweissen MIG-Löten Hyper Force, Root, Cold MMA-Elektrodenschweissen WIG Lift Arc JOB-Modus mit 99 Programmen EX: EcoPuls Front Panel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten Hyper Force, Root, Cold MMA-Elektrodenschweissen WIG Lift Arc JOB-Modus mit 99 Programmen SX: Steel Front Panel MIS-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperForce-Schweissen WIG-Lift-Arc-Schweissen MMA-Schweissen SX: Steel Puls Front Panel MIS-Schweissen HyperPuls-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperForce-Schweissen HyperUP-Schweissen WIG-Lift-Arc-Schweissen MMA-Schweissen
+HyperMIG CWK: Vorteile und MAHE-Funktionssymbole CWK bezeichnet die kompakte, wassergekühlte Bauform. Das aktuelle MAHE-Datenblatt unterscheidet X, HX, EX und SX mit den Stromstufen 300, 350 und 400. Hier sehen Sie die originalen Herstellersymbole, ihren praktischen Nutzen und die im Dokument gekennzeichneten Optionen. Aufgeführt bedeutet: im CWK-Datenblatt genannt oder durch ein Symbol dargestellt. Bei EX sind Puls, Doppelpuls, WIG und Fugenhobeln mit einem Optionsstern versehen; bei SX HyperPuls und HyperUP. Die Anleitung zum grafischen X-Panel bezeichnet Doppelpuls ebenfalls als Option. Der konkrete Lieferumfang und die Freischaltungen werden im Angebot bestätigt. Nicht aufgeführt bedeutet, dass dieses CWK-Datenblatt die Funktion für die betreffende Variante nicht nennt. Die MAHE-Webseite führt bei SX-Panels zusätzlich WIG Lift Arc auf; diese Ausstattung wird deshalb für das konkrete Gerät geprüft. Die folgende Gegenüberstellung betrifft die CWK-Ausführungen des Dokuments. Auch die elektrischen Daten unterscheiden sich: Für EX CWK nennt das Datenblatt 16 A Netzabsicherung beim Modell 300 und 25 A bei 350/400; für X, HX und SX jeweils 20 A. Die getrennten CWK-Tabellen im Reiter Technische Daten berücksichtigen diese Unterschiede. MIS-Lichtbogen Geregelter MIG/MAG-Lichtbogen zur Verringerung von Spritzern. Draht, Gas und Einstellung beeinflussen das Ergebnis. Puls Impulslichtbogen für kontrollierten Tropfenübergang; bei EX im Datenblatt als Option gekennzeichnet. Doppelpuls Wechselnde Pulsphasen für eine regelmässige Nahtstruktur. Freischaltung und Panelausführung sind bei der Auswahl zu beachten. Steignahtschweissen MAHE-Verfahren für Steignähte. Bei SX nennt das Datenblatt HyperUP als Option. HyperCold / Root / Force Das gemeinsame Symbol steht für HyperCold, HyperRoot und HyperForce: Programme für Wärmeeintrag, Wurzellagen und Einbrand. HyperPuls Dynamischer Pulslichtbogen von MAHE. Die Verfügbarkeit unterscheidet sich zwischen den Panelvarianten. MIG-Löten MIG-Löten für geeignete Grundwerkstoffe und Zusatzdrähte; Auswahl und Nahtvorbereitung richten sich nach der Aufgabe. Drahtgeschwindigkeitsregelung Geschwindigkeitsregelung des Drahtvorschubs. Die gewählte Drahtgeschwindigkeit gehört zur Abstimmung des Schweissprozesses. 4-Rollenantrieb Vier Rollen führen und transportieren den Draht. Rollenprofil, Drahtführung und Anpressdruck werden auf den Draht abgestimmt. Fernbedienung Anschlussmöglichkeit für eine geeignete Fernbedienung. Bedienelement und Verbindung werden passend zur Geräteausführung gewählt. Drahtspule < 15 kg / < 300 mm Das Herstellersymbol nennt eine Drahtspule mit < 15 kg und < 300 mm. Spulenform und Aufnahme müssen zum Vorschub passen. Digitale Synergiesteuerung Die Synergiekennlinie verknüpft die Schweissparameter für die gewählte Kombination aus Werkstoff, Draht und Schutzgas. Die Feinabstimmung erfolgt passend zu Bauteil und Naht. Temperaturgeregelte Lüfter Die Lüfterregelung richtet die Kühlung nach dem thermischen Zustand der Anlage aus. Für den Arbeitseinsatz bleibt die Einschaltdauer der konkreten Stromstufe massgebend. Automatische Wasserpumpensteuerung MAHE nennt für CWK eine automatische Ein-/Ausschaltung der Wasserpumpe. Brenner, Kühlkreislauf und Anschlüsse werden als zusammengehörige Konfiguration ausgewählt. Beleuchteter 4-Rollenantrieb Das Datenblatt beschreibt den Vorschubantrieb als beleuchtet. Die Beleuchtung erleichtert den Blick auf Rollen, Drahtführung und den Einfädelbereich bei Einrichtung und Wartung. MIS-Lichtbogen X Aufgeführt HX Aufgeführt EX Aufgeführt SX Aufgeführt Puls X Aufgeführt HX Aufgeführt EX Option SX Nicht aufgeführt Doppelpuls X Option HX Aufgeführt EX Option SX Nicht aufgeführt HyperPuls X Aufgeführt HX Aufgeführt EX Nicht aufgeführt SX Option Steignahtschweissen X Aufgeführt HX Aufgeführt EX Nicht aufgeführt SX Option HyperCold / Root / Force X Aufgeführt HX Aufgeführt EX Aufgeführt SX Aufgeführt MIG-Löten X Aufgeführt HX Aufgeführt EX Aufgeführt SX Nicht aufgeführt MMA-Elektrodenschweissen X Aufgeführt HX Aufgeführt EX Aufgeführt SX Aufgeführt TIG Lift Arc X Aufgeführt HX Aufgeführt EX Option SX Nicht aufgeführt Fugenhobeln X Aufgeführt HX Aufgeführt EX Option SX Aufgeführt
 Ausstattung: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Kühlung: luftgekühlt oder wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergie / JOB (99).
 
-Technische Daten – HyperMIG CWK:
+Technische Daten – HyperMIG X / HX / SX CWK:
+
+| Modell | 300 | 350 | 400 |
+| --- | --- | --- | --- |
+| Upgrade | max 400A | max 400A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung (träge) | 20A | 20A | 20A |
+| Leerlaufspannung | 105V | 105V | 105V |
+| Effektiver Eingangsstrom | 19A | 19A | 19A |
+| Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A |
+| Einschaltdauer bei max. Strom (40 °C) | – | – | 45% / 400A |
+| Strom bei 60 % ED (40 °C) | – | 350A | 360A |
+| Strom bei 100 % ED (40 °C) | 300A | 300A | 300A |
+| Wirkungsgrad | 86% | 86% | 86% |
+| Leistungsaufnahme im Leerlauf | 43W | 43W | 43W |
+| Leistungsfaktor | 0.95 | 0.95 | 0.95 |
+| Empfohlene Generatorleistung | 17kVA | 21kVA | 25kVA |
+| Masse CWK (H × B × L) | 930x512x864mm | 930x512x864mm | 930x512x864mm |
+| Gewicht CWK | 70kg | 70kg | 70kg |
+| Schutzart | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE |
+| Sicherungsklasse | S | S | S |
+*: CWK-Modelle X, HX und SX gemäss identischen Tabellen auf den PDF-Seiten 2, 4 und 8. Ein Strich bedeutet, dass diese Tabellenzelle keinen Wert nennt. Die Verfahrensausstattung ist getrennt von den elektrischen Daten zu wählen.
+
+
+Technische Daten – HyperMIG EX CWK:
+
+| Modell | 300 | 350 | 400 |
+| --- | --- | --- | --- |
+| Upgrade | – | max 400A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung (träge) | 16A | 25A | 25A |
+| Leerlaufspannung | 105V | 105V | 105V |
+| Effektiver Eingangsstrom | 12,5A | 19A | 19A |
+| Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A |
+| Einschaltdauer bei max. Strom (40 °C) | 40% / 300A | – | 45% / 400A |
+| Strom bei 60 % ED (40 °C) | 240A | 350A | 360A |
+| Strom bei 100 % ED (40 °C) | 180A | 300A | 300A |
+| Wirkungsgrad | 86% | 87% | 87% |
+| Leistungsaufnahme im Leerlauf | 20W | 43W | 43W |
+| Leistungsfaktor | 0,73 | 0,95 | 0,95 |
+| Empfohlene Generatorleistung | 22kVA | 21kVA | 25kVA |
+| Masse CWK (H × B × L) | 930x512x864mm | 930x512x864mm | 930x512x864mm |
+| Schutzart | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE |
+| Sicherungsklasse | S | S | S |
+*: EX CWK gemäss PDF-Seite 6. Die Optionssterne für Verfahren stehen im Ausstattungsvergleich. Die Gewichtszeile des Originals nennt keine Einheit und wird hier bis zur Klärung nicht als technische Gewichtsangabe übernommen.
+
+
+Technische Daten – HyperMIG X: Baureihe und weitere Bauformen:
 
 | Modell | 300 | 350 | 400 | 450* | 500* | 550* | 600* |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -50,7 +100,7 @@ Technische Daten – HyperMIG CWK:
 | Schutzart | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 |
 | Konformitätszeichen | CE | CE | CE | CE | CE | CE | CE |
 | Sicherungsklasse | S | S | S | S | S | S | S |
-*: Nur als WWK-Variante erhältlich.
+*: Allgemeine HyperMIG-X-Tabelle der MAHE-Webseite. Für CWK X/HX/SX und EX gelten die getrennten Tabellen aus dem aktuellen CWK-Datenblatt oben. Mit * markierte Stromstufen sind nur als WWK erhältlich.
 
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.

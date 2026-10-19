@@ -29,7 +29,7 @@
  },
  "/fr/procedes/": {
   "d": "2026-10-19",
-  "h": "0a3aca6f4b7395ac"
+  "h": "a453f6e8eb6e65e5"
  },
  "/fr/produits/": {
   "d": "2026-10-19",
@@ -409,15 +409,15 @@
  },
  "/fr/produits/postes-de-soudage/ecomig/": {
   "d": "2026-10-19",
-  "h": "0996242800b2d275"
+  "h": "612f6193e2cb249a"
  },
  "/fr/produits/postes-de-soudage/hypermig-twin/": {
   "d": "2026-10-19",
-  "h": "2571a53fe7d8b687"
+  "h": "53d5ca7cb22a6ed5"
  },
  "/fr/produits/postes-de-soudage/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "742318008c496471"
+  "h": "a7907e683dcd788b"
  },
  "/fr/produits/postes-de-soudage/hypertig-acdc/": {
   "d": "2026-10-08",
@@ -445,7 +445,7 @@
  },
  "/fr/produits/postes-de-soudage/mms/": {
   "d": "2026-10-19",
-  "h": "b76dba0a0373f897"
+  "h": "89521c8a1f577ed5"
  },
  "/fr/produits/postes-de-soudage/omega-ax/": {
   "d": "2026-10-19",
@@ -529,7 +529,7 @@
  },
  "/it/processi/": {
   "d": "2026-10-19",
-  "h": "e48843b1360a5a14"
+  "h": "a8d79946ff99a6fd"
  },
  "/it/prodotti/": {
   "d": "2026-10-19",
@@ -861,15 +861,15 @@
  },
  "/it/prodotti/saldatrici/ecomig/": {
   "d": "2026-10-19",
-  "h": "920ff3a07764b316"
+  "h": "fa322e30ee8a6abb"
  },
  "/it/prodotti/saldatrici/hypermig-twin/": {
   "d": "2026-10-19",
-  "h": "2efa11bc0db58110"
+  "h": "4c31f52e7483b6f6"
  },
  "/it/prodotti/saldatrici/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "20d9cc010d793142"
+  "h": "832e079f46601daa"
  },
  "/it/prodotti/saldatrici/hypertig-acdc/": {
   "d": "2026-10-08",
@@ -897,7 +897,7 @@
  },
  "/it/prodotti/saldatrici/mms/": {
   "d": "2026-10-19",
-  "h": "fddb1348c87124bd"
+  "h": "e3d2f3e09757f54e"
  },
  "/it/prodotti/saldatrici/omega-ax/": {
   "d": "2026-10-19",
@@ -1125,15 +1125,15 @@
  },
  "/produkte/schweissgeraete/ecomig/": {
   "d": "2026-10-19",
-  "h": "9481961a53c70c9c"
+  "h": "dc6fef8f2fc0734b"
  },
  "/produkte/schweissgeraete/hypermig-twin/": {
   "d": "2026-10-19",
-  "h": "42e2e8725e53fd40"
+  "h": "80e37fe8306a1898"
  },
  "/produkte/schweissgeraete/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "0692c67853a8f52a"
+  "h": "93ce6042cf6bf5b6"
  },
  "/produkte/schweissgeraete/hypertig-acdc/": {
   "d": "2026-10-08",
@@ -1161,7 +1161,7 @@
  },
  "/produkte/schweissgeraete/mms/": {
   "d": "2026-10-19",
-  "h": "5b416c4fa2ca41d4"
+  "h": "26b707a2698070f6"
  },
  "/produkte/schweissgeraete/omega-ax/": {
   "d": "2026-10-19",
@@ -1413,6 +1413,6 @@
  },
  "/verfahren/": {
   "d": "2026-10-19",
-  "h": "ee38863b0607e4be"
+  "h": "53ad9c4b7366cb1e"
  }
 }

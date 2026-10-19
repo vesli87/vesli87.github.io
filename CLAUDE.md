@@ -28,6 +28,7 @@ Bearbeitet werden also:
 | Besonderheiten eines Geräts | `data/HL_DEVICE.json` (Herstellerangaben, DE/FR/IT; dokumentierte Sprachkorrekturen in `build/mahe_copy_edits.json`) |
 | Besonderheiten eines Frontpanels | `data/PANEL_HL_DEVICE.json` (ebenso) |
 | Ausführliche Panelbedienung | `data/PANEL_GUIDES.json` (DE/FR/IT, mit Herstellerquellen) |
+| CWK-Vorteile, Originalsymbole und Optionsvergleich | `data/HYPERMIG_CWK.json`, `build/mahe_cwk_symbols.json`, `build/mahe_cwk_specs.json` |
 | Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |

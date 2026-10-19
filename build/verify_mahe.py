@@ -10,7 +10,7 @@ Geprüft wird beides:
 
 * die Besonderheiten aus data/HL_DEVICE.json und data/PANEL_HL_DEVICE.json
 * die technischen Daten, also jede Zelle jeder Tabelle, die eine Produktseite
-  zeigt (data/SPECMAP.json → build/mahe_specs.json)
+  zeigt (data/SPECMAP.json → build/mahe_specs.json plus mahe_cwk_specs.json)
 
 Erlaubt sind nur die bewusst vorgenommenen Korrekturen: Schweizer „ss" statt
 „ß" und die Tippfehler von MAHE (Relegung, Syniergie, Reiningen, Funkcion,

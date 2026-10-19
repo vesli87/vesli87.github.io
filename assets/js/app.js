@@ -512,9 +512,7 @@
   /* ================================= Tabs =============================== */
   var tabbar = $('.tabbar');
   if (tabbar) {
-    tabbar.addEventListener('click', function (ev) {
-      var b = ev.target.closest('.tabbtn'); if (!b) return;
-      var name = b.getAttribute('data-tab');
+    function activateTab(name) {
       $$('.tabbtn').forEach(function (x) {
         var on = x.getAttribute('data-tab') === name;
         x.classList.toggle('active', on);
@@ -524,6 +522,22 @@
       $$('.tabpane').forEach(function (p) {
         p.classList.toggle('active', p.id === 'tab-' + name);
       });
+    }
+    function revealHashTab(hash) {
+      if (!hash || hash[0] !== '#') return null;
+      var id;
+      try { id = decodeURIComponent(hash.slice(1)); } catch (err) { return null; }
+      var target = document.getElementById(id);
+      var pane = target && target.closest('.tabpane');
+      if (!pane || pane.classList.contains('active')) return null;
+      var name = pane.id.slice(4);
+      if (!$$('.tabbtn').some(function (button) { return button.getAttribute('data-tab') === name; })) return null;
+      activateTab(name);
+      return target;
+    }
+    tabbar.addEventListener('click', function (ev) {
+      var b = ev.target.closest('.tabbtn'); if (!b) return;
+      activateTab(b.getAttribute('data-tab'));
     });
     tabbar.addEventListener('keydown', function (ev) {
       if (['ArrowRight', 'ArrowLeft', 'Home', 'End'].indexOf(ev.key) < 0) return;
@@ -536,6 +550,16 @@
       if (ev.key === 'End') n = btns.length - 1;
       btns[n].focus(); btns[n].click();
     });
+    document.addEventListener('click', function (ev) {
+      if (ev.defaultPrevented || ev.button > 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      var link = ev.target.closest('a[href^="#"]');
+      if (link) revealHashTab(link.getAttribute('href'));
+    });
+    window.addEventListener('hashchange', function () {
+      var target = revealHashTab(location.hash);
+      if (target) target.scrollIntoView({ block: 'start' });
+    });
+    revealHashTab(location.hash);
   }
 
   /* ================================ Lupe ================================ */

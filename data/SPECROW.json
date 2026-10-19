@@ -120,5 +120,49 @@
  "Upgrade": {
   "fr": "Upgrade",
   "it": "Upgrade"
+ },
+ "Netzabsicherung (träge)": {
+  "de": "Netzabsicherung (träge)",
+  "fr": "Fusible secteur temporisé",
+  "it": "Fusibile di rete ritardato"
+ },
+ "Einschaltdauer bei max. Strom @40°C": {
+  "de": "Einschaltdauer bei max. Strom (40 °C)",
+  "fr": "Facteur de marche au courant maximal à 40 °C",
+  "it": "Ciclo di lavoro alla corrente massima a 40 °C"
+ },
+ "Strom bei 60% ED @40°C": {
+  "de": "Strom bei 60 % ED (40 °C)",
+  "fr": "Courant à 60 % de facteur de marche à 40 °C",
+  "it": "Corrente al 60% del ciclo di lavoro a 40 °C"
+ },
+ "Strom bei 100% ED @40°C": {
+  "de": "Strom bei 100 % ED (40 °C)",
+  "fr": "Courant à 100 % de facteur de marche à 40 °C",
+  "it": "Corrente al 100% del ciclo di lavoro a 40 °C"
+ },
+ "Effektivität": {
+  "de": "Wirkungsgrad",
+  "fr": "Rendement",
+  "it": "Rendimento"
+ },
+ "Leistungsaufnahme im Leerlaufz.": {
+  "de": "Leistungsaufnahme im Leerlauf",
+  "fr": "Puissance absorbée à vide",
+  "it": "Assorbimento a vuoto"
+ },
+ "Leistungsfaktor": {
+  "fr": "Facteur de puissance",
+  "it": "Fattore di potenza"
+ },
+ "Empf. Generatorleistung": {
+  "de": "Empfohlene Generatorleistung",
+  "fr": "Puissance recommandée du groupe électrogène",
+  "it": "Potenza consigliata del generatore"
+ },
+ "Masse CWK (HxBxL)": {
+  "de": "Masse CWK (H × B × L)",
+  "fr": "Dimensions CWK (H × l × L)",
+  "it": "Dimensioni CWK (A × L × P)"
  }
 }

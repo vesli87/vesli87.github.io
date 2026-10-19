@@ -56,6 +56,51 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
 }
 const item = { id: 'beta-dx', name: 'Beta DX', url: '/produkte/schweissgeraete/beta-dx/', img: '', qty: 1 };
 
+function tabFixture(initialHash = '') {
+  const handlers = {};
+  function classes(active) {
+    const values = new Set(active ? ['active'] : []);
+    return { contains: value => values.has(value), toggle(value, on) { if (on) values.add(value); else values.delete(value); } };
+  }
+  const panes = ['feat','tech'].map(name => ({id:'tab-'+name, classList:classes(name === 'tech')}));
+  const buttons = ['feat','tech'].map(name => ({ classList:classes(name === 'tech'),
+    attrs:{'data-tab':name,'aria-selected':String(name === 'tech')},
+    getAttribute(key) { return this.attrs[key]; }, setAttribute(key,value) { this.attrs[key]=value; } }));
+  const target = { closest: selector => selector === '.tabpane' ? panes[0] : null,
+    scrollIntoView() { this.scrolled = true; } };
+  const runtime = app({prepare(context, elements, collections) {
+    elements.set('.tabbar', {addEventListener(type,fn) { handlers[type]=fn; }});
+    collections.set('.tabbtn',buttons); collections.set('.tabpane',panes);
+    context.location.hash=initialHash;
+    context.document.getElementById=id=>id === 'hypermig-cwk' ? target : null;
+  }});
+  return {...runtime,panes,buttons,target,handlers};
+}
+test('comparison anchor opens its hidden product tab before native navigation', () => {
+  const fixture=tabFixture();
+  const link={getAttribute:()=> '#hypermig-cwk'};
+  for(const listener of fixture.events.click) listener({target:{closest:selector=>selector === 'a[href^="#"]' ? link : null}});
+  assert.equal(fixture.panes[0].classList.contains('active'),true);
+  assert.equal(fixture.panes[1].classList.contains('active'),false);
+  assert.equal(fixture.buttons[0].attrs['aria-selected'],'true');
+  assert.equal(fixture.buttons[1].tabIndex,-1);
+});
+test('direct and encoded product fragments reveal the correct tab', () => {
+  const initial=tabFixture('#hypermig%2Dcwk');
+  assert.equal(initial.panes[0].classList.contains('active'),true);
+  const changed=tabFixture();
+  changed.context.location.hash='#hypermig-cwk'; changed.windowEvents.hashchange();
+  assert.equal(changed.target.scrolled,true);
+  assert.equal(changed.panes[0].classList.contains('active'),true);
+});
+test('malformed and unknown fragments leave tab selection unchanged', () => {
+  const fixture=tabFixture();
+  for(const hash of ['#%ZZ','#missing','#<img src=x>']) {
+    fixture.context.location.hash=hash; fixture.windowEvents.hashchange();
+    assert.equal(fixture.panes[1].classList.contains('active'),true);
+  }
+});
+
 test('corrupted and stale cart entries cannot crash startup', () => {
   const { api } = app({ stored: [null, false, 123, {}, { id: '<script>', name: 'x' }, item] });
   assert.equal(api.readCart().length, 1);

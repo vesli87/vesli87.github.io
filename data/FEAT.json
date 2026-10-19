@@ -1,5 +1,5 @@
 {
- "_": "Symbole 1:1 aus dem MAHE-Produktkatalog 2023, ausgepackt mit build/symbols.py. Kein eigener Nachbau - die Kacheln sind die des Herstellers.",
+ "_": "Originale MAHE-Symbole aus Katalog 2023 und CWK-Datenblatt 08/2026. Zuordnung und Grenzen je Variante sind dokumentiert; kein eigener Nachbau.",
  "acdc": {
   "img": "/assets/img/sym/acdc.webp",
   "w": 374,
@@ -49,9 +49,9 @@
   "it": "Active Boost"
  },
  "braze": {
-  "img": "/assets/img/sym/braze.webp",
-  "w": 373,
-  "h": 240,
+  "img": "/assets/img/sym/cwk-2026-braze.webp",
+  "w": 296,
+  "h": 188,
   "de": "MIG-Löten",
   "fr": "Brasage MIG",
   "it": "Brasatura MIG"
@@ -73,9 +73,9 @@
   "it": "Hyper Cold / Root"
  },
  "doppelpuls": {
-  "img": "/assets/img/sym/doppelpuls.webp",
-  "w": 289,
-  "h": 240,
+  "img": "/assets/img/sym/cwk-2026-doppelpuls.webp",
+  "w": 300,
+  "h": 189,
   "de": "Doppelpuls",
   "fr": "Double pulsation",
   "it": "Doppio impulso"
@@ -129,9 +129,9 @@
   "it": "Taglio HSC"
  },
  "hyperpuls": {
-  "img": "/assets/img/sym/hyperpuls.webp",
-  "w": 289,
-  "h": 240,
+  "img": "/assets/img/sym/cwk-2026-hyperpuls.webp",
+  "w": 303,
+  "h": 190,
   "de": "HyperPuls",
   "fr": "Arc HyperPulse",
   "it": "Arco HyperPuls"
@@ -145,9 +145,9 @@
   "it": "HyperSpot"
  },
  "hyperup": {
-  "img": "/assets/img/sym/hyperup.webp",
-  "w": 277,
-  "h": 240,
+  "img": "/assets/img/sym/cwk-2026-hyperup.webp",
+  "w": 299,
+  "h": 190,
   "de": "Steignahtschweissen",
   "fr": "Soudage en position montante",
   "it": "Saldatura in verticale"
@@ -177,9 +177,9 @@
   "it": "Marcatura"
  },
  "mis": {
-  "img": "/assets/img/sym/mis.webp",
-  "w": 372,
-  "h": 240,
+  "img": "/assets/img/sym/cwk-2026-mis.webp",
+  "w": 301,
+  "h": 189,
   "de": "MIS-Lichtbogen",
   "fr": "Arc MIS",
   "it": "Arco MIS"
@@ -201,9 +201,9 @@
   "it": "Lucidatura"
  },
  "puls": {
-  "img": "/assets/img/sym/puls.webp",
-  "w": 289,
-  "h": 240,
+  "img": "/assets/img/sym/cwk-2026-puls.webp",
+  "w": 301,
+  "h": 189,
   "de": "Puls",
   "fr": "Pulsé",
   "it": "Pulsato"
@@ -215,5 +215,45 @@
   "de": "Hyper Cold / Root / Force",
   "fr": "Hyper Cold / Root / Force",
   "it": "Hyper Cold / Root / Force"
+ },
+ "coldrootforce": {
+  "de": "HyperCold / Root / Force",
+  "fr": "HyperCold / Root / Force",
+  "it": "HyperCold / Root / Force",
+  "img": "/assets/img/sym/cwk-2026-coldrootforce.webp",
+  "w": 293,
+  "h": 187
+ },
+ "speedcontrol": {
+  "de": "Drahtgeschwindigkeitsregelung",
+  "fr": "Régulation de la vitesse du fil",
+  "it": "Regolazione della velocità del filo",
+  "img": "/assets/img/sym/cwk-2026-speedcontrol.webp",
+  "w": 293,
+  "h": 189
+ },
+ "fourroll": {
+  "de": "4-Rollenantrieb",
+  "fr": "Entraînement à 4 galets",
+  "it": "Trainafilo a 4 rulli",
+  "img": "/assets/img/sym/cwk-2026-fourroll.webp",
+  "w": 294,
+  "h": 189
+ },
+ "remote": {
+  "de": "Fernbedienung",
+  "fr": "Commande à distance",
+  "it": "Comando a distanza",
+  "img": "/assets/img/sym/cwk-2026-remote.webp",
+  "w": 300,
+  "h": 189
+ },
+ "spool15": {
+  "de": "Drahtspule < 15 kg / < 300 mm",
+  "fr": "Bobine < 15 kg / < 300 mm",
+  "it": "Bobina < 15 kg / < 300 mm",
+  "img": "/assets/img/sym/cwk-2026-spool15.webp",
+  "w": 294,
+  "h": 189
  }
 }

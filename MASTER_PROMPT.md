@@ -165,13 +165,14 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 | `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
 | `UI.json` | 88 UI-Strings × de/fr/it |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
-| `PROC.json` | 7 MAHE-Verfahren |
+| `PROC.json` | 19 Verfahren, Pulsvarianten und Zusatzfunktionen mit Wirkprinzip, Anwendung und Einstellung, DE/FR/IT |
 | `BUYING_GUIDE.json` | Eigene Auswahlhilfen für die fünf Hauptkategorien, DE/FR/IT |
 | `SUBCATEGORY_GUIDES.json` | Eigene Einleitung und 2–3 Auswahlkriterien für alle 21 eigenständigen Unterkategorien, DE/FR/IT; keine zusätzliche Plasma-TIG-Seite |
-| `PRODUCT_GUIDES.json` | Belegte Auswahlhinweise für 24 Produktfamilien, mit Quellenverweisen und vollständigen DE/FR/IT-Texten |
+| `PRODUCT_GUIDES.json` | Belegte Auswahlhinweise für 26 Produktfamilien, mit Quellenverweisen und vollständigen DE/FR/IT-Texten |
 | `GUIDE_LINKS.json` | Typisierte Referenzen auf bestehende Geräte, Kategorien, Unterkategorien, Services und Unternehmensseiten; keine neuen Kompatibilitätszusagen |
 | `DLS.json` | 7 PDF-Links (⚠ `k` ist **nicht** eindeutig — Katalog und EN 1090 heissen beide `PDF`) |
-| `FEAT.json` | 19 Verfahrens-Icons (blaue Kachel `#23457f`, weisses Piktogramm, orange Akzente) |
+| `FEAT.json` | 32 originale MAHE-Symbole mit Herstellerbild, Abmessungen und DE/FR/IT-Beschriftung |
+| `HYPERMIG_CWK.json` | Quellenbelegter CWK-Vorteilsratgeber mit elf Symbolen und Optionsmatrix X/HX/EX/SX, DE/FR/IT |
 | `PANEL_HL_DEVICE.json` | **Besonderheiten je Frontpanel**, wörtlich von MAHE aus dem Tab Fronteingabesysteme, DE/FR/IT |
 | `HL_DEVICE.json` | **Besonderheiten je Gerät**, wörtlich von mahe-online.de, DE/FR/IT — hat Vorrang vor allem anderen |
 | `HL/HL_CLEAN/PANEL_HL.json` | Besonderheiten als Rückfall (Familie / Cleaner / Frontpanel) |
@@ -281,6 +282,39 @@ eine Vorlage, die kein JPEG ist, zusätzlich `Pillow` für den JPEG-Rückfall).
 Beides meldet sich mit einem Satz, wenn es fehlt. `build.py`, `check.py` und
 `audit.py` kommen weiterhin mit der Standardbibliothek aus — nur die
 Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
+
+Seit dem 19.10.2026 importiert `build/symbols.py --cwk <PDF>` elf originale
+Symboltafeln aus `HyperMIG_HX_EX_SX_CWK.pdf` (08/2026, vom Inhaber geliefert).
+Die Revision ist per SHA256 in `build/mahe_cwk_symbols.json` festgelegt. Die fünf
+zusätzlichen Schlüssel sind `coldrootforce`, `speedcontrol`, `fourroll`, `remote`
+und `spool15`; sechs vorhandene Verfahrensbilder haben neue, vollständige
+Dateien `cwk-2026-*.webp`. Alte Katalogdateien bleiben erhalten. Pulse und
+Double-pulse lagen im PDF jeweils über einer zweiten Symbolzeichnung: Der Import
+wählt die letzte bereits vorhandene Originalzeichnung einschliesslich ihres
+Grafikzustands. Es wird kein Piktogramm erfunden; Originaldatei und Marken bleiben
+unverändert. Neue Dateien verhindern eine Auslieferung alter Bilder aus dem Cache.
+Das CWK-Datenblatt zeigt bei der Spule ausdrücklich `< 15 kg` und `< 300 mm`.
+Diese Angabe wird nur im gekennzeichneten CWK-Abschnitt ausgegeben, nicht auf
+TWIN oder andere Gerätebauformen übertragen.
+
+`HYPERMIG_CWK.json` erklärt alle elf Symbole und die Vorteile, zeigt EX-Optionen
+(Puls, Doppelpuls, WIG, Fugenhobeln) und SX-Optionen (HyperPuls, HyperUP).
+Aufgeführt bedeutet keine pauschale Serienausstattung; Doppelpuls ist für das
+grafische X-Panel gemäss Anleitung ebenfalls als Option markiert. Die zusätzliche
+WIG-Lift-Arc-Angabe der SX-Webseite wird gegenüber der fehlenden Nennung im
+CWK-PDF erklärt. Die eigenen Familienmerkmale bleiben entsprechend qualifiziert.
+Ein Sprunglink öffnet bei Bedarf zuerst den zugehörigen Produktreiter; Labels,
+Tabindex und Tastaturbedienung bleiben dabei synchron.
+
+`build/import_cwk_specs.py <PDF>` liest die Tabellen über die tatsächlichen
+Textpositionen. X/HX/SX (PDF-Seiten 2/4/8) werden nur nach vollständiger Gleichheit
+zusammengefasst, EX (Seite 6) bleibt getrennt. Die Snapshots stehen in
+`build/mahe_cwk_specs.json` und werden zusätzlich zu den AJAX-Daten geladen,
+damit ein Scraper-Refresh sie nicht entfernt. EX: 16/25/25 A Netzabsicherung,
+X/HX/SX: jeweils 20 A. EX-Gewichte ohne Einheit bleiben im Rohbeleg erhalten,
+werden aber nicht als Gewichtsangaben veröffentlicht. Der übrige Herstellerwert
+wird unverändert übernommen. Suche, `products.json`, `llms-full.txt`, Quellenlinks
+und Downloads enthalten die neuen Angaben und ihre Grenzen.
 
 ## 6. SEO
 

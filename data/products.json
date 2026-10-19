@@ -43,47 +43,334 @@
    },
    "highlights": {
     "de": [
-     "MIG/MAG-Schweissen & MIG-Löten",
-     "HyperForce, HyperRoot, HyperCold",
-     "HyperPuls & HyperSpeedPuls",
-     "Doppelpuls mit WIG-Naht-Optik",
-     "MMA-Elektrode & Fugenhobeln",
-     "WIG Lift Arc",
-     "Digitale Synergy-Regelung",
-     "Spritzerfreier Lichtbogen",
-     "4-Rollen-Antrieb",
-     "Fernbedienung anschliessbar",
-     "JOB-Modus mit 99 Programmen",
-     "Upgradefähig · 100 % recycelbar"
+     "Digitale Synergiesteuerung",
+     "4-Rollenantrieb und Anschlussmöglichkeit für eine Fernbedienung",
+     "Pulsverfahren und Hyper-Programme je nach Panel und Freischaltung",
+     "CWK mit Wasserkühlung und automatischer Wasserpumpensteuerung",
+     "Getrennte CWK-Daten für X/HX/SX und EX; Ausführung im Angebot festlegen"
     ],
     "fr": [
-     "Soudage MIG/MAG & brasage MIG",
-     "HyperForce, HyperRoot, HyperCold",
-     "HyperPuls & HyperSpeedPuls",
-     "Double pulsation, aspect TIG",
-     "Électrode MMA & gougeage",
-     "TIG Lift Arc",
-     "Régulation Digital Synergy",
-     "Arc sans projections",
-     "Entraînement à 4 galets",
-     "Télécommande raccordable",
-     "Mode JOB, 99 programmes",
-     "Évolutif · 100 % recyclable"
+     "Commande synergique numérique",
+     "Entraînement à 4 galets et possibilité de commande à distance",
+     "Procédés pulsés et programmes Hyper selon le panneau et les activations",
+     "CWK avec refroidissement par eau et commande automatique de la pompe",
+     "Données CWK séparées pour X/HX/SX et EX ; version à préciser dans l’offre"
     ],
     "it": [
-     "Saldatura MIG/MAG & brasatura MIG",
-     "HyperForce, HyperRoot, HyperCold",
-     "HyperPuls & HyperSpeedPuls",
-     "Doppio impulso, estetica TIG",
-     "Elettrodo MMA & scriccatura",
-     "TIG Lift Arc",
-     "Regolazione Digital Synergy",
-     "Arco senza spruzzi",
-     "Trainafilo a 4 rulli",
-     "Telecomando collegabile",
-     "Modalità JOB, 99 programmi",
-     "Aggiornabile · 100% riciclabile"
+     "Comando sinergico digitale",
+     "Trainafilo a 4 rulli e possibilità di comando a distanza",
+     "Procedimenti pulsati e programmi Hyper secondo pannello e abilitazioni",
+     "CWK con raffreddamento ad acqua e comando automatico della pompa",
+     "Dati CWK separati per X/HX/SX ed EX; versione da definire nell’offerta"
     ]
+   },
+   "cwk_comparison": {
+    "source": {
+     "url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+     "sha256": "40d71179203fcce13146da9ebeb4bd785aef88fb2bc941003caca56b88f5fcea",
+     "pages": {
+      "X": 1,
+      "HX": 3,
+      "EX": 5,
+      "SX": 7
+     },
+     "manual_x": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf",
+     "panel_page": "https://mahe-online.de/hypermig/"
+    },
+    "symbols": [
+     "mis",
+     "puls",
+     "doppelpuls",
+     "hyperup",
+     "coldrootforce",
+     "hyperpuls",
+     "braze",
+     "speedcontrol",
+     "fourroll",
+     "remote",
+     "spool15"
+    ],
+    "matrix": [
+     {
+      "id": "mis",
+      "feature": "mis",
+      "states": [
+       "listed",
+       "listed",
+       "listed",
+       "listed"
+      ]
+     },
+     {
+      "id": "puls",
+      "feature": "puls",
+      "states": [
+       "listed",
+       "listed",
+       "option",
+       "not_listed"
+      ]
+     },
+     {
+      "id": "doppelpuls",
+      "feature": "doppelpuls",
+      "states": [
+       "option",
+       "listed",
+       "option",
+       "not_listed"
+      ]
+     },
+     {
+      "id": "hyperpuls",
+      "feature": "hyperpuls",
+      "states": [
+       "listed",
+       "listed",
+       "not_listed",
+       "option"
+      ]
+     },
+     {
+      "id": "hyperup",
+      "feature": "hyperup",
+      "states": [
+       "listed",
+       "listed",
+       "not_listed",
+       "option"
+      ]
+     },
+     {
+      "id": "coldrootforce",
+      "feature": "coldrootforce",
+      "states": [
+       "listed",
+       "listed",
+       "listed",
+       "listed"
+      ]
+     },
+     {
+      "id": "braze",
+      "feature": "braze",
+      "states": [
+       "listed",
+       "listed",
+       "listed",
+       "not_listed"
+      ]
+     },
+     {
+      "id": "mma",
+      "states": [
+       "listed",
+       "listed",
+       "listed",
+       "listed"
+      ]
+     },
+     {
+      "id": "lift",
+      "feature": "lift",
+      "states": [
+       "listed",
+       "listed",
+       "option",
+       "not_listed"
+      ]
+     },
+     {
+      "id": "gouging",
+      "feature": "gouging",
+      "states": [
+       "listed",
+       "listed",
+       "option",
+       "listed"
+      ]
+     }
+    ],
+    "de": {
+     "title": "HyperMIG CWK: Vorteile und MAHE-Funktionssymbole",
+     "intro": "CWK bezeichnet die kompakte, wassergekühlte Bauform. Das aktuelle MAHE-Datenblatt unterscheidet X, HX, EX und SX mit den Stromstufen 300, 350 und 400. Hier sehen Sie die originalen Herstellersymbole, ihren praktischen Nutzen und die im Dokument gekennzeichneten Optionen.",
+     "symbols_title": "Originale MAHE-Symbole verständlich erklärt",
+     "symbol_notes": {
+      "mis": "Geregelter MIG/MAG-Lichtbogen zur Verringerung von Spritzern. Draht, Gas und Einstellung beeinflussen das Ergebnis.",
+      "puls": "Impulslichtbogen für kontrollierten Tropfenübergang; bei EX im Datenblatt als Option gekennzeichnet.",
+      "doppelpuls": "Wechselnde Pulsphasen für eine regelmässige Nahtstruktur. Freischaltung und Panelausführung sind bei der Auswahl zu beachten.",
+      "hyperup": "MAHE-Verfahren für Steignähte. Bei SX nennt das Datenblatt HyperUP als Option.",
+      "coldrootforce": "Das gemeinsame Symbol steht für HyperCold, HyperRoot und HyperForce: Programme für Wärmeeintrag, Wurzellagen und Einbrand.",
+      "hyperpuls": "Dynamischer Pulslichtbogen von MAHE. Die Verfügbarkeit unterscheidet sich zwischen den Panelvarianten.",
+      "braze": "MIG-Löten für geeignete Grundwerkstoffe und Zusatzdrähte; Auswahl und Nahtvorbereitung richten sich nach der Aufgabe.",
+      "speedcontrol": "Geschwindigkeitsregelung des Drahtvorschubs. Die gewählte Drahtgeschwindigkeit gehört zur Abstimmung des Schweissprozesses.",
+      "fourroll": "Vier Rollen führen und transportieren den Draht. Rollenprofil, Drahtführung und Anpressdruck werden auf den Draht abgestimmt.",
+      "remote": "Anschlussmöglichkeit für eine geeignete Fernbedienung. Bedienelement und Verbindung werden passend zur Geräteausführung gewählt.",
+      "spool15": "Das Herstellersymbol nennt eine Drahtspule mit < 15 kg und < 300 mm. Spulenform und Aufnahme müssen zum Vorschub passen."
+     },
+     "benefits_title": "Weitere Vorteile der CWK-Ausführung",
+     "benefits": [
+      [
+       "Digitale Synergiesteuerung",
+       "Die Synergiekennlinie verknüpft die Schweissparameter für die gewählte Kombination aus Werkstoff, Draht und Schutzgas. Die Feinabstimmung erfolgt passend zu Bauteil und Naht."
+      ],
+      [
+       "Temperaturgeregelte Lüfter",
+       "Die Lüfterregelung richtet die Kühlung nach dem thermischen Zustand der Anlage aus. Für den Arbeitseinsatz bleibt die Einschaltdauer der konkreten Stromstufe massgebend."
+      ],
+      [
+       "Automatische Wasserpumpensteuerung",
+       "MAHE nennt für CWK eine automatische Ein-/Ausschaltung der Wasserpumpe. Brenner, Kühlkreislauf und Anschlüsse werden als zusammengehörige Konfiguration ausgewählt."
+      ],
+      [
+       "Beleuchteter 4-Rollenantrieb",
+       "Das Datenblatt beschreibt den Vorschubantrieb als beleuchtet. Die Beleuchtung erleichtert den Blick auf Rollen, Drahtführung und den Einfädelbereich bei Einrichtung und Wartung."
+      ]
+     ],
+     "matrix_title": "Verfahren und Optionen nach CWK-Variante",
+     "matrix_label": "Funktion",
+     "status": {
+      "listed": "Aufgeführt",
+      "option": "Option",
+      "not_listed": "Nicht aufgeführt"
+     },
+     "mma_label": "MMA-Elektrodenschweissen",
+     "matrix_note": "Aufgeführt bedeutet: im CWK-Datenblatt genannt oder durch ein Symbol dargestellt. Bei EX sind Puls, Doppelpuls, WIG und Fugenhobeln mit einem Optionsstern versehen; bei SX HyperPuls und HyperUP. Die Anleitung zum grafischen X-Panel bezeichnet Doppelpuls ebenfalls als Option. Der konkrete Lieferumfang und die Freischaltungen werden im Angebot bestätigt.",
+     "scope_note": "Nicht aufgeführt bedeutet, dass dieses CWK-Datenblatt die Funktion für die betreffende Variante nicht nennt. Die MAHE-Webseite führt bei SX-Panels zusätzlich WIG Lift Arc auf; diese Ausstattung wird deshalb für das konkrete Gerät geprüft. Die folgende Gegenüberstellung betrifft die CWK-Ausführungen des Dokuments.",
+     "technical_note": "Auch die elektrischen Daten unterscheiden sich: Für EX CWK nennt das Datenblatt 16 A Netzabsicherung beim Modell 300 und 25 A bei 350/400; für X, HX und SX jeweils 20 A. Die getrennten CWK-Tabellen im Reiter Technische Daten berücksichtigen diese Unterschiede.",
+     "source_label": "MAHE-Datenblatt X / HX / EX / SX CWK · PDF · deutsch",
+     "scroll_hint": "Auf kleinen Bildschirmen lässt sich die Vergleichstabelle seitlich verschieben.",
+     "summary_note": "Die Symbole zeigen Funktionen der Baureihe; der Umfang richtet sich nach Panel und Freischaltung.",
+     "summary_link": "CWK-Vorteile und Varianten vergleichen",
+     "general_table_title": "HyperMIG X: Baureihe und weitere Bauformen",
+     "family_highlights": [
+      "Digitale Synergiesteuerung",
+      "4-Rollenantrieb und Anschlussmöglichkeit für eine Fernbedienung",
+      "Pulsverfahren und Hyper-Programme je nach Panel und Freischaltung",
+      "CWK mit Wasserkühlung und automatischer Wasserpumpensteuerung",
+      "Getrennte CWK-Daten für X/HX/SX und EX; Ausführung im Angebot festlegen"
+     ]
+    },
+    "fr": {
+     "title": "HyperMIG CWK : avantages et symboles de fonction MAHE",
+     "intro": "CWK désigne la construction compacte refroidie par eau. La fiche MAHE actuelle distingue les versions X, HX, EX et SX en modèles 300, 350 et 400. Retrouvez ici les symboles originaux du fabricant, leur intérêt pratique et les options signalées dans le document.",
+     "symbols_title": "Comprendre les symboles originaux MAHE",
+     "symbol_notes": {
+      "mis": "Arc MIG/MAG régulé pour limiter les projections. Le fil, le gaz et les réglages influencent le résultat.",
+      "puls": "Arc pulsé pour un transfert contrôlé des gouttes ; la fiche indique cette fonction comme option pour EX.",
+      "doppelpuls": "Alternance de phases pulsées pour une structure de cordon régulière. L’activation et la version du panneau sont à prendre en compte.",
+      "hyperup": "Procédé MAHE pour les soudures verticales montantes. La fiche présente HyperUP comme option pour SX.",
+      "coldrootforce": "Ce symbole réunit HyperCold, HyperRoot et HyperForce : des programmes consacrés à l’apport thermique, aux passes de racine et à la pénétration.",
+      "hyperpuls": "Arc pulsé dynamique MAHE. Sa disponibilité dépend de la version du panneau.",
+      "braze": "Brasage MIG pour les matériaux et fils d’apport adaptés ; le choix et la préparation du joint dépendent du travail prévu.",
+      "speedcontrol": "Régulation de la vitesse de dévidage. La vitesse de fil sélectionnée fait partie du réglage du procédé de soudage.",
+      "fourroll": "Quatre galets entraînent le fil. Le profil des galets, le guidage et la pression sont adaptés au fil utilisé.",
+      "remote": "Possibilité de raccorder une commande à distance appropriée. La commande et sa connexion sont choisies selon la version du poste.",
+      "spool15": "Le symbole du fabricant indique une bobine de fil de < 15 kg et < 300 mm. Sa forme et son montage doivent convenir au dévidoir."
+     },
+     "benefits_title": "Autres avantages de la version CWK",
+     "benefits": [
+      [
+       "Commande synergique numérique",
+       "La courbe synergique coordonne les paramètres pour la combinaison sélectionnée de matériau, de fil et de gaz. Le réglage fin est adapté à la pièce et au joint."
+      ],
+      [
+       "Ventilateurs régulés en température",
+       "La régulation adapte le refroidissement à l’état thermique du poste. Le facteur de marche du modèle choisi reste déterminant pour l’utilisation prévue."
+      ],
+      [
+       "Commande automatique de la pompe à eau",
+       "MAHE indique une mise en marche et un arrêt automatiques de la pompe pour CWK. La torche, le circuit de refroidissement et les raccordements sont sélectionnés comme un ensemble cohérent."
+      ],
+      [
+       "Entraînement à 4 galets éclairé",
+       "La fiche décrit un entraînement de fil éclairé. L’éclairage facilite l’observation des galets, du guidage et de la zone d’introduction du fil pendant la préparation et l’entretien."
+      ]
+     ],
+     "matrix_title": "Procédés et options selon la version CWK",
+     "matrix_label": "Fonction",
+     "status": {
+      "listed": "Mentionné",
+      "option": "Option",
+      "not_listed": "Non mentionné"
+     },
+     "mma_label": "Soudage à l’électrode MMA",
+     "matrix_note": "Mentionné signifie que la fiche CWK cite la fonction ou la représente par un symbole. Pour EX, le pulsé, le double pulsé, le TIG et le gougeage portent un astérisque d’option ; pour SX, il s’agit d’HyperPuls et d’HyperUP. Le manuel du panneau graphique X indique aussi le double pulsé comme option. La fourniture et les activations exactes sont confirmées dans l’offre.",
+     "scope_note": "Non mentionné signifie que cette fiche CWK ne cite pas la fonction pour la version concernée. Le site MAHE indique également TIG Lift Arc pour les panneaux SX ; cet équipement est donc vérifié pour le poste choisi. Le présent comparatif concerne les versions CWK du document.",
+     "technical_note": "Les caractéristiques électriques diffèrent également : pour EX CWK, la fiche indique des fusibles secteur de 16 A sur le modèle 300 et de 25 A sur les modèles 350/400 ; pour X, HX et SX, elle indique 20 A. Les tableaux CWK séparés de l’onglet Données techniques tiennent compte de ces différences.",
+     "source_label": "Fiche MAHE X / HX / EX / SX CWK · PDF · en allemand",
+     "scroll_hint": "Sur petit écran, faites défiler le tableau de comparaison horizontalement.",
+     "summary_note": "Les symboles présentent les fonctions de la gamme ; leur disponibilité dépend du panneau et des activations.",
+     "summary_link": "Comparer les avantages et les versions CWK",
+     "general_table_title": "HyperMIG X : gamme et autres constructions",
+     "family_highlights": [
+      "Commande synergique numérique",
+      "Entraînement à 4 galets et possibilité de commande à distance",
+      "Procédés pulsés et programmes Hyper selon le panneau et les activations",
+      "CWK avec refroidissement par eau et commande automatique de la pompe",
+      "Données CWK séparées pour X/HX/SX et EX ; version à préciser dans l’offre"
+     ]
+    },
+    "it": {
+     "title": "HyperMIG CWK: vantaggi e simboli delle funzioni MAHE",
+     "intro": "CWK identifica la costruzione compatta raffreddata ad acqua. La scheda MAHE attuale distingue le versioni X, HX, EX e SX nei modelli 300, 350 e 400. Qui trovate i simboli originali del produttore, il loro significato pratico e le opzioni indicate nel documento.",
+     "symbols_title": "Comprendere i simboli originali MAHE",
+     "symbol_notes": {
+      "mis": "Arco MIG/MAG regolato per ridurre gli spruzzi. Filo, gas e impostazioni influiscono sul risultato.",
+      "puls": "Arco pulsato per un trasferimento controllato delle gocce; la scheda indica questa funzione come opzione per EX.",
+      "doppelpuls": "Alternanza di fasi pulsate per una struttura regolare del cordone. Vanno considerate abilitazione e versione del pannello.",
+      "hyperup": "Procedimento MAHE per saldature verticali ascendenti. La scheda presenta HyperUP come opzione per SX.",
+      "coldrootforce": "Il simbolo riunisce HyperCold, HyperRoot e HyperForce: programmi dedicati ad apporto termico, passate di radice e penetrazione.",
+      "hyperpuls": "Arco pulsato dinamico MAHE. La disponibilità dipende dalla versione del pannello.",
+      "braze": "Brasatura MIG per materiali e fili d’apporto adatti; scelta e preparazione del giunto dipendono dalla lavorazione prevista.",
+      "speedcontrol": "Regolazione della velocità del trainafilo. La velocità selezionata fa parte della messa a punto del procedimento di saldatura.",
+      "fourroll": "Quattro rulli trascinano il filo. Profilo dei rulli, guida e pressione vengono adattati al filo utilizzato.",
+      "remote": "Possibilità di collegare un comando a distanza adeguato. Comando e collegamento vengono scelti in base alla versione della macchina.",
+      "spool15": "Il simbolo del produttore indica una bobina di filo da < 15 kg e < 300 mm. Forma e montaggio devono essere adatti al trainafilo."
+     },
+     "benefits_title": "Altri vantaggi della versione CWK",
+     "benefits": [
+      [
+       "Comando sinergico digitale",
+       "La curva sinergica coordina i parametri per la combinazione scelta di materiale, filo e gas. La regolazione fine viene adattata al pezzo e al giunto."
+      ],
+      [
+       "Ventilatori regolati in base alla temperatura",
+       "La regolazione adatta il raffreddamento alle condizioni termiche della macchina. Per l’impiego previsto resta determinante il ciclo di lavoro del modello scelto."
+      ],
+      [
+       "Comando automatico della pompa dell’acqua",
+       "Per CWK, MAHE indica accensione e spegnimento automatici della pompa. Torcia, circuito di raffreddamento e collegamenti vengono selezionati come configurazione coordinata."
+      ],
+      [
+       "Trainafilo a 4 rulli illuminato",
+       "La scheda descrive un trainafilo illuminato. L’illuminazione facilita l’osservazione dei rulli, della guida e della zona d’inserimento del filo durante preparazione e manutenzione."
+      ]
+     ],
+     "matrix_title": "Procedimenti e opzioni secondo la versione CWK",
+     "matrix_label": "Funzione",
+     "status": {
+      "listed": "Indicato",
+      "option": "Opzione",
+      "not_listed": "Non indicato"
+     },
+     "mma_label": "Saldatura a elettrodo MMA",
+     "matrix_note": "Indicato significa che la scheda CWK cita la funzione o la rappresenta con un simbolo. Per EX, pulsato, doppio pulsato, TIG e scriccatura riportano un asterisco di opzione; per SX si tratta di HyperPuls e HyperUP. Anche il manuale del pannello grafico X indica il doppio pulsato come opzione. Dotazione e abilitazioni esatte vengono confermate nell’offerta.",
+     "scope_note": "Non indicato significa che questa scheda CWK non cita la funzione per la versione considerata. Il sito MAHE riporta anche TIG Lift Arc per i pannelli SX; questa dotazione viene quindi verificata per la macchina scelta. Il presente confronto riguarda le versioni CWK del documento.",
+     "technical_note": "Anche i dati elettrici differiscono: per EX CWK, la scheda indica fusibili di rete da 16 A sul modello 300 e da 25 A sui modelli 350/400; per X, HX e SX indica 20 A. Le tabelle CWK separate nella scheda Dati tecnici tengono conto di queste differenze.",
+     "source_label": "Scheda MAHE X / HX / EX / SX CWK · PDF · in tedesco",
+     "scroll_hint": "Su schermi piccoli è possibile scorrere la tabella di confronto orizzontalmente.",
+     "summary_note": "I simboli presentano le funzioni della gamma; la disponibilità dipende da pannello e abilitazioni.",
+     "summary_link": "Confrontare vantaggi e versioni CWK",
+     "general_table_title": "HyperMIG X: gamma e altre costruzioni",
+     "family_highlights": [
+      "Comando sinergico digitale",
+      "Trainafilo a 4 rulli e possibilità di comando a distanza",
+      "Procedimenti pulsati e programmi Hyper secondo pannello e abilitazioni",
+      "CWK con raffreddamento ad acqua e comando automatico della pompa",
+      "Dati CWK separati per X/HX/SX ed EX; versione da definire nell’offerta"
+     ]
+    }
    },
    "front_panels": [
     {
@@ -512,8 +799,312 @@
    "techdata": {
     "de": [
      {
-      "title": "HyperMIG CWK",
-      "note": "Nur als WWK-Variante erhältlich.",
+      "title": "HyperMIG X / HX / SX CWK",
+      "note": "CWK-Modelle X, HX und SX gemäss identischen Tabellen auf den PDF-Seiten 2, 4 und 8. Ein Strich bedeutet, dass diese Tabellenzelle keinen Wert nennt. Die Verfahrensausstattung ist getrennt von den elektrischen Daten zu wählen.",
+      "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "max 400A",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Netzspannung",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Netzabsicherung (träge)",
+        "values": {
+         "300": "20A",
+         "350": "20A",
+         "400": "20A"
+        }
+       },
+       {
+        "label": "Leerlaufspannung",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Effektiver Eingangsstrom",
+        "values": {
+         "300": "19A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Schweissstrombereich",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Einschaltdauer bei max. Strom (40 °C)",
+        "values": {
+         "300": "–",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Strom bei 60 % ED (40 °C)",
+        "values": {
+         "300": "–",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Strom bei 100 % ED (40 °C)",
+        "values": {
+         "300": "300A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Wirkungsgrad",
+        "values": {
+         "300": "86%",
+         "350": "86%",
+         "400": "86%"
+        }
+       },
+       {
+        "label": "Leistungsaufnahme im Leerlauf",
+        "values": {
+         "300": "43W",
+         "350": "43W",
+         "400": "43W"
+        }
+       },
+       {
+        "label": "Leistungsfaktor",
+        "values": {
+         "300": "0.95",
+         "350": "0.95",
+         "400": "0.95"
+        }
+       },
+       {
+        "label": "Empfohlene Generatorleistung",
+        "values": {
+         "300": "17kVA",
+         "350": "21kVA",
+         "400": "25kVA"
+        }
+       },
+       {
+        "label": "Masse CWK (H × B × L)",
+        "values": {
+         "300": "930x512x864mm",
+         "350": "930x512x864mm",
+         "400": "930x512x864mm"
+        }
+       },
+       {
+        "label": "Gewicht CWK",
+        "values": {
+         "300": "70kg",
+         "350": "70kg",
+         "400": "70kg"
+        }
+       },
+       {
+        "label": "Schutzart",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     },
+     {
+      "title": "HyperMIG EX CWK",
+      "note": "EX CWK gemäss PDF-Seite 6. Die Optionssterne für Verfahren stehen im Ausstattungsvergleich. Die Gewichtszeile des Originals nennt keine Einheit und wird hier bis zur Klärung nicht als technische Gewichtsangabe übernommen.",
+      "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "–",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Netzspannung",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Netzabsicherung (träge)",
+        "values": {
+         "300": "16A",
+         "350": "25A",
+         "400": "25A"
+        }
+       },
+       {
+        "label": "Leerlaufspannung",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Effektiver Eingangsstrom",
+        "values": {
+         "300": "12,5A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Schweissstrombereich",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Einschaltdauer bei max. Strom (40 °C)",
+        "values": {
+         "300": "40% / 300A",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Strom bei 60 % ED (40 °C)",
+        "values": {
+         "300": "240A",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Strom bei 100 % ED (40 °C)",
+        "values": {
+         "300": "180A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Wirkungsgrad",
+        "values": {
+         "300": "86%",
+         "350": "87%",
+         "400": "87%"
+        }
+       },
+       {
+        "label": "Leistungsaufnahme im Leerlauf",
+        "values": {
+         "300": "20W",
+         "350": "43W",
+         "400": "43W"
+        }
+       },
+       {
+        "label": "Leistungsfaktor",
+        "values": {
+         "300": "0,73",
+         "350": "0,95",
+         "400": "0,95"
+        }
+       },
+       {
+        "label": "Empfohlene Generatorleistung",
+        "values": {
+         "300": "22kVA",
+         "350": "21kVA",
+         "400": "25kVA"
+        }
+       },
+       {
+        "label": "Masse CWK (H × B × L)",
+        "values": {
+         "300": "930x512x864mm",
+         "350": "930x512x864mm",
+         "400": "930x512x864mm"
+        }
+       },
+       {
+        "label": "Schutzart",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     },
+     {
+      "title": "HyperMIG X: Baureihe und weitere Bauformen",
+      "note": "Allgemeine HyperMIG-X-Tabelle der MAHE-Webseite. Für CWK X/HX/SX und EX gelten die getrennten Tabellen aus dem aktuellen CWK-Datenblatt oben. Mit * markierte Stromstufen sind nur als WWK erhältlich.",
       "columns": [
        "300",
        "350",
@@ -745,8 +1336,312 @@
     ],
     "fr": [
      {
-      "title": "HyperMIG CWK",
-      "note": "Disponible uniquement en version WWK.",
+      "title": "HyperMIG X / HX / SX CWK",
+      "note": "Modèles CWK X, HX et SX selon les tableaux identiques des pages PDF 2, 4 et 8. Un tiret indique une cellule sans valeur publiée. L’équipement en procédés est à choisir séparément des caractéristiques électriques.",
+      "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "max 400A",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Tension secteur",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusible secteur temporisé",
+        "values": {
+         "300": "20A",
+         "350": "20A",
+         "400": "20A"
+        }
+       },
+       {
+        "label": "Tension à vide",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Courant d’entrée effectif",
+        "values": {
+         "300": "19A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Plage de courant de soudage",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Facteur de marche au courant maximal à 40 °C",
+        "values": {
+         "300": "–",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Courant à 60 % de facteur de marche à 40 °C",
+        "values": {
+         "300": "–",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Courant à 100 % de facteur de marche à 40 °C",
+        "values": {
+         "300": "300A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Rendement",
+        "values": {
+         "300": "86%",
+         "350": "86%",
+         "400": "86%"
+        }
+       },
+       {
+        "label": "Puissance absorbée à vide",
+        "values": {
+         "300": "43W",
+         "350": "43W",
+         "400": "43W"
+        }
+       },
+       {
+        "label": "Facteur de puissance",
+        "values": {
+         "300": "0.95",
+         "350": "0.95",
+         "400": "0.95"
+        }
+       },
+       {
+        "label": "Puissance recommandée du groupe électrogène",
+        "values": {
+         "300": "17kVA",
+         "350": "21kVA",
+         "400": "25kVA"
+        }
+       },
+       {
+        "label": "Dimensions CWK (H × l × L)",
+        "values": {
+         "300": "930x512x864mm",
+         "350": "930x512x864mm",
+         "400": "930x512x864mm"
+        }
+       },
+       {
+        "label": "Poids CWK",
+        "values": {
+         "300": "70kg",
+         "350": "70kg",
+         "400": "70kg"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     },
+     {
+      "title": "HyperMIG EX CWK",
+      "note": "EX CWK selon la page PDF 6. Les astérisques d’option des procédés figurent dans le comparatif d’équipement. La ligne de poids de l’original n’indique aucune unité et n’est pas reprise ici comme donnée de poids avant clarification.",
+      "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "–",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Tension secteur",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusible secteur temporisé",
+        "values": {
+         "300": "16A",
+         "350": "25A",
+         "400": "25A"
+        }
+       },
+       {
+        "label": "Tension à vide",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Courant d’entrée effectif",
+        "values": {
+         "300": "12,5A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Plage de courant de soudage",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Facteur de marche au courant maximal à 40 °C",
+        "values": {
+         "300": "40% / 300A",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Courant à 60 % de facteur de marche à 40 °C",
+        "values": {
+         "300": "240A",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Courant à 100 % de facteur de marche à 40 °C",
+        "values": {
+         "300": "180A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Rendement",
+        "values": {
+         "300": "86%",
+         "350": "87%",
+         "400": "87%"
+        }
+       },
+       {
+        "label": "Puissance absorbée à vide",
+        "values": {
+         "300": "20W",
+         "350": "43W",
+         "400": "43W"
+        }
+       },
+       {
+        "label": "Facteur de puissance",
+        "values": {
+         "300": "0,73",
+         "350": "0,95",
+         "400": "0,95"
+        }
+       },
+       {
+        "label": "Puissance recommandée du groupe électrogène",
+        "values": {
+         "300": "22kVA",
+         "350": "21kVA",
+         "400": "25kVA"
+        }
+       },
+       {
+        "label": "Dimensions CWK (H × l × L)",
+        "values": {
+         "300": "930x512x864mm",
+         "350": "930x512x864mm",
+         "400": "930x512x864mm"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     },
+     {
+      "title": "HyperMIG X : gamme et autres constructions",
+      "note": "Tableau général HyperMIG X du site MAHE. Pour CWK X/HX/SX et EX, consultez les tableaux séparés de la fiche CWK actuelle ci-dessus. Les courants marqués d’un * sont disponibles uniquement en WWK.",
       "columns": [
        "300",
        "350",
@@ -978,8 +1873,312 @@
     ],
     "it": [
      {
-      "title": "HyperMIG CWK",
-      "note": "Disponibile solo nella variante WWK.",
+      "title": "HyperMIG X / HX / SX CWK",
+      "note": "Modelli CWK X, HX e SX secondo le tabelle identiche delle pagine PDF 2, 4 e 8. Un trattino indica una cella senza valore pubblicato. La dotazione dei procedimenti va scelta separatamente dai dati elettrici.",
+      "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "max 400A",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusibile di rete ritardato",
+        "values": {
+         "300": "20A",
+         "350": "20A",
+         "400": "20A"
+        }
+       },
+       {
+        "label": "Tensione a vuoto",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Corrente d’ingresso effettiva",
+        "values": {
+         "300": "19A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Campo di corrente di saldatura",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Ciclo di lavoro alla corrente massima a 40 °C",
+        "values": {
+         "300": "–",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Corrente al 60% del ciclo di lavoro a 40 °C",
+        "values": {
+         "300": "–",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Corrente al 100% del ciclo di lavoro a 40 °C",
+        "values": {
+         "300": "300A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Rendimento",
+        "values": {
+         "300": "86%",
+         "350": "86%",
+         "400": "86%"
+        }
+       },
+       {
+        "label": "Assorbimento a vuoto",
+        "values": {
+         "300": "43W",
+         "350": "43W",
+         "400": "43W"
+        }
+       },
+       {
+        "label": "Fattore di potenza",
+        "values": {
+         "300": "0.95",
+         "350": "0.95",
+         "400": "0.95"
+        }
+       },
+       {
+        "label": "Potenza consigliata del generatore",
+        "values": {
+         "300": "17kVA",
+         "350": "21kVA",
+         "400": "25kVA"
+        }
+       },
+       {
+        "label": "Dimensioni CWK (A × L × P)",
+        "values": {
+         "300": "930x512x864mm",
+         "350": "930x512x864mm",
+         "400": "930x512x864mm"
+        }
+       },
+       {
+        "label": "Peso CWK",
+        "values": {
+         "300": "70kg",
+         "350": "70kg",
+         "400": "70kg"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     },
+     {
+      "title": "HyperMIG EX CWK",
+      "note": "EX CWK secondo la pagina PDF 6. Gli asterischi di opzione dei procedimenti figurano nel confronto della dotazione. La riga del peso nell’originale non indica un’unità e non viene ripresa come dato di peso prima del chiarimento.",
+      "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "–",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusibile di rete ritardato",
+        "values": {
+         "300": "16A",
+         "350": "25A",
+         "400": "25A"
+        }
+       },
+       {
+        "label": "Tensione a vuoto",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Corrente d’ingresso effettiva",
+        "values": {
+         "300": "12,5A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Campo di corrente di saldatura",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Ciclo di lavoro alla corrente massima a 40 °C",
+        "values": {
+         "300": "40% / 300A",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Corrente al 60% del ciclo di lavoro a 40 °C",
+        "values": {
+         "300": "240A",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Corrente al 100% del ciclo di lavoro a 40 °C",
+        "values": {
+         "300": "180A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Rendimento",
+        "values": {
+         "300": "86%",
+         "350": "87%",
+         "400": "87%"
+        }
+       },
+       {
+        "label": "Assorbimento a vuoto",
+        "values": {
+         "300": "20W",
+         "350": "43W",
+         "400": "43W"
+        }
+       },
+       {
+        "label": "Fattore di potenza",
+        "values": {
+         "300": "0,73",
+         "350": "0,95",
+         "400": "0,95"
+        }
+       },
+       {
+        "label": "Potenza consigliata del generatore",
+        "values": {
+         "300": "22kVA",
+         "350": "21kVA",
+         "400": "25kVA"
+        }
+       },
+       {
+        "label": "Dimensioni CWK (A × L × P)",
+        "values": {
+         "300": "930x512x864mm",
+         "350": "930x512x864mm",
+         "400": "930x512x864mm"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     },
+     {
+      "title": "HyperMIG X: gamma e altre costruzioni",
+      "note": "Tabella generale HyperMIG X del sito MAHE. Per CWK X/HX/SX ed EX valgono le tabelle separate della scheda CWK attuale riportate sopra. Le correnti contrassegnate con * sono disponibili solo in versione WWK.",
       "columns": [
        "300",
        "350",

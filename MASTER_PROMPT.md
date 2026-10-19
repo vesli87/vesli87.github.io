@@ -523,7 +523,10 @@ Keine erzwungenen Versalien in der UI. Fliesstext überwiegend 16 px, Produktlea
 unter 1000 px zwei und unter 640 px eine. Der mobile Hero zeigt Foto und
 vollständig lesbaren Text untereinander statt kleiner Schrift im Bild.
 
-Ab 1040 px stehen sechs direkte Hauptlinks im Header. Auf kleineren Geräten
+Ab 1040 px stehen sechs direkte Hauptlinks im Header. Hover und Tastaturfokus
+heben die ganze Linkfläche mit Markenorange, dunklem Text und einem dezenten
+Schatten hervor; der Übergang respektiert reduzierte Bewegung. Die aktuelle
+Seite bleibt mit einer helleren orangenen Fläche markiert. Auf kleineren Geräten
 bleibt das vorhandene Menü. Tabs lassen sich innerhalb ihrer eigenen Leiste
 horizontal verschieben; die Pfeiltastenbedienung bleibt erhalten.
 

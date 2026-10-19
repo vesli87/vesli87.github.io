@@ -1,0 +1,42 @@
+{
+  "instagram": {
+    "source_page": "https://www.meta.com/brand/resources/instagram/instagram-brand/",
+    "source_pack": "https://scontent.fach2-1.fna.fbcdn.net/v/t39.8562-6/10000000_295565596234104_6752419821643487968_n.zip/IG_brand_asset_pack_2023.zip?sdl=1&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fcf380&_nc_ohc=tniPvGJRqosQ7kNvwEwKWBc&_nc_oc=AdpneqNewav2MwmyZPmYtY9Pquhn51tiknN-tfExvkNltDpczBWuS8kK8S6sMcsrmvw&_nc_zt=14&_nc_ht=scontent.fach2-1.fna&_nc_gid=0dYAjoQdYrHYoACCWdCBXw&_nc_ss=7020f&oh=00_AQMU-C0nQLcFt841tcJoa3V7-6zWRInfL9c3aR51Nyr4tQ&oe=6ADBF347",
+    "original_sha256": "21f86b55f986848665ce54ab354ff6b43b7705e6c421d90c04369882b5956766",
+    "asset": "/assets/icons/social/instagram.png",
+    "asset_sha256": "963356aff928c8edf57671a6530f918c63e128cb663ccdc580786a3e7f297651",
+    "processing": "Proportional PNG resize from 5000 px to 256 px using Lanczos; original colours and transparent background retained.",
+    "bytes": 43659,
+    "source_member": "01 Static Glyph/01 Gradient Glyph/Instagram_Glyph_Gradient.png"
+  },
+  "linkedin": {
+    "source_page": "https://brand.linkedin.com/downloads",
+    "source_pack": "https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/logos/in-logo.zip",
+    "original_sha256": "3c0149f26168b5fe0f43e68664abe40341a6443b3cd435d18a73e12f64f8b600",
+    "asset": "/assets/icons/social/linkedin.png",
+    "asset_sha256": "3c0149f26168b5fe0f43e68664abe40341a6443b3cd435d18a73e12f64f8b600",
+    "processing": "Original file, byte-for-byte unchanged.",
+    "bytes": 8375,
+    "source_member": "in-logo/LI-In-Bug.png"
+  },
+  "facebook": {
+    "source_page": "https://www.meta.com/brand/resources/facebook/logo/",
+    "source_pack": "https://scontent.fach2-1.fna.fbcdn.net/v/t39.8562-6/380701377_2250872795121673_2315381206050858273_n.zip/Facebook-Brand-Asset-Pack.zip?sdl=1&_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fcf380&_nc_ohc=ZZtgSadXNN8Q7kNvwE76SKD&_nc_oc=AdoRucdRfyIozsbjf08pm-xbXdM3-KuApT4_ERlvLnv0xIWv9k75c3C2Z0O0aaN5_h0&_nc_zt=14&_nc_ht=scontent.fach2-1.fna&_nc_gid=q-D4n_XOSHmRLW1YpeQqwQ&_nc_ss=7020f&oh=00_AQPJJXZ_Ff8dc0Pq9JamFbD88PP04uq6JPr9i6Chum_ncQ&oe=6ADC061D",
+    "original_sha256": "2adfd474d91fd20c51084309ed000c1ae6cc7f5f70af14d375930f5a71301308",
+    "asset": "/assets/icons/social/facebook.png",
+    "asset_sha256": "2adfd474d91fd20c51084309ed000c1ae6cc7f5f70af14d375930f5a71301308",
+    "processing": "Original file, byte-for-byte unchanged.",
+    "bytes": 54771,
+    "source_member": "Facebook Brand Asset Pack/Logo/Primary Logo/Facebook_Logo_Primary.png"
+  },
+  "whatsapp": {
+    "source_page": "https://www.meta.com/brand/resources/whatsapp/whatsapp-brand/",
+    "source_pack": "https://scontent.fach2-1.fna.fbcdn.net/v/t39.8562-6/746629803_1051972883983037_89334403037226259_n.zip/WhatsApp-Brand-Resource-Center.zip?sdl=1&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fcf380&_nc_ohc=2QYMPiTL9fkQ7kNvwE70cVV&_nc_oc=AdqbqKsIH5vGnULRJX-AcCrFjJTo3ymD3f9R1IWWL0iIKqEWYcq1EQCJoDssr93mwAo&_nc_zt=14&_nc_ht=scontent.fach2-1.fna&_nc_gid=unfEUK8EXcuyFsXXLMqOyg&_nc_ss=7020f&oh=00_AQN9m7eMyuKbSDiGVHGt7u0S-lrm54eCuP7wPtQoV58XKg&oe=6ADC08F5",
+    "original_sha256": "f7b1311db718533e671645f57cd94b92f0e006e61d7e6581a80675fc5a478fc4",
+    "asset": "/assets/icons/social/whatsapp.svg",
+    "asset_sha256": "f7b1311db718533e671645f57cd94b92f0e006e61d7e6581a80675fc5a478fc4",
+    "processing": "Original file, byte-for-byte unchanged.",
+    "bytes": 1181,
+    "source_member": "Brand Resource Center Page Downloads/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg"
+  }
+}

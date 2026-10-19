@@ -641,14 +641,15 @@
   .fcols ul{list-style:none;line-height:2}
   .fcols a{color:var(--muted);font-size:14px;cursor:pointer}
   .fcols a:hover{color:var(--white)}
-  .fcols .footer-social{display:flex;flex-wrap:wrap;gap:10px;line-height:1;margin-top:18px}
+  .fcols .footer-social{display:flex;flex-wrap:wrap;gap:12px;line-height:1;margin-top:18px}
   .footer-social li{display:flex}
   .fcols .footer-social-link{display:inline-flex;align-items:center;justify-content:center;
-    width:46px;height:46px;flex:0 0 46px;border:1px solid var(--line);border-radius:6px;
-    background:rgba(255,255,255,.45);text-decoration:none}
+    width:54px;height:54px;flex:0 0 54px;border:1px solid var(--line);border-radius:10px;
+    background:var(--panel);text-decoration:none}
   .fcols .footer-social-link:hover,.fcols .footer-social-link:focus-visible{
     border-color:var(--accent-ink);background:var(--panel)}
-  .footer-social-link img{width:24px;height:24px}
+  .footer-social-link img{width:32px;height:32px;object-fit:contain}
+  .footer-social-link .social-logo-linkedin{width:38px}
   .contact-direct{margin-bottom:24px;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
   .contact-direct h2{font-family:'Inter';font-size:24px;line-height:1.2}
   .contact-direct p{margin:8px 0 16px;color:var(--muted);font-size:14px;line-height:1.6}

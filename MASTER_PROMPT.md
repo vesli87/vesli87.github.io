@@ -82,9 +82,15 @@ Symbol-Links unter der Firmenmarke im Footer und als `sameAs` am
 Organization-Knoten. Seit dem 19.10.2026 stehen Instagram, LinkedIn, Facebook
 und WhatsApp auf Wunsch des Inhabers in einer gemeinsamen Icon-Reihe ohne
 sichtbare Beschriftung. Die Links behalten einen Namen über `aria-label` und
-`title`, eine sichtbare Tastaturmarkierung und 46 × 46 px grosse Klickflächen.
-Die vier lokalen SVG-Dateien in `assets/icons/social/` stammen aus Bootstrap
-Icons (MIT); Quellen und Lizenz stehen in den SVG-Kommentaren und `LICENSE`.
+`title`, eine sichtbare Tastaturmarkierung und 54 × 54 px grosse Klickflächen.
+Auf Wunsch des Inhabers wurden die einfarbigen Bootstrap-Symbole am selben Tag
+durch farbige Originale aus den offiziellen Meta- und LinkedIn-Markenpaketen
+ersetzt. `assets/icons/social/` enthält PNG für Instagram, Facebook und LinkedIn
+sowie das originale grüne WhatsApp-SVG. Instagram wird aus dem offiziellen
+5000-px-PNG proportional auf 256 px verkleinert; die anderen drei Dateien bleiben
+unverändert. Darstellung: 32 px Höhe, bei LinkedIn mit Platz für das vorhandene
+Registrierungszeichen. Farben und Proportionen werden nicht per CSS verändert.
+Herkunft und SHA-256 stehen in `build/social_brand_assets.json`, Markenrechte in `LICENSE`.
 Es gibt keine eingebetteten Feeds, Social-SDKs oder
 zusaetzlichen Trackingaufrufe. Private Profile und noch nicht bestaetigte
 TikTok- oder Verzeichniseintraege werden nicht verlinkt.

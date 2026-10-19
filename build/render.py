@@ -841,8 +841,12 @@ def cart_drawer(lang):
 
 def footer_icon(name):
     """Local, decorative brand artwork; the enclosing link supplies its name."""
-    return (f'<img src="{e(_ver(f"/assets/icons/social/{name}.svg"))}" '
-            'width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async">')
+    filename = {'instagram': 'instagram.png', 'linkedin': 'linkedin.png',
+                'facebook': 'facebook.png', 'whatsapp': 'whatsapp.svg'}[name]
+    width = 38 if name == 'linkedin' else 32
+    return (f'<img class="social-logo social-logo-{name}" '
+            f'src="{e(_ver(f"/assets/icons/social/{filename}"))}" '
+            f'width="{width}" height="32" alt="" aria-hidden="true" loading="lazy" decoding="async">')
 
 
 def whatsapp_link(lang, *, button=False, icon_only=False):

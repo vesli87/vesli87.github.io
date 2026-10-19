@@ -33,10 +33,18 @@ von dieser Urheberrechtsnotiz ausdrücklich ausgenommen.
 Lizenztext: https://scripts.sil.org/OFL
 
 SOCIAL-ICONS
-Die vier SVG-Symbole unter assets/icons/social/ stammen aus Bootstrap Icons
-(https://github.com/twbs/icons) und stehen unter der MIT-Lizenz. Sie sind von
-der obigen Urheberrechtsnotiz ausdrücklich ausgenommen. Jede SVG-Datei enthält
-die vollständige MIT-Lizenz, den Copyrightvermerk und ihre genaue Quelladresse.
+Die Markenabbildungen unter assets/icons/social/ stammen aus den offiziellen
+Markenpaketen ihrer Eigentümer. Instagram, Facebook und WhatsApp sind Marken
+von Meta; LinkedIn ist eine Marke der LinkedIn Corporation. Die Markenrechte
+bleiben bei den jeweiligen Eigentümern. Sie fallen nicht unter die obige
+VES-TECH-Urheberrechtsnotiz und werden nicht als frei lizenzierte Eigenwerke
+von VES-TECH ausgegeben. Die Verwendung verweist auf die eigenen Firmenprofile.
+Quellen und Nutzungsrichtlinien:
+https://www.meta.com/brand/resources/instagram/instagram-brand/
+https://www.meta.com/brand/resources/facebook/logo/
+https://www.meta.com/brand/resources/whatsapp/whatsapp-brand/
+https://brand.linkedin.com/downloads
+Dateizuordnung, Herkunft und Prüfsummen: build/social_brand_assets.json.
 
 HAFTUNG
 Die Software wird ohne Gewähr bereitgestellt. VES-TECH Swiss haftet nicht für

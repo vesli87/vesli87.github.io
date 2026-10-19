@@ -36,7 +36,7 @@ CACHE = ROOT / "build/cache/mahe"
 # Unser Produkt -> MAHE-Seite. Quelle: DEV/DEV_MULTI aus build/verify_mahe.py
 # und data/SPECMAP.json; beide sind bereits gepruefte Zuordnungen.
 SEITE = {
-    "hypermig-x": "hypermig", "ecomig": "d-mig", "mms": "mms",
+    "hypermig-x": "hypermig", "hypermig-twin": "twin", "ecomig": "d-mig", "mms": "mms",
     "omega-ax": "omega-ac-dc-2", "beta-dx": "beta-dx", "beta-digital": "beta-digital",
     "delta": "delta", "delta-digital": "delta-digital",
     "delta-digital-ds": "delta-digital-ds", "i-1600": "i-1600",
@@ -113,6 +113,12 @@ def sammeln():
                 continue
             # http -> https; MAHE liefert beides aus, unsere Seite laeuft auf https
             u = re.sub(r"^http://", "https://", u.strip())
+            # The TWIN page labels its own PDF as CWK. Read and verified
+            # document titles take precedence over that misplaced link label.
+            if pid == 'hypermig-twin' and u.endswith('/HyperMIG_X_TWIN.pdf'):
+                zusatz = 'HyperMIG X / HX TWIN'
+            elif pid == 'hypermig-twin' and u.endswith('/HyperMIG_X_TWIN_10_DE.pdf'):
+                zusatz = 'HyperMIG HX TWIN'
             if u in gesehen:
                 continue
             gesehen.add(u)
@@ -128,6 +134,16 @@ def sammeln():
         eintraege.sort(key=lambda d: (d["art"] != "anleitung",))
         for d in eintraege:
             del d["art"]
+        if pid == 'hypermig-twin':
+            # X graphic panel confirmed on both product pages; the TWIN page
+            # itself currently links only the older HX-specific manual.
+            eintraege.insert(0, {
+                'k': 'PDF',
+                't': {lang: localized_title(lang, 'anleitung', 'HyperMIG X (Graphic Front Panel)')
+                      for lang in ('de', 'fr', 'it')},
+                's': dict(UNTER),
+                'u': 'https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf',
+            })
         if eintraege:
             out[pid] = eintraege
         else:

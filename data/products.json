@@ -9,7 +9,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Herstellerbilder: jeweiliger Hersteller. Eigene Inhalte: VES-TECH Swiss. Rechte siehe Impressum.",
- "count": 79,
+ "count": 80,
  "products": [
   {
    "id": "hypermig-x",
@@ -37,9 +37,9 @@
     "it": "MIG / MAG"
    },
    "description": {
-    "de": "Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und spritzerfreiem MIS-Schweissen.",
-    "fr": "Série de postes MIG/MAG pulsés entièrement équipés, avec HyperForce et soudage MIS sans projections.",
-    "it": "Serie MIG/MAG pulsata completa con HyperForce e saldatura MIS senza spruzzi."
+    "de": "MIG/MAG-Serie mit Puls- und Hyper-Verfahren sowie neuem grafischem X-Bedienpanel; Ausstattung je Ausführung.",
+    "fr": "Série MIG/MAG avec procédés pulsés et Hyper, dotée du nouveau panneau graphique X ; équipement selon la version.",
+    "it": "Serie MIG/MAG con procedimenti pulsati e Hyper e nuovo pannello grafico X; dotazione secondo la versione."
    },
    "highlights": {
     "de": [
@@ -85,6 +85,405 @@
      "Aggiornabile · 100% riciclabile"
     ]
    },
+   "front_panels": [
+    {
+     "id": "hypermig_x_graphic",
+     "name": {
+      "de": "X: Grafisches Bedienpanel",
+      "fr": "X : panneau de commande graphique",
+      "it": "X: pannello di comando grafico"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/mahe-hypermig-x-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Impulsschweissen",
+       "Doppelpulsschweissen",
+       "MIG-Löten",
+       "HyperPuls-Schweissen",
+       "HyperForce-Schweissen",
+       "HyperCold-Schweissen",
+       "HyperRoot-Schweissen",
+       "HyperUP-Schweissen",
+       "MMA-Elektrodenschweissen",
+       "WIG Lift Arc und Fugenhobeln",
+       "99 Programme im JOB-Modus"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage pulsé",
+       "Soudage à double pulsation",
+       "Brasage MIG",
+       "Soudage HyperPuls",
+       "Soudage HyperForce",
+       "Soudage HyperCold",
+       "Soudage HyperRoot",
+       "Soudage HyperUP",
+       "Soudage à l'électrode MMA",
+       "TIG Lift Arc et gougeage",
+       "99 programmes en mode Job"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura pulsata",
+       "Saldatura a doppio impulso",
+       "Brasatura MIG",
+       "Saldatura HyperPuls",
+       "Saldatura HyperForce",
+       "Saldatura HyperCold",
+       "Saldatura HyperRoot",
+       "Saldatura HyperUP",
+       "Saldatura a elettrodo MMA",
+       "TIG Lift Arc e scriccatura",
+       "99 programmi in modalità Job"
+      ]
+     },
+     "guide": {
+      "sources": [
+       {
+        "url": "https://mahe-online.de/hypermig/",
+        "title": "MAHE HyperMIG X"
+       },
+       {
+        "url": "https://mahe-online.de/twin/",
+        "title": "MAHE HyperMIG TWIN"
+       },
+       {
+        "url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf",
+        "title": "HyperMIG X · PDF · DE · 4.2"
+       }
+      ],
+      "de": {
+       "heading": "Grafische Bedienung im Arbeitsalltag",
+       "intro": "Das grafische X-Bedienpanel verbindet einen Farb-Grafikbildschirm mit vier Funktionstasten und einem zentralen Dreh-/Drücksteller. MAHE führt es für HyperMIG X und HyperMIG TWIN auf. Die Bildschirmführung bündelt Programmauswahl, Schweisswerte und JOB-Verwaltung; die Beschriftung über den Tasten zeigt die jeweilige Funktion.",
+       "sections": [
+        [
+         "Programm und aktiver Drahtvorschub",
+         "Die Informationsleiste zeigt Benutzer, Drahtwerkstoff, Schutzgas und Drahtdurchmesser sowie Datum und Uhrzeit. Bei mehreren installierten Drahtvorschüben wird der aktive Vorschub angezeigt. Das unterstützt die Kontrolle, ob Programm und eingelegter Draht zum Auftrag passen."
+        ],
+        [
+         "Vier MIG-Einstellungen auf einen Blick",
+         "Die obere Einstellleiste enthält Lichtbogenlängenkorrektur, Materialdicke in mm, Drahtgeschwindigkeit in m/min und Lichtbogendynamik. Drehen verändert den gewählten Wert, Drücken wechselt zum nächsten Parameter. Lichtbogenlängenkorrektur und Materialdicke stehen im manuellen MIG-Modus gemäss Anleitung nicht zur Verfügung."
+        ],
+        [
+         "Sollwerte, Messwerte und HOLD",
+         "Die Hauptanzeige stellt Spannung in V und Strom in A gross dar. Vor dem Schweissen zeigt sie die Sollwerte, während des Schweissens die aktuellen Messwerte. Danach bleiben die letzten Messwerte als HOLD sichtbar, bis das Panel bedient oder ein neuer Schweissvorgang gestartet wird."
+        ],
+        [
+         "Betriebsarten und Vorbereitung",
+         "Über die Betriebsartenleiste werden 2-Takt, 4-Takt sowie Punkt- und Intervallbetrieb gewählt. Manueller Drahteinzug und Gastest sind dort ebenfalls erreichbar. Für die synergische Programmauswahl werden Drahtwerkstoff, Drahtdurchmesser und Schutzgas festgelegt."
+        ],
+        [
+         "Verfahren und Feinabstimmung",
+         "Die Verfahrensauswahl umfasst die für die konkrete Anlage verfügbaren MIG/MAG-, Puls- und Hyper-Verfahren sowie MMA, WIG Lift Arc und Kohlelichtbogenfugenhobeln. MENU erschliesst verfahrensabhängige Parameter wie Gasvor- und Gasnachströmzeit, Startverhalten und Kraterfüllung. Bei freigeschaltetem Doppelpuls gehören Frequenz und Amplitude dazu."
+        ],
+        [
+         "99 JOB-Speicher für wiederkehrende Arbeiten",
+         "Schweisseinstellungen lassen sich in 99 internen Speicherplätzen ablegen, aufrufen und bearbeiten. Eine passende Kombination aus Draht, Gas und Parametern kann so wiederverwendet werden. Die Anleitung weist ausdrücklich darauf hin, dass die Schweissbetriebsart, etwa 2-Takt oder 4-Takt, nicht im JOB gespeichert wird und separat gewählt werden muss."
+        ],
+        [
+         "Bis zu acht Benutzerprofile",
+         "Die Anleitung beschreibt bis zu acht Benutzer mit eigenen Einstellungen. Hinzu kommen die Sprachauswahl, Datum und Uhrzeit sowie die Anzeige von Einschalt- und Lichtbogenzeit. Softwarestatus und Seriennummer sind im entsprechenden Menü abrufbar."
+        ],
+        [
+         "Die abgebildeten Werte richtig lesen",
+         "14,4 V, 45 A, 0,8 mm und 1,7 m/min zeigen einen beispielhaften Einstellzustand. Ebenso bezeichnet Fe-Sg2(mix18) Ø 1,0 mm das im Bild gewählte Draht-/Gasprogramm. Daraus ergeben sich weder Leistungsgrenzen der Maschine noch eine allgemeingültige Schweissempfehlung; massgeblich sind Modell, Werkstoff, Nahtaufgabe und erprobte Parameter."
+        ]
+       ],
+       "note": "Ausstattung gezielt festlegen: Die MAHE-Produktseite nennt den möglichen Funktionsumfang des Panels; die Anleitung bezeichnet Doppelpuls als Option. Verfügbare Verfahren und Freischaltungen werden deshalb für die gewählte Geräteausführung im Angebot bestätigt. Eine Nachrüstung bestehender EX-, SX- oder HX-Anlagen ist anhand von Modell, Seriennummer und Softwarestand zu prüfen.",
+       "sources_label": "Herstellerunterlagen",
+       "processes_label": "Puls-, Hyper- und weitere Schweissverfahren ausführlich erklärt"
+      },
+      "fr": {
+       "heading": "La commande graphique en pratique",
+       "intro": "Le panneau graphique X associe un écran graphique couleur, quatre touches de fonction et un sélecteur central rotatif à pression. MAHE le présente pour HyperMIG X et HyperMIG TWIN. L’interface réunit le choix du programme, les valeurs de soudage et la gestion des JOB ; les indications au-dessus des touches précisent leur fonction.",
+       "sections": [
+        [
+         "Programme et dévidoir actif",
+         "La barre d’information indique l’utilisateur, le matériau du fil, le gaz de protection, le diamètre du fil, la date et l’heure. Lorsque plusieurs dévidoirs sont installés, elle identifie le dévidoir actif. Ces informations permettent de vérifier la correspondance entre le programme, le fil chargé et le travail prévu."
+        ],
+        [
+         "Quatre réglages MIG regroupés",
+         "La barre supérieure présente la correction de longueur d’arc, l’épaisseur de matériau en mm, la vitesse du fil en m/min et la dynamique de l’arc. La rotation modifie la valeur sélectionnée ; une pression passe au paramètre suivant. Selon le manuel, la correction de longueur d’arc et l’épaisseur de matériau ne sont pas disponibles en MIG manuel."
+        ],
+        [
+         "Consignes, mesures et HOLD",
+         "L’affichage principal présente en grands caractères la tension en V et le courant en A. Il indique les consignes avant le soudage, puis les valeurs mesurées pendant le soudage. Les dernières mesures restent ensuite visibles avec HOLD jusqu’à une action sur le panneau ou au démarrage d’un nouveau soudage."
+        ],
+        [
+         "Modes de gâchette et préparation",
+         "La barre des modes donne accès au fonctionnement 2 temps, 4 temps, par points et par intervalles. L’avance manuelle du fil et le test de gaz y sont également accessibles. Le choix du programme synergique repose sur le matériau du fil, son diamètre et le gaz de protection."
+        ],
+        [
+         "Procédés et réglages fins",
+         "Le sélecteur propose les procédés MIG/MAG, pulsés et Hyper disponibles sur la configuration concernée, ainsi que MMA, TIG Lift Arc et gougeage à l’arc au carbone. MENU donne accès aux paramètres propres au procédé, dont pré-gaz, post-gaz, démarrage et remplissage du cratère. Lorsque le double pulsé est activé, sa fréquence et son amplitude sont également réglables."
+        ],
+        [
+         "99 mémoires JOB pour les travaux récurrents",
+         "Les réglages de soudage peuvent être enregistrés, rappelés et modifiés dans 99 mémoires internes. Une combinaison adaptée de fil, de gaz et de paramètres peut ainsi être réutilisée. Le manuel précise que le mode de gâchette, par exemple 2 temps ou 4 temps, n’est pas enregistré dans le JOB et doit être sélectionné séparément."
+        ],
+        [
+         "Jusqu’à huit profils utilisateur",
+         "Le manuel décrit jusqu’à huit utilisateurs avec leurs propres réglages. Il prévoit aussi le choix de la langue, la date et l’heure, ainsi que l’affichage du temps de mise sous tension et du temps d’arc. L’état du logiciel et le numéro de série sont consultables dans le menu correspondant."
+        ],
+        [
+         "Comprendre les valeurs de l’illustration",
+         "14,4 V, 45 A, 0,8 mm et 1,7 m/min correspondent à un exemple de réglage. Fe-Sg2(mix18) Ø 1,0 mm désigne le programme fil/gaz sélectionné sur l’image. Ces valeurs ne définissent ni les limites de puissance du poste ni une recommandation universelle : le modèle, le matériau, le joint et des paramètres validés restent déterminants."
+        ]
+       ],
+       "note": "Définir précisément l’équipement : la page MAHE présente les fonctions possibles du panneau ; le manuel indique le double pulsé comme option. Les procédés disponibles et leurs activations sont donc confirmés dans l’offre pour la version choisie. Une adaptation sur un poste EX, SX ou HX existant doit être vérifiée selon le modèle, le numéro de série et la version logicielle.",
+       "sources_label": "Documents du fabricant",
+       "processes_label": "Comprendre en détail les procédés pulsés, Hyper et les autres procédés de soudage"
+      },
+      "it": {
+       "heading": "Il comando grafico nell’uso quotidiano",
+       "intro": "Il pannello grafico X combina uno schermo grafico a colori, quattro tasti funzione e un selettore centrale a rotazione e pressione. MAHE lo presenta per HyperMIG X e HyperMIG TWIN. L’interfaccia riunisce scelta del programma, valori di saldatura e gestione dei JOB; le indicazioni sopra i tasti ne mostrano la funzione.",
+       "sections": [
+        [
+         "Programma e trainafilo attivo",
+         "La barra informativa indica utente, materiale del filo, gas di protezione, diametro del filo, data e ora. Se sono installati più trainafilo, viene identificato quello attivo. Queste informazioni aiutano a verificare che programma e filo caricato corrispondano al lavoro previsto."
+        ],
+        [
+         "Quattro regolazioni MIG riunite",
+         "La barra superiore presenta correzione della lunghezza d’arco, spessore del materiale in mm, velocità del filo in m/min e dinamica dell’arco. Ruotando si modifica il valore selezionato; premendo si passa al parametro successivo. Secondo il manuale, correzione della lunghezza d’arco e spessore del materiale non sono disponibili in MIG manuale."
+        ],
+        [
+         "Valori impostati, misure e HOLD",
+         "La schermata principale visualizza in grandi cifre tensione in V e corrente in A. Prima della saldatura mostra i valori impostati, durante la saldatura quelli misurati. Al termine, le ultime misure restano visibili con HOLD fino a un comando sul pannello o all’avvio di una nuova saldatura."
+        ],
+        [
+         "Modalità della torcia e preparazione",
+         "La barra delle modalità consente di scegliere funzionamento a 2 tempi, 4 tempi, per punti e a intervalli. Vi si trovano anche avanzamento manuale del filo e prova gas. Il programma sinergico viene selezionato in base a materiale del filo, diametro e gas di protezione."
+        ],
+        [
+         "Procedimenti e regolazioni fini",
+         "Il selettore comprende i procedimenti MIG/MAG, pulsati e Hyper disponibili sulla configurazione scelta, oltre a MMA, TIG Lift Arc e scriccatura ad arco con elettrodo di carbone. MENU apre i parametri del procedimento, fra cui pre-gas, post-gas, avvio e riempimento del cratere. Quando il doppio pulsato è attivato, sono disponibili anche frequenza e ampiezza."
+        ],
+        [
+         "99 memorie JOB per lavorazioni ripetute",
+         "Le impostazioni di saldatura possono essere salvate, richiamate e modificate in 99 memorie interne. Una combinazione adatta di filo, gas e parametri può così essere riutilizzata. Il manuale precisa che la modalità della torcia, ad esempio 2 tempi o 4 tempi, non viene salvata nel JOB e va selezionata separatamente."
+        ],
+        [
+         "Fino a otto profili utente",
+         "Il manuale descrive fino a otto utenti con impostazioni proprie. Sono inoltre previsti scelta della lingua, data e ora e visualizzazione del tempo di accensione e del tempo d’arco. Stato del software e numero di serie sono consultabili nel relativo menu."
+        ],
+        [
+         "Come leggere i valori nell’immagine",
+         "14,4 V, 45 A, 0,8 mm e 1,7 m/min rappresentano un esempio di impostazione. Fe-Sg2(mix18) Ø 1,0 mm identifica il programma filo/gas selezionato nell’immagine. Questi dati non definiscono i limiti di potenza della macchina né una raccomandazione universale: contano modello, materiale, giunto e parametri verificati."
+        ]
+       ],
+       "note": "Definire con precisione la dotazione: la pagina MAHE presenta le possibili funzioni del pannello; il manuale indica il doppio pulsato come opzione. Procedimenti disponibili e abilitazioni vengono quindi confermati nell’offerta per la versione scelta. L’eventuale aggiornamento di una macchina EX, SX o HX esistente richiede la verifica di modello, numero di serie e versione software.",
+       "sources_label": "Documentazione del produttore",
+       "processes_label": "Approfondire i procedimenti pulsati, Hyper e gli altri procedimenti di saldatura"
+      }
+     }
+    },
+    {
+     "id": "hypermig_hx",
+     "name": {
+      "de": "HX: Hyper Front Panel",
+      "fr": "HX: Hyper Front Panel",
+      "it": "HX: Hyper Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-hx-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Impulsschweissen",
+       "Doppelpulsschweissen",
+       "MIG-Löten",
+       "HyperPuls-Schweissen",
+       "HyperForce-Schweissen",
+       "HyperCold-Schweissen",
+       "HyperRoot-Schweissen",
+       "HyperUP-Schweissen",
+       "MMA-Elektrodenschweissen",
+       "WIG Lift Arc und Fugenhobeln",
+       "99 Programme im JOB-Modus"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage pulsé",
+       "Soudage à double pulsation",
+       "Brasage MIG",
+       "Soudage HyperPuls",
+       "Soudage HyperForce",
+       "Soudage HyperCold",
+       "Soudage HyperRoot",
+       "Soudage HyperUP",
+       "Soudage à l'électrode MMA",
+       "TIG Lift Arc et gougeage",
+       "99 programmes en mode Job"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura pulsata",
+       "Saldatura a doppio impulso",
+       "Brasatura MIG",
+       "Saldatura HyperPuls",
+       "Saldatura HyperForce",
+       "Saldatura HyperCold",
+       "Saldatura HyperRoot",
+       "Saldatura HyperUP",
+       "Saldatura a elettrodo MMA",
+       "TIG Lift Arc e scriccatura",
+       "99 programmi in modalità Job"
+      ]
+     }
+    },
+    {
+     "id": "hypermig_ecomig",
+     "name": {
+      "de": "EX: EcoMIG Front Panel",
+      "fr": "EX: EcoMIG Front Panel",
+      "it": "EX: EcoMIG Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-ex-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "MIG-Löten",
+       "Hyper Force, Root, Cold",
+       "MMA-Elektrodenschweissen",
+       "WIG Lift Arc",
+       "JOB-Modus mit 99 Programmen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Brasage MIG",
+       "HyperForce, HyperRoot, HyperCold",
+       "Soudage à l'électrode MMA",
+       "TIG Lift Arc",
+       "Mode Job avec 99 programmes"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Brasatura MIG",
+       "HyperForce, HyperRoot, HyperCold",
+       "Saldatura a elettrodo MMA",
+       "TIG Lift Arc",
+       "Modalità Job con 99 programmi"
+      ]
+     }
+    },
+    {
+     "id": "hypermig_ex",
+     "name": {
+      "de": "EX: EcoPuls Front Panel",
+      "fr": "EX: EcoPuls Front Panel",
+      "it": "EX: EcoPuls Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-ex-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Impulsschweissen",
+       "Doppelpulsschweissen",
+       "MIG-Löten",
+       "Hyper Force, Root, Cold",
+       "MMA-Elektrodenschweissen",
+       "WIG Lift Arc",
+       "JOB-Modus mit 99 Programmen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage pulsé",
+       "Soudage à double pulsation",
+       "Brasage MIG",
+       "HyperForce, HyperRoot, HyperCold",
+       "Soudage à l'électrode MMA",
+       "TIG Lift Arc",
+       "Mode Job avec 99 programmes"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura pulsata",
+       "Saldatura a doppio impulso",
+       "Brasatura MIG",
+       "HyperForce, HyperRoot, HyperCold",
+       "Saldatura a elettrodo MMA",
+       "TIG Lift Arc",
+       "Modalità Job con 99 programmi"
+      ]
+     }
+    },
+    {
+     "id": "hypermig_steel",
+     "name": {
+      "de": "SX: Steel Front Panel",
+      "fr": "SX: Steel Front Panel",
+      "it": "SX: Steel Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-sx-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "HyperCold-Schweissen",
+       "HyperRoot-Schweissen",
+       "HyperForce-Schweissen",
+       "WIG-Lift-Arc-Schweissen",
+       "MMA-Schweissen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage HyperCold",
+       "Soudage HyperRoot",
+       "Soudage HyperForce",
+       "Soudage TIG Lift Arc",
+       "Soudage MMA"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura HyperCold",
+       "Saldatura HyperRoot",
+       "Saldatura HyperForce",
+       "Saldatura TIG Lift Arc",
+       "Saldatura MMA"
+      ]
+     }
+    },
+    {
+     "id": "hypermig_sx",
+     "name": {
+      "de": "SX: Steel Puls Front Panel",
+      "fr": "SX: Steel Puls Front Panel",
+      "it": "SX: Steel Puls Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-sx-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "HyperPuls-Schweissen",
+       "HyperCold-Schweissen",
+       "HyperRoot-Schweissen",
+       "HyperForce-Schweissen",
+       "HyperUP-Schweissen",
+       "WIG-Lift-Arc-Schweissen",
+       "MMA-Schweissen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage HyperPuls",
+       "Soudage HyperCold",
+       "Soudage HyperRoot",
+       "Soudage HyperForce",
+       "Soudage HyperUP",
+       "Soudage TIG Lift Arc",
+       "Soudage MMA"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura HyperPuls",
+       "Saldatura HyperCold",
+       "Saldatura HyperRoot",
+       "Saldatura HyperForce",
+       "Saldatura HyperUP",
+       "Saldatura TIG Lift Arc",
+       "Saldatura MMA"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -121,6 +520,7 @@
        "400",
        "450*",
        "500*",
+       "550*",
        "600*"
       ],
       "rows": [
@@ -132,6 +532,7 @@
          "400": "–",
          "450*": "max 600A",
          "500*": "max 600A",
+         "550*": "max 600A",
          "600*": "–"
         }
        },
@@ -143,6 +544,7 @@
          "400": "3x400V, 50/60Hz",
          "450*": "3x400V, 50/60Hz",
          "500*": "3x400V, 50/60Hz",
+         "550*": "3x400V, 50/60Hz",
          "600*": "3x400V, 50/60Hz"
         }
        },
@@ -154,6 +556,7 @@
          "400": "20A",
          "450*": "32A",
          "500*": "32A",
+         "550*": "32A",
          "600*": "32A"
         }
        },
@@ -165,6 +568,7 @@
          "400": "105V",
          "450*": "105V",
          "500*": "105V",
+         "550*": "105V",
          "600*": "105V"
         }
        },
@@ -176,6 +580,7 @@
          "400": "19A",
          "450*": "32A",
          "500*": "32A",
+         "550*": "32A",
          "600*": "32A"
         }
        },
@@ -187,6 +592,7 @@
          "400": "10 - 400A",
          "450*": "10 - 450A",
          "500*": "10 - 500A",
+         "550*": "10 - 550A",
          "600*": "10 - 600A"
         }
        },
@@ -198,6 +604,7 @@
          "400": "45% / 400A",
          "450*": "–",
          "500*": "70% / 500A",
+         "550*": "50% / 550A",
          "600*": "40% / 600A"
         }
        },
@@ -209,6 +616,7 @@
          "400": "360A",
          "450*": "–",
          "500*": "–",
+         "550*": "530A",
          "600*": "530A"
         }
        },
@@ -220,6 +628,7 @@
          "400": "300A",
          "450*": "450A",
          "500*": "450A",
+         "550*": "450A",
          "600*": "450A"
         }
        },
@@ -231,6 +640,7 @@
          "400": "930x512x864mm",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -242,6 +652,7 @@
          "400": "1400x512x864mm",
          "450*": "1400x512x864mm",
          "500*": "1400x512x864mm",
+         "550*": "1400x512x864mm",
          "600*": "1400x512x864mm"
         }
        },
@@ -253,6 +664,7 @@
          "400": "65kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -264,6 +676,7 @@
          "400": "70kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -275,6 +688,7 @@
          "400": "80kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -286,6 +700,7 @@
          "400": "85kg",
          "450*": "92kg",
          "500*": "92kg",
+         "550*": "92kg",
          "600*": "92kg"
         }
        },
@@ -297,6 +712,7 @@
          "400": "IP23",
          "450*": "IP23",
          "500*": "IP23",
+         "550*": "IP23",
          "600*": "IP23"
         }
        },
@@ -308,6 +724,7 @@
          "400": "CE",
          "450*": "CE",
          "500*": "CE",
+         "550*": "CE",
          "600*": "CE"
         }
        },
@@ -319,6 +736,7 @@
          "400": "S",
          "450*": "S",
          "500*": "S",
+         "550*": "S",
          "600*": "S"
         }
        }
@@ -335,6 +753,7 @@
        "400",
        "450*",
        "500*",
+       "550*",
        "600*"
       ],
       "rows": [
@@ -346,6 +765,7 @@
          "400": "–",
          "450*": "max 600A",
          "500*": "max 600A",
+         "550*": "max 600A",
          "600*": "–"
         }
        },
@@ -357,6 +777,7 @@
          "400": "3x400V, 50/60Hz",
          "450*": "3x400V, 50/60Hz",
          "500*": "3x400V, 50/60Hz",
+         "550*": "3x400V, 50/60Hz",
          "600*": "3x400V, 50/60Hz"
         }
        },
@@ -368,6 +789,7 @@
          "400": "20A",
          "450*": "32A",
          "500*": "32A",
+         "550*": "32A",
          "600*": "32A"
         }
        },
@@ -379,6 +801,7 @@
          "400": "105V",
          "450*": "105V",
          "500*": "105V",
+         "550*": "105V",
          "600*": "105V"
         }
        },
@@ -390,6 +813,7 @@
          "400": "19A",
          "450*": "32A",
          "500*": "32A",
+         "550*": "32A",
          "600*": "32A"
         }
        },
@@ -401,6 +825,7 @@
          "400": "10 - 400A",
          "450*": "10 - 450A",
          "500*": "10 - 500A",
+         "550*": "10 - 550A",
          "600*": "10 - 600A"
         }
        },
@@ -412,6 +837,7 @@
          "400": "45% / 400A",
          "450*": "–",
          "500*": "70% / 500A",
+         "550*": "50% / 550A",
          "600*": "40% / 600A"
         }
        },
@@ -423,6 +849,7 @@
          "400": "360A",
          "450*": "–",
          "500*": "–",
+         "550*": "530A",
          "600*": "530A"
         }
        },
@@ -434,6 +861,7 @@
          "400": "300A",
          "450*": "450A",
          "500*": "450A",
+         "550*": "450A",
          "600*": "450A"
         }
        },
@@ -445,6 +873,7 @@
          "400": "930x512x864mm",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -456,6 +885,7 @@
          "400": "1400x512x864mm",
          "450*": "1400x512x864mm",
          "500*": "1400x512x864mm",
+         "550*": "1400x512x864mm",
          "600*": "1400x512x864mm"
         }
        },
@@ -467,6 +897,7 @@
          "400": "65kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -478,6 +909,7 @@
          "400": "70kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -489,6 +921,7 @@
          "400": "80kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -500,6 +933,7 @@
          "400": "85kg",
          "450*": "92kg",
          "500*": "92kg",
+         "550*": "92kg",
          "600*": "92kg"
         }
        },
@@ -511,6 +945,7 @@
          "400": "IP23",
          "450*": "IP23",
          "500*": "IP23",
+         "550*": "IP23",
          "600*": "IP23"
         }
        },
@@ -522,6 +957,7 @@
          "400": "CE",
          "450*": "CE",
          "500*": "CE",
+         "550*": "CE",
          "600*": "CE"
         }
        },
@@ -533,6 +969,7 @@
          "400": "S",
          "450*": "S",
          "500*": "S",
+         "550*": "S",
          "600*": "S"
         }
        }
@@ -549,6 +986,7 @@
        "400",
        "450*",
        "500*",
+       "550*",
        "600*"
       ],
       "rows": [
@@ -560,6 +998,7 @@
          "400": "–",
          "450*": "max 600A",
          "500*": "max 600A",
+         "550*": "max 600A",
          "600*": "–"
         }
        },
@@ -571,6 +1010,7 @@
          "400": "3x400V, 50/60Hz",
          "450*": "3x400V, 50/60Hz",
          "500*": "3x400V, 50/60Hz",
+         "550*": "3x400V, 50/60Hz",
          "600*": "3x400V, 50/60Hz"
         }
        },
@@ -582,6 +1022,7 @@
          "400": "20A",
          "450*": "32A",
          "500*": "32A",
+         "550*": "32A",
          "600*": "32A"
         }
        },
@@ -593,6 +1034,7 @@
          "400": "105V",
          "450*": "105V",
          "500*": "105V",
+         "550*": "105V",
          "600*": "105V"
         }
        },
@@ -604,6 +1046,7 @@
          "400": "19A",
          "450*": "32A",
          "500*": "32A",
+         "550*": "32A",
          "600*": "32A"
         }
        },
@@ -615,6 +1058,7 @@
          "400": "10 - 400A",
          "450*": "10 - 450A",
          "500*": "10 - 500A",
+         "550*": "10 - 550A",
          "600*": "10 - 600A"
         }
        },
@@ -626,6 +1070,7 @@
          "400": "45% / 400A",
          "450*": "–",
          "500*": "70% / 500A",
+         "550*": "50% / 550A",
          "600*": "40% / 600A"
         }
        },
@@ -637,6 +1082,7 @@
          "400": "360A",
          "450*": "–",
          "500*": "–",
+         "550*": "530A",
          "600*": "530A"
         }
        },
@@ -648,6 +1094,7 @@
          "400": "300A",
          "450*": "450A",
          "500*": "450A",
+         "550*": "450A",
          "600*": "450A"
         }
        },
@@ -659,6 +1106,7 @@
          "400": "930x512x864mm",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -670,6 +1118,7 @@
          "400": "1400x512x864mm",
          "450*": "1400x512x864mm",
          "500*": "1400x512x864mm",
+         "550*": "1400x512x864mm",
          "600*": "1400x512x864mm"
         }
        },
@@ -681,6 +1130,7 @@
          "400": "65kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -692,6 +1142,7 @@
          "400": "70kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -703,6 +1154,7 @@
          "400": "80kg",
          "450*": "–",
          "500*": "–",
+         "550*": "–",
          "600*": "–"
         }
        },
@@ -714,6 +1166,7 @@
          "400": "85kg",
          "450*": "92kg",
          "500*": "92kg",
+         "550*": "92kg",
          "600*": "92kg"
         }
        },
@@ -725,6 +1178,7 @@
          "400": "IP23",
          "450*": "IP23",
          "500*": "IP23",
+         "550*": "IP23",
          "600*": "IP23"
         }
        },
@@ -736,6 +1190,7 @@
          "400": "CE",
          "450*": "CE",
          "500*": "CE",
+         "550*": "CE",
          "600*": "CE"
         }
        },
@@ -747,6 +1202,7 @@
          "400": "S",
          "450*": "S",
          "500*": "S",
+         "550*": "S",
          "600*": "S"
         }
        }
@@ -782,6 +1238,768 @@
     "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/",
     "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/hypermig-x/",
     "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/hypermig-x/"
+   }
+  },
+  {
+   "id": "hypermig-twin",
+   "sku": "HYPERMIG-TWIN",
+   "name": "MAHE HyperMIG TWIN",
+   "names": {
+    "de": "MAHE HyperMIG TWIN",
+    "fr": "MAHE HyperMIG TWIN",
+    "it": "MAHE HyperMIG TWIN"
+   },
+   "brand": "MAHE",
+   "type": {
+    "de": "MIG/MAG",
+    "fr": "MIG/MAG",
+    "it": "MIG/MAG"
+   },
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici"
+   },
+   "subcategory": {
+    "de": "MIG / MAG",
+    "fr": "MIG / MAG",
+    "it": "MIG / MAG"
+   },
+   "description": {
+    "de": "Wassergekühlte MIG/MAG-Anlage mit zwei Drahtvorschubkoffern für verschiedene Drähte; wahlweise grafisches X- oder HX-Bedienpanel.",
+    "fr": "Poste MIG/MAG refroidi par eau avec deux dévidoirs pour différents fils ; au choix, panneau graphique X ou panneau HX.",
+    "it": "Saldatrice MIG/MAG raffreddata ad acqua con due trainafilo per fili diversi; a scelta pannello grafico X o pannello HX."
+   },
+   "highlights": {
+    "de": [
+     "Zwei Drahtvorschubkoffer für verschiedene Schweissdrähte",
+     "Automatische Parametereinstellung durch Drücken des Brennertasters",
+     "Digital synergy kontrolliert",
+     "Spritzerfreier Lichtbogen",
+     "HyperPuls, HyperSpeedPuls",
+     "HyperCold und HyperForce",
+     "MMA und Fugenhobeln",
+     "Fernbedienung (Up/Down Brennertaster)",
+     "4-Rollenantrieb",
+     "Zuleitungskabel mit 5 Metern Länge",
+     "Zwischenschlauchpakete bis 20 Meter",
+     "Temperatur kontrollierte Lüfter",
+     "Wasserpumpen Automatik on/off",
+     "Hochleistungs-Wasserkühlung",
+     "Umweltfreundliches Design, 100% recycelbar."
+    ],
+    "fr": [
+     "Deux dévidoirs pour différents fils de soudage",
+     "Sélection automatique des paramètres par la gâchette de la torche",
+     "Commande synergique numérique",
+     "Arc sans projections",
+     "HyperPuls, HyperSpeedPuls",
+     "HyperCold et HyperForce",
+     "MMA et gougeage",
+     "Commande à distance par touches Up/Down de la torche",
+     "Entraînement à 4 galets",
+     "Câble d’alimentation de 5 mètres",
+     "Faisceaux intermédiaires jusqu’à 20 mètres",
+     "Ventilateurs régulés en température",
+     "Commande automatique marche/arrêt de la pompe à eau",
+     "Refroidissement à eau haute performance",
+     "Conception respectueuse de l’environnement, recyclable à 100 %"
+    ],
+    "it": [
+     "Due trainafilo per fili di saldatura diversi",
+     "Selezione automatica dei parametri tramite il pulsante della torcia",
+     "Comando sinergico digitale",
+     "Arco senza spruzzi",
+     "HyperPuls, HyperSpeedPuls",
+     "HyperCold e HyperForce",
+     "MMA e scriccatura",
+     "Comando a distanza tramite pulsanti Up/Down della torcia",
+     "Trainafilo a 4 rulli",
+     "Cavo di alimentazione da 5 metri",
+     "Fasci intermedi fino a 20 metri",
+     "Ventilatori regolati in base alla temperatura",
+     "Comando automatico on/off della pompa dell’acqua",
+     "Raffreddamento ad acqua ad alte prestazioni",
+     "Progettazione rispettosa dell’ambiente, riciclabile al 100 %"
+    ]
+   },
+   "front_panels": [
+    {
+     "id": "hypermig_x_graphic",
+     "name": {
+      "de": "X: Grafisches Bedienpanel",
+      "fr": "X : panneau de commande graphique",
+      "it": "X: pannello di comando grafico"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/mahe-hypermig-x-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Impulsschweissen",
+       "Doppelpulsschweissen",
+       "MIG-Löten",
+       "HyperPuls-Schweissen",
+       "HyperForce-Schweissen",
+       "HyperCold-Schweissen",
+       "HyperRoot-Schweissen",
+       "HyperUP-Schweissen",
+       "MMA-Elektrodenschweissen",
+       "WIG Lift Arc und Fugenhobeln",
+       "99 Programme im JOB-Modus"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage pulsé",
+       "Soudage à double pulsation",
+       "Brasage MIG",
+       "Soudage HyperPuls",
+       "Soudage HyperForce",
+       "Soudage HyperCold",
+       "Soudage HyperRoot",
+       "Soudage HyperUP",
+       "Soudage à l'électrode MMA",
+       "TIG Lift Arc et gougeage",
+       "99 programmes en mode Job"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura pulsata",
+       "Saldatura a doppio impulso",
+       "Brasatura MIG",
+       "Saldatura HyperPuls",
+       "Saldatura HyperForce",
+       "Saldatura HyperCold",
+       "Saldatura HyperRoot",
+       "Saldatura HyperUP",
+       "Saldatura a elettrodo MMA",
+       "TIG Lift Arc e scriccatura",
+       "99 programmi in modalità Job"
+      ]
+     },
+     "guide": {
+      "sources": [
+       {
+        "url": "https://mahe-online.de/hypermig/",
+        "title": "MAHE HyperMIG X"
+       },
+       {
+        "url": "https://mahe-online.de/twin/",
+        "title": "MAHE HyperMIG TWIN"
+       },
+       {
+        "url": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf",
+        "title": "HyperMIG X · PDF · DE · 4.2"
+       }
+      ],
+      "de": {
+       "heading": "Grafische Bedienung im Arbeitsalltag",
+       "intro": "Das grafische X-Bedienpanel verbindet einen Farb-Grafikbildschirm mit vier Funktionstasten und einem zentralen Dreh-/Drücksteller. MAHE führt es für HyperMIG X und HyperMIG TWIN auf. Die Bildschirmführung bündelt Programmauswahl, Schweisswerte und JOB-Verwaltung; die Beschriftung über den Tasten zeigt die jeweilige Funktion.",
+       "sections": [
+        [
+         "Programm und aktiver Drahtvorschub",
+         "Die Informationsleiste zeigt Benutzer, Drahtwerkstoff, Schutzgas und Drahtdurchmesser sowie Datum und Uhrzeit. Bei mehreren installierten Drahtvorschüben wird der aktive Vorschub angezeigt. Das unterstützt die Kontrolle, ob Programm und eingelegter Draht zum Auftrag passen."
+        ],
+        [
+         "Vier MIG-Einstellungen auf einen Blick",
+         "Die obere Einstellleiste enthält Lichtbogenlängenkorrektur, Materialdicke in mm, Drahtgeschwindigkeit in m/min und Lichtbogendynamik. Drehen verändert den gewählten Wert, Drücken wechselt zum nächsten Parameter. Lichtbogenlängenkorrektur und Materialdicke stehen im manuellen MIG-Modus gemäss Anleitung nicht zur Verfügung."
+        ],
+        [
+         "Sollwerte, Messwerte und HOLD",
+         "Die Hauptanzeige stellt Spannung in V und Strom in A gross dar. Vor dem Schweissen zeigt sie die Sollwerte, während des Schweissens die aktuellen Messwerte. Danach bleiben die letzten Messwerte als HOLD sichtbar, bis das Panel bedient oder ein neuer Schweissvorgang gestartet wird."
+        ],
+        [
+         "Betriebsarten und Vorbereitung",
+         "Über die Betriebsartenleiste werden 2-Takt, 4-Takt sowie Punkt- und Intervallbetrieb gewählt. Manueller Drahteinzug und Gastest sind dort ebenfalls erreichbar. Für die synergische Programmauswahl werden Drahtwerkstoff, Drahtdurchmesser und Schutzgas festgelegt."
+        ],
+        [
+         "Verfahren und Feinabstimmung",
+         "Die Verfahrensauswahl umfasst die für die konkrete Anlage verfügbaren MIG/MAG-, Puls- und Hyper-Verfahren sowie MMA, WIG Lift Arc und Kohlelichtbogenfugenhobeln. MENU erschliesst verfahrensabhängige Parameter wie Gasvor- und Gasnachströmzeit, Startverhalten und Kraterfüllung. Bei freigeschaltetem Doppelpuls gehören Frequenz und Amplitude dazu."
+        ],
+        [
+         "99 JOB-Speicher für wiederkehrende Arbeiten",
+         "Schweisseinstellungen lassen sich in 99 internen Speicherplätzen ablegen, aufrufen und bearbeiten. Eine passende Kombination aus Draht, Gas und Parametern kann so wiederverwendet werden. Die Anleitung weist ausdrücklich darauf hin, dass die Schweissbetriebsart, etwa 2-Takt oder 4-Takt, nicht im JOB gespeichert wird und separat gewählt werden muss."
+        ],
+        [
+         "Bis zu acht Benutzerprofile",
+         "Die Anleitung beschreibt bis zu acht Benutzer mit eigenen Einstellungen. Hinzu kommen die Sprachauswahl, Datum und Uhrzeit sowie die Anzeige von Einschalt- und Lichtbogenzeit. Softwarestatus und Seriennummer sind im entsprechenden Menü abrufbar."
+        ],
+        [
+         "Die abgebildeten Werte richtig lesen",
+         "14,4 V, 45 A, 0,8 mm und 1,7 m/min zeigen einen beispielhaften Einstellzustand. Ebenso bezeichnet Fe-Sg2(mix18) Ø 1,0 mm das im Bild gewählte Draht-/Gasprogramm. Daraus ergeben sich weder Leistungsgrenzen der Maschine noch eine allgemeingültige Schweissempfehlung; massgeblich sind Modell, Werkstoff, Nahtaufgabe und erprobte Parameter."
+        ]
+       ],
+       "note": "Ausstattung gezielt festlegen: Die MAHE-Produktseite nennt den möglichen Funktionsumfang des Panels; die Anleitung bezeichnet Doppelpuls als Option. Verfügbare Verfahren und Freischaltungen werden deshalb für die gewählte Geräteausführung im Angebot bestätigt. Eine Nachrüstung bestehender EX-, SX- oder HX-Anlagen ist anhand von Modell, Seriennummer und Softwarestand zu prüfen.",
+       "sources_label": "Herstellerunterlagen",
+       "processes_label": "Puls-, Hyper- und weitere Schweissverfahren ausführlich erklärt"
+      },
+      "fr": {
+       "heading": "La commande graphique en pratique",
+       "intro": "Le panneau graphique X associe un écran graphique couleur, quatre touches de fonction et un sélecteur central rotatif à pression. MAHE le présente pour HyperMIG X et HyperMIG TWIN. L’interface réunit le choix du programme, les valeurs de soudage et la gestion des JOB ; les indications au-dessus des touches précisent leur fonction.",
+       "sections": [
+        [
+         "Programme et dévidoir actif",
+         "La barre d’information indique l’utilisateur, le matériau du fil, le gaz de protection, le diamètre du fil, la date et l’heure. Lorsque plusieurs dévidoirs sont installés, elle identifie le dévidoir actif. Ces informations permettent de vérifier la correspondance entre le programme, le fil chargé et le travail prévu."
+        ],
+        [
+         "Quatre réglages MIG regroupés",
+         "La barre supérieure présente la correction de longueur d’arc, l’épaisseur de matériau en mm, la vitesse du fil en m/min et la dynamique de l’arc. La rotation modifie la valeur sélectionnée ; une pression passe au paramètre suivant. Selon le manuel, la correction de longueur d’arc et l’épaisseur de matériau ne sont pas disponibles en MIG manuel."
+        ],
+        [
+         "Consignes, mesures et HOLD",
+         "L’affichage principal présente en grands caractères la tension en V et le courant en A. Il indique les consignes avant le soudage, puis les valeurs mesurées pendant le soudage. Les dernières mesures restent ensuite visibles avec HOLD jusqu’à une action sur le panneau ou au démarrage d’un nouveau soudage."
+        ],
+        [
+         "Modes de gâchette et préparation",
+         "La barre des modes donne accès au fonctionnement 2 temps, 4 temps, par points et par intervalles. L’avance manuelle du fil et le test de gaz y sont également accessibles. Le choix du programme synergique repose sur le matériau du fil, son diamètre et le gaz de protection."
+        ],
+        [
+         "Procédés et réglages fins",
+         "Le sélecteur propose les procédés MIG/MAG, pulsés et Hyper disponibles sur la configuration concernée, ainsi que MMA, TIG Lift Arc et gougeage à l’arc au carbone. MENU donne accès aux paramètres propres au procédé, dont pré-gaz, post-gaz, démarrage et remplissage du cratère. Lorsque le double pulsé est activé, sa fréquence et son amplitude sont également réglables."
+        ],
+        [
+         "99 mémoires JOB pour les travaux récurrents",
+         "Les réglages de soudage peuvent être enregistrés, rappelés et modifiés dans 99 mémoires internes. Une combinaison adaptée de fil, de gaz et de paramètres peut ainsi être réutilisée. Le manuel précise que le mode de gâchette, par exemple 2 temps ou 4 temps, n’est pas enregistré dans le JOB et doit être sélectionné séparément."
+        ],
+        [
+         "Jusqu’à huit profils utilisateur",
+         "Le manuel décrit jusqu’à huit utilisateurs avec leurs propres réglages. Il prévoit aussi le choix de la langue, la date et l’heure, ainsi que l’affichage du temps de mise sous tension et du temps d’arc. L’état du logiciel et le numéro de série sont consultables dans le menu correspondant."
+        ],
+        [
+         "Comprendre les valeurs de l’illustration",
+         "14,4 V, 45 A, 0,8 mm et 1,7 m/min correspondent à un exemple de réglage. Fe-Sg2(mix18) Ø 1,0 mm désigne le programme fil/gaz sélectionné sur l’image. Ces valeurs ne définissent ni les limites de puissance du poste ni une recommandation universelle : le modèle, le matériau, le joint et des paramètres validés restent déterminants."
+        ]
+       ],
+       "note": "Définir précisément l’équipement : la page MAHE présente les fonctions possibles du panneau ; le manuel indique le double pulsé comme option. Les procédés disponibles et leurs activations sont donc confirmés dans l’offre pour la version choisie. Une adaptation sur un poste EX, SX ou HX existant doit être vérifiée selon le modèle, le numéro de série et la version logicielle.",
+       "sources_label": "Documents du fabricant",
+       "processes_label": "Comprendre en détail les procédés pulsés, Hyper et les autres procédés de soudage"
+      },
+      "it": {
+       "heading": "Il comando grafico nell’uso quotidiano",
+       "intro": "Il pannello grafico X combina uno schermo grafico a colori, quattro tasti funzione e un selettore centrale a rotazione e pressione. MAHE lo presenta per HyperMIG X e HyperMIG TWIN. L’interfaccia riunisce scelta del programma, valori di saldatura e gestione dei JOB; le indicazioni sopra i tasti ne mostrano la funzione.",
+       "sections": [
+        [
+         "Programma e trainafilo attivo",
+         "La barra informativa indica utente, materiale del filo, gas di protezione, diametro del filo, data e ora. Se sono installati più trainafilo, viene identificato quello attivo. Queste informazioni aiutano a verificare che programma e filo caricato corrispondano al lavoro previsto."
+        ],
+        [
+         "Quattro regolazioni MIG riunite",
+         "La barra superiore presenta correzione della lunghezza d’arco, spessore del materiale in mm, velocità del filo in m/min e dinamica dell’arco. Ruotando si modifica il valore selezionato; premendo si passa al parametro successivo. Secondo il manuale, correzione della lunghezza d’arco e spessore del materiale non sono disponibili in MIG manuale."
+        ],
+        [
+         "Valori impostati, misure e HOLD",
+         "La schermata principale visualizza in grandi cifre tensione in V e corrente in A. Prima della saldatura mostra i valori impostati, durante la saldatura quelli misurati. Al termine, le ultime misure restano visibili con HOLD fino a un comando sul pannello o all’avvio di una nuova saldatura."
+        ],
+        [
+         "Modalità della torcia e preparazione",
+         "La barra delle modalità consente di scegliere funzionamento a 2 tempi, 4 tempi, per punti e a intervalli. Vi si trovano anche avanzamento manuale del filo e prova gas. Il programma sinergico viene selezionato in base a materiale del filo, diametro e gas di protezione."
+        ],
+        [
+         "Procedimenti e regolazioni fini",
+         "Il selettore comprende i procedimenti MIG/MAG, pulsati e Hyper disponibili sulla configurazione scelta, oltre a MMA, TIG Lift Arc e scriccatura ad arco con elettrodo di carbone. MENU apre i parametri del procedimento, fra cui pre-gas, post-gas, avvio e riempimento del cratere. Quando il doppio pulsato è attivato, sono disponibili anche frequenza e ampiezza."
+        ],
+        [
+         "99 memorie JOB per lavorazioni ripetute",
+         "Le impostazioni di saldatura possono essere salvate, richiamate e modificate in 99 memorie interne. Una combinazione adatta di filo, gas e parametri può così essere riutilizzata. Il manuale precisa che la modalità della torcia, ad esempio 2 tempi o 4 tempi, non viene salvata nel JOB e va selezionata separatamente."
+        ],
+        [
+         "Fino a otto profili utente",
+         "Il manuale descrive fino a otto utenti con impostazioni proprie. Sono inoltre previsti scelta della lingua, data e ora e visualizzazione del tempo di accensione e del tempo d’arco. Stato del software e numero di serie sono consultabili nel relativo menu."
+        ],
+        [
+         "Come leggere i valori nell’immagine",
+         "14,4 V, 45 A, 0,8 mm e 1,7 m/min rappresentano un esempio di impostazione. Fe-Sg2(mix18) Ø 1,0 mm identifica il programma filo/gas selezionato nell’immagine. Questi dati non definiscono i limiti di potenza della macchina né una raccomandazione universale: contano modello, materiale, giunto e parametri verificati."
+        ]
+       ],
+       "note": "Definire con precisione la dotazione: la pagina MAHE presenta le possibili funzioni del pannello; il manuale indica il doppio pulsato come opzione. Procedimenti disponibili e abilitazioni vengono quindi confermati nell’offerta per la versione scelta. L’eventuale aggiornamento di una macchina EX, SX o HX esistente richiede la verifica di modello, numero di serie e versione software.",
+       "sources_label": "Documentazione del produttore",
+       "processes_label": "Approfondire i procedimenti pulsati, Hyper e gli altri procedimenti di saldatura"
+      }
+     }
+    },
+    {
+     "id": "hypermig_hx",
+     "name": {
+      "de": "HX: Hyper Front Panel",
+      "fr": "HX: Hyper Front Panel",
+      "it": "HX: Hyper Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-hx-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Impulsschweissen",
+       "Doppelpulsschweissen",
+       "MIG-Löten",
+       "HyperPuls-Schweissen",
+       "HyperForce-Schweissen",
+       "HyperCold-Schweissen",
+       "HyperRoot-Schweissen",
+       "HyperUP-Schweissen",
+       "MMA-Elektrodenschweissen",
+       "WIG Lift Arc und Fugenhobeln",
+       "99 Programme im JOB-Modus"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage pulsé",
+       "Soudage à double pulsation",
+       "Brasage MIG",
+       "Soudage HyperPuls",
+       "Soudage HyperForce",
+       "Soudage HyperCold",
+       "Soudage HyperRoot",
+       "Soudage HyperUP",
+       "Soudage à l'électrode MMA",
+       "TIG Lift Arc et gougeage",
+       "99 programmes en mode Job"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura pulsata",
+       "Saldatura a doppio impulso",
+       "Brasatura MIG",
+       "Saldatura HyperPuls",
+       "Saldatura HyperForce",
+       "Saldatura HyperCold",
+       "Saldatura HyperRoot",
+       "Saldatura HyperUP",
+       "Saldatura a elettrodo MMA",
+       "TIG Lift Arc e scriccatura",
+       "99 programmi in modalità Job"
+      ]
+     }
+    }
+   ],
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "MIG/MAG · MMA · WIG Lift Arc",
+     "Kühlung": "wassergekühlt",
+     "Antrieb": "4-Rollen",
+     "Betriebsart": "Synergie / JOB (99)"
+    },
+    "fr": {
+     "Procédé": "MIG/MAG · MMA · TIG Lift Arc",
+     "Refroidissement": "refroidi par eau",
+     "Entraînement": "4 galets",
+     "Mode": "Synergique / JOB (99)"
+    },
+    "it": {
+     "Processo": "MIG/MAG · MMA · TIG Lift Arc",
+     "Raffreddamento": "raffreddato ad acqua",
+     "Trazione": "4 rulli",
+     "Modalità": "Sinergico / JOB (99)"
+    }
+   },
+   "techdata": {
+    "de": [
+     {
+      "title": "HyperMIG TWIN",
+      "note": "Modelle 300, 350 und 400 gemäss MAHE-Tabelle. Ein Strich bedeutet: In dieser Tabellenzelle veröffentlicht MAHE keinen Wert. Freischaltungen, Draht-/Gasausrüstung und Panel werden für die konkrete Anlage bestätigt. Herstellerabbildung der Anlage: HX-Ausführung; das neue grafische X-Panel ist separat dargestellt.",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "max 400A",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Netzspannung",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Netzabsicherung",
+        "values": {
+         "300": "20A",
+         "350": "20A",
+         "400": "20A"
+        }
+       },
+       {
+        "label": "Leerlaufspannung",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Effektiver Eingangsstrom",
+        "values": {
+         "300": "19A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Schweissstrombereich",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Einschaltdauer bei max. Strom (40 °C)",
+        "values": {
+         "300": "–",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Strom bei 60 % ED (40 °C)",
+        "values": {
+         "300": "–",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Strom bei 100 % ED (40 °C)",
+        "values": {
+         "300": "300A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Masse",
+        "values": {
+         "300": "1400x512x864mm",
+         "350": "1400x512x864mm",
+         "400": "1400x512x864mm"
+        }
+       },
+       {
+        "label": "Gewicht",
+        "values": {
+         "300": "95kg",
+         "350": "95kg",
+         "400": "95kg"
+        }
+       },
+       {
+        "label": "Schutzart",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Konformitätszeichen",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Sicherungsklasse",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "HyperMIG TWIN",
+      "note": "Modèles 300, 350 et 400 selon le tableau MAHE. Un tiret indique que MAHE ne publie aucune valeur dans cette cellule. Activations, équipement fil/gaz et panneau sont confirmés pour le poste choisi. L’illustration du fabricant montre la version HX ; le nouveau panneau graphique X est présenté séparément.",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "max 400A",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Tension secteur",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusible secteur",
+        "values": {
+         "300": "20A",
+         "350": "20A",
+         "400": "20A"
+        }
+       },
+       {
+        "label": "Tension à vide",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Courant d’entrée effectif",
+        "values": {
+         "300": "19A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Plage de courant de soudage",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Facteur de marche au courant max. à 40 °C",
+        "values": {
+         "300": "–",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Courant à 60 % de facteur de marche à 40 °C",
+        "values": {
+         "300": "–",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Courant à 100 % de facteur de marche à 40 °C",
+        "values": {
+         "300": "300A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Dimensions",
+        "values": {
+         "300": "1400x512x864mm",
+         "350": "1400x512x864mm",
+         "400": "1400x512x864mm"
+        }
+       },
+       {
+        "label": "Poids",
+        "values": {
+         "300": "95kg",
+         "350": "95kg",
+         "400": "95kg"
+        }
+       },
+       {
+        "label": "Indice de protection",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Marquage de conformité",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Classe de sécurité",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "HyperMIG TWIN",
+      "note": "Modelli 300, 350 e 400 secondo la tabella MAHE. Un trattino indica che MAHE non pubblica un valore nella cella. Abilitazioni, dotazione filo/gas e pannello vengono confermati per la macchina scelta. L’immagine del produttore mostra la versione HX; il nuovo pannello grafico X è presentato separatamente.",
+      "columns": [
+       "300",
+       "350",
+       "400"
+      ],
+      "rows": [
+       {
+        "label": "Upgrade",
+        "values": {
+         "300": "max 400A",
+         "350": "max 400A",
+         "400": "–"
+        }
+       },
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "300": "3x400V, 50/60Hz",
+         "350": "3x400V, 50/60Hz",
+         "400": "3x400V, 50/60Hz"
+        }
+       },
+       {
+        "label": "Fusibile di rete",
+        "values": {
+         "300": "20A",
+         "350": "20A",
+         "400": "20A"
+        }
+       },
+       {
+        "label": "Tensione a vuoto",
+        "values": {
+         "300": "105V",
+         "350": "105V",
+         "400": "105V"
+        }
+       },
+       {
+        "label": "Corrente d’ingresso effettiva",
+        "values": {
+         "300": "19A",
+         "350": "19A",
+         "400": "19A"
+        }
+       },
+       {
+        "label": "Campo di corrente di saldatura",
+        "values": {
+         "300": "10 - 300A",
+         "350": "10 - 350A",
+         "400": "10 - 400A"
+        }
+       },
+       {
+        "label": "Ciclo di lavoro alla corrente max. a 40 °C",
+        "values": {
+         "300": "–",
+         "350": "–",
+         "400": "45% / 400A"
+        }
+       },
+       {
+        "label": "Corrente al 60% del ciclo di lavoro a 40 °C",
+        "values": {
+         "300": "–",
+         "350": "350A",
+         "400": "360A"
+        }
+       },
+       {
+        "label": "Corrente al 100% del ciclo di lavoro a 40 °C",
+        "values": {
+         "300": "300A",
+         "350": "300A",
+         "400": "300A"
+        }
+       },
+       {
+        "label": "Dimensioni",
+        "values": {
+         "300": "1400x512x864mm",
+         "350": "1400x512x864mm",
+         "400": "1400x512x864mm"
+        }
+       },
+       {
+        "label": "Peso",
+        "values": {
+         "300": "95kg",
+         "350": "95kg",
+         "400": "95kg"
+        }
+       },
+       {
+        "label": "Grado di protezione",
+        "values": {
+         "300": "IP23",
+         "350": "IP23",
+         "400": "IP23"
+        }
+       },
+       {
+        "label": "Marchio di conformità",
+        "values": {
+         "300": "CE",
+         "350": "CE",
+         "400": "CE"
+        }
+       },
+       {
+        "label": "Classe di sicurezza",
+        "values": {
+         "300": "S",
+         "350": "S",
+         "400": "S"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "materials": [
+    "Stahl",
+    "INOX",
+    "Aluminium"
+   ],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/p/hypermig-hx-twin-2c4cf5-1000.webp",
+   "condition": null,
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/hypermig-twin/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/hypermig-twin/"
    }
   },
   {
@@ -840,6 +2058,92 @@
      "Robusto per officina & montaggio"
     ]
    },
+   "front_panels": [
+    {
+     "id": "ecomig_analog",
+     "name": {
+      "de": "EcoMIG 3000 Analog Front Panel",
+      "fr": "EcoMIG 3000 Analog Front Panel",
+      "it": "EcoMIG 3000 Analog Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/ecomig-analog-1000.webp",
+     "features": {
+      "de": [
+       "Punkt und Intervall",
+       "Elektrodenschweissen",
+       "WIG-Lift-Arc-Schweissen",
+       "Elektronische Drossel"
+      ],
+      "fr": [
+       "Soudage par points et par intervalles",
+       "Soudage à l’électrode",
+       "Soudage TIG Lift Arc",
+       "Self électronique"
+      ],
+      "it": [
+       "Saldatura a punti e a intervalli",
+       "Saldatura a elettrodo",
+       "Saldatura TIG Lift Arc",
+       "Reattanza elettronica"
+      ]
+     }
+    },
+    {
+     "id": "ecomig_low",
+     "name": {
+      "de": "EcoMIG 3000 Digital Front Panel",
+      "fr": "EcoMIG 3000 Digital Front Panel",
+      "it": "EcoMIG 3000 Digital Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/ecomig-lowcost-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Punkt und Intervall",
+       "Synergiegesteuert",
+       "MMA-Schweissen",
+       "WIG-Lift-Arc-Schweissen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage par points et par intervalles",
+       "Commande synergique",
+       "Soudage MMA",
+       "Soudage TIG Lift Arc"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura a punti e a intervalli",
+       "Comando sinergico",
+       "Saldatura MMA",
+       "Saldatura TIG Lift Arc"
+      ]
+     }
+    },
+    {
+     "id": "ecomig_2000",
+     "name": {
+      "de": "EcoMIG 2000 Digital Front Panel",
+      "fr": "EcoMIG 2000 Digital Front Panel",
+      "it": "EcoMIG 2000 Digital Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/mms2000c-panel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Synergiegesteuert"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Commande synergique"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Comando sinergico"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -1301,6 +2605,104 @@
      "Bobina D300"
     ]
    },
+   "front_panels": [
+    {
+     "id": "mms_light",
+     "name": {
+      "de": "EcoMIG Light Panel",
+      "fr": "EcoMIG Light Panel",
+      "it": "EcoMIG Light Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/mms2000c-panel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen im Synergy-Modus"
+      ],
+      "fr": [
+       "Soudage MIS en mode Synergy"
+      ],
+      "it": [
+       "Saldatura MIS in modalità Synergy"
+      ]
+     }
+    },
+    {
+     "id": "mms_ecomig",
+     "name": {
+      "de": "EcoMIG Front Panel",
+      "fr": "EcoMIG Front Panel",
+      "it": "EcoMIG Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-ex-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Hyper Cold, Root, Force",
+       "WIG Lift Arc",
+       "Elektrodenschweissen",
+       "JOB-Modus mit 99 Programmen",
+       "MMA-Schweissen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "HyperCold, HyperRoot, HyperForce",
+       "TIG Lift Arc",
+       "Soudage à l'électrode",
+       "Mode Job avec 99 programmes",
+       "Soudage MMA"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "HyperCold, HyperRoot, HyperForce",
+       "TIG Lift Arc",
+       "Saldatura a elettrodo",
+       "Modalità Job con 99 programmi",
+       "Saldatura MMA"
+      ]
+     }
+    },
+    {
+     "id": "mms_ecopuls",
+     "name": {
+      "de": "EcoPuls Front Panel",
+      "fr": "EcoPuls Front Panel",
+      "it": "EcoPuls Front Panel"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypermig-ex-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "MIS-Schweissen",
+       "Impulsschweissen",
+       "Doppelpulsschweissen",
+       "Hyper Force, Cold, Root",
+       "WIG Lift Arc",
+       "Elektrodenschweissen",
+       "JOB-Modus mit 99 Programmen",
+       "MMA-Schweissen"
+      ],
+      "fr": [
+       "Soudage MIS",
+       "Soudage pulsé",
+       "Soudage à double pulsation",
+       "HyperForce, HyperCold, HyperRoot",
+       "TIG Lift Arc",
+       "Soudage à l'électrode",
+       "Mode Job avec 99 programmes",
+       "Soudage MMA"
+      ],
+      "it": [
+       "Saldatura MIS",
+       "Saldatura pulsata",
+       "Saldatura a doppio impulso",
+       "HyperForce, HyperCold, HyperRoot",
+       "TIG Lift Arc",
+       "Saldatura a elettrodo",
+       "Modalità Job con 99 programmi",
+       "Saldatura MMA"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -1855,6 +3257,75 @@
      "Telecomando opzionale"
     ]
    },
+   "front_panels": [
+    {
+     "id": "omega_pro",
+     "name": {
+      "de": "Omega AX Pro: Bedienpanel",
+      "fr": "Omega AX Pro : panneau de commande",
+      "it": "Omega AX Pro: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/omegaax-pro-1000.webp",
+     "features": {
+      "de": [
+       "Hyper Arc Active",
+       "HyperSpot",
+       "AC-Mix-TIG",
+       "20-kHz-Puls",
+       "HF-Puls",
+       "LF-Puls",
+       "Active Boost",
+       "Fernbedienung"
+      ],
+      "fr": [
+       "Hyper Arc Active",
+       "HyperSpot",
+       "AC Mix TIG",
+       "Pulsation 20 kHz",
+       "Pulsation HF",
+       "Pulsation BF",
+       "Active Boost",
+       "Télécommande"
+      ],
+      "it": [
+       "Hyper Arc Active",
+       "HyperSpot",
+       "AC Mix TIG",
+       "Impulso 20 kHz",
+       "Impulso HF",
+       "Impulso BF",
+       "Active Boost",
+       "Telecomando"
+      ]
+     }
+    },
+    {
+     "id": "omega_syn",
+     "name": {
+      "de": "Omega AX Syn: Bedienpanel",
+      "fr": "Omega AX Syn : panneau de commande",
+      "it": "Omega AX Syn: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/omega-ax-syn-1000.webp",
+     "features": {
+      "de": [
+       "Autopuls",
+       "Active Boost",
+       "Fernbedienung"
+      ],
+      "fr": [
+       "Autopuls",
+       "Active Boost",
+       "Télécommande"
+      ],
+      "it": [
+       "Autopuls",
+       "Active Boost",
+       "Telecomando"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -2307,6 +3778,72 @@
      "Telecomando opzionale"
     ]
    },
+   "front_panels": [
+    {
+     "id": "betadx_pro",
+     "name": {
+      "de": "Beta DX Pro: Bedienpanel",
+      "fr": "Beta DX Pro : panneau de commande",
+      "it": "Beta DX Pro: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/betadx-pro-panel-1000.webp",
+     "features": {
+      "de": [
+       "Hyper Arc Active",
+       "HyperSpot",
+       "20-kHz-Puls",
+       "HF-Puls",
+       "LF-Puls",
+       "Active Boost",
+       "Fernbedienung"
+      ],
+      "fr": [
+       "Hyper Arc Active",
+       "HyperSpot",
+       "Pulsation 20 kHz",
+       "Pulsation HF",
+       "Pulsation BF",
+       "Active Boost",
+       "Télécommande"
+      ],
+      "it": [
+       "Hyper Arc Active",
+       "HyperSpot",
+       "Impulso 20 kHz",
+       "Impulso HF",
+       "Impulso BF",
+       "Active Boost",
+       "Telecomando"
+      ]
+     }
+    },
+    {
+     "id": "betadx_syn",
+     "name": {
+      "de": "Beta DX Syn: Bedienpanel",
+      "fr": "Beta DX Syn : panneau de commande",
+      "it": "Beta DX Syn: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/betadx-syn-panel-1000.webp",
+     "features": {
+      "de": [
+       "Autopuls",
+       "Active Boost",
+       "Fernbedienung"
+      ],
+      "fr": [
+       "Autopuls",
+       "Active Boost",
+       "Télécommande"
+      ],
+      "it": [
+       "Autopuls",
+       "Active Boost",
+       "Telecomando"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -2761,6 +4298,55 @@
      "Modalità Job"
     ]
    },
+   "front_panels": [
+    {
+     "id": "hypertig_ax",
+     "name": {
+      "de": "HyperTIG AX: Bedienpanel",
+      "fr": "HyperTIG AX : panneau de commande",
+      "it": "HyperTIG AX: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypertig-ax-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "Einknopfbedienung",
+       "Übersichtliche Bedienerführung",
+       "Synergische Kennlinien",
+       "Hyper-Arc-Active-Kennlinie serienmässig",
+       "HyperSpot-Kennlinie serienmässig",
+       "ActiveSpot-Kennlinie serienmässig",
+       "Hochfrequenzpulsen serienmässig",
+       "Fernbedienung Ein/Aus",
+       "HF-Start oder Lift-Arc-Start",
+       "AC-Schweissen (WIG und MMA)"
+      ],
+      "fr": [
+       "Commande à un seul bouton",
+       "Guidage utilisateur clair",
+       "Courbes synergiques",
+       "Courbe Hyper Arc Active de série",
+       "Courbe HyperSpot de série",
+       "Courbe ActiveSpot de série",
+       "Pulsation haute fréquence de série",
+       "Télécommande marche/arrêt",
+       "Amorçage HF ou Lift Arc",
+       "Soudage AC (TIG et MMA)"
+      ],
+      "it": [
+       "Comando a una sola manopola",
+       "Guida chiara per l’operatore",
+       "Curve sinergiche",
+       "Curva Hyper Arc Active di serie",
+       "Curva HyperSpot di serie",
+       "Curva ActiveSpot di serie",
+       "Impulso ad alta frequenza di serie",
+       "Telecomando on/off",
+       "Innesco HF o Lift Arc",
+       "Saldatura AC (TIG e MMA)"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -3252,6 +4838,52 @@
      "Modalità Job"
     ]
    },
+   "front_panels": [
+    {
+     "id": "hypertig_dx",
+     "name": {
+      "de": "HyperTIG DX: Bedienpanel",
+      "fr": "HyperTIG DX : panneau de commande",
+      "it": "HyperTIG DX: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypertig-dx-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "Einknopfbedienung",
+       "Übersichtliche Bedienerführung",
+       "Hyper-Arc-Active-Kennlinie serienmässig",
+       "HyperSpot-Kennlinie serienmässig",
+       "ActiveSpot-Kennlinie serienmässig",
+       "Hochfrequenzpulsen serienmässig",
+       "Fernbedienung Ein/Aus",
+       "HF-Start oder Lift-Arc-Start",
+       "MMA-Schweissen"
+      ],
+      "fr": [
+       "Commande à un seul bouton",
+       "Guidage utilisateur clair",
+       "Courbe Hyper Arc Active de série",
+       "Courbe HyperSpot de série",
+       "Courbe ActiveSpot de série",
+       "Pulsation haute fréquence de série",
+       "Télécommande marche/arrêt",
+       "Amorçage HF ou Lift Arc",
+       "Soudage MMA"
+      ],
+      "it": [
+       "Comando a una sola manopola",
+       "Guida chiara per l’operatore",
+       "Curva Hyper Arc Active di serie",
+       "Curva HyperSpot di serie",
+       "Curva ActiveSpot di serie",
+       "Impulso ad alta frequenza di serie",
+       "Telecomando on/off",
+       "Innesco HF o Lift Arc",
+       "Saldatura MMA"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -3781,6 +5413,72 @@
      "Modalità Job"
     ]
    },
+   "front_panels": [
+    {
+     "id": "betadig_profi",
+     "name": {
+      "de": "Beta digital Profi: Bedienpanel",
+      "fr": "Beta digital Profi : panneau de commande",
+      "it": "Beta digital Profi: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/betadigital-profi-panel-1000.webp",
+     "features": {
+      "de": [
+       "Beta TIG Active Arc",
+       "Beta TIG Spot Arc",
+       "Beta TIG HF Puls",
+       "Beta TIG Active Boost",
+       "MMA-Schweissen",
+       "Remote Control"
+      ],
+      "fr": [
+       "Beta TIG Active Arc",
+       "Beta TIG Spot Arc",
+       "Beta TIG HF Puls",
+       "Beta TIG Active Boost",
+       "Soudage MMA",
+       "Télécommande"
+      ],
+      "it": [
+       "Beta TIG Active Arc",
+       "Beta TIG Spot Arc",
+       "Beta TIG HF Puls",
+       "Beta TIG Active Boost",
+       "Saldatura MMA",
+       "Telecomando"
+      ]
+     }
+    },
+    {
+     "id": "betadig_syn",
+     "name": {
+      "de": "Beta digital Syn: Bedienpanel",
+      "fr": "Beta digital Syn : panneau de commande",
+      "it": "Beta digital Syn: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/betadigital-syn-panel-1000.webp",
+     "features": {
+      "de": [
+       "Beta TIG Active Boost",
+       "Beta TIG Auto Puls",
+       "Beta TIG Easy Use",
+       "Spot Arc"
+      ],
+      "fr": [
+       "Beta TIG Active Boost",
+       "Beta TIG Auto Puls",
+       "Beta TIG Easy Use",
+       "Spot Arc"
+      ],
+      "it": [
+       "Beta TIG Active Boost",
+       "Beta TIG Auto Puls",
+       "Beta TIG Easy Use",
+       "Spot Arc"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -4577,6 +6275,55 @@
      "Modalità Job"
     ]
    },
+   "front_panels": [
+    {
+     "id": "hypertig_acdc",
+     "name": {
+      "de": "HyperTIG AC/DC: Bedienpanel",
+      "fr": "HyperTIG AC/DC : panneau de commande",
+      "it": "HyperTIG AC/DC: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypertig-acdc-panel-1000.webp",
+     "features": {
+      "de": [
+       "Einknopfbedienung",
+       "Übersichtliche Bedienerführung",
+       "Synergische Kennlinien",
+       "Hyper-Arc-Active-Kennlinie serienmässig",
+       "HyperSpot-Kennlinie serienmässig",
+       "Hochfrequenzpulsen serienmässig",
+       "Fernbedienung Ein/Aus",
+       "HF-Start oder Lift-Arc-Start",
+       "DC+ und DC- Schweissen (MMA)",
+       "AC-Schweissen (MMA)"
+      ],
+      "fr": [
+       "Commande à un seul bouton",
+       "Guidage utilisateur clair",
+       "Courbes synergiques",
+       "Courbe Hyper Arc Active de série",
+       "Courbe HyperSpot de série",
+       "Pulsation haute fréquence de série",
+       "Télécommande marche/arrêt",
+       "Amorçage HF ou Lift Arc",
+       "Soudage DC+ et DC− (MMA)",
+       "Soudage AC (MMA)"
+      ],
+      "it": [
+       "Comando a una sola manopola",
+       "Guida chiara per l’operatore",
+       "Curve sinergiche",
+       "Curva Hyper Arc Active di serie",
+       "Curva HyperSpot di serie",
+       "Impulso ad alta frequenza di serie",
+       "Telecomando on/off",
+       "Innesco HF o Lift Arc",
+       "Saldatura DC+ e DC− (MMA)",
+       "Saldatura AC (MMA)"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -5107,6 +6854,18 @@
      "Tecnologia 100 V"
     ]
    },
+   "front_panels": [
+    {
+     "id": "i1600_panel",
+     "name": {
+      "de": "i-1600: Bedienpanel",
+      "fr": "i-1600 : panneau de commande",
+      "it": "i-1600: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/i-1600-447.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -5501,6 +7260,18 @@
      "TIG Lift Arc"
     ]
    },
+   "front_panels": [
+    {
+     "id": "delta_panel",
+     "name": {
+      "de": "Delta: Bedienpanel",
+      "fr": "Delta : panneau de commande",
+      "it": "Delta: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/delta1800-741.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -5904,6 +7675,18 @@
      "Telecomando"
     ]
    },
+   "front_panels": [
+    {
+     "id": "deltadig_big",
+     "name": {
+      "de": "Delta Digital: Bedienpanel",
+      "fr": "Delta Digital : panneau de commande",
+      "it": "Delta Digital: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/deltadigital-big-panel-623.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -6496,6 +8279,18 @@
      "Mobile"
     ]
    },
+   "front_panels": [
+    {
+     "id": "deltadig_big",
+     "name": {
+      "de": "Delta Digital: Bedienpanel",
+      "fr": "Delta Digital : panneau de commande",
+      "it": "Delta Digital: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/deltadigital-big-panel-623.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -6998,6 +8793,7 @@
      "Interfaccia"
     ]
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -7585,6 +9381,18 @@
      "Cavo di massa 16 mm², 4 m, compreso nella fornitura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "theta40_panel",
+     "name": {
+      "de": "Theta 40: Bedienpanel",
+      "fr": "Theta 40 : panneau de commande",
+      "it": "Theta 40: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/theta40-panel-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -8025,6 +9833,18 @@
      "Funzione di scriccatura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "theta_hsc",
+     "name": {
+      "de": "Theta HSC: Bedienpanel",
+      "fr": "Theta HSC : panneau de commande",
+      "it": "Theta HSC: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/theta-display-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -8465,6 +10285,18 @@
      "Funzione di scriccatura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "theta_hsc",
+     "name": {
+      "de": "Theta HSC: Bedienpanel",
+      "fr": "Theta HSC : panneau de commande",
+      "it": "Theta HSC: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/theta-display-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -8905,6 +10737,18 @@
      "Pacchetti torcia fino a 15,2 metri"
     ]
    },
+   "front_panels": [
+    {
+     "id": "theta_hsc",
+     "name": {
+      "de": "Theta HSC: Bedienpanel",
+      "fr": "Theta HSC : panneau de commande",
+      "it": "Theta HSC: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/theta-display-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -9327,6 +11171,18 @@
      "Funzione di scriccatura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "theta_hsc",
+     "name": {
+      "de": "Theta HSC: Bedienpanel",
+      "fr": "Theta HSC : panneau de commande",
+      "it": "Theta HSC: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/theta-display-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -9770,6 +11626,18 @@
      "Funzione di scriccatura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "theta_hsc",
+     "name": {
+      "de": "Theta HSC: Bedienpanel",
+      "fr": "Theta HSC : panneau de commande",
+      "it": "Theta HSC: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/theta-display-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -10225,6 +12093,7 @@
      "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
     ]
    },
+   "front_panels": [],
    "options": {
     "de": [
      {
@@ -10434,6 +12303,7 @@
      "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
     ]
    },
+   "front_panels": [],
    "options": {
     "de": [
      {
@@ -10619,6 +12489,18 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "mini_panel",
+     "name": {
+      "de": "MiniReiniger: Bedienpanel",
+      "fr": "MiniReiniger : panneau de commande",
+      "it": "MiniReiniger: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/minicleaner-panel-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -10937,6 +12819,18 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "cleaner_st",
+     "name": {
+      "de": "HyperCleaner ST: Bedienpanel",
+      "fr": "HyperCleaner ST : panneau de commande",
+      "it": "HyperCleaner ST: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hyperclenaerst-panel-687.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -11270,6 +13164,18 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "cleaner_speed",
+     "name": {
+      "de": "HyperCleaner ST Speed: Bedienpanel",
+      "fr": "HyperCleaner ST Speed : panneau de commande",
+      "it": "HyperCleaner ST Speed: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypercleaner-st-speed-frontpanel-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -11603,6 +13509,18 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "cleaner_plus",
+     "name": {
+      "de": "HyperCleaner ST Plus: Bedienpanel",
+      "fr": "HyperCleaner ST Plus : panneau de commande",
+      "it": "HyperCleaner ST Plus: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypercleaner-st-plus-panell-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -11936,6 +13854,81 @@
      "Pulizia ecologica e sicura"
     ]
    },
+   "front_panels": [
+    {
+     "id": "ct200_panel",
+     "name": {
+      "de": "HyperCleaner CT 200: Bedienpanel",
+      "fr": "HyperCleaner CT 200 : panneau de commande",
+      "it": "HyperCleaner CT 200: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypercleaner-ct200-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "Beta TIG Active Arc",
+       "Beta TIG Spot Arc",
+       "Beta TIG HF Puls",
+       "Beta TIG Active Boost",
+       "MMA-Schweissen",
+       "Remote Control",
+       "Reinigen, Polieren und Markieren",
+       "JOB-Modus"
+      ],
+      "fr": [
+       "Beta TIG Active Arc",
+       "Beta TIG Spot Arc",
+       "Beta TIG HF Puls",
+       "Beta TIG Active Boost",
+       "Soudage MMA",
+       "Télécommande",
+       "Nettoyer, polir et marquer",
+       "Mode Job"
+      ],
+      "it": [
+       "Beta TIG Active Arc",
+       "Beta TIG Spot Arc",
+       "Beta TIG HF Puls",
+       "Beta TIG Active Boost",
+       "Saldatura MMA",
+       "Telecomando",
+       "Pulire, lucidare e marcare",
+       "Modalità Job"
+      ]
+     }
+    },
+    {
+     "id": "ct200_syn",
+     "name": {
+      "de": "CT 200 Syn: Bedienpanel",
+      "fr": "CT 200 Syn : panneau de commande",
+      "it": "CT 200 Syn: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/hypercleaner-ct200-syn-frontpanel-1000.webp",
+     "features": {
+      "de": [
+       "Beta TIG Active Boost",
+       "Beta TIG Auto Puls",
+       "Beta TIG Easy Use",
+       "Spot Arc",
+       "Reinigen, Polieren und Markieren"
+      ],
+      "fr": [
+       "Beta TIG Active Boost",
+       "Beta TIG Auto Puls",
+       "Beta TIG Easy Use",
+       "Spot Arc",
+       "Nettoyer, polir et marquer"
+      ],
+      "it": [
+       "Beta TIG Active Boost",
+       "Beta TIG Auto Puls",
+       "Beta TIG Easy Use",
+       "Spot Arc",
+       "Pulire, lucidare e marcare"
+      ]
+     }
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -12041,6 +14034,7 @@
      "Compatibile con le maschere di tutti i produttori"
     ]
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -12381,6 +14375,18 @@
      "Con supporto per pennello di pulizia con protezione antigoccia"
     ]
    },
+   "front_panels": [
+    {
+     "id": "mlf100_panel",
+     "name": {
+      "de": "MLF 100: Bedienpanel",
+      "fr": "MLF 100 : panneau de commande",
+      "it": "MLF 100: pannello di comando"
+     },
+     "image": "https://www.ves-tech.ch/assets/img/panels/mlf100-frontpanel-1000.webp",
+     "features": {}
+    }
+   ],
    "options": {
     "de": [],
     "fr": [],
@@ -12643,6 +14649,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -12734,6 +14741,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -12825,6 +14833,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -12916,6 +14925,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13007,6 +15017,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13098,6 +15109,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13189,6 +15201,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13280,6 +15293,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13371,6 +15385,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13459,6 +15474,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13547,6 +15563,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13632,6 +15649,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13717,6 +15735,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13802,6 +15821,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13890,6 +15910,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -13975,6 +15996,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14060,6 +16082,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14145,6 +16168,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14230,6 +16254,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14315,6 +16340,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14403,6 +16429,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14491,6 +16518,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14579,6 +16607,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14667,6 +16696,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14755,6 +16785,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14843,6 +16874,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -14931,6 +16963,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15019,6 +17052,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15107,6 +17141,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15195,6 +17230,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15283,6 +17319,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15371,6 +17408,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15459,6 +17497,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15547,6 +17586,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15635,6 +17675,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15723,6 +17764,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15811,6 +17853,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15899,6 +17942,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -15987,6 +18031,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16075,6 +18120,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16163,6 +18209,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16251,6 +18298,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16345,6 +18393,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16439,6 +18488,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16533,6 +18583,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16627,6 +18678,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16721,6 +18773,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16815,6 +18868,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -16913,6 +18967,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],
@@ -17034,6 +19089,7 @@
     "fr": [],
     "it": []
    },
+   "front_panels": [],
    "options": {
     "de": [],
     "fr": [],

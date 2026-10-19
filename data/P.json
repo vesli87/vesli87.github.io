@@ -6,19 +6,34 @@
   "vt": "MIG/MAG",
   "name": "HyperMIG X",
   "img": "2022/03/Bild-der-Hypers.png",
-  "desc": "Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und spritzerfreiem MIS-Schweissen.",
+  "desc": "MIG/MAG-Serie mit Puls- und Hyper-Verfahren sowie neuem grafischem X-Bedienpanel; Ausstattung je Ausführung.",
   "specs": {
    "Verfahren": "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG",
-   "Strombereich": "10 – 420 A",
+   "Strombereich": "10 – 600 A, je Modell",
    "Netz": "3~ 400 V · 50/60 Hz",
-   "Netzabsicherung": "25 A",
-   "Leerlaufspannung": "76 V",
-   "Einschaltdauer": "45 % @ 400 A · 60 % @ 360 A",
+   "Netzabsicherung": "20 A / 32 A, je Modell",
+   "Leerlaufspannung": "105 V",
+   "Einschaltdauer": "je Modell, siehe Tabelle",
    "Kühlung": "luft-/wassergekühlt",
    "Antrieb": "4-Rollen",
    "Betriebsart": "Synergic / JOB (99)",
    "Schutzklasse": "IP23",
-   "Gewicht": "bis 103 kg (WWK)"
+   "Gewicht": "65 – 92 kg, je Ausführung"
+  }
+ },
+ {
+  "id": "hypermig-twin",
+  "cat": "schweissgeraete",
+  "sub": "MIG / MAG",
+  "vt": "MIG/MAG",
+  "name": "HyperMIG TWIN",
+  "img": "2026/08/HyperMIG_HX_Twin.png",
+  "desc": "Wassergekühlte MIG/MAG-Anlage mit zwei Drahtvorschubkoffern für verschiedene Drähte; wahlweise grafisches X- oder HX-Bedienpanel.",
+  "specs": {
+   "Verfahren": "MIG/MAG · MMA · WIG Lift Arc",
+   "Kühlung": "wassergekühlt",
+   "Antrieb": "4-Rollen",
+   "Betriebsart": "Synergic / JOB (99)"
   }
  },
  {

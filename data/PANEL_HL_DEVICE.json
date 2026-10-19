@@ -591,5 +591,49 @@
    "Saldatura TIG Lift Arc",
    "Saldatura MMA"
   ]
+ },
+ "hypermig_x_graphic": {
+  "de": [
+   "MIS-Schweissen",
+   "Impulsschweissen",
+   "Doppelpulsschweissen",
+   "MIG-Löten",
+   "HyperPuls-Schweissen",
+   "HyperForce-Schweissen",
+   "HyperCold-Schweissen",
+   "HyperRoot-Schweissen",
+   "HyperUP-Schweissen",
+   "MMA-Elektrodenschweissen",
+   "WIG Lift Arc und Fugenhobeln",
+   "99 Programme im JOB-Modus"
+  ],
+  "fr": [
+   "Soudage MIS",
+   "Soudage pulsé",
+   "Soudage à double pulsation",
+   "Brasage MIG",
+   "Soudage HyperPuls",
+   "Soudage HyperForce",
+   "Soudage HyperCold",
+   "Soudage HyperRoot",
+   "Soudage HyperUP",
+   "Soudage à l'électrode MMA",
+   "TIG Lift Arc et gougeage",
+   "99 programmes en mode Job"
+  ],
+  "it": [
+   "Saldatura MIS",
+   "Saldatura pulsata",
+   "Saldatura a doppio impulso",
+   "Brasatura MIG",
+   "Saldatura HyperPuls",
+   "Saldatura HyperForce",
+   "Saldatura HyperCold",
+   "Saldatura HyperRoot",
+   "Saldatura HyperUP",
+   "Saldatura a elettrodo MMA",
+   "TIG Lift Arc e scriccatura",
+   "99 programmi in modalità Job"
+  ]
  }
 }

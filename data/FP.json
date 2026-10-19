@@ -389,5 +389,15 @@
   "n": "SX: Steel Front Panel",
   "big": true,
   "img": "panels/HyperMIG_SX_Frontpanel.png"
+ },
+ "hypermig_x_graphic": {
+  "n": "X: Graphic Front Panel",
+  "names": {
+   "de": "X: Grafisches Bedienpanel",
+   "fr": "X : panneau de commande graphique",
+   "it": "X: pannello di comando grafico"
+  },
+  "big": true,
+  "img": "panels/MAHE HyperMIG X Frontpanel.png"
  }
 }

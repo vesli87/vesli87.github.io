@@ -13,7 +13,7 @@ mitgepflegt.
 
 ## Das Wichtigste in Kürze
 
-Die 360 Inhaltsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
+Die 363 Inhaltsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
 bearbeitet — der nächste Build überschreibt jede Änderung.
 
 ```
@@ -27,6 +27,7 @@ Bearbeitet werden also:
 | Produkt, Merkmalsliste, Kategorie | `data/P.json`, `data/CATS.json` |
 | Besonderheiten eines Geräts | `data/HL_DEVICE.json` (Herstellerangaben, DE/FR/IT; dokumentierte Sprachkorrekturen in `build/mahe_copy_edits.json`) |
 | Besonderheiten eines Frontpanels | `data/PANEL_HL_DEVICE.json` (ebenso) |
+| Ausführliche Panelbedienung | `data/PANEL_GUIDES.json` (DE/FR/IT, mit Herstellerquellen) |
 | Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |

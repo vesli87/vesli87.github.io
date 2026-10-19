@@ -392,5 +392,24 @@
     "arcforce"
    ]
   }
+ },
+ "hypermig-twin": {
+  "quelle": "MAHE HyperMIG X TWIN, Datenblatt 08/2026 S. 1, sowie mahe-online.de/twin/ (X/HX)",
+  "gruppen": {
+   "mig": [
+    "mis",
+    "puls",
+    "doppelpuls",
+    "hyperpuls",
+    "hyperup",
+    "braze"
+   ],
+   "wig": [
+    "lift"
+   ],
+   "elektrode": [
+    "gouging"
+   ]
+  }
  }
 }

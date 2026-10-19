@@ -18,36 +18,79 @@ Eine sinnvolle Auswahl beginnt beim Werkstück: Nennen Sie VES-TECH Swiss den We
 ### MAHE HyperMIG X
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/
 Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: HYPERMIG-X · Preis: auf Anfrage (CHF)
-Voll ausgestattete Puls-MIG/MAG-Serie mit HyperForce und spritzerfreiem MIS-Schweissen.
+MIG/MAG-Serie mit Puls- und Hyper-Verfahren sowie neuem grafischem X-Bedienpanel; Ausstattung je Ausführung.
+HyperMIG X umfasst kompakte und getrennte Ausführungen mit Luft- oder Wasserkühlung. Das neue grafische X-Panel wird zusätzlich zu den weiterhin aufgeführten HX-, EX- und SX-Panels angeboten. Wählen Sie Gerätebauform und Bedienausstattung gemeinsam.
+- CGK, CWK, WGK und WWK unterscheiden sich in Aufbau und Kühlung. Die technischen Werte gelten für die konkrete Modellspalte; höhere Stromstufen sind gemäss Tabellenfussnote nur als WWK erhältlich.
+- Für zwei vorbereitete Schweissdrähte vergleichen Sie die separate HyperMIG-TWIN-Ausführung. Für wiederkehrende Aufgaben bietet das grafische X-Panel 99 JOB-Speicher; verfügbare Verfahren und Optionen werden für die konkrete Anlage bestätigt.
+Weiterführend: [MAHE HyperMIG TWIN](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/)
+Weiterführend: [Verfahren](https://www.ves-tech.ch/verfahren/)
 Besonderheiten: MIG/MAG-Schweissen & MIG-Löten; HyperForce, HyperRoot, HyperCold; HyperPuls & HyperSpeedPuls; Doppelpuls mit WIG-Naht-Optik; MMA-Elektrode & Fugenhobeln; WIG Lift Arc; Digitale Synergy-Regelung; Spritzerfreier Lichtbogen; 4-Rollen-Antrieb; Fernbedienung anschliessbar; JOB-Modus mit 99 Programmen; Upgradefähig · 100 % recycelbar.
+Fronteingabesysteme: X: Grafisches Bedienpanel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten HyperPuls-Schweissen HyperForce-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperUP-Schweissen MMA-Elektrodenschweissen WIG Lift Arc und Fugenhobeln 99 Programme im JOB-Modus Das grafische X-Bedienpanel verbindet einen Farb-Grafikbildschirm mit vier Funktionstasten und einem zentralen Dreh-/Drücksteller. MAHE führt es für HyperMIG X und HyperMIG TWIN auf. Die Bildschirmführung bündelt Programmauswahl, Schweisswerte und JOB-Verwaltung; die Beschriftung über den Tasten zeigt die jeweilige Funktion. Ausstattung gezielt festlegen: Die MAHE-Produktseite nennt den möglichen Funktionsumfang des Panels; die Anleitung bezeichnet Doppelpuls als Option. Verfügbare Verfahren und Freischaltungen werden deshalb für die gewählte Geräteausführung im Angebot bestätigt. Eine Nachrüstung bestehender EX-, SX- oder HX-Anlagen ist anhand von Modell, Seriennummer und Softwarestand zu prüfen. Programm und aktiver Drahtvorschub Die Informationsleiste zeigt Benutzer, Drahtwerkstoff, Schutzgas und Drahtdurchmesser sowie Datum und Uhrzeit. Bei mehreren installierten Drahtvorschüben wird der aktive Vorschub angezeigt. Das unterstützt die Kontrolle, ob Programm und eingelegter Draht zum Auftrag passen. Vier MIG-Einstellungen auf einen Blick Die obere Einstellleiste enthält Lichtbogenlängenkorrektur, Materialdicke in mm, Drahtgeschwindigkeit in m/min und Lichtbogendynamik. Drehen verändert den gewählten Wert, Drücken wechselt zum nächsten Parameter. Lichtbogenlängenkorrektur und Materialdicke stehen im manuellen MIG-Modus gemäss Anleitung nicht zur Verfügung. Sollwerte, Messwerte und HOLD Die Hauptanzeige stellt Spannung in V und Strom in A gross dar. Vor dem Schweissen zeigt sie die Sollwerte, während des Schweissens die aktuellen Messwerte. Danach bleiben die letzten Messwerte als HOLD sichtbar, bis das Panel bedient oder ein neuer Schweissvorgang gestartet wird. Betriebsarten und Vorbereitung Über die Betriebsartenleiste werden 2-Takt, 4-Takt sowie Punkt- und Intervallbetrieb gewählt. Manueller Drahteinzug und Gastest sind dort ebenfalls erreichbar. Für die synergische Programmauswahl werden Drahtwerkstoff, Drahtdurchmesser und Schutzgas festgelegt. Verfahren und Feinabstimmung Die Verfahrensauswahl umfasst die für die konkrete Anlage verfügbaren MIG/MAG-, Puls- und Hyper-Verfahren sowie MMA, WIG Lift Arc und Kohlelichtbogenfugenhobeln. MENU erschliesst verfahrensabhängige Parameter wie Gasvor- und Gasnachströmzeit, Startverhalten und Kraterfüllung. Bei freigeschaltetem Doppelpuls gehören Frequenz und Amplitude dazu. 99 JOB-Speicher für wiederkehrende Arbeiten Schweisseinstellungen lassen sich in 99 internen Speicherplätzen ablegen, aufrufen und bearbeiten. Eine passende Kombination aus Draht, Gas und Parametern kann so wiederverwendet werden. Die Anleitung weist ausdrücklich darauf hin, dass die Schweissbetriebsart, etwa 2-Takt oder 4-Takt, nicht im JOB gespeichert wird und separat gewählt werden muss. Bis zu acht Benutzerprofile Die Anleitung beschreibt bis zu acht Benutzer mit eigenen Einstellungen. Hinzu kommen die Sprachauswahl, Datum und Uhrzeit sowie die Anzeige von Einschalt- und Lichtbogenzeit. Softwarestatus und Seriennummer sind im entsprechenden Menü abrufbar. Die abgebildeten Werte richtig lesen 14,4 V, 45 A, 0,8 mm und 1,7 m/min zeigen einen beispielhaften Einstellzustand. Ebenso bezeichnet Fe-Sg2(mix18) Ø 1,0 mm das im Bild gewählte Draht-/Gasprogramm. Daraus ergeben sich weder Leistungsgrenzen der Maschine noch eine allgemeingültige Schweissempfehlung; massgeblich sind Modell, Werkstoff, Nahtaufgabe und erprobte Parameter. HX: Hyper Front Panel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten HyperPuls-Schweissen HyperForce-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperUP-Schweissen MMA-Elektrodenschweissen WIG Lift Arc und Fugenhobeln 99 Programme im JOB-Modus EX: EcoMIG Front Panel MIS-Schweissen MIG-Löten Hyper Force, Root, Cold MMA-Elektrodenschweissen WIG Lift Arc JOB-Modus mit 99 Programmen EX: EcoPuls Front Panel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten Hyper Force, Root, Cold MMA-Elektrodenschweissen WIG Lift Arc JOB-Modus mit 99 Programmen SX: Steel Front Panel MIS-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperForce-Schweissen WIG-Lift-Arc-Schweissen MMA-Schweissen SX: Steel Puls Front Panel MIS-Schweissen HyperPuls-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperForce-Schweissen HyperUP-Schweissen WIG-Lift-Arc-Schweissen MMA-Schweissen
 Ausstattung: Verfahren: MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG; Kühlung: luftgekühlt oder wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergie / JOB (99).
 
 Technische Daten – HyperMIG CWK:
 
-| Modell | 300 | 350 | 400 | 450* | 500* | 600* |
-| --- | --- | --- | --- | --- | --- | --- |
-| Upgrade | max 400A | max 400A | – | max 600A | max 600A | – |
-| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
-| Netzabsicherung | 20A | 20A | 20A | 32A | 32A | 32A |
-| Leerlaufspannung | 105V | 105V | 105V | 105V | 105V | 105V |
-| Effektiver Eingangsstrom | 19A | 19A | 19A | 32A | 32A | 32A |
-| Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A | 10 - 450A | 10 - 500A | 10 - 600A |
-| Einschaltdauer bei max. Strom (40 °C) | – | – | 45% / 400A | – | 70% / 500A | 40% / 600A |
-| Strom bei 60 % ED (40 °C) | – | 350A | 360A | – | – | 530A |
-| Strom bei 100 % ED (40 °C) | 300A | 300A | 300A | 450A | 450A | 450A |
-| Masse CWK/CGK | 930x512x864mm | 930x512x864mm | 930x512x864mm | – | – | – |
-| Masse WWK/WGK | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm |
-| Gewicht CGK | 65kg | 65kg | 65kg | – | – | – |
-| Gewicht CWK | 70kg | 70kg | 70kg | – | – | – |
-| Gewicht WGK | 80kg | 80kg | 80kg | – | – | – |
-| Gewicht WWK | 85kg | 85kg | 85kg | 92kg | 92kg | 92kg |
-| Schutzart | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 |
-| Konformitätszeichen | CE | CE | CE | CE | CE | CE |
-| Sicherungsklasse | S | S | S | S | S | S |
+| Modell | 300 | 350 | 400 | 450* | 500* | 550* | 600* |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Upgrade | max 400A | max 400A | – | max 600A | max 600A | max 600A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 20A | 20A | 20A | 32A | 32A | 32A | 32A |
+| Leerlaufspannung | 105V | 105V | 105V | 105V | 105V | 105V | 105V |
+| Effektiver Eingangsstrom | 19A | 19A | 19A | 32A | 32A | 32A | 32A |
+| Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A | 10 - 450A | 10 - 500A | 10 - 550A | 10 - 600A |
+| Einschaltdauer bei max. Strom (40 °C) | – | – | 45% / 400A | – | 70% / 500A | 50% / 550A | 40% / 600A |
+| Strom bei 60 % ED (40 °C) | – | 350A | 360A | – | – | 530A | 530A |
+| Strom bei 100 % ED (40 °C) | 300A | 300A | 300A | 450A | 450A | 450A | 450A |
+| Masse CWK/CGK | 930x512x864mm | 930x512x864mm | 930x512x864mm | – | – | – | – |
+| Masse WWK/WGK | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm |
+| Gewicht CGK | 65kg | 65kg | 65kg | – | – | – | – |
+| Gewicht CWK | 70kg | 70kg | 70kg | – | – | – | – |
+| Gewicht WGK | 80kg | 80kg | 80kg | – | – | – | – |
+| Gewicht WWK | 85kg | 85kg | 85kg | 92kg | 92kg | 92kg | 92kg |
+| Schutzart | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE | CE | CE | CE | CE |
+| Sicherungsklasse | S | S | S | S | S | S | S |
 *: Nur als WWK-Variante erhältlich.
 
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.
+
+### MAHE HyperMIG TWIN
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/
+Kategorie: Schweissgeräte / MIG / MAG · Typ: MIG/MAG · Art.-Nr.: HYPERMIG-TWIN · Preis: auf Anfrage (CHF)
+Wassergekühlte MIG/MAG-Anlage mit zwei Drahtvorschubkoffern für verschiedene Drähte; wahlweise grafisches X- oder HX-Bedienpanel.
+HyperMIG TWIN ist für Arbeitsplätze gedacht, die zwischen verschiedenen Schweissdrähten wechseln. Zwei getrennte Drahtvorschubkoffer halten die jeweilige Drahtrüstung bereit. Die Auswahl über den Brennertaster ruft die Einstellungen des aktiven Vorschubs auf; das verringert den Rüstaufwand beim Wechsel der Drahtaufgabe.
+- TWIN bezeichnet die Ausführung mit zwei Drahtvorschubkoffern. TwinArc bezeichnet dagegen ein gesondertes MAHE-Verfahrenskonzept. Aus dem Gerätenamen TWIN folgt keine gleichzeitige Tandemschweissung mit zwei Drähten.
+- Nennen Sie für beide Vorschübe Werkstoff, Drahtdurchmesser, Schutzgas und Brenner sowie den benötigten Abstand zur Stromquelle. MAHE nennt für TWIN Zwischenschlauchpakete bis 20 m. Die Parameter werden je Vorschub separat eingestellt; vor dem Schweissen ist der aktive Vorschub zu kontrollieren.
+- Wählen Sie Modell 300, 350 oder 400 und das grafische X- oder das HX-Panel. Die Herstellerfotografie zeigt HX. Prüfen Sie Strom und Einschaltdauer in der jeweiligen Tabellenspalte; Paneloptionen und Prozessfreischaltungen werden im Angebot festgelegt. Die Spritzerbildung hängt auch von Draht, Gas, Einstellung und Anwendung ab.
+Weiterführend: [MAHE HyperMIG X](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/)
+Weiterführend: [Verfahren](https://www.ves-tech.ch/verfahren/)
+Besonderheiten: Zwei Drahtvorschubkoffer für verschiedene Schweissdrähte; Automatische Parametereinstellung durch Drücken des Brennertasters; Digital synergy kontrolliert; Spritzerfreier Lichtbogen; HyperPuls, HyperSpeedPuls; HyperCold und HyperForce; MMA und Fugenhobeln; Fernbedienung (Up/Down Brennertaster); 4-Rollenantrieb; Zuleitungskabel mit 5 Metern Länge; Zwischenschlauchpakete bis 20 Meter; Temperatur kontrollierte Lüfter; Wasserpumpen Automatik on/off; Hochleistungs-Wasserkühlung; Umweltfreundliches Design, 100% recycelbar..
+Fronteingabesysteme: X: Grafisches Bedienpanel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten HyperPuls-Schweissen HyperForce-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperUP-Schweissen MMA-Elektrodenschweissen WIG Lift Arc und Fugenhobeln 99 Programme im JOB-Modus Das grafische X-Bedienpanel verbindet einen Farb-Grafikbildschirm mit vier Funktionstasten und einem zentralen Dreh-/Drücksteller. MAHE führt es für HyperMIG X und HyperMIG TWIN auf. Die Bildschirmführung bündelt Programmauswahl, Schweisswerte und JOB-Verwaltung; die Beschriftung über den Tasten zeigt die jeweilige Funktion. Ausstattung gezielt festlegen: Die MAHE-Produktseite nennt den möglichen Funktionsumfang des Panels; die Anleitung bezeichnet Doppelpuls als Option. Verfügbare Verfahren und Freischaltungen werden deshalb für die gewählte Geräteausführung im Angebot bestätigt. Eine Nachrüstung bestehender EX-, SX- oder HX-Anlagen ist anhand von Modell, Seriennummer und Softwarestand zu prüfen. Programm und aktiver Drahtvorschub Die Informationsleiste zeigt Benutzer, Drahtwerkstoff, Schutzgas und Drahtdurchmesser sowie Datum und Uhrzeit. Bei mehreren installierten Drahtvorschüben wird der aktive Vorschub angezeigt. Das unterstützt die Kontrolle, ob Programm und eingelegter Draht zum Auftrag passen. Vier MIG-Einstellungen auf einen Blick Die obere Einstellleiste enthält Lichtbogenlängenkorrektur, Materialdicke in mm, Drahtgeschwindigkeit in m/min und Lichtbogendynamik. Drehen verändert den gewählten Wert, Drücken wechselt zum nächsten Parameter. Lichtbogenlängenkorrektur und Materialdicke stehen im manuellen MIG-Modus gemäss Anleitung nicht zur Verfügung. Sollwerte, Messwerte und HOLD Die Hauptanzeige stellt Spannung in V und Strom in A gross dar. Vor dem Schweissen zeigt sie die Sollwerte, während des Schweissens die aktuellen Messwerte. Danach bleiben die letzten Messwerte als HOLD sichtbar, bis das Panel bedient oder ein neuer Schweissvorgang gestartet wird. Betriebsarten und Vorbereitung Über die Betriebsartenleiste werden 2-Takt, 4-Takt sowie Punkt- und Intervallbetrieb gewählt. Manueller Drahteinzug und Gastest sind dort ebenfalls erreichbar. Für die synergische Programmauswahl werden Drahtwerkstoff, Drahtdurchmesser und Schutzgas festgelegt. Verfahren und Feinabstimmung Die Verfahrensauswahl umfasst die für die konkrete Anlage verfügbaren MIG/MAG-, Puls- und Hyper-Verfahren sowie MMA, WIG Lift Arc und Kohlelichtbogenfugenhobeln. MENU erschliesst verfahrensabhängige Parameter wie Gasvor- und Gasnachströmzeit, Startverhalten und Kraterfüllung. Bei freigeschaltetem Doppelpuls gehören Frequenz und Amplitude dazu. 99 JOB-Speicher für wiederkehrende Arbeiten Schweisseinstellungen lassen sich in 99 internen Speicherplätzen ablegen, aufrufen und bearbeiten. Eine passende Kombination aus Draht, Gas und Parametern kann so wiederverwendet werden. Die Anleitung weist ausdrücklich darauf hin, dass die Schweissbetriebsart, etwa 2-Takt oder 4-Takt, nicht im JOB gespeichert wird und separat gewählt werden muss. Bis zu acht Benutzerprofile Die Anleitung beschreibt bis zu acht Benutzer mit eigenen Einstellungen. Hinzu kommen die Sprachauswahl, Datum und Uhrzeit sowie die Anzeige von Einschalt- und Lichtbogenzeit. Softwarestatus und Seriennummer sind im entsprechenden Menü abrufbar. Die abgebildeten Werte richtig lesen 14,4 V, 45 A, 0,8 mm und 1,7 m/min zeigen einen beispielhaften Einstellzustand. Ebenso bezeichnet Fe-Sg2(mix18) Ø 1,0 mm das im Bild gewählte Draht-/Gasprogramm. Daraus ergeben sich weder Leistungsgrenzen der Maschine noch eine allgemeingültige Schweissempfehlung; massgeblich sind Modell, Werkstoff, Nahtaufgabe und erprobte Parameter. HX: Hyper Front Panel MIS-Schweissen Impulsschweissen Doppelpulsschweissen MIG-Löten HyperPuls-Schweissen HyperForce-Schweissen HyperCold-Schweissen HyperRoot-Schweissen HyperUP-Schweissen MMA-Elektrodenschweissen WIG Lift Arc und Fugenhobeln 99 Programme im JOB-Modus
+Ausstattung: Verfahren: MIG/MAG · MMA · WIG Lift Arc; Kühlung: wassergekühlt; Antrieb: 4-Rollen; Betriebsart: Synergie / JOB (99).
+
+Technische Daten – HyperMIG TWIN:
+
+| Modell | 300 | 350 | 400 |
+| --- | --- | --- | --- |
+| Upgrade | max 400A | max 400A | – |
+| Netzspannung | 3x400V, 50/60Hz | 3x400V, 50/60Hz | 3x400V, 50/60Hz |
+| Netzabsicherung | 20A | 20A | 20A |
+| Leerlaufspannung | 105V | 105V | 105V |
+| Effektiver Eingangsstrom | 19A | 19A | 19A |
+| Schweissstrombereich | 10 - 300A | 10 - 350A | 10 - 400A |
+| Einschaltdauer bei max. Strom (40 °C) | – | – | 45% / 400A |
+| Strom bei 60 % ED (40 °C) | – | 350A | 360A |
+| Strom bei 100 % ED (40 °C) | 300A | 300A | 300A |
+| Masse | 1400x512x864mm | 1400x512x864mm | 1400x512x864mm |
+| Gewicht | 95kg | 95kg | 95kg |
+| Schutzart | IP23 | IP23 | IP23 |
+| Konformitätszeichen | CE | CE | CE |
+| Sicherungsklasse | S | S | S |
+*: Modelle 300, 350 und 400 gemäss MAHE-Tabelle. Ein Strich bedeutet: In dieser Tabellenzelle veröffentlicht MAHE keinen Wert. Freischaltungen, Draht-/Gasausrüstung und Panel werden für die konkrete Anlage bestätigt. Herstellerabbildung der Anlage: HX-Ausführung; das neue grafische X-Panel ist separat dargestellt.
+
+Werkstoffe: Stahl, INOX, Aluminium.
+Passendes Zubehör: Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.
 
 ### MAHE EcoMIG Digital / Analog
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/
@@ -59,6 +102,7 @@ EcoMIG verbindet MIG/MAG mit einer kompakten Bauform. Die Wahl zwischen digitale
 Weiterführend: [MAHE MMS 2000 / 3000](https://www.ves-tech.ch/produkte/schweissgeraete/mms/)
 Weiterführend: [MAHE HyperMIG X](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/)
 Besonderheiten: Stufenlose MIG/MAG-Regelung; Synergie-Kennlinien; MMA-Elektrode möglich; 4-Rollen-Antrieb; Kompakt & fahrbar; Robust für Werkstatt & Montage.
+Fronteingabesysteme: EcoMIG 3000 Analog Front Panel Punkt und Intervall Elektrodenschweissen WIG-Lift-Arc-Schweissen Elektronische Drossel EcoMIG 3000 Digital Front Panel MIS-Schweissen Punkt und Intervall Synergiegesteuert MMA-Schweissen WIG-Lift-Arc-Schweissen EcoMIG 2000 Digital Front Panel MIS-Schweissen Synergiegesteuert
 Ausstattung: Verfahren: MIG/MAG; Antrieb: 4-Rollen; Ausführung: kompakt / fahrbar; Bedienung: digital oder analog.
 
 Technische Daten – EcoMIG Digital:
@@ -93,6 +137,7 @@ Die Seite führt MMS 2000 und MMS 3000 gemeinsam. Entscheiden Sie deshalb nach d
 Weiterführend: [MAHE EcoMIG Digital / Analog](https://www.ves-tech.ch/produkte/schweissgeraete/ecomig/)
 Weiterführend: [MAHE WK 300](https://www.ves-tech.ch/produkte/zubehoer/wk300/)
 Besonderheiten: Spritzerfreier Lichtbogen; Mobil und leicht, nur 11,5 kg; Rollenantrieb; Zuleitungskabel mit 5 Metern Länge; Umpolsystem; D200-Spule; WIG Lift Arc; Impulslichtbogen; Lichtbogen mit HyperCold / HyperRoot; Mobil und leicht, nur 21 kg; 4-Rollenantrieb; D300-Spule.
+Fronteingabesysteme: EcoMIG Light Panel MIS-Schweissen im Synergy-Modus EcoMIG Front Panel MIS-Schweissen Hyper Cold, Root, Force WIG Lift Arc Elektrodenschweissen JOB-Modus mit 99 Programmen MMA-Schweissen EcoPuls Front Panel MIS-Schweissen Impulsschweissen Doppelpulsschweissen Hyper Force, Cold, Root WIG Lift Arc Elektrodenschweissen JOB-Modus mit 99 Programmen MMA-Schweissen
 Ausstattung: Verfahren: MIG/MAG; Einsatz: Montage / Werkstatt; Bauart: tragbar; Serie: MMS 2000 · MMS 3000.
 
 Technische Daten – MMS:
@@ -127,6 +172,7 @@ Omega AX ist die mobile AC/DC-WIG-Ausführung mit 230-V-Anschluss. Für die Ausw
 Weiterführend: [MAHE Beta DX](https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/)
 Weiterführend: [MAHE HyperTIG AX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-ax/)
 Besonderheiten: Resonanzinverter mit DSP-Steuerung; Impulsschweissen mit bis zu 20 kHz; ActiveBoost-Funktion; Hyper-ARC-Active-Regelung; HyperSpot-Schweissen; Mix-TIG-Schweissen; Funktion zur Kalottenformung; Strommodulation einstellbar; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy-Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
+Fronteingabesysteme: Omega AX Pro: Bedienpanel Hyper Arc Active HyperSpot AC-Mix-TIG 20-kHz-Puls HF-Puls LF-Puls Active Boost Fernbedienung Omega AX Syn: Bedienpanel Autopuls Active Boost Fernbedienung
 Ausstattung: Verfahren: WIG AC/DC; Zündung: HF; Bauart: mobil.
 
 Technische Daten – Omega AX:
@@ -161,6 +207,7 @@ Beta DX ist eine mobile WIG-DC-Stromquelle für Stahl und Chromstahl. Klären Si
 Weiterführend: [MAHE Omega AX](https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/)
 Weiterführend: [MAHE HyperTIG DX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/)
 Besonderheiten: Resonanzinverter mit DSP-Steuerung; Impulsschweissen mit bis zu 20 kHz; ActiveBoost-Funktion; Hyper-ARC-Active-Regelung; HyperSpot-Schweissen; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy-Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
+Fronteingabesysteme: Beta DX Pro: Bedienpanel Hyper Arc Active HyperSpot 20-kHz-Puls HF-Puls LF-Puls Active Boost Fernbedienung Beta DX Syn: Bedienpanel Autopuls Active Boost Fernbedienung
 Ausstattung: Verfahren: WIG DC; Bauart: mobil.
 
 Technische Daten – Beta DX:
@@ -195,6 +242,7 @@ HyperTIG AX ist eine industrielle WIG-AC/DC-Stromquelle mit 400-V-Anschluss und 
 Weiterführend: [MAHE Omega AX](https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/)
 Weiterführend: [MAHE HyperTIG DX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/)
 Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot-Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper-ARC-Active-Regelung; Mix-TIG-Schweissen; Strommodulation einstellbar; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Fronteingabesysteme: HyperTIG AX: Bedienpanel Einknopfbedienung Übersichtliche Bedienerführung Synergische Kennlinien Hyper-Arc-Active-Kennlinie serienmässig HyperSpot-Kennlinie serienmässig ActiveSpot-Kennlinie serienmässig Hochfrequenzpulsen serienmässig Fernbedienung Ein/Aus HF-Start oder Lift-Arc-Start AC-Schweissen (WIG und MMA)
 Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
 
 Technische Daten – HyperTIG AX:
@@ -224,6 +272,7 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: HYPERTIG-DX · Preis: auf Anfrage (CHF)
 Leistungsstarke WIG-DC-Stromquelle für hohe Abschmelzleistung.
 Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot-Punktschweissen; ActiveSpot: schnelle Heftfunktion; Hyper-ARC-Active-Regelung; Digitale Anzeige; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Fronteingabesysteme: HyperTIG DX: Bedienpanel Einknopfbedienung Übersichtliche Bedienerführung Hyper-Arc-Active-Kennlinie serienmässig HyperSpot-Kennlinie serienmässig ActiveSpot-Kennlinie serienmässig Hochfrequenzpulsen serienmässig Fernbedienung Ein/Aus HF-Start oder Lift-Arc-Start MMA-Schweissen
 Ausstattung: Verfahren: WIG DC; Kühlung: wassergekühlt.
 
 Technische Daten – HyperTIG DX:
@@ -253,6 +302,7 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DIGITAL · Preis: auf Anfrage (CHF)
 Mobile digitale WIG-Schweissmaschine mit Programmspeicher.
 Besonderheiten: Hochfrequenz-Impulsschweissen; Hyper-ARC-Active-Regelung; Zuleitungskabel mit 5 Metern Länge; Digitale Ampere-Anzeige; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Fronteingabesysteme: Beta digital Profi: Bedienpanel Beta TIG Active Arc Beta TIG Spot Arc Beta TIG HF Puls Beta TIG Active Boost MMA-Schweissen Remote Control Beta digital Syn: Bedienpanel Beta TIG Active Boost Beta TIG Auto Puls Beta TIG Easy Use Spot Arc
 Ausstattung: Verfahren: WIG DC; Bedienung: digital.
 
 Technische Daten – Beta digital:
@@ -301,6 +351,7 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG AC/DC · Art.-Nr.: HYPERTIG-ACDC · Preis: auf Anfrage (CHF)
 Leistungsstarke AC/DC-Stromquelle für höchste Anforderungen.
 Besonderheiten: Hochfrequenz-Impulsschweissen; HyperSpot-Punktschweissen; Hyper-ARC-Active-Regelung; Mix-TIG-Schweissen; Strommodulation einstellbar; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige für Volt und Ampere; Leistungsstarke Wasserkühlung; Fernbedienung; Synergy-Einstellungen; JOB-Modus.
+Fronteingabesysteme: HyperTIG AC/DC: Bedienpanel Einknopfbedienung Übersichtliche Bedienerführung Synergische Kennlinien Hyper-Arc-Active-Kennlinie serienmässig HyperSpot-Kennlinie serienmässig Hochfrequenzpulsen serienmässig Fernbedienung Ein/Aus HF-Start oder Lift-Arc-Start DC+ und DC- Schweissen (MMA) AC-Schweissen (MMA)
 Ausstattung: Verfahren: WIG AC/DC; Kühlung: wassergekühlt (CWK).
 
 Technische Daten – HyperTIG AC/DC CWK:
@@ -336,6 +387,7 @@ i-1600 ist ein tragbarer Elektrodeninverter; die Dokumentation führt auch WIG L
 Weiterführend: [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/)
 Weiterführend: [MAHE MT170 V](https://www.ves-tech.ch/produkte/zubehoer/mt170v/)
 Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Force Arc; Anti-Stick-Funktion; WIG Lift ARC; Zuleitungskabel mit 5 Metern Länge; Arbeitet an langen Versorgungskabeln; 100-V-Technologie.
+Fronteingabesysteme: i-1600: Bedienpanel
 Ausstattung: Verfahren: MMA (Elektrode); Bauart: tragbar; Bedienung: einfach.
 
 Technische Daten – i-1600:
@@ -370,6 +422,7 @@ Delta 1800 verbindet Elektrodenschweissen und WIG Lift. Die getrennt aufgeführt
 Weiterführend: [MAHE i-1600](https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/)
 Weiterführend: [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/)
 Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Force Arc; Anti-Stick-Funktion; Zuleitungskabel mit 5 Metern Länge; Fernbedienung; WIG Lift Arc.
+Fronteingabesysteme: Delta: Bedienpanel
 Ausstattung: Verfahren: MMA · WIG-Lift; Bauart: tragbar.
 
 Technische Daten – Delta:
@@ -399,6 +452,7 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL · Preis: auf Anfrage (CHF)
 Digitaler Multifunktions-Inverter für den Profi.
 Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Arc Force einstellbar; Hot Start einstellbar; Anti-Stick-Funktion; Funktion zum Fugenhobeln; Einstellbare Leerlaufspannung ab 15 V; Stufenlose Vorwahl der Netzsicherung; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige für Volt und Ampere; Fernbedienung.
+Fronteingabesysteme: Delta Digital: Bedienpanel
 Ausstattung: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
 
 Technische Daten – Delta Digital:
@@ -428,6 +482,7 @@ URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL-DS · Preis: auf Anfrage (CHF)
 Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen.
 Besonderheiten: Zum Unterwasserschweissen; 15 V OCV; Aktive OCV-Überwachung; Optionaler Notausschalter; Force Arc; Anti-Stick-Funktion; Zuleitungskabel mit 5 Metern Länge; Funktion zum Fugenhobeln; Zwischen CV und CC umschaltbar; Digitale Anzeigen für Volt und Ampere; Data-Hold-Funktion; Mobil.
+Fronteingabesysteme: Delta Digital: Bedienpanel
 Ausstattung: Verfahren: MMA · Unterwasser; Bedienung: digital; Einsatz: Diving / Offshore.
 
 Technische Daten – Delta Digital DS:
@@ -501,6 +556,7 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-40 · Preis: auf Anfrage (CHF)
 Leichtes 230-V-Plasmaschneidgerät für die Werkstatt.
 Besonderheiten: Trennschnitt max. 8 mm; Qualitätsschnitt max. 5 mm; Stabile Lift-Arc-Zündung; Kleiner Brenner für enge Flächen; Timer für Gesamtzeit; Timer für die Standzeit der Verschleissteile; Lochblech-Schneidfunktion; Integrierter Wasserabscheider; Integrierte Druckanzeige; Plasmaschneidbrenner S 25 in 4 m fest verbaut; Massekabel 16 mm², 4 m, gehört zum Lieferumfang.
+Fronteingabesysteme: Theta 40: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 15 mm; Bauart: tragbar.
 
 Technische Daten – Theta 40:
@@ -537,6 +593,7 @@ Bei Theta 60 HSC unterscheidet das Datenblatt zwischen Trennschnitt unter 35 mm 
 Weiterführend: [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/)
 Weiterführend: [MAHE PSHB 65](https://www.ves-tech.ch/produkte/zubehoer/pshb65/)
 Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt < 35 mm; Empfohlener Schnitt < 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Fronteingabesysteme: Theta HSC: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden; Technologie: HSC.
 
 Technische Daten – Theta 60 HSC:
@@ -568,6 +625,7 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-120 · Preis: auf Anfrage (CHF)
 Industrieller Plasmaschneidinverter mit HSC-Technologie.
 Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt max. 55 mm; Qualitätsschnitt max. 38 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Optionale Schnittstelle für die Automation; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Fronteingabesysteme: Theta HSC: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 55 mm; Technologie: HSC.
 
 Technische Daten – Theta 120 HSC:
@@ -599,6 +657,7 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/
 Kategorie: Plasmaschneiden / Theta · Typ: Plasma Cut · Art.-Nr.: THETA-180 · Preis: auf Anfrage (CHF)
 Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie.
 Besonderheiten: HSC-Technologie; Schneiden bis 80 mm; Funktion zum Fugenhobeln; Lochblech-Schneidfunktion; Zentralanschluss am Brenner; Zuleitungskabel mit 5 Metern Länge; Digitalanzeige; Anzeige für den Maschinenstatus; Brennerpakete mit einer Länge von bis zu 15,2 Metern.
+Fronteingabesysteme: Theta HSC: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden; Schneidleistung: bis 80 mm; Technologie: HSC.
 
 Technische Daten – Theta 180 HSC:
@@ -629,6 +688,7 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-60-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
 Besonderheiten: HSC-Technologie; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt < 35 mm; Empfohlener Schnitt < 25 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Fronteingabesysteme: Theta HSC: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden · Automation; Technologie: HSC; Schnittstelle: CNC / Automation.
 
 Technische Daten – Theta 60 HSC:
@@ -660,6 +720,7 @@ URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-120-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
 Besonderheiten: HSC-Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt über 55 mm; Qualitätsschnitt über 38 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Fronteingabesysteme: Theta HSC: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
 
 Technische Daten – Theta 120 HSC:
@@ -726,6 +787,7 @@ MiniReiniger ist für die mobile elektrolytische Reinigung von Chromstahl beschr
 Weiterführend: [MAHE HCS 1](https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/)
 Weiterführend: [MAHE HyperCleaner CT 200](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/)
 Besonderheiten: Leistungsstarke 200-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Fronteingabesysteme: MiniReiniger: Bedienpanel
 Ausstattung: Verfahren: Elektrolytische Reinigung; Einsatz: mobil; Werkstoff: Chromstahl.
 
 Technische Daten – MiniCleaner:
@@ -751,6 +813,7 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-st/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-ST · Preis: auf Anfrage (CHF)
 Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse.
 Besonderheiten: Leistungsstarke 1200-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Fronteingabesysteme: HyperCleaner ST: Bedienpanel
 Ausstattung: Verfahren: Elektrolytische Reinigung; Lieferung: als Set.
 
 Technische Daten – HyperCleaner ST:
@@ -777,6 +840,7 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-speed/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-SPEED · Preis: auf Anfrage (CHF)
 Leistungsstarker Inverter mit bis zu 2400 W beim Polieren (100 % Einschaltdauer).
 Besonderheiten: Leistungsstarke 2400-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Fronteingabesysteme: HyperCleaner ST Speed: Bedienpanel
 Ausstattung: Verfahren: Elektrolytische Reinigung; Lieferung: als Set.
 
 Technische Daten – HyperCleaner STspeed:
@@ -804,6 +868,7 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-plus/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: Cleaner · Art.-Nr.: HYPERCLEANER-PLUS · Preis: auf Anfrage (CHF)
 Leistungsstarker Inverter mit bis zu 4000 W beim Polieren (30 % Einschaltdauer).
 Besonderheiten: Leistungsstarke 4000-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren, Markieren und Galvanisieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.
+Fronteingabesysteme: HyperCleaner ST Plus: Bedienpanel
 Ausstattung: Verfahren: Elektrolytische Reinigung; Lieferung: als Set.
 
 Technische Daten – HyperCleaner STplus:
@@ -831,6 +896,7 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/
 Kategorie: Reinigungsgeräte / Cleaner · Typ: WIG + Cleaner · Art.-Nr.: HYPERCLEANER-CT200 · Preis: auf Anfrage (CHF)
 Kombiniertes Gerät zum WIG-Schweissen und Reinigen.
 Besonderheiten: Multiprozess: WIG-Schweissen und Reinigen; WIG-Schweissen mit 200 A; Reinigen mit 2000 Watt; Reinigen, Polieren, Markieren und Galvanisieren; Umweltfreundlich und sicher reinigen.
+Fronteingabesysteme: HyperCleaner CT 200: Bedienpanel Beta TIG Active Arc Beta TIG Spot Arc Beta TIG HF Puls Beta TIG Active Boost MMA-Schweissen Remote Control Reinigen, Polieren und Markieren JOB-Modus CT 200 Syn: Bedienpanel Beta TIG Active Boost Beta TIG Auto Puls Beta TIG Easy Use Spot Arc Reinigen, Polieren und Markieren
 Ausstattung: Verfahren: WIG + Reinigung; Kombi: 2-in-1; Lieferung: als Set.
 Werkstoffe: INOX.
 Passendes Zubehör: Reinigungselektrolyt Rapid R1, Reinigungselektrolyt RP1 Pastös, Polierelektrolyt P1, Signierelektrolyt M1, Neutralit N1, WK 200, STT 30, STT 35, MPF 02, MHCT 01, FRC 5, RC 5, RC 100, MT200W, MT180W, MT260, MT170, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
@@ -870,6 +936,7 @@ URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlf100/
 Kategorie: Reinigungsgeräte / Dosiersystem · Typ: Dosierung · Art.-Nr.: MLF100 · Preis: auf Anfrage (CHF)
 Gerät zur automatischen Dosierung von Reinigungsflüssigkeit.
 Besonderheiten: Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit; Automatischer oder manueller Dosiermodus; Möglichkeit zum Anschluss eines externen Tanks; Reinigungsmodus und Spülmodus; Kompatibel mit allen MAHE-HyperCleaner-Reinigungsgeräten; Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten; Mit Reinigungspinselständer mit Tropfschutz.
+Fronteingabesysteme: MLF 100: Bedienpanel
 Ausstattung: Funktion: automatische Dosierung; Medium: Reinigungsflüssigkeit; Einsatz: HyperCleaner-Serie.
 
 Technische Daten – MLF100:
@@ -1287,63 +1354,63 @@ Spritzerarmer MIG/MAG-Lichtbogen für den Werkstattalltag.
 MIS steht bei MAHE für Multi-Induktion-System. Die Regelung beeinflusst das Lichtbogenverhalten und den Werkstoffübergang, um Spritzer und anschliessende Reinigungsarbeit zu reduzieren. MIS ist eine MIG/MAG-Kennlinie; es ist weder ein WIG-Verfahren noch automatisch ein Pulsprogramm.
 Allgemeine Fertigung, Reparaturen und Montage, wenn ein ruhig führbarer Lichtbogen und überschaubare Nacharbeit gefragt sind. Die passende Kennlinie richtet sich nach Draht, Gas und Werkstoff.
 Drahtvorschub, Lichtbogenlänge und Dynamik an der Probe abstimmen. Saubere Kontaktflächen, ein gleichmässiger Drahttransport und die richtige Gasabdeckung bleiben entscheidend; auch ein geregelter Lichtbogen ist nicht unter allen Bedingungen spritzerfrei.
-Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000, MAHE HyperMIG TWIN
 
 ### MIG/MAG-Puls · kontrollierter Tropfenübergang
 Grundstrom und Stromimpulse steuern den Übergang des abschmelzenden Drahtes.
 Ein Grundstrom hält den Lichtbogen aufrecht, während kurze Stromspitzen die Tropfenablösung unterstützen. Bei passender Abstimmung ist ein regelmässiger, kurzschlussarmer Übergang möglich. Die Stromquelle stimmt Impulsform und Drahtvorschub über die gewählte Synergielinie aufeinander ab.
 Aluminium, nichtrostende Stähle und Stahl mit passendem Draht-/Gasprogramm. Interessant bei wechselnden Positionen und wenn weniger Spritzer als beim konventionellen Übergang gewünscht sind.
 Zuerst Werkstoff, Drahtdurchmesser und Schutzgas korrekt wählen, danach Drahtvorschub und Lichtbogenkorrektur einstellen. Eine Puls-Kennlinie ersetzt weder die Nahtvorbereitung noch die Prüfung von Einbrand und Flankenanbindung.
-Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000, MAHE HyperMIG TWIN
 
 ### Doppelpuls · zwei überlagerte Rhythmen
 Ein langsamer Leistungswechsel überlagert den eigentlichen MIG/MAG-Puls.
 Zusätzlich zum schnellen Impuls für den Tropfenübergang wechseln Phasen mit höherer und niedrigerer Leistung. Dieser langsamere Rhythmus beeinflusst Badbewegung und Nahtschuppung. So lässt sich eine gleichmässige, WIG-ähnliche Oberfläche erzielen, während weiterhin mit abschmelzendem Draht geschweisst wird.
 Besonders für sichtbare Aluminiumnähte und wiederkehrende Bauteile, bei denen ein gleichmässiges Nahtbild wichtig ist. Auch hier bestimmt die freigegebene Kennlinie, welche Werkstoffe und Drähte möglich sind.
 Doppelpulsfrequenz, Leistungsunterschied und Schweissgeschwindigkeit gemeinsam abstimmen. Zu langsames Führen kann trotz Puls viel Wärme einbringen. Eine regelmässige Schuppung allein belegt weder ausreichenden Einbrand noch eine fehlerfreie Naht.
-Geraete zum Vergleich: MAHE HyperMIG X
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE HyperMIG TWIN
 
 ### HyperPuls · dynamischer MAHE-Pulslichtbogen
 MAHE-Prozess für produktives Pulsschweissen mit kontrollierbarem Lichtbogen.
 HyperPuls ist eine herstellerspezifische MIG/MAG-Pulsregelung. MAHE beschreibt den Prozess für zügiges Schweissen und Mehrlagenaufgaben. Entscheidend ist, Abschmelzleistung und Schweissgeschwindigkeit so aufeinander abzustimmen, dass die geforderte Nahtgeometrie und Flankenanbindung erreicht werden.
 Fertigungsnähte und mehrlagige Verbindungen mit geeigneter Kennlinie, insbesondere wenn die Prozessführung gegenüber einem normalen Pulsprogramm weiter abgestimmt werden soll.
 Die tatsächliche Geschwindigkeit, der Verzug und die Zwischenlagentemperatur hängen vom Bauteil ab. HyperPuls und Doppelpuls sind unterschiedliche Funktionen; die genaue Kombination und Verfügbarkeit wird am Bedienpanel geprüft.
-Geraete zum Vergleich: MAHE HyperMIG X
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE HyperMIG TWIN
 
 ### HyperSpeedPuls · Pulsfunktion für die Fertigung
 Im HyperMIG-Programm genannte Pulsfunktion für die konkrete Produktionsaufgabe.
 MAHE führt HyperSpeedPuls in der Geräteausstattung der HyperMIG-X-Reihe auf. Für die Auswahl genügt der Funktionsname allein nicht: Benötigt werden die tatsächlich vorhandene Kennlinie, der Werkstoff und die vorgesehene Draht-/Gaskombination. Daraus wird der passende Arbeitspunkt bestimmt.
 Wiederkehrende Produktionsnähte, für die eine passende HyperMIG-Pulslösung geprüft werden soll. Ein Versuch am Originalwerkstoff zeigt, ob Geschwindigkeit, Nahtform und Spritzerverhalten zur Aufgabe passen.
 Bedienpanel, Softwarestand und freigeschaltetes Programm vor der Auswahl abgleichen. Im Versuch werden Schweissgeschwindigkeit, Nahtgeometrie, Nacharbeit und Bauteiltemperatur gemeinsam verglichen. Erst dieser Vergleich zeigt den Nutzen für die konkrete Fertigung.
-Geraete zum Vergleich: MAHE HyperMIG X
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE HyperMIG TWIN
 
 ### HyperForce · Einbrand und Lichtbogendruck
 Konzentrierter MIG/MAG-Lichtbogen für Schweissaufgaben mit höherem Einbrandbedarf.
 HyperForce richtet den Prozess auf einen druckvollen Lichtbogen und tiefen Einbrand aus. Das ist vor allem dort relevant, wo die Nahtflanken zuverlässig aufgeschmolzen werden müssen. Ob sich dadurch Nahtvorbereitung oder Lagenaufbau ändern lassen, wird an der konkreten Verbindung erprobt.
 Bauteile mit höherem Leistungsbedarf und anspruchsvolle Fugen, sofern Werkstoff, Position und Kennlinie dazu passen. Der Prozess kann eine Alternative zu einer weniger konzentrierten Lichtbogeneinstellung sein.
 Brennerwinkel, Stick-out, Schweissgeschwindigkeit und Fugenöffnung beeinflussen das Ergebnis deutlich. Tiefer Einbrand ist kein Ersatz für einen nachgewiesenen Lagenaufbau; Durchbrand und zu starke Wärmeeinbringung bleiben zu beurteilen.
-Geraete zum Vergleich: MAHE HyperMIG X
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE HyperMIG TWIN
 
 ### HyperCold · Wärme gezielt begrenzen
 MAHE-Kennlinie für wärmeempfindliche Bauteile und Spaltüberbrückung.
 HyperCold ist auf eine kontrollierte Wärmeeinbringung und ein gut führbares Schmelzbad ausgelegt. MAHE nennt insbesondere spaltüberbrückende Aufgaben und Wurzellagen. Der Nutzen entsteht durch die passende Kombination aus Kennlinie, Leistung und Brennerbewegung.
 Dünnere oder verzugsempfindliche Konstruktionen sowie Verbindungen mit kontrolliertem Fügespalt. Die Eignung wird an Material, Nahtform und Blechdicke geprüft.
 Weniger Wärme darf nicht zu fehlender Flankenanbindung führen. Leistung und Geschwindigkeit so abstimmen, dass beide Bauteilkanten sicher aufschmelzen. Eine kalt geführte Einstellung garantiert weder verzugsfreie Teile noch unbegrenzte Spaltüberbrückung.
-Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000, MAHE HyperMIG TWIN
 
 ### HyperRoot · die Wurzellage kontrollieren
 Aufgabenbezogene MIG/MAG-Regelung für den Nahtgrund.
 Bei der Wurzellage müssen Nahtgrund und beide Flanken aufschmelzen, ohne dass das Bad unkontrolliert durchfällt. HyperRoot ist im MAHE-Programm Teil der Cold-/Root-Funktionen. Wurzelspalt, Steghöhe und erreichbare Brennerposition werden deshalb zusammen mit der Kennlinie betrachtet.
 Erste Lagen von geeigneten Stumpfverbindungen und Aufgaben mit wechselnder Zugänglichkeit. Ob eine Gegenlage, Badsicherung oder zusätzliche Wurzelschutzmassnahme nötig ist, bestimmt die Verbindung.
 Den zulässigen Spaltbereich an einer Probe festlegen und die Nahtunterseite beurteilen. HyperRoot ersetzt keine geforderte Formierung oder Nahtprüfung. Das Bedienpanel entscheidet, ob Root separat oder innerhalb einer kombinierten Funktion verfügbar ist.
-Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000, MAHE HyperMIG TWIN
 
 ### HyperUP · vertikal aufwärts schweissen
 Wechsel von Heiss- und Kaltphasen für die Steignaht.
 HyperUP wechselt automatisch zwischen einer leistungsstärkeren und einer kühleren Prozessphase. Das unterstützt den Aufbau und die Kontrolle des Bades beim Schweissen nach oben. MAHE beschreibt damit Steignähte mit geradliniger Führung statt der üblichen Pendelbewegung.
 Vertikale Nähte, bei denen ein reproduzierbarer Badaufbau und eine gleichmässige Führung gesucht werden. Werkstoff und Kennlinie müssen für die vorgesehene Position geeignet sein.
 Phasenabstimmung, Nahtquerschnitt und Schweissgeschwindigkeit an einer Probe festlegen. Zu grosses Badvolumen kann auch mit HyperUP absacken. Die Funktion ist abhängig von Bedienpanel und gegebenenfalls freigeschaltetem Programm.
-Geraete zum Vergleich: MAHE HyperMIG X
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE HyperMIG TWIN
 
 ### TriArc · Cold, Root und Force kombiniert
 Dynamische Kennlinie mit leistungsabhängigem Lichtbogenverhalten.

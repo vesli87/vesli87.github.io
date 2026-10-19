@@ -1,7 +1,7 @@
 {
  "hypermig-x": {
-  "fr": "Série de postes MIG/MAG pulsés entièrement équipés, avec HyperForce et soudage MIS sans projections.",
-  "it": "Serie MIG/MAG pulsata completa con HyperForce e saldatura MIS senza spruzzi."
+  "fr": "Série MIG/MAG avec procédés pulsés et Hyper, dotée du nouveau panneau graphique X ; équipement selon la version.",
+  "it": "Serie MIG/MAG con procedimenti pulsati e Hyper e nuovo pannello grafico X; dotazione secondo la versione."
  },
  "ecomig": {
   "fr": "Poste MIG/MAG à réglage continu, ultra-compact et simple d’utilisation.",
@@ -314,5 +314,9 @@
  "plasmafix-50s": {
   "fr": "Source de courant microplasma à partir de 0,05 A pour les travaux les plus fins : feuilles de 0,01 mm, grillages et petite robinetterie.",
   "it": "Generatore microplasma da 0,05 A per i lavori più fini: lamierini da 0,01 mm, reti metalliche e piccola rubinetteria."
+ },
+ "hypermig-twin": {
+  "fr": "Poste MIG/MAG refroidi par eau avec deux dévidoirs pour différents fils ; au choix, panneau graphique X ou panneau HX.",
+  "it": "Saldatrice MIG/MAG raffreddata ad acqua con due trainafilo per fili diversi; a scelta pannello grafico X o pannello HX."
  }
 }

@@ -10,7 +10,7 @@
 > (`ves-tech-eshop.html`, ~440 kB, eine URL für die ganze Seite). Das war für eine
 > Vorschau in Ordnung, für eine echte Website aber nicht: Suchmaschinen und
 > Antwortmaschinen sahen genau **eine** Seite ohne Inhalt. v2 erzeugt daraus
-> **360 echte, vorgerenderte Inhaltsseiten** in DE/FR/IT. Der historische Stand liegt (mit nachtraeglich abgesicherten mailto-Parametern)
+> **363 echte, vorgerenderte Inhaltsseiten** in DE/FR/IT. Der historische Stand liegt (mit nachtraeglich abgesicherten mailto-Parametern)
 > unter `build/source-snapshot.html`, die alte Fassung dieses Dokuments unter
 > `build/MASTER_PROMPT_v1.md`.
 
@@ -108,7 +108,7 @@ build/i18n_extra.json ← SEO-/AEO-Texte, FAQ, Rechtstexte (von Hand gepflegt)
         └─ build/build.py    schreibt alles raus
         │
         ▼
-360 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
+363 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
     + data/products.json + data/search-{de,fr,it}.json
 ```
 
@@ -161,7 +161,7 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 
 | Datei | Inhalt |
 |---|---|
-| `P.json` | 79 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
+| `P.json` | 80 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
 | `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
 | `UI.json` | 88 UI-Strings × de/fr/it |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
@@ -251,6 +251,31 @@ Die Namen und Alternativtexte werden über `fpName()` in DE/FR/IT ausgegeben.
 Die Grafiken werden nicht hochskaliert und begründen keine neuen technischen
 Leistungsangaben. MiniReiniger, ST und ST Plus behalten ihre eigenen Panels.
 
+Am 19.10.2026 kam das vom Inhaber bereitgestellte `MAHE HyperMIG X Frontpanel.png`
+(1541 × 1020 px) hinzu. `hypermig_x_graphic` steht bei HyperMIG X an erster Stelle
+und bei der neu aufgenommenen HyperMIG TWIN vor HX. Die WebP-Stufen sind 400,
+1000 und 1541 px; das Originalmotiv bleibt unverändert. Beide Herstellerseiten
+führen X und HX ausdrücklich auf; EX/SX bleiben ausschliesslich bei HyperMIG X.
+`PANEL_GUIDES.json` erklärt Bedienung, Anzeigen, Benutzerprofile und JOB in DE/FR/IT,
+ergänzt die geprüften Herstellerlisten und wird vor dem Build validiert. Quelle für
+die Bedienung ist `HyperMIG_X_TFT_10_DE.pdf`, Abschnitt 4.2: Doppelpuls ist eine
+Option, JOB speichert die Betriebsart der Brennertaste nicht, bis zu acht Benutzer
+sind möglich. Bildwerte sind Beispiele, eine allgemeine Nachrüstbarkeit wird nicht
+zugesagt. Suchindex, `products.json::front_panels` und `llms-full.txt` enthalten
+dieselben Erläuterungen. Die öffentlich sichtbaren Herstellerlinks bleiben erhalten.
+
+HyperMIG TWIN ist ein eigenes Produkt mit zwei Drahtvorschubkoffern und den
+sichtbaren Modellspalten 300/350/400 aus Tabelle 12372. Versteckte AJAX-Spalten
+450–600 werden nicht übernommen. Produktfoto: originale HX-Ausführung; das neue
+X-Panel steht separat in der Galerie und im Bedienabschnitt. TWIN ist nicht mit
+TwinArc gleichzusetzen. Technische Daten werden getrennt von HyperMIG X geführt;
+Gewicht 95 kg, Zwischenschlauchpakete bis 20 m gemäss TWIN-Unterlagen. Der falsch
+mit CWK beschriftete Datenblattlink der Herstellerseite wird nach dem tatsächlichen
+PDF-Inhalt als X / HX TWIN bezeichnet (`scrape_dls.py`). Die neue Anleitung zum
+Grafikpanel und die separate HX-TWIN-Anleitung sind eindeutig benannt. Der aktuelle
+HyperMIG-X-Tabellenstand enthält zusätzlich die Modellspalte 550; alte Kurzwerte
+zu 420 A, 76 V und 103 kg wurden mit den Herstellerwerten abgeglichen und korrigiert.
+
 Neues Herobild: `python3 build/hero.py hero <datei>` (braucht `cwebp`, und für
 eine Vorlage, die kein JPEG ist, zusätzlich `Pillow` für den JPEG-Rückfall).
 Beides meldet sich mit einem Satz, wenn es fehlt. `build.py`, `check.py` und
@@ -270,7 +295,7 @@ Bildwerkzeuge, die von Hand laufen, haben Voraussetzungen.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (351 URLs); Suche, Datenschutz und AGB
+- `sitemap.xml` mit `xhtml:link`-Alternates (354 URLs); Suche, Datenschutz und AGB
   sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
 - `lastmod` folgt dem Inhalt jeder Seite. Asset-Versionsnummern, CSP/SRI und die
   reine Laufzeitkonfiguration `window.VT` ändern das Datum nicht. Sichtbarer
@@ -372,7 +397,7 @@ Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auft
 
 - **`/llms.txt`** — kompakte Landkarte der Website im llms.txt-Format
 - **`/llms-full.txt`** — der komplette zitierfähige Inhalt in einer Datei:
-  alle 79 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
+  alle 80 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
   dazu 19 erklaerte Verfahren/Funktionen und alle 10 FAQ-Antworten
 - **`/data/products.json`** — maschinenlesbarer Katalog, dreisprachig, mit
   Verkäuferangaben und Lizenzhinweis

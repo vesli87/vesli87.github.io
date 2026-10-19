@@ -177,7 +177,7 @@ def search_index(lang):
             "t1": norm(f"{C.pFullName(lang, p)} {p['name']} {p['id']} "
                        f"{' '.join(p.get('aka', []))}"),
             "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
-            "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)}"),
+            "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)} {C.panel_text(lang, p)}"),
         })
     cats = []
     for c in C.CATS:
@@ -241,6 +241,11 @@ def products_json():
             "subcategory": {l: C.subT(l, p["sub"]) for l in C.LANGS},
             "description": {l: C.pDesc(l, p) for l in C.LANGS},
             "highlights": {l: C.highlightsOf(l, p) or [] for l in C.LANGS},
+            "front_panels": [{"id": key, "name": {l: C.fpName(l, C.FP[key]) for l in C.LANGS},
+                              "image": R.img_abs(C.FP[key]['img'], 1000) if C.FP[key].get('img') else None,
+                              "features": C.PANEL_HL_DEVICE.get(key, {}),
+                              **({"guide": C.PANEL_GUIDES[key]} if key in C.PANEL_GUIDES else {})}
+                             for key in C.fpAssign(p)],
             "options": {l: [{"name": o["t"], "note": o.get("s", "")}
                             for o in C.optionsOf(l, p)] for l in C.LANGS},
             "specs": {l: {C.trK(l, k): C.trV(l, v) for k, v in C.specRest(p).items()}
@@ -614,6 +619,8 @@ def llms_full():
             hl = C.highlightsOf(L, p)
             if hl:
                 out.append("Besonderheiten: " + "; ".join(hl) + ".")
+            if C.fpAssign(p):
+                out.append("Fronteingabesysteme: " + C.panel_text(L, p))
             opt = C.optionsOf(L, p)
             if opt:
                 out.append("Optionen: " + "; ".join(

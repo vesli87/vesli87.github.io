@@ -990,5 +990,76 @@
    "Reinigungs-/Spülmodus",
    "Kompatibel mit allen Mahe HyperCleaner Reinigungsgeräten."
   ]
+ },
+ "hypermig :: X – Graphic Front Panel": {
+  "url": "https://mahe-online.de/hypermig/",
+  "items": [
+   "MIS Schweißen",
+   "Impuls Schweißen",
+   "Doppelpuls Schweißen",
+   "MIG Löten",
+   "Hyper Puls Schweißen",
+   "Hyper Force Schweißen",
+   "Hyper Cold Schweißen",
+   "Hyper Root Schweißen",
+   "HyperUP Schweißen",
+   "MMA Elektoden Schweißen",
+   "WIG Lift Arc und Fugenhobeln",
+   "99 Job Mode Programme"
+  ]
+ },
+ "twin :: TWIN Wassergekühlt mit zwei Drahtvorschubkoffer": {
+  "url": "https://mahe-online.de/twin/",
+  "items": [
+   "Zwei Drahtvorschubkoffer für verschiedene Schweißdrähte",
+   "Automatische Parametereinstellung durch Drücken des Brennertaster",
+   "Digital synergy kontrolliert",
+   "Sprizerfreier Lichtbogen",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold und HyperForce",
+   "MMA und Fugenhobeln",
+   "Fernbedienung (Up/Down Brennertaster)",
+   "4-Rollenantrieb",
+   "5 MeterZuleitungskabel",
+   "Zwischenschlauchpakete bis 20 Meter",
+   "Temperatur kontrollierte Lüfter",
+   "Wasserpumpen Automatik on/off",
+   "Hochleistungs-Wasserkühlung",
+   "Umweltfreundliches Design, 100% recycelbar."
+  ]
+ },
+ "twin :: X – Graphic Front Panel": {
+  "url": "https://mahe-online.de/twin/",
+  "items": [
+   "MIS Schweißen",
+   "Impuls Schweißen",
+   "Doppelpuls Schweißen",
+   "MIG Löten",
+   "Hyper Puls Schweißen",
+   "Hyper Force Schweißen",
+   "Hyper Cold Schweißen",
+   "Hyper Root Schweißen",
+   "HyperUP Schweißen",
+   "MMA Elektoden Schweißen",
+   "WIG Lift Arc und Fugenhobeln",
+   "99 Job Mode Programme"
+  ]
+ },
+ "twin :: HX – Hyper Front Panel": {
+  "url": "https://mahe-online.de/twin/",
+  "items": [
+   "MIS Schweißen",
+   "Impuls Schweißen",
+   "Doppelpuls Schweißen",
+   "MIG Löten",
+   "Hyper Puls Schweißen",
+   "Hyper Force Schweißen",
+   "Hyper Cold Schweißen",
+   "Hyper Root Schweißen",
+   "HyperUP Schweißen",
+   "MMA Elektoden Schweißen",
+   "WIG Lift Arc und Fugenhobeln",
+   "99 Job Mode Programme"
+  ]
  }
 }

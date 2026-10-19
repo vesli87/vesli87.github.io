@@ -1105,5 +1105,28 @@
    1000,
    1459
   ]
+ },
+ "panels/MAHE HyperMIG X Frontpanel.png": {
+  "key": "mahe-hypermig-x-frontpanel",
+  "w": 1541,
+  "h": 1020,
+  "ratio": 0.6619,
+  "local": true,
+  "sizes": [
+   400,
+   1000,
+   1541
+  ]
+ },
+ "2026/08/HyperMIG_HX_Twin.png": {
+  "key": "hypermig-hx-twin-2c4cf5",
+  "w": 1127,
+  "h": 1849,
+  "ratio": 1.6406,
+  "sizes": [
+   400,
+   1000,
+   1127
+  ]
  }
 }

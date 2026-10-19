@@ -560,6 +560,19 @@
      Zeile gezogen werden, als fehlte daneben etwas. */
   .fp-solo .fp-body{grid-template-columns:auto}
   .fp-solo .fp-panel{justify-self:start}
+  .fp-graphic{scroll-margin-top:24px}
+  .fp-graphic .fp-body{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:28px}
+  .fp-graphic .fp-photo{max-width:100%}
+  .fp-guide{margin-top:26px;line-height:1.7}
+  .fp-guide h5,.fp-guide h6{font-family:'Barlow Condensed',sans-serif;font-size:22px;margin-bottom:12px}
+  .fp-guide p,.fp-guide dd{color:var(--muted);font-size:15px}
+  .fp-guide dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 32px;margin:22px 0}
+  .fp-guide dt{font-weight:700;line-height:1.4;margin-bottom:7px}
+  .fp-guide dd{margin:0}
+  .fp-guide a{text-decoration:underline;text-underline-offset:.18em}
+  .fp-note{padding:16px 20px;border-left:3px solid var(--accent);background:var(--bg2)}
+  .fp-guide .fp-sources{font-size:13px;margin-top:16px}
+  @media(max-width:760px){.fp-graphic .fp-body,.fp-guide dl{grid-template-columns:1fr}.fp-graphic .fp-body{gap:18px}}
   @media(max-width:760px){.fp-body{grid-template-columns:1fr;gap:18px}}
 
   .accgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:16px}

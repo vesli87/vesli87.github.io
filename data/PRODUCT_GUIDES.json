@@ -918,5 +918,82 @@
         "Visita e componenti attualmente compresi vengono concordati in anticipo. La presenza nel catalogo o una richiesta non conferma la disponibilità e non costituisce una prenotazione."
       ]
     }
+  },
+  "hypermig-twin": {
+    "sources": [
+      "https://mahe-online.de/twin/",
+      "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TWIN_10_DE.pdf#page=30",
+      "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TWIN.pdf"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      },
+      {
+        "kind": "page",
+        "id": "processes"
+      }
+    ],
+    "de": {
+      "intro": "HyperMIG TWIN ist für Arbeitsplätze gedacht, die zwischen verschiedenen Schweissdrähten wechseln. Zwei getrennte Drahtvorschubkoffer halten die jeweilige Drahtrüstung bereit. Die Auswahl über den Brennertaster ruft die Einstellungen des aktiven Vorschubs auf; das verringert den Rüstaufwand beim Wechsel der Drahtaufgabe.",
+      "checks": [
+        "TWIN bezeichnet die Ausführung mit zwei Drahtvorschubkoffern. TwinArc bezeichnet dagegen ein gesondertes MAHE-Verfahrenskonzept. Aus dem Gerätenamen TWIN folgt keine gleichzeitige Tandemschweissung mit zwei Drähten.",
+        "Nennen Sie für beide Vorschübe Werkstoff, Drahtdurchmesser, Schutzgas und Brenner sowie den benötigten Abstand zur Stromquelle. MAHE nennt für TWIN Zwischenschlauchpakete bis 20 m. Die Parameter werden je Vorschub separat eingestellt; vor dem Schweissen ist der aktive Vorschub zu kontrollieren.",
+        "Wählen Sie Modell 300, 350 oder 400 und das grafische X- oder das HX-Panel. Die Herstellerfotografie zeigt HX. Prüfen Sie Strom und Einschaltdauer in der jeweiligen Tabellenspalte; Paneloptionen und Prozessfreischaltungen werden im Angebot festgelegt. Die Spritzerbildung hängt auch von Draht, Gas, Einstellung und Anwendung ab."
+      ]
+    },
+    "fr": {
+      "intro": "HyperMIG TWIN s’adresse aux postes de travail qui alternent entre différents fils de soudage. Deux dévidoirs distincts maintiennent chaque équipement de fil prêt à l’emploi. La sélection par la gâchette rappelle les réglages du dévidoir actif et réduit les opérations de préparation lors d’un changement de fil.",
+      "checks": [
+        "TWIN désigne la version à deux dévidoirs. TwinArc est un concept de procédé MAHE distinct. Le nom du poste TWIN ne signifie pas un soudage tandem simultané avec deux fils.",
+        "Précisez pour chaque dévidoir le matériau, le diamètre du fil, le gaz et la torche, ainsi que la distance nécessaire à la source. MAHE indique des faisceaux intermédiaires jusqu’à 20 m pour TWIN. Les paramètres sont réglés séparément pour chaque dévidoir ; vérifiez le dévidoir actif avant de souder.",
+        "Choisissez le modèle 300, 350 ou 400 et le panneau graphique X ou le panneau HX. La photographie du fabricant montre HX. Comparez courant et facteur de marche dans la colonne correspondante ; les options et activations des procédés sont précisées dans l’offre. Les projections dépendent aussi du fil, du gaz, des réglages et de l’application."
+      ]
+    },
+    "it": {
+      "intro": "HyperMIG TWIN è pensata per postazioni che alternano fili di saldatura diversi. Due trainafilo separati mantengono pronta la rispettiva dotazione. La selezione tramite il pulsante della torcia richiama le impostazioni del trainafilo attivo e riduce le operazioni di preparazione al cambio del filo.",
+      "checks": [
+        "TWIN identifica la versione con due trainafilo. TwinArc è invece un distinto concetto di procedimento MAHE. Il nome della macchina TWIN non implica la saldatura tandem simultanea con due fili.",
+        "Specificate per ciascun trainafilo materiale, diametro del filo, gas e torcia, oltre alla distanza necessaria dal generatore. MAHE indica fasci intermedi fino a 20 m per TWIN. I parametri sono impostati separatamente per ogni trainafilo; prima di saldare verificate quale sia attivo.",
+        "Scegliete il modello 300, 350 o 400 e il pannello grafico X o il pannello HX. La fotografia del produttore mostra HX. Confrontate corrente e ciclo di lavoro nella colonna pertinente; opzioni e abilitazioni dei procedimenti sono definite nell’offerta. Gli spruzzi dipendono anche da filo, gas, impostazioni e applicazione."
+      ]
+    }
+  },
+  "hypermig-x": {
+    "sources": [
+      "https://mahe-online.de/hypermig/"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "hypermig-twin"
+      },
+      {
+        "kind": "page",
+        "id": "processes"
+      }
+    ],
+    "de": {
+      "intro": "HyperMIG X umfasst kompakte und getrennte Ausführungen mit Luft- oder Wasserkühlung. Das neue grafische X-Panel wird zusätzlich zu den weiterhin aufgeführten HX-, EX- und SX-Panels angeboten. Wählen Sie Gerätebauform und Bedienausstattung gemeinsam.",
+      "checks": [
+        "CGK, CWK, WGK und WWK unterscheiden sich in Aufbau und Kühlung. Die technischen Werte gelten für die konkrete Modellspalte; höhere Stromstufen sind gemäss Tabellenfussnote nur als WWK erhältlich.",
+        "Für zwei vorbereitete Schweissdrähte vergleichen Sie die separate HyperMIG-TWIN-Ausführung. Für wiederkehrende Aufgaben bietet das grafische X-Panel 99 JOB-Speicher; verfügbare Verfahren und Optionen werden für die konkrete Anlage bestätigt."
+      ]
+    },
+    "fr": {
+      "intro": "HyperMIG X comprend des versions compactes et à dévidoir séparé, refroidies par air ou par eau. Le nouveau panneau graphique X s’ajoute aux panneaux HX, EX et SX toujours présentés. Choisissez ensemble la construction du poste et sa commande.",
+      "checks": [
+        "CGK, CWK, WGK et WWK diffèrent par leur construction et leur refroidissement. Les valeurs techniques correspondent à la colonne du modèle choisi ; selon la note du tableau, les courants supérieurs ne sont disponibles qu’en WWK.",
+        "Pour garder deux fils de soudage prêts à l’emploi, comparez la version HyperMIG TWIN séparée. Le panneau graphique X offre 99 mémoires JOB pour les travaux récurrents ; procédés et options sont confirmés pour la configuration choisie."
+      ]
+    },
+    "it": {
+      "intro": "HyperMIG X comprende versioni compatte e con trainafilo separato, raffreddate ad aria o ad acqua. Il nuovo pannello grafico X si aggiunge ai pannelli HX, EX e SX tuttora presentati. Scegliete insieme struttura della macchina e comando.",
+      "checks": [
+        "CGK, CWK, WGK e WWK differiscono per struttura e raffreddamento. I valori tecnici corrispondono alla colonna del modello scelto; secondo la nota della tabella, le correnti superiori sono disponibili solo in versione WWK.",
+        "Per mantenere pronti due fili di saldatura, confrontate la distinta versione HyperMIG TWIN. Il pannello grafico X offre 99 memorie JOB per lavorazioni ripetute; procedimenti e opzioni vengono confermati per la configurazione scelta."
+      ]
+    }
   }
 }

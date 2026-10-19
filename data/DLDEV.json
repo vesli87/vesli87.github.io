@@ -376,16 +376,30 @@
   {
    "k": "PDF",
    "t": {
-    "de": "Bedienungsanleitung",
-    "fr": "Mode d'emploi",
-    "it": "Istruzioni per l'uso"
+    "de": "Bedienungsanleitung HyperMIG X",
+    "fr": "Mode d'emploi HyperMIG X",
+    "it": "Istruzioni per l'uso HyperMIG X"
    },
    "s": {
     "de": "Herstellerdokument von MAHE · deutsch",
     "fr": "Document du fabricant MAHE · en allemand",
     "it": "Documento del produttore MAHE · in tedesco"
    },
-   "u": "https://mahe-online.de/wp-content/uploads/2023/01/HyperMIG_X_13_DE.pdf"
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung HyperMIG HX EX SX",
+    "fr": "Mode d'emploi HyperMIG HX EX SX",
+    "it": "Istruzioni per l'uso HyperMIG HX EX SX"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_16_DE.pdf"
   },
   {
    "k": "PDF",
@@ -399,7 +413,7 @@
     "fr": "Document du fabricant MAHE · en allemand",
     "it": "Documento del produttore MAHE · in tedesco"
    },
-   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_CWK.pdf"
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CWK.pdf"
   },
   {
    "k": "PDF",
@@ -413,7 +427,7 @@
     "fr": "Document du fabricant MAHE · en allemand",
     "it": "Documento del produttore MAHE · in tedesco"
    },
-   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_CGK.pdf"
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_CGK.pdf"
   },
   {
    "k": "PDF",
@@ -427,7 +441,7 @@
     "fr": "Document du fabricant MAHE · en allemand",
     "it": "Documento del produttore MAHE · in tedesco"
    },
-   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_WWK.pdf"
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_WWK.pdf"
   },
   {
    "k": "PDF",
@@ -441,7 +455,7 @@
     "fr": "Document du fabricant MAHE · en allemand",
     "it": "Documento del produttore MAHE · in tedesco"
    },
-   "u": "https://mahe-online.de/wp-content/uploads/2023/05/HyperMIG_X_WGK.pdf"
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_HX_EX_SX_WGK.pdf"
   }
  ],
  "hypertig-acdc": [
@@ -948,6 +962,50 @@
     "it": "Documento del produttore MAHE · in tedesco"
    },
    "u": "https://mahe-online.de/wp-content/uploads/2022/07/Theta_60_HSC.pdf"
+  }
+ ],
+ "hypermig-twin": [
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung HyperMIG X (Graphic Front Panel)",
+    "fr": "Mode d'emploi HyperMIG X (Graphic Front Panel)",
+    "it": "Istruzioni per l'uso HyperMIG X (Graphic Front Panel)"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Bedienungsanleitung HyperMIG HX TWIN",
+    "fr": "Mode d'emploi HyperMIG HX TWIN",
+    "it": "Istruzioni per l'uso HyperMIG HX TWIN"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TWIN_10_DE.pdf"
+  },
+  {
+   "k": "PDF",
+   "t": {
+    "de": "Technisches Datenblatt HyperMIG X / HX TWIN",
+    "fr": "Fiche technique HyperMIG X / HX TWIN",
+    "it": "Scheda tecnica HyperMIG X / HX TWIN"
+   },
+   "s": {
+    "de": "Herstellerdokument von MAHE · deutsch",
+    "fr": "Document du fabricant MAHE · en allemand",
+    "it": "Documento del produttore MAHE · in tedesco"
+   },
+   "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TWIN.pdf"
   }
  ]
 }

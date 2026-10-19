@@ -39,6 +39,7 @@ COPY_EDITS = json.loads((C.BUILD / "mahe_copy_edits.json").read_text("utf-8"))
 
 # Zuordnung unserer Schlüssel auf die Einträge der Herstellerseite
 DEV = {
+ "hypermig-twin": "twin :: TWIN Wassergekühlt mit zwei Drahtvorschubkoffer",
  "hcs1": "hcs-1-signiergerat :: HCS 1", "mlf100": "mlf100 :: MLF100",
  "minicleaner": "minicleaner :: MiniCleaner",
  "hypercleaner-st": "hypercleaner-st :: HyperCleaner ST",
@@ -63,6 +64,7 @@ DEV_MULTI = {  # unser Produkt deckt mehrere MAHE-Varianten ab
  "mms":      ["mms :: MMS 2000C", "mms :: MMS 2400/3000 EX"],
 }
 PANEL = {
+ "hypermig_x_graphic": "hypermig :: X – Graphic Front Panel",
  "ecomig_analog": "d-mig :: EcoMIG 3000 Analog Front Panel",
  "ecomig_low": "d-mig :: EcoMIG 3000 Digital Front Panel",
  "ecomig_2000": "d-mig :: EcoMIG 2000 Digital Front Panel",

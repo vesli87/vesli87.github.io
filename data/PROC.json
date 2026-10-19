@@ -30,7 +30,8 @@
   },
   "products": [
    "hypermig-x",
-   "mms"
+   "mms",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-processes",
@@ -68,7 +69,8 @@
   },
   "products": [
    "hypermig-x",
-   "mms"
+   "mms",
+   "hypermig-twin"
   ],
   "sources": [
    "twi-pulse",
@@ -105,7 +107,8 @@
    "it": "Coordinare frequenza del doppio impulso, differenza di potenza e velocità di avanzamento. Un movimento troppo lento può apportare molto calore anche in modalità pulsata. Ondulazioni regolari non dimostrano da sole una penetrazione sufficiente né l’assenza di difetti."
   },
   "products": [
-   "hypermig-x"
+   "hypermig-x",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-processes",
@@ -142,7 +145,8 @@
    "it": "Velocità ottenibile, deformazione e temperatura tra le passate dipendono dal pezzo. HyperPuls e doppio impulso sono funzioni differenti; combinazione e disponibilità vanno verificate sul pannello di comando."
   },
   "products": [
-   "hypermig-x"
+   "hypermig-x",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-processes",
@@ -179,7 +183,8 @@
    "it": "Verificare pannello, versione software e programma attivato prima della scelta. Durante la prova confrontare insieme velocità, geometria del cordone, rilavorazioni e temperatura del pezzo. Questo confronto permette di valutare l’utilità per la produzione concreta."
   },
   "products": [
-   "hypermig-x"
+   "hypermig-x",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-hypermig"
@@ -215,7 +220,8 @@
    "it": "Angolo della torcia, tratto libero del filo, velocità e apertura del giunto incidono molto sul risultato. Una forte penetrazione non sostituisce una sequenza di passate validata; vanno comunque valutati sfondamento e apporto termico."
   },
   "products": [
-   "hypermig-x"
+   "hypermig-x",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-processes",
@@ -253,7 +259,8 @@
   },
   "products": [
    "hypermig-x",
-   "mms"
+   "mms",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-processes",
@@ -291,7 +298,8 @@
   },
   "products": [
    "hypermig-x",
-   "mms"
+   "mms",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-hypermig"
@@ -327,7 +335,8 @@
    "it": "Definire su un provino coordinamento delle fasi, sezione del cordone e velocità. Un bagno troppo voluminoso può colare anche con HyperUP. La funzione dipende dal pannello e dall’eventuale programma attivato."
   },
   "products": [
-   "hypermig-x"
+   "hypermig-x",
+   "hypermig-twin"
   ],
   "sources": [
    "mahe-processes",

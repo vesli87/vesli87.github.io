@@ -386,5 +386,25 @@
  "Up/Down · Start/Stopp": {
   "fr": "Up/Down · Start/Stop",
   "it": "Up/Down · Start/Stop"
+ },
+ "10 – 600 A, je Modell": {
+  "fr": "10 – 600 A selon le modèle",
+  "it": "10 – 600 A secondo il modello"
+ },
+ "20 A / 32 A, je Modell": {
+  "fr": "20 A / 32 A selon le modèle",
+  "it": "20 A / 32 A secondo il modello"
+ },
+ "je Modell, siehe Tabelle": {
+  "fr": "selon le modèle, voir le tableau",
+  "it": "secondo il modello, vedere la tabella"
+ },
+ "65 – 92 kg, je Ausführung": {
+  "fr": "65 – 92 kg selon la version",
+  "it": "65 – 92 kg secondo la versione"
+ },
+ "MIG/MAG · MMA · WIG Lift Arc": {
+  "fr": "MIG/MAG · MMA · TIG Lift Arc",
+  "it": "MIG/MAG · MMA · TIG Lift Arc"
  }
 }

@@ -1,0 +1,60 @@
+{
+ "hypermig_x_graphic": {
+  "sources": [
+   {"url":"https://mahe-online.de/hypermig/","title":"MAHE HyperMIG X"},
+   {"url":"https://mahe-online.de/twin/","title":"MAHE HyperMIG TWIN"},
+   {"url":"https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf","title":"HyperMIG X · PDF · DE · 4.2"}
+  ],
+  "de": {
+   "heading":"Grafische Bedienung im Arbeitsalltag",
+   "intro":"Das grafische X-Bedienpanel verbindet einen Farb-Grafikbildschirm mit vier Funktionstasten und einem zentralen Dreh-/Drücksteller. MAHE führt es für HyperMIG X und HyperMIG TWIN auf. Die Bildschirmführung bündelt Programmauswahl, Schweisswerte und JOB-Verwaltung; die Beschriftung über den Tasten zeigt die jeweilige Funktion.",
+   "sections":[
+    ["Programm und aktiver Drahtvorschub","Die Informationsleiste zeigt Benutzer, Drahtwerkstoff, Schutzgas und Drahtdurchmesser sowie Datum und Uhrzeit. Bei mehreren installierten Drahtvorschüben wird der aktive Vorschub angezeigt. Das unterstützt die Kontrolle, ob Programm und eingelegter Draht zum Auftrag passen."],
+    ["Vier MIG-Einstellungen auf einen Blick","Die obere Einstellleiste enthält Lichtbogenlängenkorrektur, Materialdicke in mm, Drahtgeschwindigkeit in m/min und Lichtbogendynamik. Drehen verändert den gewählten Wert, Drücken wechselt zum nächsten Parameter. Lichtbogenlängenkorrektur und Materialdicke stehen im manuellen MIG-Modus gemäss Anleitung nicht zur Verfügung."],
+    ["Sollwerte, Messwerte und HOLD","Die Hauptanzeige stellt Spannung in V und Strom in A gross dar. Vor dem Schweissen zeigt sie die Sollwerte, während des Schweissens die aktuellen Messwerte. Danach bleiben die letzten Messwerte als HOLD sichtbar, bis das Panel bedient oder ein neuer Schweissvorgang gestartet wird."],
+    ["Betriebsarten und Vorbereitung","Über die Betriebsartenleiste werden 2-Takt, 4-Takt sowie Punkt- und Intervallbetrieb gewählt. Manueller Drahteinzug und Gastest sind dort ebenfalls erreichbar. Für die synergische Programmauswahl werden Drahtwerkstoff, Drahtdurchmesser und Schutzgas festgelegt."],
+    ["Verfahren und Feinabstimmung","Die Verfahrensauswahl umfasst die für die konkrete Anlage verfügbaren MIG/MAG-, Puls- und Hyper-Verfahren sowie MMA, WIG Lift Arc und Kohlelichtbogenfugenhobeln. MENU erschliesst verfahrensabhängige Parameter wie Gasvor- und Gasnachströmzeit, Startverhalten und Kraterfüllung. Bei freigeschaltetem Doppelpuls gehören Frequenz und Amplitude dazu."],
+    ["99 JOB-Speicher für wiederkehrende Arbeiten","Schweisseinstellungen lassen sich in 99 internen Speicherplätzen ablegen, aufrufen und bearbeiten. Eine passende Kombination aus Draht, Gas und Parametern kann so wiederverwendet werden. Die Anleitung weist ausdrücklich darauf hin, dass die Schweissbetriebsart, etwa 2-Takt oder 4-Takt, nicht im JOB gespeichert wird und separat gewählt werden muss."],
+    ["Bis zu acht Benutzerprofile","Die Anleitung beschreibt bis zu acht Benutzer mit eigenen Einstellungen. Hinzu kommen die Sprachauswahl, Datum und Uhrzeit sowie die Anzeige von Einschalt- und Lichtbogenzeit. Softwarestatus und Seriennummer sind im entsprechenden Menü abrufbar."],
+    ["Die abgebildeten Werte richtig lesen","14,4 V, 45 A, 0,8 mm und 1,7 m/min zeigen einen beispielhaften Einstellzustand. Ebenso bezeichnet Fe-Sg2(mix18) Ø 1,0 mm das im Bild gewählte Draht-/Gasprogramm. Daraus ergeben sich weder Leistungsgrenzen der Maschine noch eine allgemeingültige Schweissempfehlung; massgeblich sind Modell, Werkstoff, Nahtaufgabe und erprobte Parameter."]
+   ],
+   "note":"Ausstattung gezielt festlegen: Die MAHE-Produktseite nennt den möglichen Funktionsumfang des Panels; die Anleitung bezeichnet Doppelpuls als Option. Verfügbare Verfahren und Freischaltungen werden deshalb für die gewählte Geräteausführung im Angebot bestätigt. Eine Nachrüstung bestehender EX-, SX- oder HX-Anlagen ist anhand von Modell, Seriennummer und Softwarestand zu prüfen.",
+   "sources_label":"Herstellerunterlagen",
+   "processes_label":"Puls-, Hyper- und weitere Schweissverfahren ausführlich erklärt"
+  },
+  "fr": {
+   "heading":"La commande graphique en pratique",
+   "intro":"Le panneau graphique X associe un écran graphique couleur, quatre touches de fonction et un sélecteur central rotatif à pression. MAHE le présente pour HyperMIG X et HyperMIG TWIN. L’interface réunit le choix du programme, les valeurs de soudage et la gestion des JOB ; les indications au-dessus des touches précisent leur fonction.",
+   "sections":[
+    ["Programme et dévidoir actif","La barre d’information indique l’utilisateur, le matériau du fil, le gaz de protection, le diamètre du fil, la date et l’heure. Lorsque plusieurs dévidoirs sont installés, elle identifie le dévidoir actif. Ces informations permettent de vérifier la correspondance entre le programme, le fil chargé et le travail prévu."],
+    ["Quatre réglages MIG regroupés","La barre supérieure présente la correction de longueur d’arc, l’épaisseur de matériau en mm, la vitesse du fil en m/min et la dynamique de l’arc. La rotation modifie la valeur sélectionnée ; une pression passe au paramètre suivant. Selon le manuel, la correction de longueur d’arc et l’épaisseur de matériau ne sont pas disponibles en MIG manuel."],
+    ["Consignes, mesures et HOLD","L’affichage principal présente en grands caractères la tension en V et le courant en A. Il indique les consignes avant le soudage, puis les valeurs mesurées pendant le soudage. Les dernières mesures restent ensuite visibles avec HOLD jusqu’à une action sur le panneau ou au démarrage d’un nouveau soudage."],
+    ["Modes de gâchette et préparation","La barre des modes donne accès au fonctionnement 2 temps, 4 temps, par points et par intervalles. L’avance manuelle du fil et le test de gaz y sont également accessibles. Le choix du programme synergique repose sur le matériau du fil, son diamètre et le gaz de protection."],
+    ["Procédés et réglages fins","Le sélecteur propose les procédés MIG/MAG, pulsés et Hyper disponibles sur la configuration concernée, ainsi que MMA, TIG Lift Arc et gougeage à l’arc au carbone. MENU donne accès aux paramètres propres au procédé, dont pré-gaz, post-gaz, démarrage et remplissage du cratère. Lorsque le double pulsé est activé, sa fréquence et son amplitude sont également réglables."],
+    ["99 mémoires JOB pour les travaux récurrents","Les réglages de soudage peuvent être enregistrés, rappelés et modifiés dans 99 mémoires internes. Une combinaison adaptée de fil, de gaz et de paramètres peut ainsi être réutilisée. Le manuel précise que le mode de gâchette, par exemple 2 temps ou 4 temps, n’est pas enregistré dans le JOB et doit être sélectionné séparément."],
+    ["Jusqu’à huit profils utilisateur","Le manuel décrit jusqu’à huit utilisateurs avec leurs propres réglages. Il prévoit aussi le choix de la langue, la date et l’heure, ainsi que l’affichage du temps de mise sous tension et du temps d’arc. L’état du logiciel et le numéro de série sont consultables dans le menu correspondant."],
+    ["Comprendre les valeurs de l’illustration","14,4 V, 45 A, 0,8 mm et 1,7 m/min correspondent à un exemple de réglage. Fe-Sg2(mix18) Ø 1,0 mm désigne le programme fil/gaz sélectionné sur l’image. Ces valeurs ne définissent ni les limites de puissance du poste ni une recommandation universelle : le modèle, le matériau, le joint et des paramètres validés restent déterminants."]
+   ],
+   "note":"Définir précisément l’équipement : la page MAHE présente les fonctions possibles du panneau ; le manuel indique le double pulsé comme option. Les procédés disponibles et leurs activations sont donc confirmés dans l’offre pour la version choisie. Une adaptation sur un poste EX, SX ou HX existant doit être vérifiée selon le modèle, le numéro de série et la version logicielle.",
+   "sources_label":"Documents du fabricant",
+   "processes_label":"Comprendre en détail les procédés pulsés, Hyper et les autres procédés de soudage"
+  },
+  "it": {
+   "heading":"Il comando grafico nell’uso quotidiano",
+   "intro":"Il pannello grafico X combina uno schermo grafico a colori, quattro tasti funzione e un selettore centrale a rotazione e pressione. MAHE lo presenta per HyperMIG X e HyperMIG TWIN. L’interfaccia riunisce scelta del programma, valori di saldatura e gestione dei JOB; le indicazioni sopra i tasti ne mostrano la funzione.",
+   "sections":[
+    ["Programma e trainafilo attivo","La barra informativa indica utente, materiale del filo, gas di protezione, diametro del filo, data e ora. Se sono installati più trainafilo, viene identificato quello attivo. Queste informazioni aiutano a verificare che programma e filo caricato corrispondano al lavoro previsto."],
+    ["Quattro regolazioni MIG riunite","La barra superiore presenta correzione della lunghezza d’arco, spessore del materiale in mm, velocità del filo in m/min e dinamica dell’arco. Ruotando si modifica il valore selezionato; premendo si passa al parametro successivo. Secondo il manuale, correzione della lunghezza d’arco e spessore del materiale non sono disponibili in MIG manuale."],
+    ["Valori impostati, misure e HOLD","La schermata principale visualizza in grandi cifre tensione in V e corrente in A. Prima della saldatura mostra i valori impostati, durante la saldatura quelli misurati. Al termine, le ultime misure restano visibili con HOLD fino a un comando sul pannello o all’avvio di una nuova saldatura."],
+    ["Modalità della torcia e preparazione","La barra delle modalità consente di scegliere funzionamento a 2 tempi, 4 tempi, per punti e a intervalli. Vi si trovano anche avanzamento manuale del filo e prova gas. Il programma sinergico viene selezionato in base a materiale del filo, diametro e gas di protezione."],
+    ["Procedimenti e regolazioni fini","Il selettore comprende i procedimenti MIG/MAG, pulsati e Hyper disponibili sulla configurazione scelta, oltre a MMA, TIG Lift Arc e scriccatura ad arco con elettrodo di carbone. MENU apre i parametri del procedimento, fra cui pre-gas, post-gas, avvio e riempimento del cratere. Quando il doppio pulsato è attivato, sono disponibili anche frequenza e ampiezza."],
+    ["99 memorie JOB per lavorazioni ripetute","Le impostazioni di saldatura possono essere salvate, richiamate e modificate in 99 memorie interne. Una combinazione adatta di filo, gas e parametri può così essere riutilizzata. Il manuale precisa che la modalità della torcia, ad esempio 2 tempi o 4 tempi, non viene salvata nel JOB e va selezionata separatamente."],
+    ["Fino a otto profili utente","Il manuale descrive fino a otto utenti con impostazioni proprie. Sono inoltre previsti scelta della lingua, data e ora e visualizzazione del tempo di accensione e del tempo d’arco. Stato del software e numero di serie sono consultabili nel relativo menu."],
+    ["Come leggere i valori nell’immagine","14,4 V, 45 A, 0,8 mm e 1,7 m/min rappresentano un esempio di impostazione. Fe-Sg2(mix18) Ø 1,0 mm identifica il programma filo/gas selezionato nell’immagine. Questi dati non definiscono i limiti di potenza della macchina né una raccomandazione universale: contano modello, materiale, giunto e parametri verificati."]
+   ],
+   "note":"Definire con precisione la dotazione: la pagina MAHE presenta le possibili funzioni del pannello; il manuale indica il doppio pulsato come opzione. Procedimenti disponibili e abilitazioni vengono quindi confermati nell’offerta per la versione scelta. L’eventuale aggiornamento di una macchina EX, SX o HX esistente richiede la verifica di modello, numero di serie e versione software.",
+   "sources_label":"Documentazione del produttore",
+   "processes_label":"Approfondire i procedimenti pulsati, Hyper e gli altri procedimenti di saldatura"
+  }
+ }
+}

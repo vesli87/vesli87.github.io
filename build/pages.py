@@ -156,7 +156,7 @@ def front_html(lang, p):
             src = C.PANEL_HL_DEVICE.get(pk)
             ph = (src.get(lang) or src["de"]) if src else []
             if fp.get("img"):
-                media = R.img_tag(fp["img"], "(max-width:760px) 90vw, 340px",
+                media = R.img_tag(fp["img"], ("(max-width:760px) 90vw, 560px" if pk in C.PANEL_GUIDES else "(max-width:760px) 90vw, 340px"),
                                   cls="fp-photo zoomable",
                                   alt=f"{C.pBrand(p)} {C.fpName(lang, fp)}", width=340)
             else:
@@ -168,11 +168,25 @@ def front_html(lang, p):
                        f'<ul class="besond-list fp-list">'
                        + "".join(f"<li>{e(x)}</li>" for x in ph)
                        + "</ul></div>")
+            guide = C.PANEL_GUIDES.get(pk)
+            explanation = ""
+            if guide:
+                copy = guide[lang]
+                sections = "".join(f'<div><dt>{e(title)}</dt><dd>{e(text)}</dd></div>'
+                                   for title, text in copy['sections'])
+                sources = " · ".join(f'<a href="{e(source["url"])}">{e(source["title"])}</a>'
+                                     for source in guide['sources'])
+                explanation = (f'<div class="fp-guide"><{h_bes}>{e(copy["heading"])}</{h_bes}>'
+                               f'<p>{e(copy["intro"])}</p><dl>{sections}</dl>'
+                               f'<p class="fp-note">{e(copy["note"])}</p>'
+                               f'<p><a href="{e(C.u_page(lang, "processes"))}">{e(copy["processes_label"])}</a></p>'
+                               f'<p class="fp-sources">{e(copy["sources_label"])}: {sources}</p></div>')
             out.append(
-                f'<div class="fp{"" if ph else " fp-solo"}">'
+                f'<div class="fp{" fp-graphic" if guide else ""}{"" if ph else " fp-solo"}"'
+                + (f' id="panel-{e(pk.replace("_", "-"))}"' if guide else '') + '>'
                 f'<{h_panel} class="fp-title">{e(C.fpName(lang, fp))}</{h_panel}>'
                 f'<div class="fp-body"><div class="fp-panel">{media}</div>'
-                f"{bes}</div></div>"
+                f"{bes}</div>{explanation}</div>"
             )
     elif not hl:
         feats = C.featOf(p)
@@ -898,7 +912,7 @@ def page_product(lang, p):
       </div>
       <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
                                        de_marke=C.markeMitPraeposition(lang, p)))}</p>
-      {zustand_block}
+{zustand_block}
     </div>
   </div>
 
@@ -907,8 +921,8 @@ def page_product(lang, p):
     <div class="tabbar" role="tablist" aria-label="{e(nm)}">{tabbar}</div>
     {panehtml}
   </div>{selection}
-  {occ_text_html(lang, p)}
-  {verwandt_html(lang, p)}
+{occ_text_html(lang, p)}
+{verwandt_html(lang, p)}
 
   <p class="backlink"><a href="{e(C.u_cat(lang, p['cat']))}">← {e(C.t(lang,'back_to_cat'))}</a></p>
 </div></div>

@@ -964,5 +964,58 @@
    "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
   ],
   "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT)."
+ },
+ "hypermig-twin": {
+  "de": [
+   "Zwei Drahtvorschubkoffer für verschiedene Schweissdrähte",
+   "Automatische Parametereinstellung durch Drücken des Brennertasters",
+   "Digital synergy kontrolliert",
+   "Spritzerfreier Lichtbogen",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold und HyperForce",
+   "MMA und Fugenhobeln",
+   "Fernbedienung (Up/Down Brennertaster)",
+   "4-Rollenantrieb",
+   "Zuleitungskabel mit 5 Metern Länge",
+   "Zwischenschlauchpakete bis 20 Meter",
+   "Temperatur kontrollierte Lüfter",
+   "Wasserpumpen Automatik on/off",
+   "Hochleistungs-Wasserkühlung",
+   "Umweltfreundliches Design, 100% recycelbar."
+  ],
+  "fr": [
+   "Deux dévidoirs pour différents fils de soudage",
+   "Sélection automatique des paramètres par la gâchette de la torche",
+   "Commande synergique numérique",
+   "Arc sans projections",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold et HyperForce",
+   "MMA et gougeage",
+   "Commande à distance par touches Up/Down de la torche",
+   "Entraînement à 4 galets",
+   "Câble d’alimentation de 5 mètres",
+   "Faisceaux intermédiaires jusqu’à 20 mètres",
+   "Ventilateurs régulés en température",
+   "Commande automatique marche/arrêt de la pompe à eau",
+   "Refroidissement à eau haute performance",
+   "Conception respectueuse de l’environnement, recyclable à 100 %"
+  ],
+  "it": [
+   "Due trainafilo per fili di saldatura diversi",
+   "Selezione automatica dei parametri tramite il pulsante della torcia",
+   "Comando sinergico digitale",
+   "Arco senza spruzzi",
+   "HyperPuls, HyperSpeedPuls",
+   "HyperCold e HyperForce",
+   "MMA e scriccatura",
+   "Comando a distanza tramite pulsanti Up/Down della torcia",
+   "Trainafilo a 4 rulli",
+   "Cavo di alimentazione da 5 metri",
+   "Fasci intermedi fino a 20 metri",
+   "Ventilatori regolati in base alla temperatura",
+   "Comando automatico on/off della pompa dell’acqua",
+   "Raffreddamento ad acqua ad alte prestazioni",
+   "Progettazione rispettosa dell’ambiente, riciclabile al 100 %"
+  ]
  }
 }

@@ -270,6 +270,8 @@ PANELWORT = {"fr": "panneau de commande", "it": "pannello di comando"}
 
 
 def fpName(lang, fp):
+    if fp.get("names"):
+        return fp["names"][lang]
     n = fp["n"]
     wort = PANELWORT.get(lang)
     if not wort or "Bedienpanel" not in n:
@@ -454,6 +456,7 @@ REF       = _load("REF")         # echte Kundenstimmen, siehe data/REF.json
 BUYING_GUIDE = _load("BUYING_GUIDE")
 SUBCATEGORY_GUIDES = _load("SUBCATEGORY_GUIDES")
 PRODUCT_GUIDES = _load("PRODUCT_GUIDES")
+PANEL_GUIDES = _load("PANEL_GUIDES")
 GUIDE_LINKS = _load("GUIDE_LINKS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
@@ -887,8 +890,9 @@ def matLabel(lang, m):
 # werden nur die Besonderheiten gezeigt - erfunden wird nichts.
 PANELS = {
     # Reihenfolge wie auf der Herstellerseite
-    "hypermig-x":        ["hypermig_ecomig", "hypermig_ex", "hypermig_hx",
-                          "hypermig_steel", "hypermig_sx"],
+    "hypermig-x":        ["hypermig_x_graphic", "hypermig_hx", "hypermig_ecomig",
+                          "hypermig_ex", "hypermig_steel", "hypermig_sx"],
+    "hypermig-twin":     ["hypermig_x_graphic", "hypermig_hx"],
     "ecomig":            ["ecomig_analog", "ecomig_low", "ecomig_2000"],
     "mms":               ["mms_light", "mms_ecomig", "mms_ecopuls"],
     "omega-ax":          ["omega_pro", "omega_syn"],
@@ -943,6 +947,19 @@ def fpAssign(p):
     # HyperTIG DX angehaengt – ein anderes Geraet. Wer kein Panel hat, zeigt
     # keines.
     return PANELS.get(p["id"], [])
+
+
+def panel_text(lang, p):
+    """Searchable panel features and documented operating explanations."""
+    out = []
+    for key in fpAssign(p):
+        out.append(fpName(lang, FP[key]))
+        out.extend(PANEL_HL_DEVICE.get(key, {}).get(lang, []))
+        guide = PANEL_GUIDES.get(key, {}).get(lang)
+        if guide:
+            out.extend([guide['intro'], guide['note']])
+            out.extend(text for pair in guide['sections'] for text in pair)
+    return ' '.join(out)
 
 
 def products_of(cat_id, sub=None):
@@ -1144,9 +1161,9 @@ def editorial_target(lang, ref):
         label = {'overview':'foot_service', 'repair':'foot_diag',
                  'calib':'foot_calib', 'auto':'foot_auto'}[key]
         return t(lang, label), u_service(lang, None if key == 'overview' else key)
-    if kind == 'page' and key in ('about', 'contact', 'imprint', 'products'):
+    if kind == 'page' and key in ('about', 'contact', 'imprint', 'products', 'processes'):
         label = {'about':'nav_about', 'contact':'n_contact',
-                 'imprint':'nav_impressum', 'products':'nav_products'}[key]
+                 'imprint':'nav_impressum', 'products':'nav_products', 'processes':'n_process'}[key]
         return t(lang, label), u_page(lang, key)
     raise ValueError(f'Unknown editorial link: {kind}/{key}')
 
@@ -1160,6 +1177,28 @@ def validate_editorial_guides():
             targets = [editorial_target(lang, ref)[1] for ref in refs]
             if len(targets) != len(set(targets)):
                 raise ValueError('Duplicate editorial link destination')
+
+    for key, guide in PANEL_GUIDES.items():
+        if key not in FP or set(guide) != {'sources', *LANGS}:
+            raise ValueError(f'Incomplete panel guide: {key}')
+        if not guide['sources'] or any(
+                set(source) != {'url', 'title'} or
+                not source['url'].startswith('https://mahe-online.de/') or
+                not source['title'].strip() for source in guide['sources']):
+            raise ValueError(f'Invalid panel provenance: {key}')
+        for lang in LANGS:
+            copy = guide[lang]
+            if set(copy) != {'intro', 'heading', 'sections', 'note', 'sources_label', 'processes_label'} or any(
+                    not isinstance(copy[field], str) or not copy[field].strip()
+                    for field in ('intro', 'heading', 'note', 'sources_label', 'processes_label')):
+                raise ValueError(f'Incomplete panel guide language: {key}/{lang}')
+            if not copy['sections'] or any(
+                    not isinstance(pair, list) or len(pair) != 2 or
+                    any(not isinstance(text, str) or not text.strip() for text in pair)
+                    for pair in copy['sections']):
+                raise ValueError(f'Invalid panel guide sections: {key}/{lang}')
+            if not FP[key].get('names', {}).get(lang):
+                raise ValueError(f'Missing localized panel name: {key}/{lang}')
 
     for pid, guide in PRODUCT_GUIDES.items():
         if pid not in BY_ID or set(guide) != {'sources', 'links', *LANGS}:

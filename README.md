@@ -7,9 +7,9 @@ Statische Website aus JSON und Python, ohne Framework oder Bundler.
 
 | Bereich | Stand |
 |---|---|
-| Katalog | 79 Produkte, 5 Kategorien, 3 Sprachen |
-| Seiten | 360 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
-| Sitemap | 351 indexierbare URLs mit Sprachalternativen |
+| Katalog | 80 Produkte, 5 Kategorien, 3 Sprachen |
+| Seiten | 363 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
+| Sitemap | 354 indexierbare URLs mit Sprachalternativen |
 | Suche | Lokaler Suchindex mit Produkten, Dienstleistungen, Synonymen und Tippfehlertoleranz |
 | SEO | Individuelle Metadaten, canonical, hreflang, JSON-LD, Sitemap, IndexNow |
 | Beratung | Auswahlhilfen je Hauptkategorie, produktbezogenes Kontaktformular, Anfrageliste |
@@ -159,7 +159,7 @@ aktualisieren sich erst nach erneutem Crawlen und Verarbeiten.
 keine Zusage auf KI-Zitate oder Rankings. Der JSON-Katalog ist ein eigenes Format
 (`schema_version`), das JSON-LD steht auf den HTML-Seiten.
 
-Die Sitemap enthält 351 indexierbare URLs; Suche, Datenschutz und AGB bleiben
+Die Sitemap enthält 354 indexierbare URLs; Suche, Datenschutz und AGB bleiben
 ausgeschlossen, das Impressum ist indexierbar. `lastmod` bleibt bei reinen
 Änderungen an CSP/SRI, Asset-Versionsnummern und der Laufzeitkonfiguration stabil.
 Inhalte, SEO-Metadaten, JSON-LD, Navigation und geänderte Asset-Pfade werden

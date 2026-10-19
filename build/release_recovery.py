@@ -34,8 +34,8 @@ def public_inventory(directory):
                    'digest': 'sha256:' + backup.digest(directory / name)} for name in FILES}
 
 
-def gh(*args, missing=False):
-    result = subprocess.run(['gh', *args], capture_output=True, text=True)
+def gh(*args, missing=False, input_text=None):
+    result = subprocess.run(['gh', *args], input=input_text, capture_output=True, text=True)
     if result.returncode:
         if missing and 'HTTP 404' in result.stderr:
             return None
@@ -43,8 +43,12 @@ def gh(*args, missing=False):
     return result.stdout.strip()
 
 
-def api(path, missing=False):
-    response = gh('api', 'repos/' + REPOSITORY + '/' + path, missing=missing)
+def api(path, missing=False, data=None, method='POST'):
+    args = ['api', 'repos/' + REPOSITORY + '/' + path]
+    if data is not None:
+        args.extend(('--method', method, '--input', '-'))
+    response = gh(*args, missing=missing,
+                  input_text=None if data is None else json.dumps(data))
     return None if response is None else json.loads(response)
 
 
@@ -111,15 +115,16 @@ def publish(directory, commit):
         run_id = os.environ.get('GITHUB_RUN_ID', '')
         if re.fullmatch(r'[0-9]+', run_id):
             notes += '\nDeployment: https://github.com/' + REPOSITORY + '/actions/runs/' + run_id + '\n'
-        with tempfile.TemporaryDirectory(prefix='vestech-recovery-notes-') as temp:
-            path = Path(temp) / 'notes.txt'
-            path.write_text(notes, encoding='utf-8')
-            gh('release', 'create', tag, '--repo', REPOSITORY, '--target', commit,
-               '--title', 'Verified website recovery ' + commit[:10], '--notes-file', str(path),
-               '--draft', '--latest=false')
-        release = find_release(tag)
-        if release is None:
-            raise ValueError('Created recovery draft was not found')
+        # Use the authoritative POST response. An immediate second lookup by
+        # tag/list can still return the pre-creation view and orphan a draft.
+        release = api('releases', data={
+            'tag_name': tag, 'target_commitish': commit,
+            'name': 'Verified website recovery ' + commit[:10], 'body': notes,
+            'draft': True, 'prerelease': False, 'make_latest': 'false'})
+        if (not isinstance(release, dict) or type(release.get('id')) is not int
+                or release['id'] <= 0 or release.get('tag_name') != tag
+                or release.get('draft') is not True):
+            raise ValueError('Created recovery draft response is invalid')
     if release.get('draft') and release.get('target_commitish') != commit:
         raise ValueError('Recovery draft targets a different commit; refusing to publish it')
     endpoint = 'releases/' + str(release['id'])
@@ -133,8 +138,8 @@ def publish(directory, commit):
     if missing_assets(release, inventory):
         raise ValueError('Recovery upload is incomplete')
     if release.get('draft'):
-        gh('release', 'edit', tag, '--repo', REPOSITORY, '--draft=false', '--latest=false')
-        release = api(endpoint)
+        # PATCH returns the published object, avoiding a stale follow-up GET.
+        release = api(endpoint, data={'draft': False, 'make_latest': 'false'}, method='PATCH')
     if release.get('draft') or missing_assets(release, inventory):
         raise ValueError('Recovery publication was not confirmed')
     verify_tag(tag, commit, required=True)

@@ -313,8 +313,12 @@ class GeneratorTests(unittest.TestCase):
                         panel, policy = R.analytics_html(lang), R.csp(lang)
                         self.assertEqual(bool(panel), enabled)
                         hosts = {urlsplit(value).hostname for value in policy.replace(';', ' ').split() if urlsplit(value).scheme == 'https'}
-                        self.assertEqual('static.cloudflareinsights.com' in hosts, bool(token))
-                        self.assertEqual('analytics.ahrefs.com' in hosts, bool(ahrefs))
+                        expected = set()
+                        if token:
+                            expected.add('static.cloudflareinsights.com')
+                        if ahrefs:
+                            expected.add('analytics.ahrefs.com')
+                        self.assertEqual(hosts & {'static.cloudflareinsights.com', 'analytics.ahrefs.com'}, expected)
                         self.assertNotIn("'unsafe-inline'", policy)
                         if enabled:
                             self.assertIn('data-ahrefs-key="' + ahrefs + '"', panel)

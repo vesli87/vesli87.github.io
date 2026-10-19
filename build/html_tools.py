@@ -29,10 +29,11 @@ def structured_data(text):
     return StructuredData(text).blocks
 
 
-def rewrite_start_tags(text, transform):
+def rewrite_start_tags(text, transform, script_transform=None):
     """Rewrite actual opening tags, preserving every other input byte/character.
 
-    HTMLParser handles quoted >, comments and script/style raw text. This is a
+    HTMLParser handles quoted >, comments and script/style raw text.
+    An optional callback rewrites a complete, closed script body. This is a
     content-fingerprint helper, not an HTML sanitizer.
     """
     lines = [0]
@@ -42,13 +43,29 @@ def rewrite_start_tags(text, transform):
     replacements = []
 
     class Tags(HTMLParser):
+        script = None
+
         def handle_starttag(self, tag, attrs):
             raw = self.get_starttag_text()
             row, column = self.getpos()
             start = lines[row - 1] + column
-            replacements.append((start, start + len(raw), transform(raw)))
+            end = start + len(raw)
+            replacements.append((start, end, transform(raw)))
+            if tag == 'script' and script_transform is not None:
+                self.script = (end, attrs)
 
-        handle_startendtag = handle_starttag
+        def handle_startendtag(self, tag, attrs):
+            self.handle_starttag(tag, attrs)
+            if tag == 'script':
+                self.script = None
+
+        def handle_endtag(self, tag):
+            if tag == 'script' and self.script is not None:
+                first, attrs = self.script
+                row, column = self.getpos()
+                end = lines[row - 1] + column
+                replacements.append((first, end, script_transform(text[first:end], attrs)))
+                self.script = None
 
     parser = Tags(convert_charrefs=False)
     parser.feed(text)

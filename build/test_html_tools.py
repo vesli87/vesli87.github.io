@@ -23,3 +23,13 @@ class HTMLToolsTests(unittest.TestCase):
         b = a.replace('abcdef12', '12345678')
         self.assertEqual(B._inhalt_fuer_lastmod(a), B._inhalt_fuer_lastmod(b))
         self.assertNotEqual(B._inhalt_fuer_lastmod(a), B._inhalt_fuer_lastmod(a.replace('a > b', 'a > c')))
+
+    def test_lastmod_parses_complete_scripts_without_a_closing_tag_regex(self):
+        base = '<script>window.VT={"analytics":1};</script\t\n><p>Editorial</p>'
+        runtime = base.replace('"analytics":1', '"analytics":2')
+        self.assertEqual(B._inhalt_fuer_lastmod(base), B._inhalt_fuer_lastmod(runtime))
+        # A malformed/unclosed script remains part of the fingerprint rather
+        # than being guessed away as runtime bookkeeping.
+        malformed = '<script>window.VT={"analytics":1};</script bar><p>Editorial</p>'
+        self.assertNotEqual(B._inhalt_fuer_lastmod(malformed),
+                            B._inhalt_fuer_lastmod(malformed.replace('Editorial', 'Changed')))

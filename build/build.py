@@ -383,7 +383,6 @@ def umleitungen():
 #     als die erzeugte Datei sich wirklich geaendert hat.
 LASTMOD_DATEI = C.BUILD / "lastmod.json"
 _VERSIONSANHANG = re.compile(r"\?v=[0-9a-f]{6,}")
-_SCRIPT_BLOCK = re.compile(r"(<script\b[^>]*>)(.*?)(</script\s*>)", re.I | re.S)
 
 
 def _inhalt_fuer_lastmod(roh):
@@ -399,26 +398,20 @@ def _inhalt_fuer_lastmod(roh):
                       lambda m: m.group(1) + m.group(2) + _VERSIONSANHANG.sub("", m.group(3)) + m.group(2),
                       text, flags=re.I)
 
-    def html_part(text):
-        return rewrite_start_tags(text, tag)
-
-    parts, start = [], 0
-    for match in _SCRIPT_BLOCK.finditer(roh):
-        parts.append(html_part(roh[start:match.start()]))
-        opening, body, closing = match.groups()
+    def script(body, attrs):
         # Never rewrite structured data, including strings containing markup.
-        jsonld = re.search(r'''\btype\s*=\s*["']application/ld\+json["']''', opening, re.I)
-        boot = None if jsonld else re.fullmatch(r"\s*window\.VT=(\{.*\});\s*", body, re.S)
+        if dict(attrs).get('type', '').lower() == 'application/ld+json':
+            return body
+        boot = re.fullmatch(r"\s*window\.VT=(\{.*\});\s*", body, re.S)
         if boot:
             try:
                 if isinstance(json.loads(boot.group(1)), dict):
-                    body = "window.VT={};"
+                    return "window.VT={};"
             except ValueError:
                 pass  # Unexpected executable content must still count.
-        parts.extend((tag(opening), body, closing))
-        start = match.end()
-    parts.append(html_part(roh[start:]))
-    return "".join(parts)
+        return body
+
+    return rewrite_start_tags(roh, tag, script)
 
 
 def _inhaltskennung(pfad):

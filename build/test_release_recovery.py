@@ -82,8 +82,32 @@ class RecoveryReleaseTests(unittest.TestCase):
                 patch.object(R, 'find_release', return_value={'id': 1, 'draft': True, 'assets': [], 'target_commitish': self.commit}), \
                 patch.object(R, 'api', side_effect=[complete, published]), patch.object(R, 'gh') as command:
             R.publish(self.directory, self.commit)
-        self.assertEqual([call.args[:2] for call in command.call_args_list], [('release', 'upload'), ('release', 'edit')])
+        self.assertEqual([call.args[:2] for call in command.call_args_list], [('release', 'upload')])
         self.assertFalse(any('--clobber' in call.args for call in command.call_args_list))
+
+    def test_creation_uses_post_response_without_a_second_draft_lookup(self):
+        inventory = R.public_inventory(self.directory)
+        created = dict(self.release(inventory), assets=[], tag_name=R.release_tag(self.commit))
+        complete = self.release(inventory)
+        published = dict(complete, draft=False)
+        with patch.object(R, 'verify_tag'), patch.object(R, 'find_release', return_value=None) as find, \
+                patch.object(R, 'api', side_effect=[created, complete, published]) as api, \
+                patch.object(R, 'gh') as command:
+            self.assertEqual(R.publish(self.directory, self.commit), published['html_url'])
+        find.assert_called_once_with(R.release_tag(self.commit))
+        self.assertEqual(api.call_args_list[0].args, ('releases',))
+        self.assertEqual(api.call_args_list[0].kwargs['data']['target_commitish'], self.commit)
+        self.assertEqual(api.call_args_list[-1].kwargs['method'], 'PATCH')
+        self.assertEqual([call.args[:2] for call in command.call_args_list], [('release', 'upload')])
+
+    def test_an_unexpected_create_response_cannot_upload_or_publish(self):
+        for response in (None, {}, {'id': 1, 'tag_name': 'other', 'draft': True}):
+            with self.subTest(response=response), patch.object(R, 'verify_tag'), \
+                    patch.object(R, 'find_release', return_value=None), \
+                    patch.object(R, 'api', return_value=response), patch.object(R, 'gh') as command, \
+                    self.assertRaisesRegex(ValueError, 'response is invalid'):
+                R.publish(self.directory, self.commit)
+            command.assert_not_called()
 
     def test_a_draft_for_different_source_cannot_be_published(self):
         draft = self.release(R.public_inventory(self.directory))

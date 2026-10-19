@@ -118,7 +118,9 @@ die Quellcode-Archive des exakten Tags bereit.
 `public-release` und keinerlei lokale Projekt-/Git-/Kontometadaten. Vor der
 Veroeffentlichung werden Dateigroessen und serverseitige SHA-256-Werte aller
 Assets abgeglichen. Ein unterbrochener Entwurf kann fortgesetzt werden;
-abweichende vorhandene Assets, falsche Tags und unvollstaendige veroeffentlichte
+die Erstellung verwendet direkt die API-Antwort mit Release-ID, statt den neuen
+Entwurf sofort erneut in einer moeglicherweise verzoegerten Liste zu suchen.
+Auch die Publikation prueft die PATCH-Antwort. Abweichende vorhandene Assets, falsche Tags und unvollstaendige veroeffentlichte
 Releases werden nie ueberschrieben. Der Job besitzt nur fuer diesen Schritt
 `contents: write` und `actions: read`; PRs fuehren ihn nicht aus.
 

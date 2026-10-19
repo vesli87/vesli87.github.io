@@ -32,6 +32,12 @@ stehen unter der SIL Open Font License 1.1 und behalten diese Lizenz. Sie sind
 von dieser Urheberrechtsnotiz ausdrücklich ausgenommen.
 Lizenztext: https://scripts.sil.org/OFL
 
+SOCIAL-ICONS
+Die vier SVG-Symbole unter assets/icons/social/ stammen aus Bootstrap Icons
+(https://github.com/twbs/icons) und stehen unter der MIT-Lizenz. Sie sind von
+der obigen Urheberrechtsnotiz ausdrücklich ausgenommen. Jede SVG-Datei enthält
+die vollständige MIT-Lizenz, den Copyrightvermerk und ihre genaue Quelladresse.
+
 HAFTUNG
 Die Software wird ohne Gewähr bereitgestellt. VES-TECH Swiss haftet nicht für
 Schäden aus ihrer Nutzung.

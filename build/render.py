@@ -841,12 +841,21 @@ def cart_drawer(lang):
 </aside>"""
 
 
-def whatsapp_link(lang, *, button=False):
+def footer_icon(name):
+    """Local, decorative brand artwork; the enclosing link supplies its name."""
+    return (f'<img src="{e(_ver(f"/assets/icons/social/{name}.svg"))}" '
+            'width="24" height="24" alt="" aria-hidden="true" loading="lazy" decoding="async">')
+
+
+def whatsapp_link(lang, *, button=False, icon_only=False):
     """Normaler externer Kontaktlink, ohne SDK, Nachricht oder Referrer."""
-    style = 'btn pri whatsapp-link' if button else 'whatsapp-link'
+    style = 'footer-social-link whatsapp-link' if icon_only else ('btn pri whatsapp-link' if button else 'whatsapp-link')
+    label = C.t(lang, 'whatsapp_action')
+    accessible = f' aria-label="{e(label)}" title="{e(label)}"' if icon_only else ''
+    content = footer_icon('whatsapp') if icon_only else e(label)
     return (f'<a class="{style}" href="{e(C.COMPANY["whatsapp_href"])}" '
-            f'rel="noopener noreferrer" referrerpolicy="no-referrer">'
-            f'{e(C.t(lang, "whatsapp_action"))}</a>')
+            f'rel="noopener noreferrer" referrerpolicy="no-referrer"{accessible}>'
+            f'{content}</a>')
 
 
 def footer(lang):
@@ -866,15 +875,17 @@ def footer(lang):
     prod = "".join(f'<li><a href="{e(C.u_cat(lang, c["id"]))}">{e(C.catT(lang, c))}</a></li>'
                    for c in C.CATS)
     social = "".join(
-        f'<li><a href="{e(url)}" rel="me noreferrer">'
-        f'{e(name)} · {e(C.COMPANY["name"])}</a></li>'
+        f'<li><a class="footer-social-link" href="{e(url)}" rel="me noopener noreferrer" '
+        f'referrerpolicy="no-referrer" aria-label="{e(name)} · {e(C.COMPANY["name"])}" '
+        f'title="{e(name)} · {e(C.COMPANY["name"])}">{footer_icon(name.lower())}</a></li>'
         for name, url in C.SOCIAL_PROFILES)
+    social += f'<li>{whatsapp_link(lang, icon_only=True)}</li>'
     return f"""<footer>
   <div class="wrap">
     <div class="fcols">
       <div class="brand"><div class="name">VES<i>-</i>TECH</div>
         <p>{e(C.t(lang,'foot_brand'))}</p>
-        <ul>{social}</ul></div>
+        <ul class="footer-social">{social}</ul></div>
       <div><h2 class="fh">{e(C.t(lang,'foot_products'))}</h2><ul>{prod}
         <li><a href="{e(C.u_products(lang))}">{e(C.t(lang,'nav_all_products'))}</a></li></ul></div>
       <div><h2 class="fh"><a href="{e(C.u_service(lang))}">{e(C.t(lang,'foot_service'))}</a></h2><ul>
@@ -886,7 +897,6 @@ def footer(lang):
         <li><a href="{e(C.u_page(lang,'faq'))}">{e(C.t(lang,'nav_faq'))}</a></li>
         <li><a href="{e(C.u_page(lang,'about'))}">{e(C.t(lang,'nav_about'))}</a></li>
         <li><a href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'foot_contact'))}</a></li>
-        <li>{whatsapp_link(lang)}</li>
         <li><a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a></li>
       </ul></div>
     </div>

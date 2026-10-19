@@ -78,14 +78,22 @@ Die bestaetigten Firmenprofile auf Instagram (`vestechswiss`), LinkedIn
 (`ves-tech-swiss`) und Facebook (`https://www.facebook.com/profile.php?id=61594862482139`)
 werden seit dem 22.09.2026 zentral in
 `core.py::SOCIAL_PROFILES` gepflegt. Die URLs erscheinen in DE/FR/IT als
-lesbare Textlinks unter der Firmenmarke im Footer und als `sameAs` am
-Organization-Knoten. Es gibt keine eingebetteten Feeds, Social-SDKs oder
+Symbol-Links unter der Firmenmarke im Footer und als `sameAs` am
+Organization-Knoten. Seit dem 19.10.2026 stehen Instagram, LinkedIn, Facebook
+und WhatsApp auf Wunsch des Inhabers in einer gemeinsamen Icon-Reihe ohne
+sichtbare Beschriftung. Die Links behalten einen Namen über `aria-label` und
+`title`, eine sichtbare Tastaturmarkierung und 46 × 46 px grosse Klickflächen.
+Die vier lokalen SVG-Dateien in `assets/icons/social/` stammen aus Bootstrap
+Icons (MIT); Quellen und Lizenz stehen in den SVG-Kommentaren und `LICENSE`.
+Es gibt keine eingebetteten Feeds, Social-SDKs oder
 zusaetzlichen Trackingaufrufe. Private Profile und noch nicht bestaetigte
 TikTok- oder Verzeichniseintraege werden nicht verlinkt.
 
 Der vom Inhaber bestaetigte WhatsApp-Geschaeftskontakt steht zentral in
 `COMPANY.whatsapp_href`. Kontaktseite und Footer verlinken ihn in DE/FR/IT als
 normalen externen Link ohne vorbefuellten Text, Einbettung oder Referrer.
+Im Footer wird derselbe Link als Icon gerendert; die Kontaktseite behält ihren
+ausgeschriebenen Kontaktaufruf.
 `contact_whatsapp` misst nach Statistik-Zustimmung ausschliesslich den Klick,
 nicht Nachrichtentext, Telefonnummer, Versand oder Antwort. Die automatische
 Messung externer Linkziele bleibt gesperrt.

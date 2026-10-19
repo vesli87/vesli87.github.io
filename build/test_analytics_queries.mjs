@@ -1,10 +1,11 @@
 // Exact inquiry queries must be safe even when rejected/modified by a visitor.
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import vm from 'node:vm';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const initAnalytics = require('../assets/js/analytics.js');
 import { test } from 'node:test';
 
-const source = readFileSync(new URL('../assets/js/analytics.js', import.meta.url), 'utf8');
+
 
 function observe(search, { lang = 'de', granted = true, referrer = '' } = {}) {
   const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/' }[lang];
@@ -23,7 +24,7 @@ function observe(search, { lang = 'de', granted = true, referrer = '' } = {}) {
     sessionStorage: { getItem: () => null, setItem() {}, removeItem() {} },
     location: { hostname: 'www.ves-tech.ch', origin: 'https://www.ves-tech.ch', pathname: contact, search, hash: '' },
     navigator: {}, window: { VT: { lang, analytics: config }, addEventListener() {} } };
-  vm.runInNewContext(source, context);
+  initAnalytics(context);
   if (appended.length) {
     context.window.AhrefsAnalytics = { sendEvent(name, options) { sent.push({ name, props: options.props }); } };
     appended[0].onload();

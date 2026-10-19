@@ -17,6 +17,8 @@ Erzeugt aus data/*.json den kompletten statischen Auftritt:
 Alles ist idempotent: der Build kann jederzeit neu laufen.
 """
 
+from html_tools import rewrite_start_tags
+
 import datetime
 import hashlib
 import json
@@ -382,7 +384,6 @@ def umleitungen():
 LASTMOD_DATEI = C.BUILD / "lastmod.json"
 _VERSIONSANHANG = re.compile(r"\?v=[0-9a-f]{6,}")
 _SCRIPT_BLOCK = re.compile(r"(<script\b[^>]*>)(.*?)(</script\s*>)", re.I | re.S)
-_HTML_TAG = re.compile(r"<[a-zA-Z][^>]*>")
 
 
 def _inhalt_fuer_lastmod(roh):
@@ -399,7 +400,7 @@ def _inhalt_fuer_lastmod(roh):
                       text, flags=re.I)
 
     def html_part(text):
-        return _HTML_TAG.sub(lambda match: tag(match.group()), text)
+        return rewrite_start_tags(text, tag)
 
     parts, start = [], 0
     for match in _SCRIPT_BLOCK.finditer(roh):

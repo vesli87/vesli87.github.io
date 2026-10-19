@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Fail the build when executable content or public-file boundaries regress."""
 import base64
+from local_paths import local_path, child_path
+
 import argparse
 import hashlib
 from html.parser import HTMLParser
@@ -118,7 +120,7 @@ def inspect_html(text, root=C.ROOT, error_page=False):
             if path.scheme or path.netloc or path.path not in ('/assets/js/app.js', '/assets/js/analytics.js'):
                 parser.errors.append('Unexpected executable script URL')
                 continue
-            expected = digest((root / path.path.lstrip('/')).read_bytes())
+            expected = digest(child_path(root, path.path.lstrip('/')).read_bytes())
             if attrs.get('integrity') != expected:
                 parser.errors.append(f'Script integrity mismatch: {path.path}')
         else:
@@ -129,14 +131,14 @@ def inspect_html(text, root=C.ROOT, error_page=False):
 
 
 def main(site=None):
-    site = pathlib.Path(site).resolve() if site else C.ROOT
+    site = local_path(site).resolve() if site else C.ROOT
     errors = []
     files = public_files()
     pages = 0
     for name in files:
         if not name.endswith('.html') or name == C.GOOGLE_VERIFY_FILE:
             continue
-        text = (site / name).read_text('utf-8')
+        text = child_path(site, name).read_text('utf-8')
         # Tiny fixed redirects contain no executable content or forms.
         if '<meta http-equiv="refresh"' in text.lower():
             if '<script' in text.lower() or '<form' in text.lower():

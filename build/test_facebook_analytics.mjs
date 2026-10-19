@@ -1,9 +1,11 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import vm from 'node:vm';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const initAnalytics = require('../assets/js/analytics.js');
 import { test } from 'node:test';
 
-const source = readFileSync(new URL('../assets/js/analytics.js', import.meta.url), 'utf8');
+
 const campaigns = JSON.parse(readFileSync(new URL('../data/ANALYTICS_CAMPAIGNS.json', import.meta.url), 'utf8'));
 const contents = ['startbeitrag-de', 'hypertig-ax-de', 'omega-ax-de', 'beta-dx-de',
   'hypercleaner-st-de', 'mikroplasma-de', 'service-de', 'anfrageliste-de'];
@@ -35,7 +37,7 @@ function observe(search = '', { referrer = '', granted = true, gpc = false, dnt 
       if (!historyNoop) location.href = url;
     } }, VT: { lang: 'de', analytics: { campaigns, paths: [new URL(canonical).pathname, '/kontakt/'],
       contactPath: '/kontakt/', servicePaths: {}, products: { 'hypertig-ax': 'schweissgeraete' } } } } };
-  vm.runInNewContext(source, context);
+  initAnalytics(context);
   return { appended, sent, replacements, session, context, location,
     grant() { listeners['panel-click']({ target: { closest: () => ({ dataset: { consent: 'granted' } }) } }); },
     load() { context.window.AhrefsAnalytics = { sendEvent(name, options) { sent.push({ name, ...options }); } };
@@ -118,7 +120,7 @@ test('QR and Facebook transport work without an extra tracker; untagged sources 
   assert.equal(qr.attribution().source, 'direct_unknown');
   const facebook = observe('?fbclid=discarded', { referrer: 'https://l.facebook.com/' });
   assert.equal(facebook.appended.length, 1, 'Cloudflare stays excluded from an originally tagged entry');
-  assert.match(facebook.appended[0].src, /analytics\.ahrefs\.com/);
+  assert.equal(new URL(facebook.appended[0].src).hostname, 'analytics.ahrefs.com');
   facebook.load();
   assert.equal(facebook.attribution().source, 'facebook');
   assert.equal(facebook.attribution().campaign, '');

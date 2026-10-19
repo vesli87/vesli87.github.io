@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Create, verify and safely restore local project/public-release backups (stdlib only)."""
+from local_paths import local_path
+
 import argparse
 import datetime
 import hashlib
@@ -151,8 +153,8 @@ def write_archive(root, names, output, public=False):
 
 
 def create(output, *, public_only=False, public_dir=None, root=ROOT, packager=None):
-    root = Path(root).resolve()
-    output = Path(output).absolute()
+    root = ROOT if root == ROOT else local_path(root).resolve()
+    output = local_path(output)
     if output.is_symlink() or output.exists():
         raise ValueError('Backup output must not already exist')
     output = output.resolve()
@@ -192,7 +194,7 @@ def create(output, *, public_only=False, public_dir=None, root=ROOT, packager=No
                     packager = package
                 packager(staging)
             else:
-                staging = Path(public_dir)
+                staging = local_path(public_dir)
                 if staging.is_symlink():
                     raise ValueError('Public input directory must not be a symlink')
             staging = staging.resolve()
@@ -242,7 +244,7 @@ def inspect_archive(path, expected, public=False):
 
 
 def verify(backup):
-    backup = Path(backup).resolve()
+    backup = local_path(backup).resolve()
     if not backup.is_dir():
         raise ValueError('Backup directory does not exist')
     names = all_files(backup)
@@ -304,9 +306,9 @@ def unpack(archive_path, target):
 
 
 def restore(backup, output):
-    backup = Path(backup).resolve()
+    backup = local_path(backup).resolve()
     metadata = verify(backup)
-    output = Path(output).absolute()
+    output = local_path(output)
     if output.is_symlink():
         raise ValueError('Restore destination must not be a symlink')
     output = output.resolve()

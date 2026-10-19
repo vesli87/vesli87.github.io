@@ -27,6 +27,8 @@ Zwei Dinge macht dieses Skript richtig, die vorher von Hand falsch waren:
    assets/img/hero-manifest.json und render.py liest sie von dort.
 """
 
+from local_paths import local_path
+
 import json
 import pathlib
 import shutil
@@ -80,9 +82,11 @@ def erzeuge(name, quelle):
     # main() also checks the name. Keep the boundary here for imported use.
     if name not in NAMEN:
         sys.exit(f"Unbekanntes Herobild: {name}")
+    # Use the trusted allowlist value for every generated filename.
+    name = next(allowed for allowed in NAMEN if allowed == name)
     # Absolute input paths cannot be mistaken for sips/cwebp command options.
     # External files and explicitly selected input symlinks remain supported.
-    quelle = pathlib.Path(quelle).expanduser().resolve()
+    quelle = local_path(quelle).resolve()
     if not quelle.is_file():
         sys.exit(f"Vorlage nicht gefunden: {quelle}")
     for path in [MANIFEST, OUT / f"{name}.jpg"] + [
@@ -189,9 +193,12 @@ def pruefen():
 
 
 if __name__ == "__main__":
-    if "--pruefen" in sys.argv:
-        pruefen()
-    elif len(sys.argv) == 3 and sys.argv[1] in NAMEN:
-        erzeuge(sys.argv[1], sys.argv[2])
-    else:
-        sys.exit(__doc__.strip())
+    try:
+        if "--pruefen" in sys.argv:
+            pruefen()
+        elif len(sys.argv) == 3 and sys.argv[1] in NAMEN:
+            erzeuge(sys.argv[1], sys.argv[2])
+        else:
+            sys.exit(__doc__.strip())
+    except (ValueError, OSError) as error:
+        sys.exit(str(error))

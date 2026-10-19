@@ -4,8 +4,20 @@
    Anreicherung: Suche, Anfrageliste, Schubladen, Tabs, Formularversand.
    Ohne JavaScript bleibt die Website vollständig lesbar und navigierbar.
    ========================================================================= */
-(function () {
+// The same factory runs in browsers and dependency-injected Node tests.
+(function (factory) {
+  if (typeof module === 'object' && module.exports) module.exports = factory;
+  else factory(window);
+}(function (env) {
   'use strict';
+
+  var window = env.window || env, document = env.document, location = env.location;
+  var navigator = env.navigator, URL = env.URL || globalThis.URL;
+  var URLSearchParams = env.URLSearchParams || globalThis.URLSearchParams;
+  var fetch = env.fetch && env.fetch.bind(env), AbortController = env.AbortController || globalThis.AbortController;
+  var setTimeout = env.setTimeout.bind(env), clearTimeout = env.clearTimeout.bind(env);
+  var setInterval = env.setInterval.bind(env), clearInterval = env.clearInterval.bind(env);
+
 
   var VT = window.VT || {};
   var T = VT.i18n || {};
@@ -114,11 +126,11 @@
   /* localStorage kann in privaten Fenstern werfen – immer absichern. */
   var store = {
     get: function (k, d) {
-      try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }
+      try { var v = env.localStorage.getItem(k); return v ? JSON.parse(v) : d; }
       catch (e) { return d; }
     },
     set: function (k, v) {
-      try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* egal */ }
+      try { env.localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* egal */ }
     }
   };
 
@@ -179,8 +191,8 @@
   if (savedCart === null) {
     // Migrate only known IDs and quantities. Never trust cached names/URLs.
     try {
-      localStorage.setItem(CART_KEY, JSON.stringify(cart));
-      localStorage.removeItem(LEGACY_CART_KEY);
+      env.localStorage.setItem(CART_KEY, JSON.stringify(cart));
+      env.localStorage.removeItem(LEGACY_CART_KEY);
     } catch (err) { /* The in-memory list remains usable in private windows. */ }
   }
   // Track removals during an in-flight inquiry. A product removed and added
@@ -1383,4 +1395,13 @@
       ev.preventDefault(); input.focus();
     }
   });
-})();
+  return { cleanCart: cleanCart, quantity: quantity, safeUrl: safeUrl, mark: mark, norm: norm,
+    loadIndex: loadIndex, submitForm: submitForm, addCart: addCart, rmCart: rmCart,
+    rowKey: rowKey, setQty: setQty, setOption: setOption, itemLines: itemLines,
+    productChoice: productChoice, updateProductLinks: updateProductLinks, search: search,
+    setIndex: function (value) { IDX = value; }, readContactContext: readContactContext,
+    contactBody: contactBody, renderContactContext: renderContactContext,
+    updateQualifications: updateQualifications, qualificationGroups: qualificationGroups,
+    snapshotFields: snapshotFields, qualificationBody: qualificationBody,
+    readCart: function () { return cart; }, setCart: function (value) { cart = value; } };
+}));

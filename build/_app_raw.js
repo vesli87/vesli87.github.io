@@ -652,16 +652,18 @@ function sendInquiry(){
   const name=document.getElementById('cName').value||'—';
   const mail=document.getElementById('cMail').value||'—';
   const msg=document.getElementById('cMsg').value||'';
-  const lines=cart.map(id=>'- '+P.find(x=>x.id===id).name).join('%0D%0A');
-  const body=`Anfrage von: ${name}%0D%0AE-Mail: ${mail}%0D%0A%0D%0AGewünschte Geräte:%0D%0A${lines}%0D%0A%0D%0ANachricht:%0D%0A${encodeURIComponent(msg)}`;
-  window.location.href=`mailto:info@ves-tech.ch?subject=${encodeURIComponent('Anfrage VES-TECH ('+cart.length+' Artikel)')}&body=${body}`;
+  const lines=cart.map(id=>'- '+P.find(x=>x.id===id).name).join('\r\n');
+  const body=['Anfrage von: '+name,'E-Mail: '+mail,'','Gewünschte Geräte:',lines,'','Nachricht:',msg].join('\r\n');
+  window.location.href='mailto:info@ves-tech.ch?subject='+encodeURIComponent('Anfrage VES-TECH ('+cart.length+' Artikel)')+'&body='+encodeURIComponent(body);
   toast(t('opened_mail'));
 }
 function sendKontakt(){
-  const name=document.getElementById('kName').value||'—';const mail=document.getElementById('kMail').value||'—';
-  const tel=document.getElementById('kTel').value||'—';const msg=document.getElementById('kMsg').value||'';
-  const body=`Name: ${name}%0D%0AE-Mail: ${mail}%0D%0ATelefon: ${tel}%0D%0A%0D%0A${encodeURIComponent(msg)}`;
-  window.location.href=`mailto:info@ves-tech.ch?subject=${encodeURIComponent('Kontaktanfrage VES-TECH')}&body=${body}`;
+  const name=document.getElementById('kName').value||'—';
+  const mail=document.getElementById('kMail').value||'—';
+  const tel=document.getElementById('kTel').value||'—';
+  const msg=document.getElementById('kMsg').value||'';
+  const body=['Name: '+name,'E-Mail: '+mail,'Telefon: '+tel,'',msg].join('\r\n');
+  window.location.href='mailto:info@ves-tech.ch?subject='+encodeURIComponent('Kontaktanfrage VES-TECH')+'&body='+encodeURIComponent(body);
   toast(t('opened_mail'));
 }
 

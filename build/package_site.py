@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Copy validated public website files into a new, empty deployment directory."""
+from local_paths import local_path
+
 import argparse
 import pathlib
 import re
@@ -90,7 +92,7 @@ def public_files():
 
 
 def package(output):
-    output = pathlib.Path(output)
+    output = local_path(output)
     if output.is_symlink():
         raise ValueError('Deployment directory must not be a symlink')
     output = output.resolve()

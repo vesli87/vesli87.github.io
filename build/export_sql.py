@@ -23,6 +23,8 @@ data/*.json und baut neu.
 Preise stehen hier so wenig wie auf der Website - es gibt keine Spalte dafuer.
 """
 
+from local_paths import local_path
+
 import pathlib
 import sqlite3
 import subprocess
@@ -194,7 +196,9 @@ def main():
         sys.exit(__doc__.strip().splitlines()[2].strip())
     # The caller deliberately chooses the export directory; it need not be
     # inside the repository. Never follow a final symlink or truncate a device.
-    ziel = pathlib.Path(sys.argv[1]).expanduser().absolute()
+    ziel = local_path(sys.argv[1])
+    if ziel.suffix.lower() not in (".sql", ".sqlite", ".db", ".sqlite3"):
+        sys.exit("Exportziel braucht die Endung .sql, .sqlite, .db oder .sqlite3")
     if ziel.is_symlink() or (ziel.exists() and not ziel.is_file()):
         sys.exit(f"Exportziel muss eine normale Datei sein: {ziel}")
 
@@ -229,4 +233,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (ValueError, OSError) as error:
+        sys.exit(str(error))

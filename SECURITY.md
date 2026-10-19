@@ -109,12 +109,22 @@ möglich. Der Deploy-Job erhält als einziger Pages-/OIDC-Schreibrechte und darf
 `main` in die Produktionsumgebung veröffentlichen. Pull Requests laufen durch
 Build und Prüfungen, ohne Veröffentlichung oder Backup-Upload.
 
-CodeQL-Befunde werden nach erreichbarem Angriffspfad geprüft. Ausführung des
-bekannten Frontend-Quelltexts in den Regressionstests und beabsichtigte lokale
-CLI-Ein-/Ausgabepfade sind nicht automatisch eine aus dem Internet erreichbare
-Codeausführung. Das alte `build/source-snapshot.html` und Extraktionsdateien
-gehören zum historischen Archiv, werden nicht ausgeliefert und dürfen nicht als
-Produktionsfrontend wiederverwendet werden.
+Die CLI-Werkzeuge verwenden `build/local_paths.py`: Dateizugriffe bleiben im
+Projekt, in `Desktop`, `Downloads`, `Documents`, `Pictures`, temporaeren Ordnern
+oder auf externen Datentraegern unter `/Volumes`. In GitHub Actions ist auch
+`RUNNER_TEMP` erlaubt. Normalisierte Pfade werden mit einer Verzeichnisgrenze
+verglichen; Symlinks duerfen diese Ablagen nicht verlassen. Paket- und
+Wiederherstellungsziele behalten ihre zusaetzlichen Leerordner-/Symlinkpruefungen.
+SQL-Exporte akzeptieren nur `.sql`, `.sqlite`, `.db` und `.sqlite3`.
+
+Frontendtests importieren die gleichen Initialisierungsfunktionen wie der
+Browser und uebergeben ihre DOM-/Storage-Abhaengigkeiten direkt. Sie fuehren
+keinen eingelesenen Quelltext mit `vm`, `eval` oder `Function` aus. JSON-LD wird
+mit einem HTML-Parser gelesen; die Inhaltskennung veraendert nur echte Starttags
+und bewahrt Kommentare sowie Scriptdaten. Historische v1-Kopien werden nicht
+veroeffentlicht; ihre Formularwerte werden ebenfalls vollstaendig als einzelne
+mailto-Parameter kodiert. CodeQL bleibt fuer alle Quelldateien eingeschaltet;
+Befunde werden durch Codekorrekturen und einen neuen Scan ueberprueft.
 
 Jeder Produktionsbuild erstellt ein öffentliches Wiederherstellungsarchiv,
 prüft SHA-256 und stellt es in einen leeren Testordner wieder her. GitHub hält das

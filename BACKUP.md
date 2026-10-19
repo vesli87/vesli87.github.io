@@ -71,7 +71,13 @@ Deployment ausgeschlossen. Für weitere Sicherungen einen neuen Namen verwenden.
 Die Erzeugung prüft anschliessend automatisch alle Prüfsummen, Archivpfade und das
 Git-Bundle. Ein unvollständiger Lauf hinterlässt keine scheinbar gültige Sicherung.
 
-Auch ein expliziter Pfad ausserhalb des Projekts ist möglich. Ein Ordner unter
+Auch ein expliziter Pfad ausserhalb des Projekts ist möglich, innerhalb von
+`~/Desktop`, `~/Downloads`, `~/Documents`, `~/Pictures`, temporaeren Ablagen
+oder externen Datentraegern unter `/Volumes`. CI darf zusaetzlich `RUNNER_TEMP`
+verwenden. Andere System-/Homeordner und aus diesen Ablagen herausfuehrende
+Symlinks werden abgewiesen; es gibt keinen Schalter zum Abschalten dieser
+Grenze. Fuer eine Sicherung von einem anderen Speicher diese zuerst in eine
+der erlaubten Ablagen kopieren. Ein Ordner unter
 `/tmp` eignet sich für einen Wiederherstellungstest, **nicht** für dauerhafte
 Aufbewahrung.
 

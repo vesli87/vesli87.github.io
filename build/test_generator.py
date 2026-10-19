@@ -5,6 +5,8 @@ import re
 import tempfile
 import unittest
 from html.parser import HTMLParser
+from urllib.parse import urlsplit
+from html_tools import structured_data
 from unittest.mock import patch
 
 import core as C
@@ -173,10 +175,8 @@ class GeneratorTests(unittest.TestCase):
             for product in C.P:
                 with self.subTest(lang=lang, product=product['id']):
                     url, page = PG.page_product(lang, product)
-                    scripts = re.findall(r'<script type="application/ld\+json">(.*?)</script>',
-                                         page, re.S)
-                    graph = [node for script in scripts
-                             for node in json.loads(script)['@graph']]
+                    graph = [node for block in structured_data(page)
+                             for node in block['@graph']]
                     for node in walk(graph):
                         types = node.get('@type', [])
                         if isinstance(types, str):
@@ -312,8 +312,9 @@ class GeneratorTests(unittest.TestCase):
                         self.assertEqual(C.analytics_enabled(), enabled)
                         panel, policy = R.analytics_html(lang), R.csp(lang)
                         self.assertEqual(bool(panel), enabled)
-                        self.assertEqual('https://static.cloudflareinsights.com' in policy, bool(token))
-                        self.assertEqual('https://analytics.ahrefs.com' in policy, bool(ahrefs))
+                        hosts = {urlsplit(value).hostname for value in policy.replace(';', ' ').split() if urlsplit(value).scheme == 'https'}
+                        self.assertEqual('static.cloudflareinsights.com' in hosts, bool(token))
+                        self.assertEqual('analytics.ahrefs.com' in hosts, bool(ahrefs))
                         self.assertNotIn("'unsafe-inline'", policy)
                         if enabled:
                             self.assertIn('data-ahrefs-key="' + ahrefs + '"', panel)

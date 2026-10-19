@@ -1,9 +1,10 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import vm from 'node:vm';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const initAnalytics = require('../assets/js/analytics.js');
 import { test } from 'node:test';
 
-const source = readFileSync(new URL('../assets/js/analytics.js', import.meta.url), 'utf8');
+
 const businessUrl = 'https://wa.me/41767109139';
 
 function visit({ consent = 'granted', dnt = '', gpc = false, search = '', referrer = '',
@@ -29,7 +30,7 @@ function visit({ consent = 'granted', dnt = '', gpc = false, search = '', referr
       body: { appendChild(script) { scripts.push(script); } } },
     window: { addEventListener() {}, VT: { lang, analytics: { paths: [contact, '/'],
       contactPath: contact, whatsappUrl: configuredUrl, products: {}, campaigns: {}, servicePaths: {} } } } };
-  vm.runInNewContext(source, context);
+  initAnalytics(context);
   return { scripts, sent, automatic, store, context,
     load() {
       if (!scripts[0]) return;

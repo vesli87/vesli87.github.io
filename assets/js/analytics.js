@@ -1,6 +1,15 @@
 /* Optional statistics. No provider or replay of actions before consent. */
-(function () {
+// The same factory runs in browsers and dependency-injected Node tests.
+(function (factory) {
+  if (typeof module === 'object' && module.exports) module.exports = factory;
+  else factory(window);
+}(function (env) {
   'use strict';
+
+  var window = env.window || env, document = env.document, location = env.location;
+  var navigator = env.navigator, URL = env.URL || globalThis.URL;
+  var Date = env.Date || globalThis.Date;
+
   var panel = document.getElementById('analyticsConsent');
   var settings = document.getElementById('analyticsSettings');
   var VT = window.VT || {}, config = VT.analytics || {};
@@ -30,10 +39,10 @@
   }
   function readChoice() {
     try {
-      var saved = JSON.parse(localStorage.getItem(key));
+      var saved = JSON.parse(env.localStorage.getItem(key));
       if (validChoice(saved)) return saved;
       // An old refusal still applies. A Cloudflare-only grant does not.
-      var old = JSON.parse(localStorage.getItem('vt.analytics.consent.v1'));
+      var old = JSON.parse(env.localStorage.getItem('vt.analytics.consent.v1'));
       if (validChoice(old) && old.value === 'denied') return old;
     } catch (err) { /* Consent can still be given for this document. */ }
     return null;
@@ -42,7 +51,7 @@
   function approved() { return !!(validChoice(choice) && choice.value === 'granted' && !privacySignal()); }
   function clearAttribution() {
     touch = null;
-    try { sessionStorage.removeItem(attributionKey); } catch (err) { /* optional */ }
+    try { env.sessionStorage.removeItem(attributionKey); } catch (err) { /* optional */ }
   }
   function knownProduct(id) { return typeof id === 'string' && owns(products, id); }
   function productInPath(path) {
@@ -182,13 +191,13 @@
     if (!approved() || !contextSafe()) return;
     if (touch && !cleanTouch(touch)) touch = null;
     if (!touch) {
-      try { touch = cleanTouch(JSON.parse(sessionStorage.getItem(attributionKey))); } catch (err) { /* optional */ }
+      try { touch = cleanTouch(JSON.parse(env.sessionStorage.getItem(attributionKey))); } catch (err) { /* optional */ }
     }
     if (!touch) {
       var origin = entry.campaign || sourceFromReferrer();
       touch = { at: Date.now(), data: { source: origin.source, medium: origin.medium,
         campaign: origin.campaign, content: origin.content, landing: canonical.href } };
-      try { sessionStorage.setItem(attributionKey, JSON.stringify(touch)); } catch (err) { /* document-only attribution */ }
+      try { env.sessionStorage.setItem(attributionKey, JSON.stringify(touch)); } catch (err) { /* document-only attribution */ }
     }
   }
   function attribution() {
@@ -344,7 +353,7 @@
     var button = event.target.closest('[data-consent]');
     if (!button || ['granted', 'denied'].indexOf(button.dataset.consent) < 0) return;
     choice = { value: button.dataset.consent, at: Date.now() };
-    try { localStorage.setItem(key, JSON.stringify(choice)); } catch (err) { /* this document only */ }
+    try { env.localStorage.setItem(key, JSON.stringify(choice)); } catch (err) { /* this document only */ }
     if (!approved()) {
       queue = []; clearAttribution();
       if (loaded) { location.reload(); return; }
@@ -358,4 +367,4 @@
   window.addEventListener('pageshow', function (event) { if (event.persisted) revalidate(); });
   document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') revalidate(); });
   render();
-}());
+}));

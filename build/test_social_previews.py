@@ -2,11 +2,11 @@
 import base64
 import hashlib
 import json
-import re
 import struct
 import unittest
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
+from html_tools import structured_data
 from urllib.parse import urlsplit
 
 import core as C
@@ -27,8 +27,7 @@ class Meta(HTMLParser):
 
 
 def collection_image(html):
-    blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
-    pages = [item for block in blocks for item in json.loads(block)['@graph']
+    pages = [item for block in structured_data(html) for item in block['@graph']
              if item.get('@type') == 'CollectionPage']
     return pages[0]['primaryImageOfPage']['url']
 
@@ -47,8 +46,7 @@ class SocialPreviewTests(unittest.TestCase):
                 png = (C.ROOT / expected_path.lstrip('/')).read_bytes()
                 self.assertEqual(png[:8], b'\x89PNG\r\n\x1a\n')
                 self.assertEqual(struct.unpack('>II', png[16:24]), (1200, 630))
-                blocks = re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S)
-                graph = [item for block in blocks for item in json.loads(block)['@graph']]
+                graph = [item for block in structured_data(html) for item in block['@graph']]
                 identity = C.abs_url(C.u_prod(lang, product)) + '#product'
                 item = next(node for node in graph if node.get('@id') == identity)
                 self.assertEqual(item['@type'], 'Thing')

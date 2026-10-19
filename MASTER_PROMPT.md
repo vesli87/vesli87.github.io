@@ -10,7 +10,7 @@
 > (`ves-tech-eshop.html`, ~440 kB, eine URL für die ganze Seite). Das war für eine
 > Vorschau in Ordnung, für eine echte Website aber nicht: Suchmaschinen und
 > Antwortmaschinen sahen genau **eine** Seite ohne Inhalt. v2 erzeugt daraus
-> **360 echte, vorgerenderte Inhaltsseiten** in DE/FR/IT. Der alte Stand liegt unverändert
+> **360 echte, vorgerenderte Inhaltsseiten** in DE/FR/IT. Der historische Stand liegt (mit nachtraeglich abgesicherten mailto-Parametern)
 > unter `build/source-snapshot.html`, die alte Fassung dieses Dokuments unter
 > `build/MASTER_PROMPT_v1.md`.
 
@@ -114,6 +114,11 @@ build/i18n_extra.json ← SEO-/AEO-Texte, FAQ, Rechtstexte (von Hand gepflegt)
 
 **Kein Framework und kein Bundler.** Der Generator benötigt Python 3.9 oder neuer.
 Node.js 22 oder neuer wird nur für die Frontend-Regressionstests verwendet. Ausgeliefert wird reines HTML/CSS/JS.
+Die Frontendskripte sind Initialisierungsfunktionen: im Browser starten sie sofort,
+Node importiert dieselben Funktionen per CommonJS und uebergibt DOM/Storage als
+Abhaengigkeiten. Keine Ausfuehrung eingelesener Quelltextstrings in den Tests.
+`build/html_tools.py` liest JSON-LD mit HTMLParser und verarbeitet echte Starttags
+fuer lastmod, ohne Scriptdaten, Kommentare oder redaktionelle Bytes umzuschreiben.
 
 **Vorgerendert, nicht client-side.** Jede Seite enthält ihren vollständigen Text im
 HTML. Das ist die Grundlage für SEO **und** AEO: Crawler und Antwortmaschinen lesen
@@ -745,6 +750,11 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
   keinen Symlinks und überschreibt keine vorhandenen Deployment-Verzeichnisse.
 - GitHub: CodeQL, Secret Scanning/Push Protection, Dependabot, nur offizielle
   Actions mit vollständigem SHA; `main` gegen Löschen/Force-Push geschützt.
+- `build/local_paths.py` begrenzt CLI-Dateizugriffe auf Projekt, persoenliche
+  Dokumentordner, temporaere Ablagen und `/Volumes`; in Actions zusaetzlich
+  `RUNNER_TEMP`. Aufgeloeste Symlinks muessen ebenfalls darin liegen.
+  Exporte haben feste SQL-/SQLite-Endungen, oeffentliche Dateiunterpfade duerfen
+  keine Symlinks enthalten. Weitere Grenzen stehen in SECURITY.md/BACKUP.md.
 - `build/backup.py`: lokale Quell-/Git-/Release-Sicherung oder ausdrücklich
   öffentlicher Release-Modus. SHA-256, Pfadkontrolle und reale Wiederherstellung
   gehören zur Prüfung. CI bewahrt oeffentliche Release-Archive 90 Tage auf und

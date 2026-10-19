@@ -1,11 +1,12 @@
 // Regression tests, no browser or npm dependencies. Run: node build/test_frontend.mjs
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
-import vm from 'node:vm';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const initAnalytics = require('../assets/js/analytics.js');
 import { test } from 'node:test';
 import { execFileSync } from 'node:child_process';
 
-const source = readFileSync(new URL('../assets/js/app.js', import.meta.url), 'utf8');
+const initApp = require('../assets/js/app.js');
 const inquiryCatalogFixture = {
   'beta-dx': { n: 'Beta DX', u: '/produkte/schweissgeraete/beta-dx/', c: 'schweissgeraete', options: [] },
   mms: { n: 'MMS 2000 / 3000', u: '/produkte/schweissgeraete/mms/', c: 'schweissgeraete', kind: 'variant',
@@ -38,7 +39,7 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
     },
     body: {}, activeElement: {},
   };
-  const context = vm.createContext({ document, console, fetch, URL, URLSearchParams,
+  const context = { document, console, fetch, URL, URLSearchParams,
     AbortController, navigator: {}, location,
     localStorage: { getItem: k => storage.get(k) ?? null, setItem: (k,v) => storage.set(k,v), removeItem: k => storage.delete(k) },
     setTimeout: fn => { const id = Symbol(); timers.set(id, fn); return id; },
@@ -48,16 +49,10 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
     window: { VT: { inquiryCatalog: structuredClone(inquiryCatalogFixture),
       inquiryServices: { repair: { n: 'Reparatur', u: '/service/reparatur/' }, calib: { n: 'Kalibrierung', u: '/service/kalibrierung/' } } },
       location, addEventListener: (type, fn) => { windowEvents[type] = fn; } },
-  });
+  };
   if (prepare) prepare(context, elements, collections);
-  vm.runInContext(source.replace(/\}\)\(\);\s*$/, `
-    window.test = { cleanCart, quantity, safeUrl, mark, norm, loadIndex, submitForm, addCart, rmCart,
-      rowKey, setQty, setOption, itemLines, productChoice, updateProductLinks,
-      search, setIndex: value => { IDX = value; }, readContactContext, contactBody, renderContactContext,
-      updateQualifications, qualificationGroups, snapshotFields, qualificationBody,
-      readCart: () => cart, setCart: value => { cart = value; } };
-  })();`), context);
-  return { api: context.window.test, context, elements, timers, intervals, storage, events, windowEvents, created };
+  const api = initApp(context);
+  return { api, context, elements, timers, intervals, storage, events, windowEvents, created };
 }
 const item = { id: 'beta-dx', name: 'Beta DX', url: '/produkte/schweissgeraete/beta-dx/', img: '', qty: 1 };
 
@@ -249,7 +244,7 @@ test('the honeypot prevents a filled trap from issuing any request or draft', ()
   assert.equal(f.resetCalled, undefined);
 });
 
-const analyticsSource = readFileSync(new URL('../assets/js/analytics.js', import.meta.url), 'utf8');
+
 function analytics({ saved, oldSaved, hostname = 'www.ves-tech.ch', search = '', hash = '',
   pathname = '/', canonical = 'https://www.ves-tech.ch/',
   referrer = '', searchPage = false, dnt = false, gpc = false, ahrefs = false,
@@ -280,7 +275,7 @@ function analytics({ saved, oldSaved, hostname = 'www.ves-tech.ch', search = '',
     navigator: { doNotTrack: dnt ? '1' : '0', globalPrivacyControl: gpc },
     window: { VT: { lang: 'de', analytics: analyticsConfig }, addEventListener: (name, fn) => { listeners[name] = fn; } },
   };
-  vm.runInNewContext(analyticsSource, context);
+  initAnalytics(context);
   return { appended, panel, settings, listeners, documentEvents, context, sent, session,
     api: context.window.VTAnalytics, reloads: () => reloads,
     load() { context.window.AhrefsAnalytics = { sendEvent(name, options) { sent.push({ name, props: options.props }); } };

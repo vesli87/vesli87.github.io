@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Keep a verified public recovery archive in GitHub Releases, never on the laptop."""
+from local_paths import local_path
+
 import argparse
 import json
 import os
@@ -21,7 +23,7 @@ def release_tag(commit):
 
 
 def public_inventory(directory):
-    directory = Path(directory).resolve()
+    directory = local_path(directory).resolve()
     metadata = backup.verify(directory)
     if metadata['kind'] != 'public-release' or set(backup.all_files(directory)) != set(FILES):
         raise ValueError('Only the three verified public-release files may be uploaded')
@@ -91,7 +93,7 @@ def missing_assets(release, inventory):
 
 
 def publish(directory, commit):
-    directory = Path(directory).resolve()
+    directory = local_path(directory).resolve()
     tag = release_tag(commit)
     inventory = public_inventory(directory)  # Must precede every network mutation.
     with tempfile.TemporaryDirectory(prefix='vestech-recovery-restore-') as temp:

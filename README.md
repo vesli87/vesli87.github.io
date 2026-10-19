@@ -30,6 +30,10 @@ python3 -m http.server 8099 --bind 127.0.0.1
 
 Der Generator benötigt Python 3.9 oder neuer und die Standardbibliothek.
 Die Frontend-Regressionstests benötigen Node.js 22 oder neuer, keine npm-Pakete.
+Sie importieren die produktiven Initialisierungsfunktionen direkt und verwenden
+keine dynamische Ausfuehrung eingelesenen JavaScripts. `build/html_tools.py`
+verarbeitet HTML/JSON-LD mit dem Standardparser. `build/local_paths.py` begrenzt
+die CLI-Dateipfade auf die in [SECURITY.md](SECURITY.md) beschriebenen Ablagen.
 `verify_mahe.py` vergleicht mit den gespeicherten Herstellerdaten; `--fresh`
 aktualisiert diese aus dem Netz. Änderungen an Herstellerdaten vor Übernahme prüfen.
 `audit.py --live` prüft zusätzlich die öffentlich erreichbaren Sitemap-URLs.

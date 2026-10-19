@@ -14,6 +14,8 @@ mit dem Schlüssel `panels/<Dateiname>` und dem Vermerk `"local": true` — dara
 erkennt render.img_tag, dass es keinen Rückfall auf mahe-online.de gibt.
 """
 
+from local_paths import local_path
+
 import json
 import pathlib
 import re
@@ -68,7 +70,7 @@ def main():
     if len(sys.argv) < 2:
         print(__doc__)
         sys.exit(1)
-    src = pathlib.Path(sys.argv[1]).expanduser().resolve()
+    src = local_path(sys.argv[1]).resolve()
     if not src.is_dir():
         print(f"Ordner nicht gefunden: {src}")
         sys.exit(1)
@@ -147,4 +149,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except (ValueError, OSError) as error:
+        sys.exit(str(error))

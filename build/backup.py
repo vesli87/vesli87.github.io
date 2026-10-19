@@ -30,7 +30,7 @@ PUBLIC_FILES = {'index.html', '404.html', 'favicon.ico', 'favicon.png', 'robots.
                 'sitemap.xml', 'llms.txt', 'llms-full.txt', 'site.webmanifest',
                 '.nojekyll', 'LICENSE', 'CNAME', '.well-known/security.txt',
                 'data/products.json', 'data/search-de.json', 'data/search-fr.json',
-                'data/search-it.json'}
+                'data/search-it.json', 'data/search-en.json'}
 # Kept independent of core/package_site so CI public-only does not import config.
 # Match package_site.asset_allowed whenever the public asset contract changes.
 ASSET_FILES = {

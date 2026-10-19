@@ -503,11 +503,17 @@ Enthalten: Pflichtfeldprüfung mit Meldung am Feld (`aria-invalid` +
 Am 19.10.2026 nach einem Lesbarkeitsvergleich mit ISO Oerlikon überarbeitet:
 
 ```
---bg:#FFFFFF  --bg2:#F3F4F6  --panel:#FFFFFF  --panel2:#F7F8FA
+--bg:#F1F2EF  --bg2:#E7E9E5  --panel:#F8F9F6  --panel2:#ECEEE9
 --line:#D8DDE3 --accent:#E0511A --accent-2:#FF8A3D
 --white:#18212F   /* ist die TEXTfarbe und dunkel, kein heller Hintergrund */
 --muted:#475569 --ink:#141416
 ```
+
+Auf Wunsch des Inhabers am selben Tag abgemildert: grossflächige Hintergründe
+verwenden ein sanftes neutrales Grau, Header und Inhaltskarten ein gebrochenes
+Weiss. Textfarben und Typografie bleiben gut lesbar. Originale Herstellerbilder
+werden nicht abgedunkelt; ihre weissen Bildflächen bleiben erhalten. Such- und
+Formularplatzhalter verwenden die vorhandene dunkle Hilfstextfarbe.
 
 **Inter** für Gerätenamen, Überschriften, Bedienung und Fliesstext. **Anton**
 bleibt für die Wortmarke und die nummerierten Verfahrenszeichen erhalten.

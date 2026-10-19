@@ -1,0 +1,922 @@
+{
+  "ecomig": {
+    "sources": [
+      "P.json#ecomig",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mms"
+      },
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      }
+    ],
+    "de": {
+      "intro": "EcoMIG verbindet MIG/MAG mit einer kompakten Bauform. Die Wahl zwischen digitaler und analoger Bedienung gehört zur Geräteausführung und sollte bereits in Ihrer Anfrage stehen.",
+      "checks": [
+        "Nennen Sie Werkstoff, Draht und den benötigten Arbeitsstrom. Vergleichen Sie Anschluss und Einschaltdauer der konkreten Ausführung in der technischen Tabelle.",
+        "Für häufige Ortswechsel können Sie die tragbare MMS-Serie vergleichen. Wenn Pulsverfahren benötigt werden, prüfen Sie die Ausstattung der HyperMIG-X-Serie."
+      ]
+    },
+    "fr": {
+      "intro": "EcoMIG associe le MIG/MAG à une construction compacte. Le choix de la commande numérique ou analogique fait partie de la version du poste et doit figurer dans votre demande.",
+      "checks": [
+        "Indiquez le matériau, le fil et le courant de travail nécessaire. Comparez le raccordement et le facteur de marche de la version exacte dans le tableau technique.",
+        "Pour des déplacements fréquents, comparez la série portable MMS. Si vous avez besoin du soudage pulsé, consultez les fonctions de la série HyperMIG X."
+      ]
+    },
+    "it": {
+      "intro": "EcoMIG combina il MIG/MAG con una struttura compatta. La scelta tra comandi digitali e analogici fa parte della versione della macchina e va indicata nella richiesta.",
+      "checks": [
+        "Specificate materiale, filo e corrente di lavoro necessaria. Confrontate alimentazione e ciclo di lavoro della versione esatta nella tabella tecnica.",
+        "Per spostamenti frequenti, confrontate la serie portatile MMS. Se occorre la saldatura pulsata, consultate le funzioni della serie HyperMIG X."
+      ]
+    }
+  },
+  "mms": {
+    "sources": [
+      "P.json#mms",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "ecomig"
+      },
+      {
+        "kind": "product",
+        "id": "wk300"
+      }
+    ],
+    "de": {
+      "intro": "Die Seite führt MMS 2000 und MMS 3000 gemeinsam. Entscheiden Sie deshalb nach der vollständigen Variante und deren Datenspalte, nicht allein nach dem Familiennamen MMS.",
+      "checks": [
+        "Beschreiben Sie den Einsatz auf Montage oder in der Werkstatt und den vorhandenen Netzanschluss. Geben Sie den gewünschten Brenner und die Kühlung an.",
+        "WK 300 ist im Katalog ausdrücklich für MMS 3000 beschrieben. Daraus folgt keine pauschale Zuordnung zu MMS 2000; die komplette Konfiguration wird vor dem Angebot geklärt."
+      ]
+    },
+    "fr": {
+      "intro": "Cette page réunit MMS 2000 et MMS 3000. Choisissez la variante complète et sa colonne de données, plutôt que le seul nom de la famille MMS.",
+      "checks": [
+        "Décrivez les travaux de montage ou d’atelier et l’alimentation disponible. Précisez la torche et le refroidissement souhaités.",
+        "Le catalogue indique expressément WK 300 pour MMS 3000. Cette indication ne vaut pas pour toute la gamme MMS 2000 ; la configuration complète est vérifiée avant l’offre."
+      ]
+    },
+    "it": {
+      "intro": "Questa pagina riunisce MMS 2000 e MMS 3000. Scegliete la variante completa e la relativa colonna dei dati, senza basarvi soltanto sul nome della famiglia MMS.",
+      "checks": [
+        "Descrivete l’impiego nel montaggio o in officina e l’alimentazione disponibile. Indicate torcia e raffreddamento desiderati.",
+        "Il catalogo indica espressamente WK 300 per MMS 3000. Questo non comporta una compatibilità generale con MMS 2000; la configurazione completa viene verificata prima dell’offerta."
+      ]
+    }
+  },
+  "omega-ax": {
+    "sources": [
+      "P.json#omega-ax",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "beta-dx"
+      },
+      {
+        "kind": "product",
+        "id": "hypertig-ax"
+      }
+    ],
+    "de": {
+      "intro": "Omega AX ist die mobile AC/DC-WIG-Ausführung mit 230-V-Anschluss. Für die Auswahl sind Werkstoff, Arbeitsstrom und die benötigte Einschaltdauer entscheidend.",
+      "checks": [
+        "Nennen Sie die zu bearbeitenden Werkstoffe und ob das Gerät oft transportiert wird. Prüfen Sie die Absicherung und die Leistungswerte der angebotenen Ausführung.",
+        "Beta DX ist als DC-Gerät geführt. HyperTIG AX bietet eine industrielle AC/DC-Ausführung mit 400-V-Anschluss; diese Baureihen haben unterschiedliche Anschlussbedingungen."
+      ]
+    },
+    "fr": {
+      "intro": "Omega AX est la version TIG AC/DC mobile avec alimentation de 230 V. Le matériau, le courant de travail et le facteur de marche nécessaire orientent le choix.",
+      "checks": [
+        "Indiquez les matériaux et la fréquence des déplacements. Vérifiez la protection du réseau et les performances de la version proposée.",
+        "Beta DX est un poste DC. HyperTIG AX est une version industrielle AC/DC alimentée en 400 V ; ces séries ont des exigences de raccordement différentes."
+      ]
+    },
+    "it": {
+      "intro": "Omega AX è la versione TIG AC/DC mobile con alimentazione da 230 V. Per la scelta contano materiale, corrente di lavoro e ciclo di lavoro richiesto.",
+      "checks": [
+        "Indicate i materiali e la frequenza degli spostamenti. Verificate protezione della rete e prestazioni della versione proposta.",
+        "Beta DX è una macchina DC. HyperTIG AX è una versione industriale AC/DC da 400 V; queste serie richiedono condizioni di alimentazione diverse."
+      ]
+    }
+  },
+  "beta-dx": {
+    "sources": [
+      "P.json#beta-dx",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "omega-ax"
+      },
+      {
+        "kind": "product",
+        "id": "hypertig-dx"
+      }
+    ],
+    "de": {
+      "intro": "Beta DX ist eine mobile WIG-DC-Stromquelle für Stahl und Chromstahl. Klären Sie zuerst, ob DC zu Ihren Werkstoffen und zur vorgesehenen Schweissaufgabe passt.",
+      "checks": [
+        "Geben Sie Materialdicke, Einsatzstrom und die gewünschte Brennerlänge an. Die technische Tabelle zeigt die Einschaltdauer der konkreten Geräteausführung.",
+        "Zum Vergleich ist Omega AX als mobile AC/DC-Ausführung geführt. HyperTIG DX ist die industrielle DC-Baureihe; Anschluss und Kühlung sind für jede Variante separat zu prüfen."
+      ]
+    },
+    "fr": {
+      "intro": "Beta DX est une source TIG DC mobile pour l’acier et l’inox. Vérifiez d’abord que le courant DC convient aux matériaux et au travail prévu.",
+      "checks": [
+        "Indiquez l’épaisseur, le courant utilisé et la longueur de torche souhaitée. Le tableau technique précise le facteur de marche de la version exacte.",
+        "Pour comparer, Omega AX est une version mobile AC/DC. HyperTIG DX est la série industrielle DC ; alimentation et refroidissement doivent être vérifiés pour chaque variante."
+      ]
+    },
+    "it": {
+      "intro": "Beta DX è un generatore TIG DC mobile per acciaio e inox. Verificate prima che la corrente DC sia adatta ai materiali e al lavoro previsto.",
+      "checks": [
+        "Indicate spessore, corrente utilizzata e lunghezza della torcia desiderata. La tabella tecnica riporta il ciclo di lavoro della versione esatta.",
+        "Per il confronto, Omega AX è una versione mobile AC/DC. HyperTIG DX è la serie industriale DC; alimentazione e raffreddamento vanno verificati per ogni variante."
+      ]
+    }
+  },
+  "hypertig-ax": {
+    "sources": [
+      "P.json#hypertig-ax",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "omega-ax"
+      },
+      {
+        "kind": "product",
+        "id": "hypertig-dx"
+      }
+    ],
+    "de": {
+      "intro": "HyperTIG AX ist eine industrielle WIG-AC/DC-Stromquelle mit 400-V-Anschluss und wassergekühlter CWK-Ausführung. Diese Ausstattung unterscheidet sie von der mobilen Omega-AX-Serie.",
+      "checks": [
+        "Beschreiben Sie Werkstoff, Arbeitsstrom und die Dauer der Schweisszyklen. Vergleichen Sie die Einschaltdauer in der Tabelle der angebotenen Variante.",
+        "Nennen Sie vorhandenen Brenner, Kühlung und benötigte Fernbedienung. HyperTIG DX ist die DC-Baureihe; die Modellbezeichnung AX oder DX muss in der Anfrage eindeutig sein."
+      ]
+    },
+    "fr": {
+      "intro": "HyperTIG AX est une source TIG AC/DC industrielle avec alimentation de 400 V et version CWK refroidie à l’eau. Cet équipement la distingue de la série mobile Omega AX.",
+      "checks": [
+        "Décrivez le matériau, le courant de travail et la durée des cycles de soudage. Comparez le facteur de marche dans le tableau de la variante proposée.",
+        "Indiquez la torche, le refroidissement existant et la commande à distance nécessaire. HyperTIG DX est la série DC ; la demande doit préciser AX ou DX."
+      ]
+    },
+    "it": {
+      "intro": "HyperTIG AX è un generatore TIG AC/DC industriale con alimentazione da 400 V e versione CWK raffreddata ad acqua. Questa dotazione lo distingue dalla serie mobile Omega AX.",
+      "checks": [
+        "Descrivete materiale, corrente di lavoro e durata dei cicli di saldatura. Confrontate il ciclo di lavoro nella tabella della variante proposta.",
+        "Indicate torcia, raffreddamento esistente e comando a distanza necessario. HyperTIG DX è la serie DC; nella richiesta occorre specificare AX oppure DX."
+      ]
+    }
+  },
+  "i-1600": {
+    "sources": [
+      "P.json#i-1600",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "delta"
+      },
+      {
+        "kind": "product",
+        "id": "mt170v"
+      }
+    ],
+    "de": {
+      "intro": "i-1600 ist ein tragbarer Elektrodeninverter; die Dokumentation führt auch WIG Lift Arc auf. Entscheidend ist das tatsächlich benötigte Verfahren, nicht nur der maximale Strom.",
+      "checks": [
+        "Nennen Sie Elektrodentyp, Werkstoff und den mobilen Einsatz. Prüfen Sie Netzanschluss und Einschaltdauer in der technischen Tabelle.",
+        "Für WIG Lift Arc geben Sie Brenner und Gasbedienung an. MT170 V hat ein Gasventil am Brenner; zum Gerätevergleich steht die Delta-Ausführung zur Verfügung."
+      ]
+    },
+    "fr": {
+      "intro": "i-1600 est un onduleur à électrode portable ; la documentation présente aussi le TIG Lift Arc. Le choix dépend du procédé nécessaire, et pas seulement du courant maximal.",
+      "checks": [
+        "Indiquez le type d’électrode, le matériau et l’utilisation mobile. Vérifiez l’alimentation et le facteur de marche dans le tableau technique.",
+        "Pour le TIG Lift Arc, précisez la torche et la commande du gaz. MT170 V possède une vanne sur la torche ; le poste Delta permet de comparer les configurations."
+      ]
+    },
+    "it": {
+      "intro": "i-1600 è un inverter a elettrodo portatile; la documentazione indica anche il TIG Lift Arc. Conta il processo effettivamente necessario, oltre alla corrente massima.",
+      "checks": [
+        "Indicate tipo di elettrodo, materiale e impiego mobile. Verificate alimentazione e ciclo di lavoro nella tabella tecnica.",
+        "Per il TIG Lift Arc, precisate torcia e comando del gas. MT170 V ha una valvola del gas sulla torcia; la versione Delta permette di confrontare le configurazioni."
+      ]
+    }
+  },
+  "delta": {
+    "sources": [
+      "P.json#delta",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "i-1600"
+      },
+      {
+        "kind": "product",
+        "id": "delta-digital"
+      }
+    ],
+    "de": {
+      "intro": "Delta 1800 verbindet Elektrodenschweissen und WIG Lift. Die getrennt aufgeführten Geräte Delta Digital und Delta Digital DS sind eigene Ausführungen und nicht nur andere Bezeichnungen.",
+      "checks": [
+        "Nennen Sie Verfahren, Werkstoff und die vollständige Modellbezeichnung. Vergleichen Sie die technischen Daten der gewünschten Ausführung mit Ihrem vorhandenen Anschluss.",
+        "Für digitale Bedienung und JOB-Programme können Sie Delta Digital vergleichen. Wenn ein einfaches tragbares Elektrodengerät gesucht wird, beziehen Sie i-1600 in die Auswahl ein."
+      ]
+    },
+    "fr": {
+      "intro": "Delta 1800 réunit le soudage à l’électrode et le TIG Lift. Les postes Delta Digital et Delta Digital DS sont des versions distinctes, et non de simples noms différents.",
+      "checks": [
+        "Indiquez le procédé, le matériau et la désignation complète du modèle. Comparez les données de la version souhaitée avec l’alimentation disponible.",
+        "Pour une commande numérique et des programmes JOB, comparez Delta Digital. Si vous cherchez un poste à électrode portable et simple, examinez aussi i-1600."
+      ]
+    },
+    "it": {
+      "intro": "Delta 1800 combina saldatura a elettrodo e TIG Lift. Delta Digital e Delta Digital DS sono versioni distinte, non semplici denominazioni alternative.",
+      "checks": [
+        "Indicate processo, materiale e denominazione completa del modello. Confrontate i dati della versione desiderata con l’alimentazione disponibile.",
+        "Per comandi digitali e programmi JOB, confrontate Delta Digital. Se cercate un apparecchio a elettrodo semplice e portatile, considerate anche i-1600."
+      ]
+    }
+  },
+  "plasma-tig": {
+    "sources": [
+      "P.json#plasma-tig",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "plasmafix-50s"
+      },
+      {
+        "kind": "product",
+        "id": "plasmafix-51"
+      }
+    ],
+    "de": {
+      "intro": "PlasmaTIG ist die MAHE-Stromquelle für Plasma und Mikroplasma. Für feine Schweissaufgaben sind der dokumentierte Strombereich der konkreten Variante und die vollständige Brennerausstattung zu prüfen.",
+      "checks": [
+        "Beschreiben Sie Werkstoff, Dicke und Nahtform. Eine Skizze oder ein Foto hilft, die Schweissaufgabe und den benötigten Anlagenumfang einzugrenzen.",
+        "Die Occasionen Oerlikon PlasmaFix 50 S sowie SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sind getrennte Modelle anderer Hersteller. Vergleichen Sie deren Originalunterlagen, Zustand und angebotenen Lieferumfang."
+      ]
+    },
+    "fr": {
+      "intro": "PlasmaTIG est la source MAHE pour le plasma et le microplasma. Pour les soudures fines, vérifiez la plage de courant documentée de la variante et l’équipement complet de la torche.",
+      "checks": [
+        "Décrivez le matériau, l’épaisseur et la forme du cordon. Un croquis ou une photo aide à préciser le travail et les composants nécessaires.",
+        "Les occasions Oerlikon PlasmaFix 50 S et SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sont des modèles distincts d’autres fabricants. Comparez leur documentation d’origine, leur état et les éléments compris dans l’offre."
+      ]
+    },
+    "it": {
+      "intro": "PlasmaTIG è il generatore MAHE per plasma e microplasma. Per saldature fini, verificate la gamma di corrente documentata della variante e la dotazione completa della torcia.",
+      "checks": [
+        "Descrivete materiale, spessore e forma del cordone. Uno schizzo o una foto aiuta a definire il lavoro e i componenti necessari.",
+        "Le occasioni Oerlikon PlasmaFix 50 S e SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sono modelli distinti di altri fabbricanti. Confrontate documentazione originale, stato e componenti compresi nell’offerta."
+      ]
+    }
+  },
+  "theta-60": {
+    "sources": [
+      "P.json#theta-60",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "theta-60-aut"
+      },
+      {
+        "kind": "product",
+        "id": "pshb65"
+      }
+    ],
+    "de": {
+      "intro": "Bei Theta 60 HSC unterscheidet das Datenblatt zwischen Trennschnitt unter 35 mm und empfohlenem Schnitt unter 25 mm. Diese Angaben beschreiben unterschiedliche Schnittaufgaben.",
+      "checks": [
+        "Nennen Sie Werkstoff, Blechdicke und gewünschte Schnittqualität. Netzanschluss und Druckluftversorgung werden für Ihre Aufstellung anhand der Unterlagen geprüft.",
+        "Für automatisiertes Schneiden ist Theta 60 AUT separat aufgeführt. Der Handbrenner PSHB 65 und der Automationsbrenner PSAB 65 sind unterschiedliche Ausführungen."
+      ]
+    },
+    "fr": {
+      "intro": "La fiche du Theta 60 HSC distingue une coupe de séparation inférieure à 35 mm et une coupe recommandée inférieure à 25 mm. Ces valeurs correspondent à des tâches différentes.",
+      "checks": [
+        "Indiquez le matériau, l’épaisseur et la qualité de coupe souhaitée. Alimentation et air comprimé sont vérifiés pour votre installation à partir des documents.",
+        "Le Theta 60 AUT est présenté séparément pour la découpe automatisée. La torche manuelle PSHB 65 et la torche machine PSAB 65 sont des versions différentes."
+      ]
+    },
+    "it": {
+      "intro": "La scheda del Theta 60 HSC distingue il taglio di separazione inferiore a 35 mm dal taglio consigliato inferiore a 25 mm. I valori descrivono lavorazioni diverse.",
+      "checks": [
+        "Indicate materiale, spessore e qualità di taglio desiderata. Alimentazione e aria compressa vengono verificate per la vostra installazione in base alla documentazione.",
+        "Theta 60 AUT è presentato separatamente per il taglio automatizzato. La torcia manuale PSHB 65 e la torcia macchina PSAB 65 sono versioni diverse."
+      ]
+    }
+  },
+  "minicleaner": {
+    "sources": [
+      "P.json#minicleaner",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "hcs1"
+      },
+      {
+        "kind": "product",
+        "id": "hypercleaner-ct200"
+      }
+    ],
+    "de": {
+      "intro": "MiniReiniger ist für die mobile elektrolytische Reinigung von Chromstahl beschrieben. Reinigung, Polieren und Signieren sind unterschiedliche Aufgaben und sollten in der Anfrage klar benannt werden.",
+      "checks": [
+        "Ein Foto der Naht sowie Angaben zu Werkstoff und vorhandenem Zubehör helfen bei der Auswahl. Das passende Mittel wird anhand der Geräteunterlagen bestimmt.",
+        "Für eine reine Markierungsaufgabe können Sie HCS 1 vergleichen. HyperCleaner CT 200 kombiniert WIG und Reinigung; prüfen Sie, welche Funktionen für Ihre Arbeit benötigt werden."
+      ]
+    },
+    "fr": {
+      "intro": "MiniReiniger est prévu pour le nettoyage électrolytique mobile de l’inox. Nettoyer, polir et marquer sont des tâches différentes à préciser dans votre demande.",
+      "checks": [
+        "Une photo du cordon, le matériau et les accessoires existants facilitent le choix. Le produit adapté est déterminé à partir de la documentation de l’appareil.",
+        "Pour un travail de marquage, comparez HCS 1. HyperCleaner CT 200 associe TIG et nettoyage ; vérifiez les fonctions nécessaires à votre travail."
+      ]
+    },
+    "it": {
+      "intro": "MiniReiniger è destinato alla pulizia elettrolitica mobile dell’inox. Pulizia, lucidatura e marcatura sono lavorazioni diverse da precisare nella richiesta.",
+      "checks": [
+        "Una foto del cordone, il materiale e gli accessori esistenti aiutano nella scelta. Il prodotto adatto viene individuato in base alla documentazione dell’apparecchio.",
+        "Per una lavorazione di marcatura, confrontate HCS 1. HyperCleaner CT 200 combina TIG e pulizia; verificate quali funzioni servono al vostro lavoro."
+      ]
+    }
+  },
+  "hcs1": {
+    "sources": [
+      "P.json#hcs1",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "m1"
+      },
+      {
+        "kind": "product",
+        "id": "minicleaner"
+      }
+    ],
+    "de": {
+      "intro": "HCS 1 ist ein mobiles elektrolytisches Signiergerät und wird als Set mit Koffer geführt. Es ist von den Geräten zu unterscheiden, deren Hauptaufgabe die Reinigung von Schweissnähten ist.",
+      "checks": [
+        "Nennen Sie Werkstoff und die gewünschte Markierung. Eine Vorlage oder ein Foto erleichtert die Klärung der Anwendung und des benötigten Set-Inhalts.",
+        "M1 ist im Katalog als Signierelektrolyt aufgeführt. Die Eignung von Mittel und Zubehör richtet sich nach den Geräteunterlagen; für Reinigungsaufgaben können Sie MiniReiniger vergleichen."
+      ]
+    },
+    "fr": {
+      "intro": "HCS 1 est un appareil mobile de marquage électrolytique proposé en kit avec mallette. Il se distingue des appareils principalement destinés au nettoyage des cordons.",
+      "checks": [
+        "Indiquez le matériau et le marquage souhaité. Un modèle ou une photo aide à préciser l’application et le contenu nécessaire du kit.",
+        "M1 est présenté comme électrolyte de marquage. Le choix du produit et des accessoires dépend des documents de l’appareil ; pour le nettoyage, comparez MiniReiniger."
+      ]
+    },
+    "it": {
+      "intro": "HCS 1 è un apparecchio mobile per marcatura elettrolitica, proposto in set con valigetta. Si distingue dagli apparecchi destinati principalmente alla pulizia dei cordoni.",
+      "checks": [
+        "Indicate materiale e marcatura desiderata. Un modello o una foto aiuta a definire applicazione e contenuto necessario del set.",
+        "M1 è presentato come elettrolita per marcatura. La scelta di prodotto e accessori dipende dalla documentazione dell’apparecchio; per la pulizia, confrontate MiniReiniger."
+      ]
+    }
+  },
+  "r1": {
+    "sources": [
+      "P.json#r1",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "rp1"
+      },
+      {
+        "kind": "product",
+        "id": "n1"
+      }
+    ],
+    "de": {
+      "intro": "Rapid R1 ist ein Reinigungselektrolyt für Chromstahl-Schweissnähte. Das Produkt ist in 0,5 l, 1 l und 5 l geführt; wählen Sie Aufgabe und Gebinde ausdrücklich.",
+      "checks": [
+        "Geben Sie Reinigungsgerät, Werkstoff und Oberflächenzustand an. Für die Anwendung gelten die Geräteanleitung und das beim Produkt verlinkte Sicherheitsdatenblatt R1.",
+        "RP1 ist die pastöse Reinigungsvariante. N1 ist ein separates Neutralisationsmittel; ähnliche Bezeichnungen bedeuten keine Austauschbarkeit der Produkte."
+      ]
+    },
+    "fr": {
+      "intro": "Rapid R1 est un électrolyte de nettoyage des cordons sur inox. Les conditionnements indiqués sont 0,5 l, 1 l et 5 l ; précisez l’application et le volume.",
+      "checks": [
+        "Indiquez l’appareil, le matériau et l’état de surface. La notice de l’appareil et la fiche de données de sécurité R1 liée à cette page encadrent l’utilisation.",
+        "RP1 est la variante de nettoyage pâteuse. N1 est un produit de neutralisation distinct ; des noms proches ne signifient pas que les produits sont interchangeables."
+      ]
+    },
+    "it": {
+      "intro": "Rapid R1 è un elettrolita per pulire i cordoni sull’inox. I formati indicati sono 0,5 l, 1 l e 5 l; precisate applicazione e volume.",
+      "checks": [
+        "Indicate apparecchio, materiale e stato della superficie. Per l’impiego fanno riferimento il manuale dell’apparecchio e la scheda di sicurezza R1 collegata alla pagina.",
+        "RP1 è la variante pastosa per la pulizia. N1 è un prodotto distinto per neutralizzazione; nomi simili non rendono i prodotti intercambiabili."
+      ]
+    }
+  },
+  "rp1": {
+    "sources": [
+      "P.json#rp1",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "r1"
+      },
+      {
+        "kind": "product",
+        "id": "n1"
+      }
+    ],
+    "de": {
+      "intro": "RP1 ist ein pastöser Reinigungselektrolyt, im Katalog für senkrechte Flächen und Überkopfarbeiten beschrieben. Die Produktform unterscheidet ihn vom Reinigungselektrolyt R1.",
+      "checks": [
+        "Nennen Sie Reinigungsgerät, Werkstoff und Lage der zu bearbeitenden Fläche. Für den Einsatz sind die Geräteanleitung und das verlinkte Sicherheitsdatenblatt RP1 massgebend.",
+        "Die aufgeführten Gebinde sind 0,5 l, 1 l und 5 l. Reinigung und Neutralisation sind getrennte Aufgaben; N1 ist dafür als eigenes Produkt aufgeführt."
+      ]
+    },
+    "fr": {
+      "intro": "RP1 est un électrolyte de nettoyage pâteux, présenté pour les surfaces verticales et les travaux au plafond. Sa forme le distingue de l’électrolyte R1.",
+      "checks": [
+        "Indiquez l’appareil, le matériau et la position de la surface. La notice de l’appareil et la fiche de données de sécurité RP1 liée à cette page font référence pour l’emploi.",
+        "Les conditionnements indiqués sont 0,5 l, 1 l et 5 l. Nettoyage et neutralisation sont des tâches distinctes ; N1 est présenté séparément pour cette dernière."
+      ]
+    },
+    "it": {
+      "intro": "RP1 è un elettrolita pastoso per pulizia, indicato per superfici verticali e lavori sopratesta. La consistenza lo distingue dall’elettrolita R1.",
+      "checks": [
+        "Indicate apparecchio, materiale e posizione della superficie. Per l’impiego fanno riferimento il manuale dell’apparecchio e la scheda di sicurezza RP1 collegata alla pagina.",
+        "I formati indicati sono 0,5 l, 1 l e 5 l. Pulizia e neutralizzazione sono lavorazioni distinte; N1 è presentato separatamente per la seconda."
+      ]
+    }
+  },
+  "m1": {
+    "sources": [
+      "P.json#m1",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "hcs1"
+      },
+      {
+        "kind": "product",
+        "id": "r1"
+      }
+    ],
+    "de": {
+      "intro": "M1 ist der Elektrolyt zum Signieren und Markieren. Er wird in 0,1 l, 0,5 l und 1 l geführt und ist von Reinigungsprodukten wie R1 zu unterscheiden.",
+      "checks": [
+        "Nennen Sie Signiergerät, Werkstoff und gewünschte Markierung. Eine Vorlage hilft, das benötigte Zubehör und die Anwendung mit den Geräteunterlagen abzugleichen.",
+        "HCS 1 ist als mobiles Signiergerät aufgeführt. Beachten Sie für das gewählte Mittel dessen Sicherheitsdatenblatt und die Anleitung des verwendeten Geräts."
+      ]
+    },
+    "fr": {
+      "intro": "M1 est l’électrolyte destiné au marquage. Il est proposé en 0,1 l, 0,5 l et 1 l et se distingue des produits de nettoyage comme R1.",
+      "checks": [
+        "Indiquez l’appareil de marquage, le matériau et le résultat souhaité. Un modèle aide à vérifier les accessoires et l’application avec la documentation de l’appareil.",
+        "HCS 1 est présenté comme appareil mobile de marquage. Consultez la fiche de données de sécurité du produit choisi et la notice de l’appareil utilisé."
+      ]
+    },
+    "it": {
+      "intro": "M1 è l’elettrolita destinato alla marcatura. È proposto in 0,1 l, 0,5 l e 1 l e si distingue dai prodotti per pulizia come R1.",
+      "checks": [
+        "Indicate apparecchio di marcatura, materiale e risultato desiderato. Un modello aiuta a verificare accessori e applicazione con la documentazione dell’apparecchio.",
+        "HCS 1 è presentato come apparecchio mobile per marcatura. Consultate la scheda di sicurezza del prodotto scelto e il manuale dell’apparecchio utilizzato."
+      ]
+    }
+  },
+  "wk200": {
+    "sources": [
+      "P.json#wk200",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "hypercleaner-ct200"
+      },
+      {
+        "kind": "product",
+        "id": "wk300"
+      }
+    ],
+    "de": {
+      "intro": "WK 200 ist als Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung beschrieben. Der Begriff Universalkühler ersetzt die Prüfung der konkreten Anschlüsse nicht.",
+      "checks": [
+        "Geben Sie Gerät, vorhandene Kühlung und die elektrischen Anschlüsse an. Fotos von Typenschild und Anschlüssen helfen beim Abgleich mit den Unterlagen.",
+        "Der Katalog führt WK 200 beim HyperCleaner CT 200. WK 300 ist eine andere Ausführung mit ausdrücklich genannter Zuordnung zu MMS 3000."
+      ]
+    },
+    "fr": {
+      "intro": "WK 200 est décrit comme refroidisseur universel avec prise Schuko de 230 V et arrêt en cas de manque d’eau. Cette désignation ne remplace pas la vérification des raccordements.",
+      "checks": [
+        "Indiquez l’appareil, le refroidissement existant et les connexions électriques. Des photos de la plaque et des raccords facilitent la vérification avec les documents.",
+        "Le catalogue associe WK 200 à HyperCleaner CT 200. WK 300 est une autre version, expressément indiquée pour MMS 3000."
+      ]
+    },
+    "it": {
+      "intro": "WK 200 è descritto come refrigeratore universale con presa Schuko da 230 V e arresto per mancanza d’acqua. Questa denominazione non sostituisce la verifica dei collegamenti.",
+      "checks": [
+        "Indicate apparecchio, raffreddamento esistente e collegamenti elettrici. Foto della targhetta e dei raccordi aiutano nel confronto con i documenti.",
+        "Il catalogo associa WK 200 a HyperCleaner CT 200. WK 300 è una versione diversa, espressamente indicata per MMS 3000."
+      ]
+    }
+  },
+  "wk300": {
+    "sources": [
+      "P.json#wk300",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mms"
+      },
+      {
+        "kind": "product",
+        "id": "wk200"
+      }
+    ],
+    "de": {
+      "intro": "Beim Nachrüsten eines WK 300 zählt die konkrete MMS-3000-Ausstattung. Kühlgerät, Brenner und vorhandene Anschlüsse werden als vollständige Kombination betrachtet.",
+      "checks": [
+        "Halten Sie die genaue Gerätebezeichnung und Fotos der vorhandenen Anschlüsse bereit. Nennen Sie auch einen bereits vorhandenen wassergekühlten Brenner.",
+        "WK 200 und WK 300 haben unterschiedliche Gerätebeschreibungen. Ein ähnlicher Name oder ein ähnliches Gehäuse genügt nicht als Nachweis der Austauschbarkeit."
+      ]
+    },
+    "fr": {
+      "intro": "Pour ajouter WK 300, la configuration exacte du MMS 3000 est déterminante. Refroidisseur, torche et raccordements existants sont examinés comme un ensemble.",
+      "checks": [
+        "Préparez la désignation exacte du poste et des photos des raccordements. Indiquez aussi la torche refroidie à l’eau déjà disponible.",
+        "WK 200 et WK 300 ont des descriptions et des affectations différentes. Un nom ou un boîtier semblable ne démontre pas leur interchangeabilité."
+      ]
+    },
+    "it": {
+      "intro": "Per aggiungere WK 300 conta la configurazione esatta del MMS 3000. Refrigeratore, torcia e collegamenti esistenti vengono esaminati come un insieme.",
+      "checks": [
+        "Preparate la denominazione esatta della macchina e foto dei collegamenti. Indicate anche l’eventuale torcia raffreddata ad acqua già disponibile.",
+        "WK 200 e WK 300 hanno descrizioni e destinazioni diverse. Un nome o un involucro simile non dimostra che siano intercambiabili."
+      ]
+    }
+  },
+  "dvl420": {
+    "sources": [
+      "P.json#dvl420",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "dvs410"
+      },
+      {
+        "kind": "product",
+        "id": "zwischenschlauchpaket"
+      },
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      }
+    ],
+    "de": {
+      "intro": "DVL 420 ist der horizontale Vorschubkoffer mit Vollmetallgehäuse für HyperMIG X. DVS 410 ist im Katalog als leichte, tragbare Alternative beschrieben.",
+      "checks": [
+        "Legen Sie fest, wie der Vorschubkoffer aufgestellt oder bewegt werden soll. Nennen Sie die vollständige HyperMIG-X-Ausführung und die verwendete Kühlung.",
+        "Das Zwischenschlauchpaket verbindet Stromquelle und Vorschubkoffer. Seine benötigte Länge richtet sich nach diesem Verbindungsweg und nicht nach der Brennerlänge."
+      ]
+    },
+    "fr": {
+      "intro": "DVL 420 est le dévidoir horizontal à boîtier entièrement métallique pour HyperMIG X. DVS 410 est décrit comme une alternative légère et portable.",
+      "checks": [
+        "Précisez comment le dévidoir sera installé ou déplacé. Indiquez la version complète du HyperMIG X et le refroidissement utilisé.",
+        "Le faisceau intermédiaire relie le générateur au dévidoir. Sa longueur dépend de ce parcours de liaison, et non de la longueur de la torche."
+      ]
+    },
+    "it": {
+      "intro": "DVL 420 è il trainafilo orizzontale con involucro interamente metallico per HyperMIG X. DVS 410 è descritto come alternativa leggera e portatile.",
+      "checks": [
+        "Precisate come sarà collocato o spostato il trainafilo. Indicate versione completa del HyperMIG X e raffreddamento utilizzato.",
+        "Il fascio intermedio collega generatore e trainafilo. La sua lunghezza dipende da questo percorso di collegamento, non dalla lunghezza della torcia."
+      ]
+    }
+  },
+  "usb2in1": {
+    "sources": [
+      "P.json#usb2in1",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mcu1"
+      }
+    ],
+    "de": {
+      "intro": "USB 2in1 ist ein Programmiergerät für Mikrocontroller und MAHE-Schnittstellen mit USB-Software. Es ist kein Kalibriergerät zum Messen von Schweissstrom und Spannung.",
+      "checks": [
+        "Nennen Sie Geräteausführung, Steuerung und vorhandenen Softwarestand. Die Unterstützung muss für diese konkrete Kombination geklärt werden; ein USB-Anschluss allein reicht dafür nicht aus.",
+        "Wenn Messwerte geprüft oder dokumentiert werden sollen, vergleichen Sie die Aufgabe mit dem Kalibriergerät MCU 1 und klären Sie den benötigten Prüfauftrag."
+      ]
+    },
+    "fr": {
+      "intro": "USB 2in1 est un programmateur pour microcontrôleurs et interfaces MAHE avec logiciel USB. Ce n’est pas un appareil d’étalonnage pour mesurer le courant de soudage et la tension.",
+      "checks": [
+        "Indiquez la version de l’appareil, la commande et la version logicielle existante. La prise en charge doit être vérifiée pour cette combinaison ; une prise USB ne suffit pas à l’établir.",
+        "Pour contrôler ou documenter des mesures, comparez cette tâche avec celle de l’appareil d’étalonnage MCU 1 et précisez le contrôle nécessaire."
+      ]
+    },
+    "it": {
+      "intro": "USB 2in1 è un programmatore per microcontrollori e interfacce MAHE con software USB. Non è un apparecchio di calibrazione per misurare corrente di saldatura e tensione.",
+      "checks": [
+        "Indicate versione dell’apparecchio, comando e versione software esistente. Il supporto va verificato per questa combinazione; la sola presenza di una porta USB non lo dimostra.",
+        "Per controllare o documentare misure, confrontate il compito con quello dell’apparecchio di calibrazione MCU 1 e precisate la verifica necessaria."
+      ]
+    }
+  },
+  "mf405w": {
+    "sources": [
+      "P.json#mf405w",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mf240w"
+      },
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      },
+      {
+        "kind": "product",
+        "id": "mms"
+      }
+    ],
+    "de": {
+      "intro": "MF405W ist ein wassergekühlter MIG/MAG-Brenner mit 4 m Länge und optionaler Up/Down-Bedienung. MF240W ist separat für kleinere Leistungsklassen beschrieben.",
+      "checks": [
+        "Nennen Sie die vollständige Ausführung von HyperMIG X oder MMS, die vorhandene Kühlung und den benötigten Arbeitsstrom. Die Familienzuordnung ersetzt die Prüfung der konkreten Ausführung nicht.",
+        "Geben Sie an, ob Up/Down benötigt wird, und zeigen Sie den vorhandenen Anschluss. Eine gleiche Länge oder ein ähnliches Produktfoto belegt keine identische Belastbarkeit."
+      ]
+    },
+    "fr": {
+      "intro": "MF405W est une torche MIG/MAG refroidie à l’eau, de 4 m, avec commande Up/Down en option. MF240W est décrit séparément pour les classes de puissance inférieures.",
+      "checks": [
+        "Indiquez la version complète du HyperMIG X ou MMS, le refroidissement existant et le courant nécessaire. L’association à une famille ne remplace pas la vérification de la version exacte.",
+        "Précisez si Up/Down est nécessaire et montrez le raccordement existant. Une longueur ou une photo similaire ne démontre pas une capacité identique."
+      ]
+    },
+    "it": {
+      "intro": "MF405W è una torcia MIG/MAG raffreddata ad acqua da 4 m, con comando Up/Down opzionale. MF240W è descritto separatamente per le classi di potenza inferiori.",
+      "checks": [
+        "Indicate versione completa del HyperMIG X o MMS, raffreddamento esistente e corrente necessaria. L’associazione a una famiglia non sostituisce la verifica della versione esatta.",
+        "Precisate se serve Up/Down e mostrate il collegamento esistente. Una lunghezza o una foto simile non dimostra una capacità identica."
+      ]
+    }
+  },
+  "mf240w": {
+    "sources": [
+      "P.json#mf240w",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mf405w"
+      },
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      },
+      {
+        "kind": "product",
+        "id": "mms"
+      }
+    ],
+    "de": {
+      "intro": "MF240W ist der wassergekühlte MIG/MAG-Brenner für kleinere Leistungsklassen. Der Katalog führt 4 m Länge und eine optionale Up/Down-Ausführung auf.",
+      "checks": [
+        "Geben Sie Gerätevariante, Kühlung und Arbeitsstrom an. Stimmen Sie die Brennerausführung auf den konkreten Einsatz ab, statt sie nur nach dem ähnlichen Foto des MF405W auszuwählen.",
+        "Nennen Sie die gewünschte Bedienung und den vorhandenen Anschluss. Die erforderliche Belastbarkeit wird für die Geräteausführung und den gewünschten Arbeitsstrom vor dem Angebot geklärt."
+      ]
+    },
+    "fr": {
+      "intro": "MF240W est la torche MIG/MAG refroidie à l’eau pour les classes de puissance inférieures. Le catalogue indique une longueur de 4 m et une version Up/Down en option.",
+      "checks": [
+        "Indiquez la variante du poste, le refroidissement et le courant utilisé. Choisissez la torche pour l’application exacte, plutôt que d’après la photo similaire du MF405W.",
+        "Précisez la commande souhaitée et le raccordement existant. La capacité nécessaire est vérifiée pour la version du poste et le courant de travail avant l’offre."
+      ]
+    },
+    "it": {
+      "intro": "MF240W è la torcia MIG/MAG raffreddata ad acqua per le classi di potenza inferiori. Il catalogo indica una lunghezza di 4 m e una versione Up/Down opzionale.",
+      "checks": [
+        "Indicate variante della macchina, raffreddamento e corrente utilizzata. Scegliete la torcia per l’applicazione esatta, senza basarvi sulla foto simile del MF405W.",
+        "Precisate comando desiderato e collegamento esistente. La capacità necessaria viene verificata per la versione della macchina e la corrente di lavoro prima dell’offerta."
+      ]
+    }
+  },
+  "mt170": {
+    "sources": [
+      "P.json#mt170",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mt170v"
+      },
+      {
+        "kind": "product",
+        "id": "mt200w"
+      }
+    ],
+    "de": {
+      "intro": "MT170 ist ein gasgekühlter WIG-Brenner in 4 oder 8 m Länge, wahlweise mit Potentiometer. Er ist von der Ventilausführung MT170 V zu unterscheiden.",
+      "checks": [
+        "Nennen Sie die vollständige Gerätebezeichnung, die gewünschte Länge und die benötigte Bedienung. Die aufgeführten Gerätezuordnungen werden mit der konkreten Ausstattung abgeglichen.",
+        "Wenn eine Wasserkühlung vorgesehen ist, vergleichen Sie eine dafür ausgelegte Brennerausführung wie MT200W. Kühlung und Gasbedienung sind getrennte Auswahlmerkmale."
+      ]
+    },
+    "fr": {
+      "intro": "MT170 est une torche TIG refroidie au gaz, en 4 ou 8 m, avec potentiomètre en option. Elle se distingue de la version MT170 V munie d’une vanne.",
+      "checks": [
+        "Indiquez la désignation complète du poste, la longueur et la commande souhaitées. Les appareils indiqués sont vérifiés avec la configuration exacte.",
+        "Si un refroidissement à l’eau est prévu, comparez une torche conçue pour cela, comme MT200W. Refroidissement et commande du gaz sont deux critères distincts."
+      ]
+    },
+    "it": {
+      "intro": "MT170 è una torcia TIG raffreddata a gas da 4 oppure 8 m, con potenziometro opzionale. Si distingue dalla versione MT170 V dotata di valvola.",
+      "checks": [
+        "Indicate denominazione completa della macchina, lunghezza e comando desiderati. Gli apparecchi elencati vengono verificati con la configurazione esatta.",
+        "Se è previsto il raffreddamento ad acqua, confrontate una torcia progettata per questo impiego, come MT200W. Raffreddamento e comando del gas sono criteri distinti."
+      ]
+    }
+  },
+  "mt200w": {
+    "sources": [
+      "P.json#mt200w",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mt170"
+      },
+      {
+        "kind": "product",
+        "id": "mt180w"
+      }
+    ],
+    "de": {
+      "intro": "MT200W ist ein wassergekühlter WIG-Brenner in 4 oder 8 m Länge, wahlweise mit Potentiometer. Die Auswahl umfasst deshalb mehr als die Modellbezeichnung des Brenners.",
+      "checks": [
+        "Geben Sie Geräteausführung, vorhandenes Kühlgerät und benötigte Länge an. Nennen Sie ausdrücklich, ob eine Stromregelung am Brenner gewünscht wird.",
+        "MT170 ist eine gasgekühlte Alternative mit eigener Gerätezuordnung; MT180W ist separat als wassergekühlter Brenner geführt. Prüfen Sie Anschlüsse und Ausstattung für das konkrete Gerät."
+      ]
+    },
+    "fr": {
+      "intro": "MT200W est une torche TIG refroidie à l’eau, en 4 ou 8 m, avec potentiomètre en option. Le choix ne se limite donc pas au nom du modèle.",
+      "checks": [
+        "Indiquez la version du poste, le refroidisseur existant et la longueur nécessaire. Précisez si vous souhaitez régler le courant sur la torche.",
+        "MT170 est une alternative refroidie au gaz avec ses propres appareils associés ; MT180W est une torche à eau présentée séparément. Vérifiez raccords et équipement pour le poste exact."
+      ]
+    },
+    "it": {
+      "intro": "MT200W è una torcia TIG raffreddata ad acqua da 4 oppure 8 m, con potenziometro opzionale. La scelta non si limita quindi al nome del modello.",
+      "checks": [
+        "Indicate versione della macchina, refrigeratore esistente e lunghezza necessaria. Precisate se desiderate regolare la corrente dalla torcia.",
+        "MT170 è un’alternativa raffreddata a gas con proprie associazioni agli apparecchi; MT180W è una torcia ad acqua presentata separatamente. Verificate raccordi e dotazione per la macchina esatta."
+      ]
+    }
+  },
+  "zwischenschlauchpaket": {
+    "sources": [
+      "P.json#zwischenschlauchpaket",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "dvl420"
+      },
+      {
+        "kind": "product",
+        "id": "dvs410"
+      },
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      }
+    ],
+    "de": {
+      "intro": "Dieses Paket verbindet die HyperMIG-X-Stromquelle mit dem separaten Vorschubkoffer. Es ist nicht das Brenner-Schlauchpaket zwischen Vorschubkoffer und Werkstück.",
+      "checks": [
+        "Die aufgeführten Längen sind 1,2 m, 5 m, 10 m, 15 m und 20 m. Ermitteln Sie den tatsächlichen Verbindungsweg zwischen Stromquelle und Vorschubkoffer.",
+        "Nennen Sie die genaue Stromquelle, das Modell DVL 420 oder DVS 410 und die Kühlung. Fotos der vorhandenen Anschlüsse helfen, eine passende Zusammenstellung vor dem Angebot zu prüfen."
+      ]
+    },
+    "fr": {
+      "intro": "Ce faisceau relie le générateur HyperMIG X au dévidoir séparé. Il ne s’agit pas du faisceau de torche entre le dévidoir et la pièce.",
+      "checks": [
+        "Les longueurs indiquées sont 1,2 m, 5 m, 10 m, 15 m et 20 m. Déterminez le parcours réel entre le générateur et le dévidoir.",
+        "Indiquez le générateur exact, la version DVL ou DVS et le refroidissement. Des photos des raccordements aident à vérifier la configuration avant l’offre."
+      ]
+    },
+    "it": {
+      "intro": "Questo fascio collega il generatore HyperMIG X al trainafilo separato. Non è il fascio della torcia tra trainafilo e pezzo.",
+      "checks": [
+        "Le lunghezze indicate sono 1,2 m, 5 m, 10 m, 15 m e 20 m. Determinate il percorso effettivo tra generatore e trainafilo.",
+        "Indicate generatore esatto, versione DVL o DVS e raffreddamento. Foto dei collegamenti aiutano a verificare la configurazione prima dell’offerta."
+      ]
+    }
+  },
+  "plasmafix-50s": {
+    "sources": [
+      "P.json#plasmafix-50s",
+      "SUBCATEGORY_GUIDES.json",
+      "ACC.json"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "plasmafix-51"
+      }
+    ],
+    "de": {
+      "intro": "Die Oerlikon PlasmaFix 50 S ist als revidierte Mikroplasma-Occasion beschrieben. Der dokumentierte Strombereich beginnt bei 0,05 A; Zustand und Ausstattung beziehen sich auf das angebotene Gerät.",
+      "checks": [
+        "Nennen Sie Werkstoff, Materialdicke und Nahtaufgabe. Vergleichen Sie Fotos und Originalprospekt mit den Unterlagen der separat angebotenen SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T.",
+        "Besichtigung und aktueller Lieferumfang werden vorab vereinbart. Eine Katalogseite oder Anfrage bestätigt keinen Lagerbestand und stellt keine Reservierung dar."
+      ]
+    },
+    "fr": {
+      "intro": "Oerlikon PlasmaFix 50 S est présenté comme appareil de microplasma d’occasion révisé. La plage documentée commence à 0,05 A ; état et équipement concernent l’appareil proposé.",
+      "checks": [
+        "Indiquez le matériau, l’épaisseur et le travail de soudage. Comparez photos et prospectus d’origine avec les documents des appareils SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T proposés séparément.",
+        "La visite et les éléments actuellement compris sont convenus à l’avance. La présence au catalogue ou une demande ne confirme pas le stock et ne constitue pas une réservation."
+      ]
+    },
+    "it": {
+      "intro": "Oerlikon PlasmaFix 50 S è presentato come apparecchio per microplasma d’occasione revisionato. La gamma documentata parte da 0,05 A; stato e dotazione riguardano l’apparecchio proposto.",
+      "checks": [
+        "Indicate materiale, spessore e lavoro di saldatura. Confrontate foto e prospetto originale con i documenti degli apparecchi SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T proposti separatamente.",
+        "Visita e componenti attualmente compresi vengono concordati in anticipo. La presenza nel catalogo o una richiesta non conferma la disponibilità e non costituisce una prenotazione."
+      ]
+    }
+  }
+}

@@ -561,7 +561,25 @@
     "whatsapp_action": "Auf WhatsApp schreiben",
     "whatsapp_note": "Öffnet WhatsApp. Sie entscheiden dort, welche Angaben Sie uns senden.",
     "prod_intro_occ_models": "Wählen Sie die gewünschte Anlage anhand ihrer Position auf dem Foto: links und rechts Oerlikon PlasmaFix P+T, in der Mitte SAF-FRO PlasmaFix 51. Die Auswahl ist keine Reservierung. Aktuellen Zustand, Lieferumfang und Verfügbarkeit bestätigen wir für das konkrete Gerät.",
-    "prod_title_occ_models_suffix": "Occasionen"
+    "prod_title_occ_models_suffix": "Occasionen",
+    "product_guide_title": "{name}: Auswahl und Anfrage",
+    "guide_links_label": "Weiterführende Geräte und Informationen",
+    "company_links_title": "Unternehmen, Katalog und Kontakt",
+    "service_links_title": "Geräte und weitere Leistungen",
+    "svc_body": [
+      [
+        "Ihre Anfrage vorbereiten",
+        "<p>Halten Sie die vollständige Gerätebezeichnung, Modellvariante und Seriennummer bereit. Beschreiben Sie bei einer Störung, wann sie auftritt, welche Anzeige erscheint und welches Zubehör angeschlossen ist. Fotos von Typenschild und Anschlüssen helfen beim Abgleich mit den Geräteunterlagen.</p><p>Bei einer Kalibrierung nennen Sie die Anzahl der Geräte und die benötigte Dokumentation. Für ein Automationsprojekt helfen Werkstoff, Blechformat, Materialdicke und eine Beispielzeichnung.</p>"
+      ],
+      [
+        "Die passende Leistung vereinbaren",
+        "<p>Für eine Störung beginnen wir mit der <a href=\"{url_repair}\">Diagnose und Reparatur</a>. Für die Prüfung der angezeigten Messwerte gibt es die <a href=\"{url_calib}\">Kalibrierung</a>. Die <a href=\"{url_auto}\">Automationsberatung</a> verbindet Geräteauswahl und Planung einer vollständigen Anlage.</p><p>Umfang, Kosten und Termin werden für Ihren Auftrag geklärt. Welche Teile beschafft werden können und welche Arbeiten sinnvoll sind, hängt vom konkreten Gerät und vom Befund ab.</p>"
+      ],
+      [
+        "Geräteannahme in der Partnerwerkstatt",
+        "<p>Die Arbeiten erfolgen bei {partner}, {ws_street}, {ws_zip} {ws_city}. Vereinbaren Sie die Geräteannahme vor dem Transport. Bronschhofen ist Unternehmenssitz und Rechnungsadresse, nicht die Werkstattadresse.</p><p>Über die <a href=\"{url_contact}\">Kontaktseite</a> erreichen Sie Ihren Ansprechpartner und können die gewünschte Leistung anfragen. Der Termin und der konkrete Ablauf werden persönlich abgestimmt.</p>"
+      ]
+    ]
   },
   "fr": {
     "locale": "fr_CH",
@@ -1124,7 +1142,25 @@
     "whatsapp_action": "Nous écrire sur WhatsApp",
     "whatsapp_note": "Ouvre WhatsApp. Vous y choisissez les informations à nous envoyer.",
     "prod_intro_occ_models": "Choisissez la machine selon sa position sur la photo : Oerlikon PlasmaFix P+T à gauche et à droite, SAF-FRO PlasmaFix 51 au centre. La sélection ne constitue pas une réservation. Nous confirmons l’état actuel, la fourniture et la disponibilité pour la machine choisie.",
-    "prod_title_occ_models_suffix": "Occasions"
+    "prod_title_occ_models_suffix": "Occasions",
+    "product_guide_title": "Choix et demande pour {name}",
+    "guide_links_label": "Appareils et informations complémentaires",
+    "company_links_title": "Entreprise, catalogue et contact",
+    "service_links_title": "Appareils et autres prestations",
+    "svc_body": [
+      [
+        "Préparer votre demande",
+        "<p>Préparez la désignation complète, la variante et le numéro de série de l’appareil. En cas de panne, décrivez les circonstances, le message affiché et les accessoires raccordés. Des photos de la plaque et des connexions facilitent la vérification avec les documents.</p><p>Pour un étalonnage, indiquez le nombre d’appareils et les documents nécessaires. Pour un projet d’automatisation, précisez matériau, format de tôle et épaisseur, avec un exemple de dessin.</p>"
+      ],
+      [
+        "Convenir de la prestation adaptée",
+        "<p>Pour une panne, la démarche commence par le <a href=\"{url_repair}\">diagnostic et la réparation</a>. L’<a href=\"{url_calib}\">étalonnage</a> permet de contrôler les valeurs affichées. Le <a href=\"{url_auto}\">conseil en automatisation</a> associe le choix des appareils à la préparation d’une installation complète.</p><p>Étendue des travaux, coûts et délai sont précisés pour votre demande. Les pièces disponibles et les interventions pertinentes dépendent de l’appareil et du diagnostic.</p>"
+      ],
+      [
+        "Réception dans l’atelier partenaire",
+        "<p>Les travaux ont lieu chez {partner}, {ws_street}, {ws_zip} {ws_city}. Convenez de la réception avant le transport. Bronschhofen est le siège et l’adresse de facturation, pas l’adresse de l’atelier.</p><p>La <a href=\"{url_contact}\">page de contact</a> permet de joindre votre interlocuteur et de demander la prestation souhaitée. Le rendez-vous et le déroulement sont convenus personnellement.</p>"
+      ]
+    ]
   },
   "it": {
     "locale": "it_CH",
@@ -1687,6 +1723,24 @@
     "whatsapp_action": "Scriveteci su WhatsApp",
     "whatsapp_note": "Apre WhatsApp. Scegliete quali informazioni inviarci.",
     "prod_intro_occ_models": "Scegliete la macchina in base alla posizione nella foto: Oerlikon PlasmaFix P+T a sinistra e a destra, SAF-FRO PlasmaFix 51 al centro. La selezione non costituisce una prenotazione. Confermiamo lo stato attuale, la dotazione e la disponibilità per la macchina scelta.",
-    "prod_title_occ_models_suffix": "Usato"
+    "prod_title_occ_models_suffix": "Usato",
+    "product_guide_title": "Scelta e richiesta per {name}",
+    "guide_links_label": "Apparecchi e informazioni complementari",
+    "company_links_title": "Azienda, catalogo e contatto",
+    "service_links_title": "Apparecchi e altri servizi",
+    "svc_body": [
+      [
+        "Preparare la richiesta",
+        "<p>Preparate denominazione completa, variante e numero di serie dell’apparecchio. In caso di guasto, descrivete quando si presenta, il messaggio visualizzato e gli accessori collegati. Foto della targhetta e dei collegamenti aiutano nel confronto con i documenti.</p><p>Per una calibrazione, indicate il numero degli apparecchi e i documenti necessari. Per un progetto di automazione, precisate materiale, formato della lamiera e spessore, con un disegno di esempio.</p>"
+      ],
+      [
+        "Concordare il servizio adatto",
+        "<p>Per un guasto, il lavoro inizia con la <a href=\"{url_repair}\">diagnosi e riparazione</a>. La <a href=\"{url_calib}\">calibrazione</a> permette di controllare i valori visualizzati. La <a href=\"{url_auto}\">consulenza per automazione</a> collega la scelta degli apparecchi alla preparazione di un impianto completo.</p><p>Interventi, costi e tempi vengono precisati per la vostra richiesta. Ricambi disponibili e lavori appropriati dipendono dall’apparecchio e dalla diagnosi.</p>"
+      ],
+      [
+        "Accettazione nell’officina partner",
+        "<p>I lavori si svolgono presso {partner}, {ws_street}, {ws_zip} {ws_city}. Concordate l’accettazione prima del trasporto. Bronschhofen è la sede e l’indirizzo di fatturazione, non l’indirizzo dell’officina.</p><p>La <a href=\"{url_contact}\">pagina di contatto</a> permette di raggiungere il vostro interlocutore e richiedere il servizio desiderato. Appuntamento e svolgimento vengono concordati personalmente.</p>"
+      ]
+    ]
   }
 }

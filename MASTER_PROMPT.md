@@ -163,6 +163,8 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 | `PROC.json` | 7 MAHE-Verfahren |
 | `BUYING_GUIDE.json` | Eigene Auswahlhilfen für die fünf Hauptkategorien, DE/FR/IT |
 | `SUBCATEGORY_GUIDES.json` | Eigene Einleitung und 2–3 Auswahlkriterien für alle 21 eigenständigen Unterkategorien, DE/FR/IT; keine zusätzliche Plasma-TIG-Seite |
+| `PRODUCT_GUIDES.json` | Belegte Auswahlhinweise für 24 Produktfamilien, mit Quellenverweisen und vollständigen DE/FR/IT-Texten |
+| `GUIDE_LINKS.json` | Typisierte Referenzen auf bestehende Geräte, Kategorien, Unterkategorien, Services und Unternehmensseiten; keine neuen Kompatibilitätszusagen |
 | `DLS.json` | 7 PDF-Links (⚠ `k` ist **nicht** eindeutig — Katalog und EN 1090 heissen beide `PDF`) |
 | `FEAT.json` | 19 Verfahrens-Icons (blaue Kachel `#23457f`, weisses Piktogramm, orange Akzente) |
 | `PANEL_HL_DEVICE.json` | **Besonderheiten je Frontpanel**, wörtlich von MAHE aus dem Tab Fronteingabesysteme, DE/FR/IT |
@@ -343,6 +345,23 @@ abgeschnitten würde. Das verbessert die Suchvorschau, ist aber keine Zusage
 für Crawling oder Indexierung durch eine Suchmaschine.
 
 ## 7. AEO / AIO (Antwortmaschinen)
+
+**Auswahl und Navigation (19.10.2026):** Die Produkttexte aus
+`PRODUCT_GUIDES.json` werden als eigener sichtbarer Abschnitt nach den
+technischen Reitern ausgegeben, ohne JavaScript oder einen weiteren Reiter.
+Sie erläutern den Einsatz, Unterschiede zwischen Baureihen und die Angaben
+für eine konkrete Anfrage. Zahlen und Zuordnungen stammen aus dem vorhandenen
+Katalog und seinen Herstellerunterlagen. Neue Leistungswerte, Bestände,
+Zertifizierungen und Kundenreferenzen werden daraus nicht abgeleitet.
+`GUIDE_LINKS.json` verknüpft die Auswahlhilfen mit passenden nächsten Seiten.
+`core.editorial_target()` löst ausschliesslich bekannte, sprachgleiche Routen
+auf; `validate_editorial_guides()` prüft die Daten vor dem Löschen generierter
+Seiten. Die Herstellerzuordnung in `ACC.json` bleibt unabhängig davon.
+Die Serviceübersicht erhält vorbereitende Hinweise und den Ablauf der
+Geräteannahme aus `i18n_extra.json::svc_body`; Standortwerte stammen aus
+`WORKSHOP`. Unternehmensseite und Impressum verlinken Kontakt und Katalog.
+Unveränderte Produktseiten erhalten auch durch leere optionale Abschnitte
+keine zusätzliche Leerzeile und keinen neuen Inhaltsstempel.
 
 Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auftauchen:
 

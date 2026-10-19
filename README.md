@@ -127,6 +127,17 @@ Plasma-TIG-URL bleibt die vorhandene Produktseite, ohne zusätzliche Dublette.
 Startseite, Unternehmensseite und Verfahrensübersicht verlinken passende
 Service- und Mikroplasma-Seiten direkt im sichtbaren Hauptinhalt.
 
+`PRODUCT_GUIDES.json` ergänzt 24 Produktfamilien mit konkreten Auswahlhinweisen
+in DE/FR/IT. Sie stehen ausserhalb geschlossener Reiter im HTML; die deutsche
+Fassung erscheint auch in `llms-full.txt`. `GUIDE_LINKS.json` verbindet diese
+Hinweise und die bestehenden Kategoriehilfen mit sprachgleichen Geräten und
+Dienstleistungen. Die Referenzen werden vor dem Ersetzen generierter Dateien
+validiert. Sie erweitern keine Hersteller-Kompatibilitätsliste.
+Die Serviceübersicht erläutert Anfragevorbereitung, Auftragsklärung und
+Geräteannahme in der Partnerwerkstatt. Unternehmensseite und Impressum führen
+direkt zu Katalog und Kontakt. Verfügbarkeit und Herstellerdaten bleiben in
+ihren bestehenden Quellen; diese Inhalte versprechen keine Indexierung.
+
 Inhalte und Auswahlhilfen stehen bereits im HTML. Produktdaten enthalten keine
 erfundenen Hersteller-Artikelnummern, Preise oder Bewertungen. Ohne ein echtes
 Angebot oder geeignete Bewertungen sind Google-Produkt-Rich-Results nicht

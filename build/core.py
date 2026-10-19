@@ -451,6 +451,8 @@ SPECNOTE  = _load("SPECNOTE")    # Fussnote unter der Tabelle
 REF       = _load("REF")         # echte Kundenstimmen, siehe data/REF.json
 BUYING_GUIDE = _load("BUYING_GUIDE")
 SUBCATEGORY_GUIDES = _load("SUBCATEGORY_GUIDES")
+PRODUCT_GUIDES = _load("PRODUCT_GUIDES")
+GUIDE_LINKS = _load("GUIDE_LINKS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
@@ -1120,6 +1122,79 @@ def u_service(lang, key=None):
     """/service/ und /service/<reparatur|kalibrierung|automation>/"""
     return _j(SEG[lang]["root"], SEG[lang]["service"],
               SERVICE_SEG[lang][key] if key else None)
+
+
+def editorial_target(lang, ref):
+    """Resolve navigation references, without extending manufacturer compatibility."""
+    if not isinstance(ref, dict) or not isinstance(ref.get('id'), str):
+        raise ValueError('Editorial link needs a typed catalogue identifier')
+    kind, key = ref.get('kind'), ref['id']
+    fields = {'kind', 'id', 'sub'} if kind == 'subcategory' else {'kind', 'id'}
+    if set(ref) != fields:
+        raise ValueError('Unknown or missing editorial link fields')
+    if kind == 'product' and key in BY_ID:
+        return pFullName(lang, BY_ID[key]), u_prod(lang, BY_ID[key])
+    if kind == 'category' and key in CAT_BY_ID:
+        return catT(lang, CAT_BY_ID[key]), u_cat(lang, key)
+    if kind == 'subcategory' and key in CAT_BY_ID and ref['sub'] in CAT_BY_ID[key]['subs']:
+        return subT(lang, ref['sub']), u_sub(lang, key, ref['sub'])
+    if kind == 'service' and key in ('overview', *SERVICE_KEYS):
+        label = {'overview':'foot_service', 'repair':'foot_diag',
+                 'calib':'foot_calib', 'auto':'foot_auto'}[key]
+        return t(lang, label), u_service(lang, None if key == 'overview' else key)
+    if kind == 'page' and key in ('about', 'contact', 'imprint', 'products'):
+        label = {'about':'nav_about', 'contact':'n_contact',
+                 'imprint':'nav_impressum', 'products':'nav_products'}[key]
+        return t(lang, label), u_page(lang, key)
+    raise ValueError(f'Unknown editorial link: {kind}/{key}')
+
+
+def validate_editorial_guides():
+    """Validate all languages and destinations before replacing generated files."""
+    def links(refs):
+        if not isinstance(refs, list) or not 1 <= len(refs) <= 6:
+            raise ValueError('Editorial link groups need one to six references')
+        for lang in LANGS:
+            targets = [editorial_target(lang, ref)[1] for ref in refs]
+            if len(targets) != len(set(targets)):
+                raise ValueError('Duplicate editorial link destination')
+
+    for pid, guide in PRODUCT_GUIDES.items():
+        if pid not in BY_ID or set(guide) != {'sources', 'links', *LANGS}:
+            raise ValueError(f'Incomplete product guide: {pid}')
+        if not isinstance(guide['sources'], list) or not guide['sources'] or any(
+                not isinstance(source, str) or not source for source in guide['sources']):
+            raise ValueError(f'Missing product guide provenance: {pid}')
+        links(guide['links'])
+        if any(ref == {'kind':'product', 'id':pid} for ref in guide['links']):
+            raise ValueError(f'Product guide links to itself: {pid}')
+        for lang in LANGS:
+            copy = guide[lang]
+            if not isinstance(copy, dict) or set(copy) != {'intro', 'checks'}:
+                raise ValueError(f'Incomplete product guide language: {pid}/{lang}')
+            if not isinstance(copy['intro'], str) or not copy['intro'].strip():
+                raise ValueError(f'Empty product guide intro: {pid}/{lang}')
+            if not isinstance(copy['checks'], list) or not 2 <= len(copy['checks']) <= 3 or any(
+                    not isinstance(text, str) or not text.strip() for text in copy['checks']):
+                raise ValueError(f'Incomplete product guide checks: {pid}/{lang}')
+    if set(GUIDE_LINKS) != {'categories', 'subcategories', 'services', 'company'}:
+        raise ValueError('Incomplete editorial navigation groups')
+    if set(GUIDE_LINKS['categories']) != set(CAT_BY_ID):
+        raise ValueError('Missing category editorial navigation')
+    if set(GUIDE_LINKS['subcategories']) != set(SUBCATEGORY_GUIDES):
+        raise ValueError('Missing subcategory editorial navigation')
+    for refs in GUIDE_LINKS['categories'].values():
+        links(refs)
+    for cid, subs in SUBCATEGORY_GUIDES.items():
+        if set(GUIDE_LINKS['subcategories'][cid]) != set(subs):
+            raise ValueError(f'Missing subcategory editorial navigation: {cid}')
+        for refs in GUIDE_LINKS['subcategories'][cid].values():
+            links(refs)
+    if set(GUIDE_LINKS['services']) != {'overview', *SERVICE_KEYS}:
+        raise ValueError('Missing service editorial navigation')
+    for refs in GUIDE_LINKS['services'].values():
+        links(refs)
+    links(GUIDE_LINKS['company'])
 
 
 def analytics_paths():

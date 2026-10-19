@@ -611,6 +611,12 @@ def llms_full():
             out.append(f"Kategorie: {C.catT(L,c)} / {C.subT(L, p['sub'])} · Typ: {C.vtT(L, p['vt'])} "
                        f"· Art.-Nr.: {p['id'].upper()} · Preis: auf Anfrage (CHF)")
             out.append(C.pDesc(L, p))
+            guide = C.PRODUCT_GUIDES.get(p['id'])
+            if guide:
+                out.append(guide[L]['intro'])
+                out += ['- ' + text for text in guide[L]['checks']]
+                out += [f'Weiterführend: [{label}]({C.abs_url(path)})'
+                        for label, path in (C.editorial_target(L, ref) for ref in guide['links'])]
             hl = C.highlightsOf(L, p)
             if hl:
                 out.append("Besonderheiten: " + "; ".join(hl) + ".")
@@ -682,6 +688,7 @@ def main():
     C.analytics_enabled()
     C.analytics_campaigns()
     C.web3forms_key()
+    C.validate_editorial_guides()
     written.clear()
     for d in MANAGED_DIRS:
         p = OUT / d

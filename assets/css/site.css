@@ -984,6 +984,13 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
 .buying-guide dt{font-weight:700;margin-top:20px}
 .buying-guide dd{margin:6px 0 0}
 .buying-guide .btn{margin-top:20px}
+.selection-checks{padding-left:22px;margin:16px 0}
+.selection-checks li{font-size:15px;line-height:1.7;color:var(--muted);margin:10px 0}
+.guide-links ul{display:flex;flex-wrap:wrap;gap:8px 28px;padding-left:20px;margin:20px 0}
+.guide-links li{font-size:15px;line-height:1.6}
+.guide-links a{text-decoration:underline;text-underline-offset:.18em}
+.product-guide{margin-bottom:40px}
+.service-guide{margin-top:0;margin-bottom:24px}
 
 /* Narrow phones, landscape and browser bars: contain content rather than
    hiding page overflow. Technical tables retain their own horizontal scroll. */

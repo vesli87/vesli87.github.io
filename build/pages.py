@@ -628,12 +628,38 @@ def page_products(lang):
                            jsonld_blocks=ld, body=body)
 
 
+def editorial_links(lang, refs, current=None):
+    targets = [C.editorial_target(lang, ref) for ref in refs]
+    items = ''.join(f'<li><a href="{e(url)}">{e(label)}</a></li>'
+                    for label, url in targets if url != current)
+    return (f'<nav class="guide-links" aria-label="{e(C.t(lang, "guide_links_label"))}">'
+            f'<ul>{items}</ul></nav>') if items else ''
+
+
+def product_guide(lang, p):
+    guide = C.PRODUCT_GUIDES.get(p['id'])
+    if not guide:
+        return ''
+    copy = guide[lang]
+    checks = ''.join(f'<li>{e(text)}</li>' for text in copy['checks'])
+    return (f'<section class="buying-guide product-guide" data-selection-guide="{e(p["id"])}">'
+            f'<h2>{e(C.t(lang, "product_guide_title", name=C.pName(lang, p) if C.istMahe(p) else C.pFullName(lang, p)))}</h2>'
+            f'<p>{e(copy["intro"])}</p><ul class="selection-checks">{checks}</ul>'
+            + editorial_links(lang, guide['links'], C.u_prod(lang, p)) + '</section>')
+
+
+def company_navigation(lang, current):
+    return (f'<section class="company-navigation"><h2>{e(C.t(lang, "company_links_title"))}</h2>'
+            + editorial_links(lang, C.GUIDE_LINKS['company'], current) + '</section>')
+
+
 def buying_guide(lang, cid):
     guide = C.BUYING_GUIDE[cid][lang]
     criteria = ''.join(f'<dt>{e(title)}</dt><dd>{e(text)}</dd>' for title, text in guide['criteria'])
     return (f'<section class="buying-guide"><h2>{e(guide["title"])}</h2>'
             f'<p>{e(guide["intro"])}</p><dl>{criteria}</dl>'
-            f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
+            + editorial_links(lang, C.GUIDE_LINKS['categories'][cid])
+            + f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
 
 
 def subcategory_guide(lang, cid, sub):
@@ -642,7 +668,8 @@ def subcategory_guide(lang, cid, sub):
                        for title, text in guide['criteria'])
     return (f'<section class="buying-guide"><h2>{e(C.t(lang, "subcategory_guide_title"))}</h2>'
             f'<dl>{criteria}</dl>'
-            f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
+            + editorial_links(lang, C.GUIDE_LINKS['subcategories'][cid][sub])
+            + f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
 
 
 def page_cat(lang, c, sub=None):
@@ -841,6 +868,8 @@ def page_product(lang, p):
     h1 = nm if C.istMahe(p) else C.pFullName(lang, p)
     context = accessory_context_html(lang, p)
     context = f"\n      {context}" if context else ""
+    selection = product_guide(lang, p)
+    selection = f"\n  {selection}" if selection else ""
     body = f"""
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
@@ -877,7 +906,7 @@ def page_product(lang, p):
   <div class="tabs">
     <div class="tabbar" role="tablist" aria-label="{e(nm)}">{tabbar}</div>
     {panehtml}
-  </div>
+  </div>{selection}
   {occ_text_html(lang, p)}
   {verwandt_html(lang, p)}
 
@@ -1113,6 +1142,17 @@ def page_service(lang, key=None):
             for k, h, p in C.EX[lang]["svc_items"])
         inhalt = (f'<section class="usps"><div class="wrap">'
                   f'<div class="usprow">{karten}</div></div></section>')
+        values = {key:e(value) for key, value in {
+            'ws_street':C.WORKSHOP['street'], 'ws_zip':C.WORKSHOP['zip'],
+            'ws_city':C.WORKSHOP['city'], 'partner':C.WORKSHOP['partner'],
+            'url_contact':C.u_page(lang, 'contact'),
+            'url_repair':C.u_service(lang, 'repair'),
+            'url_calib':C.u_service(lang, 'calib'),
+            'url_auto':C.u_service(lang, 'auto')}.items()}
+        inhalt += ('<div class="catalog"><div class="wrap textwrap legal">'
+                   + ''.join(f'<section><h2>{e(h)}</h2>{text.format(**values)}</section>'
+                             for h, text in C.EX[lang]['svc_body'])
+                   + '</div></div>')
     else:
         praefix, navkey = SERVICE[key]
         nav = C.t(lang, navkey)
@@ -1129,6 +1169,10 @@ def page_service(lang, key=None):
     body = (R.cbar(lang, crumb_items=krumen, h1=C.t(lang, f"{praefix}_h1"),
                    desc=C.t(lang, f"{praefix}_lead"))
             + inhalt
+            + '<div class="wrap"><section class="buying-guide service-guide">'
+              f'<h2>{e(C.t(lang,"service_links_title"))}</h2>'
+            + editorial_links(lang, C.GUIDE_LINKS['services'][key or 'overview'], url)
+            + '</section></div>'
             + f'<section class="service-inquiry wrap"><h2>{e(C.t(lang,"inquiry_service_cta_title"))}</h2>'
               f'<p>{e(C.t(lang,"inquiry_service_cta_note"))}</p>'
               f'<a class="btn pri" href="{e(C.u_page(lang,"contact"))}?service={e(key or "overview")}">{e(C.t(lang,"inquiry_service_cta"))}</a></section>')
@@ -1198,6 +1242,8 @@ def page_legal(lang, kind):
     secs = "".join(
         f"<section><h2>{e(h)}</h2>{b if b.lstrip().startswith('<') else '<p>' + b + '</p>'}</section>"
         for h, b in ((h, body_text(b)) for h, b in C.EX[lang][f"{tkey}_body"]))
+    if kind == 'imprint':
+        secs += company_navigation(lang, url)
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (nav, None)],
                    h1=C.t(lang, f"{tkey}_h1"), desc="")
             + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')
@@ -1240,6 +1286,7 @@ def page_about(lang):
     secs = "".join(
         f"<section><h2>{e(h)}</h2>{b.format(**werte)}</section>"
         for h, b in C.EX[lang]["about_body"])
+    secs += company_navigation(lang, url)
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (nav, None)],
                    h1=C.t(lang, "about_h1"), desc=C.t(lang, "about_lead"))
             + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')

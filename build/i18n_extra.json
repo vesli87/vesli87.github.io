@@ -579,7 +579,52 @@
         "Geräteannahme in der Partnerwerkstatt",
         "<p>Die Arbeiten erfolgen bei {partner}, {ws_street}, {ws_zip} {ws_city}. Vereinbaren Sie die Geräteannahme vor dem Transport. Bronschhofen ist Unternehmenssitz und Rechnungsadresse, nicht die Werkstattadresse.</p><p>Über die <a href=\"{url_contact}\">Kontaktseite</a> erreichen Sie Ihren Ansprechpartner und können die gewünschte Leistung anfragen. Der Termin und der konkrete Ablauf werden persönlich abgestimmt.</p>"
       ]
-    ]
+    ],
+    "volt_headline_1": "Technik mit",
+    "volt_headline_2": "Präzision",
+    "volt_disciplines": "Elektronik. Schweissen. Schneiden. Reinigen. Automation.",
+    "volt_process_overview": "Verfahren im Überblick",
+    "volt_process_detail": "Prinzip & Anwendung",
+    "volt_panel_title": "Grafisches X-Bedienpanel",
+    "volt_panel_intro": "Farb-Grafikbildschirm, vier Funktionstasten und ein zentraler Dreh-/Drücksteller für die Bedienung von HyperMIG X und HyperMIG TWIN.",
+    "volt_panel_features": [
+      [
+        "Klare Anzeige",
+        "Programm, Schweisswerte und aktiver Drahtvorschub im Blick."
+      ],
+      [
+        "Direkte Bedienung",
+        "Parameter über Funktionstasten und Dreh-/Drücksteller wählen."
+      ],
+      [
+        "99 JOB-Speicher",
+        "Schweisseinstellungen speichern und für wiederkehrende Arbeiten aufrufen."
+      ]
+    ],
+    "volt_panel_more": "Bedienung und Funktionen im Detail",
+    "volt_service_title": "Diagnose bis zur Elektronik",
+    "volt_steps_title": "Der Serviceablauf",
+    "volt_steps": [
+      [
+        "Anfrage",
+        "Anliegen und Gerätedaten übermitteln."
+      ],
+      [
+        "Diagnose",
+        "Komponenten systematisch prüfen und Fehler eingrenzen."
+      ],
+      [
+        "Abstimmung",
+        "Vorgehen und Kosten vor der Reparatur besprechen."
+      ],
+      [
+        "Reparatur",
+        "Vereinbarte Arbeiten und Funktionsprüfung durchführen."
+      ]
+    ],
+    "volt_contact_title": "Ihr Ansprechpartner",
+    "volt_sole_trader": "Einzelunternehmen",
+    "volt_device_view": "Gerät ansehen"
   },
   "fr": {
     "locale": "fr_CH",
@@ -1160,7 +1205,52 @@
         "Réception dans l’atelier partenaire",
         "<p>Les travaux ont lieu chez {partner}, {ws_street}, {ws_zip} {ws_city}. Convenez de la réception avant le transport. Bronschhofen est le siège et l’adresse de facturation, pas l’adresse de l’atelier.</p><p>La <a href=\"{url_contact}\">page de contact</a> permet de joindre votre interlocuteur et de demander la prestation souhaitée. Le rendez-vous et le déroulement sont convenus personnellement.</p>"
       ]
-    ]
+    ],
+    "volt_headline_1": "La technique avec",
+    "volt_headline_2": "précision",
+    "volt_disciplines": "Électronique. Soudage. Découpe. Nettoyage. Automatisation.",
+    "volt_process_overview": "Les procédés en un coup d’œil",
+    "volt_process_detail": "Principe et application",
+    "volt_panel_title": "Panneau graphique X",
+    "volt_panel_intro": "Écran graphique couleur, quatre touches de fonction et une commande rotative avec bouton-poussoir pour piloter HyperMIG X et HyperMIG TWIN.",
+    "volt_panel_features": [
+      [
+        "Affichage clair",
+        "Programme, valeurs de soudage et dévidoir actif en un coup d’œil."
+      ],
+      [
+        "Commande directe",
+        "Sélection des paramètres par les touches de fonction et la commande rotative avec bouton-poussoir."
+      ],
+      [
+        "99 mémoires JOB",
+        "Enregistrer les réglages de soudage et les rappeler pour les travaux récurrents."
+      ]
+    ],
+    "volt_panel_more": "Commande et fonctions en détail",
+    "volt_service_title": "Diagnostic jusqu’à l’électronique",
+    "volt_steps_title": "Le déroulement du service",
+    "volt_steps": [
+      [
+        "Demande",
+        "Transmettre le besoin et les informations sur l’appareil."
+      ],
+      [
+        "Diagnostic",
+        "Vérifier les composants et localiser le défaut de manière systématique."
+      ],
+      [
+        "Concertation",
+        "Convenir de la démarche et des coûts avant la réparation."
+      ],
+      [
+        "Réparation",
+        "Effectuer les travaux convenus et le contrôle de fonctionnement."
+      ]
+    ],
+    "volt_contact_title": "Votre interlocuteur",
+    "volt_sole_trader": "Entreprise individuelle",
+    "volt_device_view": "Voir l’appareil"
   },
   "it": {
     "locale": "it_CH",
@@ -1741,6 +1831,51 @@
         "Accettazione nell’officina partner",
         "<p>I lavori si svolgono presso {partner}, {ws_street}, {ws_zip} {ws_city}. Concordate l’accettazione prima del trasporto. Bronschhofen è la sede e l’indirizzo di fatturazione, non l’indirizzo dell’officina.</p><p>La <a href=\"{url_contact}\">pagina di contatto</a> permette di raggiungere il vostro interlocutore e richiedere il servizio desiderato. Appuntamento e svolgimento vengono concordati personalmente.</p>"
       ]
-    ]
+    ],
+    "volt_headline_1": "Tecnica con",
+    "volt_headline_2": "precisione",
+    "volt_disciplines": "Elettronica. Saldatura. Taglio. Pulizia. Automazione.",
+    "volt_process_overview": "Panoramica dei processi",
+    "volt_process_detail": "Principio e applicazione",
+    "volt_panel_title": "Pannello grafico X",
+    "volt_panel_intro": "Schermo grafico a colori, quattro tasti funzione e una manopola con pulsante per il comando di HyperMIG X e HyperMIG TWIN.",
+    "volt_panel_features": [
+      [
+        "Visualizzazione chiara",
+        "Programma, valori di saldatura e trainafilo attivo a colpo d’occhio."
+      ],
+      [
+        "Comando diretto",
+        "Selezione dei parametri tramite tasti funzione e manopola con pulsante."
+      ],
+      [
+        "99 memorie JOB",
+        "Salvare le impostazioni di saldatura e richiamarle per i lavori ricorrenti."
+      ]
+    ],
+    "volt_panel_more": "Comando e funzioni in dettaglio",
+    "volt_service_title": "Diagnosi fino all’elettronica",
+    "volt_steps_title": "Le fasi dell’assistenza",
+    "volt_steps": [
+      [
+        "Richiesta",
+        "Trasmettere l’esigenza e i dati dell’apparecchio."
+      ],
+      [
+        "Diagnosi",
+        "Verificare i componenti e individuare il guasto in modo sistematico."
+      ],
+      [
+        "Accordo",
+        "Concordare procedura e costi prima della riparazione."
+      ],
+      [
+        "Riparazione",
+        "Eseguire gli interventi concordati e il controllo del funzionamento."
+      ]
+    ],
+    "volt_contact_title": "Il vostro interlocutore",
+    "volt_sole_trader": "Ditta individuale",
+    "volt_device_view": "Vedi l’apparecchio"
   }
 }

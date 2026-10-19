@@ -630,15 +630,36 @@ def page_home(lang):
             f'<div class="go">{e(C.t(lang,"card_open"))}</div></a>'
         )
     faq6 = C.EX[lang]["faq"][:6]
+    featured = C.BY_ID['hypermig-twin']
+    spotlights = ''
+    for pid in ('theta-60', 'hypercleaner-st'):
+        product = C.BY_ID[pid]
+        spotlights += (f'<a class="volt-spotlight" href="{e(C.u_prod(lang, product))}">'
+                       + R.img_tag(product['img'], '(max-width:700px) 45vw, 300px',
+                                   alt=C.pFullName(lang, product), width=300)
+                       + f'<div><h2>{e(C.pName(lang, product))}</h2>'
+                       f'<p>{e(C.t(lang,"poa"))}</p><span class="volt-text-link">'
+                       f'{e(C.t(lang,"volt_device_view"))} <span aria-hidden="true">→</span></span></div></a>')
     body = f"""
-{hero_band(lang)}
-<div class="hero-cta"><div class="wrap"><div class="cta-row">
-  <a class="btn pri" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a>
-  <a class="btn ghost light" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))}</a>
-</div></div></div>
+<section class="volt-home-hero"><div class="wrap volt-home-grid">
+  <div class="volt-home-copy">
+    <p class="p-eyebrow">{e(C.t(lang,'site_name'))} · MAHE</p>
+    <h1><span>{e(C.t(lang,'volt_headline_1'))}</span><span>{e(C.t(lang,'volt_headline_2'))}</span></h1>
+    <p class="volt-disciplines">{e(C.t(lang,'volt_disciplines'))}</p>
+    <div class="cta-row"><a class="btn pri" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))} <span aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a></div>
+  </div>
+  <a class="volt-home-product" href="{e(C.u_prod(lang, featured))}">
+    <div class="volt-product-plinth">{R.img_tag(featured['img'], '(max-width:640px) 45vw, (max-width:1150px) 320px, 350px', alt=C.pFullName(lang, featured), eager=True, width=440)}</div>
+    <div class="volt-home-product-label"><h2>{e(C.pName(lang, featured))}</h2><p>{e(C.t(lang,'poa'))}</p>
+      <span class="volt-text-link">{e(C.t(lang,'volt_device_view'))} <span aria-hidden="true">→</span></span></div>
+  </a>
+</div></section>
+<div class="wrap volt-spotlights">{spotlights}</div>
+<div class="wrap"><a class="volt-service-link" href="{e(C.u_service(lang))}">{R.design_icon('repair')}<span>{e(C.t(lang,'volt_service_title'))}</span><span aria-hidden="true">→</span></a></div>
 
 <section class="intro"><div class="wrap">
-  <h1>{e(C.t(lang,'home_h1'))}</h1>
+  <h2>{e(C.t(lang,'home_h1'))}</h2>
   <p class="lead">{e(C.t(lang,'hero_lead'))}</p>
 </div></section>
 
@@ -671,8 +692,7 @@ def page_home(lang):
           R.ld_faq_subset(lang, faq6, url)]
     return url, R.document(
         lang, title=C.t(lang, "home_title"), desc=C.t(lang, "home_desc"),
-        url=url, alts=alts, jsonld_blocks=ld, body=body,
-        extra_head=R.HERO_PRELOAD)
+        url=url, alts=alts, jsonld_blocks=ld, body=body)
 
 
 def page_products(lang):
@@ -826,6 +846,24 @@ def page_cat(lang, c, sub=None):
                            jsonld_blocks=ld, body=body, og_image=preview)
 
 
+def panel_spotlight(lang, p):
+    """Visible preview of the confirmed X panel; complete guide stays in its tab."""
+    if 'hypermig_x_graphic' not in C.fpAssign(p):
+        return ''
+    panel = C.FP['hypermig_x_graphic']
+    features = ''.join(
+        f'<div>{R.design_icon(icon)}<div><h3>{e(title)}</h3><p>{e(text)}</p></div></div>'
+        for icon, (title, text) in zip(('screen', 'control', 'job'), C.t(lang, 'volt_panel_features')))
+    return (f'<section class="volt-panel-feature" aria-labelledby="volt-panel-title">'
+            f'<div class="volt-panel-copy"><h2 id="volt-panel-title">{e(C.t(lang,"volt_panel_title"))}</h2>'
+            f'<p>{e(C.t(lang,"volt_panel_intro"))}</p>'
+            f'<a class="volt-text-link" href="#panel-hypermig-x-graphic">{e(C.t(lang,"volt_panel_more"))} <span aria-hidden="true">→</span></a></div>'
+            '<div class="volt-panel-image">'
+            + R.img_tag(panel['img'], '(max-width:700px) 85vw, 450px',
+                        cls='zoomable', alt=C.fpName(lang, panel), width=450)
+            + f'</div><div class="volt-panel-benefits">{features}</div></section>')
+
+
 def page_product(lang, p):
     url = C.u_prod(lang, p)
     alts = C.alternates("prod", p=p)
@@ -948,7 +986,7 @@ def page_product(lang, p):
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
   <div class="dgrid">
-    {media_html(lang, p, nm)}
+    <div class="volt-product-media">{media_html(lang, p, nm)}</div>
     <div class="dinfo" data-inquiry-product="{e(p['id'])}">
       <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
       <h1>{e(h1)}</h1>
@@ -976,7 +1014,7 @@ def page_product(lang, p):
 {zustand_block}
     </div>
   </div>
-
+{panel_spotlight(lang, p)}
 {R.inquiry_unit_cards(lang, p)}
   <div class="tabs">
     <div class="tabbar" role="tablist" aria-label="{e(nm)}">{tabbar}</div>
@@ -1026,6 +1064,32 @@ def process_followup(lang):
     micro = e(C.t(lang, 'process_followup_micro')).format_map(replacements)
     return (f'<section class="buying-guide"><h2>{e(C.t(lang, "process_followup_title"))}</h2>'
             f'<p>{service}</p><p>{micro}</p></section>')
+
+
+def process_overview(lang):
+    """All 19 entries remain visible, linked to their full technical explanations."""
+    groups = ''
+    for group in C.PROCESS_GUIDE['groups']:
+        cards = ''
+        for process in C.PROC:
+            if process['group'] != group['id']:
+                continue
+            symbol_key = 'coldrootforce' if process['id'] in ('hyperforce', 'hypercold', 'hyperroot') else process['ic']
+            feature = C.FEAT.get(symbol_key) if symbol_key else None
+            symbol = (f'<img src="{e(feature["img"])}" width="{feature["w"]}" height="{feature["h"]}" '
+                      f'alt="{e(C.featLabel(lang,symbol_key))}" loading="lazy" decoding="async">') if feature else ''
+            cards += (f'<article class="volt-process-card{ " volt-process-no-symbol" if not feature else ""}"><div class="volt-process-symbol">{symbol}</div><div>'
+                      f'<h3>{e(process["n"][lang].split(" · ")[0])}</h3><p>{e(process["d"][lang])}</p>'
+                      f'<a class="volt-text-link" href="#{e(process["id"])}">{e(C.t(lang,"volt_process_detail"))} '
+                      '<span aria-hidden="true">→</span></a></div></article>')
+        groups += (f'<section class="volt-process-group" id="overview-{e(group["id"])}" '
+                   f'aria-labelledby="overview-title-{e(group["id"])}">'
+                   f'<h2 id="overview-title-{e(group["id"])}">{e(group["n"][lang].split(" · ")[0])}</h2>'
+                   f'<div class="volt-process-grid">{cards}</div></section>')
+    links = ''.join(f'<a class="chip" href="#overview-{e(g["id"])}">{e(g["n"][lang].split(" · ")[0])}</a>'
+                    for g in C.PROCESS_GUIDE['groups'])
+    return (f'<div class="wrap volt-process-overview"><nav class="chips" aria-label="{e(C.t(lang,"volt_process_overview"))}">'
+            f'{links}</nav>{groups}</div>')
 
 
 def page_processes(lang):
@@ -1082,7 +1146,8 @@ def page_processes(lang):
     contact = (f'<section class="process-contact"><div><h2>{e(guide["contact_title"])}</h2><p>{e(guide["contact_text"])}</p></div>'
                f'<a class="btn pri" href="{e(C.u_page(lang, "contact"))}">{e(guide["contact_button"])} →</a></section>')
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (C.t(lang, "n_process"), None)],
-                   h1=C.t(lang, "verf_h1"), desc=C.t(lang, "verf_sub"))
+                   h1=C.t(lang, "verf_h1"), desc=C.t(lang, "verf_sub"), artwork='welding')
+            + process_overview(lang)
             + '<div class="catalog"><div class="wrap process-guide">'
             + f'<section class="process-intro"><h2>{e(guide["intro_title"])}</h2><p>{e(guide["intro"])}</p>'
             + f'<p class="process-availability">{e(guide["availability"])}</p></section>'
@@ -1120,7 +1185,7 @@ def page_contact(lang):
     co = C.COMPANY
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
                                       (C.t(lang, "n_contact"), None)],
-                   h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"))
+                   h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"), artwork='diagnostics')
             + f"""<div class="catalog"><div class="wrap kontaktwrap">
   <div class="contact-main">
   <section class="contact-direct" aria-labelledby="whatsappHeading">
@@ -1149,9 +1214,11 @@ def page_contact(lang):
   <noscript><p>{e(C.t(lang,'form_nojs'))} <a href="mailto:{e(co['email'])}">{e(co['email'])}</a></p></noscript>
   </div>
   <aside class="kinfo">
-    <h2>{e(C.t(lang,'site_name'))}</h2>
+    {R.design_icon('repair')}
+    <p class="p-eyebrow">{e(C.t(lang,'volt_contact_title'))}</p>
+    <h2>{e(co['owner'])}</h2>
+    <p class="volt-owner-role">{e(C.t(lang,'site_name'))} · {e(C.t(lang,'volt_sole_trader'))}</p>
     <address>
-      {e(co['owner'])}<br><br>
       <a class="accent" href="tel:{co['phone_href']}">{e(co['phone'])}</a><br>
       <a class="accent" href="mailto:{co['email']}">{co['email']}</a><br><br>
       {e(C.t(lang,'hours_lbl'))}:<br>{e(C.t(lang,'hours'))}
@@ -1258,10 +1325,15 @@ def page_service(lang, key=None):
         krumen_ld = [heim, (hub_nav, url)]
         karten = "".join(
             f'<a class="usp" href="{e(C.u_service(lang, k))}">'
-            f'<h2>{e(h)}</h2><p>{e(p)}</p></a>'
+            f'{R.design_icon(k)}<div><h2>{e(h)}</h2><p>{e(p)}</p></div><span class="volt-card-arrow" aria-hidden="true">→</span></a>'
             for k, h, p in C.EX[lang]["svc_items"])
         inhalt = (f'<section class="usps"><div class="wrap">'
                   f'<div class="usprow">{karten}</div></div></section>')
+        steps = ''.join(f'<li><span class="volt-step-number" aria-hidden="true">{i:02d}</span>'
+                        f'<div><h3>{e(h)}</h3><p>{e(text)}</p></div></li>'
+                        for i, (h, text) in enumerate(C.t(lang, 'volt_steps'), 1))
+        inhalt += (f'<section class="wrap volt-service-steps"><h2>{e(C.t(lang,"volt_steps_title"))}</h2>'
+                   f'<ol>{steps}</ol></section>')
         values = {key:e(value) for key, value in {
             'ws_street':C.WORKSHOP['street'], 'ws_zip':C.WORKSHOP['zip'],
             'ws_city':C.WORKSHOP['city'], 'partner':C.WORKSHOP['partner'],
@@ -1286,8 +1358,9 @@ def page_service(lang, key=None):
                   + "</div></div>")
 
     title, desc = C.t(lang, f"{praefix}_title"), C.t(lang, f"{praefix}_desc")
-    body = (R.cbar(lang, crumb_items=krumen, h1=C.t(lang, f"{praefix}_h1"),
-                   desc=C.t(lang, f"{praefix}_lead"))
+    body = (R.cbar(lang, crumb_items=krumen,
+                   h1=C.t(lang, 'volt_service_title') if key is None else C.t(lang, f"{praefix}_h1"),
+                   desc=C.t(lang, f"{praefix}_lead"), artwork='diagnostics')
             + inhalt
             + '<div class="wrap"><section class="buying-guide service-guide">'
               f'<h2>{e(C.t(lang,"service_links_title"))}</h2>'

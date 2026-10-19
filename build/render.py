@@ -703,7 +703,7 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 <meta name="twitter:title" content="{e(title)}">
 <meta name="twitter:description" content="{e(desc)}">
 <meta name="twitter:image" content="{e(og_image)}">
-<meta name="theme-color" content="#E0511A">
+<meta name="theme-color" content="#FF5B0A">
 {verification}
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="96x96" href="/assets/icons/icon-96.png">
@@ -774,8 +774,9 @@ def header(lang, alts):
                (C.u_cat(lang, 'occasion'), C.catT(lang, C.CAT_BY_ID['occasion'])),
                (C.u_page(lang, 'about'), C.t(lang, 'nav_about')),
                (C.u_page(lang, 'contact'), C.t(lang, 'n_contact'))]
+    active = max((url for url, _ in primary if alts[lang].startswith(url)), key=len, default=None)
     links = ''.join(f'<a href="{e(url)}"' +
-                    (' aria-current="page"' if alts[lang] == url else '') +
+                    (' aria-current="page"' if url == active else '') +
                     f'>{e(label)}</a>' for url, label in primary)
     return f"""<a class="skip" href="#main">{e(C.t(lang,'skip_link'))}</a>
 <div class="util"><div class="wrap">
@@ -789,7 +790,7 @@ def header(lang, alts):
 <header>
   <div class="wrap head">
     <a class="logo" href="{e(C.u_home(lang))}" aria-label="{e(C.t(lang,'site_name'))}">
-      <span class="name">VES<i>-</i>TECH</span><span class="flag" aria-hidden="true"></span></a>
+      <span class="name">VES<i>-</i>TECH</span><span class="flag" aria-hidden="true"></span><span class="logo-swiss" aria-hidden="true">SWISS</span></a>
     <form class="hsearch" role="search" action="{e(C.u_page(lang,'search'))}" method="get"
           id="searchForm" autocomplete="off">
       <input id="q" name="q" type="search" placeholder="{e(C.t(lang,'search_ph'))}"
@@ -1113,6 +1114,22 @@ def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
              og_image=None, og_type="website", robots="index,follow,max-image-preview:large",
              extra_head="", body_class="", adressierbar=True):
     jsonld_blocks = _complete_graph(lang, jsonld_blocks)
+    # One design system across all existing routes and all three languages.
+    if url == C.u_home(lang):
+        page_kind = 'home'
+    elif any(url == C.u_prod(lang, p) for p in C.P):
+        page_kind = 'product'
+    elif url == C.u_page(lang, 'processes'):
+        page_kind = 'procedures'
+    elif url.startswith(C.u_service(lang)):
+        page_kind = 'service'
+    elif url == C.u_page(lang, 'contact'):
+        page_kind = 'contact'
+    elif url.startswith(C.u_products(lang)):
+        page_kind = 'catalog'
+    else:
+        page_kind = 'editorial'
+    body_class = ' '.join(filter(None, ['design-volt', 'page-' + page_kind, body_class]))
     return f"""<!DOCTYPE html>
 <html lang="{C.EX[lang]['hreflang']}">
 <head>
@@ -1179,12 +1196,37 @@ def pgrid(lang, products):
     return f'<div class="pgrid">{"".join(pcard(lang, p) for p in products)}</div>'
 
 
-def cbar(lang, *, crumb_items, h1, desc, chips=""):
-    return f"""<div class="cbar"><div class="wrap">
+def design_art(artwork):
+    """Decorative editorial images, never presented as a real workshop photo."""
+    if artwork not in ('diagnostics', 'welding'):
+        return ''
+    return (f'<div class="volt-intro-art" aria-hidden="true"><img '
+            f'src="{_ver(f"/assets/img/design/volt-{artwork}.webp")}" '
+            'width="1440" height="480" alt="" decoding="async"></div>')
+
+
+def design_icon(kind):
+    paths = {
+        'repair': '<path d="M2 13h4l3-8 5 15 3-9h5"/><circle cx="17" cy="7" r="4"/>',
+        'calib': '<path d="M3 20a10 10 0 1 1 18 0H3Z"/><path d="m12 13 5-6"/><circle cx="12" cy="13" r="1"/>',
+        'auto': '<path d="M4 20h16M7 20v-5l4-4 4 3v6M11 11 8 5l4-3 5 5-3 4M17 7l4 1v4"/><circle cx="8" cy="5" r="2"/>',
+        'screen': '<rect x="2" y="3" width="20" height="14" rx="1"/><path d="M12 17v4m-5 0h10M5 10h3l2-3 3 6 2-3h4"/>',
+        'control': '<circle cx="12" cy="12" r="8"/><path d="M12 4v4m0 4 5-4m-5 8v4M4 12h4m8 0h4"/>',
+        'job': '<path d="M4 3h11l5 5v13H4ZM15 3v6h5M8 13h8m-8 4h6"/>',
+    }
+    return ('<span class="volt-icon" aria-hidden="true"><svg viewBox="0 0 24 24" '
+            'fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" '
+            f'stroke-linejoin="round">{paths.get(kind, paths["screen"])}</svg></span>')
+
+
+def cbar(lang, *, crumb_items, h1, desc, chips="", artwork=None):
+    return f"""<div class="cbar{ ' cbar-illustrated' if artwork else ''}"><div class="wrap">
+  <div class="volt-intro-copy">
   {crumbs(lang, crumb_items)}
   <h1>{e(h1)}</h1>
   <p class="desc">{e(desc)}</p>
   {chips}
+  </div>{design_art(artwork)}
 </div></div>"""
 
 

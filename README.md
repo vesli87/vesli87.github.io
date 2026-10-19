@@ -40,6 +40,13 @@ aktualisiert diese aus dem Netz. Änderungen an Herstellerdaten vor Übernahme p
 
 ## Struktur
 
+Der freigegebene Stil **VOLT** gilt seit dem 19.10.2026 für den gesamten
+Auftritt in DE/FR/IT: helle technische Flächen, orange Leiterzüge und
+skalierbare Eckrahmen. Originale Gerätefotos bleiben unverändert. Startseite,
+Produktdetails mit X-Panel, alle 19 Verfahrensübersichten, Service und Kontakt
+nutzen die gemeinsamen Vorlagen. Die neuen dekorativen Makromotive und ihre
+Herkunft sind in `build/volt_assets.json` dokumentiert. Details: §11 in MASTER_PROMPT.md.
+
 - `data/`: gepflegte Produktdaten, Übersetzungen, `BUYING_GUIDE.json` für
   Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 21 eigenständige Unterkategorien.
 - `data/PROC.json`, `PROCESS_GUIDE.json`: 19 erklaerte Schweissverfahren/Funktionen,

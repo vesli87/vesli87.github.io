@@ -506,41 +506,61 @@ Enthalten: Pflichtfeldprüfung mit Meldung am Feld (`aria-invalid` +
 
 ## 11. Design
 
-Am 19.10.2026 nach einem Lesbarkeitsvergleich mit ISO Oerlikon überarbeitet:
+Am 19.10.2026 hat der Inhaber nach den Bildentwürfen für Startseite,
+Produktdetail, Verfahren und Service den Stil **VOLT** für den kompletten
+Auftritt in DE/FR/IT freigegeben. Er ersetzt den zuvor gewählten warmen Stein.
+Die Umsetzung bleibt echtes vorgerendertes HTML, keine Abbildung einer Seite.
 
 ```
---bg:#E9E4DC  --bg2:#E2DDD4  --panel:#F7F4EE  --panel2:#E8E0D4
---line:#D3CABC --accent:#E0511A --accent-2:#FF8A3D
---white:#332F29   /* ist die TEXTfarbe und dunkel, kein heller Hintergrund */
---muted:#625B50 --ink:#332F29
+--bg:#F4F6F7 --bg2:#E9EDF0 --panel:#FFFFFF --panel2:#F0F3F5
+--line:#B5BEC6 --accent:#FF5B0A --accent-ink:#AE3500
+--ink:#14181D --muted:#52616D
 ```
 
-Der Inhaber hat am selben Tag nach drei konkreten Entwürfen den Stil
-«Teplý kameň» (warmer Stein) für den gesamten Webauftritt in DE/FR/IT gewählt.
-Grossflächige Hintergründe verwenden warmes Steingrau, Header und Inhaltskarten
-ein weiches Cremeweiss. Kategorie- und Seiteneinleitungen stehen in einer
-eingerückten, abgerundeten Fläche mit dezentem warmem Verlauf. Katalogkarten
-haben 18 px Radius, zurückhaltende Schatten und umrandete Anfrage-Buttons.
-Desktop-Navigation, Servicekarten, Ratgeber, Formulare und Footer folgen derselben
-Palette. Die Manifest-Startfläche verwendet denselben Grundton.
-Textgrössen und Lesbarkeit bleiben erhalten; dunkle Hilfstexte und deutlichere
-Feldränder sichern den Kontrast. Herstellerbilder, Bedienpanels und farbige
-Markenlogos werden nicht getönt; ihre originalen Bildflächen bleiben erhalten.
+Helle silbergraue Flächen, geometrische orange Felder und feine Leiterzüge
+verbinden Elektronik, Schweissen, Schneiden, Reinigung und Automation.
+`assets/icons/design/` enthält die eigenen Vektoren für Felder, Trennlinien
+und neunfach skalierte Eckrahmen. Die Rahmen liegen auf einer dekorativen
+Ebene; Text, Formulare und Tastaturmarkierungen werden nicht abgeschnitten.
+Alle Seitentypen erhalten dieselbe Sprache, mit passenden Layouts für ihren
+Inhalt. Auf Mobilgeräten bleibt der Einstiegstext auf hellem Grund.
 
-**Inter** für Gerätenamen, Überschriften, Bedienung und Fliesstext. **Anton**
-bleibt für die Wortmarke und die nummerierten Verfahrenszeichen erhalten.
-Keine erzwungenen Versalien in der UI. Fliesstext überwiegend 16 px, Produktlead
-18 px (mobil 17 px), Tabellen 16 px (mobil 15 px), kleine Hilfstexte mindestens
-14 px. Der Seitenrahmen wächst bis 1400 px; Produktkarten haben drei Spalten,
-unter 1000 px zwei und unter 640 px eine. Der mobile Hero zeigt Foto und
-vollständig lesbaren Text untereinander statt kleiner Schrift im Bild.
+Inter bleibt für Überschriften, Fliesstext und Bedienung; Barlow Condensed
+700 für kompakte Kartenüberschriften und Anton für die Wortmarke. Alle
+Schriften liegen lokal. Fliesstext ist überwiegend 16 px, Produktlead 18 px,
+mobil 17 px. Die Wortmarke erhält den Zusatz SWISS. Originale Herstellerfotos,
+Bedienpanels und farbige Social-Logos werden weder getönt noch neu gezeichnet.
+Die Startseite zeigt HyperMIG TWIN, Theta 60 HSC und HyperCleaner ST mit echten
+Links, Anfragepreis und unveränderten Herstellerabbildungen auf weissen Flächen.
+Die bisherigen Hero-Dateien bleiben für Vorschau-Metadaten erhalten.
 
-Ab 1040 px stehen sechs direkte Hauptlinks im Header. Hover und Tastaturfokus
-heben die ganze Linkfläche mit Markenorange, dunklem Text und einem dezenten
-Schatten hervor; der Übergang respektiert reduzierte Bewegung. Die aktuelle
-Seite bleibt mit einer helleren orangenen Fläche markiert. Auf kleineren Geräten
-bleibt das vorhandene Menü. Tabs lassen sich innerhalb ihrer eigenen Leiste
-horizontal verschieben; die Pfeiltastenbedienung bleibt erhalten.
+Zwei neu erzeugte redaktionelle Makromotive illustrieren Elektronikdiagnose und
+Schweissen unter `assets/img/design/volt-*.webp`. Sie dienen ausschliesslich als
+dekorative Bilder, niemals als eigene Werkstatt-, Personen- oder Produktfotos.
+Prompts, Herkunft und Abmessungen stehen in `build/volt_assets.json`.
+
+Der Verfahrenseinstieg zeigt alle 19 Einträge mit Kurztext und Anker zur
+vollständigen Erklärung. Vorhandene Herstellerzeichen bleiben erhalten;
+HyperForce, HyperCold und HyperRoot nutzen das originale Kombinationssymbol.
+Ohne Herstellerzeichen wird kein fiktives Zeichen ergänzt. Vergleich, FAQ,
+Parameter, Quellen und alle bisherigen Anker bleiben vorgerendert erhalten.
+
+HyperMIG X und TWIN erhalten zusätzlich einen sichtbaren, eigenen Block zum
+neuen X-Panel. Bild, Bedienbeschreibung und 99 JOB-Speicher folgen den bereits
+geprüften Unterlagen. Der Link öffnet den vollständigen Ratgeber im bestehenden
+Produktreiter. Keine neuen Verfügbarkeits-, Nachrüst- oder Prozesszusagen.
+
+Die Serviceübersicht enthält die vier Schritte Anfrage, Diagnose, Abstimmung
+und Reparatur. Die Kontaktseite nennt Martin Veselovsky ausdrücklich als
+Einzelunternehmen (FR: entreprise individuelle; IT: ditta individuale) und
+unterscheidet unverändert Rechnungsadresse und Partnerwerkstatt.
+
+Die sechs Desktop-Hauptlinks bleiben ab 1040 px sichtbar, darunter das
+vollständige Menü. Orange Hover- und Fokusflächen, Suche, Anfragekorb,
+Galerien, Tastaturbedienung und Formulare bleiben erhalten. Reduzierte
+Bewegung wird respektiert; vorhandene Tabellen dürfen in ihrer eigenen
+Region horizontal scrollen. Sicherheitsrichtlinie, Datenschutzgrenzen,
+URLs, Canonicals und Sprachalternativen bleiben bestehen.
 
 Der Produktkopf zeigt die Anfrage vor den ausführlichen Verfahrenssymbolen.
 `core.quickFacts()` ergänzt höchstens drei belegte technische Eckdaten:
@@ -550,11 +570,6 @@ ergänzt; widersprüchliche CWK-Absicherungen werden nicht zusammengezogen.
 Ohne Herstellertabelle werden bestehende redaktionelle Merkmale verwendet.
 Der Link zur vollständigen Datentabelle öffnet deren Reiter über `#tab-tech`.
 Es werden keine neuen Leistungswerte, Ausstattungszusagen oder Preise erfunden.
-
-Nur Inter und Anton werden vorab geladen. Die übrigen vorhandenen Schriftdateien
-bleiben für älteres Panel-Artwork verfügbar und werden bei Bedarf geladen.
-Bewusst dunkel bleiben: gezeichnete Bedienpanels, blaue Reinigungs-Kacheln,
-Anfrage-Button, Toast.
 
 **Optionale Statistik mit Zustimmung.** Ahrefs und Cloudflare Web Analytics laden erst nach
 aktiver Zustimmung, mit gleichwertiger Ablehnen-Option und dauerhaft erreichbaren

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" fill="none">
+  <defs><linearGradient id="orange" x1="450" y1="600" x2="1380" y2="60" gradientUnits="userSpaceOnUse"><stop stop-color="#ff4700"/><stop offset="1" stop-color="#ff790f"/></linearGradient></defs>
+  <path d="M758 0H1400V530L1350 580H1200L1160 620H370L550 440V352L650 252V108Z" fill="url(#orange)"/>
+  <path d="M730 0H758L636 122V252L540 348V440L360 620H330L518 432V338L614 242V112Z" fill="#dfe3e6"/>
+  <g stroke="#fff" stroke-opacity=".7">
+    <path d="M500 530H685L754 461V300L831 223H1026L1122 127H1400"/>
+    <path d="M434 570H666L782 454V322L862 242H1048L1144 146H1400"/>
+    <path d="M600 400H700L760 340V206L816 150H1004L1100 54H1400"/>
+    <path d="M873 580H1008L1064 524H1247L1310 461H1400"/>
+    <path d="M920 600H1020L1078 542H1264L1326 480H1400"/>
+  </g>
+  <g fill="#fff" fill-opacity=".85"><path d="M750 296h8v8h-8zm272-77h8v8h-8zM681 526h8v8h-8zm379-6h8v8h-8z"/></g>
+  <g stroke="#fff" stroke-opacity=".5"><path d="m1120 366 12-12m2 12 12-12m2 12 12-12m2 12 12-12m2 12 12-12m2 12 12-12"/></g>
+  <path d="M1316 242h12v-12h10v12h12v10h-12v12h-10v-12h-12z" fill="#fff" fill-opacity=".3"/>
+</svg>

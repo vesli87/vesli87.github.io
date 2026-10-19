@@ -674,8 +674,8 @@ def webmanifest():
         "start_url": "/",
         "scope": "/",
         "display": "standalone",
-        "background_color": "#E9E4DC",
-        "theme_color": "#E0511A",
+        "background_color": "#F4F6F7",
+        "theme_color": "#FF5B0A",
         "lang": "de-CH",
         "icons": [
             {"src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png"},

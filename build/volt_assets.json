@@ -1,0 +1,22 @@
+{
+  "created": "2026-10-19",
+  "tool": "built-in image_gen",
+  "purpose": "Decorative editorial illustrations; never presented as photographs of the owner, partner workshop or a particular product. Original manufacturer product and panel files are unchanged.",
+  "processing": "Proportional Lanczos resize to 1440x480 and WebP quality 86; no semantic edits.",
+  "assets": [
+    {
+      "path": "assets/img/design/volt-diagnostics.webp",
+      "width": 1440,
+      "height": 480,
+      "sha256": "bf967083368d1c6de207bd403caa00b8e4a445805292cb1c32f7d7a7852f4981",
+      "prompt": "Use case: photorealistic-natural. Asset type: website decorative editorial header photograph for VES-TECH Swiss electronics diagnosis. Create a premium close-up photograph of a welding power inverter circuit board under diagnosis: precisely rendered real electronic components, copper inductors, heatsink fins, PCB traces and a single red insulated multimeter probe touching a safe test point. No person, no hands, no workshop wide shot, no meter readout. Horizontal panoramic composition 3:1, crisp component detail in the right two thirds and subtly defocused left edge. Natural bright neutral workshop lighting, silver, charcoal, green PCB and small copper/orange accents, not a dark moody scene. No text, no logos, no border, no UI, no badges, no fake product brand. This is an illustrative electronics macro, not a claim to depict a specific business's workshop."
+    },
+    {
+      "path": "assets/img/design/volt-welding.webp",
+      "width": 1440,
+      "height": 480,
+      "sha256": "09e7865509acbc83b8975c51073513a34ec20f54e7b09f284e065dd54736e9a7",
+      "prompt": "Use case: photorealistic-natural. Asset type: decorative website header photograph for MAHE welding-process guide. A technically realistic close-up of a MIG/MAG welding torch welding a short clean steel fillet joint, realistic contact tip geometry, modest blue-white arc and a few orange sparks, sharply visible even weld bead behind the torch. No entire welding machine, no person, no hands, no brands. Panoramic 3:1 composition with the welding torch and arc in the right two thirds. Bright steel and soft neutral workshop background, professionally lit, crisp weld texture, restrained sparks, no explosion. No text, logos, watermark, border or UI. For an industrial welding catalog in a white, silver and orange visual design."
+    }
+  ]
+}

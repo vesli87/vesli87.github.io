@@ -509,17 +509,23 @@ Enthalten: Pflichtfeldprüfung mit Meldung am Feld (`aria-invalid` +
 Am 19.10.2026 nach einem Lesbarkeitsvergleich mit ISO Oerlikon überarbeitet:
 
 ```
---bg:#F1F2EF  --bg2:#E7E9E5  --panel:#F8F9F6  --panel2:#ECEEE9
---line:#D8DDE3 --accent:#E0511A --accent-2:#FF8A3D
---white:#18212F   /* ist die TEXTfarbe und dunkel, kein heller Hintergrund */
---muted:#475569 --ink:#141416
+--bg:#E9E4DC  --bg2:#E2DDD4  --panel:#F7F4EE  --panel2:#E8E0D4
+--line:#D3CABC --accent:#E0511A --accent-2:#FF8A3D
+--white:#332F29   /* ist die TEXTfarbe und dunkel, kein heller Hintergrund */
+--muted:#625B50 --ink:#332F29
 ```
 
-Auf Wunsch des Inhabers am selben Tag abgemildert: grossflächige Hintergründe
-verwenden ein sanftes neutrales Grau, Header und Inhaltskarten ein gebrochenes
-Weiss. Textfarben und Typografie bleiben gut lesbar. Originale Herstellerbilder
-werden nicht abgedunkelt; ihre weissen Bildflächen bleiben erhalten. Such- und
-Formularplatzhalter verwenden die vorhandene dunkle Hilfstextfarbe.
+Der Inhaber hat am selben Tag nach drei konkreten Entwürfen den Stil
+«Teplý kameň» (warmer Stein) für den gesamten Webauftritt in DE/FR/IT gewählt.
+Grossflächige Hintergründe verwenden warmes Steingrau, Header und Inhaltskarten
+ein weiches Cremeweiss. Kategorie- und Seiteneinleitungen stehen in einer
+eingerückten, abgerundeten Fläche mit dezentem warmem Verlauf. Katalogkarten
+haben 18 px Radius, zurückhaltende Schatten und umrandete Anfrage-Buttons.
+Desktop-Navigation, Servicekarten, Ratgeber, Formulare und Footer folgen derselben
+Palette. Die Manifest-Startfläche verwendet denselben Grundton.
+Textgrössen und Lesbarkeit bleiben erhalten; dunkle Hilfstexte und deutlichere
+Feldränder sichern den Kontrast. Herstellerbilder, Bedienpanels und farbige
+Markenlogos werden nicht getönt; ihre originalen Bildflächen bleiben erhalten.
 
 **Inter** für Gerätenamen, Überschriften, Bedienung und Fliesstext. **Anton**
 bleibt für die Wortmarke und die nummerierten Verfahrenszeichen erhalten.

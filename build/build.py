@@ -674,7 +674,7 @@ def webmanifest():
         "start_url": "/",
         "scope": "/",
         "display": "standalone",
-        "background_color": "#ECEAE5",
+        "background_color": "#E9E4DC",
         "theme_color": "#E0511A",
         "lang": "de-CH",
         "icons": [

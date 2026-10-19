@@ -1,12 +1,14 @@
   :root{
-    --bg:#F1F2EF;--bg2:#E7E9E5;--panel:#F8F9F6;--panel2:#ECEEE9;
-    --line:#D8DDE3;--line-soft:#E9ECF0;
-    --accent:#E0511A;--accent-ink:#AE3F14;--accent-2:#FF8A3D;
-    --white:#18212F;--muted:#475569;--muted-2:#526071;
-    --paper:#F1F2EF;--ink:#141416;--ok:#16723B;
-  /* Readability revision, 19.10.2026: soft neutral surfaces, dark text,
-     one UI typeface. Orange remains the brand and primary-button colour;
-     --accent-ink is the darker colour for text on light surfaces. */
+    --bg:#E9E4DC;--bg2:#E2DDD4;--panel:#F7F4EE;--panel2:#E8E0D4;
+    --line:#D3CABC;--line-soft:#E2DBCF;
+    --accent:#E0511A;--accent-ink:#9F3914;--accent-2:#FF8A3D;
+    --white:#332F29;--muted:#625B50;--muted-2:#625B50;
+    --paper:#E9E4DC;--ink:#332F29;--ok:#16723B;
+    --stone-hero:#E1D8CA;--stone-highlight:#F6F0E5;
+    --surface-radius:18px;--surface-shadow:0 6px 22px rgba(95,73,48,.05);
+    --field-line:#827565;
+  /* Approved warm-stone design, 19.10.2026, shared by DE/FR/IT.
+     Manufacturer photos and logos retain their original colours. */
   }
   *{box-sizing:border-box;margin:0;padding:0}
   /* Ohne text-size-adjust vergroessert Safari auf dem iPhone die Schrift in
@@ -1307,4 +1309,75 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .intro h1{max-width:none}
   .process-article{padding:20px}
   .procbadge{width:96px}
+}
+
+/* Warm stone: the approved catalogue treatment also covers service, guides,
+   search and forms. Photo wells keep their original white background. */
+@media screen{
+  header{border-bottom:1px solid var(--line);box-shadow:0 2px 12px rgba(95,73,48,.025)}
+  .hsearch,.bigsearch{border:1px solid var(--field-line);border-radius:8px;background:var(--panel)}
+  .hsearch input,.bigsearch input{background:var(--panel);color:var(--ink);border-radius:7px 0 0 7px}
+  .hsearch button,.bigsearch button{border-radius:0 7px 7px 0;flex-shrink:0;white-space:nowrap}
+  .hsearch button{min-height:46px}
+  .basket,.burger{border-radius:8px}
+  .burger{border-width:1px;border-color:var(--line)}
+  .burger:hover,.burger:focus-visible{border-color:var(--accent-ink)}
+  .cbar{width:calc(100% - 56px);max-width:1344px;margin:26px auto 0;
+    padding:24px 0;border:1px solid rgba(201,190,170,.6);border-radius:var(--surface-radius);
+    background:radial-gradient(ellipse at 95% 0,var(--stone-highlight),transparent 65%),var(--stone-hero)}
+  .cbar .chips{margin-top:20px}
+  .chip{border-color:var(--line);padding:10px 17px;min-height:44px}
+  .chip:hover{background:var(--panel);color:var(--accent-ink)}
+  .chip.active{background:var(--accent);color:#111}
+  .catalog{padding-top:28px}
+  .pcard,.acccard{border-radius:var(--surface-radius);border-color:rgba(207,197,183,.65);box-shadow:var(--surface-shadow)}
+  .pcard:hover,.acccard:hover{border-color:var(--line);box-shadow:0 12px 30px rgba(95,73,48,.11)}
+  .pcard:focus-within,.acccard:focus-within{border-color:var(--accent-ink)}
+  .pcard .foot{margin:16px 20px 0;padding:16px 0 20px;border-top:1px solid var(--line)}
+  .pcard .foot .poa{color:var(--muted);font-weight:600}
+  .pcard .add{border:1px solid var(--accent-ink);border-radius:24px;background:transparent;color:var(--accent-ink)}
+  .pcard .add:hover,.pcard .add:focus-visible{background:var(--accent);border-color:var(--accent-ink);color:#111}
+  .pcard .spec span{border-color:var(--line-soft);border-radius:5px}
+  .cat{border:1px solid var(--line);border-radius:var(--surface-radius);background:var(--panel);box-shadow:var(--surface-shadow);overflow:hidden}
+  .cards{gap:22px;background:transparent}
+  .cat:hover{background:var(--panel);box-shadow:0 10px 26px rgba(95,73,48,.1)}
+  .strip{background:var(--panel2)}
+  .strip a:hover{background:var(--panel)}
+  .trust .dl,.usp,.inquiry-unit,.linklist a,.dlitem,.faq,.kform,.contact-direct,
+  .process-toc,.process-article,.process-glossary>div,.mahe-symbol-card,.variante{
+    border-radius:var(--surface-radius);box-shadow:var(--surface-shadow)}
+  .usp{padding:22px;background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--accent)}
+  .dimg,.poa-box,.panelnote,.fp-panel,.optlist,.spectable,.spectab-scroll,.process-table{
+    border-radius:12px}
+  .dinfo .lead,.intro .lead,.programm .sub,.cat p{color:var(--muted)}
+  .procbadge .lb{max-width:100%;overflow-wrap:anywhere;hyphens:auto}
+  .form input,.form textarea,.cart .form input,.cart .form textarea,
+  .inquiry-choice select,.inquiry-context select,.cart-option{
+    border-color:var(--field-line);border-radius:8px}
+  .cart,.mega{background:var(--panel)}
+  .cart .top{background:var(--panel)}
+  .cart .form{background:var(--panel2)}
+  .tabbtn{border-radius:9px 9px 0 0}
+  .process-contact{border-radius:0 var(--surface-radius) var(--surface-radius) 0}
+  .analytics-consent,.inquiry-summary{border-radius:12px}
+  .analytics-settings,.consent-actions button{border-radius:8px}
+  footer{background:var(--bg2)}
+  .footer-social-link{box-shadow:0 3px 10px rgba(95,73,48,.035)}
+}
+@media screen and (min-width:1040px){
+  .desktop-nav{justify-content:center;border-top-color:var(--line);gap:8px}
+  .desktop-nav a:last-child{margin-left:0}
+}
+@media screen and (max-width:640px){
+  .cbar{width:calc(100% - 32px);margin-top:18px;padding:21px 0}
+  .cbar>.wrap{padding-left:20px;padding-right:20px}
+  .cbar h1{font-size:clamp(25px,6.6vw,30px);overflow-wrap:anywhere;hyphens:auto}
+  .cbar .desc{font-size:17px}
+  .cbar .chips{gap:8px;margin-top:18px}
+  .chip{padding:10px 14px}
+  .cards{gap:18px}
+  .catalog{padding-top:24px}
+  .pcard .foot{margin:14px 20px 0}
+  .pcard .add{white-space:normal;text-align:center}
+  .usp{padding:20px}
 }

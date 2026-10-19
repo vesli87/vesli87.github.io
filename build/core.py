@@ -659,6 +659,39 @@ def specRest(p):
                        or t.endswith(k.lower()) for t in tab)}
 
 
+def quickFacts(lang, p):
+    """Only show source values shared by every listed model and construction.
+
+    A family overview must not present one model's fuse, current or weight as
+    a specification of the whole family. Empty and unconfirmed cells stay out.
+    Products without manufacturer tables retain their existing editorial data.
+    """
+    tables = [MAHE_SPECS[key] for key in SPECMAP.get(p['id'], []) if key in MAHE_SPECS]
+    if not tables:
+        return [(trK(lang, key), trV(lang, value)) for key, value in list(specRest(p).items())[:3]]
+    priorities = [('Schweissstrombereich',), ('Ausgangsstrom max.',), ('Netzspannung',),
+                  ('Netzabsicherung', 'Netzabsicherung (träge)'), ('Gewicht', 'Gewicht CWK'),
+                  ('Schutzklasse',), ('Empfohlener Schnitt',)]
+    out = []
+    for alternatives in priorities:
+        values, label = [], ''
+        for table in tables:
+            rows = [row for row in table['rows'] if _specK(row.get('model', '')) in alternatives]
+            if len(rows) != 1 or rows[0].get('model') in table.get('unconfirmed_rows', []):
+                break
+            row = rows[0]
+            cells = [_specV(row.get(column['key'], '')) for column in table['columns']]
+            if not cells or any(not cell or cell == SPEC_EMPTY for cell in cells) or len(set(cells)) != 1:
+                break
+            values.append(cells[0])
+            label = _specK(row['model'])
+        if len(values) == len(tables) and len(set(values)) == 1:
+            out.append((SPECROW.get(label, {}).get(lang, label), values[0]))
+            if len(out) == 3:
+                break
+    return out
+
+
 # --------------------------------------------------------------------------
 # Fachlogik (1:1 aus dem alten JS portiert)
 # --------------------------------------------------------------------------

@@ -500,17 +500,38 @@ Enthalten: Pflichtfeldprüfung mit Meldung am Feld (`aria-invalid` +
 
 ## 11. Design
 
-Unverändert aus v1, heller Auftritt:
+Am 19.10.2026 nach einem Lesbarkeitsvergleich mit ISO Oerlikon überarbeitet:
 
 ```
---bg:#ECEAE5  --bg2:#E3E0D9  --panel:#FFFFFF  --panel2:#F4F2ED
---line:#D8D3CA --accent:#E0511A --accent-2:#FF8A3D
---white:#1A1A1A   /* ist die TEXTfarbe und dunkel – nie als heller Hintergrund */
---muted:#57534C --ink:#141416
+--bg:#FFFFFF  --bg2:#F3F4F6  --panel:#FFFFFF  --panel2:#F7F8FA
+--line:#D8DDE3 --accent:#E0511A --accent-2:#FF8A3D
+--white:#18212F   /* ist die TEXTfarbe und dunkel, kein heller Hintergrund */
+--muted:#475569 --ink:#141416
 ```
 
-Schriften: Gerätenamen **Bodoni Moda**, Labels/Titel **Barlow Condensed**,
-Fliesstext **Inter**, grosse Display-Überschriften **Anton**.
+**Inter** für Gerätenamen, Überschriften, Bedienung und Fliesstext. **Anton**
+bleibt für die Wortmarke und die nummerierten Verfahrenszeichen erhalten.
+Keine erzwungenen Versalien in der UI. Fliesstext überwiegend 16 px, Produktlead
+18 px (mobil 17 px), Tabellen 16 px (mobil 15 px), kleine Hilfstexte mindestens
+14 px. Der Seitenrahmen wächst bis 1400 px; Produktkarten haben drei Spalten,
+unter 1000 px zwei und unter 640 px eine. Der mobile Hero zeigt Foto und
+vollständig lesbaren Text untereinander statt kleiner Schrift im Bild.
+
+Ab 1040 px stehen sechs direkte Hauptlinks im Header. Auf kleineren Geräten
+bleibt das vorhandene Menü. Tabs lassen sich innerhalb ihrer eigenen Leiste
+horizontal verschieben; die Pfeiltastenbedienung bleibt erhalten.
+
+Der Produktkopf zeigt die Anfrage vor den ausführlichen Verfahrenssymbolen.
+`core.quickFacts()` ergänzt höchstens drei belegte technische Eckdaten:
+Jeder Wert muss in allen Spalten aller zugeordneten Herstellertabellen gleich
+und bestätigt sein. Fehlende Zellen und unbestätigte Einheiten werden nicht
+ergänzt; widersprüchliche CWK-Absicherungen werden nicht zusammengezogen.
+Ohne Herstellertabelle werden bestehende redaktionelle Merkmale verwendet.
+Der Link zur vollständigen Datentabelle öffnet deren Reiter über `#tab-tech`.
+Es werden keine neuen Leistungswerte, Ausstattungszusagen oder Preise erfunden.
+
+Nur Inter und Anton werden vorab geladen. Die übrigen vorhandenen Schriftdateien
+bleiben für älteres Panel-Artwork verfügbar und werden bei Bedarf geladen.
 Bewusst dunkel bleiben: gezeichnete Bedienpanels, blaue Reinigungs-Kacheln,
 Anfrage-Button, Toast.
 

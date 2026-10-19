@@ -145,7 +145,14 @@
     "zustand_h": "Zustand:",
     "occ_aktuell": "Im Katalog: {liste}.",
     "occ_faq_h": "Fragen zur Anlage",
-    "verwandt_h": "Ebenfalls interessant"
+    "verwandt_h": "Ebenfalls interessant",
+    "primary_navigation": "Hauptnavigation",
+    "facts_title": "Technische Eckdaten",
+    "all_tech_data": "Alle technischen Daten",
+    "hero_weld_kicker": "MAHE-Schweisstechnik",
+    "hero_weld_title": "MAHE HyperMIG",
+    "hero_weld_sub": "MIG/MAG-Schweisstechnik mit Pulsverfahren und Hyper-Verfahren je nach Geräteausführung.",
+    "hero_weld_cta": "HyperMIG ansehen"
   },
   "fr": {
     "hours": "lun.–jeu. 07h30–17h00 · ven. 07h30–11h30",
@@ -293,7 +300,14 @@
     "zustand_h": "État :",
     "occ_aktuell": "Au catalogue : {liste}.",
     "occ_faq_h": "Questions sur la machine",
-    "verwandt_h": "À découvrir également"
+    "verwandt_h": "À découvrir également",
+    "primary_navigation": "Navigation principale",
+    "facts_title": "Caractéristiques essentielles",
+    "all_tech_data": "Toutes les données techniques",
+    "hero_weld_kicker": "Technologie de soudage MAHE",
+    "hero_weld_title": "MAHE HyperMIG",
+    "hero_weld_sub": "Équipements MIG/MAG avec procédés pulsés et Hyper selon la configuration choisie.",
+    "hero_weld_cta": "Découvrir HyperMIG"
   },
   "it": {
     "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–11:30",
@@ -441,6 +455,13 @@
     "zustand_h": "Stato:",
     "occ_aktuell": "A catalogo: {liste}.",
     "occ_faq_h": "Domande sulla macchina",
-    "verwandt_h": "Può interessare anche"
+    "verwandt_h": "Può interessare anche",
+    "primary_navigation": "Navigazione principale",
+    "facts_title": "Caratteristiche principali",
+    "all_tech_data": "Tutti i dati tecnici",
+    "hero_weld_kicker": "Tecnologia di saldatura MAHE",
+    "hero_weld_title": "MAHE HyperMIG",
+    "hero_weld_sub": "Tecnologia MIG/MAG con procedimenti pulsati e Hyper secondo la configurazione scelta.",
+    "hero_weld_cta": "Scoprire HyperMIG"
   }
 }

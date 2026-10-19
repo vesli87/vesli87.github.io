@@ -634,17 +634,9 @@ def ld_webpage(lang, url, title, desc, extra=None):
 
 FONTS_URL = _ver("/assets/fonts/fonts.css")
 
-# Diese vier Schnitte stehen auf jeder Seite über dem Falz – preload startet
-# ihren Download vor dem CSS-Parsing. crossorigin ist bei Schriften auch für
-# dieselbe Herkunft Pflicht.
-#
-#   Inter            Fliesstext
-#   Anton            Wortmarke VES-TECH
-#   DM Serif Display die H1 jeder Seite. Sie stand bis zum 05.08.2026 nicht
-#                    hier - der grösste Text der Seite wurde also erst nach dem
-#                    CSS neu gezeichnet.
-#   Barlow Cond. 700 Navigation, Schaltflächen, Tabellenköpfe; mit 66 Stellen
-#                    die meistbenutzte Familie im Stylesheet.
+# Inter covers headings, body and controls; Anton retains the VES-TECH wordmark.
+# Preload only the two families required above the fold. Legacy panel artwork
+# can still request its original family through fonts.css when needed.
 #
 # Nur die latin-Schnitte: latin-ext holt der Browser dank unicode-range
 # ohnehin nur, wenn ein Zeichen daraus vorkommt.
@@ -652,11 +644,7 @@ FONT_PRELOAD = (
     '<link rel="preload" as="font" type="font/woff2" crossorigin '
     'href="/assets/fonts/inter-400-700-latin.woff2">\n'
     '<link rel="preload" as="font" type="font/woff2" crossorigin '
-    'href="/assets/fonts/anton-400-latin.woff2">\n'
-    '<link rel="preload" as="font" type="font/woff2" crossorigin '
-    'href="/assets/fonts/dm-serif-display-400-latin.woff2">\n'
-    '<link rel="preload" as="font" type="font/woff2" crossorigin '
-    'href="/assets/fonts/barlow-condensed-700-latin.woff2">'
+    'href="/assets/fonts/anton-400-latin.woff2">'
 )
 
 
@@ -780,6 +768,15 @@ def mega(lang):
 def header(lang, alts):
     co = C.COMPANY
     vis = C.WORKSHOP
+    primary = [(C.u_products(lang), C.t(lang, 'nav_products')),
+               (C.u_page(lang, 'processes'), C.t(lang, 'n_process')),
+               (C.u_service(lang), C.t(lang, 'n_service')),
+               (C.u_cat(lang, 'occasion'), C.catT(lang, C.CAT_BY_ID['occasion'])),
+               (C.u_page(lang, 'about'), C.t(lang, 'nav_about')),
+               (C.u_page(lang, 'contact'), C.t(lang, 'n_contact'))]
+    links = ''.join(f'<a href="{e(url)}"' +
+                    (' aria-current="page"' if alts[lang] == url else '') +
+                    f'>{e(label)}</a>' for url, label in primary)
     return f"""<a class="skip" href="#main">{e(C.t(lang,'skip_link'))}</a>
 <div class="util"><div class="wrap">
   <div class="l"><a href="tel:{co['phone_href']}">{e(co['phone'])}</a>
@@ -810,6 +807,7 @@ def header(lang, alts):
               aria-controls="mega" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
+  <nav class="wrap desktop-nav" aria-label="{e(C.t(lang, 'primary_navigation'))}">{links}</nav>
 </header>
 <div class="scrim" id="scrim" data-close="all"></div>
 {mega(lang)}
@@ -1162,7 +1160,7 @@ def pcard(lang, p):
     return f"""<article class="pcard">
   <a class="pcard-link" href="{e(url)}">
     <div class="imgbox">
-      {img_tag(p['img'], "(max-width:700px) 46vw, (max-width:1000px) 30vw, 280px",
+      {img_tag(p['img'], "(max-width:640px) calc(100vw - 68px), (max-width:1000px) calc(50vw - 76px), (max-width:1400px) calc((100vw - 212px) / 3), 396px",
                alt=f"{C.pFullName(lang, p)}: {C.pDesc(lang, p)}")}</div>
     <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>
       <div class="spec">{specs}</div></div>

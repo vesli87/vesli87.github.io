@@ -17,7 +17,7 @@ PANEL_DRAWN = json.loads((C.DATA / "PANEL_DRAWN.json").read_text("utf-8"))
 #
 # Drei Deckel wirken zusammen:
 #   * die Spalte - Fensterbreite minus 28 px Aussenpolster je Seite, ab 1000 px
-#     zweispaltig mit 44 px Abstand, hoechstens 1280 px breit;
+#     zweispaltig mit 44 px Abstand, hoechstens 1400 px breit;
 #   * der Rahmen - das Bild fuellt hoechstens 90 % davon (site.css: .dimg > img);
 #   * das width-Attribut, das render.img_tag auf hoechstens 560 setzt.
 #
@@ -28,8 +28,8 @@ PANEL_DRAWN = json.loads((C.DATA / "PANEL_DRAWN.json").read_text("utf-8"))
 # Ausgerechnet statt mit min(): das versteht auch ein aelterer Browser.
 DIMG_SIZES = ("(max-width:678px) calc(90vw - 51px), "
               "(max-width:1000px) 560px, "
-              "(max-width:1280px) calc((90vw - 90px) / 2), "
-              "531px")
+              "(max-width:1400px) calc((90vw - 90px) / 2.12), "
+              "552px")
 
 # Achtung: DLS[].k ist NICHT eindeutig – Produktkatalog und EN-1090-Zertifikat
 # tragen beide "PDF". Deshalb wird hier über den Titel identifiziert.
@@ -116,6 +116,15 @@ def procs_block(lang, p):
         scope = (f'<p class="symbol-scope">{e(copy["summary_note"])} '
                  f'<a href="#hypermig-cwk">{e(copy["summary_link"])}</a></p>')
     return f'<div class="procs">{badges}{chips}{scope}</div>'
+
+
+def quickfacts_html(lang, p):
+    facts = C.quickFacts(lang, p)
+    rows = ''.join(f'<div><dt>{e(label)}</dt><dd>{e(value)}</dd></div>' for label, value in facts)
+    data = (f'<h2>{e(C.t(lang, "facts_title"))}</h2><dl>{rows}</dl>' if rows else '')
+    return (f'<div class="product-facts">{data}'
+            f'<a class="detail-jump" href="#tab-tech">{e(C.t(lang, "all_tech_data"))}'
+            '<span aria-hidden="true"> →</span></a></div>')
 
 
 def cwk_benefits(lang):
@@ -541,7 +550,14 @@ def hero_folien(lang):
         alt_txt = C.t(lang, "hero_alt" if name == "hero" else "hero2_alt",
                       marke=C.BRAND, site=C.t(lang, "site_name"))
         txt = ""
-        if name == "hero-mpt":
+        if name == "hero":
+            txt = (f'<div class="hero-txt hero-mobile-copy">'
+                   f'<span class="hk">{e(C.t(lang,"hero_weld_kicker"))}</span>'
+                   f'<h2>{e(C.t(lang,"hero_weld_title"))}</h2>'
+                   f'<p>{e(C.t(lang,"hero_weld_sub"))}</p>'
+                   f'<a class="btn pri" href="{e(C.u_prod(lang, C.BY_ID["hypermig-x"]))}">'
+                   f'{e(C.t(lang,"hero_weld_cta"))}</a></div>')
+        elif name == "hero-mpt":
             txt = (f'<div class="hero-txt">'
                    f'<span class="hk">{e(C.t(lang,"hero2_kicker"))}</span>'
                    f'<h2>{e(C.t(lang,"hero2_title"))}</h2>'
@@ -927,6 +943,7 @@ def page_product(lang, p):
     context = f"\n      {context}" if context else ""
     selection = product_guide(lang, p)
     selection = f"\n  {selection}" if selection else ""
+    facts = quickfacts_html(lang, p) if panes['tech'].strip() else ''
     body = f"""
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
@@ -936,7 +953,6 @@ def page_product(lang, p):
       <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
       <h1>{e(h1)}</h1>
       <p class="lead">{e(C.pDesc(lang, p))}</p>{context}
-      {procs_block(lang, p)}
       <div class="pmeta">
         <div class="m"><span class="lab">{e(C.t(lang,'availability'))}</span>
           <span class="val ok">{R.inquiry_availability(lang, p)}</span></div>
@@ -945,6 +961,7 @@ def page_product(lang, p):
         <div class="m"><span class="lab">{e(C.t(lang,'artno'))}</span>
           <span class="val">{e(p['id'].upper())}</span></div>
       </div>
+      {facts}
       <div class="poa-box"><span class="p">{e(C.t(lang,'poa'))}</span>
         <span class="s">{e(C.t(lang, 'poa_sub_occ' if p["cat"] == "occasion" else 'poa_sub'))}</span></div>
 {R.inquiry_product_choices(lang, p)}
@@ -953,6 +970,7 @@ def page_product(lang, p):
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" data-product-consult="{e(p['id'])}" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'consult'))}</a>
       </div>
+      {procs_block(lang, p)}
       <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
                                        de_marke=C.markeMitPraeposition(lang, p)))}</p>
 {zustand_block}

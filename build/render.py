@@ -23,6 +23,10 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
 
 MANIFEST = json.loads((C.ROOT / "assets/img/manifest.json").read_text("utf-8"))
+LANGUAGE_FLAGS = {
+    lang: (C.ROOT / f'assets/icons/flags/{lang}.svg').read_text('utf-8').strip()
+    for lang in C.LANGS
+}
 
 
 def _ver(rel):
@@ -725,10 +729,16 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 def lang_switch(lang, alts):
     out = []
     for l in C.LANGS:
+        # Inline tiny reviewed vectors: no image requests or external flag library.
+        flag = LANGUAGE_FLAGS[l].replace('<svg ',
+            f'<svg class="lang-flag" aria-hidden="true" focusable="false" width="21" height="{11 if l == "en" else 14}" ', 1)
         out.append(f'<a href="{e(alts[l])}" hreflang="{C.EX[l]["hreflang"]}" '
                    f'aria-current="{ "true" if l==lang else "false" }" '
                    f'data-lang="{l}" '
-                   f'title="{e(C.EX[l]["lang_name"])}">{l.upper()}</a>')
+                   f'lang="{l}" aria-label="{e(C.EX[l]["lang_name"])}" '
+                   f'title="{e(C.EX[l]["lang_name"])}">'
+                   f'{flag}'
+                   f'<span>{l.upper()}</span></a>')
     return "".join(out)
 
 
@@ -828,9 +838,9 @@ def cart_drawer(lang):
   <form class="form" id="cartForm" action="{e(C.u_page(lang,'contact'))}" method="post" hidden novalidate>
     <label for="cName">{e(C.t(lang,'f_name'))}</label>
     <input id="cName" name="name" type="text" required autocomplete="organization" maxlength="120"
-           placeholder="Max Muster · Muster AG">
+           placeholder="{e(C.t(lang,'form_name_example'))}">
     <label for="cMail">{e(C.t(lang,'f_mail'))}</label>
-    <input id="cMail" name="email" type="email" required autocomplete="email" maxlength="254" autocapitalize="none" spellcheck="false" placeholder="max@firma.ch">
+    <input id="cMail" name="email" type="email" required autocomplete="email" maxlength="254" autocapitalize="none" spellcheck="false" placeholder="{e(C.t(lang,'form_email_example'))}">
     <label for="cMsg">{e(C.t(lang,'f_msg'))}</label>
     <textarea id="cMsg" name="message" rows="2" maxlength="5000" placeholder="{e(C.t(lang,'inquiry_message_hint'))}"></textarea>
     {inquiry_qualification(lang, 'c')}
@@ -1229,7 +1239,7 @@ def cbar(lang, *, crumb_items, h1, desc, chips="", artwork=None):
   {crumbs(lang, crumb_items)}
   <h1>{e(h1)}</h1>
   <p class="desc">{e(desc)}</p>
-  {chips}
+{chips}
   </div>{design_art(artwork)}
 </div></div>"""
 

@@ -32,7 +32,10 @@ mkdirSync(svgDir, {recursive: true});
 mkdirSync(pngDir, {recursive: true});
 const esc = value => value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-for (const lang of ['de', 'fr', 'it']) {
+const requested = process.argv.slice(2);
+const languages = requested.length ? requested : Object.keys(copy);
+if (languages.some(lang => !Object.hasOwn(copy, lang))) throw new Error('Unknown language');
+for (const lang of languages) {
   const {type, photo_note: note} = copy[lang];
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
 <title id="title">VES-TECH Swiss · MAHE PSHB 125 · ${esc(type)}</title>

@@ -193,7 +193,7 @@ def referenzen():
         txt = r.get("text") or {}
         if not txt.get("de"):
             err(f"{wo}: Referenz ohne deutschen Text")
-        for l in ("fr", "it"):
+        for l in C.LANGS:
             if not txt.get(l):
                 warn(f"{wo}: Referenz ohne {l.upper()}-Fassung")
         g = r.get("geraet")
@@ -497,7 +497,7 @@ def main():
         where = f"{p}"
 
         if p != "/404.html":   # 404 gibt es nur einmal, nicht pro Sprache
-            lang = "fr" if p.startswith("/fr/") else "it" if p.startswith("/it/") else "de"
+            lang = next((l for l in C.LANGS if l != C.DEFAULT_LANG and p.startswith(C.u_home(l))), C.DEFAULT_LANG)
             per_lang[lang] += 1
 
         # 1. JSON-LD — parst, hat @context, und die Knoten sind inhaltlich brauchbar
@@ -557,7 +557,7 @@ def main():
         alts = re.findall(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)"', html)
         codes = {a for a, _ in alts}
         if p != "/404.html":
-            for need in ("de-CH", "fr-CH", "it-CH", "x-default"):
+            for need in (*[C.EX[l]['hreflang'] for l in C.LANGS], "x-default"):
                 if need not in codes:
                     err(f"{where}: hreflang {need} fehlt")
             for _, href in alts:
@@ -654,7 +654,7 @@ def main():
     # robots / llms
     for need in ("robots.txt", "llms.txt", "llms-full.txt", "site.webmanifest",
                  "data/products.json", "data/search-de.json", "data/search-fr.json",
-                 "data/search-it.json", "assets/js/app.js", "assets/css/site.css"):
+                 "data/search-it.json", "data/search-en.json", "assets/js/app.js", "assets/css/site.css"):
         if not (ROOT / need).exists():
             err(f"Datei fehlt: {need}")
 

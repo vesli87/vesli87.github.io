@@ -75,7 +75,7 @@ def main():
 
     for path, f in docs:
         h = f.read_text("utf-8")
-        lang = "fr" if path.startswith("/fr/") else "it" if path.startswith("/it/") else "de"
+        lang = next((l for l in C.LANGS if l != C.DEFAULT_LANG and path.startswith(C.u_home(l))), C.DEFAULT_LANG)
 
         # ---- A. Überschriften -------------------------------------------
         heads = [(int(m.group(1)), re.sub(r"<[^>]+>", "", m.group(2)).strip())

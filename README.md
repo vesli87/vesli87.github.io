@@ -1,15 +1,15 @@
 # VES-TECH Swiss
 
-Dreisprachiger Katalog (DE / FR / IT) für MAHE-Geräte und ausgewählte Occasionen.
+Viersprachiger Katalog (DE / FR / IT / EN) für MAHE-Geräte und ausgewählte Occasionen.
 Statische Website aus JSON und Python, ohne Framework oder Bundler.
 
 **Live:** https://www.ves-tech.ch/ · Hosting: GitHub Pages · DNS: Infomaniak.
 
 | Bereich | Stand |
 |---|---|
-| Katalog | 80 Produkte, 5 Kategorien, 3 Sprachen |
-| Seiten | 363 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
-| Sitemap | 354 indexierbare URLs mit Sprachalternativen |
+| Katalog | 80 Produkte, 5 Kategorien, 4 Sprachen |
+| Seiten | 484 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
+| Sitemap | 472 indexierbare URLs mit Sprachalternativen |
 | Suche | Lokaler Suchindex mit Produkten, Dienstleistungen, Synonymen und Tippfehlertoleranz |
 | SEO | Individuelle Metadaten, canonical, hreflang, JSON-LD, Sitemap, IndexNow |
 | Beratung | Auswahlhilfen je Hauptkategorie, produktbezogenes Kontaktformular, Anfrageliste |
@@ -41,7 +41,7 @@ aktualisiert diese aus dem Netz. Änderungen an Herstellerdaten vor Übernahme p
 ## Struktur
 
 Der freigegebene Stil **VOLT** gilt seit dem 19.10.2026 für den gesamten
-Auftritt in DE/FR/IT: helle technische Flächen, orange Leiterzüge und
+Auftritt in DE/FR/IT/EN: helle technische Flächen, orange Leiterzüge und
 skalierbare Eckrahmen. Originale Gerätefotos bleiben unverändert. Startseite,
 Produktdetails mit X-Panel, alle 19 Verfahrensübersichten, Service und Kontakt
 nutzen die gemeinsamen Vorlagen. Die neuen dekorativen Makromotive und ihre
@@ -54,10 +54,10 @@ Vor/Zurück, Pause, Tastaturfokus und reduzierte Bewegung werden unterstützt.
 - `data/`: gepflegte Produktdaten, Übersetzungen, `BUYING_GUIDE.json` für
   Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 21 eigenständige Unterkategorien.
 - `data/PROC.json`, `PROCESS_GUIDE.json`: 19 erklaerte Schweissverfahren/Funktionen,
-  Vergleich, Parameter und FAQ in DE/FR/IT mit Herstellerquellen.
+  Vergleich, Parameter und FAQ in DE/FR/IT/EN mit Herstellerquellen.
 - `build/core.py`, `render.py`, `pages.py`, `build.py`: Generator.
 - `assets/css/site.css`, `assets/js/app.js`, `assets/js/analytics.js`: Frontend.
-- `produkte/`, `fr/`, `it/` und andere Seiten: generiert, nicht von Hand ändern.
+- `produkte/`, `fr/`, `it/`, `en/` und andere Seiten: generiert, nicht von Hand ändern.
 - `reports/`: lokale, vertrauliche Auswertungen, von Git und Deployment ausgeschlossen.
 
 ## Formulare und Statistik
@@ -138,14 +138,14 @@ Kontometriken, Kampagnenberichte und die private Verkaufsliste liegen nur unter
 
 ## SEO und AEO
 
-Alle 63 Sprachfassungen der eigenständigen Unterkategorien erhalten eine eigene
+Alle 84 Sprachfassungen der eigenständigen Unterkategorien erhalten eine eigene
 Einleitung und konkrete Auswahlkriterien aus `SUBCATEGORY_GUIDES.json`. Die
 Plasma-TIG-URL bleibt die vorhandene Produktseite, ohne zusätzliche Dublette.
 Startseite, Unternehmensseite und Verfahrensübersicht verlinken passende
 Service- und Mikroplasma-Seiten direkt im sichtbaren Hauptinhalt.
 
-`PRODUCT_GUIDES.json` ergänzt 24 Produktfamilien mit konkreten Auswahlhinweisen
-in DE/FR/IT. Sie stehen ausserhalb geschlossener Reiter im HTML; die deutsche
+`PRODUCT_GUIDES.json` ergänzt 26 Produktfamilien mit konkreten Auswahlhinweisen
+in DE/FR/IT/EN. Sie stehen ausserhalb geschlossener Reiter im HTML; die deutsche
 Fassung erscheint auch in `llms-full.txt`. `GUIDE_LINKS.json` verbindet diese
 Hinweise und die bestehenden Kategoriehilfen mit sprachgleichen Geräten und
 Dienstleistungen. Die Referenzen werden vor dem Ersetzen generierter Dateien
@@ -170,7 +170,7 @@ aktualisieren sich erst nach erneutem Crawlen und Verarbeiten.
 keine Zusage auf KI-Zitate oder Rankings. Der JSON-Katalog ist ein eigenes Format
 (`schema_version`), das JSON-LD steht auf den HTML-Seiten.
 
-Die Sitemap enthält 354 indexierbare URLs; Suche, Datenschutz und AGB bleiben
+Die Sitemap enthält 472 indexierbare URLs; Suche, Datenschutz und AGB bleiben
 ausgeschlossen, das Impressum ist indexierbar. `lastmod` bleibt bei reinen
 Änderungen an CSP/SRI, Asset-Versionsnummern und der Laufzeitkonfiguration stabil.
 Inhalte, SEO-Metadaten, JSON-LD, Navigation und geänderte Asset-Pfade werden

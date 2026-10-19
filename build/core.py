@@ -42,7 +42,7 @@ SITE = "https://www.ves-tech.ch"          # kanonische Domain (ohne Slash am End
 # GitHub Pages leitet danach github.io per 301 auf die eigene Domain um.
 CUSTOM_DOMAIN = "www.ves-tech.ch"
 EMIT_CNAME = True
-LANGS = ["de", "fr", "it"]
+LANGS = ["de", "fr", "it", "en"]
 DEFAULT_LANG = "de"
 
 COMPANY = {
@@ -211,21 +211,23 @@ def istMahe(p):
 # 07:30-17:00 · Fr 07:30-11:30" - deutsche Wochentagskuerzel mitten im
 # franzoesischen Satz. Im Italienischen ist "Fr" ausserdem missverstaendlich:
 # es liest sich als Abkuerzung fuer Franken, nicht fuer Freitag.
-LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera"}
+LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland"}
 ZEITEN = {
     "de": "Mo–Do 07:30–17:00 · Fr 07:30–11:30",
     "fr": "lun.–jeu. 07h30–17h00 · ven. 07h30–11h30",
     "it": "lun.–gio. 07:30–17:00 · ven. 07:30–11:30",
+    "en": "Mon–Thu 07:30–17:00 · Fri 07:30–11:30",
 }
 REGION_NAMES = {
-    "SG": {"de": "St. Gallen", "fr": "Saint-Gall", "it": "San Gallo"},
+    "SG": {"de": "St. Gallen", "fr": "Saint-Gall", "it": "San Gallo", "en": "St. Gallen"},
     "AR": {"de": "Appenzell Ausserrhoden", "fr": "Appenzell Rhodes-Extérieures",
-           "it": "Appenzello Esterno"},
+           "it": "Appenzello Esterno", "en": "Appenzell Ausserrhoden"},
 }
 SEARCH_POPULAR = {
     "de": ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma", "Reparatur"],
     "fr": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Chariot", "Plasma", "Réparation"],
     "it": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Carrello", "Plasma", "Riparazione"],
+    "en": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Trolley", "Plasma", "Repairs"],
 }
 
 
@@ -248,6 +250,9 @@ KANN = {
            "Automazione della saldatura", "EN 1090", "Saldatrici MAHE",
            "Saldatura microplasma", "Saldatrici usate (occasioni)",
            "Oerlikon PlasmaFix"],
+    "en": ["MIG/MAG welding", "TIG welding", "MMA stick welding", "Plasma cutting",
+           "Electrolytic weld cleaning", "Welding automation", "EN 1090", "MAHE welding equipment",
+           "Microplasma welding", "Refurbished welding equipment", "Oerlikon PlasmaFix"],
 }
 
 
@@ -270,13 +275,15 @@ def regionName(lang, code):
 # Panelnamen: das Modell bleibt, uebersetzt wird nur das Gattungswort.
 # "EX: EcoPuls Front Panel" heisst beim Hersteller so und bleibt; aber
 # "Bedienpanel" ist unser eigenes Wort und stand auf 40 FR- und IT-Seiten.
-PANELWORT = {"fr": "panneau de commande", "it": "pannello di comando"}
+PANELWORT = {"fr": "panneau de commande", "it": "pannello di comando", "en": "control panel"}
 
 
 def fpName(lang, fp):
     if fp.get("names"):
         return fp["names"][lang]
     n = fp["n"]
+    if lang == 'en':
+        n = n.replace('WIG', 'TIG').replace('MiniReiniger', 'MiniCleaner')
     wort = PANELWORT.get(lang)
     if not wort or "Bedienpanel" not in n:
         return n
@@ -348,6 +355,8 @@ def markeMitPraeposition(lang, p):
     nicht in die Vorlage.
     """
     m = pBrand(p)
+    if lang == "en":
+        return "by " + pBrand(p)
     if lang == "fr":
         return ("d’" + m) if m[:1].lower() in "aeiouyh" else ("de " + m)
     if lang == "it":
@@ -483,6 +492,9 @@ CAT_BY_ID = {c["id"]: c for c in CATS}
 
 def t(lang, key, **fmt):
     """UI-String in der gewünschten Sprache; Fallback DE, dann Key."""
+    singular = key + '_one'
+    if fmt.get('n') == 1 and (singular in EX.get(lang, {}) or singular in UI.get(lang, {})):
+        key = singular
     v = EX.get(lang, {}).get(key)
     if v is None:
         v = UI.get(lang, {}).get(key)
@@ -569,8 +581,8 @@ def trV(lang, v):
     if lang == "de":
         return v
     if v.startswith("bis "):
-        return ("jusqu’à " if lang == "fr" else "fino a ") + v[4:]
-    return v
+        v = {"fr": "jusqu’à ", "it": "fino a ", "en": "up to "}[lang] + v[4:]
+    return re.sub(r'(?<=\d),(?=\d)', '.', v) if lang == 'en' else v
 
 
 # --------------------------------------------------------------------------
@@ -627,7 +639,7 @@ def specTables(lang, p):
                 continue
             k = _specK(r.get("model", ""))
             lab = SPECROW.get(k, {}).get(lang, k)
-            rows.append([lab] + [_specV(r.get(c, "")) for c in keys])
+            rows.append([lab] + [trV(lang, _specV(r.get(c, ""))) for c in keys])
         note = SPECNOTE.get(key) or {}
         title = HYPERMIG_CWK[lang]['general_table_title'] if key == 'hypermig' else t.get('title', '')
         out.append({"title": title,
@@ -690,7 +702,7 @@ def quickFacts(lang, p):
             values.append(cells[0])
             label = _specK(row['model'])
         if len(values) == len(tables) and len(set(values)) == 1:
-            out.append((SPECROW.get(label, {}).get(lang, label), values[0]))
+            out.append((SPECROW.get(label, {}).get(lang, label), trV(lang, values[0])))
             if len(out) == 3:
                 break
     return out
@@ -1067,6 +1079,9 @@ SEG = {
            "about": "chi-siamo",
            "imprint": "note-legali", "privacy": "protezione-dati",
            "terms": "condizioni-generali"},
+    "en": {"root": "en", "products": "products", "search": "search", "processes": "processes",
+           "downloads": "downloads", "contact": "contact", "faq": "faq", "service": "service",
+           "about": "about", "imprint": "legal-notice", "privacy": "privacy", "terms": "terms"},
 }
 
 # Unterseiten des Servicebereichs, je auf eigener URL. Wer „Schweissgeraet
@@ -1078,6 +1093,7 @@ SERVICE_SEG = {
     "de": {"repair": "reparatur",  "calib": "kalibrierung", "auto": "automation"},
     "fr": {"repair": "reparation", "calib": "calibrage",    "auto": "automation"},
     "it": {"repair": "riparazione", "calib": "calibrazione", "auto": "automazione"},
+    "en": {"repair": "repairs", "calib": "calibration", "auto": "automation"},
 }
 SERVICE_KEYS = ("repair", "calib", "auto")
 
@@ -1151,11 +1167,11 @@ def analytics_campaigns():
     return data
 
 CAT_SLUG = {
-    "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici"},
-    "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma"},
-    "reinigung":       {"de": "reinigungsgeraete", "fr": "nettoyage",       "it": "pulizia"},
-    "zubehoer":        {"de": "zubehoer",        "fr": "accessoires",       "it": "accessori"},
-    "occasion":        {"de": "occasion",        "fr": "occasion",          "it": "occasioni"},
+    "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici", "en": "welding-equipment"},
+    "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma", "en": "plasma-cutting"},
+    "reinigung":       {"de": "reinigungsgeraete", "fr": "nettoyage",       "it": "pulizia", "en": "cleaning-equipment"},
+    "zubehoer":        {"de": "zubehoer",        "fr": "accessoires",       "it": "accessori", "en": "accessories"},
+    "occasion":        {"de": "occasion",        "fr": "occasion",          "it": "occasioni", "en": "used-equipment"},
 }
 
 # Sub-Slug pro Sprache aus dem übersetzten Namen
@@ -1367,12 +1383,60 @@ def process_text(lang, process):
     return ' '.join(process[key][lang] for key in ('d', 'principle', 'use', 'setup'))
 
 
+def validate_translations():
+    """Fail before publishing if a language is missing or a template is broken."""
+    def shape(reference, value, location):
+        if type(reference) is not type(value):
+            raise ValueError(f'Translation type differs: {location}')
+        if isinstance(reference, str):
+            if reference.strip() and not value.strip():
+                raise ValueError(f'Empty translation: {location}')
+            tokens = lambda text: set(re.findall(r'\{[a-zA-Z_][a-zA-Z0-9_]*\}', text))
+            if tokens(reference) != tokens(value):
+                raise ValueError(f'Translation placeholders differ: {location}')
+        elif isinstance(reference, list):
+            if len(reference) != len(value):
+                raise ValueError(f'Translation list is incomplete: {location}')
+            for i, (a, b) in enumerate(zip(reference, value)):
+                shape(a, b, f'{location}/{i}')
+        elif isinstance(reference, dict):
+            if set(reference) != set(value):
+                raise ValueError(f'Translation fields differ: {location}')
+            for key in reference:
+                shape(reference[key], value[key], f'{location}/{key}')
+
+    count = 0
+    def walk(value, location):
+        nonlocal count
+        if isinstance(value, dict):
+            if any(lang in value for lang in LANGS):
+                for lang in LANGS:
+                    # Some original German labels are dictionary keys, not a de member.
+                    if lang != DEFAULT_LANG and lang not in value:
+                        raise ValueError(f'Missing {lang} translation: {location}')
+                shape(value.get('de', value['fr']), value['en'], location + '/en')
+                count += 1
+            else:
+                for key, child in value.items():
+                    if not key.startswith('_'):
+                        walk(child, f'{location}/{key}')
+        elif isinstance(value, list):
+            for i, child in enumerate(value):
+                walk(child, f'{location}/{i}')
+
+    for path in sorted(DATA.glob('*.json')) + [BUILD / 'i18n_extra.json', BUILD / 'subcategory_slugs.json']:
+        if path.name in ('_raw.json', 'products.json') or path.name.startswith('search-'):
+            continue
+        walk(json.loads(path.read_text('utf-8')), str(path.relative_to(ROOT)))
+    return count
+
+
 def validate_process_guide():
     """Reject incomplete translations, unsafe anchors and broken references before build."""
     def translated(value):
         if (not isinstance(value, dict) or set(value) != set(LANGS)
                 or any(not isinstance(value[l], str) or not value[l].strip() for l in LANGS)):
-            raise ValueError('Process copy needs complete DE/FR/IT text')
+            raise ValueError('Process copy needs complete DE/FR/IT/EN text')
 
     groups = {x['id'] for x in PROCESS_GUIDE['groups']}
     sources = {x['id'] for x in PROCESS_GUIDE['sources']}

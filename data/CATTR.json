@@ -1,52 +1,62 @@
 {
- "schweissgeraete": {
-  "t": {
-   "fr": "Postes de soudage",
-   "it": "Saldatrici"
+  "schweissgeraete": {
+    "t": {
+      "fr": "Postes de soudage",
+      "it": "Saldatrici",
+      "en": "Welding equipment"
+    },
+    "d": {
+      "fr": "Sources de courant haute performance MAHE avec technologie Upgrade pour MIG/MAG, TIG, MMA et Plasma-TIG.",
+      "it": "Generatori ad alte prestazioni MAHE con tecnologia Upgrade per MIG/MAG, TIG, MMA e Plasma-TIG.",
+      "en": "High-performance MAHE power sources with Upgrade technology for MIG/MAG, TIG, MMA and plasma TIG."
+    }
   },
-  "d": {
-   "fr": "Sources de courant haute performance MAHE avec technologie Upgrade pour MIG/MAG, TIG, MMA et Plasma-TIG.",
-   "it": "Generatori ad alte prestazioni MAHE con tecnologia Upgrade per MIG/MAG, TIG, MMA e Plasma-TIG."
-  }
- },
- "plasmaschneiden": {
-  "t": {
-   "fr": "Découpe plasma",
-   "it": "Taglio al plasma"
+  "plasmaschneiden": {
+    "t": {
+      "fr": "Découpe plasma",
+      "it": "Taglio al plasma",
+      "en": "Plasma cutting"
+    },
+    "d": {
+      "fr": "Découpeurs plasma à onduleur Theta avec technologie HSC, offrant une capacité de coupe de 15 à 80 mm, en version manuelle, en version pour l’automatisation ou intégrés à une table de découpe CNC MPT.",
+      "it": "Inverter Theta per il taglio al plasma con tecnologia HSC e capacità di taglio da 15 a 80 mm, per uso manuale o automatizzato e in combinazione con i tavoli di taglio CNC MPT.",
+      "en": "Theta plasma cutting inverters with HSC technology for cutting capacities from 15 mm to 80 mm. Available for manual use, automation and as part of MPT CNC cutting tables."
+    }
   },
-  "d": {
-   "fr": "Découpeurs plasma à onduleur Theta avec technologie HSC, offrant une capacité de coupe de 15 à 80 mm, en version manuelle, en version pour l’automatisation ou intégrés à une table de découpe CNC MPT.",
-   "it": "Inverter Theta per il taglio al plasma con tecnologia HSC e capacità di taglio da 15 a 80 mm, per uso manuale o automatizzato e in combinazione con i tavoli di taglio CNC MPT."
-  }
- },
- "reinigung": {
-  "t": {
-   "fr": "Appareils de nettoyage",
-   "it": "Apparecchi di pulizia"
+  "reinigung": {
+    "t": {
+      "fr": "Appareils de nettoyage",
+      "it": "Apparecchi di pulizia",
+      "en": "Cleaning equipment"
+    },
+    "d": {
+      "fr": "Nettoyage et polissage électrolytiques des soudures, marquage du métal et dosage automatique.",
+      "it": "Pulizia e lucidatura elettrolitiche delle saldature, marcatura del metallo e dosaggio automatico.",
+      "en": "Electrolytic weld cleaning and polishing, metal marking and automatic dosing."
+    }
   },
-  "d": {
-   "fr": "Nettoyage et polissage électrolytiques des soudures, marquage du métal et dosage automatique.",
-   "it": "Pulizia e lucidatura elettrolitiche delle saldature, marcatura del metallo e dosaggio automatico."
-  }
- },
- "zubehoer": {
-  "t": {
-   "fr": "Accessoires",
-   "it": "Accessori"
+  "zubehoer": {
+    "t": {
+      "fr": "Accessoires",
+      "it": "Accessori",
+      "en": "Accessories"
+    },
+    "d": {
+      "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier, adaptés à chaque série MAHE.",
+      "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina per ogni serie MAHE.",
+      "en": "Trolleys, water cooling, wire feeders, remote controls and workshop equipment matched to each MAHE series."
+    }
   },
-  "d": {
-   "fr": "Chariots, refroidissement, dévidoirs, télécommandes et équipement d’atelier, adaptés à chaque série MAHE.",
-   "it": "Carrelli, raffreddamento, trainafili, telecomandi e attrezzatura d’officina per ogni serie MAHE."
+  "occasion": {
+    "t": {
+      "fr": "Occasion",
+      "it": "Occasioni",
+      "en": "Used equipment"
+    },
+    "d": {
+      "fr": "Machines d’occasion entièrement révisées à Herisau, avec système de refroidissement par eau remplacé et documentation d’origine du fabricant.",
+      "it": "Macchine usate completamente revisionate a Herisau, con il sistema di raffreddamento ad acqua sostituito e corredate della documentazione originale del costruttore.",
+      "en": "Used systems refurbished in Herisau: fully overhauled, with replaced water cooling and original manufacturer documentation."
+    }
   }
- },
- "occasion": {
-  "t": {
-   "fr": "Occasion",
-   "it": "Occasioni"
-  },
-  "d": {
-   "fr": "Machines d’occasion entièrement révisées à Herisau, avec système de refroidissement par eau remplacé et documentation d’origine du fabricant.",
-   "it": "Macchine usate completamente revisionate a Herisau, con il sistema di raffreddamento ad acqua sostituito e corredate della documentazione originale del costruttore."
-  }
- }
 }

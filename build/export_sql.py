@@ -34,7 +34,7 @@ import tempfile
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
 
-SPRACHEN = ("de", "fr", "it")
+SPRACHEN = ("de", "fr", "it", "en")
 
 SCHEMA = """
 CREATE TABLE kategorie (

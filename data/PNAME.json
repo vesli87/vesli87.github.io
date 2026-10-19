@@ -1,79 +1,98 @@
 {
- "_": "Produktnamen, die ein Gattungsbegriff sind, je Sprache. Typenbezeichnungen (MF155, PSHB 65, STT 30) stehen hier NICHT - sie sind in allen Sprachen gleich.",
- "elektrodenkabel": {
-  "fr": "Câble d’électrode 10 mm²",
-  "it": "Cavo portaelettrodo 10 mm²"
- },
- "massekabel": {
-  "fr": "Câble de masse 10 mm²",
-  "it": "Cavo di massa 10 mm²"
- },
- "elektrodenkabel-4m": {
-  "fr": "Câble d’électrode 25–90 mm²",
-  "it": "Cavo portaelettrodo 25–90 mm²"
- },
- "massekabel-4m": {
-  "fr": "Câble de masse 25–90 mm²",
-  "it": "Cavo di massa 25–90 mm²"
- },
- "massekabel-25": {
-  "fr": "Câble de masse 25 mm²",
-  "it": "Cavo di massa 25 mm²"
- },
- "drahtvorschubrollen": {
-  "fr": "Galets d’entraînement",
-  "it": "Rulli trainafilo"
- },
- "zwischenschlauchpaket": {
-  "fr": "Faisceau intermédiaire",
-  "it": "Fascio cavi intermedio"
- },
- "vtbox-s25": {
-  "fr": "Coffret de pièces d’usure S 25",
-  "it": "Set di parti d’usura S 25"
- },
- "vtbox-pshb65": {
-  "fr": "Coffret de pièces d’usure PSHB 65",
-  "it": "Set di parti d’usura PSHB 65"
- },
- "vtbox-pshb125": {
-  "fr": "Coffret de pièces d’usure PSHB 125",
-  "it": "Set di parti d’usura PSHB 125"
- },
- "vtbox-pshb160": {
-  "fr": "Coffret de pièces d’usure PSHB 160",
-  "it": "Set di parti d’usura PSHB 160"
- },
- "usb2in1": {
-  "fr": "Programmateur USB 2in1",
-  "it": "Programmatore USB 2in1"
- },
- "r1": {
-  "fr": "Électrolyte de nettoyage Rapid R1",
-  "it": "Elettrolita di pulizia Rapid R1"
- },
- "rp1": {
-  "fr": "Électrolyte de nettoyage RP1 pâteux",
-  "it": "Elettrolita di pulizia RP1 in pasta"
- },
- "p1": {
-  "fr": "Électrolyte de polissage P1",
-  "it": "Elettrolita di lucidatura P1"
- },
- "n1": {
-  "fr": "Neutralit N1",
-  "it": "Neutralit N1"
- },
- "m1": {
-  "fr": "Électrolyte de marquage M1",
-  "it": "Elettrolita di marcatura M1"
- },
- "minicleaner": {
-  "fr": "MiniCleaner",
-  "it": "MiniCleaner"
- },
- "drahtvorschubrollen-hyper": {
-  "fr": "Galets HyperMIG X",
-  "it": "Rulli HyperMIG X"
- }
+  "_": "Produktnamen, die ein Gattungsbegriff sind, je Sprache. Typenbezeichnungen (MF155, PSHB 65, STT 30) stehen hier NICHT - sie sind in allen Sprachen gleich.",
+  "elektrodenkabel": {
+    "fr": "Câble d’électrode 10 mm²",
+    "it": "Cavo portaelettrodo 10 mm²",
+    "en": "Electrode cable 10 mm²"
+  },
+  "massekabel": {
+    "fr": "Câble de masse 10 mm²",
+    "it": "Cavo di massa 10 mm²",
+    "en": "Work return cable 10 mm²"
+  },
+  "elektrodenkabel-4m": {
+    "fr": "Câble d’électrode 25–90 mm²",
+    "it": "Cavo portaelettrodo 25–90 mm²",
+    "en": "Electrode cable 25–90 mm²"
+  },
+  "massekabel-4m": {
+    "fr": "Câble de masse 25–90 mm²",
+    "it": "Cavo di massa 25–90 mm²",
+    "en": "Work return cable 25–90 mm²"
+  },
+  "massekabel-25": {
+    "fr": "Câble de masse 25 mm²",
+    "it": "Cavo di massa 25 mm²",
+    "en": "Work return cable 25 mm²"
+  },
+  "drahtvorschubrollen": {
+    "fr": "Galets d’entraînement",
+    "it": "Rulli trainafilo",
+    "en": "Wire feed rollers"
+  },
+  "zwischenschlauchpaket": {
+    "fr": "Faisceau intermédiaire",
+    "it": "Fascio cavi intermedio",
+    "en": "Interconnecting cable assembly"
+  },
+  "vtbox-s25": {
+    "fr": "Coffret de pièces d’usure S 25",
+    "it": "Set di parti d’usura S 25",
+    "en": "S 25 consumables kit"
+  },
+  "vtbox-pshb65": {
+    "fr": "Coffret de pièces d’usure PSHB 65",
+    "it": "Set di parti d’usura PSHB 65",
+    "en": "PSHB 65 consumables kit"
+  },
+  "vtbox-pshb125": {
+    "fr": "Coffret de pièces d’usure PSHB 125",
+    "it": "Set di parti d’usura PSHB 125",
+    "en": "PSHB 125 consumables kit"
+  },
+  "vtbox-pshb160": {
+    "fr": "Coffret de pièces d’usure PSHB 160",
+    "it": "Set di parti d’usura PSHB 160",
+    "en": "PSHB 160 consumables kit"
+  },
+  "usb2in1": {
+    "fr": "Programmateur USB 2in1",
+    "it": "Programmatore USB 2in1",
+    "en": "USB 2in1 programmer"
+  },
+  "r1": {
+    "fr": "Électrolyte de nettoyage Rapid R1",
+    "it": "Elettrolita di pulizia Rapid R1",
+    "en": "Rapid R1 cleaning electrolyte"
+  },
+  "rp1": {
+    "fr": "Électrolyte de nettoyage RP1 pâteux",
+    "it": "Elettrolita di pulizia RP1 in pasta",
+    "en": "RP1 paste cleaning electrolyte"
+  },
+  "p1": {
+    "fr": "Électrolyte de polissage P1",
+    "it": "Elettrolita di lucidatura P1",
+    "en": "P1 polishing electrolyte"
+  },
+  "n1": {
+    "fr": "Neutralit N1",
+    "it": "Neutralit N1",
+    "en": "Neutralit N1"
+  },
+  "m1": {
+    "fr": "Électrolyte de marquage M1",
+    "it": "Elettrolita di marcatura M1",
+    "en": "M1 marking electrolyte"
+  },
+  "minicleaner": {
+    "fr": "MiniCleaner",
+    "it": "MiniCleaner",
+    "en": "MiniCleaner"
+  },
+  "drahtvorschubrollen-hyper": {
+    "fr": "Galets HyperMIG X",
+    "it": "Rulli HyperMIG X",
+    "en": "HyperMIG X wire feed rollers"
+  }
 }

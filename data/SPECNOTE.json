@@ -1,38 +1,45 @@
 {
- "_": "Fussnoten unter den MAHE-Tabellen, Schluessel wie in build/mahe_specs.json. Der Stern steht in den Spaltentiteln (z. B. 450*).",
- "hypermig": {
-  "de": "Allgemeine HyperMIG-X-Tabelle der MAHE-Webseite. Für CWK X/HX/SX und EX gelten die getrennten Tabellen aus dem aktuellen CWK-Datenblatt oben. Mit * markierte Stromstufen sind nur als WWK erhältlich.",
-  "fr": "Tableau général HyperMIG X du site MAHE. Pour CWK X/HX/SX et EX, consultez les tableaux séparés de la fiche CWK actuelle ci-dessus. Les courants marqués d’un * sont disponibles uniquement en WWK.",
-  "it": "Tabella generale HyperMIG X del sito MAHE. Per CWK X/HX/SX ed EX valgono le tabelle separate della scheda CWK attuale riportate sopra. Le correnti contrassegnate con * sono disponibili solo in versione WWK."
- },
- "hypertig": {
-  "de": "Nur für Länder ausserhalb der EU verfügbar.",
-  "fr": "Disponible uniquement pour les pays hors UE.",
-  "it": "Disponibile solo per i paesi al di fuori dell’UE."
- },
- "hypercleaner-st-speed": {
-  "de": "Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.1 (gedruckte Seite 15): Polieren max. 2400 W bei 100 % Einschaltdauer; Reinigen max. 1100 W bei 100 % Einschaltdauer. Die 2400 W bezeichnen die maximale Leistung beim Polieren.",
-  "fr": "Puissance selon le mode, d’après le manuel d’utilisation, section 7.1 (page imprimée 15) : polissage, max. 2400 W à un facteur de marche de 100 % ; nettoyage, max. 1100 W à un facteur de marche de 100 %. Les 2400 W correspondent à la puissance maximale en polissage.",
-  "it": "Potenza in base alla modalità, secondo il manuale d’uso, sezione 7.1 (pagina stampata 15): lucidatura, max. 2400 W con ciclo di lavoro del 100 %; pulizia, max. 1100 W con ciclo di lavoro del 100 %. I 2400 W indicano la potenza massima in lucidatura."
- },
- "hypercleaner-st-plus": {
-  "de": "Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.2 (gedruckte Seite 15): Polieren max. 4000 W bei 30 % Einschaltdauer; Reinigen max. 1800 W bei 100 % Einschaltdauer. Die 4000 W sind keine Dauerleistung im Reinigungsbetrieb.",
-  "fr": "Puissance selon le mode, d’après le manuel d’utilisation, section 7.2 (page imprimée 15) : polissage, max. 4000 W à un facteur de marche de 30 % ; nettoyage, max. 1800 W à un facteur de marche de 100 %. Les 4000 W ne correspondent pas à une puissance continue de nettoyage.",
-  "it": "Potenza in base alla modalità, secondo il manuale d’uso, sezione 7.2 (pagina stampata 15): lucidatura, max. 4000 W con ciclo di lavoro del 30 %; pulizia, max. 1800 W con ciclo di lavoro del 100 %. I 4000 W non indicano la potenza continua di pulizia."
- },
- "twin": {
-  "de": "Modelle 300, 350 und 400 gemäss MAHE-Tabelle. Ein Strich bedeutet: In dieser Tabellenzelle veröffentlicht MAHE keinen Wert. Freischaltungen, Draht-/Gasausrüstung und Panel werden für die konkrete Anlage bestätigt. Herstellerabbildung der Anlage: HX-Ausführung; das neue grafische X-Panel ist separat dargestellt.",
-  "fr": "Modèles 300, 350 et 400 selon le tableau MAHE. Un tiret indique que MAHE ne publie aucune valeur dans cette cellule. Activations, équipement fil/gaz et panneau sont confirmés pour le poste choisi. L’illustration du fabricant montre la version HX ; le nouveau panneau graphique X est présenté séparément.",
-  "it": "Modelli 300, 350 e 400 secondo la tabella MAHE. Un trattino indica che MAHE non pubblica un valore nella cella. Abilitazioni, dotazione filo/gas e pannello vengono confermati per la macchina scelta. L’immagine del produttore mostra la versione HX; il nuovo pannello grafico X è presentato separatamente."
- },
- "hypermig-cwk-x-hx-sx": {
-  "de": "CWK-Modelle X, HX und SX gemäss identischen Tabellen auf den PDF-Seiten 2, 4 und 8. Ein Strich bedeutet, dass diese Tabellenzelle keinen Wert nennt. Die Verfahrensausstattung ist getrennt von den elektrischen Daten zu wählen.",
-  "fr": "Modèles CWK X, HX et SX selon les tableaux identiques des pages PDF 2, 4 et 8. Un tiret indique une cellule sans valeur publiée. L’équipement en procédés est à choisir séparément des caractéristiques électriques.",
-  "it": "Modelli CWK X, HX e SX secondo le tabelle identiche delle pagine PDF 2, 4 e 8. Un trattino indica una cella senza valore pubblicato. La dotazione dei procedimenti va scelta separatamente dai dati elettrici."
- },
- "hypermig-cwk-ex": {
-  "de": "EX CWK gemäss PDF-Seite 6. Die Optionssterne für Verfahren stehen im Ausstattungsvergleich. Die Gewichtszeile des Originals nennt keine Einheit und wird hier bis zur Klärung nicht als technische Gewichtsangabe übernommen.",
-  "fr": "EX CWK selon la page PDF 6. Les astérisques d’option des procédés figurent dans le comparatif d’équipement. La ligne de poids de l’original n’indique aucune unité et n’est pas reprise ici comme donnée de poids avant clarification.",
-  "it": "EX CWK secondo la pagina PDF 6. Gli asterischi di opzione dei procedimenti figurano nel confronto della dotazione. La riga del peso nell’originale non indica un’unità e non viene ripresa come dato di peso prima del chiarimento."
- }
+  "_": "Fussnoten unter den MAHE-Tabellen, Schluessel wie in build/mahe_specs.json. Der Stern steht in den Spaltentiteln (z. B. 450*).",
+  "hypermig": {
+    "de": "Allgemeine HyperMIG-X-Tabelle der MAHE-Webseite. Für CWK X/HX/SX und EX gelten die getrennten Tabellen aus dem aktuellen CWK-Datenblatt oben. Mit * markierte Stromstufen sind nur als WWK erhältlich.",
+    "fr": "Tableau général HyperMIG X du site MAHE. Pour CWK X/HX/SX et EX, consultez les tableaux séparés de la fiche CWK actuelle ci-dessus. Les courants marqués d’un * sont disponibles uniquement en WWK.",
+    "it": "Tabella generale HyperMIG X del sito MAHE. Per CWK X/HX/SX ed EX valgono le tabelle separate della scheda CWK attuale riportate sopra. Le correnti contrassegnate con * sono disponibili solo in versione WWK.",
+    "en": "General HyperMIG X table from the MAHE website. For CWK X/HX/SX and EX, use the separate tables from the current CWK data sheet above. Current classes marked * are available only as WWK."
+  },
+  "hypertig": {
+    "de": "Nur für Länder ausserhalb der EU verfügbar.",
+    "fr": "Disponible uniquement pour les pays hors UE.",
+    "it": "Disponibile solo per i paesi al di fuori dell’UE.",
+    "en": "Available only for countries outside the EU."
+  },
+  "hypercleaner-st-speed": {
+    "de": "Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.1 (gedruckte Seite 15): Polieren max. 2400 W bei 100 % Einschaltdauer; Reinigen max. 1100 W bei 100 % Einschaltdauer. Die 2400 W bezeichnen die maximale Leistung beim Polieren.",
+    "fr": "Puissance selon le mode, d’après le manuel d’utilisation, section 7.1 (page imprimée 15) : polissage, max. 2400 W à un facteur de marche de 100 % ; nettoyage, max. 1100 W à un facteur de marche de 100 %. Les 2400 W correspondent à la puissance maximale en polissage.",
+    "it": "Potenza in base alla modalità, secondo il manuale d’uso, sezione 7.1 (pagina stampata 15): lucidatura, max. 2400 W con ciclo di lavoro del 100 %; pulizia, max. 1100 W con ciclo di lavoro del 100 %. I 2400 W indicano la potenza massima in lucidatura.",
+    "en": "Power by operating mode according to the operating instructions, section 7.1 (printed page 15): polishing maximum 2400 W at 100 % duty cycle; cleaning maximum 1100 W at 100 % duty cycle. The 2400 W figure denotes maximum polishing power."
+  },
+  "hypercleaner-st-plus": {
+    "de": "Leistung nach Betriebsart gemäss Betriebsanleitung, Abschnitt 7.2 (gedruckte Seite 15): Polieren max. 4000 W bei 30 % Einschaltdauer; Reinigen max. 1800 W bei 100 % Einschaltdauer. Die 4000 W sind keine Dauerleistung im Reinigungsbetrieb.",
+    "fr": "Puissance selon le mode, d’après le manuel d’utilisation, section 7.2 (page imprimée 15) : polissage, max. 4000 W à un facteur de marche de 30 % ; nettoyage, max. 1800 W à un facteur de marche de 100 %. Les 4000 W ne correspondent pas à une puissance continue de nettoyage.",
+    "it": "Potenza in base alla modalità, secondo il manuale d’uso, sezione 7.2 (pagina stampata 15): lucidatura, max. 4000 W con ciclo di lavoro del 30 %; pulizia, max. 1800 W con ciclo di lavoro del 100 %. I 4000 W non indicano la potenza continua di pulizia.",
+    "en": "Power by operating mode according to the operating instructions, section 7.2 (printed page 15): polishing maximum 4000 W at 30 % duty cycle; cleaning maximum 1800 W at 100 % duty cycle. The 4000 W figure is not continuous cleaning power."
+  },
+  "twin": {
+    "de": "Modelle 300, 350 und 400 gemäss MAHE-Tabelle. Ein Strich bedeutet: In dieser Tabellenzelle veröffentlicht MAHE keinen Wert. Freischaltungen, Draht-/Gasausrüstung und Panel werden für die konkrete Anlage bestätigt. Herstellerabbildung der Anlage: HX-Ausführung; das neue grafische X-Panel ist separat dargestellt.",
+    "fr": "Modèles 300, 350 et 400 selon le tableau MAHE. Un tiret indique que MAHE ne publie aucune valeur dans cette cellule. Activations, équipement fil/gaz et panneau sont confirmés pour le poste choisi. L’illustration du fabricant montre la version HX ; le nouveau panneau graphique X est présenté séparément.",
+    "it": "Modelli 300, 350 e 400 secondo la tabella MAHE. Un trattino indica che MAHE non pubblica un valore nella cella. Abilitazioni, dotazione filo/gas e pannello vengono confermati per la macchina scelta. L’immagine del produttore mostra la versione HX; il nuovo pannello grafico X è presentato separatamente.",
+    "en": "Models 300, 350 and 400 according to the MAHE table. A dash means MAHE does not publish a value in that cell. Activations, wire/gas equipment and panel are confirmed for the specific system. Manufacturer photograph: HX version; the new graphic X panel is shown separately."
+  },
+  "hypermig-cwk-x-hx-sx": {
+    "de": "CWK-Modelle X, HX und SX gemäss identischen Tabellen auf den PDF-Seiten 2, 4 und 8. Ein Strich bedeutet, dass diese Tabellenzelle keinen Wert nennt. Die Verfahrensausstattung ist getrennt von den elektrischen Daten zu wählen.",
+    "fr": "Modèles CWK X, HX et SX selon les tableaux identiques des pages PDF 2, 4 et 8. Un tiret indique une cellule sans valeur publiée. L’équipement en procédés est à choisir séparément des caractéristiques électriques.",
+    "it": "Modelli CWK X, HX e SX secondo le tabelle identiche delle pagine PDF 2, 4 e 8. Un trattino indica una cella senza valore pubblicato. La dotazione dei procedimenti va scelta separatamente dai dati elettrici.",
+    "en": "CWK models X, HX and SX according to the identical tables on PDF pages 2, 4 and 8. A dash means the table cell contains no value. Process equipment must be selected separately from the electrical data."
+  },
+  "hypermig-cwk-ex": {
+    "de": "EX CWK gemäss PDF-Seite 6. Die Optionssterne für Verfahren stehen im Ausstattungsvergleich. Die Gewichtszeile des Originals nennt keine Einheit und wird hier bis zur Klärung nicht als technische Gewichtsangabe übernommen.",
+    "fr": "EX CWK selon la page PDF 6. Les astérisques d’option des procédés figurent dans le comparatif d’équipement. La ligne de poids de l’original n’indique aucune unité et n’est pas reprise ici comme donnée de poids avant clarification.",
+    "it": "EX CWK secondo la pagina PDF 6. Gli asterischi di opzione dei procedimenti figurano nel confronto della dotazione. La riga del peso nell’originale non indica un’unità e non viene ripresa come dato di peso prima del chiarimento.",
+    "en": "EX CWK according to PDF page 6. Process option asterisks appear in the equipment comparison. The original weight row has no unit and is therefore not reproduced here as a technical weight specification pending clarification."
+  }
 }

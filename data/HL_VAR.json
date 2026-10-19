@@ -1,101 +1,129 @@
 {
- "_": "Geraetevarianten mit eigenem Bild und eigener Besonderheitenliste, woertlich von mahe-online.de. Nur fuer Produkte, die mehrere Ausfuehrungen buendeln und bei denen der Hersteller sie einzeln auffuehrt. Schweizer \"ss\" statt \"ß\" ist die einzige Aenderung.",
- "ecomig": [
-  {
-   "n": "EcoMIG 3000 Digital",
-   "img": "2023/03/IMGP5826.png",
-   "de": [
-    "Spritzerfreier Lichtbogen",
-    "Synergiegesteuert",
-    "Digitale Anzeigen",
-    "Intervallschweissen",
-    "4-Rollenantrieb",
-    "Zuleitungskabel mit 3 Metern Länge",
-    "D300-Spule",
-    "Elektrodenschweissen",
-    "WIG Lift Arc"
-   ],
-   "fr": [
-    "Arc sans projections",
-    "Commande synergique",
-    "Affichages numériques",
-    "Soudage par intervalles",
-    "Entraînement à 4 galets",
-    "Câble d’alimentation de 3 mètres",
-    "Bobine D300",
-    "Soudage à l’électrode",
-    "TIG Lift Arc"
-   ],
-   "it": [
-    "Arco senza spruzzi",
-    "Comando sinergico",
-    "Display digitali",
-    "Saldatura a intervalli",
-    "Trainafilo a 4 rulli",
-    "Cavo di alimentazione da 3 metri",
-    "Bobina D300",
-    "Saldatura a elettrodo",
-    "TIG Lift Arc"
-   ]
-  },
-  {
-   "n": "EcoMIG 2000 Digital",
-   "img": "2023/06/IMG_1279-1.png",
-   "de": [
-    "Spritzerfreier Lichtbogen",
-    "Synergiegesteuert",
-    "Digitale Anzeigen",
-    "4-Rollenantrieb",
-    "Zuleitungskabel mit 3 Metern Länge",
-    "D300-Spule"
-   ],
-   "fr": [
-    "Arc sans projections",
-    "Commande synergique",
-    "Affichages numériques",
-    "Entraînement à 4 galets",
-    "Câble d’alimentation de 3 mètres",
-    "Bobine D300"
-   ],
-   "it": [
-    "Arco senza spruzzi",
-    "Comando sinergico",
-    "Display digitali",
-    "Trainafilo a 4 rulli",
-    "Cavo di alimentazione da 3 metri",
-    "Bobina D300"
-   ]
-  },
-  {
-   "n": "EcoMIG 3000 Analog",
-   "img": "2023/03/analog.png",
-   "de": [
-    "Spritzerfreier Lichtbogen",
-    "Intervallschweissen",
-    "4-Rollenantrieb",
-    "Zuleitungskabel mit 3 Metern Länge",
-    "D300-Spule",
-    "Elektrodenschweissen",
-    "WIG Lift Arc"
-   ],
-   "fr": [
-    "Arc sans projections",
-    "Soudage par intervalles",
-    "Entraînement à 4 galets",
-    "Câble d’alimentation de 3 mètres",
-    "Bobine D300",
-    "Soudage à l’électrode",
-    "TIG Lift Arc"
-   ],
-   "it": [
-    "Arco senza spruzzi",
-    "Saldatura a intervalli",
-    "Trainafilo a 4 rulli",
-    "Cavo di alimentazione da 3 metri",
-    "Bobina D300",
-    "Saldatura a elettrodo",
-    "TIG Lift Arc"
-   ]
-  }
- ]
+  "_": "Geraetevarianten mit eigenem Bild und eigener Besonderheitenliste, woertlich von mahe-online.de. Nur fuer Produkte, die mehrere Ausfuehrungen buendeln und bei denen der Hersteller sie einzeln auffuehrt. Schweizer \"ss\" statt \"ß\" ist die einzige Aenderung.",
+  "ecomig": [
+    {
+      "n": "EcoMIG 3000 Digital",
+      "img": "2023/03/IMGP5826.png",
+      "de": [
+        "Spritzerfreier Lichtbogen",
+        "Synergiegesteuert",
+        "Digitale Anzeigen",
+        "Intervallschweissen",
+        "4-Rollenantrieb",
+        "Zuleitungskabel mit 3 Metern Länge",
+        "D300-Spule",
+        "Elektrodenschweissen",
+        "WIG Lift Arc"
+      ],
+      "fr": [
+        "Arc sans projections",
+        "Commande synergique",
+        "Affichages numériques",
+        "Soudage par intervalles",
+        "Entraînement à 4 galets",
+        "Câble d’alimentation de 3 mètres",
+        "Bobine D300",
+        "Soudage à l’électrode",
+        "TIG Lift Arc"
+      ],
+      "it": [
+        "Arco senza spruzzi",
+        "Comando sinergico",
+        "Display digitali",
+        "Saldatura a intervalli",
+        "Trainafilo a 4 rulli",
+        "Cavo di alimentazione da 3 metri",
+        "Bobina D300",
+        "Saldatura a elettrodo",
+        "TIG Lift Arc"
+      ],
+      "en": [
+        "Spatter-free arc",
+        "Synergically controlled",
+        "Digital displays",
+        "Interval welding",
+        "4-roll drive",
+        "3-metre supply cable",
+        "D300 spool",
+        "MMA stick welding",
+        "TIG Lift Arc"
+      ]
+    },
+    {
+      "n": "EcoMIG 2000 Digital",
+      "img": "2023/06/IMG_1279-1.png",
+      "de": [
+        "Spritzerfreier Lichtbogen",
+        "Synergiegesteuert",
+        "Digitale Anzeigen",
+        "4-Rollenantrieb",
+        "Zuleitungskabel mit 3 Metern Länge",
+        "D300-Spule"
+      ],
+      "fr": [
+        "Arc sans projections",
+        "Commande synergique",
+        "Affichages numériques",
+        "Entraînement à 4 galets",
+        "Câble d’alimentation de 3 mètres",
+        "Bobine D300"
+      ],
+      "it": [
+        "Arco senza spruzzi",
+        "Comando sinergico",
+        "Display digitali",
+        "Trainafilo a 4 rulli",
+        "Cavo di alimentazione da 3 metri",
+        "Bobina D300"
+      ],
+      "en": [
+        "Spatter-free arc",
+        "Synergically controlled",
+        "Digital displays",
+        "4-roll drive",
+        "3-metre supply cable",
+        "D300 spool"
+      ]
+    },
+    {
+      "n": "EcoMIG 3000 Analog",
+      "img": "2023/03/analog.png",
+      "de": [
+        "Spritzerfreier Lichtbogen",
+        "Intervallschweissen",
+        "4-Rollenantrieb",
+        "Zuleitungskabel mit 3 Metern Länge",
+        "D300-Spule",
+        "Elektrodenschweissen",
+        "WIG Lift Arc"
+      ],
+      "fr": [
+        "Arc sans projections",
+        "Soudage par intervalles",
+        "Entraînement à 4 galets",
+        "Câble d’alimentation de 3 mètres",
+        "Bobine D300",
+        "Soudage à l’électrode",
+        "TIG Lift Arc"
+      ],
+      "it": [
+        "Arco senza spruzzi",
+        "Saldatura a intervalli",
+        "Trainafilo a 4 rulli",
+        "Cavo di alimentazione da 3 metri",
+        "Bobina D300",
+        "Saldatura a elettrodo",
+        "TIG Lift Arc"
+      ],
+      "en": [
+        "Spatter-free arc",
+        "Interval welding",
+        "4-roll drive",
+        "3-metre supply cable",
+        "D300 spool",
+        "MMA stick welding",
+        "TIG Lift Arc"
+      ]
+    }
+  ]
 }

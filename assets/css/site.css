@@ -1721,6 +1721,21 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-process-card{grid-template-columns:minmax(0,1fr);gap:16px}
   .volt-process-symbol{width:90px;justify-self:start}
 }
+/* Local vector flags retain sharp edges at every pixel density. Language
+   names remain in the links for keyboard and screen-reader navigation. */
+@media screen{
+  .langs a{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:32px;color:var(--muted)}
+  .langs a:hover{background:#FFE2D1;color:var(--ink)}
+  .langs .lang-flag{display:block;flex:none;width:21px;height:14px;object-fit:contain;box-shadow:0 0 0 1px #14212D26;border-radius:1px}
+  .langs [data-lang="en"] .lang-flag{height:11px}
+}
+@media screen and (max-width:900px),screen and (pointer:coarse){
+  .langs a{min-height:44px;min-width:44px}
+}
+@media screen and (max-width:640px){
+  .langs a{flex-direction:column;gap:2px;padding:4px 6px;line-height:1.2;min-width:44px}
+  .util .l{row-gap:0}
+}
 /* Homepage product carousel. Every slide shares one stage, so automatic
    changes never move the headline or the content below the highlight. */
 @media screen{

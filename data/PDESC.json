@@ -1,322 +1,402 @@
 {
- "hypermig-x": {
-  "fr": "Série MIG/MAG avec procédés pulsés et Hyper, dotée du nouveau panneau graphique X ; équipement selon la version.",
-  "it": "Serie MIG/MAG con procedimenti pulsati e Hyper e nuovo pannello grafico X; dotazione secondo la versione."
- },
- "ecomig": {
-  "fr": "Poste MIG/MAG à réglage continu, ultra-compact et simple d’utilisation.",
-  "it": "Saldatrice MIG/MAG a regolazione continua, ultracompatta e semplice."
- },
- "mms": {
-  "fr": "Poste MIG/MAG mobile et léger pour le montage et l’atelier.",
-  "it": "Saldatrice MIG/MAG mobile e leggera per montaggio e officina."
- },
- "omega-ax": {
-  "fr": "Poste TIG AC/DC mobile pour l’aluminium et l’acier.",
-  "it": "Saldatrice TIG AC/DC mobile per alluminio e acciaio."
- },
- "beta-dx": {
-  "fr": "Poste TIG DC mobile pour l’acier et l’acier inoxydable.",
-  "it": "Saldatrice TIG DC mobile per acciaio e acciaio inox."
- },
- "hypertig-ax": {
-  "fr": "Source de courant TIG AC/DC puissante pour un usage industriel.",
-  "it": "Generatore TIG AC/DC potente per l’uso industriale."
- },
- "hypertig-dx": {
-  "fr": "Source de courant TIG DC puissante pour un taux de dépôt élevé.",
-  "it": "Potente generatore TIG DC per un’elevata resa."
- },
- "beta-digital": {
-  "fr": "Poste TIG numérique mobile avec mémoire de programmes.",
-  "it": "Saldatrice TIG digitale mobile con memoria dei programmi."
- },
- "hypertig-acdc": {
-  "fr": "Source de courant AC/DC puissante pour les exigences les plus élevées.",
-  "it": "Potente generatore AC/DC per le applicazioni più esigenti."
- },
- "i-1600": {
-  "fr": "Poste à onduleur pour le soudage à l’électrode, robuste et simple d’utilisation.",
-  "it": "Inverter a elettrodo robusto e semplice da usare."
- },
- "delta": {
-  "fr": "Poste à onduleur multifonction pour le soudage à l’électrode, en atelier et sur chantier.",
-  "it": "Inverter a elettrodo multifunzione per officina e cantiere."
- },
- "delta-digital": {
-  "fr": "Onduleur multifonction numérique pour les professionnels.",
-  "it": "Inverter multifunzione digitale per professionisti."
- },
- "delta-digital-ds": {
-  "fr": "Source de courant multiprocédé conçue pour le soudage sous-marin.",
-  "it": "Generatore multiprocesso per la saldatura subacquea."
- },
- "plasma-tig": {
-  "fr": "Source de courant pour le soudage microplasma et plasma, destinée aux soudures les plus fines.",
-  "it": "Generatore microplasma e plasma per saldature finissime."
- },
- "theta-40": {
-  "fr": "Découpeur plasma léger 230 V pour l’atelier.",
-  "it": "Tagliatrice al plasma leggera da 230 V per l’officina."
- },
- "theta-60": {
-  "fr": "Découpeur plasma puissant avec technologie HSC.",
-  "it": "Potente inverter per il taglio al plasma con tecnologia HSC."
- },
- "theta-120": {
-  "fr": "Découpeur plasma industriel avec technologie HSC.",
-  "it": "Inverter industriale per il taglio al plasma con tecnologia HSC."
- },
- "theta-180": {
-  "fr": "Le découpeur plasma Theta le plus puissant, avec technologie HSC.",
-  "it": "L’inverter per il taglio al plasma Theta più potente, con tecnologia HSC."
- },
- "minicleaner": {
-  "fr": "Onduleur économique, spécialement conçu pour la mobilité.",
-  "it": "Inverter economico, ideato per l’uso mobile."
- },
- "hypercleaner-st": {
-  "fr": "Onduleur puissant de 1200 W pour d’excellents résultats de nettoyage.",
-  "it": "Potente inverter da 1200 W per risultati di pulizia eccellenti."
- },
- "hypercleaner-speed": {
-  "fr": "Onduleur puissant offrant jusqu’à 2400 W en polissage (facteur de marche de 100 %).",
-  "it": "Potente inverter fino a 2400 W in lucidatura (ciclo di lavoro del 100 %)."
- },
- "hypercleaner-plus": {
-  "fr": "Onduleur puissant offrant jusqu’à 4000 W en polissage (facteur de marche de 30 %).",
-  "it": "Potente inverter fino a 4000 W in lucidatura (ciclo di lavoro del 30 %)."
- },
- "hypercleaner-ct200": {
-  "fr": "Appareil combiné de soudage TIG et de nettoyage.",
-  "it": "Apparecchio combinato per la saldatura TIG e la pulizia."
- },
- "stt30": {
-  "fr": "Chariot avec support de bouteille pour appareils TIG et MIG.",
-  "it": "Carrello con supporto bombola per apparecchi TIG e MIG."
- },
- "stt35": {
-  "fr": "Chariot sans support de bouteille pour MMA et plasma.",
-  "it": "Carrello senza supporto bombola per MMA e plasma."
- },
- "mpf02": {
-  "fr": "Chariot avec support de bouteille pour tous les appareils portables.",
-  "it": "Carrello con supporto bombola per tutti gli apparecchi portatili."
- },
- "mhct01": {
-  "fr": "Chariot spécialement conçu pour les appareils de nettoyage.",
-  "it": "Carrello specifico per apparecchi di pulizia."
- },
- "wk200": {
-  "fr": "Refroidisseur universel avec prise 230 V et arrêt en cas de manque d’eau.",
-  "it": "Refrigeratore universale con presa da 230 V e spegnimento in caso di mancanza d’acqua."
- },
- "wk300": {
-  "fr": "Refroidisseur à eau pour la série MMS 3000.",
-  "it": "Refrigeratore ad acqua per la serie MMS 3000."
- },
- "wk350": {
-  "fr": "Refroidisseur à eau pour Beta digital et la ligne Omega 400 V.",
-  "it": "Refrigeratore ad acqua per Beta digital e la linea Omega 400 V."
- },
- "dvs410": {
-  "fr": "Dévidoir léger pour la série HyperMIG X.",
-  "it": "Trainafilo leggero per la serie HyperMIG X."
- },
- "dvl420": {
-  "fr": "Dévidoir horizontal entièrement métallique pour la série HyperMIG X.",
-  "it": "Trainafilo orizzontale interamente in metallo per la serie HyperMIG X."
- },
- "frc5": {
-  "fr": "Commande à pédale pour tous les appareils TIG MAHE.",
-  "it": "Comando a pedale per tutti gli apparecchi TIG MAHE."
- },
- "rc5": {
-  "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
-  "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
- },
- "rc15": {
-  "fr": "Télécommande manuelle avec touches Up/Down et Start/Stop.",
-  "it": "Telecomando manuale con tasti Up/Down e Start/Stop."
- },
- "rc100": {
-  "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
-  "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE."
- },
- "rc100ds": {
-  "fr": "Télécommande manuelle spéciale pour les machines Delta Digital DS.",
-  "it": "Telecomando manuale specifico per le macchine Delta Digital DS."
- },
- "theta-60-aut": {
-  "fr": "Découpeur plasma pour l’automatisation, avec technologie HSC, conçu pour être intégré à une machine.",
-  "it": "Inverter per il taglio al plasma con tecnologia HSC, progettato per l’integrazione in impianti automatizzati."
- },
- "theta-120-aut": {
-  "fr": "Découpeur plasma pour l’automatisation, avec technologie HSC, conçu pour être intégré à une machine.",
-  "it": "Inverter per il taglio al plasma con tecnologia HSC, progettato per l’integrazione in impianti automatizzati."
- },
- "hcs1": {
-  "fr": "Appareil de marquage électrolytique économique, conçu pour une utilisation mobile.",
-  "it": "Marcatore elettrolitico economico, per l’uso mobile."
- },
- "mlf100": {
-  "fr": "Appareil de dosage automatique du liquide de nettoyage.",
-  "it": "Apparecchio per il dosaggio automatico del liquido di pulizia."
- },
- "mcu1": {
-  "fr": "Calibrateur MAHE pour l’étalonnage et la validation, avec de grands afficheurs de tension et de courant.",
-  "it": "Calibratore MAHE per calibrazione e validazione, con ampi display Volt/Ampere."
- },
- "usb2in1": {
-  "fr": "Programmateur pour microcontrôleurs et interfaces MAHE, logiciel USB inclus.",
-  "it": "Programmatore per microcontrollori e interfacce MAHE, software USB incluso."
- },
- "r1": {
-  "fr": "Électrolyte de nettoyage rapide pour les soudures sur inox.",
-  "it": "Elettrolita di pulizia rapida per saldature inox."
- },
- "rp1": {
-  "fr": "Électrolyte de nettoyage pâteux pour les surfaces verticales.",
-  "it": "Elettrolita di pulizia pastoso per superfici verticali."
- },
- "p1": {
-  "fr": "Électrolyte d’électropolissage et de décapage de l’inox.",
-  "it": "Elettrolita per l’elettrolucidatura e il decapaggio dell’acciaio inox."
- },
- "n1": {
-  "fr": "Neutralisant pour arrêter la réaction et neutraliser la surface après le nettoyage.",
-  "it": "Neutralizzante per arrestare e neutralizzare l’azione dell’elettrolita dopo la pulizia."
- },
- "m1": {
-  "fr": "Électrolyte pour le marquage électrochimique du métal.",
-  "it": "Elettrolita per la marcatura elettrochimica del metallo."
- },
- "elektrodenkabel": {
-  "fr": "Câble d'électrode pour les appareils de nettoyage HyperCleaner.",
-  "it": "Cavo portaelettrodo per gli apparecchi di pulizia HyperCleaner."
- },
- "massekabel": {
-  "fr": "Câble de masse pour les appareils de nettoyage HyperCleaner.",
-  "it": "Cavo di massa per gli apparecchi di pulizia HyperCleaner."
- },
- "mf155": {
-  "fr": "Torche MIG/MAG refroidie au gaz pour EcoMIG et MMS, en 3 ou 4 m de longueur.",
-  "it": "Torcia MIG/MAG raffreddata a gas per EcoMIG e MMS, nelle lunghezze di 3 o 4 m."
- },
- "mf250": {
-  "fr": "Torche MIG/MAG refroidie au gaz de 4 m pour EcoMIG et MMS, avec commande Up/Down au choix.",
-  "it": "Torcia MIG/MAG raffreddata a gas da 4 m per EcoMIG e MMS, a scelta con Up/Down."
- },
- "mt170": {
-  "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX et HyperCleaner CT 200.",
-  "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX e HyperCleaner CT 200."
- },
- "mt170v": {
-  "fr": "Torche TIG refroidie au gaz pour Delta, Delta Digital, Delta Digital DS et i-1600, avec vanne de gaz sur la torche.",
-  "it": "Torcia TIG raffreddata a gas per Delta, Delta Digital, Delta Digital DS e i-1600, con valvola del gas sulla torcia."
- },
- "mt180w": {
-  "fr": "Torche TIG refroidie à l’eau en 4 ou 8 m pour Beta digital, HyperCleaner CT 200 et la série HyperTIG.",
-  "it": "Torcia TIG raffreddata ad acqua da 4 o 8 m per Beta digital, HyperCleaner CT 200 e la serie HyperTIG."
- },
- "mt200w": {
-  "fr": "Torche TIG refroidie à l’eau pour Beta digital, HyperCleaner CT 200 et la série HyperTIG, au choix avec potentiomètre.",
-  "it": "Torcia TIG raffreddata ad acqua per Beta digital, HyperCleaner CT 200 e la serie HyperTIG, a scelta con potenziometro."
- },
- "mt260": {
-  "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX, Omega AX et HyperCleaner CT 200.",
-  "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX, Omega AX e HyperCleaner CT 200."
- },
- "mt260v": {
-  "fr": "Torche TIG refroidie au gaz avec vanne de gaz sur la torche, en 4 ou 8 m, pour Delta, Delta Digital, Delta Digital DS et i-1600.",
-  "it": "Torcia TIG raffreddata a gas con valvola del gas sulla torcia, da 4 o 8 m, per Delta, Delta Digital, Delta Digital DS e i-1600."
- },
- "pshb65": {
-  "fr": "Torche de coupe plasma pour la Theta 60 HSC, disponible en 6 et 12 mètres.",
-  "it": "Torcia da taglio al plasma per la Theta 60 HSC, disponibile nelle lunghezze di 6 e 12 metri."
- },
- "pshb125": {
-  "fr": "Torche de coupe plasma pour la Theta 120 HSC, avec une capacité de coupe allant jusqu’à 55 mm, disponible en 6 et 12 mètres.",
-  "it": "Torcia da taglio al plasma per la Theta 120 HSC, con capacità di taglio fino a 55 mm, disponibile nelle lunghezze di 6 e 12 metri."
- },
- "pshb160": {
-  "fr": "Torche de coupe plasma pour la Theta 180 HSC, avec une capacité de coupe allant jusqu’à 80 mm, disponible en 6 et 12 mètres.",
-  "it": "Torcia da taglio al plasma per la Theta 180 HSC, con capacità di taglio fino a 80 mm, disponibile nelle lunghezze di 6 e 12 metri."
- },
- "psab65": {
-  "fr": "Torche de coupe plasma pour le découpeur plasma pour l’automatisation Theta 60 AUT, disponible en 6 et 12 mètres.",
-  "it": "Torcia da taglio al plasma per l’inverter per il taglio al plasma automatizzato Theta 60 AUT, disponibile nelle lunghezze di 6 e 12 metri."
- },
- "psab125": {
-  "fr": "Torche de coupe plasma pour le découpeur plasma pour l’automatisation Theta 120 AUT, disponible en 6 et 12 mètres.",
-  "it": "Torcia da taglio al plasma per l’inverter per il taglio al plasma automatizzato Theta 120 AUT, disponibile nelle lunghezze di 6 e 12 metri."
- },
- "vtbox-s25": {
-  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma S 25 montée à demeure dans la Theta 40.",
-  "it": "Set di parti d’usura per la torcia da taglio al plasma S 25 montata fissa nella Theta 40."
- },
- "vtbox-pshb65": {
-  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 65, contenu identique aux coffrets PSHB 125 et PSHB 160.",
-  "it": "Set di parti d’usura per la torcia da taglio al plasma PSHB 65, dotazione identica ai box PSHB 125 e PSHB 160."
- },
- "vtbox-pshb125": {
-  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 125, contenu identique aux coffrets PSHB 65 et PSHB 160.",
-  "it": "Set di parti d’usura per la torcia da taglio al plasma PSHB 125, dotazione identica ai box PSHB 65 e PSHB 160."
- },
- "vtbox-pshb160": {
-  "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 160, contenu identique aux coffrets PSHB 65 et PSHB 125.",
-  "it": "Set di parti d’usura per la torcia da taglio al plasma PSHB 160, dotazione identica ai box PSHB 65 e PSHB 125."
- },
- "drahtvorschubrollen": {
-  "fr": "Galets d'entraînement pour EcoMIG et MMS, en versions acier, moletée et aluminium.",
-  "it": "Rulli trainafilo per EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio."
- },
- "zwischenschlauchpaket": {
-  "fr": "Faisceau intermédiaire reliant la source de courant de la série HyperMIG X au dévidoir.",
-  "it": "Fascio intermedio che collega il generatore della serie HyperMIG X al trainafilo."
- },
- "elektrodenkabel-4m": {
-  "fr": "Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
-  "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
- },
- "massekabel-4m": {
-  "fr": "Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
-  "it": "Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta."
- },
- "massekabel-25": {
-  "fr": "Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180.",
-  "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180."
- },
- "mf405w": {
-  "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
-  "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X."
- },
- "mf240w": {
-  "fr": "Torche MIG/MAG refroidie à l’eau pour les classes de puissance inférieures.",
-  "it": "Torcia MIG/MAG raffreddata ad acqua per le classi di potenza inferiori."
- },
- "drahtvorschubrollen-hyper": {
-  "fr": "Galets d'entraînement pour la série HyperMIG X, en versions acier, moletée et aluminium.",
-  "it": "Rulli trainafilo per la serie HyperMIG X, nelle versioni acciaio, zigrinata e alluminio."
- },
- "mpt-3001": {
-  "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en ensemble avec une source de courant MAHE Theta.",
-  "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta."
- },
- "mpt-2501": {
-  "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en ensemble avec une source de courant MAHE Theta.",
-  "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta."
- },
- "plasmafix-51": {
-  "fr": "SAF-FRO PlasmaFix 51 et Oerlikon PlasmaFix P+T : installations microplasma révisées. Choix selon la position sur la photo ; prix et disponibilité sur demande.",
-  "it": "SAF-FRO PlasmaFix 51 e Oerlikon PlasmaFix P+T: impianti microplasma revisionati. Scelta in base alla posizione nella foto; prezzo e disponibilità su richiesta."
- },
- "plasmafix-50s": {
-  "fr": "Source de courant microplasma à partir de 0,05 A pour les travaux les plus fins : feuilles de 0,01 mm, grillages et petite robinetterie.",
-  "it": "Generatore microplasma da 0,05 A per i lavori più fini: lamierini da 0,01 mm, reti metalliche e piccola rubinetteria."
- },
- "hypermig-twin": {
-  "fr": "Poste MIG/MAG refroidi par eau avec deux dévidoirs pour différents fils ; au choix, panneau graphique X ou panneau HX.",
-  "it": "Saldatrice MIG/MAG raffreddata ad acqua con due trainafilo per fili diversi; a scelta pannello grafico X o pannello HX."
- }
+  "hypermig-x": {
+    "fr": "Série MIG/MAG avec procédés pulsés et Hyper, dotée du nouveau panneau graphique X ; équipement selon la version.",
+    "it": "Serie MIG/MAG con procedimenti pulsati e Hyper e nuovo pannello grafico X; dotazione secondo la versione.",
+    "en": "MIG/MAG range with pulse and Hyper processes and the new graphic X control panel; equipment depends on the version."
+  },
+  "ecomig": {
+    "fr": "Poste MIG/MAG à réglage continu, ultra-compact et simple d’utilisation.",
+    "it": "Saldatrice MIG/MAG a regolazione continua, ultracompatta e semplice.",
+    "en": "Ultra-compact MIG/MAG welding inverters with stepless adjustment and straightforward controls."
+  },
+  "mms": {
+    "fr": "Poste MIG/MAG mobile et léger pour le montage et l’atelier.",
+    "it": "Saldatrice MIG/MAG mobile e leggera per montaggio e officina.",
+    "en": "Lightweight, mobile MIG/MAG welding machine for site work and the workshop."
+  },
+  "omega-ax": {
+    "fr": "Poste TIG AC/DC mobile pour l’aluminium et l’acier.",
+    "it": "Saldatrice TIG AC/DC mobile per alluminio e acciaio.",
+    "en": "Mobile AC/DC TIG welding machine for aluminium and steel."
+  },
+  "beta-dx": {
+    "fr": "Poste TIG DC mobile pour l’acier et l’acier inoxydable.",
+    "it": "Saldatrice TIG DC mobile per acciaio e acciaio inox.",
+    "en": "Mobile DC TIG welding machine for steel and stainless steel."
+  },
+  "hypertig-ax": {
+    "fr": "Source de courant TIG AC/DC puissante pour un usage industriel.",
+    "it": "Generatore TIG AC/DC potente per l’uso industriale.",
+    "en": "High-performance AC/DC TIG power source for industrial use."
+  },
+  "hypertig-dx": {
+    "fr": "Source de courant TIG DC puissante pour un taux de dépôt élevé.",
+    "it": "Potente generatore TIG DC per un’elevata resa.",
+    "en": "High-performance DC TIG power source for high deposition rates."
+  },
+  "beta-digital": {
+    "fr": "Poste TIG numérique mobile avec mémoire de programmes.",
+    "it": "Saldatrice TIG digitale mobile con memoria dei programmi.",
+    "en": "Mobile digital TIG welding machine with program memory."
+  },
+  "hypertig-acdc": {
+    "fr": "Source de courant AC/DC puissante pour les exigences les plus élevées.",
+    "it": "Potente generatore AC/DC per le applicazioni più esigenti.",
+    "en": "High-performance AC/DC power source for demanding applications."
+  },
+  "i-1600": {
+    "fr": "Poste à onduleur pour le soudage à l’électrode, robuste et simple d’utilisation.",
+    "it": "Inverter a elettrodo robusto e semplice da usare.",
+    "en": "Robust stick welding inverter with straightforward controls."
+  },
+  "delta": {
+    "fr": "Poste à onduleur multifonction pour le soudage à l’électrode, en atelier et sur chantier.",
+    "it": "Inverter a elettrodo multifunzione per officina e cantiere.",
+    "en": "Multifunction stick welding inverter for workshop and construction site use."
+  },
+  "delta-digital": {
+    "fr": "Onduleur multifonction numérique pour les professionnels.",
+    "it": "Inverter multifunzione digitale per professionisti.",
+    "en": "Digital multifunction inverter for professional use."
+  },
+  "delta-digital-ds": {
+    "fr": "Source de courant multiprocédé conçue pour le soudage sous-marin.",
+    "it": "Generatore multiprocesso per la saldatura subacquea.",
+    "en": "Multiprocess power source developed for underwater welding."
+  },
+  "plasma-tig": {
+    "fr": "Source de courant pour le soudage microplasma et plasma, destinée aux soudures les plus fines.",
+    "it": "Generatore microplasma e plasma per saldature finissime.",
+    "en": "Microplasma and plasma power source for precision welding."
+  },
+  "theta-40": {
+    "fr": "Découpeur plasma léger 230 V pour l’atelier.",
+    "it": "Tagliatrice al plasma leggera da 230 V per l’officina.",
+    "en": "Lightweight 230 V plasma cutter for the workshop."
+  },
+  "theta-60": {
+    "fr": "Découpeur plasma puissant avec technologie HSC.",
+    "it": "Potente inverter per il taglio al plasma con tecnologia HSC.",
+    "en": "High-performance plasma cutting inverter with HSC technology."
+  },
+  "theta-120": {
+    "fr": "Découpeur plasma industriel avec technologie HSC.",
+    "it": "Inverter industriale per il taglio al plasma con tecnologia HSC.",
+    "en": "Industrial plasma cutting inverter with HSC technology."
+  },
+  "theta-180": {
+    "fr": "Le découpeur plasma Theta le plus puissant, avec technologie HSC.",
+    "it": "L’inverter per il taglio al plasma Theta più potente, con tecnologia HSC.",
+    "en": "The most powerful Theta plasma cutting inverter with HSC technology."
+  },
+  "minicleaner": {
+    "fr": "Onduleur économique, spécialement conçu pour la mobilité.",
+    "it": "Inverter economico, ideato per l’uso mobile.",
+    "en": "Cost-effective inverter designed specifically for mobile use."
+  },
+  "hypercleaner-st": {
+    "fr": "Onduleur puissant de 1200 W pour d’excellents résultats de nettoyage.",
+    "it": "Potente inverter da 1200 W per risultati di pulizia eccellenti.",
+    "en": "Powerful 1200 W inverter for excellent cleaning results."
+  },
+  "hypercleaner-speed": {
+    "fr": "Onduleur puissant offrant jusqu’à 2400 W en polissage (facteur de marche de 100 %).",
+    "it": "Potente inverter fino a 2400 W in lucidatura (ciclo di lavoro del 100 %).",
+    "en": "Powerful inverter delivering up to 2400 W when polishing (100 % duty cycle)."
+  },
+  "hypercleaner-plus": {
+    "fr": "Onduleur puissant offrant jusqu’à 4000 W en polissage (facteur de marche de 30 %).",
+    "it": "Potente inverter fino a 4000 W in lucidatura (ciclo di lavoro del 30 %).",
+    "en": "Powerful inverter delivering up to 4000 W when polishing (30 % duty cycle)."
+  },
+  "hypercleaner-ct200": {
+    "fr": "Appareil combiné de soudage TIG et de nettoyage.",
+    "it": "Apparecchio combinato per la saldatura TIG e la pulizia.",
+    "en": "Combined TIG welding and cleaning system."
+  },
+  "stt30": {
+    "fr": "Chariot avec support de bouteille pour appareils TIG et MIG.",
+    "it": "Carrello con supporto bombola per apparecchi TIG e MIG.",
+    "en": "Trolley with gas cylinder holder for TIG and MIG equipment."
+  },
+  "stt35": {
+    "fr": "Chariot sans support de bouteille pour MMA et plasma.",
+    "it": "Carrello senza supporto bombola per MMA e plasma.",
+    "en": "Trolley without gas cylinder holder for MMA and plasma equipment."
+  },
+  "mpf02": {
+    "fr": "Chariot avec support de bouteille pour tous les appareils portables.",
+    "it": "Carrello con supporto bombola per tutti gli apparecchi portatili.",
+    "en": "Trolley with gas cylinder holder for all portable equipment."
+  },
+  "mhct01": {
+    "fr": "Chariot spécialement conçu pour les appareils de nettoyage.",
+    "it": "Carrello specifico per apparecchi di pulizia.",
+    "en": "Trolley designed specifically for cleaning systems."
+  },
+  "wk200": {
+    "fr": "Refroidisseur universel avec prise 230 V et arrêt en cas de manque d’eau.",
+    "it": "Refrigeratore universale con presa da 230 V e spegnimento in caso di mancanza d’acqua.",
+    "en": "Universal cooling unit with a 230 V Schuko socket and low-water shutdown."
+  },
+  "wk300": {
+    "fr": "Refroidisseur à eau pour la série MMS 3000.",
+    "it": "Refrigeratore ad acqua per la serie MMS 3000.",
+    "en": "Water cooling unit for the MMS 3000 series."
+  },
+  "wk350": {
+    "fr": "Refroidisseur à eau pour Beta digital et la ligne Omega 400 V.",
+    "it": "Refrigeratore ad acqua per Beta digital e la linea Omega 400 V.",
+    "en": "Water cooling unit for Beta digital and the 400 V Omega range."
+  },
+  "dvs410": {
+    "fr": "Dévidoir léger pour la série HyperMIG X.",
+    "it": "Trainafilo leggero per la serie HyperMIG X.",
+    "en": "Lightweight wire feeder for the HyperMIG X series."
+  },
+  "dvl420": {
+    "fr": "Dévidoir horizontal entièrement métallique pour la série HyperMIG X.",
+    "it": "Trainafilo orizzontale interamente in metallo per la serie HyperMIG X.",
+    "en": "All-metal horizontal wire feeder for the HyperMIG X series."
+  },
+  "frc5": {
+    "fr": "Commande à pédale pour tous les appareils TIG MAHE.",
+    "it": "Comando a pedale per tutti gli apparecchi TIG MAHE.",
+    "en": "Foot remote control for all MAHE TIG equipment."
+  },
+  "rc5": {
+    "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
+    "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE.",
+    "en": "Hand remote control for all MAHE TIG and MMA equipment."
+  },
+  "rc15": {
+    "fr": "Télécommande manuelle avec touches Up/Down et Start/Stop.",
+    "it": "Telecomando manuale con tasti Up/Down e Start/Stop.",
+    "en": "Hand remote control with Up/Down and Start/Stop buttons."
+  },
+  "rc100": {
+    "fr": "Télécommande manuelle pour tous les appareils TIG et MMA MAHE.",
+    "it": "Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE.",
+    "en": "Hand remote control for all MAHE TIG and MMA equipment."
+  },
+  "rc100ds": {
+    "fr": "Télécommande manuelle spéciale pour les machines Delta Digital DS.",
+    "it": "Telecomando manuale specifico per le macchine Delta Digital DS.",
+    "en": "Hand remote control designed specifically for Delta Digital DS machines."
+  },
+  "theta-60-aut": {
+    "fr": "Découpeur plasma pour l’automatisation, avec technologie HSC, conçu pour être intégré à une machine.",
+    "it": "Inverter per il taglio al plasma con tecnologia HSC, progettato per l’integrazione in impianti automatizzati.",
+    "en": "Plasma cutting inverter with HSC technology for integration into automated machinery."
+  },
+  "theta-120-aut": {
+    "fr": "Découpeur plasma pour l’automatisation, avec technologie HSC, conçu pour être intégré à une machine.",
+    "it": "Inverter per il taglio al plasma con tecnologia HSC, progettato per l’integrazione in impianti automatizzati.",
+    "en": "Plasma cutting inverter with HSC technology for integration into automated machinery."
+  },
+  "hcs1": {
+    "fr": "Appareil de marquage électrolytique économique, conçu pour une utilisation mobile.",
+    "it": "Marcatore elettrolitico economico, per l’uso mobile.",
+    "en": "Cost-effective electrolytic marking system designed specifically for mobile use."
+  },
+  "mlf100": {
+    "fr": "Appareil de dosage automatique du liquide de nettoyage.",
+    "it": "Apparecchio per il dosaggio automatico del liquido di pulizia.",
+    "en": "Automatic cleaning fluid dosing unit."
+  },
+  "mcu1": {
+    "fr": "Calibrateur MAHE pour l’étalonnage et la validation, avec de grands afficheurs de tension et de courant.",
+    "it": "Calibratore MAHE per calibrazione e validazione, con ampi display Volt/Ampere.",
+    "en": "Lightweight MAHE calibration unit for calibration and validation, with large voltage and current displays."
+  },
+  "usb2in1": {
+    "fr": "Programmateur pour microcontrôleurs et interfaces MAHE, logiciel USB inclus.",
+    "it": "Programmatore per microcontrollori e interfacce MAHE, software USB incluso.",
+    "en": "Programmer for microcontrollers and MAHE interfaces, including USB software."
+  },
+  "r1": {
+    "fr": "Électrolyte de nettoyage rapide pour les soudures sur inox.",
+    "it": "Elettrolita di pulizia rapida per saldature inox.",
+    "en": "Fast-acting cleaning electrolyte for stainless steel welds."
+  },
+  "rp1": {
+    "fr": "Électrolyte de nettoyage pâteux pour les surfaces verticales.",
+    "it": "Elettrolita di pulizia pastoso per superfici verticali.",
+    "en": "Paste cleaning electrolyte for vertical surfaces and overhead work."
+  },
+  "p1": {
+    "fr": "Électrolyte d’électropolissage et de décapage de l’inox.",
+    "it": "Elettrolita per l’elettrolucidatura e il decapaggio dell’acciaio inox.",
+    "en": "Electrolyte for electropolishing and pickling stainless steel."
+  },
+  "n1": {
+    "fr": "Neutralisant pour arrêter la réaction et neutraliser la surface après le nettoyage.",
+    "it": "Neutralizzante per arrestare e neutralizzare l’azione dell’elettrolita dopo la pulizia.",
+    "en": "Neutraliser for stopping and neutralising the process after cleaning."
+  },
+  "m1": {
+    "fr": "Électrolyte pour le marquage électrochimique du métal.",
+    "it": "Elettrolita per la marcatura elettrochimica del metallo.",
+    "en": "Electrolyte for electrochemical marking of metal."
+  },
+  "elektrodenkabel": {
+    "fr": "Câble d'électrode pour les appareils de nettoyage HyperCleaner.",
+    "it": "Cavo portaelettrodo per gli apparecchi di pulizia HyperCleaner.",
+    "en": "Electrode cable for HyperCleaner cleaning systems."
+  },
+  "massekabel": {
+    "fr": "Câble de masse pour les appareils de nettoyage HyperCleaner.",
+    "it": "Cavo di massa per gli apparecchi di pulizia HyperCleaner.",
+    "en": "Work return cable for HyperCleaner cleaning systems."
+  },
+  "mf155": {
+    "fr": "Torche MIG/MAG refroidie au gaz pour EcoMIG et MMS, en 3 ou 4 m de longueur.",
+    "it": "Torcia MIG/MAG raffreddata a gas per EcoMIG e MMS, nelle lunghezze di 3 o 4 m.",
+    "en": "Gas-cooled MIG/MAG torch for EcoMIG and MMS, available in 3 or 4 m lengths."
+  },
+  "mf250": {
+    "fr": "Torche MIG/MAG refroidie au gaz de 4 m pour EcoMIG et MMS, avec commande Up/Down au choix.",
+    "it": "Torcia MIG/MAG raffreddata a gas da 4 m per EcoMIG e MMS, a scelta con Up/Down.",
+    "en": "Gas-cooled MIG/MAG torch for EcoMIG and MMS, 4 m long, optionally with Up/Down control."
+  },
+  "mt170": {
+    "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX et HyperCleaner CT 200.",
+    "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX e HyperCleaner CT 200.",
+    "en": "Gas-cooled TIG torch for Beta digital, Beta DX and HyperCleaner CT 200."
+  },
+  "mt170v": {
+    "fr": "Torche TIG refroidie au gaz pour Delta, Delta Digital, Delta Digital DS et i-1600, avec vanne de gaz sur la torche.",
+    "it": "Torcia TIG raffreddata a gas per Delta, Delta Digital, Delta Digital DS e i-1600, con valvola del gas sulla torcia.",
+    "en": "Gas-cooled TIG torch for Delta, Delta Digital, Delta Digital DS and i-1600, with a gas valve on the torch."
+  },
+  "mt180w": {
+    "fr": "Torche TIG refroidie à l’eau en 4 ou 8 m pour Beta digital, HyperCleaner CT 200 et la série HyperTIG.",
+    "it": "Torcia TIG raffreddata ad acqua da 4 o 8 m per Beta digital, HyperCleaner CT 200 e la serie HyperTIG.",
+    "en": "Water-cooled TIG torch in 4 or 8 m lengths for Beta digital, HyperCleaner CT 200 and the HyperTIG series."
+  },
+  "mt200w": {
+    "fr": "Torche TIG refroidie à l’eau pour Beta digital, HyperCleaner CT 200 et la série HyperTIG, au choix avec potentiomètre.",
+    "it": "Torcia TIG raffreddata ad acqua per Beta digital, HyperCleaner CT 200 e la serie HyperTIG, a scelta con potenziometro.",
+    "en": "Water-cooled TIG torch for Beta digital, HyperCleaner CT 200 and the HyperTIG series, optionally with a potentiometer."
+  },
+  "mt260": {
+    "fr": "Torche TIG refroidie au gaz pour Beta digital, Beta DX, Omega AX et HyperCleaner CT 200.",
+    "it": "Torcia TIG raffreddata a gas per Beta digital, Beta DX, Omega AX e HyperCleaner CT 200.",
+    "en": "Gas-cooled TIG torch for Beta digital, Beta DX, Omega AX and HyperCleaner CT 200."
+  },
+  "mt260v": {
+    "fr": "Torche TIG refroidie au gaz avec vanne de gaz sur la torche, en 4 ou 8 m, pour Delta, Delta Digital, Delta Digital DS et i-1600.",
+    "it": "Torcia TIG raffreddata a gas con valvola del gas sulla torcia, da 4 o 8 m, per Delta, Delta Digital, Delta Digital DS e i-1600.",
+    "en": "Gas-cooled TIG torch with a gas valve on the torch, available in 4 or 8 m lengths for Delta, Delta Digital, Delta Digital DS and i-1600."
+  },
+  "pshb65": {
+    "fr": "Torche de coupe plasma pour la Theta 60 HSC, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per la Theta 60 HSC, disponibile nelle lunghezze di 6 e 12 metri.",
+    "en": "Plasma cutting torch for Theta 60 HSC, available in 6 and 12 m lengths."
+  },
+  "pshb125": {
+    "fr": "Torche de coupe plasma pour la Theta 120 HSC, avec une capacité de coupe allant jusqu’à 55 mm, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per la Theta 120 HSC, con capacità di taglio fino a 55 mm, disponibile nelle lunghezze di 6 e 12 metri.",
+    "en": "Plasma cutting torch for Theta 120 HSC with a cutting capacity of up to 55 mm, available in 6 and 12 m lengths."
+  },
+  "pshb160": {
+    "fr": "Torche de coupe plasma pour la Theta 180 HSC, avec une capacité de coupe allant jusqu’à 80 mm, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per la Theta 180 HSC, con capacità di taglio fino a 80 mm, disponibile nelle lunghezze di 6 e 12 metri.",
+    "en": "Plasma cutting torch for Theta 180 HSC with a cutting capacity of up to 80 mm, available in 6 and 12 m lengths."
+  },
+  "psab65": {
+    "fr": "Torche de coupe plasma pour le découpeur plasma pour l’automatisation Theta 60 AUT, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per l’inverter per il taglio al plasma automatizzato Theta 60 AUT, disponibile nelle lunghezze di 6 e 12 metri.",
+    "en": "Plasma cutting torch for the Theta 60 AUT automation inverter, available in 6 and 12 m lengths."
+  },
+  "psab125": {
+    "fr": "Torche de coupe plasma pour le découpeur plasma pour l’automatisation Theta 120 AUT, disponible en 6 et 12 mètres.",
+    "it": "Torcia da taglio al plasma per l’inverter per il taglio al plasma automatizzato Theta 120 AUT, disponibile nelle lunghezze di 6 e 12 metri.",
+    "en": "Plasma cutting torch for the Theta 120 AUT automation inverter, available in 6 and 12 m lengths."
+  },
+  "vtbox-s25": {
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma S 25 montée à demeure dans la Theta 40.",
+    "it": "Set di parti d’usura per la torcia da taglio al plasma S 25 montata fissa nella Theta 40.",
+    "en": "Consumables kit for the S 25 plasma cutting torch built into the Theta 40."
+  },
+  "vtbox-pshb65": {
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 65, contenu identique aux coffrets PSHB 125 et PSHB 160.",
+    "it": "Set di parti d’usura per la torcia da taglio al plasma PSHB 65, dotazione identica ai box PSHB 125 e PSHB 160.",
+    "en": "Consumables kit for the PSHB 65 plasma cutting torch, with the same contents as the PSHB 125 and PSHB 160 kits."
+  },
+  "vtbox-pshb125": {
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 125, contenu identique aux coffrets PSHB 65 et PSHB 160.",
+    "it": "Set di parti d’usura per la torcia da taglio al plasma PSHB 125, dotazione identica ai box PSHB 65 e PSHB 160.",
+    "en": "Consumables kit for the PSHB 125 plasma cutting torch, with the same contents as the PSHB 65 and PSHB 160 kits."
+  },
+  "vtbox-pshb160": {
+    "fr": "Coffret de pièces d’usure pour la torche de coupe plasma PSHB 160, contenu identique aux coffrets PSHB 65 et PSHB 125.",
+    "it": "Set di parti d’usura per la torcia da taglio al plasma PSHB 160, dotazione identica ai box PSHB 65 e PSHB 125.",
+    "en": "Consumables kit for the PSHB 160 plasma cutting torch, with the same contents as the PSHB 65 and PSHB 125 kits."
+  },
+  "drahtvorschubrollen": {
+    "fr": "Galets d'entraînement pour EcoMIG et MMS, en versions acier, moletée et aluminium.",
+    "it": "Rulli trainafilo per EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio.",
+    "en": "Wire feed rollers for EcoMIG and MMS, with versions for steel and aluminium as well as knurled versions."
+  },
+  "zwischenschlauchpaket": {
+    "fr": "Faisceau intermédiaire reliant la source de courant de la série HyperMIG X au dévidoir.",
+    "it": "Fascio intermedio che collega il generatore della serie HyperMIG X al trainafilo.",
+    "en": "Interconnecting cable assembly connecting the HyperMIG X power source to the wire feeder."
+  },
+  "elektrodenkabel-4m": {
+    "fr": "Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+    "it": "Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta.",
+    "en": "Electrode cable for HyperMIG X, EcoMIG, MMS and Delta welding systems."
+  },
+  "massekabel-4m": {
+    "fr": "Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta.",
+    "it": "Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta.",
+    "en": "Work return cable for HyperMIG X, EcoMIG, MMS and Delta welding systems."
+  },
+  "massekabel-25": {
+    "fr": "Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180.",
+    "it": "Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180.",
+    "en": "Work return cable for Theta 60, Theta 120 and Theta 180 plasma cutters."
+  },
+  "mf405w": {
+    "fr": "Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X.",
+    "en": "Water-cooled MIG/MAG torch for the HyperMIG X series."
+  },
+  "mf240w": {
+    "fr": "Torche MIG/MAG refroidie à l’eau pour les classes de puissance inférieures.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua per le classi di potenza inferiori.",
+    "en": "Water-cooled MIG/MAG torch for lower power ranges."
+  },
+  "drahtvorschubrollen-hyper": {
+    "fr": "Galets d'entraînement pour la série HyperMIG X, en versions acier, moletée et aluminium.",
+    "it": "Rulli trainafilo per la serie HyperMIG X, nelle versioni acciaio, zigrinata e alluminio.",
+    "en": "Wire feed rollers for the HyperMIG X series, with versions for steel and aluminium as well as knurled versions."
+  },
+  "mpt-3001": {
+    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en ensemble avec une source de courant MAHE Theta.",
+    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta.",
+    "en": "Professional CNC plasma cutting table with a 3000 x 1500 mm working area, supplied as a set with a MAHE Theta-series power source."
+  },
+  "mpt-2501": {
+    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en ensemble avec une source de courant MAHE Theta.",
+    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 2500 x 1250 mm, fornito in set con un generatore MAHE Theta.",
+    "en": "Professional CNC plasma cutting table with a 2500 x 1250 mm working area, supplied as a set with a MAHE Theta-series power source."
+  },
+  "plasmafix-51": {
+    "fr": "SAF-FRO PlasmaFix 51 et Oerlikon PlasmaFix P+T : installations microplasma révisées. Choix selon la position sur la photo ; prix et disponibilité sur demande.",
+    "it": "SAF-FRO PlasmaFix 51 e Oerlikon PlasmaFix P+T: impianti microplasma revisionati. Scelta in base alla posizione nella foto; prezzo e disponibilità su richiesta.",
+    "en": "SAF-FRO PlasmaFix 51 and Oerlikon PlasmaFix P+T: refurbished microplasma systems. Select by position in the photograph; price and current availability on request."
+  },
+  "plasmafix-50s": {
+    "fr": "Source de courant microplasma à partir de 0,05 A pour les travaux les plus fins : feuilles de 0,01 mm, grillages et petite robinetterie.",
+    "it": "Generatore microplasma da 0,05 A per i lavori più fini: lamierini da 0,01 mm, reti metalliche e piccola rubinetteria.",
+    "en": "Microplasma power source starting at 0.05 A for precision work: foil from 0.01 mm, wire mesh and small fittings."
+  },
+  "hypermig-twin": {
+    "fr": "Poste MIG/MAG refroidi par eau avec deux dévidoirs pour différents fils ; au choix, panneau graphique X ou panneau HX.",
+    "it": "Saldatrice MIG/MAG raffreddata ad acqua con due trainafilo per fili diversi; a scelta pannello grafico X o pannello HX.",
+    "en": "Water-cooled MIG/MAG system with two wire feeders for different wires; available with the graphic X or HX control panel."
+  }
 }

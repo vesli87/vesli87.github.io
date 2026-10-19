@@ -1,168 +1,206 @@
 {
- "_": "Zeilenbeschriftungen der MAHE-Tabellen (build/mahe_specs.json), deutsch nach Korrektur -> fr/it. Neue Zeile bei MAHE = hier ergaenzen, sonst meldet check.py sie.",
- "Ausgangsspannungsbereich": {
-  "fr": "Plage de tension de sortie",
-  "it": "Campo di tensione di uscita"
- },
- "Ausgangsstrom max.": {
-  "fr": "Courant de sortie max.",
-  "it": "Corrente di uscita max."
- },
- "Effektiver Eingangsstrom": {
-  "fr": "Courant d’entrée effectif",
-  "it": "Corrente d’ingresso effettiva"
- },
- "Eingangsleistung max.": {
-  "fr": "Puissance absorbée max.",
-  "it": "Potenza assorbita max."
- },
- "Einschaltdauer bei max. Strom @40C": {
-  "fr": "Facteur de marche au courant max. à 40 °C",
-  "it": "Ciclo di lavoro alla corrente max. a 40 °C",
-  "de": "Einschaltdauer bei max. Strom (40 °C)"
- },
- "Empfohlener Schnitt": {
-  "fr": "Coupe recommandée",
-  "it": "Taglio consigliato"
- },
- "Fördermenge": {
-  "fr": "Débit",
-  "it": "Portata"
- },
- "Gewicht": {
-  "fr": "Poids",
-  "it": "Peso"
- },
- "Gewicht CGK": {
-  "fr": "Poids CGK",
-  "it": "Peso CGK"
- },
- "Gewicht CWK": {
-  "fr": "Poids CWK",
-  "it": "Peso CWK"
- },
- "Gewicht WGK": {
-  "fr": "Poids WGK",
-  "it": "Peso WGK"
- },
- "Gewicht WWK": {
-  "fr": "Poids WWK",
-  "it": "Peso WWK"
- },
- "Konformitätszeichen": {
-  "fr": "Marquage de conformité",
-  "it": "Marchio di conformità"
- },
- "Leerlauf Ausgangsspannung Uo": {
-  "fr": "Tension de sortie à vide Uo",
-  "it": "Tensione di uscita a vuoto Uo",
-  "de": "Leerlauf-Ausgangsspannung Uo"
- },
- "Leerlaufspannung": {
-  "fr": "Tension à vide",
-  "it": "Tensione a vuoto"
- },
- "Leistung max.": {
-  "fr": "Puissance max.",
-  "it": "Potenza max."
- },
- "Masse": {
-  "fr": "Dimensions",
-  "it": "Dimensioni"
- },
- "Masse (HxBxL)": {
-  "fr": "Dimensions (H×l×P)",
-  "it": "Dimensioni (A×L×P)"
- },
- "Masse CWK/CGK": {
-  "fr": "Dimensions CWK/CGK",
-  "it": "Dimensioni CWK/CGK"
- },
- "Masse WWK/WGK": {
-  "fr": "Dimensions WWK/WGK",
-  "it": "Dimensioni WWK/WGK"
- },
- "Netzabsicherung": {
-  "fr": "Fusible secteur",
-  "it": "Fusibile di rete"
- },
- "Netzspannung": {
-  "fr": "Tension secteur",
-  "it": "Tensione di rete"
- },
- "Schutzklasse": {
-  "fr": "Indice de protection",
-  "it": "Grado di protezione",
-  "de": "Schutzart"
- },
- "Schweissstrombereich": {
-  "fr": "Plage de courant de soudage",
-  "it": "Campo di corrente di saldatura"
- },
- "Sicherungsklasse": {
-  "fr": "Classe de sécurité",
-  "it": "Classe di sicurezza"
- },
- "Strom bei 100% ED @40C": {
-  "fr": "Courant à 100 % de facteur de marche à 40 °C",
-  "it": "Corrente al 100% del ciclo di lavoro a 40 °C",
-  "de": "Strom bei 100 % ED (40 °C)"
- },
- "Strom bei 60% ED @40C": {
-  "fr": "Courant à 60 % de facteur de marche à 40 °C",
-  "it": "Corrente al 60% del ciclo di lavoro a 40 °C",
-  "de": "Strom bei 60 % ED (40 °C)"
- },
- "Trennschnitt": {
-  "fr": "Coupe de séparation",
-  "it": "Taglio di separazione"
- },
- "Upgrade": {
-  "fr": "Upgrade",
-  "it": "Upgrade"
- },
- "Netzabsicherung (träge)": {
-  "de": "Netzabsicherung (träge)",
-  "fr": "Fusible secteur temporisé",
-  "it": "Fusibile di rete ritardato"
- },
- "Einschaltdauer bei max. Strom @40°C": {
-  "de": "Einschaltdauer bei max. Strom (40 °C)",
-  "fr": "Facteur de marche au courant maximal à 40 °C",
-  "it": "Ciclo di lavoro alla corrente massima a 40 °C"
- },
- "Strom bei 60% ED @40°C": {
-  "de": "Strom bei 60 % ED (40 °C)",
-  "fr": "Courant à 60 % de facteur de marche à 40 °C",
-  "it": "Corrente al 60% del ciclo di lavoro a 40 °C"
- },
- "Strom bei 100% ED @40°C": {
-  "de": "Strom bei 100 % ED (40 °C)",
-  "fr": "Courant à 100 % de facteur de marche à 40 °C",
-  "it": "Corrente al 100% del ciclo di lavoro a 40 °C"
- },
- "Effektivität": {
-  "de": "Wirkungsgrad",
-  "fr": "Rendement",
-  "it": "Rendimento"
- },
- "Leistungsaufnahme im Leerlaufz.": {
-  "de": "Leistungsaufnahme im Leerlauf",
-  "fr": "Puissance absorbée à vide",
-  "it": "Assorbimento a vuoto"
- },
- "Leistungsfaktor": {
-  "fr": "Facteur de puissance",
-  "it": "Fattore di potenza"
- },
- "Empf. Generatorleistung": {
-  "de": "Empfohlene Generatorleistung",
-  "fr": "Puissance recommandée du groupe électrogène",
-  "it": "Potenza consigliata del generatore"
- },
- "Masse CWK (HxBxL)": {
-  "de": "Masse CWK (H × B × L)",
-  "fr": "Dimensions CWK (H × l × L)",
-  "it": "Dimensioni CWK (A × L × P)"
- }
+  "_": "Zeilenbeschriftungen der MAHE-Tabellen (build/mahe_specs.json), deutsch nach Korrektur -> fr/it. Neue Zeile bei MAHE = hier ergaenzen, sonst meldet check.py sie.",
+  "Ausgangsspannungsbereich": {
+    "fr": "Plage de tension de sortie",
+    "it": "Campo di tensione di uscita",
+    "en": "Output voltage range"
+  },
+  "Ausgangsstrom max.": {
+    "fr": "Courant de sortie max.",
+    "it": "Corrente di uscita max.",
+    "en": "Maximum output current"
+  },
+  "Effektiver Eingangsstrom": {
+    "fr": "Courant d’entrée effectif",
+    "it": "Corrente d’ingresso effettiva",
+    "en": "Effective input current"
+  },
+  "Eingangsleistung max.": {
+    "fr": "Puissance absorbée max.",
+    "it": "Potenza assorbita max.",
+    "en": "Maximum input power"
+  },
+  "Einschaltdauer bei max. Strom @40C": {
+    "fr": "Facteur de marche au courant max. à 40 °C",
+    "it": "Ciclo di lavoro alla corrente max. a 40 °C",
+    "de": "Einschaltdauer bei max. Strom (40 °C)",
+    "en": "Duty cycle at maximum current (40 °C)"
+  },
+  "Empfohlener Schnitt": {
+    "fr": "Coupe recommandée",
+    "it": "Taglio consigliato",
+    "en": "Recommended cut"
+  },
+  "Fördermenge": {
+    "fr": "Débit",
+    "it": "Portata",
+    "en": "Flow rate"
+  },
+  "Gewicht": {
+    "fr": "Poids",
+    "it": "Peso",
+    "en": "Weight"
+  },
+  "Gewicht CGK": {
+    "fr": "Poids CGK",
+    "it": "Peso CGK",
+    "en": "CGK weight"
+  },
+  "Gewicht CWK": {
+    "fr": "Poids CWK",
+    "it": "Peso CWK",
+    "en": "CWK weight"
+  },
+  "Gewicht WGK": {
+    "fr": "Poids WGK",
+    "it": "Peso WGK",
+    "en": "WGK weight"
+  },
+  "Gewicht WWK": {
+    "fr": "Poids WWK",
+    "it": "Peso WWK",
+    "en": "WWK weight"
+  },
+  "Konformitätszeichen": {
+    "fr": "Marquage de conformité",
+    "it": "Marchio di conformità",
+    "en": "Conformity marking"
+  },
+  "Leerlauf Ausgangsspannung Uo": {
+    "fr": "Tension de sortie à vide Uo",
+    "it": "Tensione di uscita a vuoto Uo",
+    "de": "Leerlauf-Ausgangsspannung Uo",
+    "en": "Open-circuit output voltage Uo"
+  },
+  "Leerlaufspannung": {
+    "fr": "Tension à vide",
+    "it": "Tensione a vuoto",
+    "en": "Open-circuit voltage"
+  },
+  "Leistung max.": {
+    "fr": "Puissance max.",
+    "it": "Potenza max.",
+    "en": "Maximum power"
+  },
+  "Masse": {
+    "fr": "Dimensions",
+    "it": "Dimensioni",
+    "en": "Dimensions"
+  },
+  "Masse (HxBxL)": {
+    "fr": "Dimensions (H×l×P)",
+    "it": "Dimensioni (A×L×P)",
+    "en": "Dimensions (H × W × L)"
+  },
+  "Masse CWK/CGK": {
+    "fr": "Dimensions CWK/CGK",
+    "it": "Dimensioni CWK/CGK",
+    "en": "CWK/CGK dimensions"
+  },
+  "Masse WWK/WGK": {
+    "fr": "Dimensions WWK/WGK",
+    "it": "Dimensioni WWK/WGK",
+    "en": "WWK/WGK dimensions"
+  },
+  "Netzabsicherung": {
+    "fr": "Fusible secteur",
+    "it": "Fusibile di rete",
+    "en": "Mains fuse"
+  },
+  "Netzspannung": {
+    "fr": "Tension secteur",
+    "it": "Tensione di rete",
+    "en": "Mains voltage"
+  },
+  "Schutzklasse": {
+    "fr": "Indice de protection",
+    "it": "Grado di protezione",
+    "de": "Schutzart",
+    "en": "Degree of protection"
+  },
+  "Schweissstrombereich": {
+    "fr": "Plage de courant de soudage",
+    "it": "Campo di corrente di saldatura",
+    "en": "Welding current range"
+  },
+  "Sicherungsklasse": {
+    "fr": "Classe de sécurité",
+    "it": "Classe di sicurezza",
+    "en": "Safety class"
+  },
+  "Strom bei 100% ED @40C": {
+    "fr": "Courant à 100 % de facteur de marche à 40 °C",
+    "it": "Corrente al 100% del ciclo di lavoro a 40 °C",
+    "de": "Strom bei 100 % ED (40 °C)",
+    "en": "Current at 100 % duty cycle (40 °C)"
+  },
+  "Strom bei 60% ED @40C": {
+    "fr": "Courant à 60 % de facteur de marche à 40 °C",
+    "it": "Corrente al 60% del ciclo di lavoro a 40 °C",
+    "de": "Strom bei 60 % ED (40 °C)",
+    "en": "Current at 60 % duty cycle (40 °C)"
+  },
+  "Trennschnitt": {
+    "fr": "Coupe de séparation",
+    "it": "Taglio di separazione",
+    "en": "Severance cut"
+  },
+  "Upgrade": {
+    "fr": "Upgrade",
+    "it": "Upgrade",
+    "en": "Upgrade"
+  },
+  "Netzabsicherung (träge)": {
+    "de": "Netzabsicherung (träge)",
+    "fr": "Fusible secteur temporisé",
+    "it": "Fusibile di rete ritardato",
+    "en": "Mains fuse (time-delay)"
+  },
+  "Einschaltdauer bei max. Strom @40°C": {
+    "de": "Einschaltdauer bei max. Strom (40 °C)",
+    "fr": "Facteur de marche au courant maximal à 40 °C",
+    "it": "Ciclo di lavoro alla corrente massima a 40 °C",
+    "en": "Duty cycle at maximum current (40 °C)"
+  },
+  "Strom bei 60% ED @40°C": {
+    "de": "Strom bei 60 % ED (40 °C)",
+    "fr": "Courant à 60 % de facteur de marche à 40 °C",
+    "it": "Corrente al 60% del ciclo di lavoro a 40 °C",
+    "en": "Current at 60 % duty cycle (40 °C)"
+  },
+  "Strom bei 100% ED @40°C": {
+    "de": "Strom bei 100 % ED (40 °C)",
+    "fr": "Courant à 100 % de facteur de marche à 40 °C",
+    "it": "Corrente al 100% del ciclo di lavoro a 40 °C",
+    "en": "Current at 100 % duty cycle (40 °C)"
+  },
+  "Effektivität": {
+    "de": "Wirkungsgrad",
+    "fr": "Rendement",
+    "it": "Rendimento",
+    "en": "Efficiency"
+  },
+  "Leistungsaufnahme im Leerlaufz.": {
+    "de": "Leistungsaufnahme im Leerlauf",
+    "fr": "Puissance absorbée à vide",
+    "it": "Assorbimento a vuoto",
+    "en": "Idle power consumption"
+  },
+  "Leistungsfaktor": {
+    "fr": "Facteur de puissance",
+    "it": "Fattore di potenza",
+    "en": "Power factor"
+  },
+  "Empf. Generatorleistung": {
+    "de": "Empfohlene Generatorleistung",
+    "fr": "Puissance recommandée du groupe électrogène",
+    "it": "Potenza consigliata del generatore",
+    "en": "Recommended generator power"
+  },
+  "Masse CWK (HxBxL)": {
+    "de": "Masse CWK (H × B × L)",
+    "fr": "Dimensions CWK (H × l × L)",
+    "it": "Dimensioni CWK (A × L × P)",
+    "en": "CWK dimensions (H × W × L)"
+  }
 }

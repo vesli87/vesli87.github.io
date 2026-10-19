@@ -39,6 +39,19 @@
             "Indicate materiale, filo e corrente utilizzata. Collegamento elettrico, ciclo di lavoro, raffreddamento e trainafilo vanno verificati per la versione scelta."
           ]
         ]
+      },
+      "en": {
+        "intro": "Choose between portable MMS machines, compact EcoMIG versions and the HyperMIG X pulse range.",
+        "criteria": [
+          [
+            "Application and controls",
+            "MMS is intended for site work and the workshop. EcoMIG offers digital or analogue controls; HyperMIG X includes pulse and double-pulse processes."
+          ],
+          [
+            "Specify the version",
+            "State the material, wire and operating current. Power supply, duty cycle, cooling and wire feeder are checked for the specific equipment version."
+          ]
+        ]
       }
     },
     "WIG / TIG": {
@@ -80,6 +93,19 @@
             "Omega AX e Beta DX sono indicati per 230 V, HyperTIG AX e DX per 400 V. Torcia, raffreddamento e ciclo di lavoro fanno parte della scelta della versione."
           ]
         ]
+      },
+      "en": {
+        "intro": "The TIG range includes mobile 230 V machines and water-cooled industrial versions with AC/DC or DC.",
+        "criteria": [
+          [
+            "Material and current type",
+            "Omega AX and HyperTIG AX are AC/DC machines. Beta DX and HyperTIG DX operate on DC. Specify the materials before selecting a range."
+          ],
+          [
+            "Connection and cooling",
+            "Omega AX and Beta DX are specified for 230 V, HyperTIG AX and DX for 400 V. Torch, cooling and duty cycle are part of selecting the specific version."
+          ]
+        ]
       }
     },
     "MMA": {
@@ -119,6 +145,19 @@
           [
             "Specificare l’impiego",
             "Delta Digital DS è una versione specifica per la saldatura subacquea. Nella richiesta indicate il nome completo del modello e l’impiego previsto."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "From the portable i-1600 to the Delta versions, power supply, controls and intended applications differ.",
+        "criteria": [
+          [
+            "Select the functions",
+            "i-1600 is a straightforward stick welding inverter. Delta additionally offers TIG Lift; Delta Digital has digital controls and JOB programs."
+          ],
+          [
+            "State the application clearly",
+            "Delta Digital DS is a separate version for underwater use. Include the full model designation and intended application in your enquiry."
           ]
         ]
       }
@@ -164,6 +203,19 @@
             "Indicate materiale, spessore e qualità di taglio desiderata. Verificate alimentazione elettrica e aria compressa nei documenti della versione Theta scelta."
           ]
         ]
+      },
+      "en": {
+        "intro": "The Theta range includes the portable 230 V Theta 40 and HSC machines with a 400 V connection.",
+        "criteria": [
+          [
+            "Distinguish the cut types",
+            "For Theta 60 HSC, the data sheet specifies a severance cut below 35 mm and a recommended cut below 25 mm. These values describe different cut types."
+          ],
+          [
+            "Utilities and workpiece",
+            "Specify material, thickness and desired cut quality. Check mains connection and compressed air supply for the selected Theta version against the equipment documentation."
+          ]
+        ]
       }
     },
     "Theta Automation": {
@@ -203,6 +255,19 @@
           [
             "Abbinare la torcia",
             "PSAB 65 è indicata per Theta 60 AUT, PSAB 125 per Theta 120 AUT. Entrambe sono disponibili da 6 o 12 m; specificate modello e lunghezza necessaria."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "Theta 60 AUT and Theta 120 AUT are intended for integration into automated cutting systems.",
+        "criteria": [
+          [
+            "Clarify the machine connection",
+            "Specify the cutting table or system and its existing controller. The AUT designation does not replace checking interfaces and the intended connection."
+          ],
+          [
+            "Match the torch",
+            "PSAB 65 is listed for Theta 60 AUT and PSAB 125 for Theta 120 AUT. Both are available in 6 or 12 m lengths; specify the model and length required."
           ]
         ]
       }
@@ -256,6 +321,23 @@
           [
             "Quali pezzi producete?",
             "Indicate le tolleranze dimensionali richieste e le quantità e preparate un disegno di esempio. Questi dati aiutano a definire il lavoro di taglio e le attrezzature necessarie prima dell’offerta."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "MPT 3001 and MPT 2501 differ in working area and are offered with a Theta power source.",
+        "criteria": [
+          [
+            "Compare sheet formats",
+            "MPT 3001 provides a 3000 × 1500 mm working area; MPT 2501 provides 2500 × 1250 mm. The largest sheet format you actually process is decisive."
+          ],
+          [
+            "Prepare the configuration",
+            "Both models use the MAHE CNC system and support DXF and HPGL/PLT. Specify material, thickness, available floor area, mains connection and compressed air to configure the set."
+          ],
+          [
+            "Which parts do you make?",
+            "State the required dimensional accuracy and quantities and have an example drawing ready. This helps clarify the cutting task and required system scope before the quotation."
           ]
         ]
       }
@@ -313,6 +395,23 @@
             "Una foto del cordone e l’indicazione del processo di saldatura utilizzato aiutano nella consulenza. Precisate se volete eliminare le colorazioni termiche, lucidare la superficie o realizzare una marcatura."
           ]
         ]
+      },
+      "en": {
+        "intro": "Cleaners differ by cleaning task, mobility and additional processes such as polishing or TIG welding.",
+        "criteria": [
+          [
+            "Compare operating modes",
+            "ST Speed reaches a maximum of 2400 W when polishing at 100 % duty cycle, ST Plus a maximum of 4000 W at 30 %. These polishing values are not continuous cleaning ratings."
+          ],
+          [
+            "Task and equipment",
+            "MiniCleaner is listed for mobile use; CT 200 combines TIG welding and cleaning. Specify material, surface condition and existing accessories so that the machine, products and scope of supply match."
+          ],
+          [
+            "What does the weld look like?",
+            "A photograph of the weld and the welding process used help us advise you. Describe whether heat tint needs removing, the surface needs polishing or a marking needs to be made."
+          ]
+        ]
       }
     },
     "Signiergeräte": {
@@ -352,6 +451,19 @@
           [
             "Abbinare apparecchio e prodotto",
             "M1 è indicato come elettrolita di marcatura. Verificate prodotto adatto e contenuto necessario del set nei documenti dell’apparecchio; gli elettroliti per pulizia e lucidatura hanno funzioni diverse."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "HCS 1 is an electrolytic marking system for mobile use, listed as a set with a case.",
+        "criteria": [
+          [
+            "Describe the marking",
+            "Specify the material and desired marking. An example or photograph helps clarify the intended application."
+          ],
+          [
+            "Match equipment and electrolyte",
+            "M1 is listed as a marking electrolyte. Check the appropriate product and required set contents against the equipment documentation; cleaning and polishing electrolytes serve different purposes."
           ]
         ]
       }
@@ -395,6 +507,19 @@
             "Specificate i componenti già presenti e l’integrazione desiderata. Collegamenti e contenuto della fornitura vengono verificati in base ai documenti e all’offerta specifica."
           ]
         ]
+      },
+      "en": {
+        "intro": "MLF 100 automatically doses cleaning fluid and complements the HyperCleaner range.",
+        "criteria": [
+          [
+            "Specify existing equipment",
+            "Provide the exact HyperCleaner version and cleaning product used. The dosing system supplies fluid; it does not perform the function of the cleaning power source."
+          ],
+          [
+            "Clarify the scope of supply",
+            "Specify components you already have and the addition required. Connections and scope of supply are checked against the equipment documentation and specific quotation."
+          ]
+        ]
       }
     },
     "Elektrolyte": {
@@ -434,6 +559,19 @@
           [
             "Confezione e documenti",
             "Indicate apparecchio, materiale e confezione desiderata. I formati sono riportati sul prodotto; prima dell’uso consultate istruzioni e scheda di sicurezza."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "Electrolytes are separated by task: cleaning, polishing, neutralising or marking.",
+        "criteria": [
+          [
+            "Choose by task",
+            "R1 and RP1 paste are for cleaning, P1 for polishing and pickling, N1 for neutralising and M1 for marking. Similar names do not mean interchangeability."
+          ],
+          [
+            "Pack size and documentation",
+            "Specify the equipment, material and required pack size. Available sizes are listed on the product page; follow its instructions and safety data sheet before use."
           ]
         ]
       }
@@ -479,6 +617,19 @@
             "Specificate apparecchio, refrigeratore e accessori da trasportare. MHCT 01 è indicato per HyperCleaner; la disposizione va verificata considerando l’attrezzatura completa."
           ]
         ]
+      },
+      "en": {
+        "intro": "Trolleys differ in equipment compatibility, dimensions and gas cylinder holders.",
+        "criteria": [
+          [
+            "Gas cylinder and space requirements",
+            "MPF 02 has a gas cylinder holder and measures 840 × 450 × 710 mm. STT 35 without a holder measures 700 × 600 × 1050 mm; both weigh 21 kg."
+          ],
+          [
+            "Specify the complete setup",
+            "State the machine, cooling unit and accessories to be carried. MHCT 01 is listed for HyperCleaner; a suitable arrangement is checked against the complete setup."
+          ]
+        ]
       }
     },
     "Wasserkühlung": {
@@ -518,6 +669,19 @@
           [
             "Documentare i collegamenti",
             "WK 200 è descritto con presa Schuko da 230 V e arresto per mancanza d’acqua. Collegamenti elettrici e di raffreddamento esistenti vanno verificati mediante documenti o foto."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "WK 200, WK 300 and WK 350 are listed for different connections and equipment families.",
+        "criteria": [
+          [
+            "Match the range",
+            "WK 300 is specified for MMS 3000, WK 350 for Beta digital and the 400 V Omega range. Provide the complete equipment designation, not just the series name."
+          ],
+          [
+            "Document the connections",
+            "WK 200 is described with a 230 V Schuko socket and low-water shutdown. Existing electrical and cooling connections are checked using documentation or photographs when selecting a unit."
           ]
         ]
       }
@@ -561,6 +725,19 @@
             "Indicate la versione esatta di HyperMIG X e il fascio intermedio esistente. La lunghezza necessaria del collegamento fa parte della configurazione di generatore e trainafilo."
           ]
         ]
+      },
+      "en": {
+        "intro": "DVS 410 and DVL 420 are wire feeders for the HyperMIG X series.",
+        "criteria": [
+          [
+            "Compare designs",
+            "DVS 410 is described as a lightweight, portable wire feeder. DVL 420 has an all-metal housing and a horizontal design."
+          ],
+          [
+            "Connection to the power source",
+            "Provide the exact HyperMIG X version and existing interconnecting cable assembly. The required connection length is part of configuring the power source and feeder."
+          ]
+        ]
       }
     },
     "Fernbedienungen": {
@@ -600,6 +777,19 @@
           [
             "Verificare RC 5 e RC 100",
             "Entrambi sono descritti come comandi manuali per TIG e MMA MAHE. Per scegliere servono il modello esatto e i documenti del collegamento o una foto del connettore."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "Foot operation, hand operation and equipment-specific functions are the main differences between these remote controls.",
+        "criteria": [
+          [
+            "Choose the control function",
+            "FRC 5 is a foot remote control. RC 15 provides Up/Down and Start/Stop; RC 100 DS is explicitly listed for Delta Digital DS."
+          ],
+          [
+            "Clarify RC 5 and RC 100 compatibility",
+            "Both are described as hand remote controls for MAHE TIG and MMA equipment. We need the exact model and connection documentation or a photograph of the connector to select the right one."
           ]
         ]
       }
@@ -643,6 +833,19 @@
             "USB 2in1 è descritto per microcontrollori e interfacce MAHE, con software USB incluso. Indicate controllo e versione software; la sola connessione USB non dimostra il supporto."
           ]
         ]
+      },
+      "en": {
+        "intro": "MCU 1 and USB 2in1 perform different tasks: measurement checking or programming.",
+        "criteria": [
+          [
+            "Check measurements",
+            "MCU 1 is a calibration unit for calibration and validation, with large voltage and current displays. Specify the equipment and check required to clarify its use."
+          ],
+          [
+            "Clarify programming requirements",
+            "USB 2in1 is described for microcontrollers and MAHE interfaces, including USB software. Specify the controller and software version; a USB connection alone does not establish support."
+          ]
+        ]
       }
     },
     "Kabel": {
@@ -684,6 +887,19 @@
             "Specificate apparecchio esatto, tipo di cavo, lunghezza e connettore esistente. Una foto e i documenti dell’apparecchio aiutano a confermare la versione adatta."
           ]
         ]
+      },
+      "en": {
+        "intro": "Electrode and work return cables are listed separately by equipment family, cross-section and length.",
+        "criteria": [
+          [
+            "Distinguish equipment families",
+            "For HyperCleaner, 10 mm² cables are listed in 3, 6 or 10 m lengths. The 4 m welding cables have different cross-sections; Theta work return cables are listed separately."
+          ],
+          [
+            "Show the existing connection",
+            "Specify the exact equipment, cable type, length and existing connection. A photograph and equipment documentation help confirm the correct version."
+          ]
+        ]
       }
     },
     "Brenner": {
@@ -723,6 +939,19 @@
           [
             "Specificare lunghezza e comandi",
             "Indicate versione della saldatrice, raffreddamento, lunghezza e funzioni Up/Down o potenziometro, se necessarie. Non tutte le opzioni valgono per ogni torcia o lunghezza."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "The torch range separates MIG/MAG and TIG, and gas-cooled and water-cooled versions.",
+        "criteria": [
+          [
+            "Process and cooling",
+            "MF155 is a gas-cooled MIG/MAG torch; MF405W is water-cooled. TIG torches include versions with a gas valve on the torch and versions with additional control options."
+          ],
+          [
+            "Specify length and controls",
+            "State the equipment version, cooling type, required length and whether Up/Down or a potentiometer is needed. Not every option applies to every torch or length."
           ]
         ]
       }
@@ -778,6 +1007,23 @@
             "Per una torcia di ricambio sono utili una foto della targhetta, i dati del collegamento e il riferimento del componente. Un connettore dall’aspetto simile non dimostra la compatibilità con il vostro impianto."
           ]
         ]
+      },
+      "en": {
+        "intro": "PSHB torches are matched to Theta HSC equipment; PSAB torches to AUT versions.",
+        "criteria": [
+          [
+            "Pair equipment and torch",
+            "PSHB 65 is for Theta 60 HSC, PSHB 125 for Theta 120 HSC and PSHB 160 for Theta 180 HSC. PSAB 65 and PSAB 125 are listed for Theta 60 AUT and 120 AUT respectively."
+          ],
+          [
+            "Confirm the version",
+            "The listed torches are available in 6 or 12 m lengths. Provide the full Theta designation, existing torch and required length."
+          ],
+          [
+            "Which connection is fitted?",
+            "For a replacement torch, a rating plate photograph and details of the connection and part number are helpful. A similar-looking plug does not establish that the torch fits your system."
+          ]
+        ]
       }
     },
     "Verschleissteile": {
@@ -819,6 +1065,19 @@
             "I rulli per EcoMIG/MMS e HyperMIG X sono elencati separatamente. Indicate famiglia dell’apparecchio, materiale e diametro del filo e versione dei rulli già installati."
           ]
         ]
+      },
+      "en": {
+        "intro": "Find torch consumables kits and wire feed rollers for different MAHE equipment families here.",
+        "criteria": [
+          [
+            "Use the torch designation",
+            "The S 25 kit is matched to the torch built into Theta 40. Select PSHB kits by torch identifier; identical quantities do not prove that the parts are interchangeable."
+          ],
+          [
+            "Specify wire and feeder",
+            "Feed rollers for EcoMIG/MMS and HyperMIG X are listed separately. State the equipment family, wire material, wire diameter and existing roller version."
+          ]
+        ]
       }
     },
     "Schlauchpakete": {
@@ -858,6 +1117,19 @@
           [
             "Precisare la dotazione esistente",
             "Indicate generatore, trainafilo, raffreddamento e collegamenti esistenti. Il fascio intermedio va distinto dal fascio della torcia."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "The interconnecting cable assembly links the HyperMIG X power source to the separate wire feeder.",
+        "criteria": [
+          [
+            "Determine the connection route",
+            "Available lengths are 1.2 m, 5 m, 10 m, 15 m and 20 m. Determine the route required between power source and feeder, not just the distance to the workpiece."
+          ],
+          [
+            "Clarify the existing version",
+            "Specify the power source, wire feeder, cooling and existing connections. The interconnecting cable assembly is separate from the torch hose assembly."
           ]
         ]
       }
@@ -913,6 +1185,23 @@
           [
             "Esaminare macchina e fornitura",
             "Stato, foto e documenti originali sono nelle pagine dei prodotti. Indicate versione e dotazione desiderate; la visita è su appuntamento e il contenuto esatto della fornitura figura nell’offerta."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "Refurbished PlasmaFix systems differ in range, controls and documented current range.",
+        "criteria": [
+          [
+            "Compare models using the documentation",
+            "PlasmaFix 51 starts at 0.08 A in microplasma mode; PlasmaFix 50 S at 0.05 A. The 51 range is described with LCD controls; consult the documentation for the specific 51 or P+T version."
+          ],
+          [
+            "Select the specific machine",
+            "The group photograph on the PlasmaFix 51 product page shows Oerlikon PlasmaFix P+T on the left and right, and SAF-FRO PlasmaFix 51 in the centre. Select the required machine by its position; the selection does not reserve it."
+          ],
+          [
+            "Inspect the system and scope of supply",
+            "Condition details, photographs and original documentation are on the product pages. Specify the required version and equipment; viewing is by appointment and the exact scope of supply appears in the quotation."
           ]
         ]
       }

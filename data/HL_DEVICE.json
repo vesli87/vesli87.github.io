@@ -1,1021 +1,1333 @@
 {
- "hcs1": {
-  "de": [
-   "Stromquelle zum Markieren",
-   "Tiefschwarz markieren",
-   "Kurzschlussschutzsystem",
-   "Geeignet für Schablonen aller Hersteller"
-  ],
-  "src": "https://mahe-online.de/hcs-1-signiergerat/",
-  "fr": [
-   "Source de courant pour le marquage",
-   "Marquage noir profond",
-   "Système de protection contre les courts-circuits",
-   "Compatible avec les pochoirs de tous les fabricants"
-  ],
-  "it": [
-   "Generatore per la marcatura",
-   "Marcatura in nero intenso",
-   "Sistema di protezione dai cortocircuiti",
-   "Compatibile con le maschere di tutti i produttori"
-  ]
- },
- "mlf100": {
-  "de": [
-   "Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit",
-   "Automatischer oder manueller Dosiermodus",
-   "Möglichkeit zum Anschluss eines externen Tanks",
-   "Reinigungsmodus und Spülmodus",
-   "Kompatibel mit allen MAHE-HyperCleaner-Reinigungsgeräten",
-   "Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten",
-   "Mit Reinigungspinselständer mit Tropfschutz"
-  ],
-  "src": "https://mahe-online.de/mlf100/ · Montagesatz und Pinselstaender fuehrt MAHE dort im Zubehoer-Reiter des MLF 100; in der Preisliste 2026 haben sie keine Artikelnummer, sind also nicht einzeln bestellbar, sondern gehoeren zum Geraet.",
-  "fr": [
-   "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
-   "Mode de dosage automatique ou manuel",
-   "Possibilité de raccorder un réservoir externe",
-   "Mode nettoyage et rinçage",
-   "Compatible avec tous les appareils de nettoyage MAHE HyperCleaner.",
-   "Avec kit de fixation pour le montage sur les appareils MAHE HyperCleaner",
-   "Avec support de pinceau de nettoyage et protection anti-gouttes"
-  ],
-  "it": [
-   "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
-   "Modalità di dosaggio automatica o manuale",
-   "Possibilità di collegare un serbatoio esterno",
-   "Modalità di pulizia e risciacquo",
-   "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner.",
-   "Con kit di fissaggio per il montaggio sugli apparecchi MAHE HyperCleaner",
-   "Con supporto per pennello di pulizia con protezione antigoccia"
-  ]
- },
- "minicleaner": {
-  "de": [
-   "Leistungsstarke 200-Watt-Inverter-Stromquelle",
-   "MAHE-Pinselschutzsystem",
-   "Reinigen, Polieren und Markieren",
-   "Synergieprogramm für alle Verfahren",
-   "Umweltfreundlich und sicher reinigen"
-  ],
-  "src": "https://mahe-online.de/minicleaner/",
-  "fr": [
-   "Source de courant puissante à onduleur de 200 watts",
-   "Système de protection du pinceau MAHE",
-   "Nettoyer, polir et marquer",
-   "Programme synergique pour tous les procédés",
-   "Nettoyage écologique et sûr"
-  ],
-  "it": [
-   "Generatore inverter potente da 200 watt",
-   "Sistema di protezione del pennello Mahe",
-   "Pulire, lucidare e marcare",
-   "Programma sinergico per tutti i processi",
-   "Pulizia ecologica e sicura"
-  ]
- },
- "hypercleaner-st": {
-  "de": [
-   "Leistungsstarke 1200-Watt-Inverter-Stromquelle",
-   "MAHE-Pinselschutzsystem",
-   "Reinigen, Polieren und Markieren",
-   "Synergieprogramm für alle Verfahren",
-   "Umweltfreundlich und sicher reinigen"
-  ],
-  "src": "https://mahe-online.de/hypercleaner-st/",
-  "fr": [
-   "Source de courant puissante à onduleur de 1200 watts",
-   "Système de protection du pinceau MAHE",
-   "Nettoyer, polir et marquer",
-   "Programme synergique pour tous les procédés",
-   "Nettoyage écologique et sûr"
-  ],
-  "it": [
-   "Generatore inverter potente da 1200 watt",
-   "Sistema di protezione del pennello Mahe",
-   "Pulire, lucidare e marcare",
-   "Programma sinergico per tutti i processi",
-   "Pulizia ecologica e sicura"
-  ]
- },
- "hypercleaner-plus": {
-  "de": [
-   "Leistungsstarke 4000-Watt-Inverter-Stromquelle",
-   "MAHE-Pinselschutzsystem",
-   "Reinigen, Polieren, Markieren und Galvanisieren",
-   "Synergieprogramm für alle Verfahren",
-   "Umweltfreundlich und sicher reinigen"
-  ],
-  "src": "https://mahe-online.de/hypercleaner-st-plus/",
-  "fr": [
-   "Source de courant puissante à onduleur de 4000 watts",
-   "Système de protection du pinceau MAHE",
-   "Nettoyer, polir, marquer et galvaniser",
-   "Programme synergique pour tous les procédés",
-   "Nettoyage écologique et sûr"
-  ],
-  "it": [
-   "Generatore inverter potente da 4000 watt",
-   "Sistema di protezione del pennello Mahe",
-   "Pulire, lucidare, marcare e galvanizzare",
-   "Programma sinergico per tutti i processi",
-   "Pulizia ecologica e sicura"
-  ]
- },
- "hypercleaner-speed": {
-  "de": [
-   "Leistungsstarke 2400-Watt-Inverter-Stromquelle",
-   "MAHE-Pinselschutzsystem",
-   "Reinigen, Polieren, Markieren und Galvanisieren",
-   "Synergieprogramm für alle Verfahren",
-   "Umweltfreundlich und sicher reinigen"
-  ],
-  "src": "https://mahe-online.de/hypercleaner-st-speed/",
-  "fr": [
-   "Source de courant puissante à onduleur de 2400 watts",
-   "Système de protection du pinceau MAHE",
-   "Nettoyer, polir, marquer et galvaniser",
-   "Programme synergique pour tous les procédés",
-   "Nettoyage écologique et sûr"
-  ],
-  "it": [
-   "Generatore inverter potente da 2400 watt",
-   "Sistema di protezione del pennello Mahe",
-   "Pulire, lucidare, marcare e galvanizzare",
-   "Programma sinergico per tutti i processi",
-   "Pulizia ecologica e sicura"
-  ]
- },
- "hypercleaner-ct200": {
-  "de": [
-   "Multiprozess: WIG-Schweissen und Reinigen",
-   "WIG-Schweissen mit 200 A",
-   "Reinigen mit 2000 Watt",
-   "Reinigen, Polieren, Markieren und Galvanisieren",
-   "Umweltfreundlich und sicher reinigen"
-  ],
-  "src": "https://mahe-online.de/hypercleaner-ct-200/",
-  "fr": [
-   "Appareil multiprocédé pour le soudage TIG et le nettoyage",
-   "Soudage TIG à 200 A",
-   "Nettoyage à 2000 watts",
-   "Nettoyer, polir, marquer et galvaniser",
-   "Nettoyage écologique et sûr"
-  ],
-  "it": [
-   "Multiprocesso TIG e pulizia",
-   "Saldatura TIG con 200 A",
-   "Pulizia con 2000 watt",
-   "Pulire, lucidare, marcare e galvanizzare",
-   "Pulizia ecologica e sicura"
-  ]
- },
- "hypertig-ax": {
-  "de": [
-   "Hochfrequenz-Impulsschweissen",
-   "HyperSpot-Punktschweissen",
-   "ActiveSpot: schnelle Heftfunktion",
-   "Hyper-ARC-Active-Regelung",
-   "Mix-TIG-Schweissen",
-   "Strommodulation einstellbar",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Digitale Anzeige",
-   "Leistungsstarke Wasserkühlung",
-   "Fernbedienung",
-   "Synergy-Einstellungen",
-   "JOB-Modus"
-  ],
-  "src": "https://mahe-online.de/hypertig-ax/",
-  "fr": [
-   "Soudage pulsé haute fréquence",
-   "Pointage HyperSpot",
-   "ActiveSpot : pointage rapide",
-   "Régulation Hyper ARC Active",
-   "Soudage Mix TIG",
-   "Modulation de courant réglable",
-   "Câble d'alimentation de 5 mètres",
-   "Affichage numérique",
-   "Refroidissement à eau performant",
-   "Télécommande",
-   "Réglages Synergy",
-   "Mode Job"
-  ],
-  "it": [
-   "Saldatura pulsata ad alta frequenza",
-   "Puntatura HyperSpot",
-   "ActiveSpot: puntatura rapida",
-   "Regolazione Hyper ARC Active",
-   "Saldatura Mix TIG",
-   "Modulazione di corrente regolabile",
-   "Cavo di alimentazione da 5 metri",
-   "Display digitale",
-   "Raffreddamento ad acqua potente",
-   "Telecomando",
-   "Impostazioni Synergy",
-   "Modalità Job"
-  ]
- },
- "hypertig-dx": {
-  "de": [
-   "Hochfrequenz-Impulsschweissen",
-   "HyperSpot-Punktschweissen",
-   "ActiveSpot: schnelle Heftfunktion",
-   "Hyper-ARC-Active-Regelung",
-   "Digitale Anzeige",
-   "Leistungsstarke Wasserkühlung",
-   "Fernbedienung",
-   "Synergy-Einstellungen",
-   "JOB-Modus"
-  ],
-  "src": "https://mahe-online.de/hypertig-dx/",
-  "fr": [
-   "Soudage pulsé haute fréquence",
-   "Pointage HyperSpot",
-   "ActiveSpot : pointage rapide",
-   "Régulation Hyper ARC Active",
-   "Affichage numérique",
-   "Refroidissement à eau performant",
-   "Télécommande",
-   "Réglages Synergy",
-   "Mode Job"
-  ],
-  "it": [
-   "Saldatura pulsata ad alta frequenza",
-   "Puntatura HyperSpot",
-   "ActiveSpot: puntatura rapida",
-   "Regolazione Hyper ARC Active",
-   "Display digitale",
-   "Raffreddamento ad acqua potente",
-   "Telecomando",
-   "Impostazioni Synergy",
-   "Modalità Job"
-  ]
- },
- "hypertig-acdc": {
-  "de": [
-   "Hochfrequenz-Impulsschweissen",
-   "HyperSpot-Punktschweissen",
-   "Hyper-ARC-Active-Regelung",
-   "Mix-TIG-Schweissen",
-   "Strommodulation einstellbar",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Digitale Anzeige für Volt und Ampere",
-   "Leistungsstarke Wasserkühlung",
-   "Fernbedienung",
-   "Synergy-Einstellungen",
-   "JOB-Modus"
-  ],
-  "src": "https://mahe-online.de/hypertig/",
-  "fr": [
-   "Soudage pulsé haute fréquence",
-   "Pointage HyperSpot",
-   "Régulation Hyper ARC Active",
-   "Soudage Mix TIG",
-   "Modulation de courant réglable",
-   "Câble d'alimentation de 5 mètres",
-   "Affichage numérique de la tension et du courant",
-   "Refroidissement à eau performant",
-   "Télécommande",
-   "Réglages Synergy",
-   "Mode Job"
-  ],
-  "it": [
-   "Saldatura pulsata ad alta frequenza",
-   "Puntatura HyperSpot",
-   "Regolazione Hyper ARC Active",
-   "Saldatura Mix TIG",
-   "Modulazione di corrente regolabile",
-   "Cavo di alimentazione da 5 metri",
-   "Display digitale di volt e ampere",
-   "Raffreddamento ad acqua potente",
-   "Telecomando",
-   "Impostazioni Synergy",
-   "Modalità Job"
-  ]
- },
- "plasma-tig": {
-  "de": [
-   "Plasma-TIG-Schweissen",
-   "MMA-Elektrodenschweissen",
-   "WIG-HF-Schweissen",
-   "WIG-Lift-Arc-Schweissen",
-   "Arc Force",
-   "Anti Stick",
-   "Up Slope",
-   "Down Slope",
-   "HF Start on / off",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Mikroregler für die Gasmenge",
-   "Interface"
-  ],
-  "src": "https://mahe-online.de/plasma-tig/",
-  "fr": [
-   "Soudage Plasma TIG",
-   "Soudage à l'électrode MMA",
-   "Soudage TIG avec amorçage HF",
-   "Soudage TIG Lift Arc",
-   "Arc Force",
-   "Anti-Stick",
-   "Up Slope",
-   "Down Slope",
-   "Amorçage HF activable/désactivable",
-   "Câble d'alimentation de 5 mètres",
-   "Microréglage du débit de gaz",
-   "Interface"
-  ],
-  "it": [
-   "Saldatura Plasma TIG",
-   "Saldatura a elettrodo MMA",
-   "Saldatura TIG con innesco HF",
-   "Saldatura TIG Lift Arc",
-   "Arc Force",
-   "Anti-Stick",
-   "Up Slope",
-   "Down Slope",
-   "Innesco HF attivabile/disattivabile",
-   "Cavo di alimentazione da 5 metri",
-   "Microregolazione della portata di gas",
-   "Interfaccia"
-  ]
- },
- "i-1600": {
-  "de": [
-   "Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden",
-   "Force Arc",
-   "Anti-Stick-Funktion",
-   "WIG Lift ARC",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Arbeitet an langen Versorgungskabeln",
-   "100-V-Technologie"
-  ],
-  "src": "https://mahe-online.de/i-1600/",
-  "fr": [
-   "Soudage avec des électrodes basiques, rutiles et cellulosiques",
-   "Force Arc",
-   "Fonction Anti-Stick",
-   "TIG Lift Arc",
-   "Câble d'alimentation de 5 mètres",
-   "Fonctionne sur de longs câbles d'alimentation",
-   "Technologie 100 V"
-  ],
-  "it": [
-   "Saldatura con elettrodi basici, rutilici e cellulosici",
-   "Force Arc",
-   "Funzione Anti-Stick",
-   "TIG Lift Arc",
-   "Cavo di alimentazione da 5 metri",
-   "Funziona con lunghi cavi di alimentazione",
-   "Tecnologia 100 V"
-  ]
- },
- "theta-40": {
-  "de": [
-   "Trennschnitt max. 8 mm",
-   "Qualitätsschnitt max. 5 mm",
-   "Stabile Lift-Arc-Zündung",
-   "Kleiner Brenner für enge Flächen",
-   "Timer für Gesamtzeit",
-   "Timer für die Standzeit der Verschleissteile",
-   "Lochblech-Schneidfunktion",
-   "Integrierter Wasserabscheider",
-   "Integrierte Druckanzeige",
-   "Plasmaschneidbrenner S 25 in 4 m fest verbaut",
-   "Massekabel 16 mm², 4 m, gehört zum Lieferumfang"
-  ],
-  "src": "https://mahe-online.de/theta-40/ · Brenner S 25 und Massekabel 16 mm2 fuehrt MAHE nur im Zubehoer-Reiter der Theta 40; in der Preisliste 2026 haben sie keine Artikelnummer, und MAHE schreibt zum S 25 selbst, er sei fest in der Maschine verbaut. Die Geraetezeile 1700.040.0 lautet 'Theta 40 mit Brenner S25 in 4 Meter ... mit Massekabel'.",
-  "fr": [
-   "Coupe de séparation jusqu'à 8 mm",
-   "Coupe de qualité jusqu'à 5 mm",
-   "Amorçage Lift Arc stable",
-   "Petite torche pour les zones étroites",
-   "Compteur de temps total",
-   "Compteur de durée de vie des consommables",
-   "Fonction de découpe de tôle perforée",
-   "Séparateur d'eau intégré",
-   "Manomètre intégré",
-   "Torche de découpe plasma S 25 de 4 m, montée à demeure",
-   "Câble de masse 16 mm², 4 m, compris dans la livraison"
-  ],
-  "it": [
-   "Taglio di separazione fino a 8 mm",
-   "Taglio di qualità fino a 5 mm",
-   "Innesco Lift Arc stabile",
-   "Torcia piccola per spazi ristretti",
-   "Contatore del tempo totale",
-   "Contatore di durata dei consumabili",
-   "Funzione di taglio per lamiera forata",
-   "Separatore d'acqua integrato",
-   "Manometro integrato",
-   "Torcia da taglio al plasma S 25 da 4 m, montata in modo fisso",
-   "Cavo di massa 16 mm², 4 m, compreso nella fornitura"
-  ]
- },
- "theta-60": {
-  "de": [
-   "HSC-Technologie",
-   "Niedrige Einsatzkosten",
-   "High-Performance-Schneiden",
-   "Trennschnitt < 35 mm",
-   "Empfohlener Schnitt < 25 mm",
-   "Stabile Lift-Arc-Zündung",
-   "Maximale Produktivität",
-   "Lochblech-Schneidfunktion",
-   "Funktion zum Fugenhobeln"
-  ],
-  "src": "https://mahe-online.de/theta-60-hsc/",
-  "fr": [
-   "Technologie HSC",
-   "Faibles coûts d'exploitation",
-   "Découpe haute performance",
-   "Coupe de séparation < 35 mm",
-   "Coupe recommandée < 25 mm",
-   "Amorçage Lift Arc stable",
-   "Productivité maximale",
-   "Fonction de découpe de tôle perforée",
-   "Fonction de gougeage"
-  ],
-  "it": [
-   "Tecnologia HSC",
-   "Bassi costi d'esercizio",
-   "Taglio ad alte prestazioni",
-   "Taglio di separazione < 35 mm",
-   "Taglio consigliato < 25 mm",
-   "Innesco Lift Arc stabile",
-   "Massima produttività",
-   "Funzione di taglio per lamiera forata",
-   "Funzione di scriccatura"
-  ]
- },
- "theta-120": {
-  "de": [
-   "HSC-Technologie",
-   "Niedrige Einsatzkosten",
-   "High-Performance-Schneiden",
-   "Trennschnitt max. 55 mm",
-   "Qualitätsschnitt max. 38 mm",
-   "Stabile Lift-Arc-Zündung",
-   "Maximale Produktivität",
-   "Optionale Schnittstelle für die Automation",
-   "Lochblech-Schneidfunktion",
-   "Funktion zum Fugenhobeln"
-  ],
-  "src": "https://mahe-online.de/theta-120-hsc/",
-  "fr": [
-   "Technologie HSC",
-   "Faibles coûts d'exploitation",
-   "Découpe haute performance",
-   "Coupe de séparation jusqu'à 55 mm",
-   "Coupe de qualité jusqu'à 38 mm",
-   "Amorçage Lift Arc stable",
-   "Productivité maximale",
-   "Interface d'automate en option",
-   "Fonction de découpe de tôle perforée",
-   "Fonction de gougeage"
-  ],
-  "it": [
-   "Tecnologia HSC",
-   "Bassi costi d'esercizio",
-   "Taglio ad alte prestazioni",
-   "Taglio di separazione fino a 55 mm",
-   "Taglio di qualità fino a 38 mm",
-   "Innesco Lift Arc stabile",
-   "Massima produttività",
-   "Interfaccia per automazione opzionale",
-   "Funzione di taglio per lamiera forata",
-   "Funzione di scriccatura"
-  ]
- },
- "theta-180": {
-  "de": [
-   "HSC-Technologie",
-   "Schneiden bis 80 mm",
-   "Funktion zum Fugenhobeln",
-   "Lochblech-Schneidfunktion",
-   "Zentralanschluss am Brenner",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Digitalanzeige",
-   "Anzeige für den Maschinenstatus",
-   "Brennerpakete mit einer Länge von bis zu 15,2 Metern"
-  ],
-  "src": "https://mahe-online.de/theta-160/",
-  "fr": [
-   "Technologie HSC",
-   "Découpe jusqu'à 80 mm",
-   "Fonction de gougeage",
-   "Fonction de découpe de tôle perforée",
-   "Raccord central sur la torche",
-   "Câble d'alimentation de 5 mètres",
-   "Affichage numérique",
-   "Affichage de l'état de la machine",
-   "Faisceaux de torche jusqu'à 15,2 mètres"
-  ],
-  "it": [
-   "Tecnologia HSC",
-   "Taglio fino a 80 mm",
-   "Funzione di scriccatura",
-   "Funzione di taglio per lamiera forata",
-   "Attacco centralizzato sulla torcia",
-   "Cavo di alimentazione da 5 metri",
-   "Display digitale",
-   "Indicazione dello stato della macchina",
-   "Pacchetti torcia fino a 15,2 metri"
-  ]
- },
- "theta-60-aut": {
-  "de": [
-   "HSC-Technologie",
-   "Niedrige Einsatzkosten",
-   "High-Performance-Schneiden",
-   "Trennschnitt < 35 mm",
-   "Empfohlener Schnitt < 25 mm",
-   "Stabile Lift-Arc-Zündung",
-   "Maximale Produktivität",
-   "Lochblech-Schneidfunktion",
-   "Funktion zum Fugenhobeln"
-  ],
-  "src": "https://mahe-online.de/theta-60-aut/",
-  "fr": [
-   "Technologie HSC",
-   "Faibles coûts d'exploitation",
-   "Découpe haute performance",
-   "Coupe de séparation < 35 mm",
-   "Coupe recommandée < 25 mm",
-   "Amorçage Lift Arc stable",
-   "Productivité maximale",
-   "Fonction de découpe de tôle perforée",
-   "Fonction de gougeage"
-  ],
-  "it": [
-   "Tecnologia HSC",
-   "Bassi costi d'esercizio",
-   "Taglio ad alte prestazioni",
-   "Taglio di separazione < 35 mm",
-   "Taglio consigliato < 25 mm",
-   "Innesco Lift Arc stabile",
-   "Massima produttività",
-   "Funzione di taglio per lamiera forata",
-   "Funzione di scriccatura"
-  ]
- },
- "theta-120-aut": {
-  "de": [
-   "HSC-Technologie",
-   "Automation-Schnittstelle",
-   "Niedrige Einsatzkosten",
-   "High-Performance-Schneiden",
-   "Trennschnitt über 55 mm",
-   "Qualitätsschnitt über 38 mm",
-   "Stabile Lift-Arc-Zündung",
-   "Maximale Produktivität",
-   "Lochblech-Schneidfunktion",
-   "Funktion zum Fugenhobeln"
-  ],
-  "src": "https://mahe-online.de/theta-120-aut/",
-  "fr": [
-   "Technologie HSC",
-   "Interface d’automatisation",
-   "Faibles coûts d'exploitation",
-   "Découpe haute performance",
-   "Coupe de séparation supérieure à 55 mm",
-   "Coupe de qualité supérieure à 38 mm",
-   "Amorçage Lift Arc stable",
-   "Productivité maximale",
-   "Fonction de découpe de tôle perforée",
-   "Fonction de gougeage"
-  ],
-  "it": [
-   "Tecnologia HSC",
-   "Interfaccia di automazione",
-   "Bassi costi d'esercizio",
-   "Taglio ad alte prestazioni",
-   "Taglio di separazione oltre 55 mm",
-   "Taglio di qualità oltre 38 mm",
-   "Innesco Lift Arc stabile",
-   "Massima produttività",
-   "Funzione di taglio per lamiera forata",
-   "Funzione di scriccatura"
-  ]
- },
- "omega-ax": {
-  "de": [
-   "Resonanzinverter mit DSP-Steuerung",
-   "Impulsschweissen mit bis zu 20 kHz",
-   "ActiveBoost-Funktion",
-   "Hyper-ARC-Active-Regelung",
-   "HyperSpot-Schweissen",
-   "Mix-TIG-Schweissen",
-   "Funktion zur Kalottenformung",
-   "Strommodulation einstellbar",
-   "5 Speicherplätze für schnellen Zugriff",
-   "Fernbedienung",
-   "Einfache Synergy-Bedienung",
-   "Automatische Pulseinstellung",
-   "Fernbedienung optional"
-  ],
-  "fr": [
-   "Onduleur à résonance piloté par contrôleur DSP",
-   "Soudage pulsé jusqu'à 20 kHz",
-   "Fonction ActiveBoost",
-   "Régulation Hyper ARC Active",
-   "Soudage HyperSpot",
-   "Soudage Mix TIG",
-   "Fonction de formage de la calotte",
-   "Modulation de courant réglable",
-   "5 emplacements mémoire pour un accès rapide",
-   "Télécommande",
-   "Commande Synergy simple",
-   "Réglage automatique de la pulsation",
-   "Télécommande en option"
-  ],
-  "it": [
-   "Inverter a risonanza pilotato da controller DSP",
-   "Saldatura pulsata fino a 20 kHz",
-   "Funzione ActiveBoost",
-   "Regolazione Hyper ARC Active",
-   "Saldatura HyperSpot",
-   "Saldatura Mix TIG",
-   "Funzione di formatura della calotta",
-   "Modulazione di corrente regolabile",
-   "5 posizioni di memoria per un accesso rapido",
-   "Telecomando",
-   "Comando Synergy semplice",
-   "Regolazione automatica dell'impulso",
-   "Telecomando opzionale"
-  ],
-  "src": "https://mahe-online.de/omega-ac-dc-2/"
- },
- "delta": {
-  "de": [
-   "Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden",
-   "Force Arc",
-   "Anti-Stick-Funktion",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Fernbedienung",
-   "WIG Lift Arc"
-  ],
-  "fr": [
-   "Soudage avec des électrodes basiques, rutiles et cellulosiques",
-   "Force Arc",
-   "Fonction Anti-Stick",
-   "Câble d'alimentation de 5 mètres",
-   "Télécommande",
-   "TIG Lift Arc"
-  ],
-  "it": [
-   "Saldatura con elettrodi basici, rutilici e cellulosici",
-   "Force Arc",
-   "Funzione Anti-Stick",
-   "Cavo di alimentazione da 5 metri",
-   "Telecomando",
-   "TIG Lift Arc"
-  ],
-  "src": "https://mahe-online.de/delta/"
- },
- "delta-digital": {
-  "de": [
-   "Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden",
-   "Arc Force einstellbar",
-   "Hot Start einstellbar",
-   "Anti-Stick-Funktion",
-   "Funktion zum Fugenhobeln",
-   "Einstellbare Leerlaufspannung ab 15 V",
-   "Stufenlose Vorwahl der Netzsicherung",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Digitale Anzeige für Volt und Ampere",
-   "Fernbedienung"
-  ],
-  "fr": [
-   "Soudage avec des électrodes basiques, rutiles et cellulosiques",
-   "Arc Force réglable",
-   "Hot Start réglable",
-   "Fonction Anti-Stick",
-   "Fonction de gougeage",
-   "Tension à vide réglable à partir de 15 V",
-   "Présélection continue du fusible secteur",
-   "Câble d'alimentation de 5 mètres",
-   "Affichage numérique de la tension et du courant",
-   "Télécommande"
-  ],
-  "it": [
-   "Saldatura con elettrodi basici, rutilici e cellulosici",
-   "Arc Force regolabile",
-   "Hot Start regolabile",
-   "Funzione Anti-Stick",
-   "Funzione di scriccatura",
-   "Tensione a vuoto regolabile da 15 V",
-   "Preselezione continua del fusibile di rete",
-   "Cavo di alimentazione da 5 metri",
-   "Display digitale di volt e ampere",
-   "Telecomando"
-  ],
-  "src": "https://mahe-online.de/delta-digital/"
- },
- "delta-digital-ds": {
-  "de": [
-   "Zum Unterwasserschweissen",
-   "15 V OCV",
-   "Aktive OCV-Überwachung",
-   "Optionaler Notausschalter",
-   "Force Arc",
-   "Anti-Stick-Funktion",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Funktion zum Fugenhobeln",
-   "Zwischen CV und CC umschaltbar",
-   "Digitale Anzeigen für Volt und Ampere",
-   "Data-Hold-Funktion",
-   "Mobil"
-  ],
-  "fr": [
-   "Pour le soudage sous-marin",
-   "Tension à vide de 15 V",
-   "Surveillance active de la tension à vide",
-   "Arrêt d'urgence en option",
-   "Force Arc",
-   "Fonction Anti-Stick",
-   "Câble d'alimentation de 5 mètres",
-   "Fonction de gougeage",
-   "Commutation entre les modes CV et CC",
-   "Affichages numériques de la tension et du courant",
-   "Fonction Data Hold",
-   "Mobile"
-  ],
-  "it": [
-   "Per la saldatura subacquea",
-   "Tensione a vuoto 15 V",
-   "Monitoraggio attivo della tensione a vuoto",
-   "Arresto di emergenza opzionale",
-   "Force Arc",
-   "Funzione Anti-Stick",
-   "Cavo di alimentazione da 5 metri",
-   "Funzione di scriccatura",
-   "Commutabile tra CV e CC",
-   "Display digitali di volt e ampere",
-   "Funzione Data Hold",
-   "Mobile"
-  ],
-  "src": "https://mahe-online.de/delta-digital-ds/"
- },
- "beta-dx": {
-  "de": [
-   "Resonanzinverter mit DSP-Steuerung",
-   "Impulsschweissen mit bis zu 20 kHz",
-   "ActiveBoost-Funktion",
-   "Hyper-ARC-Active-Regelung",
-   "HyperSpot-Schweissen",
-   "5 Speicherplätze für schnellen Zugriff",
-   "Fernbedienung",
-   "Einfache Synergy-Bedienung",
-   "Automatische Pulseinstellung",
-   "Fernbedienung optional"
-  ],
-  "fr": [
-   "Onduleur à résonance piloté par contrôleur DSP",
-   "Soudage pulsé jusqu'à 20 kHz",
-   "Fonction ActiveBoost",
-   "Régulation Hyper ARC Active",
-   "Soudage HyperSpot",
-   "5 emplacements mémoire pour un accès rapide",
-   "Télécommande",
-   "Commande Synergy simple",
-   "Réglage automatique de la pulsation",
-   "Télécommande en option"
-  ],
-  "it": [
-   "Inverter a risonanza pilotato da controller DSP",
-   "Saldatura pulsata fino a 20 kHz",
-   "Funzione ActiveBoost",
-   "Regolazione Hyper ARC Active",
-   "Saldatura HyperSpot",
-   "5 posizioni di memoria per un accesso rapido",
-   "Telecomando",
-   "Comando Synergy semplice",
-   "Regolazione automatica dell'impulso",
-   "Telecomando opzionale"
-  ],
-  "src": "https://mahe-online.de/beta-dx/"
- },
- "beta-digital": {
-  "de": [
-   "Hochfrequenz-Impulsschweissen",
-   "Hyper-ARC-Active-Regelung",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Digitale Ampere-Anzeige",
-   "Fernbedienung",
-   "Synergy-Einstellungen",
-   "JOB-Modus"
-  ],
-  "fr": [
-   "Soudage pulsé haute fréquence",
-   "Régulation Hyper ARC Active",
-   "Câble d'alimentation de 5 mètres",
-   "Affichage numérique du courant",
-   "Télécommande",
-   "Réglages Synergy",
-   "Mode Job"
-  ],
-  "it": [
-   "Saldatura pulsata ad alta frequenza",
-   "Regolazione Hyper ARC Active",
-   "Cavo di alimentazione da 5 metri",
-   "Display digitale degli ampere",
-   "Telecomando",
-   "Impostazioni Synergy",
-   "Modalità Job"
-  ],
-  "src": "https://mahe-online.de/beta-digital/"
- },
- "mms": {
-  "de": [
-   "Spritzerfreier Lichtbogen",
-   "Mobil und leicht, nur 11,5 kg",
-   "Rollenantrieb",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Umpolsystem",
-   "D200-Spule",
-   "WIG Lift Arc",
-   "Impulslichtbogen",
-   "Lichtbogen mit HyperCold / HyperRoot",
-   "Mobil und leicht, nur 21 kg",
-   "4-Rollenantrieb",
-   "D300-Spule"
-  ],
-  "fr": [
-   "Arc sans projections",
-   "Mobile et léger, seulement 11,5 kg",
-   "Entraînement à galets",
-   "Câble d'alimentation de 5 mètres",
-   "Système d'inversion de polarité",
-   "Bobine D200",
-   "TIG Lift Arc",
-   "Arc pulsé",
-   "Arc HyperCold / HyperRoot",
-   "Mobile et léger, seulement 21 kg",
-   "Entraînement à 4 galets",
-   "Bobine D300"
-  ],
-  "it": [
-   "Arco senza spruzzi",
-   "Mobile e leggero, solo 11,5 kg",
-   "Trainafilo a rulli",
-   "Cavo di alimentazione da 5 metri",
-   "Sistema di inversione di polarità",
-   "Bobina D200",
-   "TIG Lift Arc",
-   "Arco pulsato",
-   "Arco HyperCold / HyperRoot",
-   "Mobile e leggero, solo 21 kg",
-   "Trainafilo a 4 rulli",
-   "Bobina D300"
-  ],
-  "src": "https://mahe-online.de/mms/"
- },
- "mpt-3001": {
-  "de": [
-   "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie",
-   "Arbeitsbereich 3000 x 1500 mm",
-   "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
-   "Schneidstrom 60 A, 120 A oder 180 A",
-   "Steuerung über das System CNC von MAHE",
-   "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
-   "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
-   "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
-   "Höhenabtastung des Materials vor jedem Einstich",
-   "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
-   "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
-   "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-   "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
-  ],
-  "fr": [
-   "Table de découpe plasma CNC professionnelle, livrée en ensemble avec une source de courant MAHE Theta",
-   "Surface de travail 3000 x 1500 mm",
-   "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
-   "Courant de coupe 60 A, 120 A ou 180 A",
-   "Commande par le système CNC de MAHE",
-   "Import de dessins 2D aux formats DXF et HPGL/PLT",
-   "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
-   "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
-   "Palpage de la hauteur du matériau avant chaque perçage",
-   "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
-   "Marquage et traçage à une vitesse spécifique, attribués par une couleur de calque dédiée",
-   "Console de commande avec ordinateur Windows et écran sur la table",
-   "Mise en service et formation à l’utilisation par VES-TECH Swiss"
-  ],
-  "it": [
-   "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
-   "Area di lavoro 3000 x 1500 mm",
-   "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
-   "Corrente di taglio 60 A, 120 A o 180 A",
-   "Controllo tramite il sistema CNC di MAHE",
-   "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
-   "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
-   "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
-   "Tastatura dell'altezza del materiale prima di ogni sfondamento",
-   "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
-   "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
-   "Console di comando con computer Windows e schermo sul tavolo",
-   "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
-  ],
-  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 3001 - 3015, Set-Nrn. 1721.300.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT)."
- },
- "mpt-2501": {
-  "de": [
-   "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie",
-   "Arbeitsbereich 2500 x 1250 mm",
-   "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
-   "Schneidstrom 60 A, 120 A oder 180 A",
-   "Steuerung über das System CNC von MAHE",
-   "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
-   "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
-   "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
-   "Höhenabtastung des Materials vor jedem Einstich",
-   "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
-   "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
-   "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-   "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
-  ],
-  "fr": [
-   "Table de découpe plasma CNC professionnelle, livrée en ensemble avec une source de courant MAHE Theta",
-   "Surface de travail 2500 x 1250 mm",
-   "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
-   "Courant de coupe 60 A, 120 A ou 180 A",
-   "Commande par le système CNC de MAHE",
-   "Import de dessins 2D aux formats DXF et HPGL/PLT",
-   "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
-   "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
-   "Palpage de la hauteur du matériau avant chaque perçage",
-   "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
-   "Marquage et traçage à une vitesse spécifique, attribués par une couleur de calque dédiée",
-   "Console de commande avec ordinateur Windows et écran sur la table",
-   "Mise en service et formation à l’utilisation par VES-TECH Swiss"
-  ],
-  "it": [
-   "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
-   "Area di lavoro 2500 x 1250 mm",
-   "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
-   "Corrente di taglio 60 A, 120 A o 180 A",
-   "Controllo tramite il sistema CNC di MAHE",
-   "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
-   "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
-   "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
-   "Tastatura dell'altezza del materiale prima di ogni sfondamento",
-   "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
-   "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
-   "Console di comando con computer Windows e schermo sul tavolo",
-   "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
-  ],
-  "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT)."
- },
- "hypermig-twin": {
-  "de": [
-   "Zwei Drahtvorschubkoffer für verschiedene Schweissdrähte",
-   "Automatische Parametereinstellung durch Drücken des Brennertasters",
-   "Digital synergy kontrolliert",
-   "Spritzerfreier Lichtbogen",
-   "HyperPuls, HyperSpeedPuls",
-   "HyperCold und HyperForce",
-   "MMA und Fugenhobeln",
-   "Fernbedienung (Up/Down Brennertaster)",
-   "4-Rollenantrieb",
-   "Zuleitungskabel mit 5 Metern Länge",
-   "Zwischenschlauchpakete bis 20 Meter",
-   "Temperatur kontrollierte Lüfter",
-   "Wasserpumpen Automatik on/off",
-   "Hochleistungs-Wasserkühlung",
-   "Umweltfreundliches Design, 100% recycelbar."
-  ],
-  "fr": [
-   "Deux dévidoirs pour différents fils de soudage",
-   "Sélection automatique des paramètres par la gâchette de la torche",
-   "Commande synergique numérique",
-   "Arc sans projections",
-   "HyperPuls, HyperSpeedPuls",
-   "HyperCold et HyperForce",
-   "MMA et gougeage",
-   "Commande à distance par touches Up/Down de la torche",
-   "Entraînement à 4 galets",
-   "Câble d’alimentation de 5 mètres",
-   "Faisceaux intermédiaires jusqu’à 20 mètres",
-   "Ventilateurs régulés en température",
-   "Commande automatique marche/arrêt de la pompe à eau",
-   "Refroidissement à eau haute performance",
-   "Conception respectueuse de l’environnement, recyclable à 100 %"
-  ],
-  "it": [
-   "Due trainafilo per fili di saldatura diversi",
-   "Selezione automatica dei parametri tramite il pulsante della torcia",
-   "Comando sinergico digitale",
-   "Arco senza spruzzi",
-   "HyperPuls, HyperSpeedPuls",
-   "HyperCold e HyperForce",
-   "MMA e scriccatura",
-   "Comando a distanza tramite pulsanti Up/Down della torcia",
-   "Trainafilo a 4 rulli",
-   "Cavo di alimentazione da 5 metri",
-   "Fasci intermedi fino a 20 metri",
-   "Ventilatori regolati in base alla temperatura",
-   "Comando automatico on/off della pompa dell’acqua",
-   "Raffreddamento ad acqua ad alte prestazioni",
-   "Progettazione rispettosa dell’ambiente, riciclabile al 100 %"
-  ]
- }
+  "hcs1": {
+    "de": [
+      "Stromquelle zum Markieren",
+      "Tiefschwarz markieren",
+      "Kurzschlussschutzsystem",
+      "Geeignet für Schablonen aller Hersteller"
+    ],
+    "src": "https://mahe-online.de/hcs-1-signiergerat/",
+    "fr": [
+      "Source de courant pour le marquage",
+      "Marquage noir profond",
+      "Système de protection contre les courts-circuits",
+      "Compatible avec les pochoirs de tous les fabricants"
+    ],
+    "it": [
+      "Generatore per la marcatura",
+      "Marcatura in nero intenso",
+      "Sistema di protezione dai cortocircuiti",
+      "Compatibile con le maschere di tutti i produttori"
+    ],
+    "en": [
+      "Power source for marking",
+      "Deep-black marking",
+      "Short-circuit protection system",
+      "Suitable for stencils from all manufacturers"
+    ]
+  },
+  "mlf100": {
+    "de": [
+      "Leichtes und kompaktes Gerät zur automatischen Dosierung von Reinigungsflüssigkeit",
+      "Automatischer oder manueller Dosiermodus",
+      "Möglichkeit zum Anschluss eines externen Tanks",
+      "Reinigungsmodus und Spülmodus",
+      "Kompatibel mit allen MAHE-HyperCleaner-Reinigungsgeräten",
+      "Mit Montagesatz zur Befestigung an MAHE HyperCleaner-Geräten",
+      "Mit Reinigungspinselständer mit Tropfschutz"
+    ],
+    "src": "https://mahe-online.de/mlf100/ · Montagesatz und Pinselstaender fuehrt MAHE dort im Zubehoer-Reiter des MLF 100; in der Preisliste 2026 haben sie keine Artikelnummer, sind also nicht einzeln bestellbar, sondern gehoeren zum Geraet.",
+    "fr": [
+      "Appareil léger et compact pour le dosage automatique du liquide de nettoyage.",
+      "Mode de dosage automatique ou manuel",
+      "Possibilité de raccorder un réservoir externe",
+      "Mode nettoyage et rinçage",
+      "Compatible avec tous les appareils de nettoyage MAHE HyperCleaner.",
+      "Avec kit de fixation pour le montage sur les appareils MAHE HyperCleaner",
+      "Avec support de pinceau de nettoyage et protection anti-gouttes"
+    ],
+    "it": [
+      "Apparecchio leggero e compatto per il dosaggio automatico del liquido di pulizia.",
+      "Modalità di dosaggio automatica o manuale",
+      "Possibilità di collegare un serbatoio esterno",
+      "Modalità di pulizia e risciacquo",
+      "Compatibile con tutti gli apparecchi di pulizia Mahe HyperCleaner.",
+      "Con kit di fissaggio per il montaggio sugli apparecchi MAHE HyperCleaner",
+      "Con supporto per pennello di pulizia con protezione antigoccia"
+    ],
+    "en": [
+      "Lightweight, compact unit for automatic cleaning fluid dosing",
+      "Automatic or manual dosing mode",
+      "Connection for an external tank",
+      "Cleaning and rinsing modes",
+      "Compatible with all MAHE HyperCleaner cleaning systems",
+      "With mounting kit for attachment to MAHE HyperCleaner systems",
+      "With cleaning brush stand and drip protection"
+    ]
+  },
+  "minicleaner": {
+    "de": [
+      "Leistungsstarke 200-Watt-Inverter-Stromquelle",
+      "MAHE-Pinselschutzsystem",
+      "Reinigen, Polieren und Markieren",
+      "Synergieprogramm für alle Verfahren",
+      "Umweltfreundlich und sicher reinigen"
+    ],
+    "src": "https://mahe-online.de/minicleaner/",
+    "fr": [
+      "Source de courant puissante à onduleur de 200 watts",
+      "Système de protection du pinceau MAHE",
+      "Nettoyer, polir et marquer",
+      "Programme synergique pour tous les procédés",
+      "Nettoyage écologique et sûr"
+    ],
+    "it": [
+      "Generatore inverter potente da 200 watt",
+      "Sistema di protezione del pennello Mahe",
+      "Pulire, lucidare e marcare",
+      "Programma sinergico per tutti i processi",
+      "Pulizia ecologica e sicura"
+    ],
+    "en": [
+      "Powerful 200 W inverter power source",
+      "MAHE brush protection system",
+      "Cleaning, polishing and marking",
+      "Synergic program for all processes",
+      "Environmentally friendly and safe cleaning"
+    ]
+  },
+  "hypercleaner-st": {
+    "de": [
+      "Leistungsstarke 1200-Watt-Inverter-Stromquelle",
+      "MAHE-Pinselschutzsystem",
+      "Reinigen, Polieren und Markieren",
+      "Synergieprogramm für alle Verfahren",
+      "Umweltfreundlich und sicher reinigen"
+    ],
+    "src": "https://mahe-online.de/hypercleaner-st/",
+    "fr": [
+      "Source de courant puissante à onduleur de 1200 watts",
+      "Système de protection du pinceau MAHE",
+      "Nettoyer, polir et marquer",
+      "Programme synergique pour tous les procédés",
+      "Nettoyage écologique et sûr"
+    ],
+    "it": [
+      "Generatore inverter potente da 1200 watt",
+      "Sistema di protezione del pennello Mahe",
+      "Pulire, lucidare e marcare",
+      "Programma sinergico per tutti i processi",
+      "Pulizia ecologica e sicura"
+    ],
+    "en": [
+      "Powerful 1200 W inverter power source",
+      "MAHE brush protection system",
+      "Cleaning, polishing and marking",
+      "Synergic program for all processes",
+      "Environmentally friendly and safe cleaning"
+    ]
+  },
+  "hypercleaner-plus": {
+    "de": [
+      "Leistungsstarke 4000-Watt-Inverter-Stromquelle",
+      "MAHE-Pinselschutzsystem",
+      "Reinigen, Polieren, Markieren und Galvanisieren",
+      "Synergieprogramm für alle Verfahren",
+      "Umweltfreundlich und sicher reinigen"
+    ],
+    "src": "https://mahe-online.de/hypercleaner-st-plus/",
+    "fr": [
+      "Source de courant puissante à onduleur de 4000 watts",
+      "Système de protection du pinceau MAHE",
+      "Nettoyer, polir, marquer et galvaniser",
+      "Programme synergique pour tous les procédés",
+      "Nettoyage écologique et sûr"
+    ],
+    "it": [
+      "Generatore inverter potente da 4000 watt",
+      "Sistema di protezione del pennello Mahe",
+      "Pulire, lucidare, marcare e galvanizzare",
+      "Programma sinergico per tutti i processi",
+      "Pulizia ecologica e sicura"
+    ],
+    "en": [
+      "Powerful 4000 W inverter power source",
+      "MAHE brush protection system",
+      "Cleaning, polishing, marking and galvanising",
+      "Synergic program for all processes",
+      "Environmentally friendly and safe cleaning"
+    ]
+  },
+  "hypercleaner-speed": {
+    "de": [
+      "Leistungsstarke 2400-Watt-Inverter-Stromquelle",
+      "MAHE-Pinselschutzsystem",
+      "Reinigen, Polieren, Markieren und Galvanisieren",
+      "Synergieprogramm für alle Verfahren",
+      "Umweltfreundlich und sicher reinigen"
+    ],
+    "src": "https://mahe-online.de/hypercleaner-st-speed/",
+    "fr": [
+      "Source de courant puissante à onduleur de 2400 watts",
+      "Système de protection du pinceau MAHE",
+      "Nettoyer, polir, marquer et galvaniser",
+      "Programme synergique pour tous les procédés",
+      "Nettoyage écologique et sûr"
+    ],
+    "it": [
+      "Generatore inverter potente da 2400 watt",
+      "Sistema di protezione del pennello Mahe",
+      "Pulire, lucidare, marcare e galvanizzare",
+      "Programma sinergico per tutti i processi",
+      "Pulizia ecologica e sicura"
+    ],
+    "en": [
+      "Powerful 2400 W inverter power source",
+      "MAHE brush protection system",
+      "Cleaning, polishing, marking and galvanising",
+      "Synergic program for all processes",
+      "Environmentally friendly and safe cleaning"
+    ]
+  },
+  "hypercleaner-ct200": {
+    "de": [
+      "Multiprozess: WIG-Schweissen und Reinigen",
+      "WIG-Schweissen mit 200 A",
+      "Reinigen mit 2000 Watt",
+      "Reinigen, Polieren, Markieren und Galvanisieren",
+      "Umweltfreundlich und sicher reinigen"
+    ],
+    "src": "https://mahe-online.de/hypercleaner-ct-200/",
+    "fr": [
+      "Appareil multiprocédé pour le soudage TIG et le nettoyage",
+      "Soudage TIG à 200 A",
+      "Nettoyage à 2000 watts",
+      "Nettoyer, polir, marquer et galvaniser",
+      "Nettoyage écologique et sûr"
+    ],
+    "it": [
+      "Multiprocesso TIG e pulizia",
+      "Saldatura TIG con 200 A",
+      "Pulizia con 2000 watt",
+      "Pulire, lucidare, marcare e galvanizzare",
+      "Pulizia ecologica e sicura"
+    ],
+    "en": [
+      "Multiprocess: TIG welding and cleaning",
+      "TIG welding at 200 A",
+      "Cleaning at 2000 W",
+      "Cleaning, polishing, marking and galvanising",
+      "Environmentally friendly and safe cleaning"
+    ]
+  },
+  "hypertig-ax": {
+    "de": [
+      "Hochfrequenz-Impulsschweissen",
+      "HyperSpot-Punktschweissen",
+      "ActiveSpot: schnelle Heftfunktion",
+      "Hyper-ARC-Active-Regelung",
+      "Mix-TIG-Schweissen",
+      "Strommodulation einstellbar",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Digitale Anzeige",
+      "Leistungsstarke Wasserkühlung",
+      "Fernbedienung",
+      "Synergy-Einstellungen",
+      "JOB-Modus"
+    ],
+    "src": "https://mahe-online.de/hypertig-ax/",
+    "fr": [
+      "Soudage pulsé haute fréquence",
+      "Pointage HyperSpot",
+      "ActiveSpot : pointage rapide",
+      "Régulation Hyper ARC Active",
+      "Soudage Mix TIG",
+      "Modulation de courant réglable",
+      "Câble d'alimentation de 5 mètres",
+      "Affichage numérique",
+      "Refroidissement à eau performant",
+      "Télécommande",
+      "Réglages Synergy",
+      "Mode Job"
+    ],
+    "it": [
+      "Saldatura pulsata ad alta frequenza",
+      "Puntatura HyperSpot",
+      "ActiveSpot: puntatura rapida",
+      "Regolazione Hyper ARC Active",
+      "Saldatura Mix TIG",
+      "Modulazione di corrente regolabile",
+      "Cavo di alimentazione da 5 metri",
+      "Display digitale",
+      "Raffreddamento ad acqua potente",
+      "Telecomando",
+      "Impostazioni Synergy",
+      "Modalità Job"
+    ],
+    "en": [
+      "High-frequency pulse welding",
+      "HyperSpot spot welding",
+      "ActiveSpot: fast tacking function",
+      "Hyper-ARC-Active control",
+      "Mix TIG welding",
+      "Adjustable current modulation",
+      "5-metre supply cable",
+      "Digital display",
+      "High-performance water cooling",
+      "Remote control",
+      "Synergic settings",
+      "JOB mode"
+    ]
+  },
+  "hypertig-dx": {
+    "de": [
+      "Hochfrequenz-Impulsschweissen",
+      "HyperSpot-Punktschweissen",
+      "ActiveSpot: schnelle Heftfunktion",
+      "Hyper-ARC-Active-Regelung",
+      "Digitale Anzeige",
+      "Leistungsstarke Wasserkühlung",
+      "Fernbedienung",
+      "Synergy-Einstellungen",
+      "JOB-Modus"
+    ],
+    "src": "https://mahe-online.de/hypertig-dx/",
+    "fr": [
+      "Soudage pulsé haute fréquence",
+      "Pointage HyperSpot",
+      "ActiveSpot : pointage rapide",
+      "Régulation Hyper ARC Active",
+      "Affichage numérique",
+      "Refroidissement à eau performant",
+      "Télécommande",
+      "Réglages Synergy",
+      "Mode Job"
+    ],
+    "it": [
+      "Saldatura pulsata ad alta frequenza",
+      "Puntatura HyperSpot",
+      "ActiveSpot: puntatura rapida",
+      "Regolazione Hyper ARC Active",
+      "Display digitale",
+      "Raffreddamento ad acqua potente",
+      "Telecomando",
+      "Impostazioni Synergy",
+      "Modalità Job"
+    ],
+    "en": [
+      "High-frequency pulse welding",
+      "HyperSpot spot welding",
+      "ActiveSpot: fast tacking function",
+      "Hyper-ARC-Active control",
+      "Digital display",
+      "High-performance water cooling",
+      "Remote control",
+      "Synergic settings",
+      "JOB mode"
+    ]
+  },
+  "hypertig-acdc": {
+    "de": [
+      "Hochfrequenz-Impulsschweissen",
+      "HyperSpot-Punktschweissen",
+      "Hyper-ARC-Active-Regelung",
+      "Mix-TIG-Schweissen",
+      "Strommodulation einstellbar",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Digitale Anzeige für Volt und Ampere",
+      "Leistungsstarke Wasserkühlung",
+      "Fernbedienung",
+      "Synergy-Einstellungen",
+      "JOB-Modus"
+    ],
+    "src": "https://mahe-online.de/hypertig/",
+    "fr": [
+      "Soudage pulsé haute fréquence",
+      "Pointage HyperSpot",
+      "Régulation Hyper ARC Active",
+      "Soudage Mix TIG",
+      "Modulation de courant réglable",
+      "Câble d'alimentation de 5 mètres",
+      "Affichage numérique de la tension et du courant",
+      "Refroidissement à eau performant",
+      "Télécommande",
+      "Réglages Synergy",
+      "Mode Job"
+    ],
+    "it": [
+      "Saldatura pulsata ad alta frequenza",
+      "Puntatura HyperSpot",
+      "Regolazione Hyper ARC Active",
+      "Saldatura Mix TIG",
+      "Modulazione di corrente regolabile",
+      "Cavo di alimentazione da 5 metri",
+      "Display digitale di volt e ampere",
+      "Raffreddamento ad acqua potente",
+      "Telecomando",
+      "Impostazioni Synergy",
+      "Modalità Job"
+    ],
+    "en": [
+      "High-frequency pulse welding",
+      "HyperSpot spot welding",
+      "Hyper-ARC-Active control",
+      "Mix TIG welding",
+      "Adjustable current modulation",
+      "5-metre supply cable",
+      "Digital voltage and current display",
+      "High-performance water cooling",
+      "Remote control",
+      "Synergic settings",
+      "JOB mode"
+    ]
+  },
+  "plasma-tig": {
+    "de": [
+      "Plasma-TIG-Schweissen",
+      "MMA-Elektrodenschweissen",
+      "WIG-HF-Schweissen",
+      "WIG-Lift-Arc-Schweissen",
+      "Arc Force",
+      "Anti Stick",
+      "Up Slope",
+      "Down Slope",
+      "HF Start on / off",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Mikroregler für die Gasmenge",
+      "Interface"
+    ],
+    "src": "https://mahe-online.de/plasma-tig/",
+    "fr": [
+      "Soudage Plasma TIG",
+      "Soudage à l'électrode MMA",
+      "Soudage TIG avec amorçage HF",
+      "Soudage TIG Lift Arc",
+      "Arc Force",
+      "Anti-Stick",
+      "Up Slope",
+      "Down Slope",
+      "Amorçage HF activable/désactivable",
+      "Câble d'alimentation de 5 mètres",
+      "Microréglage du débit de gaz",
+      "Interface"
+    ],
+    "it": [
+      "Saldatura Plasma TIG",
+      "Saldatura a elettrodo MMA",
+      "Saldatura TIG con innesco HF",
+      "Saldatura TIG Lift Arc",
+      "Arc Force",
+      "Anti-Stick",
+      "Up Slope",
+      "Down Slope",
+      "Innesco HF attivabile/disattivabile",
+      "Cavo di alimentazione da 5 metri",
+      "Microregolazione della portata di gas",
+      "Interfaccia"
+    ],
+    "en": [
+      "Plasma TIG welding",
+      "MMA stick welding",
+      "TIG HF welding",
+      "TIG Lift Arc welding",
+      "Arc Force",
+      "Anti-Stick",
+      "Up slope",
+      "Down slope",
+      "HF start on/off",
+      "5-metre supply cable",
+      "Fine gas flow adjustment",
+      "Interface"
+    ]
+  },
+  "i-1600": {
+    "de": [
+      "Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden",
+      "Force Arc",
+      "Anti-Stick-Funktion",
+      "WIG Lift ARC",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Arbeitet an langen Versorgungskabeln",
+      "100-V-Technologie"
+    ],
+    "src": "https://mahe-online.de/i-1600/",
+    "fr": [
+      "Soudage avec des électrodes basiques, rutiles et cellulosiques",
+      "Force Arc",
+      "Fonction Anti-Stick",
+      "TIG Lift Arc",
+      "Câble d'alimentation de 5 mètres",
+      "Fonctionne sur de longs câbles d'alimentation",
+      "Technologie 100 V"
+    ],
+    "it": [
+      "Saldatura con elettrodi basici, rutilici e cellulosici",
+      "Force Arc",
+      "Funzione Anti-Stick",
+      "TIG Lift Arc",
+      "Cavo di alimentazione da 5 metri",
+      "Funziona con lunghi cavi di alimentazione",
+      "Tecnologia 100 V"
+    ],
+    "en": [
+      "Welds with basic, rutile and cellulosic electrodes",
+      "Force Arc",
+      "Anti-Stick function",
+      "TIG Lift Arc",
+      "5-metre supply cable",
+      "Operates with long supply cables",
+      "100 V technology"
+    ]
+  },
+  "theta-40": {
+    "de": [
+      "Trennschnitt max. 8 mm",
+      "Qualitätsschnitt max. 5 mm",
+      "Stabile Lift-Arc-Zündung",
+      "Kleiner Brenner für enge Flächen",
+      "Timer für Gesamtzeit",
+      "Timer für die Standzeit der Verschleissteile",
+      "Lochblech-Schneidfunktion",
+      "Integrierter Wasserabscheider",
+      "Integrierte Druckanzeige",
+      "Plasmaschneidbrenner S 25 in 4 m fest verbaut",
+      "Massekabel 16 mm², 4 m, gehört zum Lieferumfang"
+    ],
+    "src": "https://mahe-online.de/theta-40/ · Brenner S 25 und Massekabel 16 mm2 fuehrt MAHE nur im Zubehoer-Reiter der Theta 40; in der Preisliste 2026 haben sie keine Artikelnummer, und MAHE schreibt zum S 25 selbst, er sei fest in der Maschine verbaut. Die Geraetezeile 1700.040.0 lautet 'Theta 40 mit Brenner S25 in 4 Meter ... mit Massekabel'.",
+    "fr": [
+      "Coupe de séparation jusqu'à 8 mm",
+      "Coupe de qualité jusqu'à 5 mm",
+      "Amorçage Lift Arc stable",
+      "Petite torche pour les zones étroites",
+      "Compteur de temps total",
+      "Compteur de durée de vie des consommables",
+      "Fonction de découpe de tôle perforée",
+      "Séparateur d'eau intégré",
+      "Manomètre intégré",
+      "Torche de découpe plasma S 25 de 4 m, montée à demeure",
+      "Câble de masse 16 mm², 4 m, compris dans la livraison"
+    ],
+    "it": [
+      "Taglio di separazione fino a 8 mm",
+      "Taglio di qualità fino a 5 mm",
+      "Innesco Lift Arc stabile",
+      "Torcia piccola per spazi ristretti",
+      "Contatore del tempo totale",
+      "Contatore di durata dei consumabili",
+      "Funzione di taglio per lamiera forata",
+      "Separatore d'acqua integrato",
+      "Manometro integrato",
+      "Torcia da taglio al plasma S 25 da 4 m, montata in modo fisso",
+      "Cavo di massa 16 mm², 4 m, compreso nella fornitura"
+    ],
+    "en": [
+      "Severance cut maximum 8 mm",
+      "Quality cut maximum 5 mm",
+      "Stable Lift Arc ignition",
+      "Small torch for confined areas",
+      "Total operating time counter",
+      "Consumable service life timer",
+      "Perforated sheet cutting function",
+      "Integrated water separator",
+      "Integrated pressure display",
+      "Built-in S 25 plasma cutting torch, 4 m",
+      "Work return cable 16 mm², 4 m, included in the scope of supply"
+    ]
+  },
+  "theta-60": {
+    "de": [
+      "HSC-Technologie",
+      "Niedrige Einsatzkosten",
+      "High-Performance-Schneiden",
+      "Trennschnitt < 35 mm",
+      "Empfohlener Schnitt < 25 mm",
+      "Stabile Lift-Arc-Zündung",
+      "Maximale Produktivität",
+      "Lochblech-Schneidfunktion",
+      "Funktion zum Fugenhobeln"
+    ],
+    "src": "https://mahe-online.de/theta-60-hsc/",
+    "fr": [
+      "Technologie HSC",
+      "Faibles coûts d'exploitation",
+      "Découpe haute performance",
+      "Coupe de séparation < 35 mm",
+      "Coupe recommandée < 25 mm",
+      "Amorçage Lift Arc stable",
+      "Productivité maximale",
+      "Fonction de découpe de tôle perforée",
+      "Fonction de gougeage"
+    ],
+    "it": [
+      "Tecnologia HSC",
+      "Bassi costi d'esercizio",
+      "Taglio ad alte prestazioni",
+      "Taglio di separazione < 35 mm",
+      "Taglio consigliato < 25 mm",
+      "Innesco Lift Arc stabile",
+      "Massima produttività",
+      "Funzione di taglio per lamiera forata",
+      "Funzione di scriccatura"
+    ],
+    "en": [
+      "HSC technology",
+      "Low operating costs",
+      "High-performance cutting",
+      "Severance cut < 35 mm",
+      "Recommended cut < 25 mm",
+      "Stable Lift Arc ignition",
+      "Maximum productivity",
+      "Perforated sheet cutting function",
+      "Gouging function"
+    ]
+  },
+  "theta-120": {
+    "de": [
+      "HSC-Technologie",
+      "Niedrige Einsatzkosten",
+      "High-Performance-Schneiden",
+      "Trennschnitt max. 55 mm",
+      "Qualitätsschnitt max. 38 mm",
+      "Stabile Lift-Arc-Zündung",
+      "Maximale Produktivität",
+      "Optionale Schnittstelle für die Automation",
+      "Lochblech-Schneidfunktion",
+      "Funktion zum Fugenhobeln"
+    ],
+    "src": "https://mahe-online.de/theta-120-hsc/",
+    "fr": [
+      "Technologie HSC",
+      "Faibles coûts d'exploitation",
+      "Découpe haute performance",
+      "Coupe de séparation jusqu'à 55 mm",
+      "Coupe de qualité jusqu'à 38 mm",
+      "Amorçage Lift Arc stable",
+      "Productivité maximale",
+      "Interface d'automate en option",
+      "Fonction de découpe de tôle perforée",
+      "Fonction de gougeage"
+    ],
+    "it": [
+      "Tecnologia HSC",
+      "Bassi costi d'esercizio",
+      "Taglio ad alte prestazioni",
+      "Taglio di separazione fino a 55 mm",
+      "Taglio di qualità fino a 38 mm",
+      "Innesco Lift Arc stabile",
+      "Massima produttività",
+      "Interfaccia per automazione opzionale",
+      "Funzione di taglio per lamiera forata",
+      "Funzione di scriccatura"
+    ],
+    "en": [
+      "HSC technology",
+      "Low operating costs",
+      "High-performance cutting",
+      "Severance cut maximum 55 mm",
+      "Quality cut maximum 38 mm",
+      "Stable Lift Arc ignition",
+      "Maximum productivity",
+      "Optional automation interface",
+      "Perforated sheet cutting function",
+      "Gouging function"
+    ]
+  },
+  "theta-180": {
+    "de": [
+      "HSC-Technologie",
+      "Schneiden bis 80 mm",
+      "Funktion zum Fugenhobeln",
+      "Lochblech-Schneidfunktion",
+      "Zentralanschluss am Brenner",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Digitalanzeige",
+      "Anzeige für den Maschinenstatus",
+      "Brennerpakete mit einer Länge von bis zu 15,2 Metern"
+    ],
+    "src": "https://mahe-online.de/theta-160/",
+    "fr": [
+      "Technologie HSC",
+      "Découpe jusqu'à 80 mm",
+      "Fonction de gougeage",
+      "Fonction de découpe de tôle perforée",
+      "Raccord central sur la torche",
+      "Câble d'alimentation de 5 mètres",
+      "Affichage numérique",
+      "Affichage de l'état de la machine",
+      "Faisceaux de torche jusqu'à 15,2 mètres"
+    ],
+    "it": [
+      "Tecnologia HSC",
+      "Taglio fino a 80 mm",
+      "Funzione di scriccatura",
+      "Funzione di taglio per lamiera forata",
+      "Attacco centralizzato sulla torcia",
+      "Cavo di alimentazione da 5 metri",
+      "Display digitale",
+      "Indicazione dello stato della macchina",
+      "Pacchetti torcia fino a 15,2 metri"
+    ],
+    "en": [
+      "HSC technology",
+      "Cutting up to 80 mm",
+      "Gouging function",
+      "Perforated sheet cutting function",
+      "Central torch connection",
+      "5-metre supply cable",
+      "Digital display",
+      "Machine status display",
+      "Torch assemblies up to 15.2 metres long"
+    ]
+  },
+  "theta-60-aut": {
+    "de": [
+      "HSC-Technologie",
+      "Niedrige Einsatzkosten",
+      "High-Performance-Schneiden",
+      "Trennschnitt < 35 mm",
+      "Empfohlener Schnitt < 25 mm",
+      "Stabile Lift-Arc-Zündung",
+      "Maximale Produktivität",
+      "Lochblech-Schneidfunktion",
+      "Funktion zum Fugenhobeln"
+    ],
+    "src": "https://mahe-online.de/theta-60-aut/",
+    "fr": [
+      "Technologie HSC",
+      "Faibles coûts d'exploitation",
+      "Découpe haute performance",
+      "Coupe de séparation < 35 mm",
+      "Coupe recommandée < 25 mm",
+      "Amorçage Lift Arc stable",
+      "Productivité maximale",
+      "Fonction de découpe de tôle perforée",
+      "Fonction de gougeage"
+    ],
+    "it": [
+      "Tecnologia HSC",
+      "Bassi costi d'esercizio",
+      "Taglio ad alte prestazioni",
+      "Taglio di separazione < 35 mm",
+      "Taglio consigliato < 25 mm",
+      "Innesco Lift Arc stabile",
+      "Massima produttività",
+      "Funzione di taglio per lamiera forata",
+      "Funzione di scriccatura"
+    ],
+    "en": [
+      "HSC technology",
+      "Low operating costs",
+      "High-performance cutting",
+      "Severance cut < 35 mm",
+      "Recommended cut < 25 mm",
+      "Stable Lift Arc ignition",
+      "Maximum productivity",
+      "Perforated sheet cutting function",
+      "Gouging function"
+    ]
+  },
+  "theta-120-aut": {
+    "de": [
+      "HSC-Technologie",
+      "Automation-Schnittstelle",
+      "Niedrige Einsatzkosten",
+      "High-Performance-Schneiden",
+      "Trennschnitt über 55 mm",
+      "Qualitätsschnitt über 38 mm",
+      "Stabile Lift-Arc-Zündung",
+      "Maximale Produktivität",
+      "Lochblech-Schneidfunktion",
+      "Funktion zum Fugenhobeln"
+    ],
+    "src": "https://mahe-online.de/theta-120-aut/",
+    "fr": [
+      "Technologie HSC",
+      "Interface d’automatisation",
+      "Faibles coûts d'exploitation",
+      "Découpe haute performance",
+      "Coupe de séparation supérieure à 55 mm",
+      "Coupe de qualité supérieure à 38 mm",
+      "Amorçage Lift Arc stable",
+      "Productivité maximale",
+      "Fonction de découpe de tôle perforée",
+      "Fonction de gougeage"
+    ],
+    "it": [
+      "Tecnologia HSC",
+      "Interfaccia di automazione",
+      "Bassi costi d'esercizio",
+      "Taglio ad alte prestazioni",
+      "Taglio di separazione oltre 55 mm",
+      "Taglio di qualità oltre 38 mm",
+      "Innesco Lift Arc stabile",
+      "Massima produttività",
+      "Funzione di taglio per lamiera forata",
+      "Funzione di scriccatura"
+    ],
+    "en": [
+      "HSC technology",
+      "Automation interface",
+      "Low operating costs",
+      "High-performance cutting",
+      "Severance cut over 55 mm",
+      "Quality cut over 38 mm",
+      "Stable Lift Arc ignition",
+      "Maximum productivity",
+      "Perforated sheet cutting function",
+      "Gouging function"
+    ]
+  },
+  "omega-ax": {
+    "de": [
+      "Resonanzinverter mit DSP-Steuerung",
+      "Impulsschweissen mit bis zu 20 kHz",
+      "ActiveBoost-Funktion",
+      "Hyper-ARC-Active-Regelung",
+      "HyperSpot-Schweissen",
+      "Mix-TIG-Schweissen",
+      "Funktion zur Kalottenformung",
+      "Strommodulation einstellbar",
+      "5 Speicherplätze für schnellen Zugriff",
+      "Fernbedienung",
+      "Einfache Synergy-Bedienung",
+      "Automatische Pulseinstellung",
+      "Fernbedienung optional"
+    ],
+    "fr": [
+      "Onduleur à résonance piloté par contrôleur DSP",
+      "Soudage pulsé jusqu'à 20 kHz",
+      "Fonction ActiveBoost",
+      "Régulation Hyper ARC Active",
+      "Soudage HyperSpot",
+      "Soudage Mix TIG",
+      "Fonction de formage de la calotte",
+      "Modulation de courant réglable",
+      "5 emplacements mémoire pour un accès rapide",
+      "Télécommande",
+      "Commande Synergy simple",
+      "Réglage automatique de la pulsation",
+      "Télécommande en option"
+    ],
+    "it": [
+      "Inverter a risonanza pilotato da controller DSP",
+      "Saldatura pulsata fino a 20 kHz",
+      "Funzione ActiveBoost",
+      "Regolazione Hyper ARC Active",
+      "Saldatura HyperSpot",
+      "Saldatura Mix TIG",
+      "Funzione di formatura della calotta",
+      "Modulazione di corrente regolabile",
+      "5 posizioni di memoria per un accesso rapido",
+      "Telecomando",
+      "Comando Synergy semplice",
+      "Regolazione automatica dell'impulso",
+      "Telecomando opzionale"
+    ],
+    "src": "https://mahe-online.de/omega-ac-dc-2/",
+    "en": [
+      "Resonant inverter with DSP control",
+      "Pulse welding up to 20 kHz",
+      "ActiveBoost function",
+      "Hyper-ARC-Active control",
+      "HyperSpot welding",
+      "Mix TIG welding",
+      "Electrode balling function",
+      "Adjustable current modulation",
+      "5 memory locations for quick access",
+      "Remote control",
+      "Simple synergic operation",
+      "Automatic pulse adjustment",
+      "Optional remote control"
+    ]
+  },
+  "delta": {
+    "de": [
+      "Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden",
+      "Force Arc",
+      "Anti-Stick-Funktion",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Fernbedienung",
+      "WIG Lift Arc"
+    ],
+    "fr": [
+      "Soudage avec des électrodes basiques, rutiles et cellulosiques",
+      "Force Arc",
+      "Fonction Anti-Stick",
+      "Câble d'alimentation de 5 mètres",
+      "Télécommande",
+      "TIG Lift Arc"
+    ],
+    "it": [
+      "Saldatura con elettrodi basici, rutilici e cellulosici",
+      "Force Arc",
+      "Funzione Anti-Stick",
+      "Cavo di alimentazione da 5 metri",
+      "Telecomando",
+      "TIG Lift Arc"
+    ],
+    "src": "https://mahe-online.de/delta/",
+    "en": [
+      "Welds with basic, rutile and cellulosic electrodes",
+      "Force Arc",
+      "Anti-Stick function",
+      "5-metre supply cable",
+      "Remote control",
+      "TIG Lift Arc"
+    ]
+  },
+  "delta-digital": {
+    "de": [
+      "Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden",
+      "Arc Force einstellbar",
+      "Hot Start einstellbar",
+      "Anti-Stick-Funktion",
+      "Funktion zum Fugenhobeln",
+      "Einstellbare Leerlaufspannung ab 15 V",
+      "Stufenlose Vorwahl der Netzsicherung",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Digitale Anzeige für Volt und Ampere",
+      "Fernbedienung"
+    ],
+    "fr": [
+      "Soudage avec des électrodes basiques, rutiles et cellulosiques",
+      "Arc Force réglable",
+      "Hot Start réglable",
+      "Fonction Anti-Stick",
+      "Fonction de gougeage",
+      "Tension à vide réglable à partir de 15 V",
+      "Présélection continue du fusible secteur",
+      "Câble d'alimentation de 5 mètres",
+      "Affichage numérique de la tension et du courant",
+      "Télécommande"
+    ],
+    "it": [
+      "Saldatura con elettrodi basici, rutilici e cellulosici",
+      "Arc Force regolabile",
+      "Hot Start regolabile",
+      "Funzione Anti-Stick",
+      "Funzione di scriccatura",
+      "Tensione a vuoto regolabile da 15 V",
+      "Preselezione continua del fusibile di rete",
+      "Cavo di alimentazione da 5 metri",
+      "Display digitale di volt e ampere",
+      "Telecomando"
+    ],
+    "src": "https://mahe-online.de/delta-digital/",
+    "en": [
+      "Welds with basic, rutile and cellulosic electrodes",
+      "Adjustable Arc Force",
+      "Adjustable Hot Start",
+      "Anti-Stick function",
+      "Gouging function",
+      "Adjustable open-circuit voltage from 15 V",
+      "Stepless mains fuse preselection",
+      "5-metre supply cable",
+      "Digital voltage and current display",
+      "Remote control"
+    ]
+  },
+  "delta-digital-ds": {
+    "de": [
+      "Zum Unterwasserschweissen",
+      "15 V OCV",
+      "Aktive OCV-Überwachung",
+      "Optionaler Notausschalter",
+      "Force Arc",
+      "Anti-Stick-Funktion",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Funktion zum Fugenhobeln",
+      "Zwischen CV und CC umschaltbar",
+      "Digitale Anzeigen für Volt und Ampere",
+      "Data-Hold-Funktion",
+      "Mobil"
+    ],
+    "fr": [
+      "Pour le soudage sous-marin",
+      "Tension à vide de 15 V",
+      "Surveillance active de la tension à vide",
+      "Arrêt d'urgence en option",
+      "Force Arc",
+      "Fonction Anti-Stick",
+      "Câble d'alimentation de 5 mètres",
+      "Fonction de gougeage",
+      "Commutation entre les modes CV et CC",
+      "Affichages numériques de la tension et du courant",
+      "Fonction Data Hold",
+      "Mobile"
+    ],
+    "it": [
+      "Per la saldatura subacquea",
+      "Tensione a vuoto 15 V",
+      "Monitoraggio attivo della tensione a vuoto",
+      "Arresto di emergenza opzionale",
+      "Force Arc",
+      "Funzione Anti-Stick",
+      "Cavo di alimentazione da 5 metri",
+      "Funzione di scriccatura",
+      "Commutabile tra CV e CC",
+      "Display digitali di volt e ampere",
+      "Funzione Data Hold",
+      "Mobile"
+    ],
+    "src": "https://mahe-online.de/delta-digital-ds/",
+    "en": [
+      "For underwater welding",
+      "15 V OCV",
+      "Active OCV monitoring",
+      "Optional emergency stop switch",
+      "Force Arc",
+      "Anti-Stick function",
+      "5-metre supply cable",
+      "Gouging function",
+      "Switchable between CV and CC",
+      "Digital voltage and current displays",
+      "Data Hold function",
+      "Mobile"
+    ]
+  },
+  "beta-dx": {
+    "de": [
+      "Resonanzinverter mit DSP-Steuerung",
+      "Impulsschweissen mit bis zu 20 kHz",
+      "ActiveBoost-Funktion",
+      "Hyper-ARC-Active-Regelung",
+      "HyperSpot-Schweissen",
+      "5 Speicherplätze für schnellen Zugriff",
+      "Fernbedienung",
+      "Einfache Synergy-Bedienung",
+      "Automatische Pulseinstellung",
+      "Fernbedienung optional"
+    ],
+    "fr": [
+      "Onduleur à résonance piloté par contrôleur DSP",
+      "Soudage pulsé jusqu'à 20 kHz",
+      "Fonction ActiveBoost",
+      "Régulation Hyper ARC Active",
+      "Soudage HyperSpot",
+      "5 emplacements mémoire pour un accès rapide",
+      "Télécommande",
+      "Commande Synergy simple",
+      "Réglage automatique de la pulsation",
+      "Télécommande en option"
+    ],
+    "it": [
+      "Inverter a risonanza pilotato da controller DSP",
+      "Saldatura pulsata fino a 20 kHz",
+      "Funzione ActiveBoost",
+      "Regolazione Hyper ARC Active",
+      "Saldatura HyperSpot",
+      "5 posizioni di memoria per un accesso rapido",
+      "Telecomando",
+      "Comando Synergy semplice",
+      "Regolazione automatica dell'impulso",
+      "Telecomando opzionale"
+    ],
+    "src": "https://mahe-online.de/beta-dx/",
+    "en": [
+      "Resonant inverter with DSP control",
+      "Pulse welding up to 20 kHz",
+      "ActiveBoost function",
+      "Hyper-ARC-Active control",
+      "HyperSpot welding",
+      "5 memory locations for quick access",
+      "Remote control",
+      "Simple synergic operation",
+      "Automatic pulse adjustment",
+      "Optional remote control"
+    ]
+  },
+  "beta-digital": {
+    "de": [
+      "Hochfrequenz-Impulsschweissen",
+      "Hyper-ARC-Active-Regelung",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Digitale Ampere-Anzeige",
+      "Fernbedienung",
+      "Synergy-Einstellungen",
+      "JOB-Modus"
+    ],
+    "fr": [
+      "Soudage pulsé haute fréquence",
+      "Régulation Hyper ARC Active",
+      "Câble d'alimentation de 5 mètres",
+      "Affichage numérique du courant",
+      "Télécommande",
+      "Réglages Synergy",
+      "Mode Job"
+    ],
+    "it": [
+      "Saldatura pulsata ad alta frequenza",
+      "Regolazione Hyper ARC Active",
+      "Cavo di alimentazione da 5 metri",
+      "Display digitale degli ampere",
+      "Telecomando",
+      "Impostazioni Synergy",
+      "Modalità Job"
+    ],
+    "src": "https://mahe-online.de/beta-digital/",
+    "en": [
+      "High-frequency pulse welding",
+      "Hyper-ARC-Active control",
+      "5-metre supply cable",
+      "Digital current display",
+      "Remote control",
+      "Synergic settings",
+      "JOB mode"
+    ]
+  },
+  "mms": {
+    "de": [
+      "Spritzerfreier Lichtbogen",
+      "Mobil und leicht, nur 11,5 kg",
+      "Rollenantrieb",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Umpolsystem",
+      "D200-Spule",
+      "WIG Lift Arc",
+      "Impulslichtbogen",
+      "Lichtbogen mit HyperCold / HyperRoot",
+      "Mobil und leicht, nur 21 kg",
+      "4-Rollenantrieb",
+      "D300-Spule"
+    ],
+    "fr": [
+      "Arc sans projections",
+      "Mobile et léger, seulement 11,5 kg",
+      "Entraînement à galets",
+      "Câble d'alimentation de 5 mètres",
+      "Système d'inversion de polarité",
+      "Bobine D200",
+      "TIG Lift Arc",
+      "Arc pulsé",
+      "Arc HyperCold / HyperRoot",
+      "Mobile et léger, seulement 21 kg",
+      "Entraînement à 4 galets",
+      "Bobine D300"
+    ],
+    "it": [
+      "Arco senza spruzzi",
+      "Mobile e leggero, solo 11,5 kg",
+      "Trainafilo a rulli",
+      "Cavo di alimentazione da 5 metri",
+      "Sistema di inversione di polarità",
+      "Bobina D200",
+      "TIG Lift Arc",
+      "Arco pulsato",
+      "Arco HyperCold / HyperRoot",
+      "Mobile e leggero, solo 21 kg",
+      "Trainafilo a 4 rulli",
+      "Bobina D300"
+    ],
+    "src": "https://mahe-online.de/mms/",
+    "en": [
+      "Spatter-free arc",
+      "Mobile and lightweight, only 11.5 kg",
+      "Roller drive",
+      "5-metre supply cable",
+      "Polarity reversal system",
+      "D200 spool",
+      "TIG Lift Arc",
+      "Pulsed arc",
+      "Arc with HyperCold / HyperRoot",
+      "Mobile and lightweight, only 21 kg",
+      "4-roll drive",
+      "D300 spool"
+    ]
+  },
+  "mpt-3001": {
+    "de": [
+      "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie",
+      "Arbeitsbereich 3000 x 1500 mm",
+      "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
+      "Schneidstrom 60 A, 120 A oder 180 A",
+      "Steuerung über das System CNC von MAHE",
+      "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
+      "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
+      "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
+      "Höhenabtastung des Materials vor jedem Einstich",
+      "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
+      "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
+      "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
+      "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
+    ],
+    "fr": [
+      "Table de découpe plasma CNC professionnelle, livrée en ensemble avec une source de courant MAHE Theta",
+      "Surface de travail 3000 x 1500 mm",
+      "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
+      "Courant de coupe 60 A, 120 A ou 180 A",
+      "Commande par le système CNC de MAHE",
+      "Import de dessins 2D aux formats DXF et HPGL/PLT",
+      "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
+      "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
+      "Palpage de la hauteur du matériau avant chaque perçage",
+      "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
+      "Marquage et traçage à une vitesse spécifique, attribués par une couleur de calque dédiée",
+      "Console de commande avec ordinateur Windows et écran sur la table",
+      "Mise en service et formation à l’utilisation par VES-TECH Swiss"
+    ],
+    "it": [
+      "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
+      "Area di lavoro 3000 x 1500 mm",
+      "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+      "Corrente di taglio 60 A, 120 A o 180 A",
+      "Controllo tramite il sistema CNC di MAHE",
+      "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
+      "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
+      "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
+      "Tastatura dell'altezza del materiale prima di ogni sfondamento",
+      "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
+      "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
+      "Console di comando con computer Windows e schermo sul tavolo",
+      "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
+    ],
+    "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 3001 - 3015, Set-Nrn. 1721.300.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT).",
+    "en": [
+      "Professional CNC plasma cutting table supplied as a set with a MAHE Theta-series power source",
+      "Working area 3000 x 1500 mm",
+      "Choice of Theta 060 HSC, Theta 120 HSC or Theta 180 HSC power source",
+      "Cutting current 60 A, 120 A or 180 A",
+      "Controlled by the MAHE CNC system",
+      "Import of 2D drawings in DXF and HPGL/PLT formats",
+      "Kerf compensation, lead-ins, lead-outs and cutting sequence are generated automatically",
+      "Torch Height Control: cutting height is set as a target voltage in volts and regulated using the arc voltage",
+      "Material height sensing before each pierce",
+      "Cutting parameters can be saved for each material; before cutting, the toolpath analysis shows pierce count, cutting length and estimated cutting time",
+      "Marking and scribing at a separate speed using a dedicated layer colour",
+      "Control console with Windows computer and display at the table",
+      "Commissioning and instruction by VES-TECH Swiss"
+    ]
+  },
+  "mpt-2501": {
+    "de": [
+      "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie",
+      "Arbeitsbereich 2500 x 1250 mm",
+      "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
+      "Schneidstrom 60 A, 120 A oder 180 A",
+      "Steuerung über das System CNC von MAHE",
+      "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
+      "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
+      "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
+      "Höhenabtastung des Materials vor jedem Einstich",
+      "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
+      "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
+      "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
+      "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
+    ],
+    "fr": [
+      "Table de découpe plasma CNC professionnelle, livrée en ensemble avec une source de courant MAHE Theta",
+      "Surface de travail 2500 x 1250 mm",
+      "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
+      "Courant de coupe 60 A, 120 A ou 180 A",
+      "Commande par le système CNC de MAHE",
+      "Import de dessins 2D aux formats DXF et HPGL/PLT",
+      "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
+      "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
+      "Palpage de la hauteur du matériau avant chaque perçage",
+      "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
+      "Marquage et traçage à une vitesse spécifique, attribués par une couleur de calque dédiée",
+      "Console de commande avec ordinateur Windows et écran sur la table",
+      "Mise en service et formation à l’utilisation par VES-TECH Swiss"
+    ],
+    "it": [
+      "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
+      "Area di lavoro 2500 x 1250 mm",
+      "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+      "Corrente di taglio 60 A, 120 A o 180 A",
+      "Controllo tramite il sistema CNC di MAHE",
+      "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
+      "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
+      "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
+      "Tastatura dell'altezza del materiale prima di ogni sfondamento",
+      "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
+      "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
+      "Console di comando con computer Windows e schermo sul tavolo",
+      "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
+    ],
+    "src": "MAHE Preisliste 2026 V11, S. 66/67 – MPT 2501 - 25125, Set-Nrn. 1721.250.10.SET.060/.120/.180. Keine Produktseite auf mahe-online.de, verify_mahe.py kann diesen Eintrag nicht pruefen. MyPlasm-Angaben: Handbuecher Proma Elektronika v1.2 und Angabe des Inhabers, nicht von MAHE. Bezeichnung des Steuerungssystems in der Merkmalsliste am 21.09.2026 auf ausdrueckliche Vorgabe des Inhabers in CNC von MAHE geaendert (DE/FR/IT).",
+    "en": [
+      "Professional CNC plasma cutting table supplied as a set with a MAHE Theta-series power source",
+      "Working area 2500 x 1250 mm",
+      "Choice of Theta 060 HSC, Theta 120 HSC or Theta 180 HSC power source",
+      "Cutting current 60 A, 120 A or 180 A",
+      "Controlled by the MAHE CNC system",
+      "Import of 2D drawings in DXF and HPGL/PLT formats",
+      "Kerf compensation, lead-ins, lead-outs and cutting sequence are generated automatically",
+      "Torch Height Control: cutting height is set as a target voltage in volts and regulated using the arc voltage",
+      "Material height sensing before each pierce",
+      "Cutting parameters can be saved for each material; before cutting, the toolpath analysis shows pierce count, cutting length and estimated cutting time",
+      "Marking and scribing at a separate speed using a dedicated layer colour",
+      "Control console with Windows computer and display at the table",
+      "Commissioning and instruction by VES-TECH Swiss"
+    ]
+  },
+  "hypermig-twin": {
+    "de": [
+      "Zwei Drahtvorschubkoffer für verschiedene Schweissdrähte",
+      "Automatische Parametereinstellung durch Drücken des Brennertasters",
+      "Digital synergy kontrolliert",
+      "Spritzerfreier Lichtbogen",
+      "HyperPuls, HyperSpeedPuls",
+      "HyperCold und HyperForce",
+      "MMA und Fugenhobeln",
+      "Fernbedienung (Up/Down Brennertaster)",
+      "4-Rollenantrieb",
+      "Zuleitungskabel mit 5 Metern Länge",
+      "Zwischenschlauchpakete bis 20 Meter",
+      "Temperatur kontrollierte Lüfter",
+      "Wasserpumpen Automatik on/off",
+      "Hochleistungs-Wasserkühlung",
+      "Umweltfreundliches Design, 100% recycelbar."
+    ],
+    "fr": [
+      "Deux dévidoirs pour différents fils de soudage",
+      "Sélection automatique des paramètres par la gâchette de la torche",
+      "Commande synergique numérique",
+      "Arc sans projections",
+      "HyperPuls, HyperSpeedPuls",
+      "HyperCold et HyperForce",
+      "MMA et gougeage",
+      "Commande à distance par touches Up/Down de la torche",
+      "Entraînement à 4 galets",
+      "Câble d’alimentation de 5 mètres",
+      "Faisceaux intermédiaires jusqu’à 20 mètres",
+      "Ventilateurs régulés en température",
+      "Commande automatique marche/arrêt de la pompe à eau",
+      "Refroidissement à eau haute performance",
+      "Conception respectueuse de l’environnement, recyclable à 100 %"
+    ],
+    "it": [
+      "Due trainafilo per fili di saldatura diversi",
+      "Selezione automatica dei parametri tramite il pulsante della torcia",
+      "Comando sinergico digitale",
+      "Arco senza spruzzi",
+      "HyperPuls, HyperSpeedPuls",
+      "HyperCold e HyperForce",
+      "MMA e scriccatura",
+      "Comando a distanza tramite pulsanti Up/Down della torcia",
+      "Trainafilo a 4 rulli",
+      "Cavo di alimentazione da 5 metri",
+      "Fasci intermedi fino a 20 metri",
+      "Ventilatori regolati in base alla temperatura",
+      "Comando automatico on/off della pompa dell’acqua",
+      "Raffreddamento ad acqua ad alte prestazioni",
+      "Progettazione rispettosa dell’ambiente, riciclabile al 100 %"
+    ],
+    "en": [
+      "Two wire feeders for different welding wires",
+      "Automatic parameter adjustment by pressing the torch trigger",
+      "Digitally controlled synergic operation",
+      "Spatter-free arc",
+      "HyperPuls, HyperSpeedPuls",
+      "HyperCold and HyperForce",
+      "MMA and gouging",
+      "Remote control (Up/Down torch trigger)",
+      "4-roll drive",
+      "5-metre supply cable",
+      "Interconnecting cable assemblies up to 20 metres",
+      "Temperature-controlled fans",
+      "Automatic water pump on/off",
+      "High-performance water cooling",
+      "Environmentally friendly design, 100% recyclable."
+    ]
+  }
 }

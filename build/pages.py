@@ -666,7 +666,7 @@ def page_home(lang):
         n = len(C.products_of(c["id"]))
         cards += (
             f'<a class="cat" href="{e(C.u_cat(lang, c["id"]))}">'
-            f'<div class="idx">{i:02d} · {n} {e(C.t(lang,"devices"))}</div>'
+            f'<div class="idx">{i:02d} · {n} {e(C.t(lang,"devices",n=n))}</div>'
             f'<div class="pk" aria-hidden="true">{C.PK[c["pk"]]}</div>'
             f'<h3>{e(C.catT(lang, c))}</h3><p>{e(C.catD(lang, c))}{kachel_zusatz(lang, c)}</p>'
             f'<div class="go">{e(C.t(lang,"card_open"))}</div></a>'
@@ -746,7 +746,7 @@ def page_products(lang):
                h1=C.t(lang, "all_h1"), desc=C.t(lang, "all_lead"), chips=chips)
         + '<div class="catalog"><div class="wrap">'
         + f'<div class="cathead"><h2>{e(C.t(lang,"sec_all"))}</h2>'
-          f'<span class="count">{n} {e(C.t(lang,"items"))} · {e(C.t(lang,"poa"))}</span></div>'
+          f'<span class="count">{n} {e(C.t(lang,"items",n=n))} · {e(C.t(lang,"poa"))}</span></div>'
         + R.pgrid(lang, C.P) + "</div></div>"
     )
     ld = [R.ld_org(lang),
@@ -864,7 +864,7 @@ def page_cat(lang, c, sub=None):
         R.cbar(lang, crumb_items=crumb, h1=h1, desc=lead, chips=chips)
         + '<div class="catalog"><div class="wrap">'
         + f'<div class="cathead"><h2>{e(C.subT(lang, sub) if sub else C.t(lang,"sec_all"))}</h2>'
-          f'<span class="count">{len(items)} {e(C.t(lang,"items"))} · {e(C.t(lang,"poa"))}</span></div>'
+          f'<span class="count">{len(items)} {e(C.t(lang,"items",n=len(items)))} · {e(C.t(lang,"poa"))}</span></div>'
         + R.pgrid(lang, items)
         + (subcategory_guide(lang, cid, sub) if sub else buying_guide(lang, cid)) + "</div></div>"
     )

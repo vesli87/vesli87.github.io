@@ -35,6 +35,13 @@
         "Specificate materiale, filo e corrente di lavoro necessaria. Confrontate alimentazione e ciclo di lavoro della versione esatta nella tabella tecnica.",
         "Per spostamenti frequenti, confrontate la serie portatile MMS. Se occorre la saldatura pulsata, consultate le funzioni della serie HyperMIG X."
       ]
+    },
+    "en": {
+      "intro": "EcoMIG combines MIG/MAG welding with a compact design. The choice of digital or analogue controls is part of the equipment version and should be stated in your enquiry.",
+      "checks": [
+        "Specify the material, wire and required operating current. Compare power supply and duty cycle for the specific version in the technical table.",
+        "For frequent moves between workplaces, compare the portable MMS series. If pulse processes are required, check the equipment offered in the HyperMIG X range."
+      ]
     }
   },
   "mms": {
@@ -72,6 +79,13 @@
       "checks": [
         "Descrivete l’impiego nel montaggio o in officina e l’alimentazione disponibile. Indicate torcia e raffreddamento desiderati.",
         "Il catalogo indica espressamente WK 300 per MMS 3000. Questo non comporta una compatibilità generale con MMS 2000; la configurazione completa viene verificata prima dell’offerta."
+      ]
+    },
+    "en": {
+      "intro": "This page covers MMS 2000 and MMS 3000 together. Choose by the full version designation and its data column, not just the MMS family name.",
+      "checks": [
+        "Describe use on site or in the workshop and the available power supply. Specify the required torch and cooling.",
+        "WK 300 is explicitly described in the catalogue for MMS 3000. This does not establish blanket compatibility with MMS 2000; the complete configuration is clarified before the quotation."
       ]
     }
   },
@@ -111,6 +125,13 @@
         "Indicate i materiali e la frequenza degli spostamenti. Verificate protezione della rete e prestazioni della versione proposta.",
         "Beta DX è una macchina DC. HyperTIG AX è una versione industriale AC/DC da 400 V; queste serie richiedono condizioni di alimentazione diverse."
       ]
+    },
+    "en": {
+      "intro": "Omega AX is the mobile AC/DC TIG version with a 230 V connection. Material, operating current and required duty cycle are decisive when choosing equipment.",
+      "checks": [
+        "State the materials to be welded and whether the machine will be transported frequently. Check fuse protection and performance values for the offered version.",
+        "Beta DX is listed as DC equipment. HyperTIG AX offers an industrial AC/DC version with a 400 V connection; these ranges have different supply requirements."
+      ]
     }
   },
   "beta-dx": {
@@ -148,6 +169,13 @@
       "checks": [
         "Indicate spessore, corrente utilizzata e lunghezza della torcia desiderata. La tabella tecnica riporta il ciclo di lavoro della versione esatta.",
         "Per il confronto, Omega AX è una versione mobile AC/DC. HyperTIG DX è la serie industriale DC; alimentazione e raffreddamento vanno verificati per ogni variante."
+      ]
+    },
+    "en": {
+      "intro": "Beta DX is a mobile DC TIG power source for steel and stainless steel. First clarify whether DC suits your materials and intended welding task.",
+      "checks": [
+        "Specify material thickness, operating current and required torch length. The technical table shows the duty cycle for the specific equipment version.",
+        "For comparison, Omega AX is listed as a mobile AC/DC version. HyperTIG DX is the industrial DC range; power supply and cooling must be checked separately for each version."
       ]
     }
   },
@@ -187,6 +215,13 @@
         "Descrivete materiale, corrente di lavoro e durata dei cicli di saldatura. Confrontate il ciclo di lavoro nella tabella della variante proposta.",
         "Indicate torcia, raffreddamento esistente e comando a distanza necessario. HyperTIG DX è la serie DC; nella richiesta occorre specificare AX oppure DX."
       ]
+    },
+    "en": {
+      "intro": "HyperTIG AX is an industrial AC/DC TIG power source with a 400 V connection and a water-cooled CWK version. This distinguishes it from the mobile Omega AX series.",
+      "checks": [
+        "Describe the material, operating current and duration of welding cycles. Compare the duty cycle in the table for the offered version.",
+        "Specify the existing torch, cooling and required remote control. HyperTIG DX is the DC range; the AX or DX model designation must be clear in the enquiry."
+      ]
     }
   },
   "i-1600": {
@@ -224,6 +259,13 @@
       "checks": [
         "Indicate tipo di elettrodo, materiale e impiego mobile. Verificate alimentazione e ciclo di lavoro nella tabella tecnica.",
         "Per il TIG Lift Arc, precisate torcia e comando del gas. MT170 V ha una valvola del gas sulla torcia; la versione Delta permette di confrontare le configurazioni."
+      ]
+    },
+    "en": {
+      "intro": "i-1600 is a portable stick welding inverter; the documentation also lists TIG Lift Arc. The process actually needed matters, not just maximum current.",
+      "checks": [
+        "Specify electrode type, material and mobile application. Check power supply and duty cycle in the technical table.",
+        "For TIG Lift Arc, specify the torch and gas controls. MT170 V has a gas valve on the torch; compare Delta when selecting equipment."
       ]
     }
   },
@@ -263,6 +305,13 @@
         "Indicate processo, materiale e denominazione completa del modello. Confrontate i dati della versione desiderata con l’alimentazione disponibile.",
         "Per comandi digitali e programmi JOB, confrontate Delta Digital. Se cercate un apparecchio a elettrodo semplice e portatile, considerate anche i-1600."
       ]
+    },
+    "en": {
+      "intro": "Delta 1800 combines stick welding and TIG Lift. Delta Digital and Delta Digital DS, listed separately, are distinct versions rather than alternative names.",
+      "checks": [
+        "State the process, material and full model designation. Compare the technical data for the required version with your available supply.",
+        "For digital controls and JOB programs, compare Delta Digital. If you need a straightforward portable stick welder, include i-1600 in your selection."
+      ]
     }
   },
   "plasma-tig": {
@@ -300,6 +349,13 @@
       "checks": [
         "Descrivete materiale, spessore e forma del cordone. Uno schizzo o una foto aiuta a definire il lavoro e i componenti necessari.",
         "Le occasioni Oerlikon PlasmaFix 50 S e SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sono modelli distinti di altri fabbricanti. Confrontate documentazione originale, stato e componenti compresi nell’offerta."
+      ]
+    },
+    "en": {
+      "intro": "PlasmaTIG is MAHE's power source for plasma and microplasma welding. For precision welding, check the documented current range for the specific version and the complete torch equipment.",
+      "checks": [
+        "Describe material, thickness and joint shape. A sketch or photograph helps define the welding task and required system scope.",
+        "The used Oerlikon PlasmaFix 50 S and SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T systems are separate models from other manufacturers. Compare their original documentation, condition and offered scope of supply."
       ]
     }
   },
@@ -339,6 +395,13 @@
         "Indicate materiale, spessore e qualità di taglio desiderata. Alimentazione e aria compressa vengono verificate per la vostra installazione in base alla documentazione.",
         "Theta 60 AUT è presentato separatamente per il taglio automatizzato. La torcia manuale PSHB 65 e la torcia macchina PSAB 65 sono versioni diverse."
       ]
+    },
+    "en": {
+      "intro": "The Theta 60 HSC data sheet distinguishes between a severance cut below 35 mm and a recommended cut below 25 mm. These specifications describe different cutting tasks.",
+      "checks": [
+        "Specify material, thickness and desired cut quality. The power supply and compressed air requirements for your installation are checked against the documentation.",
+        "Theta 60 AUT is listed separately for automated cutting. The PSHB 65 handheld torch and PSAB 65 automation torch are different versions."
+      ]
     }
   },
   "minicleaner": {
@@ -376,6 +439,13 @@
       "checks": [
         "Una foto del cordone, il materiale e gli accessori esistenti aiutano nella scelta. Il prodotto adatto viene individuato in base alla documentazione dell’apparecchio.",
         "Per una lavorazione di marcatura, confrontate HCS 1. HyperCleaner CT 200 combina TIG e pulizia; verificate quali funzioni servono al vostro lavoro."
+      ]
+    },
+    "en": {
+      "intro": "MiniCleaner is described for mobile electrolytic cleaning of stainless steel. Cleaning, polishing and marking are different tasks and should be clearly identified in your enquiry.",
+      "checks": [
+        "A weld photograph and details of the material and existing accessories help with selection. The appropriate electrolyte is determined using the equipment documentation.",
+        "For a marking-only task, compare HCS 1. HyperCleaner CT 200 combines TIG welding and cleaning; check which functions your work requires."
       ]
     }
   },
@@ -415,6 +485,13 @@
         "Indicate materiale e marcatura desiderata. Un modello o una foto aiuta a definire applicazione e contenuto necessario del set.",
         "M1 è presentato come elettrolita per marcatura. La scelta di prodotto e accessori dipende dalla documentazione dell’apparecchio; per la pulizia, confrontate MiniReiniger."
       ]
+    },
+    "en": {
+      "intro": "HCS 1 is a mobile electrolytic marking system, listed as a set with a case. It differs from equipment whose primary purpose is weld cleaning.",
+      "checks": [
+        "Specify the material and desired marking. A template or photograph makes it easier to clarify the application and required set contents.",
+        "M1 is listed as a marking electrolyte. Product and accessory suitability depend on the equipment documentation; for cleaning tasks, compare MiniCleaner."
+      ]
     }
   },
   "r1": {
@@ -452,6 +529,13 @@
       "checks": [
         "Indicate apparecchio, materiale e stato della superficie. Per l’impiego fanno riferimento il manuale dell’apparecchio e la scheda di sicurezza R1 collegata alla pagina.",
         "RP1 è la variante pastosa per la pulizia. N1 è un prodotto distinto per neutralizzazione; nomi simili non rendono i prodotti intercambiabili."
+      ]
+    },
+    "en": {
+      "intro": "Rapid R1 is a cleaning electrolyte for stainless steel welds. It is listed in 0.5 l, 1 l and 5 l sizes; specify the task and pack size explicitly.",
+      "checks": [
+        "Specify the cleaning machine, material and surface condition. Follow the equipment instructions and the R1 safety data sheet linked on the product page.",
+        "RP1 is the paste cleaning version. N1 is a separate neutralising product; similar names do not establish interchangeability."
       ]
     }
   },
@@ -491,6 +575,13 @@
         "Indicate apparecchio, materiale e posizione della superficie. Per l’impiego fanno riferimento il manuale dell’apparecchio e la scheda di sicurezza RP1 collegata alla pagina.",
         "I formati indicati sono 0,5 l, 1 l e 5 l. Pulizia e neutralizzazione sono lavorazioni distinte; N1 è presentato separatamente per la seconda."
       ]
+    },
+    "en": {
+      "intro": "RP1 is a paste cleaning electrolyte, described in the catalogue for vertical surfaces and overhead work. Its form distinguishes it from R1 cleaning electrolyte.",
+      "checks": [
+        "Specify the cleaning machine, material and orientation of the surface. The equipment instructions and linked RP1 safety data sheet govern use.",
+        "The listed pack sizes are 0.5 l, 1 l and 5 l. Cleaning and neutralising are separate tasks; N1 is listed as a separate product for neutralising."
+      ]
     }
   },
   "m1": {
@@ -528,6 +619,13 @@
       "checks": [
         "Indicate apparecchio di marcatura, materiale e risultato desiderato. Un modello aiuta a verificare accessori e applicazione con la documentazione dell’apparecchio.",
         "HCS 1 è presentato come apparecchio mobile per marcatura. Consultate la scheda di sicurezza del prodotto scelto e il manuale dell’apparecchio utilizzato."
+      ]
+    },
+    "en": {
+      "intro": "M1 is the electrolyte for marking. It is listed in 0.1 l, 0.5 l and 1 l sizes and must be distinguished from cleaning products such as R1.",
+      "checks": [
+        "Specify the marking system, material and desired marking. A template helps check the required accessories and application against the equipment documentation.",
+        "HCS 1 is listed as a mobile marking system. Follow the safety data sheet for the selected product and the equipment operating instructions."
       ]
     }
   },
@@ -567,6 +665,13 @@
         "Indicate apparecchio, raffreddamento esistente e collegamenti elettrici. Foto della targhetta e dei raccordi aiutano nel confronto con i documenti.",
         "Il catalogo associa WK 200 a HyperCleaner CT 200. WK 300 è una versione diversa, espressamente indicata per MMS 3000."
       ]
+    },
+    "en": {
+      "intro": "WK 200 is described as a universal cooling unit with a 230 V Schuko socket and low-water shutdown. The term universal does not replace checking the specific connections.",
+      "checks": [
+        "Specify the equipment, existing cooling and electrical connections. Photographs of the rating plate and connections help check against the documentation.",
+        "The catalogue lists WK 200 with HyperCleaner CT 200. WK 300 is a different version explicitly matched to MMS 3000."
+      ]
     }
   },
   "wk300": {
@@ -604,6 +709,13 @@
       "checks": [
         "Preparate la denominazione esatta della macchina e foto dei collegamenti. Indicate anche l’eventuale torcia raffreddata ad acqua già disponibile.",
         "WK 200 e WK 300 hanno descrizioni e destinazioni diverse. Un nome o un involucro simile non dimostra che siano intercambiabili."
+      ]
+    },
+    "en": {
+      "intro": "When adding a WK 300, the specific MMS 3000 configuration matters. Cooling unit, torch and existing connections are considered as a complete combination.",
+      "checks": [
+        "Have the exact equipment designation and photographs of the existing connections ready. Also specify any existing water-cooled torch.",
+        "WK 200 and WK 300 have different equipment descriptions. A similar name or housing is insufficient evidence of interchangeability."
       ]
     }
   },
@@ -647,6 +759,13 @@
         "Precisate come sarà collocato o spostato il trainafilo. Indicate versione completa del HyperMIG X e raffreddamento utilizzato.",
         "Il fascio intermedio collega generatore e trainafilo. La sua lunghezza dipende da questo percorso di collegamento, non dalla lunghezza della torcia."
       ]
+    },
+    "en": {
+      "intro": "DVL 420 is the horizontal, all-metal wire feeder for HyperMIG X. DVS 410 is described in the catalogue as a lightweight, portable alternative.",
+      "checks": [
+        "Decide how the wire feeder will be positioned or moved. Specify the full HyperMIG X version and cooling used.",
+        "The interconnecting cable assembly links the power source and feeder. Its required length depends on that connection route, not the torch length."
+      ]
     }
   },
   "usb2in1": {
@@ -680,6 +799,13 @@
       "checks": [
         "Indicate versione dell’apparecchio, comando e versione software esistente. Il supporto va verificato per questa combinazione; la sola presenza di una porta USB non lo dimostra.",
         "Per controllare o documentare misure, confrontate il compito con quello dell’apparecchio di calibrazione MCU 1 e precisate la verifica necessaria."
+      ]
+    },
+    "en": {
+      "intro": "USB 2in1 is a programmer for microcontrollers and MAHE interfaces with USB software. It is not a calibration device for measuring welding current and voltage.",
+      "checks": [
+        "Specify the equipment version, controller and existing software version. Support must be clarified for this specific combination; a USB connection alone is insufficient.",
+        "If measurements need checking or documenting, compare the task with the MCU 1 calibration unit and clarify the inspection work required."
       ]
     }
   },
@@ -723,6 +849,13 @@
         "Indicate versione completa del HyperMIG X o MMS, raffreddamento esistente e corrente necessaria. L’associazione a una famiglia non sostituisce la verifica della versione esatta.",
         "Precisate se serve Up/Down e mostrate il collegamento esistente. Una lunghezza o una foto simile non dimostra una capacità identica."
       ]
+    },
+    "en": {
+      "intro": "MF405W is a water-cooled MIG/MAG torch, 4 m long, with optional Up/Down controls. MF240W is described separately for lower power ranges.",
+      "checks": [
+        "Specify the full HyperMIG X or MMS version, existing cooling and required operating current. Family compatibility does not replace checking the specific version.",
+        "State whether Up/Down is required and show the existing connector. Equal length or a similar product photograph does not prove identical load capacity."
+      ]
     }
   },
   "mf240w": {
@@ -765,6 +898,13 @@
         "Indicate variante della macchina, raffreddamento e corrente utilizzata. Scegliete la torcia per l’applicazione esatta, senza basarvi sulla foto simile del MF405W.",
         "Precisate comando desiderato e collegamento esistente. La capacità necessaria viene verificata per la versione della macchina e la corrente di lavoro prima dell’offerta."
       ]
+    },
+    "en": {
+      "intro": "MF240W is the water-cooled MIG/MAG torch for lower power ranges. The catalogue lists a 4 m length and an optional Up/Down version.",
+      "checks": [
+        "Specify equipment version, cooling and operating current. Match the torch version to the actual application rather than selecting only by its resemblance to MF405W.",
+        "Specify the desired controls and existing connector. Required load capacity is clarified for the equipment version and operating current before the quotation."
+      ]
     }
   },
   "mt170": {
@@ -803,6 +943,13 @@
         "Indicate denominazione completa della macchina, lunghezza e comando desiderati. Gli apparecchi elencati vengono verificati con la configurazione esatta.",
         "Se è previsto il raffreddamento ad acqua, confrontate una torcia progettata per questo impiego, come MT200W. Raffreddamento e comando del gas sono criteri distinti."
       ]
+    },
+    "en": {
+      "intro": "MT170 is a gas-cooled TIG torch in 4 or 8 m lengths, optionally with a potentiometer. It must be distinguished from the MT170 V valve version.",
+      "checks": [
+        "Provide the full equipment designation, required length and controls. Listed equipment matches are checked against the specific configuration.",
+        "If water cooling is intended, compare a torch designed for it, such as MT200W. Cooling and gas control are separate selection criteria."
+      ]
     }
   },
   "mt200w": {
@@ -840,6 +987,13 @@
       "checks": [
         "Indicate versione della macchina, refrigeratore esistente e lunghezza necessaria. Precisate se desiderate regolare la corrente dalla torcia.",
         "MT170 è un’alternativa raffreddata a gas con proprie associazioni agli apparecchi; MT180W è una torcia ad acqua presentata separatamente. Verificate raccordi e dotazione per la macchina esatta."
+      ]
+    },
+    "en": {
+      "intro": "MT200W is a water-cooled TIG torch in 4 or 8 m lengths, optionally with a potentiometer. Selection therefore involves more than the torch model name.",
+      "checks": [
+        "Specify the equipment version, existing cooling unit and required length. State explicitly whether current adjustment at the torch is required.",
+        "MT170 is a gas-cooled alternative with its own equipment matches; MT180W is listed separately as a water-cooled torch. Check connections and equipment for the specific machine."
       ]
     }
   },
@@ -883,6 +1037,13 @@
         "Le lunghezze indicate sono 1,2 m, 5 m, 10 m, 15 m e 20 m. Determinate il percorso effettivo tra generatore e trainafilo.",
         "Indicate generatore esatto, versione DVL o DVS e raffreddamento. Foto dei collegamenti aiutano a verificare la configurazione prima dell’offerta."
       ]
+    },
+    "en": {
+      "intro": "This assembly connects the HyperMIG X power source to the separate wire feeder. It is not the torch hose assembly between feeder and workpiece.",
+      "checks": [
+        "The listed lengths are 1.2 m, 5 m, 10 m, 15 m and 20 m. Determine the actual connection route between power source and feeder.",
+        "Specify the exact power source, DVL 420 or DVS 410 feeder model and cooling. Photographs of existing connections help check a suitable combination before the quotation."
+      ]
     }
   },
   "plasmafix-50s": {
@@ -916,6 +1077,13 @@
       "checks": [
         "Indicate materiale, spessore e lavoro di saldatura. Confrontate foto e prospetto originale con i documenti degli apparecchi SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T proposti separatamente.",
         "Visita e componenti attualmente compresi vengono concordati in anticipo. La presenza nel catalogo o una richiesta non conferma la disponibilità e non costituisce una prenotazione."
+      ]
+    },
+    "en": {
+      "intro": "Oerlikon PlasmaFix 50 S is described as refurbished used microplasma equipment. The documented current range starts at 0.05 A; condition and equipment relate to the machine offered.",
+      "checks": [
+        "Specify material, thickness and welding task. Compare photographs and the original brochure with the documentation for the separately offered SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T.",
+        "Viewing and the current scope of supply are agreed in advance. A catalogue page or enquiry does not confirm stock or constitute a reservation."
       ]
     }
   },
@@ -958,6 +1126,14 @@
         "Specificate per ciascun trainafilo materiale, diametro del filo, gas e torcia, oltre alla distanza necessaria dal generatore. MAHE indica fasci intermedi fino a 20 m per TWIN. I parametri sono impostati separatamente per ogni trainafilo; prima di saldare verificate quale sia attivo.",
         "Scegliete il modello 300, 350 o 400 e il pannello grafico X o il pannello HX. La fotografia del produttore mostra HX. Confrontate corrente e ciclo di lavoro nella colonna pertinente; opzioni e abilitazioni dei procedimenti sono definite nell’offerta. Gli spruzzi dipendono anche da filo, gas, impostazioni e applicazione."
       ]
+    },
+    "en": {
+      "intro": "HyperMIG TWIN is intended for workplaces that switch between different welding wires. Two separate wire feeders keep each wire setup ready. Selection using the torch trigger recalls the active feeder's settings, reducing setup work when changing wire tasks.",
+      "checks": [
+        "TWIN denotes the version with two wire feeders. TwinArc instead denotes a separate MAHE process concept. The equipment name TWIN does not imply simultaneous tandem welding with two wires.",
+        "For both feeders, specify material, wire diameter, shielding gas, torch and required distance from the power source. MAHE specifies interconnecting cable assemblies up to 20 m for TWIN. Parameters are set separately for each feeder; check which feeder is active before welding.",
+        "Choose model 300, 350 or 400 and the graphic X or HX panel. The manufacturer photograph shows HX. Check current and duty cycle in the relevant table column; panel options and process activations are specified in the quotation. Spatter also depends on wire, gas, settings and application."
+      ]
     }
   },
   "hypermig-x": {
@@ -993,6 +1169,13 @@
       "checks": [
         "CGK, CWK, WGK e WWK differiscono per struttura e raffreddamento. I valori tecnici corrispondono alla colonna del modello scelto; secondo la nota della tabella, le correnti superiori sono disponibili solo in versione WWK.",
         "Per mantenere pronti due fili di saldatura, confrontate la distinta versione HyperMIG TWIN. Il pannello grafico X offre 99 memorie JOB per lavorazioni ripetute; procedimenti e opzioni vengono confermati per la configurazione scelta."
+      ]
+    },
+    "en": {
+      "intro": "HyperMIG X includes compact and separate versions with air or water cooling. The new graphic X panel is offered alongside the HX, EX and SX panels that remain listed. Select equipment design and controls together.",
+      "checks": [
+        "CGK, CWK, WGK and WWK differ in construction and cooling. Technical values apply to the specific model column; higher current classes are available only as WWK according to the table footnote.",
+        "For two prepared welding wires, compare the separate HyperMIG TWIN version. The graphic X panel offers 99 JOB memories for recurring tasks; available processes and options are confirmed for the specific system."
       ]
     }
   }

@@ -156,3 +156,4 @@
 ## Weitere Sprachen
 - Français: https://www.ves-tech.ch/fr/
 - Italiano: https://www.ves-tech.ch/it/
+- English: https://www.ves-tech.ch/en/

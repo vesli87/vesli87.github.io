@@ -1,5 +1,5 @@
 {
-  "_comment": "Zusatz-Strings für SEO/AEO-Seiten. Ergänzt data/UI.json. Alle Keys müssen in de/fr/it existieren. Schweizer Schreibweise: 'ss' statt 'ß'.",
+  "_comment": "Maintained SEO/AEO copy. All keys must exist in DE/FR/IT/EN. English uses British spelling and the existing Swiss business facts.",
   "de": {
     "locale": "de_CH",
     "hreflang": "de-CH",
@@ -140,7 +140,7 @@
       },
       {
         "q": "Liefert VES-TECH Swiss in die ganze Schweiz?",
-        "a": "VES-TECH Swiss bearbeitet Anfragen aus der Schweiz und Liechtenstein. Lieferort, Termin und Abholung werden für jeden Auftrag vereinbart. Die Übergabe und Abholung der Geräte erfolgt in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch und Italienisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch."
+        "a": "VES-TECH Swiss bearbeitet Anfragen aus der Schweiz und Liechtenstein. Lieferort, Termin und Abholung werden für jeden Auftrag vereinbart. Die Übergabe und Abholung der Geräte erfolgt in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch, Italienisch und Englisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch."
       },
       {
         "q": "Was sind MIS-Schweissen und HyperPuls bei MAHE?",
@@ -178,7 +178,7 @@
       ],
       [
         "Verantwortlich für den Inhalt",
-        "<p>Martin Veselovsky, Adresse wie oben. Er verantwortet Auswahl, Aufbereitung und Aufbau der Inhalte in allen drei Sprachfassungen dieser Website (Deutsch, Französisch, Italienisch). Angaben des Herstellers werden unverändert übernommen.</p>"
+        "<p>Martin Veselovsky, Adresse wie oben. Er verantwortet Auswahl, Aufbereitung und Aufbau der Inhalte in allen vier Sprachfassungen dieser Website (Deutsch, Französisch, Italienisch, Englisch). Angaben des Herstellers werden unverändert übernommen.</p>"
       ],
       [
         "Kein Onlineshop",
@@ -220,7 +220,7 @@
       ],
       [
         "Geltungsbereich und anwendbares Recht",
-        "<p>Diese Erklärung gilt für die Website <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in allen drei Sprachfassungen (Deutsch, Französisch und Italienisch) sowie für Anfragen, die uns über diese Website erreichen.</p><p>Massgebend ist das <strong>Schweizer Datenschutzgesetz</strong> (DSG) in der revidierten Fassung, in Kraft seit 1. September 2023. Das DSG spricht vom „Bearbeiten“ von Personendaten. Diesen Begriff verwenden wir hier durchgehend; er umfasst jeden Umgang mit Daten, vom Erheben bis zum Löschen.</p><p>Unser Liefergebiet umfasst neben der Schweiz auch Liechtenstein, das zum Europäischen Wirtschaftsraum gehört. Soweit wir dort Personen ansprechen, gilt zusätzlich die europäische Datenschutz-Grundverordnung (DSGVO). Die beiden Regelwerke sind nicht deckungsgleich. Wo sie auseinandergehen, ist es im Text vermerkt.</p>"
+        "<p>Diese Erklärung gilt für die Website <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in allen vier Sprachfassungen (Deutsch, Französisch, Italienisch und Englisch) sowie für Anfragen, die uns über diese Website erreichen.</p><p>Massgebend ist das <strong>Schweizer Datenschutzgesetz</strong> (DSG) in der revidierten Fassung, in Kraft seit 1. September 2023. Das DSG spricht vom „Bearbeiten“ von Personendaten. Diesen Begriff verwenden wir hier durchgehend; er umfasst jeden Umgang mit Daten, vom Erheben bis zum Löschen.</p><p>Unser Liefergebiet umfasst neben der Schweiz auch Liechtenstein, das zum Europäischen Wirtschaftsraum gehört. Soweit wir dort Personen ansprechen, gilt zusätzlich die europäische Datenschutz-Grundverordnung (DSGVO). Die beiden Regelwerke sind nicht deckungsgleich. Wo sie auseinandergehen, ist es im Text vermerkt.</p>"
       ],
       [
         "Website und lokale Speicherung",
@@ -302,7 +302,7 @@
     "agb_body": [
       [
         "Geltungsbereich",
-        "<p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Angebote, Lieferungen und Leistungen von VES-TECH Swiss. Sie gelten für Unternehmen ebenso wie für Konsumentinnen und Konsumenten. Wo eine Bestimmung nur für die eine oder die andere Gruppe gilt, ist das ausdrücklich vermerkt.</p><p>Wir weisen in jedem schriftlichen Angebot auf diese AGB hin und geben an, wo sie abrufbar sind. Mit der Annahme des Angebots erklärt sich der Kunde mit ihnen einverstanden. Auf Wunsch senden wir sie vorher zu.</p><p>Abweichende Bedingungen des Kunden gelten nur, wenn wir sie schriftlich anerkannt haben. Schweigen wir zu Einkaufsbedingungen des Kunden, gilt das nicht als Zustimmung.</p><p>Die AGB liegen auf Deutsch, Französisch und Italienisch vor. Bei Abweichungen zwischen den Sprachfassungen gilt gegenüber Unternehmen die deutsche Fassung. Gegenüber Konsumentinnen und Konsumenten gilt die Fassung in der Sprache, in der der Vertrag abgeschlossen worden ist.</p><p>Als Schriftform gilt in diesen AGB auch die E-Mail.</p>"
+        "<p>Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Angebote, Lieferungen und Leistungen von VES-TECH Swiss. Sie gelten für Unternehmen ebenso wie für Konsumentinnen und Konsumenten. Wo eine Bestimmung nur für die eine oder die andere Gruppe gilt, ist das ausdrücklich vermerkt.</p><p>Wir weisen in jedem schriftlichen Angebot auf diese AGB hin und geben an, wo sie abrufbar sind. Mit der Annahme des Angebots erklärt sich der Kunde mit ihnen einverstanden. Auf Wunsch senden wir sie vorher zu.</p><p>Abweichende Bedingungen des Kunden gelten nur, wenn wir sie schriftlich anerkannt haben. Schweigen wir zu Einkaufsbedingungen des Kunden, gilt das nicht als Zustimmung.</p><p>Die AGB liegen auf Deutsch, Französisch, Italienisch und Englisch vor. Bei Abweichungen zwischen den Sprachfassungen gilt gegenüber Unternehmen die deutsche Fassung. Gegenüber Konsumentinnen und Konsumenten gilt die Fassung in der Sprache, in der der Vertrag abgeschlossen worden ist.</p><p>Als Schriftform gilt in diesen AGB auch die E-Mail.</p>"
       ],
       [
         "Anbieter",
@@ -627,7 +627,12 @@
     "volt_device_view": "Gerät ansehen",
     "volt_featured_label": "Produkte im Fokus",
     "volt_feature_prev": "Vorheriges Produkt",
-    "volt_feature_next": "Nächstes Produkt"
+    "volt_feature_next": "Nächstes Produkt",
+    "cat_desc_tpl_one": "{cat} von MAHE bei VES-TECH Swiss: {n} Modell, {subs}. Beratung, Service und Ersatzteile aus Herisau AR. Preis auf Anfrage.",
+    "sub_desc_tpl_one": "MAHE {sub}: {n} Modell bei VES-TECH Swiss. Technische Daten, Zubehör und persönliche Beratung. Preis auf Anfrage.",
+    "cat_desc_occ_one": "Gebrauchte Anlagen bei VES-TECH Swiss: {n} Modell, {subs}. Geprüft in der Werkstatt in Herisau AR, mit Originalunterlagen. Preis auf Anfrage.",
+    "sub_title_occ_one": "{sub} Occasion · {n} Modell | VES-TECH Swiss",
+    "sub_desc_occ_one": "{sub} gebraucht: {n} Modell bei VES-TECH Swiss. Technische Daten, Originalprospekt und Besichtigung nach Vereinbarung. Preis auf Anfrage."
   },
   "fr": {
     "locale": "fr_CH",
@@ -769,7 +774,7 @@
       },
       {
         "q": "VES-TECH Swiss livre-t-elle dans toute la Suisse ?",
-        "a": "VES-TECH Swiss traite les demandes provenant de Suisse et du Liechtenstein. Le lieu, la date de livraison et l’enlèvement sont convenus pour chaque commande. La remise et l'enlèvement des appareils se font à l'atelier, St. Gallerstrasse 49, 9100 Herisau (Appenzell Rhodes-Extérieures) ; le siège et l'adresse de facturation sont à Bronschhofen SG. Ce site est disponible en allemand, français et italien ; le conseil personnel se fait en allemand, tchèque et anglais."
+        "a": "VES-TECH Swiss traite les demandes provenant de Suisse et du Liechtenstein. Le lieu, la date de livraison et l’enlèvement sont convenus pour chaque commande. La remise et l'enlèvement des appareils se font à l'atelier, St. Gallerstrasse 49, 9100 Herisau (Appenzell Rhodes-Extérieures) ; le siège et l'adresse de facturation sont à Bronschhofen SG. Ce site est disponible en allemand, français, italien et anglais ; le conseil personnel se fait en allemand, tchèque et anglais."
       },
       {
         "q": "Que sont les procédés de soudage MIS et HyperPuls de MAHE ?",
@@ -807,7 +812,7 @@
       ],
       [
         "Responsable du contenu",
-        "<p>Martin Veselovsky, adresse ci-dessus. Il répond du choix, de la préparation et de la structure des contenus dans les trois versions linguistiques de ce site (allemand, français, italien). Les indications du fabricant sont reprises telles quelles.</p>"
+        "<p>Martin Veselovsky, adresse ci-dessus. Il répond du choix, de la préparation et de la structure des contenus dans les quatre versions linguistiques de ce site (allemand, français, italien, anglais). Les indications du fabricant sont reprises telles quelles.</p>"
       ],
       [
         "Pas de boutique en ligne",
@@ -849,7 +854,7 @@
       ],
       [
         "Champ d'application et droit applicable",
-        "<p>La présente déclaration s'applique au site <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> dans ses trois versions linguistiques (allemande, française et italienne) ainsi qu'aux demandes qui nous parviennent par ce site.</p><p>Le droit déterminant est la <strong>loi fédérale sur la protection des données</strong> (LPD) dans sa version révisée, en vigueur depuis le 1er septembre 2023. La LPD parle du « traitement » de données personnelles. Nous employons ce terme tout au long du texte ; il recouvre toute opération sur des données, de la collecte à l'effacement.</p><p>Notre zone de livraison comprend, outre la Suisse, le Liechtenstein, qui fait partie de l'Espace économique européen. Dans la mesure où nous nous adressons à des personnes qui s'y trouvent, le règlement général européen sur la protection des données (RGPD) s'applique en plus. Les deux textes ne se recouvrent pas entièrement. Là où ils divergent, cela est signalé.</p>"
+        "<p>La présente déclaration s'applique au site <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> dans ses quatre versions linguistiques (allemande, française, italienne et anglaise) ainsi qu'aux demandes qui nous parviennent par ce site.</p><p>Le droit déterminant est la <strong>loi fédérale sur la protection des données</strong> (LPD) dans sa version révisée, en vigueur depuis le 1er septembre 2023. La LPD parle du « traitement » de données personnelles. Nous employons ce terme tout au long du texte ; il recouvre toute opération sur des données, de la collecte à l'effacement.</p><p>Notre zone de livraison comprend, outre la Suisse, le Liechtenstein, qui fait partie de l'Espace économique européen. Dans la mesure où nous nous adressons à des personnes qui s'y trouvent, le règlement général européen sur la protection des données (RGPD) s'applique en plus. Les deux textes ne se recouvrent pas entièrement. Là où ils divergent, cela est signalé.</p>"
       ],
       [
         "Site et stockage local",
@@ -931,7 +936,7 @@
     "agb_body": [
       [
         "Champ d'application",
-        "<p>Les présentes conditions générales (CG) s'appliquent à toutes les offres, livraisons et prestations de VES-TECH Swiss. Elles valent aussi bien pour les entreprises que pour les consommatrices et consommateurs. Lorsqu'une disposition ne concerne que l'un de ces groupes, cela est expressément mentionné.</p><p>Nous renvoyons à ces CG dans chaque offre écrite et indiquons où elles peuvent être consultées. En acceptant l'offre, le client les accepte. Sur demande, nous les envoyons au préalable.</p><p>Des conditions divergentes du client ne s'appliquent que si nous les avons reconnues par écrit. Notre silence sur les conditions d'achat du client ne vaut pas acceptation.</p><p>Les CG existent en allemand, en français et en italien. En cas de divergence entre les versions linguistiques, la version allemande fait foi à l'égard des entreprises. À l'égard des consommatrices et consommateurs, la version dans la langue de conclusion du contrat fait foi.</p><p>Dans les présentes CG, la forme écrite comprend également le courrier électronique.</p>"
+        "<p>Les présentes conditions générales (CG) s'appliquent à toutes les offres, livraisons et prestations de VES-TECH Swiss. Elles valent aussi bien pour les entreprises que pour les consommatrices et consommateurs. Lorsqu'une disposition ne concerne que l'un de ces groupes, cela est expressément mentionné.</p><p>Nous renvoyons à ces CG dans chaque offre écrite et indiquons où elles peuvent être consultées. En acceptant l'offre, le client les accepte. Sur demande, nous les envoyons au préalable.</p><p>Des conditions divergentes du client ne s'appliquent que si nous les avons reconnues par écrit. Notre silence sur les conditions d'achat du client ne vaut pas acceptation.</p><p>Les CG existent en allemand, en français, en italien et en anglais. En cas de divergence entre les versions linguistiques, la version allemande fait foi à l'égard des entreprises. À l'égard des consommatrices et consommateurs, la version dans la langue de conclusion du contrat fait foi.</p><p>Dans les présentes CG, la forme écrite comprend également le courrier électronique.</p>"
       ],
       [
         "Fournisseur",
@@ -1256,7 +1261,12 @@
     "volt_device_view": "Voir l’appareil",
     "volt_featured_label": "Appareils à découvrir",
     "volt_feature_prev": "Appareil précédent",
-    "volt_feature_next": "Appareil suivant"
+    "volt_feature_next": "Appareil suivant",
+    "cat_desc_tpl_one": "{cat} MAHE chez VES-TECH Swiss : {n} modèle, {subs}. Conseil, service et pièces de rechange depuis Herisau AR. Prix sur demande.",
+    "sub_desc_tpl_one": "MAHE {sub} : {n} modèle chez VES-TECH Swiss. Données techniques, accessoires et conseil personnalisé. Prix sur demande.",
+    "cat_desc_occ_one": "Machines d’occasion chez VES-TECH Swiss : {n} modèle, {subs}. Contrôlées à l’atelier de Herisau AR, avec la documentation d’origine. Prix sur demande.",
+    "sub_title_occ_one": "{sub} d’occasion · {n} modèle | VES-TECH Swiss",
+    "sub_desc_occ_one": "{sub} d’occasion : {n} modèle chez VES-TECH Swiss. Données techniques, brochure d’origine et visite sur rendez-vous. Prix sur demande."
   },
   "it": {
     "locale": "it_CH",
@@ -1398,7 +1408,7 @@
       },
       {
         "q": "VES-TECH Swiss consegna in tutta la Svizzera?",
-        "a": "VES-TECH Swiss gestisce richieste dalla Svizzera e dal Liechtenstein. Luogo, data di consegna e ritiro vengono concordati per ogni ordine. La consegna e il ritiro degli apparecchi avvengono in officina, St. Gallerstrasse 49, 9100 Herisau (Appenzello Esterno); sede e indirizzo di fatturazione sono a Bronschhofen SG. Questo sito è disponibile in tedesco, francese e italiano; la consulenza personale avviene in tedesco, ceco e inglese."
+        "a": "VES-TECH Swiss gestisce richieste dalla Svizzera e dal Liechtenstein. Luogo, data di consegna e ritiro vengono concordati per ogni ordine. La consegna e il ritiro degli apparecchi avvengono in officina, St. Gallerstrasse 49, 9100 Herisau (Appenzello Esterno); sede e indirizzo di fatturazione sono a Bronschhofen SG. Questo sito è disponibile in tedesco, francese, italiano e inglese; la consulenza personale avviene in tedesco, ceco e inglese."
       },
       {
         "q": "Che cosa sono la saldatura MIS e HyperPuls di MAHE?",
@@ -1436,7 +1446,7 @@
       ],
       [
         "Responsabile dei contenuti",
-        "<p>Martin Veselovsky, indirizzo come sopra. Risponde della scelta, dell’elaborazione e della struttura dei contenuti in tutte e tre le versioni linguistiche di questo sito (tedesco, francese, italiano). Le indicazioni del fabbricante sono riprese senza modifiche.</p>"
+        "<p>Martin Veselovsky, indirizzo come sopra. Risponde della scelta, dell’elaborazione e della struttura dei contenuti in tutte e quattro le versioni linguistiche di questo sito (tedesco, francese, italiano, inglese). Le indicazioni del fabbricante sono riprese senza modifiche.</p>"
       ],
       [
         "Nessun negozio online",
@@ -1478,7 +1488,7 @@
       ],
       [
         "Campo d'applicazione e diritto applicabile",
-        "<p>La presente informativa vale per il sito <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in tutte e tre le versioni linguistiche (tedesca, francese e italiana) nonché per le richieste che ci pervengono tramite questo sito.</p><p>È determinante la <strong>legge federale sulla protezione dei dati</strong> (LPD) nella versione riveduta, in vigore dal 1° settembre 2023. La LPD parla di «trattamento» di dati personali. Utilizziamo questo termine in tutto il testo; esso comprende ogni operazione sui dati, dalla raccolta alla cancellazione.</p><p>La nostra zona di fornitura comprende, oltre alla Svizzera, anche il Liechtenstein, che fa parte dello Spazio economico europeo. Nella misura in cui ci rivolgiamo a persone che vi si trovano, si applica in aggiunta il regolamento generale europeo sulla protezione dei dati (RGPD). I due testi non coincidono. Dove divergono, lo segnaliamo.</p>"
+        "<p>La presente informativa vale per il sito <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in tutte e quattro le versioni linguistiche (tedesca, francese, italiana e inglese) nonché per le richieste che ci pervengono tramite questo sito.</p><p>È determinante la <strong>legge federale sulla protezione dei dati</strong> (LPD) nella versione riveduta, in vigore dal 1° settembre 2023. La LPD parla di «trattamento» di dati personali. Utilizziamo questo termine in tutto il testo; esso comprende ogni operazione sui dati, dalla raccolta alla cancellazione.</p><p>La nostra zona di fornitura comprende, oltre alla Svizzera, anche il Liechtenstein, che fa parte dello Spazio economico europeo. Nella misura in cui ci rivolgiamo a persone che vi si trovano, si applica in aggiunta il regolamento generale europeo sulla protezione dei dati (RGPD). I due testi non coincidono. Dove divergono, lo segnaliamo.</p>"
       ],
       [
         "Sito e memorizzazione locale",
@@ -1560,7 +1570,7 @@
     "agb_body": [
       [
         "Campo d'applicazione",
-        "<p>Le presenti condizioni generali (CG) si applicano a tutte le offerte, forniture e prestazioni di VES-TECH Swiss. Valgono sia per le imprese sia per le consumatrici e i consumatori. Se una disposizione riguarda soltanto uno di questi gruppi, ciò è indicato espressamente.</p><p>In ogni offerta scritta rinviamo alle presenti CG e indichiamo dove sono consultabili. Accettando l'offerta il cliente le accetta. Su richiesta le inviamo in anticipo.</p><p>Condizioni divergenti del cliente valgono soltanto se le abbiamo riconosciute per iscritto. Il nostro silenzio sulle condizioni d'acquisto del cliente non vale come accettazione.</p><p>Le CG esistono in tedesco, francese e italiano. In caso di divergenze tra le versioni linguistiche, nei confronti delle imprese fa fede la versione tedesca. Nei confronti delle consumatrici e dei consumatori fa fede la versione nella lingua in cui il contratto è stato concluso.</p><p>Nelle presenti CG la forma scritta comprende anche la posta elettronica.</p>"
+        "<p>Le presenti condizioni generali (CG) si applicano a tutte le offerte, forniture e prestazioni di VES-TECH Swiss. Valgono sia per le imprese sia per le consumatrici e i consumatori. Se una disposizione riguarda soltanto uno di questi gruppi, ciò è indicato espressamente.</p><p>In ogni offerta scritta rinviamo alle presenti CG e indichiamo dove sono consultabili. Accettando l'offerta il cliente le accetta. Su richiesta le inviamo in anticipo.</p><p>Condizioni divergenti del cliente valgono soltanto se le abbiamo riconosciute per iscritto. Il nostro silenzio sulle condizioni d'acquisto del cliente non vale come accettazione.</p><p>Le CG esistono in tedesco, francese, italiano e inglese. In caso di divergenze tra le versioni linguistiche, nei confronti delle imprese fa fede la versione tedesca. Nei confronti delle consumatrici e dei consumatori fa fede la versione nella lingua in cui il contratto è stato concluso.</p><p>Nelle presenti CG la forma scritta comprende anche la posta elettronica.</p>"
       ],
       [
         "Fornitore",
@@ -1885,6 +1895,645 @@
     "volt_device_view": "Vedi l’apparecchio",
     "volt_featured_label": "Apparecchi in evidenza",
     "volt_feature_prev": "Apparecchio precedente",
-    "volt_feature_next": "Apparecchio successivo"
+    "volt_feature_next": "Apparecchio successivo",
+    "cat_desc_tpl_one": "{cat} MAHE da VES-TECH Swiss: {n} modello, {subs}. Consulenza, assistenza e ricambi da Herisau AR. Prezzo su richiesta.",
+    "sub_desc_tpl_one": "MAHE {sub}: {n} modello da VES-TECH Swiss. Dati tecnici, accessori e consulenza personale. Prezzo su richiesta.",
+    "cat_desc_occ_one": "Macchine usate da VES-TECH Swiss: {n} modello, {subs}. Controllate nell’officina di Herisau AR, con documentazione originale. Prezzo su richiesta.",
+    "sub_title_occ_one": "{sub} usato · {n} modello | VES-TECH Swiss",
+    "sub_desc_occ_one": "{sub} usato: {n} modello da VES-TECH Swiss. Dati tecnici, prospetto originale e visione su appuntamento. Prezzo su richiesta."
+  },
+  "en": {
+    "locale": "en_CH",
+    "hreflang": "en-CH",
+    "lang_name": "English",
+    "site_name": "VES-TECH Swiss",
+    "tagline": "MAHE welding, cutting, cleaning and automation in Herisau AR",
+    "brand_claim": "Advice and sales of MAHE equipment.",
+    "skip_link": "Skip to content",
+    "nav_home": "Home",
+    "nav_products": "Products",
+    "nav_faq": "Frequently asked questions",
+    "nav_impressum": "Legal notice",
+    "nav_datenschutz": "Privacy",
+    "nav_all_products": "All equipment",
+    "breadcrumb_aria": "You are here",
+    "menu_aria": "Main menu",
+    "lang_aria": "Choose language",
+    "home_title": "VES-TECH Swiss · MAHE Welding, Plasma Cutting & Cleaning",
+    "home_desc": "MAHE welding, plasma cutting, cleaning and automation in Switzerland. Refurbished PlasmaFix equipment and service in Herisau AR by appointment.",
+    "home_h1": "MAHE equipment for welding, cutting, cleaning and automation",
+    "all_title": "All Equipment · MAHE Range & Used Machines | VES-TECH Swiss",
+    "all_desc": "{n} items at VES-TECH Swiss: MAHE MIG/MAG, TIG, MMA, plasma cutting and electrolytic cleaning equipment, plus used machines. Prices on request.",
+    "all_h1": "All equipment",
+    "all_lead": "The MAHE range, organised by process, alongside inspected used equipment. Service in Switzerland and personal advice from the technician.",
+    "subcategory_guide_title": "What to consider when choosing equipment",
+    "process_followup_title": "From process to application",
+    "process_followup_service": "For use in your workshop, find out about {automation} and {calibration} of your welding equipment.",
+    "process_followup_micro": "Used PlasmaFix equipment for {microplasma} is listed in a separate overview.",
+    "usp_service_terms": {
+      "repair": "repairs",
+      "calib": "calibration"
+    },
+    "cat_title_tpl": "{cat} · MAHE {sub_hint} in Switzerland | VES-TECH Swiss",
+    "cat_title_tpl_kurz": "{cat} · MAHE in Switzerland | VES-TECH Swiss",
+    "cat_desc_tpl": "MAHE {cat} at VES-TECH Swiss: {n} models, {subs}. Advice, service and spare parts from Herisau AR. Prices on request.",
+    "sub_title_tpl": "{sub} · MAHE {cat} | VES-TECH Swiss",
+    "sub_desc_tpl": "MAHE {sub}: {n} models at VES-TECH Swiss. Technical data, accessories and personal advice. Prices on request.",
+    "prod_title_tpl": "{marke} {name} · {sub} · {cat}",
+    "prod_desc_tpl": "{marke} {name} ({vt}): {desc} Technical data, compatible accessories and advice from VES-TECH Swiss. Price on request.",
+    "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss agrees delivery and collection in Switzerland and Liechtenstein for each order. We handle commissioning, maintenance, repairs at the partner workshop in Herisau and warranty claims.",
+    "accessory_context_wk300": "For the {device} series: WK 300 is specified for the MMS 3000 series. Please provide the full equipment designation and details of the existing cooling connections with your enquiry.",
+    "accessory_context_dvl420": "For the {device} series: Please specify the exact power source version, existing interconnecting cable assembly and required connection length with your enquiry.",
+    "verf_title": "Welding Processes · MIG Pulse, Double Pulse & TIG | VES-TECH Swiss",
+    "verf_desc": "MIG/MAG pulse, double pulse, HyperPuls and TIG LF/HF pulse, AC/DC and Mix TIG: principles, applications, parameters and suitable MAHE equipment.",
+    "dl_title": "Downloads · MAHE Catalogue, EN 1090 & Safety Data Sheets",
+    "dl_desc": "MAHE product catalogue, EN 1090 conformity certificate and safety data sheets for R1, RP1, P1, M1 and N1 electrolytes as PDFs.",
+    "kontakt_title": "Contact · VES-TECH Swiss, Herisau AR Workshop",
+    "kontakt_desc": "VES-TECH Swiss in Herisau AR: advice and service for MAHE welding, cutting, cleaning and automation. Telephone +41 76 710 91 39.",
+    "faq_title": "MAHE Welding Equipment FAQ | VES-TECH Swiss",
+    "faq_desc": "Answers about pricing, process selection, aluminium welding, electrolytic cleaning, plasma cutting, used equipment, EN 1090 and service in Switzerland.",
+    "faq_h1": "Frequently asked questions",
+    "faq_lead": "Clear, direct answers to the questions our customers ask most often.",
+    "search_title": "Search | VES-TECH Swiss",
+    "search_desc": "Search the complete MAHE range at VES-TECH Swiss by equipment, process or technical feature.",
+    "search_h1": "Search",
+    "search_lead": "Search by equipment name, process, material or service, for example HyperMIG, TIG, repairs or calibration.",
+    "search_results_for": "Results for",
+    "search_n_results": "{n} results",
+    "search_one_result": "1 result",
+    "search_no_results": "No results for",
+    "search_no_results_help": "Check the spelling or use a broader search term, such as a process instead of an equipment name.",
+    "search_did_you_mean": "Did you mean",
+    "search_popular": "Popular searches",
+    "search_all_results": "View all results",
+    "search_group_products": "Equipment",
+    "search_group_cats": "Categories",
+    "search_group_procs": "Processes",
+    "search_group_dl": "Downloads",
+    "search_clear": "Clear search",
+    "search_min_chars": "Enter at least 2 characters",
+    "search_aria_listbox": "Search suggestions",
+    "search_filter_all": "All",
+    "search_sort": "Sort by",
+    "search_sort_rel": "Relevance",
+    "search_sort_name": "Name A–Z",
+    "impressum_title": "Legal Notice | VES-TECH Swiss",
+    "impressum_desc": "VES-TECH Swiss legal notice: owner, contact details, commercial register, VAT, liability and copyright. Bildfeldstrasse 24, 9552 Bronschhofen SG.",
+    "impressum_h1": "Legal notice",
+    "datenschutz_title": "Privacy · Data and Settings | VES-TECH Swiss",
+    "datenschutz_desc": "Information about hosting, enquiries, the local enquiry list and optional web analytics at VES-TECH Swiss, including how to manage your settings.",
+    "datenschutz_h1": "Privacy notice",
+    "err404_title": "Page Not Found | VES-TECH Swiss",
+    "err404_h1": "Page not found",
+    "err404_lead": "This page no longer exists or could not be found. Use the search or return to the overview.",
+    "err404_cta": "Go to homepage",
+    "form_sending": "Sending …",
+    "form_success": "Thank you, we have received your enquiry. We usually reply within one working day.",
+    "form_error": "Your enquiry could not be sent. Please call us or email vestechswiss@gmail.com directly.",
+    "form_required": "Please complete this field",
+    "form_invalid_mail": "Please enter a valid email address.",
+    "form_privacy": "I agree that my details may be used to process my enquiry.",
+    "form_company": "Company",
+    "related_h": "Similar equipment",
+    "back_to_cat": "Back to overview",
+    "prod_overview": "At a glance",
+    "spec_h": "Technical data",
+    "toc_h": "Contents",
+    "updated": "Last updated",
+    "reading_context": "MAHE equipment at VES-TECH Swiss",
+    "usp_1_h": "Service in Switzerland",
+    "usp_1_p": "Commissioning, repairs and calibration with direct access to the technician responsible.",
+    "usp_2_h": "Price on request",
+    "usp_2_p": "Each system is configured individually. You receive a quotation matched to your material and thickness.",
+    "usp_3_h": "EN 1090 documentation",
+    "usp_3_p": "The complete testing and conformity package for structural steel and aluminium fabrication.",
+    "nav_agb": "Terms",
+    "agb_title": "Terms and Conditions | VES-TECH Swiss",
+    "agb_desc": "VES-TECH Swiss terms and conditions for MAHE equipment: quotations, prices, payment, delivery, warranty, liability and jurisdiction.",
+    "agb_h1": "Terms and conditions",
+    "org_desc": "VES-TECH Swiss provides advice and sales of MAHE equipment: MIG/MAG, TIG and MMA welding equipment, plasma cutting systems, CNC cutting tables and electrolytic cleaning and marking systems. Services include advice, commissioning, diagnostics, repairs, calibration and welding automation. Workshop and goods reception at the partner company Schweisstechnik Scherrer AG in Herisau AR; registered and billing address in Bronschhofen SG. Delivery within Switzerland and to Liechtenstein by agreement.",
+    "svc_title": "Service · Repairs, Calibration & Automation | VES-TECH Swiss",
+    "svc_desc": "Repairs, EN 60974-14 calibration and automation for welding equipment and plasma cutting systems. Workshop in Herisau AR, advice from the technician.",
+    "svc_h1": "Service from the Herisau workshop",
+    "svc_lead": "Diagnostics, repairs, calibration and automation for welding equipment and plasma cutting systems. Speak directly to the technician who looks after your equipment.",
+    "svc_repair_title": "Welding Equipment Repairs · Herisau AR Workshop",
+    "svc_repair_desc": "Welding equipment and plasma cutter repairs in Herisau AR. Electronic diagnostics and assessment of suitable spare parts with the supplier.",
+    "svc_repair_h1": "Welding equipment repairs",
+    "svc_repair_lead": "We accept faulty equipment at the partner workshop in Herisau AR by prior arrangement. Before repairs begin, we explain the findings and agree the next steps with you.",
+    "svc_calib_title": "EN 60974-14 Welding Equipment Calibration | VES-TECH Swiss",
+    "svc_calib_desc": "Welding power source calibration to EN 60974-14 with a report. For businesses operating factory production control under EN 1090.",
+    "svc_calib_h1": "Welding equipment calibration to EN 60974-14",
+    "svc_calib_lead": "During calibration, we check whether the values displayed by your welding equipment agree with the measured values. The report provides evidence for your production control records.",
+    "svc_auto_title": "Welding and Cutting Automation | VES-TECH Swiss",
+    "svc_auto_desc": "MAHE automation: Theta power sources for automated systems and MPT CNC plasma cutting tables with MyPlasm CNC. Setup, commissioning and instruction.",
+    "svc_auto_h1": "Welding and cutting automation",
+    "svc_auto_lead": "The MAHE range offers automation solutions for repetitive welds and cutting tasks. We help you select and commission the equipment.",
+    "about_title": "About VES-TECH Swiss · Herisau Workshop & MAHE Equipment",
+    "about_desc": "VES-TECH Swiss, owned by Martin Veselovsky: MAHE welding and cutting equipment, workshop service in Herisau AR and calibration to EN 60974-14.",
+    "about_h1": "The person behind VES-TECH Swiss",
+    "about_lead": "VES-TECH Swiss combines the MAHE equipment range with personal advice and workshop service. Your contact looks after your equipment from quotation to repair.",
+    "nav_about": "About",
+    "about_role": "Owner",
+    "redirect_title": "Page moved",
+    "redirect_text": "This page has moved. Continue to:",
+    "prod_intro_occ_tpl": "{name} {de_marke}, used, refurbished and offered for sale. The system is at the workshop in Herisau, is inspected before handover and is sold in the condition demonstrated. Viewing by appointment.",
+    "cat_title_occ": "{cat} · Used Equipment in Switzerland | VES-TECH Swiss",
+    "cat_desc_occ": "Used equipment at VES-TECH Swiss: {n} models, {subs}. Inspected at the Herisau AR workshop, with original documentation. Prices on request.",
+    "sub_title_occ": "Used {sub} · {n} Models | VES-TECH Swiss",
+    "sub_desc_occ": "Used {sub}: {n} models at VES-TECH Swiss. Technical data, original brochure and viewing by appointment. Prices on request.",
+    "prod_title_occ": "Used {marke} {name} {sub} for Sale | VES-TECH Swiss",
+    "prod_title_occ_kurz": "Used {marke} {name} for Sale | VES-TECH Swiss",
+    "prod_desc_occ": "{marke} {name}: refurbished {sub} equipment for sale in Herisau AR. Viewing by appointment. Advice and price on request.",
+    "qty_less": "Decrease quantity",
+    "qty_more": "Increase quantity",
+    "cart_remove": "Remove from enquiry list",
+    "consult_product": "I would like advice on {name}.",
+    "search_unavailable": "Search is temporarily unavailable. Please try again or open the product catalogue.",
+    "form_note_mail": "This step prepares an email. Please then send it from your email application.",
+    "form_note_direct": "Your enquiry is sent to us via Web3Forms.",
+    "form_nojs": "The form requires JavaScript. You can contact us directly by email:",
+    "mail_p": "Sending has not yet been confirmed. Copy the text or open your email application and send the enquiry to the following address.",
+    "analytics_title": "Optional web analytics",
+    "analytics_decline": "Decline",
+    "analytics_accept": "Accept",
+    "analytics_settings": "Analytics settings",
+    "privacy_runtime": "<p>This website does not use advertising cookies or create personal usage profiles. Fonts and product images are served locally; manufacturer images may be loaded as a fallback if a local file is missing.</p><p>The enquiry list remains in your browser's localStorage. Form details are not stored there. Search terms are processed in your browser; when you open a results page, the search term appears in the URL and may appear in the hosting provider's server logs.</p>",
+    "privacy_analytics_off": "Web analytics are currently disabled on this website.",
+    "privacy_delivery_mail": "<p>The form prepares an email draft. You send it yourself using your email application. We do not receive an enquiry unless you send it. If you have no email application configured, you can copy the prepared text and send it by email yourself.</p>",
+    "privacy_delivery_direct": "<p>When you submit the form, your browser sends your name, email address, telephone number (if provided), message, selected products or services and any optional additional details to <a href=\"https://web3forms.com/privacy\">Web3Forms</a> so that the service can deliver your enquiry to us by email. If an error occurs, the text remains available to copy. If you use the email fallback, you send the message through your own email application. Web3Forms stores submitted messages in its dashboard for the configured retention period of up to three years. Delivered emails also remain in our mailbox.</p>",
+    "privacy_summary": "<p>We process your details to answer enquiries, fulfil contracts and maintain accounting records. The enquiry list is stored locally in your browser. The current submission method and optional web analytics are described in the <a href=\"{privacy_url}\">privacy notice</a>. The website is hosted on GitHub Pages.</p>",
+    "analytics_text_cloudflare": "With your consent, Cloudflare Web Analytics measures page views and loading times without analytics cookies. Form details are not sent to analytics. You can change your choice at any time.",
+    "analytics_text_ahrefs": "With your consent, Ahrefs Web Analytics measures page views, recognised campaigns and selected actions leading to an enquiry, without analytics cookies. Form details are not sent. You can change your choice at any time.",
+    "analytics_text_both": "With your consent, Cloudflare measures loading times and page views. Ahrefs analyses page views, recognised campaigns and selected actions leading to an enquiry. Neither uses analytics cookies or receives form details. You can change your choice at any time.",
+    "privacy_analytics_common": "Optional analytics load only after your consent. Your choice is stored locally for no more than 180 days. You can decline or withdraw consent through Analytics settings. Data already collected are not deleted retrospectively. We do not send names, email addresses, telephone numbers, form messages, optional additional details or free-text search terms to analytics. Identifiers for selected versions or individual used machines are not sent either. Search pages, unknown page addresses and unsafe URL parameters or referring links are excluded from measurement. Approved campaigns are analysed only using predefined identifiers.",
+    "privacy_analytics_cloudflare": "Cloudflare Web Analytics measures page views and technical performance, particularly loading times. Cloudflare receives the technical browser requests needed for this purpose. The analytics script does not use cookies and is not used to analyse individual form actions or campaign parameters.",
+    "privacy_analytics_ahrefs": "Ahrefs Web Analytics measures page views and selected actions such as product interest, opening the enquiry list and confirmed acceptance of an enquiry by the submission service. It receives the canonical page address, optionally containing only pre-approved campaign parameters, and predefined details such as language, product identifier, category, form type and recognised campaign. Ahrefs receives technical browser data and a previously checked reference to the referring page. Public link destinations, download document types, broad product-count groups and predefined error types may also be recorded as events. According to the provider, no analytics cookies are used; the IP address is processed to determine an approximate location and a visitor identifier that changes daily, but is not stored. An enquiry is not evidence of a sale. To attribute a recognised campaign or entry page, we store only those details in the tab's sessionStorage after consent, for no more than 24 hours. They contain no customer data and are not combined into a persistent visitor identifier.",
+    "inquiry_product": "Selected product",
+    "inquiry_service": "Requested service",
+    "inquiry_option_unsure": "I need advice on choosing a version",
+    "inquiry_context_invalid": "The selection in this link is invalid. Please check the product and select the version again if needed.",
+    "inquiry_summary_title": "Your submitted enquiry",
+    "inquiry_summary_note": "This summary remains only on this page. You can copy it for your records.",
+    "inquiry_summary_copy": "Copy summary",
+    "inquiry_summary_copied": "Summary copied",
+    "inquiry_summary_copy_manual": "Please select and copy the summary.",
+    "inquiry_details_title": "Details for a suitable quotation (optional)",
+    "inquiry_details_note": "Provide only what you already know. We will clarify the remaining points together.",
+    "inquiry_message_hint": "Your questions or requirements",
+    "inquiry_next_steps": "Your enquiry is non-binding. We review your details and agree the version, scope of supply and timing with you in an individual quotation.",
+    "inquiry_field_timeframe": "Preferred timeframe",
+    "inquiry_field_material": "Material",
+    "inquiry_field_thickness": "Material thickness, including unit",
+    "inquiry_field_power": "Available power supply",
+    "inquiry_field_existing_model": "Existing equipment or model",
+    "inquiry_field_fault": "Fault symptoms and observations",
+    "inquiry_field_device_count": "Number of machines",
+    "inquiry_field_application": "Task and operating conditions",
+    "inquiry_unit_label": "Preferred machine (optional)",
+    "inquiry_variant_label": "Preferred version (optional)",
+    "inquiry_compare": "Versions at a glance",
+    "inquiry_units_title": "Select a PlasmaFix system",
+    "inquiry_units_note": "Select the machine by its position in the group photograph. We confirm the current condition, exact equipment and availability of your chosen machine in the quotation. Selecting a machine does not reserve it.",
+    "inquiry_unit_consult": "Enquire about this machine",
+    "inquiry_stock_confirmed": "Available machines: {n} · Confirmed on {date}",
+    "inquiry_service_cta_title": "Let's discuss your requirements",
+    "inquiry_service_cta_note": "The selected service will be included in your enquiry. Additional details help us prepare.",
+    "inquiry_service_cta": "Enquire about this service",
+    "form_too_long": "Please shorten this to no more than {n} characters.",
+    "search_group_services": "Services",
+    "form_invalid_count": "Please enter a whole number from 1 to 9999.",
+    "whatsapp_title": "Contact via WhatsApp",
+    "whatsapp_action": "Message us on WhatsApp",
+    "whatsapp_note": "Opens WhatsApp. You decide what information to send us there.",
+    "prod_intro_occ_models": "Select the system by its position in the photograph: Oerlikon PlasmaFix P+T on the left and right, SAF-FRO PlasmaFix 51 in the centre. This selection is not a reservation. We confirm the current condition, scope of supply and availability for the specific machine.",
+    "prod_title_occ_models_suffix": "Used Equipment",
+    "product_guide_title": "{name}: selection and enquiry",
+    "guide_links_label": "Related equipment and information",
+    "company_links_title": "Business, catalogue and contact",
+    "service_links_title": "Equipment and further services",
+    "volt_headline_1": "Technology with",
+    "volt_headline_2": "precision",
+    "volt_disciplines": "Electronics. Welding. Cutting. Cleaning. Automation.",
+    "volt_process_overview": "Processes at a glance",
+    "volt_process_detail": "Principle & application",
+    "volt_panel_title": "Graphic X control panel",
+    "volt_panel_intro": "Colour graphic display, four function keys and a central rotary push-button encoder for operating HyperMIG X and HyperMIG TWIN.",
+    "volt_panel_more": "Controls and functions in detail",
+    "volt_panel_features": [
+      [
+        "Clear display",
+        "See the program, welding values and active wire feeder."
+      ],
+      [
+        "Direct controls",
+        "Select parameters using the function keys and rotary push-button encoder."
+      ],
+      [
+        "99 JOB memories",
+        "Save welding settings and recall them for recurring work."
+      ]
+    ],
+    "volt_service_title": "Diagnostics down to the electronics",
+    "volt_steps_title": "The service process",
+    "volt_steps": [
+      [
+        "Enquiry",
+        "Describe the equipment and the task."
+      ],
+      [
+        "Diagnostics",
+        "We assess the fault and technical condition."
+      ],
+      [
+        "Agreement",
+        "We discuss the work and costs with you."
+      ],
+      [
+        "Repair",
+        "We carry out the agreed work and checks."
+      ]
+    ],
+    "volt_contact_title": "Your contact",
+    "volt_sole_trader": "Sole proprietorship",
+    "volt_device_view": "View equipment",
+    "volt_featured_label": "Featured equipment",
+    "volt_feature_prev": "Previous product",
+    "volt_feature_next": "Next product",
+    "svc_items": [
+      [
+        "repair",
+        "Diagnostics and repairs",
+        "Systematic fault-finding down to the electronics."
+      ],
+      [
+        "calib",
+        "Calibration to EN 60974-14",
+        "With a report for factory production control under EN 1090."
+      ],
+      [
+        "auto",
+        "Automation",
+        "Theta Automation and CNC plasma cutting tables with MyPlasm CNC."
+      ]
+    ],
+    "svc_repair_body": [
+      [
+        "What happens in the workshop",
+        "<p>We open the equipment, test it under load and systematically isolate the fault. Depending on the findings, we check the power supply, power electronics, controls, wire feeder, cooling system or torch. We then discuss which repair makes sense.</p><p>Diagnostics also cover the electronics. A faulty assembly does not automatically mean that the entire machine must be replaced.</p>"
+      ],
+      [
+        "Equipment we service",
+        "<p>The complete MAHE range: MIG/MAG, TIG and MMA welding equipment, Plasma TIG, Theta plasma cutters, HyperCleaner cleaning systems, cutting tables and associated accessories. We clarify the availability and procurement route for suitable spare parts with the supplier in each case.</p><p>Please bring the equipment as it is used, including the torch, hose assembly and work return cable. Torches, cables and connections can also cause a fault.</p>"
+      ],
+      [
+        "The process",
+        "<ul><li>Describe the fault by telephone or in writing: what happens, when does it occur and at which settings?</li><li>Bring or send the equipment to the Herisau workshop by prior arrangement.</li><li>We explain the findings. You then decide whether to proceed with the repair.</li></ul><p>For warranty cases, we remain your contact and clarify the procedure with the supplier in each individual case.</p>"
+      ],
+      [
+        "Location",
+        "<p>The workshop is at our partner company Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Please bring equipment only by prior arrangement. Delivery and collection within Switzerland and Liechtenstein are by agreement.</p>"
+      ]
+    ],
+    "svc_calib_body": [
+      [
+        "What we measure",
+        "<p>During calibration, we compare the equipment display with a reference measurement. We check welding current and voltage, and also wire feed speed on equipment with a wire feeder. Measurements cover the range in which you use the equipment.</p><p>We document the deviations. Where values fall outside the permitted range, the equipment is adjusted if its design allows, then measured again.</p>"
+      ],
+      [
+        "Why a business needs this",
+        "<p>EN 1090 requires factory production control for structural steel and aluminium fabrication. This includes ensuring that welding equipment has been checked and is in proper working order. A traceable test report documents the equipment condition for an audit.</p><p>The relevant standard is EN 60974-14. It describes calibration, validation and consistency testing of arc welding equipment.</p>"
+      ],
+      [
+        "What you receive",
+        "<p>A calibration report with the measured values, reference values and date. Keep the report with your factory production control records.</p><p>We are not an ISO 17025-accredited calibration laboratory. This is generally not required for factory production control. Please clarify any additional requirements with your certification body before making an appointment.</p>"
+      ],
+      [
+        "How often",
+        "<p>Annual calibration is common in practice. Your own procedure and your certification body's requirements determine the interval. Recalibration is advisable after repairs to the power electronics.</p>"
+      ],
+      [
+        "Appointments",
+        "<p>Calibration takes place by appointment at the partner workshop in Herisau AR. Several machines can be checked efficiently in one session. To arrange an appointment, call <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+      ]
+    ],
+    "svc_auto_body": [
+      [
+        "CNC plasma cutting",
+        "<p>The MPT 3001 and MPT 2501 cutting tables operate with MyPlasm CNC and a MAHE Theta-series power source. The tables are available with different working areas; the appropriate size depends on the sheet format you process.</p><p>Toolpaths are created from drawings in DXF or HPGL/PLT format. The software generates kerf compensation, lead-ins, lead-outs and the cutting sequence.</p>"
+      ],
+      [
+        "Power sources for automation",
+        "<p>The Theta 60 aut and Theta 120 aut are designed for operation on a machine and have the appropriate interface. They provide the power source for a gantry, robot or cutting table.</p>"
+      ],
+      [
+        "Setup, commissioning and instruction",
+        "<p>Your contact handles system setup and commissioning, as well as operator instruction, and also looks after subsequent repairs. This gives you one central contact for the power source, control system, PC and cutting table.</p>"
+      ],
+      [
+        "What to clarify first",
+        "<ul><li>The materials and thicknesses you actually cut.</li><li>The largest sheet format.</li><li>Available workshop space, extraction or a water bed.</li><li>Mains connection and compressed air.</li></ul><p>Send us these details so that we can propose a suitable configuration.</p>"
+      ]
+    ],
+    "about_body": [
+      [
+        "The business",
+        "<p>VES-TECH Swiss is a sole proprietorship owned by {owner}, based at {street}, {zip} {city} ({region_name}). We provide advice and sales of MAHE equipment for welding, cutting, cleaning and automation. New MAHE equipment is procured through Schweisstechnik Scherrer AG. Beyond sales, we handle commissioning, maintenance, repairs and calibration.</p><p>Your direct contact is the owner. His contact details appear in the legal notice, the terms and conditions and on every invoice.</p>"
+      ],
+      [
+        "The Herisau workshop",
+        "<p>The partner workshop is at {ws_street}, {ws_zip} {ws_city} ({ws_region_name}), at {partner}. It has test stations, measuring equipment and sufficient space for cutting tables and 400 A systems.</p><p>Please arrange equipment drop-off at the Herisau workshop in advance. The registered and billing address is in Bronschhofen. Both addresses are listed on the contact page and in the legal notice.</p>"
+      ],
+      [
+        "Why MAHE",
+        "<p><strong>MAHE GmbH</strong> manufactures welding and cutting equipment in Kreuztal-Kredenbach, North Rhine-Westphalia (Auwiese 12, 57223 Kreuztal; commercial register at Siegen Local Court, HRB 4311). According to the manufacturer, the business has operated for more than 30 years. Its range extends from MIG/MAG, TIG and MMA welding through plasma cutting, from handheld torches to CNC tables, to cleaning and marking systems.</p><p><strong>The range is aimed at professional users.</strong> The HyperMIG X MIG/MAG range achieves a 45 % duty cycle at 400 A and 60 % at 360 A. It has an IP23 degree of protection and a 400 V three-phase connection. An <a href=\"{url_dl}\">EN 1090 conformity certificate</a> for the welding equipment is available here as a PDF download.</p><p><strong>Clearly arranged controls.</strong> The manufacturer calls this simple synergic operation: a synergic program for all processes and automatic pulse adjustment. Selecting the wire and gas helps choose the appropriate program. Fine adjustment remains accessible: Arc Force, Hot Start, adjustable open-circuit voltage from 15 V and current modulation. A clearly arranged control panel makes daily workshop use easier.</p><p>On the equipment pages, <strong>control panel images</strong> show the respective interface. Use the image enlargement to examine the labels and controls before making an enquiry.</p><p><strong>Robust and repairable.</strong> We clarify whether an assembly can be repaired or replaced and which spare parts are available with the supplier in each individual case. We remain your contact for warranty claims. Repairability and spare parts supply are important reasons for selecting this range. The product pages reproduce the manufacturer's information; each technical statement can be checked against its documentation.</p>"
+      ],
+      [
+        "Measurement and documentation",
+        "<p>Welding power sources are calibrated to EN 60974-14. Businesses manufacturing to EN 1090 or working to ISO 3834 need evidence that equipment actually delivers the displayed values. The record includes the date, measurements and signature.</p><p>Find out what is measured and how often it is needed on the <a href=\"{url_kalib}\">calibration page</a>. <a href=\"{url_repair}\">Repairs</a> and <a href=\"{url_automation}\">automation projects</a> also have dedicated pages.</p>"
+      ],
+      [
+        "Languages and contact hours",
+        "<p>We provide advice in German, Czech and English. Telephone hours: {hours}. Workshop visits are by appointment so that we can allow sufficient time for your enquiry.</p>"
+      ],
+      [
+        "Customer references",
+        "<p>We publish customer references and company logos only with the customers' written permission. Information about our business, the partner workshop and the services offered is available on these pages.</p>"
+      ]
+    ],
+    "svc_body": [
+      [
+        "Preparing your enquiry",
+        "<p>Have the full equipment designation, model version and serial number ready. For a fault, describe when it occurs, which indication appears and which accessories are connected. Photographs of the rating plate and connections help us check the equipment documentation.</p><p>For calibration, specify the number of machines and documentation required. For an automation project, useful details include material, sheet format, thickness and an example drawing.</p>"
+      ],
+      [
+        "Agreeing the right service",
+        "<p>For a fault, we begin with <a href=\"{url_repair}\">diagnostics and repairs</a>. To check displayed measurement values, we offer <a href=\"{url_calib}\">calibration</a>. <a href=\"{url_auto}\">Automation advice</a> combines equipment selection with planning a complete system.</p><p>The scope, cost and timing are clarified for your job. Which parts can be obtained and which work makes sense depend on the specific equipment and findings.</p>"
+      ],
+      [
+        "Equipment reception at the partner workshop",
+        "<p>Work is carried out at {partner}, {ws_street}, {ws_zip} {ws_city}. Arrange equipment reception before transport. Bronschhofen is the registered and billing address, not the workshop address.</p><p>Use the <a href=\"{url_contact}\">contact page</a> to reach your contact and request the service you need. The appointment and exact procedure are agreed personally.</p>"
+      ]
+    ],
+    "faq": [
+      {
+        "q": "How much does MAHE welding equipment cost at VES-TECH Swiss?",
+        "a": "All MAHE equipment at VES-TECH Swiss is offered at a price on request. Each system is configured according to material, thickness, air or water cooling, torch length and accessories. You will usually receive a written quotation within one working day, including service in Switzerland and warranty handling."
+      },
+      {
+        "q": "Which welding process do I need for aluminium?",
+        "a": "MIG pulse or double pulse with a suitable wire/gas characteristic, and AC/DC TIG, are possible choices for aluminium. Selection depends on thickness, joint access, surface finish and production speed. Omega AX and HyperTIG AX are AC/DC examples; HyperMIG X is a MIG/MAG range. The specific equipment and a trial on the component determine the appropriate program."
+      },
+      {
+        "q": "What is the difference between DC TIG and AC/DC TIG?",
+        "a": "DC TIG uses direct current and is suitable for steel, stainless steel, copper and titanium. AC/DC TIG can also use alternating current, whose electrode-positive phase provides oxide cleaning for typical aluminium welding applications. AC/DC equipment therefore offers a broader range of applications, while DC equipment is generally the more economical choice."
+      },
+      {
+        "q": "How does electrolytic weld cleaning work?",
+        "a": "A MAHE cleaner passes current into the weld through a carbon brush wetted with electrolyte. Heat tint and the oxide layer on stainless steel are removed electrochemically, allowing the passive layer to reform. Depending on the electrolyte, the task is cleaning (R1, RP1), polishing (P1), neutralising (N1) or permanent metal marking (M1). The process works locally without immersing the component in a pickling bath."
+      },
+      {
+        "q": "Which thicknesses can a MAHE Theta plasma cutter cut?",
+        "a": "The Theta range covers severance cutting from approximately 15 mm to 80 mm: Theta 40 for lighter workshop work on a 230 V supply, Theta 60 and Theta 120 for industrial use with HSC technology, and Theta 180 as the most powerful model. Theta 60 AUT and Theta 120 AUT have automation interfaces for CNC systems."
+      },
+      {
+        "q": "Does VES-TECH Swiss offer service and repairs in Switzerland?",
+        "a": "Yes. The workshop in Herisau AR, at our partner company Schweisstechnik Scherrer AG, handles diagnostics, repairs, calibration and automation for the MAHE range. You speak directly to the technician who also works on the electronics, available on +41 76 710 91 39."
+      },
+      {
+        "q": "What does EN 1090 mean, and which documentation does VES-TECH supply?",
+        "a": "EN 1090 is the European standard covering the execution of steel and aluminium structures. Manufacturers of such components need factory production control and checked welding equipment. VES-TECH Swiss supplies the associated testing and conformity package matched to your MAHE equipment, including a conformity certificate."
+      },
+      {
+        "q": "How quickly will I receive a quotation?",
+        "a": "Usually within one working day. You can assemble a package of several machines in the enquiry list and send a combined request. The more precisely you describe the material, thickness and operating location, the more specific the quotation can be."
+      },
+      {
+        "q": "Does VES-TECH Swiss deliver throughout Switzerland?",
+        "a": "VES-TECH Swiss handles enquiries from Switzerland and Liechtenstein. Delivery location, timing and collection are agreed for each order. Equipment handover and collection take place at the workshop at St. Gallerstrasse 49, 9100 Herisau (Appenzell Ausserrhoden); the registered and billing address is in Bronschhofen SG. This website is available in German, French, Italian and English; personal advice is provided in German, Czech and English."
+      },
+      {
+        "q": "What are MAHE MIS welding and HyperPuls?",
+        "a": "MIS is a controlled MIG/MAG arc for low-spatter operation. HyperPuls is a MAHE pulse function for productive welding tasks; double pulse adds a slower power rhythm affecting pool movement and the weld ripple pattern. Cold, Root, Force and UP functions have different priorities. Available functions depend on the equipment, panel and characteristic."
+      },
+      {
+        "q": "Does VES-TECH Swiss also sell used welding systems?",
+        "a": "Yes. The used equipment section includes refurbished systems, including SAF-FRO PlasmaFix 51, Oerlikon PlasmaFix P+T and Oerlikon PlasmaFix 50 S microplasma systems. Each system is inspected before handover. Viewing at the partner workshop in Herisau is possible by appointment. Prices on request."
+      },
+      {
+        "q": "What is microplasma welding, and which equipment is available?",
+        "a": "Microplasma is plasma welding for very thin materials from approximately 0.05 mm. The arc is constricted in a cooled nozzle and remains stable at a fraction of an ampere. VES-TECH offers MAHE PlasmaTIG as new equipment. Refurbished used systems in the range include SAF-FRO PlasmaFix 51, Oerlikon PlasmaFix P+T and Oerlikon PlasmaFix 50 S."
+      }
+    ],
+    "impressum_body": [
+      [
+        "Provider",
+        "<p><strong>VES-TECH Swiss</strong><br>Sole proprietorship under Swiss law<br>Owner: Martin Veselovsky</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Canton of St. Gallen<br>Switzerland</p><p>The Bronschhofen address is the registered business and billing address. The <strong>workshop</strong> is at our partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Please bring equipment there for repair or calibration only by prior arrangement.</p>"
+      ],
+      [
+        "Contact and availability",
+        "<p>Telephone: <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>Email: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a><br>Website: <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a></p><p>Telephone hours: Mon–Thu 07:30–17:00 · Fri 07:30–11:30. Visits to the Herisau workshop by appointment.</p><p>Advice in German, Czech and English.</p>"
+      ],
+      [
+        "Legal basis for these details",
+        "<p>Switzerland has no general legal notice requirement for websites. However, anyone offering goods or services through electronic commerce must clearly and completely identify themselves and explain how they can be contacted, including their email address (Art. 3 para. 1 let. s no. 1 of the Unfair Competition Act, UWG). These details appear above.</p><p>The further duties under Art. 3 para. 1 let. s nos. 2–4 UWG concern ordering: information about the technical steps for concluding a contract, correction of input errors and order confirmation. They presuppose an ordering process. This website has no such process.</p>"
+      ],
+      [
+        "Commercial register and business identification number",
+        "<p>VES-TECH Swiss is <strong>not entered in the commercial register</strong>. A sole proprietorship must register when revenue in its last financial year reaches at least CHF 100'000 (Art. 931 para. 1 of the Code of Obligations, OR). This threshold has not been reached. The provider is therefore the owner at the address stated above.</p><p>No business identification number (UID) is published on this website.</p>"
+      ],
+      [
+        "Value added tax",
+        "<p>VES-TECH Swiss is <strong>not liable for VAT</strong>. Annual turnover is below CHF 100'000, so the exemption under Art. 10 para. 2 let. a of the VAT Act (MWSTG) applies. Our invoices do not show VAT.</p><p>The equipment comes from Germany. On import into Switzerland, customs collects import tax and any other applicable charges; our exemption does not change this.</p>"
+      ],
+      [
+        "Responsibility for content",
+        "<p>Martin Veselovsky, at the address above, is responsible for selecting, preparing and arranging the content in all four language versions of this website (German, French, Italian and English). Manufacturer specifications are reproduced without changing their technical meaning.</p>"
+      ],
+      [
+        "Catalogue and enquiries",
+        "<p>This website is a product catalogue, not an online shop. It shows no prices and uses Price on request throughout. There is no shopping basket, ordering function or payment through the website.</p><p>The offer is aimed at commercial and professional buyers: businesses, workshops, schools and public bodies. If a consumer within the meaning of Art. 2 para. 2 of the Price Indication Ordinance (PBV) makes an enquiry, we provide the actual total price payable in Swiss francs, including all public charges, in writing before a contract is concluded.</p><p>The enquiry list collects equipment of interest and submits it as a non-binding enquiry. It is <strong>neither an order nor an offer to enter into a contract</strong>. Only a written quotation is binding.</p><p>Details of quotations, payment, delivery, warranty and jurisdiction are governed by the <a href=\"/en/terms/\">terms and conditions</a>.</p>"
+      ],
+      [
+        "Delivery area",
+        "<p>We supply Switzerland and Liechtenstein. We are happy to answer enquiries from other countries but do not undertake to deliver there.</p>"
+      ],
+      [
+        "Liability for content",
+        "<p>This website's content is prepared carefully and reviewed regularly. We cannot guarantee its accuracy, completeness or currency.</p><p>Technical data, performance specifications and equipment images originate from MAHE GmbH, Germany. The manufacturer may change them at any time without notice. <strong>The written quotation is always decisive</strong>, rather than the presentation on this website.</p><p>This reservation concerns only the website presentation. Statutory warranty rights for delivered goods remain unaffected: we are liable for defects for 24 months from delivery (Art. 210 OR). Warranted characteristics under Art. 197 OR remain binding in all cases.</p><p>To the extent permitted by law, we exclude liability for damage arising from use of this website. Liability for intent, gross negligence and personal injury remains unaffected (Art. 100 para. 1 OR).</p>"
+      ],
+      [
+        "Trade marks and image rights",
+        "<p>MAHE is a trade mark of MAHE GmbH, Germany. Trade mark law gives its proprietor the exclusive right to use and dispose of the mark (Art. 13 of the Trade Mark Protection Act, MSchG). As a seller, we use the mark, model designations and product images to identify the genuine goods we supply.</p><p>Product photographs and control panel images originate from the manufacturer and reproduce its product information. All other trade marks mentioned on this website belong to their respective owners.</p><p>Some images are VES-TECH Swiss's own illustrations rather than manufacturer images: the MPT CNC plasma cutting table view on the homepage and MPT 3001 and MPT 2501 equipment pages. It shows the equipment in a recreated setting. The depicted screen content is an illustration, not the controller interface; the equipment is operated through the MyPlasm CNC system by Proma Elektronika. Only the technical data and manufacturer specifications are binding.</p><p>Since 10 September 2026, the used equipment section has also included systems from other manufacturers. <strong>PLASMAFIX</strong> is a trade mark of Schweissindustrie Oerlikon Bührle AG or its legal successors (Air Liquide Welding, SAF); the same applies to <strong>NERTAMATIC</strong> and <strong>REFRISAF</strong>. We use these names to identify the genuine used equipment we sell. The linked brochures are the manufacturers' unmodified original documents and are passed on with the respective equipment.</p>"
+      ],
+      [
+        "Copyright in our content",
+        "<p>The structure and design of this website, data classification and preparation, our own texts and the source code were created by Martin Veselovsky and are protected by copyright (authorship principle, Art. 6 of the Copyright Act, URG).</p><p>Equipment descriptions, feature lists and technical tables reproduce information from MAHE GmbH; the manufacturer holds the associated rights.</p><p>Reproduction, distribution or incorporation of our content into other websites, catalogues or databases requires our written consent (Art. 10 URG). Statutory exceptions remain reserved, particularly private use under Art. 19 URG and quotation under Art. 25 URG. Source code terms are set out in the project's LICENSE file.</p>"
+      ],
+      [
+        "Links to manufacturer websites",
+        "<p>Data sheets, catalogues and certificates are hosted by the manufacturer. Links in the Downloads section therefore lead to mahe-online.de, outside our website.</p><p>We have no control over third-party content and accept no responsibility for it; responsibility rests solely with its provider. If unlawful content is reported to us, we remove the link.</p>"
+      ],
+      [
+        "Privacy and the enquiry list",
+        "{runtime_summary}"
+      ],
+      [
+        "Effective date of these details",
+        "<p>This version applies from <time datetime=\"2026-08-01\">1 August 2026</time>. Statements about commercial registration and VAT refer to that date.</p>"
+      ]
+    ],
+    "datenschutz_body": [
+      [
+        "Controller",
+        "<p>The controller responsible for processing personal data on this website within the meaning of Art. 5 let. j of the Swiss Data Protection Act (DSG) is:</p><p><strong>VES-TECH Swiss</strong><br>Martin Veselovsky<br>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Switzerland</p><p>Telephone: <a href=\"tel:+41767109139\">+41 76 710 91 39</a><br>Email: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a></p><p>VES-TECH Swiss is a sole proprietorship under Swiss law. Telephone hours are Monday to Thursday, 07:30 to 17:00, and Friday, 07:30 to 11:30. We provide advice in German, Czech and English. No data protection adviser has been appointed. Please address all enquiries directly to the contact above.</p>"
+      ],
+      [
+        "Scope and applicable law",
+        "<p>This notice applies to <a href=\"https://www.ves-tech.ch/\">www.ves-tech.ch</a> in all four language versions (German, French, Italian and English) and to enquiries received through this website.</p><p>The revised <strong>Swiss Data Protection Act</strong> (DSG), in force since 1 September 2023, is the relevant legislation. The processing of personal data includes every operation involving data, from collection to deletion.</p><p>Our delivery area includes Liechtenstein as well as Switzerland. Liechtenstein is part of the European Economic Area. Where we address individuals there, the European General Data Protection Regulation (GDPR) also applies. The two frameworks are not identical; differences are indicated in the text.</p>"
+      ],
+      [
+        "Website and local storage",
+        "{runtime_privacy}"
+      ],
+      [
+        "Hosting and server logs",
+        "<p>The website is hosted on <strong>GitHub Pages</strong>, a service provided by GitHub Inc., USA (part of Microsoft).</p><p>When you open a page, your browser sends technically necessary information to GitHub's servers. This generally includes:</p><ul><li>the IP address of your device or connection;</li><li>the date and time of access;</li><li>the address requested;</li><li>browser and operating system identification (User-Agent).</li></ul><p>GitHub creates these logs. <strong>We have no access to them.</strong> We cannot inspect, analyse or delete them. Their scope and retention period are determined solely by GitHub's policies.</p>"
+      ],
+      [
+        "The enquiry list in your browser",
+        "<p>You can add equipment to an <strong>enquiry list</strong>. This list is not a shopping basket. The website has no prices, ordering function or payment facility.</p><p>The list is stored in your browser's local storage (localStorage, key vt.cart.v2). Only product identifiers, selected versions or individual machines and quantities are stored. Recognised entries from the previous list are migrated automatically. The list remains on your device and reaches us only when you submit the enquiry. It is not a cookie: the details are not automatically sent with page requests.</p><p>Storage on your device is governed by Art. 45c let. b of the Telecommunications Act (FMG). We must inform you about the processing and its purpose and explain how to refuse it. The purpose is to retain your selection while you browse the catalogue. You can refuse by not using the enquiry list, clearing it with the page's controls, deleting website data in your browser or blocking local storage in browser settings. The website remains usable in all these cases. We cannot access these locally stored details.</p>"
+      ],
+      [
+        "Contact form and enquiries",
+        "<p>When you write to us through a form or submit an enquiry list, we process the details you enter:</p><ul><li>name or company;</li><li>email address;</li><li>telephone number, available only in the contact form and optional;</li><li>your message;</li><li>selected products, versions or individual machines, with quantities and the address of the relevant product page, or the selected service;</li><li>the page and language version from which the enquiry originates.</li></ul><p>Depending on the enquiry, you may optionally provide your preferred timeframe, material, thickness, power supply, existing model, fault symptoms, number of machines or intended application. These details help us prepare advice or a quotation. They are sent with your enquiry but are not analysed in web analytics or saved in local browser storage. After confirmed submission, a copyable summary remains visible on the open page.</p><p>Name, email address and message are required in the contact form. Only name and email address are required in the enquiry list form; its message is optional. We cannot reply without the required details. All other information is optional.</p><p>An enquiry submitted this way is <strong>non-binding</strong>. It is neither an order nor an offer to enter into a contract, but a first step towards a possible contract.</p><p>The contractual consequences of an enquiry are governed by the <a href=\"/en/terms/\">terms and conditions</a>.</p>"
+      ],
+      [
+        "Sending your enquiry",
+        "{runtime_delivery}"
+      ],
+      [
+        "Email and telephone",
+        "<p>Our business mailbox is a Google Mail account. Enquiries received by email are therefore stored on Google LLC servers in the USA.</p><p>Unencrypted email is comparable to a postcard. Do not send sensitive personal data by email. For confidential matters, please call instead.</p><p>When you call, we see your telephone number unless you withhold it. We do not record calls.</p>"
+      ],
+      [
+        "Contact via WhatsApp",
+        "<p>The contact link opens WhatsApp as an external service. WhatsApp's terms of use and <a href=\"https://www.whatsapp.com/legal/privacy-policy\" rel=\"noopener noreferrer\" referrerpolicy=\"no-referrer\">privacy policy</a> apply there. No WhatsApp chat is embedded in this website. The link contains no pre-filled message.</p><p>Only after your consent to optional analytics do we record a click on our WhatsApp contact. Telephone numbers and message contents are not sent to web analytics. A click confirms neither the sending nor the receipt of an enquiry.</p>"
+      ],
+      [
+        "Purposes of processing",
+        "<p>We process your details solely to:</p><ul><li>answer your enquiry and prepare a quotation;</li><li>fulfil an order if your enquiry leads to a purchase outside the website: delivery, invoicing and warranty;</li><li>meet legal obligations, particularly retention of accounting records;</li><li>maintain the website's operation and security.</li></ul><p>We do not sell personal data or share them for advertising. You will receive neither newsletters nor advertising from us without your consent.</p>"
+      ],
+      [
+        "Legal framework",
+        "<p><strong>Under Swiss law.</strong> The DSG does not require private businesses to identify a specific legal basis for every processing operation. Processing is generally permitted provided the principles are observed: good faith, a recognisable purpose, proportionality, accurate data and appropriate security (Art. 6 and Art. 8 DSG). We comply with these principles. This notice informs you about collection of your data (Art. 19 DSG).</p><p><strong>Under the GDPR</strong>, where it applies to you, the same activities are classified as follows: enquiries and contract fulfilment rely on Art. 6(1)(b) GDPR, retention of records on Art. 6(1)(c) GDPR, and secure operation of the website on Art. 6(1)(f) GDPR.</p>"
+      ],
+      [
+        "Disclosure to third parties",
+        "<p>We disclose personal data only where necessary for the stated purpose or required by law. Recipients may include:</p><ul><li>Schweisstechnik Scherrer AG in Switzerland, where required for the procurement, delivery or service you request; only necessary contact, equipment and order details are shared;</li><li>the technical providers named above: GitHub for hosting and Google for the business email account;</li><li>MAHE GmbH in Germany as manufacturer, if a technical enquiry or warranty case requires your details; only contact and equipment details are then transmitted;</li><li>the carrier where a delivery is arranged;</li><li>our accounting service, tax authorities and law enforcement authorities where legal obligations require disclosure.</li></ul><p>Data are not sold or shared for advertising.</p>"
+      ],
+      [
+        "Disclosure abroad",
+        "<p>Personal data may be disclosed abroad where the Federal Council recognises the recipient country's data protection as adequate (Art. 16 DSG). Without such recognition, an appropriate safeguard or an exception under Art. 17 DSG is required.</p><p><strong>USA.</strong> The Federal Council added the USA to the list of countries with adequate data protection on 14 August 2024; the amendment to the Data Protection Ordinance took effect on <strong>15 September 2024</strong>. Recognition applies only to businesses certified under the Swiss-U.S. Data Privacy Framework. GitHub Inc. and Google LLC are listed by the US Department of Commerce with active status. Hosting and email disclosure rely on this recognition.</p><p><strong>Germany.</strong> As an EU member state, Germany is also on the Federal Council's list. Enquiries to the manufacturer therefore require no additional safeguard.</p><p>A residual risk remains: even certified providers are subject to access by US authorities.</p>"
+      ],
+      [
+        "Google Search Console",
+        "<p>The website is registered with Google Search Console to support its appearance in Google Search. Ownership is verified through a verification file in the root directory. No script is loaded for this purpose and no data about you are collected.</p><p>The service reports only aggregated figures, such as search terms, accessed pages, country and device type, without identifying individuals.</p>"
+      ],
+      [
+        "Manufacturer content (mahe-online.de)",
+        "<p>This website's images and texts are hosted on our own server. The manufacturer's catalogue and data sheets are hosted on mahe-online.de. When you open such a link, its server receives your IP address, the time and your browser identifier.</p><p>Your browser also attempts to load an image directly from mahe-online.de if, exceptionally, it fails to load from our website. This does not occur during normal operation.</p>"
+      ],
+      [
+        "Retention periods",
+        "<p>We retain personal data for as long as the purpose requires or the law prescribes.</p><ul><li><strong>Enquiries without subsequent business:</strong> we delete them once it is clear that no transaction will result. We review the mailbox at least annually.</li><li><strong>Business relationships:</strong> invoices and accounting records are retained for ten years (Art. 957 paras. 2 and 3 together with Art. 958f OR). The period starts at the end of the financial year.</li><li><strong>Hosting server logs:</strong> these are held by GitHub. We have no control over their retention period.</li><li><strong>Enquiry list in your browser:</strong> it remains until you delete it.</li></ul>"
+      ],
+      [
+        "Data security",
+        "<p>We take appropriate technical and organisational measures to protect personal data against unauthorised access, loss and misuse (Art. 8 DSG, Art. 32 GDPR). These include encrypted website delivery over HTTPS/TLS, protection of the business email account and avoiding collection of data we do not need. Data not collected cannot be lost.</p><p>No one can guarantee absolute protection during transmission over the internet.</p>"
+      ],
+      [
+        "Your rights",
+        "<p>Under the Swiss Data Protection Act, you have the following rights:</p><ul><li><strong>Access</strong> (Art. 25 DSG): you may ask whether and which personal data we process about you. Information is generally free and usually provided within 30 days.</li><li><strong>Correction</strong> (Art. 32 para. 1 DSG): we correct inaccurate data.</li><li><strong>Deletion and prohibition of processing or disclosure:</strong> you may ask us to stop processing, refrain from disclosure to third parties or delete your data, provided no statutory retention requirement prevents this. We comply with such requests without formal proceedings. The law provides these remedies as rights of action (Art. 32 para. 2 DSG together with Art. 28 et seq. of the Civil Code, ZGB), but you do not need to sue to exercise them with us.</li><li><strong>Data release and portability</strong> (Art. 28 DSG): we provide data you supplied and that we process automatically in a commonly used electronic format, or transfer them to another party at your request.</li></ul><p>If the GDPR applies to you, its rights under Arts. 15 to 21 also apply: access, correction, erasure, restriction, portability and objection.</p><p>An informal request is sufficient: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> or the postal address above. We must verify your identity appropriately to avoid disclosing information to the wrong person.</p>"
+      ],
+      [
+        "Reporting to the FDPIC and legal remedies",
+        "<p>If you disagree with our response, you may report the matter to the Federal Data Protection and Information Commissioner (FDPIC; German abbreviation EDÖB) under Art. 49 DSG. The Commissioner opens an investigation on their own initiative or following a report if there are sufficient indications that processing may breach data protection rules. They may refrain from investigating minor infringements. You have no entitlement to the opening of an investigation.</p><p>Federal Data Protection and Information Commissioner (FDPIC)<br>Feldeggweg 1<br>3003 Bern<br><a href=\"https://www.edoeb.admin.ch/en\">www.edoeb.admin.ch</a></p><p>Civil remedies are also available (Art. 32 DSG). If you are subject to the GDPR, you may additionally contact the supervisory authority of your country of residence; for Liechtenstein, this is the Data Protection Authority in Vaduz.</p>"
+      ],
+      [
+        "Changes and date",
+        "<p>We update this notice when the website's operation or service providers change. The version published here is authoritative. We do not maintain an archive of previous versions.</p><p>Dated: 8 October 2026.</p>"
+      ]
+    ],
+    "agb_body": [
+      [
+        "Scope",
+        "<p>These terms and conditions apply to all quotations, deliveries and services provided by VES-TECH Swiss. They apply to businesses and consumers alike. Where a provision applies only to one group, this is stated explicitly.</p><p>We refer to these terms in every written quotation and indicate where they can be accessed. By accepting the quotation, the customer agrees to them. We send them in advance on request.</p><p>Any differing customer terms apply only if we have accepted them in writing. Silence regarding a customer's purchasing terms does not constitute acceptance.</p><p>These terms are available in German, French, Italian and English. In the event of differences between language versions, the German version prevails for business customers. For consumers, the version in the language in which the contract was concluded applies.</p><p>For these terms, written form includes email.</p>"
+      ],
+      [
+        "Provider",
+        "<p>The contracting party is:</p><ul><li><strong>VES-TECH Swiss</strong>, a sole proprietorship under Swiss law</li><li>Owner: Martin Veselovsky</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Canton of St. Gallen, Switzerland</li><li>Telephone: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>Email: <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a></li></ul><p>Telephone hours: Monday to Thursday 07:30–17:00, Friday 07:30–11:30.</p><p>VES-TECH Swiss is a sole proprietorship without a commercial register entry or UID number. We provide advice and sales of MAHE equipment for welding, cutting, cleaning and automation. New MAHE equipment is procured through Schweisstechnik Scherrer AG.</p><p>Advice, quotations and subsequent handling are provided in German or English, and in Czech on request.</p><p>Further provider details appear in the <a href=\"/en/legal-notice/\">legal notice</a>.</p>"
+      ],
+      [
+        "Quotations, enquiry list and contract formation",
+        "<p>The website is a product catalogue, not an online shop. It contains no prices, shopping basket or ordering function. Displaying equipment or an accessory is an invitation to enquire, not a contractual offer.</p><p>The <strong>enquiry list</strong> serves only to collect selected equipment and send it to us in one message. Submission is <strong>neither an order, an offer to enter into a contract nor a reservation</strong>. It creates no payment obligation or entitlement to delivery.</p><p>In response to an enquiry, we prepare a written quotation stating the version, quantity, price, delivery period and shipping costs. Only this quotation determines the contractual content. We are bound by it during its stated validity period. If no validity period is stated, the quotation remains valid for 30 days from its date.</p><p>A contract is formed when the customer accepts the quotation in writing within this period or when we confirm a customer's order in writing.</p><p>Images and details of dimensions, weights and equipment in catalogues, data sheets and on the website describe the equipment. Minor, customary deviations are reserved where they do not affect the agreed intended use. Performance values stated in the quotation and manufacturer data sheet are, however, warranted characteristics within the meaning of Art. 197 of the Swiss Code of Obligations (OR). Art. 199 OR remains reserved in all cases. Manufacturer technical developments are reserved where they do not affect the agreed intended use.</p>"
+      ],
+      [
+        "Prices, taxes and customs",
+        "<p>All prices are in Swiss francs (CHF), excluding shipping and packaging surcharges unless the quotation states otherwise. A term such as ex stock or ex works concerns price calculation only. Benefits and risk are governed exclusively by the Delivery, delivery periods and transfer of risk section: they pass only when the goods are handed over to the customer.</p><p>VES-TECH Swiss is <strong>not liable for VAT</strong>. Annual turnover is below CHF 100'000, so the exemption under Art. 10 para. 2 let. a of the VAT Act (MWSTG) applies. Quotations and invoices do not show VAT. Customers therefore cannot claim input VAT from our invoices.</p><p>This exemption concerns domestic tax only. The procurement and delivery routes are specified in the written quotation. Any customs duties and import taxes are included in the quoted price and are not charged additionally to the customer.</p><p>We are bound by the quoted price during the quotation's validity period. Manufacturer price changes during that period are borne by us.</p><p>After contract formation, the agreed price remains fixed. Adjustment is permitted only if more than four months separate contract formation and the agreed delivery date and the manufacturer has increased its prices during that period. We notify the customer without delay. Within ten days of notification, the customer may withdraw from the contract without cost. Payments already made are refunded.</p>"
+      ],
+      [
+        "Payment",
+        "<p>Invoices are payable <strong>net within 30 days of the invoice date</strong>, without settlement discount. The invoice date appears on every invoice.</p><p>For first orders, custom manufacturing and special procurement, we may require advance payment or a deposit. The quotation states the amount. The delivery period does not start until an agreed deposit has been received.</p><p>On expiry of the payment period, the customer is in default without a further reminder. Default interest of 5 % per year is due from that point (Art. 104 para. 1 OR). Further damages remain reserved. If payment is overdue, we may suspend outstanding deliveries until unpaid invoices are settled.</p><p>Businesses may set off payments only against counterclaims that are acknowledged or established by a court. This restriction does not apply to consumers.</p>"
+      ],
+      [
+        "Delivery, delivery periods and transfer of risk",
+        "<p>We deliver within Switzerland and to Liechtenstein. Deliveries to other addresses require a separate agreement.</p><p><strong>Shipping costs are charged separately as quoted.</strong> They depend on weight, volume and destination and are stated in the written quotation. Collection from VES-TECH Swiss's registered address is possible by agreement.</p><p>Delivery periods are based on manufacturer information and are estimates unless the quotation explicitly identifies them as binding. If delivery is delayed, we inform the customer and provide a new date. If this date is also exceeded by more than 30 days, the customer may withdraw after setting an additional deadline in writing. Payments already made are refunded.</p><p>If delivery is prevented or substantially impeded by circumstances beyond our responsibility, particularly manufacturer inability to supply, operational or transport disruption, official orders, natural events or industrial action, the delivery period is extended by the duration of the impediment. If it lasts longer than three months, either party may withdraw; payments already made are refunded. No further claims arise unless we are at fault. Art. 100 para. 1 OR remains reserved.</p><p>Partial deliveries are permitted where reasonable for the customer.</p><p><strong>Benefits and risk pass only when the goods are handed over to the customer or a person designated by the customer</strong>, including shipments. We intentionally depart from the default rule in Art. 185 OR in the customer's favour. Transport damage remains our responsibility until handover. The customer records visible transport damage on the delivery receipt at acceptance and informs us promptly so that we can raise it with the carrier.</p>"
+      ],
+      [
+        "Retention of title",
+        "<p>Delivered goods remain our property until paid for in full.</p><p>In Switzerland, retention of title is effective against third parties only if entered in the retention of title register at the buyer's residence or registered office under Art. 715 of the Civil Code (ZGB). The competent debt enforcement office maintains this register. Without an entry, the clause operates only between the contracting parties.</p><p>We reserve the right to register retention of title. The customer provides the necessary details and co-signs the application. We bear the registration costs.</p><p>While goods remain subject to retention of title, the customer may neither pledge them nor transfer them as security. The customer informs us immediately of any seizure or other interference with our rights.</p>"
+      ],
+      [
+        "Inspection and notification of defects",
+        "<p>The customer inspects the goods after delivery as soon as the ordinary course of business permits and notifies us immediately of defects discovered (Art. 201 OR).</p><p>If inspection or notification is omitted, the goods are deemed accepted. Defects not detectable during ordinary inspection are excepted. A hidden defect must be reported immediately after discovery.</p><p>Notification must be in writing and include the invoice or serial number and a description of the defect. Photographs help clarification with the manufacturer.</p><p>We allow consumers more time than Art. 201 OR requires: notification is timely if received within 14 days of delivery or, for a hidden defect, within 14 days of discovery. Statutory rights remain unaffected in all cases.</p>"
+      ],
+      [
+        "Warranty for defects",
+        "<p>We warrant that delivered goods have no defects that eliminate or substantially reduce their value or fitness for the intended use, and that they possess their warranted characteristics (Art. 197 OR).</p><p>The warranty period is <strong>24 months from delivery</strong>. This is the statutory period under Art. 210 para. 1 OR; we do not shorten it.</p><p>For a justified defect affecting a business customer, we remedy it by repair or replacement at our choice. If this is not achieved within a reasonable period or fails twice, the customer has the statutory remedies, particularly rescission or price reduction under Art. 205 OR and replacement of generic goods under Art. 206 OR.</p><p>This priority for repair does not apply to consumers. They have the choice under Art. 205 OR from the outset; they may accept repair or replacement but are not obliged to do so.</p><p>The warranty does not cover:</p><ul><li>consumables worn through intended use, such as nozzles, electrodes, contact tips, abrasives, brushes, felts, seals, hoses and used electrolytes;</li><li>damage from improper use, overloading, incorrect mains voltage, missing or inadequate maintenance or failure to follow operating instructions;</li><li>damage from intervention by the customer or third parties, particularly repairs outside our service or the manufacturer's service, and use of unapproved spare parts or accessories;</li><li>damage from external causes such as impact, moisture, frost, chemicals or overvoltage;</li><li>normal visual changes such as scratches or discolouration that do not affect function.</li></ul><p>For consumers, these exclusions apply only to the extent that they do not undermine mandatory warranty rights (Art. 210 OR, Art. 8 UWG). Any MAHE manufacturer warranty supplements statutory warranty rights and does not restrict them. We handle supplier liaison for the customer and clarify the procedure in each case.</p><p><strong>Used equipment.</strong> Used systems are sold in the condition in which they were inspected and demonstrated. Age, operating hours and ordinary signs of use are not defects. The written quotation specifies the warranty period for each used machine; without a different agreement, the statutory period applies. For consumers, the period for used goods is at least one year and cannot be agreed below that minimum (Art. 210 para. 4 OR). Art. 199 OR remains reserved in all cases: a party fraudulently concealing a defect cannot rely on a limitation. Used equipment has no manufacturer warranty; our own pre-handover inspection does not replace one.</p>"
+      ],
+      [
+        "Liability and product safety",
+        "<p>We are liable within the statutory framework for damage caused by us or persons assisting us.</p><p>Liability for unlawful intent and gross negligence cannot be excluded under Art. 100 para. 1 OR. We do not exclude it.</p><p>For slight negligence, liability is limited to direct damage. In that case, indirect and consequential losses, particularly lost profit, production downtime, data loss and third-party claims, are not compensated.</p><p>Liability under the Product Liability Act (PrHG) remains reserved in all cases. Under Art. 2 para. 1 let. c PrHG, a person importing a product into Switzerland for sale is also regarded as a producer. Where we import equipment ourselves, this liability applies to us. Art. 8 PrHG does not permit it to be limited; we do not exclude it. Mandatory liability for personal injury also remains reserved.</p><p>Welding, plasma cutting and electrolytic cleaning equipment are work tools with inherent hazards. The customer is responsible for ensuring operation only by instructed persons, in accordance with operating instructions and occupational safety and environmental rules. We are not liable for damage arising from use contrary to these requirements.</p>"
+      ],
+      [
+        "Withdrawal and returns",
+        "<p>Our contracts are concluded through a written quotation, not through the website. Swiss law provides no general cancellation or return right for such contracts. A concluded contract is binding. European Union rules do not apply here.</p><p>The statutory right of withdrawal under Art. 40a et seq. OR remains reserved. It is available to consumers where a contract for movable goods for personal or family use is concluded during a telephone call, their payment exceeds CHF 100 and they did not initiate the call. The withdrawal period is 14 days (Art. 40e para. 2 OR); withdrawal must be communicated in text form, for example by email. Under Art. 40c OR, no withdrawal right exists where the consumer expressly requested negotiations. This is our usual case because enquiries originate through the enquiry list, contact form or a customer's own call. If we initiate a call, we expressly mention the withdrawal right in the quotation.</p><p>Warranty rights for defective goods remain unaffected in all cases.</p><p>Acceptance of non-defective returns is possible only case by case, as a <strong>goodwill gesture</strong> and following prior written agreement. There is no entitlement to it. Where a return is agreed:</p><ul><li>goods must be unused, complete and in original packaging;</li><li>the customer bears return shipping costs;</li><li>specially procured items, customer-specific configurations and opened electrolytes or other chemicals cannot be returned.</li></ul><p>We do not accept returns without prior agreement; they are returned at the sender's expense.</p>"
+      ],
+      [
+        "Spare parts, service and chemicals",
+        "<p>We clarify availability and procurement routes for spare parts, consumables and accessories with the supplier in each case. We do not guarantee spare parts supply for a particular period.</p><p>The written quotation states whether on-site commissioning and instruction are included or charged according to time spent.</p><p>We carry out repairs outside warranty on a time-and-materials basis or organise them through our partner workshop. On request, we provide an estimate before work begins. If no repair is commissioned, diagnostic work is charged only where this was agreed beforehand.</p><p>For electrolytes and other chemicals, we supply the manufacturer's safety data sheet with the first delivery and provide it again at any time on request. Storage, handling and disposal follow this data sheet and applicable rules; the customer is responsible for compliance.</p><p>We provide advice on selection, commissioning and application to the best of our knowledge. This does not release the customer from checking whether equipment is suitable for the specific application.</p>"
+      ],
+      [
+        "Privacy",
+        "{runtime_summary}"
+      ],
+      [
+        "Applicable law and jurisdiction",
+        "<p>Contracts between VES-TECH Swiss and the customer are governed exclusively by <strong>Swiss law</strong>. Conflict-of-law rules referring to foreign law are excluded.</p><p>The United Nations Convention on Contracts for the International Sale of Goods of 11 April 1980 (CISG) is excluded. This exclusion is permitted by Art. 6 CISG.</p><p>Jurisdiction for disputes arising from the contractual relationship is at the seller's registered office, <strong>Wil SG</strong>.</p><p>The choice-of-law and jurisdiction agreements do not apply to consumers. In domestic cases, Art. 35 of the Civil Procedure Code (ZPO) prohibits advance waiver of jurisdiction under Art. 32 ZPO. For residents of Liechtenstein, choice of law is excluded by Art. 120 para. 2 of the Private International Law Act (IPRG), and jurisdiction at the consumer's residence cannot be waived in advance under Art. 114 para. 2 IPRG. Mandatory statutory jurisdictions remain reserved in all cases.</p><p>Before resorting to court, we welcome direct discussion. A short message to <a href=\"mailto:vestechswiss@gmail.com\">vestechswiss@gmail.com</a> is sufficient.</p>"
+      ],
+      [
+        "Severability",
+        "<p>If any provision of these terms is invalid or unenforceable, the remaining provisions are unaffected.</p><p>The invalid provision is replaced by the statutory rule closest to its economic purpose. The same applies to gaps.</p>"
+      ],
+      [
+        "Document date",
+        "<p>These terms and conditions are <strong>dated 8 October 2026</strong>.</p><p>We may change them for future contracts. An existing contract remains governed by the version published when it was concluded. The current version is available on this page.</p>"
+      ]
+    ],
+    "cat_desc_tpl_one": "MAHE {cat} at VES-TECH Swiss: {n} model, {subs}. Advice, service and spare parts from Herisau AR. Price on request.",
+    "sub_desc_tpl_one": "MAHE {sub}: {n} model at VES-TECH Swiss. Technical data, accessories and personal advice. Price on request.",
+    "cat_desc_occ_one": "Used equipment at VES-TECH Swiss: {n} model, {subs}. Inspected at the Herisau AR workshop, with original documentation. Price on request.",
+    "sub_title_occ_one": "Used {sub} · {n} Model | VES-TECH Swiss",
+    "sub_desc_occ_one": "Used {sub}: {n} model at VES-TECH Swiss. Technical data, original brochure and viewing by appointment. Price on request."
   }
 }

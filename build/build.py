@@ -37,7 +37,7 @@ OUT = C.ROOT
 TODAY = datetime.date.today().isoformat()
 
 # Verzeichnisse, die der Build vollständig verwaltet (werden vorher geleert)
-MANAGED_DIRS = ["produkte", "fr", "it", "verfahren", "downloads", "kontakt",
+MANAGED_DIRS = ["produkte", "fr", "it", "en", "verfahren", "downloads", "kontakt",
                 "faq", "suche", "impressum", "datenschutz", "agb", "service", "ueber-uns"]
 
 written = []
@@ -105,6 +105,25 @@ SYNONYMS = {
     "pulizia": ["reinigung", "nettoyage"],
     "accessoires": ["zubehoer", "accessori"],
     "accessori": ["zubehoer", "accessoires"],
+    # English terms, including US spelling and common workshop vocabulary.
+    "welding": ["schweissen", "soudage", "saldatura"],
+    "welder": ["welding"],
+    "stick": ["mma", "electrode"],
+    "electrode": ["elektrode", "mma"],
+    "aluminum": ["aluminium", "alu"],
+    "stainless": ["inox", "edelstahl", "chromstahl"],
+    "steel": ["stahl"],
+    "trolley": ["fahrwagen", "wagen", "cart"],
+    "torch": ["brenner"],
+    "remote": ["fernbedienung", "fernregler"],
+    "feeder": ["drahtvorschub", "wire"],
+    "cooler": ["wk", "kuehler", "cooling"],
+    "cutting": ["plasma", "schneiden"],
+    "cleaning": ["cleaner", "reinigung"],
+    "marking": ["signieren", "hcs", "m1"],
+    "used": ["occasion", "refurbished", "plasmafix"],
+    "refurbished": ["occasion", "used"],
+    "repair": ["repairs", "reparatur", "reparation", "riparazione"],
 }
 
 
@@ -579,7 +598,8 @@ def llms_txt():
         lines.append(f"- [{q['q']}]({C.abs_url(C.u_page(L,'faq'))})")
     lines += ["", "## Weitere Sprachen",
               f"- Français: {C.abs_url(C.u_home('fr'))}",
-              f"- Italiano: {C.abs_url(C.u_home('it'))}", ""]
+              f"- Italiano: {C.abs_url(C.u_home('it'))}",
+              f"- English: {C.abs_url(C.u_home('en'))}", ""]
     return "\n".join(lines)
 
 
@@ -695,6 +715,7 @@ def main():
     C.analytics_enabled()
     C.analytics_campaigns()
     C.web3forms_key()
+    C.validate_translations()
     C.validate_editorial_guides()
     C.validate_process_guide()
     written.clear()

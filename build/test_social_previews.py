@@ -131,7 +131,7 @@ class SocialPreviewTests(unittest.TestCase):
                     with self.subTest(category=cat['id'], sub=sub, lang=lang):
                         self.assert_catalogue_image(PG.page_cat(lang, cat, sub)[1], images)
                         checked += 1
-        self.assertEqual(checked, 63)
+        self.assertEqual(checked, 21 * len(C.LANGS))
 
     def test_general_catalogue_and_services_keep_the_generic_company_preview(self):
         for lang in C.LANGS:

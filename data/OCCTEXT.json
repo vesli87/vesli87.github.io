@@ -165,6 +165,61 @@
           "a": "Su una macchina usata non c’è garanzia del costruttore. Vale la garanzia legale; il termine concordato per ciascuna macchina è indicato nell’offerta scritta. I dettagli sono nelle CG."
         }
       ]
+    },
+    "en": {
+      "abschnitte": [
+        {
+          "h": "What the PlasmaFix 51 is designed for",
+          "p": [
+            "Microplasma is plasma welding for very thin materials. The arc is constricted in a water-cooled nozzle and remains stable at a fraction of an ampere, where an unconstricted TIG arc would extinguish. Heat input is low and localised, helping limit distortion; the weld generally requires little finishing.",
+            "PlasmaFix 51 starts welding at 0.08 A. Its application range covers foil and sheet from 0.06 mm to approximately 1 mm; above this, TIG is generally the more suitable process. Typical work includes capillary tubes, diaphragms, bellows, thermocouples, wire mesh and screens, filters, small instrumentation and medical components, heat exchangers and jewellery. Suitable materials include stainless steel, nickel alloys, copper-nickel alloys, titanium, tantalum, zirconium, silver and gold. This process is not suitable for aluminium and its alloys."
+          ]
+        },
+        {
+          "h": "51 and P+T versions",
+          "p": [
+            "Both versions belong to the 51 range, which the manufacturer SAF marketed as NERTAMATIC 51. P+T means Plasma + TIG and describes the range's capability: microplasma welding from 0.08 to 50 A or precision TIG welding from 0.8 to 50 A, using either smooth or pulsed current from 1 Hz to 10 kHz. Operation uses keys and an LCD display, 100 welding programs can be stored and high-frequency ignition is built in."
+          ]
+        },
+        {
+          "h": "What a complete system includes",
+          "p": [
+            "A complete microplasma system in this range consists of the power source, a water-cooled SP 45 torch for manual or mechanised welding, the REFRISAF 51 cooling unit and two pressure regulators with flowmeters for plasma gas and shielding gas. Pure argon is used as the plasma gas; depending on the material, the outer shielding gas is argon with 5 % hydrogen or helium. The written quotation specifies what is supplied with each system. For nozzles, electrodes and other consumables, we check current procurement options using the exact torch type and part designation. Include these details in your enquiry."
+          ]
+        },
+        {
+          "h": "Refurbished and inspected in Herisau",
+          "p": [
+            "The systems in the group photograph were fully overhauled at the Herisau workshop; the water cooling system, including pump and hoses, was replaced. Each system is inspected before handover and demonstrated during viewing. Advice comes from the technician who refurbished the systems. The written quotation specifies the warranty period for each system, based on our terms and conditions."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is microplasma welding?",
+          "a": "A form of plasma welding for very thin materials. The arc is constricted in a cooled nozzle and remains stable from approximately 0.1 A. Heat input is low, helping limit workpiece distortion."
+        },
+        {
+          "q": "Which thicknesses can PlasmaFix 51 weld?",
+          "a": "Foil and sheet from 0.06 mm to approximately 1 mm, for example stainless steel, nickel alloys, titanium, tantalum, silver or gold. The process is unsuitable for aluminium; TIG is a better choice for thicker sheet."
+        },
+        {
+          "q": "What does P+T mean on PlasmaFix equipment?",
+          "a": "Plasma + TIG. The system welds in microplasma mode from 0.08 to 50 A and in TIG mode from 0.8 to 50 A, with smooth or pulsed current up to 10 kHz."
+        },
+        {
+          "q": "What was done during refurbishment?",
+          "a": "The systems in the group photograph were fully overhauled; the water cooling system, including pump and hoses, was replaced. Each system is inspected and demonstrated before handover."
+        },
+        {
+          "q": "Can I view the system before buying?",
+          "a": "Yes. You can view the system and see it demonstrated at the workshop in Herisau AR by appointment. Arrange a visit by telephone or through the contact form."
+        },
+        {
+          "q": "Does used equipment have a warranty?",
+          "a": "Used equipment has no manufacturer warranty. Statutory warranty rights apply; the written quotation specifies the period agreed for each system. Details are set out in the terms and conditions."
+        }
+      ]
     }
   },
   "plasmafix-50s": {
@@ -279,6 +334,44 @@
         {
           "q": "C’è una garanzia su un’occasione?",
           "a": "Su una macchina usata non c’è garanzia del costruttore. Vale la garanzia legale; il termine concordato è indicato nell’offerta scritta. I dettagli sono nelle CG."
+        }
+      ]
+    },
+    "en": {
+      "abschnitte": [
+        {
+          "h": "What the PlasmaFix 50 S is designed for",
+          "p": [
+            "PlasmaFix 50 S is a microplasma power source for precision work: from 0.05 A it welds 0.01 mm foil, wire mesh and small fittings, using smooth or pulsed current from 1 Hz to 10 kHz. As with other microplasma systems, the arc is constricted in a water-cooled nozzle, remaining stable at very low currents while introducing little heat into the workpiece."
+          ]
+        },
+        {
+          "h": "Refurbished and inspected in Herisau",
+          "p": [
+            "The system was fully overhauled at the Herisau workshop; the water cooling system, including pump and hoses, was replaced. It is inspected before handover and demonstrated during viewing. Advice comes from the technician who refurbished it. The written quotation specifies the warranty period, based on our terms and conditions."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is microplasma welding?",
+          "a": "A form of plasma welding for very thin materials. The arc is constricted in a cooled nozzle and remains stable from approximately 0.1 A. Heat input is low, helping limit workpiece distortion."
+        },
+        {
+          "q": "Which tasks suit PlasmaFix 50 S?",
+          "a": "Precision work from 0.05 A: 0.01 mm foil, wire mesh, small fittings and precision parts. The process is unsuitable for aluminium."
+        },
+        {
+          "q": "What was done during refurbishment?",
+          "a": "The system was fully overhauled; the water cooling system, including pump and hoses, was replaced. It is inspected and demonstrated before handover."
+        },
+        {
+          "q": "Can I view the system before buying?",
+          "a": "Yes. You can view the system and see it demonstrated at the workshop in Herisau AR by appointment. Arrange a visit by telephone or through the contact form."
+        },
+        {
+          "q": "Does used equipment have a warranty?",
+          "a": "Used equipment has no manufacturer warranty. Statutory warranty rights apply; the written quotation specifies the agreed period. Details are set out in the terms and conditions."
         }
       ]
     }

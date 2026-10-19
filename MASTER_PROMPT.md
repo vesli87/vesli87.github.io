@@ -56,8 +56,8 @@
     am LocalBusiness — sonst kollidieren sie mit dem Unternehmensprofil.
 - **Keine Preise.** Jedes Gerät zeigt „Preis auf Anfrage". Kundschaft sammelt Geräte
   in der **Anfrageliste** und schickt eine gebündelte Anfrage.
-- **Dreisprachig DE / FR / IT**, Deutsch ist Standard. **Jeder** neue Text existiert in
-  allen drei Sprachen. Schweizer Schreibweise: **„ss" statt „ß"** („Schweissen",
+- **Viersprachig DE / FR / IT / EN**, Deutsch ist Standard. **Jeder** neue Text existiert in
+  allen vier Sprachen. Schweizer Schreibweise: **„ss" statt „ß"** („Schweissen",
   „Wasserkühlung").
 - **Domain:** `https://www.ves-tech.ch` (kanonisch), registriert bei Infomaniak,
   DNS-Zone ebenfalls dort (ns11/ns12.infomaniak.ch), A-Records auf GitHub Pages.
@@ -122,8 +122,8 @@ build/i18n_extra.json ← SEO-/AEO-Texte, FAQ, Rechtstexte (von Hand gepflegt)
         └─ build/build.py    schreibt alles raus
         │
         ▼
-363 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
-    + data/products.json + data/search-{de,fr,it}.json
+484 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
+    + data/products.json + data/search-{de,fr,it,en}.json
 ```
 
 **Kein Framework und kein Bundler.** Der Generator benötigt Python 3.9 oder neuer.
@@ -142,19 +142,19 @@ Website vollständig lesbar und navigierbar.
 
 ## 3. URL-Schema
 
-| Seite | DE | FR | IT |
-|---|---|---|---|
-| Start | `/` | `/fr/` | `/it/` |
-| Alle Geräte | `/produkte/` | `/fr/produits/` | `/it/prodotti/` |
-| Kategorie | `/produkte/<cat>/` | `/fr/produits/<cat>/` | `/it/prodotti/<cat>/` |
-| Unterkategorie | `/produkte/<cat>/<sub>/` | … | … |
-| Produkt | `/produkte/<cat>/<id>/` | … | … |
-| Verfahren | `/verfahren/` | `/fr/procedes/` | `/it/processi/` |
-| Downloads | `/downloads/` | `/fr/telechargements/` | `/it/download/` |
-| Kontakt | `/kontakt/` | `/fr/contact/` | `/it/contatto/` |
-| FAQ | `/faq/` | `/fr/questions-frequentes/` | `/it/domande-frequenti/` |
-| Suche | `/suche/` | `/fr/recherche/` | `/it/ricerca/` |
-| Impressum / Datenschutz | `/impressum/`, `/datenschutz/` | … | … |
+| Seite | DE | FR | IT | EN |
+|---|---|---|---|---|
+| Start | `/` | `/fr/` | `/it/` | `/en/` |
+| Alle Geräte | `/produkte/` | `/fr/produits/` | `/it/prodotti/` | `/en/products/` |
+| Kategorie | `/produkte/<cat>/` | `/fr/produits/<cat>/` | `/it/prodotti/<cat>/` | `/en/products/<cat>/` |
+| Unterkategorie | `/produkte/<cat>/<sub>/` | … | … | `/en/products/<cat>/<sub>/` |
+| Produkt | `/produkte/<cat>/<id>/` | … | … | `/en/products/<cat>/<id>/` |
+| Verfahren | `/verfahren/` | `/fr/procedes/` | `/it/processi/` | `/en/processes/` |
+| Downloads | `/downloads/` | `/fr/telechargements/` | `/it/download/` | `/en/downloads/` |
+| Kontakt | `/kontakt/` | `/fr/contact/` | `/it/contatto/` | `/en/contact/` |
+| FAQ | `/faq/` | `/fr/questions-frequentes/` | `/it/domande-frequenti/` | `/en/faq/` |
+| Suche | `/suche/` | `/fr/recherche/` | `/it/ricerca/` | `/en/search/` |
+| Impressum / Datenschutz | `/impressum/`, `/datenschutz/` | … | … | `/en/legal-notice/`, `/en/privacy/` |
 
 Kategorie-Slugs sind **pro Sprache übersetzt** (`schweissgeraete` / `postes-de-soudage`
 / `saldatrici`), Produkt-Slugs bleiben in allen Sprachen die Produkt-ID (Markennamen
@@ -177,7 +177,7 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 |---|---|
 | `P.json` | 80 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
 | `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
-| `UI.json` | 88 UI-Strings × de/fr/it |
+| `UI.json` | 157 UI-Strings × de/fr/it/en |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
 | `PROC.json` | 19 Verfahren, Pulsvarianten und Zusatzfunktionen mit Wirkprinzip, Anwendung und Einstellung, DE/FR/IT |
 | `BUYING_GUIDE.json` | Eigene Auswahlhilfen für die fünf Hauptkategorien, DE/FR/IT |
@@ -199,7 +199,7 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 | `VERWANDT.json` | Verwandte Produkte (Neugerät ↔ Occasion derselben Technik), Karten unter der Detailseite |
 | `DLOCC.json`, `IMGCAP.json` | Prospekte der Occasionen (lokal unter `assets/dl/`), Bildunterschrift zum Hauptbild |
 | `products.json` | **generiert** — öffentlicher, maschinenlesbarer Katalog |
-| `search-{de,fr,it}.json` | **generiert** — Suchindex fürs Frontend |
+| `search-{de,fr,it,en}.json` | **generiert** — Suchindex fürs Frontend |
 
 Die Fachlogik aus v1 ist 1:1 nach `core.py` portiert: `deriveFeat`, `matOf`,
 `highlightsOf`, `fpAssign`, `relatedAcc`, `isWater`, `trK`, `trV`.
@@ -342,7 +342,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
 
 - `<title>` und `meta description` pro Seite einzigartig, Titel ≤ 68 Zeichen (Occasion ≤ 70, damit das Verfahren im Titel bleibt; `check.py` prüft 70)
 - `canonical` auf jeder Seite, absolut
-- `hreflang` de-CH / fr-CH / it-CH + `x-default` — gegenseitig verlinkt
+- `hreflang` de-CH / fr-CH / it-CH / en-CH + `x-default` — gegenseitig verlinkt
 - Open Graph + Twitter Card, `og:image` = Produktbild bzw. Hero
   Kategorie und Unterkategorie verwenden die erste vorhandene Produktabbildung
   ihrer gefilterten Katalogliste, auch als `CollectionPage.primaryImageOfPage`.
@@ -351,7 +351,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (354 URLs); Suche, Datenschutz und AGB
+- `sitemap.xml` mit `xhtml:link`-Alternates (472 URLs); Suche, Datenschutz und AGB
   sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
 - `lastmod` folgt dem Inhalt jeder Seite. Asset-Versionsnummern, CSP/SRI und die
   reine Laufzeitkonfiguration `window.VT` ändern das Datum nicht. Sichtbarer
@@ -455,7 +455,7 @@ Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auft
 - **`/llms-full.txt`** — der komplette zitierfähige Inhalt in einer Datei:
   alle 80 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
   dazu 19 erklaerte Verfahren/Funktionen und alle 10 FAQ-Antworten
-- **`/data/products.json`** — maschinenlesbarer Katalog, dreisprachig, mit
+- **`/data/products.json`** — maschinenlesbarer Katalog, viersprachig, mit
   Verkäuferangaben und Lizenzhinweis
 - **`robots.txt` erlaubt KI-Crawler ausdrücklich** (GPTBot, OAI-SearchBot, ClaudeBot,
   PerplexityBot, Google-Extended, Applebot-Extended, CCBot u. a.). Das ist eine
@@ -631,7 +631,7 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
 1. **Inhalt kommt aus `data/`**, niemals direkt ins generierte HTML schreiben —
    der nächste Build überschreibt es.
 2. **Keine Preise.** Immer „Preis auf Anfrage", kein `price` im JSON-LD.
-3. **Jeder neue Text in DE + FR + IT**, Schweizer „ss".
+3. **Jeder neue Text in DE + FR + IT + EN**, Schweizer „ss".
 3a. **Kein Gedankenstrich im sichtbaren Text.** Wo „… und Automation – vom
    Techniker …" stand, steht jetzt ein Komma, ein Doppelpunkt, eine Klammer oder
    ein eigener Satz. In der Schriftgrösse des Fliesstextes wirkt der Strich auf
@@ -1016,3 +1016,47 @@ Wirkungsgrad-, Zeitersparnis- und Verzugsgarantien werden nicht ergaenzt.
 20-kHz-Pulsen wird ausdruecklich auf Beta DX pro/Omega AX pro bezogen; HF-Zuendung,
 Pulsfrequenz, AC-Frequenz und AC-Balance werden getrennt erklaert. Quellen fuer
 allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
+
+## 23. Vollständige englische Fassung (19.10.2026)
+
+- EN ergänzt DE/FR/IT auf ausdrücklich gewünschten 121 eigenen Inhaltsseiten.
+  Insgesamt 484 Inhaltsseiten, eine gemeinsame 404-Seite, 15 bestehende
+  Weiterleitungen und die Google-Verifizierungsdatei; 472 indexierbare URLs.
+  Alle bestehenden DE-/FR-/IT-Adressen bleiben erhalten. Englisch verwendet
+  `/en/`, `en-CH`, die Segmente aus `SEG` und eigene Kategorie-/Unterkategorie-
+  Slugs; Produkt-IDs und Prozessanker bleiben stabil.
+- Die gepflegten JSON-Dateien und `i18n_extra.json` enthalten vollständige
+  EN-Texte, einschliesslich aller 80 Produkte, technischen Zeilen, Merkmale,
+  Bedienpanel-Ratgeber, 19 Prozesse, Auswahlhilfen, Service, FAQ, Formulare
+  und Rechtstexte. Britische Schreibweise: aluminium, colour, metre, enquiry.
+  WIG wird als TIG übersetzt; Modellnamen bleiben erhalten. `trV()` stellt
+  Dezimalzahlen auf Englisch mit Punkt dar, ohne die Werte zu verändern.
+  Hersteller-PDFs bleiben unverändert in ihren vorhandenen Sprachen; die
+  Downloadbeschriftung weist auf deutschsprachige Originalunterlagen hin.
+- `core.validate_translations()` prüft vor dem Löschen generierter Dateien
+  fehlende Sprachfassungen, Struktur, leere Texte und Formatplatzhalter.
+  Die zusätzliche Regression prüft numerische Übereinstimmung aller
+  Produktbeschreibungen und technischen Tabellen sowie kritische Unterschiede
+  bei Netzspannung, Polierleistung, Einschaltdauer und Pulsfrequenzen.
+  Einzahlformen für Modell-/Artikelzahlen werden über `t(..., n=1)` gewählt.
+- Sprachlinks behalten dieselbe Seite und geprüfte Anfrageparameter. Vier
+  kleine farbige Vektorflaggen (DE/FR/IT/GB für EN) werden aus
+  `assets/icons/flags/` direkt ins HTML eingefügt. Keine zusätzlichen
+  Bildanfragen, Emoji-Abhängigkeit oder externe Flaggenbibliothek. Die Kürzel
+  bleiben sichtbar, native Sprachnamen stehen im zugänglichen Linknamen,
+  die Flaggen sind dekorativ. Mobil bleiben alle Ziele mindestens 44 px gross.
+- Englisch erhält `search-en.json` mit eigenen Produkt-/Service-/Prozesstexten
+  und zusätzlichen englischen Fachsynonymen. Geladen wird weiterhin nur der
+  aktuelle Suchindex und erst beim Benutzen der Suche. `norm()` bleibt unverändert.
+  Englische Vorschaukarte für PSHB 125 aus demselben unveränderten Originalfoto;
+  `node build/pshb_social_card.mjs en` baut nur diese Sprachfassung.
+- Hreflang, Sitemap, JSON-Katalog, Sprachparität, IndexNow, bekannte
+  Analytikpfade, SQL-Export und öffentliche Recovery-Sicherung umfassen EN.
+  Analytics- und Formulardatenschutz bleiben gleich; EN wird als eigene Sprache
+  erkannt. Geschriebene Vertragsbedingungen bleiben inhaltlich erhalten,
+  lediglich die Liste vorhandener Website-Sprachen umfasst nun Englisch.
+- Keine Übersetzung zur Laufzeit und keine neue Framework-/JavaScript-Laufzeit.
+  Gerätebilder, Fonts und `app.js` werden wiederverwendet. Ladegrössen und
+  repräsentative Ansichten werden vor dem Deploy mit dem bisherigen Stand
+  verglichen. Quellcode und Release-Sicherung werden nach bestandenen Checks
+  am exakten Commit auf GitHub gespeichert; kein lokaler Backup-Archivzuwachs.

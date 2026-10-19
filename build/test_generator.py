@@ -451,8 +451,8 @@ class GeneratorTests(unittest.TestCase):
                         self.assertIn(f'<dt>{R.e(title)}</dt><dd>{R.e(text)}</dd>', main)
                     self.assertIn(C.u_page(lang, 'contact'), MainLinks(page).links)
                     rendered += 1
-        self.assertEqual(rendered, 63)
-        self.assertEqual(len(set().union(*intros.values())), 63)
+        self.assertEqual(rendered, 21 * len(C.LANGS))
+        self.assertEqual(len(set().union(*intros.values())), 21 * len(C.LANGS))
 
     def test_subcategory_copy_is_text_not_executable_markup(self):
         payload = '<img src=x onerror="alert(1)"> & "quoted"'

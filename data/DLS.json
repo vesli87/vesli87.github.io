@@ -1,100 +1,114 @@
 [
- {
-  "k": "PDF",
-  "t": {
-   "de": "Produktkatalog 2023",
-   "fr": "Catalogue des produits 2023",
-   "it": "Catalogo prodotti 2023"
+  {
+    "k": "PDF",
+    "t": {
+      "de": "Produktkatalog 2023",
+      "fr": "Catalogue des produits 2023",
+      "it": "Catalogo prodotti 2023",
+      "en": "Product catalogue 2023"
+    },
+    "s": {
+      "de": "Das komplette MAHE-Geräteprogramm",
+      "fr": "Toute la gamme MAHE",
+      "it": "L’intera gamma MAHE",
+      "en": "The complete MAHE equipment range"
+    },
+    "u": "https://mahe-online.de/wp-content/uploads/2023/06/Katalog_2023_opt.pdf"
   },
-  "s": {
-   "de": "Das komplette MAHE-Geräteprogramm",
-   "fr": "Toute la gamme MAHE",
-   "it": "L’intera gamma MAHE"
+  {
+    "k": "PDF",
+    "t": {
+      "de": "Konformitätszertifikat nach EN 1090",
+      "fr": "Certificat de conformité EN 1090",
+      "it": "Certificato di conformità EN 1090",
+      "en": "EN 1090 conformity certificate"
+    },
+    "s": {
+      "de": "Konformitätserklärung",
+      "fr": "Déclaration de conformité",
+      "it": "Dichiarazione di conformità",
+      "en": "Declaration of conformity"
+    },
+    "u": "https://mahe-online.de/welding/pdf/de/Mahe_Konformations_Zertifikat.pdf"
   },
-  "u": "https://mahe-online.de/wp-content/uploads/2023/06/Katalog_2023_opt.pdf"
- },
- {
-  "k": "PDF",
-  "t": {
-   "de": "Konformitätszertifikat nach EN 1090",
-   "fr": "Certificat de conformité EN 1090",
-   "it": "Certificato di conformità EN 1090"
+  {
+    "k": "R1",
+    "t": {
+      "de": "Sicherheitsdatenblatt Reinigungselektrolyt R1",
+      "fr": "Fiche de données de sécurité de l’électrolyte R1",
+      "it": "Scheda di sicurezza elettrolita R1",
+      "en": "R1 cleaning electrolyte safety data sheet"
+    },
+    "s": {
+      "de": "HyClean Rapid R1",
+      "fr": "HyClean Rapid R1",
+      "it": "HyClean Rapid R1",
+      "en": "HyClean Rapid R1"
+    },
+    "u": "https://mahe-online.de/welding/pdf/de/HyCleanRapid_R1_DE.pdf"
   },
-  "s": {
-   "de": "Konformitätserklärung",
-   "fr": "Déclaration de conformité",
-   "it": "Dichiarazione di conformità"
+  {
+    "k": "RP1",
+    "t": {
+      "de": "Sicherheitsdatenblatt Reinigungselektrolyt RP1",
+      "fr": "Fiche de données de sécurité de l’électrolyte RP1",
+      "it": "Scheda di sicurezza elettrolita RP1",
+      "en": "RP1 cleaning electrolyte safety data sheet"
+    },
+    "s": {
+      "de": "HyClean RP1 Pastös",
+      "fr": "HyClean RP1",
+      "it": "HyClean RP1",
+      "en": "HyClean RP1 paste"
+    },
+    "u": "https://mahe-online.de/welding/pdf/de/HyClean_RP1_DE.pdf"
   },
-  "u": "https://mahe-online.de/welding/pdf/de/Mahe_Konformations_Zertifikat.pdf"
- },
- {
-  "k": "R1",
-  "t": {
-   "de": "Sicherheitsdatenblatt Reinigungselektrolyt R1",
-   "fr": "Fiche de données de sécurité de l’électrolyte R1",
-   "it": "Scheda di sicurezza elettrolita R1"
+  {
+    "k": "P1",
+    "t": {
+      "de": "Sicherheitsdatenblatt Polierelektrolyt P1",
+      "fr": "Fiche de données de sécurité de l’électrolyte P1",
+      "it": "Scheda di sicurezza elettrolita P1",
+      "en": "P1 polishing electrolyte safety data sheet"
+    },
+    "s": {
+      "de": "HyCleanPolish P1",
+      "fr": "HyCleanPolish P1",
+      "it": "HyCleanPolish P1",
+      "en": "HyCleanPolish P1"
+    },
+    "u": "https://mahe-online.de/welding/pdf/de/HyCleanPolish_%20P1_DE.pdf"
   },
-  "s": {
-   "de": "HyClean Rapid R1",
-   "fr": "HyClean Rapid R1",
-   "it": "HyClean Rapid R1"
+  {
+    "k": "M1",
+    "t": {
+      "de": "Sicherheitsdatenblatt Signierelektrolyt M1",
+      "fr": "Fiche de données de sécurité de l’électrolyte M1",
+      "it": "Scheda di sicurezza elettrolita M1",
+      "en": "M1 marking electrolyte safety data sheet"
+    },
+    "s": {
+      "de": "Signierelektrolyt M1",
+      "fr": "Électrolyte de marquage M1",
+      "it": "Elettrolita di marcatura M1",
+      "en": "M1 marking electrolyte"
+    },
+    "u": "https://mahe-online.de/welding/pdf/de/Signierelektrolyt_M1_DE.pdf"
   },
-  "u": "https://mahe-online.de/welding/pdf/de/HyCleanRapid_R1_DE.pdf"
- },
- {
-  "k": "RP1",
-  "t": {
-   "de": "Sicherheitsdatenblatt Reinigungselektrolyt RP1",
-   "fr": "Fiche de données de sécurité de l’électrolyte RP1",
-   "it": "Scheda di sicurezza elettrolita RP1"
-  },
-  "s": {
-   "de": "HyClean RP1 Pastös",
-   "fr": "HyClean RP1",
-   "it": "HyClean RP1"
-  },
-  "u": "https://mahe-online.de/welding/pdf/de/HyClean_RP1_DE.pdf"
- },
- {
-  "k": "P1",
-  "t": {
-   "de": "Sicherheitsdatenblatt Polierelektrolyt P1",
-   "fr": "Fiche de données de sécurité de l’électrolyte P1",
-   "it": "Scheda di sicurezza elettrolita P1"
-  },
-  "s": {
-   "de": "HyCleanPolish P1",
-   "fr": "HyCleanPolish P1",
-   "it": "HyCleanPolish P1"
-  },
-  "u": "https://mahe-online.de/welding/pdf/de/HyCleanPolish_%20P1_DE.pdf"
- },
- {
-  "k": "M1",
-  "t": {
-   "de": "Sicherheitsdatenblatt Signierelektrolyt M1",
-   "fr": "Fiche de données de sécurité de l’électrolyte M1",
-   "it": "Scheda di sicurezza elettrolita M1"
-  },
-  "s": {
-   "de": "Signierelektrolyt M1",
-   "fr": "Électrolyte de marquage M1",
-   "it": "Elettrolita di marcatura M1"
-  },
-  "u": "https://mahe-online.de/welding/pdf/de/Signierelektrolyt_M1_DE.pdf"
- },
- {
-  "k": "N1",
-  "t": {
-   "de": "Sicherheitsdatenblatt Neutralisierer N1",
-   "fr": "Fiche de données de sécurité du neutralisant N1",
-   "it": "Scheda di sicurezza neutralizzante N1"
-  },
-  "s": {
-   "de": "Neutralyt N1",
-   "fr": "Neutralyt N1",
-   "it": "Neutralyt N1"
-  },
-  "u": "https://mahe-online.de/welding/pdf/de/Neutralyt_N1_DE.pdf"
- }
+  {
+    "k": "N1",
+    "t": {
+      "de": "Sicherheitsdatenblatt Neutralisierer N1",
+      "fr": "Fiche de données de sécurité du neutralisant N1",
+      "it": "Scheda di sicurezza neutralizzante N1",
+      "en": "N1 neutraliser safety data sheet"
+    },
+    "s": {
+      "de": "Neutralyt N1",
+      "fr": "Neutralyt N1",
+      "it": "Neutralyt N1",
+      "en": "Neutralyt N1"
+    },
+    "u": "https://mahe-online.de/welding/pdf/de/Neutralyt_N1_DE.pdf"
+  }
 ]

@@ -53,6 +53,24 @@
           "Indicate torce, raffreddamento e accessori già disponibili. VES-TECH verifica la combinazione e prepara un’offerta per l’impianto desiderato; prezzo e tempi sono confermati su richiesta."
         ]
       ]
+    },
+    "en": {
+      "title": "Which welding machine suits your work?",
+      "intro": "A useful selection starts with the workpiece: tell VES-TECH Swiss the material, thickness and required process. MIG/MAG, TIG, MMA and plasma TIG are listed separately in the catalogue. Then compare the technical data for the specific model version.",
+      "criteria": [
+        [
+          "Material and result",
+          "Describe whether you use steel, stainless steel or aluminium, the joint and the weld requirements. An equipment name alone does not establish which features the task needs."
+        ],
+        [
+          "Power supply and operating time",
+          "Check mains voltage, fuse protection and duty cycle in the relevant data table. Tell us whether the equipment will be stationary or used at changing workplaces."
+        ],
+        [
+          "Complete configuration",
+          "Specify existing torches, cooling and accessories. VES-TECH checks the combination and prepares a quotation for the required system; price and delivery date are confirmed on request."
+        ]
+      ]
     }
   },
   "plasmaschneiden": {
@@ -107,6 +125,24 @@
         [
           "Installazione e utilizzo",
           "Per un tavolo contano formato delle lamiere, spazio disponibile e alimentazioni. Discutete anche la gestione dei fumi di taglio e la messa in servizio prima di definire la configurazione."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Choosing a plasma cutter or CNC cutting table",
+      "intro": "For a suitable enquiry, VES-TECH Swiss distinguishes between manual plasma cutting, a power source for automation and a complete CNC cutting table. Theta equipment and MPT tables are therefore listed in separate subcategories.",
+      "criteria": [
+        [
+          "Material and cutting task",
+          "Specify the material, typical thickness and maximum thickness. State the required cut quality and quantities; maximum severance capacity is not automatically the desired production capacity."
+        ],
+        [
+          "Manual or automated",
+          "For an existing system, the torch, machine controller and interfaces matter. Provide their exact designations so that the combination can be checked."
+        ],
+        [
+          "Installation and operation",
+          "For a cutting table, sheet format, available space and utilities at the installation site are relevant. Also discuss cutting fume management and commissioning before specifying a configuration."
         ]
       ]
     }
@@ -165,6 +201,24 @@
           "Indicate la durata abituale di utilizzo e se cercate il solo apparecchio o una dotazione completa. L’offerta potrà distinguere fornitura, opzioni e consumabili."
         ]
       ]
+    },
+    "en": {
+      "title": "Cleaning, marking or replenishing consumables?",
+      "intro": "Start with the operation you need. VES-TECH Swiss lists electrolytic cleaners, marking systems, a dosing unit and electrolytes in separate sections. Equipment and consumables must suit the intended process.",
+      "criteria": [
+        [
+          "Surface and task",
+          "Describe the material, surface condition and required result. A photograph of the weld or an example marking helps clarify your enquiry."
+        ],
+        [
+          "Existing equipment",
+          "For brushes, electrolytes and additions, we need the exact equipment designation. Check the instructions and documentation for each product; similar names do not establish interchangeability."
+        ],
+        [
+          "Scope of enquiry",
+          "Specify the typical operating duration and whether you need one machine or a complete setup. This allows the scope of supply, options and consumables to be clearly distinguished in the quotation."
+        ]
+      ]
     }
   },
   "zubehoer": {
@@ -221,6 +275,24 @@
           "Aggiungete tutti gli articoli alla lista delle richieste e indicate le quantità. Una richiesta unica facilita la verifica di compatibilità e contenuto della fornitura."
         ]
       ]
+    },
+    "en": {
+      "title": "Enquiring about the right accessories",
+      "intro": "For torches, cables, cooling and consumables, exact compatibility matters more than a similar photograph. VES-TECH Swiss lists known equipment matches on product pages; have the required combination confirmed before ordering.",
+      "criteria": [
+        [
+          "Identify the equipment",
+          "Send the manufacturer, model and existing part number. For older equipment, the serial number also helps establish the match."
+        ],
+        [
+          "Describe the version",
+          "Specify the connection, cooling type and required length where known. For a replacement part, the designation on the part and a photograph of the connection are helpful."
+        ],
+        [
+          "Combine related items",
+          "Add all required items and quantities to the enquiry list. A combined enquiry makes it easier to check compatibility and scope of supply."
+        ]
+      ]
     }
   },
   "occasion": {
@@ -275,6 +347,24 @@
         [
           "Disponibilità e consegna",
           "Prezzo, disponibilità e consegna vengono confermati individualmente. Una visita all’officina di Herisau richiede un appuntamento. Le condizioni dell’usato risultano dall’offerta specifica."
+        ]
+      ]
+    },
+    "en": {
+      "title": "What to clarify about used microplasma equipment",
+      "intro": "The PlasmaFix systems offered are used microplasma welding systems. Microplasma welding must be distinguished from plasma cutting. The description, documented condition and scope of supply for the specific system are decisive.",
+      "criteria": [
+        [
+          "Condition and equipment",
+          "Read the condition section and description on the equipment page. Ask which components are included and which work has been carried out; information about one system does not automatically apply to another."
+        ],
+        [
+          "Your application",
+          "Specify the material, thickness and task for which you intend to use the system. VES-TECH can then clarify the appropriate configuration and outstanding questions with you."
+        ],
+        [
+          "Availability and handover",
+          "Price, availability and handover are confirmed individually. Visits to the Herisau workshop are by appointment. The terms for used equipment are set out in the specific quotation."
         ]
       ]
     }

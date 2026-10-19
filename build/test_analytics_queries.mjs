@@ -7,22 +7,23 @@ import { test } from 'node:test';
 
 
 
-function observe(search, { lang = 'de', granted = true, referrer = '' } = {}) {
-  const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/' }[lang];
+function observe(search, { lang = 'de', granted = true, referrer = '', pathname = '' } = {}) {
+  const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/' }[lang];
+  const page = pathname || contact;
   const appended = [], sent = [];
   const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch', token: '', ahrefsKey: 'public-test-key' }, addEventListener() {}, querySelector: () => ({ focus() {} }) };
   const settings = { hidden: true, addEventListener() {} };
-  const config = { contactPath: contact, paths: [contact], products: { mms: 'schweissgeraete', 'plasmafix-51': 'occasion' },
+  const config = { contactPath: contact, paths: [contact, page], products: { mms: 'schweissgeraete', 'plasmafix-51': 'occasion' },
     inquiryOptions: { mms: ['mms-2000c', 'mms-3000-ex'], 'plasmafix-51': ['unit-left', 'unit-centre', 'unit-right'] },
     servicePaths: { '/service/': 'overview', '/service/reparatur/': 'repair', '/service/kalibrierung/': 'calib', '/service/automation/': 'auto' }, campaigns: {} };
   const context = { URL, Date,
     document: { referrer, visibilityState: 'visible', getElementById: id => id === 'analyticsConsent' ? panel : id === 'analyticsSettings' ? settings : null,
-      querySelector: s => s === 'link[rel="canonical"]' ? { href: 'https://www.ves-tech.ch' + contact } : null,
+      querySelector: s => s === 'link[rel="canonical"]' ? { href: 'https://www.ves-tech.ch' + page } : null,
       addEventListener() {}, createElement: () => ({ dataset: {}, attrs: {}, setAttribute(k, v) { this.attrs[k] = v; } }),
       body: { appendChild: x => appended.push(x) } },
     localStorage: { getItem: key => key.endsWith('.v2') ? JSON.stringify({ value: granted ? 'granted' : 'denied', at: Date.now() - 1000 }) : null, setItem() {} },
     sessionStorage: { getItem: () => null, setItem() {}, removeItem() {} },
-    location: { hostname: 'www.ves-tech.ch', origin: 'https://www.ves-tech.ch', pathname: contact, search, hash: '' },
+    location: { hostname: 'www.ves-tech.ch', origin: 'https://www.ves-tech.ch', pathname: page, search, hash: '' },
     navigator: {}, window: { VT: { lang, analytics: config }, addEventListener() {} } };
   initAnalytics(context);
   if (appended.length) {
@@ -33,7 +34,7 @@ function observe(search, { lang = 'de', granted = true, referrer = '' } = {}) {
 }
 
 test('registered product choices and services measure only canonical contact URLs', () => {
-  for (const lang of ['de', 'fr', 'it']) {
+  for (const lang of ['de', 'fr', 'it', 'en']) {
     for (const search of ['?product=mms&option=mms-3000-ex', '?product=plasmafix-51&option=unit-centre', '?service=repair', '?service=calib', '?service=auto', '?service=overview']) {
       const result = observe(search, { lang });
       assert.equal(result.appended.length, 1, `${lang} ${search}`);
@@ -60,7 +61,7 @@ test('valid inquiry context cannot bypass refusal or unsafe referrer', () => {
 });
 
 test('visitor property names cannot change analytics dictionaries or enable a provider', () => {
-  for (const lang of ['de', 'fr', 'it']) {
+  for (const lang of ['de', 'fr', 'it', 'en']) {
     for (const search of ['?__proto__=x', '?constructor=x', '?prototype=x',
       '?product=mms&__proto__=x', '?service=repair&constructor=x',
       '?utm_source=google&__proto__=x&utm_campaign=x&utm_content=x']) {
@@ -74,8 +75,8 @@ test('visitor property names cannot change analytics dictionaries or enable a pr
 });
 
 test('the SDK never receives a raw own-site referrer containing an inquiry choice or service', () => {
-  for (const lang of ['de', 'fr', 'it']) {
-    const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/' }[lang];
+  for (const lang of ['de', 'fr', 'it', 'en']) {
+    const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/' }[lang];
     const base = 'https://www.ves-tech.ch' + contact;
     for (const query of ['?product=mms&option=mms-3000-ex', '?product=plasmafix-51&option=unit-left',
       '?service=repair', '?service=overview', '?service=private', '?product=mms&option=']) {
@@ -85,4 +86,15 @@ test('the SDK never receives a raw own-site referrer containing an inquiry choic
     }
     assert.equal(observe('', { lang, referrer: base }).appended.length, 1, 'Clean public navigation remains measurable');
   }
+});
+
+
+test('English product views retain their language and safe catalogue identity', () => {
+  const result = observe('', { lang: 'en', pathname: '/en/products/welding-equipment/mms/' });
+  assert.equal(result.appended.length, 1);
+  const event = result.sent.find(row => row.name === 'product_view');
+  assert.ok(event);
+  assert.equal(event.props.lang, 'en');
+  assert.equal(event.props.product_id, 'mms');
+  assert.doesNotMatch(JSON.stringify(result.sent), /private|option|customer/);
 });

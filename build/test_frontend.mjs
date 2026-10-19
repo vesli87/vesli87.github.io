@@ -1157,3 +1157,17 @@ test('current generated service search data resolves the seven failed queries an
     assert.equal(api.search('PlasmaFix 51').products[0].i, 'plasmafix-51');
   }
 });
+test('English search resolves service terms and common workshop synonyms to English pages', () => {
+  const index = JSON.parse(execFileSync('python3', ['-c',
+    "import sys,json;sys.path.insert(0,'build');from build import search_index;print(json.dumps(search_index('en')))"], { encoding: 'utf8' }));
+  const { api } = app(); api.setIndex(index);
+  for (const [query, expected] of [['repair','repair'], ['calibration','calib'], ['service','overview']]) {
+    assert.ok(api.search(query).services.some(row => row.i === expected), query);
+  }
+  for (const [query, expected] of [['aluminum TIG','omega-ax'], ['stick welder','i-1600'],
+    ['water cooler','wk200'], ['wire feeder','dvl420'], ['used microplasma','plasmafix-51']]) {
+    const products = api.search(query).products;
+    assert.ok(products.some(row => row.i === expected), query + ' must find ' + expected);
+    assert.ok(products.every(row => row.u.startsWith('/en/')));
+  }
+});

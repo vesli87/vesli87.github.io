@@ -1,17 +1,20 @@
 {
- "ST": {
-  "de": "Stahl",
-  "fr": "Acier",
-  "it": "Acciaio"
- },
- "SS": {
-  "de": "INOX",
-  "fr": "INOX",
-  "it": "INOX"
- },
- "AL": {
-  "de": "Aluminium",
-  "fr": "Aluminium",
-  "it": "Alluminio"
- }
+  "ST": {
+    "de": "Stahl",
+    "fr": "Acier",
+    "it": "Acciaio",
+    "en": "Steel"
+  },
+  "SS": {
+    "de": "INOX",
+    "fr": "INOX",
+    "it": "INOX",
+    "en": "Stainless steel"
+  },
+  "AL": {
+    "de": "Aluminium",
+    "fr": "Aluminium",
+    "it": "Alluminio",
+    "en": "Aluminium"
+  }
 }

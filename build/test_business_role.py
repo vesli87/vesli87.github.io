@@ -79,8 +79,8 @@ class BusinessRoleTests(unittest.TestCase):
     def test_privacy_identifies_supplier_without_removing_conditional_manufacturer_recipient(self):
         conditions = {'de': 'soweit die von Ihnen angefragte',
                       'fr': 'dans la mesure nécessaire',
-                      'it': 'nella misura necessaria'}
-        dates = {'de': '8. Oktober 2026', 'fr': '8 octobre 2026', 'it': '8 ottobre 2026'}
+                      'it': 'nella misura necessaria', 'en': 'where required'}
+        dates = {'de': '8. Oktober 2026', 'fr': '8 octobre 2026', 'it': '8 ottobre 2026', 'en': '8 October 2026'}
         for lang in C.LANGS:
             with self.subTest(lang=lang):
                 recipients = C.EX[lang]['datenschutz_body'][11][1]

@@ -56,13 +56,14 @@ SEITE = {
 # Dokument bleibt deutsch - das sagt der Untertitel auch.
 ART = {
     "anleitung": {"de": "Bedienungsanleitung", "fr": "Mode d'emploi",
-                  "it": "Istruzioni per l'uso"},
+                  "it": "Istruzioni per l'uso", "en": "Operating instructions"},
     "datenblatt": {"de": "Technisches Datenblatt", "fr": "Fiche technique",
-                   "it": "Scheda tecnica"},
+                   "it": "Scheda tecnica", "en": "Technical data sheet"},
 }
 UNTER = {"de": "Herstellerdokument von MAHE · deutsch",
          "fr": "Document du fabricant MAHE · en allemand",
-         "it": "Documento del produttore MAHE · in tedesco"}
+         "it": "Documento del produttore MAHE · in tedesco",
+         "en": "Original MAHE document · German"}
 
 ANKER = re.compile(r'<a[^>]+href="([^"]+\.pdf)"[^>]*>(.*?)</a>', re.S | re.I)
 # Fuss- und Randlinks, die auf jeder Seite stehen
@@ -87,6 +88,8 @@ def art_und_zusatz(titel):
 def localized_title(lang, kind, suffix):
     """Translate generic title words with the required article; retain the model."""
     title = ART[kind][lang]
+    if lang == 'en' and suffix.startswith('Signiergerät '):
+        suffix = 'Marking system ' + suffix[len('Signiergerät '):]
     if suffix.startswith("Signiergerät ") and lang in ("fr", "it"):
         model = suffix[len("Signiergerät "):]
         connector = {"fr": " de l’appareil de marquage ",
@@ -127,7 +130,7 @@ def sammeln():
             eintraege.append({
                 "k": "PDF",
                 "t": {l: localized_title(l, art, zusatz)
-                      for l in ("de", "fr", "it")},
+                      for l in ("de", "fr", "it", "en")},
                 "s": dict(UNTER),
                 "u": u,
                 "art": art,
@@ -142,7 +145,7 @@ def sammeln():
             eintraege.insert(0, {
                 'k': 'PDF',
                 't': {lang: localized_title(lang, 'anleitung', 'HyperMIG X (Graphic Front Panel)')
-                      for lang in ('de', 'fr', 'it')},
+                      for lang in ('de', 'fr', 'it', 'en')},
                 's': dict(UNTER),
                 'u': 'https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf',
             })

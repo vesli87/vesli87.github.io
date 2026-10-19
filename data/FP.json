@@ -1,403 +1,414 @@
 {
- "hyper": {
-  "n": "HX: Hyper Front Panel",
-  "big": true,
-  "img": "2022/03/HyperMIG_HX_Frontpanel-300x172.png",
-  "tl": {
-   "de": "Volldigitale Bedienung mit HyperPuls, HyperForce, Doppelpuls und 99 JOB-Programmen.",
-   "fr": "Commande entièrement numérique avec HyperPuls, HyperForce, double pulsation et 99 programmes JOB.",
-   "it": "Comando completamente digitale con HyperPuls, HyperForce, doppio impulso e 99 programmi JOB."
-  }
- },
- "ecopuls": {
-  "n": "EX: EcoPuls Front Panel",
-  "big": true,
-  "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
-  "tl": {
-   "de": "Digitale Puls-Bedienung mit Impuls, Doppelpuls und JOB-Speicher.",
-   "fr": "Commande numérique pulsée avec impulsion, double pulsation et mémoire JOB.",
-   "it": "Comando digitale pulsato con impulso, doppio impulso e memoria JOB."
-  }
- },
- "ecomig": {
-  "n": "EX: EcoMIG Front Panel",
-  "big": true,
-  "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
-  "tl": {
-   "de": "Einfache digitale Synergie-Bedienung für MIG/MAG, MMA und WIG Lift.",
-   "fr": "Commande synergique numérique simple pour MIG/MAG, MMA et TIG Lift.",
-   "it": "Comando sinergico digitale semplice per MIG/MAG, MMA e TIG Lift."
-  }
- },
- "wig": {
-  "n": "WIG DC: Bedienpanel",
-  "big": false,
-  "tl": {
-   "de": "WIG-DC-Panel mit HF-Zündung, HyperSpot, Puls und Slope-Steuerung.",
-   "fr": "Panneau TIG DC avec amorçage HF, HyperSpot, mode pulsé et rampes de montée et de descente du courant.",
-   "it": "Pannello TIG DC con innesco HF, HyperSpot, impulso e slope."
-  }
- },
- "wig_acdc": {
-  "n": "WIG AC/DC: Bedienpanel",
-  "big": false,
-  "tl": {
-   "de": "AC/DC-Panel mit HF-Zündung, HyperSpot, MAHE-MIX-PULSE und AC-Balance/Frequenz.",
-   "fr": "Panneau AC/DC avec amorçage HF, HyperSpot, MAHE-MIX-PULSE et réglage de la balance et de la fréquence AC.",
-   "it": "Pannello AC/DC con innesco HF, HyperSpot, MAHE-MIX-PULSE e bilanciamento/frequenza AC."
-  }
- },
- "mma": {
-  "n": "MMA-Bedienpanel",
-  "big": false,
-  "tl": {
-   "de": "MMA-Panel mit Hot Start, Arc Force und Anti-Stick.",
-   "fr": "Panneau MMA avec Hot Start, Arc Force et Anti-Stick.",
-   "it": "Pannello MMA con Hot Start, Arc Force e Anti-Stick."
-  }
- },
- "theta": {
-  "n": "Plasma-Bedienpanel",
-  "big": false,
-  "tl": {
-   "de": "Plasma-Panel mit Schneidstrom, Luftdruck und Pilotlichtbogen.",
-   "fr": "Panneau plasma avec courant de coupe, pression d’air et arc pilote.",
-   "it": "Pannello plasma con corrente di taglio, pressione dell’aria e arco pilota."
-  }
- },
- "cleaner": {
-  "n": "Cleaner-Bedienpanel",
-  "big": false,
-  "tl": {
-   "de": "Cleaner-Panel mit Leistungsstufen und Betriebsartwahl.",
-   "fr": "Panneau Cleaner avec niveaux de puissance et choix du mode.",
-   "it": "Pannello Cleaner con livelli di potenza e selezione della modalità di funzionamento."
-  }
- },
- "steel": {
-  "n": "SX: Steel Front Panel",
-  "big": true,
-  "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
-  "tl": {
-   "de": "Stahl-optimiertes Panel mit HyperCold, HyperRoot und HyperForce.",
-   "fr": "Panneau optimisé pour l’acier avec HyperCold, HyperRoot et HyperForce.",
-   "it": "Pannello ottimizzato per l’acciaio con HyperCold, HyperRoot e HyperForce."
-  }
- },
- "steelpuls": {
-  "n": "SX: Steel Puls Front Panel",
-  "big": true,
-  "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
-  "tl": {
-   "de": "Stahl-Puls-Panel mit HyperPuls, HyperUP und HyperForce.",
-   "fr": "Panneau pour le soudage pulsé de l’acier avec HyperPuls, HyperUP et HyperForce.",
-   "it": "Pannello per la saldatura pulsata dell’acciaio con HyperPuls, HyperUP e HyperForce."
-  }
- },
- "hypermig_ex": {
-  "n": "EX: EcoPuls Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_EX_Frontpanel..png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "MENU",
-   "JOB",
-   "MODE",
-   "PROC",
-   "WIRE",
-   "GAS",
-   "TAKT",
-   "ARC"
-  ]
- },
- "hypermig_hx": {
-  "n": "HX: Hyper Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_HX_Frontpanel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "MENU",
-   "JOB",
-   "MODE",
-   "PROC",
-   "WIRE",
-   "GAS",
-   "TAKT",
-   "ARC",
-   "BURN"
-  ]
- },
- "hypermig_sx": {
-  "n": "SX: Steel Puls Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_SX_Frontpanel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "MENU",
-   "JOB",
-   "MODE",
-   "PROC",
-   "WIRE",
-   "GAS",
-   "TAKT",
-   "ARC"
-  ]
- },
- "ecomig_analog": {
-  "n": "EcoMIG 3000 Analog Front Panel",
-  "big": true,
-  "img": "panels/EcoMIG_Analog.png"
- },
- "ecomig_low": {
-  "n": "EcoMIG 3000 Digital Front Panel",
-  "big": true,
-  "img": "panels/EcoMIG-LowCost_Frontpanel.png"
- },
- "mms_panel": {
-  "n": "MMS 2000 C: Bedienpanel",
-  "big": true,
-  "img": "panels/MMS2000C_Panel.png"
- },
- "omega_pro": {
-  "n": "Omega AX Pro: Bedienpanel",
-  "big": true,
-  "img": "panels/OmegaAX Pro.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "omega_syn": {
-  "n": "Omega AX Syn: Bedienpanel",
-  "big": true,
-  "img": "panels/Omega AX SYN.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "betadx_pro": {
-  "n": "Beta DX Pro: Bedienpanel",
-  "big": true,
-  "img": "panels/BetaDX_Pro_Panel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "betadx_syn": {
-  "n": "Beta DX Syn: Bedienpanel",
-  "big": true,
-  "img": "panels/BetaDX_Syn_Panel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "betadig_profi": {
-  "n": "Beta digital Profi: Bedienpanel",
-  "big": true,
-  "img": "panels/BetaDigital_Profi_Panel.PNG",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "betadig_syn": {
-  "n": "Beta digital Syn: Bedienpanel",
-  "big": true,
-  "img": "panels/BetaDigital_Syn_Panel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "hypertig_ax": {
-  "n": "HyperTIG AX: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperTIG_AX_Frontpanel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "hypertig_dx": {
-  "n": "HyperTIG DX: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperTIG_DX_Frontpanel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "hypertig_acdc": {
-  "n": "HyperTIG AC/DC: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperTIG_ACDC_Panel.png",
-  "ctrl": [
-   "VOLT",
-   "AMP",
-   "WIG_HF",
-   "WIG_PULS",
-   "WIG_SLOPE",
-   "WIG_GAS",
-   "TAKT"
-  ]
- },
- "i1600_panel": {
-  "n": "i-1600: Bedienpanel",
-  "big": true,
-  "img": "panels/i_1600.png"
- },
- "delta_panel": {
-  "n": "Delta: Bedienpanel",
-  "big": true,
-  "img": "panels/Delta1800.png"
- },
- "deltadig": {
-  "n": "Delta Digital: Bedienpanel",
-  "big": true,
-  "img": "panels/DeltaDigital_1800.png"
- },
- "deltadig_big": {
-  "n": "Delta Digital: Bedienpanel",
-  "big": true,
-  "img": "panels/DeltaDigital_BIG_Panel.png"
- },
- "theta40_panel": {
-  "n": "Theta 40: Bedienpanel",
-  "big": true,
-  "img": "panels/Theta40_Panel.png"
- },
- "theta_hsc": {
-  "n": "Theta HSC: Bedienpanel",
-  "big": true,
-  "img": "panels/Theta Display.png"
- },
- "mini_panel": {
-  "n": "MiniReiniger: Bedienpanel",
-  "big": true,
-  "img": "panels/MiniCleaner_Panel.png"
- },
- "cleaner_st": {
-  "n": "HyperCleaner ST: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperClenaerST_Panel.png"
- },
- "cleaner_speed": {
-  "n": "HyperCleaner ST Speed: Bedienpanel",
-  "big": true,
-  "img": "panels/Hypercleaner ST Speed FrontPanel.png"
- },
- "cleaner_plus": {
-  "n": "HyperCleaner ST Plus: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperCleaner_ST_Plus_Panell.png"
- },
- "ct200_panel": {
-  "n": "HyperCleaner CT 200: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperCleaner CT200 FrontPanel.png",
-  "ctrl": [
-   "CL_POWER",
-   "CL_MODE"
-  ]
- },
- "ct200_syn": {
-  "n": "CT 200 Syn: Bedienpanel",
-  "big": true,
-  "img": "panels/HyperCleaner CT200 SYN FrontPanel.png",
-  "ctrl": [
-   "CL_POWER",
-   "CL_MODE"
-  ]
- },
- "mlf100_panel": {
-  "n": "MLF 100: Bedienpanel",
-  "big": true,
-  "img": "panels/MLF100 Frontpanel.png"
- },
- "ecomig_2000": {
-  "n": "EcoMIG 2000 Digital Front Panel",
-  "big": true,
-  "img": "panels/MMS2000C_Panel.png"
- },
- "mms_light": {
-  "n": "EcoMIG Light Panel",
-  "big": true,
-  "img": "panels/MMS2000C_Panel.png"
- },
- "mms_ecomig": {
-  "n": "EcoMIG Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_EX_Frontpanel..png"
- },
- "mms_ecopuls": {
-  "n": "EcoPuls Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_EX_Frontpanel..png"
- },
- "hypermig_ecomig": {
-  "n": "EX: EcoMIG Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_EX_Frontpanel..png"
- },
- "hypermig_steel": {
-  "n": "SX: Steel Front Panel",
-  "big": true,
-  "img": "panels/HyperMIG_SX_Frontpanel.png"
- },
- "hypermig_x_graphic": {
-  "n": "X: Graphic Front Panel",
-  "names": {
-   "de": "X: Grafisches Bedienpanel",
-   "fr": "X : panneau de commande graphique",
-   "it": "X: pannello di comando grafico"
+  "hyper": {
+    "n": "HX: Hyper Front Panel",
+    "big": true,
+    "img": "2022/03/HyperMIG_HX_Frontpanel-300x172.png",
+    "tl": {
+      "de": "Volldigitale Bedienung mit HyperPuls, HyperForce, Doppelpuls und 99 JOB-Programmen.",
+      "fr": "Commande entièrement numérique avec HyperPuls, HyperForce, double pulsation et 99 programmes JOB.",
+      "it": "Comando completamente digitale con HyperPuls, HyperForce, doppio impulso e 99 programmi JOB.",
+      "en": "Fully digital controls with HyperPuls, HyperForce, double pulse and 99 JOB programs."
+    }
   },
-  "big": true,
-  "img": "panels/MAHE HyperMIG X Frontpanel.png"
- }
+  "ecopuls": {
+    "n": "EX: EcoPuls Front Panel",
+    "big": true,
+    "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
+    "tl": {
+      "de": "Digitale Puls-Bedienung mit Impuls, Doppelpuls und JOB-Speicher.",
+      "fr": "Commande numérique pulsée avec impulsion, double pulsation et mémoire JOB.",
+      "it": "Comando digitale pulsato con impulso, doppio impulso e memoria JOB.",
+      "en": "Digital pulse controls with pulse, double pulse and JOB memory."
+    }
+  },
+  "ecomig": {
+    "n": "EX: EcoMIG Front Panel",
+    "big": true,
+    "img": "2022/03/HyperMIG_EX_Frontpanel.-300x172.png",
+    "tl": {
+      "de": "Einfache digitale Synergie-Bedienung für MIG/MAG, MMA und WIG Lift.",
+      "fr": "Commande synergique numérique simple pour MIG/MAG, MMA et TIG Lift.",
+      "it": "Comando sinergico digitale semplice per MIG/MAG, MMA e TIG Lift.",
+      "en": "Simple digital synergic controls for MIG/MAG, MMA and TIG Lift."
+    }
+  },
+  "wig": {
+    "n": "WIG DC: Bedienpanel",
+    "big": false,
+    "tl": {
+      "de": "WIG-DC-Panel mit HF-Zündung, HyperSpot, Puls und Slope-Steuerung.",
+      "fr": "Panneau TIG DC avec amorçage HF, HyperSpot, mode pulsé et rampes de montée et de descente du courant.",
+      "it": "Pannello TIG DC con innesco HF, HyperSpot, impulso e slope.",
+      "en": "DC TIG panel with HF ignition, HyperSpot, pulse and current slope controls."
+    }
+  },
+  "wig_acdc": {
+    "n": "WIG AC/DC: Bedienpanel",
+    "big": false,
+    "tl": {
+      "de": "AC/DC-Panel mit HF-Zündung, HyperSpot, MAHE-MIX-PULSE und AC-Balance/Frequenz.",
+      "fr": "Panneau AC/DC avec amorçage HF, HyperSpot, MAHE-MIX-PULSE et réglage de la balance et de la fréquence AC.",
+      "it": "Pannello AC/DC con innesco HF, HyperSpot, MAHE-MIX-PULSE e bilanciamento/frequenza AC.",
+      "en": "AC/DC panel with HF ignition, HyperSpot, MAHE-MIX-PULSE and AC balance/frequency adjustment."
+    }
+  },
+  "mma": {
+    "n": "MMA-Bedienpanel",
+    "big": false,
+    "tl": {
+      "de": "MMA-Panel mit Hot Start, Arc Force und Anti-Stick.",
+      "fr": "Panneau MMA avec Hot Start, Arc Force et Anti-Stick.",
+      "it": "Pannello MMA con Hot Start, Arc Force e Anti-Stick.",
+      "en": "MMA panel with Hot Start, Arc Force and Anti-Stick."
+    }
+  },
+  "theta": {
+    "n": "Plasma-Bedienpanel",
+    "big": false,
+    "tl": {
+      "de": "Plasma-Panel mit Schneidstrom, Luftdruck und Pilotlichtbogen.",
+      "fr": "Panneau plasma avec courant de coupe, pression d’air et arc pilote.",
+      "it": "Pannello plasma con corrente di taglio, pressione dell’aria e arco pilota.",
+      "en": "Plasma panel with cutting current, air pressure and pilot arc."
+    }
+  },
+  "cleaner": {
+    "n": "Cleaner-Bedienpanel",
+    "big": false,
+    "tl": {
+      "de": "Cleaner-Panel mit Leistungsstufen und Betriebsartwahl.",
+      "fr": "Panneau Cleaner avec niveaux de puissance et choix du mode.",
+      "it": "Pannello Cleaner con livelli di potenza e selezione della modalità di funzionamento.",
+      "en": "Cleaner panel with power levels and operating mode selection."
+    }
+  },
+  "steel": {
+    "n": "SX: Steel Front Panel",
+    "big": true,
+    "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
+    "tl": {
+      "de": "Stahl-optimiertes Panel mit HyperCold, HyperRoot und HyperForce.",
+      "fr": "Panneau optimisé pour l’acier avec HyperCold, HyperRoot et HyperForce.",
+      "it": "Pannello ottimizzato per l’acciaio con HyperCold, HyperRoot e HyperForce.",
+      "en": "Steel-optimised panel with HyperCold, HyperRoot and HyperForce."
+    }
+  },
+  "steelpuls": {
+    "n": "SX: Steel Puls Front Panel",
+    "big": true,
+    "img": "2023/01/HyperMIG_SX_Frontpanel-300x172.png",
+    "tl": {
+      "de": "Stahl-Puls-Panel mit HyperPuls, HyperUP und HyperForce.",
+      "fr": "Panneau pour le soudage pulsé de l’acier avec HyperPuls, HyperUP et HyperForce.",
+      "it": "Pannello per la saldatura pulsata dell’acciaio con HyperPuls, HyperUP e HyperForce.",
+      "en": "Steel pulse panel with HyperPuls, HyperUP and HyperForce."
+    }
+  },
+  "hypermig_ex": {
+    "n": "EX: EcoPuls Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_EX_Frontpanel..png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "MENU",
+      "JOB",
+      "MODE",
+      "PROC",
+      "WIRE",
+      "GAS",
+      "TAKT",
+      "ARC"
+    ]
+  },
+  "hypermig_hx": {
+    "n": "HX: Hyper Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_HX_Frontpanel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "MENU",
+      "JOB",
+      "MODE",
+      "PROC",
+      "WIRE",
+      "GAS",
+      "TAKT",
+      "ARC",
+      "BURN"
+    ]
+  },
+  "hypermig_sx": {
+    "n": "SX: Steel Puls Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_SX_Frontpanel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "MENU",
+      "JOB",
+      "MODE",
+      "PROC",
+      "WIRE",
+      "GAS",
+      "TAKT",
+      "ARC"
+    ]
+  },
+  "ecomig_analog": {
+    "n": "EcoMIG 3000 Analog Front Panel",
+    "big": true,
+    "img": "panels/EcoMIG_Analog.png"
+  },
+  "ecomig_low": {
+    "n": "EcoMIG 3000 Digital Front Panel",
+    "big": true,
+    "img": "panels/EcoMIG-LowCost_Frontpanel.png"
+  },
+  "mms_panel": {
+    "n": "MMS 2000 C: Bedienpanel",
+    "big": true,
+    "img": "panels/MMS2000C_Panel.png"
+  },
+  "omega_pro": {
+    "n": "Omega AX Pro: Bedienpanel",
+    "big": true,
+    "img": "panels/OmegaAX Pro.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "omega_syn": {
+    "n": "Omega AX Syn: Bedienpanel",
+    "big": true,
+    "img": "panels/Omega AX SYN.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "betadx_pro": {
+    "n": "Beta DX Pro: Bedienpanel",
+    "big": true,
+    "img": "panels/BetaDX_Pro_Panel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "betadx_syn": {
+    "n": "Beta DX Syn: Bedienpanel",
+    "big": true,
+    "img": "panels/BetaDX_Syn_Panel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "betadig_profi": {
+    "n": "Beta digital Profi: Bedienpanel",
+    "big": true,
+    "img": "panels/BetaDigital_Profi_Panel.PNG",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "betadig_syn": {
+    "n": "Beta digital Syn: Bedienpanel",
+    "big": true,
+    "img": "panels/BetaDigital_Syn_Panel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "hypertig_ax": {
+    "n": "HyperTIG AX: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperTIG_AX_Frontpanel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "hypertig_dx": {
+    "n": "HyperTIG DX: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperTIG_DX_Frontpanel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "hypertig_acdc": {
+    "n": "HyperTIG AC/DC: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperTIG_ACDC_Panel.png",
+    "ctrl": [
+      "VOLT",
+      "AMP",
+      "WIG_HF",
+      "WIG_PULS",
+      "WIG_SLOPE",
+      "WIG_GAS",
+      "TAKT"
+    ]
+  },
+  "i1600_panel": {
+    "n": "i-1600: Bedienpanel",
+    "big": true,
+    "img": "panels/i_1600.png"
+  },
+  "delta_panel": {
+    "n": "Delta: Bedienpanel",
+    "big": true,
+    "img": "panels/Delta1800.png"
+  },
+  "deltadig": {
+    "n": "Delta Digital: Bedienpanel",
+    "big": true,
+    "img": "panels/DeltaDigital_1800.png"
+  },
+  "deltadig_big": {
+    "n": "Delta Digital: Bedienpanel",
+    "big": true,
+    "img": "panels/DeltaDigital_BIG_Panel.png"
+  },
+  "theta40_panel": {
+    "n": "Theta 40: Bedienpanel",
+    "big": true,
+    "img": "panels/Theta40_Panel.png"
+  },
+  "theta_hsc": {
+    "n": "Theta HSC: Bedienpanel",
+    "big": true,
+    "img": "panels/Theta Display.png"
+  },
+  "mini_panel": {
+    "n": "MiniReiniger: Bedienpanel",
+    "big": true,
+    "img": "panels/MiniCleaner_Panel.png"
+  },
+  "cleaner_st": {
+    "n": "HyperCleaner ST: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperClenaerST_Panel.png"
+  },
+  "cleaner_speed": {
+    "n": "HyperCleaner ST Speed: Bedienpanel",
+    "big": true,
+    "img": "panels/Hypercleaner ST Speed FrontPanel.png"
+  },
+  "cleaner_plus": {
+    "n": "HyperCleaner ST Plus: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperCleaner_ST_Plus_Panell.png"
+  },
+  "ct200_panel": {
+    "n": "HyperCleaner CT 200: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperCleaner CT200 FrontPanel.png",
+    "ctrl": [
+      "CL_POWER",
+      "CL_MODE"
+    ]
+  },
+  "ct200_syn": {
+    "n": "CT 200 Syn: Bedienpanel",
+    "big": true,
+    "img": "panels/HyperCleaner CT200 SYN FrontPanel.png",
+    "ctrl": [
+      "CL_POWER",
+      "CL_MODE"
+    ]
+  },
+  "mlf100_panel": {
+    "n": "MLF 100: Bedienpanel",
+    "big": true,
+    "img": "panels/MLF100 Frontpanel.png"
+  },
+  "ecomig_2000": {
+    "n": "EcoMIG 2000 Digital Front Panel",
+    "big": true,
+    "img": "panels/MMS2000C_Panel.png"
+  },
+  "mms_light": {
+    "n": "EcoMIG Light Panel",
+    "big": true,
+    "img": "panels/MMS2000C_Panel.png"
+  },
+  "mms_ecomig": {
+    "n": "EcoMIG Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_EX_Frontpanel..png"
+  },
+  "mms_ecopuls": {
+    "n": "EcoPuls Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_EX_Frontpanel..png"
+  },
+  "hypermig_ecomig": {
+    "n": "EX: EcoMIG Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_EX_Frontpanel..png"
+  },
+  "hypermig_steel": {
+    "n": "SX: Steel Front Panel",
+    "big": true,
+    "img": "panels/HyperMIG_SX_Frontpanel.png"
+  },
+  "hypermig_x_graphic": {
+    "n": "X: Graphic Front Panel",
+    "names": {
+      "de": "X: Grafisches Bedienpanel",
+      "fr": "X : panneau de commande graphique",
+      "it": "X: pannello di comando grafico",
+      "en": "X: Graphic control panel"
+    },
+    "big": true,
+    "img": "panels/MAHE HyperMIG X Frontpanel.png"
+  }
 }

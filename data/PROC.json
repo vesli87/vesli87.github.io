@@ -1,737 +1,832 @@
 [
- {
-  "id": "mis",
-  "group": "mig",
-  "ic": "mis",
-  "n": {
-   "de": "MIS · geregelter Standardlichtbogen",
-   "fr": "MIS · arc standard régulé",
-   "it": "MIS · arco standard regolato"
-  },
-  "d": {
-   "de": "Spritzerarmer MIG/MAG-Lichtbogen für den Werkstattalltag.",
-   "fr": "Arc MIG/MAG à faibles projections pour les travaux courants en atelier.",
-   "it": "Arco MIG/MAG a spruzzi ridotti per il lavoro quotidiano in officina."
-  },
-  "principle": {
-   "de": "MIS steht bei MAHE für Multi-Induktion-System. Die Regelung beeinflusst das Lichtbogenverhalten und den Werkstoffübergang, um Spritzer und anschliessende Reinigungsarbeit zu reduzieren. MIS ist eine MIG/MAG-Kennlinie; es ist weder ein WIG-Verfahren noch automatisch ein Pulsprogramm.",
-   "fr": "Chez MAHE, MIS signifie Multi-Induktion-System. La régulation agit sur le comportement de l’arc et le transfert du métal afin de limiter les projections et le nettoyage après soudage. Il s’agit d’une caractéristique MIG/MAG, pas d’un procédé TIG ni nécessairement d’un programme pulsé.",
-   "it": "Per MAHE, MIS significa Multi-Induktion-System. La regolazione interviene sul comportamento dell’arco e sul trasferimento del metallo per limitare gli spruzzi e la pulizia successiva. È una caratteristica MIG/MAG: non è un processo TIG e non indica automaticamente un programma pulsato."
-  },
-  "use": {
-   "de": "Allgemeine Fertigung, Reparaturen und Montage, wenn ein ruhig führbarer Lichtbogen und überschaubare Nacharbeit gefragt sind. Die passende Kennlinie richtet sich nach Draht, Gas und Werkstoff.",
-   "fr": "Fabrication courante, réparation et montage lorsque l’on recherche un arc facile à conduire et moins de reprises. La caractéristique doit correspondre au fil, au gaz et au matériau.",
-   "it": "Fabbricazione generale, riparazione e montaggio quando servono un arco facile da condurre e meno rilavorazioni. La caratteristica va scelta in base a filo, gas e materiale."
-  },
-  "setup": {
-   "de": "Drahtvorschub, Lichtbogenlänge und Dynamik an der Probe abstimmen. Saubere Kontaktflächen, ein gleichmässiger Drahttransport und die richtige Gasabdeckung bleiben entscheidend; auch ein geregelter Lichtbogen ist nicht unter allen Bedingungen spritzerfrei.",
-   "fr": "Ajuster sur une éprouvette la vitesse de fil, la longueur d’arc et la dynamique. Des surfaces propres, un dévidage régulier et une protection gazeuse adaptée restent essentiels ; la régulation ne supprime pas les projections dans toutes les conditions.",
-   "it": "Regolare su un provino velocità del filo, lunghezza dell’arco e dinamica. Superfici pulite, avanzamento regolare del filo e protezione gassosa adeguata restano fondamentali; la regolazione non elimina gli spruzzi in ogni condizione."
-  },
-  "products": [
-   "hypermig-x",
-   "mms",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "mig-puls",
-  "group": "mig",
-  "ic": "puls",
-  "n": {
-   "de": "MIG/MAG-Puls · kontrollierter Tropfenübergang",
-   "fr": "MIG/MAG pulsé · transfert contrôlé des gouttes",
-   "it": "MIG/MAG pulsato · trasferimento controllato delle gocce"
-  },
-  "d": {
-   "de": "Grundstrom und Stromimpulse steuern den Übergang des abschmelzenden Drahtes.",
-   "fr": "Courant de base et impulsions pilotent le transfert du fil en fusion.",
-   "it": "Corrente di base e impulsi controllano il trasferimento del filo fuso."
-  },
-  "principle": {
-   "de": "Ein Grundstrom hält den Lichtbogen aufrecht, während kurze Stromspitzen die Tropfenablösung unterstützen. Bei passender Abstimmung ist ein regelmässiger, kurzschlussarmer Übergang möglich. Die Stromquelle stimmt Impulsform und Drahtvorschub über die gewählte Synergielinie aufeinander ab.",
-   "fr": "Un courant de base maintient l’arc, tandis que de brèves pointes de courant favorisent le détachement des gouttes. Avec un réglage adapté, le transfert peut devenir régulier et limiter les courts-circuits. La source coordonne la forme des impulsions et le dévidage selon la courbe synergique choisie.",
-   "it": "Una corrente di base mantiene l’arco, mentre brevi picchi favoriscono il distacco delle gocce. Con una regolazione adeguata si ottiene un trasferimento regolare con pochi cortocircuiti. Il generatore coordina forma degli impulsi e avanzamento del filo mediante la curva sinergica selezionata."
-  },
-  "use": {
-   "de": "Aluminium, nichtrostende Stähle und Stahl mit passendem Draht-/Gasprogramm. Interessant bei wechselnden Positionen und wenn weniger Spritzer als beim konventionellen Übergang gewünscht sind.",
-   "fr": "Aluminium, aciers inoxydables et acier avec un programme fil/gaz approprié. Intéressant pour différentes positions et lorsque l’on souhaite réduire les projections par rapport au transfert conventionnel.",
-   "it": "Alluminio, acciai inossidabili e acciaio con un programma filo/gas appropriato. Utile in diverse posizioni e quando si vogliono ridurre gli spruzzi rispetto al trasferimento convenzionale."
-  },
-  "setup": {
-   "de": "Zuerst Werkstoff, Drahtdurchmesser und Schutzgas korrekt wählen, danach Drahtvorschub und Lichtbogenkorrektur einstellen. Eine Puls-Kennlinie ersetzt weder die Nahtvorbereitung noch die Prüfung von Einbrand und Flankenanbindung.",
-   "fr": "Sélectionner d’abord le matériau, le diamètre de fil et le gaz, puis régler le dévidage et la correction de longueur d’arc. Une courbe pulsée ne remplace ni la préparation du joint ni le contrôle de la pénétration et de la fusion des flancs.",
-   "it": "Selezionare prima materiale, diametro del filo e gas, quindi impostare avanzamento e correzione della lunghezza dell’arco. Una curva pulsata non sostituisce la preparazione del giunto né la verifica della penetrazione e della fusione dei lembi."
-  },
-  "products": [
-   "hypermig-x",
-   "mms",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "twi-pulse",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "doppelpuls",
-  "group": "mig",
-  "ic": "doppelpuls",
-  "n": {
-   "de": "Doppelpuls · zwei überlagerte Rhythmen",
-   "fr": "Double pulsation · deux rythmes superposés",
-   "it": "Doppio impulso · due ritmi sovrapposti"
-  },
-  "d": {
-   "de": "Ein langsamer Leistungswechsel überlagert den eigentlichen MIG/MAG-Puls.",
-   "fr": "Une modulation lente de puissance se superpose aux impulsions MIG/MAG.",
-   "it": "Una modulazione lenta della potenza si sovrappone agli impulsi MIG/MAG."
-  },
-  "principle": {
-   "de": "Zusätzlich zum schnellen Impuls für den Tropfenübergang wechseln Phasen mit höherer und niedrigerer Leistung. Dieser langsamere Rhythmus beeinflusst Badbewegung und Nahtschuppung. So lässt sich eine gleichmässige, WIG-ähnliche Oberfläche erzielen, während weiterhin mit abschmelzendem Draht geschweisst wird.",
-   "fr": "Aux impulsions rapides qui commandent le transfert s’ajoute une alternance de phases de puissance plus élevée et plus faible. Ce rythme plus lent agit sur le bain et les ondulations du cordon. Il permet un aspect proche du TIG tout en conservant un fil-électrode fusible.",
-   "it": "Agli impulsi rapidi che regolano il trasferimento si aggiunge l’alternanza tra fasi di potenza maggiore e minore. Il ritmo più lento modifica il bagno e la regolarità delle ondulazioni. Il cordone può assumere un aspetto simile al TIG, pur mantenendo un filo-elettrodo fusibile."
-  },
-  "use": {
-   "de": "Besonders für sichtbare Aluminiumnähte und wiederkehrende Bauteile, bei denen ein gleichmässiges Nahtbild wichtig ist. Auch hier bestimmt die freigegebene Kennlinie, welche Werkstoffe und Drähte möglich sind.",
-   "fr": "Particulièrement intéressant pour les cordons visibles sur aluminium et les pièces répétitives exigeant un aspect régulier. Les matériaux et fils utilisables restent définis par la courbe disponible.",
-   "it": "Particolarmente interessante per cordoni a vista sull’alluminio e pezzi ripetitivi che richiedono un aspetto uniforme. Materiali e fili utilizzabili dipendono comunque dalla curva disponibile."
-  },
-  "setup": {
-   "de": "Doppelpulsfrequenz, Leistungsunterschied und Schweissgeschwindigkeit gemeinsam abstimmen. Zu langsames Führen kann trotz Puls viel Wärme einbringen. Eine regelmässige Schuppung allein belegt weder ausreichenden Einbrand noch eine fehlerfreie Naht.",
-   "fr": "Accorder la fréquence de double pulsation, l’écart de puissance et la vitesse d’avance. Un déplacement trop lent peut apporter beaucoup de chaleur malgré la pulsation. Des ondulations régulières ne prouvent à elles seules ni une pénétration suffisante ni l’absence de défauts.",
-   "it": "Coordinare frequenza del doppio impulso, differenza di potenza e velocità di avanzamento. Un movimento troppo lento può apportare molto calore anche in modalità pulsata. Ondulazioni regolari non dimostrano da sole una penetrazione sufficiente né l’assenza di difetti."
-  },
-  "products": [
-   "hypermig-x",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "hyperpuls",
-  "group": "mig",
-  "ic": "hyperpuls",
-  "n": {
-   "de": "HyperPuls · dynamischer MAHE-Pulslichtbogen",
-   "fr": "HyperPuls · arc pulsé dynamique MAHE",
-   "it": "HyperPuls · arco pulsato dinamico MAHE"
-  },
-  "d": {
-   "de": "MAHE-Prozess für produktives Pulsschweissen mit kontrollierbarem Lichtbogen.",
-   "fr": "Procédé MAHE de soudage pulsé productif avec maîtrise de l’arc.",
-   "it": "Processo MAHE per una saldatura pulsata produttiva con controllo dell’arco."
-  },
-  "principle": {
-   "de": "HyperPuls ist eine herstellerspezifische MIG/MAG-Pulsregelung. MAHE beschreibt den Prozess für zügiges Schweissen und Mehrlagenaufgaben. Entscheidend ist, Abschmelzleistung und Schweissgeschwindigkeit so aufeinander abzustimmen, dass die geforderte Nahtgeometrie und Flankenanbindung erreicht werden.",
-   "fr": "HyperPuls est une régulation pulsée MIG/MAG propre à MAHE. Le fabricant la présente pour une avance soutenue et les applications multipasses. Il faut coordonner le taux de dépôt et la vitesse d’avance pour obtenir la géométrie du cordon et la fusion des flancs recherchées.",
-   "it": "HyperPuls è una regolazione pulsata MIG/MAG specifica di MAHE. Il costruttore la presenta per un avanzamento sostenuto e per applicazioni multipassata. Occorre coordinare tasso di deposito e velocità di avanzamento per ottenere la geometria del cordone e la fusione dei lembi richieste."
-  },
-  "use": {
-   "de": "Fertigungsnähte und mehrlagige Verbindungen mit geeigneter Kennlinie, insbesondere wenn die Prozessführung gegenüber einem normalen Pulsprogramm weiter abgestimmt werden soll.",
-   "fr": "Cordons de fabrication et assemblages multipasses avec une courbe adaptée, notamment lorsque l’on souhaite affiner la conduite du procédé au-delà d’un programme pulsé courant.",
-   "it": "Cordoni di produzione e giunti multipassata con una curva adatta, soprattutto quando si vuole affinare la conduzione del processo rispetto a un programma pulsato ordinario."
-  },
-  "setup": {
-   "de": "Die tatsächliche Geschwindigkeit, der Verzug und die Zwischenlagentemperatur hängen vom Bauteil ab. HyperPuls und Doppelpuls sind unterschiedliche Funktionen; die genaue Kombination und Verfügbarkeit wird am Bedienpanel geprüft.",
-   "fr": "La vitesse obtenue, la déformation et la température entre passes dépendent de la pièce. HyperPuls et double pulsation sont des fonctions différentes ; leur combinaison et leur disponibilité se vérifient sur le panneau de commande.",
-   "it": "Velocità ottenibile, deformazione e temperatura tra le passate dipendono dal pezzo. HyperPuls e doppio impulso sono funzioni differenti; combinazione e disponibilità vanno verificate sul pannello di comando."
-  },
-  "products": [
-   "hypermig-x",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "hyperspeedpuls",
-  "group": "mig",
-  "ic": null,
-  "n": {
-   "de": "HyperSpeedPuls · Pulsfunktion für die Fertigung",
-   "fr": "HyperSpeedPuls · fonction pulsée pour la production",
-   "it": "HyperSpeedPuls · funzione pulsata per la produzione"
-  },
-  "d": {
-   "de": "Im HyperMIG-Programm genannte Pulsfunktion für die konkrete Produktionsaufgabe.",
-   "fr": "Fonction pulsée annoncée dans la gamme HyperMIG, à définir pour l’application.",
-   "it": "Funzione pulsata indicata nella gamma HyperMIG, da definire per l’applicazione."
-  },
-  "principle": {
-   "de": "MAHE führt HyperSpeedPuls in der Geräteausstattung der HyperMIG-X-Reihe auf. Für die Auswahl genügt der Funktionsname allein nicht: Benötigt werden die tatsächlich vorhandene Kennlinie, der Werkstoff und die vorgesehene Draht-/Gaskombination. Daraus wird der passende Arbeitspunkt bestimmt.",
-   "fr": "MAHE mentionne HyperSpeedPuls dans l’équipement de la gamme HyperMIG X. Le nom de la fonction ne suffit pas pour choisir : il faut connaître la courbe réellement installée, le matériau et la combinaison fil/gaz prévue. Ces éléments permettent de définir le point de fonctionnement.",
-   "it": "MAHE cita HyperSpeedPuls nell’equipaggiamento della gamma HyperMIG X. Il nome della funzione non basta per la scelta: servono la curva realmente installata, il materiale e la combinazione filo/gas prevista. Questi elementi consentono di definire il punto di lavoro."
-  },
-  "use": {
-   "de": "Wiederkehrende Produktionsnähte, für die eine passende HyperMIG-Pulslösung geprüft werden soll. Ein Versuch am Originalwerkstoff zeigt, ob Geschwindigkeit, Nahtform und Spritzerverhalten zur Aufgabe passen.",
-   "fr": "Soudures répétitives de production pour lesquelles une solution pulsée HyperMIG est envisagée. Un essai sur le matériau réel permet de vérifier vitesse, forme du cordon et projections.",
-   "it": "Saldature ripetitive di produzione per le quali si valuta una soluzione pulsata HyperMIG. Una prova sul materiale reale permette di verificare velocità, forma del cordone e spruzzi."
-  },
-  "setup": {
-   "de": "Bedienpanel, Softwarestand und freigeschaltetes Programm vor der Auswahl abgleichen. Im Versuch werden Schweissgeschwindigkeit, Nahtgeometrie, Nacharbeit und Bauteiltemperatur gemeinsam verglichen. Erst dieser Vergleich zeigt den Nutzen für die konkrete Fertigung.",
-   "fr": "Vérifier panneau, version logicielle et programme activé avant de choisir. Lors de l’essai, comparer ensemble vitesse, géométrie du cordon, reprises et température de la pièce. Ce bilan permet de mesurer l’intérêt pour la fabrication concernée.",
-   "it": "Verificare pannello, versione software e programma attivato prima della scelta. Durante la prova confrontare insieme velocità, geometria del cordone, rilavorazioni e temperatura del pezzo. Questo confronto permette di valutare l’utilità per la produzione concreta."
-  },
-  "products": [
-   "hypermig-x",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "hyperforce",
-  "group": "mig",
-  "ic": null,
-  "n": {
-   "de": "HyperForce · Einbrand und Lichtbogendruck",
-   "fr": "HyperForce · pénétration et pression d’arc",
-   "it": "HyperForce · penetrazione e pressione dell’arco"
-  },
-  "d": {
-   "de": "Konzentrierter MIG/MAG-Lichtbogen für Schweissaufgaben mit höherem Einbrandbedarf.",
-   "fr": "Arc MIG/MAG concentré pour les assemblages demandant de la pénétration.",
-   "it": "Arco MIG/MAG concentrato per giunti che richiedono penetrazione."
-  },
-  "principle": {
-   "de": "HyperForce richtet den Prozess auf einen druckvollen Lichtbogen und tiefen Einbrand aus. Das ist vor allem dort relevant, wo die Nahtflanken zuverlässig aufgeschmolzen werden müssen. Ob sich dadurch Nahtvorbereitung oder Lagenaufbau ändern lassen, wird an der konkreten Verbindung erprobt.",
-   "fr": "HyperForce privilégie un arc puissant et une pénétration profonde, notamment lorsque la fusion des flancs est déterminante. Toute modification de la préparation du joint ou du nombre de passes doit être validée sur l’assemblage concerné.",
-   "it": "HyperForce privilegia un arco energico e una penetrazione profonda, soprattutto quando è determinante fondere correttamente i lembi. Eventuali modifiche alla preparazione del giunto o al numero di passate devono essere validate sul collegamento concreto."
-  },
-  "use": {
-   "de": "Bauteile mit höherem Leistungsbedarf und anspruchsvolle Fugen, sofern Werkstoff, Position und Kennlinie dazu passen. Der Prozess kann eine Alternative zu einer weniger konzentrierten Lichtbogeneinstellung sein.",
-   "fr": "Pièces exigeant davantage de puissance et joints difficiles, si le matériau, la position et la courbe sont compatibles. Le procédé peut remplacer un réglage d’arc moins concentré.",
-   "it": "Pezzi con maggiore fabbisogno di potenza e giunti impegnativi, se materiale, posizione e curva sono compatibili. Il processo può essere un’alternativa a una regolazione dell’arco meno concentrata."
-  },
-  "setup": {
-   "de": "Brennerwinkel, Stick-out, Schweissgeschwindigkeit und Fugenöffnung beeinflussen das Ergebnis deutlich. Tiefer Einbrand ist kein Ersatz für einen nachgewiesenen Lagenaufbau; Durchbrand und zu starke Wärmeeinbringung bleiben zu beurteilen.",
-   "fr": "Angle de torche, longueur libre du fil, vitesse et ouverture du joint influencent fortement le résultat. Une pénétration élevée ne remplace pas un séquencement de passes validé ; le risque de perçage et l’apport thermique restent à évaluer.",
-   "it": "Angolo della torcia, tratto libero del filo, velocità e apertura del giunto incidono molto sul risultato. Una forte penetrazione non sostituisce una sequenza di passate validata; vanno comunque valutati sfondamento e apporto termico."
-  },
-  "products": [
-   "hypermig-x",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "hypercold",
-  "group": "mig",
-  "ic": "coldroot",
-  "n": {
-   "de": "HyperCold · Wärme gezielt begrenzen",
-   "fr": "HyperCold · maîtriser l’apport thermique",
-   "it": "HyperCold · contenere l’apporto termico"
-  },
-  "d": {
-   "de": "MAHE-Kennlinie für wärmeempfindliche Bauteile und Spaltüberbrückung.",
-   "fr": "Caractéristique MAHE pour les pièces sensibles à la chaleur et le pontage des jeux.",
-   "it": "Caratteristica MAHE per pezzi sensibili al calore e compensazione del gioco."
-  },
-  "principle": {
-   "de": "HyperCold ist auf eine kontrollierte Wärmeeinbringung und ein gut führbares Schmelzbad ausgelegt. MAHE nennt insbesondere spaltüberbrückende Aufgaben und Wurzellagen. Der Nutzen entsteht durch die passende Kombination aus Kennlinie, Leistung und Brennerbewegung.",
-   "fr": "HyperCold vise un apport thermique maîtrisé et un bain facile à conduire. MAHE cite notamment le pontage des jeux et les passes de racine. Le résultat dépend de l’association de la courbe, de la puissance et du mouvement de la torche.",
-   "it": "HyperCold mira a un apporto termico controllato e a un bagno facile da gestire. MAHE indica in particolare la compensazione del gioco e le passate di radice. Il risultato dipende dall’abbinamento tra curva, potenza e movimento della torcia."
-  },
-  "use": {
-   "de": "Dünnere oder verzugsempfindliche Konstruktionen sowie Verbindungen mit kontrolliertem Fügespalt. Die Eignung wird an Material, Nahtform und Blechdicke geprüft.",
-   "fr": "Constructions minces ou sensibles à la déformation et assemblages présentant un jeu maîtrisé. L’aptitude se vérifie selon le matériau, la forme du joint et l’épaisseur.",
-   "it": "Costruzioni sottili o sensibili alla deformazione e giunti con gioco controllato. L’idoneità va verificata in base a materiale, forma del giunto e spessore."
-  },
-  "setup": {
-   "de": "Weniger Wärme darf nicht zu fehlender Flankenanbindung führen. Leistung und Geschwindigkeit so abstimmen, dass beide Bauteilkanten sicher aufschmelzen. Eine kalt geführte Einstellung garantiert weder verzugsfreie Teile noch unbegrenzte Spaltüberbrückung.",
-   "fr": "Réduire la chaleur ne doit pas entraîner un manque de fusion. Régler puissance et vitesse pour fondre correctement les deux bords. Une conduite à faible apport ne garantit ni l’absence de déformation ni le franchissement de jeux sans limite.",
-   "it": "Ridurre il calore non deve provocare mancanza di fusione. Regolare potenza e velocità per fondere correttamente entrambi i bordi. Una conduzione a basso apporto non garantisce assenza di deformazioni né compensazione illimitata del gioco."
-  },
-  "products": [
-   "hypermig-x",
-   "mms",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "hyperroot",
-  "group": "mig",
-  "ic": "coldroot",
-  "n": {
-   "de": "HyperRoot · die Wurzellage kontrollieren",
-   "fr": "HyperRoot · contrôler la passe de racine",
-   "it": "HyperRoot · controllare la passata di radice"
-  },
-  "d": {
-   "de": "Aufgabenbezogene MIG/MAG-Regelung für den Nahtgrund.",
-   "fr": "Régulation MIG/MAG adaptée aux travaux en fond de joint.",
-   "it": "Regolazione MIG/MAG dedicata al fondo del giunto."
-  },
-  "principle": {
-   "de": "Bei der Wurzellage müssen Nahtgrund und beide Flanken aufschmelzen, ohne dass das Bad unkontrolliert durchfällt. HyperRoot ist im MAHE-Programm Teil der Cold-/Root-Funktionen. Wurzelspalt, Steghöhe und erreichbare Brennerposition werden deshalb zusammen mit der Kennlinie betrachtet.",
-   "fr": "La passe de racine doit fondre le fond du joint et les deux flancs sans effondrement incontrôlé du bain. HyperRoot appartient aux fonctions Cold/Root du programme MAHE. Le jeu à la racine, le talon et l’accès de la torche doivent donc être considérés avec la courbe.",
-   "it": "La passata di radice deve fondere il fondo del giunto e i due lembi senza far collassare il bagno in modo incontrollato. HyperRoot appartiene alle funzioni Cold/Root del programma MAHE. Gioco di radice, spalla e accessibilità della torcia vanno quindi valutati insieme alla curva."
-  },
-  "use": {
-   "de": "Erste Lagen von geeigneten Stumpfverbindungen und Aufgaben mit wechselnder Zugänglichkeit. Ob eine Gegenlage, Badsicherung oder zusätzliche Wurzelschutzmassnahme nötig ist, bestimmt die Verbindung.",
-   "fr": "Premières passes de joints bout à bout appropriés et travaux à accessibilité variable. La nécessité d’une reprise envers, d’un support de bain ou d’une protection de racine dépend de l’assemblage.",
-   "it": "Prime passate di giunti di testa appropriati e lavori con accessibilità variabile. Necessità di una ripresa al rovescio, di un sostegno del bagno o di una protezione della radice dipendono dal giunto."
-  },
-  "setup": {
-   "de": "Den zulässigen Spaltbereich an einer Probe festlegen und die Nahtunterseite beurteilen. HyperRoot ersetzt keine geforderte Formierung oder Nahtprüfung. Das Bedienpanel entscheidet, ob Root separat oder innerhalb einer kombinierten Funktion verfügbar ist.",
-   "fr": "Déterminer sur éprouvette la plage de jeu acceptable et examiner l’envers. HyperRoot ne remplace pas une protection envers ou un contrôle imposé. Le panneau détermine si Root est accessible séparément ou au sein d’une fonction combinée.",
-   "it": "Definire su un provino il campo di gioco accettabile ed esaminare il rovescio. HyperRoot non sostituisce una protezione al rovescio o un controllo richiesto. Il pannello determina se Root è disponibile separatamente o all’interno di una funzione combinata."
-  },
-  "products": [
-   "hypermig-x",
-   "mms",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "hyperup",
-  "group": "mig",
-  "ic": "hyperup",
-  "n": {
-   "de": "HyperUP · vertikal aufwärts schweissen",
-   "fr": "HyperUP · souder en verticale montante",
-   "it": "HyperUP · saldare in verticale ascendente"
-  },
-  "d": {
-   "de": "Wechsel von Heiss- und Kaltphasen für die Steignaht.",
-   "fr": "Alternance de phases chaudes et froides pour le soudage montant.",
-   "it": "Alternanza di fasi calde e fredde per la saldatura ascendente."
-  },
-  "principle": {
-   "de": "HyperUP wechselt automatisch zwischen einer leistungsstärkeren und einer kühleren Prozessphase. Das unterstützt den Aufbau und die Kontrolle des Bades beim Schweissen nach oben. MAHE beschreibt damit Steignähte mit geradliniger Führung statt der üblichen Pendelbewegung.",
-   "fr": "HyperUP alterne automatiquement une phase plus puissante et une phase plus froide. Cette alternance aide à former et à contrôler le bain en montant. MAHE présente ce fonctionnement pour une progression rectiligne plutôt qu’un balayage habituel.",
-   "it": "HyperUP alterna automaticamente una fase di maggiore potenza e una fase più fredda. L’alternanza aiuta a formare e controllare il bagno durante la progressione verso l’alto. MAHE descrive questa funzione per un avanzamento rettilineo anziché con la consueta oscillazione."
-  },
-  "use": {
-   "de": "Vertikale Nähte, bei denen ein reproduzierbarer Badaufbau und eine gleichmässige Führung gesucht werden. Werkstoff und Kennlinie müssen für die vorgesehene Position geeignet sein.",
-   "fr": "Cordons verticaux pour lesquels on recherche une formation répétable du bain et une conduite régulière. Matériau et courbe doivent convenir à la position prévue.",
-   "it": "Cordoni verticali nei quali servono una formazione ripetibile del bagno e una conduzione regolare. Materiale e curva devono essere adatti alla posizione prevista."
-  },
-  "setup": {
-   "de": "Phasenabstimmung, Nahtquerschnitt und Schweissgeschwindigkeit an einer Probe festlegen. Zu grosses Badvolumen kann auch mit HyperUP absacken. Die Funktion ist abhängig von Bedienpanel und gegebenenfalls freigeschaltetem Programm.",
-   "fr": "Définir sur éprouvette la coordination des phases, la section du cordon et la vitesse. Un bain trop volumineux peut s’affaisser même avec HyperUP. La fonction dépend du panneau et, le cas échéant, du programme activé.",
-   "it": "Definire su un provino coordinamento delle fasi, sezione del cordone e velocità. Un bagno troppo voluminoso può colare anche con HyperUP. La funzione dipende dal pannello e dall’eventuale programma attivato."
-  },
-  "products": [
-   "hypermig-x",
-   "hypermig-twin"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypermig"
-  ]
- },
- {
-  "id": "triarc",
-  "group": "mig",
-  "ic": "triarc",
-  "n": {
-   "de": "TriArc · Cold, Root und Force kombiniert",
-   "fr": "TriArc · Cold, Root et Force combinés",
-   "it": "TriArc · Cold, Root e Force combinati"
-  },
-  "d": {
-   "de": "Dynamische Kennlinie mit leistungsabhängigem Lichtbogenverhalten.",
-   "fr": "Caractéristique dynamique dont le comportement varie avec la puissance.",
-   "it": "Caratteristica dinamica con comportamento legato alla potenza."
-  },
-  "principle": {
-   "de": "MAHE beschreibt TriArc als dynamischen Lichtbogen, der abhängig vom eingestellten Leistungsbereich Cold-, Root- oder Force-Verhalten nutzt. Die drei Namen bezeichnen unterschiedliche Schwerpunkte der Prozessführung, nicht drei gleichzeitig unabhängig arbeitende Lichtbögen.",
-   "fr": "MAHE décrit TriArc comme un arc dynamique utilisant un comportement Cold, Root ou Force selon la puissance réglée. Ces noms désignent des priorités de régulation différentes, pas trois arcs indépendants fonctionnant simultanément.",
-   "it": "MAHE descrive TriArc come un arco dinamico che adotta un comportamento Cold, Root o Force in funzione della potenza impostata. I tre nomi indicano diverse priorità della regolazione, non tre archi indipendenti che lavorano contemporaneamente."
-  },
-  "use": {
-   "de": "Aufgaben, bei denen innerhalb der vorgesehenen Kennlinie verschiedene Leistungsbereiche genutzt werden. Zur Auswahl werden Bauteildicke, Nahtaufbau und gewünschtes Badverhalten gemeinsam betrachtet.",
-   "fr": "Travaux utilisant différents niveaux de puissance dans la caractéristique prévue. Le choix associe épaisseur, séquence des passes et comportement souhaité du bain.",
-   "it": "Lavori che utilizzano diversi livelli di potenza all’interno della caratteristica prevista. La scelta considera insieme spessore, sequenza delle passate e comportamento desiderato del bagno."
-  },
-  "setup": {
-   "de": "Der Funktionsumfang wird an der konkreten Stromquelle und ihrem Bedienpanel geprüft. Aus TriArc folgt weder eine automatische Erkennung der Bauteildicke noch eine pauschale Freigabe jeder Nahtaufgabe.",
-   "fr": "Vérifier le fonctionnement sur la source et le panneau concernés. TriArc n’implique ni une détection automatique de l’épaisseur ni une validation universelle de tous les assemblages.",
-   "it": "Verificare il funzionamento sul generatore e sul pannello interessati. TriArc non implica il riconoscimento automatico dello spessore né una validazione universale di tutti i giunti."
-  },
-  "products": [
-   "hypermig-x"
-  ],
-  "sources": [
-   "mahe-processes"
-  ]
- },
- {
-  "id": "twinarc",
-  "group": "mig",
-  "ic": "coldroot",
-  "n": {
-   "de": "TwinArc · Cold und Root kombiniert",
-   "fr": "TwinArc · Cold et Root combinés",
-   "it": "TwinArc · Cold e Root combinati"
-  },
-  "d": {
-   "de": "Kombinierte Kennlinie für wärmekontrollierte Aufgaben und Wurzeln.",
-   "fr": "Caractéristique combinée pour maîtriser la chaleur et les passes de racine.",
-   "it": "Caratteristica combinata per controllare il calore e le passate di radice."
-  },
-  "principle": {
-   "de": "TwinArc verbindet nach MAHE Cold- und Root-Verhalten abhängig von der Leistungseinstellung. Es handelt sich um eine Regelungsfunktion für einen Lichtbogen. Die Bezeichnung ist nicht mit Tandemschweissen mit zwei gleichzeitig abschmelzenden Drahtelektroden gleichzusetzen.",
-   "fr": "Selon MAHE, TwinArc associe les comportements Cold et Root en fonction de la puissance réglée. C’est une fonction de régulation d’un arc ; elle ne doit pas être confondue avec le soudage tandem utilisant deux fils-électrodes fondant simultanément.",
-   "it": "Secondo MAHE, TwinArc associa i comportamenti Cold e Root in funzione della potenza impostata. È una funzione di regolazione di un arco; non va confusa con la saldatura tandem con due fili-elettrodo che fondono contemporaneamente."
-  },
-  "use": {
-   "de": "Verbindungen mit Fokus auf beherrschbaren Wärmeeintrag und die Ausbildung der Wurzellage. Der Einsatz wird über die verfügbare Cold-/Root-Kennlinie konkretisiert.",
-   "fr": "Assemblages privilégiant un apport thermique maîtrisé et la formation de la racine. L’utilisation se précise à partir de la courbe Cold/Root disponible.",
-   "it": "Giunti che richiedono un apporto termico gestibile e una corretta formazione della radice. L’impiego viene definito in base alla curva Cold/Root disponibile."
-  },
-  "setup": {
-   "de": "Spalt, Steg und Schweissgeschwindigkeit bleiben Einstellgrössen des Anwenders. TwinArc ist nicht gleichbedeutend mit der HyperMIG-TWIN-Geräteausführung mit zwei Drahtvorschubkoffern.",
-   "fr": "Jeu, talon et vitesse restent des paramètres à définir par l’opérateur. TwinArc ne désigne pas non plus la version d’appareil HyperMIG TWIN équipée de deux dévidoirs.",
-   "it": "Gioco, spalla e velocità restano parametri da definire a cura dell’operatore. TwinArc non identifica neppure la versione HyperMIG TWIN dotata di due trainafilo."
-  },
-  "products": [
-   "hypermig-x"
-  ],
-  "sources": [
-   "mahe-processes"
-  ]
- },
- {
-  "id": "tig-lf-puls",
-  "group": "tig",
-  "ic": "lfpuls",
-  "n": {
-   "de": "WIG/TIG-LF-Puls · den Badrhythmus führen",
-   "fr": "TIG pulsé basse fréquence · rythmer le bain",
-   "it": "TIG pulsato a bassa frequenza · scandire il bagno"
-  },
-  "d": {
-   "de": "Langsamere Stromwechsel machen Schmelz- und Entlastungsphasen gut erkennbar.",
-   "fr": "Des variations de courant plus lentes rendent les phases de fusion et de repos perceptibles.",
-   "it": "Variazioni di corrente più lente rendono riconoscibili le fasi di fusione e di riduzione."
-  },
-  "principle": {
-   "de": "Beim WIG-Pulsen wechseln Pulsstrom und Grundstrom, während die Wolframelektrode nicht abschmilzt. Bei niedriger Pulsfrequenz lässt sich der Wechsel zur Führung des Bades und zur rhythmischen Zugabe des Zusatzstabes nutzen. MAHE beschreibt LF-Puls insbesondere für kontrollierte Badführung und Zwangslagen.",
-   "fr": "En TIG pulsé, le courant alterne entre un niveau haut et un niveau de base sans fusion de l’électrode de tungstène. À basse fréquence, cette alternance peut guider le bain et rythmer l’apport manuel de métal. MAHE présente le LF pour le contrôle du bain et les positions difficiles.",
-   "it": "Nel TIG pulsato la corrente alterna un livello alto e uno di base senza fondere l’elettrodo di tungsteno. A bassa frequenza, l’alternanza può guidare il bagno e scandire l’apporto manuale della bacchetta. MAHE presenta LF per il controllo del bagno e le posizioni difficili."
-  },
-  "use": {
-   "de": "Manuelle Nähte, wärmeempfindliche Kanten und Positionen, in denen ein überschaubares Bad unterstützt. Zusatzwerkstoff und Handbewegung werden auf den gewählten Rhythmus abgestimmt.",
-   "fr": "Cordons manuels, bords sensibles à la chaleur et positions où un bain de taille maîtrisée facilite le travail. Métal d’apport et mouvement de la main sont coordonnés au rythme choisi.",
-   "it": "Cordoni manuali, bordi sensibili al calore e posizioni nelle quali aiuta un bagno di dimensioni controllate. Materiale d’apporto e movimento della mano vanno coordinati al ritmo scelto."
-  },
-  "setup": {
-   "de": "Pulsstrom, Grundstrom, Pulsdaueranteil und Frequenz gemeinsam einstellen. Ein hoher Grundstrom oder ein langer Pulsanteil kann den mittleren Strom stark erhöhen. LF-Puls ist weder AC-Frequenz noch ein anderes Zündverfahren.",
-   "fr": "Régler ensemble courant haut, courant de base, rapport cyclique et fréquence. Un courant de base élevé ou un long temps au niveau haut peut augmenter fortement le courant moyen. Le LF n’est ni la fréquence AC ni un mode d’amorçage.",
-   "it": "Regolare insieme corrente di picco, corrente di base, rapporto ciclico e frequenza. Una corrente di base elevata o una lunga fase di picco può aumentare molto la corrente media. LF non è la frequenza AC né una modalità di innesco."
-  },
-  "products": [
-   "beta-dx",
-   "omega-ax"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-beta",
-   "mahe-omega",
-   "tig-parameters"
-  ]
- },
- {
-  "id": "tig-hf-puls",
-  "group": "tig",
-  "ic": "hfpuls",
-  "n": {
-   "de": "WIG/TIG-HF-Puls · schneller Stromwechsel",
-   "fr": "TIG pulsé haute fréquence · variations rapides du courant",
-   "it": "TIG pulsato ad alta frequenza · variazioni rapide della corrente"
-  },
-  "d": {
-   "de": "Schnelle Stromimpulse beeinflussen Konzentration und Stabilität des Lichtbogens.",
-   "fr": "Des impulsions rapides influencent la concentration et la stabilité de l’arc.",
-   "it": "Impulsi rapidi influenzano concentrazione e stabilità dell’arco."
-  },
-  "principle": {
-   "de": "Bei höherer Pulsfrequenz folgen die Stromimpulse so schnell, dass sie nicht mehr als einzelne Arbeitsrhythmen für die Hand dienen. Die Einstellung beeinflusst vielmehr Lichtbogenfokus und Badverhalten. HF-Puls regelt den Schweissstrom während der Naht; HF-Zündung erzeugt dagegen den berührungslosen Lichtbogenstart.",
-   "fr": "À fréquence plus élevée, les impulsions ne servent plus de cadence distincte pour la main. Le réglage agit surtout sur la concentration de l’arc et le comportement du bain. Le pulsé HF module le courant pendant le cordon ; l’amorçage HF sert, lui, à démarrer l’arc sans contact.",
-   "it": "A frequenza più elevata gli impulsi non servono più come cadenza distinta per la mano. La regolazione agisce soprattutto sulla concentrazione dell’arco e sul comportamento del bagno. Il pulsato HF modula la corrente durante il cordone; l’innesco HF serve invece ad avviare l’arco senza contatto."
-  },
-  "use": {
-   "de": "Präzise WIG-Nähte und Aufgaben mit konzentrierter Lichtbogenführung. MAHE nennt bei Beta DX pro und Omega AX pro Pulsen bis 20 kHz; für andere Geräte gelten deren eigene Angaben.",
-   "fr": "Soudures TIG précises et travaux recherchant un arc concentré. MAHE annonce jusqu’à 20 kHz sur Beta DX pro et Omega AX pro ; les autres appareils ont leurs propres spécifications.",
-   "it": "Saldature TIG precise e lavori che richiedono un arco concentrato. MAHE dichiara fino a 20 kHz per Beta DX pro e Omega AX pro; per gli altri apparecchi valgono le rispettive specifiche."
-  },
-  "setup": {
-   "de": "Eine höhere Frequenz ist nicht automatisch die bessere Einstellung. Pulsstrom, Grundstrom und Pulsanteil müssen zur Naht passen. Die syn-Ausführungen mit automatischer Pulseinstellung dürfen nicht mit dem manuellen Funktionsumfang der pro-Panels gleichgesetzt werden.",
-   "fr": "Une fréquence plus élevée n’est pas automatiquement préférable. Les courants et le rapport cyclique doivent convenir au joint. Les versions syn à réglage automatique des impulsions ne doivent pas être assimilées au réglage manuel des panneaux pro.",
-   "it": "Una frequenza maggiore non è automaticamente preferibile. Correnti e rapporto ciclico devono essere adatti al giunto. Le versioni syn con regolazione automatica degli impulsi non vanno equiparate alle regolazioni manuali dei pannelli pro."
-  },
-  "products": [
-   "beta-dx",
-   "omega-ax",
-   "hypertig-ax",
-   "hypertig-dx"
-  ],
-  "sources": [
-   "mahe-beta",
-   "mahe-omega",
-   "mahe-hypertig-ax",
-   "mahe-hypertig-dx",
-   "tig-parameters"
-  ]
- },
- {
-  "id": "hyperarcactive",
-  "group": "tig",
-  "ic": "arcactive",
-  "n": {
-   "de": "HyperArcActive · aktive Lichtbogenregelung",
-   "fr": "HyperArcActive · régulation active de l’arc",
-   "it": "HyperArcActive · regolazione attiva dell’arco"
-  },
-  "d": {
-   "de": "MAHE-Regelung zur Kompensation veränderlicher Lichtbogenlänge.",
-   "fr": "Régulation MAHE pour compenser les variations de longueur d’arc.",
-   "it": "Regolazione MAHE per compensare le variazioni di lunghezza dell’arco."
-  },
-  "principle": {
-   "de": "Beim manuellen WIG-Schweissen verändert ein schwankender Abstand zwischen Elektrode und Werkstück die Lichtbogenbedingungen. HyperArcActive ist laut MAHE auf die Kompensation solcher Längenänderungen und einen gleichmässigeren Wärmeeintrag ausgelegt. Es ergänzt die Handführung, statt sie zu ersetzen.",
-   "fr": "En TIG manuel, une variation de distance entre électrode et pièce modifie les conditions de l’arc. MAHE présente HyperArcActive pour compenser ces changements et rendre l’apport thermique plus régulier. La fonction accompagne la conduite manuelle sans la remplacer.",
-   "it": "Nel TIG manuale, le variazioni della distanza tra elettrodo e pezzo modificano le condizioni dell’arco. MAHE presenta HyperArcActive per compensare queste variazioni e rendere più regolare l’apporto termico. La funzione assiste la conduzione manuale senza sostituirla."
-  },
-  "use": {
-   "de": "Zwangslagen, schwer zugängliche Nähte und wechselnde Brennerabstände. Die Funktion ist besonders dann interessant, wenn eine konstant kurze Lichtbogenlänge schwierig einzuhalten ist.",
-   "fr": "Positions difficiles, joints peu accessibles et distance de torche variable. La fonction présente un intérêt lorsque le maintien d’un arc court et constant est délicat.",
-   "it": "Posizioni difficili, giunti poco accessibili e distanza della torcia variabile. La funzione è interessante quando è difficile mantenere un arco corto e costante."
-  },
-  "setup": {
-   "de": "Elektrodenanschliff, Gasabdeckung und Brennerführung bleiben wichtig. HyperArcActive ist eine Regelungsfunktion und nicht mit einem separaten Pulsprogramm oder automatischer Nahtverfolgung gleichzusetzen.",
-   "fr": "Affûtage du tungstène, protection gazeuse et conduite de torche restent importants. HyperArcActive est une régulation, pas un programme pulsé distinct ni un suivi automatique du joint.",
-   "it": "Affilatura del tungsteno, protezione gassosa e conduzione della torcia restano importanti. HyperArcActive è una regolazione, non un programma pulsato distinto né un inseguimento automatico del giunto."
-  },
-  "products": [
-   "beta-dx",
-   "omega-ax",
-   "hypertig-ax",
-   "hypertig-dx"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypertig-ax"
-  ]
- },
- {
-  "id": "tig-acdc",
-  "group": "tig",
-  "ic": "acdc",
-  "n": {
-   "de": "WIG/TIG AC/DC · Polarität und Balance",
-   "fr": "TIG AC/DC · polarité et balance",
-   "it": "TIG AC/DC · polarità e bilanciamento"
-  },
-  "d": {
-   "de": "Gleichstrom für viele Stähle; Wechselstrom für typische Aluminiumaufgaben.",
-   "fr": "Courant continu pour de nombreux aciers ; alternatif pour les applications courantes sur aluminium.",
-   "it": "Corrente continua per molti acciai; alternata per le applicazioni comuni sull’alluminio."
-  },
-  "principle": {
-   "de": "Beim üblichen WIG-DC-Schweissen liegt die Elektrode am Minuspol. Für Aluminium wird häufig AC genutzt: Die positive Elektrodenphase unterstützt die Reinigung der Oxidschicht, die negative Phase die Wärmeeinbringung ins Werkstück. Die AC-Balance bestimmt das Verhältnis dieser Phasen.",
-   "fr": "En TIG DC courant, l’électrode est au pôle négatif. L’aluminium est souvent soudé en AC : la phase où l’électrode est positive favorise le nettoyage de l’oxyde, la phase négative apporte davantage de chaleur à la pièce. La balance AC règle le rapport entre ces phases.",
-   "it": "Nel comune TIG DC l’elettrodo è al polo negativo. Per l’alluminio si usa spesso AC: la fase con elettrodo positivo favorisce la pulizia dell’ossido, quella negativa l’apporto di calore al pezzo. Il bilanciamento AC regola il rapporto fra le due fasi."
-  },
-  "use": {
-   "de": "DC für geeignete Stahl- und Chromstahlnähte; AC für viele Aluminiumverbindungen. Werkstoffzustand, Zusatz und Oberflächenvorbereitung bestimmen die konkrete Verfahrenswahl.",
-   "fr": "DC pour les assemblages appropriés en acier et inox ; AC pour de nombreux joints en aluminium. L’état du matériau, l’apport et la préparation des surfaces déterminent le choix précis.",
-   "it": "DC per giunti appropriati in acciaio e inox; AC per molti giunti in alluminio. Stato del materiale, apporto e preparazione delle superfici determinano la scelta concreta."
-  },
-  "setup": {
-   "de": "Balance und AC-Frequenz sind eigene Grössen: Balance verändert den Phasenanteil, AC-Frequenz die Zahl der Polaritätswechselzyklen. Zu viel positive Elektrodenphase belastet den Wolfram stärker. Die Balance-Anzeige ist geräteabhängig; Prozentwerte nicht ungeprüft übertragen.",
-   "fr": "Balance et fréquence AC sont distinctes : la balance modifie la proportion des phases, la fréquence le nombre de cycles de polarité. Une phase positive excessive sollicite davantage le tungstène. Les conventions d’affichage varient ; ne pas transposer les pourcentages sans vérification.",
-   "it": "Bilanciamento e frequenza AC sono grandezze distinte: il bilanciamento modifica la proporzione delle fasi, la frequenza il numero dei cicli di polarità. Una fase positiva eccessiva sollecita maggiormente il tungsteno. Le indicazioni variano fra apparecchi: non trasferire percentuali senza verifica."
-  },
-  "products": [
-   "omega-ax",
-   "hypertig-ax"
-  ],
-  "sources": [
-   "tig-parameters",
-   "mahe-omega"
-  ]
- },
- {
-  "id": "ac-wave",
-  "group": "tig",
-  "ic": "acwave",
-  "n": {
-   "de": "AC Wave · Stromform und Lichtbogencharakter",
-   "fr": "AC Wave · forme du courant et caractère de l’arc",
-   "it": "AC Wave · forma della corrente e carattere dell’arco"
-  },
-  "d": {
-   "de": "Sinus-, Trapez- oder Rechteckform verändern das Verhalten des AC-Lichtbogens.",
-   "fr": "Les formes sinusoïdale, trapézoïdale ou rectangulaire modifient le comportement de l’arc AC.",
-   "it": "Le forme sinusoidale, trapezoidale o rettangolare modificano il comportamento dell’arco AC."
-  },
-  "principle": {
-   "de": "Die Stromform beschreibt den zeitlichen Verlauf der AC-Phasen. MAHE nennt Sinus, Trapez und Rechteck als wählbare Modulationen. Unterschiedlich steile Stromwechsel verändern Lichtbogencharakter und Geräusch; sie sind von Pulsfrequenz und AC-Balance getrennt zu betrachten.",
-   "fr": "La forme du courant décrit l’évolution des phases AC dans le temps. MAHE propose des modulations sinusoïdale, trapézoïdale et rectangulaire. La rapidité des transitions modifie le caractère et le bruit de l’arc ; elle se distingue de la fréquence de pulsation et de la balance AC.",
-   "it": "La forma della corrente descrive l’andamento delle fasi AC nel tempo. MAHE indica modulazioni sinusoidale, trapezoidale e rettangolare. La rapidità delle transizioni modifica carattere e rumorosità dell’arco; è distinta dalla frequenza degli impulsi e dal bilanciamento AC."
-  },
-  "use": {
-   "de": "Abstimmung des Lichtbogens auf Fugenform, gewünschte Nahtbreite und persönliche Führungsweise bei AC-Schweissaufgaben.",
-   "fr": "Adaptation de l’arc à la géométrie du joint, à la largeur recherchée et à la conduite de l’opérateur lors du soudage AC.",
-   "it": "Adattamento dell’arco alla geometria del giunto, alla larghezza desiderata e alla conduzione dell’operatore nelle lavorazioni AC."
-  },
-  "setup": {
-   "de": "Verfügbare Formen am Bedienpanel prüfen und jeweils nur eine Einstellung verändern. Die Stromform ist kein Ersatz für die Wahl des passenden Strombereichs oder eine saubere Aluminiumoberfläche.",
-   "fr": "Vérifier les formes disponibles sur le panneau et modifier un réglage à la fois. La forme d’onde ne remplace ni le choix de la plage de courant ni la propreté de la surface en aluminium.",
-   "it": "Verificare le forme disponibili sul pannello e modificare una regolazione alla volta. La forma d’onda non sostituisce la scelta del campo di corrente né la pulizia della superficie in alluminio."
-  },
-  "products": [
-   "omega-ax",
-   "hypertig-ax"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-omega",
-   "mahe-hypertig-ax"
-  ]
- },
- {
-  "id": "mix-tig",
-  "group": "tig",
-  "ic": "mixtig",
-  "n": {
-   "de": "Mix TIG · AC- und DC-Abschnitte kombinieren",
-   "fr": "Mix TIG · combiner des séquences AC et DC",
-   "it": "Mix TIG · combinare sequenze AC e DC"
-  },
-  "d": {
-   "de": "Automatischer Wechsel zwischen AC- und DC-Abschnitten beim WIG-Schweissen.",
-   "fr": "Alternance automatique de séquences AC et DC en soudage TIG.",
-   "it": "Alternanza automatica di sequenze AC e DC nella saldatura TIG."
-  },
-  "principle": {
-   "de": "Mix TIG kombiniert AC-Abschnitte mit DC-Abschnitten. Das verbindet die Reinigungswirkung der AC-Phase mit einem anders geführten Energieeintrag während der DC-Phase. MAHE nennt diesen Modus insbesondere für Aluminium in Zwangslagen.",
-   "fr": "Mix TIG combine des séquences AC et DC. Il associe l’action de nettoyage de la séquence AC à une gestion différente de l’énergie pendant la séquence DC. MAHE cite notamment l’aluminium en position difficile.",
-   "it": "Mix TIG combina sequenze AC e DC. Associa l’azione di pulizia della sequenza AC a una diversa gestione dell’energia durante quella DC. MAHE indica in particolare l’alluminio in posizioni difficili."
-  },
-  "use": {
-   "de": "Aluminiumaufgaben, bei denen das Zusammenspiel von Reinigungswirkung, Badkontrolle und Wärmeeintrag angepasst werden soll.",
-   "fr": "Travaux sur aluminium nécessitant d’adapter l’équilibre entre nettoyage, maîtrise du bain et apport thermique.",
-   "it": "Lavori sull’alluminio che richiedono di adattare l’equilibrio fra pulizia, controllo del bagno e apporto termico."
-  },
-  "setup": {
-   "de": "AC/DC-Anteile und deren zeitliche Abstimmung richten sich nach dem verfügbaren Programm. Mix TIG ist nicht dasselbe wie AC-Balance innerhalb einer einzelnen AC-Periode und setzt eine entsprechend ausgerüstete AC/DC-Quelle voraus.",
-   "fr": "Les proportions AC/DC et leur rythme dépendent du programme disponible. Mix TIG n’est pas la balance au sein d’une seule période AC et nécessite une source AC/DC équipée de cette fonction.",
-   "it": "Le proporzioni AC/DC e il loro ritmo dipendono dal programma disponibile. Mix TIG non è il bilanciamento all’interno di un singolo periodo AC e richiede un generatore AC/DC dotato di questa funzione."
-  },
-  "products": [
-   "omega-ax",
-   "hypertig-ax"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-omega",
-   "mahe-hypertig-ax"
-  ]
- },
- {
-  "id": "hyperspot",
-  "group": "tig",
-  "ic": "hyperspot",
-  "n": {
-   "de": "HyperSpot und ActiveSpot · gezielt heften",
-   "fr": "HyperSpot et ActiveSpot · pointer avec précision",
-   "it": "HyperSpot e ActiveSpot · puntare con precisione"
-  },
-  "d": {
-   "de": "Punkt- und Heftfunktionen unterstützen wiederkehrende kurze Schweissungen.",
-   "fr": "Des fonctions de pointage facilitent les soudures courtes répétitives.",
-   "it": "Le funzioni di puntatura facilitano saldature brevi e ripetitive."
-  },
-  "principle": {
-   "de": "HyperSpot ist die MAHE-Funktion für punktuelle WIG-Schweissungen. ActiveSpot wird bei HyperTIG AX und DX zusätzlich als schnelle Heftfunktion aufgeführt. Mit definierten Einstellungen lassen sich Bauteile für die anschliessende Naht positionieren; die beiden Funktionen werden am jeweiligen Panel unterschieden.",
-   "fr": "HyperSpot est la fonction MAHE de soudage TIG ponctuel. ActiveSpot est également annoncé sur HyperTIG AX et DX comme fonction de pointage rapide. Des réglages définis aident à positionner les pièces avant le cordon final ; les deux fonctions se distinguent sur le panneau concerné.",
-   "it": "HyperSpot è la funzione MAHE per saldature TIG puntuali. ActiveSpot è indicata anche su HyperTIG AX e DX come funzione di puntatura rapida. Regolazioni definite aiutano a posizionare i pezzi prima del cordone finale; le due funzioni vanno distinte sul relativo pannello."
-  },
-  "use": {
-   "de": "Heftstellen an Blechen, Baugruppen und wiederkehrenden Verbindungen, bei denen eine gleichmässige Punktfolge wichtig ist.",
-   "fr": "Points de maintien sur tôles, sous-ensembles et assemblages répétitifs pour lesquels une succession régulière de points est utile.",
-   "it": "Punti di fissaggio su lamiere, sottoassiemi e giunti ripetitivi nei quali è utile una successione regolare dei punti."
-  },
-  "setup": {
-   "de": "Strom, Punktdauer und Abkühlzeit auf Werkstoff und Fügespalt abstimmen. Gasvor- und Gasnachströmung sind auch beim Heften relevant. Diese WIG-Funktionen sind kein Widerstandspunktschweissen mit Zangenelektroden.",
-   "fr": "Adapter courant, durée du point et refroidissement au matériau et au jeu. Le pré-gaz et le post-gaz restent importants pendant le pointage. Ces fonctions TIG ne sont pas du soudage par résistance à électrodes de pince.",
-   "it": "Adattare corrente, durata del punto e raffreddamento a materiale e gioco. Pre-gas e post-gas restano importanti anche durante la puntatura. Queste funzioni TIG non sono saldatura a resistenza con elettrodi a pinza."
-  },
-  "products": [
-   "beta-dx",
-   "omega-ax",
-   "hypertig-ax",
-   "hypertig-dx"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-hypertig-ax",
-   "mahe-hypertig-dx"
-  ]
- },
- {
-  "id": "activeboost",
-  "group": "assist",
-  "ic": "boost",
-  "n": {
-   "de": "ActiveBoost · Leistungsreserve richtig einordnen",
-   "fr": "ActiveBoost · comprendre la réserve de puissance",
-   "it": "ActiveBoost · comprendere la riserva di potenza"
-  },
-  "d": {
-   "de": "Unterstützende Gerätefunktion, kein eigener Puls- oder Schweissprozess.",
-   "fr": "Fonction d’assistance de l’appareil, pas un procédé de soudage ou de pulsation distinct.",
-   "it": "Funzione di supporto dell’apparecchio, non un processo di saldatura o pulsazione autonomo."
-  },
-  "principle": {
-   "de": "MAHE beschreibt ActiveBoost als zuschaltbare Leistungsreserve im Zusammenhang mit der verfügbaren Netzleistung und der Absicherung. Die Funktion betrifft die Leistungsbereitstellung der Stromquelle und ist von Lichtbogenprogrammen wie LF-Puls, HF-Puls oder Mix TIG zu unterscheiden.",
-   "fr": "MAHE présente ActiveBoost comme une réserve de puissance activable liée à l’alimentation disponible et à sa protection. La fonction concerne la puissance fournie par la source et se distingue des programmes d’arc comme le pulsé LF, le pulsé HF ou Mix TIG.",
-   "it": "MAHE presenta ActiveBoost come una riserva di potenza attivabile in relazione all’alimentazione disponibile e alla sua protezione. La funzione riguarda la potenza fornita dal generatore ed è distinta dai programmi d’arco come pulsato LF, pulsato HF o Mix TIG."
-  },
-  "use": {
-   "de": "Aufgaben mit zeitweise erhöhtem Leistungsbedarf an entsprechend ausgerüsteten Beta-DX- oder Omega-AX-Ausführungen.",
-   "fr": "Travaux demandant ponctuellement plus de puissance avec une version Beta DX ou Omega AX équipée en conséquence.",
-   "it": "Lavori con un fabbisogno temporaneamente maggiore di potenza su versioni Beta DX o Omega AX equipaggiate di conseguenza."
-  },
-  "setup": {
-   "de": "Netzanschluss, Absicherung, Zuleitung und Einschaltdauer nach den Geräteunterlagen auslegen. ActiveBoost erlaubt weder eine höhere Sicherung ohne Prüfung noch eine beliebig hohe Dauerleistung.",
-   "fr": "Dimensionner alimentation, protection, câble et facteur de marche selon la documentation de l’appareil. ActiveBoost n’autorise ni à augmenter la protection sans vérification ni à demander une puissance continue illimitée.",
-   "it": "Dimensionare alimentazione, protezione, cavo e fattore di servizio secondo la documentazione dell’apparecchio. ActiveBoost non autorizza ad aumentare la protezione senza verifica né a richiedere una potenza continua illimitata."
-  },
-  "products": [
-   "beta-dx",
-   "omega-ax"
-  ],
-  "sources": [
-   "mahe-processes",
-   "mahe-beta",
-   "mahe-omega"
-  ]
- }
+  {
+    "id": "mis",
+    "group": "mig",
+    "ic": "mis",
+    "n": {
+      "de": "MIS · geregelter Standardlichtbogen",
+      "fr": "MIS · arc standard régulé",
+      "it": "MIS · arco standard regolato",
+      "en": "MIS · controlled standard arc"
+    },
+    "d": {
+      "de": "Spritzerarmer MIG/MAG-Lichtbogen für den Werkstattalltag.",
+      "fr": "Arc MIG/MAG à faibles projections pour les travaux courants en atelier.",
+      "it": "Arco MIG/MAG a spruzzi ridotti per il lavoro quotidiano in officina.",
+      "en": "Low-spatter MIG/MAG arc for everyday workshop use."
+    },
+    "principle": {
+      "de": "MIS steht bei MAHE für Multi-Induktion-System. Die Regelung beeinflusst das Lichtbogenverhalten und den Werkstoffübergang, um Spritzer und anschliessende Reinigungsarbeit zu reduzieren. MIS ist eine MIG/MAG-Kennlinie; es ist weder ein WIG-Verfahren noch automatisch ein Pulsprogramm.",
+      "fr": "Chez MAHE, MIS signifie Multi-Induktion-System. La régulation agit sur le comportement de l’arc et le transfert du métal afin de limiter les projections et le nettoyage après soudage. Il s’agit d’une caractéristique MIG/MAG, pas d’un procédé TIG ni nécessairement d’un programme pulsé.",
+      "it": "Per MAHE, MIS significa Multi-Induktion-System. La regolazione interviene sul comportamento dell’arco e sul trasferimento del metallo per limitare gli spruzzi e la pulizia successiva. È una caratteristica MIG/MAG: non è un processo TIG e non indica automaticamente un programma pulsato.",
+      "en": "MAHE uses MIS to mean Multi-Induction System. The control system influences arc behaviour and metal transfer to reduce spatter and subsequent cleaning. MIS is a MIG/MAG characteristic; it is neither a TIG process nor automatically a pulse program."
+    },
+    "use": {
+      "de": "Allgemeine Fertigung, Reparaturen und Montage, wenn ein ruhig führbarer Lichtbogen und überschaubare Nacharbeit gefragt sind. Die passende Kennlinie richtet sich nach Draht, Gas und Werkstoff.",
+      "fr": "Fabrication courante, réparation et montage lorsque l’on recherche un arc facile à conduire et moins de reprises. La caractéristique doit correspondre au fil, au gaz et au matériau.",
+      "it": "Fabbricazione generale, riparazione e montaggio quando servono un arco facile da condurre e meno rilavorazioni. La caratteristica va scelta in base a filo, gas e materiale.",
+      "en": "General fabrication, repairs and site work where a manageable arc and limited finishing work are required. The appropriate characteristic depends on the wire, gas and material."
+    },
+    "setup": {
+      "de": "Drahtvorschub, Lichtbogenlänge und Dynamik an der Probe abstimmen. Saubere Kontaktflächen, ein gleichmässiger Drahttransport und die richtige Gasabdeckung bleiben entscheidend; auch ein geregelter Lichtbogen ist nicht unter allen Bedingungen spritzerfrei.",
+      "fr": "Ajuster sur une éprouvette la vitesse de fil, la longueur d’arc et la dynamique. Des surfaces propres, un dévidage régulier et une protection gazeuse adaptée restent essentiels ; la régulation ne supprime pas les projections dans toutes les conditions.",
+      "it": "Regolare su un provino velocità del filo, lunghezza dell’arco e dinamica. Superfici pulite, avanzamento regolare del filo e protezione gassosa adeguata restano fondamentali; la regolazione non elimina gli spruzzi in ogni condizione.",
+      "en": "Adjust wire feed, arc length and dynamics on a test piece. Clean contact surfaces, consistent wire feeding and suitable gas coverage remain essential; even a controlled arc is not spatter-free under all conditions."
+    },
+    "products": [
+      "hypermig-x",
+      "mms",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "mig-puls",
+    "group": "mig",
+    "ic": "puls",
+    "n": {
+      "de": "MIG/MAG-Puls · kontrollierter Tropfenübergang",
+      "fr": "MIG/MAG pulsé · transfert contrôlé des gouttes",
+      "it": "MIG/MAG pulsato · trasferimento controllato delle gocce",
+      "en": "MIG/MAG pulse · controlled droplet transfer"
+    },
+    "d": {
+      "de": "Grundstrom und Stromimpulse steuern den Übergang des abschmelzenden Drahtes.",
+      "fr": "Courant de base et impulsions pilotent le transfert du fil en fusion.",
+      "it": "Corrente di base e impulsi controllano il trasferimento del filo fuso.",
+      "en": "Background current and current pulses control transfer of the melting wire."
+    },
+    "principle": {
+      "de": "Ein Grundstrom hält den Lichtbogen aufrecht, während kurze Stromspitzen die Tropfenablösung unterstützen. Bei passender Abstimmung ist ein regelmässiger, kurzschlussarmer Übergang möglich. Die Stromquelle stimmt Impulsform und Drahtvorschub über die gewählte Synergielinie aufeinander ab.",
+      "fr": "Un courant de base maintient l’arc, tandis que de brèves pointes de courant favorisent le détachement des gouttes. Avec un réglage adapté, le transfert peut devenir régulier et limiter les courts-circuits. La source coordonne la forme des impulsions et le dévidage selon la courbe synergique choisie.",
+      "it": "Una corrente di base mantiene l’arco, mentre brevi picchi favoriscono il distacco delle gocce. Con una regolazione adeguata si ottiene un trasferimento regolare con pochi cortocircuiti. Il generatore coordina forma degli impulsi e avanzamento del filo mediante la curva sinergica selezionata.",
+      "en": "A background current maintains the arc while short current peaks assist droplet detachment. With suitable adjustment, regular transfer with few short circuits is possible. The power source coordinates pulse shape and wire feed through the selected synergic characteristic."
+    },
+    "use": {
+      "de": "Aluminium, nichtrostende Stähle und Stahl mit passendem Draht-/Gasprogramm. Interessant bei wechselnden Positionen und wenn weniger Spritzer als beim konventionellen Übergang gewünscht sind.",
+      "fr": "Aluminium, aciers inoxydables et acier avec un programme fil/gaz approprié. Intéressant pour différentes positions et lorsque l’on souhaite réduire les projections par rapport au transfert conventionnel.",
+      "it": "Alluminio, acciai inossidabili e acciaio con un programma filo/gas appropriato. Utile in diverse posizioni e quando si vogliono ridurre gli spruzzi rispetto al trasferimento convenzionale.",
+      "en": "Aluminium, stainless steel and steel with an appropriate wire/gas program. Useful for varying welding positions and where less spatter than conventional transfer is required."
+    },
+    "setup": {
+      "de": "Zuerst Werkstoff, Drahtdurchmesser und Schutzgas korrekt wählen, danach Drahtvorschub und Lichtbogenkorrektur einstellen. Eine Puls-Kennlinie ersetzt weder die Nahtvorbereitung noch die Prüfung von Einbrand und Flankenanbindung.",
+      "fr": "Sélectionner d’abord le matériau, le diamètre de fil et le gaz, puis régler le dévidage et la correction de longueur d’arc. Une courbe pulsée ne remplace ni la préparation du joint ni le contrôle de la pénétration et de la fusion des flancs.",
+      "it": "Selezionare prima materiale, diametro del filo e gas, quindi impostare avanzamento e correzione della lunghezza dell’arco. Una curva pulsata non sostituisce la preparazione del giunto né la verifica della penetrazione e della fusione dei lembi.",
+      "en": "First select the correct material, wire diameter and shielding gas, then adjust wire feed and arc correction. A pulse characteristic does not replace joint preparation or checks of penetration and sidewall fusion."
+    },
+    "products": [
+      "hypermig-x",
+      "mms",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "twi-pulse",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "doppelpuls",
+    "group": "mig",
+    "ic": "doppelpuls",
+    "n": {
+      "de": "Doppelpuls · zwei überlagerte Rhythmen",
+      "fr": "Double pulsation · deux rythmes superposés",
+      "it": "Doppio impulso · due ritmi sovrapposti",
+      "en": "Double pulse · two superimposed rhythms"
+    },
+    "d": {
+      "de": "Ein langsamer Leistungswechsel überlagert den eigentlichen MIG/MAG-Puls.",
+      "fr": "Une modulation lente de puissance se superpose aux impulsions MIG/MAG.",
+      "it": "Una modulazione lenta della potenza si sovrappone agli impulsi MIG/MAG.",
+      "en": "A slower power variation is superimposed on the MIG/MAG pulse."
+    },
+    "principle": {
+      "de": "Zusätzlich zum schnellen Impuls für den Tropfenübergang wechseln Phasen mit höherer und niedrigerer Leistung. Dieser langsamere Rhythmus beeinflusst Badbewegung und Nahtschuppung. So lässt sich eine gleichmässige, WIG-ähnliche Oberfläche erzielen, während weiterhin mit abschmelzendem Draht geschweisst wird.",
+      "fr": "Aux impulsions rapides qui commandent le transfert s’ajoute une alternance de phases de puissance plus élevée et plus faible. Ce rythme plus lent agit sur le bain et les ondulations du cordon. Il permet un aspect proche du TIG tout en conservant un fil-électrode fusible.",
+      "it": "Agli impulsi rapidi che regolano il trasferimento si aggiunge l’alternanza tra fasi di potenza maggiore e minore. Il ritmo più lento modifica il bagno e la regolarità delle ondulazioni. Il cordone può assumere un aspetto simile al TIG, pur mantenendo un filo-elettrodo fusibile.",
+      "en": "In addition to the fast pulses controlling droplet transfer, phases of higher and lower power alternate. This slower rhythm affects weld pool movement and the ripple pattern. It can produce a regular, TIG-like surface while still welding with a consumable wire electrode."
+    },
+    "use": {
+      "de": "Besonders für sichtbare Aluminiumnähte und wiederkehrende Bauteile, bei denen ein gleichmässiges Nahtbild wichtig ist. Auch hier bestimmt die freigegebene Kennlinie, welche Werkstoffe und Drähte möglich sind.",
+      "fr": "Particulièrement intéressant pour les cordons visibles sur aluminium et les pièces répétitives exigeant un aspect régulier. Les matériaux et fils utilisables restent définis par la courbe disponible.",
+      "it": "Particolarmente interessante per cordoni a vista sull’alluminio e pezzi ripetitivi che richiedono un aspetto uniforme. Materiali e fili utilizzabili dipendono comunque dalla curva disponibile.",
+      "en": "Particularly for visible aluminium welds and recurring components where a consistent weld appearance matters. The approved characteristic still determines which materials and wires are supported."
+    },
+    "setup": {
+      "de": "Doppelpulsfrequenz, Leistungsunterschied und Schweissgeschwindigkeit gemeinsam abstimmen. Zu langsames Führen kann trotz Puls viel Wärme einbringen. Eine regelmässige Schuppung allein belegt weder ausreichenden Einbrand noch eine fehlerfreie Naht.",
+      "fr": "Accorder la fréquence de double pulsation, l’écart de puissance et la vitesse d’avance. Un déplacement trop lent peut apporter beaucoup de chaleur malgré la pulsation. Des ondulations régulières ne prouvent à elles seules ni une pénétration suffisante ni l’absence de défauts.",
+      "it": "Coordinare frequenza del doppio impulso, differenza di potenza e velocità di avanzamento. Un movimento troppo lento può apportare molto calore anche in modalità pulsata. Ondulazioni regolari non dimostrano da sole una penetrazione sufficiente né l’assenza di difetti.",
+      "en": "Coordinate double-pulse frequency, power difference and travel speed. Moving too slowly can introduce considerable heat despite pulsing. A regular ripple pattern alone does not prove sufficient penetration or a defect-free weld."
+    },
+    "products": [
+      "hypermig-x",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "hyperpuls",
+    "group": "mig",
+    "ic": "hyperpuls",
+    "n": {
+      "de": "HyperPuls · dynamischer MAHE-Pulslichtbogen",
+      "fr": "HyperPuls · arc pulsé dynamique MAHE",
+      "it": "HyperPuls · arco pulsato dinamico MAHE",
+      "en": "HyperPuls · MAHE dynamic pulsed arc"
+    },
+    "d": {
+      "de": "MAHE-Prozess für produktives Pulsschweissen mit kontrollierbarem Lichtbogen.",
+      "fr": "Procédé MAHE de soudage pulsé productif avec maîtrise de l’arc.",
+      "it": "Processo MAHE per una saldatura pulsata produttiva con controllo dell’arco.",
+      "en": "MAHE process for productive pulse welding with a controllable arc."
+    },
+    "principle": {
+      "de": "HyperPuls ist eine herstellerspezifische MIG/MAG-Pulsregelung. MAHE beschreibt den Prozess für zügiges Schweissen und Mehrlagenaufgaben. Entscheidend ist, Abschmelzleistung und Schweissgeschwindigkeit so aufeinander abzustimmen, dass die geforderte Nahtgeometrie und Flankenanbindung erreicht werden.",
+      "fr": "HyperPuls est une régulation pulsée MIG/MAG propre à MAHE. Le fabricant la présente pour une avance soutenue et les applications multipasses. Il faut coordonner le taux de dépôt et la vitesse d’avance pour obtenir la géométrie du cordon et la fusion des flancs recherchées.",
+      "it": "HyperPuls è una regolazione pulsata MIG/MAG specifica di MAHE. Il costruttore la presenta per un avanzamento sostenuto e per applicazioni multipassata. Occorre coordinare tasso di deposito e velocità di avanzamento per ottenere la geometria del cordone e la fusione dei lembi richieste.",
+      "en": "HyperPuls is a manufacturer-specific MIG/MAG pulse control process. MAHE describes it for fast welding and multipass work. Deposition rate and travel speed must be matched to achieve the required weld geometry and sidewall fusion."
+    },
+    "use": {
+      "de": "Fertigungsnähte und mehrlagige Verbindungen mit geeigneter Kennlinie, insbesondere wenn die Prozessführung gegenüber einem normalen Pulsprogramm weiter abgestimmt werden soll.",
+      "fr": "Cordons de fabrication et assemblages multipasses avec une courbe adaptée, notamment lorsque l’on souhaite affiner la conduite du procédé au-delà d’un programme pulsé courant.",
+      "it": "Cordoni di produzione e giunti multipassata con una curva adatta, soprattutto quando si vuole affinare la conduzione del processo rispetto a un programma pulsato ordinario.",
+      "en": "Production welds and multipass joints with a suitable characteristic, particularly where process control needs further adjustment beyond a standard pulse program."
+    },
+    "setup": {
+      "de": "Die tatsächliche Geschwindigkeit, der Verzug und die Zwischenlagentemperatur hängen vom Bauteil ab. HyperPuls und Doppelpuls sind unterschiedliche Funktionen; die genaue Kombination und Verfügbarkeit wird am Bedienpanel geprüft.",
+      "fr": "La vitesse obtenue, la déformation et la température entre passes dépendent de la pièce. HyperPuls et double pulsation sont des fonctions différentes ; leur combinaison et leur disponibilité se vérifient sur le panneau de commande.",
+      "it": "Velocità ottenibile, deformazione e temperatura tra le passate dipendono dal pezzo. HyperPuls e doppio impulso sono funzioni differenti; combinazione e disponibilità vanno verificate sul pannello di comando.",
+      "en": "Actual speed, distortion and interpass temperature depend on the component. HyperPuls and double pulse are different functions; the exact combination and availability must be checked at the control panel."
+    },
+    "products": [
+      "hypermig-x",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "hyperspeedpuls",
+    "group": "mig",
+    "ic": null,
+    "n": {
+      "de": "HyperSpeedPuls · Pulsfunktion für die Fertigung",
+      "fr": "HyperSpeedPuls · fonction pulsée pour la production",
+      "it": "HyperSpeedPuls · funzione pulsata per la produzione",
+      "en": "HyperSpeedPuls · pulse function for production"
+    },
+    "d": {
+      "de": "Im HyperMIG-Programm genannte Pulsfunktion für die konkrete Produktionsaufgabe.",
+      "fr": "Fonction pulsée annoncée dans la gamme HyperMIG, à définir pour l’application.",
+      "it": "Funzione pulsata indicata nella gamma HyperMIG, da definire per l’applicazione.",
+      "en": "A pulse function in the HyperMIG range for the specific production task."
+    },
+    "principle": {
+      "de": "MAHE führt HyperSpeedPuls in der Geräteausstattung der HyperMIG-X-Reihe auf. Für die Auswahl genügt der Funktionsname allein nicht: Benötigt werden die tatsächlich vorhandene Kennlinie, der Werkstoff und die vorgesehene Draht-/Gaskombination. Daraus wird der passende Arbeitspunkt bestimmt.",
+      "fr": "MAHE mentionne HyperSpeedPuls dans l’équipement de la gamme HyperMIG X. Le nom de la fonction ne suffit pas pour choisir : il faut connaître la courbe réellement installée, le matériau et la combinaison fil/gaz prévue. Ces éléments permettent de définir le point de fonctionnement.",
+      "it": "MAHE cita HyperSpeedPuls nell’equipaggiamento della gamma HyperMIG X. Il nome della funzione non basta per la scelta: servono la curva realmente installata, il materiale e la combinazione filo/gas prevista. Questi elementi consentono di definire il punto di lavoro.",
+      "en": "MAHE lists HyperSpeedPuls in the equipment features of the HyperMIG X range. The function name alone is insufficient for selection: the available characteristic, material and intended wire/gas combination are needed to establish the appropriate operating point."
+    },
+    "use": {
+      "de": "Wiederkehrende Produktionsnähte, für die eine passende HyperMIG-Pulslösung geprüft werden soll. Ein Versuch am Originalwerkstoff zeigt, ob Geschwindigkeit, Nahtform und Spritzerverhalten zur Aufgabe passen.",
+      "fr": "Soudures répétitives de production pour lesquelles une solution pulsée HyperMIG est envisagée. Un essai sur le matériau réel permet de vérifier vitesse, forme du cordon et projections.",
+      "it": "Saldature ripetitive di produzione per le quali si valuta una soluzione pulsata HyperMIG. Una prova sul materiale reale permette di verificare velocità, forma del cordone e spruzzi.",
+      "en": "Recurring production welds for which a suitable HyperMIG pulse solution is to be assessed. A trial on the actual material shows whether speed, weld shape and spatter behaviour suit the task."
+    },
+    "setup": {
+      "de": "Bedienpanel, Softwarestand und freigeschaltetes Programm vor der Auswahl abgleichen. Im Versuch werden Schweissgeschwindigkeit, Nahtgeometrie, Nacharbeit und Bauteiltemperatur gemeinsam verglichen. Erst dieser Vergleich zeigt den Nutzen für die konkrete Fertigung.",
+      "fr": "Vérifier panneau, version logicielle et programme activé avant de choisir. Lors de l’essai, comparer ensemble vitesse, géométrie du cordon, reprises et température de la pièce. Ce bilan permet de mesurer l’intérêt pour la fabrication concernée.",
+      "it": "Verificare pannello, versione software e programma attivato prima della scelta. Durante la prova confrontare insieme velocità, geometria del cordone, rilavorazioni e temperatura del pezzo. Questo confronto permette di valutare l’utilità per la produzione concreta.",
+      "en": "Check the panel, software version and activated program before selection. Compare travel speed, weld geometry, finishing work and component temperature together during the trial. This establishes the benefit for the specific production process."
+    },
+    "products": [
+      "hypermig-x",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "hyperforce",
+    "group": "mig",
+    "ic": null,
+    "n": {
+      "de": "HyperForce · Einbrand und Lichtbogendruck",
+      "fr": "HyperForce · pénétration et pression d’arc",
+      "it": "HyperForce · penetrazione e pressione dell’arco",
+      "en": "HyperForce · penetration and arc pressure"
+    },
+    "d": {
+      "de": "Konzentrierter MIG/MAG-Lichtbogen für Schweissaufgaben mit höherem Einbrandbedarf.",
+      "fr": "Arc MIG/MAG concentré pour les assemblages demandant de la pénétration.",
+      "it": "Arco MIG/MAG concentrato per giunti che richiedono penetrazione.",
+      "en": "Concentrated MIG/MAG arc for welding tasks requiring greater penetration."
+    },
+    "principle": {
+      "de": "HyperForce richtet den Prozess auf einen druckvollen Lichtbogen und tiefen Einbrand aus. Das ist vor allem dort relevant, wo die Nahtflanken zuverlässig aufgeschmolzen werden müssen. Ob sich dadurch Nahtvorbereitung oder Lagenaufbau ändern lassen, wird an der konkreten Verbindung erprobt.",
+      "fr": "HyperForce privilégie un arc puissant et une pénétration profonde, notamment lorsque la fusion des flancs est déterminante. Toute modification de la préparation du joint ou du nombre de passes doit être validée sur l’assemblage concerné.",
+      "it": "HyperForce privilegia un arco energico e una penetrazione profonda, soprattutto quando è determinante fondere correttamente i lembi. Eventuali modifiche alla preparazione del giunto o al numero di passate devono essere validate sul collegamento concreto.",
+      "en": "HyperForce focuses on a forceful arc and deep penetration. This is particularly relevant where reliable melting of the joint sidewalls is required. Whether joint preparation or the pass sequence can be changed must be established on the specific joint."
+    },
+    "use": {
+      "de": "Bauteile mit höherem Leistungsbedarf und anspruchsvolle Fugen, sofern Werkstoff, Position und Kennlinie dazu passen. Der Prozess kann eine Alternative zu einer weniger konzentrierten Lichtbogeneinstellung sein.",
+      "fr": "Pièces exigeant davantage de puissance et joints difficiles, si le matériau, la position et la courbe sont compatibles. Le procédé peut remplacer un réglage d’arc moins concentré.",
+      "it": "Pezzi con maggiore fabbisogno di potenza e giunti impegnativi, se materiale, posizione e curva sono compatibili. Il processo può essere un’alternativa a una regolazione dell’arco meno concentrata.",
+      "en": "Components requiring higher power and demanding joints, where material, position and characteristic are suitable. The process can provide an alternative to a less concentrated arc setting."
+    },
+    "setup": {
+      "de": "Brennerwinkel, Stick-out, Schweissgeschwindigkeit und Fugenöffnung beeinflussen das Ergebnis deutlich. Tiefer Einbrand ist kein Ersatz für einen nachgewiesenen Lagenaufbau; Durchbrand und zu starke Wärmeeinbringung bleiben zu beurteilen.",
+      "fr": "Angle de torche, longueur libre du fil, vitesse et ouverture du joint influencent fortement le résultat. Une pénétration élevée ne remplace pas un séquencement de passes validé ; le risque de perçage et l’apport thermique restent à évaluer.",
+      "it": "Angolo della torcia, tratto libero del filo, velocità e apertura del giunto incidono molto sul risultato. Una forte penetrazione non sostituisce una sequenza di passate validata; vanno comunque valutati sfondamento e apporto termico.",
+      "en": "Torch angle, stick-out, travel speed and joint opening strongly influence the result. Deep penetration does not replace a qualified pass sequence; burn-through and excessive heat input must still be assessed."
+    },
+    "products": [
+      "hypermig-x",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "hypercold",
+    "group": "mig",
+    "ic": "coldroot",
+    "n": {
+      "de": "HyperCold · Wärme gezielt begrenzen",
+      "fr": "HyperCold · maîtriser l’apport thermique",
+      "it": "HyperCold · contenere l’apporto termico",
+      "en": "HyperCold · controlled heat input"
+    },
+    "d": {
+      "de": "MAHE-Kennlinie für wärmeempfindliche Bauteile und Spaltüberbrückung.",
+      "fr": "Caractéristique MAHE pour les pièces sensibles à la chaleur et le pontage des jeux.",
+      "it": "Caratteristica MAHE per pezzi sensibili al calore e compensazione del gioco.",
+      "en": "MAHE characteristic for heat-sensitive components and gap bridging."
+    },
+    "principle": {
+      "de": "HyperCold ist auf eine kontrollierte Wärmeeinbringung und ein gut führbares Schmelzbad ausgelegt. MAHE nennt insbesondere spaltüberbrückende Aufgaben und Wurzellagen. Der Nutzen entsteht durch die passende Kombination aus Kennlinie, Leistung und Brennerbewegung.",
+      "fr": "HyperCold vise un apport thermique maîtrisé et un bain facile à conduire. MAHE cite notamment le pontage des jeux et les passes de racine. Le résultat dépend de l’association de la courbe, de la puissance et du mouvement de la torche.",
+      "it": "HyperCold mira a un apporto termico controllato e a un bagno facile da gestire. MAHE indica in particolare la compensazione del gioco e le passate di radice. Il risultato dipende dall’abbinamento tra curva, potenza e movimento della torcia.",
+      "en": "HyperCold is designed for controlled heat input and a manageable weld pool. MAHE particularly identifies gap-bridging tasks and root passes. Its benefit comes from the appropriate combination of characteristic, power and torch movement."
+    },
+    "use": {
+      "de": "Dünnere oder verzugsempfindliche Konstruktionen sowie Verbindungen mit kontrolliertem Fügespalt. Die Eignung wird an Material, Nahtform und Blechdicke geprüft.",
+      "fr": "Constructions minces ou sensibles à la déformation et assemblages présentant un jeu maîtrisé. L’aptitude se vérifie selon le matériau, la forme du joint et l’épaisseur.",
+      "it": "Costruzioni sottili o sensibili alla deformazione e giunti con gioco controllato. L’idoneità va verificata in base a materiale, forma del giunto e spessore.",
+      "en": "Thinner or distortion-sensitive structures and joints with a controlled fit-up gap. Suitability is assessed against material, joint shape and thickness."
+    },
+    "setup": {
+      "de": "Weniger Wärme darf nicht zu fehlender Flankenanbindung führen. Leistung und Geschwindigkeit so abstimmen, dass beide Bauteilkanten sicher aufschmelzen. Eine kalt geführte Einstellung garantiert weder verzugsfreie Teile noch unbegrenzte Spaltüberbrückung.",
+      "fr": "Réduire la chaleur ne doit pas entraîner un manque de fusion. Régler puissance et vitesse pour fondre correctement les deux bords. Une conduite à faible apport ne garantit ni l’absence de déformation ni le franchissement de jeux sans limite.",
+      "it": "Ridurre il calore non deve provocare mancanza di fusione. Regolare potenza e velocità per fondere correttamente entrambi i bordi. Una conduzione a basso apporto non garantisce assenza di deformazioni né compensazione illimitata del gioco.",
+      "en": "Reduced heat input must not result in a lack of sidewall fusion. Adjust power and speed so that both component edges melt reliably. A cooler setting guarantees neither distortion-free parts nor unlimited gap bridging."
+    },
+    "products": [
+      "hypermig-x",
+      "mms",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "hyperroot",
+    "group": "mig",
+    "ic": "coldroot",
+    "n": {
+      "de": "HyperRoot · die Wurzellage kontrollieren",
+      "fr": "HyperRoot · contrôler la passe de racine",
+      "it": "HyperRoot · controllare la passata di radice",
+      "en": "HyperRoot · controlling the root pass"
+    },
+    "d": {
+      "de": "Aufgabenbezogene MIG/MAG-Regelung für den Nahtgrund.",
+      "fr": "Régulation MIG/MAG adaptée aux travaux en fond de joint.",
+      "it": "Regolazione MIG/MAG dedicata al fondo del giunto.",
+      "en": "Task-specific MIG/MAG control for the joint root."
+    },
+    "principle": {
+      "de": "Bei der Wurzellage müssen Nahtgrund und beide Flanken aufschmelzen, ohne dass das Bad unkontrolliert durchfällt. HyperRoot ist im MAHE-Programm Teil der Cold-/Root-Funktionen. Wurzelspalt, Steghöhe und erreichbare Brennerposition werden deshalb zusammen mit der Kennlinie betrachtet.",
+      "fr": "La passe de racine doit fondre le fond du joint et les deux flancs sans effondrement incontrôlé du bain. HyperRoot appartient aux fonctions Cold/Root du programme MAHE. Le jeu à la racine, le talon et l’accès de la torche doivent donc être considérés avec la courbe.",
+      "it": "La passata di radice deve fondere il fondo del giunto e i due lembi senza far collassare il bagno in modo incontrollato. HyperRoot appartiene alle funzioni Cold/Root del programma MAHE. Gioco di radice, spalla e accessibilità della torcia vanno quindi valutati insieme alla curva.",
+      "en": "In a root pass, the joint root and both sidewalls must melt without the pool falling through uncontrollably. HyperRoot is part of MAHE's Cold/Root functions. Root gap, root face thickness and accessible torch position are therefore considered together with the characteristic."
+    },
+    "use": {
+      "de": "Erste Lagen von geeigneten Stumpfverbindungen und Aufgaben mit wechselnder Zugänglichkeit. Ob eine Gegenlage, Badsicherung oder zusätzliche Wurzelschutzmassnahme nötig ist, bestimmt die Verbindung.",
+      "fr": "Premières passes de joints bout à bout appropriés et travaux à accessibilité variable. La nécessité d’une reprise envers, d’un support de bain ou d’une protection de racine dépend de l’assemblage.",
+      "it": "Prime passate di giunti di testa appropriati e lavori con accessibilità variabile. Necessità di una ripresa al rovescio, di un sostegno del bagno o di una protezione della radice dipendono dal giunto.",
+      "en": "First passes in suitable butt joints and tasks with varying access. The joint determines whether a reverse-side pass, backing or additional root protection is needed."
+    },
+    "setup": {
+      "de": "Den zulässigen Spaltbereich an einer Probe festlegen und die Nahtunterseite beurteilen. HyperRoot ersetzt keine geforderte Formierung oder Nahtprüfung. Das Bedienpanel entscheidet, ob Root separat oder innerhalb einer kombinierten Funktion verfügbar ist.",
+      "fr": "Déterminer sur éprouvette la plage de jeu acceptable et examiner l’envers. HyperRoot ne remplace pas une protection envers ou un contrôle imposé. Le panneau détermine si Root est accessible séparément ou au sein d’une fonction combinée.",
+      "it": "Definire su un provino il campo di gioco accettabile ed esaminare il rovescio. HyperRoot non sostituisce una protezione al rovescio o un controllo richiesto. Il pannello determina se Root è disponibile separatamente o all’interno di una funzione combinata.",
+      "en": "Establish the permitted gap range on a test piece and assess the weld underside. HyperRoot does not replace required back purging or weld inspection. The panel determines whether Root is available separately or within a combined function."
+    },
+    "products": [
+      "hypermig-x",
+      "mms",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "hyperup",
+    "group": "mig",
+    "ic": "hyperup",
+    "n": {
+      "de": "HyperUP · vertikal aufwärts schweissen",
+      "fr": "HyperUP · souder en verticale montante",
+      "it": "HyperUP · saldare in verticale ascendente",
+      "en": "HyperUP · vertical-up welding"
+    },
+    "d": {
+      "de": "Wechsel von Heiss- und Kaltphasen für die Steignaht.",
+      "fr": "Alternance de phases chaudes et froides pour le soudage montant.",
+      "it": "Alternanza di fasi calde e fredde per la saldatura ascendente.",
+      "en": "Alternating hot and cool phases for vertical-up welds."
+    },
+    "principle": {
+      "de": "HyperUP wechselt automatisch zwischen einer leistungsstärkeren und einer kühleren Prozessphase. Das unterstützt den Aufbau und die Kontrolle des Bades beim Schweissen nach oben. MAHE beschreibt damit Steignähte mit geradliniger Führung statt der üblichen Pendelbewegung.",
+      "fr": "HyperUP alterne automatiquement une phase plus puissante et une phase plus froide. Cette alternance aide à former et à contrôler le bain en montant. MAHE présente ce fonctionnement pour une progression rectiligne plutôt qu’un balayage habituel.",
+      "it": "HyperUP alterna automaticamente una fase di maggiore potenza e una fase più fredda. L’alternanza aiuta a formare e controllare il bagno durante la progressione verso l’alto. MAHE descrive questa funzione per un avanzamento rettilineo anziché con la consueta oscillazione.",
+      "en": "HyperUP automatically alternates between a higher-power phase and a cooler process phase. This supports weld pool formation and control during upward welding. MAHE describes vertical-up welds using straight travel rather than the usual weaving movement."
+    },
+    "use": {
+      "de": "Vertikale Nähte, bei denen ein reproduzierbarer Badaufbau und eine gleichmässige Führung gesucht werden. Werkstoff und Kennlinie müssen für die vorgesehene Position geeignet sein.",
+      "fr": "Cordons verticaux pour lesquels on recherche une formation répétable du bain et une conduite régulière. Matériau et courbe doivent convenir à la position prévue.",
+      "it": "Cordoni verticali nei quali servono una formazione ripetibile del bagno e una conduzione regolare. Materiale e curva devono essere adatti alla posizione prevista.",
+      "en": "Vertical welds requiring repeatable pool formation and consistent torch movement. The material and characteristic must suit the intended position."
+    },
+    "setup": {
+      "de": "Phasenabstimmung, Nahtquerschnitt und Schweissgeschwindigkeit an einer Probe festlegen. Zu grosses Badvolumen kann auch mit HyperUP absacken. Die Funktion ist abhängig von Bedienpanel und gegebenenfalls freigeschaltetem Programm.",
+      "fr": "Définir sur éprouvette la coordination des phases, la section du cordon et la vitesse. Un bain trop volumineux peut s’affaisser même avec HyperUP. La fonction dépend du panneau et, le cas échéant, du programme activé.",
+      "it": "Definire su un provino coordinamento delle fasi, sezione del cordone e velocità. Un bagno troppo voluminoso può colare anche con HyperUP. La funzione dipende dal pannello e dall’eventuale programma attivato.",
+      "en": "Establish phase settings, weld cross-section and travel speed on a test piece. An excessively large pool can still sag with HyperUP. Availability depends on the panel and, where applicable, program activation."
+    },
+    "products": [
+      "hypermig-x",
+      "hypermig-twin"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypermig"
+    ]
+  },
+  {
+    "id": "triarc",
+    "group": "mig",
+    "ic": "triarc",
+    "n": {
+      "de": "TriArc · Cold, Root und Force kombiniert",
+      "fr": "TriArc · Cold, Root et Force combinés",
+      "it": "TriArc · Cold, Root e Force combinati",
+      "en": "TriArc · Cold, Root and Force combined"
+    },
+    "d": {
+      "de": "Dynamische Kennlinie mit leistungsabhängigem Lichtbogenverhalten.",
+      "fr": "Caractéristique dynamique dont le comportement varie avec la puissance.",
+      "it": "Caratteristica dinamica con comportamento legato alla potenza.",
+      "en": "Dynamic characteristic with power-dependent arc behaviour."
+    },
+    "principle": {
+      "de": "MAHE beschreibt TriArc als dynamischen Lichtbogen, der abhängig vom eingestellten Leistungsbereich Cold-, Root- oder Force-Verhalten nutzt. Die drei Namen bezeichnen unterschiedliche Schwerpunkte der Prozessführung, nicht drei gleichzeitig unabhängig arbeitende Lichtbögen.",
+      "fr": "MAHE décrit TriArc comme un arc dynamique utilisant un comportement Cold, Root ou Force selon la puissance réglée. Ces noms désignent des priorités de régulation différentes, pas trois arcs indépendants fonctionnant simultanément.",
+      "it": "MAHE descrive TriArc come un arco dinamico che adotta un comportamento Cold, Root o Force in funzione della potenza impostata. I tre nomi indicano diverse priorità della regolazione, non tre archi indipendenti che lavorano contemporaneamente.",
+      "en": "MAHE describes TriArc as a dynamic arc that uses Cold, Root or Force behaviour according to the selected power range. The three names refer to different priorities in process control, not three independent arcs operating simultaneously."
+    },
+    "use": {
+      "de": "Aufgaben, bei denen innerhalb der vorgesehenen Kennlinie verschiedene Leistungsbereiche genutzt werden. Zur Auswahl werden Bauteildicke, Nahtaufbau und gewünschtes Badverhalten gemeinsam betrachtet.",
+      "fr": "Travaux utilisant différents niveaux de puissance dans la caractéristique prévue. Le choix associe épaisseur, séquence des passes et comportement souhaité du bain.",
+      "it": "Lavori che utilizzano diversi livelli di potenza all’interno della caratteristica prevista. La scelta considera insieme spessore, sequenza delle passate e comportamento desiderato del bagno.",
+      "en": "Tasks using different power ranges within the intended characteristic. Component thickness, pass sequence and desired pool behaviour are considered together when selecting the process."
+    },
+    "setup": {
+      "de": "Der Funktionsumfang wird an der konkreten Stromquelle und ihrem Bedienpanel geprüft. Aus TriArc folgt weder eine automatische Erkennung der Bauteildicke noch eine pauschale Freigabe jeder Nahtaufgabe.",
+      "fr": "Vérifier le fonctionnement sur la source et le panneau concernés. TriArc n’implique ni une détection automatique de l’épaisseur ni une validation universelle de tous les assemblages.",
+      "it": "Verificare il funzionamento sul generatore e sul pannello interessati. TriArc non implica il riconoscimento automatico dello spessore né una validazione universale di tutti i giunti.",
+      "en": "The available functions are checked on the specific power source and panel. TriArc does not imply automatic thickness detection or blanket approval for every welding task."
+    },
+    "products": [
+      "hypermig-x"
+    ],
+    "sources": [
+      "mahe-processes"
+    ]
+  },
+  {
+    "id": "twinarc",
+    "group": "mig",
+    "ic": "coldroot",
+    "n": {
+      "de": "TwinArc · Cold und Root kombiniert",
+      "fr": "TwinArc · Cold et Root combinés",
+      "it": "TwinArc · Cold e Root combinati",
+      "en": "TwinArc · Cold and Root combined"
+    },
+    "d": {
+      "de": "Kombinierte Kennlinie für wärmekontrollierte Aufgaben und Wurzeln.",
+      "fr": "Caractéristique combinée pour maîtriser la chaleur et les passes de racine.",
+      "it": "Caratteristica combinata per controllare il calore e le passate di radice.",
+      "en": "Combined characteristic for heat-controlled tasks and root passes."
+    },
+    "principle": {
+      "de": "TwinArc verbindet nach MAHE Cold- und Root-Verhalten abhängig von der Leistungseinstellung. Es handelt sich um eine Regelungsfunktion für einen Lichtbogen. Die Bezeichnung ist nicht mit Tandemschweissen mit zwei gleichzeitig abschmelzenden Drahtelektroden gleichzusetzen.",
+      "fr": "Selon MAHE, TwinArc associe les comportements Cold et Root en fonction de la puissance réglée. C’est une fonction de régulation d’un arc ; elle ne doit pas être confondue avec le soudage tandem utilisant deux fils-électrodes fondant simultanément.",
+      "it": "Secondo MAHE, TwinArc associa i comportamenti Cold e Root in funzione della potenza impostata. È una funzione di regolazione di un arco; non va confusa con la saldatura tandem con due fili-elettrodo che fondono contemporaneamente.",
+      "en": "According to MAHE, TwinArc combines Cold and Root behaviour depending on the power setting. It is a control function for a single arc. The name must not be equated with tandem welding using two wire electrodes melting simultaneously."
+    },
+    "use": {
+      "de": "Verbindungen mit Fokus auf beherrschbaren Wärmeeintrag und die Ausbildung der Wurzellage. Der Einsatz wird über die verfügbare Cold-/Root-Kennlinie konkretisiert.",
+      "fr": "Assemblages privilégiant un apport thermique maîtrisé et la formation de la racine. L’utilisation se précise à partir de la courbe Cold/Root disponible.",
+      "it": "Giunti che richiedono un apporto termico gestibile e una corretta formazione della radice. L’impiego viene definito in base alla curva Cold/Root disponibile.",
+      "en": "Joints focused on manageable heat input and root pass formation. Application is defined through the available Cold/Root characteristic."
+    },
+    "setup": {
+      "de": "Spalt, Steg und Schweissgeschwindigkeit bleiben Einstellgrössen des Anwenders. TwinArc ist nicht gleichbedeutend mit der HyperMIG-TWIN-Geräteausführung mit zwei Drahtvorschubkoffern.",
+      "fr": "Jeu, talon et vitesse restent des paramètres à définir par l’opérateur. TwinArc ne désigne pas non plus la version d’appareil HyperMIG TWIN équipée de deux dévidoirs.",
+      "it": "Gioco, spalla e velocità restano parametri da definire a cura dell’operatore. TwinArc non identifica neppure la versione HyperMIG TWIN dotata di due trainafilo.",
+      "en": "Gap, root face and travel speed remain operator settings. TwinArc is not the same as the HyperMIG TWIN equipment version with two wire feeders."
+    },
+    "products": [
+      "hypermig-x"
+    ],
+    "sources": [
+      "mahe-processes"
+    ]
+  },
+  {
+    "id": "tig-lf-puls",
+    "group": "tig",
+    "ic": "lfpuls",
+    "n": {
+      "de": "WIG/TIG-LF-Puls · den Badrhythmus führen",
+      "fr": "TIG pulsé basse fréquence · rythmer le bain",
+      "it": "TIG pulsato a bassa frequenza · scandire il bagno",
+      "en": "TIG LF pulse · controlling the pool rhythm"
+    },
+    "d": {
+      "de": "Langsamere Stromwechsel machen Schmelz- und Entlastungsphasen gut erkennbar.",
+      "fr": "Des variations de courant plus lentes rendent les phases de fusion et de repos perceptibles.",
+      "it": "Variazioni di corrente più lente rendono riconoscibili le fasi di fusione e di riduzione.",
+      "en": "Slower current changes make melting and cooling phases clearly recognisable."
+    },
+    "principle": {
+      "de": "Beim WIG-Pulsen wechseln Pulsstrom und Grundstrom, während die Wolframelektrode nicht abschmilzt. Bei niedriger Pulsfrequenz lässt sich der Wechsel zur Führung des Bades und zur rhythmischen Zugabe des Zusatzstabes nutzen. MAHE beschreibt LF-Puls insbesondere für kontrollierte Badführung und Zwangslagen.",
+      "fr": "En TIG pulsé, le courant alterne entre un niveau haut et un niveau de base sans fusion de l’électrode de tungstène. À basse fréquence, cette alternance peut guider le bain et rythmer l’apport manuel de métal. MAHE présente le LF pour le contrôle du bain et les positions difficiles.",
+      "it": "Nel TIG pulsato la corrente alterna un livello alto e uno di base senza fondere l’elettrodo di tungsteno. A bassa frequenza, l’alternanza può guidare il bagno e scandire l’apporto manuale della bacchetta. MAHE presenta LF per il controllo del bagno e le posizioni difficili.",
+      "en": "In pulsed TIG welding, pulse current and base current alternate while the tungsten electrode remains non-consumable. At low pulse frequencies, the changes can guide pool control and rhythmic filler rod addition. MAHE describes LF pulse particularly for controlled pool handling and positional welding."
+    },
+    "use": {
+      "de": "Manuelle Nähte, wärmeempfindliche Kanten und Positionen, in denen ein überschaubares Bad unterstützt. Zusatzwerkstoff und Handbewegung werden auf den gewählten Rhythmus abgestimmt.",
+      "fr": "Cordons manuels, bords sensibles à la chaleur et positions où un bain de taille maîtrisée facilite le travail. Métal d’apport et mouvement de la main sont coordonnés au rythme choisi.",
+      "it": "Cordoni manuali, bordi sensibili al calore e posizioni nelle quali aiuta un bagno di dimensioni controllate. Materiale d’apporto e movimento della mano vanno coordinati al ritmo scelto.",
+      "en": "Manual welds, heat-sensitive edges and positions where a manageable pool is helpful. Filler addition and hand movement are coordinated with the selected rhythm."
+    },
+    "setup": {
+      "de": "Pulsstrom, Grundstrom, Pulsdaueranteil und Frequenz gemeinsam einstellen. Ein hoher Grundstrom oder ein langer Pulsanteil kann den mittleren Strom stark erhöhen. LF-Puls ist weder AC-Frequenz noch ein anderes Zündverfahren.",
+      "fr": "Régler ensemble courant haut, courant de base, rapport cyclique et fréquence. Un courant de base élevé ou un long temps au niveau haut peut augmenter fortement le courant moyen. Le LF n’est ni la fréquence AC ni un mode d’amorçage.",
+      "it": "Regolare insieme corrente di picco, corrente di base, rapporto ciclico e frequenza. Una corrente di base elevata o una lunga fase di picco può aumentare molto la corrente media. LF non è la frequenza AC né una modalità di innesco.",
+      "en": "Set pulse current, base current, pulse duration ratio and frequency together. A high base current or long pulse duration can substantially increase average current. LF pulse is neither AC frequency nor a different ignition method."
+    },
+    "products": [
+      "beta-dx",
+      "omega-ax"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-beta",
+      "mahe-omega",
+      "tig-parameters"
+    ]
+  },
+  {
+    "id": "tig-hf-puls",
+    "group": "tig",
+    "ic": "hfpuls",
+    "n": {
+      "de": "WIG/TIG-HF-Puls · schneller Stromwechsel",
+      "fr": "TIG pulsé haute fréquence · variations rapides du courant",
+      "it": "TIG pulsato ad alta frequenza · variazioni rapide della corrente",
+      "en": "TIG HF pulse · rapid current changes"
+    },
+    "d": {
+      "de": "Schnelle Stromimpulse beeinflussen Konzentration und Stabilität des Lichtbogens.",
+      "fr": "Des impulsions rapides influencent la concentration et la stabilité de l’arc.",
+      "it": "Impulsi rapidi influenzano concentrazione e stabilità dell’arco.",
+      "en": "Rapid current pulses influence arc concentration and stability."
+    },
+    "principle": {
+      "de": "Bei höherer Pulsfrequenz folgen die Stromimpulse so schnell, dass sie nicht mehr als einzelne Arbeitsrhythmen für die Hand dienen. Die Einstellung beeinflusst vielmehr Lichtbogenfokus und Badverhalten. HF-Puls regelt den Schweissstrom während der Naht; HF-Zündung erzeugt dagegen den berührungslosen Lichtbogenstart.",
+      "fr": "À fréquence plus élevée, les impulsions ne servent plus de cadence distincte pour la main. Le réglage agit surtout sur la concentration de l’arc et le comportement du bain. Le pulsé HF module le courant pendant le cordon ; l’amorçage HF sert, lui, à démarrer l’arc sans contact.",
+      "it": "A frequenza più elevata gli impulsi non servono più come cadenza distinta per la mano. La regolazione agisce soprattutto sulla concentrazione dell’arco e sul comportamento del bagno. Il pulsato HF modula la corrente durante il cordone; l’innesco HF serve invece ad avviare l’arco senza contatto.",
+      "en": "At higher pulse frequencies, current pulses follow too quickly to provide individual working rhythms for the hand. Instead, the setting influences arc focus and pool behaviour. HF pulse controls welding current during the weld; HF ignition provides contactless arc starting."
+    },
+    "use": {
+      "de": "Präzise WIG-Nähte und Aufgaben mit konzentrierter Lichtbogenführung. MAHE nennt bei Beta DX pro und Omega AX pro Pulsen bis 20 kHz; für andere Geräte gelten deren eigene Angaben.",
+      "fr": "Soudures TIG précises et travaux recherchant un arc concentré. MAHE annonce jusqu’à 20 kHz sur Beta DX pro et Omega AX pro ; les autres appareils ont leurs propres spécifications.",
+      "it": "Saldature TIG precise e lavori che richiedono un arco concentrato. MAHE dichiara fino a 20 kHz per Beta DX pro e Omega AX pro; per gli altri apparecchi valgono le rispettive specifiche.",
+      "en": "Precision TIG welds and tasks requiring concentrated arc control. MAHE specifies pulsing up to 20 kHz for Beta DX pro and Omega AX pro; other equipment has its own specifications."
+    },
+    "setup": {
+      "de": "Eine höhere Frequenz ist nicht automatisch die bessere Einstellung. Pulsstrom, Grundstrom und Pulsanteil müssen zur Naht passen. Die syn-Ausführungen mit automatischer Pulseinstellung dürfen nicht mit dem manuellen Funktionsumfang der pro-Panels gleichgesetzt werden.",
+      "fr": "Une fréquence plus élevée n’est pas automatiquement préférable. Les courants et le rapport cyclique doivent convenir au joint. Les versions syn à réglage automatique des impulsions ne doivent pas être assimilées au réglage manuel des panneaux pro.",
+      "it": "Una frequenza maggiore non è automaticamente preferibile. Correnti e rapporto ciclico devono essere adatti al giunto. Le versioni syn con regolazione automatica degli impulsi non vanno equiparate alle regolazioni manuali dei pannelli pro.",
+      "en": "A higher frequency is not automatically a better setting. Pulse current, base current and pulse duration ratio must suit the joint. The syn versions with automatic pulse adjustment must not be equated with the manual functions of the pro panels."
+    },
+    "products": [
+      "beta-dx",
+      "omega-ax",
+      "hypertig-ax",
+      "hypertig-dx"
+    ],
+    "sources": [
+      "mahe-beta",
+      "mahe-omega",
+      "mahe-hypertig-ax",
+      "mahe-hypertig-dx",
+      "tig-parameters"
+    ]
+  },
+  {
+    "id": "hyperarcactive",
+    "group": "tig",
+    "ic": "arcactive",
+    "n": {
+      "de": "HyperArcActive · aktive Lichtbogenregelung",
+      "fr": "HyperArcActive · régulation active de l’arc",
+      "it": "HyperArcActive · regolazione attiva dell’arco",
+      "en": "HyperArcActive · active arc control"
+    },
+    "d": {
+      "de": "MAHE-Regelung zur Kompensation veränderlicher Lichtbogenlänge.",
+      "fr": "Régulation MAHE pour compenser les variations de longueur d’arc.",
+      "it": "Regolazione MAHE per compensare le variazioni di lunghezza dell’arco.",
+      "en": "MAHE control function to compensate for changing arc length."
+    },
+    "principle": {
+      "de": "Beim manuellen WIG-Schweissen verändert ein schwankender Abstand zwischen Elektrode und Werkstück die Lichtbogenbedingungen. HyperArcActive ist laut MAHE auf die Kompensation solcher Längenänderungen und einen gleichmässigeren Wärmeeintrag ausgelegt. Es ergänzt die Handführung, statt sie zu ersetzen.",
+      "fr": "En TIG manuel, une variation de distance entre électrode et pièce modifie les conditions de l’arc. MAHE présente HyperArcActive pour compenser ces changements et rendre l’apport thermique plus régulier. La fonction accompagne la conduite manuelle sans la remplacer.",
+      "it": "Nel TIG manuale, le variazioni della distanza tra elettrodo e pezzo modificano le condizioni dell’arco. MAHE presenta HyperArcActive per compensare queste variazioni e rendere più regolare l’apporto termico. La funzione assiste la conduzione manuale senza sostituirla.",
+      "en": "In manual TIG welding, variations in the electrode-to-workpiece distance change arc conditions. According to MAHE, HyperArcActive is designed to compensate for these length changes and provide more consistent heat input. It supports hand control rather than replacing it."
+    },
+    "use": {
+      "de": "Zwangslagen, schwer zugängliche Nähte und wechselnde Brennerabstände. Die Funktion ist besonders dann interessant, wenn eine konstant kurze Lichtbogenlänge schwierig einzuhalten ist.",
+      "fr": "Positions difficiles, joints peu accessibles et distance de torche variable. La fonction présente un intérêt lorsque le maintien d’un arc court et constant est délicat.",
+      "it": "Posizioni difficili, giunti poco accessibili e distanza della torcia variabile. La funzione è interessante quando è difficile mantenere un arco corto e costante.",
+      "en": "Positional welding, difficult-to-access joints and varying torch distances. The function is particularly useful where maintaining a consistently short arc is difficult."
+    },
+    "setup": {
+      "de": "Elektrodenanschliff, Gasabdeckung und Brennerführung bleiben wichtig. HyperArcActive ist eine Regelungsfunktion und nicht mit einem separaten Pulsprogramm oder automatischer Nahtverfolgung gleichzusetzen.",
+      "fr": "Affûtage du tungstène, protection gazeuse et conduite de torche restent importants. HyperArcActive est une régulation, pas un programme pulsé distinct ni un suivi automatique du joint.",
+      "it": "Affilatura del tungsteno, protezione gassosa e conduzione della torcia restano importanti. HyperArcActive è una regolazione, non un programma pulsato distinto né un inseguimento automatico del giunto.",
+      "en": "Electrode preparation, gas coverage and torch handling remain important. HyperArcActive is a control function, not a separate pulse program or automatic seam tracking."
+    },
+    "products": [
+      "beta-dx",
+      "omega-ax",
+      "hypertig-ax",
+      "hypertig-dx"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypertig-ax"
+    ]
+  },
+  {
+    "id": "tig-acdc",
+    "group": "tig",
+    "ic": "acdc",
+    "n": {
+      "de": "WIG/TIG AC/DC · Polarität und Balance",
+      "fr": "TIG AC/DC · polarité et balance",
+      "it": "TIG AC/DC · polarità e bilanciamento",
+      "en": "TIG AC/DC · polarity and balance"
+    },
+    "d": {
+      "de": "Gleichstrom für viele Stähle; Wechselstrom für typische Aluminiumaufgaben.",
+      "fr": "Courant continu pour de nombreux aciers ; alternatif pour les applications courantes sur aluminium.",
+      "it": "Corrente continua per molti acciai; alternata per le applicazioni comuni sull’alluminio.",
+      "en": "Direct current for many steels; alternating current for typical aluminium applications."
+    },
+    "principle": {
+      "de": "Beim üblichen WIG-DC-Schweissen liegt die Elektrode am Minuspol. Für Aluminium wird häufig AC genutzt: Die positive Elektrodenphase unterstützt die Reinigung der Oxidschicht, die negative Phase die Wärmeeinbringung ins Werkstück. Die AC-Balance bestimmt das Verhältnis dieser Phasen.",
+      "fr": "En TIG DC courant, l’électrode est au pôle négatif. L’aluminium est souvent soudé en AC : la phase où l’électrode est positive favorise le nettoyage de l’oxyde, la phase négative apporte davantage de chaleur à la pièce. La balance AC règle le rapport entre ces phases.",
+      "it": "Nel comune TIG DC l’elettrodo è al polo negativo. Per l’alluminio si usa spesso AC: la fase con elettrodo positivo favorisce la pulizia dell’ossido, quella negativa l’apporto di calore al pezzo. Il bilanciamento AC regola il rapporto fra le due fasi.",
+      "en": "In conventional DC TIG welding, the electrode is negative. AC is often used for aluminium: the electrode-positive phase assists oxide cleaning, while the electrode-negative phase supports heat input into the workpiece. AC balance determines the ratio of these phases."
+    },
+    "use": {
+      "de": "DC für geeignete Stahl- und Chromstahlnähte; AC für viele Aluminiumverbindungen. Werkstoffzustand, Zusatz und Oberflächenvorbereitung bestimmen die konkrete Verfahrenswahl.",
+      "fr": "DC pour les assemblages appropriés en acier et inox ; AC pour de nombreux joints en aluminium. L’état du matériau, l’apport et la préparation des surfaces déterminent le choix précis.",
+      "it": "DC per giunti appropriati in acciaio e inox; AC per molti giunti in alluminio. Stato del materiale, apporto e preparazione delle superfici determinano la scelta concreta.",
+      "en": "DC for suitable steel and stainless steel joints; AC for many aluminium joints. Material condition, filler and surface preparation determine the specific process choice."
+    },
+    "setup": {
+      "de": "Balance und AC-Frequenz sind eigene Grössen: Balance verändert den Phasenanteil, AC-Frequenz die Zahl der Polaritätswechselzyklen. Zu viel positive Elektrodenphase belastet den Wolfram stärker. Die Balance-Anzeige ist geräteabhängig; Prozentwerte nicht ungeprüft übertragen.",
+      "fr": "Balance et fréquence AC sont distinctes : la balance modifie la proportion des phases, la fréquence le nombre de cycles de polarité. Une phase positive excessive sollicite davantage le tungstène. Les conventions d’affichage varient ; ne pas transposer les pourcentages sans vérification.",
+      "it": "Bilanciamento e frequenza AC sono grandezze distinte: il bilanciamento modifica la proporzione delle fasi, la frequenza il numero dei cicli di polarità. Una fase positiva eccessiva sollecita maggiormente il tungsteno. Le indicazioni variano fra apparecchi: non trasferire percentuali senza verifica.",
+      "en": "Balance and AC frequency are separate parameters: balance changes the phase ratio, while AC frequency changes the number of complete polarity cycles. Too much electrode-positive time increases tungsten loading. Balance displays vary by machine; do not transfer percentages without checking."
+    },
+    "products": [
+      "omega-ax",
+      "hypertig-ax"
+    ],
+    "sources": [
+      "tig-parameters",
+      "mahe-omega"
+    ]
+  },
+  {
+    "id": "ac-wave",
+    "group": "tig",
+    "ic": "acwave",
+    "n": {
+      "de": "AC Wave · Stromform und Lichtbogencharakter",
+      "fr": "AC Wave · forme du courant et caractère de l’arc",
+      "it": "AC Wave · forma della corrente e carattere dell’arco",
+      "en": "AC Wave · waveform and arc character"
+    },
+    "d": {
+      "de": "Sinus-, Trapez- oder Rechteckform verändern das Verhalten des AC-Lichtbogens.",
+      "fr": "Les formes sinusoïdale, trapézoïdale ou rectangulaire modifient le comportement de l’arc AC.",
+      "it": "Le forme sinusoidale, trapezoidale o rettangolare modificano il comportamento dell’arco AC.",
+      "en": "Sine, trapezoidal and square waveforms change AC arc behaviour."
+    },
+    "principle": {
+      "de": "Die Stromform beschreibt den zeitlichen Verlauf der AC-Phasen. MAHE nennt Sinus, Trapez und Rechteck als wählbare Modulationen. Unterschiedlich steile Stromwechsel verändern Lichtbogencharakter und Geräusch; sie sind von Pulsfrequenz und AC-Balance getrennt zu betrachten.",
+      "fr": "La forme du courant décrit l’évolution des phases AC dans le temps. MAHE propose des modulations sinusoïdale, trapézoïdale et rectangulaire. La rapidité des transitions modifie le caractère et le bruit de l’arc ; elle se distingue de la fréquence de pulsation et de la balance AC.",
+      "it": "La forma della corrente descrive l’andamento delle fasi AC nel tempo. MAHE indica modulazioni sinusoidale, trapezoidale e rettangolare. La rapidità delle transizioni modifica carattere e rumorosità dell’arco; è distinta dalla frequenza degli impulsi e dal bilanciamento AC.",
+      "en": "The waveform describes how current changes over time during the AC phases. MAHE lists sine, trapezoidal and square waveforms as selectable modulations. Different rates of current change alter arc character and noise; they must be considered separately from pulse frequency and AC balance."
+    },
+    "use": {
+      "de": "Abstimmung des Lichtbogens auf Fugenform, gewünschte Nahtbreite und persönliche Führungsweise bei AC-Schweissaufgaben.",
+      "fr": "Adaptation de l’arc à la géométrie du joint, à la largeur recherchée et à la conduite de l’opérateur lors du soudage AC.",
+      "it": "Adattamento dell’arco alla geometria del giunto, alla larghezza desiderata e alla conduzione dell’operatore nelle lavorazioni AC.",
+      "en": "Adjusting the arc to the joint shape, desired weld width and personal torch handling during AC welding."
+    },
+    "setup": {
+      "de": "Verfügbare Formen am Bedienpanel prüfen und jeweils nur eine Einstellung verändern. Die Stromform ist kein Ersatz für die Wahl des passenden Strombereichs oder eine saubere Aluminiumoberfläche.",
+      "fr": "Vérifier les formes disponibles sur le panneau et modifier un réglage à la fois. La forme d’onde ne remplace ni le choix de la plage de courant ni la propreté de la surface en aluminium.",
+      "it": "Verificare le forme disponibili sul pannello e modificare una regolazione alla volta. La forma d’onda non sostituisce la scelta del campo di corrente né la pulizia della superficie in alluminio.",
+      "en": "Check the available waveforms at the panel and change only one setting at a time. Waveform selection does not replace choosing the correct current range or preparing a clean aluminium surface."
+    },
+    "products": [
+      "omega-ax",
+      "hypertig-ax"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-omega",
+      "mahe-hypertig-ax"
+    ]
+  },
+  {
+    "id": "mix-tig",
+    "group": "tig",
+    "ic": "mixtig",
+    "n": {
+      "de": "Mix TIG · AC- und DC-Abschnitte kombinieren",
+      "fr": "Mix TIG · combiner des séquences AC et DC",
+      "it": "Mix TIG · combinare sequenze AC e DC",
+      "en": "Mix TIG · combining AC and DC phases"
+    },
+    "d": {
+      "de": "Automatischer Wechsel zwischen AC- und DC-Abschnitten beim WIG-Schweissen.",
+      "fr": "Alternance automatique de séquences AC et DC en soudage TIG.",
+      "it": "Alternanza automatica di sequenze AC e DC nella saldatura TIG.",
+      "en": "Automatic alternation between AC and DC periods during TIG welding."
+    },
+    "principle": {
+      "de": "Mix TIG kombiniert AC-Abschnitte mit DC-Abschnitten. Das verbindet die Reinigungswirkung der AC-Phase mit einem anders geführten Energieeintrag während der DC-Phase. MAHE nennt diesen Modus insbesondere für Aluminium in Zwangslagen.",
+      "fr": "Mix TIG combine des séquences AC et DC. Il associe l’action de nettoyage de la séquence AC à une gestion différente de l’énergie pendant la séquence DC. MAHE cite notamment l’aluminium en position difficile.",
+      "it": "Mix TIG combina sequenze AC e DC. Associa l’azione di pulizia della sequenza AC a una diversa gestione dell’energia durante quella DC. MAHE indica in particolare l’alluminio in posizioni difficili.",
+      "en": "Mix TIG combines AC periods with DC periods. This combines the cleaning action of AC with a different pattern of energy input during DC. MAHE particularly identifies this mode for aluminium in positional welding."
+    },
+    "use": {
+      "de": "Aluminiumaufgaben, bei denen das Zusammenspiel von Reinigungswirkung, Badkontrolle und Wärmeeintrag angepasst werden soll.",
+      "fr": "Travaux sur aluminium nécessitant d’adapter l’équilibre entre nettoyage, maîtrise du bain et apport thermique.",
+      "it": "Lavori sull’alluminio che richiedono di adattare l’equilibrio fra pulizia, controllo del bagno e apporto termico.",
+      "en": "Aluminium tasks requiring adjustment of the interaction between cleaning action, pool control and heat input."
+    },
+    "setup": {
+      "de": "AC/DC-Anteile und deren zeitliche Abstimmung richten sich nach dem verfügbaren Programm. Mix TIG ist nicht dasselbe wie AC-Balance innerhalb einer einzelnen AC-Periode und setzt eine entsprechend ausgerüstete AC/DC-Quelle voraus.",
+      "fr": "Les proportions AC/DC et leur rythme dépendent du programme disponible. Mix TIG n’est pas la balance au sein d’une seule période AC et nécessite une source AC/DC équipée de cette fonction.",
+      "it": "Le proporzioni AC/DC e il loro ritmo dipendono dal programma disponibile. Mix TIG non è il bilanciamento all’interno di un singolo periodo AC e richiede un generatore AC/DC dotato di questa funzione.",
+      "en": "The AC/DC proportions and their timing depend on the available program. Mix TIG differs from AC balance within a single AC cycle and requires an appropriately equipped AC/DC power source."
+    },
+    "products": [
+      "omega-ax",
+      "hypertig-ax"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-omega",
+      "mahe-hypertig-ax"
+    ]
+  },
+  {
+    "id": "hyperspot",
+    "group": "tig",
+    "ic": "hyperspot",
+    "n": {
+      "de": "HyperSpot und ActiveSpot · gezielt heften",
+      "fr": "HyperSpot et ActiveSpot · pointer avec précision",
+      "it": "HyperSpot e ActiveSpot · puntare con precisione",
+      "en": "HyperSpot and ActiveSpot · controlled tacking"
+    },
+    "d": {
+      "de": "Punkt- und Heftfunktionen unterstützen wiederkehrende kurze Schweissungen.",
+      "fr": "Des fonctions de pointage facilitent les soudures courtes répétitives.",
+      "it": "Le funzioni di puntatura facilitano saldature brevi e ripetitive.",
+      "en": "Spot and tacking functions support recurring short welds."
+    },
+    "principle": {
+      "de": "HyperSpot ist die MAHE-Funktion für punktuelle WIG-Schweissungen. ActiveSpot wird bei HyperTIG AX und DX zusätzlich als schnelle Heftfunktion aufgeführt. Mit definierten Einstellungen lassen sich Bauteile für die anschliessende Naht positionieren; die beiden Funktionen werden am jeweiligen Panel unterschieden.",
+      "fr": "HyperSpot est la fonction MAHE de soudage TIG ponctuel. ActiveSpot est également annoncé sur HyperTIG AX et DX comme fonction de pointage rapide. Des réglages définis aident à positionner les pièces avant le cordon final ; les deux fonctions se distinguent sur le panneau concerné.",
+      "it": "HyperSpot è la funzione MAHE per saldature TIG puntuali. ActiveSpot è indicata anche su HyperTIG AX e DX come funzione di puntatura rapida. Regolazioni definite aiutano a posizionare i pezzi prima del cordone finale; le due funzioni vanno distinte sul relativo pannello.",
+      "en": "HyperSpot is MAHE's function for localised TIG welds. ActiveSpot is additionally listed on HyperTIG AX and DX as a fast tacking function. Defined settings help position components for the subsequent weld; the two functions are distinguished at the respective panel."
+    },
+    "use": {
+      "de": "Heftstellen an Blechen, Baugruppen und wiederkehrenden Verbindungen, bei denen eine gleichmässige Punktfolge wichtig ist.",
+      "fr": "Points de maintien sur tôles, sous-ensembles et assemblages répétitifs pour lesquels une succession régulière de points est utile.",
+      "it": "Punti di fissaggio su lamiere, sottoassiemi e giunti ripetitivi nei quali è utile una successione regolare dei punti.",
+      "en": "Tacks on sheet, assemblies and recurring joints where a consistent sequence of spots matters."
+    },
+    "setup": {
+      "de": "Strom, Punktdauer und Abkühlzeit auf Werkstoff und Fügespalt abstimmen. Gasvor- und Gasnachströmung sind auch beim Heften relevant. Diese WIG-Funktionen sind kein Widerstandspunktschweissen mit Zangenelektroden.",
+      "fr": "Adapter courant, durée du point et refroidissement au matériau et au jeu. Le pré-gaz et le post-gaz restent importants pendant le pointage. Ces fonctions TIG ne sont pas du soudage par résistance à électrodes de pince.",
+      "it": "Adattare corrente, durata del punto e raffreddamento a materiale e gioco. Pre-gas e post-gas restano importanti anche durante la puntatura. Queste funzioni TIG non sono saldatura a resistenza con elettrodi a pinza.",
+      "en": "Match current, spot duration and cooling time to the material and joint gap. Gas pre-flow and post-flow also matter when tacking. These TIG functions are not resistance spot welding using electrode tongs."
+    },
+    "products": [
+      "beta-dx",
+      "omega-ax",
+      "hypertig-ax",
+      "hypertig-dx"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-hypertig-ax",
+      "mahe-hypertig-dx"
+    ]
+  },
+  {
+    "id": "activeboost",
+    "group": "assist",
+    "ic": "boost",
+    "n": {
+      "de": "ActiveBoost · Leistungsreserve richtig einordnen",
+      "fr": "ActiveBoost · comprendre la réserve de puissance",
+      "it": "ActiveBoost · comprendere la riserva di potenza",
+      "en": "ActiveBoost · understanding the power reserve"
+    },
+    "d": {
+      "de": "Unterstützende Gerätefunktion, kein eigener Puls- oder Schweissprozess.",
+      "fr": "Fonction d’assistance de l’appareil, pas un procédé de soudage ou de pulsation distinct.",
+      "it": "Funzione di supporto dell’apparecchio, non un processo di saldatura o pulsazione autonomo.",
+      "en": "Supporting equipment function, not a separate pulse or welding process."
+    },
+    "principle": {
+      "de": "MAHE beschreibt ActiveBoost als zuschaltbare Leistungsreserve im Zusammenhang mit der verfügbaren Netzleistung und der Absicherung. Die Funktion betrifft die Leistungsbereitstellung der Stromquelle und ist von Lichtbogenprogrammen wie LF-Puls, HF-Puls oder Mix TIG zu unterscheiden.",
+      "fr": "MAHE présente ActiveBoost comme une réserve de puissance activable liée à l’alimentation disponible et à sa protection. La fonction concerne la puissance fournie par la source et se distingue des programmes d’arc comme le pulsé LF, le pulsé HF ou Mix TIG.",
+      "it": "MAHE presenta ActiveBoost come una riserva di potenza attivabile in relazione all’alimentazione disponibile e alla sua protezione. La funzione riguarda la potenza fornita dal generatore ed è distinta dai programmi d’arco come pulsato LF, pulsato HF o Mix TIG.",
+      "en": "MAHE describes ActiveBoost as a selectable power reserve related to available mains power and fuse protection. The function concerns power delivery by the power source and must be distinguished from arc programs such as LF pulse, HF pulse or Mix TIG."
+    },
+    "use": {
+      "de": "Aufgaben mit zeitweise erhöhtem Leistungsbedarf an entsprechend ausgerüsteten Beta-DX- oder Omega-AX-Ausführungen.",
+      "fr": "Travaux demandant ponctuellement plus de puissance avec une version Beta DX ou Omega AX équipée en conséquence.",
+      "it": "Lavori con un fabbisogno temporaneamente maggiore di potenza su versioni Beta DX o Omega AX equipaggiate di conseguenza.",
+      "en": "Tasks with temporarily increased power demand on appropriately equipped Beta DX or Omega AX versions."
+    },
+    "setup": {
+      "de": "Netzanschluss, Absicherung, Zuleitung und Einschaltdauer nach den Geräteunterlagen auslegen. ActiveBoost erlaubt weder eine höhere Sicherung ohne Prüfung noch eine beliebig hohe Dauerleistung.",
+      "fr": "Dimensionner alimentation, protection, câble et facteur de marche selon la documentation de l’appareil. ActiveBoost n’autorise ni à augmenter la protection sans vérification ni à demander une puissance continue illimitée.",
+      "it": "Dimensionare alimentazione, protezione, cavo e fattore di servizio secondo la documentazione dell’apparecchio. ActiveBoost non autorizza ad aumentare la protezione senza verifica né a richiedere una potenza continua illimitata.",
+      "en": "Select the mains connection, fuse protection, supply cable and duty cycle according to the equipment documentation. ActiveBoost permits neither an unchecked increase in fuse rating nor unlimited continuous power."
+    },
+    "products": [
+      "beta-dx",
+      "omega-ax"
+    ],
+    "sources": [
+      "mahe-processes",
+      "mahe-beta",
+      "mahe-omega"
+    ]
+  }
 ]

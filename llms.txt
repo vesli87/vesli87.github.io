@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Beratung und Verkauf von MAHE-Geräten. Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, CNC-Schneidtische, elektrolytische Reinigungs- und Signiergeräte, Automation sowie Zubehör. 80 Geräte, alle zum Preis auf Anfrage.
+> MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Beratung und Verkauf von MAHE-Geräten. Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, CNC-Schneidtische, elektrolytische Reinigungs- und Signiergeräte, Automation sowie Zubehör. 81 Geräte, alle zum Preis auf Anfrage.
 > Dazu generalüberholte Occasionen aus der Partnerwerkstatt: SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T, Oerlikon PlasmaFix 50 S (Mikroplasma-Schweissanlagen von SAF-FRO und Oerlikon). Verfügbarkeit auf Anfrage.
 
 ## Eckdaten
@@ -24,7 +24,7 @@
 - [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG. (15 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
 - [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
 - [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
-- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie. (43 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
+- [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie. (44 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
 - [Occasion](https://www.ves-tech.ch/produkte/occasion/): In Herisau generalüberholte Gebrauchtanlagen: komplett revidiert, mit ersetzter Wasserkühlung und Originalunterlagen des Herstellers. (2 Geräte: Mikroplasma)
 
 ## Geräte
@@ -91,6 +91,7 @@
 - [MAHE Elektrodenkabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/elektrodenkabel-4m/): Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
 - [MAHE Massekabel 25–90 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/): Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. (Kabel)
 - [MAHE Massekabel 25 mm²](https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/): Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180. (Kabel)
+- [MAHE MG500](https://www.ves-tech.ch/produkte/zubehoer/mg500/): Wassergekühlter MIG/MAG-Brenner mit Grafikdisplay und Fernbedienung, 500 A bei 60 % Einschaltdauer, 4 m Länge. (Brenner)
 - [MAHE MF405W](https://www.ves-tech.ch/produkte/zubehoer/mf405w/): Wassergekühlter MIG/MAG-Brenner für die HyperMIG-X-Serie. (Brenner)
 - [MAHE MF240W](https://www.ves-tech.ch/produkte/zubehoer/mf240w/): Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen. (Brenner)
 - [MAHE MF155](https://www.ves-tech.ch/produkte/zubehoer/mf155/): Gasgekühlter MIG/MAG-Brenner für EcoMIG und MMS, in 3 oder 4 m Länge. (Brenner)

@@ -78,7 +78,7 @@ class EnglishTests(unittest.TestCase):
 
     def test_english_routes_are_complete_and_keep_the_same_page_in_each_language(self):
         paths = [p for p in C.analytics_paths() if p.startswith('/en/')]
-        self.assertEqual(len(paths), 121)
+        self.assertEqual(len(paths), 122)
         for product in C.P:
             alternatives = C.alternates('prod', p=product)
             self.assertEqual(set(alternatives), set(C.LANGS))

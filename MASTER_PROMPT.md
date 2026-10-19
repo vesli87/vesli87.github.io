@@ -122,7 +122,7 @@ build/i18n_extra.json ← SEO-/AEO-Texte, FAQ, Rechtstexte (von Hand gepflegt)
         └─ build/build.py    schreibt alles raus
         │
         ▼
-484 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
+488 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
     + data/products.json + data/search-{de,fr,it,en}.json
 ```
 
@@ -175,14 +175,14 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 
 | Datei | Inhalt |
 |---|---|
-| `P.json` | 80 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
+| `P.json` | 81 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
 | `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
 | `UI.json` | 157 UI-Strings × de/fr/it/en |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
 | `PROC.json` | 19 Verfahren, Pulsvarianten und Zusatzfunktionen mit Wirkprinzip, Anwendung und Einstellung, DE/FR/IT |
 | `BUYING_GUIDE.json` | Eigene Auswahlhilfen für die fünf Hauptkategorien, DE/FR/IT |
 | `SUBCATEGORY_GUIDES.json` | Eigene Einleitung und 2–3 Auswahlkriterien für alle 21 eigenständigen Unterkategorien, DE/FR/IT; keine zusätzliche Plasma-TIG-Seite |
-| `PRODUCT_GUIDES.json` | Belegte Auswahlhinweise für 26 Produktfamilien, mit Quellenverweisen und vollständigen DE/FR/IT-Texten |
+| `PRODUCT_GUIDES.json` | Belegte Auswahlhinweise für 27 Produktfamilien, mit Quellenverweisen und vollständigen DE/FR/IT-Texten |
 | `GUIDE_LINKS.json` | Typisierte Referenzen auf bestehende Geräte, Kategorien, Unterkategorien, Services und Unternehmensseiten; keine neuen Kompatibilitätszusagen |
 | `DLS.json` | 7 PDF-Links (⚠ `k` ist **nicht** eindeutig — Katalog und EN 1090 heissen beide `PDF`) |
 | `FEAT.json` | 32 originale MAHE-Symbole mit Herstellerbild, Abmessungen und DE/FR/IT-Beschriftung |
@@ -351,7 +351,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (472 URLs); Suche, Datenschutz und AGB
+- `sitemap.xml` mit `xhtml:link`-Alternates (476 URLs); Suche, Datenschutz und AGB
   sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
 - `lastmod` folgt dem Inhalt jeder Seite. Asset-Versionsnummern, CSP/SRI und die
   reine Laufzeitkonfiguration `window.VT` ändern das Datum nicht. Sichtbarer
@@ -453,7 +453,7 @@ Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auft
 
 - **`/llms.txt`** — kompakte Landkarte der Website im llms.txt-Format
 - **`/llms-full.txt`** — der komplette zitierfähige Inhalt in einer Datei:
-  alle 80 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
+  alle 81 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
   dazu 19 erklaerte Verfahren/Funktionen und alle 10 FAQ-Antworten
 - **`/data/products.json`** — maschinenlesbarer Katalog, viersprachig, mit
   Verkäuferangaben und Lizenzhinweis
@@ -1023,14 +1023,14 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
 
 ## 23. Vollständige englische Fassung (19.10.2026)
 
-- EN ergänzt DE/FR/IT auf ausdrücklich gewünschten 121 eigenen Inhaltsseiten.
-  Insgesamt 484 Inhaltsseiten, eine gemeinsame 404-Seite, 15 bestehende
-  Weiterleitungen und die Google-Verifizierungsdatei; 472 indexierbare URLs.
+- EN ergänzt DE/FR/IT auf ausdrücklich gewünschten 122 eigenen Inhaltsseiten.
+  Insgesamt 488 Inhaltsseiten, eine gemeinsame 404-Seite, 15 bestehende
+  Weiterleitungen und die Google-Verifizierungsdatei; 476 indexierbare URLs.
   Alle bestehenden DE-/FR-/IT-Adressen bleiben erhalten. Englisch verwendet
   `/en/`, `en-CH`, die Segmente aus `SEG` und eigene Kategorie-/Unterkategorie-
   Slugs; Produkt-IDs und Prozessanker bleiben stabil.
 - Die gepflegten JSON-Dateien und `i18n_extra.json` enthalten vollständige
-  EN-Texte, einschliesslich aller 80 Produkte, technischen Zeilen, Merkmale,
+  EN-Texte, einschliesslich aller 81 Produkte, technischen Zeilen, Merkmale,
   Bedienpanel-Ratgeber, 19 Prozesse, Auswahlhilfen, Service, FAQ, Formulare
   und Rechtstexte. Britische Schreibweise: aluminium, colour, metre, enquiry.
   WIG wird als TIG übersetzt; Modellnamen bleiben erhalten. `trV()` stellt
@@ -1064,3 +1064,23 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
   repräsentative Ansichten werden vor dem Deploy mit dem bisherigen Stand
   verglichen. Quellcode und Release-Sicherung werden nach bestandenen Checks
   am exakten Commit auf GitHub gespeichert; kein lokaler Backup-Archivzuwachs.
+
+## 24. MAHE MG500 im Sortiment (19.10.2026)
+
+- Neuer Katalogeintrag `mg500` unter Zubehör / Brenner in DE/FR/IT/EN.
+  Herstellerquelle: `https://mahe-online.de/hypermig/`, Abschnitt Zubehör,
+  Schweissbrenner / MG500. Bestätigt sind wassergekühltes MIG/MAG, 500 A
+  bei 60 % Einschaltdauer, Grafikdisplay, Fernbedienung und 4 m Länge.
+- Der Wert gehört zum Brenner. Keine unbekannte Gasart, Drahtabmessung,
+  100-%-Belastbarkeit, Funkverbindung oder universelle Maschinenkompatibilität
+  ergänzen. `ACC.json` verbindet ihn ausschliesslich mit der belegten
+  HyperMIG-X-Familie; Anschluss, Steuerung und Kühlung werden konkret abgestimmt.
+- Das vom Inhaber bereitgestellte vollständige Foto bleibt unverändert im Motiv.
+  Lokale WebP-Stufen: 400 und 864 px, ohne Hochskalierung. Manifest mit
+  Quellnachweis und SHA256; Produktfoto, Zoom, Suche und Anfrageliste verwenden
+  dieselbe Aufnahme. Lokale 1200 × 630 Linkvorschauen enthalten das komplette
+  Foto ohne Beschnitt und werden ausserhalb des Browsers erzeugt.
+- Produktbeschreibung, Merkmalswerte und Auswahlhilfe sind in allen vier
+  Sprachen gepflegt. Kategorie, Suchindizes, Anfragekatalog, Hreflang, Sitemap,
+  IndexNow und Recovery nehmen den Eintrag über den normalen Build auf.
+  Aktueller Umfang: 81 Produkte, 122 Inhaltsseiten je Sprache und 476 Sitemap-URLs.

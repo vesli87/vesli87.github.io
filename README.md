@@ -7,9 +7,9 @@ Statische Website aus JSON und Python, ohne Framework oder Bundler.
 
 | Bereich | Stand |
 |---|---|
-| Katalog | 80 Produkte, 5 Kategorien, 4 Sprachen |
-| Seiten | 484 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
-| Sitemap | 472 indexierbare URLs mit Sprachalternativen |
+| Katalog | 81 Produkte, 5 Kategorien, 4 Sprachen |
+| Seiten | 488 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
+| Sitemap | 476 indexierbare URLs mit Sprachalternativen |
 | Suche | Lokaler Suchindex mit Produkten, Dienstleistungen, Synonymen und Tippfehlertoleranz |
 | SEO | Individuelle Metadaten, canonical, hreflang, JSON-LD, Sitemap, IndexNow |
 | Beratung | Auswahlhilfen je Hauptkategorie, produktbezogenes Kontaktformular, Anfrageliste |
@@ -144,7 +144,7 @@ Plasma-TIG-URL bleibt die vorhandene Produktseite, ohne zusätzliche Dublette.
 Startseite, Unternehmensseite und Verfahrensübersicht verlinken passende
 Service- und Mikroplasma-Seiten direkt im sichtbaren Hauptinhalt.
 
-`PRODUCT_GUIDES.json` ergänzt 26 Produktfamilien mit konkreten Auswahlhinweisen
+`PRODUCT_GUIDES.json` ergänzt 27 Produktfamilien mit konkreten Auswahlhinweisen
 in DE/FR/IT/EN. Sie stehen ausserhalb geschlossener Reiter im HTML; die deutsche
 Fassung erscheint auch in `llms-full.txt`. `GUIDE_LINKS.json` verbindet diese
 Hinweise und die bestehenden Kategoriehilfen mit sprachgleichen Geräten und
@@ -170,7 +170,7 @@ aktualisieren sich erst nach erneutem Crawlen und Verarbeiten.
 keine Zusage auf KI-Zitate oder Rankings. Der JSON-Katalog ist ein eigenes Format
 (`schema_version`), das JSON-LD steht auf den HTML-Seiten.
 
-Die Sitemap enthält 472 indexierbare URLs; Suche, Datenschutz und AGB bleiben
+Die Sitemap enthält 476 indexierbare URLs; Suche, Datenschutz und AGB bleiben
 ausgeschlossen, das Impressum ist indexierbar. `lastmod` bleibt bei reinen
 Änderungen an CSP/SRI, Asset-Versionsnummern und der Laufzeitkonfiguration stabil.
 Inhalte, SEO-Metadaten, JSON-LD, Navigation und geänderte Asset-Pfade werden
@@ -178,10 +178,12 @@ weiterhin als Seitenänderung erkannt.
 
 ## Veröffentlichen
 
-PSHB-125-Linkvorschauen verwenden eine eigene 1200 × 630 Karte pro Sprache,
+PSHB-125- und MG500-Linkvorschauen verwenden eine eigene 1200 × 630 Karte pro Sprache,
 damit soziale Netzwerke den Kopf der schmalen Brennerfotografie nicht abschneiden.
-`node build/pshb_social_card.mjs` erzeugt die SVG-/PNG-Karten aus dem unveränderten
-Herstellerfoto und `data/SOCIAL_CARDS.json`; dafür ist Sharp erforderlich.
+`node build/pshb_social_card.mjs` erzeugt die PSHB-SVG-/PNG-Karten;
+`node build/mg500_social_card.mjs` baut die MG500-PNGs aus dem vollständigen
+bereitgestellten Foto und `data/SOCIAL_CARDS.json`. Beide verwenden Sharp nur
+beim manuellen Asset-Build und fügen keine Browser-Abhängigkeit hinzu.
 Nach dem visuellen Prüfen werden die PNGs mitgespeichert. Produktgalerie und
 JSON-LD verwenden weiterhin das ursprüngliche Foto.
 

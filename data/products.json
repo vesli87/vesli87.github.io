@@ -9,7 +9,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Herstellerbilder: jeweiliger Hersteller. Eigene Inhalte: VES-TECH Swiss. Rechte siehe Impressum.",
- "count": 80,
+ "count": 81,
  "products": [
   {
    "id": "hypermig-x",
@@ -23171,6 +23171,123 @@
     "fr": "https://www.ves-tech.ch/fr/produits/accessoires/massekabel-25/",
     "it": "https://www.ves-tech.ch/it/prodotti/accessori/massekabel-25/",
     "en": "https://www.ves-tech.ch/en/products/accessories/massekabel-25/"
+   }
+  },
+  {
+   "id": "mg500",
+   "sku": "MG500",
+   "name": "MAHE MG500",
+   "names": {
+    "de": "MAHE MG500",
+    "fr": "MAHE MG500",
+    "it": "MAHE MG500",
+    "en": "MAHE MG500"
+   },
+   "brand": "MAHE",
+   "type": {
+    "de": "Brenner",
+    "fr": "Torche",
+    "it": "Torcia",
+    "en": "Torch"
+   },
+   "category": {
+    "de": "Zubehör",
+    "fr": "Accessoires",
+    "it": "Accessori",
+    "en": "Accessories"
+   },
+   "subcategory": {
+    "de": "Brenner",
+    "fr": "Torches",
+    "it": "Torce",
+    "en": "Torches"
+   },
+   "description": {
+    "de": "Wassergekühlter MIG/MAG-Brenner mit Grafikdisplay und Fernbedienung, 500 A bei 60 % Einschaltdauer, 4 m Länge.",
+    "fr": "Torche MIG/MAG refroidie par eau avec écran graphique et commande à distance, 500 A à 60 % de facteur de marche, longueur de 4 m.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua con display grafico e comando a distanza, 500 A al 60 % di ciclo di lavoro, lunghezza di 4 m.",
+    "en": "Water-cooled MIG/MAG torch with graphic display and remote control, rated at 500 A at 60 % duty cycle, 4 m long."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": []
+   },
+   "front_panels": [],
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": []
+   },
+   "specs": {
+    "de": {
+     "Belastbarkeit": "500 A bei 60 % ED",
+     "Kühlung": "wassergekühlt",
+     "Länge": "4 m",
+     "Verfahren": "MIG/MAG",
+     "Anzeige": "Grafikdisplay",
+     "Bedienung": "Fernbedienung am Brenner"
+    },
+    "fr": {
+     "Courant admissible": "500 A à 60 % de facteur de marche",
+     "Refroidissement": "refroidi par eau",
+     "Longueur": "4 m",
+     "Procédé": "MIG/MAG",
+     "Affichage": "Écran graphique",
+     "Commande": "Commande à distance sur la torche"
+    },
+    "it": {
+     "Corrente ammissibile": "500 A al 60 % di ciclo di lavoro",
+     "Raffreddamento": "raffreddato ad acqua",
+     "Lunghezza": "4 m",
+     "Processo": "MIG/MAG",
+     "Display": "Display grafico",
+     "Comando": "Comando a distanza sulla torcia"
+    },
+    "en": {
+     "Current rating": "500 A at 60 % duty cycle",
+     "Cooling": "Water-cooled",
+     "Length": "4 m",
+     "Process": "MIG/MAG",
+     "Display": "Graphic display",
+     "Controls": "Remote control on the torch"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta",
+     "en": "Price on request"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta",
+     "en": "On request"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/p/mg500-a-9568c9-864.webp",
+   "condition": null,
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/zubehoer/mg500/",
+    "fr": "https://www.ves-tech.ch/fr/produits/accessoires/mg500/",
+    "it": "https://www.ves-tech.ch/it/prodotti/accessori/mg500/",
+    "en": "https://www.ves-tech.ch/en/products/accessories/mg500/"
    }
   },
   {

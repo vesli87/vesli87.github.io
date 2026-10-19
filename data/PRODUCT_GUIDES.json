@@ -1178,5 +1178,57 @@
         "For two prepared welding wires, compare the separate HyperMIG TWIN version. The graphic X panel offers 99 JOB memories for recurring tasks; available processes and options are confirmed for the specific system."
       ]
     }
+  },
+  "mg500": {
+    "sources": [
+      "https://mahe-online.de/hypermig/"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "hypermig-x"
+      },
+      {
+        "kind": "product",
+        "id": "mf405w"
+      },
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Brenner"
+      }
+    ],
+    "de": {
+      "intro": "Der MG500 verbindet einen wassergekühlten MIG/MAG-Brenner mit grafischer Anzeige und Fernbedienung direkt am Griff. Die Anzeige ist am Arbeitsplatz ablesbar; die Bedientasten liegen am Brenner. MAHE führt den MG500 als Zubehör der HyperMIG-X-Serie auf.",
+      "checks": [
+        "Leistung und Länge: MAHE nennt eine Belastbarkeit von 500 A bei 60 % Einschaltdauer und eine verfügbare Schlauchpaketlänge von 4 m. Diese Angaben beziehen sich auf den MG500-Brenner.",
+        "Bedienung am Griff: Das Grafikdisplay ergänzt die Fernbedienung am Brenner. Die nutzbaren Bedienfunktionen stimmen wir mit der Steuerung Ihrer konkreten Anlage ab.",
+        "Für Ihr Angebot: Nennen Sie die genaue Stromquelle, das Bedienpanel und die vorhandene Wasserkühlung. Wir klären Anschlüsse und Ausführung und bieten den MG500 passend zu Ihrer Konfiguration an."
+      ]
+    },
+    "fr": {
+      "intro": "Le MG500 associe une torche MIG/MAG refroidie par eau à un écran graphique et à une commande à distance intégrés à la poignée. Les valeurs affichées sont lisibles au poste de travail et les touches sont directement sur la torche. MAHE présente le MG500 parmi les accessoires de la série HyperMIG X.",
+      "checks": [
+        "Puissance et longueur : MAHE indique un courant admissible de 500 A à 60 % de facteur de marche et une longueur de faisceau disponible de 4 m. Ces caractéristiques concernent la torche MG500.",
+        "Commande sur la poignée : l’écran graphique complète la commande à distance sur la torche. Nous vérifions les fonctions disponibles avec la commande de votre installation précise.",
+        "Pour votre offre : indiquez la source de courant exacte, le panneau de commande et le refroidissement par eau existant. Nous précisons les raccordements et la version pour proposer le MG500 adapté à votre configuration."
+      ]
+    },
+    "it": {
+      "intro": "La MG500 unisce una torcia MIG/MAG raffreddata ad acqua a un display grafico e a un comando a distanza integrati nell’impugnatura. I valori visualizzati sono leggibili dalla postazione di lavoro e i tasti sono direttamente sulla torcia. MAHE presenta la MG500 tra gli accessori della serie HyperMIG X.",
+      "checks": [
+        "Prestazioni e lunghezza: MAHE indica una corrente ammissibile di 500 A al 60 % di ciclo di lavoro e una lunghezza disponibile del fascio cavi di 4 m. Questi valori si riferiscono alla torcia MG500.",
+        "Comando sull’impugnatura: il display grafico affianca il comando a distanza sulla torcia. Verifichiamo le funzioni utilizzabili con il sistema di comando della vostra specifica macchina.",
+        "Per il preventivo: indicate il generatore esatto, il pannello di comando e il raffreddamento ad acqua esistente. Definiamo raccordi e versione per proporre la MG500 adatta alla vostra configurazione."
+      ]
+    },
+    "en": {
+      "intro": "The MG500 combines a water-cooled MIG/MAG torch with a graphic display and remote control built into the handle. Displayed values can be read at the work position, with control buttons directly on the torch. MAHE lists the MG500 among the accessories for the HyperMIG X range.",
+      "checks": [
+        "Rating and length: MAHE specifies 500 A at 60 % duty cycle and an available hose assembly length of 4 m. These ratings refer to the MG500 torch.",
+        "Controls at the handle: the graphic display complements the torch-mounted remote control. We check the available control functions against the controls on your specific welding system.",
+        "For your quotation: specify the exact power source, control panel and existing water cooling system. We confirm connections and the version to offer the MG500 for your configuration."
+      ]
+    }
   }
 }

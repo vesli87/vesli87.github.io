@@ -1,7 +1,7 @@
 {
  "/": {
   "d": "2026-10-19",
-  "h": "1b92c0cff5e3fdcc"
+  "h": "f4ecb947c3df3ca8"
  },
  "/downloads/": {
   "d": "2026-10-19",
@@ -9,7 +9,7 @@
  },
  "/en/": {
   "d": "2026-10-19",
-  "h": "776eb57e358f46d4"
+  "h": "f37635ab0efac18e"
  },
  "/en/about/": {
   "d": "2026-10-19",
@@ -37,11 +37,11 @@
  },
  "/en/products/": {
   "d": "2026-10-19",
-  "h": "f682cbf0a58df753"
+  "h": "8079581bb678abbe"
  },
  "/en/products/accessories/": {
   "d": "2026-10-19",
-  "h": "5acf9169653d50f8"
+  "h": "f18c7bd756753f41"
  },
  "/en/products/accessories/cables/": {
   "d": "2026-10-19",
@@ -114,6 +114,10 @@
  "/en/products/accessories/mf405w/": {
   "d": "2026-10-19",
   "h": "c3ed2fdd25694874"
+ },
+ "/en/products/accessories/mg500/": {
+  "d": "2026-10-19",
+  "h": "10a7d91ecaae928a"
  },
  "/en/products/accessories/mhct01/": {
   "d": "2026-10-19",
@@ -201,7 +205,7 @@
  },
  "/en/products/accessories/torches/": {
   "d": "2026-10-19",
-  "h": "22984a5cce38c3eb"
+  "h": "5c9643fff88672f1"
  },
  "/en/products/accessories/trolleys/": {
   "d": "2026-10-19",
@@ -421,7 +425,7 @@
  },
  "/en/products/welding-equipment/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "a393c192023b7df2"
+  "h": "e87ccdb799385d8b"
  },
  "/en/products/welding-equipment/hypertig-acdc/": {
   "d": "2026-10-19",
@@ -485,7 +489,7 @@
  },
  "/fr/": {
   "d": "2026-10-19",
-  "h": "a37469735315711e"
+  "h": "28702595fbfeb654"
  },
  "/fr/a-propos/": {
   "d": "2026-10-19",
@@ -505,11 +509,11 @@
  },
  "/fr/produits/": {
   "d": "2026-10-19",
-  "h": "b61a0d1ef23b6bac"
+  "h": "296553e44b5e328f"
  },
  "/fr/produits/accessoires/": {
   "d": "2026-10-19",
-  "h": "5504b21ba5c8e538"
+  "h": "fa9e723903c9c5b6"
  },
  "/fr/produits/accessoires/cables/": {
   "d": "2026-10-19",
@@ -590,6 +594,10 @@
  "/fr/produits/accessoires/mf405w/": {
   "d": "2026-10-19",
   "h": "57de3b217505fb6b"
+ },
+ "/fr/produits/accessoires/mg500/": {
+  "d": "2026-10-19",
+  "h": "c6bfc97fd6da46d1"
  },
  "/fr/produits/accessoires/mhct01/": {
   "d": "2026-10-19",
@@ -685,7 +693,7 @@
  },
  "/fr/produits/accessoires/torches/": {
   "d": "2026-10-19",
-  "h": "6f1c0d76ef97e14c"
+  "h": "faf9b658b5a5577e"
  },
  "/fr/produits/accessoires/usb2in1/": {
   "d": "2026-10-19",
@@ -889,7 +897,7 @@
  },
  "/fr/produits/postes-de-soudage/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "3da574b10970fce1"
+  "h": "46410f8547108c62"
  },
  "/fr/produits/postes-de-soudage/hypertig-acdc/": {
   "d": "2026-10-19",
@@ -961,7 +969,7 @@
  },
  "/it/": {
   "d": "2026-10-19",
-  "h": "65376f6be0c30599"
+  "h": "878551da06835c1b"
  },
  "/it/assistenza/": {
   "d": "2026-10-19",
@@ -1005,11 +1013,11 @@
  },
  "/it/prodotti/": {
   "d": "2026-10-19",
-  "h": "9499ff2670a7cb49"
+  "h": "0cdb217ea84f3f5a"
  },
  "/it/prodotti/accessori/": {
   "d": "2026-10-19",
-  "h": "2fb5a8565f3cd03a"
+  "h": "779ff674871d6608"
  },
  "/it/prodotti/accessori/attrezzatura-officina/": {
   "d": "2026-10-19",
@@ -1086,6 +1094,10 @@
  "/it/prodotti/accessori/mf405w/": {
   "d": "2026-10-19",
   "h": "edbbcc722a2e3e34"
+ },
+ "/it/prodotti/accessori/mg500/": {
+  "d": "2026-10-19",
+  "h": "4da0093324132595"
  },
  "/it/prodotti/accessori/mhct01/": {
   "d": "2026-10-19",
@@ -1181,7 +1193,7 @@
  },
  "/it/prodotti/accessori/torce/": {
   "d": "2026-10-19",
-  "h": "70cc76639823f8d3"
+  "h": "4fd41fb0d47c326d"
  },
  "/it/prodotti/accessori/trainafili/": {
   "d": "2026-10-19",
@@ -1341,7 +1353,7 @@
  },
  "/it/prodotti/saldatrici/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "cf300fc1f7321e20"
+  "h": "3fbcf94fd8958f58"
  },
  "/it/prodotti/saldatrici/hypertig-acdc/": {
   "d": "2026-10-19",
@@ -1437,7 +1449,7 @@
  },
  "/produkte/": {
   "d": "2026-10-19",
-  "h": "b25064ee0d4a7ba9"
+  "h": "acbe13c020f8f45f"
  },
  "/produkte/occasion/": {
   "d": "2026-10-19",
@@ -1605,7 +1617,7 @@
  },
  "/produkte/schweissgeraete/hypermig-x/": {
   "d": "2026-10-19",
-  "h": "0cbc2ef1bfc93ac0"
+  "h": "ff59b1dbf8843dc9"
  },
  "/produkte/schweissgeraete/hypertig-acdc/": {
   "d": "2026-10-19",
@@ -1649,11 +1661,11 @@
  },
  "/produkte/zubehoer/": {
   "d": "2026-10-19",
-  "h": "62f467676f9c2d85"
+  "h": "11d3090b93cc1d00"
  },
  "/produkte/zubehoer/brenner/": {
   "d": "2026-10-19",
-  "h": "b28bd87221895183"
+  "h": "f2f3384379e5442d"
  },
  "/produkte/zubehoer/drahtvorschubkoffer/": {
   "d": "2026-10-19",
@@ -1730,6 +1742,10 @@
  "/produkte/zubehoer/mf405w/": {
   "d": "2026-10-19",
   "h": "5abfbcd2640bc3c4"
+ },
+ "/produkte/zubehoer/mg500/": {
+  "d": "2026-10-19",
+  "h": "98d9acfadefdf23a"
  },
  "/produkte/zubehoer/mhct01/": {
   "d": "2026-10-19",

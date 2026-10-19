@@ -103,7 +103,7 @@ Technische Daten – HyperMIG X: Baureihe und weitere Bauformen:
 *: Allgemeine HyperMIG-X-Tabelle der MAHE-Webseite. Für CWK X/HX/SX und EX gelten die getrennten Tabellen aus dem aktuellen CWK-Datenblatt oben. Mit * markierte Stromstufen sind nur als WWK erhältlich.
 
 Werkstoffe: Stahl, INOX, Aluminium.
-Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.
+Passendes Zubehör: DVS 410, Zwischenschlauchpaket, MG500, MF405W, MF240W, Elektrodenkabel 25–90 mm², Massekabel 25–90 mm², Drahtvorschubrollen HyperMIG X.
 
 ### MAHE HyperMIG TWIN
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/
@@ -1208,6 +1208,19 @@ URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-25/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-25 · Preis: auf Anfrage (CHF)
 Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180.
 Ausstattung: Querschnitt: 25 mm²; Länge: 4 m; Für: Theta 60 · 120 · 180 (HSC / AUT).
+
+### MAHE MG500
+URL: https://www.ves-tech.ch/produkte/zubehoer/mg500/
+Kategorie: Zubehör / Brenner · Typ: Brenner · Art.-Nr.: MG500 · Preis: auf Anfrage (CHF)
+Wassergekühlter MIG/MAG-Brenner mit Grafikdisplay und Fernbedienung, 500 A bei 60 % Einschaltdauer, 4 m Länge.
+Der MG500 verbindet einen wassergekühlten MIG/MAG-Brenner mit grafischer Anzeige und Fernbedienung direkt am Griff. Die Anzeige ist am Arbeitsplatz ablesbar; die Bedientasten liegen am Brenner. MAHE führt den MG500 als Zubehör der HyperMIG-X-Serie auf.
+- Leistung und Länge: MAHE nennt eine Belastbarkeit von 500 A bei 60 % Einschaltdauer und eine verfügbare Schlauchpaketlänge von 4 m. Diese Angaben beziehen sich auf den MG500-Brenner.
+- Bedienung am Griff: Das Grafikdisplay ergänzt die Fernbedienung am Brenner. Die nutzbaren Bedienfunktionen stimmen wir mit der Steuerung Ihrer konkreten Anlage ab.
+- Für Ihr Angebot: Nennen Sie die genaue Stromquelle, das Bedienpanel und die vorhandene Wasserkühlung. Wir klären Anschlüsse und Ausführung und bieten den MG500 passend zu Ihrer Konfiguration an.
+Weiterführend: [MAHE HyperMIG X](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/)
+Weiterführend: [MAHE MF405W](https://www.ves-tech.ch/produkte/zubehoer/mf405w/)
+Weiterführend: [Brenner](https://www.ves-tech.ch/produkte/zubehoer/brenner/)
+Ausstattung: Belastbarkeit: 500 A bei 60 % ED; Kühlung: wassergekühlt; Länge: 4 m; Verfahren: MIG/MAG; Anzeige: Grafikdisplay; Bedienung: Fernbedienung am Brenner.
 
 ### MAHE MF405W
 URL: https://www.ves-tech.ch/produkte/zubehoer/mf405w/

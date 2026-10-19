@@ -1128,5 +1128,19 @@
    1000,
    1127
   ]
+ },
+ "2026/08/MG500_A.png": {
+  "key": "mg500-a-9568c9",
+  "w": 864,
+  "h": 1821,
+  "ratio": 2.1076,
+  "sizes": [
+   400,
+   864
+  ],
+  "local": true,
+  "folder": "p",
+  "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/MG500_A.png",
+  "source_sha256": "c48d286aded71c98f76e21777f5fcd4c28a96fa8d8871965320dca8c5974119f"
  }
 }

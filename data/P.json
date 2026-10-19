@@ -821,6 +821,23 @@
   }
  },
  {
+  "id": "mg500",
+  "cat": "zubehoer",
+  "sub": "Brenner",
+  "vt": "Brenner",
+  "name": "MG500",
+  "img": "2026/08/MG500_A.png",
+  "desc": "Wassergekühlter MIG/MAG-Brenner mit Grafikdisplay und Fernbedienung, 500 A bei 60 % Einschaltdauer, 4 m Länge.",
+  "specs": {
+   "Belastbarkeit": "500 A bei 60 % ED",
+   "Kühlung": "wassergekühlt",
+   "Länge": "4 m",
+   "Verfahren": "MIG/MAG",
+   "Anzeige": "Grafikdisplay",
+   "Bedienung": "Fernbedienung am Brenner"
+  }
+ },
+ {
   "id": "mf405w",
   "cat": "zubehoer",
   "sub": "Brenner",

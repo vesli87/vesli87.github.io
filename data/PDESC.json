@@ -398,5 +398,10 @@
     "fr": "Poste MIG/MAG refroidi par eau avec deux dévidoirs pour différents fils ; au choix, panneau graphique X ou panneau HX.",
     "it": "Saldatrice MIG/MAG raffreddata ad acqua con due trainafilo per fili diversi; a scelta pannello grafico X o pannello HX.",
     "en": "Water-cooled MIG/MAG system with two wire feeders for different wires; available with the graphic X or HX control panel."
+  },
+  "mg500": {
+    "fr": "Torche MIG/MAG refroidie par eau avec écran graphique et commande à distance, 500 A à 60 % de facteur de marche, longueur de 4 m.",
+    "it": "Torcia MIG/MAG raffreddata ad acqua con display grafico e comando a distanza, 500 A al 60 % di ciclo di lavoro, lunghezza di 4 m.",
+    "en": "Water-cooled MIG/MAG torch with graphic display and remote control, rated at 500 A at 60 % duty cycle, 4 m long."
   }
 }

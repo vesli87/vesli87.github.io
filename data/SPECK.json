@@ -404,5 +404,10 @@
     "fr": "Coupe recommandée",
     "it": "Taglio consigliato",
     "en": "Recommended cut"
+  },
+  "Belastbarkeit": {
+    "fr": "Courant admissible",
+    "it": "Corrente ammissibile",
+    "en": "Current rating"
   }
 }

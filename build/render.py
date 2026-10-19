@@ -403,11 +403,10 @@ def img_abs(path, size=1000):
 def product_social_image(lang, p):
     """Landscape share card only: keep catalogue and schema photos original.
 
-    The tall PSHB photograph lost its torch head in native link previews.
-    Its reviewed card contains the complete original photo without cropping.
+    Narrow torch photos use reviewed cards that contain the complete image.
     """
-    if p['id'] == 'pshb125':
-        return C.SITE + _ver(f'/assets/img/social/pshb125-{lang}.png')
+    if p['id'] in C.SOCIAL_CARDS:
+        return C.SITE + _ver(f'/assets/img/social/{p["id"]}-{lang}.png')
     return img_abs(p['img'], 1000)
 
 

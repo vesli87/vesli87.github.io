@@ -437,6 +437,7 @@ SUBTR     = _load("SUBTR")
 VTTR      = _load("VTTR")      # Geraetetypen (Feld vt) je Sprache
 PDESC     = _load("PDESC")
 PNAME     = _load("PNAME")     # Gattungsnamen je Sprache
+SOCIAL_CARDS = _load("SOCIAL_CARDS")  # Reviewed landscape previews for narrow photos
 SPECK     = _load("SPECK")
 SPECV     = _load("SPECV")
 PROC      = _load("PROC")        # 19 erklaerte Verfahren/Funktionen

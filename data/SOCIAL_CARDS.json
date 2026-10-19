@@ -16,5 +16,23 @@
       "type": "Plasma torch",
       "photo_note": "Manufacturer photograph: PSHB"
     }
+  },
+  "mg500": {
+    "de": {
+      "type": "MIG/MAG-Brenner",
+      "photo_note": "Grafikdisplay · Fernbedienung"
+    },
+    "fr": {
+      "type": "Torche MIG/MAG",
+      "photo_note": "Écran graphique · Commande à distance"
+    },
+    "it": {
+      "type": "Torcia MIG/MAG",
+      "photo_note": "Display grafico · Comando a distanza"
+    },
+    "en": {
+      "type": "MIG/MAG torch",
+      "photo_note": "Graphic display · Remote control"
+    }
   }
 }

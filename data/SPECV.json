@@ -506,5 +506,20 @@
     "fr": "MIG/MAG · MMA · TIG Lift Arc",
     "it": "MIG/MAG · MMA · TIG Lift Arc",
     "en": "MIG/MAG · MMA · TIG Lift Arc"
+  },
+  "500 A bei 60 % ED": {
+    "fr": "500 A à 60 % de facteur de marche",
+    "it": "500 A al 60 % di ciclo di lavoro",
+    "en": "500 A at 60 % duty cycle"
+  },
+  "Grafikdisplay": {
+    "fr": "Écran graphique",
+    "it": "Display grafico",
+    "en": "Graphic display"
+  },
+  "Fernbedienung am Brenner": {
+    "fr": "Commande à distance sur la torche",
+    "it": "Comando a distanza sulla torcia",
+    "en": "Remote control on the torch"
   }
 }

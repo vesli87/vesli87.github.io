@@ -323,8 +323,10 @@ def media_html(lang, p, nm):
         slides += (f'<figure class="galslide{" active" if i == 0 else ""}" '
                    f'id="gs-{e(p["id"])}-{i}" role="tabpanel" '
                    f'aria-labelledby="gt-{e(p["id"])}-{i}">'
+                   + f'<div class="dimg{R.dimg_klasse(b["img"])}">'
                    + R.img_tag(b["img"], DIMG_SIZES, cls="zoomable",
                                alt=b["alt"], eager=(i == 0), width=560)
+                   + '</div>'
                    + (f'<figcaption>{e(b["cap"])}</figcaption>' if b["cap"] else "")
                    + "</figure>")
 
@@ -342,13 +344,12 @@ def media_html(lang, p, nm):
                    + "</button>")
 
     return (f'<div class="dmedia" data-gal>'
-            f'<div class="dimg{R.dimg_klasse(*[b["img"] for b in bilder])}">'
+            f'<div class="galstage">'
             f'<button class="galnav prev" type="button" data-step="-1" '
             f'aria-label="{e(C.t(lang, "gal_prev"))}">‹</button>'
-            f'<div class="galstage">{slides}</div>'
+            f'{slides}'
             f'<button class="galnav next" type="button" data-step="1" '
-            f'aria-label="{e(C.t(lang, "gal_next"))}">›</button>'
-            f'</div>'
+            f'aria-label="{e(C.t(lang, "gal_next"))}">›</button></div>'
             f'<div class="galthumbs" role="tablist" '
             f'aria-label="{e(C.t(lang, "gal_label"))}">{thumbs}</div>'
             f'</div>')

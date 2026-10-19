@@ -261,9 +261,17 @@ führen X und HX ausdrücklich auf; EX/SX bleiben ausschliesslich bei HyperMIG X
 ergänzt die geprüften Herstellerlisten und wird vor dem Build validiert. Quelle für
 die Bedienung ist `HyperMIG_X_TFT_10_DE.pdf`, Abschnitt 4.2: Doppelpuls ist eine
 Option, JOB speichert die Betriebsart der Brennertaste nicht, bis zu acht Benutzer
-sind möglich. Bildwerte sind Beispiele, eine allgemeine Nachrüstbarkeit wird nicht
-zugesagt. Suchindex, `products.json::front_panels` und `llms-full.txt` enthalten
+sind möglich. Auf Wunsch des Inhabers entfallen die Hinweise auf beispielhafte
+Bildwerte in den Galeriebeschriftungen und im Bedienratgeber in DE/FR/IT.
+Eine allgemeine Nachrüstbarkeit wird nicht zugesagt. Suchindex,
+`products.json::front_panels` und `llms-full.txt` enthalten
 dieselben Erläuterungen. Die öffentlich sichtbaren Herstellerlinks bleiben erhalten.
+
+Jede Galeriefolie besitzt ihren eigenen, vor dem Laden reservierten Bildrahmen
+gemäss `render.dimg_klasse()`. Die Bildunterschrift steht mit kurzem Abstand
+ausserhalb des Rahmens. Breite Panelbilder übernehmen dadurch nicht mehr die
+Höhe des Gerätefotos; Pfeile, Miniaturen, Tastaturbedienung und die Darstellung
+ohne JavaScript bleiben erhalten.
 
 HyperMIG TWIN ist ein eigenes Produkt mit zwei Drahtvorschubkoffern und den
 sichtbaren Modellspalten 300/350/400 aus Tabelle 12372. Versteckte AJAX-Spalten

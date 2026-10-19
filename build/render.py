@@ -279,13 +279,9 @@ DIMG_EIMER = [
 
 
 def dimg_klasse(*pfade):
-    """Der Eimer fuer einen Rahmen. Bei mehreren Bildern zaehlt das hoechste.
+    """Reserviertes Bildverhaeltnis; jede Galeriefolie nutzt ihren eigenen Rahmen.
 
-    Eine Galerie hat einen Rahmen fuer alle Folien. Waehlt man ihn nach der
-    ersten, werden die anderen abgeschnitten - beim MLF 100 gemessen: die
-    beiden Hochformate wurden 619 und 638 px hoch in einem 260 px hohen
-    Rahmen. Also bestimmt die hoechste Folie, und die breite bekommt Luft
-    darueber und darunter.
+    Bei mehreren angegebenen Pfaden bestimmt weiterhin das hoechste Bild.
     """
     verhaeltnisse = [m["ratio"] for m in (MANIFEST.get(C.full_img(p)) for p in pfade)
                      if m and m.get("ratio")]

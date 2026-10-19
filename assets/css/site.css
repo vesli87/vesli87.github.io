@@ -384,22 +384,14 @@
      eine Miniatur tauscht das grosse Bild – dieselbe Bedienung wie in jedem
      Shop, und ohne JavaScript stehen einfach alle Bilder untereinander. */
   .dmedia{display:grid;gap:14px}
-  /* Die Bühne füllt den Rahmen absolut aus. Der Rahmen hat sein Verhältnis
-     aus der Klasse, also eine feste Höhe - die Prozentangaben der Bilder darin
-     gehen damit auf. */
-  /* Die Bühne lag absolut im Rahmen - das ging nur, solange der Rahmen eine
-     feste Höhe hatte. Jetzt steht sie im Fluss, und alle Folien liegen in
-     derselben Rasterzelle übereinander: die Bühne ist so hoch wie die höchste
-     Folie, der Rahmen wächst mit, und beim Umschalten springt nichts. */
-  .galstage{position:absolute;inset:5%;display:grid;place-items:center}
-  /* display:none für die inaktiven Folien, nicht visibility:hidden: so liegt
-     nur eine Folie im Raster, und ohne JavaScript genügt ein display:grid in
-     der noscript-Regel, um alle untereinander zu stellen. Die Höhe des Rahmens
-     hängt ohnehin nicht an den Folien, sondern am Verhältnis seiner Klasse. */
+  /* Jede Folie reserviert ihren eigenen Bildrahmen schon vor dem Laden.
+     Ein breites Bedienpanel übernimmt so nicht die Höhe des Gerätefotos.
+     Die Bildunterschrift folgt ausserhalb des Rahmens direkt darunter. */
+  .galstage{position:relative;display:grid;min-width:0}
+  /* Ohne JavaScript zeigt die noscript-Regel alle Folien untereinander. */
   .galslide{display:none;margin:0;width:100%}
-  .galslide.active{display:grid;place-items:center;gap:12px;height:100%}
-  .galslide img{max-width:100%;max-height:100%;width:auto;height:auto;
-    object-fit:scale-down;background:#fff}
+  .galslide.active{display:grid;gap:10px}
+  .galslide .dimg{width:100%}
   .galslide figcaption{color:var(--muted);font-size:12.5px;line-height:1.5;text-align:left;width:100%}
   /* Dasselbe fuer ein einzelnes Bild ohne Diaschau - etwa bei den
      Occasion-Maschinen, wo unter dem Foto steht, was es wirklich zeigt. */

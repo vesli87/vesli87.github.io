@@ -768,6 +768,105 @@ test('explicit carousel play resumes while its button retains keyboard or touch 
   assert.equal(dots[0].getAttribute('aria-pressed'), 'false');
 });
 
+function featuredCarousel({ reduced = false, interval = '3000' } = {}) {
+  let hero, pause, previous, next, status, slides, dots;
+  const durations = [], mediaEvents = {};
+  const runtime = app({ prepare(context, elements) {
+    const doc = context.document;
+    context.window.VT.i18n = { slide_play: 'Continue' };
+    context.window.matchMedia = () => ({ matches: reduced,
+      addEventListener(name, fn) { mediaEvents[name] = fn; } });
+    const intervalFn = context.setInterval;
+    context.setInterval = (fn, ms) => { durations.push(ms); return intervalFn(fn, ms); };
+    hero = uiNode(doc, { 'data-interval': interval });
+    pause = uiNode(doc, { 'aria-label': 'Pause' }); pause.firstElementChild = {};
+    status = uiNode(doc); status.textContent = '';
+    slides = Array.from({ length: 6 }, (_, i) => uiNode(doc, { 'data-slide-title': 'Product ' + i }));
+    dots = slides.map((_, i) => {
+      const node = uiNode(doc, { 'data-i': i });
+      node.closest = selector => selector === '.hdot' ? node : null;
+      return node;
+    });
+    [previous, next] = [-1, 1].map(step => {
+      const node = uiNode(doc, { 'data-hero-step': step });
+      node.closest = selector => selector === '[data-hero-step]' ? node : null;
+      return node;
+    });
+    hero.querySelectorAll = selector => selector === '.hero-slide' ? slides : selector === '.hdot' ? dots : [];
+    hero.children.set('[data-hpause]', pause); hero.children.set('[data-hero-status]', status);
+    hero.contains = node => [pause, previous, next, ...dots].includes(node);
+    elements.set('[data-hero]', hero);
+  } });
+  return { ...runtime, hero, pause, previous, next, status, slides, dots, durations, mediaEvents,
+    tick() { [...runtime.intervals.values()].forEach(fn => fn()); },
+    click(node) { hero.events.click({ target: node }); },
+    active() { return slides.findIndex(slide => slide.classList.contains('active')); } };
+}
+test('featured products rotate every 3000ms with only the current product exposed', () => {
+  const f = featuredCarousel();
+  assert.deepEqual(f.durations, [3000]);
+  assert.equal(f.active(), 0);
+  f.tick(); assert.equal(f.active(), 1);
+  assert.equal(f.slides[0].inert, true);
+  assert.equal(f.slides[0].getAttribute('aria-hidden'), 'true');
+  assert.equal(f.slides[1].inert, false);
+  assert.equal(f.slides[1].getAttribute('aria-hidden'), 'false');
+  assert.equal(f.status.textContent, '');
+  for (let i = 0; i < 5; i++) f.tick();
+  assert.equal(f.active(), 0);
+});
+test('featured previous, next and product selectors wrap correctly and announce only manual choices', () => {
+  const f = featuredCarousel();
+  f.click(f.previous); assert.equal(f.active(), 5);
+  f.click(f.next); assert.equal(f.active(), 0);
+  f.click(f.dots[3]); assert.equal(f.active(), 3);
+  assert.equal(f.status.textContent, 'Product 3');
+  assert.equal(f.dots.filter(dot => dot.getAttribute('aria-pressed') === 'true').length, 1);
+  assert.equal(f.dots[3].getAttribute('aria-pressed'), 'true');
+  assert.equal(f.slides.filter(slide => !slide.inert).length, 1);
+});
+test('a user pause survives background tabs and focus changes until explicit play', () => {
+  const f = featuredCarousel();
+  f.context.document.activeElement = f.pause;
+  f.hero.events.focusin(); f.pause.events.click();
+  assert.equal(f.intervals.size, 0);
+  assert.equal(f.pause.getAttribute('aria-label'), 'Continue');
+  f.context.document.hidden = true; f.events.visibilitychange.forEach(fn => fn());
+  f.context.document.hidden = false; f.events.visibilitychange.forEach(fn => fn());
+  f.context.document.activeElement = {}; f.hero.events.focusout();
+  [...f.timers.values()].forEach(fn => fn());
+  assert.equal(f.intervals.size, 0);
+  f.pause.events.click(); assert.equal(f.intervals.size, 1);
+  assert.equal(f.pause.getAttribute('aria-label'), 'Pause');
+});
+test('background and page lifecycle changes stop and restart one featured-product timer', () => {
+  const f = featuredCarousel();
+  f.context.document.hidden = true; f.events.visibilitychange.forEach(fn => fn());
+  assert.equal(f.intervals.size, 0);
+  f.context.document.hidden = false; f.events.visibilitychange.forEach(fn => fn());
+  assert.equal(f.intervals.size, 1);
+  f.windowEvents.pagehide(); assert.equal(f.intervals.size, 0);
+  f.windowEvents.pageshow(); f.windowEvents.pageshow(); assert.equal(f.intervals.size, 1);
+});
+test('reduced motion defaults to static products but explicit play and manual selection still work', () => {
+  const f = featuredCarousel({ reduced: true });
+  assert.equal(f.intervals.size, 0);
+  assert.equal(f.pause.getAttribute('aria-label'), 'Continue');
+  assert.equal(f.pause.getAttribute('aria-pressed'), 'true');
+  f.click(f.next); assert.equal(f.active(), 1); assert.equal(f.intervals.size, 0);
+  f.context.document.activeElement = f.pause;
+  f.pause.events.click(); assert.equal(f.intervals.size, 1);
+  f.tick(); assert.equal(f.active(), 2);
+  f.mediaEvents.change({ matches: true }); assert.equal(f.intervals.size, 0);
+});
+test('invalid carousel timing cannot create a rapid or duplicate autoplay loop', () => {
+  for (const interval of ['0', '1', '-3000', 'nope', 'Infinity', '3000.2']) {
+    const f = featuredCarousel({ interval });
+    assert.deepEqual(f.durations, [5000]);
+    assert.equal(f.intervals.size, 1);
+  }
+});
+
 function visualViewportApp({ embedded = false } = {}) {
   const properties = new Map(), frames = [], viewportEvents = {};
   const viewport = { height: 812, offsetTop: 0, scale: 1,

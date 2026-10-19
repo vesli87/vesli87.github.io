@@ -534,6 +534,25 @@ Die Startseite zeigt HyperMIG TWIN, Theta 60 HSC und HyperCleaner ST mit echten
 Links, Anfragepreis und unveränderten Herstellerabbildungen auf weissen Flächen.
 Die bisherigen Hero-Dateien bleiben für Vorschau-Metadaten erhalten.
 
+Auf Wunsch des Inhabers wechselt der grosse Produktbereich seit demselben Tag
+alle **3 Sekunden**. `core.HOME_FEATURED` enthält in dieser Reihenfolge
+MPT 3001, HyperMIG TWIN, HyperTIG AX, HyperTIG DX, Omega AX und Beta DX.
+Omega AX und Beta DX zeigen die bestätigte Netzangabe 1~ 230 V; die HyperTIG-
+Modelle bleiben bei ihren eigenen 400-V-Angaben. Jeder Eintrag behält Bild,
+Produktname, Preis auf Anfrage und den sprachgleichen Produktlink gemeinsam.
+Die MPT-Illustration behält ihre vorhandene dreisprachige Bildunterschrift.
+Theta 60 HSC und HyperCleaner ST bleiben darunter als direkte Produktkarten.
+
+Die Bühne reserviert den Platz aller sechs Bilder, ohne Layoutsprünge beim
+Wechsel. Nur das erste Bild hat hohe Ladepriorität; die übrigen werden mit
+niedriger Priorität vorgeladen. Vor/Zurück, Produktauswahl und Pause/Weiter
+sind per Tastatur und Touch erreichbar. Tastaturfokus, ein Hintergrundtab
+oder reduzierte Bewegung verhindern automatische Wechsel. Bei reduzierter
+Bewegung kann die Person die Diaschau ausdrücklich starten. Ein manueller
+Pausenwunsch bleibt erhalten. Automatische Wechsel erzeugen keine fortlaufenden
+Screenreader-Meldungen; inaktive Produkte sind unsichtbar und inert.
+Ohne JavaScript stehen alle Produkte statisch und mit benutzbaren Links im HTML.
+
 Zwei neu erzeugte redaktionelle Makromotive illustrieren Elektronikdiagnose und
 Schweissen unter `assets/img/design/volt-*.webp`. Sie dienen ausschliesslich als
 dekorative Bilder, niemals als eigene Werkstatt-, Personen- oder Produktfotos.

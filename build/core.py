@@ -108,6 +108,10 @@ WORKSHOP = {
 # auch die 2048er Stufe, und damit reicht es fuer die doppelte Punktdichte.
 HERO_SLIDES = ["hero", "hero-mpt"]
 
+# Featured products in the VOLT homepage carousel. Order is shared by DE/FR/IT.
+HOME_FEATURED = ('mpt-3001', 'hypermig-twin', 'hypertig-ax', 'hypertig-dx',
+                 'omega-ax', 'beta-dx')
+
 # Kartenverweis auf die Werkstatt. Steht als hasMap im LocalBusiness.
 MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
            + WORKSHOP["street"].replace(" ", "+") + ",+"

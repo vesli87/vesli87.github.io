@@ -1721,6 +1721,56 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-process-card{grid-template-columns:minmax(0,1fr);gap:16px}
   .volt-process-symbol{width:90px;justify-self:start}
 }
+/* Homepage product carousel. Every slide shares one stage, so automatic
+   changes never move the headline or the content below the highlight. */
+@media screen{
+  .volt-feature-carousel{min-width:0;width:100%}
+  .volt-feature-stage{display:grid;min-width:0}
+  .volt-feature-slide.hero-slide{grid-area:1/1;display:grid;align-content:center;justify-items:stretch;background:transparent;min-width:0;transition:opacity .3s ease}
+  .volt-feature-slide .volt-home-product{width:100%}
+  .volt-feature-facts{font-size:15px!important;line-height:1.5;color:#222E38}
+  .volt-feature-slide .volt-product-plinth{margin:0;overflow:hidden}
+  .volt-feature-wide .volt-home-product{grid-template-columns:minmax(0,1fr);gap:14px;align-self:center}
+  .volt-feature-wide .volt-product-plinth{max-width:none;clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);padding:14px}
+  .volt-feature-wide .volt-product-plinth img{height:280px;width:100%;object-fit:contain}
+  .volt-feature-wide figcaption{font-size:12px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:80ch}
+  .volt-feature-wide .volt-home-product-label{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 18px;text-align:left;padding:0 10px}
+  .volt-feature-wide .volt-home-product-label h2{grid-column:1}
+  .volt-feature-wide .volt-home-product-label p{grid-column:1;margin:0;display:block}
+  .volt-feature-wide .volt-home-product-label .volt-text-link{grid-column:2;grid-row:1/4;align-self:center}
+  .volt-feature-controls{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 18px;padding-top:12px}
+  .volt-feature-actions,.volt-feature-dots{display:flex;justify-content:center;align-items:center;gap:4px}
+  .volt-feature-button{display:grid;place-items:center;min-width:44px;height:44px;border:1px solid #4F350F;border-radius:2px;background:#FFFFFFEC;color:var(--ink);font:inherit;cursor:pointer}
+  .volt-feature-button[data-hero-step]{font-size:26px;line-height:1}
+  .volt-feature-button:hover{background:#FFF1E9;border-color:var(--accent-ink)}
+  .volt-feature-controls .hdot{display:grid;place-items:center;width:38px;height:44px;margin:0;padding:0;border:0;border-radius:0;background:transparent;position:relative}
+  .volt-feature-controls .hdot::before{content:"";display:block;width:22px;height:5px;background:#FDFEFE;border:1px solid #69452D;transition:background .18s ease}
+  .volt-feature-controls .hdot::after{display:none}
+  .volt-feature-controls .hdot.active::before{background:#15222D;border-color:#15222D}
+  .volt-feature-controls .hdot:hover::before{background:#FFD2B9}
+}
+@media screen and (max-width:1150px){
+  .volt-feature-wide .volt-home-product{gap:10px}
+  .volt-feature-wide .volt-product-plinth img{height:260px}
+  .volt-feature-wide .volt-home-product-label{grid-template-columns:1fr;text-align:center}
+  .volt-feature-wide .volt-home-product-label .volt-text-link{grid-column:1;grid-row:auto;justify-self:center}
+}
+@media screen and (max-width:640px){
+  .volt-feature-stage{background:var(--accent) url('/assets/icons/design/volt-field.svg') center/cover}
+  .volt-feature-slide .volt-home-product{margin:0;background:transparent;padding:18px 16px}
+  .volt-feature-slide:not(.volt-feature-wide) .volt-home-product{grid-template-columns:minmax(0,1fr);gap:12px;max-width:400px;justify-self:center}
+  .volt-feature-slide:not(.volt-feature-wide) .volt-home-product-label{margin:0;padding:0 6px}
+  .volt-feature-wide .volt-home-product{padding:16px 12px}
+  .volt-feature-wide .volt-product-plinth{padding:12px}
+  .volt-feature-wide .volt-product-plinth img{height:200px}
+  .volt-feature-wide .volt-home-product-label{display:block;text-align:left;padding:0 8px}
+  .volt-feature-wide .volt-home-product-label p{margin:8px 0}
+  .volt-feature-wide figcaption{font-size:12px;line-height:1.45}
+  .volt-feature-controls{gap:0;padding-top:8px;background:#F4F6F7}
+  .volt-feature-actions{width:100%}
+  .volt-feature-controls .hdot{width:44px}
+  .volt-feature-controls .hdot::before{background:#fff}
+}
 @media print{
   .logo-swiss,.volt-home-hero,.volt-spotlights,.volt-service-link,.volt-intro-art,.volt-process-overview{display:none!important}
   .volt-panel-feature{display:block;margin:20pt 0}
@@ -1728,4 +1778,5 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-panel-image img{max-width:80mm}
   .volt-icon{display:none}
   .volt-product-media{padding:0}
+  .volt-feature-carousel{display:none}
 }

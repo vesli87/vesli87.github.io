@@ -624,7 +624,10 @@
     ],
     "volt_contact_title": "Ihr Ansprechpartner",
     "volt_sole_trader": "Einzelunternehmen",
-    "volt_device_view": "Gerät ansehen"
+    "volt_device_view": "Gerät ansehen",
+    "volt_featured_label": "Produkte im Fokus",
+    "volt_feature_prev": "Vorheriges Produkt",
+    "volt_feature_next": "Nächstes Produkt"
   },
   "fr": {
     "locale": "fr_CH",
@@ -1250,7 +1253,10 @@
     ],
     "volt_contact_title": "Votre interlocuteur",
     "volt_sole_trader": "Entreprise individuelle",
-    "volt_device_view": "Voir l’appareil"
+    "volt_device_view": "Voir l’appareil",
+    "volt_featured_label": "Appareils à découvrir",
+    "volt_feature_prev": "Appareil précédent",
+    "volt_feature_next": "Appareil suivant"
   },
   "it": {
     "locale": "it_CH",
@@ -1876,6 +1882,9 @@
     ],
     "volt_contact_title": "Il vostro interlocutore",
     "volt_sole_trader": "Ditta individuale",
-    "volt_device_view": "Vedi l’apparecchio"
+    "volt_device_view": "Vedi l’apparecchio",
+    "volt_featured_label": "Apparecchi in evidenza",
+    "volt_feature_prev": "Apparecchio precedente",
+    "volt_feature_next": "Apparecchio successivo"
   }
 }

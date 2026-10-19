@@ -58,6 +58,29 @@ class VoltDesignTests(unittest.TestCase):
             self.assertEqual(re.sub('<[^>]+>', '', headline),
                              C.t(lang, 'volt_headline_1') + ' ' + C.t(lang, 'volt_headline_2'))
 
+    def test_featured_products_keep_each_image_link_caption_and_power_rating_together(self):
+        for lang in C.LANGS:
+            markup = P.home_featured(lang)
+            tags = Markup(markup).tags
+            self.assertEqual([a['data-product'] for _, a in tags if 'data-product' in a], list(C.HOME_FEATURED))
+            self.assertIn('data-interval="3000"', markup)
+            self.assertIn(R.e(C.IMGCAP['mpt-3001'][lang]), markup)
+            for pid in C.HOME_FEATURED:
+                slide = re.search(r'data-product="' + re.escape(pid) + r'"(.*?)</a></div>', markup, re.S).group(1)
+                self.assertIn(C.u_prod(lang, C.BY_ID[pid]), slide)
+                self.assertIn(R.e(C.pName(lang, C.BY_ID[pid])), slide)
+                if pid in ('omega-ax', 'beta-dx'):
+                    self.assertIn('230 V', slide)
+                elif pid.startswith('hypertig-'):
+                    self.assertIn('400 V', slide)
+            images = [a for tag, a in tags if tag == 'img']
+            self.assertEqual(images[0].get('fetchpriority'), 'high')
+            self.assertTrue(all(a.get('loading') == 'eager' and a.get('fetchpriority') == 'low' for a in images[1:]))
+            self.assertEqual(len([a for tag, a in tags if tag == 'button' and 'data-i' in a]), len(C.HOME_FEATURED))
+            # Without JS all products are usable; JS adds inert/aria-hidden only after initialization.
+            self.assertNotIn(' inert', markup)
+            self.assertIn('grid-area:auto!important', R.NOSCRIPT_CSS)
+
     def test_primary_navigation_marks_only_the_most_specific_section(self):
         for lang in C.LANGS:
             for page, expected in ((C.u_prod(lang, C.BY_ID['hypermig-twin']), C.u_products(lang)),

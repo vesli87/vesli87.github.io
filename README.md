@@ -46,6 +46,10 @@ skalierbare Eckrahmen. Originale Gerätefotos bleiben unverändert. Startseite,
 Produktdetails mit X-Panel, alle 19 Verfahrensübersichten, Service und Kontakt
 nutzen die gemeinsamen Vorlagen. Die neuen dekorativen Makromotive und ihre
 Herkunft sind in `build/volt_assets.json` dokumentiert. Details: §11 in MASTER_PROMPT.md.
+Der grosse Produktbereich wechselt alle 3 Sekunden zwischen MPT 3001,
+HyperMIG TWIN, HyperTIG AX/DX sowie Omega AX und Beta DX (je 230 V).
+`core.HOME_FEATURED` pflegt die Reihenfolge für alle Sprachen. Direktauswahl,
+Vor/Zurück, Pause, Tastaturfokus und reduzierte Bewegung werden unterstützt.
 
 - `data/`: gepflegte Produktdaten, Übersetzungen, `BUYING_GUIDE.json` für
   Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 21 eigenständige Unterkategorien.

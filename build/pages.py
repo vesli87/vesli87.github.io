@@ -617,6 +617,48 @@ def kachel_zusatz(lang, c):
     return " " + e(C.t(lang, "occ_aktuell", liste=", ".join(namen)))
 
 
+def home_featured(lang):
+    """Real catalogue products, with captions and links already in the HTML."""
+    slides, dots = [], []
+    for i, pid in enumerate(C.HOME_FEATURED):
+        product = C.BY_ID[pid]
+        wide = pid == 'mpt-3001'
+        details = [C.vtT(lang, product['vt'])]
+        detail = product['specs'].get('Arbeitsbereich' if wide else 'Netz')
+        if detail:
+            details.append(C.trV(lang, detail))
+        caption = C.IMGCAP.get(pid, {}).get(lang)
+        caption = f'<figcaption>{e(caption)}</figcaption>' if caption else ''
+        picture = R.img_tag(product['img'],
+                            '(max-width:640px) 85vw, 620px' if wide else
+                            '(max-width:640px) 45vw, (max-width:1150px) 320px, 350px',
+                            alt=C.pFullName(lang, product), width=620 if wide else 440,
+                            eager=i == 0, low_priority=i > 0)
+        slides.append(
+            f'<div class="hero-slide volt-feature-slide{ " volt-feature-wide" if wide else ""}{" active" if i == 0 else ""}" '
+            f'role="group" aria-roledescription="slide" '
+            f'aria-label="{e(C.t(lang,"hero_slide",n=i+1,m=len(C.HOME_FEATURED)))}" '
+            f'data-product="{e(pid)}" data-slide-title="{e(C.pName(lang,product))}">'
+            f'<a class="volt-home-product" href="{e(C.u_prod(lang,product))}">'
+            f'<figure class="volt-product-plinth">{picture}{caption}</figure>'
+            f'<div class="volt-home-product-label"><h2>{e(C.pName(lang,product))}</h2>'
+            f'<p class="volt-feature-facts">{e(" · ".join(details))}</p><p>{e(C.t(lang,"poa"))}</p>'
+            f'<span class="volt-text-link">{e(C.t(lang,"volt_device_view"))} '
+            '<span aria-hidden="true">→</span></span></div></a></div>')
+        dots.append(f'<button class="hdot{" active" if i == 0 else ""}" type="button" data-i="{i}" '
+                    f'aria-pressed="{"true" if i == 0 else "false"}" '
+                    f'aria-label="{e(C.pFullName(lang,product))}"></button>')
+    return (f'<div class="volt-feature-carousel" data-hero="products" data-interval="3000" '
+            f'role="region" aria-roledescription="carousel" aria-label="{e(C.t(lang,"volt_featured_label"))}">'
+            f'<div class="volt-feature-stage">{"".join(slides)}</div>'
+            '<div class="volt-feature-controls"><div class="volt-feature-actions">'
+            f'<button type="button" class="volt-feature-button" data-hero-step="-1" aria-label="{e(C.t(lang,"volt_feature_prev"))}"><span aria-hidden="true">‹</span></button>'
+            f'<button type="button" class="volt-feature-button" data-hpause aria-label="{e(C.t(lang,"slide_pause"))}"><span aria-hidden="true">❙❙</span></button>'
+            f'<button type="button" class="volt-feature-button" data-hero-step="1" aria-label="{e(C.t(lang,"volt_feature_next"))}"><span aria-hidden="true">›</span></button></div>'
+            f'<div class="volt-feature-dots">{"".join(dots)}</div></div>'
+            '<span class="sr-only" data-hero-status role="status" aria-live="polite"></span></div>')
+
+
 def page_home(lang):
     url, alts = C.u_home(lang), C.alternates("home")
     cards = ""
@@ -630,7 +672,6 @@ def page_home(lang):
             f'<div class="go">{e(C.t(lang,"card_open"))}</div></a>'
         )
     faq6 = C.EX[lang]["faq"][:6]
-    featured = C.BY_ID['hypermig-twin']
     spotlights = ''
     for pid in ('theta-60', 'hypercleaner-st'):
         product = C.BY_ID[pid]
@@ -649,11 +690,7 @@ def page_home(lang):
     <div class="cta-row"><a class="btn pri" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))} <span aria-hidden="true">→</span></a>
       <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a></div>
   </div>
-  <a class="volt-home-product" href="{e(C.u_prod(lang, featured))}">
-    <div class="volt-product-plinth">{R.img_tag(featured['img'], '(max-width:640px) 45vw, (max-width:1150px) 320px, 350px', alt=C.pFullName(lang, featured), eager=True, width=440)}</div>
-    <div class="volt-home-product-label"><h2>{e(C.pName(lang, featured))}</h2><p>{e(C.t(lang,'poa'))}</p>
-      <span class="volt-text-link">{e(C.t(lang,'volt_device_view'))} <span aria-hidden="true">→</span></span></div>
-  </a>
+  {home_featured(lang)}
 </div></section>
 <div class="wrap volt-spotlights">{spotlights}</div>
 <div class="wrap"><a class="volt-service-link" href="{e(C.u_service(lang))}">{R.design_icon('repair')}<span>{e(C.t(lang,'volt_service_title'))}</span><span aria-hidden="true">→</span></a></div>

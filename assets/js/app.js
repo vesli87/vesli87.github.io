@@ -707,11 +707,8 @@
   }());
 
   /* =============================== Hero ================================= */
-  /* Wechselbild alle 5 Sekunden. Drei Dinge, die ein Karussell sonst falsch
-     macht: Es laeuft weiter, waehrend jemand liest (deshalb Pause bei Hover und
-     Tastaturfokus), es laeuft im Hintergrundtab weiter (deshalb der
-     visibilitychange-Handler), und es ignoriert Menschen, die Bewegung
-     ausdruecklich abbestellt haben (deshalb prefers-reduced-motion). */
+  /* VOLT products rotate every 3 seconds. Keyboard focus, explicit pause,
+     background tabs and reduced-motion preferences stop automatic changes. */
   (function () {
     var hero = $('[data-hero]');
     if (!hero) return;
@@ -721,28 +718,42 @@
 
     var motion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)');
     var ruhig = motion && motion.matches;
-    var i = 0, timer = null, INTERVALL = 5000, angehalten = false;
+    var requestedInterval = Number(hero.getAttribute('data-interval'));
+    var INTERVALL = Number.isInteger(requestedInterval) && requestedInterval >= 3000 && requestedInterval <= 60000
+      ? requestedInterval : 5000;
+    var i = 0, timer = null, angehalten = false, motionOverride = false;
+    var status = hero.querySelector('[data-hero-status]');
 
-    function zeige(n) {
+    function zeige(n, manual) {
       i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) { s.classList.toggle('active', k === i); });
+      slides.forEach(function (s, k) {
+        s.classList.toggle('active', k === i);
+        s.setAttribute('aria-hidden', k === i ? 'false' : 'true');
+        s.inert = k !== i;
+      });
       dots.forEach(function (d, k) {
         d.classList.toggle('active', k === i);
         d.setAttribute('aria-pressed', k === i ? 'true' : 'false');
       });
       var img = slides[i].querySelector('img');
       if (img && img.getAttribute('loading') === 'lazy') img.removeAttribute('loading');
+      // Screen readers hear manual navigation only, never a new alert every 3s.
+      if (manual && status) status.textContent = slides[i].getAttribute('data-slide-title') || slides[i].getAttribute('aria-label');
     }
+    function paused() { return angehalten || (ruhig && !motionOverride); }
     function start(explicit) {
-      if (ruhig || timer || document.hidden || angehalten || (!explicit && hero.contains(document.activeElement))) return;
+      if (paused() || timer || document.hidden || (!explicit && hero.contains(document.activeElement))) return;
       timer = setInterval(function () { zeige(i + 1); }, INTERVALL);
     }
     function stopp() { clearInterval(timer); timer = null; }
 
     hero.addEventListener('click', function (ev) {
       var d = ev.target.closest('.hdot');
-      if (!d) return;
-      stopp(); zeige(parseInt(d.getAttribute('data-i'), 10) || 0); start();
+      var step = ev.target.closest('[data-hero-step]');
+      if (!d && !step) return;
+      stopp();
+      zeige(d ? parseInt(d.getAttribute('data-i'), 10) || 0 : i + (Number(step.getAttribute('data-hero-step')) < 0 ? -1 : 1), true);
+      start();
     });
     /* Kein Pausieren beim blossen Ueberfahren: das Hero fuellt den halben
        Bildschirm, der Zeiger liegt fast immer irgendwo darauf - das Karussell
@@ -751,7 +762,8 @@
     hero.addEventListener('focusin', stopp);
     hero.addEventListener('focusout', function () { setTimeout(start, 0); });
     if (motion && motion.addEventListener) motion.addEventListener('change', function (ev) {
-      ruhig = ev.matches; if (ruhig) stopp(); else start();
+      ruhig = ev.matches; motionOverride = false;
+      stopp(); start(); updatePause();
     });
 
     /* WCAG 2.2.2: was sich von selbst bewegt und laenger als fuenf Sekunden
@@ -765,18 +777,23 @@
         weiter: T.slide_play || pauseKnopf.getAttribute('aria-label')
       };
       pauseKnopf.addEventListener('click', function () {
-        angehalten = !angehalten;
-        if (angehalten) { stopp(); } else { start(true); }
-        pauseKnopf.setAttribute('aria-pressed', angehalten ? 'true' : 'false');
-        pauseKnopf.setAttribute('aria-label', angehalten ? beschriftung.weiter : beschriftung.pause);
-        pauseKnopf.firstElementChild.textContent = angehalten ? '\u25B6' : '\u2759\u2759';
+        if (paused()) { angehalten = false; motionOverride = ruhig; start(true); }
+        else { angehalten = true; motionOverride = false; stopp(); }
+        updatePause();
       });
-      pauseKnopf.setAttribute('aria-pressed', 'false');
+    }
+    function updatePause() {
+      if (!pauseKnopf) return;
+      pauseKnopf.setAttribute('aria-pressed', paused() ? 'true' : 'false');
+      pauseKnopf.setAttribute('aria-label', paused() ? beschriftung.weiter : beschriftung.pause);
+      pauseKnopf.firstElementChild.textContent = paused() ? '\u25B6' : '\u2759\u2759';
     }
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) { stopp(); } else { start(); }
     });
-    start();
+    window.addEventListener('pagehide', stopp);
+    window.addEventListener('pageshow', function () { start(); });
+    zeige(0); updatePause(); start();
   }());
 
   /* ============================== Galerie =============================== */

@@ -128,7 +128,10 @@ NOSCRIPT_CSS = (".tabpane{display:block!important}.tabbar{display:none}\n"
                 "    .galslide{display:grid!important;place-items:center;"
                 "gap:12px;margin-bottom:18px}\n"
                 "    .galnav,.galthumbs{display:none}\n"
-                ".form,.basket,.burger,[data-add]{display:none!important}")
+                ".form,.basket,.burger,[data-add]{display:none!important}\n"
+                ".volt-home-grid{align-items:start!important}\n"
+                ".volt-feature-slide{opacity:1!important;visibility:visible!important;grid-area:auto!important}\n"
+                ".volt-feature-controls{display:none!important}")
 
 # Der Bildrueckfall. Fehlt die lokale Kopie eines Herstellerbildes, laedt das
 # Bild stattdessen das Original von mahe-online.de; die Adresse steht als
@@ -294,7 +297,7 @@ def dimg_klasse(*pfade):
     return " ar-hoch"        # 5/6
 
 
-def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
+def img_tag(path, sizes, cls="", alt="", eager=False, width=None, low_priority=False):
     """<img> mit WebP-Srcset, Massen gegen CLS und Remote-Fallback."""
     m = MANIFEST.get(C.full_img(path))
     remote = C.REMOTE_IMG + C.full_img(path)
@@ -335,7 +338,8 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None):
     # erst nach dem Layout an - die schwerste und sichtbarste Datei startet
     # damit hinter Schriften und CSS. Das Hero der Startseite bekommt diese
     # Auszeichnung seit jeher (render.py::HERO_PRELOAD), das Produktbild nicht.
-    loading = 'fetchpriority="high" ' if eager else 'loading="lazy" '
+    loading = ('fetchpriority="high" ' if eager else
+               'loading="eager" fetchpriority="low" ' if low_priority else 'loading="lazy" ')
     # Rueckfall auf das Herstellerbild, falls die lokale Kopie fehlt: nur die
     # Adresse steht am Bild, das Verhalten liegt in app.js (bildRueckfall).
     # Frueher stand hier ein onerror-Attribut - 1530 Stueck ueber die Seite

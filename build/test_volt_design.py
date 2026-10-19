@@ -1,5 +1,6 @@
 """The redesign preserves useful content, model boundaries and language routes."""
 from html.parser import HTMLParser
+import re
 import unittest
 from unittest.mock import patch
 
@@ -53,6 +54,9 @@ class VoltDesignTests(unittest.TestCase):
                 self.assertIn(C.u_prod(lang, C.BY_ID[pid]), links)
                 self.assertIn(R.thumb(C.BY_ID[pid]).replace('-400.webp', '-1000.webp'), page)
             self.assertEqual(sum(tag == 'h1' for tag, a in tags), 1)
+            headline = re.search(r'<h1>(.*?)</h1>', page, re.S).group(1)
+            self.assertEqual(re.sub('<[^>]+>', '', headline),
+                             C.t(lang, 'volt_headline_1') + ' ' + C.t(lang, 'volt_headline_2'))
 
     def test_primary_navigation_marks_only_the_most_specific_section(self):
         for lang in C.LANGS:

@@ -644,7 +644,7 @@ def page_home(lang):
 <section class="volt-home-hero"><div class="wrap volt-home-grid">
   <div class="volt-home-copy">
     <p class="p-eyebrow">{e(C.t(lang,'site_name'))} · MAHE</p>
-    <h1><span>{e(C.t(lang,'volt_headline_1'))}</span><span>{e(C.t(lang,'volt_headline_2'))}</span></h1>
+    <h1><span>{e(C.t(lang,'volt_headline_1'))}</span> <span>{e(C.t(lang,'volt_headline_2'))}</span></h1>
     <p class="volt-disciplines">{e(C.t(lang,'volt_disciplines'))}</p>
     <div class="cta-row"><a class="btn pri" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))} <span aria-hidden="true">→</span></a>
       <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a></div>

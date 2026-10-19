@@ -1206,7 +1206,7 @@
         "<p>Les travaux ont lieu chez {partner}, {ws_street}, {ws_zip} {ws_city}. Convenez de la réception avant le transport. Bronschhofen est le siège et l’adresse de facturation, pas l’adresse de l’atelier.</p><p>La <a href=\"{url_contact}\">page de contact</a> permet de joindre votre interlocuteur et de demander la prestation souhaitée. Le rendez-vous et le déroulement sont convenus personnellement.</p>"
       ]
     ],
-    "volt_headline_1": "La technique avec",
+    "volt_headline_1": "La technique de",
     "volt_headline_2": "précision",
     "volt_disciplines": "Électronique. Soudage. Découpe. Nettoyage. Automatisation.",
     "volt_process_overview": "Les procédés en un coup d’œil",
@@ -1832,7 +1832,7 @@
         "<p>I lavori si svolgono presso {partner}, {ws_street}, {ws_zip} {ws_city}. Concordate l’accettazione prima del trasporto. Bronschhofen è la sede e l’indirizzo di fatturazione, non l’indirizzo dell’officina.</p><p>La <a href=\"{url_contact}\">pagina di contatto</a> permette di raggiungere il vostro interlocutore e richiedere il servizio desiderato. Appuntamento e svolgimento vengono concordati personalmente.</p>"
       ]
     ],
-    "volt_headline_1": "Tecnica con",
+    "volt_headline_1": "Tecnica di",
     "volt_headline_2": "precisione",
     "volt_disciplines": "Elettronica. Saldatura. Taglio. Pulizia. Automazione.",
     "volt_process_overview": "Panoramica dei processi",

@@ -14,6 +14,7 @@ Enthält:
 Kein externes Paket nötig – läuft mit der system-Python 3.9.
 """
 
+from urllib.parse import urlsplit
 import json
 import datetime
 import os
@@ -423,7 +424,8 @@ PDESC     = _load("PDESC")
 PNAME     = _load("PNAME")     # Gattungsnamen je Sprache
 SPECK     = _load("SPECK")
 SPECV     = _load("SPECV")
-PROC      = _load("PROC")        # 7 Verfahren
+PROC      = _load("PROC")        # 19 erklaerte Verfahren/Funktionen
+PROCESS_GUIDE = _load("PROCESS_GUIDE")
 DLS       = _load("DLS")         # 7 Download-PDFs
 FEAT      = _load("FEAT")        # 19 Verfahrens-Icons
 HL        = _load("HL")
@@ -1228,3 +1230,60 @@ def alternates(kind, **kw):
         elif kind == "page":     out[l] = u_page(l, kw["key"])
         elif kind == "service":  out[l] = u_service(l, kw.get("key"))
     return out
+
+
+def process_text(lang, process):
+    """The same complete copy feeds HTML, search and machine-readable text."""
+    return ' '.join(process[key][lang] for key in ('d', 'principle', 'use', 'setup'))
+
+
+def validate_process_guide():
+    """Reject incomplete translations, unsafe anchors and broken references before build."""
+    def translated(value):
+        if (not isinstance(value, dict) or set(value) != set(LANGS)
+                or any(not isinstance(value[l], str) or not value[l].strip() for l in LANGS)):
+            raise ValueError('Process copy needs complete DE/FR/IT text')
+
+    groups = {x['id'] for x in PROCESS_GUIDE['groups']}
+    sources = {x['id'] for x in PROCESS_GUIDE['sources']}
+    seen = set()
+    for process in PROC:
+        key = process['id']
+        if not re.fullmatch(r'[a-z][a-z0-9-]*', key) or key in seen:
+            raise ValueError('Invalid/duplicate process anchor')
+        seen.add(key)
+        if process['group'] not in groups or not process['sources'] or not set(process['sources']) <= sources:
+            raise ValueError('Unknown process group/source')
+        if process['ic'] is not None and (process['ic'] not in FEAT or not FEAT[process['ic']].get('img')):
+            raise ValueError('Missing manufacturer process symbol')
+        if not process['products'] or any(pid not in BY_ID for pid in process['products']):
+            raise ValueError('Unknown process product')
+        for field in ('n', 'd', 'principle', 'use', 'setup'):
+            translated(process[field])
+    for group in PROCESS_GUIDE['groups']:
+        translated(group['n']); translated(group['d'])
+        if not re.fullmatch(r'[a-z][a-z0-9-]*', group['anchor']) or group['anchor'] in seen:
+            raise ValueError('Invalid process group anchor')
+        seen.add(group['anchor'])
+    keys = set(PROCESS_GUIDE['de'])
+    for lang in LANGS:
+        guide = PROCESS_GUIDE[lang]
+        if set(guide) != keys:
+            raise ValueError('Process guide translations differ')
+        if not all(row['target'] in {p['id'] for p in PROC} for row in guide['comparison']):
+            raise ValueError('Unknown process comparison target')
+        for field, fields in (('comparison', ('target', 'n', 'principle', 'focus')),
+                              ('glossary', ('n', 'd')), ('faq', ('q', 'a'))):
+            if len(guide[field]) != len(PROCESS_GUIDE['de'][field]):
+                raise ValueError('Process guide section translation is incomplete')
+            for row in guide[field]:
+                if set(row) != set(fields) or any(not isinstance(row[k], str) or not row[k].strip() for k in fields):
+                    raise ValueError('Process guide section needs complete translated copy')
+        for key, value in guide.items():
+            if isinstance(value, str) and not value.strip():
+                raise ValueError('Empty process guide translation')
+    for source in PROCESS_GUIDE['sources']:
+        translated(source['n'])
+        parsed = urlsplit(source['url'])
+        if parsed.username or parsed.password or parsed.scheme != 'https' or parsed.hostname not in ('mahe-online.de', 'www.twi-global.com', 'manuals.fronius.com'):
+            raise ValueError('Unexpected technical source URL')

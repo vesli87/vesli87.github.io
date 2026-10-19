@@ -830,19 +830,81 @@
   .faq-a p{color:var(--muted);line-height:1.7;font-size:15px;max-width:72ch}
 
   /* --------------------------------------------------------- Verfahren */
-  .procgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .srv{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:24px;position:relative;overflow:hidden}
-  /* Die grosse Schrittnummer stand in var(--line) #D8D3CA und kam damit auf
-     1.49:1 - ein Screenreader liest sie vor, sehen konnte man sie kaum.
-     #93856C haelt bei 34 px die Grenze von 3:1 fuer grosse Schrift ein
-     (Beige 3.01:1, Weiss 3.61:1) und bleibt trotzdem zurueckhaltend. */
-  .srv .no{font-family:'Anton';font-size:34px;color:#93856C;line-height:1}
-  .srv .pic{width:56px;height:56px;margin:14px 0 16px}
-  .srv .pic svg{width:100%;height:100%}
-  .srv h2{font-family:'Barlow Condensed';font-weight:700;text-transform:uppercase;font-size:22px;letter-spacing:.02em}
-  .srv p{color:var(--muted);font-size:14px;line-height:1.6;margin-top:8px}
-  .srv .bar{position:absolute;left:0;bottom:0;width:100%;height:3px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:.25s}
-  .srv:hover .bar{transform:scaleX(1)}
+  .process-guide{padding-top:8px}
+  .process-guide h2{font-family:'Barlow Condensed';font-weight:700;font-size:29px;line-height:1.2;letter-spacing:.01em;margin-bottom:16px}
+  .process-guide p{line-height:1.7}
+  .process-guide a{text-underline-offset:.2em}
+  .process-intro>p{max-width:90ch;font-size:16px}
+  .process-availability{margin-top:20px;padding:16px 20px;border-left:4px solid var(--accent);background:var(--panel);border-radius:0 6px 6px 0;color:var(--muted);font-size:14px!important}
+  .process-jump{display:flex;flex-wrap:wrap;gap:9px;margin:28px 0 38px}
+  .process-jump a{padding:9px 14px;border:1px solid var(--line);border-radius:5px;background:var(--panel);font-size:14px;font-weight:600}
+  .process-jump a:hover{border-color:var(--accent-ink);color:var(--accent-ink)}
+  .process-section{margin-top:48px;scroll-margin-top:24px}
+  .process-section-head{margin-bottom:22px;max-width:90ch}
+  .process-section-head p{font-size:16px;color:var(--muted)}
+  .process-table{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+  .process-table:focus-visible{outline:3px solid var(--accent-ink);outline-offset:4px}
+  .process-table-hint{display:none}
+  .process-table table{border-collapse:collapse;width:100%;min-width:660px;font-size:14px;line-height:1.6}
+  .process-table caption{text-align:left;padding:15px 18px;color:var(--muted);font-size:14px}
+  .process-table th,.process-table td{text-align:left;vertical-align:top;padding:15px 18px;border-top:1px solid var(--line);width:35%}
+  .process-table th:first-child{width:30%}
+  .process-table thead{background:var(--panel2)}
+  .process-table a{color:var(--accent-ink);text-decoration:underline}
+  .process-toc{margin-top:38px;padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:8px;scroll-margin-top:24px}
+  .process-toc-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+  .process-toc h3{font-family:'Barlow Condensed';font-size:21px;margin-bottom:10px}
+  .process-toc ul{list-style:none;padding:0;display:grid;gap:8px}
+  .process-toc li{font-size:14px;line-height:1.5}
+  .process-toc a{text-decoration:underline;color:var(--accent-ink)}
+  .process-article{display:grid;grid-template-columns:230px minmax(0,1fr);gap:28px;padding:28px;background:var(--panel);border:1px solid var(--line);border-radius:9px;margin-top:18px;scroll-margin-top:24px}
+  .process-number{font-family:'Anton';font-size:32px;line-height:1;color:#93856C}
+  .process-article h3{font-family:'Barlow Condensed';font-size:25px;line-height:1.2;margin:14px 0 0}
+  .process-symbol{display:block;width:150px;height:auto;max-width:100%;margin-top:20px;border-radius:4px}
+  .process-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px;min-width:0}
+  .process-copy .process-summary{grid-column:1/-1;font-size:17px;font-weight:600;line-height:1.6}
+  .process-principle{grid-column:1/-1}
+  .process-copy h4{font-size:14px;letter-spacing:.01em;margin-bottom:7px}
+  .process-copy p{font-size:14.5px;color:var(--muted)}
+  .process-copy .process-summary{color:var(--ink)}
+  .process-products{grid-column:1/-1;padding:16px 0 0;background:transparent;border-top:1px solid var(--line)}
+  .process-products>span{font-size:13px;color:var(--muted)}
+  .process-products ul{display:flex;flex-wrap:wrap;gap:6px 18px;list-style:none;padding:0;margin-top:7px;font-size:14px}
+  .process-products a{color:var(--accent-ink);text-decoration:underline}
+  .process-back{display:inline-block;margin-top:18px;font-size:14px;color:var(--accent-ink);text-decoration:underline}
+  .process-glossary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .process-glossary>div{padding:22px;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+  .process-glossary dt{font-weight:600;font-size:16px;margin-bottom:9px}
+  .process-glossary dd{margin:0;color:var(--muted);font-size:14.5px;line-height:1.7}
+  .process-contact{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:28px;background:var(--panel);border-left:4px solid var(--accent);padding:28px;margin-top:42px;border-radius:0 8px 8px 0}
+  .process-contact h2{margin-bottom:12px}
+  .process-contact p{max-width:78ch;font-size:15px;color:var(--muted)}
+  .process-contact .btn{white-space:normal;text-align:center;max-width:260px}
+  .process-sources{margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+  .process-sources h2{font-size:23px}
+  .process-sources p{max-width:100ch;font-size:14px;color:var(--muted)}
+  .process-sources ul{columns:2;column-gap:32px;padding-left:18px;margin-top:14px}
+  .process-sources li{font-size:13px;line-height:1.6;margin-bottom:8px;break-inside:avoid}
+  .process-sources a{text-decoration:underline}
+  @media(max-width:1000px){
+    .process-article{grid-template-columns:190px minmax(0,1fr);gap:24px;padding:24px}
+    .process-copy{grid-template-columns:1fr}
+    .process-contact{grid-template-columns:1fr}
+    .process-contact .btn{justify-self:start}
+  }
+  @media(max-width:700px){
+    .process-table-hint{display:block;font-size:13px;color:var(--muted);margin:10px 0}
+    .process-toc a{display:inline-block;padding:6px 0}
+    .process-toc-cols,.process-glossary{grid-template-columns:1fr}
+    .process-article{grid-template-columns:1fr;padding:20px;gap:20px}
+    .process-article-head{display:grid;grid-template-columns:minmax(0,1fr) 90px;gap:0 16px;align-items:start}
+    .process-article h3{font-size:23px;grid-column:1;margin-top:12px}
+    .process-symbol{grid-column:2;grid-row:1/3;margin:0;width:90px;align-self:center}
+    .process-toc{padding:20px}
+    .process-guide h2{font-size:26px}
+    .process-contact{padding:22px}
+    .process-sources ul{columns:1}
+  }
 
   /* ------------------------------------------------- Produkt-Ergänzung */
   .pcard{cursor:default}
@@ -930,7 +992,6 @@
 
   @media(max-width:900px){
     .usprow{grid-template-columns:1fr}
-    .procgrid{grid-template-columns:1fr}
     .kontaktwrap{grid-template-columns:1fr;gap:28px}
   }
   @media(max-width:700px){

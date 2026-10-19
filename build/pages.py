@@ -955,22 +955,67 @@ def process_followup(lang):
 
 def page_processes(lang):
     url, alts = C.u_page(lang, "processes"), C.alternates("page", key="processes")
-    cards = ""
-    for i, pr in enumerate(C.PROC, 1):
-        ic = C.FEAT.get(pr["ic"], {}).get("svg", "")
-        cards += (f'<article class="srv"><div class="no">{i:02d}</div>'
-                  f'<div class="pic" aria-hidden="true">{ic}</div>'
-                  f'<h2>{e(pr["n"].get(lang) or pr["n"]["de"])}</h2>'
-                  f'<p>{e(pr["d"].get(lang) or pr["d"]["de"])}</p>'
-                  f'<div class="bar" aria-hidden="true"></div></article>')
-    body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
-                                      (C.t(lang, "n_process"), None)],
+    guide = C.PROCESS_GUIDE[lang]
+    groups = C.PROCESS_GUIDE['groups']
+    jump = '<a href="#vergleich">' + e(guide['compare_title']) + '</a>'
+    jump += ''.join(f'<a href="#{e(g["anchor"])}">{e(g["n"][lang].split(" · ")[0])}</a>' for g in groups)
+    jump += '<a href="#parameter">' + e(guide['glossary_title']) + '</a>'
+    rows = ''.join(
+        f'<tr><th scope="row"><a href="#{e(r["target"])}">{e(r["n"])}</a></th>'
+        f'<td>{e(r["principle"])}</td><td>{e(r["focus"])}</td></tr>' for r in guide['comparison'])
+    compare = (f'<section id="vergleich" class="process-section"><h2 id="vergleich-title">{e(guide["compare_title"])}</h2>'
+               f'<p class="process-table-hint">{e(guide["table_hint"])}</p>'
+               f'<div class="process-table" role="region" aria-labelledby="vergleich-title" tabindex="0">'
+               f'<table><caption>{e(guide["compare_caption"])}</caption><thead><tr>'
+               f'<th scope="col">{e(guide["compare_mode"])}</th>'
+               f'<th scope="col">{e(guide["compare_principle"])}</th>'
+               f'<th scope="col">{e(guide["compare_focus"])}</th></tr></thead><tbody>{rows}</tbody></table></div></section>')
+    toc = ''
+    for group in groups:
+        links = ''.join(f'<li><a href="#{e(p["id"])}">{e(p["n"][lang])}</a></li>'
+                        for p in C.PROC if p['group'] == group['id'])
+        toc += f'<div><h3>{e(group["n"][lang].split(" · ")[0])}</h3><ul>{links}</ul></div>'
+    toc = (f'<nav id="inhalt" class="process-toc" aria-labelledby="process-toc-title">'
+           f'<h2 id="process-toc-title">{e(guide["jump_label"])}</h2><div class="process-toc-cols">{toc}</div></nav>')
+    sections = ''
+    for group in groups:
+        articles = ''
+        for index, process in enumerate(C.PROC, 1):
+            if process['group'] != group['id']:
+                continue
+            feature = C.FEAT.get(process['ic']) if process['ic'] else None
+            symbol = (f'<img class="process-symbol" src="{e(feature["img"])}" width="{feature["w"]}" '
+                      f'height="{feature["h"]}" alt="{e(C.featLabel(lang, process["ic"]))}" loading="lazy" decoding="async">') if feature else ''
+            products = ''.join(f'<li><a href="{e(C.u_prod(lang, C.BY_ID[pid]))}">{e(C.pFullName(lang, C.BY_ID[pid]))}</a></li>' for pid in process['products'])
+            articles += (f'<article id="{e(process["id"])}" class="process-article" aria-labelledby="title-{e(process["id"])}">'
+                         f'<div class="process-article-head"><span class="process-number" aria-hidden="true">{index:02d}</span>'
+                         f'<h3 id="title-{e(process["id"])}">{e(process["n"][lang])}</h3>{symbol}</div>'
+                         f'<div class="process-copy"><p class="process-summary">{e(process["d"][lang])}</p>'
+                         f'<div class="process-principle"><h4>{e(guide["principle_label"])}</h4><p>{e(process["principle"][lang])}</p></div>'
+                         f'<div><h4>{e(guide["use_label"])}</h4><p>{e(process["use"][lang])}</p></div>'
+                         f'<div><h4>{e(guide["setup_label"])}</h4><p>{e(process["setup"][lang])}</p></div>'
+                         f'<div class="process-products"><span>{e(guide["products_label"])}</span><ul>{products}</ul></div></div></article>')
+        sections += (f'<section id="{e(group["anchor"])}" class="process-section"><div class="process-section-head">'
+                     f'<h2>{e(group["n"][lang])}</h2><p>{e(group["d"][lang])}</p></div>{articles}'
+                     f'<a class="process-back" href="#inhalt">↑ {e(guide["back_top"])}</a></section>')
+    glossary = ''.join(f'<div><dt>{e(item["n"])}</dt><dd>{e(item["d"])}</dd></div>' for item in guide['glossary'])
+    glossary = f'<section id="parameter" class="process-section"><h2>{e(guide["glossary_title"])}</h2><dl class="process-glossary">{glossary}</dl></section>'
+    faq = ''.join(f'<details class="faq"><summary><h3>{e(item["q"])}</h3></summary><div class="faq-a"><p>{e(item["a"])}</p></div></details>' for item in guide['faq'])
+    faq = f'<section class="process-section"><h2>{e(guide["faq_title"])}</h2><div class="faqlist">{faq}</div></section>'
+    sources = ''.join(f'<li><a href="{e(source["url"])}" target="_blank" rel="noopener">{e(source["n"][lang])}</a></li>' for source in C.PROCESS_GUIDE['sources'])
+    sources = f'<section class="process-sources"><h2>{e(guide["sources_title"])}</h2><p>{e(guide["sources_intro"])}</p><ul>{sources}</ul></section>'
+    contact = (f'<section class="process-contact"><div><h2>{e(guide["contact_title"])}</h2><p>{e(guide["contact_text"])}</p></div>'
+               f'<a class="btn pri" href="{e(C.u_page(lang, "contact"))}">{e(guide["contact_button"])} →</a></section>')
+    body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (C.t(lang, "n_process"), None)],
                    h1=C.t(lang, "verf_h1"), desc=C.t(lang, "verf_sub"))
-            + f'<div class="catalog"><div class="wrap"><div class="procgrid">{cards}</div>'
-            + process_followup(lang) + '</div></div>')
+            + '<div class="catalog"><div class="wrap process-guide">'
+            + f'<section class="process-intro"><h2>{e(guide["intro_title"])}</h2><p>{e(guide["intro"])}</p>'
+            + f'<p class="process-availability">{e(guide["availability"])}</p></section>'
+            + f'<nav class="process-jump" aria-label="{e(guide["jump_label"])}">{jump}</nav>'
+            + compare + toc + sections + glossary + faq + contact + sources + process_followup(lang) + '</div></div>')
     ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "verf_title"), C.t(lang, "verf_desc")),
-          R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
-                           (C.t(lang, "n_process"), url)])]
+          R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)), (C.t(lang, "n_process"), url)]),
+          R.ld_faq_subset(lang, guide['faq'], url)]
     return url, R.document(lang, title=C.t(lang, "verf_title"), desc=C.t(lang, "verf_desc"),
                            url=url, alts=alts, jsonld_blocks=ld, body=body)
 

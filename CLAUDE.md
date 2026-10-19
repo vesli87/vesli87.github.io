@@ -37,6 +37,7 @@ Bearbeitet werden also:
 | AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |
 | Search-Console-/Bing-Verifizierung | `build/core.py` → `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` |
+| Schweissverfahren, Pulse und Funktionsratgeber | `data/PROC.json`, `data/PROCESS_GUIDE.json` |
 | Auswahlhilfen je Kategorie | `data/BUYING_GUIDE.json` |
 | Statistik und Zustimmung | `assets/js/analytics.js`, `build/config.public.json` |
 | Aussehen | `assets/css/site.css` |

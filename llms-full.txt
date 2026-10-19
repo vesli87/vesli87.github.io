@@ -1282,26 +1282,138 @@ Ausstattung: Verfahren: Mikroplasma, geglättet und gepulst; Einstellbereich Str
 
 ## Schweissverfahren von MAHE
 
-### MIS: Spritzerfrei
-Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.
+### MIS · geregelter Standardlichtbogen
+Spritzerarmer MIG/MAG-Lichtbogen für den Werkstattalltag.
+MIS steht bei MAHE für Multi-Induktion-System. Die Regelung beeinflusst das Lichtbogenverhalten und den Werkstoffübergang, um Spritzer und anschliessende Reinigungsarbeit zu reduzieren. MIS ist eine MIG/MAG-Kennlinie; es ist weder ein WIG-Verfahren noch automatisch ein Pulsprogramm.
+Allgemeine Fertigung, Reparaturen und Montage, wenn ein ruhig führbarer Lichtbogen und überschaubare Nacharbeit gefragt sind. Die passende Kennlinie richtet sich nach Draht, Gas und Werkstoff.
+Drahtvorschub, Lichtbogenlänge und Dynamik an der Probe abstimmen. Saubere Kontaktflächen, ein gleichmässiger Drahttransport und die richtige Gasabdeckung bleiben entscheidend; auch ein geregelter Lichtbogen ist nicht unter allen Bedingungen spritzerfrei.
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
 
-### Doppelpuls
-Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
+### MIG/MAG-Puls · kontrollierter Tropfenübergang
+Grundstrom und Stromimpulse steuern den Übergang des abschmelzenden Drahtes.
+Ein Grundstrom hält den Lichtbogen aufrecht, während kurze Stromspitzen die Tropfenablösung unterstützen. Bei passender Abstimmung ist ein regelmässiger, kurzschlussarmer Übergang möglich. Die Stromquelle stimmt Impulsform und Drahtvorschub über die gewählte Synergielinie aufeinander ab.
+Aluminium, nichtrostende Stähle und Stahl mit passendem Draht-/Gasprogramm. Interessant bei wechselnden Positionen und wenn weniger Spritzer als beim konventionellen Übergang gewünscht sind.
+Zuerst Werkstoff, Drahtdurchmesser und Schutzgas korrekt wählen, danach Drahtvorschub und Lichtbogenkorrektur einstellen. Eine Puls-Kennlinie ersetzt weder die Nahtvorbereitung noch die Prüfung von Einbrand und Flankenanbindung.
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
 
-### HyperPuls
-Dynamischer Impulslichtbogen für höhere Produktivität: schnelleres Schweissen und weniger Verzug, ideal für mehrlagige Schweissnähte.
+### Doppelpuls · zwei überlagerte Rhythmen
+Ein langsamer Leistungswechsel überlagert den eigentlichen MIG/MAG-Puls.
+Zusätzlich zum schnellen Impuls für den Tropfenübergang wechseln Phasen mit höherer und niedrigerer Leistung. Dieser langsamere Rhythmus beeinflusst Badbewegung und Nahtschuppung. So lässt sich eine gleichmässige, WIG-ähnliche Oberfläche erzielen, während weiterhin mit abschmelzendem Draht geschweisst wird.
+Besonders für sichtbare Aluminiumnähte und wiederkehrende Bauteile, bei denen ein gleichmässiges Nahtbild wichtig ist. Auch hier bestimmt die freigegebene Kennlinie, welche Werkstoffe und Drähte möglich sind.
+Doppelpulsfrequenz, Leistungsunterschied und Schweissgeschwindigkeit gemeinsam abstimmen. Zu langsames Führen kann trotz Puls viel Wärme einbringen. Eine regelmässige Schuppung allein belegt weder ausreichenden Einbrand noch eine fehlerfreie Naht.
+Geraete zum Vergleich: MAHE HyperMIG X
 
-### HyperForce
-Druckvoller Lichtbogen mit tiefem Einbrand und präziser Kontrolle des Schweissbades.
+### HyperPuls · dynamischer MAHE-Pulslichtbogen
+MAHE-Prozess für produktives Pulsschweissen mit kontrollierbarem Lichtbogen.
+HyperPuls ist eine herstellerspezifische MIG/MAG-Pulsregelung. MAHE beschreibt den Prozess für zügiges Schweissen und Mehrlagenaufgaben. Entscheidend ist, Abschmelzleistung und Schweissgeschwindigkeit so aufeinander abzustimmen, dass die geforderte Nahtgeometrie und Flankenanbindung erreicht werden.
+Fertigungsnähte und mehrlagige Verbindungen mit geeigneter Kennlinie, insbesondere wenn die Prozessführung gegenüber einem normalen Pulsprogramm weiter abgestimmt werden soll.
+Die tatsächliche Geschwindigkeit, der Verzug und die Zwischenlagentemperatur hängen vom Bauteil ab. HyperPuls und Doppelpuls sind unterschiedliche Funktionen; die genaue Kombination und Verfügbarkeit wird am Bedienpanel geprüft.
+Geraete zum Vergleich: MAHE HyperMIG X
 
-### HyperCold
-Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
+### HyperSpeedPuls · Pulsfunktion für die Fertigung
+Im HyperMIG-Programm genannte Pulsfunktion für die konkrete Produktionsaufgabe.
+MAHE führt HyperSpeedPuls in der Geräteausstattung der HyperMIG-X-Reihe auf. Für die Auswahl genügt der Funktionsname allein nicht: Benötigt werden die tatsächlich vorhandene Kennlinie, der Werkstoff und die vorgesehene Draht-/Gaskombination. Daraus wird der passende Arbeitspunkt bestimmt.
+Wiederkehrende Produktionsnähte, für die eine passende HyperMIG-Pulslösung geprüft werden soll. Ein Versuch am Originalwerkstoff zeigt, ob Geschwindigkeit, Nahtform und Spritzerverhalten zur Aufgabe passen.
+Bedienpanel, Softwarestand und freigeschaltetes Programm vor der Auswahl abgleichen. Im Versuch werden Schweissgeschwindigkeit, Nahtgeometrie, Nacharbeit und Bauteiltemperatur gemeinsam verglichen. Erst dieser Vergleich zeigt den Nutzen für die konkrete Fertigung.
+Geraete zum Vergleich: MAHE HyperMIG X
 
-### HyperRoot
-Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite, auch bei grösseren Spalten.
+### HyperForce · Einbrand und Lichtbogendruck
+Konzentrierter MIG/MAG-Lichtbogen für Schweissaufgaben mit höherem Einbrandbedarf.
+HyperForce richtet den Prozess auf einen druckvollen Lichtbogen und tiefen Einbrand aus. Das ist vor allem dort relevant, wo die Nahtflanken zuverlässig aufgeschmolzen werden müssen. Ob sich dadurch Nahtvorbereitung oder Lagenaufbau ändern lassen, wird an der konkreten Verbindung erprobt.
+Bauteile mit höherem Leistungsbedarf und anspruchsvolle Fugen, sofern Werkstoff, Position und Kennlinie dazu passen. Der Prozess kann eine Alternative zu einer weniger konzentrierten Lichtbogeneinstellung sein.
+Brennerwinkel, Stick-out, Schweissgeschwindigkeit und Fugenöffnung beeinflussen das Ergebnis deutlich. Tiefer Einbrand ist kein Ersatz für einen nachgewiesenen Lagenaufbau; Durchbrand und zu starke Wärmeeinbringung bleiben zu beurteilen.
+Geraete zum Vergleich: MAHE HyperMIG X
 
-### HyperUP
-Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.
+### HyperCold · Wärme gezielt begrenzen
+MAHE-Kennlinie für wärmeempfindliche Bauteile und Spaltüberbrückung.
+HyperCold ist auf eine kontrollierte Wärmeeinbringung und ein gut führbares Schmelzbad ausgelegt. MAHE nennt insbesondere spaltüberbrückende Aufgaben und Wurzellagen. Der Nutzen entsteht durch die passende Kombination aus Kennlinie, Leistung und Brennerbewegung.
+Dünnere oder verzugsempfindliche Konstruktionen sowie Verbindungen mit kontrolliertem Fügespalt. Die Eignung wird an Material, Nahtform und Blechdicke geprüft.
+Weniger Wärme darf nicht zu fehlender Flankenanbindung führen. Leistung und Geschwindigkeit so abstimmen, dass beide Bauteilkanten sicher aufschmelzen. Eine kalt geführte Einstellung garantiert weder verzugsfreie Teile noch unbegrenzte Spaltüberbrückung.
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
+
+### HyperRoot · die Wurzellage kontrollieren
+Aufgabenbezogene MIG/MAG-Regelung für den Nahtgrund.
+Bei der Wurzellage müssen Nahtgrund und beide Flanken aufschmelzen, ohne dass das Bad unkontrolliert durchfällt. HyperRoot ist im MAHE-Programm Teil der Cold-/Root-Funktionen. Wurzelspalt, Steghöhe und erreichbare Brennerposition werden deshalb zusammen mit der Kennlinie betrachtet.
+Erste Lagen von geeigneten Stumpfverbindungen und Aufgaben mit wechselnder Zugänglichkeit. Ob eine Gegenlage, Badsicherung oder zusätzliche Wurzelschutzmassnahme nötig ist, bestimmt die Verbindung.
+Den zulässigen Spaltbereich an einer Probe festlegen und die Nahtunterseite beurteilen. HyperRoot ersetzt keine geforderte Formierung oder Nahtprüfung. Das Bedienpanel entscheidet, ob Root separat oder innerhalb einer kombinierten Funktion verfügbar ist.
+Geraete zum Vergleich: MAHE HyperMIG X, MAHE MMS 2000 / 3000
+
+### HyperUP · vertikal aufwärts schweissen
+Wechsel von Heiss- und Kaltphasen für die Steignaht.
+HyperUP wechselt automatisch zwischen einer leistungsstärkeren und einer kühleren Prozessphase. Das unterstützt den Aufbau und die Kontrolle des Bades beim Schweissen nach oben. MAHE beschreibt damit Steignähte mit geradliniger Führung statt der üblichen Pendelbewegung.
+Vertikale Nähte, bei denen ein reproduzierbarer Badaufbau und eine gleichmässige Führung gesucht werden. Werkstoff und Kennlinie müssen für die vorgesehene Position geeignet sein.
+Phasenabstimmung, Nahtquerschnitt und Schweissgeschwindigkeit an einer Probe festlegen. Zu grosses Badvolumen kann auch mit HyperUP absacken. Die Funktion ist abhängig von Bedienpanel und gegebenenfalls freigeschaltetem Programm.
+Geraete zum Vergleich: MAHE HyperMIG X
+
+### TriArc · Cold, Root und Force kombiniert
+Dynamische Kennlinie mit leistungsabhängigem Lichtbogenverhalten.
+MAHE beschreibt TriArc als dynamischen Lichtbogen, der abhängig vom eingestellten Leistungsbereich Cold-, Root- oder Force-Verhalten nutzt. Die drei Namen bezeichnen unterschiedliche Schwerpunkte der Prozessführung, nicht drei gleichzeitig unabhängig arbeitende Lichtbögen.
+Aufgaben, bei denen innerhalb der vorgesehenen Kennlinie verschiedene Leistungsbereiche genutzt werden. Zur Auswahl werden Bauteildicke, Nahtaufbau und gewünschtes Badverhalten gemeinsam betrachtet.
+Der Funktionsumfang wird an der konkreten Stromquelle und ihrem Bedienpanel geprüft. Aus TriArc folgt weder eine automatische Erkennung der Bauteildicke noch eine pauschale Freigabe jeder Nahtaufgabe.
+Geraete zum Vergleich: MAHE HyperMIG X
+
+### TwinArc · Cold und Root kombiniert
+Kombinierte Kennlinie für wärmekontrollierte Aufgaben und Wurzeln.
+TwinArc verbindet nach MAHE Cold- und Root-Verhalten abhängig von der Leistungseinstellung. Es handelt sich um eine Regelungsfunktion für einen Lichtbogen. Die Bezeichnung ist nicht mit Tandemschweissen mit zwei gleichzeitig abschmelzenden Drahtelektroden gleichzusetzen.
+Verbindungen mit Fokus auf beherrschbaren Wärmeeintrag und die Ausbildung der Wurzellage. Der Einsatz wird über die verfügbare Cold-/Root-Kennlinie konkretisiert.
+Spalt, Steg und Schweissgeschwindigkeit bleiben Einstellgrössen des Anwenders. TwinArc ist nicht gleichbedeutend mit der HyperMIG-TWIN-Geräteausführung mit zwei Drahtvorschubkoffern.
+Geraete zum Vergleich: MAHE HyperMIG X
+
+### WIG/TIG-LF-Puls · den Badrhythmus führen
+Langsamere Stromwechsel machen Schmelz- und Entlastungsphasen gut erkennbar.
+Beim WIG-Pulsen wechseln Pulsstrom und Grundstrom, während die Wolframelektrode nicht abschmilzt. Bei niedriger Pulsfrequenz lässt sich der Wechsel zur Führung des Bades und zur rhythmischen Zugabe des Zusatzstabes nutzen. MAHE beschreibt LF-Puls insbesondere für kontrollierte Badführung und Zwangslagen.
+Manuelle Nähte, wärmeempfindliche Kanten und Positionen, in denen ein überschaubares Bad unterstützt. Zusatzwerkstoff und Handbewegung werden auf den gewählten Rhythmus abgestimmt.
+Pulsstrom, Grundstrom, Pulsdaueranteil und Frequenz gemeinsam einstellen. Ein hoher Grundstrom oder ein langer Pulsanteil kann den mittleren Strom stark erhöhen. LF-Puls ist weder AC-Frequenz noch ein anderes Zündverfahren.
+Geraete zum Vergleich: MAHE Beta DX, MAHE Omega AX
+
+### WIG/TIG-HF-Puls · schneller Stromwechsel
+Schnelle Stromimpulse beeinflussen Konzentration und Stabilität des Lichtbogens.
+Bei höherer Pulsfrequenz folgen die Stromimpulse so schnell, dass sie nicht mehr als einzelne Arbeitsrhythmen für die Hand dienen. Die Einstellung beeinflusst vielmehr Lichtbogenfokus und Badverhalten. HF-Puls regelt den Schweissstrom während der Naht; HF-Zündung erzeugt dagegen den berührungslosen Lichtbogenstart.
+Präzise WIG-Nähte und Aufgaben mit konzentrierter Lichtbogenführung. MAHE nennt bei Beta DX pro und Omega AX pro Pulsen bis 20 kHz; für andere Geräte gelten deren eigene Angaben.
+Eine höhere Frequenz ist nicht automatisch die bessere Einstellung. Pulsstrom, Grundstrom und Pulsanteil müssen zur Naht passen. Die syn-Ausführungen mit automatischer Pulseinstellung dürfen nicht mit dem manuellen Funktionsumfang der pro-Panels gleichgesetzt werden.
+Geraete zum Vergleich: MAHE Beta DX, MAHE Omega AX, MAHE HyperTIG AX, MAHE HyperTIG DX
+
+### HyperArcActive · aktive Lichtbogenregelung
+MAHE-Regelung zur Kompensation veränderlicher Lichtbogenlänge.
+Beim manuellen WIG-Schweissen verändert ein schwankender Abstand zwischen Elektrode und Werkstück die Lichtbogenbedingungen. HyperArcActive ist laut MAHE auf die Kompensation solcher Längenänderungen und einen gleichmässigeren Wärmeeintrag ausgelegt. Es ergänzt die Handführung, statt sie zu ersetzen.
+Zwangslagen, schwer zugängliche Nähte und wechselnde Brennerabstände. Die Funktion ist besonders dann interessant, wenn eine konstant kurze Lichtbogenlänge schwierig einzuhalten ist.
+Elektrodenanschliff, Gasabdeckung und Brennerführung bleiben wichtig. HyperArcActive ist eine Regelungsfunktion und nicht mit einem separaten Pulsprogramm oder automatischer Nahtverfolgung gleichzusetzen.
+Geraete zum Vergleich: MAHE Beta DX, MAHE Omega AX, MAHE HyperTIG AX, MAHE HyperTIG DX
+
+### WIG/TIG AC/DC · Polarität und Balance
+Gleichstrom für viele Stähle; Wechselstrom für typische Aluminiumaufgaben.
+Beim üblichen WIG-DC-Schweissen liegt die Elektrode am Minuspol. Für Aluminium wird häufig AC genutzt: Die positive Elektrodenphase unterstützt die Reinigung der Oxidschicht, die negative Phase die Wärmeeinbringung ins Werkstück. Die AC-Balance bestimmt das Verhältnis dieser Phasen.
+DC für geeignete Stahl- und Chromstahlnähte; AC für viele Aluminiumverbindungen. Werkstoffzustand, Zusatz und Oberflächenvorbereitung bestimmen die konkrete Verfahrenswahl.
+Balance und AC-Frequenz sind eigene Grössen: Balance verändert den Phasenanteil, AC-Frequenz die Zahl der Polaritätswechselzyklen. Zu viel positive Elektrodenphase belastet den Wolfram stärker. Die Balance-Anzeige ist geräteabhängig; Prozentwerte nicht ungeprüft übertragen.
+Geraete zum Vergleich: MAHE Omega AX, MAHE HyperTIG AX
+
+### AC Wave · Stromform und Lichtbogencharakter
+Sinus-, Trapez- oder Rechteckform verändern das Verhalten des AC-Lichtbogens.
+Die Stromform beschreibt den zeitlichen Verlauf der AC-Phasen. MAHE nennt Sinus, Trapez und Rechteck als wählbare Modulationen. Unterschiedlich steile Stromwechsel verändern Lichtbogencharakter und Geräusch; sie sind von Pulsfrequenz und AC-Balance getrennt zu betrachten.
+Abstimmung des Lichtbogens auf Fugenform, gewünschte Nahtbreite und persönliche Führungsweise bei AC-Schweissaufgaben.
+Verfügbare Formen am Bedienpanel prüfen und jeweils nur eine Einstellung verändern. Die Stromform ist kein Ersatz für die Wahl des passenden Strombereichs oder eine saubere Aluminiumoberfläche.
+Geraete zum Vergleich: MAHE Omega AX, MAHE HyperTIG AX
+
+### Mix TIG · AC- und DC-Abschnitte kombinieren
+Automatischer Wechsel zwischen AC- und DC-Abschnitten beim WIG-Schweissen.
+Mix TIG kombiniert AC-Abschnitte mit DC-Abschnitten. Das verbindet die Reinigungswirkung der AC-Phase mit einem anders geführten Energieeintrag während der DC-Phase. MAHE nennt diesen Modus insbesondere für Aluminium in Zwangslagen.
+Aluminiumaufgaben, bei denen das Zusammenspiel von Reinigungswirkung, Badkontrolle und Wärmeeintrag angepasst werden soll.
+AC/DC-Anteile und deren zeitliche Abstimmung richten sich nach dem verfügbaren Programm. Mix TIG ist nicht dasselbe wie AC-Balance innerhalb einer einzelnen AC-Periode und setzt eine entsprechend ausgerüstete AC/DC-Quelle voraus.
+Geraete zum Vergleich: MAHE Omega AX, MAHE HyperTIG AX
+
+### HyperSpot und ActiveSpot · gezielt heften
+Punkt- und Heftfunktionen unterstützen wiederkehrende kurze Schweissungen.
+HyperSpot ist die MAHE-Funktion für punktuelle WIG-Schweissungen. ActiveSpot wird bei HyperTIG AX und DX zusätzlich als schnelle Heftfunktion aufgeführt. Mit definierten Einstellungen lassen sich Bauteile für die anschliessende Naht positionieren; die beiden Funktionen werden am jeweiligen Panel unterschieden.
+Heftstellen an Blechen, Baugruppen und wiederkehrenden Verbindungen, bei denen eine gleichmässige Punktfolge wichtig ist.
+Strom, Punktdauer und Abkühlzeit auf Werkstoff und Fügespalt abstimmen. Gasvor- und Gasnachströmung sind auch beim Heften relevant. Diese WIG-Funktionen sind kein Widerstandspunktschweissen mit Zangenelektroden.
+Geraete zum Vergleich: MAHE Beta DX, MAHE Omega AX, MAHE HyperTIG AX, MAHE HyperTIG DX
+
+### ActiveBoost · Leistungsreserve richtig einordnen
+Unterstützende Gerätefunktion, kein eigener Puls- oder Schweissprozess.
+MAHE beschreibt ActiveBoost als zuschaltbare Leistungsreserve im Zusammenhang mit der verfügbaren Netzleistung und der Absicherung. Die Funktion betrifft die Leistungsbereitstellung der Stromquelle und ist von Lichtbogenprogrammen wie LF-Puls, HF-Puls oder Mix TIG zu unterscheiden.
+Aufgaben mit zeitweise erhöhtem Leistungsbedarf an entsprechend ausgerüsteten Beta-DX- oder Omega-AX-Ausführungen.
+Netzanschluss, Absicherung, Zuleitung und Einschaltdauer nach den Geräteunterlagen auslegen. ActiveBoost erlaubt weder eine höhere Sicherung ohne Prüfung noch eine beliebig hohe Dauerleistung.
+Geraete zum Vergleich: MAHE Beta DX, MAHE Omega AX
 
 ---
 
@@ -1311,7 +1423,7 @@ Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkont
 Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (mit Luft oder mit Wasser), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung.
 
 ### Welches Schweissverfahren brauche ich für Aluminium?
-Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht.
+Für Aluminium kommen MIG-Puls oder Doppelpuls mit geeigneter Draht-/Gaskennlinie sowie WIG AC/DC infrage. Die Wahl hängt von Dicke, Nahtzugang, Oberfläche und Fertigungstempo ab. Omega AX und HyperTIG AX sind AC/DC-Beispiele; HyperMIG X ist eine MIG/MAG-Baureihe. Die konkrete Ausstattung und ein Versuch am Bauteil entscheiden, welches Programm passt.
 
 ### Was ist der Unterschied zwischen WIG DC und WIG AC/DC?
 WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf. Nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl.
@@ -1335,7 +1447,7 @@ In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfragelis
 VES-TECH Swiss bearbeitet Anfragen aus der Schweiz und Liechtenstein. Lieferort, Termin und Abholung werden für jeden Auftrag vereinbart. Die Übergabe und Abholung der Geräte erfolgt in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch und Italienisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch.
 
 ### Was sind MIS-Schweissen und HyperPuls bei MAHE?
-MIS ist das spritzerfreie MAHE-Verfahren für den Kurzlichtbogen: Der Materialübergang wird geregelt, dadurch entstehen kaum Spritzer und die Nacharbeit entfällt weitgehend. HyperPuls ist der geregelte Impulslichtbogen für höhere Abschmelzleistung bei kontrolliertem Wärmeeintrag. Ergänzt wird das durch HyperCold (minimaler Verzug), HyperRoot (sichere Wurzel), HyperForce (tiefer Einbrand) und HyperUP (Steignaht).
+MIS ist ein geregelter MIG/MAG-Lichtbogen für spritzerarmes Arbeiten. HyperPuls ist eine MAHE-Pulsfunktion für produktive Schweissaufgaben; Doppelpuls ergänzt einen langsameren Leistungsrhythmus für Badbewegung und Nahtschuppung. Cold-, Root-, Force- und UP-Funktionen setzen andere Schwerpunkte. Welche Funktionen verfügbar sind, hängt von Gerät, Bedienpanel und Kennlinie ab.
 
 ### Verkauft VES-TECH Swiss auch gebrauchte Schweissanlagen?
 Ja. Unter Occasion stehen generalüberholte Anlagen, darunter Mikroplasma-Anlagen SAF-FRO PlasmaFix 51, Oerlikon PlasmaFix P+T und Oerlikon PlasmaFix 50 S. Jede Anlage wird vor der Übergabe geprüft. Eine Besichtigung in der Partnerwerkstatt in Herisau ist nach Vereinbarung möglich. Preis auf Anfrage.

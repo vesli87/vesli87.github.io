@@ -373,7 +373,7 @@ Damit die Geräte in ChatGPT-, Claude-, Perplexity- und Google-AI-Antworten auft
 - **`/llms.txt`** — kompakte Landkarte der Website im llms.txt-Format
 - **`/llms-full.txt`** — der komplette zitierfähige Inhalt in einer Datei:
   alle 79 Produkte mit Beschreibung, Besonderheiten, technischen Daten und Zubehör,
-  dazu die 7 Verfahren und alle 10 FAQ-Antworten
+  dazu 19 erklaerte Verfahren/Funktionen und alle 10 FAQ-Antworten
 - **`/data/products.json`** — maschinenlesbarer Katalog, dreisprachig, mit
   Verkäuferangaben und Lizenzhinweis
 - **`robots.txt` erlaubt KI-Crawler ausdrücklich** (GPTBot, OAI-SearchBot, ClaudeBot,
@@ -846,3 +846,22 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - Die Fremdmarkenprüfung akzeptiert zusätzlich vollständig zugeordnete Namen
   aus geprüften Einzelgeräte-Beschriftungen. MAHE bleibt als Ausnahme verboten;
   fehlende und unbekannte Herstellerzuordnungen werden weiterhin abgewiesen.
+
+
+## 22. Fachratgeber Schweissverfahren (19.10.2026)
+
+`data/PROC.json` enthaelt 19 Eintraege mit stabiler `id`, Gruppe,
+Herstellersymbol (optional), Kurztext, Wirkprinzip, Anwendung, Einstellhinweisen,
+Geraeteverweisen und Quellenzuordnung, jeweils vollstaendig in DE/FR/IT.
+`data/PROCESS_GUIDE.json` pflegt Vergleichstabelle, Inhaltsverzeichnis-Gruppen,
+Parametererklaerungen, sechs sichtbare FAQ und technische Quellen.
+`core.validate_process_guide()` prueft Uebersetzungen und Verweise vor dem Build.
+
+Die drei bisherigen Verfahren-URLs bleiben bestehen. Alles ist vorgerendert;
+Suchergebnisse fuehren direkt zum Prozessanker und durchsuchen den vollen Text.
+`llms-full.txt` uebernimmt die Erklaerungen. Die Seite nutzt die vorhandenen
+Herstellerbilder aus FEAT.img statt leerer FEAT.svg-Platzhalter. Unbelegte
+Wirkungsgrad-, Zeitersparnis- und Verzugsgarantien werden nicht ergaenzt.
+20-kHz-Pulsen wird ausdruecklich auf Beta DX pro/Omega AX pro bezogen; HF-Zuendung,
+Pulsfrequenz, AC-Frequenz und AC-Balance werden getrennt erklaert. Quellen fuer
+allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.

@@ -118,13 +118,25 @@
 - [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/): Mikroplasma-Stromquelle (Microplasma) ab 0,05 A für feinste Arbeiten: Folien von 0,01 mm, Drahtgitter und kleine Armaturen. (Mikroplasma)
 
 ## Verfahren
-- MIS: Spritzerfrei: Nahezu spritzerfreier Lichtbogen mit sehr guter Erfassung von Flanken und Wurzel, dadurch wenig Nacharbeit.
-- Doppelpuls: Automatisierter Impulslichtbogen mit WIG-Naht-Optik und einstellbarer Schuppung, ideal für Aluminium.
-- HyperPuls: Dynamischer Impulslichtbogen für höhere Produktivität: schnelleres Schweissen und weniger Verzug, ideal für mehrlagige Schweissnähte.
-- HyperForce: Druckvoller Lichtbogen mit tiefem Einbrand und präziser Kontrolle des Schweissbades.
-- HyperCold: Geringste Wärmeeinbringung, ideal für spaltüberbrückendes, verzugsarmes Schweissen an Dünnblech.
-- HyperRoot: Sichere, kontrollierte Wurzelschweissung mit sauberer Nahtunterseite, auch bei grösseren Spalten.
-- HyperUP: Optimiertes Steignahtschweissen (vertikal aufwärts) mit stabiler Schmelzbadkontrolle.
+- MIS · geregelter Standardlichtbogen: Spritzerarmer MIG/MAG-Lichtbogen für den Werkstattalltag.
+- MIG/MAG-Puls · kontrollierter Tropfenübergang: Grundstrom und Stromimpulse steuern den Übergang des abschmelzenden Drahtes.
+- Doppelpuls · zwei überlagerte Rhythmen: Ein langsamer Leistungswechsel überlagert den eigentlichen MIG/MAG-Puls.
+- HyperPuls · dynamischer MAHE-Pulslichtbogen: MAHE-Prozess für produktives Pulsschweissen mit kontrollierbarem Lichtbogen.
+- HyperSpeedPuls · Pulsfunktion für die Fertigung: Im HyperMIG-Programm genannte Pulsfunktion für die konkrete Produktionsaufgabe.
+- HyperForce · Einbrand und Lichtbogendruck: Konzentrierter MIG/MAG-Lichtbogen für Schweissaufgaben mit höherem Einbrandbedarf.
+- HyperCold · Wärme gezielt begrenzen: MAHE-Kennlinie für wärmeempfindliche Bauteile und Spaltüberbrückung.
+- HyperRoot · die Wurzellage kontrollieren: Aufgabenbezogene MIG/MAG-Regelung für den Nahtgrund.
+- HyperUP · vertikal aufwärts schweissen: Wechsel von Heiss- und Kaltphasen für die Steignaht.
+- TriArc · Cold, Root und Force kombiniert: Dynamische Kennlinie mit leistungsabhängigem Lichtbogenverhalten.
+- TwinArc · Cold und Root kombiniert: Kombinierte Kennlinie für wärmekontrollierte Aufgaben und Wurzeln.
+- WIG/TIG-LF-Puls · den Badrhythmus führen: Langsamere Stromwechsel machen Schmelz- und Entlastungsphasen gut erkennbar.
+- WIG/TIG-HF-Puls · schneller Stromwechsel: Schnelle Stromimpulse beeinflussen Konzentration und Stabilität des Lichtbogens.
+- HyperArcActive · aktive Lichtbogenregelung: MAHE-Regelung zur Kompensation veränderlicher Lichtbogenlänge.
+- WIG/TIG AC/DC · Polarität und Balance: Gleichstrom für viele Stähle; Wechselstrom für typische Aluminiumaufgaben.
+- AC Wave · Stromform und Lichtbogencharakter: Sinus-, Trapez- oder Rechteckform verändern das Verhalten des AC-Lichtbogens.
+- Mix TIG · AC- und DC-Abschnitte kombinieren: Automatischer Wechsel zwischen AC- und DC-Abschnitten beim WIG-Schweissen.
+- HyperSpot und ActiveSpot · gezielt heften: Punkt- und Heftfunktionen unterstützen wiederkehrende kurze Schweissungen.
+- ActiveBoost · Leistungsreserve richtig einordnen: Unterstützende Gerätefunktion, kein eigener Puls- oder Schweissprozess.
 
 ## Häufige Fragen
 - [Was kostet ein MAHE-Schweissgerät bei VES-TECH Swiss?](https://www.ves-tech.ch/faq/)

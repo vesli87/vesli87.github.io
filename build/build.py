@@ -189,9 +189,9 @@ def search_index(lang):
                          "t1": norm(C.subT(lang, s)), "t3": norm(C.catT(lang, c))})
     procs = [{"n": pr["n"].get(lang) or pr["n"]["de"],
               "d": pr["d"].get(lang) or pr["d"]["de"],
-              "u": C.u_page(lang, "processes"),
+              "u": C.u_page(lang, "processes") + "#" + pr["id"],
               "t1": norm(pr["n"].get(lang) or pr["n"]["de"]),
-              "t3": norm(pr["d"].get(lang) or pr["d"]["de"])} for pr in C.PROC]
+              "t3": norm(C.process_text(lang, pr))} for pr in C.PROC]
     dls = [{"n": d["t"].get(lang) or d["t"]["de"], "d": d["s"].get(lang) or d["s"]["de"],
             "u": d["u"], "t1": norm(d["t"].get(lang) or d["t"]["de"]),
             "t3": norm(d["s"].get(lang) or d["s"]["de"])} for d in C.DLS]
@@ -643,7 +643,9 @@ def llms_full():
     out += ["---", "", "## Schweissverfahren von MAHE", ""]
     for pr in C.PROC:
         out.append(f"### {pr['n']['de']}")
-        out.append(pr["d"]["de"])
+        for field in ('d', 'principle', 'use', 'setup'):
+            out.append(pr[field]['de'])
+        out.append('Geraete zum Vergleich: ' + ', '.join(C.pFullName(L, C.BY_ID[pid]) for pid in pr['products']))
         out.append("")
     out += ["---", "", "## Häufige Fragen und Antworten", ""]
     for q in C.EX[L]["faq"]:
@@ -683,6 +685,7 @@ def main():
     C.analytics_campaigns()
     C.web3forms_key()
     C.validate_editorial_guides()
+    C.validate_process_guide()
     written.clear()
     for d in MANAGED_DIRS:
         p = OUT / d

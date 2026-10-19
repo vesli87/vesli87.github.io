@@ -42,6 +42,8 @@ aktualisiert diese aus dem Netz. Änderungen an Herstellerdaten vor Übernahme p
 
 - `data/`: gepflegte Produktdaten, Übersetzungen, `BUYING_GUIDE.json` für
   Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 21 eigenständige Unterkategorien.
+- `data/PROC.json`, `PROCESS_GUIDE.json`: 19 erklaerte Schweissverfahren/Funktionen,
+  Vergleich, Parameter und FAQ in DE/FR/IT mit Herstellerquellen.
 - `build/core.py`, `render.py`, `pages.py`, `build.py`: Generator.
 - `assets/css/site.css`, `assets/js/app.js`, `assets/js/analytics.js`: Frontend.
 - `produkte/`, `fr/`, `it/` und andere Seiten: generiert, nicht von Hand ändern.

@@ -42,8 +42,8 @@
     "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss vereinbart Lieferung und Abholung in der Schweiz und in Liechtenstein für jeden Auftrag. Wir übernehmen Inbetriebnahme, Wartung, Reparaturen in der Partnerwerkstatt in Herisau und die Garantieabwicklung.",
     "accessory_context_wk300": "Zur Serie {device}: WK 300 ist für die MMS-3000-Serie angegeben. Bitte nennen Sie bei der Anfrage die vollständige Gerätebezeichnung und die vorhandenen Kühlanschlüsse.",
     "accessory_context_dvl420": "Zur Serie {device}: Bitte nennen Sie bei der Anfrage die genaue Ausführung Ihrer Stromquelle, das vorhandene Zwischenschlauchpaket und die benötigte Verbindungslänge.",
-    "verf_title": "MAHE-Schweissverfahren · MIS, HyperPuls, HyperCold | VES-TECH Swiss",
-    "verf_desc": "MAHE-Schweissverfahren verständlich erklärt: MIS, Doppelpuls, HyperPuls, HyperForce, HyperCold, HyperRoot und HyperUP mit ihren Einsatzbereichen.",
+    "verf_title": "Schweissverfahren · MIG-Puls, Doppelpuls & TIG | VES-TECH Swiss",
+    "verf_desc": "MIG/MAG-Puls, Doppelpuls, HyperPuls sowie WIG LF/HF-Puls, AC/DC und Mix TIG: Funktionsweise, Anwendungen, Einstellgrössen und passende MAHE-Geräte.",
     "dl_title": "Downloads · MAHE-Katalog, EN 1090 & Sicherheitsdatenblätter",
     "dl_desc": "MAHE-Produktkatalog, Konformitätszertifikat nach EN 1090 und Sicherheitsdatenblätter der Elektrolyte R1, RP1, P1, M1 und N1 als PDF.",
     "kontakt_title": "Kontakt · VES-TECH Swiss, Werkstatt Herisau AR",
@@ -112,7 +112,7 @@
       },
       {
         "q": "Welches Schweissverfahren brauche ich für Aluminium?",
-        "a": "Für Aluminium eignen sich zwei Wege: WIG AC/DC (z. B. MAHE HyperTIG AX oder Omega AX) für dünne Bleche und sichtbare Nähte sowie MIG/MAG mit Puls oder Doppelpuls (z. B. MAHE HyperMIG X) für höhere Abschmelzleistung ab etwa 2 mm Blechdicke. Reines WIG DC funktioniert bei Aluminium nicht, weil die Oxidschicht die Wechselstrom-Reinigungswirkung braucht."
+        "a": "Für Aluminium kommen MIG-Puls oder Doppelpuls mit geeigneter Draht-/Gaskennlinie sowie WIG AC/DC infrage. Die Wahl hängt von Dicke, Nahtzugang, Oberfläche und Fertigungstempo ab. Omega AX und HyperTIG AX sind AC/DC-Beispiele; HyperMIG X ist eine MIG/MAG-Baureihe. Die konkrete Ausstattung und ein Versuch am Bauteil entscheiden, welches Programm passt."
       },
       {
         "q": "Was ist der Unterschied zwischen WIG DC und WIG AC/DC?",
@@ -144,7 +144,7 @@
       },
       {
         "q": "Was sind MIS-Schweissen und HyperPuls bei MAHE?",
-        "a": "MIS ist das spritzerfreie MAHE-Verfahren für den Kurzlichtbogen: Der Materialübergang wird geregelt, dadurch entstehen kaum Spritzer und die Nacharbeit entfällt weitgehend. HyperPuls ist der geregelte Impulslichtbogen für höhere Abschmelzleistung bei kontrolliertem Wärmeeintrag. Ergänzt wird das durch HyperCold (minimaler Verzug), HyperRoot (sichere Wurzel), HyperForce (tiefer Einbrand) und HyperUP (Steignaht)."
+        "a": "MIS ist ein geregelter MIG/MAG-Lichtbogen für spritzerarmes Arbeiten. HyperPuls ist eine MAHE-Pulsfunktion für produktive Schweissaufgaben; Doppelpuls ergänzt einen langsameren Leistungsrhythmus für Badbewegung und Nahtschuppung. Cold-, Root-, Force- und UP-Funktionen setzen andere Schwerpunkte. Welche Funktionen verfügbar sind, hängt von Gerät, Bedienpanel und Kennlinie ab."
       },
       {
         "q": "Verkauft VES-TECH Swiss auch gebrauchte Schweissanlagen?",
@@ -623,8 +623,8 @@
     "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss organise la livraison et l’enlèvement en Suisse et au Liechtenstein selon accord pour chaque commande, assure la mise en service, l’entretien et les réparations à l’atelier partenaire de Herisau et gère la garantie.",
     "accessory_context_wk300": "Voir la gamme {device} : WK 300 est indiqué pour la série MMS 3000. Précisez dans votre demande la désignation complète de l’appareil et les raccordements de refroidissement existants.",
     "accessory_context_dvl420": "Voir la gamme {device} : précisez dans votre demande la version exacte du générateur, le faisceau intermédiaire existant et la longueur de liaison nécessaire.",
-    "verf_title": "Procédés de soudage MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
-    "verf_desc": "Découvrez les procédés de soudage MAHE et leurs applications : MIS sans projections, double pulsation, HyperPuls, HyperForce, HyperCold, HyperRoot et HyperUP.",
+    "verf_title": "Procédés · MIG pulsé, double pulsation & TIG | VES-TECH Swiss",
+    "verf_desc": "MIG/MAG pulsé, double pulsation, HyperPuls, TIG pulsé LF/HF, AC/DC et Mix TIG : principes, applications, réglages et choix des appareils MAHE.",
     "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
     "dl_desc": "Catalogue des produits MAHE, certificat de conformité EN 1090 et fiches de données de sécurité des électrolytes R1, RP1, P1, M1 et N1 en PDF.",
     "kontakt_title": "Contact · VES-TECH Swiss, atelier à Herisau AR",
@@ -693,7 +693,7 @@
       },
       {
         "q": "Quel procédé de soudage choisir pour l’aluminium ?",
-        "a": "Deux procédés conviennent pour l'aluminium : le TIG AC/DC (par ex. MAHE HyperTIG AX ou Omega AX) pour les tôles fines et les cordons visibles, et le MIG/MAG avec pulsation ou double pulsation (par ex. MAHE HyperMIG X) pour un taux de dépôt élevé à partir d'environ 2 mm. Le TIG DC pur ne convient pas à l'aluminium, car la couche d'oxyde nécessite l'effet décapant du courant alternatif."
+        "a": "Pour l’aluminium, on peut envisager MIG pulsé ou double pulsation avec une courbe fil/gaz adaptée, ou TIG AC/DC. Le choix dépend de l’épaisseur, de l’accès, de l’aspect et du rythme de fabrication. Omega AX et HyperTIG AX sont des exemples AC/DC ; HyperMIG X est une gamme MIG/MAG. La version précise et un essai sur pièce permettent de choisir."
       },
       {
         "q": "Quelle est la différence entre TIG DC et TIG AC/DC ?",
@@ -725,7 +725,7 @@
       },
       {
         "q": "Que sont les procédés de soudage MIS et HyperPuls de MAHE ?",
-        "a": "MIS est le procédé MAHE sans projections pour l'arc court : le transfert de matière est régulé, il n'y a donc quasiment pas de projections et les reprises deviennent superflues. HyperPuls est l'arc pulsé régulé pour un taux de dépôt élevé avec apport de chaleur maîtrisé. S'y ajoutent HyperCold (déformation minimale), HyperRoot (racine sûre), HyperForce (pénétration profonde) et HyperUP (soudage en position montante)."
+        "a": "MIS est un arc MIG/MAG régulé qui vise à limiter les projections. HyperPuls est une fonction pulsée MAHE pour les travaux productifs ; la double pulsation ajoute un rythme lent de puissance qui agit sur le bain et les ondulations. Cold, Root, Force et UP répondent à d’autres priorités. Les fonctions disponibles dépendent de l’appareil, du panneau et de la courbe."
       },
       {
         "q": "VES-TECH Swiss vend-elle aussi des machines à souder d’occasion ?",
@@ -1204,8 +1204,8 @@
     "prod_intro_tpl": "{name} {de_marke}. VES-TECH Swiss concorda consegna e ritiro in Svizzera e nel Liechtenstein per ogni ordine, esegue la messa in servizio, la manutenzione e le riparazioni nell’officina partner di Herisau e gestisce la garanzia.",
     "accessory_context_wk300": "Consultate la serie {device}: WK 300 è indicato per la serie MMS 3000. Nella richiesta, specificate la denominazione completa dell’apparecchio e i collegamenti di raffreddamento esistenti.",
     "accessory_context_dvl420": "Consultate la serie {device}: nella richiesta, specificate la versione esatta del generatore, il fascio intermedio esistente e la lunghezza necessaria del collegamento.",
-    "verf_title": "Processi di saldatura MAHE · MIS, HyperPuls, HyperCold | VES-TECH",
-    "verf_desc": "I processi di saldatura MAHE e i loro impieghi: MIS senza spruzzi, doppio impulso, HyperPuls, HyperForce, HyperCold, HyperRoot e HyperUP.",
+    "verf_title": "Processi · MIG pulsato, doppio impulso e TIG | VES-TECH Swiss",
+    "verf_desc": "MIG/MAG pulsato, doppio impulso, HyperPuls, TIG pulsato LF/HF, AC/DC e Mix TIG: principi, applicazioni, regolazioni e scelta degli apparecchi MAHE.",
     "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
     "dl_desc": "Catalogo prodotti MAHE, certificato di conformità EN 1090 e schede di sicurezza degli elettroliti R1, RP1, P1, M1 e N1 in PDF.",
     "kontakt_title": "Contatto · VES-TECH Swiss, officina Herisau AR",
@@ -1274,7 +1274,7 @@
       },
       {
         "q": "Quale processo di saldatura serve per l'alluminio?",
-        "a": "Per l'alluminio ci sono due vie: TIG AC/DC (ad es. MAHE HyperTIG AX o Omega AX) per lamiere sottili e cordoni a vista, e MIG/MAG con impulso o doppio impulso (ad es. MAHE HyperMIG X) per una resa maggiore a partire da circa 2 mm. Il TIG DC puro non è adatto all'alluminio, perché lo strato di ossido richiede l'effetto decapante della corrente alternata."
+        "a": "Per l’alluminio si possono valutare MIG pulsato o doppio impulso con una curva filo/gas adatta, oppure TIG AC/DC. La scelta dipende da spessore, accessibilità, aspetto e ritmo produttivo. Omega AX e HyperTIG AX sono esempi AC/DC; HyperMIG X è una serie MIG/MAG. Versione precisa e prova sul pezzo permettono di scegliere."
       },
       {
         "q": "Qual è la differenza tra TIG DC e TIG AC/DC?",
@@ -1306,7 +1306,7 @@
       },
       {
         "q": "Che cosa sono la saldatura MIS e HyperPuls di MAHE?",
-        "a": "MIS è il processo MAHE senza spruzzi per l'arco corto: il trasferimento del materiale è regolato, quindi non si formano quasi spruzzi e la rilavorazione diventa superflua. HyperPuls è l'arco pulsato regolato per una resa maggiore con apporto termico controllato. Si aggiungono HyperCold (deformazione minima), HyperRoot (radice sicura), HyperForce (penetrazione profonda) e HyperUP (saldatura in salita)."
+        "a": "MIS è un arco MIG/MAG regolato che mira a limitare gli spruzzi. HyperPuls è una funzione pulsata MAHE per lavori produttivi; il doppio impulso aggiunge un ritmo lento di potenza che agisce su bagno e ondulazioni. Cold, Root, Force e UP rispondono ad altre esigenze. Le funzioni disponibili dipendono da apparecchio, pannello e curva."
       },
       {
         "q": "VES-TECH Swiss vende anche saldatrici usate?",

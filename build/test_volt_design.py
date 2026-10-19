@@ -58,13 +58,14 @@ class VoltDesignTests(unittest.TestCase):
             self.assertEqual(re.sub('<[^>]+>', '', headline),
                              C.t(lang, 'volt_headline_1') + ' ' + C.t(lang, 'volt_headline_2'))
 
-    def test_featured_products_keep_each_image_link_caption_and_power_rating_together(self):
+    def test_featured_products_keep_each_image_link_and_power_rating_together(self):
         for lang in C.LANGS:
             markup = P.home_featured(lang)
             tags = Markup(markup).tags
             self.assertEqual([a['data-product'] for _, a in tags if 'data-product' in a], list(C.HOME_FEATURED))
             self.assertIn('data-interval="3000"', markup)
-            self.assertIn(R.e(C.IMGCAP['mpt-3001'][lang]), markup)
+            self.assertNotIn('<figcaption', markup)
+            self.assertNotIn(R.e(C.IMGCAP['mpt-3001'][lang]), markup)
             for pid in C.HOME_FEATURED:
                 slide = re.search(r'data-product="' + re.escape(pid) + r'"(.*?)</a></div>', markup, re.S).group(1)
                 self.assertIn(C.u_prod(lang, C.BY_ID[pid]), slide)

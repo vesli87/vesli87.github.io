@@ -1748,7 +1748,6 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-feature-wide .volt-home-product{grid-template-columns:minmax(0,1fr);gap:14px;align-self:center}
   .volt-feature-wide .volt-product-plinth{max-width:none;clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);padding:14px}
   .volt-feature-wide .volt-product-plinth img{height:280px;width:100%;object-fit:contain}
-  .volt-feature-wide figcaption{font-size:12px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:80ch}
   .volt-feature-wide .volt-home-product-label{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 18px;text-align:left;padding:0 10px}
   .volt-feature-wide .volt-home-product-label h2{grid-column:1}
   .volt-feature-wide .volt-home-product-label p{grid-column:1;margin:0;display:block}
@@ -1780,7 +1779,6 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-feature-wide .volt-product-plinth img{height:200px}
   .volt-feature-wide .volt-home-product-label{display:block;text-align:left;padding:0 8px}
   .volt-feature-wide .volt-home-product-label p{margin:8px 0}
-  .volt-feature-wide figcaption{font-size:12px;line-height:1.45}
   .volt-feature-controls{gap:0;padding-top:8px;background:#F4F6F7}
   .volt-feature-actions{width:100%}
   .volt-feature-controls .hdot{width:44px}

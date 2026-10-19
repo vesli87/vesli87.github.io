@@ -618,7 +618,7 @@ def kachel_zusatz(lang, c):
 
 
 def home_featured(lang):
-    """Real catalogue products, with captions and links already in the HTML."""
+    """Catalogue highlights with localized product links and no image footnotes."""
     slides, dots = [], []
     for i, pid in enumerate(C.HOME_FEATURED):
         product = C.BY_ID[pid]
@@ -627,8 +627,6 @@ def home_featured(lang):
         detail = product['specs'].get('Arbeitsbereich' if wide else 'Netz')
         if detail:
             details.append(C.trV(lang, detail))
-        caption = C.IMGCAP.get(pid, {}).get(lang)
-        caption = f'<figcaption>{e(caption)}</figcaption>' if caption else ''
         picture = R.img_tag(product['img'],
                             '(max-width:640px) 85vw, 620px' if wide else
                             '(max-width:640px) 45vw, (max-width:1150px) 320px, 350px',
@@ -640,7 +638,7 @@ def home_featured(lang):
             f'aria-label="{e(C.t(lang,"hero_slide",n=i+1,m=len(C.HOME_FEATURED)))}" '
             f'data-product="{e(pid)}" data-slide-title="{e(C.pName(lang,product))}">'
             f'<a class="volt-home-product" href="{e(C.u_prod(lang,product))}">'
-            f'<figure class="volt-product-plinth">{picture}{caption}</figure>'
+            f'<figure class="volt-product-plinth">{picture}</figure>'
             f'<div class="volt-home-product-label"><h2>{e(C.pName(lang,product))}</h2>'
             f'<p class="volt-feature-facts">{e(" · ".join(details))}</p><p>{e(C.t(lang,"poa"))}</p>'
             f'<span class="volt-text-link">{e(C.t(lang,"volt_device_view"))} '

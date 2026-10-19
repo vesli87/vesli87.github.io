@@ -540,7 +540,10 @@ MPT 3001, HyperMIG TWIN, HyperTIG AX, HyperTIG DX, Omega AX und Beta DX.
 Omega AX und Beta DX zeigen die bestätigte Netzangabe 1~ 230 V; die HyperTIG-
 Modelle bleiben bei ihren eigenen 400-V-Angaben. Jeder Eintrag behält Bild,
 Produktname, Preis auf Anfrage und den sprachgleichen Produktlink gemeinsam.
-Die MPT-Illustration behält ihre vorhandene dreisprachige Bildunterschrift.
+Auf ausdrücklichen Wunsch des Inhabers vom 19.10.2026 zeigt der Produktwechsel
+auf der Startseite in DE/FR/IT/EN keine Bildunterschrift unter der MPT-Illustration.
+Der weisse Bildrahmen enthält nur das Bild und reserviert keinen Fussnotenplatz.
+Die vorhandene Bildunterschrift auf der Produktdetailseite bleibt erhalten.
 Theta 60 HSC und HyperCleaner ST bleiben darunter als direkte Produktkarten.
 
 Die Bühne reserviert den Platz aller sechs Bilder, ohne Layoutsprünge beim
@@ -970,7 +973,8 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - `node --test build/test_*.mjs` umfasst Frontend und Query-Datenschutzregressionen;
   `test_inquiry.py` prüft Register, sichere Ausgabe und Servicerouten.
 - Produkt-/Kategoriezahlen bezeichnen Katalogeinträge, nicht Lagerbestand.
-  Die MPT-Illustration erhält eine sichtbare Bildunterschrift.
+  Die MPT-Illustration erhält auf der Produktdetailseite eine sichtbare Bildunterschrift;
+  für die Startseite gilt die ausdrückliche Ausnahme vom 19.10.2026 in §10.
 
 
 ## 21. Marketing und Occasion-Bezeichnungen (22.09.2026)

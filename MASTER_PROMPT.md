@@ -747,7 +747,12 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
   Actions mit vollständigem SHA; `main` gegen Löschen/Force-Push geschützt.
 - `build/backup.py`: lokale Quell-/Git-/Release-Sicherung oder ausdrücklich
   öffentlicher Release-Modus. SHA-256, Pfadkontrolle und reale Wiederherstellung
-  gehören zur Prüfung. CI bewahrt öffentliche Release-Archive 90 Tage auf.
+  gehören zur Prüfung. CI bewahrt oeffentliche Release-Archive 90 Tage auf und
+  veroeffentlicht nach erfolgreichem Deploy mit `build/release_recovery.py`
+  zusaetzlich ein geprueftes Release am exakten Commit-Tag, ohne diese
+  Actions-Ablauffrist. Nur oeffentliche Dateien, serverseitiger SHA-256-Abgleich,
+  erneuter Restore-Test, keine Ueberschreibung vorhandener Assets. Temporaere
+  Testdateien werden entfernt; keine laufend wachsenden Notebook-Backups.
 - Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
   Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
   unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.

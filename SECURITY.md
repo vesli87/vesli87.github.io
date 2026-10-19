@@ -119,7 +119,12 @@ Produktionsfrontend wiederverwendet werden.
 Jeder Produktionsbuild erstellt ein öffentliches Wiederherstellungsarchiv,
 prüft SHA-256 und stellt es in einen leeren Testordner wieder her. GitHub hält das
 separate Artefakt 90 Tage vor; ein fehlgeschlagener Deploy ist am Workflowstatus
-zu erkennen. Vollständige lokale Sicherung, Grenzen und Wiederherstellung stehen
+zu erkennen. Seit dem 19.10.2026 wird erst nach erfolgreichem Deploy zusaetzlich
+ein oeffentliches Recovery-Release am exakten Commit-Tag angelegt. Es besitzt
+keine Actions-Ablauffrist. Nur dieser separate Job erhaelt die dafuer erforderlichen
+Repository-Schreibrechte. Er prueft die Wiederherstellung und die SHA-256-Werte
+der hochgeladenen Assets; abweichende vorhandene Dateien werden nicht ersetzt.
+Vollständige lokale Sicherung, Grenzen und Wiederherstellung stehen
 in [BACKUP.md](BACKUP.md). Weder die lokale Sicherung noch die Prüfsummen sind
 verschlüsselt oder digital signiert. Kontozugänge und Kunden-E-Mails sind nicht
 Bestandteil des öffentlichen Releases.
@@ -158,3 +163,8 @@ Formulardaten und lokale Erfolgszusammenfassungen bleiben ausserhalb von
 localStorage und Analytics. Analytics akzeptiert nur bekannte Produkt-/Options-
 oder Serviceparameter auf der Kontaktseite und sendet deren kanonische URL ohne
 Query. Der gewählte Varianten-/Geräteschlüssel wird nicht gemessen.
+
+Seit dem 19.10.2026 werden Parameternamen aus Besucher-URLs ueberhaupt nicht mehr
+als Objektschluessel verwendet. Es werden nur die expliziten erlaubten Felder
+ueber URLSearchParams gelesen. Unbekannte, doppelte und prototypbezogene
+Parameter halten die Statistik in allen drei Sprachen ausgeschaltet.

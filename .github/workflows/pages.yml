@@ -28,6 +28,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    outputs:
+      recovery_artifact_id: ${{ steps.public_backup.outputs.artifact-id }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1, Node 24
         with:
@@ -79,6 +81,7 @@ jobs:
           python3 build/security_check.py --site "$RUNNER_TEMP/restore-check/public-site"
 
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
+        id: public_backup
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         with:
           name: public-recovery-${{ github.sha }}-${{ github.run_attempt }}
@@ -109,18 +112,36 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1, Node 24
 
-  # Bing, Yandex, Seznam und Naver erfahren von einer neuen Seite sonst erst,
-  # wenn ihr Crawler das naechste Mal vorbeikommt. IndexNow dreht das um: die
-  # Website meldet sich selbst. Google beteiligt sich daran nicht.
-  #
-  # Gemeldet wird nur, was dieser Push wirklich geaendert hat - nicht jedes Mal
-  # der ganze Katalog. Auch geloeschte Adressen werden gemeldet, damit der
-  # Crawler ihre Weiterleitung oder den neuen 404-Status abholen kann.
-  # indexnow.py teilt grosse Mengen in die erlaubten Protokoll-Batches auf.
-  #
-  # Der Schritt laeuft NACH dem Deploy: vorher stuenden die neuen Seiten noch
-  # gar nicht im Netz und der Dienst holte sich die alte Fassung. Schlaegt er
-  # fehl, ist die Website trotzdem live - deshalb continue-on-error.
+  # Preserve the exact verified deployment beyond Actions artifact retention.
+  # Runner-only temporary storage; no private source/history/config upload.
+  recovery:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
+        with:
+          python-version: "3.11"
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
+        with:
+          artifact-ids: ${{ needs.build.outputs.recovery_artifact_id }}
+          merge-multiple: true
+          path: ${{ runner.temp }}/public-recovery
+      - name: Publish verified recovery after successful deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RECOVERY_COMMIT: ${{ github.sha }}
+        run: python3 build/release_recovery.py "$RUNNER_TEMP/public-recovery" --commit "$RECOVERY_COMMIT" --publish
+
+  # Notify IndexNow only after deployment, and only about editorial changes.
+  # Failure is visible in the step log but does not take the website offline.
   indexnow:
     needs: deploy
     runs-on: ubuntu-latest

@@ -21,6 +21,8 @@ class SecurityParser(HTMLParser):
         self.policy = None
         self.scripts = []
         self.current = None
+        self.styles = []
+        self.current_style = None
         self.errors = []
         self.referrer = None
         self.lang = None
@@ -48,6 +50,11 @@ class SecurityParser(HTMLParser):
                 self.errors.append('Script before CSP')
             self.current = (attrs, [])
             self.scripts.append(self.current)
+        if tag == 'style':
+            if self.policy is None:
+                self.errors.append('Style before CSP')
+            self.current_style = []
+            self.styles.append(self.current_style)
         if tag == 'form':
             if attrs.get('role') != 'search' and attrs.get('method', '').lower() != 'post':
                 self.errors.append('Form can put personal data in a GET URL')
@@ -68,17 +75,24 @@ class SecurityParser(HTMLParser):
     def handle_data(self, data):
         if self.current is not None:
             self.current[1].append(data)
+        if self.current_style is not None:
+            self.current_style.append(data)
 
     def handle_endtag(self, tag):
         if tag == 'script':
             self.current = None
+        if tag == 'style':
+            self.current_style = None
 
 
 def inspect_html(text, root=C.ROOT, error_page=False):
     parser = SecurityParser()
     parser.feed(text)
     policy = parser.policy or ''
-    directives = {parts[0]: parts[1:] for chunk in policy.split(';') if (parts := chunk.strip().split())}
+    entries = [parts for chunk in policy.split(';') if (parts := chunk.strip().split())]
+    directives = {parts[0]: parts[1:] for parts in entries}
+    if len(directives) != len(entries):
+        parser.errors.append('Duplicate CSP directive')
     for name in ('default-src', 'base-uri', 'object-src', 'frame-src', 'worker-src', 'media-src', 'script-src-attr', 'style-src-attr'):
         if directives.get(name) != ["'none'"]:
             parser.errors.append(f'Unsafe/missing CSP directive: {name}')
@@ -90,6 +104,12 @@ def inspect_html(text, root=C.ROOT, error_page=False):
         parser.errors.append('Unsafe form-action')
     if error_page and parser.referrer != 'no-referrer':
         parser.errors.append('404 must not forward unknown paths as referrer')
+    if parser.referrer not in ('strict-origin-when-cross-origin', 'no-referrer'):
+        parser.errors.append('Unsafe/missing referrer policy')
+    for body in parser.styles:
+        expected = digest(''.join(body).encode('utf-8'))
+        if "'" + expected + "'" not in directives.get('style-src', []):
+            parser.errors.append('Style bytes not pinned in CSP')
     for attrs, body in parser.scripts:
         if attrs.get('type') == 'application/ld+json':
             continue

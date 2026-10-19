@@ -11,6 +11,18 @@ from security_check import inspect_html
 
 
 class SecurityTests(unittest.TestCase):
+    def test_style_integrity_ambiguous_policy_and_referrer_regressions_fail(self):
+        doc = R.document('de', title='Test', desc='Test', url='/',
+                         alts={lang: '/' for lang in C.LANGS}, jsonld_blocks=[],
+                         body='<h1>Test</h1><style>' + R.NOSCRIPT_CSS + '</style>')
+        self.assertEqual(inspect_html(doc), [])
+        changed = doc.replace('display:block!important', 'display:none!important')
+        self.assertIn('Style bytes not pinned in CSP', inspect_html(changed))
+        changed = doc.replace("default-src &#x27;none&#x27;", "default-src &#x27;self&#x27;;default-src &#x27;none&#x27;")
+        self.assertIn('Duplicate CSP directive', inspect_html(changed))
+        changed = doc.replace('strict-origin-when-cross-origin', 'unsafe-url')
+        self.assertIn('Unsafe/missing referrer policy', inspect_html(changed))
+
     def test_unapproved_script_and_changed_bytes_are_rejected(self):
         doc = R.document('de', title='Test', desc='Test', url='/',
                          alts={lang: '/' for lang in C.LANGS}, jsonld_blocks=[], body='<h1>Test</h1>')

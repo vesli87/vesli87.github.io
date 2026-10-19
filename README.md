@@ -174,8 +174,12 @@ Herstellerdaten-Abgleich und Regressionstests müssen bestehen.
 Build-Quellen, Rohdaten, lokale Konfiguration und Berichte werden nicht hochgeladen.
 Der Quellcode selbst liegt in einem öffentlichen GitHub-Repository.
 Pull Requests werden ebenfalls geprüft, veröffentlichen jedoch nichts.
-Jeder Produktionsbuild erstellt zusätzlich eine 90 Tage aufbewahrte öffentliche
-Release-Sicherung und testet deren Wiederherstellung vor dem Deploy.
+Jeder Produktionsbuild erstellt zusaetzlich eine 90 Tage aufbewahrte oeffentliche
+Sicherung und testet deren Wiederherstellung vor dem Deploy. Nach erfolgreichem
+Deploy legt `build/release_recovery.py` dieselbe gepruefte Sicherung als
+versioniertes GitHub Release ohne Actions-Ablauffrist ab. Quellcode ist am exakten
+Tag verfuegbar. Die Sicherung laeuft auf dem Runner und sammelt keine grossen
+Kopien auf dem Notebook; Einzelheiten und Grenzen stehen in `BACKUP.md`.
 Lokale Projektsicherung und Wiederherstellung: [BACKUP.md](BACKUP.md).
 Nach dem Deploy meldet IndexNow geänderte URLs; Google verwendet die Sitemap.
 

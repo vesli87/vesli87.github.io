@@ -74,31 +74,35 @@
   }
   function safeQuery(url) {
     if (url.hash || url.username || url.password) return null;
-    var keys = [], values = {};
-    url.searchParams.forEach(function (value, name) { keys.push(name); values[name] = value; });
+    // Query names are visitor input. Never use them as object property names.
+    var keys = [];
+    url.searchParams.forEach(function (value, name) { keys.push(name); });
     if (!keys.length) return { campaign: null, product: '' };
     if (url.pathname === config.contactPath) {
       var productOnly = keys.length === 1 && keys[0] === 'product';
       var productOption = keys.length === 2 && keys.filter(function (k) { return k === 'product'; }).length === 1 &&
         keys.filter(function (k) { return k === 'option'; }).length === 1;
-      if (knownProduct(values.product) && (productOnly || productOption)) {
-        var options = (config.inquiryOptions || {})[values.product];
-        if (productOnly || (Array.isArray(options) && options.indexOf(values.option) >= 0)) {
+      var product = url.searchParams.get('product');
+      if (knownProduct(product) && (productOnly || productOption)) {
+        var options = (config.inquiryOptions || {})[product];
+        if (productOnly || (Array.isArray(options) && options.indexOf(url.searchParams.get('option')) >= 0)) {
           // Choices are only validated here. Their IDs and full query URLs are not measured.
-          return { campaign: null, product: values.product };
+          return { campaign: null, product: product };
         }
         return null;
       }
       if (keys.length === 1 && keys[0] === 'service' && Object.keys(services).some(function (path) {
-        return services[path] === values.service;
-      })) return { campaign: null, product: '', service: values.service };
+        return services[path] === url.searchParams.get('service');
+      })) return { campaign: null, product: '', service: url.searchParams.get('service') };
     }
-    var fields = ['source', 'medium', 'campaign', 'content'], tuple = {};
+    var fields = ['source', 'medium', 'campaign', 'content'];
     if (keys.length !== fields.length || !fields.every(function (field) {
       var name = 'utm_' + field;
       if (keys.filter(function (k) { return k === name; }).length !== 1) return false;
-      tuple[field] = values[name]; return true;
+      return true;
     })) return null;
+    var tuple = { source: url.searchParams.get('utm_source'), medium: url.searchParams.get('utm_medium'),
+      campaign: url.searchParams.get('utm_campaign'), content: url.searchParams.get('utm_content') };
     var match = campaignMatch(tuple);
     return match ? { campaign: match, product: '' } : null;
   }

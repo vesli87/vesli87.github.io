@@ -47,6 +47,13 @@ enthalten.
 
 ## Lokale Sicherung erstellen
 
+Fuer den normalen Produktionsbetrieb werden seit dem 19.10.2026 keine neuen
+vollstaendigen Sicherungen auf dem Notebook benoetigt. Der Workflow bewahrt
+nach erfolgreichem Deploy das gepruefte oeffentliche Release online auf, siehe
+unten. Lokale Projektsicherungen sind fuer unveroeffentlichte Arbeit oder einen
+gezielten Wiederherstellungstest gedacht; nicht bei jeder kleinen Aenderung
+weitere Kopien anlegen. Testordner unter `/tmp` nach Abschluss entfernen.
+
 Vorher die gewünschten Änderungen prüfen und einen konsistenten Stand bauen:
 
 ```sh
@@ -91,6 +98,42 @@ eines erfolgreichen Deployments für 90 Tage auf. Auch ein manuell gestarteter
 Workflow verwendet diese Prüfungen. Artefakte können durch Ablauf, manuelles Löschen oder Verlust des
 GitHub-Kontos verschwinden. GitHub-Repository und GitHub-Artefakte sind dieselbe
 Anbieterabhängigkeit, keine unabhängige Zweitsicherung.
+
+## Online-Wiederherstellung ohne wachsende Notebook-Backups
+
+Nach einem **erfolgreichen** Produktionsdeploy uebernimmt der Job `recovery`
+das bereits getestete oeffentliche Artefakt desselben Commits. Er prueft es
+erneut, testet die Wiederherstellung in einem temporaeren Ordner und legt ein
+Release `recovery-<vollstaendige Commit-SHA>` an. Dieses Release unterliegt
+nicht der 90-Tage-Frist der Actions-Artefakte. GitHub stellt am selben Tag auch
+die Quellcode-Archive des exakten Tags bereit.
+
+`build/release_recovery.py` akzeptiert nur die drei Dateien eines
+`public-release` und keinerlei lokale Projekt-/Git-/Kontometadaten. Vor der
+Veroeffentlichung werden Dateigroessen und serverseitige SHA-256-Werte aller
+Assets abgeglichen. Ein unterbrochener Entwurf kann fortgesetzt werden;
+abweichende vorhandene Assets, falsche Tags und unvollstaendige veroeffentlichte
+Releases werden nie ueberschrieben. Der Job besitzt nur fuer diesen Schritt
+`contents: write` und `actions: read`; PRs fuehren ihn nicht aus.
+
+Die Sicherung und der Wiederherstellungstest laufen auf dem GitHub-Runner.
+Sie erzeugen keine dauerhaften Dateien auf dem Notebook. Auch das Werkzeug
+selbst entfernt seine temporaeren Entwurfs-/Testdateien beim Beenden.
+Zum Wiederherstellen eine gepruefte Version von der Releases-Seite waehlen:
+
+```sh
+gh release download recovery-<vollstaendige-Commit-SHA> \
+  --repo vesli87/vesli87.github.io --dir /tmp/ves-tech-recovery
+python3 build/backup.py verify /tmp/ves-tech-recovery
+python3 build/backup.py restore /tmp/ves-tech-recovery --output /tmp/ves-tech-restored
+```
+
+Es werden keine Online-Releases automatisch geloescht. Verlust des GitHub-Kontos,
+Loeschen des Repositorys oder absichtliches Loeschen eines Releases bleiben
+gemeinsame Risiken. Eine vom Konto unabhaengige Kopie auf einem externen
+Datentraeger ist weiterhin sinnvoll; dieses Verfahren bucht keinen Dienst und
+behauptet keine vollstaendige 3-2-1-Sicherung. Private Konfiguration und
+Korrespondenz bleiben bewusst ausserhalb dieser oeffentlichen Sicherung.
 
 ## Sicherung prüfen
 

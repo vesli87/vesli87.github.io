@@ -58,6 +58,20 @@ test('valid inquiry context cannot bypass refusal or unsafe referrer', () => {
   }
 });
 
+test('visitor property names cannot change analytics dictionaries or enable a provider', () => {
+  for (const lang of ['de', 'fr', 'it']) {
+    for (const search of ['?__proto__=x', '?constructor=x', '?prototype=x',
+      '?product=mms&__proto__=x', '?service=repair&constructor=x',
+      '?utm_source=google&__proto__=x&utm_campaign=x&utm_content=x']) {
+      const result = observe(search, { lang });
+      assert.equal(result.appended.length, 0, lang + ' ' + search);
+      assert.equal(result.sent.length, 0);
+      assert.equal(Object.getPrototypeOf(result.config), Object.prototype);
+      assert.equal(result.config.constructor, Object);
+    }
+  }
+});
+
 test('the SDK never receives a raw own-site referrer containing an inquiry choice or service', () => {
   for (const lang of ['de', 'fr', 'it']) {
     const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/' }[lang];

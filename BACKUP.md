@@ -100,7 +100,7 @@ weiterhin den gewöhnlichen Websiteordner, nicht das Backup-Archiv.
 
 Der Workflow erzeugt bei jedem Push auf `main` ein geprüftes öffentliches
 Sicherungsarchiv, führt einen Wiederherstellungstest aus und bewahrt das Archiv
-eines erfolgreichen Deployments für 90 Tage auf. Auch ein manuell gestarteter
+eines erfolgreichen Deployments für 7 Tage auf. Auch ein manuell gestarteter
 Workflow verwendet diese Prüfungen. Artefakte können durch Ablauf, manuelles Löschen oder Verlust des
 GitHub-Kontos verschwinden. GitHub-Repository und GitHub-Artefakte sind dieselbe
 Anbieterabhängigkeit, keine unabhängige Zweitsicherung.
@@ -111,7 +111,7 @@ Nach einem **erfolgreichen** Produktionsdeploy uebernimmt der Job `recovery`
 das bereits getestete oeffentliche Artefakt desselben Commits. Er prueft es
 erneut, testet die Wiederherstellung in einem temporaeren Ordner und legt ein
 Release `recovery-<vollstaendige Commit-SHA>` an. Dieses Release unterliegt
-nicht der 90-Tage-Frist der Actions-Artefakte. GitHub stellt am selben Tag auch
+nicht der 7-Tage-Frist der Actions-Artefakte. GitHub stellt am selben Tag auch
 die Quellcode-Archive des exakten Tags bereit.
 
 `build/release_recovery.py` akzeptiert nur die drei Dateien eines
@@ -136,7 +136,19 @@ python3 build/backup.py verify /tmp/ves-tech-recovery
 python3 build/backup.py restore /tmp/ves-tech-recovery --output /tmp/ves-tech-restored
 ```
 
-Es werden keine Online-Releases automatisch geloescht. Verlust des GitHub-Kontos,
+Auf Wunsch des Inhabers vom 20.10.2026 entfernt `build/prune_recovery.py` nach
+erfolgreicher Veröffentlichung ältere, eindeutig von diesem Workflow erzeugte
+Recovery-Releases. Erhalten bleiben der aktuelle Stand und die neueste vorherige
+geprüfte Version als Rückfall. Vor dem ersten Löschen werden Herkunft, vollständige
+Assets mit SHA-256, Tags, erfolgreiche Main-Deployments und die gemeinsame
+Commit-Historie geprüft. Fremde, umbenannte, unvollständige oder unveränderliche
+Releases und Entwürfe bleiben erhalten. Bei einem Wechsel von `main` oder einem
+veränderten Release stoppt die Bereinigung. Git-Tags, Commits und Workflowprotokolle
+werden nicht gelöscht. Ohne `--delete` zeigt das Werkzeug nur den Plan an.
+Die temporären Actions-Artefakte laufen nach sieben Tagen ab; es werden keine
+neuen vollständigen Notebook-Sicherungen für jedes Deployment angelegt.
+
+Verlust des GitHub-Kontos,
 Loeschen des Repositorys oder absichtliches Loeschen eines Releases bleiben
 gemeinsame Risiken. Eine vom Konto unabhaengige Kopie auf einem externen
 Datentraeger ist weiterhin sinnvoll; dieses Verfahren bucht keinen Dienst und
@@ -239,7 +251,7 @@ die Wiederherstellbarkeit, erfüllen damit aber noch keine
 3-2-1-Strategie. Mindestens eine geprüfte Kopie sollte zusätzlich auf einem vom
 Arbeitsrechner und GitHub unabhängigen, vom Inhaber verwalteten Datenträger liegen.
 Dieses Werkzeug richtet einen solchen Speicher nicht heimlich ein und bucht keinen
-Dienst. Alte Sicherungen werden nicht automatisch gelöscht.
+Dienst. Private lokale Alt-Sicherungen werden nicht automatisch gelöscht.
 
 Ein Wiederherstellungstest gehört nach grösseren Änderungen an Generator,
 Dateistruktur oder Deployment dazu. Der Test ist erst erfolgreich, wenn die

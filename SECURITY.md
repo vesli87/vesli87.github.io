@@ -133,12 +133,16 @@ Befunde werden durch Codekorrekturen und einen neuen Scan ueberprueft.
 
 Jeder Produktionsbuild erstellt ein öffentliches Wiederherstellungsarchiv,
 prüft SHA-256 und stellt es in einen leeren Testordner wieder her. GitHub hält das
-separate Artefakt 90 Tage vor; ein fehlgeschlagener Deploy ist am Workflowstatus
+separate Artefakt 7 Tage vor; ein fehlgeschlagener Deploy ist am Workflowstatus
 zu erkennen. Seit dem 19.10.2026 wird erst nach erfolgreichem Deploy zusaetzlich
 ein oeffentliches Recovery-Release am exakten Commit-Tag angelegt. Es besitzt
 keine Actions-Ablauffrist. Nur dieser separate Job erhaelt die dafuer erforderlichen
 Repository-Schreibrechte. Er prueft die Wiederherstellung und die SHA-256-Werte
 der hochgeladenen Assets; abweichende vorhandene Dateien werden nicht ersetzt.
+Nach erfolgreicher Veröffentlichung bewahrt die begrenzte Release-Aufbewahrung
+den aktuellen Stand und eine geprüfte Vorversion. Sie löscht ausschliesslich
+eindeutig zugeordnete ältere Recovery-Releases erfolgreicher Main-Deployments,
+keine Git-Historie oder fremden Veröffentlichungen. Details stehen in BACKUP.md.
 Vollständige lokale Sicherung, Grenzen und Wiederherstellung stehen
 in [BACKUP.md](BACKUP.md). Weder die lokale Sicherung noch die Prüfsummen sind
 verschlüsselt oder digital signiert. Kontozugänge und Kunden-E-Mails sind nicht

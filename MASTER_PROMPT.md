@@ -935,12 +935,18 @@ oder einen Service Worker scheinbar behoben; Grenzen stehen in SECURITY.md.
   keine Symlinks enthalten. Weitere Grenzen stehen in SECURITY.md/BACKUP.md.
 - `build/backup.py`: lokale Quell-/Git-/Release-Sicherung oder ausdrücklich
   öffentlicher Release-Modus. SHA-256, Pfadkontrolle und reale Wiederherstellung
-  gehören zur Prüfung. CI bewahrt oeffentliche Release-Archive 90 Tage auf und
+  gehören zur Prüfung. CI bewahrt oeffentliche Actions-Archive 7 Tage auf und
   veroeffentlicht nach erfolgreichem Deploy mit `build/release_recovery.py`
   zusaetzlich ein geprueftes Release am exakten Commit-Tag, ohne diese
   Actions-Ablauffrist. Nur oeffentliche Dateien, serverseitiger SHA-256-Abgleich,
   erneuter Restore-Test, keine Ueberschreibung vorhandener Assets. Temporaere
   Testdateien werden entfernt; keine laufend wachsenden Notebook-Backups.
+  Seit 20.10.2026 hält `build/prune_recovery.py` nach erfolgreicher Veröffentlichung
+  nur das aktuelle und das neueste vorherige eindeutig zugeordnete Recovery-Release.
+  Vor jeder Bereinigung: vollständige Assets/Hashes, exakte Tags, erfolgreiche
+  Main-Deployments, gemeinsame Historie und unveränderter Main-Stand. Fremde,
+  umbenannte oder unvollständige Releases bleiben bestehen. Git-Tags und Commits
+  bleiben erhalten. Ohne `--delete` wird nur der Plan angezeigt.
 - Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
   Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
   unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.

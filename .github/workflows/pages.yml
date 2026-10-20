@@ -86,7 +86,7 @@ jobs:
         with:
           name: public-recovery-${{ github.sha }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/public-backup/
-          retention-days: 90
+          retention-days: 7
           if-no-files-found: error
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0, Node 24 uploader
@@ -139,6 +139,11 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           RECOVERY_COMMIT: ${{ github.sha }}
         run: python3 build/release_recovery.py "$RUNNER_TEMP/public-recovery" --commit "$RECOVERY_COMMIT" --publish
+      - name: Retain current and previous verified recovery only
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RECOVERY_COMMIT: ${{ github.sha }}
+        run: python3 build/prune_recovery.py --commit "$RECOVERY_COMMIT" --delete
 
   # Notify IndexNow only after deployment, and only about editorial changes.
   # Failure is visible in the step log but does not take the website offline.

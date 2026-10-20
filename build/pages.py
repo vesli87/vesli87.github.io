@@ -57,7 +57,9 @@ DL_SDS = {d["k"]: d for d in C.DLS if d["k"] != "PDF"}     # R1, RP1, P1, M1, N1
 def training_block(lang, on_about=False):
     copy = TRAINING["copy"][lang]
     photo = R.img_tag(TRAINING["image"],
-                      "(max-width:800px) calc(100vw - 88px), (max-width:1400px) 44vw, 600px",
+                      "(max-width:760px) min(calc(100vw - 84px), 640px), "
+                      "(max-width:800px) min(calc(100vw - 108px), 640px), "
+                      "(max-width:1440px) calc(52vw - 83px), 665px",
                       cls="zoomable", alt=copy["alt"], width=1448)
     topics = "".join(f'<li>{e(topic)}</li>' for topic in copy["topics"])
     target = C.u_page(lang, "contact") if on_about else C.u_page(lang, "about") + "#mahe-training"
@@ -658,7 +660,10 @@ def home_featured(lang):
         if detail:
             details.append(C.trV(lang, detail))
         picture = R.img_tag(product['img'],
-                            '(max-width:640px) 85vw, 620px' if wide else
+                            # object-fit:contain caps the 280px-high picture at
+                            # 498px of visible width; its full grid cell is wider.
+                            '(max-width:640px) min(calc(100vw - 88px), 356px), '
+                            '(max-width:1150px) min(calc(50vw - 72px), 462px), 498px' if wide else
                             '(max-width:640px) 45vw, (max-width:1150px) 320px, 350px',
                             alt=C.pFullName(lang, product), width=620 if wide else 440,
                             eager=i == 0, low_priority=i > 0)

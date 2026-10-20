@@ -13,10 +13,24 @@ class Markup(HTMLParser):
     def __init__(self, text):
         super().__init__()
         self.tags = []
+        self.headlines = []
+        self.current_headline = None
         self.feed(text)
+        self.close()
 
     def handle_starttag(self, tag, attributes):
         self.tags.append((tag, dict(attributes)))
+        if tag == 'h1':
+            self.current_headline = []
+            self.headlines.append(self.current_headline)
+
+    def handle_data(self, text):
+        if self.current_headline is not None:
+            self.current_headline.append(text)
+
+    def handle_endtag(self, tag):
+        if tag == 'h1':
+            self.current_headline = None
 
 
 class VoltDesignTests(unittest.TestCase):
@@ -48,14 +62,14 @@ class VoltDesignTests(unittest.TestCase):
     def test_home_uses_original_local_photos_and_localized_product_destinations(self):
         for lang in C.LANGS:
             page = P.page_home(lang)[1]
-            tags = Markup(page).tags
+            document = Markup(page)
+            tags = document.tags
             links = {a['href'] for tag, a in tags if tag == 'a'}
             for pid in ('hypermig-twin', 'theta-60', 'hypercleaner-st'):
                 self.assertIn(C.u_prod(lang, C.BY_ID[pid]), links)
                 self.assertIn(R.thumb(C.BY_ID[pid]).replace('-400.webp', '-1000.webp'), page)
             self.assertEqual(sum(tag == 'h1' for tag, a in tags), 1)
-            headline = re.search(r'<h1>(.*?)</h1>', page, re.S).group(1)
-            self.assertEqual(re.sub('<[^>]+>', '', headline),
+            self.assertEqual(''.join(document.headlines[0]),
                              C.t(lang, 'volt_headline_1') + ' ' + C.t(lang, 'volt_headline_2'))
 
     def test_featured_products_keep_each_image_link_and_power_rating_together(self):

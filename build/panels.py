@@ -42,6 +42,8 @@ MANIFEST = C.ROOT / "assets" / "img" / "manifest.json"
 # 534 px breit, bei doppelter Punktdichte also 1068 - der Browser nimmt die
 # 1600er. Die 3000er laedt nur, wer die Lupe oeffnet.
 SIZES = [400, 1000, 1600, 2000, 3000]
+# Keep the homepage's closer-spaced responsive candidates on a later import.
+EXTRA_SIZES = {'MPT_Plasmaschneidtisch.png': [600, 800]}
 
 
 def dims(f):
@@ -105,7 +107,7 @@ def main():
             print(f"  unlesbar: {f.name}")
             continue
         stufen = []
-        for nenn in SIZES:
+        for nenn in sorted(set(SIZES + EXTRA_SIZES.get(f.name, []))):
             ziel = min(nenn, w)
             if ziel not in stufen:
                 stufen.append(ziel)

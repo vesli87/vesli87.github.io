@@ -143,6 +143,15 @@ Datentraeger ist weiterhin sinnvoll; dieses Verfahren bucht keinen Dienst und
 behauptet keine vollstaendige 3-2-1-Sicherung. Private Konfiguration und
 Korrespondenz bleiben bewusst ausserhalb dieser oeffentlichen Sicherung.
 
+Der unabhaengige Wiederherstellungstest vom 20.10.2026 hat das bereits
+veroeffentlichte Release erneut heruntergeladen, alle SHA-256-Werte geprueft,
+1.056 oeffentliche Dateien in einem neuen temporaeren Verzeichnis
+wiederhergestellt und `security_check.py` auf dieser Kopie ohne Fehler
+ausgefuehrt. Die heruntergeladene und die wiederhergestellte Kopie wurden
+danach entfernt. Das prueft die tatsaechlich abrufbare Sicherung; ein gruener
+Upload-Job allein ist noch kein Wiederherstellungsnachweis. Bestehende private
+Alt-Sicherungen werden dabei weder geloescht noch oeffentlich hochgeladen.
+
 ## Sicherung prüfen
 
 ```sh

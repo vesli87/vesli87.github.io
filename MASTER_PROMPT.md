@@ -900,6 +900,24 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 
 ## 18. Sicherheits- und Wiederherstellungsprüfung (20.09.2026)
 
+Nachpruefung am 20.10.2026: HTML-Ueberschriften im VOLT-Regressionstest werden
+mit `HTMLParser` statt mit zwei potenziell quadratischen regulaeren Ausdruecken
+gelesen. Konto-Befunde und private Pruefprotokolle bleiben unter dem von Git und
+Deployment ausgeschlossenen `reports/`; sie gehoeren nicht in diese oeffentliche
+Projektdokumentation. Ein erfolgreicher CodeQL-Job ist nicht gleichbedeutend mit
+null offenen Befunden: der Alert-Status muss gesondert geprueft werden.
+
+Die PageSpeed-Nachpruefung ergaenzt bei MPT 3001/2501 die Bildstufen 600/800 px
+und beim Schulungsdokument 720/1200 px. `build/responsive_images.py` erzeugt sie
+reproduzierbar aus per SHA-256 festgelegten lokalen WebP-Mastern; vorhandene
+Zoom-Originale bleiben unveraendert. `build/panels.py` behaelt die MPT-Stufen
+auch bei einem erneuten Herstellerimport. `build/pages.py` beschreibt mit
+`sizes` die sichtbare Bildbreite nach `object-fit:contain`, nicht nur die
+breitere Rasterzelle. Das gilt in allen fuenf Sprachfassungen und aendert weder
+Produktfoto noch Gestaltung. Normale Builds brauchen keinen Bildkonverter.
+HTTP-Cache und fehlende Header des Pages-Hostings werden nicht durch Meta-Tags
+oder einen Service Worker scheinbar behoben; Grenzen stehen in SECURITY.md.
+
 - Skripte werden mit CSP-Hashes und SRI an ihre tatsächlichen Bytes gebunden.
   `strict-dynamic` vertraut nur diesen Startpunkten; die Cloudflare-Adresse im
   vertrauenswürdigen Loader bleibt fest. Keine fremden Skript-URLs aus Benutzereingaben.

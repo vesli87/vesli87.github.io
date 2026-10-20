@@ -76,6 +76,11 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   Kopfzeilen lassen sich auf GitHub Pages nicht setzen, und `frame-ancestors`
   ignorieren Browser, wenn es aus einem `<meta>` kommt. Das ist eine Grenze der
   Plattform, keine Nachlässigkeit.
+* **Cache-Laufzeit wird vom Hosting bestimmt.** GitHub Pages liefert derzeit
+  `Cache-Control: max-age=600`. Ein HTML-Meta-Tag verlaengert diesen HTTP-Cache
+  nicht. Laengere Cache-Laufzeiten oder zusaetzliche Sicherheits-Header brauchen
+  eine passende Hosting-/Proxy-Konfiguration. Es gibt keinen Service Worker,
+  der lediglich eine Cache-Warnung versteckt und dabei alte Seiten festhaelt.
 
 ## Was der Betreiber noch tun muss
 
@@ -177,4 +182,4 @@ Query. Der gewählte Varianten-/Geräteschlüssel wird nicht gemessen.
 Seit dem 19.10.2026 werden Parameternamen aus Besucher-URLs ueberhaupt nicht mehr
 als Objektschluessel verwendet. Es werden nur die expliziten erlaubten Felder
 ueber URLSearchParams gelesen. Unbekannte, doppelte und prototypbezogene
-Parameter halten die Statistik in allen drei Sprachen ausgeschaltet.
+Parameter halten die Statistik in allen fuenf Sprachen ausgeschaltet.

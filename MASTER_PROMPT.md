@@ -1101,3 +1101,22 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
   gelieferten Quelldatei. Lazy Loading und vorhandene barrierefreie Bildlupe;
   keine neue Bibliothek, kein zusätzlicher JavaScript-Code. Die Quelldatei
   verbleibt im privaten Downloadordner; Recovery enthält nur die Webfassungen.
+
+## 26. Redaktionelle Zeichensetzung (20.10.2026)
+
+- Der Fachgebietszeile unter der Startseitenüberschrift fehlen auf ausdrücklichen
+  Wunsch des Inhabers die bisherigen Trenn- und Schlusspunkte. In DE/FR/IT/EN
+  steht eine natürliche Aufzählung mit Kommas und der jeweiligen Konjunktion;
+  keine abschliessende Satzinterpunktion an dieser nominalen Zeile.
+- 11'390 Zeichenketten der gepflegten Datenquellen wurden auf doppelte Zeichen,
+  falsche Abstände, fehlende Trennung, Satzenden und auffällige Kommas geprüft.
+  Verdächtige Stellen wurden im vollständigen Satz redaktionell beurteilt.
+  Rechtschreibbedingt nötige Kommas vor Konjunktionen, Dezimalzeichen,
+  Abkürzungen, Adressen, Modellbezeichnungen und Herstellerwerte bleiben erhalten.
+- 19 gezielte Textanpassungen betreffen Einstieg, einzelne FAQ-/Service-Sätze,
+  Bildunterschriften und Auswahlhilfen. Unter anderem entfällt die englische
+  Kommatrennung zwischen zusammengesetztem Subjekt und Prädikat in der
+  Aluminium-FAQ. Keine pauschale Ersetzung im gesamten Katalog oder in Rechtstexten.
+- Änderungen erfolgen ausschliesslich in gepflegten Quellen. Der normale Build
+  aktualisiert HTML, Metadaten, Suche und lesbare Katalogexporte; keine zusätzliche
+  Browserlogik, keine neuen Bilddateien und keine Änderung technischer Zahlenwerte.

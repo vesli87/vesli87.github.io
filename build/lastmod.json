@@ -1,7 +1,7 @@
 {
  "/": {
   "d": "2026-10-20",
-  "h": "89464bb0a99ec150"
+  "h": "dfd0f011007ea3b0"
  },
  "/downloads/": {
   "d": "2026-10-19",
@@ -9,7 +9,7 @@
  },
  "/en/": {
   "d": "2026-10-20",
-  "h": "669f05b26fed6086"
+  "h": "e428fcb6bf7cb13b"
  },
  "/en/about/": {
   "d": "2026-10-20",
@@ -24,8 +24,8 @@
   "h": "533a4eb3dd52a123"
  },
  "/en/faq/": {
-  "d": "2026-10-19",
-  "h": "348bc915110e2ab9"
+  "d": "2026-10-20",
+  "h": "af16a5985af2c83c"
  },
  "/en/legal-notice/": {
   "d": "2026-10-19",
@@ -380,16 +380,16 @@
   "h": "ddcef3450b86464d"
  },
  "/en/products/used-equipment/microplasma/": {
-  "d": "2026-10-19",
-  "h": "23e64c6ff0161779"
+  "d": "2026-10-20",
+  "h": "4b7c099174933fd8"
  },
  "/en/products/used-equipment/plasmafix-50s/": {
   "d": "2026-10-19",
   "h": "c61c259d6e2c29b3"
  },
  "/en/products/used-equipment/plasmafix-51/": {
-  "d": "2026-10-19",
-  "h": "318ab810f5b9f6fa"
+  "d": "2026-10-20",
+  "h": "6d7c103078ad32bc"
  },
  "/en/products/welding-equipment/": {
   "d": "2026-10-19",
@@ -472,12 +472,12 @@
   "h": "77134e04f1ac0524"
  },
  "/en/service/automation/": {
-  "d": "2026-10-19",
-  "h": "b98aca521112e5c3"
+  "d": "2026-10-20",
+  "h": "2cc7d8c3ed549535"
  },
  "/en/service/calibration/": {
-  "d": "2026-10-19",
-  "h": "ed34fb49ede71dcb"
+  "d": "2026-10-20",
+  "h": "5044d8231e689699"
  },
  "/en/service/repairs/": {
   "d": "2026-10-19",
@@ -489,7 +489,7 @@
  },
  "/fr/": {
   "d": "2026-10-20",
-  "h": "c5f9a93c143b95a2"
+  "h": "dbfc8cc38db18673"
  },
  "/fr/a-propos/": {
   "d": "2026-10-20",
@@ -508,8 +508,8 @@
   "h": "d180ab425d203aa4"
  },
  "/fr/produits/": {
-  "d": "2026-10-19",
-  "h": "296553e44b5e328f"
+  "d": "2026-10-20",
+  "h": "df0a89c5aae59e64"
  },
  "/fr/produits/accessoires/": {
   "d": "2026-10-19",
@@ -744,8 +744,8 @@
   "h": "ecd7874759943d03"
  },
  "/fr/produits/decoupe-plasma/tables-de-decoupe/": {
-  "d": "2026-10-19",
-  "h": "e9d5ddc34a0cb51e"
+  "d": "2026-10-20",
+  "h": "55da384e0a1fa21a"
  },
  "/fr/produits/decoupe-plasma/theta-120-aut/": {
   "d": "2026-10-19",
@@ -852,16 +852,16 @@
   "h": "bb35e5e3332271e7"
  },
  "/fr/produits/occasion/microplasma/": {
-  "d": "2026-10-19",
-  "h": "05a4e38bd9200b97"
+  "d": "2026-10-20",
+  "h": "52596979ed09f5d8"
  },
  "/fr/produits/occasion/plasmafix-50s/": {
   "d": "2026-10-19",
   "h": "c352f296d59a90f9"
  },
  "/fr/produits/occasion/plasmafix-51/": {
-  "d": "2026-10-19",
-  "h": "0723ca9c5f8f6a52"
+  "d": "2026-10-20",
+  "h": "b87da88d7dba281a"
  },
  "/fr/produits/postes-de-soudage/": {
   "d": "2026-10-19",
@@ -940,8 +940,8 @@
   "h": "e75f738161af6a75"
  },
  "/fr/questions-frequentes/": {
-  "d": "2026-10-19",
-  "h": "2809afdc427a5c05"
+  "d": "2026-10-20",
+  "h": "adea68f104f67bdb"
  },
  "/fr/service/": {
   "d": "2026-10-20",
@@ -969,7 +969,7 @@
  },
  "/it/": {
   "d": "2026-10-20",
-  "h": "ac51190963f448c5"
+  "h": "22ca0898015338e8"
  },
  "/it/assistenza/": {
   "d": "2026-10-20",
@@ -980,8 +980,8 @@
   "h": "ff544c93097f51b2"
  },
  "/it/assistenza/calibrazione/": {
-  "d": "2026-10-19",
-  "h": "b6fbccd5105105ab"
+  "d": "2026-10-20",
+  "h": "4593d7cc30cba03f"
  },
  "/it/assistenza/riparazione/": {
   "d": "2026-10-19",
@@ -989,7 +989,7 @@
  },
  "/it/chi-siamo/": {
   "d": "2026-10-20",
-  "h": "ad5b21f362e8f795"
+  "h": "363c3ca333807fc2"
  },
  "/it/contatto/": {
   "d": "2026-10-19",
@@ -1240,16 +1240,16 @@
   "h": "0e7b45ce7dedc230"
  },
  "/it/prodotti/occasioni/microplasma/": {
-  "d": "2026-10-19",
-  "h": "6f67b336ceba813a"
+  "d": "2026-10-20",
+  "h": "b212f94523547f76"
  },
  "/it/prodotti/occasioni/plasmafix-50s/": {
   "d": "2026-10-19",
   "h": "d0111b588b36f05a"
  },
  "/it/prodotti/occasioni/plasmafix-51/": {
-  "d": "2026-10-19",
-  "h": "419051d3885c10bd"
+  "d": "2026-10-20",
+  "h": "6fde895c72fe2517"
  },
  "/it/prodotti/pulizia/": {
   "d": "2026-10-19",
@@ -1448,8 +1448,8 @@
   "h": "68d268c3d05efc53"
  },
  "/produkte/": {
-  "d": "2026-10-19",
-  "h": "acbe13c020f8f45f"
+  "d": "2026-10-20",
+  "h": "69990f88229f9003"
  },
  "/produkte/occasion/": {
   "d": "2026-10-19",

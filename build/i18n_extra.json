@@ -21,7 +21,7 @@
     "home_desc": "MAHE für Schweissen, Plasmaschneiden, Reinigung und Automation in der Schweiz. Revidierte PlasmaFix-Occasionen und Service in Herisau AR nach Vereinbarung.",
     "home_h1": "MAHE-Technik zum Schweissen, Schneiden, Reinigen und Automatisieren",
     "all_title": "Alle Geräte · MAHE-Programm und Occasionen | VES-TECH Swiss",
-    "all_desc": "{n} Geräte bei VES-TECH Swiss: das MAHE-Programm für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden und elektrolytische Reinigung, dazu Occasionen. Preis auf Anfrage.",
+    "all_desc": "{n} Geräte bei VES-TECH Swiss: MAHE-Programm für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden und elektrolytische Reinigung, dazu Occasionen. Preis auf Anfrage.",
     "all_h1": "Alle Geräte",
     "all_lead": "Das MAHE-Programm, übersichtlich nach Verfahren geordnet, ergänzt durch geprüfte Occasionen. Mit Schweizer Service und persönlicher Beratung durch den Techniker.",
     "subcategory_guide_title": "Worauf es bei der Auswahl ankommt",
@@ -582,7 +582,7 @@
     ],
     "volt_headline_1": "Technik mit",
     "volt_headline_2": "Präzision",
-    "volt_disciplines": "Elektronik. Schweissen. Schneiden. Reinigen. Automation.",
+    "volt_disciplines": "Elektronik, Schweissen, Schneiden, Reinigen und Automation",
     "volt_process_overview": "Verfahren im Überblick",
     "volt_process_detail": "Prinzip & Anwendung",
     "volt_panel_title": "Grafisches X-Bedienpanel",
@@ -655,7 +655,7 @@
     "home_desc": "MAHE en Suisse : soudage, découpe plasma, nettoyage et automatisation. Occasions PlasmaFix révisées et service à Herisau AR sur rendez-vous.",
     "home_h1": "Soudage, découpe, nettoyage et automatisation MAHE en Suisse",
     "all_title": "Tous les appareils · gamme MAHE et occasions | VES-TECH Swiss",
-    "all_desc": "{n} appareils chez VES-TECH Swiss : gamme MAHE pour MIG/MAG, TIG, MMA, découpe plasma et nettoyage électrolytique, et machines d’occasion. Prix sur demande.",
+    "all_desc": "{n} appareils chez VES-TECH Swiss : gamme MAHE pour MIG/MAG, TIG, MMA, découpe plasma et nettoyage électrolytique ; machines d’occasion. Prix sur demande.",
     "all_h1": "Tous les appareils",
     "all_lead": "Toute la gamme MAHE, classée par procédé, ainsi que des machines d’occasion contrôlées. Service en Suisse et conseil direct du technicien.",
     "subcategory_guide_title": "Les points à vérifier pour choisir",
@@ -746,7 +746,7 @@
       },
       {
         "q": "Quel procédé de soudage choisir pour l’aluminium ?",
-        "a": "Pour l’aluminium, on peut envisager MIG pulsé ou double pulsation avec une courbe fil/gaz adaptée, ou TIG AC/DC. Le choix dépend de l’épaisseur, de l’accès, de l’aspect et du rythme de fabrication. Omega AX et HyperTIG AX sont des exemples AC/DC ; HyperMIG X est une gamme MIG/MAG. La version précise et un essai sur pièce permettent de choisir."
+        "a": "Pour l’aluminium, on peut envisager MIG pulsé ou double pulsation avec une courbe fil/gaz adaptée ou TIG AC/DC. Le choix dépend de l’épaisseur, de l’accès, de l’aspect et du rythme de fabrication. Omega AX et HyperTIG AX sont des exemples AC/DC ; HyperMIG X est une gamme MIG/MAG. La version précise et un essai sur pièce permettent de choisir."
       },
       {
         "q": "Quelle est la différence entre TIG DC et TIG AC/DC ?",
@@ -1216,7 +1216,7 @@
     ],
     "volt_headline_1": "La technique de",
     "volt_headline_2": "précision",
-    "volt_disciplines": "Électronique. Soudage. Découpe. Nettoyage. Automatisation.",
+    "volt_disciplines": "Électronique, soudage, découpe, nettoyage et automatisation",
     "volt_process_overview": "Les procédés en un coup d’œil",
     "volt_process_detail": "Principe et application",
     "volt_panel_title": "Panneau graphique X",
@@ -1688,7 +1688,7 @@
       ],
       [
         "Perché un’azienda ne ha bisogno",
-        "<p>La EN 1090 richiede, per strutture portanti in acciaio e alluminio, un controllo di produzione in fabbrica. Ne fa parte un’attrezzatura di saldatura verificata e in ordine. In un audit è una delle domande che arrivano puntualmente, e un verbale risponde più in fretta di qualsiasi spiegazione.</p><p>La norma di riferimento è la EN 60974-14. Descrive come gli impianti di saldatura ad arco vengono calibrati, validati e verificati quanto alla costanza dei valori.</p>"
+        "<p>La EN 1090 richiede, per strutture portanti in acciaio e alluminio, un controllo di produzione in fabbrica. Ne fa parte un’attrezzatura di saldatura verificata e in ordine. In un audit è una delle domande che arrivano puntualmente. Un verbale risponde più in fretta di qualsiasi spiegazione.</p><p>La norma di riferimento è la EN 60974-14. Descrive come gli impianti di saldatura ad arco vengono calibrati, validati e verificati quanto alla costanza dei valori.</p>"
       ],
       [
         "Cosa ricevete",
@@ -1732,7 +1732,7 @@
     "about_body": [
       [
         "L’impresa",
-        "<p>VES-TECH Swiss è una ditta individuale di {owner}, con sede in {street}, {zip} {city} ({region_name}). Offre consulenza e vendita di apparecchi MAHE per saldatura, taglio, pulizia e automazione. Gli apparecchi MAHE nuovi vengono acquistati tramite Schweisstechnik Scherrer AG. Segue gli apparecchi oltre la vendita: messa in servizio, manutenzione, riparazione, calibrazione.</p><p>Ditta individuale significa che non esiste un reparto a cui rimandare. Il titolare risponde con il proprio nome, e questo nome compare quindi nelle note legali, nelle condizioni generali e su ogni fattura.</p>"
+        "<p>VES-TECH Swiss è una ditta individuale di {owner}, con sede in {street}, {zip} {city} ({region_name}). Offre consulenza e vendita di apparecchi MAHE per saldatura, taglio, pulizia e automazione. Gli apparecchi MAHE nuovi vengono acquistati tramite Schweisstechnik Scherrer AG. Segue gli apparecchi oltre la vendita: messa in servizio, manutenzione, riparazione, calibrazione.</p><p>Ditta individuale significa che non esiste un reparto a cui rimandare. Il titolare risponde con il proprio nome e questo nome compare quindi nelle note legali, nelle condizioni generali e su ogni fattura.</p>"
       ],
       [
         "L’officina di Herisau",
@@ -1850,7 +1850,7 @@
     ],
     "volt_headline_1": "Tecnica di",
     "volt_headline_2": "precisione",
-    "volt_disciplines": "Elettronica. Saldatura. Taglio. Pulizia. Automazione.",
+    "volt_disciplines": "Elettronica, saldatura, taglio, pulizia e automazione",
     "volt_process_overview": "Panoramica dei processi",
     "volt_process_detail": "Principio e applicazione",
     "volt_panel_title": "Pannello grafico X",
@@ -2113,7 +2113,7 @@
     "service_links_title": "Equipment and further services",
     "volt_headline_1": "Technology with",
     "volt_headline_2": "precision",
-    "volt_disciplines": "Electronics. Welding. Cutting. Cleaning. Automation.",
+    "volt_disciplines": "Electronics, welding, cutting, cleaning and automation",
     "volt_process_overview": "Processes at a glance",
     "volt_process_detail": "Principle & application",
     "volt_panel_title": "Graphic X control panel",
@@ -2197,7 +2197,7 @@
     "svc_calib_body": [
       [
         "What we measure",
-        "<p>During calibration, we compare the equipment display with a reference measurement. We check welding current and voltage, and also wire feed speed on equipment with a wire feeder. Measurements cover the range in which you use the equipment.</p><p>We document the deviations. Where values fall outside the permitted range, the equipment is adjusted if its design allows, then measured again.</p>"
+        "<p>During calibration, we compare the equipment display with a reference measurement. We check welding current and voltage and also wire feed speed on equipment with a wire feeder. Measurements cover the range in which you use the equipment.</p><p>We document the deviations. Where values fall outside the permitted range, the equipment is adjusted if its design allows, then measured again.</p>"
       ],
       [
         "Why a business needs this",
@@ -2227,7 +2227,7 @@
       ],
       [
         "Setup, commissioning and instruction",
-        "<p>Your contact handles system setup and commissioning, as well as operator instruction, and also looks after subsequent repairs. This gives you one central contact for the power source, control system, PC and cutting table.</p>"
+        "<p>Your contact handles system setup, commissioning and operator instruction. They also look after subsequent repairs. This gives you one central contact for the power source, control system, PC and cutting table.</p>"
       ],
       [
         "What to clarify first",
@@ -2281,7 +2281,7 @@
       },
       {
         "q": "Which welding process do I need for aluminium?",
-        "a": "MIG pulse or double pulse with a suitable wire/gas characteristic, and AC/DC TIG, are possible choices for aluminium. Selection depends on thickness, joint access, surface finish and production speed. Omega AX and HyperTIG AX are AC/DC examples; HyperMIG X is a MIG/MAG range. The specific equipment and a trial on the component determine the appropriate program."
+        "a": "MIG pulse or double pulse with a suitable wire/gas characteristic and AC/DC TIG are possible choices for aluminium. Selection depends on thickness, joint access, surface finish and production speed. Omega AX and HyperTIG AX are AC/DC examples; HyperMIG X is a MIG/MAG range. The specific equipment and a trial on the component determine the appropriate program."
       },
       {
         "q": "What is the difference between DC TIG and AC/DC TIG?",

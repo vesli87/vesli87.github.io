@@ -1,6 +1,6 @@
 {
   "de": {
-    "hours": "Mo–Do 07:30–17:00 · Fr 07:30–17:00",
+    "hours": "Mo–Fr 07:30–17:00",
     "search_ph": "Gerät, Verfahren oder Service suchen",
     "search_btn": "Suchen",
     "inquiry": "ANFRAGE",
@@ -159,7 +159,7 @@
     "form_email_example": "max@example.com"
   },
   "fr": {
-    "hours": "lun.–jeu. 07h30–17h00 · ven. 07h30–17h00",
+    "hours": "lun.–ven. 07h30–17h00",
     "search_ph": "Rechercher un appareil, procédé ou service",
     "search_btn": "Rechercher",
     "inquiry": "DEMANDE",
@@ -318,7 +318,7 @@
     "form_email_example": "alex@example.com"
   },
   "it": {
-    "hours": "Lun–Gio 07:30–17:00 · Ven 07:30–17:00",
+    "hours": "lun.–ven. 07:30–17:00",
     "search_ph": "Cerca un apparecchio, processo o servizio",
     "search_btn": "Cerca",
     "inquiry": "RICHIESTA",
@@ -477,7 +477,7 @@
     "form_email_example": "alex@example.com"
   },
   "en": {
-    "hours": "Mon–Thu 07:30–17:00 · Fri 07:30–17:00",
+    "hours": "Mon–Fri 07:30–17:00",
     "search_ph": "Search for equipment, a process or a service",
     "search_btn": "Search",
     "inquiry": "ENQUIRY",
@@ -636,7 +636,7 @@
     "form_email_example": "alex@example.com"
   },
   "es": {
-    "hours": "lun.–jue. 07:30–17:00 · vie. 07:30–17:00",
+    "hours": "lun.–vie. 07:30–17:00",
     "search_ph": "Buscar equipo, proceso o servicio",
     "search_btn": "Buscar",
     "inquiry": "CONSULTA",

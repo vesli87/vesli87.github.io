@@ -64,13 +64,13 @@ COMPANY = {
     # Er gehoert deshalb nicht nur ins Impressum, sondern ueberall dorthin,
     # wo die Firma als Anbieterin auftritt (UWG Art. 3 Abs. 1 lit. s).
     "owner": "Martin Veselovsky",
-    "hours": "Mo-Do 07:30-17:00 · Fr 07:30-12:00",
+    "hours": "Mo-Do 07:30-17:00 · Fr 07:30-17:00",
     # Muss mit dem Google Business Profile uebereinstimmen - Google gleicht
     # Oeffnungszeiten zwischen Website und Profil ab.
     "hours_schema": [
         {"days": ["Monday", "Tuesday", "Wednesday", "Thursday"],
          "opens": "07:30", "closes": "17:00"},
-        {"days": ["Friday"], "opens": "07:30", "closes": "12:00"},
+        {"days": ["Friday"], "opens": "07:30", "closes": "17:00"},
     ],
     "lat": 47.4906,      # Bronschhofen (SG), Näherung für LocalBusiness
     "lon": 9.0205,
@@ -213,11 +213,11 @@ def istMahe(p):
 # es liest sich als Abkuerzung fuer Franken, nicht fuer Freitag.
 LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland", "es": "Suiza"}
 ZEITEN = {
-    "de": "Mo–Do 07:30–17:00 · Fr 07:30–12:00",
-    "fr": "lun.–jeu. 07h30–17h00 · ven. 07h30–12h00",
-    "it": "lun.–gio. 07:30–17:00 · ven. 07:30–12:00",
-    "en": "Mon–Thu 07:30–17:00 · Fri 07:30–12:00",
-    "es": "lun.–jue. 07:30–17:00 · vie. 07:30–12:00",
+    "de": "Mo–Do 07:30–17:00 · Fr 07:30–17:00",
+    "fr": "lun.–jeu. 07h30–17h00 · ven. 07h30–17h00",
+    "it": "lun.–gio. 07:30–17:00 · ven. 07:30–17:00",
+    "en": "Mon–Thu 07:30–17:00 · Fri 07:30–17:00",
+    "es": "lun.–jue. 07:30–17:00 · vie. 07:30–17:00",
 }
 REGION_NAMES = {
     "SG": {"de": "St. Gallen", "fr": "Saint-Gall", "it": "San Gallo", "en": "St. Gallen", "es": "San Galo"},

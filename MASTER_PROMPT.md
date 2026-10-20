@@ -50,7 +50,10 @@
   - Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz —
     nur im Impressum, in AGB/Datenschutz und auf der Kontaktseite
   - +41 76 710 91 39 · `vestechswiss@gmail.com` · telefonisch erreichbar
-    Mo–Do 07:30–17:00 · Fr 07:30–11:30
+    Mo–Do 07:30–17:00 · Fr 07:30–12:00
+  - Freitag wurde am 20.10.2026 auf Wunsch des Inhabers auf 07:30–12:00
+    verlängert; Montag bis Donnerstag bleibt 07:30–17:00. Die Änderung gilt
+    in DE/FR/IT/EN/ES auch für Impressum, Datenschutz, AGB und ContactPoint.
   - Die Zeiten sind **Telefonzeiten**, keine Öffnungszeiten: sie stehen als
     `hoursAvailable` am ContactPoint, **nicht** als `openingHoursSpecification`
     am LocalBusiness — sonst kollidieren sie mit dem Unternehmensprofil.

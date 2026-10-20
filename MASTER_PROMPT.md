@@ -546,7 +546,10 @@ Produktname, Preis auf Anfrage und den sprachgleichen Produktlink gemeinsam.
 Auf ausdrücklichen Wunsch des Inhabers vom 19.10.2026 zeigt der Produktwechsel
 auf der Startseite in DE/FR/IT/EN keine Bildunterschrift unter der MPT-Illustration.
 Der weisse Bildrahmen enthält nur das Bild und reserviert keinen Fussnotenplatz.
-Die vorhandene Bildunterschrift auf der Produktdetailseite bleibt erhalten.
+Seit dem 20.10.2026 entfallen auf ausdrücklichen Wunsch des Inhabers auch
+die vollständigen Bildunterschriften unter MPT 3001 und MPT 2501 auf den
+Produktdetailseiten in DE/FR/IT/EN/ES. Beide Einträge sind aus `IMGCAP.json`
+entfernt; der normale bildabhängige Rahmen reserviert keinen Beschriftungsplatz.
 Theta 60 HSC und HyperCleaner ST bleiben darunter als direkte Produktkarten.
 
 Die Bühne reserviert den Platz aller sechs Bilder, ohne Layoutsprünge beim
@@ -976,8 +979,9 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 - `node --test build/test_*.mjs` umfasst Frontend und Query-Datenschutzregressionen;
   `test_inquiry.py` prüft Register, sichere Ausgabe und Servicerouten.
 - Produkt-/Kategoriezahlen bezeichnen Katalogeinträge, nicht Lagerbestand.
-  Die MPT-Illustration erhält auf der Produktdetailseite eine sichtbare Bildunterschrift;
-  für die Startseite gilt die ausdrückliche Ausnahme vom 19.10.2026 in §10.
+  Die ursprünglich vorgesehenen Bildunterschriften bei MPT 3001 und MPT 2501
+  entfallen seit der ausdrücklichen Vorgabe vom 20.10.2026 in allen Sprachen;
+  die aktuelle Darstellung ist in §11 beschrieben.
 
 
 ## 21. Marketing und Occasion-Bezeichnungen (22.09.2026)

@@ -1,19 +1,5 @@
 {
-  "_kommentar": "Bildunterschrift zum Hauptbild eines Produkts. Noetig, wo das Bild mehr oder etwas anderes zeigt als das Geraet allein - sonst behauptet die Seite stillschweigend etwas Falsches.",
-  "mpt-3001": {
-    "de": "Eigene Illustration von VES-TECH Swiss in einer nachgestellten Umgebung. Der Bildschirminhalt zeigt nicht die tatsächliche MyPlasm-CNC-Bedienoberfläche. Ausstattung und Ausführung richten sich nach dem schriftlichen Angebot.",
-    "fr": "Illustration réalisée par VES-TECH Swiss dans un environnement reconstitué. L’écran ne montre pas l’interface réelle de MyPlasm CNC. L’équipement et la version sont précisés dans l’offre écrite.",
-    "it": "Illustrazione realizzata da VES-TECH Swiss in un ambiente ricostruito. Lo schermo non mostra l’interfaccia reale di MyPlasm CNC. Dotazione e versione sono precisate nell’offerta scritta.",
-    "en": "VES-TECH Swiss illustration in a recreated setting. The screen content does not show the actual MyPlasm CNC interface. Equipment and configuration are defined by the written quotation.",
-    "es": "Ilustración de VES-TECH Swiss en un entorno recreado. El contenido de la pantalla no muestra la interfaz real de MyPlasm CNC. El equipamiento y la configuración se definen en la oferta escrita."
-  },
-  "mpt-2501": {
-    "de": "Eigene Illustration von VES-TECH Swiss in einer nachgestellten Umgebung. Der Bildschirminhalt zeigt nicht die tatsächliche MyPlasm-CNC-Bedienoberfläche. Ausstattung und Ausführung richten sich nach dem schriftlichen Angebot.",
-    "fr": "Illustration réalisée par VES-TECH Swiss dans un environnement reconstitué. L’écran ne montre pas l’interface réelle de MyPlasm CNC. L’équipement et la version sont précisés dans l’offre écrite.",
-    "it": "Illustrazione realizzata da VES-TECH Swiss in un ambiente ricostruito. Lo schermo non mostra l’interfaccia reale di MyPlasm CNC. Dotazione e versione sono precisate nell’offerta scritta.",
-    "en": "VES-TECH Swiss illustration in a recreated setting. The screen content does not show the actual MyPlasm CNC interface. Equipment and configuration are defined by the written quotation.",
-    "es": "Ilustración de VES-TECH Swiss en un entorno recreado. El contenido de la pantalla no muestra la interfaz real de MyPlasm CNC. El equipamiento y la configuración se definen en la oferta escrita."
-  },
+  "_kommentar": "Optionale Bildunterschriften zum Hauptbild eines Produkts. MPT 3001 und MPT 2501 haben auf ausdruecklichen Wunsch des Inhabers keine Bildunterschrift.",
   "plasmafix-51": {
     "de": "Die drei abgebildeten Anlagen in der Werkstatt: in der Mitte eine PlasmaFix 51 mit dem Zeichen SAF-FRO, links und rechts zwei PlasmaFix P+T mit dem Zeichen Oerlikon. Beide Marken gehörten zu Air Liquide Welding.",
     "fr": "Les trois machines photographiées à l’atelier : au centre une PlasmaFix 51 portant la marque SAF-FRO, à gauche et à droite deux PlasmaFix P+T portant la marque Oerlikon. Les deux marques appartenaient à Air Liquide Welding.",

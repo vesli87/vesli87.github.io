@@ -510,6 +510,10 @@ def lastmod_pflegen(pfade):
 
 def sitemap(entries, daten):
     """entries: [(path, alts|None, prio, changefreq)]"""
+    # Describe real catalogue images, not navigation icons or CSS decoration.
+    # This is an XML extension only; no additional image requests on web pages.
+    images = {C.u_prod(lang, p): R.img_abs(p['img'], 1000)
+              for lang in C.LANGS for p in C.P if p.get('img')}
     rows = []
     for path, alts, prio, freq in entries:
         alt = ""
@@ -520,11 +524,14 @@ def sitemap(entries, daten):
             )
             alt += (f'<xhtml:link rel="alternate" hreflang="x-default" '
                     f'href="{C.abs_url(alts[C.DEFAULT_LANG])}"/>')
+        image = (f'<image:image><image:loc>{R.e(images[path])}</image:loc></image:image>'
+                 if path in images else '')
         rows.append(f"<url><loc>{C.abs_url(path)}</loc><lastmod>{daten.get(path, TODAY)}</lastmod>"
-                    f"<changefreq>{freq}</changefreq><priority>{prio}</priority>{alt}</url>")
+                    f"<changefreq>{freq}</changefreq><priority>{prio}</priority>{alt}{image}</url>")
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
-            'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+            'xmlns:xhtml="http://www.w3.org/1999/xhtml" '
+            'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
             + "\n".join(rows) + "\n</urlset>\n")
 
 

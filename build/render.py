@@ -418,7 +418,7 @@ def ld_org(lang=C.DEFAULT_LANG):
     co = C.COMPANY
     vis = C.WORKSHOP
     return {
-        "@type": ["Organization", "LocalBusiness", "Store"],
+        "@type": ["Organization", "LocalBusiness"],
         "@id": f"{C.SITE}/#organization",
         "name": co["name"],
         "legalName": co["legal_name"],
@@ -433,20 +433,28 @@ def ld_org(lang=C.DEFAULT_LANG):
         "image": f"{C.SITE}/assets/img/hero.jpg",
         "telephone": co["phone"],
         "email": co["email"],
-        # Besucheradresse, nicht Rechnungsadresse: hier wird Kundschaft
-        # empfangen, und genau diese Anschrift steht im Google-
-        # Unternehmensprofil. Weichen Profil und Website voneinander ab,
-        # bestaetigt Google den Eintrag nicht. Die Rechnungsadresse in
-        # Bronschhofen steht im Impressum und auf der Kontaktseite.
+        # The sole proprietorship is based in Bronschhofen. Its partner's
+        # workshop is a separately identified place, not a VES-TECH store.
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": vis["street"],
-            "postalCode": vis["zip"],
-            "addressLocality": vis["city"],
-            "addressRegion": vis["region"],
+            "streetAddress": co["street"],
+            "postalCode": co["zip"],
+            "addressLocality": co["city"],
+            "addressRegion": co["region"],
             "addressCountry": "CH",
         },
-        "geo": {"@type": "GeoCoordinates", "latitude": vis["lat"], "longitude": vis["lon"]},
+        "location": {
+            "@type": "Place", "@id": f"{C.SITE}/#partner-workshop",
+            "name": vis["partner"] + " · " + C.t(lang, "addr_shop"),
+            "description": C.t(lang, "addr_shop_hint"),
+            "address": {
+                "@type": "PostalAddress", "streetAddress": vis["street"],
+                "postalCode": vis["zip"], "addressLocality": vis["city"],
+                "addressRegion": vis["region"], "addressCountry": "CH",
+            },
+            "geo": {"@type": "GeoCoordinates", "latitude": vis["lat"], "longitude": vis["lon"]},
+            "hasMap": C.MAP_URL,
+        },
         # Kein openingHoursSpecification: die Zeiten unten sind die telefonische
         # Erreichbarkeit des Inhabers, nicht die Oeffnungszeiten der Werkstatt in
         # Herisau. Als Oeffnungszeiten am LocalBusiness ausgegeben, wuerden sie
@@ -458,9 +466,6 @@ def ld_org(lang=C.DEFAULT_LANG):
         # Sprachen der Website (die stehen als inLanguage am WebSite-Knoten).
         "knowsLanguage": ["de", "cs", "en"],
         "currenciesAccepted": "CHF",
-        # Karte zur Werkstatt. Google verknuepft damit Website und Ort; wer die
-        # Seite auf dem Telefon liest, kommt mit einem Tippen zur Navigation.
-        "hasMap": C.MAP_URL,
         # Nur verifizierte Firmenprofile - siehe core.py::SOCIAL_PROFILES.
         **({"sameAs": C.SAMEAS} if C.SAMEAS else {}),
         "brand": {"@type": "Brand", "name": C.BRAND, "url": C.BRAND_URL},
@@ -693,10 +698,8 @@ def head(lang, *, title, desc, url, alts, jsonld_blocks, og_image=None,
 {f'<link rel="canonical" href="{e(C.abs_url(url))}">' if adressierbar else ""}
 {alt_links}
 <meta name="author" content="{e(C.COMPANY['name'])}">
-<meta name="geo.region" content="CH-{C.WORKSHOP['region']}">
-<meta name="geo.placename" content="{e(C.WORKSHOP['city'])}">
-<meta name="geo.position" content="{C.WORKSHOP['lat']};{C.WORKSHOP['lon']}">
-<meta name="ICBM" content="{C.WORKSHOP['lat']}, {C.WORKSHOP['lon']}">
+<meta name="geo.region" content="CH-{C.COMPANY['region']}">
+<meta name="geo.placename" content="{e(C.COMPANY['city'])}">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{e(C.t(lang,'site_name'))}">
 <meta property="og:locale" content="{C.EX[lang]['locale']}">

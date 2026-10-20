@@ -886,6 +886,10 @@ def page_cat(lang, c, sub=None):
                  (C.t(lang, "nav_products"), C.u_products(lang)),
                  (C.catT(lang, c), None)]
 
+    search_copy = C.search_landing(lang, cid, sub)
+    if search_copy:
+        title, desc, h1 = (search_copy[key] for key in ('title', 'description', 'h1'))
+
     chip_html = [f'<a class="chip{"" if sub else " active"}" href="{e(C.u_cat(lang, cid))}">'
                  f'{e(C.t(lang,"chip_all"))}</a>']
     for s in c["subs"]:

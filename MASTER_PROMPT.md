@@ -42,8 +42,12 @@
 - **Firmendaten** (Quelle: `build/core.py::COMPANY`, sonst nirgends hartkodiert):
   - Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau (AR) — bei der
     Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung.
-    Das ist die **Besucheradresse nach Vereinbarung** im JSON-LD und in
-    `geo.*` (Quelle: `build/core.py::WORKSHOP`). Das Google-Unternehmensprofil
+    Das ist die **Besucheradresse nach Vereinbarung** im separaten
+    JSON-LD-Place `#partner-workshop` (Quelle: `build/core.py::WORKSHOP`).
+    Die Organisation hat dagegen ihre Sitzadresse in Bronschhofen; die
+    Partnerwerkstatt ist kein eigener VES-TECH-Laden oder eigene Filiale.
+    Die allgemeinen Ortsmetadaten nennen ebenfalls den Sitz, ohne angenäherte
+    Koordinaten als präzisen Unternehmensstandort auszugeben. Das Google-Unternehmensprofil
     muss die tatsächlich bestätigte Betriebsform und Adresse abbilden; die
     Partnerwerkstatt nicht automatisch als eigene Niederlassung eintragen.
     Für die laufende Verifizierung hat der Inhaber Bronschhofen bestätigt.
@@ -351,7 +355,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
   ihrer gefilterten Katalogliste, auch als `CollectionPage.primaryImageOfPage`.
   So erscheint bei Plasma kein allgemeines HyperMIG-Banner. Kataloguebersicht
   und allgemeine Serviceseiten behalten das gemeinsame Firmenmotiv.
-- **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
+- **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
 - `sitemap.xml` mit `xhtml:link`-Alternates (595 URLs); Suche, Datenschutz und AGB
@@ -361,6 +365,17 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
   Inhalt, Metadaten, canonical/hreflang, JSON-LD, Navigation und Asset-Pfade
   bleiben relevant. Bestehende Daten werden nicht künstlich zurückgesetzt.
 - `robots.txt` mit Sitemap-Verweis
+- Seit 20.10.2026 enthalten die 405 Produkt-URLs zusätzlich die Bild-Erweiterung
+  der Sitemap mit ihrem tatsächlich angezeigten Hauptbild. Keine UI-Symbole,
+  neuen Bilddateien oder zusätzlichen Browser-Downloads. Das inhaltsabhängige
+  `lastmod` bleibt unverändert; Bilder werden dadurch zur Entdeckung angeboten,
+  nicht als bereits indexiert oder als Rich Result zugesagt.
+- `data/SEARCH_LANDINGS.json` pflegt eigene Titel, Beschreibungen und sichtbare
+  Hauptüberschriften für die bestehenden Kategorien Schweissgeräte und Plasma
+  sowie die Unterkategorien CNC-Schneidtische und Plasmabrenner, DE/FR/IT/EN/ES.
+  `validate_search_landings()` prüft Sprachvollständigkeit, bestehende Ziele,
+  Eindeutigkeit und Textgrenzen vor dem Ersetzen generierter Seiten. URLs,
+  Produktspezifikationen und das Design bleiben unverändert.
 - Verifizierungs-Tags für Google Search Console und Bing Webmaster Tools:
   Wert in `core.py` eintragen (`GOOGLE_SITE_VERIFICATION`,
   `BING_SITE_VERIFICATION`), das Tag erscheint dann auf jeder Seite.

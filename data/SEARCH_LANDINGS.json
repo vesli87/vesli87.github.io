@@ -1,0 +1,120 @@
+[
+  {
+    "kind": "category",
+    "id": "schweissgeraete",
+    "de": {
+      "title": "MAHE Schweissgeräte Schweiz: MIG/MAG, WIG/TIG & MMA | VES-TECH",
+      "description": "MAHE-Schweissgeräte für MIG/MAG, WIG/TIG und MMA vergleichen. Beratung, Konfiguration und Service in der Partnerwerkstatt Herisau. Preis auf Anfrage.",
+      "h1": "MAHE Schweissgeräte für MIG/MAG, WIG/TIG und MMA"
+    },
+    "fr": {
+      "title": "Postes à souder MAHE en Suisse : MIG/MAG, TIG, MMA | VES-TECH",
+      "description": "Comparez les postes MAHE MIG/MAG, TIG et MMA. Conseil, configuration et service dans l’atelier partenaire à Herisau. Prix sur demande.",
+      "h1": "Postes à souder MAHE : MIG/MAG, TIG et MMA"
+    },
+    "it": {
+      "title": "Saldatrici MAHE in Svizzera: MIG/MAG, TIG e MMA | VES-TECH",
+      "description": "Confrontate le saldatrici MAHE MIG/MAG, TIG e MMA. Consulenza, configurazione e assistenza nell’officina partner di Herisau. Prezzo su richiesta.",
+      "h1": "Saldatrici MAHE MIG/MAG, TIG e MMA"
+    },
+    "en": {
+      "title": "MAHE welding machines in Switzerland: MIG, TIG & MMA | VES-TECH",
+      "description": "Compare MAHE MIG/MAG, TIG and MMA welding machines. Advice, configuration and service at the partner workshop in Herisau. Price on request.",
+      "h1": "MAHE MIG/MAG, TIG and MMA welding machines"
+    },
+    "es": {
+      "title": "Equipos MAHE en Suiza: soldadura MIG/MAG, TIG y MMA | VES-TECH",
+      "description": "Compare equipos MAHE MIG/MAG, TIG y MMA. Asesoramiento, configuración y servicio en el taller asociado de Herisau. Precio bajo consulta.",
+      "h1": "Equipos de soldadura MAHE MIG/MAG, TIG y MMA"
+    }
+  },
+  {
+    "kind": "category",
+    "id": "plasmaschneiden",
+    "de": {
+      "title": "MAHE Plasmaschneider & CNC-Schneidtische Schweiz | VES-TECH",
+      "description": "MAHE Theta für manuelles und automatisiertes Plasmaschneiden sowie MPT CNC-Schneidtische. Modelle vergleichen, Beratung und Angebot in der Schweiz.",
+      "h1": "Plasmaschneider und CNC-Schneidtische von MAHE"
+    },
+    "fr": {
+      "title": "Découpeurs plasma et tables CNC MAHE en Suisse | VES-TECH",
+      "description": "MAHE Theta pour la découpe plasma manuelle et automatisée, tables CNC MPT. Comparez les modèles et demandez conseil pour votre équipement en Suisse.",
+      "h1": "Découpeurs plasma et tables de découpe CNC MAHE"
+    },
+    "it": {
+      "title": "Taglio plasma e tavoli CNC MAHE in Svizzera | VES-TECH",
+      "description": "MAHE Theta per taglio plasma manuale e automatizzato, tavoli CNC MPT. Confrontate i modelli e richiedete consulenza per l’impianto in Svizzera.",
+      "h1": "Taglio plasma e tavoli di taglio CNC MAHE"
+    },
+    "en": {
+      "title": "MAHE plasma cutters & CNC cutting tables Switzerland | VES-TECH",
+      "description": "MAHE Theta for manual and automated plasma cutting, plus MPT CNC cutting tables. Compare models and request advice and a quotation in Switzerland.",
+      "h1": "MAHE plasma cutters and CNC cutting tables"
+    },
+    "es": {
+      "title": "Corte por plasma y mesas CNC MAHE en Suiza | VES-TECH",
+      "description": "MAHE Theta para corte por plasma manual y automatizado, y mesas CNC MPT. Compare modelos y solicite asesoramiento y presupuesto en Suiza.",
+      "h1": "Corte por plasma y mesas de corte CNC MAHE"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "plasmaschneiden",
+    "sub": "Schneidtische",
+    "de": {
+      "title": "CNC-Plasmaschneidtische MPT 3001 & MPT 2501 | VES-TECH Swiss",
+      "description": "MAHE CNC-Plasmaschneidtische mit 3000 × 1500 oder 2500 × 1250 mm Arbeitsbereich. MyPlasm CNC, Theta-Stromquelle und Beratung zur passenden Ausführung.",
+      "h1": "CNC-Plasmaschneidtische MPT 3001 und MPT 2501"
+    },
+    "fr": {
+      "title": "Tables de découpe plasma CNC MAHE MPT 3001 et 2501 | VES-TECH",
+      "description": "Tables plasma CNC MAHE : zone de travail de 3000 × 1500 ou 2500 × 1250 mm. MyPlasm CNC, source Theta et conseil pour choisir la configuration.",
+      "h1": "Tables de découpe plasma CNC MPT 3001 et MPT 2501"
+    },
+    "it": {
+      "title": "Tavoli di taglio plasma CNC MAHE MPT 3001 e 2501 | VES-TECH",
+      "description": "Tavoli plasma CNC MAHE: area di lavoro di 3000 × 1500 o 2500 × 1250 mm. MyPlasm CNC, generatore Theta e consulenza sulla configurazione.",
+      "h1": "Tavoli di taglio plasma CNC MPT 3001 e MPT 2501"
+    },
+    "en": {
+      "title": "MAHE CNC plasma cutting tables MPT 3001 & 2501 | VES-TECH",
+      "description": "MAHE CNC plasma cutting tables with a 3000 × 1500 or 2500 × 1250 mm working area. MyPlasm CNC, a Theta power source and configuration advice.",
+      "h1": "MPT 3001 and MPT 2501 CNC plasma cutting tables"
+    },
+    "es": {
+      "title": "Mesas de corte por plasma CNC MAHE MPT 3001 y 2501 | VES-TECH",
+      "description": "Mesas plasma CNC MAHE con área de trabajo de 3000 × 1500 o 2500 × 1250 mm. MyPlasm CNC, fuente Theta y asesoramiento sobre la configuración.",
+      "h1": "Mesas de corte por plasma CNC MPT 3001 y MPT 2501"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "zubehoer",
+    "sub": "Plasmabrenner",
+    "de": {
+      "title": "MAHE Plasmabrenner: PSHB & PSAB für Theta | VES-TECH Swiss",
+      "description": "Hand- und Maschinenbrenner für MAHE Theta: PSHB 65, PSHB 125, PSHB 160, PSAB 65 und PSAB 125. Modell und Schlauchlänge passend auswählen.",
+      "h1": "Plasmabrenner für MAHE Theta"
+    },
+    "fr": {
+      "title": "Torches plasma MAHE : PSHB et PSAB pour Theta | VES-TECH",
+      "description": "Torches manuelles et machine pour MAHE Theta : PSHB 65, 125 et 160, PSAB 65 et 125. Comparez les modèles et choisissez la longueur du faisceau.",
+      "h1": "Torches plasma pour MAHE Theta"
+    },
+    "it": {
+      "title": "Torce plasma MAHE: PSHB e PSAB per Theta | VES-TECH Swiss",
+      "description": "Torce manuali e automatiche per MAHE Theta: PSHB 65, 125 e 160, PSAB 65 e 125. Confrontate i modelli e scegliete la lunghezza del fascio cavi.",
+      "h1": "Torce plasma per MAHE Theta"
+    },
+    "en": {
+      "title": "MAHE plasma torches: PSHB & PSAB for Theta | VES-TECH Swiss",
+      "description": "Handheld and machine torches for MAHE Theta: PSHB 65, 125 and 160, PSAB 65 and 125. Compare models and select the required hose assembly length.",
+      "h1": "Plasma torches for MAHE Theta"
+    },
+    "es": {
+      "title": "Antorchas plasma MAHE: PSHB y PSAB para Theta | VES-TECH",
+      "description": "Antorchas manuales y mecanizadas para MAHE Theta: PSHB 65, 125 y 160, PSAB 65 y 125. Compare modelos y elija la longitud del conjunto de mangueras.",
+      "h1": "Antorchas de plasma para MAHE Theta"
+    }
+  }
+]

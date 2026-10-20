@@ -112,7 +112,7 @@ HERO_SLIDES = ["hero", "hero-mpt"]
 HOME_FEATURED = ('mpt-3001', 'hypermig-twin', 'hypertig-ax', 'hypertig-dx',
                  'omega-ax', 'beta-dx')
 
-# Kartenverweis auf die Werkstatt. Steht als hasMap im LocalBusiness.
+# Kartenverweis auf die Partnerwerkstatt, im separaten Place-Knoten.
 MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
            + WORKSHOP["street"].replace(" ", "+") + ",+"
            + WORKSHOP["zip"] + "+" + WORKSHOP["city"])
@@ -480,6 +480,7 @@ PRODUCT_GUIDES = _load("PRODUCT_GUIDES")
 PANEL_GUIDES = _load("PANEL_GUIDES")
 HYPERMIG_CWK = _load("HYPERMIG_CWK")
 GUIDE_LINKS = _load("GUIDE_LINKS")
+SEARCH_LANDINGS = _load("SEARCH_LANDINGS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
@@ -1257,8 +1258,41 @@ def editorial_target(lang, ref):
     raise ValueError(f'Unknown editorial link: {kind}/{key}')
 
 
+def search_landing(lang, cid, sub=None):
+    for item in SEARCH_LANDINGS:
+        if item['id'] == cid and item.get('sub') == sub:
+            return item[lang]
+    return None
+
+
+def validate_search_landings():
+    routes = set()
+    for item in SEARCH_LANDINGS:
+        kind = item.get('kind')
+        if kind not in ('category', 'subcategory'):
+            raise ValueError('Search landing must use an existing catalogue route')
+        fields = {'kind', 'id', *LANGS} | ({'sub'} if kind == 'subcategory' else set())
+        if set(item) != fields:
+            raise ValueError('Incomplete search landing translations or route')
+        ref = {key: item[key] for key in ('kind', 'id', 'sub') if key in item}
+        for lang in LANGS:
+            target = editorial_target(lang, ref)[1]
+            if target in routes:
+                raise ValueError('Duplicate search landing route')
+            routes.add(target)
+            copy = item[lang]
+            if set(copy) != {'title', 'description', 'h1'} or any(
+                    not isinstance(text, str) or not text.strip() or '<' in text or '>' in text
+                    for text in copy.values()):
+                raise ValueError('Search landing copy must be complete plain text')
+            if len(copy['title']) > 68 or len(copy['description']) > 155:
+                raise ValueError('Search landing metadata exceeds editorial limits')
+
+
 def validate_editorial_guides():
     """Validate all languages and destinations before replacing generated files."""
+    validate_search_landings()
+
     def links(refs):
         if not isinstance(refs, list) or not 1 <= len(refs) <= 6:
             raise ValueError('Editorial link groups need one to six references')

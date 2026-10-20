@@ -1793,3 +1793,32 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-product-media{padding:0}
   .volt-feature-carousel{display:none}
 }
+
+/* Personal MAHE training: full document, shared VOLT frame, no new runtime. */
+.mahe-training{margin-top:36px;margin-bottom:44px;scroll-margin-top:240px}
+.mahe-training-card{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);align-items:center;gap:36px;padding:30px}
+.mahe-training-card::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border:32px solid transparent;border-image:url('/assets/icons/design/volt-frame.svg') 32 fill / 32px / 0 stretch}
+.mahe-training-photo{margin:0;min-width:0}
+.mahe-training-photo img{display:block;width:100%;max-width:1448px;height:auto;border-radius:3px}
+.mahe-training-photo figcaption{font-size:13px;line-height:1.5;color:var(--muted);margin-top:10px}
+.mahe-training-copy{min-width:0}
+.mahe-training-copy .p-eyebrow{margin:0 0 10px}
+.mahe-training-copy h2{font-family:'Inter',sans-serif;font-size:clamp(25px,2.5vw,36px);font-weight:700;line-height:1.18;letter-spacing:-.035em;margin:0 0 18px;overflow-wrap:anywhere}
+.mahe-training-copy p{line-height:1.65;margin:0 0 16px}
+.mahe-training-copy ul{padding-left:20px;margin:0 0 22px;color:var(--muted)}
+.mahe-training-copy li{line-height:1.6;margin:4px 0}
+.mahe-training-copy li::marker{color:var(--accent-ink)}
+.mahe-training-facts{display:flex;flex-wrap:wrap;gap:12px 26px;margin:0 0 22px;padding-top:16px;border-top:1px solid var(--line)}
+.mahe-training-facts dt{font-size:12px;line-height:1.5;color:var(--muted)}
+.mahe-training-facts dd{font-size:14px;line-height:1.6;font-weight:600;margin:2px 0 0;overflow-wrap:anywhere}
+@media screen and (max-width:800px){
+  .mahe-training-card{grid-template-columns:minmax(0,1fr);gap:24px;padding:22px}
+  .mahe-training-photo{max-width:640px;margin:0 auto}
+  .mahe-training-copy .volt-text-link{min-height:44px}
+  .mahe-training{scroll-margin-top:180px}
+}
+@media print{
+  .mahe-training-card{display:block;padding:0}
+  .mahe-training-card::before{display:none}
+  .mahe-training-photo{max-width:120mm;margin:0 0 16pt}
+}

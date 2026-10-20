@@ -12,6 +12,7 @@ import render as R        # noqa: E402
 from render import e      # noqa: E402
 
 PANEL_DRAWN = json.loads((C.DATA / "PANEL_DRAWN.json").read_text("utf-8"))
+TRAINING = json.loads((C.DATA / "TRAINING.json").read_text("utf-8"))
 
 # Wie breit das Bild auf der Produktseite wirklich wird.
 #
@@ -51,6 +52,35 @@ DL_SDS = {d["k"]: d for d in C.DLS if d["k"] != "PDF"}     # R1, RP1, P1, M1, N1
 
 
 # --------------------------------------------------------------------------
+# Persönliche Geräteschulung; keine Händler- oder Unternehmenszertifizierung.
+# Das vollständige, vom Inhaber bereitgestellte Dokument bleibt zoombar.
+def training_block(lang, on_about=False):
+    copy = TRAINING["copy"][lang]
+    photo = R.img_tag(TRAINING["image"],
+                      "(max-width:800px) calc(100vw - 88px), (max-width:1400px) 44vw, 600px",
+                      cls="zoomable", alt=copy["alt"], width=1448)
+    topics = "".join(f'<li>{e(topic)}</li>' for topic in copy["topics"])
+    target = C.u_page(lang, "contact") if on_about else C.u_page(lang, "about") + "#mahe-training"
+    cta = C.t(lang, "n_contact") if on_about else copy["details"]
+    return (
+        '<section class="wrap mahe-training" id="mahe-training" aria-labelledby="mahe-training-title">'
+        '<div class="mahe-training-card">'
+        f'<figure class="mahe-training-photo">{photo}'
+        f'<figcaption>{e(copy["zoom"])}</figcaption></figure>'
+        '<div class="mahe-training-copy">'
+        f'<p class="p-eyebrow">{e(copy["eyebrow"])}</p>'
+        f'<h2 id="mahe-training-title">{e(copy["heading"])}</h2>'
+        f'<p>{e(copy["summary"])}</p><ul>{topics}</ul>'
+        '<dl class="mahe-training-facts">'
+        f'<div><dt>{e(copy["date_label"])}</dt><dd><time datetime="{e(TRAINING["date"])}">{e(copy["date_text"])}</time></dd></div>'
+        f'<div><dt>{e(copy["place_label"])}</dt><dd>{e(TRAINING["place"])}</dd></div>'
+        f'<div><dt>{e(copy["certificate_label"])}</dt><dd>{e(TRAINING["number"])}</dd></div>'
+        '</dl>'
+        f'<a class="volt-text-link" href="{e(target)}">{e(cta)} <span aria-hidden="true">→</span></a>'
+        '</div></div></section>'
+    )
+
+
 # Produktbezogene Blöcke
 # --------------------------------------------------------------------------
 
@@ -700,6 +730,7 @@ def page_home(lang):
 
 {R.usp_row(lang, service_links=True)}
 {R.ref_block(lang)}
+{training_block(lang)}
 
 <section class="programm"><div class="wrap">
   <p class="p-eyebrow">{e(C.t(lang,'prog_eyebrow'))}</p>
@@ -1369,6 +1400,7 @@ def page_service(lang, key=None):
                         for i, (h, text) in enumerate(C.t(lang, 'volt_steps'), 1))
         inhalt += (f'<section class="wrap volt-service-steps"><h2>{e(C.t(lang,"volt_steps_title"))}</h2>'
                    f'<ol>{steps}</ol></section>')
+        inhalt += training_block(lang)
         values = {key:e(value) for key, value in {
             'ws_street':C.WORKSHOP['street'], 'ws_zip':C.WORKSHOP['zip'],
             'ws_city':C.WORKSHOP['city'], 'partner':C.WORKSHOP['partner'],
@@ -1517,6 +1549,7 @@ def page_about(lang):
     secs += company_navigation(lang, url)
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)), (nav, None)],
                    h1=C.t(lang, "about_h1"), desc=C.t(lang, "about_lead"))
+            + training_block(lang, on_about=True)
             + f'<div class="catalog"><div class="wrap textwrap legal">{secs}</div></div>')
     title, desc = C.t(lang, "about_title"), C.t(lang, "about_desc")
     ld = [R.ld_org(lang), *R.ld_about(lang, url, title, desc),

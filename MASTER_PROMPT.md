@@ -1084,3 +1084,20 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
   Sprachen gepflegt. Kategorie, Suchindizes, Anfragekatalog, Hreflang, Sitemap,
   IndexNow und Recovery nehmen den Eintrag über den normalen Build auf.
   Aktueller Umfang: 81 Produkte, 122 Inhaltsseiten je Sprache und 476 Sitemap-URLs.
+
+## 25. Persönliche MAHE-Geräteschulung (20.10.2026)
+
+- Das vom Inhaber bereitgestellte Schulungszertifikat für Martin Veselovsky
+  erscheint auf Startseite, Über-uns-Seite und Serviceübersicht in DE/FR/IT/EN.
+  Angaben in `data/TRAINING.json`: MAHE GmbH, Kreuztal, 09.07.2026,
+  MH-2026-8942, Schweisstechnologie und Systemtechnik. Beschrieben werden
+  Bedienung, Parametrierung, Prozesssteuerung, Wartung und Qualitätssicherung.
+- Es ist eine persönliche Teilnahmebescheinigung. Daraus weder eine offizielle
+  Händler-/Serviceautorisierung noch eine EN-1090-Unternehmenszertifizierung,
+  Schweisserprüfung oder sonstige Akkreditierung ableiten. Das Dokument stammt
+  vom Inhaber; eine unabhängige Bestätigung des Ausstellers wird nicht behauptet.
+- Vollständiges Motiv ohne Beschnitt, Textänderung oder Hochskalierung; lokale
+  WebP-Stufen 480/960/1448 px unter `assets/img/company/`, Manifest mit SHA256 der
+  gelieferten Quelldatei. Lazy Loading und vorhandene barrierefreie Bildlupe;
+  keine neue Bibliothek, kein zusätzlicher JavaScript-Code. Die Quelldatei
+  verbleibt im privaten Downloadordner; Recovery enthält nur die Webfassungen.

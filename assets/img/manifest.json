@@ -1142,5 +1142,20 @@
   "folder": "p",
   "source_url": "https://mahe-online.de/wp-content/uploads/2026/08/MG500_A.png",
   "source_sha256": "c48d286aded71c98f76e21777f5fcd4c28a96fa8d8871965320dca8c5974119f"
+ },
+ "company/mahe-training-martin-veselovsky.png": {
+  "folder": "company",
+  "h": 1086,
+  "key": "mahe-training-martin-veselovsky",
+  "local": true,
+  "ratio": 0.75,
+  "sizes": [
+   480,
+   960,
+   1448
+  ],
+  "source": "Document supplied by the proprietor; permission to publish on 2026-10-20",
+  "source_sha256": "6cd18e2aa93435e6e60b2d033d51d322ae11101847f192080e0fc0c5e027891e",
+  "w": 1448
  }
 }

@@ -653,6 +653,14 @@ auffällt: Überschriftenhierarchie, verwaiste Seiten, NAP-Konsistenz über alle
 Sprachen, deutschen Text der in FR/IT stehen geblieben ist, Alt-Texte,
 Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
 
+Die Kurzangabe zur Netzversorgung der Delta 1800 wurde am 20.10.2026 von
+„230/400 V“ auf „1~ 230 V“ korrigiert. Sie muss zur einzelnen Modellspalte
+1800 in `build/mahe_specs.json` passen, nicht zu anderen Delta-Baureihen.
+Quelle: MAHE Delta, technisches Datenblatt und Bedienungsanleitung
+(`https://mahe-online.de/delta/`, `https://mahe-online.de/wp-content/uploads/2022/07/Delta_DE.pdf`).
+Die zentrale Korrektur in `data/P.json` gilt für Karten, Produktseiten und
+Suchdaten in DE/FR/IT/EN/ES; historische Quellsnapshots bleiben unverändert.
+
 ## 14. Harte Regeln beim Erweitern
 
 1. **Inhalt kommt aus `data/`**, niemals direkt ins generierte HTML schreiben —

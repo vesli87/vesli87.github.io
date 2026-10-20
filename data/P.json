@@ -184,7 +184,7 @@
   "desc": "Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.",
   "specs": {
    "Verfahren": "MMA · WIG-Lift",
-   "Netz": "230/400 V",
+   "Netz": "1~ 230 V",
    "Bauart": "tragbar"
   }
  },

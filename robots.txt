@@ -8,6 +8,7 @@ Disallow: /suche/
 Disallow: /fr/recherche/
 Disallow: /it/ricerca/
 Disallow: /en/search/
+Disallow: /es/buscar/
 Disallow: /build/
 Disallow: /*?q=
 

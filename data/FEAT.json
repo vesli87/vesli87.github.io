@@ -7,7 +7,8 @@
     "de": "AC/DC",
     "fr": "AC/DC",
     "it": "AC/DC",
-    "en": "AC/DC"
+    "en": "AC/DC",
+    "es": "AC/DC"
   },
   "acwave": {
     "img": "/assets/img/sym/acwave.webp",
@@ -16,7 +17,8 @@
     "de": "AC Wave",
     "fr": "AC Wave",
     "it": "AC Wave",
-    "en": "AC Wave"
+    "en": "AC Wave",
+    "es": "AC Wave"
   },
   "antistick": {
     "img": "/assets/img/sym/antistick.webp",
@@ -25,7 +27,8 @@
     "de": "Antistick",
     "fr": "Anticollage",
     "it": "Antincollamento",
-    "en": "Anti-Stick"
+    "en": "Anti-Stick",
+    "es": "Anti-Stick"
   },
   "arcactive": {
     "img": "/assets/img/sym/arcactive.webp",
@@ -34,7 +37,8 @@
     "de": "HyperArcActive",
     "fr": "HyperArcActive",
     "it": "HyperArcActive",
-    "en": "HyperArcActive"
+    "en": "HyperArcActive",
+    "es": "HyperArcActive"
   },
   "arcforce": {
     "img": "/assets/img/sym/arcforce.webp",
@@ -43,7 +47,8 @@
     "de": "ArcForce",
     "fr": "Arc Force",
     "it": "Arc Force",
-    "en": "ArcForce"
+    "en": "ArcForce",
+    "es": "ArcForce"
   },
   "boost": {
     "img": "/assets/img/sym/boost.webp",
@@ -52,7 +57,8 @@
     "de": "Active Boost",
     "fr": "Active Boost",
     "it": "Active Boost",
-    "en": "Active Boost"
+    "en": "Active Boost",
+    "es": "Active Boost"
   },
   "braze": {
     "img": "/assets/img/sym/cwk-2026-braze.webp",
@@ -61,7 +67,8 @@
     "de": "MIG-Löten",
     "fr": "Brasage MIG",
     "it": "Brasatura MIG",
-    "en": "MIG brazing"
+    "en": "MIG brazing",
+    "es": "Soldadura fuerte MIG"
   },
   "clean": {
     "img": "/assets/img/sym/clean.webp",
@@ -70,7 +77,8 @@
     "de": "Reinigen",
     "fr": "Nettoyage",
     "it": "Pulitura",
-    "en": "Cleaning"
+    "en": "Cleaning",
+    "es": "Limpieza"
   },
   "coldroot": {
     "img": "/assets/img/sym/coldroot.webp",
@@ -79,7 +87,8 @@
     "de": "Hyper Cold / Root",
     "fr": "Hyper Cold / Root",
     "it": "Hyper Cold / Root",
-    "en": "Hyper Cold / Root"
+    "en": "Hyper Cold / Root",
+    "es": "Hyper Cold / Root"
   },
   "doppelpuls": {
     "img": "/assets/img/sym/cwk-2026-doppelpuls.webp",
@@ -88,7 +97,8 @@
     "de": "Doppelpuls",
     "fr": "Double pulsation",
     "it": "Doppio impulso",
-    "en": "Double pulse"
+    "en": "Double pulse",
+    "es": "Doble pulsado"
   },
   "galv": {
     "img": "/assets/img/sym/galv.webp",
@@ -97,7 +107,8 @@
     "de": "Galvanisieren",
     "fr": "Galvanisation",
     "it": "Galvanizzazione",
-    "en": "Galvanising"
+    "en": "Galvanising",
+    "es": "Galvanizado"
   },
   "gitter": {
     "img": "/assets/img/sym/gitter.webp",
@@ -106,7 +117,8 @@
     "de": "Lochblech-Schneiden",
     "fr": "Coupe de tôles perforées",
     "it": "Taglio di lamiere forate",
-    "en": "Perforated sheet cutting"
+    "en": "Perforated sheet cutting",
+    "es": "Corte de chapa perforada"
   },
   "gouging": {
     "img": "/assets/img/sym/gouging.webp",
@@ -115,7 +127,8 @@
     "de": "Fugenhobeln",
     "fr": "Gougeage",
     "it": "Scriccatura",
-    "en": "Gouging"
+    "en": "Gouging",
+    "es": "Ranurado por arco"
   },
   "hf": {
     "img": "/assets/img/sym/hf.webp",
@@ -124,7 +137,8 @@
     "de": "TIG HF",
     "fr": "TIG HF",
     "it": "TIG HF",
-    "en": "TIG HF"
+    "en": "TIG HF",
+    "es": "TIG HF"
   },
   "hfpuls": {
     "img": "/assets/img/sym/hfpuls.webp",
@@ -133,7 +147,8 @@
     "de": "Hochfrequenz-Puls",
     "fr": "Pulsation haute fréquence",
     "it": "Pulsazione ad alta frequenza",
-    "en": "High-frequency pulse"
+    "en": "High-frequency pulse",
+    "es": "Pulsado de alta frecuencia"
   },
   "hsc": {
     "img": "/assets/img/sym/hsc.webp",
@@ -142,7 +157,8 @@
     "de": "HSC-Schneiden",
     "fr": "Coupe HSC",
     "it": "Taglio HSC",
-    "en": "HSC cutting"
+    "en": "HSC cutting",
+    "es": "Corte HSC"
   },
   "hyperpuls": {
     "img": "/assets/img/sym/cwk-2026-hyperpuls.webp",
@@ -151,7 +167,8 @@
     "de": "HyperPuls",
     "fr": "Arc HyperPulse",
     "it": "Arco HyperPuls",
-    "en": "HyperPuls"
+    "en": "HyperPuls",
+    "es": "HyperPuls"
   },
   "hyperspot": {
     "img": "/assets/img/sym/hyperspot.webp",
@@ -160,7 +177,8 @@
     "de": "HyperSpot",
     "fr": "HyperSpot",
     "it": "HyperSpot",
-    "en": "HyperSpot"
+    "en": "HyperSpot",
+    "es": "HyperSpot"
   },
   "hyperup": {
     "img": "/assets/img/sym/cwk-2026-hyperup.webp",
@@ -169,7 +187,8 @@
     "de": "Steignahtschweissen",
     "fr": "Soudage en position montante",
     "it": "Saldatura in verticale",
-    "en": "Vertical-up welding"
+    "en": "Vertical-up welding",
+    "es": "Soldadura vertical ascendente"
   },
   "lfpuls": {
     "img": "/assets/img/sym/lfpuls.webp",
@@ -178,7 +197,8 @@
     "de": "Niederfrequenz-Puls",
     "fr": "Pulsation basse fréquence",
     "it": "Pulsazione a bassa frequenza",
-    "en": "Low-frequency pulse"
+    "en": "Low-frequency pulse",
+    "es": "Pulsado de baja frecuencia"
   },
   "lift": {
     "img": "/assets/img/sym/lift.webp",
@@ -187,7 +207,8 @@
     "de": "TIG Lift Arc",
     "fr": "TIG Lift Arc",
     "it": "TIG Lift Arc",
-    "en": "TIG Lift Arc"
+    "en": "TIG Lift Arc",
+    "es": "TIG Lift Arc"
   },
   "mark": {
     "img": "/assets/img/sym/mark.webp",
@@ -196,7 +217,8 @@
     "de": "Markieren",
     "fr": "Marquage",
     "it": "Marcatura",
-    "en": "Marking"
+    "en": "Marking",
+    "es": "Marcado"
   },
   "mis": {
     "img": "/assets/img/sym/cwk-2026-mis.webp",
@@ -205,7 +227,8 @@
     "de": "MIS-Lichtbogen",
     "fr": "Arc MIS",
     "it": "Arco MIS",
-    "en": "MIS arc"
+    "en": "MIS arc",
+    "es": "Arco MIS"
   },
   "mixtig": {
     "img": "/assets/img/sym/mixtig.webp",
@@ -214,7 +237,8 @@
     "de": "Mix TIG",
     "fr": "Mix TIG",
     "it": "Mix TIG",
-    "en": "Mix TIG"
+    "en": "Mix TIG",
+    "es": "Mix TIG"
   },
   "polieren": {
     "img": "/assets/img/sym/polieren.webp",
@@ -223,7 +247,8 @@
     "de": "Polieren",
     "fr": "Polissage",
     "it": "Lucidatura",
-    "en": "Polishing"
+    "en": "Polishing",
+    "es": "Pulido"
   },
   "puls": {
     "img": "/assets/img/sym/cwk-2026-puls.webp",
@@ -232,7 +257,8 @@
     "de": "Puls",
     "fr": "Pulsé",
     "it": "Pulsato",
-    "en": "Pulse"
+    "en": "Pulse",
+    "es": "Pulsado"
   },
   "triarc": {
     "img": "/assets/img/sym/triarc.webp",
@@ -241,7 +267,8 @@
     "de": "Hyper Cold / Root / Force",
     "fr": "Hyper Cold / Root / Force",
     "it": "Hyper Cold / Root / Force",
-    "en": "Hyper Cold / Root / Force"
+    "en": "Hyper Cold / Root / Force",
+    "es": "Hyper Cold / Root / Force"
   },
   "coldrootforce": {
     "de": "HyperCold / Root / Force",
@@ -250,7 +277,8 @@
     "img": "/assets/img/sym/cwk-2026-coldrootforce.webp",
     "w": 293,
     "h": 187,
-    "en": "HyperCold / Root / Force"
+    "en": "HyperCold / Root / Force",
+    "es": "HyperCold / Root / Force"
   },
   "speedcontrol": {
     "de": "Drahtgeschwindigkeitsregelung",
@@ -259,7 +287,8 @@
     "img": "/assets/img/sym/cwk-2026-speedcontrol.webp",
     "w": 293,
     "h": 189,
-    "en": "Wire speed control"
+    "en": "Wire speed control",
+    "es": "Control de la velocidad del hilo"
   },
   "fourroll": {
     "de": "4-Rollenantrieb",
@@ -268,7 +297,8 @@
     "img": "/assets/img/sym/cwk-2026-fourroll.webp",
     "w": 294,
     "h": 189,
-    "en": "4-roll drive"
+    "en": "4-roll drive",
+    "es": "Accionamiento de 4 rodillos"
   },
   "remote": {
     "de": "Fernbedienung",
@@ -277,7 +307,8 @@
     "img": "/assets/img/sym/cwk-2026-remote.webp",
     "w": 300,
     "h": 189,
-    "en": "Remote control"
+    "en": "Remote control",
+    "es": "Mando a distancia"
   },
   "spool15": {
     "de": "Drahtspule < 15 kg / < 300 mm",
@@ -286,6 +317,7 @@
     "img": "/assets/img/sym/cwk-2026-spool15.webp",
     "w": 294,
     "h": 189,
-    "en": "Wire spool < 15 kg / < 300 mm"
+    "en": "Wire spool < 15 kg / < 300 mm",
+    "es": "Bobina de hilo < 15 kg / < 300 mm"
   }
 }

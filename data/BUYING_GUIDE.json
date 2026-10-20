@@ -71,6 +71,24 @@
           "Specify existing torches, cooling and accessories. VES-TECH checks the combination and prepares a quotation for the required system; price and delivery date are confirmed on request."
         ]
       ]
+    },
+    "es": {
+      "title": "¿Qué equipo de soldadura se adapta a su trabajo?",
+      "intro": "Una selección útil empieza por la pieza: indique a VES-TECH Swiss el material, el espesor y el proceso necesario. MIG/MAG, TIG, MMA y TIG plasma figuran por separado en el catálogo. Después compare los datos técnicos de la versión concreta del modelo.",
+      "criteria": [
+        [
+          "Material y resultado",
+          "Describa si utiliza acero, acero inoxidable o aluminio, la unión y los requisitos de soldadura. El nombre de un equipo no determina por sí solo qué funciones necesita la tarea."
+        ],
+        [
+          "Alimentación eléctrica y tiempo de funcionamiento",
+          "Compruebe la tensión de red, la protección por fusibles y el ciclo de trabajo en la tabla correspondiente. Indique si el equipo permanecerá fijo o se utilizará en distintos puestos."
+        ],
+        [
+          "Configuración completa",
+          "Indique las antorchas, la refrigeración y los accesorios existentes. VES-TECH comprueba la combinación y prepara una oferta para la instalación deseada; el precio y la fecha de entrega se confirman bajo consulta."
+        ]
+      ]
     }
   },
   "plasmaschneiden": {
@@ -143,6 +161,24 @@
         [
           "Installation and operation",
           "For a cutting table, sheet format, available space and utilities at the installation site are relevant. Also discuss cutting fume management and commissioning before specifying a configuration."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Elegir un equipo de plasma o una mesa de corte CNC",
+      "intro": "Para orientar la consulta, VES-TECH Swiss distingue entre corte manual por plasma, fuente de corriente para automatización y mesa de corte CNC completa. Por eso, los equipos Theta y las mesas MPT figuran en subcategorías separadas.",
+      "criteria": [
+        [
+          "Material y tarea de corte",
+          "Indique el material, el espesor habitual y el máximo. Precise la calidad de corte requerida y las cantidades; la capacidad máxima de separación no equivale automáticamente a la capacidad de producción deseada."
+        ],
+        [
+          "Manual o automatizado",
+          "En una instalación existente importan la antorcha, el control de la máquina y las interfaces. Facilite sus denominaciones exactas para poder comprobar la combinación."
+        ],
+        [
+          "Instalación y funcionamiento",
+          "Para una mesa de corte son relevantes el formato de chapa, el espacio disponible y los suministros en el lugar de instalación. Aclare también la gestión de humos y la puesta en servicio antes de definir la configuración."
         ]
       ]
     }
@@ -219,6 +255,24 @@
           "Specify the typical operating duration and whether you need one machine or a complete setup. This allows the scope of supply, options and consumables to be clearly distinguished in the quotation."
         ]
       ]
+    },
+    "es": {
+      "title": "¿Limpiar, marcar o reponer consumibles?",
+      "intro": "Parta de la operación que necesita. VES-TECH Swiss presenta los limpiadores electrolíticos, los sistemas de marcado, la unidad de dosificación y los electrolitos en apartados separados. El equipo y los consumibles deben ser adecuados para el proceso previsto.",
+      "criteria": [
+        [
+          "Superficie y tarea",
+          "Describa el material, el estado de la superficie y el resultado deseado. Una fotografía de la soldadura o un ejemplo de marcado ayuda a aclarar su consulta."
+        ],
+        [
+          "Equipo existente",
+          "Para cepillos, electrolitos y complementos necesitamos la denominación exacta del equipo. Consulte las instrucciones y la documentación de cada producto; nombres parecidos no garantizan que sean intercambiables."
+        ],
+        [
+          "Alcance de la consulta",
+          "Indique el tiempo de uso habitual y si necesita una máquina o un conjunto completo. Así pueden distinguirse claramente el suministro, las opciones y los consumibles en la oferta."
+        ]
+      ]
     }
   },
   "zubehoer": {
@@ -293,6 +347,24 @@
           "Add all required items and quantities to the enquiry list. A combined enquiry makes it easier to check compatibility and scope of supply."
         ]
       ]
+    },
+    "es": {
+      "title": "Consultar sobre los accesorios adecuados",
+      "intro": "Para antorchas, cables, refrigeración y consumibles, la compatibilidad exacta importa más que una fotografía parecida. VES-TECH Swiss indica las combinaciones de equipos conocidas en las páginas de producto; confirme la combinación necesaria antes de pedir.",
+      "criteria": [
+        [
+          "Identificar el equipo",
+          "Envíe el fabricante, el modelo y la referencia existente. En equipos antiguos, el número de serie también ayuda a determinar la compatibilidad."
+        ],
+        [
+          "Describir la versión",
+          "Indique la conexión, el tipo de refrigeración y la longitud necesaria si los conoce. Para un recambio ayudan la denominación de la pieza y una fotografía de la conexión."
+        ],
+        [
+          "Agrupar artículos relacionados",
+          "Añada todos los artículos y cantidades necesarios a la lista de consulta. Una consulta conjunta facilita comprobar la compatibilidad y el alcance del suministro."
+        ]
+      ]
     }
   },
   "occasion": {
@@ -365,6 +437,24 @@
         [
           "Availability and handover",
           "Price, availability and handover are confirmed individually. Visits to the Herisau workshop are by appointment. The terms for used equipment are set out in the specific quotation."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Qué aclarar sobre equipos de microplasma usados",
+      "intro": "Los sistemas PlasmaFix ofrecidos son equipos usados de soldadura por microplasma. Esta soldadura debe distinguirse del corte por plasma. Son decisivos la descripción, el estado documentado y el suministro de la instalación concreta.",
+      "criteria": [
+        [
+          "Estado y equipamiento",
+          "Lea el apartado de estado y la descripción de la página del equipo. Pregunte qué componentes se incluyen y qué trabajos se han realizado; la información de una instalación no se aplica automáticamente a otra."
+        ],
+        [
+          "Su aplicación",
+          "Indique el material, el espesor y la tarea para la que desea utilizar el sistema. Así VES-TECH puede aclarar con usted la configuración adecuada y las cuestiones pendientes."
+        ],
+        [
+          "Disponibilidad y entrega",
+          "El precio, la disponibilidad y la entrega se confirman individualmente. Las visitas al taller de Herisau requieren cita previa. Las condiciones de los equipos usados figuran en la oferta concreta."
         ]
       ]
     }

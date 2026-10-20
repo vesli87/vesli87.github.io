@@ -18,7 +18,11 @@ const size=await sharp(preview).metadata();
 if (size.height>570 || size.width>330 || Math.abs(size.height/size.width-source.h/source.w)>0.01) throw new Error('Photo aspect ratio changed');
 const copy=JSON.parse(readFileSync(path.join(root,'data/SOCIAL_CARDS.json'),'utf8')).mg500;
 const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-for (const [lang,text] of Object.entries(copy)) {
+const requested=process.argv.slice(2);
+const languages=requested.length?requested:Object.keys(copy);
+if(languages.some(lang=>!Object.hasOwn(copy,lang))) throw new Error('Unknown language');
+for (const lang of languages) {
+  const text=copy[lang];
   const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
 <rect width="1200" height="630" fill="#F4F6F7"/>
 <path d="M730 0H1200V630H655L730 555Z" fill="#FF5B0A"/>

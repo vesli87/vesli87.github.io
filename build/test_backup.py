@@ -106,19 +106,20 @@ class BackupTests(unittest.TestCase):
         B.restore(self.base / 'backup', self.base / 'restore')
         self.assertEqual(B.git(self.base / 'restore/repository', 'rev-parse', 'HEAD'), expected)
 
-    def test_all_four_languages_survive_public_recovery(self):
+    def test_all_languages_survive_public_recovery(self):
         from package_site import public_files
         # The independently maintained recovery allowlist must accept the full
         # deployment contract, including every language-specific search index.
         for name in public_files():
             self.assertTrue(B.public_path(name), name)
-        for lang in ('de', 'fr', 'it', 'en'):
+        for lang in ('de', 'fr', 'it', 'en', 'es'):
             self.put(self.public, f'data/search-{lang}.json', '{"language":"' + lang + '"}')
             if lang != 'de':
                 self.put(self.public, f'{lang}/index.html', '<h1>' + lang + '</h1>')
         metadata = self.public_backup()
         files = metadata['components']['public-site.tar.gz']['files']
         self.assertIn('data/search-en.json', files)
+        self.assertIn('data/search-es.json', files)
         restored = self.base / 'restore'
         B.restore(self.base / 'backup', restored)
         for name in files:

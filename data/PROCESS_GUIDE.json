@@ -364,13 +364,15 @@
         "de": "MIG/MAG · Draht, Tropfenübergang und Badkontrolle",
         "fr": "MIG/MAG · fil, transfert et maîtrise du bain",
         "it": "MIG/MAG · filo, trasferimento e controllo del bagno",
-        "en": "MIG/MAG · wire, metal transfer and pool control"
+        "en": "MIG/MAG · wire, metal transfer and pool control",
+        "es": "MIG/MAG · hilo, transferencia de metal y control del baño"
       },
       "d": {
         "de": "MIG verwendet inertes, MAG aktives Schutzgas. Hier schmilzt ein kontinuierlich geförderter Draht ab. Schutzgas, Drahtdurchmesser und Werkstoffkennlinie werden gemeinsam gewählt. Die Programme unterscheiden sich darin, wie sie Tropfenübergang, Lichtbogendruck oder den Wechsel von Leistungsphasen führen.",
         "fr": "Le MIG utilise un gaz inerte, le MAG un gaz actif. Un fil alimenté en continu fond dans l’arc. Gaz, diamètre de fil et courbe matière sont choisis ensemble. Les programmes diffèrent par la régulation du transfert, de la pression d’arc ou de l’alternance des phases de puissance.",
         "it": "Il MIG usa gas inerte, il MAG gas attivo. Un filo alimentato in continuo fonde nell’arco. Gas, diametro del filo e curva materiale vanno scelti insieme. I programmi differiscono per il controllo del trasferimento, della pressione dell’arco o dell’alternanza fra fasi di potenza.",
-        "en": "MIG uses inert shielding gas and MAG uses active shielding gas. A continuously fed wire melts in the arc. Shielding gas, wire diameter and material characteristic are selected together. The programs differ in how they control metal transfer, arc pressure or alternating power phases."
+        "en": "MIG uses inert shielding gas and MAG uses active shielding gas. A continuously fed wire melts in the arc. Shielding gas, wire diameter and material characteristic are selected together. The programs differ in how they control metal transfer, arc pressure or alternating power phases.",
+        "es": "MIG utiliza gas de protección inerte y MAG, gas activo. Un hilo alimentado continuamente se funde en el arco. El gas, el diámetro de hilo y la curva de material se seleccionan conjuntamente. Los programas se diferencian en cómo controlan la transferencia de metal, la presión del arco o la alternancia de fases de potencia."
       }
     },
     {
@@ -380,13 +382,15 @@
         "de": "WIG/TIG · Stromverlauf, Polarität und Präzision",
         "fr": "TIG · courant, polarité et précision",
         "it": "TIG · corrente, polarità e precisione",
-        "en": "TIG · current waveform, polarity and precision"
+        "en": "TIG · current waveform, polarity and precision",
+        "es": "TIG · forma de corriente, polaridad y precisión"
       },
       "d": {
         "de": "Die Wolframelektrode erzeugt den Lichtbogen; Zusatz wird bei Bedarf separat zugeführt. Pulsfrequenz, AC-Polaritätswechsel und Zündart sind voneinander unabhängige Funktionen. WIG und TIG bezeichnen dasselbe Grundverfahren.",
         "fr": "L’électrode de tungstène crée l’arc ; le métal d’apport est ajouté séparément si nécessaire. Fréquence de pulsation, alternance des polarités AC et mode d’amorçage sont des fonctions indépendantes. WIG est la désignation allemande du TIG.",
         "it": "L’elettrodo di tungsteno genera l’arco; il materiale d’apporto viene aggiunto separatamente quando necessario. Frequenza degli impulsi, alternanza delle polarità AC e modalità di innesco sono funzioni indipendenti. WIG è la denominazione tedesca del TIG.",
-        "en": "The tungsten electrode generates the arc; filler is added separately when needed. Pulse frequency, AC polarity changes and ignition method are independent functions. WIG and TIG refer to the same basic process."
+        "en": "The tungsten electrode generates the arc; filler is added separately when needed. Pulse frequency, AC polarity changes and ignition method are independent functions. WIG and TIG refer to the same basic process.",
+        "es": "El electrodo de tungsteno genera el arco; el material de aportación se añade por separado cuando hace falta. La frecuencia de pulsado, los cambios de polaridad AC y el método de encendido son funciones independientes. WIG y TIG designan el mismo proceso básico."
       }
     },
     {
@@ -396,13 +400,15 @@
         "de": "Unterstützende Gerätefunktionen",
         "fr": "Fonctions d’assistance de l’appareil",
         "it": "Funzioni di supporto dell’apparecchio",
-        "en": "Supporting equipment functions"
+        "en": "Supporting equipment functions",
+        "es": "Funciones de apoyo del equipo"
       },
       "d": {
         "de": "Nicht jede Bezeichnung am Bedienpanel ist ein eigener Schweissprozess. Leistungsreserve, Synergie und gespeicherte Jobs unterstützen die Bedienung und sind vom Wirkprinzip des Lichtbogens zu unterscheiden.",
         "fr": "Toutes les désignations du panneau ne sont pas des procédés. Réserve de puissance, synergie et mémoires de tâches facilitent la commande et se distinguent du principe de l’arc.",
         "it": "Non tutte le denominazioni sul pannello sono processi. Riserva di potenza, sinergia e memorie di lavoro facilitano il comando e sono distinte dal principio dell’arco.",
-        "en": "Not every label on a panel denotes a separate welding process. Power reserve, synergic control and stored jobs assist operation and must be distinguished from the arc operating principle."
+        "en": "Not every label on a panel denotes a separate welding process. Power reserve, synergic control and stored jobs assist operation and must be distinguished from the arc operating principle.",
+        "es": "No todas las etiquetas del panel designan un proceso de soldadura independiente. La reserva de potencia, el control sinérgico y los trabajos guardados ayudan al manejo y deben distinguirse del principio de funcionamiento del arco."
       }
     }
   ],
@@ -414,7 +420,8 @@
         "de": "MAHE · Lichtbogenverfahren und Funktionen",
         "fr": "MAHE · procédés d’arc et fonctions",
         "it": "MAHE · processi d’arco e funzioni",
-        "en": "MAHE · arc processes and functions"
+        "en": "MAHE · arc processes and functions",
+        "es": "MAHE · procesos de arco y funciones"
       }
     },
     {
@@ -424,7 +431,8 @@
         "de": "MAHE · HyperMIG X und Bedienpanels",
         "fr": "MAHE · HyperMIG X et panneaux",
         "it": "MAHE · HyperMIG X e pannelli",
-        "en": "MAHE · HyperMIG X and control panels"
+        "en": "MAHE · HyperMIG X and control panels",
+        "es": "MAHE · HyperMIG X y paneles de control"
       }
     },
     {
@@ -434,7 +442,8 @@
         "de": "MAHE · Beta DX pro / syn",
         "fr": "MAHE · Beta DX pro / syn",
         "it": "MAHE · Beta DX pro / syn",
-        "en": "MAHE · Beta DX pro / syn"
+        "en": "MAHE · Beta DX pro / syn",
+        "es": "MAHE · Beta DX pro / syn"
       }
     },
     {
@@ -444,7 +453,8 @@
         "de": "MAHE · Omega AX pro / syn",
         "fr": "MAHE · Omega AX pro / syn",
         "it": "MAHE · Omega AX pro / syn",
-        "en": "MAHE · Omega AX pro / syn"
+        "en": "MAHE · Omega AX pro / syn",
+        "es": "MAHE · Omega AX pro / syn"
       }
     },
     {
@@ -454,7 +464,8 @@
         "de": "MAHE · HyperTIG AX",
         "fr": "MAHE · HyperTIG AX",
         "it": "MAHE · HyperTIG AX",
-        "en": "MAHE · HyperTIG AX"
+        "en": "MAHE · HyperTIG AX",
+        "es": "MAHE · HyperTIG AX"
       }
     },
     {
@@ -464,7 +475,8 @@
         "de": "MAHE · HyperTIG DX",
         "fr": "MAHE · HyperTIG DX",
         "it": "MAHE · HyperTIG DX",
-        "en": "MAHE · HyperTIG DX"
+        "en": "MAHE · HyperTIG DX",
+        "es": "MAHE · HyperTIG DX"
       }
     },
     {
@@ -474,7 +486,8 @@
         "de": "TWI · Grundlagen des MIG/MAG-Pulsens (Englisch)",
         "fr": "TWI · bases du MIG/MAG pulsé (anglais)",
         "it": "TWI · basi del MIG/MAG pulsato (inglese)",
-        "en": "TWI · pulsed MIG/MAG principles (English)"
+        "en": "TWI · pulsed MIG/MAG principles (English)",
+        "es": "TWI · principios de MIG/MAG pulsado (en inglés)"
       }
     },
     {
@@ -484,7 +497,8 @@
         "de": "Fronius · Grundlagen der WIG-Puls- und AC-Parameter (Englisch)",
         "fr": "Fronius · bases des paramètres TIG pulsé et AC (anglais)",
         "it": "Fronius · basi dei parametri TIG pulsato e AC (inglese)",
-        "en": "Fronius · TIG pulse and AC parameter principles (English)"
+        "en": "Fronius · TIG pulse and AC parameter principles (English)",
+        "es": "Fronius · principios de pulsado TIG y parámetros AC (en inglés)"
       }
     }
   ],
@@ -606,5 +620,124 @@
       }
     ],
     "table_hint": "On small screens, scroll the table horizontally."
+  },
+  "es": {
+    "intro_title": "Del nombre del proceso a la tarea de soldadura adecuada",
+    "intro": "MIG/MAG utiliza un electrodo consumible de hilo; TIG emplea un electrodo de tungsteno no consumible. Las explicaciones siguientes muestran qué parámetro modifica un programa, dónde se utiliza y qué importa al ajustarlo. Pulsado, doble pulsado, frecuencia AC y encendido HF tienen funciones distintas.",
+    "availability": "La versión concreta importa: la gama, el panel, el software y la curva activada determinan las funciones disponibles. Los equipos enlazados sirven para comparar; no todas las versiones incluyen todas las funciones explicadas aquí.",
+    "jump_label": "Contenido de esta página",
+    "compare_title": "Comparación de modos de pulsado",
+    "compare_caption": "Diferencias principales entre las funciones MIG/MAG y TIG",
+    "compare_mode": "Función",
+    "compare_principle": "¿Qué cambia?",
+    "compare_focus": "¿En qué influye?",
+    "compare_detail": "Explicación",
+    "principle_label": "Principio y efecto",
+    "use_label": "Aplicación habitual",
+    "setup_label": "Qué importa al ajustar",
+    "products_label": "Equipos para comparar",
+    "glossary_title": "Parámetros principales de ajuste",
+    "faq_title": "Preguntas frecuentes sobre pulsado y elección de procesos",
+    "sources_title": "Principios técnicos e información del fabricante",
+    "sources_intro": "Los principios de funcionamiento se explican técnicamente; los nombres de funciones MAHE y los equipos de ejemplo se han contrastado con la documentación del fabricante indicada abajo. Los rangos de ajuste y el equipamiento se confirman para la versión seleccionada.",
+    "contact_title": "¿Qué proceso se adapta a su pieza?",
+    "contact_text": "Indique el material, el espesor, la forma de la unión, la posición de soldadura y el resultado previsto. Para equipos existentes ayudan la denominación exacta del modelo y el panel. Con estos datos aclaramos el programa adecuado, el equipamiento necesario y una prueba útil sobre la pieza.",
+    "contact_button": "Solicitar asesoramiento sobre procesos",
+    "back_top": "Volver al contenido",
+    "comparison": [
+      {
+        "target": "mig-puls",
+        "n": "MIG/MAG pulsado",
+        "principle": "Breves picos de corriente sobre una corriente de base",
+        "focus": "Transferencia controlada de gotas desde el hilo"
+      },
+      {
+        "target": "doppelpuls",
+        "n": "Doble pulsado",
+        "principle": "Ritmo de potencia más lento añadido al pulsado MIG",
+        "focus": "Movimiento del baño y patrón regular de escamas del cordón"
+      },
+      {
+        "target": "tig-lf-puls",
+        "n": "TIG pulsado LF",
+        "principle": "Alternancia claramente perceptible de corriente de pico y de base",
+        "focus": "Control manual del baño y ritmo de aportación"
+      },
+      {
+        "target": "tig-hf-puls",
+        "n": "TIG pulsado HF",
+        "principle": "Cambios rápidos de corriente durante la soldadura",
+        "focus": "Concentración del arco y comportamiento del baño"
+      },
+      {
+        "target": "tig-acdc",
+        "n": "Frecuencia AC / balance",
+        "principle": "Ciclos de polaridad / proporción de tiempo con electrodo positivo y negativo",
+        "focus": "Carácter del arco AC / limpieza y carga del electrodo"
+      },
+      {
+        "target": "tig-hf-puls",
+        "n": "Encendido HF",
+        "principle": "Encendido del arco sin contacto",
+        "focus": "Inicio del arco, no secuencia de pulsado durante la soldadura"
+      }
+    ],
+    "glossary": [
+      {
+        "n": "Corriente de pico y corriente de base",
+        "d": "La corriente de pico aporta la mayor potencia de la fase de fusión. En TIG pulsado, la corriente de base, más baja, mantiene el arco entre pulsos. Ambas influyen conjuntamente en la corriente media."
+      },
+      {
+        "n": "Frecuencia de pulsado · Hz y kHz",
+        "d": "La frecuencia cuenta ciclos completos de pulsado por segundo. 1 kHz equivale a 1000 Hz. Un valor mayor significa más ciclos de corriente, no automáticamente una mayor tasa de deposición ni un cordón mejor."
+      },
+      {
+        "n": "Proporción de duración del pulso · ciclo de pulsado",
+        "d": "La proporción de duración del pulso indica cuánto tiempo se aplica la corriente alta dentro de un ciclo. Debe distinguirse del ciclo de trabajo de la fuente de corriente, que describe la capacidad térmica del equipo a una corriente de soldadura indicada."
+      },
+      {
+        "n": "Alimentación de hilo y corrección del arco",
+        "d": "En MIG/MAG sinérgico, las curvas coordinan los parámetros de la fuente de corriente con la alimentación de hilo. La corrección del arco permite ajustar más el punto de trabajo. La velocidad del hilo y la velocidad de avance sobre la pieza son parámetros distintos."
+      },
+      {
+        "n": "Balance AC y frecuencia AC",
+        "d": "El balance reparte el tiempo entre las fases de electrodo positivo y negativo. La frecuencia AC determina cuántas veces se repiten los ciclos completos de polaridad. Ambos ajustes son independientes de la frecuencia de pulsado y el encendido HF."
+      },
+      {
+        "n": "Aporte térmico y velocidad de avance",
+        "d": "La corriente, la tensión y el tiempo por unidad de longitud de cordón actúan conjuntamente. Un avance lento puede aportar mucho calor incluso con ajustes de pulsado bajos. La frecuencia de pulsado por sí sola no describe el aporte térmico ni la deformación esperada."
+      },
+      {
+        "n": "Control sinérgico, Autopulse y memoria JOB",
+        "d": "El control sinérgico relaciona varios ajustes con un punto de trabajo preseleccionado. Con Autopulse, la máquina ajusta el pulsado dentro del programa previsto. Un JOB guarda un conjunto de parámetros para tareas repetitivas; su idoneidad para la pieza y el material debe seguir comprobándose."
+      }
+    ],
+    "faq": [
+      {
+        "q": "¿Qué diferencia hay entre MIG/MAG pulsado y doble pulsado?",
+        "a": "En MIG/MAG pulsado, los pulsos de corriente controlan la transferencia de gotas. El doble pulsado añade una alternancia más lenta entre fases de potencia que influye en el movimiento del baño y el patrón de escamas del cordón. Un acabado similar a TIG no convierte el cordón en una soldadura TIG."
+      },
+      {
+        "q": "¿Son lo mismo pulsado HF y encendido HF?",
+        "a": "No. El encendido HF inicia el arco sin contacto. El pulsado HF modifica la corriente durante el cordón. Un equipo puede tener encendido HF sin ofrecer un rango equivalente de pulsado de alta frecuencia."
+      },
+      {
+        "q": "¿Todos los equipos TIG de MAHE pueden pulsar a 20 kHz?",
+        "a": "No. MAHE especifica hasta 20 kHz para Beta DX pro y Omega AX pro. Las versiones syn utilizan ajuste automático del pulsado; las demás gamas tienen sus propias funciones y rangos. Compruebe el modelo, el panel y la versión de software antes de elegir."
+      },
+      {
+        "q": "¿Un programa de pulsado evita automáticamente la deformación o la perforación?",
+        "a": "No. La corriente de pico, la de base, la proporción de duración del pulso y la velocidad de avance determinan conjuntamente la carga térmica de la pieza. Una separación excesiva o un movimiento lento también pueden causar problemas con pulsado. Una probeta muestra si la penetración, la forma del cordón y la deformación se ajustan a la tarea."
+      },
+      {
+        "q": "¿Debo elegir MIG pulsado o TIG AC/DC para aluminio?",
+        "a": "Depende del espesor, el acceso a la unión, el acabado requerido y la velocidad de producción. MIG pulsado y doble pulsado aportan hilo de forma continua; TIG AC/DC separa el control del arco de la aportación y permite controlar el baño con gran precisión. Mix TIG es una función AC/DC adicional de determinadas máquinas. No tendría sentido indicar un espesor mínimo universal para todas las aplicaciones."
+      },
+      {
+        "q": "¿Están todos los procesos activados en todas las versiones?",
+        "a": "No. El equipamiento depende de la gama, el panel, el software y las posibles actualizaciones. Para una instalación existente importan la denominación exacta del modelo y el panel. En una instalación nueva, la curva necesaria se comprueba expresamente para la versión solicitada."
+      }
+    ],
+    "table_hint": "En pantallas pequeñas, desplace la tabla horizontalmente."
   }
 }

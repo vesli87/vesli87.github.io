@@ -15,6 +15,10 @@
     "en": {
       "type": "Plasma torch",
       "photo_note": "Manufacturer photograph: PSHB"
+    },
+    "es": {
+      "type": "Antorcha de plasma",
+      "photo_note": "Fotografía del fabricante: PSHB"
     }
   },
   "mg500": {
@@ -33,6 +37,10 @@
     "en": {
       "type": "MIG/MAG torch",
       "photo_note": "Graphic display · Remote control"
+    },
+    "es": {
+      "type": "Antorcha MIG/MAG",
+      "photo_note": "Pantalla gráfica · Mando a distancia"
     }
   }
 }

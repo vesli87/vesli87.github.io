@@ -37,7 +37,7 @@ OUT = C.ROOT
 TODAY = datetime.date.today().isoformat()
 
 # Verzeichnisse, die der Build vollständig verwaltet (werden vorher geleert)
-MANAGED_DIRS = ["produkte", "fr", "it", "en", "verfahren", "downloads", "kontakt",
+MANAGED_DIRS = ["produkte", "fr", "it", "en", "es", "verfahren", "downloads", "kontakt",
                 "faq", "suche", "impressum", "datenschutz", "agb", "service", "ueber-uns"]
 
 written = []
@@ -124,6 +124,20 @@ SYNONYMS = {
     "used": ["occasion", "refurbished", "plasmafix"],
     "refurbished": ["occasion", "used"],
     "repair": ["repairs", "reparatur", "reparation", "riparazione"],
+    # Spanish workshop vocabulary; exact equipment identities remain unchanged.
+    "soldadura": ["welding", "schweissen", "soudage", "saldatura"],
+    "soldador": ["soldadura", "welding"],
+    "antorcha": ["torch", "brenner", "torcia"],
+    "carro": ["trolley", "fahrwagen"],
+    "acero": ["steel", "stahl"],
+    "inoxidable": ["inox", "stainless"],
+    "aluminio": ["aluminium", "alu"],
+    "limpieza": ["cleaner", "cleaning", "reinigung"],
+    "reparacion": ["repair", "repairs", "reparatur"],
+    "marcado": ["marking", "signieren"],
+    "senalizacion": ["marcado", "marking"],
+    "corte": ["plasma", "cutting"],
+    "usado": ["occasion", "refurbished", "plasmafix"],
 }
 
 
@@ -134,6 +148,7 @@ def norm(s):
            .replace("ß", "ss").replace("à", "a").replace("â", "a").replace("é", "e")
            .replace("è", "e").replace("ê", "e").replace("î", "i").replace("ï", "i")
            .replace("ô", "o").replace("ù", "u").replace("û", "u").replace("ç", "c")
+           .replace("á", "a").replace("í", "i").replace("ó", "o").replace("ú", "u").replace("ñ", "n")
            .replace("’", " ").replace("'", " "))
     s = re.sub(r"[^a-z0-9]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
@@ -153,7 +168,7 @@ def _synonyme_pruefen(syn):
     kuerzer als zwei Zeichen sein, und keine Quellzeichenkette darf Zeichen
     ausserhalb des lateinischen Schriftsystems tragen.
     """
-    erlaubt = set("abcdefghijklmnopqrstuvwxyz0123456789 -/.äöüßàâéèêîïôùûçœ")
+    erlaubt = set("abcdefghijklmnopqrstuvwxyz0123456789 -/.äöüßàâéèêîïôùûçœáíóúñ")
     for wort, liste in syn.items():
         for eintrag in [wort] + list(liste):
             fremd = {c for c in eintrag.lower() if c not in erlaubt}
@@ -599,7 +614,8 @@ def llms_txt():
     lines += ["", "## Weitere Sprachen",
               f"- Français: {C.abs_url(C.u_home('fr'))}",
               f"- Italiano: {C.abs_url(C.u_home('it'))}",
-              f"- English: {C.abs_url(C.u_home('en'))}", ""]
+              f"- English: {C.abs_url(C.u_home('en'))}",
+              f"- Español: {C.abs_url(C.u_home('es'))}", ""]
     return "\n".join(lines)
 
 

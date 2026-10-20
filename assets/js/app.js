@@ -850,7 +850,8 @@
     return String(s || '').toLowerCase()
       .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
       .replace(/[àâ]/g, 'a').replace(/[éèê]/g, 'e').replace(/[îï]/g, 'i')
-      .replace(/ô/g, 'o').replace(/[ùû]/g, 'u').replace(/ç/g, 'c')
+      .replace(/[ôó]/g, 'o').replace(/[ùûú]/g, 'u').replace(/ç/g, 'c')
+      .replace(/á/g, 'a').replace(/í/g, 'i').replace(/ñ/g, 'n')
       .replace(/[’']/g, ' ')
       .replace(/[^a-z0-9]+/g, ' ')
       .replace(/\s+/g, ' ').trim();

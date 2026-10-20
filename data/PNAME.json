@@ -3,96 +3,115 @@
   "elektrodenkabel": {
     "fr": "Câble d’électrode 10 mm²",
     "it": "Cavo portaelettrodo 10 mm²",
-    "en": "Electrode cable 10 mm²"
+    "en": "Electrode cable 10 mm²",
+    "es": "Cable de electrodo de 10 mm²"
   },
   "massekabel": {
     "fr": "Câble de masse 10 mm²",
     "it": "Cavo di massa 10 mm²",
-    "en": "Work return cable 10 mm²"
+    "en": "Work return cable 10 mm²",
+    "es": "Cable de retorno de 10 mm²"
   },
   "elektrodenkabel-4m": {
     "fr": "Câble d’électrode 25–90 mm²",
     "it": "Cavo portaelettrodo 25–90 mm²",
-    "en": "Electrode cable 25–90 mm²"
+    "en": "Electrode cable 25–90 mm²",
+    "es": "Cable de electrodo de 25–90 mm²"
   },
   "massekabel-4m": {
     "fr": "Câble de masse 25–90 mm²",
     "it": "Cavo di massa 25–90 mm²",
-    "en": "Work return cable 25–90 mm²"
+    "en": "Work return cable 25–90 mm²",
+    "es": "Cable de retorno de 25–90 mm²"
   },
   "massekabel-25": {
     "fr": "Câble de masse 25 mm²",
     "it": "Cavo di massa 25 mm²",
-    "en": "Work return cable 25 mm²"
+    "en": "Work return cable 25 mm²",
+    "es": "Cable de retorno de 25 mm²"
   },
   "drahtvorschubrollen": {
     "fr": "Galets d’entraînement",
     "it": "Rulli trainafilo",
-    "en": "Wire feed rollers"
+    "en": "Wire feed rollers",
+    "es": "Rodillos de alimentación de hilo"
   },
   "zwischenschlauchpaket": {
     "fr": "Faisceau intermédiaire",
     "it": "Fascio cavi intermedio",
-    "en": "Interconnecting cable assembly"
+    "en": "Interconnecting cable assembly",
+    "es": "Paquete de interconexión"
   },
   "vtbox-s25": {
     "fr": "Coffret de pièces d’usure S 25",
     "it": "Set di parti d’usura S 25",
-    "en": "S 25 consumables kit"
+    "en": "S 25 consumables kit",
+    "es": "Juego de consumibles S 25"
   },
   "vtbox-pshb65": {
     "fr": "Coffret de pièces d’usure PSHB 65",
     "it": "Set di parti d’usura PSHB 65",
-    "en": "PSHB 65 consumables kit"
+    "en": "PSHB 65 consumables kit",
+    "es": "Juego de consumibles PSHB 65"
   },
   "vtbox-pshb125": {
     "fr": "Coffret de pièces d’usure PSHB 125",
     "it": "Set di parti d’usura PSHB 125",
-    "en": "PSHB 125 consumables kit"
+    "en": "PSHB 125 consumables kit",
+    "es": "Juego de consumibles PSHB 125"
   },
   "vtbox-pshb160": {
     "fr": "Coffret de pièces d’usure PSHB 160",
     "it": "Set di parti d’usura PSHB 160",
-    "en": "PSHB 160 consumables kit"
+    "en": "PSHB 160 consumables kit",
+    "es": "Juego de consumibles PSHB 160"
   },
   "usb2in1": {
     "fr": "Programmateur USB 2in1",
     "it": "Programmatore USB 2in1",
-    "en": "USB 2in1 programmer"
+    "en": "USB 2in1 programmer",
+    "es": "Programador USB 2in1"
   },
   "r1": {
     "fr": "Électrolyte de nettoyage Rapid R1",
     "it": "Elettrolita di pulizia Rapid R1",
-    "en": "Rapid R1 cleaning electrolyte"
+    "en": "Rapid R1 cleaning electrolyte",
+    "es": "Electrolito de limpieza Rapid R1"
   },
   "rp1": {
     "fr": "Électrolyte de nettoyage RP1 pâteux",
     "it": "Elettrolita di pulizia RP1 in pasta",
-    "en": "RP1 paste cleaning electrolyte"
+    "en": "RP1 paste cleaning electrolyte",
+    "es": "Electrolito de limpieza en pasta RP1"
   },
   "p1": {
     "fr": "Électrolyte de polissage P1",
     "it": "Elettrolita di lucidatura P1",
-    "en": "P1 polishing electrolyte"
+    "en": "P1 polishing electrolyte",
+    "es": "Electrolito de pulido P1"
   },
   "n1": {
     "fr": "Neutralit N1",
     "it": "Neutralit N1",
-    "en": "Neutralit N1"
+    "en": "Neutralit N1",
+    "es": "Neutralit N1"
   },
   "m1": {
     "fr": "Électrolyte de marquage M1",
     "it": "Elettrolita di marcatura M1",
-    "en": "M1 marking electrolyte"
+    "en": "M1 marking electrolyte",
+    "es": "Electrolito de marcado M1"
   },
   "minicleaner": {
     "fr": "MiniCleaner",
     "it": "MiniCleaner",
-    "en": "MiniCleaner"
+    "en": "MiniCleaner",
+    "es": "MiniCleaner"
   },
   "drahtvorschubrollen-hyper": {
     "fr": "Galets HyperMIG X",
     "it": "Rulli HyperMIG X",
-    "en": "HyperMIG X wire feed rollers"
+    "en": "HyperMIG X wire feed rollers",
+    "es": "Rodillos de alimentación de hilo HyperMIG X"
   }
 }

@@ -73,6 +73,23 @@
       "zoom": "MAHE certificate of attendance · Select the image to enlarge",
       "alt": "MAHE training certificate for Martin Veselovsky, Kreuztal, 9 July 2026, MH-2026-8942",
       "details": "More about VES-TECH Swiss"
+    },
+    "es": {
+      "eyebrow": "Experiencia técnica personal",
+      "heading": "Formación en equipos MAHE",
+      "summary": "Martin Veselovsky ha completado satisfactoriamente una formación intensiva en equipos de soldadura y tecnología de sistemas MAHE. El certificado de asistencia documenta la formación realizada en Kreuztal.",
+      "topics": [
+        "Manejo correcto y ajuste de parámetros",
+        "Control preciso de los procesos de soldadura",
+        "Mantenimiento y aseguramiento de la calidad"
+      ],
+      "date_label": "Fecha de formación",
+      "date_text": "9 de julio de 2026",
+      "place_label": "Lugar de formación",
+      "certificate_label": "N.º de certificado",
+      "zoom": "Certificado de asistencia MAHE · Seleccione la imagen para ampliarla",
+      "alt": "Certificado de formación MAHE de Martin Veselovsky, Kreuztal, 9 de julio de 2026, MH-2026-8942",
+      "details": "Más sobre VES-TECH Swiss"
     }
   }
 }

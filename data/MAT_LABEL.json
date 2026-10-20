@@ -3,18 +3,21 @@
     "de": "Stahl",
     "fr": "Acier",
     "it": "Acciaio",
-    "en": "Steel"
+    "en": "Steel",
+    "es": "Acero"
   },
   "SS": {
     "de": "INOX",
     "fr": "INOX",
     "it": "INOX",
-    "en": "Stainless steel"
+    "en": "Stainless steel",
+    "es": "Acero inoxidable"
   },
   "AL": {
     "de": "Aluminium",
     "fr": "Aluminium",
     "it": "Alluminio",
-    "en": "Aluminium"
+    "en": "Aluminium",
+    "es": "Aluminio"
   }
 }

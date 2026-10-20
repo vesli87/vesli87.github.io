@@ -1,6 +1,6 @@
 # CLAUDE.md — Arbeitsanweisung für dieses Repository
 
-Dies ist die Website **VES-TECH Swiss** — ein viersprachiger Katalog für das
+Dies ist die Website **VES-TECH Swiss** — ein fünfsprachiger Katalog für das
 MAHE-Schweisstechnik-Programm. Sie läuft unter `https://www.ves-tech.ch/`;
 `vesli87.github.io` leitet per 301 dorthin weiter.
 
@@ -13,7 +13,7 @@ mitgepflegt.
 
 ## Das Wichtigste in Kürze
 
-Die 488 Inhaltsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
+Die 610 Inhaltsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
 bearbeitet — der nächste Build überschreibt jede Änderung.
 
 ```
@@ -25,18 +25,18 @@ Bearbeitet werden also:
 | Was du ändern willst | Wo |
 |---|---|
 | Produkt, Merkmalsliste, Kategorie | `data/P.json`, `data/CATS.json` |
-| Besonderheiten eines Geräts | `data/HL_DEVICE.json` (Herstellerangaben, DE/FR/IT/EN; dokumentierte Sprachkorrekturen in `build/mahe_copy_edits.json`) |
+| Besonderheiten eines Geräts | `data/HL_DEVICE.json` (Herstellerangaben, DE/FR/IT/EN/ES; dokumentierte Sprachkorrekturen in `build/mahe_copy_edits.json`) |
 | Besonderheiten eines Frontpanels | `data/PANEL_HL_DEVICE.json` (ebenso) |
-| Ausführliche Panelbedienung | `data/PANEL_GUIDES.json` (DE/FR/IT/EN, mit Herstellerquellen) |
+| Ausführliche Panelbedienung | `data/PANEL_GUIDES.json` (DE/FR/IT/EN/ES, mit Herstellerquellen) |
 | CWK-Vorteile, Originalsymbole und Optionsvergleich | `data/HYPERMIG_CWK.json`, `build/mahe_cwk_symbols.json`, `build/mahe_cwk_specs.json` |
-| Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT/EN) |
+| Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT/EN/ES) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |
 | Übersetzung eines UI-Textes | `data/UI.json` |
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |
 | Bestehende Unterkategorie-URLs | `build/subcategory_slugs.json`; bei Textkorrekturen unverändert lassen |
 | Seitentitel, meta description, FAQ | `build/i18n_extra.json` |
-| AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT/EN |
+| AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT/EN/ES |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |
 | Search-Console-/Bing-Verifizierung | `build/core.py` → `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` |
 | Schweissverfahren, Pulse und Funktionsratgeber | `data/PROC.json`, `data/PROCESS_GUIDE.json` |
@@ -80,7 +80,7 @@ python3 -m http.server 8099
 ## Regeln, die nicht verhandelbar sind
 
 1. **Keine Preise** — überall „Preis auf Anfrage", nie ein `price` im JSON-LD.
-2. **Jeder neue Text in DE, FR, IT und EN**, Schweizer Schreibweise („ss", nicht „ß").
+2. **Jeder neue Text in DE, FR, IT, EN und ES**, Schweizer Schreibweise („ss", nicht „ß").
 3. Generierte Dateien (`index.html`, `sitemap.xml`, `llms*.txt`,
    `data/products.json`, `data/search-*.json`) nie von Hand editieren.
 4. `norm()` in `build/build.py` und `assets/js/app.js` müssen identisch bleiben,

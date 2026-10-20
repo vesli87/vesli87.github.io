@@ -56,14 +56,17 @@ SEITE = {
 # Dokument bleibt deutsch - das sagt der Untertitel auch.
 ART = {
     "anleitung": {"de": "Bedienungsanleitung", "fr": "Mode d'emploi",
-                  "it": "Istruzioni per l'uso", "en": "Operating instructions"},
+                  "it": "Istruzioni per l'uso", "en": "Operating instructions",
+                  "es": "Instrucciones de uso"},
     "datenblatt": {"de": "Technisches Datenblatt", "fr": "Fiche technique",
-                   "it": "Scheda tecnica", "en": "Technical data sheet"},
+                   "it": "Scheda tecnica", "en": "Technical data sheet",
+                   "es": "Ficha técnica"},
 }
 UNTER = {"de": "Herstellerdokument von MAHE · deutsch",
          "fr": "Document du fabricant MAHE · en allemand",
          "it": "Documento del produttore MAHE · in tedesco",
-         "en": "Original MAHE document · German"}
+         "en": "Original MAHE document · German",
+         "es": "Documento original de MAHE · Alemán"}
 
 ANKER = re.compile(r'<a[^>]+href="([^"]+\.pdf)"[^>]*>(.*?)</a>', re.S | re.I)
 # Fuss- und Randlinks, die auf jeder Seite stehen
@@ -90,6 +93,10 @@ def localized_title(lang, kind, suffix):
     title = ART[kind][lang]
     if lang == 'en' and suffix.startswith('Signiergerät '):
         suffix = 'Marking system ' + suffix[len('Signiergerät '):]
+    if lang == 'es':
+        suffix = suffix.replace('(Graphic Front Panel)', '(panel gráfico)')
+        if suffix.startswith('Signiergerät '):
+            return title + ' del sistema de marcado ' + suffix[len('Signiergerät '):]
     if suffix.startswith("Signiergerät ") and lang in ("fr", "it"):
         model = suffix[len("Signiergerät "):]
         connector = {"fr": " de l’appareil de marquage ",
@@ -130,7 +137,7 @@ def sammeln():
             eintraege.append({
                 "k": "PDF",
                 "t": {l: localized_title(l, art, zusatz)
-                      for l in ("de", "fr", "it", "en")},
+                      for l in C.LANGS},
                 "s": dict(UNTER),
                 "u": u,
                 "art": art,
@@ -145,7 +152,7 @@ def sammeln():
             eintraege.insert(0, {
                 'k': 'PDF',
                 't': {lang: localized_title(lang, 'anleitung', 'HyperMIG X (Graphic Front Panel)')
-                      for lang in ('de', 'fr', 'it', 'en')},
+                      for lang in C.LANGS},
                 's': dict(UNTER),
                 'u': 'https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TFT_10_DE.pdf',
             })

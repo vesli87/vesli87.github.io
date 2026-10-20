@@ -7,7 +7,8 @@
       "de": "Volldigitale Bedienung mit HyperPuls, HyperForce, Doppelpuls und 99 JOB-Programmen.",
       "fr": "Commande entièrement numérique avec HyperPuls, HyperForce, double pulsation et 99 programmes JOB.",
       "it": "Comando completamente digitale con HyperPuls, HyperForce, doppio impulso e 99 programmi JOB.",
-      "en": "Fully digital controls with HyperPuls, HyperForce, double pulse and 99 JOB programs."
+      "en": "Fully digital controls with HyperPuls, HyperForce, double pulse and 99 JOB programs.",
+      "es": "Control totalmente digital con HyperPuls, HyperForce, doble pulsado y 99 programas JOB."
     }
   },
   "ecopuls": {
@@ -18,7 +19,8 @@
       "de": "Digitale Puls-Bedienung mit Impuls, Doppelpuls und JOB-Speicher.",
       "fr": "Commande numérique pulsée avec impulsion, double pulsation et mémoire JOB.",
       "it": "Comando digitale pulsato con impulso, doppio impulso e memoria JOB.",
-      "en": "Digital pulse controls with pulse, double pulse and JOB memory."
+      "en": "Digital pulse controls with pulse, double pulse and JOB memory.",
+      "es": "Control digital de pulsado con pulsado, doble pulsado y memoria JOB."
     }
   },
   "ecomig": {
@@ -29,7 +31,8 @@
       "de": "Einfache digitale Synergie-Bedienung für MIG/MAG, MMA und WIG Lift.",
       "fr": "Commande synergique numérique simple pour MIG/MAG, MMA et TIG Lift.",
       "it": "Comando sinergico digitale semplice per MIG/MAG, MMA e TIG Lift.",
-      "en": "Simple digital synergic controls for MIG/MAG, MMA and TIG Lift."
+      "en": "Simple digital synergic controls for MIG/MAG, MMA and TIG Lift.",
+      "es": "Control sinérgico digital sencillo para MIG/MAG, MMA y TIG Lift."
     }
   },
   "wig": {
@@ -39,7 +42,8 @@
       "de": "WIG-DC-Panel mit HF-Zündung, HyperSpot, Puls und Slope-Steuerung.",
       "fr": "Panneau TIG DC avec amorçage HF, HyperSpot, mode pulsé et rampes de montée et de descente du courant.",
       "it": "Pannello TIG DC con innesco HF, HyperSpot, impulso e slope.",
-      "en": "DC TIG panel with HF ignition, HyperSpot, pulse and current slope controls."
+      "en": "DC TIG panel with HF ignition, HyperSpot, pulse and current slope controls.",
+      "es": "Panel TIG DC con encendido HF, HyperSpot, pulsado y control de las rampas de corriente."
     }
   },
   "wig_acdc": {
@@ -49,7 +53,8 @@
       "de": "AC/DC-Panel mit HF-Zündung, HyperSpot, MAHE-MIX-PULSE und AC-Balance/Frequenz.",
       "fr": "Panneau AC/DC avec amorçage HF, HyperSpot, MAHE-MIX-PULSE et réglage de la balance et de la fréquence AC.",
       "it": "Pannello AC/DC con innesco HF, HyperSpot, MAHE-MIX-PULSE e bilanciamento/frequenza AC.",
-      "en": "AC/DC panel with HF ignition, HyperSpot, MAHE-MIX-PULSE and AC balance/frequency adjustment."
+      "en": "AC/DC panel with HF ignition, HyperSpot, MAHE-MIX-PULSE and AC balance/frequency adjustment.",
+      "es": "Panel AC/DC con encendido HF, HyperSpot, MAHE-MIX-PULSE y ajuste de balance y frecuencia AC."
     }
   },
   "mma": {
@@ -59,7 +64,8 @@
       "de": "MMA-Panel mit Hot Start, Arc Force und Anti-Stick.",
       "fr": "Panneau MMA avec Hot Start, Arc Force et Anti-Stick.",
       "it": "Pannello MMA con Hot Start, Arc Force e Anti-Stick.",
-      "en": "MMA panel with Hot Start, Arc Force and Anti-Stick."
+      "en": "MMA panel with Hot Start, Arc Force and Anti-Stick.",
+      "es": "Panel MMA con Hot Start, Arc Force y Anti-Stick."
     }
   },
   "theta": {
@@ -69,7 +75,8 @@
       "de": "Plasma-Panel mit Schneidstrom, Luftdruck und Pilotlichtbogen.",
       "fr": "Panneau plasma avec courant de coupe, pression d’air et arc pilote.",
       "it": "Pannello plasma con corrente di taglio, pressione dell’aria e arco pilota.",
-      "en": "Plasma panel with cutting current, air pressure and pilot arc."
+      "en": "Plasma panel with cutting current, air pressure and pilot arc.",
+      "es": "Panel de plasma con corriente de corte, presión de aire y arco piloto."
     }
   },
   "cleaner": {
@@ -79,7 +86,8 @@
       "de": "Cleaner-Panel mit Leistungsstufen und Betriebsartwahl.",
       "fr": "Panneau Cleaner avec niveaux de puissance et choix du mode.",
       "it": "Pannello Cleaner con livelli di potenza e selezione della modalità di funzionamento.",
-      "en": "Cleaner panel with power levels and operating mode selection."
+      "en": "Cleaner panel with power levels and operating mode selection.",
+      "es": "Panel de limpieza con niveles de potencia y selección del modo de funcionamiento."
     }
   },
   "steel": {
@@ -90,7 +98,8 @@
       "de": "Stahl-optimiertes Panel mit HyperCold, HyperRoot und HyperForce.",
       "fr": "Panneau optimisé pour l’acier avec HyperCold, HyperRoot et HyperForce.",
       "it": "Pannello ottimizzato per l’acciaio con HyperCold, HyperRoot e HyperForce.",
-      "en": "Steel-optimised panel with HyperCold, HyperRoot and HyperForce."
+      "en": "Steel-optimised panel with HyperCold, HyperRoot and HyperForce.",
+      "es": "Panel optimizado para acero con HyperCold, HyperRoot y HyperForce."
     }
   },
   "steelpuls": {
@@ -101,7 +110,8 @@
       "de": "Stahl-Puls-Panel mit HyperPuls, HyperUP und HyperForce.",
       "fr": "Panneau pour le soudage pulsé de l’acier avec HyperPuls, HyperUP et HyperForce.",
       "it": "Pannello per la saldatura pulsata dell’acciaio con HyperPuls, HyperUP e HyperForce.",
-      "en": "Steel pulse panel with HyperPuls, HyperUP and HyperForce."
+      "en": "Steel pulse panel with HyperPuls, HyperUP and HyperForce.",
+      "es": "Panel de acero pulsado con HyperPuls, HyperUP y HyperForce."
     }
   },
   "hypermig_ex": {
@@ -406,7 +416,8 @@
       "de": "X: Grafisches Bedienpanel",
       "fr": "X : panneau de commande graphique",
       "it": "X: pannello di comando grafico",
-      "en": "X: Graphic control panel"
+      "en": "X: Graphic control panel",
+      "es": "X: panel de control gráfico"
     },
     "big": true,
     "img": "panels/MAHE HyperMIG X Frontpanel.png"

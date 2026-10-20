@@ -166,7 +166,8 @@ test('search aborts stalled requests and can retry', async () => {
   assert.equal(timers.size, 0);
 });
 test('Python and JavaScript search normalization agree', () => {
-  const values = ['Schweissgerät ÄÖÜ ß', 'électrolyte àâéèêîïôùûç', 'PlasmaFix P+T', 'l’acier', '10–420 A'];
+  const values = ['Schweissgerät ÄÖÜ ß', 'électrolyte àâéèêîïôùûç', 'PlasmaFix P+T', 'l’acier', '10–420 A',
+    'Reparación, señalización, áíóúñ ÁÍÓÚÑ'];
   const py = execFileSync('python3', ['-c',
     "import sys,json;sys.path.insert(0,'build');from build import norm;print(json.dumps([norm(x) for x in json.loads(sys.stdin.read())]))"],
     { input: JSON.stringify(values), encoding: 'utf8' });

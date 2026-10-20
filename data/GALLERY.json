@@ -7,7 +7,8 @@
         "de": "Montagesatz zur Befestigung des MAHE MLF 100 an einem HyperCleaner",
         "fr": "Kit de fixation pour monter le MAHE MLF 100 sur un HyperCleaner",
         "it": "Kit di fissaggio per montare il MAHE MLF 100 su un HyperCleaner",
-        "en": "Mounting kit for attaching the MAHE MLF 100 to a HyperCleaner"
+        "en": "Mounting kit for attaching the MAHE MLF 100 to a HyperCleaner",
+        "es": "Juego de montaje para fijar el MAHE MLF 100 a un HyperCleaner"
       }
     },
     {
@@ -16,7 +17,8 @@
         "de": "Reinigungspinselständer mit Tropfschutz für den MAHE MLF 100",
         "fr": "Support de pinceau de nettoyage avec protection anti-gouttes pour le MAHE MLF 100",
         "it": "Supporto per pennello di pulizia con protezione antigoccia per il MAHE MLF 100",
-        "en": "Cleaning brush stand with drip protection for the MAHE MLF 100"
+        "en": "Cleaning brush stand with drip protection for the MAHE MLF 100",
+        "es": "Soporte para cepillos con protección antigoteo para el MAHE MLF 100"
       }
     }
   ],
@@ -27,13 +29,15 @@
         "de": "MAHE X: grafisches Bedienpanel mit Farbdisplay, vier Funktionstasten und Dreh-/Drücksteller",
         "fr": "MAHE X : panneau graphique avec écran couleur, quatre touches et sélecteur rotatif à pression",
         "it": "MAHE X: pannello grafico con schermo a colori, quattro tasti e selettore a rotazione e pressione",
-        "en": "MAHE X: graphic control panel with colour display, four function keys and rotary push-button encoder"
+        "en": "MAHE X: graphic control panel with colour display, four function keys and rotary push-button encoder",
+        "es": "MAHE X: panel de control gráfico con pantalla en color, cuatro teclas de función y codificador giratorio con pulsación"
       },
       "cap": {
         "de": "Neues grafisches X-Bedienpanel für HyperMIG X und HyperMIG TWIN.",
         "fr": "Nouveau panneau graphique X pour HyperMIG X et HyperMIG TWIN.",
         "it": "Nuovo pannello grafico X per HyperMIG X e HyperMIG TWIN.",
-        "en": "New graphic X control panel for HyperMIG X and HyperMIG TWIN."
+        "en": "New graphic X control panel for HyperMIG X and HyperMIG TWIN.",
+        "es": "Nuevo panel de control gráfico X para HyperMIG X e HyperMIG TWIN."
       }
     }
   ],
@@ -44,13 +48,15 @@
         "de": "MAHE X: grafisches Bedienpanel mit Farbdisplay, vier Funktionstasten und Dreh-/Drücksteller",
         "fr": "MAHE X : panneau graphique avec écran couleur, quatre touches et sélecteur rotatif à pression",
         "it": "MAHE X: pannello grafico con schermo a colori, quattro tasti e selettore a rotazione e pressione",
-        "en": "MAHE X: graphic control panel with colour display, four function keys and rotary push-button encoder"
+        "en": "MAHE X: graphic control panel with colour display, four function keys and rotary push-button encoder",
+        "es": "MAHE X: panel de control gráfico con pantalla en color, cuatro teclas de función y codificador giratorio con pulsación"
       },
       "cap": {
         "de": "Neues grafisches X-Bedienpanel für HyperMIG X und HyperMIG TWIN.",
         "fr": "Nouveau panneau graphique X pour HyperMIG X et HyperMIG TWIN.",
         "it": "Nuovo pannello grafico X per HyperMIG X e HyperMIG TWIN.",
-        "en": "New graphic X control panel for HyperMIG X and HyperMIG TWIN."
+        "en": "New graphic X control panel for HyperMIG X and HyperMIG TWIN.",
+        "es": "Nuevo panel de control gráfico X para HyperMIG X e HyperMIG TWIN."
       }
     }
   ]

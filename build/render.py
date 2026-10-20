@@ -1127,7 +1127,7 @@ def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
              og_image=None, og_type="website", robots="index,follow,max-image-preview:large",
              extra_head="", body_class="", adressierbar=True):
     jsonld_blocks = _complete_graph(lang, jsonld_blocks)
-    # One design system across all existing routes and all three languages.
+    # One design system across every route and configured language.
     if url == C.u_home(lang):
         page_kind = 'home'
     elif any(url == C.u_prod(lang, p) for p in C.P):

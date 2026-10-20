@@ -2,412 +2,494 @@
   "Aluminium": {
     "fr": "Aluminium",
     "it": "Alluminio",
-    "en": "Aluminium"
+    "en": "Aluminium",
+    "es": "Aluminio"
   },
   "Antrieb": {
     "fr": "Entraînement",
     "it": "Trazione",
-    "en": "Drive"
+    "en": "Drive",
+    "es": "Accionamiento"
   },
   "Anwendung": {
     "fr": "Application",
     "it": "Applicazione",
-    "en": "Application"
+    "en": "Application",
+    "es": "Aplicación"
   },
   "Anzeige": {
     "fr": "Affichage",
     "it": "Display",
-    "en": "Display"
+    "en": "Display",
+    "es": "Pantalla"
   },
   "Arbeitsbereich": {
     "fr": "Surface de travail",
     "it": "Area di lavoro",
-    "en": "Working area"
+    "en": "Working area",
+    "es": "Área de trabajo"
   },
   "Ausführung": {
     "fr": "Version",
     "it": "Versione",
-    "en": "Version"
+    "en": "Version",
+    "es": "Versión"
   },
   "Aussenschutzdüse": {
     "fr": "Buse de protection extérieure",
     "it": "Ugello di protezione esterno",
-    "en": "Outer shield cap"
+    "en": "Outer shield cap",
+    "es": "Capuchón protector exterior"
   },
   "Ausstattung": {
     "fr": "Équipement",
     "it": "Dotazione",
-    "en": "Equipment"
+    "en": "Equipment",
+    "es": "Equipamiento"
   },
   "Bauart": {
     "fr": "Type",
     "it": "Tipo",
-    "en": "Design"
+    "en": "Design",
+    "es": "Diseño"
   },
   "Bedienung": {
     "fr": "Commande",
     "it": "Comando",
-    "en": "Controls"
+    "en": "Controls",
+    "es": "Controles"
   },
   "Betriebsart": {
     "fr": "Mode",
     "it": "Modalità",
-    "en": "Operating mode"
+    "en": "Operating mode",
+    "es": "Modo de funcionamiento"
   },
   "Dateiformate": {
     "fr": "Formats de fichiers",
     "it": "Formati dei file",
-    "en": "File formats"
+    "en": "File formats",
+    "es": "Formatos de archivo"
   },
   "Diffusor": {
     "fr": "Diffuseur",
     "it": "Diffusore",
-    "en": "Diffuser"
+    "en": "Diffuser",
+    "es": "Difusor"
   },
   "Doppelpuls": {
     "fr": "Double pulsation",
     "it": "Doppio impulso",
-    "en": "Double pulse"
+    "en": "Double pulse",
+    "es": "Doble pulsado"
   },
   "Einsatz": {
     "fr": "Application",
     "it": "Impiego",
-    "en": "Application"
+    "en": "Application",
+    "es": "Aplicación"
   },
   "Elektrode": {
     "fr": "Électrode",
     "it": "Elettrodo",
-    "en": "Electrode"
+    "en": "Electrode",
+    "es": "Electrodo"
   },
   "Farbe": {
     "fr": "Couleur",
     "it": "Colore",
-    "en": "Colour"
+    "en": "Colour",
+    "es": "Color"
   },
   "Funktion": {
     "fr": "Fonction",
     "it": "Funzione",
-    "en": "Function"
+    "en": "Function",
+    "es": "Función"
   },
   "Für": {
     "fr": "Pour",
     "it": "Per",
-    "en": "For"
+    "en": "For",
+    "es": "Para"
   },
   "Gasflasche": {
     "fr": "Bouteille de gaz",
     "it": "Bombola del gas",
-    "en": "Gas cylinder"
+    "en": "Gas cylinder",
+    "es": "Botella de gas"
   },
   "Gebinde": {
     "fr": "Conditionnement",
     "it": "Confezione",
-    "en": "Pack size"
+    "en": "Pack size",
+    "es": "Tamaño del envase"
   },
   "Gehäuse": {
     "fr": "Boîtier",
     "it": "Struttura",
-    "en": "Housing"
+    "en": "Housing",
+    "es": "Carcasa"
   },
   "Gerändelt": {
     "fr": "Moleté",
     "it": "Zigrinato",
-    "en": "Knurled"
+    "en": "Knurled",
+    "es": "Moleteado"
   },
   "Gewicht": {
     "fr": "Poids",
     "it": "Peso",
-    "en": "Weight"
+    "en": "Weight",
+    "es": "Peso"
   },
   "Kappen": {
     "fr": "Capuchons",
     "it": "Cappucci",
-    "en": "Caps"
+    "en": "Caps",
+    "es": "Capuchones"
   },
   "Kombi": {
     "fr": "Combiné",
     "it": "Combi",
-    "en": "Combined system"
+    "en": "Combined system",
+    "es": "Sistema combinado"
   },
   "Kühlung": {
     "fr": "Refroidissement",
     "it": "Raffreddamento",
-    "en": "Cooling"
+    "en": "Cooling",
+    "es": "Refrigeración"
   },
   "Leistung": {
     "fr": "Puissance",
     "it": "Potenza",
-    "en": "Power"
+    "en": "Power",
+    "es": "Potencia"
   },
   "Lieferung": {
     "fr": "Livraison",
     "it": "Fornitura",
-    "en": "Supply"
+    "en": "Supply",
+    "es": "Alimentación"
   },
   "Länge": {
     "fr": "Longueur",
     "it": "Lunghezza",
-    "en": "Length"
+    "en": "Length",
+    "es": "Longitud"
   },
   "Längen": {
     "fr": "Longueurs",
     "it": "Lunghezze",
-    "en": "Lengths"
+    "en": "Lengths",
+    "es": "Longitudes"
   },
   "Medium": {
     "fr": "Fluide",
     "it": "Fluido",
-    "en": "Fluid"
+    "en": "Fluid",
+    "es": "Líquido"
   },
   "Montage": {
     "fr": "Montage",
     "it": "Montaggio",
-    "en": "Installation"
+    "en": "Installation",
+    "es": "Instalación"
   },
   "Montage an": {
     "fr": "Montage sur",
     "it": "Montaggio su",
-    "en": "Mounting on"
+    "en": "Mounting on",
+    "es": "Montaje en"
   },
   "Netz": {
     "fr": "Réseau",
     "it": "Rete",
-    "en": "Power supply"
+    "en": "Power supply",
+    "es": "Alimentación eléctrica"
   },
   "Option": {
     "fr": "Option",
     "it": "Opzione",
-    "en": "Option"
+    "en": "Option",
+    "es": "Opción"
   },
   "Querschnitt": {
     "fr": "Section",
     "it": "Sezione",
-    "en": "Cross-section"
+    "en": "Cross-section",
+    "es": "Sección"
   },
   "Querschnitte": {
     "fr": "Sections",
     "it": "Sezioni",
-    "en": "Cross-sections"
+    "en": "Cross-sections",
+    "es": "Secciones"
   },
   "Schneiddüsen": {
     "fr": "Buses de coupe",
     "it": "Ugelli da taglio",
-    "en": "Cutting nozzles"
+    "en": "Cutting nozzles",
+    "es": "Boquillas de corte"
   },
   "Schneidleistung": {
     "fr": "Capacité de coupe",
     "it": "Capacità di taglio",
-    "en": "Cutting capacity"
+    "en": "Cutting capacity",
+    "es": "Capacidad de corte"
   },
   "Schneidstrom": {
     "fr": "Courant de coupe",
     "it": "Corrente di taglio",
-    "en": "Cutting current"
+    "en": "Cutting current",
+    "es": "Corriente de corte"
   },
   "Schnittstelle": {
     "fr": "Interface",
     "it": "Interfaccia",
-    "en": "Interface"
+    "en": "Interface",
+    "es": "Interfaz"
   },
   "Schutz": {
     "fr": "Protection",
     "it": "Protezione",
-    "en": "Protection"
+    "en": "Protection",
+    "es": "Protección"
   },
   "Serie": {
     "fr": "Série",
     "it": "Serie",
-    "en": "Series"
+    "en": "Series",
+    "es": "Serie"
   },
   "Serienmässig": {
     "fr": "De série",
     "it": "Di serie",
-    "en": "Standard equipment"
+    "en": "Standard equipment",
+    "es": "Equipamiento de serie"
   },
   "Sicherheitsdatenblatt": {
     "fr": "Fiche de données de sécurité",
     "it": "Scheda di sicurezza",
-    "en": "Safety data sheet"
+    "en": "Safety data sheet",
+    "es": "Ficha de datos de seguridad"
   },
   "Software": {
     "fr": "Logiciel",
     "it": "Software",
-    "en": "Software"
+    "en": "Software",
+    "es": "Software"
   },
   "Speicher": {
     "fr": "Mémoire",
     "it": "Memoria",
-    "en": "Memory"
+    "en": "Memory",
+    "es": "Memoria"
   },
   "Stahl": {
     "fr": "Acier",
     "it": "Acciaio",
-    "en": "Steel"
+    "en": "Steel",
+    "es": "Acero"
   },
   "Steckdose": {
     "fr": "Prise",
     "it": "Presa",
-    "en": "Socket"
+    "en": "Socket",
+    "es": "Toma de conexión"
   },
   "Steuerung": {
     "fr": "Commande",
     "it": "Controllo",
-    "en": "Control system"
+    "en": "Control system",
+    "es": "Sistema de control"
   },
   "Strombereich": {
     "fr": "Plage de courant",
     "it": "Campo di corrente",
-    "en": "Current range"
+    "en": "Current range",
+    "es": "Rango de corriente"
   },
   "Stromquelle": {
     "fr": "Source de courant",
     "it": "Generatore",
-    "en": "Power source"
+    "en": "Power source",
+    "es": "Fuente de corriente"
   },
   "Technologie": {
     "fr": "Technologie",
     "it": "Tecnologia",
-    "en": "Technology"
+    "en": "Technology",
+    "es": "Tecnología"
   },
   "Typ": {
     "fr": "Type",
     "it": "Tipo",
-    "en": "Type"
+    "en": "Type",
+    "es": "Tipo"
   },
   "Verbindet": {
     "fr": "Relie",
     "it": "Collega",
-    "en": "Connects"
+    "en": "Connects",
+    "es": "Conecta"
   },
   "Verfahren": {
     "fr": "Procédé",
     "it": "Processo",
-    "en": "Process"
+    "en": "Process",
+    "es": "Proceso"
   },
   "Werkstoff": {
     "fr": "Matériau",
     "it": "Materiale",
-    "en": "Material"
+    "en": "Material",
+    "es": "Material"
   },
   "Wirbelring": {
     "fr": "Bague de diffusion",
     "it": "Anello diffusore",
-    "en": "Swirl ring"
+    "en": "Swirl ring",
+    "es": "Anillo difusor"
   },
   "Zündung": {
     "fr": "Amorçage",
     "it": "Innesco",
-    "en": "Ignition"
+    "en": "Ignition",
+    "es": "Encendido"
   },
   "Abmessungen L × B × H": {
     "fr": "Dimensions L × l × H",
     "it": "Dimensioni L × P × A",
-    "en": "Dimensions L × W × H"
+    "en": "Dimensions L × W × H",
+    "es": "Dimensiones L × An × Al"
   },
   "Dauerleistung": {
     "fr": "Puissance permanente",
     "it": "Potenza continua",
-    "en": "Continuous power"
+    "en": "Continuous power",
+    "es": "Potencia continua"
   },
   "Dauerstrom bei 100 % ED": {
     "fr": "Courant permanent à 100 % de facteur de marche",
     "it": "Corrente continua al 100 % del ciclo di lavoro",
-    "en": "Current at 100 % duty cycle"
+    "en": "Current at 100 % duty cycle",
+    "es": "Corriente al 100 % del ciclo de trabajo"
   },
   "Einstellbereich Strom": {
     "fr": "Plage de réglage du courant",
     "it": "Campo di regolazione della corrente",
-    "en": "Current adjustment range"
+    "en": "Current adjustment range",
+    "es": "Rango de ajuste de corriente"
   },
   "Leerlaufspannung": {
     "fr": "Tension à vide",
     "it": "Tensione a vuoto",
-    "en": "Open-circuit voltage"
+    "en": "Open-circuit voltage",
+    "es": "Tensión en vacío"
   },
   "Leistungsfaktor cos φ": {
     "fr": "Facteur de puissance cos φ",
     "it": "Fattore di potenza cos φ",
-    "en": "Power factor cos φ"
+    "en": "Power factor cos φ",
+    "es": "Factor de potencia cos φ"
   },
   "Netzabsicherung": {
     "fr": "Protection du réseau",
     "it": "Protezione di rete",
-    "en": "Mains fuse"
+    "en": "Mains fuse",
+    "es": "Fusible de red"
   },
   "Netzanschluss": {
     "fr": "Raccordement au réseau",
     "it": "Allacciamento alla rete",
-    "en": "Mains connection"
+    "en": "Mains connection",
+    "es": "Conexión a la red"
   },
   "Netzkabel": {
     "fr": "Câble d’alimentation",
     "it": "Cavo di alimentazione",
-    "en": "Mains cable"
+    "en": "Mains cable",
+    "es": "Cable de red"
   },
   "Netzstrom bei 380 V": {
     "fr": "Courant du réseau à 380 V",
     "it": "Corrente di rete a 380 V",
-    "en": "Mains current at 380 V"
+    "en": "Mains current at 380 V",
+    "es": "Corriente de red a 380 V"
   },
   "Primärstrom": {
     "fr": "Courant primaire",
     "it": "Corrente primaria",
-    "en": "Primary current"
+    "en": "Primary current",
+    "es": "Corriente primaria"
   },
   "Pulsfrequenz": {
     "fr": "Fréquence de pulsation",
     "it": "Frequenza di pulsazione",
-    "en": "Pulse frequency"
+    "en": "Pulse frequency",
+    "es": "Frecuencia de pulsado"
   },
   "Schutzart": {
     "fr": "Indice de protection",
     "it": "Grado di protezione",
-    "en": "Degree of protection"
+    "en": "Degree of protection",
+    "es": "Grado de protección"
   },
   "Schweisskabel-Querschnitt": {
     "fr": "Section du câble de soudage",
     "it": "Sezione del cavo di saldatura",
-    "en": "Welding cable cross-section"
+    "en": "Welding cable cross-section",
+    "es": "Sección del cable de soldadura"
   },
   "Schweissstrom Plasma": {
     "fr": "Courant de soudage plasma",
     "it": "Corrente di saldatura al plasma",
-    "en": "Plasma welding current"
+    "en": "Plasma welding current",
+    "es": "Corriente de soldadura por plasma"
   },
   "Schweissstrom WIG": {
     "fr": "Courant de soudage TIG",
     "it": "Corrente di saldatura TIG",
-    "en": "TIG welding current"
+    "en": "TIG welding current",
+    "es": "Corriente de soldadura TIG"
   },
   "Masse (LxBxH)": {
     "fr": "Dimensions (L × l × H)",
     "it": "Dimensioni (LxPxA)",
-    "en": "Dimensions (L × W × H)"
+    "en": "Dimensions (L × W × H)",
+    "es": "Dimensiones (L × An × Al)"
   },
   "Schutzklasse": {
     "de": "Schutzart",
     "fr": "Indice de protection",
     "it": "Grado di protezione",
-    "en": "Degree of protection"
+    "en": "Degree of protection",
+    "es": "Grado de protección"
   },
   "Einschaltdauer": {
     "fr": "Facteur de marche",
     "it": "Ciclo di lavoro",
-    "en": "Duty cycle"
+    "en": "Duty cycle",
+    "es": "Ciclo de trabajo"
   },
   "Trennschnitt": {
     "fr": "Coupe de séparation",
     "it": "Taglio di separazione",
-    "en": "Severance cut"
+    "en": "Severance cut",
+    "es": "Corte de separación"
   },
   "Empfohlener Schnitt": {
     "fr": "Coupe recommandée",
     "it": "Taglio consigliato",
-    "en": "Recommended cut"
+    "en": "Recommended cut",
+    "es": "Corte recomendado"
   },
   "Belastbarkeit": {
     "fr": "Courant admissible",
     "it": "Corrente ammissibile",
-    "en": "Current rating"
+    "en": "Current rating",
+    "es": "Capacidad de corriente"
   }
 }

@@ -8,7 +8,7 @@ import { test } from 'node:test';
 
 
 function observe(search, { lang = 'de', granted = true, referrer = '', pathname = '' } = {}) {
-  const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/' }[lang];
+  const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/', es: '/es/contacto/' }[lang];
   const page = pathname || contact;
   const appended = [], sent = [];
   const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch', token: '', ahrefsKey: 'public-test-key' }, addEventListener() {}, querySelector: () => ({ focus() {} }) };
@@ -34,7 +34,7 @@ function observe(search, { lang = 'de', granted = true, referrer = '', pathname 
 }
 
 test('registered product choices and services measure only canonical contact URLs', () => {
-  for (const lang of ['de', 'fr', 'it', 'en']) {
+  for (const lang of ['de', 'fr', 'it', 'en', 'es']) {
     for (const search of ['?product=mms&option=mms-3000-ex', '?product=plasmafix-51&option=unit-centre', '?service=repair', '?service=calib', '?service=auto', '?service=overview']) {
       const result = observe(search, { lang });
       assert.equal(result.appended.length, 1, `${lang} ${search}`);
@@ -61,7 +61,7 @@ test('valid inquiry context cannot bypass refusal or unsafe referrer', () => {
 });
 
 test('visitor property names cannot change analytics dictionaries or enable a provider', () => {
-  for (const lang of ['de', 'fr', 'it', 'en']) {
+  for (const lang of ['de', 'fr', 'it', 'en', 'es']) {
     for (const search of ['?__proto__=x', '?constructor=x', '?prototype=x',
       '?product=mms&__proto__=x', '?service=repair&constructor=x',
       '?utm_source=google&__proto__=x&utm_campaign=x&utm_content=x']) {
@@ -75,8 +75,8 @@ test('visitor property names cannot change analytics dictionaries or enable a pr
 });
 
 test('the SDK never receives a raw own-site referrer containing an inquiry choice or service', () => {
-  for (const lang of ['de', 'fr', 'it', 'en']) {
-    const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/' }[lang];
+  for (const lang of ['de', 'fr', 'it', 'en', 'es']) {
+    const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/', es: '/es/contacto/' }[lang];
     const base = 'https://www.ves-tech.ch' + contact;
     for (const query of ['?product=mms&option=mms-3000-ex', '?product=plasmafix-51&option=unit-left',
       '?service=repair', '?service=overview', '?service=private', '?product=mms&option=']) {
@@ -89,12 +89,15 @@ test('the SDK never receives a raw own-site referrer containing an inquiry choic
 });
 
 
-test('English product views retain their language and safe catalogue identity', () => {
-  const result = observe('', { lang: 'en', pathname: '/en/products/welding-equipment/mms/' });
-  assert.equal(result.appended.length, 1);
-  const event = result.sent.find(row => row.name === 'product_view');
-  assert.ok(event);
-  assert.equal(event.props.lang, 'en');
-  assert.equal(event.props.product_id, 'mms');
-  assert.doesNotMatch(JSON.stringify(result.sent), /private|option|customer/);
+test('new catalogue languages retain their language and safe product identity', () => {
+  for (const [lang, pathname] of [['en', '/en/products/welding-equipment/mms/'],
+                                 ['es', '/es/productos/equipos-de-soldadura/mms/']]) {
+    const result = observe('', { lang, pathname });
+    assert.equal(result.appended.length, 1);
+    const event = result.sent.find(row => row.name === 'product_view');
+    assert.ok(event);
+    assert.equal(event.props.lang, lang);
+    assert.equal(event.props.product_id, 'mms');
+    assert.doesNotMatch(JSON.stringify(result.sent), /private|option|customer/);
+  }
 });

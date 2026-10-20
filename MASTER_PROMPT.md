@@ -56,8 +56,8 @@
     am LocalBusiness — sonst kollidieren sie mit dem Unternehmensprofil.
 - **Keine Preise.** Jedes Gerät zeigt „Preis auf Anfrage". Kundschaft sammelt Geräte
   in der **Anfrageliste** und schickt eine gebündelte Anfrage.
-- **Viersprachig DE / FR / IT / EN**, Deutsch ist Standard. **Jeder** neue Text existiert in
-  allen vier Sprachen. Schweizer Schreibweise: **„ss" statt „ß"** („Schweissen",
+- **Fünfsprachig DE / FR / IT / EN / ES**, Deutsch ist Standard. **Jeder** neue Text existiert in
+  allen fünf Sprachen. Schweizer Schreibweise: **„ss" statt „ß"** („Schweissen",
   „Wasserkühlung").
 - **Domain:** `https://www.ves-tech.ch` (kanonisch), registriert bei Infomaniak,
   DNS-Zone ebenfalls dort (ns11/ns12.infomaniak.ch), A-Records auf GitHub Pages.
@@ -122,7 +122,7 @@ build/i18n_extra.json ← SEO-/AEO-Texte, FAQ, Rechtstexte (von Hand gepflegt)
         └─ build/build.py    schreibt alles raus
         │
         ▼
-488 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
+610 × index.html + sitemap.xml + robots.txt + llms.txt + llms-full.txt
     + data/products.json + data/search-{de,fr,it,en}.json
 ```
 
@@ -142,19 +142,19 @@ Website vollständig lesbar und navigierbar.
 
 ## 3. URL-Schema
 
-| Seite | DE | FR | IT | EN |
-|---|---|---|---|---|
-| Start | `/` | `/fr/` | `/it/` | `/en/` |
-| Alle Geräte | `/produkte/` | `/fr/produits/` | `/it/prodotti/` | `/en/products/` |
-| Kategorie | `/produkte/<cat>/` | `/fr/produits/<cat>/` | `/it/prodotti/<cat>/` | `/en/products/<cat>/` |
-| Unterkategorie | `/produkte/<cat>/<sub>/` | … | … | `/en/products/<cat>/<sub>/` |
-| Produkt | `/produkte/<cat>/<id>/` | … | … | `/en/products/<cat>/<id>/` |
-| Verfahren | `/verfahren/` | `/fr/procedes/` | `/it/processi/` | `/en/processes/` |
-| Downloads | `/downloads/` | `/fr/telechargements/` | `/it/download/` | `/en/downloads/` |
-| Kontakt | `/kontakt/` | `/fr/contact/` | `/it/contatto/` | `/en/contact/` |
-| FAQ | `/faq/` | `/fr/questions-frequentes/` | `/it/domande-frequenti/` | `/en/faq/` |
-| Suche | `/suche/` | `/fr/recherche/` | `/it/ricerca/` | `/en/search/` |
-| Impressum / Datenschutz | `/impressum/`, `/datenschutz/` | … | … | `/en/legal-notice/`, `/en/privacy/` |
+| Seite | DE | FR | IT | EN | ES |
+|---|---|---|---|---|---|
+| Start | `/` | `/fr/` | `/it/` | `/en/` | `/es/` |
+| Alle Geräte | `/produkte/` | `/fr/produits/` | `/it/prodotti/` | `/en/products/` | `/es/productos/` |
+| Kategorie | `/produkte/<cat>/` | `/fr/produits/<cat>/` | `/it/prodotti/<cat>/` | `/en/products/<cat>/` | `/es/productos/<cat>/` |
+| Unterkategorie | `/produkte/<cat>/<sub>/` | … | … | `/en/products/<cat>/<sub>/` | `/es/productos/<cat>/<sub>/` |
+| Produkt | `/produkte/<cat>/<id>/` | … | … | `/en/products/<cat>/<id>/` | `/es/productos/<cat>/<id>/` |
+| Verfahren | `/verfahren/` | `/fr/procedes/` | `/it/processi/` | `/en/processes/` | `/es/procesos/` |
+| Downloads | `/downloads/` | `/fr/telechargements/` | `/it/download/` | `/en/downloads/` | `/es/descargas/` |
+| Kontakt | `/kontakt/` | `/fr/contact/` | `/it/contatto/` | `/en/contact/` | `/es/contacto/` |
+| FAQ | `/faq/` | `/fr/questions-frequentes/` | `/it/domande-frequenti/` | `/en/faq/` | `/es/preguntas-frecuentes/` |
+| Suche | `/suche/` | `/fr/recherche/` | `/it/ricerca/` | `/en/search/` | `/es/buscar/` |
+| Impressum / Datenschutz | `/impressum/`, `/datenschutz/` | … | … | `/en/legal-notice/`, `/en/privacy/` | `/es/aviso-legal/`, `/es/privacidad/` |
 
 Kategorie-Slugs sind **pro Sprache übersetzt** (`schweissgeraete` / `postes-de-soudage`
 / `saldatrici`), Produkt-Slugs bleiben in allen Sprachen die Produkt-ID (Markennamen
@@ -351,7 +351,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`+`Store`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (476 URLs); Suche, Datenschutz und AGB
+- `sitemap.xml` mit `xhtml:link`-Alternates (595 URLs); Suche, Datenschutz und AGB
   sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
 - `lastmod` folgt dem Inhalt jeder Seite. Asset-Versionsnummern, CSP/SRI und die
   reine Laufzeitkonfiguration `window.VT` ändern das Datum nicht. Sichtbarer
@@ -634,7 +634,7 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
 1. **Inhalt kommt aus `data/`**, niemals direkt ins generierte HTML schreiben —
    der nächste Build überschreibt es.
 2. **Keine Preise.** Immer „Preis auf Anfrage", kein `price` im JSON-LD.
-3. **Jeder neue Text in DE + FR + IT + EN**, Schweizer „ss".
+3. **Jeder neue Text in DE + FR + IT + EN + ES**, Schweizer „ss".
 3a. **Kein Gedankenstrich im sichtbaren Text.** Wo „… und Automation – vom
    Techniker …" stand, steht jetzt ein Komma, ein Doppelpunkt, eine Klammer oder
    ein eigener Satz. In der Schriftgrösse des Fliesstextes wirkt der Strich auf
@@ -701,7 +701,7 @@ Meta-Dubletten je Sprache und das `lang`-Attribut. Beide laufen in CI.
     („Relegung", „Syniergie", „Reiningen", „Funkcion") werden korrigiert und `ß`
     wird zu `ss` — ein fremder Fehler sieht auf unserer Seite aus wie unserer.
 11. Liefert MAHE einen Screenshot mit „Besonderheiten", wird der Text **wortwörtlich**
-    in `HL`/`HL_CLEAN`/`PANEL_HL` übernommen, in allen drei Sprachen.
+    in `HL`/`HL_CLEAN`/`PANEL_HL` übernommen, in allen konfigurierten Sprachen.
 12. **Technische Daten kommen ebenfalls von MAHE** und stehen als Tabelle mit
     einer Spalte je Modellvariante auf der Seite — genau so, wie der Hersteller
     sie zeigt. `build/scrape_specs.py` holt sie, `data/SPECMAP.json` ordnet sie
@@ -1120,3 +1120,41 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
 - Änderungen erfolgen ausschliesslich in gepflegten Quellen. Der normale Build
   aktualisiert HTML, Metadaten, Suche und lesbare Katalogexporte; keine zusätzliche
   Browserlogik, keine neuen Bilddateien und keine Änderung technischer Zahlenwerte.
+
+
+## 27. Vollständige spanische Fassung (20.10.2026)
+
+- ES ergänzt den gesamten Auftritt um 122 eigene Inhaltsseiten unter `/es/`.
+  Aktuell 610 Inhaltsseiten in DE/FR/IT/EN/ES, eine gemeinsame 404-Seite,
+  15 bestehende Weiterleitungen und die Google-Verifizierungsdatei; 595
+  indexierbare Sitemap-URLs. Bestehende Adressen und Produkt-IDs bleiben stabil.
+  Sprachkennzeichnung `es-CH`, eigene lesbare spanische Segmente in `SEG`,
+  `CAT_SLUG`, `SERVICE_SEG` und `subcategory_slugs.json`.
+- Vollständige gepflegte Übersetzung aller 81 Produktbeschreibungen, Merkmale,
+  technischen Tabellen, Bedienpanel-Ratgeber, 19 Prozesse, Auswahlhilfen,
+  Schulungsnachweise, Service, FAQ, Formulare und Rechtstexte. Modellnamen,
+  Herstellerangaben, Vertragsinhalt und technische Zahlenwerte bleiben erhalten.
+  Spanische Dezimalzahlen verwenden das Komma; WIG wird als TIG beschrieben.
+  Die Fachgebietszeile bleibt eine natürliche Aufzählung ohne Schlusspunkt.
+- Es handelt sich um ein Einzelunternehmen von Martin Veselovsky. Persönliche
+  Beratung bleibt auf Deutsch, Tschechisch und Englisch angegeben; die neue
+  Website-Sprache behauptet keine zusätzliche gesprochene Beratungssprache.
+  Schulungszertifikat und Herstellerrollen behalten ihren bisherigen Umfang.
+  Spanische Rechtstexte verlinken ihre entsprechenden spanischen Seiten.
+- Fünf dekorative lokale Vektorflaggen in der Sprachauswahl; ES nutzt Rot/Gelb.
+  Gleichbleibende Seiten und geprüfte Anfrageparameter werden beim Wechsel
+  erhalten. Kein externer Übersetzungsdienst, keine zusätzliche Laufzeit.
+  Gerätefotos, Fonts, Designsystem und Bedienlogik werden wiederverwendet.
+- `search-es.json` enthält Produkte, Service und ausführliche Prozesse. Nur der
+  aktuelle Suchindex lädt bei Bedarf. Spanische Fachsynonyme und identische
+  Python-/JavaScript-Normalisierung für á/í/ó/ú/ñ ermöglichen die Suche mit und
+  ohne Akzente. Hersteller-PDFs bleiben Originale mit sprachrichtigem Hinweis.
+  Der Dokumentimport berücksichtigt alle konfigurierten Sprachen.
+- `validate_translations()` prüft Struktur, Vollständigkeit und Platzhalter
+  aller fünf Sprachen, einschliesslich verschachtelter gemeinsamer Metadaten.
+  Regressionen prüfen Wertparität, Sprachrouten, Formulare, Suche, Analytik und
+  öffentliche Wiederherstellung. Hreflang, Sitemap, JSON-/SQL-Katalog, IndexNow,
+  Sprachstatistik, Vorschaukarten und Recovery-Allowlist umfassen ES.
+- Quellcode liegt nach bestandenen Prüfungen auf GitHub. Das öffentliche
+  Recovery-Archiv wird am exakten Commit erstellt und vor dem Deploy
+  wiederhergestellt/geprüft; kein zusätzliches lokales Backup-Archiv.

@@ -24,6 +24,12 @@
       "Deep-black marking",
       "Short-circuit protection system",
       "Suitable for stencils from all manufacturers"
+    ],
+    "es": [
+      "Fuente de corriente para marcado",
+      "Marcado negro intenso",
+      "Sistema de protección contra cortocircuitos",
+      "Apto para plantillas de todos los fabricantes"
     ]
   },
   "mlf100": {
@@ -63,6 +69,15 @@
       "Compatible with all MAHE HyperCleaner cleaning systems",
       "With mounting kit for attachment to MAHE HyperCleaner systems",
       "With cleaning brush stand and drip protection"
+    ],
+    "es": [
+      "Unidad ligera y compacta para dosificación automática de líquido de limpieza",
+      "Modo de dosificación automático o manual",
+      "Conexión para depósito externo",
+      "Modos de limpieza y enjuague",
+      "Compatible con todos los sistemas de limpieza MAHE HyperCleaner",
+      "Con juego de montaje para fijación a sistemas MAHE HyperCleaner",
+      "Con soporte para cepillos y protección antigoteo"
     ]
   },
   "minicleaner": {
@@ -94,6 +109,13 @@
       "Cleaning, polishing and marking",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 200 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido y marcado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-st": {
@@ -125,6 +147,13 @@
       "Cleaning, polishing and marking",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 1200 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido y marcado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-plus": {
@@ -156,6 +185,13 @@
       "Cleaning, polishing, marking and galvanising",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 4000 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido, marcado y galvanizado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-speed": {
@@ -187,6 +223,13 @@
       "Cleaning, polishing, marking and galvanising",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 2400 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido, marcado y galvanizado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-ct200": {
@@ -218,6 +261,13 @@
       "Cleaning at 2000 W",
       "Cleaning, polishing, marking and galvanising",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Multiproceso: soldadura TIG y limpieza",
+      "Soldadura TIG a 200 A",
+      "Limpieza a 2000 W",
+      "Limpieza, pulido, marcado y galvanizado",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypertig-ax": {
@@ -277,6 +327,20 @@
       "Remote control",
       "Synergic settings",
       "JOB mode"
+    ],
+    "es": [
+      "Soldadura pulsada de alta frecuencia",
+      "Soldadura por puntos HyperSpot",
+      "ActiveSpot: función de punteado rápido",
+      "Control Hyper-ARC-Active",
+      "Soldadura Mix TIG",
+      "Modulación de corriente ajustable",
+      "Cable de alimentación de 5 metros",
+      "Indicador digital",
+      "Refrigeración por agua de alto rendimiento",
+      "Mando a distancia",
+      "Ajustes sinérgicos",
+      "Modo JOB"
     ]
   },
   "hypertig-dx": {
@@ -324,6 +388,17 @@
       "Remote control",
       "Synergic settings",
       "JOB mode"
+    ],
+    "es": [
+      "Soldadura pulsada de alta frecuencia",
+      "Soldadura por puntos HyperSpot",
+      "ActiveSpot: función de punteado rápido",
+      "Control Hyper-ARC-Active",
+      "Indicador digital",
+      "Refrigeración por agua de alto rendimiento",
+      "Mando a distancia",
+      "Ajustes sinérgicos",
+      "Modo JOB"
     ]
   },
   "hypertig-acdc": {
@@ -379,6 +454,19 @@
       "Remote control",
       "Synergic settings",
       "JOB mode"
+    ],
+    "es": [
+      "Soldadura pulsada de alta frecuencia",
+      "Soldadura por puntos HyperSpot",
+      "Control Hyper-ARC-Active",
+      "Soldadura Mix TIG",
+      "Modulación de corriente ajustable",
+      "Cable de alimentación de 5 metros",
+      "Indicador digital de tensión y corriente",
+      "Refrigeración por agua de alto rendimiento",
+      "Mando a distancia",
+      "Ajustes sinérgicos",
+      "Modo JOB"
     ]
   },
   "plasma-tig": {
@@ -438,6 +526,20 @@
       "5-metre supply cable",
       "Fine gas flow adjustment",
       "Interface"
+    ],
+    "es": [
+      "Soldadura TIG plasma",
+      "Soldadura MMA con electrodo revestido",
+      "Soldadura TIG HF",
+      "Soldadura TIG Lift Arc",
+      "Arc Force",
+      "Anti-Stick",
+      "Rampa de subida",
+      "Rampa de bajada",
+      "Activación y desactivación del encendido HF",
+      "Cable de alimentación de 5 metros",
+      "Ajuste fino del caudal de gas",
+      "Interfaz"
     ]
   },
   "i-1600": {
@@ -477,6 +579,15 @@
       "5-metre supply cable",
       "Operates with long supply cables",
       "100 V technology"
+    ],
+    "es": [
+      "Suelda con electrodos básicos, de rutilo y celulósicos",
+      "Force Arc",
+      "Función Anti-Stick",
+      "TIG Lift Arc",
+      "Cable de alimentación de 5 metros",
+      "Funcionamiento con cables de alimentación largos",
+      "Tecnología de 100 V"
     ]
   },
   "theta-40": {
@@ -532,6 +643,19 @@
       "Integrated pressure display",
       "Built-in S 25 plasma cutting torch, 4 m",
       "Work return cable 16 mm², 4 m, included in the scope of supply"
+    ],
+    "es": [
+      "Corte de separación máximo de 8 mm",
+      "Corte de calidad máximo de 5 mm",
+      "Encendido Lift Arc estable",
+      "Antorcha pequeña para zonas de difícil acceso",
+      "Contador de tiempo total de funcionamiento",
+      "Temporizador de vida útil de consumibles",
+      "Función de corte de chapa perforada",
+      "Separador de agua integrado",
+      "Indicador de presión integrado",
+      "Antorcha de corte por plasma S 25 integrada, 4 m",
+      "Cable de retorno de 16 mm² y 4 m incluido en el suministro"
     ]
   },
   "theta-60": {
@@ -579,6 +703,17 @@
       "Maximum productivity",
       "Perforated sheet cutting function",
       "Gouging function"
+    ],
+    "es": [
+      "Tecnología HSC",
+      "Bajos costes de funcionamiento",
+      "Corte de alto rendimiento",
+      "Corte de separación < 35 mm",
+      "Corte recomendado < 25 mm",
+      "Encendido Lift Arc estable",
+      "Máxima productividad",
+      "Función de corte de chapa perforada",
+      "Función de ranurado por arco"
     ]
   },
   "theta-120": {
@@ -630,6 +765,18 @@
       "Optional automation interface",
       "Perforated sheet cutting function",
       "Gouging function"
+    ],
+    "es": [
+      "Tecnología HSC",
+      "Bajos costes de funcionamiento",
+      "Corte de alto rendimiento",
+      "Corte de separación máximo de 55 mm",
+      "Corte de calidad máximo de 38 mm",
+      "Encendido Lift Arc estable",
+      "Máxima productividad",
+      "Interfaz opcional de automatización",
+      "Función de corte de chapa perforada",
+      "Función de ranurado por arco"
     ]
   },
   "theta-180": {
@@ -677,6 +824,17 @@
       "Digital display",
       "Machine status display",
       "Torch assemblies up to 15.2 metres long"
+    ],
+    "es": [
+      "Tecnología HSC",
+      "Corte de hasta 80 mm",
+      "Función de ranurado por arco",
+      "Función de corte de chapa perforada",
+      "Conexión central de antorcha",
+      "Cable de alimentación de 5 metros",
+      "Indicador digital",
+      "Indicador del estado de la máquina",
+      "Paquetes de antorcha de hasta 15,2 metros"
     ]
   },
   "theta-60-aut": {
@@ -724,6 +882,17 @@
       "Maximum productivity",
       "Perforated sheet cutting function",
       "Gouging function"
+    ],
+    "es": [
+      "Tecnología HSC",
+      "Bajos costes de funcionamiento",
+      "Corte de alto rendimiento",
+      "Corte de separación < 35 mm",
+      "Corte recomendado < 25 mm",
+      "Encendido Lift Arc estable",
+      "Máxima productividad",
+      "Función de corte de chapa perforada",
+      "Función de ranurado por arco"
     ]
   },
   "theta-120-aut": {
@@ -775,6 +944,18 @@
       "Maximum productivity",
       "Perforated sheet cutting function",
       "Gouging function"
+    ],
+    "es": [
+      "Tecnología HSC",
+      "Interfaz de automatización",
+      "Bajos costes de funcionamiento",
+      "Corte de alto rendimiento",
+      "Corte de separación superior a 55 mm",
+      "Corte de calidad superior a 38 mm",
+      "Encendido Lift Arc estable",
+      "Máxima productividad",
+      "Función de corte de chapa perforada",
+      "Función de ranurado por arco"
     ]
   },
   "omega-ax": {
@@ -838,6 +1019,21 @@
       "Simple synergic operation",
       "Automatic pulse adjustment",
       "Optional remote control"
+    ],
+    "es": [
+      "Inversor resonante con control DSP",
+      "Soldadura pulsada de hasta 20 kHz",
+      "Función ActiveBoost",
+      "Control Hyper-ARC-Active",
+      "Soldadura HyperSpot",
+      "Soldadura Mix TIG",
+      "Función de formación de bola en el electrodo",
+      "Modulación de corriente ajustable",
+      "5 posiciones de memoria para acceso rápido",
+      "Mando a distancia",
+      "Manejo sinérgico sencillo",
+      "Ajuste automático del pulsado",
+      "Mando a distancia opcional"
     ]
   },
   "delta": {
@@ -872,6 +1068,14 @@
       "Anti-Stick function",
       "5-metre supply cable",
       "Remote control",
+      "TIG Lift Arc"
+    ],
+    "es": [
+      "Suelda con electrodos básicos, de rutilo y celulósicos",
+      "Force Arc",
+      "Función Anti-Stick",
+      "Cable de alimentación de 5 metros",
+      "Mando a distancia",
       "TIG Lift Arc"
     ]
   },
@@ -924,6 +1128,18 @@
       "5-metre supply cable",
       "Digital voltage and current display",
       "Remote control"
+    ],
+    "es": [
+      "Suelda con electrodos básicos, de rutilo y celulósicos",
+      "Arc Force ajustable",
+      "Hot Start ajustable",
+      "Función Anti-Stick",
+      "Función de ranurado por arco",
+      "Tensión en vacío ajustable desde 15 V",
+      "Preselección continua del fusible de red",
+      "Cable de alimentación de 5 metros",
+      "Indicador digital de tensión y corriente",
+      "Mando a distancia"
     ]
   },
   "delta-digital-ds": {
@@ -983,6 +1199,20 @@
       "Digital voltage and current displays",
       "Data Hold function",
       "Mobile"
+    ],
+    "es": [
+      "Para soldadura subacuática",
+      "15 V OCV",
+      "Supervisión activa de OCV",
+      "Interruptor de parada de emergencia opcional",
+      "Force Arc",
+      "Función Anti-Stick",
+      "Cable de alimentación de 5 metros",
+      "Función de ranurado por arco",
+      "Conmutable entre CV y CC",
+      "Indicadores digitales de tensión y corriente",
+      "Función Data Hold",
+      "Móvil"
     ]
   },
   "beta-dx": {
@@ -1034,6 +1264,18 @@
       "Simple synergic operation",
       "Automatic pulse adjustment",
       "Optional remote control"
+    ],
+    "es": [
+      "Inversor resonante con control DSP",
+      "Soldadura pulsada de hasta 20 kHz",
+      "Función ActiveBoost",
+      "Control Hyper-ARC-Active",
+      "Soldadura HyperSpot",
+      "5 posiciones de memoria para acceso rápido",
+      "Mando a distancia",
+      "Manejo sinérgico sencillo",
+      "Ajuste automático del pulsado",
+      "Mando a distancia opcional"
     ]
   },
   "beta-digital": {
@@ -1073,6 +1315,15 @@
       "Remote control",
       "Synergic settings",
       "JOB mode"
+    ],
+    "es": [
+      "Soldadura pulsada de alta frecuencia",
+      "Control Hyper-ARC-Active",
+      "Cable de alimentación de 5 metros",
+      "Indicador digital de corriente",
+      "Mando a distancia",
+      "Ajustes sinérgicos",
+      "Modo JOB"
     ]
   },
   "mms": {
@@ -1132,6 +1383,20 @@
       "Mobile and lightweight, only 21 kg",
       "4-roll drive",
       "D300 spool"
+    ],
+    "es": [
+      "Arco sin proyecciones",
+      "Móvil y ligero, solo 11,5 kg",
+      "Accionamiento por rodillos",
+      "Cable de alimentación de 5 metros",
+      "Sistema de inversión de polaridad",
+      "Bobina D200",
+      "TIG Lift Arc",
+      "Arco pulsado",
+      "Arco con HyperCold / HyperRoot",
+      "Móvil y ligero, solo 21 kg",
+      "Accionamiento de 4 rodillos",
+      "Bobina D300"
     ]
   },
   "mpt-3001": {
@@ -1195,6 +1460,21 @@
       "Marking and scribing at a separate speed using a dedicated layer colour",
       "Control console with Windows computer and display at the table",
       "Commissioning and instruction by VES-TECH Swiss"
+    ],
+    "es": [
+      "Mesa profesional de corte por plasma CNC suministrada en conjunto con una fuente de corriente de la serie MAHE Theta",
+      "Área de trabajo de 3000 x 1500 mm",
+      "A elegir entre fuentes de corriente Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+      "Corriente de corte de 60 A, 120 A o 180 A",
+      "Control mediante el sistema CNC de MAHE",
+      "Importación de planos 2D en formatos DXF y HPGL/PLT",
+      "La compensación de ancho de corte, las entradas, las salidas y la secuencia de corte se generan automáticamente",
+      "Torch Height Control: la altura de corte se define como tensión objetivo en voltios y se regula mediante la tensión del arco",
+      "Detección de la altura del material antes de cada perforación",
+      "Los parámetros de corte pueden guardarse para cada material; antes del corte, el análisis de la trayectoria muestra el número de perforaciones, la longitud de corte y el tiempo estimado de corte",
+      "Marcado y trazado con velocidad independiente mediante un color de capa específico",
+      "Consola de control con ordenador Windows y pantalla junto a la mesa",
+      "Puesta en servicio e instrucciones por VES-TECH Swiss"
     ]
   },
   "mpt-2501": {
@@ -1258,6 +1538,21 @@
       "Marking and scribing at a separate speed using a dedicated layer colour",
       "Control console with Windows computer and display at the table",
       "Commissioning and instruction by VES-TECH Swiss"
+    ],
+    "es": [
+      "Mesa profesional de corte por plasma CNC suministrada en conjunto con una fuente de corriente de la serie MAHE Theta",
+      "Área de trabajo de 2500 x 1250 mm",
+      "A elegir entre fuentes de corriente Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
+      "Corriente de corte de 60 A, 120 A o 180 A",
+      "Control mediante el sistema CNC de MAHE",
+      "Importación de planos 2D en formatos DXF y HPGL/PLT",
+      "La compensación de ancho de corte, las entradas, las salidas y la secuencia de corte se generan automáticamente",
+      "Torch Height Control: la altura de corte se define como tensión objetivo en voltios y se regula mediante la tensión del arco",
+      "Detección de la altura del material antes de cada perforación",
+      "Los parámetros de corte pueden guardarse para cada material; antes del corte, el análisis de la trayectoria muestra el número de perforaciones, la longitud de corte y el tiempo estimado de corte",
+      "Marcado y trazado con velocidad independiente mediante un color de capa específico",
+      "Consola de control con ordenador Windows y pantalla junto a la mesa",
+      "Puesta en servicio e instrucciones por VES-TECH Swiss"
     ]
   },
   "hypermig-twin": {
@@ -1328,6 +1623,23 @@
       "Automatic water pump on/off",
       "High-performance water cooling",
       "Environmentally friendly design, 100% recyclable."
+    ],
+    "es": [
+      "Dos alimentadores para distintos hilos de soldadura",
+      "Ajuste automático de parámetros al pulsar el gatillo de la antorcha",
+      "Funcionamiento sinérgico controlado digitalmente",
+      "Arco sin proyecciones",
+      "HyperPuls, HyperSpeedPuls",
+      "HyperCold e HyperForce",
+      "MMA y ranurado por arco",
+      "Mando a distancia (gatillo de antorcha Up/Down)",
+      "Accionamiento de 4 rodillos",
+      "Cable de alimentación de 5 metros",
+      "Paquetes de interconexión de hasta 20 metros",
+      "Ventiladores controlados por temperatura",
+      "Activación y desactivación automática de la bomba de agua",
+      "Refrigeración por agua de alto rendimiento",
+      "Diseño respetuoso con el medio ambiente, 100% reciclable."
     ]
   }
 }

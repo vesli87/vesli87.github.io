@@ -55,6 +55,20 @@
       "Remote control connection",
       "JOB mode with 99 programs",
       "Upgradeable · 100 % recyclable"
+    ],
+    "es": [
+      "Soldadura MIG/MAG y soldadura fuerte MIG",
+      "HyperForce, HyperRoot, HyperCold",
+      "HyperPuls & HyperSpeedPuls",
+      "Doble pulsado con aspecto de cordón similar al TIG",
+      "Soldadura MMA con electrodo revestido y ranurado por arco",
+      "TIG Lift Arc",
+      "Control sinérgico digital",
+      "Arco sin proyecciones",
+      "Accionamiento de 4 rodillos",
+      "Conexión para mando a distancia",
+      "Modo JOB con 99 programas",
+      "Actualizable · 100 % reciclable"
     ]
   },
   "mig_std": {
@@ -89,6 +103,14 @@
       "4-roll drive",
       "Compact & mobile",
       "Robust for workshop & site work"
+    ],
+    "es": [
+      "Ajuste continuo MIG/MAG",
+      "Curvas sinérgicas",
+      "Posibilidad de soldadura MMA con electrodo revestido",
+      "Accionamiento de 4 rodillos",
+      "Compacto y móvil",
+      "Robusto para taller y obra"
     ]
   },
   "wig": {
@@ -143,6 +165,19 @@
       "Remote control",
       "Synergic settings",
       "JOB mode"
+    ],
+    "es": [
+      "Soldadura pulsada de alta frecuencia",
+      "Soldadura por puntos HyperSpot",
+      "Función de punteado ActiveSpot",
+      "Control Hyper-ARC-Active",
+      "Soldadura Mix TIG",
+      "TIG DC y MMA",
+      "Modulación de corriente ajustable",
+      "Indicador digital",
+      "Mando a distancia",
+      "Ajustes sinérgicos",
+      "Modo JOB"
     ]
   },
   "wig_acdc": {
@@ -201,6 +236,20 @@
       "High-performance water cooling",
       "Remote control",
       "JOB mode"
+    ],
+    "es": [
+      "Soldadura pulsada de alta frecuencia",
+      "Soldadura por puntos HyperSpot",
+      "Función de punteado ActiveSpot",
+      "Control Hyper-ARC-Active",
+      "Soldadura Mix TIG",
+      "AC/DC: aluminio y acero",
+      "MAHE-MIX-PULSE",
+      "Modulación de corriente ajustable",
+      "Indicador digital",
+      "Refrigeración por agua de alto rendimiento",
+      "Mando a distancia",
+      "Modo JOB"
     ]
   },
   "mma": {
@@ -243,6 +292,16 @@
       "Overtemperature protection",
       "Suitable for generator operation",
       "Robust & straightforward to operate"
+    ],
+    "es": [
+      "Soldadura MMA con electrodo revestido",
+      "TIG Lift Arc (DC)",
+      "Hot Start: encendido fiable",
+      "Arc Force: arco estable",
+      "Anti-Stick: evita que el electrodo se pegue",
+      "Protección contra sobretemperatura",
+      "Apto para funcionamiento con generador",
+      "Robusto y fácil de manejar"
     ]
   },
   "plasmatig": {
@@ -277,6 +336,14 @@
       "For applications from thin sheet to industrial use",
       "HF ignition",
       "Pilot arc"
+    ],
+    "es": [
+      "Soldadura por microplasma y plasma",
+      "Soldadura de precisión desde corrientes muy bajas",
+      "Chorro de plasma estable y concentrado",
+      "Para aplicaciones desde chapa fina hasta uso industrial",
+      "Encendido HF",
+      "Arco piloto"
     ]
   },
   "theta": {
@@ -319,6 +386,16 @@
       "Digital display",
       "Overtemperature protection",
       "Manual or automated operation"
+    ],
+    "es": [
+      "Corte por plasma con tecnología HSC",
+      "Corte de separación limpio y rápido",
+      "Arco piloto: encendido sin contacto",
+      "Para todos los metales conductores de electricidad",
+      "Posibilidad de corte de rejillas",
+      "Indicador digital",
+      "Protección contra sobretemperatura",
+      "Funcionamiento manual o automatizado"
     ]
   },
   "cleaner": {
@@ -345,6 +422,12 @@
       "For stainless steel welds",
       "Without chemical pickling paste",
       "Suitable for mobile use"
+    ],
+    "es": [
+      "Limpieza y pulido electrolíticos",
+      "Para soldaduras de acero inoxidable",
+      "Sin pasta química de decapado",
+      "Apto para uso móvil"
     ]
   }
 }

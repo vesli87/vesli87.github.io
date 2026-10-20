@@ -24,13 +24,13 @@ MAX_FILES = 20000
 ARCHIVES = {'source.tar.gz', 'public-site.tar.gz'}
 PRIVATE_PARTS = {'.git', '.claude', '.codex', '.agents', 'reports', 'node_modules',
                  '__pycache__', 'cache'}
-PUBLIC_DIRS = {'produkte', 'fr', 'it', 'en', 'verfahren', 'downloads', 'kontakt', 'faq',
+PUBLIC_DIRS = {'produkte', 'fr', 'it', 'en', 'es', 'verfahren', 'downloads', 'kontakt', 'faq',
                'suche', 'impressum', 'datenschutz', 'agb', 'service', 'ueber-uns'}
 PUBLIC_FILES = {'index.html', '404.html', 'favicon.ico', 'favicon.png', 'robots.txt',
                 'sitemap.xml', 'llms.txt', 'llms-full.txt', 'site.webmanifest',
                 '.nojekyll', 'LICENSE', 'CNAME', '.well-known/security.txt',
                 'data/products.json', 'data/search-de.json', 'data/search-fr.json',
-                'data/search-it.json', 'data/search-en.json'}
+                'data/search-it.json', 'data/search-en.json', 'data/search-es.json'}
 # Kept independent of core/package_site so CI public-only does not import config.
 # Match package_site.asset_allowed whenever the public asset contract changes.
 ASSET_FILES = {

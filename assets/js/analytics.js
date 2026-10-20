@@ -25,7 +25,7 @@
   var canonical = null, pageLocation = '', entry = null, touch = null;
   var productId = '', service = '', handlersInstalled = false, pageRecorded = false;
   var discardedClickId = false;
-  var language = ['de', 'fr', 'it', 'en'].indexOf(VT.lang) >= 0 ? VT.lang : 'de';
+  var language = ['de', 'fr', 'it', 'en', 'es'].indexOf(VT.lang) >= 0 ? VT.lang : 'de';
   var names = ['product_view', 'inquiry_add', 'inquiry_open', 'inquiry_start',
     'inquiry_submit', 'inquiry_success', 'inquiry_error', 'contact_email',
     'contact_phone', 'contact_whatsapp', 'product_consult', 'download_click'];
@@ -55,13 +55,13 @@
   }
   function knownProduct(id) { return typeof id === 'string' && owns(products, id); }
   function productInPath(path) {
-    var match = path.match(/^\/(?:produkte|fr\/produits|it\/prodotti|en\/products)\/[^/]+\/([a-z0-9-]+)\/$/);
+    var match = path.match(/^\/(?:produkte|fr\/produits|it\/prodotti|en\/products|es\/productos)\/[^/]+\/([a-z0-9-]+)\/$/);
     return match && knownProduct(match[1]) ? match[1] : '';
   }
   function publicPath(path) {
     if (paths.length) return paths.indexOf(path) >= 0;
     return (canonical && path === canonical.pathname) ||
-      ['/', '/fr/', '/it/', '/en/'].indexOf(path) >= 0 || path === config.contactPath || owns(services, path);
+      ['/', '/fr/', '/it/', '/en/', '/es/'].indexOf(path) >= 0 || path === config.contactPath || owns(services, path);
   }
   function cleanLanding(value) {
     try {

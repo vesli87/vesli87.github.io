@@ -2,524 +2,627 @@
   "0,8/1,0 Stahl (300 A) · 1,0/1,2 Stahl (350–600 A)": {
     "fr": "0,8/1,0 acier (300 A) · 1,0/1,2 acier (350–600 A)",
     "it": "0,8/1,0 acciaio (300 A) · 1,0/1,2 acciaio (350–600 A)",
-    "en": "0.8/1.0 steel (300 A) · 1.0/1.2 steel (350–600 A)"
+    "en": "0.8/1.0 steel (300 A) · 1.0/1.2 steel (350–600 A)",
+    "es": "0,8/1,0 acero (300 A) · 1,0/1,2 acero (350–600 A)"
   },
   "0,8/1,0 mm Stahl": {
     "fr": "0,8/1,0 mm acier",
     "it": "0,8/1,0 mm acciaio",
-    "en": "0.8/1.0 mm steel"
+    "en": "0.8/1.0 mm steel",
+    "es": "0,8/1,0 mm acero"
   },
   "0,8/1,0 mm Stahl bei 300 A · 1,0/1,2 mm Stahl bei 350–600 A": {
     "fr": "0,8/1,0 mm acier à 300 A · 1,0/1,2 mm acier à 350–600 A",
     "it": "0,8/1,0 mm acciaio a 300 A · 1,0/1,2 mm acciaio a 350–600 A",
-    "en": "0.8/1.0 mm steel at 300 A · 1.0/1.2 mm steel at 350–600 A"
+    "en": "0.8/1.0 mm steel at 300 A · 1.0/1.2 mm steel at 350–600 A",
+    "es": "0,8/1,0 mm acero a 300 A · 1,0/1,2 mm acero a 350–600 A"
   },
   "1x Brennerkappe · 1x Schutzkappe": {
     "fr": "1x capuchon de torche · 1x capuchon de protection",
     "it": "1x cappuccio torcia · 1x cappuccio di protezione",
-    "en": "1x torch cap · 1x shield cap"
+    "en": "1x torch cap · 1x shield cap",
+    "es": "1x capuchón de antorcha · 1x capuchón protector"
   },
   "1x kurz": {
     "fr": "1x court",
     "it": "1x corto",
-    "en": "1x short"
+    "en": "1x short",
+    "es": "1x corto"
   },
   "4 m wahlweise mit Up/Down": {
     "fr": "4 m au choix avec Up/Down",
     "it": "4 m a scelta con Up/Down",
-    "en": "4 m, optionally with Up/Down"
+    "en": "4 m, optionally with Up/Down",
+    "es": "4 m, opcionalmente con Up/Down"
   },
   "4-Rollen": {
     "fr": "4 galets",
     "it": "4 rulli",
-    "en": "4-roll"
+    "en": "4-roll",
+    "es": "4 rodillos"
   },
   "5x 0,8 mm kurz": {
     "fr": "5x 0,8 mm court",
     "it": "5x 0,8 mm corto",
-    "en": "5x 0.8 mm short"
+    "en": "5x 0.8 mm short",
+    "es": "5x 0,8 mm cortos"
   },
   "Befestigung": {
     "fr": "Fixation",
     "it": "Fissaggio",
-    "en": "Mounting"
+    "en": "Mounting",
+    "es": "Montaje"
   },
   "Bürstenständer": {
     "fr": "Support de brosse",
     "it": "Supporto per spazzola",
-    "en": "Brush stand"
+    "en": "Brush stand",
+    "es": "Soporte para cepillos"
   },
   "CNC / Automation": {
     "fr": "CNC / automatisation",
     "it": "CNC / automazione",
-    "en": "CNC / automation"
+    "en": "CNC / automation",
+    "es": "CNC / automatización"
   },
   "Chromstahl": {
     "fr": "acier inox",
     "it": "acciaio inox",
-    "en": "Stainless steel"
+    "en": "Stainless steel",
+    "es": "Acero inoxidable"
   },
   "Controller-Programmierung": {
     "fr": "programmation de contrôleur",
     "it": "programmazione del controller",
-    "en": "Controller programming"
+    "en": "Controller programming",
+    "es": "Programación del controlador"
   },
   "Digital oder Analog": {
     "fr": "numérique ou analogique",
     "it": "digitale o analogico",
     "de": "digital oder analog",
-    "en": "Digital or analogue"
+    "en": "Digital or analogue",
+    "es": "Digital o analógico"
   },
   "Edelstahl": {
     "fr": "acier inox",
     "it": "acciaio inox",
-    "en": "Stainless steel"
+    "en": "Stainless steel",
+    "es": "Acero inoxidable"
   },
   "Elektrolyt-Reinigung": {
     "fr": "nettoyage électrolytique",
     "it": "pulizia elettrolitica",
     "de": "Elektrolytische Reinigung",
-    "en": "Electrolytic cleaning"
+    "en": "Electrolytic cleaning",
+    "es": "Limpieza electrolítica"
   },
   "Elektrolyt-Signieren": {
     "fr": "marquage électrolytique",
     "it": "marcatura elettrolitica",
     "de": "Elektrolytisches Signieren",
-    "en": "Electrolytic marking"
+    "en": "Electrolytic marking",
+    "es": "Marcado electrolítico"
   },
   "Feinblech bis Industrie": {
     "fr": "de la tôle fine aux applications industrielles",
     "it": "dalle lamiere sottili alle applicazioni industriali",
     "de": "Feinblech und Industrieanwendungen",
-    "en": "Thin sheet to industrial applications"
+    "en": "Thin sheet to industrial applications",
+    "es": "De chapa fina a aplicaciones industriales"
   },
   "Fussfernregler": {
     "fr": "commande à pédale",
     "it": "comando a pedale",
-    "en": "Foot remote control"
+    "en": "Foot remote control",
+    "es": "Mando a distancia de pedal"
   },
   "Gasventil am Brenner": {
     "fr": "vanne de gaz sur la torche",
     "it": "valvola del gas sulla torcia",
-    "en": "Gas valve on the torch"
+    "en": "Gas valve on the torch",
+    "es": "Válvula de gas en la antorcha"
   },
   "Handfernregler": {
     "fr": "télécommande manuelle",
     "it": "telecomando manuale",
-    "en": "Hand remote control"
+    "en": "Hand remote control",
+    "es": "Mando a distancia manual"
   },
   "HyperCleaner-Serie": {
     "fr": "série HyperCleaner",
     "it": "serie HyperCleaner",
-    "en": "HyperCleaner series"
+    "en": "HyperCleaner series",
+    "es": "Serie HyperCleaner"
   },
   "JOB-Programme": {
     "fr": "programmes JOB",
     "it": "programmi JOB",
-    "en": "JOB programs"
+    "en": "JOB programs",
+    "es": "Programas JOB"
   },
   "Kalibrieren / Validieren": {
     "fr": "étalonnage / validation",
     "it": "calibrazione / validazione",
-    "en": "Calibration / validation"
+    "en": "Calibration / validation",
+    "es": "Calibración / validación"
   },
   "Kompakt/fahrbar": {
     "fr": "compact / mobile",
     "it": "compatto / mobile",
     "de": "kompakt / fahrbar",
-    "en": "Compact / mobile"
+    "en": "Compact / mobile",
+    "es": "Compacto / móvil"
   },
   "MAHE WIG": {
     "fr": "MAHE TIG",
     "it": "MAHE TIG",
-    "en": "MAHE TIG"
+    "en": "MAHE TIG",
+    "es": "MAHE TIG"
   },
   "MAHE WIG · MMA": {
     "fr": "MAHE TIG · MMA",
     "it": "MAHE TIG · MMA",
-    "en": "MAHE TIG · MMA"
+    "en": "MAHE TIG · MMA",
+    "es": "MAHE TIG · MMA"
   },
   "MIG/MAG gasgekühlt": {
     "fr": "MIG/MAG refroidi au gaz",
     "it": "MIG/MAG raffreddato a gas",
-    "en": "Gas-cooled MIG/MAG"
+    "en": "Gas-cooled MIG/MAG",
+    "es": "MIG/MAG refrigerado por gas"
   },
   "MIG/MAG · Puls · MMA · WIG": {
     "fr": "MIG/MAG · pulsé · MMA · TIG",
     "it": "MIG/MAG · pulsato · MMA · TIG",
-    "en": "MIG/MAG · pulse · MMA · TIG"
+    "en": "MIG/MAG · pulse · MMA · TIG",
+    "es": "MIG/MAG · pulsado · MMA · TIG"
   },
   "MMA (Elektrode)": {
     "fr": "MMA (électrode)",
     "it": "MMA (elettrodo)",
-    "en": "MMA (stick electrode)"
+    "en": "MMA (stick electrode)",
+    "es": "MMA (electrodo revestido)"
   },
   "MMA · Unterwasser": {
     "fr": "MMA · sous-marin",
     "it": "MMA · subacqueo",
-    "en": "MMA · underwater"
+    "en": "MMA · underwater",
+    "es": "MMA · subacuática"
   },
   "MMA · WIG": {
     "fr": "MMA · TIG",
     "it": "MMA · TIG",
-    "en": "MMA · TIG"
+    "en": "MMA · TIG",
+    "es": "MMA · TIG"
   },
   "MMA · WIG-Lift": {
     "fr": "MMA · TIG-Lift",
     "it": "MMA · TIG-Lift",
-    "en": "MMA · TIG Lift"
+    "en": "MMA · TIG Lift",
+    "es": "MMA · TIG Lift"
   },
   "MMS 3000 Serie": {
     "fr": "série MMS 3000",
     "it": "serie MMS 3000",
     "de": "MMS-3000-Serie",
-    "en": "MMS 3000 series"
+    "en": "MMS 3000 series",
+    "es": "Serie MMS 3000"
   },
   "Montage / Werkstatt": {
     "fr": "montage / atelier",
     "it": "montaggio / officina",
-    "en": "Site work / workshop"
+    "en": "Site work / workshop",
+    "es": "Trabajos en obra / taller"
   },
   "Montage/Werkstatt": {
     "fr": "montage / atelier",
     "it": "montaggio / officina",
-    "en": "Site work / workshop"
+    "en": "Site work / workshop",
+    "es": "Trabajos en obra / taller"
   },
   "Plasma / Mikroplasma": {
     "fr": "plasma / microplasma",
     "it": "plasma / microplasma",
-    "en": "Plasma / microplasma"
+    "en": "Plasma / microplasma",
+    "es": "Plasma / microplasma"
   },
   "Plasmaschneidbrenner": {
     "fr": "torche de coupe plasma",
     "it": "torcia da taglio al plasma",
-    "en": "Plasma cutting torch"
+    "en": "Plasma cutting torch",
+    "es": "Antorcha de corte por plasma"
   },
   "Plasmaschneiden": {
     "fr": "découpe plasma",
     "it": "taglio al plasma",
-    "en": "Plasma cutting"
+    "en": "Plasma cutting",
+    "es": "Corte por plasma"
   },
   "Plasmaschneiden · Automation": {
     "fr": "découpe plasma · automatisation",
     "it": "taglio al plasma · automazione",
-    "en": "Plasma cutting · automation"
+    "en": "Plasma cutting · automation",
+    "es": "Corte por plasma · automatización"
   },
   "Reinigungsflüssigkeit": {
     "fr": "liquide de nettoyage",
     "it": "liquido di pulizia",
-    "en": "Cleaning fluid"
+    "en": "Cleaning fluid",
+    "es": "Líquido de limpieza"
   },
   "Set mit Koffer": {
     "fr": "kit avec mallette",
     "it": "set con valigetta",
-    "en": "Set with case"
+    "en": "Set with case",
+    "es": "Conjunto con maletín"
   },
   "Set mit Stromquelle": {
     "fr": "ensemble avec source de courant",
     "it": "set con generatore",
-    "en": "Set with power source"
+    "en": "Set with power source",
+    "es": "Conjunto con fuente de corriente"
   },
   "Stromquelle mit Vorschubkoffer": {
     "fr": "source de courant et dévidoir",
     "it": "generatore e trainafilo",
-    "en": "Power source with wire feeder"
+    "en": "Power source with wire feeder",
+    "es": "Fuente de corriente con alimentador de hilo"
   },
   "Tropfschutz": {
     "fr": "protection anti-gouttes",
     "it": "protezione antigoccia",
-    "en": "Drip protection"
+    "en": "Drip protection",
+    "es": "Protección antigoteo"
   },
   "Universalkühler": {
     "fr": "refroidisseur universel",
     "it": "refrigeratore universale",
-    "en": "Universal cooling unit"
+    "en": "Universal cooling unit",
+    "es": "Unidad de refrigeración universal"
   },
   "Vollmetall": {
     "fr": "tout métal",
     "it": "interamente in metallo",
-    "en": "All-metal"
+    "en": "All-metal",
+    "es": "Totalmente metálico"
   },
   "Volt & Ampere (gross)": {
     "fr": "tension et courant (grands afficheurs)",
     "it": "Volt & Ampere (grande)",
-    "en": "Voltage & current (large display)"
+    "en": "Voltage & current (large display)",
+    "es": "Tensión y corriente (pantalla grande)"
   },
   "WIG + Reinigung": {
     "fr": "TIG + nettoyage",
     "it": "TIG + pulizia",
-    "en": "TIG + cleaning"
+    "en": "TIG + cleaning",
+    "es": "TIG + limpieza"
   },
   "WIG AC/DC": {
     "fr": "TIG AC/DC",
     "it": "TIG AC/DC",
-    "en": "TIG AC/DC"
+    "en": "TIG AC/DC",
+    "es": "TIG AC/DC"
   },
   "WIG DC": {
     "fr": "TIG DC",
     "it": "TIG DC",
-    "en": "TIG DC"
+    "en": "TIG DC",
+    "es": "TIG DC"
   },
   "WIG gasgekühlt": {
     "fr": "TIG refroidi au gaz",
     "it": "TIG raffreddato a gas",
-    "en": "Gas-cooled TIG"
+    "en": "Gas-cooled TIG",
+    "es": "TIG refrigerado por gas"
   },
   "WIG wassergekühlt": {
     "fr": "TIG refroidi à l’eau",
     "it": "TIG raffreddato ad acqua",
-    "en": "Water-cooled TIG"
+    "en": "Water-cooled TIG",
+    "es": "TIG refrigerado por agua"
   },
   "Wasserkühlgerät": {
     "fr": "refroidisseur à eau",
     "it": "refrigeratore ad acqua",
-    "en": "Water cooling unit"
+    "en": "Water cooling unit",
+    "es": "Unidad de refrigeración por agua"
   },
   "Wassermangel-Abschaltung": {
     "fr": "arrêt en cas de manque d’eau",
     "it": "spegnimento in caso di mancanza d’acqua",
-    "en": "Low-water shutdown"
+    "en": "Low-water shutdown",
+    "es": "Desconexión por nivel de agua bajo"
   },
   "als Set": {
     "fr": "en kit",
     "it": "in set",
-    "en": "As a set"
+    "en": "As a set",
+    "es": "En conjunto"
   },
   "automatische Dosierung": {
     "fr": "dosage automatique",
     "it": "dosaggio automatico",
-    "en": "Automatic dosing"
+    "en": "Automatic dosing",
+    "es": "Dosificación automática"
   },
   "blau": {
     "fr": "bleu",
     "it": "blu",
-    "en": "Blue"
+    "en": "Blue",
+    "es": "Azul"
   },
   "digital": {
     "fr": "numérique",
     "it": "digitale",
-    "en": "Digital"
+    "en": "Digital",
+    "es": "Digital"
   },
   "einfach": {
     "fr": "simple",
     "it": "semplice",
-    "en": "Simple"
+    "en": "Simple",
+    "es": "Sencillo"
   },
   "fest in der Maschine verbaut": {
     "fr": "montée à demeure dans la machine",
     "it": "montata fissa nella macchina",
-    "en": "Built into the machine"
+    "en": "Built into the machine",
+    "es": "Integrado en la máquina"
   },
   "horizontal": {
     "fr": "horizontal",
     "it": "orizzontale",
-    "en": "Horizontal"
+    "en": "Horizontal",
+    "es": "Horizontal"
   },
   "inklusive": {
     "fr": "inclus",
     "it": "incluso",
-    "en": "Included"
+    "en": "Included",
+    "es": "Incluido"
   },
   "ja": {
     "fr": "oui",
     "it": "sì",
-    "en": "Yes"
+    "en": "Yes",
+    "es": "Sí"
   },
   "leicht / tragbar": {
     "fr": "léger / portable",
     "it": "leggero / portatile",
-    "en": "Lightweight / portable"
+    "en": "Lightweight / portable",
+    "es": "Ligero / portátil"
   },
   "luft-/wassergekühlt": {
     "fr": "refroidi par air/eau",
     "it": "raffreddato ad aria/acqua",
     "de": "luftgekühlt oder wassergekühlt",
-    "en": "Air-cooled or water-cooled"
+    "en": "Air-cooled or water-cooled",
+    "es": "Refrigerado por aire o por agua"
   },
   "mobil": {
     "fr": "mobile",
     "it": "mobile",
-    "en": "Mobile"
+    "en": "Mobile",
+    "es": "Móvil"
   },
   "nein": {
     "fr": "non",
     "it": "no",
-    "en": "No"
+    "en": "No",
+    "es": "No"
   },
   "schwarz": {
     "fr": "noir",
     "it": "nero",
-    "en": "Black"
+    "en": "Black",
+    "es": "Negro"
   },
   "tragbar": {
     "fr": "portable",
     "it": "portatile",
-    "en": "Portable"
+    "en": "Portable",
+    "es": "Portátil"
   },
   "wahlweise mit Potentiometer": {
     "fr": "au choix avec potentiomètre",
     "it": "a scelta con potenziometro",
-    "en": "Optionally with potentiometer"
+    "en": "Optionally with potentiometer",
+    "es": "Opcionalmente con potenciómetro"
   },
   "wahlweise mit Up/Down": {
     "fr": "au choix avec Up/Down",
     "it": "a scelta con Up/Down",
-    "en": "Optionally with Up/Down"
+    "en": "Optionally with Up/Down",
+    "es": "Opcionalmente con Up/Down"
   },
   "wassergekühlt": {
     "fr": "refroidi par eau",
     "it": "raffreddato ad acqua",
-    "en": "Water-cooled"
+    "en": "Water-cooled",
+    "es": "Refrigerado por agua"
   },
   "wassergekühlt (CWK)": {
     "fr": "refroidi par eau (CWK)",
     "it": "raffreddato ad acqua (CWK)",
-    "en": "Water-cooled (CWK)"
+    "en": "Water-cooled (CWK)",
+    "es": "Refrigerado por agua (CWK)"
   },
   "MIG/MAG wassergekühlt": {
     "fr": "MIG/MAG refroidi par eau",
     "it": "MIG/MAG raffreddato ad acqua",
-    "en": "Water-cooled MIG/MAG"
+    "en": "Water-cooled MIG/MAG",
+    "es": "MIG/MAG refrigerado por agua"
   },
   "Reinigung (Rapid)": {
     "fr": "Nettoyage (Rapid)",
     "it": "Pulizia (Rapid)",
-    "en": "Cleaning (Rapid)"
+    "en": "Cleaning (Rapid)",
+    "es": "Limpieza (Rapid)"
   },
   "Reinigung (pastös)": {
     "fr": "Nettoyage (pâteux)",
     "it": "Pulizia (pastoso)",
-    "en": "Cleaning (paste)"
+    "en": "Cleaning (paste)",
+    "es": "Limpieza (pasta)"
   },
   "Polieren / Beizen": {
     "fr": "Polissage / décapage",
     "it": "Lucidatura / decapaggio",
-    "en": "Polishing / pickling"
+    "en": "Polishing / pickling",
+    "es": "Pulido / decapado"
   },
   "Neutralisierer": {
     "fr": "Neutralisant",
     "it": "Neutralizzante",
-    "en": "Neutraliser"
+    "en": "Neutraliser",
+    "es": "Neutralizante"
   },
   "nach Reinigung": {
     "fr": "après nettoyage",
     "it": "dopo la pulizia",
-    "en": "After cleaning"
+    "en": "After cleaning",
+    "es": "Después de la limpieza"
   },
   "Signieren": {
     "fr": "Marquage électrolytique",
     "it": "Marcatura elettrolitica",
-    "en": "Electrolytic marking"
+    "en": "Electrolytic marking",
+    "es": "Marcado electrolítico"
   },
   "Markieren": {
     "fr": "Marquage",
     "it": "Marcatura",
-    "en": "Marking"
+    "en": "Marking",
+    "es": "Marcado"
   },
   "0,08 – 50 A bei 100 % ED": {
     "fr": "0,08 – 50 A à 100 % de facteur de marche",
     "it": "0,08 – 50 A al 100 % del ciclo di lavoro",
-    "en": "0.08 – 50 A at 100 % duty cycle"
+    "en": "0.08 – 50 A at 100 % duty cycle",
+    "es": "0,08 – 50 A al 100 % del ciclo de trabajo"
   },
   "0,8 – 50 A bei 60 % ED": {
     "fr": "0,8 – 50 A à 60 % de facteur de marche",
     "it": "0,8 – 50 A al 60 % del ciclo di lavoro",
-    "en": "0.8 – 50 A at 60 % duty cycle"
+    "en": "0.8 – 50 A at 60 % duty cycle",
+    "es": "0,8 – 50 A al 60 % del ciclo de trabajo"
   },
   "6 A bei 400 V": {
     "fr": "6 A sous 400 V",
     "it": "6 A a 400 V",
-    "en": "6 A at 400 V"
+    "en": "6 A at 400 V",
+    "es": "6 A a 400 V"
   },
   "Hochfrequenz, eingebaut": {
     "fr": "Haute fréquence, intégrée",
     "it": "Alta frequenza, integrata",
-    "en": "High frequency, built in"
+    "en": "High frequency, built in",
+    "es": "Alta frecuencia integrada"
   },
   "über Kühlgerät": {
     "fr": "par groupe de refroidissement",
     "it": "tramite gruppo di raffreddamento",
-    "en": "Via cooling unit"
+    "en": "Via cooling unit",
+    "es": "Mediante unidad de refrigeración"
   },
   "Tasten und Codes, LCD-Anzeige": {
     "fr": "Touches et codes, afficheur LCD",
     "it": "Tasti e codici, display LCD",
-    "en": "Keys and codes, LCD display"
+    "en": "Keys and codes, LCD display",
+    "es": "Teclas y códigos, pantalla LCD"
   },
   "Mikroplasma · WIG, geglättet und gepulst": {
     "fr": "Microplasma · TIG, en courant lisse et pulsé",
     "it": "Microplasma · TIG, livellato e pulsato",
-    "en": "Microplasma · TIG, smooth and pulsed current"
+    "en": "Microplasma · TIG, smooth and pulsed current",
+    "es": "Microplasma · TIG, corriente no pulsada y pulsada"
   },
   "Mikroplasma, geglättet und gepulst": {
     "fr": "Microplasma, en courant lisse et pulsé",
     "it": "Microplasma, livellato e pulsato",
-    "en": "Microplasma, smooth and pulsed current"
+    "en": "Microplasma, smooth and pulsed current",
+    "es": "Microplasma, corriente no pulsada y pulsada"
   },
   "3~ 208 – 460 V · 50/60 Hz": {
     "fr": "3~ 208 – 460 V · 50/60 Hz",
     "it": "3~ 208 – 460 V · 50/60 Hz",
-    "en": "3~ 208 – 460 V · 50/60 Hz"
+    "en": "3~ 208 – 460 V · 50/60 Hz",
+    "es": "3~ 208 – 460 V · 50/60 Hz"
   },
   "MIG/MAG · HyperPuls · Doppelpuls · MMA · WIG": {
     "fr": "MIG/MAG · HyperPuls · double pulsation · MMA · TIG",
     "it": "MIG/MAG · HyperPuls · doppio impulso · MMA · TIG",
-    "en": "MIG/MAG · HyperPuls · double pulse · MMA · TIG"
+    "en": "MIG/MAG · HyperPuls · double pulse · MMA · TIG",
+    "es": "MIG/MAG · HyperPuls · doble pulsado · MMA · TIG"
   },
   "Synergic / JOB (99)": {
     "de": "Synergie / JOB (99)",
     "fr": "Synergique / JOB (99)",
     "it": "Sinergico / JOB (99)",
-    "en": "Synergic / JOB (99)"
+    "en": "Synergic / JOB (99)",
+    "es": "Sinérgico / JOB (99)"
   },
   "Diving / Offshore": {
     "fr": "Plongée / offshore",
     "it": "Immersioni / offshore",
-    "en": "Diving / offshore"
+    "en": "Diving / offshore",
+    "es": "Buceo / instalaciones marinas"
   },
   "Up/Down · Start/Stopp": {
     "fr": "Up/Down · Start/Stop",
     "it": "Up/Down · Start/Stop",
-    "en": "Up/Down · Start/Stop"
+    "en": "Up/Down · Start/Stop",
+    "es": "Up/Down · Start/Stop"
   },
   "10 – 600 A, je Modell": {
     "fr": "10 – 600 A selon le modèle",
     "it": "10 – 600 A secondo il modello",
-    "en": "10 – 600 A, depending on model"
+    "en": "10 – 600 A, depending on model",
+    "es": "10 – 600 A, según el modelo"
   },
   "20 A / 32 A, je Modell": {
     "fr": "20 A / 32 A selon le modèle",
     "it": "20 A / 32 A secondo il modello",
-    "en": "20 A / 32 A, depending on model"
+    "en": "20 A / 32 A, depending on model",
+    "es": "20 A / 32 A, según el modelo"
   },
   "je Modell, siehe Tabelle": {
     "fr": "selon le modèle, voir le tableau",
     "it": "secondo il modello, vedere la tabella",
-    "en": "Depending on model, see table"
+    "en": "Depending on model, see table",
+    "es": "Según el modelo, véase la tabla"
   },
   "65 – 92 kg, je Ausführung": {
     "fr": "65 – 92 kg selon la version",
     "it": "65 – 92 kg secondo la versione",
-    "en": "65 – 92 kg, depending on version"
+    "en": "65 – 92 kg, depending on version",
+    "es": "65 – 92 kg, según la versión"
   },
   "MIG/MAG · MMA · WIG Lift Arc": {
     "fr": "MIG/MAG · MMA · TIG Lift Arc",
     "it": "MIG/MAG · MMA · TIG Lift Arc",
-    "en": "MIG/MAG · MMA · TIG Lift Arc"
+    "en": "MIG/MAG · MMA · TIG Lift Arc",
+    "es": "MIG/MAG · MMA · TIG Lift Arc"
   },
   "500 A bei 60 % ED": {
     "fr": "500 A à 60 % de facteur de marche",
     "it": "500 A al 60 % di ciclo di lavoro",
-    "en": "500 A at 60 % duty cycle"
+    "en": "500 A at 60 % duty cycle",
+    "es": "500 A al 60 % del ciclo de trabajo"
   },
   "Grafikdisplay": {
     "fr": "Écran graphique",
     "it": "Display grafico",
-    "en": "Graphic display"
+    "en": "Graphic display",
+    "es": "Pantalla gráfica"
   },
   "Fernbedienung am Brenner": {
     "fr": "Commande à distance sur la torche",
     "it": "Comando a distanza sulla torcia",
-    "en": "Remote control on the torch"
+    "en": "Remote control on the torch",
+    "es": "Mando a distancia en la antorcha"
   }
 }

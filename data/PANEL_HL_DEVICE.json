@@ -39,6 +39,16 @@
       "MMA stick welding",
       "TIG Lift Arc",
       "JOB mode with 99 programs"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura pulsada",
+      "Soldadura con doble pulsado",
+      "Soldadura fuerte MIG",
+      "Hyper Force, Root, Cold",
+      "Soldadura MMA con electrodo revestido",
+      "TIG Lift Arc",
+      "Modo JOB con 99 programas"
     ]
   },
   "hypermig_hx": {
@@ -97,6 +107,20 @@
       "MMA stick welding",
       "TIG Lift Arc and gouging",
       "99 programs in JOB mode"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura pulsada",
+      "Soldadura con doble pulsado",
+      "Soldadura fuerte MIG",
+      "Soldadura HyperPuls",
+      "Soldadura HyperForce",
+      "Soldadura HyperCold",
+      "Soldadura HyperRoot",
+      "Soldadura HyperUP",
+      "Soldadura MMA con electrodo revestido",
+      "TIG Lift Arc y ranurado por arco",
+      "99 programas en modo JOB"
     ]
   },
   "hypermig_sx": {
@@ -139,6 +163,16 @@
       "HyperUP welding",
       "TIG Lift Arc welding",
       "MMA welding"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura HyperPuls",
+      "Soldadura HyperCold",
+      "Soldadura HyperRoot",
+      "Soldadura HyperForce",
+      "Soldadura HyperUP",
+      "Soldadura TIG Lift Arc",
+      "Soldadura MMA"
     ]
   },
   "omega_pro": {
@@ -181,6 +215,16 @@
       "LF pulse",
       "Active Boost",
       "Remote control"
+    ],
+    "es": [
+      "Hyper Arc Active",
+      "HyperSpot",
+      "AC Mix TIG",
+      "Pulsado de 20 kHz",
+      "Pulsado HF",
+      "Pulsado LF",
+      "Active Boost",
+      "Mando a distancia"
     ]
   },
   "omega_syn": {
@@ -203,6 +247,11 @@
       "Autopulse",
       "Active Boost",
       "Remote control"
+    ],
+    "es": [
+      "Pulsado automático",
+      "Active Boost",
+      "Mando a distancia"
     ]
   },
   "betadx_pro": {
@@ -241,6 +290,15 @@
       "LF pulse",
       "Active Boost",
       "Remote control"
+    ],
+    "es": [
+      "Hyper Arc Active",
+      "HyperSpot",
+      "Pulsado de 20 kHz",
+      "Pulsado HF",
+      "Pulsado LF",
+      "Active Boost",
+      "Mando a distancia"
     ]
   },
   "betadx_syn": {
@@ -263,6 +321,11 @@
       "Autopulse",
       "Active Boost",
       "Remote control"
+    ],
+    "es": [
+      "Pulsado automático",
+      "Active Boost",
+      "Mando a distancia"
     ]
   },
   "betadig_profi": {
@@ -297,6 +360,14 @@
       "Beta TIG Active Boost",
       "MMA welding",
       "Remote control"
+    ],
+    "es": [
+      "Beta TIG Active Arc",
+      "Beta TIG Spot Arc",
+      "Beta TIG HF Puls",
+      "Beta TIG Active Boost",
+      "Soldadura MMA",
+      "Mando a distancia"
     ]
   },
   "betadig_syn": {
@@ -319,6 +390,12 @@
       "Spot Arc"
     ],
     "en": [
+      "Beta TIG Active Boost",
+      "Beta TIG Auto Puls",
+      "Beta TIG Easy Use",
+      "Spot Arc"
+    ],
+    "es": [
       "Beta TIG Active Boost",
       "Beta TIG Auto Puls",
       "Beta TIG Easy Use",
@@ -373,6 +450,18 @@
       "Remote control on/off",
       "HF or Lift Arc starting",
       "AC welding (TIG and MMA)"
+    ],
+    "es": [
+      "Manejo con un solo mando",
+      "Guía de manejo clara",
+      "Curvas sinérgicas",
+      "Curva Hyper-Arc-Active de serie",
+      "Curva HyperSpot de serie",
+      "Curva ActiveSpot de serie",
+      "Pulsado de alta frecuencia de serie",
+      "Activación y desactivación del mando a distancia",
+      "Encendido HF o Lift Arc",
+      "Soldadura AC (TIG y MMA)"
     ]
   },
   "hypertig_dx": {
@@ -419,6 +508,17 @@
       "Remote control on/off",
       "HF or Lift Arc starting",
       "MMA welding"
+    ],
+    "es": [
+      "Manejo con un solo mando",
+      "Guía de manejo clara",
+      "Curva Hyper-Arc-Active de serie",
+      "Curva HyperSpot de serie",
+      "Curva ActiveSpot de serie",
+      "Pulsado de alta frecuencia de serie",
+      "Activación y desactivación del mando a distancia",
+      "Encendido HF o Lift Arc",
+      "Soldadura MMA"
     ]
   },
   "hypertig_acdc": {
@@ -469,6 +569,18 @@
       "HF or Lift Arc starting",
       "DC+ and DC- welding (MMA)",
       "AC welding (MMA)"
+    ],
+    "es": [
+      "Manejo con un solo mando",
+      "Guía de manejo clara",
+      "Curvas sinérgicas",
+      "Curva Hyper-Arc-Active de serie",
+      "Curva HyperSpot de serie",
+      "Pulsado de alta frecuencia de serie",
+      "Activación y desactivación del mando a distancia",
+      "Encendido HF o Lift Arc",
+      "Soldadura DC+ y DC- (MMA)",
+      "Soldadura AC (MMA)"
     ]
   },
   "ct200_panel": {
@@ -511,6 +623,16 @@
       "Remote control",
       "Cleaning, polishing and marking",
       "JOB mode"
+    ],
+    "es": [
+      "Beta TIG Active Arc",
+      "Beta TIG Spot Arc",
+      "Beta TIG HF Puls",
+      "Beta TIG Active Boost",
+      "Soldadura MMA",
+      "Mando a distancia",
+      "Limpieza, pulido y marcado",
+      "Modo JOB"
     ]
   },
   "ct200_syn": {
@@ -541,6 +663,13 @@
       "Beta TIG Easy Use",
       "Spot Arc",
       "Cleaning, polishing and marking"
+    ],
+    "es": [
+      "Beta TIG Active Boost",
+      "Beta TIG Auto Puls",
+      "Beta TIG Easy Use",
+      "Spot Arc",
+      "Limpieza, pulido y marcado"
     ]
   },
   "ecomig_analog": {
@@ -567,6 +696,12 @@
       "MMA stick welding",
       "TIG Lift Arc welding",
       "Electronic inductance"
+    ],
+    "es": [
+      "Puntos e intervalos",
+      "Soldadura MMA con electrodo revestido",
+      "Soldadura TIG Lift Arc",
+      "Inductancia electrónica"
     ]
   },
   "ecomig_low": {
@@ -597,6 +732,13 @@
       "Synergically controlled",
       "MMA welding",
       "TIG Lift Arc welding"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Puntos e intervalos",
+      "Control sinérgico",
+      "Soldadura MMA",
+      "Soldadura TIG Lift Arc"
     ]
   },
   "ecomig_2000": {
@@ -615,6 +757,10 @@
     "en": [
       "MIS welding",
       "Synergically controlled"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Control sinérgico"
     ]
   },
   "mms_light": {
@@ -629,6 +775,9 @@
     ],
     "en": [
       "MIS welding in synergic mode"
+    ],
+    "es": [
+      "Soldadura MIS en modo sinérgico"
     ]
   },
   "mms_ecomig": {
@@ -663,6 +812,14 @@
       "MMA stick welding",
       "JOB mode with 99 programs",
       "MMA welding"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Hyper Cold, Root, Force",
+      "TIG Lift Arc",
+      "Soldadura MMA con electrodo revestido",
+      "Modo JOB con 99 programas",
+      "Soldadura MMA"
     ]
   },
   "mms_ecopuls": {
@@ -705,6 +862,16 @@
       "MMA stick welding",
       "JOB mode with 99 programs",
       "MMA welding"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura pulsada",
+      "Soldadura con doble pulsado",
+      "Hyper Force, Cold, Root",
+      "TIG Lift Arc",
+      "Soldadura MMA con electrodo revestido",
+      "Modo JOB con 99 programas",
+      "Soldadura MMA"
     ]
   },
   "hypermig_ecomig": {
@@ -739,6 +906,14 @@
       "MMA stick welding",
       "TIG Lift Arc",
       "JOB mode with 99 programs"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura fuerte MIG",
+      "Hyper Force, Root, Cold",
+      "Soldadura MMA con electrodo revestido",
+      "TIG Lift Arc",
+      "Modo JOB con 99 programas"
     ]
   },
   "hypermig_steel": {
@@ -773,6 +948,14 @@
       "HyperForce welding",
       "TIG Lift Arc welding",
       "MMA welding"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura HyperCold",
+      "Soldadura HyperRoot",
+      "Soldadura HyperForce",
+      "Soldadura TIG Lift Arc",
+      "Soldadura MMA"
     ]
   },
   "hypermig_x_graphic": {
@@ -831,6 +1014,20 @@
       "MMA stick welding",
       "TIG Lift Arc and gouging",
       "99 programs in JOB mode"
+    ],
+    "es": [
+      "Soldadura MIS",
+      "Soldadura pulsada",
+      "Soldadura con doble pulsado",
+      "Soldadura fuerte MIG",
+      "Soldadura HyperPuls",
+      "Soldadura HyperForce",
+      "Soldadura HyperCold",
+      "Soldadura HyperRoot",
+      "Soldadura HyperUP",
+      "Soldadura MMA con electrodo revestido",
+      "TIG Lift Arc y ranurado por arco",
+      "99 programas en modo JOB"
     ]
   }
 }

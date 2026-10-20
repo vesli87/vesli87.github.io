@@ -5,13 +5,15 @@
     "de": "Generalüberholt (Ausführungen 51 und P+T). Alle sind komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt.",
     "fr": "Entièrement révisées (versions 51 et P+T). Toutes ont été remises en état ; le système de refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
     "it": "Completamente revisionate (versioni 51 e P+T). Tutte sono state ripristinate; il sistema di raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito.",
-    "en": "Refurbished (51 and P+T versions). All have been fully overhauled; the water cooling system, including pump and hoses, has been replaced."
+    "en": "Refurbished (51 and P+T versions). All have been fully overhauled; the water cooling system, including pump and hoses, has been replaced.",
+    "es": "Reacondicionados (versiones 51 y P+T). Todos se han revisado por completo y se ha sustituido el sistema de refrigeración por agua, incluida la bomba y las mangueras."
   },
   "plasmafix-50s": {
     "grad": "refurbished",
     "de": "Generalüberholt. Die Anlage ist komplett revidiert; die Wasserkühlung samt Pumpe und Schläuchen wurde ersetzt.",
     "fr": "Entièrement révisée. La machine a été complètement remise en état ; le système de refroidissement par eau, pompe et tuyaux compris, a été remplacé.",
     "it": "Completamente revisionata. La macchina è stata interamente ripristinata; il sistema di raffreddamento ad acqua, pompa e tubi compresi, è stato sostituito.",
-    "en": "Refurbished. The system has been fully overhauled; the water cooling system, including pump and hoses, has been replaced."
+    "en": "Refurbished. The system has been fully overhauled; the water cooling system, including pump and hoses, has been replaced.",
+    "es": "Reacondicionado. El sistema se ha revisado por completo y se ha sustituido el sistema de refrigeración por agua, incluida la bomba y las mangueras."
   }
 }

@@ -220,6 +220,61 @@
           "a": "Used equipment has no manufacturer warranty. Statutory warranty rights apply; the written quotation specifies the period agreed for each system. Details are set out in the terms and conditions."
         }
       ]
+    },
+    "es": {
+      "abschnitte": [
+        {
+          "h": "Para qué está diseñado PlasmaFix 51",
+          "p": [
+            "El microplasma es soldadura por plasma para materiales muy finos. El arco se constriñe en una boquilla refrigerada por agua y se mantiene estable con una fracción de amperio, donde un arco TIG no constreñido se extinguiría. El aporte térmico es bajo y localizado, lo que ayuda a limitar la deformación; el cordón suele necesitar poco acabado posterior.",
+            "PlasmaFix 51 empieza a soldar a 0,08 A. Su campo de aplicación abarca láminas y chapas desde 0,06 mm hasta aproximadamente 1 mm; por encima suele ser más adecuado TIG. Los trabajos habituales incluyen tubos capilares, membranas, fuelles, termopares, mallas y tamices metálicos, filtros, pequeños componentes de instrumentación y médicos, intercambiadores de calor y joyería. Los materiales adecuados incluyen acero inoxidable, aleaciones de níquel, aleaciones de cobre-níquel, titanio, tantalio, circonio, plata y oro. Este proceso no es adecuado para aluminio ni sus aleaciones."
+          ]
+        },
+        {
+          "h": "Versiones 51 y P+T",
+          "p": [
+            "Ambas versiones pertenecen a la serie 51, comercializada por el fabricante SAF como NERTAMATIC 51. P+T significa Plasma + TIG y describe las posibilidades de la gama: soldadura por microplasma de 0,08 a 50 A o TIG de precisión de 0,8 a 50 A, con corriente no pulsada o pulsada de 1 Hz a 10 kHz. El manejo utiliza teclas y pantalla LCD, permite guardar 100 programas de soldadura e incorpora encendido de alta frecuencia."
+          ]
+        },
+        {
+          "h": "Qué incluye una instalación completa",
+          "p": [
+            "Una instalación completa de microplasma de esta gama consta de fuente de corriente, antorcha SP 45 refrigerada por agua para soldadura manual o mecanizada, unidad de refrigeración REFRISAF 51 y dos reguladores de presión con caudalímetros para gas de plasma y gas de protección. Como gas de plasma se utiliza argón puro; según el material, el gas de protección exterior es argón con un 5 % de hidrógeno o helio. La oferta escrita especifica el suministro de cada instalación. Para boquillas, electrodos y otros consumibles comprobamos las posibilidades actuales de adquisición con el tipo exacto de antorcha y la denominación de pieza. Incluya esos datos en su consulta."
+          ]
+        },
+        {
+          "h": "Reacondicionados y revisados en Herisau",
+          "p": [
+            "Los sistemas de la fotografía de grupo se revisaron por completo en el taller de Herisau y se sustituyó la refrigeración por agua, incluida la bomba y las mangueras. Cada sistema se revisa antes de entregarse y se demuestra durante la visita. El asesoramiento lo presta el técnico que reacondicionó los equipos. La oferta escrita especifica la garantía de cada instalación según nuestras condiciones generales."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Qué es la soldadura por microplasma?",
+          "a": "Una forma de soldadura por plasma para materiales muy finos. El arco se constriñe en una boquilla refrigerada y se mantiene estable desde aproximadamente 0,1 A. El aporte térmico es bajo, lo que ayuda a limitar la deformación de la pieza."
+        },
+        {
+          "q": "¿Qué espesores puede soldar PlasmaFix 51?",
+          "a": "Láminas y chapas desde 0,06 mm hasta aproximadamente 1 mm; por ejemplo, acero inoxidable, aleaciones de níquel, titanio, tantalio, plata u oro. El proceso no es adecuado para aluminio; para chapas más gruesas, TIG es una opción mejor."
+        },
+        {
+          "q": "¿Qué significa P+T en los equipos PlasmaFix?",
+          "a": "Plasma + TIG. El sistema suelda en microplasma de 0,08 a 50 A y en TIG de 0,8 a 50 A, con corriente no pulsada o pulsada de hasta 10 kHz."
+        },
+        {
+          "q": "¿Qué se hizo durante el reacondicionamiento?",
+          "a": "Los sistemas de la fotografía de grupo se revisaron por completo y se sustituyó la refrigeración por agua, incluida la bomba y las mangueras. Cada sistema se revisa y demuestra antes de entregarse."
+        },
+        {
+          "q": "¿Puedo ver el sistema antes de comprarlo?",
+          "a": "Sí. Puede ver el sistema y su demostración en el taller de Herisau AR con cita previa. Concierte la visita por teléfono o mediante el formulario de contacto."
+        },
+        {
+          "q": "¿Los equipos usados tienen garantía?",
+          "a": "Los equipos usados no tienen garantía del fabricante. Se aplican los derechos de garantía legal; la oferta escrita especifica el plazo acordado para cada instalación. Los detalles figuran en las condiciones generales."
+        }
+      ]
     }
   },
   "plasmafix-50s": {
@@ -372,6 +427,44 @@
         {
           "q": "Does used equipment have a warranty?",
           "a": "Used equipment has no manufacturer warranty. Statutory warranty rights apply; the written quotation specifies the agreed period. Details are set out in the terms and conditions."
+        }
+      ]
+    },
+    "es": {
+      "abschnitte": [
+        {
+          "h": "Para qué está diseñado PlasmaFix 50 S",
+          "p": [
+            "PlasmaFix 50 S es una fuente de microplasma para trabajos de precisión: desde 0,05 A suelda láminas de 0,01 mm, mallas metálicas y pequeñas piezas de conexión, con corriente no pulsada o pulsada de 1 Hz a 10 kHz. Como en otros sistemas de microplasma, el arco se constriñe en una boquilla refrigerada por agua y permanece estable a corrientes muy bajas, con poco aporte térmico a la pieza."
+          ]
+        },
+        {
+          "h": "Reacondicionados y revisados en Herisau",
+          "p": [
+            "El sistema se revisó por completo en el taller de Herisau y se sustituyó la refrigeración por agua, incluida la bomba y las mangueras. Se revisa antes de entregarse y se demuestra durante la visita. El asesoramiento lo presta el técnico que lo reacondicionó. La oferta escrita especifica el plazo de garantía según nuestras condiciones generales."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Qué es la soldadura por microplasma?",
+          "a": "Una forma de soldadura por plasma para materiales muy finos. El arco se constriñe en una boquilla refrigerada y se mantiene estable desde aproximadamente 0,1 A. El aporte térmico es bajo, lo que ayuda a limitar la deformación de la pieza."
+        },
+        {
+          "q": "¿Para qué tareas es adecuado PlasmaFix 50 S?",
+          "a": "Trabajos de precisión desde 0,05 A: láminas de 0,01 mm, mallas metálicas, pequeñas piezas de conexión y piezas de precisión. El proceso no es adecuado para aluminio."
+        },
+        {
+          "q": "¿Qué se hizo durante el reacondicionamiento?",
+          "a": "El sistema se revisó por completo y se sustituyó la refrigeración por agua, incluida la bomba y las mangueras. Se revisa y demuestra antes de entregarse."
+        },
+        {
+          "q": "¿Puedo ver el sistema antes de comprarlo?",
+          "a": "Sí. Puede ver el sistema y su demostración en el taller de Herisau AR con cita previa. Concierte la visita por teléfono o mediante el formulario de contacto."
+        },
+        {
+          "q": "¿Los equipos usados tienen garantía?",
+          "a": "Los equipos usados no tienen garantía del fabricante. Se aplican los derechos de garantía legal; la oferta escrita especifica el plazo acordado. Los detalles figuran en las condiciones generales."
         }
       ]
     }

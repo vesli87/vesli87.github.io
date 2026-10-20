@@ -23,141 +23,169 @@
   "Brenner": {
     "fr": "Torche",
     "it": "Torcia",
-    "en": "Torch"
+    "en": "Torch",
+    "es": "Antorcha"
   },
   "Plasmabrenner": {
     "fr": "Torche plasma",
     "it": "Torcia al plasma",
-    "en": "Plasma torch"
+    "en": "Plasma torch",
+    "es": "Antorcha de plasma"
   },
   "Schlauchpaket": {
     "fr": "Faisceau",
     "it": "Fascio di cavi",
-    "en": "Hose assembly"
+    "en": "Hose assembly",
+    "es": "Paquete de mangueras"
   },
   "Kabel": {
     "fr": "Câble",
     "it": "Cavo",
-    "en": "Cable"
+    "en": "Cable",
+    "es": "Cable"
   },
   "Fernregler": {
     "fr": "Télécommande",
     "it": "Telecomando",
-    "en": "Remote control"
+    "en": "Remote control",
+    "es": "Mando a distancia"
   },
   "Fahrwagen": {
     "fr": "Chariot",
     "it": "Carrello",
-    "en": "Trolley"
+    "en": "Trolley",
+    "es": "Carro"
   },
   "Verschleiss": {
     "fr": "Pièces d’usure",
     "it": "Parti di usura",
-    "en": "Consumables"
+    "en": "Consumables",
+    "es": "Consumibles"
   },
   "Kühlung": {
     "fr": "Refroidissement",
     "it": "Raffreddamento",
-    "en": "Cooling"
+    "en": "Cooling",
+    "es": "Refrigeración"
   },
   "Vorschub": {
     "fr": "Dévidoir",
     "it": "Trainafilo",
-    "en": "Wire feeder"
+    "en": "Wire feeder",
+    "es": "Alimentador de hilo"
   },
   "Vorschubrolle": {
     "fr": "Galet d’entraînement",
     "it": "Rullo di traino",
-    "en": "Wire feed roller"
+    "en": "Wire feed roller",
+    "es": "Rodillo de alimentación de hilo"
   },
   "MMA": {
     "fr": "MMA",
     "it": "MMA",
-    "en": "MMA"
+    "en": "MMA",
+    "es": "MMA"
   },
   "MIG/MAG": {
     "fr": "MIG/MAG",
     "it": "MIG/MAG",
-    "en": "MIG/MAG"
+    "en": "MIG/MAG",
+    "es": "MIG/MAG"
   },
   "WIG DC": {
     "fr": "TIG DC",
     "it": "TIG DC",
-    "en": "TIG DC"
+    "en": "TIG DC",
+    "es": "TIG DC"
   },
   "WIG AC/DC": {
     "fr": "TIG AC/DC",
     "it": "TIG AC/DC",
-    "en": "TIG AC/DC"
+    "en": "TIG AC/DC",
+    "es": "TIG AC/DC"
   },
   "WIG + Cleaner": {
     "fr": "TIG + nettoyage",
     "it": "TIG + Cleaner",
-    "en": "TIG + cleaning"
+    "en": "TIG + cleaning",
+    "es": "TIG + limpieza"
   },
   "Plasma Cut": {
     "fr": "Découpe plasma",
     "it": "Plasma Cut",
-    "en": "Plasma cutting"
+    "en": "Plasma cutting",
+    "es": "Corte por plasma"
   },
   "Plasma AUT": {
     "fr": "Plasma AUT",
     "it": "Plasma AUT",
-    "en": "Plasma AUT"
+    "en": "Plasma AUT",
+    "es": "Plasma AUT"
   },
   "Plasma CNC": {
     "fr": "Plasma CNC",
     "it": "Plasma CNC",
-    "en": "Plasma CNC"
+    "en": "Plasma CNC",
+    "es": "Plasma CNC"
   },
   "Plasma TIG": {
     "fr": "Plasma TIG",
     "it": "Plasma TIG",
-    "en": "Plasma TIG"
+    "en": "Plasma TIG",
+    "es": "Plasma TIG"
   },
   "Cleaner": {
     "fr": "Nettoyage",
     "it": "Cleaner",
-    "en": "Cleaning"
+    "en": "Cleaning",
+    "es": "Limpieza"
   },
   "Reinigung": {
     "fr": "Nettoyage",
     "it": "Pulizia",
-    "en": "Cleaning"
+    "en": "Cleaning",
+    "es": "Limpieza"
   },
   "Polieren": {
     "fr": "Polissage",
     "it": "Lucidatura",
-    "en": "Polishing"
+    "en": "Polishing",
+    "es": "Pulido"
   },
   "Neutralisieren": {
     "fr": "Neutralisation",
     "it": "Neutralizzazione",
-    "en": "Neutralising"
+    "en": "Neutralising",
+    "es": "Neutralización"
   },
   "Signieren": {
     "fr": "Marquage",
     "it": "Marcatura",
-    "en": "Marking"
+    "en": "Marking",
+    "es": "Marcado"
   },
   "Dosierung": {
     "fr": "Dosage",
     "it": "Dosaggio",
-    "en": "Dosing"
+    "en": "Dosing",
+    "es": "Dosificación"
   },
   "Kalibrierung": {
     "fr": "Étalonnage",
     "it": "Calibrazione",
-    "en": "Calibration"
+    "en": "Calibration",
+    "es": "Calibración"
   },
   "Programmierung": {
     "fr": "Programmation",
     "it": "Programmazione",
-    "en": "Programming"
+    "en": "Programming",
+    "es": "Programación"
   },
   "Mikroplasma": {
     "fr": "Microplasma",
     "it": "Microplasma",
-    "en": "Microplasma"
+    "en": "Microplasma",
+    "es": "Microplasma"
   }
 }

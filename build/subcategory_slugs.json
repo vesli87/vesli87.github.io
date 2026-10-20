@@ -3,132 +3,154 @@
     "de": "mig-mag",
     "fr": "mig-mag",
     "it": "mig-mag",
-    "en": "mig-mag"
+    "en": "mig-mag",
+    "es": "mig-mag"
   },
   "WIG / TIG": {
     "de": "wig-tig",
     "fr": "tig",
     "it": "tig",
-    "en": "tig"
+    "en": "tig",
+    "es": "tig"
   },
   "MMA": {
     "de": "mma",
     "fr": "mma",
     "it": "mma",
-    "en": "mma"
+    "en": "mma",
+    "es": "mma"
   },
   "Plasma TIG": {
     "de": "plasma-tig",
     "fr": "plasma-tig",
     "it": "plasma-tig",
-    "en": "plasma-tig"
+    "en": "plasma-tig",
+    "es": "plasma-tig"
   },
   "Theta": {
     "de": "theta",
     "fr": "theta",
     "it": "theta",
-    "en": "theta"
+    "en": "theta",
+    "es": "theta"
   },
   "Theta Automation": {
     "de": "theta-automation",
     "fr": "theta-automation",
     "it": "theta-automation",
-    "en": "theta-automation"
+    "en": "theta-automation",
+    "es": "theta-automatizacion"
   },
   "Schneidtische": {
     "de": "schneidtische",
     "fr": "tables-de-decoupe",
     "it": "tavoli-di-taglio",
-    "en": "cutting-tables"
+    "en": "cutting-tables",
+    "es": "mesas-de-corte"
   },
   "Cleaner": {
     "de": "cleaner",
     "fr": "nettoyage",
     "it": "pulizia",
-    "en": "cleaning"
+    "en": "cleaning",
+    "es": "limpieza"
   },
   "Signiergeräte": {
     "de": "signiergeraete",
     "fr": "marquage",
     "it": "marcatura",
-    "en": "marking-systems"
+    "en": "marking-systems",
+    "es": "sistemas-de-marcado"
   },
   "Dosiersystem": {
     "de": "dosiersystem",
     "fr": "dosage",
     "it": "dosaggio",
-    "en": "dosing-systems"
+    "en": "dosing-systems",
+    "es": "sistemas-de-dosificacion"
   },
   "Elektrolyte": {
     "de": "elektrolyte",
     "fr": "electrolytes",
     "it": "elettroliti",
-    "en": "electrolytes"
+    "en": "electrolytes",
+    "es": "electrolitos"
   },
   "Fahrwagen": {
     "de": "fahrwagen",
     "fr": "chariots",
     "it": "carrelli",
-    "en": "trolleys"
+    "en": "trolleys",
+    "es": "carros"
   },
   "Wasserkühlung": {
     "de": "wasserkuehlung",
     "fr": "refroidissement",
     "it": "raffreddamento",
-    "en": "water-cooling"
+    "en": "water-cooling",
+    "es": "refrigeracion-por-agua"
   },
   "Drahtvorschubkoffer": {
     "de": "drahtvorschubkoffer",
     "fr": "devidoirs",
     "it": "trainafili",
-    "en": "wire-feeders"
+    "en": "wire-feeders",
+    "es": "alimentadores-de-hilo"
   },
   "Fernbedienungen": {
     "de": "fernbedienungen",
     "fr": "telecommandes",
     "it": "telecomandi",
-    "en": "remote-controls"
+    "en": "remote-controls",
+    "es": "mandos-a-distancia"
   },
   "Werkstattausrüstung": {
     "de": "werkstattausruestung",
     "fr": "equipement-atelier",
     "it": "attrezzatura-officina",
-    "en": "workshop-equipment"
+    "en": "workshop-equipment",
+    "es": "equipamiento-de-taller"
   },
   "Kabel": {
     "de": "kabel",
     "fr": "cables",
     "it": "cavi",
-    "en": "cables"
+    "en": "cables",
+    "es": "cables"
   },
   "Brenner": {
     "de": "brenner",
     "fr": "torches",
     "it": "torce",
-    "en": "torches"
+    "en": "torches",
+    "es": "antorchas"
   },
   "Plasmabrenner": {
     "de": "plasmabrenner",
     "fr": "torches-plasma",
     "it": "torce-plasma",
-    "en": "plasma-torches"
+    "en": "plasma-torches",
+    "es": "antorchas-de-plasma"
   },
   "Verschleissteile": {
     "de": "verschleissteile",
     "fr": "pieces-dusure",
     "it": "parti-di-usura",
-    "en": "consumables"
+    "en": "consumables",
+    "es": "consumibles"
   },
   "Schlauchpakete": {
     "de": "schlauchpakete",
     "fr": "faisceaux",
     "it": "fasci-cavi",
-    "en": "hose-assemblies"
+    "en": "hose-assemblies",
+    "es": "paquetes-de-mangueras"
   },
   "Mikroplasma": {
     "de": "mikroplasma",
     "fr": "microplasma",
     "it": "microplasma",
-    "en": "microplasma"
+    "en": "microplasma",
+    "es": "microplasma"
   }
 }

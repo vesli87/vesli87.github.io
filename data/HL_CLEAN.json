@@ -27,6 +27,13 @@
       "Cleaning, polishing and marking",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Fuente de corriente inversora compacta",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido y marcado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-st": {
@@ -57,6 +64,13 @@
       "Cleaning, polishing and marking",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 1200 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido y marcado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-speed": {
@@ -87,6 +101,13 @@
       "Cleaning, polishing, marking and galvanising",
       "Synergic programs for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 2400 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido, marcado y galvanizado",
+      "Programas sinérgicos para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-plus": {
@@ -117,6 +138,13 @@
       "Cleaning, polishing, marking and galvanising",
       "Synergic programs for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Potente fuente de corriente inversora de 4000 W",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido, marcado y galvanizado",
+      "Programas sinérgicos para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   },
   "hypercleaner-ct200": {
@@ -147,6 +175,13 @@
       "Cleaning, polishing and marking",
       "Synergic program for all processes",
       "Environmentally friendly and safe cleaning"
+    ],
+    "es": [
+      "Sistema combinado: soldadura TIG y limpieza",
+      "Sistema MAHE de protección del cepillo",
+      "Limpieza, pulido y marcado",
+      "Programa sinérgico para todos los procesos",
+      "Limpieza segura y respetuosa con el medio ambiente"
     ]
   }
 }

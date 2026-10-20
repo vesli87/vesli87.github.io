@@ -7,13 +7,15 @@
         "de": "Prospekt PlasmaFix 51",
         "fr": "Brochure PlasmaFix 51",
         "it": "Prospetto PlasmaFix 51",
-        "en": "PlasmaFix 51 brochure"
+        "en": "PlasmaFix 51 brochure",
+        "es": "Folleto PlasmaFix 51"
       },
       "s": {
         "de": "Originalunterlage Oerlikon · Air Liquide Welding, 10 Seiten",
         "fr": "Document d’origine Oerlikon · Air Liquide Welding, 10 pages",
         "it": "Documento originale Oerlikon · Air Liquide Welding, 10 pagine",
-        "en": "Original Oerlikon · Air Liquide Welding document, 10 pages"
+        "en": "Original Oerlikon · Air Liquide Welding document, 10 pages",
+        "es": "Documento original de Oerlikon · Air Liquide Welding, 10 páginas"
       },
       "u": "/assets/dl/oerlikon-plasmafix-51-prospekt.pdf"
     }
@@ -25,13 +27,15 @@
         "de": "Prospekt PlasmaFix 50 S",
         "fr": "Brochure PlasmaFix 50 S",
         "it": "Prospetto PlasmaFix 50 S",
-        "en": "PlasmaFix 50 S brochure"
+        "en": "PlasmaFix 50 S brochure",
+        "es": "Folleto PlasmaFix 50 S"
       },
       "s": {
         "de": "Originalunterlage Schweissindustrie Oerlikon Bührle AG, 4 Seiten",
         "fr": "Document d’origine Schweissindustrie Oerlikon Bührle AG, 4 pages",
         "it": "Documento originale Schweissindustrie Oerlikon Bührle AG, 4 pagine",
-        "en": "Original Schweissindustrie Oerlikon Bührle AG document, 4 pages"
+        "en": "Original Schweissindustrie Oerlikon Bührle AG document, 4 pages",
+        "es": "Documento original de Schweissindustrie Oerlikon Bührle AG, 4 páginas"
       },
       "u": "/assets/dl/oerlikon-plasmafix-50s-prospekt.pdf"
     }

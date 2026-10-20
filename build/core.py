@@ -42,7 +42,7 @@ SITE = "https://www.ves-tech.ch"          # kanonische Domain (ohne Slash am End
 # GitHub Pages leitet danach github.io per 301 auf die eigene Domain um.
 CUSTOM_DOMAIN = "www.ves-tech.ch"
 EMIT_CNAME = True
-LANGS = ["de", "fr", "it", "en"]
+LANGS = ["de", "fr", "it", "en", "es"]
 DEFAULT_LANG = "de"
 
 COMPANY = {
@@ -211,23 +211,25 @@ def istMahe(p):
 # 07:30-17:00 · Fr 07:30-11:30" - deutsche Wochentagskuerzel mitten im
 # franzoesischen Satz. Im Italienischen ist "Fr" ausserdem missverstaendlich:
 # es liest sich als Abkuerzung fuer Franken, nicht fuer Freitag.
-LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland"}
+LAND = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland", "es": "Suiza"}
 ZEITEN = {
     "de": "Mo–Do 07:30–17:00 · Fr 07:30–11:30",
     "fr": "lun.–jeu. 07h30–17h00 · ven. 07h30–11h30",
     "it": "lun.–gio. 07:30–17:00 · ven. 07:30–11:30",
     "en": "Mon–Thu 07:30–17:00 · Fri 07:30–11:30",
+    "es": "lun.–jue. 07:30–17:00 · vie. 07:30–11:30",
 }
 REGION_NAMES = {
-    "SG": {"de": "St. Gallen", "fr": "Saint-Gall", "it": "San Gallo", "en": "St. Gallen"},
+    "SG": {"de": "St. Gallen", "fr": "Saint-Gall", "it": "San Gallo", "en": "St. Gallen", "es": "San Galo"},
     "AR": {"de": "Appenzell Ausserrhoden", "fr": "Appenzell Rhodes-Extérieures",
-           "it": "Appenzello Esterno", "en": "Appenzell Ausserrhoden"},
+           "it": "Appenzello Esterno", "en": "Appenzell Ausserrhoden", "es": "Appenzell Rodas Exteriores"},
 }
 SEARCH_POPULAR = {
     "de": ["HyperMIG", "WIG AC/DC", "Theta", "Cleaner", "Fahrwagen", "Plasma", "Reparatur"],
     "fr": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Chariot", "Plasma", "Réparation"],
     "it": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Carrello", "Plasma", "Riparazione"],
     "en": ["HyperMIG", "TIG AC/DC", "Theta", "Cleaner", "Trolley", "Plasma", "Repairs"],
+    "es": ["HyperMIG", "TIG AC/DC", "Theta", "Limpieza", "Carro", "Plasma", "Reparación"],
 }
 
 
@@ -253,6 +255,9 @@ KANN = {
     "en": ["MIG/MAG welding", "TIG welding", "MMA stick welding", "Plasma cutting",
            "Electrolytic weld cleaning", "Welding automation", "EN 1090", "MAHE welding equipment",
            "Microplasma welding", "Refurbished welding equipment", "Oerlikon PlasmaFix"],
+    "es": ["Soldadura MIG/MAG", "Soldadura TIG", "Soldadura MMA con electrodo revestido", "Corte por plasma",
+           "Limpieza electrolítica de soldaduras", "Automatización de la soldadura", "EN 1090", "Equipos de soldadura MAHE",
+           "Soldadura por microplasma", "Equipos de soldadura reacondicionados", "Oerlikon PlasmaFix"],
 }
 
 
@@ -275,14 +280,14 @@ def regionName(lang, code):
 # Panelnamen: das Modell bleibt, uebersetzt wird nur das Gattungswort.
 # "EX: EcoPuls Front Panel" heisst beim Hersteller so und bleibt; aber
 # "Bedienpanel" ist unser eigenes Wort und stand auf 40 FR- und IT-Seiten.
-PANELWORT = {"fr": "panneau de commande", "it": "pannello di comando", "en": "control panel"}
+PANELWORT = {"fr": "panneau de commande", "it": "pannello di comando", "en": "control panel", "es": "panel de control"}
 
 
 def fpName(lang, fp):
     if fp.get("names"):
         return fp["names"][lang]
     n = fp["n"]
-    if lang == 'en':
+    if lang in ('en', 'es'):
         n = n.replace('WIG', 'TIG').replace('MiniReiniger', 'MiniCleaner')
     wort = PANELWORT.get(lang)
     if not wort or "Bedienpanel" not in n:
@@ -361,6 +366,8 @@ def markeMitPraeposition(lang, p):
         return ("d’" + m) if m[:1].lower() in "aeiouyh" else ("de " + m)
     if lang == "it":
         return "di " + m
+    if lang == "es":
+        return "de " + m
     return "von " + m
 
 
@@ -582,7 +589,7 @@ def trV(lang, v):
     if lang == "de":
         return v
     if v.startswith("bis "):
-        v = {"fr": "jusqu’à ", "it": "fino a ", "en": "up to "}[lang] + v[4:]
+        v = {"fr": "jusqu’à ", "it": "fino a ", "en": "up to ", "es": "hasta "}[lang] + v[4:]
     return re.sub(r'(?<=\d),(?=\d)', '.', v) if lang == 'en' else v
 
 
@@ -1083,6 +1090,9 @@ SEG = {
     "en": {"root": "en", "products": "products", "search": "search", "processes": "processes",
            "downloads": "downloads", "contact": "contact", "faq": "faq", "service": "service",
            "about": "about", "imprint": "legal-notice", "privacy": "privacy", "terms": "terms"},
+    "es": {"root": "es", "products": "productos", "search": "buscar", "processes": "procesos",
+           "downloads": "descargas", "contact": "contacto", "faq": "preguntas-frecuentes", "service": "servicio",
+           "about": "sobre-nosotros", "imprint": "aviso-legal", "privacy": "privacidad", "terms": "condiciones-generales"},
 }
 
 # Unterseiten des Servicebereichs, je auf eigener URL. Wer „Schweissgeraet
@@ -1095,6 +1105,7 @@ SERVICE_SEG = {
     "fr": {"repair": "reparation", "calib": "calibrage",    "auto": "automation"},
     "it": {"repair": "riparazione", "calib": "calibrazione", "auto": "automazione"},
     "en": {"repair": "repairs", "calib": "calibration", "auto": "automation"},
+    "es": {"repair": "reparacion", "calib": "calibracion", "auto": "automatizacion"},
 }
 SERVICE_KEYS = ("repair", "calib", "auto")
 
@@ -1168,11 +1179,11 @@ def analytics_campaigns():
     return data
 
 CAT_SLUG = {
-    "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici", "en": "welding-equipment"},
-    "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma", "en": "plasma-cutting"},
-    "reinigung":       {"de": "reinigungsgeraete", "fr": "nettoyage",       "it": "pulizia", "en": "cleaning-equipment"},
-    "zubehoer":        {"de": "zubehoer",        "fr": "accessoires",       "it": "accessori", "en": "accessories"},
-    "occasion":        {"de": "occasion",        "fr": "occasion",          "it": "occasioni", "en": "used-equipment"},
+    "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici", "en": "welding-equipment", "es": "equipos-de-soldadura"},
+    "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma", "en": "plasma-cutting", "es": "corte-por-plasma"},
+    "reinigung":       {"de": "reinigungsgeraete", "fr": "nettoyage",       "it": "pulizia", "en": "cleaning-equipment", "es": "equipos-de-limpieza"},
+    "zubehoer":        {"de": "zubehoer",        "fr": "accessoires",       "it": "accessori", "en": "accessories", "es": "accesorios"},
+    "occasion":        {"de": "occasion",        "fr": "occasion",          "it": "occasioni", "en": "used-equipment", "es": "equipos-de-ocasion"},
 }
 
 # Sub-Slug pro Sprache aus dem übersetzten Namen
@@ -1415,8 +1426,16 @@ def validate_translations():
                     # Some original German labels are dictionary keys, not a de member.
                     if lang != DEFAULT_LANG and lang not in value:
                         raise ValueError(f'Missing {lang} translation: {location}')
-                shape(value.get('de', value['fr']), value['en'], location + '/en')
+                reference = value.get('de', value['fr'])
+                for lang in LANGS:
+                    if lang in value:
+                        shape(reference, value[lang], location + '/' + lang)
                 count += 1
+                # Shared metadata can contain further translated groups/sources
+                # beside a document's top-level language bodies.
+                for key, child in value.items():
+                    if key not in LANGS and not key.startswith('_'):
+                        walk(child, f'{location}/{key}')
             else:
                 for key, child in value.items():
                     if not key.startswith('_'):
@@ -1437,7 +1456,7 @@ def validate_process_guide():
     def translated(value):
         if (not isinstance(value, dict) or set(value) != set(LANGS)
                 or any(not isinstance(value[l], str) or not value[l].strip() for l in LANGS)):
-            raise ValueError('Process copy needs complete DE/FR/IT/EN text')
+            raise ValueError('Process copy needs every configured language')
 
     groups = {x['id'] for x in PROCESS_GUIDE['groups']}
     sources = {x['id'] for x in PROCESS_GUIDE['sources']}

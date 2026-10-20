@@ -95,7 +95,7 @@ class EnglishTests(unittest.TestCase):
         for link in links:
             self.assertEqual(link['aria-label'], C.EX[link['data-lang']]['lang_name'])
         flags = [a for tag,a in markup if tag=='svg']
-        self.assertEqual(len(flags), 4)
+        self.assertEqual(len(flags), len(C.LANGS))
         self.assertFalse(any(tag=='img' for tag,a in markup))
         for flag, lang in zip(flags, C.LANGS):
             self.assertEqual(flag['aria-hidden'], 'true')

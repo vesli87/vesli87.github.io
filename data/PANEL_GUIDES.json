@@ -161,6 +161,43 @@
       "note": "Specify the equipment precisely: the MAHE product page lists the panel's possible functions; the instructions identify double pulse as an option. Available processes and activations are therefore confirmed in the quotation for the chosen equipment version. Retrofitting an existing EX, SX or HX system requires checking the model, serial number and software version.",
       "sources_label": "Manufacturer documentation",
       "processes_label": "Pulse, Hyper and other welding processes explained in detail"
+    },
+    "es": {
+      "heading": "Control gráfico en el uso diario",
+      "intro": "El panel gráfico X combina una pantalla gráfica en color con cuatro teclas de función y un codificador giratorio central con pulsación. MAHE lo indica para HyperMIG X e HyperMIG TWIN. La interfaz reúne la selección de programas, los valores de soldadura y la gestión JOB; las inscripciones sobre las teclas muestran su función actual.",
+      "sections": [
+        [
+          "Programa y alimentador de hilo activo",
+          "La barra de información muestra el usuario, el material de hilo, el gas de protección y el diámetro de hilo, además de fecha y hora. Si hay varios alimentadores instalados, identifica el activo. Esto ayuda a comprobar que el programa y el hilo cargado coinciden con el trabajo."
+        ],
+        [
+          "Cuatro ajustes MIG de un vistazo",
+          "La barra superior contiene corrección de longitud de arco, espesor en mm, velocidad de hilo en m/min y dinámica del arco. Girar el codificador cambia el valor seleccionado; pulsarlo pasa al parámetro siguiente. Según las instrucciones, la corrección de longitud de arco y el espesor no están disponibles en modo MIG manual."
+        ],
+        [
+          "Valores ajustados, medidos y HOLD",
+          "La pantalla principal muestra en grande la tensión en V y la corriente en A. Antes de soldar indica los valores ajustados; durante la soldadura, las mediciones actuales. Después, las últimas mediciones permanecen como HOLD hasta que se acciona el panel o comienza un nuevo cordón."
+        ],
+        [
+          "Modos de funcionamiento y preparación",
+          "La barra de modos permite seleccionar 2 tiempos, 4 tiempos, puntos e intervalos. También permite el avance manual de hilo y la prueba de gas. La selección sinérgica de programas se basa en el material de hilo, el diámetro y el gas de protección."
+        ],
+        [
+          "Procesos y ajuste fino",
+          "La selección incluye los procesos MIG/MAG, pulsados e Hyper disponibles en la instalación concreta, además de MMA, TIG Lift Arc y ranurado por arco de carbono. MENU permite acceder a parámetros propios del proceso, como preflujo y posflujo de gas, comportamiento de inicio y relleno de cráter. Si el doble pulsado está habilitado, también están disponibles la frecuencia y la amplitud."
+        ],
+        [
+          "99 memorias JOB para trabajos recurrentes",
+          "Los ajustes de soldadura pueden guardarse, recuperarse y editarse en 99 posiciones internas de memoria. Así puede reutilizarse una combinación adecuada de hilo, gas y parámetros. Las instrucciones indican expresamente que el modo de accionamiento de antorcha, como 2 tiempos o 4 tiempos, no se guarda en el JOB y debe seleccionarse aparte."
+        ],
+        [
+          "Hasta ocho perfiles de usuario",
+          "Las instrucciones describen hasta ocho usuarios con sus propios ajustes. También incluyen selección de idioma, fecha y hora e indicación del tiempo de encendido y de arco. El estado del software y el número de serie están disponibles en el menú correspondiente."
+        ]
+      ],
+      "note": "Especifique el equipamiento con precisión: la página MAHE enumera las funciones posibles del panel; las instrucciones identifican doble pulsado como opción. Por ello, los procesos disponibles y las activaciones se confirman en la oferta de la versión elegida. Adaptar una instalación EX, SX o HX existente requiere comprobar el modelo, el número de serie y la versión de software.",
+      "sources_label": "Documentación del fabricante",
+      "processes_label": "Explicación detallada de pulsado, Hyper y otros procesos de soldadura"
     }
   }
 }

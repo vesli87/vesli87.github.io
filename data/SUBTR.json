@@ -2,91 +2,109 @@
   "WIG / TIG": {
     "fr": "TIG",
     "it": "TIG",
-    "en": "TIG"
+    "en": "TIG",
+    "es": "TIG"
   },
   "Cleaner": {
     "fr": "Nettoyage",
     "it": "Pulizia",
-    "en": "Cleaning"
+    "en": "Cleaning",
+    "es": "Limpieza"
   },
   "Signiergeräte": {
     "fr": "Marquage",
     "it": "Marcatura",
-    "en": "Marking systems"
+    "en": "Marking systems",
+    "es": "Sistemas de marcado"
   },
   "Dosiersystem": {
     "fr": "Dosage",
     "it": "Dosaggio",
-    "en": "Dosing systems"
+    "en": "Dosing systems",
+    "es": "Sistemas de dosificación"
   },
   "Fahrwagen": {
     "fr": "Chariots",
     "it": "Carrelli",
-    "en": "Trolleys"
+    "en": "Trolleys",
+    "es": "Carros"
   },
   "Wasserkühlung": {
     "fr": "Refroidissement",
     "it": "Raffreddamento",
-    "en": "Water cooling"
+    "en": "Water cooling",
+    "es": "Refrigeración por agua"
   },
   "Drahtvorschubkoffer": {
     "fr": "Dévidoirs",
     "it": "Trainafili",
-    "en": "Wire feeders"
+    "en": "Wire feeders",
+    "es": "Alimentadores de hilo"
   },
   "Fernbedienungen": {
     "fr": "Télécommandes",
     "it": "Telecomandi",
-    "en": "Remote controls"
+    "en": "Remote controls",
+    "es": "Mandos a distancia"
   },
   "Werkstattausrüstung": {
     "fr": "Équipement d’atelier",
     "it": "Attrezzatura d’officina",
-    "en": "Workshop equipment"
+    "en": "Workshop equipment",
+    "es": "Equipamiento de taller"
   },
   "Theta Automation": {
     "fr": "Theta Automation",
     "it": "Theta Automation",
-    "en": "Theta Automation"
+    "en": "Theta Automation",
+    "es": "Theta Automation"
   },
   "Elektrolyte": {
     "fr": "Électrolytes",
     "it": "Elettroliti",
-    "en": "Electrolytes"
+    "en": "Electrolytes",
+    "es": "Electrolitos"
   },
   "Kabel": {
     "fr": "Câbles",
     "it": "Cavi",
-    "en": "Cables"
+    "en": "Cables",
+    "es": "Cables"
   },
   "Brenner": {
     "fr": "Torches",
     "it": "Torce",
-    "en": "Torches"
+    "en": "Torches",
+    "es": "Antorchas"
   },
   "Plasmabrenner": {
     "fr": "Torches plasma",
     "it": "Torce al plasma",
-    "en": "Plasma torches"
+    "en": "Plasma torches",
+    "es": "Antorchas de plasma"
   },
   "Verschleissteile": {
     "fr": "Pièces d’usure",
     "it": "Parti di usura",
-    "en": "Consumables"
+    "en": "Consumables",
+    "es": "Consumibles"
   },
   "Schlauchpakete": {
     "fr": "Faisceaux",
     "it": "Fasci di cavi",
-    "en": "Hose assemblies"
+    "en": "Hose assemblies",
+    "es": "Paquetes de mangueras"
   },
   "Schneidtische": {
     "fr": "Tables de découpe",
     "it": "Tavoli di taglio",
-    "en": "Cutting tables"
+    "en": "Cutting tables",
+    "es": "Mesas de corte"
   },
   "Mikroplasma": {
     "fr": "Microplasma",
     "it": "Microplasma",
-    "en": "Microplasma"
+    "en": "Microplasma",
+    "es": "Microplasma"
   }
 }

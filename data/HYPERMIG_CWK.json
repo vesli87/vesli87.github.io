@@ -364,5 +364,65 @@
       "CWK with water cooling and automatic water pump control",
       "Separate CWK data for X/HX/SX and EX; specify the version in the quotation"
     ]
+  },
+  "es": {
+    "title": "HyperMIG CWK: ventajas y símbolos de funciones MAHE",
+    "intro": "CWK designa el diseño compacto refrigerado por agua. La ficha MAHE actual distingue las versiones X, HX, EX y SX en las clases de corriente 300, 350 y 400. Aquí encontrará los símbolos originales del fabricante, su utilidad práctica y las opciones señaladas en el documento.",
+    "symbols_title": "Explicación de los símbolos originales MAHE",
+    "symbol_notes": {
+      "mis": "Arco MIG/MAG controlado para reducir proyecciones. El hilo, el gas y los ajustes influyen en el resultado.",
+      "puls": "Arco pulsado para una transferencia de gotas controlada; la ficha lo identifica como opción para EX.",
+      "doppelpuls": "Alternancia de fases de pulsado para un patrón de cordón regular. Al elegir el equipo deben tenerse en cuenta la activación y la versión del panel.",
+      "hyperup": "Proceso MAHE para cordones verticales ascendentes. La ficha indica HyperUP como opción para SX.",
+      "coldrootforce": "El símbolo combinado representa HyperCold, HyperRoot e HyperForce: programas centrados en aporte térmico, pasadas de raíz y penetración.",
+      "hyperpuls": "Arco pulsado dinámico de MAHE. La disponibilidad varía entre versiones de panel.",
+      "braze": "Soldadura fuerte MIG para materiales base e hilos de aportación adecuados; la selección y la preparación de la unión dependen de la tarea.",
+      "speedcontrol": "Control de velocidad del alimentador de hilo. La velocidad seleccionada forma parte del ajuste del proceso de soldadura.",
+      "fourroll": "Cuatro rodillos guían y alimentan el hilo. El perfil de rodillo, la guía y la presión de contacto se adaptan al hilo.",
+      "remote": "Conexión para un mando a distancia adecuado. El mando y la conexión se seleccionan según la versión del equipo.",
+      "spool15": "El símbolo del fabricante especifica una bobina de hilo de < 15 kg y < 300 mm. El diseño y el montaje de la bobina deben ser compatibles con el alimentador."
+    },
+    "benefits_title": "Otras ventajas de la versión CWK",
+    "benefits": [
+      [
+        "Control sinérgico digital",
+        "La curva sinérgica relaciona los parámetros para la combinación seleccionada de material, hilo y gas de protección. El ajuste fino se adapta a la pieza y la unión."
+      ],
+      [
+        "Ventiladores controlados por temperatura",
+        "El control del ventilador adapta la refrigeración al estado térmico del sistema. Durante el uso sigue siendo decisivo el ciclo de trabajo de la clase de corriente concreta."
+      ],
+      [
+        "Control automático de la bomba de agua",
+        "MAHE especifica activación y desactivación automática de la bomba de agua para CWK. La antorcha, el circuito de refrigeración y las conexiones se seleccionan como una configuración coordinada."
+      ],
+      [
+        "Accionamiento de 4 rodillos iluminado",
+        "La ficha describe el accionamiento de alimentación de hilo como iluminado. Esto mejora la visibilidad de los rodillos, la guía y la zona de enhebrado durante los ajustes y el mantenimiento."
+      ]
+    ],
+    "matrix_title": "Procesos y opciones según la versión CWK",
+    "matrix_label": "Función",
+    "status": {
+      "listed": "Indicado",
+      "option": "Opción",
+      "not_listed": "No indicado"
+    },
+    "mma_label": "Soldadura MMA con electrodo revestido",
+    "matrix_note": "Indicado significa mencionado en la ficha CWK o representado con un símbolo. En EX, pulsado, doble pulsado, TIG y ranurado por arco llevan un asterisco de opción; en SX, HyperPuls e HyperUP. Las instrucciones del panel gráfico X también identifican doble pulsado como opción. El suministro exacto y las activaciones se confirman en la oferta.",
+    "scope_note": "No indicado significa que esta ficha CWK no especifica la función para esa versión. El sitio web de MAHE también indica TIG Lift Arc para paneles SX; por ello se comprueba ese equipamiento para la máquina concreta. La comparación siguiente abarca las versiones CWK del documento.",
+    "technical_note": "Los datos eléctricos también difieren: la ficha especifica un fusible de red de 16 A para EX CWK modelo 300 y de 25 A para 350/400, frente a 20 A para X, HX y SX. Las tablas CWK separadas de la pestaña Datos técnicos reflejan estas diferencias.",
+    "source_label": "Ficha MAHE X / HX / EX / SX CWK · PDF · Alemán",
+    "scroll_hint": "En pantallas pequeñas, desplace horizontalmente la tabla comparativa.",
+    "summary_note": "Los símbolos indican funciones de la gama; el alcance depende del panel y las activaciones.",
+    "summary_link": "Comparar ventajas y versiones CWK",
+    "general_table_title": "HyperMIG X: gama y otros diseños",
+    "family_highlights": [
+      "Control sinérgico digital",
+      "Accionamiento de 4 rodillos y conexión para mando a distancia",
+      "Procesos pulsados y programas Hyper según panel y activación",
+      "CWK con refrigeración por agua y control automático de la bomba",
+      "Datos CWK separados para X/HX/SX y EX; especifique la versión en la oferta"
+    ]
   }
 }

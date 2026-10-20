@@ -654,7 +654,7 @@ def main():
     # robots / llms
     for need in ("robots.txt", "llms.txt", "llms-full.txt", "site.webmanifest",
                  "data/products.json", "data/search-de.json", "data/search-fr.json",
-                 "data/search-it.json", "data/search-en.json", "assets/js/app.js", "assets/css/site.css"):
+                 "data/search-it.json", "data/search-en.json", "data/search-es.json", "assets/js/app.js", "assets/css/site.css"):
         if not (ROOT / need).exists():
             err(f"Datei fehlt: {need}")
 

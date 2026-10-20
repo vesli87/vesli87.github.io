@@ -89,6 +89,28 @@
         "t": "PSAB 180 consumables kit",
         "s": "Replacement consumables for the PSAB 180 plasma torch"
       }
+    ],
+    "es": [
+      {
+        "t": "Sistema de filtrado AT 1000",
+        "s": "Sin acoplamientos de conexión"
+      },
+      {
+        "t": "Cubierta protectora para ordenador y consola",
+        "s": "Protege el puesto de manejo y la pantalla del polvo y las partículas de amolado"
+      },
+      {
+        "t": "Agente de tratamiento de agua MWPF 100",
+        "s": "1 kg para la cama de agua de la mesa de corte"
+      },
+      {
+        "t": "Juego de consumibles PSAB 125",
+        "s": "Consumibles de recambio para la antorcha de plasma PSAB 125"
+      },
+      {
+        "t": "Juego de consumibles PSAB 180",
+        "s": "Consumibles de recambio para la antorcha de plasma PSAB 180"
+      }
     ]
   },
   "mpt-2501": {
@@ -179,6 +201,28 @@
       {
         "t": "PSAB 180 consumables kit",
         "s": "Replacement consumables for the PSAB 180 plasma torch"
+      }
+    ],
+    "es": [
+      {
+        "t": "Sistema de filtrado AT 1000",
+        "s": "Sin acoplamientos de conexión"
+      },
+      {
+        "t": "Cubierta protectora para ordenador y consola",
+        "s": "Protege el puesto de manejo y la pantalla del polvo y las partículas de amolado"
+      },
+      {
+        "t": "Agente de tratamiento de agua MWPF 100",
+        "s": "1 kg para la cama de agua de la mesa de corte"
+      },
+      {
+        "t": "Juego de consumibles PSAB 125",
+        "s": "Consumibles de recambio para la antorcha de plasma PSAB 125"
+      },
+      {
+        "t": "Juego de consumibles PSAB 180",
+        "s": "Consumibles de recambio para la antorcha de plasma PSAB 180"
       }
     ]
   }

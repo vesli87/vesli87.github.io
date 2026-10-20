@@ -47,6 +47,17 @@
         "D300 spool",
         "MMA stick welding",
         "TIG Lift Arc"
+      ],
+      "es": [
+        "Arco sin proyecciones",
+        "Control sinérgico",
+        "Indicadores digitales",
+        "Soldadura por intervalos",
+        "Accionamiento de 4 rodillos",
+        "Cable de alimentación de 3 metros",
+        "Bobina D300",
+        "Soldadura MMA con electrodo revestido",
+        "TIG Lift Arc"
       ]
     },
     {
@@ -83,6 +94,14 @@
         "4-roll drive",
         "3-metre supply cable",
         "D300 spool"
+      ],
+      "es": [
+        "Arco sin proyecciones",
+        "Control sinérgico",
+        "Indicadores digitales",
+        "Accionamiento de 4 rodillos",
+        "Cable de alimentación de 3 metros",
+        "Bobina D300"
       ]
     },
     {
@@ -122,6 +141,15 @@
         "3-metre supply cable",
         "D300 spool",
         "MMA stick welding",
+        "TIG Lift Arc"
+      ],
+      "es": [
+        "Arco sin proyecciones",
+        "Soldadura por intervalos",
+        "Accionamiento de 4 rodillos",
+        "Cable de alimentación de 3 metros",
+        "Bobina D300",
+        "Soldadura MMA con electrodo revestido",
         "TIG Lift Arc"
       ]
     }

@@ -1736,6 +1736,10 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .langs a{flex-direction:column;gap:2px;padding:4px 6px;line-height:1.2;min-width:44px}
   .util .l{row-gap:0}
 }
+@media screen and (max-width:380px){
+  .util .wrap{height:auto;flex-wrap:wrap;justify-content:center;gap:0}
+  .util .l{flex-basis:100%;justify-content:space-between;column-gap:8px}
+}
 /* Homepage product carousel. Every slide shares one stage, so automatic
    changes never move the headline or the content below the highlight. */
 @media screen{

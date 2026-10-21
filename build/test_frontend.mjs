@@ -19,6 +19,8 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
   const elements = new Map();
   const collections = new Map();
   const events = {};
+  const registrations = [];
+  const windowRegistrations = [];
   const windowEvents = {};
   const timers = new Map();
   const intervals = new Map();
@@ -28,7 +30,10 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
   const document = {
     querySelector: selector => elements.get(selector) || null,
     querySelectorAll: selector => collections.get(selector) || [],
-    addEventListener: (type, fn) => { (events[type] ||= []).push(fn); },
+    addEventListener: (type, fn, capture) => {
+      (events[type] ||= []).push(fn);
+      registrations.push({ type, fn, capture: capture === true || capture?.capture === true });
+    },
     createElement() {
       const textarea = { value: '', select() {} };
       const copy = { addEventListener() {} };
@@ -48,11 +53,15 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
     clearInterval: id => intervals.delete(id),
     window: { VT: { inquiryCatalog: structuredClone(inquiryCatalogFixture),
       inquiryServices: { repair: { n: 'Reparatur', u: '/service/reparatur/' }, calib: { n: 'Kalibrierung', u: '/service/kalibrierung/' } } },
-      location, addEventListener: (type, fn) => { windowEvents[type] = fn; } },
+      location, addEventListener: (type, fn, capture) => {
+        windowRegistrations.push({ type, fn, capture: capture === true || capture?.capture === true });
+        const previous = windowEvents[type];
+        windowEvents[type] = previous ? event => { previous(event); fn(event); } : fn;
+      } },
   };
   if (prepare) prepare(context, elements, collections);
   const api = initApp(context);
-  return { api, context, elements, timers, intervals, storage, events, windowEvents, created };
+  return { api, context, elements, timers, intervals, storage, events, registrations, windowRegistrations, windowEvents, created };
 }
 const item = { id: 'beta-dx', name: 'Beta DX', url: '/produkte/schweissgeraete/beta-dx/', img: '', qty: 1 };
 
@@ -79,7 +88,7 @@ function tabFixture(initialHash = '') {
 test('comparison anchor opens its hidden product tab before native navigation', () => {
   const fixture=tabFixture();
   const link={getAttribute:()=> '#hypermig-cwk'};
-  for(const listener of fixture.events.click) listener({target:{closest:selector=>selector === 'a[href^="#"]' ? link : null}});
+  fixture.windowEvents.click({target:{closest:selector=>selector === 'a[href^="#"]' ? link : null}});
   assert.equal(fixture.panes[0].classList.contains('active'),true);
   assert.equal(fixture.panes[1].classList.contains('active'),false);
   assert.equal(fixture.buttons[0].attrs['aria-selected'],'true');
@@ -238,6 +247,29 @@ test('cart updates from another tab preserve removal and re-addition during deli
   for (let i=0; i<10; i++) await Promise.resolve();
   assert.equal(api.readCart().length, 1);
   assert.equal(api.readCart()[0].qty, 1);
+});
+
+test('returning from browser history or a suspended tab reconciles the current validated inquiry list', () => {
+  const f = app({ stored: [item] });
+  f.storage.set('vt.cart.v2', JSON.stringify([{ id: 'mms', option: 'mms-2000c', qty: 2 }, { id: 'unknown', qty: 1 }]));
+  f.windowEvents.pageshow({ persisted: true });
+  assert.deepEqual(f.api.readCart(), [{ id: 'mms', option: 'mms-2000c', qty: 2 }]);
+  f.storage.set('vt.cart.v2', JSON.stringify([{ id: 'beta-dx', qty: 3 }]));
+  f.context.document.visibilityState = 'visible';
+  for (const listener of f.events.visibilitychange) listener();
+  assert.deepEqual(f.api.readCart(), [{ id: 'beta-dx', option: '', qty: 3 }]);
+  f.storage.set('vt.cart.v2', 'invalid JSON');
+  f.windowEvents.pageshow({ persisted: true });
+  assert.deepEqual(f.api.readCart(), []);
+});
+test('restoring a page preserves its in-memory inquiry when private storage cannot be read', () => {
+  const f = app({ stored: [item] });
+  f.context.localStorage.getItem = () => { throw Error('storage blocked'); };
+  f.windowEvents.pageshow({ persisted: true });
+  assert.equal(f.api.readCart()[0].qty, 1);
+  f.context.localStorage.getItem = () => null;
+  f.windowEvents.pageshow({ persisted: true });
+  assert.equal(f.api.readCart()[0].qty, 1);
 });
 test('failed delivery keeps fields and cart, shows a copyable draft, and never auto-retries', async () => {
   for (const response of [{ ok: false, status: 503 }, { ok: true, json: async () => ({ success: false }) },
@@ -1439,6 +1471,60 @@ test('Tab closes suggestions without preventing normal keyboard navigation', () 
   assert.equal(input.attributes['aria-expanded'],'false');
   assert.equal(input.attributes['aria-activedescendant'],undefined);
 });
+
+test('a repeated product fragment works while the actual analytics guard hides the link from SDK listeners', () => {
+  const f = tabFixture('#hypermig-cwk');
+  f.handlers.click({ target: { closest: () => f.buttons[1] } });
+  assert.equal(f.panes[1].classList.contains('active'), true);
+  const a = analytics({ saved: granted(), ahrefs: true });
+  a.load();
+  a.context.location.hash = '#hypermig-cwk';
+  const link = { getAttribute: () => '#hypermig-cwk' };
+  const event = { type: 'click', button: 0, defaultPrevented: false, stopped: false,
+    target: { closest: selector => selector.startsWith('a[') ? link : null },
+    stopImmediatePropagation() { this.stopped = true; },
+    preventDefault() { this.defaultPrevented = true; } };
+  // Window capture runs before the document guard even when saved consent
+  // installs analytics first. The native page loads analytics.js before app.js.
+  // No hashchange is fired: the address already contains this same fragment.
+  for (const handler of [
+    ...f.windowRegistrations.filter(h => h.type === 'click' && h.capture),
+    ...a.documentEvents.click.filter(h => h.capture),
+    ...f.registrations.filter(h => h.type === 'click' && h.capture),
+    ...f.registrations.filter(h => h.type === 'click' && !h.capture)
+  ]) if (!event.stopped) handler.fn(event);
+  assert.equal(f.panes[0].classList.contains('active'), true);
+  assert.equal(f.panes[1].classList.contains('active'), false);
+  assert.equal(event.defaultPrevented, false, 'Native fragment navigation must remain available');
+  assert.equal(event.stopped, true, 'The private fragment must still be shielded from the analytics SDK');
+  assert.doesNotMatch(JSON.stringify(a.sent), /hypermig-cwk/);
+});
+
+for (const dismissal of ['Escape', 'Tab', 'blur']) {
+  test('pending search suggestions stay closed after ' + dismissal + ', but new typing works', async () => {
+    let input, suggestions;
+    const f = app({ prepare(context, elements) {
+      input = uiNode(context.document, {}); input.value = 'MG500';
+      suggestions = { hidden: true, innerHTML: '' };
+      elements.set('#q', input); elements.set('#sugg', suggestions);
+      context.document.activeElement = input;
+    } });
+    f.api.setIndex({ products: [] });
+    input.events.input();
+    if (dismissal === 'Escape') {
+      for (const fn of f.events.keydown) fn({ key: 'Escape' });
+    } else if (dismissal === 'Tab') input.events.keydown({ key: 'Tab' });
+    else input.events.blur();
+    const pending = [...f.timers.values()]; f.timers.clear();
+    pending.forEach(fn => fn()); await flush();
+    assert.equal(suggestions.hidden, true);
+    assert.equal(input.attributes['aria-expanded'], 'false');
+    input.value = 'Beta DX'; input.events.input();
+    const fresh = [...f.timers.values()]; f.timers.clear();
+    fresh.forEach(fn => fn()); await flush();
+    assert.equal(suggestions.hidden, false);
+  });
+}
 
 for (const lang of ['de', 'fr', 'it', 'en', 'es']) {
   test(lang + ': task-led enquiries retain the known topic and send only relevant business details', async () => {

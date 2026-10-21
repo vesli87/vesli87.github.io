@@ -1370,3 +1370,24 @@ Abmeldung jederzeit möglich.» Die entsprechende Fassung wird in allen fünf
 Sprachen im Footer, in Brevo und in den DOI-Vorlagen gepflegt. Im Einleitungstext
 wird der Hinweis nicht nochmals angehängt. Der erforderliche, zunächst
 unmarkierte Einwilligungshaken und das Double-Opt-in bleiben Voraussetzung.
+
+## 31. Funktionsprüfung und stabile Bedienung (21.10.2026)
+
+Produktinterne Fragmentlinks öffnen ihren Reiter schon am Fenster in der Capture-Phase,
+bevor die Analytics-Abschirmung am Dokument das Linkziel vor Anbieter-Listenern
+verbirgt. Dadurch funktioniert auch ein erneuter Klick bei unverändertem Hash;
+native Navigation und die Datenschutzsperre bleiben bestehen.
+Das funktioniert unabhängig davon, ob eine gespeicherte Zustimmung die
+Analytics-Listener bereits vor dem Anwendungsskript installiert hat.
+
+Ein geschlossener Suchvorschlag darf durch einen noch wartenden Debounce-Aufruf
+nicht wieder erscheinen. Escape, Tab und Fokusverlust verwerfen deshalb auch
+noch nicht gestartete Sucharbeit; neue Eingaben bleiben normal benutzbar.
+
+Nach Rückkehr aus dem Back/Forward-Cache oder einem inaktiven Tab wird die
+Anfrageliste erneut aus dem validierten v2-Speicher abgeglichen. Unveränderte
+Listen werden nicht neu gerendert, damit Fokus und Formulareingaben erhalten
+bleiben. Nicht verfügbarer privater Speicher verwirft keine lokale Auswahl.
+Storage-Ereignisse behalten ihre einzelnen Snapshots und die Revisionsprüfung
+für bereits abgesendete Mengen. Regressionen decken auch das Zusammenspiel
+zwischen Produktreitern und dem echten Analytics-Guard ab.

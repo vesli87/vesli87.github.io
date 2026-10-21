@@ -4,7 +4,7 @@ Diese Website ist der Auftritt von VES-TECH Swiss, einem Einzelunternehmen in
 der Schweiz. Sie besteht aus vorgerenderten HTML-Dateien auf GitHub Pages – es
 gibt keine eigene Datenbank, keine Kundenanmeldung und keine Kundensitzungen.
 Formularnachrichten werden bei aktivierter Konfiguration durch Web3Forms
-verarbeitet; optionale Webstatistik durch Ahrefs und Cloudflare. Details stehen in der
+verarbeitet; optionale Webstatistik durch Ahrefs, Cloudflare und Google Analytics 4. Details stehen in der
 Datenschutzerklärung der Website.
 
 ## Eine Lücke melden
@@ -57,6 +57,12 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   von `mahe-online.de` sind ebenfalls ausdrücklich in der CSP genannt. Auf
   unbekannten 404-Pfaden wird keine Statistik geladen; die Fehlerseite sendet
   keinen Referrer. Formular-POSTs verwenden ebenfalls `no-referrer`.
+  GA4 lädt erst nach einer eigenen gültigen v3-Zustimmung. Anzeigenzwecke bleiben
+  verweigert; Formularinhalte, Suchtexte und Empfängerparameter werden nicht
+  übermittelt. Beim Widerruf werden die eigenen `vt_ga`-Cookies entfernt und
+  bereits geladene Analysedienste durch Neuladen beendet. Die Fragmentnavigation
+  zu Produktreitern wird vorher durch den eigenen Capture-Handler verarbeitet;
+  die Analytics-Sperre für solche Linkziele bleibt vollständig bestehen.
 * **Datensparsame Formulare.** Persönliche Angaben werden nicht in localStorage
   gespeichert. Ohne Versandkonfiguration entstehen nur E-Mail-Entwürfe. Fehler
   führen zu keiner automatischen Wiederholung und löschen die Eingaben nicht.

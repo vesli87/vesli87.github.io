@@ -188,20 +188,38 @@
   // again is a new selection, even when its product ID is unchanged.
   var cartRevision = {};
 
+  function receiveCart(next) {
+    if (JSON.stringify(next) === JSON.stringify(cart)) return;
+    cart.forEach(function (item) {
+      var key = rowKey(item);
+      if (!next.some(function (x) { return rowKey(x) === key; })) {
+        cartRevision[key] = (cartRevision[key] || 0) + 1;
+      }
+    });
+    cart = next; renderCart();
+  }
   window.addEventListener('storage', function (ev) {
     if (ev.key === CART_KEY || ev.key === null) {
       // Use the event snapshot, not the latest storage value: several rapid
       // changes can already be queued, including removal followed by re-add.
       var next = [];
       try { next = cleanCart(JSON.parse(ev.newValue)); } catch (err) { /* invalid entries are discarded */ }
-      cart.forEach(function (item) {
-        var key = rowKey(item);
-        if (!next.some(function (x) { return rowKey(x) === key; })) {
-          cartRevision[key] = (cartRevision[key] || 0) + 1;
-        }
-      });
-      cart = next; renderCart();
+      receiveCart(next);
     }
+  });
+  function refreshCart() {
+    var value;
+    try { value = env.localStorage.getItem(CART_KEY); } catch (err) { return; }
+    // If storage is unavailable or has never persisted, keep the usable
+    // in-memory selection. Explicit cross-tab removals still use storage events.
+    if (value === null) return;
+    var next = [];
+    try { next = cleanCart(JSON.parse(value)); } catch (err) { /* discard corrupt persisted entries */ }
+    receiveCart(next);
+  }
+  window.addEventListener('pageshow', function (ev) { if (ev && ev.persisted) refreshCart(); });
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') refreshCart();
   });
 
   function saveCart() { store.set(CART_KEY, cart); renderCart(); }
@@ -561,11 +579,11 @@
       if (ev.key === 'End') n = btns.length - 1;
       btns[n].focus(); btns[n].click();
     });
-    document.addEventListener('click', function (ev) {
+    window.addEventListener('click', function (ev) {
       if (ev.defaultPrevented || ev.button > 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
       var link = ev.target.closest('a[href^="#"]');
       if (link) revealHashTab(link.getAttribute('href'));
-    });
+    }, true); // Window capture precedes document guards, regardless of consent/load order.
     window.addEventListener('hashchange', function () {
       var target = revealHashTab(location.hash);
       if (target) target.scrollIntoView({ block: 'start' });
@@ -1072,10 +1090,12 @@
   }
 
   if (input) {
-    var run = debounce(function () {
+    var run = debounce(function (version) {
+      // Closing or blurring the field also cancels work still in the debounce
+      // queue, not only an index request which has already started.
+      if (version !== suggestVersion) return;
       var q = searchQuery(input.value);
       if (q.length < 2) { closeSuggest(); return; }
-      var version = ++suggestVersion;
       loadIndex().then(function (idx) {
         if (version !== suggestVersion || searchQuery(input.value) !== q || document.activeElement !== input) return;
         if (!idx) {
@@ -1085,7 +1105,7 @@
         renderSuggest(search(q));
       });
     }, 110);
-    input.addEventListener('input', function () { closeSuggest(); run(); });
+    input.addEventListener('input', function () { closeSuggest(); run(suggestVersion); });
     input.addEventListener('blur', function () { suggestVersion++; });
     input.addEventListener('focus', function () { loadIndex(); });
     input.addEventListener('keydown', function (ev) {

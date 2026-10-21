@@ -290,6 +290,10 @@ Sprachausgabe, Abmeldelink, Pflichtangaben, CAPTCHA sowie Domainauthentifizierun
 und tatsächliche Zustellung prüfen. Nicht nur einen beliebigen Link eintragen.
 `newsletter_open` zählt ausschliesslich das Öffnen des Links nach Analytik-Zustimmung;
 Bestätigungen und Abmeldungen kommen aus Brevo, niemals aus dem Websiteklick.
+Die fünf Bestätigungsseiten unter der jeweiligen Kontakt-URL + `newsletter/`
+enthalten keine Empfängerparameter und laden keine Analytik. Sie bleiben
+`noindex,follow`, ausserhalb von Sitemap und Messpfad-Allowlist. Brevo darf
+dorthin erst nach erfolgreichem Double-Opt-in weiterleiten.
 
 Tagesberichte brauchen einheitliche Zeitzone Europe/Zurich. Den Vortag als
 vorläufig markieren und D-2 erneut prüfen (GA4 kann 24–48 Stunden nachverarbeiten).

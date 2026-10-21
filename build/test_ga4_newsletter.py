@@ -8,6 +8,16 @@ import pages as PG
 
 
 class GrowthIntegrationsTests(unittest.TestCase):
+    def test_confirmation_landing_has_no_measurement_or_recipient_parameters(self):
+        for lang in C.LANGS:
+            path, html = PG.page_newsletter_confirmed(lang)
+            self.assertEqual(path, C.u_page(lang, 'contact') + 'newsletter/')
+            self.assertIn('content="noindex,follow"', html)
+            self.assertNotIn('/assets/js/analytics.js', html)
+            self.assertNotIn('id="analyticsConsent"', html)
+            self.assertNotIn(path, C.analytics_paths())
+            self.assertIn(R.e(C.t(lang, 'newsletter_confirmed_title')), html)
+
     def test_only_public_measurement_id_is_accepted(self):
         for value in ['G-ABC123DEF4', '']:
             with patch.object(C, 'setting', return_value=value):

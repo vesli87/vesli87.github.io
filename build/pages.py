@@ -1594,6 +1594,24 @@ def page_about(lang):
                            jsonld_blocks=ld, body=body)
 
 
+def page_newsletter_confirmed(lang):
+    """Static DOI landing: no recipient, token handling or analytics collection."""
+    alts = {l: C.u_page(l, "contact") + "newsletter/" for l in C.LANGS}
+    url = alts[lang]
+    title = C.t(lang, "newsletter_confirmed_title")
+    desc = C.t(lang, "newsletter_confirmed_desc")
+    body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
+                                      (title, None)], h1=title, desc=desc)
+            + '<div class="catalog"><div class="wrap textwrap">'
+            + f'<p>{e(C.t(lang, "newsletter_confirmed_body"))}</p>'
+            + f'<p>{e(C.t(lang, "newsletter_confirmed_note"))}</p>'
+            + f'<p><a class="btn pri" href="{e(C.u_products(lang))}">'
+            + e(C.t(lang, "newsletter_confirmed_cta")) + '</a></p></div></div>')
+    return url, R.document(lang, title=title, desc=desc, url=url, alts=alts,
+                           jsonld_blocks=[R.ld_webpage(lang, url, title, desc)], body=body,
+                           robots="noindex,follow", analytics=False)
+
+
 def page_404(lang=C.DEFAULT_LANG):
     url, alts = "/404.html", C.alternates("home")
     body = f"""<div class="cbar"><div class="wrap">

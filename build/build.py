@@ -825,6 +825,7 @@ def main():
             write(u, h)
             entries.append((u, C.alternates("service", key=skey), "0.8", "monthly"))
         u, h = PG.page_search(lang); write(u, h)                       # noindex → nicht in sitemap
+        u, h = PG.page_newsletter_confirmed(lang); write(u, h)         # DOI landing, noindex, no analytics
         for kind in ("imprint", "privacy", "terms"):
             u, h = PG.page_legal(lang, kind)
             write(u, h)

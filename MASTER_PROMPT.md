@@ -1350,3 +1350,9 @@ URL-Parameter, localStorage oder öffentlich zugängliche Auswertungen.
 `newsletter_open` ist ein Klick, keine bestätigte Anmeldung. Die tatsächliche
 Abonnentenentwicklung kommt aus Brevo. Zeitvergleich immer Europe/Zurich;
 Besucherserien verschiedener Anbieter nicht addieren und D-1/D-2 unterscheiden.
+
+Die fünf DOI-Bestätigungsseiten liegen unter der sprachspezifischen Kontakt-URL
++ `newsletter/`. Sie verarbeiten keine Empfänger oder Tokens, laden keine
+Analytik und bleiben noindex sowie ausserhalb der Sitemap/Messpfade. Brevo
+leitet erst nach bestätigter Anmeldung dorthin. Die statische Seite selbst ist
+kein Nachweis einer Anmeldung; dafür zählt ausschliesslich der Brevo-Status.

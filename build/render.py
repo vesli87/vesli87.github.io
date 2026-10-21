@@ -1186,7 +1186,7 @@ def _complete_graph(lang, blocks):
 
 def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
              og_image=None, og_type="website", robots="index,follow,max-image-preview:large",
-             extra_head="", body_class="", adressierbar=True):
+             extra_head="", body_class="", adressierbar=True, analytics=True):
     jsonld_blocks = _complete_graph(lang, jsonld_blocks)
     # One design system across every route and configured language.
     if url == C.u_home(lang):
@@ -1218,7 +1218,7 @@ def document(lang, *, title, desc, url, alts, jsonld_blocks, body,
 {body}
 </main>
 {footer(lang)}
-{analytics_html(lang)}
+{analytics_html(lang) if analytics else ''}
 {boot_script(lang)}
 <script src="{JS_URL}" integrity="{script_integrity('assets/js/app.js')}" defer></script>
 </body>

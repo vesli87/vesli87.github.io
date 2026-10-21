@@ -1215,3 +1215,27 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
 - Quellcode liegt nach bestandenen Prüfungen auf GitHub. Das öffentliche
   Recovery-Archiv wird am exakten Commit erstellt und vor dem Deploy
   wiederhergestellt/geprüft; kein zusätzliches lokales Backup-Archiv.
+
+## 28. Anwendungsbezogene Suche und Anfragen (21.10.2026)
+
+- Die interne Suche durchsucht auch die bereits sichtbaren Auswahlhilfen aus
+  `BUYING_GUIDE`, `SUBCATEGORY_GUIDES` und `PRODUCT_GUIDES`. Diese Texte bleiben
+  im niedrig gewichteten Beschreibungsfeld. Titel, Modelle und technische
+  Daten behalten ihre bisherige Gewichtung; keine versteckten Branchen-Keywords.
+  Unterkategorie-Treffer zeigen ihre eigene Einleitung statt einer leeren
+  Beschreibung. Die mit einem Produkt kollidierende Plasma-TIG-Unterkategorie
+  wird nicht noch einmal als separater Suchtreffer ausgegeben.
+- Bestehende WIG-/TIG- und Cleaner-Seiten erhalten in allen fünf Sprachen
+  passende Metadaten und konkrete Auswahlkriterien für Rohrleitungsbau,
+  Montage und elektrolytische Nahtreinigung. Bestehende URLs bleiben erhalten;
+  keine regionalen Dubletten oder neuen Leistungs-/Zertifizierungszusagen.
+  Beta DX bleibt DC/230 V, Omega AX AC/DC/230 V. Hinweise zu Rohrgeometrie,
+  Stromversorgung, Brenner und Formiergas sind Qualifizierungsfragen,
+  keine Zusage einer bestimmten Verfahrensfreigabe.
+- Das vorhandene optionale Feld `application` wird bei Geräteanfragen und
+  Automation eingeblendet. Es bleibt auf 300 Zeichen begrenzt, ohne URL-,
+  Analytics- oder LocalStorage-Speicherung. Bei Zubehör oder anderen
+  Servicekontexten wird ein unpassender Entwurf weiter vom Versand ausgeschlossen.
+- Keine neuen Browserbibliotheken, Tracker, Schrift- oder Bilddateien. Der
+  Suchindex wird unverändert erst bei Benutzung geladen. Private Kundenanalyse
+  und Kampagnenentwürfe bleiben unter dem ausgeschlossenen `reports/`.

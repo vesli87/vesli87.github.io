@@ -925,7 +925,7 @@ function inquiryForm(id = 'kontaktForm') {
     setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute(k) { delete this.attrs[k]; }, focus() { this.focused = true; }
   }]));
   const groups = { timeframe: 'general', material: 'equipment', thickness: 'equipment', power: 'equipment',
-    existing_model: 'accessory repair', fault: 'repair', device_count: 'calib', application: 'auto' };
+    existing_model: 'accessory repair', fault: 'repair', device_count: 'calib', application: 'equipment auto' };
   const wrappers = Object.entries(groups).map(([name, group]) => ({
     hidden: true, getAttribute: () => group, querySelectorAll: () => [fields[name]]
   }));
@@ -1088,14 +1088,19 @@ test('product controls use registered choices and language switching preserves a
 });
 test('qualification groups use the whole cart, retain hidden drafts and exclude irrelevant fields from messages', () => {
   const f = inquiryForm('cartForm'); f.fields.material.value = 'Steel'; f.fields.existing_model.value = 'Existing model'; f.fields.fault.value = 'Private repair note';
+  f.fields.application.value = 'Site pipework';
   const { api } = app();
   api.addCart({ id: 'mms' }); api.addCart({ id: 'massekabel' });
   api.updateQualifications(f);
   assert.equal(f.fields.material.disabled, false); assert.equal(f.fields.existing_model.disabled, false);
   assert.equal(f.fields.fault.disabled, true);
+  assert.equal(f.fields.application.disabled, false);
+  assert.match(api.qualificationBody(f, api.snapshotFields(f)), /Site pipework/);
   assert.doesNotMatch(api.qualificationBody(f, api.snapshotFields(f)), /Private repair note/);
   api.rmCart('mms'); api.updateQualifications(f);
   assert.equal(f.fields.material.disabled, true); assert.equal(f.fields.material.value, 'Steel');
+  assert.equal(f.fields.application.disabled, true);
+  assert.doesNotMatch(api.qualificationBody(f, api.snapshotFields(f)), /Site pipework/);
 });
 test('confirmed summary uses the accepted snapshot as plain text and preserves a newer qualified draft', async () => {
   let resolve; const f = inquiryForm(); const textarea = { value: '', select() { this.selected = true; } }; const copy = { addEventListener(type, fn) { this[type] = fn; } };
@@ -1170,5 +1175,19 @@ test('English search resolves service terms and common workshop synonyms to Engl
     const products = api.search(query).products;
     assert.ok(products.some(row => row.i === expected), query + ' must find ' + expected);
     assert.ok(products.every(row => row.u.startsWith('/en/')));
+  }
+});
+test('application searches find relevant advice in all five languages without duplicated Plasma TIG results', () => {
+  const data = JSON.parse(execFileSync('python3', ['-c',
+    "import sys,json;sys.path.insert(0,'build');from build import search_index;print(json.dumps({l:search_index(l) for l in ['de','fr','it','en','es']}))"], { encoding: 'utf8' }));
+  for (const [lang, query] of Object.entries({ de: 'Rohrleitungsbau', fr: 'tuyauterie', it: 'tubazioni', en: 'pipework', es: 'tuberías' })) {
+    const { api } = app(); api.setIndex(data[lang]);
+    const result = api.search(query);
+    assert.ok(result.products.some(row => row.i === 'beta-dx'), lang + ': ' + query);
+    assert.ok(result.cats.some(row => /tig\/$/.test(row.u)), lang + ' must find the TIG selection guide');
+    assert.equal(api.search('Beta DX').products[0].i, 'beta-dx');
+    assert.equal(api.search('PlasmaFix 51').products[0].i, 'plasmafix-51');
+    const plasma = api.search('Plasma TIG');
+    assert.equal(plasma.cats.filter(row => /\/plasma-tig\/$/.test(row.u)).length, 0);
   }
 });

@@ -116,5 +116,65 @@
       "description": "Antorchas manuales y mecanizadas para MAHE Theta: PSHB 65, 125 y 160, PSAB 65 y 125. Compare modelos y elija la longitud del conjunto de mangueras.",
       "h1": "Antorchas de plasma para MAHE Theta"
     }
+  },
+  {
+    "kind": "subcategory",
+    "id": "schweissgeraete",
+    "sub": "WIG / TIG",
+    "de": {
+      "title": "WIG-Schweissgeräte 230 V & 400 V: DC und AC/DC | VES-TECH",
+      "description": "MAHE WIG/TIG für Montage, Rohrleitungsbau und Werkstatt. Beta DX, Omega AX und HyperTIG nach Werkstoff, Netzanschluss und Einschaltdauer vergleichen.",
+      "h1": "WIG-Schweissgeräte für Montage und Werkstatt"
+    },
+    "fr": {
+      "title": "Postes TIG 230 V et 400 V : DC et AC/DC | VES-TECH",
+      "description": "TIG MAHE pour chantier, tuyauterie et atelier. Comparez Beta DX, Omega AX et HyperTIG selon le matériau, l’alimentation et le facteur de marche.",
+      "h1": "Postes TIG pour le montage et l’atelier"
+    },
+    "it": {
+      "title": "Saldatrici TIG 230 V e 400 V: DC e AC/DC | VES-TECH",
+      "description": "TIG MAHE per cantiere, tubazioni e officina. Confrontate Beta DX, Omega AX e HyperTIG per materiale, alimentazione e ciclo di lavoro.",
+      "h1": "Saldatrici TIG per montaggio e officina"
+    },
+    "en": {
+      "title": "TIG welders 230 V & 400 V: DC and AC/DC | VES-TECH",
+      "description": "MAHE TIG for site work, pipework and workshops. Compare Beta DX, Omega AX and HyperTIG by material, power supply and duty cycle.",
+      "h1": "TIG welding machines for site work and workshops"
+    },
+    "es": {
+      "title": "Equipos TIG 230 V y 400 V: DC y AC/DC | VES-TECH",
+      "description": "TIG MAHE para obra, tuberías y taller. Compare Beta DX, Omega AX e HyperTIG según material, alimentación y ciclo de trabajo.",
+      "h1": "Equipos TIG para montaje y taller"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "reinigung",
+    "sub": "Cleaner",
+    "de": {
+      "title": "Edelstahl-Schweissnahtreinigung: MAHE Cleaner | VES-TECH",
+      "description": "Anlauffarben an Edelstahl entfernen: MAHE MiniReiniger und HyperCleaner vergleichen. Beratung zu Naht, Oberfläche, Elektrolyt und Ausstattung.",
+      "h1": "Elektrolytische Schweissnahtreinigung für Edelstahl"
+    },
+    "fr": {
+      "title": "Nettoyage des soudures inox : MAHE Cleaner | VES-TECH",
+      "description": "Éliminez les colorations thermiques sur inox : comparez MiniCleaner et HyperCleaner MAHE. Conseil sur le cordon, la surface et l’électrolyte.",
+      "h1": "Nettoyage électrolytique des soudures inox"
+    },
+    "it": {
+      "title": "Pulizia delle saldature inox: MAHE Cleaner | VES-TECH",
+      "description": "Rimuovere le colorazioni termiche sull’inox: confrontate MAHE MiniCleaner e HyperCleaner. Consulenza su saldatura, superficie, elettrolita e dotazione.",
+      "h1": "Pulizia elettrolitica delle saldature inox"
+    },
+    "en": {
+      "title": "Stainless steel weld cleaning: MAHE Cleaner | VES-TECH",
+      "description": "Remove heat tint from stainless steel: compare MAHE MiniCleaner and HyperCleaner. Advice on the weld, surface, electrolyte and equipment.",
+      "h1": "Electrolytic stainless steel weld cleaning"
+    },
+    "es": {
+      "title": "Limpieza de soldaduras inox: MAHE Cleaner | VES-TECH",
+      "description": "Elimine la coloración térmica en acero inoxidable: compare MAHE MiniCleaner e HyperCleaner. Asesoramiento sobre superficie, electrolito y equipamiento.",
+      "h1": "Limpieza electrolítica de soldaduras de acero inoxidable"
+    }
   }
 ]

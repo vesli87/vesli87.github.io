@@ -78,6 +78,10 @@
           [
             "Anschluss und Kühlung",
             "Omega AX und Beta DX sind mit 230 V angegeben, HyperTIG AX und DX mit 400 V. Brenner, Kühlung und Einschaltdauer gehören zur Auswahl der konkreten Ausführung."
+          ],
+          [
+            "Rohrleitungsbau und Montage",
+            "Für das WIG-Schweissen von Stahlrohren und Edelstahlrohren zählen Rohrdurchmesser, Wanddicke, Schweissposition und Zugänglichkeit. Beta DX ist eine mobile DC-Ausführung mit 230 V; bei Aluminium ist eine passende AC/DC-Ausführung wie Omega AX zu prüfen."
           ]
         ]
       },
@@ -91,6 +95,10 @@
           [
             "Alimentation et refroidissement",
             "Omega AX et Beta DX sont indiqués pour 230 V, HyperTIG AX et DX pour 400 V. La torche, le refroidissement et le facteur de marche dépendent de la version retenue."
+          ],
+          [
+            "Tuyauterie et montage",
+            "Pour le soudage TIG de tuyaux en acier et en inox, précisez le diamètre, l’épaisseur de paroi, la position et l’accessibilité. Beta DX est une version DC mobile en 230 V ; pour l’aluminium, examinez une version AC/DC adaptée, comme Omega AX."
           ]
         ]
       },
@@ -104,6 +112,10 @@
           [
             "Alimentazione e raffreddamento",
             "Omega AX e Beta DX sono indicati per 230 V, HyperTIG AX e DX per 400 V. Torcia, raffreddamento e ciclo di lavoro fanno parte della scelta della versione."
+          ],
+          [
+            "Tubazioni e montaggio",
+            "Per la saldatura TIG di tubazioni in acciaio e inox contano diametro, spessore della parete, posizione e accessibilità. Beta DX è una versione DC mobile a 230 V; per l’alluminio occorre valutare una versione AC/DC adatta, come Omega AX."
           ]
         ]
       },
@@ -117,6 +129,10 @@
           [
             "Connection and cooling",
             "Omega AX and Beta DX are specified for 230 V, HyperTIG AX and DX for 400 V. Torch, cooling and duty cycle are part of selecting the specific version."
+          ],
+          [
+            "Pipework and site installation",
+            "For TIG welding steel and stainless steel pipework, specify pipe diameter, wall thickness, welding position and access. Beta DX is a mobile 230 V DC version; for aluminium, assess a suitable AC/DC version such as Omega AX."
           ]
         ]
       },
@@ -130,6 +146,10 @@
           [
             "Conexión y refrigeración",
             "Omega AX y Beta DX se especifican para 230 V, HyperTIG AX y DX para 400 V. La antorcha, la refrigeración y el ciclo de trabajo forman parte de la elección de la versión concreta."
+          ],
+          [
+            "Tuberías y montaje",
+            "Para soldar tuberías de acero y acero inoxidable con TIG, indique diámetro, espesor de pared, posición y accesibilidad. Beta DX es una versión DC móvil de 230 V; para aluminio, valore una versión AC/DC adecuada, como Omega AX."
           ]
         ]
       }
@@ -439,8 +459,8 @@
             "MiniReiniger ist für mobilen Einsatz geführt; CT 200 kombiniert WIG und Reinigung. Nennen Sie Werkstoff, Oberflächenzustand und vorhandenes Zubehör, damit Gerät, Mittel und Lieferumfang zusammenpassen."
           ],
           [
-            "Wie sieht die Naht aus?",
-            "Ein Foto der Naht und die Angabe des verwendeten Schweissverfahrens helfen bei der Beratung. Beschreiben Sie, ob Anlauffarben entfernt, die Oberfläche poliert oder eine Markierung erstellt werden soll."
+            "Anlauffarben gezielt entfernen",
+            "Bei Edelstahlrohren, Geländern und Behältern beschreiben Sie die zugänglichen Nahtflächen und die geforderte Oberflächenqualität. Elektrolytische Nahtreinigung entfernt Anlauffarben; Fettentfernung, Schleifen und eine dokumentierte Prüfung der Passivschicht sind getrennte Aufgaben. Ein Foto der Naht und die Angabe des verwendeten Schweissverfahrens helfen bei der Beratung. Beschreiben Sie, ob Anlauffarben entfernt, die Oberfläche poliert oder eine Markierung erstellt werden soll."
           ]
         ]
       },
@@ -456,8 +476,8 @@
             "MiniReiniger est destiné à l’usage mobile ; CT 200 combine TIG et nettoyage. Précisez matériau, état de surface et accessoires existants pour vérifier appareil, produits et contenu de livraison."
           ],
           [
-            "Quel est l’état du cordon ?",
-            "Une photo du cordon et le procédé de soudage utilisé facilitent le conseil. Précisez si vous souhaitez éliminer les colorations thermiques, polir la surface ou réaliser un marquage."
+            "Éliminer les colorations thermiques",
+            "Pour les tuyaux inox, garde-corps et cuves, décrivez les surfaces du cordon accessibles et la qualité de surface exigée. Le nettoyage électrolytique élimine les colorations thermiques ; dégraissage, meulage et contrôle documenté de la couche passive sont des tâches distinctes. Une photo du cordon et le procédé de soudage utilisé facilitent le conseil. Précisez si vous souhaitez éliminer les colorations thermiques, polir la surface ou réaliser un marquage."
           ]
         ]
       },
@@ -473,8 +493,8 @@
             "MiniReiniger è destinato all’uso mobile; CT 200 combina TIG e pulizia. Indicate materiale, stato della superficie e accessori esistenti per verificare apparecchio, prodotti e fornitura."
           ],
           [
-            "Qual è lo stato del cordone?",
-            "Una foto del cordone e l’indicazione del processo di saldatura utilizzato aiutano nella consulenza. Precisate se volete eliminare le colorazioni termiche, lucidare la superficie o realizzare una marcatura."
+            "Rimuovere le colorazioni termiche",
+            "Per tubazioni inox, parapetti e serbatoi descrivete le superfici della saldatura accessibili e la qualità superficiale richiesta. La pulizia elettrolitica rimuove le colorazioni termiche; sgrassaggio, molatura e verifica documentata dello strato passivo sono operazioni distinte. Una foto del cordone e l’indicazione del processo di saldatura utilizzato aiutano nella consulenza. Precisate se volete eliminare le colorazioni termiche, lucidare la superficie o realizzare una marcatura."
           ]
         ]
       },
@@ -490,8 +510,8 @@
             "MiniCleaner is listed for mobile use; CT 200 combines TIG welding and cleaning. Specify material, surface condition and existing accessories so that the machine, products and scope of supply match."
           ],
           [
-            "What does the weld look like?",
-            "A photograph of the weld and the welding process used help us advise you. Describe whether heat tint needs removing, the surface needs polishing or a marking needs to be made."
+            "Removing heat tint",
+            "For stainless steel pipework, railings and vessels, describe accessible weld surfaces and the required surface quality. Electrolytic weld cleaning removes heat tint; degreasing, grinding and a documented assessment of the passive layer are separate tasks. A photograph of the weld and the welding process used help us advise you. Describe whether heat tint needs removing, the surface needs polishing or a marking needs to be made."
           ]
         ]
       },
@@ -507,8 +527,8 @@
             "MiniCleaner figura para uso móvil; CT 200 combina soldadura TIG y limpieza. Indique el material, el estado superficial y los accesorios existentes para coordinar máquina, productos y suministro."
           ],
           [
-            "¿Qué aspecto tiene la soldadura?",
-            "Una fotografía de la soldadura y el proceso utilizado nos ayudan a asesorarle. Describa si debe eliminarse coloración térmica, pulirse la superficie o realizarse un marcado."
+            "Eliminar la coloración térmica",
+            "En tuberías de acero inoxidable, barandillas y depósitos, describa las superficies de soldadura accesibles y la calidad superficial exigida. La limpieza electrolítica elimina la coloración térmica; el desengrase, el amolado y la comprobación documentada de la capa pasiva son tareas distintas. Una fotografía de la soldadura y el proceso utilizado nos ayudan a asesorarle. Describa si debe eliminarse coloración térmica, pulirse la superficie o realizarse un marcado."
           ]
         ]
       }

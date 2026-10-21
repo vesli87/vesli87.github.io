@@ -182,6 +182,18 @@ def _synonyme_pruefen(syn):
 
 def search_index(lang):
     _synonyme_pruefen(SYNONYMS)
+
+    def guide_text(copy, pairs):
+        """Index the same localized selection advice that visitors can read."""
+        if not copy:
+            return ""
+        parts = [copy['intro']]
+        if pairs:
+            parts.extend(text for pair in copy['criteria'] for text in pair)
+        else:
+            parts.extend(copy['checks'])
+        return " ".join(parts)
+
     prods = []
     for p in C.P:
         cat = C.CAT_BY_ID[p["cat"]]
@@ -211,16 +223,24 @@ def search_index(lang):
             "t1": norm(f"{C.pFullName(lang, p)} {p['name']} {p['id']} "
                        f"{' '.join(p.get('aka', []))}"),
             "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
-            "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)} {C.panel_text(lang, p)} {C.cwk_text(lang, p)}"),
+            "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)} {C.panel_text(lang, p)} {C.cwk_text(lang, p)} "
+                       + guide_text(C.PRODUCT_GUIDES.get(p['id'], {}).get(lang), False)),
         })
     cats = []
+    product_urls = {C.u_prod(lang, p) for p in C.P}
     for c in C.CATS:
         cats.append({"n": C.catT(lang, c), "d": C.catD(lang, c), "u": C.u_cat(lang, c["id"]),
-                     "t1": norm(C.catT(lang, c)), "t3": norm(C.catD(lang, c))})
+                     "t1": norm(C.catT(lang, c)),
+                     "t3": norm(C.catD(lang, c) + ' ' + guide_text(C.BUYING_GUIDE[c['id']][lang], True))})
         for s in c["subs"]:
-            cats.append({"n": f"{C.subT(lang, s)} · {C.catT(lang, c)}", "d": "",
+            # A colliding subcategory is represented by its product route.
+            if C.u_sub(lang, c['id'], s) in product_urls:
+                continue
+            guide = C.SUBCATEGORY_GUIDES[c['id']][s][lang]
+            cats.append({"n": f"{C.subT(lang, s)} · {C.catT(lang, c)}", "d": guide['intro'],
                          "u": C.u_sub(lang, c["id"], s),
-                         "t1": norm(C.subT(lang, s)), "t3": norm(C.catT(lang, c))})
+                         "t1": norm(C.subT(lang, s)),
+                         "t3": norm(C.catT(lang, c) + ' ' + guide_text(guide, True))})
     procs = [{"n": pr["n"].get(lang) or pr["n"]["de"],
               "d": pr["d"].get(lang) or pr["d"]["de"],
               "u": C.u_page(lang, "processes") + "#" + pr["id"],

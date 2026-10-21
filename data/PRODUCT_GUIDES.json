@@ -172,38 +172,43 @@
       }
     ],
     "de": {
-      "intro": "Beta DX ist eine mobile WIG-DC-Stromquelle für Stahl und Chromstahl. Klären Sie zuerst, ob DC zu Ihren Werkstoffen und zur vorgesehenen Schweissaufgabe passt.",
+      "intro": "Beta DX ist eine mobile WIG-DC-Stromquelle für Stahl und Chromstahl. Für Montagearbeiten und Rohrleitungsbau sind Werkstoff, Nahtanforderungen und die verfügbare Stromversorgung zuerst zu klären.",
       "checks": [
         "Geben Sie Materialdicke, Einsatzstrom und die gewünschte Brennerlänge an. Die technische Tabelle zeigt die Einschaltdauer der konkreten Geräteausführung.",
-        "Zum Vergleich ist Omega AX als mobile AC/DC-Ausführung geführt. HyperTIG DX ist die industrielle DC-Baureihe; Anschluss und Kühlung sind für jede Variante separat zu prüfen."
+        "Zum Vergleich ist Omega AX als mobile AC/DC-Ausführung geführt. HyperTIG DX ist die industrielle DC-Baureihe; Anschluss und Kühlung sind für jede Variante separat zu prüfen.",
+        "Für das WIG-Schweissen von Stahlrohren und Edelstahlrohren zählen Rohrdurchmesser, Wanddicke, Schweissposition und Zugänglichkeit. Beta DX ist eine mobile DC-Ausführung mit 230 V; bei Aluminium ist eine passende AC/DC-Ausführung wie Omega AX zu prüfen. Nennen Sie Brennerlänge, Fernbedienung und den Bedarf an Formiergas. Bei Baustelleneinsätzen sind Anschluss, Absicherung und verfügbare Leistung zu klären. Eine Verfahrensvorgabe oder Schweissanweisung wird durch die Gerätewahl nicht ersetzt."
       ]
     },
     "fr": {
-      "intro": "Beta DX est une source TIG DC mobile pour l’acier et l’inox. Vérifiez d’abord que le courant DC convient aux matériaux et au travail prévu.",
+      "intro": "Beta DX est une source TIG DC mobile pour l’acier et l’inox. Pour le montage et la tuyauterie, précisez d’abord le matériau, les exigences du cordon et l’alimentation disponible.",
       "checks": [
         "Indiquez l’épaisseur, le courant utilisé et la longueur de torche souhaitée. Le tableau technique précise le facteur de marche de la version exacte.",
-        "Pour comparer, Omega AX est une version mobile AC/DC. HyperTIG DX est la série industrielle DC ; alimentation et refroidissement doivent être vérifiés pour chaque variante."
+        "Pour comparer, Omega AX est une version mobile AC/DC. HyperTIG DX est la série industrielle DC ; alimentation et refroidissement doivent être vérifiés pour chaque variante.",
+        "Pour le soudage TIG de tuyaux en acier et en inox, précisez le diamètre, l’épaisseur de paroi, la position et l’accessibilité. Beta DX est une version DC mobile en 230 V ; pour l’aluminium, examinez une version AC/DC adaptée, comme Omega AX. Indiquez la longueur de torche, la commande à distance et le besoin de protection gazeuse à l’envers du joint. Sur chantier, vérifiez le raccordement, les fusibles et la puissance disponible. Le choix du poste ne remplace pas le mode opératoire de soudage prescrit."
       ]
     },
     "it": {
       "intro": "Beta DX è un generatore TIG DC mobile per acciaio e inox. Verificate prima che la corrente DC sia adatta ai materiali e al lavoro previsto.",
       "checks": [
         "Indicate spessore, corrente utilizzata e lunghezza della torcia desiderata. La tabella tecnica riporta il ciclo di lavoro della versione esatta.",
-        "Per il confronto, Omega AX è una versione mobile AC/DC. HyperTIG DX è la serie industriale DC; alimentazione e raffreddamento vanno verificati per ogni variante."
+        "Per il confronto, Omega AX è una versione mobile AC/DC. HyperTIG DX è la serie industriale DC; alimentazione e raffreddamento vanno verificati per ogni variante.",
+        "Per la saldatura TIG di tubazioni in acciaio e inox contano diametro, spessore della parete, posizione e accessibilità. Beta DX è una versione DC mobile a 230 V; per l’alluminio occorre valutare una versione AC/DC adatta, come Omega AX. Indicate lunghezza della torcia, comando a distanza e necessità di protezione gassosa al rovescio. In cantiere vanno chiarite alimentazione, protezione con fusibili e potenza disponibile. La scelta della macchina non sostituisce la procedura di saldatura prescritta."
       ]
     },
     "en": {
       "intro": "Beta DX is a mobile DC TIG power source for steel and stainless steel. First clarify whether DC suits your materials and intended welding task.",
       "checks": [
         "Specify material thickness, operating current and required torch length. The technical table shows the duty cycle for the specific equipment version.",
-        "For comparison, Omega AX is listed as a mobile AC/DC version. HyperTIG DX is the industrial DC range; power supply and cooling must be checked separately for each version."
+        "For comparison, Omega AX is listed as a mobile AC/DC version. HyperTIG DX is the industrial DC range; power supply and cooling must be checked separately for each version.",
+        "For TIG welding steel and stainless steel pipework, specify pipe diameter, wall thickness, welding position and access. Beta DX is a mobile 230 V DC version; for aluminium, assess a suitable AC/DC version such as Omega AX. Specify torch length, remote control and any need for backing gas. For site work, check the connection, fuse protection and available power. Selecting a machine does not replace a specified welding procedure."
       ]
     },
     "es": {
       "intro": "Beta DX es una fuente TIG DC móvil para acero y acero inoxidable. Primero aclare si DC es adecuado para sus materiales y la tarea prevista.",
       "checks": [
         "Indique el espesor, la corriente de trabajo y la longitud de antorcha necesaria. La tabla técnica muestra el ciclo de trabajo de la versión concreta.",
-        "Para comparar, Omega AX figura como versión AC/DC móvil. HyperTIG DX es la gama DC industrial; la alimentación y la refrigeración deben comprobarse por separado para cada versión."
+        "Para comparar, Omega AX figura como versión AC/DC móvil. HyperTIG DX es la gama DC industrial; la alimentación y la refrigeración deben comprobarse por separado para cada versión.",
+        "Para soldar tuberías de acero y acero inoxidable con TIG, indique diámetro, espesor de pared, posición y accesibilidad. Beta DX es una versión DC móvil de 230 V; para aluminio, valore una versión AC/DC adecuada, como Omega AX. Indique la longitud de antorcha, el control remoto y la necesidad de gas de protección en la raíz. En obra deben aclararse la conexión, los fusibles y la potencia disponible. Elegir una máquina no sustituye el procedimiento de soldadura prescrito."
       ]
     }
   },
@@ -487,35 +492,40 @@
       "intro": "MiniReiniger ist für die mobile elektrolytische Reinigung von Chromstahl beschrieben. Reinigung, Polieren und Signieren sind unterschiedliche Aufgaben und sollten in der Anfrage klar benannt werden.",
       "checks": [
         "Ein Foto der Naht sowie Angaben zu Werkstoff und vorhandenem Zubehör helfen bei der Auswahl. Das passende Mittel wird anhand der Geräteunterlagen bestimmt.",
-        "Für eine reine Markierungsaufgabe können Sie HCS 1 vergleichen. HyperCleaner CT 200 kombiniert WIG und Reinigung; prüfen Sie, welche Funktionen für Ihre Arbeit benötigt werden."
+        "Für eine reine Markierungsaufgabe können Sie HCS 1 vergleichen. HyperCleaner CT 200 kombiniert WIG und Reinigung; prüfen Sie, welche Funktionen für Ihre Arbeit benötigt werden.",
+        "Bei Edelstahlrohren, Geländern und Behältern beschreiben Sie die zugänglichen Nahtflächen und die geforderte Oberflächenqualität. Elektrolytische Nahtreinigung entfernt Anlauffarben; Fettentfernung, Schleifen und eine dokumentierte Prüfung der Passivschicht sind getrennte Aufgaben."
       ]
     },
     "fr": {
       "intro": "MiniReiniger est prévu pour le nettoyage électrolytique mobile de l’inox. Nettoyer, polir et marquer sont des tâches différentes à préciser dans votre demande.",
       "checks": [
         "Une photo du cordon, le matériau et les accessoires existants facilitent le choix. Le produit adapté est déterminé à partir de la documentation de l’appareil.",
-        "Pour un travail de marquage, comparez HCS 1. HyperCleaner CT 200 associe TIG et nettoyage ; vérifiez les fonctions nécessaires à votre travail."
+        "Pour un travail de marquage, comparez HCS 1. HyperCleaner CT 200 associe TIG et nettoyage ; vérifiez les fonctions nécessaires à votre travail.",
+        "Pour les tuyaux inox, garde-corps et cuves, décrivez les surfaces du cordon accessibles et la qualité de surface exigée. Le nettoyage électrolytique élimine les colorations thermiques ; dégraissage, meulage et contrôle documenté de la couche passive sont des tâches distinctes."
       ]
     },
     "it": {
       "intro": "MiniReiniger è destinato alla pulizia elettrolitica mobile dell’inox. Pulizia, lucidatura e marcatura sono lavorazioni diverse da precisare nella richiesta.",
       "checks": [
         "Una foto del cordone, il materiale e gli accessori esistenti aiutano nella scelta. Il prodotto adatto viene individuato in base alla documentazione dell’apparecchio.",
-        "Per una lavorazione di marcatura, confrontate HCS 1. HyperCleaner CT 200 combina TIG e pulizia; verificate quali funzioni servono al vostro lavoro."
+        "Per una lavorazione di marcatura, confrontate HCS 1. HyperCleaner CT 200 combina TIG e pulizia; verificate quali funzioni servono al vostro lavoro.",
+        "Per tubazioni inox, parapetti e serbatoi descrivete le superfici della saldatura accessibili e la qualità superficiale richiesta. La pulizia elettrolitica rimuove le colorazioni termiche; sgrassaggio, molatura e verifica documentata dello strato passivo sono operazioni distinte."
       ]
     },
     "en": {
       "intro": "MiniCleaner is described for mobile electrolytic cleaning of stainless steel. Cleaning, polishing and marking are different tasks and should be clearly identified in your enquiry.",
       "checks": [
         "A weld photograph and details of the material and existing accessories help with selection. The appropriate electrolyte is determined using the equipment documentation.",
-        "For a marking-only task, compare HCS 1. HyperCleaner CT 200 combines TIG welding and cleaning; check which functions your work requires."
+        "For a marking-only task, compare HCS 1. HyperCleaner CT 200 combines TIG welding and cleaning; check which functions your work requires.",
+        "For stainless steel pipework, railings and vessels, describe accessible weld surfaces and the required surface quality. Electrolytic weld cleaning removes heat tint; degreasing, grinding and a documented assessment of the passive layer are separate tasks."
       ]
     },
     "es": {
       "intro": "MiniCleaner se describe para limpieza electrolítica móvil de acero inoxidable. Limpieza, pulido y marcado son tareas distintas y deben identificarse claramente en su consulta.",
       "checks": [
         "Una fotografía de la soldadura y datos sobre el material y los accesorios existentes ayudan a seleccionar. El electrolito adecuado se determina con la documentación del equipo.",
-        "Si solo necesita marcado, compare HCS 1. HyperCleaner CT 200 combina soldadura TIG y limpieza; compruebe qué funciones requiere su trabajo."
+        "Si solo necesita marcado, compare HCS 1. HyperCleaner CT 200 combina soldadura TIG y limpieza; compruebe qué funciones requiere su trabajo.",
+        "En tuberías de acero inoxidable, barandillas y depósitos, describa las superficies de soldadura accesibles y la calidad superficial exigida. La limpieza electrolítica elimina la coloración térmica; el desengrase, el amolado y la comprobación documentada de la capa pasiva son tareas distintas."
       ]
     }
   },

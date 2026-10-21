@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-10-20. Quelle: https://www.ves-tech.ch
+Stand: 2026-10-21. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss bietet Beratung und Verkauf von MAHE-Geräten. Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail vestechswiss@gmail.com, telefonisch erreichbar Mo-Fr 07:30-17:00. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -251,9 +251,10 @@ Passendes Zubehör: STT 30, MPF 02, FRC 5, RC 5, RC 100, MT260, Elektrodenkabel 
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/beta-dx/
 Kategorie: Schweissgeräte / WIG / TIG · Typ: WIG DC · Art.-Nr.: BETA-DX · Preis: auf Anfrage (CHF)
 Mobile WIG-DC-Schweissmaschine für Stahl und Chromstahl.
-Beta DX ist eine mobile WIG-DC-Stromquelle für Stahl und Chromstahl. Klären Sie zuerst, ob DC zu Ihren Werkstoffen und zur vorgesehenen Schweissaufgabe passt.
+Beta DX ist eine mobile WIG-DC-Stromquelle für Stahl und Chromstahl. Für Montagearbeiten und Rohrleitungsbau sind Werkstoff, Nahtanforderungen und die verfügbare Stromversorgung zuerst zu klären.
 - Geben Sie Materialdicke, Einsatzstrom und die gewünschte Brennerlänge an. Die technische Tabelle zeigt die Einschaltdauer der konkreten Geräteausführung.
 - Zum Vergleich ist Omega AX als mobile AC/DC-Ausführung geführt. HyperTIG DX ist die industrielle DC-Baureihe; Anschluss und Kühlung sind für jede Variante separat zu prüfen.
+- Für das WIG-Schweissen von Stahlrohren und Edelstahlrohren zählen Rohrdurchmesser, Wanddicke, Schweissposition und Zugänglichkeit. Beta DX ist eine mobile DC-Ausführung mit 230 V; bei Aluminium ist eine passende AC/DC-Ausführung wie Omega AX zu prüfen. Nennen Sie Brennerlänge, Fernbedienung und den Bedarf an Formiergas. Bei Baustelleneinsätzen sind Anschluss, Absicherung und verfügbare Leistung zu klären. Eine Verfahrensvorgabe oder Schweissanweisung wird durch die Gerätewahl nicht ersetzt.
 Weiterführend: [MAHE Omega AX](https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/)
 Weiterführend: [MAHE HyperTIG DX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/)
 Besonderheiten: Resonanzinverter mit DSP-Steuerung; Impulsschweissen mit bis zu 20 kHz; ActiveBoost-Funktion; Hyper-ARC-Active-Regelung; HyperSpot-Schweissen; 5 Speicherplätze für schnellen Zugriff; Fernbedienung; Einfache Synergy-Bedienung; Automatische Pulseinstellung; Fernbedienung optional.
@@ -834,6 +835,7 @@ Wirtschaftlicher Inverter, speziell für den mobilen Einsatz.
 MiniReiniger ist für die mobile elektrolytische Reinigung von Chromstahl beschrieben. Reinigung, Polieren und Signieren sind unterschiedliche Aufgaben und sollten in der Anfrage klar benannt werden.
 - Ein Foto der Naht sowie Angaben zu Werkstoff und vorhandenem Zubehör helfen bei der Auswahl. Das passende Mittel wird anhand der Geräteunterlagen bestimmt.
 - Für eine reine Markierungsaufgabe können Sie HCS 1 vergleichen. HyperCleaner CT 200 kombiniert WIG und Reinigung; prüfen Sie, welche Funktionen für Ihre Arbeit benötigt werden.
+- Bei Edelstahlrohren, Geländern und Behältern beschreiben Sie die zugänglichen Nahtflächen und die geforderte Oberflächenqualität. Elektrolytische Nahtreinigung entfernt Anlauffarben; Fettentfernung, Schleifen und eine dokumentierte Prüfung der Passivschicht sind getrennte Aufgaben.
 Weiterführend: [MAHE HCS 1](https://www.ves-tech.ch/produkte/reinigungsgeraete/hcs1/)
 Weiterführend: [MAHE HyperCleaner CT 200](https://www.ves-tech.ch/produkte/reinigungsgeraete/hypercleaner-ct200/)
 Besonderheiten: Leistungsstarke 200-Watt-Inverter-Stromquelle; MAHE-Pinselschutzsystem; Reinigen, Polieren und Markieren; Synergieprogramm für alle Verfahren; Umweltfreundlich und sicher reinigen.

@@ -944,7 +944,7 @@ def inquiry_qualification(lang, prefix):
               ("existing_model", "accessory repair", "text", 300),
               ("fault", "repair", "textarea", 1000),
               ("device_count", "calib", "number", 5),
-              ("application", "auto", "textarea", 300)]
+              ("application", "equipment auto", "textarea", 300)]
     rows = []
     for name, group, kind, limit in fields:
         fid = f"{prefix}-{name}"

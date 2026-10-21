@@ -525,6 +525,20 @@ also auch ohne Konfiguration.
 Enthalten: Pflichtfeldprüfung mit Meldung am Feld (`aria-invalid` +
 `aria-describedby`), Honeypot gegen Bots, Zustände „sendet/erfolgreich/Fehler".
 
+**Kompakte Benachrichtigungen (21.10.2026):** Kontaktangaben erscheinen einmal
+im Text, gefolgt von der gewählten Produkt-/Variantenbezeichnung mit Menge oder
+der Dienstleistung, der Kundennachricht und ausschliesslich ausgefüllten,
+passenden technischen Angaben. Leere optionale Angaben, Produkt-/Seiten-URLs,
+Besuchs- und Kampagnendaten entfallen. Alle fünf Sprachen verwenden dieselbe
+Struktur. Der Absendername ist fest `VES-TECH Swiss`; die bereinigte Kundenadresse
+steht im reservierten Web3Forms-Feld `replyto`. Zusätzliche Felder `email` und
+`phone` werden nicht parallel geschickt. Die Anbieterhülle/Einleitung stammt
+weiterhin von Web3Forms und ist keine eigene HTML-E-Mail-Vorlage. Der Browser
+prüft die E-Mail-Gültigkeit; Name und Telefon akzeptieren keine Steuerzeichen.
+Kopierbarer Fehlerentwurf und bestätigte Zusammenfassung enthalten exakt den
+Geschäftstext des jeweiligen Versands. Die Datenschutzhinweise nennen nur die
+tatsächlich gesendeten Geschäftsangaben.
+
 ## 11. Design
 
 Am 19.10.2026 hat der Inhaber nach den Bildentwürfen für Startseite,

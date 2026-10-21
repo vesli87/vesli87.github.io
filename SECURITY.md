@@ -59,6 +59,14 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   Capture-Listener schirmen sensible Linkziele vor automatischer Analytics ab;
   explizite Formularziele enthalten keine Parameter. Die automatische
   Formularmessung ist unterbunden, nur bestätigter Versand zählt als Erfolg.
+  Seit dem 21.10.2026 enthält der Nachrichtentext nur einmal die Kontaktdaten,
+  gewählte Produkte/Varianten mit Menge oder Dienstleistung, die Nachricht und
+  ausgefüllte passende technische Angaben. Besuchs-/Kampagnendaten und automatisch
+  ergänzte Seiten-/Produkt-URLs werden nicht mitgeschickt. Der feste Absendername
+  lautet `VES-TECH Swiss`; die Kundenadresse wird als `replyto` gesetzt, ohne
+  doppelte `email`-/`phone`-Blöcke. Steuerzeichen in Name/Telefon und vom Browser
+  als ungültig erkannte E-Mail-Adressen verhindern den Versand. Diese Prüfungen
+  ersetzen keine serverseitige Spamprüfung des Dienstes.
 * **Aktionen im Deploy sind auf Commit-Hashes festgenagelt**, nicht auf
   Etiketten – siehe [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 * **Der Deploy liefert nur die Website aus.** Eine Positivliste kopiert die

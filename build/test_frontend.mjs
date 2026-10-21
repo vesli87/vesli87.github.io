@@ -600,8 +600,10 @@ test('analytics exceptions cannot turn successful delivery into an error and met
   const f = form(); api.submitForm(f, 'Test', '', [item]);
   for (let i=0;i<10;i++) await Promise.resolve();
   assert.equal(f.resetCalled, true); assert.equal(f.fallback, undefined);
-  assert.match(payload.message, /Website context:\nsource: linkedin/);
-  assert.doesNotMatch(payload.message, /must-not-copy/);
+  assert.doesNotMatch(payload.message, /Website context|source:|medium:|campaign:|landing:|linkedin|must-not-copy/);
+  assert.equal(payload.from_name, 'VES-TECH Swiss');
+  assert.equal(payload.email, undefined);
+  assert.equal(payload.phone, undefined);
   assert.equal(f.fields.message, 'Test only');
 });
 test('invalid input and the honeypot never produce submit or success measurements', () => {
@@ -954,6 +956,116 @@ function inquiryForm(id = 'kontaktForm') {
 }
 const flush = async () => { for (let i = 0; i < 15; i++) await Promise.resolve(); };
 
+// Use the actual five generated runtime configurations, not translated test
+// fixtures: a missing JS_KEYS entry must fail here before it reaches production.
+const inquiryLocales = JSON.parse(execFileSync('python3', ['-c',
+  "import sys,json;sys.path.insert(0,'build');import core as C,render as R;print(json.dumps({l:{'config':json.loads(R.boot_json(l)[10:-1]),'contact':C.u_page(l,'contact'),'labels':{n:C.t(l,'inquiry_field_'+n) for n in ['application','material','thickness','power','existing_model','fault','device_count','timeframe']}} for l in C.LANGS}))"
+], { encoding: 'utf8' }));
+function localizedInquiry(lang, id, query = '', fetch) {
+  const locale = inquiryLocales[lang], f = inquiryForm(id);
+  for (const label of f.labels) {
+    const name = label.getAttribute().slice(id.length + 1);
+    if (locale.labels[name]) label.textContent = locale.labels[name];
+  }
+  const runtime = app({ fetch, prepare(c, elements) {
+    c.window.VT = structuredClone(locale.config);
+    c.window.VT.web3formsKey = 'offline-test-key';
+    c.window.VTAnalytics = { attribution() { throw Error('Visit metadata must not be read for email'); } };
+    c.location.pathname = locale.contact;
+    c.location.search = query;
+    elements.set('#' + id, f);
+  } });
+  return { ...runtime, f, locale };
+}
+for (const lang of Object.keys(inquiryLocales)) {
+  test(lang + ': compact cart email keeps product quantities and one contact, with an exact transport allowlist', async () => {
+    let destination, options;
+    const { api, f, locale, storage } = localizedInquiry(lang, 'cartForm', '', async (url, init) => {
+      destination = url; options = init;
+      return { ok: true, json: async () => ({ success: true }) };
+    });
+    f.fields.name.value = '  QA VES-TECH  ';
+    f.fields.email.value = '  qa@example.invalid  ';
+    f.fields.phone.value = '   ';
+    f.fields.message.value = '  MIG/MAG – Ø 1,0 mm; 230 V.  ';
+    api.addCart({ id: 'mg500' });
+    api.addCart({ id: 'hypermig-x' });
+    api.addCart({ id: 'hypermig-x' });
+    f.handlers.submit({ preventDefault() {} });
+    const payload = JSON.parse(options.body), tr = locale.config.i18n;
+    assert.deepEqual(Object.keys(payload).sort(), ['access_key', 'subject', 'from_name', 'message', 'botcheck', 'replyto'].sort());
+    assert.equal(destination, 'https://api.web3forms.com/submit');
+    assert.equal(options.method, 'POST'); assert.equal(options.referrerPolicy, 'no-referrer');
+    assert.equal(payload.from_name, 'VES-TECH Swiss'); assert.equal(payload.replyto, 'qa@example.invalid');
+    assert.equal(payload.subject, tr.mail_s_cart + ' (2 ' + tr.mail_s_item + ')');
+    assert.equal(payload.message, tr.mail_f_name + ': QA VES-TECH\n' + tr.mail_f_mail + ': qa@example.invalid\n\n' +
+      tr.mail_f_dev + ':\n- MG500 × 1\n- HyperMIG X × 2\n\n' + tr.mail_f_msg + ':\nMIG/MAG – Ø 1,0 mm; 230 V.');
+    assert.equal(payload.message.split('qa@example.invalid').length - 1, 1);
+    assert.doesNotMatch(payload.message, /https?:|Website context|direct_unknown|source:|medium:|landing:|mail_f_|inquiry_/);
+    assert.ok(!payload.message.includes(tr.mail_f_tel + ':'));
+    await flush();
+    assert.equal(api.readCart().length, 0); assert.equal(f.button.disabled, false);
+    assert.doesNotMatch(JSON.stringify([...storage]), /QA VES-TECH|qa@example.invalid|MIG\/MAG/);
+  });
+  test(lang + ': direct variants and individual used units retain their precise identity without URLs', async () => {
+    for (const [id, option] of [['mms', 'mms-3000-ex'], ['plasmafix-51', 'unit-centre']]) {
+      let payload;
+      const { f, locale } = localizedInquiry(lang, 'kontaktForm', '?product=' + id + '&option=' + option,
+        async (_, init) => { payload = JSON.parse(init.body); return { ok: true, json: async () => ({ success: true }) }; });
+      f.fields.phone.value = '+41 76 710 91 39';
+      f.fields.material.value = 'INOX';
+      f.fields.application.value = 'Ø 60 × 2 mm';
+      f.fields.fault.value = 'Hidden repair draft';
+      f.handlers.submit({ preventDefault() {} });
+      const product = locale.config.inquiryCatalog[id];
+      const choice = product.options.find(row => row.id === option);
+      assert.ok(payload.message.includes(product.n + ' · ' + choice.n + ' × 1'));
+      assert.ok(payload.message.includes(locale.config.i18n.mail_f_tel + ': +41 76 710 91 39'));
+      assert.ok(payload.message.includes(locale.config.i18n.mail_f_details + ':\n'));
+      assert.ok(payload.message.includes(locale.labels.application + ': Ø 60 × 2 mm'));
+      assert.ok(payload.message.includes(locale.labels.material + ': INOX'));
+      assert.doesNotMatch(payload.message, /Hidden repair draft|https?:|mail_f_details/);
+      await flush();
+      assert.equal(f.status.className, 'fstatus ok');
+    }
+  });
+  test(lang + ': all service contexts send only relevant, localized technical details', async () => {
+    for (const [service, relevant] of [['repair', ['existing_model', 'fault']], ['calib', ['device_count']], ['auto', ['application']]]) {
+      let payload;
+      const { f, locale } = localizedInquiry(lang, 'kontaktForm', '?service=' + service,
+        async (_, init) => { payload = JSON.parse(init.body); return { ok: true, json: async () => ({ success: true }) }; });
+      for (const [name, value] of Object.entries({ existing_model: 'MAHE 123', fault: 'E01', device_count: '2', application: 'Robot cell', material: 'Hidden material' })) {
+        f.fields[name].value = value;
+      }
+      f.handlers.submit({ preventDefault() {} });
+      assert.ok(payload.message.includes(locale.config.i18n.inquiry_service + ': ' + locale.config.inquiryServices[service].n));
+      for (const name of ['existing_model', 'fault', 'device_count', 'application', 'material']) {
+        assert.equal(payload.message.includes(locale.labels[name] + ':'), relevant.includes(name), service + ' / ' + name);
+      }
+      assert.doesNotMatch(payload.message, /https?:|Hidden material/);
+      await flush(); assert.equal(f.status.className, 'fstatus ok');
+    }
+  });
+  test(lang + ': unsafe single-line data and native-invalid emails stop before transport, with translated field feedback', () => {
+    for (const [field, value] of [['name', 'Customer\nBcc: another@example.invalid'], ['phone', '+41\u2028injected'], ['name', 'Name\u0000tail']]) {
+      let calls = 0;
+      const { api, f, locale } = localizedInquiry(lang, 'kontaktForm', '', () => { calls++; throw Error('must not send'); });
+      f.fields[field].value = value;
+      api.submitForm(f, 'Not sent', '');
+      assert.equal(calls, 0); assert.equal(f.fallback, undefined);
+      assert.equal(f.fields[field].attrs['aria-invalid'], 'true');
+      assert.equal(f.fields[field].nextElementSibling.textContent, locale.config.i18n.form_single_line);
+      assert.notEqual(locale.config.i18n.form_single_line, 'form_single_line');
+    }
+    let calls = 0;
+    const { api, f, locale } = localizedInquiry(lang, 'kontaktForm', '', () => { calls++; });
+    f.fields.email.value = 'bad,mail@example.invalid'; f.fields.email.validity = { typeMismatch: true };
+    api.submitForm(f, 'Not sent', '');
+    assert.equal(calls, 0);
+    assert.equal(f.fields.email.nextElementSibling.textContent, locale.config.i18n.form_invalid_mail);
+  });
+}
+
 test('cart v1 migrates IDs and quantities only; unknown products and forged choices are rejected', () => {
   const { api, storage } = app({ stored: [
     { ...item, name: '<script>untrusted</script>', url: 'https://evil.invalid', img: 'https://evil.invalid', qty: 3 },
@@ -965,7 +1077,8 @@ test('cart v1 migrates IDs and quantities only; unknown products and forged choi
   assert.deepEqual(Object.keys(api.readCart()[0]).sort(), ['id', 'option', 'qty']);
   assert.equal(storage.has('vt.cart.v1'), false);
   assert.doesNotMatch(storage.get('vt.cart.v2'), /untrusted|evil|Unknown/);
-  assert.match(api.itemLines(api.readCart()), /Beta DX.*https:\/\/www\.ves-tech\.ch\/produkte/);
+  assert.equal(api.itemLines(api.readCart()), '- Beta DX × 3');
+  assert.doesNotMatch(api.itemLines(api.readCart()), /https?:|untrusted|evil/);
   api.addCart({ id: 'constructor' });
   api.addCart({ id: 'mms', option: 'not-a-real-option' });
   assert.equal(api.readCart().length, 1);
@@ -1023,7 +1136,7 @@ test('an option can be changed to advice or merged, without accepting foreign op
   assert.equal(api.readCart()[0].qty, 2);
 });
 test('product context is available immediately without search or analytics and never edits a draft', async () => {
-  for (const path of ['/kontakt/', '/fr/contact/', '/it/contatto/']) {
+  for (const path of ['/kontakt/', '/fr/contact/', '/it/contatto/', '/en/contact/', '/es/contacto/']) {
     const f = inquiryForm(); f.fields.message.value = 'Already typing before anything loads';
     const calls = [];
     const { context } = app({ prepare(c, elements) {
@@ -1066,7 +1179,7 @@ test('service context reaches the message and language links while customer fiel
   const { api } = app({ prepare(c, elements, collections) {
     c.location.search = '?service=repair'; elements.set('#kontaktForm', f); collections.set('.langs a', [link]);
   } });
-  assert.match(api.contactBody(), /Reparatur\nhttps:\/\/www\.ves-tech\.ch\/service\/reparatur\//);
+  assert.equal(api.contactBody(), 'inquiry_service: Reparatur');
   assert.equal(link.href, 'https://www.ves-tech.ch/fr/contact/?service=repair');
   assert.equal(f.fields.message.value, 'Please advise');
   assert.equal(f.fields.fault.disabled, false);

@@ -617,7 +617,7 @@
   .citem .n{flex:1}
   .citem .n b{font-family:'Inter',system-ui,sans-serif;font-weight:700;font-size:16px;text-transform:none;letter-spacing:.01em}
   .citem .n span{display:block;color:var(--muted);font-size:14px}
-  .citem .rm{background:none;border:0;color:var(--muted-2);cursor:pointer;font-size:18px}
+  .citem .rm{display:grid;place-items:center;flex:0 0 44px;width:44px;height:44px;padding:0;background:none;border:0;color:var(--muted-2);cursor:pointer;font-size:18px}
   .citem .rm:hover{color:var(--accent-ink)}
   .cart .empty{padding:50px 24px;text-align:center;color:var(--muted)}
   .cart .form{border-top:1px solid var(--line);padding:18px 24px}
@@ -957,7 +957,7 @@
   /* -------------------------------------------------------- Anfrageliste */
   .cart .top .drawer-title{font-family:'Inter',system-ui,sans-serif;font-weight:700;font-size:21px;text-transform:none;letter-spacing:.01em}
   .citem .n .qty{display:inline-flex;align-items:center;gap:8px;margin-top:6px}
-  .citem .n .qty button{width:24px;height:24px;border:1px solid var(--line);background:var(--panel);border-radius:4px;cursor:pointer;color:var(--white);font-size:14px;line-height:1}
+  .citem .n .qty button{width:32px;height:32px;border:1px solid var(--line);background:var(--panel);border-radius:4px;cursor:pointer;color:var(--white);font-size:14px;line-height:1}
   .citem .n .qty button:hover{border-color:var(--accent-ink);color:var(--accent-ink)}
   .citem .n .qty output{min-width:22px;text-align:center;font-weight:600;font-size:14px}
 

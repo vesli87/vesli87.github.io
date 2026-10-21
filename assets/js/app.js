@@ -38,21 +38,6 @@
     }
     return props;
   }
-  function attributionText() {
-    try {
-      var values = window.VTAnalytics && window.VTAnalytics.attribution();
-      if (!values || !values.source) return '';
-      var lines = [];
-      ['source', 'medium', 'campaign', 'content', 'landing', 'product_id'].forEach(function (key) {
-        var value = values[key];
-        if (typeof value === 'string' && value && value.length <= 512 && !/[\r\n]/.test(value)) {
-          lines.push(key + ': ' + value);
-        }
-      });
-      return lines.length ? '\n\nWebsite context:\n' + lines.join('\n') : '';
-    } catch (err) { return ''; }
-  }
-
   /* Adressen aus dem localStorage sind nicht vertrauenswuerdig: dort schreibt
      zwar normalerweise nur diese Seite, aber ein href="javascript:…" waere
      anklickbarer Schadcode, und esc() allein verhindert das nicht - es
@@ -169,9 +154,8 @@
     return p ? p.n + (option ? ' · ' + option.n : '') : '';
   }
   function itemLines(items) {
-    return items.map(function (item) {
-      var p = catalogProduct(item.id);
-      return '- ' + itemLabel(item) + ' × ' + item.qty + '  (' + (VT.siteUrl || location.origin) + p.u + ')';
+    return cleanCart(items).map(function (item) {
+      return '- ' + itemLabel(item) + ' × ' + item.qty;
     }).join('\n');
   }
   function cleanCart(value) {
@@ -321,7 +305,7 @@
     if (contactSelection) return t('inquiry_product') + ':\n' + itemLines([contactSelection]);
     if (contactService) {
       var s = inquiryServices[contactService];
-      return t('inquiry_service') + ': ' + s.n + '\n' + (VT.siteUrl || location.origin) + s.u;
+      return t('inquiry_service') + ': ' + s.n;
     }
     return '';
   }
@@ -1161,9 +1145,21 @@
       var el = f.querySelector('[name=' + name + ']');
       if (!el || el.disabled || !data[name].trim()) return;
       var label = $$('label', f).filter(function (x) { return x.getAttribute('for') === el.id; })[0];
-      if (label) lines.push(label.textContent.trim() + ': ' + data[name]);
+      if (label) lines.push(label.textContent.trim() + ': ' + data[name].trim());
     });
-    return lines.length ? t('inquiry_details_title') + ':\n' + lines.join('\n') : '';
+    return lines.length ? t('mail_f_details') + ':\n' + lines.join('\n') : '';
+  }
+  function inquiryMessage(f, data, extraBody) {
+    var contact = [t('mail_f_name') + ': ' + data.name.trim(),
+      t('mail_f_mail') + ': ' + data.email.trim()];
+    if (data.phone.trim()) contact.push(t('mail_f_tel') + ': ' + data.phone.trim());
+    var sections = [contact.join('\n')];
+    if (extraBody) sections.push(extraBody);
+    if (data.message.trim()) sections.push(t('mail_f_msg') + ':\n' + data.message.trim());
+    var details = qualificationBody(f, data);
+    if (details) sections.push(details);
+    // Business content only. No visit, referral or analytics data are emailed.
+    return sections.join('\n\n');
   }
   function fieldError(el, msg) {
     el.setAttribute('aria-invalid', 'true');
@@ -1193,7 +1189,7 @@
     $$('[required]', f).forEach(function (el) {
       if (el.disabled) return;
       if (!el.value.trim()) { fieldError(el, t('form_required')); ok = false; }
-      else if (el.type === 'email' && !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(el.value.trim())) {
+      else if (el.type === 'email' && ((el.validity && el.validity.typeMismatch) || !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(el.value.trim()))) {
         fieldError(el, t('form_invalid_mail')); ok = false;
       }
     });
@@ -1205,6 +1201,9 @@
       var el = f.querySelector('[name=' + name + ']');
       if (el && !el.disabled && (el.value || '').length > fieldLimits[name]) {
         fieldError(el, t('form_too_long').replace('{n}', fieldLimits[name])); ok = false;
+      }
+      if (el && !el.disabled && (name === 'name' || name === 'phone') && /[\u0000-\u001f\u007f\u2028\u2029]/.test(el.value || '')) {
+        fieldError(el, t('form_single_line')); ok = false;
       }
     });
     if (!ok) { var first = f.querySelector('[aria-invalid]'); if (first) first.focus(); }
@@ -1299,20 +1298,12 @@
     var status = $('.fstatus', f);
     var data = snapshotFields(f);
     var contextKey = contactSelection ? rowKey(contactSelection) : contactService;
-    var details = qualificationBody(f, data);
     if (f.id === 'kontaktForm') extraBody = contactBody();
     /* Der Mailtext folgt der Sprache der Seite. Vorher war er fest deutsch:
        wer im Tessin 'Invia richiesta' klickte, bekam einen Entwurf mit
        'Name / Firma', 'Nachricht' und 'Gewuenschte Geraete'. Der Kasten
        darum herum war laengst uebersetzt - nur der Text darin nicht. */
-    var body = t('mail_f_name') + ': ' + data.name +
-      '\n' + t('mail_f_mail') + ': ' + data.email +
-      (data.phone ? '\n' + t('mail_f_tel') + ': ' + data.phone : '') +
-      (extraBody ? '\n\n' + extraBody : '') +
-      (details ? '\n\n' + details : '') +
-      (data.message ? '\n\n' + t('mail_f_msg') + ':\n' + data.message : '') +
-      '\n\n' + t('mail_f_sent') + ' ' + location.origin + location.pathname +
-      ' (' + (VT.lang || 'de') + ')' + attributionText();
+    var body = inquiryMessage(f, data, extraBody);
 
     var measurement = inquiryProperties(f, submittedCart || (f.id === 'kontaktForm' && contactSelection ? [contactSelection] : []));
     track('inquiry_submit', measurement);
@@ -1329,12 +1320,10 @@
       body: JSON.stringify({
         access_key: VT.web3formsKey,
         subject: subject,
-        from_name: data.name || 'VES-TECH Swiss',
-        email: data.email,
-        phone: data.phone,
+        from_name: 'VES-TECH Swiss',
         message: body,
         botcheck: (f.querySelector('[name=botcheck]') || {}).checked || false,
-        replyto: data.email
+        replyto: data.email.trim()
       })
     }, 15000).then(function (j) {
       f.dataset.sending = 'false';
@@ -1444,6 +1433,6 @@
     setIndex: function (value) { IDX = value; }, readContactContext: readContactContext,
     contactBody: contactBody, renderContactContext: renderContactContext,
     updateQualifications: updateQualifications, qualificationGroups: qualificationGroups,
-    snapshotFields: snapshotFields, qualificationBody: qualificationBody,
+    snapshotFields: snapshotFields, qualificationBody: qualificationBody, inquiryMessage: inquiryMessage,
     readCart: function () { return cart; }, setCart: function (value) { cart = value; } };
 }));

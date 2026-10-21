@@ -1042,7 +1042,7 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
 
 JS_KEYS += ["inquiry_product", "inquiry_service", "inquiry_option_unsure", "inquiry_context_invalid",
             "inquiry_summary_title", "inquiry_summary_note", "inquiry_summary_copy", "inquiry_summary_copied",
-            "inquiry_summary_copy_manual", "inquiry_details_title", "form_too_long", "form_invalid_count", "search_group_services"]
+            "inquiry_summary_copy_manual", "inquiry_details_title", "mail_f_details", "form_too_long", "form_invalid_count", "form_single_line", "search_group_services"]
 
 
 def boot_json(lang):

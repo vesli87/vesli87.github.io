@@ -3,5 +3,6 @@
   "cloudflare_analytics_token": "",
   "ahrefs_analytics_key": "",
   "ga4_measurement_id": "",
-  "newsletter_forms": ""
+  "newsletter_forms": "",
+  "newsletter_unsubscribe_forms": ""
 }

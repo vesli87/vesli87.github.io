@@ -58,12 +58,19 @@ class GrowthIntegrationsTests(unittest.TestCase):
             with patch.object(C,'setting',return_value=json.dumps(bad)),self.assertRaises(ValueError):
                 C.newsletter_forms()
 
+    def test_newsletter_cannot_activate_without_a_complete_unsubscribe_route(self):
+        good={lang:'https://example.sibforms.com/serve/PUBLIC_FORM_'+lang for lang in C.LANGS}
+        with patch.object(C,'setting',side_effect=lambda key, env: json.dumps(good) if key=='newsletter_forms' else ''), self.assertRaises(ValueError):
+            C.newsletter_forms()
+
     def test_subscription_is_separate_and_does_not_load_a_third_party(self):
         forms={lang:'https://example.sibforms.com/serve/PUBLIC_FORM_'+lang for lang in C.LANGS}
-        with patch.object(C,'newsletter_forms',return_value=forms):
+        unsubscribe={lang:'https://example.sibforms.com/serve/UNSUBSCRIBE_'+lang for lang in C.LANGS}
+        with patch.object(C,'newsletter_forms',return_value=forms), patch.object(C,'newsletter_unsubscribe_forms',return_value=unsubscribe):
             for lang in C.LANGS:
                 card=R.newsletter_html(lang)
                 self.assertIn('href="'+forms[lang]+'"',card)
+                self.assertIn('href="'+unsubscribe[lang]+'"',card)
                 self.assertIn('referrerpolicy="no-referrer"',card)
                 self.assertIn(R.e(C.t(lang,'newsletter_note')),card)
                 self.assertNotIn('<form',card)

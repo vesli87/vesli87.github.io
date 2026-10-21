@@ -283,6 +283,10 @@ Nachweis über den Eingang im Postfach oder einen qualifizierten Kunden.
 Sprachschlüsseln und den **im Brevo-Konto geprüften** HTTPS-Formularadressen auf
 `<name>.sibforms.com/serve/<id>`. Ohne vollständige Konfiguration gibt es keinen
 öffentlichen Anmeldeaufruf und keine Behauptung eines aktiven Newsletters.
+`newsletter_unsubscribe_forms` / `NEWSLETTER_UNSUBSCRIBE_FORMS` enthält im selben
+Format die fünf separat geprüften Abmeldeformulare. Ohne diese vollständige
+Zuordnung wird die Aktivierung abgebrochen. Der Footer bietet auch den direkten
+Abmeldeweg; dessen Nutzung wird nicht als Newsletter-Anmeldung gemessen.
 Keine API-Schlüssel, Tracking-SDKs, iframe oder Kontaktimporte. Der Footer verlinkt
 das jeweilige gehostete Formular ohne Referrer. Die Anmeldung bleibt unabhängig
 von Anfrage und Statistik-Zustimmung. Vor Veröffentlichung: Double-Opt-in,
@@ -294,6 +298,15 @@ Die fünf Bestätigungsseiten unter der jeweiligen Kontakt-URL + `newsletter/`
 enthalten keine Empfängerparameter und laden keine Analytik. Sie bleiben
 `noindex,follow`, ausserhalb von Sitemap und Messpfad-Allowlist. Brevo darf
 dorthin erst nach erfolgreichem Double-Opt-in weiterleiten.
+Aktivierungsprüfung vom 21.10.2026: fünf eigene DOI-Tests zugestellt, Absender und
+Reply-To geprüft, sprachrichtige Bestätigung und Listenzuordnung, danach alle
+fünf über die öffentlichen Formulare abgemeldet und als für E-Mail-Kampagnen
+geblocklistet bestätigt. SPF/DKIM/DMARC im zugestellten DE-Test PASS.
+Transaktionale Öffnungs-/Klickstatistik in Brevo anonymisiert; keine Aussage
+über die individuelle Aktivität von Abonnenten. Vor jeder späteren Kampagne
+Empfängersprache, bestätigte Einwilligung, Ausschluss geblocklisteter Kontakte
+und funktionierenden Abmeldelink erneut prüfen. Keine Kampagne ist durch die
+Einrichtung versandt oder geplant.
 
 Tagesberichte brauchen einheitliche Zeitzone Europe/Zurich. Den Vortag als
 vorläufig markieren und D-2 erneut prüfen (GA4 kann 24–48 Stunden nachverarbeiten).

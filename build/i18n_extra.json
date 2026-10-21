@@ -666,7 +666,7 @@
     "newsletter_intro": "Geräteneuheiten und Praxistipps zum Schweissen, Schneiden und Reinigen. Wählen Sie selbst, ob Sie informiert bleiben möchten.",
     "newsletter_cta": "Zum Newsletter anmelden",
     "newsletter_note": "Freiwillig, mit Bestätigung per E-Mail und jederzeitiger Abmeldung. Die Anmeldung erfolgt bei Brevo.",
-    "privacy_newsletter": "Für den freiwilligen Newsletter nutzen wir Brevo (Sendinblue SAS, Frankreich). Das verlinkte Anmeldeformular wird erst beim Öffnen bei Brevo geladen. Ihre E-Mail-Adresse, gewählte Sprache sowie der Nachweis Ihrer Anmeldung und Bestätigung werden dort zur Verwaltung des Abonnements verarbeitet. Erst nach Bestätigung des Links in der E-Mail werden Sie als Abonnent aufgenommen. Jede Ausgabe enthält einen Abmeldelink. Eine Geräteanfrage meldet Sie nicht automatisch zum Newsletter an. E-Mail-Adressen und Bestätigungslinks werden nicht an die Websiteanalytik gesendet.",
+    "privacy_newsletter": "Für den freiwilligen Newsletter nutzen wir Brevo (Sendinblue SAS, Frankreich). Das verlinkte Anmeldeformular wird erst beim Öffnen bei Brevo geladen. Ihre E-Mail-Adresse, gewählte Sprache sowie der Nachweis Ihrer Anmeldung und Bestätigung werden dort zur Verwaltung des Abonnements verarbeitet. Erst nach Bestätigung des Links in der E-Mail werden Sie als Abonnent aufgenommen. Jede Ausgabe enthält einen Abmeldelink. Eine Geräteanfrage meldet Sie nicht automatisch zum Newsletter an. E-Mail-Adressen und Bestätigungslinks werden nicht an die Websiteanalytik gesendet. Das Brevo-Formular nutzt Cloudflare Turnstile gegen automatisierte Anmeldungen. Cloudflare verarbeitet dafür technische Signale wie IP-Adresse und Browserinformationen zur Erkennung von Bots und zur Verbesserung dieses Schutzes. Öffnungen und Klicks der Bestätigungs-E-Mails werden anonymisiert ausgewertet; Zustell- und Anmeldenachweise werden zur Verwaltung des Abonnements verarbeitet.",
     "privacy_runtime_ga4": "Die Website verwendet keine Werbe-Cookies. Nach Ihrer Zustimmung verwendet Google Analytics 4 pseudonyme Analyse-Cookies. Umfang und Widerruf sind nachfolgend beschrieben. Schriften und Produktbilder werden lokal ausgeliefert; externe Herstellerbilder können als Ersatz geladen werden.",
     "privacy_analytics_purpose": "nach Ihrer Einwilligung Seitenaufrufe und ausgewählte Interaktionen auszuwerten;",
     "privacy_newsletter_purpose": "Ihnen nach bestätigter Anmeldung den freiwilligen Newsletter zu senden und Abmeldungen zu verwalten;",
@@ -674,7 +674,8 @@
     "newsletter_confirmed_desc": "Ihre Anmeldung zum technischen Newsletter von VES-TECH Swiss wurde bestätigt. Sie können sich über den Link in jeder Ausgabe wieder abmelden.",
     "newsletter_confirmed_body": "Vielen Dank für Ihr Interesse. Sie erhalten künftig Geräteneuheiten und Praxistipps von VES-TECH Swiss.",
     "newsletter_confirmed_note": "Jede Ausgabe enthält einen Abmeldelink. Eine erneute Anmeldung ist nicht erforderlich.",
-    "newsletter_confirmed_cta": "Zur Geräteübersicht"
+    "newsletter_confirmed_cta": "Zur Geräteübersicht",
+    "newsletter_unsubscribe": "Newsletter abbestellen"
   },
   "fr": {
     "locale": "fr_CH",
@@ -1342,7 +1343,7 @@
     "newsletter_intro": "Nouveautés et conseils pratiques pour le soudage, la découpe et le nettoyage. Choisissez de rester informé.",
     "newsletter_cta": "S’inscrire à la newsletter",
     "newsletter_note": "Inscription facultative, confirmation par e-mail et désinscription à tout moment. Le formulaire est hébergé par Brevo.",
-    "privacy_newsletter": "Nous utilisons Brevo (Sendinblue SAS, France) pour notre newsletter facultative. Le formulaire lié ne se charge chez Brevo que lorsque vous l’ouvrez. Votre adresse e-mail, la langue choisie et les preuves de votre inscription et de sa confirmation y sont traitées pour gérer l’abonnement. Votre abonnement ne prend effet qu’après confirmation du lien reçu par e-mail. Chaque envoi contient un lien de désinscription. Une demande de matériel ne vous abonne pas automatiquement. Les adresses e-mail et les liens de confirmation ne sont pas transmis aux outils de mesure du site.",
+    "privacy_newsletter": "Nous utilisons Brevo (Sendinblue SAS, France) pour notre newsletter facultative. Le formulaire lié ne se charge chez Brevo que lorsque vous l’ouvrez. Votre adresse e-mail, la langue choisie et les preuves de votre inscription et de sa confirmation y sont traitées pour gérer l’abonnement. Votre abonnement ne prend effet qu’après confirmation du lien reçu par e-mail. Chaque envoi contient un lien de désinscription. Une demande de matériel ne vous abonne pas automatiquement. Les adresses e-mail et les liens de confirmation ne sont pas transmis aux outils de mesure du site. Le formulaire Brevo utilise Cloudflare Turnstile contre les inscriptions automatisées. Cloudflare traite des signaux techniques, notamment l’adresse IP et les informations du navigateur, pour détecter les robots et améliorer cette protection. Les ouvertures et clics des e-mails de confirmation sont analysés de manière anonymisée ; les preuves de livraison et d’inscription servent à gérer l’abonnement.",
     "privacy_runtime_ga4": "Le site n’utilise pas de cookies publicitaires. Avec votre consentement, Google Analytics 4 utilise des cookies de mesure pseudonymes. Leur utilisation et le retrait du consentement sont décrits ci-dessous. Les polices et images de produits sont hébergées localement ; des images du fabricant peuvent être chargées en remplacement.",
     "privacy_analytics_purpose": "analyser les pages vues et certaines interactions avec votre consentement ;",
     "privacy_newsletter_purpose": "vous envoyer la newsletter facultative après confirmation de votre inscription et gérer les désinscriptions ;",
@@ -1350,7 +1351,8 @@
     "newsletter_confirmed_desc": "Votre inscription à la newsletter technique VES-TECH Swiss est confirmée. Vous pouvez vous désinscrire à l’aide du lien présent dans chaque envoi.",
     "newsletter_confirmed_body": "Merci de votre intérêt. Vous recevrez désormais les nouveautés et conseils pratiques de VES-TECH Swiss.",
     "newsletter_confirmed_note": "Chaque envoi contient un lien de désinscription. Il n’est pas nécessaire de vous inscrire à nouveau.",
-    "newsletter_confirmed_cta": "Voir les équipements"
+    "newsletter_confirmed_cta": "Voir les équipements",
+    "newsletter_unsubscribe": "Se désinscrire"
   },
   "it": {
     "locale": "it_CH",
@@ -2018,7 +2020,7 @@
     "newsletter_intro": "Novità e consigli pratici per saldatura, taglio e pulizia. Scelga se desidera rimanere informato.",
     "newsletter_cta": "Iscriversi alla newsletter",
     "newsletter_note": "Iscrizione facoltativa, conferma via e-mail e possibilità di disiscriversi in qualsiasi momento. Il modulo è ospitato da Brevo.",
-    "privacy_newsletter": "Per la newsletter facoltativa utilizziamo Brevo (Sendinblue SAS, Francia). Il modulo collegato viene caricato presso Brevo solo quando viene aperto. L’indirizzo e-mail, la lingua scelta e le prove di iscrizione e conferma vengono trattati per gestire l’abbonamento. L’iscrizione è effettiva solo dopo la conferma del link ricevuto via e-mail. Ogni invio contiene un link per disiscriversi. Una richiesta di apparecchiature non comporta l’iscrizione automatica. Gli indirizzi e-mail e i link di conferma non vengono trasmessi agli strumenti di analisi del sito.",
+    "privacy_newsletter": "Per la newsletter facoltativa utilizziamo Brevo (Sendinblue SAS, Francia). Il modulo collegato viene caricato presso Brevo solo quando viene aperto. L’indirizzo e-mail, la lingua scelta e le prove di iscrizione e conferma vengono trattati per gestire l’abbonamento. L’iscrizione è effettiva solo dopo la conferma del link ricevuto via e-mail. Ogni invio contiene un link per disiscriversi. Una richiesta di apparecchiature non comporta l’iscrizione automatica. Gli indirizzi e-mail e i link di conferma non vengono trasmessi agli strumenti di analisi del sito. Il modulo Brevo utilizza Cloudflare Turnstile contro le iscrizioni automatizzate. Cloudflare tratta segnali tecnici, come l’indirizzo IP e le informazioni del browser, per rilevare i bot e migliorare questa protezione. Aperture e clic delle e-mail di conferma sono analizzati in forma anonimizzata; le prove di consegna e iscrizione servono a gestire l’abbonamento.",
     "privacy_runtime_ga4": "Il sito non utilizza cookie pubblicitari. Con il suo consenso, Google Analytics 4 utilizza cookie di analisi pseudonimi. Utilizzo e revoca del consenso sono descritti di seguito. Font e immagini dei prodotti sono ospitati localmente; immagini del produttore possono essere caricate in sostituzione.",
     "privacy_analytics_purpose": "analizzare le visualizzazioni delle pagine e alcune interazioni con il suo consenso;",
     "privacy_newsletter_purpose": "inviarle la newsletter facoltativa dopo la conferma dell’iscrizione e gestire le disiscrizioni;",
@@ -2026,7 +2028,8 @@
     "newsletter_confirmed_desc": "La sua iscrizione alla newsletter tecnica VES-TECH Swiss è confermata. Può disiscriversi tramite il link presente in ogni invio.",
     "newsletter_confirmed_body": "Grazie per il suo interesse. Riceverà le novità e i consigli pratici di VES-TECH Swiss.",
     "newsletter_confirmed_note": "Ogni invio contiene un link per disiscriversi. Non è necessario iscriversi di nuovo.",
-    "newsletter_confirmed_cta": "Vedere le apparecchiature"
+    "newsletter_confirmed_cta": "Vedere le apparecchiature",
+    "newsletter_unsubscribe": "Disiscriversi"
   },
   "en": {
     "locale": "en_CH",
@@ -2694,7 +2697,7 @@
     "newsletter_intro": "Product news and practical tips for welding, cutting and cleaning. Choose whether you would like to stay informed.",
     "newsletter_cta": "Sign up for the newsletter",
     "newsletter_note": "Optional, with email confirmation and an unsubscribe link. The sign-up form is hosted by Brevo.",
-    "privacy_newsletter": "We use Brevo (Sendinblue SAS, France) for our optional newsletter. The linked sign-up form loads at Brevo only when you open it. Your email address, selected language and evidence of sign-up and confirmation are processed there to manage your subscription. You become a subscriber only after confirming the link received by email. Every newsletter includes an unsubscribe link. An equipment enquiry does not automatically subscribe you. Email addresses and confirmation links are not sent to website analytics.",
+    "privacy_newsletter": "We use Brevo (Sendinblue SAS, France) for our optional newsletter. The linked sign-up form loads at Brevo only when you open it. Your email address, selected language and evidence of sign-up and confirmation are processed there to manage your subscription. You become a subscriber only after confirming the link received by email. Every newsletter includes an unsubscribe link. An equipment enquiry does not automatically subscribe you. Email addresses and confirmation links are not sent to website analytics. The Brevo form uses Cloudflare Turnstile to prevent automated signups. Cloudflare processes technical signals, such as IP addresses and browser information, to detect bots and improve this protection. Opens and clicks in confirmation emails are analysed anonymously; delivery and subscription records are processed to manage the subscription.",
     "privacy_runtime_ga4": "The website uses no advertising cookies. With your consent, Google Analytics 4 uses pseudonymous analytics cookies. Their use and withdrawal of consent are described below. Fonts and product images are hosted locally; manufacturer images may load as a fallback.",
     "privacy_analytics_purpose": "analyse page views and selected interactions with your consent;",
     "privacy_newsletter_purpose": "send the optional newsletter after confirmed sign-up and manage unsubscribes;",
@@ -2702,7 +2705,8 @@
     "newsletter_confirmed_desc": "Your subscription to the VES-TECH Swiss technical newsletter is confirmed. You can unsubscribe using the link included in every email.",
     "newsletter_confirmed_body": "Thank you for your interest. You will receive equipment news and practical tips from VES-TECH Swiss.",
     "newsletter_confirmed_note": "Every email includes an unsubscribe link. You do not need to sign up again.",
-    "newsletter_confirmed_cta": "Browse equipment"
+    "newsletter_confirmed_cta": "Browse equipment",
+    "newsletter_unsubscribe": "Unsubscribe"
   },
   "es": {
     "locale": "es_CH",
@@ -3370,7 +3374,7 @@
     "newsletter_intro": "Novedades y consejos prácticos de soldadura, corte y limpieza. Elija si desea mantenerse informado.",
     "newsletter_cta": "Suscribirse al boletín",
     "newsletter_note": "Suscripción opcional, con confirmación por correo y posibilidad de darse de baja en cualquier momento. El formulario está alojado en Brevo.",
-    "privacy_newsletter": "Utilizamos Brevo (Sendinblue SAS, Francia) para nuestro boletín opcional. El formulario enlazado solo se carga en Brevo al abrirlo. Allí se tratan su dirección de correo, idioma elegido y pruebas de suscripción y confirmación para gestionar la suscripción. Solo se convierte en suscriptor tras confirmar el enlace recibido por correo. Cada envío incluye un enlace para darse de baja. Una consulta sobre equipos no le suscribe automáticamente. Las direcciones de correo y los enlaces de confirmación no se transmiten a los análisis del sitio.",
+    "privacy_newsletter": "Utilizamos Brevo (Sendinblue SAS, Francia) para nuestro boletín opcional. El formulario enlazado solo se carga en Brevo al abrirlo. Allí se tratan su dirección de correo, idioma elegido y pruebas de suscripción y confirmación para gestionar la suscripción. Solo se convierte en suscriptor tras confirmar el enlace recibido por correo. Cada envío incluye un enlace para darse de baja. Una consulta sobre equipos no le suscribe automáticamente. Las direcciones de correo y los enlaces de confirmación no se transmiten a los análisis del sitio. El formulario de Brevo utiliza Cloudflare Turnstile contra las inscripciones automatizadas. Cloudflare trata señales técnicas, como la dirección IP e información del navegador, para detectar bots y mejorar esta protección. Las aperturas y los clics de los correos de confirmación se analizan de forma anonimizada; los registros de entrega y suscripción se utilizan para gestionar la suscripción.",
     "privacy_runtime_ga4": "El sitio no utiliza cookies publicitarias. Con su consentimiento, Google Analytics 4 utiliza cookies de análisis seudónimas. Su uso y la retirada del consentimiento se describen a continuación. Las fuentes e imágenes de productos se alojan localmente; pueden cargarse imágenes del fabricante como alternativa.",
     "privacy_analytics_purpose": "analizar las visitas y determinadas interacciones con su consentimiento;",
     "privacy_newsletter_purpose": "enviarle el boletín opcional tras confirmar su suscripción y gestionar las bajas;",
@@ -3378,6 +3382,7 @@
     "newsletter_confirmed_desc": "Su suscripción al boletín técnico de VES-TECH Swiss está confirmada. Puede darse de baja mediante el enlace incluido en cada envío.",
     "newsletter_confirmed_body": "Gracias por su interés. Recibirá novedades de equipos y consejos prácticos de VES-TECH Swiss.",
     "newsletter_confirmed_note": "Cada envío incluye un enlace para darse de baja. No es necesario volver a inscribirse.",
-    "newsletter_confirmed_cta": "Ver los equipos"
+    "newsletter_confirmed_cta": "Ver los equipos",
+    "newsletter_unsubscribe": "Darse de baja"
   }
 }

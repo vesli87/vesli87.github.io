@@ -427,9 +427,9 @@ def ga4_measurement_id():
     return key
 
 
-def newsletter_forms():
-    """Reviewed hosted DOI forms, never an API credential or direct email endpoint."""
-    raw = setting("newsletter_forms", "NEWSLETTER_FORMS")
+def _newsletter_hosted_forms(key, env):
+    """Accept only reviewed, complete hosted Brevo form mappings."""
+    raw = setting(key, env)
     if not raw:
         return {}
     forms = json.loads(raw)
@@ -438,6 +438,18 @@ def newsletter_forms():
     for value in forms.values():
         if not isinstance(value, str) or not re.fullmatch(r"https://[a-z0-9-]+\.sibforms\.com/serve/[A-Za-z0-9_-]+={0,2}", value):
             raise ValueError("Newsletter link must be an HTTPS Brevo hosted form without query or fragment")
+    return forms
+
+
+def newsletter_unsubscribe_forms():
+    return _newsletter_hosted_forms("newsletter_unsubscribe_forms", "NEWSLETTER_UNSUBSCRIBE_FORMS")
+
+
+def newsletter_forms():
+    """Reviewed DOI forms require a tested public unsubscribe route in every language."""
+    forms = _newsletter_hosted_forms("newsletter_forms", "NEWSLETTER_FORMS")
+    if forms and not newsletter_unsubscribe_forms():
+        raise ValueError("Newsletter activation requires verified unsubscribe forms in every language")
     return forms
 
 

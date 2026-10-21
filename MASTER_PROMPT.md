@@ -1356,3 +1356,9 @@ Die fünf DOI-Bestätigungsseiten liegen unter der sprachspezifischen Kontakt-UR
 Analytik und bleiben noindex sowie ausserhalb der Sitemap/Messpfade. Brevo
 leitet erst nach bestätigter Anmeldung dorthin. Die statische Seite selbst ist
 kein Nachweis einer Anmeldung; dafür zählt ausschliesslich der Brevo-Status.
+Zusätzlich erfordert die Aktivierung fünf separat geprüfte öffentliche
+Abmeldeformulare in `newsletter_unsubscribe_forms`. Der Footer verlinkt sie
+ohne Analytik-Ereignis. Die fünf eigenen DOI-Tests vom 21.10.2026 wurden
+zugestellt, bestätigt und danach über diese Formulare für Marketing geblocklistet.
+Öffnungs- und Klickstatistik transaktionaler E-Mails ist in Brevo anonymisiert;
+Zustell- und Einwilligungsnachweise bleiben für die Verwaltung notwendig.

@@ -16,7 +16,7 @@ function visit({ consent = 'granted', dnt = '', gpc = false, search = '', referr
   let panelClick;
   const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch', token: '', ahrefsKey: 'test-public-key' },
     addEventListener(type, callback) { if (type === 'click') panelClick = callback; }, querySelector: () => ({ focus() {} }) };
-  const settings = { hidden: true, addEventListener() {}, focus() {} };
+  const settings = { hidden: true, setAttribute() {}, addEventListener() {}, focus() {} };
   const context = { URL, Date, navigator: { doNotTrack: dnt, globalPrivacyControl: gpc },
     location: new URL(canonical + search),
     localStorage: { getItem: key => key.endsWith('.v2') ? JSON.stringify(choice) : null,

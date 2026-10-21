@@ -633,12 +633,23 @@ Es werden keine neuen Leistungswerte, Ausstattungszusagen oder Preise erfunden.
 
 **Optionale Statistik mit Zustimmung.** Ahrefs und Cloudflare Web Analytics laden erst nach
 aktiver Zustimmung, mit gleichwertiger Ablehnen-Option und dauerhaft erreichbaren
-Statistik-Einstellungen. Die Zustimmung läuft nach 180 Tagen ab. Die Anfrageliste
+Datenschutzeinstellungen in der rechtlichen Fusszeile. Die Zustimmung läuft nach 180 Tagen ab. Die Anfrageliste
 und die Statistik-Auswahl liegen getrennt in localStorage. Ahrefs misst den Weg
 von Produktauswahl bis bestätigtem Formularversand, Cloudflare Ladezeiten.
 Die neue Zustimmung ist v2; ein früherer Cloudflare-Grant gilt dafür nicht.
 Registrierte Kampagnen werden maximal 24 Stunden in sessionStorage zugeordnet.
 Details, Ereignisdefinitionen, SDK-Prüfsumme und Datenschutzgrenzen: README.md.
+
+Seit dem 21.10.2026 zeigt die Einwilligung einen kurzen Einstieg «Ihre Privatsphäre»
+mit gleichwertigen Aktionen «Ohne Analyse» und «Analyse erlauben».
+Anbieter und Speicherfrist stehen in einem nativen Details-Bereich, die
+Datenschutzerklärung bleibt direkt verlinkt. Die Einstellungen lassen sich
+ohne Änderung schliessen (auch per Escape); der Fokus kehrt zur Fusszeile zurück.
+Die aktuelle Auswahl wird beim erneuten Öffnen genannt. GPC/DNT verhindern
+weiterhin jedes Laden; bei solchem Browsersignal wird keine erste Aufforderung
+angezeigt und die gesperrte Analyse in den Einstellungen erklärt. Alle Texte
+und die Datenschutzverweise gelten in DE/FR/IT/EN/ES. Umfang, Anbieter und
+180-Tage-Frist bleiben unverändert, vorhandene Entscheidungen werden respektiert.
 
 ## 12. Barrierefreiheit
 

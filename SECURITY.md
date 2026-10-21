@@ -47,6 +47,11 @@ Sprachen: Deutsch, Englisch, Tschechisch.
   `analytics.ahrefs.com`. Der Loader prüft URL, Referrer, GPC/DNT, bekannte
   Produkt-IDs und vollständige registrierte Kampagnenkombinationen. Suchtexte,
   Kundennamen, E-Mail-Adressen und Nachrichtentexte sind keine Analytics-Properties.
+  Die Datenschutzeinstellungen sind dauerhaft in der rechtlichen Fusszeile
+  erreichbar. Sie zeigen die gespeicherte Entscheidung und erlauben den Widerruf.
+  GPC/DNT unterdrücken die erste Einwilligungsaufforderung und sperren die
+  Freigabe; die Ursache bleibt in den Einstellungen sichtbar. Schliessen oder
+  Escape verändern die Entscheidung nicht und erteilen keine Einwilligung.
   Eigene Kampagnenzuordnung liegt höchstens 24 Stunden in sessionStorage;
   bei Widerruf wird sie entfernt. Der Formulardienst `api.web3forms.com` und Herstellerbilder
   von `mahe-online.de` sind ebenfalls ausdrücklich in der CSP genannt. Auf

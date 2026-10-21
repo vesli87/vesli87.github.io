@@ -296,18 +296,27 @@ function analytics({ saved, oldSaved, hostname = 'www.ves-tech.ch', search = '',
   referrer = '', searchPage = false, dnt = false, gpc = false, ahrefs = false,
   cloudflare = true, session = new Map(), storageThrows = false, config = {} } = {}) {
   const appended = [], events = {}, listeners = {}, documentEvents = {}, sent = [];
-  let reloads = 0, timeOffset = 0;
+  let reloads = 0, timeOffset = 0, settingsFocus = 0, actionFocus = 0;
+  const settingsEvents = {}, closeEvents = {};
+  const status = { hidden: true, textContent: '', dataset: {
+    granted: 'allowed', denied: 'declined', unset: 'not given', blocked: 'blocked by browser' } };
+  const close = { hidden: true, addEventListener(type, fn) { closeEvents[type] = fn; } };
+  const allow = { disabled: false }, details = { open: false };
   const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch',
     token: cloudflare ? 'a'.repeat(32) : '', ahrefsKey: ahrefs ? 'audit-public-key' : '' },
-    addEventListener: (name, fn) => { events[name] = fn; }, querySelector: () => ({ focus() {} }) };
-  const settings = { hidden: true, addEventListener() {}, focus() {} };
+    addEventListener: (name, fn) => { events[name] = fn; }, querySelector: () => ({ focus() { actionFocus++; } }) };
+  const settings = { hidden: true, attrs: {}, setAttribute(k,v) { this.attrs[k] = v; },
+    addEventListener(type, fn) { settingsEvents[type] = fn; },
+    focus(options) { settingsFocus++; this.lastFocusOptions = options; } };
   const analyticsConfig = { products: { 'beta-dx': 'schweissgeraete', 'hypermig-x': 'schweissgeraete' },
     campaigns: { launch: { source: 'linkedin', medium: 'organic_social', campaign: 'machines', content: 'day01' } },
     contactPath: '/kontakt/', servicePaths: { '/service/reparatur/': 'repair' },
     paths: ['/', '/produkte/', '/kontakt/', '/produkte/schweissgeraete/beta-dx/'], ...config };
   const context = { URL, Date: { now: () => Date.now() + timeOffset },
     document: { referrer, visibilityState: 'visible', getElementById: id => id === 'analyticsConsent' ? panel
-      : id === 'analyticsSettings' ? settings : searchPage ? {} : null,
+      : id === 'analyticsSettings' ? settings : id === 'analyticsStatus' ? status
+      : id === 'analyticsClose' ? close : id === 'analyticsAllow' ? allow
+      : id === 'analyticsDetails' ? details : id === 'srResults' && searchPage ? {} : null,
       querySelector: selector => selector === 'link[rel="canonical"]' && canonical ? { href: canonical } : null,
       addEventListener: (type, fn, capture) => { (documentEvents[type] ||= []).push({ fn, capture }); },
       createElement: () => ({ dataset: {}, attrs: {}, setAttribute(k, v) { this.attrs[k] = v; } }),
@@ -322,8 +331,11 @@ function analytics({ saved, oldSaved, hostname = 'www.ves-tech.ch', search = '',
     window: { VT: { lang: 'de', analytics: analyticsConfig }, addEventListener: (name, fn) => { listeners[name] = fn; } },
   };
   initAnalytics(context);
-  return { appended, panel, settings, listeners, documentEvents, context, sent, session,
+  return { appended, panel, settings, status, close, allow, details, listeners, documentEvents, context, sent, session,
     api: context.window.VTAnalytics, reloads: () => reloads,
+    currentChoice: () => saved, focusCounts: () => ({ settings: settingsFocus, action: actionFocus }),
+    openSettings() { settingsEvents.click(); }, closeSettings() { closeEvents.click(); },
+    escape() { let prevented = false; events.keydown({ key: 'Escape', preventDefault() { prevented = true; } }); return prevented; },
     load() { context.window.AhrefsAnalytics = { sendEvent(name, options) { sent.push({ name, props: options.props }); } };
       appended.find(script => script.src.includes('ahrefs')).onload(); },
     link(href, type = 'click', button = 0) {
@@ -364,6 +376,72 @@ test('analytics loads only once after consent and revocation reloads', () => {
   assert.equal(b.reloads(), 0);
   b.externalChoice({ value: 'denied', at: Date.now() });
   assert.equal(b.reloads(), 1);
+});
+test('privacy controls reopen a refusal and close without changing it or loading providers', () => {
+  const refusal = { value: 'denied', at: Date.now() - 1000 };
+  const a = analytics({ saved: refusal });
+  a.openSettings();
+  assert.equal(a.panel.hidden, false);
+  assert.equal(a.settings.attrs['aria-expanded'], 'true');
+  assert.equal(a.status.textContent, 'declined');
+  assert.equal(a.close.hidden, false);
+  assert.equal(a.focusCounts().action, 1);
+  a.details.open = true; a.closeSettings();
+  assert.equal(a.panel.hidden, true);
+  assert.equal(a.settings.attrs['aria-expanded'], 'false');
+  assert.equal(a.details.open, false);
+  assert.deepEqual(a.currentChoice(), refusal);
+  assert.equal(a.focusCounts().settings, 1);
+  assert.deepEqual(a.settings.lastFocusOptions, { preventScroll: true });
+  assert.equal(a.appended.length, 0);
+});
+test('reviewing an existing grant does not load twice and Escape preserves consent', () => {
+  const consent = granted(), a = analytics({ saved: consent });
+  assert.equal(a.appended.length, 1);
+  a.openSettings();
+  assert.equal(a.status.textContent, 'allowed');
+  assert.equal(a.escape(), true);
+  assert.deepEqual(a.currentChoice(), consent);
+  assert.equal(a.panel.hidden, true);
+  assert.equal(a.appended.length, 1);
+  assert.equal(a.reloads(), 0);
+});
+test('closing settings without a previous choice never implies permission', () => {
+  const a = analytics();
+  assert.equal(a.close.hidden, true);
+  assert.equal(a.escape(), false);
+  assert.equal(a.panel.hidden, false);
+  a.openSettings();
+  assert.equal(a.status.textContent, 'not given');
+  a.escape();
+  assert.equal(a.currentChoice(), undefined);
+  assert.equal(a.panel.hidden, true);
+  assert.equal(a.appended.length, 0);
+});
+test('browser privacy signals suppress the prompt and explain why opt-in is unavailable', () => {
+  for (const signal of [{gpc:true}, {dnt:true}]) {
+    const a = analytics(signal);
+    assert.equal(a.panel.hidden, true);
+    assert.equal(a.allow.disabled, true);
+    a.openSettings();
+    assert.equal(a.panel.hidden, false);
+    assert.equal(a.status.textContent, 'blocked by browser');
+    a.choose('granted');
+    assert.equal(a.currentChoice(), undefined);
+    assert.equal(a.appended.length, 0);
+    a.choose('denied');
+    assert.equal(a.currentChoice().value, 'denied');
+    assert.equal(a.panel.hidden, true);
+  }
+});
+test('an external refusal updates open settings without silently consenting', () => {
+  const a = analytics(); a.openSettings(); a.details.open = true;
+  a.externalChoice({value:'denied', at:Date.now()});
+  assert.equal(a.panel.hidden, false);
+  assert.equal(a.status.textContent, 'declined');
+  assert.equal(a.appended.length, 0);
+  a.choose('denied');
+  assert.equal(a.details.open, false);
 });
 test('analytics excludes previews, search, URL parameters and sensitive referrers', () => {
   for (const options of [{ hostname: 'localhost' }, { search: '?email=test@example.invalid' },

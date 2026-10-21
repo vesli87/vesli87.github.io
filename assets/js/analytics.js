@@ -12,6 +12,11 @@
 
   var panel = document.getElementById('analyticsConsent');
   var settings = document.getElementById('analyticsSettings');
+  var status = document.getElementById('analyticsStatus');
+  var close = document.getElementById('analyticsClose');
+  var allow = document.getElementById('analyticsAllow');
+  var details = document.getElementById('analyticsDetails');
+  var reviewing = false;
   var VT = window.VT || {}, config = VT.analytics || {};
   var products = config.products || {}, campaigns = config.campaigns || {};
   var services = config.servicePaths || {}, paths = config.paths || [];
@@ -333,9 +338,28 @@
       }
     }
   }
+  function renderControls() {
+    settings.setAttribute('aria-expanded', String(!panel.hidden));
+    if (close) close.hidden = !reviewing;
+    if (allow) allow.disabled = privacySignal();
+    if (status) {
+      var state = privacySignal() ? 'blocked' : choice ? choice.value : 'unset';
+      status.textContent = status.dataset[state];
+      status.hidden = !reviewing && state === 'unset';
+    }
+  }
+  function closePanel() {
+    reviewing = false;
+    panel.hidden = true;
+    if (details) details.open = false;
+    renderControls();
+    settings.focus({ preventScroll: true });
+  }
   function render() {
-    panel.hidden = choice !== null;
+    // A browser privacy signal already refuses measurement; do not nag for it.
+    panel.hidden = !reviewing && (choice !== null || privacySignal());
     settings.hidden = false;
+    renderControls();
     enable();
   }
   function revalidate() {
@@ -352,15 +376,25 @@
   panel.addEventListener('click', function (event) {
     var button = event.target.closest('[data-consent]');
     if (!button || ['granted', 'denied'].indexOf(button.dataset.consent) < 0) return;
+    if (button.dataset.consent === 'granted' && privacySignal()) return;
+    reviewing = false;
+    if (details) details.open = false;
     choice = { value: button.dataset.consent, at: Date.now() };
     try { env.localStorage.setItem(key, JSON.stringify(choice)); } catch (err) { /* this document only */ }
     if (!approved()) {
       queue = []; clearAttribution();
       if (loaded) { location.reload(); return; }
     }
-    render(); settings.focus();
+    render(); settings.focus({ preventScroll: true });
   });
-  settings.addEventListener('click', function () { panel.hidden = false; panel.querySelector('button').focus(); });
+  settings.addEventListener('click', function () {
+    reviewing = true; panel.hidden = false; renderControls();
+    panel.querySelector('[data-consent="denied"]').focus();
+  });
+  if (close) close.addEventListener('click', closePanel);
+  panel.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && reviewing) { event.preventDefault(); closePanel(); }
+  });
   window.addEventListener('storage', function (event) {
     if (event.key === key || event.key === null) revalidate();
   });

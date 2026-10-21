@@ -12,7 +12,7 @@ function observe(search, { lang = 'de', granted = true, referrer = '', pathname 
   const page = pathname || contact;
   const appended = [], sent = [];
   const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch', token: '', ahrefsKey: 'public-test-key' }, addEventListener() {}, querySelector: () => ({ focus() {} }) };
-  const settings = { hidden: true, addEventListener() {} };
+  const settings = { hidden: true, setAttribute() {}, addEventListener() {} };
   const config = { contactPath: contact, paths: [contact, page], products: { mms: 'schweissgeraete', 'plasmafix-51': 'occasion' },
     inquiryOptions: { mms: ['mms-2000c', 'mms-3000-ex'], 'plasmafix-51': ['unit-left', 'unit-centre', 'unit-right'] },
     servicePaths: { '/service/': 'overview', '/service/reparatur/': 'repair', '/service/kalibrierung/': 'calib', '/service/automation/': 'auto' }, campaigns: {} };

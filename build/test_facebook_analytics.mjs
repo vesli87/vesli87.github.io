@@ -19,7 +19,7 @@ function observe(search = '', { referrer = '', granted = true, gpc = false, dnt 
   const location = new URL(canonical + search);
   const panel = { hidden: true, dataset: { host: location.hostname, token: 'public-cf-test-token', ahrefsKey: 'public-ahrefs-test-key' },
     addEventListener(name, callback) { listeners['panel-' + name] = callback; }, querySelector: () => ({ focus() {} }) };
-  const settings = { hidden: true, addEventListener() {}, focus() {} };
+  const settings = { hidden: true, setAttribute() {}, addEventListener() {}, focus() {} };
   let choice = { value: granted ? 'granted' : 'denied', at: Date.now() - 1000 };
   const context = { URL, Date, location,
     navigator: { globalPrivacyControl: gpc, doNotTrack: dnt },

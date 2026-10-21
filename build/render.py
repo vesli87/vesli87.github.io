@@ -924,6 +924,7 @@ def footer(lang):
         <a href="{e(C.u_page(lang,'imprint'))}">{e(C.t(lang,'nav_impressum'))}</a> ·
         <a href="{e(C.u_page(lang,'terms'))}">{e(C.t(lang,'nav_agb'))}</a> ·
         <a href="{e(C.u_page(lang,'privacy'))}">{e(C.t(lang,'nav_datenschutz'))}</a></span>
+      {analytics_settings_button(lang)}
     </div>
   </div>
 </footer>
@@ -1083,6 +1084,14 @@ def boot_script(lang):
     return "<script>" + boot_json(lang) + "</script>"
 
 
+def analytics_settings_button(lang):
+    if not C.analytics_enabled():
+        return ""
+    return (f'<button class="analytics-settings" type="button" id="analyticsSettings" hidden '
+            f'aria-controls="analyticsConsent" aria-expanded="false">'
+            f'{e(C.t(lang, "analytics_settings"))}</button>')
+
+
 def analytics_html(lang):
     token = C.cloudflare_analytics_token()
     ahrefs = C.ahrefs_analytics_key()
@@ -1090,18 +1099,31 @@ def analytics_html(lang):
         return ""
     provider = "both" if token and ahrefs else "cloudflare" if token else "ahrefs"
     return f'''<section class="analytics-consent" id="analyticsConsent" hidden
-        aria-label="{e(C.t(lang, 'analytics_title'))}" data-token="{e(token)}"
+        aria-labelledby="analyticsTitle" data-token="{e(token)}"
         data-ahrefs-key="{e(ahrefs)}"
         data-host="{e(C.CUSTOM_DOMAIN)}">
-      <p><strong>{e(C.t(lang, 'analytics_title'))}</strong></p>
-      <p>{e(C.t(lang, 'analytics_text_' + provider))}
-        <a href="{e(C.u_page(lang, 'privacy'))}">{e(C.t(lang, 'nav_datenschutz'))}</a></p>
+      <div class="consent-header">
+        <h2 id="analyticsTitle">{e(C.t(lang, 'analytics_title'))}</h2>
+        <button class="consent-close" id="analyticsClose" type="button" hidden
+          aria-label="{e(C.t(lang, 'analytics_close'))}"><span aria-hidden="true">×</span></button>
+      </div>
+      <p>{e(C.t(lang, 'analytics_intro'))}</p>
+      <p class="consent-status" id="analyticsStatus" hidden role="status"
+        data-granted="{e(C.t(lang, 'analytics_state_granted'))}"
+        data-denied="{e(C.t(lang, 'analytics_state_denied'))}"
+        data-unset="{e(C.t(lang, 'analytics_state_unset'))}"
+        data-blocked="{e(C.t(lang, 'analytics_state_blocked'))}"></p>
+      <details class="consent-details" id="analyticsDetails">
+        <summary>{e(C.t(lang, 'analytics_details'))}</summary>
+        <p>{e(C.t(lang, 'analytics_text_' + provider))}</p>
+        <p>{e(C.t(lang, 'analytics_storage'))}</p>
+      </details>
       <div class="consent-actions">
         <button type="button" data-consent="denied">{e(C.t(lang, 'analytics_decline'))}</button>
-        <button type="button" data-consent="granted">{e(C.t(lang, 'analytics_accept'))}</button>
+        <button type="button" data-consent="granted" id="analyticsAllow">{e(C.t(lang, 'analytics_accept'))}</button>
       </div>
+      <a class="consent-privacy" href="{e(C.u_page(lang, 'privacy'))}">{e(C.t(lang, 'analytics_privacy_link'))}</a>
     </section>
-    <button class="analytics-settings" type="button" id="analyticsSettings" hidden>{e(C.t(lang, 'analytics_settings'))}</button>
     <script src="{_ver('/assets/js/analytics.js')}" integrity="{script_integrity('assets/js/analytics.js')}" defer></script>'''
 
 

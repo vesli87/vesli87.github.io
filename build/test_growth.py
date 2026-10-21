@@ -72,6 +72,16 @@ class GrowthTests(unittest.TestCase):
                 self.assertEqual(mobile.count('data-product-consult="' + pid + '"'), 1)
                 self.assertIn('href="tel:' + C.COMPANY['phone_href'] + '"', html)
 
+    def test_email_alternative_is_a_local_button_only_when_the_provider_is_configured(self):
+        for lang in C.LANGS:
+            with patch.object(C, 'web3forms_key', return_value='test-public-key'):
+                for html in (PG.page_contact(lang)[1], R.cart_drawer(lang)):
+                    self.assertIn('type="button" data-email-draft', html)
+                    self.assertIn(R.e(C.t(lang, 'form_email_draft')), html)
+                self.assertIn(C.t(lang, 'form_unconfirmed'), R.boot_json(lang))
+            with patch.object(C, 'web3forms_key', return_value=''):
+                self.assertEqual(R.inquiry_email_action(lang), '')
+
     def test_ad_registry_accepts_only_complete_public_tuples(self):
         records = C.analytics_campaigns()
         for source in ('google', 'bing', 'linkedin', 'facebook', 'instagram'):

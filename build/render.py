@@ -854,6 +854,7 @@ def cart_drawer(lang):
     {inquiry_next_steps(lang)}
     {form_note(lang)}
     <button class="send" type="submit">{e(C.t(lang,'f_send'))}</button>
+    {inquiry_email_action(lang)}
     <p class="fstatus" role="status" aria-live="polite"></p>
   </form>
   {inquiry_summary(lang, 'cartForm')}
@@ -939,6 +940,11 @@ def form_note(lang):
     key = "form_note_direct" if C.web3forms_key() else "form_note_mail"
     return (f'<p class="form-note">{e(C.t(lang, key))} '
             f'<a href="{e(C.u_page(lang, "privacy"))}">{e(C.t(lang, "nav_datenschutz"))}</a></p>')
+
+
+def inquiry_email_action(lang):
+    return (f'<button class="btn ghost inquiry-email" type="button" data-email-draft>'
+            f'{e(C.t(lang, "form_email_draft"))}</button>') if C.web3forms_key() else ''
 
 
 def inquiry_qualification(lang, prefix):
@@ -1041,7 +1047,7 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
            "search_no_results_help", "search_did_you_mean", "search_all_results",
            "search_group_products", "search_group_cats", "search_group_procs",
            "search_group_dl", "search_min_chars", "form_sending", "form_success",
-           "form_error", "form_required", "form_invalid_mail", "search_popular",
+           "form_error", "form_unconfirmed", "form_required", "form_invalid_mail", "search_popular",
            "lupe_open", "lupe_close", "lupe_in", "lupe_out",
            "slide_pause", "slide_play",
              "mail_h", "mail_p", "mail_copy", "mail_open", "mail_copied",

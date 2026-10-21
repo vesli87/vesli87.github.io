@@ -177,6 +177,14 @@ serverseitig erzwungene CAPTCHA-Prüfung bzw. ein eigener validierender Endpunkt
 nötig. CAPTCHA nur zusammen mit Providerkonfiguration, CSP, Datenschutzhinweis und
 barrierefreiem Versandtest integrieren; ein sichtbares Widget allein genügt nicht.
 
+Kontakt und Anfrageliste bieten zusätzlich die ausdrücklich gewählte Vorbereitung
+eines E-Mail-Entwurfs. Dieser bleibt auf der aktuellen Seite, übernimmt dieselbe
+Validierung und enthält nur passende Anfragedaten. Er sendet weder einen
+Formular-POST noch eine E-Mail und öffnet ohne weiteren Klick kein Mailprogramm.
+Persönlicher Inhalt gelangt nicht in Linkattribute, Analytics oder persistenten
+Speicher. Der Besucher sendet die E-Mail selbst. Ein verlorenes Transportergebnis
+wird als unbestätigt bezeichnet, ohne automatischen Wiederholungsversuch.
+
 ## Vorfall und Rückkehr zu einem geprüften Stand
 
 1. Bei Verdacht den betroffenen Zugang sperren/erneuern und Anmeldeprotokolle prüfen.

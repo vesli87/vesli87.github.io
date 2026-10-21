@@ -1296,6 +1296,7 @@ def page_contact(lang):
     {R.inquiry_next_steps(lang)}
     {R.form_note(lang)}
     <button class="send" type="submit">{e(C.t(lang,'f_send'))}</button>
+    {R.inquiry_email_action(lang)}
     <p class="fstatus" role="status" aria-live="polite"></p>
   </form>
   {R.inquiry_summary(lang, 'kontaktForm')}

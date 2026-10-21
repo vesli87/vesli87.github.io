@@ -1878,6 +1878,8 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
 .kform h2{font-size:26px;line-height:1.25;margin:0 0 12px}
 .form-intro{color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 20px}
 .contact-direct{margin-top:24px}
+.inquiry-email{margin-top:12px;max-width:100%;white-space:normal;text-align:center;overflow-wrap:anywhere}
+@media print{.inquiry-email{display:none!important}}
 .summary-direct{margin-top:18px}
 .summary-direct a{color:var(--accent-ink);text-decoration:underline}
 .product-quick-contact{display:none}

@@ -1391,3 +1391,25 @@ bleiben. Nicht verfügbarer privater Speicher verwirft keine lokale Auswahl.
 Storage-Ereignisse behalten ihre einzelnen Snapshots und die Revisionsprüfung
 für bereits abgesendete Mengen. Regressionen decken auch das Zusammenspiel
 zwischen Produktreitern und dem echten Analytics-Guard ab.
+
+## 32. Direkter E-Mail-Entwurf als zusätzlicher Anfrageweg (21.10.2026)
+
+Kontakt und Anfrageliste bieten bei konfiguriertem Web3Forms einen ausdrücklich
+gewählten E-Mail-Entwurf. Dieselbe Validierung, bekannte Produkte/Varianten,
+Mengen und passende technische Felder gelten auch dort. Die Vorbereitung bleibt
+im aktuellen Dokument, sendet keinen POST, öffnet kein Mailprogramm und zählt
+nicht als übermittelte Anfrage. Erst der eigene Knopf im Entwurf öffnet das
+Mailprogramm; die eigentliche E-Mail sendet der Besucher selbst.
+Während einer laufenden Übermittlung sind beide Wege vorübergehend gesperrt.
+Personenbezogene Angaben stehen weder in einem href noch im Speicher oder
+in Analytics. Entwurf und Formular bleiben getrennt von der Newsletteranmeldung.
+
+Bei verlorenem Netzwerk-/HTTP-/JSON-Ergebnis heisst die Meldung ausdrücklich,
+dass die Übermittlung nicht bestätigt werden konnte; sie behauptet keine sichere
+Ablehnung. Eine ausdrückliche Provider-Ablehnung behält ihre Fehlermeldung.
+Es gibt keine automatische Wiederholung. Der Entwurf bleibt kopierbar; gesperrte,
+fehlende oder synchron/asynchron fehlschlagende Clipboard-APIs führen zur
+manuellen Textauswahl. Der benannte Entwurfsbereich erhält Tastaturfokus.
+DE/FR/IT/EN/ES verwenden dieselbe Logik mit vollständig übersetzten Texten.
+Dies ist ein unabhängiger Anfrageweg, kein Beleg für die Behebung eines
+Spam-Filters beim Formulardienst oder für eine Zustellung im Postfach.

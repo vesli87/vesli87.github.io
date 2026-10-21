@@ -1292,6 +1292,9 @@
       f.appendChild(box);
     }
     if (!box) { toast(t('opened_mail')); return; }
+    box.tabIndex = -1;
+    box.setAttribute('role', 'region');
+    box.setAttribute('aria-label', t('mail_h'));
     box.innerHTML =
       '<p class="mfall-h">' + esc(t('mail_h', 'Anfrage bereit zum Senden')) + '</p>' +
       '<p class="mfall-p">' + esc(t('mail_p', 'Ihr Mailprogramm sollte sich geoeffnet haben. ' +
@@ -1310,18 +1313,34 @@
       try { window.location.href = link; } catch (err) { /* copyable text remains */ }
     });
     box.querySelector('.mfall-copy').addEventListener('click', function () {
-      var ta = box.querySelector('.mfall-t');
-      ta.select();
-      var ok = false;
-      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
-      if (navigator.clipboard && !ok) {
-        navigator.clipboard.writeText(body).then(function () { toast(t('mail_copied', 'Kopiert')); })
-          .catch(function () { toast(t('mail_copy_manual')); });
-      } else {
-        toast(t(ok ? 'mail_copied' : 'mail_copy_manual', ok ? 'Kopiert' : 'Bitte von Hand markieren'));
-      }
+      copyInquiryText(box.querySelector('.mfall-t'), body, 'mail_copied', 'mail_copy_manual');
     });
+    if (box.focus) box.focus({ preventScroll: true });
     box.scrollIntoView({ block: 'nearest' });
+  }
+
+  function copyInquiryText(textarea, body, copiedKey, manualKey) {
+    function manualCopy() {
+      textarea.select();
+      var copied = false;
+      try { copied = document.execCommand('copy'); } catch (err) { /* manual selection remains */ }
+      toast(t(copied ? copiedKey : manualKey));
+    }
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(body).then(function () { toast(t(copiedKey)); }).catch(manualCopy);
+        return;
+      }
+    } catch (err) { /* A restricted clipboard still permits manual selection. */ }
+    manualCopy();
+  }
+
+  function prepareEmail(f, subject, extraBody) {
+    if (f.dataset.sending === 'true' || (f.querySelector('[name=botcheck]') || {}).checked || !validate(f)) return;
+    if (f.id === 'kontaktForm') extraBody = contactBody();
+    // An explicit alternative prepares a local draft. It neither submits to
+    // the provider nor opens a mail app until the visitor chooses that action.
+    mailtoFallback(f, subject, inquiryMessage(f, snapshotFields(f), extraBody), false);
   }
 
   function confirmedSummary(f, body) {
@@ -1337,19 +1356,7 @@
     var textarea = $('.inquiry-summary-text', box);
     textarea.value = body;
     $('.inquiry-summary-copy', box).addEventListener('click', function () {
-      function manualCopy() {
-        textarea.select();
-        var copied = false;
-        try { copied = document.execCommand('copy'); } catch (err) { /* manual selection remains */ }
-        toast(t(copied ? 'inquiry_summary_copied' : 'inquiry_summary_copy_manual'));
-      }
-      try {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(body).then(function () { toast(t('inquiry_summary_copied')); }).catch(manualCopy);
-          return;
-        }
-      } catch (err) { /* A restricted clipboard still permits manual copying. */ }
-      manualCopy();
+      copyInquiryText(textarea, body, 'inquiry_summary_copied', 'inquiry_summary_copy_manual');
     });
     box.hidden = false;
   }
@@ -1359,6 +1366,7 @@
     if ((f.querySelector('[name=botcheck]') || {}).checked) return;
     if (!validate(f)) return;
     var btn = f.querySelector('button[type=submit]');
+    var emailButton = $('[data-email-draft]', f);
     var status = $('.fstatus', f);
     var data = snapshotFields(f);
     var contextKey = contactSelection ? rowKey(contactSelection) : contactService;
@@ -1375,6 +1383,7 @@
 
     f.dataset.sending = 'true';
     btn.disabled = true;
+    if (emailButton) emailButton.disabled = true;
     if (status) { status.className = 'fstatus'; status.textContent = t('form_sending'); }
 
     request('https://api.web3forms.com/submit', {
@@ -1392,6 +1401,7 @@
     }, 15000).then(function (j) {
       f.dataset.sending = 'false';
       btn.disabled = false;
+      if (emailButton) emailButton.disabled = false;
       if (j && j.success === true) {
         // Count the accepted request once, not the send click or both success
         // messages. Optional tracking cannot change the delivery result.
@@ -1444,7 +1454,10 @@
       track('inquiry_error', Object.assign({}, measurement, { reason: 'network' }));
       f.dataset.sending = 'false';
       btn.disabled = false;
-      if (status) { status.className = 'fstatus err'; status.textContent = t('form_error'); }
+      if (emailButton) emailButton.disabled = false;
+      // A lost response is not proof of rejection: the service might already
+      // have accepted the request. Do not silently retry or assert failure.
+      if (status) { status.className = 'fstatus err'; status.textContent = t('form_unconfirmed'); }
       mailtoFallback(f, subject, body, false);
     });
   }
@@ -1457,19 +1470,21 @@
 
   var cartForm = $('#cartForm');
   if (cartForm) {
-    cartForm.addEventListener('submit', function (ev) {
-      ev.preventDefault();
+    function cartInquiry(emailOnly) {
       if (!cart.length) { toast(t('cart_empty')); return; }
       var submitted = cart.map(function (x) {
         return Object.assign({}, x, { revision: cartRevision[rowKey(x)] || 0 });
       });
       var lines = itemLines(submitted);
       /* Einzahl und Mehrzahl: "1 articles" wollen wir niemandem schicken. */
-      submitForm(cartForm,
+      (emailOnly ? prepareEmail : submitForm)(cartForm,
         t('mail_s_cart') + ' (' + cart.length + ' ' +
           t(cart.length === 1 ? 'mail_s_item1' : 'mail_s_item') + ')',
         t('mail_f_dev') + ':\n' + lines, submitted);
-    });
+    }
+    cartForm.addEventListener('submit', function (ev) { ev.preventDefault(); cartInquiry(false); });
+    var cartEmail = $('[data-email-draft]', cartForm);
+    if (cartEmail) cartEmail.addEventListener('click', function () { cartInquiry(true); });
   }
   var kForm = $('#kontaktForm');
   if (kForm) {
@@ -1478,6 +1493,8 @@
       ev.preventDefault();
       submitForm(kForm, t('mail_s_kont'));
     });
+    var contactEmail = $('[data-email-draft]', kForm);
+    if (contactEmail) contactEmail.addEventListener('click', function () { prepareEmail(kForm, t('mail_s_kont')); });
   }
 
   /* ================================ Start =============================== */
@@ -1491,7 +1508,7 @@
     }
   });
   return { cleanCart: cleanCart, quantity: quantity, safeUrl: safeUrl, mark: mark, norm: norm,
-    loadIndex: loadIndex, submitForm: submitForm, addCart: addCart, rmCart: rmCart,
+    loadIndex: loadIndex, submitForm: submitForm, prepareEmail: prepareEmail, addCart: addCart, rmCart: rmCart,
     rowKey: rowKey, setQty: setQty, setOption: setOption, itemLines: itemLines,
     productChoice: productChoice, updateProductLinks: updateProductLinks, search: search,
     setIndex: function (value) { IDX = value; }, readContactContext: readContactContext,

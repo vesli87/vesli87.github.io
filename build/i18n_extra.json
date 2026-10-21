@@ -675,7 +675,9 @@
     "newsletter_confirmed_body": "Vielen Dank für Ihr Interesse. Sie erhalten künftig Geräteneuheiten und Praxistipps von VES-TECH Swiss.",
     "newsletter_confirmed_note": "Jede Ausgabe enthält einen Abmeldelink. Eine erneute Anmeldung ist nicht erforderlich.",
     "newsletter_confirmed_cta": "Zur Geräteübersicht",
-    "newsletter_unsubscribe": "Newsletter abbestellen"
+    "newsletter_unsubscribe": "Newsletter abbestellen",
+    "form_email_draft": "E-Mail-Entwurf vorbereiten",
+    "form_unconfirmed": "Die Übermittlung konnte nicht bestätigt werden. Ihre Angaben bleiben erhalten. Sie können uns direkt anrufen oder den E-Mail-Entwurf nutzen."
   },
   "fr": {
     "locale": "fr_CH",
@@ -1352,7 +1354,9 @@
     "newsletter_confirmed_body": "Merci de votre intérêt. Vous recevrez désormais les nouveautés et conseils pratiques de VES-TECH Swiss.",
     "newsletter_confirmed_note": "Chaque envoi contient un lien de désinscription. Il n’est pas nécessaire de vous inscrire à nouveau.",
     "newsletter_confirmed_cta": "Voir les équipements",
-    "newsletter_unsubscribe": "Se désinscrire"
+    "newsletter_unsubscribe": "Se désinscrire",
+    "form_email_draft": "Préparer une demande par e-mail",
+    "form_unconfirmed": "La transmission n’a pas pu être confirmée. Vos informations sont conservées sur cette page. Vous pouvez nous appeler ou utiliser le brouillon d’e-mail."
   },
   "it": {
     "locale": "it_CH",
@@ -2029,7 +2033,9 @@
     "newsletter_confirmed_body": "Grazie per il suo interesse. Riceverà le novità e i consigli pratici di VES-TECH Swiss.",
     "newsletter_confirmed_note": "Ogni invio contiene un link per disiscriversi. Non è necessario iscriversi di nuovo.",
     "newsletter_confirmed_cta": "Vedere le apparecchiature",
-    "newsletter_unsubscribe": "Disiscriversi"
+    "newsletter_unsubscribe": "Disiscriversi",
+    "form_email_draft": "Prepara una richiesta via e-mail",
+    "form_unconfirmed": "Non è stato possibile confermare l’invio. I vostri dati rimangono su questa pagina. Potete chiamarci o utilizzare la bozza e-mail."
   },
   "en": {
     "locale": "en_CH",
@@ -2706,7 +2712,9 @@
     "newsletter_confirmed_body": "Thank you for your interest. You will receive equipment news and practical tips from VES-TECH Swiss.",
     "newsletter_confirmed_note": "Every email includes an unsubscribe link. You do not need to sign up again.",
     "newsletter_confirmed_cta": "Browse equipment",
-    "newsletter_unsubscribe": "Unsubscribe"
+    "newsletter_unsubscribe": "Unsubscribe",
+    "form_email_draft": "Prepare an email enquiry",
+    "form_unconfirmed": "Submission could not be confirmed. Your details remain on this page. You can call us directly or use the email draft."
   },
   "es": {
     "locale": "es_CH",
@@ -3383,6 +3391,8 @@
     "newsletter_confirmed_body": "Gracias por su interés. Recibirá novedades de equipos y consejos prácticos de VES-TECH Swiss.",
     "newsletter_confirmed_note": "Cada envío incluye un enlace para darse de baja. No es necesario volver a inscribirse.",
     "newsletter_confirmed_cta": "Ver los equipos",
-    "newsletter_unsubscribe": "Darse de baja"
+    "newsletter_unsubscribe": "Darse de baja",
+    "form_email_draft": "Preparar consulta por correo",
+    "form_unconfirmed": "No se ha podido confirmar el envío. Sus datos permanecen en esta página. Puede llamarnos o utilizar el borrador de correo."
   }
 }

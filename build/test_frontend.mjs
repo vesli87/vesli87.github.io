@@ -35,10 +35,12 @@ function app({ stored = [], fetch = async () => ({ ok: true, json: async () => (
       registrations.push({ type, fn, capture: capture === true || capture?.capture === true });
     },
     createElement() {
-      const textarea = { value: '', select() {} };
-      const copy = { addEventListener() {} };
+      const textarea = { value: '', select() { this.selected = true; } };
+      const copy = { addEventListener(type, fn) { this[type] = fn; } };
       const open = { addEventListener(type, fn) { this[type] = fn; } };
       const element = { querySelector: s => s === '.mfall-t' ? textarea : s === '.mfall-copy' ? copy : s === '.mfall-open' ? open : null,
+        attrs: {}, setAttribute(key, value) { this.attrs[key] = value; },
+        focus(options) { this.focused = true; this.focusOptions = options; },
         scrollIntoView() {}, remove() { this.removed = true; } };
       created.push(element); return element;
     },
@@ -1044,11 +1046,13 @@ function inquiryForm(id = 'kontaktForm') {
   }));
   const labels = Object.values(fields).map(field => ({ getAttribute: () => field.id, textContent: field.name }));
   return {
-    id, dataset: {}, fields, wrappers, labels, handlers: {}, button: { disabled: false }, status: {}, contextBox: {},
+    id, dataset: {}, fields, wrappers, labels, handlers: {}, button: { disabled: false },
+    emailButton: { addEventListener(type, fn) { this[type] = fn; } }, status: {}, contextBox: {},
     addEventListener(type, fn) { this.handlers[type] = fn; }, appendChild(node) { this.fallback = node; },
     reset() { this.resetCalled = true; Object.values(fields).forEach(field => { field.value = ''; }); },
     querySelector(s) {
       if (s === 'button[type=submit]') return this.button;
+      if (s === '[data-email-draft]') return this.emailButton;
       if (s === '.fstatus') return this.status;
       if (s === '.mfall') return this.fallback || null;
       if (s === '[data-inquiry-context]') return this.contextBox;
@@ -1602,3 +1606,68 @@ for (const lang of ['de','fr','it','en','es']) {
     }
   });
 }
+
+for (const lang of ['de','fr','it','en','es']) {
+  for (const id of ['kontaktForm','cartForm']) {
+    test(lang + ': ' + id + ' email alternative preserves the exact enquiry without an external submission', () => {
+      let requests = 0; const events = [];
+      const {api,f,context,storage,locale} = localizedInquiry(lang,id,'?product=mms&option=mms-3000-ex',()=>{requests++;throw Error('No transport expected');});
+      context.window.VTAnalytics.track = name => {events.push(name);return true;};
+      f.fields.name.value = 'Synthetic <customer>';
+      f.fields.message.value = 'A private enquiry <img src=x onerror=alert(1)>';
+      if (id === 'cartForm') {
+        api.addCart({id:'mms',option:'mms-3000-ex'}); api.setQty('mms::mms-3000-ex',2); api.addCart({id:'mg500'});
+      }
+      f.emailButton.click();
+      const draft=f.fallback.querySelector('.mfall-t').value;
+      assert.match(draft,/MMS 3000 EX/);
+      if(id==='cartForm') {assert.match(draft,/MMS 3000 EX × 2/);assert.match(draft,/MG500 × 1/);assert.equal(api.readCart().length,2);}
+      assert.match(draft,/Synthetic <customer>/);assert.match(draft,/<img src=x onerror=alert\(1\)>/);
+      assert.doesNotMatch(f.fallback.innerHTML,/<img src=x|Synthetic <customer>/);
+      assert.ok(f.fallback.innerHTML.includes(locale.config.i18n.mail_p));
+      assert.equal(f.fallback.focused,true);
+      assert.equal(f.fallback.tabIndex,-1);
+      assert.equal(requests,0);assert.equal(context.location.href,'');assert.equal(f.resetCalled,undefined);
+      assert.ok(!events.some(name=>/inquiry_(submit|success|error)/.test(name)));
+      assert.doesNotMatch(JSON.stringify([...storage]),/Synthetic|private enquiry|test@example/);
+    });
+  }
+}
+test('email preparation respects validation, the honeypot and an already running submission', async () => {
+  for(const reason of ['invalid','honeypot','sending']) {
+    const {api,f,context} = localizedInquiry('en','kontaktForm','',()=>{throw Error('No network');});
+    if(reason==='invalid')f.fields.email.value='broken';
+    if(reason==='honeypot') {const original=f.querySelector;f.querySelector=function(s){return s==='[name=botcheck]'?{checked:true}:original.call(this,s);};}
+    if(reason==='sending')f.dataset.sending='true';
+    f.emailButton.click();
+    assert.equal(f.fallback,undefined,reason);assert.equal(context.location.href,'');
+  }
+});
+test('draft copying remains usable when clipboard access throws, rejects or is unavailable', async () => {
+  for(const mode of ['throws','rejects','getter','unavailable']) {
+    const {api,f,context} = localizedInquiry('en','kontaktForm');
+    api.prepareEmail(f,'Enquiry');
+    const draft=f.fallback.querySelector('.mfall-t');
+    context.document.execCommand=()=>false;
+    if(mode==='throws')context.navigator.clipboard={writeText(){throw Error('Denied');}};
+    if(mode==='rejects')context.navigator.clipboard={writeText:async()=>{throw Error('Denied');}};
+    if(mode==='getter')Object.defineProperty(context.navigator,'clipboard',{get(){throw Error('Denied');}});
+    f.fallback.querySelector('.mfall-copy').click();await flush();
+    assert.equal(draft.selected,true,mode);assert.match(draft.value,/Please advise/);
+  }
+});
+test('uncertain transport is distinguished from an explicit rejection and never auto-retries', async () => {
+  for(const mode of ['offline','http','json','rejected']) {
+    let calls=0;
+    const {api,f,locale}=localizedInquiry('en','kontaktForm','',async()=>{
+      calls++;
+      if(mode==='offline')throw Error('Offline');
+      if(mode==='http')return {ok:false,status:503};
+      return {ok:true,json:async()=>{if(mode==='json')throw Error('Lost response');return {success:false};}};
+    });
+    api.submitForm(f,'Enquiry');await flush();
+    assert.equal(f.status.textContent,locale.config.i18n[mode==='rejected'?'form_error':'form_unconfirmed'],mode);
+    assert.equal(calls,1);assert.equal(f.resetCalled,undefined);assert.equal(f.fields.message.value,'Please advise');
+    assert.equal(f.button.disabled,false);assert.ok(f.fallback);
+  }
+});

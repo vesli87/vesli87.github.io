@@ -368,14 +368,36 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
   Inhalt, Metadaten, canonical/hreflang, JSON-LD, Navigation und Asset-Pfade
   bleiben relevant. Bestehende Daten werden nicht künstlich zurückgesetzt.
 - `robots.txt` mit Sitemap-Verweis
+- Seit 21.10.2026 bleiben die fuenf Such-Einstiegsseiten crawlbar, damit
+  Suchmaschinen ihr `noindex,follow` lesen koennen. Ergebnis-URLs mit dem
+  Parameter `q` werden weiterhin vom Crawlen ausgeschlossen, sowohl als
+  erster Parameter als auch nach anderen Parametern. Ein Crawl-Verbot ist
+  kein Ersatz fuer `noindex` und kein Schutz privater Daten.
+- `data/PRODUCT_SEO.json` enthaelt fuer alle 81 Produkte gepruefte Titel,
+  vollstaendige Beschreibungen und lokalisierte Geraetearten in allen fuenf
+  Sprachen. Die Metadaten werden nicht mitten im Satz abgeschnitten.
+  Marken und Modellpaare bleiben erhalten, einschliesslich SAF-FRO PlasmaFix
+  51 / Oerlikon PlasmaFix P+T. Die Geraeteart steht bei MAHE auch sichtbar
+  ueber dem Produktnamen. `validate_editorial_guides()` stoppt den Build vor
+  dem Ersetzen von Dateien bei fehlenden Produkten, Sprachen, Modellnamen,
+  unvollstaendigen Beschreibungen oder zu langen Texten. Neue Produkte und
+  Namensaenderungen brauchen daher passende Suchtexte.
+- `data/CATEGORY_COMPARISONS.json` definiert sichtbare Vergleiche auf
+  bestehenden Unterkategorien: MPT-Schneidtische und Theta-Plasmabrenner.
+  Zellen stammen ausschliesslich aus den vorhandenen Produktspezifikationen,
+  Beschriftungen aus `SPECK` und den vorhandenen Uebersetzungen. Keine
+  berechneten Schnittdicken, erfundenen Optionen oder neuen URLs. Die
+  Tabellen sind vorgerendert, mit Produktlinks, Zeilenkoepfen und einer
+  per Tastatur bedienbaren Scrollregion fuer schmale Bildschirme.
 - Seit 20.10.2026 enthalten die 405 Produkt-URLs zusätzlich die Bild-Erweiterung
   der Sitemap mit ihrem tatsächlich angezeigten Hauptbild. Keine UI-Symbole,
   neuen Bilddateien oder zusätzlichen Browser-Downloads. Das inhaltsabhängige
   `lastmod` bleibt unverändert; Bilder werden dadurch zur Entdeckung angeboten,
   nicht als bereits indexiert oder als Rich Result zugesagt.
 - `data/SEARCH_LANDINGS.json` pflegt eigene Titel, Beschreibungen und sichtbare
-  Hauptüberschriften für die bestehenden Kategorien Schweissgeräte und Plasma
-  sowie die Unterkategorien CNC-Schneidtische und Plasmabrenner, DE/FR/IT/EN/ES.
+  Hauptüberschriften für ausgewählte bestehende Kategorien und Unterkategorien,
+  darunter Schweissgeräte, Plasma, Nahtreinigung, CNC-Schneidtische und Brenner,
+  DE/FR/IT/EN/ES.
   `validate_search_landings()` prüft Sprachvollständigkeit, bestehende Ziele,
   Eindeutigkeit und Textgrenzen vor dem Ersetzen generierter Seiten. URLs,
   Produktspezifikationen und das Design bleiben unverändert.

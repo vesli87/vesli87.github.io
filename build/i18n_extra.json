@@ -435,10 +435,10 @@
         "<p>Die Kalibrierung erfolgt nach Vereinbarung in der Partnerwerkstatt in Herisau AR. Mehrere Geräte lassen sich in einem gemeinsamen Termin effizient prüfen. Zur Terminvereinbarung erreichen Sie uns unter <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
       ]
     ],
-    "svc_auto_title": "Schweissautomation und Schneidautomation | VES-TECH Swiss",
+    "svc_auto_title": "MAHE-Plasmaautomation und CNC-Schneidtische | VES-TECH Swiss",
     "svc_auto_desc": "Automation mit MAHE: Theta Automationsstromquellen und CNC-Plasmaschneidtische MPT mit MyPlasm CNC. Aufbau, Inbetriebnahme und Einweisung.",
-    "svc_auto_h1": "Schweissautomation und Schneidautomation",
-    "svc_auto_lead": "Für wiederkehrende Schweissnähte und Zuschnitte bietet das MAHE-Programm Lösungen zur Automation. Wir unterstützen Sie bei der Auswahl und Inbetriebnahme.",
+    "svc_auto_h1": "Automation für Plasmaschneiden und CNC-Zuschnitt",
+    "svc_auto_lead": "MAHE Theta Automationsstromquellen und MPT-CNC-Schneidtische für wiederkehrende Zuschnitte. Wir unterstützen Sie bei Auswahl, Inbetriebnahme und Einweisung.",
     "svc_auto_body": [
       [
         "Plasmaschneiden mit CNC",
@@ -1083,10 +1083,10 @@
         "<p>L’étalonnage a lieu à l’atelier de Herisau AR, sur rendez-vous. Regrouper plusieurs appareils lors d’un même rendez-vous permet de les contrôler successivement avec une seule mise en place du matériel de mesure. Appelez-nous au <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
       ]
     ],
-    "svc_auto_title": "Automatisation du soudage et de la découpe | VES-TECH Swiss",
+    "svc_auto_title": "Automatisation plasma et tables CNC MAHE | VES-TECH Swiss",
     "svc_auto_desc": "Automatisation avec MAHE : sources Theta Automation et tables de découpe plasma CNC MPT avec MyPlasm CNC. Montage, mise en service et formation à l’utilisation.",
-    "svc_auto_h1": "Automatisation du soudage et de la découpe",
-    "svc_auto_lead": "La gamme MAHE propose des solutions d’automatisation pour les soudures et les découpes répétitives. Nous vous accompagnons dans le choix et la mise en service.",
+    "svc_auto_h1": "Automatisation de la découpe plasma et découpe CNC",
+    "svc_auto_lead": "Sources MAHE Theta Automation et tables plasma CNC MPT pour les découpes répétitives. Nous vous accompagnons dans le choix, la mise en service et la prise en main.",
     "svc_auto_body": [
       [
         "Découpe plasma avec CNC",
@@ -1731,10 +1731,10 @@
         "<p>La calibrazione si esegue nell’officina di Herisau AR, su appuntamento. Raggruppare più apparecchi nello stesso giorno permette di predisporre la strumentazione una sola volta e procedere con le misurazioni. Telefonate: <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
       ]
     ],
-    "svc_auto_title": "Automazione di saldatura e taglio | VES-TECH Swiss",
+    "svc_auto_title": "Automazione plasma e tavoli CNC MAHE | VES-TECH Swiss",
     "svc_auto_desc": "Automazione con MAHE: generatori Theta Automation e tavoli di taglio al plasma CNC MPT con MyPlasm CNC. Montaggio, messa in servizio e formazione all’uso.",
-    "svc_auto_h1": "Automazione di saldatura e taglio",
-    "svc_auto_lead": "La gamma MAHE offre soluzioni di automazione per saldature e tagli ripetitivi. Vi affianchiamo nella scelta e nella messa in servizio.",
+    "svc_auto_h1": "Automazione del taglio plasma e taglio CNC",
+    "svc_auto_lead": "Generatori MAHE Theta Automation e tavoli plasma CNC MPT per tagli ripetitivi. Vi affianchiamo nella scelta, nella messa in servizio e nella formazione all’uso.",
     "svc_auto_body": [
       [
         "Taglio al plasma con CNC",
@@ -2066,10 +2066,10 @@
     "svc_calib_desc": "Welding power source calibration to EN 60974-14 with a report. For businesses operating factory production control under EN 1090.",
     "svc_calib_h1": "Welding equipment calibration to EN 60974-14",
     "svc_calib_lead": "During calibration, we check whether the values displayed by your welding equipment agree with the measured values. The report provides evidence for your production control records.",
-    "svc_auto_title": "Welding and Cutting Automation | VES-TECH Swiss",
+    "svc_auto_title": "MAHE plasma automation and CNC cutting tables | VES-TECH",
     "svc_auto_desc": "MAHE automation: Theta power sources for automated systems and MPT CNC plasma cutting tables with MyPlasm CNC. Setup, commissioning and instruction.",
-    "svc_auto_h1": "Welding and cutting automation",
-    "svc_auto_lead": "The MAHE range offers automation solutions for repetitive welds and cutting tasks. We help you select and commission the equipment.",
+    "svc_auto_h1": "Plasma cutting automation and CNC cutting",
+    "svc_auto_lead": "MAHE Theta automation power sources and MPT CNC plasma tables for repeat cutting tasks. We support equipment selection, commissioning and operator instruction.",
     "about_title": "About VES-TECH Swiss · Herisau Workshop & MAHE Equipment",
     "about_desc": "VES-TECH Swiss, owned by Martin Veselovsky: MAHE welding and cutting equipment, workshop service in Herisau AR and calibration to EN 60974-14.",
     "about_h1": "The person behind VES-TECH Swiss",
@@ -2613,7 +2613,7 @@
     "home_desc": "Soldadura, corte por plasma, limpieza y automatización MAHE en Suiza. Equipos PlasmaFix reacondicionados y servicio en Herisau AR con cita previa.",
     "home_h1": "Equipos MAHE para soldadura, corte, limpieza y automatización",
     "all_title": "Todos los equipos · Gama MAHE y máquinas usadas | VES-TECH Swiss",
-    "all_desc": "{n} artículos en VES-TECH Swiss: equipos MAHE MIG/MAG, TIG, MMA, corte por plasma y limpieza electrolítica, además de máquinas usadas. Precios bajo consulta.",
+    "all_desc": "{n} artículos: equipos MAHE MIG/MAG, TIG, MMA, corte por plasma y limpieza electrolítica, además de equipos usados. Precio bajo consulta.",
     "all_h1": "Todos los equipos",
     "all_lead": "La gama MAHE, organizada por procesos, junto con equipos usados revisados. Servicio en Suiza y asesoramiento personal del técnico.",
     "subcategory_guide_title": "Qué tener en cuenta al elegir un equipo",
@@ -2714,10 +2714,10 @@
     "svc_calib_desc": "Calibración de fuentes de corriente de soldadura según EN 60974-14 con informe. Para empresas con control de producción en fábrica según EN 1090.",
     "svc_calib_h1": "Calibración de equipos de soldadura según EN 60974-14",
     "svc_calib_lead": "Durante la calibración comprobamos si los valores indicados por su equipo de soldadura coinciden con los medidos. El informe aporta documentación para su control de producción.",
-    "svc_auto_title": "Automatización de soldadura y corte | VES-TECH Swiss",
+    "svc_auto_title": "Automatización del plasma y mesas CNC MAHE | VES-TECH",
     "svc_auto_desc": "Automatización MAHE: fuentes Theta para sistemas automatizados y mesas de corte por plasma CNC MPT con MyPlasm CNC. Montaje, puesta en servicio e instrucciones.",
-    "svc_auto_h1": "Automatización de soldadura y corte",
-    "svc_auto_lead": "La gama MAHE ofrece soluciones de automatización para soldaduras repetitivas y tareas de corte. Le ayudamos a seleccionar y poner en servicio los equipos.",
+    "svc_auto_h1": "Automatización del corte por plasma y corte CNC",
+    "svc_auto_lead": "Fuentes MAHE Theta Automation y mesas plasma CNC MPT para cortes repetitivos. Le ayudamos con la selección, la puesta en servicio y las instrucciones de uso.",
     "about_title": "Sobre VES-TECH Swiss · Taller de Herisau y equipos MAHE",
     "about_desc": "VES-TECH Swiss, de Martin Veselovsky: equipos MAHE de soldadura y corte, servicio de taller en Herisau AR y calibración según EN 60974-14.",
     "about_h1": "La persona detrás de VES-TECH Swiss",

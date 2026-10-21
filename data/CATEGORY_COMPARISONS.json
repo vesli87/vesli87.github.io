@@ -1,0 +1,76 @@
+[
+  {
+    "id": "cnc-tables",
+    "cat": "plasmaschneiden",
+    "sub": "Schneidtische",
+    "products": [
+      "mpt-3001",
+      "mpt-2501"
+    ],
+    "fields": [
+      "Arbeitsbereich",
+      "Steuerung",
+      "Stromquelle"
+    ],
+    "copy": {
+      "de": {
+        "title": "MPT-Schneidtische im direkten Vergleich",
+        "note": "Wählen Sie den Arbeitsbereich nach den grössten Bauteilen. Stromquelle, Aufstellung und gewünschte Schnittqualität werden gemeinsam festgelegt."
+      },
+      "fr": {
+        "title": "Comparaison des tables de découpe MPT",
+        "note": "Choisissez la surface de travail selon les pièces les plus grandes. La source, l’implantation et la qualité de coupe souhaitée se définissent ensemble."
+      },
+      "it": {
+        "title": "Confronto dei tavoli di taglio MPT",
+        "note": "Scegliete l’area di lavoro in base ai pezzi più grandi. Generatore, installazione e qualità di taglio desiderata vanno definiti insieme."
+      },
+      "en": {
+        "title": "Compare MPT cutting tables",
+        "note": "Choose the working area for your largest components. The power source, installation and required cut quality are selected together."
+      },
+      "es": {
+        "title": "Comparación de mesas de corte MPT",
+        "note": "Elija el área de trabajo según las piezas más grandes. La fuente, la instalación y la calidad de corte deseada se definen conjuntamente."
+      }
+    }
+  },
+  {
+    "id": "plasma-torches",
+    "cat": "zubehoer",
+    "sub": "Plasmabrenner",
+    "products": [
+      "pshb65",
+      "pshb125",
+      "pshb160",
+      "psab65",
+      "psab125"
+    ],
+    "fields": [
+      "Für",
+      "Längen"
+    ],
+    "copy": {
+      "de": {
+        "title": "Welcher Plasmabrenner passt zu welchem Theta?",
+        "note": "Die Zuordnung folgt den Produktangaben. Anschluss, Ausführung und benötigte Länge werden für Ihre Anlage bestätigt."
+      },
+      "fr": {
+        "title": "Quelle torche plasma pour quel Theta ?",
+        "note": "L’association suit les indications des produits. Le raccordement, la version et la longueur nécessaire sont confirmés pour votre installation."
+      },
+      "it": {
+        "title": "Quale torcia plasma per quale Theta?",
+        "note": "L’abbinamento segue le indicazioni dei prodotti. Collegamento, versione e lunghezza necessaria vengono confermati per il vostro impianto."
+      },
+      "en": {
+        "title": "Which plasma torch fits each Theta?",
+        "note": "Pairings follow the product information. The connection, version and required length are confirmed for your installation."
+      },
+      "es": {
+        "title": "¿Qué antorcha de plasma corresponde a cada Theta?",
+        "note": "Las combinaciones siguen los datos de los productos. La conexión, la versión y la longitud necesaria se confirman para su instalación."
+      }
+    }
+  }
+]

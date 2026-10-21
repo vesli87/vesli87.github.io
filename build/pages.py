@@ -838,12 +838,32 @@ def buying_guide(lang, cid):
             + f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
 
 
+def category_comparison(lang, cid, sub):
+    row = next((item for item in C.CATEGORY_COMPARISONS if (item['cat'], item['sub']) == (cid, sub)), None)
+    if not row:
+        return ''
+    copy, ident = row['copy'][lang], 'compare-' + row['id']
+    head = ''.join(f'<th scope="col">{e(C.trK(lang, key))}</th>' for key in row['fields'])
+    body = ''
+    for pid in row['products']:
+        product = C.BY_ID[pid]
+        cells = ''.join(f'<td>{e(C.trV(lang, product["specs"][key]))}</td>' for key in row['fields'])
+        body += (f'<tr><th scope="row"><a href="{e(C.u_prod(lang, product))}">'
+                 f'{e(C.pFullName(lang, product))}</a></th>{cells}</tr>')
+    return (f'<div class="catalog-comparison"><h3 id="{e(ident)}">{e(copy["title"])}</h3>'
+            f'<p>{e(copy["note"])}</p><div class="spectab-scroll" tabindex="0" role="region" '
+            f'aria-labelledby="{e(ident)}"><table class="spectab">'
+            f'<caption class="sr-only">{e(copy["title"])}</caption><thead><tr>'
+            f'<th scope="col">{e(C.t(lang,"spec_model"))}</th>{head}</tr></thead>'
+            f'<tbody>{body}</tbody></table></div></div>')
+
+
 def subcategory_guide(lang, cid, sub):
     guide = C.SUBCATEGORY_GUIDES[cid][sub][lang]
     criteria = ''.join(f'<dt>{e(title)}</dt><dd>{e(text)}</dd>'
                        for title, text in guide['criteria'])
     return (f'<section class="buying-guide"><h2>{e(C.t(lang, "subcategory_guide_title"))}</h2>'
-            f'<dl>{criteria}</dl>'
+            f'<dl>{criteria}</dl>' + category_comparison(lang, cid, sub)
             + editorial_links(lang, C.GUIDE_LINKS['subcategories'][cid][sub])
             + f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
 
@@ -955,52 +975,11 @@ def page_product(lang, p):
     url = C.u_prod(lang, p)
     alts = C.alternates("prod", p=p)
     c = C.CAT_BY_ID[p["cat"]]
-    # Titel muss pro Sprache eindeutig sein: die übersetzte Kategorie sorgt dafür,
-    # auch wenn die Unterkategorie in allen drei Sprachen gleich heisst (z. B. "Theta").
-    sub_t, cat_t = C.subT(lang, p["sub"]), C.catT(lang, c)
-    # nm ist der uebersetzte Name. Er gehoert ueberall hin, wo der Name
-    # sichtbar wird - bis zum 12.08.2026 nahmen H1, Einleitungssatz,
-    # Breadcrumb im JSON-LD, die Beschriftung der Reiter und der Knopf
-    # "Zur Anfrageliste" stattdessen p['name'], also die deutsche Fassung.
-    # Auf 36 FR/IT-Seiten stand dadurch im Titel "Boite de pieces d'usure
-    # PSHB 125" und in der Ueberschrift "Verschleissteilebox PSHB 125".
+    # Reviewed names and complete snippets; no generic category chain or
+    # clipping halfway through a technical statement. Model names stay intact.
     nm = C.pName(lang, p)
-    suffix = " | " + C.t(lang, "site_name")
-    # Von der ausführlichsten Variante abwärts, bis der Titel unter 68 Zeichen bleibt.
-    mk = C.pBrand(p)
-    if p.get("models"):
-        # A shared occasion listing is not one Oerlikon PlasmaFix 51.
-        title = f"{C.pFullName(lang, p)} · {C.t(lang, 'prod_title_occ_models_suffix')}"
-        desc = clip(C.pDesc(lang, p), 155)
-    elif p["cat"] == "occasion":
-        # Eine Gebrauchtmaschine sucht niemand als "PlasmaFix 51 · Mikroplasma
-        # · Occasion". Gesucht wird "oerlikon plasmafix 51 zu verkaufen" oder
-        # "gebraucht kaufen" - und genau diese Woerter fehlten im Titel und in
-        # der Beschreibung. Am 14.09.2026 mit einer solchen Suche nachgesehen:
-        # die Seite stand nicht unter den ersten drei, ein Mitbewerber mit
-        # genau dieser Wortwahl schon.
-        #
-        # Am 15.09.2026 noch einmal nachgesehen, diesmal mit "oerlikon
-        # mikroplasma": das Verfahren war aus dem Titel gefallen, weil die
-        # lange Vorlage ("... zu verkaufen · Mikroplasma | ...") ueber 68
-        # Zeichen kam und die kurze Stufe es nicht mehr enthielt. Fuer genau
-        # das gesuchte Wort war der Titel damit blind. Die Vorlage nennt das
-        # Verfahren jetzt vor dem Kaufwort; die Grenze ist die von check.py.
-        title = C.t(lang, "prod_title_occ", marke=mk, name=nm, sub=sub_t)
-        if len(title) > 70:
-            title = C.t(lang, "prod_title_occ_kurz", marke=mk, name=nm)
-        desc = clip(C.t(lang, "prod_desc_occ", marke=mk, name=nm, sub=sub_t,
-                        desc=C.pDesc(lang, p)), 155)
-    else:
-        for cand in (f"{mk} {nm} · {sub_t} · {cat_t}" + suffix,
-                     f"{mk} {nm} · {sub_t} · {cat_t}",
-                     f"{mk} {nm} · {sub_t}" + suffix,
-                     f"{mk} {nm} · {sub_t}"):
-            title = cand
-            if len(cand) <= 68:
-                break
-        desc = clip(C.t(lang, "prod_desc_tpl", name=nm, vt=C.vtT(lang, p["vt"]),
-                        marke=C.pBrand(p), desc=C.pDesc(lang, p)), 155)
+    search_copy = C.PRODUCT_SEO[p['id']][lang]
+    title, desc = search_copy['title'], search_copy['description']
     crumb = [(C.t(lang, "nav_home"), C.u_home(lang)),
              (C.t(lang, "nav_products"), C.u_products(lang)),
              (C.catT(lang, c), C.u_cat(lang, p["cat"])),
@@ -1075,7 +1054,7 @@ def page_product(lang, p):
   <div class="dgrid">
     <div class="volt-product-media">{media_html(lang, p, nm)}</div>
     <div class="dinfo" data-inquiry-product="{e(p['id'])}">
-      <p class="kicker">{e(C.catT(lang, c))} · {e(C.pBrand(p))}</p>
+      <p class="kicker">{e(search_copy['type'] if C.istMahe(p) else C.catT(lang, c))} · {e(C.pBrand(p))}</p>
       <h1>{e(h1)}</h1>
       <p class="lead">{e(C.pDesc(lang, p))}</p>{context}
       <div class="pmeta">

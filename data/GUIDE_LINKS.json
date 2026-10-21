@@ -1,49 +1,511 @@
 {
   "categories": {
-    "schweissgeraete": [{"kind":"product","id":"mms"},{"kind":"product","id":"omega-ax"},{"kind":"product","id":"i-1600"},{"kind":"service","id":"repair"}],
-    "plasmaschneiden": [{"kind":"subcategory","id":"plasmaschneiden","sub":"Theta Automation"},{"kind":"product","id":"mpt-3001"},{"kind":"service","id":"auto"}],
-    "reinigung": [{"kind":"product","id":"minicleaner"},{"kind":"product","id":"hcs1"},{"kind":"product","id":"mlf100"},{"kind":"subcategory","id":"reinigung","sub":"Elektrolyte"}],
-    "zubehoer": [{"kind":"subcategory","id":"zubehoer","sub":"Brenner"},{"kind":"subcategory","id":"zubehoer","sub":"Wasserkühlung"},{"kind":"subcategory","id":"zubehoer","sub":"Fernbedienungen"}],
-    "occasion": [{"kind":"product","id":"plasmafix-50s"},{"kind":"product","id":"plasmafix-51"}]
+    "schweissgeraete": [
+      {
+        "kind": "product",
+        "id": "mms"
+      },
+      {
+        "kind": "product",
+        "id": "omega-ax"
+      },
+      {
+        "kind": "product",
+        "id": "i-1600"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
+      }
+    ],
+    "plasmaschneiden": [
+      {
+        "kind": "subcategory",
+        "id": "plasmaschneiden",
+        "sub": "Theta Automation"
+      },
+      {
+        "kind": "product",
+        "id": "mpt-3001"
+      },
+      {
+        "kind": "service",
+        "id": "auto"
+      },
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Plasmabrenner"
+      }
+    ],
+    "reinigung": [
+      {
+        "kind": "product",
+        "id": "minicleaner"
+      },
+      {
+        "kind": "product",
+        "id": "hcs1"
+      },
+      {
+        "kind": "product",
+        "id": "mlf100"
+      },
+      {
+        "kind": "subcategory",
+        "id": "reinigung",
+        "sub": "Elektrolyte"
+      },
+      {
+        "kind": "subcategory",
+        "id": "reinigung",
+        "sub": "Cleaner"
+      }
+    ],
+    "zubehoer": [
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Brenner"
+      },
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Wasserkühlung"
+      },
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Fernbedienungen"
+      },
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Plasmabrenner"
+      }
+    ],
+    "occasion": [
+      {
+        "kind": "product",
+        "id": "plasmafix-50s"
+      },
+      {
+        "kind": "product",
+        "id": "plasmafix-51"
+      }
+    ]
   },
   "subcategories": {
     "schweissgeraete": {
-      "MIG / MAG": [{"kind":"product","id":"mms"},{"kind":"product","id":"ecomig"},{"kind":"product","id":"hypermig-x"}],
-      "WIG / TIG": [{"kind":"product","id":"omega-ax"},{"kind":"product","id":"beta-dx"},{"kind":"product","id":"hypertig-ax"},{"kind":"product","id":"hypertig-dx"}],
-      "MMA": [{"kind":"product","id":"i-1600"},{"kind":"product","id":"delta"},{"kind":"product","id":"delta-digital"}]
+      "MIG / MAG": [
+        {
+          "kind": "product",
+          "id": "mms"
+        },
+        {
+          "kind": "product",
+          "id": "ecomig"
+        },
+        {
+          "kind": "product",
+          "id": "hypermig-x"
+        }
+      ],
+      "WIG / TIG": [
+        {
+          "kind": "product",
+          "id": "omega-ax"
+        },
+        {
+          "kind": "product",
+          "id": "beta-dx"
+        },
+        {
+          "kind": "product",
+          "id": "hypertig-ax"
+        },
+        {
+          "kind": "product",
+          "id": "hypertig-dx"
+        }
+      ],
+      "MMA": [
+        {
+          "kind": "product",
+          "id": "i-1600"
+        },
+        {
+          "kind": "product",
+          "id": "delta"
+        },
+        {
+          "kind": "product",
+          "id": "delta-digital"
+        }
+      ]
     },
     "plasmaschneiden": {
-      "Theta": [{"kind":"product","id":"theta-40"},{"kind":"product","id":"theta-60"},{"kind":"subcategory","id":"plasmaschneiden","sub":"Theta Automation"}],
-      "Theta Automation": [{"kind":"product","id":"theta-60-aut"},{"kind":"product","id":"theta-120-aut"},{"kind":"service","id":"auto"}],
-      "Schneidtische": [{"kind":"product","id":"mpt-3001"},{"kind":"product","id":"mpt-2501"},{"kind":"service","id":"auto"}]
+      "Theta": [
+        {
+          "kind": "product",
+          "id": "theta-40"
+        },
+        {
+          "kind": "product",
+          "id": "theta-60"
+        },
+        {
+          "kind": "subcategory",
+          "id": "plasmaschneiden",
+          "sub": "Theta Automation"
+        }
+      ],
+      "Theta Automation": [
+        {
+          "kind": "product",
+          "id": "theta-60-aut"
+        },
+        {
+          "kind": "product",
+          "id": "theta-120-aut"
+        },
+        {
+          "kind": "service",
+          "id": "auto"
+        }
+      ],
+      "Schneidtische": [
+        {
+          "kind": "product",
+          "id": "mpt-3001"
+        },
+        {
+          "kind": "product",
+          "id": "mpt-2501"
+        },
+        {
+          "kind": "service",
+          "id": "auto"
+        }
+      ]
     },
     "reinigung": {
-      "Cleaner": [{"kind":"product","id":"minicleaner"},{"kind":"product","id":"hypercleaner-ct200"},{"kind":"subcategory","id":"reinigung","sub":"Elektrolyte"}],
-      "Signiergeräte": [{"kind":"product","id":"hcs1"},{"kind":"product","id":"m1"},{"kind":"subcategory","id":"reinigung","sub":"Elektrolyte"}],
-      "Dosiersystem": [{"kind":"product","id":"mlf100"},{"kind":"category","id":"reinigung"},{"kind":"subcategory","id":"zubehoer","sub":"Wasserkühlung"}],
-      "Elektrolyte": [{"kind":"product","id":"r1"},{"kind":"product","id":"rp1"},{"kind":"product","id":"m1"},{"kind":"product","id":"n1"}]
+      "Cleaner": [
+        {
+          "kind": "product",
+          "id": "minicleaner"
+        },
+        {
+          "kind": "product",
+          "id": "hypercleaner-ct200"
+        },
+        {
+          "kind": "subcategory",
+          "id": "reinigung",
+          "sub": "Elektrolyte"
+        }
+      ],
+      "Signiergeräte": [
+        {
+          "kind": "product",
+          "id": "hcs1"
+        },
+        {
+          "kind": "product",
+          "id": "m1"
+        },
+        {
+          "kind": "subcategory",
+          "id": "reinigung",
+          "sub": "Elektrolyte"
+        }
+      ],
+      "Dosiersystem": [
+        {
+          "kind": "product",
+          "id": "mlf100"
+        },
+        {
+          "kind": "category",
+          "id": "reinigung"
+        },
+        {
+          "kind": "subcategory",
+          "id": "zubehoer",
+          "sub": "Wasserkühlung"
+        }
+      ],
+      "Elektrolyte": [
+        {
+          "kind": "product",
+          "id": "r1"
+        },
+        {
+          "kind": "product",
+          "id": "rp1"
+        },
+        {
+          "kind": "product",
+          "id": "m1"
+        },
+        {
+          "kind": "product",
+          "id": "n1"
+        }
+      ]
     },
     "zubehoer": {
-      "Fahrwagen": [{"kind":"product","id":"stt35"},{"kind":"product","id":"mpf02"},{"kind":"product","id":"mhct01"}],
-      "Wasserkühlung": [{"kind":"product","id":"wk200"},{"kind":"product","id":"wk300"},{"kind":"product","id":"wk350"},{"kind":"product","id":"mms"}],
-      "Drahtvorschubkoffer": [{"kind":"product","id":"dvs410"},{"kind":"product","id":"dvl420"},{"kind":"product","id":"zwischenschlauchpaket"}],
-      "Fernbedienungen": [{"kind":"product","id":"frc5"},{"kind":"product","id":"rc15"},{"kind":"product","id":"rc100ds"}],
-      "Werkstattausrüstung": [{"kind":"product","id":"mcu1"},{"kind":"product","id":"usb2in1"},{"kind":"service","id":"calib"}],
-      "Kabel": [{"kind":"product","id":"elektrodenkabel"},{"kind":"product","id":"massekabel"},{"kind":"product","id":"elektrodenkabel-4m"},{"kind":"product","id":"massekabel-25"}],
-      "Brenner": [{"kind":"product","id":"mf240w"},{"kind":"product","id":"mf405w"},{"kind":"product","id":"mt170"},{"kind":"product","id":"mt200w"}],
-      "Plasmabrenner": [{"kind":"product","id":"pshb65"},{"kind":"product","id":"psab65"},{"kind":"subcategory","id":"plasmaschneiden","sub":"Theta Automation"}],
-      "Verschleissteile": [{"kind":"product","id":"vtbox-s25"},{"kind":"product","id":"drahtvorschubrollen"},{"kind":"product","id":"drahtvorschubrollen-hyper"}],
-      "Schlauchpakete": [{"kind":"product","id":"zwischenschlauchpaket"},{"kind":"product","id":"dvl420"},{"kind":"product","id":"hypermig-x"}]
+      "Fahrwagen": [
+        {
+          "kind": "product",
+          "id": "stt35"
+        },
+        {
+          "kind": "product",
+          "id": "mpf02"
+        },
+        {
+          "kind": "product",
+          "id": "mhct01"
+        }
+      ],
+      "Wasserkühlung": [
+        {
+          "kind": "product",
+          "id": "wk200"
+        },
+        {
+          "kind": "product",
+          "id": "wk300"
+        },
+        {
+          "kind": "product",
+          "id": "wk350"
+        },
+        {
+          "kind": "product",
+          "id": "mms"
+        }
+      ],
+      "Drahtvorschubkoffer": [
+        {
+          "kind": "product",
+          "id": "dvs410"
+        },
+        {
+          "kind": "product",
+          "id": "dvl420"
+        },
+        {
+          "kind": "product",
+          "id": "zwischenschlauchpaket"
+        }
+      ],
+      "Fernbedienungen": [
+        {
+          "kind": "product",
+          "id": "frc5"
+        },
+        {
+          "kind": "product",
+          "id": "rc15"
+        },
+        {
+          "kind": "product",
+          "id": "rc100ds"
+        }
+      ],
+      "Werkstattausrüstung": [
+        {
+          "kind": "product",
+          "id": "mcu1"
+        },
+        {
+          "kind": "product",
+          "id": "usb2in1"
+        },
+        {
+          "kind": "service",
+          "id": "calib"
+        }
+      ],
+      "Kabel": [
+        {
+          "kind": "product",
+          "id": "elektrodenkabel"
+        },
+        {
+          "kind": "product",
+          "id": "massekabel"
+        },
+        {
+          "kind": "product",
+          "id": "elektrodenkabel-4m"
+        },
+        {
+          "kind": "product",
+          "id": "massekabel-25"
+        }
+      ],
+      "Brenner": [
+        {
+          "kind": "product",
+          "id": "mf240w"
+        },
+        {
+          "kind": "product",
+          "id": "mf405w"
+        },
+        {
+          "kind": "product",
+          "id": "mt170"
+        },
+        {
+          "kind": "product",
+          "id": "mt200w"
+        },
+        {
+          "kind": "product",
+          "id": "mg500"
+        }
+      ],
+      "Plasmabrenner": [
+        {
+          "kind": "product",
+          "id": "pshb65"
+        },
+        {
+          "kind": "product",
+          "id": "psab65"
+        },
+        {
+          "kind": "subcategory",
+          "id": "plasmaschneiden",
+          "sub": "Theta Automation"
+        },
+        {
+          "kind": "subcategory",
+          "id": "zubehoer",
+          "sub": "Verschleissteile"
+        }
+      ],
+      "Verschleissteile": [
+        {
+          "kind": "product",
+          "id": "vtbox-s25"
+        },
+        {
+          "kind": "product",
+          "id": "drahtvorschubrollen"
+        },
+        {
+          "kind": "product",
+          "id": "drahtvorschubrollen-hyper"
+        }
+      ],
+      "Schlauchpakete": [
+        {
+          "kind": "product",
+          "id": "zwischenschlauchpaket"
+        },
+        {
+          "kind": "product",
+          "id": "dvl420"
+        },
+        {
+          "kind": "product",
+          "id": "hypermig-x"
+        }
+      ]
     },
     "occasion": {
-      "Mikroplasma": [{"kind":"product","id":"plasmafix-50s"},{"kind":"product","id":"plasmafix-51"}]
+      "Mikroplasma": [
+        {
+          "kind": "product",
+          "id": "plasmafix-50s"
+        },
+        {
+          "kind": "product",
+          "id": "plasmafix-51"
+        }
+      ]
     }
   },
   "services": {
-    "overview": [{"kind":"category","id":"schweissgeraete"},{"kind":"category","id":"plasmaschneiden"},{"kind":"page","id":"about"}],
-    "repair": [{"kind":"service","id":"calib"},{"kind":"category","id":"schweissgeraete"},{"kind":"page","id":"about"}],
-    "calib": [{"kind":"product","id":"mcu1"},{"kind":"service","id":"repair"},{"kind":"page","id":"about"}],
-    "auto": [{"kind":"subcategory","id":"plasmaschneiden","sub":"Theta Automation"},{"kind":"product","id":"mpt-3001"},{"kind":"product","id":"mpt-2501"}]
+    "overview": [
+      {
+        "kind": "category",
+        "id": "schweissgeraete"
+      },
+      {
+        "kind": "category",
+        "id": "plasmaschneiden"
+      },
+      {
+        "kind": "page",
+        "id": "about"
+      }
+    ],
+    "repair": [
+      {
+        "kind": "service",
+        "id": "calib"
+      },
+      {
+        "kind": "category",
+        "id": "schweissgeraete"
+      },
+      {
+        "kind": "page",
+        "id": "about"
+      }
+    ],
+    "calib": [
+      {
+        "kind": "product",
+        "id": "mcu1"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
+      },
+      {
+        "kind": "page",
+        "id": "about"
+      }
+    ],
+    "auto": [
+      {
+        "kind": "subcategory",
+        "id": "plasmaschneiden",
+        "sub": "Theta Automation"
+      },
+      {
+        "kind": "product",
+        "id": "mpt-3001"
+      },
+      {
+        "kind": "product",
+        "id": "mpt-2501"
+      }
+    ]
   },
-  "company": [{"kind":"page","id":"about"},{"kind":"page","id":"contact"},{"kind":"page","id":"imprint"},{"kind":"page","id":"products"}]
+  "company": [
+    {
+      "kind": "page",
+      "id": "about"
+    },
+    {
+      "kind": "page",
+      "id": "contact"
+    },
+    {
+      "kind": "page",
+      "id": "imprint"
+    },
+    {
+      "kind": "page",
+      "id": "products"
+    }
+  ]
 }

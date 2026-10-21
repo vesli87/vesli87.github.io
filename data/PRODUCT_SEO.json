@@ -1,0 +1,2189 @@
+{
+  "hypermig-x": {
+    "de": {
+      "type": "MIG/MAG-Schweissgerät",
+      "title": "MAHE HyperMIG X: MIG/MAG-Schweissgerät | VES-TECH",
+      "description": "MAHE HyperMIG X: MIG/MAG-Serie mit Pulsverfahren und Hyper-Verfahren sowie neuem grafischem X-Bedienpanel; Ausstattung je Ausführung."
+    },
+    "fr": {
+      "type": "Poste MIG/MAG",
+      "title": "MAHE HyperMIG X: Poste MIG/MAG | VES-TECH",
+      "description": "MAHE HyperMIG X : Série MIG/MAG avec procédés pulsés et Hyper, dotée du nouveau panneau graphique X ; équipement selon la version."
+    },
+    "it": {
+      "type": "Saldatrice MIG/MAG",
+      "title": "MAHE HyperMIG X: Saldatrice MIG/MAG | VES-TECH",
+      "description": "MAHE HyperMIG X: Serie MIG/MAG con procedimenti pulsati e Hyper e nuovo pannello grafico X; dotazione secondo la versione."
+    },
+    "en": {
+      "type": "MIG/MAG welder",
+      "title": "MAHE HyperMIG X: MIG/MAG welder | VES-TECH",
+      "description": "MAHE HyperMIG X: MIG/MAG range with pulse and Hyper processes and the new graphic X control panel; equipment depends on the version."
+    },
+    "es": {
+      "type": "Equipo MIG/MAG",
+      "title": "MAHE HyperMIG X: Equipo MIG/MAG | VES-TECH",
+      "description": "MAHE HyperMIG X: Gama MIG/MAG con procesos pulsados e Hyper y el nuevo panel de control gráfico X; el equipamiento depende de la versión."
+    }
+  },
+  "hypermig-twin": {
+    "de": {
+      "type": "MIG/MAG-Schweissgerät",
+      "title": "MAHE HyperMIG TWIN: MIG/MAG-Schweissgerät | VES-TECH",
+      "description": "MAHE HyperMIG TWIN: Wassergekühlte MIG/MAG-Anlage mit zwei Drahtvorschubkoffern für verschiedene Drähte; wahlweise grafisches X- oder HX-Bedienpanel."
+    },
+    "fr": {
+      "type": "Poste MIG/MAG",
+      "title": "MAHE HyperMIG TWIN: Poste MIG/MAG | VES-TECH",
+      "description": "MAHE HyperMIG TWIN : Poste MIG/MAG refroidi par eau avec deux dévidoirs pour différents fils ; au choix, panneau graphique X ou panneau HX."
+    },
+    "it": {
+      "type": "Saldatrice MIG/MAG",
+      "title": "MAHE HyperMIG TWIN: Saldatrice MIG/MAG | VES-TECH",
+      "description": "MAHE HyperMIG TWIN: Saldatrice MIG/MAG raffreddata ad acqua con due trainafilo per fili diversi; a scelta pannello grafico X o pannello HX."
+    },
+    "en": {
+      "type": "MIG/MAG welder",
+      "title": "MAHE HyperMIG TWIN: MIG/MAG welder | VES-TECH",
+      "description": "MAHE HyperMIG TWIN: Water-cooled MIG/MAG system with two wire feeders for different wires; available with the graphic X or HX control panel."
+    },
+    "es": {
+      "type": "Equipo MIG/MAG",
+      "title": "MAHE HyperMIG TWIN: Equipo MIG/MAG | VES-TECH",
+      "description": "MAHE HyperMIG TWIN: Sistema MIG/MAG refrigerado por agua con dos alimentadores para distintos hilos; disponible con panel de control gráfico X o HX."
+    }
+  },
+  "ecomig": {
+    "de": {
+      "type": "MIG/MAG-Schweissgerät",
+      "title": "MAHE EcoMIG Digital / Analog: MIG/MAG-Schweissgerät | VES-TECH",
+      "description": "MAHE EcoMIG Digital / Analog: Ultrakompakte MIG/MAG-Schweissinverter mit stufenloser Regelung und einfacher Bedienung. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste MIG/MAG",
+      "title": "MAHE EcoMIG Digital / Analog: Poste MIG/MAG | VES-TECH",
+      "description": "MAHE EcoMIG Digital / Analog : Poste MIG/MAG à réglage continu, ultra-compact et simple d’utilisation. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice MIG/MAG",
+      "title": "MAHE EcoMIG Digital / Analog: Saldatrice MIG/MAG | VES-TECH",
+      "description": "MAHE EcoMIG Digital / Analog: Saldatrice MIG/MAG a regolazione continua, ultracompatta e semplice. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MIG/MAG welder",
+      "title": "MAHE EcoMIG Digital / Analog: MIG/MAG welder | VES-TECH",
+      "description": "MAHE EcoMIG Digital / Analog: Ultra-compact MIG/MAG welding inverters with stepless adjustment and straightforward controls. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo MIG/MAG",
+      "title": "MAHE EcoMIG Digital / Analog: Equipo MIG/MAG | VES-TECH",
+      "description": "MAHE EcoMIG Digital / Analog: Inversores de soldadura MIG/MAG ultracompactos con ajuste continuo y controles sencillos."
+    }
+  },
+  "mms": {
+    "de": {
+      "type": "MIG/MAG-Schweissgerät",
+      "title": "MAHE MMS 2000 / 3000: MIG/MAG-Schweissgerät | VES-TECH",
+      "description": "MAHE MMS 2000 / 3000: Mobile, leichte MIG/MAG-Schweissmaschine für Montage und Werkstatt. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste MIG/MAG",
+      "title": "MAHE MMS 2000 / 3000: Poste MIG/MAG | VES-TECH",
+      "description": "MAHE MMS 2000 / 3000 : Poste MIG/MAG mobile et léger pour le montage et l’atelier. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice MIG/MAG",
+      "title": "MAHE MMS 2000 / 3000: Saldatrice MIG/MAG | VES-TECH",
+      "description": "MAHE MMS 2000 / 3000: Saldatrice MIG/MAG mobile e leggera per montaggio e officina. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MIG/MAG welder",
+      "title": "MAHE MMS 2000 / 3000: MIG/MAG welder | VES-TECH",
+      "description": "MAHE MMS 2000 / 3000: Lightweight, mobile MIG/MAG welding machine for site work and the workshop. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo MIG/MAG",
+      "title": "MAHE MMS 2000 / 3000: Equipo MIG/MAG | VES-TECH",
+      "description": "MAHE MMS 2000 / 3000: Equipo de soldadura MIG/MAG ligero y móvil para obra y taller. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "omega-ax": {
+    "de": {
+      "type": "WIG-AC/DC-Schweissgerät",
+      "title": "MAHE Omega AX: WIG-AC/DC-Schweissgerät | VES-TECH",
+      "description": "MAHE Omega AX: Mobile AC/DC-WIG-Schweissmaschine für Aluminium und Stahl. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste TIG AC/DC",
+      "title": "MAHE Omega AX: Poste TIG AC/DC | VES-TECH",
+      "description": "MAHE Omega AX : Poste TIG AC/DC mobile pour l’aluminium et l’acier. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice TIG AC/DC",
+      "title": "MAHE Omega AX: Saldatrice TIG AC/DC | VES-TECH",
+      "description": "MAHE Omega AX: Saldatrice TIG AC/DC mobile per alluminio e acciaio. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "AC/DC TIG welder",
+      "title": "MAHE Omega AX: AC/DC TIG welder | VES-TECH",
+      "description": "MAHE Omega AX: Mobile AC/DC TIG welding machine for aluminium and steel. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo TIG AC/DC",
+      "title": "MAHE Omega AX: Equipo TIG AC/DC | VES-TECH",
+      "description": "MAHE Omega AX: Equipo de soldadura TIG AC/DC móvil para aluminio y acero. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "beta-dx": {
+    "de": {
+      "type": "WIG-DC-Schweissgerät",
+      "title": "MAHE Beta DX: WIG-DC-Schweissgerät | VES-TECH",
+      "description": "MAHE Beta DX: Mobile WIG-DC-Schweissmaschine für Stahl und Chromstahl. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste TIG DC",
+      "title": "MAHE Beta DX: Poste TIG DC | VES-TECH",
+      "description": "MAHE Beta DX : Poste TIG DC mobile pour l’acier et l’acier inoxydable. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice TIG DC",
+      "title": "MAHE Beta DX: Saldatrice TIG DC | VES-TECH",
+      "description": "MAHE Beta DX: Saldatrice TIG DC mobile per acciaio e acciaio inox. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "DC TIG welder",
+      "title": "MAHE Beta DX: DC TIG welder | VES-TECH",
+      "description": "MAHE Beta DX: Mobile DC TIG welding machine for steel and stainless steel. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo TIG DC",
+      "title": "MAHE Beta DX: Equipo TIG DC | VES-TECH",
+      "description": "MAHE Beta DX: Equipo de soldadura TIG DC móvil para acero y acero inoxidable. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypertig-ax": {
+    "de": {
+      "type": "WIG-AC/DC-Schweissgerät",
+      "title": "MAHE HyperTIG AX: WIG-AC/DC-Schweissgerät | VES-TECH",
+      "description": "MAHE HyperTIG AX: Leistungsstarke WIG-AC/DC-Stromquelle für den industriellen Einsatz. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste TIG AC/DC",
+      "title": "MAHE HyperTIG AX: Poste TIG AC/DC | VES-TECH",
+      "description": "MAHE HyperTIG AX : Source de courant TIG AC/DC puissante pour un usage industriel. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice TIG AC/DC",
+      "title": "MAHE HyperTIG AX: Saldatrice TIG AC/DC | VES-TECH",
+      "description": "MAHE HyperTIG AX: Generatore TIG AC/DC potente per l’uso industriale. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "AC/DC TIG welder",
+      "title": "MAHE HyperTIG AX: AC/DC TIG welder | VES-TECH",
+      "description": "MAHE HyperTIG AX: High-performance AC/DC TIG power source for industrial use. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo TIG AC/DC",
+      "title": "MAHE HyperTIG AX: Equipo TIG AC/DC | VES-TECH",
+      "description": "MAHE HyperTIG AX: Fuente de corriente TIG AC/DC de alto rendimiento para uso industrial. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypertig-dx": {
+    "de": {
+      "type": "WIG-DC-Schweissgerät",
+      "title": "MAHE HyperTIG DX: WIG-DC-Schweissgerät | VES-TECH",
+      "description": "MAHE HyperTIG DX: Leistungsstarke WIG-DC-Stromquelle für hohe Abschmelzleistung. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste TIG DC",
+      "title": "MAHE HyperTIG DX: Poste TIG DC | VES-TECH",
+      "description": "MAHE HyperTIG DX : Source de courant TIG DC puissante pour un taux de dépôt élevé. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice TIG DC",
+      "title": "MAHE HyperTIG DX: Saldatrice TIG DC | VES-TECH",
+      "description": "MAHE HyperTIG DX: Potente generatore TIG DC per un’elevata resa. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "DC TIG welder",
+      "title": "MAHE HyperTIG DX: DC TIG welder | VES-TECH",
+      "description": "MAHE HyperTIG DX: High-performance DC TIG power source for high deposition rates. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo TIG DC",
+      "title": "MAHE HyperTIG DX: Equipo TIG DC | VES-TECH",
+      "description": "MAHE HyperTIG DX: Fuente de corriente TIG DC de alto rendimiento para altas tasas de deposición. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "beta-digital": {
+    "de": {
+      "type": "WIG-DC-Schweissgerät",
+      "title": "MAHE Beta digital: WIG-DC-Schweissgerät | VES-TECH",
+      "description": "MAHE Beta digital: Mobile digitale WIG-Schweissmaschine mit Programmspeicher. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste TIG DC",
+      "title": "MAHE Beta digital: Poste TIG DC | VES-TECH",
+      "description": "MAHE Beta digital : Poste TIG numérique mobile avec mémoire de programmes. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice TIG DC",
+      "title": "MAHE Beta digital: Saldatrice TIG DC | VES-TECH",
+      "description": "MAHE Beta digital: Saldatrice TIG digitale mobile con memoria dei programmi. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "DC TIG welder",
+      "title": "MAHE Beta digital: DC TIG welder | VES-TECH",
+      "description": "MAHE Beta digital: Mobile digital TIG welding machine with program memory. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo TIG DC",
+      "title": "MAHE Beta digital: Equipo TIG DC | VES-TECH",
+      "description": "MAHE Beta digital: Equipo de soldadura TIG digital móvil con memoria de programas. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypertig-acdc": {
+    "de": {
+      "type": "WIG-AC/DC-Schweissgerät",
+      "title": "MAHE HyperTIG AC/DC: WIG-AC/DC-Schweissgerät | VES-TECH",
+      "description": "MAHE HyperTIG AC/DC: Leistungsstarke AC/DC-Stromquelle für höchste Anforderungen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste TIG AC/DC",
+      "title": "MAHE HyperTIG AC/DC: Poste TIG AC/DC | VES-TECH",
+      "description": "MAHE HyperTIG AC/DC : Source de courant AC/DC puissante pour les exigences les plus élevées. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice TIG AC/DC",
+      "title": "MAHE HyperTIG AC/DC: Saldatrice TIG AC/DC | VES-TECH",
+      "description": "MAHE HyperTIG AC/DC: Potente generatore AC/DC per le applicazioni più esigenti. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "AC/DC TIG welder",
+      "title": "MAHE HyperTIG AC/DC: AC/DC TIG welder | VES-TECH",
+      "description": "MAHE HyperTIG AC/DC: High-performance AC/DC power source for demanding applications. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo TIG AC/DC",
+      "title": "MAHE HyperTIG AC/DC: Equipo TIG AC/DC | VES-TECH",
+      "description": "MAHE HyperTIG AC/DC: Fuente de corriente AC/DC de alto rendimiento para aplicaciones exigentes. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "i-1600": {
+    "de": {
+      "type": "Elektroden-Schweissgerät",
+      "title": "MAHE i-1600: Elektroden-Schweissgerät | VES-TECH",
+      "description": "MAHE i-1600: Einfach zu bedienender, robuster Elektrodeninverter. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste à électrode MMA",
+      "title": "MAHE i-1600: Poste à électrode MMA | VES-TECH",
+      "description": "MAHE i-1600 : Poste à onduleur pour le soudage à l’électrode, robuste et simple d’utilisation. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice a elettrodo MMA",
+      "title": "MAHE i-1600: Saldatrice a elettrodo MMA | VES-TECH",
+      "description": "MAHE i-1600: Inverter a elettrodo robusto e semplice da usare. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MMA stick welder",
+      "title": "MAHE i-1600: MMA stick welder | VES-TECH",
+      "description": "MAHE i-1600: Robust stick welding inverter with straightforward controls. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadora de electrodo MMA",
+      "title": "MAHE i-1600: Soldadora de electrodo MMA | VES-TECH",
+      "description": "MAHE i-1600: Inversor robusto de soldadura con electrodo revestido y controles sencillos. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "delta": {
+    "de": {
+      "type": "Elektroden-Schweissgerät",
+      "title": "MAHE Delta 1800: Elektroden-Schweissgerät | VES-TECH",
+      "description": "MAHE Delta 1800: Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste à électrode MMA",
+      "title": "MAHE Delta 1800: Poste à électrode MMA | VES-TECH",
+      "description": "MAHE Delta 1800 : Poste à onduleur multifonction pour le soudage à l’électrode, en atelier et sur chantier. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice a elettrodo MMA",
+      "title": "MAHE Delta 1800: Saldatrice a elettrodo MMA | VES-TECH",
+      "description": "MAHE Delta 1800: Inverter a elettrodo multifunzione per officina e cantiere. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MMA stick welder",
+      "title": "MAHE Delta 1800: MMA stick welder | VES-TECH",
+      "description": "MAHE Delta 1800: Multifunction stick welding inverter for workshop and construction site use. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadora de electrodo MMA",
+      "title": "MAHE Delta 1800: Soldadora de electrodo MMA | VES-TECH",
+      "description": "MAHE Delta 1800: Inversor multifunción de soldadura con electrodo revestido para taller y obra. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "delta-digital": {
+    "de": {
+      "type": "Elektroden-Schweissgerät",
+      "title": "MAHE Delta Digital: Elektroden-Schweissgerät | VES-TECH",
+      "description": "MAHE Delta Digital: Digitaler Multifunktions-Inverter für den Profi. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste à électrode MMA",
+      "title": "MAHE Delta Digital: Poste à électrode MMA | VES-TECH",
+      "description": "MAHE Delta Digital : Onduleur multifonction numérique pour les professionnels. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice a elettrodo MMA",
+      "title": "MAHE Delta Digital: Saldatrice a elettrodo MMA | VES-TECH",
+      "description": "MAHE Delta Digital: Inverter multifunzione digitale per professionisti. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MMA stick welder",
+      "title": "MAHE Delta Digital: MMA stick welder | VES-TECH",
+      "description": "MAHE Delta Digital: Digital multifunction inverter for professional use. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadora de electrodo MMA",
+      "title": "MAHE Delta Digital: Soldadora de electrodo MMA | VES-TECH",
+      "description": "MAHE Delta Digital: Inversor multifunción digital para uso profesional. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "delta-digital-ds": {
+    "de": {
+      "type": "Elektroden-Schweissgerät",
+      "title": "MAHE Delta Digital DS: Elektroden-Schweissgerät | VES-TECH",
+      "description": "MAHE Delta Digital DS: Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste à électrode MMA",
+      "title": "MAHE Delta Digital DS: Poste à électrode MMA | VES-TECH",
+      "description": "MAHE Delta Digital DS : Source de courant multiprocédé conçue pour le soudage sous-marin. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice a elettrodo MMA",
+      "title": "MAHE Delta Digital DS: Saldatrice a elettrodo MMA | VES-TECH",
+      "description": "MAHE Delta Digital DS: Generatore multiprocesso per la saldatura subacquea. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MMA stick welder",
+      "title": "MAHE Delta Digital DS: MMA stick welder | VES-TECH",
+      "description": "MAHE Delta Digital DS: Multiprocess power source developed for underwater welding. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadora de electrodo MMA",
+      "title": "MAHE Delta Digital DS: Soldadora de electrodo MMA | VES-TECH",
+      "description": "MAHE Delta Digital DS: Fuente de corriente multiproceso desarrollada para soldadura subacuática. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "plasma-tig": {
+    "de": {
+      "type": "Mikroplasma-Schweissgerät",
+      "title": "MAHE PlasmaTIG: Mikroplasma-Schweissgerät | VES-TECH",
+      "description": "MAHE PlasmaTIG: Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste de soudage microplasma",
+      "title": "MAHE PlasmaTIG: Poste de soudage microplasma | VES-TECH",
+      "description": "MAHE PlasmaTIG : Source de courant pour le soudage microplasma et plasma, destinée aux soudures les plus fines. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice microplasma",
+      "title": "MAHE PlasmaTIG: Saldatrice microplasma | VES-TECH",
+      "description": "MAHE PlasmaTIG: Generatore microplasma e plasma per saldature finissime. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Microplasma welder",
+      "title": "MAHE PlasmaTIG: Microplasma welder | VES-TECH",
+      "description": "MAHE PlasmaTIG: Microplasma and plasma power source for precision welding. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadora microplasma",
+      "title": "MAHE PlasmaTIG: Soldadora microplasma | VES-TECH",
+      "description": "MAHE PlasmaTIG: Fuente de corriente de microplasma y plasma para soldadura de precisión. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "theta-40": {
+    "de": {
+      "type": "Plasmaschneider",
+      "title": "MAHE Theta 40: Plasmaschneider | VES-TECH",
+      "description": "MAHE Theta 40: Leichtes 230-V-Plasmaschneidgerät für die Werkstatt. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Découpeur plasma",
+      "title": "MAHE Theta 40: Découpeur plasma | VES-TECH",
+      "description": "MAHE Theta 40 : Découpeur plasma léger 230 V pour l’atelier. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Generatore plasma",
+      "title": "MAHE Theta 40: Generatore plasma | VES-TECH",
+      "description": "MAHE Theta 40: Tagliatrice al plasma leggera da 230 V per l’officina. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Plasma cutter",
+      "title": "MAHE Theta 40: Plasma cutter | VES-TECH",
+      "description": "MAHE Theta 40: Lightweight 230 V plasma cutter for the workshop. Advice and price on request."
+    },
+    "es": {
+      "type": "Cortadora de plasma",
+      "title": "MAHE Theta 40: Cortadora de plasma | VES-TECH",
+      "description": "MAHE Theta 40: Equipo ligero de corte por plasma de 230 V para el taller. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "theta-60": {
+    "de": {
+      "type": "Plasmaschneider",
+      "title": "MAHE Theta 60 HSC: Plasmaschneider | VES-TECH",
+      "description": "MAHE Theta 60 HSC: Leistungsstarker Plasmaschneidinverter mit HSC-Technologie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Découpeur plasma",
+      "title": "MAHE Theta 60 HSC: Découpeur plasma | VES-TECH",
+      "description": "MAHE Theta 60 HSC : Découpeur plasma puissant avec technologie HSC. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Generatore plasma",
+      "title": "MAHE Theta 60 HSC: Generatore plasma | VES-TECH",
+      "description": "MAHE Theta 60 HSC: Potente inverter per il taglio al plasma con tecnologia HSC. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Plasma cutter",
+      "title": "MAHE Theta 60 HSC: Plasma cutter | VES-TECH",
+      "description": "MAHE Theta 60 HSC: High-performance plasma cutting inverter with HSC technology. Advice and price on request."
+    },
+    "es": {
+      "type": "Cortadora de plasma",
+      "title": "MAHE Theta 60 HSC: Cortadora de plasma | VES-TECH",
+      "description": "MAHE Theta 60 HSC: Inversor de corte por plasma de alto rendimiento con tecnología HSC. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "theta-120": {
+    "de": {
+      "type": "Plasmaschneider",
+      "title": "MAHE Theta 120 HSC: Plasmaschneider | VES-TECH",
+      "description": "MAHE Theta 120 HSC: Industrieller Plasmaschneidinverter mit HSC-Technologie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Découpeur plasma",
+      "title": "MAHE Theta 120 HSC: Découpeur plasma | VES-TECH",
+      "description": "MAHE Theta 120 HSC : Découpeur plasma industriel avec technologie HSC. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Generatore plasma",
+      "title": "MAHE Theta 120 HSC: Generatore plasma | VES-TECH",
+      "description": "MAHE Theta 120 HSC: Inverter industriale per il taglio al plasma con tecnologia HSC. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Plasma cutter",
+      "title": "MAHE Theta 120 HSC: Plasma cutter | VES-TECH",
+      "description": "MAHE Theta 120 HSC: Industrial plasma cutting inverter with HSC technology. Advice and price on request."
+    },
+    "es": {
+      "type": "Cortadora de plasma",
+      "title": "MAHE Theta 120 HSC: Cortadora de plasma | VES-TECH",
+      "description": "MAHE Theta 120 HSC: Inversor industrial de corte por plasma con tecnología HSC. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "theta-180": {
+    "de": {
+      "type": "Plasmaschneider",
+      "title": "MAHE Theta 180 HSC: Plasmaschneider | VES-TECH",
+      "description": "MAHE Theta 180 HSC: Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Découpeur plasma",
+      "title": "MAHE Theta 180 HSC: Découpeur plasma | VES-TECH",
+      "description": "MAHE Theta 180 HSC : Le découpeur plasma Theta le plus puissant, avec technologie HSC. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Generatore plasma",
+      "title": "MAHE Theta 180 HSC: Generatore plasma | VES-TECH",
+      "description": "MAHE Theta 180 HSC: L’inverter per il taglio al plasma Theta più potente, con tecnologia HSC. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Plasma cutter",
+      "title": "MAHE Theta 180 HSC: Plasma cutter | VES-TECH",
+      "description": "MAHE Theta 180 HSC: The most powerful Theta plasma cutting inverter with HSC technology. Advice and price on request."
+    },
+    "es": {
+      "type": "Cortadora de plasma",
+      "title": "MAHE Theta 180 HSC: Cortadora de plasma | VES-TECH",
+      "description": "MAHE Theta 180 HSC: El inversor de corte por plasma Theta más potente con tecnología HSC. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "theta-60-aut": {
+    "de": {
+      "type": "Plasmaquelle für Automation",
+      "title": "MAHE Theta 60 AUT: Plasmaquelle für Automation | VES-TECH",
+      "description": "MAHE Theta 60 AUT: Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Source plasma pour automatisation",
+      "title": "MAHE Theta 60 AUT: Source plasma pour automatisation | VES-TECH",
+      "description": "MAHE Theta 60 AUT : Découpeur plasma pour l’automatisation, avec technologie HSC, conçu pour être intégré à une machine. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Generatore plasma per automazione",
+      "title": "MAHE Theta 60 AUT: Generatore plasma per automazione | VES-TECH",
+      "description": "MAHE Theta 60 AUT: Inverter per il taglio al plasma con tecnologia HSC, progettato per l’integrazione in impianti automatizzati."
+    },
+    "en": {
+      "type": "Automation plasma source",
+      "title": "MAHE Theta 60 AUT: Automation plasma source | VES-TECH",
+      "description": "MAHE Theta 60 AUT: Plasma cutting inverter with HSC technology for integration into automated machinery. Advice and price on request."
+    },
+    "es": {
+      "type": "Fuente plasma para automatización",
+      "title": "MAHE Theta 60 AUT: Fuente plasma para automatización | VES-TECH",
+      "description": "MAHE Theta 60 AUT: Inversor de corte por plasma con tecnología HSC para integración en maquinaria automatizada. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "theta-120-aut": {
+    "de": {
+      "type": "Plasmaquelle für Automation",
+      "title": "MAHE Theta 120 AUT: Plasmaquelle für Automation | VES-TECH",
+      "description": "MAHE Theta 120 AUT: Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Source plasma pour automatisation",
+      "title": "MAHE Theta 120 AUT: Source plasma pour automatisation | VES-TECH",
+      "description": "MAHE Theta 120 AUT : Découpeur plasma pour l’automatisation, avec technologie HSC, conçu pour être intégré à une machine. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Generatore plasma per automazione",
+      "title": "MAHE Theta 120 AUT: Generatore plasma per automazione | VES-TECH",
+      "description": "MAHE Theta 120 AUT: Inverter per il taglio al plasma con tecnologia HSC, progettato per l’integrazione in impianti automatizzati."
+    },
+    "en": {
+      "type": "Automation plasma source",
+      "title": "MAHE Theta 120 AUT: Automation plasma source | VES-TECH",
+      "description": "MAHE Theta 120 AUT: Plasma cutting inverter with HSC technology for integration into automated machinery. Advice and price on request."
+    },
+    "es": {
+      "type": "Fuente plasma para automatización",
+      "title": "MAHE Theta 120 AUT: Fuente plasma para automatización | VES-TECH",
+      "description": "MAHE Theta 120 AUT: Inversor de corte por plasma con tecnología HSC para integración en maquinaria automatizada. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mpt-3001": {
+    "de": {
+      "type": "CNC-Plasmaschneidtisch",
+      "title": "MAHE MPT 3001: CNC-Plasmaschneidtisch | VES-TECH",
+      "description": "MAHE MPT 3001: CNC-Plasmaschneidtisch mit 3000 × 1500 mm Arbeitsbereich, MyPlasm CNC und MAHE-Theta-Stromquelle. Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Table de découpe plasma CNC",
+      "title": "MAHE MPT 3001: Table de découpe plasma CNC | VES-TECH",
+      "description": "MAHE MPT 3001 : Table plasma CNC, surface de travail 3000 × 1500 mm, MyPlasm CNC et source MAHE Theta. Prix sur demande. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Tavolo di taglio plasma CNC",
+      "title": "MAHE MPT 3001: Tavolo di taglio plasma CNC | VES-TECH",
+      "description": "MAHE MPT 3001: Tavolo plasma CNC, area di lavoro 3000 × 1500 mm, MyPlasm CNC e generatore MAHE Theta. Prezzo su richiesta."
+    },
+    "en": {
+      "type": "CNC plasma cutting table",
+      "title": "MAHE MPT 3001: CNC plasma cutting table | VES-TECH",
+      "description": "MAHE MPT 3001: CNC plasma cutting table with a 3000 × 1500 mm working area, MyPlasm CNC and MAHE Theta power source. Price on request."
+    },
+    "es": {
+      "type": "Mesa de corte por plasma CNC",
+      "title": "MAHE MPT 3001: Mesa de corte por plasma CNC | VES-TECH",
+      "description": "MAHE MPT 3001: Mesa plasma CNC, área de trabajo de 3000 × 1500 mm, MyPlasm CNC y fuente MAHE Theta. Precio bajo consulta."
+    }
+  },
+  "mpt-2501": {
+    "de": {
+      "type": "CNC-Plasmaschneidtisch",
+      "title": "MAHE MPT 2501: CNC-Plasmaschneidtisch | VES-TECH",
+      "description": "MAHE MPT 2501: CNC-Plasmaschneidtisch mit 2500 × 1250 mm Arbeitsbereich, MyPlasm CNC und MAHE-Theta-Stromquelle. Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Table de découpe plasma CNC",
+      "title": "MAHE MPT 2501: Table de découpe plasma CNC | VES-TECH",
+      "description": "MAHE MPT 2501 : Table plasma CNC, surface de travail 2500 × 1250 mm, MyPlasm CNC et source MAHE Theta. Prix sur demande. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Tavolo di taglio plasma CNC",
+      "title": "MAHE MPT 2501: Tavolo di taglio plasma CNC | VES-TECH",
+      "description": "MAHE MPT 2501: Tavolo plasma CNC, area di lavoro 2500 × 1250 mm, MyPlasm CNC e generatore MAHE Theta. Prezzo su richiesta."
+    },
+    "en": {
+      "type": "CNC plasma cutting table",
+      "title": "MAHE MPT 2501: CNC plasma cutting table | VES-TECH",
+      "description": "MAHE MPT 2501: CNC plasma cutting table with a 2500 × 1250 mm working area, MyPlasm CNC and MAHE Theta power source. Price on request."
+    },
+    "es": {
+      "type": "Mesa de corte por plasma CNC",
+      "title": "MAHE MPT 2501: Mesa de corte por plasma CNC | VES-TECH",
+      "description": "MAHE MPT 2501: Mesa plasma CNC, área de trabajo de 2500 × 1250 mm, MyPlasm CNC y fuente MAHE Theta. Precio bajo consulta."
+    }
+  },
+  "minicleaner": {
+    "de": {
+      "type": "Schweissnahtreiniger",
+      "title": "MAHE MiniReiniger: Schweissnahtreiniger | VES-TECH",
+      "description": "MAHE MiniReiniger: Wirtschaftlicher Inverter, speziell für den mobilen Einsatz. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Nettoyeur de soudures inox",
+      "title": "MAHE MiniCleaner: Nettoyeur de soudures inox | VES-TECH",
+      "description": "MAHE MiniCleaner : Onduleur économique, spécialement conçu pour la mobilité. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Pulitore di saldature inox",
+      "title": "MAHE MiniCleaner: Pulitore di saldature inox | VES-TECH",
+      "description": "MAHE MiniCleaner: Inverter economico, ideato per l’uso mobile. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Stainless steel weld cleaner",
+      "title": "MAHE MiniCleaner: Stainless steel weld cleaner | VES-TECH",
+      "description": "MAHE MiniCleaner: Cost-effective inverter designed specifically for mobile use. Advice and price on request."
+    },
+    "es": {
+      "type": "Limpiador de soldaduras inox",
+      "title": "MAHE MiniCleaner: Limpiador de soldaduras inox | VES-TECH",
+      "description": "MAHE MiniCleaner: Inversor económico diseñado específicamente para uso móvil. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypercleaner-st": {
+    "de": {
+      "type": "Schweissnahtreiniger",
+      "title": "MAHE HyperCleaner ST: Schweissnahtreiniger | VES-TECH",
+      "description": "MAHE HyperCleaner ST: Leistungsstarker 1200-W-Inverter für hervorragende Reinigungsergebnisse. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Nettoyeur de soudures inox",
+      "title": "MAHE HyperCleaner ST: Nettoyeur de soudures inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST : Onduleur puissant de 1200 W pour d’excellents résultats de nettoyage. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Pulitore di saldature inox",
+      "title": "MAHE HyperCleaner ST: Pulitore di saldature inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST: Potente inverter da 1200 W per risultati di pulizia eccellenti. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Stainless steel weld cleaner",
+      "title": "MAHE HyperCleaner ST: Stainless steel weld cleaner | VES-TECH",
+      "description": "MAHE HyperCleaner ST: Powerful 1200 W inverter for excellent cleaning results. Advice and price on request."
+    },
+    "es": {
+      "type": "Limpiador de soldaduras inox",
+      "title": "MAHE HyperCleaner ST: Limpiador de soldaduras inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST: Potente inversor de 1200 W para excelentes resultados de limpieza. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypercleaner-speed": {
+    "de": {
+      "type": "Schweissnahtreiniger",
+      "title": "MAHE HyperCleaner ST Speed: Schweissnahtreiniger | VES-TECH",
+      "description": "MAHE HyperCleaner ST Speed: Leistungsstarker Inverter mit bis zu 2400 W beim Polieren (100 % Einschaltdauer). Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Nettoyeur de soudures inox",
+      "title": "MAHE HyperCleaner ST Speed: Nettoyeur de soudures inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST Speed : Onduleur puissant offrant jusqu’à 2400 W en polissage (facteur de marche de 100 %). Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Pulitore di saldature inox",
+      "title": "MAHE HyperCleaner ST Speed: Pulitore di saldature inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST Speed: Potente inverter fino a 2400 W in lucidatura (ciclo di lavoro del 100 %). Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Stainless steel weld cleaner",
+      "title": "MAHE HyperCleaner ST Speed: Stainless steel weld cleaner | VES-TECH",
+      "description": "MAHE HyperCleaner ST Speed: Powerful inverter delivering up to 2400 W when polishing (100 % duty cycle). Advice and price on request."
+    },
+    "es": {
+      "type": "Limpiador de soldaduras inox",
+      "title": "MAHE HyperCleaner ST Speed: Limpiador de soldaduras inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST Speed: Potente inversor de hasta 2400 W en pulido (100 % del ciclo de trabajo). Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypercleaner-plus": {
+    "de": {
+      "type": "Schweissnahtreiniger",
+      "title": "MAHE HyperCleaner ST Plus: Schweissnahtreiniger | VES-TECH",
+      "description": "MAHE HyperCleaner ST Plus: Leistungsstarker Inverter mit bis zu 4000 W beim Polieren (30 % Einschaltdauer). Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Nettoyeur de soudures inox",
+      "title": "MAHE HyperCleaner ST Plus: Nettoyeur de soudures inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST Plus : Onduleur puissant offrant jusqu’à 4000 W en polissage (facteur de marche de 30 %). Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Pulitore di saldature inox",
+      "title": "MAHE HyperCleaner ST Plus: Pulitore di saldature inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST Plus: Potente inverter fino a 4000 W in lucidatura (ciclo di lavoro del 30 %). Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Stainless steel weld cleaner",
+      "title": "MAHE HyperCleaner ST Plus: Stainless steel weld cleaner | VES-TECH",
+      "description": "MAHE HyperCleaner ST Plus: Powerful inverter delivering up to 4000 W when polishing (30 % duty cycle). Advice and price on request."
+    },
+    "es": {
+      "type": "Limpiador de soldaduras inox",
+      "title": "MAHE HyperCleaner ST Plus: Limpiador de soldaduras inox | VES-TECH",
+      "description": "MAHE HyperCleaner ST Plus: Potente inversor de hasta 4000 W en pulido (30 % del ciclo de trabajo). Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hypercleaner-ct200": {
+    "de": {
+      "type": "WIG-Schweissgerät und Cleaner",
+      "title": "MAHE HyperCleaner CT 200: WIG-Schweissgerät und Cleaner | VES-TECH",
+      "description": "MAHE HyperCleaner CT 200: Kombiniertes Gerät zum WIG-Schweissen und Reinigen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Soudage TIG et nettoyage",
+      "title": "MAHE HyperCleaner CT 200: Soudage TIG et nettoyage | VES-TECH",
+      "description": "MAHE HyperCleaner CT 200 : Appareil combiné de soudage TIG et de nettoyage. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatura TIG e pulizia",
+      "title": "MAHE HyperCleaner CT 200: Saldatura TIG e pulizia | VES-TECH",
+      "description": "MAHE HyperCleaner CT 200: Apparecchio combinato per la saldatura TIG e la pulizia. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "TIG welding and weld cleaning",
+      "title": "MAHE HyperCleaner CT 200: TIG welding and weld cleaning | VES-TECH",
+      "description": "MAHE HyperCleaner CT 200: Combined TIG welding and cleaning system. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadura TIG y limpieza",
+      "title": "MAHE HyperCleaner CT 200: Soldadura TIG y limpieza | VES-TECH",
+      "description": "MAHE HyperCleaner CT 200: Sistema combinado de soldadura TIG y limpieza. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "hcs1": {
+    "de": {
+      "type": "Elektrolytisches Signiergerät",
+      "title": "MAHE HCS 1: Elektrolytisches Signiergerät | VES-TECH",
+      "description": "MAHE HCS 1: Wirtschaftliches elektrolytisches Signiergerät, speziell für den mobilen Einsatz. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Appareil de marquage électrolytique",
+      "title": "MAHE HCS 1: Appareil de marquage électrolytique | VES-TECH",
+      "description": "MAHE HCS 1 : Appareil de marquage électrolytique économique, conçu pour une utilisation mobile. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Marcatore elettrolitico",
+      "title": "MAHE HCS 1: Marcatore elettrolitico | VES-TECH",
+      "description": "MAHE HCS 1: Marcatore elettrolitico economico, per l’uso mobile. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Electrolytic marking unit",
+      "title": "MAHE HCS 1: Electrolytic marking unit | VES-TECH",
+      "description": "MAHE HCS 1: Cost-effective electrolytic marking system designed specifically for mobile use. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo de marcado electrolítico",
+      "title": "MAHE HCS 1: Equipo de marcado electrolítico | VES-TECH",
+      "description": "MAHE HCS 1: Sistema económico de marcado electrolítico diseñado específicamente para uso móvil. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mlf100": {
+    "de": {
+      "type": "Dosiersystem für Elektrolyt",
+      "title": "MAHE MLF 100: Dosiersystem für Elektrolyt | VES-TECH",
+      "description": "MAHE MLF 100: Gerät zur automatischen Dosierung von Reinigungsflüssigkeit. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Doseur d’électrolyte",
+      "title": "MAHE MLF 100: Doseur d’électrolyte | VES-TECH",
+      "description": "MAHE MLF 100 : Appareil de dosage automatique du liquide de nettoyage. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Dosatore di elettrolita",
+      "title": "MAHE MLF 100: Dosatore di elettrolita | VES-TECH",
+      "description": "MAHE MLF 100: Apparecchio per il dosaggio automatico del liquido di pulizia. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Electrolyte dosing system",
+      "title": "MAHE MLF 100: Electrolyte dosing system | VES-TECH",
+      "description": "MAHE MLF 100: Automatic cleaning fluid dosing unit. Advice and price on request."
+    },
+    "es": {
+      "type": "Dosificador de electrolito",
+      "title": "MAHE MLF 100: Dosificador de electrolito | VES-TECH",
+      "description": "MAHE MLF 100: Unidad de dosificación automática de líquido de limpieza. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "r1": {
+    "de": {
+      "type": "Elektrolyt und Prozessmittel",
+      "title": "MAHE Reinigungselektrolyt Rapid R1 | VES-TECH",
+      "description": "MAHE Reinigungselektrolyt Rapid R1: Schnell wirkender Reinigungselektrolyt für Chromstahl-Schweissnähte. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Électrolyte et produit de traitement",
+      "title": "MAHE Électrolyte de nettoyage Rapid R1 | VES-TECH",
+      "description": "MAHE Électrolyte de nettoyage Rapid R1 : Électrolyte de nettoyage rapide pour les soudures sur inox. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Elettrolita e prodotto di trattamento",
+      "title": "MAHE Elettrolita di pulizia Rapid R1 | VES-TECH",
+      "description": "MAHE Elettrolita di pulizia Rapid R1: Elettrolita di pulizia rapida per saldature inox. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Electrolyte and process fluid",
+      "title": "MAHE Rapid R1 cleaning electrolyte | VES-TECH",
+      "description": "MAHE Rapid R1 cleaning electrolyte: Fast-acting cleaning electrolyte for stainless steel welds. Advice and price on request."
+    },
+    "es": {
+      "type": "Electrolito y producto de tratamiento",
+      "title": "MAHE Electrolito de limpieza Rapid R1 | VES-TECH",
+      "description": "MAHE Electrolito de limpieza Rapid R1: Electrolito de limpieza de acción rápida para soldaduras de acero inoxidable. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "rp1": {
+    "de": {
+      "type": "Elektrolyt und Prozessmittel",
+      "title": "MAHE Reinigungselektrolyt RP1 Pastös | VES-TECH",
+      "description": "MAHE Reinigungselektrolyt RP1 Pastös: Pastöser Reinigungselektrolyt für senkrechte Flächen und Überkopfarbeiten. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Électrolyte et produit de traitement",
+      "title": "MAHE Électrolyte de nettoyage RP1 pâteux | VES-TECH",
+      "description": "MAHE Électrolyte de nettoyage RP1 pâteux : Électrolyte de nettoyage pâteux pour les surfaces verticales. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Elettrolita e prodotto di trattamento",
+      "title": "MAHE Elettrolita di pulizia RP1 in pasta | VES-TECH",
+      "description": "MAHE Elettrolita di pulizia RP1 in pasta: Elettrolita di pulizia pastoso per superfici verticali. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Electrolyte and process fluid",
+      "title": "MAHE RP1 paste cleaning electrolyte | VES-TECH",
+      "description": "MAHE RP1 paste cleaning electrolyte: Paste cleaning electrolyte for vertical surfaces and overhead work. Advice and price on request."
+    },
+    "es": {
+      "type": "Electrolito y producto de tratamiento",
+      "title": "MAHE Electrolito de limpieza en pasta RP1 | VES-TECH",
+      "description": "MAHE Electrolito de limpieza en pasta RP1: Electrolito de limpieza en pasta para superficies verticales y trabajos sobre cabeza."
+    }
+  },
+  "p1": {
+    "de": {
+      "type": "Elektrolyt und Prozessmittel",
+      "title": "MAHE Polierelektrolyt P1 | VES-TECH",
+      "description": "MAHE Polierelektrolyt P1: Elektrolyt zum Elektropolieren und Beizen von Edelstahl. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Électrolyte et produit de traitement",
+      "title": "MAHE Électrolyte de polissage P1 | VES-TECH",
+      "description": "MAHE Électrolyte de polissage P1 : Électrolyte d’électropolissage et de décapage de l’inox. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Elettrolita e prodotto di trattamento",
+      "title": "MAHE Elettrolita di lucidatura P1 | VES-TECH",
+      "description": "MAHE Elettrolita di lucidatura P1: Elettrolita per l’elettrolucidatura e il decapaggio dell’acciaio inox. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Electrolyte and process fluid",
+      "title": "MAHE P1 polishing electrolyte | VES-TECH",
+      "description": "MAHE P1 polishing electrolyte: Electrolyte for electropolishing and pickling stainless steel. Advice and price on request."
+    },
+    "es": {
+      "type": "Electrolito y producto de tratamiento",
+      "title": "MAHE Electrolito de pulido P1 | VES-TECH",
+      "description": "MAHE Electrolito de pulido P1: Electrolito para electropulido y decapado de acero inoxidable. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "n1": {
+    "de": {
+      "type": "Neutralisierer",
+      "title": "MAHE Neutralit N1: Neutralisierer | VES-TECH",
+      "description": "MAHE Neutralit N1: Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Neutralisant",
+      "title": "MAHE Neutralit N1: Neutralisant | VES-TECH",
+      "description": "MAHE Neutralit N1 : Neutralisant pour arrêter la réaction et neutraliser la surface après le nettoyage. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Neutralizzante",
+      "title": "MAHE Neutralit N1: Neutralizzante | VES-TECH",
+      "description": "MAHE Neutralit N1: Neutralizzante per arrestare e neutralizzare l’azione dell’elettrolita dopo la pulizia. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Neutraliser",
+      "title": "MAHE Neutralit N1: Neutraliser | VES-TECH",
+      "description": "MAHE Neutralit N1: Neutraliser for stopping and neutralising the process after cleaning. Advice and price on request."
+    },
+    "es": {
+      "type": "Neutralizador",
+      "title": "MAHE Neutralit N1: Neutralizador | VES-TECH",
+      "description": "MAHE Neutralit N1: Neutralizante para detener y neutralizar el proceso después de la limpieza. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "m1": {
+    "de": {
+      "type": "Elektrolyt und Prozessmittel",
+      "title": "MAHE Signierelektrolyt M1 | VES-TECH",
+      "description": "MAHE Signierelektrolyt M1: Elektrolyt zum elektrochemischen Signieren und Markieren von Metall. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Électrolyte et produit de traitement",
+      "title": "MAHE Électrolyte de marquage M1 | VES-TECH",
+      "description": "MAHE Électrolyte de marquage M1 : Électrolyte pour le marquage électrochimique du métal. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Elettrolita e prodotto di trattamento",
+      "title": "MAHE Elettrolita di marcatura M1 | VES-TECH",
+      "description": "MAHE Elettrolita di marcatura M1: Elettrolita per la marcatura elettrochimica del metallo. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Electrolyte and process fluid",
+      "title": "MAHE M1 marking electrolyte | VES-TECH",
+      "description": "MAHE M1 marking electrolyte: Electrolyte for electrochemical marking of metal. Advice and price on request."
+    },
+    "es": {
+      "type": "Electrolito y producto de tratamiento",
+      "title": "MAHE Electrolito de marcado M1 | VES-TECH",
+      "description": "MAHE Electrolito de marcado M1: Electrolito para marcado electroquímico de metales. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "stt30": {
+    "de": {
+      "type": "Gerätefahrwagen",
+      "title": "MAHE STT 30: Gerätefahrwagen | VES-TECH",
+      "description": "MAHE STT 30: Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Chariot pour appareils",
+      "title": "MAHE STT 30: Chariot pour appareils | VES-TECH",
+      "description": "MAHE STT 30 : Chariot avec support de bouteille pour appareils TIG et MIG. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Carrello per apparecchi",
+      "title": "MAHE STT 30: Carrello per apparecchi | VES-TECH",
+      "description": "MAHE STT 30: Carrello con supporto bombola per apparecchi TIG e MIG. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Equipment trolley",
+      "title": "MAHE STT 30: Equipment trolley | VES-TECH",
+      "description": "MAHE STT 30: Trolley with gas cylinder holder for TIG and MIG equipment. Advice and price on request."
+    },
+    "es": {
+      "type": "Carro para equipos",
+      "title": "MAHE STT 30: Carro para equipos | VES-TECH",
+      "description": "MAHE STT 30: Carro con soporte para botella de gas para equipos TIG y MIG. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "stt35": {
+    "de": {
+      "type": "Gerätefahrwagen",
+      "title": "MAHE STT 35: Gerätefahrwagen | VES-TECH",
+      "description": "MAHE STT 35: Fahrwagen ohne Gasflaschenhalter für MMA und Plasma. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Chariot pour appareils",
+      "title": "MAHE STT 35: Chariot pour appareils | VES-TECH",
+      "description": "MAHE STT 35 : Chariot sans support de bouteille pour MMA et plasma. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Carrello per apparecchi",
+      "title": "MAHE STT 35: Carrello per apparecchi | VES-TECH",
+      "description": "MAHE STT 35: Carrello senza supporto bombola per MMA e plasma. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Equipment trolley",
+      "title": "MAHE STT 35: Equipment trolley | VES-TECH",
+      "description": "MAHE STT 35: Trolley without gas cylinder holder for MMA and plasma equipment. Advice and price on request."
+    },
+    "es": {
+      "type": "Carro para equipos",
+      "title": "MAHE STT 35: Carro para equipos | VES-TECH",
+      "description": "MAHE STT 35: Carro sin soporte para botella de gas para equipos MMA y plasma. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mpf02": {
+    "de": {
+      "type": "Gerätefahrwagen",
+      "title": "MAHE MPF 02: Gerätefahrwagen | VES-TECH",
+      "description": "MAHE MPF 02: Fahrwagen mit Gasflaschenhalter für alle tragbaren Geräte. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Chariot pour appareils",
+      "title": "MAHE MPF 02: Chariot pour appareils | VES-TECH",
+      "description": "MAHE MPF 02 : Chariot avec support de bouteille pour tous les appareils portables. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Carrello per apparecchi",
+      "title": "MAHE MPF 02: Carrello per apparecchi | VES-TECH",
+      "description": "MAHE MPF 02: Carrello con supporto bombola per tutti gli apparecchi portatili. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Equipment trolley",
+      "title": "MAHE MPF 02: Equipment trolley | VES-TECH",
+      "description": "MAHE MPF 02: Trolley with gas cylinder holder for all portable equipment. Advice and price on request."
+    },
+    "es": {
+      "type": "Carro para equipos",
+      "title": "MAHE MPF 02: Carro para equipos | VES-TECH",
+      "description": "MAHE MPF 02: Carro con soporte para botella de gas para todos los equipos portátiles. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mhct01": {
+    "de": {
+      "type": "Gerätefahrwagen",
+      "title": "MAHE MHCT 01: Gerätefahrwagen | VES-TECH",
+      "description": "MAHE MHCT 01: Fahrwagen speziell für Reinigungsgeräte. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Chariot pour appareils",
+      "title": "MAHE MHCT 01: Chariot pour appareils | VES-TECH",
+      "description": "MAHE MHCT 01 : Chariot spécialement conçu pour les appareils de nettoyage. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Carrello per apparecchi",
+      "title": "MAHE MHCT 01: Carrello per apparecchi | VES-TECH",
+      "description": "MAHE MHCT 01: Carrello specifico per apparecchi di pulizia. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Equipment trolley",
+      "title": "MAHE MHCT 01: Equipment trolley | VES-TECH",
+      "description": "MAHE MHCT 01: Trolley designed specifically for cleaning systems. Advice and price on request."
+    },
+    "es": {
+      "type": "Carro para equipos",
+      "title": "MAHE MHCT 01: Carro para equipos | VES-TECH",
+      "description": "MAHE MHCT 01: Carro diseñado específicamente para sistemas de limpieza. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "wk200": {
+    "de": {
+      "type": "Wasserkühlgerät",
+      "title": "MAHE WK 200: Wasserkühlgerät | VES-TECH",
+      "description": "MAHE WK 200: Universalkühler mit 230-V-Schuko-Steckdose und Wassermangel-Abschaltung. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Refroidisseur à eau",
+      "title": "MAHE WK 200: Refroidisseur à eau | VES-TECH",
+      "description": "MAHE WK 200 : Refroidisseur universel avec prise 230 V et arrêt en cas de manque d’eau. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Unità di raffreddamento ad acqua",
+      "title": "MAHE WK 200: Unità di raffreddamento ad acqua | VES-TECH",
+      "description": "MAHE WK 200: Refrigeratore universale con presa da 230 V e spegnimento in caso di mancanza d’acqua. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Water cooling unit",
+      "title": "MAHE WK 200: Water cooling unit | VES-TECH",
+      "description": "MAHE WK 200: Universal cooling unit with a 230 V Schuko socket and low-water shutdown. Advice and price on request."
+    },
+    "es": {
+      "type": "Unidad de refrigeración por agua",
+      "title": "MAHE WK 200: Unidad de refrigeración por agua | VES-TECH",
+      "description": "MAHE WK 200: Unidad de refrigeración universal con toma Schuko de 230 V y desconexión por nivel de agua bajo. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "wk300": {
+    "de": {
+      "type": "Wasserkühlgerät",
+      "title": "MAHE WK 300: Wasserkühlgerät | VES-TECH",
+      "description": "MAHE WK 300: Wasserkühlgerät für die MMS-3000-Serie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Refroidisseur à eau",
+      "title": "MAHE WK 300: Refroidisseur à eau | VES-TECH",
+      "description": "MAHE WK 300 : Refroidisseur à eau pour la série MMS 3000. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Unità di raffreddamento ad acqua",
+      "title": "MAHE WK 300: Unità di raffreddamento ad acqua | VES-TECH",
+      "description": "MAHE WK 300: Refrigeratore ad acqua per la serie MMS 3000. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Water cooling unit",
+      "title": "MAHE WK 300: Water cooling unit | VES-TECH",
+      "description": "MAHE WK 300: Water cooling unit for the MMS 3000 series. Advice and price on request."
+    },
+    "es": {
+      "type": "Unidad de refrigeración por agua",
+      "title": "MAHE WK 300: Unidad de refrigeración por agua | VES-TECH",
+      "description": "MAHE WK 300: Unidad de refrigeración por agua para la serie MMS 3000. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "wk350": {
+    "de": {
+      "type": "Wasserkühlgerät",
+      "title": "MAHE WK 350: Wasserkühlgerät | VES-TECH",
+      "description": "MAHE WK 350: Wasserkühlgerät für Beta digital und die 400-V-Baureihe Omega. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Refroidisseur à eau",
+      "title": "MAHE WK 350: Refroidisseur à eau | VES-TECH",
+      "description": "MAHE WK 350 : Refroidisseur à eau pour Beta digital et la ligne Omega 400 V. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Unità di raffreddamento ad acqua",
+      "title": "MAHE WK 350: Unità di raffreddamento ad acqua | VES-TECH",
+      "description": "MAHE WK 350: Refrigeratore ad acqua per Beta digital e la linea Omega 400 V. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Water cooling unit",
+      "title": "MAHE WK 350: Water cooling unit | VES-TECH",
+      "description": "MAHE WK 350: Water cooling unit for Beta digital and the 400 V Omega range. Advice and price on request."
+    },
+    "es": {
+      "type": "Unidad de refrigeración por agua",
+      "title": "MAHE WK 350: Unidad de refrigeración por agua | VES-TECH",
+      "description": "MAHE WK 350: Unidad de refrigeración por agua para Beta digital y la gama Omega de 400 V. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "dvs410": {
+    "de": {
+      "type": "Drahtvorschubkoffer",
+      "title": "MAHE DVS 410: Drahtvorschubkoffer | VES-TECH",
+      "description": "MAHE DVS 410: Leichter Drahtvorschubkoffer für die HyperMIG-X-Serie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Dévidoir de fil",
+      "title": "MAHE DVS 410: Dévidoir de fil | VES-TECH",
+      "description": "MAHE DVS 410 : Dévidoir léger pour la série HyperMIG X. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Trainafilo",
+      "title": "MAHE DVS 410: Trainafilo | VES-TECH",
+      "description": "MAHE DVS 410: Trainafilo leggero per la serie HyperMIG X. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Wire feeder",
+      "title": "MAHE DVS 410: Wire feeder | VES-TECH",
+      "description": "MAHE DVS 410: Lightweight wire feeder for the HyperMIG X series. Advice and price on request."
+    },
+    "es": {
+      "type": "Alimentador de hilo",
+      "title": "MAHE DVS 410: Alimentador de hilo | VES-TECH",
+      "description": "MAHE DVS 410: Alimentador de hilo ligero para la serie HyperMIG X. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "dvl420": {
+    "de": {
+      "type": "Drahtvorschubkoffer",
+      "title": "MAHE DVL 420: Drahtvorschubkoffer | VES-TECH",
+      "description": "MAHE DVL 420: Vollmetall-Horizontalvorschubkoffer für die HyperMIG-X-Serie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Dévidoir de fil",
+      "title": "MAHE DVL 420: Dévidoir de fil | VES-TECH",
+      "description": "MAHE DVL 420 : Dévidoir horizontal entièrement métallique pour la série HyperMIG X. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Trainafilo",
+      "title": "MAHE DVL 420: Trainafilo | VES-TECH",
+      "description": "MAHE DVL 420: Trainafilo orizzontale interamente in metallo per la serie HyperMIG X. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Wire feeder",
+      "title": "MAHE DVL 420: Wire feeder | VES-TECH",
+      "description": "MAHE DVL 420: All-metal horizontal wire feeder for the HyperMIG X series. Advice and price on request."
+    },
+    "es": {
+      "type": "Alimentador de hilo",
+      "title": "MAHE DVL 420: Alimentador de hilo | VES-TECH",
+      "description": "MAHE DVL 420: Alimentador de hilo horizontal totalmente metálico para la serie HyperMIG X. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "frc5": {
+    "de": {
+      "type": "Fussfernregler",
+      "title": "MAHE FRC 5: Fussfernregler | VES-TECH",
+      "description": "MAHE FRC 5: Fussfernregler für alle WIG-Geräte von MAHE. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Commande à pédale",
+      "title": "MAHE FRC 5: Commande à pédale | VES-TECH",
+      "description": "MAHE FRC 5 : Commande à pédale pour tous les appareils TIG MAHE. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Comando a pedale",
+      "title": "MAHE FRC 5: Comando a pedale | VES-TECH",
+      "description": "MAHE FRC 5: Comando a pedale per tutti gli apparecchi TIG MAHE. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Foot remote control",
+      "title": "MAHE FRC 5: Foot remote control | VES-TECH",
+      "description": "MAHE FRC 5: Foot remote control for all MAHE TIG equipment. Advice and price on request."
+    },
+    "es": {
+      "type": "Mando a pedal",
+      "title": "MAHE FRC 5: Mando a pedal | VES-TECH",
+      "description": "MAHE FRC 5: Mando a distancia de pedal para todos los equipos TIG de MAHE. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "rc5": {
+    "de": {
+      "type": "Handfernregler",
+      "title": "MAHE RC 5: Handfernregler | VES-TECH",
+      "description": "MAHE RC 5: Handfernregler für alle WIG-Geräte und MMA-Geräte von MAHE. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Commande à distance manuelle",
+      "title": "MAHE RC 5: Commande à distance manuelle | VES-TECH",
+      "description": "MAHE RC 5 : Télécommande manuelle pour tous les appareils TIG et MMA MAHE. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Comando a distanza manuale",
+      "title": "MAHE RC 5: Comando a distanza manuale | VES-TECH",
+      "description": "MAHE RC 5: Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Hand remote control",
+      "title": "MAHE RC 5: Hand remote control | VES-TECH",
+      "description": "MAHE RC 5: Hand remote control for all MAHE TIG and MMA equipment. Advice and price on request."
+    },
+    "es": {
+      "type": "Mando a distancia manual",
+      "title": "MAHE RC 5: Mando a distancia manual | VES-TECH",
+      "description": "MAHE RC 5: Mando a distancia manual para todos los equipos TIG y MMA de MAHE. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "rc15": {
+    "de": {
+      "type": "Handfernregler",
+      "title": "MAHE RC 15: Handfernregler | VES-TECH",
+      "description": "MAHE RC 15: Handfernregler mit Up/Down-Taste und Start/Stopp-Taste. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Commande à distance manuelle",
+      "title": "MAHE RC 15: Commande à distance manuelle | VES-TECH",
+      "description": "MAHE RC 15 : Télécommande manuelle avec touches Up/Down et Start/Stop. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Comando a distanza manuale",
+      "title": "MAHE RC 15: Comando a distanza manuale | VES-TECH",
+      "description": "MAHE RC 15: Telecomando manuale con tasti Up/Down e Start/Stop. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Hand remote control",
+      "title": "MAHE RC 15: Hand remote control | VES-TECH",
+      "description": "MAHE RC 15: Hand remote control with Up/Down and Start/Stop buttons. Advice and price on request."
+    },
+    "es": {
+      "type": "Mando a distancia manual",
+      "title": "MAHE RC 15: Mando a distancia manual | VES-TECH",
+      "description": "MAHE RC 15: Mando a distancia manual con botones Up/Down y Start/Stop. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "rc100": {
+    "de": {
+      "type": "Handfernregler",
+      "title": "MAHE RC 100: Handfernregler | VES-TECH",
+      "description": "MAHE RC 100: Handfernregler für alle WIG-Geräte und MMA-Geräte von MAHE. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Commande à distance manuelle",
+      "title": "MAHE RC 100: Commande à distance manuelle | VES-TECH",
+      "description": "MAHE RC 100 : Télécommande manuelle pour tous les appareils TIG et MMA MAHE. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Comando a distanza manuale",
+      "title": "MAHE RC 100: Comando a distanza manuale | VES-TECH",
+      "description": "MAHE RC 100: Telecomando manuale per tutti gli apparecchi TIG e MMA MAHE. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Hand remote control",
+      "title": "MAHE RC 100: Hand remote control | VES-TECH",
+      "description": "MAHE RC 100: Hand remote control for all MAHE TIG and MMA equipment. Advice and price on request."
+    },
+    "es": {
+      "type": "Mando a distancia manual",
+      "title": "MAHE RC 100: Mando a distancia manual | VES-TECH",
+      "description": "MAHE RC 100: Mando a distancia manual para todos los equipos TIG y MMA de MAHE. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "rc100ds": {
+    "de": {
+      "type": "Handfernregler",
+      "title": "MAHE RC 100 DS: Handfernregler | VES-TECH",
+      "description": "MAHE RC 100 DS: Handfernregler speziell für Delta-Digital-DS-Maschinen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Commande à distance manuelle",
+      "title": "MAHE RC 100 DS: Commande à distance manuelle | VES-TECH",
+      "description": "MAHE RC 100 DS : Télécommande manuelle spéciale pour les machines Delta Digital DS. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Comando a distanza manuale",
+      "title": "MAHE RC 100 DS: Comando a distanza manuale | VES-TECH",
+      "description": "MAHE RC 100 DS: Telecomando manuale specifico per le macchine Delta Digital DS. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Hand remote control",
+      "title": "MAHE RC 100 DS: Hand remote control | VES-TECH",
+      "description": "MAHE RC 100 DS: Hand remote control designed specifically for Delta Digital DS machines. Advice and price on request."
+    },
+    "es": {
+      "type": "Mando a distancia manual",
+      "title": "MAHE RC 100 DS: Mando a distancia manual | VES-TECH",
+      "description": "MAHE RC 100 DS: Mando a distancia manual diseñado específicamente para las máquinas Delta Digital DS. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mcu1": {
+    "de": {
+      "type": "Kalibriergerät",
+      "title": "MAHE MCU 1: Kalibriergerät | VES-TECH",
+      "description": "MAHE MCU 1: Leichtes MAHE-Kalibriergerät zum Kalibrieren und Validieren mit grossen Anzeigen für Spannung und Stromstärke. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Appareil d’étalonnage",
+      "title": "MAHE MCU 1: Appareil d’étalonnage | VES-TECH",
+      "description": "MAHE MCU 1 : Calibrateur MAHE pour l’étalonnage et la validation, avec de grands afficheurs de tension et de courant. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Apparecchio di calibrazione",
+      "title": "MAHE MCU 1: Apparecchio di calibrazione | VES-TECH",
+      "description": "MAHE MCU 1: Calibratore MAHE per calibrazione e validazione, con ampi display Volt/Ampere. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Calibration unit",
+      "title": "MAHE MCU 1: Calibration unit | VES-TECH",
+      "description": "MAHE MCU 1: Lightweight MAHE calibration unit for calibration and validation, with large voltage and current displays. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo de calibración",
+      "title": "MAHE MCU 1: Equipo de calibración | VES-TECH",
+      "description": "MAHE MCU 1: Unidad de calibración MAHE ligera para calibración y validación, con grandes indicadores de tensión y corriente."
+    }
+  },
+  "usb2in1": {
+    "de": {
+      "type": "Programmiergerät",
+      "title": "MAHE USB 2in1 Programmierer | VES-TECH",
+      "description": "MAHE USB 2in1 Programmierer: Programmiergerät für Mikrocontroller und MAHE-Schnittstellen, inklusive USB-Software. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Programmateur",
+      "title": "MAHE Programmateur USB 2in1 | VES-TECH",
+      "description": "MAHE Programmateur USB 2in1 : Programmateur pour microcontrôleurs et interfaces MAHE, logiciel USB inclus. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Programmatore",
+      "title": "MAHE Programmatore USB 2in1 | VES-TECH",
+      "description": "MAHE Programmatore USB 2in1: Programmatore per microcontrollori e interfacce MAHE, software USB incluso. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Programmer",
+      "title": "MAHE USB 2in1 programmer | VES-TECH",
+      "description": "MAHE USB 2in1 programmer: Programmer for microcontrollers and MAHE interfaces, including USB software. Advice and price on request."
+    },
+    "es": {
+      "type": "Programador",
+      "title": "MAHE Programador USB 2in1 | VES-TECH",
+      "description": "MAHE Programador USB 2in1: Programador para microcontroladores e interfaces MAHE, con software USB incluido. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "elektrodenkabel": {
+    "de": {
+      "type": "Kabel für MAHE-Geräte",
+      "title": "MAHE Elektrodenkabel 10 mm² | VES-TECH",
+      "description": "MAHE Elektrodenkabel 10 mm²: Elektrodenkabel für die HyperCleaner-Reinigungsgeräte. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Câble pour appareils MAHE",
+      "title": "MAHE Câble d’électrode 10 mm² | VES-TECH",
+      "description": "MAHE Câble d’électrode 10 mm² : Câble d'électrode pour les appareils de nettoyage HyperCleaner. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Cavo per apparecchi MAHE",
+      "title": "MAHE Cavo portaelettrodo 10 mm² | VES-TECH",
+      "description": "MAHE Cavo portaelettrodo 10 mm²: Cavo portaelettrodo per gli apparecchi di pulizia HyperCleaner. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Cable for MAHE equipment",
+      "title": "MAHE Electrode cable 10 mm² | VES-TECH",
+      "description": "MAHE Electrode cable 10 mm²: Electrode cable for HyperCleaner cleaning systems. Advice and price on request."
+    },
+    "es": {
+      "type": "Cable para equipos MAHE",
+      "title": "MAHE Cable de electrodo de 10 mm² | VES-TECH",
+      "description": "MAHE Cable de electrodo de 10 mm²: Cable de electrodo para sistemas de limpieza HyperCleaner. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "massekabel": {
+    "de": {
+      "type": "Kabel für MAHE-Geräte",
+      "title": "MAHE Massekabel 10 mm² | VES-TECH",
+      "description": "MAHE Massekabel 10 mm²: Massekabel für die HyperCleaner-Reinigungsgeräte. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Câble pour appareils MAHE",
+      "title": "MAHE Câble de masse 10 mm² | VES-TECH",
+      "description": "MAHE Câble de masse 10 mm² : Câble de masse pour les appareils de nettoyage HyperCleaner. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Cavo per apparecchi MAHE",
+      "title": "MAHE Cavo di massa 10 mm² | VES-TECH",
+      "description": "MAHE Cavo di massa 10 mm²: Cavo di massa per gli apparecchi di pulizia HyperCleaner. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Cable for MAHE equipment",
+      "title": "MAHE Work return cable 10 mm² | VES-TECH",
+      "description": "MAHE Work return cable 10 mm²: Work return cable for HyperCleaner cleaning systems. Advice and price on request."
+    },
+    "es": {
+      "type": "Cable para equipos MAHE",
+      "title": "MAHE Cable de retorno de 10 mm² | VES-TECH",
+      "description": "MAHE Cable de retorno de 10 mm²: Cable de retorno para sistemas de limpieza HyperCleaner. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "elektrodenkabel-4m": {
+    "de": {
+      "type": "Kabel für MAHE-Geräte",
+      "title": "MAHE Elektrodenkabel 25–90 mm² | VES-TECH",
+      "description": "MAHE Elektrodenkabel 25–90 mm²: Elektrodenkabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Câble pour appareils MAHE",
+      "title": "MAHE Câble d’électrode 25–90 mm² | VES-TECH",
+      "description": "MAHE Câble d’électrode 25–90 mm² : Câble d'électrode pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Cavo per apparecchi MAHE",
+      "title": "MAHE Cavo portaelettrodo 25–90 mm² | VES-TECH",
+      "description": "MAHE Cavo portaelettrodo 25–90 mm²: Cavo portaelettrodo per le saldatrici HyperMIG X, EcoMIG, MMS e Delta. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Cable for MAHE equipment",
+      "title": "MAHE Electrode cable 25–90 mm² | VES-TECH",
+      "description": "MAHE Electrode cable 25–90 mm²: Electrode cable for HyperMIG X, EcoMIG, MMS and Delta welding systems. Advice and price on request."
+    },
+    "es": {
+      "type": "Cable para equipos MAHE",
+      "title": "MAHE Cable de electrodo de 25–90 mm² | VES-TECH",
+      "description": "MAHE Cable de electrodo de 25–90 mm²: Cable de electrodo para sistemas de soldadura HyperMIG X, EcoMIG, MMS y Delta. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "massekabel-4m": {
+    "de": {
+      "type": "Kabel für MAHE-Geräte",
+      "title": "MAHE Massekabel 25–90 mm² | VES-TECH",
+      "description": "MAHE Massekabel 25–90 mm²: Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Câble pour appareils MAHE",
+      "title": "MAHE Câble de masse 25–90 mm² | VES-TECH",
+      "description": "MAHE Câble de masse 25–90 mm² : Câble de masse pour les postes à souder HyperMIG X, EcoMIG, MMS et Delta. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Cavo per apparecchi MAHE",
+      "title": "MAHE Cavo di massa 25–90 mm² | VES-TECH",
+      "description": "MAHE Cavo di massa 25–90 mm²: Cavo di massa per le saldatrici HyperMIG X, EcoMIG, MMS e Delta. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Cable for MAHE equipment",
+      "title": "MAHE Work return cable 25–90 mm² | VES-TECH",
+      "description": "MAHE Work return cable 25–90 mm²: Work return cable for HyperMIG X, EcoMIG, MMS and Delta welding systems. Advice and price on request."
+    },
+    "es": {
+      "type": "Cable para equipos MAHE",
+      "title": "MAHE Cable de retorno de 25–90 mm² | VES-TECH",
+      "description": "MAHE Cable de retorno de 25–90 mm²: Cable de retorno para sistemas de soldadura HyperMIG X, EcoMIG, MMS y Delta. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "massekabel-25": {
+    "de": {
+      "type": "Kabel für MAHE-Geräte",
+      "title": "MAHE Massekabel 25 mm² | VES-TECH",
+      "description": "MAHE Massekabel 25 mm²: Massekabel für die Plasmaschneider Theta 60, Theta 120 und Theta 180. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Câble pour appareils MAHE",
+      "title": "MAHE Câble de masse 25 mm² | VES-TECH",
+      "description": "MAHE Câble de masse 25 mm² : Câble de masse pour les découpeurs plasma Theta 60, Theta 120 et Theta 180. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Cavo per apparecchi MAHE",
+      "title": "MAHE Cavo di massa 25 mm² | VES-TECH",
+      "description": "MAHE Cavo di massa 25 mm²: Cavo di massa per i sistemi di taglio al plasma Theta 60, Theta 120 e Theta 180. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Cable for MAHE equipment",
+      "title": "MAHE Work return cable 25 mm² | VES-TECH",
+      "description": "MAHE Work return cable 25 mm²: Work return cable for Theta 60, Theta 120 and Theta 180 plasma cutters. Advice and price on request."
+    },
+    "es": {
+      "type": "Cable para equipos MAHE",
+      "title": "MAHE Cable de retorno de 25 mm² | VES-TECH",
+      "description": "MAHE Cable de retorno de 25 mm²: Cable de retorno para equipos de corte por plasma Theta 60, Theta 120 y Theta 180. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mg500": {
+    "de": {
+      "type": "MIG/MAG-Brenner",
+      "title": "MAHE MG500: MIG/MAG-Brenner | VES-TECH",
+      "description": "MAHE MG500: Wassergekühlter MIG/MAG-Brenner mit Grafikdisplay und Fernbedienung, 500 A bei 60 % Einschaltdauer, 4 m Länge. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche MIG/MAG",
+      "title": "MAHE MG500: Torche MIG/MAG | VES-TECH",
+      "description": "MAHE MG500 : Torche MIG/MAG refroidie par eau avec écran graphique et commande à distance, 500 A à 60 % de facteur de marche, longueur de 4 m."
+    },
+    "it": {
+      "type": "Torcia MIG/MAG",
+      "title": "MAHE MG500: Torcia MIG/MAG | VES-TECH",
+      "description": "MAHE MG500: Torcia MIG/MAG raffreddata ad acqua con display grafico e comando a distanza, 500 A al 60 % di ciclo di lavoro, lunghezza di 4 m."
+    },
+    "en": {
+      "type": "MIG/MAG torch",
+      "title": "MAHE MG500: MIG/MAG torch | VES-TECH",
+      "description": "MAHE MG500: Water-cooled MIG/MAG torch with graphic display and remote control, rated at 500 A at 60 % duty cycle, 4 m long. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha MIG/MAG",
+      "title": "MAHE MG500: Antorcha MIG/MAG | VES-TECH",
+      "description": "MAHE MG500: Antorcha MIG/MAG refrigerada por agua, pantalla gráfica y mando a distancia. 500 A al 60 % de ciclo de trabajo, 4 m."
+    }
+  },
+  "mf405w": {
+    "de": {
+      "type": "MIG/MAG-Brenner",
+      "title": "MAHE MF405W: MIG/MAG-Brenner | VES-TECH",
+      "description": "MAHE MF405W: Wassergekühlter MIG/MAG-Brenner für die HyperMIG-X-Serie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche MIG/MAG",
+      "title": "MAHE MF405W: Torche MIG/MAG | VES-TECH",
+      "description": "MAHE MF405W : Torche MIG/MAG refroidie à l’eau pour la série HyperMIG X. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia MIG/MAG",
+      "title": "MAHE MF405W: Torcia MIG/MAG | VES-TECH",
+      "description": "MAHE MF405W: Torcia MIG/MAG raffreddata ad acqua per la serie HyperMIG X. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MIG/MAG torch",
+      "title": "MAHE MF405W: MIG/MAG torch | VES-TECH",
+      "description": "MAHE MF405W: Water-cooled MIG/MAG torch for the HyperMIG X series. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha MIG/MAG",
+      "title": "MAHE MF405W: Antorcha MIG/MAG | VES-TECH",
+      "description": "MAHE MF405W: Antorcha MIG/MAG refrigerada por agua para la serie HyperMIG X. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mf240w": {
+    "de": {
+      "type": "MIG/MAG-Brenner",
+      "title": "MAHE MF240W: MIG/MAG-Brenner | VES-TECH",
+      "description": "MAHE MF240W: Wassergekühlter MIG/MAG-Brenner für kleinere Leistungsklassen. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche MIG/MAG",
+      "title": "MAHE MF240W: Torche MIG/MAG | VES-TECH",
+      "description": "MAHE MF240W : Torche MIG/MAG refroidie à l’eau pour les classes de puissance inférieures. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia MIG/MAG",
+      "title": "MAHE MF240W: Torcia MIG/MAG | VES-TECH",
+      "description": "MAHE MF240W: Torcia MIG/MAG raffreddata ad acqua per le classi di potenza inferiori. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MIG/MAG torch",
+      "title": "MAHE MF240W: MIG/MAG torch | VES-TECH",
+      "description": "MAHE MF240W: Water-cooled MIG/MAG torch for lower power ranges. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha MIG/MAG",
+      "title": "MAHE MF240W: Antorcha MIG/MAG | VES-TECH",
+      "description": "MAHE MF240W: Antorcha MIG/MAG refrigerada por agua para rangos de potencia inferiores. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mf155": {
+    "de": {
+      "type": "MIG/MAG-Brenner",
+      "title": "MAHE MF155: MIG/MAG-Brenner | VES-TECH",
+      "description": "MAHE MF155: Gasgekühlter MIG/MAG-Brenner für EcoMIG und MMS, in 3 oder 4 m Länge. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche MIG/MAG",
+      "title": "MAHE MF155: Torche MIG/MAG | VES-TECH",
+      "description": "MAHE MF155 : Torche MIG/MAG refroidie au gaz pour EcoMIG et MMS, en 3 ou 4 m de longueur. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia MIG/MAG",
+      "title": "MAHE MF155: Torcia MIG/MAG | VES-TECH",
+      "description": "MAHE MF155: Torcia MIG/MAG raffreddata a gas per EcoMIG e MMS, nelle lunghezze di 3 o 4 m. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MIG/MAG torch",
+      "title": "MAHE MF155: MIG/MAG torch | VES-TECH",
+      "description": "MAHE MF155: Gas-cooled MIG/MAG torch for EcoMIG and MMS, available in 3 or 4 m lengths. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha MIG/MAG",
+      "title": "MAHE MF155: Antorcha MIG/MAG | VES-TECH",
+      "description": "MAHE MF155: Antorcha MIG/MAG refrigerada por gas para EcoMIG y MMS, disponible en longitudes de 3 o 4 m. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mf250": {
+    "de": {
+      "type": "MIG/MAG-Brenner",
+      "title": "MAHE MF250: MIG/MAG-Brenner | VES-TECH",
+      "description": "MAHE MF250: Gasgekühlter MIG/MAG-Brenner in 4 m Länge für EcoMIG und MMS, wahlweise mit Up/Down. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche MIG/MAG",
+      "title": "MAHE MF250: Torche MIG/MAG | VES-TECH",
+      "description": "MAHE MF250 : Torche MIG/MAG refroidie au gaz de 4 m pour EcoMIG et MMS, avec commande Up/Down au choix. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia MIG/MAG",
+      "title": "MAHE MF250: Torcia MIG/MAG | VES-TECH",
+      "description": "MAHE MF250: Torcia MIG/MAG raffreddata a gas da 4 m per EcoMIG e MMS, a scelta con Up/Down. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "MIG/MAG torch",
+      "title": "MAHE MF250: MIG/MAG torch | VES-TECH",
+      "description": "MAHE MF250: Gas-cooled MIG/MAG torch for EcoMIG and MMS, 4 m long, optionally with Up/Down control. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha MIG/MAG",
+      "title": "MAHE MF250: Antorcha MIG/MAG | VES-TECH",
+      "description": "MAHE MF250: Antorcha MIG/MAG refrigerada por gas para EcoMIG y MMS, de 4 m de longitud, opcionalmente con control Up/Down."
+    }
+  },
+  "mt170": {
+    "de": {
+      "type": "WIG-Brenner",
+      "title": "MAHE MT170: WIG-Brenner | VES-TECH",
+      "description": "MAHE MT170: Gasgekühlter WIG-Brenner für Beta digital, Beta DX und HyperCleaner CT 200. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche TIG",
+      "title": "MAHE MT170: Torche TIG | VES-TECH",
+      "description": "MAHE MT170 : Torche TIG refroidie au gaz pour Beta digital, Beta DX et HyperCleaner CT 200. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia TIG",
+      "title": "MAHE MT170: Torcia TIG | VES-TECH",
+      "description": "MAHE MT170: Torcia TIG raffreddata a gas per Beta digital, Beta DX e HyperCleaner CT 200. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "TIG torch",
+      "title": "MAHE MT170: TIG torch | VES-TECH",
+      "description": "MAHE MT170: Gas-cooled TIG torch for Beta digital, Beta DX and HyperCleaner CT 200. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha TIG",
+      "title": "MAHE MT170: Antorcha TIG | VES-TECH",
+      "description": "MAHE MT170: Antorcha TIG refrigerada por gas para Beta digital, Beta DX e HyperCleaner CT 200. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mt170v": {
+    "de": {
+      "type": "WIG-Brenner",
+      "title": "MAHE MT170 V: WIG-Brenner | VES-TECH",
+      "description": "MAHE MT170 V: Gasgekühlter WIG-Brenner für Delta, Delta Digital, Delta Digital DS und i-1600, mit Gasventil am Brenner. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche TIG",
+      "title": "MAHE MT170 V: Torche TIG | VES-TECH",
+      "description": "MAHE MT170 V : Torche TIG refroidie au gaz pour Delta, Delta Digital, Delta Digital DS et i-1600, avec vanne de gaz sur la torche."
+    },
+    "it": {
+      "type": "Torcia TIG",
+      "title": "MAHE MT170 V: Torcia TIG | VES-TECH",
+      "description": "MAHE MT170 V: Torcia TIG raffreddata a gas per Delta, Delta Digital, Delta Digital DS e i-1600, con valvola del gas sulla torcia."
+    },
+    "en": {
+      "type": "TIG torch",
+      "title": "MAHE MT170 V: TIG torch | VES-TECH",
+      "description": "MAHE MT170 V: Gas-cooled TIG torch for Delta, Delta Digital, Delta Digital DS and i-1600, with a gas valve on the torch. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha TIG",
+      "title": "MAHE MT170 V: Antorcha TIG | VES-TECH",
+      "description": "MAHE MT170 V: Antorcha TIG refrigerada por gas para Delta, Delta Digital, Delta Digital DS e i-1600, con válvula de gas en la antorcha."
+    }
+  },
+  "mt180w": {
+    "de": {
+      "type": "WIG-Brenner",
+      "title": "MAHE MT180W: WIG-Brenner | VES-TECH",
+      "description": "MAHE MT180W: Wassergekühlter WIG-Brenner in 4 oder 8 m Länge für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche TIG",
+      "title": "MAHE MT180W: Torche TIG | VES-TECH",
+      "description": "MAHE MT180W : Torche TIG refroidie à l’eau en 4 ou 8 m pour Beta digital, HyperCleaner CT 200 et la série HyperTIG. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia TIG",
+      "title": "MAHE MT180W: Torcia TIG | VES-TECH",
+      "description": "MAHE MT180W: Torcia TIG raffreddata ad acqua da 4 o 8 m per Beta digital, HyperCleaner CT 200 e la serie HyperTIG. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "TIG torch",
+      "title": "MAHE MT180W: TIG torch | VES-TECH",
+      "description": "MAHE MT180W: Water-cooled TIG torch in 4 or 8 m lengths for Beta digital, HyperCleaner CT 200 and the HyperTIG series. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha TIG",
+      "title": "MAHE MT180W: Antorcha TIG | VES-TECH",
+      "description": "MAHE MT180W: Antorcha TIG refrigerada por agua, en longitudes de 4 u 8 m, para Beta digital, HyperCleaner CT 200 y la serie HyperTIG."
+    }
+  },
+  "mt200w": {
+    "de": {
+      "type": "WIG-Brenner",
+      "title": "MAHE MT200W: WIG-Brenner | VES-TECH",
+      "description": "MAHE MT200W: Wassergekühlter WIG-Brenner für Beta digital, HyperCleaner CT 200 und die HyperTIG-Serie, wahlweise mit Potentiometer."
+    },
+    "fr": {
+      "type": "Torche TIG",
+      "title": "MAHE MT200W: Torche TIG | VES-TECH",
+      "description": "MAHE MT200W : Torche TIG refroidie à l’eau pour Beta digital, HyperCleaner CT 200 et la série HyperTIG, au choix avec potentiomètre."
+    },
+    "it": {
+      "type": "Torcia TIG",
+      "title": "MAHE MT200W: Torcia TIG | VES-TECH",
+      "description": "MAHE MT200W: Torcia TIG raffreddata ad acqua per Beta digital, HyperCleaner CT 200 e la serie HyperTIG, a scelta con potenziometro."
+    },
+    "en": {
+      "type": "TIG torch",
+      "title": "MAHE MT200W: TIG torch | VES-TECH",
+      "description": "MAHE MT200W: Water-cooled TIG torch for Beta digital, HyperCleaner CT 200 and the HyperTIG series, optionally with a potentiometer."
+    },
+    "es": {
+      "type": "Antorcha TIG",
+      "title": "MAHE MT200W: Antorcha TIG | VES-TECH",
+      "description": "MAHE MT200W: Antorcha TIG refrigerada por agua para Beta digital, HyperCleaner CT 200 y la serie HyperTIG, opcionalmente con potenciómetro."
+    }
+  },
+  "mt260": {
+    "de": {
+      "type": "WIG-Brenner",
+      "title": "MAHE MT260: WIG-Brenner | VES-TECH",
+      "description": "MAHE MT260: Gasgekühlter WIG-Brenner für Beta digital, Beta DX, Omega AX und HyperCleaner CT 200. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche TIG",
+      "title": "MAHE MT260: Torche TIG | VES-TECH",
+      "description": "MAHE MT260 : Torche TIG refroidie au gaz pour Beta digital, Beta DX, Omega AX et HyperCleaner CT 200. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia TIG",
+      "title": "MAHE MT260: Torcia TIG | VES-TECH",
+      "description": "MAHE MT260: Torcia TIG raffreddata a gas per Beta digital, Beta DX, Omega AX e HyperCleaner CT 200. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "TIG torch",
+      "title": "MAHE MT260: TIG torch | VES-TECH",
+      "description": "MAHE MT260: Gas-cooled TIG torch for Beta digital, Beta DX, Omega AX and HyperCleaner CT 200. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha TIG",
+      "title": "MAHE MT260: Antorcha TIG | VES-TECH",
+      "description": "MAHE MT260: Antorcha TIG refrigerada por gas para Beta digital, Beta DX, Omega AX e HyperCleaner CT 200. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mt260v": {
+    "de": {
+      "type": "WIG-Brenner",
+      "title": "MAHE MT260 V: WIG-Brenner | VES-TECH",
+      "description": "MAHE MT260 V: Gasgekühlter WIG-Brenner mit Gasventil am Brenner, in 4 oder 8 m Länge, für Delta, Delta Digital, Delta Digital DS und i-1600."
+    },
+    "fr": {
+      "type": "Torche TIG",
+      "title": "MAHE MT260 V: Torche TIG | VES-TECH",
+      "description": "MAHE MT260 V : Torche TIG refroidie au gaz avec vanne de gaz sur la torche, en 4 ou 8 m, pour Delta, Delta Digital, Delta Digital DS et i-1600."
+    },
+    "it": {
+      "type": "Torcia TIG",
+      "title": "MAHE MT260 V: Torcia TIG | VES-TECH",
+      "description": "MAHE MT260 V: Torcia TIG raffreddata a gas con valvola del gas sulla torcia, da 4 o 8 m, per Delta, Delta Digital, Delta Digital DS e i-1600."
+    },
+    "en": {
+      "type": "TIG torch",
+      "title": "MAHE MT260 V: TIG torch | VES-TECH",
+      "description": "MAHE MT260 V: Gas-cooled TIG torch with a gas valve on the torch, available in 4 or 8 m lengths for Delta, Delta Digital, Delta Digital DS and i-1600."
+    },
+    "es": {
+      "type": "Antorcha TIG",
+      "title": "MAHE MT260 V: Antorcha TIG | VES-TECH",
+      "description": "MAHE MT260 V: Antorcha TIG refrigerada por gas, con válvula de gas y longitudes de 4 u 8 m. Para Delta, Delta Digital, Delta Digital DS e i-1600."
+    }
+  },
+  "pshb65": {
+    "de": {
+      "type": "Plasmaschneidbrenner",
+      "title": "MAHE PSHB 65: Plasmaschneidbrenner | VES-TECH",
+      "description": "MAHE PSHB 65: Plasmaschneidbrenner für die Theta 60 HSC, erhältlich in Längen von 6 und 12 Metern. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Torche de découpe plasma",
+      "title": "MAHE PSHB 65: Torche de découpe plasma | VES-TECH",
+      "description": "MAHE PSHB 65 : Torche de coupe plasma pour la Theta 60 HSC, disponible en 6 et 12 mètres. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Torcia per taglio plasma",
+      "title": "MAHE PSHB 65: Torcia per taglio plasma | VES-TECH",
+      "description": "MAHE PSHB 65: Torcia da taglio al plasma per la Theta 60 HSC, disponibile nelle lunghezze di 6 e 12 metri. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Plasma cutting torch",
+      "title": "MAHE PSHB 65: Plasma cutting torch | VES-TECH",
+      "description": "MAHE PSHB 65: Plasma cutting torch for Theta 60 HSC, available in 6 and 12 m lengths. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha de corte plasma",
+      "title": "MAHE PSHB 65: Antorcha de corte plasma | VES-TECH",
+      "description": "MAHE PSHB 65: Antorcha de corte por plasma para Theta 60 HSC, disponible en longitudes de 6 y 12 m. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "pshb125": {
+    "de": {
+      "type": "Plasmaschneidbrenner",
+      "title": "MAHE PSHB 125: Plasmaschneidbrenner | VES-TECH",
+      "description": "MAHE PSHB 125: Plasmaschneidbrenner für die Theta 120 HSC mit bis zu 55 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern."
+    },
+    "fr": {
+      "type": "Torche de découpe plasma",
+      "title": "MAHE PSHB 125: Torche de découpe plasma | VES-TECH",
+      "description": "MAHE PSHB 125 : Torche de coupe plasma pour la Theta 120 HSC, avec une capacité de coupe allant jusqu’à 55 mm, disponible en 6 et 12 mètres."
+    },
+    "it": {
+      "type": "Torcia per taglio plasma",
+      "title": "MAHE PSHB 125: Torcia per taglio plasma | VES-TECH",
+      "description": "MAHE PSHB 125: Torcia da taglio al plasma per la Theta 120 HSC, con capacità di taglio fino a 55 mm, disponibile nelle lunghezze di 6 e 12 metri."
+    },
+    "en": {
+      "type": "Plasma cutting torch",
+      "title": "MAHE PSHB 125: Plasma cutting torch | VES-TECH",
+      "description": "MAHE PSHB 125: Plasma cutting torch for Theta 120 HSC with a cutting capacity of up to 55 mm, available in 6 and 12 m lengths. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha de corte plasma",
+      "title": "MAHE PSHB 125: Antorcha de corte plasma | VES-TECH",
+      "description": "MAHE PSHB 125: Antorcha de corte por plasma para Theta 120 HSC con capacidad de corte de hasta 55 mm, disponible en longitudes de 6 y 12 m."
+    }
+  },
+  "pshb160": {
+    "de": {
+      "type": "Plasmaschneidbrenner",
+      "title": "MAHE PSHB 160: Plasmaschneidbrenner | VES-TECH",
+      "description": "MAHE PSHB 160: Plasmaschneidbrenner für die Theta 180 HSC mit bis zu 80 mm Schneidleistung, erhältlich in Längen von 6 und 12 Metern."
+    },
+    "fr": {
+      "type": "Torche de découpe plasma",
+      "title": "MAHE PSHB 160: Torche de découpe plasma | VES-TECH",
+      "description": "MAHE PSHB 160 : Torche de coupe plasma pour la Theta 180 HSC, avec une capacité de coupe allant jusqu’à 80 mm, disponible en 6 et 12 mètres."
+    },
+    "it": {
+      "type": "Torcia per taglio plasma",
+      "title": "MAHE PSHB 160: Torcia per taglio plasma | VES-TECH",
+      "description": "MAHE PSHB 160: Torcia da taglio al plasma per la Theta 180 HSC, con capacità di taglio fino a 80 mm, disponibile nelle lunghezze di 6 e 12 metri."
+    },
+    "en": {
+      "type": "Plasma cutting torch",
+      "title": "MAHE PSHB 160: Plasma cutting torch | VES-TECH",
+      "description": "MAHE PSHB 160: Plasma cutting torch for Theta 180 HSC with a cutting capacity of up to 80 mm, available in 6 and 12 m lengths. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha de corte plasma",
+      "title": "MAHE PSHB 160: Antorcha de corte plasma | VES-TECH",
+      "description": "MAHE PSHB 160: Antorcha de corte por plasma para Theta 180 HSC con capacidad de corte de hasta 80 mm, disponible en longitudes de 6 y 12 m."
+    }
+  },
+  "psab65": {
+    "de": {
+      "type": "Plasmaschneidbrenner",
+      "title": "MAHE PSAB 65: Plasmaschneidbrenner | VES-TECH",
+      "description": "MAHE PSAB 65: Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 60 AUT, erhältlich in Längen von 6 und 12 Metern."
+    },
+    "fr": {
+      "type": "Torche de découpe plasma",
+      "title": "MAHE PSAB 65: Torche de découpe plasma | VES-TECH",
+      "description": "MAHE PSAB 65 : Torche de coupe plasma pour le découpeur plasma pour l’automatisation Theta 60 AUT, disponible en 6 et 12 mètres."
+    },
+    "it": {
+      "type": "Torcia per taglio plasma",
+      "title": "MAHE PSAB 65: Torcia per taglio plasma | VES-TECH",
+      "description": "MAHE PSAB 65: Torcia da taglio al plasma per l’inverter per il taglio al plasma automatizzato Theta 60 AUT, disponibile nelle lunghezze di 6 e 12 metri."
+    },
+    "en": {
+      "type": "Plasma cutting torch",
+      "title": "MAHE PSAB 65: Plasma cutting torch | VES-TECH",
+      "description": "MAHE PSAB 65: Plasma cutting torch for the Theta 60 AUT automation inverter, available in 6 and 12 m lengths. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha de corte plasma",
+      "title": "MAHE PSAB 65: Antorcha de corte plasma | VES-TECH",
+      "description": "MAHE PSAB 65: Antorcha de corte por plasma para el inversor de automatización Theta 60 AUT, disponible en longitudes de 6 y 12 m."
+    }
+  },
+  "psab125": {
+    "de": {
+      "type": "Plasmaschneidbrenner",
+      "title": "MAHE PSAB 125: Plasmaschneidbrenner | VES-TECH",
+      "description": "MAHE PSAB 125: Plasmaschneidbrenner für den Automations-Plasmaschneidinverter Theta 120 AUT, erhältlich in Längen von 6 und 12 Metern."
+    },
+    "fr": {
+      "type": "Torche de découpe plasma",
+      "title": "MAHE PSAB 125: Torche de découpe plasma | VES-TECH",
+      "description": "MAHE PSAB 125 : Torche de coupe plasma pour le découpeur plasma pour l’automatisation Theta 120 AUT, disponible en 6 et 12 mètres."
+    },
+    "it": {
+      "type": "Torcia per taglio plasma",
+      "title": "MAHE PSAB 125: Torcia per taglio plasma | VES-TECH",
+      "description": "MAHE PSAB 125: Torcia da taglio al plasma per l’inverter per il taglio al plasma automatizzato Theta 120 AUT, disponibile nelle lunghezze di 6 e 12 metri."
+    },
+    "en": {
+      "type": "Plasma cutting torch",
+      "title": "MAHE PSAB 125: Plasma cutting torch | VES-TECH",
+      "description": "MAHE PSAB 125: Plasma cutting torch for the Theta 120 AUT automation inverter, available in 6 and 12 m lengths. Advice and price on request."
+    },
+    "es": {
+      "type": "Antorcha de corte plasma",
+      "title": "MAHE PSAB 125: Antorcha de corte plasma | VES-TECH",
+      "description": "MAHE PSAB 125: Antorcha de corte por plasma para el inversor de automatización Theta 120 AUT, disponible en longitudes de 6 y 12 m."
+    }
+  },
+  "vtbox-s25": {
+    "de": {
+      "type": "Plasma-Verschleissteile",
+      "title": "MAHE Verschleissteilebox S 25 | VES-TECH",
+      "description": "MAHE Verschleissteilebox S 25: Verschleissteilebox für den fest in der Theta 40 verbauten Plasmaschneidbrenner S 25. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Pièces d’usure plasma",
+      "title": "MAHE Coffret de pièces d’usure S 25 | VES-TECH",
+      "description": "MAHE Coffret de pièces d’usure S 25 : Coffret de pièces d’usure pour la torche de coupe plasma S 25 montée à demeure dans la Theta 40."
+    },
+    "it": {
+      "type": "Ricambi usurabili plasma",
+      "title": "MAHE Set di parti d’usura S 25 | VES-TECH",
+      "description": "MAHE Set di parti d’usura S 25: Set di parti d’usura per la torcia da taglio al plasma S 25 montata fissa nella Theta 40. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Plasma consumables",
+      "title": "MAHE S 25 consumables kit | VES-TECH",
+      "description": "MAHE S 25 consumables kit: Consumables kit for the S 25 plasma cutting torch built into the Theta 40. Advice and price on request."
+    },
+    "es": {
+      "type": "Consumibles de plasma",
+      "title": "MAHE Juego de consumibles S 25 | VES-TECH",
+      "description": "MAHE Juego de consumibles S 25: Juego de consumibles para la antorcha de corte por plasma S 25 integrada en Theta 40. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "vtbox-pshb65": {
+    "de": {
+      "type": "Plasma-Verschleissteile",
+      "title": "MAHE Verschleissteilebox PSHB 65 | VES-TECH",
+      "description": "MAHE Verschleissteilebox PSHB 65: Verschleissteilebox für den Plasmaschneidbrenner PSHB 65. Inhalt und Ausführung passend zum vorhandenen Brenner klären."
+    },
+    "fr": {
+      "type": "Pièces d’usure plasma",
+      "title": "MAHE Coffret de pièces d’usure PSHB 65 | VES-TECH",
+      "description": "MAHE Coffret de pièces d’usure PSHB 65 : consommables pour cette torche plasma. Contenu et version à confirmer pour votre équipement."
+    },
+    "it": {
+      "type": "Ricambi usurabili plasma",
+      "title": "MAHE Set di parti d’usura PSHB 65 | VES-TECH",
+      "description": "MAHE Set di parti d’usura PSHB 65: Cassetta di ricambi usurabili per la torcia plasma PSHB 65. Verificate contenuto e versione per la torcia esistente."
+    },
+    "en": {
+      "type": "Plasma consumables",
+      "title": "MAHE PSHB 65 consumables kit | VES-TECH",
+      "description": "MAHE PSHB 65 consumables kit: Consumables box for the PSHB 65 plasma cutting torch. Confirm the contents and version for your existing torch."
+    },
+    "es": {
+      "type": "Consumibles de plasma",
+      "title": "MAHE Juego de consumibles PSHB 65 | VES-TECH",
+      "description": "MAHE Juego de consumibles PSHB 65: Caja de consumibles para la antorcha de plasma PSHB 65. Confirme el contenido y la versión para su antorcha."
+    }
+  },
+  "vtbox-pshb125": {
+    "de": {
+      "type": "Plasma-Verschleissteile",
+      "title": "MAHE Verschleissteilebox PSHB 125 | VES-TECH",
+      "description": "MAHE Verschleissteilebox PSHB 125: Verschleissteilebox für den Plasmaschneidbrenner PSHB 125. Inhalt und Ausführung passend zum vorhandenen Brenner klären."
+    },
+    "fr": {
+      "type": "Pièces d’usure plasma",
+      "title": "MAHE Coffret de pièces d’usure PSHB 125 | VES-TECH",
+      "description": "MAHE Coffret de pièces d’usure PSHB 125 : consommables pour cette torche plasma. Contenu et version à confirmer pour votre équipement."
+    },
+    "it": {
+      "type": "Ricambi usurabili plasma",
+      "title": "MAHE Set di parti d’usura PSHB 125 | VES-TECH",
+      "description": "MAHE Set di parti d’usura PSHB 125: Cassetta di ricambi usurabili per la torcia plasma PSHB 125. Verificate contenuto e versione per la torcia esistente."
+    },
+    "en": {
+      "type": "Plasma consumables",
+      "title": "MAHE PSHB 125 consumables kit | VES-TECH",
+      "description": "MAHE PSHB 125 consumables kit: Consumables box for the PSHB 125 plasma cutting torch. Confirm the contents and version for your existing torch."
+    },
+    "es": {
+      "type": "Consumibles de plasma",
+      "title": "MAHE Juego de consumibles PSHB 125 | VES-TECH",
+      "description": "MAHE Juego de consumibles PSHB 125: Caja de consumibles para la antorcha de plasma PSHB 125. Confirme el contenido y la versión para su antorcha."
+    }
+  },
+  "vtbox-pshb160": {
+    "de": {
+      "type": "Plasma-Verschleissteile",
+      "title": "MAHE Verschleissteilebox PSHB 160 | VES-TECH",
+      "description": "MAHE Verschleissteilebox PSHB 160: Verschleissteilebox für den Plasmaschneidbrenner PSHB 160. Inhalt und Ausführung passend zum vorhandenen Brenner klären."
+    },
+    "fr": {
+      "type": "Pièces d’usure plasma",
+      "title": "MAHE Coffret de pièces d’usure PSHB 160 | VES-TECH",
+      "description": "MAHE Coffret de pièces d’usure PSHB 160 : consommables pour cette torche plasma. Contenu et version à confirmer pour votre équipement."
+    },
+    "it": {
+      "type": "Ricambi usurabili plasma",
+      "title": "MAHE Set di parti d’usura PSHB 160 | VES-TECH",
+      "description": "MAHE Set di parti d’usura PSHB 160: Cassetta di ricambi usurabili per la torcia plasma PSHB 160. Verificate contenuto e versione per la torcia esistente."
+    },
+    "en": {
+      "type": "Plasma consumables",
+      "title": "MAHE PSHB 160 consumables kit | VES-TECH",
+      "description": "MAHE PSHB 160 consumables kit: Consumables box for the PSHB 160 plasma cutting torch. Confirm the contents and version for your existing torch."
+    },
+    "es": {
+      "type": "Consumibles de plasma",
+      "title": "MAHE Juego de consumibles PSHB 160 | VES-TECH",
+      "description": "MAHE Juego de consumibles PSHB 160: Caja de consumibles para la antorcha de plasma PSHB 160. Confirme el contenido y la versión para su antorcha."
+    }
+  },
+  "drahtvorschubrollen": {
+    "de": {
+      "type": "Drahtvorschubrollen",
+      "title": "MAHE Drahtvorschubrollen | VES-TECH",
+      "description": "MAHE Drahtvorschubrollen: Drahtvorschubrollen für EcoMIG und MMS, mit Ausführungen für Stahl und Aluminium sowie gerändelten Varianten."
+    },
+    "fr": {
+      "type": "Galets d’entraînement",
+      "title": "MAHE Galets d’entraînement | VES-TECH",
+      "description": "MAHE Galets d’entraînement : Galets d'entraînement pour EcoMIG et MMS, en versions acier, moletée et aluminium. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Rulli trainafilo",
+      "title": "MAHE Rulli trainafilo | VES-TECH",
+      "description": "MAHE Rulli trainafilo: Rulli trainafilo per EcoMIG e MMS, nelle versioni acciaio, zigrinata e alluminio. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Wire feed rollers",
+      "title": "MAHE Wire feed rollers | VES-TECH",
+      "description": "MAHE Wire feed rollers: Wire feed rollers for EcoMIG and MMS, with versions for steel and aluminium as well as knurled versions."
+    },
+    "es": {
+      "type": "Rodillos de alimentación de hilo",
+      "title": "MAHE Rodillos de alimentación de hilo | VES-TECH",
+      "description": "MAHE Rodillos de alimentación de hilo: versiones para acero y aluminio, y moleteadas. Consulte el perfil y el diámetro."
+    }
+  },
+  "drahtvorschubrollen-hyper": {
+    "de": {
+      "type": "Drahtvorschubrollen",
+      "title": "MAHE Drahtvorschubrollen HyperMIG X | VES-TECH",
+      "description": "MAHE Drahtvorschubrollen HyperMIG X: Drahtvorschubrollen für die HyperMIG-X-Serie, mit Ausführungen für Stahl und Aluminium sowie gerändelten Varianten."
+    },
+    "fr": {
+      "type": "Galets d’entraînement",
+      "title": "MAHE Galets HyperMIG X | VES-TECH",
+      "description": "MAHE Galets HyperMIG X : Galets d'entraînement pour la série HyperMIG X, en versions acier, moletée et aluminium. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Rulli trainafilo",
+      "title": "MAHE Rulli HyperMIG X | VES-TECH",
+      "description": "MAHE Rulli HyperMIG X: Rulli trainafilo per la serie HyperMIG X, nelle versioni acciaio, zigrinata e alluminio. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Wire feed rollers",
+      "title": "MAHE HyperMIG X wire feed rollers | VES-TECH",
+      "description": "MAHE HyperMIG X wire feed rollers: Wire feed rollers for the HyperMIG X series, with versions for steel and aluminium as well as knurled versions."
+    },
+    "es": {
+      "type": "Rodillos de alimentación de hilo",
+      "title": "MAHE Rodillos de alimentación de hilo HyperMIG X | VES-TECH",
+      "description": "MAHE Rodillos de alimentación de hilo HyperMIG X: versiones para acero y aluminio, y moleteadas. Consulte el perfil y el diámetro."
+    }
+  },
+  "zwischenschlauchpaket": {
+    "de": {
+      "type": "Zwischenschlauchpaket",
+      "title": "MAHE Zwischenschlauchpaket | VES-TECH",
+      "description": "MAHE Zwischenschlauchpaket: Zwischenschlauchpaket, das die Stromquelle der HyperMIG-X-Serie mit dem Drahtvorschubkoffer verbindet."
+    },
+    "fr": {
+      "type": "Faisceau de liaison",
+      "title": "MAHE Faisceau intermédiaire | VES-TECH",
+      "description": "MAHE Faisceau intermédiaire : Faisceau intermédiaire reliant la source de courant de la série HyperMIG X au dévidoir. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Fascio cavi di collegamento",
+      "title": "MAHE Fascio cavi intermedio | VES-TECH",
+      "description": "MAHE Fascio cavi intermedio: Fascio intermedio che collega il generatore della serie HyperMIG X al trainafilo. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Interconnection hose assembly",
+      "title": "MAHE Interconnecting cable assembly | VES-TECH",
+      "description": "MAHE Interconnecting cable assembly: Interconnecting cable assembly connecting the HyperMIG X power source to the wire feeder. Advice and price on request."
+    },
+    "es": {
+      "type": "Conjunto de mangueras de interconexión",
+      "title": "MAHE Paquete de interconexión | VES-TECH",
+      "description": "MAHE Paquete de interconexión: Paquete de interconexión entre la fuente de corriente HyperMIG X y el alimentador de hilo."
+    }
+  },
+  "plasmafix-51": {
+    "de": {
+      "type": "Mikroplasma",
+      "title": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T · Occasionen",
+      "description": "SAF-FRO PlasmaFix 51 und Oerlikon PlasmaFix P+T: revidierte Mikroplasma-Anlagen in Herisau. Besichtigung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Microplasma",
+      "title": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T · Occasions",
+      "description": "SAF-FRO PlasmaFix 51 et Oerlikon PlasmaFix P+T : microplasma révisés à Herisau. Visite sur rendez-vous, prix sur demande."
+    },
+    "it": {
+      "type": "Microplasma",
+      "title": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T · Usato",
+      "description": "SAF-FRO PlasmaFix 51 e Oerlikon PlasmaFix P+T: impianti microplasma revisionati a Herisau. Visita su appuntamento, prezzo su richiesta."
+    },
+    "en": {
+      "type": "Microplasma",
+      "title": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T · Used Equipment",
+      "description": "SAF-FRO PlasmaFix 51 and Oerlikon PlasmaFix P+T: refurbished microplasma equipment in Herisau. Viewing by appointment, price on request."
+    },
+    "es": {
+      "type": "Microplasma",
+      "title": "SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T · Equipos usados",
+      "description": "SAF-FRO PlasmaFix 51 y Oerlikon PlasmaFix P+T: equipos microplasma reacondicionados en Herisau. Visita con cita, precio bajo consulta."
+    }
+  },
+  "plasmafix-50s": {
+    "de": {
+      "type": "Mikroplasma",
+      "title": "Oerlikon PlasmaFix 50 S Mikroplasma gebraucht kaufen | VES-TECH Swiss",
+      "description": "Oerlikon PlasmaFix 50 S: revidierte Mikroplasma-Anlage in Herisau. Besichtigung nach Vereinbarung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Microplasma",
+      "title": "Oerlikon PlasmaFix 50 S d’occasion à vendre | VES-TECH Swiss",
+      "description": "Oerlikon PlasmaFix 50 S : appareil microplasma révisé à Herisau. Visite sur rendez-vous et prix sur demande."
+    },
+    "it": {
+      "type": "Microplasma",
+      "title": "Oerlikon PlasmaFix 50 S Microplasma usato in vendita | VES-TECH Swiss",
+      "description": "Oerlikon PlasmaFix 50 S: impianto microplasma revisionato a Herisau. Visita su appuntamento e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Microplasma",
+      "title": "Used Oerlikon PlasmaFix 50 S Microplasma for Sale | VES-TECH Swiss",
+      "description": "Oerlikon PlasmaFix 50 S: refurbished microplasma equipment in Herisau. Viewing by appointment and price on request."
+    },
+    "es": {
+      "type": "Microplasma",
+      "title": "Oerlikon PlasmaFix 50 S Microplasma usado a la venta | VES-TECH Swiss",
+      "description": "Oerlikon PlasmaFix 50 S: equipo microplasma reacondicionado en Herisau. Visita con cita y precio bajo consulta."
+    }
+  }
+}

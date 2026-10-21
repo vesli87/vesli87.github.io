@@ -1857,3 +1857,10 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-application h3{font-size:21px}
   .volt-application p{grid-column:1/-1}
 }
+@media screen{
+  .catalog-comparison{margin-top:28px}
+  .catalog-comparison h3{font-size:22px;line-height:1.3;margin:0 0 12px}
+  .catalog-comparison>p{max-width:920px;margin:0 0 18px}
+  .catalog-comparison .spectab{min-width:600px}
+  .catalog-comparison tbody th a{color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+}

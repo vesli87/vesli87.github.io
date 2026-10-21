@@ -482,6 +482,8 @@ HYPERMIG_CWK = _load("HYPERMIG_CWK")
 GUIDE_LINKS = _load("GUIDE_LINKS")
 SEARCH_LANDINGS = _load("SEARCH_LANDINGS")
 HOME_APPLICATIONS = _load("HOME_APPLICATIONS")
+PRODUCT_SEO = _load("PRODUCT_SEO")
+CATEGORY_COMPARISONS = _load("CATEGORY_COMPARISONS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
@@ -1293,6 +1295,49 @@ def validate_search_landings():
 def validate_editorial_guides():
     """Validate all languages and destinations before replacing generated files."""
     validate_search_landings()
+    if set(PRODUCT_SEO) != set(BY_ID):
+        raise ValueError('Product search copy must cover the current catalogue exactly')
+    search_titles = set()
+    for pid, translations in PRODUCT_SEO.items():
+        if set(translations) != set(LANGS):
+            raise ValueError(f'Incomplete product search languages: {pid}')
+        for lang, copy in translations.items():
+            if set(copy) != {'type', 'title', 'description'} or any(
+                    not isinstance(value, str) or not value.strip() or '<' in value or '>' in value
+                    for value in copy.values()):
+                raise ValueError(f'Invalid plain product search copy: {pid}/{lang}')
+            if len(copy['title']) > (70 if BY_ID[pid]['cat'] == 'occasion' else 68) or not 50 <= len(copy['description']) <= 155:
+                raise ValueError(f'Product search copy exceeds editorial limits: {pid}/{lang}')
+            if copy['description'].endswith(('…', '...')):
+                raise ValueError(f'Product search description must be complete: {pid}/{lang}')
+            identities = ([m['brand'] + ' ' + m['name'] for m in BY_ID[pid]['models']]
+                          if BY_ID[pid].get('models') else [pFullName(lang, BY_ID[pid])])
+            if any(name not in copy['title'] or name not in copy['description'] for name in identities):
+                raise ValueError(f'Product search copy must preserve its brand/model identity: {pid}/{lang}')
+            if copy['title'] in search_titles:
+                raise ValueError(f'Duplicate product search title: {pid}/{lang}')
+            search_titles.add(copy['title'])
+    comparison_routes = set()
+    for row in CATEGORY_COMPARISONS:
+        if set(row) != {'id', 'cat', 'sub', 'products', 'fields', 'copy'} or not re.fullmatch(r'[a-z][a-z0-9-]+', row['id']):
+            raise ValueError('Invalid comparison structure or identifier')
+        route = (row['cat'], row['sub'])
+        if route in comparison_routes or row['sub'] not in CAT_BY_ID[row['cat']]['subs']:
+            raise ValueError('Duplicate or unknown comparison route')
+        comparison_routes.add(route)
+        if not 2 <= len(row['products']) <= 6 or len(set(row['products'])) != len(row['products']):
+            raise ValueError('Comparison needs distinct catalogue products')
+        if not row['fields'] or len(set(row['fields'])) != len(row['fields']):
+            raise ValueError('Comparison needs distinct source fields')
+        for pid in row['products']:
+            product = BY_ID[pid]
+            if (product['cat'], product['sub']) != route or any(key not in product['specs'] for key in row['fields']):
+                raise ValueError('Comparison must use existing products and their actual fields')
+        if set(row['copy']) != set(LANGS):
+            raise ValueError('Incomplete comparison languages')
+        for copy in row['copy'].values():
+            if set(copy) != {'title', 'note'} or any(not isinstance(v, str) or not v.strip() or '<' in v or '>' in v for v in copy.values()):
+                raise ValueError('Comparison copy must be complete plain text')
     if len(HOME_APPLICATIONS) != 4:
         raise ValueError('Homepage needs four distinct application routes')
     for lang in LANGS:

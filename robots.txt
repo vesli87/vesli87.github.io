@@ -4,13 +4,11 @@
 
 User-agent: *
 Allow: /
-Disallow: /suche/
-Disallow: /fr/recherche/
-Disallow: /it/ricerca/
-Disallow: /en/search/
-Disallow: /es/buscar/
+# Die fuenf Such-Einstiegsseiten bleiben crawlbar, damit Google noindex lesen
+# kann. Unbegrenzte Ergebnis-URLs werden dagegen nicht zum Crawlen angeboten.
 Disallow: /build/
 Disallow: /*?q=
+Disallow: /*?*&q=
 
 User-agent: GPTBot
 Allow: /

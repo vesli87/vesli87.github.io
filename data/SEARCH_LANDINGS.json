@@ -152,29 +152,177 @@
     "id": "reinigung",
     "sub": "Cleaner",
     "de": {
-      "title": "Edelstahl-Schweissnahtreinigung: MAHE Cleaner | VES-TECH",
+      "title": "Schweissnahtreinigungsgeräte für Edelstahl | VES-TECH",
       "description": "Anlauffarben an Edelstahl entfernen: MAHE MiniReiniger und HyperCleaner vergleichen. Beratung zu Naht, Oberfläche, Elektrolyt und Ausstattung.",
-      "h1": "Elektrolytische Schweissnahtreinigung für Edelstahl"
+      "h1": "Schweissnahtreinigungsgeräte für Edelstahl"
     },
     "fr": {
-      "title": "Nettoyage des soudures inox : MAHE Cleaner | VES-TECH",
+      "title": "Nettoyeurs de soudures inox MAHE | VES-TECH Swiss",
       "description": "Éliminez les colorations thermiques sur inox : comparez MiniCleaner et HyperCleaner MAHE. Conseil sur le cordon, la surface et l’électrolyte.",
-      "h1": "Nettoyage électrolytique des soudures inox"
+      "h1": "Appareils de nettoyage électrolytique des soudures inox"
     },
     "it": {
-      "title": "Pulizia delle saldature inox: MAHE Cleaner | VES-TECH",
+      "title": "Pulitori di saldature inox MAHE | VES-TECH Swiss",
       "description": "Rimuovere le colorazioni termiche sull’inox: confrontate MAHE MiniCleaner e HyperCleaner. Consulenza su saldatura, superficie, elettrolita e dotazione.",
-      "h1": "Pulizia elettrolitica delle saldature inox"
+      "h1": "Apparecchi per la pulizia elettrolitica delle saldature inox"
     },
     "en": {
-      "title": "Stainless steel weld cleaning: MAHE Cleaner | VES-TECH",
+      "title": "Stainless steel weld cleaners MAHE | VES-TECH Swiss",
       "description": "Remove heat tint from stainless steel: compare MAHE MiniCleaner and HyperCleaner. Advice on the weld, surface, electrolyte and equipment.",
-      "h1": "Electrolytic stainless steel weld cleaning"
+      "h1": "Stainless steel weld cleaning equipment"
     },
     "es": {
-      "title": "Limpieza de soldaduras inox: MAHE Cleaner | VES-TECH",
+      "title": "Limpiadores de soldaduras inox MAHE | VES-TECH Swiss",
       "description": "Elimine la coloración térmica en acero inoxidable: compare MAHE MiniCleaner e HyperCleaner. Asesoramiento sobre superficie, electrolito y equipamiento.",
-      "h1": "Limpieza electrolítica de soldaduras de acero inoxidable"
+      "h1": "Equipos de limpieza electrolítica de soldaduras inox"
+    }
+  },
+  {
+    "kind": "category",
+    "id": "reinigung",
+    "de": {
+      "title": "Schweissnahtreinigung und Signiergeräte MAHE | VES-TECH Swiss",
+      "description": "MAHE-Geräte zum Reinigen, Polieren und Signieren von Edelstahl. Cleaner, Elektrolyte und Dosierung vergleichen. Beratung und Preis auf Anfrage.",
+      "h1": "MAHE-Geräte für Schweissnahtreinigung und Metallbeschriftung"
+    },
+    "fr": {
+      "title": "Nettoyage des soudures et marquage MAHE | VES-TECH Swiss",
+      "description": "MAHE pour nettoyer, polir et marquer l’inox. Comparez nettoyeurs de soudures, électrolytes et dosage. Conseil en Suisse et prix sur demande.",
+      "h1": "Nettoyage des soudures et marquage électrolytique MAHE"
+    },
+    "it": {
+      "title": "Pulizia saldature e marcatura MAHE | VES-TECH Swiss",
+      "description": "MAHE per pulire, lucidare e marcare l’inox. Confrontate pulitori di saldature, elettroliti e dosaggio. Consulenza in Svizzera e prezzo su richiesta.",
+      "h1": "Pulizia delle saldature e marcatura elettrolitica MAHE"
+    },
+    "en": {
+      "title": "MAHE weld cleaning and metal marking | VES-TECH Swiss",
+      "description": "MAHE equipment for cleaning, polishing and marking stainless steel. Compare weld cleaners, electrolytes and dosing. Advice in Switzerland.",
+      "h1": "MAHE weld cleaning and electrolytic metal marking"
+    },
+    "es": {
+      "title": "Limpieza de soldaduras y marcado MAHE | VES-TECH Swiss",
+      "description": "MAHE para limpiar, pulir y marcar acero inoxidable. Compare limpiadores, electrolitos y dosificación. Asesoramiento en Suiza y precio bajo consulta.",
+      "h1": "Limpieza de soldaduras y marcado electrolítico MAHE"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "schweissgeraete",
+    "sub": "MIG / MAG",
+    "de": {
+      "title": "MIG/MAG-Schweissgeräte: MAHE Puls und Synergie | VES-TECH",
+      "description": "MAHE MIG/MAG für Werkstatt und Fertigung: HyperMIG X, TWIN, EcoMIG und MMS vergleichen. Verfahren und Ausstattung passend zur Aufgabe auswählen.",
+      "h1": "MIG/MAG-Schweissgeräte für Werkstatt und Fertigung"
+    },
+    "fr": {
+      "title": "Postes MIG/MAG MAHE : pulsé et synergie | VES-TECH",
+      "description": "MIG/MAG MAHE pour l’atelier et la fabrication : comparez HyperMIG X, TWIN, EcoMIG et MMS. Choisissez les procédés et l’équipement adaptés au travail.",
+      "h1": "Postes MIG/MAG pour l’atelier et la fabrication"
+    },
+    "it": {
+      "title": "Saldatrici MIG/MAG MAHE: pulsato e sinergia | VES-TECH",
+      "description": "MIG/MAG MAHE per officina e produzione: confrontate HyperMIG X, TWIN, EcoMIG e MMS. Scegliete procedimenti ed equipaggiamento in base al lavoro.",
+      "h1": "Saldatrici MIG/MAG per officina e produzione"
+    },
+    "en": {
+      "title": "MAHE MIG/MAG welders: pulse and synergy | VES-TECH",
+      "description": "MAHE MIG/MAG for workshop and production: compare HyperMIG X, TWIN, EcoMIG and MMS. Match the processes and equipment to your welding task.",
+      "h1": "MIG/MAG welding machines for workshop and production"
+    },
+    "es": {
+      "title": "Soldadoras MIG/MAG MAHE: pulsado y sinergia | VES-TECH",
+      "description": "MIG/MAG MAHE para taller y producción: compare HyperMIG X, TWIN, EcoMIG y MMS. Elija los procesos y el equipamiento adecuados para el trabajo.",
+      "h1": "Equipos MIG/MAG para taller y producción"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "reinigung",
+    "sub": "Signiergeräte",
+    "de": {
+      "title": "Metall signieren: elektrolytisches MAHE HCS 1 | VES-TECH",
+      "description": "Elektrolytisches Signieren von Metall mit MAHE HCS 1. Beschriftung, Schablone und Signierelektrolyt M1 gemeinsam auswählen. Preis auf Anfrage.",
+      "h1": "Elektrolytische Signiergeräte für Metall"
+    },
+    "fr": {
+      "title": "Marquage électrolytique du métal : MAHE HCS 1 | VES-TECH",
+      "description": "Marquage électrolytique du métal avec MAHE HCS 1. Choisissez ensemble le marquage, le pochoir et l’électrolyte M1. Prix sur demande.",
+      "h1": "Appareils de marquage électrolytique du métal"
+    },
+    "it": {
+      "title": "Marcatura elettrolitica dei metalli: MAHE HCS 1 | VES-TECH",
+      "description": "Marcatura elettrolitica dei metalli con MAHE HCS 1. Scegliete insieme marcatura, maschera ed elettrolita M1. Prezzo su richiesta.",
+      "h1": "Apparecchi per la marcatura elettrolitica dei metalli"
+    },
+    "en": {
+      "title": "Electrolytic metal marking: MAHE HCS 1 | VES-TECH",
+      "description": "Electrolytic metal marking with MAHE HCS 1. Select the marking, stencil and M1 electrolyte together. Advice and price on request.",
+      "h1": "Electrolytic metal marking equipment"
+    },
+    "es": {
+      "title": "Marcado electrolítico de metales: MAHE HCS 1 | VES-TECH",
+      "description": "Marcado electrolítico de metales con MAHE HCS 1. Elija conjuntamente el marcado, la plantilla y el electrolito M1. Precio bajo consulta.",
+      "h1": "Equipos de marcado electrolítico de metales"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "zubehoer",
+    "sub": "Brenner",
+    "de": {
+      "title": "MIG/MAG-Brenner und WIG-Brenner von MAHE | VES-TECH",
+      "description": "MAHE-Brenner für MIG/MAG und WIG: MG500 mit Grafikdisplay sowie MF-Modelle und MT-Modelle vergleichen. Kühlung, Anschluss und Länge passend wählen.",
+      "h1": "MIG/MAG-Brenner und WIG-Brenner von MAHE"
+    },
+    "fr": {
+      "title": "Torches MIG/MAG et TIG MAHE | VES-TECH Swiss",
+      "description": "Torches MAHE MIG/MAG et TIG : comparez MG500 avec écran graphique et modèles MF et MT. Choisissez refroidissement, raccordement et longueur.",
+      "h1": "Torches MIG/MAG et TIG MAHE"
+    },
+    "it": {
+      "title": "Torce MIG/MAG e TIG MAHE | VES-TECH Swiss",
+      "description": "Torce MAHE MIG/MAG e TIG: confrontate MG500 con display grafico e modelli MF e MT. Scegliete raffreddamento, collegamento e lunghezza.",
+      "h1": "Torce MIG/MAG e TIG MAHE"
+    },
+    "en": {
+      "title": "MAHE MIG/MAG and TIG welding torches | VES-TECH Swiss",
+      "description": "MAHE MIG/MAG and TIG torches: compare MG500 with graphic display and MF and MT models. Match the cooling, connection and length to your equipment.",
+      "h1": "MAHE MIG/MAG and TIG welding torches"
+    },
+    "es": {
+      "title": "Antorchas MIG/MAG y TIG MAHE | VES-TECH Swiss",
+      "description": "Antorchas MAHE MIG/MAG y TIG: compare MG500 con pantalla gráfica y modelos MF y MT. Elija refrigeración, conexión y longitud para su equipo.",
+      "h1": "Antorchas de soldadura MIG/MAG y TIG MAHE"
+    }
+  },
+  {
+    "kind": "category",
+    "id": "zubehoer",
+    "de": {
+      "title": "MAHE-Zubehör: Brenner, Kühlung und Vorschub | VES-TECH",
+      "description": "MAHE-Zubehör für Schweissen, Plasma und Reinigung. Brenner, Kühlung, Vorschub und Verschleissteile nach Gerät und Ausführung auswählen.",
+      "h1": "Zubehör für MAHE-Schweissgeräte, Plasma und Reinigung"
+    },
+    "fr": {
+      "title": "Accessoires MAHE : torches, refroidissement et fil | VES-TECH",
+      "description": "Accessoires MAHE pour soudage, plasma et nettoyage. Choisissez torches, refroidissement, dévidage et consommables selon l’appareil et sa version.",
+      "h1": "Accessoires MAHE pour soudage, plasma et nettoyage"
+    },
+    "it": {
+      "title": "Accessori MAHE: torce, raffreddamento e filo | VES-TECH",
+      "description": "Accessori MAHE per saldatura, plasma e pulizia. Scegliete torce, raffreddamento, trainafilo e ricambi usurabili in base all’apparecchio e alla versione.",
+      "h1": "Accessori MAHE per saldatura, plasma e pulizia"
+    },
+    "en": {
+      "title": "MAHE accessories: torches, cooling and wire feed | VES-TECH",
+      "description": "MAHE accessories for welding, plasma and cleaning. Select torches, cooling units, wire feeders and consumables for the equipment and version.",
+      "h1": "Accessories for MAHE welding, plasma and cleaning equipment"
+    },
+    "es": {
+      "title": "Accesorios MAHE: antorchas, refrigeración e hilo | VES-TECH",
+      "description": "Accesorios MAHE para soldadura, plasma y limpieza. Elija antorchas, refrigeración, alimentadores y consumibles según el equipo y su versión.",
+      "h1": "Accesorios MAHE para soldadura, plasma y limpieza"
     }
   }
 ]

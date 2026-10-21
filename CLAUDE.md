@@ -36,6 +36,8 @@ Bearbeitet werden also:
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |
 | Bestehende Unterkategorie-URLs | `build/subcategory_slugs.json`; bei Textkorrekturen unverändert lassen |
 | Seitentitel, meta description, FAQ | `build/i18n_extra.json` |
+| Produktsuche: Titel, vollständige Snippets, sichtbare Geräteart | `data/PRODUCT_SEO.json` |
+| Kategorie-Suchtexte und datenbasierte Vergleiche | `data/SEARCH_LANDINGS.json`, `data/CATEGORY_COMPARISONS.json` |
 | AGB, Datenschutzerklärung, Impressum | `build/i18n_extra.json` → `agb_body` / `datenschutz_body` / `impressum_body`, je `[["Überschrift", "&lt;p&gt;…"], …]` in DE/FR/IT/EN/ES |
 | Firmenadresse, Telefon, Domain | `build/core.py` → `COMPANY` / `SITE` |
 | Search-Console-/Bing-Verifizierung | `build/core.py` → `GOOGLE_SITE_VERIFICATION` / `BING_SITE_VERIFICATION` |

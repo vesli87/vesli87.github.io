@@ -225,7 +225,8 @@ def search_index(lang):
             # ueber die Beschreibung.
             "t1": norm(f"{C.pFullName(lang, p)} {p['name']} {p['id']} "
                        f"{' '.join(p.get('aka', []))}"),
-            "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} {' '.join(mats)} {' '.join(feats)}"),
+            "t2": norm(f"{C.vtT(lang, p['vt'])} {C.subT(lang, p['sub'])} {C.catT(lang, cat)} "
+                       f"{C.PRODUCT_SEO[p['id']][lang]['type']} {' '.join(mats)} {' '.join(feats)}"),
             "t3": norm(f"{C.pDesc(lang, p)} {specs_txt} {' '.join(hl)} {C.panel_text(lang, p)} {C.cwk_text(lang, p)} "
                        + guide_text(C.PRODUCT_GUIDES.get(p['id'], {}).get(lang), False)),
         })
@@ -234,6 +235,7 @@ def search_index(lang):
     for c in C.CATS:
         cats.append({"n": C.catT(lang, c), "d": C.catD(lang, c), "u": C.u_cat(lang, c["id"]),
                      "t1": norm(C.catT(lang, c)),
+                     "t2": norm(' '.join((C.search_landing(lang, c['id']) or {}).values())),
                      "t3": norm(C.catD(lang, c) + ' ' + guide_text(C.BUYING_GUIDE[c['id']][lang], True))})
         for s in c["subs"]:
             # A colliding subcategory is represented by its product route.
@@ -243,6 +245,7 @@ def search_index(lang):
             cats.append({"n": f"{C.subT(lang, s)} · {C.catT(lang, c)}", "d": guide['intro'],
                          "u": C.u_sub(lang, c["id"], s),
                          "t1": norm(C.subT(lang, s)),
+                         "t2": norm(' '.join((C.search_landing(lang, c['id'], s) or {}).values())),
                          "t3": norm(C.catT(lang, c) + ' ' + guide_text(guide, True))})
     procs = [{"n": pr["n"].get(lang) or pr["n"]["de"],
               "d": pr["d"].get(lang) or pr["d"]["de"],
@@ -565,7 +568,6 @@ AI_AGENTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web
 
 
 def robots():
-    dis = "\n".join(f"Disallow: {C.u_page(l, 'search')}" for l in C.LANGS)
     ai = "\n\n".join(f"User-agent: {a}\nAllow: /" for a in AI_AGENTS)
     return f"""# robots.txt – {C.COMPANY['name']}
 # Antwortmaschinen sind ausdrücklich willkommen: die Produktdaten sollen in
@@ -573,9 +575,11 @@ def robots():
 
 User-agent: *
 Allow: /
-{dis}
+# Die fuenf Such-Einstiegsseiten bleiben crawlbar, damit Google noindex lesen
+# kann. Unbegrenzte Ergebnis-URLs werden dagegen nicht zum Crawlen angeboten.
 Disallow: /build/
 Disallow: /*?q=
+Disallow: /*?*&q=
 
 {ai}
 

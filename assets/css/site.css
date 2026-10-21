@@ -1645,7 +1645,7 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-home-product-label p{display:block;margin:8px 0}
   .process-article{grid-template-columns:160px minmax(0,1fr);gap:24px;padding:26px}
   .kontaktwrap{grid-template-columns:minmax(0,1fr)}
-  .kinfo{grid-row:1}
+  .contact-main{grid-row:1}
   .volt-panel-feature{padding:26px;gap:22px}
 }
 @media screen and (max-width:640px){
@@ -1863,4 +1863,36 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .catalog-comparison>p{max-width:920px;margin:0 0 18px}
   .catalog-comparison .spectab{min-width:600px}
   .catalog-comparison tbody th a{color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+}
+
+/* Task-led entry and a short route from equipment selection to an enquiry. */
+.volt-home-support{max-width:48ch;color:var(--ink);font-size:16px;line-height:1.65;margin:-12px 0 24px}
+.selection-contact{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 30px;margin:0 0 30px}
+.selection-contact::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border:32px solid transparent;border-image:url('/assets/icons/design/volt-frame.svg') 32 fill / 32px / 0 stretch}
+.selection-contact h2{font-size:22px;line-height:1.3;margin:0 0 8px}
+.selection-contact p{max-width:70ch;color:var(--muted);font-size:15px;line-height:1.6;margin:0}
+.selection-contact .btn{flex-shrink:0;max-width:100%}
+.kform h2{font-size:26px;line-height:1.25;margin:0 0 12px}
+.form-intro{color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 20px}
+.contact-direct{margin-top:24px}
+.summary-direct{margin-top:18px}
+.summary-direct a{color:var(--accent-ink);text-decoration:underline}
+.product-quick-contact{display:none}
+@media screen and (max-width:700px){
+  .selection-contact{display:block;padding:24px;margin-bottom:24px}
+  .selection-contact .btn{margin-top:18px;white-space:normal}
+  .product-quick-contact{position:fixed;inset:auto 0 0;z-index:65;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#f8fafb;border-top:2px solid var(--accent);box-shadow:0 -3px 18px #24354312}
+  .product-quick-contact>span{grid-column:1/-1;font-size:13px;font-weight:700;line-height:1.4;overflow-wrap:anywhere}
+  .product-quick-contact .btn{font-size:14px;min-height:44px;padding:10px 14px;white-space:normal;text-align:center;line-height:1.4}
+  body:has(.product-quick-contact){padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+  body.lupe-offen .product-quick-contact,body:has(.cart.open,.mega.open,.analytics-consent:not([hidden])) .product-quick-contact{display:none}
+}
+@media print{.selection-contact,.product-quick-contact{display:none!important}}
+
+.form select{width:100%;min-height:48px;background:#fff;border:1px solid var(--field-line);border-radius:2px;padding:11px 13px;color:var(--ink);font:inherit;font-size:16px}
+.form select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+@media screen and (max-width:760px){
+  .cbar-compact .volt-intro-art{display:none}
+  .cbar-compact .volt-intro-copy{padding-bottom:0}
 }

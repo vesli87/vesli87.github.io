@@ -358,5 +358,95 @@
     "medium": "organic_social",
     "campaign": "mahe-programm-2026",
     "content": "daily-20261014-pshb125-verschleissteile-de"
+  },
+  "google-growth-20261021-tig-de": {
+    "source": "google",
+    "medium": "cpc",
+    "campaign": "tig-montage-2026",
+    "content": "growth-20261021-tig-de"
+  },
+  "bing-growth-20261021-tig-de": {
+    "source": "bing",
+    "medium": "cpc",
+    "campaign": "tig-montage-2026",
+    "content": "growth-20261021-tig-de"
+  },
+  "linkedin-growth-20261021-tig-de": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "tig-montage-2026",
+    "content": "growth-20261021-tig-de"
+  },
+  "facebook-growth-20261021-tig-de": {
+    "source": "facebook",
+    "medium": "organic_social",
+    "campaign": "tig-montage-2026",
+    "content": "growth-20261021-tig-de"
+  },
+  "instagram-growth-20261021-tig-de": {
+    "source": "instagram",
+    "medium": "organic_social",
+    "campaign": "tig-montage-2026",
+    "content": "growth-20261021-tig-de"
+  },
+  "google-growth-20261021-cleaning-de": {
+    "source": "google",
+    "medium": "cpc",
+    "campaign": "nahtreinigung-2026",
+    "content": "growth-20261021-cleaning-de"
+  },
+  "bing-growth-20261021-cleaning-de": {
+    "source": "bing",
+    "medium": "cpc",
+    "campaign": "nahtreinigung-2026",
+    "content": "growth-20261021-cleaning-de"
+  },
+  "linkedin-growth-20261021-cleaning-de": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "nahtreinigung-2026",
+    "content": "growth-20261021-cleaning-de"
+  },
+  "facebook-growth-20261021-cleaning-de": {
+    "source": "facebook",
+    "medium": "organic_social",
+    "campaign": "nahtreinigung-2026",
+    "content": "growth-20261021-cleaning-de"
+  },
+  "instagram-growth-20261021-cleaning-de": {
+    "source": "instagram",
+    "medium": "organic_social",
+    "campaign": "nahtreinigung-2026",
+    "content": "growth-20261021-cleaning-de"
+  },
+  "google-growth-20261021-cnc-de": {
+    "source": "google",
+    "medium": "cpc",
+    "campaign": "cnc-plasma-2026",
+    "content": "growth-20261021-cnc-de"
+  },
+  "bing-growth-20261021-cnc-de": {
+    "source": "bing",
+    "medium": "cpc",
+    "campaign": "cnc-plasma-2026",
+    "content": "growth-20261021-cnc-de"
+  },
+  "linkedin-growth-20261021-cnc-de": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "cnc-plasma-2026",
+    "content": "growth-20261021-cnc-de"
+  },
+  "facebook-growth-20261021-cnc-de": {
+    "source": "facebook",
+    "medium": "organic_social",
+    "campaign": "cnc-plasma-2026",
+    "content": "growth-20261021-cnc-de"
+  },
+  "instagram-growth-20261021-cnc-de": {
+    "source": "instagram",
+    "medium": "organic_social",
+    "campaign": "cnc-plasma-2026",
+    "content": "growth-20261021-cnc-de"
   }
 }

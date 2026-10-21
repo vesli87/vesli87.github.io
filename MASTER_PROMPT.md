@@ -1286,3 +1286,37 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
 - Keine neuen Browserbibliotheken, Tracker, Schrift- oder Bilddateien. Der
   Suchindex wird unverändert erst bei Benutzung geladen. Private Kundenanalyse
   und Kampagnenentwürfe bleiben unter dem ausgeschlossenen `reports/`.
+
+## 29. Aufgabenbezogene Kontaktwege und CRO (21.10.2026)
+
+- Die vier vorhandenen Anwendungseinstiege stehen unmittelbar nach dem Hero.
+  Der kompakte Serviceeinstieg bleibt ebenfalls direkt nach dem Hero.
+  Der freigegebene VOLT-Stil, die Produktdiaschau und alle bestehenden URLs bleiben erhalten.
+  Eine kurze Zeile erklärt Geräteauswahl, Konfiguration und den direkten Technikkontakt.
+- `data/INQUIRY_TOPICS.json` enthält acht übersetzte Themen mit bestehenden
+  Katalogzielen und genau einer Qualifizierungsgruppe (`equipment`, `accessory`, `repair` oder `calib`).
+  `core.inquiry_topics()` validiert Struktur, Klartext und vollständige Sprachfassungen
+  vor dem Löschen generierter Seiten. Kategorien WIG/TIG, MIG/MAG, CNC-Tische,
+  Cleaner, manuelles Plasma und Zubehör verlinken `?topic=<bekannte-id>`.
+  Ein Thema ist keine Produktauswahl und erzeugt keinen Warenkorbposten.
+- Auf der Kontaktseite steht das Formular vor dem zusätzlichen WhatsApp-Kanal
+  und auf kleinen Bildschirmen auch vor der Adresskarte. Die dekorative Abbildung
+  des Kontaktkopfs wird mobil ausgeblendet; die Desktopdarstellung bleibt erhalten.
+  Die Themenwahl bleibt optional. Produkt und Service haben Vorrang; widersprüchliche,
+  doppelte oder unbekannte Kontextwerte werden verworfen. Ein Sprachwechsel erhält
+  nur den geprüften Kontext. Kundentext und technische Entwürfe werden nicht überschrieben.
+  Nicht passende technische Felder bleiben deaktiviert und werden nicht gesendet.
+- Auf Produktseiten bietet eine mobile Kontaktleiste denselben direkten Produktlink
+  wie die bestehende Beratung, inklusive gewählter Variante. Sie verschwindet bei
+  Menü, Anfrageliste, Bildvergrösserung und sichtbaren Datenschutzeinstellungen.
+  Fusszeile und sichere Bildschirmränder erhalten Platz; keine neue JS-Abhängigkeit.
+- Web3Forms-Erfolg heisst technisch übermittelt, nicht nachgewiesen im Postfach
+  zugestellt. Die bestätigte Zusammenfassung bleibt kopierbar und nennt zusätzlich
+  den direkten Telefonkontakt. Es gibt keine neuen Autoantworten oder Trackingpixel.
+- Die Kampagnenregistrierung akzeptiert zusätzlich statische Google-/Bing-Tupel mit
+  `cpc` für drei geprüfte Themen. Das schaltet keine Werbung, kein Budget und kein
+  Google-/Meta-Tag ein. GCLID und andere unbekannte Kennungen bleiben ausgeschlossen.
+  Bekannte Themenparameter werden vor optionaler Analytik auf die kanonische
+  Kontaktadresse reduziert; Thema und Nachricht werden nicht gemessen.
+  Eigene Referrer mit Thema bleiben ausgeschlossen, weil das SDK rohe Referrer liest.
+  Kampagnen und Entwürfe liegen privat unter `reports/growth/`, nicht im Public-Paket.

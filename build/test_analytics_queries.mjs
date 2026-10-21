@@ -1,5 +1,6 @@
 // Exact inquiry queries must be safe even when rejected/modified by a visitor.
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const initAnalytics = require('../assets/js/analytics.js');
@@ -7,15 +8,16 @@ import { test } from 'node:test';
 
 
 
-function observe(search, { lang = 'de', granted = true, referrer = '', pathname = '' } = {}) {
+function observe(search, { lang = 'de', granted = true, referrer = '', pathname = '', campaigns = {} } = {}) {
   const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/', es: '/es/contacto/' }[lang];
   const page = pathname || contact;
   const appended = [], sent = [];
   const panel = { hidden: true, dataset: { host: 'www.ves-tech.ch', token: '', ahrefsKey: 'public-test-key' }, addEventListener() {}, querySelector: () => ({ focus() {} }) };
   const settings = { hidden: true, setAttribute() {}, addEventListener() {} };
   const config = { contactPath: contact, paths: [contact, page], products: { mms: 'schweissgeraete', 'plasmafix-51': 'occasion' },
+    topics: ['tig','mig','cnc','cleaning','plasma','accessories'],
     inquiryOptions: { mms: ['mms-2000c', 'mms-3000-ex'], 'plasmafix-51': ['unit-left', 'unit-centre', 'unit-right'] },
-    servicePaths: { '/service/': 'overview', '/service/reparatur/': 'repair', '/service/kalibrierung/': 'calib', '/service/automation/': 'auto' }, campaigns: {} };
+    servicePaths: { '/service/': 'overview', '/service/reparatur/': 'repair', '/service/kalibrierung/': 'calib', '/service/automation/': 'auto' }, campaigns };
   const context = { URL, Date,
     document: { referrer, visibilityState: 'visible', getElementById: id => id === 'analyticsConsent' ? panel : id === 'analyticsSettings' ? settings : null,
       querySelector: s => s === 'link[rel="canonical"]' ? { href: 'https://www.ves-tech.ch' + page } : null,
@@ -99,5 +101,38 @@ test('new catalogue languages retain their language and safe product identity', 
     assert.equal(event.props.lang, lang);
     assert.equal(event.props.product_id, 'mms');
     assert.doesNotMatch(JSON.stringify(result.sent), /private|option|customer/);
+  }
+});
+
+
+test('public enquiry topics are accepted after consent without measuring their query or value', () => {
+  for (const lang of ['de','fr','it','en','es']) {
+    const result = observe('?topic=tig', {lang});
+    assert.equal(result.appended.length, 1);
+    assert.equal(result.appended[0].attrs['data-page-location'], 'https://www.ves-tech.ch' + result.config.contactPath);
+    assert.doesNotMatch(JSON.stringify(result.sent), /topic|tig/);
+    assert.equal(observe('?topic=tig', {lang, granted:false}).appended.length, 0);
+    for (const query of ['?topic=unknown','?topic=constructor','?topic=tig&topic=tig','?topic=tig&email=private', '?topic=tig&product=mms']) {
+      assert.equal(observe(query, {lang}).appended.length, 0, query);
+    }
+    assert.equal(observe('', {lang,referrer:'https://www.ves-tech.ch'+result.config.contactPath+'?topic=tig'}).appended.length,0);
+  }
+});
+
+
+test('reviewed paid-search tuples are measurable only with consent and without arbitrary click identifiers', () => {
+  const campaigns=JSON.parse(readFileSync(new URL('../data/ANALYTICS_CAMPAIGNS.json',import.meta.url),'utf8'));
+  for (const source of ['google','bing']) {
+    const row=campaigns[source+'-growth-20261021-tig-de'];
+    const query='?'+new URLSearchParams(Object.fromEntries(Object.entries(row).map(([k,v])=>['utm_'+k,v])));
+    const opts={campaigns,pathname:'/produkte/schweissgeraete/wig-tig/'};
+    const result=observe(query,opts);
+    assert.equal(result.appended.length,1);
+    assert.ok(result.appended[0].attrs['data-page-location'].includes('utm_medium=cpc'));
+    assert.equal(observe(query,{...opts,granted:false}).appended.length,0);
+    for (const extra of ['&gclid=private-id','&msclkid=private-id','&email=private@example.invalid','&utm_source='+source]) {
+      assert.equal(observe(query+extra,opts).appended.length,0,extra);
+    }
+    assert.equal(observe(query.replace('tig-montage-2026','unreviewed-campaign'),opts).appended.length,0);
   }
 });

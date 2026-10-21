@@ -449,7 +449,7 @@ class GeneratorTests(unittest.TestCase):
                     for title, text in guide['criteria']:
                         self.assertTrue(title.strip() and text.strip())
                         self.assertIn(f'<dt>{R.e(title)}</dt><dd>{R.e(text)}</dd>', main)
-                    self.assertIn(C.u_page(lang, 'contact'), MainLinks(page).links)
+                    self.assertIn(PG.category_contact_url(lang, cid, sub), MainLinks(page).links)
                     rendered += 1
         self.assertEqual(rendered, 21 * len(C.LANGS))
         self.assertEqual(len(set().union(*intros.values())), 21 * len(C.LANGS))

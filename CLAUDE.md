@@ -45,6 +45,7 @@ Bearbeitet werden also:
 | Auswahlhilfen je Kategorie | `data/BUYING_GUIDE.json` |
 | Statistik und Zustimmung | `assets/js/analytics.js`, `build/config.public.json` |
 | Aussehen | `assets/css/site.css` |
+| Aufgabenbezogene Kontaktwege | `data/INQUIRY_TOPICS.json` |
 | Suche, Anfrageliste, Formulare | `assets/js/app.js` |
 | Seitenaufbau / HTML-Struktur | `build/pages.py`, `build/render.py` |
 

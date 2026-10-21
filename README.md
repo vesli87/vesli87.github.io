@@ -89,7 +89,8 @@ feste Ereigniswerte. Vier UTM-Werte müssen gemeinsam einem Eintrag in
 `data/ANALYTICS_CAMPAIGNS.json` entsprechen. Unbekannte Parameter, Fragmente,
 Suchseiten und unsichere Referrer verhindern das Laden. `?product=` mit optionalem `option=` ist nur für bekannte Produktkombinationen
 auf der Kontaktseite erlaubt. `?service=` akzeptiert nur die vier bekannten
-Dienstleistungen. Diese Parameter werden nicht als URL übertragen, Optionen
+Dienstleistungen. `?topic=` akzeptiert ausschliesslich die acht Themen aus
+`INQUIRY_TOPICS.json`. Diese Parameter werden nicht als URL übertragen, Optionen
 werden nicht an die Analytik gesendet.
 Ein einzelner `fbclid`-Parameter wird nach Zustimmung vor dem Laden von Ahrefs
 aus der aktuellen Browseradresse entfernt. Sein Wert wird weder gespeichert noch
@@ -103,8 +104,8 @@ Beide Zahlenreihen deshalb getrennt auswerten.
 
 Der Browser merkt sich nach Zustimmung den ersten bekannten Kampagnenkontakt
 und die bereinigte Einstiegsseite in `sessionStorage`, höchstens 24 Stunden.
-Kein Besucherprofil und keine eigene Personenkennung. Beim Versand wird dieser
-Kontext der geschäftlichen Anfrage beigefügt. Name, E-Mail, Telefonnummer und
+Kein Besucherprofil und keine eigene Personenkennung. Dieser Kontext bleibt ausschliesslich in der optionalen Statistik und wird
+seit den kompakten Benachrichtigungen vom 21.10.2026 nicht an die Anfrage angehängt. Name, E-Mail, Telefonnummer und
 Freitext gehen ausschliesslich an den Versanddienst, nicht in Analytics-Properties.
 Ein Mailentwurf liegt nicht mehr als automatisch messbares `href` im DOM.
 
@@ -113,7 +114,9 @@ Die Ereignisse `product_view`, `inquiry_add`, `inquiry_open`, `inquiry_start`,
 `contact_phone`, `contact_whatsapp`, `product_consult` und `download_click` müssen in Ahrefs als
 gleichnamige Custom Events eingerichtet sein. `inquiry_success` entsteht nur
 nach `success === true` von Web3Forms, einmal pro erfolgreichem Versand.
-Ein Klick, Mailentwurf oder Versandversuch ist keine bestätigte Anfrage.
+Ein Klick, Mailentwurf oder Versandversuch ist kein erfolgreicher Versand.
+Auch `inquiry_success` bestätigt nur die Annahme durch den Anbieter, nicht die
+Zustellung im Postfach. Qualifizierte Anfragen und Aufträge werden getrennt geprüft.
 `contact_whatsapp` zählt nur den Klick auf den festen Geschäftskontakt aus
 `COMPANY.whatsapp_href`, nach Statistik-Zustimmung. Telefonnummer, Linkziel und
 Nachrichtentext werden dabei nicht übertragen. Der normale externe Link öffnet

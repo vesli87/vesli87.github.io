@@ -484,6 +484,7 @@ SEARCH_LANDINGS = _load("SEARCH_LANDINGS")
 HOME_APPLICATIONS = _load("HOME_APPLICATIONS")
 PRODUCT_SEO = _load("PRODUCT_SEO")
 CATEGORY_COMPARISONS = _load("CATEGORY_COMPARISONS")
+INQUIRY_TOPICS = _load("INQUIRY_TOPICS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
@@ -1155,10 +1156,45 @@ def inquiry_services(lang):
             for key, label in names.items()}
 
 
+def inquiry_topics(lang):
+    """Finite, translated needs; never a product recommendation from free input."""
+    if not isinstance(INQUIRY_TOPICS, dict) or not 1 <= len(INQUIRY_TOPICS) <= 8:
+        raise ValueError("Inquiry topics need a small public registry")
+    result = {}
+    routes = set()
+    for key, row in INQUIRY_TOPICS.items():
+        if not isinstance(key, str) or not re.fullmatch(r"[a-z][a-z0-9-]{0,29}", key) or not isinstance(row, dict) or set(row) != {'target', 'group', 'copy'}:
+            raise ValueError("Invalid inquiry topic")
+        if row['group'] not in ('equipment', 'accessory', 'repair', 'calib') or not isinstance(row['copy'], dict) or set(row['copy']) != set(LANGS):
+            raise ValueError("Incomplete inquiry topic")
+        for copy in row['copy'].values():
+            if not isinstance(copy, dict) or set(copy) != {'name', 'heading', 'hint'} or any(
+                    not isinstance(v, str) or not v.strip() or len(v) > 250 or '<' in v or '>' in v
+                    for v in copy.values()):
+                raise ValueError("Inquiry topic copy must be complete plain text")
+        path = editorial_target(lang, row['target'])[1]
+        if path in routes:
+            raise ValueError("Inquiry topics need distinct catalogue or service targets")
+        routes.add(path)
+        result[key] = {'n': row['copy'][lang]['name'],
+                       'u': path,
+                       'g': row['group'], 'hint': row['copy'][lang]['hint']}
+    return result
+
+
+def category_topic(cid, sub=None):
+    for key, row in INQUIRY_TOPICS.items():
+        target = row['target']
+        if target['id'] == cid and target.get('sub') == sub:
+            return key
+    return ''
+
+
 def analytics_campaigns():
     """Finite reviewed tuples, never customer input or arbitrary URL values."""
-    sources = {"linkedin", "facebook", "instagram", "tiktok", "google_business", "youtube"}
-    campaigns = {"mahe-programm-2026", "occasion-microplasma-2026", "service-2026"}
+    sources = {"linkedin", "facebook", "instagram", "tiktok", "google_business", "youtube", "google", "bing"}
+    campaigns = {"mahe-programm-2026", "occasion-microplasma-2026", "service-2026",
+                 "tig-montage-2026", "nahtreinigung-2026", "cnc-plasma-2026"}
     data = ANALYTICS_CAMPAIGNS
     if not isinstance(data, dict) or len(data) > 100:
         raise ValueError("Analytics campaigns must be a small registry")
@@ -1173,7 +1209,8 @@ def analytics_campaigns():
             raise ValueError("Analytics campaign values must be static public labels")
         if row["source"] not in sources or row["campaign"] not in campaigns:
             raise ValueError("Unknown analytics source or campaign")
-        medium = "local_listing" if row["source"] == "google_business" else "organic_social"
+        medium = ("local_listing" if row["source"] == "google_business" else
+                  "cpc" if row["source"] in ("google", "bing") else "organic_social")
         if row["medium"] != medium:
             raise ValueError("Analytics source and medium do not match")
         identity = tuple(row[field] for field in ("source", "medium", "campaign", "content"))

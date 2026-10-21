@@ -1,0 +1,278 @@
+{
+  "tig": {
+    "target": {
+      "kind": "subcategory",
+      "id": "schweissgeraete",
+      "sub": "WIG / TIG"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "WIG/TIG und Rohrmontage",
+        "heading": "Das passende WIG/TIG-Gerät finden",
+        "hint": "Werkstoff, Wandstärke und verfügbare Netzspannung helfen bei der Auswahl."
+      },
+      "fr": {
+        "name": "TIG et montage de tuyauteries",
+        "heading": "Choisir le poste TIG adapté",
+        "hint": "Le matériau, l’épaisseur de paroi et la tension disponible orientent le choix."
+      },
+      "it": {
+        "name": "TIG e montaggio di tubazioni",
+        "heading": "Scegliere il generatore TIG adatto",
+        "hint": "Materiale, spessore della parete e tensione disponibile guidano la scelta."
+      },
+      "en": {
+        "name": "TIG and pipework installation",
+        "heading": "Find the right TIG equipment",
+        "hint": "Material, wall thickness and available supply voltage guide the choice."
+      },
+      "es": {
+        "name": "TIG y montaje de tuberías",
+        "heading": "Elegir el equipo TIG adecuado",
+        "hint": "El material, el espesor de pared y la tensión disponible orientan la elección."
+      }
+    }
+  },
+  "mig": {
+    "target": {
+      "kind": "subcategory",
+      "id": "schweissgeraete",
+      "sub": "MIG / MAG"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "MIG/MAG und Metallbau",
+        "heading": "MIG/MAG für Ihr Arbeitsprofil",
+        "hint": "Nennen Sie Werkstoff, Materialstärke und den geplanten Einsatz in Werkstatt oder Fertigung."
+      },
+      "fr": {
+        "name": "MIG/MAG et construction métallique",
+        "heading": "Le MIG/MAG adapté à votre travail",
+        "hint": "Indiquez le matériau, son épaisseur et l’utilisation prévue en atelier ou en production."
+      },
+      "it": {
+        "name": "MIG/MAG e carpenteria metallica",
+        "heading": "Il MIG/MAG adatto al vostro lavoro",
+        "hint": "Indicate materiale, spessore e impiego previsto in officina o in produzione."
+      },
+      "en": {
+        "name": "MIG/MAG and metal fabrication",
+        "heading": "MIG/MAG for your work",
+        "hint": "Tell us the material, thickness and intended use in the workshop or in production."
+      },
+      "es": {
+        "name": "MIG/MAG y construcción metálica",
+        "heading": "MIG/MAG para su trabajo",
+        "hint": "Indique el material, el espesor y el uso previsto en taller o producción."
+      }
+    }
+  },
+  "cnc": {
+    "target": {
+      "kind": "subcategory",
+      "id": "plasmaschneiden",
+      "sub": "Schneidtische"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "CNC-Plasmaschneidtische",
+        "heading": "Den CNC-Schneidtisch passend auslegen",
+        "hint": "Blechformat, Werkstoff, Materialstärke und gewünschte Schnittqualität bestimmen die Konfiguration."
+      },
+      "fr": {
+        "name": "Tables de découpe plasma CNC",
+        "heading": "Configurer la table CNC adaptée",
+        "hint": "Le format de tôle, le matériau, l’épaisseur et la qualité de coupe souhaitée déterminent la configuration."
+      },
+      "it": {
+        "name": "Tavoli di taglio plasma CNC",
+        "heading": "Configurare il tavolo CNC adatto",
+        "hint": "Formato della lamiera, materiale, spessore e qualità di taglio desiderata determinano la configurazione."
+      },
+      "en": {
+        "name": "CNC plasma cutting tables",
+        "heading": "Specify the right CNC cutting table",
+        "hint": "Sheet size, material, thickness and required cut quality determine the configuration."
+      },
+      "es": {
+        "name": "Mesas de corte por plasma CNC",
+        "heading": "Configurar la mesa CNC adecuada",
+        "hint": "El formato de chapa, el material, el espesor y la calidad de corte deseada determinan la configuración."
+      }
+    }
+  },
+  "cleaning": {
+    "target": {
+      "kind": "subcategory",
+      "id": "reinigung",
+      "sub": "Cleaner"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "Elektrolytische Nahtreinigung",
+        "heading": "Die passende Lösung für Ihre Edelstahlnaht",
+        "hint": "Beschreiben Sie die Anlauffarben, die Zugänglichkeit der Naht und die gewünschte Oberfläche."
+      },
+      "fr": {
+        "name": "Nettoyage électrolytique des soudures",
+        "heading": "La solution adaptée à votre soudure inox",
+        "hint": "Décrivez les colorations thermiques, l’accessibilité de la soudure et la surface souhaitée."
+      },
+      "it": {
+        "name": "Pulizia elettrolitica delle saldature",
+        "heading": "La soluzione adatta alla saldatura inox",
+        "hint": "Descrivete le colorazioni termiche, l’accessibilità della saldatura e la superficie desiderata."
+      },
+      "en": {
+        "name": "Electrolytic weld cleaning",
+        "heading": "The right solution for your stainless steel weld",
+        "hint": "Describe the heat tint, weld accessibility and required surface finish."
+      },
+      "es": {
+        "name": "Limpieza electrolítica de soldaduras",
+        "heading": "La solución para su soldadura de inoxidable",
+        "hint": "Describa las coloraciones térmicas, la accesibilidad de la soldadura y el acabado deseado."
+      }
+    }
+  },
+  "plasma": {
+    "target": {
+      "kind": "category",
+      "id": "plasmaschneiden"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "Manuelles Plasmaschneiden",
+        "heading": "Plasmaschneider nach Aufgabe auswählen",
+        "hint": "Werkstoff, Materialstärke, Schnittanforderung und Stromversorgung sind die wichtigsten Angaben."
+      },
+      "fr": {
+        "name": "Découpe plasma manuelle",
+        "heading": "Choisir le découpeur plasma selon le travail",
+        "hint": "Précisez le matériau, l’épaisseur, la qualité de coupe et l’alimentation disponible."
+      },
+      "it": {
+        "name": "Taglio plasma manuale",
+        "heading": "Scegliere il plasma in base al lavoro",
+        "hint": "Indicate materiale, spessore, qualità di taglio richiesta e alimentazione disponibile."
+      },
+      "en": {
+        "name": "Manual plasma cutting",
+        "heading": "Choose a plasma cutter for the task",
+        "hint": "Specify the material, thickness, cut requirements and available power supply."
+      },
+      "es": {
+        "name": "Corte por plasma manual",
+        "heading": "Elegir el plasma según el trabajo",
+        "hint": "Indique el material, el espesor, la calidad de corte y la alimentación disponible."
+      }
+    }
+  },
+  "accessories": {
+    "target": {
+      "kind": "category",
+      "id": "zubehoer"
+    },
+    "group": "accessory",
+    "copy": {
+      "de": {
+        "name": "Brenner und Zubehör",
+        "heading": "Zubehör passend zu Ihrer Anlage",
+        "hint": "Die genaue Gerätebezeichnung, vorhandene Anschlüsse und gewünschte Ausführung helfen bei der Zuordnung."
+      },
+      "fr": {
+        "name": "Torches et accessoires",
+        "heading": "Les accessoires adaptés à votre installation",
+        "hint": "Le modèle exact, les raccordements existants et la version souhaitée facilitent le choix."
+      },
+      "it": {
+        "name": "Torce e accessori",
+        "heading": "Gli accessori adatti al vostro impianto",
+        "hint": "Modello esatto, collegamenti esistenti e versione desiderata aiutano a verificare la compatibilità."
+      },
+      "en": {
+        "name": "Torches and accessories",
+        "heading": "Accessories for your equipment",
+        "hint": "The exact model, existing connections and required version help us check compatibility."
+      },
+      "es": {
+        "name": "Antorchas y accesorios",
+        "heading": "Accesorios para su equipo",
+        "hint": "El modelo exacto, las conexiones existentes y la versión deseada permiten comprobar la compatibilidad."
+      }
+    }
+  },
+  "repair": {
+    "target": {
+      "kind": "service",
+      "id": "repair"
+    },
+    "group": "repair",
+    "copy": {
+      "de": {
+        "name": "Diagnose und Reparatur",
+        "heading": "Diagnose für Ihre Anlage klären",
+        "hint": "Nennen Sie Hersteller, Modell und Fehlerbild. Kosten und Reparaturumfang werden vor der Ausführung mit Ihnen abgestimmt."
+      },
+      "fr": {
+        "name": "Diagnostic et réparation",
+        "heading": "Préciser le diagnostic de votre installation",
+        "hint": "Indiquez le fabricant, le modèle et les symptômes. Le coût et l’étendue de la réparation sont convenus avec vous avant intervention."
+      },
+      "it": {
+        "name": "Diagnosi e riparazione",
+        "heading": "Chiarire la diagnosi del vostro impianto",
+        "hint": "Indicate produttore, modello e sintomi. Costi ed entità della riparazione vengono concordati prima dell’intervento."
+      },
+      "en": {
+        "name": "Diagnostics and repair",
+        "heading": "Discuss diagnostics for your equipment",
+        "hint": "Tell us the manufacturer, model and symptoms. Costs and the scope of repair are agreed with you before work begins."
+      },
+      "es": {
+        "name": "Diagnóstico y reparación",
+        "heading": "Concretar el diagnóstico de su equipo",
+        "hint": "Indique el fabricante, el modelo y los síntomas. El coste y el alcance de la reparación se acuerdan antes de intervenir."
+      }
+    }
+  },
+  "calibration": {
+    "target": {
+      "kind": "service",
+      "id": "calib"
+    },
+    "group": "calib",
+    "copy": {
+      "de": {
+        "name": "Kalibrierung",
+        "heading": "Kalibrierung für Ihre Geräte planen",
+        "hint": "Nennen Sie Modell, Geräteanzahl und gewünschte Dokumentation. Wir klären den passenden Ablauf und Termin."
+      },
+      "fr": {
+        "name": "Étalonnage",
+        "heading": "Prévoir l’étalonnage de vos appareils",
+        "hint": "Indiquez le modèle, le nombre d’appareils et la documentation souhaitée. Nous précisons le déroulement et la date avec vous."
+      },
+      "it": {
+        "name": "Calibrazione",
+        "heading": "Pianificare la calibrazione degli apparecchi",
+        "hint": "Indicate modello, numero di apparecchi e documentazione desiderata. Concordiamo con voi la procedura e la data."
+      },
+      "en": {
+        "name": "Calibration",
+        "heading": "Plan calibration for your equipment",
+        "hint": "Tell us the model, number of units and documentation required. We will discuss the process and timing with you."
+      },
+      "es": {
+        "name": "Calibración",
+        "heading": "Planificar la calibración de sus equipos",
+        "hint": "Indique el modelo, el número de equipos y la documentación necesaria. Concretaremos con usted el procedimiento y la fecha."
+      }
+    }
+  }
+}

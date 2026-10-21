@@ -764,6 +764,8 @@ def main():
     # Validate configuration before deleting any generated pages.
     C.analytics_enabled()
     C.analytics_campaigns()
+    for lang in C.LANGS:
+        C.inquiry_topics(lang)
     C.web3forms_key()
     C.validate_translations()
     C.validate_editorial_guides()

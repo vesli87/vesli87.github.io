@@ -122,12 +122,17 @@
   /* ============================ Anfrageliste ============================ */
   var CART_KEY = 'vt.cart.v2', LEGACY_CART_KEY = 'vt.cart.v1';
   var inquiryCatalog = VT.inquiryCatalog || {}, inquiryServices = VT.inquiryServices || {};
-  var contactSelection = null, contactService = '', contextWarning = false;
+  var inquiryTopics = VT.inquiryTopics || {};
+  var contactSelection = null, contactService = '', contactTopic = '', contextWarning = false;
   function owns(object, key) { return Object.prototype.hasOwnProperty.call(object, key); }
   function catalogProduct(id) {
     if (typeof id !== 'string' || !/^[a-z0-9-]{1,100}$/.test(id) || !owns(inquiryCatalog, id)) return null;
     var p = inquiryCatalog[id];
     return p && typeof p.n === 'string' && typeof p.u === 'string' && safeUrl(p.u).charAt(0) === '/' ? p : null;
+  }
+  function knownTopic(id) {
+    return typeof id === 'string' && /^[a-z][a-z0-9-]{0,29}$/.test(id) && owns(inquiryTopics, id) &&
+      ['equipment', 'accessory', 'repair', 'calib'].indexOf(inquiryTopics[id].g) >= 0;
   }
   function catalogOption(p, id) {
     if (!p || !id || typeof id !== 'string' || !/^[a-z0-9-]{1,100}$/.test(id)) return null;
@@ -260,19 +265,21 @@
   function updateLanguageContext() {
     $$('.langs a').forEach(function (link) {
       var url = new URL(link.href, location.origin);
-      ['product', 'option', 'service'].forEach(function (key) { url.searchParams.delete(key); });
+      ['product', 'option', 'service', 'topic'].forEach(function (key) { url.searchParams.delete(key); });
       if (contactSelection) {
         url.searchParams.set('product', contactSelection.id);
         if (contactSelection.option) url.searchParams.set('option', contactSelection.option);
       } else if (contactService) url.searchParams.set('service', contactService);
+      else if (contactTopic) url.searchParams.set('topic', contactTopic);
       link.href = url.href;
     });
   }
   function readContactContext() {
     var params = new URLSearchParams(location.search);
-    var id = params.get('product'), option = params.get('option'), service = params.get('service');
-    contactSelection = null; contactService = ''; contextWarning = false;
-    if (['product', 'option', 'service'].some(function (key) { return params.getAll(key).length > 1; }) || (id && service)) {
+    var id = params.get('product'), option = params.get('option'), service = params.get('service'), topic = params.get('topic');
+    contactSelection = null; contactService = ''; contactTopic = ''; contextWarning = false;
+    if (['product', 'option', 'service', 'topic'].some(function (key) { return params.getAll(key).length > 1; }) ||
+        [id, service, topic].filter(Boolean).length > 1) {
       contextWarning = true;
     } else if (id) {
       contactSelection = selection({ id: id, option: option || '', qty: 1 });
@@ -283,7 +290,9 @@
     } else if (service && owns(inquiryServices, service)) {
       contactService = service;
       if (option) contextWarning = true;
-    } else if (service || option) contextWarning = true;
+    } else if (topic && knownTopic(topic) && !option) {
+      contactTopic = topic;
+    } else if (service || option || params.has('topic')) contextWarning = true;
   }
   function renderContactContext(f) {
     var box = $('[data-inquiry-context]', f);
@@ -296,9 +305,19 @@
       } else if (contactService) {
         var s = inquiryServices[contactService];
         html += '<p><b>' + esc(t('inquiry_service')) + ':</b> <a href="' + esc(safeUrl(s.u)) + '">' + esc(s.n) + '</a></p>';
+      } else if (contactTopic) {
+        var topic = inquiryTopics[contactTopic];
+        html += '<p><b>' + esc(t('cro_topic_body')) + ':</b> <a href="' + esc(safeUrl(topic.u)) + '">' + esc(topic.n) + '</a></p>';
       }
       box.innerHTML = html; box.hidden = !html;
     }
+    var selector = $('[data-contact-topic]', f), wrapper = $('[data-topic-selector]', f);
+    if (selector) selector.value = contactTopic;
+    if (wrapper) wrapper.hidden = !!(contactSelection || contactService);
+    var hint = $('[data-topic-hint]', f);
+    if (hint) { hint.textContent = contactTopic ? inquiryTopics[contactTopic].hint : ''; hint.hidden = !contactTopic; }
+    var intro = $('.form-intro', f);
+    if (intro) intro.hidden = !!(contactSelection || contactService);
     updateLanguageContext(); updateQualifications(f);
   }
   function contactBody() {
@@ -307,6 +326,7 @@
       var s = inquiryServices[contactService];
       return t('inquiry_service') + ': ' + s.n;
     }
+    if (contactTopic) return t('cro_topic_body') + ': ' + inquiryTopics[contactTopic].n;
     return '';
   }
   function qualificationGroups(f) {
@@ -317,6 +337,7 @@
       if (groups.indexOf(group) < 0) groups.push(group);
     });
     if (f.id === 'kontaktForm' && contactService && contactService !== 'overview') groups.push(contactService);
+    if (f.id === 'kontaktForm' && contactTopic) groups.push(inquiryTopics[contactTopic].g);
     return groups;
   }
   function updateQualifications(f) {
@@ -328,6 +349,12 @@
     });
   }
   document.addEventListener('change', function (event) {
+    if (event.target.hasAttribute && event.target.hasAttribute('data-contact-topic') && !contactSelection && !contactService) {
+      var form = $('#kontaktForm');
+      contactTopic = knownTopic(event.target.value) ? event.target.value : '';
+      contextWarning = !!event.target.value && !contactTopic;
+      if (form) renderContactContext(form);
+    }
     if (event.target.hasAttribute && event.target.hasAttribute('data-inquiry-option')) updateProductLinks();
     if (event.target.hasAttribute && event.target.hasAttribute('data-contact-option') && contactSelection) {
       var next = selection({ id: contactSelection.id, option: event.target.value, qty: 1 });
@@ -1283,7 +1310,10 @@
     box.innerHTML = '<h2>' + esc(t('inquiry_summary_title')) + '</h2>' +
       '<p>' + esc(t('inquiry_summary_note')) + '</p>' +
       '<textarea class="inquiry-summary-text" rows="7" readonly aria-label="' + esc(t('inquiry_summary_title')) + '"></textarea>' +
-      '<button class="inquiry-summary-copy" type="button">' + esc(t('inquiry_summary_copy')) + '</button>';
+      '<button class="inquiry-summary-copy" type="button">' + esc(t('inquiry_summary_copy')) + '</button>' +
+      (typeof VT.phoneHref === 'string' && /^\+?[0-9]+$/.test(VT.phoneHref) ?
+        '<p class="summary-direct"><a href="tel:' + esc(VT.phoneHref) + '">' + esc(t('cro_summary_contact')) +
+        ': ' + esc(VT.phoneLabel) + '</a></p>' : '');
     var textarea = $('.inquiry-summary-text', box);
     textarea.value = body;
     $('.inquiry-summary-copy', box).addEventListener('click', function () {

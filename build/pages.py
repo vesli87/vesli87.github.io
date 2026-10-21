@@ -727,13 +727,19 @@ def page_home(lang):
     <p class="p-eyebrow">{e(C.t(lang,'site_name'))} · MAHE</p>
     <h1><span>{e(C.t(lang,'volt_headline_1'))}</span> <span>{e(C.t(lang,'volt_headline_2'))}</span></h1>
     <p class="volt-disciplines">{e(C.t(lang,'volt_disciplines'))}</p>
+    <p class="volt-home-support">{e(C.t(lang,'cro_hero_support'))}</p>
     <div class="cta-row"><a class="btn pri" href="{e(C.u_products(lang))}">{e(C.t(lang,'hero_cta2'))} <span aria-hidden="true">→</span></a>
       <a class="btn ghost" href="{e(C.u_page(lang,'contact'))}">{e(C.t(lang,'hero_cta1'))}</a></div>
   </div>
   {home_featured(lang)}
 </div></section>
-<div class="wrap volt-spotlights">{spotlights}</div>
 <div class="wrap"><a class="volt-service-link" href="{e(C.u_service(lang))}">{R.design_icon('repair')}<span>{e(C.t(lang,'volt_service_title'))}</span><span aria-hidden="true">→</span></a></div>
+<section class="volt-applications"><div class="wrap">
+  <h2>{e(C.t(lang,'applications_title'))}</h2>
+  <p class="sub">{e(C.t(lang,'applications_intro'))}</p>
+  <div class="volt-application-grid">{applications}</div>
+</div></section>
+<div class="wrap volt-spotlights">{spotlights}</div>
 
 <section class="intro"><div class="wrap">
   <h2>{e(C.t(lang,'home_h1'))}</h2>
@@ -741,11 +747,6 @@ def page_home(lang):
 </div></section>
 
 {R.usp_row(lang, service_links=True)}
-<section class="volt-applications"><div class="wrap">
-  <h2>{e(C.t(lang,'applications_title'))}</h2>
-  <p class="sub">{e(C.t(lang,'applications_intro'))}</p>
-  <div class="volt-application-grid">{applications}</div>
-</div></section>
 {R.ref_block(lang)}
 {training_block(lang)}
 
@@ -865,7 +866,24 @@ def subcategory_guide(lang, cid, sub):
     return (f'<section class="buying-guide"><h2>{e(C.t(lang, "subcategory_guide_title"))}</h2>'
             f'<dl>{criteria}</dl>' + category_comparison(lang, cid, sub)
             + editorial_links(lang, C.GUIDE_LINKS['subcategories'][cid][sub])
-            + f'<a class="btn ghost" href="{e(C.u_page(lang, "contact"))}">{e(C.t(lang, "consult"))}</a></section>')
+            + f'<a class="btn ghost" href="{e(category_contact_url(lang, cid, sub))}">{e(C.t(lang, "consult"))}</a></section>')
+
+
+def category_contact_url(lang, cid, sub=None):
+    topic = C.category_topic(cid, sub)
+    return C.u_page(lang, 'contact') + ('?topic=' + topic if topic else '')
+
+
+def category_consultation(lang, cid, sub=None):
+    topic = C.category_topic(cid, sub)
+    if not topic:
+        return ''
+    copy = C.INQUIRY_TOPICS[topic]['copy'][lang]
+    return (f'<section class="selection-contact" aria-labelledby="selectionHeading">'
+            f'<div><h2 id="selectionHeading">{e(copy["heading"])}</h2>'
+            f'<p>{e(copy["hint"])}</p></div><a class="btn ghost" '
+            f'href="{e(category_contact_url(lang,cid,sub))}">{e(C.t(lang,"cro_selection_cta"))}'
+            ' <span aria-hidden="true">→</span></a></section>')
 
 
 def page_cat(lang, c, sub=None):
@@ -933,6 +951,7 @@ def page_cat(lang, c, sub=None):
     body = (
         R.cbar(lang, crumb_items=crumb, h1=h1, desc=lead, chips=chips)
         + '<div class="catalog"><div class="wrap">'
+        + category_consultation(lang, cid, sub)
         + f'<div class="cathead"><h2>{e(C.subT(lang, sub) if sub else C.t(lang,"sec_all"))}</h2>'
           f'<span class="count">{len(items)} {e(C.t(lang,"items",n=len(items)))} · {e(C.t(lang,"poa"))}</span></div>'
         + R.pgrid(lang, items)
@@ -1074,6 +1093,11 @@ def page_product(lang, p):
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" data-product-consult="{e(p['id'])}" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'consult'))}</a>
       </div>
+      <nav class="product-quick-contact" aria-label="{e(C.t(lang,'cro_mobile_label'))}">
+        <span>{e(nm)}</span>
+        <a class="btn pri" data-product-consult="{e(p['id'])}" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'cro_offer'))}</a>
+        <a class="btn ghost" href="tel:{e(C.COMPANY['phone_href'])}">{e(C.t(lang,'cro_call'))}</a>
+      </nav>
       {procs_block(lang, p)}
       <p class="prod-intro">{e(C.t(lang, intro_key, name=nm, marke=C.pBrand(p),
                                        de_marke=C.markeMitPraeposition(lang, p)))}</p>
@@ -1251,15 +1275,13 @@ def page_contact(lang):
     co = C.COMPANY
     body = (R.cbar(lang, crumb_items=[(C.t(lang, "nav_home"), C.u_home(lang)),
                                       (C.t(lang, "n_contact"), None)],
-                   h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"), artwork='diagnostics')
+                   h1=C.t(lang, "k_h1"), desc=C.t(lang, "k_desc"), artwork='diagnostics', compact_mobile=True)
             + f"""<div class="catalog"><div class="wrap kontaktwrap">
   <div class="contact-main">
-  <section class="contact-direct" aria-labelledby="whatsappHeading">
-    <h2 id="whatsappHeading">{e(C.t(lang,'whatsapp_title'))}</h2>
-    <p>{e(C.t(lang,'whatsapp_note'))}</p>
-    {R.whatsapp_link(lang, button=True)}
-  </section>
-  <form class="form kform" id="kontaktForm" action="{e(C.u_page(lang,'contact'))}" method="post" novalidate>
+  <form class="form kform" id="kontaktForm" action="{e(C.u_page(lang,'contact'))}" method="post" aria-labelledby="inquiryHeading" novalidate>
+    <h2 id="inquiryHeading">{e(C.t(lang,'cro_form_title'))}</h2>
+    <p class="form-intro">{e(C.t(lang,'cro_form_intro'))}</p>
+    {R.inquiry_topic_selector(lang)}
     <div class="inquiry-context" data-inquiry-context hidden></div>
     <label for="kName">{e(C.t(lang,'f_name'))}</label>
     <input id="kName" name="name" type="text" required autocomplete="organization" maxlength="120">
@@ -1278,6 +1300,11 @@ def page_contact(lang):
   </form>
   {R.inquiry_summary(lang, 'kontaktForm')}
   <noscript><p>{e(C.t(lang,'form_nojs'))} <a href="mailto:{e(co['email'])}">{e(co['email'])}</a></p></noscript>
+  <section class="contact-direct" aria-labelledby="whatsappHeading">
+    <h2 id="whatsappHeading">{e(C.t(lang,'whatsapp_title'))}</h2>
+    <p>{e(C.t(lang,'whatsapp_note'))}</p>
+    {R.whatsapp_link(lang, button=True)}
+  </section>
   </div>
   <aside class="kinfo">
     {R.design_icon('repair')}

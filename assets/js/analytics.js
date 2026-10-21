@@ -108,6 +108,11 @@
       if (keys.length === 1 && keys[0] === 'service' && Object.keys(services).some(function (path) {
         return services[path] === url.searchParams.get('service');
       })) return { campaign: null, product: '', service: url.searchParams.get('service') };
+      if (keys.length === 1 && keys[0] === 'topic' && Array.isArray(config.topics) &&
+          config.topics.indexOf(url.searchParams.get('topic')) >= 0) {
+        // Only a finite public topic is accepted. Its value is not measured.
+        return { campaign: null, product: '' };
+      }
     }
     var fields = ['source', 'medium', 'campaign', 'content'];
     if (keys.length !== fields.length || !fields.every(function (field) {
@@ -128,7 +133,7 @@
       if (url.origin === location.origin) {
         // The SDK sends document.referrer verbatim. Its page URL override does
         // not remove inquiry choices from a previous page's URL.
-        if (url.searchParams.has('option') || url.searchParams.has('service')) return false;
+        if (url.searchParams.has('option') || url.searchParams.has('service') || url.searchParams.has('topic')) return false;
         return publicPath(url.pathname) && !!safeQuery(url);
       }
       return url.pathname === '/' && !url.search;

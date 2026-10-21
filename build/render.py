@@ -942,7 +942,7 @@ def inquiry_qualification(lang, prefix):
               ("material", "equipment", "text", 300),
               ("thickness", "equipment", "text", 300),
               ("power", "equipment", "text", 300),
-              ("existing_model", "accessory repair", "text", 300),
+              ("existing_model", "accessory repair calib", "text", 300),
               ("fault", "repair", "textarea", 1000),
               ("device_count", "calib", "number", 5),
               ("application", "equipment auto", "textarea", 300)]
@@ -964,6 +964,15 @@ def inquiry_qualification(lang, prefix):
 
 def inquiry_next_steps(lang):
     return f'<p class="inquiry-next">{e(C.t(lang, "inquiry_next_steps"))}</p>'
+
+
+def inquiry_topic_selector(lang):
+    options = ''.join(f'<option value="{e(key)}">{e(row["n"])}</option>'
+                      for key, row in C.inquiry_topics(lang).items())
+    return (f'<div data-topic-selector><label for="kTopic">{e(C.t(lang,"cro_topic_label"))}</label>'
+            f'<select id="kTopic" data-contact-topic aria-describedby="topicHint">'
+            f'<option value="">{e(C.t(lang,"cro_topic_empty"))}</option>{options}</select>'
+            '<p id="topicHint" class="form-note" data-topic-hint hidden></p></div>')
 
 
 def inquiry_summary(lang, form_id):
@@ -1044,6 +1053,7 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
 JS_KEYS += ["search_advice", "inquiry_product", "inquiry_service", "inquiry_option_unsure", "inquiry_context_invalid",
             "inquiry_summary_title", "inquiry_summary_note", "inquiry_summary_copy", "inquiry_summary_copied",
             "inquiry_summary_copy_manual", "inquiry_details_title", "mail_f_details", "form_too_long", "form_invalid_count", "form_single_line", "search_group_services"]
+JS_KEYS += ["cro_topic_body", "cro_summary_contact"]
 
 
 def boot_json(lang):
@@ -1063,12 +1073,16 @@ def boot_json(lang):
         "contactUrl": C.u_page(lang, "contact"),
         "inquiryCatalog": inquiry_catalog(lang),
         "inquiryServices": C.inquiry_services(lang),
+        "inquiryTopics": C.inquiry_topics(lang),
+        "phoneHref": C.COMPANY["phone_href"],
+        "phoneLabel": C.COMPANY["phone"],
         "web3formsKey": C.web3forms_key(),
         "mailto": C.COMPANY["email"],
         "analytics": {
             "paths": C.analytics_paths(),
             "products": {p["id"]: p["cat"] for p in C.P},
             "inquiryOptions": {pid: [opt["id"] for opt in row["options"]] for pid, row in C.inquiry_options().items()},
+            "topics": list(C.inquiry_topics(lang)),
             "campaigns": C.analytics_campaigns(),
             "contactPath": C.u_page(lang, "contact"),
             "whatsappUrl": C.COMPANY["whatsapp_href"],
@@ -1258,8 +1272,8 @@ def design_icon(kind):
             f'stroke-linejoin="round">{paths.get(kind, paths["screen"])}</svg></span>')
 
 
-def cbar(lang, *, crumb_items, h1, desc, chips="", artwork=None):
-    return f"""<div class="cbar{ ' cbar-illustrated' if artwork else ''}"><div class="wrap">
+def cbar(lang, *, crumb_items, h1, desc, chips="", artwork=None, compact_mobile=False):
+    return f"""<div class="cbar{ ' cbar-illustrated' if artwork else ''}{' cbar-compact' if compact_mobile else ''}"><div class="wrap">
   <div class="volt-intro-copy">
   {crumbs(lang, crumb_items)}
   <h1>{e(h1)}</h1>

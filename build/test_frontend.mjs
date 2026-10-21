@@ -1006,7 +1006,7 @@ function inquiryForm(id = 'kontaktForm') {
     setAttribute(k, v) { this.attrs[k] = v; }, removeAttribute(k) { delete this.attrs[k]; }, focus() { this.focused = true; }
   }]));
   const groups = { timeframe: 'general', material: 'equipment', thickness: 'equipment', power: 'equipment',
-    existing_model: 'accessory repair', fault: 'repair', device_count: 'calib', application: 'equipment auto' };
+    existing_model: 'accessory repair calib', fault: 'repair', device_count: 'calib', application: 'equipment auto' };
   const wrappers = Object.entries(groups).map(([name, group]) => ({
     hidden: true, getAttribute: () => group, querySelectorAll: () => [fields[name]]
   }));
@@ -1109,7 +1109,7 @@ for (const lang of Object.keys(inquiryLocales)) {
     }
   });
   test(lang + ': all service contexts send only relevant, localized technical details', async () => {
-    for (const [service, relevant] of [['repair', ['existing_model', 'fault']], ['calib', ['device_count']], ['auto', ['application']]]) {
+    for (const [service, relevant] of [['repair', ['existing_model', 'fault']], ['calib', ['existing_model', 'device_count']], ['auto', ['application']]]) {
       let payload;
       const { f, locale } = localizedInquiry(lang, 'kontaktForm', '?service=' + service,
         async (_, init) => { payload = JSON.parse(init.body); return { ok: true, json: async () => ({ success: true }) }; });
@@ -1439,3 +1439,80 @@ test('Tab closes suggestions without preventing normal keyboard navigation', () 
   assert.equal(input.attributes['aria-expanded'],'false');
   assert.equal(input.attributes['aria-activedescendant'],undefined);
 });
+
+for (const lang of ['de', 'fr', 'it', 'en', 'es']) {
+  test(lang + ': task-led enquiries retain the known topic and send only relevant business details', async () => {
+    for (const topic of ['tig', 'mig', 'cnc', 'cleaning', 'plasma', 'accessories']) {
+      let payload;
+      const { f, locale, storage } = localizedInquiry(lang, 'kontaktForm', '?topic=' + topic,
+        async (_, init) => { payload = JSON.parse(init.body); return { ok: true, json: async () => ({ success: true }) }; });
+      f.fields.material.value = 'INOX';
+      f.fields.existing_model.value = 'MAHE 123';
+      f.fields.application.value = 'Pipework sample';
+      f.fields.fault.value = 'Hidden fault draft';
+      f.handlers.submit({ preventDefault() {} });
+      assert.ok(payload.message.includes(locale.config.i18n.cro_topic_body + ': ' + locale.config.inquiryTopics[topic].n));
+      assert.equal(payload.message.includes('INOX'), topic !== 'accessories');
+      assert.equal(payload.message.includes('MAHE 123'), topic === 'accessories');
+      assert.equal(payload.message.includes('Pipework sample'), topic !== 'accessories');
+      assert.doesNotMatch(payload.message, /Hidden fault draft|https?:|utm_|\?topic/);
+      assert.doesNotMatch(JSON.stringify([...storage]), /INOX|Pipework sample|MAHE 123/);
+      await flush(); assert.equal(f.status.className, 'fstatus ok');
+    }
+  });
+}
+
+test('topic selection survives language changes without overwriting customer input', () => {
+  const f = inquiryForm(), selector = { value: '' }, wrapper = { hidden: false }, hint = { hidden: true };
+  const originalQuery = f.querySelector.bind(f);
+  f.querySelector = s => s === '[data-contact-topic]' ? selector : s === '[data-topic-selector]' ? wrapper :
+    s === '[data-topic-hint]' ? hint : originalQuery(s);
+  const link = { href: 'https://www.ves-tech.ch/fr/contact/' };
+  const { api, events } = app({ prepare(c, els, collections) {
+    c.window.VT.inquiryTopics = inquiryLocales.de.config.inquiryTopics;
+    els.set('#kontaktForm', f); collections.set('.langs a', [link]);
+  }});
+  selector.value = 'tig';
+  for (const listener of events.change) listener({ target: { value: 'tig', hasAttribute: key => key === 'data-contact-topic' } });
+  assert.equal(link.href, 'https://www.ves-tech.ch/fr/contact/?topic=tig');
+  assert.equal(hint.textContent, inquiryLocales.de.config.inquiryTopics.tig.hint);
+  assert.equal(hint.hidden, false);
+  assert.equal(f.fields.message.value, 'Please advise');
+  assert.equal(f.fields.material.disabled, false);
+  for (const listener of events.change) listener({ target: { value: '', hasAttribute: key => key === 'data-contact-topic' } });
+  assert.equal(api.contactBody(), '');
+  assert.equal(f.fields.material.disabled, true);
+  assert.equal(link.href, 'https://www.ves-tech.ch/fr/contact/');
+});
+
+test('unknown, duplicated and competing topic contexts cannot impersonate an enquiry selection', () => {
+  for (const query of ['?topic=constructor', '?topic=__proto__', '?topic=<script>', '?topic=',
+    '?topic=tig&topic=cnc', '?product=mms&topic=tig', '?service=repair&topic=tig', '?topic=tig&option=mms-2000c']) {
+    const f = inquiryForm();
+    const { api } = app({ prepare(c, els) {
+      c.location.search = query; c.window.VT.inquiryTopics = inquiryLocales.de.config.inquiryTopics;
+      els.set('#kontaktForm', f);
+    }});
+    assert.equal(api.contactBody(), '', query);
+    assert.match(f.contextBox.innerHTML, /inquiry_context_invalid/, query);
+    assert.equal(f.fields.material.disabled, true, query);
+  }
+});
+
+
+for (const lang of ['de','fr','it','en','es']) {
+  test(lang + ': repair and calibration topics expose their actual diagnostic fields without equipment claims', async () => {
+    for (const [topic,fields] of [['repair',['existing_model','fault']],['calibration',['existing_model','device_count']]]) {
+      let payload;
+      const {f,locale}=localizedInquiry(lang,'kontaktForm','?topic='+topic,async(_,init)=>{payload=JSON.parse(init.body);return {ok:true,json:async()=>({success:true})};});
+      f.fields.existing_model.value='MAHE model';f.fields.fault.value='Fault description';f.fields.device_count.value='2';f.fields.material.value='Hidden material';
+      f.handlers.submit({preventDefault(){}});
+      for (const key of ['existing_model','fault','device_count','material']) {
+        assert.equal(payload.message.includes(locale.labels[key]+':'),fields.includes(key),topic+' '+key);
+      }
+      assert.ok(payload.message.includes(locale.config.inquiryTopics[topic].n));
+      assert.doesNotMatch(payload.message,/Hidden material|https?:/);
+      await flush();assert.equal(f.status.className,'fstatus ok');
+    }
+  });
+}

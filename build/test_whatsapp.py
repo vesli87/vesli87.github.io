@@ -38,7 +38,7 @@ class WhatsAppTests(unittest.TestCase):
                     self.assertTrue({'noopener', 'noreferrer'} <= set(link['rel'].split()))
                     self.assertEqual(link['referrerpolicy'], 'no-referrer')
                     self.assertNotIn('onclick', link)
-                self.assertLess(page.index('id="whatsappHeading"'), page.index('id="kontaktForm"'))
+                self.assertLess(page.index('id="kontaktForm"'), page.index('id="whatsappHeading"'))
                 for key in ('whatsapp_title', 'whatsapp_action', 'whatsapp_note'):
                     self.assertIn(R.e(C.EX[lang][key]), page)
                     self.assertNotEqual(C.t(lang, key), key)

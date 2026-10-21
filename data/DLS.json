@@ -20,18 +20,18 @@
   {
     "k": "PDF",
     "t": {
-      "de": "Konformitätszertifikat nach EN 1090",
-      "fr": "Certificat de conformité EN 1090",
-      "it": "Certificato di conformità EN 1090",
-      "en": "EN 1090 conformity certificate",
-      "es": "Certificado de conformidad EN 1090"
+      "de": "MAHE-Herstellererklärung zu EN 1090 (2016)",
+      "fr": "Déclaration MAHE relative à EN 1090 (2016)",
+      "it": "Dichiarazione MAHE relativa a EN 1090 (2016)",
+      "en": "MAHE declaration relating to EN 1090 (2016)",
+      "es": "Declaración MAHE relativa a EN 1090 (2016)"
     },
     "s": {
-      "de": "Konformitätserklärung",
-      "fr": "Déclaration de conformité",
-      "it": "Dichiarazione di conformità",
-      "en": "Declaration of conformity",
-      "es": "Declaración de conformidad"
+      "de": "Erklärung vom 30.01.2016 für C-MIG, Delta digital, Kappa, Beta digital, Omega und HyperTIG.",
+      "fr": "Déclaration du 30.01.2016 pour C-MIG, Delta digital, Kappa, Beta digital, Omega et HyperTIG.",
+      "it": "Dichiarazione del 30.01.2016 per C-MIG, Delta digital, Kappa, Beta digital, Omega e HyperTIG.",
+      "en": "Declaration dated 30 January 2016 for C-MIG, Delta digital, Kappa, Beta digital, Omega and HyperTIG.",
+      "es": "Declaración del 30.01.2016 para C-MIG, Delta digital, Kappa, Beta digital, Omega e HyperTIG."
     },
     "u": "https://mahe-online.de/welding/pdf/de/Mahe_Konformations_Zertifikat.pdf"
   },

@@ -481,6 +481,7 @@ PANEL_GUIDES = _load("PANEL_GUIDES")
 HYPERMIG_CWK = _load("HYPERMIG_CWK")
 GUIDE_LINKS = _load("GUIDE_LINKS")
 SEARCH_LANDINGS = _load("SEARCH_LANDINGS")
+HOME_APPLICATIONS = _load("HOME_APPLICATIONS")
 
 # Die technischen Daten kommen so, wie MAHE sie zeigt, aus build/mahe_specs.json
 # (geholt mit build/scrape_specs.py, geprueft mit build/verify_mahe.py).
@@ -1292,6 +1293,21 @@ def validate_search_landings():
 def validate_editorial_guides():
     """Validate all languages and destinations before replacing generated files."""
     validate_search_landings()
+    if len(HOME_APPLICATIONS) != 4:
+        raise ValueError('Homepage needs four distinct application routes')
+    for lang in LANGS:
+        destinations = []
+        for item in HOME_APPLICATIONS:
+            if set(item) != {'target', *LANGS}:
+                raise ValueError('Incomplete homepage application languages')
+            destinations.append(editorial_target(lang, item['target'])[1])
+            copy = item[lang]
+            if set(copy) != {'title', 'description'} or any(
+                    not isinstance(value, str) or not value.strip() or '<' in value or '>' in value
+                    for value in copy.values()):
+                raise ValueError('Application copy must be complete plain text')
+        if len(destinations) != len(set(destinations)):
+            raise ValueError('Duplicate homepage application destination')
 
     def links(refs):
         if not isinstance(refs, list) or not 1 <= len(refs) <= 6:

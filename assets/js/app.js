@@ -837,10 +837,14 @@
       .replace(/[ôó]/g, 'o').replace(/[ùûú]/g, 'u').replace(/ç/g, 'c')
       .replace(/á/g, 'a').replace(/í/g, 'i').replace(/ñ/g, 'n')
       .replace(/[’']/g, ' ')
+      .replace(/²/g, '2')
+      .replace(/(\d)[.,](?=\d)/g, '$1d')
+      .replace(/(\d)\s*(mm2|mm|kg|khz|hz|kw|w|a|v)\b/g, '$1 $2')
       .replace(/[^a-z0-9]+/g, ' ')
       .replace(/\s+/g, ' ').trim();
   }
-  function toks(s) { return norm(s).split(' ').filter(Boolean); }
+  function searchQuery(s) { return String(s || '').slice(0, 120).trim(); }
+  function toks(s) { return norm(searchQuery(s)).split(' ').filter(Boolean); }
 
   /* Levenshtein mit Abbruch – reicht für Tippfehler in Gerätenamen. */
   function lev(a, b, max) {
@@ -930,13 +934,21 @@
   }
 
   function search(q) {
+    q = searchQuery(q);
     var out = { products: [], services: [], cats: [], procs: [], dls: [], suggestion: null, q: q };
     if (!IDX) return out;
+    // Keep a value and its unit together: 230 A plus 400 V is not 230 V.
+    var measurements = q.toLowerCase().replace(/²/g, '2')
+      .match(/\d+(?:[.,]\d+)?\s*(?:mm2|mm|kg|khz|hz|kw|w|a|v)\b/g) || [];
     var qts = toks(q);
     if (!qts.length) return out;
     var syn = IDX.syn || {};
     ['products', 'services', 'cats', 'procs', 'dls'].forEach(function (grp) {
       out[grp] = (IDX[grp] || []).map(function (it) {
+        var text = [it.t1, it.t2, it.t3].join(' ');
+        if (measurements.some(function (value) {
+          return !new RegExp('(?:^|[^a-z0-9]|[0-9]x)' + norm(value) + '(?: |$)').test(text);
+        })) return { it: it, s: 0 };
         return { it: it, s: scoreItem(it, qts, syn) };
       }).filter(function (r) { return r.s > 0; })
         .sort(function (a, b) { return b.s - a.s || a.it.n.localeCompare(b.it.n); })
@@ -1034,11 +1046,11 @@
 
   if (input) {
     var run = debounce(function () {
-      var q = input.value.trim();
+      var q = searchQuery(input.value);
       if (q.length < 2) { closeSuggest(); return; }
       var version = ++suggestVersion;
       loadIndex().then(function (idx) {
-        if (version !== suggestVersion || input.value.trim() !== q || document.activeElement !== input) return;
+        if (version !== suggestVersion || searchQuery(input.value) !== q || document.activeElement !== input) return;
         if (!idx) {
           sugg.innerHTML = '<p class="sempty" role="status">' + esc(t('search_unavailable')) + '</p>';
           sugg.hidden = false; input.setAttribute('aria-expanded', 'true'); return;
@@ -1050,6 +1062,7 @@
     input.addEventListener('blur', function () { suggestVersion++; });
     input.addEventListener('focus', function () { loadIndex(); });
     input.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Tab') { closeSuggest(); return; }
       if (sugg.hidden) return;
       if (ev.key === 'ArrowDown') { ev.preventDefault(); highlightSuggest(1); }
       else if (ev.key === 'ArrowUp') { ev.preventDefault(); highlightSuggest(-1); }
@@ -1067,7 +1080,7 @@
   var srBox = $('#srResults');
   if (srBox) {
     var params = new URLSearchParams(location.search);
-    var q = (params.get('q') || '').trim();
+    var q = searchQuery(params.get('q'));
     var pq = $('#pq'); if (pq) pq.value = q;
     if (input) input.value = q;
 
@@ -1119,6 +1132,7 @@
             html += '<p><a class="btn pri" href="' + esc(VT.searchUrl) + '?q=' + encodeURIComponent(res.suggestion) + '">' +
               esc(t('search_did_you_mean')) + ' “' + esc(res.suggestion) + '”?</a></p>';
           }
+          html += '<p><a class="btn ghost" href="' + esc(VT.contactUrl) + '">' + esc(t('search_advice')) + ' →</a></p>';
           html += '<p><a href="' + esc(VT.productsUrl) + '">' + esc(t('search_all_results')) + ' →</a></p></div>';
         }
         srBox.innerHTML = html;

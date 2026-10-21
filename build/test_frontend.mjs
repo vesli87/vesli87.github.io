@@ -167,7 +167,8 @@ test('search aborts stalled requests and can retry', async () => {
 });
 test('Python and JavaScript search normalization agree', () => {
   const values = ['Schweissgerät ÄÖÜ ß', 'électrolyte àâéèêîïôùûç', 'PlasmaFix P+T', 'l’acier', '10–420 A',
-    'Reparación, señalización, áíóúñ ÁÍÓÚÑ'];
+    'Reparación, señalización, áíóúñ ÁÍÓÚÑ', '230V 500A 50Hz 1.2mm 35mm² 3kW 15kg',
+    'Omega220AX MG500 Beta220DX 230 V 500 A 50 Hz 1.2 mm 35 mm2'];
   const py = execFileSync('python3', ['-c',
     "import sys,json;sys.path.insert(0,'build');from build import norm;print(json.dumps([norm(x) for x in json.loads(sys.stdin.read())]))"],
     { input: JSON.stringify(values), encoding: 'utf8' });
@@ -1381,4 +1382,60 @@ test('application searches find relevant advice in all five languages without du
     const plasma = api.search('Plasma TIG');
     assert.equal(plasma.cats.filter(row => /\/plasma-tig\/$/.test(row.u)).length, 0);
   }
+});
+test('joined electrical units find the same real products as spaced units in all languages', () => {
+  const data = JSON.parse(execFileSync('python3', ['-c',
+    "import sys,json;sys.path.insert(0,'build');from build import search_index;print(json.dumps({l:search_index(l) for l in ['de','fr','it','en','es']}))"], { encoding: 'utf8' }));
+  for (const [lang,index] of Object.entries(data)) {
+    const {api}=app(); api.setIndex(index);
+    for(const [joined,spaced] of [['230V','230 V'],['500A','500 A'],['35mm²','35 mm2']]) {
+      assert.equal(api.norm(joined),api.norm(spaced));
+      assert.deepEqual(api.search(joined).products.map(p=>p.i),api.search(spaced).products.map(p=>p.i),lang+' '+joined);
+    }
+    assert.ok(api.search('230V').products.some(p=>p.i==='beta-dx'),lang);
+    assert.ok(!api.search('230V').products.some(p=>p.i==='hypertig-ax'),lang+' must not combine 230 A and 400 V');
+    assert.ok(!api.search('230V').services.length,lang+' numeric units must not match incidental letters');
+    assert.equal(api.norm('Omega220AX MG500'),'omega220ax mg500');
+  }
+});
+test('measurement matching preserves decimal values, digit boundaries and three-phase voltage', () => {
+  const {api}=app(); api.setIndex({products:[
+    {i:'right',n:'Right',t1:'right',t3:api.norm('3x400V wire 1.2mm')},
+    {i:'wrong',n:'Wrong',t1:'wrong',t3:api.norm('2400V wire 2mm')}
+  ]});
+  assert.deepEqual(api.search('400V').products.map(p=>p.i),['right']);
+  assert.deepEqual(api.search('1,2 mm').products.map(p=>p.i),['right']);
+  assert.deepEqual(api.search('2mm').products.map(p=>p.i),['wrong']);
+});
+test('long query is bounded before scoring, highlighting and result rendering', async () => {
+  let results, input, title;
+  const {api,context}=app({prepare(context,elements){
+    context.location.search='?q='+encodeURIComponent('z'.repeat(10000));
+    context.document.title='Search';
+    results={innerHTML:''}; input={value:''}; title={textContent:''};
+    elements.set('#srResults',results); elements.set('#pq',input);
+    elements.set('#srTitle',title); elements.set('#srCount',{textContent:''});
+    context.window.VT.contactUrl='/en/contact/';context.window.VT.productsUrl='/en/products/';
+    context.window.VT.i18n={search_advice:'Ask for technical advice'};
+  }});
+  await flush();
+  assert.equal(input.value.length,120);
+  assert.ok(context.document.title.length<150);
+  assert.ok(title.textContent.length<150);
+  assert.equal(api.search('x'.repeat(10000)).q.length,120);
+  assert.ok(api.mark('safe','x '.repeat(10000)).length<100);
+  assert.match(results.innerHTML,/href="\/en\/contact\/">Ask for technical advice/);
+  assert.doesNotMatch(results.innerHTML,/zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz/);
+});
+test('Tab closes suggestions without preventing normal keyboard navigation', () => {
+  let input,suggestions;
+  app({prepare(context,elements){
+    input=uiNode(context.document,{'aria-expanded':'true','aria-activedescendant':'sg0'});
+    suggestions={hidden:false,innerHTML:'old suggestions'};
+    elements.set('#q',input);elements.set('#sugg',suggestions);
+  }});
+  input.events.keydown({key:'Tab',preventDefault(){throw Error('Tab must navigate normally');}});
+  assert.equal(suggestions.hidden,true);assert.equal(suggestions.innerHTML,'');
+  assert.equal(input.attributes['aria-expanded'],'false');
+  assert.equal(input.attributes['aria-activedescendant'],undefined);
 });

@@ -150,6 +150,9 @@ def norm(s):
            .replace("ô", "o").replace("ù", "u").replace("û", "u").replace("ç", "c")
            .replace("á", "a").replace("í", "i").replace("ó", "o").replace("ú", "u").replace("ñ", "n")
            .replace("’", " ").replace("'", " "))
+    s = s.replace("²", "2")
+    s = re.sub(r"(\d)[.,](?=\d)", r"\1d", s)
+    s = re.sub(r"(\d)\s*(mm2|mm|kg|khz|hz|kw|w|a|v)\b", r"\1 \2", s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
 

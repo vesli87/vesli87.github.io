@@ -809,7 +809,7 @@ def header(lang, alts):
       <span class="name">VES<i>-</i>TECH</span><span class="flag" aria-hidden="true"></span><span class="logo-swiss" aria-hidden="true">SWISS</span></a>
     <form class="hsearch" role="search" action="{e(C.u_page(lang,'search'))}" method="get"
           id="searchForm" autocomplete="off">
-      <input id="q" name="q" type="search" placeholder="{e(C.t(lang,'search_ph'))}"
+      <input id="q" name="q" type="search" maxlength="120" placeholder="{e(C.t(lang,'search_ph'))}"
              aria-label="{e(C.t(lang,'c_search'))}" role="combobox" aria-expanded="false"
              aria-controls="sugg" aria-autocomplete="list" spellcheck="false"
              autocapitalize="none" enterkeyhint="search">
@@ -1041,7 +1041,7 @@ JS_KEYS = ["poa", "inquire", "added", "already", "cart_empty", "cart_title", "op
              "mail_f_sent", "mail_f_dev", "mail_s_cart", "mail_s_item", "mail_s_item1",
              "mail_s_kont"]
 
-JS_KEYS += ["inquiry_product", "inquiry_service", "inquiry_option_unsure", "inquiry_context_invalid",
+JS_KEYS += ["search_advice", "inquiry_product", "inquiry_service", "inquiry_option_unsure", "inquiry_context_invalid",
             "inquiry_summary_title", "inquiry_summary_note", "inquiry_summary_copy", "inquiry_summary_copied",
             "inquiry_summary_copy_manual", "inquiry_details_title", "mail_f_details", "form_too_long", "form_invalid_count", "form_single_line", "search_group_services"]
 
@@ -1060,6 +1060,7 @@ def boot_json(lang):
         "searchIndex": f"/data/search-{lang}.json",
         "searchUrl": C.u_page(lang, "search"),
         "productsUrl": C.u_products(lang),
+        "contactUrl": C.u_page(lang, "contact"),
         "inquiryCatalog": inquiry_catalog(lang),
         "inquiryServices": C.inquiry_services(lang),
         "web3formsKey": C.web3forms_key(),

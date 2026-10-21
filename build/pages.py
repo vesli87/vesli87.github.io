@@ -91,7 +91,7 @@ def dls_for(p):
 
     Zuerst das, was zu genau diesem Gerät gehört: Bedienungsanleitung und
     technisches Datenblatt beim Hersteller. Danach erst das Allgemeine -
-    Sicherheitsdatenblätter, EN-1090-Zertifikat, Katalog. Wer eine Anleitung
+    Sicherheitsdatenblätter und Katalog. Wer eine Anleitung
     sucht, soll sie nicht unter drei generischen PDFs hervorkramen müssen.
     """
     out = list(C.DLDEV.get(p["id"], [])) + list(C.DLOCC.get(p["id"], []))
@@ -99,8 +99,9 @@ def dls_for(p):
         out.append(DL_SDS[p["id"].upper()])
     if p["cat"] == "reinigung" and p["sub"] == "Cleaner":
         out += [DL_SDS[k] for k in ("R1", "RP1", "P1", "M1", "N1") if k in DL_SDS]
-    if p["cat"] == "schweissgeraete":
-        out.append(DL_EN1090)
+    # Die Herstellererklaerung vom 30.01.2016 nennt nur sechs Baureihen.
+    # Sie bleibt mit Datum und Geltungsbereich im Downloadverzeichnis;
+    # daraus folgt kein Konformitaetsnachweis fuer jedes aktuelle Modell.
     # Der MAHE-Produktkatalog gehoert nur zu MAHE-Geraeten. Bei einer
     # gebrauchten Oerlikon-Anlage haette er dort nichts verloren - er fuehrt
     # ein anderes Programm eines anderen Herstellers.
@@ -694,6 +695,12 @@ def home_featured(lang):
 
 def page_home(lang):
     url, alts = C.u_home(lang), C.alternates("home")
+    applications = ''.join(
+        f'<a class="volt-application" href="{e(C.editorial_target(lang, item["target"])[1])}">'
+        f'<span class="volt-application-number" aria-hidden="true">{i:02d}</span>'
+        f'<h3>{e(item[lang]["title"])}</h3><p>{e(item[lang]["description"])}</p>'
+        '<span class="volt-application-arrow" aria-hidden="true">→</span></a>'
+        for i, item in enumerate(C.HOME_APPLICATIONS, 1))
     cards = ""
     for i, c in enumerate(C.CATS, 1):
         n = len(C.products_of(c["id"]))
@@ -734,6 +741,11 @@ def page_home(lang):
 </div></section>
 
 {R.usp_row(lang, service_links=True)}
+<section class="volt-applications"><div class="wrap">
+  <h2>{e(C.t(lang,'applications_title'))}</h2>
+  <p class="sub">{e(C.t(lang,'applications_intro'))}</p>
+  <div class="volt-application-grid">{applications}</div>
+</div></section>
 {R.ref_block(lang)}
 {training_block(lang)}
 
@@ -1349,7 +1361,7 @@ def page_search(lang):
                    chips=f'<div class="chips">{chips}</div>')
             + f"""<div class="catalog"><div class="wrap">
   <form class="bigsearch" role="search" action="{e(url)}" method="get" id="pageSearchForm">
-    <input id="pq" name="q" type="search" placeholder="{e(C.t(lang,'search_ph'))}"
+    <input id="pq" name="q" type="search" maxlength="120" placeholder="{e(C.t(lang,'search_ph'))}"
            aria-label="{e(C.t(lang,'c_search'))}" spellcheck="false" autocapitalize="none" enterkeyhint="search">
     <button type="submit">{e(C.t(lang,'search_btn'))}</button>
   </form>
@@ -1548,8 +1560,7 @@ def page_about(lang):
         url_kalib=C.u_service(lang, "calib"),
         url_repair=C.u_service(lang, "repair"),
         url_automation=C.u_service(lang, "auto"),
-        # Das EN-1090-Zertifikat des Herstellers, damit die Aussage
-        # "professionelle Geraete" nicht bloss behauptet dasteht.
+        # Historische Herstellererklaerung mit ausdruecklichem Geltungsbereich.
         url_dl=DL_EN1090["u"],
     )
     secs = "".join(

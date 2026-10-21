@@ -45,7 +45,7 @@
     "verf_title": "Schweissverfahren · MIG-Puls, Doppelpuls & TIG | VES-TECH Swiss",
     "verf_desc": "MIG/MAG-Puls, Doppelpuls, HyperPuls sowie WIG LF/HF-Puls, AC/DC und Mix TIG: Funktionsweise, Anwendungen, Einstellgrössen und passende MAHE-Geräte.",
     "dl_title": "Downloads · MAHE-Katalog, EN 1090 & Sicherheitsdatenblätter",
-    "dl_desc": "MAHE-Produktkatalog, Konformitätszertifikat nach EN 1090 und Sicherheitsdatenblätter der Elektrolyte R1, RP1, P1, M1 und N1 als PDF.",
+    "dl_desc": "MAHE-Produktkatalog, Herstellererklärung zu EN 1090 von 2016 für die dort genannten Baureihen und Sicherheitsdatenblätter der Elektrolyte als PDF.",
     "kontakt_title": "Kontakt · VES-TECH Swiss, Werkstatt Herisau AR",
     "kontakt_desc": "VES-TECH Swiss in Herisau AR: Beratung und Service für MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation. Telefon +41 76 710 91 39.",
     "faq_title": "Häufige Fragen zu MAHE Schweisstechnik | VES-TECH Swiss",
@@ -103,8 +103,8 @@
     "usp_1_p": "Inbetriebnahme, Reparatur und Kalibrierung mit direktem Kontakt zum zuständigen Techniker.",
     "usp_2_h": "Preis auf Anfrage",
     "usp_2_p": "Jede Anlage wird konfiguriert. Sie erhalten ein Angebot, das zu Ihrem Werkstoff und Ihrer Blechdicke passt.",
-    "usp_3_h": "Dokumentation nach EN 1090",
-    "usp_3_p": "Das komplette Paket für Prüfung und Konformität bei tragenden Bauten aus Stahl und Aluminium.",
+    "usp_3_h": "Nachvollziehbare Dokumentation",
+    "usp_3_p": "Gerätebezogene Herstellerunterlagen und Kalibrierprotokolle für Ihre Qualitätssicherung.",
     "faq": [
       {
         "q": "Was kostet ein MAHE-Schweissgerät bei VES-TECH Swiss?",
@@ -116,11 +116,11 @@
       },
       {
         "q": "Was ist der Unterschied zwischen WIG DC und WIG AC/DC?",
-        "a": "WIG DC schweisst mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC kann zusätzlich mit Wechselstrom arbeiten und bricht damit die Aluminiumoxidschicht auf. Nur so lässt sich Aluminium sauber WIG-schweissen. AC/DC-Geräte sind also die universellere, DC-Geräte die günstigere Wahl."
+        "a": "WIG DC arbeitet mit Gleichstrom und eignet sich für Stahl, Chromstahl (INOX), Kupfer und Titan. WIG AC/DC ermöglicht zusätzlich Wechselstrom. Dessen Phase mit positiver Elektrode unterstützt die Oxidreinigung bei üblichen Aluminiumanwendungen. AC/DC-Geräte decken damit mehr Anwendungen ab; DC-Geräte sind in der Regel die wirtschaftlichere Wahl."
       },
       {
         "q": "Wie funktioniert die elektrolytische Schweissnahtreinigung?",
-        "a": "Ein MAHE-Cleaner leitet über einen mit Elektrolyt getränkten Karbonpinsel Strom in die Schweissnaht. Die Anlauffarben und die Oxidschicht auf Chromstahl werden elektrochemisch entfernt, die Passivschicht baut sich wieder auf. Je nach Elektrolyt wird gereinigt (R1, RP1), poliert (P1), neutralisiert (N1) oder das Metall dauerhaft signiert (M1). Das ist schneller und schonender als Beizen und ohne Säurebad."
+        "a": "Ein MAHE-Cleaner entfernt Anlauffarben an Edelstahl-Schweissnähten elektrochemisch mit einem elektrolytbenetzten Karbonpinsel. Das Verfahren arbeitet örtlich an der Oberfläche. R1 und RP1 dienen der Reinigung, P1 dem Polieren und M1 dem Signieren. N1 wird zur anschliessenden Neutralisation eingesetzt. Verwenden Sie das zum Gerät und zur Aufgabe passende Mittel nach Herstelleranleitung und Sicherheitsdatenblatt."
       },
       {
         "q": "Welche Blechdicke schneidet ein MAHE-Theta-Plasmaschneider?",
@@ -132,7 +132,7 @@
       },
       {
         "q": "Was bedeutet EN 1090 und welche Dokumentation liefert VES-TECH?",
-        "a": "EN 1090 ist die europäische Norm für die Ausführung von Tragwerken aus Stahl und Aluminium. Wer solche Bauteile herstellt, braucht eine werkseigene Produktionskontrolle und geprüfte Schweissausrüstung. VES-TECH Swiss liefert dazu das komplette Paket für Prüfung und Konformität, abgestimmt auf Ihre MAHE-Anlage, inklusive Konformitätszertifikat."
+        "a": "Die Normenreihe EN 1090 behandelt die Ausführung von Stahltragwerken und Aluminiumtragwerken. Für die Gerätedokumentation ist das konkrete Modell massgeblich: Die hier verfügbare MAHE-Erklärung vom 30.01.2016 nennt C-MIG, Delta digital, Kappa, Beta digital, Omega und HyperTIG. Wir klären passende Herstellerunterlagen und Kalibrierprotokolle für Ihre Anlage. Diese Unterlagen ersetzen keine Zertifizierung Ihres Fertigungsbetriebs."
       },
       {
         "q": "Wie schnell erhalte ich ein Angebot?",
@@ -472,7 +472,7 @@
       ],
       [
         "Warum MAHE",
-        "<p>Die <strong>MAHE GmbH</strong> baut Schweisstechnik und Schneidtechnik in Kreuztal-Kredenbach in Nordrhein-Westfalen (Auwiese 12, 57223 Kreuztal; Handelsregister Amtsgericht Siegen, HRB 4311). Nach Angaben des Herstellers besteht das Unternehmen seit über 30 Jahren. Das Programm reicht von MIG/MAG, WIG und Elektrode über das Plasmaschneiden (vom Handbrenner bis zum CNC-Tisch) bis zur Reinigungstechnik und Signiertechnik.</p><p><strong>Das Programm richtet sich an professionelle Anwender.</strong> Die MIG/MAG-Baureihe HyperMIG X erreicht 45 % Einschaltdauer bei 400 A und 60 % bei 360 A. Sie verfügt über Schutzart IP23 und einen Drehstromanschluss mit 400 V. Für die Schweissgeräte liegt ein <a href=\"{url_dl}\">EN-1090-Konformitätszertifikat</a> vor; es steht hier als PDF zum Download bereit.</p><p><strong>Übersichtliche Bedienung.</strong> Der Hersteller nennt es «Einfache Synergy Bedienung»: ein Synergieprogramm für alle Verfahren, automatische Pulseinstellung. Die Auswahl von Draht und Gas unterstützt die Einstellung des passenden Programms. Die Feineinstellung bleibt trotzdem erreichbar: Arc Force, Hot Start, einstellbare Leerlaufspannung ab 15 V, Strommodulation. Ein übersichtliches Bedienpanel erleichtert die tägliche Arbeit in der Werkstatt.</p><p>Auf den Geräteseiten zeigen <strong>Panelabbildungen</strong> die jeweilige Bedienoberfläche. Mit der Vergrösserung können Sie Beschriftungen und Bedienelemente vor Ihrer Anfrage genauer ansehen.</p><p><strong>Robust und reparierbar.</strong> Ob eine Baugruppe repariert oder ersetzt werden kann und welche Ersatzteile verfügbar sind, klären wir im konkreten Fall mit dem Lieferanten. Bei Gewährleistungsfällen bleiben wir Ihr Ansprechpartner. Reparierbarkeit und die Versorgung mit Ersatzteilen sind wichtige Gründe für die Auswahl dieses Programms. Was auf den Produktseiten steht, gibt die Angaben des Herstellers wieder; die Herkunft jeder technischen Angabe lässt sich gegen dessen Unterlagen prüfen.</p>"
+        "<p>Die <strong>MAHE GmbH</strong> baut Schweisstechnik und Schneidtechnik in Kreuztal-Kredenbach in Nordrhein-Westfalen (Auwiese 12, 57223 Kreuztal; Handelsregister Amtsgericht Siegen, HRB 4311). Nach Angaben des Herstellers besteht das Unternehmen seit über 30 Jahren. Das Programm reicht von MIG/MAG, WIG und Elektrode über das Plasmaschneiden (vom Handbrenner bis zum CNC-Tisch) bis zur Reinigungstechnik und Signiertechnik.</p><p><strong>Technik passend zur Aufgabe.</strong> Strombereich, Einschaltdauer, Netzanschluss und verfügbare Verfahren unterscheiden sich je nach Modell und Ausführung. Die Geräteseiten enthalten die zugehörigen technischen Tabellen und Herstellerunterlagen.</p><p><strong>Bedienung nach Geräteausführung.</strong> Je nach Modell stehen manuelle, synergische oder grafische Bedienkonzepte zur Verfügung. Welche Pulsverfahren, Speicherfunktionen und Anschlüsse enthalten sind, entnehmen Sie der jeweiligen Produktbeschreibung.</p><p>Die <a href=\"{url_dl}\">Herstellererklärung zu EN 1090 vom 30.01.2016</a> nennt die Baureihen C-MIG, Delta digital, Kappa, Beta digital, Omega und HyperTIG. Für die Dokumentation eines konkreten Geräts klären wir Modell, Baujahr und erforderliche Nachweise.</p><p>Auf den Geräteseiten zeigen <strong>Panelabbildungen</strong> die jeweilige Bedienoberfläche. Mit der Vergrösserung können Sie Beschriftungen und Bedienelemente vor Ihrer Anfrage genauer ansehen.</p><p><strong>Robust und reparierbar.</strong> Ob eine Baugruppe repariert oder ersetzt werden kann und welche Ersatzteile verfügbar sind, klären wir im konkreten Fall mit dem Lieferanten. Bei Gewährleistungsfällen bleiben wir Ihr Ansprechpartner. Reparierbarkeit und die Versorgung mit Ersatzteilen sind wichtige Gründe für die Auswahl dieses Programms. Was auf den Produktseiten steht, gibt die Angaben des Herstellers wieder; die Herkunft jeder technischen Angabe lässt sich gegen dessen Unterlagen prüfen.</p>"
       ],
       [
         "Was gemessen und dokumentiert wird",
@@ -643,7 +643,10 @@
     "analytics_state_granted": "Ihre Auswahl: Analyse erlaubt",
     "analytics_state_denied": "Ihre Auswahl: Analyse abgelehnt",
     "analytics_state_unset": "Noch keine Einwilligung erteilt",
-    "analytics_state_blocked": "Die Datenschutzeinstellung Ihres Browsers verhindert die Analyse (GPC/DNT)."
+    "analytics_state_blocked": "Die Datenschutzeinstellung Ihres Browsers verhindert die Analyse (GPC/DNT).",
+    "search_advice": "Technische Beratung anfragen",
+    "applications_title": "Welche Aufgabe möchten Sie lösen?",
+    "applications_intro": "Finden Sie den passenden Einstieg für Montage, Werkstatt und Fertigung. Die Auswahl richtet sich nach Werkstoff, Materialstärke und Einsatzbedingungen."
   },
   "fr": {
     "locale": "fr_CH",
@@ -690,7 +693,7 @@
     "verf_title": "Procédés · MIG pulsé, double pulsation & TIG | VES-TECH Swiss",
     "verf_desc": "MIG/MAG pulsé, double pulsation, HyperPuls, TIG pulsé LF/HF, AC/DC et Mix TIG : principes, applications, réglages et choix des appareils MAHE.",
     "dl_title": "Téléchargements · catalogue MAHE, EN 1090 & fiches de sécurité",
-    "dl_desc": "Catalogue des produits MAHE, certificat de conformité EN 1090 et fiches de données de sécurité des électrolytes R1, RP1, P1, M1 et N1 en PDF.",
+    "dl_desc": "Catalogue MAHE, déclaration du fabricant de 2016 relative à EN 1090 pour les séries citées et fiches de données de sécurité des électrolytes en PDF.",
     "kontakt_title": "Contact · VES-TECH Swiss, atelier à Herisau AR",
     "kontakt_desc": "VES-TECH Swiss, St. Gallerstrasse 49, 9100 Herisau AR, +41 76 710 91 39. Soudage, découpe, nettoyage électrolytique et automatisation MAHE : conseil, service et réparation.",
     "faq_title": "Questions fréquentes sur le soudage MAHE | VES-TECH Swiss",
@@ -748,8 +751,8 @@
     "usp_1_p": "Mise en service, réparation et étalonnage assurés directement par le technicien.",
     "usp_2_h": "Prix sur demande",
     "usp_2_p": "Chaque installation est configurée selon vos besoins. Vous recevez une offre adaptée à votre matériau et à votre épaisseur de tôle.",
-    "usp_3_h": "Documentation EN 1090",
-    "usp_3_p": "Dossier de contrôle et de conformité pour les structures porteuses en acier et aluminium.",
+    "usp_3_h": "Une documentation traçable",
+    "usp_3_p": "Documentation du fabricant et rapports d’étalonnage propres à l’appareil pour votre assurance qualité.",
     "faq": [
       {
         "q": "Combien coûte un poste de soudage MAHE chez VES-TECH Swiss ?",
@@ -761,11 +764,11 @@
       },
       {
         "q": "Quelle est la différence entre TIG DC et TIG AC/DC ?",
-        "a": "Le TIG DC soude en courant continu et convient à l’acier, à l’acier inoxydable, au cuivre et au titane. Le TIG AC/DC permet aussi de travailler en courant alternatif et brise ainsi la couche d'oxyde d'aluminium. C'est la seule façon de souder proprement l'aluminium en TIG. Les appareils AC/DC sont donc le choix universel, les appareils DC le choix économique."
+        "a": "Le TIG DC utilise le courant continu et convient à l’acier, à l’acier inoxydable, au cuivre et au titane. Le TIG AC/DC permet aussi de travailler en courant alternatif. Sa phase avec électrode positive contribue au nettoyage des oxydes dans les applications courantes de soudage de l’aluminium. Les appareils AC/DC couvrent donc davantage d’applications ; les appareils DC sont généralement plus économiques."
       },
       {
         "q": "Comment fonctionne le nettoyage électrolytique des soudures ?",
-        "a": "Un MAHE Cleaner conduit le courant dans le cordon via un pinceau en carbone imbibé d'électrolyte. Les colorations et la couche d'oxyde sur l’acier inoxydable sont éliminées par voie électrochimique et la couche passive se reconstitue. Selon l'électrolyte, on nettoie (R1, RP1), polit (P1), neutralise (N1) ou marque durablement le métal (M1). C'est plus rapide et plus doux que le décapage, sans bain d'acide."
+        "a": "Un MAHE Cleaner élimine électrochimiquement les colorations thermiques des soudures en acier inoxydable à l’aide d’un pinceau en carbone imbibé d’électrolyte. Le procédé agit localement en surface. R1 et RP1 servent au nettoyage, P1 au polissage et M1 au marquage. N1 sert ensuite à la neutralisation. Choisissez le produit adapté à l’appareil et à la tâche, conformément à la notice du fabricant et à la fiche de données de sécurité."
       },
       {
         "q": "Quelle épaisseur coupe un découpeur plasma MAHE Theta ?",
@@ -777,7 +780,7 @@
       },
       {
         "q": "Que signifie EN 1090 et VES-TECH fournit-elle la documentation ?",
-        "a": "EN 1090 est la norme européenne pour l'exécution des structures porteuses en acier et en aluminium. Qui fabrique de tels éléments doit disposer d'un contrôle de production en usine et d'un équipement de soudage contrôlé. VES-TECH Swiss fournit le dossier complet de contrôle et de conformité, adapté à votre installation MAHE, certificat de conformité inclus."
+        "a": "La série de normes EN 1090 concerne l’exécution des structures en acier et en aluminium. La documentation dépend du modèle précis : la déclaration MAHE du 30.01.2016 disponible ici cite C-MIG, Delta digital, Kappa, Beta digital, Omega et HyperTIG. Nous précisons les documents du fabricant et les rapports d’étalonnage adaptés à votre installation. Ces documents ne remplacent pas la certification de votre entreprise de fabrication."
       },
       {
         "q": "En combien de temps reçoit-on une offre ?",
@@ -1117,7 +1120,7 @@
       ],
       [
         "Pourquoi MAHE",
-        "<p><strong>MAHE GmbH</strong> fabrique des équipements de soudage et de découpe à Kreuztal-Kredenbach, en Rhénanie-du-Nord-Westphalie (Auwiese 12, 57223 Kreuztal ; registre du commerce du tribunal de Siegen, HRB 4311). Selon les indications du fabricant, l’entreprise existe depuis plus de 30 ans. Sa gamme couvre le soudage MIG/MAG, TIG et à l’électrode, la découpe plasma, de la torche manuelle à la table CNC, ainsi que le nettoyage et le marquage.</p><p><strong>Ces appareils sont destinés aux ateliers professionnels.</strong> La gamme MIG/MAG HyperMIG X offre un facteur de marche de 45 % à 400 A et de 60 % à 360 A, un indice de protection IP23 et une alimentation triphasée de 400 V. Le <a href=\"{url_dl}\">certificat de conformité EN 1090</a> des postes de soudage est consultable ici au format PDF.</p><p><strong>Une commande claire et accessible.</strong> Le fabricant met en avant une « commande Synergy simple » : un programme synergique pour tous les procédés et un réglage automatique de la pulsation. La sélection du fil et du gaz facilite le choix du programme adapté. Les réglages fins restent accessibles : Arc Force, Hot Start, tension à vide réglable dès 15 V et modulation du courant. Un panneau de commande clair facilite le travail quotidien dans l’atelier.</p><p>Les pages produits présentent des <strong>illustrations des panneaux de commande</strong>. Agrandissez les images pour examiner les inscriptions et les commandes avant de faire votre demande.</p><p><strong>Robustes et réparables.</strong> Nous vérifions au cas par cas avec le fournisseur si un sous-ensemble peut être réparé ou remplacé et quelles pièces sont disponibles. En cas de garantie, nous restons votre interlocuteur. La réparabilité et la disponibilité des pièces détachées sont des critères importants dans le choix de cette gamme. Les pages produits reprennent les indications du fabricant ; chaque donnée technique peut être vérifiée dans sa documentation.</p>"
+        "<p><strong>MAHE GmbH</strong> fabrique des équipements de soudage et de découpe à Kreuztal-Kredenbach, en Rhénanie-du-Nord-Westphalie (Auwiese 12, 57223 Kreuztal ; registre du commerce du tribunal de Siegen, HRB 4311). Selon les indications du fabricant, l’entreprise existe depuis plus de 30 ans. Sa gamme couvre le soudage MIG/MAG, TIG et à l’électrode, la découpe plasma, de la torche manuelle à la table CNC, ainsi que le nettoyage et le marquage.</p><p><strong>Une technique adaptée à la tâche.</strong> La plage de courant, le facteur de marche, l’alimentation et les procédés disponibles varient selon le modèle et la version. Les pages produits regroupent les tableaux techniques et les documents correspondants du fabricant.</p><p><strong>Des commandes selon la version.</strong> Selon le modèle, la commande est manuelle, synergique ou graphique. Les procédés pulsés, fonctions de mémorisation et raccordements disponibles figurent dans chaque description de produit.</p><p>La <a href=\"{url_dl}\">déclaration du fabricant relative à EN 1090 du 30.01.2016</a> cite les séries C-MIG, Delta digital, Kappa, Beta digital, Omega et HyperTIG. Pour documenter un appareil précis, nous vérifions son modèle, son année de fabrication et les justificatifs nécessaires.</p><p>Les pages produits présentent des <strong>illustrations des panneaux de commande</strong>. Agrandissez les images pour examiner les inscriptions et les commandes avant de faire votre demande.</p><p><strong>Robustes et réparables.</strong> Nous vérifions au cas par cas avec le fournisseur si un sous-ensemble peut être réparé ou remplacé et quelles pièces sont disponibles. En cas de garantie, nous restons votre interlocuteur. La réparabilité et la disponibilité des pièces détachées sont des critères importants dans le choix de cette gamme. Les pages produits reprennent les indications du fabricant ; chaque donnée technique peut être vérifiée dans sa documentation.</p>"
       ],
       [
         "Ce qui est mesuré et documenté",
@@ -1288,7 +1291,10 @@
     "analytics_state_granted": "Votre choix : analyse autorisée",
     "analytics_state_denied": "Votre choix : analyse refusée",
     "analytics_state_unset": "Aucun consentement donné pour le moment",
-    "analytics_state_blocked": "Les paramètres de confidentialité de votre navigateur bloquent l’analyse (GPC/DNT)."
+    "analytics_state_blocked": "Les paramètres de confidentialité de votre navigateur bloquent l’analyse (GPC/DNT).",
+    "search_advice": "Demander un conseil technique",
+    "applications_title": "Quel travail souhaitez-vous réaliser ?",
+    "applications_intro": "Choisissez votre point de départ pour le montage, l’atelier ou la fabrication. Le choix dépend du matériau, de son épaisseur et des conditions d’utilisation."
   },
   "it": {
     "locale": "it_CH",
@@ -1335,7 +1341,7 @@
     "verf_title": "Processi · MIG pulsato, doppio impulso e TIG | VES-TECH Swiss",
     "verf_desc": "MIG/MAG pulsato, doppio impulso, HyperPuls, TIG pulsato LF/HF, AC/DC e Mix TIG: principi, applicazioni, regolazioni e scelta degli apparecchi MAHE.",
     "dl_title": "Download · catalogo MAHE, EN 1090 & schede di sicurezza",
-    "dl_desc": "Catalogo prodotti MAHE, certificato di conformità EN 1090 e schede di sicurezza degli elettroliti R1, RP1, P1, M1 e N1 in PDF.",
+    "dl_desc": "Catalogo MAHE, dichiarazione del fabbricante del 2016 relativa a EN 1090 per le serie citate e schede di sicurezza degli elettroliti in PDF.",
     "kontakt_title": "Contatto · VES-TECH Swiss, officina Herisau AR",
     "kontakt_desc": "VES-TECH Swiss, St. Gallerstrasse 49, 9100 Herisau AR. +41 76 710 91 39. Consulenza e assistenza MAHE per saldatura, taglio, pulizia e automazione.",
     "faq_title": "Domande frequenti sulla saldatura MAHE | VES-TECH Swiss",
@@ -1393,8 +1399,8 @@
     "usp_1_p": "Messa in servizio, riparazione e calibrazione con contatto diretto con il tecnico responsabile.",
     "usp_2_h": "Prezzo su richiesta",
     "usp_2_p": "Ogni impianto viene configurato. Ricevete un'offerta adatta al vostro materiale e allo spessore della lamiera.",
-    "usp_3_h": "Documentazione EN 1090",
-    "usp_3_p": "Pacchetto di controllo e conformità per strutture portanti in acciaio e alluminio.",
+    "usp_3_h": "Documentazione tracciabile",
+    "usp_3_p": "Documenti del fabbricante e rapporti di calibrazione specifici per l’apparecchio a supporto della vostra qualità.",
     "faq": [
       {
         "q": "Quanto costa una saldatrice MAHE da VES-TECH Swiss?",
@@ -1406,11 +1412,11 @@
       },
       {
         "q": "Qual è la differenza tra TIG DC e TIG AC/DC?",
-        "a": "Il TIG DC salda in corrente continua ed è adatto ad acciaio, acciaio inox, rame e titanio. Il TIG AC/DC lavora anche in corrente alternata e rompe così lo strato di ossido dell'alluminio. Solo così l'alluminio si salda in TIG in modo pulito. Gli apparecchi AC/DC sono quindi la scelta universale, quelli DC la scelta più economica."
+        "a": "Il TIG DC utilizza corrente continua ed è adatto ad acciaio, acciaio inox, rame e titanio. Il TIG AC/DC consente anche l’uso della corrente alternata. La fase con elettrodo positivo contribuisce alla rimozione degli ossidi nelle comuni applicazioni di saldatura dell’alluminio. Gli apparecchi AC/DC coprono quindi più applicazioni; quelli DC sono generalmente più economici."
       },
       {
         "q": "Come funziona la pulizia elettrolitica delle saldature?",
-        "a": "Un MAHE Cleaner conduce corrente nel cordone tramite un pennello di carbonio imbevuto di elettrolita. Le colorazioni da calore e lo strato di ossido sull'acciaio inox vengono rimossi per via elettrochimica e lo strato passivo si ricostituisce. A seconda dell'elettrolita si pulisce (R1, RP1), si lucida (P1), si neutralizza (N1) o si marca il metallo in modo permanente (M1). È più rapido e delicato del decapaggio, senza bagno acido."
+        "a": "Un MAHE Cleaner rimuove elettrochimicamente le colorazioni termiche dalle saldature in acciaio inox tramite un pennello di carbonio imbevuto di elettrolita. Il procedimento agisce localmente sulla superficie. R1 e RP1 servono per pulire, P1 per lucidare e M1 per marcare. N1 viene utilizzato per la successiva neutralizzazione. Scegliete il prodotto adatto all’apparecchio e al lavoro secondo il manuale del fabbricante e la scheda di sicurezza."
       },
       {
         "q": "Quale spessore può tagliare un inverter per il taglio al plasma MAHE Theta?",
@@ -1422,7 +1428,7 @@
       },
       {
         "q": "Cosa significa EN 1090 e VES-TECH fornisce la documentazione?",
-        "a": "EN 1090 è la norma europea per l'esecuzione di strutture portanti in acciaio e alluminio. Chi produce tali componenti necessita di un controllo di produzione in fabbrica e di attrezzature di saldatura verificate. VES-TECH Swiss fornisce il pacchetto completo di controllo e conformità, adattato al vostro impianto MAHE, certificato di conformità incluso."
+        "a": "La serie di norme EN 1090 riguarda l’esecuzione di strutture in acciaio e alluminio. La documentazione dipende dal modello specifico: la dichiarazione MAHE del 30.01.2016 disponibile qui cita C-MIG, Delta digital, Kappa, Beta digital, Omega e HyperTIG. Chiariamo quali documenti del fabbricante e rapporti di calibrazione sono adatti al vostro impianto. Questi documenti non sostituiscono la certificazione della vostra impresa di fabbricazione."
       },
       {
         "q": "In quanto tempo si riceve un'offerta?",
@@ -1762,7 +1768,7 @@
       ],
       [
         "Perché MAHE",
-        "<p><strong>MAHE GmbH</strong> produce apparecchi per saldatura e taglio a Kreuztal-Kredenbach, nella Renania Settentrionale-Vestfalia (Auwiese 12, 57223 Kreuztal; registro delle imprese del tribunale di Siegen, HRB 4311). Secondo le indicazioni del fabbricante, l’azienda opera da oltre 30 anni. La gamma comprende saldatura MIG/MAG, TIG e a elettrodo, taglio al plasma, dalla torcia manuale al tavolo CNC, e sistemi di pulizia e marcatura.</p><p><strong>Sono apparecchi destinati alle officine professionali.</strong> La serie MIG/MAG HyperMIG X offre un ciclo di lavoro del 45 % a 400 A e del 60 % a 360 A, grado di protezione IP23 e alimentazione trifase a 400 V. Per le saldatrici è disponibile un <a href=\"{url_dl}\">certificato di conformità EN 1090</a>, consultabile qui in PDF.</p><p><strong>La facilità di comando è uno dei punti di forza della gamma.</strong> Il fabbricante parla di «comando Synergy semplice»: un programma sinergico per tutti i procedimenti e regolazione automatica della pulsazione. La selezione del filo e del gas aiuta a impostare il programma più adatto. Restano accessibili le regolazioni di precisione: Arc Force, Hot Start, tensione a vuoto regolabile da 15 V e modulazione della corrente. Un pannello intuitivo fa risparmiare tempo nel lavoro quotidiano.</p><p>Le pagine dei prodotti mostrano <strong>immagini dei pannelli di comando</strong>. Ingranditele per esaminare le indicazioni e i comandi prima di inviare una richiesta.</p><p><strong>Robusti e riparabili.</strong> Verifichiamo caso per caso con il fornitore se un componente può essere riparato o sostituito e quali ricambi sono disponibili. In caso di garanzia restiamo il vostro interlocutore. La riparabilità e la disponibilità dei ricambi sono criteri importanti nella scelta di questa gamma. Le pagine di prodotto riprendono le indicazioni del fabbricante e l’origine di ogni dato tecnico è verificabile nella sua documentazione.</p>"
+        "<p><strong>MAHE GmbH</strong> produce apparecchi per saldatura e taglio a Kreuztal-Kredenbach, nella Renania Settentrionale-Vestfalia (Auwiese 12, 57223 Kreuztal; registro delle imprese del tribunale di Siegen, HRB 4311). Secondo le indicazioni del fabbricante, l’azienda opera da oltre 30 anni. La gamma comprende saldatura MIG/MAG, TIG e a elettrodo, taglio al plasma, dalla torcia manuale al tavolo CNC, e sistemi di pulizia e marcatura.</p><p><strong>La tecnica adatta al lavoro.</strong> Intervallo di corrente, ciclo di lavoro, alimentazione e procedimenti disponibili variano in base al modello e alla versione. Le pagine dei prodotti contengono le relative tabelle tecniche e la documentazione del fabbricante.</p><p><strong>Comandi secondo la versione.</strong> In base al modello sono disponibili comandi manuali, sinergici o grafici. I procedimenti pulsati, le funzioni di memoria e i collegamenti disponibili sono indicati nella descrizione del singolo prodotto.</p><p>La <a href=\"{url_dl}\">dichiarazione del fabbricante relativa a EN 1090 del 30.01.2016</a> cita le serie C-MIG, Delta digital, Kappa, Beta digital, Omega e HyperTIG. Per la documentazione di un apparecchio specifico verifichiamo modello, anno di costruzione e attestazioni necessarie.</p><p>Le pagine dei prodotti mostrano <strong>immagini dei pannelli di comando</strong>. Ingranditele per esaminare le indicazioni e i comandi prima di inviare una richiesta.</p><p><strong>Robusti e riparabili.</strong> Verifichiamo caso per caso con il fornitore se un componente può essere riparato o sostituito e quali ricambi sono disponibili. In caso di garanzia restiamo il vostro interlocutore. La riparabilità e la disponibilità dei ricambi sono criteri importanti nella scelta di questa gamma. Le pagine di prodotto riprendono le indicazioni del fabbricante e l’origine di ogni dato tecnico è verificabile nella sua documentazione.</p>"
       ],
       [
         "Che cosa viene misurato e documentato",
@@ -1933,7 +1939,10 @@
     "analytics_state_granted": "La vostra scelta: analisi consentita",
     "analytics_state_denied": "La vostra scelta: analisi rifiutata",
     "analytics_state_unset": "Consenso non ancora fornito",
-    "analytics_state_blocked": "Le impostazioni privacy del browser impediscono l’analisi (GPC/DNT)."
+    "analytics_state_blocked": "Le impostazioni privacy del browser impediscono l’analisi (GPC/DNT).",
+    "search_advice": "Richiedi consulenza tecnica",
+    "applications_title": "Quale lavoro volete eseguire?",
+    "applications_intro": "Scegliete da dove iniziare per montaggio, officina e produzione. La scelta dipende dal materiale, dallo spessore e dalle condizioni di utilizzo."
   },
   "en": {
     "locale": "en_CH",
@@ -1980,7 +1989,7 @@
     "verf_title": "Welding Processes · MIG Pulse, Double Pulse & TIG | VES-TECH Swiss",
     "verf_desc": "MIG/MAG pulse, double pulse, HyperPuls and TIG LF/HF pulse, AC/DC and Mix TIG: principles, applications, parameters and suitable MAHE equipment.",
     "dl_title": "Downloads · MAHE Catalogue, EN 1090 & Safety Data Sheets",
-    "dl_desc": "MAHE product catalogue, EN 1090 conformity certificate and safety data sheets for R1, RP1, P1, M1 and N1 electrolytes as PDFs.",
+    "dl_desc": "MAHE catalogue, the 2016 manufacturer declaration relating to EN 1090 for the listed series, and electrolyte safety data sheets as PDFs.",
     "kontakt_title": "Contact · VES-TECH Swiss, Herisau AR Workshop",
     "kontakt_desc": "VES-TECH Swiss in Herisau AR: advice and service for MAHE welding, cutting, cleaning and automation. Telephone +41 76 710 91 39.",
     "faq_title": "MAHE Welding Equipment FAQ | VES-TECH Swiss",
@@ -2038,8 +2047,8 @@
     "usp_1_p": "Commissioning, repairs and calibration with direct access to the technician responsible.",
     "usp_2_h": "Price on request",
     "usp_2_p": "Each system is configured individually. You receive a quotation matched to your material and thickness.",
-    "usp_3_h": "EN 1090 documentation",
-    "usp_3_p": "The complete testing and conformity package for structural steel and aluminium fabrication.",
+    "usp_3_h": "Traceable documentation",
+    "usp_3_p": "Equipment-specific manufacturer documents and calibration reports to support your quality assurance.",
     "nav_agb": "Terms",
     "agb_title": "Terms and Conditions | VES-TECH Swiss",
     "agb_desc": "VES-TECH Swiss terms and conditions for MAHE equipment: quotations, prices, payment, delivery, warranty, liability and jurisdiction.",
@@ -2278,7 +2287,7 @@
       ],
       [
         "Why MAHE",
-        "<p><strong>MAHE GmbH</strong> manufactures welding and cutting equipment in Kreuztal-Kredenbach, North Rhine-Westphalia (Auwiese 12, 57223 Kreuztal; commercial register at Siegen Local Court, HRB 4311). According to the manufacturer, the business has operated for more than 30 years. Its range extends from MIG/MAG, TIG and MMA welding through plasma cutting, from handheld torches to CNC tables, to cleaning and marking systems.</p><p><strong>The range is aimed at professional users.</strong> The HyperMIG X MIG/MAG range achieves a 45 % duty cycle at 400 A and 60 % at 360 A. It has an IP23 degree of protection and a 400 V three-phase connection. An <a href=\"{url_dl}\">EN 1090 conformity certificate</a> for the welding equipment is available here as a PDF download.</p><p><strong>Clearly arranged controls.</strong> The manufacturer calls this simple synergic operation: a synergic program for all processes and automatic pulse adjustment. Selecting the wire and gas helps choose the appropriate program. Fine adjustment remains accessible: Arc Force, Hot Start, adjustable open-circuit voltage from 15 V and current modulation. A clearly arranged control panel makes daily workshop use easier.</p><p>On the equipment pages, <strong>control panel images</strong> show the respective interface. Use the image enlargement to examine the labels and controls before making an enquiry.</p><p><strong>Robust and repairable.</strong> We clarify whether an assembly can be repaired or replaced and which spare parts are available with the supplier in each individual case. We remain your contact for warranty claims. Repairability and spare parts supply are important reasons for selecting this range. The product pages reproduce the manufacturer's information; each technical statement can be checked against its documentation.</p>"
+        "<p><strong>MAHE GmbH</strong> manufactures welding and cutting equipment in Kreuztal-Kredenbach, North Rhine-Westphalia (Auwiese 12, 57223 Kreuztal; commercial register at Siegen Local Court, HRB 4311). According to the manufacturer, the business has operated for more than 30 years. Its range extends from MIG/MAG, TIG and MMA welding through plasma cutting, from handheld torches to CNC tables, to cleaning and marking systems.</p><p><strong>Equipment matched to the task.</strong> Current range, duty cycle, power supply and available processes vary by model and version. Each product page contains the corresponding technical tables and manufacturer documents.</p><p><strong>Controls depend on the version.</strong> Manual, synergic or graphical controls are available depending on the model. The individual product description identifies the available pulse processes, memory functions and connections.</p><p>The <a href=\"{url_dl}\">manufacturer declaration relating to EN 1090 dated 30 January 2016</a> lists C-MIG, Delta digital, Kappa, Beta digital, Omega and HyperTIG. For a specific machine, we clarify the model, year of manufacture and documentation required.</p><p>On the equipment pages, <strong>control panel images</strong> show the respective interface. Use the image enlargement to examine the labels and controls before making an enquiry.</p><p><strong>Robust and repairable.</strong> We clarify whether an assembly can be repaired or replaced and which spare parts are available with the supplier in each individual case. We remain your contact for warranty claims. Repairability and spare parts supply are important reasons for selecting this range. The product pages reproduce the manufacturer's information; each technical statement can be checked against its documentation.</p>"
       ],
       [
         "Measurement and documentation",
@@ -2318,11 +2327,11 @@
       },
       {
         "q": "What is the difference between DC TIG and AC/DC TIG?",
-        "a": "DC TIG uses direct current and is suitable for steel, stainless steel, copper and titanium. AC/DC TIG can also use alternating current, whose electrode-positive phase provides oxide cleaning for typical aluminium welding applications. AC/DC equipment therefore offers a broader range of applications, while DC equipment is generally the more economical choice."
+        "a": "DC TIG uses direct current and is suitable for steel, stainless steel, copper and titanium. AC/DC TIG can also use alternating current. Its electrode-positive phase provides oxide cleaning for typical aluminium welding applications. AC/DC equipment therefore covers more applications, while DC equipment is generally the more economical choice."
       },
       {
         "q": "How does electrolytic weld cleaning work?",
-        "a": "A MAHE cleaner passes current into the weld through a carbon brush wetted with electrolyte. Heat tint and the oxide layer on stainless steel are removed electrochemically, allowing the passive layer to reform. Depending on the electrolyte, the task is cleaning (R1, RP1), polishing (P1), neutralising (N1) or permanent metal marking (M1). The process works locally without immersing the component in a pickling bath."
+        "a": "A MAHE cleaner electrochemically removes heat tint from stainless steel welds using a carbon brush wetted with electrolyte. The process acts locally on the surface. R1 and RP1 are used for cleaning, P1 for polishing and M1 for marking. N1 is used for subsequent neutralisation. Select the product suited to the equipment and task according to the manufacturer’s instructions and safety data sheet."
       },
       {
         "q": "Which thicknesses can a MAHE Theta plasma cutter cut?",
@@ -2334,7 +2343,7 @@
       },
       {
         "q": "What does EN 1090 mean, and which documentation does VES-TECH supply?",
-        "a": "EN 1090 is the European standard covering the execution of steel and aluminium structures. Manufacturers of such components need factory production control and checked welding equipment. VES-TECH Swiss supplies the associated testing and conformity package matched to your MAHE equipment, including a conformity certificate."
+        "a": "The EN 1090 series concerns the execution of steel and aluminium structures. Equipment documentation depends on the specific model: the MAHE declaration dated 30 January 2016 available here lists C-MIG, Delta digital, Kappa, Beta digital, Omega and HyperTIG. We clarify the appropriate manufacturer documents and calibration reports for your equipment. These documents do not replace certification of your fabrication business."
       },
       {
         "q": "How quickly will I receive a quotation?",
@@ -2578,7 +2587,10 @@
     "analytics_state_granted": "Your choice: analytics allowed",
     "analytics_state_denied": "Your choice: analytics declined",
     "analytics_state_unset": "Consent has not been given",
-    "analytics_state_blocked": "Your browser’s privacy settings block analytics (GPC/DNT)."
+    "analytics_state_blocked": "Your browser’s privacy settings block analytics (GPC/DNT).",
+    "search_advice": "Ask for technical advice",
+    "applications_title": "What task are you planning?",
+    "applications_intro": "Find the right starting point for installation work, the workshop or production. Selection depends on the material, thickness and operating conditions."
   },
   "es": {
     "locale": "es_CH",
@@ -2625,7 +2637,7 @@
     "verf_title": "Soldadura · MIG pulsado, doble pulsado y TIG | VES-TECH Swiss",
     "verf_desc": "MIG/MAG pulsado, doble pulsado, HyperPuls y TIG pulsado LF/HF, AC/DC y Mix TIG: principios, aplicaciones, parámetros y equipos MAHE adecuados.",
     "dl_title": "Descargas · Catálogo MAHE, EN 1090 y fichas de seguridad",
-    "dl_desc": "Catálogo MAHE, certificado de conformidad EN 1090 y fichas de datos de seguridad de los electrolitos R1, RP1, P1, M1 y N1 en PDF.",
+    "dl_desc": "Catálogo MAHE, declaración del fabricante de 2016 relativa a EN 1090 para las series citadas y fichas de datos de seguridad de electrolitos en PDF.",
     "kontakt_title": "Contacto · VES-TECH Swiss, taller de Herisau AR",
     "kontakt_desc": "VES-TECH Swiss en Herisau AR: asesoramiento y servicio MAHE para soldadura, corte, limpieza y automatización. Teléfono +41 76 710 91 39.",
     "faq_title": "Preguntas sobre equipos de soldadura MAHE | VES-TECH Swiss",
@@ -2683,8 +2695,8 @@
     "usp_1_p": "Puesta en servicio, reparación y calibración con acceso directo al técnico responsable.",
     "usp_2_h": "Precio bajo consulta",
     "usp_2_p": "Cada instalación se configura individualmente. Recibirá una oferta adaptada a su material y espesor.",
-    "usp_3_h": "Documentación EN 1090",
-    "usp_3_p": "Paquete completo de ensayo y conformidad para la fabricación de estructuras de acero y aluminio.",
+    "usp_3_h": "Documentación trazable",
+    "usp_3_p": "Documentos del fabricante e informes de calibración específicos del equipo para su control de calidad.",
     "nav_agb": "Condiciones generales",
     "agb_title": "Condiciones generales | VES-TECH Swiss",
     "agb_desc": "Condiciones generales de VES-TECH Swiss para equipos MAHE: ofertas, precios, pago, entrega, garantía, responsabilidad y jurisdicción.",
@@ -2923,7 +2935,7 @@
       ],
       [
         "Por qué MAHE",
-        "<p><strong>MAHE GmbH</strong> fabrica equipos de soldadura y corte en Kreuztal-Kredenbach, Renania del Norte-Westfalia (Auwiese 12, 57223 Kreuztal; registro mercantil del tribunal de Siegen, HRB 4311). Según el fabricante, la empresa lleva más de 30 años en activo. Su gama abarca desde soldadura MIG/MAG, TIG y MMA hasta corte por plasma, desde antorchas manuales hasta mesas CNC, además de sistemas de limpieza y marcado.</p><p><strong>La gama está dirigida a usuarios profesionales.</strong> La serie MIG/MAG HyperMIG X alcanza un ciclo de trabajo del 45 % a 400 A y del 60 % a 360 A. Tiene grado de protección IP23 y conexión trifásica de 400 V. Aquí puede descargar en PDF un <a href=\"{url_dl}\">certificado de conformidad EN 1090</a> para los equipos de soldadura.</p><p><strong>Controles claros.</strong> El fabricante lo denomina manejo sinérgico sencillo: un programa sinérgico para todos los procesos y ajuste automático del pulsado. Seleccionar el hilo y el gas ayuda a elegir el programa adecuado. El ajuste fino sigue accesible: Arc Force, Hot Start, tensión en vacío ajustable desde 15 V y modulación de corriente. Un panel de control claro facilita el trabajo diario en el taller.</p><p>En las páginas de equipos, las <strong>imágenes de los paneles de control</strong> muestran la interfaz correspondiente. Amplíe la imagen para examinar las inscripciones y los mandos antes de consultar.</p><p><strong>Robustos y reparables.</strong> Aclaramos con el proveedor, para cada caso, si un conjunto puede repararse o sustituirse y qué recambios están disponibles. Seguimos siendo su interlocutor para las reclamaciones de garantía. La posibilidad de reparación y el suministro de recambios son motivos importantes para elegir esta gama. Las páginas de producto reproducen la información del fabricante; cada afirmación técnica puede contrastarse con su documentación.</p>"
+        "<p><strong>MAHE GmbH</strong> fabrica equipos de soldadura y corte en Kreuztal-Kredenbach, Renania del Norte-Westfalia (Auwiese 12, 57223 Kreuztal; registro mercantil del tribunal de Siegen, HRB 4311). Según el fabricante, la empresa lleva más de 30 años en activo. Su gama abarca desde soldadura MIG/MAG, TIG y MMA hasta corte por plasma, desde antorchas manuales hasta mesas CNC, además de sistemas de limpieza y marcado.</p><p><strong>Equipos adecuados para cada trabajo.</strong> El rango de corriente, el ciclo de trabajo, la alimentación y los procesos disponibles varían según el modelo y la versión. Las páginas de los productos contienen las tablas técnicas y los documentos correspondientes del fabricante.</p><p><strong>Controles según la versión.</strong> Según el modelo, el manejo es manual, sinérgico o gráfico. Cada descripción de producto indica los procesos pulsados, las funciones de memoria y las conexiones disponibles.</p><p>La <a href=\"{url_dl}\">declaración del fabricante relativa a EN 1090 del 30.01.2016</a> cita las series C-MIG, Delta digital, Kappa, Beta digital, Omega e HyperTIG. Para documentar una máquina concreta, aclaramos el modelo, el año de fabricación y los justificantes necesarios.</p><p>En las páginas de equipos, las <strong>imágenes de los paneles de control</strong> muestran la interfaz correspondiente. Amplíe la imagen para examinar las inscripciones y los mandos antes de consultar.</p><p><strong>Robustos y reparables.</strong> Aclaramos con el proveedor, para cada caso, si un conjunto puede repararse o sustituirse y qué recambios están disponibles. Seguimos siendo su interlocutor para las reclamaciones de garantía. La posibilidad de reparación y el suministro de recambios son motivos importantes para elegir esta gama. Las páginas de producto reproducen la información del fabricante; cada afirmación técnica puede contrastarse con su documentación.</p>"
       ],
       [
         "Medición y documentación",
@@ -2963,11 +2975,11 @@
       },
       {
         "q": "¿Qué diferencia hay entre TIG DC y TIG AC/DC?",
-        "a": "TIG DC utiliza corriente continua y es adecuado para acero, acero inoxidable, cobre y titanio. TIG AC/DC también puede utilizar corriente alterna, cuya fase con electrodo positivo aporta limpieza de óxidos en las aplicaciones habituales de soldadura de aluminio. Por ello, los equipos AC/DC ofrecen un campo de aplicación más amplio, mientras que los equipos DC suelen ser la opción más económica."
+        "a": "TIG DC utiliza corriente continua y es adecuado para acero, acero inoxidable, cobre y titanio. TIG AC/DC también permite utilizar corriente alterna. Su fase con electrodo positivo aporta limpieza de óxidos en las aplicaciones habituales de soldadura de aluminio. Por ello, los equipos AC/DC cubren más aplicaciones, mientras que los equipos DC suelen ser la opción más económica."
       },
       {
         "q": "¿Cómo funciona la limpieza electrolítica de soldaduras?",
-        "a": "Un limpiador MAHE transmite corriente a la soldadura mediante un cepillo de carbono humedecido con electrolito. La coloración térmica y la capa de óxido del acero inoxidable se eliminan electroquímicamente, permitiendo que se regenere la capa pasiva. Según el electrolito, la tarea es limpieza (R1, RP1), pulido (P1), neutralización (N1) o marcado permanente de metales (M1). El proceso actúa localmente sin sumergir la pieza en un baño de decapado."
+        "a": "Un limpiador MAHE elimina electroquímicamente la coloración térmica de las soldaduras de acero inoxidable mediante un cepillo de carbono humedecido con electrolito. El proceso actúa localmente sobre la superficie. R1 y RP1 se utilizan para limpiar, P1 para pulir y M1 para marcar. N1 se utiliza para la posterior neutralización. Seleccione el producto adecuado para el equipo y el trabajo según las instrucciones del fabricante y la ficha de datos de seguridad."
       },
       {
         "q": "¿Qué espesores puede cortar un equipo de plasma MAHE Theta?",
@@ -2979,7 +2991,7 @@
       },
       {
         "q": "¿Qué significa EN 1090 y qué documentación suministra VES-TECH?",
-        "a": "EN 1090 es la norma europea relativa a la ejecución de estructuras de acero y aluminio. Los fabricantes de estos componentes necesitan control de producción en fábrica y equipos de soldadura comprobados. VES-TECH Swiss suministra el paquete de ensayo y conformidad correspondiente, adaptado a sus equipos MAHE, incluido un certificado de conformidad."
+        "a": "La serie de normas EN 1090 trata la ejecución de estructuras de acero y aluminio. La documentación depende del modelo concreto: la declaración MAHE del 30.01.2016 disponible aquí cita C-MIG, Delta digital, Kappa, Beta digital, Omega e HyperTIG. Aclaramos qué documentos del fabricante e informes de calibración corresponden a su equipo. Estos documentos no sustituyen la certificación de su empresa de fabricación."
       },
       {
         "q": "¿En cuánto tiempo recibiré una oferta?",
@@ -3223,6 +3235,9 @@
     "analytics_state_granted": "Su elección: análisis permitido",
     "analytics_state_denied": "Su elección: análisis rechazado",
     "analytics_state_unset": "Todavía no se ha dado el consentimiento",
-    "analytics_state_blocked": "Los ajustes de privacidad de su navegador bloquean el análisis (GPC/DNT)."
+    "analytics_state_blocked": "Los ajustes de privacidad de su navegador bloquean el análisis (GPC/DNT).",
+    "search_advice": "Solicitar asesoramiento técnico",
+    "applications_title": "¿Qué trabajo quiere realizar?",
+    "applications_intro": "Encuentre el punto de partida para montaje, taller o fabricación. La selección depende del material, del espesor y de las condiciones de uso."
   }
 }

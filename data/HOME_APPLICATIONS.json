@@ -1,0 +1,110 @@
+[
+  {
+    "target": {
+      "kind": "subcategory",
+      "id": "schweissgeraete",
+      "sub": "WIG / TIG"
+    },
+    "de": {
+      "title": "Rohrleitungen und Montage",
+      "description": "WIG/TIG für kontrollierte Nähte an Rohren und Bauteilen. Werkstoff, Wandstärke und Stromversorgung bestimmen die Gerätewahl."
+    },
+    "fr": {
+      "title": "Tuyauterie et montage",
+      "description": "TIG pour des soudures maîtrisées sur tubes et composants. Le matériau, l’épaisseur de paroi et l’alimentation orientent le choix."
+    },
+    "it": {
+      "title": "Tubazioni e montaggio",
+      "description": "TIG per saldature controllate su tubi e componenti. Materiale, spessore della parete e alimentazione guidano la scelta."
+    },
+    "en": {
+      "title": "Pipework and installation",
+      "description": "TIG for controlled welds on pipes and components. Material, wall thickness and available power guide equipment selection."
+    },
+    "es": {
+      "title": "Tuberías y montaje",
+      "description": "TIG para soldaduras controladas en tubos y componentes. El material, el espesor de pared y la alimentación orientan la elección."
+    }
+  },
+  {
+    "target": {
+      "kind": "subcategory",
+      "id": "schweissgeraete",
+      "sub": "MIG / MAG"
+    },
+    "de": {
+      "title": "Metallbau und Fertigung",
+      "description": "MIG/MAG für Bauteile aus Stahl, Edelstahl oder Aluminium. Vergleichen Sie Verfahren, Drahtvorschub und Einschaltdauer."
+    },
+    "fr": {
+      "title": "Construction métallique et fabrication",
+      "description": "MIG/MAG pour les pièces en acier, inox ou aluminium. Comparez les procédés, le dévidage et le facteur de marche."
+    },
+    "it": {
+      "title": "Carpenteria metallica e produzione",
+      "description": "MIG/MAG per componenti in acciaio, inox o alluminio. Confrontate procedimenti, avanzamento del filo e ciclo di lavoro."
+    },
+    "en": {
+      "title": "Metal fabrication and production",
+      "description": "MIG/MAG for steel, stainless steel or aluminium components. Compare processes, wire feeding and duty cycle."
+    },
+    "es": {
+      "title": "Construcción metálica y fabricación",
+      "description": "MIG/MAG para piezas de acero, acero inoxidable o aluminio. Compare procesos, alimentación de hilo y ciclo de trabajo."
+    }
+  },
+  {
+    "target": {
+      "kind": "subcategory",
+      "id": "plasmaschneiden",
+      "sub": "Schneidtische"
+    },
+    "de": {
+      "title": "Blechteile und CNC-Zuschnitt",
+      "description": "Plasmaschneidtische für wiederkehrende Konturen. Arbeitsbereich, Schneidstromquelle und gewünschte Schnittqualität gemeinsam auswählen."
+    },
+    "fr": {
+      "title": "Pièces en tôle et découpe CNC",
+      "description": "Tables plasma pour les contours récurrents. Choisissez ensemble la surface de travail, la source plasma et la qualité de coupe souhaitée."
+    },
+    "it": {
+      "title": "Lamiera e taglio CNC",
+      "description": "Tavoli plasma per sagome ricorrenti. Scegliete insieme area di lavoro, generatore plasma e qualità di taglio desiderata."
+    },
+    "en": {
+      "title": "Sheet metal and CNC cutting",
+      "description": "Plasma tables for repeatable contours. Select the working area, plasma power source and required cut quality together."
+    },
+    "es": {
+      "title": "Chapa y corte CNC",
+      "description": "Mesas de plasma para contornos repetitivos. Seleccione conjuntamente el área de trabajo, la fuente de plasma y la calidad de corte deseada."
+    }
+  },
+  {
+    "target": {
+      "kind": "subcategory",
+      "id": "reinigung",
+      "sub": "Cleaner"
+    },
+    "de": {
+      "title": "Edelstahl und Nahtreinigung",
+      "description": "Elektrolytische Reinigung nach dem Schweissen. Cleaner, Pinsel und Elektrolyt passend zur Oberfläche und Aufgabe auswählen."
+    },
+    "fr": {
+      "title": "Inox et nettoyage des soudures",
+      "description": "Nettoyage électrolytique après soudage. Choisissez le nettoyeur, le pinceau et l’électrolyte selon la surface et le travail."
+    },
+    "it": {
+      "title": "Inox e pulizia delle saldature",
+      "description": "Pulizia elettrolitica dopo la saldatura. Scegliete apparecchio, pennello ed elettrolita in base alla superficie e al lavoro."
+    },
+    "en": {
+      "title": "Stainless steel and weld cleaning",
+      "description": "Electrolytic cleaning after welding. Match the cleaner, brush and electrolyte to the surface and task."
+    },
+    "es": {
+      "title": "Inoxidable y limpieza de soldaduras",
+      "description": "Limpieza electrolítica después de soldar. Elija el limpiador, el cepillo y el electrolito según la superficie y el trabajo."
+    }
+  }
+]

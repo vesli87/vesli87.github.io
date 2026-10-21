@@ -1393,6 +1393,17 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-spotlight p{color:var(--muted);margin:8px 0 16px;font-size:16px}
   .volt-service-link{display:flex;align-items:center;gap:24px;padding:22px 30px;margin-top:24px;font-family:'Barlow Condensed','Inter',sans-serif;font-size:30px;font-weight:700;line-height:1.15}
   .volt-service-link>span:last-child{margin-left:auto;color:var(--accent-ink)}
+  .volt-applications{padding:48px 0}
+  .volt-applications .sub{max-width:850px;color:var(--muted);margin:14px 0 28px}
+  .volt-application-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .volt-application{position:relative;isolation:isolate;display:grid;grid-template-columns:44px minmax(0,1fr) 24px;gap:8px 18px;align-content:start;padding:30px;color:var(--ink);text-decoration:none}
+  .volt-application::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border:32px solid transparent;border-image:url('/assets/icons/design/volt-frame.svg') 32 fill / 32px / 0 stretch}
+  .volt-application-number{grid-row:1/3;font-family:'Barlow Condensed','Inter',sans-serif;font-weight:700;font-size:28px;color:var(--accent-ink)}
+  .volt-application h3{font-size:23px;line-height:1.25}
+  .volt-application p{grid-column:2;font-size:16px;line-height:1.6;color:var(--muted);margin:0}
+  .volt-application-arrow{grid-column:3;grid-row:1;color:var(--accent-ink);font-size:24px}
+  .volt-application:hover h3,.volt-application:focus-visible h3{color:var(--accent-ink)}
+  .volt-application:hover::before{filter:drop-shadow(0 4px 8px #2b3c4c14)}
   .intro{background:transparent;padding:66px 0 28px}
   .intro h2{font-size:clamp(26px,3vw,38px);line-height:1.2;max-width:30ch;letter-spacing:-.035em}
   .intro .lead{font-size:17px;max-width:85ch;color:var(--muted);line-height:1.75}
@@ -1838,4 +1849,11 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .mahe-training-card{display:block;padding:0}
   .mahe-training-card::before{display:none}
   .mahe-training-photo{max-width:120mm;margin:0 0 16pt}
+}
+@media screen and (max-width:700px){
+  .volt-application-grid{grid-template-columns:minmax(0,1fr);gap:18px}
+  .volt-applications{padding:32px 0}
+  .volt-application{padding:26px 24px;grid-template-columns:30px minmax(0,1fr) 20px;gap:10px 12px}
+  .volt-application h3{font-size:21px}
+  .volt-application p{grid-column:1/-1}
 }

@@ -1362,3 +1362,11 @@ ohne Analytik-Ereignis. Die fünf eigenen DOI-Tests vom 21.10.2026 wurden
 zugestellt, bestätigt und danach über diese Formulare für Marketing geblocklistet.
 Öffnungs- und Klickstatistik transaktionaler E-Mails ist in Brevo anonymisiert;
 Zustell- und Einwilligungsnachweise bleiben für die Verwaltung notwendig.
+
+Newslettertexte sind knapp und nutzenorientiert. Der Einleitungstext beschreibt
+Geräteneuheiten und Praxistipps; die Bestätigung und Abmeldung werden einmal im
+Hinweis unter der Einwilligung erklärt. DE: «Anmeldung mit Bestätigung per E-Mail.
+Abmeldung jederzeit möglich.» Die entsprechende Fassung wird in allen fünf
+Sprachen im Footer, in Brevo und in den DOI-Vorlagen gepflegt. Im Einleitungstext
+wird der Hinweis nicht nochmals angehängt. Der erforderliche, zunächst
+unmarkierte Einwilligungshaken und das Double-Opt-in bleiben Voraussetzung.

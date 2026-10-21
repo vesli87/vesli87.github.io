@@ -1158,7 +1158,7 @@ def newsletter_html(lang):
     unsubscribe = C.newsletter_unsubscribe_forms()
     return (f'<section class="newsletter"><h2 class="fh">{e(C.t(lang, "newsletter_title"))}</h2>'
             f'<p>{e(C.t(lang, "newsletter_intro"))}</p>'
-            f'<a class="btn bo" data-newsletter href="{e(forms[lang])}" '
+            f'<a class="btn ghost" data-newsletter href="{e(forms[lang])}" '
             f'rel="noopener noreferrer" referrerpolicy="no-referrer">{e(C.t(lang, "newsletter_cta"))}</a>'
             f'<p class="small">{e(C.t(lang, "newsletter_note"))} '
             f'<a href="{e(C.u_page(lang, "privacy"))}">{e(C.t(lang, "analytics_privacy_link"))}</a> · '

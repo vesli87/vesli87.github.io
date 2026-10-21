@@ -120,6 +120,9 @@
   .hero-txt{position:absolute;left:clamp(16px,4vw,56px);top:50%;transform:translateY(-50%);
     max-width:min(33%,430px);color:#fff;z-index:2}
   .hero-mobile-copy{display:none}
+  .newsletter{margin-top:1.5rem;padding-top:1.25rem;border-top:2px solid var(--accent,#ff6500)}
+  .newsletter p{max-width:44ch}
+  .newsletter .small{font-size:.85rem;line-height:1.55}
   /* Der Textblock muss links von der Maschine bleiben - im Banner beginnt
      sie bei 40 % der Breite. Laenger gesetzt, lief die Zeile in den
      Bildschirm der Bedienkonsole hinein. */

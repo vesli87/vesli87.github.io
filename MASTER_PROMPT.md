@@ -1320,3 +1320,33 @@ allgemeine Wirkprinzipien bestaetigen keine fremden MAHE-Einstellbereiche.
   Kontaktadresse reduziert; Thema und Nachricht werden nicht gemessen.
   Eigene Referrer mit Thema bleiben ausgeschlossen, weil das SDK rohe Referrer liest.
   Kampagnen und Entwürfe liegen privat unter `reports/growth/`, nicht im Public-Paket.
+
+## 30. GA4 und Newsletter mit getrennten Einwilligungen (21.10.2026)
+
+Der Inhaber hat GA4-Prüfung und freiwilligen E-Mail-Marketingaufbau mit Brevo
+angefragt. Die Integrationen sind konfigurationsabhängig; eine neue externe
+Accountanlage und ihre Vertragsannahme werden nicht stillschweigend durchgeführt.
+Ohne echte geprüfte Measurement-ID und vollständige bestätigte Brevo-Formulare
+bleiben diese Anbieter deaktiviert. Bestehende Ahrefs-/Cloudflare-Messung bleibt
+unter ihrer bisherigen Zustimmung aktiv.
+
+GA4 benötigt eine neue v3-Zustimmung. Bisherige Grants werden nicht erweitert,
+gültige Ablehnungen bleiben bestehen. Nur Basic Consent Mode, Anzeigenzwecke immer
+verweigert; keine User-ID, Google Signals, Remarketing- oder Kundenlisten.
+Automatische erweiterte Messung ist vor Aktivierung im Webstream vollständig
+abzuschalten. Der Adapter misst explizite Seitenaufrufe und bekannte Ereignisse
+mit geprüften Werten. Cookies sind hostgebunden, haben den Präfix `vt` und höchstens
+180 Tage Laufzeit. Widerruf sperrt die Erfassung und entfernt nur diese Cookies.
+Details und Aktivierungsprüfungen stehen in README.md; fachliche Regressionen in
+`build/test_ga4.mjs` und `build/test_ga4_newsletter.py`.
+
+Newsletter: Ein separater normaler Brevo-Formularlink im Footer lädt keine
+Fremdressource vor dem Klick. Er erscheint erst nach vollständiger Konfiguration
+für DE/FR/IT/EN/ES. Double-Opt-in, freie Abmeldung, authentifizierter Absender,
+Sprachausgabe und Zustellung sind vor Aktivierung im echten Brevo-Konto zu prüfen.
+Keine Übernahme von Anfragen oder gesuchten Interessenten in einen Verteiler.
+Keine Brevo-API-Schlüssel und keine E-Mail-Adressen in öffentliches Git, Analytics,
+URL-Parameter, localStorage oder öffentlich zugängliche Auswertungen.
+`newsletter_open` ist ein Klick, keine bestätigte Anmeldung. Die tatsächliche
+Abonnentenentwicklung kommt aus Brevo. Zeitvergleich immer Europe/Zurich;
+Besucherserien verschiedener Anbieter nicht addieren und D-1/D-2 unterscheiden.

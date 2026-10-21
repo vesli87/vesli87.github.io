@@ -196,7 +196,8 @@ def script_integrity(relative):
 def csp(lang):
     cloudflare = bool(C.cloudflare_analytics_token())
     ahrefs = bool(C.ahrefs_analytics_key())
-    analytics = cloudflare or ahrefs
+    ga4 = bool(C.ga4_measurement_id())
+    analytics = cloudflare or ahrefs or ga4
     scripts = [sri_hash(IMG_FALLBACK_JS), sri_hash(boot_json(lang)),
                "'" + script_integrity('assets/js/app.js') + "'"]
     if analytics:
@@ -214,14 +215,17 @@ def csp(lang):
         # Host sources are a compatibility fallback for older CSP versions.
         "script-src 'self' 'strict-dynamic' " + " ".join(scripts)
         + (" https://static.cloudflareinsights.com" if cloudflare else "")
-        + (" https://analytics.ahrefs.com" if ahrefs else ""),
+        + (" https://analytics.ahrefs.com" if ahrefs else "")
+        + (" https://www.googletagmanager.com" if ga4 else ""),
+        # GA4 transport is limited to the documented collection hosts.
         "script-src-attr 'none'",
         f"style-src 'self' {sri_hash(NOSCRIPT_CSS)}",
         "style-src-attr 'none'",
         "font-src 'self'",
         "connect-src 'self'" + (" https://api.web3forms.com" if C.web3forms_key() else "")
         + (" https://cloudflareinsights.com" if cloudflare else "")
-        + (" https://analytics.ahrefs.com" if ahrefs else ""),
+        + (" https://analytics.ahrefs.com" if ahrefs else "")
+        + (" https://www.google-analytics.com https://region1.google-analytics.com" if ga4 else ""),
         "form-action 'self'",
         # frame-ancestors steht bewusst nicht hier: per <meta> ignorieren es
         # alle Browser und melden es als Warnung in der Konsole. Gegen
@@ -904,7 +908,7 @@ def footer(lang):
     <div class="fcols">
       <div class="brand"><div class="name">VES<i>-</i>TECH</div>
         <p>{e(C.t(lang,'foot_brand'))}</p>
-        <ul class="footer-social">{social}</ul></div>
+        <ul class="footer-social">{social}</ul>{newsletter_html(lang)}</div>
       <div><h2 class="fh">{e(C.t(lang,'foot_products'))}</h2><ul>{prod}
         <li><a href="{e(C.u_products(lang))}">{e(C.t(lang,'nav_all_products'))}</a></li></ul></div>
       <div><h2 class="fh"><a href="{e(C.u_service(lang))}">{e(C.t(lang,'foot_service'))}</a></h2><ul>
@@ -1110,12 +1114,17 @@ def analytics_settings_button(lang):
 def analytics_html(lang):
     token = C.cloudflare_analytics_token()
     ahrefs = C.ahrefs_analytics_key()
-    if not (token or ahrefs):
+    ga4 = C.ga4_measurement_id()
+    if not (token or ahrefs or ga4):
         return ""
-    provider = "both" if token and ahrefs else "cloudflare" if token else "ahrefs"
+    provider = "both" if token and ahrefs else "cloudflare" if token else "ahrefs" if ahrefs else ""
+    provider_text = ('<p>' + e(C.t(lang, 'analytics_text_' + provider)) + '</p>') if provider else ''
+    if ga4:
+        provider_text += '<p>' + e(C.t(lang, 'analytics_text_ga4')) + '</p>'
     return f'''<section class="analytics-consent" id="analyticsConsent" hidden
         aria-labelledby="analyticsTitle" data-token="{e(token)}"
         data-ahrefs-key="{e(ahrefs)}"
+        data-ga4-id="{e(ga4)}"
         data-host="{e(C.CUSTOM_DOMAIN)}">
       <div class="consent-header">
         <h2 id="analyticsTitle">{e(C.t(lang, 'analytics_title'))}</h2>
@@ -1130,7 +1139,7 @@ def analytics_html(lang):
         data-blocked="{e(C.t(lang, 'analytics_state_blocked'))}"></p>
       <details class="consent-details" id="analyticsDetails">
         <summary>{e(C.t(lang, 'analytics_details'))}</summary>
-        <p>{e(C.t(lang, 'analytics_text_' + provider))}</p>
+        {provider_text}
         <p>{e(C.t(lang, 'analytics_storage'))}</p>
       </details>
       <div class="consent-actions">
@@ -1140,6 +1149,18 @@ def analytics_html(lang):
       <a class="consent-privacy" href="{e(C.u_page(lang, 'privacy'))}">{e(C.t(lang, 'analytics_privacy_link'))}</a>
     </section>
     <script src="{_ver('/assets/js/analytics.js')}" integrity="{script_integrity('assets/js/analytics.js')}" defer></script>'''
+
+
+def newsletter_html(lang):
+    forms = C.newsletter_forms()
+    if not forms:
+        return ''
+    return (f'<section class="newsletter"><h2 class="fh">{e(C.t(lang, "newsletter_title"))}</h2>'
+            f'<p>{e(C.t(lang, "newsletter_intro"))}</p>'
+            f'<a class="btn bo" data-newsletter href="{e(forms[lang])}" '
+            f'rel="noopener noreferrer" referrerpolicy="no-referrer">{e(C.t(lang, "newsletter_cta"))}</a>'
+            f'<p class="small">{e(C.t(lang, "newsletter_note"))} '
+            f'<a href="{e(C.u_page(lang, "privacy"))}">{e(C.t(lang, "analytics_privacy_link"))}</a></p></section>')
 
 
 def _complete_graph(lang, blocks):

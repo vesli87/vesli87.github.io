@@ -448,5 +448,95 @@
     "medium": "organic_social",
     "campaign": "cnc-plasma-2026",
     "content": "growth-20261021-cnc-de"
+  },
+  "newsletter-technical-2026-tig-de": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "tig-montage-2026",
+    "content": "technical-2026-tig-de"
+  },
+  "newsletter-technical-2026-cleaning-de": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "nahtreinigung-2026",
+    "content": "technical-2026-cleaning-de"
+  },
+  "newsletter-technical-2026-cnc-de": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "cnc-plasma-2026",
+    "content": "technical-2026-cnc-de"
+  },
+  "newsletter-technical-2026-tig-fr": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "tig-montage-2026",
+    "content": "technical-2026-tig-fr"
+  },
+  "newsletter-technical-2026-cleaning-fr": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "nahtreinigung-2026",
+    "content": "technical-2026-cleaning-fr"
+  },
+  "newsletter-technical-2026-cnc-fr": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "cnc-plasma-2026",
+    "content": "technical-2026-cnc-fr"
+  },
+  "newsletter-technical-2026-tig-it": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "tig-montage-2026",
+    "content": "technical-2026-tig-it"
+  },
+  "newsletter-technical-2026-cleaning-it": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "nahtreinigung-2026",
+    "content": "technical-2026-cleaning-it"
+  },
+  "newsletter-technical-2026-cnc-it": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "cnc-plasma-2026",
+    "content": "technical-2026-cnc-it"
+  },
+  "newsletter-technical-2026-tig-en": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "tig-montage-2026",
+    "content": "technical-2026-tig-en"
+  },
+  "newsletter-technical-2026-cleaning-en": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "nahtreinigung-2026",
+    "content": "technical-2026-cleaning-en"
+  },
+  "newsletter-technical-2026-cnc-en": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "cnc-plasma-2026",
+    "content": "technical-2026-cnc-en"
+  },
+  "newsletter-technical-2026-tig-es": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "tig-montage-2026",
+    "content": "technical-2026-tig-es"
+  },
+  "newsletter-technical-2026-cleaning-es": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "nahtreinigung-2026",
+    "content": "technical-2026-cleaning-es"
+  },
+  "newsletter-technical-2026-cnc-es": {
+    "source": "ves-tech-newsletter",
+    "medium": "email",
+    "campaign": "cnc-plasma-2026",
+    "content": "technical-2026-cnc-es"
   }
 }

@@ -307,7 +307,8 @@ class GeneratorTests(unittest.TestCase):
             for token in ('', '0' * 32):
                 for ahrefs in ('', 'a' * 22):
                     with patch.object(C, 'cloudflare_analytics_token', return_value=token), \
-                            patch.object(C, 'ahrefs_analytics_key', return_value=ahrefs):
+                            patch.object(C, 'ahrefs_analytics_key', return_value=ahrefs), \
+                            patch.object(C, 'ga4_measurement_id', return_value=''):
                         enabled = bool(token or ahrefs)
                         self.assertEqual(C.analytics_enabled(), enabled)
                         panel, policy = R.analytics_html(lang), R.csp(lang)

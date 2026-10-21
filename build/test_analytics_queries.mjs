@@ -136,3 +136,22 @@ test('reviewed paid-search tuples are measurable only with consent and without a
     assert.equal(observe(query.replace('tig-montage-2026','unreviewed-campaign'),opts).appended.length,0);
   }
 });
+
+test('all fifteen newsletter links use reviewed email attribution and reject extra customer values', () => {
+  const campaigns=JSON.parse(readFileSync(new URL('../data/ANALYTICS_CAMPAIGNS.json',import.meta.url),'utf8'));
+  const entries=Object.entries(campaigns).filter(([,row])=>row.source==='ves-tech-newsletter');
+  assert.equal(entries.length,15);
+  for (const [key,row] of entries) {
+    assert.equal(row.medium,'email');
+    const lang=key.split('-').at(-1);
+    const query='?'+new URLSearchParams(Object.fromEntries(Object.entries(row).map(([k,v])=>['utm_'+k,v])));
+    const opts={campaigns,lang};
+    const result=observe(query,opts);
+    assert.equal(result.appended.length,1,key);
+    assert.equal(result.sent[0].props.source,'ves-tech-newsletter');
+    assert.equal(result.sent[0].props.medium,'email');
+    assert.equal(observe(query,{...opts,granted:false}).appended.length,0);
+    for(const extra of ['&email=private@example.invalid','&subscriber_id=private','&utm_source=ves-tech-newsletter'])
+      assert.equal(observe(query+extra,opts).appended.length,0,key+extra);
+  }
+});

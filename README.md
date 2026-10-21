@@ -242,3 +242,57 @@ im Formular und in der geschäftlichen Nachricht. Nach bestätigter Übermittlun
 erscheint eine lokale kopierbare Zusammenfassung; sie ist keine zusätzliche
 E-Mail-Bestätigung. Varianten, Gerätepositionen und Formulardetails werden nicht
 an Ahrefs oder Cloudflare gesendet.
+
+## GA4 und freiwilliger Newsletter
+
+`ga4_measurement_id` / `GA4_MEASUREMENT_ID` ist ausschliesslich eine öffentliche
+Kennung im Format `G-XXXXXXXXXX`. Ohne echte Kennung wird Google weder geladen
+noch in den Datenschutzhinweisen als aktiver Anbieter aufgeführt. Vor Aktivierung
+müssen die Property und der Webstream im Geschäftskonto geprüft sein:
+Zeitzone Schweiz, CHF, **alle erweiterten automatischen Messungen aus**, Google
+Signals und Werbepersonalisierung aus, keine Ads-Verknüpfung oder User-ID,
+E-Mail-Redaktion an, detaillierte Standort-/Gerätedaten aus. Ereignis- und
+Nutzerdatenaufbewahrung zwei Monate, Zurücksetzen bei neuer Aktivität aus;
+aggregierte Standardberichte sind davon nicht vollständig betroffen.
+Das offizielle Google-Tag ist dynamisch und wird anders als
+Ahrefs nicht mit SRI fixiert; CSP begrenzt die Collection-Hosts. Änderungen der
+Google-Konfiguration können automatische Messung beeinflussen und müssen geprüft
+werden. Die Kennung allein ersetzt diese Kontoprüfung nicht.
+
+GA4 verwendet Basic Consent Mode. Vor Zustimmung lädt auch die Bibliothek nicht.
+Eine neue Zustimmung `vt.analytics.consent.v3` ist erforderlich, wenn GA4
+konfiguriert wird; ein v2-Grant reicht nicht, bestehende gültige Ablehnungen gelten
+weiter. Anzeigen-Storage, Anzeigen-Nutzerdaten und Personalisierung bleiben
+verweigert. Seitenaufrufe werden einmal manuell geschickt. Nur bestehende feste
+Ereignisse und geprüfte Dimensionen werden übernommen. Der Seitentitel ist fest,
+der Referrer leer; erkannte Quellen und registrierte Kampagnen werden aus den
+bestehenden geprüften Werten gesetzt. Formulare, E-Mail, Telefonwerte, Nachrichten,
+Suchbegriffe und unbekannte URL-Parameter werden nicht ausgelesen. Suchseiten,
+unsichere URLs, GCLID/MSCLKID sowie GPC/DNT bleiben ausgeschlossen. Diese bewusst
+unvollständige Messung darf nicht als exakte Besucher-Vollzählung bezeichnet werden.
+
+GA4-Cookies verwenden den Präfix `vt`, die Laufzeit 180 Tage ohne Verlängerung
+und hostgebundene Cookies auf `/`. Widerruf setzt sofort das Google-Opt-out-Flag,
+leert ausstehende Ereignisse, entfernt nur `vt_ga`-Cookies dieser Integration und
+lädt das Dokument neu. Fehler von Ahrefs und GA4 sind voneinander unabhängig.
+Es gibt keine Messung vor Zustimmung und kein nachträgliches Wiedergeben alter
+Interaktionen. `inquiry_success` ist weiterhin nur Annahme durch Web3Forms, kein
+Nachweis über den Eingang im Postfach oder einen qualifizierten Kunden.
+
+`newsletter_forms` / `NEWSLETTER_FORMS` ist eine JSON-Zeichenkette mit genau fünf
+Sprachschlüsseln und den **im Brevo-Konto geprüften** HTTPS-Formularadressen auf
+`<name>.sibforms.com/serve/<id>`. Ohne vollständige Konfiguration gibt es keinen
+öffentlichen Anmeldeaufruf und keine Behauptung eines aktiven Newsletters.
+Keine API-Schlüssel, Tracking-SDKs, iframe oder Kontaktimporte. Der Footer verlinkt
+das jeweilige gehostete Formular ohne Referrer. Die Anmeldung bleibt unabhängig
+von Anfrage und Statistik-Zustimmung. Vor Veröffentlichung: Double-Opt-in,
+Sprachausgabe, Abmeldelink, Pflichtangaben, CAPTCHA sowie Domainauthentifizierung
+und tatsächliche Zustellung prüfen. Nicht nur einen beliebigen Link eintragen.
+`newsletter_open` zählt ausschliesslich das Öffnen des Links nach Analytik-Zustimmung;
+Bestätigungen und Abmeldungen kommen aus Brevo, niemals aus dem Websiteklick.
+
+Tagesberichte brauchen einheitliche Zeitzone Europe/Zurich. Den Vortag als
+vorläufig markieren und D-2 erneut prüfen (GA4 kann 24–48 Stunden nachverarbeiten).
+GA4, Ahrefs und Cloudflare nicht zu einer Besucherzahl addieren. Eigene Tests und
+Testanfragen getrennt auswerten; keinerlei Namen oder Empfängerlisten im Report.
+Die private Prüfakte und Vorlagen liegen unter `reports/measurement/2026-10-21/`.

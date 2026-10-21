@@ -39,7 +39,8 @@ class PrivacyControlsTests(unittest.TestCase):
 
     def test_disabled_analytics_leave_no_dead_settings_or_consent_script(self):
         with patch.object(C, 'cloudflare_analytics_token', return_value=''), \
-             patch.object(C, 'ahrefs_analytics_key', return_value=''):
+             patch.object(C, 'ahrefs_analytics_key', return_value=''), \
+             patch.object(C, 'ga4_measurement_id', return_value=''):
             for lang in C.LANGS:
                 self.assertEqual(R.analytics_html(lang), '')
                 self.assertNotIn('analyticsSettings', R.footer(lang))
@@ -48,7 +49,8 @@ class PrivacyControlsTests(unittest.TestCase):
         for token, ahrefs, provider in [('a' * 32, '', 'cloudflare'), ('', 'public', 'ahrefs'),
                                        ('a' * 32, 'public', 'both')]:
             with patch.object(C, 'cloudflare_analytics_token', return_value=token), \
-                 patch.object(C, 'ahrefs_analytics_key', return_value=ahrefs):
+                 patch.object(C, 'ahrefs_analytics_key', return_value=ahrefs), \
+                 patch.object(C, 'ga4_measurement_id', return_value=''):
                 for lang in C.LANGS:
                     doc = R.analytics_html(lang)
                     self.assertIn(R.e(C.t(lang, 'analytics_text_' + provider)), doc)

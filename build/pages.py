@@ -1512,17 +1512,27 @@ def page_legal(lang, kind):
     # Der Text bringt sein eigenes <p>/<ul> mit – Rechtstexte brauchen Listen,
     # und eine Liste in einem <p> waere kaputtes HTML.
     runtime = C.t(lang, 'privacy_runtime')
+    if C.ga4_measurement_id():
+        runtime = '<p>' + e(C.t(lang, 'privacy_runtime_ga4')) + '</p>' + runtime.split('</p>', 1)[1]
+    purposes = ''
     if C.analytics_enabled():
+        purposes += '<li>' + e(C.t(lang, 'privacy_analytics_purpose')) + '</li>'
         runtime += '<p>' + e(C.t(lang, 'privacy_analytics_common')) + '</p>'
         if C.cloudflare_analytics_token():
             runtime += '<p>' + e(C.t(lang, 'privacy_analytics_cloudflare')) + '</p>'
         if C.ahrefs_analytics_key():
             runtime += '<p>' + e(C.t(lang, 'privacy_analytics_ahrefs')) + '</p>'
+        if C.ga4_measurement_id():
+            runtime += '<p>' + e(C.t(lang, 'privacy_analytics_ga4')) + '</p>'
     else:
         runtime += '<p>' + e(C.t(lang, 'privacy_analytics_off')) + '</p>'
+    if C.newsletter_forms():
+        purposes += '<li>' + e(C.t(lang, 'privacy_newsletter_purpose')) + '</li>'
+        runtime += '<p>' + e(C.t(lang, 'privacy_newsletter')) + '</p>'
     delivery = C.t(lang, 'privacy_delivery_direct' if C.web3forms_key() else 'privacy_delivery_mail')
     def body_text(body):
         return (body.replace('{runtime_privacy}', runtime)
+                .replace('{runtime_optional_purposes}', purposes)
                 .replace('{runtime_delivery}', delivery)
                 .replace('{runtime_summary}', C.t(lang, 'privacy_summary'))
                 .replace('{privacy_url}', C.u_page(lang, 'privacy')))

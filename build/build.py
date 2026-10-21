@@ -763,6 +763,7 @@ def webmanifest():
 def main():
     # Validate configuration before deleting any generated pages.
     C.analytics_enabled()
+    C.newsletter_forms()
     C.analytics_campaigns()
     for lang in C.LANGS:
         C.inquiry_topics(lang)

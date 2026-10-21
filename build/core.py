@@ -420,10 +420,31 @@ def ahrefs_analytics_key():
     return key
 
 
+def ga4_measurement_id():
+    key = setting("ga4_measurement_id", "GA4_MEASUREMENT_ID")
+    if key and not re.fullmatch(r"G-[A-Z0-9]{10}", key):
+        raise ValueError("GA4_MEASUREMENT_ID must be a public G- measurement ID, never an API secret")
+    return key
+
+
+def newsletter_forms():
+    """Reviewed hosted DOI forms, never an API credential or direct email endpoint."""
+    raw = setting("newsletter_forms", "NEWSLETTER_FORMS")
+    if not raw:
+        return {}
+    forms = json.loads(raw)
+    if not isinstance(forms, dict) or set(forms) != set(LANGS):
+        raise ValueError("NEWSLETTER_FORMS must contain one verified hosted form for every language")
+    for value in forms.values():
+        if not isinstance(value, str) or not re.fullmatch(r"https://[a-z0-9-]+\.sibforms\.com/serve/[A-Za-z0-9_-]+={0,2}", value):
+            raise ValueError("Newsletter link must be an HTTPS Brevo hosted form without query or fragment")
+    return forms
+
+
 def analytics_enabled():
-    # Validate both providers even when the first one is already enabled.
-    cloudflare, ahrefs = cloudflare_analytics_token(), ahrefs_analytics_key()
-    return bool(cloudflare or ahrefs)
+    # Validate every provider even when the first one is already enabled.
+    cloudflare, ahrefs, ga4 = cloudflare_analytics_token(), ahrefs_analytics_key(), ga4_measurement_id()
+    return bool(cloudflare or ahrefs or ga4)
 
 
 # --------------------------------------------------------------------------
@@ -1192,7 +1213,7 @@ def category_topic(cid, sub=None):
 
 def analytics_campaigns():
     """Finite reviewed tuples, never customer input or arbitrary URL values."""
-    sources = {"linkedin", "facebook", "instagram", "tiktok", "google_business", "youtube", "google", "bing"}
+    sources = {"linkedin", "facebook", "instagram", "tiktok", "google_business", "youtube", "google", "bing", "ves-tech-newsletter"}
     campaigns = {"mahe-programm-2026", "occasion-microplasma-2026", "service-2026",
                  "tig-montage-2026", "nahtreinigung-2026", "cnc-plasma-2026"}
     data = ANALYTICS_CAMPAIGNS
@@ -1210,6 +1231,7 @@ def analytics_campaigns():
         if row["source"] not in sources or row["campaign"] not in campaigns:
             raise ValueError("Unknown analytics source or campaign")
         medium = ("local_listing" if row["source"] == "google_business" else
+                  "email" if row["source"] == "ves-tech-newsletter" else
                   "cpc" if row["source"] in ("google", "bing") else "organic_social")
         if row["medium"] != medium:
             raise ValueError("Analytics source and medium do not match")

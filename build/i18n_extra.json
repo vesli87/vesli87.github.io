@@ -252,7 +252,7 @@
       ],
       [
         "Zwecke der Bearbeitung",
-        "<p>Wir bearbeiten Ihre Angaben ausschliesslich, um</p><ul><li>Ihre Anfrage zu beantworten und ein Angebot zu erstellen;</li><li>einen Auftrag abzuwickeln, wenn aus Ihrer Anfrage ausserhalb der Website ein Kauf wird: Lieferung, Rechnung, Gewährleistung;</li><li>gesetzliche Pflichten zu erfüllen, namentlich die Aufbewahrung der Buchungsbelege;</li><li>Betrieb und Sicherheit der Website zu gewährleisten.</li></ul><p>Wir verkaufen keine Personendaten und geben sie nicht zu Werbezwecken weiter. Ohne Ihr Einverständnis erhalten Sie von uns weder Newsletter noch Werbung.</p>"
+        "<p>Wir bearbeiten Ihre Angaben ausschliesslich, um</p><ul><li>Ihre Anfrage zu beantworten und ein Angebot zu erstellen;</li><li>einen Auftrag abzuwickeln, wenn aus Ihrer Anfrage ausserhalb der Website ein Kauf wird: Lieferung, Rechnung, Gewährleistung;</li><li>gesetzliche Pflichten zu erfüllen, namentlich die Aufbewahrung der Buchungsbelege;</li><li>Betrieb und Sicherheit der Website zu gewährleisten.</li>{runtime_optional_purposes}</ul><p>Wir verkaufen keine Personendaten und geben sie nicht zu Werbezwecken weiter. Ohne Ihr Einverständnis erhalten Sie von uns weder Newsletter noch Werbung.</p>"
       ],
       [
         "Rechtliche Einordnung",
@@ -659,7 +659,17 @@
     "cro_mobile_label": "Kontakt zu diesem Gerät",
     "cro_summary_contact": "Bei Rückfragen direkt anrufen",
     "k_desc": "Geräteauswahl, Angebot oder Service: Beschreiben Sie kurz Ihre Aufgabe. Martin Veselovsky klärt die passende Ausführung und das weitere Vorgehen mit Ihnen.",
-    "k_tel": "Telefon (optional)"
+    "k_tel": "Telefon (optional)",
+    "analytics_text_ga4": "Google Analytics 4 misst nach Ihrer Zustimmung Seitenaufrufe und ausgewählte Aktionen. Dabei werden Analyse-Cookies für höchstens 180 Tage verwendet. Werbefunktionen bleiben deaktiviert; Formularangaben werden nicht übertragen.",
+    "privacy_analytics_ga4": "Google Analytics 4 (Google Ireland Limited) erfasst nach Einwilligung Seitenaufrufe, technische Browserdaten und vordefinierte Aktionen zur Anfrage. Es verwendet eigene Analyse-Cookies mit einer Laufzeit von höchstens 180 Tagen. Seitenadressen werden vorab geprüft und bereinigt. Namen, E-Mail-Adressen, Telefonnummern, Nachrichten und freie Suchbegriffe werden nicht übermittelt. Google Signals, personalisierte Werbung und automatische Formularmessung sind deaktiviert. Technische Anfragen können auch in den USA verarbeitet werden. Ihre Einwilligung ist freiwillig und kann in den Datenschutzeinstellungen widerrufen werden; dabei werden die von uns gesetzten Analyse-Cookies entfernt. Bereits erhobene Daten werden dadurch nicht rückwirkend gelöscht. Nutzer- und Ereignisdaten mit pseudonymen Kennungen werden für zwei Monate aufbewahrt; die Frist wird bei neuer Aktivität nicht verlängert. Aggregierte Standardberichte können länger verfügbar sein.",
+    "newsletter_title": "Technik per E-Mail",
+    "newsletter_intro": "Geräteneuheiten und Praxistipps zum Schweissen, Schneiden und Reinigen. Wählen Sie selbst, ob Sie informiert bleiben möchten.",
+    "newsletter_cta": "Zum Newsletter anmelden",
+    "newsletter_note": "Freiwillig, mit Bestätigung per E-Mail und jederzeitiger Abmeldung. Die Anmeldung erfolgt bei Brevo.",
+    "privacy_newsletter": "Für den freiwilligen Newsletter nutzen wir Brevo (Sendinblue SAS, Frankreich). Das verlinkte Anmeldeformular wird erst beim Öffnen bei Brevo geladen. Ihre E-Mail-Adresse, gewählte Sprache sowie der Nachweis Ihrer Anmeldung und Bestätigung werden dort zur Verwaltung des Abonnements verarbeitet. Erst nach Bestätigung des Links in der E-Mail werden Sie als Abonnent aufgenommen. Jede Ausgabe enthält einen Abmeldelink. Eine Geräteanfrage meldet Sie nicht automatisch zum Newsletter an. E-Mail-Adressen und Bestätigungslinks werden nicht an die Websiteanalytik gesendet.",
+    "privacy_runtime_ga4": "Die Website verwendet keine Werbe-Cookies. Nach Ihrer Zustimmung verwendet Google Analytics 4 pseudonyme Analyse-Cookies. Umfang und Widerruf sind nachfolgend beschrieben. Schriften und Produktbilder werden lokal ausgeliefert; externe Herstellerbilder können als Ersatz geladen werden.",
+    "privacy_analytics_purpose": "nach Ihrer Einwilligung Seitenaufrufe und ausgewählte Interaktionen auszuwerten;",
+    "privacy_newsletter_purpose": "Ihnen nach bestätigter Anmeldung den freiwilligen Newsletter zu senden und Abmeldungen zu verwalten;"
   },
   "fr": {
     "locale": "fr_CH",
@@ -913,7 +923,7 @@
       ],
       [
         "Finalités du traitement",
-        "<p>Nous traitons vos indications exclusivement pour</p><ul><li>répondre à votre demande et établir une offre ;</li><li>exécuter une commande, si votre demande aboutit à un achat conclu en dehors du site : livraison, facture, garantie ;</li><li>remplir des obligations légales, notamment la conservation des pièces comptables ;</li><li>assurer l'exploitation et la sécurité du site.</li></ul><p>Nous ne vendons pas de données personnelles et ne les transmettons pas à des fins publicitaires. Sans votre accord, vous ne recevez de notre part ni bulletin d'information ni publicité.</p>"
+        "<p>Nous traitons vos indications exclusivement pour</p><ul><li>répondre à votre demande et établir une offre ;</li><li>exécuter une commande, si votre demande aboutit à un achat conclu en dehors du site : livraison, facture, garantie ;</li><li>remplir des obligations légales, notamment la conservation des pièces comptables ;</li><li>assurer l'exploitation et la sécurité du site.</li>{runtime_optional_purposes}</ul><p>Nous ne vendons pas de données personnelles et ne les transmettons pas à des fins publicitaires. Sans votre accord, vous ne recevez de notre part ni bulletin d'information ni publicité.</p>"
       ],
       [
         "Base juridique",
@@ -1320,7 +1330,17 @@
     "cro_mobile_label": "Contact pour cet appareil",
     "cro_summary_contact": "Pour toute question, appelez-nous",
     "k_desc": "Choix d’un appareil, offre ou service : décrivez brièvement votre besoin. Martin Veselovsky précise avec vous la configuration et les prochaines étapes.",
-    "k_tel": "Téléphone (facultatif)"
+    "k_tel": "Téléphone (facultatif)",
+    "analytics_text_ga4": "Avec votre consentement, Google Analytics 4 mesure les pages vues et certaines actions. Des cookies de mesure sont utilisés pendant 180 jours au maximum. Les fonctions publicitaires restent désactivées et les données des formulaires ne sont pas transmises.",
+    "privacy_analytics_ga4": "Google Analytics 4 (Google Ireland Limited) mesure, avec votre consentement, les pages vues, des données techniques du navigateur et des actions prédéfinies liées aux demandes. Ses cookies de mesure sont conservés pendant 180 jours au maximum. Les adresses des pages sont vérifiées et nettoyées au préalable. Les noms, adresses e-mail, numéros de téléphone, messages et recherches libres ne sont pas transmis. Google Signals, la publicité personnalisée et la mesure automatique des formulaires sont désactivés. Des requêtes techniques peuvent aussi être traitées aux États-Unis. Le consentement est facultatif et révocable dans les paramètres de confidentialité ; les cookies de mesure que nous avons définis sont alors supprimés. Cela ne supprime pas rétroactivement les données déjà recueillies. Les données utilisateur et d’événement associées à des identifiants pseudonymes sont conservées pendant deux mois, sans prolongation en cas de nouvelle activité. Les rapports standards agrégés peuvent rester disponibles plus longtemps.",
+    "newsletter_title": "La technique par e-mail",
+    "newsletter_intro": "Nouveautés et conseils pratiques pour le soudage, la découpe et le nettoyage. Choisissez de rester informé.",
+    "newsletter_cta": "S’inscrire à la newsletter",
+    "newsletter_note": "Inscription facultative, confirmation par e-mail et désinscription à tout moment. Le formulaire est hébergé par Brevo.",
+    "privacy_newsletter": "Nous utilisons Brevo (Sendinblue SAS, France) pour notre newsletter facultative. Le formulaire lié ne se charge chez Brevo que lorsque vous l’ouvrez. Votre adresse e-mail, la langue choisie et les preuves de votre inscription et de sa confirmation y sont traitées pour gérer l’abonnement. Votre abonnement ne prend effet qu’après confirmation du lien reçu par e-mail. Chaque envoi contient un lien de désinscription. Une demande de matériel ne vous abonne pas automatiquement. Les adresses e-mail et les liens de confirmation ne sont pas transmis aux outils de mesure du site.",
+    "privacy_runtime_ga4": "Le site n’utilise pas de cookies publicitaires. Avec votre consentement, Google Analytics 4 utilise des cookies de mesure pseudonymes. Leur utilisation et le retrait du consentement sont décrits ci-dessous. Les polices et images de produits sont hébergées localement ; des images du fabricant peuvent être chargées en remplacement.",
+    "privacy_analytics_purpose": "analyser les pages vues et certaines interactions avec votre consentement ;",
+    "privacy_newsletter_purpose": "vous envoyer la newsletter facultative après confirmation de votre inscription et gérer les désinscriptions ;"
   },
   "it": {
     "locale": "it_CH",
@@ -1574,7 +1594,7 @@
       ],
       [
         "Scopi del trattamento",
-        "<p>Trattiamo le Sue indicazioni esclusivamente per</p><ul><li>rispondere alla Sua richiesta e allestire un'offerta;</li><li>eseguire un ordine, se dalla Sua richiesta nasce un acquisto concluso al di fuori del sito: fornitura, fattura, garanzia;</li><li>adempiere obblighi legali, in particolare la conservazione dei documenti contabili;</li><li>garantire l'esercizio e la sicurezza del sito.</li></ul><p>Non vendiamo dati personali e non li trasmettiamo a scopi pubblicitari. Senza il Suo consenso non riceverà da noi né newsletter né pubblicità.</p>"
+        "<p>Trattiamo le Sue indicazioni esclusivamente per</p><ul><li>rispondere alla Sua richiesta e allestire un'offerta;</li><li>eseguire un ordine, se dalla Sua richiesta nasce un acquisto concluso al di fuori del sito: fornitura, fattura, garanzia;</li><li>adempiere obblighi legali, in particolare la conservazione dei documenti contabili;</li><li>garantire l'esercizio e la sicurezza del sito.</li>{runtime_optional_purposes}</ul><p>Non vendiamo dati personali e non li trasmettiamo a scopi pubblicitari. Senza il Suo consenso non riceverà da noi né newsletter né pubblicità.</p>"
       ],
       [
         "Base giuridica",
@@ -1981,7 +2001,17 @@
     "cro_mobile_label": "Contatto per questo apparecchio",
     "cro_summary_contact": "Per domande, chiamateci",
     "k_desc": "Scelta dell’apparecchio, offerta o assistenza: descrivete brevemente le vostre esigenze. Martin Veselovsky chiarisce con voi la configurazione e i passi successivi.",
-    "k_tel": "Telefono (facoltativo)"
+    "k_tel": "Telefono (facoltativo)",
+    "analytics_text_ga4": "Con il suo consenso, Google Analytics 4 misura le visualizzazioni delle pagine e alcune azioni. Utilizza cookie di analisi per un massimo di 180 giorni. Le funzioni pubblicitarie restano disattivate e i dati dei moduli non vengono trasmessi.",
+    "privacy_analytics_ga4": "Google Analytics 4 (Google Ireland Limited) rileva, con il suo consenso, visualizzazioni delle pagine, dati tecnici del browser e azioni predefinite relative alle richieste. Utilizza cookie di analisi per un massimo di 180 giorni. Gli indirizzi delle pagine vengono verificati e ripuliti preventivamente. Nomi, indirizzi e-mail, numeri di telefono, messaggi e ricerche libere non vengono trasmessi. Google Signals, pubblicità personalizzata e misurazione automatica dei moduli sono disattivati. Le richieste tecniche possono essere elaborate anche negli Stati Uniti. Il consenso è facoltativo e revocabile nelle impostazioni della privacy; in tal caso vengono rimossi i cookie di analisi da noi impostati. Ciò non elimina retroattivamente i dati già raccolti. I dati degli utenti e degli eventi associati a identificativi pseudonimi vengono conservati per due mesi, senza proroga in caso di nuova attività. I report standard aggregati possono rimanere disponibili più a lungo.",
+    "newsletter_title": "La tecnica via e-mail",
+    "newsletter_intro": "Novità e consigli pratici per saldatura, taglio e pulizia. Scelga se desidera rimanere informato.",
+    "newsletter_cta": "Iscriversi alla newsletter",
+    "newsletter_note": "Iscrizione facoltativa, conferma via e-mail e possibilità di disiscriversi in qualsiasi momento. Il modulo è ospitato da Brevo.",
+    "privacy_newsletter": "Per la newsletter facoltativa utilizziamo Brevo (Sendinblue SAS, Francia). Il modulo collegato viene caricato presso Brevo solo quando viene aperto. L’indirizzo e-mail, la lingua scelta e le prove di iscrizione e conferma vengono trattati per gestire l’abbonamento. L’iscrizione è effettiva solo dopo la conferma del link ricevuto via e-mail. Ogni invio contiene un link per disiscriversi. Una richiesta di apparecchiature non comporta l’iscrizione automatica. Gli indirizzi e-mail e i link di conferma non vengono trasmessi agli strumenti di analisi del sito.",
+    "privacy_runtime_ga4": "Il sito non utilizza cookie pubblicitari. Con il suo consenso, Google Analytics 4 utilizza cookie di analisi pseudonimi. Utilizzo e revoca del consenso sono descritti di seguito. Font e immagini dei prodotti sono ospitati localmente; immagini del produttore possono essere caricate in sostituzione.",
+    "privacy_analytics_purpose": "analizzare le visualizzazioni delle pagine e alcune interazioni con il suo consenso;",
+    "privacy_newsletter_purpose": "inviarle la newsletter facoltativa dopo la conferma dell’iscrizione e gestire le disiscrizioni;"
   },
   "en": {
     "locale": "en_CH",
@@ -2502,7 +2532,7 @@
       ],
       [
         "Purposes of processing",
-        "<p>We process your details solely to:</p><ul><li>answer your enquiry and prepare a quotation;</li><li>fulfil an order if your enquiry leads to a purchase outside the website: delivery, invoicing and warranty;</li><li>meet legal obligations, particularly retention of accounting records;</li><li>maintain the website's operation and security.</li></ul><p>We do not sell personal data or share them for advertising. You will receive neither newsletters nor advertising from us without your consent.</p>"
+        "<p>We process your details solely to:</p><ul><li>answer your enquiry and prepare a quotation;</li><li>fulfil an order if your enquiry leads to a purchase outside the website: delivery, invoicing and warranty;</li><li>meet legal obligations, particularly retention of accounting records;</li><li>maintain the website's operation and security.</li>{runtime_optional_purposes}</ul><p>We do not sell personal data or share them for advertising. You will receive neither newsletters nor advertising from us without your consent.</p>"
       ],
       [
         "Legal framework",
@@ -2642,7 +2672,17 @@
     "cro_mobile_label": "Contact about this equipment",
     "cro_summary_contact": "Call us with any questions",
     "k_desc": "Equipment selection, a quote or service: briefly describe what you need. Martin Veselovsky will discuss the configuration and next steps with you.",
-    "k_tel": "Phone (optional)"
+    "k_tel": "Phone (optional)",
+    "analytics_text_ga4": "With your consent, Google Analytics 4 measures page views and selected actions. It uses analytics cookies for no more than 180 days. Advertising features remain disabled and form details are not sent.",
+    "privacy_analytics_ga4": "With your consent, Google Analytics 4 (Google Ireland Limited) records page views, technical browser data and predefined enquiry actions. Its analytics cookies last no more than 180 days. Page addresses are checked and cleaned beforehand. Names, email addresses, telephone numbers, messages and free-text searches are not sent. Google Signals, personalised advertising and automatic form measurement are disabled. Technical requests may also be processed in the United States. Consent is optional and can be withdrawn in Privacy settings; the analytics cookies we set are then removed. This does not retrospectively delete data already collected. User and event data associated with pseudonymous identifiers are retained for two months, without extending the period for new activity. Aggregated standard reports may remain available longer.",
+    "newsletter_title": "Technical updates by email",
+    "newsletter_intro": "Product news and practical tips for welding, cutting and cleaning. Choose whether you would like to stay informed.",
+    "newsletter_cta": "Sign up for the newsletter",
+    "newsletter_note": "Optional, with email confirmation and an unsubscribe link. The sign-up form is hosted by Brevo.",
+    "privacy_newsletter": "We use Brevo (Sendinblue SAS, France) for our optional newsletter. The linked sign-up form loads at Brevo only when you open it. Your email address, selected language and evidence of sign-up and confirmation are processed there to manage your subscription. You become a subscriber only after confirming the link received by email. Every newsletter includes an unsubscribe link. An equipment enquiry does not automatically subscribe you. Email addresses and confirmation links are not sent to website analytics.",
+    "privacy_runtime_ga4": "The website uses no advertising cookies. With your consent, Google Analytics 4 uses pseudonymous analytics cookies. Their use and withdrawal of consent are described below. Fonts and product images are hosted locally; manufacturer images may load as a fallback.",
+    "privacy_analytics_purpose": "analyse page views and selected interactions with your consent;",
+    "privacy_newsletter_purpose": "send the optional newsletter after confirmed sign-up and manage unsubscribes;"
   },
   "es": {
     "locale": "es_CH",
@@ -3163,7 +3203,7 @@
       ],
       [
         "Finalidades del tratamiento",
-        "<p>Tratamos sus datos exclusivamente para:</p><ul><li>responder a su consulta y preparar una oferta;</li><li>cumplir un pedido si la consulta deriva en una compra fuera del sitio: entrega, facturación y garantía;</li><li>cumplir obligaciones legales, especialmente la conservación de documentos contables;</li><li>mantener el funcionamiento y la seguridad del sitio.</li></ul><p>No vendemos datos personales ni los compartimos para publicidad. No recibirá boletines ni publicidad nuestra sin su consentimiento.</p>"
+        "<p>Tratamos sus datos exclusivamente para:</p><ul><li>responder a su consulta y preparar una oferta;</li><li>cumplir un pedido si la consulta deriva en una compra fuera del sitio: entrega, facturación y garantía;</li><li>cumplir obligaciones legales, especialmente la conservación de documentos contables;</li><li>mantener el funcionamiento y la seguridad del sitio.</li>{runtime_optional_purposes}</ul><p>No vendemos datos personales ni los compartimos para publicidad. No recibirá boletines ni publicidad nuestra sin su consentimiento.</p>"
       ],
       [
         "Marco jurídico",
@@ -3303,6 +3343,16 @@
     "cro_mobile_label": "Contacto sobre este equipo",
     "cro_summary_contact": "Llámenos si tiene alguna pregunta",
     "k_desc": "Selección de equipo, oferta o servicio: describa brevemente lo que necesita. Martin Veselovsky concretará con usted la configuración y los siguientes pasos.",
-    "k_tel": "Teléfono (opcional)"
+    "k_tel": "Teléfono (opcional)",
+    "analytics_text_ga4": "Con su consentimiento, Google Analytics 4 mide las visitas y determinadas acciones. Utiliza cookies de análisis durante un máximo de 180 días. Las funciones publicitarias permanecen desactivadas y no se transmiten datos de los formularios.",
+    "privacy_analytics_ga4": "Con su consentimiento, Google Analytics 4 (Google Ireland Limited) registra visitas, datos técnicos del navegador y acciones predefinidas relacionadas con las consultas. Sus cookies de análisis duran un máximo de 180 días. Las direcciones de las páginas se comprueban y depuran previamente. No se transmiten nombres, direcciones de correo, teléfonos, mensajes ni búsquedas libres. Google Signals, la publicidad personalizada y la medición automática de formularios están desactivados. Las solicitudes técnicas también pueden procesarse en Estados Unidos. El consentimiento es opcional y puede retirarse en Ajustes de privacidad; entonces se eliminan las cookies de análisis que hemos establecido. Esto no borra retroactivamente los datos ya recogidos. Los datos de usuarios y eventos asociados a identificadores seudónimos se conservan durante dos meses, sin ampliar el plazo por nueva actividad. Los informes estándar agregados pueden permanecer disponibles durante más tiempo.",
+    "newsletter_title": "Novedades técnicas por correo",
+    "newsletter_intro": "Novedades y consejos prácticos de soldadura, corte y limpieza. Elija si desea mantenerse informado.",
+    "newsletter_cta": "Suscribirse al boletín",
+    "newsletter_note": "Suscripción opcional, con confirmación por correo y posibilidad de darse de baja en cualquier momento. El formulario está alojado en Brevo.",
+    "privacy_newsletter": "Utilizamos Brevo (Sendinblue SAS, Francia) para nuestro boletín opcional. El formulario enlazado solo se carga en Brevo al abrirlo. Allí se tratan su dirección de correo, idioma elegido y pruebas de suscripción y confirmación para gestionar la suscripción. Solo se convierte en suscriptor tras confirmar el enlace recibido por correo. Cada envío incluye un enlace para darse de baja. Una consulta sobre equipos no le suscribe automáticamente. Las direcciones de correo y los enlaces de confirmación no se transmiten a los análisis del sitio.",
+    "privacy_runtime_ga4": "El sitio no utiliza cookies publicitarias. Con su consentimiento, Google Analytics 4 utiliza cookies de análisis seudónimas. Su uso y la retirada del consentimiento se describen a continuación. Las fuentes e imágenes de productos se alojan localmente; pueden cargarse imágenes del fabricante como alternativa.",
+    "privacy_analytics_purpose": "analizar las visitas y determinadas interacciones con su consentimiento;",
+    "privacy_newsletter_purpose": "enviarle el boletín opcional tras confirmar su suscripción y gestionar las bajas;"
   }
 }

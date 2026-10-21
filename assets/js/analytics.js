@@ -24,16 +24,18 @@
     yahoo: 'organic_search', brave: 'organic_search', linkedin: 'organic_social', facebook: 'organic_social',
     instagram: 'organic_social', tiktok: 'organic_social', x: 'organic_social', youtube: 'organic_social',
     direct_unknown: 'direct_unknown' };
-  var key = 'vt.analytics.consent.v2', attributionKey = 'vt.analytics.attribution.v1';
+  var ga4Id = panel && /^G-[A-Z0-9]{10}$/.test(panel.dataset.ga4Id || '') ? panel.dataset.ga4Id : '';
+  var key = ga4Id ? 'vt.analytics.consent.v3' : 'vt.analytics.consent.v2', attributionKey = 'vt.analytics.attribution.v1';
   var maxAge = 180 * 86400000, attributionAge = 86400000;
   var choice = null, loaded = false, ready = false, failed = false, queue = [];
+  var ga4Ready = false, ga4Failed = false, ga4Queue = [];
   var canonical = null, pageLocation = '', entry = null, touch = null;
   var productId = '', service = '', handlersInstalled = false, pageRecorded = false;
   var discardedClickId = false;
   var language = ['de', 'fr', 'it', 'en', 'es'].indexOf(VT.lang) >= 0 ? VT.lang : 'de';
   var names = ['product_view', 'inquiry_add', 'inquiry_open', 'inquiry_start',
     'inquiry_submit', 'inquiry_success', 'inquiry_error', 'contact_email',
-    'contact_phone', 'contact_whatsapp', 'product_consult', 'download_click'];
+    'contact_phone', 'contact_whatsapp', 'product_consult', 'download_click', 'newsletter_open'];
 
   function owns(object, name) { return Object.prototype.hasOwnProperty.call(object, name); }
   function recent(at, age) {
@@ -46,9 +48,11 @@
     try {
       var saved = JSON.parse(env.localStorage.getItem(key));
       if (validChoice(saved)) return saved;
-      // An old refusal still applies. A Cloudflare-only grant does not.
-      var old = JSON.parse(env.localStorage.getItem('vt.analytics.consent.v1'));
-      if (validChoice(old) && old.value === 'denied') return old;
+      // Adding GA4 requires fresh consent. Existing refusals still apply.
+      for (var i = 2; i >= 1; i--) {
+        var old = JSON.parse(env.localStorage.getItem('vt.analytics.consent.v' + i));
+        if (validChoice(old) && old.value === 'denied') return old;
+      }
     } catch (err) { /* Consent can still be given for this document. */ }
     return null;
   }
@@ -246,12 +250,20 @@
   }
   function track(name, input) {
     try {
-      if (names.indexOf(name) < 0 || !approved() || !contextSafe() || !panel.dataset.ahrefsKey || failed) return false;
+      if (names.indexOf(name) < 0 || !approved() || !contextSafe() || !loaded) return false;
       var props = properties(input);
-      if (ready) dispatch(name, props);
-      else if (loaded && queue.length < 30) queue.push({ name: name, props: props });
-      else return false;
-      return true;
+      var accepted = false;
+      if (panel.dataset.ahrefsKey && !failed) {
+        if (ready) dispatch(name, props);
+        else if (queue.length < 30) queue.push({ name: name, props: props });
+        accepted = true;
+      }
+      if (ga4Id && !ga4Failed) {
+        if (ga4Ready) ga4Event(name, props);
+        else if (ga4Queue.length < 30) ga4Queue.push({ name: name, props: props });
+        accepted = true;
+      }
+      return accepted;
     } catch (err) { return false; }
   }
   window.VTAnalytics = { track: track, attribution: attribution };
@@ -271,6 +283,8 @@
     if (!event.defaultPrevented && url && (event.type !== 'auxclick' || event.button === 1)) {
       if (url.protocol === 'mailto:') track('contact_email');
       else if (url.protocol === 'tel:') track('contact_phone');
+      else if (anchor.hasAttribute && anchor.hasAttribute('data-newsletter') &&
+               /^https:\/\/[a-z0-9-]+\.sibforms\.com\/serve\/[A-Za-z0-9_-]+={0,2}$/.test(url.href)) track('newsletter_open');
       else if (businessWhatsApp(url)) track('contact_whatsapp');
       else if (/^https?:$/.test(url.protocol)) {
         var query = url.origin === location.origin && safeQuery(url);
@@ -301,6 +315,8 @@
     if (loaded || !approved() || !contextSafe()) return;
     ensureTouch();
     loaded = true;
+    if (panel.dataset.ahrefsKey || ga4Id) installGuards();
+    if (ga4Id) enableGa4();
     if (panel.dataset.ahrefsKey) {
       installGuards();
       var script = document.createElement('script');
@@ -343,6 +359,67 @@
       }
     }
   }
+  function ga4Event(name, props) {
+    if (!ga4Ready || !approved() || !contextSafe()) return;
+    // No page title, raw referrer, query input, email, user ID or form values.
+    window.gtag('event', name, Object.assign({}, props, {
+      send_to: ga4Id, page_location: pageLocation,
+      page_referrer: '', page_title: 'VES-TECH Swiss', transport_type: 'beacon'
+    }));
+  }
+  function enableGa4() {
+    window['ga-disable-' + ga4Id] = false;
+    window.dataLayer = [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    // Basic consent mode: even the library is absent before approval.
+    window.gtag('consent', 'default', { analytics_storage: 'denied', ad_storage: 'denied',
+      ad_user_data: 'denied', ad_personalization: 'denied' });
+    window.gtag('consent', 'update', { analytics_storage: 'granted' });
+    window.gtag('js', new Date());
+    var gaConfig = { send_page_view: false,
+      page_location: pageLocation, page_referrer: '', page_title: 'VES-TECH Swiss',
+      allow_google_signals: false, allow_ad_personalization_signals: false,
+      ads_data_redaction: true, url_passthrough: false,
+      cookie_prefix: 'vt', cookie_domain: 'none', cookie_path: '/',
+      cookie_expires: 15552000, cookie_update: false, cookie_flags: 'SameSite=Lax;Secure' };
+    var campaign = entry.campaign || sourceFromReferrer();
+    if (campaign.source !== 'direct_unknown') {
+      gaConfig.campaign_source = campaign.source;
+      gaConfig.campaign_medium = campaign.medium === 'organic_search' ? 'organic' :
+        campaign.medium === 'organic_social' ? 'social' : campaign.medium;
+      if (campaign.campaign) gaConfig.campaign_name = campaign.campaign;
+      if (campaign.content) gaConfig.campaign_content = campaign.content;
+    }
+    window.gtag('config', ga4Id, gaConfig);
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4Id;
+    script.async = true;
+    script.referrerPolicy = 'no-referrer';
+    script.onload = function () {
+      if (!approved() || !contextSafe()) { ga4Queue = []; return; }
+      ga4Ready = true;
+      ga4Event('page_view', properties());
+      if (productInPath(canonical.pathname)) ga4Event('product_view', properties());
+      var pending = ga4Queue; ga4Queue = [];
+      pending.forEach(function (item) { ga4Event(item.name, item.props); });
+    };
+    script.onerror = function () { ga4Failed = true; ga4Queue = []; };
+    document.body.appendChild(script);
+  }
+  function stopGa4() {
+    ga4Queue = []; ga4Ready = false;
+    if (!ga4Id) return;
+    window['ga-disable-' + ga4Id] = true;
+    if (Array.isArray(window.dataLayer)) window.dataLayer.length = 0;
+    try {
+      String(document.cookie || '').split(';').forEach(function (part) {
+        var name = part.trim().split('=')[0];
+        if (/^vt_ga(?:_|$)/.test(name)) {
+          document.cookie = name + '=; Max-Age=0; Path=/; SameSite=Lax; Secure';
+        }
+      });
+    } catch (err) { /* The opt-out flag still prevents collection. */ }
+  }
   function renderControls() {
     settings.setAttribute('aria-expanded', String(!panel.hidden));
     if (close) close.hidden = !reviewing;
@@ -370,14 +447,14 @@
   function revalidate() {
     choice = readChoice();
     if (!approved()) {
-      queue = []; clearAttribution();
+      queue = []; clearAttribution(); stopGa4();
       if (loaded) { location.reload(); return; }
     }
     render();
   }
   if (!panel || !settings || location.hostname !== panel.dataset.host) return;
   choice = readChoice();
-  if (!approved()) clearAttribution();
+  if (!approved()) { clearAttribution(); stopGa4(); }
   panel.addEventListener('click', function (event) {
     var button = event.target.closest('[data-consent]');
     if (!button || ['granted', 'denied'].indexOf(button.dataset.consent) < 0) return;
@@ -387,7 +464,7 @@
     choice = { value: button.dataset.consent, at: Date.now() };
     try { env.localStorage.setItem(key, JSON.stringify(choice)); } catch (err) { /* this document only */ }
     if (!approved()) {
-      queue = []; clearAttribution();
+      queue = []; clearAttribution(); stopGa4();
       if (loaded) { location.reload(); return; }
     }
     render(); settings.focus({ preventScroll: true });

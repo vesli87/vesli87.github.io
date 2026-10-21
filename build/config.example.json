@@ -1,5 +1,7 @@
 {
   "web3forms_key": "",
   "cloudflare_analytics_token": "",
-  "ahrefs_analytics_key": ""
+  "ahrefs_analytics_key": "",
+  "ga4_measurement_id": "",
+  "newsletter_forms": ""
 }

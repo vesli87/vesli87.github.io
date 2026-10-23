@@ -575,7 +575,7 @@ test('private referrers cannot reach the SDK even with a safe canonical URL', ()
 });
 test('capture guards keep dynamic email drafts, search queries and non-HTTP URLs out of automatic events', () => {
   const a = analytics({ ...ahrefsOptions, saved: granted() }); a.load(); a.sent.length = 0;
-  const privateDraft = 'mailto:vestechswiss@gmail.com?body=private-person%40example.invalid';
+  const privateDraft = 'mailto:info@ves-tech.ch?body=private-person%40example.invalid';
   for (const [href, type, button] of [[privateDraft, 'click', 0], [privateDraft, 'auxclick', 1],
     ['/suche/?q=private-person', 'click', 0], ['#private-person', 'click', 0],
     ['/private/person/', 'click', 0], ['https://external.invalid/private/person/', 'click', 0],

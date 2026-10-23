@@ -9,7 +9,7 @@ Datenschutzerklärung der Website.
 
 ## Eine Lücke melden
 
-Schreiben Sie an **vestechswiss@gmail.com** oder rufen Sie **+41 76 710 91 39**
+Schreiben Sie an **info@ves-tech.ch** oder rufen Sie **+41 76 710 91 39**
 an. Dieselben Angaben stehen maschinenlesbar in
 [`/.well-known/security.txt`](https://www.ves-tech.ch/.well-known/security.txt)
 nach RFC 9116.

@@ -53,7 +53,7 @@
     Für die laufende Verifizierung hat der Inhaber Bronschhofen bestätigt.
   - Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen (SG), Schweiz —
     nur im Impressum, in AGB/Datenschutz und auf der Kontaktseite
-  - +41 76 710 91 39 · `vestechswiss@gmail.com` · telefonisch erreichbar
+  - +41 76 710 91 39 · `info@ves-tech.ch` · telefonisch erreichbar
     Mo–Fr 07:30–17:00
   - Nach erneuter Vorgabe des Inhabers am 20.10.2026 gilt auch am Freitag
     07:30–17:00; Montag bis Donnerstag bleibt 07:30–17:00. Die Änderung gilt
@@ -74,15 +74,15 @@
   `vesli87.github.io` leitet per 301 dorthin um. Gesetzt über `SITE` und
   `EMIT_CNAME` in `core.py`; die eigene Domain steht in der Pages-Konfiguration,
   nicht in der Datei `CNAME` (siehe 14a).
-- **E-Mail:** `vestechswiss@gmail.com`. Entscheidung des Inhabers vom
-  05.08.2026. Eine Adresse `info@ves-tech.ch` war vorbereitet und wurde wieder
-  verworfen; sie hätte ein Postfach bei Infomaniak und einen **MX-Eintrag** in
-  der DNS-Zone gebraucht. Ohne MX fällt ein sendender Server auf den A-Record
-  zurück, und der zeigt auf GitHub Pages, das keine Mail annimmt. Wer die
-  Adresse eines Tages doch umstellt, prüft zuerst `dig +short MX ves-tech.ch`
-  und setzt den SPF-Eintrag von `v=spf1 -all` auf den Mailserver um — der
-  jetzige Wert bedeutet „diese Domain versendet keine Mail", was zur
-  Gmail-Adresse passt.
+- **E-Mail:** Seit dem 23.10.2026 auf Wunsch des Inhabers `info@ves-tech.ch`.
+  Das Postfach bei Infomaniak ist eingerichtet. Die öffentliche DNS-Prüfung
+  vom selben Tag bestätigt MX `5 mta-gw.infomaniak.ch.` und SPF
+  `v=spf1 include:spf.infomaniak.ch -all`. Die frühere Gmail-Adresse wird
+  auf den aktiven Website-Seiten nicht mehr als Geschäftskontakt ausgegeben.
+  Die zentrale Adresse gilt in DE/FR/IT/EN/ES für Kontaktlinks, Mailentwürfe,
+  JSON-LD, Rechtstexte, Formularfehlermeldungen, llms-Dateien und security.txt.
+  Der Web3Forms-Zustellungsempfänger wird getrennt im Anbieterkonto verwaltet;
+  `COMPANY.email` allein ändert dieses externe Zustellungsziel nicht.
 
 Die bestaetigten Firmenprofile auf Instagram (`vestechswiss`), LinkedIn
 (`ves-tech-swiss`) und Facebook (`https://www.facebook.com/profile.php?id=61594862482139`)

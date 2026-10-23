@@ -98,7 +98,7 @@ def main():
         co = C.COMPANY
         if "Bildfeld" in txt and "Bildfeldstrasse 24" not in txt:
             bad(path, "Strasse abweichend geschrieben")
-        for wrong in ("Bildfelsstrasse", "info@ves-tech.ch", "17:30"):
+        for wrong in ("Bildfelsstrasse", "vestechswiss@gmail.com", "17:30"):
             if wrong in txt:
                 bad(path, f"veraltete Angabe im Text: {wrong}")
         if "tel:" in h and co["phone_href"] not in h:

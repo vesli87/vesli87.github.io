@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-10-23. Quelle: https://www.ves-tech.ch
+Stand: 2026-10-26. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss bietet Beratung und Verkauf von MAHE-Geräten. Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail info@ves-tech.ch, telefonisch erreichbar Mo-Fr 07:30-17:00. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -1179,6 +1179,7 @@ USB 2in1 ist ein Programmiergerät für Mikrocontroller und MAHE-Schnittstellen 
 - Nennen Sie Geräteausführung, Steuerung und vorhandenen Softwarestand. Die Unterstützung muss für diese konkrete Kombination geklärt werden; ein USB-Anschluss allein reicht dafür nicht aus.
 - Wenn Messwerte geprüft oder dokumentiert werden sollen, vergleichen Sie die Aufgabe mit dem Kalibriergerät MCU 1 und klären Sie den benötigten Prüfauftrag.
 Weiterführend: [MAHE MCU 1](https://www.ves-tech.ch/produkte/zubehoer/mcu1/)
+Weiterführend: [Diagnose & Reparatur](https://www.ves-tech.ch/service/reparatur/)
 Ausstattung: Funktion: Controller-Programmierung; Schnittstelle: USB / MAHE; Software: inklusive.
 
 ### MAHE Elektrodenkabel 10 mm²
@@ -1203,6 +1204,11 @@ Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: H
 URL: https://www.ves-tech.ch/produkte/zubehoer/massekabel-4m/
 Kategorie: Zubehör / Kabel · Typ: Kabel · Art.-Nr.: MASSEKABEL-4M · Preis: auf Anfrage (CHF)
 Massekabel für die Schweissanlagen HyperMIG X, EcoMIG, MMS und Delta.
+Das Massekabel gehört zum vollständigen Schweissstromkreis. Für die Auswahl sind Anschluss, Kabelquerschnitt, Länge und die eingesetzte Stromquelle gemeinsam zu prüfen.
+- Nennen Sie das genaue Gerät und die vorhandene Anschlussausführung. Eine ähnliche Steckerform allein belegt keine passende Verbindung.
+- Beschädigte Kabel oder Klemmen nicht weiter benutzen. Beschreiben Sie den Zustand bei der Serviceanfrage; eine Diagnose lässt sich aus einem Produktfoto allein nicht ableiten.
+Weiterführend: [Kabel](https://www.ves-tech.ch/produkte/zubehoer/kabel/)
+Weiterführend: [Diagnose & Reparatur](https://www.ves-tech.ch/service/reparatur/)
 Ausstattung: Querschnitte: 25 · 35 · 50 · 70 · 90 mm²; Länge: 4 m; Für: HyperMIG X · EcoMIG · MMS · Delta.
 
 ### MAHE Massekabel 25 mm²
@@ -1234,6 +1240,7 @@ MF405W ist ein wassergekühlter MIG/MAG-Brenner mit 4 m Länge und optionaler Up
 Weiterführend: [MAHE MF240W](https://www.ves-tech.ch/produkte/zubehoer/mf240w/)
 Weiterführend: [MAHE HyperMIG X](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/)
 Weiterführend: [MAHE MMS 2000 / 3000](https://www.ves-tech.ch/produkte/schweissgeraete/mms/)
+Weiterführend: [Diagnose & Reparatur](https://www.ves-tech.ch/service/reparatur/)
 Ausstattung: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
 
 ### MAHE MF240W
@@ -1246,6 +1253,7 @@ MF240W ist der wassergekühlte MIG/MAG-Brenner für kleinere Leistungsklassen. D
 Weiterführend: [MAHE MF405W](https://www.ves-tech.ch/produkte/zubehoer/mf405w/)
 Weiterführend: [MAHE HyperMIG X](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-x/)
 Weiterführend: [MAHE MMS 2000 / 3000](https://www.ves-tech.ch/produkte/schweissgeraete/mms/)
+Weiterführend: [Diagnose & Reparatur](https://www.ves-tech.ch/service/reparatur/)
 Ausstattung: Typ: MIG/MAG wassergekühlt; Länge: 4 m; Option: wahlweise mit Up/Down.
 
 ### MAHE MF155
@@ -1292,6 +1300,7 @@ MT200W ist ein wassergekühlter WIG-Brenner in 4 oder 8 m Länge, wahlweise mit 
 - MT170 ist eine gasgekühlte Alternative mit eigener Gerätezuordnung; MT180W ist separat als wassergekühlter Brenner geführt. Prüfen Sie Anschlüsse und Ausstattung für das konkrete Gerät.
 Weiterführend: [MAHE MT170](https://www.ves-tech.ch/produkte/zubehoer/mt170/)
 Weiterführend: [MAHE MT180W](https://www.ves-tech.ch/produkte/zubehoer/mt180w/)
+Weiterführend: [Diagnose & Reparatur](https://www.ves-tech.ch/service/reparatur/)
 Ausstattung: Typ: WIG wassergekühlt; Länge: 4 / 8 m; Option: wahlweise mit Potentiometer.
 
 ### MAHE MT260

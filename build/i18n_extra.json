@@ -409,30 +409,38 @@
         "<p>Die Werkstatt ist bei unserer Partnerfirma Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Bitte bringen Sie Geräte nur nach vorheriger Absprache vorbei. Lieferung und Abholung in der Schweiz und in Liechtenstein nach Absprache.</p>"
       ]
     ],
-    "svc_calib_title": "Schweissgerät kalibrieren nach EN 60974-14 | VES-TECH Swiss",
-    "svc_calib_desc": "Kalibrierung von Schweissstromquellen nach EN 60974-14 mit Protokoll. Für Betriebe mit werkseigener Produktionskontrolle nach EN 1090.",
-    "svc_calib_h1": "Schweissgeräte kalibrieren nach EN 60974-14",
-    "svc_calib_lead": "Bei der Kalibrierung prüfen wir, ob die angezeigten Werte Ihrer Schweissausrüstung mit den gemessenen Werten übereinstimmen. Das Protokoll dient als Nachweis für Ihre Produktionskontrolle.",
+    "svc_calib_title": "Schweissgeräte: Kalibrierung und UVV-Prüfung | VES-TECH Swiss",
+    "svc_calib_desc": "Kalibrierung und elektrische Sicherheitsprüfung von Schweissgeräten in Herisau AR nach Vereinbarung. Prüfumfang und Dokumentation vorab abstimmen.",
+    "svc_calib_h1": "Kalibrierung und UVV-Prüfung von Schweissgeräten",
+    "svc_calib_lead": "Messwerte nachvollziehbar prüfen und elektrische Sicherheit getrennt beurteilen. Wir klären Gerät, benötigten Prüfumfang und Dokumentation vor Ihrem Termin in der Partnerwerkstatt in Herisau.",
     "svc_calib_body": [
+      [
+        "Kalibrierung und Sicherheitsprüfung unterscheiden",
+        "<p>Eine Kalibrierung ersetzt keine elektrische Sicherheitsprüfung. Mit «UVV-Prüfung» ist hier die elektrische Sicherheitsprüfung des Schweissgeräts gemeint, nicht eine Zertifizierung Ihres Betriebs.</p>"
+      ],
       [
         "Was gemessen wird",
         "<p>Bei der Kalibrierung vergleichen wir die Anzeige des Geräts mit einem Referenzmesswert. Geprüft werden Schweissstrom und Schweissspannung, bei Geräten mit Drahtvorschub zusätzlich die Drahtvorschubgeschwindigkeit. Die Messung erfolgt über den Bereich, in dem Sie das Gerät einsetzen.</p><p>Wir dokumentieren die Abweichungen. Liegen Werte ausserhalb des zulässigen Bereichs, wird das Gerät, soweit die Bauart dies erlaubt, eingestellt und anschliessend erneut gemessen.</p>"
       ],
       [
-        "Warum ein Betrieb das braucht",
-        "<p>EN 1090 verlangt für tragende Bauten aus Stahl und Aluminium eine werkseigene Produktionskontrolle. Dazu gehört, dass die Schweissausrüstung geprüft und in Ordnung ist. Ein nachvollziehbares Prüfprotokoll dokumentiert den Zustand der Ausrüstung für das Audit.</p><p>Die zugehörige Norm ist EN 60974-14. Sie beschreibt, wie Lichtbogenschweisseinrichtungen kalibriert, validiert und auf gleichbleibende Werte geprüft werden.</p>"
+        "Vorgaben Ihres Betriebs berücksichtigen",
+        "<p>Welche Werte und Nachweise benötigt werden, richtet sich nach Ihrer Anwendung und den betrieblichen Qualitätsvorgaben. Nennen Sie die Anforderungen Ihrer Schweissanweisung (WPS), Ihrer Produktionskontrolle oder Ihres Auftraggebers bereits bei der Anfrage.</p>"
       ],
       [
-        "Was Sie bekommen",
-        "<p>Ein Kalibrierprotokoll mit den gemessenen Werten, den Sollwerten und dem Datum. Das Protokoll gehört in Ihre Unterlagen zur werkseigenen Produktionskontrolle.</p><p>Wir sind keine nach ISO 17025 akkreditierte Kalibrierstelle. Für die werkseigene Produktionskontrolle wird das in aller Regel nicht verlangt. Klären Sie zusätzliche Anforderungen bitte vor der Terminvereinbarung mit Ihrer Zertifizierungsstelle.</p>"
+        "Dokumentation vorab vereinbaren",
+        "<p>Wir stimmen Messumfang und Protokoll mit Ihnen ab. Wir sind keine nach ISO/IEC 17025 akkreditierte Kalibrierstelle. Falls Sie einen akkreditierten Nachweis benötigen, klären Sie diese Anforderung bitte vor der Beauftragung.</p>"
       ],
       [
-        "Wie oft",
-        "<p>In der Praxis wird jährlich kalibriert. Massgebend ist, was in Ihrer eigenen Verfahrensanweisung steht und was Ihre Zertifizierungsstelle verlangt. Nach einer Reparatur am Leistungsteil ist eine erneute Kalibrierung sinnvoll.</p>"
+        "Wann eine erneute Prüfung sinnvoll ist",
+        "<p>Ein pauschaler Jahresabstand passt nicht zu jedem Einsatz. Massgebend sind die Geräteunterlagen, die Einsatzbedingungen und Ihre betrieblichen Vorgaben. Nach einer Reparatur werden die erforderlichen Prüfungen passend zum Eingriff und Gerät festgelegt.</p>"
       ],
       [
         "Termin",
         "<p>Die Kalibrierung erfolgt nach Vereinbarung in der Partnerwerkstatt in Herisau AR. Mehrere Geräte lassen sich in einem gemeinsamen Termin effizient prüfen. Zur Terminvereinbarung erreichen Sie uns unter <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+      ],
+      [
+        "Normen für unterschiedliche Prüfziele",
+        "<p>IEC 60974-14 behandelt Kalibrierung und Validierung. IEC 60974-4 behandelt die elektrische Sicherheitsprüfung. Die anwendbare Ausgabe und den konkreten Umfang klären wir vor dem Auftrag.</p><p><a href=\"https://webstore.iec.ch/en/publication/33948\">IEC 60974-14</a> · <a href=\"https://webstore.iec.ch/en/publication/82317\">IEC 60974-4</a></p>"
       ]
     ],
     "svc_auto_title": "MAHE-Plasmaautomation und CNC-Schneidtische | VES-TECH Swiss",
@@ -677,7 +685,34 @@
     "newsletter_confirmed_cta": "Zur Geräteübersicht",
     "newsletter_unsubscribe": "Newsletter abbestellen",
     "form_email_draft": "E-Mail-Entwurf vorbereiten",
-    "form_unconfirmed": "Die Übermittlung konnte nicht bestätigt werden. Ihre Angaben bleiben erhalten. Sie können uns direkt anrufen oder den E-Mail-Entwurf nutzen."
+    "form_unconfirmed": "Die Übermittlung konnte nicht bestätigt werden. Ihre Angaben bleiben erhalten. Sie können uns direkt anrufen oder den E-Mail-Entwurf nutzen.",
+    "service_jump": "Serviceanfrage vorbereiten",
+    "service_product_title": "Service für Ihr vorhandenes Gerät",
+    "service_product_note": "Sie nutzen bereits ein Gerät? Beschreiben Sie Modell und Anliegen. Reparaturumfang und Termin klären wir vorab.",
+    "service_prepare_title": "Diese Angaben helfen bei Ihrer Anfrage",
+    "service_prepare_note": "Die Angaben sind eine Vorbereitungshilfe. Was noch fehlt, klären wir persönlich. Geräteannahme in der Partnerwerkstatt in Herisau nur nach Vereinbarung.",
+    "service_prepare_items": {
+      "overview": [
+        "Gerät oder geplante Anwendung und die gewünschte Dienstleistung nennen.",
+        "Bei Störungen: Fehlerbild und Zubehör; bei Prüfungen: Geräteanzahl und gewünschte Dokumentation angeben.",
+        "Transport und Geräteannahme vor der Anreise mit uns vereinbaren."
+      ],
+      "repair": [
+        "Hersteller, Modell und Seriennummer vom Typenschild nennen.",
+        "Fehlercode und beobachtetes Verhalten beschreiben: wann, bei welchem Verfahren und mit welchem angeschlossenen Zubehör?",
+        "Vorhandene Unterlagen und frühere Reparaturen erwähnen. Ein beschädigtes Gerät nicht weiter benutzen; keine eigenen Eingriffe am geöffneten Gerät vornehmen."
+      ],
+      "calib": [
+        "Gerätemodelle und Anzahl der Geräte nennen; vorhandene Prüfprotokolle bereithalten.",
+        "Angeben, ob eine Kalibrierung, eine elektrische Sicherheitsprüfung (UVV-Prüfung) oder beides benötigt wird.",
+        "Benötigte Messbereiche, betriebliche Vorgaben und Dokumentation vor dem Termin abstimmen."
+      ],
+      "auto": [
+        "Werkstoff, Materialdicke und grösstes Blechformat angeben.",
+        "Verfügbaren Netzanschluss, Druckluft und die Platzverhältnisse beschreiben.",
+        "Eine vorhandene Zeichnung und den gewünschten Arbeitsablauf bei der persönlichen Abklärung besprechen."
+      ]
+    }
   },
   "fr": {
     "locale": "fr_CH",
@@ -1088,30 +1123,38 @@
         "<p>L’atelier se trouve chez notre entreprise partenaire Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Uniquement après entente préalable. Livraison et enlèvement en Suisse et au Liechtenstein selon accord.</p>"
       ]
     ],
-    "svc_calib_title": "Étalonnage de postes à souder selon EN 60974-14 | VES-TECH Swiss",
-    "svc_calib_desc": "Étalonnage de sources de courant de soudage selon EN 60974-14 avec procès-verbal, pour le contrôle de production en usine selon EN 1090.",
-    "svc_calib_h1": "Étalonner un poste à souder selon EN 60974-14",
-    "svc_calib_lead": "Les entreprises qui fabriquent selon EN 1090 doivent prouver que les valeurs délivrées par leur équipement de soudage correspondent aux valeurs affichées. C’est précisément le rôle de l’étalonnage.",
+    "svc_calib_title": "Étalonnage et sécurité des postes à souder | VES-TECH Swiss",
+    "svc_calib_desc": "Étalonnage et contrôle de sécurité électrique des postes à souder à Herisau AR sur rendez-vous. Étendue des contrôles et documentation à convenir.",
+    "svc_calib_h1": "Étalonnage et sécurité électrique des postes à souder",
+    "svc_calib_lead": "Vérifier les valeurs mesurées et évaluer séparément la sécurité électrique. Nous clarifions l’appareil, les contrôles et les documents nécessaires avant votre rendez-vous dans l’atelier partenaire à Herisau.",
     "svc_calib_body": [
+      [
+        "Distinguer étalonnage et sécurité électrique",
+        "<p>Un étalonnage ne remplace pas un contrôle de sécurité électrique. Le terme allemand « UVV-Prüfung » désigne ici le contrôle de sécurité électrique du poste à souder, sans certifier votre entreprise.</p>"
+      ],
       [
         "Ce qui est mesuré",
         "<p>L’étalonnage consiste à comparer les valeurs affichées par l’appareil aux valeurs mesurées. Le contrôle porte sur les grandeurs utilisées pour souder : le courant et la tension de soudage, ainsi que la vitesse de dévidage pour les postes à fil, sur la plage utilisée en production.</p><p>Les écarts sont consignés. Si l’appareil se situe hors de la plage admissible, il est réglé dans la mesure où sa conception le permet, puis contrôlé à nouveau.</p>"
       ],
       [
-        "Pourquoi une entreprise en a besoin",
-        "<p>EN 1090 exige un contrôle de production en usine pour les structures porteuses en acier et en aluminium. Ce contrôle comprend la vérification du bon fonctionnement de l’équipement de soudage. Lors d’un audit, un procès-verbal permet de justifier ces vérifications.</p><p>La norme correspondante est EN 60974-14. Elle décrit comment les installations de soudage à l’arc sont étalonnées, validées et contrôlées pour vérifier la constance de leurs valeurs.</p>"
+        "Tenir compte des exigences de votre entreprise",
+        "<p>Les valeurs à vérifier et les justificatifs nécessaires dépendent de votre application et de vos exigences qualité. Précisez les besoins de votre descriptif de mode opératoire de soudage (DMOS/WPS), du contrôle de production ou de votre donneur d’ordre dès la demande.</p>"
       ],
       [
-        "Ce que vous recevez",
-        "<p>Vous recevez un procès-verbal d’étalonnage indiquant les valeurs mesurées, les valeurs de consigne et la date, à conserver dans votre dossier de contrôle de production en usine.</p><p>Nous ne sommes pas un service d’étalonnage accrédité ISO 17025. Cette accréditation n’est généralement pas exigée pour le contrôle de production en usine. Votre organisme de certification peut toutefois avoir des exigences supplémentaires. En cas de doute, renseignez-vous auprès de lui avant de prendre rendez-vous.</p>"
+        "Convenir des documents au préalable",
+        "<p>Nous convenons avec vous des mesures et du rapport. Nous ne sommes pas un laboratoire d’étalonnage accrédité ISO/IEC 17025. Si vous avez besoin d’un document accrédité, clarifiez cette exigence avant de passer commande.</p>"
       ],
       [
-        "À quelle fréquence",
-        "<p>En pratique, l’étalonnage est effectué chaque année. La fréquence à respecter dépend de vos propres procédures et des exigences de votre organisme de certification. Après une réparation de l’étage de puissance, un nouvel étalonnage est recommandé.</p>"
+        "Quand prévoir un nouveau contrôle",
+        "<p>Un intervalle annuel systématique ne convient pas à toutes les utilisations. La documentation de l’appareil, les conditions d’emploi et vos exigences internes sont déterminantes. Après une réparation, les contrôles nécessaires sont définis selon l’intervention et l’appareil.</p>"
       ],
       [
         "Rendez-vous",
         "<p>L’étalonnage a lieu à l’atelier de Herisau AR, sur rendez-vous. Regrouper plusieurs appareils lors d’un même rendez-vous permet de les contrôler successivement avec une seule mise en place du matériel de mesure. Appelez-nous au <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+      ],
+      [
+        "Des normes pour des objectifs distincts",
+        "<p>IEC 60974-14 concerne l’étalonnage et la validation. IEC 60974-4 concerne la sécurité électrique. L’édition applicable et l’étendue précise sont clarifiées avant la commande.</p><p><a href=\"https://webstore.iec.ch/en/publication/33948\">IEC 60974-14</a> · <a href=\"https://webstore.iec.ch/en/publication/82317\">IEC 60974-4</a></p>"
       ]
     ],
     "svc_auto_title": "Automatisation plasma et tables CNC MAHE | VES-TECH Swiss",
@@ -1356,7 +1399,34 @@
     "newsletter_confirmed_cta": "Voir les équipements",
     "newsletter_unsubscribe": "Se désinscrire",
     "form_email_draft": "Préparer une demande par e-mail",
-    "form_unconfirmed": "La transmission n’a pas pu être confirmée. Vos informations sont conservées sur cette page. Vous pouvez nous appeler ou utiliser le brouillon d’e-mail."
+    "form_unconfirmed": "La transmission n’a pas pu être confirmée. Vos informations sont conservées sur cette page. Vous pouvez nous appeler ou utiliser le brouillon d’e-mail.",
+    "service_jump": "Préparer une demande de service",
+    "service_product_title": "Service pour votre équipement existant",
+    "service_product_note": "Vous utilisez déjà un appareil ? Précisez le modèle et votre besoin. Nous convenons des travaux et du rendez-vous au préalable.",
+    "service_prepare_title": "Les informations utiles à votre demande",
+    "service_prepare_note": "Cette liste aide à préparer votre demande. Nous clarifions personnellement les éléments manquants. Réception des appareils dans l’atelier partenaire à Herisau uniquement sur rendez-vous.",
+    "service_prepare_items": {
+      "overview": [
+        "Précisez l’appareil ou l’application envisagée et la prestation souhaitée.",
+        "Pour une panne, décrivez le défaut et les accessoires ; pour un contrôle, indiquez le nombre d’appareils et les documents nécessaires.",
+        "Convenez du transport et de la réception des appareils avant de vous déplacer."
+      ],
+      "repair": [
+        "Indiquez le fabricant, le modèle et le numéro de série figurant sur la plaque signalétique.",
+        "Décrivez le code d’erreur et le comportement observé : à quel moment, avec quel procédé et quels accessoires raccordés ?",
+        "Mentionnez les documents disponibles et les réparations précédentes. N’utilisez plus un appareil endommagé et n’intervenez pas vous-même sur un appareil ouvert."
+      ],
+      "calib": [
+        "Indiquez les modèles et le nombre d’appareils ; préparez les rapports de contrôle existants.",
+        "Précisez si vous souhaitez un étalonnage, un contrôle de sécurité électrique ou les deux.",
+        "Convenez des plages de mesure, des exigences internes et des documents nécessaires avant le rendez-vous."
+      ],
+      "auto": [
+        "Indiquez le matériau, son épaisseur et le plus grand format de tôle.",
+        "Décrivez l’alimentation électrique, l’air comprimé disponible et l’espace prévu.",
+        "Discutez d’un dessin existant et du déroulement souhaité lors de l’entretien technique."
+      ]
+    }
   },
   "it": {
     "locale": "it_CH",
@@ -1767,30 +1837,38 @@
         "<p>L’officina si trova presso la nostra azienda partner Schweisstechnik Scherrer AG, St. Gallerstrasse 49, 9100 Herisau AR. Solo previo accordo. Consegna e ritiro in Svizzera e nel Liechtenstein previo accordo.</p>"
       ]
     ],
-    "svc_calib_title": "Calibrazione di saldatrici secondo EN 60974-14 | VES-TECH Swiss",
-    "svc_calib_desc": "Calibrazione di generatori di saldatura secondo EN 60974-14 con verbale. Per aziende con controllo di produzione in fabbrica secondo EN 1090.",
-    "svc_calib_h1": "Calibrare una saldatrice secondo EN 60974-14",
-    "svc_calib_lead": "Chi produce secondo EN 1090 deve dimostrare che i valori erogati dall’attrezzatura di saldatura corrispondano a quelli indicati sul display. La calibrazione serve a verificarlo.",
+    "svc_calib_title": "Calibrazione e sicurezza delle saldatrici | VES-TECH Swiss",
+    "svc_calib_desc": "Calibrazione e verifica di sicurezza elettrica delle saldatrici a Herisau AR su appuntamento. Controlli e documentazione da concordare prima dell’intervento.",
+    "svc_calib_h1": "Calibrazione e sicurezza elettrica delle saldatrici",
+    "svc_calib_lead": "Verificare i valori misurati e valutare separatamente la sicurezza elettrica. Chiariamo macchina, controlli e documentazione prima dell’appuntamento presso l’officina partner a Herisau.",
     "svc_calib_body": [
+      [
+        "Distinguere calibrazione e sicurezza elettrica",
+        "<p>Una calibrazione non sostituisce una verifica di sicurezza elettrica. Il termine tedesco «UVV-Prüfung» indica qui la verifica di sicurezza elettrica della saldatrice, non una certificazione della vostra azienda.</p>"
+      ],
       [
         "Cosa viene misurato",
         "<p>Calibrare significa confrontare l’indicazione dell’apparecchio con un valore misurato. Si controllano le grandezze utilizzate durante la saldatura: corrente e tensione e, negli apparecchi a filo, anche la velocità di avanzamento del filo, nell’intervallo effettivamente utilizzato.</p><p>Gli scostamenti vengono registrati. Se i valori non rientrano nei limiti previsti, l’apparecchio viene regolato nei limiti consentiti dalla sua costruzione e poi sottoposto a una nuova misurazione.</p>"
       ],
       [
-        "Perché un’azienda ne ha bisogno",
-        "<p>La EN 1090 richiede, per strutture portanti in acciaio e alluminio, un controllo di produzione in fabbrica. Ne fa parte un’attrezzatura di saldatura verificata e in ordine. In un audit è una delle domande che arrivano puntualmente. Un verbale risponde più in fretta di qualsiasi spiegazione.</p><p>La norma di riferimento è la EN 60974-14. Descrive come gli impianti di saldatura ad arco vengono calibrati, validati e verificati quanto alla costanza dei valori.</p>"
+        "Considerare i requisiti della vostra azienda",
+        "<p>Valori da verificare e documenti necessari dipendono dall’applicazione e dai requisiti di qualità aziendali. Indicate già nella richiesta le esigenze della specifica di saldatura (WPS), del controllo di produzione o del committente.</p>"
       ],
       [
-        "Cosa ricevete",
-        "<p>Un verbale di calibrazione con i valori misurati, i valori nominali e la data, da inserire nella documentazione del vostro controllo di produzione in fabbrica.</p><p>Non siamo un centro di calibrazione accreditato ISO 17025. Per il controllo di produzione in fabbrica, di norma tale accreditamento non è richiesto. Il vostro organismo di certificazione può indicare eventuali requisiti ulteriori. In caso di dubbi, chiariteli prima di fissare l’appuntamento.</p>"
+        "Concordare prima la documentazione",
+        "<p>Concordiamo con voi le misurazioni e il rapporto. Non siamo un laboratorio di calibrazione accreditato ISO/IEC 17025. Se occorre un documento accreditato, chiarite questo requisito prima dell’ordine.</p>"
       ],
       [
-        "Ogni quanto",
-        "<p>In pratica si calibra ogni anno. Fa fede quanto scritto nella vostra istruzione di lavoro e quanto richiede il vostro organismo di certificazione. Dopo una riparazione allo stadio di potenza una nuova calibrazione è comunque sensata.</p>"
+        "Quando prevedere una nuova verifica",
+        "<p>Un intervallo annuale fisso non è adatto a ogni utilizzo. Contano la documentazione della macchina, le condizioni d’impiego e i requisiti aziendali. Dopo una riparazione, le verifiche necessarie sono definite in base all’intervento e alla macchina.</p>"
       ],
       [
         "Appuntamento",
         "<p>La calibrazione si esegue nell’officina di Herisau AR, su appuntamento. Raggruppare più apparecchi nello stesso giorno permette di predisporre la strumentazione una sola volta e procedere con le misurazioni. Telefonate: <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+      ],
+      [
+        "Norme per obiettivi diversi",
+        "<p>IEC 60974-14 riguarda calibrazione e validazione. IEC 60974-4 riguarda la sicurezza elettrica. Edizione applicabile e campo preciso vengono chiariti prima dell’ordine.</p><p><a href=\"https://webstore.iec.ch/en/publication/33948\">IEC 60974-14</a> · <a href=\"https://webstore.iec.ch/en/publication/82317\">IEC 60974-4</a></p>"
       ]
     ],
     "svc_auto_title": "Automazione plasma e tavoli CNC MAHE | VES-TECH Swiss",
@@ -2035,7 +2113,34 @@
     "newsletter_confirmed_cta": "Vedere le apparecchiature",
     "newsletter_unsubscribe": "Disiscriversi",
     "form_email_draft": "Prepara una richiesta via e-mail",
-    "form_unconfirmed": "Non è stato possibile confermare l’invio. I vostri dati rimangono su questa pagina. Potete chiamarci o utilizzare la bozza e-mail."
+    "form_unconfirmed": "Non è stato possibile confermare l’invio. I vostri dati rimangono su questa pagina. Potete chiamarci o utilizzare la bozza e-mail.",
+    "service_jump": "Preparare una richiesta di assistenza",
+    "service_product_title": "Assistenza per la vostra macchina",
+    "service_product_note": "Utilizzate già una macchina? Indicate modello ed esigenza. Concordiamo prima l’intervento e l’appuntamento.",
+    "service_prepare_title": "Informazioni utili per la vostra richiesta",
+    "service_prepare_note": "L’elenco aiuta a preparare la richiesta. Chiariamo personalmente i dati mancanti. Consegna delle macchine presso l’officina partner a Herisau solo su appuntamento.",
+    "service_prepare_items": {
+      "overview": [
+        "Indicate la macchina o l’applicazione prevista e il servizio richiesto.",
+        "Per un guasto, descrivete difetto e accessori; per una verifica, indicate numero delle macchine e documentazione necessaria.",
+        "Concordate trasporto e consegna delle macchine prima di recarvi in officina."
+      ],
+      "repair": [
+        "Indicate produttore, modello e numero di serie riportati sulla targhetta.",
+        "Descrivete il codice di errore e il comportamento osservato: quando si verifica, con quale procedimento e con quali accessori collegati?",
+        "Segnalate documentazione disponibile e riparazioni precedenti. Non utilizzate una macchina danneggiata e non intervenite autonomamente sulla macchina aperta."
+      ],
+      "calib": [
+        "Indicate modelli e numero delle macchine; tenete a disposizione i precedenti rapporti di prova.",
+        "Specificate se occorre una calibrazione, una verifica di sicurezza elettrica o entrambe.",
+        "Concordate campi di misura, requisiti aziendali e documentazione prima dell’appuntamento."
+      ],
+      "auto": [
+        "Indicate materiale, spessore e formato massimo della lamiera.",
+        "Descrivete alimentazione elettrica, aria compressa disponibile e spazio previsto.",
+        "Discutete un disegno disponibile e il ciclo di lavoro desiderato durante il colloquio tecnico."
+      ]
+    }
   },
   "en": {
     "locale": "en_CH",
@@ -2155,10 +2260,10 @@
     "svc_repair_desc": "Welding equipment and plasma cutter repairs in Herisau AR. Electronic diagnostics and assessment of suitable spare parts with the supplier.",
     "svc_repair_h1": "Welding equipment repairs",
     "svc_repair_lead": "We accept faulty equipment at the partner workshop in Herisau AR by prior arrangement. Before repairs begin, we explain the findings and agree the next steps with you.",
-    "svc_calib_title": "EN 60974-14 Welding Equipment Calibration | VES-TECH Swiss",
-    "svc_calib_desc": "Welding power source calibration to EN 60974-14 with a report. For businesses operating factory production control under EN 1090.",
-    "svc_calib_h1": "Welding equipment calibration to EN 60974-14",
-    "svc_calib_lead": "During calibration, we check whether the values displayed by your welding equipment agree with the measured values. The report provides evidence for your production control records.",
+    "svc_calib_title": "Welding equipment calibration and safety | VES-TECH Swiss",
+    "svc_calib_desc": "Welding equipment calibration and electrical safety inspection in Herisau AR by appointment. Agree the inspection scope and documentation in advance.",
+    "svc_calib_h1": "Welding equipment calibration and electrical safety",
+    "svc_calib_lead": "Check measured values and assess electrical safety separately. We clarify the equipment, inspection scope and documentation before your appointment at the partner workshop in Herisau.",
     "svc_auto_title": "MAHE plasma automation and CNC cutting tables | VES-TECH",
     "svc_auto_desc": "MAHE automation: Theta power sources for automated systems and MPT CNC plasma cutting tables with MyPlasm CNC. Setup, commissioning and instruction.",
     "svc_auto_h1": "Plasma cutting automation and CNC cutting",
@@ -2331,24 +2436,32 @@
     ],
     "svc_calib_body": [
       [
+        "Calibration and electrical safety are different checks",
+        "<p>Calibration does not replace an electrical safety inspection. The German term “UVV-Prüfung” refers here to the welding equipment’s electrical safety inspection, not certification of your business.</p>"
+      ],
+      [
         "What we measure",
         "<p>During calibration, we compare the equipment display with a reference measurement. We check welding current and voltage and also wire feed speed on equipment with a wire feeder. Measurements cover the range in which you use the equipment.</p><p>We document the deviations. Where values fall outside the permitted range, the equipment is adjusted if its design allows, then measured again.</p>"
       ],
       [
-        "Why a business needs this",
-        "<p>EN 1090 requires factory production control for structural steel and aluminium fabrication. This includes ensuring that welding equipment has been checked and is in proper working order. A traceable test report documents the equipment condition for an audit.</p><p>The relevant standard is EN 60974-14. It describes calibration, validation and consistency testing of arc welding equipment.</p>"
+        "Account for your production requirements",
+        "<p>The values and evidence needed depend on your application and internal quality requirements. State requirements from your welding procedure specification (WPS), production control or customer when enquiring.</p>"
       ],
       [
-        "What you receive",
-        "<p>A calibration report with the measured values, reference values and date. Keep the report with your factory production control records.</p><p>We are not an ISO 17025-accredited calibration laboratory. This is generally not required for factory production control. Please clarify any additional requirements with your certification body before making an appointment.</p>"
+        "Agree documentation in advance",
+        "<p>We agree the measurements and report with you. We are not an ISO/IEC 17025 accredited calibration laboratory. If you require accredited evidence, clarify this before placing an order.</p>"
       ],
       [
-        "How often",
-        "<p>Annual calibration is common in practice. Your own procedure and your certification body's requirements determine the interval. Recalibration is advisable after repairs to the power electronics.</p>"
+        "When to arrange another inspection",
+        "<p>A fixed annual interval is not suitable for every application. Equipment documentation, operating conditions and internal requirements determine the schedule. After a repair, the necessary checks are defined for the work performed and the equipment.</p>"
       ],
       [
         "Appointments",
         "<p>Calibration takes place by appointment at the partner workshop in Herisau AR. Several machines can be checked efficiently in one session. To arrange an appointment, call <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+      ],
+      [
+        "Standards address different inspection objectives",
+        "<p>IEC 60974-14 covers calibration and validation. IEC 60974-4 covers electrical safety inspection. The applicable edition and precise scope are clarified before the order.</p><p><a href=\"https://webstore.iec.ch/en/publication/33948\">IEC 60974-14</a> · <a href=\"https://webstore.iec.ch/en/publication/82317\">IEC 60974-4</a></p>"
       ]
     ],
     "svc_auto_body": [
@@ -2714,7 +2827,34 @@
     "newsletter_confirmed_cta": "Browse equipment",
     "newsletter_unsubscribe": "Unsubscribe",
     "form_email_draft": "Prepare an email enquiry",
-    "form_unconfirmed": "Submission could not be confirmed. Your details remain on this page. You can call us directly or use the email draft."
+    "form_unconfirmed": "Submission could not be confirmed. Your details remain on this page. You can call us directly or use the email draft.",
+    "service_jump": "Prepare a service enquiry",
+    "service_product_title": "Service for equipment you already use",
+    "service_product_note": "Already using a machine? Tell us its model and what you need. We agree the work and appointment in advance.",
+    "service_prepare_title": "Useful details for your enquiry",
+    "service_prepare_note": "This checklist helps you prepare. We clarify missing details personally. Equipment reception at the partner workshop in Herisau is by appointment only.",
+    "service_prepare_items": {
+      "overview": [
+        "State the equipment or intended application and the service required.",
+        "For faults, describe the symptoms and accessories; for inspections, specify equipment quantities and documentation.",
+        "Agree transport and equipment reception with us before travelling."
+      ],
+      "repair": [
+        "State the manufacturer, model and serial number shown on the rating plate.",
+        "Describe the error code and observed behaviour: when it occurs, the process used and the accessories connected.",
+        "Mention available documentation and previous repairs. Stop using damaged equipment and do not attempt work inside an opened machine yourself."
+      ],
+      "calib": [
+        "State equipment models and quantities; have previous inspection reports ready.",
+        "Specify whether you need calibration, an electrical safety inspection or both.",
+        "Agree measurement ranges, internal requirements and documentation before the appointment."
+      ],
+      "auto": [
+        "Specify material, thickness and maximum sheet size.",
+        "Describe the available electrical supply, compressed air and installation space.",
+        "Discuss an existing drawing and the intended workflow during the technical consultation."
+      ]
+    }
   },
   "es": {
     "locale": "es_CH",
@@ -2834,10 +2974,10 @@
     "svc_repair_desc": "Reparación de equipos de soldadura y corte por plasma en Herisau AR. Diagnóstico electrónico y evaluación de recambios adecuados con el proveedor.",
     "svc_repair_h1": "Reparación de equipos de soldadura",
     "svc_repair_lead": "Recibimos equipos averiados en el taller asociado de Herisau AR con cita previa. Antes de reparar, explicamos los resultados y acordamos con usted los siguientes pasos.",
-    "svc_calib_title": "Calibración de equipos de soldadura EN 60974-14 | VES-TECH Swiss",
-    "svc_calib_desc": "Calibración de fuentes de corriente de soldadura según EN 60974-14 con informe. Para empresas con control de producción en fábrica según EN 1090.",
-    "svc_calib_h1": "Calibración de equipos de soldadura según EN 60974-14",
-    "svc_calib_lead": "Durante la calibración comprobamos si los valores indicados por su equipo de soldadura coinciden con los medidos. El informe aporta documentación para su control de producción.",
+    "svc_calib_title": "Calibración y seguridad de soldadoras | VES-TECH Swiss",
+    "svc_calib_desc": "Calibración e inspección de seguridad eléctrica de soldadoras en Herisau AR con cita previa. Alcance de los controles y documentación a convenir.",
+    "svc_calib_h1": "Calibración y seguridad eléctrica de soldadoras",
+    "svc_calib_lead": "Comprobar los valores medidos y evaluar por separado la seguridad eléctrica. Aclaramos equipo, alcance y documentación antes de su cita en el taller asociado de Herisau.",
     "svc_auto_title": "Automatización del plasma y mesas CNC MAHE | VES-TECH",
     "svc_auto_desc": "Automatización MAHE: fuentes Theta para sistemas automatizados y mesas de corte por plasma CNC MPT con MyPlasm CNC. Montaje, puesta en servicio e instrucciones.",
     "svc_auto_h1": "Automatización del corte por plasma y corte CNC",
@@ -3010,24 +3150,32 @@
     ],
     "svc_calib_body": [
       [
+        "Distinguir calibración y seguridad eléctrica",
+        "<p>Una calibración no sustituye una inspección de seguridad eléctrica. El término alemán «UVV-Prüfung» designa aquí la inspección de seguridad eléctrica de la soldadora, no la certificación de su empresa.</p>"
+      ],
+      [
         "Qué medimos",
         "<p>Durante la calibración comparamos la indicación del equipo con una medición de referencia. Comprobamos la corriente y la tensión de soldadura, así como la velocidad de alimentación del hilo en los equipos con alimentador. Las mediciones abarcan el rango en el que utiliza el equipo.</p><p>Documentamos las desviaciones. Si los valores quedan fuera del rango permitido, ajustamos el equipo cuando su diseño lo permite y volvemos a medirlo.</p>"
       ],
       [
-        "Por qué lo necesita una empresa",
-        "<p>EN 1090 exige un control de producción en fábrica para la fabricación de estructuras de acero y aluminio. Esto incluye disponer de equipos de soldadura comprobados y en buen estado de funcionamiento. Un informe de ensayo trazable documenta el estado del equipo para una auditoría.</p><p>La norma de referencia es EN 60974-14. Describe la calibración, la validación y las comprobaciones de constancia de los equipos de soldadura por arco.</p>"
+        "Considerar los requisitos de su empresa",
+        "<p>Los valores y justificantes necesarios dependen de la aplicación y de los requisitos de calidad internos. Indique los requisitos de su especificación de procedimiento de soldeo (WPS), control de producción o cliente al realizar la consulta.</p>"
       ],
       [
-        "Qué recibe",
-        "<p>Un informe de calibración con los valores medidos, los valores de referencia y la fecha. Conserve el informe con la documentación de su control de producción en fábrica.</p><p>No somos un laboratorio de calibración acreditado según ISO 17025. Generalmente esto no se exige para el control de producción en fábrica. Antes de concertar una cita, aclare con su organismo de certificación si existen requisitos adicionales.</p>"
+        "Acordar la documentación previamente",
+        "<p>Acordamos con usted las mediciones y el informe. No somos un laboratorio de calibración acreditado según ISO/IEC 17025. Si necesita un documento acreditado, aclare este requisito antes de realizar el pedido.</p>"
       ],
       [
-        "Con qué frecuencia",
-        "<p>En la práctica es habitual calibrar anualmente. Su propio procedimiento y los requisitos de su organismo de certificación determinan el intervalo. Es aconsejable volver a calibrar después de reparar la electrónica de potencia.</p>"
+        "Cuándo prever otra inspección",
+        "<p>Un intervalo anual fijo no resulta adecuado para todas las aplicaciones. La documentación del equipo, las condiciones de uso y los requisitos internos determinan los plazos. Tras una reparación, los controles necesarios se definen según la intervención y el equipo.</p>"
       ],
       [
         "Citas",
         "<p>La calibración se realiza con cita previa en el taller asociado de Herisau AR. Varios equipos pueden comprobarse de forma eficiente en una misma sesión. Para concertar una cita, llame al <a href=\"tel:+41767109139\">+41 76 710 91 39</a>.</p>"
+      ],
+      [
+        "Normas para objetivos diferentes",
+        "<p>IEC 60974-14 trata la calibración y validación. IEC 60974-4 trata la inspección de seguridad eléctrica. La edición aplicable y el alcance concreto se aclaran antes del pedido.</p><p><a href=\"https://webstore.iec.ch/en/publication/33948\">IEC 60974-14</a> · <a href=\"https://webstore.iec.ch/en/publication/82317\">IEC 60974-4</a></p>"
       ]
     ],
     "svc_auto_body": [
@@ -3393,6 +3541,33 @@
     "newsletter_confirmed_cta": "Ver los equipos",
     "newsletter_unsubscribe": "Darse de baja",
     "form_email_draft": "Preparar consulta por correo",
-    "form_unconfirmed": "No se ha podido confirmar el envío. Sus datos permanecen en esta página. Puede llamarnos o utilizar el borrador de correo."
+    "form_unconfirmed": "No se ha podido confirmar el envío. Sus datos permanecen en esta página. Puede llamarnos o utilizar el borrador de correo.",
+    "service_jump": "Preparar una consulta de servicio",
+    "service_product_title": "Servicio para el equipo que ya utiliza",
+    "service_product_note": "¿Ya utiliza una máquina? Indique el modelo y lo que necesita. Acordamos previamente el trabajo y la cita.",
+    "service_prepare_title": "Datos útiles para su consulta",
+    "service_prepare_note": "Esta lista ayuda a preparar la consulta. Aclaramos personalmente los datos que falten. Recepción de equipos en el taller asociado de Herisau solo con cita previa.",
+    "service_prepare_items": {
+      "overview": [
+        "Indique el equipo o la aplicación prevista y el servicio que necesita.",
+        "Para averías, describa síntomas y accesorios; para inspecciones, indique cantidad de equipos y documentación necesaria.",
+        "Acuerde transporte y recepción de equipos con nosotros antes de desplazarse."
+      ],
+      "repair": [
+        "Indique fabricante, modelo y número de serie de la placa de características.",
+        "Describa el código de error y el comportamiento observado: cuándo ocurre, con qué proceso y qué accesorios están conectados.",
+        "Mencione la documentación disponible y las reparaciones anteriores. No siga utilizando equipos dañados ni intervenga por su cuenta en una máquina abierta."
+      ],
+      "calib": [
+        "Indique modelos y cantidad de equipos; tenga disponibles los informes de inspección anteriores.",
+        "Especifique si necesita calibración, una inspección de seguridad eléctrica o ambas.",
+        "Acuerde rangos de medida, requisitos internos y documentación antes de la cita."
+      ],
+      "auto": [
+        "Indique material, espesor y formato máximo de chapa.",
+        "Describa alimentación eléctrica, aire comprimido disponible y espacio de instalación.",
+        "Comente un plano disponible y el flujo de trabajo previsto durante la consulta técnica."
+      ]
+    }
   }
 }

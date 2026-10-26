@@ -907,6 +907,10 @@
       {
         "kind": "product",
         "id": "mcu1"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
       }
     ],
     "de": {
@@ -963,6 +967,10 @@
       {
         "kind": "product",
         "id": "mms"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
       }
     ],
     "de": {
@@ -1019,6 +1027,10 @@
       {
         "kind": "product",
         "id": "mms"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
       }
     ],
     "de": {
@@ -1123,6 +1135,10 @@
       {
         "kind": "product",
         "id": "mt180w"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
       }
     ],
     "de": {
@@ -1429,6 +1445,58 @@
         "Capacidad y longitud: MAHE especifica 500 A al 60 % del ciclo de trabajo y una longitud disponible de paquete de mangueras de 4 m. Estos valores corresponden a la antorcha MG500.",
         "Controles en la empuñadura: la pantalla gráfica complementa el mando a distancia de la antorcha. Comprobamos las funciones disponibles según los controles de su instalación de soldadura concreta.",
         "Para su oferta: indique la fuente de corriente exacta, el panel de control y la refrigeración por agua existente. Confirmamos las conexiones y la versión para ofrecer MG500 para su configuración."
+      ]
+    }
+  },
+  "massekabel-4m": {
+    "sources": [
+      "P.json#massekabel-4m",
+      "SUBCATEGORY_GUIDES.json#zubehoer/Kabel"
+    ],
+    "links": [
+      {
+        "kind": "subcategory",
+        "id": "zubehoer",
+        "sub": "Kabel"
+      },
+      {
+        "kind": "service",
+        "id": "repair"
+      }
+    ],
+    "de": {
+      "intro": "Das Massekabel gehört zum vollständigen Schweissstromkreis. Für die Auswahl sind Anschluss, Kabelquerschnitt, Länge und die eingesetzte Stromquelle gemeinsam zu prüfen.",
+      "checks": [
+        "Nennen Sie das genaue Gerät und die vorhandene Anschlussausführung. Eine ähnliche Steckerform allein belegt keine passende Verbindung.",
+        "Beschädigte Kabel oder Klemmen nicht weiter benutzen. Beschreiben Sie den Zustand bei der Serviceanfrage; eine Diagnose lässt sich aus einem Produktfoto allein nicht ableiten."
+      ]
+    },
+    "fr": {
+      "intro": "Le câble de masse fait partie du circuit complet de soudage. Le raccordement, la section, la longueur et la source de courant utilisée doivent être examinés ensemble.",
+      "checks": [
+        "Indiquez le poste exact et le raccordement existant. Une forme de fiche similaire ne suffit pas à confirmer la compatibilité.",
+        "N’utilisez plus un câble ou une pince endommagés. Décrivez leur état dans la demande de service ; une photo de produit ne permet pas à elle seule de poser un diagnostic."
+      ]
+    },
+    "it": {
+      "intro": "Il cavo di massa fa parte del circuito completo di saldatura. Per la scelta occorre verificare insieme collegamento, sezione, lunghezza e generatore utilizzato.",
+      "checks": [
+        "Indicate la macchina esatta e il tipo di collegamento presente. Una forma simile della spina non dimostra da sola la compatibilità.",
+        "Non utilizzate cavi o morsetti danneggiati. Descrivetene lo stato nella richiesta di assistenza; una sola foto di prodotto non consente una diagnosi."
+      ]
+    },
+    "en": {
+      "intro": "The return cable is part of the complete welding circuit. Check the connection, cable cross-section, length and power source together when choosing it.",
+      "checks": [
+        "Specify the exact machine and existing connection type. A similar plug shape alone does not establish compatibility.",
+        "Stop using damaged cables or clamps. Describe their condition when requesting service; a product photo alone cannot provide a diagnosis."
+      ]
+    },
+    "es": {
+      "intro": "El cable de masa forma parte del circuito completo de soldadura. Para elegirlo deben comprobarse conjuntamente la conexión, la sección, la longitud y la fuente de corriente utilizada.",
+      "checks": [
+        "Indique la máquina exacta y el tipo de conexión existente. Una forma de clavija similar no demuestra por sí sola la compatibilidad.",
+        "No siga utilizando cables o pinzas dañados. Describa su estado en la consulta de servicio; una foto de producto no permite por sí sola realizar un diagnóstico."
       ]
     }
   }

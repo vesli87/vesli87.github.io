@@ -1111,7 +1111,7 @@ def page_product(lang, p):
     {panehtml}
   </div>{selection}
 {occ_text_html(lang, p)}
-{verwandt_html(lang, p)}
+{verwandt_html(lang, p)}{product_service_routes(lang, p)}
 
   <p class="backlink"><a href="{e(C.u_cat(lang, p['cat']))}">← {e(C.t(lang,'back_to_cat'))}</a></p>
 </div></div>
@@ -1407,6 +1407,32 @@ SERVICE = {
 }
 
 
+def product_service_routes(lang, p):
+    """Existing equipment: link to the right service without implying coverage.
+
+    Calibration is only offered here for welding equipment. Plasma cutters,
+    cleaners, chemicals and accessories do not inherit IEC 60974-14 scope.
+    """
+    if p['cat'] not in ('schweissgeraete', 'plasmaschneiden'):
+        return ''
+    refs = [{'kind': 'service', 'id': 'repair'}]
+    if p['cat'] == 'schweissgeraete':
+        refs.append({'kind': 'service', 'id': 'calib'})
+    return ('\n<section class="buying-guide" data-equipment-service>'
+            f'<h2>{e(C.t(lang,"service_product_title"))}</h2>'
+            f'<p>{e(C.t(lang,"service_product_note"))}</p>'
+            + editorial_links(lang, refs) + '</section>')
+
+
+def service_preparation(lang, key):
+    """Optional, readable preparation; never a new form or a data transfer."""
+    items = C.t(lang, 'service_prepare_items')[key or 'overview']
+    return (f'<h3>{e(C.t(lang,"service_prepare_title"))}</h3>'
+            '<ul class="selection-checks">'
+            + ''.join(f'<li>{e(item)}</li>' for item in items)
+            + f'</ul><p>{e(C.t(lang,"service_prepare_note"))}</p>')
+
+
 def page_service(lang, key=None):
     """key=None -> Uebersicht, sonst repair|calib|auto."""
     heim = (C.t(lang, "nav_home"), C.u_home(lang))
@@ -1456,13 +1482,18 @@ def page_service(lang, key=None):
     body = (R.cbar(lang, crumb_items=krumen,
                    h1=C.t(lang, 'volt_service_title') if key is None else C.t(lang, f"{praefix}_h1"),
                    desc=C.t(lang, f"{praefix}_lead"), artwork='diagnostics')
+            + '<div class="wrap"><p class="dactions">'
+              f'<a class="btn pri" href="#service-request">{e(C.t(lang,"service_jump"))}</a>'
+              f'<a class="btn ghost" href="tel:{e(C.COMPANY["phone_href"])}">{e(C.t(lang,"cro_call"))}</a>'
+              '</p></div>'
             + inhalt
             + '<div class="wrap"><section class="buying-guide service-guide">'
               f'<h2>{e(C.t(lang,"service_links_title"))}</h2>'
             + editorial_links(lang, C.GUIDE_LINKS['services'][key or 'overview'], url)
             + '</section></div>'
-            + f'<section class="service-inquiry wrap"><h2>{e(C.t(lang,"inquiry_service_cta_title"))}</h2>'
-              f'<p>{e(C.t(lang,"inquiry_service_cta_note"))}</p>'
+            + f'<section class="service-inquiry wrap" id="service-request"><h2>{e(C.t(lang,"inquiry_service_cta_title"))}</h2>'
+            + service_preparation(lang, key)
+            + f'<p>{e(C.t(lang,"inquiry_service_cta_note"))}</p>'
               f'<a class="btn pri" href="{e(C.u_page(lang,"contact"))}?service={e(key or "overview")}">{e(C.t(lang,"inquiry_service_cta"))}</a></section>')
 
     ld = [R.ld_org(lang), R.ld_webpage(lang, url, title, desc),

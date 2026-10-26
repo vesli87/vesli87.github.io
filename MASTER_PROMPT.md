@@ -926,6 +926,24 @@ stehen in [SECURITY.md](SECURITY.md), die aktuelle Einrichtung in [README.md](RE
 
 ## 16. Betrieb und weitere Inhalte
 
+### Serviceverbesserung vom 26.10.2026
+
+- Bestehende Service-URLs bleiben erhalten. Alle vier Serviceansichten bieten
+  in DE/FR/IT/EN/ES einen direkten Sprung zur optionalen Vorbereitung, einen
+  Telefonlink und drei zum Anliegen passende Hinweise. Der Kontaktübergang
+  bewahrt `?service=`; die Vorbereitung erhebt keine zusätzlichen Daten.
+- Die Kalibrierungsseite unterscheidet Messwertprüfung nach IEC 60974-14
+  von elektrischer Sicherheitsprüfung (UVV) nach IEC 60974-4. Anwendbare
+  Ausgabe, Umfang und Dokumentation werden auftragsbezogen geklärt.
+  Keine pauschale Jahresfrist, keine behauptete ISO/IEC-17025-Akkreditierung
+  und keine pauschale Zertifizierung des Kundenbetriebs.
+- Produktseiten für Schweissgeräte verlinken Reparatur und Kalibrierung;
+  Plasmaschneider nur Reparatur. Verbrauchsmittel und Zubehör erben diese
+  pauschalen Servicerouten nicht. Fünf Zubehör-Auswahlhilfen verweisen
+  sachbezogen auf die Diagnose, ohne Kompatibilität zu erfinden.
+- Herstellerdaten, Preise, Lieferbarkeit, Canonicals und URL-Struktur werden
+  durch diese redaktionellen Änderungen nicht verändert.
+
 - Google Search Console ist für `https://www.ves-tech.ch/` eingerichtet, mit
   erfolgreicher Sitemap. Kontometriken und konkrete Audit-Ergebnisse gehören
   ausschliesslich in lokale `reports/`, nicht ins öffentliche Repository.

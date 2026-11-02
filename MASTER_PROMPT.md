@@ -1431,3 +1431,9 @@ manuellen Textauswahl. Der benannte Entwurfsbereich erhält Tastaturfokus.
 DE/FR/IT/EN/ES verwenden dieselbe Logik mit vollständig übersetzten Texten.
 Dies ist ein unabhängiger Anfrageweg, kein Beleg für die Behebung eines
 Spam-Filters beim Formulardienst oder für eine Zustellung im Postfach.
+
+## UID vom 02.11.2026
+
+BFS-Schreiben vom 26.10.2026 und amtlicher UID-Registereintrag: **CHE-499.348.313**, aktiv, Rechtsform Einzelunternehmen, amtlicher Name **Martin Veselovský**, Bildfeldstrasse 24, 9552 Bronschhofen. Geschäftsauftritt bleibt VES-TECH Swiss. Das Register zeigt keine Handelsregister- oder MWST-Eintragung. Die UID begründet keine MWST-Registrierung. Daher UID ohne MWST/TVA/IVA veröffentlichen, kein `vatID` und keine MWST auf aktuellen Rechnungen ergänzen. Quelle: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE-499.348.313&lang=de (geprüft 02.11.2026).
+
+`core.py::COMPANY` ist die Quelle für UID und amtlichen Namen. Impressum und Anbieterangaben in AGB verwenden Laufzeit-Platzhalter, die Kontaktseite und Organisationsdaten übernehmen dieselbe UID in allen fünf Sprachen. Die frühere Aussage, es bestehe keine UID, ist überholt. Das BFS-Schreiben selbst bleibt privat und wird nicht veröffentlicht.

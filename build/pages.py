@@ -1312,6 +1312,7 @@ def page_contact(lang):
     <p class="p-eyebrow">{e(C.t(lang,'volt_contact_title'))}</p>
     <h2>{e(co['owner'])}</h2>
     <p class="volt-owner-role">{e(C.t(lang,'site_name'))} · {e(C.t(lang,'volt_sole_trader'))}</p>
+    <p>{e(C.t(lang,'company_uid_label'))}: {e(co['uid'])}</p>
     <address>
       <a class="accent" href="tel:{co['phone_href']}">{e(co['phone'])}</a><br>
       <a class="accent" href="mailto:{co['email']}">{co['email']}</a><br><br>
@@ -1567,6 +1568,8 @@ def page_legal(lang, kind):
                 .replace('{runtime_optional_purposes}', purposes)
                 .replace('{runtime_delivery}', delivery)
                 .replace('{runtime_summary}', C.t(lang, 'privacy_summary'))
+                .replace('{company_uid}', e(C.COMPANY['uid']))
+                .replace('{company_legal_name}', e(C.COMPANY['legal_name']))
                 .replace('{privacy_url}', C.u_page(lang, 'privacy')))
     secs = "".join(
         f"<section><h2>{e(h)}</h2>{b if b.lstrip().startswith('<') else '<p>' + b + '</p>'}</section>"

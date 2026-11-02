@@ -158,7 +158,7 @@
     "impressum_body": [
       [
         "Anbieter",
-        "<p><strong>VES-TECH Swiss</strong><br>Einzelunternehmen nach Schweizer Recht<br>Inhaber: Martin Veselovsky</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Kanton St. Gallen<br>Schweiz</p><p>Die Adresse in Bronschhofen ist die Geschäftsadresse und die Rechnungsadresse. Die <strong>Werkstatt</strong> befindet sich bei unserem Partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Geräte zur Reparatur oder Kalibrierung bitte nur nach vorheriger Absprache dorthin bringen.</p>"
+        "<p><strong>VES-TECH Swiss</strong><br>Einzelunternehmen nach Schweizer Recht<br>Inhaber: {company_legal_name}</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Kanton St. Gallen<br>Schweiz</p><p>Die Adresse in Bronschhofen ist die Geschäftsadresse und die Rechnungsadresse. Die <strong>Werkstatt</strong> befindet sich bei unserem Partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Geräte zur Reparatur oder Kalibrierung bitte nur nach vorheriger Absprache dorthin bringen.</p>"
       ],
       [
         "Kontakt und Erreichbarkeit",
@@ -170,7 +170,7 @@
       ],
       [
         "Handelsregister und UID",
-        "<p>VES-TECH Swiss ist <strong>nicht im Handelsregister eingetragen</strong>. Ein Einzelunternehmen muss sich erst eintragen lassen, wenn es im letzten Geschäftsjahr einen Umsatzerlös von mindestens CHF 100'000 erzielt hat (Art. 931 Abs. 1 OR). Diese Schwelle ist nicht erreicht. Anbieter ist deshalb der Inhaber unter der oben genannten Adresse.</p><p>Eine Unternehmens-Identifikationsnummer (UID) weisen wir auf dieser Website nicht aus.</p>"
+        "<p>VES-TECH Swiss ist der Geschäftsauftritt des Einzelunternehmens <strong>{company_legal_name}</strong>. Es besteht kein Eintrag im Handelsregister.</p><p>Unternehmens-Identifikationsnummer (UID): <strong>{company_uid}</strong>. Die UID ist im UID-Register des Bundesamts für Statistik aktiv. Sie ist für sich allein kein Nachweis einer Registrierung für die Mehrwertsteuer.</p>"
       ],
       [
         "Mehrwertsteuer",
@@ -210,7 +210,7 @@
       ],
       [
         "Stand dieser Angaben",
-        "<p>Diese Fassung gilt ab dem <time datetime=\"2026-08-01\">1. August 2026</time>. Die Angaben zu Handelsregister und Mehrwertsteuer beziehen sich auf dieses Datum.</p>"
+        "<p>Angaben zum Unternehmen, zur UID und zum Registerstatus geprüft am <time datetime=\"2026-11-02\">2. November 2026</time>.</p>"
       ]
     ],
     "datenschutz_body": [
@@ -306,7 +306,7 @@
       ],
       [
         "Anbieter",
-        "<p>Vertragspartner ist:</p><ul><li><strong>VES-TECH Swiss</strong>, Einzelunternehmen nach Schweizer Recht</li><li>Inhaber: Martin Veselovsky</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Kanton St. Gallen, Schweiz</li><li>Telefon: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>E-Mail: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Telefonisch erreichbar: Montag bis Freitag 07:30–17:00 Uhr.</p><p>VES-TECH Swiss ist ein Einzelunternehmen ohne Eintrag im Handelsregister und ohne UID-Nummer. Wir bieten Beratung und Verkauf von MAHE-Geräten zum Schweissen, Schneiden, Reinigen und Automatisieren. Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG.</p><p>Beratung, Angebote und die weitere Abwicklung erfolgen auf Deutsch oder Englisch, auf Wunsch auch auf Tschechisch.</p><p>Weitere Angaben zum Anbieter stehen im <a href=\"/impressum/\">Impressum</a>.</p>"
+        "<p>Vertragspartner ist:</p><ul><li><strong>VES-TECH Swiss</strong>, Einzelunternehmen nach Schweizer Recht</li><li>Inhaber: {company_legal_name}</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Kanton St. Gallen, Schweiz</li><li>Telefon: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>E-Mail: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Telefonisch erreichbar: Montag bis Freitag 07:30–17:00 Uhr.</p><p>VES-TECH Swiss ist ein Einzelunternehmen ohne Eintrag im Handelsregister, mit der UID {company_uid}. Wir bieten Beratung und Verkauf von MAHE-Geräten zum Schweissen, Schneiden, Reinigen und Automatisieren. Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG.</p><p>Beratung, Angebote und die weitere Abwicklung erfolgen auf Deutsch oder Englisch, auf Wunsch auch auf Tschechisch.</p><p>Weitere Angaben zum Anbieter stehen im <a href=\"/impressum/\">Impressum</a>.</p>"
       ],
       [
         "Angebot, Anfrageliste und Vertragsabschluss",
@@ -712,7 +712,8 @@
         "Verfügbaren Netzanschluss, Druckluft und die Platzverhältnisse beschreiben.",
         "Eine vorhandene Zeichnung und den gewünschten Arbeitsablauf bei der persönlichen Abklärung besprechen."
       ]
-    }
+    },
+    "company_uid_label": "UID"
   },
   "fr": {
     "locale": "fr_CH",
@@ -872,7 +873,7 @@
     "impressum_body": [
       [
         "Fournisseur",
-        "<p><strong>VES-TECH Swiss</strong><br>Entreprise individuelle de droit suisse<br>Titulaire : Martin Veselovsky</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Canton de Saint-Gall<br>Suisse</p><p>L’adresse à Bronschhofen est l’adresse commerciale et de facturation. L’<strong>atelier</strong> se trouve chez notre partenaire <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Merci d’y apporter les appareils à réparer ou à étalonner uniquement après entente préalable.</p>"
+        "<p><strong>VES-TECH Swiss</strong><br>Entreprise individuelle de droit suisse<br>Titulaire : {company_legal_name}</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Canton de Saint-Gall<br>Suisse</p><p>L’adresse à Bronschhofen est l’adresse commerciale et de facturation. L’<strong>atelier</strong> se trouve chez notre partenaire <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Merci d’y apporter les appareils à réparer ou à étalonner uniquement après entente préalable.</p>"
       ],
       [
         "Contact et disponibilité",
@@ -884,7 +885,7 @@
       ],
       [
         "Registre du commerce et IDE",
-        "<p>VES-TECH Swiss <strong>n’est pas inscrite au registre du commerce</strong>. Une entreprise individuelle ne doit s’inscrire que si elle a réalisé, lors du dernier exercice, un chiffre d’affaires d’au moins CHF 100'000 (art. 931 al. 1 CO). Ce seuil n’est pas atteint. Le fournisseur est donc le titulaire, à l’adresse indiquée ci-dessus.</p><p>Aucun numéro d’identification des entreprises (IDE) n’est publié sur ce site.</p>"
+        "<p>VES-TECH Swiss est le nom commercial utilisé par l’entreprise individuelle <strong>{company_legal_name}</strong>. L’entreprise n’est pas inscrite au registre du commerce.</p><p>Numéro d’identification des entreprises (IDE) : <strong>{company_uid}</strong>. L’IDE est actif dans le registre de l’Office fédéral de la statistique. À lui seul, il ne prouve pas une inscription à la TVA.</p>"
       ],
       [
         "Taxe sur la valeur ajoutée",
@@ -924,7 +925,7 @@
       ],
       [
         "État de ces indications",
-        "<p>Cette version est en vigueur depuis le <time datetime=\"2026-08-01\">1er août 2026</time>. Les indications relatives au registre du commerce et à la TVA se rapportent à cette date.</p>"
+        "<p>Informations sur l’entreprise, l’IDE et le statut dans les registres vérifiées le <time datetime=\"2026-11-02\">2 novembre 2026</time>.</p>"
       ]
     ],
     "datenschutz_body": [
@@ -1020,7 +1021,7 @@
       ],
       [
         "Fournisseur",
-        "<p>Le partenaire contractuel est :</p><ul><li><strong>VES-TECH Swiss</strong>, entreprise individuelle de droit suisse</li><li>Titulaire : Martin Veselovsky</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, canton de Saint-Gall, Suisse</li><li>Téléphone : <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>E-mail : <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Joignable par téléphone : du lundi au vendredi de 07:30 à 17:00.</p><p>VES-TECH Swiss est une entreprise individuelle sans inscription au registre du commerce et sans numéro IDE. Nous proposons des conseils et la vente d’appareils MAHE pour le soudage, la découpe, le nettoyage et l’automatisation. L’approvisionnement en appareils MAHE neufs s’effectue par l’intermédiaire de Schweisstechnik Scherrer AG.</p><p>Le conseil, les offres et le suivi se font en allemand ou en anglais, sur demande également en tchèque.</p><p>D’autres indications sur le fournisseur figurent dans les <a href=\"/fr/mentions-legales/\">mentions légales</a>.</p>"
+        "<p>Le partenaire contractuel est :</p><ul><li><strong>VES-TECH Swiss</strong>, entreprise individuelle de droit suisse</li><li>Titulaire : {company_legal_name}</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, canton de Saint-Gall, Suisse</li><li>Téléphone : <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>E-mail : <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Joignable par téléphone : du lundi au vendredi de 07:30 à 17:00.</p><p>VES-TECH Swiss est une entreprise individuelle sans inscription au registre du commerce, avec le numéro IDE {company_uid}. Nous proposons des conseils et la vente d’appareils MAHE pour le soudage, la découpe, le nettoyage et l’automatisation. L’approvisionnement en appareils MAHE neufs s’effectue par l’intermédiaire de Schweisstechnik Scherrer AG.</p><p>Le conseil, les offres et le suivi se font en allemand ou en anglais, sur demande également en tchèque.</p><p>D’autres indications sur le fournisseur figurent dans les <a href=\"/fr/mentions-legales/\">mentions légales</a>.</p>"
       ],
       [
         "Offre, liste de demandes et conclusion du contrat",
@@ -1426,7 +1427,8 @@
         "Décrivez l’alimentation électrique, l’air comprimé disponible et l’espace prévu.",
         "Discutez d’un dessin existant et du déroulement souhaité lors de l’entretien technique."
       ]
-    }
+    },
+    "company_uid_label": "IDE"
   },
   "it": {
     "locale": "it_CH",
@@ -1586,7 +1588,7 @@
     "impressum_body": [
       [
         "Fornitore",
-        "<p><strong>VES-TECH Swiss</strong><br>Ditta individuale di diritto svizzero<br>Titolare: Martin Veselovsky</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Cantone di San Gallo<br>Svizzera</p><p>L’indirizzo di Bronschhofen è l’indirizzo commerciale e di fatturazione. L’<strong>officina</strong> si trova presso il nostro partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Si prega di portare gli apparecchi da riparare o calibrare solo previo accordo.</p>"
+        "<p><strong>VES-TECH Swiss</strong><br>Ditta individuale di diritto svizzero<br>Titolare: {company_legal_name}</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Cantone di San Gallo<br>Svizzera</p><p>L’indirizzo di Bronschhofen è l’indirizzo commerciale e di fatturazione. L’<strong>officina</strong> si trova presso il nostro partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Si prega di portare gli apparecchi da riparare o calibrare solo previo accordo.</p>"
       ],
       [
         "Contatto e reperibilità",
@@ -1598,7 +1600,7 @@
       ],
       [
         "Registro di commercio e IDI",
-        "<p>VES-TECH Swiss <strong>non è iscritta nel registro di commercio</strong>. Una ditta individuale deve iscriversi solo se nell’ultimo esercizio ha conseguito una cifra d’affari di almeno CHF 100'000 (art. 931 cpv. 1 CO). Questa soglia non è raggiunta. Il fornitore è quindi il titolare, all’indirizzo indicato sopra.</p><p>Su questo sito non viene pubblicato alcun numero d’identificazione delle imprese (IDI).</p>"
+        "<p>VES-TECH Swiss è il nome commerciale utilizzato dalla ditta individuale <strong>{company_legal_name}</strong>. La ditta non è iscritta nel registro di commercio.</p><p>Numero d’identificazione delle imprese (IDI): <strong>{company_uid}</strong>. L’IDI è attivo nel registro dell’Ufficio federale di statistica. Da solo non attesta un’iscrizione al registro IVA.</p>"
       ],
       [
         "Imposta sul valore aggiunto",
@@ -1638,7 +1640,7 @@
       ],
       [
         "Stato di queste indicazioni",
-        "<p>Questa versione è in vigore dal <time datetime=\"2026-08-01\">1° agosto 2026</time>. Le indicazioni su registro di commercio e IVA si riferiscono a questa data.</p>"
+        "<p>Informazioni sulla ditta, sull’IDI e sullo stato nei registri verificate il <time datetime=\"2026-11-02\">2 novembre 2026</time>.</p>"
       ]
     ],
     "datenschutz_body": [
@@ -1734,7 +1736,7 @@
       ],
       [
         "Fornitore",
-        "<p>La controparte contrattuale è:</p><ul><li><strong>VES-TECH Swiss</strong>, ditta individuale di diritto svizzero</li><li>Titolare: Martin Veselovsky</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Cantone di San Gallo, Svizzera</li><li>Telefono: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>E-mail: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Raggiungibile per telefono: dal lunedì al venerdì 07:30–17:00.</p><p>VES-TECH Swiss è una ditta individuale senza iscrizione nel registro di commercio e senza numero IDI. Offriamo consulenza e vendita di apparecchi MAHE per saldatura, taglio, pulizia e automazione. Gli apparecchi MAHE nuovi vengono acquistati tramite Schweisstechnik Scherrer AG.</p><p>La consulenza, le offerte e l’assistenza successiva sono fornite in tedesco o in inglese, su richiesta anche in ceco.</p><p>Ulteriori indicazioni sul fornitore figurano nelle <a href=\"/it/note-legali/\">note legali</a>.</p>"
+        "<p>La controparte contrattuale è:</p><ul><li><strong>VES-TECH Swiss</strong>, ditta individuale di diritto svizzero</li><li>Titolare: {company_legal_name}</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Cantone di San Gallo, Svizzera</li><li>Telefono: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>E-mail: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Raggiungibile per telefono: dal lunedì al venerdì 07:30–17:00.</p><p>VES-TECH Swiss è una ditta individuale senza iscrizione nel registro di commercio, con il numero IDI {company_uid}. Offriamo consulenza e vendita di apparecchi MAHE per saldatura, taglio, pulizia e automazione. Gli apparecchi MAHE nuovi vengono acquistati tramite Schweisstechnik Scherrer AG.</p><p>La consulenza, le offerte e l’assistenza successiva sono fornite in tedesco o in inglese, su richiesta anche in ceco.</p><p>Ulteriori indicazioni sul fornitore figurano nelle <a href=\"/it/note-legali/\">note legali</a>.</p>"
       ],
       [
         "Offerta, lista delle richieste e conclusione del contratto",
@@ -2140,7 +2142,8 @@
         "Descrivete alimentazione elettrica, aria compressa disponibile e spazio previsto.",
         "Discutete un disegno disponibile e il ciclo di lavoro desiderato durante il colloquio tecnico."
       ]
-    }
+    },
+    "company_uid_label": "IDI"
   },
   "en": {
     "locale": "en_CH",
@@ -2575,7 +2578,7 @@
     "impressum_body": [
       [
         "Provider",
-        "<p><strong>VES-TECH Swiss</strong><br>Sole proprietorship under Swiss law<br>Owner: Martin Veselovsky</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Canton of St. Gallen<br>Switzerland</p><p>The Bronschhofen address is the registered business and billing address. The <strong>workshop</strong> is at our partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Please bring equipment there for repair or calibration only by prior arrangement.</p>"
+        "<p><strong>VES-TECH Swiss</strong><br>Sole proprietorship under Swiss law<br>Owner: {company_legal_name}</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Canton of St. Gallen<br>Switzerland</p><p>The Bronschhofen address is the registered business and billing address. The <strong>workshop</strong> is at our partner <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Please bring equipment there for repair or calibration only by prior arrangement.</p>"
       ],
       [
         "Contact and availability",
@@ -2587,7 +2590,7 @@
       ],
       [
         "Commercial register and business identification number",
-        "<p>VES-TECH Swiss is <strong>not entered in the commercial register</strong>. A sole proprietorship must register when revenue in its last financial year reaches at least CHF 100'000 (Art. 931 para. 1 of the Code of Obligations, OR). This threshold has not been reached. The provider is therefore the owner at the address stated above.</p><p>No business identification number (UID) is published on this website.</p>"
+        "<p>VES-TECH Swiss is the trading name used by the sole proprietorship <strong>{company_legal_name}</strong>. The business is not entered in the commercial register.</p><p>Swiss business identification number (UID): <strong>{company_uid}</strong>. The UID is active in the Federal Statistical Office’s register. The UID alone does not establish VAT registration.</p>"
       ],
       [
         "Value added tax",
@@ -2627,7 +2630,7 @@
       ],
       [
         "Effective date of these details",
-        "<p>This version applies from <time datetime=\"2026-08-01\">1 August 2026</time>. Statements about commercial registration and VAT refer to that date.</p>"
+        "<p>Business details, UID and register status checked on <time datetime=\"2026-11-02\">2 November 2026</time>.</p>"
       ]
     ],
     "datenschutz_body": [
@@ -2719,7 +2722,7 @@
       ],
       [
         "Provider",
-        "<p>The contracting party is:</p><ul><li><strong>VES-TECH Swiss</strong>, a sole proprietorship under Swiss law</li><li>Owner: Martin Veselovsky</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Canton of St. Gallen, Switzerland</li><li>Telephone: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>Email: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Telephone hours: Monday to Friday 07:30–17:00.</p><p>VES-TECH Swiss is a sole proprietorship without a commercial register entry or UID number. We provide advice and sales of MAHE equipment for welding, cutting, cleaning and automation. New MAHE equipment is procured through Schweisstechnik Scherrer AG.</p><p>Advice, quotations and subsequent handling are provided in German or English, and in Czech on request.</p><p>Further provider details appear in the <a href=\"/en/legal-notice/\">legal notice</a>.</p>"
+        "<p>The contracting party is:</p><ul><li><strong>VES-TECH Swiss</strong>, a sole proprietorship under Swiss law</li><li>Owner: {company_legal_name}</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, Canton of St. Gallen, Switzerland</li><li>Telephone: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>Email: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Telephone hours: Monday to Friday 07:30–17:00.</p><p>VES-TECH Swiss is a sole proprietorship without a commercial register entry, with UID {company_uid}. We provide advice and sales of MAHE equipment for welding, cutting, cleaning and automation. New MAHE equipment is procured through Schweisstechnik Scherrer AG.</p><p>Advice, quotations and subsequent handling are provided in German or English, and in Czech on request.</p><p>Further provider details appear in the <a href=\"/en/legal-notice/\">legal notice</a>.</p>"
       ],
       [
         "Quotations, enquiry list and contract formation",
@@ -2854,7 +2857,8 @@
         "Describe the available electrical supply, compressed air and installation space.",
         "Discuss an existing drawing and the intended workflow during the technical consultation."
       ]
-    }
+    },
+    "company_uid_label": "UID"
   },
   "es": {
     "locale": "es_CH",
@@ -3289,7 +3293,7 @@
     "impressum_body": [
       [
         "Proveedor",
-        "<p><strong>VES-TECH Swiss</strong><br>Empresa individual conforme al derecho suizo<br>Titular: Martin Veselovsky</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Cantón de San Galo<br>Suiza</p><p>La dirección de Bronschhofen es el domicilio social y la dirección de facturación. El <strong>taller</strong> está en nuestro colaborador <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Lleve allí equipos para reparación o calibración solo con cita previa.</p>"
+        "<p><strong>VES-TECH Swiss</strong><br>Empresa individual conforme al derecho suizo<br>Titular: {company_legal_name}</p><p>Bildfeldstrasse 24<br>9552 Bronschhofen<br>Cantón de San Galo<br>Suiza</p><p>La dirección de Bronschhofen es el domicilio social y la dirección de facturación. El <strong>taller</strong> está en nuestro colaborador <a href=\"https://www.schweisstechnik-scherrer.ch/\" rel=\"noopener\">Schweisstechnik Scherrer AG</a>, St. Gallerstrasse 49, 9100 Herisau. Lleve allí equipos para reparación o calibración solo con cita previa.</p>"
       ],
       [
         "Contacto y disponibilidad",
@@ -3301,7 +3305,7 @@
       ],
       [
         "Registro mercantil y número de identificación empresarial",
-        "<p>VES-TECH Swiss <strong>no está inscrita en el registro mercantil</strong>. Una empresa individual debe inscribirse cuando los ingresos de su último ejercicio alcancen al menos CHF 100'000 (art. 931, apdo. 1 del Código de Obligaciones, OR). No se ha alcanzado ese umbral. Por tanto, el proveedor es el titular en la dirección indicada arriba.</p><p>En este sitio web no se publica ningún número de identificación empresarial (UID).</p>"
+        "<p>VES-TECH Swiss es el nombre comercial utilizado por la empresa individual <strong>{company_legal_name}</strong>. La empresa no está inscrita en el registro mercantil.</p><p>Número suizo de identificación empresarial (UID): <strong>{company_uid}</strong>. El UID figura activo en el registro de la Oficina Federal de Estadística. Por sí solo no acredita la inscripción a efectos del IVA.</p>"
       ],
       [
         "Impuesto sobre el valor añadido",
@@ -3341,7 +3345,7 @@
       ],
       [
         "Fecha de vigencia de estos datos",
-        "<p>Esta versión se aplica desde el <time datetime=\"2026-08-01\">1 de agosto de 2026</time>. Las declaraciones sobre registro mercantil e IVA se refieren a esa fecha.</p>"
+        "<p>Datos de la empresa, UID y situación registral comprobados el <time datetime=\"2026-11-02\">2 de noviembre de 2026</time>.</p>"
       ]
     ],
     "datenschutz_body": [
@@ -3433,7 +3437,7 @@
       ],
       [
         "Proveedor",
-        "<p>La parte contratante es:</p><ul><li><strong>VES-TECH Swiss</strong>, empresa individual conforme al derecho suizo</li><li>Titular: Martin Veselovsky</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, cantón de San Galo, Suiza</li><li>Teléfono: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>Correo: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Horario telefónico: lunes a viernes 07:30–17:00.</p><p>VES-TECH Swiss es una empresa individual sin inscripción en el registro mercantil ni número UID. Ofrecemos asesoramiento y venta de equipos MAHE para soldadura, corte, limpieza y automatización. Los equipos MAHE nuevos se adquieren a través de Schweisstechnik Scherrer AG.</p><p>El asesoramiento, las ofertas y la tramitación posterior se realizan en alemán o inglés y, si se solicita, en checo.</p><p>Más datos del proveedor figuran en el <a href=\"/es/aviso-legal/\">aviso legal</a>.</p>"
+        "<p>La parte contratante es:</p><ul><li><strong>VES-TECH Swiss</strong>, empresa individual conforme al derecho suizo</li><li>Titular: {company_legal_name}</li><li>Bildfeldstrasse 24, 9552 Bronschhofen, cantón de San Galo, Suiza</li><li>Teléfono: <a href=\"tel:+41767109139\">+41 76 710 91 39</a></li><li>Correo: <a href=\"mailto:info@ves-tech.ch\">info@ves-tech.ch</a></li></ul><p>Horario telefónico: lunes a viernes 07:30–17:00.</p><p>VES-TECH Swiss es una empresa individual sin inscripción en el registro mercantil, con el número UID {company_uid}. Ofrecemos asesoramiento y venta de equipos MAHE para soldadura, corte, limpieza y automatización. Los equipos MAHE nuevos se adquieren a través de Schweisstechnik Scherrer AG.</p><p>El asesoramiento, las ofertas y la tramitación posterior se realizan en alemán o inglés y, si se solicita, en checo.</p><p>Más datos del proveedor figuran en el <a href=\"/es/aviso-legal/\">aviso legal</a>.</p>"
       ],
       [
         "Ofertas, lista de consulta y celebración del contrato",
@@ -3568,6 +3572,7 @@
         "Describa alimentación eléctrica, aire comprimido disponible y espacio de instalación.",
         "Comente un plano disponible y el flujo de trabajo previsto durante la consulta técnica."
       ]
-    }
+    },
+    "company_uid_label": "UID"
   }
 }

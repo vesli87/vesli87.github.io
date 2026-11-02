@@ -1,9 +1,11 @@
 {
  "schema_version": 1,
- "generated": "2026-10-26",
+ "generated": "2026-11-02",
  "seller": {
   "name": "VES-TECH Swiss",
   "url": "https://www.ves-tech.ch/",
+  "legal_name": "Martin Veselovský",
+  "uid": "CHE-499.348.313",
   "email": "info@ves-tech.ch",
   "telephone": "+41 76 710 91 39",
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"

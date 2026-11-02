@@ -339,6 +339,7 @@ def products_json():
         "schema_version": 1,
         "generated": TODAY,
         "seller": {"name": C.COMPANY["name"], "url": C.SITE + "/",
+                   "legal_name": C.COMPANY["legal_name"], "uid": C.COMPANY["uid"],
                    "email": C.COMPANY["email"], "telephone": C.COMPANY["phone"],
                    "address": f"{C.COMPANY['street']}, {C.COMPANY['zip']} {C.COMPANY['city']}, "
                               f"{C.COMPANY['country_name']}"},
@@ -605,6 +606,7 @@ def llms_txt():
         "",
         "## Eckdaten",
         f"- Firma: {C.COMPANY['name']}",
+        f"- Einzelunternehmen: {C.COMPANY['legal_name']} · UID: {C.COMPANY['uid']}",
         f"- Werkstatt und Warenannahme: {C.WORKSHOP['street']}, {C.WORKSHOP['zip']} "
         f"{C.WORKSHOP['city']} ({C.WORKSHOP['region']}), {C.WORKSHOP['country_name']} "
         f"– bei der Partnerfirma {C.WORKSHOP['partner']}, Besuch nach Vereinbarung",
@@ -660,6 +662,7 @@ def llms_full():
            f"Stand: {TODAY}. Quelle: {C.SITE}",
            "",
            f"{C.COMPANY['name']} bietet Beratung und Verkauf von MAHE-Geräten. "
+           f"Einzelunternehmen: {C.COMPANY['legal_name']}, UID {C.COMPANY['uid']}. "
            f"Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG. "
            f"Werkstatt und Warenannahme: {C.WORKSHOP['street']}, {C.WORKSHOP['zip']} "
            f"{C.WORKSHOP['city']}, bei der Partnerfirma {C.WORKSHOP['partner']}, Besuch nach "

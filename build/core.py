@@ -47,7 +47,8 @@ DEFAULT_LANG = "de"
 
 COMPANY = {
     "name": "VES-TECH Swiss",
-    "legal_name": "VES-TECH Swiss",
+    "legal_name": "Martin Veselovský",
+    "uid": "CHE-499.348.313",
     "street": "Bildfeldstrasse 24",
     "zip": "9552",
     "city": "Bronschhofen",

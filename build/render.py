@@ -426,6 +426,7 @@ def ld_org(lang=C.DEFAULT_LANG):
         "@id": f"{C.SITE}/#organization",
         "name": co["name"],
         "legalName": co["legal_name"],
+        "identifier": {"@type": "PropertyValue", "propertyID": "CH-UID", "value": co["uid"]},
         # Ohne Beschreibung muss sich eine Suchmaschine ihr Bild der Firma aus
         # dem Seitentext zusammenreimen. Google hat daraus geschlossen, unter
         # der Adresse stehe kein aktiver Schweizer Firmenauftritt, und auf

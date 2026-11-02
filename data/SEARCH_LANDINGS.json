@@ -3,29 +3,29 @@
     "kind": "category",
     "id": "schweissgeraete",
     "de": {
-      "title": "MAHE Schweissgeräte Schweiz: MIG/MAG, WIG/TIG & MMA | VES-TECH",
-      "description": "MAHE-Schweissgeräte für MIG/MAG, WIG/TIG und MMA vergleichen. Beratung, Konfiguration und Service in der Partnerwerkstatt Herisau. Preis auf Anfrage.",
-      "h1": "MAHE Schweissgeräte für MIG/MAG, WIG/TIG und MMA"
+      "title": "Schweissgeräte MAHE | VES-TECH Swiss",
+      "h1": "Schweissgeräte MAHE",
+      "description": "MAHE-Schweisstechnik für MIG/MAG, WIG/TIG, MMA, Plasma/Mikroplasma und handgeführtes Laserschweissen."
     },
     "fr": {
-      "title": "Postes à souder MAHE en Suisse : MIG/MAG, TIG, MMA | VES-TECH",
-      "description": "Comparez les postes MAHE MIG/MAG, TIG et MMA. Conseil, configuration et service dans l’atelier partenaire à Herisau. Prix sur demande.",
-      "h1": "Postes à souder MAHE : MIG/MAG, TIG et MMA"
+      "title": "Postes de soudage MAHE | VES-TECH Swiss",
+      "h1": "Postes de soudage MAHE",
+      "description": "Technique de soudage MAHE pour MIG/MAG, TIG, MMA, plasma/microplasma et soudage laser manuel."
     },
     "it": {
-      "title": "Saldatrici MAHE in Svizzera: MIG/MAG, TIG e MMA | VES-TECH",
-      "description": "Confrontate le saldatrici MAHE MIG/MAG, TIG e MMA. Consulenza, configurazione e assistenza nell’officina partner di Herisau. Prezzo su richiesta.",
-      "h1": "Saldatrici MAHE MIG/MAG, TIG e MMA"
+      "title": "Saldatrici MAHE | VES-TECH Swiss",
+      "h1": "Saldatrici MAHE",
+      "description": "Tecnologia di saldatura MAHE per MIG/MAG, TIG, MMA, plasma/microplasma e saldatura laser manuale."
     },
     "en": {
-      "title": "MAHE welding machines in Switzerland: MIG, TIG & MMA | VES-TECH",
-      "description": "Compare MAHE MIG/MAG, TIG and MMA welding machines. Advice, configuration and service at the partner workshop in Herisau. Price on request.",
-      "h1": "MAHE MIG/MAG, TIG and MMA welding machines"
+      "title": "MAHE welding equipment | VES-TECH Swiss",
+      "h1": "MAHE welding equipment",
+      "description": "MAHE welding equipment for MIG/MAG, TIG, MMA, plasma/microplasma and handheld laser welding."
     },
     "es": {
-      "title": "Equipos MAHE en Suiza: soldadura MIG/MAG, TIG y MMA | VES-TECH",
-      "description": "Compare equipos MAHE MIG/MAG, TIG y MMA. Asesoramiento, configuración y servicio en el taller asociado de Herisau. Precio bajo consulta.",
-      "h1": "Equipos de soldadura MAHE MIG/MAG, TIG y MMA"
+      "title": "Equipos de soldadura MAHE | VES-TECH Swiss",
+      "h1": "Equipos de soldadura MAHE",
+      "description": "Equipos MAHE para MIG/MAG, TIG, MMA, plasma/microplasma y soldadura láser manual."
     }
   },
   {
@@ -181,29 +181,29 @@
     "kind": "category",
     "id": "reinigung",
     "de": {
-      "title": "Schweissnahtreinigung und Signiergeräte MAHE | VES-TECH Swiss",
-      "description": "MAHE-Geräte zum Reinigen, Polieren und Signieren von Edelstahl. Cleaner, Elektrolyte und Dosierung vergleichen. Beratung und Preis auf Anfrage.",
-      "h1": "MAHE-Geräte für Schweissnahtreinigung und Metallbeschriftung"
+      "title": "MAHE-Geräte für Laser- und elektrolytische Reinigung | VES-TECH",
+      "h1": "MAHE-Geräte für Laser- und elektrolytische Reinigung",
+      "description": "MAHE-Geräte für Laserreinigung, elektrolytisches Reinigen und Polieren, Metallbeschriftung und automatische Dosierung."
     },
     "fr": {
-      "title": "Nettoyage des soudures et marquage MAHE | VES-TECH Swiss",
-      "description": "MAHE pour nettoyer, polir et marquer l’inox. Comparez nettoyeurs de soudures, électrolytes et dosage. Conseil en Suisse et prix sur demande.",
-      "h1": "Nettoyage des soudures et marquage électrolytique MAHE"
+      "title": "Nettoyage laser et électrolytique MAHE | VES-TECH",
+      "h1": "Nettoyage laser et électrolytique MAHE",
+      "description": "Appareils MAHE pour le nettoyage laser, le nettoyage et le polissage électrolytiques, le marquage du métal et le dosage automatique."
     },
     "it": {
-      "title": "Pulizia saldature e marcatura MAHE | VES-TECH Swiss",
-      "description": "MAHE per pulire, lucidare e marcare l’inox. Confrontate pulitori di saldature, elettroliti e dosaggio. Consulenza in Svizzera e prezzo su richiesta.",
-      "h1": "Pulizia delle saldature e marcatura elettrolitica MAHE"
+      "title": "Pulizia laser ed elettrolitica MAHE | VES-TECH",
+      "h1": "Pulizia laser ed elettrolitica MAHE",
+      "description": "Apparecchi MAHE per pulizia laser, pulizia e lucidatura elettrolitiche, marcatura dei metalli e dosaggio automatico."
     },
     "en": {
-      "title": "MAHE weld cleaning and metal marking | VES-TECH Swiss",
-      "description": "MAHE equipment for cleaning, polishing and marking stainless steel. Compare weld cleaners, electrolytes and dosing. Advice in Switzerland.",
-      "h1": "MAHE weld cleaning and electrolytic metal marking"
+      "title": "MAHE laser and electrolytic cleaning | VES-TECH",
+      "h1": "MAHE laser and electrolytic cleaning",
+      "description": "MAHE equipment for laser cleaning, electrolytic cleaning and polishing, metal marking and automatic dosing."
     },
     "es": {
-      "title": "Limpieza de soldaduras y marcado MAHE | VES-TECH Swiss",
-      "description": "MAHE para limpiar, pulir y marcar acero inoxidable. Compare limpiadores, electrolitos y dosificación. Asesoramiento en Suiza y precio bajo consulta.",
-      "h1": "Limpieza de soldaduras y marcado electrolítico MAHE"
+      "title": "Limpieza láser y electrolítica MAHE | VES-TECH",
+      "h1": "Limpieza láser y electrolítica MAHE",
+      "description": "Equipos MAHE para limpieza láser, limpieza y pulido electrolíticos, marcado de metales y dosificación automática."
     }
   },
   {
@@ -323,6 +323,66 @@
       "title": "Accesorios MAHE: antorchas, refrigeración e hilo | VES-TECH",
       "description": "Accesorios MAHE para soldadura, plasma y limpieza. Elija antorchas, refrigeración, alimentadores y consumibles según el equipo y su versión.",
       "h1": "Accesorios MAHE para soldadura, plasma y limpieza"
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "schweissgeraete",
+    "sub": "Laserschweissen",
+    "de": {
+      "title": "Laserschweissen MAHE | VES-TECH Swiss",
+      "h1": "Laserschweissen MAHE",
+      "description": "Handgeführtes Laserschweissen von MAHE: MLST mit 1500–3000 W je Ausführung. Geräteauswahl nach Werkstoff, Naht und Einsatz. Angebot anfragen."
+    },
+    "fr": {
+      "title": "Soudage laser MAHE | VES-TECH Swiss",
+      "h1": "Soudage laser MAHE",
+      "description": "Soudage laser manuel MAHE : gamme MLST de 1500 à 3000 W selon la version. Choix selon le matériau, le joint et l’application. Demandez une offre."
+    },
+    "it": {
+      "title": "Saldatura laser MAHE | VES-TECH Swiss",
+      "h1": "Saldatura laser MAHE",
+      "description": "Saldatura laser manuale MAHE: gamma MLST da 1500 a 3000 W secondo la versione. Scelta per materiale, giunto e applicazione. Richiedete un’offerta."
+    },
+    "en": {
+      "title": "MAHE laser welding | VES-TECH Swiss",
+      "h1": "MAHE laser welding",
+      "description": "Explore MAHE handheld laser welding: MLST with 1500–3000 W, depending on version. Select by material, joint and application. Request a quotation."
+    },
+    "es": {
+      "title": "Soldadura láser MAHE | VES-TECH Swiss",
+      "h1": "Soldadura láser MAHE",
+      "description": "Soldadura láser manual MAHE: gama MLST de 1500 a 3000 W según la versión. Selección por material, unión y aplicación. Solicite una oferta."
+    }
+  },
+  {
+    "kind": "subcategory",
+    "id": "reinigung",
+    "sub": "Laserreinigung",
+    "de": {
+      "title": "Laserreinigung MAHE | VES-TECH Swiss",
+      "h1": "Laserreinigung MAHE",
+      "description": "MAHE-Laserreinigung im Vergleich: MLRM mit 100–300 W je Ausführung und MLRC 3000. Auswahl nach Oberfläche und Reinigungsaufgabe. Beratung anfragen."
+    },
+    "fr": {
+      "title": "Nettoyage laser MAHE | VES-TECH Swiss",
+      "h1": "Nettoyage laser MAHE",
+      "description": "Comparez le nettoyage laser MAHE : MLRM de 100 à 300 W selon la version et MLRC 3000. Choix selon la surface et l’application. Demandez conseil."
+    },
+    "it": {
+      "title": "Pulizia laser MAHE | VES-TECH Swiss",
+      "h1": "Pulizia laser MAHE",
+      "description": "Confrontate la pulizia laser MAHE: MLRM da 100 a 300 W secondo la versione e MLRC 3000. Scelta per superficie e applicazione. Richiedete consulenza."
+    },
+    "en": {
+      "title": "MAHE laser cleaning | VES-TECH Swiss",
+      "h1": "MAHE laser cleaning",
+      "description": "Compare MAHE laser cleaning equipment: MLRM with 100–300 W, depending on version, and MLRC 3000. Choose by surface and cleaning task. Ask for advice."
+    },
+    "es": {
+      "title": "Limpieza láser MAHE | VES-TECH Swiss",
+      "h1": "Limpieza láser MAHE",
+      "description": "Compare la limpieza láser MAHE: MLRM de 100 a 300 W según la versión y MLRC 3000. Selección por superficie y tarea de limpieza. Solicite asesoramiento."
     }
   }
 ]

@@ -232,6 +232,19 @@
   }
  },
  {
+  "id": "mlst",
+  "cat": "schweissgeraete",
+  "sub": "Laserschweissen",
+  "vt": "Handgeführtes Laserschweissen",
+  "name": "MLST",
+  "img": "laser/mahe-mlst.png",
+  "desc": "Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.",
+  "specs": {
+   "Verfahren": "Handgeführtes Laserschweissen",
+   "Laserleistung": "1500–3000 W, je Ausführung"
+  }
+ },
+ {
   "id": "theta-40",
   "cat": "plasmaschneiden",
   "sub": "Theta",
@@ -530,6 +543,32 @@
    "Anwendung": "Markieren",
    "Gebinde": "0,1 / 0,5 / 1,0 L",
    "Sicherheitsdatenblatt": "M1"
+  }
+ },
+ {
+  "id": "mlrm",
+  "cat": "reinigung",
+  "sub": "Laserreinigung",
+  "vt": "Laserreinigung",
+  "name": "MLRM",
+  "img": "laser/mahe-mlrm.png",
+  "desc": "MAHE-Laserreinigungsgerät mit 100–300 W Laserleistung je Ausführung. Die Auswahl richtet sich nach Bauteil, Oberfläche und gewünschtem Reinigungsergebnis.",
+  "specs": {
+   "Verfahren": "Laserreinigung",
+   "Laserleistung": "100–300 W, je Ausführung"
+  }
+ },
+ {
+  "id": "mlrc-3000",
+  "cat": "reinigung",
+  "sub": "Laserreinigung",
+  "vt": "Laserreinigung",
+  "name": "MLRC 3000",
+  "img": "laser/mahe-mlrc-3000.png",
+  "desc": "MAHE-Laserreinigungsgerät für die professionelle Oberflächenbearbeitung. VES-TECH klärt die passende Ausführung und den Lieferumfang für Ihre Reinigungsaufgabe.",
+  "specs": {
+   "Verfahren": "Laserreinigung",
+   "Modell": "MLRC 3000"
   }
  },
  {

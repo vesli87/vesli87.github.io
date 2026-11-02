@@ -16,6 +16,10 @@
       {
         "kind": "service",
         "id": "repair"
+      },
+      {
+        "kind": "product",
+        "id": "mlst"
       }
     ],
     "plasmaschneiden": [
@@ -60,6 +64,11 @@
         "kind": "subcategory",
         "id": "reinigung",
         "sub": "Cleaner"
+      },
+      {
+        "kind": "subcategory",
+        "id": "reinigung",
+        "sub": "Laserreinigung"
       }
     ],
     "zubehoer": [
@@ -141,6 +150,16 @@
         {
           "kind": "product",
           "id": "delta-digital"
+        }
+      ],
+      "Laserschweissen": [
+        {
+          "kind": "product",
+          "id": "mlst"
+        },
+        {
+          "kind": "service",
+          "id": "overview"
         }
       ]
     },
@@ -251,6 +270,20 @@
         {
           "kind": "product",
           "id": "n1"
+        }
+      ],
+      "Laserreinigung": [
+        {
+          "kind": "product",
+          "id": "mlrm"
+        },
+        {
+          "kind": "product",
+          "id": "mlrc-3000"
+        },
+        {
+          "kind": "service",
+          "id": "overview"
         }
       ]
     },

@@ -1504,5 +1504,151 @@
         "No siga utilizando cables o pinzas dañados. Describa su estado en la consulta de servicio; una foto de producto no permite por sí sola realizar un diagnóstico."
       ]
     }
+  },
+  "mlst": {
+    "sources": [
+      "Inhaberangaben vom 02.11.2026: MAHE-Bezeichnung, Gerätezweck und bereitgestelltes Produktbild; MLST 1500–3000 W",
+      "https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung",
+      "https://www.trm-welding.com/product/75.html (nur Verfahrenskontext; keine technische Gleichsetzung mit MAHE MLST)"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "omega-ax"
+      },
+      {
+        "kind": "product",
+        "id": "hypermig-twin"
+      }
+    ],
+    "de": {
+      "intro": "MLST ergänzt das MAHE-Programm um handgeführtes Laserschweissen. Gebündelte Laserenergie wird gezielt an der Fügestelle eingebracht, während die Pistole entlang der Naht geführt wird. Das ermöglicht eine flexible Nahtführung an passend vorbereiteten Metallverbindungen. Für eine belastbare Gerätewahl betrachten wir Werkstoff, Wandstärke, Zugänglichkeit und Nahtgeometrie gemeinsam.",
+      "checks": [
+        "Für Ihr Angebot: Werkstoff, Dicke, Nahtform und Produktionsaufgabe angeben. Laserleistung, Stromversorgung, Kühlung, Drahtvorschub und Lieferumfang werden für die gewählte MAHE-Ausführung abgeglichen.",
+        "Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen."
+      ]
+    },
+    "fr": {
+      "intro": "MLST complète la gamme MAHE avec le soudage laser manuel. L’énergie laser est concentrée sur la zone d’assemblage tandis que le pistolet suit le joint. Cette conduite manuelle permet d’adapter le trajet du cordon aux assemblages métalliques correctement préparés. Le choix de l’appareil prend en compte le matériau, l’épaisseur, l’accès et la géométrie du joint.",
+      "checks": [
+        "Pour votre offre, indiquez matériau, épaisseur, forme du joint et travail prévu. Puissance laser, alimentation, refroidissement, dévidage et éléments fournis sont vérifiés pour la version MAHE choisie.",
+        "Préparez le poste avant la mise en service : zone laser protégée et surveillée, protections laser adaptées, aspiration et personnel instruit. Définissez les mesures avec la personne responsable de la sécurité laser et selon la documentation de l’appareil."
+      ]
+    },
+    "it": {
+      "intro": "MLST amplia la gamma MAHE con la saldatura laser manuale. L’energia laser viene concentrata nella zona di giunzione mentre la pistola segue il cordone. La guida manuale permette di adattare il percorso della saldatura a giunti metallici preparati correttamente. La scelta considera materiale, spessore, accessibilità e geometria del giunto.",
+      "checks": [
+        "Per l’offerta indicate materiale, spessore, forma del giunto e lavoro previsto. Potenza laser, alimentazione, raffreddamento, trainafilo e dotazione vengono verificati per la versione MAHE scelta.",
+        "Pianificate la postazione prima della messa in servizio: area laser protetta e sorvegliata, protezioni laser adeguate, aspirazione e personale istruito. Definite le misure con il responsabile della sicurezza laser e in base alla documentazione dell’apparecchio."
+      ]
+    },
+    "en": {
+      "intro": "MLST adds handheld laser welding to the MAHE range. Concentrated laser energy is directed at the joint while the operator guides the welding gun along the seam. Manual guidance offers flexibility for suitably prepared metal joints. Equipment selection considers the material, wall thickness, access and joint geometry together.",
+      "checks": [
+        "For a quotation, state the material, thickness, joint form and production task. Laser power, electrical supply, cooling, wire feed and scope of supply are checked for the selected MAHE version.",
+        "Plan the workplace before commissioning: a protected, monitored laser area, suitable laser protective equipment, extraction and instructed personnel. Define the measures with the person responsible for laser safety and the equipment documentation."
+      ]
+    },
+    "es": {
+      "intro": "MLST amplía la gama MAHE con soldadura láser manual. La energía láser se concentra en la unión mientras el operario guía la pistola a lo largo de la junta. La guía manual permite adaptar la trayectoria a uniones metálicas correctamente preparadas. La selección del equipo considera el material, el espesor, el acceso y la geometría de la unión.",
+      "checks": [
+        "Para la oferta indique material, espesor, forma de la unión y trabajo previsto. Se comprueban potencia láser, alimentación, refrigeración, alimentación de hilo y suministro para la versión MAHE elegida.",
+        "Planifique el puesto antes de la puesta en servicio: zona láser protegida y vigilada, protección láser adecuada, extracción y personal instruido. Defina las medidas con la persona responsable de seguridad láser y según la documentación del equipo."
+      ]
+    }
+  },
+  "mlrm": {
+    "sources": [
+      "Inhaberangaben vom 02.11.2026: MAHE-Bezeichnung, Gerätezweck und bereitgestelltes Produktbild; MLRM 100–300 W",
+      "https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mlrc-3000"
+      }
+    ],
+    "de": {
+      "intro": "MAHE-Laserreinigungsgerät mit 100–300 W Laserleistung je Ausführung. Die Auswahl richtet sich nach Bauteil, Oberfläche und gewünschtem Reinigungsergebnis.",
+      "checks": [
+        "Für die Auswahl sind Untergrund, zu entfernende Schicht, Bauteilgeometrie und gewünschtes Oberflächenergebnis entscheidend. Eine anwendungsbezogene Prüfung klärt das geeignete Gerät und die Einstellungen.",
+        "Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen."
+      ]
+    },
+    "fr": {
+      "intro": "Appareil de nettoyage laser MAHE de 100 à 300 W selon la version. Le choix dépend de la pièce, de la surface et du résultat de nettoyage recherché.",
+      "checks": [
+        "Le support, la couche à enlever, la géométrie de la pièce et le résultat de surface recherché déterminent le choix. Une évaluation de l’application précise l’appareil et les réglages adaptés.",
+        "Préparez le poste avant la mise en service : zone laser protégée et surveillée, protections laser adaptées, aspiration et personnel instruit. Définissez les mesures avec la personne responsable de la sécurité laser et selon la documentation de l’appareil."
+      ]
+    },
+    "it": {
+      "intro": "Apparecchio MAHE per la pulizia laser da 100 a 300 W secondo la versione. La scelta dipende dal pezzo, dalla superficie e dal risultato desiderato.",
+      "checks": [
+        "La scelta dipende dal substrato, dallo strato da rimuovere, dalla geometria del pezzo e dal risultato superficiale desiderato. Una verifica dell’applicazione definisce apparecchio e parametri adatti.",
+        "Pianificate la postazione prima della messa in servizio: area laser protetta e sorvegliata, protezioni laser adeguate, aspirazione e personale istruito. Definite le misure con il responsabile della sicurezza laser e in base alla documentazione dell’apparecchio."
+      ]
+    },
+    "en": {
+      "intro": "MAHE laser cleaning equipment with 100–300 W laser power, depending on the version. Selection depends on the component, surface and required cleaning result.",
+      "checks": [
+        "Selection depends on the substrate, layer to be removed, component geometry and required surface result. An application assessment determines the suitable equipment and settings.",
+        "Plan the workplace before commissioning: a protected, monitored laser area, suitable laser protective equipment, extraction and instructed personnel. Define the measures with the person responsible for laser safety and the equipment documentation."
+      ]
+    },
+    "es": {
+      "intro": "Equipo MAHE de limpieza láser de 100 a 300 W según la versión. La selección depende de la pieza, la superficie y el resultado de limpieza deseado.",
+      "checks": [
+        "La selección depende del sustrato, la capa que se desea retirar, la geometría de la pieza y el acabado requerido. Una evaluación de la aplicación determina el equipo y los ajustes adecuados.",
+        "Planifique el puesto antes de la puesta en servicio: zona láser protegida y vigilada, protección láser adecuada, extracción y personal instruido. Defina las medidas con la persona responsable de seguridad láser y según la documentación del equipo."
+      ]
+    }
+  },
+  "mlrc-3000": {
+    "sources": [
+      "Inhaberangaben vom 02.11.2026: MAHE-Bezeichnung, Gerätezweck und bereitgestelltes Produktbild; MLRC 3000 ist die Modellbezeichnung; Wattzahl nicht bestätigt",
+      "https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mlrm"
+      }
+    ],
+    "de": {
+      "intro": "MAHE-Laserreinigungsgerät für die professionelle Oberflächenbearbeitung. VES-TECH klärt die passende Ausführung und den Lieferumfang für Ihre Reinigungsaufgabe.",
+      "checks": [
+        "Für die Auswahl sind Untergrund, zu entfernende Schicht, Bauteilgeometrie und gewünschtes Oberflächenergebnis entscheidend. Eine anwendungsbezogene Prüfung klärt das geeignete Gerät und die Einstellungen.",
+        "Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen."
+      ]
+    },
+    "fr": {
+      "intro": "Appareil de nettoyage laser MAHE pour le traitement professionnel des surfaces. VES-TECH précise la version et les éléments fournis selon votre application.",
+      "checks": [
+        "Le support, la couche à enlever, la géométrie de la pièce et le résultat de surface recherché déterminent le choix. Une évaluation de l’application précise l’appareil et les réglages adaptés.",
+        "Préparez le poste avant la mise en service : zone laser protégée et surveillée, protections laser adaptées, aspiration et personnel instruit. Définissez les mesures avec la personne responsable de la sécurité laser et selon la documentation de l’appareil."
+      ]
+    },
+    "it": {
+      "intro": "Apparecchio MAHE per la pulizia laser e il trattamento professionale delle superfici. VES-TECH definisce la versione e la dotazione in base all’applicazione.",
+      "checks": [
+        "La scelta dipende dal substrato, dallo strato da rimuovere, dalla geometria del pezzo e dal risultato superficiale desiderato. Una verifica dell’applicazione definisce apparecchio e parametri adatti.",
+        "Pianificate la postazione prima della messa in servizio: area laser protetta e sorvegliata, protezioni laser adeguate, aspirazione e personale istruito. Definite le misure con il responsabile della sicurezza laser e in base alla documentazione dell’apparecchio."
+      ]
+    },
+    "en": {
+      "intro": "MAHE laser cleaning equipment for professional surface treatment. VES-TECH clarifies the equipment version and scope of supply for your cleaning task.",
+      "checks": [
+        "Selection depends on the substrate, layer to be removed, component geometry and required surface result. An application assessment determines the suitable equipment and settings.",
+        "Plan the workplace before commissioning: a protected, monitored laser area, suitable laser protective equipment, extraction and instructed personnel. Define the measures with the person responsible for laser safety and the equipment documentation."
+      ]
+    },
+    "es": {
+      "intro": "Equipo MAHE de limpieza láser para el tratamiento profesional de superficies. VES-TECH concreta la versión y el suministro según la tarea de limpieza.",
+      "checks": [
+        "La selección depende del sustrato, la capa que se desea retirar, la geometría de la pieza y el acabado requerido. Una evaluación de la aplicación determina el equipo y los ajustes adecuados.",
+        "Planifique el puesto antes de la puesta en servicio: zona láser protegida y vigilada, protección láser adecuada, extracción y personal instruido. Defina las medidas con la persona responsable de seguridad láser y según la documentación del equipo."
+      ]
+    }
   }
 }

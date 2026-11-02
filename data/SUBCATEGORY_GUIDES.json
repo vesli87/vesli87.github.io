@@ -220,6 +220,73 @@
           ]
         ]
       }
+    },
+    "Laserschweissen": {
+      "de": {
+        "intro": "Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.",
+        "criteria": [
+          [
+            "Anwendung und Ausführung",
+            "Für Ihr Angebot: Werkstoff, Dicke, Nahtform und Produktionsaufgabe angeben. Laserleistung, Stromversorgung, Kühlung, Drahtvorschub und Lieferumfang werden für die gewählte MAHE-Ausführung abgeglichen."
+          ],
+          [
+            "Laserarbeitsplatz planen",
+            "Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "Système de soudage laser manuel de 1500 à 3000 W selon la version. Pour l’assemblage ciblé de pièces métalliques en atelier et en production.",
+        "criteria": [
+          [
+            "Application et version",
+            "Pour votre offre, indiquez matériau, épaisseur, forme du joint et travail prévu. Puissance laser, alimentation, refroidissement, dévidage et éléments fournis sont vérifiés pour la version MAHE choisie."
+          ],
+          [
+            "Préparer le poste laser",
+            "Préparez le poste avant la mise en service : zone laser protégée et surveillée, protections laser adaptées, aspiration et personnel instruit. Définissez les mesures avec la personne responsable de la sécurité laser et selon la documentation de l’appareil."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "Sistema di saldatura laser manuale da 1500 a 3000 W secondo la versione. Per unire componenti metallici in officina e in produzione.",
+        "criteria": [
+          [
+            "Applicazione e versione",
+            "Per l’offerta indicate materiale, spessore, forma del giunto e lavoro previsto. Potenza laser, alimentazione, raffreddamento, trainafilo e dotazione vengono verificati per la versione MAHE scelta."
+          ],
+          [
+            "Pianificare la postazione laser",
+            "Pianificate la postazione prima della messa in servizio: area laser protetta e sorvegliata, protezioni laser adeguate, aspirazione e personale istruito. Definite le misure con il responsabile della sicurezza laser e in base alla documentazione dell’apparecchio."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "Handheld laser welding system with 1500–3000 W laser power, depending on the version. For joining metal components in the workshop and in production.",
+        "criteria": [
+          [
+            "Application and version",
+            "For a quotation, state the material, thickness, joint form and production task. Laser power, electrical supply, cooling, wire feed and scope of supply are checked for the selected MAHE version."
+          ],
+          [
+            "Plan the laser workplace",
+            "Plan the workplace before commissioning: a protected, monitored laser area, suitable laser protective equipment, extraction and instructed personnel. Define the measures with the person responsible for laser safety and the equipment documentation."
+          ]
+        ]
+      },
+      "es": {
+        "intro": "Sistema de soldadura láser manual de 1500 a 3000 W según la versión. Para unir componentes metálicos en taller y en producción.",
+        "criteria": [
+          [
+            "Aplicación y versión",
+            "Para la oferta indique material, espesor, forma de la unión y trabajo previsto. Se comprueban potencia láser, alimentación, refrigeración, alimentación de hilo y suministro para la versión MAHE elegida."
+          ],
+          [
+            "Planificar el puesto láser",
+            "Planifique el puesto antes de la puesta en servicio: zona láser protegida y vigilada, protección láser adecuada, extracción y personal instruido. Defina las medidas con la persona responsable de seguridad láser y según la documentación del equipo."
+          ]
+        ]
+      }
     }
   },
   "plasmaschneiden": {
@@ -730,6 +797,73 @@
           [
             "Tamaño de envase y documentación",
             "Indique el equipo, el material y el tamaño de envase necesario. Los tamaños disponibles figuran en la página de producto; siga las instrucciones y la ficha de seguridad antes del uso."
+          ]
+        ]
+      }
+    },
+    "Laserreinigung": {
+      "de": {
+        "intro": "MAHE MLRM und MLRC 3000 bilden den Bereich Laserreinigung. Vergleichen Sie die Geräte nach Oberfläche, Reinigungsaufgabe und benötigter Ausstattung.",
+        "criteria": [
+          [
+            "Anwendung und Ausführung",
+            "Für die Auswahl sind Untergrund, zu entfernende Schicht, Bauteilgeometrie und gewünschtes Oberflächenergebnis entscheidend. Eine anwendungsbezogene Prüfung klärt das geeignete Gerät und die Einstellungen."
+          ],
+          [
+            "Laserarbeitsplatz planen",
+            "Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen."
+          ]
+        ]
+      },
+      "fr": {
+        "intro": "MAHE MLRM et MLRC 3000 composent la gamme de nettoyage laser. Comparez les appareils selon la surface, le travail et l’équipement nécessaire.",
+        "criteria": [
+          [
+            "Application et version",
+            "Le support, la couche à enlever, la géométrie de la pièce et le résultat de surface recherché déterminent le choix. Une évaluation de l’application précise l’appareil et les réglages adaptés."
+          ],
+          [
+            "Préparer le poste laser",
+            "Préparez le poste avant la mise en service : zone laser protégée et surveillée, protections laser adaptées, aspiration et personnel instruit. Définissez les mesures avec la personne responsable de la sécurité laser et selon la documentation de l’appareil."
+          ]
+        ]
+      },
+      "it": {
+        "intro": "MAHE MLRM e MLRC 3000 compongono la gamma per la pulizia laser. Confrontate gli apparecchi in base a superficie, lavoro e dotazione necessaria.",
+        "criteria": [
+          [
+            "Applicazione e versione",
+            "La scelta dipende dal substrato, dallo strato da rimuovere, dalla geometria del pezzo e dal risultato superficiale desiderato. Una verifica dell’applicazione definisce apparecchio e parametri adatti."
+          ],
+          [
+            "Pianificare la postazione laser",
+            "Pianificate la postazione prima della messa in servizio: area laser protetta e sorvegliata, protezioni laser adeguate, aspirazione e personale istruito. Definite le misure con il responsabile della sicurezza laser e in base alla documentazione dell’apparecchio."
+          ]
+        ]
+      },
+      "en": {
+        "intro": "MAHE MLRM and MLRC 3000 form the laser cleaning range. Compare equipment according to the surface, cleaning task and required accessories.",
+        "criteria": [
+          [
+            "Application and version",
+            "Selection depends on the substrate, layer to be removed, component geometry and required surface result. An application assessment determines the suitable equipment and settings."
+          ],
+          [
+            "Plan the laser workplace",
+            "Plan the workplace before commissioning: a protected, monitored laser area, suitable laser protective equipment, extraction and instructed personnel. Define the measures with the person responsible for laser safety and the equipment documentation."
+          ]
+        ]
+      },
+      "es": {
+        "intro": "MAHE MLRM y MLRC 3000 forman la gama de limpieza láser. Compare los equipos según superficie, tarea de limpieza y accesorios necesarios.",
+        "criteria": [
+          [
+            "Aplicación y versión",
+            "La selección depende del sustrato, la capa que se desea retirar, la geometría de la pieza y el acabado requerido. Una evaluación de la aplicación determina el equipo y los ajustes adecuados."
+          ],
+          [
+            "Planificar el puesto láser",
+            "Planifique el puesto antes de la puesta en servicio: zona láser protegida y vigilada, protección láser adecuada, extracción y personal instruido. Defina las medidas con la persona responsable de seguridad láser y según la documentación del equipo."
           ]
         ]
       }

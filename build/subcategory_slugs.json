@@ -152,5 +152,19 @@
     "it": "microplasma",
     "en": "microplasma",
     "es": "microplasma"
+  },
+  "Laserschweissen": {
+    "de": "laserschweissen",
+    "fr": "soudage-laser",
+    "it": "saldatura-laser",
+    "en": "laser-welding",
+    "es": "soldadura-laser"
+  },
+  "Laserreinigung": {
+    "de": "laserreinigung",
+    "fr": "nettoyage-laser",
+    "it": "pulizia-laser",
+    "en": "laser-cleaning",
+    "es": "limpieza-laser"
   }
 }

@@ -428,7 +428,7 @@ class GeneratorTests(unittest.TestCase):
                            for lang in C.LANGS)}
         actual = {(cid, sub) for cid, subs in C.SUBCATEGORY_GUIDES.items() for sub in subs}
         self.assertEqual(actual, expected)
-        self.assertEqual(len(expected), 21)
+        self.assertEqual(len(expected), 23)
         self.assertNotIn(('schweissgeraete', 'Plasma TIG'), actual)
         intros = {lang: set() for lang in C.LANGS}
         rendered = 0
@@ -452,8 +452,8 @@ class GeneratorTests(unittest.TestCase):
                         self.assertIn(f'<dt>{R.e(title)}</dt><dd>{R.e(text)}</dd>', main)
                     self.assertIn(PG.category_contact_url(lang, cid, sub), MainLinks(page).links)
                     rendered += 1
-        self.assertEqual(rendered, 21 * len(C.LANGS))
-        self.assertEqual(len(set().union(*intros.values())), 21 * len(C.LANGS))
+        self.assertEqual(rendered, 23 * len(C.LANGS))
+        self.assertEqual(len(set().union(*intros.values())), 23 * len(C.LANGS))
 
     def test_subcategory_copy_is_text_not_executable_markup(self):
         payload = '<img src=x onerror="alert(1)"> & "quoted"'

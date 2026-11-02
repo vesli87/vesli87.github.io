@@ -106,5 +106,17 @@
     "it": "Microplasma",
     "en": "Microplasma",
     "es": "Microplasma"
+  },
+  "Laserschweissen": {
+    "fr": "Soudage laser manuel",
+    "it": "Saldatura laser manuale",
+    "en": "Handheld laser welding",
+    "es": "Soldadura láser manual"
+  },
+  "Laserreinigung": {
+    "fr": "Nettoyage laser",
+    "it": "Pulizia laser",
+    "en": "Laser cleaning",
+    "es": "Limpieza láser"
   }
 }

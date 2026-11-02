@@ -1161,5 +1161,44 @@
   "source": "Document supplied by the proprietor; permission to publish on 2026-10-20",
   "source_sha256": "6cd18e2aa93435e6e60b2d033d51d322ae11101847f192080e0fc0c5e027891e",
   "w": 1448
+ },
+ "laser/mahe-mlst.png": {
+  "key": "mahe-mlst-50007f",
+  "w": 1199,
+  "h": 1312,
+  "ratio": 1.0942,
+  "sizes": [
+   400,
+   1000,
+   1199
+  ],
+  "local": true,
+  "folder": "p"
+ },
+ "laser/mahe-mlrm.png": {
+  "key": "mahe-mlrm-f4d25c",
+  "w": 1254,
+  "h": 1254,
+  "ratio": 1.0,
+  "sizes": [
+   400,
+   1000,
+   1254
+  ],
+  "local": true,
+  "folder": "p"
+ },
+ "laser/mahe-mlrc-3000.png": {
+  "key": "mahe-mlrc-3000-eb3ab9",
+  "w": 1095,
+  "h": 1437,
+  "ratio": 1.3123,
+  "sizes": [
+   400,
+   1000,
+   1095
+  ],
+  "local": true,
+  "folder": "p"
  }
 }

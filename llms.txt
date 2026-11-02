@@ -1,6 +1,6 @@
 # VES-TECH Swiss
 
-> MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Beratung und Verkauf von MAHE-Geräten. Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, CNC-Schneidtische, elektrolytische Reinigungs- und Signiergeräte, Automation sowie Zubehör. 81 Geräte, alle zum Preis auf Anfrage.
+> MAHE-Schweisstechnik, Schneidtechnik, Reinigung und Automation in Herisau AR. Beratung und Verkauf von MAHE-Geräten. Schweissgeräte (MIG/MAG, WIG/TIG, MMA, Plasma-TIG), Plasmaschneider, CNC-Schneidtische, elektrolytische Reinigungs- und Signiergeräte, Automation sowie Zubehör. 84 Geräte, alle zum Preis auf Anfrage.
 > Dazu generalüberholte Occasionen aus der Partnerwerkstatt: SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T, Oerlikon PlasmaFix 50 S (Mikroplasma-Schweissanlagen von SAF-FRO und Oerlikon). Verfügbarkeit auf Anfrage.
 
 ## Eckdaten
@@ -22,9 +22,9 @@
 - [Sitemap](https://www.ves-tech.ch/sitemap.xml)
 
 ## Kategorien
-- [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG. (15 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG)
+- [Schweissgeräte](https://www.ves-tech.ch/produkte/schweissgeraete/): MAHE-Schweisstechnik für MIG/MAG, WIG/TIG, MMA, Plasma/Mikroplasma und handgeführtes Laserschweissen. (16 Geräte: MIG / MAG, WIG / TIG, MMA, Plasma TIG, Laserschweissen)
 - [Plasmaschneiden](https://www.ves-tech.ch/produkte/plasmaschneiden/): Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT. (8 Geräte: Theta, Theta Automation, Schneidtische)
-- [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung. (12 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte)
+- [Reinigungsgeräte](https://www.ves-tech.ch/produkte/reinigungsgeraete/): MAHE-Geräte für Laserreinigung, elektrolytisches Reinigen und Polieren, Metallbeschriftung und automatische Dosierung. (14 Geräte: Cleaner, Signiergeräte, Dosiersystem, Elektrolyte, Laserreinigung)
 - [Zubehör](https://www.ves-tech.ch/produkte/zubehoer/): Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie. (44 Geräte: Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen, Werkstattausrüstung, Kabel, Brenner, Plasmabrenner, Verschleissteile, Schlauchpakete)
 - [Occasion](https://www.ves-tech.ch/produkte/occasion/): In Herisau generalüberholte Gebrauchtanlagen: komplett revidiert, mit ersetzter Wasserkühlung und Originalunterlagen des Herstellers. (2 Geräte: Mikroplasma)
 
@@ -45,6 +45,7 @@
 - [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
 - [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
 - [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte. (Plasma TIG / Mikroplasma)
+- [MAHE MLST](https://www.ves-tech.ch/produkte/schweissgeraete/mlst/): Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung. (Handgeführtes Laserschweissen)
 
 ### Plasmaschneiden
 - [MAHE Theta 40](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/): Leichtes 230-V-Plasmaschneidgerät für die Werkstatt. (Plasma Cut)
@@ -69,6 +70,8 @@
 - [MAHE Polierelektrolyt P1](https://www.ves-tech.ch/produkte/reinigungsgeraete/p1/): Elektrolyt zum Elektropolieren und Beizen von Edelstahl. (Polieren)
 - [MAHE Neutralit N1](https://www.ves-tech.ch/produkte/reinigungsgeraete/n1/): Neutralisierer zum Abstoppen und Neutralisieren nach dem Reinigen. (Neutralisieren)
 - [MAHE Signierelektrolyt M1](https://www.ves-tech.ch/produkte/reinigungsgeraete/m1/): Elektrolyt zum elektrochemischen Signieren und Markieren von Metall. (Signieren)
+- [MAHE MLRM](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrm/): MAHE-Laserreinigungsgerät mit 100–300 W Laserleistung je Ausführung. Die Auswahl richtet sich nach Bauteil, Oberfläche und gewünschtem Reinigungsergebnis. (Laserreinigung)
+- [MAHE MLRC 3000](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrc-3000/): MAHE-Laserreinigungsgerät für die professionelle Oberflächenbearbeitung. VES-TECH klärt die passende Ausführung und den Lieferumfang für Ihre Reinigungsaufgabe. (Laserreinigung)
 
 ### Zubehör
 - [MAHE STT 30](https://www.ves-tech.ch/produkte/zubehoer/stt30/): Fahrwagen mit Gasflaschenhalter für WIG-Geräte und MIG-Geräte. (Fahrwagen)

@@ -7,10 +7,10 @@
       "es": "Equipos de soldadura"
     },
     "d": {
-      "fr": "Sources de courant haute performance MAHE avec technologie Upgrade pour MIG/MAG, TIG, MMA et Plasma-TIG.",
-      "it": "Generatori ad alte prestazioni MAHE con tecnologia Upgrade per MIG/MAG, TIG, MMA e Plasma-TIG.",
-      "en": "High-performance MAHE power sources with Upgrade technology for MIG/MAG, TIG, MMA and plasma TIG.",
-      "es": "Fuentes de corriente MAHE de alto rendimiento con tecnología Upgrade para MIG/MAG, TIG, MMA y TIG plasma."
+      "fr": "Technique de soudage MAHE pour MIG/MAG, TIG, MMA, plasma/microplasma et soudage laser manuel.",
+      "it": "Tecnologia di saldatura MAHE per MIG/MAG, TIG, MMA, plasma/microplasma e saldatura laser manuale.",
+      "en": "MAHE welding equipment for MIG/MAG, TIG, MMA, plasma/microplasma and handheld laser welding.",
+      "es": "Equipos MAHE para MIG/MAG, TIG, MMA, plasma/microplasma y soldadura láser manual."
     }
   },
   "plasmaschneiden": {
@@ -35,10 +35,10 @@
       "es": "Equipos de limpieza"
     },
     "d": {
-      "fr": "Nettoyage et polissage électrolytiques des soudures, marquage du métal et dosage automatique.",
-      "it": "Pulizia e lucidatura elettrolitiche delle saldature, marcatura del metallo e dosaggio automatico.",
-      "en": "Electrolytic weld cleaning and polishing, metal marking and automatic dosing.",
-      "es": "Limpieza y pulido electrolíticos de soldaduras, marcado de metales y dosificación automática."
+      "fr": "Appareils MAHE pour le nettoyage laser, le nettoyage et le polissage électrolytiques, le marquage du métal et le dosage automatique.",
+      "it": "Apparecchi MAHE per pulizia laser, pulizia e lucidatura elettrolitiche, marcatura dei metalli e dosaggio automatico.",
+      "en": "MAHE equipment for laser cleaning, electrolytic cleaning and polishing, metal marking and automatic dosing.",
+      "es": "Equipos MAHE para limpieza láser, limpieza y pulido electrolíticos, marcado de metales y dosificación automática."
     }
   },
   "zubehoer": {

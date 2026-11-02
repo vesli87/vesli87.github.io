@@ -6,11 +6,11 @@ VES-TECH Swiss bietet Beratung und Verkauf von MAHE-Geräten. Einzelunternehmen:
 ---
 
 ## Schweissgeräte
-Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG.
+MAHE-Schweisstechnik für MIG/MAG, WIG/TIG, MMA, Plasma/Mikroplasma und handgeführtes Laserschweissen.
 
 ### Welches Schweissgerät passt zu Ihrer Arbeit?
 Quelle: https://www.ves-tech.ch/produkte/schweissgeraete/
-Eine sinnvolle Auswahl beginnt beim Werkstück: Nennen Sie VES-TECH Swiss den Werkstoff, die Materialdicke und das gewünschte Verfahren. Im Katalog sind MIG/MAG, WIG/TIG, MMA und Plasma TIG getrennt aufgeführt. Vergleichen Sie danach die technischen Daten der konkreten Modellvariante.
+Die Auswahl beginnt beim Werkstück: Nennen Sie Werkstoff, Materialdicke und gewünschtes Verfahren. Der Katalog unterscheidet MIG/MAG, WIG/TIG, MMA, Plasma/Mikroplasma und Laserschweissen. Vergleichen Sie die konkrete Geräteausführung.
 - Werkstoff und Ergebnis: Beschreiben Sie Stahl, Edelstahl oder Aluminium, die Verbindung und die Anforderungen an die Naht. Ein Gerätename allein beantwortet noch nicht, welche Ausstattung für diese Aufgabe nötig ist.
 - Netzanschluss und Arbeitsdauer: Prüfen Sie Netzspannung, Absicherung und Einschaltdauer in der jeweiligen Datentabelle. Teilen Sie mit, ob das Gerät stationär oder auf wechselnden Arbeitsplätzen eingesetzt wird.
 - Komplette Konfiguration: Geben Sie vorhandene Brenner, Kühlung und Zubehör an. VES-TECH klärt die Kombination und erstellt ein Angebot für die gewünschte Anlage; Preis und Liefertermin werden auf Anfrage bestätigt.
@@ -592,6 +592,17 @@ Technische Daten – Plasma TIG:
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 
+### MAHE MLST
+URL: https://www.ves-tech.ch/produkte/schweissgeraete/mlst/
+Kategorie: Schweissgeräte / Laserschweissen · Typ: Handgeführtes Laserschweissen · Art.-Nr.: MLST · Preis: auf Anfrage (CHF)
+Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.
+MLST ergänzt das MAHE-Programm um handgeführtes Laserschweissen. Gebündelte Laserenergie wird gezielt an der Fügestelle eingebracht, während die Pistole entlang der Naht geführt wird. Das ermöglicht eine flexible Nahtführung an passend vorbereiteten Metallverbindungen. Für eine belastbare Gerätewahl betrachten wir Werkstoff, Wandstärke, Zugänglichkeit und Nahtgeometrie gemeinsam.
+- Für Ihr Angebot: Werkstoff, Dicke, Nahtform und Produktionsaufgabe angeben. Laserleistung, Stromversorgung, Kühlung, Drahtvorschub und Lieferumfang werden für die gewählte MAHE-Ausführung abgeglichen.
+- Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen.
+Weiterführend: [MAHE Omega AX](https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/)
+Weiterführend: [MAHE HyperMIG TWIN](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/)
+Ausstattung: Verfahren: Handgeführtes Laserschweissen; Laserleistung: 1500–3000 W, je Ausführung.
+
 ## Plasmaschneiden
 Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT.
 
@@ -819,11 +830,11 @@ Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
 
 ## Reinigungsgeräte
-Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.
+MAHE-Geräte für Laserreinigung, elektrolytisches Reinigen und Polieren, Metallbeschriftung und automatische Dosierung.
 
 ### Reinigen, Signieren oder Verbrauchsmaterial ergänzen?
 Quelle: https://www.ves-tech.ch/produkte/reinigungsgeraete/
-Beginnen Sie die Auswahl mit dem gewünschten Arbeitsschritt. VES-TECH Swiss führt elektrolytische Cleaner, Signiergeräte, ein Dosiersystem und Elektrolyte in getrennten Bereichen. Gerät und Verbrauchsmaterial müssen zum vorgesehenen Verfahren passen.
+Wählen Sie nach dem gewünschten Arbeitsschritt: Laserreinigung, elektrolytische Nahtreinigung, Signieren oder Dosieren. VES-TECH Swiss führt diese Verfahren in getrennten Bereichen. Gerät und Ausstattung müssen zur Oberfläche und Aufgabe passen.
 - Oberfläche und Aufgabe: Beschreiben Sie Werkstoff, Oberflächenzustand und das gewünschte Ergebnis. Ein Foto der Naht oder einer Beispielmarkierung hilft bei der Rückfrage.
 - Vorhandenes Gerät: Für Bürsten, Elektrolyte und Ergänzungen benötigen wir die genaue Gerätebezeichnung. Prüfen Sie die Anleitung und die Unterlagen zum jeweiligen Mittel; eine ähnliche Produktbezeichnung belegt keine Austauschbarkeit.
 - Umfang der Anfrage: Nennen Sie die typische Einsatzdauer und ob ein einzelnes Gerät oder eine komplette Ausstattung gesucht wird. So lassen sich Lieferumfang, Optionen und Verbrauchsmaterial im Angebot sauber unterscheiden.
@@ -1054,6 +1065,26 @@ Weiterführend: [MAHE HCS 1](https://www.ves-tech.ch/produkte/reinigungsgeraete/
 Weiterführend: [MAHE Reinigungselektrolyt Rapid R1](https://www.ves-tech.ch/produkte/reinigungsgeraete/r1/)
 Ausstattung: Typ: Signieren; Anwendung: Markieren; Gebinde: 0,1 / 0,5 / 1,0 L; Sicherheitsdatenblatt: M1.
 Passendes Zubehör: HyperCleaner ST, HyperCleaner ST Plus, MiniReiniger, MHCT 01.
+
+### MAHE MLRM
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrm/
+Kategorie: Reinigungsgeräte / Laserreinigung · Typ: Laserreinigung · Art.-Nr.: MLRM · Preis: auf Anfrage (CHF)
+MAHE-Laserreinigungsgerät mit 100–300 W Laserleistung je Ausführung. Die Auswahl richtet sich nach Bauteil, Oberfläche und gewünschtem Reinigungsergebnis.
+MAHE-Laserreinigungsgerät mit 100–300 W Laserleistung je Ausführung. Die Auswahl richtet sich nach Bauteil, Oberfläche und gewünschtem Reinigungsergebnis.
+- Für die Auswahl sind Untergrund, zu entfernende Schicht, Bauteilgeometrie und gewünschtes Oberflächenergebnis entscheidend. Eine anwendungsbezogene Prüfung klärt das geeignete Gerät und die Einstellungen.
+- Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen.
+Weiterführend: [MAHE MLRC 3000](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrc-3000/)
+Ausstattung: Verfahren: Laserreinigung; Laserleistung: 100–300 W, je Ausführung.
+
+### MAHE MLRC 3000
+URL: https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrc-3000/
+Kategorie: Reinigungsgeräte / Laserreinigung · Typ: Laserreinigung · Art.-Nr.: MLRC-3000 · Preis: auf Anfrage (CHF)
+MAHE-Laserreinigungsgerät für die professionelle Oberflächenbearbeitung. VES-TECH klärt die passende Ausführung und den Lieferumfang für Ihre Reinigungsaufgabe.
+MAHE-Laserreinigungsgerät für die professionelle Oberflächenbearbeitung. VES-TECH klärt die passende Ausführung und den Lieferumfang für Ihre Reinigungsaufgabe.
+- Für die Auswahl sind Untergrund, zu entfernende Schicht, Bauteilgeometrie und gewünschtes Oberflächenergebnis entscheidend. Eine anwendungsbezogene Prüfung klärt das geeignete Gerät und die Einstellungen.
+- Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen.
+Weiterführend: [MAHE MLRM](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrm/)
+Ausstattung: Verfahren: Laserreinigung; Modell: MLRC 3000.
 
 ## Zubehör
 Fahrwagen, Wasserkühlung, Drahtvorschubkoffer, Fernbedienungen und Werkstattausrüstung, abgestimmt auf jede MAHE-Serie.

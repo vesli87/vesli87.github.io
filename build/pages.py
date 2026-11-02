@@ -1026,6 +1026,8 @@ def page_product(lang, p):
     # gebrauchten Anlage nicht, und ein Versprechen, das niemand einloesen
     # kann, waere eine Taeuschung ueber die Beschaffenheit.
     intro_key = "prod_intro_occ_tpl" if p["cat"] == "occasion" else "prod_intro_tpl"
+    if p["sub"] in ("Laserschweissen", "Laserreinigung"):
+        intro_key = "prod_intro_laser_tpl"
     if p.get("models"):
         intro_key = "prod_intro_occ_models"
     # Was an einer Gebrauchtmaschine gemacht wurde, ist die wichtigste Angabe

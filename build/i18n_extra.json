@@ -21,7 +21,7 @@
     "home_desc": "MAHE für Schweissen, Plasmaschneiden, Reinigung und Automation in der Schweiz. Revidierte PlasmaFix-Occasionen und Service in Herisau AR nach Vereinbarung.",
     "home_h1": "MAHE-Technik zum Schweissen, Schneiden, Reinigen und Automatisieren",
     "all_title": "Alle Geräte · MAHE-Programm und Occasionen | VES-TECH Swiss",
-    "all_desc": "{n} Geräte bei VES-TECH Swiss: MAHE-Programm für MIG/MAG, WIG/TIG, MMA, Plasmaschneiden und elektrolytische Reinigung, dazu Occasionen. Preis auf Anfrage.",
+    "all_desc": "{n} Geräte: MAHE-Schweisstechnik, Laserschweissen, Plasmaschneiden, Laser- und elektrolytische Reinigung sowie Occasionen. Preis auf Anfrage.",
     "all_h1": "Alle Geräte",
     "all_lead": "Das MAHE-Programm, übersichtlich nach Verfahren geordnet, ergänzt durch geprüfte Occasionen. Mit Schweizer Service und persönlicher Beratung durch den Techniker.",
     "subcategory_guide_title": "Worauf es bei der Auswahl ankommt",
@@ -715,7 +715,8 @@
     },
     "company_uid_label": "UID",
     "print_page": "Seite drucken / PDF",
-    "print_contact_label": "Kontakt für Beratung und Offerte"
+    "print_contact_label": "Kontakt für Beratung und Offerte",
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss berät zur Auswahl und erstellt ein auf Ihre Anwendung abgestimmtes Angebot. Ausführung, Lieferumfang und Übergabe in der Schweiz oder Liechtenstein werden im Angebot vereinbart."
   },
   "fr": {
     "locale": "fr_CH",
@@ -738,7 +739,7 @@
     "home_desc": "MAHE en Suisse : soudage, découpe plasma, nettoyage et automatisation. Occasions PlasmaFix révisées et service à Herisau AR sur rendez-vous.",
     "home_h1": "Soudage, découpe, nettoyage et automatisation MAHE en Suisse",
     "all_title": "Tous les appareils · gamme MAHE et occasions | VES-TECH Swiss",
-    "all_desc": "{n} appareils chez VES-TECH Swiss : gamme MAHE pour MIG/MAG, TIG, MMA, découpe plasma et nettoyage électrolytique ; machines d’occasion. Prix sur demande.",
+    "all_desc": "{n} appareils : soudage MAHE, soudage laser, découpe plasma, nettoyage laser et électrolytique, occasions. Conseil et prix sur demande.",
     "all_h1": "Tous les appareils",
     "all_lead": "Toute la gamme MAHE, classée par procédé, ainsi que des machines d’occasion contrôlées. Service en Suisse et conseil direct du technicien.",
     "subcategory_guide_title": "Les points à vérifier pour choisir",
@@ -1432,7 +1433,8 @@
     },
     "company_uid_label": "IDE",
     "print_page": "Imprimer la page / PDF",
-    "print_contact_label": "Contact pour conseil et offre"
+    "print_contact_label": "Contact pour conseil et offre",
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss vous conseille et prépare une offre adaptée à votre application. La version, les éléments fournis et la remise en Suisse ou au Liechtenstein sont définis dans l’offre."
   },
   "it": {
     "locale": "it_CH",
@@ -1455,7 +1457,7 @@
     "home_desc": "MAHE in Svizzera: saldatura, taglio al plasma, pulizia e automazione. PlasmaFix usate revisionate e assistenza a Herisau AR su appuntamento.",
     "home_h1": "Tecnologie MAHE per saldatura, taglio, pulizia e automazione in Svizzera",
     "all_title": "Tutti gli apparecchi · gamma MAHE e usato | VES-TECH Swiss",
-    "all_desc": "{n} apparecchi da VES-TECH Swiss: la gamma MAHE per MIG/MAG, TIG, MMA, taglio al plasma e pulizia elettrolitica, più macchine usate. Prezzo su richiesta.",
+    "all_desc": "{n} apparecchi: saldatura MAHE, laser, taglio plasma, pulizia laser ed elettrolitica e occasioni. Consulenza e prezzo su richiesta.",
     "all_h1": "Tutti gli apparecchi",
     "all_lead": "L’intera gamma MAHE, organizzata per processo, insieme alle macchine usate controllate. Assistenza in Svizzera e consulenza diretta del tecnico.",
     "subcategory_guide_title": "Cosa valutare nella scelta",
@@ -2149,7 +2151,8 @@
     },
     "company_uid_label": "IDI",
     "print_page": "Stampa pagina / PDF",
-    "print_contact_label": "Contatto per consulenza e offerta"
+    "print_contact_label": "Contatto per consulenza e offerta",
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss offre consulenza e prepara un’offerta adatta all’applicazione. Versione, dotazione e consegna in Svizzera o nel Liechtenstein vengono concordate nell’offerta."
   },
   "en": {
     "locale": "en_CH",
@@ -2172,7 +2175,7 @@
     "home_desc": "MAHE welding, plasma cutting, cleaning and automation in Switzerland. Refurbished PlasmaFix equipment and service in Herisau AR by appointment.",
     "home_h1": "MAHE equipment for welding, cutting, cleaning and automation",
     "all_title": "All Equipment · MAHE Range & Used Machines | VES-TECH Swiss",
-    "all_desc": "{n} items at VES-TECH Swiss: MAHE MIG/MAG, TIG, MMA, plasma cutting and electrolytic cleaning equipment, plus used machines. Prices on request.",
+    "all_desc": "{n} products: MAHE welding, laser welding, plasma cutting, laser and electrolytic cleaning, plus used equipment. Advice and price on request.",
     "all_h1": "All equipment",
     "all_lead": "The MAHE range, organised by process, alongside inspected used equipment. Service in Switzerland and personal advice from the technician.",
     "subcategory_guide_title": "What to consider when choosing equipment",
@@ -2866,7 +2869,8 @@
     },
     "company_uid_label": "UID",
     "print_page": "Print page / PDF",
-    "print_contact_label": "Contact for advice and quotation"
+    "print_contact_label": "Contact for advice and quotation",
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss advises on selection and prepares a quotation for your application. Equipment version, scope of supply and handover in Switzerland or Liechtenstein are agreed in the quotation."
   },
   "es": {
     "locale": "es_CH",
@@ -2889,7 +2893,7 @@
     "home_desc": "Soldadura, corte por plasma, limpieza y automatización MAHE en Suiza. Equipos PlasmaFix reacondicionados y servicio en Herisau AR con cita previa.",
     "home_h1": "Equipos MAHE para soldadura, corte, limpieza y automatización",
     "all_title": "Todos los equipos · Gama MAHE y máquinas usadas | VES-TECH Swiss",
-    "all_desc": "{n} artículos: equipos MAHE MIG/MAG, TIG, MMA, corte por plasma y limpieza electrolítica, además de equipos usados. Precio bajo consulta.",
+    "all_desc": "{n} equipos: soldadura MAHE, láser, corte por plasma, limpieza láser y electrolítica y equipos usados. Asesoramiento y precio bajo consulta.",
     "all_h1": "Todos los equipos",
     "all_lead": "La gama MAHE, organizada por procesos, junto con equipos usados revisados. Servicio en Suiza y asesoramiento personal del técnico.",
     "subcategory_guide_title": "Qué tener en cuenta al elegir un equipo",
@@ -3583,6 +3587,7 @@
     },
     "company_uid_label": "UID",
     "print_page": "Imprimir página / PDF",
-    "print_contact_label": "Contacto para asesoramiento y oferta"
+    "print_contact_label": "Contacto para asesoramiento y oferta",
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss asesora en la selección y prepara una oferta adaptada a la aplicación. La versión, el suministro y la entrega en Suiza o Liechtenstein se acuerdan en la oferta."
   }
 }

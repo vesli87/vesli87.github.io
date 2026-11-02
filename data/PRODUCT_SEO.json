@@ -2185,5 +2185,86 @@
       "title": "Oerlikon PlasmaFix 50 S Microplasma usado a la venta | VES-TECH Swiss",
       "description": "Oerlikon PlasmaFix 50 S: equipo microplasma reacondicionado en Herisau. Visita con cita y precio bajo consulta."
     }
+  },
+  "mlst": {
+    "de": {
+      "type": "Handgeführtes Laserschweissgerät",
+      "title": "MAHE MLST: Handlaser 1500–3000 W | VES-TECH",
+      "description": "MAHE MLST: Handgeführtes Laserschweissen mit 1500–3000 W je Ausführung. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Poste de soudage laser manuel",
+      "title": "MAHE MLST : Laser manuel 1500–3000 W | VES-TECH",
+      "description": "MAHE MLST : soudage laser manuel de 1500 à 3000 W selon la version. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Saldatrice laser manuale",
+      "title": "MAHE MLST: Laser manuale 1500–3000 W | VES-TECH",
+      "description": "MAHE MLST: saldatura laser manuale da 1500 a 3000 W secondo la versione. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Handheld laser welder",
+      "title": "MAHE MLST: Handheld laser 1500–3000 W | VES-TECH",
+      "description": "MAHE MLST: handheld laser welding with 1500–3000 W, depending on version. Advice and price on request."
+    },
+    "es": {
+      "type": "Soldadora láser manual",
+      "title": "MAHE MLST: Láser manual 1500–3000 W | VES-TECH",
+      "description": "MAHE MLST: soldadura láser manual de 1500 a 3000 W según la versión. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mlrm": {
+    "de": {
+      "type": "Laserreinigungsgerät",
+      "title": "MAHE MLRM: Laserreinigung | VES-TECH",
+      "description": "MAHE MLRM: Laserreinigung mit 100–300 W je Ausführung. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Appareil de nettoyage laser",
+      "title": "MAHE MLRM : Nettoyage laser | VES-TECH",
+      "description": "MAHE MLRM : nettoyage laser de 100 à 300 W selon la version. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Apparecchio per pulizia laser",
+      "title": "MAHE MLRM: Pulizia laser | VES-TECH",
+      "description": "MAHE MLRM: pulizia laser da 100 a 300 W secondo la versione. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Laser cleaning equipment",
+      "title": "MAHE MLRM: Laser cleaning | VES-TECH",
+      "description": "MAHE MLRM: laser cleaning with 100–300 W, depending on version. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo de limpieza láser",
+      "title": "MAHE MLRM: Limpieza láser | VES-TECH",
+      "description": "MAHE MLRM: limpieza láser de 100 a 300 W según la versión. Asesoramiento y precio bajo consulta."
+    }
+  },
+  "mlrc-3000": {
+    "de": {
+      "type": "Laserreinigungsgerät",
+      "title": "MAHE MLRC 3000: Laserreinigung | VES-TECH",
+      "description": "MAHE MLRC 3000: Laserreinigungsgerät für professionelle Oberflächenbearbeitung. Beratung und Preis auf Anfrage."
+    },
+    "fr": {
+      "type": "Appareil de nettoyage laser",
+      "title": "MAHE MLRC 3000 : Nettoyage laser | VES-TECH",
+      "description": "MAHE MLRC 3000 : appareil de nettoyage laser pour le traitement des surfaces. Conseil et prix sur demande."
+    },
+    "it": {
+      "type": "Apparecchio per pulizia laser",
+      "title": "MAHE MLRC 3000: Pulizia laser | VES-TECH",
+      "description": "MAHE MLRC 3000: apparecchio per la pulizia laser delle superfici. Consulenza e prezzo su richiesta."
+    },
+    "en": {
+      "type": "Laser cleaning equipment",
+      "title": "MAHE MLRC 3000: Laser cleaning | VES-TECH",
+      "description": "MAHE MLRC 3000: laser cleaning equipment for professional surface treatment. Advice and price on request."
+    },
+    "es": {
+      "type": "Equipo de limpieza láser",
+      "title": "MAHE MLRC 3000: Limpieza láser | VES-TECH",
+      "description": "MAHE MLRC 3000: equipo de limpieza láser para el tratamiento de superficies. Asesoramiento y precio bajo consulta."
+    }
   }
 }

@@ -1279,5 +1279,65 @@
       },
       "u": "https://mahe-online.de/wp-content/uploads/2026/08/HyperMIG_X_TWIN.pdf"
     }
+  ],
+  "mlst": [
+    {
+      "k": "INFO",
+      "t": {
+        "de": "Laserschweissen und Laserreinigen: sichere Anwendung",
+        "fr": "Soudage et nettoyage laser : utilisation sûre",
+        "it": "Saldatura e pulizia laser: uso sicuro",
+        "en": "Laser welding and cleaning: safe use",
+        "es": "Soldadura y limpieza láser: uso seguro"
+      },
+      "s": {
+        "de": "Suva · Hinweise zum Laserarbeitsplatz · deutsch",
+        "fr": "Suva · Informations sur le poste laser · allemand",
+        "it": "Suva · Informazioni sulla postazione laser · tedesco",
+        "en": "Suva · Laser workplace information · German",
+        "es": "Suva · Información sobre el puesto láser · alemán"
+      },
+      "u": "https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung"
+    }
+  ],
+  "mlrm": [
+    {
+      "k": "INFO",
+      "t": {
+        "de": "Laserschweissen und Laserreinigen: sichere Anwendung",
+        "fr": "Soudage et nettoyage laser : utilisation sûre",
+        "it": "Saldatura e pulizia laser: uso sicuro",
+        "en": "Laser welding and cleaning: safe use",
+        "es": "Soldadura y limpieza láser: uso seguro"
+      },
+      "s": {
+        "de": "Suva · Hinweise zum Laserarbeitsplatz · deutsch",
+        "fr": "Suva · Informations sur le poste laser · allemand",
+        "it": "Suva · Informazioni sulla postazione laser · tedesco",
+        "en": "Suva · Laser workplace information · German",
+        "es": "Suva · Información sobre el puesto láser · alemán"
+      },
+      "u": "https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung"
+    }
+  ],
+  "mlrc-3000": [
+    {
+      "k": "INFO",
+      "t": {
+        "de": "Laserschweissen und Laserreinigen: sichere Anwendung",
+        "fr": "Soudage et nettoyage laser : utilisation sûre",
+        "it": "Saldatura e pulizia laser: uso sicuro",
+        "en": "Laser welding and cleaning: safe use",
+        "es": "Soldadura y limpieza láser: uso seguro"
+      },
+      "s": {
+        "de": "Suva · Hinweise zum Laserarbeitsplatz · deutsch",
+        "fr": "Suva · Informations sur le poste laser · allemand",
+        "it": "Suva · Informazioni sulla postazione laser · tedesco",
+        "en": "Suva · Laser workplace information · German",
+        "es": "Suva · Información sobre el puesto láser · alemán"
+      },
+      "u": "https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung"
+    }
   ]
 }

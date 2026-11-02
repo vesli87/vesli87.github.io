@@ -642,5 +642,29 @@
     "it": "Inverter DC",
     "en": "DC inverter",
     "es": "Inversor DC"
+  },
+  "1500–3000 W, je Ausführung": {
+    "fr": "1500–3000 W, selon la version",
+    "it": "1500–3000 W, secondo la versione",
+    "en": "1500–3000 W, depending on the version",
+    "es": "1500–3000 W, según la versión"
+  },
+  "100–300 W, je Ausführung": {
+    "fr": "100–300 W, selon la version",
+    "it": "100–300 W, secondo la versione",
+    "en": "100–300 W, depending on the version",
+    "es": "100–300 W, según la versión"
+  },
+  "Handgeführtes Laserschweissen": {
+    "fr": "Soudage laser manuel",
+    "it": "Saldatura laser manuale",
+    "en": "Handheld laser welding",
+    "es": "Soldadura láser manual"
+  },
+  "Laserreinigung": {
+    "fr": "Nettoyage laser",
+    "it": "Pulizia laser",
+    "en": "Laser cleaning",
+    "es": "Limpieza láser"
   }
 }

@@ -484,5 +484,23 @@
     "it": "Torcia MIG/MAG raffreddata ad acqua con display grafico e comando a distanza, 500 A al 60 % di ciclo di lavoro, lunghezza di 4 m.",
     "en": "Water-cooled MIG/MAG torch with graphic display and remote control, rated at 500 A at 60 % duty cycle, 4 m long.",
     "es": "Antorcha MIG/MAG refrigerada por agua con pantalla gráfica y mando a distancia, capacidad de 500 A al 60 % del ciclo de trabajo y 4 m de longitud."
+  },
+  "mlst": {
+    "fr": "Système de soudage laser manuel de 1500 à 3000 W selon la version. Pour l’assemblage ciblé de pièces métalliques en atelier et en production.",
+    "it": "Sistema di saldatura laser manuale da 1500 a 3000 W secondo la versione. Per unire componenti metallici in officina e in produzione.",
+    "en": "Handheld laser welding system with 1500–3000 W laser power, depending on the version. For joining metal components in the workshop and in production.",
+    "es": "Sistema de soldadura láser manual de 1500 a 3000 W según la versión. Para unir componentes metálicos en taller y en producción."
+  },
+  "mlrm": {
+    "fr": "Appareil de nettoyage laser MAHE de 100 à 300 W selon la version. Le choix dépend de la pièce, de la surface et du résultat de nettoyage recherché.",
+    "it": "Apparecchio MAHE per la pulizia laser da 100 a 300 W secondo la versione. La scelta dipende dal pezzo, dalla superficie e dal risultato desiderato.",
+    "en": "MAHE laser cleaning equipment with 100–300 W laser power, depending on the version. Selection depends on the component, surface and required cleaning result.",
+    "es": "Equipo MAHE de limpieza láser de 100 a 300 W según la versión. La selección depende de la pieza, la superficie y el resultado de limpieza deseado."
+  },
+  "mlrc-3000": {
+    "fr": "Appareil de nettoyage laser MAHE pour le traitement professionnel des surfaces. VES-TECH précise la version et les éléments fournis selon votre application.",
+    "it": "Apparecchio MAHE per la pulizia laser e il trattamento professionale delle superfici. VES-TECH definisce la versione e la dotazione in base all’applicazione.",
+    "en": "MAHE laser cleaning equipment for professional surface treatment. VES-TECH clarifies the equipment version and scope of supply for your cleaning task.",
+    "es": "Equipo MAHE de limpieza láser para el tratamiento profesional de superficies. VES-TECH concreta la versión y el suministro según la tarea de limpieza."
   }
 }

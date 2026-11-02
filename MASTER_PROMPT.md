@@ -185,7 +185,7 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 
 | Datei | Inhalt |
 |---|---|
-| `P.json` | 81 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
+| `P.json` | 84 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
 | `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
 | `UI.json` | 157 UI-Strings × de/fr/it/en |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
@@ -1489,3 +1489,29 @@ S. 2 bestätigt die modellbezogenen Bereiche. Beide Original-PDFs sind bereits
 im Downloadbereich des Produkts verlinkt. `PRODUCT_GUIDES.fact_keys` darf
 höchstens zwei vorhandene, quellengeprüfte Merkmale aus `P.json` vor die
 gemeinsamen technischen Eckdaten stellen. Der Wert behält seine Modellangabe.
+
+
+## Neue MAHE-Laserprodukte vom 02.11.2026
+
+MLST steht unter Schweissgeräte / Laserschweissen, MLRM und MLRC 3000 unter
+Reinigungsgeräte / Laserreinigung. Produktseiten, Unterkategorien, Suchindizes,
+Anfrageliste und Metadaten sind in DE/FR/IT/EN/ES verfügbar. Der bestehende
+Startseitenwechsel behält seine sieben Geräte. Die gelieferten Fotos bleiben
+inhaltlich unverändert und liegen als lokale WebP-Dateien mit 400, 1000 und
+Originalbreite unter assets/img/p; das Manifest nennt ausdrücklich folder p.
+
+Bestätigt durch den Inhaber: MLST 1500–3000 W und MLRM 100–300 W, jeweils
+abhängig von der Ausführung. MLRC 3000 ist eine Modellbezeichnung; daraus
+keine Wattzahl ableiten. Ausführliche MAHE-Daten der Reinigungsgeräte stehen
+noch aus. Keine Betriebsart (CW/Puls), Netzwerte, Kühlung, Materialstärken,
+Geschwindigkeitsfaktoren, Zubehör oder Konformitätsnachweise ergänzen, bevor
+sie modellbezogen belegt sind. Die TRM-LWH-Seite und das genannte Konkurrenz-
+angebot liefern Verfahrenskontext, keine automatisch übertragbaren MAHE-Daten.
+PRODUCT_GUIDES hält diese Herkunft und die Grenzen fest.
+
+Die Laser-Einleitung beschreibt Beratung, Angebot und vereinbarte Übergabe;
+sie verwendet nicht das allgemeine Versprechen von Reparatur/Einrichtung
+in der Partnerwerkstatt. Die kurzen Hinweise zum Laserarbeitsplatz und die
+als INFO bezeichneten Suva-Verweise dienen der Einsatzplanung. Es handelt
+sich dabei nicht um ein MAHE-Handbuch oder eine Konformitätsbestätigung.
+Quelle: https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung

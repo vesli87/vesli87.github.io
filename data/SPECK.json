@@ -497,5 +497,17 @@
     "it": "Microplasma",
     "en": "Microplasma",
     "es": "Microplasma"
+  },
+  "Laserleistung": {
+    "fr": "Puissance laser",
+    "it": "Potenza laser",
+    "en": "Laser power",
+    "es": "Potencia láser"
+  },
+  "Modell": {
+    "fr": "Modèle",
+    "it": "Modello",
+    "en": "Model",
+    "es": "Modelo"
   }
 }

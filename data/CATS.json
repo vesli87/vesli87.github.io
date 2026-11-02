@@ -3,12 +3,13 @@
   "id": "schweissgeraete",
   "t": "Schweissgeräte",
   "pk": "mig",
-  "d": "Hochleistungsstromquellen von MAHE mit Upgrade-Technologie für MIG/MAG, WIG/TIG, MMA und Plasma-TIG.",
+  "d": "MAHE-Schweisstechnik für MIG/MAG, WIG/TIG, MMA, Plasma/Mikroplasma und handgeführtes Laserschweissen.",
   "subs": [
    "MIG / MAG",
    "WIG / TIG",
    "MMA",
-   "Plasma TIG"
+   "Plasma TIG",
+   "Laserschweissen"
   ]
  },
  {
@@ -26,12 +27,13 @@
   "id": "reinigung",
   "t": "Reinigungsgeräte",
   "pk": "clean",
-  "d": "Elektrolytisches Reinigen und Polieren von Schweissnähten, Signieren von Metall und automatische Dosierung.",
+  "d": "MAHE-Geräte für Laserreinigung, elektrolytisches Reinigen und Polieren, Metallbeschriftung und automatische Dosierung.",
   "subs": [
    "Cleaner",
    "Signiergeräte",
    "Dosiersystem",
-   "Elektrolyte"
+   "Elektrolyte",
+   "Laserreinigung"
   ]
  },
  {

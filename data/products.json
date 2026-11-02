@@ -11,7 +11,7 @@
   "address": "Bildfeldstrasse 24, 9552 Bronschhofen, Schweiz"
  },
  "license": "Produktdaten und Herstellerbilder: jeweiliger Hersteller. Eigene Inhalte: VES-TECH Swiss. Rechte siehe Impressum.",
- "count": 81,
+ "count": 84,
  "products": [
   {
    "id": "hypermig-x",
@@ -16778,6 +16778,122 @@
    }
   },
   {
+   "id": "mlst",
+   "sku": "MLST",
+   "name": "MAHE MLST",
+   "names": {
+    "de": "MAHE MLST",
+    "fr": "MAHE MLST",
+    "it": "MAHE MLST",
+    "en": "MAHE MLST",
+    "es": "MAHE MLST"
+   },
+   "brand": "MAHE",
+   "type": {
+    "de": "Handgeführtes Laserschweissen",
+    "fr": "Soudage laser manuel",
+    "it": "Saldatura laser manuale",
+    "en": "Handheld laser welding",
+    "es": "Soldadura láser manual"
+   },
+   "category": {
+    "de": "Schweissgeräte",
+    "fr": "Postes de soudage",
+    "it": "Saldatrici",
+    "en": "Welding equipment",
+    "es": "Equipos de soldadura"
+   },
+   "subcategory": {
+    "de": "Laserschweissen",
+    "fr": "Soudage laser manuel",
+    "it": "Saldatura laser manuale",
+    "en": "Handheld laser welding",
+    "es": "Soldadura láser manual"
+   },
+   "description": {
+    "de": "Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.",
+    "fr": "Système de soudage laser manuel de 1500 à 3000 W selon la version. Pour l’assemblage ciblé de pièces métalliques en atelier et en production.",
+    "it": "Sistema di saldatura laser manuale da 1500 a 3000 W secondo la versione. Per unire componenti metallici in officina e in produzione.",
+    "en": "Handheld laser welding system with 1500–3000 W laser power, depending on the version. For joining metal components in the workshop and in production.",
+    "es": "Sistema de soldadura láser manual de 1500 a 3000 W según la versión. Para unir componentes metálicos en taller y en producción."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "front_panels": [],
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Handgeführtes Laserschweissen",
+     "Laserleistung": "1500–3000 W, je Ausführung"
+    },
+    "fr": {
+     "Procédé": "Soudage laser manuel",
+     "Puissance laser": "1500–3000 W, selon la version"
+    },
+    "it": {
+     "Processo": "Saldatura laser manuale",
+     "Potenza laser": "1500–3000 W, secondo la versione"
+    },
+    "en": {
+     "Process": "Handheld laser welding",
+     "Laser power": "1500–3000 W, depending on the version"
+    },
+    "es": {
+     "Proceso": "Soldadura láser manual",
+     "Potencia láser": "1500–3000 W, según la versión"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta",
+     "en": "Price on request",
+     "es": "Precio bajo consulta"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta",
+     "en": "On request",
+     "es": "Bajo consulta"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/p/mahe-mlst-50007f-1000.webp",
+   "condition": null,
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/schweissgeraete/mlst/",
+    "fr": "https://www.ves-tech.ch/fr/produits/postes-de-soudage/mlst/",
+    "it": "https://www.ves-tech.ch/it/prodotti/saldatrici/mlst/",
+    "en": "https://www.ves-tech.ch/en/products/welding-equipment/mlst/",
+    "es": "https://www.ves-tech.ch/es/productos/equipos-de-soldadura/mlst/"
+   }
+  },
+  {
    "id": "theta-40",
    "sku": "THETA-40",
    "name": "MAHE Theta 40",
@@ -25737,6 +25853,238 @@
     "it": "https://www.ves-tech.ch/it/prodotti/pulizia/m1/",
     "en": "https://www.ves-tech.ch/en/products/cleaning-equipment/m1/",
     "es": "https://www.ves-tech.ch/es/productos/equipos-de-limpieza/m1/"
+   }
+  },
+  {
+   "id": "mlrm",
+   "sku": "MLRM",
+   "name": "MAHE MLRM",
+   "names": {
+    "de": "MAHE MLRM",
+    "fr": "MAHE MLRM",
+    "it": "MAHE MLRM",
+    "en": "MAHE MLRM",
+    "es": "MAHE MLRM"
+   },
+   "brand": "MAHE",
+   "type": {
+    "de": "Laserreinigung",
+    "fr": "Nettoyage laser",
+    "it": "Pulizia laser",
+    "en": "Laser cleaning",
+    "es": "Limpieza láser"
+   },
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia",
+    "en": "Cleaning equipment",
+    "es": "Equipos de limpieza"
+   },
+   "subcategory": {
+    "de": "Laserreinigung",
+    "fr": "Nettoyage laser",
+    "it": "Pulizia laser",
+    "en": "Laser cleaning",
+    "es": "Limpieza láser"
+   },
+   "description": {
+    "de": "MAHE-Laserreinigungsgerät mit 100–300 W Laserleistung je Ausführung. Die Auswahl richtet sich nach Bauteil, Oberfläche und gewünschtem Reinigungsergebnis.",
+    "fr": "Appareil de nettoyage laser MAHE de 100 à 300 W selon la version. Le choix dépend de la pièce, de la surface et du résultat de nettoyage recherché.",
+    "it": "Apparecchio MAHE per la pulizia laser da 100 a 300 W secondo la versione. La scelta dipende dal pezzo, dalla superficie e dal risultato desiderato.",
+    "en": "MAHE laser cleaning equipment with 100–300 W laser power, depending on the version. Selection depends on the component, surface and required cleaning result.",
+    "es": "Equipo MAHE de limpieza láser de 100 a 300 W según la versión. La selección depende de la pieza, la superficie y el resultado de limpieza deseado."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "front_panels": [],
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Laserreinigung",
+     "Laserleistung": "100–300 W, je Ausführung"
+    },
+    "fr": {
+     "Procédé": "Nettoyage laser",
+     "Puissance laser": "100–300 W, selon la version"
+    },
+    "it": {
+     "Processo": "Pulizia laser",
+     "Potenza laser": "100–300 W, secondo la versione"
+    },
+    "en": {
+     "Process": "Laser cleaning",
+     "Laser power": "100–300 W, depending on the version"
+    },
+    "es": {
+     "Proceso": "Limpieza láser",
+     "Potencia láser": "100–300 W, según la versión"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta",
+     "en": "Price on request",
+     "es": "Precio bajo consulta"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta",
+     "en": "On request",
+     "es": "Bajo consulta"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/p/mahe-mlrm-f4d25c-1000.webp",
+   "condition": null,
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrm/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/mlrm/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/mlrm/",
+    "en": "https://www.ves-tech.ch/en/products/cleaning-equipment/mlrm/",
+    "es": "https://www.ves-tech.ch/es/productos/equipos-de-limpieza/mlrm/"
+   }
+  },
+  {
+   "id": "mlrc-3000",
+   "sku": "MLRC-3000",
+   "name": "MAHE MLRC 3000",
+   "names": {
+    "de": "MAHE MLRC 3000",
+    "fr": "MAHE MLRC 3000",
+    "it": "MAHE MLRC 3000",
+    "en": "MAHE MLRC 3000",
+    "es": "MAHE MLRC 3000"
+   },
+   "brand": "MAHE",
+   "type": {
+    "de": "Laserreinigung",
+    "fr": "Nettoyage laser",
+    "it": "Pulizia laser",
+    "en": "Laser cleaning",
+    "es": "Limpieza láser"
+   },
+   "category": {
+    "de": "Reinigungsgeräte",
+    "fr": "Appareils de nettoyage",
+    "it": "Apparecchi di pulizia",
+    "en": "Cleaning equipment",
+    "es": "Equipos de limpieza"
+   },
+   "subcategory": {
+    "de": "Laserreinigung",
+    "fr": "Nettoyage laser",
+    "it": "Pulizia laser",
+    "en": "Laser cleaning",
+    "es": "Limpieza láser"
+   },
+   "description": {
+    "de": "MAHE-Laserreinigungsgerät für die professionelle Oberflächenbearbeitung. VES-TECH klärt die passende Ausführung und den Lieferumfang für Ihre Reinigungsaufgabe.",
+    "fr": "Appareil de nettoyage laser MAHE pour le traitement professionnel des surfaces. VES-TECH précise la version et les éléments fournis selon votre application.",
+    "it": "Apparecchio MAHE per la pulizia laser e il trattamento professionale delle superfici. VES-TECH definisce la versione e la dotazione in base all’applicazione.",
+    "en": "MAHE laser cleaning equipment for professional surface treatment. VES-TECH clarifies the equipment version and scope of supply for your cleaning task.",
+    "es": "Equipo MAHE de limpieza láser para el tratamiento profesional de superficies. VES-TECH concreta la versión y el suministro según la tarea de limpieza."
+   },
+   "highlights": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "front_panels": [],
+   "options": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "specs": {
+    "de": {
+     "Verfahren": "Laserreinigung",
+     "Modell": "MLRC 3000"
+    },
+    "fr": {
+     "Procédé": "Nettoyage laser",
+     "Modèle": "MLRC 3000"
+    },
+    "it": {
+     "Processo": "Pulizia laser",
+     "Modello": "MLRC 3000"
+    },
+    "en": {
+     "Process": "Laser cleaning",
+     "Model": "MLRC 3000"
+    },
+    "es": {
+     "Proceso": "Limpieza láser",
+     "Modelo": "MLRC 3000"
+    }
+   },
+   "techdata": {
+    "de": [],
+    "fr": [],
+    "it": [],
+    "en": [],
+    "es": []
+   },
+   "materials": [],
+   "price": {
+    "model": "on-request",
+    "currency": "CHF",
+    "note": {
+     "de": "Preis auf Anfrage",
+     "fr": "Prix sur demande",
+     "it": "Prezzo su richiesta",
+     "en": "Price on request",
+     "es": "Precio bajo consulta"
+    }
+   },
+   "availability": {
+    "model": "on-request",
+    "note": {
+     "de": "Auf Anfrage",
+     "fr": "Sur demande",
+     "it": "Su richiesta",
+     "en": "On request",
+     "es": "Bajo consulta"
+    }
+   },
+   "image": "https://www.ves-tech.ch/assets/img/p/mahe-mlrc-3000-eb3ab9-1000.webp",
+   "condition": null,
+   "url": {
+    "de": "https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrc-3000/",
+    "fr": "https://www.ves-tech.ch/fr/produits/nettoyage/mlrc-3000/",
+    "it": "https://www.ves-tech.ch/it/prodotti/pulizia/mlrc-3000/",
+    "en": "https://www.ves-tech.ch/en/products/cleaning-equipment/mlrc-3000/",
+    "es": "https://www.ves-tech.ch/es/productos/equipos-de-limpieza/mlrc-3000/"
    }
   },
   {

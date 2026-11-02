@@ -1,5 +1,6 @@
 """The redesign preserves useful content, model boundaries and language routes."""
 from html.parser import HTMLParser
+import copy
 import re
 import unittest
 from unittest.mock import patch
@@ -94,6 +95,46 @@ class VoltDesignTests(unittest.TestCase):
             # Without JS all products are usable; JS adds inert/aria-hidden only after initialization.
             self.assertNotIn(' inert', markup)
             self.assertIn('grid-area:auto!important', R.NOSCRIPT_CSS)
+
+    def test_homepage_benefits_are_complete_visible_and_keep_model_specific_processes(self):
+        for lang in C.LANGS:
+            markup = P.home_featured(lang)
+            for pid in C.HOME_FEATURED:
+                data = C.HOME_FEATURED_COPY[pid][lang]
+                slide = re.search(r'data-product="' + re.escape(pid) + r'"(.*?)</a></div>', markup, re.S).group(1)
+                self.assertIn('aria-labelledby="home-featured-' + pid + '"', slide)
+                self.assertIn('id="home-featured-' + pid + '"', slide)
+                self.assertIn(R.e(data['benefit']), slide)
+                self.assertIn(R.e(data['description']), slide)
+                self.assertEqual(slide.count('<li>'), 4)
+                for text in data['highlights']:
+                    self.assertIn('<li>' + R.e(text) + '</li>', slide)
+            for pid in ('beta-dx', 'omega-ax'):
+                points = C.HOME_FEATURED_COPY[pid][lang]['highlights']
+                self.assertTrue(next(text for text in points if '20 kHz' in text).startswith('pro'))
+                self.assertTrue(next(text for text in points if 'AutoPuls' in text).startswith('syn'))
+                self.assertTrue('pro' in next(text for text in points if '5 ' in text))
+            for pid in ('beta-dx', 'hypertig-dx'):
+                body = str(C.HOME_FEATURED_COPY[pid][lang])
+                self.assertNotIn('Mix TIG', body)
+                self.assertNotIn('AC/DC', body)
+            self.assertNotIn('20 kHz', str(C.HOME_FEATURED_COPY['hypertig-dx'][lang]))
+
+    def test_featured_copy_rejects_missing_languages_and_unreviewed_markup(self):
+        for mutation in ('product', 'language', 'highlight', 'html', 'source'):
+            data = copy.deepcopy(C.HOME_FEATURED_COPY)
+            if mutation == 'product': data.pop('beta-dx')
+            if mutation == 'language': data['beta-dx'].pop('es')
+            if mutation == 'highlight': data['beta-dx']['de']['highlights'].pop()
+            if mutation == 'html': data['beta-dx']['de']['benefit'] = '<b>unsupported markup</b>'
+            if mutation == 'source': data['beta-dx']['sources'] = []
+            with self.subTest(mutation=mutation), patch.object(C, 'HOME_FEATURED_COPY', data):
+                with self.assertRaises(ValueError): C.validate_editorial_guides()
+        payload = '<img src=x onerror=alert(1)>'
+        with patch.dict(C.HOME_FEATURED_COPY['beta-dx']['de'], {'benefit': payload}):
+            markup = P.home_featured('de')
+        self.assertIn(R.e(payload), markup)
+        self.assertNotIn(payload, markup)
 
     def test_primary_navigation_marks_only_the_most_specific_section(self):
         for lang in C.LANGS:

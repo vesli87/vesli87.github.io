@@ -1451,3 +1451,23 @@ Produktseiten und die vier Service-Einstiege bieten in allen fünf Sprachen eine
 Der ServiceChannel verweist mit derselben Place-ID, dem tatsächlichen Namen Schweisstechnik Scherrer AG und dem übersetzten Hinweis zur Terminvereinbarung auf die bereits ausgewiesene Partnerwerkstatt. Der Unternehmenssitz in Bronschhofen bleibt davon getrennt.
 
 Die bestehende WIG/TIG-Unterkategorie enthält zusätzlich einen vorgerenderten Vergleich von Beta DX, Omega AX und HyperTIG AX in DE/FR/IT/EN/ES. Verfahren, Netzanschluss und Strombereich stammen unverändert aus den vorhandenen Produktdaten. Der Hinweis unterscheidet Baureihen-Maximalwerte von der konkreten Ausführung und verlangt den Abgleich der Einschaltdauer. Definition in `data/CATEGORY_COMPARISONS.json`; keine neue URL oder Geräteverfügbarkeit. Die aktuelle Herstellerübersicht https://mahe-online.de/wig/ bestätigt Verfahren und Baureihen-Maximalströme (02.11.2026).
+
+## Technische Startseiten-Highlights vom 02.11.2026
+
+`data/HOME_FEATURED_COPY.json` ergänzt die sechs bestehenden Produktfolien um
+einen konkreten Nutzen, eine kurze Anwendungserklärung und vier lesbare technische
+Highlights je Sprache. Reihenfolge, Fotos, Produkt-URLs und die aus dem Katalog
+bezogenen Angaben zu Verfahren, Netz bzw. Arbeitsbereich bleiben erhalten.
+Die Texte stehen vollständig im vorgerenderten HTML; keine neue Browserlogik,
+Bibliothek, Schrift oder Bilddatei. Alle Folien teilen weiterhin eine gemeinsame
+Rasterfläche und behalten 3-Sekunden-Wechsel, Pause und manuelle Auswahl.
+
+Beta DX und Omega AX unterscheiden ausdrücklich pro (Puls bis 20 kHz,
+HyperSpot, fünf Speicherplätze) von syn (AutoPuls und Synergy). Mix TIG steht
+nur bei den dazu belegten AC/DC-Geräten; HyperTIG DX bleibt DC, ohne eine
+unbelegte konkrete Pulsfrequenz. HyperMIG TWIN erklärt die zwei Vorschübe und
+nennt die belegten X/HX-Prozesse, nicht gleichzeitiges Tandemschweissen.
+MPT 3001 zeigt CNC-Import, Bahnvorbereitung, THC und die angebotenen Theta-Sets
+auf Basis der bereits freigegebenen CNC-Unterlagen und MAHE-Preisliste.
+Herkunftshinweise stehen an den Datensätzen. `validate_editorial_guides()` prüft
+Produkte, Quellen, fünf Sprachen und vier Klartext-Highlights vor dem Build.

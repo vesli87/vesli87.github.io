@@ -1,0 +1,333 @@
+{
+  "mpt-3001": {
+    "sources": [
+      "MAHE Preisliste 2026 V11, Seiten 66/67: MPT 3001 / 3015",
+      "Freigegebene CNC-Funktionen in data/HL_DEVICE.json: MyPlasm-Handbuch v1.2 und Inhaberangaben"
+    ],
+    "de": {
+      "benefit": "Aus der Zeichnung wird Ihr Bauteil",
+      "description": "Für individuelle Zuschnitte und wiederkehrende Blechkonturen, mit automatischer Bahnvorbereitung und geregelter Brennerhöhe.",
+      "highlights": [
+        "DXF und HPGL/PLT direkt importieren",
+        "Automatische Schneidbahnen und Schnittfugenkorrektur",
+        "THC regelt die Brennerhöhe während des Schnitts",
+        "Set mit Theta 60, 120 oder 180 A"
+      ]
+    },
+    "fr": {
+      "benefit": "Du plan à la pièce découpée",
+      "description": "Pour les découpes sur mesure et les contours répétitifs, avec préparation automatique des trajectoires et régulation de la hauteur de torche.",
+      "highlights": [
+        "Import direct de fichiers DXF et HPGL/PLT",
+        "Trajectoires et compensation de saignée automatiques",
+        "THC : hauteur de torche régulée pendant la coupe",
+        "Ensemble avec Theta 60, 120 ou 180 A"
+      ]
+    },
+    "it": {
+      "benefit": "Dal disegno al pezzo tagliato",
+      "description": "Per tagli su misura e contorni ripetitivi su lamiera, con preparazione automatica delle traiettorie e regolazione dell’altezza torcia.",
+      "highlights": [
+        "Importazione diretta di DXF e HPGL/PLT",
+        "Traiettorie e compensazione del kerf automatiche",
+        "THC: altezza torcia regolata durante il taglio",
+        "Set con Theta da 60, 120 o 180 A"
+      ]
+    },
+    "en": {
+      "benefit": "Turn your drawing into a cut part",
+      "description": "For custom cut parts and repeated sheet-metal contours, with automatic toolpath preparation and controlled torch height.",
+      "highlights": [
+        "Import DXF and HPGL/PLT files directly",
+        "Automatic toolpaths and kerf compensation",
+        "THC controls torch height during cutting",
+        "Set with a 60, 120 or 180 A Theta power source"
+      ]
+    },
+    "es": {
+      "benefit": "Del plano a la pieza cortada",
+      "description": "Para cortes a medida y contornos repetitivos en chapa, con preparación automática de trayectorias y regulación de altura de la antorcha.",
+      "highlights": [
+        "Importación directa de DXF y HPGL/PLT",
+        "Trayectorias y compensación de ancho de corte automáticas",
+        "THC: altura de antorcha regulada durante el corte",
+        "Conjunto con Theta de 60, 120 o 180 A"
+      ]
+    }
+  },
+  "hypermig-twin": {
+    "sources": [
+      "https://mahe-online.de/twin/"
+    ],
+    "de": {
+      "benefit": "Zwei Drähte bereit, schneller wechseln",
+      "description": "Zwei separate Vorschubkoffer halten verschiedene Drähte bereit. Der Brennertaster ruft die passenden Parameter auf und reduziert den Rüstaufwand.",
+      "highlights": [
+        "X/HX: MIS, Puls und Doppelpuls",
+        "HyperPuls, HyperCold, HyperRoot und HyperForce",
+        "99 JOB-Programme für wiederkehrende Aufgaben",
+        "4-Rollenantrieb und leistungsstarke Wasserkühlung"
+      ]
+    },
+    "fr": {
+      "benefit": "Deux fils prêts, un changement plus rapide",
+      "description": "Deux dévidoirs distincts gardent différents fils prêts à l’emploi. La gâchette de la torche rappelle les paramètres adaptés et réduit les réglages au changement.",
+      "highlights": [
+        "X/HX : MIS, pulsé et double pulsé",
+        "HyperPuls, HyperCold, HyperRoot et HyperForce",
+        "99 programmes JOB pour les tâches répétitives",
+        "Entraînement à 4 galets et refroidissement à eau performant"
+      ]
+    },
+    "it": {
+      "benefit": "Due fili pronti, cambi più rapidi",
+      "description": "Due trainafilo separati mantengono pronti fili diversi. Il pulsante della torcia richiama i parametri adatti e riduce il lavoro di riconfigurazione.",
+      "highlights": [
+        "X/HX: MIS, pulsato e doppio pulsato",
+        "HyperPuls, HyperCold, HyperRoot e HyperForce",
+        "99 programmi JOB per lavorazioni ripetitive",
+        "Trainafilo a 4 rulli e raffreddamento ad acqua ad alte prestazioni"
+      ]
+    },
+    "en": {
+      "benefit": "Two wires ready for faster changeovers",
+      "description": "Two separate wire feeders keep different wires ready. The torch trigger recalls the matching parameters, reducing setup work when changing tasks.",
+      "highlights": [
+        "X/HX: MIS, pulse and double pulse",
+        "HyperPuls, HyperCold, HyperRoot and HyperForce",
+        "99 JOB programs for repetitive welding tasks",
+        "4-roll drive and high-performance water cooling"
+      ]
+    },
+    "es": {
+      "benefit": "Dos hilos preparados, cambios más rápidos",
+      "description": "Dos alimentadores independientes mantienen listos distintos hilos. El gatillo de la antorcha recupera los parámetros adecuados y reduce los ajustes al cambiar de trabajo.",
+      "highlights": [
+        "X/HX: MIS, pulsado y doble pulsado",
+        "HyperPuls, HyperCold, HyperRoot e HyperForce",
+        "99 programas JOB para trabajos repetitivos",
+        "Accionamiento de 4 rodillos y refrigeración por agua de alto rendimiento"
+      ]
+    }
+  },
+  "hypertig-ax": {
+    "sources": [
+      "https://mahe-online.de/hypertig-ax/"
+    ],
+    "de": {
+      "benefit": "AC/DC-Präzision für Aluminium und Inox",
+      "description": "Industrielle WIG-Technik mit wassergekühlter CWK-Ausführung für anspruchsvolle Bauteile und wiederkehrende Schweissaufgaben.",
+      "highlights": [
+        "Hochfrequenzpuls und Mix TIG",
+        "HyperSpot für gezielte Schweisspunkte",
+        "ActiveSpot für schnelles Heften",
+        "Hyper-ARC-Active, Synergy und JOB-Modus"
+      ]
+    },
+    "fr": {
+      "benefit": "Précision AC/DC pour aluminium et inox",
+      "description": "Une technologie TIG industrielle en version CWK refroidie par eau, pour les pièces exigeantes et les opérations de soudage répétitives.",
+      "highlights": [
+        "Pulsé haute fréquence et Mix TIG",
+        "HyperSpot pour des points de soudage ciblés",
+        "ActiveSpot pour un pointage rapide",
+        "Hyper-ARC-Active, Synergy et mode JOB"
+      ]
+    },
+    "it": {
+      "benefit": "Precisione AC/DC per alluminio e inox",
+      "description": "Tecnologia TIG industriale con versione CWK raffreddata ad acqua, per componenti impegnativi e lavorazioni di saldatura ripetitive.",
+      "highlights": [
+        "Pulsato ad alta frequenza e Mix TIG",
+        "HyperSpot per punti di saldatura mirati",
+        "ActiveSpot per una puntatura rapida",
+        "Hyper-ARC-Active, Synergy e modalità JOB"
+      ]
+    },
+    "en": {
+      "benefit": "AC/DC precision for aluminium and stainless steel",
+      "description": "Industrial TIG technology with a water-cooled CWK version for demanding components and repetitive welding tasks.",
+      "highlights": [
+        "High-frequency pulse and Mix TIG",
+        "HyperSpot for targeted spot welds",
+        "ActiveSpot for fast tack welding",
+        "Hyper-ARC-Active, Synergy and JOB mode"
+      ]
+    },
+    "es": {
+      "benefit": "Precisión AC/DC para aluminio e inoxidable",
+      "description": "Tecnología TIG industrial con versión CWK refrigerada por agua, para piezas exigentes y trabajos de soldadura repetitivos.",
+      "highlights": [
+        "Pulsado de alta frecuencia y Mix TIG",
+        "HyperSpot para puntos de soldadura localizados",
+        "ActiveSpot para un punteado rápido",
+        "Hyper-ARC-Active, Synergy y modo JOB"
+      ]
+    }
+  },
+  "hypertig-dx": {
+    "sources": [
+      "https://mahe-online.de/hypertig-dx/"
+    ],
+    "de": {
+      "benefit": "Kontrollierte DC-Nähte für die Fertigung",
+      "description": "Wassergekühlte WIG-DC-Technik für Stahl und Inox, mit spezialisierten Funktionen zum Pulsen, Punkten und schnellen Heften.",
+      "highlights": [
+        "Hochfrequenzpuls für kontrolliertes DC-Schweissen",
+        "HyperSpot für gezielte Schweisspunkte",
+        "ActiveSpot für schnelle Heftfolgen",
+        "Hyper-ARC-Active, Synergy und JOB-Modus"
+      ]
+    },
+    "fr": {
+      "benefit": "Des soudures DC maîtrisées en production",
+      "description": "Une technologie TIG DC refroidie par eau pour acier et inox, avec des fonctions dédiées au pulsé, aux points de soudage et au pointage rapide.",
+      "highlights": [
+        "Pulsé haute fréquence pour un soudage DC maîtrisé",
+        "HyperSpot pour des points de soudage ciblés",
+        "ActiveSpot pour des séquences de pointage rapides",
+        "Hyper-ARC-Active, Synergy et mode JOB"
+      ]
+    },
+    "it": {
+      "benefit": "Saldature DC controllate per la produzione",
+      "description": "Tecnologia TIG DC raffreddata ad acqua per acciaio e inox, con funzioni dedicate al pulsato, ai punti di saldatura e alla puntatura rapida.",
+      "highlights": [
+        "Pulsato ad alta frequenza per saldature DC controllate",
+        "HyperSpot per punti di saldatura mirati",
+        "ActiveSpot per sequenze di puntatura rapide",
+        "Hyper-ARC-Active, Synergy e modalità JOB"
+      ]
+    },
+    "en": {
+      "benefit": "Controlled DC welds for production",
+      "description": "Water-cooled DC TIG technology for steel and stainless steel, with dedicated pulse, spot welding and fast tacking functions.",
+      "highlights": [
+        "High-frequency pulse for controlled DC welding",
+        "HyperSpot for targeted spot welds",
+        "ActiveSpot for fast tacking sequences",
+        "Hyper-ARC-Active, Synergy and JOB mode"
+      ]
+    },
+    "es": {
+      "benefit": "Soldaduras DC controladas para producción",
+      "description": "Tecnología TIG DC refrigerada por agua para acero e inoxidable, con funciones específicas de pulsado, soldadura por puntos y punteado rápido.",
+      "highlights": [
+        "Pulsado de alta frecuencia para soldadura DC controlada",
+        "HyperSpot para puntos de soldadura localizados",
+        "ActiveSpot para secuencias de punteado rápidas",
+        "Hyper-ARC-Active, Synergy y modo JOB"
+      ]
+    }
+  },
+  "omega-ax": {
+    "sources": [
+      "https://mahe-online.de/omega-ac-dc-2/"
+    ],
+    "de": {
+      "benefit": "Aluminium schweissen, mobil mit 230 V",
+      "description": "AC/DC-WIG für Aluminium, Stahl und Inox. Wählen Sie pro für individuelle Prozesseinstellungen oder syn für einfaches synergisches Arbeiten.",
+      "highlights": [
+        "pro: Puls bis 20 kHz und HyperSpot",
+        "pro: Mix TIG und Hyper-ARC-Active",
+        "syn: AutoPuls und Synergy-Bedienung",
+        "ActiveBoost; pro: 5 Speicherplätze"
+      ]
+    },
+    "fr": {
+      "benefit": "Souder l’aluminium en mobilité sur 230 V",
+      "description": "TIG AC/DC pour aluminium, acier et inox. Choisissez pro pour les réglages personnalisés ou syn pour un travail synergique simplifié.",
+      "highlights": [
+        "pro : pulsé jusqu’à 20 kHz et HyperSpot",
+        "pro : Mix TIG et Hyper-ARC-Active",
+        "syn : AutoPuls et commande Synergy",
+        "ActiveBoost ; pro : 5 mémoires"
+      ]
+    },
+    "it": {
+      "benefit": "Saldare l’alluminio, anche in mobilità a 230 V",
+      "description": "TIG AC/DC per alluminio, acciaio e inox. Scegliete pro per i parametri personalizzati o syn per lavorare con semplicità in sinergia.",
+      "highlights": [
+        "pro: pulsato fino a 20 kHz e HyperSpot",
+        "pro: Mix TIG e Hyper-ARC-Active",
+        "syn: AutoPuls e comando Synergy",
+        "ActiveBoost; pro: 5 memorie"
+      ]
+    },
+    "en": {
+      "benefit": "Weld aluminium with portable 230 V power",
+      "description": "AC/DC TIG for aluminium, steel and stainless steel. Choose pro for individual process settings or syn for straightforward synergic operation.",
+      "highlights": [
+        "pro: pulse up to 20 kHz and HyperSpot",
+        "pro: Mix TIG and Hyper-ARC-Active",
+        "syn: AutoPuls and Synergy controls",
+        "ActiveBoost; pro: 5 memory slots"
+      ]
+    },
+    "es": {
+      "benefit": "Soldar aluminio con movilidad a 230 V",
+      "description": "TIG AC/DC para aluminio, acero e inoxidable. Elija pro para ajustar los procesos o syn para un manejo sinérgico sencillo.",
+      "highlights": [
+        "pro: pulsado de hasta 20 kHz e HyperSpot",
+        "pro: Mix TIG e Hyper-ARC-Active",
+        "syn: AutoPuls y manejo Synergy",
+        "ActiveBoost; pro: 5 memorias"
+      ]
+    }
+  },
+  "beta-dx": {
+    "sources": [
+      "https://mahe-online.de/beta-dx/"
+    ],
+    "de": {
+      "benefit": "Präzise WIG-Nähte an Stahl und Inox",
+      "description": "Mobiler DC-Inverter für Werkstatt und Montage am 230-V-Anschluss. Wählen Sie pro für die Prozesskontrolle oder syn für einfache Synergy-Bedienung.",
+      "highlights": [
+        "pro: Puls bis 20 kHz und HyperSpot",
+        "pro: Hyper-ARC-Active zur Lichtbogenregelung",
+        "syn: AutoPuls und Synergy-Bedienung",
+        "ActiveBoost; pro: 5 Speicherplätze"
+      ]
+    },
+    "fr": {
+      "benefit": "Des soudures TIG précises sur acier et inox",
+      "description": "Un onduleur DC mobile pour l’atelier et le montage sur 230 V. Choisissez pro pour le contrôle du procédé ou syn pour une commande Synergy simplifiée.",
+      "highlights": [
+        "pro : pulsé jusqu’à 20 kHz et HyperSpot",
+        "pro : Hyper-ARC-Active pour réguler l’arc",
+        "syn : AutoPuls et commande Synergy",
+        "ActiveBoost ; pro : 5 mémoires"
+      ]
+    },
+    "it": {
+      "benefit": "Saldature TIG precise su acciaio e inox",
+      "description": "Inverter DC mobile per officina e montaggio con alimentazione a 230 V. Scegliete pro per il controllo del processo o syn per un comando Synergy semplice.",
+      "highlights": [
+        "pro: pulsato fino a 20 kHz e HyperSpot",
+        "pro: Hyper-ARC-Active per la regolazione dell’arco",
+        "syn: AutoPuls e comando Synergy",
+        "ActiveBoost; pro: 5 memorie"
+      ]
+    },
+    "en": {
+      "benefit": "Precise TIG welds on steel and stainless steel",
+      "description": "A portable DC inverter for workshop and site work on 230 V. Choose pro for process control or syn for straightforward Synergy operation.",
+      "highlights": [
+        "pro: pulse up to 20 kHz and HyperSpot",
+        "pro: Hyper-ARC-Active for arc regulation",
+        "syn: AutoPuls and Synergy controls",
+        "ActiveBoost; pro: 5 memory slots"
+      ]
+    },
+    "es": {
+      "benefit": "Soldaduras TIG precisas en acero e inoxidable",
+      "description": "Inversor DC portátil para taller y montaje con alimentación de 230 V. Elija pro para controlar el proceso o syn para un manejo Synergy sencillo.",
+      "highlights": [
+        "pro: pulsado de hasta 20 kHz e HyperSpot",
+        "pro: Hyper-ARC-Active para regular el arco",
+        "syn: AutoPuls y manejo Synergy",
+        "ActiveBoost; pro: 5 memorias"
+      ]
+    }
+  }
+}

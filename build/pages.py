@@ -651,10 +651,13 @@ def kachel_zusatz(lang, c):
 
 
 def home_featured(lang):
-    """Catalogue highlights with localized product links and no image footnotes."""
+    """Source-backed benefits and panel-specific highlights, fully prerendered."""
     slides, dots = [], []
     for i, pid in enumerate(C.HOME_FEATURED):
         product = C.BY_ID[pid]
+        copy = C.HOME_FEATURED_COPY[pid][lang]
+        title_id = 'home-featured-' + pid
+        highlights = ''.join(f'<li>{e(text)}</li>' for text in copy['highlights'])
         wide = pid == 'mpt-3001'
         details = [C.vtT(lang, product['vt'])]
         detail = product['specs'].get('Arbeitsbereich' if wide else 'Netz')
@@ -673,10 +676,13 @@ def home_featured(lang):
             f'role="group" aria-roledescription="slide" '
             f'aria-label="{e(C.t(lang,"hero_slide",n=i+1,m=len(C.HOME_FEATURED)))}" '
             f'data-product="{e(pid)}" data-slide-title="{e(C.pName(lang,product))}">'
-            f'<a class="volt-home-product" href="{e(C.u_prod(lang,product))}">'
+            f'<a class="volt-home-product" href="{e(C.u_prod(lang,product))}" aria-labelledby="{title_id}">'
             f'<figure class="volt-product-plinth">{picture}</figure>'
-            f'<div class="volt-home-product-label"><h2>{e(C.pName(lang,product))}</h2>'
-            f'<p class="volt-feature-facts">{e(" · ".join(details))}</p><p>{e(C.t(lang,"poa"))}</p>'
+            f'<div class="volt-home-product-label"><h2 id="{title_id}">{e(C.pName(lang,product))}</h2>'
+            f'<p class="volt-feature-facts">{e(" · ".join(details))}</p>'
+            f'<p class="volt-feature-benefit">{e(copy["benefit"])}</p>'
+            f'<p class="volt-feature-copy">{e(copy["description"])}</p>'
+            f'<ul class="volt-feature-highlights">{highlights}</ul><p>{e(C.t(lang,"poa"))}</p>'
             f'<span class="volt-text-link">{e(C.t(lang,"volt_device_view"))} '
             '<span aria-hidden="true">→</span></span></div></a></div>')
         dots.append(f'<button class="hdot{" active" if i == 0 else ""}" type="button" data-i="{i}" '

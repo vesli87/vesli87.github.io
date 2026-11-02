@@ -516,6 +516,7 @@ HYPERMIG_CWK = _load("HYPERMIG_CWK")
 GUIDE_LINKS = _load("GUIDE_LINKS")
 SEARCH_LANDINGS = _load("SEARCH_LANDINGS")
 HOME_APPLICATIONS = _load("HOME_APPLICATIONS")
+HOME_FEATURED_COPY = _load("HOME_FEATURED_COPY")
 PRODUCT_SEO = _load("PRODUCT_SEO")
 CATEGORY_COMPARISONS = _load("CATEGORY_COMPARISONS")
 INQUIRY_TOPICS = _load("INQUIRY_TOPICS")
@@ -1410,6 +1411,21 @@ def validate_editorial_guides():
         for copy in row['copy'].values():
             if set(copy) != {'title', 'note'} or any(not isinstance(v, str) or not v.strip() or '<' in v or '>' in v for v in copy.values()):
                 raise ValueError('Comparison copy must be complete plain text')
+    if set(HOME_FEATURED_COPY) != set(HOME_FEATURED):
+        raise ValueError('Featured copy must match the actual homepage products')
+    for pid, item in HOME_FEATURED_COPY.items():
+        if set(item) != {'sources', *LANGS} or not isinstance(item['sources'], list) or not item['sources']:
+            raise ValueError(f'Incomplete featured product sources/languages: {pid}')
+        if any(not isinstance(source, str) or not source.strip() for source in item['sources']):
+            raise ValueError(f'Invalid featured product source: {pid}')
+        for lang in LANGS:
+            copy = item[lang]
+            if (set(copy) != {'benefit', 'description', 'highlights'} or
+                    not isinstance(copy['highlights'], list) or len(copy['highlights']) != 4):
+                raise ValueError(f'Featured products need a benefit, description and four highlights: {pid}/{lang}')
+            if any(not isinstance(value, str) or not value.strip() or '<' in value or '>' in value
+                   for value in [copy['benefit'], copy['description'], *copy['highlights']]):
+                raise ValueError(f'Featured product copy must be complete plain text: {pid}/{lang}')
     if len(HOME_APPLICATIONS) != 4:
         raise ValueError('Homepage needs four distinct application routes')
     for lang in LANGS:

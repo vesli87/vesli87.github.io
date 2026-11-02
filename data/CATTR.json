@@ -68,5 +68,19 @@
       "en": "Used systems refurbished in Herisau: fully overhauled, with replaced water cooling and original manufacturer documentation.",
       "es": "Instalaciones usadas reacondicionadas en Herisau: revisión completa, refrigeración por agua sustituida y documentación original del fabricante."
     }
+  },
+  "lasertechnik": {
+    "t": {
+      "fr": "Technologie laser",
+      "it": "Tecnologia laser",
+      "en": "Laser technology",
+      "es": "Tecnología láser"
+    },
+    "d": {
+      "fr": "Soudage laser manuel et nettoyage laser MAHE : comparez directement MLST, MLRM et MLRC 3000 et demandez une offre pour l’appareil adapté.",
+      "it": "Saldatura laser manuale e pulizia laser MAHE: confrontate direttamente MLST, MLRM e MLRC 3000 e richiedete l’apparecchio adatto.",
+      "en": "MAHE handheld laser welding and laser cleaning: compare MLST, MLRM and MLRC 3000 in one place and enquire about the right equipment.",
+      "es": "Soldadura láser manual y limpieza láser MAHE: compare MLST, MLRM y MLRC 3000 en un solo lugar y consulte por el equipo adecuado."
+    }
   }
 }

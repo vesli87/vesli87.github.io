@@ -384,5 +384,34 @@
       "h1": "Limpieza láser MAHE",
       "description": "Compare la limpieza láser MAHE: MLRM de 100 a 300 W según la versión y MLRC 3000. Selección por superficie y tarea de limpieza. Solicite asesoramiento."
     }
+  },
+  {
+    "kind": "category",
+    "id": "lasertechnik",
+    "de": {
+      "title": "Lasertechnik MAHE: Schweissen & Reinigen | VES-TECH Swiss",
+      "h1": "Lasertechnik MAHE",
+      "description": "Handgeführtes Laserschweissen und Laserreinigung von MAHE: MLST, MLRM und MLRC 3000 direkt vergleichen und das passende Gerät anfragen."
+    },
+    "fr": {
+      "title": "Laser MAHE : soudage et nettoyage | VES-TECH Swiss",
+      "h1": "Technologie laser MAHE",
+      "description": "Soudage laser manuel et nettoyage laser MAHE : comparez directement MLST, MLRM et MLRC 3000 et demandez une offre pour l’appareil adapté."
+    },
+    "it": {
+      "title": "Laser MAHE: saldatura e pulizia | VES-TECH Swiss",
+      "h1": "Tecnologia laser MAHE",
+      "description": "Saldatura laser manuale e pulizia laser MAHE: confrontate direttamente MLST, MLRM e MLRC 3000 e richiedete l’apparecchio adatto."
+    },
+    "en": {
+      "title": "MAHE laser welding & cleaning equipment | VES-TECH Swiss",
+      "h1": "MAHE laser technology",
+      "description": "MAHE handheld laser welding and laser cleaning: compare MLST, MLRM and MLRC 3000 in one place and enquire about the right equipment."
+    },
+    "es": {
+      "title": "Láser MAHE: soldadura y limpieza | VES-TECH Swiss",
+      "h1": "Tecnología láser MAHE",
+      "description": "Soldadura láser manual y limpieza láser MAHE: compare MLST, MLRM y MLRC 3000 en un solo lugar y consulte por el equipo adecuado."
+    }
   }
 ]

@@ -754,6 +754,11 @@ def mega(lang):
     das Akkordeon per CSS eingeklappt ist."""
     blocks = []
     for c in C.CATS:
+        if 'members' in c:
+            # The laser overview is one click away on mobile as well as desktop.
+            blocks.append(f'<div class="mgroup"><a class="mlink" href="{e(C.u_cat(lang, c["id"]))}">'
+                          f'<span>{e(C.catT(lang, c))}</span><span class="chev" aria-hidden="true">→</span></a></div>')
+            continue
         rows = [f'<a href="{e(C.u_cat(lang, c["id"]))}"><span class="num">00</span>'
                 f'<b>{e(C.t(lang, "chip_all"))}</b><span aria-hidden="true">→</span></a>']
         for i, s in enumerate(c["subs"], 1):
@@ -790,12 +795,18 @@ def header(lang, alts):
     co = C.COMPANY
     vis = C.WORKSHOP
     primary = [(C.u_products(lang), C.t(lang, 'nav_products')),
+               (C.u_cat(lang, 'lasertechnik'), C.catT(lang, C.CAT_BY_ID['lasertechnik'])),
                (C.u_page(lang, 'processes'), C.t(lang, 'n_process')),
                (C.u_service(lang), C.t(lang, 'n_service')),
                (C.u_cat(lang, 'occasion'), C.catT(lang, C.CAT_BY_ID['occasion'])),
                (C.u_page(lang, 'about'), C.t(lang, 'nav_about')),
                (C.u_page(lang, 'contact'), C.t(lang, 'n_contact'))]
     active = max((url for url, _ in primary if alts[lang].startswith(url)), key=len, default=None)
+    laser = C.CAT_BY_ID['lasertechnik']
+    laser_routes = {C.u_prod(lang, p) for p in C.products_of(laser['id'])}
+    laser_routes.update(target for _, target in C.category_navigation(lang, laser))
+    if alts[lang] in laser_routes:
+        active = C.u_cat(lang, laser['id'])
     links = ''.join(f'<a href="{e(url)}"' +
                     (' aria-current="page"' if url == active else '') +
                     f'>{e(label)}</a>' for url, label in primary)

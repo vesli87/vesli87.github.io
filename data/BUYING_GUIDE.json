@@ -458,5 +458,97 @@
         ]
       ]
     }
+  },
+  "lasertechnik": {
+    "de": {
+      "title": "Lasertechnik passend zur Aufgabe auswählen",
+      "intro": "Schweissen und Reinigen sind unterschiedliche Anwendungen. Hier finden Sie beide Bereiche direkt nebeneinander. Die Geräteübersicht führt zu den verfügbaren Angaben und zur gezielten Produktanfrage.",
+      "criteria": [
+        [
+          "Laserschweissen",
+          "MLST ist die Baureihe für handgeführtes Laserschweissen. Auf der Produktseite vergleichen Sie die Ausführungen mit 1500, 2000 und 3000 W und wählen die gewünschte Variante für Ihre Anfrage."
+        ],
+        [
+          "Laserreinigung",
+          "MLRM mit 100–300 W je Ausführung und MLRC 3000 finden Sie im Bereich Laserreinigung. Die bestätigten Angaben stehen auf der jeweiligen Produktseite; weitere technische Daten erhalten Sie auf Anfrage."
+        ],
+        [
+          "Gezielt anfragen",
+          "Nennen Sie Werkstoff, Bearbeitungsaufgabe und typische Werkstückgrösse. Bei Schweissaufgaben helfen zusätzlich Materialdicke und Nahtform, bei Reinigungsaufgaben eine Beschreibung der Oberfläche."
+        ]
+      ]
+    },
+    "fr": {
+      "title": "Choisir la technologie laser selon votre tâche",
+      "intro": "Le soudage et le nettoyage sont deux applications distinctes. Vous trouverez ici les deux domaines côte à côte, avec un accès direct aux informations disponibles et à la demande pour chaque appareil.",
+      "criteria": [
+        [
+          "Soudage laser",
+          "MLST est la gamme de soudage laser manuel. La page produit permet de comparer les versions de 1500, 2000 et 3000 W et de sélectionner celle qui vous intéresse pour votre demande."
+        ],
+        [
+          "Nettoyage laser",
+          "La gamme MLRM, de 100 à 300 W selon la version, et le modèle MLRC 3000 se trouvent dans la rubrique nettoyage laser. Les informations confirmées figurent sur chaque page produit ; les données complémentaires sont disponibles sur demande."
+        ],
+        [
+          "Préciser votre demande",
+          "Indiquez le matériau, la tâche et les dimensions habituelles des pièces. Pour le soudage, précisez aussi l’épaisseur et la forme du joint ; pour le nettoyage, décrivez l’état de la surface."
+        ]
+      ]
+    },
+    "it": {
+      "title": "Scegliere la tecnologia laser in base al lavoro",
+      "intro": "Saldatura e pulizia sono applicazioni diverse. Qui trovate entrambe le categorie affiancate, con accesso diretto alle informazioni disponibili e alla richiesta per ogni apparecchio.",
+      "criteria": [
+        [
+          "Saldatura laser",
+          "MLST è la gamma per la saldatura laser manuale. Nella pagina del prodotto potete confrontare le versioni da 1500, 2000 e 3000 W e scegliere quella desiderata per la vostra richiesta."
+        ],
+        [
+          "Pulizia laser",
+          "La gamma MLRM, da 100 a 300 W secondo la versione, e il modello MLRC 3000 si trovano nella sezione pulizia laser. Le informazioni confermate sono riportate nelle rispettive pagine; ulteriori dati tecnici sono disponibili su richiesta."
+        ],
+        [
+          "Una richiesta mirata",
+          "Indicate il materiale, il lavoro e le dimensioni tipiche dei pezzi. Per la saldatura sono utili anche lo spessore e la forma del giunto; per la pulizia, una descrizione dello stato della superficie."
+        ]
+      ]
+    },
+    "en": {
+      "title": "Choose laser equipment for your task",
+      "intro": "Welding and cleaning are different applications. Both ranges are shown together here, with direct access to the available information and a product enquiry for each machine.",
+      "criteria": [
+        [
+          "Laser welding",
+          "MLST is the handheld laser welding range. Compare the 1500, 2000 and 3000 W versions on the product page and select the version you want to enquire about."
+        ],
+        [
+          "Laser cleaning",
+          "Find MLRM, with 100–300 W depending on version, and MLRC 3000 in the laser cleaning section. Confirmed information is shown on each product page; further technical data is available on request."
+        ],
+        [
+          "A focused enquiry",
+          "Tell us the material, the task and the typical workpiece size. For welding, include material thickness and joint shape; for cleaning, describe the condition of the surface."
+        ]
+      ]
+    },
+    "es": {
+      "title": "Elegir el equipo láser según el trabajo",
+      "intro": "La soldadura y la limpieza son aplicaciones diferentes. Aquí encontrará ambas gamas juntas, con acceso directo a la información disponible y a la consulta de cada equipo.",
+      "criteria": [
+        [
+          "Soldadura láser",
+          "MLST es la gama de soldadura láser manual. En la página del producto puede comparar las versiones de 1500, 2000 y 3000 W y seleccionar la que le interese para su consulta."
+        ],
+        [
+          "Limpieza láser",
+          "La gama MLRM, de 100 a 300 W según la versión, y el modelo MLRC 3000 se encuentran en la sección de limpieza láser. Cada página muestra la información confirmada; los datos técnicos adicionales están disponibles bajo consulta."
+        ],
+        [
+          "Una consulta precisa",
+          "Indique el material, la tarea y las dimensiones habituales de las piezas. Para soldadura, añada el espesor y la forma de la unión; para limpieza, describa el estado de la superficie."
+        ]
+      ]
+    }
   }
 }

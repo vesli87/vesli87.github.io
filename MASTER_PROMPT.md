@@ -186,11 +186,11 @@ verlinkt und indexiert, die ändert man nicht. `check.py` meldet doppelte
 | Datei | Inhalt |
 |---|---|
 | `P.json` | 84 Produkte: `{id, cat, sub, vt, name, img, desc, specs{}}` — `specs` ist die kurze Merkmalsliste (Verfahren, Kühlung, Antrieb …), **nicht** die technische Tabelle |
-| `CATS.json` | 5 Kategorien mit `subs[]` und Icon-Key `pk` |
+| `CATS.json` | 6 Katalogeinstiege mit `subs[]` und Icon-Key `pk`; Sammlungen verweisen mit `members` auf bestehende Produkte und mit `links` auf bestehende Unterkategorien |
 | `UI.json` | 157 UI-Strings × de/fr/it/en |
 | `CATTR/SUBTR/PDESC/SPECK/SPECV.json` | Übersetzungen für Kategorie, Unterkategorie, Beschreibung, Spec-Key, Spec-Wert |
 | `PROC.json` | 19 Verfahren, Pulsvarianten und Zusatzfunktionen mit Wirkprinzip, Anwendung und Einstellung, DE/FR/IT |
-| `BUYING_GUIDE.json` | Eigene Auswahlhilfen für die fünf Hauptkategorien, DE/FR/IT |
+| `BUYING_GUIDE.json` | Eigene Auswahlhilfen für die sechs Katalogeinstiege, DE/FR/IT/EN/ES |
 | `SUBCATEGORY_GUIDES.json` | Eigene Einleitung und 2–3 Auswahlkriterien für alle 21 eigenständigen Unterkategorien, DE/FR/IT; keine zusätzliche Plasma-TIG-Seite |
 | `PRODUCT_GUIDES.json` | Belegte Auswahlhinweise für 27 Produktfamilien, mit Quellenverweisen und vollständigen DE/FR/IT-Texten |
 | `GUIDE_LINKS.json` | Typisierte Referenzen auf bestehende Geräte, Kategorien, Unterkategorien, Services und Unternehmensseiten; keine neuen Kompatibilitätszusagen |
@@ -1554,3 +1554,28 @@ verwenden die bereits bestehende validierte Anfragefunktion. Die Homepage
 behält ihre sieben Produktfolien, die Daten von MLRM und MLRC bleiben unverändert.
 
 Die MLST-Vorteile nutzen die bestehende responsive Definitionsliste: zwei Spalten auf breiten Ansichten, eine Spalte auf dem Mobilgerät, mit getrenntem Titel und Erklärung. Keine zusätzliche CSS- oder JavaScript-Datei.
+
+
+### Direkter Einstieg Lasertechnik, 03.11.2026
+
+Lasertechnik ist der sechste Katalogeinstieg, an zweiter Stelle im Programm.
+Die kuratierte Sammlung in `CATS.json` enthält `members` MLST, MLRM und
+MLRC 3000 sowie zwei typisierte `links` zu den bestehenden Unterkategorien
+Laserschweissen und Laserreinigung. Sie besitzt keine neuen Unterkategorien.
+`products_of` löst die Sammlung auf, `category_navigation` verbindet die
+Auswahlchips mit den veröffentlichten Verfahrensseiten. Die Build-Prüfung
+verhindert unbekannte/doppelte Mitglieder und unvollständige Verfahrenslinks.
+
+Die fünf neuen Übersichten liegen unter `/produkte/lasertechnik/`,
+`/fr/produits/technologie-laser/`, `/it/prodotti/tecnologia-laser/`,
+`/en/products/laser-technology/` und `/es/productos/tecnologia-laser/`.
+Alle drei Geräte stehen dort sofort nebeneinander; die Unterkategorien bleiben
+als direkte Auswahl erhalten. Hauptnavigation, mobiles Menü (direkter Link),
+Produktübersicht, Startseitenkachel, Footer, Suchindizes, Sitemap und Hreflang
+führen dorthin. Auf den drei Laserproduktseiten und den beiden Verfahren ist
+der Hauptmenüpunkt Lasertechnik aktiv. Bestehende Produkt- und Verfahrens-URLs
+bleiben unverändert; der Gesamtkatalog zählt weiter 84 eindeutige Produkte.
+Der llms-Volltext verlinkt die Sammlungsmitglieder, ohne die technischen Tabellen
+zu duplizieren. Es gibt keine zusätzlichen Skripte, Schriftarten oder Bilder;
+das neue dekorative Lasersymbol ergänzt das vorhandene SVG-Kategoriesystem.
+Die sieben Startseitenfolien und alle technischen Produktangaben bleiben erhalten.

@@ -65,7 +65,8 @@ class ReadabilityTests(unittest.TestCase):
         for lang in C.LANGS:
             parsed = PrimaryLinks(R.header(lang, alternatives))
             self.assertEqual(parsed.links,
-                             [C.u_products(lang), C.u_page(lang, 'processes'), C.u_service(lang),
+                             [C.u_products(lang), C.u_cat(lang, 'lasertechnik'),
+                              C.u_page(lang, 'processes'), C.u_service(lang),
                               C.u_cat(lang, 'occasion'), C.u_page(lang, 'about'), C.u_page(lang, 'contact')])
 
 

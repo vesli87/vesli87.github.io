@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-11-02. Quelle: https://www.ves-tech.ch
+Stand: 2026-11-03. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss bietet Beratung und Verkauf von MAHE-Geräten. Einzelunternehmen: Martin Veselovský, UID CHE-499.348.313. Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail info@ves-tech.ch, telefonisch erreichbar Mo-Fr 07:30-17:00. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -628,6 +628,20 @@ Technische Daten – MAHE MLST:
 | Gewicht Laseranlage | ca. 197 kg | ca. 197 kg | ca. 197 kg |
 *: Angaben gemäss bereitgestellten technischen Unterlagen. Schweissnahtdicken sind anwendungsabhängige Richtwerte. „Auf Anfrage“ kennzeichnet nicht angegebene Daten. Netzanschluss vor der Installation anhand von Typenschild und Betriebsanleitung durch eine Elektrofachkraft prüfen. Umfang und Bedingungen der Garantie für Gerät und Laserquelle werden im schriftlichen Angebot festgehalten.
 
+
+## Lasertechnik
+Handgeführtes Laserschweissen und Laserreinigung von MAHE: MLST, MLRM und MLRC 3000 direkt vergleichen und das passende Gerät anfragen.
+
+### Lasertechnik passend zur Aufgabe auswählen
+Quelle: https://www.ves-tech.ch/produkte/lasertechnik/
+Schweissen und Reinigen sind unterschiedliche Anwendungen. Hier finden Sie beide Bereiche direkt nebeneinander. Die Geräteübersicht führt zu den verfügbaren Angaben und zur gezielten Produktanfrage.
+- Laserschweissen: MLST ist die Baureihe für handgeführtes Laserschweissen. Auf der Produktseite vergleichen Sie die Ausführungen mit 1500, 2000 und 3000 W und wählen die gewünschte Variante für Ihre Anfrage.
+- Laserreinigung: MLRM mit 100–300 W je Ausführung und MLRC 3000 finden Sie im Bereich Laserreinigung. Die bestätigten Angaben stehen auf der jeweiligen Produktseite; weitere technische Daten erhalten Sie auf Anfrage.
+- Gezielt anfragen: Nennen Sie Werkstoff, Bearbeitungsaufgabe und typische Werkstückgrösse. Bei Schweissaufgaben helfen zusätzlich Materialdicke und Nahtform, bei Reinigungsaufgaben eine Beschreibung der Oberfläche.
+
+- [MAHE MLST](https://www.ves-tech.ch/produkte/schweissgeraete/mlst/)
+- [MAHE MLRM](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrm/)
+- [MAHE MLRC 3000](https://www.ves-tech.ch/produkte/reinigungsgeraete/mlrc-3000/)
 
 ## Plasmaschneiden
 Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT.

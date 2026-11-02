@@ -679,6 +679,13 @@ def llms_full():
         out += [f"### {guide['title']}", f"Quelle: {C.abs_url(C.u_cat(L, c['id']))}", guide['intro']]
         out += [f"- {h}: {text}" for h, text in guide['criteria']]
         out.append("")
+        if 'members' in c:
+            # List the original product URLs; do not repeat full specification
+            # tables under a second category in the machine-readable export.
+            out += [f"- [{C.pFullName(L, p)}]({C.abs_url(C.u_prod(L, p))})"
+                    for p in C.products_of(c['id'])]
+            out.append("")
+            continue
         for p in C.products_of(c["id"]):
             out.append(f"### {C.pFullName(L, p)}")
             out.append(f"URL: {C.abs_url(C.u_prod(L, p))}")

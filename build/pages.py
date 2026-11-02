@@ -942,7 +942,7 @@ def page_cat(lang, c, sub=None):
                             n=len(items), subs=subs_txt), 155)
         else:
             title = C.t(lang, "cat_title_tpl", cat=C.catT(lang, c),
-                        sub_hint=C.subT(lang, c["subs"][0]))
+                        sub_hint=C.subT(lang, c["subs"][0]) if c['subs'] else C.catT(lang, c))
             if len(title) > 68:
                 title = C.t(lang, "cat_title_tpl_kurz", cat=C.catT(lang, c))
             desc = clip(C.t(lang, "cat_desc_tpl", cat=C.catT(lang, c),
@@ -958,10 +958,10 @@ def page_cat(lang, c, sub=None):
 
     chip_html = [f'<a class="chip{"" if sub else " active"}" href="{e(C.u_cat(lang, cid))}">'
                  f'{e(C.t(lang,"chip_all"))}</a>']
-    for s in c["subs"]:
+    for label, target in C.category_navigation(lang, c):
         chip_html.append(
-            f'<a class="chip{" active" if s == sub else ""}" href="{e(C.u_sub(lang, cid, s))}">'
-            f'{e(C.subT(lang, s))}</a>')
+            f'<a class="chip{" active" if target == url else ""}" href="{e(target)}">'
+            f'{e(label)}</a>')
     chips = '<div class="chips">' + "".join(chip_html) + "</div>"
 
     body = (

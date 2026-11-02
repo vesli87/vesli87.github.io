@@ -379,7 +379,7 @@ def catBrand(cid):
     sie mehrere (in der Rubrik Occasion kann das jederzeit vorkommen), steht
     dort nichts von einer Marke, denn dann waere jede Angabe falsch.
     """
-    marken = {pBrand(p) for p in P if p["cat"] == cid}
+    marken = {pBrand(p) for p in products_of(cid)}
     return marken.pop() if len(marken) == 1 else ""
 
 # Web3Forms-Key: wird aus build/config.local.json oder aus der Umgebung gelesen.
@@ -468,7 +468,7 @@ def _load(name):
     return json.loads((DATA / f"{name}.json").read_text("utf-8"))
 
 P         = _load("P")           # 52 Produkte
-CATS      = _load("CATS")        # 4 Kategorien
+CATS      = _load("CATS")        # Catalogue categories and curated collections
 ANALYTICS_CAMPAIGNS = _load("ANALYTICS_CAMPAIGNS")
 INQUIRY_OPTIONS = _load("INQUIRY_OPTIONS")
 PK        = _load("PK")          # Kategorie-Icons
@@ -1099,7 +1099,11 @@ def cwk_text(lang, p):
 
 
 def products_of(cat_id, sub=None):
-    out = [p for p in P if p["cat"] == cat_id]
+    category = CAT_BY_ID[cat_id]
+    # A collection is another entry point to existing products, never another
+    # product record or canonical URL. Its explicit order is editorial.
+    out = ([BY_ID[pid] for pid in category['members']] if 'members' in category
+           else [p for p in P if p["cat"] == cat_id])
     if sub:
         out = [p for p in out if p["sub"] == sub]
     return out
@@ -1272,6 +1276,7 @@ def analytics_campaigns():
 
 CAT_SLUG = {
     "schweissgeraete": {"de": "schweissgeraete", "fr": "postes-de-soudage", "it": "saldatrici", "en": "welding-equipment", "es": "equipos-de-soldadura"},
+    "lasertechnik":    {"de": "lasertechnik", "fr": "technologie-laser", "it": "tecnologia-laser", "en": "laser-technology", "es": "tecnologia-laser"},
     "plasmaschneiden": {"de": "plasmaschneiden", "fr": "decoupe-plasma",    "it": "taglio-plasma", "en": "plasma-cutting", "es": "corte-por-plasma"},
     "reinigung":       {"de": "reinigungsgeraete", "fr": "nettoyage",       "it": "pulizia", "en": "cleaning-equipment", "es": "equipos-de-limpieza"},
     "zubehoer":        {"de": "zubehoer",        "fr": "accessoires",       "it": "accessori", "en": "accessories", "es": "accesorios"},
@@ -1356,6 +1361,14 @@ def search_landing(lang, cid, sub=None):
     return None
 
 
+def category_navigation(lang, category):
+    """Collection shortcuts retain the published process-category routes."""
+    if 'members' in category:
+        return [editorial_target(lang, ref) for ref in category['links']]
+    return [(subT(lang, sub), u_sub(lang, category['id'], sub))
+            for sub in category['subs']]
+
+
 def validate_search_landings():
     routes = set()
     for item in SEARCH_LANDINGS:
@@ -1383,6 +1396,25 @@ def validate_search_landings():
 def validate_editorial_guides():
     """Validate all languages and destinations before replacing generated files."""
     validate_search_landings()
+    for category in CATS:
+        if 'members' not in category:
+            continue
+        members = category['members']
+        if (not isinstance(members, list) or not members or
+                any(not isinstance(pid, str) or pid not in BY_ID for pid in members) or
+                len(set(members)) != len(members) or category['subs']):
+            raise ValueError('Catalogue collections need distinct existing products and no new subcategory routes')
+        refs = category.get('links', [])
+        if not isinstance(refs, list) or not refs:
+            raise ValueError('Catalogue collections need process shortcuts')
+        grouped = set()
+        for ref in refs:
+            editorial_target(DEFAULT_LANG, ref)
+            if ref['kind'] != 'subcategory':
+                raise ValueError('Collection shortcuts must reference existing process subcategories')
+            grouped.update(p['id'] for p in products_of(ref['id'], ref['sub']))
+        if grouped != set(members) or len({editorial_target(DEFAULT_LANG, ref)[1] for ref in refs}) != len(refs):
+            raise ValueError('Collection shortcuts must cover exactly its products without duplicate destinations')
     for key, table in SUPPLIED_SPECS.items():
         source = table.get('source', {})
         images = source.get('images', [])

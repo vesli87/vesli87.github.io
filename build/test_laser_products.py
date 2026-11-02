@@ -2,6 +2,7 @@
 import copy
 import unittest
 from unittest.mock import patch
+from html_tools import structured_data
 
 import build as B
 import core as C
@@ -10,6 +11,63 @@ import render as R
 
 
 class LaserProductsTests(unittest.TestCase):
+    def test_laser_collection_is_one_catalogue_entry_without_duplicate_products(self):
+        category = C.CAT_BY_ID['lasertechnik']
+        self.assertEqual(C.catBrand(category['id']), 'MAHE')
+        self.assertEqual([p['id'] for p in C.products_of('lasertechnik')],
+                         ['mlst', 'mlrm', 'mlrc-3000'])
+        self.assertEqual(len(C.P), len({p['id'] for p in C.P}))
+        self.assertEqual(C.BY_ID['mlst']['cat'], 'schweissgeraete')
+        self.assertEqual(C.BY_ID['mlrm']['cat'], 'reinigung')
+        for lang in C.LANGS:
+            with self.subTest(lang=lang):
+                url, html = P.page_cat(lang, category)
+                self.assertEqual(url, C.alternates('cat', cat_id='lasertechnik')[lang])
+                self.assertIn(url, C.analytics_paths())
+                self.assertEqual(html.count('<article class="pcard">'), 3)
+                self.assertEqual(len(C.category_navigation(lang, category)), 2)
+                for _, target in C.category_navigation(lang, category):
+                    self.assertIn(f'class="chip" href="{target}"', html)
+                for product in C.products_of('lasertechnik'):
+                    self.assertIn(f'class="pcard-link" href="{C.u_prod(lang, product)}"', html)
+                itemlist = next(item for block in structured_data(html) for item in block['@graph']
+                                if item.get('@type') == 'ItemList')
+                self.assertEqual(itemlist['numberOfItems'], 3)
+                self.assertEqual([item['url'] for item in itemlist['itemListElement']],
+                                 [C.abs_url(C.u_prod(lang, p)) for p in C.products_of('lasertechnik')])
+                indexed = [row for row in B.search_index(lang)['cats'] if row['u'] == url]
+                self.assertEqual(len(indexed), 1)
+
+    def test_laser_entry_is_direct_from_header_mobile_catalogue_home_and_footer(self):
+        category = C.CAT_BY_ID['lasertechnik']
+        for lang in C.LANGS:
+            url = C.u_cat(lang, category['id'])
+            label = R.e(C.catT(lang, category))
+            # Existing product and process destinations activate the laser entry.
+            for path in [url, *(C.u_prod(lang, p) for p in C.products_of(category['id'])),
+                         *(target for _, target in C.category_navigation(lang, category))]:
+                header = R.header(lang, {**C.alternates('cat', cat_id='lasertechnik'), lang: path})
+                self.assertIn(f'<a href="{url}" aria-current="page">{label}</a>', header)
+                self.assertEqual(header.count('aria-current="page"'), 1)
+            self.assertIn(f'class="mlink" href="{url}"', R.mega(lang))
+            self.assertIn(f'class="chip" href="{url}"', P.page_products(lang)[1])
+            self.assertIn(f'class="cat" href="{url}"', P.page_home(lang)[1])
+            self.assertIn(f'<a href="{url}">{label}</a>', R.footer(lang))
+        # The full reference export describes each original product once.
+        self.assertEqual(B.llms_full().count('### MAHE MLST\n'), 1)
+
+    def test_invalid_collection_members_and_shortcuts_cannot_publish(self):
+        for mutation in ('unknown', 'duplicate', 'missing_group', 'wrong_group', 'new_sub'):
+            category = copy.deepcopy(C.CAT_BY_ID['lasertechnik'])
+            if mutation == 'unknown': category['members'].append('not-a-product')
+            elif mutation == 'duplicate': category['members'].append('mlst')
+            elif mutation == 'missing_group': category['links'].pop()
+            elif mutation == 'wrong_group': category['links'][0]['sub'] = 'MIG / MAG'
+            else: category['subs'].append('Laserschweissen')
+            cats = [category if c['id'] == category['id'] else c for c in C.CATS]
+            with self.subTest(mutation=mutation), patch.object(C, 'CATS', cats), patch.dict(C.CAT_BY_ID, {'lasertechnik': category}):
+                with self.assertRaises(ValueError): C.validate_editorial_guides()
+
     def test_mlst_table_keeps_three_models_and_unknowns_separate(self):
         table = C.SUPPLIED_SPECS['mlst']
         self.assertEqual([c['title'] for c in table['columns']],

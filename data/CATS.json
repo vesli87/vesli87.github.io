@@ -13,6 +13,30 @@
   ]
  },
  {
+  "id": "lasertechnik",
+  "t": "Lasertechnik",
+  "pk": "laser",
+  "d": "Handgeführtes Laserschweissen und Laserreinigung von MAHE: MLST, MLRM und MLRC 3000 direkt vergleichen und das passende Gerät anfragen.",
+  "subs": [],
+  "members": [
+   "mlst",
+   "mlrm",
+   "mlrc-3000"
+  ],
+  "links": [
+   {
+    "kind": "subcategory",
+    "id": "schweissgeraete",
+    "sub": "Laserschweissen"
+   },
+   {
+    "kind": "subcategory",
+    "id": "reinigung",
+    "sub": "Laserreinigung"
+   }
+  ]
+ },
+ {
   "id": "plasmaschneiden",
   "t": "Plasmaschneiden",
   "pk": "plasma",

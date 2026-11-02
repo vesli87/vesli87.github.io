@@ -102,6 +102,30 @@
         "kind": "product",
         "id": "plasmafix-51"
       }
+    ],
+    "lasertechnik": [
+      {
+        "kind": "subcategory",
+        "id": "schweissgeraete",
+        "sub": "Laserschweissen"
+      },
+      {
+        "kind": "subcategory",
+        "id": "reinigung",
+        "sub": "Laserreinigung"
+      },
+      {
+        "kind": "product",
+        "id": "mlst"
+      },
+      {
+        "kind": "product",
+        "id": "mlrm"
+      },
+      {
+        "kind": "product",
+        "id": "mlrc-3000"
+      }
     ]
   },
   "subcategories": {
@@ -462,7 +486,8 @@
           "id": "plasmafix-51"
         }
       ]
-    }
+    },
+    "lasertechnik": {}
   },
   "services": {
     "overview": [

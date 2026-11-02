@@ -47,10 +47,10 @@ class SpanishTests(unittest.TestCase):
                         for a, b in zip(de_row[1:], es_row[1:]):
                             self.assertEqual(numbers(a), numbers(b), (product['id'], a, b))
 
-    def test_same_products_are_reachable_on_all_127_spanish_pages(self):
+    def test_same_products_are_reachable_on_all_128_spanish_pages(self):
         paths = [path for path in C.analytics_paths() if path.startswith('/es/')]
-        self.assertEqual(len(paths), 127)
-        self.assertEqual(len(set(paths)), 127)
+        self.assertEqual(len(paths), 128)
+        self.assertEqual(len(set(paths)), 128)
         for product in C.P:
             alternatives = C.alternates('prod', p=product)
             self.assertEqual(set(alternatives), set(C.LANGS))

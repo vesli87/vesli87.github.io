@@ -205,7 +205,7 @@ def front_html(lang, p):
         # Der Hersteller stellt die Ausfuehrungen nebeneinander, jede mit Bild
         # und eigener Liste. Genau so hier – eine gemeinsame Liste wuerde die
         # schwaecheren Ausfuehrungen zu gut aussehen lassen.
-        out.append(f'<h3 class="besond">{e(C.t(lang, "highlights"))}</h3>'
+        out.append(f'<h3 class="besond">{e(C.highlightsTitle(lang, p))}</h3>'
                    '<div class="varianten">')
         for name, img, items in varianten:
             bild = R.img_tag(img, "(max-width:760px) 90vw, 260px", cls="var-img zoomable",
@@ -216,7 +216,7 @@ def front_html(lang, p):
         out.append("</div>")
     elif hl:
         out.append('<div class="fp-highlights"><h3 class="besond">'
-                   + e(C.t(lang, "highlights")) + '</h3><ul class="besond-list">'
+                   + e(C.highlightsTitle(lang, p)) + '</h3><ul class="besond-list">'
                    + "".join(f"<li>{e(x)}</li>" for x in hl) + "</ul></div>")
     if panels:
         out.append(f'<h3 class="fp-section">{e(C.t(lang,"front_h"))}</h3>')
@@ -303,7 +303,7 @@ def spec_html(lang, p):
             f'<div class="spectab-scroll" tabindex="0" role="region" '
             f'aria-label="{e(C.t(lang,"techdata"))} {e(C.pName(lang, p))}">'
             f'<table class="spectab">{cap}'
-            f'<thead><tr><th scope="col">{e(C.t(lang,"spec_model"))}</th>{head}</tr></thead>'
+            f'<thead><tr><th scope="col">{e(t.get("row_header") or C.t(lang,"spec_model"))}</th>{head}</tr></thead>'
             f"<tbody>{body}</tbody></table></div>"
         )
         if t["note"]:
@@ -1039,7 +1039,7 @@ def page_product(lang, p):
         f'<p class="zustand"><b>{e(C.t(lang, "zustand_h"))}</b> {e(zt)}</p>'
         if zt else "")
     has_panel = bool(C.fpAssign(p))
-    tab1 = C.t(lang, "tab_feat") if has_panel else C.t(lang, "highlights")
+    tab1 = C.t(lang, "tab_feat") if has_panel else C.highlightsTitle(lang, p)
     tabs = [("feat", tab1), ("tech", C.t(lang, "tab_tech"))]
     if C.optionsOf(lang, p):
         tabs.append(("opt", C.t(lang, "tab_opt")))

@@ -595,13 +595,39 @@ Passendes Zubehör: Elektrodenkabel 25–90 mm², Massekabel 25–90 mm².
 ### MAHE MLST
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/mlst/
 Kategorie: Schweissgeräte / Laserschweissen · Typ: Handgeführtes Laserschweissen · Art.-Nr.: MLST · Preis: auf Anfrage (CHF)
-Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.
+Handgeführter, wassergekühlter Faserlaser mit 1500, 2000 oder 3000 W. Bussteuerung, modularer Lasergenerator und Bedienoberfläche zur Parametrierung.
 MLST ergänzt das MAHE-Programm um handgeführtes Laserschweissen. Gebündelte Laserenergie wird gezielt an der Fügestelle eingebracht, während die Pistole entlang der Naht geführt wird. Das ermöglicht eine flexible Nahtführung an passend vorbereiteten Metallverbindungen. Für eine belastbare Gerätewahl betrachten wir Werkstoff, Wandstärke, Zugänglichkeit und Nahtgeometrie gemeinsam.
-- Für Ihr Angebot: Werkstoff, Dicke, Nahtform und Produktionsaufgabe angeben. Laserleistung, Stromversorgung, Kühlung, Drahtvorschub und Lieferumfang werden für die gewählte MAHE-Ausführung abgeglichen.
+- Wählen Sie die Ausführung mit 1500, 2000 oder 3000 W und nennen Sie Werkstoff, Dicke, Nahtform und Produktionsaufgabe. Netzanschluss, Faserlänge, Drahtvorschub und Lieferumfang werden für das konkrete Gerät im Angebot festgehalten.
 - Den Laserarbeitsplatz vor der Inbetriebnahme planen: geschützter und überwachter Laserbereich, geeignete Laserschutzausrüstung, Absaugung und unterwiesenes Personal. Die Anforderungen sind mit der zuständigen Laserschutzperson und anhand der Geräteunterlagen festzulegen.
 Weiterführend: [MAHE Omega AX](https://www.ves-tech.ch/produkte/schweissgeraete/omega-ax/)
 Weiterführend: [MAHE HyperMIG TWIN](https://www.ves-tech.ch/produkte/schweissgeraete/hypermig-twin/)
-Ausstattung: Verfahren: Handgeführtes Laserschweissen; Laserleistung: 1500–3000 W, je Ausführung.
+Besonderheiten: Reaktionsschnelle Bussteuerung: Die Module kommunizieren über ein gemeinsames Bussystem. So werden die einzelnen Funktionen aufeinander abgestimmt.; Modularer paralleler Lasergenerator: Die modulare Architektur lässt sich auf unterschiedliche Anforderungen und Anwendungen abstimmen.; Übersichtliche Bedienoberfläche: Prozessinformationen und Einstellungen sind an der Mensch-Maschine-Schnittstelle zugänglich. Parameter können dem Arbeitsablauf angepasst werden.; Zentrale Hauptsteuerung: Die Hauptsteuerplatine koordiniert die Komponenten und bündelt die Steuerung der Systemfunktionen.; Offene Busschnittstelle: Die Architektur ist für die Einbindung kompatibler Module und Peripheriegeräte ausgelegt. Verfügbare Erweiterungen werden für die konkrete Ausführung geklärt.; Abgestimmte Gassteuerung und Strahlführung: Magnetventile und Galvanometer sind in das Steuerungskonzept eingebunden. Sie übernehmen die jeweiligen Aufgaben bei Gassteuerung und Strahlführung..
+Ausstattung: Verfahren: Handgeführtes Laserschweissen.
+
+Technische Daten – MAHE MLST:
+
+| Modell | MLST 1500 W | MLST 2000 W | MLST 3000 W |
+| --- | --- | --- | --- |
+| Laserleistung | 1500 W | 2000 W | 3000 W |
+| Zentrale Laserwellenlänge | 1080 ± 10 nm | 1080 ± 10 nm | 1080 ± 10 nm |
+| Stromversorgung | 230 V~ / 40 A / 50/60Hz | 230 V~ / 40 A / 50/60Hz | 230 V~ / 40 A / 50/60Hz |
+| Strahlübertragung | Lichtleitfaser | Lichtleitfaser | Lichtleitfaser |
+| Laserkühlung | wassergekühlt | wassergekühlt | wassergekühlt |
+| Faserlänge | 5 oder 10 m | 5 oder 10 m | 5 oder 10 m |
+| Schutzgas | Argon, Stickstoff | Argon, Stickstoff | Argon, Stickstoff |
+| Leistungsaufnahme Gesamtanlage | 8 kW | 11 kW | Auf Anfrage |
+| Druckanforderung | 4–6 bar | 4–6 bar | 4–6 bar |
+| Betriebstemperaturbereich | 10–40 °C | 10–40 °C | 10–40 °C |
+| Schweissnahtdicke (Richtwert) | 0,4–4 mm | 0,4–6 mm | Auf Anfrage |
+| Fügespalt | < 0,5 mm | < 0,5 mm | Auf Anfrage |
+| Drahtdurchmesser | 0,8 / 1,0 / 1,2 / 1,6 mm | 0,8 / 1,0 / 1,2 / 1,6 mm | 0,8 / 1,0 / 1,2 / 1,6 mm |
+| Kältemittel | R410A | R410A | R410A |
+| Garantieangabe (Gerät / Laserquelle) | 12 Monate / 2 Jahre | 12 Monate / 2 Jahre | Auf Anfrage |
+| Abmessungen Laseranlage | 1130 × 690 × 1040 mm | 1130 × 690 × 1040 mm | 1130 × 690 × 1040 mm |
+| Abmessungen Drahtvorschub | 692 × 246 × 391 mm | 692 × 246 × 391 mm | 692 × 246 × 391 mm |
+| Gewicht Laseranlage | ca. 197 kg | ca. 197 kg | ca. 197 kg |
+*: Angaben gemäss bereitgestellten technischen Unterlagen. Schweissnahtdicken sind anwendungsabhängige Richtwerte. „Auf Anfrage“ kennzeichnet nicht angegebene Daten. Netzanschluss vor der Installation anhand von Typenschild und Betriebsanleitung durch eine Elektrofachkraft prüfen. Umfang und Bedingungen der Garantie für Gerät und Laserquelle werden im schriftlichen Angebot festgehalten.
+
 
 ## Plasmaschneiden
 Theta-Plasmaschneidinverter mit HSC-Technologie für Schneidleistungen von 15 mm bis 80 mm. Erhältlich für den manuellen Einsatz und die Automation sowie als Teil der CNC-Schneidtische MPT.

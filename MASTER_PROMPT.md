@@ -1515,3 +1515,40 @@ in der Partnerwerkstatt. Die kurzen Hinweise zum Laserarbeitsplatz und die
 als INFO bezeichneten Suva-Verweise dienen der Einsatzplanung. Es handelt
 sich dabei nicht um ein MAHE-Handbuch oder eine Konformitätsbestätigung.
 Quelle: https://www.suva.ch/de-ch/praevention/nach-gefahren/gefaehrliche-materialien-strahlungen-und-situationen/strahlung-und-radioaktivitaet/nichtionisierende-strahlung/laserschweissgeraete-sichere-anwendung
+
+
+### MLST-Modellvergleich und Vorteile, 02.11.2026
+
+Der Inhaber hat technische Tabellen für MLST 1500 W, 2000 W und 3000 W sowie
+einen Screenshot der Vorteile geliefert. Die drei Tabellen sind mit ihren
+Bildnamen und SHA-256-Werten in `data/SUPPLIED_SPECS.json` dokumentiert.
+`SPECMAP` ordnet die Vergleichstabelle MLST zu; `core.py` lädt diese separat
+von den Website- und CWK-Importen. Ein erneuter Scrape ersetzt sie nicht.
+
+Die 18 Zeilen unterscheiden Laser-Ausgangsleistung von Leistungsaufnahme der
+Gesamtanlage. 3000 W bekommt keine aus anderen Quellen ergänzte Leistungs-
+aufnahme, Schweissnahtdicke, Spaltgrenze oder Garantiedauer: unbekannte Werte
+heissen ausdrücklich „Auf Anfrage“, nicht der Strich für „nicht vorhanden“.
+Nahtdicken bleiben anwendungsabhängige Richtwerte; aus der Garantiezeile wird
+keine pauschale Garantie für die ganze Baureihe abgeleitet.
+
+Der Inhaber hat die Vorlagenwerte 230 V~ / 40 A / 50/60 Hz für 2000 und
+3000 W nach Hinweis auf die Unstimmigkeit ausdrücklich bestätigt. Veröffentlicht
+werden die übernommenen Angaben mit einer kurzen Erläuterung zur Prüfung
+des tatsächlichen Netzanschlusses anhand von Typenschild/Betriebsanleitung
+durch eine Elektrofachkraft. Weder 380/400 V aus TRM-Unterlagen einsetzen noch
+eine Absicherung oder installierte Anschlussleistung daraus ableiten. Die
+Frequenz wird in der Tabelle als 50/60 Hz (zwei Betriebsfrequenzen) dargestellt.
+
+Die gelieferten Vorteile sind auf ausdrücklichen Wunsch professionell redigiert
+in sechs sachlichen, fünfsprachigen Punkten in `HL_DEVICE.mlst` zusammengefasst.
+Sie bleiben von wörtlich importierten MAHE-Webtexten getrennt dokumentiert.
+Unbelegte Superlative und perfekte Ergebnisse sind kein Leistungsversprechen.
+Magnetventile werden der Gassteuerung, Galvanometer der Strahlführung zugeordnet.
+Die übersetzte optionale `heading` benennt diesen Reiter „Vorteile“. Es gibt
+keine erfundenen Frontpanelbilder, Prozesssymbole oder Zubehörpakete.
+
+Die Produktanfrage bietet die drei konkret bezeichneten Leistungsvarianten
+in `INQUIRY_OPTIONS.mlst`; Auswahl, Mengen, Sprachwechsel und Produktkontext
+verwenden die bereits bestehende validierte Anfragefunktion. Die Homepage
+behält ihre sieben Produktfolien, die Daten von MLRM und MLRC bleiben unverändert.

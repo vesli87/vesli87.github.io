@@ -240,5 +240,113 @@
     "it": "Dimensioni CWK (A × L × P)",
     "en": "CWK dimensions (H × W × L)",
     "es": "Dimensiones CWK (Al × An × L)"
+  },
+  "Laserleistung": {
+    "fr": "Puissance laser",
+    "it": "Potenza laser",
+    "en": "Laser power",
+    "es": "Potencia láser"
+  },
+  "Zentrale Laserwellenlänge": {
+    "fr": "Longueur d’onde centrale du laser",
+    "it": "Lunghezza d’onda centrale del laser",
+    "en": "Central laser wavelength",
+    "es": "Longitud de onda central del láser"
+  },
+  "Stromversorgung": {
+    "fr": "Alimentation électrique",
+    "it": "Alimentazione elettrica",
+    "en": "Electrical supply",
+    "es": "Alimentación eléctrica"
+  },
+  "Strahlübertragung": {
+    "fr": "Transmission du faisceau",
+    "it": "Trasmissione del fascio",
+    "en": "Beam delivery",
+    "es": "Transmisión del haz"
+  },
+  "Laserkühlung": {
+    "fr": "Refroidissement du laser",
+    "it": "Raffreddamento del laser",
+    "en": "Laser cooling",
+    "es": "Refrigeración del láser"
+  },
+  "Faserlänge": {
+    "fr": "Longueur de la fibre",
+    "it": "Lunghezza della fibra",
+    "en": "Fibre length",
+    "es": "Longitud de la fibra"
+  },
+  "Schutzgas": {
+    "fr": "Gaz de protection",
+    "it": "Gas di protezione",
+    "en": "Shielding gas",
+    "es": "Gas de protección"
+  },
+  "Leistungsaufnahme Gesamtanlage": {
+    "fr": "Puissance absorbée totale",
+    "it": "Potenza assorbita totale",
+    "en": "Total system power consumption",
+    "es": "Potencia absorbida total"
+  },
+  "Druckanforderung": {
+    "fr": "Pression requise",
+    "it": "Pressione richiesta",
+    "en": "Pressure requirement",
+    "es": "Presión requerida"
+  },
+  "Betriebstemperaturbereich": {
+    "fr": "Plage de température de fonctionnement",
+    "it": "Temperatura di esercizio",
+    "en": "Operating temperature range",
+    "es": "Temperatura de funcionamiento"
+  },
+  "Schweissnahtdicke (Richtwert)": {
+    "fr": "Épaisseur de soudure (indicative)",
+    "it": "Spessore della saldatura (indicativo)",
+    "en": "Weld thickness (guideline)",
+    "es": "Espesor de soldadura (orientativo)"
+  },
+  "Fügespalt": {
+    "fr": "Jeu entre les pièces",
+    "it": "Gioco del giunto",
+    "en": "Joint gap",
+    "es": "Separación de la unión"
+  },
+  "Drahtdurchmesser": {
+    "fr": "Diamètre du fil",
+    "it": "Diametro del filo",
+    "en": "Wire diameter",
+    "es": "Diámetro del hilo"
+  },
+  "Kältemittel": {
+    "fr": "Fluide frigorigène",
+    "it": "Refrigerante",
+    "en": "Refrigerant",
+    "es": "Refrigerante"
+  },
+  "Garantieangabe (Gerät / Laserquelle)": {
+    "fr": "Garantie indiquée (appareil / source laser)",
+    "it": "Garanzia indicata (apparecchio / sorgente laser)",
+    "en": "Stated warranty (equipment / laser source)",
+    "es": "Garantía indicada (equipo / fuente láser)"
+  },
+  "Abmessungen Laseranlage": {
+    "fr": "Dimensions de l’appareil laser",
+    "it": "Dimensioni dell’apparecchio laser",
+    "en": "Laser unit dimensions",
+    "es": "Dimensiones del equipo láser"
+  },
+  "Abmessungen Drahtvorschub": {
+    "fr": "Dimensions du dévidoir",
+    "it": "Dimensioni del trainafilo",
+    "en": "Wire feeder dimensions",
+    "es": "Dimensiones del alimentador de hilo"
+  },
+  "Gewicht Laseranlage": {
+    "fr": "Poids de l’appareil laser",
+    "it": "Peso dell’apparecchio laser",
+    "en": "Laser unit weight",
+    "es": "Peso del equipo láser"
   }
 }

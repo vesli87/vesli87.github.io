@@ -45,7 +45,7 @@
 - [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
 - [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
 - [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte. (Plasma TIG / Mikroplasma)
-- [MAHE MLST](https://www.ves-tech.ch/produkte/schweissgeraete/mlst/): Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung. (Handgeführtes Laserschweissen)
+- [MAHE MLST](https://www.ves-tech.ch/produkte/schweissgeraete/mlst/): Handgeführter, wassergekühlter Faserlaser mit 1500, 2000 oder 3000 W. Bussteuerung, modularer Lasergenerator und Bedienoberfläche zur Parametrierung. (Handgeführtes Laserschweissen)
 
 ### Plasmaschneiden
 - [MAHE Theta 40](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/): Leichtes 230-V-Plasmaschneidgerät für die Werkstatt. (Plasma Cut)

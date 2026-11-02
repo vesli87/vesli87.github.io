@@ -16811,18 +16811,53 @@
     "es": "Soldadura láser manual"
    },
    "description": {
-    "de": "Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.",
-    "fr": "Système de soudage laser manuel de 1500 à 3000 W selon la version. Pour l’assemblage ciblé de pièces métalliques en atelier et en production.",
-    "it": "Sistema di saldatura laser manuale da 1500 a 3000 W secondo la versione. Per unire componenti metallici in officina e in produzione.",
-    "en": "Handheld laser welding system with 1500–3000 W laser power, depending on the version. For joining metal components in the workshop and in production.",
-    "es": "Sistema de soldadura láser manual de 1500 a 3000 W según la versión. Para unir componentes metálicos en taller y en producción."
+    "de": "Handgeführter, wassergekühlter Faserlaser mit 1500, 2000 oder 3000 W. Bussteuerung, modularer Lasergenerator und Bedienoberfläche zur Parametrierung.",
+    "fr": "Laser manuel refroidi par eau de 1500, 2000 ou 3000 W. Commande par bus, générateur laser modulaire et interface de réglage des paramètres.",
+    "it": "Laser manuale raffreddato ad acqua da 1500, 2000 o 3000 W. Controllo bus, generatore laser modulare e interfaccia per impostare i parametri.",
+    "en": "Water-cooled handheld fibre laser with 1500, 2000 or 3000 W. Bus control, a modular laser generator and an operator interface for parameter settings.",
+    "es": "Láser manual refrigerado por agua de 1500, 2000 o 3000 W. Control por bus, generador láser modular e interfaz para ajustar los parámetros."
    },
    "highlights": {
-    "de": [],
-    "fr": [],
-    "it": [],
-    "en": [],
-    "es": []
+    "de": [
+     "Reaktionsschnelle Bussteuerung: Die Module kommunizieren über ein gemeinsames Bussystem. So werden die einzelnen Funktionen aufeinander abgestimmt.",
+     "Modularer paralleler Lasergenerator: Die modulare Architektur lässt sich auf unterschiedliche Anforderungen und Anwendungen abstimmen.",
+     "Übersichtliche Bedienoberfläche: Prozessinformationen und Einstellungen sind an der Mensch-Maschine-Schnittstelle zugänglich. Parameter können dem Arbeitsablauf angepasst werden.",
+     "Zentrale Hauptsteuerung: Die Hauptsteuerplatine koordiniert die Komponenten und bündelt die Steuerung der Systemfunktionen.",
+     "Offene Busschnittstelle: Die Architektur ist für die Einbindung kompatibler Module und Peripheriegeräte ausgelegt. Verfügbare Erweiterungen werden für die konkrete Ausführung geklärt.",
+     "Abgestimmte Gassteuerung und Strahlführung: Magnetventile und Galvanometer sind in das Steuerungskonzept eingebunden. Sie übernehmen die jeweiligen Aufgaben bei Gassteuerung und Strahlführung."
+    ],
+    "fr": [
+     "Commande par bus réactive : les modules communiquent sur un bus commun afin de coordonner les différentes fonctions.",
+     "Générateur laser parallèle modulaire : l’architecture modulaire peut être adaptée à différents besoins et applications.",
+     "Interface de commande claire : les informations de procédé et les réglages sont accessibles depuis l’interface homme-machine. Les paramètres peuvent être adaptés au travail.",
+     "Commande centrale : la carte de commande principale coordonne les composants et centralise le pilotage des fonctions du système.",
+     "Interface bus ouverte : l’architecture prévoit l’intégration de modules et de périphériques compatibles. Les extensions disponibles sont précisées pour la version choisie.",
+     "Commande du gaz et guidage du faisceau coordonnés : les électrovannes et le galvanomètre sont intégrés au concept de commande pour assurer leurs fonctions respectives."
+    ],
+    "it": [
+     "Controllo bus reattivo: i moduli comunicano tramite un bus comune per coordinare le singole funzioni.",
+     "Generatore laser parallelo modulare: l’architettura modulare può essere adattata a esigenze e applicazioni diverse.",
+     "Interfaccia di comando chiara: informazioni di processo e impostazioni sono accessibili dall’interfaccia uomo-macchina. I parametri possono essere adattati al lavoro.",
+     "Controllo centrale: la scheda di comando principale coordina i componenti e centralizza la gestione delle funzioni del sistema.",
+     "Interfaccia bus aperta: l’architettura prevede l’integrazione di moduli e periferiche compatibili. Le espansioni disponibili vengono definite per la versione scelta.",
+     "Gestione del gas e guida del fascio coordinate: elettrovalvole e galvanometro sono integrati nel sistema di controllo e svolgono le rispettive funzioni."
+    ],
+    "en": [
+     "Responsive bus control: modules communicate over a shared bus to coordinate the individual system functions.",
+     "Modular parallel laser generator: the modular architecture can be configured for different requirements and applications.",
+     "Clear operator interface: process information and settings are accessible through the human-machine interface. Parameters can be adjusted to suit the work.",
+     "Central system control: the main control board coordinates the components and brings system functions under central control.",
+     "Open bus interface: the architecture supports integration of compatible modules and peripherals. Available extensions are confirmed for the selected version.",
+     "Coordinated gas control and beam steering: solenoid valves and the galvanometer are integrated into the control system for their respective functions."
+    ],
+    "es": [
+     "Control por bus con respuesta rápida: los módulos se comunican mediante un bus común para coordinar las distintas funciones.",
+     "Generador láser paralelo modular: la arquitectura modular puede adaptarse a distintos requisitos y aplicaciones.",
+     "Interfaz de manejo clara: la información del proceso y los ajustes son accesibles desde la interfaz persona-máquina. Los parámetros pueden adaptarse al trabajo.",
+     "Control central: la placa de control principal coordina los componentes y centraliza la gestión de las funciones del sistema.",
+     "Interfaz de bus abierta: la arquitectura está preparada para integrar módulos y periféricos compatibles. Las ampliaciones disponibles se concretan para la versión elegida.",
+     "Control del gas y dirección del haz coordinados: las electroválvulas y el galvanómetro están integrados en el sistema de control para sus funciones respectivas."
+    ]
    },
    "front_panels": [],
    "options": {
@@ -16834,32 +16869,807 @@
    },
    "specs": {
     "de": {
-     "Verfahren": "Handgeführtes Laserschweissen",
-     "Laserleistung": "1500–3000 W, je Ausführung"
+     "Verfahren": "Handgeführtes Laserschweissen"
     },
     "fr": {
-     "Procédé": "Soudage laser manuel",
-     "Puissance laser": "1500–3000 W, selon la version"
+     "Procédé": "Soudage laser manuel"
     },
     "it": {
-     "Processo": "Saldatura laser manuale",
-     "Potenza laser": "1500–3000 W, secondo la versione"
+     "Processo": "Saldatura laser manuale"
     },
     "en": {
-     "Process": "Handheld laser welding",
-     "Laser power": "1500–3000 W, depending on the version"
+     "Process": "Handheld laser welding"
     },
     "es": {
-     "Proceso": "Soldadura láser manual",
-     "Potencia láser": "1500–3000 W, según la versión"
+     "Proceso": "Soldadura láser manual"
     }
    },
    "techdata": {
-    "de": [],
-    "fr": [],
-    "it": [],
-    "en": [],
-    "es": []
+    "de": [
+     {
+      "title": "MAHE MLST",
+      "note": "Angaben gemäss bereitgestellten technischen Unterlagen. Schweissnahtdicken sind anwendungsabhängige Richtwerte. „Auf Anfrage“ kennzeichnet nicht angegebene Daten. Netzanschluss vor der Installation anhand von Typenschild und Betriebsanleitung durch eine Elektrofachkraft prüfen. Umfang und Bedingungen der Garantie für Gerät und Laserquelle werden im schriftlichen Angebot festgehalten.",
+      "columns": [
+       "MLST 1500 W",
+       "MLST 2000 W",
+       "MLST 3000 W"
+      ],
+      "rows": [
+       {
+        "label": "Laserleistung",
+        "values": {
+         "MLST 1500 W": "1500 W",
+         "MLST 2000 W": "2000 W",
+         "MLST 3000 W": "3000 W"
+        }
+       },
+       {
+        "label": "Zentrale Laserwellenlänge",
+        "values": {
+         "MLST 1500 W": "1080 ± 10 nm",
+         "MLST 2000 W": "1080 ± 10 nm",
+         "MLST 3000 W": "1080 ± 10 nm"
+        }
+       },
+       {
+        "label": "Stromversorgung",
+        "values": {
+         "MLST 1500 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 2000 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 3000 W": "230 V~ / 40 A / 50/60Hz"
+        }
+       },
+       {
+        "label": "Strahlübertragung",
+        "values": {
+         "MLST 1500 W": "Lichtleitfaser",
+         "MLST 2000 W": "Lichtleitfaser",
+         "MLST 3000 W": "Lichtleitfaser"
+        }
+       },
+       {
+        "label": "Laserkühlung",
+        "values": {
+         "MLST 1500 W": "wassergekühlt",
+         "MLST 2000 W": "wassergekühlt",
+         "MLST 3000 W": "wassergekühlt"
+        }
+       },
+       {
+        "label": "Faserlänge",
+        "values": {
+         "MLST 1500 W": "5 oder 10 m",
+         "MLST 2000 W": "5 oder 10 m",
+         "MLST 3000 W": "5 oder 10 m"
+        }
+       },
+       {
+        "label": "Schutzgas",
+        "values": {
+         "MLST 1500 W": "Argon, Stickstoff",
+         "MLST 2000 W": "Argon, Stickstoff",
+         "MLST 3000 W": "Argon, Stickstoff"
+        }
+       },
+       {
+        "label": "Leistungsaufnahme Gesamtanlage",
+        "values": {
+         "MLST 1500 W": "8 kW",
+         "MLST 2000 W": "11 kW",
+         "MLST 3000 W": "Auf Anfrage"
+        }
+       },
+       {
+        "label": "Druckanforderung",
+        "values": {
+         "MLST 1500 W": "4–6 bar",
+         "MLST 2000 W": "4–6 bar",
+         "MLST 3000 W": "4–6 bar"
+        }
+       },
+       {
+        "label": "Betriebstemperaturbereich",
+        "values": {
+         "MLST 1500 W": "10–40 °C",
+         "MLST 2000 W": "10–40 °C",
+         "MLST 3000 W": "10–40 °C"
+        }
+       },
+       {
+        "label": "Schweissnahtdicke (Richtwert)",
+        "values": {
+         "MLST 1500 W": "0,4–4 mm",
+         "MLST 2000 W": "0,4–6 mm",
+         "MLST 3000 W": "Auf Anfrage"
+        }
+       },
+       {
+        "label": "Fügespalt",
+        "values": {
+         "MLST 1500 W": "< 0,5 mm",
+         "MLST 2000 W": "< 0,5 mm",
+         "MLST 3000 W": "Auf Anfrage"
+        }
+       },
+       {
+        "label": "Drahtdurchmesser",
+        "values": {
+         "MLST 1500 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 2000 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 3000 W": "0,8 / 1,0 / 1,2 / 1,6 mm"
+        }
+       },
+       {
+        "label": "Kältemittel",
+        "values": {
+         "MLST 1500 W": "R410A",
+         "MLST 2000 W": "R410A",
+         "MLST 3000 W": "R410A"
+        }
+       },
+       {
+        "label": "Garantieangabe (Gerät / Laserquelle)",
+        "values": {
+         "MLST 1500 W": "12 Monate / 2 Jahre",
+         "MLST 2000 W": "12 Monate / 2 Jahre",
+         "MLST 3000 W": "Auf Anfrage"
+        }
+       },
+       {
+        "label": "Abmessungen Laseranlage",
+        "values": {
+         "MLST 1500 W": "1130 × 690 × 1040 mm",
+         "MLST 2000 W": "1130 × 690 × 1040 mm",
+         "MLST 3000 W": "1130 × 690 × 1040 mm"
+        }
+       },
+       {
+        "label": "Abmessungen Drahtvorschub",
+        "values": {
+         "MLST 1500 W": "692 × 246 × 391 mm",
+         "MLST 2000 W": "692 × 246 × 391 mm",
+         "MLST 3000 W": "692 × 246 × 391 mm"
+        }
+       },
+       {
+        "label": "Gewicht Laseranlage",
+        "values": {
+         "MLST 1500 W": "ca. 197 kg",
+         "MLST 2000 W": "ca. 197 kg",
+         "MLST 3000 W": "ca. 197 kg"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "MAHE MLST",
+      "note": "Données issues des documents techniques fournis. Les épaisseurs de soudure sont indicatives et dépendent de l’application. « Sur demande » signale une donnée non fournie. Avant l’installation, faites vérifier le raccordement par un électricien qualifié à partir de la plaque signalétique et de la notice. L’étendue et les conditions de garantie de l’appareil et de la source laser sont précisées dans l’offre écrite.",
+      "columns": [
+       "MLST 1500 W",
+       "MLST 2000 W",
+       "MLST 3000 W"
+      ],
+      "rows": [
+       {
+        "label": "Puissance laser",
+        "values": {
+         "MLST 1500 W": "1500 W",
+         "MLST 2000 W": "2000 W",
+         "MLST 3000 W": "3000 W"
+        }
+       },
+       {
+        "label": "Longueur d’onde centrale du laser",
+        "values": {
+         "MLST 1500 W": "1080 ± 10 nm",
+         "MLST 2000 W": "1080 ± 10 nm",
+         "MLST 3000 W": "1080 ± 10 nm"
+        }
+       },
+       {
+        "label": "Alimentation électrique",
+        "values": {
+         "MLST 1500 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 2000 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 3000 W": "230 V~ / 40 A / 50/60Hz"
+        }
+       },
+       {
+        "label": "Transmission du faisceau",
+        "values": {
+         "MLST 1500 W": "Fibre optique",
+         "MLST 2000 W": "Fibre optique",
+         "MLST 3000 W": "Fibre optique"
+        }
+       },
+       {
+        "label": "Refroidissement du laser",
+        "values": {
+         "MLST 1500 W": "refroidi par eau",
+         "MLST 2000 W": "refroidi par eau",
+         "MLST 3000 W": "refroidi par eau"
+        }
+       },
+       {
+        "label": "Longueur de la fibre",
+        "values": {
+         "MLST 1500 W": "5 ou 10 m",
+         "MLST 2000 W": "5 ou 10 m",
+         "MLST 3000 W": "5 ou 10 m"
+        }
+       },
+       {
+        "label": "Gaz de protection",
+        "values": {
+         "MLST 1500 W": "Argon, azote",
+         "MLST 2000 W": "Argon, azote",
+         "MLST 3000 W": "Argon, azote"
+        }
+       },
+       {
+        "label": "Puissance absorbée totale",
+        "values": {
+         "MLST 1500 W": "8 kW",
+         "MLST 2000 W": "11 kW",
+         "MLST 3000 W": "Sur demande"
+        }
+       },
+       {
+        "label": "Pression requise",
+        "values": {
+         "MLST 1500 W": "4–6 bar",
+         "MLST 2000 W": "4–6 bar",
+         "MLST 3000 W": "4–6 bar"
+        }
+       },
+       {
+        "label": "Plage de température de fonctionnement",
+        "values": {
+         "MLST 1500 W": "10–40 °C",
+         "MLST 2000 W": "10–40 °C",
+         "MLST 3000 W": "10–40 °C"
+        }
+       },
+       {
+        "label": "Épaisseur de soudure (indicative)",
+        "values": {
+         "MLST 1500 W": "0,4–4 mm",
+         "MLST 2000 W": "0,4–6 mm",
+         "MLST 3000 W": "Sur demande"
+        }
+       },
+       {
+        "label": "Jeu entre les pièces",
+        "values": {
+         "MLST 1500 W": "< 0,5 mm",
+         "MLST 2000 W": "< 0,5 mm",
+         "MLST 3000 W": "Sur demande"
+        }
+       },
+       {
+        "label": "Diamètre du fil",
+        "values": {
+         "MLST 1500 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 2000 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 3000 W": "0,8 / 1,0 / 1,2 / 1,6 mm"
+        }
+       },
+       {
+        "label": "Fluide frigorigène",
+        "values": {
+         "MLST 1500 W": "R410A",
+         "MLST 2000 W": "R410A",
+         "MLST 3000 W": "R410A"
+        }
+       },
+       {
+        "label": "Garantie indiquée (appareil / source laser)",
+        "values": {
+         "MLST 1500 W": "12 mois / 2 ans",
+         "MLST 2000 W": "12 mois / 2 ans",
+         "MLST 3000 W": "Sur demande"
+        }
+       },
+       {
+        "label": "Dimensions de l’appareil laser",
+        "values": {
+         "MLST 1500 W": "1130 × 690 × 1040 mm",
+         "MLST 2000 W": "1130 × 690 × 1040 mm",
+         "MLST 3000 W": "1130 × 690 × 1040 mm"
+        }
+       },
+       {
+        "label": "Dimensions du dévidoir",
+        "values": {
+         "MLST 1500 W": "692 × 246 × 391 mm",
+         "MLST 2000 W": "692 × 246 × 391 mm",
+         "MLST 3000 W": "692 × 246 × 391 mm"
+        }
+       },
+       {
+        "label": "Poids de l’appareil laser",
+        "values": {
+         "MLST 1500 W": "env. 197 kg",
+         "MLST 2000 W": "env. 197 kg",
+         "MLST 3000 W": "env. 197 kg"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "MAHE MLST",
+      "note": "Dati tratti dalla documentazione tecnica fornita. Gli spessori di saldatura sono indicativi e dipendono dall’applicazione. « Su richiesta » indica un dato non fornito. Prima dell’installazione, un elettricista qualificato deve verificare il collegamento in base alla targhetta e al manuale. Portata e condizioni della garanzia per apparecchio e sorgente laser sono definite nell’offerta scritta.",
+      "columns": [
+       "MLST 1500 W",
+       "MLST 2000 W",
+       "MLST 3000 W"
+      ],
+      "rows": [
+       {
+        "label": "Potenza laser",
+        "values": {
+         "MLST 1500 W": "1500 W",
+         "MLST 2000 W": "2000 W",
+         "MLST 3000 W": "3000 W"
+        }
+       },
+       {
+        "label": "Lunghezza d’onda centrale del laser",
+        "values": {
+         "MLST 1500 W": "1080 ± 10 nm",
+         "MLST 2000 W": "1080 ± 10 nm",
+         "MLST 3000 W": "1080 ± 10 nm"
+        }
+       },
+       {
+        "label": "Alimentazione elettrica",
+        "values": {
+         "MLST 1500 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 2000 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 3000 W": "230 V~ / 40 A / 50/60Hz"
+        }
+       },
+       {
+        "label": "Trasmissione del fascio",
+        "values": {
+         "MLST 1500 W": "Fibra ottica",
+         "MLST 2000 W": "Fibra ottica",
+         "MLST 3000 W": "Fibra ottica"
+        }
+       },
+       {
+        "label": "Raffreddamento del laser",
+        "values": {
+         "MLST 1500 W": "raffreddato ad acqua",
+         "MLST 2000 W": "raffreddato ad acqua",
+         "MLST 3000 W": "raffreddato ad acqua"
+        }
+       },
+       {
+        "label": "Lunghezza della fibra",
+        "values": {
+         "MLST 1500 W": "5 o 10 m",
+         "MLST 2000 W": "5 o 10 m",
+         "MLST 3000 W": "5 o 10 m"
+        }
+       },
+       {
+        "label": "Gas di protezione",
+        "values": {
+         "MLST 1500 W": "Argon, azoto",
+         "MLST 2000 W": "Argon, azoto",
+         "MLST 3000 W": "Argon, azoto"
+        }
+       },
+       {
+        "label": "Potenza assorbita totale",
+        "values": {
+         "MLST 1500 W": "8 kW",
+         "MLST 2000 W": "11 kW",
+         "MLST 3000 W": "Su richiesta"
+        }
+       },
+       {
+        "label": "Pressione richiesta",
+        "values": {
+         "MLST 1500 W": "4–6 bar",
+         "MLST 2000 W": "4–6 bar",
+         "MLST 3000 W": "4–6 bar"
+        }
+       },
+       {
+        "label": "Temperatura di esercizio",
+        "values": {
+         "MLST 1500 W": "10–40 °C",
+         "MLST 2000 W": "10–40 °C",
+         "MLST 3000 W": "10–40 °C"
+        }
+       },
+       {
+        "label": "Spessore della saldatura (indicativo)",
+        "values": {
+         "MLST 1500 W": "0,4–4 mm",
+         "MLST 2000 W": "0,4–6 mm",
+         "MLST 3000 W": "Su richiesta"
+        }
+       },
+       {
+        "label": "Gioco del giunto",
+        "values": {
+         "MLST 1500 W": "< 0,5 mm",
+         "MLST 2000 W": "< 0,5 mm",
+         "MLST 3000 W": "Su richiesta"
+        }
+       },
+       {
+        "label": "Diametro del filo",
+        "values": {
+         "MLST 1500 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 2000 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 3000 W": "0,8 / 1,0 / 1,2 / 1,6 mm"
+        }
+       },
+       {
+        "label": "Refrigerante",
+        "values": {
+         "MLST 1500 W": "R410A",
+         "MLST 2000 W": "R410A",
+         "MLST 3000 W": "R410A"
+        }
+       },
+       {
+        "label": "Garanzia indicata (apparecchio / sorgente laser)",
+        "values": {
+         "MLST 1500 W": "12 mesi / 2 anni",
+         "MLST 2000 W": "12 mesi / 2 anni",
+         "MLST 3000 W": "Su richiesta"
+        }
+       },
+       {
+        "label": "Dimensioni dell’apparecchio laser",
+        "values": {
+         "MLST 1500 W": "1130 × 690 × 1040 mm",
+         "MLST 2000 W": "1130 × 690 × 1040 mm",
+         "MLST 3000 W": "1130 × 690 × 1040 mm"
+        }
+       },
+       {
+        "label": "Dimensioni del trainafilo",
+        "values": {
+         "MLST 1500 W": "692 × 246 × 391 mm",
+         "MLST 2000 W": "692 × 246 × 391 mm",
+         "MLST 3000 W": "692 × 246 × 391 mm"
+        }
+       },
+       {
+        "label": "Peso dell’apparecchio laser",
+        "values": {
+         "MLST 1500 W": "circa 197 kg",
+         "MLST 2000 W": "circa 197 kg",
+         "MLST 3000 W": "circa 197 kg"
+        }
+       }
+      ]
+     }
+    ],
+    "en": [
+     {
+      "title": "MAHE MLST",
+      "note": "Data taken from the supplied technical documents. Weld thicknesses are application-dependent guidelines. “On request” identifies data not provided. Before installation, a qualified electrician must check the electrical connection against the rating plate and operating instructions. Warranty scope and conditions for the equipment and laser source are set out in the written quotation.",
+      "columns": [
+       "MLST 1500 W",
+       "MLST 2000 W",
+       "MLST 3000 W"
+      ],
+      "rows": [
+       {
+        "label": "Laser power",
+        "values": {
+         "MLST 1500 W": "1500 W",
+         "MLST 2000 W": "2000 W",
+         "MLST 3000 W": "3000 W"
+        }
+       },
+       {
+        "label": "Central laser wavelength",
+        "values": {
+         "MLST 1500 W": "1080 ± 10 nm",
+         "MLST 2000 W": "1080 ± 10 nm",
+         "MLST 3000 W": "1080 ± 10 nm"
+        }
+       },
+       {
+        "label": "Electrical supply",
+        "values": {
+         "MLST 1500 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 2000 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 3000 W": "230 V~ / 40 A / 50/60Hz"
+        }
+       },
+       {
+        "label": "Beam delivery",
+        "values": {
+         "MLST 1500 W": "Optical fibre",
+         "MLST 2000 W": "Optical fibre",
+         "MLST 3000 W": "Optical fibre"
+        }
+       },
+       {
+        "label": "Laser cooling",
+        "values": {
+         "MLST 1500 W": "Water-cooled",
+         "MLST 2000 W": "Water-cooled",
+         "MLST 3000 W": "Water-cooled"
+        }
+       },
+       {
+        "label": "Fibre length",
+        "values": {
+         "MLST 1500 W": "5 or 10 m",
+         "MLST 2000 W": "5 or 10 m",
+         "MLST 3000 W": "5 or 10 m"
+        }
+       },
+       {
+        "label": "Shielding gas",
+        "values": {
+         "MLST 1500 W": "Argon, nitrogen",
+         "MLST 2000 W": "Argon, nitrogen",
+         "MLST 3000 W": "Argon, nitrogen"
+        }
+       },
+       {
+        "label": "Total system power consumption",
+        "values": {
+         "MLST 1500 W": "8 kW",
+         "MLST 2000 W": "11 kW",
+         "MLST 3000 W": "On request"
+        }
+       },
+       {
+        "label": "Pressure requirement",
+        "values": {
+         "MLST 1500 W": "4–6 bar",
+         "MLST 2000 W": "4–6 bar",
+         "MLST 3000 W": "4–6 bar"
+        }
+       },
+       {
+        "label": "Operating temperature range",
+        "values": {
+         "MLST 1500 W": "10–40 °C",
+         "MLST 2000 W": "10–40 °C",
+         "MLST 3000 W": "10–40 °C"
+        }
+       },
+       {
+        "label": "Weld thickness (guideline)",
+        "values": {
+         "MLST 1500 W": "0.4–4 mm",
+         "MLST 2000 W": "0.4–6 mm",
+         "MLST 3000 W": "On request"
+        }
+       },
+       {
+        "label": "Joint gap",
+        "values": {
+         "MLST 1500 W": "< 0.5 mm",
+         "MLST 2000 W": "< 0.5 mm",
+         "MLST 3000 W": "On request"
+        }
+       },
+       {
+        "label": "Wire diameter",
+        "values": {
+         "MLST 1500 W": "0.8 / 1.0 / 1.2 / 1.6 mm",
+         "MLST 2000 W": "0.8 / 1.0 / 1.2 / 1.6 mm",
+         "MLST 3000 W": "0.8 / 1.0 / 1.2 / 1.6 mm"
+        }
+       },
+       {
+        "label": "Refrigerant",
+        "values": {
+         "MLST 1500 W": "R410A",
+         "MLST 2000 W": "R410A",
+         "MLST 3000 W": "R410A"
+        }
+       },
+       {
+        "label": "Stated warranty (equipment / laser source)",
+        "values": {
+         "MLST 1500 W": "12 months / 2 years",
+         "MLST 2000 W": "12 months / 2 years",
+         "MLST 3000 W": "On request"
+        }
+       },
+       {
+        "label": "Laser unit dimensions",
+        "values": {
+         "MLST 1500 W": "1130 × 690 × 1040 mm",
+         "MLST 2000 W": "1130 × 690 × 1040 mm",
+         "MLST 3000 W": "1130 × 690 × 1040 mm"
+        }
+       },
+       {
+        "label": "Wire feeder dimensions",
+        "values": {
+         "MLST 1500 W": "692 × 246 × 391 mm",
+         "MLST 2000 W": "692 × 246 × 391 mm",
+         "MLST 3000 W": "692 × 246 × 391 mm"
+        }
+       },
+       {
+        "label": "Laser unit weight",
+        "values": {
+         "MLST 1500 W": "approx. 197 kg",
+         "MLST 2000 W": "approx. 197 kg",
+         "MLST 3000 W": "approx. 197 kg"
+        }
+       }
+      ]
+     }
+    ],
+    "es": [
+     {
+      "title": "MAHE MLST",
+      "note": "Datos de la documentación técnica facilitada. Los espesores de soldadura son orientativos y dependen de la aplicación. « Bajo consulta » indica un dato no facilitado. Antes de la instalación, un electricista cualificado debe verificar la conexión según la placa de características y el manual. El alcance y las condiciones de garantía del equipo y de la fuente láser se concretan en la oferta escrita.",
+      "columns": [
+       "MLST 1500 W",
+       "MLST 2000 W",
+       "MLST 3000 W"
+      ],
+      "rows": [
+       {
+        "label": "Potencia láser",
+        "values": {
+         "MLST 1500 W": "1500 W",
+         "MLST 2000 W": "2000 W",
+         "MLST 3000 W": "3000 W"
+        }
+       },
+       {
+        "label": "Longitud de onda central del láser",
+        "values": {
+         "MLST 1500 W": "1080 ± 10 nm",
+         "MLST 2000 W": "1080 ± 10 nm",
+         "MLST 3000 W": "1080 ± 10 nm"
+        }
+       },
+       {
+        "label": "Alimentación eléctrica",
+        "values": {
+         "MLST 1500 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 2000 W": "230 V~ / 40 A / 50/60Hz",
+         "MLST 3000 W": "230 V~ / 40 A / 50/60Hz"
+        }
+       },
+       {
+        "label": "Transmisión del haz",
+        "values": {
+         "MLST 1500 W": "Fibra óptica",
+         "MLST 2000 W": "Fibra óptica",
+         "MLST 3000 W": "Fibra óptica"
+        }
+       },
+       {
+        "label": "Refrigeración del láser",
+        "values": {
+         "MLST 1500 W": "Refrigerado por agua",
+         "MLST 2000 W": "Refrigerado por agua",
+         "MLST 3000 W": "Refrigerado por agua"
+        }
+       },
+       {
+        "label": "Longitud de la fibra",
+        "values": {
+         "MLST 1500 W": "5 o 10 m",
+         "MLST 2000 W": "5 o 10 m",
+         "MLST 3000 W": "5 o 10 m"
+        }
+       },
+       {
+        "label": "Gas de protección",
+        "values": {
+         "MLST 1500 W": "Argón, nitrógeno",
+         "MLST 2000 W": "Argón, nitrógeno",
+         "MLST 3000 W": "Argón, nitrógeno"
+        }
+       },
+       {
+        "label": "Potencia absorbida total",
+        "values": {
+         "MLST 1500 W": "8 kW",
+         "MLST 2000 W": "11 kW",
+         "MLST 3000 W": "Bajo consulta"
+        }
+       },
+       {
+        "label": "Presión requerida",
+        "values": {
+         "MLST 1500 W": "4–6 bar",
+         "MLST 2000 W": "4–6 bar",
+         "MLST 3000 W": "4–6 bar"
+        }
+       },
+       {
+        "label": "Temperatura de funcionamiento",
+        "values": {
+         "MLST 1500 W": "10–40 °C",
+         "MLST 2000 W": "10–40 °C",
+         "MLST 3000 W": "10–40 °C"
+        }
+       },
+       {
+        "label": "Espesor de soldadura (orientativo)",
+        "values": {
+         "MLST 1500 W": "0,4–4 mm",
+         "MLST 2000 W": "0,4–6 mm",
+         "MLST 3000 W": "Bajo consulta"
+        }
+       },
+       {
+        "label": "Separación de la unión",
+        "values": {
+         "MLST 1500 W": "< 0,5 mm",
+         "MLST 2000 W": "< 0,5 mm",
+         "MLST 3000 W": "Bajo consulta"
+        }
+       },
+       {
+        "label": "Diámetro del hilo",
+        "values": {
+         "MLST 1500 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 2000 W": "0,8 / 1,0 / 1,2 / 1,6 mm",
+         "MLST 3000 W": "0,8 / 1,0 / 1,2 / 1,6 mm"
+        }
+       },
+       {
+        "label": "Refrigerante",
+        "values": {
+         "MLST 1500 W": "R410A",
+         "MLST 2000 W": "R410A",
+         "MLST 3000 W": "R410A"
+        }
+       },
+       {
+        "label": "Garantía indicada (equipo / fuente láser)",
+        "values": {
+         "MLST 1500 W": "12 meses / 2 años",
+         "MLST 2000 W": "12 meses / 2 años",
+         "MLST 3000 W": "Bajo consulta"
+        }
+       },
+       {
+        "label": "Dimensiones del equipo láser",
+        "values": {
+         "MLST 1500 W": "1130 × 690 × 1040 mm",
+         "MLST 2000 W": "1130 × 690 × 1040 mm",
+         "MLST 3000 W": "1130 × 690 × 1040 mm"
+        }
+       },
+       {
+        "label": "Dimensiones del alimentador de hilo",
+        "values": {
+         "MLST 1500 W": "692 × 246 × 391 mm",
+         "MLST 2000 W": "692 × 246 × 391 mm",
+         "MLST 3000 W": "692 × 246 × 391 mm"
+        }
+       },
+       {
+        "label": "Peso del equipo láser",
+        "values": {
+         "MLST 1500 W": "aprox. 197 kg",
+         "MLST 2000 W": "aprox. 197 kg",
+         "MLST 3000 W": "aprox. 197 kg"
+        }
+       }
+      ]
+     }
+    ]
    },
    "materials": [],
    "price": {

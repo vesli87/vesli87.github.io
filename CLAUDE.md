@@ -31,6 +31,7 @@ Bearbeitet werden also:
 | CWK-Vorteile, Originalsymbole und Optionsvergleich | `data/HYPERMIG_CWK.json`, `build/mahe_cwk_symbols.json`, `build/mahe_cwk_specs.json` |
 | Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT/EN/ES) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
+| Bestätigte technische Daten aus gelieferten Bildern | `data/SUPPLIED_SPECS.json` (Modellspalten und SHA-256-Herkunft, getrennt von den Website-Importen) |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |
 | Übersetzung eines UI-Textes | `data/UI.json` |
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |

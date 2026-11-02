@@ -527,6 +527,10 @@ MAHE_SPECS = json.loads((BUILD / "mahe_specs.json").read_text("utf-8"))
 # Separately reviewed PDF tables survive refreshes of the HTML/AJAX scraper.
 MAHE_CWK_SPECS = json.loads((BUILD / "mahe_cwk_specs.json").read_text("utf-8"))
 MAHE_SPECS.update(MAHE_CWK_SPECS)
+# Owner-supplied, reviewed model tables stay separate from website/PDF imports.
+# Their provenance identifies the actual images and explicit confirmations.
+SUPPLIED_SPECS = _load("SUPPLIED_SPECS")
+MAHE_SPECS.update(SUPPLIED_SPECS)
 
 EX = json.loads((BUILD / "i18n_extra.json").read_text("utf-8"))
 
@@ -693,6 +697,7 @@ def specTables(lang, p):
         out.append({"title": title,
                     "cols": [c["title"] for c in t["columns"]],
                     "rows": rows,
+                    **({'row_header': t['row_header'][lang]} if t.get('row_header') else {}),
                     "source": t.get('source', {}).get('url', ''),
                     "note": note.get(lang) or note.get(DEFAULT_LANG, "")})
     return out
@@ -979,6 +984,11 @@ def highlightsOf(lang, p):
     if not fam or fam not in HL:
         return None
     return HL[fam].get(lang) or HL[fam].get("de")
+
+
+def highlightsTitle(lang, p):
+    """Use an explicitly translated benefits heading when the source has one."""
+    return HL_DEVICE.get(p['id'], {}).get('heading', {}).get(lang) or t(lang, 'highlights')
 
 
 def matOf(p):
@@ -1373,6 +1383,25 @@ def validate_search_landings():
 def validate_editorial_guides():
     """Validate all languages and destinations before replacing generated files."""
     validate_search_landings()
+    for key, table in SUPPLIED_SPECS.items():
+        source = table.get('source', {})
+        images = source.get('images', [])
+        if (source.get('kind') != 'owner_supplied_images' or not images or
+                any(not isinstance(item.get('name'), str) or
+                    not re.fullmatch(r'[0-9a-f]{64}', item.get('sha256', '')) for item in images)):
+            raise ValueError(f'Supplied table needs documented image provenance: {key}')
+        columns = [column.get('key') for column in table.get('columns', [])]
+        if not columns or len(set(columns)) != len(columns) or any(not isinstance(c, str) or not c for c in columns):
+            raise ValueError(f'Supplied table needs distinct model columns: {key}')
+        row_names = []
+        for row in table.get('rows', []):
+            if set(row) != {'model', *columns} or any(not isinstance(value, str) or not value.strip() for value in row.values()):
+                raise ValueError(f'Supplied table has an incomplete model row: {key}')
+            row_names.append(row['model'])
+        if not row_names or len(set(row_names)) != len(row_names):
+            raise ValueError(f'Supplied table needs distinct parameter rows: {key}')
+        if table.get('row_header') and set(table['row_header']) != set(LANGS):
+            raise ValueError(f'Supplied table header needs all languages: {key}')
     if set(PRODUCT_SEO) != set(BY_ID):
         raise ValueError('Product search copy must cover the current catalogue exactly')
     search_titles = set()

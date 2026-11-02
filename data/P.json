@@ -238,10 +238,11 @@
   "vt": "Handgeführtes Laserschweissen",
   "name": "MLST",
   "img": "laser/mahe-mlst.png",
-  "desc": "Handgeführtes Laserschweisssystem mit 1500–3000 W Laserleistung je Ausführung. Für gezieltes Fügen von Metallbauteilen in Werkstatt und Fertigung.",
+  "desc": "Handgeführter, wassergekühlter Faserlaser mit 1500, 2000 oder 3000 W. Bussteuerung, modularer Lasergenerator und Bedienoberfläche zur Parametrierung.",
   "specs": {
    "Verfahren": "Handgeführtes Laserschweissen",
-   "Laserleistung": "1500–3000 W, je Ausführung"
+   "Laserleistung": "1500–3000 W, je Ausführung",
+   "Kühlung": "wassergekühlt"
   }
  },
  {

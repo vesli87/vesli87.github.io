@@ -170,5 +170,61 @@
         }
       }
     ]
+  },
+  "mlst": {
+    "kind": "variant",
+    "options": [
+      {
+        "id": "mlst-1500",
+        "label": {
+          "de": "MLST 1500 W",
+          "fr": "MLST 1500 W",
+          "it": "MLST 1500 W",
+          "en": "MLST 1500 W",
+          "es": "MLST 1500 W"
+        },
+        "description": {
+          "de": "1500 W Laserleistung, wassergekühlt.",
+          "fr": "Puissance laser de 1500 W, refroidissement par eau.",
+          "it": "Potenza laser 1500 W, raffreddamento ad acqua.",
+          "en": "1500 W laser power, water-cooled.",
+          "es": "Potencia láser de 1500 W, refrigeración por agua."
+        }
+      },
+      {
+        "id": "mlst-2000",
+        "label": {
+          "de": "MLST 2000 W",
+          "fr": "MLST 2000 W",
+          "it": "MLST 2000 W",
+          "en": "MLST 2000 W",
+          "es": "MLST 2000 W"
+        },
+        "description": {
+          "de": "2000 W Laserleistung, wassergekühlt.",
+          "fr": "Puissance laser de 2000 W, refroidissement par eau.",
+          "it": "Potenza laser 2000 W, raffreddamento ad acqua.",
+          "en": "2000 W laser power, water-cooled.",
+          "es": "Potencia láser de 2000 W, refrigeración por agua."
+        }
+      },
+      {
+        "id": "mlst-3000",
+        "label": {
+          "de": "MLST 3000 W",
+          "fr": "MLST 3000 W",
+          "it": "MLST 3000 W",
+          "en": "MLST 3000 W",
+          "es": "MLST 3000 W"
+        },
+        "description": {
+          "de": "3000 W Laserleistung, wassergekühlt.",
+          "fr": "Puissance laser de 3000 W, refroidissement par eau.",
+          "it": "Potenza laser 3000 W, raffreddamento ad acqua.",
+          "en": "3000 W laser power, water-cooled.",
+          "es": "Potencia láser de 3000 W, refrigeración por agua."
+        }
+      }
+    ]
   }
 }

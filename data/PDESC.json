@@ -486,10 +486,10 @@
     "es": "Antorcha MIG/MAG refrigerada por agua con pantalla gráfica y mando a distancia, capacidad de 500 A al 60 % del ciclo de trabajo y 4 m de longitud."
   },
   "mlst": {
-    "fr": "Système de soudage laser manuel de 1500 à 3000 W selon la version. Pour l’assemblage ciblé de pièces métalliques en atelier et en production.",
-    "it": "Sistema di saldatura laser manuale da 1500 a 3000 W secondo la versione. Per unire componenti metallici in officina e in produzione.",
-    "en": "Handheld laser welding system with 1500–3000 W laser power, depending on the version. For joining metal components in the workshop and in production.",
-    "es": "Sistema de soldadura láser manual de 1500 a 3000 W según la versión. Para unir componentes metálicos en taller y en producción."
+    "fr": "Laser manuel refroidi par eau de 1500, 2000 ou 3000 W. Commande par bus, générateur laser modulaire et interface de réglage des paramètres.",
+    "it": "Laser manuale raffreddato ad acqua da 1500, 2000 o 3000 W. Controllo bus, generatore laser modulare e interfaccia per impostare i parametri.",
+    "en": "Water-cooled handheld fibre laser with 1500, 2000 or 3000 W. Bus control, a modular laser generator and an operator interface for parameter settings.",
+    "es": "Láser manual refrigerado por agua de 1500, 2000 o 3000 W. Control por bus, generador láser modular e interfaz para ajustar los parámetros."
   },
   "mlrm": {
     "fr": "Appareil de nettoyage laser MAHE de 100 à 300 W selon la version. Le choix dépend de la pièce, de la surface et du résultat de nettoyage recherché.",

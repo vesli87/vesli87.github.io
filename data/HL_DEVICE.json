@@ -1641,5 +1641,55 @@
       "Refrigeración por agua de alto rendimiento",
       "Diseño respetuoso con el medio ambiente, 100% reciclable."
     ]
+  },
+  "mlst": {
+    "de": [
+      "Reaktionsschnelle Bussteuerung: Die Module kommunizieren über ein gemeinsames Bussystem. So werden die einzelnen Funktionen aufeinander abgestimmt.",
+      "Modularer paralleler Lasergenerator: Die modulare Architektur lässt sich auf unterschiedliche Anforderungen und Anwendungen abstimmen.",
+      "Übersichtliche Bedienoberfläche: Prozessinformationen und Einstellungen sind an der Mensch-Maschine-Schnittstelle zugänglich. Parameter können dem Arbeitsablauf angepasst werden.",
+      "Zentrale Hauptsteuerung: Die Hauptsteuerplatine koordiniert die Komponenten und bündelt die Steuerung der Systemfunktionen.",
+      "Offene Busschnittstelle: Die Architektur ist für die Einbindung kompatibler Module und Peripheriegeräte ausgelegt. Verfügbare Erweiterungen werden für die konkrete Ausführung geklärt.",
+      "Abgestimmte Gassteuerung und Strahlführung: Magnetventile und Galvanometer sind in das Steuerungskonzept eingebunden. Sie übernehmen die jeweiligen Aufgaben bei Gassteuerung und Strahlführung."
+    ],
+    "fr": [
+      "Commande par bus réactive : les modules communiquent sur un bus commun afin de coordonner les différentes fonctions.",
+      "Générateur laser parallèle modulaire : l’architecture modulaire peut être adaptée à différents besoins et applications.",
+      "Interface de commande claire : les informations de procédé et les réglages sont accessibles depuis l’interface homme-machine. Les paramètres peuvent être adaptés au travail.",
+      "Commande centrale : la carte de commande principale coordonne les composants et centralise le pilotage des fonctions du système.",
+      "Interface bus ouverte : l’architecture prévoit l’intégration de modules et de périphériques compatibles. Les extensions disponibles sont précisées pour la version choisie.",
+      "Commande du gaz et guidage du faisceau coordonnés : les électrovannes et le galvanomètre sont intégrés au concept de commande pour assurer leurs fonctions respectives."
+    ],
+    "it": [
+      "Controllo bus reattivo: i moduli comunicano tramite un bus comune per coordinare le singole funzioni.",
+      "Generatore laser parallelo modulare: l’architettura modulare può essere adattata a esigenze e applicazioni diverse.",
+      "Interfaccia di comando chiara: informazioni di processo e impostazioni sono accessibili dall’interfaccia uomo-macchina. I parametri possono essere adattati al lavoro.",
+      "Controllo centrale: la scheda di comando principale coordina i componenti e centralizza la gestione delle funzioni del sistema.",
+      "Interfaccia bus aperta: l’architettura prevede l’integrazione di moduli e periferiche compatibili. Le espansioni disponibili vengono definite per la versione scelta.",
+      "Gestione del gas e guida del fascio coordinate: elettrovalvole e galvanometro sono integrati nel sistema di controllo e svolgono le rispettive funzioni."
+    ],
+    "en": [
+      "Responsive bus control: modules communicate over a shared bus to coordinate the individual system functions.",
+      "Modular parallel laser generator: the modular architecture can be configured for different requirements and applications.",
+      "Clear operator interface: process information and settings are accessible through the human-machine interface. Parameters can be adjusted to suit the work.",
+      "Central system control: the main control board coordinates the components and brings system functions under central control.",
+      "Open bus interface: the architecture supports integration of compatible modules and peripherals. Available extensions are confirmed for the selected version.",
+      "Coordinated gas control and beam steering: solenoid valves and the galvanometer are integrated into the control system for their respective functions."
+    ],
+    "es": [
+      "Control por bus con respuesta rápida: los módulos se comunican mediante un bus común para coordinar las distintas funciones.",
+      "Generador láser paralelo modular: la arquitectura modular puede adaptarse a distintos requisitos y aplicaciones.",
+      "Interfaz de manejo clara: la información del proceso y los ajustes son accesibles desde la interfaz persona-máquina. Los parámetros pueden adaptarse al trabajo.",
+      "Control central: la placa de control principal coordina los componentes y centraliza la gestión de las funciones del sistema.",
+      "Interfaz de bus abierta: la arquitectura está preparada para integrar módulos y periféricos compatibles. Las ampliaciones disponibles se concretan para la versión elegida.",
+      "Control del gas y dirección del haz coordinados: las electroválvulas y el galvanómetro están integrados en el sistema de control para sus funciones respectivas."
+    ],
+    "heading": {
+      "de": "Vorteile",
+      "fr": "Avantages",
+      "it": "Vantaggi",
+      "en": "Benefits",
+      "es": "Ventajas"
+    },
+    "src": "Vom Inhaber am 02.11.2026 bereitgestellte Vorteile, codex-clipboard-63f89aeb-1ddb-4fb8-be25-ba1db16ab329.png; SHA-256 d198df3340ac91f92834d3518f4913374db39125efd91d36b3bacffc6974c785. Auf Wunsch professionell redigiert und in sechs sachlichen Punkten zusammengefasst. Magnetventile steuern nicht den Laserstrahl; Gassteuerung und galvanometrische Strahlführung sind getrennt formuliert. Keine unbelegten Superlative oder pauschalen Leistungs-/Upgradegarantien."
   }
 }

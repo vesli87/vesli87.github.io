@@ -666,5 +666,41 @@
     "it": "Pulizia laser",
     "en": "Laser cleaning",
     "es": "Limpieza láser"
+  },
+  "Lichtleitfaser": {
+    "fr": "Fibre optique",
+    "it": "Fibra ottica",
+    "en": "Optical fibre",
+    "es": "Fibra óptica"
+  },
+  "5 oder 10 m": {
+    "fr": "5 ou 10 m",
+    "it": "5 o 10 m",
+    "en": "5 or 10 m",
+    "es": "5 o 10 m"
+  },
+  "Argon, Stickstoff": {
+    "fr": "Argon, azote",
+    "it": "Argon, azoto",
+    "en": "Argon, nitrogen",
+    "es": "Argón, nitrógeno"
+  },
+  "Auf Anfrage": {
+    "fr": "Sur demande",
+    "it": "Su richiesta",
+    "en": "On request",
+    "es": "Bajo consulta"
+  },
+  "12 Monate / 2 Jahre": {
+    "fr": "12 mois / 2 ans",
+    "it": "12 mesi / 2 anni",
+    "en": "12 months / 2 years",
+    "es": "12 meses / 2 años"
+  },
+  "ca. 197 kg": {
+    "fr": "env. 197 kg",
+    "it": "circa 197 kg",
+    "en": "approx. 197 kg",
+    "es": "aprox. 197 kg"
   }
 }

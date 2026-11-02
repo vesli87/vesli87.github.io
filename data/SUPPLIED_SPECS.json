@@ -1,0 +1,159 @@
+{
+  "mlst": {
+    "title": "MAHE MLST",
+    "seite": "MAHE MLST 1500 / 2000 / 3000 W",
+    "source": {
+      "kind": "owner_supplied_images",
+      "received": "2026-11-02",
+      "images": [
+        {
+          "name": "MLST 1500W.png",
+          "model": "MLST 1500 W",
+          "sha256": "7ee6c3d1c21e6cdae7df9f829fa3ea3f1a8ee7e20b55a449f0f86232724489ef"
+        },
+        {
+          "name": "MLST 2000W.png",
+          "model": "MLST 2000 W",
+          "sha256": "f0d8baa1fe5af68abded8d590730e4d147debbc53a573e2e104fd5adc3166880"
+        },
+        {
+          "name": "MLST 3000W.png",
+          "model": "MLST 3000 W",
+          "sha256": "d30b80b2cf53e895a53dfb72a364116ad9d16f95d4714cfe04270a3c6b08c391"
+        }
+      ],
+      "confirmation": "Owner explicitly confirmed the supplied 230 V~ / 40 A values for 2000 W and 3000 W on 2026-11-02. Values are reproduced from the supplied technical data; no connection or fuse sizing is inferred."
+    },
+    "columns": [
+      {
+        "key": "1500",
+        "title": "MLST 1500 W"
+      },
+      {
+        "key": "2000",
+        "title": "MLST 2000 W"
+      },
+      {
+        "key": "3000",
+        "title": "MLST 3000 W"
+      }
+    ],
+    "rows": [
+      {
+        "model": "Laserleistung",
+        "1500": "1500 W",
+        "2000": "2000 W",
+        "3000": "3000 W"
+      },
+      {
+        "model": "Zentrale Laserwellenlänge",
+        "1500": "1080 ± 10 nm",
+        "2000": "1080 ± 10 nm",
+        "3000": "1080 ± 10 nm"
+      },
+      {
+        "model": "Stromversorgung",
+        "1500": "230 V~ / 40 A / 50/60 Hz",
+        "2000": "230 V~ / 40 A / 50/60 Hz",
+        "3000": "230 V~ / 40 A / 50/60 Hz"
+      },
+      {
+        "model": "Strahlübertragung",
+        "1500": "Lichtleitfaser",
+        "2000": "Lichtleitfaser",
+        "3000": "Lichtleitfaser"
+      },
+      {
+        "model": "Laserkühlung",
+        "1500": "wassergekühlt",
+        "2000": "wassergekühlt",
+        "3000": "wassergekühlt"
+      },
+      {
+        "model": "Faserlänge",
+        "1500": "5 oder 10 m",
+        "2000": "5 oder 10 m",
+        "3000": "5 oder 10 m"
+      },
+      {
+        "model": "Schutzgas",
+        "1500": "Argon, Stickstoff",
+        "2000": "Argon, Stickstoff",
+        "3000": "Argon, Stickstoff"
+      },
+      {
+        "model": "Leistungsaufnahme Gesamtanlage",
+        "1500": "8 kW",
+        "2000": "11 kW",
+        "3000": "Auf Anfrage"
+      },
+      {
+        "model": "Druckanforderung",
+        "1500": "4–6 bar",
+        "2000": "4–6 bar",
+        "3000": "4–6 bar"
+      },
+      {
+        "model": "Betriebstemperaturbereich",
+        "1500": "10–40 °C",
+        "2000": "10–40 °C",
+        "3000": "10–40 °C"
+      },
+      {
+        "model": "Schweissnahtdicke (Richtwert)",
+        "1500": "0,4–4 mm",
+        "2000": "0,4–6 mm",
+        "3000": "Auf Anfrage"
+      },
+      {
+        "model": "Fügespalt",
+        "1500": "< 0,5 mm",
+        "2000": "< 0,5 mm",
+        "3000": "Auf Anfrage"
+      },
+      {
+        "model": "Drahtdurchmesser",
+        "1500": "0,8 / 1,0 / 1,2 / 1,6 mm",
+        "2000": "0,8 / 1,0 / 1,2 / 1,6 mm",
+        "3000": "0,8 / 1,0 / 1,2 / 1,6 mm"
+      },
+      {
+        "model": "Kältemittel",
+        "1500": "R410A",
+        "2000": "R410A",
+        "3000": "R410A"
+      },
+      {
+        "model": "Garantieangabe (Gerät / Laserquelle)",
+        "1500": "12 Monate / 2 Jahre",
+        "2000": "12 Monate / 2 Jahre",
+        "3000": "Auf Anfrage"
+      },
+      {
+        "model": "Abmessungen Laseranlage",
+        "1500": "1130 × 690 × 1040 mm",
+        "2000": "1130 × 690 × 1040 mm",
+        "3000": "1130 × 690 × 1040 mm"
+      },
+      {
+        "model": "Abmessungen Drahtvorschub",
+        "1500": "692 × 246 × 391 mm",
+        "2000": "692 × 246 × 391 mm",
+        "3000": "692 × 246 × 391 mm"
+      },
+      {
+        "model": "Gewicht Laseranlage",
+        "1500": "ca. 197 kg",
+        "2000": "ca. 197 kg",
+        "3000": "ca. 197 kg"
+      }
+    ],
+    "row_header": {
+      "de": "Technisches Merkmal",
+      "fr": "Caractéristique technique",
+      "it": "Caratteristica tecnica",
+      "en": "Technical parameter",
+      "es": "Característica técnica"
+    }
+  }
+}

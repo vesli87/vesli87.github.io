@@ -72,5 +72,42 @@
         "note": "Las combinaciones siguen los datos de los productos. La conexión, la versión y la longitud necesaria se confirman para su instalación."
       }
     }
+  },
+  {
+    "id": "tig-selection",
+    "cat": "schweissgeraete",
+    "sub": "WIG / TIG",
+    "products": [
+      "beta-dx",
+      "omega-ax",
+      "hypertig-ax"
+    ],
+    "fields": [
+      "Verfahren",
+      "Netz",
+      "Strombereich"
+    ],
+    "copy": {
+      "de": {
+        "title": "Beta DX, Omega AX und HyperTIG AX vergleichen",
+        "note": "Vergleichen Sie Verfahren, Netzanschluss und den maximalen Strom der Baureihe. Entscheidend sind die konkrete Ausführung, die Einschaltdauer und der verfügbare Anschluss. Die Tabelle ersetzt kein gerätespezifisches Datenblatt."
+      },
+      "fr": {
+        "title": "Comparer Beta DX, Omega AX et HyperTIG AX",
+        "note": "Comparez le procédé, l’alimentation et le courant maximal de la gamme. Le choix dépend de la version précise, du facteur de marche et de l’alimentation disponible. Ce tableau ne remplace pas la fiche technique du modèle choisi."
+      },
+      "it": {
+        "title": "Confrontare Beta DX, Omega AX e HyperTIG AX",
+        "note": "Confrontate processo, alimentazione e corrente massima della serie. La scelta dipende dalla versione specifica, dal ciclo di lavoro e dall’alimentazione disponibile. La tabella non sostituisce la scheda tecnica del modello scelto."
+      },
+      "en": {
+        "title": "Compare Beta DX, Omega AX and HyperTIG AX",
+        "note": "Compare the process, power supply and maximum current of each range. The specific version, duty cycle and available supply determine the choice. This table does not replace the data sheet for the chosen model."
+      },
+      "es": {
+        "title": "Comparar Beta DX, Omega AX e HyperTIG AX",
+        "note": "Compare el proceso, la alimentación y la corriente máxima de cada serie. La elección depende de la versión concreta, el ciclo de trabajo y la alimentación disponible. Esta tabla no sustituye la ficha técnica del modelo elegido."
+      }
+    }
   }
 ]

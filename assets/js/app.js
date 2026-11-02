@@ -1498,6 +1498,12 @@
   }
 
   /* ================================ Start =============================== */
+  // The native print dialog can save a PDF without another service or upload.
+  var printPage = $('[data-print-page]');
+  if (printPage && typeof window.print === 'function') {
+    printPage.hidden = false;
+    printPage.addEventListener('click', function () { window.print(); });
+  }
   renderCart();
   updateProductLinks();
 

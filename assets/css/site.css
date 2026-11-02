@@ -680,8 +680,11 @@
      Werkstatt oder in eine Offerte zu nehmen. Navigation, Schubladen, Suche und
      Fusszeile haben auf Papier nichts verloren; Links bekommen ihre Adresse
      dazu, sonst zeigt das Blatt unterstrichene Wörter ohne Ziel. */
+  .print-contact{display:none}
   @media print{
-    header,.topbar,.mega,.cart,.scrim,footer,.toast,.lupe,.galnav,.galthumbs,
+    .print-contact{display:block;break-inside:avoid;margin:0 0 16pt;padding-bottom:8pt;border-bottom:1pt solid #999;font-size:10pt;line-height:1.5;overflow-wrap:anywhere}
+    .print-contact a[href]::after{content:none}
+    header,.topbar,.util,.mega,.cart,.scrim,footer,.toast,.lupe,.galnav,.galthumbs,
     .searchbar,.tabbar,.usps,.hero,.hero2,.mfall,.pcard .foot,.add,.crumbs{display:none!important}
     *{background:#fff!important;color:#000!important;box-shadow:none!important}
     body{font-size:11pt;line-height:1.45}

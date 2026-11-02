@@ -713,7 +713,9 @@
         "Eine vorhandene Zeichnung und den gewünschten Arbeitsablauf bei der persönlichen Abklärung besprechen."
       ]
     },
-    "company_uid_label": "UID"
+    "company_uid_label": "UID",
+    "print_page": "Seite drucken / PDF",
+    "print_contact_label": "Kontakt für Beratung und Offerte"
   },
   "fr": {
     "locale": "fr_CH",
@@ -1428,7 +1430,9 @@
         "Discutez d’un dessin existant et du déroulement souhaité lors de l’entretien technique."
       ]
     },
-    "company_uid_label": "IDE"
+    "company_uid_label": "IDE",
+    "print_page": "Imprimer la page / PDF",
+    "print_contact_label": "Contact pour conseil et offre"
   },
   "it": {
     "locale": "it_CH",
@@ -2143,7 +2147,9 @@
         "Discutete un disegno disponibile e il ciclo di lavoro desiderato durante il colloquio tecnico."
       ]
     },
-    "company_uid_label": "IDI"
+    "company_uid_label": "IDI",
+    "print_page": "Stampa pagina / PDF",
+    "print_contact_label": "Contatto per consulenza e offerta"
   },
   "en": {
     "locale": "en_CH",
@@ -2858,7 +2864,9 @@
         "Discuss an existing drawing and the intended workflow during the technical consultation."
       ]
     },
-    "company_uid_label": "UID"
+    "company_uid_label": "UID",
+    "print_page": "Print page / PDF",
+    "print_contact_label": "Contact for advice and quotation"
   },
   "es": {
     "locale": "es_CH",
@@ -3573,6 +3581,8 @@
         "Comente un plano disponible y el flujo de trabajo previsto durante la consulta técnica."
       ]
     },
-    "company_uid_label": "UID"
+    "company_uid_label": "UID",
+    "print_page": "Imprimir página / PDF",
+    "print_contact_label": "Contacto para asesoramiento y oferta"
   }
 }

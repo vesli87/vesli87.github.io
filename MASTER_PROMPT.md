@@ -1437,3 +1437,9 @@ Spam-Filters beim Formulardienst oder für eine Zustellung im Postfach.
 BFS-Schreiben vom 26.10.2026 und amtlicher UID-Registereintrag: **CHE-499.348.313**, aktiv, Rechtsform Einzelunternehmen, amtlicher Name **Martin Veselovský**, Bildfeldstrasse 24, 9552 Bronschhofen. Geschäftsauftritt bleibt VES-TECH Swiss. Das Register zeigt keine Handelsregister- oder MWST-Eintragung. Die UID begründet keine MWST-Registrierung. Daher UID ohne MWST/TVA/IVA veröffentlichen, kein `vatID` und keine MWST auf aktuellen Rechnungen ergänzen. Quelle: https://www.uid.admin.ch/Detail.aspx?uid_id=CHE-499.348.313&lang=de (geprüft 02.11.2026).
 
 `core.py::COMPANY` ist die Quelle für UID und amtlichen Namen. Impressum und Anbieterangaben in AGB verwenden Laufzeit-Platzhalter, die Kontaktseite und Organisationsdaten übernehmen dieselbe UID in allen fünf Sprachen. Die frühere Aussage, es bestehe keine UID, ist überholt. Das BFS-Schreiben selbst bleibt privat und wird nicht veröffentlicht.
+
+## Druck und Partnerstandort vom 02.11.2026
+
+Produktseiten und die vier Service-Einstiege bieten in allen fünf Sprachen einen nativen Druckdialog zum Drucken oder Speichern als PDF. Die vorhandenen Druckregeln zeigen alle technischen Reiter. Ein ausschliesslich im Druck sichtbarer Kontaktblock erhält Firmenname, Inhaber, UID, E-Mail, Telefonnummer und die kanonische Quelladresse, auch wenn Navigation und Fusszeile ausgeblendet sind. Kein PDF-Dienst, Upload, Trackingereignis oder neues Kundendatenfeld. Der Button wird nur bei verfügbarer Browser-Druckfunktion eingeblendet; ohne JavaScript bleibt die normale Browser-Druckfunktion verwendbar.
+
+Der ServiceChannel verweist mit derselben Place-ID, dem tatsächlichen Namen Schweisstechnik Scherrer AG und dem übersetzten Hinweis zur Terminvereinbarung auf die bereits ausgewiesene Partnerwerkstatt. Der Unternehmenssitz in Bronschhofen bleibt davon getrennt.

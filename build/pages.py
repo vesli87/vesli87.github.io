@@ -990,6 +990,16 @@ def panel_spotlight(lang, p):
             + f'</div><div class="volt-panel-benefits">{features}</div></section>')
 
 
+def print_contact(lang, url):
+    """Keep the business contact and exact source on paper; no form contents."""
+    return (f'<aside class="print-contact" aria-label="{e(C.t(lang,"print_contact_label"))}">'
+            f'<strong>{e(C.COMPANY["name"])}</strong> · {e(C.COMPANY["legal_name"])}'
+            f' · UID {e(C.COMPANY["uid"])}<br>'
+            f'<a href="mailto:{e(C.COMPANY["email"])}">{e(C.COMPANY["email"])}</a> · '
+            f'<a href="tel:{e(C.COMPANY["phone_href"])}">{e(C.COMPANY["phone"])}</a><br>'
+            f'<a href="{e(C.abs_url(url))}">{e(C.abs_url(url))}</a></aside>')
+
+
 def page_product(lang, p):
     url = C.u_prod(lang, p)
     alts = C.alternates("prod", p=p)
@@ -1070,6 +1080,7 @@ def page_product(lang, p):
     body = f"""
 <div class="detail"><div class="wrap">
   {R.crumbs(lang, crumb)}
+  {print_contact(lang, url)}
   <div class="dgrid">
     <div class="volt-product-media">{media_html(lang, p, nm)}</div>
     <div class="dinfo" data-inquiry-product="{e(p['id'])}">
@@ -1092,6 +1103,7 @@ def page_product(lang, p):
         <button class="btn pri" type="button" data-add="{e(p['id'])}" data-name="{e(nm)}"
                 data-url="{e(url)}" data-img="{e(R.thumb(p))}">{e(C.t(lang,'to_inquiry'))}</button>
         <a class="btn ghost" data-product-consult="{e(p['id'])}" href="{e(C.u_page(lang,'contact'))}?product={e(p['id'])}">{e(C.t(lang,'consult'))}</a>
+        <button class="btn ghost" type="button" data-print-page hidden>{e(C.t(lang,'print_page'))}</button>
       </div>
       <nav class="product-quick-contact" aria-label="{e(C.t(lang,'cro_mobile_label'))}">
         <span>{e(nm)}</span>
@@ -1483,9 +1495,10 @@ def page_service(lang, key=None):
     body = (R.cbar(lang, crumb_items=krumen,
                    h1=C.t(lang, 'volt_service_title') if key is None else C.t(lang, f"{praefix}_h1"),
                    desc=C.t(lang, f"{praefix}_lead"), artwork='diagnostics')
-            + '<div class="wrap"><p class="dactions">'
+            + '<div class="wrap">' + print_contact(lang, url) + '<p class="dactions">'
               f'<a class="btn pri" href="#service-request">{e(C.t(lang,"service_jump"))}</a>'
               f'<a class="btn ghost" href="tel:{e(C.COMPANY["phone_href"])}">{e(C.t(lang,"cro_call"))}</a>'
+              f'<button class="btn ghost" type="button" data-print-page hidden>{e(C.t(lang,"print_page"))}</button>'
               '</p></div>'
             + inhalt
             + '<div class="wrap"><section class="buying-guide service-guide">'
@@ -1520,7 +1533,9 @@ def page_service(lang, key=None):
             "servicePhone": C.COMPANY["phone"],
             "serviceLocation": {
                 "@type": "Place",
-                "name": f"{C.COMPANY['name']} · {C.t(lang, 'foot_service')}",
+                "@id": f"{C.SITE}/#partner-workshop",
+                "name": C.WORKSHOP['partner'] + " · " + C.t(lang, 'addr_shop'),
+                "description": C.t(lang, 'addr_shop_hint'),
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": C.WORKSHOP["street"],

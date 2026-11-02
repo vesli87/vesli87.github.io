@@ -379,29 +379,29 @@
   },
   "plasma-tig": {
     "de": {
-      "type": "Mikroplasma-Schweissgerät",
-      "title": "MAHE PlasmaTIG: Mikroplasma-Schweissgerät | VES-TECH",
-      "description": "MAHE PlasmaTIG: Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen. Beratung und Preis auf Anfrage."
+      "type": "Mikroplasma- und Plasma-DC-Inverter",
+      "title": "MAHE PlasmaTIG: Mikroplasma-Inverter | VES-TECH",
+      "description": "MAHE PlasmaTIG: DC-Inverter für Plasma, Mikroplasma, WIG und MMA. Modelle 20/50 ab 0,1 A, HF-Puls bis 2 kHz. Beratung und Preis auf Anfrage."
     },
     "fr": {
-      "type": "Poste de soudage microplasma",
-      "title": "MAHE PlasmaTIG: Poste de soudage microplasma | VES-TECH",
-      "description": "MAHE PlasmaTIG : Source de courant pour le soudage microplasma et plasma, destinée aux soudures les plus fines. Conseil et prix sur demande."
+      "type": "Onduleur DC microplasma et plasma",
+      "title": "MAHE PlasmaTIG : Onduleur microplasma | VES-TECH",
+      "description": "MAHE PlasmaTIG : onduleur microplasma, plasma, TIG et MMA. Modèles 20/50 dès 0,1 A, pulsé HF jusqu’à 2 kHz. Conseil et prix sur demande."
     },
     "it": {
-      "type": "Saldatrice microplasma",
-      "title": "MAHE PlasmaTIG: Saldatrice microplasma | VES-TECH",
-      "description": "MAHE PlasmaTIG: Generatore microplasma e plasma per saldature finissime. Consulenza e prezzo su richiesta."
+      "type": "Inverter DC per microplasma e plasma",
+      "title": "MAHE PlasmaTIG: Inverter microplasma | VES-TECH",
+      "description": "MAHE PlasmaTIG: inverter per microplasma, plasma, TIG e MMA. Modelli 20/50 da 0,1 A, pulsato HF fino a 2 kHz. Consulenza e prezzo su richiesta."
     },
     "en": {
-      "type": "Microplasma welder",
-      "title": "MAHE PlasmaTIG: Microplasma welder | VES-TECH",
-      "description": "MAHE PlasmaTIG: Microplasma and plasma power source for precision welding. Advice and price on request."
+      "type": "Microplasma and plasma DC inverter",
+      "title": "MAHE PlasmaTIG: Microplasma inverter | VES-TECH",
+      "description": "MAHE PlasmaTIG: DC inverter for microplasma, plasma, TIG and MMA. Models 20/50 from 0.1 A, HF pulse up to 2 kHz. Advice and price on request."
     },
     "es": {
-      "type": "Soldadora microplasma",
-      "title": "MAHE PlasmaTIG: Soldadora microplasma | VES-TECH",
-      "description": "MAHE PlasmaTIG: Fuente de corriente de microplasma y plasma para soldadura de precisión. Asesoramiento y precio bajo consulta."
+      "type": "Inversor DC para microplasma y plasma",
+      "title": "MAHE PlasmaTIG: Inversor microplasma | VES-TECH",
+      "description": "MAHE PlasmaTIG: inversor para microplasma, plasma, TIG y MMA. Modelos 20/50 desde 0,1 A y pulsado HF hasta 2 kHz. Precio bajo consulta."
     }
   },
   "theta-40": {

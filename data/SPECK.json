@@ -491,5 +491,11 @@
     "it": "Corrente ammissibile",
     "en": "Current rating",
     "es": "Capacidad de corriente"
+  },
+  "Mikroplasma": {
+    "fr": "Microplasma",
+    "it": "Microplasma",
+    "en": "Microplasma",
+    "es": "Microplasma"
   }
 }

@@ -78,10 +78,10 @@
     "es": "Fuente de corriente multiproceso desarrollada para soldadura subacuática."
   },
   "plasma-tig": {
-    "fr": "Source de courant pour le soudage microplasma et plasma, destinée aux soudures les plus fines.",
-    "it": "Generatore microplasma e plasma per saldature finissime.",
-    "en": "Microplasma and plasma power source for precision welding.",
-    "es": "Fuente de corriente de microplasma y plasma para soldadura de precisión."
+    "fr": "Onduleur DC pour microplasma, plasma, TIG et MMA. Les modèles 20 et 50 permettent le soudage microplasma dès 0,1 A pour les assemblages de précision.",
+    "it": "Inverter DC per microplasma, plasma, TIG e MMA. I modelli 20 e 50 saldano in microplasma a partire da 0,1 A per lavorazioni di precisione.",
+    "en": "DC welding inverter for microplasma, plasma, TIG and MMA. Models 20 and 50 offer microplasma welding from 0.1 A for precision work.",
+    "es": "Inversor DC para microplasma, plasma, TIG y MMA. Los modelos 20 y 50 permiten soldar en microplasma desde 0,1 A para trabajos de precisión."
   },
   "theta-40": {
     "fr": "Découpeur plasma léger 230 V pour l’atelier.",

@@ -560,15 +560,15 @@ Passendes Zubehör: RC 100 DS, MT260 V, MT170 V, Elektrodenkabel 25–90 mm², M
 
 ### MAHE PlasmaTIG
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/
-Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
-Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen.
-PlasmaTIG ist die MAHE-Stromquelle für Plasma und Mikroplasma. Für feine Schweissaufgaben sind der dokumentierte Strombereich der konkreten Variante und die vollständige Brennerausstattung zu prüfen.
+Kategorie: Schweissgeräte / Plasma TIG · Typ: Plasma TIG / Mikroplasma · Art.-Nr.: PLASMA-TIG · Preis: auf Anfrage (CHF)
+DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte.
+PlasmaTIG vereint Mikroplasma, Plasma, WIG DC und MMA in einer Inverter-Stromquelle. Die Modelle 20 und 50 beginnen beim Mikroplasma-Schweissen bei 0,1 A. Pulsbetrieb, HF-Puls von 50 bis 2000 Hz, bis zu 10 JOB-Speicher und die Roboterschnittstelle unterstützen präzise, wiederkehrende Schweissaufgaben.
 - Beschreiben Sie Werkstoff, Dicke und Nahtform. Eine Skizze oder ein Foto hilft, die Schweissaufgabe und den benötigten Anlagenumfang einzugrenzen.
 - Die Occasionen Oerlikon PlasmaFix 50 S sowie SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sind getrennte Modelle anderer Hersteller. Vergleichen Sie deren Originalunterlagen, Zustand und angebotenen Lieferumfang.
 Weiterführend: [Oerlikon PlasmaFix 50 S](https://www.ves-tech.ch/produkte/occasion/plasmafix-50s/)
 Weiterführend: [SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T](https://www.ves-tech.ch/produkte/occasion/plasmafix-51/)
 Besonderheiten: Plasma-TIG-Schweissen; MMA-Elektrodenschweissen; WIG-HF-Schweissen; WIG-Lift-Arc-Schweissen; Arc Force; Anti Stick; Up Slope; Down Slope; HF Start on / off; Zuleitungskabel mit 5 Metern Länge; Mikroregler für die Gasmenge; Interface.
-Ausstattung: Verfahren: Plasma / Mikroplasma; Einsatz: Feinblech und Industrieanwendungen.
+Ausstattung: Verfahren: Plasma / Mikroplasma · WIG DC · MMA; Mikroplasma: ab 0,1 A (Modelle 20 / 50); Technologie: DC-Inverter; Einsatz: Feinblech und Industrieanwendungen.
 
 Technische Daten – Plasma TIG:
 

@@ -15825,11 +15825,11 @@
    },
    "brand": "MAHE",
    "type": {
-    "de": "Plasma TIG",
-    "fr": "Plasma TIG",
-    "it": "Plasma TIG",
-    "en": "Plasma TIG",
-    "es": "Plasma TIG"
+    "de": "Plasma TIG / Mikroplasma",
+    "fr": "Plasma TIG / Microplasma",
+    "it": "Plasma TIG / Microplasma",
+    "en": "Plasma TIG / Microplasma",
+    "es": "Plasma TIG / Microplasma"
    },
    "category": {
     "de": "Schweissgeräte",
@@ -15846,11 +15846,11 @@
     "es": "Plasma TIG"
    },
    "description": {
-    "de": "Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen.",
-    "fr": "Source de courant pour le soudage microplasma et plasma, destinée aux soudures les plus fines.",
-    "it": "Generatore microplasma e plasma per saldature finissime.",
-    "en": "Microplasma and plasma power source for precision welding.",
-    "es": "Fuente de corriente de microplasma y plasma para soldadura de precisión."
+    "de": "DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte.",
+    "fr": "Onduleur DC pour microplasma, plasma, TIG et MMA. Les modèles 20 et 50 permettent le soudage microplasma dès 0,1 A pour les assemblages de précision.",
+    "it": "Inverter DC per microplasma, plasma, TIG e MMA. I modelli 20 e 50 saldano in microplasma a partire da 0,1 A per lavorazioni di precisione.",
+    "en": "DC welding inverter for microplasma, plasma, TIG and MMA. Models 20 and 50 offer microplasma welding from 0.1 A for precision work.",
+    "es": "Inversor DC para microplasma, plasma, TIG y MMA. Los modelos 20 y 50 permiten soldar en microplasma desde 0,1 A para trabajos de precisión."
    },
    "highlights": {
     "de": [
@@ -15934,23 +15934,33 @@
    },
    "specs": {
     "de": {
-     "Verfahren": "Plasma / Mikroplasma",
+     "Verfahren": "Plasma / Mikroplasma · WIG DC · MMA",
+     "Mikroplasma": "ab 0,1 A (Modelle 20 / 50)",
+     "Technologie": "DC-Inverter",
      "Einsatz": "Feinblech und Industrieanwendungen"
     },
     "fr": {
-     "Procédé": "plasma / microplasma",
+     "Procédé": "Plasma / Microplasma · TIG DC · MMA",
+     "Microplasma": "dès 0,1 A (modèles 20 / 50)",
+     "Technologie": "Onduleur DC",
      "Application": "de la tôle fine aux applications industrielles"
     },
     "it": {
-     "Processo": "plasma / microplasma",
+     "Processo": "Plasma / Microplasma · TIG DC · MMA",
+     "Microplasma": "da 0,1 A (modelli 20 / 50)",
+     "Tecnologia": "Inverter DC",
      "Impiego": "dalle lamiere sottili alle applicazioni industriali"
     },
     "en": {
-     "Process": "Plasma / microplasma",
+     "Process": "Plasma / Microplasma · DC TIG · MMA",
+     "Microplasma": "from 0.1 A (models 20 / 50)",
+     "Technology": "DC inverter",
      "Application": "Thin sheet to industrial applications"
     },
     "es": {
-     "Proceso": "Plasma / microplasma",
+     "Proceso": "Plasma / Microplasma · TIG DC · MMA",
+     "Microplasma": "desde 0,1 A (modelos 20 / 50)",
+     "Tecnología": "Inversor DC",
      "Aplicación": "De chapa fina a aplicaciones industriales"
     }
    },

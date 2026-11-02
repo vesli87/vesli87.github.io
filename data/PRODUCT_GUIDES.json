@@ -370,8 +370,9 @@
   },
   "plasma-tig": {
     "sources": [
+      "https://mahe-online.de/wp-content/uploads/2024/01/PlasmaTIG-CWK_11.pdf (REV 1.1, S. 3, 9/10, 19/21, 31/32)",
+      "https://mahe-online.de/wp-content/uploads/2022/07/Plasma_TIG.pdf",
       "P.json#plasma-tig",
-      "SUBCATEGORY_GUIDES.json",
       "ACC.json"
     ],
     "links": [
@@ -385,40 +386,44 @@
       }
     ],
     "de": {
-      "intro": "PlasmaTIG ist die MAHE-Stromquelle für Plasma und Mikroplasma. Für feine Schweissaufgaben sind der dokumentierte Strombereich der konkreten Variante und die vollständige Brennerausstattung zu prüfen.",
+      "intro": "PlasmaTIG vereint Mikroplasma, Plasma, WIG DC und MMA in einer Inverter-Stromquelle. Die Modelle 20 und 50 beginnen beim Mikroplasma-Schweissen bei 0,1 A. Pulsbetrieb, HF-Puls von 50 bis 2000 Hz, bis zu 10 JOB-Speicher und die Roboterschnittstelle unterstützen präzise, wiederkehrende Schweissaufgaben.",
       "checks": [
         "Beschreiben Sie Werkstoff, Dicke und Nahtform. Eine Skizze oder ein Foto hilft, die Schweissaufgabe und den benötigten Anlagenumfang einzugrenzen.",
         "Die Occasionen Oerlikon PlasmaFix 50 S sowie SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sind getrennte Modelle anderer Hersteller. Vergleichen Sie deren Originalunterlagen, Zustand und angebotenen Lieferumfang."
       ]
     },
     "fr": {
-      "intro": "PlasmaTIG est la source MAHE pour le plasma et le microplasma. Pour les soudures fines, vérifiez la plage de courant documentée de la variante et l’équipement complet de la torche.",
+      "intro": "PlasmaTIG réunit microplasma, plasma, TIG DC et MMA dans une source à onduleur. Les modèles 20 et 50 démarrent à 0,1 A en microplasma. Le mode pulsé, le pulsé HF de 50 à 2000 Hz, jusqu’à 10 mémoires JOB et l’interface robot facilitent les opérations de soudage précises et répétitives.",
       "checks": [
         "Décrivez le matériau, l’épaisseur et la forme du cordon. Un croquis ou une photo aide à préciser le travail et les composants nécessaires.",
         "Les occasions Oerlikon PlasmaFix 50 S et SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sont des modèles distincts d’autres fabricants. Comparez leur documentation d’origine, leur état et les éléments compris dans l’offre."
       ]
     },
     "it": {
-      "intro": "PlasmaTIG è il generatore MAHE per plasma e microplasma. Per saldature fini, verificate la gamma di corrente documentata della variante e la dotazione completa della torcia.",
+      "intro": "PlasmaTIG riunisce microplasma, plasma, TIG DC e MMA in un generatore a inverter. I modelli 20 e 50 partono da 0,1 A in microplasma. La modalità pulsata, il pulsato HF da 50 a 2000 Hz, fino a 10 memorie JOB e l’interfaccia robot supportano saldature precise e ripetitive.",
       "checks": [
         "Descrivete materiale, spessore e forma del cordone. Uno schizzo o una foto aiuta a definire il lavoro e i componenti necessari.",
         "Le occasioni Oerlikon PlasmaFix 50 S e SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T sono modelli distinti di altri fabbricanti. Confrontate documentazione originale, stato e componenti compresi nell’offerta."
       ]
     },
     "en": {
-      "intro": "PlasmaTIG is MAHE's power source for plasma and microplasma welding. For precision welding, check the documented current range for the specific version and the complete torch equipment.",
+      "intro": "PlasmaTIG combines microplasma, plasma, DC TIG and MMA in an inverter power source. Models 20 and 50 start at 0.1 A for microplasma welding. Pulse mode, HF pulse from 50 to 2000 Hz, up to 10 JOB memories and the robot interface support precise, repetitive welding tasks.",
       "checks": [
         "Describe material, thickness and joint shape. A sketch or photograph helps define the welding task and required system scope.",
         "The used Oerlikon PlasmaFix 50 S and SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T systems are separate models from other manufacturers. Compare their original documentation, condition and offered scope of supply."
       ]
     },
     "es": {
-      "intro": "PlasmaTIG es la fuente de corriente MAHE para soldadura por plasma y microplasma. Para soldadura de precisión, compruebe el rango de corriente documentado de la versión concreta y todo el equipamiento de antorcha.",
+      "intro": "PlasmaTIG reúne microplasma, plasma, TIG DC y MMA en una fuente de corriente inversora. Los modelos 20 y 50 parten de 0,1 A en microplasma. El modo pulsado, el pulsado HF de 50 a 2000 Hz, hasta 10 memorias JOB y la interfaz de robot facilitan soldaduras precisas y repetitivas.",
       "checks": [
         "Describa el material, el espesor y la forma de la unión. Un croquis o una fotografía ayuda a definir la tarea y el alcance necesario del sistema.",
         "Los sistemas usados Oerlikon PlasmaFix 50 S y SAF-FRO PlasmaFix 51 / Oerlikon PlasmaFix P+T son modelos distintos de otros fabricantes. Compare su documentación original, su estado y el suministro ofrecido."
       ]
-    }
+    },
+    "fact_keys": [
+      "Mikroplasma",
+      "Technologie"
+    ]
   },
   "theta-60": {
     "sources": [

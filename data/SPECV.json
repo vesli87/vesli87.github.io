@@ -624,5 +624,23 @@
     "it": "Comando a distanza sulla torcia",
     "en": "Remote control on the torch",
     "es": "Mando a distancia en la antorcha"
+  },
+  "Plasma / Mikroplasma · WIG DC · MMA": {
+    "fr": "Plasma / Microplasma · TIG DC · MMA",
+    "it": "Plasma / Microplasma · TIG DC · MMA",
+    "en": "Plasma / Microplasma · DC TIG · MMA",
+    "es": "Plasma / Microplasma · TIG DC · MMA"
+  },
+  "ab 0,1 A (Modelle 20 / 50)": {
+    "fr": "dès 0,1 A (modèles 20 / 50)",
+    "it": "da 0,1 A (modelli 20 / 50)",
+    "en": "from 0.1 A (models 20 / 50)",
+    "es": "desde 0,1 A (modelos 20 / 50)"
+  },
+  "DC-Inverter": {
+    "fr": "Onduleur DC",
+    "it": "Inverter DC",
+    "en": "DC inverter",
+    "es": "Inversor DC"
   }
 }

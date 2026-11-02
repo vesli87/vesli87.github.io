@@ -220,13 +220,14 @@
   "id": "plasma-tig",
   "cat": "schweissgeraete",
   "sub": "Plasma TIG",
-  "vt": "Plasma TIG",
+  "vt": "Plasma TIG / Mikroplasma",
   "name": "PlasmaTIG",
   "img": "2019/10/plasmatig-300x300.png",
-  "desc": "Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen.",
+  "desc": "DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte.",
   "specs": {
-   "Verfahren": "Plasma / Mikroplasma",
-   "Strombereich": "20 – 400 A",
+   "Verfahren": "Plasma / Mikroplasma · WIG DC · MMA",
+   "Mikroplasma": "ab 0,1 A (Modelle 20 / 50)",
+   "Technologie": "DC-Inverter",
    "Einsatz": "Feinblech bis Industrie"
   }
  },

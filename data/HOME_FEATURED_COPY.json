@@ -329,5 +329,61 @@
         "ActiveBoost; pro: 5 memorias"
       ]
     }
+  },
+  "plasma-tig": {
+    "sources": [
+      "https://mahe-online.de/wp-content/uploads/2024/01/PlasmaTIG-CWK_11.pdf (REV 1.1, S. 3: DC-Inverter; S. 19/21: Puls/JOB; S. 31/32: Modelle 20/50 ab 0,1 A)",
+      "https://mahe-online.de/wp-content/uploads/2022/07/Plasma_TIG.pdf (S. 2: modellbezogene Strombereiche)"
+    ],
+    "de": {
+      "benefit": "Feinste Nähte mit Mikroplasma",
+      "description": "DC-Inverter für Mikroplasma, Plasma, WIG DC und MMA. Für präzise Schweissaufgaben und wiederkehrende Fertigungsabläufe.",
+      "highlights": [
+        "Modelle 20 / 50: Mikroplasma ab 0,1 A",
+        "Pulsbetrieb und HF-Puls mit 50–2000 Hz",
+        "Bis zu 10 JOB-Speicher für wiederkehrende Aufgaben",
+        "Roboterschnittstelle für die Automation"
+      ]
+    },
+    "fr": {
+      "benefit": "La précision du soudage microplasma",
+      "description": "Onduleur DC pour microplasma, plasma, TIG DC et MMA. Pour les soudures de précision et les opérations de production répétitives.",
+      "highlights": [
+        "Modèles 20 / 50 : microplasma dès 0,1 A",
+        "Mode pulsé et pulsé HF de 50 à 2000 Hz",
+        "Jusqu’à 10 mémoires JOB pour les tâches répétitives",
+        "Interface robot pour l’automatisation"
+      ]
+    },
+    "it": {
+      "benefit": "Saldature di precisione con microplasma",
+      "description": "Inverter DC per microplasma, plasma, TIG DC e MMA. Per saldature di precisione e lavorazioni di produzione ripetitive.",
+      "highlights": [
+        "Modelli 20 / 50: microplasma da 0,1 A",
+        "Modalità pulsata e pulsato HF da 50 a 2000 Hz",
+        "Fino a 10 memorie JOB per lavorazioni ripetitive",
+        "Interfaccia robot per l’automazione"
+      ]
+    },
+    "en": {
+      "benefit": "Precision seams with microplasma",
+      "description": "DC inverter for microplasma, plasma, DC TIG and MMA. For precision welding tasks and repetitive production work.",
+      "highlights": [
+        "Models 20 / 50: microplasma from 0.1 A",
+        "Pulse mode and HF pulse from 50 to 2000 Hz",
+        "Up to 10 JOB memories for repetitive tasks",
+        "Robot interface for automation"
+      ]
+    },
+    "es": {
+      "benefit": "Soldaduras de precisión con microplasma",
+      "description": "Inversor DC para microplasma, plasma, TIG DC y MMA. Para soldaduras de precisión y trabajos de producción repetitivos.",
+      "highlights": [
+        "Modelos 20 / 50: microplasma desde 0,1 A",
+        "Modo pulsado y pulsado HF de 50 a 2000 Hz",
+        "Hasta 10 memorias JOB para trabajos repetitivos",
+        "Interfaz de robot para automatización"
+      ]
+    }
   }
 }

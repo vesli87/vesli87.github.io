@@ -593,7 +593,7 @@ Die bisherigen Hero-Dateien bleiben für Vorschau-Metadaten erhalten.
 
 Auf Wunsch des Inhabers wechselt der grosse Produktbereich seit demselben Tag
 alle **3 Sekunden**. `core.HOME_FEATURED` enthält in dieser Reihenfolge
-MPT 3001, HyperMIG TWIN, HyperTIG AX, HyperTIG DX, Omega AX und Beta DX.
+MPT 3001, HyperMIG TWIN, HyperTIG AX, HyperTIG DX, Omega AX, Beta DX und PlasmaTIG.
 Omega AX und Beta DX zeigen die bestätigte Netzangabe 1~ 230 V; die HyperTIG-
 Modelle bleiben bei ihren eigenen 400-V-Angaben. Jeder Eintrag behält Bild,
 Produktname, Preis auf Anfrage und den sprachgleichen Produktlink gemeinsam.
@@ -606,7 +606,7 @@ Produktdetailseiten in DE/FR/IT/EN/ES. Beide Einträge sind aus `IMGCAP.json`
 entfernt; der normale bildabhängige Rahmen reserviert keinen Beschriftungsplatz.
 Theta 60 HSC und HyperCleaner ST bleiben darunter als direkte Produktkarten.
 
-Die Bühne reserviert den Platz aller sechs Bilder, ohne Layoutsprünge beim
+Die Bühne reserviert den Platz aller sieben Bilder, ohne Layoutsprünge beim
 Wechsel. Nur das erste Bild hat hohe Ladepriorität; die übrigen werden mit
 niedriger Priorität vorgeladen. Vor/Zurück, Produktauswahl und Pause/Weiter
 sind per Tastatur und Touch erreichbar. Tastaturfokus, ein Hintergrundtab
@@ -1471,3 +1471,21 @@ MPT 3001 zeigt CNC-Import, Bahnvorbereitung, THC und die angebotenen Theta-Sets
 auf Basis der bereits freigegebenen CNC-Unterlagen und MAHE-Preisliste.
 Herkunftshinweise stehen an den Datensätzen. `validate_editorial_guides()` prüft
 Produkte, Quellen, fünf Sprachen und vier Klartext-Highlights vor dem Build.
+
+### PlasmaTIG als siebter Startseiteneintrag, 02.11.2026
+
+PlasmaTIG ergänzt den 3-Sekunden-Wechsel als siebtes Gerät in DE/FR/IT/EN/ES.
+Originalfoto, Direktlink, niedrige Bild-Ladepriorität und bestehende Bedienung
+bleiben erhalten. Produktkopf, Kartenbeschreibung, Suche und Suchmaschinen-
+Metadaten nennen Mikroplasma und die DC-Inverter-Bauweise ausdrücklich.
+0,1 A gilt für Mikroplasma bei den Modellen 20 und 50; die redaktionelle,
+pauschale Angabe 20–400 A wurde entfernt. Die einzelnen Herstellertabellen
+bleiben unverändert. Keine Strom-Untergrenze auf andere Varianten übertragen.
+
+Belegt in MAHE PlasmaTIG CWK REV 1.1, S. 3 (DC-Inverter), S. 19/21
+(Puls, HF-Puls 50–2000 Hz, bis zu 10 JOBs), S. 9/10 (Roboterschnittstelle)
+und S. 31/32 (Modelle 20/50 ab 0,1 A); Technisches Datenblatt Plasma TIG,
+S. 2 bestätigt die modellbezogenen Bereiche. Beide Original-PDFs sind bereits
+im Downloadbereich des Produkts verlinkt. `PRODUCT_GUIDES.fact_keys` darf
+höchstens zwei vorhandene, quellengeprüfte Merkmale aus `P.json` vor die
+gemeinsamen technischen Eckdaten stellen. Der Wert behält seine Modellangabe.

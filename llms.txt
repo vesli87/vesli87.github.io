@@ -44,7 +44,7 @@
 - [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. (MMA)
 - [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
 - [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
-- [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): Stromquelle für Mikroplasma und Plasma zum Ausführen feinster Schweissungen. (Plasma TIG)
+- [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte. (Plasma TIG / Mikroplasma)
 
 ### Plasmaschneiden
 - [MAHE Theta 40](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-40/): Leichtes 230-V-Plasmaschneidgerät für die Werkstatt. (Plasma Cut)

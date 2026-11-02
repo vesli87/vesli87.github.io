@@ -109,9 +109,9 @@ WORKSHOP = {
 # auch die 2048er Stufe, und damit reicht es fuer die doppelte Punktdichte.
 HERO_SLIDES = ["hero", "hero-mpt"]
 
-# Featured products in the VOLT homepage carousel. Order is shared by DE/FR/IT.
+# Featured products in the VOLT homepage carousel. Order is shared by all five languages.
 HOME_FEATURED = ('mpt-3001', 'hypermig-twin', 'hypertig-ax', 'hypertig-dx',
-                 'omega-ax', 'beta-dx')
+                 'omega-ax', 'beta-dx', 'plasma-tig')
 
 # Kartenverweis auf die Partnerwerkstatt, im separaten Place-Knoten.
 MAP_URL = ("https://www.google.com/maps/search/?api=1&query="
@@ -724,19 +724,24 @@ def specRest(p):
 
 
 def quickFacts(lang, p):
-    """Only show source values shared by every listed model and construction.
+    """Show reviewed, model-qualified facts, then values shared by all models.
 
     A family overview must not present one model's fuse, current or weight as
     a specification of the whole family. Empty and unconfirmed cells stay out.
     Products without manufacturer tables retain their existing editorial data.
     """
+    # Editorial keys have explicit provenance and retain their model scope in
+    # the value (e.g. 0.1 A belongs to PlasmaTIG 20/50, not every variant).
+    keys = PRODUCT_GUIDES.get(p['id'], {}).get('fact_keys', [])
+    reviewed = [(trK(lang, key), trV(lang, p['specs'][key])) for key in keys]
     tables = [MAHE_SPECS[key] for key in SPECMAP.get(p['id'], []) if key in MAHE_SPECS]
     if not tables:
-        return [(trK(lang, key), trV(lang, value)) for key, value in list(specRest(p).items())[:3]]
+        rest = [(trK(lang, key), trV(lang, value)) for key, value in specRest(p).items() if key not in keys]
+        return (reviewed + rest)[:3]
     priorities = [('Schweissstrombereich',), ('Ausgangsstrom max.',), ('Netzspannung',),
                   ('Netzabsicherung', 'Netzabsicherung (träge)'), ('Gewicht', 'Gewicht CWK'),
                   ('Schutzklasse',), ('Empfohlener Schnitt',)]
-    out = []
+    out = list(reviewed)
     for alternatives in priorities:
         values, label = [], ''
         for table in tables:
@@ -1503,11 +1508,17 @@ def validate_editorial_guides():
                 raise ValueError(f'Missing localized panel name: {key}/{lang}')
 
     for pid, guide in PRODUCT_GUIDES.items():
-        if pid not in BY_ID or set(guide) != {'sources', 'links', *LANGS}:
+        if pid not in BY_ID or set(guide) not in ({'sources', 'links', *LANGS}, {'sources', 'links', 'fact_keys', *LANGS}):
             raise ValueError(f'Incomplete product guide: {pid}')
         if not isinstance(guide['sources'], list) or not guide['sources'] or any(
                 not isinstance(source, str) or not source for source in guide['sources']):
             raise ValueError(f'Missing product guide provenance: {pid}')
+        if 'fact_keys' in guide:
+            keys = guide['fact_keys']
+            if (not isinstance(keys, list) or not 1 <= len(keys) <= 2 or
+                    any(not isinstance(key, str) or key not in BY_ID[pid]['specs'] for key in keys) or
+                    len(set(keys)) != len(keys)):
+                raise ValueError(f'Invalid reviewed product fact keys: {pid}')
         links(guide['links'])
         if any(ref == {'kind':'product', 'id':pid} for ref in guide['links']):
             raise ValueError(f'Product guide links to itself: {pid}')

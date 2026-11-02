@@ -47,7 +47,7 @@ Bearbeitet werden also:
 | GA4 und Brevo-Formularlinks | `core.py::ga4_measurement_id/newsletter_forms`, Aktivierungsprüfungen in `README.md` |
 | Aussehen | `assets/css/site.css` |
 | Aufgabenbezogene Kontaktwege | `data/INQUIRY_TOPICS.json` |
-| Nutzen und technische Highlights der sechs Startseitenprodukte | `data/HOME_FEATURED_COPY.json` (DE/FR/IT/EN/ES, Quellen und pro/syn-Zuordnung) |
+| Nutzen und technische Highlights der sieben Startseitenprodukte | `data/HOME_FEATURED_COPY.json` (DE/FR/IT/EN/ES, Quellen und pro/syn-Zuordnung) |
 | Suche, Anfrageliste, Formulare | `assets/js/app.js` |
 | Seitenaufbau / HTML-Struktur | `build/pages.py`, `build/render.py` |
 

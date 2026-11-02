@@ -216,8 +216,18 @@ def front_html(lang, p):
         out.append("</div>")
     elif hl:
         out.append('<div class="fp-highlights"><h3 class="besond">'
-                   + e(C.highlightsTitle(lang, p)) + '</h3><ul class="besond-list">'
-                   + "".join(f"<li>{e(x)}</li>" for x in hl) + "</ul></div>")
+                   + e(C.highlightsTitle(lang, p)) + '</h3>')
+        if C.HL_DEVICE.get(p['id'], {}).get('heading') and all(':' in item for item in hl):
+            # Reviewed benefits have a short heading followed by an explanation.
+            # Reuse the existing responsive definition-list layout.
+            out.append('<dl class="cwk-benefits">' + ''.join(
+                f'<div><dt>{e(title.strip())}</dt><dd>{e(body.strip())}</dd></div>'
+                for item in hl for title, _, body in [item.partition(':')]
+            ) + '</dl>')
+        else:
+            out.append('<ul class="besond-list">'
+                       + ''.join(f'<li>{e(x)}</li>' for x in hl) + '</ul>')
+        out.append('</div>')
     if panels:
         out.append(f'<h3 class="fp-section">{e(C.t(lang,"front_h"))}</h3>')
         gruppen = C.fpGroups(p)

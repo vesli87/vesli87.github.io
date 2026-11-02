@@ -1552,3 +1552,5 @@ Die Produktanfrage bietet die drei konkret bezeichneten Leistungsvarianten
 in `INQUIRY_OPTIONS.mlst`; Auswahl, Mengen, Sprachwechsel und Produktkontext
 verwenden die bereits bestehende validierte Anfragefunktion. Die Homepage
 behält ihre sieben Produktfolien, die Daten von MLRM und MLRC bleiben unverändert.
+
+Die MLST-Vorteile nutzen die bestehende responsive Definitionsliste: zwei Spalten auf breiten Ansichten, eine Spalte auf dem Mobilgerät, mit getrenntem Titel und Erklärung. Keine zusätzliche CSS- oder JavaScript-Datei.

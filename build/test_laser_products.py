@@ -38,7 +38,13 @@ class LaserProductsTests(unittest.TestCase):
         for lang in C.LANGS:
             highlights = C.highlightsOf(lang, product)
             self.assertEqual(len(highlights), 6)
-            self.assertTrue(all(R.e(h) in P.front_html(lang, product) for h in highlights))
+            benefits = P.front_html(lang, product)
+            self.assertEqual(benefits.count('<dt>'), 6)
+            self.assertEqual(benefits.count('<dd>'), 6)
+            for item in highlights:
+                title, _, explanation = item.partition(':')
+                self.assertTrue(R.e(title.strip()) in benefits)
+                self.assertTrue(R.e(explanation.strip()) in benefits)
             table = C.specTables(lang, product)[0]
             self.assertEqual(len(table['rows']), 18)
             self.assertTrue(table['row_header'])

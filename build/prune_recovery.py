@@ -11,6 +11,10 @@ LEGACY_OPERATOR_COMMIT = '3455962df2485ebdda57cd34d9d15b058d5082a5'
 WORKFLOW = '.github/workflows/pages.yml'
 
 
+class UnfinishedDeployment(ValueError):
+    """Known workflow provenance, but not eligible as rollback or for deletion."""
+
+
 def managed_release(item):
     """Positive identification; unfamiliar releases and drafts are never touched."""
     tag = item.get('tag_name', '')
@@ -57,9 +61,10 @@ def validate_previous(item, commit):
     run = recovery.api('actions/runs/' + deployment_run(item))
     if (run.get('path') != WORKFLOW or run.get('head_sha') != previous
             or run.get('head_branch') != 'main' or run.get('event') not in ('push', 'workflow_dispatch')
-            or run.get('repository', {}).get('full_name') != recovery.REPOSITORY
-            or run.get('status') != 'completed' or run.get('conclusion') != 'success'):
+            or run.get('repository', {}).get('full_name') != recovery.REPOSITORY):
         raise ValueError('Recovery does not belong to a completed successful main deployment')
+    if run.get('status') != 'completed' or run.get('conclusion') != 'success':
+        raise UnfinishedDeployment('Deployment is not completed successfully')
     comparison = recovery.api('compare/' + previous + '...' + commit)
     if comparison.get('status') not in ('ahead', 'identical'):
         raise ValueError('Recovery is not an ancestor of the current deployment')
@@ -98,9 +103,20 @@ def prune(commit, delete=False):
         raise ValueError('Release listing exceeded its safety limit')
     keep, remove = retention_plan(items, commit)
     recovery.verify_tag(keep[0]['tag_name'], commit, required=True)
-    # Validate the rollback and every candidate before the first deletion.
+    # A push can cancel a run after its recovery was uploaded. Preserve that
+    # release, but never select it as the verified rollback or delete it. All
+    # other provenance/integrity errors still stop every deletion.
+    eligible, deferred = keep[:1], []
     for item in keep[1:] + remove:
-        validate_previous(item, commit)
+        try:
+            validate_previous(item, commit)
+        except UnfinishedDeployment:
+            deferred.append(item)
+        else:
+            eligible.append(item)
+    keep, remove = retention_plan(eligible, commit)
+    for item in deferred:
+        print('::warning::Preserved recovery from unfinished deployment: ' + item['tag_name'])
     print('Retained recovery releases: ' + ', '.join(i['tag_name'] for i in keep))
     for item in remove:
         if delete:
@@ -114,6 +130,7 @@ def prune(commit, delete=False):
         print(('Deleted ' if delete else 'Would delete ') + item['tag_name'])
     # Git tags, commits, workflow logs and all non-matching releases are preserved.
     return {'kept': [i['tag_name'] for i in keep],
+            'deferred': [i['tag_name'] for i in deferred],
             'removed' if delete else 'candidates': [i['tag_name'] for i in remove],
             'bytes': sum(a['size'] for i in remove for a in i['assets'])}
 

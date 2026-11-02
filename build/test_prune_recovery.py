@@ -82,6 +82,28 @@ class RecoveryRetentionTests(unittest.TestCase):
         self.assertEqual([call.args for call in commands], [
             ('api', '--method', 'DELETE', 'repos/' + P.recovery.REPOSITORY + '/releases/1')])
 
+    def test_interrupted_release_is_preserved_and_not_selected_as_rollback(self):
+        result, validations, commands = self.run_prune(
+            True, validation=[P.UnfinishedDeployment('cancelled'), None])
+        self.assertEqual(result['kept'], ['recovery-' + self.current, 'recovery-' + 'c' * 40])
+        self.assertEqual(result['deferred'], ['recovery-' + 'b' * 40])
+        self.assertEqual(result['removed'], [])
+        self.assertEqual(len(validations), 2)
+        self.assertEqual(commands, [])
+
+    def test_only_verified_history_is_pruned_while_failed_release_is_untouched(self):
+        oldest = self.release('d' * 40, 4)
+        oldest['published_at'] = '2026-09-30T12:00:00Z'
+        self.items.append(oldest)
+        result, validations, commands = self.run_prune(
+            True, fresh=self.items[-1],
+            validation=[P.UnfinishedDeployment('failure'), None, None])
+        self.assertEqual(result['kept'], ['recovery-' + self.current, 'recovery-' + 'c' * 40])
+        self.assertEqual(result['deferred'], ['recovery-' + 'b' * 40])
+        self.assertEqual(result['removed'], ['recovery-' + 'd' * 40])
+        self.assertEqual([call.args for call in commands], [
+            ('api', '--method', 'DELETE', 'repos/' + P.recovery.REPOSITORY + '/releases/4')])
+
     def test_invalid_rollback_or_candidate_blocks_every_deletion(self):
         for validation in ([ValueError('invalid rollback')], [None, ValueError('invalid candidate')]):
             with patch.object(P, 'current_main', return_value=True), \

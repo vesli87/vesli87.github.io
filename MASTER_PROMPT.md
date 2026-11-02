@@ -1038,6 +1038,12 @@ oder einen Service Worker scheinbar behoben; Grenzen stehen in SECURITY.md.
   Main-Deployments, gemeinsame Historie und unveränderter Main-Stand. Fremde,
   umbenannte oder unvollständige Releases bleiben bestehen. Git-Tags und Commits
   bleiben erhalten. Ohne `--delete` wird nur der Plan angezeigt.
+  Seit 02.11.2026 werden Releases aus korrekt zugeordneten, aber abgebrochenen
+  oder fehlgeschlagenen Workflow-Läufen mit Warnung zusätzlich bewahrt. Sie
+  gelten weder als bestätigte Rückfallversion noch als Löschkandidat. Die
+  Auswahl der vorherigen Version berücksichtigt nur vollständig erfolgreiche
+  Läufe. Andere Fehler bei Identität, Tags oder Historie stoppen weiterhin
+  die gesamte Bereinigung vor der ersten Löschung.
 - Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
   Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
   unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.

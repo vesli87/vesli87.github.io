@@ -118,6 +118,15 @@ Sprachen: Deutsch, Englisch, Tschechisch.
 
 ## Automatische Kontrollen und Wiederherstellung
 
+Die Aufbewahrung unterscheidet bestätigte Rückfallversionen von Releases aus
+unterbrochenen oder fehlgeschlagenen Deploy-Läufen. Solche Releases bleiben mit
+sichtbarer Warnung unberührt und werden weder zur bestätigten Rückfallversion
+erklärt noch automatisch gelöscht. Das aktuelle und das neueste vorherige
+vollständig erfolgreiche, geprüfte Release bleiben erhalten. Unstimmige
+Workflow-Identität, Tags, Prüfsummen oder Historie stoppen weiterhin jede
+Löschung. Diese Unterscheidung verhindert, dass ein durch einen neuen Push
+unterbrochener Lauf jede spätere Bereinigung blockiert.
+
 `build/security_check.py` prüft alle Inhaltsseiten einschliesslich 404 auf die
 Skript-Hashes, SRI, CSP, Inline-Ereignisse, aktive unsichere URLs und POST-Formulare.
 Die öffentliche Dateiauswahl bricht vor dem Kopieren ab, wenn in verwalteten

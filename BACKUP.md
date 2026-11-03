@@ -145,6 +145,11 @@ Commit-Historie geprüft. Fremde, umbenannte, unvollständige oder unveränderli
 Releases und Entwürfe bleiben erhalten. Bei einem Wechsel von `main` oder einem
 veränderten Release stoppt die Bereinigung. Git-Tags, Commits und Workflowprotokolle
 werden nicht gelöscht. Ohne `--delete` zeigt das Werkzeug nur den Plan an.
+Releases aus eindeutig zugeordneten, aber abgebrochenen oder fehlgeschlagenen
+Workflow-Läufen bleiben zusätzlich erhalten. Sie gelten weder als bestätigte
+Rückfallversion noch als Löschkandidat und blockieren die Auswahl einer
+vollständig erfolgreichen vorherigen Version nicht. Andere Fehler bei Tags,
+Herkunft oder Historie stoppen weiterhin die gesamte Bereinigung.
 Die temporären Actions-Artefakte laufen nach sieben Tagen ab; es werden keine
 neuen vollständigen Notebook-Sicherungen für jedes Deployment angelegt.
 
@@ -163,6 +168,15 @@ ausgefuehrt. Die heruntergeladene und die wiederhergestellte Kopie wurden
 danach entfernt. Das prueft die tatsaechlich abrufbare Sicherung; ein gruener
 Upload-Job allein ist noch kein Wiederherstellungsnachweis. Bestehende private
 Alt-Sicherungen werden dabei weder geloescht noch oeffentlich hochgeladen.
+
+Am 03.11.2026 wurden die veröffentlichten Versionen `86296e4919` und
+`77706a4837` erneut heruntergeladen und mit den GitHub-Asset-Prüfsummen sowie
+ihren Manifesten geprüft. Beide Archive liessen sich in temporären Ordnern
+wiederherstellen: 1.110 beziehungsweise 1.104 öffentliche Dateien. Die aktuelle
+Kopie entsprach vollständig dem für den Deploy erzeugten öffentlichen Paket
+und bestand die Sicherheitsprüfung. Download, Vergleichspaket und entpackte
+Testkopien wurden danach entfernt; die Arbeitskopie und der Webauftritt blieben
+unverändert.
 
 ## Sicherung prüfen
 

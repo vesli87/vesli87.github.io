@@ -1,5 +1,7 @@
 """Retention must preserve current recovery, rollback, foreign data and Git history."""
 import copy
+from contextlib import redirect_stdout
+import io
 import unittest
 from unittest.mock import patch
 
@@ -66,8 +68,11 @@ class RecoveryRetentionTests(unittest.TestCase):
                 patch.object(P.recovery, 'api', side_effect=[self.items, fresh or self.items[-1]]), \
                 patch.object(P.recovery, 'verify_tag'), \
                 patch.object(P, 'validate_previous', side_effect=validation) as validate, \
-                patch.object(P.recovery, 'gh') as command:
+                patch.object(P.recovery, 'gh') as command, \
+                redirect_stdout(io.StringIO()) as output:
+            # Fixture workflow commands must never create real CI annotations.
             result = P.prune(self.current, delete=delete)
+            self.last_output = output.getvalue()
             return result, validate.call_args_list, command.call_args_list
 
     def test_default_is_dry_run_with_no_mutations(self):
@@ -88,6 +93,8 @@ class RecoveryRetentionTests(unittest.TestCase):
         self.assertEqual(result['kept'], ['recovery-' + self.current, 'recovery-' + 'c' * 40])
         self.assertEqual(result['deferred'], ['recovery-' + 'b' * 40])
         self.assertEqual(result['removed'], [])
+        self.assertIn('::warning::Preserved recovery from unfinished deployment: '
+                      + 'recovery-' + 'b' * 40, self.last_output)
         self.assertEqual(len(validations), 2)
         self.assertEqual(commands, [])
 

@@ -1044,6 +1044,10 @@ oder einen Service Worker scheinbar behoben; Grenzen stehen in SECURITY.md.
   Auswahl der vorherigen Version berücksichtigt nur vollständig erfolgreiche
   Läufe. Andere Fehler bei Identität, Tags oder Historie stoppen weiterhin
   die gesamte Bereinigung vor der ersten Löschung.
+  Die Retention-Regressionstests fangen seit 03.11.2026 ihre simulierten
+  Workflow-Kommandos ab und prüfen sie im Test. Test-Tags dürfen keine echten
+  Warnungsannotationen im Actions-Bericht erzeugen; operative Warnungen des
+  Produktionswerkzeugs bleiben unverändert sichtbar.
 - Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
   Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
   unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.

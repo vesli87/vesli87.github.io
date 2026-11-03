@@ -112,6 +112,8 @@ class BackupTests(unittest.TestCase):
         # deployment contract, including every language-specific search index.
         for name in public_files():
             self.assertTrue(B.public_path(name), name)
+        self.assertFalse(B.public_path('sitemaps/private.xml'))
+        self.assertFalse(B.public_path('sitemaps/de/index.html'))
         for lang in ('de', 'fr', 'it', 'en', 'es'):
             self.put(self.public, f'data/search-{lang}.json', '{"language":"' + lang + '"}')
             if lang != 'de':

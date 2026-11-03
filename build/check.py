@@ -24,6 +24,7 @@ import json
 import pathlib
 import re
 import sys
+import xml.etree.ElementTree as ET
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import core as C  # noqa: E402
@@ -38,6 +39,43 @@ def err(msg):
 
 def warn(msg):
     warnings.append(msg)
+
+
+def sitemap_language_errors(root=ROOT):
+    """Keep per-language discovery in lockstep with the complete catalogue."""
+    issues = []
+    ns = {'s': 'http://www.sitemaps.org/schemas/sitemap/0.9',
+          'x': 'http://www.w3.org/1999/xhtml'}
+    try:
+        complete = ET.parse(root / 'sitemap.xml').getroot()
+        originals = {row.find('s:loc', ns).text: ET.tostring(row)
+                     for row in complete.findall('s:url', ns)}
+        index = ET.parse(root / 'sitemap-index.xml').getroot()
+        expected = {C.abs_url(f'/sitemaps/{lang}.xml') for lang in C.LANGS}
+        children = [row.find('s:loc', ns).text for row in index.findall('s:sitemap', ns)]
+        if index.tag != '{' + ns['s'] + '}sitemapindex' or set(children) != expected or len(children) != len(expected):
+            issues.append('Sitemap index must contain exactly the five known language maps')
+        seen, counts = set(), []
+        for lang in C.LANGS:
+            child = ET.parse(root / f'sitemaps/{lang}.xml').getroot()
+            rows = child.findall('s:url', ns)
+            if child.tag != '{' + ns['s'] + '}urlset' or not rows:
+                issues.append(f'Empty or invalid language sitemap: {lang}')
+            counts.append(len(rows))
+            for row in rows:
+                url = row.find('s:loc', ns).text
+                self_alts = [link.attrib.get('href') for link in row.findall('x:link', ns)
+                             if link.attrib.get('hreflang') == C.EX[lang]['hreflang']]
+                if url in seen or url not in originals or ET.tostring(row) != originals.get(url) or self_alts != [url]:
+                    issues.append(f'Wrong, duplicate or incomplete language sitemap entry: {lang}/{url}')
+                seen.add(url)
+        if seen != set(originals) or len(set(counts)) != 1:
+            issues.append('Language sitemaps do not cover the complete catalogue with language parity')
+        if f'Sitemap: {C.SITE}/sitemap-index.xml' not in (root / 'robots.txt').read_text('utf-8'):
+            issues.append('robots.txt must advertise the language sitemap index')
+    except (ET.ParseError, OSError, AttributeError, KeyError) as problem:
+        issues.append(f'Invalid or missing language sitemap: {problem}')
+    return issues
 
 
 def all_pages():
@@ -626,6 +664,8 @@ def main():
     missing = seen_paths - smset - noindex - {"/404.html"}
     for m in sorted(missing):
         err(f"nicht in der sitemap: {m}")
+    for problem in sitemap_language_errors():
+        err(problem)
 
     # 10. Sprachparität
     if len(set(per_lang.values())) != 1:

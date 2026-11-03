@@ -27,7 +27,9 @@ PRIVATE_PARTS = {'.git', '.claude', '.codex', '.agents', 'reports', 'node_module
 PUBLIC_DIRS = {'produkte', 'fr', 'it', 'en', 'es', 'verfahren', 'downloads', 'kontakt', 'faq',
                'suche', 'impressum', 'datenschutz', 'agb', 'service', 'ueber-uns'}
 PUBLIC_FILES = {'index.html', '404.html', 'favicon.ico', 'favicon.png', 'robots.txt',
-                'sitemap.xml', 'llms.txt', 'llms-full.txt', 'site.webmanifest',
+                'sitemap.xml', 'sitemap-index.xml', 'sitemaps/de.xml', 'sitemaps/fr.xml',
+                'sitemaps/it.xml', 'sitemaps/en.xml', 'sitemaps/es.xml',
+                'llms.txt', 'llms-full.txt', 'site.webmanifest',
                 '.nojekyll', 'LICENSE', 'CNAME', '.well-known/security.txt',
                 'data/products.json', 'data/search-de.json', 'data/search-fr.json',
                 'data/search-it.json', 'data/search-en.json', 'data/search-es.json'}

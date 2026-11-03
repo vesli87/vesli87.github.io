@@ -61,4 +61,4 @@ Allow: /
 User-agent: YouBot
 Allow: /
 
-Sitemap: https://www.ves-tech.ch/sitemap.xml
+Sitemap: https://www.ves-tech.ch/sitemap-index.xml

@@ -1579,3 +1579,28 @@ Der llms-Volltext verlinkt die Sammlungsmitglieder, ohne die technischen Tabelle
 zu duplizieren. Es gibt keine zusätzlichen Skripte, Schriftarten oder Bilder;
 das neue dekorative Lasersymbol ergänzt das vorhandene SVG-Kategoriesystem.
 Die sieben Startseitenfolien und alle technischen Produktangaben bleiben erhalten.
+
+### Fünfsprachige Indexierungsinventare, 03.11.2026
+
+`/sitemap-index.xml` verweist auf `/sitemaps/de.xml`, `fr.xml`, `it.xml`, `en.xml`
+und `es.xml`. Jeder Teil enthält genau die kanonischen URLs seiner Sprache und
+behält alle gegenseitigen Sprachalternativen und Produktbilder. Die bisherige
+vollständige `/sitemap.xml` bleibt als kompatibler Einstieg bestehen. robots.txt
+meldet den neuen Index; bestehende Einreichungen bleiben gültig. Die Sprachmaps
+erlauben getrennte Abdeckungsberichte in Google Search Console und Bing.
+
+Der Generator verweigert nicht zugeordnete, doppelte oder leere Sprachgruppen.
+`check.py::sitemap_language_errors` prüft vor jeder Veröffentlichung die exakte
+Übereinstimmung der fünf Inventare mit der vollständigen Sitemap, Sprachparität,
+Hreflang, Bilder und Metadaten. Der öffentliche Paketfilter erlaubt nur den
+Index und die fünf fest benannten XML-Dateien. Keine neuen Browseranfragen,
+Skripte oder Styles auf den Produktseiten. `lastmod` folgt weiterhin tatsächlichen
+Inhaltsänderungen; das Indexdatum ergibt sich aus den zugehörigen Seiten.
+
+Indexierbarkeit, eingereichte URL und tatsächliche Indexierung sind getrennte
+Zustände. Private Prüfberichte und Kontometriken bleiben in ignorierten reports/.
+Google und Bing entscheiden selbst über die Aufnahme; eine angenommene Sitemap,
+HTTP 200 oder eine IndexNow-Antwort sind keine Zusage vollständiger Indexierung.
+Suche, Bestätigungsseiten, Datenschutz und AGB bleiben absichtlich noindex;
+Weiterleitungen und Fehlerseiten werden nicht als zusätzliche Inhaltsseiten
+in die Sitemap aufgenommen. Keine erfundenen Preise, Ratings oder Ortsseiten.

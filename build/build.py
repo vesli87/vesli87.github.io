@@ -562,6 +562,32 @@ def sitemap(entries, daten):
             + "\n".join(rows) + "\n</urlset>\n")
 
 
+def language_sitemaps(entries, dates):
+    """Partition the canonical inventory without changing any page URL.
+
+    The existing flat sitemap remains valid for submitted integrations. Each
+    child retains all cross-language alternates, including those in other files.
+    Index modification dates reflect the contents, not the time of every build.
+    """
+    files, index_rows, seen = {}, [], set()
+    for lang in C.LANGS:
+        subset = [entry for entry in entries if entry[1] and entry[1].get(lang) == entry[0]]
+        paths = {entry[0] for entry in subset}
+        if not subset or len(paths) != len(subset) or seen & paths:
+            raise ValueError('Language sitemaps need disjoint, nonempty canonical inventories')
+        seen.update(paths)
+        path = f'/sitemaps/{lang}.xml'
+        files[path] = sitemap(subset, dates)
+        modified = max(dates[p] for p in paths)
+        index_rows.append(f'<sitemap><loc>{C.abs_url(path)}</loc><lastmod>{modified}</lastmod></sitemap>')
+    if seen != {entry[0] for entry in entries} or len(seen) != len(entries):
+        raise ValueError('Language sitemaps must cover every canonical URL exactly once')
+    files['/sitemap-index.xml'] = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + '\n'.join(index_rows) + '\n</sitemapindex>\n')
+    return files
+
+
 AI_AGENTS = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-Web",
              "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended",
              "Applebot-Extended", "CCBot", "Bytespider", "Amazonbot", "meta-externalagent",
@@ -584,7 +610,7 @@ Disallow: /*?*&q=
 
 {ai}
 
-Sitemap: {C.SITE}/sitemap.xml
+Sitemap: {C.SITE}/sitemap-index.xml
 """
 
 
@@ -849,6 +875,8 @@ def main():
 
     stand, geaendert, erst = lastmod_pflegen([e[0] for e in entries])
     write("/sitemap.xml", sitemap(entries, stand))
+    for path, content in language_sitemaps(entries, stand).items():
+        write(path, content)
     if erst:
         print(f"\u2713 sitemap: lastmod je Seite, erstmalig aus der Versionsgeschichte")
     else:

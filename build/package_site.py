@@ -64,7 +64,7 @@ def public_files():
                 raise ValueError(f'Unexpected public file; review the allowlist: {relative}')
             selected.append(relative)
     files = ['index.html', '404.html', 'favicon.ico', 'favicon.png', 'robots.txt',
-             'sitemap.xml', 'llms.txt', 'llms-full.txt', 'site.webmanifest', '.nojekyll',
+             'sitemap.xml', 'sitemap-index.xml', 'llms.txt', 'llms-full.txt', 'site.webmanifest', '.nojekyll',
              'LICENSE', '.well-known/security.txt']
     if C.EMIT_CNAME:
         files.append('CNAME')
@@ -76,7 +76,8 @@ def public_files():
         if not re.fullmatch(r'[a-zA-Z0-9-]{8,128}', C.INDEXNOW_KEY):
             raise ValueError('Invalid IndexNow key filename')
         files.append(C.INDEXNOW_KEY + '.txt')
-    files += ['data/products.json'] + [f'data/search-{lang}.json' for lang in C.LANGS]
+    files += (['data/products.json'] + [f'data/search-{lang}.json' for lang in C.LANGS]
+              + [f'sitemaps/{lang}.xml' for lang in C.LANGS])
     for name in files:
         source = C.ROOT / name
         # Check parents too; data/ or .well-known/ must not escape the repository.

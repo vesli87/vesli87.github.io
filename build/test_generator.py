@@ -524,7 +524,8 @@ class GeneratorTests(unittest.TestCase):
             package(target)
             for private in ['build', '.git', '.claude', 'docs', 'reports', 'data/P.json', 'README.md']:
                 self.assertFalse((target / private).exists(), private)
-            for public in ['index.html', 'sitemap.xml', 'assets/js/analytics.js',
+            for public in ['index.html', 'sitemap.xml', 'sitemap-index.xml', 'sitemaps/de.xml',
+                           'sitemaps/fr.xml', 'sitemaps/it.xml', 'sitemaps/en.xml', 'sitemaps/es.xml', 'assets/js/analytics.js',
                            'data/products.json', 'data/search-fr.json', '.well-known/security.txt']:
                 self.assertTrue((target / public).exists(), public)
             with self.assertRaises(ValueError):

@@ -119,13 +119,19 @@ Sprachen: Deutsch, Englisch, Tschechisch.
 ## Automatische Kontrollen und Wiederherstellung
 
 Die Aufbewahrung unterscheidet bestätigte Rückfallversionen von Releases aus
-unterbrochenen oder fehlgeschlagenen Deploy-Läufen. Solche Releases bleiben mit
-sichtbarer Warnung unberührt und werden weder zur bestätigten Rückfallversion
+unterbrochenen oder fehlgeschlagenen Deploy-Läufen. Solche Releases bleiben
+protokolliert unberührt und werden weder zur bestätigten Rückfallversion
 erklärt noch automatisch gelöscht. Das aktuelle und das neueste vorherige
 vollständig erfolgreiche, geprüfte Release bleiben erhalten. Unstimmige
 Workflow-Identität, Tags, Prüfsummen oder Historie stoppen weiterhin jede
 Löschung. Diese Unterscheidung verhindert, dass ein durch einen neuen Push
 unterbrochener Lauf jede spätere Bereinigung blockiert.
+Eine Warnung bleibt sichtbar, wenn keine bestätigte Rückfallversion vorhanden
+ist oder der zurückgestellte Lauf neuer beziehungsweise noch nicht eindeutig
+abgeschlossen ist. Erst wenn eine aktuelle Sicherung und eine neuere bestätigte
+Rückfallversion vorliegen, werden ältere abgeschlossene `cancelled`-/`failure`-
+Fälle als historische Information im normalen Log geführt. Ihre Aufbewahrung
+und sämtliche Löschschutzprüfungen bleiben bestehen.
 
 `build/security_check.py` prüft alle Inhaltsseiten einschliesslich 404 auf die
 Skript-Hashes, SRI, CSP, Inline-Ereignisse, aktive unsichere URLs und POST-Formulare.

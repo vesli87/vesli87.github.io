@@ -1039,15 +1039,19 @@ oder einen Service Worker scheinbar behoben; Grenzen stehen in SECURITY.md.
   umbenannte oder unvollständige Releases bleiben bestehen. Git-Tags und Commits
   bleiben erhalten. Ohne `--delete` wird nur der Plan angezeigt.
   Seit 02.11.2026 werden Releases aus korrekt zugeordneten, aber abgebrochenen
-  oder fehlgeschlagenen Workflow-Läufen mit Warnung zusätzlich bewahrt. Sie
+  oder fehlgeschlagenen Workflow-Läufen zusätzlich bewahrt. Sie
   gelten weder als bestätigte Rückfallversion noch als Löschkandidat. Die
   Auswahl der vorherigen Version berücksichtigt nur vollständig erfolgreiche
   Läufe. Andere Fehler bei Identität, Tags oder Historie stoppen weiterhin
   die gesamte Bereinigung vor der ersten Löschung.
   Die Retention-Regressionstests fangen seit 03.11.2026 ihre simulierten
   Workflow-Kommandos ab und prüfen sie im Test. Test-Tags dürfen keine echten
-  Warnungsannotationen im Actions-Bericht erzeugen; operative Warnungen des
-  Produktionswerkzeugs bleiben unverändert sichtbar.
+  Warnungsannotationen im Actions-Bericht erzeugen. Abgeschlossene historische
+  `cancelled`-/`failure`-Läufe, die älter als die verifizierte Rückfallversion
+  sind, stehen seit 03.11.2026 nur im normalen Log. Aktuelle Sicherung und
+  erfolgreiche Rückfallversion müssen vorhanden sein. Neuere, laufende oder
+  uneindeutige Fälle sowie fehlender Rückfall bleiben Warnungen; Löschregeln
+  und Prüfungen werden dadurch nicht verändert.
 - Keine privaten Backups, Konfigurationen oder Kontoberichte in öffentliche
   Actions-Artefakte. Ein lokales Backup auf derselben Festplatte ist keine
   unabhängige Katastrophensicherung. Betriebsanleitung: BACKUP.md und SECURITY.md.

@@ -150,6 +150,12 @@ Workflow-Läufen bleiben zusätzlich erhalten. Sie gelten weder als bestätigte
 Rückfallversion noch als Löschkandidat und blockieren die Auswahl einer
 vollständig erfolgreichen vorherigen Version nicht. Andere Fehler bei Tags,
 Herkunft oder Historie stoppen weiterhin die gesamte Bereinigung.
+Ein abgeschlossenes `cancelled`- oder `failure`-Release, das älter als die
+überprüfte Rückfallversion ist, wird seit 03.11.2026 nur im normalen Log
+protokolliert. Voraussetzung sind eine aktuelle und eine neuere, vollständig
+erfolgreiche Rückfallversion. Neuere, noch laufende oder uneindeutige Fälle
+und eine fehlende Rückfallversion erzeugen weiterhin Warnungen. Die zusätzlich
+bewahrten Archive werden dadurch weder gelöscht noch als Rückfall anerkannt.
 Die temporären Actions-Artefakte laufen nach sieben Tagen ab; es werden keine
 neuen vollständigen Notebook-Sicherungen für jedes Deployment angelegt.
 

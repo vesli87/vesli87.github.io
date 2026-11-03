@@ -111,6 +111,44 @@ class RecoveryRetentionTests(unittest.TestCase):
         self.assertEqual([call.args for call in commands], [
             ('api', '--method', 'DELETE', 'repos/' + P.recovery.REPOSITORY + '/releases/4')])
 
+    def test_settled_superseded_recovery_is_logged_and_preserved_without_alert(self):
+        for conclusion in ('cancelled', 'failure'):
+            with self.subTest(conclusion=conclusion):
+                result, _, commands = self.run_prune(
+                    True, validation=[None, P.UnfinishedDeployment(
+                        'settled historical run', conclusion=conclusion)])
+                self.assertEqual(result['kept'], ['recovery-' + self.current,
+                                                 'recovery-' + 'b' * 40])
+                self.assertEqual(result['historical'], ['recovery-' + 'c' * 40])
+                self.assertEqual(result['deferred'], result['historical'])
+                self.assertEqual(result['removed'], [])
+                self.assertEqual(commands, [])
+                self.assertIn('Preserved historical recovery;', self.last_output)
+                self.assertNotIn('::warning::', self.last_output)
+
+    def test_settled_recovery_newer_than_verified_rollback_still_warns(self):
+        result, _, commands = self.run_prune(
+            True, validation=[P.UnfinishedDeployment('recent failure', conclusion='failure'), None])
+        self.assertEqual(result['historical'], [])
+        self.assertEqual(result['deferred'], ['recovery-' + 'b' * 40])
+        self.assertIn('::warning::', self.last_output)
+        self.assertEqual(commands, [])
+
+    def test_missing_rollback_or_unsettled_history_cannot_suppress_warning(self):
+        for conclusion in (None, 'timed_out', 'action_required'):
+            with self.subTest(conclusion=conclusion):
+                result, _, _ = self.run_prune(False, validation=[None,
+                    P.UnfinishedDeployment('not a settled failure', conclusion=conclusion)])
+                self.assertEqual(result['historical'], [])
+                self.assertIn('::warning::', self.last_output)
+        result, _, commands = self.run_prune(True, validation=[
+            P.UnfinishedDeployment('failed', conclusion='failure'),
+            P.UnfinishedDeployment('cancelled', conclusion='cancelled')])
+        self.assertEqual(result['kept'], ['recovery-' + self.current])
+        self.assertEqual(result['historical'], [])
+        self.assertEqual(self.last_output.count('::warning::'), 2)
+        self.assertEqual(commands, [])
+
     def test_invalid_rollback_or_candidate_blocks_every_deletion(self):
         for validation in ([ValueError('invalid rollback')], [None, ValueError('invalid candidate')]):
             with patch.object(P, 'current_main', return_value=True), \
@@ -148,6 +186,17 @@ class RecoveryRetentionTests(unittest.TestCase):
         with patch.object(P.recovery, 'verify_tag'), \
                 patch.object(P.recovery, 'api', side_effect=[valid, {'status': 'ahead'}]):
             P.validate_previous(item, self.current)
+        for status, conclusion, expected in (
+                ('completed', 'cancelled', 'cancelled'),
+                ('completed', 'failure', 'failure'),
+                ('in_progress', 'failure', None)):
+            with self.subTest(status=status, conclusion=conclusion), \
+                    patch.object(P.recovery, 'verify_tag'), \
+                    patch.object(P.recovery, 'api', return_value=dict(
+                        valid, status=status, conclusion=conclusion)), \
+                    self.assertRaises(P.UnfinishedDeployment) as caught:
+                P.validate_previous(item, self.current)
+            self.assertEqual(caught.exception.conclusion, expected)
 
     def test_missing_or_ambiguous_deployment_provenance_is_rejected(self):
         item = copy.deepcopy(self.items[-1]); item['body'] = 'No run'

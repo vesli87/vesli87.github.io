@@ -14,6 +14,10 @@ WORKFLOW = '.github/workflows/pages.yml'
 class UnfinishedDeployment(ValueError):
     """Known workflow provenance, but not eligible as rollback or for deletion."""
 
+    def __init__(self, message, *, conclusion=None):
+        super().__init__(message)
+        self.conclusion = conclusion
+
 
 def managed_release(item):
     """Positive identification; unfamiliar releases and drafts are never touched."""
@@ -64,7 +68,9 @@ def validate_previous(item, commit):
             or run.get('repository', {}).get('full_name') != recovery.REPOSITORY):
         raise ValueError('Recovery does not belong to a completed successful main deployment')
     if run.get('status') != 'completed' or run.get('conclusion') != 'success':
-        raise UnfinishedDeployment('Deployment is not completed successfully')
+        raise UnfinishedDeployment(
+            'Deployment is not completed successfully',
+            conclusion=run.get('conclusion') if run.get('status') == 'completed' else None)
     comparison = recovery.api('compare/' + previous + '...' + commit)
     if comparison.get('status') not in ('ahead', 'identical'):
         raise ValueError('Recovery is not an ancestor of the current deployment')
@@ -106,17 +112,28 @@ def prune(commit, delete=False):
     # A push can cancel a run after its recovery was uploaded. Preserve that
     # release, but never select it as the verified rollback or delete it. All
     # other provenance/integrity errors still stop every deletion.
-    eligible, deferred = keep[:1], []
+    eligible, deferred, settled = keep[:1], [], set()
     for item in keep[1:] + remove:
         try:
             validate_previous(item, commit)
-        except UnfinishedDeployment:
+        except UnfinishedDeployment as error:
             deferred.append(item)
+            if error.conclusion in ('cancelled', 'failure'):
+                settled.add(item['tag_name'])
         else:
             eligible.append(item)
     keep, remove = retention_plan(eligible, commit)
+    historical = []
     for item in deferred:
-        print('::warning::Preserved recovery from unfinished deployment: ' + item['tag_name'])
+        if (len(keep) > 1 and item['tag_name'] in settled
+                and item['published_at'] < keep[1]['published_at']):
+            # Two newer verified recoveries cover this settled historical run.
+            # Keep the audit trail and the archive without a recurring alert.
+            historical.append(item['tag_name'])
+            print('Preserved historical recovery; newer verified rollback available: '
+                  + item['tag_name'])
+        else:
+            print('::warning::Preserved recovery from unfinished deployment: ' + item['tag_name'])
     print('Retained recovery releases: ' + ', '.join(i['tag_name'] for i in keep))
     for item in remove:
         if delete:
@@ -131,6 +148,7 @@ def prune(commit, delete=False):
     # Git tags, commits, workflow logs and all non-matching releases are preserved.
     return {'kept': [i['tag_name'] for i in keep],
             'deferred': [i['tag_name'] for i in deferred],
+            'historical': historical,
             'removed' if delete else 'candidates': [i['tag_name'] for i in remove],
             'bytes': sum(a['size'] for i in remove for a in i['assets'])}
 

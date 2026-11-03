@@ -877,11 +877,14 @@ def category_comparison(lang, cid, sub):
 
 def subcategory_guide(lang, cid, sub):
     guide = C.SUBCATEGORY_GUIDES[cid][sub][lang]
+    checklist = (cid, sub) == ('schweissgeraete', 'WIG / TIG')
     criteria = ''.join(f'<dt>{e(title)}</dt><dd>{e(text)}</dd>'
                        for title, text in guide['criteria'])
-    return (f'<section class="buying-guide"><h2>{e(C.t(lang, "subcategory_guide_title"))}</h2>'
+    return (f'<section class="buying-guide"' + (' id="selection-checklist"' if checklist else '')
+            + f'><h2>{e(C.t(lang, "tig_checklist_title" if checklist else "subcategory_guide_title"))}</h2>'
             f'<dl>{criteria}</dl>' + category_comparison(lang, cid, sub)
             + editorial_links(lang, C.GUIDE_LINKS['subcategories'][cid][sub])
+            + (f'<button class="btn ghost" type="button" data-print-page hidden>{e(C.t(lang,"print_page"))}</button> ' if checklist else '')
             + f'<a class="btn ghost" href="{e(category_contact_url(lang, cid, sub))}">{e(C.t(lang, "consult"))}</a></section>')
 
 
@@ -1348,6 +1351,7 @@ def page_contact(lang):
       <a class="accent" href="mailto:{co['email']}">{co['email']}</a><br><br>
       {e(C.t(lang,'hours_lbl'))}:<br>{e(C.t(lang,'hours'))}
     </address>
+    <p class="small">{e(C.t(lang,'contact_languages'))}</p>
     <div class="korte">
       <div>
         <span class="kot">{e(C.t(lang,'addr_bill'))}</span>

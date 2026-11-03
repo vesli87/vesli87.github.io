@@ -1632,7 +1632,7 @@ Geraete zum Vergleich: MAHE Beta DX, MAHE Omega AX
 ## Häufige Fragen und Antworten
 
 ### Was kostet ein MAHE-Schweissgerät bei VES-TECH Swiss?
-Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (mit Luft oder mit Wasser), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung.
+Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung, Brennerlänge und Zubehör konfiguriert. Nach Prüfung Ihrer Angaben erhalten Sie ein schriftliches Angebot mit der vereinbarten Ausführung, dem Lieferumfang und den Konditionen.
 
 ### Welches Schweissverfahren brauche ich für Aluminium?
 Für Aluminium kommen MIG-Puls oder Doppelpuls mit geeigneter Draht-/Gaskennlinie sowie WIG AC/DC infrage. Die Wahl hängt von Dicke, Nahtzugang, Oberfläche und Fertigungstempo ab. Omega AX und HyperTIG AX sind AC/DC-Beispiele; HyperMIG X ist eine MIG/MAG-Baureihe. Die konkrete Ausstattung und ein Versuch am Bauteil entscheiden, welches Programm passt.
@@ -1653,7 +1653,7 @@ Ja. Die Werkstatt in Herisau AR, bei unserer Partnerfirma Schweisstechnik Scherr
 Die Normenreihe EN 1090 behandelt die Ausführung von Stahltragwerken und Aluminiumtragwerken. Für die Gerätedokumentation ist das konkrete Modell massgeblich: Die hier verfügbare MAHE-Erklärung vom 30.01.2016 nennt C-MIG, Delta digital, Kappa, Beta digital, Omega und HyperTIG. Wir klären passende Herstellerunterlagen und Kalibrierprotokolle für Ihre Anlage. Diese Unterlagen ersetzen keine Zertifizierung Ihres Fertigungsbetriebs.
 
 ### Wie schnell erhalte ich ein Angebot?
-In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus.
+Die Bearbeitung richtet sich nach dem Umfang Ihrer Anfrage und den Angaben, die für die Konfiguration erforderlich sind. Beschreiben Sie Werkstoff, Materialstärke und Einsatz. Wir prüfen die Ausführung, klären offene Fragen und erstellen die passende Offerte. Einen gewünschten Termin können Sie in Ihrer Anfrage angeben.
 
 ### Liefert VES-TECH Swiss in die ganze Schweiz?
 VES-TECH Swiss bearbeitet Anfragen aus der Schweiz und Liechtenstein. Lieferort, Termin und Abholung werden für jeden Auftrag vereinbart. Die Übergabe und Abholung der Geräte erfolgt in der Werkstatt an der St. Gallerstrasse 49 in 9100 Herisau (Appenzell Ausserrhoden); Sitz und Rechnungsadresse sind in Bronschhofen SG. Diese Website steht auf Deutsch, Französisch, Italienisch, Englisch und Spanisch zur Verfügung; die persönliche Beratung erfolgt auf Deutsch, Tschechisch und Englisch.

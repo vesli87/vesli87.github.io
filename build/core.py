@@ -57,6 +57,8 @@ COMPANY = {
     "country": "CH",
     "country_name": "Schweiz",
     "phone": "+41 76 710 91 39",
+    "phone_languages": ["German", "Czech", "Polish"],
+    "email_languages": ["German", "French", "Italian", "English", "Spanish", "Czech", "Polish"],
     "phone_href": "+41767109139",
     # Vom Inhaber bestaetigter Geschaeftskontakt; kein vorbefuellter Nachrichtentext.
     "whatsapp_href": "https://wa.me/41767109139",
@@ -1212,7 +1214,7 @@ def inquiry_services(lang):
 
 def inquiry_topics(lang):
     """Finite, translated needs; never a product recommendation from free input."""
-    if not isinstance(INQUIRY_TOPICS, dict) or not 1 <= len(INQUIRY_TOPICS) <= 8:
+    if not isinstance(INQUIRY_TOPICS, dict) or not 1 <= len(INQUIRY_TOPICS) <= 10:
         raise ValueError("Inquiry topics need a small public registry")
     result = {}
     routes = set()
@@ -1492,8 +1494,8 @@ def validate_editorial_guides():
             if any(not isinstance(value, str) or not value.strip() or '<' in value or '>' in value
                    for value in [copy['benefit'], copy['description'], *copy['highlights']]):
                 raise ValueError(f'Featured product copy must be complete plain text: {pid}/{lang}')
-    if len(HOME_APPLICATIONS) != 4:
-        raise ValueError('Homepage needs four distinct application routes')
+    if len(HOME_APPLICATIONS) != 6:
+        raise ValueError('Homepage needs six distinct application routes')
     for lang in LANGS:
         destinations = []
         for item in HOME_APPLICATIONS:

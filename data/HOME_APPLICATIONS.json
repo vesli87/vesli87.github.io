@@ -106,5 +106,59 @@
       "title": "Inoxidable y limpieza de soldaduras",
       "description": "Limpieza electrolítica después de soldar. Elija el limpiador, el cepillo y el electrolito según la superficie y el trabajo."
     }
+  },
+  {
+    "target": {
+      "kind": "subcategory",
+      "id": "schweissgeraete",
+      "sub": "Laserschweissen"
+    },
+    "de": {
+      "title": "Metallteile mit dem Laser fügen",
+      "description": "MAHE MLST für handgeführtes Laserschweissen. Werkstoff, Verbindung und Arbeitsplatz bestimmen die passende Ausführung."
+    },
+    "fr": {
+      "title": "Assembler des pièces au laser",
+      "description": "MAHE MLST pour le soudage laser manuel. Le matériau, l’assemblage et le poste de travail orientent le choix de la version."
+    },
+    "it": {
+      "title": "Unire componenti con il laser",
+      "description": "MAHE MLST per la saldatura laser manuale. Materiale, giunto e postazione di lavoro guidano la scelta della versione."
+    },
+    "en": {
+      "title": "Join metal components with a laser",
+      "description": "MAHE MLST for handheld laser welding. Material, joint and workplace requirements guide the choice of configuration."
+    },
+    "es": {
+      "title": "Unir piezas metálicas con láser",
+      "description": "MAHE MLST para soldadura láser manual. El material, la unión y el puesto de trabajo orientan la elección de la versión."
+    }
+  },
+  {
+    "target": {
+      "kind": "subcategory",
+      "id": "reinigung",
+      "sub": "Laserreinigung"
+    },
+    "de": {
+      "title": "Oberflächen mit dem Laser reinigen",
+      "description": "MAHE MLRM und MLRC vergleichen. Grundwerkstoff, Schicht und Fläche beschreiben und die Eignung für Ihre Aufgabe klären."
+    },
+    "fr": {
+      "title": "Nettoyer des surfaces au laser",
+      "description": "Comparez MAHE MLRM et MLRC. Précisez le matériau de base, la couche et la surface afin d’évaluer la solution adaptée."
+    },
+    "it": {
+      "title": "Pulire superfici con il laser",
+      "description": "Confrontate MAHE MLRM e MLRC. Indicate materiale di base, strato e superficie per valutare l’idoneità al vostro lavoro."
+    },
+    "en": {
+      "title": "Clean surfaces with a laser",
+      "description": "Compare MAHE MLRM and MLRC. Describe the base material, layer and area to assess suitability for your task."
+    },
+    "es": {
+      "title": "Limpiar superficies con láser",
+      "description": "Compare MAHE MLRM y MLRC. Indique el material base, la capa y la superficie para evaluar la idoneidad para su trabajo."
+    }
   }
 ]

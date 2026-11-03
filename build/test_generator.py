@@ -441,7 +441,7 @@ class GeneratorTests(unittest.TestCase):
                     self.assertNotEqual(guide['intro'], C.catD(lang, C.CAT_BY_ID[cid]))
                     self.assertNotIn(guide['intro'], intros[lang])
                     intros[lang].add(guide['intro'])
-                    self.assertIn(len(guide['criteria']), (2, 3))
+                    self.assertIn(len(guide['criteria']), (5,) if (cid, sub) == ('schweissgeraete', 'WIG / TIG') else (2, 3))
                     url, page = PG.page_cat(lang, C.CAT_BY_ID[cid], sub)
                     self.assertEqual(url, C.u_sub(lang, cid, sub))
                     main = page.split('<main id="main">', 1)[1].split('</main>', 1)[0]

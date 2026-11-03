@@ -274,5 +274,75 @@
         "hint": "Indique el modelo, el número de equipos y la documentación necesaria. Concretaremos con usted el procedimiento y la fecha."
       }
     }
+  },
+  "laser-welding": {
+    "target": {
+      "kind": "subcategory",
+      "id": "schweissgeraete",
+      "sub": "Laserschweissen"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "Laserschweissen",
+        "heading": "Handgeführtes Laserschweissen klären",
+        "hint": "Nennen Sie Werkstoff, Materialstärke und Verbindung. Wir klären die Geräteausführung und die Anforderungen am Arbeitsplatz."
+      },
+      "fr": {
+        "name": "Soudage laser",
+        "heading": "Préciser votre besoin en soudage laser manuel",
+        "hint": "Indiquez le matériau, son épaisseur et le type d’assemblage. Nous préciserons la configuration et les exigences du poste de travail."
+      },
+      "it": {
+        "name": "Saldatura laser",
+        "heading": "Definire la saldatura laser manuale",
+        "hint": "Indicate materiale, spessore e tipo di giunto. Chiariremo la configurazione e i requisiti della postazione di lavoro."
+      },
+      "en": {
+        "name": "Laser welding",
+        "heading": "Discuss handheld laser welding",
+        "hint": "Specify the material, thickness and joint. We will discuss the equipment configuration and workplace requirements."
+      },
+      "es": {
+        "name": "Soldadura láser",
+        "heading": "Definir la soldadura láser manual",
+        "hint": "Indique el material, el espesor y el tipo de unión. Concretaremos la configuración y los requisitos del puesto de trabajo."
+      }
+    }
+  },
+  "laser-cleaning": {
+    "target": {
+      "kind": "subcategory",
+      "id": "reinigung",
+      "sub": "Laserreinigung"
+    },
+    "group": "equipment",
+    "copy": {
+      "de": {
+        "name": "Laserreinigung",
+        "heading": "Laserreinigung für Ihre Oberfläche klären",
+        "hint": "Beschreiben Sie den Grundwerkstoff, die zu entfernende Schicht und die Fläche. Wir prüfen die Eignung anhand der verfügbaren Gerätedaten."
+      },
+      "fr": {
+        "name": "Nettoyage laser",
+        "heading": "Évaluer le nettoyage laser de votre surface",
+        "hint": "Décrivez le matériau de base, la couche à enlever et la surface. Nous évaluerons l’adéquation à partir des données disponibles."
+      },
+      "it": {
+        "name": "Pulizia laser",
+        "heading": "Valutare la pulizia laser della superficie",
+        "hint": "Descrivete il materiale di base, lo strato da rimuovere e la superficie. Valuteremo l’idoneità in base ai dati disponibili."
+      },
+      "en": {
+        "name": "Laser cleaning",
+        "heading": "Assess laser cleaning for your surface",
+        "hint": "Describe the base material, the layer to remove and the surface area. We will assess suitability against the available equipment data."
+      },
+      "es": {
+        "name": "Limpieza láser",
+        "heading": "Evaluar la limpieza láser de su superficie",
+        "hint": "Describa el material base, la capa que desea eliminar y la superficie. Evaluaremos la idoneidad según los datos disponibles."
+      }
+    }
   }
 }

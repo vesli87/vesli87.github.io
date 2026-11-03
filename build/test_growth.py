@@ -12,7 +12,7 @@ class GrowthTests(unittest.TestCase):
     def test_topics_are_complete_and_resolve_existing_catalogue_routes(self):
         for lang in C.LANGS:
             topics = C.inquiry_topics(lang)
-            self.assertEqual(set(topics), {'tig', 'mig', 'cnc', 'cleaning', 'plasma', 'accessories', 'repair', 'calibration'})
+            self.assertEqual(set(topics), {'tig', 'mig', 'cnc', 'cleaning', 'plasma', 'accessories', 'repair', 'calibration', 'laser-welding', 'laser-cleaning'})
             for key, row in topics.items():
                 source = C.INQUIRY_TOPICS[key]
                 self.assertEqual(row['u'], C.editorial_target(lang, source['target'])[1])
@@ -47,7 +47,7 @@ class GrowthTests(unittest.TestCase):
             _, html = PG.page_home(lang)
             self.assertLess(html.index('volt-applications'), html.index('volt-spotlights'))
             self.assertLess(html.index('volt-applications'), html.index('<section class="intro">'))
-            self.assertEqual(html.count('class="volt-application"'), 4)
+            self.assertEqual(html.count('class="volt-application"'), 6)
             self.assertIn(C.t(lang, 'cro_hero_support'), html)
 
     def test_contact_has_optional_topic_and_form_before_alternative_channel(self):
@@ -62,6 +62,33 @@ class GrowthTests(unittest.TestCase):
             self.assertEqual(boot['inquiryTopics'], C.inquiry_topics(lang))
             self.assertEqual(boot['analytics']['topics'], list(C.INQUIRY_TOPICS))
             self.assertEqual(boot['phoneHref'], C.COMPANY['phone_href'])
+
+    def test_owner_confirmed_contact_languages_are_distinct_from_email_support(self):
+        for lang in C.LANGS:
+            points = R.ld_org(lang)['contactPoint']
+            phone = next(row for row in points if 'telephone' in row)
+            email = next(row for row in points if 'email' in row)
+            self.assertEqual(phone['availableLanguage'], ['German', 'Czech', 'Polish'])
+            self.assertNotIn('English', phone['availableLanguage'])
+            self.assertIn('English', email['availableLanguage'])
+            self.assertNotIn('hoursAvailable', email)
+            self.assertIn(R.e(C.t(lang, 'contact_languages')), PG.page_contact(lang)[1])
+
+    def test_public_checklist_is_accessible_without_newsletter_subscription(self):
+        for lang in C.LANGS:
+            target = C.u_sub(lang, 'schweissgeraete', 'WIG / TIG') + '#selection-checklist'
+            html = PG.subcategory_guide(lang, 'schweissgeraete', 'WIG / TIG')
+            self.assertIn('id="selection-checklist"', html)
+            self.assertIn('data-print-page', html)
+            self.assertIn(target, R.newsletter_html(lang))
+            self.assertNotIn('sibforms.com', html)
+
+    def test_response_copy_does_not_promise_an_unconfirmed_deadline(self):
+        forbidden = ('Arbeitstag', 'jour ouvrable', 'giorno lavorativo', 'working day', 'día laborable')
+        for lang in C.LANGS:
+            copy = C.t(lang, 'form_success') + json.dumps(C.EX[lang]['faq'], ensure_ascii=False)
+            for phrase in forbidden:
+                self.assertNotIn(phrase, copy)
 
     def test_mobile_quote_links_use_the_existing_product_choice_mechanism(self):
         for lang in C.LANGS:

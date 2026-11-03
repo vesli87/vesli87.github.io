@@ -7,13 +7,13 @@ Statische Website aus JSON und Python, ohne Framework oder Bundler.
 
 | Bereich | Stand |
 |---|---|
-| Katalog | 81 Produkte, 5 Kategorien, 5 Sprachen |
-| Seiten | 610 Inhaltsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
-| Sitemap | 595 indexierbare URLs mit Sprachalternativen |
+| Katalog | 84 Produkte, 6 Kategorien, 5 Sprachen |
+| Seiten | 645 Inhaltsseiten und Hilfsseiten, 404-Seite, 15 Weiterleitungen und Verifizierungsdatei |
+| Sitemap | 625 indexierbare URLs mit Sprachalternativen und fünf Sprach-Sitemaps |
 | Suche | Lokaler Suchindex mit Produkten, Dienstleistungen, Synonymen und Tippfehlertoleranz |
 | SEO | Individuelle Metadaten, canonical, hreflang, JSON-LD, Sitemap, IndexNow |
 | Beratung | Auswahlhilfen je Hauptkategorie, produktbezogenes Kontaktformular, Anfrageliste |
-| Statistik | Ahrefs für Produktinteresse und bestätigte Anfragen; Cloudflare für Ladezeiten, beide nach Zustimmung |
+| Statistik | GA4 und Ahrefs für geprüfte Website-Ereignisse; Cloudflare für Ladezeiten, alle nach Zustimmung. Übermittlung ist kein Beleg für einen qualifizierten Lead oder eine Zustellung. |
 
 ## Entwickeln und prüfen
 
@@ -52,7 +52,7 @@ HyperMIG TWIN, HyperTIG AX/DX, Omega AX und Beta DX (je 230 V) sowie PlasmaTIG.
 Vor/Zurück, Pause, Tastaturfokus und reduzierte Bewegung werden unterstützt.
 
 - `data/`: gepflegte Produktdaten, Übersetzungen, `BUYING_GUIDE.json` für
-  Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 21 eigenständige Unterkategorien.
+  Hauptkategorien und `SUBCATEGORY_GUIDES.json` für 23 eigenständige Unterkategorien.
 - `data/PROC.json`, `PROCESS_GUIDE.json`: 19 erklaerte Schweissverfahren/Funktionen,
   Vergleich, Parameter und FAQ in DE/FR/IT/EN/ES mit Herstellerquellen.
 - `build/core.py`, `render.py`, `pages.py`, `build.py`: Generator.

@@ -1532,7 +1532,7 @@ for (const dismissal of ['Escape', 'Tab', 'blur']) {
 
 for (const lang of ['de', 'fr', 'it', 'en', 'es']) {
   test(lang + ': task-led enquiries retain the known topic and send only relevant business details', async () => {
-    for (const topic of ['tig', 'mig', 'cnc', 'cleaning', 'plasma', 'accessories']) {
+    for (const topic of ['tig', 'mig', 'cnc', 'cleaning', 'plasma', 'accessories', 'laser-welding', 'laser-cleaning']) {
       let payload;
       const { f, locale, storage } = localizedInquiry(lang, 'kontaktForm', '?topic=' + topic,
         async (_, init) => { payload = JSON.parse(init.body); return { ok: true, json: async () => ({ success: true }) }; });

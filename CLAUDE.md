@@ -13,7 +13,7 @@ mitgepflegt.
 
 ## Das Wichtigste in Kürze
 
-Die 615 Inhalts- und Bestätigungsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
+Die 645 Inhaltsseiten und Hilfsseiten, die 404-Seite und die Weiterleitungen im Repository sind **generiert**. Sie werden nie von Hand
 bearbeitet — der nächste Build überschreibt jede Änderung.
 
 ```

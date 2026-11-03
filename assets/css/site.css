@@ -1901,7 +1901,7 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   body:has(.product-quick-contact){padding-bottom:calc(112px + env(safe-area-inset-bottom))}
   body.lupe-offen .product-quick-contact,body:has(.cart.open,.mega.open,.analytics-consent:not([hidden])) .product-quick-contact{display:none}
 }
-@media print{.selection-contact,.product-quick-contact{display:none!important}}
+@media print{.selection-contact,.product-quick-contact,[data-print-page]{display:none!important}}
 
 .form select{width:100%;min-height:48px;background:#fff;border:1px solid var(--field-line);border-radius:2px;padding:11px 13px;color:var(--ink);font:inherit;font-size:16px}
 .form select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}

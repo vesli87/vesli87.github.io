@@ -49,7 +49,7 @@ class ContentScopeTests(unittest.TestCase):
             page = PG.page_home(lang)[1]
             targets = Links(page).targets
             self.assertEqual(targets, [C.editorial_target(lang, row['target'])[1] for row in C.HOME_APPLICATIONS])
-            self.assertEqual(len(set(targets)), 4)
+            self.assertEqual(len(set(targets)), 6)
             self.assertIn(R.e(C.t(lang, 'applications_title')), page)
 
     def test_incomplete_or_invalid_application_data_is_rejected(self):

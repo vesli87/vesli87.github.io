@@ -481,13 +481,18 @@ def ld_org(lang=C.DEFAULT_LANG):
             "@type": "ContactPoint",
             "contactType": "sales",
             "telephone": co["phone"],
-            "email": co["email"],
-            "availableLanguage": ["German", "Czech", "English"],
+            "availableLanguage": co["phone_languages"],
             "areaServed": ["CH", "LI"],
             "hoursAvailable": [
                 {"@type": "OpeningHoursSpecification", "dayOfWeek": h["days"],
                  "opens": h["opens"], "closes": h["closes"]} for h in co["hours_schema"]
             ],
+        }, {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": co["email"],
+            "availableLanguage": co["email_languages"],
+            "areaServed": ["CH", "LI"],
         }],
     }
 
@@ -1176,6 +1181,7 @@ def newsletter_html(lang):
     unsubscribe = C.newsletter_unsubscribe_forms()
     return (f'<section class="newsletter"><h2 class="fh">{e(C.t(lang, "newsletter_title"))}</h2>'
             f'<p>{e(C.t(lang, "newsletter_intro"))}</p>'
+            f'<p><a href="{e(C.u_sub(lang, "schweissgeraete", "WIG / TIG"))}#selection-checklist">{e(C.t(lang,"newsletter_resource"))}</a></p>'
             f'<a class="btn ghost" data-newsletter href="{e(forms[lang])}" '
             f'rel="noopener noreferrer" referrerpolicy="no-referrer">{e(C.t(lang, "newsletter_cta"))}</a>'
             f'<p class="small">{e(C.t(lang, "newsletter_note"))} '

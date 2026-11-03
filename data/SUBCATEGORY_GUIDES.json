@@ -82,6 +82,14 @@
           [
             "Rohrleitungsbau und Montage",
             "Für das WIG-Schweissen von Stahlrohren und Edelstahlrohren zählen Rohrdurchmesser, Wanddicke, Schweissposition und Zugänglichkeit. Beta DX ist eine mobile DC-Ausführung mit 230 V; bei Aluminium ist eine passende AC/DC-Ausführung wie Omega AX zu prüfen."
+          ],
+          [
+            "Arbeitsdauer und Nahtanforderungen",
+            "Beschreiben Sie die benötigte Arbeitsdauer und die Anforderungen an die Naht. Geben Sie an, ob Pulsfunktionen oder das Speichern wiederkehrender Einstellungen benötigt werden."
+          ],
+          [
+            "Vorhandenes Zubehör und Lieferumfang",
+            "Nennen Sie vorhandene Brenner, Schlauchpaketlängen und Fernbedienungen. Wir klären Kompatibilität, Kühlung und zusätzlich benötigtes Zubehör für die konkrete Ausführung."
           ]
         ]
       },
@@ -99,6 +107,14 @@
           [
             "Tuyauterie et montage",
             "Pour le soudage TIG de tuyaux en acier et en inox, précisez le diamètre, l’épaisseur de paroi, la position et l’accessibilité. Beta DX est une version DC mobile en 230 V ; pour l’aluminium, examinez une version AC/DC adaptée, comme Omega AX."
+          ],
+          [
+            "Durée de travail et exigences de soudure",
+            "Précisez la durée de travail nécessaire et les exigences du cordon. Indiquez si des fonctions pulsées ou la mémorisation de réglages récurrents sont nécessaires."
+          ],
+          [
+            "Accessoires existants et éléments inclus",
+            "Indiquez les torches, les longueurs de faisceau et les commandes à distance disponibles. Nous préciserons la compatibilité, le refroidissement et les accessoires supplémentaires pour la version choisie."
           ]
         ]
       },
@@ -116,6 +132,14 @@
           [
             "Tubazioni e montaggio",
             "Per la saldatura TIG di tubazioni in acciaio e inox contano diametro, spessore della parete, posizione e accessibilità. Beta DX è una versione DC mobile a 230 V; per l’alluminio occorre valutare una versione AC/DC adatta, come Omega AX."
+          ],
+          [
+            "Durata del lavoro e requisiti della saldatura",
+            "Descrivete la durata di lavoro necessaria e i requisiti del cordone. Indicate se servono funzioni pulsate o la memorizzazione di impostazioni ricorrenti."
+          ],
+          [
+            "Accessori esistenti e dotazione",
+            "Indicate torce, lunghezze dei fasci cavi e comandi a distanza già disponibili. Chiariremo compatibilità, raffreddamento e accessori aggiuntivi per la versione scelta."
           ]
         ]
       },
@@ -133,6 +157,14 @@
           [
             "Pipework and site installation",
             "For TIG welding steel and stainless steel pipework, specify pipe diameter, wall thickness, welding position and access. Beta DX is a mobile 230 V DC version; for aluminium, assess a suitable AC/DC version such as Omega AX."
+          ],
+          [
+            "Working time and weld requirements",
+            "Describe the required working time and weld requirements. State whether pulse functions or stored settings for repeat tasks are needed."
+          ],
+          [
+            "Existing accessories and scope of supply",
+            "List your existing torches, hose assembly lengths and remote controls. We will clarify compatibility, cooling and any additional accessories for the specific configuration."
           ]
         ]
       },
@@ -150,6 +182,14 @@
           [
             "Tuberías y montaje",
             "Para soldar tuberías de acero y acero inoxidable con TIG, indique diámetro, espesor de pared, posición y accesibilidad. Beta DX es una versión DC móvil de 230 V; para aluminio, valore una versión AC/DC adecuada, como Omega AX."
+          ],
+          [
+            "Tiempo de trabajo y requisitos de la soldadura",
+            "Describa el tiempo de trabajo necesario y los requisitos del cordón. Indique si necesita funciones pulsadas o ajustes guardados para tareas repetitivas."
+          ],
+          [
+            "Accesorios existentes y elementos incluidos",
+            "Indique las antorchas, las longitudes de los conjuntos de cables y los mandos a distancia disponibles. Concretaremos la compatibilidad, la refrigeración y los accesorios adicionales para la versión elegida."
           ]
         ]
       }

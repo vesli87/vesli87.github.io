@@ -1612,3 +1612,25 @@ HTTP 200 oder eine IndexNow-Antwort sind keine Zusage vollständiger Indexierung
 Suche, Bestätigungsseiten, Datenschutz und AGB bleiben absichtlich noindex;
 Weiterleitungen und Fehlerseiten werden nicht als zusätzliche Inhaltsseiten
 in die Sitemap aufgenommen. Keine erfundenen Preise, Ratings oder Ortsseiten.
+
+### Kundenwege, Kontaktsprachen und Checkliste, 03.11.2026
+
+- Nach Freigabe der Wachstumsanalyse werden die bestehenden Anwendungseinstiege
+  auf sechs ergänzt: Laserschweissen und Laserreinigung führen zu ihren bereits
+  vorhandenen Unterkategorien. Zehn begrenzte, vollständig übersetzte Themen
+  erlauben beide Laseraufgaben auf der Kontaktseite. Produktkontext und Variante
+  behalten Vorrang; Thema und Kundentext werden weiterhin nicht gemessen.
+- Die WIG/TIG-Auswahlhilfe wird als öffentlich zugängliche Checkliste mit fünf
+  Kriterien unter `#selection-checklist` präzisiert. Der Newsletterbereich
+  verlinkt sie ohne Anmeldeschranke. Das bestehende lokale Druckverfahren kann
+  die Seite als PDF speichern; keine neue Ressource oder Fremdübertragung.
+- Der Inhaber bestätigt am 03.11.: keine feste Antwort- oder Offertfrist zusagen.
+  Formularbestätigungen und beide betroffenen FAQ-Antworten werden in allen
+  fünf Sprachen entsprechend geändert. Gewünschte Termine bleiben anfragbar.
+- Telefonische Beratung: Deutsch, Tschechisch, Polnisch. Andere Sprachen per
+  E-Mail. Der Kontaktbereich erklärt dies übersetzt; JSON-LD trennt Telefon
+  mit Telefonzeiten von E-Mail ohne zugesagte Uhrzeiten. Die Sprachlisten
+  werden zentral in `COMPANY` gepflegt. Englische Website bedeutet keine
+  englische Telefonberatung. Sieben Folien und 3000 ms bleiben unverändert.
+- Private Vertriebsunterlagen und Vorlagen liegen weiterhin nur in `reports/`.
+  Keine Kundenliste, Werbung oder zusätzliche Analytik wird dadurch aktiviert.

@@ -86,7 +86,7 @@
     "err404_lead": "Diese Seite existiert nicht (mehr). Nutzen Sie die Suche oder gehen Sie zurück zur Übersicht.",
     "err404_cta": "Zur Startseite",
     "form_sending": "Wird gesendet …",
-    "form_success": "Ihre Anfrage wurde übermittelt. Wir melden uns in der Regel innerhalb eines Arbeitstages.",
+    "form_success": "Ihre Anfrage wurde übermittelt. Wir prüfen Ihre Angaben und melden uns bei Ihnen.",
     "form_error": "Ihre Anfrage konnte nicht gesendet werden. Bitte rufen Sie uns an oder schreiben Sie direkt an info@ves-tech.ch.",
     "form_required": "Bitte ausfüllen",
     "form_invalid_mail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
@@ -108,7 +108,7 @@
     "faq": [
       {
         "q": "Was kostet ein MAHE-Schweissgerät bei VES-TECH Swiss?",
-        "a": "Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Der Grund: Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung (mit Luft oder mit Wasser), Brennerlänge und Zubehör konfiguriert. Sie erhalten in der Regel innerhalb eines Arbeitstages ein schriftliches Angebot inklusive Schweizer Service und Garantieabwicklung."
+        "a": "Alle MAHE-Geräte werden bei VES-TECH Swiss zum Preis auf Anfrage angeboten. Jede Anlage wird nach Werkstoff, Blechdicke, Kühlung, Brennerlänge und Zubehör konfiguriert. Nach Prüfung Ihrer Angaben erhalten Sie ein schriftliches Angebot mit der vereinbarten Ausführung, dem Lieferumfang und den Konditionen."
       },
       {
         "q": "Welches Schweissverfahren brauche ich für Aluminium?",
@@ -136,7 +136,7 @@
       },
       {
         "q": "Wie schnell erhalte ich ein Angebot?",
-        "a": "In der Regel innerhalb eines Arbeitstages. Sie stellen sich über die Anfrageliste ein Paket aus mehreren Geräten zusammen und senden es gebündelt ab. Je konkreter Werkstoff, Blechdicke und Einsatzort beschrieben sind, desto präziser fällt das Angebot aus."
+        "a": "Die Bearbeitung richtet sich nach dem Umfang Ihrer Anfrage und den Angaben, die für die Konfiguration erforderlich sind. Beschreiben Sie Werkstoff, Materialstärke und Einsatz. Wir prüfen die Ausführung, klären offene Fragen und erstellen die passende Offerte. Einen gewünschten Termin können Sie in Ihrer Anfrage angeben."
       },
       {
         "q": "Liefert VES-TECH Swiss in die ganze Schweiz?",
@@ -655,7 +655,7 @@
     "search_advice": "Technische Beratung anfragen",
     "applications_title": "Welche Aufgabe möchten Sie lösen?",
     "applications_intro": "Finden Sie den passenden Einstieg für Montage, Werkstatt und Fertigung. Die Auswahl richtet sich nach Werkstoff, Materialstärke und Einsatzbedingungen.",
-    "cro_hero_support": "MAHE-Geräte auswählen, passend konfigurieren und direkt beim Techniker anfragen.",
+    "cro_hero_support": "MAHE-Geräte für Werkstatt und Montage. Auswahl, Konfiguration und Service direkt mit dem Techniker klären.",
     "cro_selection_cta": "Auswahl anfragen",
     "cro_form_title": "Ihre Anfrage",
     "cro_form_intro": "Sie kennen das Modell noch nicht? Wählen Sie ein Thema und beschreiben Sie Ihre Aufgabe.",
@@ -671,7 +671,7 @@
     "analytics_text_ga4": "Google Analytics 4 misst nach Ihrer Zustimmung Seitenaufrufe und ausgewählte Aktionen. Dabei werden Analyse-Cookies für höchstens 180 Tage verwendet. Werbefunktionen bleiben deaktiviert; Formularangaben werden nicht übertragen.",
     "privacy_analytics_ga4": "Google Analytics 4 (Google Ireland Limited) erfasst nach Einwilligung Seitenaufrufe, technische Browserdaten und vordefinierte Aktionen zur Anfrage. Es verwendet eigene Analyse-Cookies mit einer Laufzeit von höchstens 180 Tagen. Seitenadressen werden vorab geprüft und bereinigt. Namen, E-Mail-Adressen, Telefonnummern, Nachrichten und freie Suchbegriffe werden nicht übermittelt. Google Signals, personalisierte Werbung und automatische Formularmessung sind deaktiviert. Technische Anfragen können auch in den USA verarbeitet werden. Ihre Einwilligung ist freiwillig und kann in den Datenschutzeinstellungen widerrufen werden; dabei werden die von uns gesetzten Analyse-Cookies entfernt. Bereits erhobene Daten werden dadurch nicht rückwirkend gelöscht. Nutzer- und Ereignisdaten mit pseudonymen Kennungen werden für zwei Monate aufbewahrt; die Frist wird bei neuer Aktivität nicht verlängert. Aggregierte Standardberichte können länger verfügbar sein.",
     "newsletter_title": "Technik per E-Mail",
-    "newsletter_intro": "Geräteneuheiten und Praxistipps zum Schweissen, Schneiden und Reinigen.",
+    "newsletter_intro": "Praktische Auswahlhilfen zu Werkstoff, Stromversorgung und Zubehör sowie Neuigkeiten zu MAHE-Geräten.",
     "newsletter_cta": "Zum Newsletter anmelden",
     "newsletter_note": "Anmeldung mit Bestätigung per E-Mail. Abmeldung jederzeit möglich.",
     "privacy_newsletter": "Für den freiwilligen Newsletter nutzen wir Brevo (Sendinblue SAS, Frankreich). Das verlinkte Anmeldeformular wird erst beim Öffnen bei Brevo geladen. Ihre E-Mail-Adresse, gewählte Sprache sowie der Nachweis Ihrer Anmeldung und Bestätigung werden dort zur Verwaltung des Abonnements verarbeitet. Erst nach Bestätigung des Links in der E-Mail werden Sie als Abonnent aufgenommen. Jede Ausgabe enthält einen Abmeldelink. Eine Geräteanfrage meldet Sie nicht automatisch zum Newsletter an. E-Mail-Adressen und Bestätigungslinks werden nicht an die Websiteanalytik gesendet. Das Brevo-Formular nutzt Cloudflare Turnstile gegen automatisierte Anmeldungen. Cloudflare verarbeitet dafür technische Signale wie IP-Adresse und Browserinformationen zur Erkennung von Bots und zur Verbesserung dieses Schutzes. Öffnungen und Klicks der Bestätigungs-E-Mails werden anonymisiert ausgewertet; Zustell- und Anmeldenachweise werden zur Verwaltung des Abonnements verarbeitet.",
@@ -716,7 +716,10 @@
     "company_uid_label": "UID",
     "print_page": "Seite drucken / PDF",
     "print_contact_label": "Kontakt für Beratung und Offerte",
-    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss berät zur Auswahl und erstellt ein auf Ihre Anwendung abgestimmtes Angebot. Ausführung, Lieferumfang und Übergabe in der Schweiz oder Liechtenstein werden im Angebot vereinbart."
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss berät zur Auswahl und erstellt ein auf Ihre Anwendung abgestimmtes Angebot. Ausführung, Lieferumfang und Übergabe in der Schweiz oder Liechtenstein werden im Angebot vereinbart.",
+    "newsletter_resource": "WIG-Checkliste direkt lesen",
+    "tig_checklist_title": "Checkliste für Ihre WIG/TIG-Auswahl",
+    "contact_languages": "Telefonische Beratung auf Deutsch, Tschechisch und Polnisch. Für andere Sprachen kontaktieren Sie uns bitte per E-Mail."
   },
   "fr": {
     "locale": "fr_CH",
@@ -804,7 +807,7 @@
     "err404_lead": "Cette page n'existe pas (ou plus). Utilisez la recherche ou revenez à l'aperçu.",
     "err404_cta": "Vers l'accueil",
     "form_sending": "Envoi en cours …",
-    "form_success": "Votre demande a été transmise. Nous répondons généralement dans un délai d’un jour ouvrable.",
+    "form_success": "Votre demande a été transmise. Nous examinerons vos informations et vous recontacterons.",
     "form_error": "L'envoi a échoué. Merci de nous appeler ou d'écrire directement à info@ves-tech.ch.",
     "form_required": "Champ obligatoire",
     "form_invalid_mail": "Veuillez saisir une adresse e-mail valide",
@@ -826,7 +829,7 @@
     "faq": [
       {
         "q": "Combien coûte un poste de soudage MAHE chez VES-TECH Swiss ?",
-        "a": "Chez VES-TECH Swiss, les prix de tous les appareils MAHE sont communiqués sur demande. Chaque installation est configurée selon le matériau, l’épaisseur de tôle, le refroidissement (air ou eau), la longueur de torche et les accessoires. Vous recevez généralement une offre écrite dans un délai d’un jour ouvrable, avec service en Suisse et gestion de la garantie."
+        "a": "Chez VES-TECH Swiss, les prix des appareils MAHE sont communiqués sur demande. Chaque installation est configurée selon le matériau, l’épaisseur, le refroidissement, la longueur de torche et les accessoires. Après examen de vos informations, vous recevez une offre écrite précisant la configuration, les éléments inclus et les conditions."
       },
       {
         "q": "Quel procédé de soudage choisir pour l’aluminium ?",
@@ -854,7 +857,7 @@
       },
       {
         "q": "En combien de temps reçoit-on une offre ?",
-        "a": "Généralement dans un délai d’un jour ouvrable. Ajoutez les appareils qui vous intéressent à la liste de demandes, puis envoyez une demande groupée. Plus vous décrivez précisément le matériau, l’épaisseur de tôle et le lieu d’utilisation, plus l’offre sera précise."
+        "a": "Le délai dépend de votre demande et des informations nécessaires à la configuration. Précisez le matériau, l’épaisseur et l’utilisation. Nous examinerons la version, clarifierons les points en suspens et établirons une offre adaptée. Vous pouvez indiquer la date souhaitée dans votre demande."
       },
       {
         "q": "VES-TECH Swiss livre-t-elle dans toute la Suisse ?",
@@ -1373,7 +1376,7 @@
     "search_advice": "Demander un conseil technique",
     "applications_title": "Quel travail souhaitez-vous réaliser ?",
     "applications_intro": "Choisissez votre point de départ pour le montage, l’atelier ou la fabrication. Le choix dépend du matériau, de son épaisseur et des conditions d’utilisation.",
-    "cro_hero_support": "Choisissez votre équipement MAHE, sa configuration et contactez directement le technicien.",
+    "cro_hero_support": "Des équipements MAHE pour l’atelier et le montage. Précisez le choix, la configuration et le service directement avec le technicien.",
     "cro_selection_cta": "Demander conseil",
     "cro_form_title": "Votre demande",
     "cro_form_intro": "Vous ne connaissez pas encore le modèle ? Choisissez un sujet et décrivez votre travail.",
@@ -1389,7 +1392,7 @@
     "analytics_text_ga4": "Avec votre consentement, Google Analytics 4 mesure les pages vues et certaines actions. Des cookies de mesure sont utilisés pendant 180 jours au maximum. Les fonctions publicitaires restent désactivées et les données des formulaires ne sont pas transmises.",
     "privacy_analytics_ga4": "Google Analytics 4 (Google Ireland Limited) mesure, avec votre consentement, les pages vues, des données techniques du navigateur et des actions prédéfinies liées aux demandes. Ses cookies de mesure sont conservés pendant 180 jours au maximum. Les adresses des pages sont vérifiées et nettoyées au préalable. Les noms, adresses e-mail, numéros de téléphone, messages et recherches libres ne sont pas transmis. Google Signals, la publicité personnalisée et la mesure automatique des formulaires sont désactivés. Des requêtes techniques peuvent aussi être traitées aux États-Unis. Le consentement est facultatif et révocable dans les paramètres de confidentialité ; les cookies de mesure que nous avons définis sont alors supprimés. Cela ne supprime pas rétroactivement les données déjà recueillies. Les données utilisateur et d’événement associées à des identifiants pseudonymes sont conservées pendant deux mois, sans prolongation en cas de nouvelle activité. Les rapports standards agrégés peuvent rester disponibles plus longtemps.",
     "newsletter_title": "La technique par e-mail",
-    "newsletter_intro": "Nouveautés et conseils pratiques pour le soudage, la découpe et le nettoyage.",
+    "newsletter_intro": "Conseils pratiques pour choisir le matériau, l’alimentation et les accessoires, ainsi que les nouveautés MAHE.",
     "newsletter_cta": "S’inscrire à la newsletter",
     "newsletter_note": "Inscription avec confirmation par e-mail. Désinscription possible à tout moment.",
     "privacy_newsletter": "Nous utilisons Brevo (Sendinblue SAS, France) pour notre newsletter facultative. Le formulaire lié ne se charge chez Brevo que lorsque vous l’ouvrez. Votre adresse e-mail, la langue choisie et les preuves de votre inscription et de sa confirmation y sont traitées pour gérer l’abonnement. Votre abonnement ne prend effet qu’après confirmation du lien reçu par e-mail. Chaque envoi contient un lien de désinscription. Une demande de matériel ne vous abonne pas automatiquement. Les adresses e-mail et les liens de confirmation ne sont pas transmis aux outils de mesure du site. Le formulaire Brevo utilise Cloudflare Turnstile contre les inscriptions automatisées. Cloudflare traite des signaux techniques, notamment l’adresse IP et les informations du navigateur, pour détecter les robots et améliorer cette protection. Les ouvertures et clics des e-mails de confirmation sont analysés de manière anonymisée ; les preuves de livraison et d’inscription servent à gérer l’abonnement.",
@@ -1434,7 +1437,10 @@
     "company_uid_label": "IDE",
     "print_page": "Imprimer la page / PDF",
     "print_contact_label": "Contact pour conseil et offre",
-    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss vous conseille et prépare une offre adaptée à votre application. La version, les éléments fournis et la remise en Suisse ou au Liechtenstein sont définis dans l’offre."
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss vous conseille et prépare une offre adaptée à votre application. La version, les éléments fournis et la remise en Suisse ou au Liechtenstein sont définis dans l’offre.",
+    "newsletter_resource": "Consulter la liste de contrôle TIG",
+    "tig_checklist_title": "Liste de contrôle pour choisir votre poste TIG",
+    "contact_languages": "Conseil téléphonique en allemand, en tchèque et en polonais. Pour les autres langues, veuillez nous contacter par e-mail."
   },
   "it": {
     "locale": "it_CH",
@@ -1522,7 +1528,7 @@
     "err404_lead": "Questa pagina non esiste (più). Usate la ricerca o tornate alla panoramica.",
     "err404_cta": "Alla pagina iniziale",
     "form_sending": "Invio in corso …",
-    "form_success": "La vostra richiesta è stata trasmessa. Di norma rispondiamo entro un giorno lavorativo.",
+    "form_success": "La vostra richiesta è stata trasmessa. Esamineremo le informazioni e vi ricontatteremo.",
     "form_error": "L'invio non è riuscito. Vi preghiamo di chiamarci o di scrivere direttamente a info@ves-tech.ch.",
     "form_required": "Campo obbligatorio",
     "form_invalid_mail": "Inserisci un indirizzo e-mail valido",
@@ -1544,7 +1550,7 @@
     "faq": [
       {
         "q": "Quanto costa una saldatrice MAHE da VES-TECH Swiss?",
-        "a": "VES-TECH Swiss propone tutti gli apparecchi MAHE con prezzo su richiesta. Ogni impianto viene configurato in base al materiale, allo spessore della lamiera, al raffreddamento (aria o acqua), alla lunghezza della torcia e agli accessori. Di norma ricevete un’offerta scritta entro un giorno lavorativo, con assistenza svizzera e gestione della garanzia incluse."
+        "a": "VES-TECH Swiss propone gli apparecchi MAHE con prezzo su richiesta. Ogni impianto viene configurato in base a materiale, spessore, raffreddamento, lunghezza della torcia e accessori. Dopo la verifica delle informazioni, riceverete un’offerta scritta con la configurazione concordata, gli elementi inclusi e le condizioni."
       },
       {
         "q": "Quale processo di saldatura serve per l'alluminio?",
@@ -1572,7 +1578,7 @@
       },
       {
         "q": "In quanto tempo si riceve un'offerta?",
-        "a": "Di norma entro un giorno lavorativo. Aggiungete più apparecchi alla lista delle richieste e inviateli in un’unica richiesta. Più dettagli fornite su materiale, spessore della lamiera e luogo d’impiego, più precisa sarà l’offerta."
+        "a": "I tempi dipendono dalla richiesta e dalle informazioni necessarie per la configurazione. Specificate materiale, spessore e impiego. Verificheremo la versione, chiariremo i punti aperti e prepareremo un’offerta adatta. Potete indicare la data desiderata nella richiesta."
       },
       {
         "q": "VES-TECH Swiss consegna in tutta la Svizzera?",
@@ -2091,7 +2097,7 @@
     "search_advice": "Richiedi consulenza tecnica",
     "applications_title": "Quale lavoro volete eseguire?",
     "applications_intro": "Scegliete da dove iniziare per montaggio, officina e produzione. La scelta dipende dal materiale, dallo spessore e dalle condizioni di utilizzo.",
-    "cro_hero_support": "Scegliete l’apparecchio MAHE, definite la configurazione e contattate direttamente il tecnico.",
+    "cro_hero_support": "Apparecchi MAHE per officina e montaggio. Chiarite scelta, configurazione e assistenza direttamente con il tecnico.",
     "cro_selection_cta": "Richiedere consulenza",
     "cro_form_title": "La vostra richiesta",
     "cro_form_intro": "Non conoscete ancora il modello? Scegliete un argomento e descrivete il lavoro.",
@@ -2107,7 +2113,7 @@
     "analytics_text_ga4": "Con il suo consenso, Google Analytics 4 misura le visualizzazioni delle pagine e alcune azioni. Utilizza cookie di analisi per un massimo di 180 giorni. Le funzioni pubblicitarie restano disattivate e i dati dei moduli non vengono trasmessi.",
     "privacy_analytics_ga4": "Google Analytics 4 (Google Ireland Limited) rileva, con il suo consenso, visualizzazioni delle pagine, dati tecnici del browser e azioni predefinite relative alle richieste. Utilizza cookie di analisi per un massimo di 180 giorni. Gli indirizzi delle pagine vengono verificati e ripuliti preventivamente. Nomi, indirizzi e-mail, numeri di telefono, messaggi e ricerche libere non vengono trasmessi. Google Signals, pubblicità personalizzata e misurazione automatica dei moduli sono disattivati. Le richieste tecniche possono essere elaborate anche negli Stati Uniti. Il consenso è facoltativo e revocabile nelle impostazioni della privacy; in tal caso vengono rimossi i cookie di analisi da noi impostati. Ciò non elimina retroattivamente i dati già raccolti. I dati degli utenti e degli eventi associati a identificativi pseudonimi vengono conservati per due mesi, senza proroga in caso di nuova attività. I report standard aggregati possono rimanere disponibili più a lungo.",
     "newsletter_title": "La tecnica via e-mail",
-    "newsletter_intro": "Novità e consigli pratici per saldatura, taglio e pulizia.",
+    "newsletter_intro": "Consigli pratici su materiale, alimentazione e accessori, insieme alle novità MAHE.",
     "newsletter_cta": "Iscriversi alla newsletter",
     "newsletter_note": "Iscrizione con conferma via e-mail. È possibile disiscriversi in qualsiasi momento.",
     "privacy_newsletter": "Per la newsletter facoltativa utilizziamo Brevo (Sendinblue SAS, Francia). Il modulo collegato viene caricato presso Brevo solo quando viene aperto. L’indirizzo e-mail, la lingua scelta e le prove di iscrizione e conferma vengono trattati per gestire l’abbonamento. L’iscrizione è effettiva solo dopo la conferma del link ricevuto via e-mail. Ogni invio contiene un link per disiscriversi. Una richiesta di apparecchiature non comporta l’iscrizione automatica. Gli indirizzi e-mail e i link di conferma non vengono trasmessi agli strumenti di analisi del sito. Il modulo Brevo utilizza Cloudflare Turnstile contro le iscrizioni automatizzate. Cloudflare tratta segnali tecnici, come l’indirizzo IP e le informazioni del browser, per rilevare i bot e migliorare questa protezione. Aperture e clic delle e-mail di conferma sono analizzati in forma anonimizzata; le prove di consegna e iscrizione servono a gestire l’abbonamento.",
@@ -2152,7 +2158,10 @@
     "company_uid_label": "IDI",
     "print_page": "Stampa pagina / PDF",
     "print_contact_label": "Contatto per consulenza e offerta",
-    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss offre consulenza e prepara un’offerta adatta all’applicazione. Versione, dotazione e consegna in Svizzera o nel Liechtenstein vengono concordate nell’offerta."
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss offre consulenza e prepara un’offerta adatta all’applicazione. Versione, dotazione e consegna in Svizzera o nel Liechtenstein vengono concordate nell’offerta.",
+    "newsletter_resource": "Leggere la lista di controllo TIG",
+    "tig_checklist_title": "Lista di controllo per scegliere il generatore TIG",
+    "contact_languages": "Consulenza telefonica in tedesco, ceco e polacco. Per le altre lingue, contattateci via e-mail."
   },
   "en": {
     "locale": "en_CH",
@@ -2240,7 +2249,7 @@
     "err404_lead": "This page no longer exists or could not be found. Use the search or return to the overview.",
     "err404_cta": "Go to homepage",
     "form_sending": "Sending …",
-    "form_success": "Your enquiry has been submitted. We usually reply within one working day.",
+    "form_success": "Your enquiry has been submitted. We will review your information and contact you.",
     "form_error": "Your enquiry could not be sent. Please call us or email info@ves-tech.ch directly.",
     "form_required": "Please complete this field",
     "form_invalid_mail": "Please enter a valid email address.",
@@ -2537,7 +2546,7 @@
     "faq": [
       {
         "q": "How much does MAHE welding equipment cost at VES-TECH Swiss?",
-        "a": "All MAHE equipment at VES-TECH Swiss is offered at a price on request. Each system is configured according to material, thickness, air or water cooling, torch length and accessories. You will usually receive a written quotation within one working day, including service in Switzerland and warranty handling."
+        "a": "MAHE equipment at VES-TECH Swiss is offered at a price on request. Each system is configured according to material, thickness, cooling, torch length and accessories. After reviewing your information, we provide a written quotation setting out the agreed configuration, the items included and the terms."
       },
       {
         "q": "Which welding process do I need for aluminium?",
@@ -2565,7 +2574,7 @@
       },
       {
         "q": "How quickly will I receive a quotation?",
-        "a": "Usually within one working day. You can assemble a package of several machines in the enquiry list and send a combined request. The more precisely you describe the material, thickness and operating location, the more specific the quotation can be."
+        "a": "Timing depends on the scope of your enquiry and the information needed to configure the equipment. Describe the material, thickness and intended use. We will review the configuration, clarify any outstanding questions and prepare a suitable quotation. You can include your preferred date in the enquiry."
       },
       {
         "q": "Does VES-TECH Swiss deliver throughout Switzerland?",
@@ -2809,7 +2818,7 @@
     "search_advice": "Ask for technical advice",
     "applications_title": "What task are you planning?",
     "applications_intro": "Find the right starting point for installation work, the workshop or production. Selection depends on the material, thickness and operating conditions.",
-    "cro_hero_support": "Choose your MAHE equipment, discuss the configuration and contact the technician directly.",
+    "cro_hero_support": "MAHE equipment for workshop and site work. Discuss selection, configuration and service directly with the technician.",
     "cro_selection_cta": "Ask for selection advice",
     "cro_form_title": "Your enquiry",
     "cro_form_intro": "Not sure which model you need? Choose a topic and describe the task.",
@@ -2825,7 +2834,7 @@
     "analytics_text_ga4": "With your consent, Google Analytics 4 measures page views and selected actions. It uses analytics cookies for no more than 180 days. Advertising features remain disabled and form details are not sent.",
     "privacy_analytics_ga4": "With your consent, Google Analytics 4 (Google Ireland Limited) records page views, technical browser data and predefined enquiry actions. Its analytics cookies last no more than 180 days. Page addresses are checked and cleaned beforehand. Names, email addresses, telephone numbers, messages and free-text searches are not sent. Google Signals, personalised advertising and automatic form measurement are disabled. Technical requests may also be processed in the United States. Consent is optional and can be withdrawn in Privacy settings; the analytics cookies we set are then removed. This does not retrospectively delete data already collected. User and event data associated with pseudonymous identifiers are retained for two months, without extending the period for new activity. Aggregated standard reports may remain available longer.",
     "newsletter_title": "Technical updates by email",
-    "newsletter_intro": "Product news and practical tips for welding, cutting and cleaning.",
+    "newsletter_intro": "Practical guidance on materials, power supply and accessories, plus MAHE equipment news.",
     "newsletter_cta": "Sign up for the newsletter",
     "newsletter_note": "Subscription confirmed by email. Unsubscribe at any time.",
     "privacy_newsletter": "We use Brevo (Sendinblue SAS, France) for our optional newsletter. The linked sign-up form loads at Brevo only when you open it. Your email address, selected language and evidence of sign-up and confirmation are processed there to manage your subscription. You become a subscriber only after confirming the link received by email. Every newsletter includes an unsubscribe link. An equipment enquiry does not automatically subscribe you. Email addresses and confirmation links are not sent to website analytics. The Brevo form uses Cloudflare Turnstile to prevent automated signups. Cloudflare processes technical signals, such as IP addresses and browser information, to detect bots and improve this protection. Opens and clicks in confirmation emails are analysed anonymously; delivery and subscription records are processed to manage the subscription.",
@@ -2870,7 +2879,10 @@
     "company_uid_label": "UID",
     "print_page": "Print page / PDF",
     "print_contact_label": "Contact for advice and quotation",
-    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss advises on selection and prepares a quotation for your application. Equipment version, scope of supply and handover in Switzerland or Liechtenstein are agreed in the quotation."
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss advises on selection and prepares a quotation for your application. Equipment version, scope of supply and handover in Switzerland or Liechtenstein are agreed in the quotation.",
+    "newsletter_resource": "Read the TIG selection checklist",
+    "tig_checklist_title": "Your TIG equipment selection checklist",
+    "contact_languages": "Telephone consultations are available in German, Czech and Polish. For other languages, please contact us by email."
   },
   "es": {
     "locale": "es_CH",
@@ -2958,7 +2970,7 @@
     "err404_lead": "Esta página ya no existe o no se ha podido encontrar. Utilice la búsqueda o vuelva al resumen.",
     "err404_cta": "Ir a la página de inicio",
     "form_sending": "Enviando …",
-    "form_success": "Su consulta se ha enviado. Normalmente respondemos en el plazo de un día laborable.",
+    "form_success": "Su consulta se ha enviado. Revisaremos la información y nos pondremos en contacto con usted.",
     "form_error": "No se ha podido enviar su consulta. Llámenos o escriba directamente a info@ves-tech.ch.",
     "form_required": "Complete este campo",
     "form_invalid_mail": "Introduzca una dirección de correo electrónico válida.",
@@ -3255,7 +3267,7 @@
     "faq": [
       {
         "q": "¿Cuánto cuesta un equipo de soldadura MAHE en VES-TECH Swiss?",
-        "a": "Todos los equipos MAHE en VES-TECH Swiss se ofrecen con precio bajo consulta. Cada instalación se configura según el material, el espesor, la refrigeración por aire o agua, la longitud de antorcha y los accesorios. Normalmente recibirá una oferta escrita en el plazo de un día laborable, con servicio en Suiza y gestión de la garantía."
+        "a": "Los equipos MAHE en VES-TECH Swiss se ofrecen con precio bajo consulta. Cada instalación se configura según el material, el espesor, la refrigeración, la longitud de antorcha y los accesorios. Tras revisar la información, recibirá una oferta escrita con la configuración acordada, los elementos incluidos y las condiciones."
       },
       {
         "q": "¿Qué proceso de soldadura necesito para aluminio?",
@@ -3283,7 +3295,7 @@
       },
       {
         "q": "¿En cuánto tiempo recibiré una oferta?",
-        "a": "Normalmente en el plazo de un día laborable. Puede reunir varias máquinas en la lista de consulta y enviar una solicitud conjunta. Cuanto más precise el material, el espesor y el lugar de uso, más concreta podrá ser la oferta."
+        "a": "El plazo depende del alcance de la consulta y de la información necesaria para configurar el equipo. Indique el material, el espesor y el uso previsto. Revisaremos la versión, aclararemos las dudas y prepararemos una oferta adecuada. Puede indicar la fecha deseada en su consulta."
       },
       {
         "q": "¿VES-TECH Swiss entrega en toda Suiza?",
@@ -3527,7 +3539,7 @@
     "search_advice": "Solicitar asesoramiento técnico",
     "applications_title": "¿Qué trabajo quiere realizar?",
     "applications_intro": "Encuentre el punto de partida para montaje, taller o fabricación. La selección depende del material, del espesor y de las condiciones de uso.",
-    "cro_hero_support": "Elija su equipo MAHE, defina la configuración y consulte directamente al técnico.",
+    "cro_hero_support": "Equipos MAHE para taller y montaje. Consulte la selección, la configuración y el servicio directamente con el técnico.",
     "cro_selection_cta": "Consultar la selección",
     "cro_form_title": "Su consulta",
     "cro_form_intro": "¿Aún no sabe qué modelo necesita? Elija un tema y describa el trabajo.",
@@ -3543,7 +3555,7 @@
     "analytics_text_ga4": "Con su consentimiento, Google Analytics 4 mide las visitas y determinadas acciones. Utiliza cookies de análisis durante un máximo de 180 días. Las funciones publicitarias permanecen desactivadas y no se transmiten datos de los formularios.",
     "privacy_analytics_ga4": "Con su consentimiento, Google Analytics 4 (Google Ireland Limited) registra visitas, datos técnicos del navegador y acciones predefinidas relacionadas con las consultas. Sus cookies de análisis duran un máximo de 180 días. Las direcciones de las páginas se comprueban y depuran previamente. No se transmiten nombres, direcciones de correo, teléfonos, mensajes ni búsquedas libres. Google Signals, la publicidad personalizada y la medición automática de formularios están desactivados. Las solicitudes técnicas también pueden procesarse en Estados Unidos. El consentimiento es opcional y puede retirarse en Ajustes de privacidad; entonces se eliminan las cookies de análisis que hemos establecido. Esto no borra retroactivamente los datos ya recogidos. Los datos de usuarios y eventos asociados a identificadores seudónimos se conservan durante dos meses, sin ampliar el plazo por nueva actividad. Los informes estándar agregados pueden permanecer disponibles durante más tiempo.",
     "newsletter_title": "Novedades técnicas por correo",
-    "newsletter_intro": "Novedades y consejos prácticos sobre soldadura, corte y limpieza.",
+    "newsletter_intro": "Orientación práctica sobre materiales, alimentación y accesorios, junto con novedades de equipos MAHE.",
     "newsletter_cta": "Suscribirse al boletín",
     "newsletter_note": "Suscripción con confirmación por correo electrónico. Puede darse de baja en cualquier momento.",
     "privacy_newsletter": "Utilizamos Brevo (Sendinblue SAS, Francia) para nuestro boletín opcional. El formulario enlazado solo se carga en Brevo al abrirlo. Allí se tratan su dirección de correo, idioma elegido y pruebas de suscripción y confirmación para gestionar la suscripción. Solo se convierte en suscriptor tras confirmar el enlace recibido por correo. Cada envío incluye un enlace para darse de baja. Una consulta sobre equipos no le suscribe automáticamente. Las direcciones de correo y los enlaces de confirmación no se transmiten a los análisis del sitio. El formulario de Brevo utiliza Cloudflare Turnstile contra las inscripciones automatizadas. Cloudflare trata señales técnicas, como la dirección IP e información del navegador, para detectar bots y mejorar esta protección. Las aperturas y los clics de los correos de confirmación se analizan de forma anonimizada; los registros de entrega y suscripción se utilizan para gestionar la suscripción.",
@@ -3588,6 +3600,9 @@
     "company_uid_label": "UID",
     "print_page": "Imprimir página / PDF",
     "print_contact_label": "Contacto para asesoramiento y oferta",
-    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss asesora en la selección y prepara una oferta adaptada a la aplicación. La versión, el suministro y la entrega en Suiza o Liechtenstein se acuerdan en la oferta."
+    "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss asesora en la selección y prepara una oferta adaptada a la aplicación. La versión, el suministro y la entrega en Suiza o Liechtenstein se acuerdan en la oferta.",
+    "newsletter_resource": "Consultar la lista de selección TIG",
+    "tig_checklist_title": "Lista de control para elegir su equipo TIG",
+    "contact_languages": "Asesoramiento telefónico en alemán, checo y polaco. Para otros idiomas, contacte con nosotros por correo electrónico."
   }
 }

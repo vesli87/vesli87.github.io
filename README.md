@@ -173,7 +173,7 @@ aktualisieren sich erst nach erneutem Crawlen und Verarbeiten.
 keine Zusage auf KI-Zitate oder Rankings. Der JSON-Katalog ist ein eigenes Format
 (`schema_version`), das JSON-LD steht auf den HTML-Seiten.
 
-Die Sitemap enthält 595 indexierbare URLs; Suche, Datenschutz und AGB bleiben
+Die Sitemap enthält 625 indexierbare URLs; Suche, Datenschutz und AGB bleiben
 ausgeschlossen, das Impressum ist indexierbar. `lastmod` bleibt bei reinen
 Änderungen an CSP/SRI, Asset-Versionsnummern und der Laufzeitkonfiguration stabil.
 Inhalte, SEO-Metadaten, JSON-LD, Navigation und geänderte Asset-Pfade werden
@@ -196,7 +196,7 @@ Herstellerdaten-Abgleich und Regressionstests müssen bestehen.
 Build-Quellen, Rohdaten, lokale Konfiguration und Berichte werden nicht hochgeladen.
 Der Quellcode selbst liegt in einem öffentlichen GitHub-Repository.
 Pull Requests werden ebenfalls geprüft, veröffentlichen jedoch nichts.
-Jeder Produktionsbuild erstellt zusaetzlich eine 90 Tage aufbewahrte oeffentliche
+Jeder Produktionsbuild erstellt zusaetzlich eine 7 Tage aufbewahrte oeffentliche
 Sicherung und testet deren Wiederherstellung vor dem Deploy. Nach erfolgreichem
 Deploy legt `build/release_recovery.py` dieselbe gepruefte Sicherung als
 versioniertes GitHub Release ohne Actions-Ablauffrist ab. Quellcode ist am exakten

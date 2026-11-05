@@ -702,5 +702,53 @@
     "it": "circa 197 kg",
     "en": "approx. 197 kg",
     "es": "aprox. 197 kg"
+  },
+  "21-Zoll-Industrie-PC, Windows 11": {
+    "fr": "PC industriel de 21 pouces, Windows 11",
+    "it": "PC industriale da 21 pollici, Windows 11",
+    "en": "21-inch industrial PC, Windows 11",
+    "es": "PC industrial de 21 pulgadas, Windows 11"
+  },
+  "Stahl, Edelstahl, Aluminium": {
+    "fr": "Acier, inox, aluminium",
+    "it": "Acciaio, inox, alluminio",
+    "en": "Steel, stainless steel, aluminium",
+    "es": "Acero, acero inoxidable, aluminio"
+  },
+  "THC über Lichtbogenspannung": {
+    "fr": "THC par tension d’arc",
+    "it": "THC tramite tensione d’arco",
+    "en": "THC via arc voltage",
+    "es": "THC mediante tensión del arco"
+  },
+  "Ohmischer Sensor": {
+    "fr": "Capteur ohmique",
+    "it": "Sensore ohmico",
+    "en": "Ohmic sensor",
+    "es": "Sensor óhmico"
+  },
+  "Kreuzlaser": {
+    "fr": "Laser en croix",
+    "it": "Laser a croce",
+    "en": "Cross-line laser",
+    "es": "Láser de cruz"
+  },
+  "Zahnstangenantrieb": {
+    "fr": "Entraînement par crémaillère",
+    "it": "Azionamento a cremagliera",
+    "en": "Rack drive",
+    "es": "Accionamiento por cremallera"
+  },
+  "Spindelantrieb": {
+    "fr": "Entraînement par vis",
+    "it": "Azionamento a vite",
+    "en": "Spindle drive",
+    "es": "Accionamiento por husillo"
+  },
+  "Optional": {
+    "fr": "En option",
+    "it": "Opzionale",
+    "en": "Optional",
+    "es": "Opcional"
   }
 }

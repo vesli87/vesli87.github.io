@@ -2,56 +2,57 @@
   "mpt-3001": {
     "sources": [
       "MAHE Preisliste 2026 V11, Seiten 66/67: MPT 3001 / 3015",
-      "Freigegebene CNC-Funktionen in data/HL_DEVICE.json: MyPlasm-Handbuch v1.2 und Inhaberangaben"
+      "Freigegebene CNC-Funktionen in data/HL_DEVICE.json: MyPlasm-Handbuch v1.2 und Inhaberangaben",
+      "MAHE MPT 3001 Prospekt 2026 V1, p. 1–6, SHA-256 dbe4d675419ce51f22c28b6f3410182215982ee6221b5f40f6df7b5d9198e101"
     ],
     "de": {
       "benefit": "Aus der Zeichnung wird Ihr Bauteil",
       "description": "Für individuelle Zuschnitte und wiederkehrende Blechkonturen, mit automatischer Bahnvorbereitung und geregelter Brennerhöhe.",
       "highlights": [
+        "MyPlasm und MiniCAD inklusive",
         "DXF und HPGL/PLT direkt importieren",
-        "Automatische Schneidbahnen und Schnittfugenkorrektur",
-        "THC regelt die Brennerhöhe während des Schnitts",
-        "Set mit Theta 60, 120 oder 180 A"
+        "THC, ohmischer Sensor und Kreuzlaser",
+        "Theta HSC AUT: 60, 120 oder 180 A"
       ]
     },
     "fr": {
       "benefit": "Du plan à la pièce découpée",
       "description": "Pour les découpes sur mesure et les contours répétitifs, avec préparation automatique des trajectoires et régulation de la hauteur de torche.",
       "highlights": [
-        "Import direct de fichiers DXF et HPGL/PLT",
-        "Trajectoires et compensation de saignée automatiques",
-        "THC : hauteur de torche régulée pendant la coupe",
-        "Ensemble avec Theta 60, 120 ou 180 A"
+        "MyPlasm et MiniCAD inclus",
+        "Import direct de DXF et HPGL/PLT",
+        "THC, capteur ohmique et laser en croix",
+        "Theta HSC AUT : 60, 120 ou 180 A"
       ]
     },
     "it": {
       "benefit": "Dal disegno al pezzo tagliato",
       "description": "Per tagli su misura e contorni ripetitivi su lamiera, con preparazione automatica delle traiettorie e regolazione dell’altezza torcia.",
       "highlights": [
+        "MyPlasm e MiniCAD inclusi",
         "Importazione diretta di DXF e HPGL/PLT",
-        "Traiettorie e compensazione del kerf automatiche",
-        "THC: altezza torcia regolata durante il taglio",
-        "Set con Theta da 60, 120 o 180 A"
+        "THC, sensore ohmico e laser a croce",
+        "Theta HSC AUT: 60, 120 o 180 A"
       ]
     },
     "en": {
       "benefit": "Turn your drawing into a cut part",
       "description": "For custom cut parts and repeated sheet-metal contours, with automatic toolpath preparation and controlled torch height.",
       "highlights": [
-        "Import DXF and HPGL/PLT files directly",
-        "Automatic toolpaths and kerf compensation",
-        "THC controls torch height during cutting",
-        "Set with a 60, 120 or 180 A Theta power source"
+        "MyPlasm and MiniCAD included",
+        "Import DXF and HPGL/PLT directly",
+        "THC, ohmic sensor and cross-line laser",
+        "Theta HSC AUT: 60, 120 or 180 A"
       ]
     },
     "es": {
       "benefit": "Del plano a la pieza cortada",
       "description": "Para cortes a medida y contornos repetitivos en chapa, con preparación automática de trayectorias y regulación de altura de la antorcha.",
       "highlights": [
+        "MyPlasm y MiniCAD incluidos",
         "Importación directa de DXF y HPGL/PLT",
-        "Trayectorias y compensación de ancho de corte automáticas",
-        "THC: altura de antorcha regulada durante el corte",
-        "Conjunto con Theta de 60, 120 o 180 A"
+        "THC, sensor óhmico y láser de cruz",
+        "Theta HSC AUT: 60, 120 o 180 A"
       ]
     }
   },

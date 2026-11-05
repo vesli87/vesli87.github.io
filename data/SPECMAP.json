@@ -30,5 +30,6 @@
  "hcs1": ["hcs-1-signiergerat"],
  "mlf100": ["mlf100"],
  "hypermig-twin": ["twin"],
- "mlst": ["mlst"]
+ "mlst": ["mlst"],
+ "mpt-3001": ["mpt-3001", "mpt-theta-aut"]
 }

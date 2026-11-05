@@ -1,6 +1,24 @@
 [
   {
     "k": "PDF",
+    "u": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+    "t": {
+      "de": "MAHE MPT 3001: Prospekt 2026 V1",
+      "fr": "MAHE MPT 3001: prospectus 2026 V1",
+      "it": "MAHE MPT 3001: prospetto 2026 V1",
+      "en": "MAHE MPT 3001: brochure 2026 V1",
+      "es": "MAHE MPT 3001: folleto 2026 V1"
+    },
+    "s": {
+      "de": "Original in Deutsch · 6 Seiten · Ausstattung, Fotos und technische Daten",
+      "fr": "Original en allemand · 6 pages · équipement, photos et données techniques",
+      "it": "Originale in tedesco · 6 pagine · dotazione, foto e dati tecnici",
+      "en": "German original · 6 pages · equipment, photos and technical data",
+      "es": "Original en alemán · 6 páginas · equipamiento, fotos y datos técnicos"
+    }
+  },
+  {
+    "k": "PDF",
     "t": {
       "de": "Produktkatalog 2023",
       "fr": "Catalogue des produits 2023",

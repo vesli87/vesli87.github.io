@@ -41,9 +41,9 @@
 - [MAHE HyperTIG DX](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-dx/): Leistungsstarke WIG-DC-Stromquelle für hohe Abschmelzleistung. (WIG DC)
 - [MAHE Beta digital](https://www.ves-tech.ch/produkte/schweissgeraete/beta-digital/): Mobile digitale WIG-Schweissmaschine mit Programmspeicher. (WIG DC)
 - [MAHE HyperTIG AC/DC](https://www.ves-tech.ch/produkte/schweissgeraete/hypertig-acdc/): Leistungsstarke AC/DC-Stromquelle für höchste Anforderungen. (WIG AC/DC)
-- [MAHE i-1600](https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/): Einfach zu bedienender, robuster Elektrodeninverter. (MMA)
-- [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. (MMA)
-- [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Multifunktions-Inverter für den Profi. (MMA)
+- [MAHE i-1600](https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/): Tragbarer 230-V-Elektrodeninverter für Montage und Reparatur, mit WIG Lift Arc und 5 m Zuleitung. (MMA)
+- [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/): Tragbarer Elektrodeninverter für Werkstatt und Baustelle, auch mit WIG Lift Arc und Anschluss für eine Fernbedienung. (MMA)
+- [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/): Digitaler Elektrodeninverter mit einstellbarem Start- und Lichtbogenverhalten, Anti-Stick und Funktion zum Fugenhobeln. (MMA)
 - [MAHE Delta Digital DS](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital-ds/): Multiprozess-Stromquelle, entwickelt für das Unterwasserschweissen. (MMA)
 - [MAHE PlasmaTIG](https://www.ves-tech.ch/produkte/schweissgeraete/plasma-tig/): DC-Schweissinverter für Mikroplasma, Plasma, WIG und MMA. Die Modelle 20 und 50 ermöglichen Mikroplasma-Schweissen ab 0,1 A für feinste Nähte. (Plasma TIG / Mikroplasma)
 - [MAHE MLST](https://www.ves-tech.ch/produkte/schweissgeraete/mlst/): Handgeführter, wassergekühlter Faserlaser mit 1500, 2000 oder 3000 W. Bussteuerung, modularer Lasergenerator und Bedienoberfläche zur Parametrierung. (Handgeführtes Laserschweissen)
@@ -60,7 +60,7 @@
 - [MAHE Theta 180 HSC](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-180/): Stärkster Theta-Plasmaschneidinverter mit HSC-Technologie. (Plasma Cut)
 - [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
 - [MAHE Theta 120 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
-- [MAHE MPT 3001](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/): Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 3000 x 1500 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie. (Plasma CNC)
+- [MAHE MPT 3001](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/): CNC-Plasmaschneidanlage für 3000 × 1500 mm mit MyPlasm, MiniCAD und 21-Zoll-Industrie-PC. THC, ohmischer Sensor und Kreuzlaser unterstützen Einrichtung und Schnitt; als Set mit Theta HSC AUT erhältlich. (Plasma CNC)
 - [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/): Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 2500 x 1250 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie. (Plasma CNC)
 
 ### Reinigungsgeräte

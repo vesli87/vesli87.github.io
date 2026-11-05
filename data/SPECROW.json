@@ -348,5 +348,95 @@
     "it": "Peso dell’apparecchio laser",
     "en": "Laser unit weight",
     "es": "Peso del equipo láser"
+  },
+  "Arbeitsbereich": {
+    "fr": "Zone de travail",
+    "it": "Area di lavoro",
+    "en": "Working area",
+    "es": "Área de trabajo"
+  },
+  "Steuerung": {
+    "fr": "Commande",
+    "it": "Controllo",
+    "en": "Control system",
+    "es": "Control"
+  },
+  "CAD-Software": {
+    "fr": "Logiciel CAO",
+    "it": "Software CAD",
+    "en": "CAD software",
+    "es": "Software CAD"
+  },
+  "Bedienplatz": {
+    "fr": "Poste de commande",
+    "it": "Postazione di comando",
+    "en": "Operator station",
+    "es": "Puesto de control"
+  },
+  "Dateiformate": {
+    "fr": "Formats de fichiers",
+    "it": "Formati file",
+    "en": "File formats",
+    "es": "Formatos de archivo"
+  },
+  "Werkstoffe": {
+    "fr": "Matériaux",
+    "it": "Materiali",
+    "en": "Materials",
+    "es": "Materiales"
+  },
+  "Brennerhöhenregelung": {
+    "fr": "Régulation de hauteur de torche",
+    "it": "Controllo altezza torcia",
+    "en": "Torch height control",
+    "es": "Control de altura de antorcha"
+  },
+  "Höhenabtastung": {
+    "fr": "Détection de hauteur",
+    "it": "Rilevamento altezza",
+    "en": "Height sensing",
+    "es": "Detección de altura"
+  },
+  "Positionierhilfe": {
+    "fr": "Aide au positionnement",
+    "it": "Ausilio di posizionamento",
+    "en": "Positioning aid",
+    "es": "Ayuda de posicionamiento"
+  },
+  "Z-Antrieb": {
+    "fr": "Entraînement Z",
+    "it": "Azionamento Z",
+    "en": "Z drive",
+    "es": "Accionamiento Z"
+  },
+  "Fernbedienung": {
+    "fr": "Télécommande",
+    "it": "Telecomando",
+    "en": "Remote control",
+    "es": "Mando a distancia"
+  },
+  "Schneidstrombereich": {
+    "fr": "Plage de courant de coupe",
+    "it": "Campo corrente di taglio",
+    "en": "Cutting current range",
+    "es": "Rango de corriente de corte"
+  },
+  "Empfohlener Schnitt (Stromquelle)": {
+    "fr": "Coupe recommandée (source)",
+    "it": "Taglio consigliato (generatore)",
+    "en": "Recommended cut (power source)",
+    "es": "Corte recomendado (fuente)"
+  },
+  "Trennschnitt (Stromquelle)": {
+    "fr": "Coupe de séparation (source)",
+    "it": "Taglio di separazione (generatore)",
+    "en": "Severance cut (power source)",
+    "es": "Corte de separación (fuente)"
+  },
+  "Antrieb": {
+    "fr": "Entraînement",
+    "it": "Azionamento",
+    "en": "Drive",
+    "es": "Accionamiento"
   }
 }

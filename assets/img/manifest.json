@@ -1200,5 +1200,71 @@
   ],
   "local": true,
   "folder": "p"
+ },
+ "mpt-3001/z-achse-spindelantrieb.png": {
+  "key": "z-achse-spindelantrieb",
+  "w": 797,
+  "h": 1130,
+  "ratio": 1.4178168130489335,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   797
+  ]
+ },
+ "mpt-3001/verlaengerte-basis.png": {
+  "key": "verlaengerte-basis",
+  "w": 1485,
+  "h": 734,
+  "ratio": 0.49427609427609426,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1200,
+   1485
+  ]
+ },
+ "mpt-3001/auflagebleche.png": {
+  "key": "auflagebleche",
+  "w": 370,
+  "h": 237,
+  "ratio": 0.6405405405405405,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   370
+  ]
+ },
+ "mpt-3001/stahlkonstruktion.png": {
+  "key": "stahlkonstruktion",
+  "w": 295,
+  "h": 343,
+  "ratio": 1.1627118644067798,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   295
+  ]
+ },
+ "mpt-3001/kreuzlaser-positionsbestimmung.png": {
+  "key": "kreuzlaser-positionsbestimmung",
+  "w": 1046,
+  "h": 758,
+  "ratio": 0.7246653919694073,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1046
+  ]
  }
 }

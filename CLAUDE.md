@@ -32,6 +32,8 @@ Bearbeitet werden also:
 | Occasion: Zustand, Beschreibung, Fragen, verwandte Geräte | `data/ZUSTAND.json`, `data/OCCTEXT.json`, `data/VERWANDT.json` (DE/FR/IT/EN/ES) |
 | Technische Daten — welche MAHE-Tabelle zu welchem Gerät | `data/SPECMAP.json` |
 | Bestätigte technische Daten aus gelieferten Bildern | `data/SUPPLIED_SPECS.json` (Modellspalten und SHA-256-Herkunft, getrennt von den Website-Importen) |
+| MPT-3001-Prospekt, Originalfotos und genau abgegrenzte Tabellenkorrekturen | `data/MPT_BROCHURE.json`, `assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf`, `build/import_mpt_brochure.py` |
+| Kaufkriterien auf Produktkarten | `data/PRODUCT_CARD_FEATURES.json` (geprüfte Auswahl aus bestehenden übersetzten Herstellermerkmalen oder qualifizierten Startseiten-Highlights) |
 | Übersetzung einer Tabellenzeile / einer Fussnote | `data/SPECROW.json`, `data/SPECNOTE.json` |
 | Übersetzung eines UI-Textes | `data/UI.json` |
 | Übersetzung von Kategorie / Spec / Beschreibung | `data/CATTR/SUBTR/SPECK/SPECV/PDESC.json` |

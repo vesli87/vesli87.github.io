@@ -1,0 +1,81 @@
+{
+  "source": {
+    "kind": "owner_supplied_pdf",
+    "received": "2026-11-05",
+    "name": "Prospekt MAHE Plasmaschneidtisch MPT 3001 2026 V1.pdf",
+    "url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+    "sha256": "dbe4d675419ce51f22c28b6f3410182215982ee6221b5f40f6df7b5d9198e101",
+    "pages": [
+      1,
+      3,
+      4,
+      5,
+      6
+    ],
+    "label": {
+      "de": "MAHE MPT 3001: Originalprospekt · PDF · deutsch",
+      "fr": "MAHE MPT 3001 : prospectus original · PDF · allemand",
+      "it": "MAHE MPT 3001: prospetto originale · PDF · tedesco",
+      "en": "MAHE MPT 3001: original brochure · PDF · German",
+      "es": "MAHE MPT 3001: folleto original · PDF · alemán"
+    }
+  },
+  "photos": [
+    {
+      "img": "mpt-3001/z-achse-spindelantrieb.png",
+      "original": "/assets/img/mpt-3001/z-achse-spindelantrieb.png",
+      "width": 797,
+      "height": 1130,
+      "page": 4,
+      "embedded_index": 0,
+      "sha256": "dedbd6783ab191f7c10c315808a39d1c127a08e87108317a502ef9b470f99e92"
+    },
+    {
+      "img": "mpt-3001/verlaengerte-basis.png",
+      "original": "/assets/img/mpt-3001/verlaengerte-basis.png",
+      "width": 1485,
+      "height": 734,
+      "page": 4,
+      "embedded_index": 1,
+      "sha256": "7485e5da495cbb0e45365d150b707a8af10223b5e4f16b1b958ef94e0a5a69fb"
+    },
+    {
+      "img": "mpt-3001/auflagebleche.png",
+      "original": "/assets/img/mpt-3001/auflagebleche.png",
+      "width": 370,
+      "height": 237,
+      "page": 4,
+      "embedded_index": 2,
+      "sha256": "dabfb498b24634ddc4b295d2c2f468a0be54852440e492a97ddc9630a431b355"
+    },
+    {
+      "img": "mpt-3001/stahlkonstruktion.png",
+      "original": "/assets/img/mpt-3001/stahlkonstruktion.png",
+      "width": 295,
+      "height": 343,
+      "page": 4,
+      "embedded_index": 3,
+      "sha256": "dce622bc09f91efe94215ab4ac531524ed575ca04d310e29627d2b593a072b98"
+    },
+    {
+      "img": "mpt-3001/kreuzlaser-positionsbestimmung.png",
+      "original": "/assets/img/mpt-3001/kreuzlaser-positionsbestimmung.png",
+      "width": 1046,
+      "height": 758,
+      "page": 4,
+      "embedded_index": 4,
+      "sha256": "5f476a4a82af76e9dc1570f05dfd53c68eabb6c3a1d099deff0a8fc445d1a2f3"
+    }
+  ],
+  "limits": "Page 4 construction >50 mm is not a cutting/piercing rating. Page 6 unspecified 40/55 mm is not reconciled with page 5 source-specific recommended/separation limits. Publish only the labelled page 5 source limits; never infer CNC piercing capacity. Native embedded photos have limited resolution; no invented pixels or AI enhancement.",
+  "spec_overrides": [
+    {
+      "table": "theta-120-aut",
+      "row": "Trennschnitt",
+      "column": "120",
+      "old": "< 50mm",
+      "value": "< 55mm",
+      "page": 5
+    }
+  ]
+}

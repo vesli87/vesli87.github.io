@@ -719,7 +719,8 @@
     "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss berät zur Auswahl und erstellt ein auf Ihre Anwendung abgestimmtes Angebot. Ausführung, Lieferumfang und Übergabe in der Schweiz oder Liechtenstein werden im Angebot vereinbart.",
     "newsletter_resource": "WIG-Checkliste direkt lesen",
     "tig_checklist_title": "Checkliste für Ihre WIG/TIG-Auswahl",
-    "contact_languages": "Telefonische Beratung auf Deutsch, Tschechisch und Polnisch. Für andere Sprachen kontaktieren Sie uns bitte per E-Mail."
+    "contact_languages": "Telefonische Beratung auf Deutsch, Tschechisch und Polnisch. Für andere Sprachen kontaktieren Sie uns bitte per E-Mail.",
+    "photo_png": "Originalfoto als PNG"
   },
   "fr": {
     "locale": "fr_CH",
@@ -1440,7 +1441,8 @@
     "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss vous conseille et prépare une offre adaptée à votre application. La version, les éléments fournis et la remise en Suisse ou au Liechtenstein sont définis dans l’offre.",
     "newsletter_resource": "Consulter la liste de contrôle TIG",
     "tig_checklist_title": "Liste de contrôle pour choisir votre poste TIG",
-    "contact_languages": "Conseil téléphonique en allemand, en tchèque et en polonais. Pour les autres langues, veuillez nous contacter par e-mail."
+    "contact_languages": "Conseil téléphonique en allemand, en tchèque et en polonais. Pour les autres langues, veuillez nous contacter par e-mail.",
+    "photo_png": "Photo originale en PNG"
   },
   "it": {
     "locale": "it_CH",
@@ -2161,7 +2163,8 @@
     "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss offre consulenza e prepara un’offerta adatta all’applicazione. Versione, dotazione e consegna in Svizzera o nel Liechtenstein vengono concordate nell’offerta.",
     "newsletter_resource": "Leggere la lista di controllo TIG",
     "tig_checklist_title": "Lista di controllo per scegliere il generatore TIG",
-    "contact_languages": "Consulenza telefonica in tedesco, ceco e polacco. Per le altre lingue, contattateci via e-mail."
+    "contact_languages": "Consulenza telefonica in tedesco, ceco e polacco. Per le altre lingue, contattateci via e-mail.",
+    "photo_png": "Foto originale in PNG"
   },
   "en": {
     "locale": "en_CH",
@@ -2882,7 +2885,8 @@
     "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss advises on selection and prepares a quotation for your application. Equipment version, scope of supply and handover in Switzerland or Liechtenstein are agreed in the quotation.",
     "newsletter_resource": "Read the TIG selection checklist",
     "tig_checklist_title": "Your TIG equipment selection checklist",
-    "contact_languages": "Telephone consultations are available in German, Czech and Polish. For other languages, please contact us by email."
+    "contact_languages": "Telephone consultations are available in German, Czech and Polish. For other languages, please contact us by email.",
+    "photo_png": "Original photo as PNG"
   },
   "es": {
     "locale": "es_CH",
@@ -3603,6 +3607,7 @@
     "prod_intro_laser_tpl": "{name} {de_marke}. VES-TECH Swiss asesora en la selección y prepara una oferta adaptada a la aplicación. La versión, el suministro y la entrega en Suiza o Liechtenstein se acuerdan en la oferta.",
     "newsletter_resource": "Consultar la lista de selección TIG",
     "tig_checklist_title": "Lista de control para elegir su equipo TIG",
-    "contact_languages": "Asesoramiento telefónico en alemán, checo y polaco. Para otros idiomas, contacte con nosotros por correo electrónico."
+    "contact_languages": "Asesoramiento telefónico en alemán, checo y polaco. Para otros idiomas, contacte con nosotros por correo electrónico.",
+    "photo_png": "Foto original en PNG"
   }
 }

@@ -301,8 +301,12 @@ def spec_html(lang, p):
     """
     tabs = C.specTables(lang, p)
     out = [f'<h3 class="spec-h">{e(C.t(lang,"techdata"))}</h3>']
+    scroll_hint_shown = False
 
     for t in tabs:
+        if len(t['cols']) > 1 and not scroll_hint_shown:
+            out.append(f'<p class="spec-scroll-hint">{e(C.HYPERMIG_CWK[lang]["scroll_hint"])}</p>')
+            scroll_hint_shown = True
         cap = f'<caption>{e(t["title"])}</caption>' if len(tabs) > 1 and t["title"] else ""
         head = "".join(f'<th scope="col">{e(c)}</th>' for c in t["cols"])
         body = ""
@@ -312,14 +316,14 @@ def spec_html(lang, p):
         out.append(
             f'<div class="spectab-scroll" tabindex="0" role="region" '
             f'aria-label="{e(C.t(lang,"techdata"))} {e(C.pName(lang, p))}">'
-            f'<table class="spectab">{cap}'
+            f'<table class="spectab{" single-model" if len(t["cols"]) == 1 else ""}">{cap}'
             f'<thead><tr><th scope="col">{e(t.get("row_header") or C.t(lang,"spec_model"))}</th>{head}</tr></thead>'
             f"<tbody>{body}</tbody></table></div>"
         )
         if t["note"]:
             out.append(f'<p class="spectab-note"><span aria-hidden="true">*</span> {e(t["note"])}</p>')
         if t.get('source'):
-            out.append(f'<p class="spectab-note"><a href="{e(t["source"])}">{e(C.HYPERMIG_CWK[lang]["source_label"])}</a></p>')
+            out.append(f'<p class="spectab-note"><a href="{e(t["source"])}">{e(t["source_label"])}</a></p>')
 
     rest = C.specRest(p)
     if rest:
@@ -351,7 +355,7 @@ def media_html(lang, p, nm):
              "alt": f"{C.pFullName(lang, p)}: {C.pDesc(lang, p)}"}
     bilder = [haupt]
     for g in C.galleryOf(lang, p):
-        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"]})
+        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"], "original": g.get("original", "")})
 
     # Über dem Foto lag früher ein Etikett mit den Schweissverfahren. Es stand im
     # Markup vor dem Bild und wurde davon verdeckt - sichtbar blieb nur ein
@@ -372,6 +376,10 @@ def media_html(lang, p, nm):
 
     slides = ""
     for i, b in enumerate(bilder):
+        caption = e(b['cap'])
+        if b.get('original'):
+            caption += (f' <a class="photo-original" href="{e(b["original"])}" download>'
+                        f'{e(C.t(lang, "photo_png"))}</a>')
         slides += (f'<figure class="galslide{" active" if i == 0 else ""}" '
                    f'id="gs-{e(p["id"])}-{i}" role="tabpanel" '
                    f'aria-labelledby="gt-{e(p["id"])}-{i}">'
@@ -379,7 +387,7 @@ def media_html(lang, p, nm):
                    + R.img_tag(b["img"], DIMG_SIZES, cls="zoomable",
                                alt=b["alt"], eager=(i == 0), width=560)
                    + '</div>'
-                   + (f'<figcaption>{e(b["cap"])}</figcaption>' if b["cap"] else "")
+                   + (f'<figcaption>{caption}</figcaption>' if caption else "")
                    + "</figure>")
 
     thumbs = ""
@@ -674,10 +682,11 @@ def home_featured(lang):
         if detail:
             details.append(C.trV(lang, detail))
         picture = R.img_tag(product['img'],
-                            # object-fit:contain caps the 280px-high picture at
-                            # 498px of visible width; its full grid cell is wider.
-                            '(max-width:640px) min(calc(100vw - 88px), 356px), '
-                            '(max-width:1150px) min(calc(50vw - 72px), 462px), 498px' if wide else
+                            # The landscape photo fills its frame at its native
+                            # aspect ratio, without contain letterboxing.
+                            '(max-width:640px) calc(100vw - 104px), '
+                            '(max-width:1150px) calc(50vw - 90px), '
+                            '(max-width:1600px) calc(50vw - 128px), 672px' if wide else
                             '(max-width:640px) 45vw, (max-width:1150px) 320px, 350px',
                             alt=C.pFullName(lang, product), width=620 if wide else 440,
                             eager=i == 0, low_priority=i > 0)

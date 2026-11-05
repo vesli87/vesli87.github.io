@@ -54,22 +54,22 @@
     "es": "Fuente de corriente AC/DC de alto rendimiento para aplicaciones exigentes."
   },
   "i-1600": {
-    "fr": "Poste à onduleur pour le soudage à l’électrode, robuste et simple d’utilisation.",
-    "it": "Inverter a elettrodo robusto e semplice da usare.",
-    "en": "Robust stick welding inverter with straightforward controls.",
-    "es": "Inversor robusto de soldadura con electrodo revestido y controles sencillos."
+    "fr": "Onduleur MMA portable 230 V pour le montage et la réparation, avec TIG Lift Arc et câble d’alimentation de 5 m.",
+    "it": "Inverter MMA portatile a 230 V per montaggio e riparazioni, con TIG Lift Arc e cavo di alimentazione da 5 m.",
+    "en": "Portable 230 V stick welding inverter for installation and repairs, with TIG Lift Arc and a 5 m mains cable.",
+    "es": "Inversor MMA portátil de 230 V para montaje y reparación, con TIG Lift Arc y cable de alimentación de 5 m."
   },
   "delta": {
-    "fr": "Poste à onduleur multifonction pour le soudage à l’électrode, en atelier et sur chantier.",
-    "it": "Inverter a elettrodo multifunzione per officina e cantiere.",
-    "en": "Multifunction stick welding inverter for workshop and construction site use.",
-    "es": "Inversor multifunción de soldadura con electrodo revestido para taller y obra."
+    "fr": "Onduleur MMA portable pour l’atelier et le chantier, avec TIG Lift Arc et raccordement pour télécommande.",
+    "it": "Inverter MMA portatile per officina e cantiere, con TIG Lift Arc e collegamento per comando remoto.",
+    "en": "Portable stick welding inverter for workshop and site work, with TIG Lift Arc and a remote-control connection.",
+    "es": "Inversor MMA portátil para taller y obra, con TIG Lift Arc y conexión para mando a distancia."
   },
   "delta-digital": {
-    "fr": "Onduleur multifonction numérique pour les professionnels.",
-    "it": "Inverter multifunzione digitale per professionisti.",
-    "en": "Digital multifunction inverter for professional use.",
-    "es": "Inversor multifunción digital para uso profesional."
+    "fr": "Onduleur MMA numérique avec réglage de l’amorçage et du comportement d’arc, Anti-Stick et fonction de gougeage.",
+    "it": "Inverter MMA digitale con regolazione dell’innesco e del comportamento dell’arco, Anti-Stick e funzione di scriccatura.",
+    "en": "Digital stick welding inverter with adjustable starting and arc behaviour, Anti-Stick and a gouging function.",
+    "es": "Inversor MMA digital con ajuste del arranque y comportamiento del arco, Anti-Stick y función de ranurado."
   },
   "delta-digital-ds": {
     "fr": "Source de courant multiprocédé conçue pour le soudage sous-marin.",
@@ -450,10 +450,10 @@
     "es": "Rodillos de alimentación de hilo para la serie HyperMIG X, con versiones para acero y aluminio, además de versiones moleteadas."
   },
   "mpt-3001": {
-    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en ensemble avec une source de courant MAHE Theta.",
-    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta.",
-    "en": "Professional CNC plasma cutting table with a 3000 x 1500 mm working area, supplied as a set with a MAHE Theta-series power source.",
-    "es": "Mesa profesional de corte por plasma CNC con área de trabajo de 3000 x 1500 mm, suministrada en conjunto con una fuente de corriente de la serie MAHE Theta."
+    "fr": "Installation de découpe plasma CNC de 3000 × 1500 mm avec MyPlasm, MiniCAD et PC industriel de 21 pouces. THC, capteur ohmique et laser en croix pour le réglage et la coupe ; disponible en ensemble avec Theta HSC AUT.",
+    "it": "Impianto di taglio plasma CNC da 3000 × 1500 mm con MyPlasm, MiniCAD e PC industriale da 21 pollici. THC, sensore ohmico e laser a croce per impostazione e taglio; disponibile in set con Theta HSC AUT.",
+    "en": "CNC plasma cutting system for 3000 × 1500 mm with MyPlasm, MiniCAD and a 21-inch industrial PC. THC, an ohmic sensor and a cross-line laser support setup and cutting; available as a set with Theta HSC AUT.",
+    "es": "Sistema de corte plasma CNC de 3000 × 1500 mm con MyPlasm, MiniCAD y PC industrial de 21 pulgadas. THC, sensor óhmico y láser de cruz para ajuste y corte; disponible en conjunto con Theta HSC AUT."
   },
   "mpt-2501": {
     "fr": "Table de découpe plasma CNC professionnelle, surface de travail 2500 x 1250 mm, livrée en ensemble avec une source de courant MAHE Theta.",

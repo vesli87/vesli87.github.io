@@ -1,5 +1,5 @@
 # VES-TECH Swiss — vollständiger Produkt- und Wissensauszug
-Stand: 2026-11-03. Quelle: https://www.ves-tech.ch
+Stand: 2026-11-05. Quelle: https://www.ves-tech.ch
 
 VES-TECH Swiss bietet Beratung und Verkauf von MAHE-Geräten. Einzelunternehmen: Martin Veselovský, UID CHE-499.348.313. Die Beschaffung von MAHE-Neugeräten erfolgt über Schweisstechnik Scherrer AG. Werkstatt und Warenannahme: St. Gallerstrasse 49, 9100 Herisau, bei der Partnerfirma Schweisstechnik Scherrer AG, Besuch nach Vereinbarung. Sitz und Rechnungsadresse: Bildfeldstrasse 24, 9552 Bronschhofen. Telefon +41 76 710 91 39, E-Mail info@ves-tech.ch, telefonisch erreichbar Mo-Fr 07:30-17:00. Alle Geräte werden zum Preis auf Anfrage angeboten, weil jede Anlage nach Werkstoff, Blechdicke, Kühlung und Zubehör konfiguriert wird.
 
@@ -431,15 +431,15 @@ Passendes Zubehör: FRC 5, RC 5, RC 15, RC 100, MT200W, MT180W, Elektrodenkabel 
 ### MAHE i-1600
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: I-1600 · Preis: auf Anfrage (CHF)
-Einfach zu bedienender, robuster Elektrodeninverter.
-i-1600 ist ein tragbarer Elektrodeninverter; die Dokumentation führt auch WIG Lift Arc auf. Entscheidend ist das tatsächlich benötigte Verfahren, nicht nur der maximale Strom.
+Tragbarer 230-V-Elektrodeninverter für Montage und Reparatur, mit WIG Lift Arc und 5 m Zuleitung.
+Tragbarer 230-V-Inverter für Rutil-, basische und CEL-Elektroden. Force Arc und Anti-Stick unterstützen das Elektrodenschweissen; auch WIG Lift Arc ist möglich.
 - Nennen Sie Elektrodentyp, Werkstoff und den mobilen Einsatz. Prüfen Sie Netzanschluss und Einschaltdauer in der technischen Tabelle.
 - Für WIG Lift Arc geben Sie Brenner und Gasbedienung an. MT170 V hat ein Gasventil am Brenner; zum Gerätevergleich steht die Delta-Ausführung zur Verfügung.
 Weiterführend: [MAHE Delta 1800](https://www.ves-tech.ch/produkte/schweissgeraete/delta/)
 Weiterführend: [MAHE MT170 V](https://www.ves-tech.ch/produkte/zubehoer/mt170v/)
 Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Force Arc; Anti-Stick-Funktion; WIG Lift ARC; Zuleitungskabel mit 5 Metern Länge; Arbeitet an langen Versorgungskabeln; 100-V-Technologie.
 Fronteingabesysteme: i-1600: Bedienpanel
-Ausstattung: Verfahren: MMA (Elektrode); Bauart: tragbar; Bedienung: einfach.
+Ausstattung: Verfahren: MMA · WIG-Lift; Bauart: tragbar; Bedienung: einfach.
 
 Technische Daten – i-1600:
 
@@ -466,10 +466,10 @@ Passendes Zubehör: MT260 V, MT170 V, Elektrodenkabel 25–90 mm², Massekabel 2
 ### MAHE Delta 1800
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA · Preis: auf Anfrage (CHF)
-Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.
-Delta 1800 verbindet Elektrodenschweissen und WIG Lift. Die getrennt aufgeführten Geräte Delta Digital und Delta Digital DS sind eigene Ausführungen und nicht nur andere Bezeichnungen.
+Tragbarer Elektrodeninverter für Werkstatt und Baustelle, auch mit WIG Lift Arc und Anschluss für eine Fernbedienung.
+Elektrodeninverter für Rutil-, basische und CEL-Elektroden, mit Force Arc und Anti-Stick. WIG Lift Arc und Fernbedienung erweitern die Einsatzmöglichkeiten in Werkstatt und Montage.
 - Nennen Sie Verfahren, Werkstoff und die vollständige Modellbezeichnung. Vergleichen Sie die technischen Daten der gewünschten Ausführung mit Ihrem vorhandenen Anschluss.
-- Für digitale Bedienung und JOB-Programme können Sie Delta Digital vergleichen. Wenn ein einfaches tragbares Elektrodengerät gesucht wird, beziehen Sie i-1600 in die Auswahl ein.
+- Für einstellbaren Hot Start und Arc Force vergleichen Sie Delta Digital. Für einen einfachen tragbaren Elektrodeninverter steht auch i-1600 zur Auswahl.
 Weiterführend: [MAHE i-1600](https://www.ves-tech.ch/produkte/schweissgeraete/i-1600/)
 Weiterführend: [MAHE Delta Digital](https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/)
 Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Force Arc; Anti-Stick-Funktion; Zuleitungskabel mit 5 Metern Länge; Fernbedienung; WIG Lift Arc.
@@ -501,10 +501,10 @@ Passendes Zubehör: RC 5, RC 100, MT260 V, MT170 V, Elektrodenkabel 25–90 mm²
 ### MAHE Delta Digital
 URL: https://www.ves-tech.ch/produkte/schweissgeraete/delta-digital/
 Kategorie: Schweissgeräte / MMA · Typ: MMA · Art.-Nr.: DELTA-DIGITAL · Preis: auf Anfrage (CHF)
-Digitaler Multifunktions-Inverter für den Profi.
+Digitaler Elektrodeninverter mit einstellbarem Start- und Lichtbogenverhalten, Anti-Stick und Funktion zum Fugenhobeln.
 Besonderheiten: Schweisst basische Elektroden, Rutilelektroden und CEL-Elektroden; Arc Force einstellbar; Hot Start einstellbar; Anti-Stick-Funktion; Funktion zum Fugenhobeln; Einstellbare Leerlaufspannung ab 15 V; Stufenlose Vorwahl der Netzsicherung; Zuleitungskabel mit 5 Metern Länge; Digitale Anzeige für Volt und Ampere; Fernbedienung.
 Fronteingabesysteme: Delta Digital: Bedienpanel
-Ausstattung: Verfahren: MMA · WIG; Bedienung: digital; Speicher: JOB-Programme.
+Ausstattung: Verfahren: MMA · WIG; Bedienung: digital; Extras: Arc Force / Hot Start.
 
 Technische Daten – Delta Digital:
 
@@ -821,7 +821,7 @@ Passendes Zubehör: PSAB 65, Massekabel 25 mm².
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/
 Kategorie: Plasmaschneiden / Theta Automation · Typ: Plasma AUT · Art.-Nr.: THETA-120-AUT · Preis: auf Anfrage (CHF)
 Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau.
-Besonderheiten: HSC-Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt über 55 mm; Qualitätsschnitt über 38 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
+Besonderheiten: HSC-Technologie; Automation-Schnittstelle; Niedrige Einsatzkosten; High-Performance-Schneiden; Trennschnitt < 55 mm; Empfohlener Schnitt < 38 mm; Stabile Lift-Arc-Zündung; Maximale Produktivität; Lochblech-Schneidfunktion; Funktion zum Fugenhobeln.
 Fronteingabesysteme: Theta HSC: Bedienpanel
 Ausstattung: Verfahren: Plasmaschneiden · Automation; Schneidleistung: bis 55 mm; Technologie: HSC; Schnittstelle: CNC / Automation.
 
@@ -839,7 +839,7 @@ Technische Daten – Theta 120 HSC:
 | Strom bei 60 % ED (40 °C) | 120A |
 | Strom bei 100 % ED (40 °C) | 93A |
 | Empfohlener Schnitt | < 38mm |
-| Trennschnitt | < 50mm |
+| Trennschnitt | < 55mm |
 | Masse | 370x270x620mm |
 | Gewicht | 36kg |
 | Schutzart | IP23 |
@@ -852,10 +852,45 @@ Passendes Zubehör: PSAB 125, Massekabel 25 mm².
 ### MAHE MPT 3001
 URL: https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/
 Kategorie: Plasmaschneiden / Schneidtische · Typ: Plasma CNC · Art.-Nr.: MPT-3001 · Preis: auf Anfrage (CHF)
-Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 3000 x 1500 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.
-Besonderheiten: Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie; Arbeitsbereich 3000 x 1500 mm; Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC; Schneidstrom 60 A, 120 A oder 180 A; Steuerung über das System CNC von MAHE; Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format; Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt; Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt; Höhenabtastung des Materials vor jedem Einstich; Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit; Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe; Bedienkonsole mit Windows-Computer und Bildschirm am Tisch; Inbetriebnahme und Einweisung durch VES-TECH Swiss.
-Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180).
-Ausstattung: Verfahren: Plasmaschneiden; Arbeitsbereich: 3000 x 1500 mm; Stromquelle: Theta 060 / 120 / 180 HSC; Schneidstrom: 60 A / 120 A / 180 A; Steuerung: MyPlasm CNC; Dateiformate: DXF, HPGL/PLT; Ausführung: Set mit Stromquelle.
+CNC-Plasmaschneidanlage für 3000 × 1500 mm mit MyPlasm, MiniCAD und 21-Zoll-Industrie-PC. THC, ohmischer Sensor und Kreuzlaser unterstützen Einrichtung und Schnitt; als Set mit Theta HSC AUT erhältlich.
+Von der Zeichnung zum Zuschnitt: MyPlasm und MiniCAD, der 21-Zoll-Bedienplatz und die Höhenregelung bilden die Grundlage für Einzelteile und wiederkehrende Blechkonturen.
+- Senden Sie Werkstoff, Materialstärke, Zeichnungsformat und Stückzahl. Geben Sie an, ob Innenkonturen eingestochen werden oder der Schnitt an der Blechkante beginnt.
+- Theta-Stromquelle, Brenner und Verschleissteile passend zur Aufgabe auswählen. Eine Konstruktionsauslegung für dicke Bleche ist keine Zusage zur Einstechleistung.
+Weiterführend: [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/)
+Weiterführend: [MAHE Theta 120 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/)
+Weiterführend: [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/)
+Besonderheiten: MyPlasm und MiniCAD inklusive: Zeichnungen vorbereiten und den CNC-Schneidablauf am Tisch steuern; Zeichnungsimport: DXF sowie HPGL/PLT übernehmen; Schnittfugenkorrektur, Ein- und Ausfahrbahnen sowie Schneidreihenfolge automatisch vorbereiten; 21-Zoll-Industrie-PC mit Windows 11: Software und Bedienung direkt am Schneidtisch; Elektronische THC: Die Lichtbogenspannung regelt die Brennerhöhe während des Schnitts; Ohmischer Sensor: Die Materialoberfläche vor dem Einstich zur Höhenbestimmung erfassen; Kreuzlaser: Die Position am Werkstück bestimmen und den Ablauf beim Einrichten simulieren; Schneiden und Markieren: Anreissnadel oder Gravierstift für Markierungen und Biegelinien; Piercen zur Kennzeichnung von Bohrpositionen; Geschützter Antrieb: Zahnstangenantrieb und Brennerhalterung sind geschützt; die robuste Z-Achse arbeitet mit Spindelantrieb; Verlängerte Basis: Das Portal fährt aus dem Beladebereich, damit die Tischfläche zum Auflegen des Blechs frei wird; Auflagebleche: Gebogene oder gerade Ausführung, damit ein Querschnitt nicht durchgehend entlang eines Auflageblechs verläuft; Vollverschweisste Stahlkonstruktion: Solider Aufbau für Werkstatt und Fertigung; Theta HSC AUT im Set: Wahlweise 60, 120 oder 180 A für Stahl, Edelstahl und Aluminium; Schneidaufgabe und Stromquelle gemeinsam abstimmen; Inbetriebnahme und Einweisung: Die Konfiguration und Übergabe werden direkt mit VES-TECH Swiss geklärt.
+Optionen: Filteranlage AT 1000 (ohne Anschlusskupplungen); Schutzhaube für Computer und Konsole (schützt Bedienplatz und Bildschirm gegen Staub und Schleifpartikel); Wasserpflegemittel MWPF 100 (1 kg für das Wasserbett des Schneidtischs); Verschleissteilebox PSAB 125 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 125); Verschleissteilebox PSAB 180 (Ersatz-Verschleissteile für den Plasmabrenner PSAB 180); Fernbedienung.
+Ausstattung: Verfahren: Plasmaschneiden; Stromquelle: Theta 60 / 120 / 180 HSC AUT; Ausführung: Set mit Stromquelle.
+
+Technische Daten – MPT 3001: Tisch und Steuerung:
+
+| Modell | MPT 3001 |
+| --- | --- |
+| Arbeitsbereich | 3000 × 1500 mm |
+| Steuerung | MyPlasm |
+| CAD-Software | MiniCAD |
+| Bedienplatz | 21-Zoll-Industrie-PC, Windows 11 |
+| Dateiformate | DXF, HPGL/PLT |
+| Werkstoffe | Stahl, Edelstahl, Aluminium |
+| Brennerhöhenregelung | THC über Lichtbogenspannung |
+| Höhenabtastung | Ohmischer Sensor |
+| Positionierhilfe | Kreuzlaser |
+| Antrieb | Zahnstangenantrieb |
+| Z-Antrieb | Spindelantrieb |
+| Fernbedienung | Optional |
+
+
+Technische Daten – Theta HSC AUT: Stromquellen im Vergleich:
+
+| Modell | Theta 60 HSC AUT | Theta 120 HSC AUT | Theta 180 HSC AUT |
+| --- | --- | --- | --- |
+| Schneidstrombereich | 10–60 A | 20–120 A | 20–180 A |
+| Netzspannung | 3~ 400 V | 3~ 400 V | 3~ 400 V |
+| Empfohlener Schnitt (Stromquelle) | < 25 mm | < 38 mm | < 50 mm |
+| Trennschnitt (Stromquelle) | < 35 mm | < 55 mm | < 80 mm |
+*: Die Schnittstärken sind Angaben zur jeweiligen Stromquelle aus dem MAHE-Prospekt, keine Zusage zur CNC-Einstechleistung. Werkstoff, Brenner, Verschleissteile und Schnittanforderung bestimmen die geeignete Konfiguration; die Einstechgrenze wird für den konkreten Auftrag geklärt.
+
 Werkstoffe: Stahl, INOX, Aluminium.
 Passendes Zubehör: Theta 60 HSC, Theta 120 HSC, Theta 180 HSC.
 

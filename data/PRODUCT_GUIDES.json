@@ -281,35 +281,35 @@
       }
     ],
     "de": {
-      "intro": "i-1600 ist ein tragbarer Elektrodeninverter; die Dokumentation führt auch WIG Lift Arc auf. Entscheidend ist das tatsächlich benötigte Verfahren, nicht nur der maximale Strom.",
+      "intro": "Tragbarer 230-V-Inverter für Rutil-, basische und CEL-Elektroden. Force Arc und Anti-Stick unterstützen das Elektrodenschweissen; auch WIG Lift Arc ist möglich.",
       "checks": [
         "Nennen Sie Elektrodentyp, Werkstoff und den mobilen Einsatz. Prüfen Sie Netzanschluss und Einschaltdauer in der technischen Tabelle.",
         "Für WIG Lift Arc geben Sie Brenner und Gasbedienung an. MT170 V hat ein Gasventil am Brenner; zum Gerätevergleich steht die Delta-Ausführung zur Verfügung."
       ]
     },
     "fr": {
-      "intro": "i-1600 est un onduleur à électrode portable ; la documentation présente aussi le TIG Lift Arc. Le choix dépend du procédé nécessaire, et pas seulement du courant maximal.",
+      "intro": "Onduleur portable 230 V pour électrodes rutiles, basiques et cellulosiques (CEL). Force Arc et Anti-Stick pour le soudage MMA ; TIG Lift Arc également possible.",
       "checks": [
         "Indiquez le type d’électrode, le matériau et l’utilisation mobile. Vérifiez l’alimentation et le facteur de marche dans le tableau technique.",
         "Pour le TIG Lift Arc, précisez la torche et la commande du gaz. MT170 V possède une vanne sur la torche ; le poste Delta permet de comparer les configurations."
       ]
     },
     "it": {
-      "intro": "i-1600 è un inverter a elettrodo portatile; la documentazione indica anche il TIG Lift Arc. Conta il processo effettivamente necessario, oltre alla corrente massima.",
+      "intro": "Inverter portatile a 230 V per elettrodi rutilici, basici e cellulosici (CEL). Force Arc e Anti-Stick per la saldatura MMA; disponibile anche TIG Lift Arc.",
       "checks": [
         "Indicate tipo di elettrodo, materiale e impiego mobile. Verificate alimentazione e ciclo di lavoro nella tabella tecnica.",
         "Per il TIG Lift Arc, precisate torcia e comando del gas. MT170 V ha una valvola del gas sulla torcia; la versione Delta permette di confrontare le configurazioni."
       ]
     },
     "en": {
-      "intro": "i-1600 is a portable stick welding inverter; the documentation also lists TIG Lift Arc. The process actually needed matters, not just maximum current.",
+      "intro": "Portable 230 V inverter for rutile, basic and cellulosic (CEL) electrodes. Force Arc and Anti-Stick support stick welding; TIG Lift Arc is also available.",
       "checks": [
         "Specify electrode type, material and mobile application. Check power supply and duty cycle in the technical table.",
         "For TIG Lift Arc, specify the torch and gas controls. MT170 V has a gas valve on the torch; compare Delta when selecting equipment."
       ]
     },
     "es": {
-      "intro": "i-1600 es un inversor portátil de soldadura con electrodo revestido; la documentación también indica TIG Lift Arc. Importa el proceso realmente necesario, no solo la corriente máxima.",
+      "intro": "Inversor portátil de 230 V para electrodos rutílicos, básicos y celulósicos (CEL). Force Arc y Anti-Stick para soldadura MMA; también permite TIG Lift Arc.",
       "checks": [
         "Indique el tipo de electrodo, el material y la aplicación móvil. Compruebe la alimentación eléctrica y el ciclo de trabajo en la tabla técnica.",
         "Para TIG Lift Arc, indique la antorcha y el control de gas. MT170 V tiene válvula de gas en la antorcha; compare Delta al elegir el equipo."
@@ -333,38 +333,38 @@
       }
     ],
     "de": {
-      "intro": "Delta 1800 verbindet Elektrodenschweissen und WIG Lift. Die getrennt aufgeführten Geräte Delta Digital und Delta Digital DS sind eigene Ausführungen und nicht nur andere Bezeichnungen.",
+      "intro": "Elektrodeninverter für Rutil-, basische und CEL-Elektroden, mit Force Arc und Anti-Stick. WIG Lift Arc und Fernbedienung erweitern die Einsatzmöglichkeiten in Werkstatt und Montage.",
       "checks": [
         "Nennen Sie Verfahren, Werkstoff und die vollständige Modellbezeichnung. Vergleichen Sie die technischen Daten der gewünschten Ausführung mit Ihrem vorhandenen Anschluss.",
-        "Für digitale Bedienung und JOB-Programme können Sie Delta Digital vergleichen. Wenn ein einfaches tragbares Elektrodengerät gesucht wird, beziehen Sie i-1600 in die Auswahl ein."
+        "Für einstellbaren Hot Start und Arc Force vergleichen Sie Delta Digital. Für einen einfachen tragbaren Elektrodeninverter steht auch i-1600 zur Auswahl."
       ]
     },
     "fr": {
-      "intro": "Delta 1800 réunit le soudage à l’électrode et le TIG Lift. Les postes Delta Digital et Delta Digital DS sont des versions distinctes, et non de simples noms différents.",
+      "intro": "Onduleur pour électrodes rutiles, basiques et cellulosiques (CEL), avec Force Arc et Anti-Stick. TIG Lift Arc et télécommande pour l’atelier et le montage.",
       "checks": [
         "Indiquez le procédé, le matériau et la désignation complète du modèle. Comparez les données de la version souhaitée avec l’alimentation disponible.",
-        "Pour une commande numérique et des programmes JOB, comparez Delta Digital. Si vous cherchez un poste à électrode portable et simple, examinez aussi i-1600."
+        "Pour Hot Start et Arc Force réglables, comparez Delta Digital. Pour un onduleur MMA portable simple, considérez aussi i-1600."
       ]
     },
     "it": {
-      "intro": "Delta 1800 combina saldatura a elettrodo e TIG Lift. Delta Digital e Delta Digital DS sono versioni distinte, non semplici denominazioni alternative.",
+      "intro": "Inverter per elettrodi rutilici, basici e cellulosici (CEL), con Force Arc e Anti-Stick. TIG Lift Arc e comando remoto ampliano le possibilità in officina e montaggio.",
       "checks": [
         "Indicate processo, materiale e denominazione completa del modello. Confrontate i dati della versione desiderata con l’alimentazione disponibile.",
-        "Per comandi digitali e programmi JOB, confrontate Delta Digital. Se cercate un apparecchio a elettrodo semplice e portatile, considerate anche i-1600."
+        "Per Hot Start e Arc Force regolabili, confrontate Delta Digital. Per un inverter a elettrodo semplice e portatile, considerate anche i-1600."
       ]
     },
     "en": {
-      "intro": "Delta 1800 combines stick welding and TIG Lift. Delta Digital and Delta Digital DS, listed separately, are distinct versions rather than alternative names.",
+      "intro": "Stick welding inverter for rutile, basic and cellulosic (CEL) electrodes, with Force Arc and Anti-Stick. TIG Lift Arc and remote control extend its workshop and site applications.",
       "checks": [
         "State the process, material and full model designation. Compare the technical data for the required version with your available supply.",
-        "For digital controls and JOB programs, compare Delta Digital. If you need a straightforward portable stick welder, include i-1600 in your selection."
+        "For adjustable Hot Start and Arc Force, compare Delta Digital. For a straightforward portable stick welder, also consider i-1600."
       ]
     },
     "es": {
-      "intro": "Delta 1800 combina soldadura con electrodo revestido y TIG Lift. Delta Digital y Delta Digital DS, indicadas por separado, son versiones distintas y no nombres alternativos.",
+      "intro": "Inversor para electrodos rutílicos, básicos y celulósicos (CEL), con Force Arc y Anti-Stick. TIG Lift Arc y mando a distancia amplían su uso en taller y montaje.",
       "checks": [
         "Indique el proceso, el material y la denominación completa del modelo. Compare los datos de la versión necesaria con la alimentación disponible.",
-        "Para controles digitales y programas JOB, compare Delta Digital. Si necesita un equipo sencillo y portátil de electrodo revestido, incluya i-1600 en su selección."
+        "Para Hot Start y Arc Force ajustables, compare Delta Digital. Si busca un inversor de electrodo sencillo y portátil, considere también i-1600."
       ]
     }
   },
@@ -1653,6 +1653,66 @@
       "checks": [
         "La selección depende del sustrato, la capa que se desea retirar, la geometría de la pieza y el acabado requerido. Una evaluación de la aplicación determina el equipo y los ajustes adecuados.",
         "Planifique el puesto antes de la puesta en servicio: zona láser protegida y vigilada, protección láser adecuada, extracción y personal instruido. Defina las medidas con la persona responsable de seguridad láser y según la documentación del equipo."
+      ]
+    }
+  },
+  "mpt-3001": {
+    "sources": [
+      "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "MyPlasm CNC manual 1.2",
+      "P.json#mpt-3001"
+    ],
+    "fact_keys": [
+      "Arbeitsbereich",
+      "Steuerung"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "theta-60-aut"
+      },
+      {
+        "kind": "product",
+        "id": "theta-120-aut"
+      },
+      {
+        "kind": "product",
+        "id": "mpt-2501"
+      }
+    ],
+    "de": {
+      "intro": "Von der Zeichnung zum Zuschnitt: MyPlasm und MiniCAD, der 21-Zoll-Bedienplatz und die Höhenregelung bilden die Grundlage für Einzelteile und wiederkehrende Blechkonturen.",
+      "checks": [
+        "Senden Sie Werkstoff, Materialstärke, Zeichnungsformat und Stückzahl. Geben Sie an, ob Innenkonturen eingestochen werden oder der Schnitt an der Blechkante beginnt.",
+        "Theta-Stromquelle, Brenner und Verschleissteile passend zur Aufgabe auswählen. Eine Konstruktionsauslegung für dicke Bleche ist keine Zusage zur Einstechleistung."
+      ]
+    },
+    "fr": {
+      "intro": "Du dessin à la pièce découpée : MyPlasm, MiniCAD, le poste de commande de 21 pouces et la régulation de hauteur accompagnent les pièces uniques et les contours récurrents.",
+      "checks": [
+        "Précisez matériau, épaisseur, format de dessin et quantité. Indiquez si les contours intérieurs nécessitent un perçage plasma ou si la coupe commence au bord de la tôle.",
+        "Choisissez source Theta, torche et consommables selon le travail. Une construction conçue pour des tôles épaisses ne garantit pas la capacité de perçage."
+      ]
+    },
+    "it": {
+      "intro": "Dal disegno al pezzo tagliato: MyPlasm, MiniCAD, postazione da 21 pollici e controllo altezza per pezzi singoli e sagome ripetitive.",
+      "checks": [
+        "Indicate materiale, spessore, formato del disegno e quantità. Specificate se i contorni interni richiedono sfondamento plasma o se il taglio inizia dal bordo della lamiera.",
+        "Scegliere generatore Theta, torcia e consumabili in base al lavoro. Una struttura progettata per lamiere spesse non garantisce la capacità di sfondamento."
+      ]
+    },
+    "en": {
+      "intro": "From drawing to cut part: MyPlasm, MiniCAD, the 21-inch operator station and height control support one-off parts and repeat sheet contours.",
+      "checks": [
+        "Send the material, thickness, drawing format and quantity. Specify whether internal contours require piercing or the cut starts at the sheet edge.",
+        "Choose the Theta power source, torch and consumables for the task. A structure designed for thick sheets does not establish piercing capacity."
+      ]
+    },
+    "es": {
+      "intro": "Del dibujo a la pieza cortada: MyPlasm, MiniCAD, puesto de control de 21 pulgadas y control de altura para piezas individuales y contornos repetitivos.",
+      "checks": [
+        "Indique material, espesor, formato de dibujo y cantidad. Especifique si los contornos interiores requieren perforación plasma o si el corte empieza en el borde de la chapa.",
+        "Elija fuente Theta, antorcha y consumibles según el trabajo. Una estructura diseñada para chapas gruesas no garantiza la capacidad de perforación."
       ]
     }
   }

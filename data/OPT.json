@@ -1,7 +1,7 @@
 {
   "_kommentar": "Optionen und Zusatzleistungen je Geraet, woertlich aus der MAHE-Preisliste. Nie mit Preisen. Je Eintrag: t = Bezeichnung, s = Zusatz (darf fehlen).",
   "mpt-3001": {
-    "src": "MAHE Preisliste 2026 V11, S. 67, Optionen zum Plasmaschneidtisch MPT 3001 / 2501",
+    "src": "MAHE Preisliste 2026 V11, S. 67, Optionen zum Plasmaschneidtisch MPT 3001 / 2501; MAHE MPT 3001 Prospekt 2026 V1, p. 3 (remote control optional)",
     "de": [
       {
         "t": "Filteranlage AT 1000",
@@ -22,6 +22,9 @@
       {
         "t": "Verschleissteilebox PSAB 180",
         "s": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+      },
+      {
+        "t": "Fernbedienung"
       }
     ],
     "fr": [
@@ -44,6 +47,9 @@
       {
         "t": "Coffret de pièces d'usure PSAB 180",
         "s": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+      },
+      {
+        "t": "Télécommande"
       }
     ],
     "it": [
@@ -66,6 +72,9 @@
       {
         "t": "Set di parti d’usura PSAB 180",
         "s": "parti d’usura per la torcia al plasma PSAB 180"
+      },
+      {
+        "t": "Telecomando"
       }
     ],
     "en": [
@@ -88,6 +97,9 @@
       {
         "t": "PSAB 180 consumables kit",
         "s": "Replacement consumables for the PSAB 180 plasma torch"
+      },
+      {
+        "t": "Remote control"
       }
     ],
     "es": [
@@ -110,6 +122,9 @@
       {
         "t": "Juego de consumibles PSAB 180",
         "s": "Consumibles de recambio para la antorcha de plasma PSAB 180"
+      },
+      {
+        "t": "Mando a distancia"
       }
     ]
   },

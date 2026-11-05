@@ -166,9 +166,10 @@
   "vt": "MMA",
   "name": "i-1600",
   "img": "2020/03/i-1600-300x300.png",
-  "desc": "Einfach zu bedienender, robuster Elektrodeninverter.",
+  "desc": "Tragbarer 230-V-Elektrodeninverter für Montage und Reparatur, mit WIG Lift Arc und 5 m Zuleitung.",
   "specs": {
-   "Verfahren": "MMA (Elektrode)",
+   "Verfahren": "MMA · WIG-Lift",
+   "Strombereich": "15–150 A",
    "Netz": "1~ 230 V",
    "Bauart": "tragbar",
    "Bedienung": "einfach"
@@ -181,9 +182,10 @@
   "vt": "MMA",
   "name": "Delta 1800",
   "img": "2019/10/Delta-300x300.png",
-  "desc": "Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.",
+  "desc": "Tragbarer Elektrodeninverter für Werkstatt und Baustelle, auch mit WIG Lift Arc und Anschluss für eine Fernbedienung.",
   "specs": {
    "Verfahren": "MMA · WIG-Lift",
+   "Strombereich": "4–160 A",
    "Netz": "1~ 230 V",
    "Bauart": "tragbar"
   }
@@ -195,11 +197,11 @@
   "vt": "MMA",
   "name": "Delta Digital",
   "img": "2019/10/deltadigital-300x300.png",
-  "desc": "Digitaler Multifunktions-Inverter für den Profi.",
+  "desc": "Digitaler Elektrodeninverter mit einstellbarem Start- und Lichtbogenverhalten, Anti-Stick und Funktion zum Fugenhobeln.",
   "specs": {
    "Verfahren": "MMA · WIG",
    "Bedienung": "digital",
-   "Speicher": "JOB-Programme"
+   "Extras": "Arc Force / Hot Start"
   }
  },
  {
@@ -344,13 +346,13 @@
   "vt": "Plasma CNC",
   "name": "MPT 3001",
   "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 3000 x 1500 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.",
+  "desc": "CNC-Plasmaschneidanlage für 3000 × 1500 mm mit MyPlasm, MiniCAD und 21-Zoll-Industrie-PC. THC, ohmischer Sensor und Kreuzlaser unterstützen Einrichtung und Schnitt; als Set mit Theta HSC AUT erhältlich.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
-   "Arbeitsbereich": "3000 x 1500 mm",
-   "Stromquelle": "Theta 060 / 120 / 180 HSC",
+   "Arbeitsbereich": "3000 × 1500 mm",
+   "Steuerung": "MyPlasm + MiniCAD",
+   "Stromquelle": "Theta 60 / 120 / 180 HSC AUT",
    "Schneidstrom": "60 A / 120 A / 180 A",
-   "Steuerung": "MyPlasm CNC",
    "Dateiformate": "DXF, HPGL/PLT",
    "Ausführung": "Set mit Stromquelle"
   }

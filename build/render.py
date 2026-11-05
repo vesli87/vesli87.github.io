@@ -1279,13 +1279,16 @@ def pcard(lang, p):
     specs = "".join(f"<span>{e(C.trV(lang, v))}</span>"
                     for v in list(p["specs"].values())[:3])
     url = C.u_prod(lang, p)
+    features = C.cardFeatures(lang, p)
+    highlights = ('<ul class="pcard-highlights">' + ''.join(f'<li>{e(text)}</li>' for text in features) + '</ul>'
+                  if features else '')
     return f"""<article class="pcard">
   <a class="pcard-link" href="{e(url)}">
     <div class="imgbox">
       {img_tag(p['img'], "(max-width:640px) calc(100vw - 68px), (max-width:1000px) calc(50vw - 76px), (max-width:1400px) calc((100vw - 212px) / 3), 396px",
                alt=f"{C.pFullName(lang, p)}: {C.pDesc(lang, p)}")}</div>
     <div class="body"><h3>{e(C.pName(lang, p))}</h3><p>{e(C.pDesc(lang, p))}</p>
-      <div class="spec">{specs}</div></div>
+      {highlights}<div class="spec">{specs}</div></div>
   </a>
   <div class="foot"><span class="poa">{e(C.t(lang,'poa'))}</span>
     <button class="add" type="button" data-add="{e(p['id'])}" data-name="{e(C.pName(lang, p))}"

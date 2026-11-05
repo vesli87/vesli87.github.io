@@ -181,6 +181,14 @@ def specs():
 # Die Eintraege muessen exakt stimmen - fehlt oder aendert sich eine Zeile,
 # greift die Ausnahme nicht mehr.
 BEWUSST = {
+    # New, owner-supplied MAHE MPT 3001 brochure 2026 V1, page 5.
+    # Exact source hash and local original: data/MPT_BROCHURE.json.
+    # Older AUT website bullets invert both limits ("over" instead of "<").
+    "theta-120-aut": {
+        "fehlt": ["Trennschnitt über 55 mm", "Qualitätsschnitt über 38 mm"],
+        "zuviel": ["Trennschnitt < 55 mm", "Empfohlener Schnitt < 38 mm"],
+        "grund": "Neuere MAHE-Unterlage MPT 3001 Prospekt 2026 V1, S. 5: getrennte, stromquellenbezogene Schnittgrenzen",
+    },
     # Both current HSC/AUT pages link this datasheet: page 2 explicitly lists
     # Trennschnitt < 35mm and Empfohlener Schnitt < 25mm. The page bullets
     # disagree (HSC: max.; AUT: ueber). Preserve their raw snapshots and use
@@ -246,6 +254,9 @@ def main():
                            capture_output=True)
         globals()["SRC"] = json.loads((C.BUILD / "mahe_besonderheiten.json").read_text("utf-8"))
         C.MAHE_SPECS = json.loads((C.BUILD / "mahe_specs.json").read_text("utf-8"))
+        C.MAHE_SPECS.update(C.MAHE_CWK_SPECS)
+        C.MAHE_SPECS.update(C.SUPPLIED_SPECS)
+        C.apply_brochure_spec_overrides(C.MAHE_SPECS)
 
     ours_dev = json.loads((C.DATA / "HL_DEVICE.json").read_text("utf-8"))
     ours_pan = json.loads((C.DATA / "PANEL_HL_DEVICE.json").read_text("utf-8"))

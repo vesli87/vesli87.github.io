@@ -59,5 +59,97 @@
         "es": "Nuevo panel de control gráfico X para HyperMIG X e HyperMIG TWIN."
       }
     }
+  ],
+  "mpt-3001": [
+    {
+      "img": "mpt-3001/kreuzlaser-positionsbestimmung.png",
+      "original": "/assets/img/mpt-3001/kreuzlaser-positionsbestimmung.png",
+      "cap": {
+        "de": "Kreuzlaser zur Positionsbestimmung",
+        "fr": "Laser en croix pour le positionnement",
+        "it": "Laser a croce per il posizionamento",
+        "en": "Cross-line laser for positioning",
+        "es": "Láser de cruz para el posicionamiento"
+      },
+      "alt": {
+        "de": "MAHE MPT 3001: Kreuzlaser zur Positionsbestimmung",
+        "fr": "MAHE MPT 3001: Laser en croix pour le positionnement",
+        "it": "MAHE MPT 3001: Laser a croce per il posizionamento",
+        "en": "MAHE MPT 3001: Cross-line laser for positioning",
+        "es": "MAHE MPT 3001: Láser de cruz para el posicionamiento"
+      }
+    },
+    {
+      "img": "mpt-3001/verlaengerte-basis.png",
+      "original": "/assets/img/mpt-3001/verlaengerte-basis.png",
+      "cap": {
+        "de": "Verlängerte Basis für einen freien Beladebereich",
+        "fr": "Base prolongée pour dégager la zone de chargement",
+        "it": "Base prolungata per liberare la zona di carico",
+        "en": "Extended base to clear the loading area",
+        "es": "Base prolongada para despejar la zona de carga"
+      },
+      "alt": {
+        "de": "MAHE MPT 3001: Verlängerte Basis für einen freien Beladebereich",
+        "fr": "MAHE MPT 3001: Base prolongée pour dégager la zone de chargement",
+        "it": "MAHE MPT 3001: Base prolungata per liberare la zona di carico",
+        "en": "MAHE MPT 3001: Extended base to clear the loading area",
+        "es": "MAHE MPT 3001: Base prolongada para despejar la zona de carga"
+      }
+    },
+    {
+      "img": "mpt-3001/z-achse-spindelantrieb.png",
+      "original": "/assets/img/mpt-3001/z-achse-spindelantrieb.png",
+      "cap": {
+        "de": "Robuste Z-Achse mit Spindelantrieb",
+        "fr": "Axe Z robuste avec entraînement par vis",
+        "it": "Asse Z robusto con azionamento a vite",
+        "en": "Heavy-duty Z axis with spindle drive",
+        "es": "Eje Z robusto con accionamiento por husillo"
+      },
+      "alt": {
+        "de": "MAHE MPT 3001: Robuste Z-Achse mit Spindelantrieb",
+        "fr": "MAHE MPT 3001: Axe Z robuste avec entraînement par vis",
+        "it": "MAHE MPT 3001: Asse Z robusto con azionamento a vite",
+        "en": "MAHE MPT 3001: Heavy-duty Z axis with spindle drive",
+        "es": "MAHE MPT 3001: Eje Z robusto con accionamiento por husillo"
+      }
+    },
+    {
+      "img": "mpt-3001/auflagebleche.png",
+      "original": "/assets/img/mpt-3001/auflagebleche.png",
+      "cap": {
+        "de": "Gebogene oder gerade Auflagebleche",
+        "fr": "Lames de support courbes ou droites",
+        "it": "Lamelle di supporto curve o diritte",
+        "en": "Curved or straight support slats",
+        "es": "Lamas de apoyo curvas o rectas"
+      },
+      "alt": {
+        "de": "MAHE MPT 3001: Gebogene oder gerade Auflagebleche",
+        "fr": "MAHE MPT 3001: Lames de support courbes ou droites",
+        "it": "MAHE MPT 3001: Lamelle di supporto curve o diritte",
+        "en": "MAHE MPT 3001: Curved or straight support slats",
+        "es": "MAHE MPT 3001: Lamas de apoyo curvas o rectas"
+      }
+    },
+    {
+      "img": "mpt-3001/stahlkonstruktion.png",
+      "original": "/assets/img/mpt-3001/stahlkonstruktion.png",
+      "cap": {
+        "de": "Massive, vollverschweisste Stahlkonstruktion",
+        "fr": "Construction robuste en acier entièrement soudé",
+        "it": "Robusta struttura in acciaio interamente saldata",
+        "en": "Robust, fully welded steel construction",
+        "es": "Estructura robusta de acero totalmente soldado"
+      },
+      "alt": {
+        "de": "MAHE MPT 3001: Massive, vollverschweisste Stahlkonstruktion",
+        "fr": "MAHE MPT 3001: Construction robuste en acier entièrement soudé",
+        "it": "MAHE MPT 3001: Robusta struttura in acciaio interamente saldata",
+        "en": "MAHE MPT 3001: Robust, fully welded steel construction",
+        "es": "MAHE MPT 3001: Estructura robusta de acero totalmente soldado"
+      }
+    }
   ]
 }

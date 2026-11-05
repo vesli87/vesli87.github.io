@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated": "2026-11-03",
+ "generated": "2026-11-05",
  "seller": {
   "name": "VES-TECH Swiss",
   "url": "https://www.ves-tech.ch/",
@@ -12778,11 +12778,11 @@
     "es": "MMA"
    },
    "description": {
-    "de": "Einfach zu bedienender, robuster Elektrodeninverter.",
-    "fr": "Poste à onduleur pour le soudage à l’électrode, robuste et simple d’utilisation.",
-    "it": "Inverter a elettrodo robusto e semplice da usare.",
-    "en": "Robust stick welding inverter with straightforward controls.",
-    "es": "Inversor robusto de soldadura con electrodo revestido y controles sencillos."
+    "de": "Tragbarer 230-V-Elektrodeninverter für Montage und Reparatur, mit WIG Lift Arc und 5 m Zuleitung.",
+    "fr": "Onduleur MMA portable 230 V pour le montage et la réparation, avec TIG Lift Arc et câble d’alimentation de 5 m.",
+    "it": "Inverter MMA portatile a 230 V per montaggio e riparazioni, con TIG Lift Arc e cavo di alimentazione da 5 m.",
+    "en": "Portable 230 V stick welding inverter for installation and repairs, with TIG Lift Arc and a 5 m mains cable.",
+    "es": "Inversor MMA portátil de 230 V para montaje y reparación, con TIG Lift Arc y cable de alimentación de 5 m."
    },
    "highlights": {
     "de": [
@@ -12795,7 +12795,7 @@
      "100-V-Technologie"
     ],
     "fr": [
-     "Soudage avec des électrodes basiques, rutiles et cellulosiques",
+     "Soudage avec des électrodes basiques, rutiles et cellulosiques (CEL)",
      "Force Arc",
      "Fonction Anti-Stick",
      "TIG Lift Arc",
@@ -12804,7 +12804,7 @@
      "Technologie 100 V"
     ],
     "it": [
-     "Saldatura con elettrodi basici, rutilici e cellulosici",
+     "Saldatura con elettrodi basici, rutilici e cellulosici (CEL)",
      "Force Arc",
      "Funzione Anti-Stick",
      "TIG Lift Arc",
@@ -12813,7 +12813,7 @@
      "Tecnologia 100 V"
     ],
     "en": [
-     "Welds with basic, rutile and cellulosic electrodes",
+     "Welds with basic, rutile and cellulosic electrodes (CEL)",
      "Force Arc",
      "Anti-Stick function",
      "TIG Lift Arc",
@@ -12822,7 +12822,7 @@
      "100 V technology"
     ],
     "es": [
-     "Suelda con electrodos básicos, de rutilo y celulósicos",
+     "Suelda con electrodos básicos, de rutilo y celulósicos (CEL)",
      "Force Arc",
      "Función Anti-Stick",
      "TIG Lift Arc",
@@ -12854,27 +12854,27 @@
    },
    "specs": {
     "de": {
-     "Verfahren": "MMA (Elektrode)",
+     "Verfahren": "MMA · WIG-Lift",
      "Bauart": "tragbar",
      "Bedienung": "einfach"
     },
     "fr": {
-     "Procédé": "MMA (électrode)",
+     "Procédé": "MMA · TIG-Lift",
      "Type": "portable",
      "Commande": "simple"
     },
     "it": {
-     "Processo": "MMA (elettrodo)",
+     "Processo": "MMA · TIG-Lift",
      "Tipo": "portatile",
      "Comando": "semplice"
     },
     "en": {
-     "Process": "MMA (stick electrode)",
+     "Process": "MMA · TIG Lift",
      "Design": "Portable",
      "Controls": "Simple"
     },
     "es": {
-     "Proceso": "MMA (electrodo revestido)",
+     "Proceso": "MMA · TIG Lift",
      "Diseño": "Portátil",
      "Controles": "Sencillo"
     }
@@ -13425,11 +13425,11 @@
     "es": "MMA"
    },
    "description": {
-    "de": "Multifunktions-Elektrodeninverter für Werkstatt und Baustelle.",
-    "fr": "Poste à onduleur multifonction pour le soudage à l’électrode, en atelier et sur chantier.",
-    "it": "Inverter a elettrodo multifunzione per officina e cantiere.",
-    "en": "Multifunction stick welding inverter for workshop and construction site use.",
-    "es": "Inversor multifunción de soldadura con electrodo revestido para taller y obra."
+    "de": "Tragbarer Elektrodeninverter für Werkstatt und Baustelle, auch mit WIG Lift Arc und Anschluss für eine Fernbedienung.",
+    "fr": "Onduleur MMA portable pour l’atelier et le chantier, avec TIG Lift Arc et raccordement pour télécommande.",
+    "it": "Inverter MMA portatile per officina e cantiere, con TIG Lift Arc e collegamento per comando remoto.",
+    "en": "Portable stick welding inverter for workshop and site work, with TIG Lift Arc and a remote-control connection.",
+    "es": "Inversor MMA portátil para taller y obra, con TIG Lift Arc y conexión para mando a distancia."
    },
    "highlights": {
     "de": [
@@ -13441,7 +13441,7 @@
      "WIG Lift Arc"
     ],
     "fr": [
-     "Soudage avec des électrodes basiques, rutiles et cellulosiques",
+     "Soudage avec des électrodes basiques, rutiles et cellulosiques (CEL)",
      "Force Arc",
      "Fonction Anti-Stick",
      "Câble d'alimentation de 5 mètres",
@@ -13449,7 +13449,7 @@
      "TIG Lift Arc"
     ],
     "it": [
-     "Saldatura con elettrodi basici, rutilici e cellulosici",
+     "Saldatura con elettrodi basici, rutilici e cellulosici (CEL)",
      "Force Arc",
      "Funzione Anti-Stick",
      "Cavo di alimentazione da 5 metri",
@@ -13457,7 +13457,7 @@
      "TIG Lift Arc"
     ],
     "en": [
-     "Welds with basic, rutile and cellulosic electrodes",
+     "Welds with basic, rutile and cellulosic electrodes (CEL)",
      "Force Arc",
      "Anti-Stick function",
      "5-metre supply cable",
@@ -13465,7 +13465,7 @@
      "TIG Lift Arc"
     ],
     "es": [
-     "Suelda con electrodos básicos, de rutilo y celulósicos",
+     "Suelda con electrodos básicos, de rutilo y celulósicos (CEL)",
      "Force Arc",
      "Función Anti-Stick",
      "Cable de alimentación de 5 metros",
@@ -14062,11 +14062,11 @@
     "es": "MMA"
    },
    "description": {
-    "de": "Digitaler Multifunktions-Inverter für den Profi.",
-    "fr": "Onduleur multifonction numérique pour les professionnels.",
-    "it": "Inverter multifunzione digitale per professionisti.",
-    "en": "Digital multifunction inverter for professional use.",
-    "es": "Inversor multifunción digital para uso profesional."
+    "de": "Digitaler Elektrodeninverter mit einstellbarem Start- und Lichtbogenverhalten, Anti-Stick und Funktion zum Fugenhobeln.",
+    "fr": "Onduleur MMA numérique avec réglage de l’amorçage et du comportement d’arc, Anti-Stick et fonction de gougeage.",
+    "it": "Inverter MMA digitale con regolazione dell’innesco e del comportamento dell’arco, Anti-Stick e funzione di scriccatura.",
+    "en": "Digital stick welding inverter with adjustable starting and arc behaviour, Anti-Stick and a gouging function.",
+    "es": "Inversor MMA digital con ajuste del arranque y comportamiento del arco, Anti-Stick y función de ranurado."
    },
    "highlights": {
     "de": [
@@ -14082,7 +14082,7 @@
      "Fernbedienung"
     ],
     "fr": [
-     "Soudage avec des électrodes basiques, rutiles et cellulosiques",
+     "Soudage avec des électrodes basiques, rutiles et cellulosiques (CEL)",
      "Arc Force réglable",
      "Hot Start réglable",
      "Fonction Anti-Stick",
@@ -14094,7 +14094,7 @@
      "Télécommande"
     ],
     "it": [
-     "Saldatura con elettrodi basici, rutilici e cellulosici",
+     "Saldatura con elettrodi basici, rutilici e cellulosici (CEL)",
      "Arc Force regolabile",
      "Hot Start regolabile",
      "Funzione Anti-Stick",
@@ -14106,7 +14106,7 @@
      "Telecomando"
     ],
     "en": [
-     "Welds with basic, rutile and cellulosic electrodes",
+     "Welds with basic, rutile and cellulosic electrodes (CEL)",
      "Adjustable Arc Force",
      "Adjustable Hot Start",
      "Anti-Stick function",
@@ -14118,7 +14118,7 @@
      "Remote control"
     ],
     "es": [
-     "Suelda con electrodos básicos, de rutilo y celulósicos",
+     "Suelda con electrodos básicos, de rutilo y celulósicos (CEL)",
      "Arc Force ajustable",
      "Hot Start ajustable",
      "Función Anti-Stick",
@@ -14155,27 +14155,27 @@
     "de": {
      "Verfahren": "MMA · WIG",
      "Bedienung": "digital",
-     "Speicher": "JOB-Programme"
+     "Extras": "Arc Force / Hot Start"
     },
     "fr": {
      "Procédé": "MMA · TIG",
      "Commande": "numérique",
-     "Mémoire": "programmes JOB"
+     "Extras": "Arc Force / Hot Start"
     },
     "it": {
      "Processo": "MMA · TIG",
      "Comando": "digitale",
-     "Memoria": "programmi JOB"
+     "Extras": "Arc Force / Hot Start"
     },
     "en": {
      "Process": "MMA · TIG",
      "Controls": "Digital",
-     "Memory": "JOB programs"
+     "Extras": "Arc Force / Hot Start"
     },
     "es": {
      "Proceso": "MMA · TIG",
      "Controles": "Digital",
-     "Memoria": "Programas JOB"
+     "Extras": "Arc Force / Hot Start"
     }
    },
    "techdata": {
@@ -21319,8 +21319,8 @@
      "Automation-Schnittstelle",
      "Niedrige Einsatzkosten",
      "High-Performance-Schneiden",
-     "Trennschnitt über 55 mm",
-     "Qualitätsschnitt über 38 mm",
+     "Trennschnitt < 55 mm",
+     "Empfohlener Schnitt < 38 mm",
      "Stabile Lift-Arc-Zündung",
      "Maximale Produktivität",
      "Lochblech-Schneidfunktion",
@@ -21331,8 +21331,8 @@
      "Interface d’automatisation",
      "Faibles coûts d'exploitation",
      "Découpe haute performance",
-     "Coupe de séparation supérieure à 55 mm",
-     "Coupe de qualité supérieure à 38 mm",
+     "Coupe de séparation < 55 mm",
+     "Coupe recommandée < 38 mm",
      "Amorçage Lift Arc stable",
      "Productivité maximale",
      "Fonction de découpe de tôle perforée",
@@ -21343,8 +21343,8 @@
      "Interfaccia di automazione",
      "Bassi costi d'esercizio",
      "Taglio ad alte prestazioni",
-     "Taglio di separazione oltre 55 mm",
-     "Taglio di qualità oltre 38 mm",
+     "Taglio di separazione < 55 mm",
+     "Taglio consigliato < 38 mm",
      "Innesco Lift Arc stabile",
      "Massima produttività",
      "Funzione di taglio per lamiera forata",
@@ -21355,8 +21355,8 @@
      "Automation interface",
      "Low operating costs",
      "High-performance cutting",
-     "Severance cut over 55 mm",
-     "Quality cut over 38 mm",
+     "Severance cut < 55 mm",
+     "Recommended cut < 38 mm",
      "Stable Lift Arc ignition",
      "Maximum productivity",
      "Perforated sheet cutting function",
@@ -21367,8 +21367,8 @@
      "Interfaz de automatización",
      "Bajos costes de funcionamiento",
      "Corte de alto rendimiento",
-     "Corte de separación superior a 55 mm",
-     "Corte de calidad superior a 38 mm",
+     "Corte de separación < 55 mm",
+     "Corte recomendado < 38 mm",
      "Encendido Lift Arc estable",
      "Máxima productividad",
      "Función de corte de chapa perforada",
@@ -21500,7 +21500,7 @@
        {
         "label": "Trennschnitt",
         "values": {
-         "120": "< 50mm"
+         "120": "< 55mm"
         }
        },
        {
@@ -21607,7 +21607,7 @@
        {
         "label": "Coupe de séparation",
         "values": {
-         "120": "< 50mm"
+         "120": "< 55mm"
         }
        },
        {
@@ -21714,7 +21714,7 @@
        {
         "label": "Taglio di separazione",
         "values": {
-         "120": "< 50mm"
+         "120": "< 55mm"
         }
        },
        {
@@ -21821,7 +21821,7 @@
        {
         "label": "Severance cut",
         "values": {
-         "120": "< 50mm"
+         "120": "< 55mm"
         }
        },
        {
@@ -21928,7 +21928,7 @@
        {
         "label": "Corte de separación",
         "values": {
-         "120": "< 50mm"
+         "120": "< 55mm"
         }
        },
        {
@@ -22035,87 +22035,87 @@
     "es": "Mesas de corte"
    },
    "description": {
-    "de": "Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 3000 x 1500 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.",
-    "fr": "Table de découpe plasma CNC professionnelle, surface de travail 3000 x 1500 mm, livrée en ensemble avec une source de courant MAHE Theta.",
-    "it": "Tavolo di taglio al plasma CNC professionale, area di lavoro 3000 x 1500 mm, fornito in set con un generatore MAHE Theta.",
-    "en": "Professional CNC plasma cutting table with a 3000 x 1500 mm working area, supplied as a set with a MAHE Theta-series power source.",
-    "es": "Mesa profesional de corte por plasma CNC con área de trabajo de 3000 x 1500 mm, suministrada en conjunto con una fuente de corriente de la serie MAHE Theta."
+    "de": "CNC-Plasmaschneidanlage für 3000 × 1500 mm mit MyPlasm, MiniCAD und 21-Zoll-Industrie-PC. THC, ohmischer Sensor und Kreuzlaser unterstützen Einrichtung und Schnitt; als Set mit Theta HSC AUT erhältlich.",
+    "fr": "Installation de découpe plasma CNC de 3000 × 1500 mm avec MyPlasm, MiniCAD et PC industriel de 21 pouces. THC, capteur ohmique et laser en croix pour le réglage et la coupe ; disponible en ensemble avec Theta HSC AUT.",
+    "it": "Impianto di taglio plasma CNC da 3000 × 1500 mm con MyPlasm, MiniCAD e PC industriale da 21 pollici. THC, sensore ohmico e laser a croce per impostazione e taglio; disponibile in set con Theta HSC AUT.",
+    "en": "CNC plasma cutting system for 3000 × 1500 mm with MyPlasm, MiniCAD and a 21-inch industrial PC. THC, an ohmic sensor and a cross-line laser support setup and cutting; available as a set with Theta HSC AUT.",
+    "es": "Sistema de corte plasma CNC de 3000 × 1500 mm con MyPlasm, MiniCAD y PC industrial de 21 pulgadas. THC, sensor óhmico y láser de cruz para ajuste y corte; disponible en conjunto con Theta HSC AUT."
    },
    "highlights": {
     "de": [
-     "Professioneller CNC-Plasmaschneidtisch, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie",
-     "Arbeitsbereich 3000 x 1500 mm",
-     "Stromquelle wahlweise Theta 060 HSC, Theta 120 HSC oder Theta 180 HSC",
-     "Schneidstrom 60 A, 120 A oder 180 A",
-     "Steuerung über das System CNC von MAHE",
-     "Import von 2D-Zeichnungen im DXF-Format und im HPGL/PLT-Format",
-     "Schnittfugenkorrektur, Einfahrbahnen, Ausfahrbahnen und Schneidreihenfolge werden automatisch erzeugt",
-     "Torch Height Control: die Schnitthöhe wird als Sollspannung in Volt vorgegeben und über die Lichtbogenspannung geregelt",
-     "Höhenabtastung des Materials vor jedem Einstich",
-     "Schneidparameter je Material speicherbar; vor dem Schnitt zeigt die Bahnanalyse Einstichzahl, Schnittlänge und geschätzte Schneidzeit",
-     "Markieren und Anreissen mit eigener Geschwindigkeit über eine eigene Layerfarbe",
-     "Bedienkonsole mit Windows-Computer und Bildschirm am Tisch",
-     "Inbetriebnahme und Einweisung durch VES-TECH Swiss"
+     "MyPlasm und MiniCAD inklusive: Zeichnungen vorbereiten und den CNC-Schneidablauf am Tisch steuern",
+     "Zeichnungsimport: DXF sowie HPGL/PLT übernehmen; Schnittfugenkorrektur, Ein- und Ausfahrbahnen sowie Schneidreihenfolge automatisch vorbereiten",
+     "21-Zoll-Industrie-PC mit Windows 11: Software und Bedienung direkt am Schneidtisch",
+     "Elektronische THC: Die Lichtbogenspannung regelt die Brennerhöhe während des Schnitts",
+     "Ohmischer Sensor: Die Materialoberfläche vor dem Einstich zur Höhenbestimmung erfassen",
+     "Kreuzlaser: Die Position am Werkstück bestimmen und den Ablauf beim Einrichten simulieren",
+     "Schneiden und Markieren: Anreissnadel oder Gravierstift für Markierungen und Biegelinien; Piercen zur Kennzeichnung von Bohrpositionen",
+     "Geschützter Antrieb: Zahnstangenantrieb und Brennerhalterung sind geschützt; die robuste Z-Achse arbeitet mit Spindelantrieb",
+     "Verlängerte Basis: Das Portal fährt aus dem Beladebereich, damit die Tischfläche zum Auflegen des Blechs frei wird",
+     "Auflagebleche: Gebogene oder gerade Ausführung, damit ein Querschnitt nicht durchgehend entlang eines Auflageblechs verläuft",
+     "Vollverschweisste Stahlkonstruktion: Solider Aufbau für Werkstatt und Fertigung",
+     "Theta HSC AUT im Set: Wahlweise 60, 120 oder 180 A für Stahl, Edelstahl und Aluminium; Schneidaufgabe und Stromquelle gemeinsam abstimmen",
+     "Inbetriebnahme und Einweisung: Die Konfiguration und Übergabe werden direkt mit VES-TECH Swiss geklärt"
     ],
     "fr": [
-     "Table de découpe plasma CNC professionnelle, livrée en ensemble avec une source de courant MAHE Theta",
-     "Surface de travail 3000 x 1500 mm",
-     "Source de courant au choix : Theta 060 HSC, Theta 120 HSC ou Theta 180 HSC",
-     "Courant de coupe 60 A, 120 A ou 180 A",
-     "Commande par le système CNC de MAHE",
-     "Import de dessins 2D aux formats DXF et HPGL/PLT",
-     "Correction de saignée, entrées et sorties de coupe et ordre de coupe générés automatiquement",
-     "Torch Height Control : la hauteur de coupe est définie en volts et régulée par la tension d'arc",
-     "Palpage de la hauteur du matériau avant chaque perçage",
-     "Paramètres de coupe enregistrables par matériau ; avant la coupe, l'analyse du parcours indique le nombre de perçages, la longueur de coupe et le temps estimé",
-     "Marquage et traçage à une vitesse spécifique, attribués par une couleur de calque dédiée",
-     "Console de commande avec ordinateur Windows et écran sur la table",
-     "Mise en service et formation à l’utilisation par VES-TECH Swiss"
+     "MyPlasm et MiniCAD inclus : Préparer les dessins et piloter la découpe CNC depuis la table",
+     "Import de dessins : Charger les fichiers DXF et HPGL/PLT ; préparer automatiquement la compensation de saignée, les entrées, les sorties et l’ordre de coupe",
+     "PC industriel de 21 pouces avec Windows 11 : Logiciels et commandes directement à la table",
+     "THC électronique : Régler la hauteur de la torche pendant la coupe à partir de la tension d’arc",
+     "Capteur ohmique : Détecter la surface du matériau avant le perçage pour déterminer la hauteur",
+     "Laser en croix : Repérer la position sur la pièce et simuler le parcours lors du réglage",
+     "Découpe et marquage : Pointe à tracer ou stylo de gravure pour les repères et lignes de pliage ; perçage plasma pour repérer les positions de perçage mécanique",
+     "Entraînement protégé : Entraînement par crémaillère et support de torche protégés ; axe Z robuste entraîné par vis",
+     "Base prolongée : Le portique se déplace hors de la zone de chargement pour libérer la table lors de la mise en place de la tôle",
+     "Lames de support : Version courbe ou droite afin qu’une coupe transversale ne suive pas une lame sur toute sa longueur",
+     "Construction en acier entièrement soudé : Structure solide pour l’atelier et la production",
+     "Ensemble Theta HSC AUT : Au choix 60, 120 ou 180 A pour l’acier, l’inox et l’aluminium ; choisir la source selon le travail de découpe",
+     "Mise en service et prise en main : Définir directement avec VES-TECH Swiss la configuration et la remise de l’installation"
     ],
     "it": [
-     "Tavolo di taglio al plasma CNC professionale, fornito in set con un generatore MAHE Theta",
-     "Area di lavoro 3000 x 1500 mm",
-     "Generatore a scelta: Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
-     "Corrente di taglio 60 A, 120 A o 180 A",
-     "Controllo tramite il sistema CNC di MAHE",
-     "Importazione di disegni 2D nei formati DXF e HPGL/PLT",
-     "Correzione del kerf, entrate e uscite di taglio e sequenza di taglio generate automaticamente",
-     "Torch Height Control: l'altezza di taglio si imposta in volt e viene regolata sulla tensione d'arco",
-     "Tastatura dell'altezza del materiale prima di ogni sfondamento",
-     "Parametri di taglio memorizzabili per materiale; prima del taglio l'analisi del percorso indica numero di sfondamenti, lunghezza di taglio e tempo stimato",
-     "Marcatura e tracciatura con velocità propria, assegnate tramite un colore di livello dedicato",
-     "Console di comando con computer Windows e schermo sul tavolo",
-     "Messa in servizio e formazione all’uso a cura di VES-TECH Swiss"
+     "MyPlasm e MiniCAD inclusi: Preparare i disegni e gestire il ciclo di taglio CNC dal banco",
+     "Importazione disegni: Caricare DXF e HPGL/PLT; preparare automaticamente compensazione del solco, ingressi, uscite e sequenza di taglio",
+     "PC industriale da 21 pollici con Windows 11: Software e comandi direttamente sul banco",
+     "THC elettronico: Regolare l’altezza della torcia durante il taglio tramite la tensione d’arco",
+     "Sensore ohmico: Rilevare la superficie del materiale prima dello sfondamento per determinare l’altezza",
+     "Laser a croce: Determinare la posizione sul pezzo e simulare il percorso durante l’impostazione",
+     "Taglio e marcatura: Punta a tracciare o penna di incisione per riferimenti e linee di piegatura; sfondamento plasma per segnare le posizioni dei fori",
+     "Azionamento protetto: Azionamento a cremagliera e supporto torcia protetti; asse Z robusto con azionamento a vite",
+     "Base prolungata: Il portale esce dalla zona di carico e lascia libera la superficie del banco per posare la lamiera",
+     "Lamelle di supporto: Versione curva o diritta, per evitare che il taglio trasversale percorra una lamella per tutta la lunghezza",
+     "Struttura in acciaio interamente saldata: Costruzione solida per officina e produzione",
+     "Set Theta HSC AUT: A scelta 60, 120 o 180 A per acciaio, inox e alluminio; scegliere il generatore in base al lavoro di taglio",
+     "Messa in servizio e istruzione: Concordare configurazione e consegna direttamente con VES-TECH Swiss"
     ],
     "en": [
-     "Professional CNC plasma cutting table supplied as a set with a MAHE Theta-series power source",
-     "Working area 3000 x 1500 mm",
-     "Choice of Theta 060 HSC, Theta 120 HSC or Theta 180 HSC power source",
-     "Cutting current 60 A, 120 A or 180 A",
-     "Controlled by the MAHE CNC system",
-     "Import of 2D drawings in DXF and HPGL/PLT formats",
-     "Kerf compensation, lead-ins, lead-outs and cutting sequence are generated automatically",
-     "Torch Height Control: cutting height is set as a target voltage in volts and regulated using the arc voltage",
-     "Material height sensing before each pierce",
-     "Cutting parameters can be saved for each material; before cutting, the toolpath analysis shows pierce count, cutting length and estimated cutting time",
-     "Marking and scribing at a separate speed using a dedicated layer colour",
-     "Control console with Windows computer and display at the table",
-     "Commissioning and instruction by VES-TECH Swiss"
+     "MyPlasm and MiniCAD included: Prepare drawings and control the CNC cutting sequence at the table",
+     "Drawing import: Load DXF and HPGL/PLT files; automatically prepare kerf compensation, lead-ins, lead-outs and cutting order",
+     "21-inch industrial PC with Windows 11: Software and controls directly at the cutting table",
+     "Electronic THC: Arc voltage regulates torch height during the cut",
+     "Ohmic sensor: Detect the material surface before piercing to establish height",
+     "Cross-line laser: Locate the position on the workpiece and simulate the path during setup",
+     "Cutting and marking: Scribing pin or engraving pen for marks and bend lines; plasma piercing to mark drilling positions",
+     "Protected drive: Protected rack drive and torch mount, with a heavy-duty spindle-driven Z axis",
+     "Extended base: The gantry moves clear of the loading area, leaving the table surface accessible for placing the sheet",
+     "Support slats: Curved or straight versions so that a cross-cut does not run continuously along an entire support slat",
+     "Fully welded steel construction: A solid structure for workshop and production use",
+     "Theta HSC AUT set: Choose 60, 120 or 180 A for steel, stainless steel and aluminium; match the power source to the cutting task",
+     "Commissioning and instruction: Agree configuration and handover directly with VES-TECH Swiss"
     ],
     "es": [
-     "Mesa profesional de corte por plasma CNC suministrada en conjunto con una fuente de corriente de la serie MAHE Theta",
-     "Área de trabajo de 3000 x 1500 mm",
-     "A elegir entre fuentes de corriente Theta 060 HSC, Theta 120 HSC o Theta 180 HSC",
-     "Corriente de corte de 60 A, 120 A o 180 A",
-     "Control mediante el sistema CNC de MAHE",
-     "Importación de planos 2D en formatos DXF y HPGL/PLT",
-     "La compensación de ancho de corte, las entradas, las salidas y la secuencia de corte se generan automáticamente",
-     "Torch Height Control: la altura de corte se define como tensión objetivo en voltios y se regula mediante la tensión del arco",
-     "Detección de la altura del material antes de cada perforación",
-     "Los parámetros de corte pueden guardarse para cada material; antes del corte, el análisis de la trayectoria muestra el número de perforaciones, la longitud de corte y el tiempo estimado de corte",
-     "Marcado y trazado con velocidad independiente mediante un color de capa específico",
-     "Consola de control con ordenador Windows y pantalla junto a la mesa",
-     "Puesta en servicio e instrucciones por VES-TECH Swiss"
+     "MyPlasm y MiniCAD incluidos: Preparar los dibujos y controlar la secuencia de corte CNC desde la mesa",
+     "Importación de dibujos: Cargar archivos DXF y HPGL/PLT; preparar automáticamente compensación de ranura, entradas, salidas y orden de corte",
+     "PC industrial de 21 pulgadas con Windows 11: Software y controles directamente en la mesa",
+     "THC electrónico: La tensión del arco regula la altura de la antorcha durante el corte",
+     "Sensor óhmico: Detectar la superficie del material antes de perforar para determinar la altura",
+     "Láser de cruz: Determinar la posición sobre la pieza y simular el recorrido durante el ajuste",
+     "Corte y marcado: Punta de trazado o lápiz de grabado para referencias y líneas de plegado; perforación plasma para marcar posiciones de taladrado",
+     "Accionamiento protegido: Cremallera y soporte de antorcha protegidos; eje Z robusto accionado por husillo",
+     "Base prolongada: El pórtico sale de la zona de carga y deja libre la superficie de la mesa para colocar la chapa",
+     "Lamas de apoyo: Versiones curvas o rectas para evitar que el corte transversal recorra una lama en toda su longitud",
+     "Estructura de acero totalmente soldado: Construcción sólida para taller y producción",
+     "Conjunto Theta HSC AUT: A elegir 60, 120 o 180 A para acero, acero inoxidable y aluminio; adaptar la fuente al trabajo de corte",
+     "Puesta en marcha e instrucción: Acordar configuración y entrega directamente con VES-TECH Swiss"
     ]
    },
    "front_panels": [],
@@ -22140,6 +22140,10 @@
      {
       "name": "Verschleissteilebox PSAB 180",
       "note": "Ersatz-Verschleissteile für den Plasmabrenner PSAB 180"
+     },
+     {
+      "name": "Fernbedienung",
+      "note": ""
      }
     ],
     "fr": [
@@ -22162,6 +22166,10 @@
      {
       "name": "Coffret de pièces d'usure PSAB 180",
       "note": "pièces d'usure de rechange pour la torche plasma PSAB 180"
+     },
+     {
+      "name": "Télécommande",
+      "note": ""
      }
     ],
     "it": [
@@ -22184,6 +22192,10 @@
      {
       "name": "Set di parti d’usura PSAB 180",
       "note": "parti d’usura per la torcia al plasma PSAB 180"
+     },
+     {
+      "name": "Telecomando",
+      "note": ""
      }
     ],
     "en": [
@@ -22206,6 +22218,10 @@
      {
       "name": "PSAB 180 consumables kit",
       "note": "Replacement consumables for the PSAB 180 plasma torch"
+     },
+     {
+      "name": "Remote control",
+      "note": ""
      }
     ],
     "es": [
@@ -22228,62 +22244,681 @@
      {
       "name": "Juego de consumibles PSAB 180",
       "note": "Consumibles de recambio para la antorcha de plasma PSAB 180"
+     },
+     {
+      "name": "Mando a distancia",
+      "note": ""
      }
     ]
    },
    "specs": {
     "de": {
      "Verfahren": "Plasmaschneiden",
-     "Arbeitsbereich": "3000 x 1500 mm",
-     "Stromquelle": "Theta 060 / 120 / 180 HSC",
-     "Schneidstrom": "60 A / 120 A / 180 A",
-     "Steuerung": "MyPlasm CNC",
-     "Dateiformate": "DXF, HPGL/PLT",
+     "Stromquelle": "Theta 60 / 120 / 180 HSC AUT",
      "Ausführung": "Set mit Stromquelle"
     },
     "fr": {
      "Procédé": "découpe plasma",
-     "Surface de travail": "3000 x 1500 mm",
-     "Source de courant": "Theta 060 / 120 / 180 HSC",
-     "Courant de coupe": "60 A / 120 A / 180 A",
-     "Commande": "MyPlasm CNC",
-     "Formats de fichiers": "DXF, HPGL/PLT",
+     "Source de courant": "Theta 60 / 120 / 180 HSC AUT",
      "Version": "ensemble avec source de courant"
     },
     "it": {
      "Processo": "taglio al plasma",
-     "Area di lavoro": "3000 x 1500 mm",
-     "Generatore": "Theta 060 / 120 / 180 HSC",
-     "Corrente di taglio": "60 A / 120 A / 180 A",
-     "Controllo": "MyPlasm CNC",
-     "Formati dei file": "DXF, HPGL/PLT",
+     "Generatore": "Theta 60 / 120 / 180 HSC AUT",
      "Versione": "set con generatore"
     },
     "en": {
      "Process": "Plasma cutting",
-     "Working area": "3000 x 1500 mm",
-     "Power source": "Theta 060 / 120 / 180 HSC",
-     "Cutting current": "60 A / 120 A / 180 A",
-     "Control system": "MyPlasm CNC",
-     "File formats": "DXF, HPGL/PLT",
+     "Power source": "Theta 60 / 120 / 180 HSC AUT",
      "Version": "Set with power source"
     },
     "es": {
      "Proceso": "Corte por plasma",
-     "Área de trabajo": "3000 x 1500 mm",
-     "Fuente de corriente": "Theta 060 / 120 / 180 HSC",
-     "Corriente de corte": "60 A / 120 A / 180 A",
-     "Sistema de control": "MyPlasm CNC",
-     "Formatos de archivo": "DXF, HPGL/PLT",
+     "Fuente de corriente": "Theta 60 / 120 / 180 HSC AUT",
      "Versión": "Conjunto con fuente de corriente"
     }
    },
    "techdata": {
-    "de": [],
-    "fr": [],
-    "it": [],
-    "en": [],
-    "es": []
+    "de": [
+     {
+      "title": "MPT 3001: Tisch und Steuerung",
+      "note": "",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "MPT 3001"
+      ],
+      "rows": [
+       {
+        "label": "Arbeitsbereich",
+        "values": {
+         "MPT 3001": "3000 × 1500 mm"
+        }
+       },
+       {
+        "label": "Steuerung",
+        "values": {
+         "MPT 3001": "MyPlasm"
+        }
+       },
+       {
+        "label": "CAD-Software",
+        "values": {
+         "MPT 3001": "MiniCAD"
+        }
+       },
+       {
+        "label": "Bedienplatz",
+        "values": {
+         "MPT 3001": "21-Zoll-Industrie-PC, Windows 11"
+        }
+       },
+       {
+        "label": "Dateiformate",
+        "values": {
+         "MPT 3001": "DXF, HPGL/PLT"
+        }
+       },
+       {
+        "label": "Werkstoffe",
+        "values": {
+         "MPT 3001": "Stahl, Edelstahl, Aluminium"
+        }
+       },
+       {
+        "label": "Brennerhöhenregelung",
+        "values": {
+         "MPT 3001": "THC über Lichtbogenspannung"
+        }
+       },
+       {
+        "label": "Höhenabtastung",
+        "values": {
+         "MPT 3001": "Ohmischer Sensor"
+        }
+       },
+       {
+        "label": "Positionierhilfe",
+        "values": {
+         "MPT 3001": "Kreuzlaser"
+        }
+       },
+       {
+        "label": "Antrieb",
+        "values": {
+         "MPT 3001": "Zahnstangenantrieb"
+        }
+       },
+       {
+        "label": "Z-Antrieb",
+        "values": {
+         "MPT 3001": "Spindelantrieb"
+        }
+       },
+       {
+        "label": "Fernbedienung",
+        "values": {
+         "MPT 3001": "Optional"
+        }
+       }
+      ]
+     },
+     {
+      "title": "Theta HSC AUT: Stromquellen im Vergleich",
+      "note": "Die Schnittstärken sind Angaben zur jeweiligen Stromquelle aus dem MAHE-Prospekt, keine Zusage zur CNC-Einstechleistung. Werkstoff, Brenner, Verschleissteile und Schnittanforderung bestimmen die geeignete Konfiguration; die Einstechgrenze wird für den konkreten Auftrag geklärt.",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "Theta 60 HSC AUT",
+       "Theta 120 HSC AUT",
+       "Theta 180 HSC AUT"
+      ],
+      "rows": [
+       {
+        "label": "Schneidstrombereich",
+        "values": {
+         "Theta 60 HSC AUT": "10–60 A",
+         "Theta 120 HSC AUT": "20–120 A",
+         "Theta 180 HSC AUT": "20–180 A"
+        }
+       },
+       {
+        "label": "Netzspannung",
+        "values": {
+         "Theta 60 HSC AUT": "3~ 400 V",
+         "Theta 120 HSC AUT": "3~ 400 V",
+         "Theta 180 HSC AUT": "3~ 400 V"
+        }
+       },
+       {
+        "label": "Empfohlener Schnitt (Stromquelle)",
+        "values": {
+         "Theta 60 HSC AUT": "< 25 mm",
+         "Theta 120 HSC AUT": "< 38 mm",
+         "Theta 180 HSC AUT": "< 50 mm"
+        }
+       },
+       {
+        "label": "Trennschnitt (Stromquelle)",
+        "values": {
+         "Theta 60 HSC AUT": "< 35 mm",
+         "Theta 120 HSC AUT": "< 55 mm",
+         "Theta 180 HSC AUT": "< 80 mm"
+        }
+       }
+      ]
+     }
+    ],
+    "fr": [
+     {
+      "title": "MPT 3001: table et commande",
+      "note": "",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "MPT 3001"
+      ],
+      "rows": [
+       {
+        "label": "Zone de travail",
+        "values": {
+         "MPT 3001": "3000 × 1500 mm"
+        }
+       },
+       {
+        "label": "Commande",
+        "values": {
+         "MPT 3001": "MyPlasm"
+        }
+       },
+       {
+        "label": "Logiciel CAO",
+        "values": {
+         "MPT 3001": "MiniCAD"
+        }
+       },
+       {
+        "label": "Poste de commande",
+        "values": {
+         "MPT 3001": "PC industriel de 21 pouces, Windows 11"
+        }
+       },
+       {
+        "label": "Formats de fichiers",
+        "values": {
+         "MPT 3001": "DXF, HPGL/PLT"
+        }
+       },
+       {
+        "label": "Matériaux",
+        "values": {
+         "MPT 3001": "Acier, inox, aluminium"
+        }
+       },
+       {
+        "label": "Régulation de hauteur de torche",
+        "values": {
+         "MPT 3001": "THC par tension d’arc"
+        }
+       },
+       {
+        "label": "Détection de hauteur",
+        "values": {
+         "MPT 3001": "Capteur ohmique"
+        }
+       },
+       {
+        "label": "Aide au positionnement",
+        "values": {
+         "MPT 3001": "Laser en croix"
+        }
+       },
+       {
+        "label": "Entraînement",
+        "values": {
+         "MPT 3001": "Entraînement par crémaillère"
+        }
+       },
+       {
+        "label": "Entraînement Z",
+        "values": {
+         "MPT 3001": "Entraînement par vis"
+        }
+       },
+       {
+        "label": "Télécommande",
+        "values": {
+         "MPT 3001": "En option"
+        }
+       }
+      ]
+     },
+     {
+      "title": "Theta HSC AUT: comparaison des sources",
+      "note": "Les épaisseurs indiquées concernent chaque source selon le prospectus MAHE ; elles ne garantissent pas la capacité de perçage CNC. Matériau, torche, consommables et résultat souhaité déterminent la configuration ; la limite de perçage est à définir pour le travail prévu.",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "Theta 60 HSC AUT",
+       "Theta 120 HSC AUT",
+       "Theta 180 HSC AUT"
+      ],
+      "rows": [
+       {
+        "label": "Plage de courant de coupe",
+        "values": {
+         "Theta 60 HSC AUT": "10–60 A",
+         "Theta 120 HSC AUT": "20–120 A",
+         "Theta 180 HSC AUT": "20–180 A"
+        }
+       },
+       {
+        "label": "Tension secteur",
+        "values": {
+         "Theta 60 HSC AUT": "3~ 400 V",
+         "Theta 120 HSC AUT": "3~ 400 V",
+         "Theta 180 HSC AUT": "3~ 400 V"
+        }
+       },
+       {
+        "label": "Coupe recommandée (source)",
+        "values": {
+         "Theta 60 HSC AUT": "< 25 mm",
+         "Theta 120 HSC AUT": "< 38 mm",
+         "Theta 180 HSC AUT": "< 50 mm"
+        }
+       },
+       {
+        "label": "Coupe de séparation (source)",
+        "values": {
+         "Theta 60 HSC AUT": "< 35 mm",
+         "Theta 120 HSC AUT": "< 55 mm",
+         "Theta 180 HSC AUT": "< 80 mm"
+        }
+       }
+      ]
+     }
+    ],
+    "it": [
+     {
+      "title": "MPT 3001: banco e controllo",
+      "note": "",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "MPT 3001"
+      ],
+      "rows": [
+       {
+        "label": "Area di lavoro",
+        "values": {
+         "MPT 3001": "3000 × 1500 mm"
+        }
+       },
+       {
+        "label": "Controllo",
+        "values": {
+         "MPT 3001": "MyPlasm"
+        }
+       },
+       {
+        "label": "Software CAD",
+        "values": {
+         "MPT 3001": "MiniCAD"
+        }
+       },
+       {
+        "label": "Postazione di comando",
+        "values": {
+         "MPT 3001": "PC industriale da 21 pollici, Windows 11"
+        }
+       },
+       {
+        "label": "Formati file",
+        "values": {
+         "MPT 3001": "DXF, HPGL/PLT"
+        }
+       },
+       {
+        "label": "Materiali",
+        "values": {
+         "MPT 3001": "Acciaio, inox, alluminio"
+        }
+       },
+       {
+        "label": "Controllo altezza torcia",
+        "values": {
+         "MPT 3001": "THC tramite tensione d’arco"
+        }
+       },
+       {
+        "label": "Rilevamento altezza",
+        "values": {
+         "MPT 3001": "Sensore ohmico"
+        }
+       },
+       {
+        "label": "Ausilio di posizionamento",
+        "values": {
+         "MPT 3001": "Laser a croce"
+        }
+       },
+       {
+        "label": "Azionamento",
+        "values": {
+         "MPT 3001": "Azionamento a cremagliera"
+        }
+       },
+       {
+        "label": "Azionamento Z",
+        "values": {
+         "MPT 3001": "Azionamento a vite"
+        }
+       },
+       {
+        "label": "Telecomando",
+        "values": {
+         "MPT 3001": "Opzionale"
+        }
+       }
+      ]
+     },
+     {
+      "title": "Theta HSC AUT: confronto generatori",
+      "note": "Gli spessori indicati si riferiscono ai singoli generatori nel prospetto MAHE e non garantiscono la capacità di sfondamento CNC. Materiale, torcia, consumabili e risultato richiesto determinano la configurazione; il limite di sfondamento va definito per il lavoro previsto.",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "Theta 60 HSC AUT",
+       "Theta 120 HSC AUT",
+       "Theta 180 HSC AUT"
+      ],
+      "rows": [
+       {
+        "label": "Campo corrente di taglio",
+        "values": {
+         "Theta 60 HSC AUT": "10–60 A",
+         "Theta 120 HSC AUT": "20–120 A",
+         "Theta 180 HSC AUT": "20–180 A"
+        }
+       },
+       {
+        "label": "Tensione di rete",
+        "values": {
+         "Theta 60 HSC AUT": "3~ 400 V",
+         "Theta 120 HSC AUT": "3~ 400 V",
+         "Theta 180 HSC AUT": "3~ 400 V"
+        }
+       },
+       {
+        "label": "Taglio consigliato (generatore)",
+        "values": {
+         "Theta 60 HSC AUT": "< 25 mm",
+         "Theta 120 HSC AUT": "< 38 mm",
+         "Theta 180 HSC AUT": "< 50 mm"
+        }
+       },
+       {
+        "label": "Taglio di separazione (generatore)",
+        "values": {
+         "Theta 60 HSC AUT": "< 35 mm",
+         "Theta 120 HSC AUT": "< 55 mm",
+         "Theta 180 HSC AUT": "< 80 mm"
+        }
+       }
+      ]
+     }
+    ],
+    "en": [
+     {
+      "title": "MPT 3001: table and controls",
+      "note": "",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "MPT 3001"
+      ],
+      "rows": [
+       {
+        "label": "Working area",
+        "values": {
+         "MPT 3001": "3000 × 1500 mm"
+        }
+       },
+       {
+        "label": "Control system",
+        "values": {
+         "MPT 3001": "MyPlasm"
+        }
+       },
+       {
+        "label": "CAD software",
+        "values": {
+         "MPT 3001": "MiniCAD"
+        }
+       },
+       {
+        "label": "Operator station",
+        "values": {
+         "MPT 3001": "21-inch industrial PC, Windows 11"
+        }
+       },
+       {
+        "label": "File formats",
+        "values": {
+         "MPT 3001": "DXF, HPGL/PLT"
+        }
+       },
+       {
+        "label": "Materials",
+        "values": {
+         "MPT 3001": "Steel, stainless steel, aluminium"
+        }
+       },
+       {
+        "label": "Torch height control",
+        "values": {
+         "MPT 3001": "THC via arc voltage"
+        }
+       },
+       {
+        "label": "Height sensing",
+        "values": {
+         "MPT 3001": "Ohmic sensor"
+        }
+       },
+       {
+        "label": "Positioning aid",
+        "values": {
+         "MPT 3001": "Cross-line laser"
+        }
+       },
+       {
+        "label": "Drive",
+        "values": {
+         "MPT 3001": "Rack drive"
+        }
+       },
+       {
+        "label": "Z drive",
+        "values": {
+         "MPT 3001": "Spindle drive"
+        }
+       },
+       {
+        "label": "Remote control",
+        "values": {
+         "MPT 3001": "Optional"
+        }
+       }
+      ]
+     },
+     {
+      "title": "Theta HSC AUT: power source comparison",
+      "note": "The thickness figures are ratings for each power source in the MAHE brochure, not a guarantee of CNC piercing capacity. Material, torch, consumables and cut requirements determine the configuration; confirm the piercing limit for the specific job.",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "Theta 60 HSC AUT",
+       "Theta 120 HSC AUT",
+       "Theta 180 HSC AUT"
+      ],
+      "rows": [
+       {
+        "label": "Cutting current range",
+        "values": {
+         "Theta 60 HSC AUT": "10–60 A",
+         "Theta 120 HSC AUT": "20–120 A",
+         "Theta 180 HSC AUT": "20–180 A"
+        }
+       },
+       {
+        "label": "Mains voltage",
+        "values": {
+         "Theta 60 HSC AUT": "3~ 400 V",
+         "Theta 120 HSC AUT": "3~ 400 V",
+         "Theta 180 HSC AUT": "3~ 400 V"
+        }
+       },
+       {
+        "label": "Recommended cut (power source)",
+        "values": {
+         "Theta 60 HSC AUT": "< 25 mm",
+         "Theta 120 HSC AUT": "< 38 mm",
+         "Theta 180 HSC AUT": "< 50 mm"
+        }
+       },
+       {
+        "label": "Severance cut (power source)",
+        "values": {
+         "Theta 60 HSC AUT": "< 35 mm",
+         "Theta 120 HSC AUT": "< 55 mm",
+         "Theta 180 HSC AUT": "< 80 mm"
+        }
+       }
+      ]
+     }
+    ],
+    "es": [
+     {
+      "title": "MPT 3001: mesa y control",
+      "note": "",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "MPT 3001"
+      ],
+      "rows": [
+       {
+        "label": "Área de trabajo",
+        "values": {
+         "MPT 3001": "3000 × 1500 mm"
+        }
+       },
+       {
+        "label": "Control",
+        "values": {
+         "MPT 3001": "MyPlasm"
+        }
+       },
+       {
+        "label": "Software CAD",
+        "values": {
+         "MPT 3001": "MiniCAD"
+        }
+       },
+       {
+        "label": "Puesto de control",
+        "values": {
+         "MPT 3001": "PC industrial de 21 pulgadas, Windows 11"
+        }
+       },
+       {
+        "label": "Formatos de archivo",
+        "values": {
+         "MPT 3001": "DXF, HPGL/PLT"
+        }
+       },
+       {
+        "label": "Materiales",
+        "values": {
+         "MPT 3001": "Acero, acero inoxidable, aluminio"
+        }
+       },
+       {
+        "label": "Control de altura de antorcha",
+        "values": {
+         "MPT 3001": "THC mediante tensión del arco"
+        }
+       },
+       {
+        "label": "Detección de altura",
+        "values": {
+         "MPT 3001": "Sensor óhmico"
+        }
+       },
+       {
+        "label": "Ayuda de posicionamiento",
+        "values": {
+         "MPT 3001": "Láser de cruz"
+        }
+       },
+       {
+        "label": "Accionamiento",
+        "values": {
+         "MPT 3001": "Accionamiento por cremallera"
+        }
+       },
+       {
+        "label": "Accionamiento Z",
+        "values": {
+         "MPT 3001": "Accionamiento por husillo"
+        }
+       },
+       {
+        "label": "Mando a distancia",
+        "values": {
+         "MPT 3001": "Opcional"
+        }
+       }
+      ]
+     },
+     {
+      "title": "Theta HSC AUT: comparación de fuentes",
+      "note": "Los espesores corresponden a cada fuente según el folleto MAHE y no garantizan la capacidad de perforación CNC. Material, antorcha, consumibles y resultado requerido determinan la configuración; hay que definir el límite de perforación para el trabajo previsto.",
+      "source_url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "columns": [
+       "Theta 60 HSC AUT",
+       "Theta 120 HSC AUT",
+       "Theta 180 HSC AUT"
+      ],
+      "rows": [
+       {
+        "label": "Rango de corriente de corte",
+        "values": {
+         "Theta 60 HSC AUT": "10–60 A",
+         "Theta 120 HSC AUT": "20–120 A",
+         "Theta 180 HSC AUT": "20–180 A"
+        }
+       },
+       {
+        "label": "Tensión de red",
+        "values": {
+         "Theta 60 HSC AUT": "3~ 400 V",
+         "Theta 120 HSC AUT": "3~ 400 V",
+         "Theta 180 HSC AUT": "3~ 400 V"
+        }
+       },
+       {
+        "label": "Corte recomendado (fuente)",
+        "values": {
+         "Theta 60 HSC AUT": "< 25 mm",
+         "Theta 120 HSC AUT": "< 38 mm",
+         "Theta 180 HSC AUT": "< 50 mm"
+        }
+       },
+       {
+        "label": "Corte de separación (fuente)",
+        "values": {
+         "Theta 60 HSC AUT": "< 35 mm",
+         "Theta 120 HSC AUT": "< 55 mm",
+         "Theta 180 HSC AUT": "< 80 mm"
+        }
+       }
+      ]
+     }
+    ]
    },
    "materials": [
     "Stahl",

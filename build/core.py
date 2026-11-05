@@ -16,6 +16,7 @@ Kein externes Paket nötig – läuft mit der system-Python 3.9.
 
 from urllib.parse import urlsplit
 import json
+import hashlib
 import datetime
 import os
 import pathlib
@@ -496,6 +497,7 @@ SYM       = _load("SYM")       # Symbole je Geraet, aus dem MAHE-Katalog 2023
 ACC       = _load("ACC")       # passendes Zubehoer je Produkt, von MAHE
 MAT_LABEL = _load("MAT_LABEL")
 HL_DEVICE = _load("HL_DEVICE")        # je Geraet,  woertlich von mahe-online.de
+CARD_FEATURES = _load("PRODUCT_CARD_FEATURES")  # reviewed indices into existing translated evidence
 OPT       = _load("OPT")         # Optionen je Geraet, aus der MAHE-Preisliste
 DLDEV     = _load("DLDEV")       # Anleitungen/Datenblaetter je Geraet bei MAHE
 DLOCC     = _load("DLOCC")       # Prospekte der Occasion-Maschinen, lokal gehostet
@@ -533,6 +535,23 @@ MAHE_SPECS.update(MAHE_CWK_SPECS)
 # Their provenance identifies the actual images and explicit confirmations.
 SUPPLIED_SPECS = _load("SUPPLIED_SPECS")
 MAHE_SPECS.update(SUPPLIED_SPECS)
+MPT_BROCHURE = _load("MPT_BROCHURE")
+
+
+def apply_brochure_spec_overrides(tables):
+    """Only the explicitly reviewed cells supersede an older manufacturer import.
+
+    Fail on changed upstream values instead of silently overwriting a newer
+    datasheet. The complete source PDF is checked before the build below.
+    """
+    for edit in MPT_BROCHURE.get('spec_overrides', []):
+        rows = [row for row in tables[edit['table']]['rows'] if row['model'] == edit['row']]
+        if len(rows) != 1 or rows[0].get(edit['column']) != edit['old']:
+            raise ValueError('Manufacturer value changed; review MPT brochure override')
+        rows[0][edit['column']] = edit['value']
+
+
+apply_brochure_spec_overrides(MAHE_SPECS)
 
 EX = json.loads((BUILD / "i18n_extra.json").read_text("utf-8"))
 
@@ -696,11 +715,14 @@ def specTables(lang, p):
             rows.append([lab] + [trV(lang, _specV(r.get(c, ""))) for c in keys])
         note = SPECNOTE.get(key) or {}
         title = HYPERMIG_CWK[lang]['general_table_title'] if key == 'hypermig' else t.get('title', '')
+        if isinstance(title, dict):
+            title = title[lang]
         out.append({"title": title,
                     "cols": [c["title"] for c in t["columns"]],
                     "rows": rows,
                     **({'row_header': t['row_header'][lang]} if t.get('row_header') else {}),
                     "source": t.get('source', {}).get('url', ''),
+                    "source_label": t.get('source', {}).get('label', {}).get(lang, HYPERMIG_CWK[lang]['source_label']),
                     "note": note.get(lang) or note.get(DEFAULT_LANG, "")})
     return out
 
@@ -954,8 +976,19 @@ def galleryOf(lang, p):
         cap = g.get("cap") or {}
         out.append({"img": g["img"],
                     "alt": a.get(lang) or a.get("de") or "",
-                    "cap": cap.get(lang) or cap.get("de") or ""})
+                    "cap": cap.get(lang) or cap.get("de") or "",
+                    "original": g.get("original", "")})
     return out
+
+
+def cardFeatures(lang, p):
+    """Curated buying criteria, never an unqualified union of variant features."""
+    selection = CARD_FEATURES.get(p['id'])
+    if not selection:
+        return []
+    source = (HOME_FEATURED_COPY[p['id']][lang]['highlights']
+              if selection['source'] == 'HOME_FEATURED_COPY' else HL_DEVICE[p['id']][lang])
+    return [source[i] for i in selection['items']]
 
 
 def highlightsOf(lang, p):
@@ -1420,10 +1453,18 @@ def validate_editorial_guides():
     for key, table in SUPPLIED_SPECS.items():
         source = table.get('source', {})
         images = source.get('images', [])
-        if (source.get('kind') != 'owner_supplied_images' or not images or
+        image_source = (source.get('kind') == 'owner_supplied_images' and images and not
                 any(not isinstance(item.get('name'), str) or
-                    not re.fullmatch(r'[0-9a-f]{64}', item.get('sha256', '')) for item in images)):
-            raise ValueError(f'Supplied table needs documented image provenance: {key}')
+                    not re.fullmatch(r'[0-9a-f]{64}', item.get('sha256', '')) for item in images))
+        pdf_path = source.get('url', '')
+        pdf_source = (source.get('kind') == 'owner_supplied_pdf' and
+                      pdf_path.startswith('/assets/dl/') and '..' not in pdf_path and
+                      pdf_path.endswith('.pdf') and (ROOT / pdf_path.lstrip('/')).is_file() and
+                      re.fullmatch(r'[0-9a-f]{64}', source.get('sha256', '')) and
+                      hashlib.sha256((ROOT / pdf_path.lstrip('/')).read_bytes()).hexdigest() == source['sha256'] and
+                      source.get('pages') and all(type(page) is int and 1 <= page <= 6 for page in source['pages']))
+        if not (image_source or pdf_source):
+            raise ValueError(f'Supplied table needs documented image/PDF provenance: {key}')
         columns = [column.get('key') for column in table.get('columns', [])]
         if not columns or len(set(columns)) != len(columns) or any(not isinstance(c, str) or not c for c in columns):
             raise ValueError(f'Supplied table needs distinct model columns: {key}')
@@ -1436,6 +1477,29 @@ def validate_editorial_guides():
             raise ValueError(f'Supplied table needs distinct parameter rows: {key}')
         if table.get('row_header') and set(table['row_header']) != set(LANGS):
             raise ValueError(f'Supplied table header needs all languages: {key}')
+        if isinstance(table.get('title'), dict) and set(table['title']) != set(LANGS):
+            raise ValueError(f'Supplied table title needs all languages: {key}')
+    for pid, selection in CARD_FEATURES.items():
+        if pid not in BY_ID or selection.get('source') not in ('HL_DEVICE', 'HOME_FEATURED_COPY'):
+            raise ValueError(f'Unknown card feature source: {pid}')
+        indices = selection.get('items', [])
+        if not 1 <= len(indices) <= 3 or len(set(indices)) != len(indices) or any(type(i) is not int or i < 0 for i in indices):
+            raise ValueError(f'Invalid card feature selection: {pid}')
+        for lang in LANGS:
+            try:
+                features = cardFeatures(lang, BY_ID[pid])
+            except (KeyError, IndexError) as error:
+                raise ValueError(f'Incomplete card feature source: {pid}/{lang}') from error
+            if any(not text.strip() or re.search(r'<[/!A-Za-z]', text) for text in features):
+                raise ValueError(f'Card features must be plain translated text: {pid}/{lang}')
+    for pid, photos in GALLERY.items():
+        if pid.startswith('_'):
+            continue
+        for photo in photos:
+            original = photo.get('original')
+            if original and (not original.startswith('/assets/img/') or '..' in original or
+                             not original.endswith('.png') or not (ROOT / original.lstrip('/')).is_file()):
+                raise ValueError(f'Gallery original must be an existing local PNG: {pid}')
     if set(PRODUCT_SEO) != set(BY_ID):
         raise ValueError('Product search copy must cover the current catalogue exactly')
     search_titles = set()

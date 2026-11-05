@@ -155,5 +155,173 @@
       "en": "Technical parameter",
       "es": "Característica técnica"
     }
+  },
+  "mpt-3001": {
+    "title": {
+      "de": "MPT 3001: Tisch und Steuerung",
+      "fr": "MPT 3001: table et commande",
+      "it": "MPT 3001: banco e controllo",
+      "en": "MPT 3001: table and controls",
+      "es": "MPT 3001: mesa y control"
+    },
+    "seite": "MAHE MPT 3001 Prospekt 2026 V1, S. 1, 3, 4, 6",
+    "source": {
+      "kind": "owner_supplied_pdf",
+      "received": "2026-11-05",
+      "name": "Prospekt MAHE Plasmaschneidtisch MPT 3001 2026 V1.pdf",
+      "url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "sha256": "dbe4d675419ce51f22c28b6f3410182215982ee6221b5f40f6df7b5d9198e101",
+      "pages": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ],
+      "label": {
+        "de": "MAHE MPT 3001: Originalprospekt · PDF · deutsch",
+        "fr": "MAHE MPT 3001 : prospectus original · PDF · allemand",
+        "it": "MAHE MPT 3001: prospetto originale · PDF · tedesco",
+        "en": "MAHE MPT 3001: original brochure · PDF · German",
+        "es": "MAHE MPT 3001: folleto original · PDF · alemán"
+      }
+    },
+    "columns": [
+      {
+        "key": "mpt",
+        "title": "MPT 3001"
+      }
+    ],
+    "rows": [
+      {
+        "model": "Arbeitsbereich",
+        "mpt": "3000 × 1500 mm"
+      },
+      {
+        "model": "Steuerung",
+        "mpt": "MyPlasm"
+      },
+      {
+        "model": "CAD-Software",
+        "mpt": "MiniCAD"
+      },
+      {
+        "model": "Bedienplatz",
+        "mpt": "21-Zoll-Industrie-PC, Windows 11"
+      },
+      {
+        "model": "Dateiformate",
+        "mpt": "DXF, HPGL/PLT"
+      },
+      {
+        "model": "Werkstoffe",
+        "mpt": "Stahl, Edelstahl, Aluminium"
+      },
+      {
+        "model": "Brennerhöhenregelung",
+        "mpt": "THC über Lichtbogenspannung"
+      },
+      {
+        "model": "Höhenabtastung",
+        "mpt": "Ohmischer Sensor"
+      },
+      {
+        "model": "Positionierhilfe",
+        "mpt": "Kreuzlaser"
+      },
+      {
+        "model": "Antrieb",
+        "mpt": "Zahnstangenantrieb"
+      },
+      {
+        "model": "Z-Antrieb",
+        "mpt": "Spindelantrieb"
+      },
+      {
+        "model": "Fernbedienung",
+        "mpt": "Optional"
+      }
+    ],
+    "row_header": {
+      "de": "Technisches Merkmal",
+      "fr": "Caractéristique technique",
+      "it": "Caratteristica tecnica",
+      "en": "Technical specification",
+      "es": "Característica técnica"
+    }
+  },
+  "mpt-theta-aut": {
+    "title": {
+      "de": "Theta HSC AUT: Stromquellen im Vergleich",
+      "fr": "Theta HSC AUT: comparaison des sources",
+      "it": "Theta HSC AUT: confronto generatori",
+      "en": "Theta HSC AUT: power source comparison",
+      "es": "Theta HSC AUT: comparación de fuentes"
+    },
+    "seite": "MAHE MPT 3001 Prospekt 2026 V1, S. 5",
+    "source": {
+      "kind": "owner_supplied_pdf",
+      "received": "2026-11-05",
+      "name": "Prospekt MAHE Plasmaschneidtisch MPT 3001 2026 V1.pdf",
+      "url": "/assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf",
+      "sha256": "dbe4d675419ce51f22c28b6f3410182215982ee6221b5f40f6df7b5d9198e101",
+      "pages": [
+        5
+      ],
+      "label": {
+        "de": "MAHE MPT 3001: Originalprospekt · PDF · deutsch",
+        "fr": "MAHE MPT 3001 : prospectus original · PDF · allemand",
+        "it": "MAHE MPT 3001: prospetto originale · PDF · tedesco",
+        "en": "MAHE MPT 3001: original brochure · PDF · German",
+        "es": "MAHE MPT 3001: folleto original · PDF · alemán"
+      }
+    },
+    "columns": [
+      {
+        "key": "60",
+        "title": "Theta 60 HSC AUT"
+      },
+      {
+        "key": "120",
+        "title": "Theta 120 HSC AUT"
+      },
+      {
+        "key": "180",
+        "title": "Theta 180 HSC AUT"
+      }
+    ],
+    "rows": [
+      {
+        "model": "Schneidstrombereich",
+        "60": "10–60 A",
+        "120": "20–120 A",
+        "180": "20–180 A"
+      },
+      {
+        "model": "Netzspannung",
+        "60": "3~ 400 V",
+        "120": "3~ 400 V",
+        "180": "3~ 400 V"
+      },
+      {
+        "model": "Empfohlener Schnitt (Stromquelle)",
+        "60": "< 25 mm",
+        "120": "< 38 mm",
+        "180": "< 50 mm"
+      },
+      {
+        "model": "Trennschnitt (Stromquelle)",
+        "60": "< 35 mm",
+        "120": "< 55 mm",
+        "180": "< 80 mm"
+      }
+    ],
+    "row_header": {
+      "de": "Technisches Merkmal",
+      "fr": "Caractéristique technique",
+      "it": "Caratteristica tecnica",
+      "en": "Technical specification",
+      "es": "Característica técnica"
+    }
   }
 }

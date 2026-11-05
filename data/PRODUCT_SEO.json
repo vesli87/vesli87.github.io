@@ -273,81 +273,81 @@
     "de": {
       "type": "Elektroden-Schweissgerät",
       "title": "MAHE i-1600: Elektroden-Schweissgerät | VES-TECH",
-      "description": "MAHE i-1600: Einfach zu bedienender, robuster Elektrodeninverter. Beratung und Preis auf Anfrage."
+      "description": "MAHE i-1600 für Rutil-, basische und CEL-Elektroden: Force Arc, Anti-Stick und WIG Lift Arc. Tragbarer 230-V-Inverter, Beratung bei VES-TECH Swiss."
     },
     "fr": {
       "type": "Poste à électrode MMA",
       "title": "MAHE i-1600: Poste à électrode MMA | VES-TECH",
-      "description": "MAHE i-1600 : Poste à onduleur pour le soudage à l’électrode, robuste et simple d’utilisation. Conseil et prix sur demande."
+      "description": "MAHE i-1600 pour électrodes rutiles, basiques et CEL : Force Arc, Anti-Stick et TIG Lift Arc. Onduleur portable 230 V chez VES-TECH Swiss."
     },
     "it": {
       "type": "Saldatrice a elettrodo MMA",
       "title": "MAHE i-1600: Saldatrice a elettrodo MMA | VES-TECH",
-      "description": "MAHE i-1600: Inverter a elettrodo robusto e semplice da usare. Consulenza e prezzo su richiesta."
+      "description": "MAHE i-1600 per elettrodi rutilici, basici e CEL: Force Arc, Anti-Stick e TIG Lift Arc. Inverter portatile a 230 V da VES-TECH Swiss."
     },
     "en": {
       "type": "MMA stick welder",
       "title": "MAHE i-1600: MMA stick welder | VES-TECH",
-      "description": "MAHE i-1600: Robust stick welding inverter with straightforward controls. Advice and price on request."
+      "description": "MAHE i-1600 for rutile, basic and CEL electrodes: Force Arc, Anti-Stick and TIG Lift Arc. Portable 230 V inverter from VES-TECH Swiss."
     },
     "es": {
       "type": "Soldadora de electrodo MMA",
       "title": "MAHE i-1600: Soldadora de electrodo MMA | VES-TECH",
-      "description": "MAHE i-1600: Inversor robusto de soldadura con electrodo revestido y controles sencillos. Asesoramiento y precio bajo consulta."
+      "description": "MAHE i-1600 para electrodos rutílicos, básicos y CEL: Force Arc, Anti-Stick y TIG Lift Arc. Inversor portátil de 230 V en VES-TECH Swiss."
     }
   },
   "delta": {
     "de": {
       "type": "Elektroden-Schweissgerät",
       "title": "MAHE Delta 1800: Elektroden-Schweissgerät | VES-TECH",
-      "description": "MAHE Delta 1800: Multifunktions-Elektrodeninverter für Werkstatt und Baustelle. Beratung und Preis auf Anfrage."
+      "description": "MAHE Delta 1800 für Rutil-, basische und CEL-Elektroden, mit Force Arc, Anti-Stick und WIG Lift Arc. Beratung direkt bei VES-TECH Swiss."
     },
     "fr": {
       "type": "Poste à électrode MMA",
       "title": "MAHE Delta 1800: Poste à électrode MMA | VES-TECH",
-      "description": "MAHE Delta 1800 : Poste à onduleur multifonction pour le soudage à l’électrode, en atelier et sur chantier. Conseil et prix sur demande."
+      "description": "MAHE Delta 1800 pour électrodes rutiles, basiques et CEL : Force Arc, Anti-Stick et TIG Lift Arc. Conseil chez VES-TECH Swiss."
     },
     "it": {
       "type": "Saldatrice a elettrodo MMA",
       "title": "MAHE Delta 1800: Saldatrice a elettrodo MMA | VES-TECH",
-      "description": "MAHE Delta 1800: Inverter a elettrodo multifunzione per officina e cantiere. Consulenza e prezzo su richiesta."
+      "description": "MAHE Delta 1800 per elettrodi rutilici, basici e CEL, con Force Arc, Anti-Stick e TIG Lift Arc. Consulenza da VES-TECH Swiss."
     },
     "en": {
       "type": "MMA stick welder",
       "title": "MAHE Delta 1800: MMA stick welder | VES-TECH",
-      "description": "MAHE Delta 1800: Multifunction stick welding inverter for workshop and construction site use. Advice and price on request."
+      "description": "MAHE Delta 1800 for rutile, basic and CEL electrodes, with Force Arc, Anti-Stick and TIG Lift Arc. Advice from VES-TECH Swiss."
     },
     "es": {
       "type": "Soldadora de electrodo MMA",
       "title": "MAHE Delta 1800: Soldadora de electrodo MMA | VES-TECH",
-      "description": "MAHE Delta 1800: Inversor multifunción de soldadura con electrodo revestido para taller y obra. Asesoramiento y precio bajo consulta."
+      "description": "MAHE Delta 1800 para electrodos rutílicos, básicos y CEL, con Force Arc, Anti-Stick y TIG Lift Arc. Asesoramiento en VES-TECH Swiss."
     }
   },
   "delta-digital": {
     "de": {
       "type": "Elektroden-Schweissgerät",
       "title": "MAHE Delta Digital: Elektroden-Schweissgerät | VES-TECH",
-      "description": "MAHE Delta Digital: Digitaler Multifunktions-Inverter für den Profi. Beratung und Preis auf Anfrage."
+      "description": "MAHE Delta Digital: Rutil-, basische und CEL-Elektroden, einstellbarer Hot Start und Arc Force, Anti-Stick und Fugenhobeln. VES-TECH Swiss berät."
     },
     "fr": {
       "type": "Poste à électrode MMA",
       "title": "MAHE Delta Digital: Poste à électrode MMA | VES-TECH",
-      "description": "MAHE Delta Digital : Onduleur multifonction numérique pour les professionnels. Conseil et prix sur demande."
+      "description": "MAHE Delta Digital : électrodes rutiles, basiques et CEL, Hot Start et Arc Force réglables, Anti-Stick et gougeage. Conseil VES-TECH Swiss."
     },
     "it": {
       "type": "Saldatrice a elettrodo MMA",
       "title": "MAHE Delta Digital: Saldatrice a elettrodo MMA | VES-TECH",
-      "description": "MAHE Delta Digital: Inverter multifunzione digitale per professionisti. Consulenza e prezzo su richiesta."
+      "description": "MAHE Delta Digital: elettrodi rutilici, basici e CEL, Hot Start e Arc Force regolabili, Anti-Stick e scriccatura. Consulenza VES-TECH Swiss."
     },
     "en": {
       "type": "MMA stick welder",
       "title": "MAHE Delta Digital: MMA stick welder | VES-TECH",
-      "description": "MAHE Delta Digital: Digital multifunction inverter for professional use. Advice and price on request."
+      "description": "MAHE Delta Digital: rutile, basic and CEL electrodes, adjustable Hot Start and Arc Force, Anti-Stick and gouging. Advice from VES-TECH Swiss."
     },
     "es": {
       "type": "Soldadora de electrodo MMA",
       "title": "MAHE Delta Digital: Soldadora de electrodo MMA | VES-TECH",
-      "description": "MAHE Delta Digital: Inversor multifunción digital para uso profesional. Asesoramiento y precio bajo consulta."
+      "description": "MAHE Delta Digital: electrodos rutílicos, básicos y CEL, Hot Start y Arc Force ajustables, Anti-Stick y ranurado. Consulte a VES-TECH Swiss."
     }
   },
   "delta-digital-ds": {
@@ -570,27 +570,27 @@
     "de": {
       "type": "CNC-Plasmaschneidtisch",
       "title": "MAHE MPT 3001: CNC-Plasmaschneidtisch | VES-TECH",
-      "description": "MAHE MPT 3001: CNC-Plasmaschneidtisch mit 3000 × 1500 mm Arbeitsbereich, MyPlasm CNC und MAHE-Theta-Stromquelle. Preis auf Anfrage."
+      "description": "MAHE MPT 3001: CNC-Plasmaschneiden 3000 × 1500 mm, MyPlasm, MiniCAD, THC und Kreuzlaser. Ausstattung und Theta-Set mit VES-TECH Swiss abstimmen."
     },
     "fr": {
       "type": "Table de découpe plasma CNC",
       "title": "MAHE MPT 3001: Table de découpe plasma CNC | VES-TECH",
-      "description": "MAHE MPT 3001 : Table plasma CNC, surface de travail 3000 × 1500 mm, MyPlasm CNC et source MAHE Theta. Prix sur demande. Conseil et prix sur demande."
+      "description": "MAHE MPT 3001 : découpe plasma CNC 3000 × 1500 mm, MyPlasm, MiniCAD, THC et laser en croix. Choisissez votre ensemble avec VES-TECH Swiss."
     },
     "it": {
       "type": "Tavolo di taglio plasma CNC",
       "title": "MAHE MPT 3001: Tavolo di taglio plasma CNC | VES-TECH",
-      "description": "MAHE MPT 3001: Tavolo plasma CNC, area di lavoro 3000 × 1500 mm, MyPlasm CNC e generatore MAHE Theta. Prezzo su richiesta."
+      "description": "MAHE MPT 3001: taglio plasma CNC 3000 × 1500 mm, MyPlasm, MiniCAD, THC e laser a croce. Scegliete il set con VES-TECH Swiss."
     },
     "en": {
       "type": "CNC plasma cutting table",
       "title": "MAHE MPT 3001: CNC plasma cutting table | VES-TECH",
-      "description": "MAHE MPT 3001: CNC plasma cutting table with a 3000 × 1500 mm working area, MyPlasm CNC and MAHE Theta power source. Price on request."
+      "description": "MAHE MPT 3001: CNC plasma cutting, 3000 × 1500 mm, MyPlasm, MiniCAD, THC and cross-line laser. Discuss your Theta set with VES-TECH Swiss."
     },
     "es": {
       "type": "Mesa de corte por plasma CNC",
       "title": "MAHE MPT 3001: Mesa de corte por plasma CNC | VES-TECH",
-      "description": "MAHE MPT 3001: Mesa plasma CNC, área de trabajo de 3000 × 1500 mm, MyPlasm CNC y fuente MAHE Theta. Precio bajo consulta."
+      "description": "MAHE MPT 3001: corte plasma CNC de 3000 × 1500 mm, MyPlasm, MiniCAD, THC y láser de cruz. Configure su conjunto con VES-TECH Swiss."
     }
   },
   "mpt-2501": {

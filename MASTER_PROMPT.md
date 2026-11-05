@@ -1634,3 +1634,51 @@ in die Sitemap aufgenommen. Keine erfundenen Preise, Ratings oder Ortsseiten.
   englische Telefonberatung. Sieben Folien und 3000 ms bleiben unverändert.
 - Private Vertriebsunterlagen und Vorlagen liegen weiterhin nur in `reports/`.
   Keine Kundenliste, Werbung oder zusätzliche Analytik wird dadurch aktiviert.
+
+
+## MPT 3001: Herstellerprospekt und Produktkarten, 05.11.2026
+
+Der Inhaber lieferte den sechsseitigen MAHE-Prospekt MPT 3001, 2026 V1.
+Das unveränderte Original liegt unter assets/dl/mahe-mpt-3001-prospekt-2026-v1.pdf;
+SHA-256 und Herkunft der fünf Detailfotos stehen in data/MPT_BROCHURE.json.
+DLDEV und DLS verlinken das ausdrücklich deutschsprachige Original in allen
+fünf Sprachversionen. SUPPLIED_SPECS enthält getrennte Tabellen für Tisch /
+Steuerung sowie die Theta-HSC-AUT-Stromquellen. Beschriftungen, Hinweise,
+Galerie und Produkttexte sind in DE/FR/IT/EN/ES vollständig vorhanden.
+
+MyPlasm, MiniCAD, 21-Zoll-Industrie-PC mit Windows 11, THC, ohmischer Sensor,
+Kreuzlaser, Anreiss-/Graviermöglichkeiten, geschützter Zahnstangenantrieb,
+Z-Spindelantrieb, verlängerte Basis und Auflagebleche sind durch den Prospekt
+belegt. Fernbedienung bleibt ausdrücklich optional. Die zusätzliche Ausrüstung
+und Fotos werden nicht ohne Nachweis auf MPT 2501 übertragen.
+
+Schnittgrenzen auf Seite 5 beziehen sich auf die Stromquelle: empfohlen
+<25 / <38 / <50 mm, Trennschnitt <35 / <55 / <80 mm (60 / 120 / 180 AUT).
+Keine CNC-Einstechgrenze daraus ableiten. Die Auslegung der Konstruktion für
+Materialstärken über 50 mm auf Seite 4 ist keine Schneidleistungszusage.
+Die unklaren 40/55 mm auf Seite 6 werden nicht als pauschale Leistung publiziert.
+Eine einzige alte Tabellenzelle (Theta 120 AUT: Trennschnitt <50 mm) wird durch
+<55 mm ersetzt; der Import bleibt unverändert. Der dokumentierte Override
+bricht bei geänderten Ursprungswerten ab. Ebenso ersetzen die neueren
+Prospektgrenzen die widersprechenden Website-Bullets über 55/38 mm.
+
+build/import_mpt_brochure.py extrahiert die fünf eingebetteten Fotos anhand
+des exakten PDF-Hashes als PNG in nativer Auflösung. Keine KI-Retusche, kein
+Hochskalieren, keine veränderte Frontplatte. Optimierte WebP-Stufen übernehmen
+die Auslieferung; die Bildunterschriften bieten den unveränderten PNG-Export.
+Kleine Originale bleiben klein. Der normale Build benötigt keine PDF-Bibliothek.
+
+Beim Startseitenbild lag der Weissraum an einer festen Höhe mit object-fit:
+contain. Das MPT-Foto füllt den Rahmen nun proportional ohne zusätzlichen
+Bildausschnitt. sizes berücksichtigt die tatsächliche Breite statt 498 px.
+Sieben Folien, 3000 ms, Pause und gemeinsames Raster bleiben erhalten.
+
+PRODUCT_CARD_FEATURES wählt für 19 Geräte höchstens drei Kaufkriterien aus
+bereits übersetzten, geprüften Herstellermerkmalen bzw. modellqualifizierten
+Startseiten-Highlights. Die Auswahl ist kein automatischer Zusammenschluss
+von Varianten. i-1600, Delta und Delta Digital nennen Rutil-, basische und
+CEL-Elektroden; Delta Digital DS übernimmt diese Aussage nicht. i-1600 nennt
+auch WIG Lift Arc. Die unbelegte JOB-Speicherangabe von Delta Digital entfällt.
+Die Karten, Detailtexte, Auswahlhilfe, Suchindizes und SEO-Kurztexte bleiben
+aufeinander abgestimmt. test_mpt_brochure.py prüft Quellen, Veröffentlichung,
+Modellgrenzen, Originalauflösungen, Sprachvollständigkeit und sichere Ausgabe.

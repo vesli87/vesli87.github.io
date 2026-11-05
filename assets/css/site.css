@@ -306,6 +306,10 @@
   .pcard h3{font-family:'Inter',system-ui,sans-serif;font-weight:700;font-size:22px;text-transform:none;letter-spacing:.01em;line-height:1.18;overflow-wrap:break-word}
   .pcard p{color:var(--muted);font-size:16px;line-height:1.6;margin-top:6px}
   .pcard .spec{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .pcard-highlights{list-style:none;display:grid;gap:8px;margin:14px 0 0;padding:0;font-size:15px;line-height:1.5;color:var(--ink)}
+  .pcard-highlights li{position:relative;padding-left:15px;overflow-wrap:anywhere}
+  .pcard-highlights li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;background:var(--accent-ink)}
+  .photo-original{display:inline-block;margin:6px 0 0 8px;font-size:14px;text-decoration:underline;text-underline-offset:3px}
   .pcard .spec span{font-size:14px;background:var(--panel2);border:1px solid var(--line);border-radius:3px;padding:3px 8px;color:var(--muted)}
   .pcard .foot{padding:14px 16px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
   .pcard .foot .poa{font-family:'Inter';font-weight:700;font-size:14px;color:var(--accent-ink);letter-spacing:.01em}
@@ -376,7 +380,7 @@
   .galslide{display:none;margin:0;width:100%}
   .galslide.active{display:grid;gap:10px}
   .galslide .dimg{width:100%}
-  .galslide figcaption{color:var(--muted);font-size:14px;line-height:1.5;text-align:left;width:100%}
+  .galslide figcaption{color:var(--ink);background:#fff;padding:10px 12px;font-size:14px;line-height:1.5;text-align:left;width:100%}
   /* Dasselbe fuer ein einzelnes Bild ohne Diaschau - etwa bei den
      Occasion-Maschinen, wo unter dem Foto steht, was es wirklich zeigt. */
   .dimg-fig{margin:0;display:grid;gap:10px}
@@ -459,6 +463,10 @@
   .spectab thead th{background:var(--panel2);font-family:'Inter';font-weight:700;text-transform:none;letter-spacing:.01em;font-size:14px;border-bottom:1px solid var(--line)}
   .spectab tbody th{font-weight:400;color:var(--muted);white-space:normal;min-width:14rem}
   .spectab tbody td{font-weight:600}
+  .spectab.single-model{table-layout:fixed}
+  .spectab.single-model th,.spectab.single-model td{white-space:normal;overflow-wrap:anywhere;min-width:0;width:50%}
+  .spectab.single-model th:first-child{position:static}
+  .spec-scroll-hint{font-size:14px;line-height:1.5;color:var(--muted);margin:14px 0 8px}
   .spectab tbody tr:nth-child(even) th,.spectab tbody tr:nth-child(even) td{background:var(--panel2)}
   .spectab th:first-child{position:sticky;left:0;z-index:1;background:var(--panel);border-right:1px solid var(--line)}
   .spectab thead th:first-child,.spectab tbody tr:nth-child(even) th:first-child{background:var(--panel2)}
@@ -1786,7 +1794,7 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-feature-slide .volt-product-plinth{margin:0;overflow:hidden}
   .volt-feature-wide .volt-home-product{grid-template-columns:minmax(0,1fr);gap:14px;align-self:center}
   .volt-feature-wide .volt-product-plinth{max-width:none;clip-path:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);padding:14px}
-  .volt-feature-wide .volt-product-plinth img{height:280px;width:100%;object-fit:contain}
+  .volt-feature-wide .volt-product-plinth img{display:block;height:auto;width:100%;max-width:none;object-fit:contain}
   .volt-feature-wide .volt-home-product-label{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 18px;text-align:left;padding:0 10px}
   .volt-feature-wide .volt-home-product-label h2{grid-column:1}
   .volt-feature-wide .volt-home-product-label p{grid-column:1;margin:0;display:block}
@@ -1805,7 +1813,6 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
 }
 @media screen and (max-width:1150px){
   .volt-feature-wide .volt-home-product{gap:10px}
-  .volt-feature-wide .volt-product-plinth img{height:260px}
   .volt-feature-wide .volt-home-product-label{grid-template-columns:1fr;text-align:center}
   .volt-feature-wide .volt-home-product-label .volt-text-link{grid-column:1;grid-row:auto;justify-self:center}
 }
@@ -1816,7 +1823,6 @@ body:has(.mega.open),body:has(.cart.open){overflow:hidden}
   .volt-feature-slide:not(.volt-feature-wide) .volt-home-product-label{margin:0;padding:0 6px}
   .volt-feature-wide .volt-home-product{padding:16px 12px}
   .volt-feature-wide .volt-product-plinth{padding:12px}
-  .volt-feature-wide .volt-product-plinth img{height:200px}
   .volt-feature-wide .volt-home-product-label{display:block;text-align:left;padding:0 8px}
   .volt-feature-wide .volt-home-product-label p{margin:8px 0}
   .volt-feature-controls{gap:0;padding-top:8px;background:#F4F6F7}

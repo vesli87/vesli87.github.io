@@ -466,7 +466,7 @@
     },
     "Schneidtische": {
       "de": {
-        "intro": "MPT 3001 und MPT 2501 unterscheiden sich im Arbeitsbereich und werden mit einer Theta-Stromquelle angeboten.",
+        "intro": "MPT 3001 bietet 3000 × 1500 mm Arbeitsbereich, MyPlasm, MiniCAD und einen 21-Zoll-Industrie-PC. MPT 2501 ist die kleinere Alternative mit 2500 × 1250 mm. Beide werden mit einer Theta-Stromquelle angeboten.",
         "criteria": [
           [
             "Blechformat vergleichen",
@@ -483,7 +483,7 @@
         ]
       },
       "fr": {
-        "intro": "MPT 3001 et MPT 2501 se distinguent par leur zone de travail et sont proposés avec une source Theta.",
+        "intro": "MPT 3001 offre une zone de travail de 3000 × 1500 mm, MyPlasm, MiniCAD et un PC industriel de 21 pouces. MPT 2501 constitue l’alternative plus petite de 2500 × 1250 mm. Les deux sont proposés avec une source Theta.",
         "criteria": [
           [
             "Comparer les formats",
@@ -500,7 +500,7 @@
         ]
       },
       "it": {
-        "intro": "MPT 3001 e MPT 2501 si distinguono per l’area di lavoro e sono proposti con un generatore Theta.",
+        "intro": "MPT 3001 offre un’area di lavoro di 3000 × 1500 mm, MyPlasm, MiniCAD e un PC industriale da 21 pollici. MPT 2501 è l’alternativa più piccola da 2500 × 1250 mm. Entrambi sono proposti con generatore Theta.",
         "criteria": [
           [
             "Confrontare i formati",
@@ -517,7 +517,7 @@
         ]
       },
       "en": {
-        "intro": "MPT 3001 and MPT 2501 differ in working area and are offered with a Theta power source.",
+        "intro": "MPT 3001 offers a 3000 × 1500 mm working area, MyPlasm, MiniCAD and a 21-inch industrial PC. MPT 2501 is the smaller 2500 × 1250 mm alternative. Both are offered with a Theta power source.",
         "criteria": [
           [
             "Compare sheet formats",
@@ -534,7 +534,7 @@
         ]
       },
       "es": {
-        "intro": "MPT 3001 y MPT 2501 se diferencian en el área de trabajo y se ofrecen con una fuente Theta.",
+        "intro": "MPT 3001 ofrece un área de trabajo de 3000 × 1500 mm, MyPlasm, MiniCAD y PC industrial de 21 pulgadas. MPT 2501 es la alternativa más pequeña de 2500 × 1250 mm. Ambos se ofrecen con fuente Theta.",
         "criteria": [
           [
             "Comparar formatos de chapa",

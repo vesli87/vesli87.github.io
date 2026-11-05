@@ -1266,5 +1266,83 @@
    800,
    1046
   ]
+ },
+ "mpt-3001/z-achse-spindelantrieb-hq.png": {
+  "key": "z-achse-spindelantrieb-hq",
+  "w": 1054,
+  "h": 1493,
+  "ratio": 1.4165085388994307,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1054
+  ],
+  "format": "png"
+ },
+ "mpt-3001/verlaengerte-basis-hq.png": {
+  "key": "verlaengerte-basis-hq",
+  "w": 1784,
+  "h": 882,
+  "ratio": 0.4943946188340807,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1200,
+   1784
+  ],
+  "format": "png"
+ },
+ "mpt-3001/auflagebleche-hq.png": {
+  "key": "auflagebleche-hq",
+  "w": 1567,
+  "h": 1004,
+  "ratio": 0.6407147415443523,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1200,
+   1567
+  ],
+  "format": "png"
+ },
+ "mpt-3001/stahlkonstruktion-hq.png": {
+  "key": "stahlkonstruktion-hq",
+  "w": 1163,
+  "h": 1353,
+  "ratio": 1.1633705932932072,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1163
+  ],
+  "format": "png"
+ },
+ "mpt-3001/kreuzlaser-positionsbestimmung-hq.png": {
+  "key": "kreuzlaser-positionsbestimmung-hq",
+  "w": 1473,
+  "h": 1068,
+  "ratio": 0.725050916496945,
+  "local": true,
+  "folder": "mpt-3001",
+  "sizes": [
+   160,
+   400,
+   800,
+   1200,
+   1473
+  ],
+  "format": "png"
  }
 }

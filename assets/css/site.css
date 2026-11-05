@@ -310,6 +310,7 @@
   .pcard-highlights li{position:relative;padding-left:15px;overflow-wrap:anywhere}
   .pcard-highlights li::before{content:"";position:absolute;left:0;top:.55em;width:5px;height:5px;background:var(--accent-ink)}
   .photo-original{display:inline-block;margin:6px 0 0 8px;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+  .photo-provenance{display:block;margin-top:5px;font-size:13px;line-height:1.45;color:var(--muted)}
   .pcard .spec span{font-size:14px;background:var(--panel2);border:1px solid var(--line);border-radius:3px;padding:3px 8px;color:var(--muted)}
   .pcard .foot{padding:14px 16px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}
   .pcard .foot .poa{font-family:'Inter';font-weight:700;font-size:14px;color:var(--accent-ink);letter-spacing:.01em}
@@ -419,6 +420,10 @@
     object-fit:contain;cursor:zoom-in;background:#fff;border-radius:6px}
   .lupe.gross .lupe-buehne{place-items:start}
   .lupe.gross .lupe-buehne img{max-width:none;max-height:none;cursor:zoom-out}
+  /* A tall restored MPT detail initially fits the viewport; + retains native
+     PNG inspection. Limit this correction to the requested brochure images. */
+  .lupe:not(.gross) .lupe-buehne img[src*="/mpt-3001/"][src$=".png"]{
+    max-height:calc(var(--vt-viewport-height,100vh) - 150px)}
   .lupe-fuss{display:flex;align-items:center;justify-content:center;gap:14px;color:#CFCBC3;
     font-size:14px;min-height:34px;text-align:center}
   .lupe-nav{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.35);

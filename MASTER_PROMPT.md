@@ -1663,10 +1663,11 @@ bricht bei geänderten Ursprungswerten ab. Ebenso ersetzen die neueren
 Prospektgrenzen die widersprechenden Website-Bullets über 55/38 mm.
 
 build/import_mpt_brochure.py extrahiert die fünf eingebetteten Fotos anhand
-des exakten PDF-Hashes als PNG in nativer Auflösung. Keine KI-Retusche, kein
-Hochskalieren, keine veränderte Frontplatte. Optimierte WebP-Stufen übernehmen
-die Auslieferung; die Bildunterschriften bieten den unveränderten PNG-Export.
-Kleine Originale bleiben klein. Der normale Build benötigt keine PDF-Bibliothek.
+des exakten PDF-Hashes als PNG in nativer Auflösung. Diese Originale bleiben
+unretuschiert und unverändert herunterladbar. Ihre erste WebP-Präsentation
+wurde auf den nachfolgenden ausdrücklichen Wunsch des Inhabers durch separat
+gekennzeichnete, bildoptimierte PNG-Darstellungen ergänzt (siehe unten).
+Der normale Build benötigt keine PDF-Bibliothek.
 
 Beim Startseitenbild lag der Weissraum an einer festen Höhe mit object-fit:
 contain. Das MPT-Foto füllt den Rahmen nun proportional ohne zusätzlichen
@@ -1707,3 +1708,35 @@ und Stückzahl ab und unterscheidet Randanschnitt von Einstechen. Der MPT 3001
 wird nur als Alternative für den grösseren Arbeitsbereich verlinkt.
 MiniCAD, 21-Zoll-PC, Windows 11, ohmischer Sensor, Kreuzlaser, Prospektfotos
 und neue Bauartmerkmale des MPT 3001 werden nicht auf MPT 2501 übertragen.
+
+## MPT-Detailbilder: PNG-Präsentation nach Qualitätskorrektur, 05.11.2026
+
+Der Inhaber beanstandete die bereits im Prospekt verpixelten Detailbilder und
+beauftragte die hochwertige Aufbereitung nur des letzten MAHE-Bildimports.
+Fünf separat benannte Dateien mit Suffix -hq.png sind bildoptimierte
+Darstellungen nach der jeweiligen MAHE-Vorlage. Sie wurden mit imagegen
+aufbereitet und visuell auf Motiv, Perspektive und Baugruppen geprüft. Beim
+Z-Achsenbild wurde ein erster Entwurf wegen abweichender Lüftungsschlitze und
+eines falschen Warnsymbols verworfen. Die Darstellung ist kein neuer
+Hersteller-Fotonachweis; feine Details aus der Rekonstruktion begründen keine
+Ausstattungs- oder Sicherheitszusage.
+
+Die unveränderten PNG-Originale und der PDF-Prospekt bleiben als Quellen
+erhalten. MPT_BROCHURE dokumentiert je Darstellung Originalhash, HQ-Hash,
+Auflösung und Bearbeitungsart. GALLERY ordnet nur dem MPT 3001 die fünf
+HQ-Darstellungen zu. Hauptfoto, Startseitenbanner, Produktkarten sowie die
+bisherigen MPT-2501-Bilder bleiben unverändert. Der MPT 2501 erhält keine
+unbelegt übertragene Galerie.
+
+build/package_mpt_details.py erzeugt aus den ausgewählten, hashgeprüften
+PNG-Mastern ausschliesslich verlustfreie PNG-Bildstufen, ohne erneute
+Bildbearbeitung. render.img_tag respektiert format=png nur für diese
+Manifest-Einträge; alle bisherigen WebP-Bilder behalten ihre Auslieferung.
+Die Lupe nutzt automatisch die grösste PNG-Stufe. Download-Links bieten
+HQ-PNG und unverändertes Original getrennt an. Ein kurzer Hinweis in allen
+fünf Sprachen kennzeichnet die bildoptimierte Darstellung; auch der Alt-Text
+enthält die Einordnung. Hohe MPT-PNGs passen beim Öffnen der Lupe zunächst
+vollständig in die Fensterhöhe; die Plus-Funktion zeigt weiterhin die native
+Auflösung zum Scrollen. Diese Grössenbegrenzung betrifft nur MPT-Detail-PNGs.
+test_mpt_hq.py prüft Herkunft, PNG-Format, Bildstufen,
+Modellgrenzen, Übersetzungen und sichere Download-Pfade.

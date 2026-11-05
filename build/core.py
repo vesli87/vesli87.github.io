@@ -974,10 +974,13 @@ def galleryOf(lang, p):
             continue
         a = g.get("alt") or {}
         cap = g.get("cap") or {}
+        note = g.get("presentation_note") or {}
         out.append({"img": g["img"],
                     "alt": a.get(lang) or a.get("de") or "",
                     "cap": cap.get(lang) or cap.get("de") or "",
-                    "original": g.get("original", "")})
+                    "original": g.get("original", ""),
+                    "download": g.get("download", ""),
+                    "presentation_note": note.get(lang) or note.get("de") or ""})
     return out
 
 
@@ -1496,10 +1499,16 @@ def validate_editorial_guides():
         if pid.startswith('_'):
             continue
         for photo in photos:
-            original = photo.get('original')
-            if original and (not original.startswith('/assets/img/') or '..' in original or
-                             not original.endswith('.png') or not (ROOT / original.lstrip('/')).is_file()):
-                raise ValueError(f'Gallery original must be an existing local PNG: {pid}')
+            for field in ('original', 'download'):
+                original = photo.get(field)
+                if original and (not original.startswith('/assets/img/') or '..' in original or
+                                 not original.endswith('.png') or not (ROOT / original.lstrip('/')).is_file()):
+                    raise ValueError(f'Gallery {field} must be an existing local PNG: {pid}')
+            note = photo.get('presentation_note')
+            if note is not None and (not isinstance(note, dict) or set(note) != set(LANGS) or any(
+                    not isinstance(value, str) or not value.strip() or re.search(r'<[/!A-Za-z]', value)
+                    for value in note.values())):
+                raise ValueError(f'Gallery presentation needs complete plain-text disclosure: {pid}')
     if set(PRODUCT_SEO) != set(BY_ID):
         raise ValueError('Product search copy must cover the current catalogue exactly')
     search_titles = set()

@@ -355,7 +355,9 @@ def media_html(lang, p, nm):
              "alt": f"{C.pFullName(lang, p)}: {C.pDesc(lang, p)}"}
     bilder = [haupt]
     for g in C.galleryOf(lang, p):
-        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"], "original": g.get("original", "")})
+        bilder.append({"img": g["img"], "cap": g["cap"], "alt": g["alt"],
+                       "original": g.get("original", ""), "download": g.get("download", ""),
+                       "presentation_note": g.get("presentation_note", "")})
 
     # Über dem Foto lag früher ein Etikett mit den Schweissverfahren. Es stand im
     # Markup vor dem Bild und wurde davon verdeckt - sichtbar blieb nur ein
@@ -377,6 +379,11 @@ def media_html(lang, p, nm):
     slides = ""
     for i, b in enumerate(bilder):
         caption = e(b['cap'])
+        if b.get('download'):
+            caption += (f' <a class="photo-original" href="{e(b["download"])}" download>'
+                        f'{e(C.t(lang, "photo_png_hq"))}</a>')
+        if b.get('presentation_note'):
+            caption += f'<small class="photo-provenance">{e(b["presentation_note"])}</small>'
         if b.get('original'):
             caption += (f' <a class="photo-original" href="{e(b["original"])}" download>'
                         f'{e(C.t(lang, "photo_png"))}</a>')

@@ -306,7 +306,7 @@ def dimg_klasse(*pfade):
 
 
 def img_tag(path, sizes, cls="", alt="", eager=False, width=None, low_priority=False):
-    """<img> mit WebP-Srcset, Massen gegen CLS und Remote-Fallback."""
+    """<img> mit geprüften Bildstufen, Massen gegen CLS und Remote-Fallback."""
     m = MANIFEST.get(C.full_img(path))
     remote = C.REMOTE_IMG + C.full_img(path)
     if not m:
@@ -335,8 +335,16 @@ def img_tag(path, sizes, cls="", alt="", eager=False, width=None, low_priority=F
     # groessere Stufe genommen - gemessen an einem Vorher/Nachher-Vergleich
     # aller 348 Seiten.
     stufen = m.get("sizes") or ([400] + ([1000] if nat > 400 else []))
-    small = f"/assets/img/{folder}/{k}-{stufen[0]}.webp"
-    srcset = ", ".join(f"/assets/img/{folder}/{k}-{s}.webp {min(s, nat)}w"
+    ext = m.get("format", "webp")
+    if ext not in ("webp", "png"):
+        raise ValueError(f"Unsupported catalogue image format: {ext}")
+    def image_source(size):
+        # The full PNG master is also the largest srcset candidate: no second
+        # byte-identical download/zoom copy is needed.
+        suffix = "" if ext == "png" and size == nat else f"-{size}"
+        return f"/assets/img/{folder}/{k}{suffix}.{ext}"
+    small = image_source(stufen[0])
+    srcset = ", ".join(f"{image_source(s)} {min(s, nat)}w"
                        for s in stufen)
     klein = min(stufen[0], nat)
     if nat < (width or 400):

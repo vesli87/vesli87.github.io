@@ -191,5 +191,137 @@
         "es": "Ilustración mejorada a partir de la imagen de MAHE"
       }
     }
+  ],
+  "mpt-2501": [
+    {
+      "img": "mpt-3001/kreuzlaser-positionsbestimmung-hq.png",
+      "original": "/assets/img/mpt-3001/kreuzlaser-positionsbestimmung.png",
+      "cap": {
+        "de": "Kreuzlaser zur Positionsbestimmung",
+        "fr": "Laser en croix pour le positionnement",
+        "it": "Laser a croce per il posizionamento",
+        "en": "Cross-line laser for positioning",
+        "es": "Láser de cruz para el posicionamiento"
+      },
+      "alt": {
+        "de": "MAHE MPT 2501: Kreuzlaser zur Positionsbestimmung. Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "MAHE MPT 2501: Laser en croix pour le positionnement. Illustration améliorée à partir du visuel MAHE",
+        "it": "MAHE MPT 2501: Laser a croce per il posizionamento. Illustrazione ottimizzata da immagine MAHE",
+        "en": "MAHE MPT 2501: Cross-line laser for positioning. Enhanced illustration based on the MAHE source image",
+        "es": "MAHE MPT 2501: Láser de cruz para el posicionamiento. Ilustración mejorada a partir de la imagen de MAHE"
+      },
+      "download": "/assets/img/mpt-3001/kreuzlaser-positionsbestimmung-hq.png",
+      "presentation_note": {
+        "de": "Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "Illustration améliorée à partir du visuel MAHE",
+        "it": "Illustrazione ottimizzata da immagine MAHE",
+        "en": "Enhanced illustration based on the MAHE source image",
+        "es": "Ilustración mejorada a partir de la imagen de MAHE"
+      }
+    },
+    {
+      "img": "mpt-3001/verlaengerte-basis-hq.png",
+      "original": "/assets/img/mpt-3001/verlaengerte-basis.png",
+      "cap": {
+        "de": "Verlängerte Basis für einen freien Beladebereich",
+        "fr": "Base prolongée pour dégager la zone de chargement",
+        "it": "Base prolungata per liberare la zona di carico",
+        "en": "Extended base to clear the loading area",
+        "es": "Base prolongada para despejar la zona de carga"
+      },
+      "alt": {
+        "de": "MAHE MPT 2501: Verlängerte Basis für einen freien Beladebereich. Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "MAHE MPT 2501: Base prolongée pour dégager la zone de chargement. Illustration améliorée à partir du visuel MAHE",
+        "it": "MAHE MPT 2501: Base prolungata per liberare la zona di carico. Illustrazione ottimizzata da immagine MAHE",
+        "en": "MAHE MPT 2501: Extended base to clear the loading area. Enhanced illustration based on the MAHE source image",
+        "es": "MAHE MPT 2501: Base prolongada para despejar la zona de carga. Ilustración mejorada a partir de la imagen de MAHE"
+      },
+      "download": "/assets/img/mpt-3001/verlaengerte-basis-hq.png",
+      "presentation_note": {
+        "de": "Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "Illustration améliorée à partir du visuel MAHE",
+        "it": "Illustrazione ottimizzata da immagine MAHE",
+        "en": "Enhanced illustration based on the MAHE source image",
+        "es": "Ilustración mejorada a partir de la imagen de MAHE"
+      }
+    },
+    {
+      "img": "mpt-3001/z-achse-spindelantrieb-hq.png",
+      "original": "/assets/img/mpt-3001/z-achse-spindelantrieb.png",
+      "cap": {
+        "de": "Robuste Z-Achse mit Spindelantrieb",
+        "fr": "Axe Z robuste avec entraînement par vis",
+        "it": "Asse Z robusto con azionamento a vite",
+        "en": "Heavy-duty Z axis with spindle drive",
+        "es": "Eje Z robusto con accionamiento por husillo"
+      },
+      "alt": {
+        "de": "MAHE MPT 2501: Robuste Z-Achse mit Spindelantrieb. Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "MAHE MPT 2501: Axe Z robuste avec entraînement par vis. Illustration améliorée à partir du visuel MAHE",
+        "it": "MAHE MPT 2501: Asse Z robusto con azionamento a vite. Illustrazione ottimizzata da immagine MAHE",
+        "en": "MAHE MPT 2501: Heavy-duty Z axis with spindle drive. Enhanced illustration based on the MAHE source image",
+        "es": "MAHE MPT 2501: Eje Z robusto con accionamiento por husillo. Ilustración mejorada a partir de la imagen de MAHE"
+      },
+      "download": "/assets/img/mpt-3001/z-achse-spindelantrieb-hq.png",
+      "presentation_note": {
+        "de": "Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "Illustration améliorée à partir du visuel MAHE",
+        "it": "Illustrazione ottimizzata da immagine MAHE",
+        "en": "Enhanced illustration based on the MAHE source image",
+        "es": "Ilustración mejorada a partir de la imagen de MAHE"
+      }
+    },
+    {
+      "img": "mpt-3001/auflagebleche-hq.png",
+      "original": "/assets/img/mpt-3001/auflagebleche.png",
+      "cap": {
+        "de": "Gebogene oder gerade Auflagebleche",
+        "fr": "Lames de support courbes ou droites",
+        "it": "Lamelle di supporto curve o diritte",
+        "en": "Curved or straight support slats",
+        "es": "Lamas de apoyo curvas o rectas"
+      },
+      "alt": {
+        "de": "MAHE MPT 2501: Gebogene oder gerade Auflagebleche. Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "MAHE MPT 2501: Lames de support courbes ou droites. Illustration améliorée à partir du visuel MAHE",
+        "it": "MAHE MPT 2501: Lamelle di supporto curve o diritte. Illustrazione ottimizzata da immagine MAHE",
+        "en": "MAHE MPT 2501: Curved or straight support slats. Enhanced illustration based on the MAHE source image",
+        "es": "MAHE MPT 2501: Lamas de apoyo curvas o rectas. Ilustración mejorada a partir de la imagen de MAHE"
+      },
+      "download": "/assets/img/mpt-3001/auflagebleche-hq.png",
+      "presentation_note": {
+        "de": "Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "Illustration améliorée à partir du visuel MAHE",
+        "it": "Illustrazione ottimizzata da immagine MAHE",
+        "en": "Enhanced illustration based on the MAHE source image",
+        "es": "Ilustración mejorada a partir de la imagen de MAHE"
+      }
+    },
+    {
+      "img": "mpt-3001/stahlkonstruktion-hq.png",
+      "original": "/assets/img/mpt-3001/stahlkonstruktion.png",
+      "cap": {
+        "de": "Massive, vollverschweisste Stahlkonstruktion",
+        "fr": "Construction robuste en acier entièrement soudé",
+        "it": "Robusta struttura in acciaio interamente saldata",
+        "en": "Robust, fully welded steel construction",
+        "es": "Estructura robusta de acero totalmente soldado"
+      },
+      "alt": {
+        "de": "MAHE MPT 2501: Massive, vollverschweisste Stahlkonstruktion. Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "MAHE MPT 2501: Construction robuste en acier entièrement soudé. Illustration améliorée à partir du visuel MAHE",
+        "it": "MAHE MPT 2501: Robusta struttura in acciaio interamente saldata. Illustrazione ottimizzata da immagine MAHE",
+        "en": "MAHE MPT 2501: Robust, fully welded steel construction. Enhanced illustration based on the MAHE source image",
+        "es": "MAHE MPT 2501: Estructura robusta de acero totalmente soldado. Ilustración mejorada a partir de la imagen de MAHE"
+      },
+      "download": "/assets/img/mpt-3001/stahlkonstruktion-hq.png",
+      "presentation_note": {
+        "de": "Bildoptimierte Darstellung nach MAHE-Vorlage",
+        "fr": "Illustration améliorée à partir du visuel MAHE",
+        "it": "Illustrazione ottimizzata da immagine MAHE",
+        "en": "Enhanced illustration based on the MAHE source image",
+        "es": "Ilustración mejorada a partir de la imagen de MAHE"
+      }
+    }
   ]
 }

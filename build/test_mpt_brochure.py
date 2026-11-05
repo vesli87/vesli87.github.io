@@ -54,7 +54,9 @@ class MptBrochureTests(unittest.TestCase):
 
     def test_construction_and_power_source_limits_are_not_cnc_piercing_ratings(self):
         self.assertNotIn('mpt-2501', C.SUPPLIED_SPECS)
-        self.assertNotIn('mpt-2501', C.GALLERY)
+        # The owner confirmed the five shared physical details separately;
+        # this does not transfer MPT 3001 specification tables or ratings.
+        self.assertEqual(C.MPT_BROCHURE['shared_gallery']['basis'], 'owner_confirmation')
         source = C.SUPPLIED_SPECS['mpt-theta-aut']
         rows = {row['model']: row for row in source['rows']}
         self.assertEqual([rows['Trennschnitt (Stromquelle)'][k] for k in ('60', '120', '180')],

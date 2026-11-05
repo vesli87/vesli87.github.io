@@ -41,11 +41,10 @@ class MptHqTests(unittest.TestCase):
                 self.assertEqual(png_size(image), (width, round(h * width / w)))
 
     def test_gallery_and_zoom_sources_are_png_with_localized_disclosure(self):
-        product = C.BY_ID['mpt-3001']
         originals = {photo['original'] for photo in C.MPT_BROCHURE['photos']}
-        self.assertNotIn('mpt-2501', C.GALLERY)
-        for lang in C.LANGS:
-            with self.subTest(lang=lang):
+        for pid in ('mpt-3001', 'mpt-2501'):
+            product = C.BY_ID[pid]
+            for lang in C.LANGS:
                 markup = P.media_html(lang, product, C.pName(lang, product))
                 for item in C.galleryOf(lang, product):
                     self.assertIn(item['original'], originals)
@@ -61,6 +60,30 @@ class MptHqTests(unittest.TestCase):
                 # Main/catalogue images and other products are outside this edit.
                 self.assertIn('.webp', R.img_tag(C.BY_ID['mpt-2501']['img'], P.DIMG_SIZES))
                 self.assertIn('.webp', R.img_tag(C.BY_ID['mlf100']['img'], P.DIMG_SIZES))
+
+    def test_shared_mpt2501_gallery_reuses_assets_with_its_own_names_and_tabs(self):
+        approval = C.MPT_BROCHURE['shared_gallery']
+        self.assertEqual(approval['basis'], 'owner_confirmation')
+        self.assertEqual(approval['confirmed'], '2026-11-05')
+        self.assertEqual(set(approval['products']), {'mpt-3001', 'mpt-2501'})
+        self.assertEqual(len(approval['scope']), 5)
+        for lang in C.LANGS:
+            a = C.galleryOf(lang, C.BY_ID['mpt-3001'])
+            b = C.galleryOf(lang, C.BY_ID['mpt-2501'])
+            self.assertEqual(len(b), 5)
+            for original, shared in zip(a, b):
+                for field in ('img', 'download', 'original', 'cap', 'presentation_note'):
+                    self.assertEqual(original[field], shared[field])
+                self.assertIn('MPT 2501', shared['alt'])
+                self.assertNotIn('MPT 3001', shared['alt'])
+            markup = P.media_html(lang, C.BY_ID['mpt-2501'], C.pName(lang, C.BY_ID['mpt-2501']))
+            self.assertEqual(markup.count('role="tabpanel"'), 6)
+            self.assertEqual(markup.count('role="tab"'), 6)
+            for index in range(6):
+                self.assertIn(f'aria-controls="gs-mpt-2501-{index}"', markup)
+                self.assertIn(f'aria-labelledby="gt-mpt-2501-{index}"', markup)
+            self.assertNotIn('gt-mpt-3001-', markup)
+        self.assertNotIn('mpt-2501', C.SUPPLIED_SPECS)
 
     def test_unsafe_downloads_or_incomplete_disclosure_block_publication(self):
         for path in ('https://example.com/photo.png', '/assets/img/../../private.png'):

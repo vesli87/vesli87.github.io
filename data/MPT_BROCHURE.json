@@ -127,5 +127,22 @@
       "value": "< 55mm",
       "page": 5
     }
-  ]
+  ],
+  "shared_gallery": {
+    "products": [
+      "mpt-3001",
+      "mpt-2501"
+    ],
+    "basis": "owner_confirmation",
+    "confirmed": "2026-11-05",
+    "scope": [
+      "cross-line laser",
+      "torch / Z-axis assembly",
+      "extended base",
+      "support slats",
+      "steel construction"
+    ],
+    "confirmation": "Owner explicitly confirmed that all five pictured details are shared by MPT 3001 and MPT 2501, after being informed that the photographs originate in the MPT 3001 brochure.",
+    "limits": "Shared detail views only. No transfer of working area, PC size, Windows version, MiniCAD, ohmic sensor, source-specific cutting ratings or any other unconfirmed specification."
+  }
 }

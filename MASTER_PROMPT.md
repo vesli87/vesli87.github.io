@@ -1706,8 +1706,9 @@ zusätzliche Ausrüstung.
 Eine eigene Auswahlhilfe fragt Material, Blechstärke, Teilegrösse, Zeichnung
 und Stückzahl ab und unterscheidet Randanschnitt von Einstechen. Der MPT 3001
 wird nur als Alternative für den grösseren Arbeitsbereich verlinkt.
-MiniCAD, 21-Zoll-PC, Windows 11, ohmischer Sensor, Kreuzlaser, Prospektfotos
-und neue Bauartmerkmale des MPT 3001 werden nicht auf MPT 2501 übertragen.
+MiniCAD, 21-Zoll-PC, Windows 11, ohmischer Sensor und die technischen
+MPT-3001-Tabellen werden nicht auf MPT 2501 übertragen. Die fünf gemeinsamen
+Detailbilder wurden anschliessend gesondert vom Inhaber bestätigt (siehe unten).
 
 ## MPT-Detailbilder: PNG-Präsentation nach Qualitätskorrektur, 05.11.2026
 
@@ -1723,10 +1724,10 @@ Ausstattungs- oder Sicherheitszusage.
 
 Die unveränderten PNG-Originale und der PDF-Prospekt bleiben als Quellen
 erhalten. MPT_BROCHURE dokumentiert je Darstellung Originalhash, HQ-Hash,
-Auflösung und Bearbeitungsart. GALLERY ordnet nur dem MPT 3001 die fünf
-HQ-Darstellungen zu. Hauptfoto, Startseitenbanner, Produktkarten sowie die
-bisherigen MPT-2501-Bilder bleiben unverändert. Der MPT 2501 erhält keine
-unbelegt übertragene Galerie.
+Auflösung und Bearbeitungsart. Zunächst wurden die fünf HQ-Darstellungen
+nur dem MPT 3001 zugeordnet. Hauptfoto, Startseitenbanner und Produktkarten
+bleiben unverändert. Die nachfolgende MPT-2501-Galerie beruht auf der
+gesonderten Bestätigung des Inhabers, nicht allein auf dem MPT-3001-Prospekt.
 
 build/package_mpt_details.py erzeugt aus den ausgewählten, hashgeprüften
 PNG-Mastern ausschliesslich verlustfreie PNG-Bildstufen, ohne erneute
@@ -1740,3 +1741,20 @@ vollständig in die Fensterhöhe; die Plus-Funktion zeigt weiterhin die native
 Auflösung zum Scrollen. Diese Grössenbegrenzung betrifft nur MPT-Detail-PNGs.
 test_mpt_hq.py prüft Herkunft, PNG-Format, Bildstufen,
 Modellgrenzen, Übersetzungen und sichere Download-Pfade.
+
+## MPT 2501: Gemeinsame Detailgalerie bestätigt, 05.11.2026
+
+Auf die gezielte Rückfrage bestätigte der Inhaber ausdrücklich, dass alle
+fünf gezeigten Details bei MPT 2501 und MPT 3001 gemeinsam sind: Kreuzlaser,
+Brennereinheit/Z-Achse, verlängerte Basis, Auflagebleche und Stahlkonstruktion.
+Die Herkunft der Fotos aus dem MPT-3001-Prospekt wurde bei der Rückfrage
+genannt. MPT_BROCHURE::shared_gallery dokumentiert Datum, Bestätigungsgrund
+und den engen Umfang.
+
+GALLERY enthält damit auch für MPT 2501 die fünf HQ-Details in DE/FR/IT/EN/ES.
+Sie verwenden dieselben Bild-, PNG-Download- und Original-URLs, ohne Kopien
+anzulegen. Alt-Texte und die sechs Galeriefolien samt Miniaturauswahl tragen
+die richtige Modellbezeichnung MPT 2501. Lupe, Hinweis auf die Bildaufbereitung
+und Zugriff auf die unveränderten Originale bleiben erhalten. Die Bestätigung
+überträgt keine technischen Tabellen, Schneidgrenzen, PC-/Softwareausstattung
+oder andere unbestätigte Daten des MPT 3001.

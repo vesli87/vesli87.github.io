@@ -90,6 +90,10 @@ class MptBrochureTests(unittest.TestCase):
             ds = C.cardFeatures(lang, C.BY_ID['delta-digital-ds'])
             self.assertEqual(ds[2], C.HL_DEVICE['delta-digital-ds'][lang][3])
             self.assertFalse(any('CEL' in text for text in ds))
+            selection_help = C.SUBCATEGORY_GUIDES['schweissgeraete']['MMA'][lang]['criteria'][0][1]
+            self.assertNotIn('JOB', selection_help)
+            self.assertIn('CEL', selection_help)
+            self.assertIn('Hot Start', selection_help)
         self.assertNotIn('Speicher', C.BY_ID['delta-digital']['specs'])
         self.assertIn('WIG-Lift', C.BY_ID['i-1600']['specs']['Verfahren'])
 

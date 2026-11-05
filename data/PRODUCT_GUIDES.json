@@ -1715,5 +1715,62 @@
         "Elija fuente Theta, antorcha y consumibles según el trabajo. Una estructura diseñada para chapas gruesas no garantiza la capacidad de perforación."
       ]
     }
+  },
+  "mpt-2501": {
+    "sources": [
+      "MAHE Preisliste 2026 V11, S. 66/67: MPT 2501 - 25125, Sets 1721.250.10.SET.060/.120/.180",
+      "MyPlasm CNC manual 1.2; owner-confirmed control functions in HL_DEVICE.json#mpt-2501",
+      "P.json#mpt-2501"
+    ],
+    "fact_keys": [
+      "Arbeitsbereich",
+      "Steuerung"
+    ],
+    "links": [
+      {
+        "kind": "product",
+        "id": "mpt-3001"
+      }
+    ],
+    "de": {
+      "intro": "Eigene Zuschnitte statt nur Standardteile: Importieren Sie Ihre 2D-Konturen, bereiten Sie den Schneidablauf vor und nutzen Sie gespeicherte Materialparameter für wiederkehrende Aufträge.",
+      "checks": [
+        "Nennen Sie Werkstoff, Blechstärke, grösstes Bauteil und Stückzahl. Eine DXF- oder HPGL/PLT-Zeichnung hilft, Konturen und Arbeitsbereich abzustimmen.",
+        "Klären Sie, ob der Schnitt an der Blechkante beginnt oder Innenkonturen eingestochen werden. Theta-Stromquelle, Brenner und Verschleissteile werden nach dieser Aufgabe ausgewählt.",
+        "Benötigen Ihre Bauteile mehr als 2500 × 1250 mm Arbeitsbereich? Vergleichen Sie den MPT 3001 mit 3000 × 1500 mm; die Ausstattung wird je Modell abgestimmt."
+      ]
+    },
+    "fr": {
+      "intro": "Réalisez vos propres découpes : importez vos contours 2D, préparez le cycle de coupe et réutilisez les paramètres matériau enregistrés pour les travaux récurrents.",
+      "checks": [
+        "Précisez matériau, épaisseur, dimensions de la plus grande pièce et quantité. Un dessin DXF ou HPGL/PLT permet de vérifier les contours et la surface de travail nécessaire.",
+        "Indiquez si la coupe commence au bord de la tôle ou si les contours intérieurs nécessitent un perçage plasma. La source Theta, la torche et les consommables sont choisis selon ce besoin.",
+        "Vos pièces nécessitent plus de 2500 × 1250 mm ? Comparez le MPT 3001 de 3000 × 1500 mm ; l’équipement est défini pour chaque modèle."
+      ]
+    },
+    "it": {
+      "intro": "Realizzate i vostri pezzi su disegno: importate le sagome 2D, preparate il ciclo di taglio e riutilizzate i parametri materiale salvati per le lavorazioni ripetitive.",
+      "checks": [
+        "Indicate materiale, spessore, dimensioni del pezzo più grande e quantità. Un disegno DXF o HPGL/PLT aiuta a verificare sagome e area di lavoro necessaria.",
+        "Specificate se il taglio inizia dal bordo della lamiera o se i contorni interni richiedono sfondamento plasma. Generatore Theta, torcia e consumabili vengono scelti in base al lavoro.",
+        "I vostri pezzi richiedono più di 2500 × 1250 mm? Confrontate il MPT 3001 da 3000 × 1500 mm; la dotazione viene definita per ciascun modello."
+      ]
+    },
+    "en": {
+      "intro": "Make parts from your own drawings: import 2D contours, prepare the cutting sequence and reuse saved material settings for repeat jobs.",
+      "checks": [
+        "Specify material, sheet thickness, the largest part dimensions and quantity. A DXF or HPGL/PLT drawing helps check contours and the required working area.",
+        "State whether cuts start at the sheet edge or internal contours require piercing. The Theta power source, torch and consumables are selected for that task.",
+        "Do your parts need more than 2500 × 1250 mm? Compare the MPT 3001 with its 3000 × 1500 mm working area; equipment is specified for each model."
+      ]
+    },
+    "es": {
+      "intro": "Fabrique piezas a partir de sus propios planos: importe contornos 2D, prepare la secuencia de corte y reutilice los parámetros del material guardados para trabajos repetitivos.",
+      "checks": [
+        "Indique material, espesor de chapa, dimensiones de la pieza más grande y cantidad. Un plano DXF o HPGL/PLT ayuda a comprobar contornos y área de trabajo necesaria.",
+        "Especifique si el corte empieza en el borde de la chapa o si los contornos interiores requieren perforación plasma. La fuente Theta, la antorcha y los consumibles se eligen según el trabajo.",
+        "¿Sus piezas necesitan más de 2500 × 1250 mm? Compare el MPT 3001 de 3000 × 1500 mm; el equipamiento se define para cada modelo."
+      ]
+    }
   }
 }

@@ -364,13 +364,13 @@
   "vt": "Plasma CNC",
   "name": "MPT 2501",
   "img": "panels/MPT_Plasmaschneidtisch.png",
-  "desc": "Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 2500 x 1250 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie.",
+  "desc": "Vom 2D-Plan zum eigenen Blechteil: CNC-Plasmaschneiden auf 2500 × 1250 mm mit automatischer Bahnvorbereitung und geregelter Brennerhöhe. Als Set mit Theta HSC in 60, 120 oder 180 A erhältlich.",
   "specs": {
    "Verfahren": "Plasmaschneiden",
-   "Arbeitsbereich": "2500 x 1250 mm",
+   "Arbeitsbereich": "2500 × 1250 mm",
+   "Steuerung": "MyPlasm CNC",
    "Stromquelle": "Theta 060 / 120 / 180 HSC",
    "Schneidstrom": "60 A / 120 A / 180 A",
-   "Steuerung": "MyPlasm CNC",
    "Dateiformate": "DXF, HPGL/PLT",
    "Ausführung": "Set mit Stromquelle"
   }

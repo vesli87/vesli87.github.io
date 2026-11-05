@@ -61,7 +61,7 @@
 - [MAHE Theta 60 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-60-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
 - [MAHE Theta 120 AUT](https://www.ves-tech.ch/produkte/plasmaschneiden/theta-120-aut/): Automations-Plasmaschneidinverter mit HSC-Technologie für den Maschineneinbau. (Plasma AUT)
 - [MAHE MPT 3001](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-3001/): CNC-Plasmaschneidanlage für 3000 × 1500 mm mit MyPlasm, MiniCAD und 21-Zoll-Industrie-PC. THC, ohmischer Sensor und Kreuzlaser unterstützen Einrichtung und Schnitt; als Set mit Theta HSC AUT erhältlich. (Plasma CNC)
-- [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/): Professioneller CNC-Plasmaschneidtisch mit einem Arbeitsbereich von 2500 x 1250 mm, geliefert als Set mit einer Stromquelle der MAHE-Theta-Serie. (Plasma CNC)
+- [MAHE MPT 2501](https://www.ves-tech.ch/produkte/plasmaschneiden/mpt-2501/): Vom 2D-Plan zum eigenen Blechteil: CNC-Plasmaschneiden auf 2500 × 1250 mm mit automatischer Bahnvorbereitung und geregelter Brennerhöhe. Als Set mit Theta HSC in 60, 120 oder 180 A erhältlich. (Plasma CNC)
 
 ### Reinigungsgeräte
 - [MAHE MiniReiniger](https://www.ves-tech.ch/produkte/reinigungsgeraete/minicleaner/): Wirtschaftlicher Inverter, speziell für den mobilen Einsatz. (Cleaner)

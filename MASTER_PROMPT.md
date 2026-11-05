@@ -1682,3 +1682,28 @@ auch WIG Lift Arc. Die unbelegte JOB-Speicherangabe von Delta Digital entfällt.
 Die Karten, Detailtexte, Auswahlhilfe, Suchindizes und SEO-Kurztexte bleiben
 aufeinander abgestimmt. test_mpt_brochure.py prüft Quellen, Veröffentlichung,
 Modellgrenzen, Originalauflösungen, Sprachvollständigkeit und sichere Ausgabe.
+
+## MPT 2501: Nutzenorientierte Produktdarstellung, 05.11.2026
+
+Die bisher generische Kurzbeschreibung wird in DE/FR/IT/EN/ES durch den
+Arbeitsablauf vom eigenen 2D-Plan zum Blechteil ersetzt. Drei Kartenmerkmale
+heben den direkten DXF-/HPGL-Import, die spannungsgeregelte Brennerhöhe und
+wiederverwendbare Materialparameter hervor. P.json, PDESC, HL_DEVICE,
+PRODUCT_CARD_FEATURES und PRODUCT_SEO bleiben die gemeinsamen Quellen für
+Kategorien, Detailseite, Suchindex und Suchergebnis. Die doppelte französische
+Preisformulierung in der bisherigen Meta-Description entfällt.
+
+Die erste Spezifikationsgruppe nennt Verfahren, 2500 × 1250 mm Arbeitsbereich
+und die bereits dokumentierte MyPlasm-CNC-Steuerung. Der Detailbereich erklärt
+auch automatische Bahnvorbereitung, Höhenabtastung, Bahnanalyse, Markieren,
+Windows-Bedienplatz und die Theta-HSC-Sets mit 60/120/180 A. Die vom Inhaber
+gewünschte Bezeichnung «System CNC von MAHE» bleibt in der Merkmalsliste
+erhalten. Die Herkunft aus Preisliste, MyPlasm-Handbuch und Inhaberangaben
+bleibt in HL_DEVICE dokumentiert; die Textüberarbeitung bestätigt keine
+zusätzliche Ausrüstung.
+
+Eine eigene Auswahlhilfe fragt Material, Blechstärke, Teilegrösse, Zeichnung
+und Stückzahl ab und unterscheidet Randanschnitt von Einstechen. Der MPT 3001
+wird nur als Alternative für den grösseren Arbeitsbereich verlinkt.
+MiniCAD, 21-Zoll-PC, Windows 11, ohmischer Sensor, Kreuzlaser, Prospektfotos
+und neue Bauartmerkmale des MPT 3001 werden nicht auf MPT 2501 übertragen.

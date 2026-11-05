@@ -37,7 +37,7 @@
  },
  "/en/products/": {
   "d": "2026-11-05",
-  "h": "9029b8a6534d4249"
+  "h": "d83f5994c98637b3"
  },
  "/en/products/accessories/": {
   "d": "2026-11-03",
@@ -345,15 +345,15 @@
  },
  "/en/products/plasma-cutting/": {
   "d": "2026-11-05",
-  "h": "2f675073fe962a84"
+  "h": "92d0b12840f9f52a"
  },
  "/en/products/plasma-cutting/cutting-tables/": {
   "d": "2026-11-05",
-  "h": "07e8073332542eb8"
+  "h": "b2ea4687d137c7b8"
  },
  "/en/products/plasma-cutting/mpt-2501/": {
-  "d": "2026-11-03",
-  "h": "854be4464c1e5d75"
+  "d": "2026-11-05",
+  "h": "9d4a063fd8cc0e96"
  },
  "/en/products/plasma-cutting/mpt-3001/": {
   "d": "2026-11-05",
@@ -533,7 +533,7 @@
  },
  "/es/productos/": {
   "d": "2026-11-05",
-  "h": "96b89a2f07be2d01"
+  "h": "580fafdcaba89d58"
  },
  "/es/productos/accesorios/": {
   "d": "2026-11-03",
@@ -757,15 +757,15 @@
  },
  "/es/productos/corte-por-plasma/": {
   "d": "2026-11-05",
-  "h": "c664afb67af84c52"
+  "h": "6516ac864006aa8e"
  },
  "/es/productos/corte-por-plasma/mesas-de-corte/": {
   "d": "2026-11-05",
-  "h": "0bdec128acc0ebd9"
+  "h": "e9d42196a9f80d5f"
  },
  "/es/productos/corte-por-plasma/mpt-2501/": {
-  "d": "2026-11-03",
-  "h": "1b9796d416aaeb9e"
+  "d": "2026-11-05",
+  "h": "be85a2f463263723"
  },
  "/es/productos/corte-por-plasma/mpt-3001/": {
   "d": "2026-11-05",
@@ -1033,7 +1033,7 @@
  },
  "/fr/produits/": {
   "d": "2026-11-05",
-  "h": "99f4b0dec6c8b276"
+  "h": "c2c4278123eec1ed"
  },
  "/fr/produits/accessoires/": {
   "d": "2026-11-03",
@@ -1257,11 +1257,11 @@
  },
  "/fr/produits/decoupe-plasma/": {
   "d": "2026-11-05",
-  "h": "b939f8c09a540901"
+  "h": "fd1abacbdd0880e4"
  },
  "/fr/produits/decoupe-plasma/mpt-2501/": {
-  "d": "2026-11-03",
-  "h": "816bab23066845bb"
+  "d": "2026-11-05",
+  "h": "da60880145c93152"
  },
  "/fr/produits/decoupe-plasma/mpt-3001/": {
   "d": "2026-11-05",
@@ -1269,7 +1269,7 @@
  },
  "/fr/produits/decoupe-plasma/tables-de-decoupe/": {
   "d": "2026-11-05",
-  "h": "f8d7cb9d64493888"
+  "h": "f372b0d6322b2379"
  },
  "/fr/produits/decoupe-plasma/theta-120-aut/": {
   "d": "2026-11-05",
@@ -1561,7 +1561,7 @@
  },
  "/it/prodotti/": {
   "d": "2026-11-05",
-  "h": "0e41125f242e2aa8"
+  "h": "3c3f3e0bdbf0d6f1"
  },
  "/it/prodotti/accessori/": {
   "d": "2026-11-03",
@@ -1965,11 +1965,11 @@
  },
  "/it/prodotti/taglio-plasma/": {
   "d": "2026-11-05",
-  "h": "d02d5092bbc403e5"
+  "h": "05021236a53770ae"
  },
  "/it/prodotti/taglio-plasma/mpt-2501/": {
-  "d": "2026-11-03",
-  "h": "051a4d820c6c8242"
+  "d": "2026-11-05",
+  "h": "7afba6f0ae320f32"
  },
  "/it/prodotti/taglio-plasma/mpt-3001/": {
   "d": "2026-11-05",
@@ -1977,7 +1977,7 @@
  },
  "/it/prodotti/taglio-plasma/tavoli-di-taglio/": {
   "d": "2026-11-05",
-  "h": "cfaccfe5ae49a04c"
+  "h": "84d57537c2dc98c1"
  },
  "/it/prodotti/taglio-plasma/theta-120-aut/": {
   "d": "2026-11-05",
@@ -2021,7 +2021,7 @@
  },
  "/produkte/": {
   "d": "2026-11-05",
-  "h": "e35b9f92f454167b"
+  "h": "2b19972f3f067e28"
  },
  "/produkte/lasertechnik/": {
   "d": "2026-11-03",
@@ -2045,11 +2045,11 @@
  },
  "/produkte/plasmaschneiden/": {
   "d": "2026-11-05",
-  "h": "6b27a367742feff8"
+  "h": "a463f84fd979bab3"
  },
  "/produkte/plasmaschneiden/mpt-2501/": {
-  "d": "2026-11-03",
-  "h": "55a9f9101cf35c9d"
+  "d": "2026-11-05",
+  "h": "5888dc86cf053688"
  },
  "/produkte/plasmaschneiden/mpt-3001/": {
   "d": "2026-11-05",
@@ -2057,7 +2057,7 @@
  },
  "/produkte/plasmaschneiden/schneidtische/": {
   "d": "2026-11-05",
-  "h": "662ab2da47b7ef6a"
+  "h": "beb972e2a013a20e"
  },
  "/produkte/plasmaschneiden/theta-120-aut/": {
   "d": "2026-11-05",

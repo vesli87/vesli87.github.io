@@ -597,27 +597,27 @@
     "de": {
       "type": "CNC-Plasmaschneidtisch",
       "title": "MAHE MPT 2501: CNC-Plasmaschneidtisch | VES-TECH",
-      "description": "MAHE MPT 2501: CNC-Plasmaschneidtisch mit 2500 × 1250 mm Arbeitsbereich, MyPlasm CNC und MAHE-Theta-Stromquelle. Preis auf Anfrage."
+      "description": "MAHE MPT 2501: CNC-Plasma auf 2500 × 1250 mm. Eigene DXF-Konturen schneiden, Bahnen automatisch vorbereiten und Brennerhöhe per THC regeln."
     },
     "fr": {
       "type": "Table de découpe plasma CNC",
       "title": "MAHE MPT 2501: Table de découpe plasma CNC | VES-TECH",
-      "description": "MAHE MPT 2501 : Table plasma CNC, surface de travail 2500 × 1250 mm, MyPlasm CNC et source MAHE Theta. Prix sur demande. Conseil et prix sur demande."
+      "description": "MAHE MPT 2501 : découpe plasma CNC sur 2500 × 1250 mm. Import DXF, parcours automatiques et régulation de hauteur THC. Conseil et devis."
     },
     "it": {
       "type": "Tavolo di taglio plasma CNC",
       "title": "MAHE MPT 2501: Tavolo di taglio plasma CNC | VES-TECH",
-      "description": "MAHE MPT 2501: Tavolo plasma CNC, area di lavoro 2500 × 1250 mm, MyPlasm CNC e generatore MAHE Theta. Prezzo su richiesta."
+      "description": "MAHE MPT 2501: plasma CNC su 2500 × 1250 mm. Importazione DXF, percorsi automatici e controllo altezza THC. Consulenza e preventivo."
     },
     "en": {
       "type": "CNC plasma cutting table",
       "title": "MAHE MPT 2501: CNC plasma cutting table | VES-TECH",
-      "description": "MAHE MPT 2501: CNC plasma cutting table with a 2500 × 1250 mm working area, MyPlasm CNC and MAHE Theta power source. Price on request."
+      "description": "MAHE MPT 2501: CNC plasma cutting over 2500 × 1250 mm. Import DXF contours, prepare toolpaths automatically and control torch height with THC."
     },
     "es": {
       "type": "Mesa de corte por plasma CNC",
       "title": "MAHE MPT 2501: Mesa de corte por plasma CNC | VES-TECH",
-      "description": "MAHE MPT 2501: Mesa plasma CNC, área de trabajo de 2500 × 1250 mm, MyPlasm CNC y fuente MAHE Theta. Precio bajo consulta."
+      "description": "MAHE MPT 2501: plasma CNC sobre 2500 × 1250 mm. Importación DXF, trayectorias automáticas y control de altura THC. Consulte su proyecto."
     }
   },
   "minicleaner": {

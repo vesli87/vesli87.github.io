@@ -1758,3 +1758,18 @@ die richtige Modellbezeichnung MPT 2501. Lupe, Hinweis auf die Bildaufbereitung
 und Zugriff auf die unveränderten Originale bleiben erhalten. Die Bestätigung
 überträgt keine technischen Tabellen, Schneidgrenzen, PC-/Softwareausstattung
 oder andere unbestätigte Daten des MPT 3001.
+
+
+## Google Profil und getrennte Themenzuordnung 07.11.2026
+
+Vier feste Google-Business-Kampagnentupel für die Wochenbeiträge vom 9., 16.,
+23. und 30. November sind in `data/ANALYTICS_CAMPAIGNS.json` registriert.
+Die unterschiedlichen `utm_content`-Werte trennen WIG auf Rohrmontage,
+CNC-Schneidtische, Reparatur und Lasertechnik. Die bestehende begrenzte
+Zulassung bleibt erhalten: keine freien Besucherwerte, kein Laden der
+Analyse vor Zustimmung und keine Formularinhalte in der Statistik.
+Ein Seitenaufruf oder Klick ist kein bestätigter Kundendialog. Die tatsächlichen
+Anfragen werden getrennt in der privaten bestehenden Dopyt-Evidenz erfasst,
+mit unbekannter Quelle als unbekannt und ohne QA-Testsendungen.
+Private Beitragspläne und Kontonachweise bleiben unter dem ausgeschlossenen
+`reports/google-profile/`, nicht im öffentlichen Paket.

@@ -538,5 +538,29 @@
     "medium": "email",
     "campaign": "cnc-plasma-2026",
     "content": "technical-2026-cnc-es"
+  },
+  "google_business-20261109_wig_rohrmontage_de": {
+    "source": "google_business",
+    "medium": "local_listing",
+    "campaign": "mahe-programm-2026",
+    "content": "20261109_wig_rohrmontage_de"
+  },
+  "google_business-20261116_cnc_tische_de": {
+    "source": "google_business",
+    "medium": "local_listing",
+    "campaign": "mahe-programm-2026",
+    "content": "20261116_cnc_tische_de"
+  },
+  "google_business-20261123_reparatur_de": {
+    "source": "google_business",
+    "medium": "local_listing",
+    "campaign": "service-2026",
+    "content": "20261123_reparatur_de"
+  },
+  "google_business-20261130_lasertechnik_de": {
+    "source": "google_business",
+    "medium": "local_listing",
+    "campaign": "mahe-programm-2026",
+    "content": "20261130_lasertechnik_de"
   }
 }

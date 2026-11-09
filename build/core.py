@@ -1286,9 +1286,10 @@ def analytics_campaigns():
     """Finite reviewed tuples, never customer input or arbitrary URL values."""
     sources = {"linkedin", "facebook", "instagram", "tiktok", "google_business", "youtube", "google", "bing", "ves-tech-newsletter"}
     campaigns = {"mahe-programm-2026", "occasion-microplasma-2026", "service-2026",
-                 "tig-montage-2026", "nahtreinigung-2026", "cnc-plasma-2026"}
+                 "tig-montage-2026", "nahtreinigung-2026", "cnc-plasma-2026",
+                 "praxis_20261026", "service_praxis_202611"}
     data = ANALYTICS_CAMPAIGNS
-    if not isinstance(data, dict) or len(data) > 100:
+    if not isinstance(data, dict) or len(data) > 128:
         raise ValueError("Analytics campaigns must be a small registry")
     seen = set()
     for key, row in data.items():

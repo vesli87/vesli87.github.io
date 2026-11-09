@@ -1773,3 +1773,16 @@ Anfragen werden getrennt in der privaten bestehenden Dopyt-Evidenz erfasst,
 mit unbekannter Quelle als unbekannt und ohne QA-Testsendungen.
 Private Beitragspläne und Kontonachweise bleiben unter dem ausgeschlossenen
 `reports/google-profile/`, nicht im öffentlichen Paket.
+
+
+## Organische Servicekampagnen 09.11.2026
+
+Die festen öffentlichen Kombinationen der LinkedIn-Praxisserie
+`praxis_20261026` und `service_praxis_202611` sowie der vorbereitete
+Instagram-Biolink stehen in `ANALYTICS_CAMPAIGNS.json`. Das endliche Register
+ist auf 128 Einträge begrenzt; Quellen, Kampagnennamen, vier Pflichtfelder,
+statische Werte und eindeutige Tupel bleiben geprüft. Zustimmung, GPC/DNT,
+Referrer-, Query- und Fragmentsperre sowie alle Datenschutzgrenzen ändern
+sich nicht. Messlinks zum Teilen enthalten keinen Fragmentanker. Bereits
+veröffentlichte Links werden bei Bedarf im nativen Planer bearbeitet;
+ein lokaler Entwurf oder Registereintrag beweist keine externe Änderung.

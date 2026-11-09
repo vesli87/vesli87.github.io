@@ -313,3 +313,21 @@ vorläufig markieren und D-2 erneut prüfen (GA4 kann 24–48 Stunden nachverarb
 GA4, Ahrefs und Cloudflare nicht zu einer Besucherzahl addieren. Eigene Tests und
 Testanfragen getrennt auswerten; keinerlei Namen oder Empfängerlisten im Report.
 Die private Prüfakte und Vorlagen liegen unter `reports/measurement/2026-10-21/`.
+
+
+## Organische Servicekampagnen (09.11.2026)
+
+Die veröffentlichten LinkedIn-Praxisthemen ab 26.10. und die konkrete
+November-Serie sind mit ihren vollständigen öffentlichen UTM-Kombinationen
+registriert. Ebenso ist der vorbereitete Instagram-Biolink registriert;
+das bestätigt nicht, dass der Inhaber ihn bereits mobil gespeichert hat.
+Der begrenzte Registerumfang beträgt höchstens 128 Einträge. Quellen,
+Kampagnennamen, vier Felder, Werteformat und Dubletten bleiben validiert.
+Keine freien Besucherwerte und keine Messung vor Zustimmung.
+
+Geteilte Messlinks müssen ohne Fragment bleiben. Ein vorhandener Vergleichsanker
+wie `#compare-tig-selection` hält die Statistik bewusst ausgeschaltet; ein
+entsprechender Beitrag wird im nativen Planer auf denselben UTM-Link ohne
+Fragment korrigiert. Die Browser-Sperre für Fragmente bleibt unverändert.
+Die Registrierung korrigiert künftige Messung, rekonstruiert aber keine zuvor
+nicht erhobenen Besuche oder Anfragen.

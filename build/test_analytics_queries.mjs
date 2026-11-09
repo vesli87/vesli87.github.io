@@ -8,7 +8,7 @@ import { test } from 'node:test';
 
 
 
-function observe(search, { lang = 'de', granted = true, referrer = '', pathname = '', campaigns = {} } = {}) {
+function observe(search, { lang = 'de', granted = true, referrer = '', pathname = '', campaigns = {}, hash = '' } = {}) {
   const contact = { de: '/kontakt/', fr: '/fr/contact/', it: '/it/contatto/', en: '/en/contact/', es: '/es/contacto/' }[lang];
   const page = pathname || contact;
   const appended = [], sent = [];
@@ -25,7 +25,7 @@ function observe(search, { lang = 'de', granted = true, referrer = '', pathname 
       body: { appendChild: x => appended.push(x) } },
     localStorage: { getItem: key => key.endsWith('.v2') ? JSON.stringify({ value: granted ? 'granted' : 'denied', at: Date.now() - 1000 }) : null, setItem() {} },
     sessionStorage: { getItem: () => null, setItem() {}, removeItem() {} },
-    location: { hostname: 'www.ves-tech.ch', origin: 'https://www.ves-tech.ch', pathname: page, search, hash: '' },
+    location: { hostname: 'www.ves-tech.ch', origin: 'https://www.ves-tech.ch', pathname: page, search, hash },
     navigator: {}, window: { VT: { lang, analytics: config }, addEventListener() {} } };
   initAnalytics(context);
   if (appended.length) {
@@ -154,4 +154,35 @@ test('all fifteen newsletter links use reviewed email attribution and reject ext
     for(const extra of ['&email=private@example.invalid','&subscriber_id=private','&utm_source=ves-tech-newsletter'])
       assert.equal(observe(query+extra,opts).appended.length,0,key+extra);
   }
+});
+
+
+test('reviewed organic service links measure only after consent and reject altered visitor values', () => {
+  const campaigns=JSON.parse(readFileSync(new URL('../data/ANALYTICS_CAMPAIGNS.json',import.meta.url),'utf8'));
+  const rows=Object.entries(campaigns).filter(([id])=>id.startsWith('social-linkedin-')||id==='instagram-service-praxis-202611-bio');
+  assert.equal(rows.length,19);
+  assert.ok(rows.some(([,r])=>r.content==='20261105_theta120_arbeitsplatz'));
+  assert.ok(rows.some(([,r])=>r.content==='20261115_reparatur_befund_entscheidung'));
+  for (const [id,row] of rows) {
+    const query='?'+new URLSearchParams(Object.fromEntries(Object.entries(row).map(([k,v])=>['utm_'+k,v])));
+    const opts={campaigns,pathname:'/service/reparatur/'};
+    const result=observe(query,opts);
+    assert.equal(result.appended.length,1,id);
+    assert.equal(result.sent[0].props.source,row.source);
+    assert.equal(result.sent[0].props.campaign,row.campaign);
+    assert.equal(observe(query,{...opts,granted:false}).appended.length,0,id+' refusal');
+    for (const extra of ['&email=private@example.invalid','&message=private','&utm_content='+row.content])
+      assert.equal(observe(query+extra,opts).appended.length,0,id+extra);
+    assert.equal(observe(query.replace('utm_content='+row.content,'utm_content=unreviewed_content'),opts).appended.length,0,id+' unknown');
+  }
+});
+
+test('comparison anchors remain unmeasured and the same reviewed link is measurable without a fragment', () => {
+  const campaigns=JSON.parse(readFileSync(new URL('../data/ANALYTICS_CAMPAIGNS.json',import.meta.url),'utf8'));
+  const row=campaigns['social-linkedin-20261110_wig_auswahl'];
+  const query='?'+new URLSearchParams(Object.fromEntries(Object.entries(row).map(([k,v])=>['utm_'+k,v])));
+  const opts={campaigns,pathname:'/produkte/schweissgeraete/wig-tig/'};
+  assert.equal(observe(query,opts).appended.length,1);
+  for(const hash of ['#compare-tig-selection','#private@example.invalid','#unknown'])
+    assert.equal(observe(query,{...opts,hash}).appended.length,0,hash);
 });

@@ -562,5 +562,119 @@
     "medium": "local_listing",
     "campaign": "mahe-programm-2026",
     "content": "20261130_lasertechnik_de"
+  },
+  "social-linkedin-service-checkliste": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "service-checkliste"
+  },
+  "social-linkedin-hypertig-bedienung": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "hypertig-bedienung"
+  },
+  "social-linkedin-reparatur-entscheidung": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "reparatur-entscheidung"
+  },
+  "social-linkedin-kalibrierung-uvv": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "kalibrierung-uvv"
+  },
+  "social-linkedin-hx-jobmodus": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "hx-jobmodus"
+  },
+  "social-linkedin-herisau-annahme": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "herisau-annahme"
+  },
+  "social-linkedin-offerte-gesamtpaket": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "praxis_20261026",
+    "content": "offerte-gesamtpaket"
+  },
+  "social-linkedin-20261105_theta120_arbeitsplatz": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261105_theta120_arbeitsplatz"
+  },
+  "social-linkedin-20261106_reparatur_versand": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261106_reparatur_versand"
+  },
+  "social-linkedin-20261107_hypertig_einweisung": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261107_hypertig_einweisung"
+  },
+  "social-linkedin-20261108_service_vorgeschichte": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261108_service_vorgeschichte"
+  },
+  "social-linkedin-20261109_hypermig_x_job": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261109_hypermig_x_job"
+  },
+  "social-linkedin-20261110_wig_auswahl": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261110_wig_auswahl"
+  },
+  "social-linkedin-20261111_kalibrierung_sicherheitspruefung": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261111_kalibrierung_sicherheitspruefung"
+  },
+  "social-linkedin-20261112_fehlerzeitpunkt": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261112_fehlerzeitpunkt"
+  },
+  "social-linkedin-20261113_synergie_fil_gaz_fr": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261113_synergie_fil_gaz_fr"
+  },
+  "social-linkedin-20261114_einschaltdauer_cwk350": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261114_einschaltdauer_cwk350"
+  },
+  "social-linkedin-20261115_reparatur_befund_entscheidung": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261115_reparatur_befund_entscheidung"
+  },
+  "instagram-service-praxis-202611-bio": {
+    "source": "instagram",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "bio"
   }
 }

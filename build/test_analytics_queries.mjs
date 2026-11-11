@@ -160,11 +160,12 @@ test('all fifteen newsletter links use reviewed email attribution and reject ext
 test('reviewed organic service links measure only after consent and reject altered visitor values', () => {
   const campaigns=JSON.parse(readFileSync(new URL('../data/ANALYTICS_CAMPAIGNS.json',import.meta.url),'utf8'));
   const rows=Object.entries(campaigns).filter(([id])=>id.startsWith('social-linkedin-')||id==='instagram-service-praxis-202611-bio');
-  assert.equal(rows.length,21);
+  assert.equal(rows.length,22);
   assert.ok(rows.some(([,r])=>r.content==='20261105_theta120_arbeitsplatz'));
   assert.ok(rows.some(([,r])=>r.content==='20261115_reparatur_befund_entscheidung'));
   assert.ok(rows.some(([,r])=>r.content==='20261116_offerte_vier_angaben'));
   assert.ok(rows.some(([,r])=>r.content==='20261117_service_vorgeschichte'));
+  assert.ok(rows.some(([,r])=>r.content==='20261118_omega_syn_bedienung'));
   for (const [id,row] of rows) {
     const query='?'+new URLSearchParams(Object.fromEntries(Object.entries(row).map(([k,v])=>['utm_'+k,v])));
     const opts={campaigns,pathname:'/service/reparatur/'};

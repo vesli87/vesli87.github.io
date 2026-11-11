@@ -366,9 +366,9 @@
       ]
     ],
     "org_desc": "VES-TECH Swiss bietet Beratung und Verkauf von MAHE-Geräten: Schweissgeräte für MIG/MAG, WIG/TIG und Elektrode, Plasmaschneidanlagen, CNC-Schneidtische und elektrolytische Geräte zum Reinigen und Signieren. Dazu Beratung, Inbetriebnahme, Diagnose, Reparatur, Kalibrierung und Schweissautomation. Werkstatt und Warenannahme in Herisau AR bei der Partnerfirma Schweisstechnik Scherrer AG; Sitz und Rechnungsadresse in Bronschhofen SG. Lieferung in die Schweiz und nach Liechtenstein nach Absprache.",
-    "svc_title": "Service · Reparatur, Kalibrierung und Automation | VES-TECH Swiss",
-    "svc_desc": "Reparatur, Kalibrierung nach EN 60974-14 und Automation für Schweissanlagen und Plasmaschneidanlagen. Werkstatt in Herisau AR, Beratung durch den Techniker.",
-    "svc_h1": "Service aus der Werkstatt in Herisau",
+    "svc_title": "Schweissgeräte-Service & Reparatur in Herisau | VES-TECH",
+    "svc_desc": "Diagnose, Reparatur und Kalibrierung für Schweissgeräte. Geräteannahme in der Partnerwerkstatt in Herisau AR nur nach Vereinbarung.",
+    "svc_h1": "Service für Schweissgeräte und Plasmaschneider",
     "svc_lead": "Diagnose, Reparatur, Kalibrierung und Automation für Schweissanlagen und Plasmaschneidanlagen. Sie sprechen direkt mit dem Techniker, der Ihr Gerät betreut.",
     "svc_items": [
       [
@@ -1089,9 +1089,9 @@
       ]
     ],
     "org_desc": "VES-TECH Swiss propose des conseils et la vente d’appareils MAHE : postes MIG/MAG, TIG et à électrode, installations de découpe plasma, tables de découpe CNC et appareils de nettoyage et de marquage électrolytiques. Conseil, mise en service, diagnostic, réparation, étalonnage et automatisation du soudage. Atelier et réception des marchandises à Herisau AR chez l’entreprise partenaire Schweisstechnik Scherrer AG ; siège et adresse de facturation à Bronschhofen SG. Livraison en Suisse et au Liechtenstein selon accord.",
-    "svc_title": "Service · réparation, étalonnage et automatisation | VES-TECH Swiss",
-    "svc_desc": "Réparation, étalonnage selon EN 60974-14 et automatisation des installations de soudage et de découpe plasma. Atelier à Herisau AR.",
-    "svc_h1": "Service à l’atelier de Herisau",
+    "svc_title": "Service et réparation de postes à souder | VES-TECH Swiss",
+    "svc_desc": "Diagnostic, réparation et étalonnage des postes à souder. Prise en charge à l’atelier partenaire de Herisau AR, uniquement sur rendez-vous.",
+    "svc_h1": "Service pour postes à souder et découpeurs plasma",
     "svc_lead": "Diagnostic, réparation, étalonnage et automatisation des installations de soudage et de découpe plasma. Vous échangez directement avec le technicien qui intervient sur votre appareil.",
     "svc_items": [
       [
@@ -1812,9 +1812,9 @@
       ]
     ],
     "org_desc": "VES-TECH Swiss offre consulenza e vendita di apparecchi MAHE: saldatrici MIG/MAG, TIG e a elettrodo, impianti di taglio al plasma, tavoli di taglio CNC e apparecchi elettrolitici di pulitura e marcatura. Con consulenza, messa in servizio, diagnosi, riparazione, calibrazione e automazione della saldatura. Officina e accettazione merci a Herisau AR presso l'azienda partner Schweisstechnik Scherrer AG; sede e indirizzo di fatturazione a Bronschhofen SG. Consegna in Svizzera e nel Liechtenstein previo accordo.",
-    "svc_title": "Assistenza · riparazione, calibrazione e automazione | VES-TECH",
-    "svc_desc": "Riparazione, calibrazione secondo EN 60974-14 e automazione per impianti di saldatura e taglio al plasma. Officina a Herisau AR.",
-    "svc_h1": "Assistenza dall’officina di Herisau",
+    "svc_title": "Assistenza e riparazione saldatrici | VES-TECH Swiss",
+    "svc_desc": "Diagnosi, riparazione e calibrazione delle saldatrici. Consegna presso l’officina partner di Herisau AR esclusivamente su appuntamento.",
+    "svc_h1": "Assistenza per saldatrici e tagliatrici al plasma",
     "svc_lead": "Diagnosi, riparazione, calibrazione e automazione per impianti di saldatura e di taglio al plasma. Parlate direttamente con il tecnico che si occupa del vostro apparecchio.",
     "svc_items": [
       [
@@ -2279,9 +2279,9 @@
     "agb_desc": "VES-TECH Swiss terms and conditions for MAHE equipment: quotations, prices, payment, delivery, warranty, liability and jurisdiction.",
     "agb_h1": "Terms and conditions",
     "org_desc": "VES-TECH Swiss provides advice and sales of MAHE equipment: MIG/MAG, TIG and MMA welding equipment, plasma cutting systems, CNC cutting tables and electrolytic cleaning and marking systems. Services include advice, commissioning, diagnostics, repairs, calibration and welding automation. Workshop and goods reception at the partner company Schweisstechnik Scherrer AG in Herisau AR; registered and billing address in Bronschhofen SG. Delivery within Switzerland and to Liechtenstein by agreement.",
-    "svc_title": "Service · Repairs, Calibration & Automation | VES-TECH Swiss",
-    "svc_desc": "Repairs, EN 60974-14 calibration and automation for welding equipment and plasma cutting systems. Workshop in Herisau AR, advice from the technician.",
-    "svc_h1": "Service from the Herisau workshop",
+    "svc_title": "Welding Equipment Service & Repair | VES-TECH Swiss",
+    "svc_desc": "Diagnostics, repair and calibration for welding equipment. Equipment acceptance at our partner workshop in Herisau AR by prior arrangement.",
+    "svc_h1": "Service for welding equipment and plasma cutters",
     "svc_lead": "Diagnostics, repairs, calibration and automation for welding equipment and plasma cutting systems. Speak directly to the technician who looks after your equipment.",
     "svc_repair_title": "Welding Equipment Repairs · Herisau AR Workshop",
     "svc_repair_desc": "Welding equipment and plasma cutter repairs in Herisau AR. Electronic diagnostics and assessment of suitable spare parts with the supplier.",
@@ -3002,9 +3002,9 @@
     "agb_desc": "Condiciones generales de VES-TECH Swiss para equipos MAHE: ofertas, precios, pago, entrega, garantía, responsabilidad y jurisdicción.",
     "agb_h1": "Condiciones generales",
     "org_desc": "VES-TECH Swiss ofrece asesoramiento y venta de equipos MAHE: equipos de soldadura MIG/MAG, TIG y MMA, sistemas de corte por plasma, mesas de corte CNC y sistemas de limpieza y marcado electrolíticos. Los servicios incluyen asesoramiento, puesta en servicio, diagnóstico, reparación, calibración y automatización de la soldadura. Taller y recepción de equipos en la empresa colaboradora Schweisstechnik Scherrer AG en Herisau AR; domicilio social y dirección de facturación en Bronschhofen SG. Entregas en Suiza y Liechtenstein según acuerdo.",
-    "svc_title": "Servicio · Reparación, calibración y automatización | VES-TECH Swiss",
-    "svc_desc": "Reparación, calibración EN 60974-14 y automatización de equipos de soldadura y corte por plasma. Taller en Herisau AR y asesoramiento del técnico.",
-    "svc_h1": "Servicio desde el taller de Herisau",
+    "svc_title": "Servicio y reparación de soldadoras | VES-TECH Swiss",
+    "svc_desc": "Diagnóstico, reparación y calibración de soldadoras. Recepción de equipos en el taller asociado de Herisau AR únicamente con cita previa.",
+    "svc_h1": "Servicio para soldadoras y equipos de corte por plasma",
     "svc_lead": "Diagnóstico, reparación, calibración y automatización de equipos de soldadura y corte por plasma. Contacto directo con el técnico que se ocupa de su equipo.",
     "svc_repair_title": "Reparación de equipos de soldadura · Taller de Herisau AR",
     "svc_repair_desc": "Reparación de equipos de soldadura y corte por plasma en Herisau AR. Diagnóstico electrónico y evaluación de recambios adecuados con el proveedor.",

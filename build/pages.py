@@ -1531,7 +1531,7 @@ def page_service(lang, key=None):
 
     title, desc = C.t(lang, f"{praefix}_title"), C.t(lang, f"{praefix}_desc")
     body = (R.cbar(lang, crumb_items=krumen,
-                   h1=C.t(lang, 'volt_service_title') if key is None else C.t(lang, f"{praefix}_h1"),
+                   h1=C.t(lang, f"{praefix}_h1"),
                    desc=C.t(lang, f"{praefix}_lead"), artwork='diagnostics')
             + '<div class="wrap">' + print_contact(lang, url) + '<p class="dactions">'
               f'<a class="btn pri" href="#service-request">{e(C.t(lang,"service_jump"))}</a>'

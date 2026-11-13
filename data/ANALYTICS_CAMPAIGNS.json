@@ -694,5 +694,17 @@
     "medium": "organic_social",
     "campaign": "service_praxis_202611",
     "content": "20261118_omega_syn_bedienung"
+  },
+  "social-linkedin-20261119_service_geraeteliste": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261119_service_geraeteliste"
+  },
+  "social-linkedin-20261120_elektronik_diagnose": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261120_elektronik_diagnose"
   }
 }

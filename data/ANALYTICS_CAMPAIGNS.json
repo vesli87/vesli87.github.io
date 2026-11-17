@@ -724,5 +724,47 @@
     "medium": "organic_social",
     "campaign": "service_praxis_202611",
     "content": "20261123_service_zubehoer"
+  },
+  "social-linkedin-20261124_service_transport": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261124_service_transport"
+  },
+  "social-linkedin-20261125_omega_autopuls": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261125_omega_autopuls"
+  },
+  "social-linkedin-20261126_kalibrierung_messbereich": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261126_kalibrierung_messbereich"
+  },
+  "social-linkedin-20261127_brenner_bedienoptionen": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261127_brenner_bedienoptionen"
+  },
+  "social-linkedin-20261128_ecomig_digital_analog": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261128_ecomig_digital_analog"
+  },
+  "social-linkedin-20261129_reparatur_befund_freigabe": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261129_reparatur_befund_freigabe"
+  },
+  "social-linkedin-20261130_service_fehlercode": {
+    "source": "linkedin",
+    "medium": "organic_social",
+    "campaign": "service_praxis_202611",
+    "content": "20261130_service_fehlercode"
   }
 }

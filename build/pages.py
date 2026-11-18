@@ -1289,10 +1289,24 @@ def page_processes(lang):
             + process_overview(lang)
             + '<div class="catalog"><div class="wrap process-guide">'
             + f'<section class="process-intro"><h2>{e(guide["intro_title"])}</h2><p>{e(guide["intro"])}</p>'
+            + f'<p class="small">{e(C.t(lang, "verf_editorial"))}</p>'
             + f'<p class="process-availability">{e(guide["availability"])}</p></section>'
             + f'<nav class="process-jump" aria-label="{e(guide["jump_label"])}">{jump}</nav>'
             + compare + toc + sections + glossary + faq + contact + sources + process_followup(lang) + '</div></div>')
-    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "verf_title"), C.t(lang, "verf_desc")),
+    article_id = C.abs_url(url) + '#article'
+    article = {
+        '@type': 'Article', '@id': article_id,
+        'headline': C.t(lang, 'verf_h1'),
+        'description': C.t(lang, 'verf_desc'),
+        'inLanguage': C.EX[lang]['hreflang'],
+        'author': {'@id': f'{C.SITE}/#organization'},
+        'publisher': {'@id': f'{C.SITE}/#organization'},
+        'mainEntityOfPage': {'@id': C.abs_url(url) + '#webpage'},
+        'citation': [source['url'] for source in C.PROCESS_GUIDE['sources']],
+    }
+    # No invented publication timestamp or unrelated stock image for the guide.
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "verf_title"), C.t(lang, "verf_desc"),
+                                    {'mainEntity': {'@id': article_id}}), article,
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)), (C.t(lang, "n_process"), url)]),
           R.ld_faq_subset(lang, guide['faq'], url)]
     return url, R.document(lang, title=C.t(lang, "verf_title"), desc=C.t(lang, "verf_desc"),
@@ -1311,7 +1325,20 @@ def page_downloads(lang):
                    h1=C.t(lang, "dl_h1"), desc=C.t(lang, "dl_sub"))
             + f'<div class="catalog"><div class="wrap">'
               f'<div class="dlrow dlrow-weit">{items}</div></div></div>')
-    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "dl_title"), C.t(lang, "dl_desc")),
+    list_id = C.abs_url(url) + '#downloads'
+    downloads = {
+        '@type': 'ItemList', '@id': list_id, 'name': C.t(lang, 'dl_h1'),
+        'numberOfItems': len(C.DLS),
+        'itemListElement': [
+            {'@type': 'ListItem', 'position': i + 1,
+             'item': {'@type': 'CreativeWork',
+                      'name': d['t'].get(lang) or d['t']['de'],
+                      'description': d['s'].get(lang) or d['s']['de'],
+                      'url': C.abs_url(d['u']) if d['u'].startswith('/') else d['u']}}
+            for i, d in enumerate(C.DLS)],
+    }
+    ld = [R.ld_org(lang), R.ld_webpage(lang, url, C.t(lang, "dl_title"), C.t(lang, "dl_desc"),
+                                    {'@type': 'CollectionPage', 'mainEntity': {'@id': list_id}}), downloads,
           R.ld_breadcrumb([(C.t(lang, "nav_home"), C.u_home(lang)),
                            (C.t(lang, "n_downloads"), url)])]
     return url, R.document(lang, title=C.t(lang, "dl_title"), desc=C.t(lang, "dl_desc"),

@@ -806,7 +806,6 @@ def mega(lang):
 
 def header(lang, alts):
     co = C.COMPANY
-    vis = C.WORKSHOP
     primary = [(C.u_products(lang), C.t(lang, 'nav_products')),
                (C.u_cat(lang, 'lasertechnik'), C.catT(lang, C.CAT_BY_ID['lasertechnik'])),
                (C.u_page(lang, 'processes'), C.t(lang, 'n_process')),
@@ -826,9 +825,10 @@ def header(lang, alts):
     return f"""<a class="skip" href="#main">{e(C.t(lang,'skip_link'))}</a>
 <div class="util"><div class="wrap">
   <div class="l"><a href="tel:{co['phone_href']}">{e(co['phone'])}</a>
-    <a class="adr" href="{e(C.u_page(lang,'contact'))}">
-      <span class="adr-str">{e(vis['street'])},</span>
-      <span class="adr-ort">{vis['zip']} {e(vis['city'])}</span></a></div>
+    <a class="adr" href="{e(C.u_page(lang,'contact'))}"
+       aria-label="{e(C.t(lang,'header_workshop'))}, {e(C.t(lang,'header_appointment'))}">
+      <span class="adr-ort">{e(C.t(lang,'header_workshop'))}</span>
+      <span class="adr-str">· {e(C.t(lang,'header_appointment'))}</span></a></div>
   <nav class="langs" aria-label="{e(C.t(lang,'lang_aria'))}">{lang_switch(lang, alts)}</nav>
 </div></div>
 

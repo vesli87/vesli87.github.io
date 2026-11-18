@@ -115,6 +115,7 @@ def target_exists(href):
 # Required fields for this site's emitted metadata. Google rich-result
 # eligibility is a separate contract; quote-only items deliberately opt out.
 LD_REQUIRED = {
+    "Article":        ["headline", "author", "publisher", "mainEntityOfPage", "inLanguage"],
     "ItemPage":       ["url", "name", "inLanguage", "mainEntity", "primaryImageOfPage"],
     "FAQPage":        ["mainEntity"],
     "BreadcrumbList": ["itemListElement"],

@@ -352,7 +352,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
 
 - `<title>` und `meta description` pro Seite einzigartig, Titel ≤ 68 Zeichen (Occasion ≤ 70, damit das Verfahren im Titel bleibt; `check.py` prüft 70)
 - `canonical` auf jeder Seite, absolut
-- `hreflang` de-CH / fr-CH / it-CH / en-CH + `x-default` — gegenseitig verlinkt
+- `hreflang` de-CH / fr-CH / it-CH / en-CH / es-CH + `x-default` — gegenseitig verlinkt
 - Open Graph + Twitter Card, `og:image` = Produktbild bzw. Hero
   Kategorie und Unterkategorie verwenden die erste vorhandene Produktabbildung
   ihrer gefilterten Katalogliste, auch als `CollectionPage.primaryImageOfPage`.
@@ -361,7 +361,7 @@ und Downloads enthalten die neuen Angaben und ihre Grenzen.
 - **JSON-LD als ein `@graph` pro Seite:** `Organization`+`LocalBusiness`,
   `WebSite` mit `SearchAction`, `BreadcrumbList`, neutrale Katalogeintraege als `Thing`,
   `ItemList`, `FAQPage`, `WebPage`/`CollectionPage`/`ItemPage`/`ContactPage`
-- `sitemap.xml` mit `xhtml:link`-Alternates (595 URLs); Suche, Datenschutz und AGB
+- `sitemap.xml` mit `xhtml:link`-Alternates (625 URLs); Suche, Datenschutz und AGB
   sind `noindex,follow` und stehen bewusst nicht drin. Das Impressum ist indexierbar.
 - `lastmod` folgt dem Inhalt jeder Seite. Asset-Versionsnummern, CSP/SRI und die
   reine Laufzeitkonfiguration `window.VT` ändern das Datum nicht. Sichtbarer
@@ -462,10 +462,11 @@ Product-Rich-Result-Berechtigung nicht gesperrt; die Umstellung verspricht
 keine Indexierung oder Rankings. Historische Search-Console-Meldungen koennen
 bis zum erneuten Crawlen und Verarbeiten bestehen bleiben.
 
-**Länge der `meta description`:** `pages.py::clip` kürzt auf **155** Zeichen.
-Der Wert stand auf 165; damit lagen 179 von 345 Seiten über der Grenze, ab der
-Google abschneidet (pixelabhängig, in der Praxis 155–160 Zeichen). Auch
-handgeschriebene Beschreibungen in `i18n_extra.json` bleiben darunter.
+**Länge der `meta description`:** `pages.py::clip` kürzt Vorlagentexte auf
+**155** Zeichen. Das ist unser redaktionelles Ziel, keine feste Google-Grenze
+und kein Rankingfaktor an sich. Google kann abhängig von Suchanfrage und Gerät
+einen anderen Ausschnitt aus der Seite anzeigen. Individuelle Beschreibungen
+werden als vollständige, eindeutige Sätze gepflegt und nicht künstlich aufgefüllt.
 
 Die Occasion-Beschreibungen (`prod_desc_occ`) sind eigenständige, vollständige
 Kurztexte für DE/FR/IT: Modell, Mikroplasma, Revision, Herisau und Kontakt auf
@@ -1786,3 +1787,33 @@ Referrer-, Query- und Fragmentsperre sowie alle Datenschutzgrenzen ändern
 sich nicht. Messlinks zum Teilen enthalten keinen Fragmentanker. Bereits
 veröffentlichte Links werden bei Bedarf im nativen Planer bearbeitet;
 ein lokaler Entwurf oder Registereintrag beweist keine externe Änderung.
+
+### SEO-Audit vom 18.11.2026
+
+- Die fünf Verfahrensratgeber enthalten einen eigenständigen `Article` mit
+  sichtbarer redaktioneller Zuordnung zu VES-TECH Swiss, sprachgerechtem
+  `headline`, Organisationsreferenz und den tatsächlich verlinkten Quellen.
+  `WebPage.mainEntity` und `Article.mainEntityOfPage` sind gegenseitig verbunden.
+  Ohne belegten Zeitstempel oder passendes Artikelbild werden diese optionalen
+  Angaben weggelassen; der Build erfindet keine Publikationsdaten.
+- Die fünf Downloadübersichten sind `CollectionPage` mit einer `ItemList` der
+  tatsächlich angezeigten Dokumente. Reihenfolge, Titel, Beschreibung und Ziel
+  stammen aus `DLS`; externe Herstelleradressen bleiben absolute externe URLs.
+- Kurze Produktbeschreibungen nennen neben der vorhandenen Gerätefunktion einen
+  konkreten Auswahlpunkt wie Gerätezuordnung, Anschluss, Bedienung oder
+  Schnittangaben. Die Brenner MF405W/MF240W nennen die vorhandenen 4 m und die
+  optionale Up/Down-Bedienung. Technische Tabellen und Verfügbarkeiten ändern
+  sich dadurch nicht. Die fünf Schweissgeräteübersichten erhalten vollständige
+  Suchtexte mit einem konkreten nächsten Schritt.
+- Kontakt-Metadaten in allen Sprachen und der DE-Einstieg von `llms.txt` trennen
+  Sitz Bronschhofen und Partnerwerkstatt Herisau. Besuche bleiben nach Vereinbarung.
+  Die globale Kopfzeile bezeichnet Herisau ausdrücklich als Partnerwerkstatt,
+  mit Terminvereinbarung im Linktext beziehungsweise zugänglichen Linknamen.
+  Kontakttitel nennen den tatsächlichen Sitz Bronschhofen; vollständige Adressen
+  und der Partnername bleiben auf der Kontaktseite erhalten.
+- Product-Rich-Results bleiben bewusst ausgeschlossen (siehe Abschnitt 6),
+  ebenso bleiben rechtliche Seiten noindex und HTTPS-Weiterleitungen erhalten.
+  Ahrefs-Heuristiken sind kein Grund, Preise, Bewertungen oder Standorte zu erfinden.
+  Hochauflösende PNG-Downloads bleiben von kleinen Seitenvorschauen getrennt.
+  Konkrete Crawl-Ergebnisse stehen in lokalen Auditberichten, nicht als
+  Erfolgsgarantien im öffentlichen Website-Inhalt.

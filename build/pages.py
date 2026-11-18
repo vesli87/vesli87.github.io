@@ -1563,7 +1563,6 @@ def page_service(lang, key=None):
             + '<div class="wrap">' + print_contact(lang, url) + '<p class="dactions">'
               f'<a class="btn pri" href="#service-request">{e(C.t(lang,"service_jump"))}</a>'
               f'<a class="btn ghost" href="tel:{e(C.COMPANY["phone_href"])}">{e(C.t(lang,"cro_call"))}</a>'
-              f'<button class="btn ghost" type="button" data-print-page hidden>{e(C.t(lang,"print_page"))}</button>'
               '</p></div>'
             + inhalt
             + '<div class="wrap"><section class="buying-guide service-guide">'
